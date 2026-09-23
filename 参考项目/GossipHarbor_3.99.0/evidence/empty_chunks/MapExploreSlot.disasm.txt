@@ -1,0 +1,23 @@
+.version	5.3
+
+.format	0
+.int_size	4
+.size_t_size	4
+.instruction_size	4
+.integer_format	8
+.float_format	8
+.endianness	LITTLE
+
+.function	main
+
+.source	"@MapExploreSlot.lua"
+.linedefined	0
+.lastlinedefined	0
+.numparams	0
+.is_vararg	1
+.maxstacksize	2
+
+.upvalue	"_ENV"	0	true
+
+.line	1	return        r0     1
+

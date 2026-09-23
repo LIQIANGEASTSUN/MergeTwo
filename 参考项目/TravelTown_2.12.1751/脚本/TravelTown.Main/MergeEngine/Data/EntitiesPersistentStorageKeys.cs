@@ -1,0 +1,44 @@
+using Framework.Core.Services.Storage.Data;
+
+namespace MergeEngine.Data
+{
+	public static class EntitiesPersistentStorageKeys
+	{
+		[ExcludeFromCloudSave]
+		public const string Legal = "legal";
+
+		[ExcludeFromCloudSave]
+		public const string CloudPlatforms = "cloudPlatforms";
+
+		[ExcludeFromCloudSave]
+		public const string DataWiped = "dataWiped";
+
+		[ExcludeFromCloudSave]
+		public const string AnalyticsData = "analyticsData";
+
+		[CanBePrefixed]
+		public const string BoardItems = "boardItems";
+
+		[ExcludeFromConflictCheck]
+		public const string Version = "version";
+
+		public const string Player = "player";
+
+		[ExcludeFromConflictCheck]
+		public const string UserProfile = "userProfile";
+
+		[ExcludeFromConflictCheck]
+		public const string CloudData = "cloudData";
+
+		[ExcludeFromConflictCheck]
+		public const string LifeTimeCounter = "lifeTimeCounter";
+
+		public const string CachedLocalizationKey = "RemoteLocalizationJson";
+
+		public const string CachedLocalizationTimestampKey = "RemoteLocalizationTimestamp";
+
+		public const string CachedLocalizationAssetRefNameKey = "CachedLocalizationAssetRefName";
+
+		public const string HasStoredSession = "HasStoredSession";
+	}
+}

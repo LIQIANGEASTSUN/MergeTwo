@@ -1,0 +1,28 @@
+{
+  "input_sha256": "4196b88058b03575a1c090b46004a0fc9e87105fb9176643163bbc611149ae78",
+  "unitypy": "1.25.3",
+  "lupa": "2.8 (lua53)",
+  "unluac_file": "unluac_2025_12_23.jar",
+  "unluac_url": "https://downloads.sourceforge.net/project/unluac/Unstable/unluac_2025_12_23.jar",
+  "unluac_sha256": "98be0fa84ac73ca66dce2842a2e4512226f4c611b6500dc96415571fc5538fcc",
+  "lua_modules": 2456,
+  "nonempty_modules": 2454,
+  "empty_chunks": 2,
+  "syntax_passed": 2456,
+  "source_lines": 573670,
+  "original_package_modified": false,
+  "game_executed": false,
+  "script_restoration_verified": true,
+  "reproduction_hash_comparison": {
+    "source": {
+      "files": 2456,
+      "mismatches": []
+    },
+    "bytecode": {
+      "files": 2456,
+      "mismatches": []
+    }
+  },
+  "temporary_python_environment": "/private/tmp/gossip_harbor_study_3990/tooling_env",
+  "assetripper_failure_cause": "Sandbox denied binding 127.0.0.1; same command listened successfully outside sandbox"
+}

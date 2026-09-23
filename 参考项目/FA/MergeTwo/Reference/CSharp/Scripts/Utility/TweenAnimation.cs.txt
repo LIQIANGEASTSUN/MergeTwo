@@ -1,0 +1,161 @@
+﻿using System.Collections.Generic;
+using UnityEngine;
+using DG.Tweening;
+
+public class TweenAnimationItem
+{
+    private DOTweenAnimation animation;
+    private bool isPlaying = false;
+    public TweenAnimationItem(DOTweenAnimation animation)
+    {
+        this.animation = animation;
+    }
+
+    public bool IsPlaying
+    {
+        get { return isPlaying; }
+        private set { isPlaying = value; }
+    }
+
+    public DOTweenAnimation.AnimationType AnimationType
+    {
+        get { return animation.animationType; }
+    }
+
+    /// <summary>
+    /// 播放动画
+    /// </summary>
+    public TweenInfo Play()
+    {
+        if (null == animation.tween)
+        {
+            animation.CreateTween(false, false);
+            animation.tween.onComplete += OnCompleteCallBack;
+            animation.tween.onKill += OnKillCallBack;
+            animation.tween.SetAutoKill(true);
+        }
+        IsPlaying = true;
+        animation.DOPlay();
+        return new TweenInfo(animation.tween, animation.duration);
+    }
+
+    /// <summary>
+    /// Kill动画
+    /// </summary>
+    public void Kill()
+    {
+        animation.tween?.Kill(true);
+        CheckRevert(animation.animationType);
+    }
+
+    /// <summary>
+    /// 动画播放完成回调
+    /// </summary>
+    private void OnCompleteCallBack()
+    {
+        IsPlaying = false;
+    }
+
+    /// <summary>
+    /// 动画 Kill 回调
+    /// </summary>
+    private void OnKillCallBack()
+    {
+        IsPlaying = false;
+    }
+
+    private void CheckRevert(DOTweenAnimation.AnimationType aniType)
+    {
+        switch(aniType)
+        {
+            case DOTweenAnimation.AnimationType.Move:
+            case DOTweenAnimation.AnimationType.LocalMove:
+            case DOTweenAnimation.AnimationType.ShakePosition:
+            case DOTweenAnimation.AnimationType.PunchPosition:
+                animation.transform.localPosition = Vector3.zero;
+                break;
+            case DOTweenAnimation.AnimationType.Rotate:
+            case DOTweenAnimation.AnimationType.LocalRotate:
+            case DOTweenAnimation.AnimationType.ShakeRotation:
+            case DOTweenAnimation.AnimationType.PunchRotation:
+                animation.transform.rotation = Quaternion.identity;
+                break;
+            case DOTweenAnimation.AnimationType.Scale:
+            case DOTweenAnimation.AnimationType.PunchScale:
+            case DOTweenAnimation.AnimationType.ShakeScale:
+                animation.transform.localScale = Vector3.one;
+                break;
+            case DOTweenAnimation.AnimationType.Fade:
+                animation.transform.GetComponent<CanvasGroup>().alpha = 1;
+                break;
+        }
+    }
+}
+[XLua.LuaCallCSharp]
+public class TweenInfo
+{
+    public TweenInfo(Tween tween, float time) { this.tween = tween; this.time = time; }
+    public Tween tween;
+    public float time;
+}
+[XLua.LuaCallCSharp]
+public class TweenAnimation : MonoBehaviour
+{
+    private Dictionary<string, TweenAnimationItem> tweenDic = new Dictionary<string, TweenAnimationItem>();
+    private void Awake()
+    {
+        DOTweenAnimation[] animationArr = gameObject.GetComponentsInChildren<DOTweenAnimation>();
+        foreach(var animation in animationArr)
+        {
+            AddAnimation(animation);
+        }
+    }
+
+    private void AddAnimation(DOTweenAnimation animation)
+    {
+        if (string.IsNullOrEmpty(animation.id))
+        {
+            return;
+        }
+
+        TweenAnimationItem item = new TweenAnimationItem(animation);
+        tweenDic.Add(animation.id, item);
+    }
+
+    private TweenAnimationItem GetAnimation(string key)
+    {
+        TweenAnimationItem item;
+        tweenDic.TryGetValue(key, out item);
+        return item;
+    }
+
+    public TweenInfo Play(string key)
+    {
+        TweenAnimationItem item = GetAnimation(key);
+        if (null == item)
+        {
+            return null;
+        }
+
+        foreach(var value in tweenDic.Values)
+        {
+            if (value.IsPlaying && value.AnimationType == item.AnimationType)
+            {
+                value.Kill();
+            }
+        }
+
+        return item.Play();
+    }
+
+    public void ClearTween()
+    {
+        foreach(var value in tweenDic.Values)
+        {
+            if(value.IsPlaying)
+            {
+                value.Kill();
+            }
+        }
+    }
+}

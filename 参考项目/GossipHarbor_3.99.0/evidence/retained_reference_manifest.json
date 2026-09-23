@@ -1,0 +1,2262 @@
+{
+  "input_modules": 2456,
+  "retained_modules": 376,
+  "modules": [
+    {
+      "path": "Lua_Activity/AdventureActivity/Board/AdventureActivityBoardContainer.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "e3ce66c1ad3e539f6014b5139ec9ceaee9e8a55ee9f7cfde4f7b6e092778bdee",
+      "bytecode_sha256": "69e99c4b86c259f93c7767881fee85a021630f68afee5040d0fd7c293cb79f86"
+    },
+    {
+      "path": "Lua_Activity/AdventureActivity/Board/AdventureActivityBoardModel.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "2b2088381d86e3ac02455cb1f5a508b418d3f19e0978abf04f20fcbf12775e85",
+      "bytecode_sha256": "0063fa7d23100b31db45e01b65e31b8035fcf7e5532f438557c67be8e0a504cf"
+    },
+    {
+      "path": "Lua_Activity/AdventureActivity/Board/AdventureActivityBoardView.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "ebedbe4eacee6ec3e96b1f9da39548207b67d83f8dcc91093f17b281855a2bab",
+      "bytecode_sha256": "3af33f2311566b2ed1eb02b6ff3ada1ff76ec3e6ce992788552a7fb268b6c8fa"
+    },
+    {
+      "path": "Lua_Activity/AdventureActivity/Board/ItemSwallowViewAdventure.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "04bfbd6fde374ed1b08a205e0b77a7692dc94a3afd32d1bd1a46b8a9ef53ae77",
+      "bytecode_sha256": "a7860d5d00ae2b354a147268cc5eae8256853ca8f69822cd48c4d3d20073a4bd"
+    },
+    {
+      "path": "Lua_Activity/AdventureActivity/Model/AdventureActivityModel.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "589b20d356387f53cd22f2ae950c353ad3d822d49d699e2997bff81bedc186ba",
+      "bytecode_sha256": "1bcaca42aa70f11ce0663f4ee2a4dcee52e5bc5289b76a18723dc9c89517e6af"
+    },
+    {
+      "path": "Lua_Activity/BoostCharge/Handler/BoostChargeDiscoBoostHandler.lua",
+      "reason": "直接改变物品或生成器规则的扩展",
+      "source_sha256": "1767431be213fdfc167e7f6b7b38724a0990db2a05f6a7cd037481ef65fe47d8",
+      "bytecode_sha256": "0632e1008f11ab0e482f1bcc4ae5f3aa1692ccec150be24f7c53c419d42e1fd8"
+    },
+    {
+      "path": "Lua_Activity/Break/Board/BreakBoardContainer.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "d9e8b40a310209c05f4caf788f7232fa4fad5caf6604a19d4f207a1efb4f9487",
+      "bytecode_sha256": "4366f334d3e499d0ead66468ef11417f097718fa4ca170984c561f8e625fed53"
+    },
+    {
+      "path": "Lua_Activity/Break/Board/BreakBoardModel.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "ae57f62de4279a16322159a36dcabc85fe2a1e339b726e92d26a2c61d4a30535",
+      "bytecode_sha256": "861745f6497f1527a79bd25e2a9b2a4d42fc3ab1606f22c538a377e9d9934b51"
+    },
+    {
+      "path": "Lua_Activity/Break/Board/BreakBoardView.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "9e120c64e788641fd8a8a56c66a39440ba3ea2d4929a9c0648d8b0c26c076144",
+      "bytecode_sha256": "6a1ea54988b8fd832d66546c1288499c3d65821b1ff1258d52a19b3d36c9b5d3"
+    },
+    {
+      "path": "Lua_Activity/Break/Model/BreakModel.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "8a4de11b4d0f021df8794bae9c24b430db1a3d61f14d73c884f30f20ba9119b0",
+      "bytecode_sha256": "6197ad1e543d48d332af73e98b3728cc07235252c9d7b24a84e962290d0bd8df"
+    },
+    {
+      "path": "Lua_Activity/BubbleDecrease/Model/BubbleDecreaseModel.lua",
+      "reason": "直接改变物品或生成器规则的扩展",
+      "source_sha256": "044ccdd6b253e9f57014caa5c5c85adb3eead4b5e155ab06aade62daa7e8a621",
+      "bytecode_sha256": "27fee46e34cdf991467afbda826953edeed9bca2edafe1e24cdce9381f794e4a"
+    },
+    {
+      "path": "Lua_Activity/CardItem/CardItemModel.lua",
+      "reason": "直接改变物品或生成器规则的扩展",
+      "source_sha256": "2033b240e2ddc3c38bc40adafc7b07dd705c4d0ef6454897a2f9714521b2a87f",
+      "bytecode_sha256": "cc281f0649d072a830a3b132ea60af33f2a2e59f7ffe521cb0ce8cb4bc52c1a6"
+    },
+    {
+      "path": "Lua_Activity/DigActivity/Board/DigBoardContainer.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "f53802bb57110bf88c965e665788b257d0b84885094621c51f1bedf986561d7b",
+      "bytecode_sha256": "e99fe150295f8ecc5324a6a5c99644bd10cd94a8849dc43e76b0dc867bf34710"
+    },
+    {
+      "path": "Lua_Activity/DigActivity/Board/DigBoardView.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "48105bef32478a0dbc37b4f55f3824472f07f1fa0f9fc69b05d840571f49593c",
+      "bytecode_sha256": "106955fb6f50df2e12d670e6b4fa90c4f9de0e9545432166d96bfa429eac4777"
+    },
+    {
+      "path": "Lua_Activity/DigActivity/Model/DigActivityModel.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "36d06882292284fad050a49e37f1403ff72da4d10859d04c9fa548e6fcf14cc6",
+      "bytecode_sha256": "1936634ca1543d50bb4242e3ff1376c8bfff699c1f880f712aab0865a9cbd18c"
+    },
+    {
+      "path": "Lua_Activity/DigActivity/Model/DigBoardModel.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "948b33b47723d2fc09627718a7b69f72b22e56ce7d5a455d9ac0a892094258f9",
+      "bytecode_sha256": "6ad7f22b2e9c2b4c3e9472e178e4b5f1498b07db0f2d9ce7a8a2efb046dfd095"
+    },
+    {
+      "path": "Lua_Activity/DigActivity/Model/DigItemLayerModel.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "57c864da3e96cfc6d4fbc77df6a2adf449121c7e029ff478619758420f50ad29",
+      "bytecode_sha256": "55aa9d35d6ee2b19fc29f836013582e0fd0743e5555b40f9a79e30bd0bc3bee1"
+    },
+    {
+      "path": "Lua_Activity/FarmboardActivity/Board/FarmboardActivityBoardContainer.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "443584976e9daf387037b05c703ce11782510b2ede9bc28eb393783cba210ecd",
+      "bytecode_sha256": "79c5c07e84f9435ab2db2677b7b5749a3e26233d77b3fcb0f8656054fbca6726"
+    },
+    {
+      "path": "Lua_Activity/FarmboardActivity/Board/FarmboardActivityBoardModel.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "fbd651557ce4e811f032efcc5cd4e226b6375620c2578d62cc8d88fd1d23604b",
+      "bytecode_sha256": "cebb7a845345f40ecc77a1c4e5df0aaf1e106db43404103dc01427ef1da1a26e"
+    },
+    {
+      "path": "Lua_Activity/FarmboardActivity/Board/FarmboardActivityBoardView.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "d804963552a644e5bc76268d49853fbf643f527d36484750f6167dede44883e2",
+      "bytecode_sha256": "80d0c1f3c8123d734fd29cfead7e88b0a2ade0f58ac70ebff46436f9bfced226"
+    },
+    {
+      "path": "Lua_Activity/FarmboardActivity/Model/FarmboardActivityAnimalModel.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "65b9e7632cf66cc751ff4522d500fb1f2eae6bd0e644d61ea499d802c481eaec",
+      "bytecode_sha256": "de5372d893b9cbc54596663d4d6ec7498af92fd1fcee6bff89cf27d1ab978fe5"
+    },
+    {
+      "path": "Lua_Activity/FarmboardActivity/Model/FarmboardActivityBlockModel.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "734f57996ffdfd22cb7210701a3417530e0ff70f90708d83ffa2d6da7a99da21",
+      "bytecode_sha256": "019159d67ad7d7014f7c82798e683deae2bb1a48f5baba6985f27d302ee11480"
+    },
+    {
+      "path": "Lua_Activity/FarmboardActivity/Model/FarmboardActivityModel.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "cca451583a74af75676ff6129b9cc56aff8767fe30f6d55fe3965956c967bae2",
+      "bytecode_sha256": "61c6427b18ef9cbc6e9c7c81cefdcbe2bafc333a8c1a7a88ee86bbb3715f3862"
+    },
+    {
+      "path": "Lua_Activity/GeneratorBoostActivity/Model/GeneratorBoostActivityModel.lua",
+      "reason": "直接改变物品或生成器规则的扩展",
+      "source_sha256": "61350cf348191485c0d96c998818c2c93039d9cd0bb8334d1e8af6272e4a2859",
+      "bytecode_sha256": "e153e5646c658a0cfbd2c7ca4bce3a07202bab1ef4e5ef0782585dca7f5e7f01"
+    },
+    {
+      "path": "Lua_Activity/LuckyProduce/Model/LuckyProduceModel.lua",
+      "reason": "直接改变物品或生成器规则的扩展",
+      "source_sha256": "5cf34f62ac9d0bb9391f5cb4a038f7e4ad97722e477519dafef898be719bdcf3",
+      "bytecode_sha256": "937d00a311a7c3e02ffe929a1d19d18288822cf8d59700f5738c8dfe9b223505"
+    },
+    {
+      "path": "Lua_Activity/MapExploreActivity/Board/MapExploreActivityBoardContainer.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "57d1e0fc6e901502c6b9e8e017da7ccff67ad767eac20d2fd654f33a63932d74",
+      "bytecode_sha256": "6a142733cb726c37a3e9e17faa82a35f0b785bc13c33d82a4abc907e555bf605"
+    },
+    {
+      "path": "Lua_Activity/MapExploreActivity/Board/MapExploreActivityBoardModel.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "2ba2ff05ff5e94d703c010a3e76b76982c6cac727719cde8cd3d0bf69d925a48",
+      "bytecode_sha256": "09d1a36e743b2d4062af50df6cabf9cc7645178308f10c0a3ac8bca7824955f3"
+    },
+    {
+      "path": "Lua_Activity/MapExploreActivity/Board/MapExploreActivityBoardView.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "402e1e69c2839ad78a16242467c0d8d8a902ac09126349dd46862b510c76904c",
+      "bytecode_sha256": "204e1e07da8133e40524b7d3a1be4fd3148560aa365019e59f7cbe6faf14a835"
+    },
+    {
+      "path": "Lua_Activity/MapExploreActivity/Board/MapExploreActivityLevelProgress.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "2c313db6d93eff1f01112e90761480656cd49a85680663e82fadd075c0ba7dc8",
+      "bytecode_sha256": "a34f0be09952c3c985933b4e2bd26d55102665b32fc076ec9837ab9632bf134d"
+    },
+    {
+      "path": "Lua_Activity/MapExploreActivity/Board/MapExploreBoardInclude.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "a60582b74e1632c9a5b1cfdde6ddfeadbf32feac7acddf127f71e1842ae2bf4f",
+      "bytecode_sha256": "9d0c783449584d6c9a0076c020076854d10d67e25330f3fda5f42919d950a001"
+    },
+    {
+      "path": "Lua_Activity/MapExploreActivity/Model/MapExploreActivityModel.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "874ae2faf37164a39938259bf220b12c9de7e3b183e93844d8257141ab29c9de",
+      "bytecode_sha256": "4e621656f0f571e69670278a4cc99deaeb4f3ed6bb4b944d6db4f30a5833a5ac"
+    },
+    {
+      "path": "Lua_Activity/MultiboardsActivity/Board/ItemPortalViewMultiboards.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "59214d0d11c0916ca9920ad30af5402f8401a4a34613af69529379405a0a64bb",
+      "bytecode_sha256": "fd3034ac197c5d05cd4ff36205cc095661dffbb10bdfbecbbd076ae55d7d7abe"
+    },
+    {
+      "path": "Lua_Activity/MultiboardsActivity/Board/MultiboardsActivityBoardCacheRoot.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "702cd7229339bb562de8538e499d7562b50c188a4c23ec92999ee433f780216f",
+      "bytecode_sha256": "b4ee7bbaf9875e823572b478de5bcf91a7d617ea0e372eed7e2f0671b0801d22"
+    },
+    {
+      "path": "Lua_Activity/MultiboardsActivity/Board/MultiboardsActivityBoardContainer.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "635d896025c2fd2b512c31811c69bbe68f4f205a015184c29a44e77fdcc81103",
+      "bytecode_sha256": "8002636720e029ef0887d9101d22a3b25efcff701b802425ada03bdd15b3bede"
+    },
+    {
+      "path": "Lua_Activity/MultiboardsActivity/Board/MultiboardsActivityBoardModel.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "d8cf1a39f99be6f637bbc92d1159fd9a1edacca78e0b9dcda8d85d428a3c1376",
+      "bytecode_sha256": "4f452ea6d1d49f531d2fd4e230d052ca3baf1c3439944a430e164d8f4fb9472d"
+    },
+    {
+      "path": "Lua_Activity/MultiboardsActivity/Board/MultiboardsActivityBoardView.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "cd1e8643ce757bd6dd1d6e8300f493f400c997a1a08bb0cbf23f33e70468befc",
+      "bytecode_sha256": "f26d7844d05218ceda36c9f73548c389dcbc440448f45f781c08da123a53a628"
+    },
+    {
+      "path": "Lua_Activity/MultiboardsActivity/Board/MultiboardsActivityEnergyBoost.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "ed8787920624a9fbd0e178c02617020dcb016e468b0e58e38b8f5613431fc63a",
+      "bytecode_sha256": "0ae9db8901e3433b5168edac26d00081b433147aef9ab9bd3d23064d6de44600"
+    },
+    {
+      "path": "Lua_Activity/MultiboardsActivity/Model/MultiboardsActivityModel.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "3657cd1fd107926b13a07b56653720af5ec43de0ae1d81080c41f9797f00287f",
+      "bytecode_sha256": "84dad9cee61cd5dc3af1825bb0341e22538a8a825cefb1bb93a18fd328da5818"
+    },
+    {
+      "path": "Lua_Activity/PureBoardActivity/Board/PureBoardActivityBoardContainer.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "20e239543f0107172db5c721700eeadc304fc82949638d064e0ef0b0f8bdcd36",
+      "bytecode_sha256": "a21d9846a4eb2f9c1e279a9686c3d6fc1a4cb8ab236198815e49a1de3ebe88ea"
+    },
+    {
+      "path": "Lua_Activity/PureBoardActivity/Board/PureBoardActivityBoardModel.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "4a8fa1cafd1689773d22a0efc611faad9e7ac209181b55a75e351194af906bc0",
+      "bytecode_sha256": "aac8cf30d9c01a698ab431b1f44b1b2745f94086f9dbd52c764b0cc1881c7d26"
+    },
+    {
+      "path": "Lua_Activity/PureBoardActivity/Board/PureBoardActivityBoardView.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "098790050680b5ed6b853fb6624bfbef5ac80f20eddffa0e28796a4d4cc1d428",
+      "bytecode_sha256": "a1db9232a966652828c93f1ae619784ea85d148eb95af7f882557ce5518f6a0c"
+    },
+    {
+      "path": "Lua_Activity/PureBoardActivity/Model/PureBoardActivityModel.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "e974be99443fe61481fb59b73b0c1d48540a375bb08b06cad07e4764f4964cdb",
+      "bytecode_sha256": "75550f2f0828cf01e6ab082c9d56a196dfac3a5a9f22d868ddbc98c51b27431d"
+    },
+    {
+      "path": "Lua_Activity/StickerboardActivity/Board/ItemPortalViewStickerboard.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "fa200648b87d07a66c90a829f2146e0e6b1278671e5419fd447b8209146b54c8",
+      "bytecode_sha256": "63118cd7f189325457865534d70c1bb8fea19d5015b72037668ed24819983c4a"
+    },
+    {
+      "path": "Lua_Activity/StickerboardActivity/Board/StickerboardActivityBoardContainer.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "5e1f535c35275cff58a3c8f9c575d91853539f875772ed8233af29f29da17dd7",
+      "bytecode_sha256": "3734d8f4621f89ecbc03eecf03ab0d63bbdde5e489d72d8248c79aa266f125a8"
+    },
+    {
+      "path": "Lua_Activity/StickerboardActivity/Board/StickerboardActivityBoardModel.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "cbf568973964bb99b3daad041477e0fe57c3daf7098cb21d48cf43861f0d2861",
+      "bytecode_sha256": "fb6735c48787819cc7d6ac4ac17d7b5271fb5ff787390aa7261098704f2ad909"
+    },
+    {
+      "path": "Lua_Activity/StickerboardActivity/Board/StickerboardActivityBoardView.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "5ed275434bc0b6f2e2cab3b45f764f30fd78b9213f7e6de6c9b6386a5dd38c10",
+      "bytecode_sha256": "7a5997e5251b7c36519ecad77513a76cce714817dbdf0bae59efc767b09f0d39"
+    },
+    {
+      "path": "Lua_Activity/StickerboardActivity/Board/StickerboardActivityObstacleMapModel.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "b2a4fbc911194187eef0f423f589db21869dc7612dea3748dbcca5e05bf9ae3d",
+      "bytecode_sha256": "eb0149d8a48d8a047d1162899a8033c2ab5574c3c313c36f9c86c65c3498281e"
+    },
+    {
+      "path": "Lua_Activity/StickerboardActivity/Board/StickerboardActivityObstacleMapView.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "e8565aba024295333bf1445ec9cd637b881360b66fc935ac097f89abe35a0647",
+      "bytecode_sha256": "1a3ef47b3fb4b72a2a25f52f20ab552383af8ecbec113f37f5f51aaa6fc7d8ba"
+    },
+    {
+      "path": "Lua_Activity/StickerboardActivity/Model/StickerboardActivityModel.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "501e2cef18b6b3175b11e67180920b21a10e2e1814835b4a1ecb9d1cdf623329",
+      "bytecode_sha256": "dfd6241c101cf5563db0080defbe548293f169eed90ab2685112a2c1c48ccae6"
+    },
+    {
+      "path": "Lua_Activity/StickerboardActivity/Model/StickerboardActivityObstacle.lua",
+      "reason": "复用二合规则的活动棋盘及其机制",
+      "source_sha256": "4a375d4641739d17c4f6fb76a529609c16209c97998ee5a150c084fa16559389",
+      "bytecode_sha256": "53243224459a044a6ab14eb99afa946338fb8619e5ec659081c0ae5466c94796"
+    },
+    {
+      "path": "Lua_Activity/TempItem/Board/ItemTemp.lua",
+      "reason": "直接改变物品或生成器规则的扩展",
+      "source_sha256": "020f4ad3364b3ebdc7547c70ea9f8155acc4b0c0f03b425b0a84a7d221d1e64b",
+      "bytecode_sha256": "5c3c5771f09d0453d7575aa168f9da2be7e860f381800d7711521920fc22d0cc"
+    },
+    {
+      "path": "Lua_Activity/TempItem/Board/ItemTempView.lua",
+      "reason": "直接改变物品或生成器规则的扩展",
+      "source_sha256": "d2f0ac533fa4cd16a38a5f4107236c99168a390d5aabe8f998d10401a593ceb8",
+      "bytecode_sha256": "0eb1cce507c50e778c270b8b8e09e085a4d39ae0f0db5384b3a14e9c6d8ad9e2"
+    },
+    {
+      "path": "Lua_Activity/TempItem/Model/TempItemModel.lua",
+      "reason": "直接改变物品或生成器规则的扩展",
+      "source_sha256": "179cb247e14b70919556600a98a14fab668a478b4611f92193ad9a54ea4d83aa",
+      "bytecode_sha256": "1d2671cc4ab047b55018f31c2bf86ca2738d71dfa0baee241b79ed68a10afaa6"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardModelConfig_autumnleaf.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "d6ebc73435f0baac249535a25fc6d694ceaf28e6458b8048ffe376f8f8895860",
+      "bytecode_sha256": "e67ec410a38de40ac13017df3ed4899cb20b7d5ea9053a142e337fc545ba4190"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardModelConfig_autumnleaf_level.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "99f151cc57202423cf34feb8552765725824367ab84a2aaac0cb2d9e1257de8a",
+      "bytecode_sha256": "9574621d4b9d01e8f96779c8f3daaedaa2c933a8c3320da3dacbc570b8d6c0a8"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardModelConfig_dogpark.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "0019011bd84a5abdfdae9ff5935f850f987c0cf32f3369b85822c1dd729c6412",
+      "bytecode_sha256": "102cb2958202cde14caa97cf297f9ea3ad35fa9926774fedcf58cec6b09e9057"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardModelConfig_dogpark_level.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "d48e4c1fff5f32301e0951e33810eb660c9a8c7a075202cae9aced95345876ae",
+      "bytecode_sha256": "d374ea250d3580e85907ee5d19d89f129f4d4fb5b2b9d6e66fa832dbbf0f2072"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardModelConfig_dogpark_obs.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "85ff0852f81b6b1c58d8106e53121a0f0f94c1ad13b5da010cd28aac2c51af3e",
+      "bytecode_sha256": "9a3f6cb69fb9c114a0340f4c1847f8e92d6262357c09313017d67c589f770a5e"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardModelConfig_dogparkpure.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "a2076d1fc2bc797f23294dea2b197ca61a9fda5600ed56ae481b18bc6473bd2c",
+      "bytecode_sha256": "f6059bb473a769427636a0f0b85bcd431bd067cbfff5c17dee9583b960df3f20"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardModelConfig_witch.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "3717b483032147551cdd6e7d20b2a5b345e84245cf7aad1c31081a53e1152961",
+      "bytecode_sha256": "f4346fafaec75e7e7a85afcc848c9d3e6ebd8fd37d534562502a4f124fe7b6b2"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardModelConfig_witch_cloud.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "7f91f179203ccf7a24e07a6b10f0979be5097253893ccee4ab95cddd747c7070",
+      "bytecode_sha256": "42d962dea973520afa0090b4adc5ce00f402b91dd2d6edeb386029f4681f5c73"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardModelConfig_witch_level.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "a8a0c234f031817d0541829ef243604e7faf7435a64c1a70e838c117b88dd022",
+      "bytecode_sha256": "bdb6d2164863920094a58c4a8cf679b8219b09911c7b271f87fe2459ed07e2cc"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardObstacleConfig_autumnleaf.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "afa204109b1aed42c60cc8968fda1e326b66da72dfd512a6e556f1d41d17f34b",
+      "bytecode_sha256": "14eb10c17d4f95f28c7863f796040661434b03eb0ad6acfcb38739a01c8b85c1"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardObstacleConfig_dogpark.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "1232d8379de77e154ca533689af2e42629dd7574bda5a0a390799849f07607c3",
+      "bytecode_sha256": "b2e240d878a654408399bc3c8a61c8d81893667a2e7ab7edf97b9ae73c87edbd"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardObstacleConfig_dogpark_obs.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "b676ddec4525bb889c45fa6f5eeb3a1f2d82f0f1bfb030b9ac17b6c98024b30c",
+      "bytecode_sha256": "b7c35426f9b91782f694b7abf9bdc7f0dbad32d634224907c75441a6fdafd215"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardObstacleConfig_dogparkpure.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "1232d8379de77e154ca533689af2e42629dd7574bda5a0a390799849f07607c3",
+      "bytecode_sha256": "f9141d5aeda8a521fbb3ced90d875a0ddcf1db00a8d7ec4851139cb3ccceeacb"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardObstacleConfig_witch.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "64bd62d0ea5304f57877b64d72c711dbabac1347346e38a38dfcf211db836b65",
+      "bytecode_sha256": "be7696f7c4e57a35f465f65262aaf483e8c81d64062484100bd3a4b16166245e"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardPaperRewardConfig_mother26.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "2106da54f6a5a54dae4a5719b4403dd7fe0f7ee8ce97c6718026e52fce5c9478",
+      "bytecode_sha256": "d6605d41754ab713358359eb717b831ad9672788a4eee86fd0be77050e5667e9"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardPaperRewardConfig_sewing.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "2106da54f6a5a54dae4a5719b4403dd7fe0f7ee8ce97c6718026e52fce5c9478",
+      "bytecode_sha256": "bee8ce34401a5ac85cd3e06d25add75baf55aca85bfba947244b00b3057cacca"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardPaperRewardConfig_sewing_reward.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "9c0c6e9d1e324bc0581aa9e5452e464d55939784f248ef41e322dc526e9d8b66",
+      "bytecode_sha256": "25f0285f6e7e9a08e3ea1d69d6914472d9789a40d72e222a7883ba9cb9d6f760"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardPaperRewardConfig_sewing_web.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "cd87296c23f6594a9dec47a46cc267691fe0925309b33aeaf08cc295a7bc99d9",
+      "bytecode_sha256": "9b307fefd91399f5f46621b89345260c9bc93d924404c33a1a1eb698d9d09e6e"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardScrollConfig_autumnleaf.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "40a62014654ced0d7db58570850f1ff0ba74ead9ad775ba042105f91f3e6597e",
+      "bytecode_sha256": "9ba3b6ab0156c4b3e0b755d7afe6ea21d1fe603f7fb250ab09f82eb959138df1"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardScrollConfig_autumnleaf_level.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "b25834b9713f2b5a74e8bb2e9a908f2543eb29ead4a08f65ad2aad827575f47c",
+      "bytecode_sha256": "f86325a3073c40892c19d68d0acf0e7324d1e2b7b471053ef57da6336030b52d"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardScrollConfig_dogpark.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "ef794153c3b672c7599babc4e21af601d27c034da8727a58bb7479a738ea4edb",
+      "bytecode_sha256": "cac0220c3e043af756732e64671095c56a26cb1f5865181010778eba948285c8"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardScrollConfig_dogpark_level.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "b25834b9713f2b5a74e8bb2e9a908f2543eb29ead4a08f65ad2aad827575f47c",
+      "bytecode_sha256": "b575eed95bf57833a591bf4450c6cb98131e1046ddd343c31f0f7539810704be"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardScrollConfig_dogpark_obs.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "40a62014654ced0d7db58570850f1ff0ba74ead9ad775ba042105f91f3e6597e",
+      "bytecode_sha256": "a5ec4989988e278413e2f0beee9359ab4c68c7601c04c771f09c724244efc658"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardScrollConfig_dogparkpure.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "ef794153c3b672c7599babc4e21af601d27c034da8727a58bb7479a738ea4edb",
+      "bytecode_sha256": "3b3e9511e3f40ef8cf4d19bea11a4c505f099fc25c06720fd35e44e457813f79"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardScrollConfig_witch.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "40a62014654ced0d7db58570850f1ff0ba74ead9ad775ba042105f91f3e6597e",
+      "bytecode_sha256": "5d8df0e1cb91e5d57da86a0a54ffc2b12972898b5d05e050bfe82ae02b249cab"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardScrollConfig_witch_cloud.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "2df20eff7fc6df44bb8e9cc9114f62511f404b44d0037df9ce8279504738704b",
+      "bytecode_sha256": "29812bee97263bead3903f4182a90d3d2a6e3eb3d195548cb85391ceb911adb8"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureBoardScrollConfig_witch_level.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "b25834b9713f2b5a74e8bb2e9a908f2543eb29ead4a08f65ad2aad827575f47c",
+      "bytecode_sha256": "6df4b8c0519c076acad15ffb6721e44815d3c845580e9132e5b4fb7cc4429405"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureFogModelConfig_autumnleaf.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "1232d8379de77e154ca533689af2e42629dd7574bda5a0a390799849f07607c3",
+      "bytecode_sha256": "d163568eacd8bb9453b5e3f93bca455bd0da2020daa98fbc1d849efe14e9b39e"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureFogModelConfig_autumnleaf_level.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "6f78af8b5bd07531fa2be42b62b274469b6d98a04a4ca94b7a3f9be2d07cb864",
+      "bytecode_sha256": "1e2ab603554bec39bbbc0cde84902e9a7ece34c50365cb04584e8e690927f223"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureFogModelConfig_dogpark.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "1232d8379de77e154ca533689af2e42629dd7574bda5a0a390799849f07607c3",
+      "bytecode_sha256": "cbb561f06d9382cbe92804bcd51357c70d079a44338a6837f54c822fc8a140e6"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureFogModelConfig_dogpark_level.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "6f78af8b5bd07531fa2be42b62b274469b6d98a04a4ca94b7a3f9be2d07cb864",
+      "bytecode_sha256": "0dad422008b1ebe61577ef4ecfdc827f20c65d96d82f6f26dc084d495a9cc065"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureFogModelConfig_witch.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "1232d8379de77e154ca533689af2e42629dd7574bda5a0a390799849f07607c3",
+      "bytecode_sha256": "8f36e387110ba1fee29adf211fb880fbccf959f79cf74bad9281ad7a3e9d42cc"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureFogModelConfig_witch_cloud.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "00458d561c70f0f0234c7ef16d38253aef5dbcbe11532c16a219c3d6b7a2f647",
+      "bytecode_sha256": "ce8c951cc1ae553b423101990b076e13bd38ccba18c123ce7a2f9d5eac5582df"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureFogModelConfig_witch_level.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "6f78af8b5bd07531fa2be42b62b274469b6d98a04a4ca94b7a3f9be2d07cb864",
+      "bytecode_sha256": "d97ccb4ed4f2324ca658ffa0454ce03df9067664ede1371f0fa136e07d80fb82"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureItemModelConfig_autumnleaf.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "17239e01a13283a5e3e83090eb165a7486475d85016897b77912b4340da65d3e",
+      "bytecode_sha256": "5401b534409224a25dfd402423bbed10f09d53094b8232569bd7e21e86b8ccf2"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureItemModelConfig_autumnleaf_level.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "e8e876839aac2f77bfc4e2262d6dbcfce22f4e51bdea984d84bf4dc21ff810f3",
+      "bytecode_sha256": "8922a77f7b5afe185b6370236032c2496948a78b131bcc6e67cbc8e41853d10e"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureItemModelConfig_dogpark.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "0a04a6fde793072d09a40fe6ef0f4ace30fd3adafcf041480736a7d047dcd42e",
+      "bytecode_sha256": "6ffb4de9c9033b96fc5fc83e46f0056107b48ae9eb70e2914d46c6ba85a5be67"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureItemModelConfig_dogpark_level.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "152d73aba99ab356531cb579285316e28187464611ef1b6d2357ea9824f96a46",
+      "bytecode_sha256": "eb89696ad9ec0e692e4c858f7ba82c4e01b30b486a66ccfe4a675d256a279707"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureItemModelConfig_dogpark_obs.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "707fc8bdb26762329540e199331148cd8b6ed5f0e195db326213281e575acf3e",
+      "bytecode_sha256": "bf970f095ac67291305e31f3f3c08438ee0281357aae492e0c474de9e4e66650"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureItemModelConfig_dogparkpure.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "c383d214f4d7853b779ac0a336b193e2c4d584a1d221e4b67c95b4a079dff621",
+      "bytecode_sha256": "e1b6158f5c1e56487b56002b2306f27dc8588a618810b9ee802701b05882f7a0"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureItemModelConfig_witch.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "80479460c9c1e6ca4bd2cd0c40499a83597b4abab97fa58b84fabcda3e0e59ac",
+      "bytecode_sha256": "f1292dca88e360b4ecfb2ee9b50999d65e0329789f0c05e610812bef9837eef2"
+    },
+    {
+      "path": "Lua_Config/Data/Config/AdventureItemModelConfig_witch_level.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "bcc3bf1d4e48aab2fa65f3253825f4f5a878f49d5f8a1af794393f0f3cd2660f",
+      "bytecode_sha256": "4681a3b5127b58e6b0eb4550f1df6623eb5424c3a4cbd0b9ff50b770884cd0f0"
+    },
+    {
+      "path": "Lua_Config/Data/Config/BoardModelConfig.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "4e7cb24b8c2b3682706d9b20cb9f6ee28bcdf9c30ca9668369366b36af343fb4",
+      "bytecode_sha256": "e00b09b3b66b53b1a7f39ff2db9261cd74dd2423f77bf069adc3d7dd411ccf7c"
+    },
+    {
+      "path": "Lua_Config/Data/Config/BoardPromptConfig.lua",
+      "reason": "合成产出、暂存、展示或产物修正规则配置",
+      "source_sha256": "354e803265452adf88eb403ed210e83317f195e165c4cf8ee5b08f110f4567f1",
+      "bytecode_sha256": "74d84b98f31d48a03924577440384a98166b1de00854084a739ab6a898f67c6d"
+    },
+    {
+      "path": "Lua_Config/Data/Config/BreakBoardModelConfig_Shopping.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "f6fb6140ed797ccc0dd29fd6e7734126eaa602165de5f5809530e4677597b79e",
+      "bytecode_sha256": "491f7a7900b45a14062cb6d188462a077495db2a47f97075f16f1e0088b07b17"
+    },
+    {
+      "path": "Lua_Config/Data/Config/BreakBoardModelConfig_Shopping_test.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "801cb324334db27fcc86af359cbf2d9098335c35a2a7f30d1a30b1b80c5be458",
+      "bytecode_sha256": "7ea54f43068e6315ee7e4fb916a0963e0a8ef81c37cd1fe5ad890fe943233a6d"
+    },
+    {
+      "path": "Lua_Config/Data/Config/BreakItemModelConfig_Shopping.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "f08980194c0de5534b58155cf0346a6047713cb9e21567c9b5d335663d9987d2",
+      "bytecode_sha256": "74330a454eece04a6f29f7492e385a9ec16779dbe3b938703ce60a992e8b0af4"
+    },
+    {
+      "path": "Lua_Config/Data/Config/CardItemConfig.lua",
+      "reason": "合成产出、暂存、展示或产物修正规则配置",
+      "source_sha256": "60b52c43219d023605dba0dddcea487573b3556ea675586615cfa14e8e1a3fb7",
+      "bytecode_sha256": "1d9c2e9dd3a56fef39b0798e81b287a8cbf45c4921e6e7ff3c386ad6378a43c5"
+    },
+    {
+      "path": "Lua_Config/Data/Config/CardItemConfig_more.lua",
+      "reason": "合成产出、暂存、展示或产物修正规则配置",
+      "source_sha256": "862d2d61b3b2841338c4b0a0af3698540cfe1fd54d6dbb512ed3c4c85f9e9b81",
+      "bytecode_sha256": "025fd81c346de3d6401321c3d99ec2f71fb3bb43bdb53302d7f8306b39862f10"
+    },
+    {
+      "path": "Lua_Config/Data/Config/CardItemProduceConfig.lua",
+      "reason": "合成产出、暂存、展示或产物修正规则配置",
+      "source_sha256": "e756a41cd64afa05779873c1fa2385005a08ac48ee0477f531b97ddc899c034f",
+      "bytecode_sha256": "6e29eb88614dc9a436392f58480ee6e6ea52bed3e8d73ca95b7bfe9d87223885"
+    },
+    {
+      "path": "Lua_Config/Data/Config/CardItemProduceConfig_more.lua",
+      "reason": "合成产出、暂存、展示或产物修正规则配置",
+      "source_sha256": "3c6a746aa13ba0e57448b418395ed3193a1e629927763e99b3e2748008b2b3ef",
+      "bytecode_sha256": "b53a4cd511275c4836d963c2e85ebed2607f7d0154a29dbdeae9397c5ede7fc5"
+    },
+    {
+      "path": "Lua_Config/Data/Config/CardItemProduceConfig_zero.lua",
+      "reason": "合成产出、暂存、展示或产物修正规则配置",
+      "source_sha256": "3093d22a2c2459c64a9c1aa47a6291e2099c39beb5de3861b60eda29384f7931",
+      "bytecode_sha256": "0427928f933931a54694c505ead0c7c3ede1551c343a1a4a71361e8040f20d9b"
+    },
+    {
+      "path": "Lua_Config/Data/Config/Dig2BoardModelConfig.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "6c678d5c25063b8ba5a91e7a24ee364a0753a9494ecef2c10274c54a13b3030f",
+      "bytecode_sha256": "d924a94ff5d28ba8a08d87427354352c5ea2ae120dbd8ffbae66f65a5c8de47e"
+    },
+    {
+      "path": "Lua_Config/Data/Config/Dig2BoardModelConfig_superweb.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "d901ee31f1c8c703394fb17bb00a8bc138bc28334867423056d16fe566ecd35c",
+      "bytecode_sha256": "72fe5b627e94f5a1f26201ac52be45a7a3a1c07f5e7006a9a489d1338d887160"
+    },
+    {
+      "path": "Lua_Config/Data/Config/Dig2ItemModelConfig.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "f4f248ff3400854bc02e6ea172357da64b4809dd526a35c7bd370606040cf281",
+      "bytecode_sha256": "1895994fe89fd7c29bfb671febba7098e3738960d3e61c8fa660063b55c08cec"
+    },
+    {
+      "path": "Lua_Config/Data/Config/Dig2ItemModelConfig_superweb.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "3d727cf458390620d8ff6c77487804c7265304b193d98e264e5b808d8610ad6a",
+      "bytecode_sha256": "3899959e10a022ff73b63d61f7878019b1b22aeb62e82d8e25de0c9bf10118ce"
+    },
+    {
+      "path": "Lua_Config/Data/Config/Dig2ItemModelConfig_wheel.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "cfc0bca2de492132dc7061fbd148c8c720cecb98d8508df24542077541cece1a",
+      "bytecode_sha256": "adb4ec5951fc5cbad6447fb181a4f7de8ea84317518249bed6b48cdfdacac123"
+    },
+    {
+      "path": "Lua_Config/Data/Config/DigBoardModelConfig.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "f04a96bb37fbd9cf113b43deba46f39780ff7ab216af1bc4f980235ecf7d3e63",
+      "bytecode_sha256": "35cdb1c6c85326422325789a1a3b5c603e760ddc942e93b179ca4bd758a900ab"
+    },
+    {
+      "path": "Lua_Config/Data/Config/DigBoardPaperRewardConfig_mineral.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "1946d5a0a59af558a73d0de9ea85dab6ee8da7ff7ca3406e6b07290f4206a34c",
+      "bytecode_sha256": "80b5722b50e6503b06b574196036467d663dc99f97229dcca903ba7ac3430caf"
+    },
+    {
+      "path": "Lua_Config/Data/Config/DigBoardPaperRewardConfig_mineral2.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "47a77695e7aad955afa47b162ff8a61287911c0b2a879c126f1e534becc84214",
+      "bytecode_sha256": "2ba2c9afd5fc2fe35ff9108fad126ff782dbb591b26158eb2e38f5dda429de4d"
+    },
+    {
+      "path": "Lua_Config/Data/Config/DigItemModelConfig.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "c3b56086ba4951bc585718c994eb29db7443101388c571a75da980b9804e970c",
+      "bytecode_sha256": "1ba22da8289cd6cb664f056e6a098bef6550ac02325189d4b073519944674026"
+    },
+    {
+      "path": "Lua_Config/Data/Config/DigItemModelConfig_super500.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "1f7e73b2d354e2894f43842e8d56e8697038575ce1318144aad29b40f97b8c96",
+      "bytecode_sha256": "7ca395375a4215cfee958a6555766b88ccc6c5f17e74e411fa515080b5ec396b"
+    },
+    {
+      "path": "Lua_Config/Data/Config/ExploreBoardConfig_halloweenmapexplore.lua",
+      "reason": "活动二合棋盘配置",
+      "source_sha256": "4fd8999b4e9c142764df90d3d7ee2bc8b373a4ec65fc0052dba5498046156836",
+      "bytecode_sha256": "1d7f1d8771cf4d9165b173fbd5ccff5846613cf8399e679e84fe0ee5ba063387"
+    },
+    {
+      "path": "Lua_Config/Data/Config/ExploreBoardConfig_midfallmapexplore.lua",
+      "reason": "活动二合棋盘配置",
+      "source_sha256": "b3fa92aa89891a45b54d072914213cc764d70072ee0ba414b9100e7dbe34025e",
+      "bytecode_sha256": "cb7141f3f4085cf3bb5fc4375de181c81706f2d410bb59c3cfbb86aa113ea190"
+    },
+    {
+      "path": "Lua_Config/Data/Config/ExploreBoardConfig_midfallmapexplore_test.lua",
+      "reason": "活动二合棋盘配置",
+      "source_sha256": "241806b488826ba9288f613ef93c524961905c498588bd2e58f34556c013a4da",
+      "bytecode_sha256": "5f63a118582c66f8366baf00cb62036735aad9b5e3cb66c1feed18fd9eed8f20"
+    },
+    {
+      "path": "Lua_Config/Data/Config/ExploreBoardScrollConfig_halloweenmapexplore.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "ef794153c3b672c7599babc4e21af601d27c034da8727a58bb7479a738ea4edb",
+      "bytecode_sha256": "b06f35961e7640603b67826fba178a2f3e57b332674e1befde5995667d6bc0be"
+    },
+    {
+      "path": "Lua_Config/Data/Config/ExploreBoardScrollConfig_midfallmapexplore.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "ef794153c3b672c7599babc4e21af601d27c034da8727a58bb7479a738ea4edb",
+      "bytecode_sha256": "d4b9b61257ab040e875534aa66427f1ee698f9f3308a377d2cc59095d195aeba"
+    },
+    {
+      "path": "Lua_Config/Data/Config/ExploreItemModelConfig_halloweenmapexplore.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "3072854583309ffebd1b5a63ff5fa65a9767a640580a99f228f8919471ede272",
+      "bytecode_sha256": "bc2f0132ca4daa4492af05ef8f7a603d4ebd1f12cc336d2814c420d6d8a0839d"
+    },
+    {
+      "path": "Lua_Config/Data/Config/ExploreItemModelConfig_midfallmapexplore.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "5b05f27acf72a6dd6cabe7d30b75deb9c944af3d28a1f8c7f7acd747092e201f",
+      "bytecode_sha256": "44628921882288eb8a8b752f0c71ac0d349b740f83ee113dff28fbc427e9dafe"
+    },
+    {
+      "path": "Lua_Config/Data/Config/ExploreItemModelConfig_midfallmapexplore_test.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "ced6c086d5008d7c052f534115bb3ca5909f11edd2f47e3d3197fbcd3922be77",
+      "bytecode_sha256": "65aeb84cc59d4626cd9adf3f32dafdd7b59eb5a28fc6532f15a154347969c286"
+    },
+    {
+      "path": "Lua_Config/Data/Config/ExploreObstacleModelConfig_halloweenmapexplore.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "92683bd3c2bf66f1d6824ce93fe754128c0a75b71d026cd0efa3e2607be44c08",
+      "bytecode_sha256": "3cb96a5b2dc92eb14b260e5b7ebf1ec56510bcf20e8d5ce269705ef278b122f7"
+    },
+    {
+      "path": "Lua_Config/Data/Config/ExploreObstacleModelConfig_halloweenmapexplore_clear_hard.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "b9255ffa10ebdd8a0d668251886ed769f90f70ab57191fc42540b254fdeddb4a",
+      "bytecode_sha256": "80ecc9a6353a6f3da75f698c7577ea81f0627e5b6b8848f9e506eca313a89d4e"
+    },
+    {
+      "path": "Lua_Config/Data/Config/ExploreObstacleModelConfig_halloweenmapexplore_main_adjust.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "1e1a348de65c60da69011ec172c0f90ad5d0d52b6b35ca7c939b046a846dae16",
+      "bytecode_sha256": "26b7f63c869e3bf0fdbcad04a94ed68c81b74a8e571dc86c63a145261c9ed4d7"
+    },
+    {
+      "path": "Lua_Config/Data/Config/ExploreObstacleModelConfig_midfallmapexplore.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "3348aa637cb80e5096773e8af39c01b69475fc2fb48db162d288f25ce54fb232",
+      "bytecode_sha256": "6dc5d8a19665b7b9af100bf409823896405aeab1562387d0b24609cf2479f738"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardBoardModelConfig_halloween26.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "cb6dc2c892ef1f54b9b47381ca7eef5747c758ffd5bd5e2375ff8d468e00dd57",
+      "bytecode_sha256": "05a531a92c715b51e0f1bca2bac61aa4273fd183d644832768c89d9793d26700"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardBoardModelConfig_halloween26_obs.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "22578f028978966ffc52ff40d11e49dbbc994d7faf4513bd64ac85e546a84399",
+      "bytecode_sha256": "f4dc28fafe85049e43c703de45f808a8862bdbdddb479e67b6870103cb931911"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardBoardModelConfig_rainforest.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "33b323780c6e6e33b3ffa3e83cd1f0e89d4f3f8db2b425068b4f6b576d3a364b",
+      "bytecode_sha256": "59f228851f3fffc1e551041c45e0e60254458927f4adefa4d3c3c8f68e05da27"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardBoardModelConfig_rainforest_obs.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "04c424c87b11cfd490fe2f048d5e2ecda2621122bb4d914a318eb20e21fd002b",
+      "bytecode_sha256": "43dd84f9d115b8dc27e2cb1459474f33de289f44728c4b42b0d2881c75f601c3"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardBoardModelConfig_unicorn.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "5e2062e7b64fea279fe1e911033c0c163d0f36f6a4979474136ea2ea07a89ee6",
+      "bytecode_sha256": "88b9ac5b5479d158248f28b2570310eb30ec163185783aa8652813afe7e75b54"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardBoardModelConfig_unicorn_faster.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "a8fa85dc92789486aa77750942ce4b5bcd63bf877c607b917103e92072ef6385",
+      "bytecode_sha256": "dc5d8aeee740d78e08c45221456a9e190b61a387896ca70636db8f91c7621fc5"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardBoardObstacleConfig_halloween26.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "1232d8379de77e154ca533689af2e42629dd7574bda5a0a390799849f07607c3",
+      "bytecode_sha256": "cccb852ed092b440eb1819b8c8e4ee8cabdefa90e5cd14478d4ea70ec81f37b4"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardBoardObstacleConfig_halloween26_obs.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "952c78ee2342504efaf1228b0fb3144c2090100498b4a3e2b203c04c9eafa042",
+      "bytecode_sha256": "a6b7993f53e50cfad9264d065c20b6bc3ff4ca2f387b92de90c79e6c52d482f6"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardBoardObstacleConfig_rainforest.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "1232d8379de77e154ca533689af2e42629dd7574bda5a0a390799849f07607c3",
+      "bytecode_sha256": "33eea9e896b45edc8886edeb7249627dd2dd15dd9d1643f11f7810fac6c9d08b"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardBoardObstacleConfig_rainforest_obs.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "58e8e6e2d0de4002ca8a8805393c7236259d2d770920a25d365c83ee0f18df79",
+      "bytecode_sha256": "3497f20e618e3fe74f82f086a07a2108027c03f67506942f0e56bd421e1ba126"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardBoardObstacleConfig_unicorn.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "1232d8379de77e154ca533689af2e42629dd7574bda5a0a390799849f07607c3",
+      "bytecode_sha256": "164dda880bf74e86b4c430a70e75786d4c35090bfcc232a6811d5231371d5cf4"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardBoardPaperRewardConfig_pat.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "7d21536c15bc654d336325ac8fcdd8fde2a295fcd5c0a45e6aa9b8f0fbb57068",
+      "bytecode_sha256": "6219450605859d5282e219363aca5c0444fd093380dc1b6f0ba27ffa7185278d"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardBoardScrollConfig_halloween26.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "ef1ebbdd61c0bf025f2a76e1f73603045230fd273f107e0963529d076d548ac2",
+      "bytecode_sha256": "0473e2ff0dea01b812ac12584b97c66ea7be359b06f1ba6e1e8767424259d1f0"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardBoardScrollConfig_halloween26_obs.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "ad3dba0a6db41679b2de78da0a5ee2865d9c0d887d29fb1e656b5a8154d2c3f5",
+      "bytecode_sha256": "8b6e7434dd18435ab5b19af5b6dd4b641c03a2a9bce4d944db4c8d302f90b962"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardBoardScrollConfig_rainforest.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "ef1ebbdd61c0bf025f2a76e1f73603045230fd273f107e0963529d076d548ac2",
+      "bytecode_sha256": "026f977cb24725ad185fe77d3886b00d06ff67ffe9a305b234b32adb7797380e"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardBoardScrollConfig_rainforest_obs.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "ad3dba0a6db41679b2de78da0a5ee2865d9c0d887d29fb1e656b5a8154d2c3f5",
+      "bytecode_sha256": "1cf19120c9ed0d50eac7969f99f01ba140c0055f7f068da0f5f7ed8133944df0"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardBoardScrollConfig_unicorn.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "f2d5548e98ac2076a91ab4c62786ac22e3c86441b23911fe0ff5248fbc19b2f3",
+      "bytecode_sha256": "931c1e184a23ad77788fde5e188b4bc7f01930258544a29cb9a9f669ae12e11c"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardBoardScrollConfig_unicorn_faster.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "ef1ebbdd61c0bf025f2a76e1f73603045230fd273f107e0963529d076d548ac2",
+      "bytecode_sha256": "ebcebea8cff04503078be67087946e69d4ae83b70972cedc9c8d27c82868e53c"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardFogModelConfig_halloween26.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "31f48d7e4444eafb54f3ce7dd6484149530278cb651b0f8db9fc5c9c299cc897",
+      "bytecode_sha256": "5eb0ebcb231f7aef79133323e648026e727053f98f37543bfb35c9d4aada5540"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardFogModelConfig_rainforest.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "31f48d7e4444eafb54f3ce7dd6484149530278cb651b0f8db9fc5c9c299cc897",
+      "bytecode_sha256": "c1254ac8294280990de38eb2ce701cdd955ae21a50d6d4fe8bcee13c32161362"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardFogModelConfig_unicorn.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "31f48d7e4444eafb54f3ce7dd6484149530278cb651b0f8db9fc5c9c299cc897",
+      "bytecode_sha256": "b01bed06b169543a36e1eeb2bfc54ab83f6da3ab4c4a6193c27b586e31dfd18f"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardItemModelConfig_halloween26.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "6d2832f1bb669afaedeb2da455545af8bfb36ded5c28093cbdf83628cf9300e1",
+      "bytecode_sha256": "5c525d4959b2247bb407daaded066b36099f4e02959d03534094c55192a276af"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardItemModelConfig_halloween26_obs.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "83c5d3d2ce0d38416443998bf6ad6b2939b57f4679a9a5f41bd13545d3d6f34c",
+      "bytecode_sha256": "af62443eef9527ec818784c208fda5645efc93eb120210bd0dfb4cc1da1e67c2"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardItemModelConfig_rainforest.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "e6d5e0a1f8517819c6e40db14b3ee8fa10f04a6e59654b8193aab84571f1a69b",
+      "bytecode_sha256": "fc9a4412aab807c83808ac2dc28dda1dd838c0e2ac161d443dd00750e784a1c5"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardItemModelConfig_rainforest_obs.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "c961fc8a960c4d9b50ee5b49697e0ebb9a24364e99c458b85d0744bd8a51d56b",
+      "bytecode_sha256": "121b590f5111cf74042fb41ea30a434f8fcfb63d9e373d81eaa2b6e3d7f8a5a9"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardItemModelConfig_unicorn.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "23054cf45952c55030bb2068b204400faa5b88fd1497b1f7469eb833db60e5fd",
+      "bytecode_sha256": "c16871b063047ae1b77a4d681807f6e977f842a5924e06c57306b5bcadc1596c"
+    },
+    {
+      "path": "Lua_Config/Data/Config/FarmboardItemModelConfig_unicorn_faster.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "3517b4e31af9aae0d71db4b517ff647ba58f91fc402ff743b930b150c0dc9a9b",
+      "bytecode_sha256": "d2226473d95d86810f972a77c93bb0153e9e8af5305bf26bb5d5975c908e6215"
+    },
+    {
+      "path": "Lua_Config/Data/Config/GeneratorBoostItemModelConfig.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "c703a161ffa1b006df6aff6caaca073650352a31a8d7854c42d7270ba531d48b",
+      "bytecode_sha256": "f8c12d6488355c9e8dd0cc42b38c56b0fcc88ac0cfd6f5b185b5cd47f77dd494"
+    },
+    {
+      "path": "Lua_Config/Data/Config/GeneratorBoostItemModelConfig_shell.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "ae4f8e233e765d445f5d04a00ae77b0d46690a1cb504450e90a8a51c6548780d",
+      "bytecode_sha256": "f97a9e010494baa148d424a6cc75d00676d03a2360d29b1d40dd00a399dd1052"
+    },
+    {
+      "path": "Lua_Config/Data/Config/GeneratorBoostLuckyProduceConfig.lua",
+      "reason": "合成产出、暂存、展示或产物修正规则配置",
+      "source_sha256": "7b9a693db224e11118bb18c4aaa391189329492eac82802d60124678843e7abe",
+      "bytecode_sha256": "fa635bef5a5904f2bfe5ce2378a8598e38808e6ebdbfb44e896a04451bcb232c"
+    },
+    {
+      "path": "Lua_Config/Data/Config/GeneratorBoostLuckyProduceConfig_shell.lua",
+      "reason": "合成产出、暂存、展示或产物修正规则配置",
+      "source_sha256": "7f25c145911f621a396705c3b9ec44d41fab4a1b66cd90eb311b1d0a30cc89a1",
+      "bytecode_sha256": "70d267dc0890e2452f4e67471379f92660eca0b17e800452f54762de705ec2a1"
+    },
+    {
+      "path": "Lua_Config/Data/Config/InventorySlotConfig.lua",
+      "reason": "合成产出、暂存、展示或产物修正规则配置",
+      "source_sha256": "f8c974725327b607f4fab414e1687d8f3e8a7c4f1dc0a1f27f908edc1a661c9b",
+      "bytecode_sha256": "282cc09d5f8f936d40eadc0afd2f66b0c8f2198c5fbf6c65918aeb79fa2ea869"
+    },
+    {
+      "path": "Lua_Config/Data/Config/ItemGenerateScore.lua",
+      "reason": "合成产出、暂存、展示或产物修正规则配置",
+      "source_sha256": "44347a15754add792d85b7b0a161cf5d818c764267d8a6600ce88276200288ca",
+      "bytecode_sha256": "65b593c80480e57802433912dad4ee7f3fafb21a32365d1bbf307fe423a2b5d8"
+    },
+    {
+      "path": "Lua_Config/Data/Config/ItemModelConfig.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "22ef00b9d31d1cb715aba49413a83a1fe7f07b95c1acf3da1939342c86c5e305",
+      "bytecode_sha256": "bba81572a3706b2fffa65e41af7a16b4304ae36236e72818149fe085b597495d"
+    },
+    {
+      "path": "Lua_Config/Data/Config/ItemModelConfig_carditem2.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "4e0778d505b6e6b85171c046c874ba0fa3cbe72708679f5296471b12e972e7e8",
+      "bytecode_sha256": "e2a1ee82e46c53d133bd56c2f8958fabc6471bdbc7008702ac84d735788cabf6"
+    },
+    {
+      "path": "Lua_Config/Data/Config/ItemModelConfig_extracust.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "56bf358ec5480b68a68b53ddeea317b9066f9bd272eb578f6d144ee01f344e09",
+      "bytecode_sha256": "ba0eb73f6b80d5f2baf864e80afcf90b43525c071327e036aa08dd06ea2f90fb"
+    },
+    {
+      "path": "Lua_Config/Data/Config/ItemModelConfig_shell.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "8c1d84c4e43946b736876d2b33dd799ff7175b7c7d7033a81c5ce7e18821c924",
+      "bytecode_sha256": "8612d7006c534a7654d4ca659c8fb9740994e217e371da7cca385f7c9335cf6b"
+    },
+    {
+      "path": "Lua_Config/Data/Config/ItemPropertyConfig.lua",
+      "reason": "合成产出、暂存、展示或产物修正规则配置",
+      "source_sha256": "040a7e9d9c3acf1a0fffd2edd52a47ef451021524058057fa0d0ecb461ce48d6",
+      "bytecode_sha256": "9deb37b912c4b382e35222472b8e079f84b070478e40b5638aa5d244aa1a30df"
+    },
+    {
+      "path": "Lua_Config/Data/Config/ItemPropertyConfig_extracust.lua",
+      "reason": "合成产出、暂存、展示或产物修正规则配置",
+      "source_sha256": "25585c8a33581016acc83c1f407449566f3d631910770e775e825f7157d3f24c",
+      "bytecode_sha256": "436fdc3a30e2e6b5be58ee663a11445e69d6172c77c71997cad1eecb79b74090"
+    },
+    {
+      "path": "Lua_Config/Data/Config/ItemPropertyConfig_shell.lua",
+      "reason": "合成产出、暂存、展示或产物修正规则配置",
+      "source_sha256": "4cbf70fe6254213c918d8bae6de0ae463dd56c81f40723527c3857a8610ecee2",
+      "bytecode_sha256": "b7475d20f5dff88c03c7c9f1502786992ca4a3383f9eaac8e30e959ac12c9695"
+    },
+    {
+      "path": "Lua_Config/Data/Config/ItemViewConfig.lua",
+      "reason": "合成产出、暂存、展示或产物修正规则配置",
+      "source_sha256": "36749d4b64c9d80ca49d7a4d45ba0b640d3687f0dfe9ac8ea19b8dccc52eb588",
+      "bytecode_sha256": "7051cecbe5ce5f7891e962500ee1ba49054927642d78feb39d922c7c3757f1b1"
+    },
+    {
+      "path": "Lua_Config/Data/Config/LuckyProduceConfig.lua",
+      "reason": "合成产出、暂存、展示或产物修正规则配置",
+      "source_sha256": "c74819bd10c9842837dc0cdf27c4001275a2931eab537e6234455b5ac54dcd4a",
+      "bytecode_sha256": "3a766335dd82da9660679beed3d4223de3daa9e4e1324993fc8ddc021c3d9667"
+    },
+    {
+      "path": "Lua_Config/Data/Config/LuckyProduceConfig_shell.lua",
+      "reason": "合成产出、暂存、展示或产物修正规则配置",
+      "source_sha256": "bc4faeb9ff8571a26d6b9c2ee86c3c4df80a31f8c5824658d38556ccec8c035d",
+      "bytecode_sha256": "b90805f19e672677ca8fe2e27d92de7ed1477be2af15fe5d20f1fbe739294936"
+    },
+    {
+      "path": "Lua_Config/Data/Config/LuckyProduceConfig_triple.lua",
+      "reason": "合成产出、暂存、展示或产物修正规则配置",
+      "source_sha256": "56395246fac3da890911c2af95602664f913a717093c1a431327a8f2d7d99cf9",
+      "bytecode_sha256": "c15487c7d01c65da44fe8a12f47df78df512234fbf3fbecf0aafeda7983f2647"
+    },
+    {
+      "path": "Lua_Config/Data/Config/LuckyProduceConfig_tripleshell.lua",
+      "reason": "合成产出、暂存、展示或产物修正规则配置",
+      "source_sha256": "7e8fd2a2c917502bae10af70d1eaa0713e0b65e9f6762acc6488286e0ede658d",
+      "bytecode_sha256": "68e327e92911384c6d215c13ea3f31fab170302850d54f004b475d3f97dbc2dc"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MainPaperboxExtraRewardConfig.lua",
+      "reason": "合成产出、暂存、展示或产物修正规则配置",
+      "source_sha256": "3627d80c762516ef6b7738d332ac1b664cde1b871a8aa405743cb73c181dbe2e",
+      "bytecode_sha256": "ed8df7a02fd4c0e7f315fa08d6c9966ad1cd9fab45c55c87916ddfb31acfabcd"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MergeItemScoreConfig.lua",
+      "reason": "合成产出、暂存、展示或产物修正规则配置",
+      "source_sha256": "e27839635db18b22bcac0973f97b736fb81408b03a471cea7172f7cfddf74247",
+      "bytecode_sha256": "002986232f5e7249354a5af1e29fdd6b3272c0e88fc81785f6fdb7b8e3b934bc"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MergeItemScoreConfig_extracust.lua",
+      "reason": "合成产出、暂存、展示或产物修正规则配置",
+      "source_sha256": "e99de5f42b78d9ba9dce3c5916382cb7f982d4e2331d978675dc32f10d8eb3f8",
+      "bytecode_sha256": "25d9b7787c6b974ba2b28b2374cbd9f42b58eec682c95bc430cd02be85ccb178"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MergeItemScoreConfig_shell.lua",
+      "reason": "合成产出、暂存、展示或产物修正规则配置",
+      "source_sha256": "3801a54aa83228b7101771195b4b8bee70917189d11ace387deeded73bc327da",
+      "bytecode_sha256": "fb141100cd4f6e7150c160295ae01a060a7a3a95ecae3521f3ce3c66667189c6"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_crochet_1.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "906b31809ac7b7627a71c34b29f1f671e2aaa72acf3fc9a964439e375c0e36bb",
+      "bytecode_sha256": "b1d2b30bdaa664e10a50c490deede032cd0f543fd84fe87f93aa840d2861d838"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_crochet_1_morestage.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "906b31809ac7b7627a71c34b29f1f671e2aaa72acf3fc9a964439e375c0e36bb",
+      "bytecode_sha256": "b175446d925ef2111a7bbf93cf49835b89be718feb5c1a477b86a714ee346141"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_crochet_2.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "5a1d564d675b635342920d808f5e3bdb93c445160c23700607a12fc7d4b9bd1a",
+      "bytecode_sha256": "3ba23365a476d87864af692479e9416b899f4e86f089a933f852a9d0f51643b8"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_crochet_2_morestage.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "c8df03b429f94e76f5dd2cf9c256e2aa55b88e56c387c7f565da5dace18e9466",
+      "bytecode_sha256": "3a22e3e73f4441f0686680fa4a151799b8faa46c9154d930fe6ccfda55ab543b"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_crochet_3.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "d1c623eb9302500fd799f02a3452fbf130da0337811254bc67f5ad6498db1163",
+      "bytecode_sha256": "00eefca2e44d0c5840e9f4cf16b97e1a3794a5f7bca3f26e1f95df2b43f1e481"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_crochet_3_morestage.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "48a1e95f49428feac7335cdef67c560eb066de01ffbcda01cb185c488b6649f8",
+      "bytecode_sha256": "bb04cc92eef6fb8852f4fe5f4add231d03d3e0c0df5e76115467a9d099cfa68c"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_crochet_4.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "c812489763f3ed0132cd7be2fe14be721bb3ba332d56dec447c10689e3ed25e0",
+      "bytecode_sha256": "15ee4eab775ef53661464489899d268d88b04b9a05eaf082fa70e6485299d145"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_crochet_4_morestage.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "3e187546428832208ade99e6912e102e1291dc28fb58b472edad36fd0e5e164f",
+      "bytecode_sha256": "c95a6c3689eb908f8b0b3603c53fa53a7adadd37531080a224b1a4225307cedb"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_crochet_5_morestage.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "b38b9602cfbacbfa7f54e7cd64194827f4354aa566df472307e43308494d82b4",
+      "bytecode_sha256": "1064c9fda41efada8ac55f75e57bb1eb3a991cf79865e16d3c354c2d7f144c2b"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_moon26_1.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "369d9e0484b7473fabe8a7660316631e87614862e4aced560dc1be8b36d900ec",
+      "bytecode_sha256": "b2df9ba9811958ed433be1c4eb0f814b26840e25ea73a3750890d15feb397313"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_moon26_1_morestage.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "369d9e0484b7473fabe8a7660316631e87614862e4aced560dc1be8b36d900ec",
+      "bytecode_sha256": "f89829e301d1916ed81af7e575be7d04c013403f09aec8b657d67cd140ff0895"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_moon26_1_wheel.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "6bebd80d656727154a8235419465bbf46393d6d69a72e326c67c60f14f5483bb",
+      "bytecode_sha256": "72a320e7fc360581fa72c3b0a748574d7102ca46b4f55d65d184b505e293384e"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_moon26_2.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "695f45e66b58e0bc902e91951e0c54337d56ef26094198c9b39f085133396bdc",
+      "bytecode_sha256": "eb5832672b1e77d1a3fce85d5a6c7a986c730277e2790ac00f18227cb3aa3a64"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_moon26_2_morestage.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "7935c7d2137f11ded35d20ea32ceb047e8a54f75312408a5698957d3879faaf8",
+      "bytecode_sha256": "c32dba8364fc1d41e4ab0da5543066aa6b187551bc812328904dd00d9a678c74"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_moon26_2_wheel.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "003a8e139acf51ec7e2b8a5bd730d75b9c7ba3da3187d7f9848474eb799da9e7",
+      "bytecode_sha256": "c459418047e34852e7907f0e2d4a972c461f1c0605e624b672a72600d806b4ef"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_moon26_3.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "a785b095db6e450660c1d4a2119ca7e2d2133e735e5a5f55814035ca3a5abfd5",
+      "bytecode_sha256": "15e797d4d4b2e2b1e0628ed84bf6ef974df95dce9bb857d061314e2e94edf9e3"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_moon26_3_morestage.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "24510cf8786e2879ad1fcc8cf0b360a58ebf34edb54e29fd18e5bd0788455b12",
+      "bytecode_sha256": "1b32d5ee57dae8c999df282dc421195aa486a5a1036cb9152ab0b1b41eb66ba1"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_moon26_3_wheel.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "03a2475b8098ffef22874fadcce6a4f7fb78819b665d6a36f8322aeac6222b33",
+      "bytecode_sha256": "844bba74169ea94391ee30058bb7ce9ec4f51790d6fde915bbfc826acf2fa06a"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_moon26_4.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "08cfe388b33c32fe68578f2c33f1fa018bfd5ecb59a6b65435d59942c81f9836",
+      "bytecode_sha256": "eecc041990de9d036d4b87d630fd54ef3ef28b55308935b93637e980c42bdc16"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_moon26_4_morestage.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "2bc1d1c9415e8e78b513f0bcba4e29b2aa6b3eda2a7c692dbbb13f5af4d346c6",
+      "bytecode_sha256": "4cbbeffa2aff8f6921e9966030d96e85384d8adf2b3d61c72ef40f1d342cb979"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_moon26_4_wheel.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "76074653c9716a80de027cbab9799467e5d7c7ab32ea3dafbac10328b90dcd1f",
+      "bytecode_sha256": "08f687879c1a74f4fc45a19420044bdc36a79e824825faac16bc0b630d29b74b"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_moon26_5_morestage.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "e5bb56dc191e68f429de9b2864036d1bae6ba33782e2ca81f98316e8287bcf54",
+      "bytecode_sha256": "9aa56d64f4e48791a3da177510fca0e713c76795ff16a3e9fd136fa11b036cb7"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_sleepover_1.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "c0b40bb0a11fbaeeebcc7187d0446a576e81a312ffe106e91a4d17179eb682e9",
+      "bytecode_sha256": "44b40a2bd5a1235bd661e75131facb5f8e1ad742b017cb6b3ee3d6527933dc9a"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_sleepover_1_morestage.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "c0b40bb0a11fbaeeebcc7187d0446a576e81a312ffe106e91a4d17179eb682e9",
+      "bytecode_sha256": "8793531a114adb9f79b4668e8ff1daee1d33c9fa069d094e65133ae603a1bdd3"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_sleepover_2.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "146d4278872e37a122c1bcaf9f2e7cf767581659810d60151bdb8ae282075e67",
+      "bytecode_sha256": "c47ff0df3ee6b45bcc50f9afc46e1c3c8ecc5f80784b858268c718e056113361"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_sleepover_2_morestage.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "8ba0afbd76ac8c8fc0a9f8761c72e8a4f392c05cdbcc7ecadb0c0b710a8f4cac",
+      "bytecode_sha256": "f3b79c04012ef7e5c4eb82d52b3b999f79a59720c5030271b352b81be66ce4bb"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_sleepover_3.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "152df50ff14973d17719a9fcd217ab946b5f981049d6b7f798a3250bcae6796a",
+      "bytecode_sha256": "2286528ffa729354a25f16fdf95374dff9a66bf52351ce84c7ae569b4547c1e2"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_sleepover_3_morestage.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "2df78301cdef015735ef489ec251bad6c8db3a9e95ed0519ec24685bfe6ed2d0",
+      "bytecode_sha256": "3ebb393d90aa410544ffa2a9f3a257aa4d8321be3a244e200639879ded9f72fb"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_sleepover_4.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "e2409c5b857dbaf6f8672ff62a0e274d7168c5d1af12098874358cf6e51563fb",
+      "bytecode_sha256": "a2fe78dd0c7f0d0dd52d9362921fda1f774fb53c7258e448ab04b562de56a7f4"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_sleepover_4_morestage.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "eb1b9d216d51a352d1750e679ea899fc353d1b04a9b683bca2ff250ae278efd2",
+      "bytecode_sha256": "53064bd58348680eff7b36cc61de8e43e9e7fdbff453f0fb6db080d4ff2abfd5"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_sleepover_5_morestage.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "41385fc84e2fc3faa7c4b9c7ac7a94e1bc825dd268866dd7449002fc4e1d5276",
+      "bytecode_sha256": "bd968856286dec07d1427c263e52e2ea0a4f2ebd4370a70f73e259e5189abc3d"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardModelConfig_y2k_5_morestage.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "09bf7710d4189ed6720d713505570300514d3bb94d3cba40fd31df7352fe9366",
+      "bytecode_sha256": "ae7cc770ee6f7412af49cf39ff9caa3d6b7f5f7d6a849d89f5e8e46f9a6d50a0"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardObstacleConfig_crochet.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "1232d8379de77e154ca533689af2e42629dd7574bda5a0a390799849f07607c3",
+      "bytecode_sha256": "c832b9bcd09aa0b2fe988e2bdddc8f94afb93bef4ada20e16119b9995cead2f3"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardObstacleConfig_crochet_obs.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "c749e3d30b1ab9b71aaa762e90b840649e9ade76d9ecf7e254440da27c866083",
+      "bytecode_sha256": "6747104bb0dfe2e23b4fca60220a9e703ba495044536fe5364a01a934f902679"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardObstacleConfig_moon26.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "1232d8379de77e154ca533689af2e42629dd7574bda5a0a390799849f07607c3",
+      "bytecode_sha256": "428b1381d1352298bb35a2db0df51ef93bcc6c7ac8910ab25321a0886c2d4f1a"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardObstacleConfig_moon26_obs.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "14cf2f0c13291beadd914fbd8f5eac3717272f312adb91156ccb1306145476e4",
+      "bytecode_sha256": "95a06581e7a46ae8cb7d1c4a20f5d4947a5f9261855810be66c0560e7a751bf8"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardObstacleConfig_sleepover.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "1232d8379de77e154ca533689af2e42629dd7574bda5a0a390799849f07607c3",
+      "bytecode_sha256": "b562064697f9d19a2e34c1be72ec352b4511f239e0244742fcb670e0a5ab0fd1"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsBoardObstacleConfig_sleepover_obs.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "30728259e367b3e70591ad7831b6d3af21e54bd3381491753514aed215e558b5",
+      "bytecode_sha256": "456f6695d655f923c17a097b1d050f46ae68528e911bf9663e99984fcfac005f"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsItemModelConfig_crochet.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "df55325ed2d1ba8fa259523dbd0b16a21128489bfb1b262412155bb2fb3f6fa7",
+      "bytecode_sha256": "03b6943585e7c260613356fef5d954a2208c45591275b03d42c60ac185cb9c8f"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsItemModelConfig_crochet_morestage.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "53696225f66dbbe54f5b296014572aea23e4d669887f4269258222b41351fbe2",
+      "bytecode_sha256": "7a8631397b8dafe3fd14caf97f2efe419bcb72df8818f3a8e9abea6cf4250cff"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsItemModelConfig_moon26.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "3e8df42fe1264d92174d1b67ddb5514d0764e0eb5ecd2e2bff1c921a586abc59",
+      "bytecode_sha256": "bce9f9ffe398cd5f4274e364a3abbde0bbe1325092bf3e55bc6f6fba668c00c9"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsItemModelConfig_moon26_morestage.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "a88f64765ba3dd1284da206eefc8b8a14313261f54384742d5219cfb73d72154",
+      "bytecode_sha256": "8496513c75d0fefb5cd034f15c877fea8ef4b6cfddfef9f887312c5017322bfe"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsItemModelConfig_moon26_wheel.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "8c1dcbdb81140d18fa1d39959109e8e4d3cac37aede291c4f8d7e1c3396a5ab8",
+      "bytecode_sha256": "9e4bcb4dad3ecdf8018de6091005c2aef8ffabc800bc813df2835185f0ff9474"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsItemModelConfig_sleepover.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "3b37a86ff6a41fad341fde5fcc457137697caacaa0de93c558679301b3a1a0d1",
+      "bytecode_sha256": "78ac1a98be64edda57da4cb56dc96f4da1435549421d9d49469f83bd990384e7"
+    },
+    {
+      "path": "Lua_Config/Data/Config/MultiboardsItemModelConfig_sleepover_morestage.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "25eb74ff5a34ae2c064368403c204fcffa73cf25af1baa85c7030cac01c45dab",
+      "bytecode_sha256": "edea8e8ef21842c0fce187309acaed08281a55403aac907acd5bb93a5d29f56c"
+    },
+    {
+      "path": "Lua_Config/Data/Config/PureboardBoardModelConfig_dogpark.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "aafd5fc1202aa2a8f934129334cd49f908bd6c015d0be62870fb3d850ddd5346",
+      "bytecode_sha256": "7f4108a71627a15765dbfc1b7d710669af952dba392269beaf89b6b350107e34"
+    },
+    {
+      "path": "Lua_Config/Data/Config/PureboardBoardModelConfig_dogpark_cloud2.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "255de8d8f2841e1c2d9b273b28c0fb2b182dee699478dc47bf47e42a0de48331",
+      "bytecode_sha256": "20cb1b32a96072ff0e575850153f9496117d5b968f1b293846b8c44b07dc4d44"
+    },
+    {
+      "path": "Lua_Config/Data/Config/PureboardBoardPaperRewardConfig_dogpark.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "b23387a5460b943bd34726c727cb19cd07dc3646108183766ef378a7472811d0",
+      "bytecode_sha256": "46f9c9da9e47c8c7314cfcc784e82f3ad1cb87cb67d45e8c9eda5b25fb3d7ef9"
+    },
+    {
+      "path": "Lua_Config/Data/Config/PureboardBoardPaperRewardConfig_dogpark_cloud2.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "8b538ffe65ec0a378f6596adcb6fd47a797dd9832b18285f0a4739c1070f7251",
+      "bytecode_sha256": "33c765256db52f2820487e278d9b0280fc249e4d313a3bbe21b5dfbdc8020a3d"
+    },
+    {
+      "path": "Lua_Config/Data/Config/PureboardBoardScrollConfig_dogpark.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "a3613a5e5ff358bd56f98bc44db7baca9a3278d83fde29d58668d0d6060ddef4",
+      "bytecode_sha256": "d73535af7299873aeead1207d875580fd303461ba6823570519632f15ab1438a"
+    },
+    {
+      "path": "Lua_Config/Data/Config/PureboardBoardScrollConfig_dogpark_cloud2.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "42a3d6d7e058c02db69fe732509e52c01ad4283d7de59d0bdc2acfec81e872d3",
+      "bytecode_sha256": "4d8c2a93debb575fd9e6b486ff9dc381d347276eac989471ba4e03c0854c4e9f"
+    },
+    {
+      "path": "Lua_Config/Data/Config/PureboardFogModelConfig_dogpark.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "1232d8379de77e154ca533689af2e42629dd7574bda5a0a390799849f07607c3",
+      "bytecode_sha256": "3f94e218d9bb5a2503c54afa8019d9b4cc9f68fb850f868f28171db1f1d08e8a"
+    },
+    {
+      "path": "Lua_Config/Data/Config/PureboardFogModelConfig_dogpark_cloud2.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "db80a1d3798d30e98b3aeff943888bab89b6e447da7636743cd3e3d04a88aad3",
+      "bytecode_sha256": "d7a47556666d4f133cf349ece8a56696bb8ef3ba61719c78b4566e26a466d751"
+    },
+    {
+      "path": "Lua_Config/Data/Config/PureboardItemModelConfig_dogpark.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "08986eca602316d2152ca65e4279411d80b217efc52e86790bf37d97f54a4d2e",
+      "bytecode_sha256": "69c588ae54f10c1b3cfed86bc91d85fd15eb556781cb63de5fb258d7e7d8d95c"
+    },
+    {
+      "path": "Lua_Config/Data/Config/PureboardItemModelConfig_dogpark_cloud2.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "d004f1a3f206fba640b3925f131475f06230e71349000180de03d0f96ec8c180",
+      "bytecode_sha256": "869c78fc635cd6f1c8432e9284fcb9ea1360fde7d08342bb6b7ab52e3be283c3"
+    },
+    {
+      "path": "Lua_Config/Data/Config/StickerboardBoardModelConfig_winter_1.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "47a1d89045a312418ae41748c3392e4244c862746e40d177d121dd5aa4e1e959",
+      "bytecode_sha256": "ed330f5f7bf5f4d56378d5e9a278043d357deb946d9901c16af6f9481994e283"
+    },
+    {
+      "path": "Lua_Config/Data/Config/StickerboardBoardModelConfig_winter_2.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "d3a3e1b3413bf26b9af6991fce41548129f261bfe8e1049d5e44c030eaa2b998",
+      "bytecode_sha256": "6da68ba311c547e4471a678792aaba23da5caa86b5efee2c69091fdc61e3c0f2"
+    },
+    {
+      "path": "Lua_Config/Data/Config/StickerboardBoardModelConfig_winter_3.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "7fff22374c9f99be2a2ae9dbd85c1ddfc8da71ac01837482ce9d17776a5050bf",
+      "bytecode_sha256": "d118ee71e047d7a15f046b73970def7a1311c7e1c184d2c77ffcbbd846d695af"
+    },
+    {
+      "path": "Lua_Config/Data/Config/StickerboardBoardModelConfig_winter_4.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "291b6f31760af558cff24dca98541f043b7cc546d96fd180ec4e53f4cb75e1c1",
+      "bytecode_sha256": "ba21f9c394115dc58b28edd8cc6d48dc1eced7ae8abc54b708bd772a8a5a70e0"
+    },
+    {
+      "path": "Lua_Config/Data/Config/StickerboardBoardModelConfig_winter_5.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "3fb8da1ec4e62f8c2d4953601916aed5be6a9bdd730c141776948dfa060388a6",
+      "bytecode_sha256": "82326738c9595ac13e0df6bcf1b241f47156c4123e1e85730120141fab636596"
+    },
+    {
+      "path": "Lua_Config/Data/Config/StickerboardBoardModelConfig_winter_6.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "e36f584f7551cd53084ac9590fb03512b4a9c593e9594d81d0ec7764ad32ff3b",
+      "bytecode_sha256": "cf7317cd7b63d4d5842f3ac4e14f465fe50641f8dc6e314a0581ee924fe4e92f"
+    },
+    {
+      "path": "Lua_Config/Data/Config/StickerboardBoardModelConfig_winter_7.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "2d1024a02cc4e3c985b20463c417bfa5d7daa1e2421822a98db5d848d49ba8c8",
+      "bytecode_sha256": "ecf36ea271a8d6e72f71b17e89ac343ca7a6975e2ca0015ca8a11972922fbbef"
+    },
+    {
+      "path": "Lua_Config/Data/Config/StickerboardBoardModelConfig_winter_8.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "22af3025080e9bec5e6b297761eb9b9f470f67203e7a2661064cd8038e94cb7b",
+      "bytecode_sha256": "28fe7ad8af63894864f1e5beae6c5e55a6a90214a7872e8efca9d284570b52b4"
+    },
+    {
+      "path": "Lua_Config/Data/Config/StickerboardBoardModelConfig_winter_9.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "9dad769a701f34e09d44f47e17f945d104b292481ed15d58dc1da6a210086648",
+      "bytecode_sha256": "13307cbe4cd0383573addf1f7914777a75128324d1bb9d937745d43b638d642f"
+    },
+    {
+      "path": "Lua_Config/Data/Config/StickerboardItemModelConfig_winter.lua",
+      "reason": "二合物品与生成器配置",
+      "source_sha256": "4d7d587e58bb0eea3381d4ae801fb651653dc063b962a40f125cc1fdca87856c",
+      "bytecode_sha256": "0cd29db76ce2624c5ed3f549972b80a103d84c42fc73a814e9e1c76e15fdfeeb"
+    },
+    {
+      "path": "Lua_Config/Data/Config/StickerboardObstacleConfig_winter.lua",
+      "reason": "二合棋盘布局、障碍和解锁规则配置",
+      "source_sha256": "2b0462a93209b7e2b8bf675396b304792001c02c1dd42c200b81b521da440bfc",
+      "bytecode_sha256": "36289477ec84adfaec9533f1ade72e4cd7f8ed96ab45d423973f6817d660a4e4"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Base/BoardPosition.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "0e77481597bb64cb691360c0dad947880174cf1eab97b5fe0bf8899f65fc0332",
+      "bytecode_sha256": "e49f85c6961fb40b20b3e8fefab16bd5eb9e1bdfe6f299faf9ef488cb04dd5b6"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Base/Matrix.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "56cfe4214911508e206b616c1cf59e4dcb9d5fa0bbba610afe848bda1040cb0e",
+      "bytecode_sha256": "aae6080abb1ae5b2f42dc78dd6311acb9fe29437e14a52a2a7dab60b062fe734"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Board/BaseActionBoardModel.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "362a62b39c30876ad8ecf73b02f086960c250058a14c1e56f8a68efa51584f68",
+      "bytecode_sha256": "b01cc1db109fdfdb7b0c2e89a65d58fbc44b23e2a459742ef77a2f64480d82e3"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Board/BaseBoardModel.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "621ca04aa8465987c63eaf44b4e5bef4bbfc23df3bfb1cc982f8fff4cf466d67",
+      "bytecode_sha256": "678528d9364101b63c20287e33c2308af04be25b50d6e4c8ed717488be150c63"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Board/BaseItemLayerModel.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "3484156c1ceee2582d7adc5994a3d35447615e96760ba77ab03d33576837ec45",
+      "bytecode_sha256": "4999db9e245409991cc5a52a4beb7054bc780506b15ff0471a1a1cbb7a55970f"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Board/BoardDefinition.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "0b84145aeca4f93fe05296ee66fcc0abad2d91f4c3f81758f71b6aeffd20f0bc",
+      "bytecode_sha256": "c20b800f6cf5ffd6bfaed54870fc7d9157b5e7b05d171be4d3085c5b41103e71"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Board/ItemCacheModel.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "edd97a2e5444a50b606b4ea8c56eb7cf7cfa64469aa0add631fd864e5849fe33",
+      "bytecode_sha256": "2a5eacf7a66ad06708e0f196c94189edf5137abe0292d2fc7291fd0ea8856028"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Board/ItemFixedSpreadModel.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "5c23fb5fa659f12f2f6bef72b3e6af08de92afd4924621755482bda50d8db4dc",
+      "bytecode_sha256": "9155738fadf853bcd0d59504afdf21f00caad94271007fe8444d26a64d9bf93a"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Board/ItemFixedSwallowModel.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "f8bfe6d5c2b122afcbce36798c78991c07daf141e5d10e2e1197154287aa27ac",
+      "bytecode_sha256": "86c1da33cb32a29b052dfdfc4c47a52ad2a3addde27bb6b3843e15df2695944f"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Board/ItemGeneratorFactoryModel.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "0f1661ff279398a0e5976314886363f17100ec7284699d1c6ab2c69170565734",
+      "bytecode_sha256": "413dd63df70fcbd493e56ac776311d01a800b3356d0f827d964fdd560273f45c"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Board/ItemManager.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "c396294642144ee8315865443ef9fbf6924b21b7a3015c73f38a65b44a1e5546",
+      "bytecode_sha256": "754dc3cc7eb3a5a86b0b92bec9dfe939faf00152357df049ef965d72c613cef0"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Board/ItemStoreModel.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "a0b8f99125c3fbe5d3707bdee5faf89c852a569bc8f8dc21df21ff7dbea7bda9",
+      "bytecode_sha256": "3caf6cbe7ba8248e5c55e3254337fdd09974f21397774153a5a1a95270949360"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Board/MainBoardItemLayerModel.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "dd47c8f968c89fddf76e9eeb064b3ee005689f65d1ea29cdc8ac9a7e0f05f212",
+      "bytecode_sha256": "1e7760820da73ca2f3454a10ed39b12199bcca7b7849f5bb1d9520169d1c67f9"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Board/MainBoardModel.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "ac424a521e5da9dbab65da50bcd1d42b03391801e0007fd604bf1beb592a0e7b",
+      "bytecode_sha256": "d9e2a832057067921a782e5872ff5faff00371166985f794f4317042066303d9"
+    },
+    {
+      "path": "Lua_Core/Board/Model/BoardModelHelper.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "916422df0eaac166bd7bf6b0cf2f6cd335971691ff321e386c4d48341ded2934",
+      "bytecode_sha256": "e76e5ed52e24d77b34ba6c8abc53328555e025ce9d60c7148dce23e50db53b08"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Item/BaseItemComponent.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "f61922da61eb815db82aa84f22069813b538c2eaf4aebeea1a27d3fb0210c9ca",
+      "bytecode_sha256": "7e057a9678dcad38ccab8a4e680f89e7291c5bb5a622b81509e859763b7d43af"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Item/ItemAccelerate.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "43c8aa536a8449cd6045c15475c6aeb12c759e13cf0add9fbe56f64478ef2cee",
+      "bytecode_sha256": "b7fd3d5b0e2dcd781c170cad2383a069bfad62536e6fe881e4e7a121cf933ceb"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Item/ItemAccelerateTime.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "b01b610621554669fd0e0ee23eb224ff80fef93abe2045e4eaea0face6c2b2a0",
+      "bytecode_sha256": "aa7c402120a0154e9f84c75888adc25ea2a8aa3d7a33dc14520e5640772205c8"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Item/ItemBubble.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "c736323841b207a81e15267b83b5597b4c606e850a0d389ee03a557c5b16a0d0",
+      "bytecode_sha256": "5993d881250c00e04214ada9ec57459f8d8a011f8c33eff637ea6702f1e750b6"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Item/ItemChoose.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "95f8fdc3381285020f342de8894dbf3c4721a2a9082578f3fec4e8e0188ceeee",
+      "bytecode_sha256": "c45f70c8db1402ea71482eee7410d7377473d1836b79b21b0f233a14a7a10ab7"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Item/ItemClearTool.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "6f8fec019aae62f47d276bc058249cd94d8fdc2e2b3dd76f2de322d1e16ceaa7",
+      "bytecode_sha256": "bb0aeea82ec8ba5944e17900296683d28830d5c400797563cc20650e0ab1e52e"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Item/ItemCobweb.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "8733114d945ef892301a158a0afb8dc4161734ede48a87af3d5679fb8bbcc355",
+      "bytecode_sha256": "6bfcc1a73eaebc6c9baab250a3c9446db9fc8409826d4738eaf212c10a1607bf"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Item/ItemCollectable.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "ff0ef2053a1fdc30e935eedc6f69e35eeca61936644d0c9a4ad5920a2876e162",
+      "bytecode_sha256": "c03c4c98287daec3253727293e58091cc39dcbbda016a1469d9593d9bbb3064c"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Item/ItemCommand.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "608c8a4fba27405a3805eb414b7c10903ece7d0a1c3d225e66697a57c237ee87",
+      "bytecode_sha256": "a6c543f753f12225d11ee00c01d7e6252b82d8b0240eb365633bb9f65a6e6fd9"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Item/ItemDefinition.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "5904e8eb8fa913cfe639576c0d6372623fe771b13ced60d6a4c80b68458b1544",
+      "bytecode_sha256": "54f8215084473846e82251c05a7dd30a2f3d169d1eaf9de21e2c0ce56a59c235"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Item/ItemDig.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "fc771e9ba772ffb60a0b53b501d32e41b523b760d3089835b3db11a18a496bb0",
+      "bytecode_sha256": "6f496b0cb3441d6ea4e8f906dfbd52104fd617957ab46ba3850a997a45e128a3"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Item/ItemFog.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "d5f750abfad1bcd77085a15e4d18a4d0cc7b0dc0d60bed32b575bdb178185e69",
+      "bytecode_sha256": "ea0d6bfa81829b94feb084caf223acc1ac85c6106b994bc7c5439344274d731e"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Item/ItemGeneratorFactory.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "31ce10002a8da6f870a611a3aa2f4e9edca10507450d01244374f781181e8ee4",
+      "bytecode_sha256": "a355c2e4cd318e84fe9da16bba0368b6f37176d1246ab788fc67c344e715e72a"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Item/ItemLocked.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "9d14ac2a0014016cd6a774b796728c56dffaa02cc25115be98f4b244fa77e550",
+      "bytecode_sha256": "1c0607cf0b80da6725b674e319890a6c3047047a7ba438e6eeb6335437066640"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Item/ItemModel.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "5a669916e1c06b01bafa7924fb220bd17f574289a0f9c6bb09488e00a4f635f1",
+      "bytecode_sha256": "ffcc3c8bbc45e84dea3e8ea8fc0db263baa5882f0e0b16d095520173300dbb5c"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Item/ItemModelHelper.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "7d3f3673fbeaa1e011ea26adb3c69ae5fdc84360876809995a1eb5af27f42bf5",
+      "bytecode_sha256": "8f1a928e7082575618ac7bbe9775989ace56ee8c2b06bcd88b6ef9ed18f85aac"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Item/ItemObstacleClear.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "c02908c906b8a267bbb06a036afb4f5f2be7a38e22efa6ac79d485cc470da9c1",
+      "bytecode_sha256": "68423f49df2988d9cc54d10579565f33ab093c19872066ad4a6d7be9c5bc637c"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Item/ItemPaperBox.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "1e014ca6840062714e39d342dcd947d5d77eb80e9ebb031fca15341cad0cafa6",
+      "bytecode_sha256": "e4589309dc0320730a8c341a36ccb3d6318e16e62f917d7422f80e5d10506893"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Item/ItemPortal.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "cf4c72678b1ab48d0a569d89e286e3f7b96f0ed94424c15b6c15313ac3c44c91",
+      "bytecode_sha256": "b396fd7ee4b8e5e53863dc5c28491fd38c19d83b01e6a14d735e1148893ffb35"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Item/ItemSplit.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "c1199b7c4c1a2cc34eda20b16edb72104362fba4e6f5a6defe64acbeaf6eeffa",
+      "bytecode_sha256": "b14a68e70ce9a6256bd94d5257d4d55db1d1ab054a3e53b81f1756a2ebc59de6"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Item/ItemSpread.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "aef25b4669bf81e036fa194560ee4a9884a740ed177a326bfd1e5fbdb47d8858",
+      "bytecode_sha256": "3560b2d02da6dceebe4696baaf70bbd70245cb8c0a4932bdc6eb3e81c3c78c8b"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Item/ItemStateCollection.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "b011b9e80109d2db945118caa78afa08406a19327806dcb8740e90e08a73d60d",
+      "bytecode_sha256": "88f400c9acb9f22cbbd658109669977b0c688482779356cf11040e07ca72b008"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Item/ItemSwallow.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "05c389650661e7a478be85cdaf7d2591973edec16e25e168ae8d2b1ee7067441",
+      "bytecode_sha256": "c1d45e244190ac18aca1eebc5dddca5bad95fb735933cc0531ea1972df895749"
+    },
+    {
+      "path": "Lua_Core/Board/Model/Item/ItemTransform.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "a8042cbcc5494cb57f1fbbe94e86fb0f2658e4aa387c51d4b2c05fbfa917e04c",
+      "bytecode_sha256": "532740e25522ec125b34a2e498145888297d4c57bc966a9225d020b1ccb9783f"
+    },
+    {
+      "path": "Lua_Core/Board/Model/ItemDataModel.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "16067c0e6431e063196de7f440b9cbd73b511870d9d2c89ef02fc4b86396368f",
+      "bytecode_sha256": "a0ad2195b6bcb12714dad2e37c1d07ba366d85ab9283aa3679b220e257ee3340"
+    },
+    {
+      "path": "Lua_Core/Board/Model/ItemModelFactory.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "dfa6269bd5da669039ed80af067883989d76991407264fe6dfcf8825e18f6c36",
+      "bytecode_sha256": "1b5e377ca960b0934d9ab6357b7098636a439389be7a16daff7542b623aa6750"
+    },
+    {
+      "path": "Lua_Core/Board/Model/ItemUtility.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "2480786d6b4b571332c83e9ecac212947b07226bdfc67aea2b1f6b2f2f113b1a",
+      "bytecode_sha256": "178ef2202c33886134428e8dc40c86f0f6a348fc4176f6492c06de352192b16d"
+    },
+    {
+      "path": "Lua_Core/Board/Model/RandomGenerateCodeHelper.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "1d13ebe7bb372f506893bdb3faec7e6638035e7cb2d7ed3bb1c61fbee8a6426b",
+      "bytecode_sha256": "002f79b4871e2f15f6d5facf0115e14554ff57b91bc8da702212ec74878aebb4"
+    },
+    {
+      "path": "Lua_Core/Board/Model/SmartRewardHelper.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "d0289ee1c8ae0fbc25505898fe1bd27c93bf09dcc77a0a0d2a369388480c2bd6",
+      "bytecode_sha256": "552b52a4f039d7bcd8c4590854906a4c840bd3a7492fcab4999a597fc475adcd"
+    },
+    {
+      "path": "Lua_Core/Board/Model/UIBoard/BaseUIBoardEnergyModel.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "320e3a2195fa3a966221240431017c42c3432f558359b70eb78f71da5d2b193b",
+      "bytecode_sha256": "434dfc73114cc16d36ffabe5b38140f211314396a1e5e5aed7188fbfcd1059f0"
+    },
+    {
+      "path": "Lua_Core/Board/Model/UIBoard/BaseUIBoardFogModel.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "975b51816ec30bac2a3ab547c29f99c58c500bac354646c4f62fa475d9aa18e0",
+      "bytecode_sha256": "99f39187e3c749345104cbcafa02b39998df8d5573915a3a61dc289534ddfa26"
+    },
+    {
+      "path": "Lua_Core/Board/Model/UIBoard/BaseUIBoardModel.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "089cb75abac760a7626ccaca50acdec105bb052fe5974bc19b97e7b58c8eff7c",
+      "bytecode_sha256": "454d50a2308909bce0e71d8908e5d6e86a926c4e5a3addd0fdf441562030714f"
+    },
+    {
+      "path": "Lua_Core/Board/Model/UIBoard/BaseUIBoardObstacleLayerModel.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "0bed5138ff592542d35765764bb3d2a8ab33df8196342b107ef43e0bc498c237",
+      "bytecode_sha256": "240b01c52374269e522979f6dd3d8a7c07c5a4da35ab32eec19e63b9215389a9"
+    },
+    {
+      "path": "Lua_Core/Board/Model/UIBoard/BaseUIBoardObstacleModel.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "407787c34028bf3507ba7d65aef404d10ebf5fd2f97c0cbc91ae48c6900ca3e4",
+      "bytecode_sha256": "91e2c2265d5c8971942e631c670d1ec397d49e5b204b12d275e9c5872b8f4612"
+    },
+    {
+      "path": "Lua_Core/Board/Model/UIBoard/BaseUIItemIllustratedBookModel.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "1ed00969156583f3a20abd0f6295a889dd062a6a5f70750f5056974ea13458fe",
+      "bytecode_sha256": "ed8a34793e84eecdefa339c0220e82849bc36fac497b3a4c79ea9acf38ec8d8f"
+    },
+    {
+      "path": "Lua_Core/Board/Model/UIBoard/BaseUIItemLayerModel.lua",
+      "reason": "棋盘规则、物品行为和棋盘状态",
+      "source_sha256": "fab9c56381d10a2609db24c9dfbe320d4e11d945332bae55b5c2e4214bd06499",
+      "bytecode_sha256": "504121af23874c705726d098152392f1c9a67d5a90a6c0b275aff3f50e707369"
+    },
+    {
+      "path": "Lua_Core/Board/View/BaseActionBoardView.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "6fe6068ca260a50994c2f9446e7ed903b7a7cb9a6589bb5120b6f141303d8f62",
+      "bytecode_sha256": "15b8d45ea7205aeae55275d98b7524163cae1e7707ac7ab6a21fb771a019c79c"
+    },
+    {
+      "path": "Lua_Core/Board/View/BaseBoardView.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "04359f74fa830d57dbc174dcafb657b5d7c0b69d8cb9a5acfe76cc81d326a621",
+      "bytecode_sha256": "e61de9f68cd2e4e50c5bf24ca68704b1a7be5867f5534a90f9d744534fcf25d3"
+    },
+    {
+      "path": "Lua_Core/Board/View/BoardBackground.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "1a09cf93904eacc0ba5444b019a9c758be4b70280bc12602ec27fee0c8835732",
+      "bytecode_sha256": "48e285f99d3a94c3fe8d1f23ad7112711d571ff11b38a004f3fb99cadf26e10c"
+    },
+    {
+      "path": "Lua_Core/Board/View/BoardCacheRoot.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "390a5d2da1271e47392b63607c403bb3fc651175ea91fd75d73a926a4b7eba95",
+      "bytecode_sha256": "a9382033ecafda61591988f7a41cc070f822d89b391b0d4c9b1ef8ab5f80e34b"
+    },
+    {
+      "path": "Lua_Core/Board/View/BoardInfoBar.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "664a6f01f461c2f9a4ea6740c5f8e9d3e514f024c3226708d8ababf0183b0863",
+      "bytecode_sha256": "5050ec6ea633f752fefaf262632d1af2619b547b348a56004e8cd32b9608364b"
+    },
+    {
+      "path": "Lua_Core/Board/View/BoardPrompt.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "e1d6116415ff37656449a0cebd628e37c473395c33691d7a1c3955a08460cd29",
+      "bytecode_sha256": "b76bda80ee0b0f019eef9bc6bf3abf02dc811cb576f9971ef1ade8dfa3449750"
+    },
+    {
+      "path": "Lua_Core/Board/View/BoardViewHelper.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "56776072697f906778aa0bd3cc624003629a11e919efe315716f444dca58affc",
+      "bytecode_sha256": "d50cad851caa816a8b3b6af8e9196f8bf9abc33f5d3c090c6b521a3cea7f9363"
+    },
+    {
+      "path": "Lua_Core/Board/View/Item/BaseItemViewComponent.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "fb643339871017fb88f9ccfa75290cdecd1cd743bab6d4e86645175e9d2c9f05",
+      "bytecode_sha256": "90314df6251c66a003c79ed787c1a30595ca0532a8b4d0c267eba9036eb47eb7"
+    },
+    {
+      "path": "Lua_Core/Board/View/Item/ItemAccelerateTimeView.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "9c8f8b93a7af7f8b1fb62cc5256ac3c365c5585791197d108c3ba87e05f5e0d4",
+      "bytecode_sha256": "abb2ef71f69a29d0a5ff63ae48be8451e0673f75242f713de63249b77fd209e4"
+    },
+    {
+      "path": "Lua_Core/Board/View/Item/ItemAccelerateView.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "f1f246ec8a9121565542adb6e38b3e2512b80a2c3e929931a10dc901f2cbdee8",
+      "bytecode_sha256": "81a83a5e452a2011aa824bdfe325cff1822172ccdafa2ce989d511648490d9e3"
+    },
+    {
+      "path": "Lua_Core/Board/View/Item/ItemCobwebView.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "d26cbc4c33e9ac983647ebab1828fd0aa23130ce403566e77f59181ee7f47db5",
+      "bytecode_sha256": "83f607aa38c9c68b407f1ec653007e1780935f55f7c7ccfb521a9c54480af4d1"
+    },
+    {
+      "path": "Lua_Core/Board/View/Item/ItemDigView.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "6283cecd7ba99931b0e13b370fabd3278f2061e5c8757b0b393d2a788bf7b76a",
+      "bytecode_sha256": "57eea2fddcdf8ba3a9183ca4a83c42f2999548279d7ffc5191f90e4489b5beb9"
+    },
+    {
+      "path": "Lua_Core/Board/View/Item/ItemFlyView.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "45daaf0e79930085c38aae9322128ae14b6bbd6f28a4341859971abbb42d0b5a",
+      "bytecode_sha256": "b15208bc4e7cad47929d7135891c52c1d80b9086a4ffe0493e1a32221116c2b2"
+    },
+    {
+      "path": "Lua_Core/Board/View/Item/ItemFogView.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "5980405ff384462d4ff391a082e20ce5497563cbbb655eadef71a736c1d435b2",
+      "bytecode_sha256": "2c5663ab99b86bcfc5f7600f408e23ab3977d64b7c8e7fac2e01fb8293e034eb"
+    },
+    {
+      "path": "Lua_Core/Board/View/Item/ItemHighLightView.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "9d07f8cc48b3aa3a70beb3f78e0ecc5f8fd20d22de6060a747cc6071e5d4b73c",
+      "bytecode_sha256": "fc6e6b4c133e3c8f89eda1bafd524bb8ce1a7d1618aac7bcaedcdd4dbbfa5adb"
+    },
+    {
+      "path": "Lua_Core/Board/View/Item/ItemObstacleClearView.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "490bb2ec2e558197fada8c9b8220df973e4fe09c2434052130a0a894873667e0",
+      "bytecode_sha256": "4173a2d332e8cd05d98dd88a9913ff40bce2457c20b186caa26ea307ac694026"
+    },
+    {
+      "path": "Lua_Core/Board/View/Item/ItemPaperBoxView.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "57fd5691d52ac05a57a6ea5d91d963f232686af5416d748a3b24dbe4b252098f",
+      "bytecode_sha256": "398e92f6f8343c3b55f6c16efb696e90fa16d6edbd1196d35bf23c94af4d43cf"
+    },
+    {
+      "path": "Lua_Core/Board/View/Item/ItemRewardItemView.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "88caac262b29d9b65606eb1cb507f78275f1f1364bf8e22792a8675d82de05b1",
+      "bytecode_sha256": "7b4d253d8e9760eb048c8f4ffa788b7d99df65c5a7c3741631a337e6eb33383f"
+    },
+    {
+      "path": "Lua_Core/Board/View/Item/ItemSpreadView.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "e7d6152b3bcf1dd568ee292ce42002876f56cec0efa914edd92f0aa928071157",
+      "bytecode_sha256": "d53e57d5d660d593ac1382df73f19e88a9b249ac24f6e83e8d587f3fa2f6293a"
+    },
+    {
+      "path": "Lua_Core/Board/View/Item/ItemSwallowView.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "95721f9edaa571e159d3df4ee59eb68f59e2266a64aedd62609a8f8efec72aba",
+      "bytecode_sha256": "a053d9740b521fd95b1e4bfab531e7f5dc5c0ce471e02c4023b76d73224b7562"
+    },
+    {
+      "path": "Lua_Core/Board/View/Item/ItemTransformView.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "997d54686b5c761c931deb75de95a583f55db072117bcbe8603a00eb22d069b9",
+      "bytecode_sha256": "921d3f9a72029aa835f6293cd966480d2c2128d8200fe5809916ff407424b3f6"
+    },
+    {
+      "path": "Lua_Core/Board/View/Item/ItemView.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "40166f8578f76146b10ade3b0d47e79c7a6d5d077d894993d55fe590b34829b2",
+      "bytecode_sha256": "fc04372be2d43124280b808ec90af53b9b73452aff9af413cf492aac54ccc0c2"
+    },
+    {
+      "path": "Lua_Core/Board/View/ItemCollectablePrompt.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "7efeef3555562583aaafe518e2d1b6291e760bdcada3f46375915ae44319bb8b",
+      "bytecode_sha256": "1530507e50d3435f58ab7651b6b3faa55b406a5939f136bbb11330b4ea66d3cb"
+    },
+    {
+      "path": "Lua_Core/Board/View/ItemCollectableTip.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "d68730d3e291e430dfc17dc1e867323b67f0bc75b5332b60785d4bbf20650cac",
+      "bytecode_sha256": "0ea2159a322ade1938362b836853792b02987077f1eb96ea7a99ac8d7e326cb8"
+    },
+    {
+      "path": "Lua_Core/Board/View/ItemGeneratorMergeTip.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "0c7cbfe7251e5543723fdff02f549e0b1632fa821c8378a904acd5464706bdc4",
+      "bytecode_sha256": "276c78ccc3a77f024a781faf3016bfbc2372a4d513fa1d76bb8c3a37445f13e3"
+    },
+    {
+      "path": "Lua_Core/Board/View/ItemIndicator.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "5c775491c21a71c91e798c5eda38e762921911a7f58a6a98219b53ebb5911474",
+      "bytecode_sha256": "837a109e4d8eac1d92c49138519cefd0c7c560d1ca8413221e94151a006cb30c"
+    },
+    {
+      "path": "Lua_Core/Board/View/ItemSpreadPrompt.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "723763498abdb3300d01c85ca21f61fa3a114ba835c2227d5f57102fbc16af89",
+      "bytecode_sha256": "075651a2415d8ef51e05f8f111dcf6a174a973454c99f145f2d0cbc9992f8f43"
+    },
+    {
+      "path": "Lua_Core/Board/View/ItemViewFactory.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "d3434d2cd270d41bcb99a7d9622abc943a57352cebd990043c6073698f1b90db",
+      "bytecode_sha256": "c734cb49bdd04e73109118863c9be6b5b44bba12c09d80c8d4884ba9ff269287"
+    },
+    {
+      "path": "Lua_Core/Board/View/MainBoardView.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "8fee81f2806b0367918b70c957e57414000166eabdadf5c47b424ed38785cd8f",
+      "bytecode_sha256": "f05a9145fa2b77f14a5fa92a5873ebdf025c5171c57570f015808277731a95a3"
+    },
+    {
+      "path": "Lua_Core/Board/View/MergeEffectManager.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "fc23a95a83e49f3c93b208d8ec6040dfad5987d1a317fd293c3ebf4383bad40a",
+      "bytecode_sha256": "f2199a9b31cff92fe43486ce554c6f4a6321d93f5b65d7016ffd7d6dde87147e"
+    },
+    {
+      "path": "Lua_Core/Board/View/PaperBoxExtraReward.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "2bba4d106e594175e40492c4f8fad78db173d593b764a3c9969794b165bcfd2d",
+      "bytecode_sha256": "1c826ecc49f6a22e67de30e9343ad3286aee4a6020e0fecc01441f6f0aa7a825"
+    },
+    {
+      "path": "Lua_Core/Board/View/SwallowInfoCell.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "55c39dba77a0e3d7bd05b9ba0eb3d31e3b95fdbd221d859fde1f9918226e86b5",
+      "bytecode_sha256": "08014ad8e7a42a12f55994122778ded595a8de2d3ee042fe280d9ba7b394ec20"
+    },
+    {
+      "path": "Lua_Core/Board/View/SwallowItemIndicator.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "83a81d234ce9eabaeeb2ddfd78e33d1cb612e3dac52f52ae3e3d9cbb9162126c",
+      "bytecode_sha256": "59b36aa9e92470a7205c42a0024a89efbf65492e016b1f0ebd6a43cfc2bf1d24"
+    },
+    {
+      "path": "Lua_Core/Board/View/UIBoard/BaseUIBoardContainer.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "47130bed228d63972494e62ed01b1139ea97005960191ab6cccd2f22beacf158",
+      "bytecode_sha256": "829240146205208fa94561a24d2470f963d5aea7a236908add2a830d6a12706c"
+    },
+    {
+      "path": "Lua_Core/Board/View/UIBoard/BaseUIBoardEnergyInfoView.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "89d1817f4250fb728d303730db3b236fdbf4e8af3e34653fcb3b85632bae57c8",
+      "bytecode_sha256": "6bb31370acb6cb418b301a7db391ec24e8ec1fbb2d2cc6b066f6874b5fe354f7"
+    },
+    {
+      "path": "Lua_Core/Board/View/UIBoard/BaseUIBoardMultiBoostUnlockHint.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "aabb94299d4170430744d0514bed1d02e22271069ff44be194ff1bcdffe63c2e",
+      "bytecode_sha256": "4d6b81e833351dd7c2383d663269f09f73d1fd95dc1f5a5b2db9226c820d9c26"
+    },
+    {
+      "path": "Lua_Core/Board/View/UIBoard/BaseUIBoardObstacleLayerView.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "21a0646fd6164c206bb41abddffa43fb5bf4af0c8df43c1383dd84d808eb27f6",
+      "bytecode_sha256": "7dc6150335feaa2773a520ff51eb6b30dbeeb8e889d79bdefa3e19c6325f6b5d"
+    },
+    {
+      "path": "Lua_Core/Board/View/UIBoard/BaseUIBoardObstacleView.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "484bbff4037a776b880a5c9d9b8f370d5fda3fc0ef9d80e16028db7911c1ec21",
+      "bytecode_sha256": "b336a147e0d32e8d1281a080693c1de96f0291821d51827c455903dc05106a7a"
+    },
+    {
+      "path": "Lua_Core/Board/View/UIBoard/BaseUIBoardScrollComponent.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "468845d26d46d0c5aa897adca34e22d5a053565ed556ec815ac9d947806feafa",
+      "bytecode_sha256": "c6e9afecc7325a34609b8a92559cd76a740165155455c5956444f1196c491f21"
+    },
+    {
+      "path": "Lua_Core/Board/View/UIBoard/BaseUIBoardSwitchMultiPrompt.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "56e9731f7f3adc2dec6f5eee21f220f59f8de906135ce51418f180aa01259434",
+      "bytecode_sha256": "a080b8796710694131fc8ac9bc92b3a8ef6bcb64f9534ee773570d68ae74b1d7"
+    },
+    {
+      "path": "Lua_Core/Board/View/UIBoard/BaseUIBoardView.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "3a54ee8dbf9d1a0cc5635ee6ca5c2d824fe0192c3f75b4fb5c77a68b3e4939ff",
+      "bytecode_sha256": "c5a885bb08fb62bf8102322c24aafce1d9297795cf7421ca0115d68bc96bc99a"
+    },
+    {
+      "path": "Lua_Core/Board/View/UIBoard/FogLock.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "c9ce93873e60325a568827f18b728c59f448ea8c5ee206d720e2781b51ed87a7",
+      "bytecode_sha256": "a9517dd1bcdc4c4806a383aff32264c733f8785fb495dc5e9a451b116a1b3a0d"
+    },
+    {
+      "path": "Lua_Core/Board/View/UIBoard/UIBoardCacheRoot.lua",
+      "reason": "棋盘交互与表现边界",
+      "source_sha256": "f8860f39d0f2badccc7c2bdb4991ec2515bbb2507666c85d74fe3aafb66d6b2d",
+      "bytecode_sha256": "1d1e92d6ae740bf821b343b548c5b46153ae5ee5442a7d0f49b0b80e20606a95"
+    },
+    {
+      "path": "Lua_Core/Model/ConfigModel.lua",
+      "reason": "棋盘时间、配置或存档边界",
+      "source_sha256": "0f557d7ce3aa219a405d23a45b6c362f14c17f5b82eff43836e32312468d9ec9",
+      "bytecode_sha256": "c2b9d67b1bdbda0bc8ca5b01f82e7c3cfb6f0b589f81ad1ca96c978ce1046dd6"
+    },
+    {
+      "path": "Lua_Core/Model/GameModel.lua",
+      "reason": "棋盘时间、配置或存档边界",
+      "source_sha256": "5792efb00326fc083931009ec345c217e5c03c28e60ece26ec7fb5daa5c518c2",
+      "bytecode_sha256": "4738949f0aef7c52d0422a03d5cb9e78fe86fec7da769de0e172113a08ac845f"
+    },
+    {
+      "path": "Lua_Core/Model/Notification/Helper/ItemSpreadRecoveryNotificationHelper.lua",
+      "reason": "棋盘时间、配置或存档边界",
+      "source_sha256": "860b2d4b407376b45a3e3c73f7f8ca47b27af9bd96fdf4293865e29dc734bc42",
+      "bytecode_sha256": "29c8a42bf40c7ad3d4a2b35ead7a710f509de2ad60ee04e6e9f6fd3669899bbb"
+    },
+    {
+      "path": "Lua_Core/Model/Sync/SyncModel.lua",
+      "reason": "棋盘时间、配置或存档边界",
+      "source_sha256": "86cf19fb6179b9ce49fadc31153210ebdeca3a2cc37a564688c38382171c36af",
+      "bytecode_sha256": "7111b9c5fee2b562c79d97b36dc7c40a7683c177064192234805e62c107d52ac"
+    },
+    {
+      "path": "Lua_Core/UI/Button/EnergyHudButton.lua",
+      "reason": "棋盘操作与仓库交互界面",
+      "source_sha256": "be9717a5c7d005004a10494fe369058852b6281f60d3fb2096b3f4a050f45e3d",
+      "bytecode_sha256": "c2ef53b254245e9322ec91998be04c5ac1d887d60ee7eb5a42eb285819375653"
+    },
+    {
+      "path": "Lua_Core/UI/Button/InventoryButton.lua",
+      "reason": "棋盘操作与仓库交互界面",
+      "source_sha256": "1535d52a5a16f239ccde21a90ce42dedf6731887fff105856384388e1eed3840",
+      "bytecode_sha256": "df2ec1fdc45ebd12ffcc7f88661be314ebf4985aaf98ad23193457adbf43c03c"
+    },
+    {
+      "path": "Lua_Core/UI/Button/MainBoardButton.lua",
+      "reason": "棋盘操作与仓库交互界面",
+      "source_sha256": "417dae55e38adb1b6a9258914cf2859fa6ca6eaae6e9a3fedbcf063bed2bf618",
+      "bytecode_sha256": "61b25de70e2d163249630128ecbda2b9dc3256fb4e40c41c1f7918fb9d52f9e6"
+    },
+    {
+      "path": "Lua_Core/UI/Window/Board/CollectItemConfirmWindow.lua",
+      "reason": "棋盘操作与仓库交互界面",
+      "source_sha256": "02c30cd4bb4f817a68565add0846db8d9fd0fec5f85e6a0448fc94e913ce2b42",
+      "bytecode_sha256": "c7a3816a6b7ca05b1d2c33734fb586e44f597728a37fd98838a3a0729ca51a15"
+    },
+    {
+      "path": "Lua_Core/UI/Window/Board/DeleteItemConfirmWindow.lua",
+      "reason": "棋盘操作与仓库交互界面",
+      "source_sha256": "c85241c5d7c7ec44c8f1254d7b3dc02e7dfb292848b3d54cff836d19491c57a1",
+      "bytecode_sha256": "bc8095935102b68d8b77ee0fd21dad9e672330da147236675a428b34b31b5230"
+    },
+    {
+      "path": "Lua_Core/UI/Window/Board/GeneralGemConfirmWindow.lua",
+      "reason": "棋盘操作与仓库交互界面",
+      "source_sha256": "53a3a722887faec51428fe2d23468be138cea459e46ed6c2a730e5c439b308f9",
+      "bytecode_sha256": "e27f944ba3a52ea0e0c27b6ddd921c3f10188b1f31990d37291a346bc01eef36"
+    },
+    {
+      "path": "Lua_Core/UI/Window/Board/ItemChooseCell.lua",
+      "reason": "棋盘操作与仓库交互界面",
+      "source_sha256": "6f2668ec2f76ba339ac928a60739309cc67bdf287c495dc03a2f1d833de9497d",
+      "bytecode_sha256": "4c3ee851d0a91eb55566e0122f8f0196f37d09c5ff20139e9d05dd1907f7a53e"
+    },
+    {
+      "path": "Lua_Core/UI/Window/Board/ItemChooseWindow.lua",
+      "reason": "棋盘操作与仓库交互界面",
+      "source_sha256": "9d7d83453839c55b96bebeea52c03e8f8c8d3b702b1969733e16062bbbf8d59f",
+      "bytecode_sha256": "8df3bd1a6b0bde60afbc67daa6b7820158e0189252605c6dd1bc92d79463335e"
+    },
+    {
+      "path": "Lua_Core/UI/Window/Board/RemoveBubbleConfirmWindow.lua",
+      "reason": "棋盘操作与仓库交互界面",
+      "source_sha256": "608e2f5d70dc7a2e5ee60cfbb63a3ddb87e778e92c39e77901cd5db8b89f7c8f",
+      "bytecode_sha256": "e98dc949e4d6a4db321cb1346d40007d55db6f172909dd020e30fa1bbba67584"
+    },
+    {
+      "path": "Lua_Core/UI/Window/Board/UIBoardDeleteItemConfirmWindow.lua",
+      "reason": "棋盘操作与仓库交互界面",
+      "source_sha256": "5396968ea65b8d03b925d1a86f0b1957caf82d9cf755d326e84e31d23fb4ce47",
+      "bytecode_sha256": "79af2f65c547c725592064c10fbbf2d00e53a35d2c98ffd940d36b2bed757b40"
+    },
+    {
+      "path": "Lua_Core/UI/Window/Board/UseInventoryItemConfirmWindow.lua",
+      "reason": "棋盘操作与仓库交互界面",
+      "source_sha256": "df96ae96ca9f47ad2b9aab661f5a20d750d1f6f9b28c7b5a3c76594361be1845",
+      "bytecode_sha256": "5b05abde8e1edb860d57736a1a378031f250c25dc2eea0e446607485740e6234"
+    },
+    {
+      "path": "Lua_Core/UI/Window/Inventory/GenFactoryItemCell.lua",
+      "reason": "棋盘操作与仓库交互界面",
+      "source_sha256": "ef1b04f7817d18a3801ee62d08eaf19b9e955be447a990e43eab5d1ccaec9ecb",
+      "bytecode_sha256": "4c0815aaef3e4dc9d3088e6198702a359efc8c26c9f32f2881824265a167e5ce"
+    },
+    {
+      "path": "Lua_Core/UI/Window/Inventory/GeneratorFactoryContent.lua",
+      "reason": "棋盘操作与仓库交互界面",
+      "source_sha256": "aab3dd637a41c0dc5a4be469060d2dc7e43b645b3db54c8c87d42eba61c740b0",
+      "bytecode_sha256": "95b8b502bef545d6303713dfe3fc3c9b900ed017f322294f03c8668c109620ed"
+    },
+    {
+      "path": "Lua_Core/UI/Window/Inventory/GeneratorFactoryDetailCell.lua",
+      "reason": "棋盘操作与仓库交互界面",
+      "source_sha256": "293f6b3fcd1384b40504f0ba6b467ac6318080f9568574ba99d6d02501613b43",
+      "bytecode_sha256": "5457d9a4ac4560dea87dcc69b8fae2ba9c8a83f651ab67bccfbec979d49960de"
+    },
+    {
+      "path": "Lua_Core/UI/Window/Inventory/InventoryCell.lua",
+      "reason": "棋盘操作与仓库交互界面",
+      "source_sha256": "3013026814e1c3deeac9715cafe609d8d023b12e414545387fcc1dcd90398a5f",
+      "bytecode_sha256": "6701fc27a715b592dc4d6ec2e0d68c4c7595e1039818702d50e0d26a62acd8d3"
+    },
+    {
+      "path": "Lua_Core/UI/Window/Inventory/InventoryFactoryItem.lua",
+      "reason": "棋盘操作与仓库交互界面",
+      "source_sha256": "bbc08d74819e3d46d567e414b488f17af1a73e1c9352cdb0cc6ed9810abda2a5",
+      "bytecode_sha256": "7e983f3d0bb5be68953b865f2544a13160a117147a9ba6589ba868f1dd55c130"
+    },
+    {
+      "path": "Lua_Core/UI/Window/Inventory/InventoryNewSlotCell.lua",
+      "reason": "棋盘操作与仓库交互界面",
+      "source_sha256": "3e5237cc068351b1d9b82743506c374df0d4593b4a5887fd1af3e8b05b9fb749",
+      "bytecode_sha256": "eb6a0e623d6c1e178a7c52e714c5545cc3ef3dff4105339d8cabc8ef9ff159e9"
+    },
+    {
+      "path": "Lua_Core/UI/Window/Inventory/InventoryRow.lua",
+      "reason": "棋盘操作与仓库交互界面",
+      "source_sha256": "a804a8452b1633428c2a9f9ab42ccc3deae660b2389aee0fb4af95e85fd556a3",
+      "bytecode_sha256": "0c31dc9279b639b544ef63dbf7c781cf24161a907c16c9edf373c5579e6a1dd4"
+    },
+    {
+      "path": "Lua_Core/UI/Window/Inventory/InventoryTabView.lua",
+      "reason": "棋盘操作与仓库交互界面",
+      "source_sha256": "0af2eed68da0ae1e0ef6b2769f236d1dad79d761706003173009e604ed628cfe",
+      "bytecode_sha256": "d5949824be9c28e7c1514aed67054b0ed7de75dc56b20f112f155eb4fcafd334"
+    },
+    {
+      "path": "Lua_Core/UI/Window/Inventory/InventoryWindow.lua",
+      "reason": "棋盘操作与仓库交互界面",
+      "source_sha256": "0d58351a28557bf29aa26570717c7a969c5dc99df299d0e2e26055de35a6db7d",
+      "bytecode_sha256": "1893b7606366c77f58d07b87a42bc059d4c3f9b4cedc247753ed1f3c3ebc3434"
+    },
+    {
+      "path": "Lua_Core/UI/Window/ItemDetail/ItemDetailCell.lua",
+      "reason": "棋盘操作与仓库交互界面",
+      "source_sha256": "7539d9069b2f6da4d2ad5514079c560ff2810a149f7ef44dc21bd76a10c03139",
+      "bytecode_sha256": "590eeb4bdf4a7790299ae7210c11515e8142d2585ec24d2c0532a5a4533575c8"
+    },
+    {
+      "path": "Lua_Core/UI/Window/ItemDetail/ItemDetailWindow.lua",
+      "reason": "棋盘操作与仓库交互界面",
+      "source_sha256": "48dcc5f6cdf6ac107cedf1de8abaee38c5276e5675e35e79ec933441f217b1a4",
+      "bytecode_sha256": "183508d8f9b786a0c0b2709ae31e6e35cb63820598899e937e7fe308fb20ce78"
+    },
+    {
+      "path": "Lua_Test/Test/BoardRun/TestAdventureBoardRunModel.lua",
+      "reason": "棋盘自动跑盘与诊断工具",
+      "source_sha256": "87873e8669ac13d03fe31f14a4d35493c8055e64ba7dfd2f75bd513b731919cd",
+      "bytecode_sha256": "dd64ef99cd263475a5b2d5e1b2aeccb7339dc15b2f15a135b7caba41801df5a5"
+    },
+    {
+      "path": "Lua_Test/Test/BoardRun/TestFarmBoardRunModel.lua",
+      "reason": "棋盘自动跑盘与诊断工具",
+      "source_sha256": "e0ca04d208b262cbc78e85aa3fabe4ff4c77cc6175ca874d59c694ec22ca50ee",
+      "bytecode_sha256": "666854417c34cddb15d86b70d20579e2706892dcca717ba53a1a31e6d86a271a"
+    },
+    {
+      "path": "Lua_Test/Test/BoardRun/TestMapExploreBoardRunModel.lua",
+      "reason": "棋盘自动跑盘与诊断工具",
+      "source_sha256": "1ebe952d77281a5db630d669cbd6894e72c5974ebe76439016855c0c4d3ea87e",
+      "bytecode_sha256": "fd080f6b471ea7236bda23ad21f916c4f754287bfbf650971baf7df22b1489c1"
+    },
+    {
+      "path": "Lua_Test/Test/BoardRun/TestMapExploreMapRunModel.lua",
+      "reason": "棋盘自动跑盘与诊断工具",
+      "source_sha256": "1f25747db0ecd6b8d7c2c862887ec2af52680ddfcc0e10c840d4464b6898ae41",
+      "bytecode_sha256": "cdda2b1d82f135dcb0ea5aa757fdb2c7bccc825794dd9af8577548fac5589ac8"
+    },
+    {
+      "path": "Lua_Test/Test/BoardRun/TestMineralDigBoardRunModel.lua",
+      "reason": "棋盘自动跑盘与诊断工具",
+      "source_sha256": "092166e27d8320a117e258e54ed819fda90e620e0c95c6be0df07069c15a6b88",
+      "bytecode_sha256": "9aa2555a474a25687a41b2f8d25240fd1ae2fa5695dfaee50c9a78ec77ee5eb9"
+    },
+    {
+      "path": "Lua_Test/Test/BoardRun/TestMultiboardsBoardRunModel.lua",
+      "reason": "棋盘自动跑盘与诊断工具",
+      "source_sha256": "b93279e7310887cf918704a1b713e585cbf70c59e82d9470e55cf74a38c9e3c3",
+      "bytecode_sha256": "67f129ad3437374533e5e9379f3158f1a7a2f2147c931cfc8515201fc5a40780"
+    },
+    {
+      "path": "Lua_Test/Test/BoardRun/TestPureboardBoardRunModel.lua",
+      "reason": "棋盘自动跑盘与诊断工具",
+      "source_sha256": "479439cd63ca5bda633c1551b7569154f1bb69edea314c732dac04edb3afb67e",
+      "bytecode_sha256": "6e819f2d14b498ee2555a6463b77b3c69faa33ff31f66d5c6dc9e72ab99a78c3"
+    },
+    {
+      "path": "Lua_Test/Test/BoardRun/TestStickerboardBoardRunModel.lua",
+      "reason": "棋盘自动跑盘与诊断工具",
+      "source_sha256": "a3245d28d221f186fb1779efb7fcb5f793da41ba5c1cddf1fe6a38b24573c7b6",
+      "bytecode_sha256": "201a49a0420759d0646d158c6c97991905fad383d213dc3b4d3b94aa1f2f4ba1"
+    },
+    {
+      "path": "Lua_Test/Test/TestAutoPlayBoard.lua",
+      "reason": "棋盘自动跑盘与诊断工具",
+      "source_sha256": "ed891c14d46bb2b527bc1467336221056b79b18a72c30777a9a5926c316bf678",
+      "bytecode_sha256": "c91aed8d1c1f21a29aea64af246b64ec3cfda71c1e0915328ee090bc531ee5c0"
+    },
+    {
+      "path": "Lua_Test/Test/TestBoardRunLogWindow.lua",
+      "reason": "棋盘自动跑盘与诊断工具",
+      "source_sha256": "b749f9b11fcc4667909b763b98036b4540f4f0c315d8d66cbb725f00ecce6da1",
+      "bytecode_sha256": "0fcf146e723fa9526eb0cb1e8116753a3b4e953b3e8e0d0504211769be48bdf0"
+    },
+    {
+      "path": "Lua_Test/Test/TestBoardRunLoopSettingWindow.lua",
+      "reason": "棋盘自动跑盘与诊断工具",
+      "source_sha256": "95ede9a55e8593b37ff12a1e9d1b925e9389e4dbd2c6b3a376e990a4695993be",
+      "bytecode_sha256": "8f87bbcd2c0c5f00a5a26371dff01a85ed45f1fea2fc7b87d4f2745af7883699"
+    },
+    {
+      "path": "Lua_Test/Test/TestBoardRunView.lua",
+      "reason": "棋盘自动跑盘与诊断工具",
+      "source_sha256": "264f9b7a88e7751ba5dd6db0c234a840de13027d6577cc9b962228353ac8fe66",
+      "bytecode_sha256": "1822ba3cce77f65147e2b52e939eb9ecfdec485caeb48648ad1fd23b0b349144"
+    },
+    {
+      "path": "Lua_Test/Test/TestShowBoardItemInnerTypeWindow.lua",
+      "reason": "棋盘自动跑盘与诊断工具",
+      "source_sha256": "8b45498f5890bcb93223b374b33c8cd14695dc6b6cd00046deba967e294add84",
+      "bytecode_sha256": "34b6b8db8745cc68c9e8de3026d67d542a1243297fb44d1b8534cabe18dd2358"
+    },
+    {
+      "path": "Lua_Test/Test/TestSortScrolloutItemWindow.lua",
+      "reason": "棋盘自动跑盘与诊断工具",
+      "source_sha256": "60e1019c9f8f7cf1d1f2e6dbea0d1182549ff956bf89751a7ef68492cdb0dbcb",
+      "bytecode_sha256": "c5b4ceea8b9168ee4c3caed93aa129dca84138c72f5af2cd2600dcadd8843523"
+    }
+  ]
+}

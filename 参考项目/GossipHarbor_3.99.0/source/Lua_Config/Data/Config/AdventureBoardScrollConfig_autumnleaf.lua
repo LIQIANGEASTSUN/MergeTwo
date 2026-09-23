@@ -1,0 +1,5 @@
+return {
+  {level = 10, scrollRows = 2},
+  {level = 11, scrollRows = 2},
+  {level = 12, scrollRows = 8}
+}

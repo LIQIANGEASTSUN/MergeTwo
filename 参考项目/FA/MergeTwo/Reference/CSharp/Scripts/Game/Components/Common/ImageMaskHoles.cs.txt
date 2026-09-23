@@ -1,0 +1,234 @@
+﻿using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+[RequireComponent(typeof(Image))]
+[XLua.LuaCallCSharp]
+public class ImageMaskHoles : MonoBehaviour
+{
+    const int Circle = 1;
+    const int Rect = 2;
+
+    const float DesignScreenWidth = 1280f;
+    const float DesignScreenHeight = 720f;
+
+    public List<Vector4> HoleCenters;
+    public float Feather = 10;
+    public List<Transform> HoleTransforms;
+    public List<Vector2> TransformRadiuses;
+    List<GameObject> Hands = new List<GameObject>();
+    public List<float> Widths;
+    public List<float> Heights;
+    public List<int> HoleTypes;
+    public List<int> TransformHoleTypes;
+
+    Image img;
+    Material mat;
+    List<Vector4> finalHoles;
+    List<float> finalWidths;
+    List<float> finalHeights;
+    List<float> finalHoleTypes;
+
+    private bool bPropertyChanged;
+    private float fScreenWidth;
+    private float fScreenHeight;
+    private void Awake()
+    {
+        img = GetComponent<Image>();
+        mat = new Material(Shader.Find("HomeLand/GuideMaskHole"));
+        img.material = mat;
+        finalHoles = new List<Vector4>(5);
+        finalWidths = new List<float>(5);
+        finalHeights = new List<float>(5);
+        finalHoleTypes = new List<float>(5);
+    }
+    // Use this for initialization
+    void Start()
+    {
+        bPropertyChanged = true;
+        fScreenWidth = Screen.width;
+        fScreenHeight = Screen.height;
+        mat.SetFloat("_DesignWidth", DesignScreenWidth);
+        mat.SetFloat("_DesignHeight", DesignScreenHeight);
+        mat.SetFloat("_Feather", Feather);
+    }
+
+    Vector2 ConvertScreenPointTo1280X720(Vector2 pos)
+    {
+        return new Vector2(pos.x * DesignScreenWidth / Screen.width, pos.y * DesignScreenHeight / Screen.height);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        for (int i = 0; i < HoleTransforms.Count; i++)
+        {
+            if (HoleTransforms[i] != null && Hands[i] != null)
+            {
+                Hands[i].transform.position = HoleTransforms[i].position;
+            }
+        }
+
+        if (bPropertyChanged || fScreenWidth != Screen.width || fScreenHeight != Screen.height)
+        {
+            bPropertyChanged = false;
+            fScreenWidth = Screen.width;
+            fScreenHeight = Screen.height;
+        }
+        else
+        {
+            return;
+        }
+
+        var currentScreenRatio = fScreenWidth / fScreenHeight;
+        var designScreenRatio = DesignScreenWidth / DesignScreenHeight;
+
+        //  逻辑层Canvas根据屏幕分辨率采取不同缩放策略 
+        // 宽屏幕采用高度适配，pad屏幕采用宽度适配
+        float screenScaleFactor;
+        if (currentScreenRatio > designScreenRatio)
+        {
+            screenScaleFactor = 1.0f;
+        }
+        else
+        {
+            screenScaleFactor = (DesignScreenHeight / DesignScreenWidth) * (fScreenWidth / fScreenHeight);
+        }
+        // 最终的缩放比例需要把不同分辨率换算到1280*720大小，并考虑横纵比
+        screenScaleFactor = fScreenHeight / DesignScreenHeight * screenScaleFactor;
+
+        mat.SetFloat("_ScreenScaleFactor", screenScaleFactor);
+        mat.SetFloat("_DesignWidth", DesignScreenWidth);
+        mat.SetFloat("_DesignHeight", DesignScreenHeight);
+        mat.SetFloat("_Feather", Feather * screenScaleFactor);
+        for (int i = 0; i < HoleTransforms.Count; i++)
+        {
+            if (HoleTransforms[i] != null)
+            {
+                var centerPos = ConvertScreenPointTo1280X720(Camera.main.WorldToScreenPoint(HoleTransforms[i].position));
+                PushStack(centerPos, TransformHoleTypes[i], TransformRadiuses[i].x * screenScaleFactor, TransformRadiuses[i].y * screenScaleFactor);
+            }
+        }
+        for (int i = 0; i < HoleCenters.Count; i++)
+        {
+            PushStack(HoleCenters[i], HoleTypes[i], Widths[i], Heights[i]);
+        }
+
+        //// 保证数组永远是5个
+        //// 最多挖5个洞。5个够多了吧？
+        //if (finalHoles.Count < 5)
+        //{
+        //    for (int i = finalHoles.Count; i < 5; i++)
+        //    {
+        //        PushStack(Vector4.zero, Circle, 0, 0);
+        //    }
+        //}
+        Flush();
+    }
+    void OnValidate()
+    {
+        bPropertyChanged = true;
+    }
+
+    private void PushStack(Vector4 hole, int type, float width, float height)
+    {
+        if (finalHoles.Count == 5)
+            return;
+
+        finalHoles.Add(hole);
+        finalWidths.Add(width);
+        finalHeights.Add(height);
+        finalHoleTypes.Add(type);
+    }
+    private void PopStack()
+    {
+        var index = finalHoles.Count - 1;
+        if (index < 0)
+            return;
+
+        finalHoles.RemoveAt(index);
+        finalWidths.RemoveAt(index);
+        finalHeights.RemoveAt(index);
+        finalHoleTypes.RemoveAt(index);
+    }
+    private void ClearStack()
+    {
+        finalHoles.Clear();
+        finalWidths.Clear();
+        finalHeights.Clear();
+        finalHoleTypes.Clear();
+    }
+
+    public void ClearAll()
+    {
+        HoleCenters.Clear();
+        TransformRadiuses.Clear();
+        Widths.Clear();
+        Heights.Clear();
+        HoleTypes.Clear();
+        TransformHoleTypes.Clear();
+        ClearStack();
+        bPropertyChanged = true;
+    }
+    private void Flush()
+    {
+        mat.SetInt("_HasHoles", finalHoles.Count);
+        mat.SetVectorArray("_Centers", finalHoles);
+        mat.SetFloatArray("_Types", finalHoleTypes);
+        mat.SetFloatArray("_Widths", finalWidths);
+        mat.SetFloatArray("_Heights", finalHeights);
+        ClearStack();
+    }
+
+    public void SetFeather(float feather)
+    {
+        this.Feather = feather;
+        mat.SetFloat("_Feather", Feather);
+    }
+
+    public void AddHole(float x, float y, float radius)
+    {
+        bPropertyChanged = true;
+        HoleCenters.Add(new Vector4(x, y, 0, 0));
+        Widths.Add(radius);
+        Heights.Add(radius);
+        HoleTypes.Add(Circle);
+    }
+
+    public void AddRect(float x, float y, float width, float height)
+    {
+        bPropertyChanged = true;
+        HoleCenters.Add(new Vector4(x, y, 0, 0));
+        Widths.Add(width);
+        Heights.Add(height);
+        HoleTypes.Add(Rect);
+    }
+
+    public void SetMaskOpacity(float opacity)
+    {
+        var _image = GetComponent<Image>();
+        _image.color = new Color(_image.color.r, _image.color.g, _image.color.b, opacity);
+    }
+
+    public void AddTransform(Transform trans, float radius, GameObject hand = null)
+    {
+        bPropertyChanged = true;
+        HoleTransforms.Add(trans);
+        TransformRadiuses.Add(new Vector2(radius, radius));
+        this.Hands.Add(hand);
+        if (hand != null)
+            hand.transform.SetParent(transform, false);
+        TransformHoleTypes.Add(Circle);
+    }
+
+    public void AddTransformRect(Transform trans, float width, float height, GameObject hand = null)
+    {
+        bPropertyChanged = true;
+        HoleTransforms.Add(trans);
+        TransformRadiuses.Add(new Vector2(width, height));
+        this.Hands.Add(hand);
+        if (hand != null)
+            hand.transform.SetParent(transform, false);
+        TransformHoleTypes.Add(Rect);
+    }
+}

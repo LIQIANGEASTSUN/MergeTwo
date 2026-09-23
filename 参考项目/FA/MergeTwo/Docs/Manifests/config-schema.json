@@ -1,0 +1,1781 @@
+{
+  "ActivityTemplate.xlsx": {
+    "ActivityTemplate": {
+      "rows": 340,
+      "columns": 52,
+      "fields": [
+        {
+          "column": 1,
+          "name": "id",
+          "description": "序号",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 3,
+          "name": "name",
+          "description": "活动名字",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 4,
+          "name": "activityText",
+          "description": "活动介绍",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 5,
+          "name": "activityBG",
+          "description": "活动背景图",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 6,
+          "name": "type",
+          "description": "活动类型\n1=黄金通行证\n2=繁育季\n3=地图活动\n4=龙PVE活动\n5=龙跑酷活动\n6=龙抽奖\n7=秘境寻宝\n8=马拉松\n9=公会龙活动营救神龙\n10=淘金大赛\n11=割草游戏\n12=龙钓鱼\n13=消耗体力返奖\n14=卡册\n15=旋转转盘\n20=羊了个羊\n21=jam小游戏（砖块迷宫）\n24=家园积分任务\n25=沉船宝藏\n26=二合活动\n27=海底寻宝\n28=跳跳棋\n29=万圣寻宝",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 7,
+          "name": "unlockLevel",
+          "description": "解锁等级",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 8,
+          "name": "unlockTask",
+          "description": "解锁任务",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 9,
+          "name": "prewarm",
+          "description": "活动预热时间",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 10,
+          "name": "startTime",
+          "description": "活动开启时间",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 11,
+          "name": "rankEndTime",
+          "description": "排行榜结算时间\n拥有排行榜的活动排行榜结算时间，活动未拥有排行榜不读取\n1. 填写时间\n北京时间\n2. 填写格式\n年-月-日 时:分:秒",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 12,
+          "name": "endTime",
+          "description": "活动结束时间",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 13,
+          "name": "sceneID",
+          "description": "对应活动场景ID",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 14,
+          "name": "sceneCloseTime",
+          "description": "活动结束后场景最终关闭时间（天）",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 15,
+          "name": "reward",
+          "description": "活动奖励，如果场景活动，则为积分奖励【【积分数量，奖励物品ID，数量】】\n若为淘金大赛则为【【宝箱数量，奖励ID，数量】】\n新马拉松【积分数量【大奖ID，数量】】\n若为旋转派对，则为ActivityTurntable表ID",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 16,
+          "name": "rewardPayLevelMap",
+          "description": "动态副本数值分层数值\n活动奖励，如果场景活动，则为积分奖励【【积分数量，奖励物品ID，数量】】\n若为淘金大赛则为【【宝箱数量，奖励ID，数量】】\n新马拉松【积分数量【大奖ID，数量】】\n若为旋转派对，则为ActivityTurntable表ID",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 17,
+          "name": "prewarmUI",
+          "description": "是否开启活动预估面板\n0=不显示\n1=显示",
+          "type": "int",
+          "export": "C"
+        },
+        {
+          "column": 18,
+          "name": "prewarmRes",
+          "description": "预热图片",
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 19,
+          "name": "prewarmDesc",
+          "description": "预热文本",
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 20,
+          "name": "taskButtonIcon",
+          "description": "活动地图任务角标\n（填主线任务角标）",
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 21,
+          "name": "eventButtonIcon",
+          "description": "活动地图积分任务角标\n（可以不填写，填写后会显示主线任务的进度）",
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 22,
+          "name": "rankType",
+          "description": "排行榜类型\n1=龙PVE活动比赛排行榜\n2=龙PVE活动世界排行榜\n3=活动地图分组排行\n4=龙跑酷比赛排行榜\n5=龙跑酷世界排行榜\n6=秘境寻宝世界排行\n7=秘境个人排行\n8=地图活动世界排行\n9=马拉松周赛排行榜\n10=马拉松月赛排行榜\n11=公会龙活动世界排行\n12=公会龙活动个人排行\n13=淘金大赛世界排行\n14=龙割草世界排行\n15=龙割草个人排行\n16=龙钓鱼比赛排行\n17=龙钓鱼世界排行\n18=淘金大赛小组排行\n20=羊了个羊公会排行",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 23,
+          "name": "rankConfig",
+          "description": "活动分组排行配置\n如果活动类型为【4或5】：\n[[世界排行显示人数],[分组人数],[分组等级区间1],[分组等级区间2]\n如果活动类型为【6】：\n[[世界排行显示公会数量]]\n如果活动类型为[3]：\n[[世界排行人数]，[小组排行人数]]\n如果活动类型为【9或10】：\n[[月赛排行公会数],[周赛排行公会数]]\n如果活动类型为【11】：\n[[世界排行显示公会数量]]",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 24,
+          "name": "sceneIconShow",
+          "description": "地图icon显示\n0=不显示\n1=显示",
+          "type": "int",
+          "export": "C"
+        },
+        {
+          "column": 25,
+          "name": "rankItem",
+          "description": "排行道具",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 26,
+          "name": "robotParam",
+          "description": "地图排行榜机器人参数\n[[数量],[积分刷新时间],[初始积分上限，初始积分下限],[积分增长上限，积分增长下限]]",
+          "type": "JSONArray",
+          "export": "S"
+        },
+        {
+          "column": 27,
+          "name": "sceneIds",
+          "description": "多场景同时开启\n[场景1id,场景2id]",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 28,
+          "name": "lowestVersion",
+          "description": "参与活动最低版本需求",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 29,
+          "name": "forecastWeight",
+          "description": "活动列表展示权重，数值越小越靠前，活动地图为1，pve为2，跑酷为3，工会地图为4.没有填不加入列表",
+          "type": "int",
+          "export": "C"
+        },
+        {
+          "column": 30,
+          "name": "scoreReward",
+          "description": "累计积分奖励预览",
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 31,
+          "name": "displayReward",
+          "description": "排行榜奖励预览",
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 32,
+          "name": "ad_image",
+          "description": "广告图资源",
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 33,
+          "name": "ending_image",
+          "description": "ending图资源",
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 34,
+          "name": "forecastDesc",
+          "description": "活动预告文字KEY,限时地图为单独key,如果多行key格式 key,key,key",
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 35,
+          "name": "relationId",
+          "description": "活动关联id",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 36,
+          "name": "dropItemId",
+          "description": "活动限时采集掉落物资\n[消耗耐久,[[掉落物id1,个数,权重],[掉落物id2,个数,权重]]",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 37,
+          "name": "productItemId",
+          "description": "活动限时生产物资",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 38,
+          "name": "enterminiscenceId",
+          "description": "未完成某个任务前进入其他场景\n[任务id，场景id]",
+          "type": "JSONArray",
+          "export": "C"
+        },
+        {
+          "column": 39,
+          "name": "activitycoin",
+          "description": "活动特殊显示货币id",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 40,
+          "name": "grandprize",
+          "description": "活动地图积分任务大奖展示分数（不填则默认为展示最后一个奖励，通常就是龙）",
+          "type": "int",
+          "export": "C"
+        },
+        {
+          "column": 41,
+          "name": "eventmapbpreward",
+          "description": "活动地图小bp奖励预览",
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 42,
+          "name": "eventmapbpdec",
+          "description": "新模式活动地图BP规则文案；不填使用原文案",
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 43,
+          "name": "reopeningpartner",
+          "description": "复开地图伙伴\n[伙伴id，伙伴碎片id]",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 44,
+          "name": "factoryIcon",
+          "description": "积分排行工厂图标",
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 45,
+          "name": "clearID",
+          "description": "活动地图再次开启时需额外清理的地图的id集合",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 46,
+          "name": "showImage",
+          "description": "积分任务固定图展示（图片id，活动名称key，地图名称key）（不填则是老的奖励展示方式）",
+          "type": "JSONArray",
+          "export": "C"
+        },
+        {
+          "column": 47,
+          "name": "isRedEnergy",
+          "description": "是否使用红体力（1=用0=不用，不填默认为0）",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 48,
+          "name": "PartnerShow",
+          "description": "是否在活动入口图标，显示奖励的伙伴头像（伙伴ID,空为不显示）",
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 49,
+          "name": "loopGap",
+          "description": "循环间隔（首期新版每日任务结束后多少秒后开新的一期）",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 50,
+          "name": "loopCircle",
+          "description": "循环周期（自动开启的每日任务一期持续多少秒）",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 51,
+          "name": "showId",
+          "description": "展示场景id",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 52,
+          "name": "skitItem",
+          "description": "短剧能量",
+          "type": "string",
+          "export": "CS"
+        }
+      ]
+    }
+  },
+  "ConfigTemplate.xlsx": {
+    "ConfigTemplate": {
+      "rows": 537,
+      "columns": 5,
+      "fields": [
+        {
+          "column": 1,
+          "name": "id",
+          "description": "序号",
+          "type": "String",
+          "export": "CS"
+        },
+        {
+          "column": 3,
+          "name": "value",
+          "description": "值",
+          "type": "String",
+          "export": "CS"
+        }
+      ]
+    },
+    "Sheet1": {
+      "rows": 28,
+      "columns": 1,
+      "fields": [
+        {
+          "column": 1,
+          "name": 4,
+          "description": "[[4,24,0],[3,24,0],[143,24,0],[135,24,0],[130,24,0],[136,24,0],[132,24,0],[128,24,0],[139,24,0],[137,24,0],[141,24,0],[140,24,0],[129,24,0],[133,24,0],[146,24,0],[148,24,0],[142,24,0],[147,24,0],[149,24,0],[150,24,0],[127,24,0],[126,24,0],[122,24,0],[144,24,0],[152,24,0],[145,24,0],[151,24,0]]",
+          "type": 3,
+          "export": 143
+        }
+      ]
+    }
+  },
+  "EventMapBPLevelTemplate.xlsx": {
+    "EventMapBPLevelTemplate": {
+      "rows": 1442,
+      "columns": 17,
+      "fields": [
+        {
+          "column": 1,
+          "name": "id",
+          "description": "id",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 2,
+          "name": "level",
+          "description": "等级",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 3,
+          "name": "smallBpId",
+          "description": "对应活动ID",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 4,
+          "name": "exp",
+          "description": "下一级所需经验\n-1=满级不需要",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 5,
+          "name": "icon",
+          "description": "图标(道具类型不配置)",
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 6,
+          "name": "normalType",
+          "description": "普通奖励类型\n0=道具\n1=工厂槽位\n2=伙伴\n3=二合道具",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 7,
+          "name": "normalReward",
+          "description": "普通奖励\n[奖励ID，数量]",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 8,
+          "name": "vipType",
+          "description": "付费奖励类型\n0=道具\n1=工厂槽位\n2=伙伴\n3=二合道具",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 9,
+          "name": "vipReward",
+          "description": "付费奖励\n[奖励ID，数量]",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 10,
+          "name": "title",
+          "description": "奖励名称",
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 11,
+          "name": "desc",
+          "description": "奖励描述",
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 12,
+          "name": "specialReward",
+          "description": "特殊奖励框\n0=否\n1=是",
+          "type": "int",
+          "export": "C"
+        },
+        {
+          "column": 13,
+          "name": "stageReward",
+          "description": "阶段奖励\n0=否\n1=是",
+          "type": "int",
+          "export": "C"
+        },
+        {
+          "column": 14,
+          "name": "payIcon",
+          "description": "付款界面icon位置\n[位置,道具ID]",
+          "type": "JSONArray",
+          "export": "C"
+        },
+        {
+          "column": 15,
+          "name": "payLabel",
+          "description": "付费礼包标签\n1：非R\n2：微R(0,5]\n3：小R(5,30]\n4：中R(30,100]\n5：大中R(100,300]\n6：大R(300,1000]\n7：超大R(1000+",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 16,
+          "name": "payshopid",
+          "description": "对应shop表id",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 17,
+          "name": "isMergeGuide",
+          "description": "是否触发二合的领取引导",
+          "type": "int",
+          "export": "C"
+        }
+      ]
+    }
+  },
+  "ItemTemplate.xlsx": {
+    "ItemTemplate": {
+      "rows": 4441,
+      "columns": 37,
+      "fields": [
+        {
+          "column": 1,
+          "name": "id",
+          "description": "id（头像框、皮肤id与frame表、skin表中id一致）",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 2,
+          "name": "remarks",
+          "description": "备注",
+          "type": "string",
+          "export": null
+        },
+        {
+          "column": 3,
+          "name": "name",
+          "description": "名称",
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 4,
+          "name": "desc",
+          "description": "描述",
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 5,
+          "name": "icon",
+          "description": "图标",
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 6,
+          "name": "widgetType",
+          "description": "获得后icon飞向的位置\n1=体力\n2=钻石\n3=金币\n4=红体力\n9=经验\n13=背包\n16=伙伴手册\n19=炸弹包裹\n20=头像\n31=孵蛋功能\n39=实验室\n45=按次数体力打折\n47=动物图标\n52=公会图标\n58=翻翻乐图标\n60=无尽追逐图标\n63=卡牌icon\n102=地图积分任务图标\n103=公会活动icon\n104=幻神舞会地图\n107=神龙博物馆地图\n109=满级地图\n110=公会龙icon\n112=龙力buff\n154=消耗体力返积分\n183=藏宝图\n184=线索道具\n185=扎气球\n194=礼包集合\n195=二合入口\n2002=龙PVE积分\n2010=龙PVE双倍掉落BUFF\n2011=龙PVE双倍采集BUFF\n3001=跑酷积分\n3002=跑酷buff\n4001=割草积分\n4002=割草buff\n4004=割草加时间\n5001=龙钓鱼积分\n5002=鱼图鉴\n6001=小bp积分位置",
+          "type": "int",
+          "export": "C"
+        },
+        {
+          "column": 7,
+          "name": "paginationType",
+          "description": "-1不在背包中显示\n分页签类型\n1=挂机产物\n2=生产产物\n3=任务活动物品\n4=其它\n5=基因\n6=时装",
+          "type": "int",
+          "export": "C"
+        },
+        {
+          "column": 8,
+          "name": "type",
+          "description": "1=货币\n2=探索物资\n3=生产物资\n4=任务道具\n5=龙物资\n6=龙蛋\n7=体力装置消耗道具\n8=商人兑换道具\n9=经验\n10=体力道具\n11=炸弹\n13=减冷却道具\n14=龙\n15=作物加速道具\n16=龙挂机加速道具\n17=龙钥匙\n18=农作物\n19=使用后获得金币\n20=buff\n21=建筑升级奖励道具\n22=家园委托加速道具\n23=礼包\n24=头像框\n25=航海订单劵\n26=宝箱\n27=皮肤\n28=头像\n29=活动道具\n30=普通龙碎片（基因）\n31=万能碎片\n32=龙之力恢复道具\n33=场景开启门票\n34=体力打折道具\n35=爱心勋章（不飞背包的道具）\n37=龙PVE积分\n38=地图活动积分\n39=小游戏积分道具\n40=共享红包道具\n41=公会积分道具\n42=工厂加速道具\n43=马拉松积分道具\n44=图纸积分道具\n45=公会龙积分道具\n46=淘金大赛积分道具\n47=割草积分道具\n48=龙钓鱼积分\n49=龙钓鱼活动的鱼\n50=小bp积分\n51=对应地图id体力打折道具\n55=家园建筑皮肤\n56=伙伴失物\n57=事件奖励类道具\n58=玩法开启类道具（宴会）\n59=每日任务积分\n60=万能卡\n61=卡牌\n62=卡包\n63=新手岛2活动积分\n64=羊了个羊道具\n65=jam道具\n66=block道具\n67=短剧能量\n68=广告券\n69=固定龙蛋\n70=动态龙蛋\n71=宝箱\n72=二合道具（需要配转化）",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 9,
+          "name": "dragonId",
+          "description": "对应龙id",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 10,
+          "name": "breedDragonId",
+          "description": "对应繁育龙id",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 11,
+          "name": "productLevel",
+          "description": "生产级别：\n1级产物由基础物资直接生产\n2级产物生产材料至少包含1个1级生产物资\n依此类推n级产物生产材料至少包含1个n-1级生产物资",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 12,
+          "name": "productNeedItem",
+          "description": "生产所需物品[[物品ID,数量],[物品ID,数量]]",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 13,
+          "name": "productNeedItemPayLevelMap",
+          "description": "生产所需物品[[物品ID,数量],[物品ID,数量]]",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 14,
+          "name": "orderType",
+          "description": "属于订单种类：\n0 其他\n1 大本营订单\n2 探索订单\n3 混合订单",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 15,
+          "name": "productTime",
+          "description": "生产时间(单位：秒)",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 16,
+          "name": "timeValue",
+          "description": "价值时间（单位：分钟）\n价值时间如果是0，则不会被订单随机出来",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 17,
+          "name": "sellCoin",
+          "description": "价值金币(远航提交时获得金币）",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 18,
+          "name": "price",
+          "description": "价值钻石",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 19,
+          "name": "expValue",
+          "description": "价值经验（远航提交时获得经验）",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 20,
+          "name": "orderNumLimit",
+          "description": "订单物资数量限制\n-1：表示不限制\n0：不是订单需求物资",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 21,
+          "name": "orderNormalWeight",
+          "description": "普通订单随机权重",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 22,
+          "name": "orderDifficultWeight",
+          "description": "困难订单随机权重",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 23,
+          "name": "timeOrderItem",
+          "description": "进入航海订单随机的道具\n0=不进入\n1=进入",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 24,
+          "name": "timeOrderNumLimit",
+          "description": "航海订单物资数量限制\n[超过的数量,随机数1,随机数2]",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 25,
+          "name": "limittime",
+          "description": "有效时间\n（秒为单位限时道具用，-1为永久）",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 26,
+          "name": "canUse",
+          "description": "是否有使用功能\n0.可以使用\n1.不可使用",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 27,
+          "name": "funcType",
+          "description": "使用后效果\n1=获得体力\n2=龙蛋\n3=饱食时间\n4=体力装置值\n5=清除cd道具\n6=炸弹范围\n7=获得龙\n8=加速龙挂机\n9=获得金币/货币\n10=获得buff\n11=家园委托加速\n12=礼包掉落\n13=装载一个航海订单箱\n14=宝箱包\n15=获得头像框\n16=获得皮肤\n17=获得头像\n18=龙基因碎片\n19=优先查找挂机建筑产出\n20=龙之力冷却减少的时间\n21=场景开启时长\n22=打折折扣\n23=对应装扮图纸ID\n24=共享红包相关参数\n25=工厂加速\n26=挂机建筑产出的体力装置值\n27=对应地图id体力打折\n31=信物所属伙伴\n32=卡牌星级\n33=卡包\n34=优先查找再生植物\n35=优先查找小精灵\n36=红体力能量\n37=固定龙蛋\n38=动态龙蛋\n39=宝箱drop",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 28,
+          "name": "funcParam",
+          "description": "若为1则为获得的体力数量\n若为2则为龙蛋ID\n若为3则为饱食时间\n若为5，当Value=0时，直接清空cd；当Value＞0时，cd减少时间为Value的值\n若为6填写炸弹爆炸爆炸半径，一个格子宽为1\n若为7、13、15、16、17则不用填\n若为8填写时间，单位秒\n若为10填写buff表ID\n若为12则填写掉落ID\n若为14则填写掉落ID\n若为15则填写frame表ID\n若为16则填写skin表ID\n若为17则填写avatar表ID\n若为18则填写[龙ID,合成所需基因数量]\n若为20则填写龙之力恢复减少的时间\n若为21则填写时间（小时）\n若为22则填写体力打折折扣\n若为23，且可用道具兑换则填写[装扮ID，道具ID，数量]\n若为24则填写[可开启数量，掉落ID]\n若为25=工厂加速时长（秒）\n若为27=[折扣,场景id]\n若为30=[解锁龙乐园工厂建筑,解锁多语言，品质]\n若为31=伙伴类型\n若为32=[卡牌星级,活动ID]\n若为33=cardbookdrop表ID\"\n若为37=随机蛋roll奖池[道具id，权重]\n若为38=随机蛋roll动态奖池[道具id，权重]，只会roll已有的龙",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 29,
+          "name": "itemLimit",
+          "description": "道具堆叠上限\n-1为无上限\n到达上限时，不在叠加",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 30,
+          "name": "getWays",
+          "description": "物品获取途径2\n-1=不显示获取途径\n0=纯文本描述获取途径\n1=付费商城\n2=加工厂\n3=龙挂机产出\n4=探索\n5=金币商城\n6=打开礼包\n7=实验室\n8=洞穴探索\n9=种植\n10=使用龙基因\n11=场景剧情获得，填写场景ID\n12=迷宫获得\n13=女主和尼诺去试穿\n14=去装扮\n15=跳转装扮小屋\n16=跳转龙族传送阵\n17=马拉松限时物资跳转定位\n18=召唤获得\n19=去使用伙伴信物\n20=打开地图界面\n21=修复建筑\n22=伙伴页面\n23=钻石抽卡\n24=积分任务阶段奖励\n25=道具跳转礼包\n26=道具跳转工厂，找不到工厂找礼包\n27=广告月卡\n28=航海订单\n29=活动地图，打开当前活动地图界面\n30=打开海豚岛活跃进度条的界面\n30=升级建筑获得的奖励中包含该道具",
+          "type": "JSONArray",
+          "export": "C"
+        },
+        {
+          "column": 31,
+          "name": "getWayParam",
+          "description": "若为0则填写文字表key",
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 32,
+          "name": "sceneId",
+          "description": "固定场景产出\n（无场景限制不填\n有限制则填写场景id）\n-1则为爬塔草属性场景关闭删除道具\n-2则为木属性场景\n-3为石属性场景删除道具\n-4为矿属性场景删除道具",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 33,
+          "name": "lookupWay",
+          "description": "目标查找方式\n0=优先查找人物附近\n1=无解锁障碍时优先按障碍顺序查找",
+          "type": "int",
+          "export": "C"
+        },
+        {
+          "column": 34,
+          "name": "timeOrderUnlockLevel",
+          "description": "航海订单物资解锁等级-1为不参与航海订单的物资",
+          "type": "int",
+          "export": "C"
+        },
+        {
+          "column": 35,
+          "name": "itemConvert",
+          "description": "道具超出上限后转换，配置了数据的转化，未配置数据的销毁。\n配置格式\n[物品ID,数量]\n支持道具类型：\n进背包的道具：支持\n不进背包的道具：27皮肤（有需求可扩充）",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 36,
+          "name": "showUp",
+          "description": "是否弹出重要道具界面\n不填默认不弹，1为弹出（目前仅支持任务奖励）",
+          "type": "int",
+          "export": "C"
+        },
+        {
+          "column": 37,
+          "name": "getByAds",
+          "description": "是否可看广告获得\n0=不可以，\n1=可以",
+          "type": "int",
+          "export": "CS"
+        }
+      ]
+    }
+  },
+  "MergeTwoConfigTemplate.xlsx": {
+    "MergeTwoConfigTemplate": {
+      "rows": 7,
+      "columns": 18,
+      "fields": [
+        {
+          "column": 1,
+          "name": "id",
+          "description": "棋盘ID",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 2,
+          "name": "clearcd_currency_types",
+          "description": "重置生成器冷却时间的货币",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 3,
+          "name": "clearcd_price",
+          "description": "重置生成器冷却时间，(X秒=1钻石)",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 4,
+          "name": "2x_start_conditions",
+          "description": "2X采集开启条件，完成某订单",
+          "type": "JSONArray",
+          "export": "C"
+        },
+        {
+          "column": 5,
+          "name": "4x_start_conditions",
+          "description": "4X采集开启条件，完成某订单",
+          "type": "JSONArray",
+          "export": "C"
+        },
+        {
+          "column": 6,
+          "name": "merge_start_conditions",
+          "description": "二合入口开启条件，接取某任务",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 7,
+          "name": "guide_building",
+          "description": "二合第一个修复建筑唯一ID，用于指引",
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 8,
+          "name": "guide_start_conditions",
+          "description": "二合棋盘引导触发条件",
+          "type": "JSONArray",
+          "export": "C"
+        },
+        {
+          "column": 9,
+          "name": "shop_start_conditions",
+          "description": "二合商店开启条件，完成某订单",
+          "type": "JSONArray",
+          "export": "C"
+        },
+        {
+          "column": 10,
+          "name": "tutorial_link",
+          "description": "二合需要引导的生成器链",
+          "type": "JSONArray",
+          "export": "C"
+        },
+        {
+          "column": 11,
+          "name": "order_award_itemId",
+          "description": "二合地图对应的剧情币",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 12,
+          "name": "condition_random_order",
+          "description": "二合随机订单开启条件(固定订单表)",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 13,
+          "name": "default_random_order",
+          "description": "二合随机订单保底需求物品",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 14,
+          "name": "default_use_power",
+          "description": "二合使用体力",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 15,
+          "name": "default_use_limit",
+          "description": "二合体力上限",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 16,
+          "name": "default_use_grown",
+          "description": "二合体力恢复速度",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 17,
+          "name": "default_use_change",
+          "description": "二合体力转化比",
+          "type": "float",
+          "export": "CS"
+        },
+        {
+          "column": 18,
+          "name": "default_use_BP",
+          "description": "活动使用的BP积分",
+          "type": "int",
+          "export": "CS"
+        }
+      ]
+    }
+  },
+  "MergeTwoEnergyShop.xlsx": {
+    "MergeTwoConfigTemplate": {
+      "rows": 5,
+      "columns": 4,
+      "fields": [
+        {
+          "column": 1,
+          "name": "id",
+          "description": "棋盘ID",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 2,
+          "name": "currency_shop_id",
+          "description": "体力商店购买货币id",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 3,
+          "name": "currency_shop_num",
+          "description": "体力商店购买数量",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 4,
+          "name": "currency_shop_value",
+          "description": "体力商店购买价格",
+          "type": "string",
+          "export": "CS"
+        }
+      ]
+    }
+  },
+  "MergeTwoEnergyShopTemplate.xlsx": {
+    "MergeTwoEnergyShopTemplate": {
+      "rows": 5,
+      "columns": 4,
+      "fields": [
+        {
+          "column": 1,
+          "name": "id",
+          "description": "棋盘ID",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 2,
+          "name": "currency_shop_id",
+          "description": "体力商店购买货币id",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 3,
+          "name": "currency_shop_num",
+          "description": "体力商店购买数量",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 4,
+          "name": "currency_shop_value",
+          "description": "体力商店购买价格",
+          "type": "JSONArray",
+          "export": "CS"
+        }
+      ]
+    }
+  },
+  "MergeTwoItemGenerateTemplate.xlsx": {
+    "MergeTwoItemGenerateTemplate": {
+      "rows": 89,
+      "columns": 10,
+      "fields": [
+        {
+          "column": 1,
+          "name": "id",
+          "description": "物品ID",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 3,
+          "name": "fixedOutput",
+          "description": "固定产出",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 4,
+          "name": "proOutput",
+          "description": "概率产出",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 5,
+          "name": "num",
+          "description": "产出次数",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 6,
+          "name": "cd",
+          "description": "冷却时间（秒）",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 7,
+          "name": "cost",
+          "description": "耗费货币",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 8,
+          "name": "canDouble",
+          "description": "是否支持多倍采集",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 9,
+          "name": "coverPro",
+          "description": "出二级锁定的概率（万分比）",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 10,
+          "name": "generateNum",
+          "description": "生成个数",
+          "type": "int",
+          "export": "CS"
+        }
+      ]
+    }
+  },
+  "MergeTwoItemTemplate.xlsx": {
+    "MergeTwoItemTemplate": {
+      "rows": 375,
+      "columns": 23,
+      "fields": [
+        {
+          "column": 1,
+          "name": "id",
+          "description": "物品ID",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 3,
+          "name": "name",
+          "description": "物品名称",
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 4,
+          "name": "des",
+          "description": "物品描述",
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 5,
+          "name": "icon",
+          "description": "图标",
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 6,
+          "name": "groupId",
+          "description": "所属合成链",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 7,
+          "name": "level",
+          "description": "物品等级",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 8,
+          "name": "type",
+          "description": "类型",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 9,
+          "name": "type_par",
+          "description": "类型参数",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 10,
+          "name": "nextId",
+          "description": "合并产物",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 11,
+          "name": "saleRestrictions",
+          "description": "售出要求",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 12,
+          "name": "shopSale",
+          "description": "商店是否售卖",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 13,
+          "name": "price",
+          "description": "物品售价",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 14,
+          "name": "recycle",
+          "description": "回收材料",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 16,
+          "name": "orderPrice",
+          "description": "订单价值",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 17,
+          "name": "derivative",
+          "description": "衍生物",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 18,
+          "name": "change",
+          "description": "变更",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 19,
+          "name": "clonPro",
+          "description": "克隆概率（万分比）",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 20,
+          "name": "clonValue",
+          "description": "克隆气泡解锁价值",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 21,
+          "name": "getWays",
+          "description": "获取途径",
+          "type": "JSONArray",
+          "export": "C"
+        },
+        {
+          "column": 22,
+          "name": "getWayParam",
+          "description": "获取途径参数",
+          "type": "JSONArray",
+          "export": "C"
+        },
+        {
+          "column": 23,
+          "name": "mergeEffect",
+          "description": "合成特效(合到)",
+          "type": "int",
+          "export": "C"
+        }
+      ]
+    }
+  },
+  "MergeTwoMainTemplate.xlsx": {
+    "MergeTwoMainTemplate": {
+      "rows": 25,
+      "columns": 13,
+      "fields": [
+        {
+          "column": 1,
+          "name": "id",
+          "description": "id",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 2,
+          "name": "mapId",
+          "description": "棋盘ID",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 3,
+          "name": "maxCol",
+          "description": "最大列数",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 4,
+          "name": "column_1",
+          "description": "列1",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 5,
+          "name": "column_2",
+          "description": "列2",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 6,
+          "name": "column_3",
+          "description": "列3",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 7,
+          "name": "column_4",
+          "description": "列4",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 8,
+          "name": "column_5",
+          "description": "列5",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 9,
+          "name": "column_6",
+          "description": "列6",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 10,
+          "name": "column_7",
+          "description": "列7",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 11,
+          "name": "column_8",
+          "description": "列8",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 12,
+          "name": "column_9",
+          "description": "列9",
+          "type": "JSONArray",
+          "export": "CS"
+        }
+      ]
+    }
+  },
+  "MergeTwoOrderTemplate.xlsx": {
+    "MergeTwoOrderTemplate": {
+      "rows": 196,
+      "columns": 10,
+      "fields": [
+        {
+          "column": 1,
+          "name": "id",
+          "description": "ID",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 2,
+          "name": "activityId",
+          "description": "活动ID",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 3,
+          "name": "type",
+          "description": "订单类型",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 4,
+          "name": "picture",
+          "description": "订单头像",
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 5,
+          "name": "condition",
+          "description": "订单接取条件（主线为当前，支线为完成，3为组ID）",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 6,
+          "name": "needMitem",
+          "description": "订单需求Mitem",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 7,
+          "name": "reward",
+          "description": "订单奖励item",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 8,
+          "name": "priority",
+          "description": "优先级",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 9,
+          "name": "cd",
+          "description": "接取冷却（秒）",
+          "type": "int",
+          "export": "CS"
+        }
+      ]
+    }
+  },
+  "MergeTwoShopTemplate.xlsx": {
+    "MergeTwoShopTemplate": {
+      "rows": 16,
+      "columns": 5,
+      "fields": [
+        {
+          "column": 1,
+          "name": "id",
+          "description": "id",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 2,
+          "name": "activity",
+          "description": "所属活动",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 3,
+          "name": "productPos",
+          "description": "商品位",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 4,
+          "name": "commodityPool",
+          "description": "[M_itemID，售价货币，售价，库存，权重]。-1是广告，-2是免费",
+          "type": "JSONArray",
+          "export": "CS"
+        }
+      ]
+    }
+  },
+  "MergeTwoWarehouseTemplate.xlsx": {
+    "MergeTwoWarehouseTemplate": {
+      "rows": 94,
+      "columns": 4,
+      "fields": [
+        {
+          "column": 1,
+          "name": "id",
+          "description": "id",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 2,
+          "name": "activity",
+          "description": "所属活动",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 3,
+          "name": "latticeNum",
+          "description": "仓库格子",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 4,
+          "name": "price",
+          "description": "开启消耗",
+          "type": "JSONArray",
+          "export": "CS"
+        }
+      ]
+    }
+  },
+  "MergeTwoboxTemplate.xlsx": {
+    "MergeTwoboxTemplate": {
+      "rows": 31,
+      "columns": 8,
+      "fields": [
+        {
+          "column": 1,
+          "name": "id",
+          "description": "物品ID",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 3,
+          "name": "time",
+          "description": "宝箱开启所需时间（秒）",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 4,
+          "name": "num",
+          "description": "宝箱内物品数量",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 5,
+          "name": "fixedOutput",
+          "description": "固定产出",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 6,
+          "name": "proOutput",
+          "description": "概率产出",
+          "type": "JSONArray",
+          "export": "CS"
+        }
+      ]
+    }
+  },
+  "OrderItemChainTemplate.xlsx": {
+    "OrderItemChainTemplate": {
+      "rows": 43,
+      "columns": 12,
+      "fields": [
+        {
+          "column": 1,
+          "name": "ID",
+          "description": "编号",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 2,
+          "name": "difficultyType",
+          "description": "订单难度",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 3,
+          "name": "chessboard",
+          "description": "棋盘id",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 4,
+          "name": "SyntheticChain",
+          "description": "合成链id",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 5,
+          "name": "RequiredGenerator",
+          "description": "所需生成器",
+          "type": "string",
+          "export": "CS"
+        }
+      ]
+    },
+    "备注": {
+      "rows": 13,
+      "columns": 23,
+      "fields": [
+        {
+          "column": 1,
+          "name": "number",
+          "description": "可用数据类型",
+          "type": "boolean",
+          "export": "string"
+        },
+        {
+          "column": 2,
+          "name": "数字类型",
+          "description": null,
+          "type": "bool类型",
+          "export": "独立出来的类型，方便配置，无需\"\"标记！"
+        }
+      ]
+    }
+  },
+  "OrderItemRandomItemTemplate.xlsx": {
+    "OrderItemRandomItemTemplate": {
+      "rows": 404,
+      "columns": 12,
+      "fields": [
+        {
+          "column": 1,
+          "name": "id",
+          "description": "ID",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 2,
+          "name": "difficultyType",
+          "description": null,
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 3,
+          "name": "chessboard",
+          "description": null,
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 4,
+          "name": "SyntheticChain",
+          "description": null,
+          "type": "string",
+          "export": "C"
+        },
+        {
+          "column": 5,
+          "name": "MaxLevel",
+          "description": null,
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 6,
+          "name": "taskRange",
+          "description": null,
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 7,
+          "name": "RandomItem1",
+          "description": null,
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 8,
+          "name": "RandomItemWeight1",
+          "description": null,
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 9,
+          "name": "RandomItem2",
+          "description": null,
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 10,
+          "name": "RandomItemWeight2",
+          "description": null,
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 11,
+          "name": "RandomItem3",
+          "description": null,
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 12,
+          "name": "RandomItemWeight3",
+          "description": null,
+          "type": "JSONArray",
+          "export": "CS"
+        }
+      ]
+    }
+  },
+  "OrderItemRandomNumberTemplate.xlsx": {
+    "OrderItemRandomNumberTemplate": {
+      "rows": 21,
+      "columns": 6,
+      "fields": [
+        {
+          "column": 1,
+          "name": "ID",
+          "description": "编号",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 2,
+          "name": "difficultyType",
+          "description": "订单难度",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 3,
+          "name": "chessboard",
+          "description": "棋盘id",
+          "type": "string",
+          "export": "CS"
+        },
+        {
+          "column": 4,
+          "name": "Typeid",
+          "description": "解锁类型",
+          "type": "int",
+          "export": "CS"
+        },
+        {
+          "column": 5,
+          "name": "Taskid",
+          "description": "解锁类型参数",
+          "type": "JSONArray",
+          "export": "CS"
+        },
+        {
+          "column": 6,
+          "name": "itemNumber",
+          "description": "数量及权重[[1个，权重],[2个，权重]]",
+          "type": "JSONArray",
+          "export": "CS"
+        }
+      ]
+    },
+    "备注": {
+      "rows": 13,
+      "columns": 23,
+      "fields": [
+        {
+          "column": 1,
+          "name": "number",
+          "description": "可用数据类型",
+          "type": "boolean",
+          "export": "string"
+        },
+        {
+          "column": 2,
+          "name": "数字类型",
+          "description": null,
+          "type": "bool类型",
+          "export": "独立出来的类型，方便配置，无需\"\"标记！"
+        }
+      ]
+    }
+  },
+  "OrderItemSetTemplate.xlsx": {
+    "OrderItemSetTemplate": {
+      "rows": 23,
+      "columns": 6,
+      "fields": [
+        {
+          "column": 1,
+          "name": "id",
+          "description": "编号",
+          "type": "string",
+          "export": "cs"
+        },
+        {
+          "column": 2,
+          "name": "difficultyType",
+          "description": "订单难度",
+          "type": "int",
+          "export": "cs"
+        },
+        {
+          "column": 3,
+          "name": "chessboard",
+          "description": "棋盘id",
+          "type": "string",
+          "export": "cs"
+        },
+        {
+          "column": 4,
+          "name": "requirement",
+          "description": "前置条件",
+          "type": "int",
+          "export": "cs"
+        },
+        {
+          "column": 5,
+          "name": "requirementValue",
+          "description": "条件参数",
+          "type": "JSONArray",
+          "export": "cs"
+        },
+        {
+          "column": 6,
+          "name": "itemNumber",
+          "description": "订单内容",
+          "type": "JSONArray",
+          "export": "cs"
+        }
+      ]
+    }
+  }
+}
