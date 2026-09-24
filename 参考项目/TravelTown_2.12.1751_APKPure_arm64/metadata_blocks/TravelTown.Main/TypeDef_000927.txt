@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemCountSystem.<>c__DisplayClass12_0 // TypeDefIndex: 927
+{
+	// Fields
+	public ItemCountSystem <>4__this; // 0x10
+	public IMergeItem mergeItem; // 0x18
+
+	// Methods
+
+	// RVA: 0x666D4B8 Offset: 0x66694B8 VA: 0x666D4B8
+	public void .ctor() { }
+
+	// RVA: 0x666D7E0 Offset: 0x66697E0 VA: 0x666D7E0
+	internal void <OnItemCountChanged>b__0() { }
+}
+

@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MiniBoardItemController.<>c__DisplayClass127_0 // TypeDefIndex: 1124
+{
+	// Fields
+	public Vector3 transformPosition; // 0x8
+
+	// Methods
+
+	// RVA: 0x17BF314 Offset: 0x17BF314 VA: 0x17BF314
+	public void .ctor() { }
+
+	// RVA: 0x17C4360 Offset: 0x17C4360 VA: 0x17C4360
+	internal int <IsMergeAvailable>b__0(MiniBoardCellMergeCollider item1, MiniBoardCellMergeCollider item2) { }
+}
+

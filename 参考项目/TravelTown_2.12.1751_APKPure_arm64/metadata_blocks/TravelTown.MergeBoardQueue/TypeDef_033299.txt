@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardQueueModel.<>c__DisplayClass23_0 // TypeDefIndex: 33299
+{
+	// Fields
+	public string itemId; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A58F4C Offset: 0x6A54F4C VA: 0x6A58F4C
+	public void .ctor() { }
+
+	// RVA: 0x6A59A34 Offset: 0x6A55A34 VA: 0x6A59A34
+	internal bool <FindNewestInQueue>b__0(QueuedItem item) { }
+}
+

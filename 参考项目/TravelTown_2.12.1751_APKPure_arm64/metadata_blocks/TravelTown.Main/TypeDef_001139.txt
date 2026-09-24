@@ -1,0 +1,97 @@
+// Namespace: MergeEngine.Data
+public class SelectedBoardItem // TypeDefIndex: 1139
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly IMergeItem <MergeItem>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly ITimeLocked <TimeLocked>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private readonly BoardItemPosition <BoardItemPosition>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private readonly ILocked <Locked>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private readonly ICollectable <Collectable>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private readonly IItemSpawning <ItemSpawning>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private readonly IdComponent <Id>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private readonly ExpendableComponent <Expendable>k__BackingField; // 0x48
+	[CompilerGenerated]
+	private readonly VisualComponent <VisualComponent>k__BackingField; // 0x50
+	[CompilerGenerated]
+	private readonly TimeDurationComponent <TimeDurationComponent>k__BackingField; // 0x58
+	[CompilerGenerated]
+	private readonly ProducerComponent <ProducerComponent>k__BackingField; // 0x60
+	[CompilerGenerated]
+	private readonly SpawnerComponent <SpawnerComponent>k__BackingField; // 0x68
+
+	// Properties
+	public IMergeItem MergeItem { get; }
+	public ITimeLocked TimeLocked { get; }
+	public BoardItemPosition BoardItemPosition { get; }
+	public ILocked Locked { get; }
+	public ICollectable Collectable { get; }
+	public IItemSpawning ItemSpawning { get; }
+	public IdComponent Id { get; }
+	public ExpendableComponent Expendable { get; }
+	public VisualComponent VisualComponent { get; }
+	public TimeDurationComponent TimeDurationComponent { get; }
+	public ProducerComponent ProducerComponent { get; }
+	public SpawnerComponent SpawnerComponent { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x69050A0 Offset: 0x69010A0 VA: 0x69050A0
+	public IMergeItem get_MergeItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x69050A8 Offset: 0x69010A8 VA: 0x69050A8
+	public ITimeLocked get_TimeLocked() { }
+
+	[CompilerGenerated]
+	// RVA: 0x69050B0 Offset: 0x69010B0 VA: 0x69050B0
+	public BoardItemPosition get_BoardItemPosition() { }
+
+	[CompilerGenerated]
+	// RVA: 0x69050B8 Offset: 0x69010B8 VA: 0x69050B8
+	public ILocked get_Locked() { }
+
+	[CompilerGenerated]
+	// RVA: 0x69050C0 Offset: 0x69010C0 VA: 0x69050C0
+	public ICollectable get_Collectable() { }
+
+	[CompilerGenerated]
+	// RVA: 0x69050C8 Offset: 0x69010C8 VA: 0x69050C8
+	public IItemSpawning get_ItemSpawning() { }
+
+	[CompilerGenerated]
+	// RVA: 0x69050D0 Offset: 0x69010D0 VA: 0x69050D0
+	public IdComponent get_Id() { }
+
+	[CompilerGenerated]
+	// RVA: 0x69050D8 Offset: 0x69010D8 VA: 0x69050D8
+	public ExpendableComponent get_Expendable() { }
+
+	[CompilerGenerated]
+	// RVA: 0x69050E0 Offset: 0x69010E0 VA: 0x69050E0
+	public VisualComponent get_VisualComponent() { }
+
+	[CompilerGenerated]
+	// RVA: 0x69050E8 Offset: 0x69010E8 VA: 0x69050E8
+	public TimeDurationComponent get_TimeDurationComponent() { }
+
+	[CompilerGenerated]
+	// RVA: 0x69050F0 Offset: 0x69010F0 VA: 0x69050F0
+	public ProducerComponent get_ProducerComponent() { }
+
+	[CompilerGenerated]
+	// RVA: 0x69050F8 Offset: 0x69010F8 VA: 0x69050F8
+	public SpawnerComponent get_SpawnerComponent() { }
+
+	// RVA: 0x6905100 Offset: 0x6901100 VA: 0x6905100
+	public void .ctor(IMergeItem mergeItem, Entity entity) { }
+}
+

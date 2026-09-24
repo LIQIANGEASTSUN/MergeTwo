@@ -1,0 +1,9 @@
+// Namespace: Merger.MergeBoard.Data.TickInputActions
+public class InitializeAction // TypeDefIndex: 25976
+{
+	// Methods
+
+	// RVA: 0x6A9ADFC Offset: 0x6A96DFC VA: 0x6A9ADFC
+	public void .ctor() { }
+}
+

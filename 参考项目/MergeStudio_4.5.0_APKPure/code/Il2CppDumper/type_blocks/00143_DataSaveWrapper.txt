@@ -1,0 +1,60 @@
+// Namespace: Paxie
+public static class DataSaveWrapper // TypeDefIndex: 143
+{
+	// Fields
+	public static string BoardEntityLocalSaveName; // 0x0
+	private const float PrefsSafetySaveInterval = 0.5;
+	private static float PrefsLastSaveTime; // 0x4
+
+	// Methods
+
+	// RVA: 0x18A7440 Offset: 0x18A7440 VA: 0x18A7440
+	public static void DeleteAll() { }
+
+	// RVA: 0x18A76A0 Offset: 0x18A76A0 VA: 0x18A76A0
+	public static void DeleteKey(string key) { }
+
+	// RVA: 0x18A74A8 Offset: 0x18A74A8 VA: 0x18A74A8
+	public static void SavePrefs(bool forceSave) { }
+
+	// RVA: 0x18A76A8 Offset: 0x18A76A8 VA: 0x18A76A8
+	public static void SetStringAsync(string key, string val, bool writeDisc = True) { }
+
+	// RVA: 0x18A7900 Offset: 0x18A7900 VA: 0x18A7900
+	public static bool HasKey(string key) { }
+
+	// RVA: 0x18A7908 Offset: 0x18A7908 VA: 0x18A7908
+	public static void SetIntAsync(string key, int val, bool writeDisc = True) { }
+
+	// RVA: 0x18A7B60 Offset: 0x18A7B60 VA: 0x18A7B60
+	public static void SetFloatAsync(string key, float val, bool writeDisc = True) { }
+
+	// RVA: 0x18A7DB8 Offset: 0x18A7DB8 VA: 0x18A7DB8
+	public static string GetString(string key, string defaultVal = "") { }
+
+	// RVA: 0x18A7DC0 Offset: 0x18A7DC0 VA: 0x18A7DC0
+	public static int GetInt(string key, int defaultVal = 0) { }
+
+	// RVA: 0x18A7DC8 Offset: 0x18A7DC8 VA: 0x18A7DC8
+	public static float GetFloat(string key, float defaultVal = 0) { }
+
+	[AsyncStateMachine(typeof(DataSaveWrapper.<SaveDataToLocalFileAsync>d__13))]
+	// RVA: 0x18A7DD0 Offset: 0x18A7DD0 VA: 0x18A7DD0
+	public static UniTask SaveDataToLocalFileAsync(string path, object obj) { }
+
+	[AsyncStateMachine(typeof(DataSaveWrapper.<LoadDataFromLocalFileAsync>d__14<T>))]
+	// RVA: -1 Offset: -1
+	public static UniTask<T> LoadDataFromLocalFileAsync<T>(string path) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x23F4D74 Offset: 0x23F4D74 VA: 0x23F4D74
+	|-DataSaveWrapper.LoadDataFromLocalFileAsync<object>
+	|
+	|-RVA: 0x23F4E48 Offset: 0x23F4E48 VA: 0x23F4E48
+	|-DataSaveWrapper.LoadDataFromLocalFileAsync<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x18A7EB4 Offset: 0x18A7EB4 VA: 0x18A7EB4
+	private static void .cctor() { }
+}
+

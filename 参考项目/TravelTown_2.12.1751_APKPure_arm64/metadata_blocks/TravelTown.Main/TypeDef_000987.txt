@@ -1,0 +1,65 @@
+// Namespace: MergeEngine.ECS.Systems.Items.Producers
+public class ProduceSystem : SpawningItemsSystem<ProducerComponent> // TypeDefIndex: 987
+{
+	// Fields
+	[Inject]
+	private INotificationDataFactory _notificationDataFactory; // 0x98
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0xA0
+	[InjectSystem]
+	private OrdersSystem _ordersSystem; // 0xA8
+	[InjectSystem]
+	private InteractionSystem _interactionSystem; // 0xB0
+	[InjectSystem]
+	private OperationTrackingSystem _operationTrackingSystem; // 0xB8
+	[InjectSystem]
+	private SpecialChainSequenceSystem _specialChainSequenceSystem; // 0xC0
+	[InjectComponent]
+	private TasksComponent _tasksComponent; // 0xC8
+	[InjectSystem]
+	private RngSpawnSystem _rngSpawnSystem; // 0xD0
+	[Inject]
+	private IProducerExcitementService _producerExcitementService; // 0xD8
+	public Action<IMergeItem> ItemProduced; // 0xE0
+
+	// Properties
+	public override SystemPriorities Priority { get; }
+	protected override ItemOrigin ItemOrigin { get; }
+
+	// Methods
+
+	// RVA: 0x679B5AC Offset: 0x67975AC VA: 0x679B5AC Slot: 15
+	public override SystemPriorities get_Priority() { }
+
+	// RVA: 0x679B5B4 Offset: 0x67975B4 VA: 0x679B5B4 Slot: 19
+	protected override ItemOrigin get_ItemOrigin() { }
+
+	// RVA: 0x679B5BC Offset: 0x67975BC VA: 0x679B5BC
+	private IEnumerable<ProducerComponent> OrderProducers(List<ProducerComponent> producers) { }
+
+	// RVA: 0x679B660 Offset: 0x6797660 VA: 0x679B660 Slot: 17
+	protected override IEnumerable<ProducerComponent> OnWillProcessComponents(ReadOnlyCollection<ProducerComponent> components) { }
+
+	// RVA: 0x679B6C4 Offset: 0x67976C4 VA: 0x679B6C4 Slot: 18
+	protected override void ProcessComponent(ProducerComponent producer) { }
+
+	// RVA: 0x679BE50 Offset: 0x6797E50 VA: 0x679BE50
+	private bool CanCompleteOrder(ProducerComponent producer) { }
+
+	// RVA: 0x679B864 Offset: 0x6797864 VA: 0x679B864
+	private void TryProduce(ProducerComponent producer) { }
+
+	// RVA: 0x679BFD4 Offset: 0x6797FD4 VA: 0x679BFD4
+	private bool ShouldProduceRngItem(InteractionComponent interactionComponent) { }
+
+	// RVA: 0x679BFEC Offset: 0x6797FEC VA: 0x679BFEC
+	private void FireAnalyticsSignal(ProducerComponent producer, IMergeItem item, string spawnedItemUniqueId, int emptyPositionCount) { }
+
+	// RVA: 0x679C13C Offset: 0x679813C VA: 0x679C13C
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x679C184 Offset: 0x6798184 VA: 0x679C184
+	private int <OrderProducers>b__14_0(ProducerComponent producer) { }
+}
+

@@ -1,0 +1,22 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemConsumeSystem.<>c__DisplayClass5_0 // TypeDefIndex: 663
+{
+	// Fields
+	public Action<int> onComplete; // 0x10
+	public Dictionary<IMergeItem, List<Vector2>> positionsMap; // 0x18
+	public Vector2 absolutePosition; // 0x20
+	public int interactionCallbackId; // 0x28
+
+	// Methods
+
+	// RVA: 0x628AB6C Offset: 0x6286B6C VA: 0x628AB6C
+	public void .ctor() { }
+
+	// RVA: 0x628B410 Offset: 0x6287410 VA: 0x628B410
+	internal void <TryConsumeInteractionCostItems>b__0(ItemMultiple itemMultiple) { }
+
+	// RVA: 0x628B5BC Offset: 0x62875BC VA: 0x628B5BC
+	internal void <TryConsumeInteractionCostItems>b__1() { }
+}
+

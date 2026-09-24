@@ -1,0 +1,17 @@
+// Namespace: MergeEngine.Configuration.Definitions
+[Flags]
+public enum ItemOrigin // TypeDefIndex: 1307
+{
+	// Fields
+	public int value__; // 0x0
+	public const ItemOrigin StartBoard = 1;
+	public const ItemOrigin Merge = 2;
+	public const ItemOrigin Spawn = 4;
+	public const ItemOrigin Produce = 8;
+	public const ItemOrigin Transform = 16;
+	public const ItemOrigin BoardItemQueue = 32;
+	public const ItemOrigin Bubble = 64;
+	public const ItemOrigin Migration = 128;
+	public const ItemOrigin Split = 256;
+}
+

@@ -1,0 +1,62 @@
+CloudsDashDefinition = {
+  [ActivityType.CloudsDash] = {
+    StateChangedEvent = EEventType.CloudsDashStateChanged,
+    UpdateReddotEvent = EEventType.CloudsDashUpdateReddot,
+    AcquireTokenEvent = EEventType.CloudsDashAcquireToken,
+    EntryRootKey = EEntryRootKey.CloudsDash,
+    EntryButtonKey = ESceneViewHudButtonKey.CloudsDash,
+    BoardCellPrefabName = UIPrefabConfigName.CloudsDashBoardEntry,
+    EntryPrefabName = UIPrefabConfigName.CloudsDashEntry,
+    MainWindowPrefabName = UIPrefabConfigName.CloudsDashMainWindow,
+    RewardWindowPrefabName = UIPrefabConfigName.CloudsDashRewardWindow,
+    HelpWindowPrefabName = UIPrefabConfigName.CloudsDashHelpWindow,
+    RecoverWindowPrefabName = UIPrefabConfigName.CloudsDashRecoverWindow,
+    EndWindowPrefabName = UIPrefabConfigName.CloudsDashEndWindow,
+    ResourceLabels = {
+      AddressableLabel.CloudsDash
+    },
+    ActivityTokenPropertyType = EPropertyType.CloudsDashToken,
+    TokenIconName = ImageFileConfigName.cloudsDash_token,
+    ActivityDataTableName = VirtualDBTableName.CloudsDashActivity,
+    GetRewardsBITypeNomal = EBIType.CloudsDashRewardNomal,
+    GetRewardsBITypeStage = EBIType.CloudsDashRewardStage,
+    GetRewardsBITypeFinal = EBIType.CloudsDashRewardFinal,
+    HasBoard = false,
+    TutorialStartCondition = ETutorialStartCondition.CloudsDashStart
+  },
+  [ActivityType.CloudsDashHunt] = {
+    StateChangedEvent = EEventType.CloudsDashHuntStateChanged,
+    UpdateReddotEvent = EEventType.CloudsDashUpdateReddot,
+    AcquireTokenEvent = EEventType.CloudsDashAcquireToken,
+    EntryRootKey = EEntryRootKey.CloudsDash,
+    EntryButtonKey = ESceneViewHudButtonKey.CloudsDash,
+    BoardCellPrefabName = UIPrefabConfigName.CloudsDashBoardEntry,
+    EntryPrefabName = UIPrefabConfigName.CloudsDashEntry,
+    MainWindowPrefabName = UIPrefabConfigName.CloudsDashMainWindow,
+    RewardWindowPrefabName = UIPrefabConfigName.CloudsDashRewardWindow,
+    HelpWindowPrefabName = UIPrefabConfigName.CloudsDashHuntHelpWindow,
+    RecoverWindowPrefabName = UIPrefabConfigName.CloudsDashRecoverWindow,
+    EndWindowPrefabName = UIPrefabConfigName.CloudsDashEndWindow,
+    HuntWindowPrefabName = UIPrefabConfigName.CloudsDashHuntWindow,
+    ResourceLabels = {
+      AddressableLabel.CloudsDash
+    },
+    ActivityTokenPropertyType = EPropertyType.CloudsDashTokenHunt,
+    TokenIconName = ImageFileConfigName.cloudsDash_token,
+    ActivityDataTableName = VirtualDBTableName.CloudsDashHuntActivity,
+    GetRewardsBITypeNomal = EBIType.CloudsDashRewardNomal,
+    GetRewardsBITypeStage = EBIType.CloudsDashRewardStage,
+    GetRewardsBITypeFinal = EBIType.CloudsDashRewardFinal,
+    TutorialStartCondition = ETutorialStartCondition.CloudsDashHuntStart,
+    HasBoard = true,
+    ItemDataTableName = VirtualDBTableName.CloudsDashItem,
+    ItemLayerDataTableName = VirtualDBTableName.CloudsDashItemLayer,
+    ItemCacheDataTableName = VirtualDBTableName.CloudsDashItemCache,
+    BoardBg = UIPrefabConfigName.CloudsDashBoardBg,
+    TileImageName1 = ImageFileConfigName.cloudsDash_tile_1,
+    TileImageName2 = ImageFileConfigName.cloudsDash_tile_2,
+    BoardOffset = Vector3(-342, -408, 100),
+    BoardScale = 0.95,
+    CanvasPos = Vector3(354.5, -207.5, 100)
+  }
+}

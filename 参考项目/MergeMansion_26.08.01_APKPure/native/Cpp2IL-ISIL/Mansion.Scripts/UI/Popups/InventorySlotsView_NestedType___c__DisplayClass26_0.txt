@@ -1,0 +1,49 @@
+Type: UI.Popups.InventorySlotsView+<>c__DisplayClass26_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x02FABE6C MOV X0, X19
+	0x02FABE70 LDR X9, [X8 + 0x2E8]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void <AddItem>b__0()
+
+Disassembly:
+	0x02FABE74 LDR X1, [X8 + 0x2F0]
+	0x02FABE78 BLR X9
+	0x02FABE7C CBZ X0, 0x2FAC180
+	0x02FABE80 MOV X1, X31
+	0x02FABE84 BL 0x2E2A72C
+	0x02FABE88 CBZ X0, 0x2FAC180
+	0x02FABE8C ADRP X10, 0x273D000
+	0x02FABE90 LDR X8, [X0]
+	0x02FABE94 MOV X24, X0
+	0x02FABE98 LDR X10, [X10 + 0xCA8]
+	0x02FABE9C LDRH W9, [X8 + 0x12E]
+	0x02FABEA0 LDR X1, [X10]
+	0x02FABEA4 CBZ X9, 0x2FABEC8
+	0x02FABEA8 LDR X10, [X8 + 0xB0]
+
+ISIL:
+	001 Move X9, [X0+16]
+	002 Compare X9, 0
+	003 JumpIfEqual {15}
+	004 Move X10, [X9+160]
+	005 Compare X10, 0
+	006 JumpIfEqual {14}
+	007 Move X8, [X10+64]
+	008 Move X2, [X9+152]
+	009 Move X1, [X0+24]
+	010 Move X3, [X10+40]
+	011 Move X4, [X10+24]
+	012 Move X0, X8
+	013 CallNoReturn X4
+	014 Return 
+	015 Move [X31-16], X30
+	016 Call 0x239FB90
+

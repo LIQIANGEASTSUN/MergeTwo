@@ -1,0 +1,113 @@
+// Namespace: Merger.Game.ViewModel
+public class GameBaseViewModel : RewardAnimationTargetViewModel // TypeDefIndex: 8279
+{
+	// Fields
+	[CompilerGenerated]
+	private IActionsModel <_actionsModel>k__BackingField; // 0x88
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0x90
+	[Inject]
+	private ISystemManager _systemManager; // 0x98
+	[Inject]
+	protected IEntityManager _entityManager; // 0xA0
+	[Inject]
+	protected IResourcesModel _resourcesModel; // 0xA8
+	[Inject]
+	protected IShopService _shopService; // 0xB0
+	[Inject]
+	private IEventEnergyAssetsModel _eventEnergyAssetsModel; // 0xB8
+	[Inject]
+	protected IResourcesConfigurationModel _resourcesConfigurationModel; // 0xC0
+	private TutorialSystem _tutorialSystem; // 0xC8
+
+	// Properties
+	[Inject]
+	protected IActionsModel _actionsModel { get; set; }
+	public BindableProperty<bool> Started { get; }
+	public BindableProperty<GameState> CurrentGameState { get; }
+	public BindableProperty<GameState> CurrentPrimaryGameState { get; }
+	public BindableProperty<bool> IsInMetagame { get; }
+	public BindableProperty<CurrentBoardType> BoardType { get; }
+	public string CurrentEventId { get; }
+	public bool IsSectionShop { get; }
+	protected ShopSystemBase ShopSystem { get; }
+	protected BoardSystem BoardSystem { get; }
+	public PromotionsSystem PromotionSystem { get; }
+	protected bool IsFtueActive { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6625EC4 Offset: 0x6621EC4 VA: 0x6625EC4
+	protected IActionsModel get__actionsModel() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6625ECC Offset: 0x6621ECC VA: 0x6625ECC
+	private void set__actionsModel(IActionsModel value) { }
+
+	// RVA: 0x6625ED4 Offset: 0x6621ED4 VA: 0x6625ED4
+	public BindableProperty<bool> get_Started() { }
+
+	// RVA: 0x6625F74 Offset: 0x6621F74 VA: 0x6625F74
+	public BindableProperty<GameState> get_CurrentGameState() { }
+
+	// RVA: 0x6626018 Offset: 0x6622018 VA: 0x6626018
+	public BindableProperty<GameState> get_CurrentPrimaryGameState() { }
+
+	// RVA: 0x66260BC Offset: 0x66220BC VA: 0x66260BC
+	public BindableProperty<bool> get_IsInMetagame() { }
+
+	// RVA: 0x6626160 Offset: 0x6622160 VA: 0x6626160
+	public BindableProperty<CurrentBoardType> get_BoardType() { }
+
+	// RVA: 0x6626204 Offset: 0x6622204 VA: 0x6626204
+	public string get_CurrentEventId() { }
+
+	// RVA: 0x6626268 Offset: 0x6622268 VA: 0x6626268
+	public bool get_IsSectionShop() { }
+
+	// RVA: 0x6626220 Offset: 0x6622220 VA: 0x6626220
+	protected ShopSystemBase get_ShopSystem() { }
+
+	// RVA: 0x662630C Offset: 0x662230C VA: 0x662630C
+	protected BoardSystem get_BoardSystem() { }
+
+	// RVA: 0x6626354 Offset: 0x6622354 VA: 0x6626354
+	public PromotionsSystem get_PromotionSystem() { }
+
+	// RVA: 0x662639C Offset: 0x662239C VA: 0x662639C
+	public BindableProperty<int> GetBindableResource(IRewardType rewardType) { }
+
+	// RVA: 0x6626448 Offset: 0x6622448 VA: 0x6626448
+	public BindableProperty<int> GetDisplayableBindableResource(IRewardType rewardType) { }
+
+	// RVA: 0x66264F0 Offset: 0x66224F0 VA: 0x66264F0
+	protected bool get_IsFtueActive() { }
+
+	// RVA: -1 Offset: -1
+	protected TSystem GetSystem<TSystem>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3CC92E0 Offset: 0x3CC52E0 VA: 0x3CC92E0
+	|-GameBaseViewModel.GetSystem<object>
+	*/
+
+	// RVA: 0x6626550 Offset: 0x6622550 VA: 0x6626550
+	public bool CanAfford(ResourceMultiple price) { }
+
+	// RVA: 0x66265FC Offset: 0x66225FC VA: 0x66265FC
+	public bool CanAfford(ResourceMultiple[] price) { }
+
+	// RVA: 0x66266A8 Offset: 0x66226A8 VA: 0x66266A8
+	protected bool NavigateToShopIfCannotAfford(ResourceMultiple resource, IInventoryModel inventoryModel, string mergeItemType, Action backAction) { }
+
+	// RVA: 0x6626A1C Offset: 0x6622A1C VA: 0x6626A1C
+	public AssetReferenceT<Sprite> GetEventEnergyIcon(EventEnergySpriteEnum spriteType) { }
+
+	// RVA: 0x6626B80 Offset: 0x6622B80 VA: 0x6626B80
+	public AssetReferenceT<Sprite> GetResourceIcon(IRewardType rewardType) { }
+
+	// RVA: 0x662551C Offset: 0x662151C VA: 0x662551C
+	public void .ctor() { }
+}
+

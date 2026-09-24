@@ -1,0 +1,9 @@
+// Namespace: MergeEngine.Model.Configuration
+public class StartingBoardConfigurationModel : MultipleConfigurationModelBase<IBoard, string, MultipleConfigurationStringKeyLookup<IBoard>>, IStartingBoardConfigurationModel // TypeDefIndex: 575
+{
+	// Methods
+
+	// RVA: 0x61428EC Offset: 0x613E8EC VA: 0x61428EC
+	public void .ctor() { }
+}
+

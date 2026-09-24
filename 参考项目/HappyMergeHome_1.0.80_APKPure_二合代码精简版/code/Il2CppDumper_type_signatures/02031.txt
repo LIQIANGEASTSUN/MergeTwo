@@ -1,0 +1,21 @@
+// Namespace: 
+[Serializable]
+public class TableBoardGrid2 : TableBase // TypeDefIndex: 2031
+{
+	// Fields
+	public int id; // 0x8
+	public int itemId; // 0xC
+	public int state; // 0x10
+
+	// Methods
+
+	// RVA: 0x29ABD48 Offset: 0x29ABD48 VA: 0x29ABD48 Slot: 4
+	public override int GetID() { }
+
+	// RVA: 0x29ABD9C Offset: 0x29ABD9C VA: 0x29ABD9C
+	public void .ctor() { }
+
+	// RVA: 0x29ABDA4 Offset: 0x29ABDA4 VA: 0x29ABDA4
+	public int <>iFixBaseProxy_GetID() { }
+}
+

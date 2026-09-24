@@ -1,0 +1,465 @@
+// Namespace: Merger.Game.Views
+public class BoardView : GameViewBase<BoardViewModel>, IBoardView, IViewComponent, IEnterStateHandler, IExitStateHandler, IViewWithPayload<BoardTransitionPayload> // TypeDefIndex: 8587
+{
+	// Fields
+	[CompilerGenerated]
+	private Action<BoardItemPosition, bool> ItemTapped; // 0x30
+	[CompilerGenerated]
+	private Action<BoardItemPosition> ItemDragStarted; // 0x38
+	[CompilerGenerated]
+	private Action<Vector2> ItemDragged; // 0x40
+	[CompilerGenerated]
+	private Action<Vector2, Vector2> ItemDragEnded; // 0x48
+	[CompilerGenerated]
+	private Action ItemDragCancelled; // 0x50
+	[CompilerGenerated]
+	private Action Destroyed; // 0x58
+	private IBoardUIView _boardUIView; // 0x60
+	[SerializeField]
+	public GameObject _boardUI; // 0x68
+	[SerializeField]
+	private RectTransform _boardContainer; // 0x70
+	[SerializeField]
+	private RectTransform _boardGridContainer; // 0x78
+	[SerializeField]
+	private RectTransform _boardItemContainers; // 0x80
+	[SerializeField]
+	private RectTransform _inventoryRectTransform; // 0x88
+	[SerializeField]
+	private GameObject _boardTilePrefab; // 0x90
+	[SerializeField]
+	private GameObject _itemContainerPrefab; // 0x98
+	[SerializeField]
+	private SelectorView _selector; // 0xA0
+	[SerializeField]
+	private PowerBoostBannerView _powerBoostBanner; // 0xA8
+	[SerializeField]
+	[CanBeNull]
+	[Obsolete]
+	private Animator _powerBoostBannerAnimator; // 0xB0
+	[SerializeField]
+	[CanBeNull]
+	private PrefabObjectPool _ItemsPool; // 0xB8
+	[SerializeField]
+	[CanBeNull]
+	private BoardBlockersOverrideConfig _boardBlockersOverrideConfig; // 0xC0
+	[SerializeField]
+	private BlockerItemView _defaultBlockerItemView; // 0xC8
+	[CanBeNull]
+	[SerializeField]
+	private BlockerItemView _defaultBlockerItemViewOld; // 0xD0
+	[SerializeField]
+	[CanBeNull]
+	private Image _boardBackgroundImage; // 0xD8
+	[SerializeField]
+	[CanBeNull]
+	private Sprite _boardBackgroundSprite; // 0xE0
+	[SerializeField]
+	[CanBeNull]
+	private Sprite _boardBackgroundSpriteOld; // 0xE8
+	[Tooltip("holder GameObject for behaviour pools")]
+	[SerializeField]
+	[CanBeNull]
+	private Transform _behaviourPoolsHolder; // 0xF0
+	[CanBeNull]
+	[Tooltip("Can be used to configure visual variants of behaviours in Board Events")]
+	[SerializeField]
+	private List<BehaviourPrefabData> _behaviourOverrides; // 0xF8
+	[CanBeNull]
+	[SerializeField]
+	[Tooltip("Configuration for handling floating text target transform overrides.")]
+	private FloatingTextOverrideConfig _floatingTextOverrideConfig; // 0x100
+	private readonly HashSet<BoardItemPosition> _playingOutAnimationPositions; // 0x108
+	private RectTransform _rootRectTransform; // 0x110
+	private BlockerItemView _activeBlockerItemView; // 0x118
+	private TwoDArray<BoardCellView> _tiles; // 0x120
+	private TwoDArray<RectTransform> _itemContainers; // 0x128
+	private TwoDArray<IBoardItemView> _items; // 0x130
+	private TwoDArray<BlockerItemView> _itemBlockers; // 0x138
+	private IBoardItemView _draggedItem; // 0x140
+	private RectTransform _draggedItemRectTransform; // 0x148
+	private RectTransform _draggingPlane; // 0x150
+	private GridLayoutGroup _boardGridLayout; // 0x158
+	private string _enterStateReason; // 0x160
+	private HashSet<IBoardItemView> _itemsBeingRemoved; // 0x168
+	private bool _isDragging; // 0x170
+	private int _boardCols; // 0x174
+	private int _boardRows; // 0x178
+	private float _itemCellSize; // 0x17C
+	private UIBehaviourEventHandler _boardContainerDimensionsHandler; // 0x180
+	private bool _isRefreshingCellLayout; // 0x188
+	private const float JumpPower = 50;
+	private const string PowerBoostBannerResetTrigger = "BoostReset";
+	private static readonly int BoostReset; // 0x0
+	private const string PowerBoostBannerOnTrigger = "BoostOn";
+	private const string PowerBoostBannerOffTrigger = "BoostOff";
+	private Dictionary<string, BehaviourPrefabData> _combinedBehaviourConfig; // 0x190
+	private const string PrefabPoolIds = "BoardItemsPool";
+	private Dictionary<IRewardViewData, IBoardItemView> _flyingBoardItems; // 0x198
+	private BoardView.BoardLoadingState _boardViewLoadingState; // 0x1A0
+
+	// Properties
+	public float GridCellSize { get; }
+	public RectTransform BoardContainer { get; }
+	public IBoardUIView BoardUIView { get; }
+	public SelectorMode SelectorMode { set; }
+	private Dictionary<string, BehaviourPrefabData> CombinedBehaviourConfig { get; }
+	private PrefabObjectPool BoardItemsPool { get; }
+	private BoardView.BoardLoadingState BoardViewLoadingState { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x668FF30 Offset: 0x668BF30 VA: 0x668FF30 Slot: 10
+	public void add_ItemTapped(Action<BoardItemPosition, bool> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x668FFE0 Offset: 0x668BFE0 VA: 0x668FFE0 Slot: 11
+	public void remove_ItemTapped(Action<BoardItemPosition, bool> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6690090 Offset: 0x668C090 VA: 0x6690090 Slot: 12
+	public void add_ItemDragStarted(Action<BoardItemPosition> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6690140 Offset: 0x668C140 VA: 0x6690140 Slot: 13
+	public void remove_ItemDragStarted(Action<BoardItemPosition> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x66901F0 Offset: 0x668C1F0 VA: 0x66901F0 Slot: 14
+	public void add_ItemDragged(Action<Vector2> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x66902A0 Offset: 0x668C2A0 VA: 0x66902A0 Slot: 15
+	public void remove_ItemDragged(Action<Vector2> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6690350 Offset: 0x668C350 VA: 0x6690350 Slot: 16
+	public void add_ItemDragEnded(Action<Vector2, Vector2> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6690400 Offset: 0x668C400 VA: 0x6690400 Slot: 17
+	public void remove_ItemDragEnded(Action<Vector2, Vector2> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x66904B0 Offset: 0x668C4B0 VA: 0x66904B0 Slot: 18
+	public void add_ItemDragCancelled(Action value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x669054C Offset: 0x668C54C VA: 0x669054C Slot: 19
+	public void remove_ItemDragCancelled(Action value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x66905E8 Offset: 0x668C5E8 VA: 0x66905E8 Slot: 20
+	public void add_Destroyed(Action value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6690684 Offset: 0x668C684 VA: 0x6690684 Slot: 21
+	public void remove_Destroyed(Action value) { }
+
+	// RVA: 0x6690720 Offset: 0x668C720 VA: 0x6690720 Slot: 23
+	public float get_GridCellSize() { }
+
+	// RVA: 0x669073C Offset: 0x668C73C VA: 0x669073C Slot: 25
+	public RectTransform get_BoardContainer() { }
+
+	// RVA: 0x6690744 Offset: 0x668C744 VA: 0x6690744 Slot: 24
+	public IBoardUIView get_BoardUIView() { }
+
+	// RVA: 0x66907BC Offset: 0x668C7BC VA: 0x66907BC Slot: 22
+	public void set_SelectorMode(SelectorMode value) { }
+
+	// RVA: 0x66907D8 Offset: 0x668C7D8 VA: 0x66907D8
+	private Dictionary<string, BehaviourPrefabData> get_CombinedBehaviourConfig() { }
+
+	// RVA: 0x6690D30 Offset: 0x668CD30 VA: 0x6690D30
+	private PrefabObjectPool get_BoardItemsPool() { }
+
+	// RVA: 0x6690EF8 Offset: 0x668CEF8 VA: 0x6690EF8 Slot: 57
+	public void SetPayload(BoardTransitionPayload payload) { }
+
+	// RVA: 0x6690F14 Offset: 0x668CF14 VA: 0x6690F14
+	private BoardView.BoardLoadingState get_BoardViewLoadingState() { }
+
+	// RVA: 0x6690F1C Offset: 0x668CF1C VA: 0x6690F1C
+	private void set_BoardViewLoadingState(BoardView.BoardLoadingState value) { }
+
+	// RVA: 0x66910D8 Offset: 0x668D0D8 VA: 0x66910D8 Slot: 8
+	protected override void Awake() { }
+
+	// RVA: 0x6691288 Offset: 0x668D288 VA: 0x6691288
+	private void OnUserProfileDefaultValuesLoaded(UserProfileDefaultValuesLoadedSignal signal) { }
+
+	// RVA: 0x669128C Offset: 0x668D28C VA: 0x669128C
+	private void OnCurrentBoardTypeChanged(CurrentBoardType currentBoardType) { }
+
+	// RVA: 0x6691220 Offset: 0x668D220 VA: 0x6691220
+	private void ApplyCoreBoardAndBlockerVariants() { }
+
+	// RVA: 0x6691290 Offset: 0x668D290 VA: 0x6691290
+	private void ApplyCoreBoardVariant() { }
+
+	// RVA: 0x669138C Offset: 0x668D38C VA: 0x669138C
+	private void ApplyBlockerVariant() { }
+
+	// RVA: 0x6691430 Offset: 0x668D430 VA: 0x6691430
+	private void RetryMissingBlockerInstantiation() { }
+
+	// RVA: 0x6690D34 Offset: 0x668CD34 VA: 0x6690D34
+	private PrefabObjectPool GetSharedBoardItemPool() { }
+
+	// RVA: 0x66915CC Offset: 0x668D5CC VA: 0x66915CC
+	private void OnBoardBoardFeedingTooltipSignalReceived(BoardCombinationTooltipSignal signal) { }
+
+	// RVA: 0x6691830 Offset: 0x668D830 VA: 0x6691830
+	private void OnVerifyBoardMergeSignal(VerifyBoardMergeSignal signal) { }
+
+	// RVA: 0x669194C Offset: 0x668D94C VA: 0x669194C
+	private void OnBoardFloatingTextSignalReceived(BoardFloatingTextSignal signal) { }
+
+	// RVA: 0x6691A78 Offset: 0x668DA78 VA: 0x6691A78
+	private RectTransform GetFloatingTextTargetTransform(FloatingTextType floatingTextType, BoardItemPosition boardItemPosition) { }
+
+	// RVA: 0x6691B14 Offset: 0x668DB14 VA: 0x6691B14
+	private void OnBoardFloatingAccumulationItemSignalReceived(BoardFloatingAccumulationItemSignal signal) { }
+
+	// RVA: 0x6691C28 Offset: 0x668DC28 VA: 0x6691C28
+	private void Start() { }
+
+	// RVA: 0x6692470 Offset: 0x668E470 VA: 0x6692470
+	private void OnPlayStackingAnimation(ItemsStackingSignal signal) { }
+
+	// RVA: 0x66926D4 Offset: 0x668E6D4 VA: 0x66926D4
+	private void OnRewardsFlyAnimationFinishedSignal(RewardFlyAnimationFinishedSignal signal) { }
+
+	// RVA: 0x66920B4 Offset: 0x668E0B4 VA: 0x66920B4
+	private void InitPowerBoostBanner() { }
+
+	// RVA: 0x6692880 Offset: 0x668E880 VA: 0x6692880
+	private void OnEnable() { }
+
+	// RVA: 0x6692C60 Offset: 0x668EC60 VA: 0x6692C60
+	private void OnDisable() { }
+
+	// RVA: 0x6692F98 Offset: 0x668EF98 VA: 0x6692F98
+	private void OnBoardEnabledChanged(bool enabled) { }
+
+	// RVA: 0x6692FC0 Offset: 0x668EFC0 VA: 0x6692FC0 Slot: 7
+	protected override void OnDestroy() { }
+
+	[IteratorStateMachine(typeof(BoardView.<StartAfter1Frame>d__105))]
+	// RVA: 0x66933A0 Offset: 0x668F3A0 VA: 0x66933A0 Slot: 58
+	protected virtual IEnumerator StartAfter1Frame() { }
+
+	// RVA: 0x6693434 Offset: 0x668F434 VA: 0x6693434 Slot: 26
+	public void InitializeBoard(int cols, int rows) { }
+
+	// RVA: 0x6690818 Offset: 0x668C818 VA: 0x6690818
+	private Dictionary<string, BehaviourPrefabData> GetCombinedBehaviourConfig() { }
+
+	// RVA: 0x6693930 Offset: 0x668F930 VA: 0x6693930
+	public void InitializeBehaviourPools() { }
+
+	// RVA: 0x669151C Offset: 0x668D51C VA: 0x669151C
+	private PrefabObjectPool CreatePrefabObjectPool(GeneralObjectPoolData objectPoolData, Transform poolHolder) { }
+
+	// RVA: 0x6690F38 Offset: 0x668CF38 VA: 0x6690F38
+	private void RecalculateCellSizes() { }
+
+	// RVA: 0x66922A0 Offset: 0x668E2A0 VA: 0x66922A0
+	private void TrySubscribeToBoardContainerDimensionsChange() { }
+
+	// RVA: 0x66932BC Offset: 0x668F2BC VA: 0x66932BC
+	private void UnsubscribeFromBoardContainerDimensionsChange() { }
+
+	// RVA: 0x6693D98 Offset: 0x668FD98 VA: 0x6693D98
+	private void OnBoardContainerDimensionsChanged() { }
+
+	// RVA: 0x6693D9C Offset: 0x668FD9C VA: 0x6693D9C
+	private void RefreshCellLayoutOnResize() { }
+
+	// RVA: 0x6693F10 Offset: 0x668FF10 VA: 0x6693F10
+	private void OnBoardLayoutInitialized() { }
+
+	// RVA: 0x6693FC0 Offset: 0x668FFC0 VA: 0x6693FC0 Slot: 27
+	public IBoardItemView CreateItem(VisualComponent visualComponent, Transform container) { }
+
+	// RVA: 0x66941A4 Offset: 0x66901A4 VA: 0x66941A4 Slot: 28
+	public void CreateItemAndAddToBoard(BoardItemPosition position, VisualComponent visualComponent, bool transitionIn, BlockerItemView blockerArtOverride) { }
+
+	// RVA: 0x6694A40 Offset: 0x6690A40 VA: 0x6694A40 Slot: 29
+	public BlockerItemView GetBoardItemAsset(BoardItemPosition position, string blockerArtFromAdmin) { }
+
+	// RVA: 0x66948CC Offset: 0x66908CC VA: 0x66948CC
+	private void CreateBlockerView(BoardItemPosition position, IBoardItemView boardItemView, BlockerItemView blockerArtOverride) { }
+
+	// RVA: 0x6694330 Offset: 0x6690330 VA: 0x6694330
+	private void AddToBoard(BoardItemPosition position, IBoardItemView boardItemView, bool transitionIn) { }
+
+	// RVA: 0x6694DB0 Offset: 0x6690DB0 VA: 0x6694DB0
+	private void TimeTwisterActivated(IBoardItemView boardItem) { }
+
+	// RVA: 0x6694FF0 Offset: 0x6690FF0 VA: 0x6694FF0
+	private void BoardItemDragged(IBoardItemView boardItem, PointerEventData data) { }
+
+	// RVA: 0x6695318 Offset: 0x6691318 VA: 0x6695318
+	private void BoardItemTapped(IBoardItemView boardItem) { }
+
+	// RVA: 0x66953EC Offset: 0x66913EC VA: 0x66953EC Slot: 47
+	public void MoveSelector(BoardItemPosition position) { }
+
+	// RVA: 0x669565C Offset: 0x669165C VA: 0x669565C Slot: 48
+	public void HideItem(BoardItemPosition position) { }
+
+	// RVA: 0x6695778 Offset: 0x6691778 VA: 0x6695778 Slot: 49
+	public void ShowItem(BoardItemPosition position) { }
+
+	// RVA: 0x66956C8 Offset: 0x66916C8 VA: 0x66956C8
+	private void HideItem(IBoardItemView itemView) { }
+
+	// RVA: 0x669578C Offset: 0x669178C VA: 0x669578C
+	private void ShowItem(IBoardItemView itemView) { }
+
+	// RVA: 0x669583C Offset: 0x669183C VA: 0x669583C
+	private void BoardItemDragEnded(IBoardItemView boardItem, PointerEventData pointerEventData) { }
+
+	// RVA: 0x6695AEC Offset: 0x6691AEC VA: 0x6695AEC
+	private void BoardItemDragCancelled(IBoardItemView boardItem) { }
+
+	// RVA: 0x6695BC8 Offset: 0x6691BC8 VA: 0x6695BC8 Slot: 30
+	public void RemoveItem(BoardItemPosition position, IPromise delayedViewRemovePromise) { }
+
+	// RVA: 0x6696A1C Offset: 0x6692A1C VA: 0x6696A1C Slot: 31
+	public void StartDragging(BoardItemPosition itemAtPosition) { }
+
+	// RVA: 0x6695670 Offset: 0x6691670 VA: 0x6695670
+	private IBoardItemView GetItemView(BoardItemPosition itemAtPosition) { }
+
+	// RVA: 0x6696B2C Offset: 0x6692B2C VA: 0x6696B2C Slot: 44
+	public bool MoveItemToTopContainer(BoardItemPosition itemAtPosition, bool overrideSorting, bool setSecondLastSiblingIndex = False) { }
+
+	// RVA: 0x6696DD4 Offset: 0x6692DD4 VA: 0x6696DD4 Slot: 45
+	public void MoveItemBackToOwnContainer(BoardItemPosition itemAtPosition) { }
+
+	// RVA: 0x66969C4 Offset: 0x66929C4 VA: 0x66969C4 Slot: 33
+	public IBoardItemView GetItemAtPosition(BoardItemPosition position) { }
+
+	// RVA: 0x6697104 Offset: 0x6693104 VA: 0x6697104 Slot: 34
+	public bool IsPlayingOutAnimation(BoardItemPosition position) { }
+
+	// RVA: 0x669715C Offset: 0x669315C VA: 0x669715C Slot: 32
+	public void MoveItem(BoardItemPosition oldPosition, BoardItemPosition newPosition) { }
+
+	// RVA: 0x6697430 Offset: 0x6693430 VA: 0x6697430
+	private void SetItem(BoardItemPosition position, IBoardItemView boardItemView) { }
+
+	// RVA: 0x66975D0 Offset: 0x66935D0 VA: 0x66975D0 Slot: 35
+	public void SwapItems(BoardItemPosition firstBoardPosition, BoardItemPosition secondBoardPosition) { }
+
+	// RVA: 0x669766C Offset: 0x669366C VA: 0x669766C Slot: 36
+	public void SlideItem(BoardItemPosition itemAtPosition, BoardItemPosition fromPosition, BoardItemPosition toPosition, float tweenDuration, Ease ease = 7) { }
+
+	// RVA: 0x669785C Offset: 0x669385C VA: 0x669785C
+	private void Jump(IBoardItemView itemToSlide, float tweenDuration) { }
+
+	// RVA: 0x66971C4 Offset: 0x66931C4 VA: 0x66971C4 Slot: 37
+	public void SlideItem(BoardItemPosition itemAtPosition, BoardItemPosition toPosition, float tweenDuration, Ease ease = 7) { }
+
+	// RVA: 0x6697C3C Offset: 0x6693C3C VA: 0x6697C3C Slot: 38
+	public void SlideItemOut(BoardItemPosition itemAtPosition, Vector2 pointInRoot, float tweenDuration, TweenCallback slideCompleted, Ease ease = 7) { }
+
+	// RVA: 0x6697E3C Offset: 0x6693E3C VA: 0x6697E3C Slot: 40
+	public void SlideItemIn(BoardItemPosition itemAtPosition, Vector2 pointInRoot, float tweenDuration, TweenCallback slideCompleted, Ease ease = 7) { }
+
+	// RVA: 0x66980A4 Offset: 0x66940A4 VA: 0x66980A4 Slot: 39
+	public void SlideItemInWithFlyingRewards(BoardItemPosition itemAtPosition, Vector2 worldPosition, ResourceSource source) { }
+
+	// RVA: 0x6698558 Offset: 0x6694558 VA: 0x6698558 Slot: 53
+	public void BoardItemFlyInAnimationStarted(IBoardItemView itemToSlide, IRewardViewData rewardData) { }
+
+	// RVA: 0x6698704 Offset: 0x6694704 VA: 0x6698704 Slot: 41
+	public void SlideBoosterIn(BoardItemPosition itemAtPosition, Vector2 pointInRoot, float tweenDuration, TweenCallback slideCompleted, float jumpPower, Ease ease = 7) { }
+
+	// RVA: 0x6697BB0 Offset: 0x6693BB0 VA: 0x6697BB0
+	public TweenerCore<Vector2, Vector2, VectorOptions> SlideGameObject(RectTransform objectToSlide, Vector2 pointToRoot, float tweenDuration, Ease ease = 7) { }
+
+	// RVA: 0x669894C Offset: 0x669494C VA: 0x669894C
+	public Sequence SlideBoosterObject(RectTransform objectToSlide, Vector2 pointToRoot, float tweenDuration, float jumpPower, Ease ease = 7) { }
+
+	// RVA: 0x6698A14 Offset: 0x6694A14 VA: 0x6698A14 Slot: 42
+	public Vector2 GetTileCoordinates(BoardItemPosition position, RectTransform otherRectTransform) { }
+
+	// RVA: 0x6698B28 Offset: 0x6694B28 VA: 0x6698B28 Slot: 43
+	public Vector2 GetTileCoordinatesGlobal(BoardItemPosition position) { }
+
+	// RVA: 0x6692070 Offset: 0x668E070 VA: 0x6692070 Slot: 46
+	public void HideSelector() { }
+
+	// RVA: 0x6698BA4 Offset: 0x6694BA4 VA: 0x6698BA4 Slot: 50
+	public void ForceDeselectItem() { }
+
+	// RVA: 0x6698C64 Offset: 0x6694C64 VA: 0x6698C64 Slot: 51
+	public IPromise PlayUnlockSurpriseBoxOnBoard(BoardItemPosition position) { }
+
+	// RVA: 0x6697994 Offset: 0x6693994 VA: 0x6697994
+	private IBoardItemView PrepareItemToSlide(BoardItemPosition position, RectTransform container) { }
+
+	// RVA: 0x6697934 Offset: 0x6693934 VA: 0x6697934
+	private Vector2 GetBoardCellPositionInBoardContainer(RectTransform boardCell) { }
+
+	// RVA: 0x6693860 Offset: 0x668F860 VA: 0x6693860
+	private void SetContainerAspectRatio() { }
+
+	// RVA: 0x6698E90 Offset: 0x6694E90 VA: 0x6698E90
+	private void OnPowerBoostChanged(PowerBoostModeSwitchedSignal signal) { }
+
+	// RVA: 0x6699288 Offset: 0x6695288 VA: 0x6699288 Slot: 55
+	private void Framework.UIFSM.Fsm.IEnterStateHandler.HandleEnterState() { }
+
+	// RVA: 0x669930C Offset: 0x669530C VA: 0x669930C Slot: 56
+	private void Framework.UIFSM.Fsm.IExitStateHandler.HandleExitState() { }
+
+	// RVA: 0x669944C Offset: 0x669544C VA: 0x669944C Slot: 52
+	public BoardCellView GetTile(BoardItemPosition position) { }
+
+	// RVA: 0x66994A4 Offset: 0x66954A4 VA: 0x66994A4
+	private void OnGamePaused(GamePauseSignal signal) { }
+
+	// RVA: 0x669956C Offset: 0x669556C VA: 0x669956C
+	private void LoadBoardSpritesFired() { }
+
+	// RVA: 0x6699610 Offset: 0x6695610 VA: 0x6699610
+	private void UnloadBoardSpritesFired() { }
+
+	// RVA: 0x6694268 Offset: 0x6690268 VA: 0x6694268
+	private void ToggleSpriteLoaded(IBoardItemView item, bool loadSprite) { }
+
+	// RVA: 0x6692490 Offset: 0x668E490 VA: 0x6692490 Slot: 54
+	public void PlayStackingAnimation(BoardItemPosition position, int stackSizeAdded) { }
+
+	// RVA: 0x66996BC Offset: 0x66956BC VA: 0x66996BC
+	public void .ctor() { }
+
+	// RVA: 0x6699800 Offset: 0x6695800 VA: 0x6699800
+	private static void .cctor() { }
+
+	// RVA: 0x6699868 Offset: 0x6695868 VA: 0x6699868 Slot: 5
+	private GameObject Framework.Core.View.IViewComponent.get_gameObject() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6699870 Offset: 0x6695870 VA: 0x6699870
+	private void <RetryMissingBlockerInstantiation>b__90_0(IBoardItemView item) { }
+
+	[CompilerGenerated]
+	// RVA: 0x66999BC Offset: 0x66959BC VA: 0x66999BC
+	private void <RecalculateCellSizes>b__110_0(IBoardItemView item) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6699A70 Offset: 0x6695A70 VA: 0x6699A70
+	private void <LoadBoardSpritesFired>b__164_0(IBoardItemView item) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6699A78 Offset: 0x6695A78 VA: 0x6699A78
+	private void <UnloadBoardSpritesFired>b__165_0(IBoardItemView item) { }
+}
+

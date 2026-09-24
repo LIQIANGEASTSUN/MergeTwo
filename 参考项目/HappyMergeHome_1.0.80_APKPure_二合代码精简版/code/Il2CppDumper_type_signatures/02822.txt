@@ -1,0 +1,283 @@
+// Namespace: 
+public class MergeClickTips : MonoBehaviour // TypeDefIndex: 2822
+{
+	// Fields
+	private MergeBoardEnum _boardId; // 0x10
+	private bool _boardIdSetFlag; // 0x14
+	private LocalizeTextMeshProUGUI contentText; // 0x18
+	private Button tipsBtn; // 0x1C
+	private LocalizeTextMeshProUGUI coinText; // 0x20
+	private LocalizeTextMeshProUGUI diamondsText; // 0x24
+	private LocalizeTextMeshProUGUI saleDiamondsText; // 0x28
+	private Transform cdGroup; // 0x2C
+	private LocalizeTextMeshProUGUI cdContentText; // 0x30
+	private LocalizeTextMeshProUGUI cdText; // 0x34
+	private LocalizeTextMeshProUGUI timeText; // 0x38
+	private LocalizeTextMeshProUGUI sellBtnText; // 0x3C
+	private LocalizeTextMeshProUGUI titleText; // 0x40
+	private LocalizeTextMeshProUGUI speedBtnText; // 0x44
+	private Button sellBtn; // 0x48
+	private Button destoryBtn; // 0x4C
+	private Button speedBtn; // 0x50
+	private Button timeBtn; // 0x54
+	private Button undoBtn; // 0x58
+	private Button thumbtackBtn; // 0x5C
+	private Button iceBreakBtn; // 0x60
+	private Button rvBtn; // 0x64
+	private Button rvBtn2; // 0x68
+	private LocalizeTextMeshProUGUI rvBtnText; // 0x6C
+	private LocalizeTextMeshProUGUI rvBtnDesText; // 0x70
+	private int oldSelectIndex; // 0x74
+	private int selecGridIndex; // 0x78
+	private int selecGridId; // 0x7C
+	private StorageMergeItem sellItem; // 0x80
+	private float sellColdTime; // 0x84
+	private Coroutine bubbleDissmiss; // 0x88
+	private TableMergeItem curMergeItem; // 0x8C
+	private StorageMergeItem boardItem; // 0x90
+	private GameObject explainGroup; // 0x94
+	private LocalizeTextMeshProUGUI explainText; // 0x98
+	private Transform energyBG; // 0x9C
+	private Transform energyTip; // 0xA0
+	private GameObject _itemGroup1; // 0xA4
+	private GameObject _itemGroup2; // 0xA8
+	private Image _itemGroup1Image; // 0xAC
+	private Image _itemGroup2Image; // 0xB0
+	private LocalizeTextMeshProUGUI _itemGroup1Text; // 0xB4
+	private LocalizeTextMeshProUGUI _itemGroup2Text; // 0xB8
+	private Button _itemGroup1Button; // 0xBC
+	private Button _itemGroup2Button; // 0xC0
+	private GameObject _itemGroup1Finish; // 0xC4
+	private GameObject _itemGroup2Finish; // 0xC8
+	private int _cdCost; // 0xCC
+	private int _orgCdCost; // 0xD0
+	private MergeClickTips.SpeedUpType _speedUpType; // 0xD4
+	public bool canShowRv; // 0xD8
+	public bool canShowBubbleRv; // 0xD9
+
+	// Properties
+	private MergeBoardEnum BoardId { get; }
+	public int SelectIndex { get; }
+
+	// Methods
+
+	// RVA: 0x2C5B6F0 Offset: 0x2C5B6F0 VA: 0x2C5B6F0
+	private MergeBoardEnum get_BoardId() { }
+
+	// RVA: 0x2C5B7C8 Offset: 0x2C5B7C8 VA: 0x2C5B7C8
+	public void SetBoardId(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2C5B82C Offset: 0x2C5B82C VA: 0x2C5B82C
+	public int get_SelectIndex() { }
+
+	// RVA: 0x2C5B880 Offset: 0x2C5B880 VA: 0x2C5B880
+	private void Awake() { }
+
+	// RVA: 0x2C5D86C Offset: 0x2C5D86C VA: 0x2C5D86C
+	private void Start() { }
+
+	// RVA: 0x2C5DA8C Offset: 0x2C5DA8C VA: 0x2C5DA8C
+	private void InitView() { }
+
+	[IDTag(2)]
+	// RVA: 0x2C5E498 Offset: 0x2C5E498 VA: 0x2C5E498
+	private void OnSelectGrid(BaseEvent e) { }
+
+	[IDTag(0)]
+	// RVA: 0x2C5D9AC Offset: 0x2C5D9AC VA: 0x2C5D9AC
+	private void OnSelectGrid(Vector2Int arg) { }
+
+	// RVA: 0x2C5E630 Offset: 0x2C5E630 VA: 0x2C5E630
+	private void RefreshViewInfos() { }
+
+	// RVA: 0x2C5EB84 Offset: 0x2C5EB84 VA: 0x2C5EB84
+	private void RefreshAllStatus() { }
+
+	// RVA: 0x2C5EFFC Offset: 0x2C5EFFC VA: 0x2C5EFFC
+	private void RefreshEatBuildView() { }
+
+	// RVA: 0x2C616D4 Offset: 0x2C616D4 VA: 0x2C616D4
+	public void SetSpeedUpPrice(MergeClickTips.SpeedUpType type, int leftCD) { }
+
+	// RVA: 0x2C602B0 Offset: 0x2C602B0 VA: 0x2C602B0
+	private void SetLockStatus(TableMergeItem itemConfig) { }
+
+	// RVA: 0x2C6046C Offset: 0x2C6046C VA: 0x2C6046C
+	private void SetBubbleStatus(TableMergeItem itemConfig, StorageMergeItem boardItem) { }
+
+	// RVA: 0x2C60864 Offset: 0x2C60864 VA: 0x2C60864
+	private void SetIceCubeStatus(TableMergeItem itemConfig, StorageMergeItem boardItem) { }
+
+	// RVA: 0x2C61B1C Offset: 0x2C61B1C VA: 0x2C61B1C
+	private void Thumbtack() { }
+
+	// RVA: 0x2C61DC4 Offset: 0x2C61DC4 VA: 0x2C61DC4
+	private void BreakIce() { }
+
+	// RVA: 0x2C5FFA4 Offset: 0x2C5FFA4 VA: 0x2C5FFA4
+	private void SetRvStatus(bool active) { }
+
+	// RVA: 0x2C60134 Offset: 0x2C60134 VA: 0x2C60134
+	private void SetBubbleRvStatus(bool active) { }
+
+	// RVA: 0x2C609A0 Offset: 0x2C609A0 VA: 0x2C609A0
+	private void SetSpeedUpStatus(TableMergeItem itemConfig, StorageMergeItem boardItem) { }
+
+	// RVA: 0x2C62154 Offset: 0x2C62154 VA: 0x2C62154
+	private void SetAdSpeedUpStatus(int leftCD = 0) { }
+
+	// RVA: 0x2C5F968 Offset: 0x2C5F968 VA: 0x2C5F968
+	private void InitContentText(TableMergeItem itemConfig) { }
+
+	// RVA: 0x2C5DD30 Offset: 0x2C5DD30 VA: 0x2C5DD30
+	private void SetSellButtonActive(bool active) { }
+
+	// RVA: 0x2C6106C Offset: 0x2C6106C VA: 0x2C6106C
+	private ActiveCostType SetTimeStatus(TableMergeItem itemConfig) { }
+
+	// RVA: 0x2C5E9B0 Offset: 0x2C5E9B0 VA: 0x2C5E9B0
+	public void SetNoFocusStatus() { }
+
+	[IDTag(1)]
+	// RVA: 0x2C625E4 Offset: 0x2C625E4 VA: 0x2C625E4
+	public void OnSelectGrid() { }
+
+	// RVA: 0x2C62644 Offset: 0x2C62644 VA: 0x2C62644
+	private void OnClickSpeed() { }
+
+	// RVA: 0x2C6152C Offset: 0x2C6152C VA: 0x2C6152C
+	public void OnClickTime() { }
+
+	// RVA: 0x2C648AC Offset: 0x2C648AC VA: 0x2C648AC
+	private void ClickTime(int subTime = 0) { }
+
+	// RVA: 0x2C626A0 Offset: 0x2C626A0 VA: 0x2C626A0
+	public void OnSpeedUp(bool useRv = False) { }
+
+	// RVA: 0x2C64BA0 Offset: 0x2C64BA0 VA: 0x2C64BA0
+	private void SetSpeedStatus() { }
+
+	// RVA: 0x2C64F00 Offset: 0x2C64F00 VA: 0x2C64F00
+	private void OnClickTipsBtn() { }
+
+	// RVA: 0x2C6535C Offset: 0x2C6535C VA: 0x2C6535C
+	public void OnClickSell() { }
+
+	// RVA: 0x2C657A4 Offset: 0x2C657A4 VA: 0x2C657A4
+	private void SellItem() { }
+
+	// RVA: 0x2C65C04 Offset: 0x2C65C04 VA: 0x2C65C04
+	private void OnSellItem(int index) { }
+
+	// RVA: 0x2C65E5C Offset: 0x2C65E5C VA: 0x2C65E5C
+	private void SetUndoStatus() { }
+
+	// RVA: 0x2C66590 Offset: 0x2C66590 VA: 0x2C66590
+	private void UndoOperate() { }
+
+	// RVA: 0x2C5DFF0 Offset: 0x2C5DFF0 VA: 0x2C5DFF0
+	private void SetTipContentText(bool isInCd, string tex = "", bool isBubble = False, bool isIceCube = False) { }
+
+	// RVA: 0x2C66F48 Offset: 0x2C66F48 VA: 0x2C66F48
+	private void Invoke_SetBubbleCdTime() { }
+
+	// RVA: 0x2C67294 Offset: 0x2C67294 VA: 0x2C67294
+	private void Invoke_SetIceCubeCdTime() { }
+
+	// RVA: 0x2C67520 Offset: 0x2C67520 VA: 0x2C67520
+	private void Invoke_SetProductCdTime() { }
+
+	// RVA: 0x2C67860 Offset: 0x2C67860 VA: 0x2C67860
+	private void Invoke_OtherItemActiveStatus() { }
+
+	// RVA: 0x2C6798C Offset: 0x2C6798C VA: 0x2C6798C
+	private void Invoke_SetTimeProductCdTime() { }
+
+	[IteratorStateMachine(typeof(MergeClickTips.<SetBubbleDismiss>d__98))]
+	// RVA: 0x2C671D0 Offset: 0x2C671D0 VA: 0x2C671D0
+	private IEnumerator SetBubbleDismiss() { }
+
+	// RVA: 0x2C67D48 Offset: 0x2C67D48 VA: 0x2C67D48
+	private void Invoke_SetActiveCdTime() { }
+
+	// RVA: 0x2C6206C Offset: 0x2C6206C VA: 0x2C6206C
+	private bool IsOpenRv() { }
+
+	// RVA: 0x2C680A4 Offset: 0x2C680A4 VA: 0x2C680A4
+	private void OnDestroy() { }
+
+	// RVA: 0x2C662EC Offset: 0x2C662EC VA: 0x2C662EC
+	private void SendSellBI(int id) { }
+
+	// RVA: 0x2C66CD0 Offset: 0x2C66CD0 VA: 0x2C66CD0
+	private void SendUndoBI(int id) { }
+
+	// RVA: 0x2C64C80 Offset: 0x2C64C80 VA: 0x2C64C80
+	private void SendBubbleOpen(int id, string biType) { }
+
+	// RVA: 0x2C68220 Offset: 0x2C68220 VA: 0x2C68220
+	private void OnApplicationFocus(bool hasFocus) { }
+
+	// RVA: 0x2C68274 Offset: 0x2C68274 VA: 0x2C68274
+	private void OnApplicationPause(bool pauseStatus) { }
+
+	// RVA: 0x2C684E8 Offset: 0x2C684E8 VA: 0x2C684E8
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C68500 Offset: 0x2C68500 VA: 0x2C68500
+	private void <Awake>b__52_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C68668 Offset: 0x2C68668 VA: 0x2C68668
+	private void <Awake>b__52_1() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C687D4 Offset: 0x2C687D4 VA: 0x2C687D4
+	private void <Awake>b__52_2(bool s) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C687E4 Offset: 0x2C687E4 VA: 0x2C687E4
+	private bool <Awake>b__52_3() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C68810 Offset: 0x2C68810 VA: 0x2C68810
+	private void <Awake>b__52_4() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C688BC Offset: 0x2C688BC VA: 0x2C688BC
+	private void <Awake>b__52_5(bool s) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C688CC Offset: 0x2C688CC VA: 0x2C688CC
+	private bool <Awake>b__52_6() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C688D4 Offset: 0x2C688D4 VA: 0x2C688D4
+	private void <Awake>b__52_7() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C68980 Offset: 0x2C68980 VA: 0x2C68980
+	private void <RefreshEatBuildView>b__59_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C68A24 Offset: 0x2C68A24 VA: 0x2C68A24
+	private void <RefreshEatBuildView>b__59_1() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C68AC8 Offset: 0x2C68AC8 VA: 0x2C68AC8
+	private void <Thumbtack>b__68_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C68D1C Offset: 0x2C68D1C VA: 0x2C68D1C
+	private void <BreakIce>b__69_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C68F70 Offset: 0x2C68F70 VA: 0x2C68F70
+	private void <OnSpeedUp>b__84_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C69030 Offset: 0x2C69030 VA: 0x2C69030
+	private void <OnClickSell>b__87_0() { }
+}
+

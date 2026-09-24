@@ -1,0 +1,11 @@
+// Namespace: 
+public struct EntityUpdateEvent.CalculateEnergyChange : IEvent // TypeDefIndex: 2660
+{
+	// Fields
+	public int ChangeAmount; // 0x0
+	public bool MakeImpactAnim; // 0x4
+	public bool Meta; // 0x5
+	public bool IsEventEnergy; // 0x6
+	public int EventIndex; // 0x8
+}
+

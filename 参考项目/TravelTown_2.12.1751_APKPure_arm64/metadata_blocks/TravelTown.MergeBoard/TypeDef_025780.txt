@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class TimeCycleSystem.<>c // TypeDefIndex: 25780
+{
+	// Fields
+	public static readonly TimeCycleSystem.<>c <>9; // 0x0
+	public static Func<ValueTuple<Entity, TimeCycleComponent>, bool> <>9__1_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x6A77370 Offset: 0x6A73370 VA: 0x6A77370
+	private static void .cctor() { }
+
+	// RVA: 0x6A773D8 Offset: 0x6A733D8 VA: 0x6A773D8
+	public void .ctor() { }
+
+	// RVA: 0x6A773E0 Offset: 0x6A733E0 VA: 0x6A773E0
+	internal bool <Tick>b__1_0(ValueTuple<Entity, TimeCycleComponent> entity) { }
+}
+

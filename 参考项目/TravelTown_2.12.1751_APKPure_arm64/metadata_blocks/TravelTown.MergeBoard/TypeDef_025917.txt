@@ -1,0 +1,14 @@
+// Namespace: Merger.MergeBoard.Data
+[Serializable]
+public class BlockerItemConfiguration // TypeDefIndex: 25917
+{
+	// Fields
+	public string Name; // 0x10
+	public BlockerItemView BlockerAsset; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A99F94 Offset: 0x6A95F94 VA: 0x6A99F94
+	public void .ctor() { }
+}
+

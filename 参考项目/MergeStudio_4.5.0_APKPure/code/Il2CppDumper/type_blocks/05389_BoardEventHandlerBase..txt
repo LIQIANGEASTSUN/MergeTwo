@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+private struct BoardEventHandlerBase.<CheckAndDownloadRequiredRunningConfigAddressable>d__16 : IAsyncStateMachine // TypeDefIndex: 5389
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncUniTaskMethodBuilder<bool> <>t__builder; // 0x4
+	public BoardEventHandlerBase <>4__this; // 0x10
+	private EventBoardConfigItem <runningConfig>5__2; // 0x14
+	private AddressableDownloader <downloader>5__3; // 0x18
+	private bool <isSuccess>5__4; // 0x1C
+	private UniTask.Awaiter <>u__1; // 0x20
+	private UniTask.Awaiter<bool> <>u__2; // 0x28
+	private YieldAwaitable.Awaiter <>u__3; // 0x30
+
+	// Methods
+
+	// RVA: 0x1EB61C4 Offset: 0x1EB61C4 VA: 0x1EB61C4 Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x1EB6F00 Offset: 0x1EB6F00 VA: 0x1EB6F00 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

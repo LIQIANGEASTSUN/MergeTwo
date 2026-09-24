@@ -1,0 +1,37 @@
+// Namespace: Framework.Core.MVVM.View
+public class ViewBase<TViewModel> : ViewComponent // TypeDefIndex: 11216
+{
+	// Fields
+	[Inject]
+	private TViewModel _viewModel; // 0x0
+
+	// Properties
+	protected TViewModel ViewModel { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	protected TViewModel get_ViewModel() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4931D30 Offset: 0x492DD30 VA: 0x4931D30
+	|-ViewBase<object>.get_ViewModel
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 7
+	protected virtual void OnDestroy() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4931D38 Offset: 0x492DD38 VA: 0x4931D38
+	|-ViewBase<object>.OnDestroy
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4931D7C Offset: 0x492DD7C VA: 0x4931D7C
+	|-ViewBase<object>..ctor
+	*/
+}
+

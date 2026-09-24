@@ -1,0 +1,11 @@
+// Namespace: MergeEngine.Configuration.Definitions
+[Serializable]
+public enum CollectableType // TypeDefIndex: 1297
+{
+	// Fields
+	public int value__; // 0x0
+	public const CollectableType None = 0;
+	public const CollectableType Rewards = 1;
+	public const CollectableType PlaygroundPoints = 2;
+}
+

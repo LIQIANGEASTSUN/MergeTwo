@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ViewModelBase.<>c // TypeDefIndex: 11213
+{
+	// Fields
+	public static readonly ViewModelBase.<>c <>9; // 0x0
+	public static Action<Exception> <>9__9_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x694BDD8 Offset: 0x6947DD8 VA: 0x694BDD8
+	private static void .cctor() { }
+
+	// RVA: 0x694BE40 Offset: 0x6947E40 VA: 0x694BE40
+	public void .ctor() { }
+
+	// RVA: 0x694BE48 Offset: 0x6947E48 VA: 0x694BE48
+	internal void <InstantiatePrefab>b__9_0(Exception e) { }
+}
+

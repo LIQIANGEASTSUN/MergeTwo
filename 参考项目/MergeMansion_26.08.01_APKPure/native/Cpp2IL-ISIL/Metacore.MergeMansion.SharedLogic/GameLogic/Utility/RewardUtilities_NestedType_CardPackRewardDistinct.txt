@@ -1,0 +1,30 @@
+Type: GameLogic.Utility.RewardUtilities+CardPackRewardDistinct
+
+Method: System.Void .ctor(GameLogic.CardCollection.CardCollectionPackId packId, CurrencySource source)
+
+Disassembly:
+	0x033937D0 B 0x239B888
+	0x033937D4 LDR X0, [X0 + 0x88]
+	0x033937D8 RET
+	0x033937DC STR X1, [X0 + 0x88]!
+	0x033937E0 B 0x239B888
+	0x033937E4 LDR X0, [X0 + 0x90]
+	0x033937E8 RET
+	0x033937EC STR X1, [X0 + 0x90]!
+	0x033937F0 B 0x239B888
+	0x033937F4 LDR X0, [X0 + 0x98]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move W19, W2
+	005 Move X20, X0
+	006 Move [X0], X1
+	007 Call 0x239F888
+	008 Move [X20+8], W19
+	009 Move X20, [X31+16]
+	010 Move X19, [X31+24]
+	011 Move X30, [X31+32]
+	012 Return 
+

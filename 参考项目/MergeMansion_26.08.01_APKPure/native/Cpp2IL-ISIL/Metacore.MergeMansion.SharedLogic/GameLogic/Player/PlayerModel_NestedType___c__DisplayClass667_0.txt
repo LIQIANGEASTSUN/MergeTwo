@@ -1,0 +1,36 @@
+Type: GameLogic.Player.PlayerModel+<>c__DisplayClass667_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03574508 MOV X0, X21
+	0x0357450C BL 0x272D0E8
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <TryGetScriptedEvent>b__0(GameLogic.Player.Director.ScriptedEvent ev)
+
+Disassembly:
+	0x0357ACDC LDRH W9, [X9]
+	0x0357ACE0 B 0x357ACE8
+	0x0357ACE4 MOV X0, X8
+	0x0357ACE8 LDR X10, [X0 + 0xC0]
+	0x0357ACEC ADRP X21, 0x2154000
+	0x0357ACF0 LDR X10, [X10 + 0x10]
+	0x0357ACF4 LDR X21, [X21 + 0x6D0]
+	0x0357ACF8 LDR W20, [X10 + 0xFC]
+
+ISIL:
+	001 Compare X1, 0
+	002 JumpIfEqual {8}
+	003 Move W8, [X1+16]
+	004 Move W9, [X0+16]
+	005 NotImplemented "Instruction CMP not yet implemented."
+	006 NotImplemented "Instruction CSET not yet implemented."
+	007 Return X0
+	008 Move [X31-16], X30
+	009 Call 0x239FB90
+

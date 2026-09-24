@@ -1,0 +1,83 @@
+// Namespace: MergeEngine.Signal.Items
+public class ItemQueuedSignal // TypeDefIndex: 226
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly IItem <Item>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly Vector2 <Position>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private readonly bool <Animate>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private readonly ItemQueuedAnalytics <AnalyticsObject>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private readonly IRewardViewData <RewardItemMultiple>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private readonly Func<GameObject> <GetPrefabInstance>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private readonly Func<FlyingIconView, InstantiateAndSlideIconsAnimationSettings, Tween> <OverrideTween>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private readonly bool <ActivateQueueAfterAnimation>k__BackingField; // 0x48
+	[CompilerGenerated]
+	private readonly bool <SlideBoardItemToQueue>k__BackingField; // 0x49
+	[CompilerGenerated]
+	private readonly InstantiateAndSlideIconsAnimationSettings <AnimationSettings>k__BackingField; // 0x50
+
+	// Properties
+	public IItem Item { get; }
+	public Vector2 Position { get; }
+	public bool Animate { get; }
+	public ItemQueuedAnalytics AnalyticsObject { get; }
+	public IRewardViewData RewardItemMultiple { get; }
+	public Func<GameObject> GetPrefabInstance { get; }
+	public Func<FlyingIconView, InstantiateAndSlideIconsAnimationSettings, Tween> OverrideTween { get; }
+	public bool ActivateQueueAfterAnimation { get; }
+	public bool SlideBoardItemToQueue { get; }
+	public InstantiateAndSlideIconsAnimationSettings AnimationSettings { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5FF38BC Offset: 0x5FEF8BC VA: 0x5FF38BC
+	public IItem get_Item() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF38C4 Offset: 0x5FEF8C4 VA: 0x5FF38C4
+	public Vector2 get_Position() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF38CC Offset: 0x5FEF8CC VA: 0x5FF38CC
+	public bool get_Animate() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF38D4 Offset: 0x5FEF8D4 VA: 0x5FF38D4
+	public ItemQueuedAnalytics get_AnalyticsObject() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF38DC Offset: 0x5FEF8DC VA: 0x5FF38DC
+	public IRewardViewData get_RewardItemMultiple() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF38E4 Offset: 0x5FEF8E4 VA: 0x5FF38E4
+	public Func<GameObject> get_GetPrefabInstance() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF38EC Offset: 0x5FEF8EC VA: 0x5FF38EC
+	public Func<FlyingIconView, InstantiateAndSlideIconsAnimationSettings, Tween> get_OverrideTween() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF38F4 Offset: 0x5FEF8F4 VA: 0x5FF38F4
+	public bool get_ActivateQueueAfterAnimation() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF38FC Offset: 0x5FEF8FC VA: 0x5FF38FC
+	public bool get_SlideBoardItemToQueue() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3904 Offset: 0x5FEF904 VA: 0x5FF3904
+	public InstantiateAndSlideIconsAnimationSettings get_AnimationSettings() { }
+
+	// RVA: 0x5FF390C Offset: 0x5FEF90C VA: 0x5FF390C
+	public void .ctor(IItem item, Vector2 position, bool animate, ItemQueuedAnalytics analyticsObject, IRewardViewData rewardItemMultiple, bool slideBoardItemToQueue, Func<GameObject> getPrefabInstance, Func<FlyingIconView, InstantiateAndSlideIconsAnimationSettings, Tween> overrideTween, bool activateQueueAfterAnimation = False, InstantiateAndSlideIconsAnimationSettings animationSettings) { }
+}
+

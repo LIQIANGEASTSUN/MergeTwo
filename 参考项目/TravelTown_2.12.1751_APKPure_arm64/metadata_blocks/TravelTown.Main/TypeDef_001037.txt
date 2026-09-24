@@ -1,0 +1,17 @@
+// Namespace: MergeEngine.ECS.Components.Player
+public class PlayerProgressionComponent : ComponentBase // TypeDefIndex: 1037
+{
+	// Fields
+	public const string Key = "playerProgression";
+	public MutableBindableProperty<float> LevelProgress; // 0x20
+	public MutableBindableProperty<int> Level; // 0x28
+	public MutableBindableProperty<int> LastOpenSection; // 0x30
+	public MutableBindableProperty<float> EventLevelProgress; // 0x38
+	public MutableBindableProperty<int> EventLevel; // 0x40
+
+	// Methods
+
+	// RVA: 0x68FA0CC Offset: 0x68F60CC VA: 0x68FA0CC
+	public void .ctor(Entity entity) { }
+}
+

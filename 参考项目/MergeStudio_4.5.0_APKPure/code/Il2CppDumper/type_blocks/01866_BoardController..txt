@@ -1,0 +1,18 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardController.<>c__DisplayClass136_0 // TypeDefIndex: 1866
+{
+	// Fields
+	public Coordinate boardIndex; // 0x8
+	public UniTask.Awaiter<ItemController> task; // 0x10
+	public BoardController <>4__this; // 0x1C
+
+	// Methods
+
+	// RVA: 0x19182EC Offset: 0x19182EC VA: 0x19182EC
+	public void .ctor() { }
+
+	// RVA: 0x19182F4 Offset: 0x19182F4 VA: 0x19182F4
+	internal void <InitializeBoard>b__0() { }
+}
+

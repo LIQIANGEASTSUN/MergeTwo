@@ -1,0 +1,13 @@
+// Namespace: MergeEngine.ECS.Components.Items
+[Serializable]
+public class SerializedChargableComponent // TypeDefIndex: 1050
+{
+	// Fields
+	public int CurrentState; // 0x10
+
+	// Methods
+
+	// RVA: 0x68FBA04 Offset: 0x68F7A04 VA: 0x68FBA04
+	public void .ctor() { }
+}
+

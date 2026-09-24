@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeConfigManager.<>c__DisplayClass42_0 // TypeDefIndex: 2769
+{
+	// Fields
+	public int id; // 0x8
+
+	// Methods
+
+	// RVA: 0x2C3C1F8 Offset: 0x2C3C1F8 VA: 0x2C3C1F8
+	public void .ctor() { }
+
+	// RVA: 0x2C3D350 Offset: 0x2C3D350 VA: 0x2C3D350
+	internal bool <GetMergeLine>b__0(TableMergeLine x) { }
+}
+

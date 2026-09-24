@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemChainManager.<>c__DisplayClass59_0 // TypeDefIndex: 1738
+{
+	// Fields
+	public int setID; // 0x8
+	public Predicate<KiteSpawnerBackupItem.KiteBackupSpawnerModel> <>9__0; // 0xC
+
+	// Methods
+
+	// RVA: 0x190CC8C Offset: 0x190CC8C VA: 0x190CC8C
+	public void .ctor() { }
+
+	// RVA: 0x190FEC0 Offset: 0x190FEC0 VA: 0x190FEC0
+	internal bool <CurrentRequiredLevelForSpawner>b__0(KiteSpawnerBackupItem.KiteBackupSpawnerModel s) { }
+}
+

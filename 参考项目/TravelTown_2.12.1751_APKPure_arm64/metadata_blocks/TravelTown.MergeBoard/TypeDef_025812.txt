@@ -1,0 +1,48 @@
+// Namespace: Merger.MergeBoard.Models
+public class MergeBoardModel : IMergeBoardModel // TypeDefIndex: 25812
+{
+	// Fields
+	private readonly EntitiesManager _entitiesManager; // 0x10
+	[CompilerGenerated]
+	private bool <IsInitialized>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private long <LastBoardTimeSyncTimestamp>k__BackingField; // 0x20
+
+	// Properties
+	internal EntitiesManager EntitiesManager { get; }
+	public IEntitiesHolder BoardState { get; }
+	public IEnumerable<Entity> Entities { get; }
+	public bool IsInitialized { get; set; }
+	public long LastBoardTimeSyncTimestamp { get; set; }
+
+	// Methods
+
+	// RVA: 0x6A7D948 Offset: 0x6A79948 VA: 0x6A7D948
+	internal EntitiesManager get_EntitiesManager() { }
+
+	// RVA: 0x6A7D950 Offset: 0x6A79950 VA: 0x6A7D950 Slot: 4
+	public IEntitiesHolder get_BoardState() { }
+
+	// RVA: 0x6A7D958 Offset: 0x6A79958 VA: 0x6A7D958 Slot: 5
+	public IEnumerable<Entity> get_Entities() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A7D9F8 Offset: 0x6A799F8 VA: 0x6A7D9F8 Slot: 6
+	public bool get_IsInitialized() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A7DA00 Offset: 0x6A79A00 VA: 0x6A7DA00 Slot: 7
+	public void set_IsInitialized(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A7DA0C Offset: 0x6A79A0C VA: 0x6A7DA0C Slot: 8
+	public long get_LastBoardTimeSyncTimestamp() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A7DA14 Offset: 0x6A79A14 VA: 0x6A7DA14 Slot: 9
+	public void set_LastBoardTimeSyncTimestamp(long value) { }
+
+	// RVA: 0x6A7DA1C Offset: 0x6A79A1C VA: 0x6A7DA1C
+	public void .ctor() { }
+}
+

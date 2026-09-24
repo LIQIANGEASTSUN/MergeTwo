@@ -1,0 +1,39 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardController.<SendSaveBoardEvent>d__279 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 1900
+{
+	// Fields
+	private int <>1__state; // 0x8
+	private object <>2__current; // 0xC
+	public BoardController <>4__this; // 0x10
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHidden]
+	// RVA: 0x1924C7C Offset: 0x1924C7C VA: 0x1924C7C
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHidden]
+	// RVA: 0x1924C98 Offset: 0x1924C98 VA: 0x1924C98 Slot: 5
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x1924C9C Offset: 0x1924C9C VA: 0x1924C9C Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x1924D18 Offset: 0x1924D18 VA: 0x1924D18 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHidden]
+	// RVA: 0x1924D20 Offset: 0x1924D20 VA: 0x1924D20 Slot: 8
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHidden]
+	// RVA: 0x1924D64 Offset: 0x1924D64 VA: 0x1924D64 Slot: 7
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+

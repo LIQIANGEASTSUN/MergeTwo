@@ -1,0 +1,13 @@
+// Namespace: 
+private class MergeConfigManager.ConfigTemplate // TypeDefIndex: 2765
+{
+	// Fields
+	public List<TableMergeItem> ItemConfig; // 0x8
+	public List<TableBoardGrid> BoardGrid; // 0xC
+
+	// Methods
+
+	// RVA: 0x2C3D220 Offset: 0x2C3D220 VA: 0x2C3D220
+	public void .ctor() { }
+}
+

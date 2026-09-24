@@ -1,0 +1,41 @@
+Type: GameLogic.Config.MergeMansionGameConfigExtensions+<>c__DisplayClass3_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x033D0B58 STP X20, X19, [X31 + 0x70]
+	0x033D0B5C ADRP X28, 0x234D000
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <LookupChain>b__0(GameLogic.MergeChains.MergeChainDefinition chain)
+
+Disassembly:
+	0x033D0EE0 ADD X0, X19, 0x7C0
+	0x033D0EE4 BL 0x239B888
+	0x033D0EE8 MOV X0, X19
+	0x033D0EEC BL 0x33DBE70
+	0x033D0EF0 MOV X1, X0
+	0x033D0EF4 STR X0, [X19 + 0x7D0]
+	0x033D0EF8 ADD X0, X19, 0x7D0
+	0x033D0EFC BL 0x239B888
+	0x033D0F00 MOV X0, X19
+	0x033D0F04 BL 0x33DC494
+
+ISIL:
+	001 Move [X31-16], X30
+	002 Move W8, [X0+16]
+	003 Move X0, X1
+	004 Move X2, X31
+	005 Move W1, W8
+	006 Call MergeChainDefinitionExtensions.GetItemIndex, X0, X1
+	007 NotImplemented "Instruction ORN not yet implemented."
+	008 Move W0, W8
+	009 ShiftRight W0, 31
+	010 And W0, W0, 0x7FFFFFFF
+	011 Move X30, [X31+16]
+	012 Return X0
+

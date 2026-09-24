@@ -1,0 +1,24 @@
+// Namespace: Merger.MergeBoard.PowerBoost.Actions
+public class PowerBoostChangedAction // TypeDefIndex: 32811
+{
+	// Fields
+	[CompilerGenerated]
+	private int <BoostMode>k__BackingField; // 0x10
+
+	// Properties
+	public int BoostMode { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6AD4BE0 Offset: 0x6AD0BE0 VA: 0x6AD4BE0
+	public int get_BoostMode() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6AD4BE8 Offset: 0x6AD0BE8 VA: 0x6AD4BE8
+	public void set_BoostMode(int value) { }
+
+	// RVA: 0x6ACC638 Offset: 0x6AC8638 VA: 0x6ACC638
+	public void .ctor() { }
+}
+

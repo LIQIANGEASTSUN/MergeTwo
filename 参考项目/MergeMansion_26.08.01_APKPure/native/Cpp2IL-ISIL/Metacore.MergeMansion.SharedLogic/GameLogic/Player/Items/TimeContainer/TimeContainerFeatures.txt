@@ -1,0 +1,179 @@
+Type: GameLogic.Player.Items.TimeContainer.TimeContainerFeatures
+
+Method: GameLogic.Config.Types.MetacoreDuration GameLogic.Player.Items.TimeContainer.ITimeContainerFeatures.get_DefaultInitialTime()
+
+Disassembly:
+	0x036010BC LDR W9, [X23 + 0x70]
+	0x036010C0 B 0x36010C8
+	0x036010C4 LDR W9, [X8 + 0x20]
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Move X1, X31
+	003 Call MetaDurationExtensions.ToMetacoreDuration, X0
+	004 Return X0
+
+Method: System.Boolean get_StoresTime()
+
+Disassembly:
+	0x036010C8 ADDS W31, W9, 0x1
+	0x036010CC B.EQ 0x36010DC
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_StoresTime(System.Boolean value)
+
+Disassembly:
+	0x036010D0 LDR W10, [X23 + 0x10]
+	0x036010D4 CMP W10, W9
+
+ISIL:
+	001 Move [X0+16], W1
+	002 Return 
+
+Method: Metaplay.Core.MetaDuration get_DefaultInitialTime()
+
+Disassembly:
+	0x036010D8 B.GE 0x3601130
+	0x036010DC LDP W9, W10, [X23 + 0x10]
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_DefaultInitialTime(Metaplay.Core.MetaDuration value)
+
+Disassembly:
+	0x036010E0 ADRP X24, 0x20D3000
+	0x036010E4 LDR X24, [X24 + 0x8A8]
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Return 
+
+Method: GameLogic.Player.Items.TimeContainer.TimeContainerMergeBehavior get_MergeBehavior()
+
+Disassembly:
+	0x036010E8 ORR W9, W9, W10, 0x0
+	0x036010EC CBNZ W9, 0x360110C
+
+ISIL:
+	001 Move W0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_MergeBehavior(GameLogic.Player.Items.TimeContainer.TimeContainerMergeBehavior value)
+
+Disassembly:
+	0x036010F0 LDR W9, [X0 + 0xE4]
+	0x036010F4 CBNZ W9, 0x3601104
+
+ISIL:
+	001 Move [X0+32], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x036010F8 BL 0x239BA64
+	0x036010FC LDR X8, [X25]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .cctor()
+
+Disassembly:
+	0x03601100 LDR X8, [X8 + 0xB8]
+	0x03601104 LDR X23, [X8 + 0x8]
+	0x03601108 B 0x360114C
+	0x0360110C LDR W9, [X0 + 0xE4]
+	0x03601110 CMP W10, 0x1
+	0x03601114 B.LT 0x3601138
+	0x03601118 CBNZ W9, 0x3601128
+	0x0360111C BL 0x239BA64
+	0x03601120 LDR X8, [X25]
+	0x03601124 LDR X8, [X8 + 0xB8]
+	0x03601128 LDR X23, [X8]
+	0x0360112C B 0x360114C
+	0x03601130 STP X31, X31, [X31 + 0x18]
+	0x03601134 B 0x3601360
+	0x03601138 CBNZ W9, 0x3601148
+	0x0360113C BL 0x239BA64
+	0x03601140 LDR X8, [X25]
+	0x03601144 LDR X8, [X8 + 0xB8]
+	0x03601148 LDR X23, [X8 + 0x10]
+	0x0360114C LDR X0, [X24]
+	0x03601150 STR X23, [X31 + 0x10]
+	0x03601154 LDR W8, [X0 + 0xE4]
+	0x03601158 CBNZ W8, 0x3601160
+	0x0360115C BL 0x239BA64
+	0x03601160 MOV X0, X31
+	0x03601164 BL 0x414F9B8
+	0x03601168 MOV X1, X0
+	0x0360116C MOV X0, X22
+	0x03601170 MOV X2, X31
+	0x03601174 BL 0x4150164
+	0x03601178 MOV W8, W0
+	0x0360117C LDR X0, [X24]
+	0x03601180 LDR W9, [X0 + 0xE4]
+	0x03601184 TBZ X8, 0x0, 0x3601230
+	0x03601188 CBNZ W9, 0x3601190
+	0x0360118C BL 0x239BA64
+	0x03601190 ADD X0, X31, 0x10
+	0x03601194 MOV X1, X31
+	0x03601198 BL 0x414FDE8
+	0x0360119C ADRP X22, 0x20E1000
+	0x036011A0 MOV X20, X0
+	0x036011A4 LDR X22, [X22 + 0xBB0]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move W8, [0x272CB28]
+	005 Move X20, [0x2133988]
+	006 Move TEMP, X8
+	007 And TEMP, TEMP, 1
+	008 Compare TEMP, 1
+	009 JumpIfEqual {16}
+	010 Move X0, [0x20D78A8]
+	011 Call 0x239F8E4
+	012 Move X0, [0x2133988]
+	013 Call 0x239F8E4
+	014 Move W8, 1
+	015 Move [X19+2856], W8
+	016 Move X0, [X20]
+	017 Call 0x239FB80
+	018 Move X1, X31
+	019 Move X19, X0
+	020 Call Object..ctor, X0
+	021 Compare X19, 0
+	022 JumpIfEqual {45}
+	023 Move X8, [0x20D78A8]
+	024 Move [X19+16], W31
+	025 Move X0, [X8]
+	026 Move W8, [X0+228]
+	027 Compare W8, 0
+	028 JumpIfNotEqual {30}
+	029 Call 0x239FA64
+	030 Move X0, X31
+	031 Call MetaDuration.get_Zero
+	032 Move X8, [X20]
+	033 Move [X19+24], X0
+	034 Move X1, X19
+	035 Move [X19+32], W31
+	036 Move X8, [X8+184]
+	037 Move [X8], X19
+	038 Move X8, [X20]
+	039 Move X20, [X31+16]
+	040 Move X19, [X31+24]
+	041 Move X0, [X8+184]
+	042 Move X30, [X31+32]
+	043 Call 0x239F888
+	044 Return 
+	045 Call 0x239FB90
+

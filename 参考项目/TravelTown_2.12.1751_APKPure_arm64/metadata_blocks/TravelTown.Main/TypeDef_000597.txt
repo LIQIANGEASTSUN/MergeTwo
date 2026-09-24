@@ -1,0 +1,18 @@
+// Namespace: MergeEngine.ECS.Util
+public static class BoardItemUtil // TypeDefIndex: 597
+{
+	// Methods
+
+	// RVA: 0x626ECD4 Offset: 0x626ACD4 VA: 0x626ECD4
+	public static Nullable<int> GetBoardItemIndex(PositionComponent positionComponent) { }
+
+	// RVA: 0x626ED48 Offset: 0x626AD48 VA: 0x626ED48
+	public static PositionComponent GetPositionItemClosestToInventory(ReadOnlyCollection<PositionComponent> boardItems, IMergingConfigurationModel mergingConfigurationModel) { }
+
+	// RVA: 0x626EFD0 Offset: 0x626AFD0 VA: 0x626EFD0
+	public static bool CanMergeAnyItemOnly(MergeComponent firstMerge, MergeComponent secondMerge, IMergingConfigurationModel _mergingConfigurationModel) { }
+
+	// RVA: 0x626F334 Offset: 0x626B334 VA: 0x626F334
+	public static bool CanMergeSpecificItem(MergeComponent firstMerge, MergeComponent secondMerge, IMergingConfigurationModel _mergingConfigurationModel) { }
+}
+

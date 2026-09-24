@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BoardEvent.UpdateScrollableAreaScrolltatus : IEvent // TypeDefIndex: 1787
+{
+	// Fields
+	public bool Scrollable; // 0x0
+}
+

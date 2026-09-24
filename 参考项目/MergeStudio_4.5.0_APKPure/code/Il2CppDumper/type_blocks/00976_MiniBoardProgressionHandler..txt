@@ -1,0 +1,33 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class MiniBoardProgressionHandler.<>c // TypeDefIndex: 976
+{
+	// Fields
+	public static readonly MiniBoardProgressionHandler.<>c <>9; // 0x0
+	public static Func<MiniBoardPositionEntity, MiniBoardItemEntity> <>9__51_1; // 0x4
+	public static Func<MiniBoardRewardEntity, <>f__AnonymousType0<int, int>> <>9__63_0; // 0x8
+	public static Func<IGrouping<<>f__AnonymousType0<int, int>, MiniBoardRewardEntity>, <>f__AnonymousType0<int, int>> <>9__63_1; // 0xC
+	public static Func<IGrouping<<>f__AnonymousType0<int, int>, MiniBoardRewardEntity>, List<MiniBoardRewardEntity>> <>9__63_2; // 0x10
+
+	// Methods
+
+	// RVA: 0x17992A0 Offset: 0x17992A0 VA: 0x17992A0
+	private static void .cctor() { }
+
+	// RVA: 0x1799314 Offset: 0x1799314 VA: 0x1799314
+	public void .ctor() { }
+
+	// RVA: 0x179931C Offset: 0x179931C VA: 0x179931C
+	internal MiniBoardItemEntity <TryProcessBoardLevelUp>b__51_1(MiniBoardPositionEntity position) { }
+
+	// RVA: 0x1799338 Offset: 0x1799338 VA: 0x1799338
+	internal <>f__AnonymousType0<int, int> <GetCurrencyConversionCollectableReward>b__63_0(MiniBoardRewardEntity reward) { }
+
+	// RVA: 0x17993D4 Offset: 0x17993D4 VA: 0x17993D4
+	internal <>f__AnonymousType0<int, int> <GetCurrencyConversionCollectableReward>b__63_1(IGrouping<<>f__AnonymousType0<int, int>, MiniBoardRewardEntity> group) { }
+
+	// RVA: 0x1799488 Offset: 0x1799488 VA: 0x1799488
+	internal List<MiniBoardRewardEntity> <GetCurrencyConversionCollectableReward>b__63_2(IGrouping<<>f__AnonymousType0<int, int>, MiniBoardRewardEntity> group) { }
+}
+

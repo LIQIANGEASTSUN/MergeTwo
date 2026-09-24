@@ -1,0 +1,29 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class SpawnerSystem.<>c // TypeDefIndex: 25771
+{
+	// Fields
+	public static readonly SpawnerSystem.<>c <>9; // 0x0
+	public static Func<ValueTuple<Entity, SpawnerComponent, TimeCycleComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>, bool> <>9__3_0; // 0x8
+	public static Func<ValueTuple<Entity, BoardTilePositionComponent, SpawnerComponent, IdComponent, TimeCycleComponent, InteractionComponent, PendingInteractionComponent>, bool> <>9__4_0; // 0x10
+	public static Func<ValueTuple<Entity, BoardTilePositionComponent, IdComponent>, int> <>9__5_0; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A75334 Offset: 0x6A71334 VA: 0x6A75334
+	private static void .cctor() { }
+
+	// RVA: 0x6A7539C Offset: 0x6A7139C VA: 0x6A7539C
+	public void .ctor() { }
+
+	// RVA: 0x6A753A4 Offset: 0x6A713A4 VA: 0x6A753A4
+	internal bool <Tick>b__3_0(ValueTuple<Entity, SpawnerComponent, TimeCycleComponent, BoardTilePositionComponent, IdComponent, InteractionComponent> entity) { }
+
+	// RVA: 0x6A753C4 Offset: 0x6A713C4 VA: 0x6A753C4
+	internal bool <HandleSpawnByTap>b__4_0(ValueTuple<Entity, BoardTilePositionComponent, SpawnerComponent, IdComponent, TimeCycleComponent, InteractionComponent, PendingInteractionComponent> entity) { }
+
+	// RVA: 0x6A753E4 Offset: 0x6A713E4 VA: 0x6A753E4
+	internal int <HandleSpawnByTick>b__5_0(ValueTuple<Entity, BoardTilePositionComponent, IdComponent> e) { }
+}
+

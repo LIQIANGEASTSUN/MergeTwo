@@ -1,0 +1,14 @@
+// Namespace: Merger.Boosters.Declarations.Capabilities
+[Serializable]
+public class ActivationCapability : CapabilityBase // TypeDefIndex: 7852
+{
+	// Fields
+	[JsonProperty("boosterType")]
+	public BoosterType BoosterType; // 0x14
+
+	// Methods
+
+	// RVA: 0x65C95FC Offset: 0x65C55FC VA: 0x65C95FC
+	public void .ctor() { }
+}
+

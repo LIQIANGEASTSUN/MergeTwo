@@ -1,0 +1,41 @@
+// Namespace: MergeEngine.Configuration
+[BakedConfiguration("Assets/Configuration/LocalMergeItemsConfig.asset", "Assets/Scripts/MergeEngine/Configuration/Baked/BakedLocalMergeItemsConfig.cs")]
+[CreateAssetMenu(fileName = "LocalMergeItemsConfig", menuName = "Game/Local Merge Items Config")]
+public sealed class LocalMergeItemsConfig : SerializedScriptableObject // TypeDefIndex: 1181
+{
+	// Fields
+	[ConstructorParameter(1)]
+	[JsonProperty("localItemNames")]
+	[SerializeField]
+	private List<string> _localItemNames; // 0x58
+	[SerializeField]
+	private string _prefix; // 0x60
+	private HashSet<string> _localItemNamesHashSet; // 0x68
+
+	// Properties
+	private HashSet<string> LocalItemNamesHashSet { get; }
+
+	// Methods
+
+	// RVA: 0x6912D04 Offset: 0x690ED04 VA: 0x6912D04
+	private HashSet<string> get_LocalItemNamesHashSet() { }
+
+	// RVA: 0x6912D9C Offset: 0x690ED9C VA: 0x6912D9C
+	public void .ctor(List<string> localItemNames) { }
+
+	// RVA: 0x6912E68 Offset: 0x690EE68 VA: 0x6912E68
+	private void OnEnable() { }
+
+	// RVA: 0x6912F4C Offset: 0x690EF4C VA: 0x6912F4C
+	public bool IsLocalItem(string itemName) { }
+
+	// RVA: 0x6912FA8 Offset: 0x690EFA8 VA: 0x6912FA8
+	public ReadOnlyCollection<string> GetLocalItemNames() { }
+
+	// RVA: 0x6912E6C Offset: 0x690EE6C VA: 0x6912E6C
+	private void ValidatePrefixes() { }
+
+	// RVA: 0x6912FF8 Offset: 0x690EFF8 VA: 0x6912FF8
+	public string MakeTextureName(string texName) { }
+}
+

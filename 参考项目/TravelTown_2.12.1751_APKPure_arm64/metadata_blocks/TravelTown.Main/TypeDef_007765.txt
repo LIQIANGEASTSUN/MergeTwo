@@ -1,0 +1,150 @@
+// Namespace: Merger.Boosters.Services
+public class BoosterService : ServiceBase, IBoosterService // TypeDefIndex: 7765
+{
+	// Fields
+	[Inject]
+	private IEntityManager _entityManager; // 0x28
+	[Inject]
+	private IBoosterModel _boosterModel; // 0x30
+	[Inject]
+	private IBoosterRemoteService _boosterRemoteService; // 0x38
+	[Inject]
+	private IServerTimeService _serverTimeService; // 0x40
+	[Inject]
+	private INotificationDataFactory _notificationDataFactory; // 0x48
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x50
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0x58
+	[Inject]
+	private IRemoteServerStatesService _remoteServerStatesService; // 0x60
+	[Inject]
+	private ISystemManager _systemManager; // 0x68
+	[Inject]
+	private IOperationTrackingService _operationTrackingService; // 0x70
+	[Inject]
+	private IBoosterController[] _boosterControllers; // 0x78
+	[Inject]
+	private IUserProfileService _userProfileService; // 0x80
+	private BoardSystem _boardSystem; // 0x88
+	private RewardsSystem _rewardsSystem; // 0x90
+	private BoosterBoardSystem _boosterBoardSystem; // 0x98
+	private BoosterSystem _boosterSystem; // 0xA0
+	private Dictionary<BoosterType, IBoosterActivationPolicy> _boosterActivationPolicies; // 0xA8
+	private bool _b2BLogToggle; // 0xB0
+	private bool _b2bPossibleFixToggle; // 0xB1
+	private const long RedFlagDelay = 10000;
+
+	// Properties
+	private BoardSystem BoardSystem { get; }
+	private RewardsSystem RewardsSystem { get; }
+	private BoosterBoardSystem BoosterBoardSystem { get; }
+	private BoosterSystem BoosterSystem { get; }
+
+	// Methods
+
+	// RVA: 0x65C10E4 Offset: 0x65BD0E4 VA: 0x65C10E4
+	private BoardSystem get_BoardSystem() { }
+
+	// RVA: 0x65C11C4 Offset: 0x65BD1C4 VA: 0x65C11C4
+	private RewardsSystem get_RewardsSystem() { }
+
+	// RVA: 0x65C12A4 Offset: 0x65BD2A4 VA: 0x65C12A4
+	private BoosterBoardSystem get_BoosterBoardSystem() { }
+
+	// RVA: 0x65C1384 Offset: 0x65BD384 VA: 0x65C1384
+	private BoosterSystem get_BoosterSystem() { }
+
+	// RVA: 0x65C1464 Offset: 0x65BD464 VA: 0x65C1464 Slot: 17
+	protected override void InitializeService() { }
+
+	// RVA: 0x65C1648 Offset: 0x65BD648 VA: 0x65C1648 Slot: 4
+	protected override void SubscribeToSignals() { }
+
+	// RVA: 0x65C180C Offset: 0x65BD80C VA: 0x65C180C Slot: 5
+	protected override void UnsubscribeFromSignals() { }
+
+	// RVA: 0x65C19D0 Offset: 0x65BD9D0 VA: 0x65C19D0
+	private void OnGameStarted() { }
+
+	// RVA: 0x65C1DE8 Offset: 0x65BDDE8 VA: 0x65C1DE8
+	private void OnCardsSeasonStart() { }
+
+	// RVA: 0x65C1DF0 Offset: 0x65BDDF0 VA: 0x65C1DF0
+	private void OnBoardSwitch() { }
+
+	// RVA: 0x65C1EC4 Offset: 0x65BDEC4 VA: 0x65C1EC4
+	private void OnPurchaseSucceeded() { }
+
+	// RVA: 0x65C2078 Offset: 0x65BE078 VA: 0x65C2078
+	private void OnGameStateChanged(GameState gameState) { }
+
+	// RVA: 0x65C2148 Offset: 0x65BE148 VA: 0x65C2148
+	private bool CanProcessBoosters(GameState gameState) { }
+
+	// RVA: 0x65C1B64 Offset: 0x65BDB64 VA: 0x65C1B64 Slot: 24
+	public IPromise<List<RemoteBoosterData>> GetActiveBoosters(bool mustSucceed = False) { }
+
+	// RVA: 0x65C234C Offset: 0x65BE34C VA: 0x65C234C Slot: 19
+	public void ProcessBoosters() { }
+
+	// RVA: 0x65C1F74 Offset: 0x65BDF74 VA: 0x65C1F74 Slot: 20
+	public void ProcessBoosters(List<RemoteBoosterData> boosters) { }
+
+	// RVA: 0x65C24C8 Offset: 0x65BE4C8 VA: 0x65C24C8 Slot: 21
+	public void UpdateRemoteBoosterFromResponse(RemoteBoosterData booster) { }
+
+	// RVA: -1 Offset: -1 Slot: 22
+	public IPromise<BoosterInteractResponse<TResultData>> InteractWithBooster<TData, TResultData>(string uuId, TData interactionPayload) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3BDBD9C Offset: 0x3BD7D9C VA: 0x3BDBD9C
+	|-BoosterService.InteractWithBooster<object, object>
+	|
+	|-RVA: 0x3BDC0F8 Offset: 0x3BD80F8 VA: 0x3BDC0F8
+	|-BoosterService.InteractWithBooster<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x65C2C14 Offset: 0x65BEC14 VA: 0x65C2C14 Slot: 23
+	public BoosterAnalyticsData GetActiveBoosterAnalyticsData(string configurationId) { }
+
+	// RVA: 0x65C2E00 Offset: 0x65BEE00 VA: 0x65C2E00
+	private void BoosterUpdateStatesFromInteractResponse(IBoosterInteractResponseData interactResponseData) { }
+
+	// RVA: 0x65C2E94 Offset: 0x65BEE94 VA: 0x65C2E94
+	private void UpdateStatesFromResponse(CollectedRewards collectedRewards, BackendStates states) { }
+
+	// RVA: 0x65C3368 Offset: 0x65BF368 VA: 0x65C3368
+	private void RemoveBoosterItemEntity(BoosterIdComponent boosterIdComponent) { }
+
+	// RVA: 0x65C22A0 Offset: 0x65BE2A0 VA: 0x65C22A0
+	private bool HasAnyBoosterToActivateOnMeta(List<RemoteBoosterData> remoteActiveBoosters) { }
+
+	// RVA: 0x65C3428 Offset: 0x65BF428 VA: 0x65C3428
+	private bool CanActivateOnMetaScreen(RemoteBoosterData remoteActiveBooster) { }
+
+	// RVA: 0x65C34AC Offset: 0x65BF4AC VA: 0x65C34AC
+	private void ForceDeactivateBooster(BoosterIdComponent boosterId) { }
+
+	// RVA: 0x65C3BDC Offset: 0x65BFBDC VA: 0x65C3BDC
+	private void CheckBoosterDeactivatedRemote(BoosterIdComponent boosterId) { }
+
+	// RVA: 0x65C3904 Offset: 0x65BF904 VA: 0x65C3904
+	private void TryDeleteBoosterMergeItem(string boosterUUId) { }
+
+	// RVA: 0x65C2A68 Offset: 0x65BEA68 VA: 0x65C2A68
+	private IdComponent GetLinkedMergeItemIdComponent(string uuid) { }
+
+	// RVA: 0x65C3D3C Offset: 0x65BFD3C VA: 0x65C3D3C Slot: 18
+	protected override void DisposeService() { }
+
+	// RVA: 0x65C3F20 Offset: 0x65BFF20 VA: 0x65C3F20
+	private void OnStateChange(GameState gameState) { }
+
+	// RVA: 0x65C4330 Offset: 0x65C0330 VA: 0x65C4330
+	private void TryFindCorruptBoosters(out string uuid, out bool hasIssue) { }
+
+	// RVA: 0x65C45E0 Offset: 0x65C05E0 VA: 0x65C45E0
+	public void .ctor() { }
+}
+

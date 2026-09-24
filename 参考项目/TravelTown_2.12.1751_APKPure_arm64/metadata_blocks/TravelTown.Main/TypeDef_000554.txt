@@ -1,0 +1,14 @@
+// Namespace: MergeEngine.Model.Configuration
+public class MergeConfigurationDependencyInfo // TypeDefIndex: 554
+{
+	// Fields
+	public IMergeItem item; // 0x10
+	public HashSet<IMergeGraphItem> dependentGraphs; // 0x18
+	public HashSet<IMergeItem> dependentItems; // 0x20
+
+	// Methods
+
+	// RVA: 0x613C2E8 Offset: 0x61382E8 VA: 0x613C2E8
+	public void .ctor() { }
+}
+

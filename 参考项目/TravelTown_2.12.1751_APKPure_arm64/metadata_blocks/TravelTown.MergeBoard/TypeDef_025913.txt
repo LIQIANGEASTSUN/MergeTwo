@@ -1,0 +1,29 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class MergeBoardLayoutExtensions.<>c // TypeDefIndex: 25913
+{
+	// Fields
+	public static readonly MergeBoardLayoutExtensions.<>c <>9; // 0x0
+	public static Func<ValueTuple<Entity, BoardTilePositionComponent>, int> <>9__3_0; // 0x8
+	public static Func<ValueTuple<Entity, BoardTilePositionComponent>, int> <>9__4_0; // 0x10
+	public static Func<ValueTuple<Entity, BoardTilePositionComponent>, int> <>9__5_0; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A99C34 Offset: 0x6A95C34 VA: 0x6A99C34
+	private static void .cctor() { }
+
+	// RVA: 0x6A99C9C Offset: 0x6A95C9C VA: 0x6A99C9C
+	public void .ctor() { }
+
+	// RVA: 0x6A99CA4 Offset: 0x6A95CA4 VA: 0x6A99CA4
+	internal int <TryGetClosestEmptyPositionFromContext>b__3_0(ValueTuple<Entity, BoardTilePositionComponent> e) { }
+
+	// RVA: 0x6A99CAC Offset: 0x6A95CAC VA: 0x6A99CAC
+	internal int <TryGetRandomEmptyPositionIncludingDeadPosition>b__4_0(ValueTuple<Entity, BoardTilePositionComponent> e) { }
+
+	// RVA: 0x6A99CB4 Offset: 0x6A95CB4 VA: 0x6A99CB4
+	internal int <TryGetRandomEmptyPositionFromContext>b__5_0(ValueTuple<Entity, BoardTilePositionComponent> e) { }
+}
+

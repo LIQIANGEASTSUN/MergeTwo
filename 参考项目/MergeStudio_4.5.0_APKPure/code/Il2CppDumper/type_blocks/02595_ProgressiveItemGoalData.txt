@@ -1,0 +1,15 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class ProgressiveItemGoalData // TypeDefIndex: 2595
+{
+	// Fields
+	public int Index; // 0x8
+	public int SetID; // 0xC
+	public int Level; // 0x10
+
+	// Methods
+
+	// RVA: 0x1A3EDB4 Offset: 0x1A3EDB4 VA: 0x1A3EDB4
+	public void .ctor() { }
+}
+

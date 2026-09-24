@@ -1,0 +1,86 @@
+Type: MenuController+<>c__DisplayClass588_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x02B73B64 SUBS X9, X9, 0x1
+	0x02B73B68 ADD X10, X10, 0x10
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: UI.IMenuSection <ShowCoreSupportEventStartPopup>b__0()
+
+Disassembly:
+	0x02B73B6C B.NE 0x2B73B58
+	0x02B73B70 MOV X0, X20
+	0x02B73B74 MOV W2, W31
+	0x02B73B78 BL 0x23D527C
+	0x02B73B7C B 0x2B73E10
+	0x02B73B80 LDRSW X9, [X10]
+	0x02B73B84 ADD X8, X8, X9, 0x4, LSL
+	0x02B73B88 ADD X0, X8, 0x138
+	0x02B73B8C LDP X8, X1, [X0]
+	0x02B73B90 MOV X0, X20
+	0x02B73B94 BLR X8
+	0x02B73B98 ADRP X8, 0x2B72000
+	0x02B73B9C LDR X8, [X8 + 0x438]
+	0x02B73BA0 STP X0, X1, [X31 + 0x50]
+	0x02B73BA4 LDR X2, [X8]
+	0x02B73BA8 ADD X0, X31, 0x50
+	0x02B73BAC ADD X1, X31, 0xA0
+	0x02B73BB0 BL 0x2839804
+	0x02B73BB4 TBZ X0, 0x0, 0x2B73DB0
+	0x02B73BB8 LDR X0, [X31 + 0xA0]
+	0x02B73BBC CBZ X0, 0x2B73F84
+	0x02B73BC0 ADRP X8, 0x2B75000
+	0x02B73BC4 LDR X8, [X8 + 0x8F0]
+	0x02B73BC8 LDR X2, [X8]
+	0x02B73BCC ADD X1, X31, 0xD0
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move X20, X0
+	005 Move X0, [X0+32]
+	006 Compare X0, 0
+	007 JumpIfEqual {32}
+	008 Move X8, [X0]
+	009 Move X19, [X20+16]
+	010 Move X9, [X8+424]
+	011 Move X1, [X8+432]
+	012 NotImplemented "Instruction BLR not yet implemented."
+	013 Move X8, [X20+24]
+	014 Compare X8, 0
+	015 JumpIfEqual {32}
+	016 Move X20, X0
+	017 Move X0, X8
+	018 Move X1, X31
+	019 Call Component.get_gameObject, X0
+	020 Compare X19, 0
+	021 JumpIfEqual {32}
+	022 Move X2, X0
+	023 Move X0, X19
+	024 Move X1, X20
+	025 Move X20, [X31+16]
+	026 Move X19, [X31+24]
+	027 Move W3, W31
+	028 Move X4, X31
+	029 Move X30, [X31+32]
+	030 Call MenuController.FindMenuWithTag, X0, X1, X2, X3
+	031 Return X0
+	032 Call 0x239FB90
+
+Method: UI.IMenuState <ShowCoreSupportEventStartPopup>b__1()
+
+Disassembly:
+	0x02B73BD0 BL 0x26021D4
+	0x02B73BD4 CBZ X19, 0x2B73F88
+
+ISIL:
+	001 Move X0, [X0+32]
+	002 Return X0
+

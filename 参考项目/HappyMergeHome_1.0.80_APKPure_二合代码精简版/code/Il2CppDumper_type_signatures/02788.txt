@@ -1,0 +1,39 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeMainController.<Start>d__77 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 2788
+{
+	// Fields
+	private int <>1__state; // 0x8
+	private object <>2__current; // 0xC
+	public MergeMainController <>4__this; // 0x10
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHidden]
+	// RVA: 0x2C49814 Offset: 0x2C49814 VA: 0x2C49814
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHidden]
+	// RVA: 0x2C49830 Offset: 0x2C49830 VA: 0x2C49830 Slot: 5
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x2C49834 Offset: 0x2C49834 VA: 0x2C49834 Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x2C49C9C Offset: 0x2C49C9C VA: 0x2C49C9C Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHidden]
+	// RVA: 0x2C49CA4 Offset: 0x2C49CA4 VA: 0x2C49CA4 Slot: 8
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHidden]
+	// RVA: 0x2C49CE8 Offset: 0x2C49CE8 VA: 0x2C49CE8 Slot: 7
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+

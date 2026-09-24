@@ -1,0 +1,90 @@
+Type: GameLogic.Player.Board.BoardExtensions+<>c__DisplayClass32_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03671254 LDR X0, [X8]
+	0x03671258 LDR W23, [X22 + 0x18]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <SinkItems>b__0(GameLogic.Player.Items.MergeItem item)
+
+Disassembly:
+	0x03672AFC LDUR X11, [X10 - 0x8]
+	0x03672B00 CMP X11, X21
+	0x03672B04 B.EQ 0x3672FE4
+	0x03672B08 SUBS X9, X9, 0x1
+	0x03672B0C ADD X10, X10, 0x10
+	0x03672B10 B.NE 0x3672AFC
+	0x03672B14 MOV X0, X23
+	0x03672B18 MOV X1, X21
+	0x03672B1C MOVZ W2, 0x2
+	0x03672B20 BL 0x23D527C
+	0x03672B24 MOV X20, X0
+	0x03672B28 B 0x3672FF4
+	0x03672B2C LDR W9, [X10]
+	0x03672B30 ADD W9, W9, 0x5
+	0x03672B34 ADD X8, X8, W9, 0x4, SXTW
+	0x03672B38 ADD X0, X8, 0x138
+	0x03672B3C LDP X8, X1, [X0]
+	0x03672B40 MOV X0, X22
+	0x03672B44 BLR X8
+	0x03672B48 MOV X1, X0
+	0x03672B4C MOV X0, X26
+	0x03672B50 MOV X2, X31
+	0x03672B54 BL 0x35F26A8
+	0x03672B58 TBNZ X0, 0x0, 0x36733A8
+	0x03672B5C LDR X8, [X22]
+	0x03672B60 ADRP X10, 0x2062000
+	0x03672B64 LDRH W9, [X8 + 0x12E]
+	0x03672B68 LDR X10, [X10 + 0xD50]
+	0x03672B6C LDR X1, [X10]
+	0x03672B70 CBZ X9, 0x3672B94
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move X8, [X0+16]
+	005 Move X20, X0
+	006 Move X19, X1
+	007 Move X0, X1
+	008 Move X2, X31
+	009 Move X1, X8
+	010 Call MergeItemExtensions.IsSink, X0, X1
+	011 Move TEMP, X0
+	012 And TEMP, TEMP, 1
+	013 Compare TEMP, 1
+	014 JumpIfEqual {23}
+	015 Move X1, [X20+16]
+	016 Move X0, X19
+	017 Move X2, X31
+	018 Call MergeItemExtensions.IsSinkableOrder, X0, X1
+	019 Move TEMP, X0
+	020 And TEMP, TEMP, 1
+	021 Compare TEMP, 1
+	022 JumpIfNotEqual {36}
+	023 Move W8, [X20+24]
+	024 Compare W8, 0
+	025 JumpIfEqual {35}
+	026 Compare X19, 0
+	027 JumpIfEqual {41}
+	028 Move X0, X19
+	029 Move X20, [X31+16]
+	030 Move X19, [X31+24]
+	031 Move X1, X31
+	032 Move X30, [X31+32]
+	033 Call MergeItem.get_IsVisible, X0
+	034 Return X0
+	035 Move W0, 1
+	036 Move W0, W31
+	037 Move X20, [X31+16]
+	038 Move X19, [X31+24]
+	039 Move X30, [X31+32]
+	040 Return X0
+	041 Call 0x239FB90
+

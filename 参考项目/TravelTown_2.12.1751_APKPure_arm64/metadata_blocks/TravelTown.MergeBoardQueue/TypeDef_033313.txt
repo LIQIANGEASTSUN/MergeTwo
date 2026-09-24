@@ -1,0 +1,13 @@
+// Namespace: Merger.MergeBoardQueue.Data.TickInputActions
+public class ImmediateSpawnItemRewardFromQueueToBoardAction // TypeDefIndex: 33313
+{
+	// Fields
+	public IMergeItem MergeItem; // 0x10
+	public QueuedItem ItemToDequeue; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A579F4 Offset: 0x6A539F4 VA: 0x6A579F4
+	public void .ctor() { }
+}
+

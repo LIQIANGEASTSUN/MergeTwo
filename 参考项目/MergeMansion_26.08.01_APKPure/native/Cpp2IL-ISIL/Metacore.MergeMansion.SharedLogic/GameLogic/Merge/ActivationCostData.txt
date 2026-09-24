@@ -1,0 +1,18 @@
+Type: GameLogic.Merge.ActivationCostData
+
+Method: System.Void .ctor(GameLogic.Player.EnergyType energyType, System.Int32 activationCost, GameLogic.Player.Modes.EnergyModeInfo energyMode)
+
+Disassembly:
+	0x033BA700 CBZ X21, 0x33BA788
+	0x033BA704 ADRP X8, 0x232E000
+	0x033BA708 MOV X0, X21
+	0x033BA70C LDR X8, [X8 + 0xCF8]
+
+ISIL:
+	001 Move [X0], W1
+	002 Move [X0+4], W2
+	003 Move X1, X3
+	004 Move [X0+8], X3
+	005 Call 0x239F888
+	006 Return 
+

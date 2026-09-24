@@ -1,0 +1,65 @@
+// Namespace: Merger.Game.Command
+public class SellSelectedItemCommand : CommandBase<SellSelectedItemSignal> // TypeDefIndex: 8549
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _configurationModel; // 0x30
+	[Inject]
+	private IRewardAnimationTargetsModel _rewardAnimationTargetsModel; // 0x38
+	[Inject]
+	private IResourcesModel _resourcesModel; // 0x40
+	[Inject]
+	private ISystemManager _systemManager; // 0x48
+	[Inject]
+	private IEntityManager _entityManager; // 0x50
+	[Inject]
+	private INotificationDataFactory _notificationDataFactory; // 0x58
+	[Inject]
+	private IBoardSelectionModel _boardSelectionModel; // 0x60
+	[Inject]
+	private IServerTimeService _serverTimeService; // 0x68
+	private BoardSystem _boardSystem; // 0x70
+	private OperationTrackingSystem _operationTrackingSystem; // 0x78
+
+	// Properties
+	private BoardSystem BoardSystem { get; }
+	private OperationTrackingSystem OperationTrackingSystem { get; }
+	private IBoardView BoardView { get; }
+	private ResourcesSystem ResourcesSystem { get; }
+
+	// Methods
+
+	// RVA: 0x66877D4 Offset: 0x66837D4 VA: 0x66877D4
+	private BoardSystem get_BoardSystem() { }
+
+	// RVA: 0x66878B4 Offset: 0x66838B4 VA: 0x66878B4
+	private OperationTrackingSystem get_OperationTrackingSystem() { }
+
+	// RVA: 0x6687994 Offset: 0x6683994 VA: 0x6687994
+	private IBoardView get_BoardView() { }
+
+	// RVA: 0x66879B8 Offset: 0x66839B8 VA: 0x66879B8
+	private ResourcesSystem get_ResourcesSystem() { }
+
+	// RVA: 0x6687A70 Offset: 0x6683A70 VA: 0x6687A70 Slot: 15
+	public override void Execute(SellSelectedItemSignal signal) { }
+
+	// RVA: 0x668825C Offset: 0x668425C VA: 0x668825C
+	private Reward GetRewardForSelling(SellCapability sellCapability) { }
+
+	// RVA: 0x66883B4 Offset: 0x66843B4 VA: 0x66883B4
+	private int GetSmileyRewardForSale(PlayerResourceEnum resource, int amount) { }
+
+	// RVA: 0x66883C0 Offset: 0x66843C0 VA: 0x66883C0
+	private void OnUndoSell(UndoSellData data) { }
+
+	// RVA: 0x668883C Offset: 0x668483C VA: 0x668883C
+	private bool ConsumeItemsPrice(IMergeItem item) { }
+
+	// RVA: 0x6688B08 Offset: 0x6684B08 VA: 0x6688B08
+	private BoardItemPosition GetAvailablePositionForItem(Entity entity) { }
+
+	// RVA: 0x6688BA4 Offset: 0x6684BA4 VA: 0x6688BA4
+	public void .ctor() { }
+}
+

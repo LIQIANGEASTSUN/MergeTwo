@@ -1,0 +1,33 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ItemChainModel.<>c // TypeDefIndex: 1748
+{
+	// Fields
+	public static readonly ItemChainModel.<>c <>9; // 0x0
+	public static Func<ItemLinkModel, int> <>9__12_0; // 0x4
+	public static Func<ItemLinkModel, int> <>9__14_0; // 0x8
+	public static Func<IGrouping<int, ItemLinkModel>, bool> <>9__14_1; // 0xC
+	public static Func<IGrouping<int, ItemLinkModel>, int> <>9__14_2; // 0x10
+
+	// Methods
+
+	// RVA: 0x1911AE8 Offset: 0x1911AE8 VA: 0x1911AE8
+	private static void .cctor() { }
+
+	// RVA: 0x1911B5C Offset: 0x1911B5C VA: 0x1911B5C
+	public void .ctor() { }
+
+	// RVA: 0x1911B64 Offset: 0x1911B64 VA: 0x1911B64
+	internal int <GetNextAvailableLinkIndex>b__12_0(ItemLinkModel l) { }
+
+	// RVA: 0x1911B80 Offset: 0x1911B80 VA: 0x1911B80
+	internal int <ValidateChain>b__14_0(ItemLinkModel l) { }
+
+	// RVA: 0x1911B9C Offset: 0x1911B9C VA: 0x1911B9C
+	internal bool <ValidateChain>b__14_1(IGrouping<int, ItemLinkModel> g) { }
+
+	// RVA: 0x1911C00 Offset: 0x1911C00 VA: 0x1911C00
+	internal int <ValidateChain>b__14_2(IGrouping<int, ItemLinkModel> g) { }
+}
+

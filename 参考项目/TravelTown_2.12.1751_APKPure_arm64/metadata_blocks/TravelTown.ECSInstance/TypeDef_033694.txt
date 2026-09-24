@@ -1,0 +1,18 @@
+// Namespace: 
+public sealed class Entities.ExcludeDelegate : MulticastDelegate // TypeDefIndex: 33694
+{
+	// Methods
+
+	// RVA: 0x5F15D08 Offset: 0x5F11D08 VA: 0x5F15D08
+	public void .ctor(object object, IntPtr method) { }
+
+	// RVA: 0x5F15DB8 Offset: 0x5F11DB8 VA: 0x5F15DB8 Slot: 13
+	public virtual bool Invoke(Entity entity) { }
+
+	// RVA: 0x5F15DCC Offset: 0x5F11DCC VA: 0x5F15DCC Slot: 14
+	public virtual IAsyncResult BeginInvoke(Entity entity, AsyncCallback callback, object object) { }
+
+	// RVA: 0x5F15DEC Offset: 0x5F11DEC VA: 0x5F15DEC Slot: 15
+	public virtual bool EndInvoke(IAsyncResult result) { }
+}
+

@@ -1,0 +1,4 @@
+// Namespace: 
+public struct TaskEvent.UpdateTaskUI : IEvent // TypeDefIndex: 2018
+{}
+

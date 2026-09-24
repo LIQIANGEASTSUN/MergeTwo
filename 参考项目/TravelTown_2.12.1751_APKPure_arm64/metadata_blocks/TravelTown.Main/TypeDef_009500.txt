@@ -1,0 +1,20 @@
+// Namespace: Merger.Game.Signal.Bubbles
+public class TryRemoveBubbleSignal // TypeDefIndex: 9500
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly BoardItemPosition <BoardItemPosition>k__BackingField; // 0x10
+
+	// Properties
+	public BoardItemPosition BoardItemPosition { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x676E6F8 Offset: 0x676A6F8 VA: 0x676E6F8
+	public BoardItemPosition get_BoardItemPosition() { }
+
+	// RVA: 0x676E700 Offset: 0x676A700 VA: 0x676E700
+	public void .ctor(BoardItemPosition boardItemPosition) { }
+}
+

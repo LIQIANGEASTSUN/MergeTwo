@@ -1,0 +1,14 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class SlotFull // TypeDefIndex: 2703
+{
+	// Fields
+	public SlotFull.SlotFullType SlotFullTypes; // 0x8
+	public int Count; // 0xC
+
+	// Methods
+
+	// RVA: 0x1A5E014 Offset: 0x1A5E014 VA: 0x1A5E014
+	public void .ctor(SlotFull.SlotFullType slotFullTypes) { }
+}
+

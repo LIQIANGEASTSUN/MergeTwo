@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class SummerWatermelonModel.<>c__DisplayClass94_0 // TypeDefIndex: 5688
+{
+	// Fields
+	public List<MergeBoard.Grid> clearList; // 0x8
+	public SummerWatermelonModel <>4__this; // 0xC
+
+	// Methods
+
+	// RVA: 0x18F2B9C Offset: 0x18F2B9C VA: 0x18F2B9C
+	public void .ctor() { }
+
+	// RVA: 0x18F92AC Offset: 0x18F92AC VA: 0x18F92AC
+	internal void <ClearBoard>b__0() { }
+}
+

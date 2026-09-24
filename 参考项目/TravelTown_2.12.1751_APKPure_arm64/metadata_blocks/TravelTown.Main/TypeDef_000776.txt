@@ -1,0 +1,27 @@
+// Namespace: MergeEngine.ECS.Systems.State.Board
+public class BoardProducerInventoryStateSystem : ItemsStateSystemBase<BoardProducerInventory> // TypeDefIndex: 776
+{
+	// Fields
+	[InjectSystem]
+	private InventorySystem _inventorySystem; // 0x60
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x68
+
+	// Methods
+
+	// RVA: 0x64E9DD4 Offset: 0x64E5DD4 VA: 0x64E9DD4 Slot: 16
+	protected override void ProcessItems(BoardProducerInventory itemsState, List<IdComponent> existingEntityIds) { }
+
+	// RVA: 0x64E9F8C Offset: 0x64E5F8C VA: 0x64E9F8C
+	private void CreateMissingEntities(List<IdComponent> existingEntityIds, List<ProducerInventoryItem> itemsStateItems) { }
+
+	// RVA: 0x64EA5C0 Offset: 0x64E65C0 VA: 0x64EA5C0 Slot: 14
+	protected override void EntitiesRemovalLogic(IComponentBase component) { }
+
+	// RVA: 0x64EA784 Offset: 0x64E6784 VA: 0x64EA784 Slot: 15
+	public override List<IdComponent> GetExistingEntityIds() { }
+
+	// RVA: 0x64EA98C Offset: 0x64E698C VA: 0x64EA98C
+	public void .ctor() { }
+}
+

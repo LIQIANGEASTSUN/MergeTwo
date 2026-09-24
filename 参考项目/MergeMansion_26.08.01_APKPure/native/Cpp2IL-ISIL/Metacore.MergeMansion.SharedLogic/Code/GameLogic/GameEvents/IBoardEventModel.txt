@@ -1,0 +1,135 @@
+Type: Code.GameLogic.GameEvents.IBoardEventModel
+
+Method: Code.GameLogic.GameEvents.IBoardEventInfo get_BoardEventInfo()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.List`1<GameLogic.Player.Items.IBoardItem> get_PocketItems()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Board.MergeBoard get_MergeBoard()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_EnterMergeBoardCount()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void set_EnterMergeBoardCount(System.Int32 value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_EnterBoardDialogueTriggered()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void set_EnterBoardDialogueTriggered(System.Boolean value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Nullable`1<Metaplay.Core.Activables.MetaActivableState+Activation> get_LatestActivation()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_RequestExtension()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void set_RequestExtension(System.Boolean value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.Offers.OfferPlacementId get_BoardShopPlacementId()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.Offers.OfferPlacementId get_BoardShopFlashPlacementId()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Merge.MergeBoardId GetBoardIdentifier()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void CheckCanBeResolved(GameLogic.Player.PlayerModel player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Nullable`1<Metaplay.Core.MetaTime> GetActivationVisibilityEndsAtTime(Metaplay.Core.Player.IPlayerModelBase player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean IsActive(Metaplay.Core.Player.IPlayerModelBase playerModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean CanExtend(Metaplay.Core.Player.IPlayerModelBase playerModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Story.StoryDefinitionId GetEnterBoardDialogue(GameLogic.Player.IPlayer player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 GetAuxEnergyAttachmentChance(GameLogic.Player.IPlayer player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

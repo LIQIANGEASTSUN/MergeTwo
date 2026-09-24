@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class CatSwimmingModel.<>c__DisplayClass53_1 // TypeDefIndex: 269
+{
+	// Fields
+	public int ind; // 0x8
+	public CatSwimmingModel.<>c__DisplayClass53_0 CS$<>8__locals1; // 0xC
+
+	// Methods
+
+	// RVA: 0x2B3E690 Offset: 0x2B3E690 VA: 0x2B3E690
+	public void .ctor() { }
+
+	// RVA: 0x2B3FBE4 Offset: 0x2B3FBE4 VA: 0x2B3FBE4
+	internal void <FlyScore>b__0() { }
+}
+

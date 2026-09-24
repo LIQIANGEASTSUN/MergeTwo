@@ -1,0 +1,14 @@
+// Namespace: Framework.UIFSM.View
+public interface IViewWithPayload<TPayload> // TypeDefIndex: 10287
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void SetPayload(TPayload payload);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IViewWithPayload<__Il2CppFullySharedGenericType>.SetPayload
+	*/
+}
+

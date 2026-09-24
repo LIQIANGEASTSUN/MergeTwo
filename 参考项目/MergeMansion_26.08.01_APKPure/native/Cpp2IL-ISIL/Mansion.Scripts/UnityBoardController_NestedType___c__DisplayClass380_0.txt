@@ -1,0 +1,37 @@
+Type: UnityBoardController+<>c__DisplayClass380_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03278324 LDR X20, [X20]
+	0x03278328 ADD X8, X31, 0x0
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void <RemoveVisualItemAfterAnimation>b__0()
+
+Disassembly:
+	0x0327832C STR X20, [X8, X21, LSL #3]
+	0x03278330 ADD W8, W21, 0x1
+	0x03278334 STR W8, [X31 + 0x8]
+	0x03278338 BL 0x53E9090
+	0x0327833C MOVN W8, 0x1
+	0x03278340 MOV X1, X20
+	0x03278344 MOV X2, X31
+	0x03278348 STR W8, [X19], #0x8
+
+ISIL:
+	001 Move X8, X0
+	002 Move X0, [X0+16]
+	003 Compare X0, 0
+	004 JumpIfEqual {9}
+	005 Move X1, [X8+24]
+	006 Move X2, X31
+	007 Call UnityBoardController.ReturnBoardItemHandlerToPool, X0, X1
+	008 Return 
+	009 Move [X31-16], X30
+	010 Call 0x239FB90
+

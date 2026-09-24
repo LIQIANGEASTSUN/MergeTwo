@@ -1,0 +1,57 @@
+Type: GameLogic.Player.Items.Activation.CycleInfo
+
+Method: GameLogic.Player.Items.Activation.CycleInfo get_DefaultCycle()
+
+Disassembly:
+	0x03654DB0 MOV X3, X31
+	0x03654DB4 BL 0x339D560
+	0x03654DB8 LDR X8, [X31 + 0x10]
+
+ISIL:
+	001 Move X0, X31
+	002 Move X1, X31
+	003 Return X0
+
+Method: System.Int32 get_CycleNumber()
+
+Disassembly:
+	0x03654DBC CBZ X8, 0x3654EB4
+	0x03654DC0 MOV W1, W0
+
+ISIL:
+	001 Move W0, [X0]
+	002 Return X0
+
+Method: System.Int32 get_DailyCycleIndex()
+
+Disassembly:
+	0x03654DC4 LDR X0, [X8 + 0x18]
+	0x03654DC8 CBZ X0, 0x3654EB4
+
+ISIL:
+	001 Move W0, [X0+4]
+	002 Return X0
+
+Method: System.Boolean get_ReEngagementCycleActive()
+
+Disassembly:
+	0x03654DCC ADRP X8, 0x20BF000
+	0x03654DD0 LDR X8, [X8 + 0x920]
+
+ISIL:
+	001 Move W0, [X0+8]
+	002 Return X0
+
+Method: System.Void .ctor(System.Int32 cycleNumber, System.Int32 dailyCycleIndex, System.Boolean reEngagementCycleActive)
+
+Disassembly:
+	0x036537F0 BL 0x239BA64
+	0x036537F4 LDR X0, [X21]
+	0x036537F8 LDR X8, [X0 + 0xB8]
+
+ISIL:
+	001 Move [X0], W1
+	002 Move [X0+4], W2
+	003 Move [X0+8], W3
+	004 Return 
+

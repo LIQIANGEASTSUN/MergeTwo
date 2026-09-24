@@ -1,0 +1,15 @@
+// Namespace: 
+[Serializable]
+public class ItemLinkScriptableData.ItemLinkScriptableSetData // TypeDefIndex: 1756
+{
+	// Fields
+	public int SetId; // 0x8
+	public int DefaultSetId; // 0xC
+	public BoardItemSetData ItemSetData; // 0x10
+
+	// Methods
+
+	// RVA: 0x191295C Offset: 0x191295C VA: 0x191295C
+	public void .ctor() { }
+}
+

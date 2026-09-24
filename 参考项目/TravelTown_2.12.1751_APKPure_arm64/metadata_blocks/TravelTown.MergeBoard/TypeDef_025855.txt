@@ -1,0 +1,9 @@
+// Namespace: Merger.MergeBoard.Logic.CombineValidators
+public interface IItemCombinerValidator // TypeDefIndex: 25855
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract bool CanCombineItems(Entity entity1, Entity entity2);
+}
+

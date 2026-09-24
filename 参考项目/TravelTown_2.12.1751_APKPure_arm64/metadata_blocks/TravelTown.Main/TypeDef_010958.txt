@@ -1,0 +1,13 @@
+// Namespace: Framework.Core.Services.Backend.Remote.Payloads.BoardState
+[StateName("boardFreeVouchersEvent")]
+public class EventBoardFreeVouchers : BoardFreeVouchers // TypeDefIndex: 10958
+{
+	// Fields
+	public string eventId; // 0x20
+
+	// Methods
+
+	// RVA: 0x69275C4 Offset: 0x69235C4 VA: 0x69275C4
+	public void .ctor() { }
+}
+

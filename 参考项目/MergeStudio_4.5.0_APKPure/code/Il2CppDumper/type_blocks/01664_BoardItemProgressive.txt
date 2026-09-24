@@ -1,0 +1,26 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "BoardItemProgressive", menuName = "Scriptable/BoardItem/Progressive", order = 1)]
+public class BoardItemProgressive : BoardItemData, IConfigAdaptor<ProgressiveAdaptor>, IConfigAdaptorBase // TypeDefIndex: 1664
+{
+	// Fields
+	public string JsonLabel; // 0x2C
+	public int TaskLoopStartIndex; // 0x30
+
+	// Methods
+
+	// RVA: 0x18CBAFC Offset: 0x18CBAFC VA: 0x18CBAFC Slot: 4
+	public override bool Initialize(BoardEntity boardEntity, IItemController item, long millisecondsPassed, bool isNewlyCreated) { }
+
+	// RVA: 0x18CBB04 Offset: 0x18CBB04 VA: 0x18CBB04 Slot: 6
+	public override int GetTimeRequiredToExitCharging() { }
+
+	// RVA: 0x18CBB0C Offset: 0x18CBB0C VA: 0x18CBB0C Slot: 17
+	public ProgressiveAdaptor GetConfigAdaptor() { }
+
+	// RVA: 0x18CBBC4 Offset: 0x18CBBC4 VA: 0x18CBBC4 Slot: 18
+	public AdaptorBase ConvertFromLocal() { }
+
+	// RVA: 0x18CBC24 Offset: 0x18CBC24 VA: 0x18CBC24
+	public void .ctor() { }
+}
+

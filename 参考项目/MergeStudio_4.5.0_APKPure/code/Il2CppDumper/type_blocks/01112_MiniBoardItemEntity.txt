@@ -1,0 +1,114 @@
+// Namespace: Paxie.MergeStudio.Features.MiniBoard
+[Serializable]
+public class MiniBoardItemEntity : IItemEntity // TypeDefIndex: 1112
+{
+	// Fields
+	public Coordinate BoardIndex; // 0x8
+	public int SetID; // 0x10
+	public int Level; // 0x14
+	public bool IsJelly; // 0x18
+	public bool IsBubbled; // 0x19
+	public float CurrentCapacity; // 0x1C
+	public long ChargingFinishAtTick; // 0x20
+	public int NoCapacityCounter; // 0x28
+	public bool IsBoxed; // 0x2C
+	public int UnboxLevel; // 0x30
+	public ChestState ChestState; // 0x34
+	public SpawnerState SpawnerState; // 0x38
+	public GameMainReward GameMainReward; // 0x3C
+
+	// Properties
+	public int GetLevel { get; }
+	public int GetSetID { get; }
+	public bool GetIsBubbled { get; }
+	public float GetCurrentCapacity { get; }
+	public long GetChargingFinishAtTick { get; }
+	public ChestState GetChestState { get; }
+
+	// Methods
+
+	// RVA: 0x17B7908 Offset: 0x17B7908 VA: 0x17B7908 Slot: 3
+	public override string ToString() { }
+
+	// RVA: 0x17B7D70 Offset: 0x17B7D70 VA: 0x17B7D70 Slot: 4
+	public int get_GetLevel() { }
+
+	// RVA: 0x17B7D78 Offset: 0x17B7D78 VA: 0x17B7D78 Slot: 5
+	public int get_GetSetID() { }
+
+	// RVA: 0x17B7D80 Offset: 0x17B7D80 VA: 0x17B7D80 Slot: 6
+	public bool get_GetIsBubbled() { }
+
+	// RVA: 0x17B7D88 Offset: 0x17B7D88 VA: 0x17B7D88 Slot: 7
+	public float get_GetCurrentCapacity() { }
+
+	// RVA: 0x17B7D90 Offset: 0x17B7D90 VA: 0x17B7D90 Slot: 8
+	public long get_GetChargingFinishAtTick() { }
+
+	// RVA: 0x17B7D98 Offset: 0x17B7D98 VA: 0x17B7D98 Slot: 9
+	public ChestState get_GetChestState() { }
+
+	// RVA: 0x17B7DA0 Offset: 0x17B7DA0 VA: 0x17B7DA0 Slot: 10
+	public bool IsSameLevelAndSet(IItemEntity item) { }
+
+	// RVA: 0x17B7EE8 Offset: 0x17B7EE8 VA: 0x17B7EE8 Slot: 11
+	public void SetCurrentCapacity(float capacity) { }
+
+	// RVA: 0x17B7EF0 Offset: 0x17B7EF0 VA: 0x17B7EF0 Slot: 12
+	public void SetChargingFinishAtTick(long chargingFinishAtTick) { }
+
+	// RVA: 0x17B7F00 Offset: 0x17B7F00 VA: 0x17B7F00 Slot: 13
+	public void SetSkippedState(SpawnerState state) { }
+
+	// RVA: 0x17B7F08 Offset: 0x17B7F08 VA: 0x17B7F08 Slot: 14
+	public void CalculateNextChargingTime(BoardItemSpawnerData data) { }
+
+	// RVA: 0x17B8254 Offset: 0x17B8254 VA: 0x17B8254 Slot: 15
+	public void SetChestState(IItemController item, ChestState chestState, BoardItemChestSpawner chestSpawner, bool animateClockDisappear = False, bool init = False) { }
+
+	// RVA: 0x17B8648 Offset: 0x17B8648 VA: 0x17B8648
+	public void .ctor() { }
+
+	// RVA: 0x17B8650 Offset: 0x17B8650 VA: 0x17B8650
+	public void .ctor(int level, int setID, bool isJelly, Coordinate boardIndex) { }
+
+	// RVA: 0x17B868C Offset: 0x17B868C VA: 0x17B868C
+	public void .ctor(int level, int setID, bool isJelly, Coordinate boardIndex, bool isBoxed, int unboxLevel) { }
+
+	// RVA: 0x17B86D4 Offset: 0x17B86D4 VA: 0x17B86D4
+	public void .ctor(int level, int setID, bool isJelly) { }
+
+	// RVA: 0x17B86FC Offset: 0x17B86FC VA: 0x17B86FC
+	public void .ctor(int level, int setID, bool isJelly, GameMainReward gameMainReward, Coordinate boardIndex) { }
+
+	// RVA: 0x17B8748 Offset: 0x17B8748 VA: 0x17B8748
+	public void .ctor(int level, int setID, GameMainReward gameMainReward, Coordinate boardIndex) { }
+
+	// RVA: 0x17B8788 Offset: 0x17B8788 VA: 0x17B8788
+	public void .ctor(int level, int setID, GameMainReward gameMainReward) { }
+
+	// RVA: 0x17B87BC Offset: 0x17B87BC VA: 0x17B87BC
+	public bool IsInactiveItem() { }
+
+	// RVA: 0x17B87EC Offset: 0x17B87EC VA: 0x17B87EC
+	public bool IsInActiveAndNonMergeableItem() { }
+
+	// RVA: 0x17B8810 Offset: 0x17B8810 VA: 0x17B8810
+	public bool IsJellyOrBoxedItem() { }
+
+	// RVA: 0x17B8834 Offset: 0x17B8834 VA: 0x17B8834
+	public bool IsMovable() { }
+
+	// RVA: 0x17B8854 Offset: 0x17B8854 VA: 0x17B8854
+	public void SetSpawnerState(IItemController item, BoardItemSpawnerData data, SpawnerState spawnerState, bool animateClockDisappear = False) { }
+
+	// RVA: 0x17B8C00 Offset: 0x17B8C00 VA: 0x17B8C00
+	public bool IsInvalid() { }
+
+	// RVA: 0x17B8C28 Offset: 0x17B8C28 VA: 0x17B8C28
+	public bool IsSameLevelAndSet(MiniBoardItemEntity item) { }
+
+	// RVA: 0x17B8C6C Offset: 0x17B8C6C VA: 0x17B8C6C
+	public bool IsSameLevelAndSet(BoardTaskGoal goal) { }
+}
+

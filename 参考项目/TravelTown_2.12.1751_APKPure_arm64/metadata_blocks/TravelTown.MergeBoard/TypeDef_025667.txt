@@ -1,0 +1,68 @@
+// Namespace: Merger.MergeBoard.ViewModel
+public class MergeBoardViewModel : ViewModelBase // TypeDefIndex: 25667
+{
+	// Fields
+	[Inject]
+	private BoardController _boardController; // 0x68
+	[Inject]
+	private IItemCombinerValidator[] _itemCombinerValidators; // 0x70
+	[Inject]
+	private IActiveTilesModel _activeTilesModel; // 0x78
+	[Inject]
+	private ITileConfigurationModel _tileConfigurationModel; // 0x80
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x88
+	[Inject]
+	private IMergeBoardModel _mergeBoardModel; // 0x90
+	[Inject]
+	private IMergeBoardLayout _boardLayout; // 0x98
+
+	// Properties
+	public IEnumerable<int> PlayableTiles { get; }
+	public IEnumerable<Entity> Entities { get; }
+
+	// Methods
+
+	// RVA: 0x6A326F4 Offset: 0x6A2E6F4 VA: 0x6A326F4
+	public IEnumerable<int> get_PlayableTiles() { }
+
+	// RVA: 0x6A32798 Offset: 0x6A2E798 VA: 0x6A32798
+	public IEnumerable<Entity> get_Entities() { }
+
+	// RVA: 0x6A3283C Offset: 0x6A2E83C VA: 0x6A3283C
+	public bool HasTileConfiguration(int tileIndex) { }
+
+	// RVA: 0x6A328E8 Offset: 0x6A2E8E8 VA: 0x6A328E8
+	public void MoveItem(int from, int to) { }
+
+	// RVA: 0x6A32904 Offset: 0x6A2E904 VA: 0x6A32904
+	public void HandleTap(int itemPosition) { }
+
+	// RVA: 0x6A32924 Offset: 0x6A2E924 VA: 0x6A32924
+	public bool CanCombineItems(Entity draggedEntity, Entity otherEntity, out IItemCombinerValidator validator) { }
+
+	// RVA: 0x6A32A60 Offset: 0x6A2EA60 VA: 0x6A32A60
+	public bool TryGetItemCombinerVisualPresentation(IItemCombinerValidator validator, out IItemCombinerVisualPresentation visualPresentation) { }
+
+	// RVA: 0x6A32AE8 Offset: 0x6A2EAE8 VA: 0x6A32AE8
+	public void CompleteCombinationVerification(bool isSuccess, int firstPosition, int secondPosition, MergeCheckItemType checkItemType) { }
+
+	// RVA: 0x6A32B08 Offset: 0x6A2EB08 VA: 0x6A32B08
+	public IItem GetItemById(string id) { }
+
+	// RVA: 0x6A32BB4 Offset: 0x6A2EBB4 VA: 0x6A32BB4
+	public IItem GetMergeItem(Entity entity) { }
+
+	// RVA: 0x6A32C24 Offset: 0x6A2EC24 VA: 0x6A32C24
+	public void ExecuteInitializeAction() { }
+
+	// RVA: 0x6A32CA4 Offset: 0x6A2ECA4 VA: 0x6A32CA4
+	public bool IsItemGateway(Entity entity) { }
+
+	// RVA: 0x6A32DA4 Offset: 0x6A2EDA4 VA: 0x6A32DA4
+	public string GetGatewayFloatingTextKey(Entity entity) { }
+
+	// RVA: 0x6A32EA4 Offset: 0x6A2EEA4 VA: 0x6A32EA4
+	public void .ctor() { }
+}
+

@@ -1,0 +1,26 @@
+// Namespace: Paxie.MergePuzzle.ItemCollections.Config
+[CreateAssetMenu(fileName = "MetaData", menuName = "Scriptable/Meta/ItemCollectionData", order = 1)]
+public class ItemCollectionConfig : FeatureConfigBase // TypeDefIndex: 409
+{
+	// Fields
+	[Header("Auto Scroll")]
+	public float AutoScrollInitialWait; // 0x14
+	public float AutoScrollTabChangeDelay; // 0x18
+	public float AutoScrollSpeed; // 0x1C
+	[Tooltip("Pixel speed per second for absolute position scrolling (used in popup)")]
+	public float AutoScrollPixelSpeed; // 0x20
+	public Ease AutoScrollEase; // 0x24
+	public float AutoScrollDelayAfterCollect; // 0x28
+	[Header("Tab Sprites")]
+	public List<Sprite> ItemCollectionTabSprites; // 0x2C
+	[Header("Item IDs")]
+	public List<BoardItemCollectionData> ItemCollectionTabList; // 0x30
+	[Header("Exception Items")]
+	public List<ItemInfo> AlwaysDiscoveryItems; // 0x34
+
+	// Methods
+
+	// RVA: 0x1BA18EC Offset: 0x1BA18EC VA: 0x1BA18EC
+	public void .ctor() { }
+}
+

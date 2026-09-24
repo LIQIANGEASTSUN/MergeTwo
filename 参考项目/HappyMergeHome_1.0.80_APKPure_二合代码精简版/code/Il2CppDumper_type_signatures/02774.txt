@@ -1,0 +1,15 @@
+// Namespace: 
+public enum MergeItemStatus // TypeDefIndex: 2774
+{
+	// Fields
+	public int value__; // 0x0
+	public const MergeItemStatus icecube = 6;
+	public const MergeItemStatus mine = 5;
+	public const MergeItemStatus slabstone = 4;
+	public const MergeItemStatus time = 3;
+	public const MergeItemStatus bubble = 2;
+	public const MergeItemStatus open = 1;
+	public const MergeItemStatus locked = 0;
+	public const MergeItemStatus box = -1;
+}
+

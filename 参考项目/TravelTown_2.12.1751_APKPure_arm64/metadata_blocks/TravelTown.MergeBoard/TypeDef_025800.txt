@@ -1,0 +1,43 @@
+// Namespace: Merger.MergeBoard.Services
+public class MergeBoardOperationTrackingService : BlockingFlagsService<OperationTrackingFlags>, IMergeBoardOperationTrackingService, IBlockingFlags<OperationTrackingFlags>, IDebugBlockingFlags // TypeDefIndex: 25800
+{
+	// Fields
+	[Inject]
+	private IWebSocketDeliveryGuaranteeService _webSocketSender; // 0x30
+	[Inject]
+	private IResourcesModel _resourcesModel; // 0x38
+	[Inject]
+	private IOperationTrackingMetadataProvider _operationTrackingMetadataProvider; // 0x40
+	[Inject]
+	private IEventGlobalMetadata _eventGlobalMetadata; // 0x48
+	[Inject]
+	private IPowerBoostDataProvider _powerBoostDataProvider; // 0x50
+	[Inject(Optional = True)]
+	private IOperationPayloadEnrichment[] _payloadEnhancers; // 0x58
+
+	// Methods
+
+	// RVA: 0x6A7BD8C Offset: 0x6A77D8C VA: 0x6A7BD8C Slot: 25
+	public void SendOperationData(IList<OperationNotificationData> operationNotificationDatas, Dictionary<string, string> metadata) { }
+
+	// RVA: -1 Offset: -1 Slot: 26
+	public OperationNotificationData CreatePayload<TNotificationData>(string operationType, List<TNotificationData> itemNotificationData, ExtraData extraData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D20514 Offset: 0x3D1C514 VA: 0x3D20514
+	|-MergeBoardOperationTrackingService.CreatePayload<object>
+	*/
+
+	// RVA: 0x6A7C02C Offset: 0x6A7802C VA: 0x6A7C02C
+	private ClientMessageNotification CreateClientMessageNotification(string topic, string action, object payload, Dictionary<string, string> metadata, string debugData) { }
+
+	// RVA: 0x6A7C0E8 Offset: 0x6A780E8 VA: 0x6A7C0E8
+	private void SendTrackingData(ClientMessageNotification clientMsg) { }
+
+	// RVA: 0x6A7C190 Offset: 0x6A78190 VA: 0x6A7C190
+	private OperationNotificationData ApplyEnhancers(OperationNotificationData payload) { }
+
+	// RVA: 0x6A7C2A8 Offset: 0x6A782A8 VA: 0x6A7C2A8
+	public void .ctor() { }
+}
+

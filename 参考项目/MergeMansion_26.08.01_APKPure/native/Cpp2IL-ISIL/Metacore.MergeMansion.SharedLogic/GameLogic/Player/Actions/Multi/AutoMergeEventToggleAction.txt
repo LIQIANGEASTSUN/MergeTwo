@@ -1,0 +1,199 @@
+Type: GameLogic.Player.Actions.Multi.AutoMergeEventToggleAction
+
+Method: Code.GameLogic.GameEvents.CoreSupportEventId get_EventId()
+
+Disassembly:
+	0x036D37F0 BL 0x27550B8
+	0x036D37F4 CBZ X0, 0x36D3814
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_EventId(Code.GameLogic.GameEvents.CoreSupportEventId value)
+
+Disassembly:
+	0x036D37F8 LDR X0, [X0 + 0x10]
+	0x036D37FC CBZ X0, 0x36D3904
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Boolean get_AutoMergeEnabled()
+
+Disassembly:
+	0x036D3800 LDR X8, [X0]
+	0x036D3804 LDP X9, X1, [X8 + 0x168]
+
+ISIL:
+	001 Move W0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_AutoMergeEnabled(System.Boolean value)
+
+Disassembly:
+	0x036D3808 BLR X9
+	0x036D380C MOV X23, X0
+
+ISIL:
+	001 Move [X0+24], W1
+	002 Return 
+
+Method: System.String get_MenuTag()
+
+Disassembly:
+	0x036D3810 B 0x36D3818
+	0x036D3814 MOV X23, X31
+
+ISIL:
+	001 Move X0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_MenuTag(System.String value)
+
+Disassembly:
+	0x036D3818 LDR X0, [X31 + 0x8]
+	0x036D381C CBZ X0, 0x36D3904
+
+ISIL:
+	001 Move [X0+32], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x036D3820 MOV X1, X31
+
+ISIL:
+	001 Call PlayerAction..ctor, X0
+	002 Return 
+
+Method: System.Void .ctor(Code.GameLogic.GameEvents.CoreSupportEventId eventId, System.Boolean autoMergeEnabled, System.String menuTag)
+
+Disassembly:
+	0x036D3824 BL 0x33B0C9C
+	0x036D3828 CBZ X22, 0x36D3904
+	0x036D382C ADRP X8, 0x2063000
+	0x036D3830 MOV W24, W0
+	0x036D3834 LDR X8, [X8 + 0x4A8]
+	0x036D3838 LDR W22, [X22 + 0x18]
+	0x036D383C LDR X0, [X8]
+	0x036D3840 BL 0x239BB80
+	0x036D3844 MOV X1, X20
+	0x036D3848 MOV X2, X23
+	0x036D384C MOV W3, W24
+	0x036D3850 MOV W4, W22
+	0x036D3854 MOV X5, X31
+	0x036D3858 MOV X21, X0
+	0x036D385C BL 0x37699D4
+	0x036D3860 CBZ X19, 0x36D3904
+	0x036D3864 LDR X8, [X19]
+	0x036D3868 LDR X1, [X26]
+	0x036D386C LDRH W9, [X8 + 0x12E]
+	0x036D3870 CBZ X9, 0x36D3894
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31+16], X22
+	003 Move [X31+24], X21
+	004 Move [X31+32], X20
+	005 Move [X31+40], X19
+	006 Move X19, X3
+	007 Move W20, W2
+	008 Move X21, X1
+	009 Move X22, X0
+	010 Call PlayerAction..ctor, X0
+	011 Move X0, X22
+	012 Move X1, X21
+	013 Move [X0+16], X21
+	014 Call 0x239F888
+	015 Move [X22+32], X19
+	016 Move X0, X22
+	017 Move X1, X19
+	018 NotImplemented "Instruction STURB not yet implemented."
+	019 Move X20, [X31+32]
+	020 Move X19, [X31+40]
+	021 Move X22, [X31+16]
+	022 Move X21, [X31+24]
+	023 Move X30, [X31+48]
+	024 Call 0x239F888
+	025 Return 
+
+Method: Metaplay.Core.Model.MetaActionResult Execute(GameLogic.Player.PlayerModel player, System.Boolean commit)
+
+Disassembly:
+	0x036D3874 LDR X10, [X8 + 0xB0]
+	0x036D3878 ADD X10, X10, 0x8
+	0x036D387C LDUR X11, [X10 - 0x8]
+	0x036D3880 CMP X11, X1
+	0x036D3884 B.EQ 0x36D38A4
+	0x036D3888 SUBS X9, X9, 0x1
+	0x036D388C ADD X10, X10, 0x10
+	0x036D3890 B.NE 0x36D387C
+	0x036D3894 MOV X0, X19
+	0x036D3898 MOVZ W2, 0x65
+	0x036D389C BL 0x23D527C
+	0x036D38A0 B 0x36D38B4
+	0x036D38A4 LDR W9, [X10]
+	0x036D38A8 ADD W9, W9, 0x65
+	0x036D38AC ADD X8, X8, W9, 0x4, SXTW
+	0x036D38B0 ADD X0, X8, 0x138
+	0x036D38B4 LDP X8, X3, [X0]
+	0x036D38B8 MOV X0, X19
+	0x036D38BC MOV X1, X21
+	0x036D38C0 MOV W2, W31
+	0x036D38C4 BLR X8
+	0x036D38C8 ADRP X19, 0x2003000
+	0x036D38CC LDR X19, [X19 + 0x7E0]
+	0x036D38D0 LDR X0, [X19]
+	0x036D38D4 LDR W8, [X0 + 0xE4]
+	0x036D38D8 CBNZ W8, 0x36D38E4
+	0x036D38DC BL 0x239BA64
+	0x036D38E0 LDR X0, [X19]
+	0x036D38E4 LDR X8, [X0 + 0xB8]
+	0x036D38E8 LDP X20, X19, [X31 + 0x40]
+	0x036D38EC LDR X0, [X8]
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31-40], X23
+	003 Move [X31+16], X22
+	004 Move [X31+24], X21
+	005 Move [X31+32], X20
+	006 Move [X31+40], X19
+	007 Move W20, W2
+	008 Move W8, [0x265B5AC]
+	009 Move X22, [0x20235D8]
+	010 Move X19, X1
+	011 Move X21, X0
+	012 Move TEMP, X8
+	013 And TEMP, TEMP, 1
+	014 Compare TEMP, 1
+	015 JumpIfEqual {20}
+	016 Move X0, [0x20235D8]
+	017 Call 0x239F8E4
+	018 Move W8, 1
+	019 Move [X23+1452], W8
+	020 Move X0, [X22]
+	021 Move W23, [X21+24]
+	022 Call 0x239FB80
+	023 Move X21, X0
+	024 Call PlayerAction..ctor, X0
+	025 Move X8, [X21]
+	026 And W2, W20, 1
+	027 Move X0, X21
+	028 Move X1, X19
+	029 Move [X21+16], W23
+	030 Move X4, [X8+408]
+	031 Move X3, [X8+416]
+	032 Move X20, [X31+32]
+	033 Move X19, [X31+40]
+	034 Move X22, [X31+16]
+	035 Move X21, [X31+24]
+	036 Move X30, [X31+48]
+	037 Move X23, [X31+56]
+	038 CallNoReturn X4
+

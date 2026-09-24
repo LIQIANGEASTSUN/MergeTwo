@@ -1,0 +1,53 @@
+Type: GameLogic.Player.Items.Pausing.PauseState
+
+Method: System.Boolean get_DecayPaused()
+
+Disassembly:
+	0x03606720 TBNZ X8, 0x0, 0x3606738
+	0x03606724 ADRP X0, 0x20EF000
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_DecayPaused(System.Boolean value)
+
+Disassembly:
+	0x03606728 LDR X0, [X0 + 0x220]
+	0x0360672C BL 0x239B8E4
+
+ISIL:
+	001 Move [X0+16], W1
+	002 Return 
+
+Method: System.Boolean get_ActivationPaused()
+
+Disassembly:
+	0x03606730 MOVZ W8, 0x1
+	0x03606734 STRB W8, [X20 + 0xBAC]
+
+ISIL:
+	001 Move W0, [X0+17]
+	002 Return X0
+
+Method: System.Void set_ActivationPaused(System.Boolean value)
+
+Disassembly:
+	0x03606738 LDR W20, [X19 + 0x10]
+	0x0360673C CBZ W20, 0x3606754
+
+ISIL:
+	001 Move [X0+17], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03606740 CMP W20, 0x1
+	0x03606744 B.NE 0x36067BC
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+

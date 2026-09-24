@@ -1,0 +1,38 @@
+// Namespace: Merger.MergeBoard.View.Layout
+public interface IMergeBoardLayout // TypeDefIndex: 25701
+{
+	// Properties
+	public abstract int GetPositionsCount { get; }
+	public abstract Vector2 GetTileSize { get; }
+	public abstract Vector2 GetScaledTileSize { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract RectTransform GetTransformAtPosition(int index);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract bool TryGetEmptyPosition(IEnumerable<int> occupiedPositions, out int position);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract bool TryGetClosestEmptyPosition(IEnumerable<int> occupiedPositions, int refPosition, out int position);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract IEnumerable<int> GetAllEmptyPositions(IEnumerable<int> occupiedPositions);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract IEnumerable<int> GetAdjacentPositions(int position);
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract IEnumerable<int> GetHorizontalVerticalAdjacentPositions(int position);
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract int get_GetPositionsCount();
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract Vector2 get_GetTileSize();
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract Vector2 get_GetScaledTileSize();
+}
+

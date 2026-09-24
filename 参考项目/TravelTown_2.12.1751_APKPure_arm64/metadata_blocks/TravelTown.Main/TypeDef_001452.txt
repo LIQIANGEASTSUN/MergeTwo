@@ -1,0 +1,57 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ItemsSpawningCapability.<>c // TypeDefIndex: 1452
+{
+	// Fields
+	public static readonly ItemsSpawningCapability.<>c <>9; // 0x0
+	public static Func<ConsumedItemToProducedItemMapping, IMergeItem> <>9__13_0; // 0x8
+	public static Func<WeightedItem, IMergeItem> <>9__13_6; // 0x10
+	public static Func<Combination, IEnumerable<IMergeItem>> <>9__13_1; // 0x18
+	public static Func<WeightedItemSpawnable, IMergeItem> <>9__13_2; // 0x20
+	public static Func<FixedItemSpawnable, IMergeItem> <>9__13_3; // 0x28
+	public static Func<WeightedItemSpawnable, IMergeItem> <>9__13_4; // 0x30
+	public static Func<FixedItemSpawnable, IMergeItem> <>9__13_5; // 0x38
+	public static Func<FixedItemSpawnable, KeyValuePair<IMergeItem, int>> <>9__15_0; // 0x40
+	public static Func<WeightedItemSpawnable, int> <>9__15_1; // 0x48
+	public static Func<WeightedItemSpawnable, KeyValuePair<IMergeItem, int>> <>9__15_2; // 0x50
+
+	// Methods
+
+	// RVA: 0x6011444 Offset: 0x600D444 VA: 0x6011444
+	private static void .cctor() { }
+
+	// RVA: 0x60114AC Offset: 0x600D4AC VA: 0x60114AC
+	public void .ctor() { }
+
+	// RVA: 0x60114B4 Offset: 0x600D4B4 VA: 0x60114B4
+	internal IMergeItem <GetSpawningList>b__13_0(ConsumedItemToProducedItemMapping linkedItem) { }
+
+	// RVA: 0x60114D8 Offset: 0x600D4D8 VA: 0x60114D8
+	internal IEnumerable<IMergeItem> <GetSpawningList>b__13_1(Combination c) { }
+
+	// RVA: 0x60115DC Offset: 0x600D5DC VA: 0x60115DC
+	internal IMergeItem <GetSpawningList>b__13_6(WeightedItem p) { }
+
+	// RVA: 0x6011600 Offset: 0x600D600 VA: 0x6011600
+	internal IMergeItem <GetSpawningList>b__13_2(WeightedItemSpawnable weightedItem) { }
+
+	// RVA: 0x6011624 Offset: 0x600D624 VA: 0x6011624
+	internal IMergeItem <GetSpawningList>b__13_3(FixedItemSpawnable fixedItem) { }
+
+	// RVA: 0x6011648 Offset: 0x600D648 VA: 0x6011648
+	internal IMergeItem <GetSpawningList>b__13_4(WeightedItemSpawnable weightedItem) { }
+
+	// RVA: 0x601166C Offset: 0x600D66C VA: 0x601166C
+	internal IMergeItem <GetSpawningList>b__13_5(FixedItemSpawnable fixedItem) { }
+
+	// RVA: 0x6011690 Offset: 0x600D690 VA: 0x6011690
+	internal KeyValuePair<IMergeItem, int> <GetItemPoolWithSpawnCounts>b__15_0(FixedItemSpawnable fixedItem) { }
+
+	// RVA: 0x6011710 Offset: 0x600D710 VA: 0x6011710
+	internal int <GetItemPoolWithSpawnCounts>b__15_1(WeightedItemSpawnable item) { }
+
+	// RVA: 0x6011728 Offset: 0x600D728 VA: 0x6011728
+	internal KeyValuePair<IMergeItem, int> <GetItemPoolWithSpawnCounts>b__15_2(WeightedItemSpawnable weightedItem) { }
+}
+

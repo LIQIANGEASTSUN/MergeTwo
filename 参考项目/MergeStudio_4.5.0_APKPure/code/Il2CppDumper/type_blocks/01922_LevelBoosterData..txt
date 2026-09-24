@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class LevelBoosterData.<>c // TypeDefIndex: 1922
+{
+	// Fields
+	public static readonly LevelBoosterData.<>c <>9; // 0x0
+	public static Predicate<BoardItemData> <>9__1_0; // 0x4
+
+	// Methods
+
+	// RVA: 0x1929C4C Offset: 0x1929C4C VA: 0x1929C4C
+	private static void .cctor() { }
+
+	// RVA: 0x1929CC0 Offset: 0x1929CC0 VA: 0x1929CC0
+	public void .ctor() { }
+
+	// RVA: 0x1929CC8 Offset: 0x1929CC8 VA: 0x1929CC8
+	internal bool <GetAvailablePositions>b__1_0(BoardItemData match) { }
+}
+

@@ -1,0 +1,24 @@
+// Namespace: Merger.Game.Signal.Combinations
+public class SplitCheckPopupClosedSignal // TypeDefIndex: 9491
+{
+	// Fields
+	[CompilerGenerated]
+	private string <UserAnswer>k__BackingField; // 0x10
+
+	// Properties
+	public string UserAnswer { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x676E4B0 Offset: 0x676A4B0 VA: 0x676E4B0
+	public string get_UserAnswer() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E4B8 Offset: 0x676A4B8 VA: 0x676E4B8
+	public void set_UserAnswer(string value) { }
+
+	// RVA: 0x676E4C0 Offset: 0x676A4C0 VA: 0x676E4C0
+	public void .ctor(string userAnswer) { }
+}
+

@@ -1,0 +1,13 @@
+// Namespace: MergeEngine.Configuration.Definitions
+public enum BoardQueueOrder // TypeDefIndex: 1296
+{
+	// Fields
+	public int value__; // 0x0
+	[EnumMember(Value = "Back")]
+	public const BoardQueueOrder Back = 0;
+	[EnumMember(Value = "Front")]
+	public const BoardQueueOrder Front = 1;
+	[EnumMember(Value = "None")]
+	public const BoardQueueOrder None = 2;
+}
+

@@ -1,0 +1,16 @@
+// Namespace: Merger.Bubbles.Buckets
+public class BucketProbabilityData // TypeDefIndex: 7492
+{
+	// Fields
+	public List<Bucket> Buckets; // 0x10
+	public float GeneralConversionRatio; // 0x18
+	public bool GeneralConversionCalculated; // 0x1C
+	public int ValidBubblesSpawned; // 0x20
+	public int ValidBubblesBurst; // 0x24
+
+	// Methods
+
+	// RVA: 0x6579EC8 Offset: 0x6575EC8 VA: 0x6579EC8
+	public void .ctor() { }
+}
+

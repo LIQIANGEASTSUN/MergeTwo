@@ -1,0 +1,8 @@
+// Namespace: Merger.MergeBoard.Components
+public struct MergeComponent : IComponent // TypeDefIndex: 26011
+{
+	// Fields
+	public MergeType MergeType; // 0x0
+	public string SpecificMergeItem; // 0x8
+}
+

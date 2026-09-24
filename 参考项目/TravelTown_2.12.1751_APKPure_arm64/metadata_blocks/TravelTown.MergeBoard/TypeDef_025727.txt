@@ -1,0 +1,18 @@
+// Namespace: Merger.MergeBoard.Systems
+public class ChargeableSystem : ISystem // TypeDefIndex: 25727
+{
+	// Fields
+	[Inject]
+	private IMergeBoardLayout _layout; // 0x10
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A65460 Offset: 0x6A61460 VA: 0x6A65460 Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A656B4 Offset: 0x6A616B4 VA: 0x6A656B4
+	public void .ctor() { }
+}
+

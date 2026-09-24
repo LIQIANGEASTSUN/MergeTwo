@@ -1,0 +1,34 @@
+// Namespace: DragonPlus.Config.EnergyMergeStage
+public class EnergyMergeStageConfigManager : Manager<EnergyMergeStageConfigManager> // TypeDefIndex: 8668
+{
+	// Fields
+	public bool ConfigFromRemote; // 0x10
+	public List<EnergyMSConfig> EnergyMSConfigList; // 0x14
+	public List<EnergyMSRoundReward> EnergyMSRoundRewardList; // 0x18
+	public List<EnergyMSReward> EnergyMSRewardList; // 0x1C
+	public List<EnergyMSRobot> EnergyMSRobotList; // 0x20
+	public List<EnergyMSScore> EnergyMSScoreList; // 0x24
+	public List<EnergyMSOrder> EnergyMSOrderList; // 0x28
+	public List<EnergyMSItem> EnergyMSItemList; // 0x2C
+	private readonly Dictionary<Type, string> typeToEnum; // 0x30
+
+	// Methods
+
+	// RVA: 0x20A4FEC Offset: 0x20A4FEC VA: 0x20A4FEC
+	private bool CheckTable(Hashtable table) { }
+
+	// RVA: -1 Offset: -1
+	public List<T> GetConfig<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x35F42A4 Offset: 0x35F42A4 VA: 0x35F42A4
+	|-EnergyMergeStageConfigManager.GetConfig<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x20A5214 Offset: 0x20A5214 VA: 0x20A5214
+	public void InitConfig(string configJson) { }
+
+	// RVA: 0x20A58A0 Offset: 0x20A58A0 VA: 0x20A58A0
+	public void .ctor() { }
+}
+

@@ -1,0 +1,49 @@
+Type: Code.GameLogic.GameEvents.ShortLeaderboardEventModel+StageData
+
+Method: System.Void .ctor(Code.GameLogic.GameEvents.ShortLeaderboardEventStageId stageId, Code.GameLogic.GameEvents.PlayerShortLeaderboardEventStageState state)
+
+Disassembly:
+	0x033463D8 SUBS X9, X9, 0x1
+	0x033463DC ADD X10, X10, 0x10
+	0x033463E0 B.NE 0x33463CC
+	0x033463E4 MOV X0, X25
+	0x033463E8 MOV W2, W31
+	0x033463EC BL 0x23D527C
+	0x033463F0 B 0x3346400
+	0x033463F4 LDRSW X9, [X10]
+	0x033463F8 ADD X8, X8, X9, 0x4, LSL
+	0x033463FC ADD X0, X8, 0x138
+	0x03346400 LDP X8, X1, [X0]
+	0x03346404 MOV X0, X25
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move X19, X2
+	005 Move X20, X0
+	006 Move [X0], X1
+	007 Call 0x239F888
+	008 Move [X20+8], X19
+	009 Move X0, X20
+	010 Move X1, X19
+	011 Move X20, [X31+16]
+	012 Move X19, [X31+24]
+	013 Move X30, [X31+32]
+	014 Call 0x239F888
+	015 Return 
+
+Method: System.Boolean IsValid()
+
+Disassembly:
+	0x03343378 LDR X0, [X0 + 0xA0]
+	0x0334337C BL 0x239B8E4
+	0x03343380 MOVZ W8, 0x1
+	0x03343384 STRB W8, [X20 + 0x68F]
+
+ISIL:
+	001 Move X8, [X0+8]
+	002 NotImplemented "Instruction CMP not yet implemented."
+	003 NotImplemented "Instruction CSET not yet implemented."
+	004 Return X0
+

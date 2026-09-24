@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeBoard.<>c__DisplayClass139_1 // TypeDefIndex: 2721
+{
+	// Fields
+	public int currentTotalDifficulty; // 0x8
+
+	// Methods
+
+	// RVA: 0x2C2F960 Offset: 0x2C2F960 VA: 0x2C2F960
+	public void .ctor() { }
+
+	// RVA: 0x2C2F968 Offset: 0x2C2F968 VA: 0x2C2F968
+	internal bool <MergeToProductIceCube>b__1(TableIceItemConfig x) { }
+}
+

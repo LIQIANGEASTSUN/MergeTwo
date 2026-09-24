@@ -1,0 +1,12 @@
+// Namespace: Merger.Boosters.Declarations.Enums
+public enum MergeItemSpawnBehaviour // TypeDefIndex: 7824
+{
+	// Fields
+	public int value__; // 0x0
+	public const MergeItemSpawnBehaviour Undefined = 0;
+	[EnumMember(Value = "spawnWhenBoosterActivated")]
+	public const MergeItemSpawnBehaviour SpawnWhenBoosterActivated = 1;
+	[EnumMember(Value = "spawnToQueueBooster")]
+	public const MergeItemSpawnBehaviour SpawnToQueueBooster = 2;
+}
+

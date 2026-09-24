@@ -1,0 +1,141 @@
+// Namespace: 
+[Serializable]
+public class SummerWatermelonEighTeenConfig : TableBase // TypeDefIndex: 1064
+{
+	// Fields
+	[CompilerGenerated]
+	private int <Id>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private int <LineId>k__BackingField; // 0xC
+	[CompilerGenerated]
+	private List<int> <InitItems>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private int <LineIdChild>k__BackingField; // 0x14
+	[CompilerGenerated]
+	private int <BigBoardUnlockLevel>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private List<int> <NoRecycleItems>k__BackingField; // 0x1C
+	[CompilerGenerated]
+	private int <IsOpenBP>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private int <BpShopID>k__BackingField; // 0x24
+	[CompilerGenerated]
+	private List<int> <UnlockItemIds>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private int <UnlockStep>k__BackingField; // 0x2C
+	[CompilerGenerated]
+	private List<int> <MoveCheckNum>k__BackingField; // 0x30
+
+	// Properties
+	public int Id { get; set; }
+	public int LineId { get; set; }
+	public List<int> InitItems { get; set; }
+	public int LineIdChild { get; set; }
+	public int BigBoardUnlockLevel { get; set; }
+	public List<int> NoRecycleItems { get; set; }
+	public int IsOpenBP { get; set; }
+	public int BpShopID { get; set; }
+	public List<int> UnlockItemIds { get; set; }
+	public int UnlockStep { get; set; }
+	public List<int> MoveCheckNum { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x1ED24BC Offset: 0x1ED24BC VA: 0x1ED24BC
+	public int get_Id() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED24C4 Offset: 0x1ED24C4 VA: 0x1ED24C4
+	public void set_Id(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED24CC Offset: 0x1ED24CC VA: 0x1ED24CC
+	public int get_LineId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED24D4 Offset: 0x1ED24D4 VA: 0x1ED24D4
+	public void set_LineId(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED24DC Offset: 0x1ED24DC VA: 0x1ED24DC
+	public List<int> get_InitItems() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED24E4 Offset: 0x1ED24E4 VA: 0x1ED24E4
+	public void set_InitItems(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED24EC Offset: 0x1ED24EC VA: 0x1ED24EC
+	public int get_LineIdChild() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED24F4 Offset: 0x1ED24F4 VA: 0x1ED24F4
+	public void set_LineIdChild(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED24FC Offset: 0x1ED24FC VA: 0x1ED24FC
+	public int get_BigBoardUnlockLevel() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED2504 Offset: 0x1ED2504 VA: 0x1ED2504
+	public void set_BigBoardUnlockLevel(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED250C Offset: 0x1ED250C VA: 0x1ED250C
+	public List<int> get_NoRecycleItems() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED2514 Offset: 0x1ED2514 VA: 0x1ED2514
+	public void set_NoRecycleItems(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED251C Offset: 0x1ED251C VA: 0x1ED251C
+	public int get_IsOpenBP() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED2524 Offset: 0x1ED2524 VA: 0x1ED2524
+	public void set_IsOpenBP(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED252C Offset: 0x1ED252C VA: 0x1ED252C
+	public int get_BpShopID() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED2534 Offset: 0x1ED2534 VA: 0x1ED2534
+	public void set_BpShopID(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED253C Offset: 0x1ED253C VA: 0x1ED253C
+	public List<int> get_UnlockItemIds() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED2544 Offset: 0x1ED2544 VA: 0x1ED2544
+	public void set_UnlockItemIds(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED254C Offset: 0x1ED254C VA: 0x1ED254C
+	public int get_UnlockStep() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED2554 Offset: 0x1ED2554 VA: 0x1ED2554
+	public void set_UnlockStep(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED255C Offset: 0x1ED255C VA: 0x1ED255C
+	public List<int> get_MoveCheckNum() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED2564 Offset: 0x1ED2564 VA: 0x1ED2564
+	public void set_MoveCheckNum(List<int> value) { }
+
+	// RVA: 0x1ED256C Offset: 0x1ED256C VA: 0x1ED256C Slot: 4
+	public override int GetID() { }
+
+	// RVA: 0x1ED25C0 Offset: 0x1ED25C0 VA: 0x1ED25C0
+	public void .ctor() { }
+
+	// RVA: 0x1ED25C8 Offset: 0x1ED25C8 VA: 0x1ED25C8
+	public int <>iFixBaseProxy_GetID() { }
+}
+

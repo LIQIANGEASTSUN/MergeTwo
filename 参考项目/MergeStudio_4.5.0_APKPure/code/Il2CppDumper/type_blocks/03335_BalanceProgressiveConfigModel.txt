@@ -1,0 +1,19 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class BalanceProgressiveConfigModel // TypeDefIndex: 3335
+{
+	// Fields
+	public bool IsDefault; // 0x8
+	public string SetIdLevel; // 0xC
+	public int TaskLoopStartIndex; // 0x10
+	public List<BalanceProgressiveItemGoalData> ProgressiveItemGoals; // 0x14
+
+	// Methods
+
+	// RVA: 0x1BA8DC8 Offset: 0x1BA8DC8 VA: 0x1BA8DC8
+	public BalanceProgressiveConfigModel GetSewingMachineValue() { }
+
+	// RVA: 0x1BAEA10 Offset: 0x1BAEA10 VA: 0x1BAEA10
+	public void .ctor() { }
+}
+

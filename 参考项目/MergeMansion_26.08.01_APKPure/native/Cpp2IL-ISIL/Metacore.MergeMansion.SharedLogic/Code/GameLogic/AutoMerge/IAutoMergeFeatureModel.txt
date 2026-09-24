@@ -1,0 +1,65 @@
+Type: Code.GameLogic.AutoMerge.IAutoMergeFeatureModel
+
+Method: System.Boolean get_IsAvailable()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_IsUserToggleOn()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Nullable`1<GameLogic.Config.Types.MetacoreTime> get_AvailableSince()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Nullable`1<GameLogic.Config.Types.MetacoreTime> get_AvailableUntil()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_IsActive()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void AddDuration(GameLogic.Config.Types.MetacoreTime startTime, GameLogic.Config.Types.MetacoreDuration duration, Code.GameLogic.AutoMerge.AutoMergeSource source, GameLogic.Player.IPlayerModelClientListener clientListener)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void SetUserToggle(System.Boolean enabled, GameLogic.Player.IPlayerModelClientListener clientListener)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void OnGameTick(Metaplay.Core.MetaTime newTime, GameLogic.Player.IPlayerModelClientListener clientListener)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ForceDeactivate(GameLogic.Player.IPlayerModelClientListener clientListener)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

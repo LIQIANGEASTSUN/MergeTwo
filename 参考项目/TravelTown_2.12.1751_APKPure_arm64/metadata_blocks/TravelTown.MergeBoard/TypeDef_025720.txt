@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ExpendSpawnService.<>c // TypeDefIndex: 25720
+{
+	// Fields
+	public static readonly ExpendSpawnService.<>c <>9; // 0x0
+	public static Func<ValueTuple<Entity, BoardTilePositionComponent>, int> <>9__2_0; // 0x8
+	public static Func<WeightedItemSpawnable, int> <>9__5_0; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A4E7E4 Offset: 0x6A4A7E4 VA: 0x6A4E7E4
+	private static void .cctor() { }
+
+	// RVA: 0x6A4E84C Offset: 0x6A4A84C VA: 0x6A4E84C
+	public void .ctor() { }
+
+	// RVA: 0x6A4E854 Offset: 0x6A4A854 VA: 0x6A4E854
+	internal int <TrySpawnExpendedItems>b__2_0(ValueTuple<Entity, BoardTilePositionComponent> e) { }
+
+	// RVA: 0x6A4E85C Offset: 0x6A4A85C VA: 0x6A4E85C
+	internal int <SelectWeightedItem>b__5_0(WeightedItemSpawnable item) { }
+}
+

@@ -1,0 +1,4 @@
+// Namespace: Merger.MergeBoard.Components
+public struct DeadComponent : IComponent // TypeDefIndex: 25995
+{}
+

@@ -1,0 +1,55 @@
+// Namespace: MergeEngine.Signal.Board
+public class EnqueueItemSignal // TypeDefIndex: 262
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly IMergeItem <MergeItem>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly Entity <Entity>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private readonly BoardItemPosition <SourcePosition>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private readonly BoardQueueOrder <BoardQueueOrder>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private readonly ResourceSource <Source>k__BackingField; // 0x2C
+	[CompilerGenerated]
+	private readonly bool <SlideBoardItemToQueue>k__BackingField; // 0x30
+
+	// Properties
+	public IMergeItem MergeItem { get; }
+	public Entity Entity { get; }
+	public BoardItemPosition SourcePosition { get; }
+	public BoardQueueOrder BoardQueueOrder { get; }
+	public ResourceSource Source { get; }
+	public bool SlideBoardItemToQueue { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5FF4928 Offset: 0x5FF0928 VA: 0x5FF4928
+	public IMergeItem get_MergeItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF4930 Offset: 0x5FF0930 VA: 0x5FF4930
+	public Entity get_Entity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF4938 Offset: 0x5FF0938 VA: 0x5FF4938
+	public BoardItemPosition get_SourcePosition() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF4940 Offset: 0x5FF0940 VA: 0x5FF4940
+	public BoardQueueOrder get_BoardQueueOrder() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF4948 Offset: 0x5FF0948 VA: 0x5FF4948
+	public ResourceSource get_Source() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF4950 Offset: 0x5FF0950 VA: 0x5FF4950
+	public bool get_SlideBoardItemToQueue() { }
+
+	// RVA: 0x5FF4958 Offset: 0x5FF0958 VA: 0x5FF4958
+	public void .ctor(IMergeItem mergeItem, Entity entity, BoardItemPosition sourcePosition, BoardQueueOrder boardQueueOrder, ResourceSource source, bool slideBoardItemToQueue = False) { }
+}
+

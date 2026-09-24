@@ -1,0 +1,20 @@
+// Namespace: Merger.DynamicMergeItems
+[Serializable]
+public class DynamicMergeItemConfig // TypeDefIndex: 6898
+{
+	// Fields
+	[JsonProperty("dynamicMergeItemId")]
+	public string DynamicMergeItemId; // 0x10
+	[JsonProperty("produce")]
+	public DynamicProduceCapability ProduceCapability; // 0x18
+	[JsonProperty("expend")]
+	public DynamicExpendCapability ExpendCapability; // 0x20
+	[JsonProperty("infoPopup")]
+	public DynamicMergeItemInfoPopup InfoPopup; // 0x28
+
+	// Methods
+
+	// RVA: 0x64CE778 Offset: 0x64CA778 VA: 0x64CE778
+	public void .ctor() { }
+}
+

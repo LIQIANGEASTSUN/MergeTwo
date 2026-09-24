@@ -1,0 +1,18 @@
+// Namespace: MergeEngine.Model
+public interface IPlayerItemsCollectionModel // TypeDefIndex: 427
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract bool IsItemCollected(string id);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract bool IsItemCreated(string id);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract bool TryAddDiscoveredItem(IMergeItem item);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract bool TryAddCreatedItem(IMergeItem item);
+}
+

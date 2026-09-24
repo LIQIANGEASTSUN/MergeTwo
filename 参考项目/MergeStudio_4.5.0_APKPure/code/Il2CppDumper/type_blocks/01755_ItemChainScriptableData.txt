@@ -1,0 +1,32 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "ItemChainData", menuName = "Scriptable/NewSpawner/ItemChainData", order = 0)]
+public class ItemChainScriptableData : ScriptableObject // TypeDefIndex: 1755
+{
+	// Fields
+	public int ChainIndex; // 0xC
+	[SerializeField]
+	private List<ItemChainScriptableData> ChildrenChains; // 0x10
+	[SerializeField]
+	private List<ItemLinkScriptableData> SerializedLinks; // 0x14
+
+	// Properties
+	public IReadOnlyList<ItemLinkScriptableData> Links { get; }
+
+	// Methods
+
+	// RVA: 0x19122DC Offset: 0x19122DC VA: 0x19122DC
+	public IReadOnlyList<ItemLinkScriptableData> get_Links() { }
+
+	// RVA: 0x1905888 Offset: 0x1905888 VA: 0x1905888
+	public ItemChainModel ToModel() { }
+
+	// RVA: 0x1906CD4 Offset: 0x1906CD4 VA: 0x1906CD4
+	public ItemLinkScriptableData GetLinkDataByID(ItemLinkID linkID) { }
+
+	// RVA: 0x190BE64 Offset: 0x190BE64 VA: 0x190BE64
+	public List<ItemChainScriptableData> GetChildrenList() { }
+
+	// RVA: 0x1912600 Offset: 0x1912600 VA: 0x1912600
+	public void .ctor() { }
+}
+

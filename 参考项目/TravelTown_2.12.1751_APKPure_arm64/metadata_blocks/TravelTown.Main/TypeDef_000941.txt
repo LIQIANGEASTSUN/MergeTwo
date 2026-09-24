@@ -1,0 +1,44 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BaseToolAnalysisSystem.<>c__DisplayClass27_0<T> // TypeDefIndex: 941
+{
+	// Fields
+	public IMergeGraphItem toolGraph; // 0x0
+	public BaseToolAnalysisSystem<T> <>4__this; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F4D984 Offset: 0x3F49984 VA: 0x3F4D984
+	|-BaseToolAnalysisSystem.<>c__DisplayClass27_0<object>..ctor
+	|
+	|-RVA: 0x3F4DCE8 Offset: 0x3F49CE8 VA: 0x3F4DCE8
+	|-BaseToolAnalysisSystem.<>c__DisplayClass27_0<__Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal bool <CalculateItemsLevelSum>b__0(IMergeItem item) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F4D98C Offset: 0x3F4998C VA: 0x3F4D98C
+	|-BaseToolAnalysisSystem.<>c__DisplayClass27_0<object>.<CalculateItemsLevelSum>b__0
+	|
+	|-RVA: 0x3F4DCF0 Offset: 0x3F49CF0 VA: 0x3F4DCF0
+	|-BaseToolAnalysisSystem.<>c__DisplayClass27_0<__Il2CppFullySharedGenericType>.<CalculateItemsLevelSum>b__0
+	*/
+
+	// RVA: -1 Offset: -1
+	internal int <CalculateItemsLevelSum>b__1(IMergeItem item) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F4DA54 Offset: 0x3F49A54 VA: 0x3F4DA54
+	|-BaseToolAnalysisSystem.<>c__DisplayClass27_0<object>.<CalculateItemsLevelSum>b__1
+	|
+	|-RVA: 0x3F4DDB8 Offset: 0x3F49DB8 VA: 0x3F4DDB8
+	|-BaseToolAnalysisSystem.<>c__DisplayClass27_0<__Il2CppFullySharedGenericType>.<CalculateItemsLevelSum>b__1
+	*/
+}
+

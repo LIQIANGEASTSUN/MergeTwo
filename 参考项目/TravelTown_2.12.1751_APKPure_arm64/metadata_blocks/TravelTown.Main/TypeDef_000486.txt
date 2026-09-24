@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class PushedRngItemsModel.<>c__DisplayClass9_0 // TypeDefIndex: 486
+{
+	// Fields
+	public string eventId; // 0x10
+	public Func<PushedRngItem, bool> <>9__0; // 0x18
+
+	// Methods
+
+	// RVA: 0x612F5AC Offset: 0x612B5AC VA: 0x612F5AC
+	public void .ctor() { }
+
+	// RVA: 0x612FB80 Offset: 0x612BB80 VA: 0x612FB80
+	internal bool <ClearCache>b__0(PushedRngItem e) { }
+}
+

@@ -1,0 +1,10 @@
+// Namespace: 
+public struct BoardEvent.InitializeInventory : IEvent // TypeDefIndex: 1781
+{
+	// Fields
+	public BoardEntity BoardEntity; // 0x0
+	public EventEntity EventEntity; // 0x4
+	public bool IsInventoryDisabled; // 0x8
+	public BoardParticleFactory BoardParticleFactory; // 0xC
+}
+

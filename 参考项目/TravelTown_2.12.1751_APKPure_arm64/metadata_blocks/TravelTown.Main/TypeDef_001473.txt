@@ -1,0 +1,9 @@
+// Namespace: MergeEngine.Configuration.Board
+public interface IBoard : IUniqueStringKeyAsset // TypeDefIndex: 1473
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract MergeBoardItem[,] GetBoardItems();
+}
+

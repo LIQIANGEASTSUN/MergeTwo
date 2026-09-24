@@ -1,0 +1,37 @@
+Type: GameLogic.Player.Items.IOnFireFeatures
+
+Method: System.Boolean get_SupportsOnFire()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.IItemDefinition GetActivationItem(GameLogic.Random.IGenerationContext generationContext, GameLogic.Player.Items.Production.ProducerContext producerContext, System.Collections.Generic.IEnumerable`1<GameLogic.Player.Items.IItemDefinition> allowedItems = null)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean IsInInitialSequence(GameLogic.Player.IPlayer generationContext, GameLogic.Player.Items.Production.ProducerContext producerContext)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Player.Items.IItemDefinition> GetActivationSpawnItems(GameLogic.Random.IGenerationContext generationContext, GameLogic.Player.Items.Production.ProducerContext producerContext)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 GetItemsPerActivation(GameLogic.Player.Items.IMergeItem mergeItem, GameLogic.Player.IPlayer player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

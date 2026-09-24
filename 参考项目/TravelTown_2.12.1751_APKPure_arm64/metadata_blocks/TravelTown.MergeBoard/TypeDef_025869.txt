@@ -1,0 +1,21 @@
+// Namespace: Merger.MergeBoard.Logic.BoardOperations
+public class BoardInteractionOperationDataCreator : BoardOperationDataCreator // TypeDefIndex: 25869
+{
+	// Properties
+	public override string OperationType { get; }
+
+	// Methods
+
+	// RVA: 0x6A8C10C Offset: 0x6A8810C VA: 0x6A8C10C Slot: 7
+	public override string get_OperationType() { }
+
+	// RVA: 0x6A8C14C Offset: 0x6A8814C VA: 0x6A8C14C Slot: 6
+	public override List<MergeBoardItemNotificationData> CreateOperationData(TickArgs tickArgs) { }
+
+	// RVA: 0x6A8CB04 Offset: 0x6A88B04 VA: 0x6A8CB04
+	private HashSet<Entity> GetCollectedEntities(TickArgs tickArgs) { }
+
+	// RVA: 0x6A8D118 Offset: 0x6A89118 VA: 0x6A8D118
+	public void .ctor() { }
+}
+

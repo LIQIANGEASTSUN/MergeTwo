@@ -1,0 +1,27 @@
+// Namespace: Merger.MergeBoard.PowerBoost.Signals
+public class MergeBoardPowerBoostSwitchPressedSignal // TypeDefIndex: 32779
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly int <SelectedCost>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly bool <IsOn>k__BackingField; // 0x14
+
+	// Properties
+	public int SelectedCost { get; }
+	public bool IsOn { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6ACD41C Offset: 0x6AC941C VA: 0x6ACD41C
+	public int get_SelectedCost() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6ACD424 Offset: 0x6AC9424 VA: 0x6ACD424
+	public bool get_IsOn() { }
+
+	// RVA: 0x6ACC608 Offset: 0x6AC8608 VA: 0x6ACC608
+	public void .ctor(int selectedCost, bool isOn) { }
+}
+

@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+private struct MiniBoardRewardAreaController.<RemoveTopItemFromRewardArea>d__30 : IAsyncStateMachine // TypeDefIndex: 1171
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncVoidMethodBuilder <>t__builder; // 0x4
+	public MiniBoardRewardAreaController <>4__this; // 0x14
+	private bool <activeRewardFound>5__2; // 0x18
+	private UniTask.Awaiter <>u__1; // 0x1C
+
+	// Methods
+
+	// RVA: 0x17DD450 Offset: 0x17DD450 VA: 0x17DD450 Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x17DD938 Offset: 0x17DD938 VA: 0x17DD938 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

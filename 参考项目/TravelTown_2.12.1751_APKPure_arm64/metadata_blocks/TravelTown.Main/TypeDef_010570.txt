@@ -1,0 +1,21 @@
+// Namespace: Framework.Core.Services
+public class ServiceBase : Base, IInitializable, IDisposable // TypeDefIndex: 10570
+{
+	// Methods
+
+	// RVA: 0x68C9784 Offset: 0x68C5784 VA: 0x68C9784 Slot: 15
+	private void Zenject.IInitializable.Initialize() { }
+
+	// RVA: 0x68C9794 Offset: 0x68C5794 VA: 0x68C9794 Slot: 16
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x68C97BC Offset: 0x68C57BC VA: 0x68C97BC Slot: 17
+	protected virtual void InitializeService() { }
+
+	// RVA: 0x68C97C0 Offset: 0x68C57C0 VA: 0x68C97C0 Slot: 18
+	protected virtual void DisposeService() { }
+
+	// RVA: 0x68C97C4 Offset: 0x68C57C4 VA: 0x68C97C4
+	public void .ctor() { }
+}
+

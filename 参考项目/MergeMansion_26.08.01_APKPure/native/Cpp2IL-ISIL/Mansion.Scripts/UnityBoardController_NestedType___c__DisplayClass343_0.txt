@@ -1,0 +1,97 @@
+Type: UnityBoardController+<>c__DisplayClass343_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03277710 LDR X8, [X21]
+	0x03277714 LDR X10, [X10 + 0xD10]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <CheckIfRemovedActIsMissing>b__0(GameLogic.Merge.MergeBoardAct act)
+
+Disassembly:
+	0x03277718 LDRH W22, [X31 + 0xA8]
+	0x0327771C LDRH W9, [X8 + 0x12E]
+	0x03277720 LDR X1, [X10]
+	0x03277724 CBZ X9, 0x3277748
+	0x03277728 LDR X10, [X8 + 0xB0]
+	0x0327772C ADD X10, X10, 0x8
+	0x03277730 LDUR X11, [X10 - 0x8]
+	0x03277734 CMP X11, X1
+	0x03277738 B.EQ 0x3277758
+	0x0327773C SUBS X9, X9, 0x1
+	0x03277740 ADD X10, X10, 0x10
+	0x03277744 B.NE 0x3277730
+	0x03277748 MOV X0, X21
+	0x0327774C MOVZ W2, 0x2
+	0x03277750 BL 0x23D527C
+	0x03277754 B 0x3277768
+	0x03277758 LDR W9, [X10]
+	0x0327775C ADD W9, W9, 0x2
+	0x03277760 ADD X8, X8, W9, 0x4, SXTW
+	0x03277764 ADD X0, X8, 0x138
+	0x03277768 LDP X8, X2, [X0]
+	0x0327776C MOV X0, X21
+	0x03277770 MOV W1, W22
+	0x03277774 BLR X8
+	0x03277778 LDR W8, [X19 + 0x2C]
+	0x0327777C CMP W8, 0x1
+	0x03277780 B.NE 0x32778F0
+	0x03277784 ADRP X8, 0x249A000
+	0x03277788 LDR X8, [X8 + 0x918]
+	0x0327778C LDR X0, [X8]
+	0x03277790 BL 0x239BB80
+	0x03277794 MOV X1, X31
+	0x03277798 MOV X21, X0
+	0x0327779C BL 0x44E8DEC
+	0x032777A0 CBZ X21, 0x3277B3C
+	0x032777A4 LDR X1, [X19 + 0x48]
+	0x032777A8 MOV X0, X21
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31+16], X22
+	003 Move [X31+24], X21
+	004 Move [X31+32], X20
+	005 Move [X31+40], X19
+	006 Move X19, X1
+	007 Move W8, [0x2AB51DC]
+	008 Move X21, [0x2472610]
+	009 Move X20, X0
+	010 Move TEMP, X8
+	011 And TEMP, TEMP, 1
+	012 Compare TEMP, 1
+	013 JumpIfEqual {18}
+	014 Move X0, [0x2472610]
+	015 Call 0x239F8E4
+	016 Move W8, 1
+	017 Move [X22+476], W8
+	018 Move X0, [X21]
+	019 Move W8, [X0+228]
+	020 Compare W8, 0
+	021 JumpIfNotEqual {23}
+	022 Call 0x239FA64
+	023 Move W8, [X19+12]
+	024 Move W9, [X20+16]
+	025 NotImplemented "Instruction CMP not yet implemented."
+	026 Move X0, [X21]
+	027 Move W8, [X0+228]
+	028 Compare W8, 0
+	029 JumpIfNotEqual {31}
+	030 Call 0x239FA64
+	031 Move W8, [X19+16]
+	032 Move W9, [X20+20]
+	033 NotImplemented "Instruction CMP not yet implemented."
+	034 NotImplemented "Instruction CSET not yet implemented."
+	035 Move W0, W31
+	036 Move X20, [X31+32]
+	037 Move X19, [X31+40]
+	038 Move X22, [X31+16]
+	039 Move X21, [X31+24]
+	040 Move X30, [X31+48]
+	041 Return X0
+

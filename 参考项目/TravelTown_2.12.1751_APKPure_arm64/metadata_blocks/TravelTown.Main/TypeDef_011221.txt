@@ -1,0 +1,21 @@
+// Namespace: Framework.Core.MVVM.Model
+public class ModelBase : Base, IInitializable, IDisposable // TypeDefIndex: 11221
+{
+	// Methods
+
+	// RVA: 0x694BF18 Offset: 0x6947F18 VA: 0x694BF18 Slot: 15
+	private void Zenject.IInitializable.Initialize() { }
+
+	// RVA: 0x694BF28 Offset: 0x6947F28 VA: 0x694BF28 Slot: 16
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x694BF50 Offset: 0x6947F50 VA: 0x694BF50 Slot: 17
+	protected virtual void InitializeModel() { }
+
+	// RVA: 0x694BF54 Offset: 0x6947F54 VA: 0x694BF54 Slot: 18
+	protected virtual void DisposeModel() { }
+
+	// RVA: 0x694BF58 Offset: 0x6947F58 VA: 0x694BF58
+	public void .ctor() { }
+}
+

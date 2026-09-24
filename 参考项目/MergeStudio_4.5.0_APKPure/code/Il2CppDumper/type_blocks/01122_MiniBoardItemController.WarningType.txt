@@ -1,0 +1,18 @@
+// Namespace: 
+public enum MiniBoardItemController.WarningType // TypeDefIndex: 1122
+{
+	// Fields
+	public int value__; // 0x0
+	public const MiniBoardItemController.WarningType RECHARGING = 0;
+	public const MiniBoardItemController.WarningType BOARD_FULL = 1;
+	public const MiniBoardItemController.WarningType FULL = 2;
+	public const MiniBoardItemController.WarningType BUBBLE = 3;
+	public const MiniBoardItemController.WarningType LOCKED = 4;
+	public const MiniBoardItemController.WarningType ONLY1CHEST = 5;
+	public const MiniBoardItemController.WarningType FULLY_CHARGED = 6;
+	public const MiniBoardItemController.WarningType CANNOT_MERGE = 7;
+	public const MiniBoardItemController.WarningType CAN_NOT_STORE_INVENTORY = 8;
+	public const MiniBoardItemController.WarningType NEW_ITEM_FOUND = 9;
+	public const MiniBoardItemController.WarningType KEEP_PLAYING_UNLOCKED = 10;
+}
+

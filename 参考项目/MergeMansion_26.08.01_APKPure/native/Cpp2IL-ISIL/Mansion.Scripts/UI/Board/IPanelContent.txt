@@ -1,0 +1,16 @@
+Type: UI.Board.IPanelContent
+
+Method: System.String get_Title()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.String get_Description()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

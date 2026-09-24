@@ -1,0 +1,29 @@
+// Namespace: 
+[Serializable]
+public class TableMergeLine : TableBase // TypeDefIndex: 2039
+{
+	// Fields
+	public int id; // 0x8
+	public string name; // 0xC
+	public int type; // 0x10
+	public int group; // 0x14
+	public bool customSort; // 0x18
+	public int amount; // 0x1C
+	public int[] output; // 0x20
+	public int[] re_line; // 0x24
+	public int[] presetDropQueue; // 0x28
+	public int[] presetDropQueue1; // 0x2C
+	public bool Sales_Protect; // 0x30
+
+	// Methods
+
+	// RVA: 0x29AC068 Offset: 0x29AC068 VA: 0x29AC068 Slot: 4
+	public override int GetID() { }
+
+	// RVA: 0x29AC0BC Offset: 0x29AC0BC VA: 0x29AC0BC
+	public void .ctor() { }
+
+	// RVA: 0x29AC0C4 Offset: 0x29AC0C4 VA: 0x29AC0C4
+	public int <>iFixBaseProxy_GetID() { }
+}
+

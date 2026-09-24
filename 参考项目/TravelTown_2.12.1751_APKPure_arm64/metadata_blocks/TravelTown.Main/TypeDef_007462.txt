@@ -1,0 +1,45 @@
+// Namespace: Merger.Bubbles.Modifiers
+public abstract class BubbleDropProbabilityModifierBase : IBubbleDropProbabilityModifier // TypeDefIndex: 7462
+{
+	// Fields
+	[CompilerGenerated]
+	private SmarterBubblesConfig <SmarterBubblesConfig>k__BackingField; // 0x10
+	protected string _analyticsString; // 0x18
+
+	// Properties
+	public abstract bool IsEnabled { get; }
+	public abstract string AnalyticsString { get; }
+	public SmarterBubblesConfig SmarterBubblesConfig { get; set; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 12
+	public abstract bool get_IsEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 13
+	public abstract string get_AnalyticsString();
+
+	[CompilerGenerated]
+	// RVA: 0x657D298 Offset: 0x6579298 VA: 0x657D298 Slot: 6
+	public SmarterBubblesConfig get_SmarterBubblesConfig() { }
+
+	[CompilerGenerated]
+	// RVA: 0x657D2A0 Offset: 0x65792A0 VA: 0x657D2A0 Slot: 7
+	public void set_SmarterBubblesConfig(SmarterBubblesConfig value) { }
+
+	// RVA: 0x657D2A8 Offset: 0x65792A8 VA: 0x657D2A8 Slot: 14
+	public virtual void Reset() { }
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public abstract void TryModifyProbability(ref float probability, IMergeItem mergeItem, SmarterBubblesCheatData cheatData);
+
+	// RVA: 0x657C14C Offset: 0x657814C VA: 0x657C14C Slot: 16
+	public virtual void Initialize() { }
+
+	// RVA: 0x657D2AC Offset: 0x65792AC VA: 0x657D2AC Slot: 17
+	public virtual void Update() { }
+
+	// RVA: 0x657CC24 Offset: 0x6578C24 VA: 0x657CC24
+	protected void .ctor() { }
+}
+

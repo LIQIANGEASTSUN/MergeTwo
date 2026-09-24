@@ -1,0 +1,16 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public interface IIdComponent // TypeDefIndex: 1065
+{
+	// Properties
+	public abstract string Id { get; }
+	public abstract string Uuid { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract string get_Id();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract string get_Uuid();
+}
+

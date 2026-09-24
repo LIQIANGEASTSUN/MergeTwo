@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class Reward.<>c__DisplayClass106_0 // TypeDefIndex: 1322
+{
+	// Fields
+	public IRewardType rewardType; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A2D8B4 Offset: 0x6A298B4 VA: 0x6A2D8B4
+	public void .ctor() { }
+
+	// RVA: 0x6A2E594 Offset: 0x6A2A594 VA: 0x6A2E594
+	internal bool <Count>b__0(IRewardViewData r) { }
+}
+

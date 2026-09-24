@@ -1,0 +1,12 @@
+// Namespace: Merger.TimeLimitedItems.Providers
+public interface ITimeLimitedItemsCleanUpItemsProvider // TypeDefIndex: 32834
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract List<Entity> GetBoardEntitiesToDestroy(HashSet<string> graphIds);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract List<QueuedItem> GetQueuedItemsToDestroy(HashSet<string> graphIds);
+}
+

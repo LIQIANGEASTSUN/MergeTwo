@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ItemChainManager.SpawnerPointsQueryHandler.<>c // TypeDefIndex: 1717
+{
+	// Fields
+	public static readonly ItemChainManager.SpawnerPointsQueryHandler.<>c <>9; // 0x0
+	public static Func<ItemChainManager.SpawnerPointsQuery, int> <>9__4_0; // 0x4
+
+	// Methods
+
+	// RVA: 0x190F208 Offset: 0x190F208 VA: 0x190F208
+	private static void .cctor() { }
+
+	// RVA: 0x190F27C Offset: 0x190F27C VA: 0x190F27C
+	public void .ctor() { }
+
+	// RVA: 0x190F284 Offset: 0x190F284 VA: 0x190F284
+	internal int <GetTotalPointsForSetIDQuery>b__4_0(ItemChainManager.SpawnerPointsQuery q) { }
+}
+

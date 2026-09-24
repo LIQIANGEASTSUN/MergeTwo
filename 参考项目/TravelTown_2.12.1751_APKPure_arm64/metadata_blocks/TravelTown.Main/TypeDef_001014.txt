@@ -1,0 +1,14 @@
+// Namespace: MergeEngine.ECS.Components
+public interface IModifiableComponent<TLoadable> // TypeDefIndex: 1014
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void AppendToComponent(TLoadable componentData);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IModifiableComponent<object>.AppendToComponent
+	*/
+}
+

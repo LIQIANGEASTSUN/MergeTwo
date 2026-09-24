@@ -1,0 +1,33 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class TimeLockSystem.<>c // TypeDefIndex: 25784
+{
+	// Fields
+	public static readonly TimeLockSystem.<>c <>9; // 0x0
+	public static Func<ValueTuple<Entity, TimeLockComponent, BoardTilePositionComponent, IdComponent>, bool> <>9__2_0; // 0x8
+	public static Func<ValueTuple<Entity, TimeLockComponent, BoardTilePositionComponent, IdComponent>, TimeLockGroup> <>9__2_1; // 0x10
+	public static Func<ValueTuple<Entity, TimeLockComponent>, bool> <>9__7_0; // 0x18
+	public static Func<ValueTuple<Entity, TimeLockComponent>, TimeLockGroup> <>9__7_1; // 0x20
+
+	// Methods
+
+	// RVA: 0x6A78E2C Offset: 0x6A74E2C VA: 0x6A78E2C
+	private static void .cctor() { }
+
+	// RVA: 0x6A78E94 Offset: 0x6A74E94 VA: 0x6A78E94
+	public void .ctor() { }
+
+	// RVA: 0x6A78E9C Offset: 0x6A74E9C VA: 0x6A78E9C
+	internal bool <ProcessIntervalTick>b__2_0(ValueTuple<Entity, TimeLockComponent, BoardTilePositionComponent, IdComponent> e) { }
+
+	// RVA: 0x6A78EBC Offset: 0x6A74EBC VA: 0x6A78EBC
+	internal TimeLockGroup <ProcessIntervalTick>b__2_1(ValueTuple<Entity, TimeLockComponent, BoardTilePositionComponent, IdComponent> e) { }
+
+	// RVA: 0x6A78EC4 Offset: 0x6A74EC4 VA: 0x6A78EC4
+	internal bool <ApplyGroupLockBlock>b__7_0(ValueTuple<Entity, TimeLockComponent> e) { }
+
+	// RVA: 0x6A78EE4 Offset: 0x6A74EE4 VA: 0x6A78EE4
+	internal TimeLockGroup <ApplyGroupLockBlock>b__7_1(ValueTuple<Entity, TimeLockComponent> e) { }
+}
+

@@ -1,0 +1,14 @@
+Type: GameLogic.Player.EnergyTypeExtensions
+
+Method: System.Boolean UsesInfiniteEnergy(GameLogic.Player.EnergyType energyType)
+
+Disassembly:
+	0x035334A4 MOV X0, X19
+	0x035334A8 MOV W2, W31
+	0x035334AC BL 0x23D527C
+
+ISIL:
+	001 NotImplemented "Instruction CMP not yet implemented."
+	002 NotImplemented "Instruction CSET not yet implemented."
+	003 Return X0
+

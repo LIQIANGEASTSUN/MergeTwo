@@ -1,0 +1,19 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardView.<>c__DisplayClass148_0 // TypeDefIndex: 8582
+{
+	// Fields
+	public IBoardItemView itemToSlide; // 0x10
+	public BoardView <>4__this; // 0x18
+	public BoardItemPosition itemAtPosition; // 0x20
+	public TweenCallback slideCompleted; // 0x28
+
+	// Methods
+
+	// RVA: 0x6698944 Offset: 0x6694944 VA: 0x6698944
+	public void .ctor() { }
+
+	// RVA: 0x669A420 Offset: 0x6696420 VA: 0x669A420
+	internal void <SlideBoosterIn>b__0() { }
+}
+

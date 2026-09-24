@@ -1,0 +1,69 @@
+// Namespace: Merger.MergeBoard.View.Items
+public class MergeBoardItemsContainer : ViewBase<MergeBoardItemCreatorViewModel>, IBoardItemsContainerProvider // TypeDefIndex: 25709
+{
+	// Fields
+	[SerializeField]
+	private PrefabObjectPool _itemsPool; // 0x30
+	[SerializeField]
+	private MergeBoardItemBehavioursHandler _itemBehavioursHandler; // 0x38
+	[SerializeField]
+	private BlockerItemViewLoader _blockerItemViewLoader; // 0x40
+	private readonly Dictionary<Entity, IBoardItemView> _items; // 0x48
+	private bool _initialized; // 0x50
+	[CompilerGenerated]
+	private Action<IBoardItemView> ItemAdded; // 0x58
+	[CompilerGenerated]
+	private Action<IBoardItemView> ItemRemoved; // 0x60
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A33FC4 Offset: 0x6A2FFC4 VA: 0x6A33FC4
+	public void add_ItemAdded(Action<IBoardItemView> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A341F4 Offset: 0x6A301F4 VA: 0x6A341F4
+	public void remove_ItemAdded(Action<IBoardItemView> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A34074 Offset: 0x6A30074 VA: 0x6A34074
+	public void add_ItemRemoved(Action<IBoardItemView> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A342A4 Offset: 0x6A302A4 VA: 0x6A342A4
+	public void remove_ItemRemoved(Action<IBoardItemView> value) { }
+
+	// RVA: 0x6A38260 Offset: 0x6A34260 VA: 0x6A38260
+	public void Initialize() { }
+
+	// RVA: 0x6A3A948 Offset: 0x6A36948 VA: 0x6A3A948
+	public IBoardItemView AddBoardItem(int index, Entity entity) { }
+
+	// RVA: 0x6A39214 Offset: 0x6A35214 VA: 0x6A39214
+	public bool IsItemExists(Entity entity) { }
+
+	// RVA: 0x6A36FA4 Offset: 0x6A32FA4 VA: 0x6A36FA4
+	public IBoardItemView GetItemView(Entity entity) { }
+
+	// RVA: 0x6A3A8B0 Offset: 0x6A368B0 VA: 0x6A3A8B0
+	public bool RemoveItem(Entity entity) { }
+
+	// RVA: 0x6A34628 Offset: 0x6A30628 VA: 0x6A34628
+	public IEnumerable<IBoardItemView> GetAllItemViews() { }
+
+	// RVA: 0x6A44BC8 Offset: 0x6A40BC8 VA: 0x6A44BC8 Slot: 8
+	public IEnumerable<KeyValuePair<Entity, IBoardItemView>> GetAllItems() { }
+
+	// RVA: 0x6A34678 Offset: 0x6A30678 VA: 0x6A34678
+	public Entity GetEntityForItemView(IBoardItemView itemView) { }
+
+	// RVA: 0x6A4499C Offset: 0x6A4099C VA: 0x6A4499C
+	private void AddItemView(Entity entity, IBoardItemView itemView) { }
+
+	// RVA: 0x6A44A34 Offset: 0x6A40A34 VA: 0x6A44A34
+	private void CreateBlockerView(int index, IBoardItemView boardItemView) { }
+
+	// RVA: 0x6A44BD0 Offset: 0x6A40BD0 VA: 0x6A44BD0
+	public void .ctor() { }
+}
+

@@ -1,0 +1,38 @@
+// Namespace: Merger.Services.Backend.WebSocket
+public interface IOperationTrackingService : IBlockingFlags<OperationTrackingFlags>, IDebugBlockingFlags // TypeDefIndex: 9777
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void SendOperationData<TNotificationData>(string type, TNotificationData itemData, Dictionary<string, string> metadata, ExtraData extraData);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IOperationTrackingService.SendOperationData<object>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void SendOperationData<TNotificationData>(string type, List<TNotificationData> itemsNotificationData, Dictionary<string, string> metadata);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IOperationTrackingService.SendOperationData<object>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract OperationNotificationData CreatePayload<TNotificationData>(string operationType, TNotificationData itemNotificationData, ExtraData extraData);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IOperationTrackingService.CreatePayload<object>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract OperationNotificationData CreatePayload<TNotificationData>(string operationType, List<TNotificationData> notificationDataList);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IOperationTrackingService.CreatePayload<object>
+	*/
+}
+

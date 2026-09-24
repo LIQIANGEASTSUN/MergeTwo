@@ -1,0 +1,441 @@
+// Namespace: Merger.Services.User
+public interface IUserProfileService : IUserProfileServiceBase // TypeDefIndex: 10105
+{
+	// Properties
+	public abstract bool NativeStarterPackIsEnabled { get; }
+	public abstract double ProgressUpdatePopupCountdown { get; }
+	public abstract AdsConfig AdsConfig { get; }
+	public abstract int MinLevelForLoadGameOnMeta { get; }
+	public abstract bool ShouldLoadGameOnMeta { get; }
+	public abstract string FirstGameStartVideoUrl { get; }
+	public abstract bool IsFirstGameStartVideoOverLoadingScreen { get; }
+	public abstract bool AllowFirstGameStartVideoOnBoard { get; }
+	public abstract bool WaitForFirstGameStartVideoBeforeGameStart { get; }
+	public abstract float VanityAreaWidth { get; }
+	public abstract bool SpeakingCharacterHintsDisabled { get; }
+	public abstract bool ShowBottomLeftOnBuilding { get; }
+	public abstract bool IsNewCleanupOrdersFlowEnabled { get; }
+	public abstract bool IsNewTreeOrdersFlowEnabled { get; }
+	public abstract bool ActionsModelDebuggingEnabled { get; }
+	public abstract bool SmarterBubblesEnabledCore { get; }
+	public abstract bool SmarterBubblesEnabledEvent { get; }
+	public abstract bool CoreBubblesGeneratedSaveEnabled { get; }
+	public abstract bool EventBubblesGeneratedSaveEnabled { get; }
+	public abstract bool IsFirstTwoMergeHighlightsToggleOn { get; }
+	public abstract bool TutorialFirstThreeOrdersToggle { get; }
+	public abstract bool JokerAndSplitterPopupEnabled { get; }
+	public abstract bool SeasonalCardsUnlockBadgeEnabled { get; }
+	public abstract bool OrderCompleteBlockItemInteractions { get; }
+	public abstract int RemoveBubbleMinLevelCore { get; }
+	public abstract bool PowerBoostMultiModesCoreToggle { get; }
+	public abstract bool PowerBoostMultiModesBoardEventToggle { get; }
+	public abstract bool CustomVanityCompensationAssetToggle { get; }
+	public abstract bool LocalBackupsEnabled { get; }
+	public abstract bool IsJokerInfoButtonEnabled { get; }
+	public abstract bool DisableInvitePopupInTTFriendsActive { get; }
+	public abstract int BubbleCompensationMaxLevel { get; }
+	public abstract bool InventoryNewAbilitiesCoreToggle { get; }
+	public abstract bool InventoryNewAbilitiesBoardEventToggle { get; }
+	public abstract bool PowerBoostResetOnOOECore { get; }
+	public abstract bool PowerBoostResetOnOOEEvent { get; }
+	public abstract bool Store2ndTabThreeSlotsToggle { get; }
+	public abstract bool NarrativeSkipEmptyMessagesEnabled { get; }
+	public abstract int QueueSizeThresholdForAbuse { get; }
+	public abstract bool DisableTTFriends { get; }
+	public abstract bool CloseWebsocketOnGamePause { get; }
+	public abstract bool UserProfileDuelTooltipEnabled { get; }
+	public abstract bool UserProfileTTFriendsTooltipEnabled { get; }
+	public abstract bool BoardItemAnimationsEnabled { get; }
+	public abstract bool PowerBoostMaxIndicationIgnoreShortChains { get; }
+	public abstract bool EventCenterEnabled { get; }
+	public abstract bool EventCenterStickyToggle { get; }
+	public abstract bool HandleDropMessageRewardsEnabled { get; }
+	public abstract float MergeAnimationSpeed { get; }
+	public abstract float ProduceAnimationSpeed { get; }
+	public abstract bool DisableEventCenterScrollToggle { get; }
+	public abstract bool DynamicSkipCooldownPriceEnabled { get; }
+	public abstract bool UseNewOrderViewInfrastructure { get; }
+	public abstract int PBSpawnLowLvlItemOutOfPercentCoreValue { get; }
+	public abstract int PBSpawnLowLvlItemOutOfPercentEventValue { get; }
+	public abstract int PBBoardStateLowLvlItemCoreValue { get; }
+	public abstract int PBBoardStateLowLvlItemEventValue { get; }
+	public abstract bool MaterialKeywordConversionToggle { get; }
+	public abstract bool FetchPromotionsOnSeasonActivationToggle { get; }
+	public abstract bool MegaOEREnabled { get; }
+	public abstract bool BlockOldRateUsPopupFlowToggle { get; }
+	public abstract string RateUsPopupContactUrl { get; }
+	public abstract bool UseThreadToParseState { get; }
+	public abstract bool ProducerHighlightEnabled { get; }
+	public abstract float HiddenGamePermanentFtueSeconds { get; }
+	public abstract bool TownChallengeIconDisplayAnalyticsToggle { get; }
+	public abstract string SurpriseBoxInfoPopupUrl { get; }
+	public abstract bool RewardCalendarLogsToggle { get; }
+	public abstract bool ImmediateToolsAlgoFixEnabledToggle { get; }
+	public abstract bool DuelDynamicBarToggle { get; }
+	public abstract bool IconsCenterEnabled { get; }
+	public abstract int IconsCenterAutoOpenIdleDuration { get; }
+	public abstract int IconsCenterCarouselDuration { get; }
+	public abstract int IconsCenterMinLevelRequirement { get; }
+	public abstract bool TournamentGetStateLogsToggle { get; }
+	public abstract bool FlyingAccumulationEnabled { get; }
+	public abstract bool LuckyJackpotFlyingAccumulationEnabled { get; }
+	public abstract int DirectPurchaseTimeoutDuration { get; }
+	public abstract string DirectPurchaseUrl { get; }
+	public abstract bool EnableAndroidMoonshopFlowStore { get; }
+	public abstract bool EnableAndroidMoonshopFlowCardsInbox { get; }
+	public abstract bool EnableDirectPurchaseNewDesign { get; }
+	public abstract int VanityBsFtueBoughtItemsThreshold { get; }
+	public abstract bool BoardMiniGameTransitionAnalyticsEnabled { get; }
+	public abstract int MinLevelBackgroundMusic { get; }
+	public abstract bool UnloadResourcesOn { get; }
+	public abstract bool ShouldAnimateEnvironment { get; }
+	public abstract bool ShouldAnimateBuildings { get; }
+	public abstract bool OrderCharacterRichBehaviourEnabled { get; }
+	public abstract int VietnamBadgeAutoCloseDurationSeconds { get; }
+	public abstract int VietnamBadgeAutoOpenIntervalSeconds { get; }
+	public abstract bool InventoryChainBadgesEnabled { get; }
+	public abstract bool GoogleLevelUpEnabled { get; }
+	public abstract bool ForceOpenVodOnNewEpisodeUnlocked { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract T GetUserDefaultsValue<T>(string key, T fallbackValue);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IUserProfileService.GetUserDefaultsValue<__Il2CppFullySharedGenericType>
+	|-IUserProfileService.GetUserDefaultsValue<bool>
+	|-IUserProfileService.GetUserDefaultsValue<double>
+	|-IUserProfileService.GetUserDefaultsValue<int>
+	|-IUserProfileService.GetUserDefaultsValue<float>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract List<AbTestAssetOverrides> GetAbTestAssetOverridesList();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract ZendeskLanguages GetZendeskLanguages();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract RemoteLocalizationData GetLocalizationAssets();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract GCItemsBubbleConfig GetItemsBubbleConfig();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract List<GCCharacterConfig> GetCoreAvailableCharactersConfig();
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract RealCurrencyProduct[] GetProducts();
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract InventoryConfig GetInventoryConfig();
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract BubbleSaleBundledAssets GetBubbleSaleAssets();
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract List<BubbleSaleTheme> GetBubbleSaleThemes();
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public abstract MoonShopConfiguration GetMoonShopConfig();
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public abstract BackgroundMusicTheme GetBackgroundMusicTheme();
+
+	// RVA: -1 Offset: -1 Slot: 12
+	public abstract ExportedAssetBank GetBackgroundMusicAssets();
+
+	// RVA: -1 Offset: -1 Slot: 13
+	public abstract bool get_NativeStarterPackIsEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 14
+	public abstract double get_ProgressUpdatePopupCountdown();
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public abstract AdsConfig get_AdsConfig();
+
+	// RVA: -1 Offset: -1 Slot: 16
+	public abstract int get_MinLevelForLoadGameOnMeta();
+
+	// RVA: -1 Offset: -1 Slot: 17
+	public abstract bool get_ShouldLoadGameOnMeta();
+
+	// RVA: -1 Offset: -1 Slot: 18
+	public abstract string get_FirstGameStartVideoUrl();
+
+	// RVA: -1 Offset: -1 Slot: 19
+	public abstract bool get_IsFirstGameStartVideoOverLoadingScreen();
+
+	// RVA: -1 Offset: -1 Slot: 20
+	public abstract bool get_AllowFirstGameStartVideoOnBoard();
+
+	// RVA: -1 Offset: -1 Slot: 21
+	public abstract bool get_WaitForFirstGameStartVideoBeforeGameStart();
+
+	// RVA: -1 Offset: -1 Slot: 22
+	public abstract float get_VanityAreaWidth();
+
+	// RVA: -1 Offset: -1 Slot: 23
+	public abstract bool get_SpeakingCharacterHintsDisabled();
+
+	// RVA: -1 Offset: -1 Slot: 24
+	public abstract bool get_ShowBottomLeftOnBuilding();
+
+	// RVA: -1 Offset: -1 Slot: 25
+	public abstract bool get_IsNewCleanupOrdersFlowEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 26
+	public abstract bool get_IsNewTreeOrdersFlowEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 27
+	public abstract bool get_ActionsModelDebuggingEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 28
+	public abstract bool get_SmarterBubblesEnabledCore();
+
+	// RVA: -1 Offset: -1 Slot: 29
+	public abstract bool get_SmarterBubblesEnabledEvent();
+
+	// RVA: -1 Offset: -1 Slot: 30
+	public abstract bool get_CoreBubblesGeneratedSaveEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 31
+	public abstract bool get_EventBubblesGeneratedSaveEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 32
+	public abstract bool get_IsFirstTwoMergeHighlightsToggleOn();
+
+	// RVA: -1 Offset: -1 Slot: 33
+	public abstract bool get_TutorialFirstThreeOrdersToggle();
+
+	// RVA: -1 Offset: -1 Slot: 34
+	public abstract bool get_JokerAndSplitterPopupEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 35
+	public abstract bool get_SeasonalCardsUnlockBadgeEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 36
+	public abstract bool get_OrderCompleteBlockItemInteractions();
+
+	// RVA: -1 Offset: -1 Slot: 37
+	public abstract int get_RemoveBubbleMinLevelCore();
+
+	// RVA: -1 Offset: -1 Slot: 38
+	public abstract bool get_PowerBoostMultiModesCoreToggle();
+
+	// RVA: -1 Offset: -1 Slot: 39
+	public abstract bool get_PowerBoostMultiModesBoardEventToggle();
+
+	// RVA: -1 Offset: -1 Slot: 40
+	public abstract bool get_CustomVanityCompensationAssetToggle();
+
+	// RVA: -1 Offset: -1 Slot: 41
+	public abstract bool get_LocalBackupsEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 42
+	public abstract bool get_IsJokerInfoButtonEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 43
+	public abstract bool get_DisableInvitePopupInTTFriendsActive();
+
+	// RVA: -1 Offset: -1 Slot: 44
+	public abstract int get_BubbleCompensationMaxLevel();
+
+	// RVA: -1 Offset: -1 Slot: 45
+	public abstract bool get_InventoryNewAbilitiesCoreToggle();
+
+	// RVA: -1 Offset: -1 Slot: 46
+	public abstract bool get_InventoryNewAbilitiesBoardEventToggle();
+
+	// RVA: -1 Offset: -1 Slot: 47
+	public abstract bool get_PowerBoostResetOnOOECore();
+
+	// RVA: -1 Offset: -1 Slot: 48
+	public abstract bool get_PowerBoostResetOnOOEEvent();
+
+	// RVA: -1 Offset: -1 Slot: 49
+	public abstract bool get_Store2ndTabThreeSlotsToggle();
+
+	// RVA: -1 Offset: -1 Slot: 50
+	public abstract bool get_NarrativeSkipEmptyMessagesEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 51
+	public abstract GameGeneralAssets GetGameGeneralAssets();
+
+	// RVA: -1 Offset: -1 Slot: 52
+	public abstract GameGeneralAssetsConfig GetGameGeneralAssetsConfig();
+
+	// RVA: -1 Offset: -1 Slot: 53
+	public abstract int get_QueueSizeThresholdForAbuse();
+
+	// RVA: -1 Offset: -1 Slot: 54
+	public abstract bool get_DisableTTFriends();
+
+	// RVA: -1 Offset: -1 Slot: 55
+	public abstract bool get_CloseWebsocketOnGamePause();
+
+	// RVA: -1 Offset: -1 Slot: 56
+	public abstract bool get_UserProfileDuelTooltipEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 57
+	public abstract bool get_UserProfileTTFriendsTooltipEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 58
+	public abstract bool get_BoardItemAnimationsEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 59
+	public abstract bool get_PowerBoostMaxIndicationIgnoreShortChains();
+
+	// RVA: -1 Offset: -1 Slot: 60
+	public abstract EventCenterSchemaConfiguration GetEventCenterConfig();
+
+	// RVA: -1 Offset: -1 Slot: 61
+	public abstract bool get_EventCenterEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 62
+	public abstract bool get_EventCenterStickyToggle();
+
+	// RVA: -1 Offset: -1 Slot: 63
+	public abstract bool get_HandleDropMessageRewardsEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 64
+	public abstract float get_MergeAnimationSpeed();
+
+	// RVA: -1 Offset: -1 Slot: 65
+	public abstract float get_ProduceAnimationSpeed();
+
+	// RVA: -1 Offset: -1 Slot: 66
+	public abstract bool get_DisableEventCenterScrollToggle();
+
+	// RVA: -1 Offset: -1 Slot: 67
+	public abstract bool get_DynamicSkipCooldownPriceEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 68
+	public abstract bool get_UseNewOrderViewInfrastructure();
+
+	// RVA: -1 Offset: -1 Slot: 69
+	public abstract int get_PBSpawnLowLvlItemOutOfPercentCoreValue();
+
+	// RVA: -1 Offset: -1 Slot: 70
+	public abstract int get_PBSpawnLowLvlItemOutOfPercentEventValue();
+
+	// RVA: -1 Offset: -1 Slot: 71
+	public abstract int get_PBBoardStateLowLvlItemCoreValue();
+
+	// RVA: -1 Offset: -1 Slot: 72
+	public abstract int get_PBBoardStateLowLvlItemEventValue();
+
+	// RVA: -1 Offset: -1 Slot: 73
+	public abstract bool get_MaterialKeywordConversionToggle();
+
+	// RVA: -1 Offset: -1 Slot: 74
+	public abstract bool get_FetchPromotionsOnSeasonActivationToggle();
+
+	// RVA: -1 Offset: -1 Slot: 75
+	public abstract bool get_MegaOEREnabled();
+
+	// RVA: -1 Offset: -1 Slot: 76
+	public abstract bool get_BlockOldRateUsPopupFlowToggle();
+
+	// RVA: -1 Offset: -1 Slot: 77
+	public abstract string get_RateUsPopupContactUrl();
+
+	// RVA: -1 Offset: -1 Slot: 78
+	public abstract bool get_UseThreadToParseState();
+
+	// RVA: -1 Offset: -1 Slot: 79
+	public abstract bool get_ProducerHighlightEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 80
+	public abstract float get_HiddenGamePermanentFtueSeconds();
+
+	// RVA: -1 Offset: -1 Slot: 81
+	public abstract bool get_TownChallengeIconDisplayAnalyticsToggle();
+
+	// RVA: -1 Offset: -1 Slot: 82
+	public abstract string get_SurpriseBoxInfoPopupUrl();
+
+	// RVA: -1 Offset: -1 Slot: 83
+	public abstract bool get_RewardCalendarLogsToggle();
+
+	// RVA: -1 Offset: -1 Slot: 84
+	public abstract bool get_ImmediateToolsAlgoFixEnabledToggle();
+
+	// RVA: -1 Offset: -1 Slot: 85
+	public abstract bool get_DuelDynamicBarToggle();
+
+	// RVA: -1 Offset: -1 Slot: 86
+	public abstract bool get_IconsCenterEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 87
+	public abstract int get_IconsCenterAutoOpenIdleDuration();
+
+	// RVA: -1 Offset: -1 Slot: 88
+	public abstract int get_IconsCenterCarouselDuration();
+
+	// RVA: -1 Offset: -1 Slot: 89
+	public abstract int get_IconsCenterMinLevelRequirement();
+
+	// RVA: -1 Offset: -1 Slot: 90
+	public abstract bool get_TournamentGetStateLogsToggle();
+
+	// RVA: -1 Offset: -1 Slot: 91
+	public abstract bool get_FlyingAccumulationEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 92
+	public abstract bool get_LuckyJackpotFlyingAccumulationEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 93
+	public abstract int get_DirectPurchaseTimeoutDuration();
+
+	// RVA: -1 Offset: -1 Slot: 94
+	public abstract string get_DirectPurchaseUrl();
+
+	// RVA: -1 Offset: -1 Slot: 95
+	public abstract bool get_EnableAndroidMoonshopFlowStore();
+
+	// RVA: -1 Offset: -1 Slot: 96
+	public abstract bool get_EnableAndroidMoonshopFlowCardsInbox();
+
+	// RVA: -1 Offset: -1 Slot: 97
+	public abstract bool get_EnableDirectPurchaseNewDesign();
+
+	// RVA: -1 Offset: -1 Slot: 98
+	public abstract int get_VanityBsFtueBoughtItemsThreshold();
+
+	// RVA: -1 Offset: -1 Slot: 99
+	public abstract bool get_BoardMiniGameTransitionAnalyticsEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 100
+	public abstract int get_MinLevelBackgroundMusic();
+
+	// RVA: -1 Offset: -1 Slot: 101
+	public abstract bool get_UnloadResourcesOn();
+
+	// RVA: -1 Offset: -1 Slot: 102
+	public abstract bool get_ShouldAnimateEnvironment();
+
+	// RVA: -1 Offset: -1 Slot: 103
+	public abstract bool get_ShouldAnimateBuildings();
+
+	// RVA: -1 Offset: -1 Slot: 104
+	public abstract bool get_OrderCharacterRichBehaviourEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 105
+	public abstract int get_VietnamBadgeAutoCloseDurationSeconds();
+
+	// RVA: -1 Offset: -1 Slot: 106
+	public abstract int get_VietnamBadgeAutoOpenIntervalSeconds();
+
+	// RVA: -1 Offset: -1 Slot: 107
+	public abstract bool get_InventoryChainBadgesEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 108
+	public abstract bool get_GoogleLevelUpEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 109
+	public abstract bool get_ForceOpenVodOnNewEpisodeUnlocked();
+}
+

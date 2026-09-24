@@ -1,0 +1,20 @@
+// Namespace: MergeEngine.Signal.Board
+public class SimulateTapSignal // TypeDefIndex: 272
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly PositionComponent <PositionComponent>k__BackingField; // 0x10
+
+	// Properties
+	public PositionComponent PositionComponent { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5FF4C18 Offset: 0x5FF0C18 VA: 0x5FF4C18
+	public PositionComponent get_PositionComponent() { }
+
+	// RVA: 0x5FF4C20 Offset: 0x5FF0C20 VA: 0x5FF4C20
+	public void .ctor(PositionComponent positionComponent) { }
+}
+

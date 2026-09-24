@@ -1,0 +1,115 @@
+// Namespace: MergeEngine.ECS.Components.Items.Producers
+[CacheAs(new[] { typeof(IItemSpawningComponent) })]
+public class ItemSpawningComponent<TCapability> : TimeCycleComponent<TCapability, SerializedItemSpawningComponent, SerializedItemSpawningComponent>, IItemSpawningComponent, ITimeCycleComponent, IComponentBase, IItemSpawning // TypeDefIndex: 1103
+{
+	// Fields
+	private const string SeedKey = "seed";
+	private const string CurrentItemIndexKey = "itemIndex";
+	[CompilerGenerated]
+	private int <Seed>k__BackingField; // 0x0
+	[CompilerGenerated]
+	private ItemSpawningQueue <ItemsQueue>k__BackingField; // 0x0
+
+	// Properties
+	public int Seed { get; set; }
+	public string SpawnedItemsLabel { get; }
+	public ItemSpawningQueue ItemsQueue { get; set; }
+	private int SeedWithOffset { get; }
+	public bool ConsumedItemsDependant { get; }
+	public SkipCooldownSettings SkipCooldownSettings { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 45
+	public int get_Seed() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x53938A8 Offset: 0x538F8A8 VA: 0x53938A8
+	|-ItemSpawningComponent<object>.get_Seed
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	private void set_Seed(int value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x53938B0 Offset: 0x538F8B0 VA: 0x53938B0
+	|-ItemSpawningComponent<object>.set_Seed
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 49
+	public string get_SpawnedItemsLabel() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x53938B8 Offset: 0x538F8B8 VA: 0x53938B8
+	|-ItemSpawningComponent<object>.get_SpawnedItemsLabel
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 46
+	public ItemSpawningQueue get_ItemsQueue() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x53938D8 Offset: 0x538F8D8 VA: 0x53938D8
+	|-ItemSpawningComponent<object>.get_ItemsQueue
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	private void set_ItemsQueue(ItemSpawningQueue value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x53938E0 Offset: 0x538F8E0 VA: 0x53938E0
+	|-ItemSpawningComponent<object>.set_ItemsQueue
+	*/
+
+	// RVA: -1 Offset: -1
+	private int get_SeedWithOffset() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x53938E8 Offset: 0x538F8E8 VA: 0x53938E8
+	|-ItemSpawningComponent<object>.get_SeedWithOffset
+	*/
+
+	// RVA: -1 Offset: -1
+	public bool get_ConsumedItemsDependant() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x53938F8 Offset: 0x538F8F8 VA: 0x53938F8
+	|-ItemSpawningComponent<object>.get_ConsumedItemsDependant
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 51
+	public SkipCooldownSettings get_SkipCooldownSettings() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x5393918 Offset: 0x538F918 VA: 0x5393918
+	|-ItemSpawningComponent<object>.get_SkipCooldownSettings
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor(TCapability capability, Entity entity) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x5393940 Offset: 0x538F940 VA: 0x5393940
+	|-ItemSpawningComponent<object>..ctor
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public override void LoadComponent(SerializedItemSpawningComponent componentData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x5393A3C Offset: 0x538FA3C VA: 0x5393A3C
+	|-ItemSpawningComponent<object>.LoadComponent
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 12
+	protected override void OnBeforeSerialize() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x5393AF4 Offset: 0x538FAF4 VA: 0x5393AF4
+	|-ItemSpawningComponent<object>.OnBeforeSerialize
+	*/
+}
+

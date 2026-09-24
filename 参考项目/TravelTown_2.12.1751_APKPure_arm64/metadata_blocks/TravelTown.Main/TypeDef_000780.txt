@@ -1,0 +1,26 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemsStateSystemBase.<>c__DisplayClass8_0<TLoadable> // TypeDefIndex: 780
+{
+	// Fields
+	public IdComponent component; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4B1BE58 Offset: 0x4B17E58 VA: 0x4B1BE58
+	|-ItemsStateSystemBase.<>c__DisplayClass8_0<object>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal bool <HandleExistingEntities>b__0(ItemPayloadBase item) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4B1BE60 Offset: 0x4B17E60 VA: 0x4B1BE60
+	|-ItemsStateSystemBase.<>c__DisplayClass8_0<object>.<HandleExistingEntities>b__0
+	*/
+}
+

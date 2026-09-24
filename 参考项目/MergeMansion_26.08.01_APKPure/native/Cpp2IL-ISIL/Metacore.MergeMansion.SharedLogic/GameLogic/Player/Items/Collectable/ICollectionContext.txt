@@ -1,0 +1,30 @@
+Type: GameLogic.Player.Items.Collectable.ICollectionContext
+
+Method: GameLogic.Player.IPlayer get_Player()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Board.MergeBoard get_Board()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Wallet get_Wallet()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: CurrencySource get_AnalyticsContext()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

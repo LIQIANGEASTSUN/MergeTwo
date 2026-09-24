@@ -1,0 +1,121 @@
+Type: GameLogic.Config.CollectItemsOnSessionStartSettings
+
+Method: System.Boolean get_Enabled()
+
+Disassembly:
+	0x033F74EC ADRP X8, 0x2325000
+	0x033F74F0 MOV X0, X23
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_Enabled(System.Boolean value)
+
+Disassembly:
+	0x033F74F4 LDR X8, [X8 + 0x8E0]
+	0x033F74F8 LDR X1, [X8]
+
+ISIL:
+	001 Move [X0+16], W1
+	002 Return 
+
+Method: Metaplay.Core.MetaDuration get_DurationSinceLastSession()
+
+Disassembly:
+	0x033F74FC BL 0x27FED04
+	0x033F7500 ADRP X8, 0x22F0000
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_DurationSinceLastSession(Metaplay.Core.MetaDuration value)
+
+Disassembly:
+	0x033F7504 MOV X20, X0
+	0x033F7508 LDR X8, [X8 + 0x780]
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Return 
+
+Method: System.Collections.Generic.List`1<System.Int32> get_TypesToCollect()
+
+Disassembly:
+	0x033F750C LDR X8, [X8]
+	0x033F7510 MOV X0, X8
+
+ISIL:
+	001 Move X0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_TypesToCollect(System.Collections.Generic.List`1<System.Int32> value)
+
+Disassembly:
+	0x033F7514 BL 0x239BB80
+	0x033F7518 MOV X1, X19
+
+ISIL:
+	001 Move [X0+32], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x033F751C MOV X2, X20
+	0x033F7520 MOV W3, W22
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(System.Boolean enabled, Metaplay.Core.MetaDuration durationSinceLastSession, System.Collections.Generic.List`1<System.Int32> typesToCollect)
+
+Disassembly:
+	0x033F7524 MOV X4, X31
+	0x033F7528 MOV X21, X0
+	0x033F752C BL 0x3738634
+	0x033F7530 B 0x33F7658
+	0x033F7534 ADRP X8, 0x22D6000
+	0x033F7538 LDR X8, [X8 + 0x248]
+	0x033F753C LDR X0, [X8 + 0x28]
+	0x033F7540 LDR W8, [X0 + 0xE4]
+	0x033F7544 CBNZ W8, 0x33F754C
+	0x033F7548 BL 0x239BA64
+	0x033F754C MOV X0, X23
+	0x033F7550 MOV X1, X31
+	0x033F7554 BL 0x440EC88
+	0x033F7558 MOV W20, W0
+	0x033F755C MOV X0, X21
+	0x033F7560 MOV X1, X31
+	0x033F7564 BL 0x44A21B0
+	0x033F7568 ADRP X8, 0x22DF000
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31+16], X22
+	003 Move [X31+24], X21
+	004 Move [X31+32], X20
+	005 Move [X31+40], X19
+	006 Move W21, W1
+	007 Move X1, X31
+	008 Move X19, X3
+	009 Move X20, X2
+	010 Move X22, X0
+	011 Call Object..ctor, X0
+	012 Move [X22+32], X19
+	013 Move X0, X22
+	014 NotImplemented "Instruction STURB not yet implemented."
+	015 Move X1, X19
+	016 Move [X22-8], X20
+	017 Move X20, [X31+32]
+	018 Move X19, [X31+40]
+	019 Move X22, [X31+16]
+	020 Move X21, [X31+24]
+	021 Move X30, [X31+48]
+	022 Call 0x239F888
+	023 Return 
+

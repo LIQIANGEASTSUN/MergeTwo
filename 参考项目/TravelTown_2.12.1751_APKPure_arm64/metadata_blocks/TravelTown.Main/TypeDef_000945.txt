@@ -1,0 +1,9 @@
+// Namespace: MergeEngine.ECS.Systems.Items
+public class BoardItemCooldownEndedSignal : BoardItemCooldownBaseSignal // TypeDefIndex: 945
+{
+	// Methods
+
+	// RVA: 0x6789854 Offset: 0x6785854 VA: 0x6789854
+	public void .ctor(IMergeItem item, string uuId, int numEmptyPositions, TimeCycleComponentAnalytics timeCycleComponentAnalytics, bool showTimeLeft) { }
+}
+

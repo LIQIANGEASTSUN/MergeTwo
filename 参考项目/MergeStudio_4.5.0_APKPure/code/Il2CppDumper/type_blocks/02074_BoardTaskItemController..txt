@@ -1,0 +1,29 @@
+// Namespace: 
+[CompilerGenerated]
+private struct BoardTaskItemController.<InitializeTaskItem>d__60 : IAsyncStateMachine // TypeDefIndex: 2074
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncUniTaskMethodBuilder<bool> <>t__builder; // 0x4
+	public BoardTaskItemController <>4__this; // 0x10
+	public BoardTaskController boardTaskController; // 0x14
+	public BoardTaskItem boardTaskItem; // 0x18
+	public BoardEntity boardEntity; // 0x1C
+	public EventEntity eventEntity; // 0x20
+	public BoardData boardData; // 0x24
+	public bool isSpecialTask; // 0x28
+	public bool isInitialize; // 0x29
+	public bool isAddedFromPopup; // 0x2A
+	public bool isNewlyCreated; // 0x2B
+	private UniTask.Awaiter<bool> <>u__1; // 0x2C
+
+	// Methods
+
+	// RVA: 0x1975640 Offset: 0x1975640 VA: 0x1975640 Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x19766B0 Offset: 0x19766B0 VA: 0x19766B0 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

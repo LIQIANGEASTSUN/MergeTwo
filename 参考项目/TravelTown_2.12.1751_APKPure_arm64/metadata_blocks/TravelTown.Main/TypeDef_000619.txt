@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class HintUtil.<>c__DisplayClass1_0 // TypeDefIndex: 619
+{
+	// Fields
+	public List<string> excludeItemIds; // 0x10
+	public IMergingConfigurationModel mergingConfigurationModel; // 0x18
+	public BoardItemCountComponent boardItemCountComponent; // 0x20
+	public Func<ItemMultiple, bool> <>9__3; // 0x28
+
+	// Methods
+
+	// RVA: 0x6273C94 Offset: 0x626FC94 VA: 0x6273C94
+	public void .ctor() { }
+
+	// RVA: 0x62773D0 Offset: 0x62733D0 VA: 0x62773D0
+	internal bool <TryFindConsumeHint>b__0(PositionComponent item) { }
+
+	// RVA: 0x62774E0 Offset: 0x62734E0 VA: 0x62774E0
+	internal bool <TryFindConsumeHint>b__1(PositionComponent item) { }
+
+	// RVA: 0x6277604 Offset: 0x6273604 VA: 0x6277604
+	internal bool <TryFindConsumeHint>b__3(ItemMultiple itemMultiple) { }
+}
+

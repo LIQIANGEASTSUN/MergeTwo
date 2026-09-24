@@ -1,0 +1,26 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemMovementLockSystem.<>c__DisplayClass1_0 // TypeDefIndex: 25752
+{
+	// Fields
+	public MoveAction moveAction; // 0x10
+	[TupleElementNames(new[] { "entity", "positionComponent" })]
+	public ValueTuple<Entity, BoardTilePositionComponent> fromEntity; // 0x18
+	[TupleElementNames(new[] { "entity", "positionComponent" })]
+	public ValueTuple<Entity, BoardTilePositionComponent> toEntity; // 0x28
+
+	// Methods
+
+	// RVA: 0x6A6DD74 Offset: 0x6A69D74 VA: 0x6A6DD74
+	public void .ctor() { }
+
+	// RVA: 0x6A6DD84 Offset: 0x6A69D84 VA: 0x6A6DD84
+	internal bool <Tick>b__0(ValueTuple<Entity, BoardTilePositionComponent> entity) { }
+
+	// RVA: 0x6A6DDA8 Offset: 0x6A69DA8 VA: 0x6A6DDA8
+	internal bool <Tick>b__1(ValueTuple<Entity, BoardTilePositionComponent> entity) { }
+
+	// RVA: 0x6A6DDCC Offset: 0x6A69DCC VA: 0x6A6DDCC
+	internal bool <Tick>b__2(IItemCombinerValidator validator) { }
+}
+

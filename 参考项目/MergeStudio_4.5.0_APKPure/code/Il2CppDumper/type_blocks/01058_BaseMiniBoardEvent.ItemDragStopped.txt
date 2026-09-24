@@ -1,0 +1,4 @@
+// Namespace: 
+public struct BaseMiniBoardEvent.ItemDragStopped : IEvent // TypeDefIndex: 1058
+{}
+

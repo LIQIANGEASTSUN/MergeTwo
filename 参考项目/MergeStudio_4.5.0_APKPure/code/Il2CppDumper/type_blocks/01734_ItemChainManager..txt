@@ -1,0 +1,19 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemChainManager.<>c__DisplayClass50_0 // TypeDefIndex: 1734
+{
+	// Fields
+	public bool excludeZero; // 0x8
+	public bool excludeInventory; // 0x9
+	public ItemChainManager <>4__this; // 0xC
+	public Func<ItemLinkModel, bool> <>9__1; // 0x10
+
+	// Methods
+
+	// RVA: 0x1909AB4 Offset: 0x1909AB4 VA: 0x1909AB4
+	public void .ctor() { }
+
+	// RVA: 0x190FB74 Offset: 0x190FB74 VA: 0x190FB74
+	internal bool <GetAllLinksOrderedByArchiveLevel>b__1(ItemLinkModel l) { }
+}
+

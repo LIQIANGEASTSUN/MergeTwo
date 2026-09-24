@@ -1,0 +1,503 @@
+// Namespace: 
+public class MergeBoard : MonoBehaviour, IOnApplicationPause // TypeDefIndex: 2748
+{
+	// Fields
+	public int _boardID; // 0x10
+	public static SimpleGameObjectPool itemPool; // 0x0
+	private static bool itemPoolInited; // 0x4
+	[CompilerGenerated]
+	private RectTransform <mContent>k__BackingField; // 0x14
+	private Vector3 originalScale; // 0x18
+	private RectTransform mFullShield; // 0x24
+	private Transform mDragLayer; // 0x28
+	private Rect boardRect; // 0x2C
+	private Vector2 gridSize; // 0x3C
+	protected MergeBoard.Grid[] grids; // 0x44
+	private int boardWidth; // 0x48
+	private int boardHeight; // 0x4C
+	public List<MergeBoard.Grid> mergeTipList; // 0x50
+	private FocusLogic _focusLogic; // 0x54
+	private Coroutine _dealyAnim; // 0x58
+	private Coroutine _dealyGuide; // 0x5C
+	private HashSet<GameObject> _doAnimationList; // 0x60
+	private int[][] rectBorder; // 0x64
+	private int gridSizeSub; // 0x68
+	private List<int> anmationList; // 0x6C
+	private List<int> targetAnmationList; // 0x70
+	private List<MergeBoard.Grid> canEatFoods; // 0x74
+	private Vector3 _pointerDownPosition; // 0x78
+	private bool _dragLock; // 0x84
+	private Vector3 _dragPosition; // 0x88
+	private bool _isMerge; // 0x94
+	private Tweener _dragTweener; // 0x98
+	private int _selectIndex; // 0x9C
+	private int _focusIndex; // 0xA0
+	private int _playSoundIndex; // 0xA4
+	private bool _isOneClickProcessing; // 0xA8
+	private List<RectTransform> eventObjectList; // 0xAC
+	[CompilerGenerated]
+	private int <activeIndex>k__BackingField; // 0xB0
+	private int _lastIndex; // 0xB4
+	private BaseEventData _baseEventData; // 0xB8
+	private GameObject _curPointerObject; // 0xBC
+	private GameObject _curDragObject; // 0xC0
+	private float foucsTime; // 0xC4
+	private bool _isDraging; // 0xC8
+	private List<RaycastResult> _tempRaycastResults; // 0xCC
+	private Dictionary<MergeBoard.AutoTipType, List<MergeBoard.Grid>> autoTipMap; // 0xD0
+	private Dictionary<int, List<MergeBoard.Grid>> autoTipGrids; // 0xD4
+	public List<MergeBoard.Grid> TempAutoTipsItems; // 0xD8
+	private List<Func<int, bool>> _procedureHint; // 0xDC
+	private List<Func<int, bool>> _procedureHandle; // 0xE0
+
+	// Properties
+	public RectTransform mContent { get; set; }
+	public Vector2 GridSize { get; }
+	public MergeBoard.Grid[] Grids { get; }
+	public int SelectIndex { get; }
+	public int activeIndex { get; set; }
+
+	// Methods
+
+	// RVA: 0x2BD8D88 Offset: 0x2BD8D88 VA: 0x2BD8D88
+	public static void InitPool() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2BD90B0 Offset: 0x2BD90B0 VA: 0x2BD90B0
+	public RectTransform get_mContent() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2BD90B8 Offset: 0x2BD90B8 VA: 0x2BD90B8
+	private void set_mContent(RectTransform value) { }
+
+	// RVA: 0x2BD90C0 Offset: 0x2BD90C0 VA: 0x2BD90C0
+	public Vector2 get_GridSize() { }
+
+	// RVA: 0x2BD9134 Offset: 0x2BD9134 VA: 0x2BD9134
+	public MergeBoard.Grid[] get_Grids() { }
+
+	// RVA: 0x2BD9188 Offset: 0x2BD9188 VA: 0x2BD9188
+	public int get_SelectIndex() { }
+
+	// RVA: 0x2BD91DC Offset: 0x2BD91DC VA: 0x2BD91DC
+	public void SetBoardID(int boardID) { }
+
+	// RVA: 0x2BD9238 Offset: 0x2BD9238 VA: 0x2BD9238 Slot: 5
+	public virtual void InitBoardId() { }
+
+	// RVA: 0x2BD9294 Offset: 0x2BD9294 VA: 0x2BD9294
+	private void Awake() { }
+
+	// RVA: 0x2BDB100 Offset: 0x2BDB100 VA: 0x2BDB100
+	public void LockBoard() { }
+
+	// RVA: 0x2BDB1D0 Offset: 0x2BDB1D0 VA: 0x2BDB1D0
+	public void UnLockBoard() { }
+
+	// RVA: 0x2BDB2A0 Offset: 0x2BDB2A0 VA: 0x2BDB2A0
+	private void OnDestroy() { }
+
+	// RVA: 0x2BDB760 Offset: 0x2BDB760 VA: 0x2BDB760
+	public void RefreshGridsStatus() { }
+
+	// RVA: 0x2BDB8D8 Offset: 0x2BDB8D8 VA: 0x2BDB8D8
+	public void RefreshGridsImage() { }
+
+	// RVA: 0x2BDBA7C Offset: 0x2BDBA7C VA: 0x2BDBA7C
+	public MergeBoard.Grid GetGridByIndex(int index) { }
+
+	// RVA: 0x2BDBB14 Offset: 0x2BDBB14 VA: 0x2BDBB14
+	public Vector3 GetGridPosition(int index) { }
+
+	// RVA: 0x2BDBCA0 Offset: 0x2BDBCA0 VA: 0x2BDBCA0
+	public Transform GetGridTransform(int index) { }
+
+	// RVA: 0x2BDBDA0 Offset: 0x2BDBDA0 VA: 0x2BDBDA0
+	public MergeBoard.Grid GetGridById(int id) { }
+
+	// RVA: 0x2BDBEFC Offset: 0x2BDBEFC VA: 0x2BDBEFC
+	public List<MergeBoard.Grid> GetGridsById(int id) { }
+
+	// RVA: 0x2BDC228 Offset: 0x2BDC228 VA: 0x2BDC228
+	public bool CanFeedFood(int feedId, int foodId) { }
+
+	// RVA: 0x2BDC45C Offset: 0x2BDC45C VA: 0x2BDC45C
+	public MergeBoard.Grid FindOneProductItem(ref int index) { }
+
+	// RVA: 0x2BDC634 Offset: 0x2BDC634 VA: 0x2BDC634
+	public int GetGridIndex(MergeBoard.Grid grid) { }
+
+	// RVA: 0x2BDC6EC Offset: 0x2BDC6EC VA: 0x2BDC6EC
+	public MergeBoard.Grid GetOneBoxItem(ref int index) { }
+
+	// RVA: 0x2BDC8DC Offset: 0x2BDC8DC VA: 0x2BDC8DC
+	public MergeBoard.Grid GetOneBoxItemActive(ref int index) { }
+
+	// RVA: 0x2BDCACC Offset: 0x2BDCACC VA: 0x2BDCACC
+	public MergeBoard.Grid GetOneBoxItemInActive(ref int index) { }
+
+	// RVA: 0x2BDCC6C Offset: 0x2BDCC6C VA: 0x2BDCC6C
+	private int PosToIndex(Vector3 pos) { }
+
+	// RVA: 0x2BDD260 Offset: 0x2BDD260 VA: 0x2BDD260
+	private int FindSameIndex(Vector3 pos, int index) { }
+
+	// RVA: 0x2BDD670 Offset: 0x2BDD670 VA: 0x2BDD670
+	public Vector3 IndexToPos(int index) { }
+
+	// RVA: 0x2BDD744 Offset: 0x2BDD744 VA: 0x2BDD744
+	public Vector3 IndexToPosition(int index) { }
+
+	// RVA: 0x2BDD810 Offset: 0x2BDD810 VA: 0x2BDD810
+	private void RefreshGrid(int index, int id, int state, bool autoTips = True, RefreshItemSource source = 9, int oldIndex = -1, int oldId = -1) { }
+
+	// RVA: 0x2BE06EC Offset: 0x2BE06EC VA: 0x2BE06EC
+	private void SetAnimationsObjLastSibling() { }
+
+	// RVA: 0x2BDF1A8 Offset: 0x2BDF1A8 VA: 0x2BDF1A8
+	private void StartChoseMergeItemGuide() { }
+
+	[IteratorStateMachine(typeof(MergeBoard.<DelayWorkGuideLogic>d__56))]
+	// RVA: 0x2BE08E4 Offset: 0x2BE08E4 VA: 0x2BE08E4
+	private IEnumerator DelayWorkGuideLogic() { }
+
+	// RVA: 0x2BDF26C Offset: 0x2BDF26C VA: 0x2BDF26C
+	private void RefreshGridState(int index) { }
+
+	// RVA: 0x2BD9BA8 Offset: 0x2BD9BA8 VA: 0x2BD9BA8
+	private void InitGrids(int number) { }
+
+	// RVA: 0x2BE09A8 Offset: 0x2BE09A8 VA: 0x2BE09A8
+	public void RefreshInitGrids() { }
+
+	// RVA: 0x2BE0B68 Offset: 0x2BE0B68 VA: 0x2BE0B68
+	public void RefreshBaseOrder(BaseEvent e) { }
+
+	// RVA: 0x2BE0CA8 Offset: 0x2BE0CA8 VA: 0x2BE0CA8
+	private void OnRefresh(BaseEvent e) { }
+
+	[IDTag(1)]
+	// RVA: 0x2BE1050 Offset: 0x2BE1050 VA: 0x2BE1050
+	private void OnNewItem(BaseEvent e) { }
+
+	[IDTag(1)]
+	// RVA: 0x2BE1378 Offset: 0x2BE1378 VA: 0x2BE1378
+	private void OnUseItem(BaseEvent e) { }
+
+	[IDTag(0)]
+	// RVA: 0x2BE1544 Offset: 0x2BE1544 VA: 0x2BE1544 Slot: 6
+	public virtual void OnUseItem(int index, int id) { }
+
+	[IDTag(0)]
+	// RVA: 0x2BE15AC Offset: 0x2BE15AC VA: 0x2BE15AC Slot: 7
+	public virtual void OnNewItem(int index, int oldIndex, int id, int oldId, RefreshItemSource source) { }
+
+	// RVA: 0x2BDE8E8 Offset: 0x2BDE8E8 VA: 0x2BDE8E8
+	public void SelectFocus(int index, bool isMergeAnim = False, bool isPlayAnim = True, bool isFinishGuide = False) { }
+
+	// RVA: 0x2BE1810 Offset: 0x2BE1810 VA: 0x2BE1810
+	public bool OperateItem(int index, RefreshItemSource source = 2) { }
+
+	// RVA: 0x2BE6B60 Offset: 0x2BE6B60 VA: 0x2BE6B60
+	private bool IsEndSpecialItem(int id, int count) { }
+
+	// RVA: 0x2BE5F2C Offset: 0x2BE5F2C VA: 0x2BE5F2C
+	public void ProductOneItem(int oldIndex, int newIndex, int id, bool isDeath, RefreshItemSource source = 2, int state = 1, bool isFreeTimeProduct = False, int existTime = 0) { }
+
+	// RVA: 0x2BE5EA8 Offset: 0x2BE5EA8 VA: 0x2BE5EA8
+	private void SendProductBi(int id, int newId, int leftCount, int cd, bool isAuto, string state) { }
+
+	// RVA: 0x2BE6CF8 Offset: 0x2BE6CF8 VA: 0x2BE6CF8
+	public bool TryOpenBoxes(int index) { }
+
+	// RVA: 0x2BE6E1C Offset: 0x2BE6E1C VA: 0x2BE6E1C
+	private bool OpenBox(int index) { }
+
+	// RVA: 0x2BE7238 Offset: 0x2BE7238 VA: 0x2BE7238
+	public void Merge(int index, int id, int oldId, int productCount, RefreshItemSource source, int extraProduct = 0, bool mergeIceCube = False) { }
+
+	// RVA: 0x2BE9D84 Offset: 0x2BE9D84 VA: 0x2BE9D84
+	private int GetBoxProductCount(int index1, int index2) { }
+
+	// RVA: 0x2BE9F7C Offset: 0x2BE9F7C VA: 0x2BE9F7C
+	private int GetMergeItemLeftProductCount(int index1, int index2) { }
+
+	// RVA: 0x2BEA29C Offset: 0x2BEA29C VA: 0x2BEA29C
+	private void OnDisable() { }
+
+	// RVA: 0x2BEA3E4 Offset: 0x2BEA3E4 VA: 0x2BEA3E4 Slot: 8
+	protected virtual void OnEnable() { }
+
+	// RVA: 0x2BEAD0C Offset: 0x2BEAD0C VA: 0x2BEAD0C
+	public void StopAllTweenAnim() { }
+
+	// RVA: 0x2BEAE2C Offset: 0x2BEAE2C VA: 0x2BEAE2C
+	public void AddEventObject(RectTransform rect) { }
+
+	// RVA: 0x2BEAF34 Offset: 0x2BEAF34 VA: 0x2BEAF34
+	private GameObject GetEventObject(Vector2 screenPoint) { }
+
+	// RVA: 0x2BEB1F0 Offset: 0x2BEB1F0 VA: 0x2BEB1F0
+	private bool IsBox() { }
+
+	// RVA: 0x2BEB30C Offset: 0x2BEB30C VA: 0x2BEB30C
+	private bool IsGridUnlock() { }
+
+	// RVA: 0x2BEA5C8 Offset: 0x2BEA5C8 VA: 0x2BEA5C8
+	private void RefreshAllProduct() { }
+
+	// RVA: 0x2BE6ABC Offset: 0x2BE6ABC VA: 0x2BE6ABC
+	private void RefreshOneProduct(int index) { }
+
+	// RVA: 0x2BEBAA0 Offset: 0x2BEBAA0 VA: 0x2BEBAA0
+	private void RefreshEnergyTorrendState(BaseEvent e) { }
+
+	// RVA: 0x2BEBB84 Offset: 0x2BEBB84 VA: 0x2BEBB84
+	private void RefreshUnlimitedProductState(BaseEvent e) { }
+
+	// RVA: 0x2BE5408 Offset: 0x2BE5408 VA: 0x2BE5408
+	private void TimeProductItem(int index, TableMergeItem itemConfig) { }
+
+	// RVA: 0x2BEB4E0 Offset: 0x2BEB4E0 VA: 0x2BEB4E0
+	private void FreeTimeProductItem(int index) { }
+
+	// RVA: 0x2BDFC38 Offset: 0x2BDFC38 VA: 0x2BDFC38
+	public void DoAnimation(int index, int oldIndex, RefreshItemSource source, Action tweenEndCall) { }
+
+	// RVA: 0x2BEBC64 Offset: 0x2BEBC64 VA: 0x2BEBC64
+	private void OnSellItem(BaseEvent e) { }
+
+	// RVA: 0x2BEBE7C Offset: 0x2BEBE7C VA: 0x2BEBE7C Slot: 9
+	public virtual TableMergeItem MergeToProductActivity(int index, TableMergeItem newConfig, TableMergeItem oldConfig) { }
+
+	// RVA: 0x2BE9BA4 Offset: 0x2BE9BA4 VA: 0x2BE9BA4
+	private bool MergeToProdcutExp(int index, int id, int oldId) { }
+
+	// RVA: 0x2BE93C8 Offset: 0x2BE93C8 VA: 0x2BE93C8
+	private bool MergeToProdcutBubble(int index, int id, int oldId) { }
+
+	[IteratorStateMachine(typeof(MergeBoard.<PlayTimeSpeedAnimation>d__94))]
+	// RVA: 0x2BEBFB4 Offset: 0x2BEBFB4 VA: 0x2BEBFB4
+	private IEnumerator PlayTimeSpeedAnimation(int index) { }
+
+	[IteratorStateMachine(typeof(MergeBoard.<PlayTimeTween>d__95))]
+	// RVA: 0x2BEC084 Offset: 0x2BEC084 VA: 0x2BEC084
+	private IEnumerator PlayTimeTween(List<int> list, int index) { }
+
+	// RVA: 0x2BEC178 Offset: 0x2BEC178 VA: 0x2BEC178
+	private List<int> FindNearGrid(int index, int near) { }
+
+	// RVA: 0x2BEC624 Offset: 0x2BEC624 VA: 0x2BEC624
+	private bool IsInArea(int x, int y) { }
+
+	// RVA: 0x2BEC6C4 Offset: 0x2BEC6C4 VA: 0x2BEC6C4 Slot: 4
+	public void OnApplicationPause(bool pauseStatus) { }
+
+	// RVA: 0x2BEC72C Offset: 0x2BEC72C VA: 0x2BEC72C
+	public void RestoreInput() { }
+
+	// RVA: 0x2BECE10 Offset: 0x2BECE10 VA: 0x2BECE10
+	private bool EatBuildingTipsAnim() { }
+
+	// RVA: 0x2BED394 Offset: 0x2BED394 VA: 0x2BED394
+	public List<MergeBoard.Grid> FindCanEatFoods(MergeBoard.Grid eatGrid) { }
+
+	// RVA: 0x2BED840 Offset: 0x2BED840 VA: 0x2BED840 Slot: 10
+	protected virtual void AddSiblingTransform(Transform trans) { }
+
+	// RVA: 0x2BED894 Offset: 0x2BED894 VA: 0x2BED894 Slot: 11
+	protected virtual void DelSiblingTransform(Transform trans) { }
+
+	// RVA: 0x2BED8E8 Offset: 0x2BED8E8 VA: 0x2BED8E8 Slot: 12
+	protected virtual void UpdateSibling(bool isAdapt = False) { }
+
+	// RVA: 0x2BED93C Offset: 0x2BED93C VA: 0x2BED93C
+	private void OnHandle_PointerDown(PointerEventData pointerEventData) { }
+
+	// RVA: 0x2BEDE00 Offset: 0x2BEDE00 VA: 0x2BEDE00
+	private void OnHandle_Drag(PointerEventData pointerEventData) { }
+
+	// RVA: 0x2BEEBCC Offset: 0x2BEEBCC VA: 0x2BEEBCC
+	private void OnHandle_PointerUp(PointerEventData pointerEventData) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2BEF24C Offset: 0x2BEF24C VA: 0x2BEF24C
+	public int get_activeIndex() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2BEF254 Offset: 0x2BEF254 VA: 0x2BEF254
+	public void set_activeIndex(int value) { }
+
+	// RVA: 0x2BD9E00 Offset: 0x2BD9E00 VA: 0x2BD9E00
+	private void InitEventTrigger() { }
+
+	// RVA: 0x2BEF25C Offset: 0x2BEF25C VA: 0x2BEF25C
+	private void OnPointerDown(BaseEventData baseEventData) { }
+
+	// RVA: 0x2BEC7E8 Offset: 0x2BEC7E8 VA: 0x2BEC7E8
+	private void OnPointerUp(BaseEventData baseEventData) { }
+
+	// RVA: 0x2BEF960 Offset: 0x2BEF960 VA: 0x2BEF960
+	private void OnDrag(BaseEventData baseEventData) { }
+
+	// RVA: 0x2BEFC3C Offset: 0x2BEFC3C VA: 0x2BEFC3C
+	private void OnBeginDrag(BaseEventData baseEventData) { }
+
+	// RVA: 0x2BECC54 Offset: 0x2BECC54 VA: 0x2BECC54
+	private void OnEndDrag(BaseEventData baseEventData) { }
+
+	// RVA: 0x2BEF51C Offset: 0x2BEF51C VA: 0x2BEF51C
+	private GameObject GetNextEventObject(PointerEventData pointerEventData) { }
+
+	// RVA: 0x2BE8684 Offset: 0x2BE8684 VA: 0x2BE8684
+	private bool MergeToProductIceCube(int index, int id, int oldId) { }
+
+	// RVA: 0x2BE8280 Offset: 0x2BE8280 VA: 0x2BE8280
+	private bool TryProductNextIceCube(int index, int oldId) { }
+
+	// RVA: 0x2BF0500 Offset: 0x2BF0500 VA: 0x2BF0500
+	private bool IsFailedByCD() { }
+
+	// RVA: 0x2BEFF2C Offset: 0x2BEFF2C VA: 0x2BEFF2C
+	private bool IsFailedByEnergyLimit() { }
+
+	// RVA: 0x2BF06D0 Offset: 0x2BF06D0 VA: 0x2BF06D0
+	private int GetCurrentTotalDifficulty(int in_line) { }
+
+	// RVA: 0x2BDAAE0 Offset: 0x2BDAAE0 VA: 0x2BDAAE0
+	private void RegisterProcedureHint() { }
+
+	// RVA: 0x2BDF6B4 Offset: 0x2BDF6B4 VA: 0x2BDF6B4
+	public void AutoTips(bool isRestore = False) { }
+
+	// RVA: 0x2BE1628 Offset: 0x2BE1628 VA: 0x2BE1628
+	public void PlayTipsAnimation(int index = -1, float delayTime = 2.5) { }
+
+	[IteratorStateMachine(typeof(MergeBoard.<DelayPlayAnim>d__152))]
+	// RVA: 0x2BF0E90 Offset: 0x2BF0E90 VA: 0x2BF0E90
+	private IEnumerator DelayPlayAnim(float delayTime) { }
+
+	// RVA: 0x2BF09B8 Offset: 0x2BF09B8 VA: 0x2BF09B8
+	public List<MergeBoard.Grid> CalculateAutoTip(bool isAddMergeTips = True, bool filterTask = True, bool keepTwo = True, int targetId = -1) { }
+
+	// RVA: 0x2BDCD90 Offset: 0x2BDCD90 VA: 0x2BDCD90
+	private bool IsOutOffBoard(int index) { }
+
+	// RVA: 0x2BF1424 Offset: 0x2BF1424 VA: 0x2BF1424
+	private void BuildAutoTips(bool filterTask, bool keepTwo = True, int targetId = -1) { }
+
+	// RVA: 0x2BF2108 Offset: 0x2BF2108 VA: 0x2BF2108
+	private List<MergeBoard.Grid> GetAutoGrids(MergeBoard.Grid grid) { }
+
+	// RVA: 0x2BF0F70 Offset: 0x2BF0F70 VA: 0x2BF0F70
+	private void AddAutoMap(MergeBoard.Grid grid) { }
+
+	// RVA: 0x2BF11B8 Offset: 0x2BF11B8 VA: 0x2BF11B8
+	private void AddAutoGrid(MergeBoard.Grid grid) { }
+
+	// RVA: 0x2BDE744 Offset: 0x2BDE744 VA: 0x2BDE744
+	public void CancelTip(int index, bool force = False) { }
+
+	// RVA: 0x2BF26B4 Offset: 0x2BF26B4 VA: 0x2BF26B4
+	private void PauseTip(int index) { }
+
+	// RVA: 0x2BF22EC Offset: 0x2BF22EC VA: 0x2BF22EC
+	private void ResetMergeTipsAnim() { }
+
+	// RVA: 0x2BEE6F8 Offset: 0x2BEE6F8 VA: 0x2BEE6F8
+	private void MergeAnimator(int index) { }
+
+	// RVA: 0x2BF2BF8 Offset: 0x2BF2BF8 VA: 0x2BF2BF8
+	private bool ProcedureHint_SpeedUp(int index) { }
+
+	// RVA: 0x2BF32A4 Offset: 0x2BF32A4 VA: 0x2BF32A4
+	private bool ProcedureHint_EatBuild(int index) { }
+
+	// RVA: 0x2BF3694 Offset: 0x2BF3694 VA: 0x2BF3694
+	private bool ProcedureHint_Broom(int index) { }
+
+	// RVA: 0x2BF38D4 Offset: 0x2BF38D4 VA: 0x2BF38D4
+	private bool ProcedureHint_Split(int index) { }
+
+	// RVA: 0x2BF3DC4 Offset: 0x2BF3DC4 VA: 0x2BF3DC4
+	private bool ProcedureHint_Omnipotent(int index) { }
+
+	// RVA: 0x2BF42D8 Offset: 0x2BF42D8 VA: 0x2BF42D8
+	private bool ProcedureHint_MagicWand(int index) { }
+
+	// RVA: 0x2BF47EC Offset: 0x2BF47EC VA: 0x2BF47EC
+	private bool ProcedureHint_SameID(int index) { }
+
+	// RVA: 0x2BF2B84 Offset: 0x2BF2B84 VA: 0x2BF2B84
+	private bool ProcedureHint_Default(int index) { }
+
+	// RVA: 0x2BF360C Offset: 0x2BF360C VA: 0x2BF360C
+	private bool CommonProcedureHint(int index) { }
+
+	// RVA: 0x2BEF75C Offset: 0x2BEF75C VA: 0x2BEF75C
+	private void SetMergeStatus(int index, bool isMerge) { }
+
+	// RVA: 0x2BF2AFC Offset: 0x2BF2AFC VA: 0x2BF2AFC
+	private bool IsIndexValid(int index) { }
+
+	// RVA: 0x2BDA100 Offset: 0x2BDA100 VA: 0x2BDA100
+	private void RegisterProcedureHandle() { }
+
+	// RVA: 0x2BEF064 Offset: 0x2BEF064 VA: 0x2BEF064
+	private void ProcedureHandle(int index) { }
+
+	// RVA: 0x2BF4B64 Offset: 0x2BF4B64 VA: 0x2BF4B64
+	private bool Procedure_Guide(int index) { }
+
+	// RVA: 0x2BF4F00 Offset: 0x2BF4F00 VA: 0x2BF4F00
+	private bool Procedure_OneClick(int index) { }
+
+	// RVA: 0x2BF611C Offset: 0x2BF611C VA: 0x2BF611C
+	private bool Procedure_BoardOutside(int index) { }
+
+	// RVA: 0x2BF6194 Offset: 0x2BF6194 VA: 0x2BF6194
+	private bool Procedure_BoardSameGrid(int index) { }
+
+	// RVA: 0x2BF65D8 Offset: 0x2BF65D8 VA: 0x2BF65D8
+	private bool Procedure_GridCD(int index) { }
+
+	// RVA: 0x2BF66A4 Offset: 0x2BF66A4 VA: 0x2BF66A4
+	private bool Procedure_SameGridItem(int index) { }
+
+	// RVA: 0x2BF747C Offset: 0x2BF747C VA: 0x2BF747C
+	private bool Procedure_Omnipotent(int index) { }
+
+	// RVA: 0x2BF7D00 Offset: 0x2BF7D00 VA: 0x2BF7D00
+	private bool Procedure_MagicWand(int index) { }
+
+	// RVA: 0x2BF8710 Offset: 0x2BF8710 VA: 0x2BF8710
+	private bool Procedure_Split(int index) { }
+
+	// RVA: 0x2BF9134 Offset: 0x2BF9134 VA: 0x2BF9134
+	private bool Procedure_LockAndNoBubble(int index) { }
+
+	// RVA: 0x2BF9628 Offset: 0x2BF9628 VA: 0x2BF9628
+	private bool Procedure_LevelLimit(int index) { }
+
+	// RVA: 0x2BF9760 Offset: 0x2BF9760 VA: 0x2BF9760
+	private bool Procedure_EatBuild(int index) { }
+
+	// RVA: 0x2BFA998 Offset: 0x2BFA998 VA: 0x2BFA998
+	private bool Procedure_SpeedUp(int index) { }
+
+	// RVA: 0x2BFB278 Offset: 0x2BFB278 VA: 0x2BFB278
+	private bool Procedure_Default(int index) { }
+
+	// RVA: 0x2BF4CF8 Offset: 0x2BF4CF8 VA: 0x2BF4CF8
+	private void MoveHome(int index) { }
+
+	// RVA: 0x2BF71A4 Offset: 0x2BF71A4 VA: 0x2BF71A4
+	private void Swap(int srcIndex, int targetIndex) { }
+
+	// RVA: 0x2BFB784 Offset: 0x2BFB784 VA: 0x2BFB784
+	private void SwapBoardItemIndex(int srcIndex, int targetIndex) { }
+
+	// RVA: 0x2BFBB48 Offset: 0x2BFBB48 VA: 0x2BFBB48
+	public void .ctor() { }
+}
+

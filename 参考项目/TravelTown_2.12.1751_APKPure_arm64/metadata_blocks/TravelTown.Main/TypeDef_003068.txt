@@ -1,0 +1,78 @@
+// Namespace: Merger.RemoteMergeItems.Configuration
+public abstract class RemoteItemBase // TypeDefIndex: 3068
+{
+	// Fields
+	[CompilerGenerated]
+	private string <_spriteAsset>k__BackingField; // 0x10
+	[JsonIgnore]
+	private RemoteSpriteLocation _sprite; // 0x18
+	[CompilerGenerated]
+	private BoardQueueOrderCapability <BoardQueueOrder>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private string <UniqueId>k__BackingField; // 0x28
+
+	// Properties
+	[JsonProperty("spriteAsset")]
+	protected virtual string _spriteAsset { get; set; }
+	[JsonIgnore]
+	public virtual AssetReferenceT<Sprite> Sprite { get; }
+	[JsonIgnore]
+	public virtual RemoteSpriteLocation RemoteSprite { get; }
+	[JsonProperty("boardQueueOrder")]
+	public BoardQueueOrderCapability BoardQueueOrder { get; set; }
+	public virtual string UniqueId { get; set; }
+	protected virtual string LocalTextureName { get; }
+	protected abstract string LocalSpritesPath { get; }
+	protected abstract string SpriteLocatorUniqueId { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x615D38C Offset: 0x615938C VA: 0x615D38C Slot: 4
+	protected virtual string get__spriteAsset() { }
+
+	[CompilerGenerated]
+	// RVA: 0x615D394 Offset: 0x6159394 VA: 0x615D394 Slot: 5
+	protected virtual void set__spriteAsset(string value) { }
+
+	// RVA: 0x615D39C Offset: 0x615939C VA: 0x615D39C Slot: 6
+	public virtual AssetReferenceT<Sprite> get_Sprite() { }
+
+	// RVA: 0x615D494 Offset: 0x6159494 VA: 0x615D494 Slot: 7
+	public virtual RemoteSpriteLocation get_RemoteSprite() { }
+
+	[CompilerGenerated]
+	// RVA: 0x615D4D4 Offset: 0x61594D4 VA: 0x615D4D4 Slot: 8
+	public BoardQueueOrderCapability get_BoardQueueOrder() { }
+
+	[CompilerGenerated]
+	// RVA: 0x615D4DC Offset: 0x61594DC VA: 0x615D4DC
+	public void set_BoardQueueOrder(BoardQueueOrderCapability value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x615D4E4 Offset: 0x61594E4 VA: 0x615D4E4 Slot: 9
+	public virtual string get_UniqueId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x615D4EC Offset: 0x61594EC VA: 0x615D4EC Slot: 10
+	public virtual void set_UniqueId(string value) { }
+
+	// RVA: 0x615D4F4 Offset: 0x61594F4 VA: 0x615D4F4 Slot: 11
+	protected virtual string get_LocalTextureName() { }
+
+	// RVA: -1 Offset: -1 Slot: 12
+	protected abstract string get_LocalSpritesPath();
+
+	// RVA: -1 Offset: -1 Slot: 13
+	protected abstract string get_SpriteLocatorUniqueId();
+
+	// RVA: 0x615D3DC Offset: 0x61593DC VA: 0x615D3DC
+	private RemoteSpriteLocation GetParsedSpriteLocation() { }
+
+	// RVA: 0x615D500 Offset: 0x6159500 VA: 0x615D500
+	public void SetAsFallbackSprite(string fallbackId) { }
+
+	// RVA: 0x615D564 Offset: 0x6159564 VA: 0x615D564
+	protected void .ctor() { }
+}
+

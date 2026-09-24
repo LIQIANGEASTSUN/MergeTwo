@@ -1,0 +1,12 @@
+// Namespace: 
+public enum MergeResourceManager.MergeSourcesType // TypeDefIndex: 2715
+{
+	// Fields
+	public int value__; // 0x0
+	public const MergeResourceManager.MergeSourcesType None = 0;
+	public const MergeResourceManager.MergeSourcesType Board = 1;
+	public const MergeResourceManager.MergeSourcesType Pack = 2;
+	public const MergeResourceManager.MergeSourcesType Reward = 3;
+	public const MergeResourceManager.MergeSourcesType Max = 4;
+}
+

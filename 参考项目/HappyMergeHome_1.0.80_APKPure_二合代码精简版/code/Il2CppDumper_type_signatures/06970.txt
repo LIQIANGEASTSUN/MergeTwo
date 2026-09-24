@@ -1,0 +1,164 @@
+// Namespace: Activity.ComboPlay.Model
+public class ComboPlayModel : ActivityEntityBase // TypeDefIndex: 6970
+{
+	// Fields
+	private static ComboPlayModel _instance; // 0x0
+	private List<ComboPlayStage> _curGroupList; // 0x3C
+	private ComboPlayStage _curStageConfig; // 0x40
+	private bool _lastDoubleState; // 0x44
+	private static GameObject _flyItemObj; // 0x4
+	private bool _isFlyCollection; // 0x45
+	private int _flyId; // 0x48
+
+	// Properties
+	public static ComboPlayModel Instance { get; }
+	public override string Guid { get; }
+	public StorageComboPlay Storage { get; }
+	public List<ComboPlayStage> CurGroupList { get; }
+	public ComboPlayStage CurStageConfig { get; }
+	public static GameObject FlyItemObj { get; }
+
+	// Methods
+
+	// RVA: 0x1CB105C Offset: 0x1CB105C VA: 0x1CB105C
+	public static ComboPlayModel get_Instance() { }
+
+	// RVA: 0x1CB2D5C Offset: 0x1CB2D5C VA: 0x1CB2D5C Slot: 4
+	public override string get_Guid() { }
+
+	// RVA: 0x1CB28C8 Offset: 0x1CB28C8 VA: 0x1CB28C8
+	public StorageComboPlay get_Storage() { }
+
+	// RVA: 0x1CB2DEC Offset: 0x1CB2DEC VA: 0x1CB2DEC
+	public List<ComboPlayStage> get_CurGroupList() { }
+
+	// RVA: 0x1CB2E40 Offset: 0x1CB2E40 VA: 0x1CB2E40
+	public ComboPlayStage get_CurStageConfig() { }
+
+	[RuntimeInitializeOnLoadMethod(0)]
+	// RVA: 0x1CB2E94 Offset: 0x1CB2E94 VA: 0x1CB2E94
+	private static void InitAuto() { }
+
+	// RVA: 0x1CB2EFC Offset: 0x1CB2EFC VA: 0x1CB2EFC Slot: 5
+	public override void InitFromServerData(string activityId, string activityType, ulong startTime, ulong endTime, ulong rewardEndTime, bool manualEnd, string configJson, string activitySubType) { }
+
+	// RVA: 0x1CB354C Offset: 0x1CB354C VA: 0x1CB354C
+	public void DebugReset() { }
+
+	// RVA: 0x1CB3710 Offset: 0x1CB3710 VA: 0x1CB3710
+	private void InitCheckReward() { }
+
+	// RVA: 0x1CB4094 Offset: 0x1CB4094 VA: 0x1CB4094
+	public string GetProgressStr() { }
+
+	// RVA: 0x1CB429C Offset: 0x1CB429C VA: 0x1CB429C
+	public float GetProgress() { }
+
+	// RVA: 0x1CB43E4 Offset: 0x1CB43E4 VA: 0x1CB43E4
+	public float GetDoubleProgress() { }
+
+	// RVA: 0x1CB4730 Offset: 0x1CB4730 VA: 0x1CB4730
+	public int GetCurStageNeedScore() { }
+
+	// RVA: 0x1CB4794 Offset: 0x1CB4794 VA: 0x1CB4794 Slot: 18
+	protected override void InitServerDataFinish() { }
+
+	// RVA: 0x1CB4230 Offset: 0x1CB4230 VA: 0x1CB4230
+	public bool IsJoin() { }
+
+	// RVA: 0x1CB4B60 Offset: 0x1CB4B60 VA: 0x1CB4B60
+	public bool IsDoubleProductTime() { }
+
+	// RVA: 0x1CB4D4C Offset: 0x1CB4D4C VA: 0x1CB4D4C Slot: 26
+	public virtual string GetEndTimeString() { }
+
+	// RVA: 0x1CB502C Offset: 0x1CB502C VA: 0x1CB502C Slot: 27
+	public virtual string GetJoinEndTimeString() { }
+
+	// RVA: 0x1CB522C Offset: 0x1CB522C VA: 0x1CB522C
+	public bool IsTimeEnd() { }
+
+	// RVA: 0x1CB5368 Offset: 0x1CB5368 VA: 0x1CB5368 Slot: 23
+	public override bool CanDownLoadRes() { }
+
+	// RVA: 0x1CB1540 Offset: 0x1CB1540 VA: 0x1CB1540
+	public bool CanShowMerge() { }
+
+	// RVA: 0x1CB5414 Offset: 0x1CB5414 VA: 0x1CB5414
+	public bool CanShowJoin() { }
+
+	// RVA: 0x1CB31F4 Offset: 0x1CB31F4 VA: 0x1CB31F4
+	private void InitCurStageConfig() { }
+
+	// RVA: 0x1CB59D8 Offset: 0x1CB59D8 VA: 0x1CB59D8
+	private void UpdateJoinTime() { }
+
+	[AsyncStateMachine(typeof(ComboPlayModel.<AddScore>d__33))]
+	// RVA: 0x1CB5C14 Offset: 0x1CB5C14 VA: 0x1CB5C14
+	public void AddScore(int index, MergeBoard board) { }
+
+	// RVA: 0x1CB5D34 Offset: 0x1CB5D34 VA: 0x1CB5D34
+	public void AddScoreDebug(int addScore) { }
+
+	// RVA: 0x1CB5E3C Offset: 0x1CB5E3C VA: 0x1CB5E3C
+	private void CalculateComplete() { }
+
+	// RVA: 0x1CB6958 Offset: 0x1CB6958 VA: 0x1CB6958
+	public void TryProduct(int index, int id, MergeBoard board) { }
+
+	// RVA: 0x1CB6F0C Offset: 0x1CB6F0C VA: 0x1CB6F0C
+	public static GameObject get_FlyItemObj() { }
+
+	// RVA: 0x1CB60E4 Offset: 0x1CB60E4 VA: 0x1CB60E4
+	private void FlyCollection(int count, Vector3 scrPos) { }
+
+	[AsyncStateMachine(typeof(ComboPlayModel.<FlyCurrency>d__43))]
+	// RVA: 0x1CB7120 Offset: 0x1CB7120 VA: 0x1CB7120
+	public Task FlyCurrency(int id, int type, int count, Vector3 scrPos) { }
+
+	// RVA: 0x1CB72A8 Offset: 0x1CB72A8 VA: 0x1CB72A8
+	public ComboPlayStage GetNextConfig(ComboPlayStage config) { }
+
+	// RVA: 0x1CB7500 Offset: 0x1CB7500 VA: 0x1CB7500
+	public List<int> GetCurRoundAward() { }
+
+	// RVA: 0x1CB76DC Offset: 0x1CB76DC VA: 0x1CB76DC
+	public bool IsCanShowActivity() { }
+
+	// RVA: 0x1CB77C4 Offset: 0x1CB77C4 VA: 0x1CB77C4
+	public bool CanShowJoinEnd() { }
+
+	// RVA: 0x1CB7B28 Offset: 0x1CB7B28 VA: 0x1CB7B28 Slot: 17
+	public override void SetTempEndTime(int timer = 10) { }
+
+	// RVA: 0x1CB7C5C Offset: 0x1CB7C5C VA: 0x1CB7C5C
+	public void SetTemJoinEndTime(int timer = 10) { }
+
+	// RVA: 0x1CB2C94 Offset: 0x1CB2C94 VA: 0x1CB2C94
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1CB7DB4 Offset: 0x1CB7DB4 VA: 0x1CB7DB4
+	private bool <InitCurStageConfig>b__31_0(ComboPlayStage p) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1CB7DFC Offset: 0x1CB7DFC VA: 0x1CB7DFC
+	private bool <InitCurStageConfig>b__31_2(ComboPlayStage p) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1CB7E44 Offset: 0x1CB7E44 VA: 0x1CB7E44
+	private bool <CalculateComplete>b__35_0(ComboPlayStage p) { }
+
+	// RVA: 0x1CB7E8C Offset: 0x1CB7E8C VA: 0x1CB7E8C
+	public void <>iFixBaseProxy_InitFromServerData(string P0, string P1, ulong P2, ulong P3, ulong P4, bool P5, string P6, string P7) { }
+
+	// RVA: 0x1CB7EE4 Offset: 0x1CB7EE4 VA: 0x1CB7EE4
+	public void <>iFixBaseProxy_InitServerDataFinish() { }
+
+	// RVA: 0x1CB7EEC Offset: 0x1CB7EEC VA: 0x1CB7EEC
+	public bool <>iFixBaseProxy_CanDownLoadRes() { }
+
+	// RVA: 0x1CB7EF4 Offset: 0x1CB7EF4 VA: 0x1CB7EF4
+	public void <>iFixBaseProxy_SetTempEndTime(int P0) { }
+}
+

@@ -1,0 +1,29 @@
+// Namespace: 
+public enum MergePackageUnitType // TypeDefIndex: 2792
+{
+	// Fields
+	public int value__; // 0x0
+	public const MergePackageUnitType bag = 0;
+	public const MergePackageUnitType baglock = 1;
+	public const MergePackageUnitType bagUnlock = 2;
+	public const MergePackageUnitType bagMax = 3;
+	public const MergePackageUnitType buildBag = 4;
+	public const MergePackageUnitType buildBaglock = 5;
+	public const MergePackageUnitType buildBagUnlock = 6;
+	public const MergePackageUnitType buildBagMax = 7;
+	public const MergePackageUnitType vipBagUnlock = 8;
+	public const MergePackageUnitType vipBag = 9;
+	public const MergePackageUnitType info = 10;
+	public const MergePackageUnitType product = 11;
+	public const MergePackageUnitType productExplain = 12;
+	public const MergePackageUnitType bigInfo = 13;
+	public const MergePackageUnitType infoTips = 14;
+	public const MergePackageUnitType taskRewards = 15;
+	public const MergePackageUnitType taskXpRewards = 16;
+	public const MergePackageUnitType warning = 17;
+	public const MergePackageUnitType splite = 18;
+	public const MergePackageUnitType buildBundle = 19;
+	public const MergePackageUnitType notMergeIcon = 20;
+	public const MergePackageUnitType increasItem = 21;
+}
+

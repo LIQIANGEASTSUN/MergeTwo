@@ -1,0 +1,30 @@
+Type: GameLogic.Player.Items.Merging.IMergeFeatures
+
+Method: GameLogic.Player.Items.Merging.IMergeMechanic get_Mechanic()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Production.IItemProducer get_AdditionalSpawnProducer()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_Mergeable()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_RequiresXpState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

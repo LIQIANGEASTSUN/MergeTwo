@@ -1,0 +1,92 @@
+// Namespace: Merger.MergeBoardQueue.Models
+public class BoardQueueModel : ModelBase, IBoardQueueModel, IBoardQueueSyncModel, IBoardEventQueueModel // TypeDefIndex: 33301
+{
+	// Fields
+	private LinkedList<QueuedItem> _frontItemsQueue; // 0x28
+	private LinkedList<QueuedItem> _backItemsQueue; // 0x30
+	private HashSet<string> _dequeuedItemsUUIDs; // 0x38
+	private QueuedItemsComparer _queuedItemsComparer; // 0x40
+	private bool _isFirstLoad; // 0x48
+	private int _realQueueCount; // 0x4C
+	private QueuedItem _realHeadItem; // 0x50
+	private readonly MutableBindableProperty<int> _simulatedQueueCount; // 0x58
+	private readonly MutableBindableProperty<QueuedItem> _simulatedHeadItem; // 0x60
+	private readonly List<QueuedItem> _pendingEnqueueItems; // 0x68
+
+	// Properties
+	public BindableProperty<int> BoardEventQueueCount { get; }
+	public BindableProperty<QueuedItem> HeadItem { get; }
+	public int Count { get; }
+
+	// Methods
+
+	// RVA: 0x6A585EC Offset: 0x6A545EC VA: 0x6A585EC Slot: 33
+	public BindableProperty<int> get_BoardEventQueueCount() { }
+
+	// RVA: 0x6A585F4 Offset: 0x6A545F4 VA: 0x6A585F4 Slot: 20
+	public BindableProperty<QueuedItem> get_HeadItem() { }
+
+	// RVA: 0x6A585FC Offset: 0x6A545FC VA: 0x6A585FC Slot: 28
+	public int get_Count() { }
+
+	// RVA: 0x6A58654 Offset: 0x6A54654 VA: 0x6A58654 Slot: 17
+	protected override void InitializeModel() { }
+
+	// RVA: 0x6A5887C Offset: 0x6A5487C VA: 0x6A5887C Slot: 4
+	protected override void SubscribeToSignals() { }
+
+	// RVA: 0x6A5892C Offset: 0x6A5492C VA: 0x6A5892C Slot: 5
+	protected override void UnsubscribeFromSignals() { }
+
+	// RVA: 0x6A589DC Offset: 0x6A549DC VA: 0x6A589DC
+	private void OnRewardFlyAnimationStarted(RewardsFlyAnimationStartedSignal signal) { }
+
+	// RVA: 0x6A58AA8 Offset: 0x6A54AA8 VA: 0x6A58AA8 Slot: 21
+	public QueuedItem Peek() { }
+
+	// RVA: 0x6A58B90 Offset: 0x6A54B90 VA: 0x6A58B90 Slot: 22
+	public QueuedItem Dequeue() { }
+
+	// RVA: 0x6A58C7C Offset: 0x6A54C7C VA: 0x6A58C7C Slot: 23
+	public void ExtractItem(QueuedItem item) { }
+
+	// RVA: 0x6A58D48 Offset: 0x6A54D48 VA: 0x6A58D48 Slot: 24
+	public QueuedItem FindNewestInQueue(string itemId) { }
+
+	// RVA: 0x6A58F54 Offset: 0x6A54F54 VA: 0x6A58F54 Slot: 29
+	public IEnumerable<QueuedItem> GetAllItems() { }
+
+	// RVA: 0x6A58F9C Offset: 0x6A54F9C VA: 0x6A58F9C
+	public void Enqueue(QueuedItem queuedItem) { }
+
+	// RVA: 0x6A590C4 Offset: 0x6A550C4 VA: 0x6A590C4 Slot: 25
+	public QueuedItem EnqueueItem(IMergeItem mergeItem, string uuidInBoardQueue, long enqueuingTimestamp, BoardQueueOrder boardQueueOrder, ResourceSource source) { }
+
+	// RVA: 0x6A591DC Offset: 0x6A551DC VA: 0x6A591DC Slot: 26
+	public QueuedItem EnqueueItemPendingSync(IMergeItem mergeItem, string uuidInBoardQueue, long enqueuingTimestamp, BoardQueueOrder boardQueueOrder, ResourceSource source) { }
+
+	// RVA: 0x6A592EC Offset: 0x6A552EC VA: 0x6A592EC Slot: 27
+	public void SyncPendingEnqueuedItem(string uuid) { }
+
+	// RVA: 0x6A594AC Offset: 0x6A554AC VA: 0x6A594AC Slot: 30
+	public void LoadFromBackendState(List<QueuedItem> backendItems) { }
+
+	// RVA: 0x6A58AF0 Offset: 0x6A54AF0 VA: 0x6A58AF0
+	private LinkedListNode<QueuedItem> HeadOfQueue() { }
+
+	// RVA: 0x6A58FD8 Offset: 0x6A54FD8 VA: 0x6A58FD8
+	private void EnqueueToSpecificQueue(LinkedList<QueuedItem> queue, QueuedItem queuedItem) { }
+
+	// RVA: 0x6A5879C Offset: 0x6A5479C VA: 0x6A5879C
+	private void UpdateBindableProperties() { }
+
+	// RVA: 0x6A587C8 Offset: 0x6A547C8 VA: 0x6A587C8 Slot: 31
+	public void SyncWithState() { }
+
+	// RVA: 0x6A59868 Offset: 0x6A55868 VA: 0x6A59868 Slot: 32
+	public void SetBoardEventQueue(BoardQueueBackendState boardEventQueueState) { }
+
+	// RVA: 0x6A5986C Offset: 0x6A5586C VA: 0x6A5986C
+	public void .ctor() { }
+}
+

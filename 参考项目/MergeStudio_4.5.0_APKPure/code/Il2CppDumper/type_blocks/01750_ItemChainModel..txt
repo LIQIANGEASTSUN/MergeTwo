@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemChainModel.<>c__DisplayClass11_0 // TypeDefIndex: 1750
+{
+	// Fields
+	public int linkIndex; // 0x8
+
+	// Methods
+
+	// RVA: 0x1910F54 Offset: 0x1910F54 VA: 0x1910F54
+	public void .ctor() { }
+
+	// RVA: 0x1911CE4 Offset: 0x1911CE4 VA: 0x1911CE4
+	internal bool <IsLinkIndexUsed>b__0(ItemLinkModel l) { }
+}
+

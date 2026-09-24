@@ -1,0 +1,20 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ProduceSystem.<>c__DisplayClass17_0 // TypeDefIndex: 986
+{
+	// Fields
+	public ProduceSystem <>4__this; // 0x10
+	public ProducerComponent producer; // 0x18
+
+	// Methods
+
+	// RVA: 0x679BFCC Offset: 0x6797FCC VA: 0x679BFCC
+	public void .ctor() { }
+
+	// RVA: 0x679C19C Offset: 0x679819C VA: 0x679C19C
+	internal IEnumerable<IMergeItem> <CanCompleteOrder>b__0(IMergeItem questItem) { }
+
+	// RVA: 0x679C2C4 Offset: 0x67982C4 VA: 0x679C2C4
+	internal bool <CanCompleteOrder>b__1(IMergeItem item) { }
+}
+

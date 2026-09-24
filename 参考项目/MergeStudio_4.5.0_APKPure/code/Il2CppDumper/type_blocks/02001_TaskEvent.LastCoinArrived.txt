@@ -1,0 +1,7 @@
+// Namespace: 
+public struct TaskEvent.LastCoinArrived : IEvent // TypeDefIndex: 2001
+{
+	// Fields
+	public bool Sell; // 0x0
+}
+

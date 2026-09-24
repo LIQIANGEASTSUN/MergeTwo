@@ -1,0 +1,213 @@
+Type: GameLogic.Player.PlayerModel+<>c__DisplayClass661_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0357407C LDR X0, [X0 + 0x7C8]
+	0x03574080 BL 0x239B8E4
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <RemoveNonExistingHotspots>b__0(HotspotId completed)
+
+Disassembly:
+	0x0357AA2C BL 0x239B8E4
+	0x0357AA30 ADRP X0, 0x21B5000
+	0x0357AA34 LDR X0, [X0 + 0x5D0]
+	0x0357AA38 BL 0x239B8E4
+	0x0357AA3C MOVZ W8, 0x1
+	0x0357AA40 STRB W8, [X20 + 0x71E]
+	0x0357AA44 LDR X19, [X19 + 0x18]
+	0x0357AA48 CBZ X19, 0x357AB34
+	0x0357AA4C LDR W8, [X19 + 0x20]
+	0x0357AA50 CBZ W8, 0x357AB34
+	0x0357AA54 ADRP X24, 0x21B5000
+	0x0357AA58 LDR X24, [X24 + 0x5C0]
+	0x0357AA5C LDR X0, [X24]
+	0x0357AA60 LDR W8, [X0 + 0xE4]
+	0x0357AA64 CBNZ W8, 0x357AA70
+	0x0357AA68 BL 0x239BA64
+	0x0357AA6C LDR X0, [X24]
+	0x0357AA70 ADRP X9, 0x215A000
+	0x0357AA74 ADRP X10, 0x21B5000
+	0x0357AA78 LDR X8, [X0 + 0xB8]
+	0x0357AA7C LDR X9, [X9 + 0xFC0]
+	0x0357AA80 LDR X10, [X10 + 0x5D0]
+	0x0357AA84 LDR X22, [X8 + 0x8]
+	0x0357AA88 LDR X21, [X9]
+	0x0357AA8C LDR X20, [X10]
+	0x0357AA90 CBNZ X22, 0x357AAEC
+	0x0357AA94 LDR W9, [X0 + 0xE4]
+	0x0357AA98 CBNZ W9, 0x357AAA8
+	0x0357AA9C BL 0x239BA64
+	0x0357AAA0 LDR X8, [X24]
+	0x0357AAA4 LDR X8, [X8 + 0xB8]
+	0x0357AAA8 ADRP X9, 0x21B5000
+	0x0357AAAC LDR X9, [X9 + 0x5B0]
+	0x0357AAB0 LDR X23, [X8]
+	0x0357AAB4 LDR X0, [X9]
+	0x0357AAB8 BL 0x239BB80
+	0x0357AABC ADRP X8, 0x21B5000
+	0x0357AAC0 MOV X1, X23
+	0x0357AAC4 MOV X3, X31
+	0x0357AAC8 LDR X8, [X8 + 0x5B8]
+	0x0357AACC MOV X22, X0
+	0x0357AAD0 LDR X2, [X8]
+	0x0357AAD4 BL 0x2996A34
+	0x0357AAD8 LDR X8, [X24]
+	0x0357AADC MOV X1, X22
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move W19, W1
+	006 Move X20, X0
+	007 Move W8, [0x27B36F0]
+	008 Move TEMP, X8
+	009 And TEMP, TEMP, 1
+	010 Compare TEMP, 1
+	011 JumpIfEqual {16}
+	012 Move X0, [0x215FE10]
+	013 Call 0x239F8E4
+	014 Move W8, 1
+	015 Move [X21+1776], W8
+	016 Move X20, [X20+16]
+	017 Compare X20, 0
+	018 JumpIfEqual {49}
+	019 Move X8, [X20]
+	020 Move X10, [0x215FE10]
+	021 NotImplemented "Instruction LDRH not yet implemented."
+	022 Move X1, [X10]
+	023 Compare X9, 0
+	024 JumpIfEqual {31}
+	025 Move X10, [X8+176]
+	026 Add X10, X10, 8
+	027 NotImplemented "Instruction LDUR not yet implemented."
+	028 NotImplemented "Instruction CMP not yet implemented."
+	029 Subtract X9, X9, 1
+	030 Add X10, X10, 16
+	031 Move X0, X20
+	032 Move W2, W31
+	033 Call 0x23D927C
+	034 NotImplemented "Instruction LDRSW not yet implemented."
+	035 Add X8, X8, X9
+	036 Add X0, X8, 312
+	037 Move X8, [X0]
+	038 Move X2, [X0+8]
+	039 Move X0, X20
+	040 Move W1, W19
+	041 NotImplemented "Instruction BLR not yet implemented."
+	042 Move X20, [X31+16]
+	043 Move X19, [X31+24]
+	044 Move W8, 1
+	045 NotImplemented "Instruction BIC not yet implemented."
+	046 Move X30, [X31+32]
+	047 Move X21, [X31+40]
+	048 Return X0
+	049 Call 0x239FB90
+
+Method: System.Boolean <RemoveNonExistingHotspots>b__1(HotspotId visible)
+
+Disassembly:
+	0x0357AAE0 LDR X0, [X8 + 0xB8]
+	0x0357AAE4 STR X22, [X0 + 0x8]!
+	0x0357AAE8 BL 0x239B888
+	0x0357AAEC ADRP X8, 0x21B5000
+	0x0357AAF0 MOV X0, X19
+	0x0357AAF4 MOV X1, X22
+	0x0357AAF8 LDR X8, [X8 + 0x5A8]
+	0x0357AAFC LDR X2, [X8]
+	0x0357AB00 BL 0x25E4E9C
+	0x0357AB04 MOV X1, X0
+	0x0357AB08 MOV X0, X21
+	0x0357AB0C MOV X2, X31
+	0x0357AB10 BL 0x43217CC
+	0x0357AB14 MOV X1, X0
+	0x0357AB18 MOV X0, X20
+	0x0357AB1C MOV X2, X31
+	0x0357AB20 LDP X20, X19, [X31 + 0x30]
+	0x0357AB24 LDP X22, X21, [X31 + 0x20]
+	0x0357AB28 LDP X24, X23, [X31 + 0x10]
+	0x0357AB2C LDR X30, [X31], #0x40
+	0x0357AB30 B 0x4312F8C
+	0x0357AB34 ADRP X8, 0x21B5000
+	0x0357AB38 LDR X8, [X8 + 0x5C8]
+	0x0357AB3C LDP X20, X19, [X31 + 0x30]
+	0x0357AB40 LDP X22, X21, [X31 + 0x20]
+	0x0357AB44 LDP X24, X23, [X31 + 0x10]
+	0x0357AB48 LDR X0, [X8]
+	0x0357AB4C LDR X30, [X31], #0x40
+	0x0357AB50 RET
+	0x0357AB54 LDR X0, [X0 + 0x10]
+	0x0357AB58 RET
+	0x0357AB5C STR X1, [X0 + 0x10]!
+	0x0357AB60 B 0x239B888
+	0x0357AB64 LDR X0, [X0 + 0x18]
+	0x0357AB68 RET
+	0x0357AB6C STR X1, [X0 + 0x18]!
+	0x0357AB70 B 0x239B888
+	0x0357AB74 MOV X1, X31
+	0x0357AB78 B 0x44E8DEC
+	0x0357AB7C STR X30, [X31 - 0x20]!
+	0x0357AB80 STP X20, X19, [X31 + 0x10]
+	0x0357AB84 ADRP X19, 0x27AF000
+	0x0357AB88 ADRP X20, 0x21B5000
+	0x0357AB8C LDRB W8, [X19 + 0x71F]
+	0x0357AB90 LDR X20, [X20 + 0x5C0]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move W19, W1
+	006 Move X20, X0
+	007 Move W8, [0x27B36F1]
+	008 Move TEMP, X8
+	009 And TEMP, TEMP, 1
+	010 Compare TEMP, 1
+	011 JumpIfEqual {16}
+	012 Move X0, [0x215FE10]
+	013 Call 0x239F8E4
+	014 Move W8, 1
+	015 Move [X21+1777], W8
+	016 Move X20, [X20+16]
+	017 Compare X20, 0
+	018 JumpIfEqual {49}
+	019 Move X8, [X20]
+	020 Move X10, [0x215FE10]
+	021 NotImplemented "Instruction LDRH not yet implemented."
+	022 Move X1, [X10]
+	023 Compare X9, 0
+	024 JumpIfEqual {31}
+	025 Move X10, [X8+176]
+	026 Add X10, X10, 8
+	027 NotImplemented "Instruction LDUR not yet implemented."
+	028 NotImplemented "Instruction CMP not yet implemented."
+	029 Subtract X9, X9, 1
+	030 Add X10, X10, 16
+	031 Move X0, X20
+	032 Move W2, W31
+	033 Call 0x23D927C
+	034 NotImplemented "Instruction LDRSW not yet implemented."
+	035 Add X8, X8, X9
+	036 Add X0, X8, 312
+	037 Move X8, [X0]
+	038 Move X2, [X0+8]
+	039 Move X0, X20
+	040 Move W1, W19
+	041 NotImplemented "Instruction BLR not yet implemented."
+	042 Move X20, [X31+16]
+	043 Move X19, [X31+24]
+	044 Move W8, 1
+	045 NotImplemented "Instruction BIC not yet implemented."
+	046 Move X30, [X31+32]
+	047 Move X21, [X31+40]
+	048 Return X0
+	049 Call 0x239FB90
+

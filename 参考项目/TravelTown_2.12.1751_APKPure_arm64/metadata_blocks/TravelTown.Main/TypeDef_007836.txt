@@ -1,0 +1,15 @@
+// Namespace: Merger.Boosters.Declarations.Definitions.Interfaces
+public interface IBoosterStrategyApplier // TypeDefIndex: 7836
+{
+	// Properties
+	public abstract BoosterType Type { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract BoosterType get_Type();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void ApplyStrategy(IBoosterStrategy strategy);
+}
+

@@ -1,0 +1,16 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "BubbleBoosterData", menuName = "Scriptable/Booster/BubbleBoosterData", order = 4)]
+public class BubbleBoosterData : BoosterItemData // TypeDefIndex: 1921
+{
+	// Fields
+	public readonly string BubbleBoosterWarningSuffix; // 0x3C
+
+	// Methods
+
+	// RVA: 0x1928D74 Offset: 0x1928D74 VA: 0x1928D74 Slot: 4
+	public override List<BoardPositionEntity> GetAvailablePositions(BoardEntity boardEntity, EventEntity eventEntity, BoardData boardData, out string keySuffix) { }
+
+	// RVA: 0x1929130 Offset: 0x1929130 VA: 0x1929130
+	public void .ctor() { }
+}
+

@@ -1,0 +1,10 @@
+// Namespace: 
+public enum MiniBoardMovable.Status // TypeDefIndex: 1130
+{
+	// Fields
+	public int value__; // 0x0
+	public const MiniBoardMovable.Status DEFAULT = 0;
+	public const MiniBoardMovable.Status DRAGGING = 1;
+	public const MiniBoardMovable.Status LOCKED = 2;
+}
+

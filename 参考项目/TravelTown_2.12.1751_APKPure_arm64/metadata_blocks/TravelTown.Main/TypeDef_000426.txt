@@ -1,0 +1,27 @@
+// Namespace: MergeEngine.Model
+public interface IRandomNumberModel // TypeDefIndex: 426
+{
+	// Properties
+	public abstract Random Random { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract Random get_Random();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract int NextInt();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void SetSeed(int seed);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract int Range(int min, int max);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract int Range(int max);
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract double NextDouble();
+}
+

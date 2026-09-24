@@ -1,0 +1,192 @@
+Type: GameLogic.Player.Items.Sink.ExclusiveTargetSinkBranch
+
+Method: System.Int32 get_ItemId()
+
+Disassembly:
+	0x036076E8 LDR W20, [X19 + 0x28]
+	0x036076EC MOV X0, X31
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_ItemId(System.Int32 value)
+
+Disassembly:
+	0x036076F0 BL 0x44ECB1C
+	0x036076F4 CMP W20, W0
+
+ISIL:
+	001 Move [X0+16], W1
+	002 Return 
+
+Method: GameLogic.Config.ItemDef get_RewardItemDef()
+
+Disassembly:
+	0x036076F8 B.NE 0x3607708
+	0x036076FC STR W31, [X19 + 0x10]
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_RewardItemDef(GameLogic.Config.ItemDef value)
+
+Disassembly:
+	0x03607700 MOV X20, X19
+	0x03607704 B 0x3607744
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Int32 get_Target()
+
+Disassembly:
+	0x03607708 ADRP X8, 0x212A000
+	0x0360770C LDR X8, [X8 + 0x610]
+
+ISIL:
+	001 Move W0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_Target(System.Int32 value)
+
+Disassembly:
+	0x03607710 LDR X0, [X8]
+	0x03607714 BL 0x239BB80
+
+ISIL:
+	001 Move [X0+32], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03607718 MOV X1, X31
+	0x0360771C MOV X20, X0
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(System.Int32 itemId, System.Int32 target, System.Int32 rewardItemId)
+
+Disassembly:
+	0x03607720 BL 0x44E8DEC
+	0x03607724 MOV X0, X31
+	0x03607728 STR W31, [X20 + 0x10]
+	0x0360772C BL 0x44ECB1C
+	0x03607730 LDR X1, [X19 + 0x30]
+	0x03607734 STR W0, [X20 + 0x28]
+	0x03607738 MOV X0, X20
+	0x0360773C STR X1, [X0 + 0x30]!
+	0x03607740 BL 0x239B888
+	0x03607744 LDR X1, [X19 + 0x40]
+	0x03607748 MOV X0, X20
+	0x0360774C STR X1, [X0 + 0x38]!
+	0x03607750 BL 0x239B888
+	0x03607754 MOV X0, X20
+	0x03607758 LDP X20, X19, [X31 + 0x10]
+	0x0360775C LDR X30, [X31], #0x20
+	0x03607760 RET
+	0x03607764 B 0x36076B0
+	0x03607768 LDRB W0, [X0 + 0x10]
+	0x0360776C RET
+	0x03607770 STRB W1, [X0 + 0x10]
+	0x03607774 RET
+	0x03607778 LDR X0, [X0 + 0x18]
+	0x0360777C RET
+	0x03607780 STR X1, [X0 + 0x18]!
+	0x03607784 B 0x239B888
+	0x03607788 LDRB W0, [X0 + 0x20]
+	0x0360778C RET
+	0x03607790 STRB W1, [X0 + 0x20]
+	0x03607794 RET
+	0x03607798 LDRB W0, [X0 + 0x21]
+	0x0360779C RET
+	0x036077A0 STRB W1, [X0 + 0x21]
+	0x036077A4 RET
+	0x036077A8 LDRB W0, [X0 + 0x22]
+	0x036077AC RET
+	0x036077B0 STRB W1, [X0 + 0x22]
+	0x036077B4 RET
+
+ISIL:
+	001 Move [X31-64], X30
+	002 Move [X31+16], X24
+	003 Move [X31+24], X23
+	004 Move [X31+32], X22
+	005 Move [X31+40], X21
+	006 Move [X31+48], X20
+	007 Move [X31+56], X19
+	008 Move W21, W3
+	009 Move W8, [0x2726B7C]
+	010 Move X23, [0x210F648]
+	011 Move W19, W2
+	012 Move W22, W1
+	013 Move X20, X0
+	014 Move TEMP, X8
+	015 And TEMP, TEMP, 1
+	016 Compare TEMP, 1
+	017 JumpIfEqual {22}
+	018 Move X0, [0x210F648]
+	019 Call 0x239F8E4
+	020 Move W8, 1
+	021 Move [X24+2940], W8
+	022 Move X0, X20
+	023 Move X1, X31
+	024 Call Object..ctor, X0
+	025 Move X0, [X23]
+	026 Move [X20+16], W22
+	027 Call 0x239FB80
+	028 Move W1, W21
+	029 Move X2, X31
+	030 Move X22, X0
+	031 Call ItemDef..ctor, X0, X1
+	032 Move [X20+24], X22
+	033 Move X0, X20
+	034 Move X1, X22
+	035 Call 0x239F888
+	036 Move [X20+8], W19
+	037 Move X20, [X31+48]
+	038 Move X19, [X31+56]
+	039 Move X22, [X31+32]
+	040 Move X21, [X31+40]
+	041 Move X24, [X31+16]
+	042 Move X23, [X31+24]
+	043 Move X30, [X31+64]
+	044 Return 
+
+Method: GameLogic.Config.ItemDef FixItemRef(Metaplay.Core.Serialization.MetaMemberDeserializationFailureParams failureParams)
+
+Disassembly:
+	0x036077B8 MOV X1, X31
+	0x036077BC B 0x44E8DEC
+	0x036077C0 STR X30, [X31 - 0x40]!
+	0x036077C4 STP X24, X23, [X31 + 0x10]
+	0x036077C8 STP X22, X21, [X31 + 0x20]
+	0x036077CC STP X20, X19, [X31 + 0x30]
+	0x036077D0 MOV W23, W1
+	0x036077D4 MOV X1, X31
+	0x036077D8 MOV W19, W5
+	0x036077DC MOV W20, W4
+	0x036077E0 MOV W21, W3
+	0x036077E4 MOV X22, X2
+
+ISIL:
+	001 Subtract X31, X31, 48
+	002 Move [X31+32], X30
+	003 Move V0, [X0]
+	004 Move X8, [X0+16]
+	005 Add X0, X31, 0
+	006 Move X1, X31
+	007 Move [X31], V0
+	008 Move [X31+16], X8
+	009 Call ItemDef.FixRef, X0
+	010 Move X30, [X31+32]
+	011 Add X31, X31, 48
+	012 Return X0
+

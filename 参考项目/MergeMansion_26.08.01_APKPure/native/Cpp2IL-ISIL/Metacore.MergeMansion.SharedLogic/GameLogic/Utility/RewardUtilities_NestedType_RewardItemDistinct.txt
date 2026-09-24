@@ -1,0 +1,61 @@
+Type: GameLogic.Utility.RewardUtilities+RewardItemDistinct
+
+Method: System.Void .ctor(GameLogic.Player.Rewards.RewardItem rewardItem, GameLogic.Player.IPlayer player)
+
+Disassembly:
+	0x0339376C STRB W1, [X0 + 0x60]
+	0x03393770 RET
+	0x03393774 LDR W0, [X0 + 0x64]
+	0x03393778 RET
+	0x0339377C STR W1, [X0 + 0x64]
+	0x03393780 RET
+	0x03393784 LDRB W0, [X0 + 0x68]
+	0x03393788 RET
+	0x0339378C STRB W1, [X0 + 0x68]
+	0x03393790 RET
+	0x03393794 LDR W0, [X0 + 0x6C]
+	0x03393798 RET
+	0x0339379C STR W1, [X0 + 0x6C]
+	0x033937A0 RET
+	0x033937A4 LDR X0, [X0 + 0x70]
+	0x033937A8 RET
+	0x033937AC STR X1, [X0 + 0x70]!
+	0x033937B0 B 0x239B888
+	0x033937B4 LDR W0, [X0 + 0x78]
+	0x033937B8 RET
+	0x033937BC STR W1, [X0 + 0x78]
+	0x033937C0 RET
+	0x033937C4 LDR X0, [X0 + 0x80]
+	0x033937C8 RET
+	0x033937CC STR X1, [X0 + 0x80]!
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Compare X1, 0
+	005 JumpIfEqual {28}
+	006 Move X20, X1
+	007 Move X19, X0
+	008 Move X0, X1
+	009 Move X1, X2
+	010 Move X2, X31
+	011 Call RewardItem.GetItem, X0, X1
+	012 Move X1, X0
+	013 Move [X19], X0
+	014 Move X0, X19
+	015 Call 0x239F888
+	016 Move X1, [X20+40]
+	017 Move [X19+8], X1
+	018 Move X0, X19
+	019 Call 0x239F888
+	020 Move W8, [X20+36]
+	021 Move W9, [X20+16]
+	022 Move [X19+8], W8
+	023 Move [X19+12], W9
+	024 Move X20, [X31+16]
+	025 Move X19, [X31+24]
+	026 Move X30, [X31+32]
+	027 Return 
+	028 Call 0x239FB90
+

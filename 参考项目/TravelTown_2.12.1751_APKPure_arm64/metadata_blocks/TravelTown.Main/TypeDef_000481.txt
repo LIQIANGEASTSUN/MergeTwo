@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class PushedGraphItemsModel.<>c__DisplayClass9_0 // TypeDefIndex: 481
+{
+	// Fields
+	public PushedGraphItemsModel.PushedGraphItem itemData; // 0x10
+
+	// Methods
+
+	// RVA: 0x612E0A8 Offset: 0x612A0A8 VA: 0x612E0A8
+	public void .ctor() { }
+
+	// RVA: 0x612EA6C Offset: 0x612AA6C VA: 0x612EA6C
+	internal bool <AddPushedGraphItem>b__0(PushedGraphItemsModel.PushedGraphItem item) { }
+}
+

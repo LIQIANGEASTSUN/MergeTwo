@@ -1,0 +1,22 @@
+// Namespace: 
+[CompilerGenerated]
+private struct CatSwimmingModel.<AddScore>d__35 : IAsyncStateMachine // TypeDefIndex: 271
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncVoidMethodBuilder <>t__builder; // 0x4
+	public CatSwimmingModel <>4__this; // 0x14
+	public int score; // 0x18
+	public List<TaskCompletionSource<bool>> addValueTask; // 0x1C
+	private TaskAwaiter<bool> <>u__1; // 0x20
+
+	// Methods
+
+	// RVA: 0x2B400F8 Offset: 0x2B400F8 VA: 0x2B400F8 Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x2B40C98 Offset: 0x2B40C98 VA: 0x2B40C98 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

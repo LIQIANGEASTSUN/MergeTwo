@@ -1,0 +1,14 @@
+// Namespace: Paxie.MergeStudio.GameCore.Gameplay.Board.Items
+[Serializable]
+public class SpawnerSpawnIndexedItemGroup // TypeDefIndex: 951
+{
+	// Fields
+	public int Index; // 0x8
+	public List<SpawnerSpawnedItem> SpawnedItems; // 0xC
+
+	// Methods
+
+	// RVA: 0x178FCC0 Offset: 0x178FCC0 VA: 0x178FCC0
+	public void .ctor() { }
+}
+

@@ -1,0 +1,68 @@
+// Namespace: 
+public class GameConfigManager : Manager<GameConfigManager> // TypeDefIndex: 1970
+{
+	// Fields
+	public List<TableMergeItem> MergeItemList; // 0x10
+	public List<TableMergeItem2> MergeItemList2; // 0x14
+	public List<TableMergeLine> MergeLineList; // 0x18
+	public List<TableBoardGrid> BoardGridList; // 0x1C
+	public List<TableBoardGrid2> BoardGridList2; // 0x20
+	public List<TableLevel> LevelList; // 0x24
+	public List<TableBag> BagList; // 0x28
+	public List<TableBagBuilding> BagBuildingList; // 0x2C
+	public List<TableIceGlobalConfig> IceGlobalConfigs; // 0x30
+	public List<TableIceItemConfig> IceItemConfigs; // 0x34
+	private Dictionary<int, TableMergeItem> mergeItemDir; // 0x38
+	private Dictionary<int, TableMergeItem> mergeItemDir2; // 0x3C
+	private Dictionary<int, TableMergeLine> mergeLineDir; // 0x40
+	private Dictionary<int, List<TableMergeItem>> mergeInLineDir; // 0x44
+	private Dictionary<int, List<TableMergeItem>> mergeSourceItems; // 0x48
+	private Dictionary<int, TableChoiceChest> choiceChestDir; // 0x4C
+	public List<TableChoiceChest> ChoiceChestList; // 0x50
+	public bool InitFlag; // 0x54
+
+	// Methods
+
+	// RVA: 0x299F5C8 Offset: 0x299F5C8 VA: 0x299F5C8
+	public void InitConfigs() { }
+
+	// RVA: -1 Offset: -1
+	private void InitTable<T>(List<T> tableData, Dictionary<int, T> config) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3629B80 Offset: 0x3629B80 VA: 0x3629B80
+	|-GameConfigManager.InitTable<object>
+	*/
+
+	// RVA: 0x2996FA8 Offset: 0x2996FA8 VA: 0x2996FA8
+	public TableMergeItem GetItemConfig(int id) { }
+
+	// RVA: 0x29A0F58 Offset: 0x29A0F58 VA: 0x29A0F58
+	public TableMergeLine GetMergeLine(int id) { }
+
+	// RVA: 0x29A1058 Offset: 0x29A1058 VA: 0x29A1058
+	public List<TableMergeItem> GetMergeInLineItems(int inLine) { }
+
+	// RVA: 0x29A0B2C Offset: 0x29A0B2C VA: 0x29A0B2C
+	public List<int> GetMergeReLine(TableMergeItem mergeConfig) { }
+
+	// RVA: 0x29A1150 Offset: 0x29A1150 VA: 0x29A1150
+	public List<TableMergeItem> GetMergeResources(int resourceLine) { }
+
+	// RVA: 0x29A1248 Offset: 0x29A1248 VA: 0x29A1248
+	public TableChoiceChest GetChoiceChest(int id) { }
+
+	// RVA: 0x29A1348 Offset: 0x29A1348 VA: 0x29A1348
+	public TableIceGlobalConfig GetIceGlobalConfig() { }
+
+	// RVA: 0x29A156C Offset: 0x29A156C VA: 0x29A156C
+	public List<TableIceItemConfig> GetIceItemConfigs() { }
+
+	// RVA: 0x29A1800 Offset: 0x29A1800 VA: 0x29A1800
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x29A1A44 Offset: 0x29A1A44 VA: 0x29A1A44
+	private void <InitConfigs>b__18_0(TableMergeItem a) { }
+}
+

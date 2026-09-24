@@ -1,0 +1,4 @@
+// Namespace: 
+public struct BoardEvent.ChestCharged : IEvent // TypeDefIndex: 1831
+{}
+

@@ -1,0 +1,7 @@
+// Namespace: 
+public struct TaskEvent.TaskLastCoinOut : IEvent // TypeDefIndex: 1999
+{
+	// Fields
+	public BoardTaskItem CompletedTask; // 0x0
+}
+

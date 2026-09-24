@@ -1,0 +1,13 @@
+// Namespace: Merger.MergeBoard.Data.TickInputActions
+public class MoveAction // TypeDefIndex: 25978
+{
+	// Fields
+	public int From; // 0x10
+	public int To; // 0x14
+
+	// Methods
+
+	// RVA: 0x6A9AE50 Offset: 0x6A96E50 VA: 0x6A9AE50
+	public void .ctor() { }
+}
+

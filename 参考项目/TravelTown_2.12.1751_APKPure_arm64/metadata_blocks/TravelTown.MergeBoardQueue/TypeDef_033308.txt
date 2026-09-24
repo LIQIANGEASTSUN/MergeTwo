@@ -1,0 +1,16 @@
+// Namespace: Merger.MergeBoardQueue.Decorators
+public class BoardQueueSystemDecorator : IBoardControllerDecorator // TypeDefIndex: 33308
+{
+	// Fields
+	[Inject]
+	private DiContainer _container; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A5B9D4 Offset: 0x6A579D4 VA: 0x6A5B9D4 Slot: 4
+	public void DecorateSystems(SystemsBuilder systemsBuilder) { }
+
+	// RVA: 0x6A5BA54 Offset: 0x6A57A54 VA: 0x6A5BA54
+	public void .ctor() { }
+}
+

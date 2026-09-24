@@ -1,0 +1,8 @@
+// Namespace: 
+public struct BaseMiniBoardEvent.BoardItemPositionUpdateStart : IEvent // TypeDefIndex: 1053
+{
+	// Fields
+	public MiniBoardItemController Item; // 0x0
+	public MiniBoardItemController.PositionUpdateType Type; // 0x4
+}
+

@@ -1,0 +1,24 @@
+// Namespace: Merger.MergeBoardSellItemCapability.Data.TickInputActions
+public class SellItemAction // TypeDefIndex: 33605
+{
+	// Fields
+	[CompilerGenerated]
+	private int <SelectedEntityPosition>k__BackingField; // 0x10
+
+	// Properties
+	public int SelectedEntityPosition { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A613EC Offset: 0x6A5D3EC VA: 0x6A613EC
+	public int get_SelectedEntityPosition() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A613F4 Offset: 0x6A5D3F4 VA: 0x6A613F4
+	public void set_SelectedEntityPosition(int value) { }
+
+	// RVA: 0x6A5F9E8 Offset: 0x6A5B9E8 VA: 0x6A5F9E8
+	public void .ctor() { }
+}
+

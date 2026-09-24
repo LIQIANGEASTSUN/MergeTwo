@@ -1,0 +1,19 @@
+// Namespace: MergeEngine.Configuration.Definitions
+[Serializable]
+public class ItemSpawnable // TypeDefIndex: 1308
+{
+	// Fields
+	public MergeItemWeakReference ItemReference; // 0x10
+	public string Reason; // 0x18
+	public bool Locked; // 0x20
+	[JsonIgnore]
+	public bool Bubbled; // 0x21
+	[JsonIgnore]
+	public bool Boosted; // 0x22
+
+	// Methods
+
+	// RVA: 0x6A29AA4 Offset: 0x6A25AA4 VA: 0x6A29AA4
+	public void .ctor() { }
+}
+

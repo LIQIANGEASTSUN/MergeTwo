@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeBoardItem.<>c__DisplayClass161_0 // TypeDefIndex: 2757
+{
+	// Fields
+	public int curIndex; // 0x8
+	public MergeBoardItem <>4__this; // 0xC
+
+	// Methods
+
+	// RVA: 0x2C37C64 Offset: 0x2C37C64 VA: 0x2C37C64
+	public void .ctor() { }
+
+	// RVA: 0x2C37C6C Offset: 0x2C37C6C VA: 0x2C37C6C
+	internal void <PlayComboEf>b__0() { }
+}
+

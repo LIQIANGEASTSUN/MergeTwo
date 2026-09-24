@@ -1,0 +1,77 @@
+// Namespace: Merger.Game.Views.Inventory
+public class InventoryItemSlotView : MergeItemView // TypeDefIndex: 8930
+{
+	// Fields
+	[CompilerGenerated]
+	private Action<int> TryRemove; // 0x50
+	[CompilerGenerated]
+	private Action<IMergeItem, string> InfoRequested; // 0x58
+	[SerializeField]
+	private ReactiveButton _infoButton; // 0x60
+	[SerializeField]
+	private ReactiveButton _itemButton; // 0x68
+	private IMergeItem _mergeItem; // 0x70
+	[CompilerGenerated]
+	private int <SlotIndex>k__BackingField; // 0x78
+	[CompilerGenerated]
+	private string <ItemUUID>k__BackingField; // 0x80
+
+	// Properties
+	public override IMergeItem MergeItem { set; }
+	public AssetReferenceT<Sprite> Asset { set; }
+	public int SlotIndex { get; set; }
+	public string ItemUUID { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6707170 Offset: 0x6703170 VA: 0x6707170
+	public void add_TryRemove(Action<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6707220 Offset: 0x6703220 VA: 0x6707220
+	public void remove_TryRemove(Action<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x67072D0 Offset: 0x67032D0 VA: 0x67072D0
+	public void add_InfoRequested(Action<IMergeItem, string> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6707380 Offset: 0x6703380 VA: 0x6707380
+	public void remove_InfoRequested(Action<IMergeItem, string> value) { }
+
+	// RVA: 0x6707430 Offset: 0x6703430 VA: 0x6707430 Slot: 7
+	public override void set_MergeItem(IMergeItem value) { }
+
+	// RVA: 0x67074A4 Offset: 0x67034A4 VA: 0x67074A4
+	public void set_Asset(AssetReferenceT<Sprite> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x67074CC Offset: 0x67034CC VA: 0x67074CC
+	public int get_SlotIndex() { }
+
+	[CompilerGenerated]
+	// RVA: 0x67074D4 Offset: 0x67034D4 VA: 0x67074D4
+	public void set_SlotIndex(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x67074DC Offset: 0x67034DC VA: 0x67074DC
+	public string get_ItemUUID() { }
+
+	[CompilerGenerated]
+	// RVA: 0x67074E4 Offset: 0x67034E4 VA: 0x67074E4
+	public void set_ItemUUID(string value) { }
+
+	// RVA: 0x67074EC Offset: 0x67034EC VA: 0x67074EC
+	private void Awake() { }
+
+	// RVA: 0x67075C4 Offset: 0x67035C4 VA: 0x67075C4
+	private void ShowMergeGraphPopup() { }
+
+	// RVA: 0x67075E8 Offset: 0x67035E8 VA: 0x67075E8
+	private void RemoveFromInventory() { }
+
+	// RVA: 0x6707610 Offset: 0x6703610 VA: 0x6707610
+	public void .ctor() { }
+}
+

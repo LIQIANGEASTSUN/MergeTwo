@@ -1,0 +1,16 @@
+// Namespace: Merger.Game.Model
+public interface IBoardSelectionModel // TypeDefIndex: 8410
+{
+	// Properties
+	public abstract BindableProperty<SelectedBoardItem> SelectedItem { get; }
+	public abstract BindableProperty<SelectedBoardItem> SelectedItemToSell { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract BindableProperty<SelectedBoardItem> get_SelectedItem();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract BindableProperty<SelectedBoardItem> get_SelectedItemToSell();
+}
+

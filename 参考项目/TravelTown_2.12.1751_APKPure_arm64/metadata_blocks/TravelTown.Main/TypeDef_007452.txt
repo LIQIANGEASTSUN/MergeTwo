@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class SmarterBubblesProbabilityModel.<>c // TypeDefIndex: 7452
+{
+	// Fields
+	public static readonly SmarterBubblesProbabilityModel.<>c <>9; // 0x0
+	public static Func<LockedComponent, bool> <>9__21_0; // 0x8
+	public static Func<LockedComponent, string> <>9__21_1; // 0x10
+
+	// Methods
+
+	// RVA: 0x657B4EC Offset: 0x65774EC VA: 0x657B4EC
+	private static void .cctor() { }
+
+	// RVA: 0x657B554 Offset: 0x6577554 VA: 0x657B554
+	public void .ctor() { }
+
+	// RVA: 0x657B55C Offset: 0x657755C VA: 0x657B55C
+	internal bool <IsItemAlreadyOnBoard>b__21_0(LockedComponent locked) { }
+
+	// RVA: 0x657B574 Offset: 0x6577574 VA: 0x657B574
+	internal string <IsItemAlreadyOnBoard>b__21_1(LockedComponent items) { }
+}
+

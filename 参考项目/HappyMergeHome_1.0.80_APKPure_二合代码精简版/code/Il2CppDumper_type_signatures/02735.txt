@@ -1,0 +1,13 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeBoard.<>c__DisplayClass178_9 // TypeDefIndex: 2735
+{
+	// Fields
+	public TableMergeItem itemConfig; // 0x8
+
+	// Methods
+
+	// RVA: 0x2C33430 Offset: 0x2C33430 VA: 0x2C33430
+	public void .ctor() { }
+}
+

@@ -1,0 +1,163 @@
+// Namespace: Activity.GardenTreasure.Model
+public class GardenTreasureModel : ActivityEntityBase // TypeDefIndex: 6736
+{
+	// Fields
+	private static GardenTreasureModel _instance; // 0x0
+	private static GameObject _flyItemObj; // 0x4
+	private static string coolTimeKey; // 0x8
+
+	// Properties
+	public static GardenTreasureModel Instance { get; }
+	public override string Guid { get; }
+	public StorageGardenTreasure GardenTreasure { get; }
+	public static GameObject FlyItemObj { get; }
+
+	// Methods
+
+	// RVA: 0x1BFDDC4 Offset: 0x1BFDDC4 VA: 0x1BFDDC4
+	public static GardenTreasureModel get_Instance() { }
+
+	// RVA: 0x1BFEBE8 Offset: 0x1BFEBE8 VA: 0x1BFEBE8 Slot: 4
+	public override string get_Guid() { }
+
+	// RVA: 0x1BFE5E0 Offset: 0x1BFE5E0 VA: 0x1BFE5E0
+	public StorageGardenTreasure get_GardenTreasure() { }
+
+	[RuntimeInitializeOnLoadMethod(0)]
+	// RVA: 0x1BFEC78 Offset: 0x1BFEC78 VA: 0x1BFEC78
+	private static void InitAuto() { }
+
+	// RVA: 0x1BFED30 Offset: 0x1BFED30 VA: 0x1BFED30 Slot: 5
+	public override void InitFromServerData(string activityId, string activityType, ulong startTime, ulong endTime, ulong rewardEndTime, bool manualEnd, string configJson, string activitySubType) { }
+
+	// RVA: 0x1BFEF0C Offset: 0x1BFEF0C VA: 0x1BFEF0C Slot: 19
+	public override void UpdateActivityState() { }
+
+	// RVA: 0x1BFEF70 Offset: 0x1BFEF70 VA: 0x1BFEF70 Slot: 18
+	protected override void InitServerDataFinish() { }
+
+	// RVA: 0x1BFF830 Offset: 0x1BFF830 VA: 0x1BFF830
+	private void CleanUserData() { }
+
+	// RVA: 0x1BFFA78 Offset: 0x1BFFA78 VA: 0x1BFFA78
+	public int PayLevelGroup() { }
+
+	// RVA: 0x1BFE9CC Offset: 0x1BFE9CC VA: 0x1BFE9CC
+	public string GetEndTimeString() { }
+
+	// RVA: 0x1BFDEB0 Offset: 0x1BFDEB0 VA: 0x1BFDEB0
+	public bool IsPreheatEnd() { }
+
+	// RVA: 0x1BFE820 Offset: 0x1BFE820 VA: 0x1BFE820
+	public string GetPreheatEndTimeString() { }
+
+	// RVA: 0x1BFFAE4 Offset: 0x1BFFAE4 VA: 0x1BFFAE4
+	public bool IsTimeEnd() { }
+
+	// RVA: 0x1BFFBFC Offset: 0x1BFFBFC VA: 0x1BFFBFC Slot: 23
+	public override bool CanDownLoadRes() { }
+
+	// RVA: 0x1BFFCA8 Offset: 0x1BFFCA8 VA: 0x1BFFCA8 Slot: 10
+	public override bool IsOpened(bool hasLog = False) { }
+
+	// RVA: 0x1BFFDE4 Offset: 0x1BFFDE4 VA: 0x1BFFDE4
+	public bool IsRandomLevel() { }
+
+	// RVA: 0x1BFFE50 Offset: 0x1BFFE50 VA: 0x1BFFE50
+	public GardenTreasureLevelConfig GetCurrentLevelConfig() { }
+
+	// RVA: 0x1C0000C Offset: 0x1C0000C VA: 0x1C0000C
+	public GardenTreasureLevelRewardConfig GetCurrentLevelRewardConfig() { }
+
+	// RVA: 0x1C001DC Offset: 0x1C001DC VA: 0x1C001DC
+	public GardenTreasureLevelRewardConfig GetRandomLevelRewardConfig() { }
+
+	// RVA: 0x1C003B8 Offset: 0x1C003B8 VA: 0x1C003B8
+	public GardenTreasureLevelRewardConfig GetNormalLevelRewardConfig(int level) { }
+
+	// RVA: 0x1C00580 Offset: 0x1C00580 VA: 0x1C00580
+	public float GetNormalProgress() { }
+
+	// RVA: 0x1C00604 Offset: 0x1C00604 VA: 0x1C00604
+	public int GetNormalIndex() { }
+
+	// RVA: 0x1C00A94 Offset: 0x1C00A94 VA: 0x1C00A94
+	public float GetRandomProgress() { }
+
+	// RVA: 0x1C0076C Offset: 0x1C0076C VA: 0x1C0076C
+	public float GetProgress() { }
+
+	// RVA: 0x1C00AEC Offset: 0x1C00AEC VA: 0x1C00AEC
+	public void PurchaseSuccess(TableShop tableShop) { }
+
+	// RVA: 0x1C00E50 Offset: 0x1C00E50 VA: 0x1C00E50
+	public void PopReward(List<ResData> listResData) { }
+
+	// RVA: 0x1BFE480 Offset: 0x1BFE480 VA: 0x1BFE480
+	public float GetCostProgress() { }
+
+	// RVA: 0x1C0119C Offset: 0x1C0119C VA: 0x1C0119C
+	public void TryProductShovel(int index, int id, MergeBoard board, int doubleEnergyTimes) { }
+
+	// RVA: 0x1C017FC Offset: 0x1C017FC VA: 0x1C017FC
+	public static void FlyShovel(Vector2 srcPos, Vector2 startPos, float time, bool showEffect, Action action) { }
+
+	// RVA: 0x1C01AC8 Offset: 0x1C01AC8 VA: 0x1C01AC8
+	public static GameObject get_FlyItemObj() { }
+
+	// RVA: 0x1C01CD0 Offset: 0x1C01CD0 VA: 0x1C01CD0
+	public void RecordEnterLevelCount() { }
+
+	// RVA: 0x1C01EA0 Offset: 0x1C01EA0 VA: 0x1C01EA0
+	public int GetEnterCurrentLevelCount() { }
+
+	// RVA: 0x1C01FD4 Offset: 0x1C01FD4 VA: 0x1C01FD4
+	public int GetTotalEnterLevelCount() { }
+
+	// RVA: 0x1C021F4 Offset: 0x1C021F4 VA: 0x1C021F4
+	public void RecordConsume(int resourcesId) { }
+
+	// RVA: 0x1C023C0 Offset: 0x1C023C0 VA: 0x1C023C0
+	public int GetRecordConsume(int resourcesId) { }
+
+	// RVA: 0x1BFF9C8 Offset: 0x1BFF9C8 VA: 0x1BFF9C8
+	public int GetCurrentLevelId() { }
+
+	// RVA: 0x1C024F0 Offset: 0x1C024F0 VA: 0x1C024F0
+	public bool CanShowUI() { }
+
+	// RVA: 0x1C02958 Offset: 0x1C02958 VA: 0x1C02958
+	public I_ActivityStatus.ActivityStatus GetActivityStatus() { }
+
+	// RVA: 0x1C028D8 Offset: 0x1C028D8 VA: 0x1C028D8
+	public void SetActivityStatus(I_ActivityStatus.ActivityStatus status) { }
+
+	// RVA: 0x1C029C4 Offset: 0x1C029C4 VA: 0x1C029C4
+	public void SetPreGardenEndTime() { }
+
+	// RVA: 0x1BFEB80 Offset: 0x1BFEB80 VA: 0x1BFEB80
+	public void .ctor() { }
+
+	// RVA: 0x1C02B20 Offset: 0x1C02B20 VA: 0x1C02B20
+	private static void .cctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1C02B94 Offset: 0x1C02B94 VA: 0x1C02B94
+	private bool <GetNormalIndex>b__25_0(GardenTreasureLevelConfig a) { }
+
+	// RVA: 0x1C02BDC Offset: 0x1C02BDC VA: 0x1C02BDC
+	public void <>iFixBaseProxy_InitFromServerData(string P0, string P1, ulong P2, ulong P3, ulong P4, bool P5, string P6, string P7) { }
+
+	// RVA: 0x1C02C34 Offset: 0x1C02C34 VA: 0x1C02C34
+	public void <>iFixBaseProxy_UpdateActivityState() { }
+
+	// RVA: 0x1C02C3C Offset: 0x1C02C3C VA: 0x1C02C3C
+	public void <>iFixBaseProxy_InitServerDataFinish() { }
+
+	// RVA: 0x1C02C44 Offset: 0x1C02C44 VA: 0x1C02C44
+	public bool <>iFixBaseProxy_CanDownLoadRes() { }
+
+	// RVA: 0x1C02C4C Offset: 0x1C02C4C VA: 0x1C02C4C
+	public bool <>iFixBaseProxy_IsOpened(bool P0) { }
+}
+

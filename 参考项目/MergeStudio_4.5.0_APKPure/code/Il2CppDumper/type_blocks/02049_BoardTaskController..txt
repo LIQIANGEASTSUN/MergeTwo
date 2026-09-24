@@ -1,0 +1,41 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardTaskController.<>c // TypeDefIndex: 2049
+{
+	// Fields
+	public static readonly BoardTaskController.<>c <>9; // 0x0
+	public static Func<BoardTaskItem, int> <>9__42_0; // 0x4
+	public static Func<BoardTaskItem, bool> <>9__43_0; // 0x8
+	public static Predicate<BoardTaskItemController> <>9__56_0; // 0xC
+	public static Func<BoardPositionEntity, bool> <>9__75_0; // 0x10
+	public static Func<RegularReward, string> <>9__75_2; // 0x14
+	public static Predicate<BoardTaskItem> <>9__93_0; // 0x18
+
+	// Methods
+
+	// RVA: 0x195FD60 Offset: 0x195FD60 VA: 0x195FD60
+	private static void .cctor() { }
+
+	// RVA: 0x195FDD4 Offset: 0x195FDD4 VA: 0x195FDD4
+	public void .ctor() { }
+
+	// RVA: 0x195FDDC Offset: 0x195FDDC VA: 0x195FDDC
+	internal int <VerifyAndSpawnMissingTasks>b__42_0(BoardTaskItem t) { }
+
+	// RVA: 0x195FDF8 Offset: 0x195FDF8 VA: 0x195FDF8
+	internal bool <IsDynamicTaskValidToSpawn>b__43_0(BoardTaskItem task) { }
+
+	// RVA: 0x195FE20 Offset: 0x195FE20 VA: 0x195FE20
+	internal bool <GetSpecialTaskItemController>b__56_0(BoardTaskItemController item) { }
+
+	// RVA: 0x195FE84 Offset: 0x195FE84 VA: 0x195FE84
+	internal bool <SendFirebaseEventsAfterTaskCompletion>b__75_0(BoardPositionEntity p) { }
+
+	// RVA: 0x195FEB8 Offset: 0x195FEB8 VA: 0x195FEB8
+	internal string <SendFirebaseEventsAfterTaskCompletion>b__75_2(RegularReward r) { }
+
+	// RVA: 0x195FF90 Offset: 0x195FF90 VA: 0x195FF90
+	internal bool <OnEvent>b__93_0(BoardTaskItem item) { }
+}
+

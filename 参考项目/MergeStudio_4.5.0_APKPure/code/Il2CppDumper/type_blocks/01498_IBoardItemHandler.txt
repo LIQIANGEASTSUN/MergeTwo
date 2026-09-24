@@ -1,0 +1,18 @@
+// Namespace: MergePuzzle
+public interface IBoardItemHandler : IFeatureHandler // TypeDefIndex: 1498
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract SerializableDictionary<int, BoardItemSetData> GetBoardItemDictionary();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract List<BoardItemData> GetBoardItemSetItems(int setID);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void AddItemsToItemCollection();
+
+	// RVA: 0x186A43C Offset: 0x186A43C VA: 0x186A43C Slot: 3
+	public virtual bool HasBoardItem() { }
+}
+

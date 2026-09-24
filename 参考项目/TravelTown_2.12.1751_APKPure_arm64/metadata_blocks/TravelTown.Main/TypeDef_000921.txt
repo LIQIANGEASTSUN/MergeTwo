@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ChargableSystem.<>c__DisplayClass11_0 // TypeDefIndex: 921
+{
+	// Fields
+	public ChargableSystem <>4__this; // 0x10
+	public ChargableComponent chargable; // 0x18
+
+	// Methods
+
+	// RVA: 0x666C438 Offset: 0x6668438 VA: 0x666C438
+	public void .ctor() { }
+
+	// RVA: 0x666C70C Offset: 0x666870C VA: 0x666C70C
+	internal void <ProcessComponent>b__0() { }
+}
+

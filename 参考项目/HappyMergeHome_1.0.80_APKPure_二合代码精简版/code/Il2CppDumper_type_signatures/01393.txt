@@ -1,0 +1,42 @@
+// Namespace: 
+[Serializable]
+public class SummerWatermelonTwentySevenDeleItemConfig : TableBase // TypeDefIndex: 1393
+{
+	// Fields
+	[CompilerGenerated]
+	private int <Id>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private int <ItemId>k__BackingField; // 0xC
+
+	// Properties
+	public int Id { get; set; }
+	public int ItemId { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x21466E8 Offset: 0x21466E8 VA: 0x21466E8
+	public int get_Id() { }
+
+	[CompilerGenerated]
+	// RVA: 0x21466F0 Offset: 0x21466F0 VA: 0x21466F0
+	public void set_Id(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x21466F8 Offset: 0x21466F8 VA: 0x21466F8
+	public int get_ItemId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2146700 Offset: 0x2146700 VA: 0x2146700
+	public void set_ItemId(int value) { }
+
+	// RVA: 0x2146708 Offset: 0x2146708 VA: 0x2146708 Slot: 4
+	public override int GetID() { }
+
+	// RVA: 0x214675C Offset: 0x214675C VA: 0x214675C
+	public void .ctor() { }
+
+	// RVA: 0x2146764 Offset: 0x2146764 VA: 0x2146764
+	public int <>iFixBaseProxy_GetID() { }
+}
+

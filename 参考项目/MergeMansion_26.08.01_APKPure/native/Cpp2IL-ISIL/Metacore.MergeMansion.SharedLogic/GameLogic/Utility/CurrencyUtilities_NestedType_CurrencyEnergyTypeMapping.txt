@@ -1,0 +1,13 @@
+Type: GameLogic.Utility.CurrencyUtilities+CurrencyEnergyTypeMapping
+
+Method: System.Void .ctor(Currencies currency, GameLogic.Player.EnergyType energyType)
+
+Disassembly:
+	0x0338B3F8 LDR X10, [X10 + 0xF60]
+	0x0338B3FC LDRH W9, [X8 + 0x12E]
+
+ISIL:
+	001 Move [X0], W1
+	002 Move [X0+4], W2
+	003 Return 
+

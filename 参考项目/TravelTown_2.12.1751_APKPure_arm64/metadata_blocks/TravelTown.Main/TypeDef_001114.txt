@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class InteractionTrackingComponent.<>c // TypeDefIndex: 1114
+{
+	// Fields
+	public static readonly InteractionTrackingComponent.<>c <>9; // 0x0
+	public static Func<ItemMultiple, string> <>9__4_0; // 0x8
+	public static Func<MergeItemWeakReference, string> <>9__4_3; // 0x10
+
+	// Methods
+
+	// RVA: 0x6901A10 Offset: 0x68FDA10 VA: 0x6901A10
+	private static void .cctor() { }
+
+	// RVA: 0x6901A78 Offset: 0x68FDA78 VA: 0x6901A78
+	public void .ctor() { }
+
+	// RVA: 0x6901A80 Offset: 0x68FDA80 VA: 0x6901A80
+	internal string <PrepareData>b__4_0(ItemMultiple items) { }
+
+	// RVA: 0x6901AD0 Offset: 0x68FDAD0 VA: 0x6901AD0
+	internal string <PrepareData>b__4_3(MergeItemWeakReference items) { }
+}
+

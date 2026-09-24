@@ -1,0 +1,14 @@
+// Namespace: MergePuzzle.EnergyMultiplier
+[Serializable]
+public class SpawnerOptions // TypeDefIndex: 4786
+{
+	// Fields
+	public List<int> Spawners; // 0x8
+	public float CapacityReduceAmount; // 0xC
+
+	// Methods
+
+	// RVA: 0x1DC6104 Offset: 0x1DC6104 VA: 0x1DC6104
+	public void .ctor() { }
+}
+

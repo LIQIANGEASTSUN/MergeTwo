@@ -1,0 +1,69 @@
+// Namespace: Merger.Game.Signal
+public class VerifyBoardMergeSignal // TypeDefIndex: 9460
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly MergeCheckItemType <MergeCheckType>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly PositionComponent <FirstItem>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private readonly PositionComponent <SecondItem>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private readonly IItem <CheckInitiatingItem>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private readonly IItem <MergeItem>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private readonly IItem <ResultItem>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private readonly Action<BoardItemPosition, BoardItemPosition> <ConfirmMergeAction>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private readonly Action <DeclineMergeAction>k__BackingField; // 0x48
+
+	// Properties
+	public MergeCheckItemType MergeCheckType { get; }
+	public PositionComponent FirstItem { get; }
+	public PositionComponent SecondItem { get; }
+	public IItem CheckInitiatingItem { get; }
+	public IItem MergeItem { get; }
+	public IItem ResultItem { get; }
+	public Action<BoardItemPosition, BoardItemPosition> ConfirmMergeAction { get; }
+	public Action DeclineMergeAction { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x676D198 Offset: 0x6769198 VA: 0x676D198
+	public MergeCheckItemType get_MergeCheckType() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676D1A0 Offset: 0x67691A0 VA: 0x676D1A0
+	public PositionComponent get_FirstItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676D1A8 Offset: 0x67691A8 VA: 0x676D1A8
+	public PositionComponent get_SecondItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676D1B0 Offset: 0x67691B0 VA: 0x676D1B0
+	public IItem get_CheckInitiatingItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676D1B8 Offset: 0x67691B8 VA: 0x676D1B8
+	public IItem get_MergeItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676D1C0 Offset: 0x67691C0 VA: 0x676D1C0
+	public IItem get_ResultItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676D1C8 Offset: 0x67691C8 VA: 0x676D1C8
+	public Action<BoardItemPosition, BoardItemPosition> get_ConfirmMergeAction() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676D1D0 Offset: 0x67691D0 VA: 0x676D1D0
+	public Action get_DeclineMergeAction() { }
+
+	// RVA: 0x676D1D8 Offset: 0x67691D8 VA: 0x676D1D8
+	public void .ctor(MergeCheckItemType mergeCheckType, PositionComponent firstItem, PositionComponent secondItem, IItem checkInitiatingItem, IItem mergeItem, IItem resultItem, Action<BoardItemPosition, BoardItemPosition> confirmMergeAction, Action declineMergeAction) { }
+}
+

@@ -1,0 +1,37 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class MergeBoard.<>c // TypeDefIndex: 2719
+{
+	// Fields
+	public static readonly MergeBoard.<>c <>9; // 0x0
+	public static Action <>9__67_2; // 0x4
+	public static Action <>9__67_3; // 0x8
+	public static Action <>9__67_0; // 0xC
+	public static Action <>9__67_1; // 0x10
+	public static Predicate<EnergyShop> <>9__142_0; // 0x14
+
+	// Methods
+
+	// RVA: 0x2C2F604 Offset: 0x2C2F604 VA: 0x2C2F604
+	private static void .cctor() { }
+
+	// RVA: 0x2C2F678 Offset: 0x2C2F678 VA: 0x2C2F678
+	public void .ctor() { }
+
+	// RVA: 0x2C2F680 Offset: 0x2C2F680 VA: 0x2C2F680
+	internal void <OperateItem>b__67_2() { }
+
+	// RVA: 0x2C2F720 Offset: 0x2C2F720 VA: 0x2C2F720
+	internal void <OperateItem>b__67_3() { }
+
+	// RVA: 0x2C2F7C0 Offset: 0x2C2F7C0 VA: 0x2C2F7C0
+	internal void <OperateItem>b__67_0() { }
+
+	// RVA: 0x2C2F860 Offset: 0x2C2F860 VA: 0x2C2F860
+	internal void <OperateItem>b__67_1() { }
+
+	// RVA: 0x2C2F900 Offset: 0x2C2F900 VA: 0x2C2F900
+	internal bool <IsFailedByEnergyLimit>b__142_0(EnergyShop x) { }
+}
+

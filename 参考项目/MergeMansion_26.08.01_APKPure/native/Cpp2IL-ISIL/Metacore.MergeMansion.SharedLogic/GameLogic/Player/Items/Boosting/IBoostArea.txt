@@ -1,0 +1,9 @@
+Type: GameLogic.Player.Items.Boosting.IBoostArea
+
+Method: System.Collections.Generic.List`1<GameLogic.Player.Board.Coordinate> GetAllBoostedCoordinates(GameLogic.Player.Board.Coordinate boosterCoordinate, System.Func`2<GameLogic.Player.Board.Coordinate, System.Boolean> validBoostTargetChecker)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

@@ -1,0 +1,51 @@
+// Namespace: MergeEngine.ECS.Systems.Items.Producers.LowLevelItemProduce
+public class LowLevelItemProduceByBoardState : LowLevelProduceStrategyBase // TypeDefIndex: 995
+{
+	// Fields
+	[Inject]
+	private IUserProfileService _userProfileService; // 0x40
+	[Inject]
+	private IRemoteSpawningModel _remoteSpawningModel; // 0x48
+	[Inject]
+	private IBoardConfigService _boardConfigService; // 0x50
+	[Inject]
+	private IEntityManager _entityManager; // 0x58
+
+	// Properties
+	private bool IsRemoteSpawning { get; }
+	private int PowerBoostIndex { get; }
+	protected override int SpawnPercentage { get; }
+
+	// Methods
+
+	// RVA: 0x679CD04 Offset: 0x6798D04 VA: 0x679CD04
+	private bool get_IsRemoteSpawning() { }
+
+	// RVA: 0x679CDFC Offset: 0x6798DFC VA: 0x679CDFC
+	private int get_PowerBoostIndex() { }
+
+	// RVA: 0x679CF70 Offset: 0x6798F70 VA: 0x679CF70 Slot: 5
+	protected override int get_SpawnPercentage() { }
+
+	// RVA: 0x679D110 Offset: 0x6799110 VA: 0x679D110 Slot: 6
+	public override bool TryGetProduceData(IItemSpawningComponent itemSpawningComponent, out LowLevelItemProduceData result) { }
+
+	// RVA: 0x679D408 Offset: 0x6799408 VA: 0x679D408
+	private bool TryGetLowLevelItemByBoardState(IItemSpawningComponent itemSpawningComponent, out LowLevelItemProduceData lowLevelData) { }
+
+	// RVA: 0x679D894 Offset: 0x6799894 VA: 0x679D894
+	private bool TryResolveSpawnedItemSettings(IItemSpawningComponent itemSpawningComponent, out LowLevelItemProduceByBoardState.SpawnedItemSettings spawnedItemSettings) { }
+
+	// RVA: 0x679DAD8 Offset: 0x6799AD8 VA: 0x679DAD8
+	private bool TryPeekRemoteSpawnedItem(int boostOption, IMergeItem producer, out LowLevelItemProduceByBoardState.SpawnedItemSettings spawnedItemSettings) { }
+
+	// RVA: 0x679DE90 Offset: 0x6799E90 VA: 0x679DE90
+	private bool TryPeekLocalSpawnedItem(int boostOption, IItemSpawningComponent itemSpawningComponent, out LowLevelItemProduceByBoardState.SpawnedItemSettings spawnedItemSettings) { }
+
+	// RVA: 0x679DA54 Offset: 0x6799A54 VA: 0x679DA54
+	private int GetBoardAndInventoryCount(string itemId, BoardQueueComponent boardQueueComponent) { }
+
+	// RVA: 0x679E4BC Offset: 0x679A4BC VA: 0x679E4BC
+	public void .ctor() { }
+}
+

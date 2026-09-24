@@ -1,0 +1,4 @@
+// Namespace: 
+public struct EntityUpdateEvent.InventoryUpdated : IEvent // TypeDefIndex: 2674
+{}
+

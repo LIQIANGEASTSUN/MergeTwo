@@ -1,0 +1,34 @@
+// Namespace: Merger.ProducerExcitement.Compatibility
+public interface IProducerExcitementModel // TypeDefIndex: 3572
+{
+	// Properties
+	public abstract ObservableList<ProducerExcitementDataResponse> ExcitementStates { get; }
+	public abstract IReadOnlyList<int> ClaimedExcitementIds { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract ObservableList<ProducerExcitementDataResponse> get_ExcitementStates();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract IReadOnlyList<int> get_ClaimedExcitementIds();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void RegisterAnalyticsData(ProducerExcitementAnalyticsDataPayload payload, int excitementId);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void AddClaimedExcitementId(int excitementId);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract void ResetClaimedExcitements();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract void Update(ProducerExcitementDataResponse stateExcitements);
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract ExcitementVisibility GetVisibilityMode(int excitementClaimId);
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract ProducerExcitementAnalyticsDataPayload GetAnalyticsDataPayload(int excitementClaimId);
+}
+

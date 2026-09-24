@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class HintUtil.<>c__DisplayClass15_1 // TypeDefIndex: 618
+{
+	// Fields
+	public PositionComponent mergeAny; // 0x10
+	public HintUtil.<>c__DisplayClass15_0 CS$<>8__locals1; // 0x18
+
+	// Methods
+
+	// RVA: 0x6276594 Offset: 0x6272594 VA: 0x6276594
+	public void .ctor() { }
+
+	// RVA: 0x62772E4 Offset: 0x62732E4 VA: 0x62772E4
+	internal bool <CountJokerMergeTiles>b__1(PositionComponent position) { }
+}
+

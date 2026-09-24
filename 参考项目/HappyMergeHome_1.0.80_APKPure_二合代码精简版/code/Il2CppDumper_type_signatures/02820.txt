@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeClickTips.<>c__DisplayClass91_0 // TypeDefIndex: 2820
+{
+	// Fields
+	public Transform endTrans; // 0x8
+
+	// Methods
+
+	// RVA: 0x2C690BC Offset: 0x2C690BC VA: 0x2C690BC
+	public void .ctor() { }
+
+	// RVA: 0x2C690C4 Offset: 0x2C690C4 VA: 0x2C690C4
+	internal void <UndoOperate>b__0() { }
+}
+

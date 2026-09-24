@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemChainManager.<>c__DisplayClass57_0 // TypeDefIndex: 1736
+{
+	// Fields
+	public int defaultID; // 0x8
+
+	// Methods
+
+	// RVA: 0x190C0E0 Offset: 0x190C0E0 VA: 0x190C0E0
+	public void .ctor() { }
+
+	// RVA: 0x190FDB0 Offset: 0x190FDB0 VA: 0x190FDB0
+	internal bool <GetMatchingIDFromAnotherLink>b__0(int id) { }
+}
+

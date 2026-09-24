@@ -1,0 +1,10 @@
+// Namespace: Framework.Core.Services.Backend.Remote.Payloads.BoardState
+[StateName("boardInventorySlots")]
+public class CoreBoardInventorySlots : BoardInventorySlots // TypeDefIndex: 10962
+{
+	// Methods
+
+	// RVA: 0x69275EC Offset: 0x69235EC VA: 0x69275EC
+	public void .ctor() { }
+}
+

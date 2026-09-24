@@ -1,0 +1,799 @@
+// Namespace: Merger.RemoteLiveOps.Controllers
+public abstract class EventControllerBase<TEventData> : Base, IEventController<TEventData>, IEventController // TypeDefIndex: 6441
+{
+	// Fields
+	[Inject]
+	private IFirebaseService _firebaseService; // 0x0
+	[Inject]
+	private ISystemManager _systemManager; // 0x0
+	[Inject]
+	private IAssetManager _assetManager; // 0x0
+	[Inject]
+	private IRemoteLiveOpsService _remoteLiveOpsService; // 0x0
+	[Inject]
+	private IRemoteLiveOpsActivationService _remoteLiveOpsActivationService; // 0x0
+	[Inject]
+	private IRemoteContentService _remoteContentService; // 0x0
+	[Inject]
+	private IJsonService _jsonService; // 0x0
+	[Inject]
+	private IServerTimeService _serverTimeService; // 0x0
+	[Inject]
+	private IRemoteServerStatesService _remoteServerStatesService; // 0x0
+	[Inject]
+	private IAudioConfigurationModel _audioConfigurationModel; // 0x0
+	[Inject]
+	private IResourcesConfigurationModel _resourcesConfigurationModel; // 0x0
+	[Inject]
+	protected IRemoteLiveOpSetupService _liveOpSetupService; // 0x0
+	[Inject]
+	private ILiveOpConditionalModel _liveOpConditionalModel; // 0x0
+	private bool _assetsDownloadCompleted; // 0x0
+	private Sound _soundConfig; // 0x0
+	[CompilerGenerated]
+	private readonly MutableBindableProperty<double> <EventTimeLeftSeconds>k__BackingField; // 0x0
+	protected RemoteContentBundleHandle RemoteContentBundleHandler; // 0x0
+	protected Nullable<RemoteContentBundleHandle> RemoteBadgesBundleHandler; // 0x0
+	protected AllPromise LoadDependencyPromise; // 0x0
+	protected IPromise ActivationDependencyPromise; // 0x0
+	[CompilerGenerated]
+	private readonly List<string> <EventAssetsKeys>k__BackingField; // 0x0
+	[CompilerGenerated]
+	private readonly List<string> <BadgesBundleAssetsKeys>k__BackingField; // 0x0
+	private TMP_SpriteAsset _textMeshSpriteOveride; // 0x0
+	[CompilerGenerated]
+	private string <EventId>k__BackingField; // 0x0
+	[CompilerGenerated]
+	private TEventData <EventData>k__BackingField; // 0x0
+	protected bool ActivatedThisSession; // 0x0
+	[CompilerGenerated]
+	private BackendStates <ActivationStates>k__BackingField; // 0x0
+	[CompilerGenerated]
+	private IPromise <ExternalAssetPromise>k__BackingField; // 0x0
+	[CompilerGenerated]
+	private RemoteLiveOpEventState <CurrentEventState>k__BackingField; // 0x0
+
+	// Properties
+	private bool HasRemoteAssets { get; }
+	protected MutableBindableProperty<double> EventTimeLeftSeconds { get; }
+	protected long CurrentServerTimeMS { get; }
+	protected virtual string RemoteBundleName { get; }
+	protected virtual string RemoteBadgesBundleName { get; }
+	protected virtual List<string> EventAssetsKeys { get; }
+	protected virtual List<string> BadgesBundleAssetsKeys { get; }
+	protected virtual string TextMeshSpriteOverrideName { get; }
+	public string EventId { get; set; }
+	public TEventData EventData { get; set; }
+	protected ISystemManager SystemManager { get; }
+	protected IAssetManager AssetManager { get; }
+	protected IRemoteServerStatesService RemoteServerStatesService { get; }
+	protected IRemoteLiveOpsService RemoteLiveOpsService { get; }
+	protected IRemoteLiveOpsActivationService RemoteLiveOpsActivationService { get; }
+	protected IRemoteContentService RemoteContentService { get; }
+	protected IJsonService JsonService { get; }
+	protected IconsSystem IconsSystem { get; }
+	protected BackendStates ActivationStates { get; set; }
+	protected virtual int IconPriority { get; }
+	protected virtual string AudioConfigKey { get; }
+	protected IPromise ExternalAssetPromise { get; set; }
+	protected bool AssetsDownloadCompleted { get; }
+	protected RemoteLiveOpEventState CurrentEventState { get; set; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	private bool get_HasRemoteAssets() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAC08 Offset: 0x51B6C08 VA: 0x51BAC08
+	|-EventControllerBase<object>.get_HasRemoteAssets
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	protected MutableBindableProperty<double> get_EventTimeLeftSeconds() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAC68 Offset: 0x51B6C68 VA: 0x51BAC68
+	|-EventControllerBase<object>.get_EventTimeLeftSeconds
+	*/
+
+	// RVA: -1 Offset: -1
+	protected long get_CurrentServerTimeMS() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAC70 Offset: 0x51B6C70 VA: 0x51BAC70
+	|-EventControllerBase<object>.get_CurrentServerTimeMS
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 25
+	protected virtual string get_RemoteBundleName() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAD10 Offset: 0x51B6D10 VA: 0x51BAD10
+	|-EventControllerBase<object>.get_RemoteBundleName
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 26
+	protected virtual string get_RemoteBadgesBundleName() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAD58 Offset: 0x51B6D58 VA: 0x51BAD58
+	|-EventControllerBase<object>.get_RemoteBadgesBundleName
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 27
+	protected virtual List<string> get_EventAssetsKeys() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BADA0 Offset: 0x51B6DA0 VA: 0x51BADA0
+	|-EventControllerBase<object>.get_EventAssetsKeys
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 28
+	protected virtual List<string> get_BadgesBundleAssetsKeys() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BADA8 Offset: 0x51B6DA8 VA: 0x51BADA8
+	|-EventControllerBase<object>.get_BadgesBundleAssetsKeys
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 29
+	protected virtual string get_TextMeshSpriteOverrideName() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BADB0 Offset: 0x51B6DB0 VA: 0x51BADB0
+	|-EventControllerBase<object>.get_TextMeshSpriteOverrideName
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	public string get_EventId() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BADF8 Offset: 0x51B6DF8 VA: 0x51BADF8
+	|-EventControllerBase<object>.get_EventId
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	protected void set_EventId(string value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAE00 Offset: 0x51B6E00 VA: 0x51BAE00
+	|-EventControllerBase<object>.set_EventId
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	public TEventData get_EventData() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAE08 Offset: 0x51B6E08 VA: 0x51BAE08
+	|-EventControllerBase<object>.get_EventData
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	protected void set_EventData(TEventData value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAE10 Offset: 0x51B6E10 VA: 0x51BAE10
+	|-EventControllerBase<object>.set_EventData
+	*/
+
+	// RVA: -1 Offset: -1
+	protected ISystemManager get_SystemManager() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAE18 Offset: 0x51B6E18 VA: 0x51BAE18
+	|-EventControllerBase<object>.get_SystemManager
+	*/
+
+	// RVA: -1 Offset: -1
+	protected IAssetManager get_AssetManager() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAE20 Offset: 0x51B6E20 VA: 0x51BAE20
+	|-EventControllerBase<object>.get_AssetManager
+	*/
+
+	// RVA: -1 Offset: -1
+	protected IRemoteServerStatesService get_RemoteServerStatesService() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAE28 Offset: 0x51B6E28 VA: 0x51BAE28
+	|-EventControllerBase<object>.get_RemoteServerStatesService
+	*/
+
+	// RVA: -1 Offset: -1
+	protected IRemoteLiveOpsService get_RemoteLiveOpsService() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAE30 Offset: 0x51B6E30 VA: 0x51BAE30
+	|-EventControllerBase<object>.get_RemoteLiveOpsService
+	*/
+
+	// RVA: -1 Offset: -1
+	protected IRemoteLiveOpsActivationService get_RemoteLiveOpsActivationService() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAE38 Offset: 0x51B6E38 VA: 0x51BAE38
+	|-EventControllerBase<object>.get_RemoteLiveOpsActivationService
+	*/
+
+	// RVA: -1 Offset: -1
+	protected IRemoteContentService get_RemoteContentService() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAE40 Offset: 0x51B6E40 VA: 0x51BAE40
+	|-EventControllerBase<object>.get_RemoteContentService
+	*/
+
+	// RVA: -1 Offset: -1
+	protected IJsonService get_JsonService() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAE48 Offset: 0x51B6E48 VA: 0x51BAE48
+	|-EventControllerBase<object>.get_JsonService
+	*/
+
+	// RVA: -1 Offset: -1
+	protected IconsSystem get_IconsSystem() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAE50 Offset: 0x51B6E50 VA: 0x51BAE50
+	|-EventControllerBase<object>.get_IconsSystem
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	protected BackendStates get_ActivationStates() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAF08 Offset: 0x51B6F08 VA: 0x51BAF08
+	|-EventControllerBase<object>.get_ActivationStates
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	protected void set_ActivationStates(BackendStates value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAF10 Offset: 0x51B6F10 VA: 0x51BAF10
+	|-EventControllerBase<object>.set_ActivationStates
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 30
+	protected virtual int get_IconPriority() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAF20 Offset: 0x51B6F20 VA: 0x51BAF20
+	|-EventControllerBase<object>.get_IconPriority
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 31
+	protected abstract void StartEvent();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-EventControllerBase<object>.StartEvent
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 32
+	protected abstract void OnDataUpdated();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-EventControllerBase<object>.OnDataUpdated
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 33
+	protected virtual void OnInitialized() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAF28 Offset: 0x51B6F28 VA: 0x51BAF28
+	|-EventControllerBase<object>.OnInitialized
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 34
+	protected virtual void OnEventResumed() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAF2C Offset: 0x51B6F2C VA: 0x51BAF2C
+	|-EventControllerBase<object>.OnEventResumed
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 35
+	protected virtual string get_AudioConfigKey() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAF30 Offset: 0x51B6F30 VA: 0x51BAF30
+	|-EventControllerBase<object>.get_AudioConfigKey
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	protected IPromise get_ExternalAssetPromise() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAF38 Offset: 0x51B6F38 VA: 0x51BAF38
+	|-EventControllerBase<object>.get_ExternalAssetPromise
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	protected void set_ExternalAssetPromise(IPromise value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAF40 Offset: 0x51B6F40 VA: 0x51BAF40
+	|-EventControllerBase<object>.set_ExternalAssetPromise
+	*/
+
+	// RVA: -1 Offset: -1
+	protected bool get_AssetsDownloadCompleted() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAF50 Offset: 0x51B6F50 VA: 0x51BAF50
+	|-EventControllerBase<object>.get_AssetsDownloadCompleted
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	protected RemoteLiveOpEventState get_CurrentEventState() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAF58 Offset: 0x51B6F58 VA: 0x51BAF58
+	|-EventControllerBase<object>.get_CurrentEventState
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	protected void set_CurrentEventState(RemoteLiveOpEventState value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAF60 Offset: 0x51B6F60 VA: 0x51BAF60
+	|-EventControllerBase<object>.set_CurrentEventState
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 36
+	protected virtual void OnAfterAssetsDownloaded() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAF68 Offset: 0x51B6F68 VA: 0x51BAF68
+	|-EventControllerBase<object>.OnAfterAssetsDownloaded
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 37
+	protected virtual void OnAssetsDownloadFailed() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAF6C Offset: 0x51B6F6C VA: 0x51BAF6C
+	|-EventControllerBase<object>.OnAssetsDownloadFailed
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 4
+	protected override void SubscribeToSignals() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BAF70 Offset: 0x51B6F70 VA: 0x51BAF70
+	|-EventControllerBase<object>.SubscribeToSignals
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 38
+	protected virtual void UpdateRewardsData(TEventData updatedConfig) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BB080 Offset: 0x51B7080 VA: 0x51BB080
+	|-EventControllerBase<object>.UpdateRewardsData
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 39
+	protected virtual void TryUpdateRewardsWithActivationData(JObject activationData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BB084 Offset: 0x51B7084 VA: 0x51BB084
+	|-EventControllerBase<object>.TryUpdateRewardsWithActivationData
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 40
+	public virtual void OnDestroy() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BB088 Offset: 0x51B7088 VA: 0x51BB088
+	|-EventControllerBase<object>.OnDestroy
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 41
+	protected virtual void EndEvent() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BB144 Offset: 0x51B7144 VA: 0x51BB144
+	|-EventControllerBase<object>.EndEvent
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public void OnCreate(string eventId, TEventData eventData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BB26C Offset: 0x51B726C VA: 0x51BB26C
+	|-EventControllerBase<object>.OnCreate
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 42
+	protected virtual void OnEventCreated() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BB338 Offset: 0x51B7338 VA: 0x51BB338
+	|-EventControllerBase<object>.OnEventCreated
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void AbortEvent(string message) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BB33C Offset: 0x51B733C VA: 0x51BB33C
+	|-EventControllerBase<object>.AbortEvent
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 16
+	public void OnUpdate(TEventData eventData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BB414 Offset: 0x51B7414 VA: 0x51BB414
+	|-EventControllerBase<object>.OnUpdate
+	*/
+
+	// RVA: -1 Offset: -1
+	private void TrySetStateToPendingActivation() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BB464 Offset: 0x51B7464 VA: 0x51BB464
+	|-EventControllerBase<object>.TrySetStateToPendingActivation
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 22
+	public void OnStatusChanged(RemoteFeatureStatus status) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BB548 Offset: 0x51B7548 VA: 0x51BB548
+	|-EventControllerBase<object>.OnStatusChanged
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void ActivateOrStartEvent() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BB6E4 Offset: 0x51B76E4 VA: 0x51BB6E4
+	|-EventControllerBase<object>.ActivateOrStartEvent
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 43
+	protected virtual void ActivateRemoteLiveOpEvent() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BB758 Offset: 0x51B7758 VA: 0x51BB758
+	|-EventControllerBase<object>.ActivateRemoteLiveOpEvent
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 44
+	protected virtual void SetupRemoteLiveOp() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BB800 Offset: 0x51B7800 VA: 0x51BB800
+	|-EventControllerBase<object>.SetupRemoteLiveOp
+	*/
+
+	// RVA: -1 Offset: -1
+	private void ActivateEvent() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BB8AC Offset: 0x51B78AC VA: 0x51BB8AC
+	|-EventControllerBase<object>.ActivateEvent
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 45
+	protected virtual void OnSuccessfulSetup() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BB9AC Offset: 0x51B79AC VA: 0x51BB9AC
+	|-EventControllerBase<object>.OnSuccessfulSetup
+	*/
+
+	// RVA: -1 Offset: -1
+	private void InitializeRemoteContentBundleHandler() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BB9B0 Offset: 0x51B79B0 VA: 0x51BB9B0
+	|-EventControllerBase<object>.InitializeRemoteContentBundleHandler
+	*/
+
+	// RVA: -1 Offset: -1
+	private IPromise DownloadAsset(string assetKey, RemoteContentBundleHandle bundleHandle) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BBBDC Offset: 0x51B7BDC VA: 0x51BBBDC
+	|-EventControllerBase<object>.DownloadAsset
+	*/
+
+	// RVA: -1 Offset: -1
+	private IPromise DownloadEventAssets() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BBCAC Offset: 0x51B7CAC VA: 0x51BBCAC
+	|-EventControllerBase<object>.DownloadEventAssets
+	*/
+
+	// RVA: -1 Offset: -1
+	private void OnRemoteLiveOpConfigUpdatedSignal(RemoteLiveOpConfigUpdatedSignal signal) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BC14C Offset: 0x51B814C VA: 0x51BC14C
+	|-EventControllerBase<object>.OnRemoteLiveOpConfigUpdatedSignal
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 46
+	protected virtual bool IsSubEvent(string eventId) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BC1C4 Offset: 0x51B81C4 VA: 0x51BC1C4
+	|-EventControllerBase<object>.IsSubEvent
+	*/
+
+	// RVA: -1 Offset: -1
+	private void OnRemoteLiveOpActivatedSignal(RemoteLiveOpActivatedSignal signal) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BC1CC Offset: 0x51B81CC VA: 0x51BC1CC
+	|-EventControllerBase<object>.OnRemoteLiveOpActivatedSignal
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 47
+	protected virtual void ApplyStates(bool shouldUpdateBoardItems = False) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BC48C Offset: 0x51B848C VA: 0x51BC48C
+	|-EventControllerBase<object>.ApplyStates
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 48
+	protected virtual void OnStatesApplied() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BC55C Offset: 0x51B855C VA: 0x51BC55C
+	|-EventControllerBase<object>.OnStatesApplied
+	*/
+
+	// RVA: -1 Offset: -1
+	private void UpdateOnActivationIfNeeded(JObject activationData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BC560 Offset: 0x51B8560 VA: 0x51BC560
+	|-EventControllerBase<object>.UpdateOnActivationIfNeeded
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 49
+	protected virtual void UpdateActivationData(JObject activationData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BC7A0 Offset: 0x51B87A0 VA: 0x51BC7A0
+	|-EventControllerBase<object>.UpdateActivationData
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 50
+	protected virtual void OnRemoteLiveOpActivationFailed() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BC7A4 Offset: 0x51B87A4 VA: 0x51BC7A4
+	|-EventControllerBase<object>.OnRemoteLiveOpActivationFailed
+	*/
+
+	// RVA: -1 Offset: -1
+	private void UpdateData(TEventData eventData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BC7A8 Offset: 0x51B87A8 VA: 0x51BC7A8
+	|-EventControllerBase<object>.UpdateData
+	*/
+
+	// RVA: -1 Offset: -1
+	private void SetActivationDependency() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BC824 Offset: 0x51B8824 VA: 0x51BC824
+	|-EventControllerBase<object>.SetActivationDependency
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 23
+	public void OnTimePassed(double timePassed) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BC944 Offset: 0x51B8944 VA: 0x51BC944
+	|-EventControllerBase<object>.OnTimePassed
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 51
+	public virtual void OnForceRemove(TriggerLiveOpAnalytics triggerLiveOpAnalytics) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BCA08 Offset: 0x51B8A08 VA: 0x51BCA08
+	|-EventControllerBase<object>.OnForceRemove
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 52
+	protected virtual void Tick() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BCA18 Offset: 0x51B8A18 VA: 0x51BCA18
+	|-EventControllerBase<object>.Tick
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 53
+	protected virtual bool EventReadyForActivation() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BCA88 Offset: 0x51B8A88 VA: 0x51BCA88
+	|-EventControllerBase<object>.EventReadyForActivation
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 54
+	protected virtual void SetEventTimeLeft() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BCAEC Offset: 0x51B8AEC VA: 0x51BCAEC
+	|-EventControllerBase<object>.SetEventTimeLeft
+	*/
+
+	// RVA: -1 Offset: -1
+	private void StartEventInternal() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BCC5C Offset: 0x51B8C5C VA: 0x51BCC5C
+	|-EventControllerBase<object>.StartEventInternal
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 55
+	protected virtual IAsset GetIconAsset() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BCD98 Offset: 0x51B8D98 VA: 0x51BCD98
+	|-EventControllerBase<object>.GetIconAsset
+	*/
+
+	// RVA: -1 Offset: -1
+	protected IconDataContainer CreateIconDataContainer() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BCDE4 Offset: 0x51B8DE4 VA: 0x51BCDE4
+	|-EventControllerBase<object>.CreateIconDataContainer
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 56
+	protected virtual void ShowGenericIcon() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BD088 Offset: 0x51B9088 VA: 0x51BD088
+	|-EventControllerBase<object>.ShowGenericIcon
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 57
+	protected virtual TimedIconData CreateIconData() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BD0EC Offset: 0x51B90EC VA: 0x51BD0EC
+	|-EventControllerBase<object>.CreateIconData
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void ToggleIcon(bool displayIcon) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BD134 Offset: 0x51B9134 VA: 0x51BD134
+	|-EventControllerBase<object>.ToggleIcon
+	*/
+
+	// RVA: -1 Offset: -1
+	private void LateCreate() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BD1B4 Offset: 0x51B91B4 VA: 0x51BD1B4
+	|-EventControllerBase<object>.LateCreate
+	*/
+
+	// RVA: -1 Offset: -1
+	private void TryAddTmpSpriteOverride() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BD438 Offset: 0x51B9438 VA: 0x51BD438
+	|-EventControllerBase<object>.TryAddTmpSpriteOverride
+	*/
+
+	// RVA: -1 Offset: -1
+	private void TryUnloadTmpSpriteOverride() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BD73C Offset: 0x51B973C VA: 0x51BD73C
+	|-EventControllerBase<object>.TryUnloadTmpSpriteOverride
+	*/
+
+	// RVA: -1 Offset: -1
+	private void LoadSoundConfig() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BD7C8 Offset: 0x51B97C8 VA: 0x51BD7C8
+	|-EventControllerBase<object>.LoadSoundConfig
+	*/
+
+	// RVA: -1 Offset: -1
+	private void UnloadSoundConfig() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BDAF0 Offset: 0x51B9AF0 VA: 0x51BDAF0
+	|-EventControllerBase<object>.UnloadSoundConfig
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BDC98 Offset: 0x51B9C98 VA: 0x51BDC98
+	|-EventControllerBase<object>..ctor
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	private void <LateCreate>b__128_0() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BDD9C Offset: 0x51B9D9C VA: 0x51BDD9C
+	|-EventControllerBase<object>.<LateCreate>b__128_0
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	private void <LateCreate>b__128_1(Exception exception) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BDEA8 Offset: 0x51B9EA8 VA: 0x51BDEA8
+	|-EventControllerBase<object>.<LateCreate>b__128_1
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	private void <TryAddTmpSpriteOverride>b__129_0(TMP_SpriteAsset spriteAsset) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BE040 Offset: 0x51BA040 VA: 0x51BE040
+	|-EventControllerBase<object>.<TryAddTmpSpriteOverride>b__129_0
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	private void <TryAddTmpSpriteOverride>b__129_1(Exception ex) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BE060 Offset: 0x51BA060 VA: 0x51BE060
+	|-EventControllerBase<object>.<TryAddTmpSpriteOverride>b__129_1
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	private void <LoadSoundConfig>b__131_0(Sound config) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BE294 Offset: 0x51BA294 VA: 0x51BE294
+	|-EventControllerBase<object>.<LoadSoundConfig>b__131_0
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	private void <LoadSoundConfig>b__131_1(Exception ex) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x51BE350 Offset: 0x51BA350 VA: 0x51BE350
+	|-EventControllerBase<object>.<LoadSoundConfig>b__131_1
+	*/
+}
+

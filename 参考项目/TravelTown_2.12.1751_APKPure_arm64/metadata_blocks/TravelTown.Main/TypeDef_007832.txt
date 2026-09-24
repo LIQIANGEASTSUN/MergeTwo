@@ -1,0 +1,57 @@
+// Namespace: Merger.Boosters.Declarations.Definitions.Interfaces
+public interface IBoosterImplementation<TData> // TypeDefIndex: 7832
+{
+	// Properties
+	public abstract BoosterType Type { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract BoosterType get_Type();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBoosterImplementation<object>.get_Type
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract bool CanProcess();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBoosterImplementation<object>.CanProcess
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract TData CreateBoosterData(RemoteBoosterData remoteActiveBooster);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBoosterImplementation<object>.CreateBoosterData
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void BoosterUpdated(TData implementation);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBoosterImplementation<object>.BoosterUpdated
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract void BoosterRemoved(TData implementation);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBoosterImplementation<object>.BoosterRemoved
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract void OnLastBoosterExpire();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBoosterImplementation<object>.OnLastBoosterExpire
+	*/
+}
+

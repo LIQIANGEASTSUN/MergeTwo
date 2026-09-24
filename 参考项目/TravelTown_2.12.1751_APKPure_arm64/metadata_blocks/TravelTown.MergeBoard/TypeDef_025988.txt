@@ -1,0 +1,22 @@
+// Namespace: Merger.MergeBoard.Components
+public struct BoardTilePreviousPosition : IComponent // TypeDefIndex: 25988
+{
+	// Fields
+	[CompilerGenerated]
+	private int <PreviousPosition>k__BackingField; // 0x0
+
+	// Properties
+	public int PreviousPosition { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9BC00 Offset: 0x6A97C00 VA: 0x6A9BC00
+	public int get_PreviousPosition() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BC08 Offset: 0x6A97C08 VA: 0x6A9BC08
+	public void set_PreviousPosition(int value) { }
+}
+

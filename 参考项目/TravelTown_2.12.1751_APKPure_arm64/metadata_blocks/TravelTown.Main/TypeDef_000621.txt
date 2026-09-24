@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class HintUtil.<>c__DisplayClass2_0 // TypeDefIndex: 621
+{
+	// Fields
+	public IMergingConfigurationModel mergingConfigurationModel; // 0x10
+	public Func<IMergeItem, bool> itemTypePredicate; // 0x18
+	public List<string> excludeItemIds; // 0x20
+
+	// Methods
+
+	// RVA: 0x627435C Offset: 0x627035C VA: 0x627435C
+	public void .ctor() { }
+
+	// RVA: 0x627778C Offset: 0x627378C VA: 0x627778C
+	internal bool <TryFindStackableHint>b__0(PositionComponent boardItem) { }
+
+	// RVA: 0x6277900 Offset: 0x6273900 VA: 0x6277900
+	internal string <TryFindStackableHint>b__1(PositionComponent pos) { }
+}
+

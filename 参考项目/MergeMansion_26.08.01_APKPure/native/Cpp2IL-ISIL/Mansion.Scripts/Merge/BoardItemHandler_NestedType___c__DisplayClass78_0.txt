@@ -1,0 +1,37 @@
+Type: Merge.BoardItemHandler+<>c__DisplayClass78_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0305A00C MOVI D1, 0x0
+	0x0305A010 LDP D11, D10, [X31], #0x40
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void <StopLoopingAnimation>b__0()
+
+Disassembly:
+	0x0305A014 B 0x5059828
+	0x0305A018 BL 0x239BB90
+	0x0305A01C RET
+	0x0305A020 MOVZ W8, 0x43020000
+	0x0305A024 MOV X1, X31
+	0x0305A028 STR W8, [X0 + 0x30]
+	0x0305A02C B 0x504B6A8
+	0x0305A030 STP X30, X21, [X31 - 0x20]!
+
+ISIL:
+	001 Move X8, X0
+	002 Move X0, [X0+16]
+	003 Compare X0, 0
+	004 JumpIfEqual {9}
+	005 Move X1, [X8+24]
+	006 Move X2, X31
+	007 Call BoardItemHandler.DeinitEffect, X0, X1
+	008 Return 
+	009 Move [X31-16], X30
+	010 Call 0x239FB90
+

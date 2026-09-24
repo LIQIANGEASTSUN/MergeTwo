@@ -1,0 +1,23 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class SpawnerConfig // TypeDefIndex: 1624
+{
+	// Fields
+	public bool UsesEnergy; // 0x8
+	public int SmallCapacity; // 0xC
+	public int BigCapacity; // 0x10
+	public int ChargeTime; // 0x14
+	public int GemSkipAmount; // 0x18
+	public int GemDecreaseCount; // 0x1C
+	public int RewardedCapacity; // 0x20
+	public List<SpawnedItem> SpawnedItems; // 0x24
+	public List<SpawnedItem> TutorialItems; // 0x28
+	public SpawnerState SpawnerStartState; // 0x2C
+	public SpawnerState SpawnerSkippedState; // 0x30
+
+	// Methods
+
+	// RVA: 0x18C0878 Offset: 0x18C0878 VA: 0x18C0878
+	public void .ctor() { }
+}
+

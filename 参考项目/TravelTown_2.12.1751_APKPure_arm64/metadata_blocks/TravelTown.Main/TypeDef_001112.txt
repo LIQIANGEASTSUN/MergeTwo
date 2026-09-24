@@ -1,0 +1,12 @@
+// Namespace: MergeEngine.ECS.Components.InteractionTracking
+public class CreatedItemTrackingData // TypeDefIndex: 1112
+{
+	// Fields
+	public IMergeItem CreatedItem; // 0x10
+
+	// Methods
+
+	// RVA: 0x69004F8 Offset: 0x68FC4F8 VA: 0x69004F8
+	public void .ctor() { }
+}
+

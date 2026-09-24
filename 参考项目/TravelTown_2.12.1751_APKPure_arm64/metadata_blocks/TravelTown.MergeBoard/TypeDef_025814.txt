@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class TileConfigurationModel.<>c // TypeDefIndex: 25814
+{
+	// Fields
+	public static readonly TileConfigurationModel.<>c <>9; // 0x0
+	public static Func<DynamicBoardCellConfiguration, int> <>9__5_0; // 0x8
+	public static Func<DynamicBoardCellConfiguration, DynamicBoardCellConfiguration> <>9__5_1; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A7E120 Offset: 0x6A7A120 VA: 0x6A7E120
+	private static void .cctor() { }
+
+	// RVA: 0x6A7E188 Offset: 0x6A7A188 VA: 0x6A7E188
+	public void .ctor() { }
+
+	// RVA: 0x6A7E190 Offset: 0x6A7A190 VA: 0x6A7E190
+	internal int <SetTileConfiguration>b__5_0(DynamicBoardCellConfiguration tc) { }
+
+	// RVA: 0x6A7E1A8 Offset: 0x6A7A1A8 VA: 0x6A7E1A8
+	internal DynamicBoardCellConfiguration <SetTileConfiguration>b__5_1(DynamicBoardCellConfiguration tc) { }
+}
+

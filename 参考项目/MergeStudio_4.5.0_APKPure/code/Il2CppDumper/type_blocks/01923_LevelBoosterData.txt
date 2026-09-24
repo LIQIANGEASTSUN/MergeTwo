@@ -1,0 +1,16 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "LevelBoosterData", menuName = "Scriptable/Booster/LevelBoosterData", order = 1)]
+public class LevelBoosterData : BoosterItemData // TypeDefIndex: 1923
+{
+	// Fields
+	private List<int> _blockedIds; // 0x3C
+
+	// Methods
+
+	// RVA: 0x1929194 Offset: 0x1929194 VA: 0x1929194 Slot: 4
+	public override List<BoardPositionEntity> GetAvailablePositions(BoardEntity boardEntity, EventEntity eventEntity, BoardData boardData, out string keySuffix) { }
+
+	// RVA: 0x19299AC Offset: 0x19299AC VA: 0x19299AC
+	public void .ctor() { }
+}
+

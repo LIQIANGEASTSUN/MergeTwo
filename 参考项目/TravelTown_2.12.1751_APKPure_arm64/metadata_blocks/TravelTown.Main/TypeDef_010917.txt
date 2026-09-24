@@ -1,0 +1,34 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class RepositoryBase.<>c__DisplayClass39_0<TResponse> // TypeDefIndex: 10917
+{
+	// Fields
+	public Promise<TResponse> promise; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4B07630 Offset: 0x4B03630 VA: 0x4B07630
+	|-RepositoryBase.<>c__DisplayClass39_0<__Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal void <WebsocketRequest>b__0(TResponse response) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4B07638 Offset: 0x4B03638 VA: 0x4B07638
+	|-RepositoryBase.<>c__DisplayClass39_0<__Il2CppFullySharedGenericType>.<WebsocketRequest>b__0
+	*/
+
+	// RVA: -1 Offset: -1
+	internal void <WebsocketRequest>b__1(Exception exception) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4B076FC Offset: 0x4B036FC VA: 0x4B076FC
+	|-RepositoryBase.<>c__DisplayClass39_0<__Il2CppFullySharedGenericType>.<WebsocketRequest>b__1
+	*/
+}
+

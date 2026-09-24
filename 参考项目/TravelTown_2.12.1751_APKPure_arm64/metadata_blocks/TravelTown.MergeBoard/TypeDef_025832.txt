@@ -1,0 +1,41 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ToolSpawnHandler.<>c // TypeDefIndex: 25832
+{
+	// Fields
+	public static readonly ToolSpawnHandler.<>c <>9; // 0x0
+	public static Func<WeightedTool, int> <>9__20_0; // 0x8
+	public static Func<WeightedTool, PlayerResourceEnum> <>9__20_1; // 0x10
+	public static Func<WeightedToolLevel, int> <>9__21_0; // 0x18
+	public static Func<WeightedToolLevel, int> <>9__21_1; // 0x20
+	public static Func<KeyValuePair<PlayerResourceEnum, ToolProgressionData>, bool> <>9__29_0; // 0x28
+	public static Func<KeyValuePair<PlayerResourceEnum, ToolProgressionData>, PlayerResourceEnum> <>9__29_1; // 0x30
+
+	// Methods
+
+	// RVA: 0x6A84C8C Offset: 0x6A80C8C VA: 0x6A84C8C
+	private static void .cctor() { }
+
+	// RVA: 0x6A84CF4 Offset: 0x6A80CF4 VA: 0x6A84CF4
+	public void .ctor() { }
+
+	// RVA: 0x6A84CFC Offset: 0x6A80CFC VA: 0x6A84CFC
+	internal int <SelectRandomWeightedTool>b__20_0(WeightedTool weighted) { }
+
+	// RVA: 0x6A84D04 Offset: 0x6A80D04 VA: 0x6A84D04
+	internal PlayerResourceEnum <SelectRandomWeightedTool>b__20_1(WeightedTool weighted) { }
+
+	// RVA: 0x6A84D0C Offset: 0x6A80D0C VA: 0x6A84D0C
+	internal int <GenerateRandomToolItemFromWeights>b__21_0(WeightedToolLevel weightedToolLevel) { }
+
+	// RVA: 0x6A84D14 Offset: 0x6A80D14 VA: 0x6A84D14
+	internal int <GenerateRandomToolItemFromWeights>b__21_1(WeightedToolLevel weightedToolLevel) { }
+
+	// RVA: 0x6A84D1C Offset: 0x6A80D1C VA: 0x6A84D1C
+	internal bool <GetToolSpawnPriorityStrategy>b__29_0(KeyValuePair<PlayerResourceEnum, ToolProgressionData> toolProgression) { }
+
+	// RVA: 0x6A84D80 Offset: 0x6A80D80 VA: 0x6A84D80
+	internal PlayerResourceEnum <GetToolSpawnPriorityStrategy>b__29_1(KeyValuePair<PlayerResourceEnum, ToolProgressionData> toolProgression) { }
+}
+

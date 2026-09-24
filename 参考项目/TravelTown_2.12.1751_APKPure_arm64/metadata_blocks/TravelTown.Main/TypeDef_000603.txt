@@ -1,0 +1,21 @@
+// Namespace: MergeEngine.ECS.Util
+public static class CombiningUtil // TypeDefIndex: 603
+{
+	// Methods
+
+	// RVA: 0x626FA5C Offset: 0x626BA5C VA: 0x626FA5C
+	public static List<Combination> FindReadyCombinations(CombiningComponent combiningComponent) { }
+
+	// RVA: 0x626FC98 Offset: 0x626BC98 VA: 0x626FC98
+	public static List<MergeItemWeakReference> RemoveConsumedItems(CombiningComponent combiningComponent, Combination combination) { }
+
+	// RVA: 0x626FF38 Offset: 0x626BF38 VA: 0x626FF38
+	public static Combination TryFindSuitableCombination(List<Combination> recipes, PositionComponent item) { }
+
+	// RVA: 0x627019C Offset: 0x626C19C VA: 0x627019C
+	public static List<Combination> GetCombinationsInProgressWithItem(CombiningComponent combiningComponent, PositionComponent item) { }
+
+	// RVA: 0x6270588 Offset: 0x626C588 VA: 0x6270588
+	public static List<Combination> GetCombinationsInProgress(CombiningComponent combiningComponent) { }
+}
+

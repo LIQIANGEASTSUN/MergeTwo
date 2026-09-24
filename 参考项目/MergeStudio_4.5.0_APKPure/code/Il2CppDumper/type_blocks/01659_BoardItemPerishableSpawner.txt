@@ -1,0 +1,50 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "BoardItemPerishableSpawner", menuName = "Scriptable/BoardItem/PerishableSpawner", order = 3)]
+public class BoardItemPerishableSpawner : BoardItemData, IConfigAdaptor<PerishableSpawnerConfigAdaptor>, IConfigAdaptorBase // TypeDefIndex: 1659
+{
+	// Fields
+	public PerishableSpawnerConfig SpawnerConfig; // 0x2C
+	public BoardItemData PerishedSpawn; // 0x30
+	public int ChargeSetID; // 0x34
+	public int ChargedCapacity; // 0x38
+	public bool ShowItemPercentages; // 0x3C
+	public bool IsTokenBased; // 0x3D
+	public bool HasProgressBar; // 0x3E
+	public bool HasProgressText; // 0x3F
+	public int ChargeCountToCovertPerishable; // 0x40
+	[ShowIf("HasProgressText")]
+	public BoardItemData.ProgressTextData ProgressTextDataValue; // 0x44
+
+	// Methods
+
+	// RVA: 0x18CA050 Offset: 0x18CA050 VA: 0x18CA050 Slot: 17
+	public PerishableSpawnerConfigAdaptor GetConfigAdaptor() { }
+
+	// RVA: 0x18CA220 Offset: 0x18CA220 VA: 0x18CA220
+	public SpawnedItem GetNonProbabilisticItem(int currentCapacity) { }
+
+	// RVA: 0x18CA310 Offset: 0x18CA310 VA: 0x18CA310
+	public SpawnedItem GetIndexedSpawnedItem(int currentCapacity) { }
+
+	// RVA: 0x18CA538 Offset: 0x18CA538 VA: 0x18CA538
+	public SpawnedItem GetRandomItem() { }
+
+	// RVA: 0x18CA67C Offset: 0x18CA67C VA: 0x18CA67C Slot: 4
+	public override bool Initialize(BoardEntity boardEntity, IItemController item, long millisecondsPassed, bool isNewlyCreated) { }
+
+	// RVA: 0x18CA910 Offset: 0x18CA910 VA: 0x18CA910 Slot: 5
+	public override bool Initialize(BoardEntity boardEntity, IItemController item, long millisecondsPassed, bool isNewlyCreated, float capacity) { }
+
+	// RVA: 0x18CAB7C Offset: 0x18CAB7C VA: 0x18CAB7C Slot: 6
+	public override int GetTimeRequiredToExitCharging() { }
+
+	// RVA: 0x18CAB84 Offset: 0x18CAB84 VA: 0x18CAB84
+	public bool IsUseEnergySprite() { }
+
+	// RVA: 0x18CABB4 Offset: 0x18CABB4 VA: 0x18CABB4 Slot: 18
+	public AdaptorBase ConvertFromLocal() { }
+
+	// RVA: 0x18CAC14 Offset: 0x18CAC14 VA: 0x18CAC14
+	public void .ctor() { }
+}
+

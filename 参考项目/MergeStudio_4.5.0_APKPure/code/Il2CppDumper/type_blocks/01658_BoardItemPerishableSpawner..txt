@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardItemPerishableSpawner.<>c__DisplayClass13_0 // TypeDefIndex: 1658
+{
+	// Fields
+	public float r; // 0x8
+	public float sum; // 0xC
+
+	// Methods
+
+	// RVA: 0x18CA674 Offset: 0x18CA674 VA: 0x18CA674
+	public void .ctor() { }
+
+	// RVA: 0x18CAC9C Offset: 0x18CAC9C VA: 0x18CAC9C
+	internal bool <GetRandomItem>b__0(SpawnedItem item) { }
+}
+

@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MiniBoardProgressionHandler.<>c__DisplayClass36_0 // TypeDefIndex: 977
+{
+	// Fields
+	public int setID; // 0x8
+
+	// Methods
+
+	// RVA: 0x1796954 Offset: 0x1796954 VA: 0x1796954
+	public void .ctor() { }
+
+	// RVA: 0x17994DC Offset: 0x17994DC VA: 0x17994DC
+	internal bool <GetPerishableSpawnerEntity>b__0(PerishableSpawnerEntity config) { }
+}
+

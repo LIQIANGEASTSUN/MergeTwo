@@ -1,0 +1,46 @@
+// Namespace: Merger.Game.ViewModel
+public class BoardUIViewModel : GameBaseViewModel // TypeDefIndex: 8274
+{
+	// Fields
+	[Inject]
+	private ISystemManager _systemManager; // 0xD0
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0xD8
+	[Inject]
+	private IMetagameModel _metagameModel; // 0xE0
+	[Inject]
+	private ISayHelloTogglesModel _sayHelloTogglesModel; // 0xE8
+	private OrdersSystem _ordersSystem; // 0xF0
+	private CollectionBookSystem _collectionBookSystem; // 0xF8
+	private InventorySystem _inventorySystem; // 0x100
+
+	// Properties
+	private OrdersSystem OrdersSystem { get; }
+	private InventorySystem InventorySystem { get; }
+	public BindableProperty<bool> ShowInventoryNotifications { get; }
+	protected override RewardAnimationTarget RewardAnimationTarget { get; }
+
+	// Methods
+
+	// RVA: 0x6623B50 Offset: 0x661FB50 VA: 0x6623B50
+	private OrdersSystem get_OrdersSystem() { }
+
+	// RVA: 0x6623C30 Offset: 0x661FC30 VA: 0x6623C30
+	private InventorySystem get_InventorySystem() { }
+
+	// RVA: 0x6623D10 Offset: 0x661FD10 VA: 0x6623D10
+	public BindableProperty<bool> get_ShowInventoryNotifications() { }
+
+	// RVA: 0x6623D2C Offset: 0x661FD2C VA: 0x6623D2C Slot: 67
+	protected override RewardAnimationTarget get_RewardAnimationTarget() { }
+
+	// RVA: 0x6623D34 Offset: 0x661FD34 VA: 0x6623D34
+	public bool CheckShowMetaTutorial() { }
+
+	// RVA: 0x6623F28 Offset: 0x661FF28 VA: 0x6623F28 Slot: 69
+	public override void RegisterRewardTargets(RectTransform targetRectTransform) { }
+
+	// RVA: 0x66240E4 Offset: 0x66200E4 VA: 0x66240E4
+	public void .ctor() { }
+}
+

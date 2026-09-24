@@ -1,0 +1,27 @@
+// Namespace: Merger.MergeBoard.Data
+public class ToolProgressionData // TypeDefIndex: 25932
+{
+	// Fields
+	public int BoardItemsMergeValueSum; // 0x10
+	public int MaxLevelMergeValue; // 0x14
+
+	// Properties
+	public int CompletableCount { get; }
+	public int IncompletableCount { get; }
+	public int RemainingMergeValue { get; }
+
+	// Methods
+
+	// RVA: 0x6A9A174 Offset: 0x6A96174 VA: 0x6A9A174
+	public int get_CompletableCount() { }
+
+	// RVA: 0x6A84D70 Offset: 0x6A80D70 VA: 0x6A84D70
+	public int get_IncompletableCount() { }
+
+	// RVA: 0x6A84E10 Offset: 0x6A80E10 VA: 0x6A84E10
+	public int get_RemainingMergeValue() { }
+
+	// RVA: 0x6A9A180 Offset: 0x6A96180 VA: 0x6A9A180
+	public void .ctor() { }
+}
+

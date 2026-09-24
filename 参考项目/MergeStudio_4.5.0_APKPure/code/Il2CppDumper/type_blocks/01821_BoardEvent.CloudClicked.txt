@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BoardEvent.CloudClicked : IEvent // TypeDefIndex: 1821
+{
+	// Fields
+	public bool Destroy; // 0x0
+}
+

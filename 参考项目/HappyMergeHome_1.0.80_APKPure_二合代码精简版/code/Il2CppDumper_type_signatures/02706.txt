@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeManager.<>c__DisplayClass284_0 // TypeDefIndex: 2706
+{
+	// Fields
+	public MergeItemStatus status; // 0x8
+
+	// Methods
+
+	// RVA: 0x2C28B84 Offset: 0x2C28B84 VA: 0x2C28B84
+	public void .ctor() { }
+
+	// RVA: 0x2C28B8C Offset: 0x2C28B8C VA: 0x2C28B8C
+	internal bool <GetBoardItemCountByType>b__0(StorageMergeItem x) { }
+}
+

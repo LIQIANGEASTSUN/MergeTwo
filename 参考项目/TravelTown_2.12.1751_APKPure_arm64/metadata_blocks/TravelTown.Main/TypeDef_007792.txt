@@ -1,0 +1,45 @@
+// Namespace: Merger.Boosters.Implementations
+public class BoosterActivator : IBoosterActivator, IInitializable // TypeDefIndex: 7792
+{
+	// Fields
+	[Inject]
+	private IBoosterModel _boosterModel; // 0x10
+	[Inject]
+	private IEntityManager _entityManager; // 0x18
+	[Inject]
+	private IBoosterRemoteService _boosterRemoteService; // 0x20
+	[Inject]
+	private SignalBus _signalBus; // 0x28
+	[Inject]
+	private IBoosterController[] _controllers; // 0x30
+	[Inject]
+	private IServerTimeService _serverTimeService; // 0x38
+	[Inject(Optional = True)]
+	private IRemoteServerStateUpdaterService _stateUpdaterService; // 0x40
+	private Dictionary<BoosterType, IBoosterActivationPolicy> _boosterActivationPolicies; // 0x48
+
+	// Methods
+
+	// RVA: 0x65C7E5C Offset: 0x65C3E5C VA: 0x65C7E5C Slot: 4
+	public bool CanActivateBooster(IBoosterItem booster, string uuId) { }
+
+	// RVA: 0x65C82E0 Offset: 0x65C42E0 VA: 0x65C82E0 Slot: 5
+	public void ActivateBooster(string Uuid, BoosterActivationData payload) { }
+
+	// RVA: 0x65C8550 Offset: 0x65C4550 VA: 0x65C8550
+	private void SendBoosterActivation(string Uuid, BoosterActivationData payload) { }
+
+	// RVA: 0x65C8980 Offset: 0x65C4980 VA: 0x65C8980
+	private void BoosterActivated(RemoteBoosterData remoteActiveBooster) { }
+
+	// RVA: 0x65C8C08 Offset: 0x65C4C08 VA: 0x65C8C08 Slot: 6
+	public void Initialize() { }
+
+	// RVA: 0x65C8D98 Offset: 0x65C4D98 VA: 0x65C8D98
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C8DA0 Offset: 0x65C4DA0 VA: 0x65C8DA0
+	private void <SendBoosterActivation>b__10_0(Exception ex) { }
+}
+

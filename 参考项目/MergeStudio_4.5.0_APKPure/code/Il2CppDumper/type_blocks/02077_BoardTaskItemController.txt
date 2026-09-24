@@ -1,0 +1,358 @@
+// Namespace: MergePuzzle
+public class BoardTaskItemController : ScrollableItem, IPerformCameraChangeAnimation, IEventReceiver<EntityUpdateEvent.BoardItemStatusChange>, IEventReceiverBase, IEventReceiver<TaskEvent.TaskLastCoinOut>, IEventReceiver<SrDebuggerEvent.ShowDebugLayers>, IEventReceiver<MetaEvent.ActiveSeasonStatusChange>, IEventReceiver<ItemRewardConvertEvent.UpdateRewardImages>, IEventReceiver<TaskEvent.TaskUpdateRewardUI> // TypeDefIndex: 2077
+{
+	// Fields
+	[BoxGroup("Container")]
+	[SerializeField]
+	protected RectTransform TaskContainerRect; // 0x3C
+	public List<GoalUI> GoalUIList; // 0x40
+	public SkeletonGraphic CharAnimGraphic; // 0x44
+	public RectMask2D TopMask; // 0x48
+	public GameObject DebugParent; // 0x4C
+	public TextMeshProUGUI DebugTaskNo; // 0x50
+	public Transform DoneUI; // 0x54
+	public Button DoneButton; // 0x58
+	[SerializeField]
+	protected Image EffectDone; // 0x5C
+	public AnimationLoop TaskDoneStandAnimationLoop; // 0x60
+	public DoScale ScaleUpGoalBackground; // 0x64
+	public DoLocalMoveY TaskDoneDoLocalMoveGoalBackground; // 0x68
+	public Image TaskStandImage; // 0x6C
+	public DoLocalMove TaskDoneDoLocalMove; // 0x70
+	public AnimationController DoneButtonAnimationController; // 0x74
+	public GameObject TaskDoneParticle; // 0x78
+	[Header("TaskPanel")]
+	public RectTransform TaskRewardsParent; // 0x7C
+	public BoardTaskItemCurrencyPanelView BoardTaskItemCurrencyPanelViewDefault; // 0x80
+	public BoardTaskItemCurrencyPanelView BoardTaskItemCurrencyPanelViewBoardEvent; // 0x84
+	private BoardTaskItemCurrencyPanelView _boardTaskItemCurrencyPanelView; // 0x88
+	public RectTransform CoinAppearParent; // 0x8C
+	protected BoardTaskItemControllerData _boardTaskItemControllerData; // 0x90
+	protected BoardEntity _boardEntity; // 0x94
+	protected EventEntity _eventEntity; // 0x98
+	protected BoardData _boardData; // 0x9C
+	protected BoardTaskController _boardTaskController; // 0xA0
+	protected LayoutElement _layoutElement; // 0xA4
+	protected Canvas _canvas; // 0xA8
+	protected bool _isDoneButtonAnimating; // 0xAC
+	private ScrollableTaskGoAnimation _scrollableTaskGoAnimation; // 0xB0
+	[Header("Configurable")]
+	public Image TaskAreaStand; // 0xB4
+	private static readonly int TaskPoint; // 0x0
+
+	// Properties
+	public BoardTaskItem BoardTaskItem { get; }
+	public BoardTaskType BoardTaskType { get; }
+	public int ActiveCharAnimationIndex { get; }
+	public bool IsCompleted { get; }
+	public bool IsCharAnimInitialized { get; }
+	public bool IsDoneable { get; }
+	public BoardTaskItemCurrencyPanelView BoardTaskItemCurrencyPanelView { get; }
+	private bool IsSeasonAvailable { get; }
+	public int NonAnimatedGoalItemCount { get; set; }
+
+	// Methods
+
+	// RVA: 0x195FE68 Offset: 0x195FE68 VA: 0x195FE68
+	public BoardTaskItem get_BoardTaskItem() { }
+
+	// RVA: 0x196B330 Offset: 0x196B330 VA: 0x196B330
+	public BoardTaskType get_BoardTaskType() { }
+
+	// RVA: 0x196B35C Offset: 0x196B35C VA: 0x196B35C
+	public int get_ActiveCharAnimationIndex() { }
+
+	// RVA: 0x196B378 Offset: 0x196B378 VA: 0x196B378
+	public bool get_IsCompleted() { }
+
+	// RVA: 0x196B394 Offset: 0x196B394 VA: 0x196B394
+	public bool get_IsCharAnimInitialized() { }
+
+	// RVA: 0x196B3B0 Offset: 0x196B3B0 VA: 0x196B3B0
+	public bool get_IsDoneable() { }
+
+	// RVA: 0x196B408 Offset: 0x196B408 VA: 0x196B408
+	public BoardTaskItemCurrencyPanelView get_BoardTaskItemCurrencyPanelView() { }
+
+	// RVA: 0x196B410 Offset: 0x196B410 VA: 0x196B410
+	private bool get_IsSeasonAvailable() { }
+
+	// RVA: 0x196B49C Offset: 0x196B49C VA: 0x196B49C
+	public int get_NonAnimatedGoalItemCount() { }
+
+	// RVA: 0x196B4B8 Offset: 0x196B4B8 VA: 0x196B4B8
+	public void set_NonAnimatedGoalItemCount(int value) { }
+
+	// RVA: 0x196B4D8 Offset: 0x196B4D8 VA: 0x196B4D8 Slot: 6
+	public override void Awake() { }
+
+	// RVA: 0x196B62C Offset: 0x196B62C VA: 0x196B62C Slot: 7
+	public override void Start() { }
+
+	// RVA: 0x196B69C Offset: 0x196B69C VA: 0x196B69C Slot: 9
+	public override void OnDestroy() { }
+
+	// RVA: 0x196BB88 Offset: 0x196BB88 VA: 0x196BB88 Slot: 14
+	public override void UpdateTick() { }
+
+	// RVA: 0x196BC28 Offset: 0x196BC28 VA: 0x196BC28
+	private Canvas ReturnCanvas() { }
+
+	// RVA: 0x196BCE0 Offset: 0x196BCE0 VA: 0x196BCE0
+	public bool IsActiveInScene() { }
+
+	// RVA: 0x196BD0C Offset: 0x196BD0C VA: 0x196BD0C
+	public void ResetController() { }
+
+	// RVA: 0x196BD10 Offset: 0x196BD10 VA: 0x196BD10
+	public void ResetData() { }
+
+	[AsyncStateMachine(typeof(BoardTaskItemController.<InitializeTaskItem>d__60))]
+	// RVA: 0x196BE4C Offset: 0x196BE4C VA: 0x196BE4C Slot: 28
+	public virtual UniTask<bool> InitializeTaskItem(BoardTaskController boardTaskController, BoardTaskItem boardTaskItem, BoardEntity boardEntity, EventEntity eventEntity, BoardData boardData, bool isInitialize, bool isSpecialTask, bool isNewlyCreated = False, bool isAddedFromPopup = False) { }
+
+	// RVA: 0x196BFD8 Offset: 0x196BFD8 VA: 0x196BFD8 Slot: 29
+	protected virtual void InitializeParameters(BoardTaskController boardTaskController, BoardTaskItem boardTaskItem, BoardEntity boardEntity, EventEntity eventEntity, BoardData boardData, int activeCharIndex) { }
+
+	// RVA: 0x196D24C Offset: 0x196D24C VA: 0x196D24C
+	public void UpdateTaskRewardUI() { }
+
+	// RVA: 0x196D270 Offset: 0x196D270 VA: 0x196D270
+	private void UpdateTaskRewardUI(bool seasonPassActive) { }
+
+	// RVA: 0x196DE74 Offset: 0x196DE74 VA: 0x196DE74
+	private ValueTuple<int, int> CalculateTaskRewards(bool seasonPassActive, out int activeRewardCount) { }
+
+	// RVA: 0x196EAB0 Offset: 0x196EAB0 VA: 0x196EAB0 Slot: 30
+	public virtual void InitChar(int activeCharIndex, SkeletonDataAsset skeletonDataAsset) { }
+
+	// RVA: 0x1968B58 Offset: 0x1968B58 VA: 0x1968B58
+	public void InitSpecialChar(int taskNo, SkeletonDataAsset skeletonDataAsset) { }
+
+	// RVA: 0x196EB80 Offset: 0x196EB80 VA: 0x196EB80
+	private void SendFirebaseEvent(BoardData boardData, BoardTaskItem boardTaskItem) { }
+
+	// RVA: 0x196F624 Offset: 0x196F624 VA: 0x196F624
+	private static void SendHotSalesFirebaseEvents(BoardTaskItem boardTaskItem) { }
+
+	// RVA: 0x196F934 Offset: 0x196F934 VA: 0x196F934
+	public bool IsGoal(ItemInfo itemInfo) { }
+
+	// RVA: 0x196FB68 Offset: 0x196FB68 VA: 0x196FB68
+	private void ArrangeSpecialTask() { }
+
+	// RVA: 0x196FDA0 Offset: 0x196FDA0 VA: 0x196FDA0
+	public void OpenSpecialTaskRewardInfoPopup() { }
+
+	// RVA: 0x196FEAC Offset: 0x196FEAC VA: 0x196FEAC
+	private void GainSpecialTaskRewards(DailyRewardData rewardData) { }
+
+	// RVA: 0x1970310 Offset: 0x1970310 VA: 0x1970310
+	private void ClearSpecialTaskItems(SpecialTaskData specialTaskData) { }
+
+	// RVA: 0x196D90C Offset: 0x196D90C VA: 0x196D90C
+	private bool ArrangeTaskRewardIcons() { }
+
+	// RVA: 0x1970DF4 Offset: 0x1970DF4 VA: 0x1970DF4
+	public void UpdateSeasonPassData() { }
+
+	// RVA: 0x19710AC Offset: 0x19710AC VA: 0x19710AC
+	public bool TriggerTutorialSteps(bool isInitialize) { }
+
+	// RVA: 0x196AE60 Offset: 0x196AE60 VA: 0x196AE60
+	public void UpdateGoalUI(bool focus, bool refreshImmediate) { }
+
+	// RVA: 0x1971210 Offset: 0x1971210 VA: 0x1971210
+	private void ArrangeGoalUIScale(GameConfig gameConfig, BoardTaskGoal boardTaskGoal, GoalUI goalUI) { }
+
+	// RVA: 0x19715F8 Offset: 0x19715F8 VA: 0x19715F8
+	private void ResetGoalUIAndTickImages() { }
+
+	// RVA: 0x196C660 Offset: 0x196C660 VA: 0x196C660
+	private ValueTuple<bool, Dictionary<string, int>> ArrangeTaskDoneStatus(BoardTaskItem boardTaskItem, BoardEntity boardEntity, EventEntity eventEntity, bool focus, bool refreshImmediate) { }
+
+	// RVA: 0x19717F4 Offset: 0x19717F4 VA: 0x19717F4
+	public void GoalUIClicked(int goalIndex) { }
+
+	// RVA: 0x19618F0 Offset: 0x19618F0 VA: 0x19618F0
+	public void ArrangeComponentClickableStatuses(bool enable) { }
+
+	// RVA: 0x1971BD4 Offset: 0x1971BD4 VA: 0x1971BD4
+	private void PlayTaskDoneSound() { }
+
+	// RVA: 0x1971BE4 Offset: 0x1971BE4 VA: 0x1971BE4
+	private void ArrangeInputBlocker(bool enable) { }
+
+	// RVA: 0x1971CD4 Offset: 0x1971CD4 VA: 0x1971CD4
+	private bool IsTaskReadyToDone() { }
+
+	// RVA: 0x196C5DC Offset: 0x196C5DC VA: 0x196C5DC
+	public void ArrangeDoneUIActiveNess(bool active) { }
+
+	// RVA: 0x1971DC8 Offset: 0x1971DC8 VA: 0x1971DC8
+	public void DoneClicked() { }
+
+	// RVA: 0x1971F24 Offset: 0x1971F24 VA: 0x1971F24 Slot: 31
+	protected virtual void TaskDoneAction() { }
+
+	[AsyncStateMachine(typeof(BoardTaskItemController.<ProcessDoneClickBasedOnType>d__89))]
+	// RVA: 0x1971FE0 Offset: 0x1971FE0 VA: 0x1971FE0
+	private UniTask<bool> ProcessDoneClickBasedOnType() { }
+
+	// RVA: 0x19720F0 Offset: 0x19720F0 VA: 0x19720F0
+	private void SetTaskProgressForFeatures(BoardController board) { }
+
+	// RVA: 0x1972300 Offset: 0x1972300 VA: 0x1972300
+	private void AddToCompletedTasks(BoardController board, BoardTaskItem completedTask) { }
+
+	// RVA: 0x197254C Offset: 0x197254C VA: 0x197254C
+	private ValueTuple<BoardTaskEntity, bool> ArrangeLevelUp() { }
+
+	// RVA: 0x196BB8C Offset: 0x196BB8C VA: 0x196BB8C
+	private void ArrangeGlow() { }
+
+	// RVA: 0x1972684 Offset: 0x1972684 VA: 0x1972684
+	private void SetGlowStatus(bool enable) { }
+
+	// RVA: 0x1972864 Offset: 0x1972864 VA: 0x1972864
+	private void ArrangeAllUIAndAnimations(bool refreshImmediate) { }
+
+	// RVA: 0x1968BF8 Offset: 0x1968BF8 VA: 0x1968BF8
+	public void SetVisibility(bool isVisible) { }
+
+	// RVA: 0x196B6B8 Offset: 0x196B6B8 VA: 0x196B6B8
+	public void DestroyAnimations() { }
+
+	// RVA: 0x1972EB4 Offset: 0x1972EB4 VA: 0x1972EB4
+	public void AnimateGoalUI(int goalUIIndex) { }
+
+	// RVA: 0x1973318 Offset: 0x1973318 VA: 0x1973318
+	public void TaskDoneBoardItemsMoveEvent(BoardTaskItem completedTask, bool isFirst) { }
+
+	// RVA: 0x197356C Offset: 0x197356C VA: 0x197356C
+	public GameObject GetSpecialTaskImage() { }
+
+	// RVA: 0x19735A0 Offset: 0x19735A0 VA: 0x19735A0
+	public void SetActiveSpecialTaskInfoIcon(bool active) { }
+
+	// RVA: 0x1973608 Offset: 0x1973608 VA: 0x1973608
+	public void SetLayoutElement(bool state) { }
+
+	// RVA: 0x197363C Offset: 0x197363C VA: 0x197363C
+	public void RemoveEventParentsAndRefresh(int id) { }
+
+	// RVA: 0x197379C Offset: 0x197379C VA: 0x197379C
+	public bool IsEvent() { }
+
+	// RVA: 0x196E940 Offset: 0x196E940 VA: 0x196E940
+	private void ProcessExtraItemReward() { }
+
+	// RVA: 0x1973B18 Offset: 0x1973B18 VA: 0x1973B18 Slot: 21
+	public void PerformCameraChangeAnimation(bool appear) { }
+
+	// RVA: 0x1973C5C Offset: 0x1973C5C VA: 0x1973C5C
+	public void PlayIdleAnimation() { }
+
+	[AsyncStateMachine(typeof(BoardTaskItemController.<PerformInitAnimations>d__108))]
+	// RVA: 0x1973D50 Offset: 0x1973D50 VA: 0x1973D50
+	protected UniTask<bool> PerformInitAnimations(bool playAllAppearAnims) { }
+
+	// RVA: 0x1973E60 Offset: 0x1973E60 VA: 0x1973E60
+	public void ResetUI() { }
+
+	// RVA: 0x1973F24 Offset: 0x1973F24 VA: 0x1973F24
+	private bool ValidateStateChange(string state) { }
+
+	// RVA: 0x19740E4 Offset: 0x19740E4 VA: 0x19740E4
+	public void MoveAfterItemDisappearFinished(Vector3 targetPos, bool isLastTask) { }
+
+	// RVA: 0x1971D84 Offset: 0x1971D84 VA: 0x1971D84
+	private void SetDoneButtonAnimation(bool isActive) { }
+
+	// RVA: 0x1972910 Offset: 0x1972910 VA: 0x1972910
+	protected void SetCharAnim(string state, Action<bool> callback) { }
+
+	// RVA: 0x19743AC Offset: 0x19743AC VA: 0x19743AC
+	private void PlayDisappearCharAnim(Action<bool> completion) { }
+
+	// RVA: 0x1974274 Offset: 0x1974274 VA: 0x1974274
+	private void PlayAppearCharAnim(Action<bool> completion) { }
+
+	// RVA: 0x19745D8 Offset: 0x19745D8 VA: 0x19745D8
+	private TrackEntry SetAnimationInternal(string state, bool loop) { }
+
+	// RVA: 0x1974240 Offset: 0x1974240 VA: 0x1974240
+	private void ResetAnimationInternal(string state, bool loop) { }
+
+	// RVA: 0x1974614 Offset: 0x1974614 VA: 0x1974614
+	private TrackEntry SetAnimationImmediate(string state, bool loop, int timescale) { }
+
+	// RVA: 0x19747A8 Offset: 0x19747A8 VA: 0x19747A8
+	private TrackEntry AddAnimationImmediate(string state, bool loop) { }
+
+	// RVA: 0x1973D10 Offset: 0x1973D10 VA: 0x1973D10
+	private void ClearAnims() { }
+
+	// RVA: 0x19744E4 Offset: 0x19744E4 VA: 0x19744E4
+	private void PlayIdleCharAnim(bool happy, int trackIndex) { }
+
+	// RVA: 0x1973288 Offset: 0x1973288 VA: 0x1973288
+	public void ThrowParticle(Transform transform) { }
+
+	// RVA: 0x1974900 Offset: 0x1974900 VA: 0x1974900 Slot: 24
+	public void OnEvent(SrDebuggerEvent.ShowDebugLayers e) { }
+
+	// RVA: 0x1974940 Offset: 0x1974940 VA: 0x1974940 Slot: 25
+	public void OnEvent(MetaEvent.ActiveSeasonStatusChange e) { }
+
+	// RVA: 0x197499C Offset: 0x197499C VA: 0x197499C Slot: 22
+	public void OnEvent(EntityUpdateEvent.BoardItemStatusChange e) { }
+
+	// RVA: 0x19749C8 Offset: 0x19749C8 VA: 0x19749C8 Slot: 23
+	public void OnEvent(TaskEvent.TaskLastCoinOut e) { }
+
+	// RVA: 0x1974CE0 Offset: 0x1974CE0 VA: 0x1974CE0 Slot: 26
+	public void OnEvent(ItemRewardConvertEvent.UpdateRewardImages e) { }
+
+	// RVA: 0x1974D00 Offset: 0x1974D00 VA: 0x1974D00 Slot: 27
+	public void OnEvent(TaskEvent.TaskUpdateRewardUI e) { }
+
+	// RVA: 0x1974D20 Offset: 0x1974D20 VA: 0x1974D20
+	public void .ctor() { }
+
+	// RVA: 0x1974D88 Offset: 0x1974D88 VA: 0x1974D88
+	private static void .cctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1974DDC Offset: 0x1974DDC VA: 0x1974DDC
+	private bool <UpdateTaskRewardUI>b__63_0(IEventPointsOnBoardTaskHandler handler) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1974EAC Offset: 0x1974EAC VA: 0x1974EAC
+	private bool <SendFirebaseEvent>b__67_1(BoardPositionEntity p) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1974F10 Offset: 0x1974F10 VA: 0x1974F10
+	private bool <ProcessDoneClickBasedOnType>b__89_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1974F34 Offset: 0x1974F34 VA: 0x1974F34
+	private void <ProcessDoneClickBasedOnType>b__89_1(RecurringEventHandlerBase handler) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1974F78 Offset: 0x1974F78 VA: 0x1974F78
+	private bool <ProcessDoneClickBasedOnType>b__89_3(BoardTaskItem item) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1974FD4 Offset: 0x1974FD4 VA: 0x1974FD4
+	private void <ProcessDoneClickBasedOnType>b__89_4(RecurringEventHandlerBase handler) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1975018 Offset: 0x1975018 VA: 0x1975018
+	private void <ProcessDoneClickBasedOnType>b__89_6(RecurringEventHandlerBase handler) { }
+
+	[CompilerGenerated]
+	// RVA: 0x197505C Offset: 0x197505C VA: 0x197505C
+	private void <PerformInitAnimations>b__108_0() { }
+}
+

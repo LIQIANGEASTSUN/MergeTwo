@@ -1,0 +1,263 @@
+Type: GameLogic.Player.Board.BoardBubbleState
+
+Method: Metaplay.Core.MetaTime get_LastBubbleAppearance()
+
+Disassembly:
+	0x0366DDFC SUB X31, X31, 0x70
+	0x0366DE00 STR X30, [X31 + 0x30]
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_LastBubbleAppearance(Metaplay.Core.MetaTime value)
+
+Disassembly:
+	0x0366DE04 STP X24, X23, [X31 + 0x40]
+	0x0366DE08 STP X22, X21, [X31 + 0x50]
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Return 
+
+Method: Metaplay.Core.MetaTime get_GraceChanceTimestamp()
+
+Disassembly:
+	0x0366DE0C STP X20, X19, [X31 + 0x60]
+	0x0366DE10 ADRP X20, 0x26BC000
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_GraceChanceTimestamp(Metaplay.Core.MetaTime value)
+
+Disassembly:
+	0x0366DE14 MOV X19, X0
+	0x0366DE18 LDRB W8, [X20 + 0xF56]
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Return 
+
+Method: Metaplay.Core.Math.F32 get_GraceChance()
+
+Disassembly:
+	0x0366DE1C TBNZ X8, 0x0, 0x366DE70
+	0x0366DE20 ADRP X0, 0x207F000
+
+ISIL:
+	001 Move W0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_GraceChance(Metaplay.Core.Math.F32 value)
+
+Disassembly:
+	0x0366DE24 LDR X0, [X0 + 0x3B0]
+	0x0366DE28 BL 0x239B8E4
+
+ISIL:
+	001 Move [X0+32], W1
+	002 Return 
+
+Method: Metaplay.Core.MetaTime get_BehaviourChanceTimestamp()
+
+Disassembly:
+	0x0366DE2C ADRP X0, 0x207F000
+	0x0366DE30 LDR X0, [X0 + 0x398]
+
+ISIL:
+	001 Move X0, [X0+40]
+	002 Return X0
+
+Method: System.Void set_BehaviourChanceTimestamp(Metaplay.Core.MetaTime value)
+
+Disassembly:
+	0x0366DE34 BL 0x239B8E4
+	0x0366DE38 ADRP X0, 0x207F000
+
+ISIL:
+	001 Move [X0+40], X1
+	002 Return 
+
+Method: Metaplay.Core.Math.F32 get_BehaviourChance()
+
+Disassembly:
+	0x0366DE3C LDR X0, [X0 + 0x3A0]
+	0x0366DE40 BL 0x239B8E4
+
+ISIL:
+	001 Move W0, [X0+48]
+	002 Return X0
+
+Method: System.Void set_BehaviourChance(Metaplay.Core.Math.F32 value)
+
+Disassembly:
+	0x0366DE44 ADRP X0, 0x20C6000
+	0x0366DE48 LDR X0, [X0 + 0x1C8]
+
+ISIL:
+	001 Move [X0+48], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0366DE4C BL 0x239B8E4
+	0x0366DE50 ADRP X0, 0x209E000
+	0x0366DE54 LDR X0, [X0 + 0xE10]
+	0x0366DE58 BL 0x239B8E4
+	0x0366DE5C ADRP X0, 0x207F000
+	0x0366DE60 LDR X0, [X0 + 0x3A8]
+	0x0366DE64 BL 0x239B8E4
+	0x0366DE68 MOVZ W8, 0x1
+	0x0366DE6C STRB W8, [X20 + 0xF56]
+	0x0366DE70 STP X31, X31, [X31 + 0x18]
+	0x0366DE74 STR X31, [X31 + 0x28]
+	0x0366DE78 CBZ X19, 0x366E044
+	0x0366DE7C ADRP X10, 0x209E000
+	0x0366DE80 LDR X8, [X19]
+	0x0366DE84 LDR X10, [X10 + 0xE10]
+	0x0366DE88 LDRH W9, [X8 + 0x12E]
+	0x0366DE8C LDR X1, [X10]
+	0x0366DE90 CBZ X9, 0x366DEB4
+	0x0366DE94 LDR X10, [X8 + 0xB0]
+	0x0366DE98 ADD X10, X10, 0x8
+	0x0366DE9C LDUR X11, [X10 - 0x8]
+	0x0366DEA0 CMP X11, X1
+	0x0366DEA4 B.EQ 0x366DEC4
+	0x0366DEA8 SUBS X9, X9, 0x1
+	0x0366DEAC ADD X10, X10, 0x10
+	0x0366DEB0 B.NE 0x366DE9C
+	0x0366DEB4 MOV X0, X19
+	0x0366DEB8 MOVZ W2, 0x2
+	0x0366DEBC BL 0x23D527C
+	0x0366DEC0 B 0x366DED4
+	0x0366DEC4 LDR W9, [X10]
+	0x0366DEC8 ADD W9, W9, 0x2
+	0x0366DECC ADD X8, X8, W9, 0x4, SXTW
+	0x0366DED0 ADD X0, X8, 0x138
+	0x0366DED4 LDP X8, X1, [X0]
+	0x0366DED8 MOV X0, X19
+	0x0366DEDC BLR X8
+	0x0366DEE0 CBZ X0, 0x366DFB8
+	0x0366DEE4 ADRP X8, 0x207F000
+	0x0366DEE8 ADRP X23, 0x207F000
+	0x0366DEEC ADRP X24, 0x207F000
+	0x0366DEF0 LDR X8, [X8 + 0x3A8]
+	0x0366DEF4 ADRP X22, 0x207F000
+	0x0366DEF8 LDR X23, [X23 + 0x398]
+	0x0366DEFC LDR X24, [X24 + 0x3A0]
+	0x0366DF00 LDR X22, [X22 + 0x3B0]
+	0x0366DF04 ADD X1, X31, 0x18
+	0x0366DF08 LDR X2, [X8]
+	0x0366DF0C ADD X20, X31, 0x18
+	0x0366DF10 BL 0x272D0E8
+	0x0366DF14 MOV W21, W31
+	0x0366DF18 STP X31, X20, [X31 + 0x8]
+	0x0366DF1C LDR X1, [X23]
+	0x0366DF20 ADD X0, X31, 0x18
+	0x0366DF24 BL 0x29592D0
+	0x0366DF28 TBZ X0, 0x0, 0x366DFA8
+	0x0366DF2C LDR X20, [X24]
+	0x0366DF30 LDR X0, [X20 + 0x20]
+	0x0366DF34 ADD X8, X0, 0x135
+	0x0366DF38 LDRH W9, [X8]
+	0x0366DF3C TBNZ X9, 0x0, 0x366DF58
+	0x0366DF40 BL 0x23D4F40
+	0x0366DF44 MOV X8, X0
+	0x0366DF48 LDR X0, [X20 + 0x20]
+	0x0366DF4C ADD X9, X0, 0x135
+	0x0366DF50 LDRH W9, [X9]
+	0x0366DF54 B 0x366DF5C
+	0x0366DF58 MOV X8, X0
+	0x0366DF5C LDR X8, [X8 + 0xC0]
+	0x0366DF60 LDR X8, [X8 + 0x10]
+	0x0366DF64 LDR W20, [X8 + 0xFC]
+	0x0366DF68 TBNZ X9, 0x0, 0x366DF70
+	0x0366DF6C BL 0x23D4F40
+	0x0366DF70 LDR X8, [X0 + 0xC0]
+	0x0366DF74 LDR X8, [X8 + 0x8]
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31+16], X22
+	003 Move [X31+24], X21
+	004 Move [X31+32], X20
+	005 Move [X31+40], X19
+	006 Move X19, X0
+	007 Move W8, [0x26C0F32]
+	008 Move X21, [0x206B8D0]
+	009 Move TEMP, X8
+	010 And TEMP, TEMP, 1
+	011 Compare TEMP, 1
+	012 JumpIfEqual {19}
+	013 Move X0, [0x206C210]
+	014 Call 0x239F8E4
+	015 Move X0, [0x206B8D0]
+	016 Call 0x239F8E4
+	017 Move W8, 1
+	018 Move [X20+3890], W8
+	019 Move X0, [X21]
+	020 Move W8, [X0+228]
+	021 Move X20, [0x206C210]
+	022 Compare W8, 0
+	023 JumpIfNotEqual {26}
+	024 Call 0x239FA64
+	025 Move X0, [X21]
+	026 Move X8, [X0+184]
+	027 Move X0, [X20]
+	028 Move X8, [X8+8]
+	029 Move [X19+24], X8
+	030 Move W8, [X0+228]
+	031 Compare W8, 0
+	032 Invalid "Jump target not found in method."
+	033 Call 0x239FA64
+	034 Move W8, [0x26BA391]
+	035 Compare W8, 0
+	036 JumpIfNotEqual {41}
+	037 Move X0, [0x206C210]
+	038 Call 0x239F8E4
+	039 Move W8, 1
+	040 Move [X22+913], W8
+	041 Move X0, [X20]
+	042 Move W8, [X0+228]
+	043 Compare W8, 0
+	044 JumpIfEqual {51}
+	045 Move W8, 0x10000
+	046 Move X9, [X21]
+	047 Move [X19+32], W8
+	048 Move X8, [X9+184]
+	049 Move X8, [X8+8]
+	050 Move [X19+40], X8
+	051 Call 0x239FA64
+	052 Move W8, 0x10000
+	053 Move X9, [X21]
+	054 Move [X19+32], W8
+	055 Move X8, [X9+184]
+	056 Move W9, [0x26BA391]
+	057 Move X8, [X8+8]
+	058 Move [X19+40], X8
+	059 Compare W9, 0
+	060 JumpIfNotEqual {65}
+	061 Move X0, [0x206C210]
+	062 Call 0x239F8E4
+	063 Move W8, 1
+	064 Move [X22+913], W8
+	065 Move X0, [X20]
+	066 Move W8, [X0+228]
+	067 Compare W8, 0
+	068 JumpIfNotEqual {70}
+	069 Call 0x239FA64
+	070 Move W8, 0x10000
+	071 Move X0, X19
+	072 Move X1, X31
+	073 Move [X19+48], W8
+	074 Move X20, [X31+32]
+	075 Move X19, [X31+40]
+	076 Move X22, [X31+16]
+	077 Move X21, [X31+24]
+	078 Move X30, [X31+48]
+	079 Call Object..ctor, X0
+	080 Return 
+

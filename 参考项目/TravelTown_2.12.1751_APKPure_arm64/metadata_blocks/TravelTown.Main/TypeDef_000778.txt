@@ -1,0 +1,21 @@
+// Namespace: MergeEngine.ECS.Systems.State.Board
+public class FreeVouchersStateSystem : StateSystemBase<CoreBoardFreeVouchers> // TypeDefIndex: 778
+{
+	// Fields
+	[Inject]
+	private ISystemManager _systemManager; // 0x48
+	[InjectSystem]
+	private BubbledItemSystem _bubbledItemSystem; // 0x50
+
+	// Methods
+
+	// RVA: 0x64EAACC Offset: 0x64E6ACC VA: 0x64EAACC Slot: 13
+	protected override void LoadState(CoreBoardFreeVouchers newState) { }
+
+	// RVA: 0x64EAC60 Offset: 0x64E6C60 VA: 0x64EAC60
+	private void UpdateFreeBurst(int value) { }
+
+	// RVA: 0x64EAC7C Offset: 0x64E6C7C VA: 0x64EAC7C
+	public void .ctor() { }
+}
+

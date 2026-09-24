@@ -1,0 +1,30 @@
+Type: Code.GameLogic.Player.IInventoryEntry
+
+Method: GameLogic.Player.Items.MergeItem get_Item()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void set_Item(GameLogic.Player.Items.MergeItem value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.MetaTime get_Timestamp()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void set_Timestamp(Metaplay.Core.MetaTime value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

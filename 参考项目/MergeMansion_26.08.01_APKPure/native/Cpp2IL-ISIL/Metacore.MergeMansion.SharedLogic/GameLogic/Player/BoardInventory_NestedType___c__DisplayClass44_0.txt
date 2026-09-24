@@ -1,0 +1,43 @@
+Type: GameLogic.Player.BoardInventory+<>c__DisplayClass44_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0352F970 CBZ X9, 0x352F994
+	0x0352F974 LDR X10, [X8 + 0xB0]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <ReplaceItems>b__0(GameLogic.Player.BoardInventory+InventoryEntry entry)
+
+Disassembly:
+	0x03532B5C LDP X8, X1, [X0]
+	0x03532B60 MOV X0, X19
+	0x03532B64 BLR X8
+	0x03532B68 MOV X1, X0
+	0x03532B6C LDR X0, [X31 + 0x18]
+	0x03532B70 STR X1, [X0 + 0x48]!
+	0x03532B74 BL 0x239B888
+	0x03532B78 LDR X19, [X31 + 0x18]
+	0x03532B7C LDR X20, [X19 + 0x48]
+	0x03532B80 MOVN W8, 0x4
+	0x03532B84 STR W8, [X19 + 0x10]
+
+ISIL:
+	001 Move [X31-16], X30
+	002 Compare X1, 0
+	003 JumpIfEqual {13}
+	004 Move X8, [X0+16]
+	005 Compare X8, 0
+	006 JumpIfEqual {13}
+	007 Move X1, [X1+16]
+	008 Move X0, [X8+64]
+	009 Move X2, [X8+40]
+	010 Move X3, [X8+24]
+	011 Move X30, [X31+16]
+	012 CallNoReturn X3
+	013 Call 0x239FB90
+

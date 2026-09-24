@@ -1,0 +1,18 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class HintUtil.<>c__DisplayClass10_0 // TypeDefIndex: 614
+{
+	// Fields
+	public IMergingConfigurationModel mergingConfigurationModel; // 0x10
+	public int lowestLevelItemLevel; // 0x18
+	public IdComponent lowestLevelItem; // 0x20
+
+	// Methods
+
+	// RVA: 0x6274E34 Offset: 0x6270E34 VA: 0x6274E34
+	public void .ctor() { }
+
+	// RVA: 0x6277024 Offset: 0x6273024 VA: 0x6277024
+	internal void <GetLowestLevelBasicItem>b__2(IdComponent item) { }
+}
+

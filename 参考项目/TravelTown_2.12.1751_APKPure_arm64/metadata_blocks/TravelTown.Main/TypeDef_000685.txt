@@ -1,0 +1,144 @@
+// Namespace: MergeEngine.ECS.Systems
+public abstract class SystemBase : IInitializable, IDisposable // TypeDefIndex: 685
+{
+	// Fields
+	[Inject]
+	private IEntityManager _entityManager; // 0x10
+	[Inject]
+	private IEntityFactory _entityFactory; // 0x18
+	[Inject]
+	private ISystemManager _systemManager; // 0x20
+	[Inject]
+	private SignalBus _signalBus; // 0x28
+	private bool _initialized; // 0x30
+	private bool _gameStarted; // 0x31
+	private PersistenceSystem _persistenceSystem; // 0x38
+
+	// Properties
+	protected bool Initialized { get; }
+	protected bool GameStarted { get; }
+	protected bool HasStoredSession { get; }
+	protected IEntityManager EntityManager { get; }
+	protected IEntityFactory EntityFactory { get; }
+	protected ISystemManager SystemManager { get; }
+	protected SignalBus SignalBus { get; }
+
+	// Methods
+
+	// RVA: 0x63A6C78 Offset: 0x63A2C78 VA: 0x63A6C78
+	protected bool get_Initialized() { }
+
+	// RVA: 0x63A6C80 Offset: 0x63A2C80 VA: 0x63A6C80
+	protected bool get_GameStarted() { }
+
+	// RVA: 0x63A6C88 Offset: 0x63A2C88 VA: 0x63A6C88
+	protected bool get_HasStoredSession() { }
+
+	// RVA: 0x63A6CA4 Offset: 0x63A2CA4 VA: 0x63A6CA4
+	protected IEntityManager get_EntityManager() { }
+
+	// RVA: 0x63A6CAC Offset: 0x63A2CAC VA: 0x63A6CAC
+	protected IEntityFactory get_EntityFactory() { }
+
+	// RVA: 0x63A6CB4 Offset: 0x63A2CB4 VA: 0x63A6CB4
+	protected ISystemManager get_SystemManager() { }
+
+	// RVA: 0x63A6CBC Offset: 0x63A2CBC VA: 0x63A6CBC
+	protected SignalBus get_SignalBus() { }
+
+	// RVA: 0x63A6CC4 Offset: 0x63A2CC4 VA: 0x63A6CC4
+	protected void add_AllSystemsInitialized(Action value) { }
+
+	// RVA: 0x63A6D6C Offset: 0x63A2D6C VA: 0x63A6D6C
+	protected void remove_AllSystemsInitialized(Action value) { }
+
+	// RVA: 0x63A6E18 Offset: 0x63A2E18 VA: 0x63A6E18 Slot: 4
+	public void Initialize() { }
+
+	// RVA: 0x63A718C Offset: 0x63A318C VA: 0x63A718C Slot: 5
+	public void Dispose() { }
+
+	// RVA: 0x63A7318 Offset: 0x63A3318 VA: 0x63A7318 Slot: 6
+	protected virtual void InitializeSystem() { }
+
+	// RVA: 0x63A731C Offset: 0x63A331C VA: 0x63A731C Slot: 7
+	protected virtual void DisposeSystem() { }
+
+	// RVA: 0x63A7320 Offset: 0x63A3320 VA: 0x63A7320 Slot: 8
+	protected virtual void OnGameStarted() { }
+
+	// RVA: 0x63A7324 Offset: 0x63A3324 VA: 0x63A7324 Slot: 9
+	protected virtual void GamePaused() { }
+
+	// RVA: 0x63A7328 Offset: 0x63A3328 VA: 0x63A7328 Slot: 10
+	protected virtual void GameResumed() { }
+
+	// RVA: 0x63A732C Offset: 0x63A332C VA: 0x63A732C Slot: 11
+	protected virtual void EntityCreated(Entity entity) { }
+
+	// RVA: 0x63A7330 Offset: 0x63A3330 VA: 0x63A7330 Slot: 12
+	protected virtual void EntityRemoved(Entity entity) { }
+
+	// RVA: -1 Offset: -1
+	protected TSystem GetSystem<TSystem>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DB6C18 Offset: 0x3DB2C18 VA: 0x3DB6C18
+	|-SystemBase.GetSystem<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	protected bool RemoveSystem<TSystem>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DB6CC0 Offset: 0x3DB2CC0 VA: 0x3DB6CC0
+	|-SystemBase.RemoveSystem<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	protected TComponent GetComponent<TComponent>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DB68FC Offset: 0x3DB28FC VA: 0x3DB68FC
+	|-SystemBase.GetComponent<object>
+	|
+	|-RVA: 0x3DB69A4 Offset: 0x3DB29A4 VA: 0x3DB69A4
+	|-SystemBase.GetComponent<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	protected ReadOnlyCollection<TComponent> GetComponents<TComponent>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DB6AC8 Offset: 0x3DB2AC8 VA: 0x3DB6AC8
+	|-SystemBase.GetComponents<object>
+	|
+	|-RVA: 0x3DB6B70 Offset: 0x3DB2B70 VA: 0x3DB6B70
+	|-SystemBase.GetComponents<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x63A7334 Offset: 0x63A3334 VA: 0x63A7334
+	private bool IsCooldownBlocked(Entity entity, out CooldownBlockComponent cooldownBlockComponent) { }
+
+	// RVA: 0x63A73DC Offset: 0x63A33DC VA: 0x63A73DC
+	protected bool IsCooldownBlocked(Entity entity) { }
+
+	// RVA: 0x63A73F8 Offset: 0x63A33F8 VA: 0x63A73F8
+	protected bool IsCooldownBlocked(ComponentBase component) { }
+
+	// RVA: 0x63A7420 Offset: 0x63A3420 VA: 0x63A7420
+	protected bool IsCooldownBlocked(ComponentBase component, out CooldownBlockComponent cooldownBlockComponent) { }
+
+	// RVA: 0x63A7438 Offset: 0x63A3438 VA: 0x63A7438
+	protected bool IsUnlockBlocked(ComponentBase component) { }
+
+	// RVA: 0x63A747C Offset: 0x63A347C VA: 0x63A747C
+	private void GamePausedSignalFired(GamePauseSignal signal) { }
+
+	// RVA: 0x63A74A8 Offset: 0x63A34A8 VA: 0x63A74A8
+	private void OnAllSystemsInitialized() { }
+
+	// RVA: 0x63A7540 Offset: 0x63A3540 VA: 0x63A7540
+	protected void .ctor() { }
+}
+

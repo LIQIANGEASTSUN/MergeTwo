@@ -1,0 +1,108 @@
+// Namespace: 
+[Serializable]
+public class ButterflyWorkShopConfig : TableBase // TypeDefIndex: 180
+{
+	// Fields
+	[CompilerGenerated]
+	private int <Id>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private int <LineId>k__BackingField; // 0xC
+	[CompilerGenerated]
+	private List<int> <InitItems>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private List<int> <OutPut>k__BackingField; // 0x14
+	[CompilerGenerated]
+	private List<int> <Weight>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private int <MaxWeight>k__BackingField; // 0x1C
+	[CompilerGenerated]
+	private List<int> <RewardId>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private List<int> <RewardNum>k__BackingField; // 0x24
+
+	// Properties
+	public int Id { get; set; }
+	public int LineId { get; set; }
+	public List<int> InitItems { get; set; }
+	public List<int> OutPut { get; set; }
+	public List<int> Weight { get; set; }
+	public int MaxWeight { get; set; }
+	public List<int> RewardId { get; set; }
+	public List<int> RewardNum { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x29EBB08 Offset: 0x29EBB08 VA: 0x29EBB08
+	public int get_Id() { }
+
+	[CompilerGenerated]
+	// RVA: 0x29EBB10 Offset: 0x29EBB10 VA: 0x29EBB10
+	public void set_Id(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x29EBB18 Offset: 0x29EBB18 VA: 0x29EBB18
+	public int get_LineId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x29EBB20 Offset: 0x29EBB20 VA: 0x29EBB20
+	public void set_LineId(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x29EBB28 Offset: 0x29EBB28 VA: 0x29EBB28
+	public List<int> get_InitItems() { }
+
+	[CompilerGenerated]
+	// RVA: 0x29EBB30 Offset: 0x29EBB30 VA: 0x29EBB30
+	public void set_InitItems(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x29EBB38 Offset: 0x29EBB38 VA: 0x29EBB38
+	public List<int> get_OutPut() { }
+
+	[CompilerGenerated]
+	// RVA: 0x29EBB40 Offset: 0x29EBB40 VA: 0x29EBB40
+	public void set_OutPut(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x29EBB48 Offset: 0x29EBB48 VA: 0x29EBB48
+	public List<int> get_Weight() { }
+
+	[CompilerGenerated]
+	// RVA: 0x29EBB50 Offset: 0x29EBB50 VA: 0x29EBB50
+	public void set_Weight(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x29EBB58 Offset: 0x29EBB58 VA: 0x29EBB58
+	public int get_MaxWeight() { }
+
+	[CompilerGenerated]
+	// RVA: 0x29EBB60 Offset: 0x29EBB60 VA: 0x29EBB60
+	public void set_MaxWeight(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x29EBB68 Offset: 0x29EBB68 VA: 0x29EBB68
+	public List<int> get_RewardId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x29EBB70 Offset: 0x29EBB70 VA: 0x29EBB70
+	public void set_RewardId(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x29EBB78 Offset: 0x29EBB78 VA: 0x29EBB78
+	public List<int> get_RewardNum() { }
+
+	[CompilerGenerated]
+	// RVA: 0x29EBB80 Offset: 0x29EBB80 VA: 0x29EBB80
+	public void set_RewardNum(List<int> value) { }
+
+	// RVA: 0x29EBB88 Offset: 0x29EBB88 VA: 0x29EBB88 Slot: 4
+	public override int GetID() { }
+
+	// RVA: 0x29EBBDC Offset: 0x29EBBDC VA: 0x29EBBDC
+	public void .ctor() { }
+
+	// RVA: 0x29EBBE4 Offset: 0x29EBBE4 VA: 0x29EBBE4
+	public int <>iFixBaseProxy_GetID() { }
+}
+

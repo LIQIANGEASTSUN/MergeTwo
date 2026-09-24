@@ -1,0 +1,25 @@
+// Namespace: MergeEngine.ECS.Components
+[CacheAs(new[] { typeof(IWipeableComponent) })]
+public class UndoComponent : ComponentBase, IWipeableComponent, IComponentBase // TypeDefIndex: 1028
+{
+	// Fields
+	public Entity SoldItem; // 0x20
+	[CompilerGenerated]
+	private readonly MutableBindableProperty<IMergeItem> <SoldMergeItem>k__BackingField; // 0x28
+
+	// Properties
+	public MutableBindableProperty<IMergeItem> SoldMergeItem { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x68F8E2C Offset: 0x68F4E2C VA: 0x68F8E2C
+	public MutableBindableProperty<IMergeItem> get_SoldMergeItem() { }
+
+	// RVA: 0x68F8E34 Offset: 0x68F4E34 VA: 0x68F8E34
+	public void .ctor(Entity entity) { }
+
+	// RVA: 0x68F8ED4 Offset: 0x68F4ED4 VA: 0x68F8ED4 Slot: 7
+	private void MergeEngine.ECS.Components.IWipeableComponent.Wipe() { }
+}
+

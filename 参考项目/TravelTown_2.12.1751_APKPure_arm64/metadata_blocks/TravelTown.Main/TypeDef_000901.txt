@@ -1,0 +1,47 @@
+// Namespace: MergeEngine.ECS.Systems.Board
+public class BoardItemConsumerSystem : SystemBase // TypeDefIndex: 901
+{
+	// Fields
+	private BoardSystem _boardSystem; // 0x40
+	[Inject]
+	private IMergingConfigurationModel _configurationModel; // 0x48
+	[Inject]
+	private INotificationDataFactory _notificationDataFactory; // 0x50
+	[InjectSystem]
+	private TasksSystem _tasksSystem; // 0x58
+	[InjectComponent]
+	private BoardItemCountComponent _boardItemCountComponent; // 0x60
+
+	// Methods
+
+	// RVA: 0x665F814 Offset: 0x665B814 VA: 0x665F814 Slot: 6
+	protected override void InitializeSystem() { }
+
+	// RVA: 0x665F9C8 Offset: 0x665B9C8 VA: 0x665F9C8 Slot: 7
+	protected override void DisposeSystem() { }
+
+	// RVA: 0x665FB4C Offset: 0x665BB4C VA: 0x665FB4C
+	private bool GetTaskConsumeItems(IMergeItem preferredMergeItem, Nullable<BoardItemPosition> preferredPosition, IEnumerable<ItemMultiple> itemsToConsume, out List<IdComponent> selectedItems) { }
+
+	// RVA: 0x6660850 Offset: 0x665C850 VA: 0x6660850
+	private List<IdComponent> LockConsumeItems(IMergeItem preferredMergeItem, Nullable<BoardItemPosition> preferredBoardPosition, IEnumerable<ItemMultiple> objectiveItems) { }
+
+	// RVA: 0x6660AA4 Offset: 0x665CAA4 VA: 0x6660AA4
+	private void UnlockConsumedItems(List<IdComponent> items) { }
+
+	// RVA: 0x6660CA4 Offset: 0x665CCA4 VA: 0x6660CA4
+	private void LockItemDependencies(LockTaskDependenciesSignal signal) { }
+
+	// RVA: 0x6660D5C Offset: 0x665CD5C VA: 0x6660D5C
+	private void ConsumeItem(ConsumeBoardItemSignal signal) { }
+
+	// RVA: 0x6660FF8 Offset: 0x665CFF8 VA: 0x6660FF8
+	private void ConsumeMultipleItems(ConsumeMultipleBoardItemsSignal signal) { }
+
+	// RVA: 0x6660E80 Offset: 0x665CE80 VA: 0x6660E80
+	private void SlideItemOut(PositionComponent positionComponent, IMergeItem item, Vector2 position, float durationMultiplier, TweenCallback completeCallback) { }
+
+	// RVA: 0x6661808 Offset: 0x665D808 VA: 0x6661808
+	public void .ctor() { }
+}
+

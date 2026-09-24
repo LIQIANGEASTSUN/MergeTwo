@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class PizzaTowerModel.<>c__DisplayClass49_0 // TypeDefIndex: 846
+{
+	// Fields
+	public int seat; // 0x8
+
+	// Methods
+
+	// RVA: 0x1B0F4E4 Offset: 0x1B0F4E4 VA: 0x1B0F4E4
+	public void .ctor() { }
+
+	// RVA: 0x1B11884 Offset: 0x1B11884 VA: 0x1B11884
+	internal bool <AddRandomTaskScore>b__0(PizzaTowerOrder p) { }
+}
+

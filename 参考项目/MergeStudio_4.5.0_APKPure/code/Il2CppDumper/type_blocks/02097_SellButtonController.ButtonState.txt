@@ -1,0 +1,12 @@
+// Namespace: 
+private enum SellButtonController.ButtonState // TypeDefIndex: 2097
+{
+	// Fields
+	public int value__; // 0x0
+	public const SellButtonController.ButtonState Off = 0;
+	public const SellButtonController.ButtonState Undo = 1;
+	public const SellButtonController.ButtonState Remove = 2;
+	public const SellButtonController.ButtonState NotRemovable = 3;
+	public const SellButtonController.ButtonState DragToRemove = 4;
+}
+

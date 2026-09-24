@@ -1,0 +1,26 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class GameMainReward : IReward // TypeDefIndex: 2530
+{
+	// Fields
+	public List<GameItemReward> Items; // 0x8
+	public List<GameCollectableReward> Collectables; // 0xC
+	public List<GameBoosterReward> Boosters; // 0x10
+	public GameUnlimitedEnergyReward UnlimitedEnergy; // 0x14
+	public GameRecurringEventCurrencyReward EventCurrencyReward; // 0x18
+	public List<GameSupReward> SupRewards; // 0x1C
+	public List<GameRangeBasedChestReward> RangeBasedChests; // 0x20
+	public List<GameRewardBoxReward> RewardBoxItems; // 0x24
+
+	// Properties
+	public GameRewardType RewardType { get; }
+
+	// Methods
+
+	// RVA: 0x1A1C08C Offset: 0x1A1C08C VA: 0x1A1C08C Slot: 4
+	public GameRewardType get_RewardType() { }
+
+	// RVA: 0x1A1C094 Offset: 0x1A1C094 VA: 0x1A1C094
+	public void .ctor() { }
+}
+

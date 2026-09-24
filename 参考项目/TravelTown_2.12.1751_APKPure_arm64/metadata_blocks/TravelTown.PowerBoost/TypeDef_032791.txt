@@ -1,0 +1,89 @@
+// Namespace: Merger.MergeBoard.PowerBoost.Services
+public class PowerBoostModesCalculator : IPowerBoostModesCalculator, IDisposable // TypeDefIndex: 32791
+{
+	// Fields
+	private const int MinUnlockablePowerBoost = 2;
+	[Inject]
+	private SignalBus _signalBus; // 0x10
+	[Inject]
+	private IPowerBoostModel _powerBoostModel; // 0x18
+	[Inject]
+	private IResourcesModel _resourcesModel; // 0x20
+	[Inject]
+	private IPowerBoostPersistanceService _powerBoostPersistanceService; // 0x28
+	private List<int> _availableBoostOptionsByEnergy; // 0x30
+	private List<int> _availableBoostOptionsByLevel; // 0x38
+	private string _id; // 0x40
+
+	// Properties
+	private BindableProperty<int> EnergyResource { get; }
+	public int MaxAvailableBoost { get; }
+
+	// Methods
+
+	// RVA: 0x6ACE868 Offset: 0x6ACA868 VA: 0x6ACE868
+	private BindableProperty<int> get_EnergyResource() { }
+
+	// RVA: 0x6ACE93C Offset: 0x6ACA93C VA: 0x6ACE93C Slot: 4
+	public int get_MaxAvailableBoost() { }
+
+	// RVA: 0x6ACEA18 Offset: 0x6ACAA18 VA: 0x6ACEA18 Slot: 5
+	public void Setup(string id) { }
+
+	// RVA: 0x6ACEB04 Offset: 0x6ACAB04 VA: 0x6ACEB04 Slot: 15
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x6ACEAEC Offset: 0x6ACAAEC VA: 0x6ACEAEC Slot: 6
+	public void RebuildBoosts() { }
+
+	// RVA: 0x6ACF2D4 Offset: 0x6ACB2D4 VA: 0x6ACF2D4 Slot: 7
+	public bool CalculateUnlockableBoost(out int unlockableBoost) { }
+
+	// RVA: 0x6ACF520 Offset: 0x6ACB520 VA: 0x6ACF520 Slot: 12
+	public IReadOnlyList<int> GetUnlockableBoosts() { }
+
+	// RVA: 0x6ACF69C Offset: 0x6ACB69C VA: 0x6ACF69C Slot: 13
+	public IReadOnlyList<int> GetPlayablePowerBoosts() { }
+
+	// RVA: 0x6ACF6A4 Offset: 0x6ACB6A4 VA: 0x6ACF6A4 Slot: 14
+	public void OnConfigurationUpdated() { }
+
+	// RVA: 0x6ACFBF8 Offset: 0x6ACBBF8 VA: 0x6ACFBF8 Slot: 8
+	public void SwitchBoost() { }
+
+	// RVA: 0x6ACFDB0 Offset: 0x6ACBDB0 VA: 0x6ACFDB0 Slot: 9
+	public int CalculateNextBoost() { }
+
+	// RVA: 0x6ACF89C Offset: 0x6ACB89C VA: 0x6ACF89C Slot: 10
+	public void ResetCurrentPowerBoost() { }
+
+	// RVA: 0x6ACF9A4 Offset: 0x6ACB9A4 VA: 0x6ACF9A4 Slot: 11
+	public void ResetToMaxAvailableBoost() { }
+
+	// RVA: 0x6AD0004 Offset: 0x6ACC004 VA: 0x6AD0004
+	private void OnEnergyChanged() { }
+
+	// RVA: 0x6ACEEBC Offset: 0x6ACAEBC VA: 0x6ACEEBC
+	private void CalculatePlayableBoosts() { }
+
+	// RVA: 0x6ACEBB4 Offset: 0x6ACABB4 VA: 0x6ACEBB4
+	private void CalculateAvailableBoostsByLevel() { }
+
+	// RVA: 0x6AD02AC Offset: 0x6ACC2AC VA: 0x6AD02AC
+	private bool IsUnlockableBoost(int boost, List<int> playableBoosts) { }
+
+	// RVA: 0x6AD00C8 Offset: 0x6ACC0C8 VA: 0x6AD00C8
+	private List<BoostModeConfig> GetBoostConfigsForLevel() { }
+
+	// RVA: 0x6AD0490 Offset: 0x6ACC490 VA: 0x6AD0490
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6AD053C Offset: 0x6ACC53C VA: 0x6AD053C
+	private bool <GetUnlockableBoosts>b__16_0(int boost) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6AD0544 Offset: 0x6ACC544 VA: 0x6AD0544
+	private bool <GetBoostConfigsForLevel>b__27_0(BoostModeConfig boostConfig) { }
+}
+

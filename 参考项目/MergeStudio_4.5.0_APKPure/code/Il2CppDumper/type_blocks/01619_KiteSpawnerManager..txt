@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+private struct KiteSpawnerManager.<Init>d__11 : IAsyncStateMachine // TypeDefIndex: 1619
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncUniTaskMethodBuilder <>t__builder; // 0x4
+	public KiteSpawnerManager <>4__this; // 0xC
+	public KiteModelBalanceConfig balanceConfig; // 0x10
+	private UniTask.Awaiter <>u__1; // 0x14
+
+	// Methods
+
+	// RVA: 0x18C4C40 Offset: 0x18C4C40 VA: 0x18C4C40 Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x18C5474 Offset: 0x18C5474 VA: 0x18C5474 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

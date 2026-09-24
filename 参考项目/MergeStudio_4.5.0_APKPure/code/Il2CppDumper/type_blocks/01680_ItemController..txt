@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+private struct ItemController.<ChangeModulesSortingData>d__160 : IAsyncStateMachine // TypeDefIndex: 1680
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncUniTaskVoidMethodBuilder <>t__builder; // 0x4
+	public ItemController <>4__this; // 0x8
+	public SortingData sortingData; // 0xC
+	private YieldAwaitable.Awaiter <>u__1; // 0x10
+
+	// Methods
+
+	// RVA: 0x18CDBDC Offset: 0x18CDBDC VA: 0x18CDBDC Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x18CDE30 Offset: 0x18CDE30 VA: 0x18CDE30 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

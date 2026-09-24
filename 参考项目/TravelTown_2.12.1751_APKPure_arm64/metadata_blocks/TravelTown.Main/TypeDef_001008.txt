@@ -1,0 +1,18 @@
+// Namespace: MergeEngine.ECS.Components
+public class CounterComponent : ComponentBase // TypeDefIndex: 1008
+{
+	// Fields
+	private Dictionary<int, int> _counters; // 0x20
+
+	// Methods
+
+	// RVA: 0x68F707C Offset: 0x68F307C VA: 0x68F707C
+	public void .ctor(Entity entity) { }
+
+	// RVA: 0x68F7148 Offset: 0x68F3148 VA: 0x68F7148
+	public void Increment(int id = 0) { }
+
+	// RVA: 0x68F7264 Offset: 0x68F3264 VA: 0x68F7264
+	public int GetCounter(int id = 0) { }
+}
+

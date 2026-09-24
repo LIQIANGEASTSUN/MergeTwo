@@ -1,0 +1,16 @@
+// Namespace: MergeEngine.Configuration.Definitions
+[JsonConverter(typeof(StringEnumConverter))]
+[Serializable]
+public enum RewardDestinationType // TypeDefIndex: 1327
+{
+	// Fields
+	public int value__; // 0x0
+	public const RewardDestinationType None = 0;
+	[EnumMember(Value = "Event")]
+	public const RewardDestinationType Event = 1;
+	[EnumMember(Value = "Core")]
+	public const RewardDestinationType Core = 2;
+	[EnumMember(Value = "Default")]
+	public const RewardDestinationType Default = 3;
+}
+

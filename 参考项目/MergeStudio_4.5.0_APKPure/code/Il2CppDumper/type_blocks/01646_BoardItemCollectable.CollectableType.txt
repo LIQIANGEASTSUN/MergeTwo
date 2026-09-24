@@ -1,0 +1,14 @@
+// Namespace: 
+public enum BoardItemCollectable.CollectableType // TypeDefIndex: 1646
+{
+	// Fields
+	public int value__; // 0x0
+	public const BoardItemCollectable.CollectableType Gem = 0;
+	public const BoardItemCollectable.CollectableType Coin = 1;
+	public const BoardItemCollectable.CollectableType Energy = 2;
+	public const BoardItemCollectable.CollectableType SeasonPoint = 3;
+	public const BoardItemCollectable.CollectableType RecurringEvent = 4;
+	public const BoardItemCollectable.CollectableType BoardEventPoint = 5;
+	public const BoardItemCollectable.CollectableType XP = 6;
+}
+

@@ -1,0 +1,21 @@
+// Namespace: MergeEngine.ECS.Components
+[Usage(4, Inherited = False, AllowMultiple = False)]
+public class CacheAsAttribute : Attribute // TypeDefIndex: 1005
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly Type[] <Types>k__BackingField; // 0x10
+
+	// Properties
+	public Type[] Types { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x67A3340 Offset: 0x679F340 VA: 0x67A3340
+	public Type[] get_Types() { }
+
+	// RVA: 0x67A3348 Offset: 0x679F348 VA: 0x67A3348
+	public void .ctor(Type[] types) { }
+}
+

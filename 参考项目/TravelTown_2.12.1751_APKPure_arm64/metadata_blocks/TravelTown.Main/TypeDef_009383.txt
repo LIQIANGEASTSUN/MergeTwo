@@ -1,0 +1,34 @@
+// Namespace: Merger.Game.Signal
+public class ItemsStackingSignal // TypeDefIndex: 9383
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly BoardItemPosition <Position>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly int <StackSizeAdded>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private readonly int <TotalStackSize>k__BackingField; // 0x1C
+
+	// Properties
+	public BoardItemPosition Position { get; }
+	public int StackSizeAdded { get; }
+	public int TotalStackSize { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x676BB88 Offset: 0x6767B88 VA: 0x676BB88
+	public BoardItemPosition get_Position() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676BB90 Offset: 0x6767B90 VA: 0x676BB90
+	public int get_StackSizeAdded() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676BB98 Offset: 0x6767B98 VA: 0x676BB98
+	public int get_TotalStackSize() { }
+
+	// RVA: 0x676BBA0 Offset: 0x6767BA0 VA: 0x676BBA0
+	public void .ctor(BoardItemPosition position, int stackSizeAdded, int totalStackSize) { }
+}
+

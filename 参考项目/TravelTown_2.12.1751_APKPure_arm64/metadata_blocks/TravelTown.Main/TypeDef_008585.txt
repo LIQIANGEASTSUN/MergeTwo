@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardView.<>c__DisplayClass99_0 // TypeDefIndex: 8585
+{
+	// Fields
+	public IBoardItemView itemView; // 0x10
+	public BoardView <>4__this; // 0x18
+
+	// Methods
+
+	// RVA: 0x6692878 Offset: 0x668E878 VA: 0x6692878
+	public void .ctor() { }
+
+	// RVA: 0x669A8DC Offset: 0x66968DC VA: 0x669A8DC
+	internal void <OnRewardsFlyAnimationFinishedSignal>b__0() { }
+}
+

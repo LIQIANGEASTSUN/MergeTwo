@@ -1,0 +1,55 @@
+// Namespace: MergeEngine.ECS.Systems.Board
+public class ItemCountSystem : SystemBase // TypeDefIndex: 929
+{
+	// Fields
+	[InjectComponent]
+	private BoardItemCountComponent _boardItemCountComponent; // 0x40
+	[InjectComponent]
+	private InventoryItemCountComponent _inventoryItemCountComponent; // 0x48
+	private Dictionary<IMergeItem, int> _itemCounts; // 0x50
+	private Dictionary<IMergeItem, int> _temporaryItemCounts; // 0x58
+	[CompilerGenerated]
+	private Action<IMergeItem, int> ItemCountChanged; // 0x60
+	[CompilerGenerated]
+	private Action<IMergeItem, int> ItemCountIncreased; // 0x68
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x666CF08 Offset: 0x6668F08 VA: 0x666CF08
+	public void add_ItemCountChanged(Action<IMergeItem, int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x666CFB8 Offset: 0x6668FB8 VA: 0x666CFB8
+	public void remove_ItemCountChanged(Action<IMergeItem, int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x666D068 Offset: 0x6669068 VA: 0x666D068
+	public void add_ItemCountIncreased(Action<IMergeItem, int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x666D118 Offset: 0x6669118 VA: 0x666D118
+	public void remove_ItemCountIncreased(Action<IMergeItem, int> value) { }
+
+	// RVA: 0x666D1C8 Offset: 0x66691C8 VA: 0x666D1C8 Slot: 6
+	protected override void InitializeSystem() { }
+
+	// RVA: 0x666D28C Offset: 0x666928C VA: 0x666D28C Slot: 7
+	protected override void DisposeSystem() { }
+
+	// RVA: 0x666D350 Offset: 0x6669350 VA: 0x666D350
+	private void OnItemCountChanged(IMergeItem mergeItem) { }
+
+	// RVA: 0x666D4C0 Offset: 0x66694C0 VA: 0x666D4C0
+	private void TryInvokeItemCountChanged(IMergeItem mergeItem) { }
+
+	// RVA: 0x666D5C0 Offset: 0x66695C0 VA: 0x666D5C0
+	public int GetItemCount(IMergeItem mergeItem) { }
+
+	// RVA: 0x666D630 Offset: 0x6669630 VA: 0x666D630
+	public int GetItemCountById(string itemId) { }
+
+	// RVA: 0x666D734 Offset: 0x6669734 VA: 0x666D734
+	public void .ctor() { }
+}
+

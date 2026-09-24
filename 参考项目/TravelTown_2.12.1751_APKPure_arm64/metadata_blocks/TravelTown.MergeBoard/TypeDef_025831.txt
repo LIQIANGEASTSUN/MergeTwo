@@ -1,0 +1,21 @@
+// Namespace: Merger.MergeBoard.Logic
+public interface IToolSpawnHandler // TypeDefIndex: 25831
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract PlayerResourceEnum GraphToResource(IMergeGraphItem graph);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract IMergeGraphItem ResourceToGraph(PlayerResourceEnum resource);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract IMergeItem GetToolToSpawn(Dictionary<PlayerResourceEnum, ToolProgressionData> toolsProgressionData, List<WeightedTool> availableToolsToSpawn, List<WeightedToolLevel> toolLevelWeights);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract Dictionary<PlayerResourceEnum, ToolProgressionData> GetToolProgressionData(IEnumerable<string> unlockedItemsOnBoard);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract int CalculateMergeValue(int itemLevel);
+}
+

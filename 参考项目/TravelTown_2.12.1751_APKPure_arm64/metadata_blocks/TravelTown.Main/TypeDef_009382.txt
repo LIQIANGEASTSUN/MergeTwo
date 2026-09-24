@@ -1,0 +1,88 @@
+// Namespace: Merger.Game.Signal
+[SoundBoundSignal("Items Merged")]
+public class ItemsMergedSignal : ISpecificSound // TypeDefIndex: 9382
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly IMergeItem <Item>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly IMergeItem <SecondItem>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private readonly IMergeItem <CreatedItem>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private readonly IMergeItem <SpawnedResource>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private readonly bool <WasBubbleCreated>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private readonly bool <AnyItemLocked>k__BackingField; // 0x31
+	[CompilerGenerated]
+	private readonly int <Level>k__BackingField; // 0x34
+	[CompilerGenerated]
+	private readonly int <FreeTiles>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private readonly string <ActionId>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private readonly BoardItemPosition <CreatedItemPosition>k__BackingField; // 0x48
+
+	// Properties
+	public IMergeItem Item { get; }
+	public IMergeItem SecondItem { get; }
+	public IMergeItem CreatedItem { get; }
+	[CanBeNull]
+	public IMergeItem SpawnedResource { get; }
+	public bool WasBubbleCreated { get; }
+	public bool AnyItemLocked { get; }
+	public int Level { get; }
+	public int FreeTiles { get; }
+	public string ActionId { get; }
+	public BoardItemPosition CreatedItemPosition { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x676BA34 Offset: 0x6767A34 VA: 0x676BA34
+	public IMergeItem get_Item() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676BA3C Offset: 0x6767A3C VA: 0x676BA3C
+	public IMergeItem get_SecondItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676BA44 Offset: 0x6767A44 VA: 0x676BA44
+	public IMergeItem get_CreatedItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676BA4C Offset: 0x6767A4C VA: 0x676BA4C
+	public IMergeItem get_SpawnedResource() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676BA54 Offset: 0x6767A54 VA: 0x676BA54
+	public bool get_WasBubbleCreated() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676BA5C Offset: 0x6767A5C VA: 0x676BA5C
+	public bool get_AnyItemLocked() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676BA64 Offset: 0x6767A64 VA: 0x676BA64
+	public int get_Level() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676BA6C Offset: 0x6767A6C VA: 0x676BA6C
+	public int get_FreeTiles() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676BA74 Offset: 0x6767A74 VA: 0x676BA74
+	public string get_ActionId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676BA7C Offset: 0x6767A7C VA: 0x676BA7C
+	public BoardItemPosition get_CreatedItemPosition() { }
+
+	// RVA: 0x676BA84 Offset: 0x6767A84 VA: 0x676BA84
+	public void .ctor(IMergeItem item, IMergeItem secondMergeItem, IMergeItem createdItem, IMergeItem spawnedResource, bool wasBubbleCreated, bool anyItemLocked, int level, int freeTiles, string actionId, BoardItemPosition createdItemPosition) { }
+
+	// RVA: 0x676BB48 Offset: 0x6767B48 VA: 0x676BB48 Slot: 4
+	public SoundArguments GetSoundArguments() { }
+}
+

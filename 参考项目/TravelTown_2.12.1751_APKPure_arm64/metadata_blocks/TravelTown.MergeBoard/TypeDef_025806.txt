@@ -1,0 +1,27 @@
+// Namespace: Merger.MergeBoard.Models
+public interface IItemsDiscoveryModel : IPlayerItemsCollectionModel // TypeDefIndex: 25806
+{
+	// Properties
+	public abstract ObservableList<string> RewardPendingItemIds { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract ObservableList<string> get_RewardPendingItemIds();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract CollectionBookStickerState GetItemState(string id);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void OverrideItemsDiscoveryState(CollectionStateResponse state);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void MarkItemRewardCollected(IMergeItem item);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract bool IsItemRewardCollected(string id);
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract bool IsItemRewardPending(string id);
+}
+

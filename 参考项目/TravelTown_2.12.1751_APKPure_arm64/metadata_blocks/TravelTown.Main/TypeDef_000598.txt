@@ -1,0 +1,19 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardSystemUtil.<>c__DisplayClass0_0 // TypeDefIndex: 598
+{
+	// Fields
+	public BoardSystem boardSystem; // 0x10
+	public BoardItemPosition position; // 0x18
+	public BoardItemPosition fromPosition; // 0x20
+	public float duration; // 0x28
+
+	// Methods
+
+	// RVA: 0x626F8E8 Offset: 0x626B8E8 VA: 0x626F8E8
+	public void .ctor() { }
+
+	// RVA: 0x626F8F0 Offset: 0x626B8F0 VA: 0x626F8F0
+	internal void <SlideItemInOnInteractionCostDeducted>g__SlideItem|0() { }
+}
+

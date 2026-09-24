@@ -1,0 +1,9 @@
+// Namespace: MergeEngine.Configuration.Definitions
+[Serializable]
+public struct WeightedTool // TypeDefIndex: 1336
+{
+	// Fields
+	public int Weight; // 0x0
+	public PlayerResourceEnum ToolResource; // 0x4
+}
+

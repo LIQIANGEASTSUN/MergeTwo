@@ -1,0 +1,13 @@
+// Namespace: Framework.Core.Services.Backend.Remote.Payloads
+[Serializable]
+public class BackendState // TypeDefIndex: 10943
+{
+	// Fields
+	public long Timestamp; // 0x10
+
+	// Methods
+
+	// RVA: 0x6916DE8 Offset: 0x6912DE8 VA: 0x6916DE8
+	public void .ctor() { }
+}
+

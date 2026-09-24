@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class InteractionUtil.<>c__DisplayClass0_0 // TypeDefIndex: 629
+{
+	// Fields
+	public BoardItemCountComponent boardItemCountComponent; // 0x10
+
+	// Methods
+
+	// RVA: 0x6277F54 Offset: 0x6273F54 VA: 0x6277F54
+	public void .ctor() { }
+
+	// RVA: 0x6278920 Offset: 0x6274920 VA: 0x6278920
+	internal bool <GetMissingItemsNames>b__0(ItemMultiple itemMultiple) { }
+}
+

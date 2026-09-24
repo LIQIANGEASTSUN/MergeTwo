@@ -1,0 +1,47 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class ProducerTimerConfig // TypeDefIndex: 1443
+{
+	// Fields
+	[JsonIgnore]
+	private int _duration; // 0x10
+	[JsonIgnore]
+	private ProducerTimerTrigger _trigger; // 0x14
+	[JsonIgnore]
+	private string _triggerString; // 0x18
+
+	// Properties
+	[JsonIgnore]
+	public ProducerTimerTrigger Trigger { get; }
+	[JsonProperty("Duration")]
+	public int Duration { get; set; }
+	[JsonProperty("Trigger")]
+	public string TriggerString { get; set; }
+
+	// Methods
+
+	// RVA: 0x6010454 Offset: 0x600C454 VA: 0x6010454
+	public ProducerTimerTrigger get_Trigger() { }
+
+	// RVA: 0x601045C Offset: 0x600C45C VA: 0x601045C
+	public int get_Duration() { }
+
+	// RVA: 0x6010464 Offset: 0x600C464 VA: 0x6010464
+	private void set_Duration(int value) { }
+
+	// RVA: 0x601046C Offset: 0x600C46C VA: 0x601046C
+	public string get_TriggerString() { }
+
+	// RVA: 0x6010474 Offset: 0x600C474 VA: 0x6010474
+	private void set_TriggerString(string value) { }
+
+	// RVA: 0x601051C Offset: 0x600C51C VA: 0x601051C
+	public void .ctor() { }
+
+	// RVA: 0x6010524 Offset: 0x600C524 VA: 0x6010524
+	public void .ctor(ProducerTimerConfig other) { }
+
+	// RVA: 0x6010564 Offset: 0x600C564 VA: 0x6010564
+	public void .ctor(int duration, ProducerTimerTrigger trigger, string triggerString) { }
+}
+

@@ -1,0 +1,4 @@
+// Namespace: 
+public struct TaskEvent.TaskDoneBoardTaskItemDisappearStarted : IEvent // TypeDefIndex: 2005
+{}
+

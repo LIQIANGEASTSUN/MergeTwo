@@ -1,0 +1,9 @@
+// Namespace: Merger.MergeBoard.Factories
+public interface IFeedingCombinationConsumedItemSnapshotFactory // TypeDefIndex: 25897
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract FeedingCombinationConsumedItemSnapshot CreateFeedingCombinationConsumedItemSnapshot(Entity entity);
+}
+

@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardSystem.<>c__DisplayClass49_0 // TypeDefIndex: 914
+{
+	// Fields
+	public BoardItemPosition position1; // 0x10
+	public BoardSystem <>4__this; // 0x18
+
+	// Methods
+
+	// RVA: 0x666B7AC Offset: 0x66677AC VA: 0x666B7AC
+	public void .ctor() { }
+
+	// RVA: 0x666BC30 Offset: 0x6667C30 VA: 0x666BC30
+	internal void <CreateBoardDistanceLookup>b__2(BoardItemPosition position2) { }
+}
+

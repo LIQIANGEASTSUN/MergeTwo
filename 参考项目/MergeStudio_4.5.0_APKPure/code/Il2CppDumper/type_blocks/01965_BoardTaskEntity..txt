@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardTaskEntity.<>c__DisplayClass100_0 // TypeDefIndex: 1965
+{
+	// Fields
+	public BoardEntity boardEntity; // 0x8
+
+	// Methods
+
+	// RVA: 0x19479F4 Offset: 0x19479F4 VA: 0x19479F4
+	public void .ctor() { }
+
+	// RVA: 0x1947CDC Offset: 0x1947CDC VA: 0x1947CDC
+	internal bool <GetReadyToDoneTasks>b__0(BoardTaskItem task) { }
+}
+

@@ -1,0 +1,9 @@
+// Namespace: Merger.MergeBoard.Data
+public enum ToolSpawnPriorityStrategyEnum // TypeDefIndex: 25933
+{
+	// Fields
+	public int value__; // 0x0
+	public const ToolSpawnPriorityStrategyEnum EncourageVariety = 0;
+	public const ToolSpawnPriorityStrategyEnum EncourageCompletion = 1;
+}
+

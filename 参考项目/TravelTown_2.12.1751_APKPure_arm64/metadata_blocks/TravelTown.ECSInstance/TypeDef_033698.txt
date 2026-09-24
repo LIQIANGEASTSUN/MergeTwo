@@ -1,0 +1,1099 @@
+// Namespace: 
+public struct QueryExtensions.QueryBuilder<T1> // TypeDefIndex: 33698
+{
+	// Fields
+	private IEnumerable<Entity> _source; // 0x0
+	private Func<T1, bool> _predicate; // 0x0
+	private readonly Entities.MatchDelegate<T1> _matcher; // 0x0
+	private readonly Entities.ExcludeDelegate _exclude; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor(Entities.MatchDelegate<T1> matcher, Entities.ExcludeDelegate exclude) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4385B18 Offset: 0x4381B18 VA: 0x4385B18
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent>>..ctor
+	|
+	|-RVA: 0x4386128 Offset: 0x4382128 VA: 0x4386128
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BornComponent>>..ctor
+	|
+	|-RVA: 0x4386738 Offset: 0x4382738 VA: 0x4386738
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, DeadComponent>>..ctor
+	|
+	|-RVA: 0x4386D48 Offset: 0x4382D48 VA: 0x4386D48
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent>>..ctor
+	|
+	|-RVA: 0x43873D4 Offset: 0x43833D4 VA: 0x43873D4
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ItemMovedComponent>>..ctor
+	|
+	|-RVA: 0x43879E4 Offset: 0x43839E4 VA: 0x43879E4
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeCycleComponent>>..ctor
+	|
+	|-RVA: 0x4388064 Offset: 0x4384064 VA: 0x4388064
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeLockComponent>>..ctor
+	|
+	|-RVA: 0x43886B4 Offset: 0x43846B4 VA: 0x43886B4
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, BoxComponent>>..ctor
+	|
+	|-RVA: 0x4388CD4 Offset: 0x4384CD4 VA: 0x4388CD4
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent>>..ctor
+	|
+	|-RVA: 0x438932C Offset: 0x438532C VA: 0x438932C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, MergeComponent>>..ctor
+	|
+	|-RVA: 0x438994C Offset: 0x438594C VA: 0x438994C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, TimeCycleComponent>>..ctor
+	|
+	|-RVA: 0x4389FBC Offset: 0x4385FBC VA: 0x4389FBC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, TimeLockComponent>>..ctor
+	|
+	|-RVA: 0x438A648 Offset: 0x4386648 VA: 0x438A648
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BornComponent, IdComponent>>..ctor
+	|
+	|-RVA: 0x438ACA0 Offset: 0x4386CA0 VA: 0x438ACA0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, CollectableComponent, IdComponent>>..ctor
+	|
+	|-RVA: 0x438B310 Offset: 0x4387310 VA: 0x438B310
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, BoardTilePositionComponent>>..ctor
+	|
+	|-RVA: 0x438B968 Offset: 0x4387968 VA: 0x438B968
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, InteractionComponent, BoardTilePositionComponent>>..ctor
+	|
+	|-RVA: 0x438BFF4 Offset: 0x4387FF4 VA: 0x438BFF4
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, PendingInteractionComponent, InteractionComponent>>..ctor
+	|
+	|-RVA: 0x438C64C Offset: 0x438864C VA: 0x438C64C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent, InteractionComponent>>..ctor
+	|
+	|-RVA: 0x438CCCC Offset: 0x4388CCC VA: 0x438CCCC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ItemMovedComponent, IdComponent>>..ctor
+	|
+	|-RVA: 0x438D340 Offset: 0x4389340 VA: 0x438D340
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, MergeComponent, IdComponent>>..ctor
+	|
+	|-RVA: 0x438D9B0 Offset: 0x43899B0 VA: 0x438D9B0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, CollectableComponent, IdComponent, BornComponent>>..ctor
+	|
+	|-RVA: 0x438E030 Offset: 0x438A030 VA: 0x438E030
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, DeadComponent, ItemConsumedComponent, IdComponent>>..ctor
+	|
+	|-RVA: 0x438E6A0 Offset: 0x438A6A0 VA: 0x438E6A0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, DeadComponent>>..ctor
+	|
+	|-RVA: 0x438ECF8 Offset: 0x438ACF8 VA: 0x438ECF8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, TimeLimitedActivationComponent, TimeDurationComponent>>..ctor
+	|
+	|-RVA: 0x438F388 Offset: 0x438B388 VA: 0x438F388
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, FeedingCombinationComponent, DeadComponent, BoardTilePositionComponent>>..ctor
+	|
+	|-RVA: 0x438F9D8 Offset: 0x438B9D8 VA: 0x438F9D8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, DeadComponent, BoardTilePositionComponent>>..ctor
+	|
+	|-RVA: 0x4390030 Offset: 0x438C030 VA: 0x4390030
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, LockComponent, BoxComponent>>..ctor
+	|
+	|-RVA: 0x43906A0 Offset: 0x438C6A0 VA: 0x43906A0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ResourceConsumedComponent, InteractionComponent, BoardTilePositionComponent>>..ctor
+	|
+	|-RVA: 0x4390CF8 Offset: 0x438CCF8 VA: 0x4390CF8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeDurationComponent, IdComponent, BoardTilePositionComponent>>..ctor
+	|
+	|-RVA: 0x4391368 Offset: 0x438D368 VA: 0x4391368
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeLockComponent, BoardTilePositionComponent, IdComponent>>..ctor
+	|
+	|-RVA: 0x43919E8 Offset: 0x438D9E8 VA: 0x43919E8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, BornComponent, IdComponent, ItemMergedComponent>>..ctor
+	|
+	|-RVA: 0x4392058 Offset: 0x438E058 VA: 0x4392058
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent, BornComponent, ItemMergedComponent>>..ctor
+	|
+	|-RVA: 0x43926C8 Offset: 0x438E6C8 VA: 0x43926C8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent, DynamicItemConfigComponent, PendingInteractionComponent>>..ctor
+	|
+	|-RVA: 0x4392D48 Offset: 0x438ED48 VA: 0x4392D48
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, MergeComponent, IdComponent, PendingItemsCombinationComponent>>..ctor
+	|
+	|-RVA: 0x43933C8 Offset: 0x438F3C8 VA: 0x43933C8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, FeedingCombinationComponent, InteractionComponent>>..ctor
+	|
+	|-RVA: 0x4393A38 Offset: 0x438FA38 VA: 0x4393A38
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, InteractionComponent>>..ctor
+	|
+	|-RVA: 0x43940B8 Offset: 0x43900B8 VA: 0x43940B8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ToolSpawningComponent, PendingInteractionComponent, InteractionComponent>>..ctor
+	|
+	|-RVA: 0x4394738 Offset: 0x4390738 VA: 0x4394738
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>>..ctor
+	|
+	|-RVA: 0x4394DB8 Offset: 0x4390DB8 VA: 0x4394DB8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, TimeDurationComponent, TimeLimitedActivationComponent>>..ctor
+	|
+	|-RVA: 0x4395438 Offset: 0x4391438 VA: 0x4395438
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, BoardTilePositionComponent, ImmediateToolComponent, PendingInteractionComponent>>..ctor
+	|
+	|-RVA: 0x4395AB8 Offset: 0x4391AB8 VA: 0x4395AB8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, InteractionComponent, BoardTilePositionComponent, ProducerComponent>>..ctor
+	|
+	|-RVA: 0x4396138 Offset: 0x4392138 VA: 0x4396138
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, CollectableComponent, IdComponent, PendingInteractionComponent, InteractionComponent>>..ctor
+	|
+	|-RVA: 0x43967B4 Offset: 0x43927B4 VA: 0x43967B4
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, PendingInteractionComponent, InteractionComponent>>..ctor
+	|
+	|-RVA: 0x4396E38 Offset: 0x4392E38 VA: 0x4396E38
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ChargeableComponent, ExpendableComponent, BoardTilePositionComponent, IdComponent, PendingInteractionComponent>>..ctor
+	|
+	|-RVA: 0x43974B8 Offset: 0x43934B8 VA: 0x43974B8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent, PendingInteractionComponent>>..ctor
+	|
+	|-RVA: 0x4397B38 Offset: 0x4393B38 VA: 0x4397B38
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, SpawnerComponent, TimeCycleComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>>..ctor
+	|
+	|-RVA: 0x43981B4 Offset: 0x43941B4 VA: 0x43981B4
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, FeedingCombinationComponent, IdComponent, InteractionComponent, ProducerComponent, TimeCycleComponent>>..ctor
+	|
+	|-RVA: 0x4398830 Offset: 0x4394830 VA: 0x4398830
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, SpawnerComponent, IdComponent, TimeCycleComponent, InteractionComponent, PendingInteractionComponent>>..ctor
+	|
+	|-RVA: 0x4398EAC Offset: 0x4394EAC VA: 0x4398EAC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, IdComponent, InteractionComponent, PendingInteractionComponent, TimeLimitedActivationComponent, TimeDurationComponent>>..ctor
+	|
+	|-RVA: 0x4399528 Offset: 0x4395528 VA: 0x4399528
+	|-QueryExtensions.QueryBuilder<__Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	public QueryExtensions.QueryBuilder<T1> Where(Func<T1, bool> predicate) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4385B70 Offset: 0x4381B70 VA: 0x4385B70
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent>>.Where
+	|
+	|-RVA: 0x4386180 Offset: 0x4382180 VA: 0x4386180
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BornComponent>>.Where
+	|
+	|-RVA: 0x4386790 Offset: 0x4382790 VA: 0x4386790
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, DeadComponent>>.Where
+	|
+	|-RVA: 0x4386DA0 Offset: 0x4382DA0 VA: 0x4386DA0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent>>.Where
+	|
+	|-RVA: 0x438742C Offset: 0x438342C VA: 0x438742C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ItemMovedComponent>>.Where
+	|
+	|-RVA: 0x4387A3C Offset: 0x4383A3C VA: 0x4387A3C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeCycleComponent>>.Where
+	|
+	|-RVA: 0x43880BC Offset: 0x43840BC VA: 0x43880BC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeLockComponent>>.Where
+	|
+	|-RVA: 0x438870C Offset: 0x438470C VA: 0x438870C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, BoxComponent>>.Where
+	|
+	|-RVA: 0x4388D2C Offset: 0x4384D2C VA: 0x4388D2C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent>>.Where
+	|
+	|-RVA: 0x4389384 Offset: 0x4385384 VA: 0x4389384
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, MergeComponent>>.Where
+	|
+	|-RVA: 0x43899A4 Offset: 0x43859A4 VA: 0x43899A4
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, TimeCycleComponent>>.Where
+	|
+	|-RVA: 0x438A014 Offset: 0x4386014 VA: 0x438A014
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, TimeLockComponent>>.Where
+	|
+	|-RVA: 0x438A6A0 Offset: 0x43866A0 VA: 0x438A6A0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BornComponent, IdComponent>>.Where
+	|
+	|-RVA: 0x438ACF8 Offset: 0x4386CF8 VA: 0x438ACF8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, CollectableComponent, IdComponent>>.Where
+	|
+	|-RVA: 0x438B368 Offset: 0x4387368 VA: 0x438B368
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, BoardTilePositionComponent>>.Where
+	|
+	|-RVA: 0x438B9C0 Offset: 0x43879C0 VA: 0x438B9C0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, InteractionComponent, BoardTilePositionComponent>>.Where
+	|
+	|-RVA: 0x438C04C Offset: 0x438804C VA: 0x438C04C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, PendingInteractionComponent, InteractionComponent>>.Where
+	|
+	|-RVA: 0x438C6A4 Offset: 0x43886A4 VA: 0x438C6A4
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent, InteractionComponent>>.Where
+	|
+	|-RVA: 0x438CD24 Offset: 0x4388D24 VA: 0x438CD24
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ItemMovedComponent, IdComponent>>.Where
+	|
+	|-RVA: 0x438D398 Offset: 0x4389398 VA: 0x438D398
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, MergeComponent, IdComponent>>.Where
+	|
+	|-RVA: 0x438DA08 Offset: 0x4389A08 VA: 0x438DA08
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, CollectableComponent, IdComponent, BornComponent>>.Where
+	|
+	|-RVA: 0x438E088 Offset: 0x438A088 VA: 0x438E088
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, DeadComponent, ItemConsumedComponent, IdComponent>>.Where
+	|
+	|-RVA: 0x438E6F8 Offset: 0x438A6F8 VA: 0x438E6F8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, DeadComponent>>.Where
+	|
+	|-RVA: 0x438ED50 Offset: 0x438AD50 VA: 0x438ED50
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, TimeLimitedActivationComponent, TimeDurationComponent>>.Where
+	|
+	|-RVA: 0x438F3E0 Offset: 0x438B3E0 VA: 0x438F3E0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, FeedingCombinationComponent, DeadComponent, BoardTilePositionComponent>>.Where
+	|
+	|-RVA: 0x438FA30 Offset: 0x438BA30 VA: 0x438FA30
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, DeadComponent, BoardTilePositionComponent>>.Where
+	|
+	|-RVA: 0x4390088 Offset: 0x438C088 VA: 0x4390088
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, LockComponent, BoxComponent>>.Where
+	|
+	|-RVA: 0x43906F8 Offset: 0x438C6F8 VA: 0x43906F8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ResourceConsumedComponent, InteractionComponent, BoardTilePositionComponent>>.Where
+	|
+	|-RVA: 0x4390D50 Offset: 0x438CD50 VA: 0x4390D50
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeDurationComponent, IdComponent, BoardTilePositionComponent>>.Where
+	|
+	|-RVA: 0x43913C0 Offset: 0x438D3C0 VA: 0x43913C0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeLockComponent, BoardTilePositionComponent, IdComponent>>.Where
+	|
+	|-RVA: 0x4391A40 Offset: 0x438DA40 VA: 0x4391A40
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, BornComponent, IdComponent, ItemMergedComponent>>.Where
+	|
+	|-RVA: 0x43920B0 Offset: 0x438E0B0 VA: 0x43920B0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent, BornComponent, ItemMergedComponent>>.Where
+	|
+	|-RVA: 0x4392720 Offset: 0x438E720 VA: 0x4392720
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent, DynamicItemConfigComponent, PendingInteractionComponent>>.Where
+	|
+	|-RVA: 0x4392DA0 Offset: 0x438EDA0 VA: 0x4392DA0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, MergeComponent, IdComponent, PendingItemsCombinationComponent>>.Where
+	|
+	|-RVA: 0x4393420 Offset: 0x438F420 VA: 0x4393420
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, FeedingCombinationComponent, InteractionComponent>>.Where
+	|
+	|-RVA: 0x4393A90 Offset: 0x438FA90 VA: 0x4393A90
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, InteractionComponent>>.Where
+	|
+	|-RVA: 0x4394110 Offset: 0x4390110 VA: 0x4394110
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ToolSpawningComponent, PendingInteractionComponent, InteractionComponent>>.Where
+	|
+	|-RVA: 0x4394790 Offset: 0x4390790 VA: 0x4394790
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>>.Where
+	|
+	|-RVA: 0x4394E10 Offset: 0x4390E10 VA: 0x4394E10
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, TimeDurationComponent, TimeLimitedActivationComponent>>.Where
+	|
+	|-RVA: 0x4395490 Offset: 0x4391490 VA: 0x4395490
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, BoardTilePositionComponent, ImmediateToolComponent, PendingInteractionComponent>>.Where
+	|
+	|-RVA: 0x4395B10 Offset: 0x4391B10 VA: 0x4395B10
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, InteractionComponent, BoardTilePositionComponent, ProducerComponent>>.Where
+	|
+	|-RVA: 0x4396190 Offset: 0x4392190 VA: 0x4396190
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, CollectableComponent, IdComponent, PendingInteractionComponent, InteractionComponent>>.Where
+	|
+	|-RVA: 0x439680C Offset: 0x439280C VA: 0x439680C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, PendingInteractionComponent, InteractionComponent>>.Where
+	|
+	|-RVA: 0x4396E90 Offset: 0x4392E90 VA: 0x4396E90
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ChargeableComponent, ExpendableComponent, BoardTilePositionComponent, IdComponent, PendingInteractionComponent>>.Where
+	|
+	|-RVA: 0x4397510 Offset: 0x4393510 VA: 0x4397510
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent, PendingInteractionComponent>>.Where
+	|
+	|-RVA: 0x4397B90 Offset: 0x4393B90 VA: 0x4397B90
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, SpawnerComponent, TimeCycleComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>>.Where
+	|
+	|-RVA: 0x439820C Offset: 0x439420C VA: 0x439820C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, FeedingCombinationComponent, IdComponent, InteractionComponent, ProducerComponent, TimeCycleComponent>>.Where
+	|
+	|-RVA: 0x4398888 Offset: 0x4394888 VA: 0x4398888
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, SpawnerComponent, IdComponent, TimeCycleComponent, InteractionComponent, PendingInteractionComponent>>.Where
+	|
+	|-RVA: 0x4398F04 Offset: 0x4394F04 VA: 0x4398F04
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, IdComponent, InteractionComponent, PendingInteractionComponent, TimeLimitedActivationComponent, TimeDurationComponent>>.Where
+	|
+	|-RVA: 0x4399580 Offset: 0x4395580 VA: 0x4399580
+	|-QueryExtensions.QueryBuilder<__Il2CppFullySharedGenericType>.Where
+	*/
+
+	// RVA: -1 Offset: -1
+	public QueryExtensions.QueryBuilder<T1> From(IEnumerable<Entity> source) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4385B9C Offset: 0x4381B9C VA: 0x4385B9C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent>>.From
+	|
+	|-RVA: 0x43861AC Offset: 0x43821AC VA: 0x43861AC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BornComponent>>.From
+	|
+	|-RVA: 0x43867BC Offset: 0x43827BC VA: 0x43867BC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, DeadComponent>>.From
+	|
+	|-RVA: 0x4386DCC Offset: 0x4382DCC VA: 0x4386DCC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent>>.From
+	|
+	|-RVA: 0x4387458 Offset: 0x4383458 VA: 0x4387458
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ItemMovedComponent>>.From
+	|
+	|-RVA: 0x4387A68 Offset: 0x4383A68 VA: 0x4387A68
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeCycleComponent>>.From
+	|
+	|-RVA: 0x43880E8 Offset: 0x43840E8 VA: 0x43880E8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeLockComponent>>.From
+	|
+	|-RVA: 0x4388738 Offset: 0x4384738 VA: 0x4388738
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, BoxComponent>>.From
+	|
+	|-RVA: 0x4388D58 Offset: 0x4384D58 VA: 0x4388D58
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent>>.From
+	|
+	|-RVA: 0x43893B0 Offset: 0x43853B0 VA: 0x43893B0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, MergeComponent>>.From
+	|
+	|-RVA: 0x43899D0 Offset: 0x43859D0 VA: 0x43899D0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, TimeCycleComponent>>.From
+	|
+	|-RVA: 0x438A040 Offset: 0x4386040 VA: 0x438A040
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, TimeLockComponent>>.From
+	|
+	|-RVA: 0x438A6CC Offset: 0x43866CC VA: 0x438A6CC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BornComponent, IdComponent>>.From
+	|
+	|-RVA: 0x438AD24 Offset: 0x4386D24 VA: 0x438AD24
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, CollectableComponent, IdComponent>>.From
+	|
+	|-RVA: 0x438B394 Offset: 0x4387394 VA: 0x438B394
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, BoardTilePositionComponent>>.From
+	|
+	|-RVA: 0x438B9EC Offset: 0x43879EC VA: 0x438B9EC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, InteractionComponent, BoardTilePositionComponent>>.From
+	|
+	|-RVA: 0x438C078 Offset: 0x4388078 VA: 0x438C078
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, PendingInteractionComponent, InteractionComponent>>.From
+	|
+	|-RVA: 0x438C6D0 Offset: 0x43886D0 VA: 0x438C6D0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent, InteractionComponent>>.From
+	|
+	|-RVA: 0x438CD50 Offset: 0x4388D50 VA: 0x438CD50
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ItemMovedComponent, IdComponent>>.From
+	|
+	|-RVA: 0x438D3C4 Offset: 0x43893C4 VA: 0x438D3C4
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, MergeComponent, IdComponent>>.From
+	|
+	|-RVA: 0x438DA34 Offset: 0x4389A34 VA: 0x438DA34
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, CollectableComponent, IdComponent, BornComponent>>.From
+	|
+	|-RVA: 0x438E0B4 Offset: 0x438A0B4 VA: 0x438E0B4
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, DeadComponent, ItemConsumedComponent, IdComponent>>.From
+	|
+	|-RVA: 0x438E724 Offset: 0x438A724 VA: 0x438E724
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, DeadComponent>>.From
+	|
+	|-RVA: 0x438ED7C Offset: 0x438AD7C VA: 0x438ED7C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, TimeLimitedActivationComponent, TimeDurationComponent>>.From
+	|
+	|-RVA: 0x438F40C Offset: 0x438B40C VA: 0x438F40C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, FeedingCombinationComponent, DeadComponent, BoardTilePositionComponent>>.From
+	|
+	|-RVA: 0x438FA5C Offset: 0x438BA5C VA: 0x438FA5C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, DeadComponent, BoardTilePositionComponent>>.From
+	|
+	|-RVA: 0x43900B4 Offset: 0x438C0B4 VA: 0x43900B4
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, LockComponent, BoxComponent>>.From
+	|
+	|-RVA: 0x4390724 Offset: 0x438C724 VA: 0x4390724
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ResourceConsumedComponent, InteractionComponent, BoardTilePositionComponent>>.From
+	|
+	|-RVA: 0x4390D7C Offset: 0x438CD7C VA: 0x4390D7C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeDurationComponent, IdComponent, BoardTilePositionComponent>>.From
+	|
+	|-RVA: 0x43913EC Offset: 0x438D3EC VA: 0x43913EC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeLockComponent, BoardTilePositionComponent, IdComponent>>.From
+	|
+	|-RVA: 0x4391A6C Offset: 0x438DA6C VA: 0x4391A6C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, BornComponent, IdComponent, ItemMergedComponent>>.From
+	|
+	|-RVA: 0x43920DC Offset: 0x438E0DC VA: 0x43920DC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent, BornComponent, ItemMergedComponent>>.From
+	|
+	|-RVA: 0x439274C Offset: 0x438E74C VA: 0x439274C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent, DynamicItemConfigComponent, PendingInteractionComponent>>.From
+	|
+	|-RVA: 0x4392DCC Offset: 0x438EDCC VA: 0x4392DCC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, MergeComponent, IdComponent, PendingItemsCombinationComponent>>.From
+	|
+	|-RVA: 0x439344C Offset: 0x438F44C VA: 0x439344C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, FeedingCombinationComponent, InteractionComponent>>.From
+	|
+	|-RVA: 0x4393ABC Offset: 0x438FABC VA: 0x4393ABC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, InteractionComponent>>.From
+	|
+	|-RVA: 0x439413C Offset: 0x439013C VA: 0x439413C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ToolSpawningComponent, PendingInteractionComponent, InteractionComponent>>.From
+	|
+	|-RVA: 0x43947BC Offset: 0x43907BC VA: 0x43947BC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>>.From
+	|
+	|-RVA: 0x4394E3C Offset: 0x4390E3C VA: 0x4394E3C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, TimeDurationComponent, TimeLimitedActivationComponent>>.From
+	|
+	|-RVA: 0x43954BC Offset: 0x43914BC VA: 0x43954BC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, BoardTilePositionComponent, ImmediateToolComponent, PendingInteractionComponent>>.From
+	|
+	|-RVA: 0x4395B3C Offset: 0x4391B3C VA: 0x4395B3C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, InteractionComponent, BoardTilePositionComponent, ProducerComponent>>.From
+	|
+	|-RVA: 0x43961BC Offset: 0x43921BC VA: 0x43961BC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, CollectableComponent, IdComponent, PendingInteractionComponent, InteractionComponent>>.From
+	|
+	|-RVA: 0x4396838 Offset: 0x4392838 VA: 0x4396838
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, PendingInteractionComponent, InteractionComponent>>.From
+	|
+	|-RVA: 0x4396EBC Offset: 0x4392EBC VA: 0x4396EBC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ChargeableComponent, ExpendableComponent, BoardTilePositionComponent, IdComponent, PendingInteractionComponent>>.From
+	|
+	|-RVA: 0x439753C Offset: 0x439353C VA: 0x439753C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent, PendingInteractionComponent>>.From
+	|
+	|-RVA: 0x4397BBC Offset: 0x4393BBC VA: 0x4397BBC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, SpawnerComponent, TimeCycleComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>>.From
+	|
+	|-RVA: 0x4398238 Offset: 0x4394238 VA: 0x4398238
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, FeedingCombinationComponent, IdComponent, InteractionComponent, ProducerComponent, TimeCycleComponent>>.From
+	|
+	|-RVA: 0x43988B4 Offset: 0x43948B4 VA: 0x43988B4
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, SpawnerComponent, IdComponent, TimeCycleComponent, InteractionComponent, PendingInteractionComponent>>.From
+	|
+	|-RVA: 0x4398F30 Offset: 0x4394F30 VA: 0x4398F30
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, IdComponent, InteractionComponent, PendingInteractionComponent, TimeLimitedActivationComponent, TimeDurationComponent>>.From
+	|
+	|-RVA: 0x43995AC Offset: 0x43955AC VA: 0x43995AC
+	|-QueryExtensions.QueryBuilder<__Il2CppFullySharedGenericType>.From
+	*/
+
+	[IteratorStateMachine(typeof(QueryExtensions.QueryBuilder.<All>d__7<T1>))]
+	// RVA: -1 Offset: -1
+	public IEnumerable<T1> All() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4385BC8 Offset: 0x4381BC8 VA: 0x4385BC8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent>>.All
+	|
+	|-RVA: 0x43861D8 Offset: 0x43821D8 VA: 0x43861D8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BornComponent>>.All
+	|
+	|-RVA: 0x43867E8 Offset: 0x43827E8 VA: 0x43867E8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, DeadComponent>>.All
+	|
+	|-RVA: 0x4386DF8 Offset: 0x4382DF8 VA: 0x4386DF8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent>>.All
+	|
+	|-RVA: 0x4387484 Offset: 0x4383484 VA: 0x4387484
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ItemMovedComponent>>.All
+	|
+	|-RVA: 0x4387A94 Offset: 0x4383A94 VA: 0x4387A94
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeCycleComponent>>.All
+	|
+	|-RVA: 0x4388114 Offset: 0x4384114 VA: 0x4388114
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeLockComponent>>.All
+	|
+	|-RVA: 0x4388764 Offset: 0x4384764 VA: 0x4388764
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, BoxComponent>>.All
+	|
+	|-RVA: 0x4388D84 Offset: 0x4384D84 VA: 0x4388D84
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent>>.All
+	|
+	|-RVA: 0x43893DC Offset: 0x43853DC VA: 0x43893DC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, MergeComponent>>.All
+	|
+	|-RVA: 0x43899FC Offset: 0x43859FC VA: 0x43899FC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, TimeCycleComponent>>.All
+	|
+	|-RVA: 0x438A06C Offset: 0x438606C VA: 0x438A06C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, TimeLockComponent>>.All
+	|
+	|-RVA: 0x438A6F8 Offset: 0x43866F8 VA: 0x438A6F8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BornComponent, IdComponent>>.All
+	|
+	|-RVA: 0x438AD50 Offset: 0x4386D50 VA: 0x438AD50
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, CollectableComponent, IdComponent>>.All
+	|
+	|-RVA: 0x438B3C0 Offset: 0x43873C0 VA: 0x438B3C0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, BoardTilePositionComponent>>.All
+	|
+	|-RVA: 0x438BA18 Offset: 0x4387A18 VA: 0x438BA18
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, InteractionComponent, BoardTilePositionComponent>>.All
+	|
+	|-RVA: 0x438C0A4 Offset: 0x43880A4 VA: 0x438C0A4
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, PendingInteractionComponent, InteractionComponent>>.All
+	|
+	|-RVA: 0x438C6FC Offset: 0x43886FC VA: 0x438C6FC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent, InteractionComponent>>.All
+	|
+	|-RVA: 0x438CD7C Offset: 0x4388D7C VA: 0x438CD7C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ItemMovedComponent, IdComponent>>.All
+	|
+	|-RVA: 0x438D3F0 Offset: 0x43893F0 VA: 0x438D3F0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, MergeComponent, IdComponent>>.All
+	|
+	|-RVA: 0x438DA60 Offset: 0x4389A60 VA: 0x438DA60
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, CollectableComponent, IdComponent, BornComponent>>.All
+	|
+	|-RVA: 0x438E0E0 Offset: 0x438A0E0 VA: 0x438E0E0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, DeadComponent, ItemConsumedComponent, IdComponent>>.All
+	|
+	|-RVA: 0x438E750 Offset: 0x438A750 VA: 0x438E750
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, DeadComponent>>.All
+	|
+	|-RVA: 0x438EDA8 Offset: 0x438ADA8 VA: 0x438EDA8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, TimeLimitedActivationComponent, TimeDurationComponent>>.All
+	|
+	|-RVA: 0x438F438 Offset: 0x438B438 VA: 0x438F438
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, FeedingCombinationComponent, DeadComponent, BoardTilePositionComponent>>.All
+	|
+	|-RVA: 0x438FA88 Offset: 0x438BA88 VA: 0x438FA88
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, DeadComponent, BoardTilePositionComponent>>.All
+	|
+	|-RVA: 0x43900E0 Offset: 0x438C0E0 VA: 0x43900E0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, LockComponent, BoxComponent>>.All
+	|
+	|-RVA: 0x4390750 Offset: 0x438C750 VA: 0x4390750
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ResourceConsumedComponent, InteractionComponent, BoardTilePositionComponent>>.All
+	|
+	|-RVA: 0x4390DA8 Offset: 0x438CDA8 VA: 0x4390DA8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeDurationComponent, IdComponent, BoardTilePositionComponent>>.All
+	|
+	|-RVA: 0x4391418 Offset: 0x438D418 VA: 0x4391418
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeLockComponent, BoardTilePositionComponent, IdComponent>>.All
+	|
+	|-RVA: 0x4391A98 Offset: 0x438DA98 VA: 0x4391A98
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, BornComponent, IdComponent, ItemMergedComponent>>.All
+	|
+	|-RVA: 0x4392108 Offset: 0x438E108 VA: 0x4392108
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent, BornComponent, ItemMergedComponent>>.All
+	|
+	|-RVA: 0x4392778 Offset: 0x438E778 VA: 0x4392778
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent, DynamicItemConfigComponent, PendingInteractionComponent>>.All
+	|
+	|-RVA: 0x4392DF8 Offset: 0x438EDF8 VA: 0x4392DF8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, MergeComponent, IdComponent, PendingItemsCombinationComponent>>.All
+	|
+	|-RVA: 0x4393478 Offset: 0x438F478 VA: 0x4393478
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, FeedingCombinationComponent, InteractionComponent>>.All
+	|
+	|-RVA: 0x4393AE8 Offset: 0x438FAE8 VA: 0x4393AE8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, InteractionComponent>>.All
+	|
+	|-RVA: 0x4394168 Offset: 0x4390168 VA: 0x4394168
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ToolSpawningComponent, PendingInteractionComponent, InteractionComponent>>.All
+	|
+	|-RVA: 0x43947E8 Offset: 0x43907E8 VA: 0x43947E8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>>.All
+	|
+	|-RVA: 0x4394E68 Offset: 0x4390E68 VA: 0x4394E68
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, TimeDurationComponent, TimeLimitedActivationComponent>>.All
+	|
+	|-RVA: 0x43954E8 Offset: 0x43914E8 VA: 0x43954E8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, BoardTilePositionComponent, ImmediateToolComponent, PendingInteractionComponent>>.All
+	|
+	|-RVA: 0x4395B68 Offset: 0x4391B68 VA: 0x4395B68
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, InteractionComponent, BoardTilePositionComponent, ProducerComponent>>.All
+	|
+	|-RVA: 0x43961E8 Offset: 0x43921E8 VA: 0x43961E8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, CollectableComponent, IdComponent, PendingInteractionComponent, InteractionComponent>>.All
+	|
+	|-RVA: 0x4396864 Offset: 0x4392864 VA: 0x4396864
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, PendingInteractionComponent, InteractionComponent>>.All
+	|
+	|-RVA: 0x4396EE8 Offset: 0x4392EE8 VA: 0x4396EE8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ChargeableComponent, ExpendableComponent, BoardTilePositionComponent, IdComponent, PendingInteractionComponent>>.All
+	|
+	|-RVA: 0x4397568 Offset: 0x4393568 VA: 0x4397568
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent, PendingInteractionComponent>>.All
+	|
+	|-RVA: 0x4397BE8 Offset: 0x4393BE8 VA: 0x4397BE8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, SpawnerComponent, TimeCycleComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>>.All
+	|
+	|-RVA: 0x4398264 Offset: 0x4394264 VA: 0x4398264
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, FeedingCombinationComponent, IdComponent, InteractionComponent, ProducerComponent, TimeCycleComponent>>.All
+	|
+	|-RVA: 0x43988E0 Offset: 0x43948E0 VA: 0x43988E0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, SpawnerComponent, IdComponent, TimeCycleComponent, InteractionComponent, PendingInteractionComponent>>.All
+	|
+	|-RVA: 0x4398F5C Offset: 0x4394F5C VA: 0x4398F5C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, IdComponent, InteractionComponent, PendingInteractionComponent, TimeLimitedActivationComponent, TimeDurationComponent>>.All
+	|
+	|-RVA: 0x43995D8 Offset: 0x43955D8 VA: 0x43995D8
+	|-QueryExtensions.QueryBuilder<__Il2CppFullySharedGenericType>.All
+	*/
+
+	[IteratorStateMachine(typeof(QueryExtensions.QueryBuilder.<AllPairs>d__8<T1>))]
+	// RVA: -1 Offset: -1
+	public IEnumerable<ValueTuple<T1, T1>> AllPairs() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4385C74 Offset: 0x4381C74 VA: 0x4385C74
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent>>.AllPairs
+	|
+	|-RVA: 0x4386284 Offset: 0x4382284 VA: 0x4386284
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BornComponent>>.AllPairs
+	|
+	|-RVA: 0x4386894 Offset: 0x4382894 VA: 0x4386894
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, DeadComponent>>.AllPairs
+	|
+	|-RVA: 0x4386EA8 Offset: 0x4382EA8 VA: 0x4386EA8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent>>.AllPairs
+	|
+	|-RVA: 0x4387530 Offset: 0x4383530 VA: 0x4387530
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ItemMovedComponent>>.AllPairs
+	|
+	|-RVA: 0x4387B44 Offset: 0x4383B44 VA: 0x4387B44
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeCycleComponent>>.AllPairs
+	|
+	|-RVA: 0x43881C0 Offset: 0x43841C0 VA: 0x43881C0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeLockComponent>>.AllPairs
+	|
+	|-RVA: 0x4388810 Offset: 0x4384810 VA: 0x4388810
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, BoxComponent>>.AllPairs
+	|
+	|-RVA: 0x4388E30 Offset: 0x4384E30 VA: 0x4388E30
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent>>.AllPairs
+	|
+	|-RVA: 0x4389488 Offset: 0x4385488 VA: 0x4389488
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, MergeComponent>>.AllPairs
+	|
+	|-RVA: 0x4389AA8 Offset: 0x4385AA8 VA: 0x4389AA8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, TimeCycleComponent>>.AllPairs
+	|
+	|-RVA: 0x438A11C Offset: 0x438611C VA: 0x438A11C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, TimeLockComponent>>.AllPairs
+	|
+	|-RVA: 0x438A7A4 Offset: 0x43867A4 VA: 0x438A7A4
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BornComponent, IdComponent>>.AllPairs
+	|
+	|-RVA: 0x438ADFC Offset: 0x4386DFC VA: 0x438ADFC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, CollectableComponent, IdComponent>>.AllPairs
+	|
+	|-RVA: 0x438B46C Offset: 0x438746C VA: 0x438B46C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, BoardTilePositionComponent>>.AllPairs
+	|
+	|-RVA: 0x438BAC8 Offset: 0x4387AC8 VA: 0x438BAC8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, InteractionComponent, BoardTilePositionComponent>>.AllPairs
+	|
+	|-RVA: 0x438C150 Offset: 0x4388150 VA: 0x438C150
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, PendingInteractionComponent, InteractionComponent>>.AllPairs
+	|
+	|-RVA: 0x438C7AC Offset: 0x43887AC VA: 0x438C7AC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent, InteractionComponent>>.AllPairs
+	|
+	|-RVA: 0x438CE2C Offset: 0x4388E2C VA: 0x438CE2C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ItemMovedComponent, IdComponent>>.AllPairs
+	|
+	|-RVA: 0x438D49C Offset: 0x438949C VA: 0x438D49C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, MergeComponent, IdComponent>>.AllPairs
+	|
+	|-RVA: 0x438DB10 Offset: 0x4389B10 VA: 0x438DB10
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, CollectableComponent, IdComponent, BornComponent>>.AllPairs
+	|
+	|-RVA: 0x438E18C Offset: 0x438A18C VA: 0x438E18C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, DeadComponent, ItemConsumedComponent, IdComponent>>.AllPairs
+	|
+	|-RVA: 0x438E7FC Offset: 0x438A7FC VA: 0x438E7FC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, DeadComponent>>.AllPairs
+	|
+	|-RVA: 0x438EE58 Offset: 0x438AE58 VA: 0x438EE58
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, TimeLimitedActivationComponent, TimeDurationComponent>>.AllPairs
+	|
+	|-RVA: 0x438F4E8 Offset: 0x438B4E8 VA: 0x438F4E8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, FeedingCombinationComponent, DeadComponent, BoardTilePositionComponent>>.AllPairs
+	|
+	|-RVA: 0x438FB34 Offset: 0x438BB34 VA: 0x438FB34
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, DeadComponent, BoardTilePositionComponent>>.AllPairs
+	|
+	|-RVA: 0x439018C Offset: 0x438C18C VA: 0x439018C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, LockComponent, BoxComponent>>.AllPairs
+	|
+	|-RVA: 0x43907FC Offset: 0x438C7FC VA: 0x43907FC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ResourceConsumedComponent, InteractionComponent, BoardTilePositionComponent>>.AllPairs
+	|
+	|-RVA: 0x4390E54 Offset: 0x438CE54 VA: 0x4390E54
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeDurationComponent, IdComponent, BoardTilePositionComponent>>.AllPairs
+	|
+	|-RVA: 0x43914C8 Offset: 0x438D4C8 VA: 0x43914C8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeLockComponent, BoardTilePositionComponent, IdComponent>>.AllPairs
+	|
+	|-RVA: 0x4391B44 Offset: 0x438DB44 VA: 0x4391B44
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, BornComponent, IdComponent, ItemMergedComponent>>.AllPairs
+	|
+	|-RVA: 0x43921B4 Offset: 0x438E1B4 VA: 0x43921B4
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent, BornComponent, ItemMergedComponent>>.AllPairs
+	|
+	|-RVA: 0x4392828 Offset: 0x438E828 VA: 0x4392828
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent, DynamicItemConfigComponent, PendingInteractionComponent>>.AllPairs
+	|
+	|-RVA: 0x4392EA8 Offset: 0x438EEA8 VA: 0x4392EA8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, MergeComponent, IdComponent, PendingItemsCombinationComponent>>.AllPairs
+	|
+	|-RVA: 0x4393524 Offset: 0x438F524 VA: 0x4393524
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, FeedingCombinationComponent, InteractionComponent>>.AllPairs
+	|
+	|-RVA: 0x4393B98 Offset: 0x438FB98 VA: 0x4393B98
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, InteractionComponent>>.AllPairs
+	|
+	|-RVA: 0x4394218 Offset: 0x4390218 VA: 0x4394218
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ToolSpawningComponent, PendingInteractionComponent, InteractionComponent>>.AllPairs
+	|
+	|-RVA: 0x4394898 Offset: 0x4390898 VA: 0x4394898
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>>.AllPairs
+	|
+	|-RVA: 0x4394F14 Offset: 0x4390F14 VA: 0x4394F14
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, TimeDurationComponent, TimeLimitedActivationComponent>>.AllPairs
+	|
+	|-RVA: 0x4395598 Offset: 0x4391598 VA: 0x4395598
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, BoardTilePositionComponent, ImmediateToolComponent, PendingInteractionComponent>>.AllPairs
+	|
+	|-RVA: 0x4395C18 Offset: 0x4391C18 VA: 0x4395C18
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, InteractionComponent, BoardTilePositionComponent, ProducerComponent>>.AllPairs
+	|
+	|-RVA: 0x4396294 Offset: 0x4392294 VA: 0x4396294
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, CollectableComponent, IdComponent, PendingInteractionComponent, InteractionComponent>>.AllPairs
+	|
+	|-RVA: 0x4396918 Offset: 0x4392918 VA: 0x4396918
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, PendingInteractionComponent, InteractionComponent>>.AllPairs
+	|
+	|-RVA: 0x4396F98 Offset: 0x4392F98 VA: 0x4396F98
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ChargeableComponent, ExpendableComponent, BoardTilePositionComponent, IdComponent, PendingInteractionComponent>>.AllPairs
+	|
+	|-RVA: 0x4397618 Offset: 0x4393618 VA: 0x4397618
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent, PendingInteractionComponent>>.AllPairs
+	|
+	|-RVA: 0x4397C94 Offset: 0x4393C94 VA: 0x4397C94
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, SpawnerComponent, TimeCycleComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>>.AllPairs
+	|
+	|-RVA: 0x4398310 Offset: 0x4394310 VA: 0x4398310
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, FeedingCombinationComponent, IdComponent, InteractionComponent, ProducerComponent, TimeCycleComponent>>.AllPairs
+	|
+	|-RVA: 0x439898C Offset: 0x439498C VA: 0x439898C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, SpawnerComponent, IdComponent, TimeCycleComponent, InteractionComponent, PendingInteractionComponent>>.AllPairs
+	|
+	|-RVA: 0x4399008 Offset: 0x4395008 VA: 0x4399008
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, IdComponent, InteractionComponent, PendingInteractionComponent, TimeLimitedActivationComponent, TimeDurationComponent>>.AllPairs
+	|
+	|-RVA: 0x43996DC Offset: 0x43956DC VA: 0x43996DC
+	|-QueryExtensions.QueryBuilder<__Il2CppFullySharedGenericType>.AllPairs
+	*/
+
+	// RVA: -1 Offset: -1
+	public bool One(out T1 result) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4385D20 Offset: 0x4381D20 VA: 0x4385D20
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent>>.One
+	|
+	|-RVA: 0x4386330 Offset: 0x4382330 VA: 0x4386330
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BornComponent>>.One
+	|
+	|-RVA: 0x4386940 Offset: 0x4382940 VA: 0x4386940
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, DeadComponent>>.One
+	|
+	|-RVA: 0x4386F54 Offset: 0x4382F54 VA: 0x4386F54
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent>>.One
+	|
+	|-RVA: 0x43875DC Offset: 0x43835DC VA: 0x43875DC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ItemMovedComponent>>.One
+	|
+	|-RVA: 0x4387BF0 Offset: 0x4383BF0 VA: 0x4387BF0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeCycleComponent>>.One
+	|
+	|-RVA: 0x438826C Offset: 0x438426C VA: 0x438826C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeLockComponent>>.One
+	|
+	|-RVA: 0x43888BC Offset: 0x43848BC VA: 0x43888BC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, BoxComponent>>.One
+	|
+	|-RVA: 0x4388EDC Offset: 0x4384EDC VA: 0x4388EDC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent>>.One
+	|
+	|-RVA: 0x4389534 Offset: 0x4385534 VA: 0x4389534
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, MergeComponent>>.One
+	|
+	|-RVA: 0x4389B54 Offset: 0x4385B54 VA: 0x4389B54
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, TimeCycleComponent>>.One
+	|
+	|-RVA: 0x438A1C8 Offset: 0x43861C8 VA: 0x438A1C8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, TimeLockComponent>>.One
+	|
+	|-RVA: 0x438A850 Offset: 0x4386850 VA: 0x438A850
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BornComponent, IdComponent>>.One
+	|
+	|-RVA: 0x438AEA8 Offset: 0x4386EA8 VA: 0x438AEA8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, CollectableComponent, IdComponent>>.One
+	|
+	|-RVA: 0x438B518 Offset: 0x4387518 VA: 0x438B518
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, BoardTilePositionComponent>>.One
+	|
+	|-RVA: 0x438BB74 Offset: 0x4387B74 VA: 0x438BB74
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, InteractionComponent, BoardTilePositionComponent>>.One
+	|
+	|-RVA: 0x438C1FC Offset: 0x43881FC VA: 0x438C1FC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, PendingInteractionComponent, InteractionComponent>>.One
+	|
+	|-RVA: 0x438C858 Offset: 0x4388858 VA: 0x438C858
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent, InteractionComponent>>.One
+	|
+	|-RVA: 0x438CED8 Offset: 0x4388ED8 VA: 0x438CED8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ItemMovedComponent, IdComponent>>.One
+	|
+	|-RVA: 0x438D548 Offset: 0x4389548 VA: 0x438D548
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, MergeComponent, IdComponent>>.One
+	|
+	|-RVA: 0x438DBBC Offset: 0x4389BBC VA: 0x438DBBC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, CollectableComponent, IdComponent, BornComponent>>.One
+	|
+	|-RVA: 0x438E238 Offset: 0x438A238 VA: 0x438E238
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, DeadComponent, ItemConsumedComponent, IdComponent>>.One
+	|
+	|-RVA: 0x438E8A8 Offset: 0x438A8A8 VA: 0x438E8A8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, DeadComponent>>.One
+	|
+	|-RVA: 0x438EF04 Offset: 0x438AF04 VA: 0x438EF04
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, TimeLimitedActivationComponent, TimeDurationComponent>>.One
+	|
+	|-RVA: 0x438F594 Offset: 0x438B594 VA: 0x438F594
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, FeedingCombinationComponent, DeadComponent, BoardTilePositionComponent>>.One
+	|
+	|-RVA: 0x438FBE0 Offset: 0x438BBE0 VA: 0x438FBE0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, DeadComponent, BoardTilePositionComponent>>.One
+	|
+	|-RVA: 0x4390238 Offset: 0x438C238 VA: 0x4390238
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, LockComponent, BoxComponent>>.One
+	|
+	|-RVA: 0x43908A8 Offset: 0x438C8A8 VA: 0x43908A8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ResourceConsumedComponent, InteractionComponent, BoardTilePositionComponent>>.One
+	|
+	|-RVA: 0x4390F00 Offset: 0x438CF00 VA: 0x4390F00
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeDurationComponent, IdComponent, BoardTilePositionComponent>>.One
+	|
+	|-RVA: 0x4391574 Offset: 0x438D574 VA: 0x4391574
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeLockComponent, BoardTilePositionComponent, IdComponent>>.One
+	|
+	|-RVA: 0x4391BF0 Offset: 0x438DBF0 VA: 0x4391BF0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, BornComponent, IdComponent, ItemMergedComponent>>.One
+	|
+	|-RVA: 0x4392260 Offset: 0x438E260 VA: 0x4392260
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent, BornComponent, ItemMergedComponent>>.One
+	|
+	|-RVA: 0x43928D4 Offset: 0x438E8D4 VA: 0x43928D4
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent, DynamicItemConfigComponent, PendingInteractionComponent>>.One
+	|
+	|-RVA: 0x4392F54 Offset: 0x438EF54 VA: 0x4392F54
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, MergeComponent, IdComponent, PendingItemsCombinationComponent>>.One
+	|
+	|-RVA: 0x43935D0 Offset: 0x438F5D0 VA: 0x43935D0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, FeedingCombinationComponent, InteractionComponent>>.One
+	|
+	|-RVA: 0x4393C44 Offset: 0x438FC44 VA: 0x4393C44
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, InteractionComponent>>.One
+	|
+	|-RVA: 0x43942C4 Offset: 0x43902C4 VA: 0x43942C4
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ToolSpawningComponent, PendingInteractionComponent, InteractionComponent>>.One
+	|
+	|-RVA: 0x4394944 Offset: 0x4390944 VA: 0x4394944
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>>.One
+	|
+	|-RVA: 0x4394FC0 Offset: 0x4390FC0 VA: 0x4394FC0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, TimeDurationComponent, TimeLimitedActivationComponent>>.One
+	|
+	|-RVA: 0x4395644 Offset: 0x4391644 VA: 0x4395644
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, BoardTilePositionComponent, ImmediateToolComponent, PendingInteractionComponent>>.One
+	|
+	|-RVA: 0x4395CC4 Offset: 0x4391CC4 VA: 0x4395CC4
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, InteractionComponent, BoardTilePositionComponent, ProducerComponent>>.One
+	|
+	|-RVA: 0x4396340 Offset: 0x4392340 VA: 0x4396340
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, CollectableComponent, IdComponent, PendingInteractionComponent, InteractionComponent>>.One
+	|
+	|-RVA: 0x43969C4 Offset: 0x43929C4 VA: 0x43969C4
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, PendingInteractionComponent, InteractionComponent>>.One
+	|
+	|-RVA: 0x4397044 Offset: 0x4393044 VA: 0x4397044
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ChargeableComponent, ExpendableComponent, BoardTilePositionComponent, IdComponent, PendingInteractionComponent>>.One
+	|
+	|-RVA: 0x43976C4 Offset: 0x43936C4 VA: 0x43976C4
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent, PendingInteractionComponent>>.One
+	|
+	|-RVA: 0x4397D40 Offset: 0x4393D40 VA: 0x4397D40
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, SpawnerComponent, TimeCycleComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>>.One
+	|
+	|-RVA: 0x43983BC Offset: 0x43943BC VA: 0x43983BC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, FeedingCombinationComponent, IdComponent, InteractionComponent, ProducerComponent, TimeCycleComponent>>.One
+	|
+	|-RVA: 0x4398A38 Offset: 0x4394A38 VA: 0x4398A38
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, SpawnerComponent, IdComponent, TimeCycleComponent, InteractionComponent, PendingInteractionComponent>>.One
+	|
+	|-RVA: 0x43990B4 Offset: 0x43950B4 VA: 0x43990B4
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, IdComponent, InteractionComponent, PendingInteractionComponent, TimeLimitedActivationComponent, TimeDurationComponent>>.One
+	|
+	|-RVA: 0x43997E0 Offset: 0x43957E0 VA: 0x43997E0
+	|-QueryExtensions.QueryBuilder<__Il2CppFullySharedGenericType>.One
+	*/
+
+	// RVA: -1 Offset: -1
+	private bool CheckPredicate(T1 result) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x43860D0 Offset: 0x43820D0 VA: 0x43860D0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent>>.CheckPredicate
+	|
+	|-RVA: 0x43866E0 Offset: 0x43826E0 VA: 0x43866E0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BornComponent>>.CheckPredicate
+	|
+	|-RVA: 0x4386CF0 Offset: 0x4382CF0 VA: 0x4386CF0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, DeadComponent>>.CheckPredicate
+	|
+	|-RVA: 0x4387358 Offset: 0x4383358 VA: 0x4387358
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent>>.CheckPredicate
+	|
+	|-RVA: 0x438798C Offset: 0x438398C VA: 0x438798C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ItemMovedComponent>>.CheckPredicate
+	|
+	|-RVA: 0x4387FEC Offset: 0x4383FEC VA: 0x4387FEC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeCycleComponent>>.CheckPredicate
+	|
+	|-RVA: 0x4388648 Offset: 0x4384648 VA: 0x4388648
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeLockComponent>>.CheckPredicate
+	|
+	|-RVA: 0x4388C78 Offset: 0x4384C78 VA: 0x4388C78
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, BoxComponent>>.CheckPredicate
+	|
+	|-RVA: 0x43892C0 Offset: 0x43852C0 VA: 0x43892C0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent>>.CheckPredicate
+	|
+	|-RVA: 0x43898F0 Offset: 0x43858F0 VA: 0x43898F0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, MergeComponent>>.CheckPredicate
+	|
+	|-RVA: 0x4389F44 Offset: 0x4385F44 VA: 0x4389F44
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, TimeCycleComponent>>.CheckPredicate
+	|
+	|-RVA: 0x438A5CC Offset: 0x43865CC VA: 0x438A5CC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, TimeLockComponent>>.CheckPredicate
+	|
+	|-RVA: 0x438AC34 Offset: 0x4386C34 VA: 0x438AC34
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BornComponent, IdComponent>>.CheckPredicate
+	|
+	|-RVA: 0x438B298 Offset: 0x4387298 VA: 0x438B298
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, CollectableComponent, IdComponent>>.CheckPredicate
+	|
+	|-RVA: 0x438B8FC Offset: 0x43878FC VA: 0x438B8FC
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, BoardTilePositionComponent>>.CheckPredicate
+	|
+	|-RVA: 0x438BF78 Offset: 0x4387F78 VA: 0x438BF78
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, InteractionComponent, BoardTilePositionComponent>>.CheckPredicate
+	|
+	|-RVA: 0x438C5E0 Offset: 0x43885E0 VA: 0x438C5E0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, PendingInteractionComponent, InteractionComponent>>.CheckPredicate
+	|
+	|-RVA: 0x438CC54 Offset: 0x4388C54 VA: 0x438CC54
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent, InteractionComponent>>.CheckPredicate
+	|
+	|-RVA: 0x438D2C8 Offset: 0x43892C8 VA: 0x438D2C8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ItemMovedComponent, IdComponent>>.CheckPredicate
+	|
+	|-RVA: 0x438D938 Offset: 0x4389938 VA: 0x438D938
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, MergeComponent, IdComponent>>.CheckPredicate
+	|
+	|-RVA: 0x438DFB8 Offset: 0x4389FB8 VA: 0x438DFB8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, CollectableComponent, IdComponent, BornComponent>>.CheckPredicate
+	|
+	|-RVA: 0x438E628 Offset: 0x438A628 VA: 0x438E628
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, DeadComponent, ItemConsumedComponent, IdComponent>>.CheckPredicate
+	|
+	|-RVA: 0x438EC8C Offset: 0x438AC8C VA: 0x438EC8C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, DeadComponent>>.CheckPredicate
+	|
+	|-RVA: 0x438F308 Offset: 0x438B308 VA: 0x438F308
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, TimeLimitedActivationComponent, TimeDurationComponent>>.CheckPredicate
+	|
+	|-RVA: 0x438F96C Offset: 0x438B96C VA: 0x438F96C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, FeedingCombinationComponent, DeadComponent, BoardTilePositionComponent>>.CheckPredicate
+	|
+	|-RVA: 0x438FFC4 Offset: 0x438BFC4 VA: 0x438FFC4
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, DeadComponent, BoardTilePositionComponent>>.CheckPredicate
+	|
+	|-RVA: 0x4390628 Offset: 0x438C628 VA: 0x4390628
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, LockComponent, BoxComponent>>.CheckPredicate
+	|
+	|-RVA: 0x4390C8C Offset: 0x438CC8C VA: 0x4390C8C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ResourceConsumedComponent, InteractionComponent, BoardTilePositionComponent>>.CheckPredicate
+	|
+	|-RVA: 0x43912F0 Offset: 0x438D2F0 VA: 0x43912F0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeDurationComponent, IdComponent, BoardTilePositionComponent>>.CheckPredicate
+	|
+	|-RVA: 0x4391970 Offset: 0x438D970 VA: 0x4391970
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, TimeLockComponent, BoardTilePositionComponent, IdComponent>>.CheckPredicate
+	|
+	|-RVA: 0x4391FE0 Offset: 0x438DFE0 VA: 0x4391FE0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, BornComponent, IdComponent, ItemMergedComponent>>.CheckPredicate
+	|
+	|-RVA: 0x4392650 Offset: 0x438E650 VA: 0x4392650
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent, BornComponent, ItemMergedComponent>>.CheckPredicate
+	|
+	|-RVA: 0x4392CD0 Offset: 0x438ECD0 VA: 0x4392CD0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, IdComponent, DynamicItemConfigComponent, PendingInteractionComponent>>.CheckPredicate
+	|
+	|-RVA: 0x4393350 Offset: 0x438F350 VA: 0x4393350
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, MergeComponent, IdComponent, PendingItemsCombinationComponent>>.CheckPredicate
+	|
+	|-RVA: 0x43939C0 Offset: 0x438F9C0 VA: 0x43939C0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, FeedingCombinationComponent, InteractionComponent>>.CheckPredicate
+	|
+	|-RVA: 0x4394038 Offset: 0x4390038 VA: 0x4394038
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, InteractionComponent>>.CheckPredicate
+	|
+	|-RVA: 0x43946C0 Offset: 0x43906C0 VA: 0x43946C0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ToolSpawningComponent, PendingInteractionComponent, InteractionComponent>>.CheckPredicate
+	|
+	|-RVA: 0x4394D38 Offset: 0x4390D38 VA: 0x4394D38
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>>.CheckPredicate
+	|
+	|-RVA: 0x43953B8 Offset: 0x43913B8 VA: 0x43953B8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, TimeDurationComponent, TimeLimitedActivationComponent>>.CheckPredicate
+	|
+	|-RVA: 0x4395A40 Offset: 0x4391A40 VA: 0x4395A40
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, BoardTilePositionComponent, ImmediateToolComponent, PendingInteractionComponent>>.CheckPredicate
+	|
+	|-RVA: 0x43960B8 Offset: 0x43920B8 VA: 0x43960B8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, IdComponent, InteractionComponent, BoardTilePositionComponent, ProducerComponent>>.CheckPredicate
+	|
+	|-RVA: 0x4396734 Offset: 0x4392734 VA: 0x4396734
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, CollectableComponent, IdComponent, PendingInteractionComponent, InteractionComponent>>.CheckPredicate
+	|
+	|-RVA: 0x4396DB8 Offset: 0x4392DB8 VA: 0x4396DB8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, PendingInteractionComponent, InteractionComponent>>.CheckPredicate
+	|
+	|-RVA: 0x4397438 Offset: 0x4393438 VA: 0x4397438
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ChargeableComponent, ExpendableComponent, BoardTilePositionComponent, IdComponent, PendingInteractionComponent>>.CheckPredicate
+	|
+	|-RVA: 0x4397AB8 Offset: 0x4393AB8 VA: 0x4397AB8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent, PendingInteractionComponent>>.CheckPredicate
+	|
+	|-RVA: 0x4398134 Offset: 0x4394134 VA: 0x4398134
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, SpawnerComponent, TimeCycleComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>>.CheckPredicate
+	|
+	|-RVA: 0x43987B0 Offset: 0x43947B0 VA: 0x43987B0
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, FeedingCombinationComponent, IdComponent, InteractionComponent, ProducerComponent, TimeCycleComponent>>.CheckPredicate
+	|
+	|-RVA: 0x4398E2C Offset: 0x4394E2C VA: 0x4398E2C
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, BoardTilePositionComponent, SpawnerComponent, IdComponent, TimeCycleComponent, InteractionComponent, PendingInteractionComponent>>.CheckPredicate
+	|
+	|-RVA: 0x43994A8 Offset: 0x43954A8 VA: 0x43994A8
+	|-QueryExtensions.QueryBuilder<ValueTuple<object, ExpendableComponent, IdComponent, InteractionComponent, PendingInteractionComponent, TimeLimitedActivationComponent, TimeDurationComponent>>.CheckPredicate
+	|
+	|-RVA: 0x4399D20 Offset: 0x4395D20 VA: 0x4399D20
+	|-QueryExtensions.QueryBuilder<__Il2CppFullySharedGenericType>.CheckPredicate
+	*/
+}
+

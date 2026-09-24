@@ -1,0 +1,13 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class PickBoxConfig // TypeDefIndex: 1631
+{
+	// Fields
+	public PickBoxLevelBucket[] PickBoxLevelBuckets; // 0x8
+
+	// Methods
+
+	// RVA: 0x18BFB8C Offset: 0x18BFB8C VA: 0x18BFB8C
+	public void .ctor() { }
+}
+

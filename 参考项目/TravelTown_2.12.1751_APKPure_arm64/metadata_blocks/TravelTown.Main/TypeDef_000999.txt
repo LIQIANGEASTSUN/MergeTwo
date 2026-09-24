@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ImmediateToolCollectSystem.<>c // TypeDefIndex: 999
+{
+	// Fields
+	public static readonly ImmediateToolCollectSystem.<>c <>9; // 0x0
+	public static Func<IMergeItem, string> <>9__16_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x67A17D0 Offset: 0x679D7D0 VA: 0x67A17D0
+	private static void .cctor() { }
+
+	// RVA: 0x67A1838 Offset: 0x679D838 VA: 0x67A1838
+	public void .ctor() { }
+
+	// RVA: 0x67A1840 Offset: 0x679D840 VA: 0x67A1840
+	internal string <StartToolCollectionSequence>b__16_0(IMergeItem tool) { }
+}
+

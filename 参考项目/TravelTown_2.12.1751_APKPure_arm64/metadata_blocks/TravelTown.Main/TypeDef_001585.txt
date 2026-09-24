@@ -1,0 +1,12 @@
+// Namespace: GameCore.Configuration.Definitions
+public interface IUniqueStringKeyAsset // TypeDefIndex: 1585
+{
+	// Properties
+	public abstract string UniqueId { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract string get_UniqueId();
+}
+

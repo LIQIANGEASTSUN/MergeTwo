@@ -1,0 +1,149 @@
+Type: GameLogic.Player.Items.Activation.IActivationCycle
+
+Method: System.Int32 get_HowManyCycles()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Activation.IActivationCycleData get_DailyActivationCyclesData()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metacore.MergeMansion.Common.Options.Option`1<GameLogic.Player.Items.Activation.IActivationCycleData> get_InitialActivationCyclesDataOption()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metacore.MergeMansion.Common.Options.Option`1<GameLogic.Player.Items.Activation.IActivationReEngagementSettings> get_ReEngagementSettingsOption()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Nullable`1<Metaplay.Core.MetaTime> CalculateNextEstimatedStorageFillTime(GameLogic.Player.IPlayer player, GameLogic.Player.Items.IItemDefinition itemDefinition, GameLogic.Player.Items.Activation.ActivationState activationState, GameLogic.Player.Items.StorageState activationStorageState, Metaplay.Core.Math.F32 boostFactor, Metaplay.Core.MetaTime currentTime, System.Boolean useCalendarBasedCycle)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void UpdateActivationCycleData(GameLogic.Player.Items.Activation.ActivationState activationState, GameLogic.Player.IPlayer player, Metaplay.Core.MetaTime timeStamp)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.MetaDuration GetActivationDelay()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.MetaDuration GetFirstCycleDelay()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean TryGetActiveDuration(GameLogic.Player.Items.Activation.IActivationFeatures activationFeatures, GameLogic.Player.Items.Activation.ActivationState activationState, GameLogic.Config.Types.MetacoreTime currentTime, out Metaplay.Core.MetaDuration activeDuration)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean TryGetActiveDuration(GameLogic.Player.Items.Activation.IActivationFeatures activationFeatures, GameLogic.Player.Items.Activation.ActivationState activationState, Metaplay.Core.MetaTime currentTime, out Metaplay.Core.MetaDuration activeDuration)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.MetaDuration GetDelayBetweenCycles(GameLogic.Player.Items.Activation.CycleInfo cycleInfo)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.Math.F64 GetTimerSkipCostMultiplier(GameLogic.Player.Items.Activation.CycleInfo cycleInfo)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 GetActivationAmountInCycle(GameLogic.Player.Items.Activation.CycleInfo cycleInfo)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 GetHowManyAreGeneratedInCycle(GameLogic.Player.Items.Activation.CycleInfo cycleInfo)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IReadOnlyList`1<Metaplay.Core.MetaDuration> GetDailyDelaysBetweenCycles()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IReadOnlyList`1<Metaplay.Core.Math.F64> GetDailyTimerSkipMultipliers()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IReadOnlyList`1<System.Int32> GetDailyActivationAmountInCycle()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IReadOnlyList`1<System.Int32> GetDailyHowManyAreGeneratedInCycle()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean IsOutOfInitialCycles(System.Int32 cycleNumber)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void Validate(Metaplay.Core.Config.GameConfigValidationResult variantEntries, System.String sheetName, System.String configKey)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void SetReEngagementSettings(Metacore.MergeMansion.Common.Options.Option`1<GameLogic.Player.Items.Activation.IActivationReEngagementSettings> activationReEngagementSettings)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

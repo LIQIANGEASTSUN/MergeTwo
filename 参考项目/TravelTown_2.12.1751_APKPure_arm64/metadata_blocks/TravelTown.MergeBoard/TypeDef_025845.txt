@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ProducerComponentStateUpdater.<>c // TypeDefIndex: 25845
+{
+	// Fields
+	public static readonly ProducerComponentStateUpdater.<>c <>9; // 0x0
+	public static Func<Combination, IEnumerable<WeightedItem>> <>9__0_0; // 0x8
+	public static Func<WeightedItem, WeightedItemSpawnable> <>9__0_1; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A85B50 Offset: 0x6A81B50 VA: 0x6A85B50
+	private static void .cctor() { }
+
+	// RVA: 0x6A85BB8 Offset: 0x6A81BB8 VA: 0x6A85BB8
+	public void .ctor() { }
+
+	// RVA: 0x6A85BC0 Offset: 0x6A81BC0 VA: 0x6A85BC0
+	internal IEnumerable<WeightedItem> <UpdateFromState>b__0_0(Combination interactionCostItem) { }
+
+	// RVA: 0x6A85BD8 Offset: 0x6A81BD8 VA: 0x6A85BD8
+	internal WeightedItemSpawnable <UpdateFromState>b__0_1(WeightedItem i) { }
+}
+

@@ -1,0 +1,10 @@
+// Namespace: Framework.Core.Services.Backend.Remote.Payloads.BoardState
+[StateName("boardResources")]
+public class CoreBoardResources : BoardResources // TypeDefIndex: 10973
+{
+	// Methods
+
+	// RVA: 0x692763C Offset: 0x692363C VA: 0x692763C
+	public void .ctor() { }
+}
+

@@ -1,0 +1,17 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public class InventorySlotComponent : ComponentBase<InventorySlotCapability>, IRemoteLoadedComponent<SerializedInventorySlotComponent> // TypeDefIndex: 1072
+{
+	// Fields
+	public int SlotIndex; // 0x28
+	public InventorySlotType Type; // 0x2C
+	public string SlotId; // 0x30
+
+	// Methods
+
+	// RVA: 0x68FD43C Offset: 0x68F943C VA: 0x68FD43C
+	public void .ctor(InventorySlotCapability capability, Entity entity) { }
+
+	// RVA: 0x68FD4BC Offset: 0x68F94BC VA: 0x68FD4BC Slot: 7
+	public void LoadComponent(SerializedInventorySlotComponent componentData) { }
+}
+

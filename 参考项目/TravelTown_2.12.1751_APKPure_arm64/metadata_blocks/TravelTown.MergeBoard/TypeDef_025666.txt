@@ -1,0 +1,40 @@
+// Namespace: Merger.MergeBoard.ViewModel
+public class MergeBoardSelectorViewModel : ViewModelBase // TypeDefIndex: 25666
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x68
+	[Inject]
+	private IMergeBoardModel _mergeBoardModel; // 0x70
+	[Inject]
+	private IMergeBoardLayout _boardLayout; // 0x78
+	[Inject]
+	private IMergeBoardSelectedItemModel _mergeBoardSelectedItemModel; // 0x80
+
+	// Methods
+
+	// RVA: 0x6A31F54 Offset: 0x6A2DF54 VA: 0x6A31F54
+	public void ClearSelectedItem() { }
+
+	// RVA: 0x6A31FF8 Offset: 0x6A2DFF8 VA: 0x6A31FF8
+	public void SetSelectedItem(Entity entity) { }
+
+	// RVA: 0x6A322C8 Offset: 0x6A2E2C8 VA: 0x6A322C8
+	public SelectorMode GetSelectorMode(IVisualComponent visualComponent) { }
+
+	// RVA: 0x6A324D8 Offset: 0x6A2E4D8 VA: 0x6A324D8
+	public Entity GetEntityAtPosition(int position) { }
+
+	// RVA: 0x6A3258C Offset: 0x6A2E58C VA: 0x6A3258C
+	public RectTransform GetTransformByPosition(int position) { }
+
+	// RVA: 0x6A32634 Offset: 0x6A2E634 VA: 0x6A32634
+	public int GetPositionIndex(IBoardItemView itemView) { }
+
+	// RVA: 0x6A32118 Offset: 0x6A2E118 VA: 0x6A32118
+	private IMergeItem GetMergeItem(Entity entity) { }
+
+	// RVA: 0x6A326EC Offset: 0x6A2E6EC VA: 0x6A326EC
+	public void .ctor() { }
+}
+

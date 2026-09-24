@@ -1,0 +1,50 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeBoard.<>c__DisplayClass178_0 // TypeDefIndex: 2723
+{
+	// Fields
+	public MergeBoard <>4__this; // 0x8
+	public int index; // 0xC
+
+	// Methods
+
+	// RVA: 0x2C2F9D4 Offset: 0x2C2F9D4 VA: 0x2C2F9D4
+	public void .ctor() { }
+
+	// RVA: 0x2C2F9DC Offset: 0x2C2F9DC VA: 0x2C2F9DC
+	internal void <Procedure_OneClick>b__0() { }
+
+	// RVA: 0x2C30310 Offset: 0x2C30310 VA: 0x2C30310
+	internal void <Procedure_OneClick>b__1() { }
+
+	// RVA: 0x2C307A0 Offset: 0x2C307A0 VA: 0x2C307A0
+	internal void <Procedure_OneClick>b__2() { }
+
+	// RVA: 0x2C312EC Offset: 0x2C312EC VA: 0x2C312EC
+	internal void <Procedure_OneClick>b__3() { }
+
+	// RVA: 0x2C313A8 Offset: 0x2C313A8 VA: 0x2C313A8
+	internal void <Procedure_OneClick>b__6() { }
+
+	// RVA: 0x2C31CDC Offset: 0x2C31CDC VA: 0x2C31CDC
+	internal void <Procedure_OneClick>b__7() { }
+
+	// RVA: 0x2C3216C Offset: 0x2C3216C VA: 0x2C3216C
+	internal void <Procedure_OneClick>b__8() { }
+
+	// RVA: 0x2C32A50 Offset: 0x2C32A50 VA: 0x2C32A50
+	internal void <Procedure_OneClick>b__9() { }
+
+	// RVA: 0x2C32B0C Offset: 0x2C32B0C VA: 0x2C32B0C
+	internal void <Procedure_OneClick>b__12() { }
+
+	// RVA: 0x2C33440 Offset: 0x2C33440 VA: 0x2C33440
+	internal void <Procedure_OneClick>b__13() { }
+
+	// RVA: 0x2C338D0 Offset: 0x2C338D0 VA: 0x2C338D0
+	internal void <Procedure_OneClick>b__14() { }
+
+	// RVA: 0x2C341B4 Offset: 0x2C341B4 VA: 0x2C341B4
+	internal void <Procedure_OneClick>b__15() { }
+}
+

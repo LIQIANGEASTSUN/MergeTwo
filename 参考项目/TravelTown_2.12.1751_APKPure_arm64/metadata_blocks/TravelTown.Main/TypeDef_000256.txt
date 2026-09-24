@@ -1,0 +1,86 @@
+// Namespace: MergeEngine.Signal.Board
+public class ConsumeMultipleBoardItemsSignal // TypeDefIndex: 256
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly Dictionary<IMergeItem, List<Vector2>> <PositionsMap>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly Nullable<BoardItemPosition> <PreferedPosition>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private readonly IMergeItem <PreferedMergeItem>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private readonly Action <CompleteCallback>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private readonly Action <FailCallback>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private readonly IEnumerable<ItemMultiple> <ItemsToConsume>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private readonly bool <SkipAnimations>k__BackingField; // 0x48
+	[CompilerGenerated]
+	private readonly List<IdComponent> <SelectedItemsToConsume>k__BackingField; // 0x50
+	[CompilerGenerated]
+	private readonly OperationContext <Context>k__BackingField; // 0x58
+	[CompilerGenerated]
+	private readonly float <DurationMultiplier>k__BackingField; // 0x60
+
+	// Properties
+	public Dictionary<IMergeItem, List<Vector2>> PositionsMap { get; }
+	public Nullable<BoardItemPosition> PreferedPosition { get; }
+	public IMergeItem PreferedMergeItem { get; }
+	public Action CompleteCallback { get; }
+	public Action FailCallback { get; }
+	public IEnumerable<ItemMultiple> ItemsToConsume { get; }
+	public bool SkipAnimations { get; }
+	public List<IdComponent> SelectedItemsToConsume { get; }
+	public OperationContext Context { get; }
+	public float DurationMultiplier { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5FF42F4 Offset: 0x5FF02F4 VA: 0x5FF42F4
+	public Dictionary<IMergeItem, List<Vector2>> get_PositionsMap() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF42FC Offset: 0x5FF02FC VA: 0x5FF42FC
+	public Nullable<BoardItemPosition> get_PreferedPosition() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF430C Offset: 0x5FF030C VA: 0x5FF430C
+	public IMergeItem get_PreferedMergeItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF4314 Offset: 0x5FF0314 VA: 0x5FF4314
+	public Action get_CompleteCallback() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF431C Offset: 0x5FF031C VA: 0x5FF431C
+	public Action get_FailCallback() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF4324 Offset: 0x5FF0324 VA: 0x5FF4324
+	public IEnumerable<ItemMultiple> get_ItemsToConsume() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF432C Offset: 0x5FF032C VA: 0x5FF432C
+	public bool get_SkipAnimations() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF4334 Offset: 0x5FF0334 VA: 0x5FF4334
+	public List<IdComponent> get_SelectedItemsToConsume() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF433C Offset: 0x5FF033C VA: 0x5FF433C
+	public OperationContext get_Context() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF4344 Offset: 0x5FF0344 VA: 0x5FF4344
+	public float get_DurationMultiplier() { }
+
+	// RVA: 0x5FF434C Offset: 0x5FF034C VA: 0x5FF434C
+	public void .ctor(IEnumerable<ItemMultiple> itemsToConsume, Dictionary<IMergeItem, List<Vector2>> positionsMap, Nullable<BoardItemPosition> preferedPosition, IMergeItem preferedMergeItem, List<IdComponent> selectedItemsToConsume, Action completeCallback, Action failCallback, OperationContext context, float durationMultiplier = 1) { }
+
+	// RVA: 0x5FF4434 Offset: 0x5FF0434 VA: 0x5FF4434
+	public void .ctor(List<ItemMultiple> itemsToConsume, List<IdComponent> selectedItemsToConsume, Action completeCallback, Action failCallback, OperationContext context) { }
+}
+

@@ -1,0 +1,13 @@
+// Namespace: MergeEngine.ECS.Components.Items
+[Serializable]
+public class SerializedFeedingComponent // TypeDefIndex: 1053
+{
+	// Fields
+	public List<ItemPayloadBase> ConsumedItems; // 0x10
+
+	// Methods
+
+	// RVA: 0x68FBFC4 Offset: 0x68F7FC4 VA: 0x68FBFC4
+	public void .ctor() { }
+}
+

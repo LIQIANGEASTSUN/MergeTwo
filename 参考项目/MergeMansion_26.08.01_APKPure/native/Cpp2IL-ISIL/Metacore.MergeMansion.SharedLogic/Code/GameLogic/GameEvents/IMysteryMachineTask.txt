@@ -1,0 +1,9 @@
+Type: Code.GameLogic.GameEvents.IMysteryMachineTask
+
+Method: System.Boolean CanComplete(Code.GameLogic.GameEvents.MysteryMachineTaskInfo taskInfo, Code.GameLogic.GameEvents.MysteryMachine machine)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

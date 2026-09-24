@@ -1,0 +1,95 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public class IdComponent : RemoteLoadedComponent<IdCapability, SerializedIdComponent, ItemPayloadBase>, IIdComponent // TypeDefIndex: 1063
+{
+	// Fields
+	public const string ID = "id";
+	[CompilerGenerated]
+	private string <Id>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private string <UUId>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private long <MergedTimestamp>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private long <CreatedTimestamp>k__BackingField; // 0x48
+	[CompilerGenerated]
+	private long <QueueAddedTimestamp>k__BackingField; // 0x50
+	public ItemOrigin Origin; // 0x58
+	[CompilerGenerated]
+	private bool <SpawnedByTimeLimited>k__BackingField; // 0x5C
+
+	// Properties
+	public override string ComponentKey { get; }
+	public string Uuid { get; }
+	public string Id { get; set; }
+	public string UUId { get; set; }
+	public long MergedTimestamp { get; set; }
+	public long CreatedTimestamp { get; set; }
+	public long QueueAddedTimestamp { get; set; }
+	public bool SpawnedByTimeLimited { get; set; }
+
+	// Methods
+
+	// RVA: 0x68FC434 Offset: 0x68F8434 VA: 0x68FC434 Slot: 11
+	public override string get_ComponentKey() { }
+
+	// RVA: 0x68FC474 Offset: 0x68F8474 VA: 0x68FC474 Slot: 17
+	public string get_Uuid() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC47C Offset: 0x68F847C VA: 0x68FC47C Slot: 16
+	public string get_Id() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC484 Offset: 0x68F8484 VA: 0x68FC484
+	private void set_Id(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC48C Offset: 0x68F848C VA: 0x68FC48C
+	public string get_UUId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC494 Offset: 0x68F8494 VA: 0x68FC494
+	private void set_UUId(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC49C Offset: 0x68F849C VA: 0x68FC49C
+	public long get_MergedTimestamp() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC4A4 Offset: 0x68F84A4 VA: 0x68FC4A4
+	private void set_MergedTimestamp(long value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC4AC Offset: 0x68F84AC VA: 0x68FC4AC
+	public long get_CreatedTimestamp() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC4B4 Offset: 0x68F84B4 VA: 0x68FC4B4
+	public void set_CreatedTimestamp(long value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC4BC Offset: 0x68F84BC VA: 0x68FC4BC
+	public long get_QueueAddedTimestamp() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC4C4 Offset: 0x68F84C4 VA: 0x68FC4C4
+	public void set_QueueAddedTimestamp(long value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC4CC Offset: 0x68F84CC VA: 0x68FC4CC
+	public bool get_SpawnedByTimeLimited() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC4D4 Offset: 0x68F84D4 VA: 0x68FC4D4
+	public void set_SpawnedByTimeLimited(bool value) { }
+
+	// RVA: 0x68FC4E0 Offset: 0x68F84E0 VA: 0x68FC4E0
+	public void .ctor(IdCapability capability, Entity entity) { }
+
+	// RVA: 0x68FC65C Offset: 0x68F865C VA: 0x68FC65C Slot: 15
+	public override void LoadComponent(ItemPayloadBase componentData) { }
+
+	// RVA: 0x68FC808 Offset: 0x68F8808 VA: 0x68FC808 Slot: 12
+	protected override void OnBeforeSerialize() { }
+}
+

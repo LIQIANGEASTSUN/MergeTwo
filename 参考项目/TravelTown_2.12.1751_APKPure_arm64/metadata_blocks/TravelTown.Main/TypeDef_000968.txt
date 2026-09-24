@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class TimeCycleSystem.<>c // TypeDefIndex: 968
+{
+	// Fields
+	public static readonly TimeCycleSystem.<>c <>9; // 0x0
+	public static Func<ITimeCycleComponent, bool> <>9__8_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x67945B4 Offset: 0x67905B4 VA: 0x67945B4
+	private static void .cctor() { }
+
+	// RVA: 0x679461C Offset: 0x679061C VA: 0x679461C
+	public void .ctor() { }
+
+	// RVA: 0x6794624 Offset: 0x6790624 VA: 0x6794624
+	internal bool <GetUnlockedComponents>b__8_0(ITimeCycleComponent component) { }
+}
+

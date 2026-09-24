@@ -1,0 +1,32 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class PerishableSpawnerConfig // TypeDefIndex: 1627
+{
+	// Fields
+	public int SetID; // 0x8
+	public bool UsesEnergy; // 0xC
+	public int Capacity; // 0x10
+	public bool NonProbabilistic; // 0x14
+	public bool HasProgressText; // 0x15
+	public bool UseIndexedSpawn; // 0x16
+	public List<SpawnedItem> SpawnedItems; // 0x18
+	public List<SpawnIndexedItemGroup> IndexedSpawnedItemGroups; // 0x1C
+
+	// Methods
+
+	// RVA: 0x18BF194 Offset: 0x18BF194 VA: 0x18BF194
+	public List<SpawnedItem> GetSpawnedItems(bool useOriginalSetID = False) { }
+
+	// RVA: 0x18C58FC Offset: 0x18C58FC VA: 0x18C58FC
+	public SpawnedItem GetNonProbabilisticItem(int currentCapacity) { }
+
+	// RVA: 0x18C59A0 Offset: 0x18C59A0 VA: 0x18C59A0
+	public SpawnedItem GetIndexedSpawnedItem(int currentCapacity) { }
+
+	// RVA: 0x18C5B98 Offset: 0x18C5B98 VA: 0x18C5B98
+	public SpawnedItem GetRandomItem() { }
+
+	// RVA: 0x18C5CC4 Offset: 0x18C5CC4 VA: 0x18C5CC4
+	public void .ctor() { }
+}
+

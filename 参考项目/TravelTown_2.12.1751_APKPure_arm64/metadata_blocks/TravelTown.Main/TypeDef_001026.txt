@@ -1,0 +1,79 @@
+// Namespace: MergeEngine.ECS.Components
+[CacheAs(new[] { typeof(ISerializableComponent) })]
+public abstract class SerializableComponent<TSerializable> : ComponentBase, ISerializableComponent, IComponentBase // TypeDefIndex: 1026
+{
+	// Fields
+	private TSerializable _serializable; // 0x0
+
+	// Properties
+	protected TSerializable serializable { get; }
+	public abstract string ComponentKey { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	protected TSerializable get_serializable() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x44E7BF0 Offset: 0x44E3BF0 VA: 0x44E7BF0
+	|-SerializableComponent<object>.get_serializable
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor(Entity entity) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x44E7BF8 Offset: 0x44E3BF8 VA: 0x44E7BF8
+	|-SerializableComponent<object>..ctor
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public abstract string get_ComponentKey();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-SerializableComponent<object>.get_ComponentKey
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 12
+	protected virtual void OnBeforeSerialize() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x44E7C00 Offset: 0x44E3C00 VA: 0x44E7C00
+	|-SerializableComponent<object>.OnBeforeSerialize
+	*/
+
+	[Obsolete("we no longer support locally saved user progression, everything should come from backend ")]
+	// RVA: -1 Offset: -1 Slot: 13
+	protected virtual void OnAfterDeserialize() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x44E7C04 Offset: 0x44E3C04 VA: 0x44E7C04
+	|-SerializableComponent<object>.OnAfterDeserialize
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 8
+	private string MergeEngine.ECS.Components.ISerializableComponent.Serialize() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x44E7C08 Offset: 0x44E3C08 VA: 0x44E7C08
+	|-SerializableComponent<object>.MergeEngine.ECS.Components.ISerializableComponent.Serialize
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public object GetSerialize() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x44E7D3C Offset: 0x44E3D3C VA: 0x44E7D3C
+	|-SerializableComponent<object>.GetSerialize
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 10
+	private void MergeEngine.ECS.Components.ISerializableComponent.Deserialize(string componentJson) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x44E7DEC Offset: 0x44E3DEC VA: 0x44E7DEC
+	|-SerializableComponent<object>.MergeEngine.ECS.Components.ISerializableComponent.Deserialize
+	*/
+}
+

@@ -1,0 +1,96 @@
+// Namespace: Merger.ProducerExcitement.Services
+public class ProducerExcitementService : ServiceBase, IProducerExcitementService // TypeDefIndex: 33624
+{
+	// Fields
+	[Inject]
+	private IProducerExcitementModel _producerExcitementModel; // 0x28
+	[Inject]
+	private ISystemManager _systemManager; // 0x30
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x38
+	[Inject]
+	private IPowerBoostDataProvider _powerBoostDataProvider; // 0x40
+	[Inject]
+	private IServerTimeService _serverTimeService; // 0x48
+	[Inject]
+	private IProducerExcitementDownloadService _producerExcitementDownloadService; // 0x50
+	[Inject]
+	private ITimerService _timerService; // 0x58
+	[Inject]
+	private ItemGeneratorService _itemGeneratorService; // 0x60
+	[Inject]
+	private INotificationDataFactory _notificationDataFactory; // 0x68
+	[Inject]
+	private IEntityFactory _entityFactory; // 0x70
+	private readonly Dictionary<long, ITimer> _cycleEndTimers; // 0x78
+	private BoardSystem _boardSystem; // 0x80
+	private OrdersSystem _ordersSystem; // 0x88
+	private OperationTrackingSystem _operationTrackingSystem; // 0x90
+	private PowerBoostSystem _powerBoostSystem; // 0x98
+
+	// Properties
+	private OrdersSystem OrdersSystem { get; }
+	private BoardSystem BoardSystem { get; }
+	private OperationTrackingSystem OperationTrackingSystem { get; }
+	private PowerBoostSystem PowerBoostSystem { get; }
+
+	// Methods
+
+	// RVA: 0x6AD5C20 Offset: 0x6AD1C20 VA: 0x6AD5C20
+	private OrdersSystem get_OrdersSystem() { }
+
+	// RVA: 0x6AD5D00 Offset: 0x6AD1D00 VA: 0x6AD5D00
+	private BoardSystem get_BoardSystem() { }
+
+	// RVA: 0x6AD5DE0 Offset: 0x6AD1DE0 VA: 0x6AD5DE0
+	private OperationTrackingSystem get_OperationTrackingSystem() { }
+
+	// RVA: 0x6AD5EC0 Offset: 0x6AD1EC0 VA: 0x6AD5EC0
+	private PowerBoostSystem get_PowerBoostSystem() { }
+
+	// RVA: 0x6AD5FA0 Offset: 0x6AD1FA0 VA: 0x6AD5FA0 Slot: 17
+	protected override void InitializeService() { }
+
+	// RVA: 0x6AD6138 Offset: 0x6AD2138 VA: 0x6AD6138 Slot: 18
+	protected override void DisposeService() { }
+
+	// RVA: 0x6AD6540 Offset: 0x6AD2540 VA: 0x6AD6540 Slot: 19
+	public bool TryDropExcitementItem(PositionComponent producerPosition, out BoardItemPosition excitementPosition, out ProducerExcitementSpawnData spawnData) { }
+
+	// RVA: 0x6AD7B48 Offset: 0x6AD3B48 VA: 0x6AD7B48 Slot: 20
+	public void ApplyVisuals(VisualComponent visualComponent, BoardItemPosition entityPosition) { }
+
+	// RVA: 0x6AD6B7C Offset: 0x6AD2B7C VA: 0x6AD6B7C
+	private ProducerExcitementItemResponse ConsumeExcitementForProducer(string producerId, out int claimedExcitementId) { }
+
+	// RVA: 0x6AD7550 Offset: 0x6AD3550 VA: 0x6AD7550
+	private Entity CreateExcitementEntity(string itemId, BoardItemPosition position) { }
+
+	// RVA: 0x6AD76D8 Offset: 0x6AD36D8 VA: 0x6AD76D8
+	private void ReportGhostModeInteraction(Entity excitementEntity, Entity producerEntity, IMergeItem producerItem, int excitementId) { }
+
+	// RVA: 0x6AD7C18 Offset: 0x6AD3C18 VA: 0x6AD7C18
+	private string GetMaxLevelPrimaryProducerIdOnBoard(IMergeItem producerItem) { }
+
+	// RVA: 0x6AD6920 Offset: 0x6AD2920 VA: 0x6AD6920
+	private bool TryGetExcitementPosition(BoardItemPosition originalItemPosition, out BoardItemPosition excitementPosition) { }
+
+	// RVA: 0x6AD80C0 Offset: 0x6AD40C0 VA: 0x6AD80C0
+	private void OnExcitementStatesChanged(CollectionChangedArgs<ProducerExcitementDataResponse> changedArgs) { }
+
+	// RVA: 0x6AD8184 Offset: 0x6AD4184 VA: 0x6AD8184
+	private void RegisterCycleEndTimer(long cycleEndDate) { }
+
+	// RVA: 0x6AD85A8 Offset: 0x6AD45A8 VA: 0x6AD85A8
+	private void OnCycleEnded(long cycleEndDate) { }
+
+	// RVA: 0x6AD62D8 Offset: 0x6AD22D8 VA: 0x6AD62D8
+	private void UnregisterAllCycleTimers() { }
+
+	// RVA: 0x6AD87AC Offset: 0x6AD47AC VA: 0x6AD87AC
+	private void RefreshState(ProducerExcitementRefreshStateSignal signal) { }
+
+	// RVA: 0x6AD87D4 Offset: 0x6AD47D4 VA: 0x6AD87D4
+	public void .ctor() { }
+}
+

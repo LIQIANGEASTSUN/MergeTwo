@@ -1,0 +1,31 @@
+// Namespace: Merger.Services.User.Data.Profile.Game.StartingBoard
+[Serializable]
+public class StartingBoardCell // TypeDefIndex: 10130
+{
+	// Fields
+	[JsonProperty("item")]
+	public MergeItemWeakReference Item; // 0x10
+	[JsonProperty("locked")]
+	public bool Locked; // 0x18
+	[JsonProperty("boxed")]
+	public bool Boxed; // 0x19
+	[JsonProperty("levelLock")]
+	public int LevelLock; // 0x1C
+	[JsonProperty("blockerArt")]
+	public string BlockerArt; // 0x20
+	[JsonProperty("boxedType")]
+	public UnboxingType UnboxingType; // 0x28
+	[JsonProperty("interactionAmount")]
+	public int InteractionAmount; // 0x2C
+	[JsonProperty("resourceType")]
+	public PlayerResourceEnum InteractionResource; // 0x30
+
+	// Methods
+
+	// RVA: 0x6841B00 Offset: 0x683DB00 VA: 0x6841B00
+	public MergeBoardItem ToMergeBoardItem() { }
+
+	// RVA: 0x6841C08 Offset: 0x683DC08 VA: 0x6841C08
+	public void .ctor() { }
+}
+

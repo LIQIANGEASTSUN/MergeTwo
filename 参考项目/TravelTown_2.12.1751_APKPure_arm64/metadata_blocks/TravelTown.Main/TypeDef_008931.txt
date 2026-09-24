@@ -1,0 +1,79 @@
+// Namespace: Merger.Game.Views.Inventory
+public class InventoryItemsView : BaseInventoryTabContentView<InventoryItemsViewModel> // TypeDefIndex: 8931
+{
+	// Fields
+	[SerializeField]
+	private GameObject _inventoryItemPrefab; // 0x48
+	[SerializeField]
+	private GameObject _buySlotPrefab; // 0x50
+	private List<InventoryItemSlotView> _slots; // 0x58
+	private IInventoryViewRefresher _inventoryViewRefresher; // 0x60
+	private BuyInventorySlotView _buySlotView; // 0x68
+
+	// Properties
+	protected override int ItemsCount { get; }
+
+	// Methods
+
+	// RVA: 0x6707618 Offset: 0x6703618 VA: 0x6707618 Slot: 11
+	protected override int get_ItemsCount() { }
+
+	// RVA: 0x67076B0 Offset: 0x67036B0 VA: 0x67076B0 Slot: 8
+	protected override void Awake() { }
+
+	// RVA: 0x67078B8 Offset: 0x67038B8 VA: 0x67078B8 Slot: 7
+	protected override void OnDestroy() { }
+
+	// RVA: 0x6707898 Offset: 0x6703898 VA: 0x6707898
+	private void ShowInventory() { }
+
+	// RVA: 0x670810C Offset: 0x670410C VA: 0x670810C
+	private void UpdateBuySlot() { }
+
+	// RVA: 0x6707EA0 Offset: 0x6703EA0 VA: 0x6707EA0
+	private void RepopulateInventory() { }
+
+	// RVA: 0x6707A70 Offset: 0x6703A70 VA: 0x6707A70
+	private void ClearInventory() { }
+
+	// RVA: 0x6708504 Offset: 0x6704504 VA: 0x6708504
+	private void BuyInventorySlotButtonClicked() { }
+
+	// RVA: 0x67087B4 Offset: 0x67047B4 VA: 0x67087B4
+	private void InfoRequested(IMergeItem mergeItem, string itemUUID) { }
+
+	// RVA: 0x67089A0 Offset: 0x67049A0 VA: 0x67089A0
+	private void TryRemoveItem(int slotIndex) { }
+
+	// RVA: 0x67089F0 Offset: 0x67049F0 VA: 0x67089F0
+	private void InventoryStateUpdated(InventoryStateUpdatedSignal signal) { }
+
+	// RVA: 0x67089F4 Offset: 0x67049F4 VA: 0x67089F4
+	private void ItemRetrievedFromInventory(ItemRemovedFromInventorySignal signal) { }
+
+	// RVA: 0x6708BD0 Offset: 0x6704BD0 VA: 0x6708BD0
+	private void FailedToRemoveItemFromInventorySignalFired(FailedToRemoveItemFromInventorySignal signal) { }
+
+	// RVA: 0x6708C00 Offset: 0x6704C00 VA: 0x6708C00
+	private void ShowFloatingTextOnInventorySlot(int slotIndex, FloatingTextType floatingTextType) { }
+
+	// RVA: 0x6708CEC Offset: 0x6704CEC VA: 0x6708CEC
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6708D88 Offset: 0x6704D88 VA: 0x6708D88
+	private void <ClearInventory>b__12_0(InventoryItemSlotView slotView) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6708E64 Offset: 0x6704E64 VA: 0x6708E64
+	private void <BuyInventorySlotButtonClicked>b__13_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6708F0C Offset: 0x6704F0C VA: 0x6708F0C
+	private void <BuyInventorySlotButtonClicked>b__13_1(Exception exception) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6708F50 Offset: 0x6704F50 VA: 0x6708F50
+	private void <BuyInventorySlotButtonClicked>b__13_2() { }
+}
+

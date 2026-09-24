@@ -1,0 +1,59 @@
+// Namespace: MergeEngine.ECS.Systems.Items
+public class BoardTileLevelUnlockSystem : SystemBase // TypeDefIndex: 950
+{
+	// Fields
+	[Inject]
+	private INotificationDataFactory _notificationDataFactory; // 0x40
+	[Inject]
+	private IMergingConfigurationModel _mergeConfigurationModel; // 0x48
+	[Inject]
+	private IResourcesConfigurationModel _resourcesConfigurationModel; // 0x50
+	[InjectSystem]
+	private BoardSystem _boardSystem; // 0x58
+	[InjectSystem]
+	private OperationTrackingSystem _operationTrackingSystem; // 0x60
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0x68
+	[InjectSystem]
+	private PlayerEventLevelSystem _playerEventLevelSystem; // 0x70
+	private PlayerLevelSystem _playerLevelSystem; // 0x78
+	private BoardItemCountComponent _boardItemCountComponent; // 0x80
+	private HintComponent _hintComponent; // 0x88
+	[CompilerGenerated]
+	private Action UnlockCompleted; // 0x90
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x67898E0 Offset: 0x67858E0 VA: 0x67898E0
+	public void add_UnlockCompleted(Action value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x678997C Offset: 0x678597C VA: 0x678997C
+	public void remove_UnlockCompleted(Action value) { }
+
+	// RVA: 0x6789A18 Offset: 0x6785A18 VA: 0x6789A18 Slot: 6
+	protected override void InitializeSystem() { }
+
+	// RVA: 0x6789B54 Offset: 0x6785B54 VA: 0x6789B54
+	private void BoardViewOnLayoutInitialized() { }
+
+	// RVA: 0x678A650 Offset: 0x6786650 VA: 0x678A650 Slot: 8
+	protected override void OnGameStarted() { }
+
+	// RVA: 0x678A6E0 Offset: 0x67866E0 VA: 0x678A6E0
+	private void SpawnAndSlideXpIcons(PositionComponent positionComponent) { }
+
+	// RVA: 0x678A9C0 Offset: 0x67869C0 VA: 0x678A9C0
+	private void SendBoardOperation(LockedComponent lockedComponent, int levelLock) { }
+
+	// RVA: 0x6789C84 Offset: 0x6785C84 VA: 0x6789C84
+	public void TryUnlockItems(int userLevel, int upToLevel, LiveOpsEventProgress liveOpsEventProgress, bool animate = True) { }
+
+	// RVA: 0x678AC04 Offset: 0x6786C04 VA: 0x678AC04
+	private void UnlockItem(LockedComponent lockedComponent) { }
+
+	// RVA: 0x678AD48 Offset: 0x6786D48 VA: 0x678AD48
+	public void .ctor() { }
+}
+

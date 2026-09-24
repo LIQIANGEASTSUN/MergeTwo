@@ -1,0 +1,30 @@
+Type: Code.GameLogic.GameEvents.MysteryMachineContainerItemData
+
+Method: System.Void .ctor(Code.GameLogic.GameEvents.IMysteryMachineItem item, Metaplay.Core.MetaTime originalSpawnTime)
+
+Disassembly:
+	0x033121A0 LDR W8, [X0 + 0xE4]
+	0x033121A4 CBNZ W8, 0x33121AC
+	0x033121A8 BL 0x239BA64
+	0x033121AC MOV X0, X29
+	0x033121B0 MOV X1, X31
+	0x033121B4 BL 0x342C158
+	0x033121B8 MOV X1, X0
+	0x033121BC MOV X0, X22
+	0x033121C0 MOV X2, X31
+	0x033121C4 BL 0x342C310
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move X19, X2
+	005 Move X20, X0
+	006 Move [X0], X1
+	007 Call 0x239F888
+	008 Move [X20+8], X19
+	009 Move X20, [X31+16]
+	010 Move X19, [X31+24]
+	011 Move X30, [X31+32]
+	012 Return 
+

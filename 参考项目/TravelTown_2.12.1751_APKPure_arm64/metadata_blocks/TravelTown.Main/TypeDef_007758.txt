@@ -1,0 +1,24 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoosterService.<>c__DisplayClass36_0 // TypeDefIndex: 7758
+{
+	// Fields
+	public BoosterService <>4__this; // 0x10
+	public bool mustSucceed; // 0x18
+	public DelayCompleteCallback <>9__3; // 0x20
+
+	// Methods
+
+	// RVA: 0x65C2344 Offset: 0x65BE344 VA: 0x65C2344
+	public void .ctor() { }
+
+	// RVA: 0x65C4688 Offset: 0x65C0688 VA: 0x65C4688
+	internal void <GetActiveBoosters>b__0(List<RemoteBoosterData> response) { }
+
+	// RVA: 0x65C48D8 Offset: 0x65C08D8 VA: 0x65C48D8
+	internal void <GetActiveBoosters>b__1(Exception ex) { }
+
+	// RVA: 0x65C4AE0 Offset: 0x65C0AE0 VA: 0x65C4AE0
+	internal void <GetActiveBoosters>b__3() { }
+}
+

@@ -1,0 +1,16 @@
+// Namespace: MergeEngine.Data
+[Serializable]
+public class ResourceCost // TypeDefIndex: 1138
+{
+	// Fields
+	[JsonProperty("name")]
+	public PlayerResourceEnum Resource; // 0x10
+	[JsonProperty("value")]
+	public int Cost; // 0x14
+
+	// Methods
+
+	// RVA: 0x6905098 Offset: 0x6901098 VA: 0x6905098
+	public void .ctor() { }
+}
+

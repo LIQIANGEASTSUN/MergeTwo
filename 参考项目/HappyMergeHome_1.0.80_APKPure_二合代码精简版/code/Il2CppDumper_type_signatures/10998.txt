@@ -1,0 +1,119 @@
+// Namespace: DragonU3DSDK.Storage
+[Serializable]
+public class StorageSummerWatermelon : StorageBase // TypeDefIndex: 10998
+{
+	// Fields
+	[JsonProperty]
+	private bool isStart; // 0x8
+	[JsonProperty]
+	private int maxUnlockLevel; // 0xC
+	[JsonProperty]
+	private StorageList<int> unSetRewards; // 0x10
+	[JsonProperty]
+	private StorageDictionary<int, int> unCollectRewards; // 0x14
+	[JsonProperty]
+	private StorageList<int> unSetItems; // 0x18
+	[JsonProperty]
+	private long startActivityTime; // 0x20
+	[JsonProperty]
+	private long activityEndTime; // 0x28
+	[JsonProperty]
+	private StorageDictionary<int, int> buyPackageShopIdDictionary; // 0x30
+	[JsonProperty]
+	private int dayProductCount; // 0x34
+	[JsonProperty]
+	private int dayId; // 0x38
+	[JsonProperty]
+	private StorageDictionary<int, bool> packageEnableStateDictionary; // 0x3C
+	[JsonProperty]
+	private bool isShowEnd; // 0x40
+
+	// Properties
+	[JsonIgnore]
+	public bool IsStart { get; set; }
+	[JsonIgnore]
+	public int MaxUnlockLevel { get; set; }
+	[JsonIgnore]
+	public StorageList<int> UnSetRewards { get; }
+	[JsonIgnore]
+	public StorageDictionary<int, int> UnCollectRewards { get; }
+	[JsonIgnore]
+	public StorageList<int> UnSetItems { get; }
+	[JsonIgnore]
+	public long StartActivityTime { get; set; }
+	[JsonIgnore]
+	public long ActivityEndTime { get; set; }
+	[JsonIgnore]
+	public StorageDictionary<int, int> BuyPackageShopIdDictionary { get; }
+	[JsonIgnore]
+	public int DayProductCount { get; set; }
+	[JsonIgnore]
+	public int DayId { get; set; }
+	[JsonIgnore]
+	public StorageDictionary<int, bool> PackageEnableStateDictionary { get; }
+	[JsonIgnore]
+	public bool IsShowEnd { get; set; }
+
+	// Methods
+
+	// RVA: 0x26BD6D0 Offset: 0x26BD6D0 VA: 0x26BD6D0
+	public bool get_IsStart() { }
+
+	// RVA: 0x26BD6D8 Offset: 0x26BD6D8 VA: 0x26BD6D8
+	public void set_IsStart(bool value) { }
+
+	// RVA: 0x26BD78C Offset: 0x26BD78C VA: 0x26BD78C
+	public int get_MaxUnlockLevel() { }
+
+	// RVA: 0x26BD794 Offset: 0x26BD794 VA: 0x26BD794
+	public void set_MaxUnlockLevel(int value) { }
+
+	// RVA: 0x26BD848 Offset: 0x26BD848 VA: 0x26BD848
+	public StorageList<int> get_UnSetRewards() { }
+
+	// RVA: 0x26BD850 Offset: 0x26BD850 VA: 0x26BD850
+	public StorageDictionary<int, int> get_UnCollectRewards() { }
+
+	// RVA: 0x26BD858 Offset: 0x26BD858 VA: 0x26BD858
+	public StorageList<int> get_UnSetItems() { }
+
+	// RVA: 0x26BD860 Offset: 0x26BD860 VA: 0x26BD860
+	public long get_StartActivityTime() { }
+
+	// RVA: 0x26BD868 Offset: 0x26BD868 VA: 0x26BD868
+	public void set_StartActivityTime(long value) { }
+
+	// RVA: 0x26BD930 Offset: 0x26BD930 VA: 0x26BD930
+	public long get_ActivityEndTime() { }
+
+	// RVA: 0x26BD938 Offset: 0x26BD938 VA: 0x26BD938
+	public void set_ActivityEndTime(long value) { }
+
+	// RVA: 0x26BDA00 Offset: 0x26BDA00 VA: 0x26BDA00
+	public StorageDictionary<int, int> get_BuyPackageShopIdDictionary() { }
+
+	// RVA: 0x26BDA08 Offset: 0x26BDA08 VA: 0x26BDA08
+	public int get_DayProductCount() { }
+
+	// RVA: 0x26BDA10 Offset: 0x26BDA10 VA: 0x26BDA10
+	public void set_DayProductCount(int value) { }
+
+	// RVA: 0x26BDAC4 Offset: 0x26BDAC4 VA: 0x26BDAC4
+	public int get_DayId() { }
+
+	// RVA: 0x26BDACC Offset: 0x26BDACC VA: 0x26BDACC
+	public void set_DayId(int value) { }
+
+	// RVA: 0x26BDB80 Offset: 0x26BDB80 VA: 0x26BDB80
+	public StorageDictionary<int, bool> get_PackageEnableStateDictionary() { }
+
+	// RVA: 0x26BDB88 Offset: 0x26BDB88 VA: 0x26BDB88
+	public bool get_IsShowEnd() { }
+
+	// RVA: 0x26BDB90 Offset: 0x26BDB90 VA: 0x26BDB90
+	public void set_IsShowEnd(bool value) { }
+
+	// RVA: 0x26BDC44 Offset: 0x26BDC44 VA: 0x26BDC44
+	public void .ctor() { }
+}
+

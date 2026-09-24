@@ -1,0 +1,200 @@
+Type: Code.GameLogic.GameEvents.MysteryMachineItemSetInfo
+
+Method: Code.GameLogic.GameEvents.MysteryMachineItemSetId get_ConfigKey()
+
+Disassembly:
+	0x0332F0D0 BL 0x239BA54
+	0x0332F0D4 SUB X31, X31, 0x40
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_ConfigKey(Code.GameLogic.GameEvents.MysteryMachineItemSetId value)
+
+Disassembly:
+	0x0332F0D8 STR X30, [X31 + 0x10]
+	0x0332F0DC STP X22, X21, [X31 + 0x20]
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Collections.Generic.List`1<Metaplay.Core.MetaRef`1<Code.GameLogic.GameEvents.MysteryMachineItemInfo>> get_ItemRefs()
+
+Disassembly:
+	0x0332F0E0 STP X20, X19, [X31 + 0x30]
+	0x0332F0E4 ADRP X20, 0x29F9000
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_ItemRefs(System.Collections.Generic.List`1<Metaplay.Core.MetaRef`1<Code.GameLogic.GameEvents.MysteryMachineItemInfo>> value)
+
+Disassembly:
+	0x0332F0E8 MOV X19, X0
+	0x0332F0EC LDRB W8, [X20 + 0x5E2]
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Int32 get_ExperimentPriority()
+
+Disassembly:
+	0x0332F0F0 TBNZ X8, 0x0, 0x332F12C
+	0x0332F0F4 ADRP X0, 0x239F000
+
+ISIL:
+	001 Move W0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_ExperimentPriority(System.Int32 value)
+
+Disassembly:
+	0x0332F0F8 LDR X0, [X0 + 0xE60]
+	0x0332F0FC BL 0x239B8E4
+
+ISIL:
+	001 Move [X0+32], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0332F100 ADRP X0, 0x23A3000
+	0x0332F104 LDR X0, [X0 + 0x588]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(Code.GameLogic.GameEvents.MysteryMachineItemSetId configKey, System.Collections.Generic.List`1<Metaplay.Core.MetaRef`1<Code.GameLogic.GameEvents.MysteryMachineItemInfo>> itemRefs, System.Int32 experimentPriority)
+
+Disassembly:
+	0x0332F108 BL 0x239B8E4
+	0x0332F10C ADRP X0, 0x239F000
+	0x0332F110 LDR X0, [X0 + 0x460]
+	0x0332F114 BL 0x239B8E4
+	0x0332F118 ADRP X0, 0x23C6000
+	0x0332F11C LDR X0, [X0 + 0x920]
+	0x0332F120 BL 0x239B8E4
+	0x0332F124 MOVZ W8, 0x1
+	0x0332F128 STRB W8, [X20 + 0x5E2]
+	0x0332F12C STR W31, [X31 + 0xC]
+	0x0332F130 CBZ X19, 0x332F210
+	0x0332F134 LDR W8, [X19 + 0x18]
+	0x0332F138 CMP W8, 0x0
+	0x0332F13C B.LE 0x332F210
+	0x0332F140 CMP W8, 0x1
+	0x0332F144 B.EQ 0x332F250
+	0x0332F148 ADRP X21, 0x239F000
+	0x0332F14C ADD X2, X31, 0x18
+	0x0332F150 MOV X0, X19
+	0x0332F154 LDR X21, [X21 + 0x460]
+	0x0332F158 MOV W1, W31
+	0x0332F15C LDR X3, [X21]
+	0x0332F160 BL 0x272B3C4
+	0x0332F164 LDR X0, [X31 + 0x18]
+	0x0332F168 MOV X1, X31
+	0x0332F16C BL 0x32A7778
+	0x0332F170 CBZ W0, 0x332F270
+	0x0332F174 ADRP X22, 0x239F000
+	0x0332F178 MOV W20, W0
+	0x0332F17C ADD X2, X31, 0x18
+	0x0332F180 LDR X22, [X22 + 0xE60]
+	0x0332F184 LDR X3, [X21]
+	0x0332F188 MOV X0, X19
+	0x0332F18C MOVZ W1, 0x1
+	0x0332F190 BL 0x272B3C4
+	0x0332F194 LDR X0, [X22]
+	0x0332F198 LDR X19, [X31 + 0x18]
+	0x0332F19C LDR W8, [X0 + 0xE4]
+	0x0332F1A0 CBNZ W8, 0x332F1A8
+	0x0332F1A4 BL 0x239BA64
+	0x0332F1A8 MOV X0, X31
+	0x0332F1AC BL 0x4437E58
+	0x0332F1B0 MOV X2, X0
+	0x0332F1B4 ADD X3, X31, 0xC
+	0x0332F1B8 MOV X0, X19
+	0x0332F1BC MOVZ W1, 0x7
+	0x0332F1C0 MOV X4, X31
+	0x0332F1C4 BL 0x44A26E8
+	0x0332F1C8 TBZ X0, 0x0, 0x332F230
+	0x0332F1CC LDR W19, [X31 + 0xC]
+	0x0332F1D0 CMP W19, 0x0
+	0x0332F1D4 B.LE 0x332F230
+	0x0332F1D8 ADRP X8, 0x23C6000
+	0x0332F1DC LDR X8, [X8 + 0x920]
+	0x0332F1E0 LDR X0, [X8]
+	0x0332F1E4 BL 0x239BB80
+	0x0332F1E8 MOV W1, W20
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31-40], X23
+	003 Move [X31+16], X22
+	004 Move [X31+24], X21
+	005 Move [X31+32], X20
+	006 Move [X31+40], X19
+	007 Move W19, W3
+	008 Move X20, X2
+	009 Move W8, [0x29FD5AB]
+	010 Move X22, X1
+	011 Move X21, X0
+	012 Move TEMP, X8
+	013 And TEMP, TEMP, 1
+	014 Compare TEMP, 1
+	015 JumpIfEqual {20}
+	016 Move X0, [0x23CA208]
+	017 Call 0x239F8E4
+	018 Move W8, 1
+	019 Move [X23+1451], W8
+	020 Move X0, X21
+	021 Move X1, X31
+	022 Call Object..ctor, X0
+	023 Compare X20, 0
+	024 Invalid "Jump target not found in method."
+	025 Move W8, [X20+24]
+	026 Compare W8, 0
+	027 Invalid "Jump target not found in method."
+	028 Move X0, X21
+	029 Move X1, X22
+	030 Move [X0+16], X22
+	031 Call 0x239F888
+	032 Move [X21+24], X20
+	033 Move X0, X21
+	034 Move X1, X20
+	035 Call 0x239F888
+	036 Move [X21+8], W19
+	037 Move X20, [X31+32]
+	038 Move X19, [X31+40]
+	039 Move X22, [X31+16]
+	040 Move X21, [X31+24]
+	041 Move X30, [X31+48]
+	042 Move X23, [X31+56]
+	043 Return 
+	044 Move X0, [0x23A5E90]
+	045 Call 0x239F8F8
+	046 Call 0x239FB80
+	047 Move X19, X0
+	048 Move X0, [0x23EDCB8]
+	049 Call 0x239F8F8
+	050 Move X20, X0
+	051 Move X0, [0x23EDCC0]
+	052 Call 0x239F8F8
+	053 Move X2, X0
+	054 Move X0, X19
+	055 Move X1, X20
+	056 Move X3, X31
+	057 Call ArgumentException..ctor, X0, X1, X2
+	058 Move X0, [0x23EDCC8]
+	059 Call 0x239F8F8
+	060 Move X1, X0
+	061 Move X0, X19
+	062 Call 0x239FA54
+

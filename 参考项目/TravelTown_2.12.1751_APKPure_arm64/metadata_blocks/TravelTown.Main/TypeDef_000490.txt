@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class RemoteSpawningModel.<>c // TypeDefIndex: 490
+{
+	// Fields
+	public static readonly RemoteSpawningModel.<>c <>9; // 0x0
+	public static Func<IMergeItem, string> <>9__12_0; // 0x8
+	public static Func<RemoteSpawningModel.ExpiryItem, string> <>9__26_1; // 0x10
+
+	// Methods
+
+	// RVA: 0x6133178 Offset: 0x612F178 VA: 0x6133178
+	private static void .cctor() { }
+
+	// RVA: 0x61331E0 Offset: 0x612F1E0 VA: 0x61331E0
+	public void .ctor() { }
+
+	// RVA: 0x61331E8 Offset: 0x612F1E8 VA: 0x61331E8
+	internal string <GetNextItem>b__12_0(IMergeItem i) { }
+
+	// RVA: 0x6133284 Offset: 0x612F284 VA: 0x6133284
+	internal string <ClearAllExpiredItems>b__26_1(RemoteSpawningModel.ExpiryItem item) { }
+}
+

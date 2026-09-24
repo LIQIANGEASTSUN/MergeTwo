@@ -1,0 +1,34 @@
+// Namespace: 
+[CompilerGenerated]
+private struct BoardTaskController.<SpawnBoardTaskItems>d__50 : IAsyncStateMachine // TypeDefIndex: 2062
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncUniTaskMethodBuilder<bool> <>t__builder; // 0x4
+	public List<BoardTaskItem> taskList; // 0x10
+	public bool isInitialize; // 0x14
+	public BoardTaskController <>4__this; // 0x18
+	public bool triggerInterstitial; // 0x1C
+	private BoardTaskController.<>c__DisplayClass50_0 <>8__1; // 0x20
+	private bool <preventRateUs>5__2; // 0x24
+	private bool <isFirst>5__3; // 0x25
+	private List<BoardTaskItem> <removalTaskItems>5__4; // 0x28
+	private List<BoardTaskItemController> <addedBoardTaskItemControllers>5__5; // 0x2C
+	private bool <isEvent>5__6; // 0x30
+	private UniTask.Awaiter <>u__1; // 0x34
+	private YieldAwaitable.Awaiter <>u__2; // 0x3C
+	private UniTask.Awaiter<bool> <>u__3; // 0x40
+	private List.Enumerator<BoardTaskItem> <>7__wrap6; // 0x48
+	private BoardTaskItem <boardTaskItem>5__8; // 0x58
+	private BoardTaskItemController <taskItemController>5__9; // 0x5C
+
+	// Methods
+
+	// RVA: 0x19665C8 Offset: 0x19665C8 VA: 0x19665C8 Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x1968C44 Offset: 0x1968C44 VA: 0x1968C44 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

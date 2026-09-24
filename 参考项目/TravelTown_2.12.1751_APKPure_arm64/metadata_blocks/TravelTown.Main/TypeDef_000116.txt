@@ -1,0 +1,35 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class TwoDArray.<>c__DisplayClass17_0<T> // TypeDefIndex: 116
+{
+	// Fields
+	public Action<T> action; // 0x0
+	public Action<T> <>9__1; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F3F7A0 Offset: 0x3F3B7A0 VA: 0x3F3F7A0
+	|-TwoDArray.<>c__DisplayClass17_0<object>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal void <ForEach>b__0(T[] array) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F3F7A8 Offset: 0x3F3B7A8 VA: 0x3F3F7A8
+	|-TwoDArray.<>c__DisplayClass17_0<object>.<ForEach>b__0
+	*/
+
+	// RVA: -1 Offset: -1
+	internal void <ForEach>b__1(T item) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F3F834 Offset: 0x3F3B834 VA: 0x3F3F834
+	|-TwoDArray.<>c__DisplayClass17_0<object>.<ForEach>b__1
+	*/
+}
+

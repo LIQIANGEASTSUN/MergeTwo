@@ -1,0 +1,29 @@
+// Namespace: MergeEngine.ECS.Systems.Items
+public class MergeItemBoosterComponent : ComponentBase, IRemoteLoadedComponent<SerializedMergeItemBoosterComponent> // TypeDefIndex: 937
+{
+	// Fields
+	public string BoosterItemUUId; // 0x20
+	public string BoosterConfigurationId; // 0x28
+	[CompilerGenerated]
+	private bool <ShouldSkipDestroy>k__BackingField; // 0x30
+
+	// Properties
+	public bool ShouldSkipDestroy { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x67897F4 Offset: 0x67857F4 VA: 0x67897F4
+	public bool get_ShouldSkipDestroy() { }
+
+	[CompilerGenerated]
+	// RVA: 0x67897FC Offset: 0x67857FC VA: 0x67897FC
+	public void set_ShouldSkipDestroy(bool value) { }
+
+	// RVA: 0x6789808 Offset: 0x6785808 VA: 0x6789808
+	public void .ctor(Entity entity) { }
+
+	// RVA: 0x6789810 Offset: 0x6785810 VA: 0x6789810 Slot: 7
+	public void LoadComponent(SerializedMergeItemBoosterComponent componentData) { }
+}
+

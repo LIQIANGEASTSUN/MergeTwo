@@ -1,0 +1,24 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public class KillComponent : ComponentBase // TypeDefIndex: 1079
+{
+	// Fields
+	[CompilerGenerated]
+	private string <Source>k__BackingField; // 0x20
+
+	// Properties
+	public string Source { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x68FD4E8 Offset: 0x68F94E8 VA: 0x68FD4E8
+	public string get_Source() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD4F0 Offset: 0x68F94F0 VA: 0x68FD4F0
+	public void set_Source(string value) { }
+
+	// RVA: 0x68FD4F8 Offset: 0x68F94F8 VA: 0x68FD4F8
+	public void .ctor(Entity entity) { }
+}
+

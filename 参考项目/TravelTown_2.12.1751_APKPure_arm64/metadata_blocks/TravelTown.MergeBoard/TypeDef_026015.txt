@@ -1,0 +1,58 @@
+// Namespace: Merger.MergeBoard.Components
+public struct ProducerComponent : IComponent // TypeDefIndex: 26015
+{
+	// Fields
+	[CompilerGenerated]
+	private ItemSpawningQueue <ItemsQueue>k__BackingField; // 0x0
+	[CompilerGenerated]
+	private int <Seed>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private ProduceCapability <Capability>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private bool <ReadyToProduce>k__BackingField; // 0x18
+
+	// Properties
+	public ItemSpawningQueue ItemsQueue { get; set; }
+	public int Seed { get; set; }
+	public ProduceCapability Capability { get; set; }
+	public bool ReadyToProduce { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9C2B8 Offset: 0x6A982B8 VA: 0x6A9C2B8
+	public ItemSpawningQueue get_ItemsQueue() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C2C0 Offset: 0x6A982C0 VA: 0x6A9C2C0
+	public void set_ItemsQueue(ItemSpawningQueue value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9C2C8 Offset: 0x6A982C8 VA: 0x6A9C2C8
+	public int get_Seed() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C2D0 Offset: 0x6A982D0 VA: 0x6A9C2D0
+	public void set_Seed(int value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9C2D8 Offset: 0x6A982D8 VA: 0x6A9C2D8
+	public ProduceCapability get_Capability() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C2E0 Offset: 0x6A982E0 VA: 0x6A9C2E0
+	public void set_Capability(ProduceCapability value) { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9C2E8 Offset: 0x6A982E8 VA: 0x6A9C2E8
+	public bool get_ReadyToProduce() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C2F0 Offset: 0x6A982F0 VA: 0x6A9C2F0
+	public void set_ReadyToProduce(bool value) { }
+}
+

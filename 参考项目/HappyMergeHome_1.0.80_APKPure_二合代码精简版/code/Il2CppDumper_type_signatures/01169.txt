@@ -1,0 +1,86 @@
+// Namespace: 
+[Serializable]
+public class SummerWatermelonNineConfig : TableBase // TypeDefIndex: 1169
+{
+	// Fields
+	[CompilerGenerated]
+	private int <Id>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private int <LineId>k__BackingField; // 0xC
+	[CompilerGenerated]
+	private List<int> <InitItems>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private int <LineIdChild>k__BackingField; // 0x14
+	[CompilerGenerated]
+	private int <BigBoardUnlockLevel>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private List<int> <NoRecycleItems>k__BackingField; // 0x1C
+
+	// Properties
+	public int Id { get; set; }
+	public int LineId { get; set; }
+	public List<int> InitItems { get; set; }
+	public int LineIdChild { get; set; }
+	public int BigBoardUnlockLevel { get; set; }
+	public List<int> NoRecycleItems { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x1FFDC20 Offset: 0x1FFDC20 VA: 0x1FFDC20
+	public int get_Id() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1FFDC28 Offset: 0x1FFDC28 VA: 0x1FFDC28
+	public void set_Id(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1FFDC30 Offset: 0x1FFDC30 VA: 0x1FFDC30
+	public int get_LineId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1FFDC38 Offset: 0x1FFDC38 VA: 0x1FFDC38
+	public void set_LineId(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1FFDC40 Offset: 0x1FFDC40 VA: 0x1FFDC40
+	public List<int> get_InitItems() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1FFDC48 Offset: 0x1FFDC48 VA: 0x1FFDC48
+	public void set_InitItems(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1FFDC50 Offset: 0x1FFDC50 VA: 0x1FFDC50
+	public int get_LineIdChild() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1FFDC58 Offset: 0x1FFDC58 VA: 0x1FFDC58
+	public void set_LineIdChild(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1FFDC60 Offset: 0x1FFDC60 VA: 0x1FFDC60
+	public int get_BigBoardUnlockLevel() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1FFDC68 Offset: 0x1FFDC68 VA: 0x1FFDC68
+	public void set_BigBoardUnlockLevel(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1FFDC70 Offset: 0x1FFDC70 VA: 0x1FFDC70
+	public List<int> get_NoRecycleItems() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1FFDC78 Offset: 0x1FFDC78 VA: 0x1FFDC78
+	public void set_NoRecycleItems(List<int> value) { }
+
+	// RVA: 0x1FFDC80 Offset: 0x1FFDC80 VA: 0x1FFDC80 Slot: 4
+	public override int GetID() { }
+
+	// RVA: 0x1FFDCD4 Offset: 0x1FFDCD4 VA: 0x1FFDCD4
+	public void .ctor() { }
+
+	// RVA: 0x1FFDCDC Offset: 0x1FFDCDC VA: 0x1FFDCDC
+	public int <>iFixBaseProxy_GetID() { }
+}
+

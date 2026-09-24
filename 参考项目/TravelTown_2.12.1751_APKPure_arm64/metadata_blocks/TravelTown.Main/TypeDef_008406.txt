@@ -1,0 +1,19 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class DisplayableBoardQueueModel.<>c__DisplayClass17_0 // TypeDefIndex: 8406
+{
+	// Fields
+	public HashSet<string> excluded; // 0x10
+
+	// Methods
+
+	// RVA: 0x6671E70 Offset: 0x666DE70 VA: 0x6671E70
+	public void .ctor() { }
+
+	// RVA: 0x6671F5C Offset: 0x666DF5C VA: 0x6671F5C
+	internal bool <Recalculate>b__0(QueuedItem x) { }
+
+	// RVA: 0x6671FC4 Offset: 0x666DFC4 VA: 0x6671FC4
+	internal bool <Recalculate>b__1(QueuedItem x) { }
+}
+

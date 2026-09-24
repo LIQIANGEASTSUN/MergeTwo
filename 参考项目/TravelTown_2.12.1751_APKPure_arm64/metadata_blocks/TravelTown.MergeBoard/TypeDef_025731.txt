@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ExpendableTimerActivationSystem.<>c // TypeDefIndex: 25731
+{
+	// Fields
+	public static readonly ExpendableTimerActivationSystem.<>c <>9; // 0x0
+	public static Func<ValueTuple<Entity, ExpendableComponent, IdComponent, InteractionComponent, PendingInteractionComponent, TimeLimitedActivationComponent, TimeDurationComponent>, bool> <>9__6_0; // 0x8
+	public static Func<ValueTuple<Entity, ExpendableComponent, TimeLimitedActivationComponent, TimeDurationComponent>, bool> <>9__7_0; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A6727C Offset: 0x6A6327C VA: 0x6A6727C
+	private static void .cctor() { }
+
+	// RVA: 0x6A672E4 Offset: 0x6A632E4 VA: 0x6A672E4
+	public void .ctor() { }
+
+	// RVA: 0x6A672EC Offset: 0x6A632EC VA: 0x6A672EC
+	internal bool <HandleFirstTimeProduceTrigger>b__6_0(ValueTuple<Entity, ExpendableComponent, IdComponent, InteractionComponent, PendingInteractionComponent, TimeLimitedActivationComponent, TimeDurationComponent> entity) { }
+
+	// RVA: 0x6A67320 Offset: 0x6A63320 VA: 0x6A67320
+	internal bool <HandleCreatedTrigger>b__7_0(ValueTuple<Entity, ExpendableComponent, TimeLimitedActivationComponent, TimeDurationComponent> entity) { }
+}
+

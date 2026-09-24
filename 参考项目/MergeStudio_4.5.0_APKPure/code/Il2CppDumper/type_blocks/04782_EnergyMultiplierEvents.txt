@@ -1,0 +1,24 @@
+// Namespace: MergePuzzle.EnergyMultiplier
+public class EnergyMultiplierEvents // TypeDefIndex: 4782
+{
+	// Methods
+
+	// RVA: 0x1DC43B0 Offset: 0x1DC43B0 VA: 0x1DC43B0
+	public static void RaiseMultiplierActivatedEvent(int multiplier) { }
+
+	// RVA: 0x1DC4434 Offset: 0x1DC4434 VA: 0x1DC4434
+	public static void RaiseMultiplierViewChangedEvent(int multiplier) { }
+
+	// RVA: 0x1DC44B8 Offset: 0x1DC44B8 VA: 0x1DC44B8
+	public static void RaiseMultiplierEntityChangedEvent(int multiplier) { }
+
+	// RVA: 0x1DC453C Offset: 0x1DC453C VA: 0x1DC453C
+	public static void RaisePopupClosedEvent(int selectedMultiplier, int unlockedMultiplier, EnergyMultiplierPopupType popupType) { }
+
+	// RVA: 0x1DC45D0 Offset: 0x1DC45D0 VA: 0x1DC45D0
+	public static void RaiseCheckMultiplierPopupsEvent() { }
+
+	// RVA: 0x1DC4650 Offset: 0x1DC4650 VA: 0x1DC4650
+	public void .ctor() { }
+}
+

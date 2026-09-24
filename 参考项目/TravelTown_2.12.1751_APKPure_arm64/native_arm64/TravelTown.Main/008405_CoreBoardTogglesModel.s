@@ -1,0 +1,135 @@
+; Capstone 4 disassembly of Travel Town 2.12.1751 libil2cpp.so
+; TypeDefIndex 8405 Merger.Game.Model.CoreBoardTogglesModel
+; Boundaries: next address in Il2CppDumper script.json; these bounds are inferred.
+
+; RVA 0x66712C8 | public bool get_IsNewMainBackgroundEnabled() { }
+; bytes=240 sha256=f1983249bf350dd0c24a74b58151d93c0fb3f59e15ea637d398d7e8a67e2ee05 status=arm64_complete_bound indexed_start=True
+0x066712C8: ffc300d1  sub sp, sp, #0x30
+0x066712CC: fe5701a9  stp x30, x21, [sp, #0x10]
+0x066712D0: f44f02a9  stp x20, x19, [sp, #0x20]
+0x066712D4: b4b500f0  adrp x20, #0x7d28000
+0x066712D8: 88ae4439  ldrb w8, [x20, #0x12b]
+0x066712DC: f30300aa  mov x19, x0
+0x066712E0: 28010037  tbnz w8, #0, #0x6671304
+0x066712E4: 408300d0  adrp x0, #0x76db000
+0x066712E8: 006042f9  ldr x0, [x0, #0x4c0]
+0x066712EC: cb3d2c97  bl #0x3180a18
+0x066712F0: a08400f0  adrp x0, #0x7708000
+0x066712F4: 00f440f9  ldr x0, [x0, #0x1e8]
+0x066712F8: c83d2c97  bl #0x3180a18
+0x066712FC: 28008052  movz w8, #0x1
+0x06671300: 88ae0439  strb w8, [x20, #0x12b]
+0x06671304: ff330039  strb wzr, [sp, #0xc]
+0x06671308: 731640f9  ldr x19, [x19, #0x28]
+0x0667130C: 530500b4  cbz x19, #0x66713b4
+0x06671310: 498300d0  adrp x9, #0x76db000
+0x06671314: 296142f9  ldr x9, [x9, #0x4c0]
+0x06671318: 680240f9  ldr x8, [x19]
+0x0667131C: 350140f9  ldr x21, [x9]
+0x06671320: a98400f0  adrp x9, #0x7708000
+0x06671324: 29f540f9  ldr x9, [x9, #0x1e8]
+0x06671328: a11240f9  ldr x1, [x21, #0x20]
+0x0667132C: a2a24079  ldrh w2, [x21, #0x50]
+0x06671330: 340140f9  ldr x20, [x9]
+0x06671334: 095d4279  ldrh w9, [x8, #0x12e]
+0x06671338: 290100b4  cbz x9, #0x667135c
+0x0667133C: 0a5940f9  ldr x10, [x8, #0xb0]
+0x06671340: 4a210091  add x10, x10, #8
+0x06671344: 4b815ff8  ldur x11, [x10, #-8]
+0x06671348: 7f0101eb  cmp x11, x1
+0x0667134C: e0000054  b.eq #0x6671368
+0x06671350: 290500f1  subs x9, x9, #1
+0x06671354: 4a410091  add x10, x10, #0x10
+0x06671358: 61ffff54  b.ne #0x6671344
+0x0667135C: e00313aa  mov x0, x19
+0x06671360: ec952b97  bl #0x3156b10
+0x06671364: 05000014  b #0x6671378
+0x06671368: 490140b9  ldr w9, [x10]
+0x0667136C: 2901020b  add w9, w9, w2
+0x06671370: 08d1298b  add x8, x8, w9, sxtw #4
+0x06671374: 00e10491  add x0, x8, #0x138
+0x06671378: 000440f9  ldr x0, [x0, #8]
+0x0667137C: e10315aa  mov x1, x21
+0x06671380: 023e2c97  bl #0x3180b88
+0x06671384: 080440f9  ldr x8, [x0, #8]
+0x06671388: e40300aa  mov x4, x0
+0x0667138C: e3330091  add x3, sp, #0xc
+0x06671390: 22008052  movz w2, #0x1
+0x06671394: e00313aa  mov x0, x19
+0x06671398: e10314aa  mov x1, x20
+0x0667139C: 00013fd6  blr x8
+0x066713A0: e0334039  ldrb w0, [sp, #0xc]
+0x066713A4: f44f42a9  ldp x20, x19, [sp, #0x20]
+0x066713A8: fe5741a9  ldp x30, x21, [sp, #0x10]
+0x066713AC: ffc30091  add sp, sp, #0x30
+0x066713B0: c0035fd6  ret
+0x066713B4: 3e3e2c97  bl #0x3180cac
+
+; RVA 0x66713B8 | public bool get_IsNewCoreBoardBackgroundAndBlockersEnabled() { }
+; bytes=240 sha256=12f4a966b48c2e5fd0df28b2beffea11e8a3f35fb135fcf4271f59d6e794d193 status=arm64_complete_bound indexed_start=True
+0x066713B8: ffc300d1  sub sp, sp, #0x30
+0x066713BC: fe5701a9  stp x30, x21, [sp, #0x10]
+0x066713C0: f44f02a9  stp x20, x19, [sp, #0x20]
+0x066713C4: b4b500f0  adrp x20, #0x7d28000
+0x066713C8: 88b24439  ldrb w8, [x20, #0x12c]
+0x066713CC: f30300aa  mov x19, x0
+0x066713D0: 28010037  tbnz w8, #0, #0x66713f4
+0x066713D4: 408300d0  adrp x0, #0x76db000
+0x066713D8: 006042f9  ldr x0, [x0, #0x4c0]
+0x066713DC: 8f3d2c97  bl #0x3180a18
+0x066713E0: a08400f0  adrp x0, #0x7708000
+0x066713E4: 00f840f9  ldr x0, [x0, #0x1f0]
+0x066713E8: 8c3d2c97  bl #0x3180a18
+0x066713EC: 28008052  movz w8, #0x1
+0x066713F0: 88b20439  strb w8, [x20, #0x12c]
+0x066713F4: ff330039  strb wzr, [sp, #0xc]
+0x066713F8: 731640f9  ldr x19, [x19, #0x28]
+0x066713FC: 530500b4  cbz x19, #0x66714a4
+0x06671400: 498300d0  adrp x9, #0x76db000
+0x06671404: 296142f9  ldr x9, [x9, #0x4c0]
+0x06671408: 680240f9  ldr x8, [x19]
+0x0667140C: 350140f9  ldr x21, [x9]
+0x06671410: a98400f0  adrp x9, #0x7708000
+0x06671414: 29f940f9  ldr x9, [x9, #0x1f0]
+0x06671418: a11240f9  ldr x1, [x21, #0x20]
+0x0667141C: a2a24079  ldrh w2, [x21, #0x50]
+0x06671420: 340140f9  ldr x20, [x9]
+0x06671424: 095d4279  ldrh w9, [x8, #0x12e]
+0x06671428: 290100b4  cbz x9, #0x667144c
+0x0667142C: 0a5940f9  ldr x10, [x8, #0xb0]
+0x06671430: 4a210091  add x10, x10, #8
+0x06671434: 4b815ff8  ldur x11, [x10, #-8]
+0x06671438: 7f0101eb  cmp x11, x1
+0x0667143C: e0000054  b.eq #0x6671458
+0x06671440: 290500f1  subs x9, x9, #1
+0x06671444: 4a410091  add x10, x10, #0x10
+0x06671448: 61ffff54  b.ne #0x6671434
+0x0667144C: e00313aa  mov x0, x19
+0x06671450: b0952b97  bl #0x3156b10
+0x06671454: 05000014  b #0x6671468
+0x06671458: 490140b9  ldr w9, [x10]
+0x0667145C: 2901020b  add w9, w9, w2
+0x06671460: 08d1298b  add x8, x8, w9, sxtw #4
+0x06671464: 00e10491  add x0, x8, #0x138
+0x06671468: 000440f9  ldr x0, [x0, #8]
+0x0667146C: e10315aa  mov x1, x21
+0x06671470: c63d2c97  bl #0x3180b88
+0x06671474: 080440f9  ldr x8, [x0, #8]
+0x06671478: e40300aa  mov x4, x0
+0x0667147C: e3330091  add x3, sp, #0xc
+0x06671480: 22008052  movz w2, #0x1
+0x06671484: e00313aa  mov x0, x19
+0x06671488: e10314aa  mov x1, x20
+0x0667148C: 00013fd6  blr x8
+0x06671490: e0334039  ldrb w0, [sp, #0xc]
+0x06671494: f44f42a9  ldp x20, x19, [sp, #0x20]
+0x06671498: fe5741a9  ldp x30, x21, [sp, #0x10]
+0x0667149C: ffc30091  add sp, sp, #0x30
+0x066714A0: c0035fd6  ret
+0x066714A4: 023e2c97  bl #0x3180cac
+
+; RVA 0x66714A8 | public void .ctor() { }
+; bytes=8 sha256=3aa8689ef1e955585104684409d5e60a72a769fc9e7163a4f3f70f3a63054e76 status=arm64_complete_bound indexed_start=True
+0x066714A8: e1031faa  mov x1, xzr
+0x066714AC: ab6a0b14  b #0x694bf58
+

@@ -1,0 +1,14 @@
+// Namespace: MergeEngine.ECS.Components.Items
+[Serializable]
+public class SerializedPositionComponent // TypeDefIndex: 1086
+{
+	// Fields
+	public int Column; // 0x10
+	public int Row; // 0x14
+
+	// Methods
+
+	// RVA: 0x68FDCE8 Offset: 0x68F9CE8 VA: 0x68FDCE8
+	public void .ctor() { }
+}
+

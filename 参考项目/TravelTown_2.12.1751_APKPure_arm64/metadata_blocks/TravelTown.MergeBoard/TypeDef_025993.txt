@@ -1,0 +1,22 @@
+// Namespace: Merger.MergeBoard.Components
+public struct ConfirmedItemsCombinationComponent : IComponent // TypeDefIndex: 25993
+{
+	// Fields
+	[CompilerGenerated]
+	private MergeCheckItemType <MergeCheckItemType>k__BackingField; // 0x0
+
+	// Properties
+	public MergeCheckItemType MergeCheckItemType { get; set; }
+
+	// Methods
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9BD5C Offset: 0x6A97D5C VA: 0x6A9BD5C
+	public MergeCheckItemType get_MergeCheckItemType() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BD64 Offset: 0x6A97D64 VA: 0x6A9BD64
+	public void set_MergeCheckItemType(MergeCheckItemType value) { }
+}
+

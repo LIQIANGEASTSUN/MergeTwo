@@ -1,0 +1,75 @@
+// Namespace: 
+[Serializable]
+public class SummerWatermelonTwentyTwoProductConfig : TableBase // TypeDefIndex: 1442
+{
+	// Fields
+	[CompilerGenerated]
+	private int <Id>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private int <ItemId>k__BackingField; // 0xC
+	[CompilerGenerated]
+	private List<int> <OutPut>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private List<int> <Weight>k__BackingField; // 0x14
+	[CompilerGenerated]
+	private int <MaxWeight>k__BackingField; // 0x18
+
+	// Properties
+	public int Id { get; set; }
+	public int ItemId { get; set; }
+	public List<int> OutPut { get; set; }
+	public List<int> Weight { get; set; }
+	public int MaxWeight { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x2148A5C Offset: 0x2148A5C VA: 0x2148A5C
+	public int get_Id() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2148A64 Offset: 0x2148A64 VA: 0x2148A64
+	public void set_Id(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2148A6C Offset: 0x2148A6C VA: 0x2148A6C
+	public int get_ItemId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2148A74 Offset: 0x2148A74 VA: 0x2148A74
+	public void set_ItemId(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2148A7C Offset: 0x2148A7C VA: 0x2148A7C
+	public List<int> get_OutPut() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2148A84 Offset: 0x2148A84 VA: 0x2148A84
+	public void set_OutPut(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2148A8C Offset: 0x2148A8C VA: 0x2148A8C
+	public List<int> get_Weight() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2148A94 Offset: 0x2148A94 VA: 0x2148A94
+	public void set_Weight(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2148A9C Offset: 0x2148A9C VA: 0x2148A9C
+	public int get_MaxWeight() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2148AA4 Offset: 0x2148AA4 VA: 0x2148AA4
+	public void set_MaxWeight(int value) { }
+
+	// RVA: 0x2148AAC Offset: 0x2148AAC VA: 0x2148AAC Slot: 4
+	public override int GetID() { }
+
+	// RVA: 0x2148B00 Offset: 0x2148B00 VA: 0x2148B00
+	public void .ctor() { }
+
+	// RVA: 0x2148B08 Offset: 0x2148B08 VA: 0x2148B08
+	public int <>iFixBaseProxy_GetID() { }
+}
+

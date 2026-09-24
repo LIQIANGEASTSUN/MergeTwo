@@ -1,0 +1,537 @@
+// Namespace: Paxie.MergeStudio.Features.MiniBoard
+public class MiniBoardItemController : BaseSubscriber, ITutorialSetSorting, IEventReceiver<CanvasEvent.ToggleScreenInputBlocker>, IEventReceiverBase, IEventReceiver<SrDebuggerEvent.ShowDebugLayers>, IEventReceiver<BaseMiniBoardEvent.BoardItemRemoveFinished>, IEventReceiver<BaseMiniBoardEntityUpdateEvent.BoardItemStatusChange>, IItemController // TypeDefIndex: 1128
+{
+	// Fields
+	public static float BoardImageJellyScale; // 0x0
+	public static float BoardImageDefaultScale; // 0x4
+	public Action<SortingData> OnItemSortingUpdated; // 0x1C
+	[BoxGroup("Item")]
+	public MiniBoardItemControllerItemIcon ItemIcon; // 0x20
+	[Foldout("Animation")]
+	public AnimationController AnimationController; // 0x24
+	[Foldout("Animation")]
+	public AnimationLoop SpawnerHint; // 0x28
+	[Foldout("Animation")]
+	public AnimationLoop ClickLoop; // 0x2C
+	[Foldout("Animation")]
+	public AnimationItem MergeDisappear; // 0x30
+	[Foldout("Animation")]
+	public AnimationItem MergeMoveBehind; // 0x34
+	[Foldout("Animation")]
+	public AnimationItem DragScaleUp; // 0x38
+	[Foldout("Animation")]
+	public AnimationItem DragScaleDown; // 0x3C
+	[CompilerGenerated]
+	private SortingGroup <SortingGroup>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private MiniBoardItemParticleController <ItemParticleController>k__BackingField; // 0x44
+	[CompilerGenerated]
+	private MiniBoardItemRuntimeData <ItemRuntimeData>k__BackingField; // 0x48
+	[CompilerGenerated]
+	private MiniBoardMovable <Movable>k__BackingField; // 0x4C
+	[CompilerGenerated]
+	private BaseMiniBoardController <Board>k__BackingField; // 0x50
+	[CompilerGenerated]
+	private Collider2D <Collider2D>k__BackingField; // 0x54
+	[CompilerGenerated]
+	private SortingData <SortingData>k__BackingField; // 0x58
+	private Coordinate _lastGameObjectBoardIndex; // 0x5C
+	private bool _initialized; // 0x64
+	[CompilerGenerated]
+	private MiniBoardItemControllerMaxBadge <ItemControllerMaxBadge>k__BackingField; // 0x68
+	[CompilerGenerated]
+	private MiniBoardItemControllerDebug <ItemControllerDebug>k__BackingField; // 0x6C
+	[CompilerGenerated]
+	private MiniBoardItemControllerBox <ItemControllerBox>k__BackingField; // 0x70
+	[CompilerGenerated]
+	private MiniBoardItemControllerLock <ItemControllerLock>k__BackingField; // 0x74
+	[CompilerGenerated]
+	private MiniBoardItemControllerRewardIcon <ItemRewardIcon>k__BackingField; // 0x78
+	[CompilerGenerated]
+	private MiniBoardItemControllerRewardHolderIcon <ItemRewardHolderIcon>k__BackingField; // 0x7C
+
+	// Properties
+	public Transform IconTransform { get; }
+	public SortingGroup SortingGroup { get; set; }
+	public MiniBoardItemParticleController ItemParticleController { get; set; }
+	public MiniBoardItemRuntimeData ItemRuntimeData { get; set; }
+	public MiniBoardMovable Movable { get; set; }
+	public BaseMiniBoardController Board { get; set; }
+	public Collider2D Collider2D { get; set; }
+	public SortingData SortingData { get; set; }
+	public MiniBoardItemControllerMaxBadge ItemControllerMaxBadge { get; set; }
+	public MiniBoardItemControllerDebug ItemControllerDebug { get; set; }
+	public MiniBoardItemControllerBox ItemControllerBox { get; set; }
+	public MiniBoardItemControllerLock ItemControllerLock { get; set; }
+	public MiniBoardItemControllerRewardIcon ItemRewardIcon { get; set; }
+	public MiniBoardItemControllerRewardHolderIcon ItemRewardHolderIcon { get; set; }
+	public IBoardController GetBoardController { get; }
+	public IItemRuntimeData GetRuntimeData { get; }
+
+	// Methods
+
+	// RVA: 0x17BA910 Offset: 0x17BA910 VA: 0x17BA910
+	public Transform get_IconTransform() { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA934 Offset: 0x17BA934 VA: 0x17BA934
+	public SortingGroup get_SortingGroup() { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA93C Offset: 0x17BA93C VA: 0x17BA93C
+	private void set_SortingGroup(SortingGroup value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA944 Offset: 0x17BA944 VA: 0x17BA944
+	public MiniBoardItemParticleController get_ItemParticleController() { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA94C Offset: 0x17BA94C VA: 0x17BA94C
+	public void set_ItemParticleController(MiniBoardItemParticleController value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA954 Offset: 0x17BA954 VA: 0x17BA954
+	public MiniBoardItemRuntimeData get_ItemRuntimeData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA95C Offset: 0x17BA95C VA: 0x17BA95C
+	private void set_ItemRuntimeData(MiniBoardItemRuntimeData value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA964 Offset: 0x17BA964 VA: 0x17BA964
+	public MiniBoardMovable get_Movable() { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA96C Offset: 0x17BA96C VA: 0x17BA96C
+	private void set_Movable(MiniBoardMovable value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA974 Offset: 0x17BA974 VA: 0x17BA974
+	public BaseMiniBoardController get_Board() { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA97C Offset: 0x17BA97C VA: 0x17BA97C
+	private void set_Board(BaseMiniBoardController value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA984 Offset: 0x17BA984 VA: 0x17BA984
+	public Collider2D get_Collider2D() { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA98C Offset: 0x17BA98C VA: 0x17BA98C
+	private void set_Collider2D(Collider2D value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA994 Offset: 0x17BA994 VA: 0x17BA994
+	public SortingData get_SortingData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA99C Offset: 0x17BA99C VA: 0x17BA99C
+	private void set_SortingData(SortingData value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA9A4 Offset: 0x17BA9A4 VA: 0x17BA9A4
+	public MiniBoardItemControllerMaxBadge get_ItemControllerMaxBadge() { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA9AC Offset: 0x17BA9AC VA: 0x17BA9AC
+	public void set_ItemControllerMaxBadge(MiniBoardItemControllerMaxBadge value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA9B4 Offset: 0x17BA9B4 VA: 0x17BA9B4
+	public MiniBoardItemControllerDebug get_ItemControllerDebug() { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA9BC Offset: 0x17BA9BC VA: 0x17BA9BC
+	public void set_ItemControllerDebug(MiniBoardItemControllerDebug value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA9C4 Offset: 0x17BA9C4 VA: 0x17BA9C4
+	public MiniBoardItemControllerBox get_ItemControllerBox() { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA9CC Offset: 0x17BA9CC VA: 0x17BA9CC
+	public void set_ItemControllerBox(MiniBoardItemControllerBox value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA9D4 Offset: 0x17BA9D4 VA: 0x17BA9D4
+	public MiniBoardItemControllerLock get_ItemControllerLock() { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA9DC Offset: 0x17BA9DC VA: 0x17BA9DC
+	public void set_ItemControllerLock(MiniBoardItemControllerLock value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA9E4 Offset: 0x17BA9E4 VA: 0x17BA9E4
+	public MiniBoardItemControllerRewardIcon get_ItemRewardIcon() { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA9EC Offset: 0x17BA9EC VA: 0x17BA9EC
+	public void set_ItemRewardIcon(MiniBoardItemControllerRewardIcon value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA9F4 Offset: 0x17BA9F4 VA: 0x17BA9F4
+	public MiniBoardItemControllerRewardHolderIcon get_ItemRewardHolderIcon() { }
+
+	[CompilerGenerated]
+	// RVA: 0x17BA9FC Offset: 0x17BA9FC VA: 0x17BA9FC
+	public void set_ItemRewardHolderIcon(MiniBoardItemControllerRewardHolderIcon value) { }
+
+	// RVA: 0x17BAA04 Offset: 0x17BAA04 VA: 0x17BAA04 Slot: 23
+	public IBoardController get_GetBoardController() { }
+
+	// RVA: 0x17BAA0C Offset: 0x17BAA0C VA: 0x17BAA0C Slot: 24
+	public IItemRuntimeData get_GetRuntimeData() { }
+
+	// RVA: 0x17BAA14 Offset: 0x17BAA14 VA: 0x17BAA14 Slot: 25
+	public void ChangeCurrentCapacity(BoardItemSpawnerData spawnerData, float amount, bool isRewardedCapacity = False, bool animateClockDisappear = False, string changeReason = "", bool saveBoard = True) { }
+
+	// RVA: 0x17BB100 Offset: 0x17BB100 VA: 0x17BB100 Slot: 26
+	public bool PreventRecharge(bool log = False) { }
+
+	// RVA: 0x17BB2FC Offset: 0x17BB2FC VA: 0x17BB2FC Slot: 27
+	public void ArrangeOpenChestSpawnerState() { }
+
+	// RVA: 0x17BB300 Offset: 0x17BB300 VA: 0x17BB300 Slot: 28
+	public void BoardChangeState(bool animateClockDisappear) { }
+
+	// RVA: 0x17BB30C Offset: 0x17BB30C VA: 0x17BB30C Slot: 29
+	public bool ProcessSpawn(BoardItemSpawnerData boardItemSpawnerData, int energyConsumeAmount) { }
+
+	// RVA: 0x17BB38C Offset: 0x17BB38C VA: 0x17BB38C Slot: 30
+	public bool ProcessSpawn(BoardItemPerishableSpawner boardItemPerishableSpawner, int energyConsumeAmount) { }
+
+	// RVA: 0x17BB424 Offset: 0x17BB424 VA: 0x17BB424 Slot: 31
+	public bool ProcessSpawn(BoardItemChestSpawner boardItemChestSpawner, int energyConsumeAmount) { }
+
+	// RVA: 0x17BB4BC Offset: 0x17BB4BC VA: 0x17BB4BC Slot: 6
+	public override void Awake() { }
+
+	// RVA: 0x17BB78C Offset: 0x17BB78C VA: 0x17BB78C Slot: 8
+	public override void OnEnable() { }
+
+	// RVA: 0x17BB7B0 Offset: 0x17BB7B0 VA: 0x17BB7B0
+	private void OnDisable() { }
+
+	// RVA: 0x17BB7BC Offset: 0x17BB7BC VA: 0x17BB7BC Slot: 9
+	public override void OnDestroy() { }
+
+	// RVA: 0x17BB924 Offset: 0x17BB924 VA: 0x17BB924
+	public void DestroyItem() { }
+
+	// RVA: 0x17BBAEC Offset: 0x17BBAEC VA: 0x17BBAEC
+	private void OnDestroyItemKillRunTimeData() { }
+
+	// RVA: 0x17BC244 Offset: 0x17BC244 VA: 0x17BC244
+	public void RewardHolderDestroyItem() { }
+
+	// RVA: 0x17BC350 Offset: 0x17BC350 VA: 0x17BC350
+	public void RewardHolderClaimDestroyItem() { }
+
+	// RVA: 0x17BB684 Offset: 0x17BB684 VA: 0x17BB684
+	private static MiniBoardItemRuntimeData GetDefaultRuntimeData() { }
+
+	// RVA: 0x17BC518 Offset: 0x17BC518 VA: 0x17BC518
+	public void SetScale(Vector3 scale) { }
+
+	// RVA: 0x17BC554 Offset: 0x17BC554 VA: 0x17BC554 Slot: 11
+	public override void UpdatePlayingTick(float elapsedTime) { }
+
+	// RVA: 0x17BC56C Offset: 0x17BC56C VA: 0x17BC56C
+	private void ChangeGameObjectName() { }
+
+	// RVA: 0x17BC830 Offset: 0x17BC830 VA: 0x17BC830
+	private bool IsPlayingTickUnavailable() { }
+
+	// RVA: 0x17BC958 Offset: 0x17BC958 VA: 0x17BC958 Slot: 13
+	public override void UpdatePausedTick(float elapsedTime) { }
+
+	// RVA: 0x17BC9D0 Offset: 0x17BC9D0 VA: 0x17BC9D0 Slot: 12
+	public override void UpdateTutorialTick(float elapsedTime) { }
+
+	// RVA: 0x17BCAF8 Offset: 0x17BCAF8 VA: 0x17BCAF8
+	public MiniBoardPosition GetPosition() { }
+
+	// RVA: 0x17BCB48 Offset: 0x17BCB48 VA: 0x17BCB48
+	public MiniBoardCellController GetCell() { }
+
+	// RVA: 0x17BCBAC Offset: 0x17BCBAC VA: 0x17BCBAC
+	public bool IsColliderEnabled() { }
+
+	// RVA: 0x17BC324 Offset: 0x17BC324 VA: 0x17BC324
+	public void SetColliderState(bool state) { }
+
+	// RVA: 0x17BCBD0 Offset: 0x17BCBD0 VA: 0x17BCBD0
+	public bool IsItemSpawnerOrCollectable() { }
+
+	// RVA: 0x17BCD70 Offset: 0x17BCD70 VA: 0x17BCD70 Slot: 17
+	public void SetTutorialSortingData(SortingData sortingData) { }
+
+	// RVA: 0x17BCE30 Offset: 0x17BCE30 VA: 0x17BCE30 Slot: 18
+	public SortingData GetTutorialSortingData() { }
+
+	// RVA: 0x17BCECC Offset: 0x17BCECC VA: 0x17BCECC
+	public void ArrangeInitializationSortingStatus(bool enableCollisions) { }
+
+	// RVA: 0x17BCFD4 Offset: 0x17BCFD4 VA: 0x17BCFD4
+	public void StartMergeHintSorting(int offset) { }
+
+	// RVA: 0x17BD09C Offset: 0x17BD09C VA: 0x17BD09C
+	public void RestoreMergeHintSorting() { }
+
+	// RVA: 0x17BD0A4 Offset: 0x17BD0A4 VA: 0x17BD0A4
+	public void ArrangeSorting(bool moveToFront) { }
+
+	// RVA: 0x17BD1B0 Offset: 0x17BD1B0 VA: 0x17BD1B0
+	public void ArrangeSorting(int order) { }
+
+	// RVA: 0x17BCD74 Offset: 0x17BCD74 VA: 0x17BCD74
+	private void SetSortingData(SortingData sortingData) { }
+
+	[AsyncStateMachine(typeof(MiniBoardItemController.<ChangeModulesSortingData>d__108))]
+	// RVA: 0x17BD250 Offset: 0x17BD250 VA: 0x17BD250
+	private UniTaskVoid ChangeModulesSortingData(SortingData sortingData) { }
+
+	// RVA: 0x17BD30C Offset: 0x17BD30C VA: 0x17BD30C
+	private void SetCellSortingData(MiniBoardItemEntity itemEntity) { }
+
+	// RVA: 0x17BD358 Offset: 0x17BD358 VA: 0x17BD358
+	public void Initialize(BaseMiniBoardController board, BoardItemData boardItemData, MiniBoardItemEntity itemEntity, bool isNewlyCreated, bool onBoardInitialize) { }
+
+	// RVA: 0x17BD9EC Offset: 0x17BD9EC VA: 0x17BD9EC
+	private bool AddToSpawnerHint() { }
+
+	// RVA: 0x17BD50C Offset: 0x17BD50C VA: 0x17BD50C
+	private void InitializeItemRuntimeData(BoardItemData boardItemData, MiniBoardItemEntity itemEntity, bool onBoardInitialize) { }
+
+	// RVA: 0x17BD5D4 Offset: 0x17BD5D4 VA: 0x17BD5D4
+	private void InitializeStartedDefaultUIElements() { }
+
+	// RVA: 0x17BD5F8 Offset: 0x17BD5F8 VA: 0x17BD5F8
+	private void InitializeMovableStatusAndUI(BoardItemData boardItemData, MiniBoardItemEntity itemEntity, MiniBoardData boardData) { }
+
+	// RVA: 0x17BD84C Offset: 0x17BD84C VA: 0x17BD84C
+	private void InitializeLockImageAndSorting(MiniBoardItemEntity itemEntity) { }
+
+	// RVA: 0x17BD8AC Offset: 0x17BD8AC VA: 0x17BD8AC
+	private void InitializeLockImageRendererAndPosition(MiniBoardItemEntity itemEntity, MiniBoardData boardData) { }
+
+	// RVA: 0x17BD9B0 Offset: 0x17BD9B0 VA: 0x17BD9B0
+	private void InitializeItemRewardIcon(MiniBoardItemEntity itemEntity) { }
+
+	// RVA: 0x17BE39C Offset: 0x17BE39C VA: 0x17BE39C
+	public void DisableTrigger(bool disabled) { }
+
+	// RVA: 0x17BE45C Offset: 0x17BE45C VA: 0x17BE45C
+	public void Unbox(bool withAnimation) { }
+
+	// RVA: 0x17BE948 Offset: 0x17BE948 VA: 0x17BE948
+	public bool CanClickAnimation() { }
+
+	// RVA: 0x17BE97C Offset: 0x17BE97C VA: 0x17BE97C Slot: 19
+	public void OnEvent(CanvasEvent.ToggleScreenInputBlocker e) { }
+
+	// RVA: 0x17BE984 Offset: 0x17BE984 VA: 0x17BE984 Slot: 20
+	public void OnEvent(SrDebuggerEvent.ShowDebugLayers e) { }
+
+	// RVA: 0x17BE988 Offset: 0x17BE988 VA: 0x17BE988 Slot: 21
+	public void OnEvent(BaseMiniBoardEvent.BoardItemRemoveFinished e) { }
+
+	// RVA: 0x17BE98C Offset: 0x17BE98C VA: 0x17BE98C Slot: 22
+	public void OnEvent(BaseMiniBoardEntityUpdateEvent.BoardItemStatusChange e) { }
+
+	// RVA: 0x17BE9B8 Offset: 0x17BE9B8 VA: 0x17BE9B8 Slot: 15
+	public override void OnEvent(CanvasEvent.GameplayStatusUpdate e) { }
+
+	// RVA: 0x17BEA80 Offset: 0x17BEA80 VA: 0x17BEA80
+	public bool PreventMerge() { }
+
+	// RVA: 0x17BEAE8 Offset: 0x17BEAE8 VA: 0x17BEAE8
+	public MiniBoardItemController IsMergeAvailable(bool performMerge) { }
+
+	// RVA: 0x17BF380 Offset: 0x17BF380 VA: 0x17BF380
+	private void MergeIt(MiniBoardItemController targetItem, MiniBoardCellController nearestCollidingCell, BoardItemData mergedItemData) { }
+
+	[AsyncStateMachine(typeof(MiniBoardItemController.<MergeTweenAction>d__129))]
+	// RVA: 0x17BF520 Offset: 0x17BF520 VA: 0x17BF520
+	private UniTaskVoid MergeTweenAction(MiniBoardItemController targetItem, BoardItemData mergedItemData, MiniBoardCellController nearestCollidingCell) { }
+
+	// RVA: 0x17BF604 Offset: 0x17BF604 VA: 0x17BF604
+	public bool PreventAnyHint() { }
+
+	// RVA: 0x17BF650 Offset: 0x17BF650 VA: 0x17BF650
+	public bool IsSpawner() { }
+
+	// RVA: 0x17BF770 Offset: 0x17BF770 VA: 0x17BF770
+	public bool IsSpawnerParticleAvailable() { }
+
+	// RVA: 0x17BF930 Offset: 0x17BF930 VA: 0x17BF930
+	public void StartSpawnerHintAnimation() { }
+
+	// RVA: 0x17BF9F4 Offset: 0x17BF9F4 VA: 0x17BF9F4
+	private void StartSpawnerHint() { }
+
+	// RVA: 0x17BFEBC Offset: 0x17BFEBC VA: 0x17BFEBC
+	private void SpawnerTweenAction(MiniBoardItemController item, bool onKilled) { }
+
+	// RVA: 0x17C0000 Offset: 0x17C0000 VA: 0x17C0000
+	public void ArrangeSpawnerParticle(SpawnerState eSpawnerState) { }
+
+	// RVA: 0x17BAE48 Offset: 0x17BAE48 VA: 0x17BAE48
+	private void ArrangeSpawnerState(BoardItemSpawnerData spawnerData, bool isRewardedCapacity = False, bool animateClockDisappear = False) { }
+
+	// RVA: 0x17C03E8 Offset: 0x17C03E8 VA: 0x17C03E8
+	public void TryStartSpawnerHint() { }
+
+	// RVA: 0x17C06D4 Offset: 0x17C06D4 VA: 0x17C06D4
+	private bool UsesEnergy() { }
+
+	// RVA: 0x17BF4F4 Offset: 0x17BF4F4 VA: 0x17BF4F4
+	public void KillAnimationActiveLoops(Sequence exception1, Sequence exception2, Sequence exception3, Sequence exception4) { }
+
+	// RVA: 0x17C0824 Offset: 0x17C0824 VA: 0x17C0824
+	public void ScaleDownWithAnimation() { }
+
+	// RVA: 0x17C093C Offset: 0x17C093C VA: 0x17C093C
+	private void ArrangeAnimator(bool activate, Animator animatorPrefab, ref Animator currentInstance, bool create = True) { }
+
+	// RVA: 0x17BB7D8 Offset: 0x17BB7D8 VA: 0x17BB7D8
+	private void _DOKill() { }
+
+	// RVA: 0x17C0B4C Offset: 0x17C0B4C VA: 0x17C0B4C
+	private void KillItemRuntimeSequences() { }
+
+	// RVA: 0x17BC1D0 Offset: 0x17BC1D0 VA: 0x17BC1D0
+	public void KillPanelAnimation(bool completeKill = True) { }
+
+	// RVA: 0x17C0C94 Offset: 0x17C0C94 VA: 0x17C0C94
+	public void KillMergeHintAnimation(bool completeKill = True) { }
+
+	// RVA: 0x17C0D08 Offset: 0x17C0D08 VA: 0x17C0D08
+	public void ThrowWarning(MiniBoardItemController.WarningType warningType) { }
+
+	// RVA: 0x17C0DCC Offset: 0x17C0DCC VA: 0x17C0DCC
+	public bool IsClickable() { }
+
+	// RVA: 0x17C0E08 Offset: 0x17C0E08 VA: 0x17C0E08
+	public bool IsItemDraggable() { }
+
+	// RVA: 0x17C0E44 Offset: 0x17C0E44 VA: 0x17C0E44
+	public void DragCollisionEnter(GameObject other) { }
+
+	// RVA: 0x17C0FDC Offset: 0x17C0FDC VA: 0x17C0FDC
+	public void DragCollisionExit(GameObject other) { }
+
+	// RVA: 0x17C0FFC Offset: 0x17C0FFC VA: 0x17C0FFC
+	public void DragStarted() { }
+
+	// RVA: 0x17C13FC Offset: 0x17C13FC VA: 0x17C13FC
+	public void DragContinues() { }
+
+	// RVA: 0x17C1428 Offset: 0x17C1428 VA: 0x17C1428
+	public void DragStopped() { }
+
+	// RVA: 0x17C250C Offset: 0x17C250C VA: 0x17C250C
+	private void TryToPositionNearestCell(List<MiniBoardCellController> nearestAvailableOtherCells) { }
+
+	// RVA: 0x17C28EC Offset: 0x17C28EC VA: 0x17C28EC
+	public void ProcessItemClick() { }
+
+	// RVA: 0x17C2A8C Offset: 0x17C2A8C VA: 0x17C2A8C
+	private bool ProcessItemClickValidCheck(MiniBoardPosition selectedPosition) { }
+
+	// RVA: 0x17C2B44 Offset: 0x17C2B44 VA: 0x17C2B44
+	private void ProcessDoubleClick() { }
+
+	// RVA: 0x17C3304 Offset: 0x17C3304 VA: 0x17C3304
+	public bool ProcessNonMovableItemClick() { }
+
+	// RVA: 0x17C2A20 Offset: 0x17C2A20 VA: 0x17C2A20
+	private void CommonClickArrangement() { }
+
+	// RVA: 0x17C355C Offset: 0x17C355C VA: 0x17C355C
+	private bool CanClickLoop() { }
+
+	// RVA: 0x17C3590 Offset: 0x17C3590 VA: 0x17C3590
+	private void StartClickLoop() { }
+
+	// RVA: 0x17C3D54 Offset: 0x17C3D54 VA: 0x17C3D54
+	private void ClickTweenAction(MiniBoardItemController item) { }
+
+	// RVA: 0x17C3DEC Offset: 0x17C3DEC VA: 0x17C3DEC
+	private MiniBoardItemControllerMaxBadge GetItemMaxBadge() { }
+
+	// RVA: 0x17BBE44 Offset: 0x17BBE44 VA: 0x17BBE44
+	private void DestroyItemMaxLevelBadge() { }
+
+	// RVA: 0x17BDC18 Offset: 0x17BDC18 VA: 0x17BDC18
+	private void SetMaxLevelBadge(BaseMiniBoardController board, MiniBoardItemEntity itemEntity) { }
+
+	// RVA: 0x17C3EEC Offset: 0x17C3EEC VA: 0x17C3EEC
+	private MiniBoardItemControllerDebug GetDebug() { }
+
+	// RVA: 0x17BBC58 Offset: 0x17BBC58 VA: 0x17BBC58
+	private void DestroyItemDebug() { }
+
+	// RVA: 0x17BDD64 Offset: 0x17BDD64 VA: 0x17BDD64
+	private void CheckItemDebug() { }
+
+	// RVA: 0x17C3FE4 Offset: 0x17C3FE4 VA: 0x17C3FE4
+	private MiniBoardItemControllerBox GetBox() { }
+
+	// RVA: 0x17BE604 Offset: 0x17BE604 VA: 0x17BE604
+	private void DestroyItemBox() { }
+
+	// RVA: 0x17BD964 Offset: 0x17BD964 VA: 0x17BD964
+	private void InitBoxImage() { }
+
+	// RVA: 0x17BE19C Offset: 0x17BE19C VA: 0x17BE19C
+	private MiniBoardItemControllerLock GetLock() { }
+
+	// RVA: 0x17BBD50 Offset: 0x17BBD50 VA: 0x17BBD50
+	private void DestroyItemLock() { }
+
+	// RVA: 0x17BE588 Offset: 0x17BE588 VA: 0x17BE588
+	private void CheckItemLock() { }
+
+	// RVA: 0x17BE29C Offset: 0x17BE29C VA: 0x17BE29C
+	private MiniBoardItemControllerRewardIcon GetRewardIcon() { }
+
+	// RVA: 0x17BBF38 Offset: 0x17BBF38 VA: 0x17BBF38
+	private void DestroyItemRewardIcon() { }
+
+	// RVA: 0x17C40E4 Offset: 0x17C40E4 VA: 0x17C40E4
+	private MiniBoardItemControllerRewardHolderIcon GetItemRewardHolderIcon() { }
+
+	// RVA: 0x17BC02C Offset: 0x17BC02C VA: 0x17BC02C
+	private void DestroyItemRewardHolderIcon() { }
+
+	// RVA: 0x17BDCC0 Offset: 0x17BDCC0 VA: 0x17BDCC0
+	private void SetItemRewardHolderIcon() { }
+
+	// RVA: 0x17BA224 Offset: 0x17BA224 VA: 0x17BA224
+	public Sprite GetRewardHolderIconSprite() { }
+
+	// RVA: 0x17C41E4 Offset: 0x17C41E4 VA: 0x17C41E4
+	public void .ctor() { }
+
+	// RVA: 0x17C42D8 Offset: 0x17C42D8 VA: 0x17C42D8
+	private static void .cctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x17C4338 Offset: 0x17C4338 VA: 0x17C4338
+	private void <StartSpawnerHint>b__134_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x17C4344 Offset: 0x17C4344 VA: 0x17C4344
+	private void <StartSpawnerHint>b__134_1() { }
+
+	[CompilerGenerated]
+	// RVA: 0x17C4350 Offset: 0x17C4350 VA: 0x17C4350
+	private void <StartClickLoop>b__162_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x17C4358 Offset: 0x17C4358 VA: 0x17C4358
+	private void <StartClickLoop>b__162_1() { }
+}
+

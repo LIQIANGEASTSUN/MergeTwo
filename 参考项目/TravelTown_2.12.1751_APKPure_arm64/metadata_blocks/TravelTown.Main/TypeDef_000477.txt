@@ -1,0 +1,18 @@
+// Namespace: MergeEngine.Model.RemoteSpawning
+public interface IPushedRngItemsModel // TypeDefIndex: 477
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void ClearCache(string eventId);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void AddPushItem(PushedItem pushedItem);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract PushedItemNotificationData FindBoardEventItem(string boardEventId);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract PushedItemNotificationData FindItem();
+}
+

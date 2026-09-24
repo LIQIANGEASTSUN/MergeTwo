@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BoardEvent.SetUnlimitedEnergyDurationWaiting : IEvent // TypeDefIndex: 1837
+{
+	// Fields
+	public long Duration; // 0x0
+}
+

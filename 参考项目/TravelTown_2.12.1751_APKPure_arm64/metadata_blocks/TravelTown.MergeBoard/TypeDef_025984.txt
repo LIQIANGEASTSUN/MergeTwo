@@ -1,0 +1,79 @@
+// Namespace: Merger.MergeBoard.Controller
+public class BoardController : IInitializable, ITimeIntervalProcessor // TypeDefIndex: 25984
+{
+	// Fields
+	[Inject]
+	private DiContainer _container; // 0x10
+	[Inject]
+	private IMergeBoardModel _mergeBoardModel; // 0x18
+	[Inject]
+	private IBoardControllerDecorator[] _decorators; // 0x20
+	[Inject]
+	private IBoardControllerPostTickProcessor[] _postTickProcessors; // 0x28
+	[Inject]
+	private IItemsCollectionHandler _itemsCollectionHandler; // 0x30
+	private SystemsManager _systems; // 0x38
+	[CompilerGenerated]
+	private bool <IsPaused>k__BackingField; // 0x40
+
+	// Properties
+	public bool IsPaused { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AEFC Offset: 0x6A96EFC VA: 0x6A9AEFC
+	public bool get_IsPaused() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AF04 Offset: 0x6A96F04 VA: 0x6A9AF04
+	private void set_IsPaused(bool value) { }
+
+	// RVA: 0x6A9AF10 Offset: 0x6A96F10 VA: 0x6A9AF10 Slot: 4
+	public void Initialize() { }
+
+	// RVA: 0x6A9B47C Offset: 0x6A9747C VA: 0x6A9B47C
+	public void Pause() { }
+
+	// RVA: 0x6A9B488 Offset: 0x6A97488 VA: 0x6A9B488
+	public void Resume() { }
+
+	// RVA: 0x6A9AF14 Offset: 0x6A96F14 VA: 0x6A9AF14
+	private void InitializeSystems() { }
+
+	// RVA: 0x6A9B490 Offset: 0x6A97490 VA: 0x6A9B490
+	public void MoveItem(int fromPosition, int toPosition) { }
+
+	// RVA: 0x6A9B64C Offset: 0x6A9764C VA: 0x6A9B64C
+	public void ExtractItemFromFeedingCombination(Entity feedingCombinationItem, string itemId) { }
+
+	// RVA: 0x6A9B738 Offset: 0x6A97738 VA: 0x6A9B738
+	public void HandleTap(int selectedEntityPosition, TickArgs additionalArgs) { }
+
+	// RVA: 0x6A9B804 Offset: 0x6A97804 VA: 0x6A9B804
+	public void HandleCombinationVerification(bool isSuccess, int firstPosition, int secondPosition, MergeCheckItemType checkItemType) { }
+
+	// RVA: 0x6A9B560 Offset: 0x6A97560 VA: 0x6A9B560
+	private void TickSystems(TickArgs inArgs) { }
+
+	// RVA: -1 Offset: -1
+	public void DoAction<T>(T actionData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3BD97D0 Offset: 0x3BD57D0 VA: 0x3BD97D0
+	|-BoardController.DoAction<object>
+	|
+	|-RVA: 0x3BD9860 Offset: 0x3BD5860 VA: 0x3BD9860
+	|-BoardController.DoAction<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x6A9BB4C Offset: 0x6A97B4C VA: 0x6A9BB4C Slot: 5
+	public void ProcessTimeInterval(float deltaTime) { }
+
+	// RVA: 0x6A9BA60 Offset: 0x6A97A60 VA: 0x6A9BA60
+	private void OnPostTick(TickArgs result) { }
+
+	// RVA: 0x6A9BBE0 Offset: 0x6A97BE0 VA: 0x6A9BBE0
+	public void .ctor() { }
+}
+

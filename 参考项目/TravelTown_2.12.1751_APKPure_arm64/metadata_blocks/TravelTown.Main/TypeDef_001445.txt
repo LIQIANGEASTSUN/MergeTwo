@@ -1,0 +1,12 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+public class FeedingCombinationCapability : CapabilityBase // TypeDefIndex: 1445
+{
+	// Fields
+	public readonly InteractionCapability InteractionCapability; // 0x18
+
+	// Methods
+
+	// RVA: 0x60105A8 Offset: 0x600C5A8 VA: 0x60105A8
+	public void .ctor(InteractionCapability interactionCapability) { }
+}
+

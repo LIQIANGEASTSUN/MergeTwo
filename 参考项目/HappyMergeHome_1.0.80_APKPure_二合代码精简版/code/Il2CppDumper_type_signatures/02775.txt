@@ -1,0 +1,44 @@
+// Namespace: 
+public enum MergeItemType // TypeDefIndex: 2775
+{
+	// Fields
+	public int value__; // 0x0
+	public const MergeItemType none = 0;
+	public const MergeItemType item = 1;
+	public const MergeItemType box = 2;
+	public const MergeItemType diamonds = 3;
+	public const MergeItemType energy = 4;
+	public const MergeItemType decoCoin = 5;
+	public const MergeItemType exp = 6;
+	public const MergeItemType timeBooster = 10;
+	public const MergeItemType dailyBox = 11;
+	public const MergeItemType flashsaleBox = 13;
+	public const MergeItemType activityExp = 14;
+	public const MergeItemType activityKey = 15;
+	public const MergeItemType broom = 16;
+	public const MergeItemType battlepassExp = 17;
+	public const MergeItemType universal = 18;
+	public const MergeItemType split = 19;
+	public const MergeItemType dogCookies = 20;
+	public const MergeItemType CatSwimming = 23;
+	public const MergeItemType PizzaTower = 24;
+	public const MergeItemType choiceChest = 21;
+	public const MergeItemType hamaster = 100;
+	public const MergeItemType eatBuild = 99;
+	public const MergeItemType easter = 22;
+	public const MergeItemType HappyGoExp = 902;
+	public const MergeItemType SpeedUp = 30;
+	public const MergeItemType EnergyUnlimited = 31;
+	public const MergeItemType NoCd = 32;
+	public const MergeItemType MagicWand = 33;
+	public const MergeItemType ButterFly = 34;
+	public const MergeItemType Knife = 35;
+	public const MergeItemType Mine = 200;
+	public const MergeItemType Mine2 = 201;
+	public const MergeItemType GreenMine = 101;
+	public const MergeItemType BlueMine = 102;
+	public const MergeItemType RedMine = 103;
+	public const MergeItemType ActivitySurpriseBox = 1001;
+	public const MergeItemType LocalSurpriseBox = 1002;
+}
+

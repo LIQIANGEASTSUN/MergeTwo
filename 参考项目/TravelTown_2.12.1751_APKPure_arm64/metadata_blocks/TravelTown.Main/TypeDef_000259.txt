@@ -1,0 +1,27 @@
+// Namespace: MergeEngine.Signal.Board
+public class DequeueItemSignal // TypeDefIndex: 259
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly Vector2 <QueuePositionInRoot>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly Vector2 <QueueWorldPosition>k__BackingField; // 0x18
+
+	// Properties
+	public Vector2 QueuePositionInRoot { get; }
+	public Vector2 QueueWorldPosition { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5FF4534 Offset: 0x5FF0534 VA: 0x5FF4534
+	public Vector2 get_QueuePositionInRoot() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF453C Offset: 0x5FF053C VA: 0x5FF453C
+	public Vector2 get_QueueWorldPosition() { }
+
+	// RVA: 0x5FF4544 Offset: 0x5FF0544 VA: 0x5FF4544
+	public void .ctor(Vector2 queuePositionInRoot, Vector2 queueWorldPosition) { }
+}
+

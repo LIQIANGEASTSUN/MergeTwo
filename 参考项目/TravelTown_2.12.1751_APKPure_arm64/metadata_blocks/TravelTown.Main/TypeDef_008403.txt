@@ -1,0 +1,41 @@
+// Namespace: Merger.Game.Model
+public sealed class BoardSelectionModel : ModelBase, IBoardSelectionModel // TypeDefIndex: 8403
+{
+	// Fields
+	private readonly MutableBindableProperty<SelectedBoardItem> _selectedItem; // 0x28
+	private readonly MutableBindableProperty<SelectedBoardItem> _selectedItemToSell; // 0x30
+
+	// Properties
+	public BindableProperty<SelectedBoardItem> SelectedItem { get; }
+	public BindableProperty<SelectedBoardItem> SelectedItemToSell { get; }
+
+	// Methods
+
+	// RVA: 0x6670C64 Offset: 0x666CC64 VA: 0x6670C64 Slot: 19
+	public BindableProperty<SelectedBoardItem> get_SelectedItem() { }
+
+	// RVA: 0x6670C6C Offset: 0x666CC6C VA: 0x6670C6C Slot: 20
+	public BindableProperty<SelectedBoardItem> get_SelectedItemToSell() { }
+
+	// RVA: 0x6670C74 Offset: 0x666CC74 VA: 0x6670C74 Slot: 4
+	protected override void SubscribeToSignals() { }
+
+	// RVA: 0x6670E40 Offset: 0x666CE40 VA: 0x6670E40 Slot: 18
+	protected override void DisposeModel() { }
+
+	// RVA: 0x667100C Offset: 0x666D00C VA: 0x667100C
+	private void BoardItemSelectedSignalFired(BoardItemSelectedSignal signal) { }
+
+	// RVA: 0x6671098 Offset: 0x666D098 VA: 0x6671098
+	private void ClearItemSelectionSignalFired() { }
+
+	// RVA: 0x66710EC Offset: 0x666D0EC VA: 0x66710EC
+	private void OnBoardItemSellFinished() { }
+
+	// RVA: 0x6671140 Offset: 0x666D140 VA: 0x6671140
+	private void OnBoardItemSellClickButtonSignal() { }
+
+	// RVA: 0x66711A8 Offset: 0x666D1A8 VA: 0x66711A8
+	public void .ctor() { }
+}
+

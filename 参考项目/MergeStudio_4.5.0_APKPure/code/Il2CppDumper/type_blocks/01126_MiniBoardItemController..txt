@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+private struct MiniBoardItemController.<ChangeModulesSortingData>d__108 : IAsyncStateMachine // TypeDefIndex: 1126
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncUniTaskVoidMethodBuilder <>t__builder; // 0x4
+	public MiniBoardItemController <>4__this; // 0x8
+	public SortingData sortingData; // 0xC
+	private YieldAwaitable.Awaiter <>u__1; // 0x10
+
+	// Methods
+
+	// RVA: 0x17C472C Offset: 0x17C472C VA: 0x17C472C Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x17C49A8 Offset: 0x17C49A8 VA: 0x17C49A8 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

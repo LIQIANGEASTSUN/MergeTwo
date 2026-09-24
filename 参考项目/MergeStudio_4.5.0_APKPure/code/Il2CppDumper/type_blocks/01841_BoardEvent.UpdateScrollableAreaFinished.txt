@@ -1,0 +1,4 @@
+// Namespace: 
+public struct BoardEvent.UpdateScrollableAreaFinished : IEvent // TypeDefIndex: 1841
+{}
+

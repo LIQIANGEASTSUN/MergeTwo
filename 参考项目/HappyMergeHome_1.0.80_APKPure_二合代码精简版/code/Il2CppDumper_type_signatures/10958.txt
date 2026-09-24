@@ -1,0 +1,95 @@
+// Namespace: DragonU3DSDK.Storage
+[Serializable]
+public class StorageMapAdventureOne : StorageBase // TypeDefIndex: 10958
+{
+	// Fields
+	[JsonProperty]
+	private long startTime; // 0x8
+	[JsonProperty]
+	private long finishTime; // 0x10
+	[JsonProperty]
+	private StorageMapAdventureOneMerge merge; // 0x18
+	[JsonProperty]
+	private StorageMapAdventureOneExplore explore; // 0x1C
+	[JsonProperty]
+	private StorageList<StorageMapAdventureOneAchieve> achieve; // 0x20
+	[JsonProperty]
+	private bool isGetEndReward; // 0x24
+	[JsonProperty]
+	private int energyNum; // 0x28
+	[JsonProperty]
+	private bool isStart; // 0x2C
+	[JsonProperty]
+	private bool isGetTaskEndReward; // 0x2D
+
+	// Properties
+	[JsonIgnore]
+	public long StartTime { get; set; }
+	[JsonIgnore]
+	public long FinishTime { get; set; }
+	[JsonIgnore]
+	public StorageMapAdventureOneMerge Merge { get; }
+	[JsonIgnore]
+	public StorageMapAdventureOneExplore Explore { get; }
+	[JsonIgnore]
+	public StorageList<StorageMapAdventureOneAchieve> Achieve { get; }
+	[JsonIgnore]
+	public bool IsGetEndReward { get; set; }
+	[JsonIgnore]
+	public int EnergyNum { get; set; }
+	[JsonIgnore]
+	public bool IsStart { get; set; }
+	[JsonIgnore]
+	public bool IsGetTaskEndReward { get; set; }
+
+	// Methods
+
+	// RVA: 0x26AED34 Offset: 0x26AED34 VA: 0x26AED34
+	public long get_StartTime() { }
+
+	// RVA: 0x26AED3C Offset: 0x26AED3C VA: 0x26AED3C
+	public void set_StartTime(long value) { }
+
+	// RVA: 0x26AEE04 Offset: 0x26AEE04 VA: 0x26AEE04
+	public long get_FinishTime() { }
+
+	// RVA: 0x26AEE0C Offset: 0x26AEE0C VA: 0x26AEE0C
+	public void set_FinishTime(long value) { }
+
+	// RVA: 0x26AEED4 Offset: 0x26AEED4 VA: 0x26AEED4
+	public StorageMapAdventureOneMerge get_Merge() { }
+
+	// RVA: 0x26AEEDC Offset: 0x26AEEDC VA: 0x26AEEDC
+	public StorageMapAdventureOneExplore get_Explore() { }
+
+	// RVA: 0x26AEEE4 Offset: 0x26AEEE4 VA: 0x26AEEE4
+	public StorageList<StorageMapAdventureOneAchieve> get_Achieve() { }
+
+	// RVA: 0x26AEEEC Offset: 0x26AEEEC VA: 0x26AEEEC
+	public bool get_IsGetEndReward() { }
+
+	// RVA: 0x26AEEF4 Offset: 0x26AEEF4 VA: 0x26AEEF4
+	public void set_IsGetEndReward(bool value) { }
+
+	// RVA: 0x26AEFA8 Offset: 0x26AEFA8 VA: 0x26AEFA8
+	public int get_EnergyNum() { }
+
+	// RVA: 0x26AEFB0 Offset: 0x26AEFB0 VA: 0x26AEFB0
+	public void set_EnergyNum(int value) { }
+
+	// RVA: 0x26AF064 Offset: 0x26AF064 VA: 0x26AF064
+	public bool get_IsStart() { }
+
+	// RVA: 0x26AF06C Offset: 0x26AF06C VA: 0x26AF06C
+	public void set_IsStart(bool value) { }
+
+	// RVA: 0x26AF120 Offset: 0x26AF120 VA: 0x26AF120
+	public bool get_IsGetTaskEndReward() { }
+
+	// RVA: 0x26AF128 Offset: 0x26AF128 VA: 0x26AF128
+	public void set_IsGetTaskEndReward(bool value) { }
+
+	// RVA: 0x26AF1DC Offset: 0x26AF1DC VA: 0x26AF1DC
+	public void .ctor() { }
+}
+

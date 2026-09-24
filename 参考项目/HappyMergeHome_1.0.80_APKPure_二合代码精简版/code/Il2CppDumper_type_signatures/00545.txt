@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class FishCultureModel.<>c__DisplayClass35_0 // TypeDefIndex: 545
+{
+	// Fields
+	public TableMergeItem tableMergeItem; // 0x8
+
+	// Methods
+
+	// RVA: 0x31D80B0 Offset: 0x31D80B0 VA: 0x31D80B0
+	public void .ctor() { }
+
+	// RVA: 0x31DC204 Offset: 0x31DC204 VA: 0x31DC204
+	internal bool <MergeToProductFishCulture>b__0(FishCultureItem p) { }
+}
+

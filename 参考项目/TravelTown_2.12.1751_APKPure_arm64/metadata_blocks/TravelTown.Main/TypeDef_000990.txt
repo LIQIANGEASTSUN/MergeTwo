@@ -1,0 +1,45 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class SpawningItemsSystem.<>c__16<T, TComponent> // TypeDefIndex: 990
+{
+	// Fields
+	public static readonly SpawningItemsSystem.<>c__16<T, TComponent> <>9; // 0x0
+	public static Func<TComponent, bool> <>9__16_0; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	private static void .cctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F28D68 Offset: 0x3F24D68 VA: 0x3F28D68
+	|-SpawningItemsSystem.<>c__16<object, object>..cctor
+	|
+	|-RVA: 0x3F28F60 Offset: 0x3F24F60 VA: 0x3F28F60
+	|-SpawningItemsSystem.<>c__16<object, __Il2CppFullySharedGenericType>..cctor
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F28E24 Offset: 0x3F24E24 VA: 0x3F28E24
+	|-SpawningItemsSystem.<>c__16<object, object>..ctor
+	|
+	|-RVA: 0x3F29054 Offset: 0x3F25054 VA: 0x3F29054
+	|-SpawningItemsSystem.<>c__16<object, __Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal bool <GetUnlockedComponents>b__16_0(TComponent component) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F28E2C Offset: 0x3F24E2C VA: 0x3F28E2C
+	|-SpawningItemsSystem.<>c__16<object, object>.<GetUnlockedComponents>b__16_0
+	|
+	|-RVA: 0x3F2905C Offset: 0x3F2505C VA: 0x3F2905C
+	|-SpawningItemsSystem.<>c__16<object, __Il2CppFullySharedGenericType>.<GetUnlockedComponents>b__16_0
+	*/
+}
+

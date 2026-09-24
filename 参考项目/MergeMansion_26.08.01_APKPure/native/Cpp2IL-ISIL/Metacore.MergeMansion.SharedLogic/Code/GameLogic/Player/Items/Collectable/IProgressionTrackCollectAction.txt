@@ -1,0 +1,9 @@
+Type: Code.GameLogic.Player.Items.Collectable.IProgressionTrackCollectAction
+
+Method: Code.GameLogic.ProgressionTracks.ProgressionTrackId get_TrackId()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

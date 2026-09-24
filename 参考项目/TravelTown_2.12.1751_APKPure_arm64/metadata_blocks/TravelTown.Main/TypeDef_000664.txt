@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemConsumeSystem.<>c__DisplayClass7_0 // TypeDefIndex: 664
+{
+	// Fields
+	public IMergeItem preferredMergeItem; // 0x10
+
+	// Methods
+
+	// RVA: 0x628B1D8 Offset: 0x62871D8 VA: 0x628B1D8
+	public void .ctor() { }
+
+	// RVA: 0x628B5DC Offset: 0x62875DC VA: 0x628B5DC
+	internal bool <GetAnyConsumedItems>b__1(ItemMultiple available) { }
+}
+

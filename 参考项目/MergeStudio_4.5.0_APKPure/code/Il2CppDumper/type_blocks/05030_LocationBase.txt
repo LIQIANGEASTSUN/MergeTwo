@@ -1,0 +1,12 @@
+// Namespace: MergePuzzle.Locations
+public abstract class LocationBase // TypeDefIndex: 5030
+{
+	// Fields
+	public LocationHandler LocationHandler; // 0x8
+
+	// Methods
+
+	// RVA: 0x1E124C4 Offset: 0x1E124C4 VA: 0x1E124C4
+	protected void .ctor() { }
+}
+

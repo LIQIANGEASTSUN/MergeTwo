@@ -1,0 +1,9 @@
+// Namespace: Merger.TimeLimitedItems.Handlers
+public interface ITimeLimitedItemsDestroyOperationsBuilder // TypeDefIndex: 32842
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract OperationNotificationData[] Build(List<Entity> entitiesToDestroy, List<QueuedItem> queuedItemsToDestroy);
+}
+

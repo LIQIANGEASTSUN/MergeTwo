@@ -1,0 +1,12 @@
+Type: Metaplay.Core.Config.IGameConfigData
+
+Method: System.Int32 get_ExperimentPriority()
+
+Disassembly:
+	0x041BA588 ADRP X8, 0x15B0000
+	0x041BA58C LDR X8, [X8 + 0x4F8]
+
+ISIL:
+	001 Move W0, W31
+	002 Return X0
+

@@ -1,0 +1,9 @@
+Type: GameLogic.Player.Items.Sinkable.ISinkInAction
+
+Method: System.Void SinkIn(GameLogic.Player.IPlayer player, GameLogic.Player.Items.MergeItem itemToSinkIn)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

@@ -1,0 +1,16 @@
+// Namespace: Merger.Services.Backend.Sync.Data.Payloads.Board
+public class BoosterData // TypeDefIndex: 9877
+{
+	// Fields
+	[JsonProperty("uuid")]
+	public string UUID; // 0x10
+
+	// Methods
+
+	// RVA: 0x67CC9A0 Offset: 0x67C89A0 VA: 0x67CC9A0
+	public void .ctor() { }
+
+	// RVA: 0x67CC9A8 Offset: 0x67C89A8 VA: 0x67CC9A8
+	public void .ctor(string uuid) { }
+}
+

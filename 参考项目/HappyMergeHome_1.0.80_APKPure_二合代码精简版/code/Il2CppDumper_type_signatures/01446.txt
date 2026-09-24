@@ -1,0 +1,75 @@
+// Namespace: 
+[Serializable]
+public class SummerWatermelonTwoConfig : TableBase // TypeDefIndex: 1446
+{
+	// Fields
+	[CompilerGenerated]
+	private int <Id>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private int <LineId>k__BackingField; // 0xC
+	[CompilerGenerated]
+	private List<int> <InitItems>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private int <LineIdChild>k__BackingField; // 0x14
+	[CompilerGenerated]
+	private int <BigBoardUnlockLevel>k__BackingField; // 0x18
+
+	// Properties
+	public int Id { get; set; }
+	public int LineId { get; set; }
+	public List<int> InitItems { get; set; }
+	public int LineIdChild { get; set; }
+	public int BigBoardUnlockLevel { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x2148CEC Offset: 0x2148CEC VA: 0x2148CEC
+	public int get_Id() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2148CF4 Offset: 0x2148CF4 VA: 0x2148CF4
+	public void set_Id(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2148CFC Offset: 0x2148CFC VA: 0x2148CFC
+	public int get_LineId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2148D04 Offset: 0x2148D04 VA: 0x2148D04
+	public void set_LineId(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2148D0C Offset: 0x2148D0C VA: 0x2148D0C
+	public List<int> get_InitItems() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2148D14 Offset: 0x2148D14 VA: 0x2148D14
+	public void set_InitItems(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2148D1C Offset: 0x2148D1C VA: 0x2148D1C
+	public int get_LineIdChild() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2148D24 Offset: 0x2148D24 VA: 0x2148D24
+	public void set_LineIdChild(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2148D2C Offset: 0x2148D2C VA: 0x2148D2C
+	public int get_BigBoardUnlockLevel() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2148D34 Offset: 0x2148D34 VA: 0x2148D34
+	public void set_BigBoardUnlockLevel(int value) { }
+
+	// RVA: 0x2148D3C Offset: 0x2148D3C VA: 0x2148D3C Slot: 4
+	public override int GetID() { }
+
+	// RVA: 0x2148D90 Offset: 0x2148D90 VA: 0x2148D90
+	public void .ctor() { }
+
+	// RVA: 0x2148D98 Offset: 0x2148D98 VA: 0x2148D98
+	public int <>iFixBaseProxy_GetID() { }
+}
+

@@ -1,0 +1,61 @@
+Type: GameLogic.Player.Items.Bubble.BubbleSecondaryEnergyBonus
+
+Method: System.Int32 get_SecondaryEnergy()
+
+Disassembly:
+	0x03648B50 LDR X10, [X8 + 0xB0]
+	0x03648B54 ADD X10, X10, 0x8
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_SecondaryEnergy(System.Int32 value)
+
+Disassembly:
+	0x03648B58 LDUR X11, [X10 - 0x8]
+	0x03648B5C CMP X11, X1
+
+ISIL:
+	001 Move [X0+16], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03648B60 B.EQ 0x3648B80
+	0x03648B64 SUBS X9, X9, 0x1
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(System.Int32 secondaryEnergy)
+
+Disassembly:
+	0x03648B68 ADD X10, X10, 0x10
+	0x03648B6C B.NE 0x3648B58
+	0x03648B70 MOV X0, X19
+	0x03648B74 MOVZ W2, 0x19
+	0x03648B78 BL 0x23D527C
+	0x03648B7C B 0x3648B90
+	0x03648B80 LDR W9, [X10]
+	0x03648B84 ADD W9, W9, 0x19
+	0x03648B88 ADD X8, X8, W9, 0x4, SXTW
+	0x03648B8C ADD X0, X8, 0x138
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move W19, W1
+	005 Move X1, X31
+	006 Move X20, X0
+	007 Call Object..ctor, X0
+	008 Move [X20+16], W19
+	009 Move X20, [X31+16]
+	010 Move X19, [X31+24]
+	011 Move X30, [X31+32]
+	012 Return 
+

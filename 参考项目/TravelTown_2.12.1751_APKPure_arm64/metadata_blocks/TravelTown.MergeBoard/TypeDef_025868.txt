@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardInteractionOperationDataCreator.<>c // TypeDefIndex: 25868
+{
+	// Fields
+	public static readonly BoardInteractionOperationDataCreator.<>c <>9; // 0x0
+	public static Func<ItemSpawnedResult, bool> <>9__2_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x6A8D120 Offset: 0x6A89120 VA: 0x6A8D120
+	private static void .cctor() { }
+
+	// RVA: 0x6A8D188 Offset: 0x6A89188 VA: 0x6A8D188
+	public void .ctor() { }
+
+	// RVA: 0x6A8D190 Offset: 0x6A89190 VA: 0x6A8D190
+	internal bool <CreateOperationData>b__2_0(ItemSpawnedResult item) { }
+}
+

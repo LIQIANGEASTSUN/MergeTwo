@@ -1,0 +1,13 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class InteractionConstraintCapability : CapabilityBase // TypeDefIndex: 1449
+{
+	// Fields
+	public bool DisableDragging; // 0x11
+
+	// Methods
+
+	// RVA: 0x601084C Offset: 0x600C84C VA: 0x601084C
+	public void .ctor() { }
+}
+

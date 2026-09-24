@@ -1,0 +1,128 @@
+Type: GameLogic.Player.Items.Sink.TagRewardsInfo
+
+Method: System.String get_ConfigKey()
+
+Disassembly:
+	0x0360C0A0 BLR X8
+	0x0360C0A4 TBZ X0, 0x0, 0x360C0C4
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_ConfigKey(System.String value)
+
+Disassembly:
+	0x0360C0A8 ADRP X8, 0x2125000
+	0x0360C0AC MOV X2, X31
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Int32 get_ExperimentPriority()
+
+Disassembly:
+	0x0360C0B0 LDR X8, [X8 + 0x7B0]
+	0x0360C0B4 LDR X0, [X19 + 0x20]
+
+ISIL:
+	001 Move W0, [X0+48]
+	002 Return X0
+
+Method: System.Void set_ExperimentPriority(System.Int32 value)
+
+Disassembly:
+	0x0360C0B8 LDR X1, [X8]
+	0x0360C0BC BL 0x431EB04
+
+ISIL:
+	001 Move [X0+48], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0360C0C0 TBZ X0, 0x0, 0x360C0CC
+	0x0360C0C4 MOV W19, W31
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(System.String configKey, System.Int32 totalPoints, System.String rewardTagName, GameLogic.Player.Items.Production.IItemProducer itemProducer, System.Int32 experimentPriority)
+
+Disassembly:
+	0x0360BE8C ADRP X21, 0x2126000
+	0x0360BE90 ADRP X22, 0x2126000
+	0x0360BE94 LDR X21, [X21 + 0x790]
+	0x0360BE98 LDR X22, [X22 + 0x798]
+	0x0360BE9C STP X31, X19, [X31 + 0x8]
+	0x0360BEA0 LDR X1, [X21]
+	0x0360BEA4 ADD X0, X31, 0x18
+	0x0360BEA8 BL 0x29592D0
+	0x0360BEAC MOV W19, W0
+	0x0360BEB0 TBZ X0, 0x0, 0x360BF34
+	0x0360BEB4 LDR X20, [X22]
+	0x0360BEB8 LDR X0, [X20 + 0x20]
+	0x0360BEBC ADD X8, X0, 0x135
+	0x0360BEC0 LDRH W9, [X8]
+	0x0360BEC4 TBNZ X9, 0x0, 0x360BEE0
+	0x0360BEC8 BL 0x23D4F40
+	0x0360BECC MOV X8, X0
+	0x0360BED0 LDR X0, [X20 + 0x20]
+	0x0360BED4 ADD X9, X0, 0x135
+	0x0360BED8 LDRH W9, [X9]
+	0x0360BEDC B 0x360BEE4
+	0x0360BEE0 MOV X8, X0
+	0x0360BEE4 LDR X8, [X8 + 0xC0]
+	0x0360BEE8 LDR X8, [X8 + 0x10]
+	0x0360BEEC LDR W20, [X8 + 0xFC]
+	0x0360BEF0 TBNZ X9, 0x0, 0x360BEF8
+	0x0360BEF4 BL 0x23D4F40
+	0x0360BEF8 LDR X8, [X0 + 0xC0]
+	0x0360BEFC LDR X8, [X8 + 0x8]
+	0x0360BF00 LDR X8, [X8 + 0x80]
+	0x0360BF04 ADD X0, X31, 0x18
+
+ISIL:
+	001 Move [X31-64], X30
+	002 Move [X31+16], X24
+	003 Move [X31+24], X23
+	004 Move [X31+32], X22
+	005 Move [X31+40], X21
+	006 Move [X31+48], X20
+	007 Move [X31+56], X19
+	008 Move X23, X1
+	009 Move X1, X31
+	010 Move W19, W5
+	011 Move X20, X4
+	012 Move X21, X3
+	013 Move W22, W2
+	014 Move X24, X0
+	015 Call Object..ctor, X0
+	016 Move X0, X24
+	017 Move X1, X23
+	018 Move [X0+16], X23
+	019 Call 0x239F888
+	020 Move X0, X24
+	021 Move X1, X21
+	022 Move [X24+24], W22
+	023 Move [X0+32], X21
+	024 Call 0x239F888
+	025 Move [X24+40], X20
+	026 Move X0, X24
+	027 Move X1, X20
+	028 Call 0x239F888
+	029 Move [X24+8], W19
+	030 Move X20, [X31+48]
+	031 Move X19, [X31+56]
+	032 Move X22, [X31+32]
+	033 Move X21, [X31+40]
+	034 Move X24, [X31+16]
+	035 Move X23, [X31+24]
+	036 Move X30, [X31+64]
+	037 Return 
+

@@ -1,0 +1,19 @@
+// Namespace: 
+public class MergeManager.MergeBoardDataStruct // TypeDefIndex: 2701
+{
+	// Fields
+	public int EmptyBoardGridCount; // 0x8
+	public int EmptyBagGridCount; // 0xC
+	public int UnlockBagGridCount; // 0x10
+	public int EmptyBuildBagGridCount; // 0x14
+	public int UnlockBuildBagGridCount; // 0x18
+	public Dictionary<int, int> BoardItems; // 0x1C
+	public Dictionary<int, int> BagItems; // 0x20
+	public Dictionary<int, int> BuildBagItems; // 0x24
+
+	// Methods
+
+	// RVA: 0x2C28570 Offset: 0x2C28570 VA: 0x2C28570
+	public void .ctor() { }
+}
+

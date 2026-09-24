@@ -1,0 +1,74 @@
+Type: MenuController+<>c__DisplayClass260_1
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x02B7193C MOVZ W2, 0x2
+	0x02B71940 BL 0x23D527C
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void <PopMenusBeforeShow>b__0()
+
+Disassembly:
+	0x02B71944 B 0x2B71958
+	0x02B71948 LDR W9, [X10]
+	0x02B7194C ADD W9, W9, 0x2
+	0x02B71950 ADD X8, X8, W9, 0x4, SXTW
+	0x02B71954 ADD X0, X8, 0x138
+	0x02B71958 LDP X8, X1, [X0]
+	0x02B7195C MOV X0, X19
+	0x02B71960 BLR X8
+	0x02B71964 LDP X20, X19, [X31 + 0x170]
+	0x02B71968 LDP X22, X21, [X31 + 0x160]
+	0x02B7196C LDP X24, X23, [X31 + 0x150]
+	0x02B71970 LDP X26, X25, [X31 + 0x140]
+	0x02B71974 LDP X28, X27, [X31 + 0x130]
+	0x02B71978 LDP X29, X30, [X31 + 0x120]
+	0x02B7197C ADD X31, X31, 0x180
+	0x02B71980 RET
+	0x02B71984 LDR W9, [X10]
+	0x02B71988 ADD W9, W9, 0x32
+	0x02B7198C ADD X8, X8, W9, 0x4, SXTW
+	0x02B71990 ADD X0, X8, 0x138
+	0x02B71994 LDP X8, X1, [X0]
+	0x02B71998 MOV X0, X20
+	0x02B7199C BLR X8
+	0x02B719A0 CBZ X0, 0x2B71DF4
+
+ISIL:
+	001 Move [X31-16], X30
+	002 Move [X31-8], X19
+	003 Move X8, [X0+24]
+	004 Compare X8, 0
+	005 JumpIfEqual {31}
+	006 Move W9, [X8+16]
+	007 Move W10, [X8+20]
+	008 Move X19, X0
+	009 Add W9, W9, 1
+	010 NotImplemented "Instruction CMP not yet implemented."
+	011 Move [X8+16], W9
+	012 Move X0, [X8+24]
+	013 Compare X0, 0
+	014 JumpIfEqual {31}
+	015 Move X1, [X8+32]
+	016 Move X2, X31
+	017 Call MenuController.CompleteTransition, X0, X1
+	018 Move X8, [X19+24]
+	019 Compare X8, 0
+	020 JumpIfEqual {31}
+	021 Move X0, [X8+24]
+	022 Compare X0, 0
+	023 JumpIfEqual {31}
+	024 Move X1, [X19+16]
+	025 Move W2, 1
+	026 Move X3, X31
+	027 Move X30, [X31+16]
+	028 Move X19, [X31+24]
+	029 Call MenuController.OnHideMenuComplete, X0, X1, X2
+	030 Return 
+	031 Call 0x239FB90
+

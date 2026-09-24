@@ -1,0 +1,13 @@
+// Namespace: Merger.MergeBoard.Data.Payload
+public class MergeBoardItemPositionNotificationData // TypeDefIndex: 25983
+{
+	// Fields
+	[JsonProperty("index")]
+	public int Index; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A9AED4 Offset: 0x6A96ED4 VA: 0x6A9AED4
+	public void .ctor(int index) { }
+}
+

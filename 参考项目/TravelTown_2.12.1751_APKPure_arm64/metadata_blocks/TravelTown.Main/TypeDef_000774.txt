@@ -1,0 +1,80 @@
+// Namespace: MergeEngine.ECS.Systems.State.Board
+public class BoardItemsStateSystem<TState> : ItemsStateSystemBase<TState> // TypeDefIndex: 774
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x0
+	[Inject]
+	private INotificationDataFactory _notificationDataFactory; // 0x0
+	[InjectSystem]
+	private BoardSystem _boardSystem; // 0x0
+	[InjectSystem]
+	private OperationTrackingSystem _operationTrackingSystem; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 14
+	protected override void EntitiesRemovalLogic(IComponentBase component) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C18A00 Offset: 0x4C14A00 VA: 0x4C18A00
+	|-BoardItemsStateSystem<object>.EntitiesRemovalLogic
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public override List<IdComponent> GetExistingEntityIds() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C18BF0 Offset: 0x4C14BF0 VA: 0x4C18BF0
+	|-BoardItemsStateSystem<object>.GetExistingEntityIds
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 16
+	protected override void ProcessItems(TState boardItems, List<IdComponent> existingEntityIds) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C18DB0 Offset: 0x4C14DB0 VA: 0x4C18DB0
+	|-BoardItemsStateSystem<object>.ProcessItems
+	*/
+
+	// RVA: -1 Offset: -1
+	public Entity ProcessItem(ItemPayloadBase item, List<IdComponent> existingEntityIds, bool transitionInDisabled = False) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C18F2C Offset: 0x4C14F2C VA: 0x4C18F2C
+	|-BoardItemsStateSystem<object>.ProcessItem
+	*/
+
+	// RVA: -1 Offset: -1
+	private void UpdateTimeLockCapacityState(Entity entity) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C191A4 Offset: 0x4C151A4 VA: 0x4C191A4
+	|-BoardItemsStateSystem<object>.UpdateTimeLockCapacityState
+	*/
+
+	// RVA: -1 Offset: -1
+	private List<Entity> HandleDuplicatedEntityPositions(List<PositionComponent> positionedItems) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C19248 Offset: 0x4C15248 VA: 0x4C19248
+	|-BoardItemsStateSystem<object>.HandleDuplicatedEntityPositions
+	*/
+
+	// RVA: -1 Offset: -1
+	private void ValidateTimeCycleComponent(Entity entity) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C195DC Offset: 0x4C155DC VA: 0x4C195DC
+	|-BoardItemsStateSystem<object>.ValidateTimeCycleComponent
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C1979C Offset: 0x4C1579C VA: 0x4C1979C
+	|-BoardItemsStateSystem<object>..ctor
+	*/
+}
+

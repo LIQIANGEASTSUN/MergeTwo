@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class GameConfig.<>c // TypeDefIndex: 1166
+{
+	// Fields
+	public static readonly GameConfig.<>c <>9; // 0x0
+	public static Func<MergeItemWeakReference, IMergeItem> <>9__5_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x690A41C Offset: 0x690641C VA: 0x690A41C
+	private static void .cctor() { }
+
+	// RVA: 0x690A484 Offset: 0x6906484 VA: 0x690A484
+	public void .ctor() { }
+
+	// RVA: 0x690A48C Offset: 0x690648C VA: 0x690A48C
+	internal IMergeItem <get_RatePopupTriggerItems2>b__5_0(MergeItemWeakReference reference) { }
+}
+

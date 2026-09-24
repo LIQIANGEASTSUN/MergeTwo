@@ -1,0 +1,84 @@
+Type: GameLogic.Player.IPlayerExtensions+<>c__DisplayClass7_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0353494C ADRP X0, 0x21F9000
+	0x03534950 LDR X0, [X0 + 0xE50]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <RemoveEnergyModesForEnergyType>b__0(Merge.MergeBoardId boardId)
+
+Disassembly:
+	0x03534AFC MOV X3, X31
+	0x03534B00 LDR X8, [X8 + 0xE60]
+	0x03534B04 MOV X20, X0
+	0x03534B08 LDR X2, [X8]
+	0x03534B0C BL 0x2996A34
+	0x03534B10 LDR X8, [X23]
+	0x03534B14 MOV X1, X20
+	0x03534B18 LDR X0, [X8 + 0xB8]
+	0x03534B1C STR X20, [X0 + 0x20]!
+	0x03534B20 BL 0x239B888
+	0x03534B24 LDR X2, [X24]
+	0x03534B28 MOV X0, X19
+	0x03534B2C MOV X1, X20
+	0x03534B30 BL 0x25E4E9C
+	0x03534B34 LDR X1, [X22]
+	0x03534B38 MOV X19, X0
+	0x03534B3C BL 0x25DF374
+	0x03534B40 CBZ W0, 0x3534BE8
+	0x03534B44 TBNZ X0, 0x0, 0x3534C38
+	0x03534B48 ADRP X8, 0x21F9000
+	0x03534B4C SBFM W9, W0, 0x1, 0x1F
+	0x03534B50 MOV X0, X19
+	0x03534B54 LDR X8, [X8 + 0xDD0]
+	0x03534B58 SUB W1, W9, 0x1
+	0x03534B5C LDR X2, [X8]
+	0x03534B60 BL 0x25E7414
+	0x03534B64 ADRP X8, 0x21F9000
+	0x03534B68 MOVZ W1, 0x2
+	0x03534B6C LDR X8, [X8 + 0xDD8]
+	0x03534B70 LDR X2, [X8]
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31+16], X22
+	003 Move [X31+24], X21
+	004 Move [X31+32], X20
+	005 Move [X31+40], X19
+	006 Move X19, X1
+	007 Move W8, [0x27F951F]
+	008 Move X21, [0x21A5E60]
+	009 Move X20, X0
+	010 Move TEMP, X8
+	011 And TEMP, TEMP, 1
+	012 Compare TEMP, 1
+	013 JumpIfEqual {18}
+	014 Move X0, [0x21A5E60]
+	015 Call 0x239F8E4
+	016 Move W8, 1
+	017 Move [X22+1311], W8
+	018 Move X0, [X21]
+	019 Move X21, [X20+16]
+	020 Move W8, [X0+228]
+	021 Compare W8, 0
+	022 JumpIfNotEqual {24}
+	023 Call 0x239FA64
+	024 Move X0, X21
+	025 Move X1, X19
+	026 Call PlayerExtensions.GetEnergyTypeForBoard, X0, X1
+	027 Move W8, [X20+24]
+	028 Move X20, [X31+32]
+	029 Move X19, [X31+40]
+	030 Move X22, [X31+16]
+	031 Move X21, [X31+24]
+	032 NotImplemented "Instruction CMP not yet implemented."
+	033 NotImplemented "Instruction CSET not yet implemented."
+	034 Move X30, [X31+48]
+	035 Return X0
+

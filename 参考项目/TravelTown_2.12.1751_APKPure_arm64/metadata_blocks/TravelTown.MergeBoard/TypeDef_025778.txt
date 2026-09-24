@@ -1,0 +1,25 @@
+// Namespace: 
+[IsReadOnly]
+public struct SystemsZenjectExtension.SystemsBuilderWithContext // TypeDefIndex: 25778
+{
+	// Fields
+	private readonly DiContainer _container; // 0x0
+	private readonly SystemsBuilder _builder; // 0x8
+
+	// Methods
+
+	// RVA: 0x6A765B8 Offset: 0x6A725B8 VA: 0x6A765B8
+	public void .ctor(SystemsBuilder builder, DiContainer container) { }
+
+	// RVA: -1 Offset: -1
+	public SystemInfo Register<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3E5714C Offset: 0x3E5314C VA: 0x3E5714C
+	|-SystemsZenjectExtension.SystemsBuilderWithContext.Register<object>
+	|
+	|-RVA: 0x3E571A4 Offset: 0x3E531A4 VA: 0x3E571A4
+	|-SystemsZenjectExtension.SystemsBuilderWithContext.Register<__Il2CppFullySharedGenericType>
+	*/
+}
+

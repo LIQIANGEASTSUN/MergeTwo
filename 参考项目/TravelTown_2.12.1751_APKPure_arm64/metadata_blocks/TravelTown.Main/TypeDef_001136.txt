@@ -1,0 +1,10 @@
+// Namespace: MergeEngine.Data
+public enum InteractionType // TypeDefIndex: 1136
+{
+	// Fields
+	public int value__; // 0x0
+	public const InteractionType unknown = 0;
+	public const InteractionType Resource = 1;
+	public const InteractionType Item = 2;
+}
+

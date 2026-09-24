@@ -1,0 +1,27 @@
+// Namespace: MergeEngine.Model
+public enum PlayerResourceEnum // TypeDefIndex: 433
+{
+	// Fields
+	public int value__; // 0x0
+	public const PlayerResourceEnum XP = 0;
+	public const PlayerResourceEnum Energy = 1;
+	public const PlayerResourceEnum HC = 2;
+	public const PlayerResourceEnum SC = 3;
+	public const PlayerResourceEnum EventXP = 4;
+	public const PlayerResourceEnum EventEnergy = 5;
+	public const PlayerResourceEnum Smiley = 6;
+	public const PlayerResourceEnum Tool1 = 7;
+	public const PlayerResourceEnum Tool2 = 8;
+	public const PlayerResourceEnum Tool3 = 9;
+	public const PlayerResourceEnum Tool4 = 10;
+	public const PlayerResourceEnum Tool5 = 11;
+	public const PlayerResourceEnum Tool6 = 12;
+	public const PlayerResourceEnum Tool7 = 13;
+	public const PlayerResourceEnum Tool8 = 14;
+	public const PlayerResourceEnum Tool9 = 15;
+	public const PlayerResourceEnum Tool10 = 16;
+	public const PlayerResourceEnum VanityIslandToken = 17;
+	public const PlayerResourceEnum Default = 18;
+	public const PlayerResourceEnum Picks = 19;
+}
+

@@ -1,0 +1,156 @@
+Type: GameLogic.Player.Items.Activation.IActivationFeatures
+
+Method: GameLogic.Player.Items.Production.IItemSpawner get_ActivationSpawn()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Board.Placement.IPlacement get_Placement()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Activation.IActivationCycle get_ActivationCycle()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_StorageMax()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Production.IItemProducer get_DecayAfterLastCycleProducer()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Merge.ItemVisibility get_SpawnVisibility()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_StartsFull()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.List`1<GameLogic.Player.Requirements.PlayerRequirement> get_ActivationRequirements()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Nullable`1<System.Int32> get_ActivationCost()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_ShowTapTextOnDiscovery()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_AllowCooldownRemover()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_AllowEnergyMode()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Nullable`1<Metaplay.Core.MetaDuration> get_DecayDelay()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_Activable()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_DecayAfterLastCycleAndActivation()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Nullable`1<Metaplay.Core.MetaTime> get_ActivationStartTime()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_HasDecayDelay()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.Math.F64 TimeSkipPriceGems(GameLogic.Random.IGenerationContext context)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean IsInInitialSequence(GameLogic.Random.IGenerationContext generationContext, GameLogic.Player.Items.Production.ProducerContext producerContext)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Player.Items.IItemDefinition> GetActivationSpawnItems(GameLogic.Random.IGenerationContext generationContext, Metacore.MergeMansion.Common.Options.Option`1<GameLogic.Player.Items.Production.ProducerContext> producerContextOption)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 GetItemsPerActivation()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean MatchesRequirements(GameLogic.Player.IPlayer player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

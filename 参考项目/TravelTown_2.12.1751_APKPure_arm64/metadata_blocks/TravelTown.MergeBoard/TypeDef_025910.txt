@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class InteractionComponentExtensions.<>c__DisplayClass2_0 // TypeDefIndex: 25910
+{
+	// Fields
+	public string itemId; // 0x10
+	public Func<string, bool> <>9__0; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A98A94 Offset: 0x6A94A94 VA: 0x6A98A94
+	public void .ctor() { }
+
+	// RVA: 0x6A98B1C Offset: 0x6A94B1C VA: 0x6A98B1C
+	internal bool <TryFindSuitableCombination>b__0(string iteratedItemId) { }
+}
+

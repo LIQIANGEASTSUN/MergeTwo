@@ -1,0 +1,27 @@
+// Namespace: Paxie.MergeStudio.Features.MiniBoard
+public abstract class MiniBoardEventData : RecurringEventData // TypeDefIndex: 1026
+{
+	// Methods
+
+	// RVA: 0x17A8A68 Offset: 0x17A8A68 VA: 0x17A8A68
+	public void .ctor(KiteRecurringEventConfigItem remoteConfig) { }
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract bool GetUseSpawnerForItemGet();
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract bool GetTasksForItemGet();
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract int GetBoardTaskEventPoint(int boardTaskCoinReward);
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract List<KiteMiniBoardItemReward> GetTaskItemRewards(int taskCoin);
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract List<KiteMiniBoardItemReward> GetItemMergeRewards(string setIDLevel);
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public abstract List<BalancePerishableConfigModelItem> GetPerishableSpawnerConfigList();
+}
+

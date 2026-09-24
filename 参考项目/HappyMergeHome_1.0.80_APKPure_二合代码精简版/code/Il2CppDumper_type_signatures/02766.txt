@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class MergeConfigManager.<>c // TypeDefIndex: 2766
+{
+	// Fields
+	public static readonly MergeConfigManager.<>c <>9; // 0x0
+	public static Predicate<TableMergeItem> <>9__32_0; // 0x4
+	public static Comparison<int> <>9__40_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x2C3D228 Offset: 0x2C3D228 VA: 0x2C3D228
+	private static void .cctor() { }
+
+	// RVA: 0x2C3D29C Offset: 0x2C3D29C VA: 0x2C3D29C
+	public void .ctor() { }
+
+	// RVA: 0x2C3D2A4 Offset: 0x2C3D2A4 VA: 0x2C3D2A4
+	internal bool <InitMaxLevelId>b__32_0(TableMergeItem x) { }
+
+	// RVA: 0x2C3D2CC Offset: 0x2C3D2CC VA: 0x2C3D2CC
+	internal int <GetProductParent>b__40_0(int x, int y) { }
+}
+

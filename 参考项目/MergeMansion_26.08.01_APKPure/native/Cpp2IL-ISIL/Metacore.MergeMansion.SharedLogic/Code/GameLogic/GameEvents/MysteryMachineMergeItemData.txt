@@ -1,0 +1,30 @@
+Type: Code.GameLogic.GameEvents.MysteryMachineMergeItemData
+
+Method: System.Void .ctor(Code.GameLogic.GameEvents.IMysteryMachineItem item, System.Int32 containerItemsIndex)
+
+Disassembly:
+	0x033120F4 LDP X26, X27, [X31 + 0x70]
+	0x033120F8 LDR X0, [X8]
+	0x033120FC LDR W8, [X0 + 0xE4]
+	0x03312100 CBNZ W8, 0x3312108
+	0x03312104 BL 0x239BA64
+	0x03312108 MOV X0, X27
+	0x0331210C MOV X1, X31
+	0x03312110 BL 0x342C158
+	0x03312114 MOV X1, X0
+	0x03312118 MOV X0, X22
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move W19, W2
+	005 Move X20, X0
+	006 Move [X0], X1
+	007 Call 0x239F888
+	008 Move [X20+8], W19
+	009 Move X20, [X31+16]
+	010 Move X19, [X31+24]
+	011 Move X30, [X31+32]
+	012 Return 
+

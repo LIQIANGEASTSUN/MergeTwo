@@ -1,0 +1,28 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BubbledItemSystem.<>c__DisplayClass89_0 // TypeDefIndex: 7488
+{
+	// Fields
+	public BubbledItemSystem <>4__this; // 0x10
+	public TryBurstBubbleSignal tryBurstBubbleSignal; // 0x18
+	public PositionComponent item; // 0x20
+	public IMergeItem mergeItem; // 0x28
+	public BoardItemPosition boardItemPosition; // 0x30
+	public ResourceMultiple burstPrice; // 0x38
+	public LockedComponent lockedComponent; // 0x40
+
+	// Methods
+
+	// RVA: 0x6588A2C Offset: 0x6584A2C VA: 0x6588A2C
+	public void .ctor() { }
+
+	// RVA: 0x658A330 Offset: 0x6586330 VA: 0x658A330
+	internal void <TryBurstBubble>b__0() { }
+
+	// RVA: 0x658A404 Offset: 0x6586404 VA: 0x658A404
+	internal void <TryBurstBubble>b__1(Exception exception) { }
+
+	// RVA: 0x658A538 Offset: 0x6586538 VA: 0x658A538
+	internal void <TryBurstBubble>b__2() { }
+}
+

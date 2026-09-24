@@ -1,0 +1,53 @@
+// Namespace: MergeEngine.ECS
+public class EntityFactory : IEntityFactory // TypeDefIndex: 590
+{
+	// Fields
+	[Inject]
+	private IGameConfigurationModel _gameConfigurationModel; // 0x10
+	[Inject]
+	private IJsonService _jsonService; // 0x18
+
+	// Methods
+
+	// RVA: 0x6144A58 Offset: 0x6140A58 VA: 0x6144A58 Slot: 4
+	public Entity CreateBoardItemEntity(IMergeItem itemConfiguration, MergeItemInstanceConfiguration instanceConfiguration) { }
+
+	// RVA: 0x6145C50 Offset: 0x6141C50 VA: 0x6145C50 Slot: 11
+	public Entity CreateBoosterItemEntity(IBoosterItem booster, string uuId) { }
+
+	// RVA: -1 Offset: -1
+	private TComponent TryAddComponent<TComponent, TCapability>(Entity entity, TCapability capability) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C220E0 Offset: 0x3C1E0E0 VA: 0x3C220E0
+	|-EntityFactory.TryAddComponent<object, object>
+	|
+	|-RVA: 0x3C22190 Offset: 0x3C1E190 VA: 0x3C22190
+	|-EntityFactory.TryAddComponent<object, __Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x6145F6C Offset: 0x6141F6C VA: 0x6145F6C Slot: 5
+	public Entity CreateBoardEntity() { }
+
+	// RVA: 0x61460D8 Offset: 0x61420D8 VA: 0x61460D8 Slot: 6
+	public Entity CreateInventoryEntity() { }
+
+	// RVA: 0x6146264 Offset: 0x6142264 VA: 0x6146264 Slot: 7
+	public Entity CreateOrdersEntity() { }
+
+	// RVA: 0x6146304 Offset: 0x6142304 VA: 0x6146304 Slot: 8
+	public Entity CreatePlayerEntity() { }
+
+	// RVA: 0x61464A4 Offset: 0x61424A4 VA: 0x61464A4 Slot: 9
+	public Entity CreateCollectionBookEntity() { }
+
+	// RVA: 0x6146504 Offset: 0x6142504 VA: 0x6146504 Slot: 10
+	public Entity CreateNarrativeEntity() { }
+
+	// RVA: 0x6145BE4 Offset: 0x6141BE4 VA: 0x6145BE4
+	private Entity CreateEmptyEntity() { }
+
+	// RVA: 0x6146564 Offset: 0x6142564 VA: 0x6146564
+	public void .ctor() { }
+}
+

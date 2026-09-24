@@ -1,0 +1,45 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class Entity.<>c__18<TComponent> // TypeDefIndex: 587
+{
+	// Fields
+	public static readonly Entity.<>c__18<TComponent> <>9; // 0x0
+	public static Func<Type, string> <>9__18_0; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	private static void .cctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F2968C Offset: 0x3F2568C VA: 0x3F2968C
+	|-Entity.<>c__18<object>..cctor
+	|
+	|-RVA: 0x3F29774 Offset: 0x3F25774 VA: 0x3F29774
+	|-Entity.<>c__18<__Il2CppFullySharedGenericType>..cctor
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F29748 Offset: 0x3F25748 VA: 0x3F29748
+	|-Entity.<>c__18<object>..ctor
+	|
+	|-RVA: 0x3F29868 Offset: 0x3F25868 VA: 0x3F29868
+	|-Entity.<>c__18<__Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal string <GetConstructor>b__18_0(Type t) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F29750 Offset: 0x3F25750 VA: 0x3F29750
+	|-Entity.<>c__18<object>.<GetConstructor>b__18_0
+	|
+	|-RVA: 0x3F29870 Offset: 0x3F25870 VA: 0x3F29870
+	|-Entity.<>c__18<__Il2CppFullySharedGenericType>.<GetConstructor>b__18_0
+	*/
+}
+

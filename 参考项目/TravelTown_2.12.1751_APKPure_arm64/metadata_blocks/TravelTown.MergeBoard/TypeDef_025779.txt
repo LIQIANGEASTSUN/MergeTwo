@@ -1,0 +1,11 @@
+// Namespace: Merger.MergeBoard.Systems
+[Extension]
+public static class SystemsZenjectExtension // TypeDefIndex: 25779
+{
+	// Methods
+
+	[Extension]
+	// RVA: 0x6A76570 Offset: 0x6A72570 VA: 0x6A76570
+	public static SystemsZenjectExtension.SystemsBuilderWithContext WithContext(SystemsBuilder builder, DiContainer container) { }
+}
+

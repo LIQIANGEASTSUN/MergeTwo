@@ -1,0 +1,16 @@
+// Namespace: Merger.TimeLimitedItems.Handlers
+public class TimeLimitedItemsRepository : RepositoryBase, ITimeLimitedItemsRepository // TypeDefIndex: 32854
+{
+	// Fields
+	private const string Topic = "limitedItems";
+	private const string CleanupAction = "cleanup";
+
+	// Methods
+
+	// RVA: 0x6B4D92C Offset: 0x6B4992C VA: 0x6B4D92C Slot: 9
+	public IPromise RequestCleanup(string eventId, OperationNotificationData[] boardOperations) { }
+
+	// RVA: 0x6B4DC94 Offset: 0x6B49C94 VA: 0x6B4DC94
+	public void .ctor() { }
+}
+

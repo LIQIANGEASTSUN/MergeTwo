@@ -1,0 +1,37 @@
+rva,method,interval_end_exclusive,next_il2cpp_method_address,capped_at_64k,file
+0x2FF9798,SummerWatermelonModel::public List<SummerWatermelonTwentySevenPackageConfig> get_PackageConfig() { },0x2FF9894,0x2FF9894,False,code/ARM_disassembly_when_pseudocode_failed/2ff9798.asm
+0x2FF9894,SummerWatermelonModel::public List<SummerWatermelonTwentySevenProductAttenuationConfig> get_ProductAttenuationConfig() { },0x2FF9990,0x2FF9990,False,code/ARM_disassembly_when_pseudocode_failed/2ff9894.asm
+0x3033D2C,SummerWatermelonModel::public List<SummerWatermelonTwentyOneProductAttenuationConfig> get_ProductAttenuationConfig() { },0x3033E28,0x3033E28,False,code/ARM_disassembly_when_pseudocode_failed/3033d2c.asm
+0x3041F80,SummerWatermelonModel::public void PurchasePackageSuccess(TableShop shopConfig) { },0x304319C,0x304319C,False,code/ARM_disassembly_when_pseudocode_failed/3041f80.asm
+0x306EE70,SummerWatermelonModel::public List<SummerWatermelonTwentyFourPackageConfig> get_PackageConfig() { },0x306EF6C,0x306EF6C,False,code/ARM_disassembly_when_pseudocode_failed/306ee70.asm
+0x306EF6C,SummerWatermelonModel::public List<SummerWatermelonTwentyFourProductAttenuationConfig> get_ProductAttenuationConfig() { },0x306F068,0x306F068,False,code/ARM_disassembly_when_pseudocode_failed/306ef6c.asm
+0x316E308,SummerWatermelonModel::public List<SummerWatermelonThreePackageConfig> get_PackageConfig() { },0x316E404,0x316E404,False,code/ARM_disassembly_when_pseudocode_failed/316e308.asm
+0x316E404,SummerWatermelonModel::public List<SummerWatermelonThreeProductAttenuationConfig> get_ProductAttenuationConfig() { },0x316E500,0x316E500,False,code/ARM_disassembly_when_pseudocode_failed/316e404.asm
+0x31A769C,SummerWatermelonModel::public List<SummerWatermelonThirteenPackageConfig> get_PackageConfig() { },0x31A7798,0x31A7798,False,code/ARM_disassembly_when_pseudocode_failed/31a769c.asm
+0x31A7798,SummerWatermelonModel::public List<SummerWatermelonThirteenProductAttenuationConfig> get_ProductAttenuationConfig() { },0x31A7894,0x31A7894,False,code/ARM_disassembly_when_pseudocode_failed/31a7798.asm
+0x31F990C,SummerWatermelonModel::public List<SummerWatermelonTenPackageConfig> get_PackageConfig() { },0x31F9A08,0x31F9A08,False,code/ARM_disassembly_when_pseudocode_failed/31f990c.asm
+0x31F9A08,SummerWatermelonModel::public List<SummerWatermelonTenProductAttenuationConfig> get_ProductAttenuationConfig() { },0x31F9B04,0x31F9B04,False,code/ARM_disassembly_when_pseudocode_failed/31f9a08.asm
+0x322C0E4,SummerWatermelonModel::public List<SummerWatermelonThirtyFourPackageConfig> get_PackageConfig() { },0x322C1E0,0x322C1E0,False,code/ARM_disassembly_when_pseudocode_failed/322c0e4.asm
+0x322C1E0,SummerWatermelonModel::public List<SummerWatermelonThirtyFourProductAttenuationConfig> get_ProductAttenuationConfig() { },0x322C2DC,0x322C2DC,False,code/ARM_disassembly_when_pseudocode_failed/322c1e0.asm
+0x32656DC,SummerWatermelonModel::public List<SummerWatermelonSixTeenPackageConfig> get_PackageConfig() { },0x32657D8,0x32657D8,False,code/ARM_disassembly_when_pseudocode_failed/32656dc.asm
+0x32657D8,SummerWatermelonModel::public List<SummerWatermelonSixTeenProductAttenuationConfig> get_ProductAttenuationConfig() { },0x32658D4,0x32658D4,False,code/ARM_disassembly_when_pseudocode_failed/32657d8.asm
+0x3298390,SummerWatermelonModel::public List<SummerWatermelonSixPackageConfig> get_PackageConfig() { },0x329848C,0x329848C,False,code/ARM_disassembly_when_pseudocode_failed/3298390.asm
+0x32C41A8,SummerWatermelonModel::public List<SummerWatermelonSevenTeenPackageConfig> get_PackageConfig() { },0x32C42A4,0x32C42A4,False,code/ARM_disassembly_when_pseudocode_failed/32c41a8.asm
+0x32C42A4,SummerWatermelonModel::public List<SummerWatermelonSevenTeenProductAttenuationConfig> get_ProductAttenuationConfig() { },0x32C43A0,0x32C43A0,False,code/ARM_disassembly_when_pseudocode_failed/32c42a4.asm
+0x32FE8D0,SummerWatermelonModel::public List<SummerWatermelonSevenPackageConfig> get_PackageConfig() { },0x32FE9CC,0x32FE9CC,False,code/ARM_disassembly_when_pseudocode_failed/32fe8d0.asm
+0x32FE9CC,SummerWatermelonModel::public List<SummerWatermelonSevenProductAttenuationConfig> get_ProductAttenuationConfig() { },0x32FEAC8,0x32FEAC8,False,code/ARM_disassembly_when_pseudocode_failed/32fe9cc.asm
+0x1632218,SummerWatermelonModel::public List<SummerWatermelonThirtyTwoPackageConfig> get_PackageConfig() { },0x1632314,0x1632314,False,code/ARM_disassembly_when_pseudocode_failed/1632218.asm
+0x1632314,SummerWatermelonModel::public List<SummerWatermelonThirtyTwoProductAttenuationConfig> get_ProductAttenuationConfig() { },0x1632410,0x1632410,False,code/ARM_disassembly_when_pseudocode_failed/1632314.asm
+0x166C264,SummerWatermelonModel::public List<SummerWatermelonTwentyNinePackageConfig> get_PackageConfig() { },0x166C360,0x166C360,False,code/ARM_disassembly_when_pseudocode_failed/166c264.asm
+0x166C360,SummerWatermelonModel::public List<SummerWatermelonTwentyNineProductAttenuationConfig> get_ProductAttenuationConfig() { },0x166C45C,0x166C45C,False,code/ARM_disassembly_when_pseudocode_failed/166c360.asm
+0x16A66FC,SummerWatermelonModel::public List<SummerWatermelonNineteenPackageConfig> get_PackageConfig() { },0x16A67F8,0x16A67F8,False,code/ARM_disassembly_when_pseudocode_failed/16a66fc.asm
+0x16A67F8,SummerWatermelonModel::public List<SummerWatermelonNineteenProductAttenuationConfig> get_ProductAttenuationConfig() { },0x16A68F4,0x16A68F4,False,code/ARM_disassembly_when_pseudocode_failed/16a67f8.asm
+0x16DEDC8,SummerWatermelonModel::public List<SummerWatermelonNinePackageConfig> get_PackageConfig() { },0x16DEEC4,0x16DEEC4,False,code/ARM_disassembly_when_pseudocode_failed/16dedc8.asm
+0x16DEEC4,SummerWatermelonModel::public List<SummerWatermelonNineProductAttenuationConfig> get_ProductAttenuationConfig() { },0x16DEFC0,0x16DEFC0,False,code/ARM_disassembly_when_pseudocode_failed/16deec4.asm
+0x1704268,SummerWatermelonModel::public List<SummerWatermelonThirtyOnePackageConfig> get_PackageConfig() { },0x1704364,0x1704364,False,code/ARM_disassembly_when_pseudocode_failed/1704268.asm
+0x1704364,SummerWatermelonModel::public List<SummerWatermelonThirtyOneProductAttenuationConfig> get_ProductAttenuationConfig() { },0x1704460,0x1704460,False,code/ARM_disassembly_when_pseudocode_failed/1704364.asm
+0x173E0B4,SummerWatermelonModel::public List<SummerWatermelonTwentyEightPackageConfig> get_PackageConfig() { },0x173E1B0,0x173E1B0,False,code/ARM_disassembly_when_pseudocode_failed/173e0b4.asm
+0x173E1B0,SummerWatermelonModel::public List<SummerWatermelonTwentyEightProductAttenuationConfig> get_ProductAttenuationConfig() { },0x173E2AC,0x173E2AC,False,code/ARM_disassembly_when_pseudocode_failed/173e1b0.asm
+0x1792AFC,SummerWatermelonModel::public List<SummerWatermelonFourteenPackageConfig> get_PackageConfig() { },0x1792BF8,0x1792BF8,False,code/ARM_disassembly_when_pseudocode_failed/1792afc.asm
+0x1792BF8,SummerWatermelonModel::public List<SummerWatermelonFourteenProductAttenuationConfig> get_ProductAttenuationConfig() { },0x1792CF4,0x1792CF4,False,code/ARM_disassembly_when_pseudocode_failed/1792bf8.asm
+0x17C5094,SummerWatermelonModel::public List<SummerWatermelonFourPackageConfig> get_PackageConfig() { },0x17C5190,0x17C5190,False,code/ARM_disassembly_when_pseudocode_failed/17c5094.asm

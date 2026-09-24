@@ -1,0 +1,75 @@
+// Namespace: MergeEngine.ECS.Systems
+public class InteractionSystem : TickableSystem<InteractionComponent>, IItemsCombiner // TypeDefIndex: 648
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x40
+	[Inject]
+	private IResourcesConfigurationModel _resourcesConfigurationModel; // 0x48
+	[InjectSystem]
+	private ResourcesSystem _resourcesSystem; // 0x50
+	[InjectSystem]
+	private BoardItemConsumerSystem _boardItemConsumerSystem; // 0x58
+	[InjectSystem]
+	private BoardSystem _boardSystem; // 0x60
+	[InjectSystem]
+	private ItemConsumeSystem _itemConsumeSystem; // 0x68
+	[InjectComponent]
+	private BoardComponent _boardComponent; // 0x70
+	[InjectComponent]
+	private BoardItemCountComponent _boardItemCountComponent; // 0x78
+	[InjectComponent]
+	private InteractionTrackingComponent _interactionTrackingComponent; // 0x80
+	[CompilerGenerated]
+	private Action<IMergeItem, BoardItemPosition, InteractionType, List<ItemMultiple>> ItemInteracted; // 0x88
+
+	// Properties
+	public override SystemPriorities Priority { get; }
+
+	// Methods
+
+	// RVA: 0x627F170 Offset: 0x627B170 VA: 0x627F170 Slot: 15
+	public override SystemPriorities get_Priority() { }
+
+	[CompilerGenerated]
+	// RVA: 0x627F178 Offset: 0x627B178 VA: 0x627F178
+	public void add_ItemInteracted(Action<IMergeItem, BoardItemPosition, InteractionType, List<ItemMultiple>> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x627F228 Offset: 0x627B228 VA: 0x627F228
+	public void remove_ItemInteracted(Action<IMergeItem, BoardItemPosition, InteractionType, List<ItemMultiple>> value) { }
+
+	// RVA: 0x627F2D8 Offset: 0x627B2D8 VA: 0x627F2D8 Slot: 16
+	protected override void ProcessComponents(ReadOnlyCollection<InteractionComponent> components) { }
+
+	// RVA: 0x627F73C Offset: 0x627B73C VA: 0x627F73C
+	public bool TryConsumeInteractionCost(InteractionComponent interactionComponent, bool notifyPlayer = True, OperationContext context, CombiningComponent combiningComponent) { }
+
+	// RVA: 0x627F90C Offset: 0x627B90C VA: 0x627F90C
+	public bool CanAffordInteractionCost(InteractionComponent interactionComponent, bool notifyPlayer) { }
+
+	// RVA: 0x627FF50 Offset: 0x627BF50 VA: 0x627FF50
+	public bool CanAffordResourceInteractionCost(InteractionComponent interactionComponent) { }
+
+	// RVA: 0x627FF60 Offset: 0x627BF60 VA: 0x627FF60
+	public bool CanAffordItemInteractionCost(InteractionComponent interactionComponent) { }
+
+	// RVA: 0x627FDF8 Offset: 0x627BDF8 VA: 0x627FDF8
+	private void ConsumeInteractionCost(InteractionComponent interactionComponent, OperationContext context, CombiningComponent combiningComponent, out InteractionType interactionType, out List<ItemMultiple> consumed) { }
+
+	// RVA: 0x628065C Offset: 0x627C65C VA: 0x628065C Slot: 17
+	public bool CanCombineItems(PositionComponent firstItem, PositionComponent secondItem) { }
+
+	// RVA: 0x6280890 Offset: 0x627C890 VA: 0x6280890 Slot: 18
+	public bool TryCombineItems(PositionComponent firstItem, PositionComponent secondItem, IItemsCombiner.OnItemsCombined callback) { }
+
+	// RVA: 0x62809D8 Offset: 0x627C9D8 VA: 0x62809D8 Slot: 19
+	public void ResetCombine() { }
+
+	// RVA: 0x62809DC Offset: 0x627C9DC VA: 0x62809DC
+	private void OnItemsConsumed(InteractionComponent interactionComponent) { }
+
+	// RVA: 0x6280A3C Offset: 0x627CA3C VA: 0x6280A3C
+	public void .ctor() { }
+}
+

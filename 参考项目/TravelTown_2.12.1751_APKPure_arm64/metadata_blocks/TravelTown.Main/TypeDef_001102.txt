@@ -1,0 +1,16 @@
+// Namespace: MergeEngine.ECS.Components.Items.Producers
+public interface IItemSpawningComponent : ITimeCycleComponent, IComponentBase // TypeDefIndex: 1102
+{
+	// Properties
+	public abstract int Seed { get; }
+	public abstract ItemSpawningQueue ItemsQueue { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract int get_Seed();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract ItemSpawningQueue get_ItemsQueue();
+}
+

@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemDiscoverySystem.<>c__DisplayClass8_0 // TypeDefIndex: 25750
+{
+	// Fields
+	public ItemDiscoverySystem <>4__this; // 0x10
+	public TickContext context; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A6D654 Offset: 0x6A69654 VA: 0x6A6D654
+	public void .ctor() { }
+
+	// RVA: 0x6A6D94C Offset: 0x6A6994C VA: 0x6A6D94C
+	internal void <OnItemSpawnerDiscovered>b__0(IMergeItem item) { }
+}
+

@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class InventorySystem.<>c__DisplayClass85_0 // TypeDefIndex: 653
+{
+	// Fields
+	public IMergeItem mergeItem; // 0x10
+
+	// Methods
+
+	// RVA: 0x6286B38 Offset: 0x6282B38 VA: 0x6286B38
+	public void .ctor() { }
+
+	// RVA: 0x628A64C Offset: 0x628664C VA: 0x628A64C
+	internal bool <UnlockedInventorySlotAtLevel>b__0(IMergeItem item) { }
+}
+

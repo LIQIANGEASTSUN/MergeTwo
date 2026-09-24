@@ -1,0 +1,20 @@
+// Namespace: 
+[CompilerGenerated]
+private struct MiniBoardRewardAreaController.<SlowCloseRewardLoop>d__27 : IAsyncStateMachine // TypeDefIndex: 1172
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncUniTaskMethodBuilder <>t__builder; // 0x4
+	public MiniBoardRewardAreaController <>4__this; // 0xC
+	private UniTask.Awaiter <>u__1; // 0x10
+
+	// Methods
+
+	// RVA: 0x17DD944 Offset: 0x17DD944 VA: 0x17DD944 Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x17DDF08 Offset: 0x17DDF08 VA: 0x17DDF08 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

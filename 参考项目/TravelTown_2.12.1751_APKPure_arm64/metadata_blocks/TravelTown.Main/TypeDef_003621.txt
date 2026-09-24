@@ -1,0 +1,24 @@
+// Namespace: Merger.PowerBoost.Models
+public interface IPowerBoostModel // TypeDefIndex: 3621
+{
+	// Properties
+	public abstract MutableBindableProperty<bool> IsPowerBoostOn { get; }
+	public abstract MutableBindableProperty<int> PowerBoostMode { get; }
+	public abstract MutableBindableProperty<bool> IsEventPowerBoostOn { get; }
+	public abstract MutableBindableProperty<int> EventPowerBoostMode { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract MutableBindableProperty<bool> get_IsPowerBoostOn();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract MutableBindableProperty<int> get_PowerBoostMode();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract MutableBindableProperty<bool> get_IsEventPowerBoostOn();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract MutableBindableProperty<int> get_EventPowerBoostMode();
+}
+

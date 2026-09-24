@@ -1,0 +1,81 @@
+// Namespace: GameCore.Configuration.Definitions
+public class RewardAmount : IComparable<RewardAmount>, IEquatable<RewardAmount> // TypeDefIndex: 1591
+{
+	// Fields
+	[ConstructorParameter(1)]
+	private RewardAmountType _type; // 0x10
+	[ConstructorParameter(2)]
+	private int _amount; // 0x14
+	[ConstructorParameter(3)]
+	private int _min; // 0x18
+	[ConstructorParameter(4)]
+	private int _max; // 0x1C
+	[ConstructorParameter(5)]
+	private int _outOf; // 0x20
+
+	// Properties
+	public RewardAmountType Type { get; }
+	[JsonIgnore]
+	public int Amount { get; set; }
+	[JsonIgnore]
+	public int Min { get; }
+	[JsonIgnore]
+	public int Max { get; }
+	[JsonIgnore]
+	public int OutOf { get; }
+	public bool IsPlural { get; }
+
+	// Methods
+
+	// RVA: 0x601FADC Offset: 0x601BADC VA: 0x601FADC
+	public RewardAmountType get_Type() { }
+
+	// RVA: 0x601EFD4 Offset: 0x601AFD4 VA: 0x601EFD4
+	public int get_Amount() { }
+
+	// RVA: 0x601F10C Offset: 0x601B10C VA: 0x601F10C
+	public void set_Amount(int value) { }
+
+	// RVA: 0x601FAE4 Offset: 0x601BAE4 VA: 0x601FAE4
+	public int get_Min() { }
+
+	// RVA: 0x601FB48 Offset: 0x601BB48 VA: 0x601FB48
+	public int get_Max() { }
+
+	// RVA: 0x601FBAC Offset: 0x601BBAC VA: 0x601FBAC
+	public int get_OutOf() { }
+
+	// RVA: 0x601EF84 Offset: 0x601AF84 VA: 0x601EF84
+	public void .ctor(RewardAmountType type, int amount, int min = 0, int max = 0, int outOf = 0) { }
+
+	// RVA: 0x601FC10 Offset: 0x601BC10 VA: 0x601FC10
+	public static RewardAmount op_Implicit(int amount) { }
+
+	// RVA: 0x601FC6C Offset: 0x601BC6C VA: 0x601FC6C
+	public void .ctor(int amount) { }
+
+	// RVA: 0x601FC94 Offset: 0x601BC94 VA: 0x601FC94
+	public void .ctor(RewardAmount other) { }
+
+	// RVA: 0x601FD48 Offset: 0x601BD48 VA: 0x601FD48 Slot: 4
+	public int CompareTo(RewardAmount other) { }
+
+	// RVA: 0x601F748 Offset: 0x601B748 VA: 0x601F748 Slot: 5
+	public bool Equals(RewardAmount other) { }
+
+	// RVA: 0x601FE80 Offset: 0x601BE80 VA: 0x601FE80 Slot: 2
+	public override int GetHashCode() { }
+
+	// RVA: 0x601FFF8 Offset: 0x601BFF8 VA: 0x601FFF8
+	public bool get_IsPlural() { }
+
+	// RVA: 0x6020050 Offset: 0x601C050 VA: 0x6020050
+	public static RewardAmount CreateFromSerialised(SerializedJsonReward rewardData) { }
+
+	// RVA: 0x6020144 Offset: 0x601C144 VA: 0x6020144
+	public RewardAmount Clone() { }
+
+	// RVA: 0x602019C Offset: 0x601C19C VA: 0x602019C
+	public int GetAmountOrZero() { }
+}
+

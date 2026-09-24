@@ -1,0 +1,31 @@
+// Namespace: MergeEngine.ECS.Components.InteractionTracking
+public class InteractionTrackingData // TypeDefIndex: 1116
+{
+	// Fields
+	public ItemSpawningTrackingData ItemSpawningTrackingData; // 0x10
+	public RemoteItemSpawningTrackingData RemoteItemSpawningTrackingData; // 0x18
+	public ExpendableTrackingData ExpendableTrackingData; // 0x20
+	public ChargableTrackingData ChargableTrackingData; // 0x28
+	public ToolSpawningTrackingData ToolSpawningTrackingData; // 0x30
+	public CreatedItemTrackingData CreatedItemTrackingData; // 0x38
+	public bool IsComboProducer; // 0x40
+	public bool IsProducer; // 0x41
+	public bool IsSpawner; // 0x42
+	public string MergeItemType; // 0x48
+	public string SpawnedItemId; // 0x50
+	public bool InteractionResourceEnabled; // 0x58
+	public bool InteractionItemsEnabled; // 0x59
+	public string InteractionResource; // 0x60
+	public Nullable<int> InteractionResourceAmount; // 0x68
+	public string ItemsToConsumeFormatted; // 0x70
+	public IEnumerable<int> EnergyCostOptions; // 0x78
+	public bool IsDraggedInteraction; // 0x80
+	public int Duration; // 0x84
+	public int ItemAmount; // 0x88
+
+	// Methods
+
+	// RVA: 0x6900674 Offset: 0x68FC674 VA: 0x6900674
+	public void .ctor() { }
+}
+

@@ -1,0 +1,54 @@
+Type: GameLogic.Player.BoardInventory+InventoryEntry
+
+Method: GameLogic.Player.Items.MergeItem get_Item()
+
+Disassembly:
+	0x0353190C CMP X11, X1
+	0x03531910 B.EQ 0x3531960
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_Item(GameLogic.Player.Items.MergeItem value)
+
+Disassembly:
+	0x03531914 SUBS X9, X9, 0x1
+	0x03531918 ADD X10, X10, 0x10
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: Metaplay.Core.MetaTime get_Timestamp()
+
+Disassembly:
+	0x0353191C B.NE 0x3531908
+	0x03531920 MOV X0, X19
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_Timestamp(Metaplay.Core.MetaTime value)
+
+Disassembly:
+	0x03531924 MOVZ W2, 0x26
+	0x03531928 BL 0x23D527C
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0352DD08 LDR W9, [X0 + 0xE4]
+	0x0352DD0C CBNZ W9, 0x352DD1C
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+

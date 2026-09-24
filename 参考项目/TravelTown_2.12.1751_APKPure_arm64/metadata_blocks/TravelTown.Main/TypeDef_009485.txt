@@ -1,0 +1,12 @@
+// Namespace: Merger.Game.Signal.Combinations
+public class CombiningProducerExpiredSignal // TypeDefIndex: 9485
+{
+	// Fields
+	public CombiningComponent CombiningComponent; // 0x10
+
+	// Methods
+
+	// RVA: 0x676E248 Offset: 0x676A248 VA: 0x676E248
+	public void .ctor(CombiningComponent combiningComponent) { }
+}
+

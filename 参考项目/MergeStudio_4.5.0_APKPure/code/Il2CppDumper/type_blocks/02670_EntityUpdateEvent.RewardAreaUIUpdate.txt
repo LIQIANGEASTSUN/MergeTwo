@@ -1,0 +1,4 @@
+// Namespace: 
+public struct EntityUpdateEvent.RewardAreaUIUpdate : IEvent // TypeDefIndex: 2670
+{}
+

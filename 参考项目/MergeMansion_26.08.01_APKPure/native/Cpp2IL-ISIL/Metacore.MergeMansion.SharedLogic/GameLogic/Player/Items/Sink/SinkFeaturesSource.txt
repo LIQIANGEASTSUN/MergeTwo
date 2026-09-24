@@ -1,0 +1,228 @@
+Type: GameLogic.Player.Items.Sink.SinkFeaturesSource
+
+Method: System.String get_ConfigKey()
+
+Disassembly:
+	0x0360BBB0 LDR X10, [X8 + 0xB0]
+	0x0360BBB4 ADD X10, X10, 0x8
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.String get_ItemType()
+
+Disassembly:
+	0x0360BBB8 LDUR X11, [X10 - 0x8]
+	0x0360BBBC CMP X11, X1
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Boolean get_HideProgressBar()
+
+Disassembly:
+	0x0360BBC0 B.EQ 0x360BBE0
+	0x0360BBC4 SUBS X9, X9, 0x1
+
+ISIL:
+	001 Move W0, [X0+60]
+	002 Return X0
+
+Method: System.Void set_HideProgressBar(System.Boolean value)
+
+Disassembly:
+	0x0360BBC8 ADD X10, X10, 0x10
+	0x0360BBCC B.NE 0x360BBB8
+
+ISIL:
+	001 Move [X0+60], W1
+	002 Return 
+
+Method: System.Boolean get_HideUndiscoveredItemsInHints()
+
+Disassembly:
+	0x0360BBD0 MOV X0, X19
+	0x0360BBD4 MOV W2, W31
+
+ISIL:
+	001 Move W0, [X0+61]
+	002 Return X0
+
+Method: System.Void set_HideUndiscoveredItemsInHints(System.Boolean value)
+
+Disassembly:
+	0x0360BBD8 BL 0x23D527C
+	0x0360BBDC B 0x360BBEC
+
+ISIL:
+	001 Move [X0+61], W1
+	002 Return 
+
+Method: System.Boolean get_AllowReverseSinking()
+
+Disassembly:
+	0x0360BBE0 LDRSW X9, [X10]
+	0x0360BBE4 ADD X8, X8, X9, 0x4, LSL
+
+ISIL:
+	001 Move W0, [X0+62]
+	002 Return X0
+
+Method: System.Void set_AllowReverseSinking(System.Boolean value)
+
+Disassembly:
+	0x0360BBE8 ADD X0, X8, 0x138
+	0x0360BBEC LDP X8, X1, [X0]
+
+ISIL:
+	001 Move [X0+62], W1
+	002 Return 
+
+Method: GameLogic.Player.Items.Sink.SinkFeatures ToConfigData(GameLogic.Player.Items.Production.IProducerFactory producerFactory)
+
+Disassembly:
+	0x0360BBF0 MOV X0, X19
+	0x0360BBF4 BLR X8
+	0x0360BBF8 TBZ X0, 0x0, 0x360BC4C
+	0x0360BBFC LDR X19, [X31 + 0x18]
+	0x0360BC00 CBZ X19, 0x360BD10
+	0x0360BC04 ADRP X10, 0x2103000
+	0x0360BC08 LDR X8, [X19]
+	0x0360BC0C LDR X10, [X10 + 0xB08]
+	0x0360BC10 LDRH W9, [X8 + 0x12E]
+	0x0360BC14 LDR X1, [X10]
+	0x0360BC18 CBZ X9, 0x360BC3C
+	0x0360BC1C LDR X10, [X8 + 0xB0]
+	0x0360BC20 ADD X10, X10, 0x8
+	0x0360BC24 LDUR X11, [X10 - 0x8]
+	0x0360BC28 CMP X11, X1
+	0x0360BC2C B.EQ 0x360BC58
+	0x0360BC30 SUBS X9, X9, 0x1
+	0x0360BC34 ADD X10, X10, 0x10
+	0x0360BC38 B.NE 0x360BC24
+	0x0360BC3C MOV X0, X19
+	0x0360BC40 MOV W2, W31
+	0x0360BC44 BL 0x23D527C
+	0x0360BC48 B 0x360BC64
+	0x0360BC4C MOV X19, X31
+	0x0360BC50 MOV X20, X31
+	0x0360BC54 B 0x360BC7C
+	0x0360BC58 LDRSW X9, [X10]
+	0x0360BC5C ADD X8, X8, X9, 0x4, LSL
+	0x0360BC60 ADD X0, X8, 0x138
+	0x0360BC64 LDP X8, X1, [X0]
+	0x0360BC68 MOV X0, X19
+	0x0360BC6C BLR X8
+	0x0360BC70 CBZ X0, 0x360BD14
+	0x0360BC74 LDR X20, [X0 + 0x10]
+	0x0360BC78 MOV X19, X31
+	0x0360BC7C ADD X8, X31, 0x18
+	0x0360BC80 LDR X21, [X8]
+	0x0360BC84 CBZ X21, 0x360BCE8
+	0x0360BC88 ADRP X10, 0x20C2000
+	0x0360BC8C LDR X8, [X21]
+	0x0360BC90 LDR X10, [X10 + 0x230]
+	0x0360BC94 LDRH W9, [X8 + 0x12E]
+	0x0360BC98 LDR X1, [X10]
+	0x0360BC9C CBZ X9, 0x360BCC0
+	0x0360BCA0 LDR X10, [X8 + 0xB0]
+	0x0360BCA4 ADD X10, X10, 0x8
+	0x0360BCA8 LDUR X11, [X10 - 0x8]
+	0x0360BCAC CMP X11, X1
+	0x0360BCB0 B.EQ 0x360BCD0
+	0x0360BCB4 SUBS X9, X9, 0x1
+	0x0360BCB8 ADD X10, X10, 0x10
+	0x0360BCBC B.NE 0x360BCA8
+	0x0360BCC0 MOV X0, X21
+	0x0360BCC4 MOV W2, W31
+	0x0360BCC8 BL 0x23D527C
+	0x0360BCCC B 0x360BCDC
+	0x0360BCD0 LDRSW X9, [X10]
+	0x0360BCD4 ADD X8, X8, X9, 0x4, LSL
+	0x0360BCD8 ADD X0, X8, 0x138
+	0x0360BCDC LDP X8, X1, [X0]
+	0x0360BCE0 MOV X0, X21
+	0x0360BCE4 BLR X8
+	0x0360BCE8 CBNZ X19, 0x360BD08
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31-40], X23
+	003 Move [X31+16], X22
+	004 Move [X31+24], X21
+	005 Move [X31+32], X20
+	006 Move [X31+40], X19
+	007 Move X19, X0
+	008 Move W8, [0x2722BC3]
+	009 Move TEMP, X8
+	010 And TEMP, TEMP, 1
+	011 Compare TEMP, 1
+	012 Invalid "Jump target not found in method."
+	013 Move X0, [0x20CC240]
+	014 Call 0x239F8E4
+	015 Move X0, [0x20CC238]
+	016 Call 0x239F8E4
+	017 Move X0, [0x2129968]
+	018 Call 0x239F8E4
+	019 Move W8, 1
+	020 Move [X20+3011], W8
+	021 Move X0, [X19+40]
+	022 Move X21, [0x2129968]
+	023 Compare X0, 0
+	024 Invalid "Jump target not found in method."
+	025 Move X1, X31
+	026 Call ItemConverter.ConvertToConfigKeys, X0
+	027 Move X20, X0
+	028 Move X8, [0x20CC238]
+	029 Move X0, [X8]
+	030 Call 0x239FB80
+	031 Move X20, X0
+	032 Move X8, [0x20CC240]
+	033 Move X1, [X8]
+	034 Call 0x272EE2C, X0
+	035 Move X0, [X19+24]
+	036 Move X1, [X19+32]
+	037 Move X2, X20
+	038 Move W3, [X19+56]
+	039 Move X4, [X19+48]
+	040 Move X5, X31
+	041 Call ItemsConfigExtensions.ConstructFactory, X0, X1, X2, X3, X4
+	042 Move X8, [X21]
+	043 NotImplemented "Instruction LDRH not yet implemented."
+	044 Move W23, [X19+62]
+	045 Move X19, X0
+	046 Move X0, X8
+	047 Call 0x239FB80
+	048 Move X1, X31
+	049 Move X20, X0
+	050 Call Object..ctor, X0
+	051 Move W8, 1
+	052 Move X0, X20
+	053 Move X1, X19
+	054 Move [X20+16], W8
+	055 Move [X0+24], X19
+	056 Call 0x239F888
+	057 NotImplemented "Instruction STRH not yet implemented."
+	058 Move X0, X20
+	059 Move [X20+34], W23
+	060 Move X20, [X31+32]
+	061 Move X19, [X31+40]
+	062 Move X22, [X31+16]
+	063 Move X21, [X31+24]
+	064 Move X30, [X31+48]
+	065 Move X23, [X31+56]
+	066 Return X0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0360BCEC MOV X0, X20
+	0x0360BCF0 LDP X20, X19, [X31 + 0x30]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+

@@ -1,0 +1,4 @@
+// Namespace: Paxie
+public interface IEventReceiverBase // TypeDefIndex: 210
+{}
+

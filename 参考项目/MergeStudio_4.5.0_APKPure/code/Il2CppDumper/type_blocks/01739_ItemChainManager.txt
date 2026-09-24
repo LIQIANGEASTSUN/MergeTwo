@@ -1,0 +1,182 @@
+// Namespace: MergePuzzle
+public class ItemChainManager : IItemRewardConvertHandler // TypeDefIndex: 1739
+{
+	// Fields
+	private readonly KiteNewSpawnerConfig _kiteConfig; // 0x8
+	private readonly List<ItemChainScriptableData> _chainDataList; // 0xC
+	private readonly Dictionary<int, ItemChainModel> _chains; // 0x10
+	private readonly Dictionary<int, ItemLinkModel> _linksByID; // 0x14
+	private readonly Dictionary<int, ItemLinkModel> _activeLinksByChain; // 0x18
+	private readonly Dictionary<int, int> _setIdToChainIndex; // 0x1C
+	private readonly Dictionary<int, int> _defaultSetIdToActiveChainIndex; // 0x20
+	private const int ARCHIVED_ID_OFFSET = 1000000;
+	private const int NEW_SPAWNER_ID_OFFSET = 100000;
+	private const int CHAIN_SPAWNER_INTERVAL = 1000;
+	private BoardEntity _boardEntity; // 0x24
+	public readonly ItemChainManager.SpawnerPointsQueryHandler SpawnerQueryHandler; // 0x28
+
+	// Methods
+
+	// RVA: 0x190328C Offset: 0x190328C VA: 0x190328C
+	public void .ctor(KiteNewSpawnerConfig kiteConfig, BoardEntity boardEntity) { }
+
+	// RVA: 0x19040E0 Offset: 0x19040E0 VA: 0x19040E0
+	public void SetBoardEntity(BoardEntity boardEntity) { }
+
+	// RVA: 0x19040E8 Offset: 0x19040E8 VA: 0x19040E8
+	public void SetWaitingArchiveTasksReadyForRemoval() { }
+
+	// RVA: 0x19043A0 Offset: 0x19043A0 VA: 0x19043A0
+	public void SetArchiveTaskForRemoval(ItemLinkID linkID) { }
+
+	// RVA: 0x19044D8 Offset: 0x19044D8 VA: 0x19044D8
+	public void TryEnqueueArchivePopup() { }
+
+	// RVA: 0x19047C8 Offset: 0x19047C8 VA: 0x19047C8
+	public void UpdateArchiveTasks() { }
+
+	// RVA: 0x1903DCC Offset: 0x1903DCC VA: 0x1903DCC
+	private void InitializeChains() { }
+
+	// RVA: 0x1904CDC Offset: 0x1904CDC VA: 0x1904CDC
+	private void ClearAllCaches() { }
+
+	// RVA: 0x1904DCC Offset: 0x1904DCC VA: 0x1904DCC
+	private void ProcessChainData(ItemChainScriptableData chainData, int userLevel) { }
+
+	// RVA: 0x1905B3C Offset: 0x1905B3C VA: 0x1905B3C
+	private KiteItemChain FindKiteChain(int chainIndex) { }
+
+	// RVA: 0x1905D00 Offset: 0x1905D00 VA: 0x1905D00
+	private static KiteItemLink FindKiteLink(KiteItemChain kiteChain, int linkIndex) { }
+
+	// RVA: 0x1906298 Offset: 0x1906298 VA: 0x1906298
+	private ItemLinkModel FindActiveLinkBySetID(int setId) { }
+
+	// RVA: 0x1906354 Offset: 0x1906354 VA: 0x1906354
+	public ItemLinkScriptableData FindActiveLinkDataBySetID(int setId) { }
+
+	// RVA: 0x1906530 Offset: 0x1906530 VA: 0x1906530
+	public ItemLinkScriptableData FindActiveLinkDataByDefaultSetID(int defaultSetId) { }
+
+	// RVA: 0x1905EC0 Offset: 0x1905EC0 VA: 0x1905EC0
+	private void CacheLinkById(ItemLinkModel link) { }
+
+	// RVA: 0x1905F48 Offset: 0x1905F48 VA: 0x1905F48
+	private void UpdateActiveLinkIfNecessary(ItemLinkModel link, int chainIndex, int userLevel) { }
+
+	// RVA: 0x1906050 Offset: 0x1906050 VA: 0x1906050
+	private void BuildReverseIndexForLink(ItemLinkModel link, int chainIndex) { }
+
+	// RVA: 0x1906830 Offset: 0x1906830 VA: 0x1906830
+	private void AddSetIdToChainIndex(int setId, int chainIndex) { }
+
+	// RVA: 0x19068A4 Offset: 0x19068A4 VA: 0x19068A4
+	public ItemChainModel FindItemChainWithSetId(int setId) { }
+
+	// RVA: 0x1906960 Offset: 0x1906960 VA: 0x1906960
+	public List<ItemChainModel> FindAllItemChainsWithSetId(int setId) { }
+
+	// RVA: 0x1906B1C Offset: 0x1906B1C VA: 0x1906B1C
+	public ItemChainModel GetItemChain(int chainIndex) { }
+
+	// RVA: 0x1906B78 Offset: 0x1906B78 VA: 0x1906B78
+	public ItemChainScriptableData GetItemChainData(int chainIndex) { }
+
+	// RVA: 0x1906C18 Offset: 0x1906C18 VA: 0x1906C18
+	public ItemLinkScriptableData GetItemLinkData(ItemLinkID linkID) { }
+
+	// RVA: 0x190476C Offset: 0x190476C VA: 0x190476C
+	public ItemLinkModel GetItemLink(ItemLinkID linkID) { }
+
+	// RVA: 0x1906DCC Offset: 0x1906DCC VA: 0x1906DCC
+	public List<ItemLinkModel> GetItemLinksAtUnlockLevel(int unlockLevel) { }
+
+	// RVA: 0x1906F28 Offset: 0x1906F28 VA: 0x1906F28
+	public List<ItemLinkModel> GetItemLinksAtArchiveLevel(int archiveLevel) { }
+
+	// RVA: 0x1907084 Offset: 0x1907084 VA: 0x1907084
+	public ItemLinkModel GetItemLinkWithItemSet(int itemSetId) { }
+
+	// RVA: 0x19071BC Offset: 0x19071BC VA: 0x19071BC
+	public void ReplaceOldSetIDs(List<ItemLinkModel> previousLinks, List<ItemLinkModel> newLinks) { }
+
+	// RVA: 0x1908650 Offset: 0x1908650 VA: 0x1908650
+	public static int GetDefaultSetIDFromArchivedID(int archivedID) { }
+
+	// RVA: 0x190869C Offset: 0x190869C VA: 0x190869C
+	public static int GetSetIDFromArchivedID(int archivedID) { }
+
+	// RVA: 0x1908710 Offset: 0x1908710 VA: 0x1908710
+	public int GetArchivedSetIDFromSetID(int setID, bool checkIfArchived) { }
+
+	// RVA: 0x1908918 Offset: 0x1908918 VA: 0x1908918
+	public int GetCurrentIDFromSetID(int setID) { }
+
+	// RVA: 0x1908C40 Offset: 0x1908C40 VA: 0x1908C40
+	public int GetActiveIDFromSetID(int setID) { }
+
+	// RVA: 0x19087D0 Offset: 0x19087D0 VA: 0x19087D0
+	public static bool IsItemArchived(int setID) { }
+
+	// RVA: 0x19085E4 Offset: 0x19085E4 VA: 0x19085E4
+	private static int ArchiveSetID(int setID, int linkIndex) { }
+
+	// RVA: 0x190923C Offset: 0x190923C VA: 0x190923C
+	public bool IsInventoryLogicActive() { }
+
+	// RVA: 0x190925C Offset: 0x190925C VA: 0x190925C
+	public int GetLinkCount() { }
+
+	// RVA: 0x19092C0 Offset: 0x19092C0 VA: 0x19092C0
+	public List<ItemLinkModel> GetAllLinksOrderedByUnlockLevel() { }
+
+	// RVA: 0x190962C Offset: 0x190962C VA: 0x190962C
+	public List<ItemLinkModel> GetAllLinksOrderedByArchiveLevel(bool excludeZero = False, bool excludeInventory = False) { }
+
+	// RVA: 0x1909ABC Offset: 0x1909ABC VA: 0x1909ABC
+	public long GetArchiveTaskEndTime() { }
+
+	// RVA: 0x1909B40 Offset: 0x1909B40 VA: 0x1909B40
+	public GameItemReward GetArchiveReward(ItemLinkID linkID) { }
+
+	// RVA: 0x1909CA8 Offset: 0x1909CA8 VA: 0x1909CA8
+	public List<KiteSpawnerBackupItem> GetSpawnerBackupItems() { }
+
+	// RVA: 0x1909D5C Offset: 0x1909D5C VA: 0x1909D5C
+	public List<BoardPosition> GetSpawnersToRemoveByArchive(List<BoardPosition> boardPositions, int setID) { }
+
+	// RVA: 0x190BA00 Offset: 0x190BA00 VA: 0x190BA00
+	public List<ItemLinkModel> GetPossibleArchiveLinks() { }
+
+	// RVA: 0x190BB84 Offset: 0x190BB84 VA: 0x190BB84
+	public int LookupSetIDInParentLink(int lookupSetID, int parentSetID) { }
+
+	// RVA: 0x190BEF0 Offset: 0x190BEF0 VA: 0x190BEF0
+	private static int GetMatchingIDFromAnotherLink(ItemLinkModel parentLink, int lookupSetID) { }
+
+	// RVA: 0x190C0E8 Offset: 0x190C0E8 VA: 0x190C0E8
+	public bool IsSpawnerSellable(int querySetID, int level) { }
+
+	// RVA: 0x190C678 Offset: 0x190C678 VA: 0x190C678
+	private int CurrentRequiredLevelForSpawner(int querySetID) { }
+
+	// RVA: 0x190CC94 Offset: 0x190CC94 VA: 0x190CC94
+	public Tuple<int, int> GetNextArchivedChainAndLink() { }
+
+	// RVA: 0x190CF58 Offset: 0x190CF58 VA: 0x190CF58
+	public void CreateSpawnerQueryDictionary() { }
+
+	// RVA: 0x19040D8 Offset: 0x19040D8 VA: 0x19040D8 Slot: 4
+	public void InitializeItemRewardConversion() { }
+
+	// RVA: 0x190D434 Offset: 0x190D434 VA: 0x190D434 Slot: 5
+	public void ItemRewardConvertUpdated(ItemRewardConvertEvent.FeatureStatusUpdated e) { }
+
+	// RVA: 0x190D70C Offset: 0x190D70C VA: 0x190D70C
+	public int GetParentChainSpawnerSetId(int childSpawnerSetId) { }
+
+	// RVA: 0x190E08C Offset: 0x190E08C VA: 0x190E08C
+	public int GetChildChainSpawnerSetId(int parentSpawnerSetId) { }
+}
+

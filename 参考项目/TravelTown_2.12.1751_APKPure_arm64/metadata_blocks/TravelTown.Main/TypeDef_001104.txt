@@ -1,0 +1,14 @@
+// Namespace: MergeEngine.ECS.Components.Items.Producers
+[Serializable]
+public class SerializedItemSpawningComponent : SerializedTimeCycleComponent // TypeDefIndex: 1104
+{
+	// Fields
+	public int Seed; // 0x48
+	public int ItemIndex; // 0x4C
+
+	// Methods
+
+	// RVA: 0x6900308 Offset: 0x68FC308 VA: 0x6900308
+	public void .ctor() { }
+}
+

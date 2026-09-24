@@ -1,0 +1,15 @@
+// Namespace: Merger.MergeBoard.View
+public interface IMergeBoardContentController // TypeDefIndex: 25673
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void ClearBoardContent();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void RepopulateBoardContent();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void UpdateBoardTiles();
+}
+

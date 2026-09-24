@@ -1,0 +1,9 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public class SplitComponent : ComponentBase<SplitCapability> // TypeDefIndex: 1088
+{
+	// Methods
+
+	// RVA: 0x68FDD50 Offset: 0x68F9D50 VA: 0x68FDD50
+	public void .ctor(SplitCapability capability, Entity entity) { }
+}
+

@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BoardEvent.ScrollableItemDestroy : IEvent // TypeDefIndex: 1783
+{
+	// Fields
+	public ScrollableItem ScrollableItem; // 0x0
+}
+

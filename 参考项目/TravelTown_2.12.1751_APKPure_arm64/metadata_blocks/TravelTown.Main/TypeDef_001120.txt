@@ -1,0 +1,13 @@
+// Namespace: MergeEngine.ECS.Components.InteractionTracking
+public class ToolSpawningTrackingData // TypeDefIndex: 1120
+{
+	// Fields
+	public IMergeItem SpawnerItem; // 0x10
+	public IMergeItem SpawnedItem; // 0x18
+
+	// Methods
+
+	// RVA: 0x6901FA4 Offset: 0x68FDFA4 VA: 0x6901FA4
+	public void .ctor() { }
+}
+

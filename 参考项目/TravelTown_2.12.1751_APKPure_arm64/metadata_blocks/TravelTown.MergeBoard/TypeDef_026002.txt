@@ -1,0 +1,50 @@
+// Namespace: Merger.MergeBoard.Components
+public struct ImmediateToolComponent : IComponent // TypeDefIndex: 26002
+{
+	// Fields
+	[CompilerGenerated]
+	private List<WeightedTool> <ToolsWeights>k__BackingField; // 0x0
+	[CompilerGenerated]
+	private List<WeightedToolLevel> <ToolLevelsWeights>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private int <NumberOfToolsToSpawn>k__BackingField; // 0x10
+
+	// Properties
+	public List<WeightedTool> ToolsWeights { get; set; }
+	public List<WeightedToolLevel> ToolLevelsWeights { get; set; }
+	public int NumberOfToolsToSpawn { get; set; }
+	public bool IsToolbox { get; }
+
+	// Methods
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9BF44 Offset: 0x6A97F44 VA: 0x6A9BF44
+	public List<WeightedTool> get_ToolsWeights() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BF4C Offset: 0x6A97F4C VA: 0x6A9BF4C
+	public void set_ToolsWeights(List<WeightedTool> value) { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9BF54 Offset: 0x6A97F54 VA: 0x6A9BF54
+	public List<WeightedToolLevel> get_ToolLevelsWeights() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BF5C Offset: 0x6A97F5C VA: 0x6A9BF5C
+	public void set_ToolLevelsWeights(List<WeightedToolLevel> value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9BF64 Offset: 0x6A97F64 VA: 0x6A9BF64
+	public int get_NumberOfToolsToSpawn() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BF6C Offset: 0x6A97F6C VA: 0x6A9BF6C
+	public void set_NumberOfToolsToSpawn(int value) { }
+
+	// RVA: 0x6A9BF74 Offset: 0x6A97F74 VA: 0x6A9BF74
+	public bool get_IsToolbox() { }
+}
+

@@ -1,0 +1,54 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class ItemChainModel // TypeDefIndex: 1752
+{
+	// Fields
+	public int ChainIndex; // 0x8
+	[SerializeField]
+	private List<ItemLinkModel> SerializedLinks; // 0xC
+
+	// Properties
+	public IReadOnlyList<ItemLinkModel> Links { get; }
+
+	// Methods
+
+	// RVA: 0x191062C Offset: 0x191062C VA: 0x191062C
+	public IReadOnlyList<ItemLinkModel> get_Links() { }
+
+	// RVA: 0x1910634 Offset: 0x1910634 VA: 0x1910634
+	public void .ctor() { }
+
+	// RVA: 0x19106CC Offset: 0x19106CC VA: 0x19106CC
+	public void .ctor(int chainIndex) { }
+
+	// RVA: 0x191076C Offset: 0x191076C VA: 0x191076C
+	public ItemLinkModel AddLink(int unlockLevel, int archiveLevel, int spawnerSetId, bool spawnerArchiveRemovable, List<int> itemSetIds) { }
+
+	// RVA: 0x1906210 Offset: 0x1906210 VA: 0x1906210
+	public bool RemoveLink(ItemLinkModel link, bool reindexLinks = False) { }
+
+	// RVA: 0x1910C20 Offset: 0x1910C20 VA: 0x1910C20
+	public ItemLinkModel GetLinkByIndex(int linkIndex) { }
+
+	// RVA: 0x1910D20 Offset: 0x1910D20 VA: 0x1910D20
+	public ItemLinkModel GetLinkByID(ItemLinkID linkID) { }
+
+	// RVA: 0x1910D38 Offset: 0x1910D38 VA: 0x1910D38
+	public List<ItemLinkModel> GetLinksByUnlockLevel(int unlockLevel) { }
+
+	// RVA: 0x1910E5C Offset: 0x1910E5C VA: 0x1910E5C
+	public bool IsLinkIndexUsed(int linkIndex) { }
+
+	// RVA: 0x191091C Offset: 0x191091C VA: 0x191091C
+	private int GetNextAvailableLinkIndex() { }
+
+	// RVA: 0x1910B28 Offset: 0x1910B28 VA: 0x1910B28
+	public void ReindexLinks() { }
+
+	// RVA: 0x1910F5C Offset: 0x1910F5C VA: 0x1910F5C
+	public List<string> ValidateChain() { }
+
+	// RVA: 0x1911948 Offset: 0x1911948 VA: 0x1911948
+	public void UpdateChainIndex(int newChainIndex) { }
+}
+

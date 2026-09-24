@@ -1,0 +1,39 @@
+// Namespace: MergePuzzle.DailyChallenge
+public class ProgressiveRewardSpawnerHandler : DailyChallengeDayHandler<ProgressiveRewardSpawnerDayConfig>, IBoardItemHandler, IFeatureHandler // TypeDefIndex: 4983
+{
+	// Methods
+
+	// RVA: 0x1E0550C Offset: 0x1E0550C VA: 0x1E0550C
+	public void .ctor(BoardEntity boardEntity, BoardData boardData, ProgressiveRewardSpawnerDayConfig dayConfig, DailyChallengeHandlerManager dailyChallengeHandlerManager) { }
+
+	// RVA: 0x1E055F4 Offset: 0x1E055F4 VA: 0x1E055F4 Slot: 43
+	protected override void FinishCompletelyInner() { }
+
+	// RVA: 0x1E05610 Offset: 0x1E05610 VA: 0x1E05610
+	public void DestroyBoardItems() { }
+
+	// RVA: 0x1E0610C Offset: 0x1E0610C VA: 0x1E0610C Slot: 46
+	protected override void OnReceiveAddressable() { }
+
+	// RVA: 0x1E06820 Offset: 0x1E06820 VA: 0x1E06820 Slot: 51
+	public void AddItemsToItemCollection() { }
+
+	// RVA: 0x1E06130 Offset: 0x1E06130 VA: 0x1E06130
+	private void UpdatePerishableConfig() { }
+
+	// RVA: 0x1E069D0 Offset: 0x1E069D0 VA: 0x1E069D0
+	public BoardItemSetData GetCurrencySet(int setID) { }
+
+	// RVA: 0x1E060AC Offset: 0x1E060AC VA: 0x1E060AC Slot: 49
+	public SerializableDictionary<int, BoardItemSetData> GetBoardItemDictionary() { }
+
+	// RVA: 0x1E06920 Offset: 0x1E06920 VA: 0x1E06920 Slot: 50
+	public List<BoardItemData> GetBoardItemSetItems(int setID) { }
+
+	// RVA: 0x1E06A84 Offset: 0x1E06A84 VA: 0x1E06A84
+	public Sprite GetStep2Sprite() { }
+
+	// RVA: 0x1E06AE4 Offset: 0x1E06AE4 VA: 0x1E06AE4
+	public Sprite GetStep3Sprite() { }
+}
+

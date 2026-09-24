@@ -1,0 +1,36 @@
+Type: GameLogic.Inventory.InventoryExtensions+<>c__DisplayClass3_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x033BC6FC LDR V0, [X31 + 0x6]
+	0x033BC700 ADD X2, X31, 0x70
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <FindItems>b__0(GameLogic.Player.Items.MergeItem pair)
+
+Disassembly:
+	0x033BD224 MOVZ W22, 0xE6A
+	0x033BD228 ADD X1, X31, 0x240
+	0x033BD22C MOV X0, X21
+	0x033BD230 STR W22, [X31 + 0x240]
+	0x033BD234 BL 0x249DDA8
+	0x033BD238 LDR X2, [X26]
+	0x033BD23C ADD X1, X31, 0x240
+	0x033BD240 MOV X0, X21
+
+ISIL:
+	001 Move X8, [X0+16]
+	002 Compare X8, 0
+	003 JumpIfEqual {8}
+	004 Move X0, [X8+64]
+	005 Move X2, [X8+40]
+	006 Move X3, [X8+24]
+	007 CallNoReturn X3
+	008 Move [X31-16], X30
+	009 Call 0x239FB90
+

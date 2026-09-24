@@ -1,0 +1,9 @@
+// Namespace: 
+public struct BoardEvent.BoardItemPositionUpdate : IEvent // TypeDefIndex: 1800
+{
+	// Fields
+	public ItemController Item; // 0x0
+	public ItemController.PositionUpdateType Type; // 0x4
+	public ItemCreationHandler ItemCreationHandler; // 0x8
+}
+

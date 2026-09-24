@@ -1,0 +1,81 @@
+// Namespace: Paxie.MergeStudio.Features.RecurringEvents.MiniBoardProgression
+public class MiniBoardProgressionEventData : MiniBoardEventData // TypeDefIndex: 970
+{
+	// Fields
+	private KiteMiniBoardProgressionExtraConfigItem _kiteMiniBoardProgressionExtraConfigItem; // 0x10
+
+	// Properties
+	public int GetTotalBoardCount { get; }
+	public int GetMainBoardItemSetID { get; }
+	public List<int> GetTargetItemLevels { get; }
+	private List<BalancePerishableConfigModelItem> PerishableSpawnerList { get; }
+
+	// Methods
+
+	// RVA: 0x1792390 Offset: 0x1792390 VA: 0x1792390
+	public int get_GetTotalBoardCount() { }
+
+	// RVA: 0x17923F0 Offset: 0x17923F0 VA: 0x17923F0
+	public int get_GetMainBoardItemSetID() { }
+
+	// RVA: 0x179240C Offset: 0x179240C VA: 0x179240C
+	public List<int> get_GetTargetItemLevels() { }
+
+	// RVA: 0x1792428 Offset: 0x1792428 VA: 0x1792428
+	private List<BalancePerishableConfigModelItem> get_PerishableSpawnerList() { }
+
+	// RVA: 0x179229C Offset: 0x179229C VA: 0x179229C
+	public void .ctor(KiteMiniBoardProgressionConfigItem remoteConfig) { }
+
+	// RVA: 0x1792444 Offset: 0x1792444 VA: 0x1792444
+	public List<KiteMiniBoardInitialBoardModel> GetInitialBoardModelList() { }
+
+	// RVA: 0x1792460 Offset: 0x1792460 VA: 0x1792460
+	public KiteMiniBoardInitialBoardModel GetInitialBoardModel(int boardIndex) { }
+
+	// RVA: 0x1792508 Offset: 0x1792508 VA: 0x1792508
+	public List<KiteMiniBoardItemReward> GetInitialActiveRewardList() { }
+
+	// RVA: 0x1792524 Offset: 0x1792524 VA: 0x1792524
+	public int GetTargetItemLevel(int boardIndex) { }
+
+	// RVA: 0x17925CC Offset: 0x17925CC VA: 0x17925CC
+	public int GetLastProgressItemLevel() { }
+
+	// RVA: 0x1792658 Offset: 0x1792658 VA: 0x1792658 Slot: 5
+	public override bool GetUseSpawnerForItemGet() { }
+
+	// RVA: 0x1792674 Offset: 0x1792674 VA: 0x1792674
+	public List<int> GetSpawnerList() { }
+
+	// RVA: 0x1792690 Offset: 0x1792690 VA: 0x1792690
+	public List<KiteMiniBoardProgressionSpawnProbabilityConfig> GetSpawnerItemProbabilityList() { }
+
+	// RVA: 0x17926AC Offset: 0x17926AC VA: 0x17926AC
+	public string GetSpawnRewardItemString() { }
+
+	// RVA: 0x17928EC Offset: 0x17928EC VA: 0x17928EC Slot: 6
+	public override bool GetTasksForItemGet() { }
+
+	// RVA: 0x1792908 Offset: 0x1792908 VA: 0x1792908 Slot: 7
+	public override int GetBoardTaskEventPoint(int boardTaskCoinReward) { }
+
+	// RVA: 0x1792A5C Offset: 0x1792A5C VA: 0x1792A5C Slot: 8
+	public override List<KiteMiniBoardItemReward> GetTaskItemRewards(int taskCoin) { }
+
+	// RVA: 0x1792C24 Offset: 0x1792C24 VA: 0x1792C24 Slot: 9
+	public override List<KiteMiniBoardItemReward> GetItemMergeRewards(string setIDLevel) { }
+
+	// RVA: 0x1792E20 Offset: 0x1792E20 VA: 0x1792E20 Slot: 10
+	public override List<BalancePerishableConfigModelItem> GetPerishableSpawnerConfigList() { }
+
+	// RVA: 0x1792E3C Offset: 0x1792E3C VA: 0x1792E3C
+	public List<RecurringConversionData> GetConversionDataList() { }
+
+	// RVA: 0x1792E58 Offset: 0x1792E58 VA: 0x1792E58
+	public int GetConversionDataCollectableID() { }
+
+	// RVA: 0x1793020 Offset: 0x1793020 VA: 0x1793020
+	public RecurringConversionData GetConversionData(int setID, int level) { }
+}
+

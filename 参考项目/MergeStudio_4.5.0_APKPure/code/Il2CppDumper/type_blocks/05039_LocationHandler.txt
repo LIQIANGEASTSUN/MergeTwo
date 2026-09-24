@@ -1,0 +1,121 @@
+// Namespace: MergePuzzle.Locations
+public class LocationHandler // TypeDefIndex: 5039
+{
+	// Fields
+	private readonly List<LocationBase> _locationList; // 0x8
+
+	// Methods
+
+	// RVA: 0x1E1253C Offset: 0x1E1253C VA: 0x1E1253C
+	public static LocationHandler Get() { }
+
+	// RVA: 0x1E12594 Offset: 0x1E12594 VA: 0x1E12594
+	protected void .ctor() { }
+
+	// RVA: 0x1E1262C Offset: 0x1E1262C VA: 0x1E1262C
+	public bool IsFromMeta() { }
+
+	// RVA: -1 Offset: -1
+	public bool IsFrom<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2500B90 Offset: 0x2500B90 VA: 0x2500B90
+	|-LocationHandler.IsFrom<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public bool IsFrom<T, T2>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2500D10 Offset: 0x2500D10 VA: 0x2500D10
+	|-LocationHandler.IsFrom<object, object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public bool IsFrom<T1, T2, T3>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2500E90 Offset: 0x2500E90 VA: 0x2500E90
+	|-LocationHandler.IsFrom<object, object, object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public bool IsFrom<T1, T2, T3, T4>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2501010 Offset: 0x2501010 VA: 0x2501010
+	|-LocationHandler.IsFrom<object, object, object, object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public bool IsFrom<T1, T2, T3, T4, T5>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2501190 Offset: 0x2501190 VA: 0x2501190
+	|-LocationHandler.IsFrom<object, object, object, object, object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public bool IsFrom<T1, T2, T3, T4, T5, T6>(out int typeIndex) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2501310 Offset: 0x2501310 VA: 0x2501310
+	|-LocationHandler.IsFrom<object, object, object, object, object, object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public bool IsFrom<T1, T2, T3, T4, T5, T6, T7>(out int typeIndex) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2501608 Offset: 0x2501608 VA: 0x2501608
+	|-LocationHandler.IsFrom<object, object, object, object, object, object, object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public bool TryGetLocation<T>(out T loc) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2501938 Offset: 0x2501938 VA: 0x2501938
+	|-LocationHandler.TryGetLocation<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public LocationHandler AddLocation<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x25007A0 Offset: 0x25007A0 VA: 0x25007A0
+	|-LocationHandler.AddLocation<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public T AddLocationSelf<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2500890 Offset: 0x2500890 VA: 0x2500890
+	|-LocationHandler.AddLocationSelf<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public T GetLocation<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2500980 Offset: 0x2500980 VA: 0x2500980
+	|-LocationHandler.GetLocation<object>
+	*/
+
+	// RVA: 0x1E12680 Offset: 0x1E12680 VA: 0x1E12680
+	public LocationHandler MakeFromRecurringEventUniqueRewards(int recurringEventId) { }
+
+	// RVA: 0x1E12760 Offset: 0x1E12760 VA: 0x1E12760
+	public LocationHandler MakeFromMichaelsArtStudioRenovationUniqueRewards() { }
+
+	// RVA: 0x1E127B8 Offset: 0x1E127B8 VA: 0x1E127B8
+	public LocationHandler MakeFromPoolRaceRewardsShowArea() { }
+
+	// RVA: 0x1E12838 Offset: 0x1E12838 VA: 0x1E12838
+	public LocationHandler MakeFromAirRaceRewardsShowArea() { }
+
+	// RVA: 0x1E128B8 Offset: 0x1E128B8 VA: 0x1E128B8
+	public LocationHandler AddMacroLocation() { }
+}
+

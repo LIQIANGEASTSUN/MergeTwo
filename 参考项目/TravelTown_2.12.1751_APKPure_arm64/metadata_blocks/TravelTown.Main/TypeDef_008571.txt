@@ -1,0 +1,183 @@
+// Namespace: Merger.Game.Views
+public abstract class BoardItemViewBase : ViewComponent, IDragHandler, IEventSystemHandler, IEndDragHandler, IPointerClickHandler, IPointerDownHandler, IPointerUpHandler, IPoolable, IBoardItemView // TypeDefIndex: 8571
+{
+	// Fields
+	[SerializeField]
+	private EmptyGraphic _clickableArea; // 0x28
+	protected IVisualComponent _visualComponent; // 0x30
+	private Action<IBoardItemView, PointerEventData> _dragging; // 0x38
+	[CompilerGenerated]
+	private bool <IsFlyingToBoard>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private Action<IBoardItemView> Tapped; // 0x48
+	[CompilerGenerated]
+	private Action<IBoardItemView, PointerEventData> DragEnded; // 0x50
+	[CompilerGenerated]
+	private Action<IBoardItemView> DragCancelled; // 0x58
+	[CompilerGenerated]
+	private Tween <SlideItemTween>k__BackingField; // 0x60
+	[CompilerGenerated]
+	private BoardItemPosition <Position>k__BackingField; // 0x68
+	[CompilerGenerated]
+	private bool <IsDragging>k__BackingField; // 0x70
+	private ILockedComponent _lockedComponent; // 0x78
+
+	// Properties
+	public abstract int SelectorSiblingIndex { get; }
+	public bool IsFlyingToBoard { get; set; }
+	public Tween SlideItemTween { get; set; }
+	public BoardItemPosition Position { get; set; }
+	public IVisualComponent VisualComponent { get; }
+	protected ILockedComponent LockedComponent { get; }
+	protected bool IsDragging { get; set; }
+	protected EmptyGraphic ClickableArea { get; }
+	public bool IsTweened { get; set; }
+	public bool IsLockedByFlyingAnimation { get; set; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 38
+	public abstract int get_SelectorSiblingIndex();
+
+	[CompilerGenerated]
+	// RVA: 0x668E168 Offset: 0x668A168 VA: 0x668E168
+	public bool get_IsFlyingToBoard() { }
+
+	[CompilerGenerated]
+	// RVA: 0x668E170 Offset: 0x668A170 VA: 0x668E170
+	public void set_IsFlyingToBoard(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x668E17C Offset: 0x668A17C VA: 0x668E17C Slot: 39
+	public virtual void add_Tapped(Action<IBoardItemView> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x668E22C Offset: 0x668A22C VA: 0x668E22C Slot: 40
+	public virtual void remove_Tapped(Action<IBoardItemView> value) { }
+
+	// RVA: 0x668E2DC Offset: 0x668A2DC VA: 0x668E2DC Slot: 41
+	public virtual void add_Dragging(Action<IBoardItemView, PointerEventData> value) { }
+
+	// RVA: 0x668E384 Offset: 0x668A384 VA: 0x668E384 Slot: 42
+	public virtual void remove_Dragging(Action<IBoardItemView, PointerEventData> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x668E42C Offset: 0x668A42C VA: 0x668E42C Slot: 43
+	public virtual void add_DragEnded(Action<IBoardItemView, PointerEventData> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x668E4DC Offset: 0x668A4DC VA: 0x668E4DC Slot: 44
+	public virtual void remove_DragEnded(Action<IBoardItemView, PointerEventData> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x668E58C Offset: 0x668A58C VA: 0x668E58C Slot: 45
+	public virtual void add_DragCancelled(Action<IBoardItemView> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x668E63C Offset: 0x668A63C VA: 0x668E63C Slot: 46
+	public virtual void remove_DragCancelled(Action<IBoardItemView> value) { }
+
+	// RVA: -1 Offset: -1 Slot: 47
+	public abstract void Initialise(IVisualComponent visualComponent, IReadOnlyDictionary<string, BehaviourPrefabData> behaviourConfigs, string poolIdStringFormat);
+
+	[CompilerGenerated]
+	// RVA: 0x668E6EC Offset: 0x668A6EC VA: 0x668E6EC Slot: 23
+	public Tween get_SlideItemTween() { }
+
+	[CompilerGenerated]
+	// RVA: 0x668E6F4 Offset: 0x668A6F4 VA: 0x668E6F4 Slot: 24
+	public void set_SlideItemTween(Tween value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x668E6FC Offset: 0x668A6FC VA: 0x668E6FC Slot: 15
+	public BoardItemPosition get_Position() { }
+
+	[CompilerGenerated]
+	// RVA: 0x668E704 Offset: 0x668A704 VA: 0x668E704 Slot: 16
+	public void set_Position(BoardItemPosition value) { }
+
+	// RVA: 0x668E70C Offset: 0x668A70C VA: 0x668E70C Slot: 17
+	public IVisualComponent get_VisualComponent() { }
+
+	// RVA: 0x668E714 Offset: 0x668A714 VA: 0x668E714
+	protected ILockedComponent get_LockedComponent() { }
+
+	[CompilerGenerated]
+	// RVA: 0x668E7E0 Offset: 0x668A7E0 VA: 0x668E7E0
+	protected bool get_IsDragging() { }
+
+	[CompilerGenerated]
+	// RVA: 0x668E7E8 Offset: 0x668A7E8 VA: 0x668E7E8
+	private void set_IsDragging(bool value) { }
+
+	// RVA: 0x668E7F4 Offset: 0x668A7F4 VA: 0x668E7F4
+	protected EmptyGraphic get_ClickableArea() { }
+
+	// RVA: 0x668E7FC Offset: 0x668A7FC VA: 0x668E7FC Slot: 18
+	public bool get_IsTweened() { }
+
+	// RVA: 0x668E8A0 Offset: 0x668A8A0 VA: 0x668E8A0 Slot: 19
+	public void set_IsTweened(bool value) { }
+
+	// RVA: 0x668E96C Offset: 0x668A96C VA: 0x668E96C Slot: 20
+	public bool get_IsLockedByFlyingAnimation() { }
+
+	// RVA: 0x668EA18 Offset: 0x668AA18 VA: 0x668EA18 Slot: 21
+	public void set_IsLockedByFlyingAnimation(bool value) { }
+
+	// RVA: 0x668EACC Offset: 0x668AACC VA: 0x668EACC Slot: 48
+	protected virtual void OnEnable() { }
+
+	// RVA: 0x668EBFC Offset: 0x668ABFC VA: 0x668EBFC Slot: 49
+	protected virtual void PointerClicked() { }
+
+	// RVA: 0x668EC74 Offset: 0x668AC74 VA: 0x668EC74 Slot: 10
+	private void UnityEngine.EventSystems.IPointerDownHandler.OnPointerDown(PointerEventData eventData) { }
+
+	// RVA: 0x668EC78 Offset: 0x668AC78 VA: 0x668EC78 Slot: 11
+	private void UnityEngine.EventSystems.IPointerUpHandler.OnPointerUp(PointerEventData eventData) { }
+
+	// RVA: 0x668EC7C Offset: 0x668AC7C VA: 0x668EC7C Slot: 9
+	private void UnityEngine.EventSystems.IPointerClickHandler.OnPointerClick(PointerEventData eventData) { }
+
+	// RVA: 0x668EC8C Offset: 0x668AC8C VA: 0x668EC8C Slot: 7
+	private void UnityEngine.EventSystems.IDragHandler.OnDrag(PointerEventData eventData) { }
+
+	// RVA: 0x668ECB8 Offset: 0x668ACB8 VA: 0x668ECB8 Slot: 8
+	private void UnityEngine.EventSystems.IEndDragHandler.OnEndDrag(PointerEventData eventData) { }
+
+	// RVA: 0x668ED70 Offset: 0x668AD70 VA: 0x668ED70 Slot: 12
+	private void Framework.Util.Pooling.IPoolable.Initialize() { }
+
+	// RVA: 0x668ED74 Offset: 0x668AD74 VA: 0x668ED74 Slot: 13
+	private void Framework.Util.Pooling.IPoolable.Deactivated() { }
+
+	// RVA: 0x668EC54 Offset: 0x668AC54 VA: 0x668EC54
+	protected void InvokeTapped() { }
+
+	// RVA: -1 Offset: -1 Slot: 50
+	public abstract TViewBehaviour GetBehaviour<TViewBehaviour>();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-BoardItemViewBase.GetBehaviour<object>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 51
+	public abstract TViewBehaviour GetOrAttachBehaviour<TViewBehaviour>();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-BoardItemViewBase.GetOrAttachBehaviour<object>
+	*/
+
+	// RVA: 0x668ED80 Offset: 0x668AD80 VA: 0x668ED80 Slot: 37
+	public void CancelDrag() { }
+
+	// RVA: 0x668EE30 Offset: 0x668AE30 VA: 0x668EE30
+	protected void .ctor() { }
+
+	// RVA: 0x668EE38 Offset: 0x668AE38 VA: 0x668EE38 Slot: 22
+	private GameObject Merger.Game.Views.IBoardItemView.get_gameObject() { }
+}
+

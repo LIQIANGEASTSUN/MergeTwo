@@ -1,0 +1,50 @@
+// Namespace: MergePuzzle
+public interface IItemEntity // TypeDefIndex: 1596
+{
+	// Properties
+	public abstract int GetLevel { get; }
+	public abstract int GetSetID { get; }
+	public abstract bool GetIsBubbled { get; }
+	public abstract float GetCurrentCapacity { get; }
+	public abstract long GetChargingFinishAtTick { get; }
+	public abstract ChestState GetChestState { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract int get_GetLevel();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract int get_GetSetID();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract bool get_GetIsBubbled();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract float get_GetCurrentCapacity();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract long get_GetChargingFinishAtTick();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract ChestState get_GetChestState();
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract bool IsSameLevelAndSet(IItemEntity item);
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract void SetCurrentCapacity(float capacity);
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract void SetChargingFinishAtTick(long chargingFinishAtTick);
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract void SetSkippedState(SpawnerState state);
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public abstract void CalculateNextChargingTime(BoardItemSpawnerData data);
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public abstract void SetChestState(IItemController item, ChestState chestState, BoardItemChestSpawner chestSpawner, bool animateClockDisappear = False, bool init = False);
+}
+

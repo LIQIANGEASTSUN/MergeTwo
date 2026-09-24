@@ -1,0 +1,9 @@
+// Namespace: Paxie
+public class SerializableDictionary // TypeDefIndex: 198
+{
+	// Methods
+
+	// RVA: 0x18BA858 Offset: 0x18BA858 VA: 0x18BA858
+	public void .ctor() { }
+}
+

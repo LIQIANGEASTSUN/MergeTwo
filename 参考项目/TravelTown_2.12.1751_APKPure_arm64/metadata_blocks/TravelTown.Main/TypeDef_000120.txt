@@ -1,0 +1,44 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class WeightedItemList.<>c__DisplayClass8_0<TItem> // TypeDefIndex: 120
+{
+	// Fields
+	public int weight; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4B1B8AC Offset: 0x4B178AC VA: 0x4B1B8AC
+	|-WeightedItemList.<>c__DisplayClass8_0<int>..ctor
+	|
+	|-RVA: 0x4B1B8D8 Offset: 0x4B178D8 VA: 0x4B1B8D8
+	|-WeightedItemList.<>c__DisplayClass8_0<Int32Enum>..ctor
+	|
+	|-RVA: 0x4B1BFA0 Offset: 0x4B17FA0 VA: 0x4B1BFA0
+	|-WeightedItemList.<>c__DisplayClass8_0<object>..ctor
+	|
+	|-RVA: 0x4B1C6BC Offset: 0x4B186BC VA: 0x4B1C6BC
+	|-WeightedItemList.<>c__DisplayClass8_0<__Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal bool <GetItem>b__0(WeightedItem<TItem> item) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4B1B8B4 Offset: 0x4B178B4 VA: 0x4B1B8B4
+	|-WeightedItemList.<>c__DisplayClass8_0<int>.<GetItem>b__0
+	|
+	|-RVA: 0x4B1B8E0 Offset: 0x4B178E0 VA: 0x4B1B8E0
+	|-WeightedItemList.<>c__DisplayClass8_0<Int32Enum>.<GetItem>b__0
+	|
+	|-RVA: 0x4B1BFA8 Offset: 0x4B17FA8 VA: 0x4B1BFA8
+	|-WeightedItemList.<>c__DisplayClass8_0<object>.<GetItem>b__0
+	|
+	|-RVA: 0x4B1C6C4 Offset: 0x4B186C4 VA: 0x4B1C6C4
+	|-WeightedItemList.<>c__DisplayClass8_0<__Il2CppFullySharedGenericType>.<GetItem>b__0
+	*/
+}
+

@@ -1,0 +1,124 @@
+// Namespace: Paxie.MergeStudio.Features.MiniBoard
+public class MiniBoardRewardAreaController : BaseSubscriber, IEventReceiver<BaseMiniBoardRewardEvent.RewardAreaUIUpdate>, IEventReceiverBase, IEventReceiver<BaseMiniBoardEvent.ChangeGameplayStatus>, IEventReceiver<BaseMiniBoardProgressEvent.LoadNewBoard>, IEventReceiver<ItemRewardConvertEvent.UpdateRewardImages> // TypeDefIndex: 1173
+{
+	// Fields
+	[BoxGroup("Renderer")]
+	public SpriteRenderer RewardBubbleSpriteRenderer; // 0x1C
+	[BoxGroup("Renderer")]
+	public SpriteRenderer RewardSpriteRenderer; // 0x20
+	[BoxGroup("Renderer")]
+	public SpriteRenderer RewardNotificationSpriteRenderer; // 0x24
+	[BoxGroup("UI")]
+	public RectTransform RewardTargetRect; // 0x28
+	[BoxGroup("UI")]
+	public TextMeshPro RewardCountText; // 0x2C
+	[BoxGroup("UI")]
+	public Transform ParentTransform; // 0x30
+	[BoxGroup("Button")]
+	public ClickableSprite ButtonClickableSprite; // 0x34
+	[BoxGroup("Animation")]
+	[SerializeField]
+	private AnimationLoop RewardAnimationLoop; // 0x38
+	private IMiniBoardGenericPopupView _miniBoardPopupView; // 0x3C
+	private MiniBoardHandlerBase _miniBoardHandler; // 0x40
+	private MiniBoardData _miniBoardData; // 0x44
+	private IMiniBoardEntity _miniBoardEntity; // 0x48
+	private float _defaultScale; // 0x4C
+	private Transform _rewardAnimTransform; // 0x50
+	private Sequence _rewardSequenceLoop; // 0x54
+	private bool _isActiveRewardSequence; // 0x58
+	private WarningTextFactory _warningTextFactory; // 0x5C
+
+	// Methods
+
+	// RVA: 0x17DB1DC Offset: 0x17DB1DC VA: 0x17DB1DC Slot: 6
+	public override void Awake() { }
+
+	// RVA: 0x17DB220 Offset: 0x17DB220 VA: 0x17DB220 Slot: 8
+	public override void OnEnable() { }
+
+	// RVA: 0x17DB338 Offset: 0x17DB338 VA: 0x17DB338
+	private void OnDisable() { }
+
+	// RVA: 0x17DB438 Offset: 0x17DB438 VA: 0x17DB438 Slot: 9
+	public override void OnDestroy() { }
+
+	// RVA: 0x17DB47C Offset: 0x17DB47C VA: 0x17DB47C
+	public void Initialize(IMiniBoardGenericPopupView miniBoardPopupView, MiniBoardHandlerBase miniBoardHandlerBase) { }
+
+	// RVA: 0x17DBCD4 Offset: 0x17DBCD4 VA: 0x17DBCD4
+	private void UpdateUI(bool rewardAnimationStart = False, bool safetyCheck = False) { }
+
+	// RVA: 0x17DC340 Offset: 0x17DC340 VA: 0x17DC340
+	private Sprite GetTopMostRewardSprite(MiniBoardRewardEntity rewardEntity, BoardItemData itemData) { }
+
+	// RVA: 0x17DC820 Offset: 0x17DC820 VA: 0x17DC820
+	private void SetRewardImage(bool enable) { }
+
+	// RVA: 0x17DC2A8 Offset: 0x17DC2A8 VA: 0x17DC2A8
+	private void ArrangeUI(bool enable, bool rewardAnimationStart = False) { }
+
+	[AsyncStateMachine(typeof(MiniBoardRewardAreaController.<ArrangeRewardAnimation>d__26))]
+	// RVA: 0x17DC12C Offset: 0x17DC12C VA: 0x17DC12C
+	private void ArrangeRewardAnimation(bool enable) { }
+
+	[AsyncStateMachine(typeof(MiniBoardRewardAreaController.<SlowCloseRewardLoop>d__27))]
+	// RVA: 0x17DC8D4 Offset: 0x17DC8D4 VA: 0x17DC8D4
+	private UniTask SlowCloseRewardLoop() { }
+
+	// RVA: 0x17DC9A4 Offset: 0x17DC9A4 VA: 0x17DC9A4
+	public void ArrangeClickable(bool isInteractable) { }
+
+	// RVA: 0x17DC9D0 Offset: 0x17DC9D0 VA: 0x17DC9D0
+	private void RewardUIClicked() { }
+
+	[AsyncStateMachine(typeof(MiniBoardRewardAreaController.<RemoveTopItemFromRewardArea>d__30))]
+	// RVA: 0x17DCD68 Offset: 0x17DCD68 VA: 0x17DCD68
+	private void RemoveTopItemFromRewardArea() { }
+
+	// RVA: 0x17DCE2C Offset: 0x17DCE2C VA: 0x17DCE2C
+	private void UpdateTopMostRewardUI() { }
+
+	// RVA: 0x17DCCE8 Offset: 0x17DCCE8 VA: 0x17DCCE8
+	private void ThrowWarning() { }
+
+	// RVA: 0x17DBC1C Offset: 0x17DBC1C VA: 0x17DBC1C
+	private List<MiniBoardRewardEntity> GetActiveRewards() { }
+
+	// RVA: 0x17DC1F8 Offset: 0x17DC1F8 VA: 0x17DC1F8
+	private MiniBoardRewardEntity GetTopMostReward() { }
+
+	// RVA: 0x17DC250 Offset: 0x17DC250 VA: 0x17DC250
+	private BoardItemData GetRewardItemData(MiniBoardRewardEntity rewardEntity) { }
+
+	// RVA: 0x17DC8C4 Offset: 0x17DC8C4 VA: 0x17DC8C4
+	private void SetZeroSize() { }
+
+	// RVA: 0x17DC868 Offset: 0x17DC868 VA: 0x17DC868
+	private void SetDefaultSize() { }
+
+	// RVA: 0x17DC87C Offset: 0x17DC87C VA: 0x17DC87C
+	private void ChangeRewardTextActivity(bool enable) { }
+
+	// RVA: 0x17DC6F8 Offset: 0x17DC6F8 VA: 0x17DC6F8
+	private void SetRewardCountText(int count) { }
+
+	// RVA: 0x17DC7B4 Offset: 0x17DC7B4 VA: 0x17DC7B4
+	private void SetRewardImageScale(MiniBoardRewardEntity rewardEntity) { }
+
+	// RVA: 0x17DCEF0 Offset: 0x17DCEF0 VA: 0x17DCEF0 Slot: 17
+	public void OnEvent(BaseMiniBoardRewardEvent.RewardAreaUIUpdate e) { }
+
+	// RVA: 0x17DCEFC Offset: 0x17DCEFC VA: 0x17DCEFC Slot: 18
+	public void OnEvent(BaseMiniBoardEvent.ChangeGameplayStatus e) { }
+
+	// RVA: 0x17DCF28 Offset: 0x17DCF28 VA: 0x17DCF28 Slot: 19
+	public void OnEvent(BaseMiniBoardProgressEvent.LoadNewBoard e) { }
+
+	// RVA: 0x17DCF34 Offset: 0x17DCF34 VA: 0x17DCF34 Slot: 20
+	public void OnEvent(ItemRewardConvertEvent.UpdateRewardImages e) { }
+
+	// RVA: 0x17DCF40 Offset: 0x17DCF40 VA: 0x17DCF40
+	public void .ctor() { }
+}
+

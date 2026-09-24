@@ -1,0 +1,71 @@
+// Namespace: Merger.MergeBoard.View.Layout
+public class FreeformMergeBoardLayout : MergeBoardLayout // TypeDefIndex: 25700
+{
+	// Fields
+	[SerializeField]
+	[Tooltip("List of tile rect transforms for the freeform layout")]
+	private List<RectTransform> _tileRectTransforms; // 0x38
+	[Tooltip("Max distance for neighbors calculation")]
+	[SerializeField]
+	private float _maxDistanceFromNeighbors; // 0x40
+
+	// Properties
+	public override int GetPositionsCount { get; }
+
+	// Methods
+
+	// RVA: 0x6A3F934 Offset: 0x6A3B934 VA: 0x6A3F934 Slot: 22
+	public override int get_GetPositionsCount() { }
+
+	// RVA: 0x6A3F984 Offset: 0x6A3B984 VA: 0x6A3F984
+	private void OnValidate() { }
+
+	// RVA: 0x6A3FAE0 Offset: 0x6A3BAE0 VA: 0x6A3FAE0 Slot: 17
+	public override bool TryGetEmptyPosition(IEnumerable<int> occupiedPositions, out int position) { }
+
+	// RVA: 0x6A3FCD4 Offset: 0x6A3BCD4 VA: 0x6A3FCD4 Slot: 18
+	public override bool TryGetClosestEmptyPosition(IEnumerable<int> occupiedPositions, int refPosition, out int position) { }
+
+	[IteratorStateMachine(typeof(FreeformMergeBoardLayout.<GetAllEmptyPositions>d__7))]
+	// RVA: 0x6A401AC Offset: 0x6A3C1AC VA: 0x6A401AC Slot: 19
+	public override IEnumerable<int> GetAllEmptyPositions(IEnumerable<int> occupiedPositions) { }
+
+	// RVA: 0x6A40278 Offset: 0x6A3C278 VA: 0x6A40278 Slot: 20
+	public override IEnumerable<int> GetAdjacentPositions(int position) { }
+
+	// RVA: 0x6A4031C Offset: 0x6A3C31C VA: 0x6A4031C Slot: 21
+	public override IEnumerable<int> GetHorizontalVerticalAdjacentPositions(int position) { }
+
+	// RVA: 0x6A403C0 Offset: 0x6A3C3C0 VA: 0x6A403C0 Slot: 23
+	public override float GetMaxDistanceFromNeighbors() { }
+
+	// RVA: 0x6A403C8 Offset: 0x6A3C3C8 VA: 0x6A403C8
+	public void ShowAdjacentPositions(int position) { }
+
+	// RVA: 0x6A40598 Offset: 0x6A3C598 VA: 0x6A40598 Slot: 16
+	protected override void PrepareBoard(IEnumerable<int> configuredTiles) { }
+
+	// RVA: 0x6A40790 Offset: 0x6A3C790 VA: 0x6A40790
+	private void SetIndexText(Transform tile, int index, bool isActive) { }
+
+	// RVA: 0x6A400FC Offset: 0x6A3C0FC VA: 0x6A400FC
+	private bool IsValidPosition(int position) { }
+
+	// RVA: 0x6A40154 Offset: 0x6A3C154 VA: 0x6A40154
+	private RectTransform GetTile(int position) { }
+
+	[IteratorStateMachine(typeof(FreeformMergeBoardLayout.<GetTouchingTiles>d__16))]
+	// RVA: 0x6A40280 Offset: 0x6A3C280 VA: 0x6A40280
+	private IEnumerable<int> GetTouchingTiles(int position, float maxDistance) { }
+
+	[IteratorStateMachine(typeof(FreeformMergeBoardLayout.<GetHorizontalVerticalTouchingTiles>d__17))]
+	// RVA: 0x6A40324 Offset: 0x6A3C324 VA: 0x6A40324
+	private IEnumerable<int> GetHorizontalVerticalTouchingTiles(int position, float maxDistance) { }
+
+	// RVA: 0x6A408F0 Offset: 0x6A3C8F0 VA: 0x6A408F0
+	private Rect GetTileBounds(RectTransform tile) { }
+
+	// RVA: 0x6A4094C Offset: 0x6A3C94C VA: 0x6A4094C
+	public void .ctor() { }
+}
+

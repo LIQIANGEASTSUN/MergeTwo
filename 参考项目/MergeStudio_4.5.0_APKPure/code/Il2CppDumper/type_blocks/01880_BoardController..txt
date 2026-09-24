@@ -1,0 +1,18 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardController.<>c__DisplayClass272_0 // TypeDefIndex: 1880
+{
+	// Fields
+	public CellEntity cellEntity; // 0x8
+	public UniTask.Awaiter<ItemController> task; // 0xC
+	public BoardController <>4__this; // 0x18
+
+	// Methods
+
+	// RVA: 0x1919754 Offset: 0x1919754 VA: 0x1919754
+	public void .ctor() { }
+
+	// RVA: 0x191975C Offset: 0x191975C VA: 0x191975C
+	internal void <SetCloudItems>b__0() { }
+}
+

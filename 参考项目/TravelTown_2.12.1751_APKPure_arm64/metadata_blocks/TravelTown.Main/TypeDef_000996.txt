@@ -1,0 +1,27 @@
+// Namespace: MergeEngine.ECS.Systems.Items.Producers.LowLevelItemProduce
+public class LowLevelItemProduceByOrder : LowLevelProduceStrategyBase // TypeDefIndex: 996
+{
+	// Fields
+	[Inject]
+	private IUserProfileService _userProfileService; // 0x40
+	[Inject]
+	private IEntityManager _entityManager; // 0x48
+
+	// Properties
+	protected override int SpawnPercentage { get; }
+
+	// Methods
+
+	// RVA: 0x679E4E4 Offset: 0x679A4E4 VA: 0x679E4E4 Slot: 5
+	protected override int get_SpawnPercentage() { }
+
+	// RVA: 0x679E684 Offset: 0x679A684 VA: 0x679E684 Slot: 6
+	public override bool TryGetProduceData(IItemSpawningComponent itemSpawningComponent, out LowLevelItemProduceData result) { }
+
+	// RVA: 0x679EE04 Offset: 0x679AE04 VA: 0x679EE04
+	private bool ShouldSpawnLowLevelItem(TaskRequirementProgressBase requirement, IItemSpawningComponent itemSpawningComponent) { }
+
+	// RVA: 0x679F408 Offset: 0x679B408 VA: 0x679F408
+	public void .ctor() { }
+}
+

@@ -1,0 +1,123 @@
+// Namespace: Merger.Game.Views.Board
+[Obsolete("This class is needed to support events packed in asset bundles before v.2.12.130. Use BoardQueueView2 instead. See details in this ticket https://moonactive.atlassian.net/browse/TRT-11807")]
+public class BoardQueueView : GameViewBase<BoardQueueViewModel>, IEnterStateHandler, IExitStateHandler // TypeDefIndex: 9220
+{
+	// Fields
+	[SerializeField]
+	private SlideIconTweenSettings _iconTweenSettings; // 0x30
+	[SerializeField]
+	private AddressableImage _queuedItemImage; // 0x38
+	[SerializeField]
+	private ReactiveButton _dequeueButton; // 0x40
+	[SerializeField]
+	private ReactiveText _counterText; // 0x48
+	[SerializeField]
+	private ReactiveText _timerText; // 0x50
+	[SerializeField]
+	[Header("Hinting")]
+	private RectTransform _tutorialHand; // 0x58
+	[SerializeField]
+	private int _showTutorialHintUntilLevel; // 0x60
+	[SerializeField]
+	private float _showTutorialAfterBeingIdleFor; // 0x64
+	private Canvas _overlayCanvas; // 0x68
+	private Animation _hintAnimation; // 0x70
+	private Vector2 _defaultSizeDelta; // 0x78
+	private float _idleTime; // 0x80
+	private bool _isInBoardState; // 0x84
+	private Tween _tween; // 0x88
+	private bool _queueHideTweenInProgress; // 0x90
+
+	// Properties
+	private GameObject _counter { get; }
+	private RectTransform ParentContainer { get; }
+	private bool HasItems { get; }
+
+	// Methods
+
+	// RVA: 0x6741248 Offset: 0x673D248 VA: 0x6741248
+	private GameObject get__counter() { }
+
+	// RVA: 0x674127C Offset: 0x673D27C VA: 0x674127C
+	private RectTransform get_ParentContainer() { }
+
+	// RVA: 0x67412F0 Offset: 0x673D2F0 VA: 0x67412F0
+	private bool get_HasItems() { }
+
+	// RVA: 0x6741344 Offset: 0x673D344 VA: 0x6741344 Slot: 8
+	protected override void Awake() { }
+
+	// RVA: 0x67416EC Offset: 0x673D6EC VA: 0x67416EC Slot: 9
+	protected override void GameStarted() { }
+
+	// RVA: 0x674192C Offset: 0x673D92C VA: 0x674192C
+	private void MoveToFront() { }
+
+	// RVA: 0x6741978 Offset: 0x673D978 VA: 0x6741978
+	private void MoveToBack() { }
+
+	// RVA: 0x6741994 Offset: 0x673D994 VA: 0x6741994
+	private void Start() { }
+
+	// RVA: 0x67419FC Offset: 0x673D9FC VA: 0x67419FC
+	private void OnEnable() { }
+
+	// RVA: 0x6741A4C Offset: 0x673DA4C VA: 0x6741A4C
+	private void Update() { }
+
+	// RVA: 0x6741E00 Offset: 0x673DE00 VA: 0x6741E00 Slot: 7
+	protected override void OnDestroy() { }
+
+	// RVA: 0x6741F9C Offset: 0x673DF9C VA: 0x6741F9C
+	private void EnqueueItem(EnqueueItemAnimationSignal signal) { }
+
+	// RVA: 0x674257C Offset: 0x673E57C VA: 0x674257C
+	private bool ShouldSlide(EnqueueItemAnimationSignal signal, Nullable<RewardDestinationType> destinationType) { }
+
+	// RVA: 0x6742330 Offset: 0x673E330 VA: 0x6742330
+	private bool ShouldSkipGrantAnimation(EnqueueItemAnimationSignal signal) { }
+
+	// RVA: 0x674261C Offset: 0x673E61C VA: 0x674261C
+	private void SlideItemIntoQueue(IItem item, Vector2 itemPositionInRoot, InstantiateAndSlideIconsAnimationSettings animationSettings) { }
+
+	// RVA: 0x6741750 Offset: 0x673D750 VA: 0x6741750
+	private void TryDisplayQueuedItem() { }
+
+	// RVA: 0x67424A8 Offset: 0x673E4A8 VA: 0x67424A8
+	private void TryEnableQueueView() { }
+
+	// RVA: 0x67429E4 Offset: 0x673E9E4 VA: 0x67429E4
+	private void Dequeue() { }
+
+	// RVA: 0x6741C18 Offset: 0x673DC18 VA: 0x6741C18
+	private void TryHideQueueDisplay() { }
+
+	// RVA: 0x6742B3C Offset: 0x673EB3C VA: 0x6742B3C
+	private void PrimaryGameStateChanged(GameState state) { }
+
+	// RVA: 0x6742B9C Offset: 0x673EB9C VA: 0x6742B9C Slot: 10
+	private void Framework.UIFSM.Fsm.IEnterStateHandler.HandleEnterState() { }
+
+	// RVA: 0x6742BA8 Offset: 0x673EBA8 VA: 0x6742BA8 Slot: 11
+	private void Framework.UIFSM.Fsm.IExitStateHandler.HandleExitState() { }
+
+	// RVA: 0x6742BB0 Offset: 0x673EBB0 VA: 0x6742BB0
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6742C04 Offset: 0x673EC04 VA: 0x6742C04
+	private void <EnqueueItem>b__29_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6742C6C Offset: 0x673EC6C VA: 0x6742C6C
+	private void <EnqueueItem>b__29_1() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6742C78 Offset: 0x673EC78 VA: 0x6742C78
+	private void <TryHideQueueDisplay>b__36_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6742CE0 Offset: 0x673ECE0 VA: 0x6742CE0
+	private void <TryHideQueueDisplay>b__36_1() { }
+}
+

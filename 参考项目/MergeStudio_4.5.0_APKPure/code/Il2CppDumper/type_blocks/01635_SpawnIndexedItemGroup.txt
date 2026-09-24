@@ -1,0 +1,14 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class SpawnIndexedItemGroup // TypeDefIndex: 1635
+{
+	// Fields
+	public int Index; // 0x8
+	public List<SpawnedItem> SpawnedItems; // 0xC
+
+	// Methods
+
+	// RVA: 0x18C5DA4 Offset: 0x18C5DA4 VA: 0x18C5DA4
+	public void .ctor() { }
+}
+

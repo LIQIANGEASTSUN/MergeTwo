@@ -1,0 +1,12 @@
+// Namespace: 
+public enum Movable.InteractionStatus // TypeDefIndex: 172
+{
+	// Fields
+	public int value__; // 0x0
+	public const Movable.InteractionStatus ACTIVE = 0;
+	public const Movable.InteractionStatus CLICKABLE = 1;
+	public const Movable.InteractionStatus NONCLICKABLE = 2;
+	public const Movable.InteractionStatus TUTORIAL_CLICKABLE = 3;
+	public const Movable.InteractionStatus TUTORIAL_NONCLICKABLE = 4;
+}
+

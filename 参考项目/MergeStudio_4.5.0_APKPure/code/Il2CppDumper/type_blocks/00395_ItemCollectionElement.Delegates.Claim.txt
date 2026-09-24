@@ -1,0 +1,18 @@
+// Namespace: 
+public sealed class ItemCollectionElement.Delegates.Claim : MulticastDelegate // TypeDefIndex: 395
+{
+	// Methods
+
+	// RVA: 0x1B9DD34 Offset: 0x1B9DD34 VA: 0x1B9DD34
+	public void .ctor(object object, IntPtr method) { }
+
+	// RVA: 0x1B9DDD8 Offset: 0x1B9DDD8 VA: 0x1B9DDD8 Slot: 13
+	public virtual void Invoke() { }
+
+	// RVA: 0x1B9DDE8 Offset: 0x1B9DDE8 VA: 0x1B9DDE8 Slot: 14
+	public virtual IAsyncResult BeginInvoke(AsyncCallback callback, object object) { }
+
+	// RVA: 0x1B9DE10 Offset: 0x1B9DE10 VA: 0x1B9DE10 Slot: 15
+	public virtual void EndInvoke(IAsyncResult result) { }
+}
+

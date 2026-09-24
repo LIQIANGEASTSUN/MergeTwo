@@ -1,0 +1,70 @@
+// Namespace: Merger.Game.Signal
+public class ProducerUpgradedSignal // TypeDefIndex: 9416
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly IMergeItem <Item>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly IMergeItem <SecondItem>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private readonly IMergeItem <CreatedItem>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private readonly IMergeItem <SpawnedResource>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private readonly bool <WasBubbleCreated>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private readonly bool <AnyItemLocked>k__BackingField; // 0x31
+	[CompilerGenerated]
+	private readonly int <Level>k__BackingField; // 0x34
+	[CompilerGenerated]
+	private readonly int <FreeTiles>k__BackingField; // 0x38
+
+	// Properties
+	public IMergeItem Item { get; }
+	public IMergeItem SecondItem { get; }
+	public IMergeItem CreatedItem { get; }
+	[CanBeNull]
+	public IMergeItem SpawnedResource { get; }
+	public bool WasBubbleCreated { get; }
+	public bool AnyItemLocked { get; }
+	public int Level { get; }
+	public int FreeTiles { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x676C338 Offset: 0x6768338 VA: 0x676C338
+	public IMergeItem get_Item() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676C340 Offset: 0x6768340 VA: 0x676C340
+	public IMergeItem get_SecondItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676C348 Offset: 0x6768348 VA: 0x676C348
+	public IMergeItem get_CreatedItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676C350 Offset: 0x6768350 VA: 0x676C350
+	public IMergeItem get_SpawnedResource() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676C358 Offset: 0x6768358 VA: 0x676C358
+	public bool get_WasBubbleCreated() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676C360 Offset: 0x6768360 VA: 0x676C360
+	public bool get_AnyItemLocked() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676C368 Offset: 0x6768368 VA: 0x676C368
+	public int get_Level() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676C370 Offset: 0x6768370 VA: 0x676C370
+	public int get_FreeTiles() { }
+
+	// RVA: 0x676C378 Offset: 0x6768378 VA: 0x676C378
+	public void .ctor(IMergeItem item, IMergeItem secondMergeItem, IMergeItem createdItem, IMergeItem spawnedResource, bool wasBubbleCreated, bool anyItemLocked, int level, int freeTiles) { }
+}
+

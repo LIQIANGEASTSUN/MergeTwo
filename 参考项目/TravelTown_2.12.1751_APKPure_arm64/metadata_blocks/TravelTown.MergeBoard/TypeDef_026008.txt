@@ -1,0 +1,4 @@
+// Namespace: Merger.MergeBoard.Components
+public struct ItemUnboxedComponent : IComponent // TypeDefIndex: 26008
+{}
+

@@ -1,0 +1,44 @@
+// Namespace: MergeEngine.ECS.Components.InteractionTracking
+public class InteractionTrackingComponent : ComponentBase // TypeDefIndex: 1115
+{
+	// Fields
+	private IMergeItem _spawnerItem; // 0x20
+	private IMergeItem _spawnedItem; // 0x28
+	public InteractionTrackingData InteractionTrackingData; // 0x30
+
+	// Methods
+
+	// RVA: 0x69005EC Offset: 0x68FC5EC VA: 0x69005EC
+	public void .ctor(Entity entity) { }
+
+	// RVA: 0x690067C Offset: 0x68FC67C VA: 0x690067C
+	public bool PrepareData(Func<int, IMergeItem, int> getProduceCost) { }
+
+	// RVA: 0x690147C Offset: 0x68FD47C VA: 0x690147C
+	private int GetInteractionResourceAmountToConsume(Func<int, IMergeItem, int> getProduceCost) { }
+
+	// RVA: 0x6901374 Offset: 0x68FD374 VA: 0x6901374
+	private void SetSpawnedAndSpawner() { }
+
+	// RVA: 0x6901634 Offset: 0x68FD634 VA: 0x6901634
+	private void SetSpawner(IMergeItem spawnerItem) { }
+
+	// RVA: 0x6901648 Offset: 0x68FD648 VA: 0x6901648
+	private void SetSpawned(IMergeItem spawnedItem) { }
+
+	// RVA: 0x690165C Offset: 0x68FD65C VA: 0x690165C
+	public void ResetData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6901758 Offset: 0x68FD758 VA: 0x6901758
+	private bool <PrepareData>b__4_1(ConsumedItemToProducedItemMapping mapping) { }
+
+	[CompilerGenerated]
+	// RVA: 0x690188C Offset: 0x68FD88C VA: 0x690188C
+	private bool <PrepareData>b__4_2(Combination mapping) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6901940 Offset: 0x68FD940 VA: 0x6901940
+	private bool <PrepareData>b__4_4(WeightedItem i) { }
+}
+

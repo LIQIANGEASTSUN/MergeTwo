@@ -1,0 +1,11 @@
+// Namespace: 
+public struct BoardEvent.BoosterPanelStatusChange : IEvent // TypeDefIndex: 1814
+{
+	// Fields
+	public BoosterItemController BoosterItemController; // 0x0
+	public List<BoardPositionEntity> AvailablePositionsToBoost; // 0x4
+	public bool BoosterActive; // 0x8
+	public bool WaitForBoosterAnimation; // 0x9
+	public BoosterEntity BoosterEntity; // 0xC
+}
+

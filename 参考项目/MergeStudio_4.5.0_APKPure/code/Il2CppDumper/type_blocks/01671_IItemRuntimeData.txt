@@ -1,0 +1,31 @@
+// Namespace: MergePuzzle
+public interface IItemRuntimeData // TypeDefIndex: 1671
+{
+	// Properties
+	public abstract IItemEntity GetItemEntity { get; }
+	public abstract int GetUpdateStepMs { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract IItemEntity get_GetItemEntity();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract int get_GetUpdateStepMs();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void SetUpdateStepMs(int updateStepMs);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void SetTimeRequiredToExitNoCapacity(int time);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract void SetNextSpawnerUpdateMs(long spawnerUpdateMs);
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract void ChangeNextSpawnerUpdateMs(long spawnerUpdateMs);
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract void SetSkipPrice(int skipPrice);
+}
+

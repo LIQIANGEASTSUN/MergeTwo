@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ECSInjectionUtil.<>c // TypeDefIndex: 607
+{
+	// Fields
+	public static readonly ECSInjectionUtil.<>c <>9; // 0x0
+	public static Func<FieldInfo, bool> <>9__2_0; // 0x8
+	public static Func<FieldInfo, bool> <>9__3_0; // 0x10
+
+	// Methods
+
+	// RVA: 0x6271B38 Offset: 0x626DB38 VA: 0x6271B38
+	private static void .cctor() { }
+
+	// RVA: 0x6271BA0 Offset: 0x626DBA0 VA: 0x6271BA0
+	public void .ctor() { }
+
+	// RVA: 0x6271BA8 Offset: 0x626DBA8 VA: 0x6271BA8
+	internal bool <InjectComponents>b__2_0(FieldInfo field) { }
+
+	// RVA: 0x6271BFC Offset: 0x626DBFC VA: 0x6271BFC
+	internal bool <InjectSystems>b__3_0(FieldInfo field) { }
+}
+

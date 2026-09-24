@@ -1,0 +1,20 @@
+// Namespace: Merger.MergeBoardSellItemCapability.Systems
+public class UndoSellItemSystem : ISystem // TypeDefIndex: 33594
+{
+	// Fields
+	[Inject]
+	private IMergeBoardLayout _layout; // 0x10
+	[Inject]
+	private IEntityFactory _entityFactory; // 0x18
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x20
+
+	// Methods
+
+	// RVA: 0x6A5FF24 Offset: 0x6A5BF24 VA: 0x6A5FF24 Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A60428 Offset: 0x6A5C428 VA: 0x6A60428
+	public void .ctor() { }
+}
+

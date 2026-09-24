@@ -1,0 +1,28 @@
+// Namespace: 
+[CompilerGenerated]
+private struct FishCultureModel.<InitFromServerData>d__29 : IAsyncStateMachine // TypeDefIndex: 549
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncVoidMethodBuilder <>t__builder; // 0x4
+	public string configJson; // 0x14
+	public FishCultureModel <>4__this; // 0x18
+	public string activityId; // 0x1C
+	public string activityType; // 0x20
+	public ulong startTime; // 0x28
+	public ulong endTime; // 0x30
+	public ulong rewardEndTime; // 0x38
+	public bool manualEnd; // 0x40
+	public string activitySubType; // 0x44
+	private TaskAwaiter <>u__1; // 0x48
+
+	// Methods
+
+	// RVA: 0x31DC3D0 Offset: 0x31DC3D0 VA: 0x31DC3D0 Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x31DC8B0 Offset: 0x31DC8B0 VA: 0x31DC8B0 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

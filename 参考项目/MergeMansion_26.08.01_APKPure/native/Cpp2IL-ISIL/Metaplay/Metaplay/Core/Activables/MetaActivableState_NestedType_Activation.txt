@@ -1,0 +1,61 @@
+Type: Metaplay.Core.Activables.MetaActivableState+Activation
+
+Method: Metaplay.Core.Player.PlayerLocalTime get_LocalStartedAt()
+
+Disassembly:
+	0x0418BAE8 LDUR X11, [X10 - 0x8]
+	0x0418BAEC CMP X11, X1
+	0x0418BAF0 B.EQ 0x418BB10
+	0x0418BAF4 SUBS X9, X9, 0x1
+	0x0418BAF8 ADD X10, X10, 0x10
+	0x0418BAFC B.NE 0x418BAE8
+	0x0418BB00 MOV X0, X20
+	0x0418BB04 MOVZ W2, 0x58
+	0x0418BB08 BL 0x23D527C
+	0x0418BB0C B 0x418BB20
+	0x0418BB10 LDR W9, [X10]
+
+ISIL:
+	001 Subtract X31, X31, 32
+	002 Move [X31+8], X31
+	003 Move [X31+16], X30
+	004 Move X2, [X0]
+	005 Move X1, [X0+8]
+	006 Add X0, X31, 0
+	007 Move X3, X31
+	008 Move [X31], X31
+	009 Call PlayerLocalTime..ctor, X0, X1, X2
+	010 Move X0, [X31]
+	011 Move X1, [X31+8]
+	012 Move X30, [X31+16]
+	013 Add X31, X31, 32
+	014 Return X0
+
+Method: System.Void .ctor(Metaplay.Core.MetaDuration utcOffset, Metaplay.Core.MetaTime startedAt, System.Nullable`1<Metaplay.Core.MetaTime> endAt, System.Boolean endedExplicitly, System.Nullable`1<Metaplay.Core.MetaTime> cooldownEndAt, System.Int32 numConsumed, System.Boolean isFinalized)
+
+Disassembly:
+	0x0418B540 BLR X8
+	0x0418B544 CBZ X0, 0x418B658
+	0x0418B548 LDR X0, [X0 + 0x10]
+	0x0418B54C CBZ X0, 0x418B658
+	0x0418B550 ADRP X8, 0x15DD000
+	0x0418B554 ADD X1, X31, 0x0
+	0x0418B558 LDR X8, [X8 + 0xDA8]
+	0x0418B55C STP X21, X22, [X31]
+	0x0418B560 LDR X2, [X8]
+	0x0418B564 BL 0x274DEA4
+
+ISIL:
+	001 Move W8, [X31]
+	002 Move W9, [X31+8]
+	003 Move [X0], X1
+	004 Move [X0+8], X2
+	005 Move [X0+16], X3
+	006 Move [X0+24], X4
+	007 Move [X0+32], W5
+	008 Move [X0+40], X6
+	009 Move [X0+48], X7
+	010 Move [X0+56], W8
+	011 Move [X0+60], W9
+	012 Return 
+

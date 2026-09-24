@@ -1,0 +1,42 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class BoardTaskData // TypeDefIndex: 1963
+{
+	// Fields
+	public List<BoardTaskItem> TaskList; // 0x8
+	public int Mod; // 0xC
+	public int StartIndex; // 0x10
+
+	// Methods
+
+	// RVA: 0x193F810 Offset: 0x193F810 VA: 0x193F810
+	public BoardTaskItem GetBoardTaskItem(int taskNo) { }
+
+	// RVA: 0x193F9C0 Offset: 0x193F9C0 VA: 0x193F9C0
+	public int GetLevelIncrease(int maxTaskLoop) { }
+
+	// RVA: 0x193F944 Offset: 0x193F944 VA: 0x193F944
+	public int GetModIndex(int taskNo) { }
+
+	// RVA: 0x193FB4C Offset: 0x193FB4C VA: 0x193FB4C
+	public bool IsModed(int taskNo) { }
+
+	// RVA: 0x193FBC4 Offset: 0x193FBC4 VA: 0x193FBC4
+	public int FindMissingXpBecauseOfUnknownIssues(LevelData levelData, BoardEntity boardEntity) { }
+
+	// RVA: 0x193FD8C Offset: 0x193FD8C VA: 0x193FD8C
+	public int ArrangeRolloutXp(BoardEntity boardEntity, LevelData levelData) { }
+
+	// RVA: 0x193FE04 Offset: 0x193FE04 VA: 0x193FE04
+	public void FixTotalXpAndLevelXp(BoardEntity boardEntity, LevelData levelData, int userTotalXpOld) { }
+
+	// RVA: 0x1940624 Offset: 0x1940624 VA: 0x1940624
+	public ValueTuple<int, int> FindClosestTaskBoundary(int targetTotalXP) { }
+
+	// RVA: 0x1940250 Offset: 0x1940250 VA: 0x1940250
+	private void ArrangeRolloutFixCompletedTasks(BoardEntity boardEntity, LevelData levelData, int totalXP) { }
+
+	// RVA: 0x19407D0 Offset: 0x19407D0 VA: 0x19407D0
+	public void .ctor() { }
+}
+

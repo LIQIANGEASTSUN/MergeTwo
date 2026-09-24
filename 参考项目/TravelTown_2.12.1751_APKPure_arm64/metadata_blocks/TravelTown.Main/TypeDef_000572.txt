@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ProducerInventoryConfigurationModel.<>c // TypeDefIndex: 572
+{
+	// Fields
+	public static readonly ProducerInventoryConfigurationModel.<>c <>9; // 0x0
+	public static Comparison<InventoryProducerSlotUnlock> <>9__1_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x61426F8 Offset: 0x613E6F8 VA: 0x61426F8
+	private static void .cctor() { }
+
+	// RVA: 0x6142760 Offset: 0x613E760 VA: 0x6142760
+	public void .ctor() { }
+
+	// RVA: 0x6142768 Offset: 0x613E768 VA: 0x6142768
+	internal int <HandleDataLoaded>b__1_0(InventoryProducerSlotUnlock lhs, InventoryProducerSlotUnlock rhs) { }
+}
+

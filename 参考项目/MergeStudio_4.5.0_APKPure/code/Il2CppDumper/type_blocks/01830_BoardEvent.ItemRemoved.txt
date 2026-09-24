@@ -1,0 +1,4 @@
+// Namespace: 
+public struct BoardEvent.ItemRemoved : IEvent // TypeDefIndex: 1830
+{}
+

@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class GameConfigManager.<>c__DisplayClass26_0 // TypeDefIndex: 1968
+{
+	// Fields
+	public Common common; // 0x8
+
+	// Methods
+
+	// RVA: 0x29A1564 Offset: 0x29A1564 VA: 0x29A1564
+	public void .ctor() { }
+
+	// RVA: 0x29A1D14 Offset: 0x29A1D14 VA: 0x29A1D14
+	internal bool <GetIceGlobalConfig>b__0(TableIceGlobalConfig a) { }
+}
+

@@ -1,0 +1,20 @@
+// Namespace: Merger.TimeLimitedItems.Data.TickInputActions
+public class TimeLimitedItemsCleanUpTickAction // TypeDefIndex: 32862
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly List<Entity> <EntitiesToCleanUp>k__BackingField; // 0x10
+
+	// Properties
+	public List<Entity> EntitiesToCleanUp { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6B4E174 Offset: 0x6B4A174 VA: 0x6B4E174
+	public List<Entity> get_EntitiesToCleanUp() { }
+
+	// RVA: 0x6B4B990 Offset: 0x6B47990 VA: 0x6B4B990
+	public void .ctor(List<Entity> entitiesToCleanUp) { }
+}
+

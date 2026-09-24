@@ -1,0 +1,17 @@
+// Namespace: 
+private class ToolsRequiredByBuildingsHelper.BuildingUpgradeToBoostData : IComparable<ToolsRequiredByBuildingsHelper.BuildingUpgradeToBoostData> // TypeDefIndex: 975
+{
+	// Fields
+	public HashSet<PlayerResourceEnum> tools; // 0x10
+	public int futureUpgradeCount; // 0x18
+	public int numMissingTools; // 0x1C
+
+	// Methods
+
+	// RVA: 0x6798A70 Offset: 0x6794A70 VA: 0x6798A70 Slot: 4
+	public int CompareTo(ToolsRequiredByBuildingsHelper.BuildingUpgradeToBoostData other) { }
+
+	// RVA: 0x67986E8 Offset: 0x67946E8 VA: 0x67986E8
+	public void .ctor() { }
+}
+

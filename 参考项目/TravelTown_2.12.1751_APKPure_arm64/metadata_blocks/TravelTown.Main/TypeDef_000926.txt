@@ -1,0 +1,27 @@
+// Namespace: MergeEngine.ECS.Systems.Board
+public class InteractionTrackingSystem : TickableSystem<InteractionTrackingComponent> // TypeDefIndex: 926
+{
+	// Fields
+	[InjectComponent]
+	private InteractionTrackingComponent _interactionTrackingComponent; // 0x40
+	[InjectSystem]
+	private PowerBoostSystem _powerBoostSystem; // 0x48
+
+	// Properties
+	public override SystemPriorities Priority { get; }
+
+	// Methods
+
+	// RVA: 0x666CD6C Offset: 0x6668D6C VA: 0x666CD6C Slot: 15
+	public override SystemPriorities get_Priority() { }
+
+	// RVA: 0x666CD74 Offset: 0x6668D74 VA: 0x666CD74 Slot: 16
+	protected override void ProcessComponents(ReadOnlyCollection<InteractionTrackingComponent> components) { }
+
+	// RVA: 0x666CD78 Offset: 0x6668D78 VA: 0x666CD78
+	private void TryToSendEvent() { }
+
+	// RVA: 0x666CEC0 Offset: 0x6668EC0 VA: 0x666CEC0
+	public void .ctor() { }
+}
+

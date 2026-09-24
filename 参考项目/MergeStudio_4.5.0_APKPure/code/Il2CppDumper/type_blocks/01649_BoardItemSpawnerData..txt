@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardItemSpawnerData.<>c__DisplayClass4_0 // TypeDefIndex: 1649
+{
+	// Fields
+	public float r; // 0x8
+	public float sum; // 0xC
+
+	// Methods
+
+	// RVA: 0x18C7FC8 Offset: 0x18C7FC8 VA: 0x18C7FC8
+	public void .ctor() { }
+
+	// RVA: 0x18C8F44 Offset: 0x18C8F44 VA: 0x18C8F44
+	internal bool <GetRandomItem>b__0(SpawnedItem item) { }
+}
+

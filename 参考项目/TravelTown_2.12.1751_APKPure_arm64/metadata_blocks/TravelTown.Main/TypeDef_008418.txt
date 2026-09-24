@@ -1,0 +1,35 @@
+// Namespace: Merger.Game.Model
+public class ImmediateToolsModel : ModelBase, IImmediateToolsModel // TypeDefIndex: 8418
+{
+	// Fields
+	[Inject]
+	private ISystemManager _systemManager; // 0x28
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x30
+	private ImmediateToolsSystem _immediateToolsSystem; // 0x38
+
+	// Properties
+	private ImmediateToolsSystem ImmediateToolsSystem { get; }
+	public BindableProperty<bool> IsImmediateToolsEnabled { get; }
+
+	// Methods
+
+	// RVA: 0x667345C Offset: 0x666F45C VA: 0x667345C
+	private ImmediateToolsSystem get_ImmediateToolsSystem() { }
+
+	// RVA: 0x667353C Offset: 0x666F53C VA: 0x667353C Slot: 19
+	public BindableProperty<bool> get_IsImmediateToolsEnabled() { }
+
+	// RVA: 0x6673558 Offset: 0x666F558 VA: 0x6673558 Slot: 20
+	public bool IsToolbox(IMergeItem mergeItem) { }
+
+	// RVA: 0x667357C Offset: 0x666F57C VA: 0x667357C Slot: 21
+	public bool IsMaxLevelTool(IMergeItem mergeItem) { }
+
+	// RVA: 0x66736C8 Offset: 0x666F6C8 VA: 0x66736C8 Slot: 22
+	public bool IsLowLevelTool(IMergeItem mergeItem) { }
+
+	// RVA: 0x6673818 Offset: 0x666F818 VA: 0x6673818
+	public void .ctor() { }
+}
+

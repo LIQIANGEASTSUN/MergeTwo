@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class HintUtil.<>c__DisplayClass7_0 // TypeDefIndex: 624
+{
+	// Fields
+	public IMergingConfigurationModel mergingConfigurationModel; // 0x10
+
+	// Methods
+
+	// RVA: 0x6274AC0 Offset: 0x6270AC0 VA: 0x6274AC0
+	public void .ctor() { }
+
+	// RVA: 0x6277CB4 Offset: 0x6273CB4 VA: 0x6277CB4
+	internal int <GetCollectable>b__1(IdComponent idComponent) { }
+}
+

@@ -1,0 +1,15 @@
+// Namespace: MergeEngine.ECS.Systems.Board
+public interface IItemsCombiner // TypeDefIndex: 925
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract bool CanCombineItems(PositionComponent firstItem, PositionComponent secondItem);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract bool TryCombineItems(PositionComponent firstItem, PositionComponent secondItem, IItemsCombiner.OnItemsCombined callback);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void ResetCombine();
+}
+

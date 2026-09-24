@@ -1,0 +1,9 @@
+// Namespace: Merger.Game.Signal
+public class BoardLayoutInitializedNewUiSignal // TypeDefIndex: 9346
+{
+	// Methods
+
+	// RVA: 0x676AC18 Offset: 0x6766C18 VA: 0x676AC18
+	public void .ctor() { }
+}
+

@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ProducerExcitementService.<>c // TypeDefIndex: 33620
+{
+	// Fields
+	public static readonly ProducerExcitementService.<>c <>9; // 0x0
+	public static Func<OrderProgress, string> <>9__27_0; // 0x8
+	public static Action<Exception> <>9__33_1; // 0x10
+
+	// Methods
+
+	// RVA: 0x6AD885C Offset: 0x6AD485C VA: 0x6AD885C
+	private static void .cctor() { }
+
+	// RVA: 0x6AD88C4 Offset: 0x6AD48C4 VA: 0x6AD88C4
+	public void .ctor() { }
+
+	// RVA: 0x6AD88CC Offset: 0x6AD48CC VA: 0x6AD88CC
+	internal string <ConsumeExcitementForProducer>b__27_0(OrderProgress order) { }
+
+	// RVA: 0x6AD8980 Offset: 0x6AD4980 VA: 0x6AD8980
+	internal void <RegisterCycleEndTimer>b__33_1(Exception _) { }
+}
+

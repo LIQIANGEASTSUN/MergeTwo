@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardEventHandler.<>c__DisplayClass4_0 // TypeDefIndex: 5386
+{
+	// Fields
+	public Nullable<FeatureCalendarResolver.ResolvedBoardEvent> resolved; // 0x8
+
+	// Methods
+
+	// RVA: 0x1EB40BC Offset: 0x1EB40BC VA: 0x1EB40BC
+	public void .ctor() { }
+
+	// RVA: 0x1EB4AD4 Offset: 0x1EB4AD4 VA: 0x1EB4AD4
+	internal bool <InitializeEntities>b__2(EventBoardConfigItem e) { }
+}
+

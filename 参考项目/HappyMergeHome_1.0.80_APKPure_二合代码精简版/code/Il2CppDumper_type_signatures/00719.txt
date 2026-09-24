@@ -1,0 +1,53 @@
+// Namespace: 
+[Serializable]
+public class MapAdventureOneBoardGrid : TableBase // TypeDefIndex: 719
+{
+	// Fields
+	[CompilerGenerated]
+	private int <Id>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private int <ItemId>k__BackingField; // 0xC
+	[CompilerGenerated]
+	private int <State>k__BackingField; // 0x10
+
+	// Properties
+	public int Id { get; set; }
+	public int ItemId { get; set; }
+	public int State { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x18974A8 Offset: 0x18974A8 VA: 0x18974A8
+	public int get_Id() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18974B0 Offset: 0x18974B0 VA: 0x18974B0
+	public void set_Id(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x18974B8 Offset: 0x18974B8 VA: 0x18974B8
+	public int get_ItemId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18974C0 Offset: 0x18974C0 VA: 0x18974C0
+	public void set_ItemId(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x18974C8 Offset: 0x18974C8 VA: 0x18974C8
+	public int get_State() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18974D0 Offset: 0x18974D0 VA: 0x18974D0
+	public void set_State(int value) { }
+
+	// RVA: 0x18974D8 Offset: 0x18974D8 VA: 0x18974D8 Slot: 4
+	public override int GetID() { }
+
+	// RVA: 0x189752C Offset: 0x189752C VA: 0x189752C
+	public void .ctor() { }
+
+	// RVA: 0x1897534 Offset: 0x1897534 VA: 0x1897534
+	public int <>iFixBaseProxy_GetID() { }
+}
+

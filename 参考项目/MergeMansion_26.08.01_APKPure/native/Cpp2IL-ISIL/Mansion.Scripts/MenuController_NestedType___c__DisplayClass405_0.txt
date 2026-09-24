@@ -1,0 +1,39 @@
+Type: MenuController+<>c__DisplayClass405_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x02B72A48 BL 0x239B888
+	0x02B72A4C ADRP X8, 0x2B76000
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void <FilterAndRebuildMenuStack>b__0()
+
+Disassembly:
+	0x02B72A50 LDR X8, [X8 + 0x878]
+	0x02B72A54 LDR X2, [X31 + 0x138]
+	0x02B72A58 LDR X3, [X8]
+	0x02B72A5C ADD X0, X2, 0x8
+	0x02B72A60 ADD X1, X31, 0xE0
+	0x02B72A64 BL 0x25D3DE4
+	0x02B72A68 B 0x2B72A08
+	0x02B72A6C LDRSW X9, [X10]
+	0x02B72A70 ADD X8, X8, X9, 0x4, LSL
+
+ISIL:
+	001 Move X8, X0
+	002 Move X0, [X0+24]
+	003 Compare X0, 0
+	004 JumpIfEqual {10}
+	005 Move X1, [X8+16]
+	006 Move W2, 1
+	007 Move X3, X31
+	008 Call MenuController.OnHideMenuComplete, X0, X1, X2
+	009 Return 
+	010 Move [X31-16], X30
+	011 Call 0x239FB90
+

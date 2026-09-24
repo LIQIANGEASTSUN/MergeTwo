@@ -1,0 +1,106 @@
+// Namespace: Merger.Game.Views
+public interface IBoardItemView // TypeDefIndex: 8572
+{
+	// Properties
+	public abstract RectTransform RectTransform { get; }
+	public abstract BoardItemPosition Position { get; set; }
+	public abstract IVisualComponent VisualComponent { get; }
+	public abstract bool IsTweened { get; set; }
+	public abstract bool IsLockedByFlyingAnimation { get; set; }
+	public abstract GameObject gameObject { get; }
+	public abstract Tween SlideItemTween { get; set; }
+	public abstract int SelectorSiblingIndex { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract RectTransform get_RectTransform();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract BoardItemPosition get_Position();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void set_Position(BoardItemPosition value);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract IVisualComponent get_VisualComponent();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract bool get_IsTweened();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract void set_IsTweened(bool value);
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract bool get_IsLockedByFlyingAnimation();
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract void set_IsLockedByFlyingAnimation(bool value);
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract GameObject get_gameObject();
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract Tween get_SlideItemTween();
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public abstract void set_SlideItemTween(Tween value);
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public abstract int get_SelectorSiblingIndex();
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 12
+	public abstract void add_Tapped(Action<IBoardItemView> value);
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 13
+	public abstract void remove_Tapped(Action<IBoardItemView> value);
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 14
+	public abstract void add_Dragging(Action<IBoardItemView, PointerEventData> value);
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 15
+	public abstract void remove_Dragging(Action<IBoardItemView, PointerEventData> value);
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 16
+	public abstract void add_DragEnded(Action<IBoardItemView, PointerEventData> value);
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 17
+	public abstract void remove_DragEnded(Action<IBoardItemView, PointerEventData> value);
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 18
+	public abstract void add_DragCancelled(Action<IBoardItemView> value);
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 19
+	public abstract void remove_DragCancelled(Action<IBoardItemView> value);
+
+	// RVA: -1 Offset: -1 Slot: 20
+	public abstract void Initialise(IVisualComponent visualComponent, IReadOnlyDictionary<string, BehaviourPrefabData> behaviourConfigs, string poolIdStringFormat);
+
+	// RVA: -1 Offset: -1 Slot: 21
+	public abstract TViewBehaviour GetBehaviour<TViewBehaviour>();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBoardItemView.GetBehaviour<object>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 22
+	public abstract TViewBehaviour GetOrAttachBehaviour<TViewBehaviour>();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBoardItemView.GetOrAttachBehaviour<object>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 23
+	public abstract void CancelDrag();
+}
+

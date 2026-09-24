@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardTaskEntity.<>c__DisplayClass56_0 // TypeDefIndex: 1966
+{
+	// Fields
+	public int groupId; // 0x8
+
+	// Methods
+
+	// RVA: 0x19411EC Offset: 0x19411EC VA: 0x19411EC
+	public void .ctor() { }
+
+	// RVA: 0x1947FF0 Offset: 0x1947FF0 VA: 0x1947FF0
+	internal bool <GetRatingForGroup>b__0(GroupRatingData g) { }
+}
+

@@ -1,0 +1,83 @@
+Type: MenuController+<>c__DisplayClass557_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x02B72FD8 CMP W8, 0x1
+	0x02B72FDC STR X9, [X31 + 0x78]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: UI.IMenuSection <ShowShortLeaderboardEventStartPopup>b__0()
+
+Disassembly:
+	0x02B72FE0 B.NE 0x2B73074
+	0x02B72FE4 LDR X8, [X31 + 0x118]
+	0x02B72FE8 MOVN W9, 0x0
+	0x02B72FEC STR W9, [X31 + 0x114]
+	0x02B72FF0 LDR V0, [X8 + 0x7]
+	0x02B72FF4 STP X31, X31, [X8 + 0x70]
+	0x02B72FF8 STR V0, [X31 + 0x9]
+	0x02B72FFC STR W9, [X8]
+	0x02B73000 ADRP X19, 0x31B0000
+	0x02B73004 LDRB W8, [X19 + 0x49A]
+	0x02B73008 CBNZ W8, 0x2B73020
+	0x02B7300C ADRP X0, 0x2B64000
+	0x02B73010 LDR X0, [X0 + 0xD10]
+	0x02B73014 BL 0x239B8E4
+	0x02B73018 MOVZ W8, 0x1
+	0x02B7301C STRB W8, [X19 + 0x49A]
+	0x02B73020 LDR X19, [X31 + 0x90]
+	0x02B73024 CBZ X19, 0x2B730EC
+	0x02B73028 ADRP X10, 0x2B64000
+	0x02B7302C LDR X8, [X19]
+	0x02B73030 LDR X10, [X10 + 0xD10]
+	0x02B73034 LDRH W20, [X31 + 0x98]
+	0x02B73038 LDRH W9, [X8 + 0x12E]
+	0x02B7303C LDR X1, [X10]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move X20, X0
+	005 Move X0, [X0+24]
+	006 Compare X0, 0
+	007 JumpIfEqual {30}
+	008 Move X19, [X20+16]
+	009 Move X1, X31
+	010 Call ShortLeaderboardEventStartMenuState.get_MenuTag, X0
+	011 Move X8, [X20+32]
+	012 Compare X8, 0
+	013 JumpIfEqual {30}
+	014 Move X20, X0
+	015 Move X0, X8
+	016 Move X1, X31
+	017 Call Component.get_gameObject, X0
+	018 Compare X19, 0
+	019 JumpIfEqual {30}
+	020 Move X2, X0
+	021 Move X0, X19
+	022 Move X1, X20
+	023 Move X20, [X31+16]
+	024 Move X19, [X31+24]
+	025 Move W3, W31
+	026 Move X4, X31
+	027 Move X30, [X31+32]
+	028 Call MenuController.FindMenuWithTag, X0, X1, X2, X3
+	029 Return X0
+	030 Call 0x239FB90
+
+Method: UI.IMenuState <ShowShortLeaderboardEventStartPopup>b__1()
+
+Disassembly:
+	0x02B73040 CBZ X9, 0x2B73064
+	0x02B73044 LDR X10, [X8 + 0xB0]
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+

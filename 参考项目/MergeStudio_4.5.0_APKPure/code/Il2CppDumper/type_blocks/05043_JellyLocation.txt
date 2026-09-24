@@ -1,0 +1,9 @@
+// Namespace: MergePuzzle.Locations
+public class JellyLocation : LocationBase // TypeDefIndex: 5043
+{
+	// Methods
+
+	// RVA: 0x1E12B4C Offset: 0x1E12B4C VA: 0x1E12B4C
+	public void .ctor() { }
+}
+

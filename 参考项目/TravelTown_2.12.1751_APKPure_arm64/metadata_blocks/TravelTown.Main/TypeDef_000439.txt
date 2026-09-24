@@ -1,0 +1,83 @@
+// Namespace: MergeEngine.Model
+public class ResourcesConfigurationModel : ModelBase, IResourcesConfigurationModel, IResourcesConfigurationModelBase // TypeDefIndex: 439
+{
+	// Fields
+	private ResourceConfig _resourceConfig; // 0x28
+	private readonly Dictionary<string, TMP_SpriteAsset> _genericTokenSpriteAssets; // 0x30
+	private readonly Dictionary<IRewardType, GenericTokenConfig> _genericTokenConfigs; // 0x38
+	private readonly ObservableDictionary<IRewardType, AssetReferenceT<Sprite>> _iconsOverride; // 0x40
+
+	// Properties
+	public ResourceConfig ResourceConfig { get; }
+	public ObservableDictionary<IRewardType, AssetReferenceT<Sprite>> ResourceIcons { get; }
+	public int FreeEnergyRefillCount { get; }
+
+	// Methods
+
+	// RVA: 0x6125CF4 Offset: 0x6121CF4 VA: 0x6125CF4 Slot: 21
+	public ResourceConfig get_ResourceConfig() { }
+
+	// RVA: 0x6125CFC Offset: 0x6121CFC VA: 0x6125CFC Slot: 22
+	public ObservableDictionary<IRewardType, AssetReferenceT<Sprite>> get_ResourceIcons() { }
+
+	// RVA: 0x6125D04 Offset: 0x6121D04 VA: 0x6125D04 Slot: 20
+	public int get_FreeEnergyRefillCount() { }
+
+	// RVA: 0x6125D20 Offset: 0x6121D20 VA: 0x6125D20 Slot: 17
+	protected override void InitializeModel() { }
+
+	// RVA: 0x6125E30 Offset: 0x6121E30 VA: 0x6125E30 Slot: 18
+	protected override void DisposeModel() { }
+
+	// RVA: 0x6126094 Offset: 0x6122094 VA: 0x6126094
+	private void ResourceConfigLoaded(ResourceConfig resourceConfig) { }
+
+	// RVA: 0x6126210 Offset: 0x6122210 VA: 0x6126210 Slot: 23
+	public void AddResourceIconOverride(IRewardType resource, AssetReferenceT<Sprite> iconSprite) { }
+
+	// RVA: 0x6126314 Offset: 0x6122314 VA: 0x6126314 Slot: 24
+	public void RemoveResourceIconOverride(IRewardType resource) { }
+
+	// RVA: 0x612636C Offset: 0x612236C VA: 0x612636C Slot: 31
+	public string GetResourceSpriteTag(IRewardType rewardType) { }
+
+	// RVA: 0x6126388 Offset: 0x6122388 VA: 0x6126388 Slot: 29
+	public AssetReferenceT<Sprite> GetResourceIcon(IRewardType rewardType) { }
+
+	// RVA: 0x6126554 Offset: 0x6122554 VA: 0x6126554 Slot: 30
+	public string GetResourceName(IRewardType rewardType) { }
+
+	// RVA: 0x612675C Offset: 0x612275C VA: 0x612675C Slot: 19
+	public IMergeGraphItem GetResourceGraph(string resource) { }
+
+	// RVA: 0x6126778 Offset: 0x6122778 VA: 0x6126778 Slot: 25
+	public List<IRewardType> AllGenericTokenIds() { }
+
+	// RVA: 0x6126898 Offset: 0x6122898 VA: 0x6126898 Slot: 26
+	public bool IsGenericToken(IRewardType rewardType) { }
+
+	// RVA: 0x61268F0 Offset: 0x61228F0 VA: 0x61268F0 Slot: 27
+	public GenericTokenConfig GetGenericTokenConfig(IRewardType rewardType) { }
+
+	// RVA: 0x6126B00 Offset: 0x6122B00 VA: 0x6126B00 Slot: 28
+	public void SetupSpriteAssetsForTokens() { }
+
+	// RVA: 0x6126EA4 Offset: 0x6122EA4 VA: 0x6126EA4
+	private void SetupGenericTokens(BalanceConfigResponse configGenericTokens) { }
+
+	// RVA: 0x6126C58 Offset: 0x6122C58 VA: 0x6126C58
+	private void LoadTokenSpriteAsset(GenericTokenConfig token) { }
+
+	// RVA: 0x61264D0 Offset: 0x61224D0 VA: 0x61264D0
+	private AssetReferenceT<Sprite> GetGenericTokenIcon(IRewardType rewardType) { }
+
+	// RVA: 0x6125EDC Offset: 0x6121EDC VA: 0x6125EDC
+	private void ClearGenericTokenSprites() { }
+
+	// RVA: 0x61266C4 Offset: 0x61226C4 VA: 0x61266C4
+	private string GetGenericTokenLocalisationId(IRewardType rewardType) { }
+
+	// RVA: 0x61271AC Offset: 0x61231AC VA: 0x61271AC
+	public void .ctor() { }
+}
+

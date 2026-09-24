@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardController.<>c__DisplayClass339_2 // TypeDefIndex: 1885
+{
+	// Fields
+	public List<Coordinate> availableCellCoordinates; // 0x8
+	public BoardController.<>c__DisplayClass339_0 CS$<>8__locals2; // 0xC
+
+	// Methods
+
+	// RVA: 0x191A400 Offset: 0x191A400 VA: 0x191A400
+	public void .ctor() { }
+
+	// RVA: 0x191A408 Offset: 0x191A408 VA: 0x191A408
+	internal void <OnEvent>b__3() { }
+}
+

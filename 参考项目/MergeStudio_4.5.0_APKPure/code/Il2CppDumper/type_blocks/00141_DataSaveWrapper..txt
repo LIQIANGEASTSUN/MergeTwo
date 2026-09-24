@@ -1,0 +1,36 @@
+// Namespace: 
+[CompilerGenerated]
+private struct DataSaveWrapper.<LoadDataFromLocalFileAsync>d__14<T> : IAsyncStateMachine // TypeDefIndex: 141
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncUniTaskMethodBuilder<T> <>t__builder; // 0x0
+	public string path; // 0x0
+	private TaskAwaiter<string> <>u__1; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 4
+	private void MoveNext() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x405D6FC Offset: 0x405D6FC VA: 0x405D6FC
+	|-DataSaveWrapper.<LoadDataFromLocalFileAsync>d__14<object>.MoveNext
+	|
+	|-RVA: 0x405DD5C Offset: 0x405DD5C VA: 0x405DD5C
+	|-DataSaveWrapper.<LoadDataFromLocalFileAsync>d__14<__Il2CppFullySharedGenericType>.MoveNext
+	*/
+
+	[DebuggerHidden]
+	// RVA: -1 Offset: -1 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x405DD24 Offset: 0x405DD24 VA: 0x405DD24
+	|-DataSaveWrapper.<LoadDataFromLocalFileAsync>d__14<object>.SetStateMachine
+	|
+	|-RVA: 0x405E668 Offset: 0x405E668 VA: 0x405E668
+	|-DataSaveWrapper.<LoadDataFromLocalFileAsync>d__14<__Il2CppFullySharedGenericType>.SetStateMachine
+	*/
+}
+

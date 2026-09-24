@@ -1,0 +1,29 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class HintUtil.<>c__DisplayClass0_0 // TypeDefIndex: 612
+{
+	// Fields
+	public IMergingConfigurationModel mergingConfigurationModel; // 0x10
+	public List<string> excludeItemIds; // 0x18
+	public IMergeItem itemType; // 0x20
+	public Func<IComponentBase, bool> unlockPredicate; // 0x28
+	public Func<IdComponent, bool> <>9__7; // 0x30
+
+	// Methods
+
+	// RVA: 0x6272C94 Offset: 0x626EC94 VA: 0x6272C94
+	public void .ctor() { }
+
+	// RVA: 0x6276CD4 Offset: 0x6272CD4 VA: 0x6276CD4
+	internal bool <GetHint>b__1(IdComponent item) { }
+
+	// RVA: 0x6276DFC Offset: 0x6272DFC VA: 0x6276DFC
+	internal bool <GetHint>b__3(IdComponent id) { }
+
+	// RVA: 0x6276F34 Offset: 0x6272F34 VA: 0x6276F34
+	internal bool <GetHint>b__5(IdComponent component) { }
+
+	// RVA: 0x6276FF0 Offset: 0x6272FF0 VA: 0x6276FF0
+	internal bool <GetHint>b__7(IdComponent component) { }
+}
+

@@ -1,0 +1,223 @@
+Type: SpiralCoordinates
+
+Method: System.ValueTuple`2<System.Int32, System.Int32> Find(System.Int32 zeroBasedIndex)
+
+Disassembly:
+	0x032B119C BL 0x239BB90
+	0x032B11A0 SUB X8, X29, 0x68
+	0x032B11A4 LDUR X8, [X8 - 0x100]
+	0x032B11A8 LDR X8, [X8 + 0x28]
+	0x032B11AC LDUR X9, [X29 - 0x30]
+	0x032B11B0 CMP X8, X9
+	0x032B11B4 B.NE 0x32B1470
+	0x032B11B8 BL 0x239BB90
+	0x032B11BC SUB X8, X29, 0x68
+	0x032B11C0 LDUR X8, [X8 - 0x100]
+	0x032B11C4 LDR X8, [X8 + 0x28]
+	0x032B11C8 LDUR X9, [X29 - 0x30]
+	0x032B11CC CMP X8, X9
+	0x032B11D0 B.NE 0x32B1470
+	0x032B11D4 BL 0x239BB90
+	0x032B11D8 SUB X8, X29, 0x68
+	0x032B11DC LDUR X8, [X8 - 0x100]
+	0x032B11E0 LDR X8, [X8 + 0x28]
+	0x032B11E4 LDUR X9, [X29 - 0x30]
+	0x032B11E8 CMP X8, X9
+	0x032B11EC B.NE 0x32B1470
+	0x032B11F0 BL 0x239BB90
+	0x032B11F4 SUB X8, X29, 0x68
+	0x032B11F8 LDUR X8, [X8 - 0x100]
+	0x032B11FC LDR X8, [X8 + 0x28]
+	0x032B1200 LDUR X9, [X29 - 0x30]
+	0x032B1204 CMP X8, X9
+	0x032B1208 B.NE 0x32B1470
+	0x032B120C BL 0x239BB90
+	0x032B1210 SUB X8, X29, 0x68
+	0x032B1214 LDUR X8, [X8 - 0x100]
+	0x032B1218 LDR X8, [X8 + 0x28]
+	0x032B121C LDUR X9, [X29 - 0x30]
+	0x032B1220 CMP X8, X9
+	0x032B1224 B.NE 0x32B1470
+	0x032B1228 MOV X0, X19
+	0x032B122C BL 0x239BB88
+	0x032B1230 SUB X8, X29, 0x68
+	0x032B1234 LDUR X8, [X8 - 0x100]
+	0x032B1238 LDR X8, [X8 + 0x28]
+	0x032B123C LDUR X9, [X29 - 0x30]
+	0x032B1240 CMP X8, X9
+	0x032B1244 B.NE 0x32B1470
+	0x032B1248 BL 0x239BB90
+	0x032B124C SUB X8, X29, 0x68
+	0x032B1250 LDUR X8, [X8 - 0x100]
+	0x032B1254 LDR X8, [X8 + 0x28]
+	0x032B1258 LDUR X9, [X29 - 0x30]
+	0x032B125C CMP X8, X9
+	0x032B1260 B.NE 0x32B1470
+	0x032B1264 BL 0x239BB90
+	0x032B1268 SUB X8, X29, 0x68
+	0x032B126C LDUR X8, [X8 - 0x100]
+	0x032B1270 LDR X8, [X8 + 0x28]
+	0x032B1274 LDUR X9, [X29 - 0x30]
+	0x032B1278 CMP X8, X9
+	0x032B127C B.NE 0x32B1470
+	0x032B1280 BL 0x239BB90
+	0x032B1284 SUB X8, X29, 0x68
+	0x032B1288 LDUR X8, [X8 - 0x100]
+	0x032B128C LDR X8, [X8 + 0x28]
+	0x032B1290 LDUR X9, [X29 - 0x30]
+	0x032B1294 CMP X8, X9
+	0x032B1298 B.NE 0x32B1470
+	0x032B129C MOV X0, X19
+	0x032B12A0 BL 0x239BB88
+	0x032B12A4 SUB X8, X29, 0x68
+	0x032B12A8 LDUR X8, [X8 - 0x100]
+	0x032B12AC LDR X8, [X8 + 0x28]
+	0x032B12B0 LDUR X9, [X29 - 0x30]
+	0x032B12B4 CMP X8, X9
+	0x032B12B8 B.NE 0x32B1470
+	0x032B12BC BL 0x239BB90
+	0x032B12C0 SUB X8, X29, 0x68
+	0x032B12C4 LDUR X8, [X8 - 0x100]
+	0x032B12C8 LDR X8, [X8 + 0x28]
+	0x032B12CC LDUR X9, [X29 - 0x30]
+	0x032B12D0 CMP X8, X9
+	0x032B12D4 B.NE 0x32B1470
+	0x032B12D8 BL 0x239BB90
+	0x032B12DC SUB X8, X29, 0x68
+	0x032B12E0 LDUR X8, [X8 - 0x100]
+	0x032B12E4 LDR X8, [X8 + 0x28]
+	0x032B12E8 LDUR X9, [X29 - 0x30]
+	0x032B12EC CMP X8, X9
+	0x032B12F0 B.NE 0x32B1470
+	0x032B12F4 MOV X0, X19
+	0x032B12F8 BL 0x239BB88
+	0x032B12FC MOV X19, X1
+	0x032B1300 MOV X20, X0
+	0x032B1304 SUB X0, X29, 0x108
+	0x032B1308 BL 0x21DEB08
+	0x032B130C B 0x32B1420
+	0x032B1310 MOV X19, X1
+	0x032B1314 MOV X20, X0
+	0x032B1318 SUB X0, X29, 0x108
+	0x032B131C BL 0x21DEB08
+	0x032B1320 B 0x32B1420
+	0x032B1324 B 0x32B1418
+	0x032B1328 B 0x32B1418
+	0x032B132C B 0x32B1418
+	0x032B1330 B 0x32B1418
+	0x032B1334 B 0x32B1418
+	0x032B1338 B 0x32B1418
+	0x032B133C B 0x32B1418
+
+ISIL:
+	001 Subtract X31, X31, 80
+	002 Move [X31+32], X30
+	003 Move [X31+40], X23
+	004 Move [X31+48], X22
+	005 Move [X31+56], X21
+	006 Move [X31+64], X20
+	007 Move [X31+72], X19
+	008 Move W19, W0
+	009 Move W8, [0x2A7B386]
+	010 Move X20, [0x2420BE0]
+	011 Move TEMP, X8
+	012 And TEMP, TEMP, 1
+	013 Compare TEMP, 1
+	014 JumpIfEqual {21}
+	015 Move X0, [0x2420BE0]
+	016 Call 0x239F8E4
+	017 Move X0, [0x2427D30]
+	018 Call 0x239F8E4
+	019 Move W8, 1
+	020 Move [X21+902], W8
+	021 Move X0, [X20]
+	022 Move W8, [X0+228]
+	023 Move X20, [0x2427D30]
+	024 Move [X31+16], X31
+	025 Compare W8, 0
+	026 JumpIfNotEqual {28}
+	027 Call 0x239FA64
+	028 Add W8, W19, 1
+	029 Move D1, -1
+	030 Move X9, 0x7FF00000
+	031 NotImplemented "Instruction SCVTF not yet implemented."
+	032 Move X3, [X20]
+	033 Add X0, X31, 16
+	034 Add X1, X31, 8
+	035 Add X2, X31, 28
+	036 Move [X31+8], W31
+	037 Move [X31+28], W31
+	038 NotImplemented "Instruction FSQRT not yet implemented."
+	039 Add D0, D0, D1
+	040 Move D1, 0.5
+	041 Multiply D0, D0, D1
+	042 NotImplemented "Instruction FRINTM not yet implemented."
+	043 NotImplemented "Instruction FCVTMS not yet implemented."
+	044 Move D0, X9
+	045 Move W9, 0x80000000
+	046 NotImplemented "Instruction FCMP not yet implemented."
+	047 NotImplemented "Instruction CSEL not yet implemented."
+	048 Add W19, W21, 1
+	049 Move W9, W19
+	050 ShiftRight W9, 29
+	051 And W9, W9, 0xFFFFFFF
+	052 Move W23, W19
+	053 ShiftRight W23, 31
+	054 And W23, W23, 0x3FFFFFFF
+	055 Multiply W10, W9, W21
+	056 Subtract W8, W8, W10
+	057 NotImplemented "Instruction SDIV not yet implemented."
+	058 NotImplemented "Instruction MSUB not yet implemented."
+	059 Call 0x2853678, X0, X1, X2
+	060 NotImplemented "Instruction SDIV not yet implemented."
+	061 NotImplemented "Instruction CMP not yet implemented."
+	062 Compare W8, 0
+	063 JumpIfEqual {80}
+	064 NotImplemented "Instruction CMP not yet implemented."
+	065 NotImplemented "Instruction MSUB not yet implemented."
+	066 Move X3, [X20]
+	067 Move [X31+8], X31
+	068 Subtract W8, W8, W19
+	069 Move [X31+24], W8
+	070 Move [X31+28], W19
+	071 NotImplemented "Instruction CMP not yet implemented."
+	072 NotImplemented "Instruction CMP not yet implemented."
+	073 Subtract W9, W31, W22
+	074 NotImplemented "Instruction MADD not yet implemented."
+	075 Move X3, [X20]
+	076 NotImplemented "Instruction ORN not yet implemented."
+	077 Move [X31+8], W9
+	078 Add W8, W19, W8
+	079 Move [X31+28], W8
+	080 Subtract W8, W22, W19
+	081 NotImplemented "Instruction ORN not yet implemented."
+	082 Move X3, [X20]
+	083 Move [X31+8], W8
+	084 Move [X31+28], W9
+	085 Add X0, X31, 16
+	086 Add X1, X31, 8
+	087 Add X2, X31, 28
+	088 Call 0x2853678, X0, X1, X2
+	089 Subtract W9, W31, W22
+	090 NotImplemented "Instruction MADD not yet implemented."
+	091 Move X3, [X20]
+	092 Move [X31+8], X31
+	093 Add W8, W19, W8
+	094 Move [X31+24], W19
+	095 Move [X31+28], W8
+	096 Add X0, X31, 8
+	097 Add X1, X31, 28
+	098 Add X2, X31, 24
+	099 Call 0x2853678, X0, X1, X2
+	100 Move X8, [X31+8]
+	101 Move [X31+16], X8
+	102 Move X20, [X31+64]
+	103 Move X19, [X31+72]
+	104 Move X0, [X31+16]
+	105 Move X22, [X31+48]
+	106 Move X21, [X31+56]
+	107 Move X30, [X31+32]
+	108 Move X23, [X31+40]
+	109 Add X31, X31, 80
+	110 Return X0
+

@@ -1,0 +1,23 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class BalanceSpawnerConfigModel // TypeDefIndex: 3336
+{
+	// Fields
+	public bool IsDefault; // 0x8
+	public bool PreventRecharge; // 0x9
+	public List<BalanceSpawnerConfigModelItem> SpawnerConfigs; // 0xC
+	public List<BalancePerishableConfigModelItem> PerishableConfigs; // 0x10
+	public List<BalanceChargeModelItem> ChargeConfigs; // 0x14
+
+	// Methods
+
+	// RVA: 0x1BA8D14 Offset: 0x1BA8D14 VA: 0x1BA8D14
+	public BalanceSpawnerConfigModel GetValue() { }
+
+	// RVA: 0x1BAEA18 Offset: 0x1BAEA18 VA: 0x1BAEA18
+	public static BalanceSpawnerConfigModel GetBalanceModel() { }
+
+	// RVA: 0x1BAEBA0 Offset: 0x1BAEBA0 VA: 0x1BAEBA0
+	public void .ctor() { }
+}
+

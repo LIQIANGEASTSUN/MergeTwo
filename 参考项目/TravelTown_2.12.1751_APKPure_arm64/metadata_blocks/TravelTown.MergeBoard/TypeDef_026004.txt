@@ -1,0 +1,20 @@
+// Namespace: Merger.MergeBoard.Components
+public struct InteractionComponent : IComponent // TypeDefIndex: 26004
+{
+	// Fields
+	public bool InteractionCostsResource; // 0x0
+	public PlayerResourceEnum ResourceToConsume; // 0x4
+	public int ResourceAmountToConsume; // 0x8
+	public List<Combination> Combinations; // 0x10
+	public bool InteractionCostsItems; // 0x18
+	public ItemMultiple[] ItemsToConsume; // 0x20
+
+	// Properties
+	public string[] ItemsToConsumeIds { get; }
+
+	// Methods
+
+	// RVA: 0x6A8751C Offset: 0x6A8351C VA: 0x6A8751C
+	public string[] get_ItemsToConsumeIds() { }
+}
+

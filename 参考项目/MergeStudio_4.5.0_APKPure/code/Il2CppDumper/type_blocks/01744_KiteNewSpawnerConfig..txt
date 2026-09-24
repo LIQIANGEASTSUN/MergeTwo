@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class KiteNewSpawnerConfig.<>c // TypeDefIndex: 1744
+{
+	// Fields
+	public static readonly KiteNewSpawnerConfig.<>c <>9; // 0x0
+	public static Predicate<UserEntity.VersionEntryLevel> <>9__6_0; // 0x4
+
+	// Methods
+
+	// RVA: 0x1910550 Offset: 0x1910550 VA: 0x1910550
+	private static void .cctor() { }
+
+	// RVA: 0x19105C4 Offset: 0x19105C4 VA: 0x19105C4
+	public void .ctor() { }
+
+	// RVA: 0x19105CC Offset: 0x19105CC VA: 0x19105CC
+	internal bool <GetValue>b__6_0(UserEntity.VersionEntryLevel el) { }
+}
+

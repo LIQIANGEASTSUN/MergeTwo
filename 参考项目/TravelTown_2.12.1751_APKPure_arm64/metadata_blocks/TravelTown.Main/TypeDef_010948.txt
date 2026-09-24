@@ -1,0 +1,13 @@
+// Namespace: Framework.Core.Services.Backend.Remote.Payloads
+public class PendingRewardHolder // TypeDefIndex: 10948
+{
+	// Fields
+	[JsonProperty("pendingRewards")]
+	public List<PendingReward> PendingRewards; // 0x10
+
+	// Methods
+
+	// RVA: 0x6927430 Offset: 0x6923430 VA: 0x6927430
+	public void .ctor() { }
+}
+

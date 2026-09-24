@@ -1,0 +1,28 @@
+// Namespace: MergeEngine.Signal.Items
+[SoundBoundSignal("Produce")]
+public class ProducerSpawnedItemSignal // TypeDefIndex: 237
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly ProducerComponent <Producer>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly BoardItemPosition <Position>k__BackingField; // 0x18
+
+	// Properties
+	public ProducerComponent Producer { get; }
+	public BoardItemPosition Position { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3C84 Offset: 0x5FEFC84 VA: 0x5FF3C84
+	public ProducerComponent get_Producer() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3C8C Offset: 0x5FEFC8C VA: 0x5FF3C8C
+	public BoardItemPosition get_Position() { }
+
+	// RVA: 0x5FF3C94 Offset: 0x5FEFC94 VA: 0x5FF3C94
+	public void .ctor(ProducerComponent producer, BoardItemPosition position) { }
+}
+

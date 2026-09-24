@@ -1,0 +1,112 @@
+// Namespace: MergePuzzle.BoardEvents
+public abstract class BoardEventHandlerBase : INotificationHandler, IItemRewardConvertHandler // TypeDefIndex: 5393
+{
+	// Fields
+	protected EventBoardConfigItem _finishWaitingEventBoardConfigItem; // 0x8
+	protected Dictionary<int, EventBoardConfigItem> _runningEventBoardConfigItems; // 0xC
+	protected KiteEventBoardConfig _remappedEventBoardConfig; // 0x10
+	public Dictionary<int, AsyncOperationHandle<EventData>> EventDataMap; // 0x14
+	public Dictionary<int, AsyncOperationHandle<BoardEventBoardData>> BoardDataMap; // 0x18
+	protected List<EventBoardConfigItem> _allEvents; // 0x1C
+	protected int _runningEventBoardIndex; // 0x20
+	protected bool _addressableDownloadLock; // 0x24
+	protected bool _isAssetBundleReady; // 0x25
+	public long RemainingTime; // 0x28
+
+	// Methods
+
+	[AsyncStateMachine(typeof(BoardEventHandlerBase.<LoadEventData>d__10))]
+	// RVA: 0x1EB4B88 Offset: 0x1EB4B88 VA: 0x1EB4B88
+	public UniTask<EventData> LoadEventData(int index) { }
+
+	[AsyncStateMachine(typeof(BoardEventHandlerBase.<LoadBoardData>d__11))]
+	// RVA: 0x1EB4C94 Offset: 0x1EB4C94 VA: 0x1EB4C94
+	public UniTask<BoardEventBoardData> LoadBoardData(int index) { }
+
+	// RVA: 0x1EB3B1C Offset: 0x1EB3B1C VA: 0x1EB3B1C
+	public void FindActiveBoardEvent(BoardEntity boardEntity) { }
+
+	// RVA: 0x1EB4738 Offset: 0x1EB4738 VA: 0x1EB4738
+	public EventData GetEventData(int index) { }
+
+	// RVA: 0x1EB4E28 Offset: 0x1EB4E28 VA: 0x1EB4E28
+	public BoardData GetBoardData(int index) { }
+
+	[AsyncStateMachine(typeof(BoardEventHandlerBase.<ReleaseBoardData>d__15))]
+	// RVA: 0x1EB4EE0 Offset: 0x1EB4EE0 VA: 0x1EB4EE0
+	public UniTask<bool> ReleaseBoardData(int index) { }
+
+	[AsyncStateMachine(typeof(BoardEventHandlerBase.<CheckAndDownloadRequiredRunningConfigAddressable>d__16))]
+	// RVA: 0x1EB4FF0 Offset: 0x1EB4FF0 VA: 0x1EB4FF0
+	public UniTask<bool> CheckAndDownloadRequiredRunningConfigAddressable() { }
+
+	// RVA: 0x1EAFA08 Offset: 0x1EAFA08 VA: 0x1EAFA08
+	public EventBoardConfigItem GetCurrentBoardEventConfigItem() { }
+
+	// RVA: 0x1EB5104 Offset: 0x1EB5104 VA: 0x1EB5104
+	public long SetRemainingTime(long diff) { }
+
+	// RVA: 0x1EB4460 Offset: 0x1EB4460 VA: 0x1EB4460
+	public EventBoardConfigItem GetActiveAndNonFinishedBoardConfigItem() { }
+
+	// RVA: 0x1EB44DC Offset: 0x1EB44DC VA: 0x1EB44DC
+	public void RemoveRunningBoardConfigItem() { }
+
+	// RVA: 0x1EB3DE8 Offset: 0x1EB3DE8 VA: 0x1EB3DE8
+	public EventEntity GetRunningEventEntity() { }
+
+	// RVA: 0x1EB4DA0 Offset: 0x1EB4DA0 VA: 0x1EB4DA0
+	public void SetRunningBoardConfigItem(EventBoardConfigItem eventBoardConfigItem) { }
+
+	// RVA: 0x1EB5190 Offset: 0x1EB5190 VA: 0x1EB5190
+	public EventBoardConfigItem GetEventBoardConfigItem(int index) { }
+
+	// RVA: 0x1EB522C Offset: 0x1EB522C VA: 0x1EB522C
+	public EventBoardConfigItem GetFinishWaitingEventBoardConfigItem() { }
+
+	// RVA: 0x1EB5234 Offset: 0x1EB5234 VA: 0x1EB5234
+	private bool IsAddressableDownloaded() { }
+
+	// RVA: 0x1EB523C Offset: 0x1EB523C VA: 0x1EB523C Slot: 4
+	public bool IsNotificationAvailable() { }
+
+	// RVA: 0x1EB5354 Offset: 0x1EB5354 VA: 0x1EB5354 Slot: 5
+	public int GetNotificationCount() { }
+
+	// RVA: 0x1EB535C Offset: 0x1EB535C VA: 0x1EB535C Slot: 6
+	public string GetTitle(int index) { }
+
+	// RVA: 0x1EB5500 Offset: 0x1EB5500 VA: 0x1EB5500 Slot: 7
+	public string GetDesc(int index) { }
+
+	// RVA: 0x1EB5474 Offset: 0x1EB5474 VA: 0x1EB5474 Slot: 8
+	public string GetTitleKey(int index) { }
+
+	// RVA: 0x1EB5618 Offset: 0x1EB5618 VA: 0x1EB5618 Slot: 9
+	public string GetDescKey(int index) { }
+
+	// RVA: 0x1EB56A4 Offset: 0x1EB56A4 VA: 0x1EB56A4 Slot: 10
+	public long GetDateScheduledSeconds(int index) { }
+
+	// RVA: 0x1EB5758 Offset: 0x1EB5758 VA: 0x1EB5758 Slot: 11
+	public string GetTag() { }
+
+	// RVA: 0x1EB57B4 Offset: 0x1EB57B4 VA: 0x1EB57B4 Slot: 12
+	public bool IsUseUTC() { }
+
+	// RVA: 0x1EB3D88 Offset: 0x1EB3D88 VA: 0x1EB3D88 Slot: 13
+	public void InitializeItemRewardConversion() { }
+
+	// RVA: 0x1EB57BC Offset: 0x1EB57BC VA: 0x1EB57BC Slot: 14
+	public void ItemRewardConvertUpdated(ItemRewardConvertEvent.FeatureStatusUpdated e) { }
+
+	// RVA: 0x1EB57E4 Offset: 0x1EB57E4 VA: 0x1EB57E4
+	private void ProcessOfferRewards(ItemRewardConvertEvent.FeatureStatusUpdated e) { }
+
+	// RVA: 0x1EB5B34 Offset: 0x1EB5B34 VA: 0x1EB5B34
+	private void ProcessLevelUpRewards(ItemRewardConvertEvent.FeatureStatusUpdated e) { }
+
+	// RVA: 0x1EB4940 Offset: 0x1EB4940 VA: 0x1EB4940
+	protected void .ctor() { }
+}
+

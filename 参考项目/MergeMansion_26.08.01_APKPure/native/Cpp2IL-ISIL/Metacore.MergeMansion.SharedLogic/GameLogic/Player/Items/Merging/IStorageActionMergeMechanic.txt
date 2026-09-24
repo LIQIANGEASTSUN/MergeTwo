@@ -1,0 +1,9 @@
+Type: GameLogic.Player.Items.Merging.IStorageActionMergeMechanic
+
+Method: GameLogic.Player.Items.Merging.StorageActionType get_StorageAction()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

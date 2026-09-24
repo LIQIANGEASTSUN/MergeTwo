@@ -1,0 +1,34 @@
+// Namespace: Merger.MergeBoard.Components
+public struct ChargeableComponent : IComponent // TypeDefIndex: 25991
+{
+	// Fields
+	[CompilerGenerated]
+	private int <MaxCharge>k__BackingField; // 0x0
+	[CompilerGenerated]
+	private int <CurrentState>k__BackingField; // 0x4
+
+	// Properties
+	public int MaxCharge { get; set; }
+	public int CurrentState { get; set; }
+
+	// Methods
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9BC74 Offset: 0x6A97C74 VA: 0x6A9BC74
+	public int get_MaxCharge() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BC7C Offset: 0x6A97C7C VA: 0x6A9BC7C
+	public void set_MaxCharge(int value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9BC84 Offset: 0x6A97C84 VA: 0x6A9BC84
+	public int get_CurrentState() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BC8C Offset: 0x6A97C8C VA: 0x6A9BC8C
+	public void set_CurrentState(int value) { }
+}
+

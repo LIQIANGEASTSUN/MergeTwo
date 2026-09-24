@@ -1,0 +1,20 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public interface ITimeLimitedActivationComponent // TypeDefIndex: 1076
+{
+	// Properties
+	public abstract long ExpirationTimeStamp { get; }
+	public abstract long ActivationTimeStamp { get; }
+	public abstract bool HasExpired { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract long get_ExpirationTimeStamp();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract long get_ActivationTimeStamp();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract bool get_HasExpired();
+}
+

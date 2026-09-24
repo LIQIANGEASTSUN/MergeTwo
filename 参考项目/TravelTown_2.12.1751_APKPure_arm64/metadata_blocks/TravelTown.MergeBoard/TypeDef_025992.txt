@@ -1,0 +1,74 @@
+// Namespace: Merger.MergeBoard.Components
+public struct CollectableComponent : IComponent, ICollectableComponent // TypeDefIndex: 25992
+{
+	// Fields
+	[CompilerGenerated]
+	private ItemCollectable <ItemCollectable>k__BackingField; // 0x0
+	[CompilerGenerated]
+	private ItemCollectableResource <ItemCollectableResource>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private bool <ShouldRemoveFromBoard>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private bool <Collected>k__BackingField; // 0x11
+
+	// Properties
+	public ItemCollectable ItemCollectable { get; set; }
+	public ItemCollectableResource ItemCollectableResource { get; set; }
+	public AfterCollectAnimation AfterCollectAnimation { get; }
+	public Reward CollectableReward { get; }
+	public bool IsPlaygroundPoints { get; }
+	public bool IsImmediateReward { get; }
+	public bool ShouldRemoveFromBoard { get; set; }
+	public bool Collected { get; set; }
+
+	// Methods
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9BC94 Offset: 0x6A97C94 VA: 0x6A9BC94
+	public ItemCollectable get_ItemCollectable() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BC9C Offset: 0x6A97C9C VA: 0x6A9BC9C
+	public void set_ItemCollectable(ItemCollectable value) { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9BCA4 Offset: 0x6A97CA4 VA: 0x6A9BCA4
+	public ItemCollectableResource get_ItemCollectableResource() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BCAC Offset: 0x6A97CAC VA: 0x6A9BCAC
+	public void set_ItemCollectableResource(ItemCollectableResource value) { }
+
+	// RVA: 0x6A9BCB4 Offset: 0x6A97CB4 VA: 0x6A9BCB4 Slot: 6
+	public AfterCollectAnimation get_AfterCollectAnimation() { }
+
+	// RVA: 0x6A9BCD0 Offset: 0x6A97CD0 VA: 0x6A9BCD0 Slot: 7
+	public Reward get_CollectableReward() { }
+
+	// RVA: 0x6A9BCEC Offset: 0x6A97CEC VA: 0x6A9BCEC Slot: 10
+	public bool get_IsPlaygroundPoints() { }
+
+	// RVA: 0x6A9BD10 Offset: 0x6A97D10 VA: 0x6A9BD10
+	public bool get_IsImmediateReward() { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9BD34 Offset: 0x6A97D34 VA: 0x6A9BD34 Slot: 8
+	public bool get_ShouldRemoveFromBoard() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BD3C Offset: 0x6A97D3C VA: 0x6A9BD3C Slot: 9
+	public void set_ShouldRemoveFromBoard(bool value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9BD48 Offset: 0x6A97D48 VA: 0x6A9BD48 Slot: 4
+	public bool get_Collected() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BD50 Offset: 0x6A97D50 VA: 0x6A9BD50 Slot: 5
+	public void set_Collected(bool value) { }
+}
+

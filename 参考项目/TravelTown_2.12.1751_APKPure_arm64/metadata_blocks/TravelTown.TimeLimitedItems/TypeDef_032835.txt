@@ -1,0 +1,23 @@
+// Namespace: Merger.TimeLimitedItems.Providers
+public class TimeLimitedItemsCleanUpItemsProvider : ITimeLimitedItemsCleanUpItemsProvider // TypeDefIndex: 32835
+{
+	// Fields
+	[Inject]
+	private IMergeBoardModel _mergeBoardModel; // 0x10
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x18
+	[Inject]
+	private IBoardQueueModel _boardQueueModel; // 0x20
+
+	// Methods
+
+	// RVA: 0x6B49684 Offset: 0x6B45684 VA: 0x6B49684 Slot: 4
+	public List<Entity> GetBoardEntitiesToDestroy(HashSet<string> graphIds) { }
+
+	// RVA: 0x6B49C44 Offset: 0x6B45C44 VA: 0x6B49C44 Slot: 5
+	public List<QueuedItem> GetQueuedItemsToDestroy(HashSet<string> graphIds) { }
+
+	// RVA: 0x6B4A238 Offset: 0x6B46238 VA: 0x6B4A238
+	public void .ctor() { }
+}
+

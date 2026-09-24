@@ -1,0 +1,19 @@
+// Namespace: Merger.MergeBoard.Systems
+public class InteractionCostSystem : ISystem // TypeDefIndex: 25743
+{
+	// Fields
+	[Inject]
+	private IItemInteractionAffordabilityChecker _affordabilityChecker; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A6A9E0 Offset: 0x6A669E0 VA: 0x6A6A9E0 Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A6AF00 Offset: 0x6A66F00 VA: 0x6A6AF00
+	private void ConsumeItems(TickContext context, Entity interactedEntity, PendingInteractionComponent pendingInteractionComponent, InteractionComponent interactionComponent) { }
+
+	// RVA: 0x6A6B178 Offset: 0x6A67178 VA: 0x6A6B178
+	public void .ctor() { }
+}
+

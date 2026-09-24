@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class CatSwimmingModel.<>c__DisplayClass47_0 // TypeDefIndex: 263
+{
+	// Fields
+	public TableMergeItem tableMergeItem; // 0x8
+
+	// Methods
+
+	// RVA: 0x2B3D560 Offset: 0x2B3D560 VA: 0x2B3D560
+	public void .ctor() { }
+
+	// RVA: 0x2B3F994 Offset: 0x2B3F994 VA: 0x2B3F994
+	internal bool <MergeToProductCatSwimming>b__0(CatSwimmingItem p) { }
+}
+

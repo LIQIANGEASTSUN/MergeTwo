@@ -1,0 +1,23 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class KiteNewSpawnerConfig // TypeDefIndex: 1745
+{
+	// Fields
+	public bool IsDefault; // 0x8
+	public bool InventoryLogicActive; // 0x9
+	public int ArchiveTaskDurationSeconds; // 0xC
+	public List<KiteSpawnerBackupItem> SpawnerBackupItems; // 0x10
+	public List<KiteItemChain> ItemChains; // 0x14
+
+	// Methods
+
+	// RVA: 0x19100F0 Offset: 0x19100F0 VA: 0x19100F0
+	public void .ctor() { }
+
+	// RVA: 0x19100F8 Offset: 0x19100F8 VA: 0x19100F8
+	public KiteNewSpawnerConfig GetValue() { }
+
+	// RVA: 0x19103C0 Offset: 0x19103C0 VA: 0x19103C0
+	public void Initialize() { }
+}
+

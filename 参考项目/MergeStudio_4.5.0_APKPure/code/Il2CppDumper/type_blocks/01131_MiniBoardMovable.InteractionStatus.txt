@@ -1,0 +1,12 @@
+// Namespace: 
+public enum MiniBoardMovable.InteractionStatus // TypeDefIndex: 1131
+{
+	// Fields
+	public int value__; // 0x0
+	public const MiniBoardMovable.InteractionStatus ACTIVE = 0;
+	public const MiniBoardMovable.InteractionStatus CLICKABLE = 1;
+	public const MiniBoardMovable.InteractionStatus NONCLICKABLE = 2;
+	public const MiniBoardMovable.InteractionStatus TUTORIAL_CLICKABLE = 3;
+	public const MiniBoardMovable.InteractionStatus TUTORIAL_NONCLICKABLE = 4;
+}
+

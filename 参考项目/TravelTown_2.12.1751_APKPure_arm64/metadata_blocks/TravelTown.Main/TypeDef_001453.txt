@@ -1,0 +1,41 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class ItemsSpawningCapability : TimeCycleCapability // TypeDefIndex: 1453
+{
+	// Fields
+	public bool DoNotShuffleSpawningList; // 0x30
+	public bool SpawnBasedOnConsumedItems; // 0x31
+	[LocalisationIdentifier]
+	public string SpawnedItemsLabel; // 0x38
+	private List<KeyValuePair<IMergeItem, int>> _itemPoolWithSpawnCounts; // 0x40
+	private List<IMergeItem> _spawnedMergeItems; // 0x48
+	public List<WeightedItemSpawnable> Items; // 0x50
+	public List<FixedItemSpawnable> FixedItems; // 0x58
+	public List<ConsumedItemToProducedItemMapping> LinkedItems; // 0x60
+	public List<Combination> Combinations; // 0x68
+	[JsonProperty("skipCooldownSettings")]
+	public SkipCooldownSettings SkipCooldownSettings; // 0x70
+	private List<IMergeItem> _spawningList; // 0x78
+
+	// Properties
+	[JsonIgnore]
+	public List<IMergeItem> SpawnedMergeItems { get; }
+
+	// Methods
+
+	// RVA: 0x60108A0 Offset: 0x600C8A0 VA: 0x60108A0
+	public List<IMergeItem> get_SpawnedMergeItems() { }
+
+	// RVA: 0x6010918 Offset: 0x600C918 VA: 0x6010918
+	public List<IMergeItem> GetSpawningList() { }
+
+	// RVA: 0x6010EBC Offset: 0x600CEBC VA: 0x6010EBC
+	public List<ItemSpawnable> GetDistinctSpawnableItems() { }
+
+	// RVA: 0x6010F44 Offset: 0x600CF44 VA: 0x6010F44
+	public List<KeyValuePair<IMergeItem, int>> GetItemPoolWithSpawnCounts() { }
+
+	// RVA: 0x601124C Offset: 0x600D24C VA: 0x601124C
+	public void .ctor() { }
+}
+

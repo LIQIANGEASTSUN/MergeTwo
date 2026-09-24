@@ -1,0 +1,30 @@
+// Namespace: 
+[CompilerGenerated]
+private struct BoardController.<ProcessSplit>d__267 : IAsyncStateMachine // TypeDefIndex: 1897
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncUniTaskVoidMethodBuilder <>t__builder; // 0x4
+	public BoardController <>4__this; // 0x8
+	public BoosterAnimationController.SplitInfo Split; // 0xC
+	private KiteBoosterConfigModel <boosterConfig>5__2; // 0x20
+	private BoardItemData <boardItemData>5__3; // 0x24
+	private ItemInfo <itemInfo>5__4; // 0x28
+	private ItemEntity <spawnedItemEntity1>5__5; // 0x30
+	private ItemEntity <spawnedItemEntity2>5__6; // 0x34
+	private Coordinate <coordinate>5__7; // 0x38
+	private ItemCreationHandler <itemCreationHandler>5__8; // 0x40
+	private SplitBoosterLocation <splitBoosterLocation>5__9; // 0x44
+	private UniTask.Awaiter<ItemController> <>u__1; // 0x48
+	private ItemEntity <spawnedItemEntity3>5__10; // 0x54
+
+	// Methods
+
+	// RVA: 0x1922D68 Offset: 0x1922D68 VA: 0x1922D68 Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x1923D44 Offset: 0x1923D44 VA: 0x1923D44 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

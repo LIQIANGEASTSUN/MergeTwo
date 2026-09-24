@@ -1,0 +1,32 @@
+// Namespace: Merger.MergeBoard.View
+public class IntervalTicker : MonoBehaviour // TypeDefIndex: 25678
+{
+	// Fields
+	[Inject]
+	private ITimeIntervalProcessor _intervalProcessor; // 0x20
+	[Inject]
+	private IServerTimeService _serverTimeService; // 0x28
+	[Inject]
+	private IMergeBoardModel _mergeBoardModel; // 0x30
+	[SerializeField]
+	private float _interval; // 0x38
+	private float _lastDeltaTime; // 0x3C
+
+	// Properties
+	private long CurrentServerTimeMS { get; }
+
+	// Methods
+
+	// RVA: 0x6A361CC Offset: 0x6A321CC VA: 0x6A361CC
+	private long get_CurrentServerTimeMS() { }
+
+	// RVA: 0x6A3626C Offset: 0x6A3226C VA: 0x6A3626C
+	private void Start() { }
+
+	// RVA: 0x6A363A8 Offset: 0x6A323A8 VA: 0x6A363A8
+	private void Update() { }
+
+	// RVA: 0x6A3651C Offset: 0x6A3251C VA: 0x6A3651C
+	public void .ctor() { }
+}
+

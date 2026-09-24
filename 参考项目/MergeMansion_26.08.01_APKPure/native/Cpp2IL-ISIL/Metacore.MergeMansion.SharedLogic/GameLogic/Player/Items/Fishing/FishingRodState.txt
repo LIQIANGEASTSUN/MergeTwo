@@ -1,0 +1,177 @@
+Type: GameLogic.Player.Items.Fishing.FishingRodState
+
+Method: System.Int32 get_WaterDropletCount()
+
+Disassembly:
+	0x0362CDA8 STRB W8, [X22 + 0xD1E]
+	0x0362CDAC CBZ X20, 0x362D29C
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_WaterDropletCount(System.Int32 value)
+
+Disassembly:
+	0x0362CDB0 ADRP X10, 0x20A8000
+	0x0362CDB4 LDR X8, [X20]
+
+ISIL:
+	001 Move [X0+16], W1
+	002 Return 
+
+Method: System.Int32 get_Item()
+
+Disassembly:
+	0x0362CDB8 LDR X10, [X10 + 0xD50]
+	0x0362CDBC LDRH W9, [X8 + 0x12E]
+
+ISIL:
+	001 Move W0, [X0+20]
+	002 Return X0
+
+Method: System.Void set_Item(System.Int32 value)
+
+Disassembly:
+	0x0362CDC0 LDR X1, [X10]
+	0x0362CDC4 CBZ X9, 0x362CDE8
+
+ISIL:
+	001 Move [X0+20], W1
+	002 Return 
+
+Method: System.Nullable`1<GameLogic.Player.Items.Fishing.WeightCategory> get_WeightCategory()
+
+Disassembly:
+	0x0362CDC8 LDR X10, [X8 + 0xB0]
+	0x0362CDCC ADD X10, X10, 0x8
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_WeightCategory(System.Nullable`1<GameLogic.Player.Items.Fishing.WeightCategory> value)
+
+Disassembly:
+	0x0362CDD0 LDUR X11, [X10 - 0x8]
+	0x0362CDD4 CMP X11, X1
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Return 
+
+Method: System.Nullable`1<Metaplay.Core.Math.F32> get_Weight()
+
+Disassembly:
+	0x0362CDD8 B.EQ 0x362CDF8
+	0x0362CDDC SUBS X9, X9, 0x1
+
+ISIL:
+	001 Move X0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_Weight(System.Nullable`1<Metaplay.Core.Math.F32> value)
+
+Disassembly:
+	0x0362CDE0 ADD X10, X10, 0x10
+	0x0362CDE4 B.NE 0x362CDD0
+
+ISIL:
+	001 Move [X0+32], X1
+	002 Return 
+
+Method: System.Int32 get_TapCount()
+
+Disassembly:
+	0x0362CDE8 MOV X0, X20
+	0x0362CDEC MOVZ W2, 0x5
+
+ISIL:
+	001 Move W0, [X0+40]
+	002 Return X0
+
+Method: System.Void set_TapCount(System.Int32 value)
+
+Disassembly:
+	0x0362CDF0 BL 0x23D527C
+	0x0362CDF4 B 0x362CE08
+
+ISIL:
+	001 Move [X0+40], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0362CDF8 LDR W9, [X10]
+	0x0362CDFC ADD W9, W9, 0x5
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(System.Int32 waterDropletCount, System.Int32 item, System.Nullable`1<GameLogic.Player.Items.Fishing.WeightCategory> weightCategory, System.Nullable`1<Metaplay.Core.Math.F32> weight)
+
+Disassembly:
+	0x0362CE00 ADD X8, X8, W9, 0x4, SXTW
+	0x0362CE04 ADD X0, X8, 0x138
+	0x0362CE08 LDP X8, X1, [X0]
+	0x0362CE0C MOV X0, X20
+	0x0362CE10 BLR X8
+	0x0362CE14 CBZ X19, 0x362D29C
+	0x0362CE18 ADRP X24, 0x20BA000
+	0x0362CE1C LDR X8, [X19]
+	0x0362CE20 MOV X22, X0
+	0x0362CE24 LDR X24, [X24 + 0x958]
+	0x0362CE28 LDRH W9, [X8 + 0x12E]
+	0x0362CE2C LDR X1, [X24]
+	0x0362CE30 CBZ X9, 0x362CE54
+	0x0362CE34 LDR X10, [X8 + 0xB0]
+	0x0362CE38 ADD X10, X10, 0x8
+	0x0362CE3C LDUR X11, [X10 - 0x8]
+	0x0362CE40 CMP X11, X1
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31-40], X23
+	003 Move [X31+16], X22
+	004 Move [X31+24], X21
+	005 Move [X31+32], X20
+	006 Move [X31+40], X19
+	007 Move W22, W1
+	008 Move X1, X31
+	009 Move X19, X4
+	010 Move X20, X3
+	011 Move W21, W2
+	012 Move X23, X0
+	013 Call Object..ctor, X0
+	014 Move [X23+16], W22
+	015 Move [X23+20], W21
+	016 Move X22, [X31+16]
+	017 Move X21, [X31+24]
+	018 Move [X23+24], X20
+	019 Move [X23+32], X19
+	020 Move X20, [X31+32]
+	021 Move X19, [X31+40]
+	022 Move [X23+40], W31
+	023 Move X30, [X31+48]
+	024 Move X23, [X31+56]
+	025 Return 
+
+Method: System.Boolean ShouldProduceItem()
+
+Disassembly:
+	0x0362CE44 B.EQ 0x362CE64
+	0x0362CE48 SUBS X9, X9, 0x1
+	0x0362CE4C ADD X10, X10, 0x10
+	0x0362CE50 B.NE 0x362CE3C
+	0x0362CE54 MOV X0, X19
+
+ISIL:
+	001 Move W8, [X0+40]
+	002 Move W9, [X0+16]
+	003 NotImplemented "Instruction CMP not yet implemented."
+	004 NotImplemented "Instruction CSET not yet implemented."
+	005 Return X0
+

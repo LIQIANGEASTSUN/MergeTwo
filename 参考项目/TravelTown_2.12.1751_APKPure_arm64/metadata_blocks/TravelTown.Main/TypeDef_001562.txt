@@ -1,0 +1,40 @@
+// Namespace: GameCore.Model
+public class GameModelBase : ModelBase // TypeDefIndex: 1562
+{
+	// Fields
+	[Inject]
+	private ISystemManager _systemManager; // 0x28
+	[CompilerGenerated]
+	private readonly MutableBindableProperty<bool> <_gameStarted>k__BackingField; // 0x30
+
+	// Properties
+	private MutableBindableProperty<bool> _gameStarted { get; }
+	protected BindableProperty<bool> GameStarted { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x601E5D4 Offset: 0x601A5D4 VA: 0x601E5D4
+	private MutableBindableProperty<bool> get__gameStarted() { }
+
+	// RVA: 0x601E5DC Offset: 0x601A5DC VA: 0x601E5DC
+	protected BindableProperty<bool> get_GameStarted() { }
+
+	// RVA: -1 Offset: -1
+	protected TSystem GetSystem<TSystem>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3CC9388 Offset: 0x3CC5388 VA: 0x3CC9388
+	|-GameModelBase.GetSystem<object>
+	*/
+
+	// RVA: 0x601E5E4 Offset: 0x601A5E4 VA: 0x601E5E4 Slot: 17
+	protected override void InitializeModel() { }
+
+	// RVA: 0x601E694 Offset: 0x601A694 VA: 0x601E694
+	private void GameStartedSignalReceived() { }
+
+	// RVA: 0x601E798 Offset: 0x601A798 VA: 0x601E798
+	public void .ctor() { }
+}
+

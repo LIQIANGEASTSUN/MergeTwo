@@ -1,0 +1,98 @@
+// Namespace: MergeEngine.Util
+public class TwoDArray<T> // TypeDefIndex: 117
+{
+	// Fields
+	private readonly int _cols; // 0x0
+	private readonly int _rows; // 0x0
+	private T[][] _array; // 0x0
+	private List<BoardItemPosition> _emptyPositions; // 0x0
+	private BoardItemPosition[] _adjacentTiles; // 0x0
+	private BoardItemPosition[] _adjacentAndDiagonalTiles; // 0x0
+
+	// Properties
+	public bool IsFull { get; }
+	public ReadOnlyCollection<BoardItemPosition> EmptyPositions { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public bool get_IsFull() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4653ED0 Offset: 0x464FED0 VA: 0x4653ED0
+	|-TwoDArray<object>.get_IsFull
+	*/
+
+	// RVA: -1 Offset: -1
+	public ReadOnlyCollection<BoardItemPosition> get_EmptyPositions() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4653F20 Offset: 0x464FF20 VA: 0x4653F20
+	|-TwoDArray<object>.get_EmptyPositions
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor(int cols, int rows) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4653F70 Offset: 0x464FF70 VA: 0x4653F70
+	|-TwoDArray<object>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	private void FillEmptyPositions() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x46542AC Offset: 0x46502AC VA: 0x46542AC
+	|-TwoDArray<object>.FillEmptyPositions
+	*/
+
+	// RVA: -1 Offset: -1
+	private void CreateArray() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x46543B4 Offset: 0x46503B4 VA: 0x46543B4
+	|-TwoDArray<object>.CreateArray
+	*/
+
+	// RVA: -1 Offset: -1
+	public T GetItem(BoardItemPosition position) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x46544B8 Offset: 0x46504B8 VA: 0x46544B8
+	|-TwoDArray<object>.GetItem
+	*/
+
+	// RVA: -1 Offset: -1
+	public bool SetItem(BoardItemPosition position, T item) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x465450C Offset: 0x465050C VA: 0x465450C
+	|-TwoDArray<object>.SetItem
+	*/
+
+	// RVA: -1 Offset: -1
+	public List<BoardItemPosition> GetAdjacentPositions(BoardItemPosition position, bool includeDiagonal) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4654664 Offset: 0x4650664 VA: 0x4654664
+	|-TwoDArray<object>.GetAdjacentPositions
+	*/
+
+	// RVA: -1 Offset: -1
+	private bool IsInBounds(BoardItemPosition boardItemPosition) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x46547F4 Offset: 0x46507F4 VA: 0x46547F4
+	|-TwoDArray<object>.IsInBounds
+	*/
+
+	// RVA: -1 Offset: -1
+	public void ForEach(Action<T> action) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x465482C Offset: 0x465082C VA: 0x465482C
+	|-TwoDArray<object>.ForEach
+	*/
+}
+

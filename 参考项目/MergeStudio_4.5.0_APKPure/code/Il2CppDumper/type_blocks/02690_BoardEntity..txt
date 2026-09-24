@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardEntity.<>c__DisplayClass82_0 // TypeDefIndex: 2690
+{
+	// Fields
+	public int index; // 0x8
+
+	// Methods
+
+	// RVA: 0x1A5B7F0 Offset: 0x1A5B7F0 VA: 0x1A5B7F0
+	public void .ctor() { }
+
+	// RVA: 0x1A5C45C Offset: 0x1A5C45C VA: 0x1A5C45C
+	internal bool <RemoveEventEntity>b__0(EventEntity item) { }
+}
+

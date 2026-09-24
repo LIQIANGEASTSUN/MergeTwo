@@ -1,0 +1,40 @@
+Type: GameLogic.Player.Rewards.DefaultRewardContext
+
+Method: CurrencySource get_FallbackCurrencySource()
+
+Disassembly:
+	0x0373592C B 0x373593C
+	0x03735930 LDRSW X9, [X10]
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void .ctor(CurrencySource fallbackCurrencySource)
+
+Disassembly:
+	0x03735934 ADD X8, X8, X9, 0x4, LSL
+	0x03735938 ADD X0, X8, 0x138
+	0x0373593C LDP X8, X1, [X0]
+	0x03735940 MOV X0, X22
+	0x03735944 BLR X8
+	0x03735948 TBZ X0, 0x0, 0x3735A70
+	0x0373594C LDR X22, [X31 + 0xB8]
+	0x03735950 CBZ X22, 0x3735A0C
+	0x03735954 LDR X8, [X22]
+	0x03735958 LDR X1, [X20]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move W19, W1
+	005 Move X1, X31
+	006 Move X20, X0
+	007 Call Object..ctor, X0
+	008 Move [X20+16], W19
+	009 Move X20, [X31+16]
+	010 Move X19, [X31+24]
+	011 Move X30, [X31+32]
+	012 Return 
+

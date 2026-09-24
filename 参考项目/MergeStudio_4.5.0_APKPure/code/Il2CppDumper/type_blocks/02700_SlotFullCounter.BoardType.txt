@@ -1,0 +1,9 @@
+// Namespace: 
+public enum SlotFullCounter.BoardType // TypeDefIndex: 2700
+{
+	// Fields
+	public int value__; // 0x0
+	public const SlotFullCounter.BoardType Main = 0;
+	public const SlotFullCounter.BoardType MFS = 1;
+}
+

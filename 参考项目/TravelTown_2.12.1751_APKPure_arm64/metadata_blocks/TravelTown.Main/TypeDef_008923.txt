@@ -1,0 +1,14 @@
+// Namespace: Merger.Game.Views.Inventory
+public interface IBaseInventoryTabContentView<T> // TypeDefIndex: 8923
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract float GetViewportHeight();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBaseInventoryTabContentView<object>.GetViewportHeight
+	*/
+}
+

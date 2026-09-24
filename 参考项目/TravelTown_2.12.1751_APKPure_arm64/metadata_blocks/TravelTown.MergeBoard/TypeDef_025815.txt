@@ -1,0 +1,34 @@
+// Namespace: Merger.MergeBoard.Models
+public class TileConfigurationModel : ITileConfigurationModel // TypeDefIndex: 25815
+{
+	// Fields
+	private Dictionary<int, DynamicBoardCellConfiguration> _tileConfigurationData; // 0x10
+
+	// Properties
+	public IEnumerable<int> TileIndices { get; }
+	public int TileCount { get; }
+
+	// Methods
+
+	// RVA: 0x6A7DC50 Offset: 0x6A79C50 VA: 0x6A7DC50 Slot: 4
+	public IEnumerable<int> get_TileIndices() { }
+
+	// RVA: 0x6A7DD08 Offset: 0x6A79D08 VA: 0x6A7DD08
+	public int get_TileCount() { }
+
+	// RVA: 0x6A7DD60 Offset: 0x6A79D60 VA: 0x6A7DD60 Slot: 7
+	public void SetTileConfiguration(List<DynamicBoardCellConfiguration> tileConfigurationData) { }
+
+	// RVA: 0x6A7DF58 Offset: 0x6A79F58 VA: 0x6A7DF58 Slot: 8
+	public List<DynamicBoardCellConfiguration> GetTileConfiguration() { }
+
+	// RVA: 0x6A7DFC4 Offset: 0x6A79FC4 VA: 0x6A7DFC4 Slot: 5
+	public DynamicBoardCellConfiguration GetTileConfiguration(int tileIndex) { }
+
+	// RVA: 0x6A7E038 Offset: 0x6A7A038 VA: 0x6A7E038 Slot: 6
+	public bool HasTileConfiguration(int tileIndex) { }
+
+	// RVA: 0x6A7E098 Offset: 0x6A7A098 VA: 0x6A7E098
+	public void .ctor() { }
+}
+

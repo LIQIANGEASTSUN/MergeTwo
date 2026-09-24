@@ -1,0 +1,21 @@
+// Namespace: Merger.MergeBoard.Utils
+public static class SpawningItemsUtils // TypeDefIndex: 25725
+{
+	// Methods
+
+	// RVA: 0x6A4E898 Offset: 0x6A4A898 VA: 0x6A4E898
+	public static ItemSpawnable GetItemToSpawn(Entity entity, SpawnerComponent spawnerComponent, TimeCycleComponent timeCycleComponent, InteractionComponent interactionComponent) { }
+
+	// RVA: 0x6A4EBA8 Offset: 0x6A4ABA8 VA: 0x6A4EBA8
+	public static ItemSpawnable GetItemToProduce(Entity entity, ProducerComponent producerComponent, TimeCycleComponent timeCycleComponent, InteractionComponent interactionComponent, IMergingConfigurationModel mergingConfigurationModel, IPowerBoostDataProvider powerBoostDataProvider) { }
+
+	// RVA: 0x6A4E9D8 Offset: 0x6A4A9D8 VA: 0x6A4E9D8
+	private static ItemSpawnable GetItemFromQueue(ItemSpawningQueue itemsQueue, InteractionComponent interactionComponent, List<ItemPayloadBase> consumedItems) { }
+
+	// RVA: 0x6A4F57C Offset: 0x6A4B57C VA: 0x6A4F57C
+	public static void DecrementItemsToProduce(ref TimeCycleComponent timeCycle, Entity entity) { }
+
+	// RVA: 0x6A4EE2C Offset: 0x6A4AE2C VA: 0x6A4EE2C
+	private static ItemSpawnable TryReplaceWithBoosted(ItemSpawnable itemToProduce, Entity entity, ItemsSpawningCapability itemsSpawningCapability, IMergingConfigurationModel mergingConfigurationModel, IPowerBoostDataProvider powerBoostDataProvider) { }
+}
+

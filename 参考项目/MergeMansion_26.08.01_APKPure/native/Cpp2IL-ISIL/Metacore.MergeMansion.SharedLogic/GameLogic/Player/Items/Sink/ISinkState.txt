@@ -1,0 +1,51 @@
+Type: GameLogic.Player.Items.Sink.ISinkState
+
+Method: System.Boolean DoesTakeIn(GameLogic.Player.IPlayer player, System.Int32 itemId)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean IncreaseProgress(GameLogic.Player.IPlayer player, System.Int32 inputItem)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.ValueTuple`2<System.Int32, System.Int32> GetProgress()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean IsCompleted()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.IItemDefinition GetCompletionItem(GameLogic.Player.IPlayer player, GameLogic.Player.Items.MergeItem item, GameLogic.Player.Board.MergeBoard board)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void GetProgressEntries(ref System.Collections.Generic.List`1<GameLogic.Player.Items.Sink.SinkProgressEntry> outList)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Sink.SinkType GetSinkType()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

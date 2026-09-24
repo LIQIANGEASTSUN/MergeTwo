@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemUnboxingSystem.<>c__DisplayClass12_0 // TypeDefIndex: 25756
+{
+	// Fields
+	public int position; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A70918 Offset: 0x6A6C918 VA: 0x6A70918
+	public void .ctor() { }
+
+	// RVA: 0x6A70950 Offset: 0x6A6C950 VA: 0x6A70950
+	internal bool <GetSourcesForAnalytics>b__0(ValueTuple<Entity, IdComponent, DeadComponent, BoardTilePositionComponent> found) { }
+}
+

@@ -1,0 +1,58 @@
+// Namespace: Merger.MergeBoard.Components
+public struct TimeDurationComponent : IComponent, ITimeDurationComponent // TypeDefIndex: 26021
+{
+	// Fields
+	[CompilerGenerated]
+	private double <Timeleft>k__BackingField; // 0x0
+	[CompilerGenerated]
+	private bool <Active>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private double <Duration>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private bool <IgnoreBoardSecondsForThisTick>k__BackingField; // 0x18
+
+	// Properties
+	public double Timeleft { get; set; }
+	public bool Active { get; set; }
+	public double Duration { get; set; }
+	public bool IgnoreBoardSecondsForThisTick { get; set; }
+
+	// Methods
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9C4F4 Offset: 0x6A984F4 VA: 0x6A9C4F4 Slot: 4
+	public double get_Timeleft() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C4FC Offset: 0x6A984FC VA: 0x6A9C4FC Slot: 5
+	public void set_Timeleft(double value) { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9C504 Offset: 0x6A98504 VA: 0x6A9C504 Slot: 6
+	public bool get_Active() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C50C Offset: 0x6A9850C VA: 0x6A9C50C Slot: 7
+	public void set_Active(bool value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9C518 Offset: 0x6A98518 VA: 0x6A9C518 Slot: 8
+	public double get_Duration() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C520 Offset: 0x6A98520 VA: 0x6A9C520 Slot: 9
+	public void set_Duration(double value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9C528 Offset: 0x6A98528 VA: 0x6A9C528
+	public bool get_IgnoreBoardSecondsForThisTick() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C530 Offset: 0x6A98530 VA: 0x6A9C530
+	public void set_IgnoreBoardSecondsForThisTick(bool value) { }
+}
+

@@ -1,0 +1,15 @@
+// Namespace: Merger.MergeBoard.Extensions
+[Extension]
+public static class FeedingCombinationComponentExtensions // TypeDefIndex: 25908
+{
+	// Methods
+
+	[Extension]
+	// RVA: 0x6A86C80 Offset: 0x6A82C80 VA: 0x6A86C80
+	public static List<Combination> GetCombinationsInProgressWithItem(FeedingCombinationComponent feedingCombinationComponent, List<Combination> combinations, string itemId) { }
+
+	[Extension]
+	// RVA: 0x6A981CC Offset: 0x6A941CC VA: 0x6A981CC
+	public static List<Combination> GetCombinationsInProgress(FeedingCombinationComponent feedingCombinationComponent, List<Combination> combinations) { }
+}
+

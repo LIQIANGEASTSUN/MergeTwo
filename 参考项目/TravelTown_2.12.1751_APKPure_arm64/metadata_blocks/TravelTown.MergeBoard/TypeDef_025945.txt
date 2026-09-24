@@ -1,0 +1,34 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class ExpendableSpawnFailedResult // TypeDefIndex: 25945
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly Entity <Entity>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly string <Reason>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private readonly IMergeItem <MergeItem>k__BackingField; // 0x20
+
+	// Properties
+	public Entity Entity { get; }
+	public string Reason { get; }
+	public IMergeItem MergeItem { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A3B4 Offset: 0x6A963B4 VA: 0x6A9A3B4
+	public Entity get_Entity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A3BC Offset: 0x6A963BC VA: 0x6A9A3BC
+	public string get_Reason() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A3C4 Offset: 0x6A963C4 VA: 0x6A9A3C4
+	public IMergeItem get_MergeItem() { }
+
+	// RVA: 0x6A9A3CC Offset: 0x6A963CC VA: 0x6A9A3CC
+	public void .ctor(Entity entity, string reason, IMergeItem mergeItem) { }
+}
+

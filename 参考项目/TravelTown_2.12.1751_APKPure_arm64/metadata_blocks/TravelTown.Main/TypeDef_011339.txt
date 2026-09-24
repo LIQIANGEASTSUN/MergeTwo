@@ -1,0 +1,40 @@
+// Namespace: Framework.Core.Command
+public abstract class CommandBase<TSignal> : Base // TypeDefIndex: 11339
+{
+	// Fields
+	[InjectOptional]
+	protected INavigationModel NavigationModel; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public abstract void Execute(TSignal signal);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-CommandBase<__Il2CppFullySharedGenericType>.Execute
+	*/
+
+	// RVA: -1 Offset: -1
+	protected bool RequestTransition(string transition, object payload) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4CA256C Offset: 0x4C9E56C VA: 0x4CA256C
+	|-CommandBase<object>.RequestTransition
+	|
+	|-RVA: 0x4CA2630 Offset: 0x4C9E630 VA: 0x4CA2630
+	|-CommandBase<__Il2CppFullySharedGenericType>.RequestTransition
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4CA2628 Offset: 0x4C9E628 VA: 0x4CA2628
+	|-CommandBase<object>..ctor
+	|
+	|-RVA: 0x4CA26EC Offset: 0x4C9E6EC VA: 0x4CA26EC
+	|-CommandBase<__Il2CppFullySharedGenericType>..ctor
+	*/
+}
+

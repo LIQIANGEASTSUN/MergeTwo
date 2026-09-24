@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class CollectSystem.<>c // TypeDefIndex: 951
+{
+	// Fields
+	public static readonly CollectSystem.<>c <>9; // 0x0
+	public static Func<CollectableComponent, bool> <>9__15_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x678C1B8 Offset: 0x67881B8 VA: 0x678C1B8
+	private static void .cctor() { }
+
+	// RVA: 0x678C220 Offset: 0x6788220 VA: 0x678C220
+	public void .ctor() { }
+
+	// RVA: 0x678C228 Offset: 0x6788228 VA: 0x678C228
+	internal bool <OnWillProcessComponents>b__15_0(CollectableComponent collectable) { }
+}
+

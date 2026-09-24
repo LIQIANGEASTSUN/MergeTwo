@@ -1,0 +1,9 @@
+// Namespace: MergeEngine.ECS.Util
+public class InjectSystem : Attribute // TypeDefIndex: 627
+{
+	// Methods
+
+	// RVA: 0x6277D70 Offset: 0x6273D70 VA: 0x6277D70
+	public void .ctor() { }
+}
+

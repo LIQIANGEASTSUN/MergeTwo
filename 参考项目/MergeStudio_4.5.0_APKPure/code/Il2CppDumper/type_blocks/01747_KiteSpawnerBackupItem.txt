@@ -1,0 +1,17 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class KiteSpawnerBackupItem : IComparable<KiteSpawnerBackupItem> // TypeDefIndex: 1747
+{
+	// Fields
+	public int Level; // 0x8
+	public List<KiteSpawnerBackupItem.KiteBackupSpawnerModel> SpawnerList; // 0xC
+
+	// Methods
+
+	// RVA: 0x19105F4 Offset: 0x19105F4 VA: 0x19105F4
+	public void .ctor() { }
+
+	// RVA: 0x19105FC Offset: 0x19105FC VA: 0x19105FC Slot: 4
+	public int CompareTo(KiteSpawnerBackupItem other) { }
+}
+

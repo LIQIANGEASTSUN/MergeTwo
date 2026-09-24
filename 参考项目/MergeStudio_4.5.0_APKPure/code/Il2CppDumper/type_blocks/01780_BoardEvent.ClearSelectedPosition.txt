@@ -1,0 +1,8 @@
+// Namespace: 
+public struct BoardEvent.ClearSelectedPosition : IEvent // TypeDefIndex: 1780
+{
+	// Fields
+	public bool ResetInfo; // 0x0
+	public bool ItemDestroy; // 0x1
+}
+

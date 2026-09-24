@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class CollectableItemsGrantProcessor.<>c__DisplayClass5_0 // TypeDefIndex: 25886
+{
+	// Fields
+	public ItemResourceCollectedResult resourceCollected; // 0x10
+	public CollectableItemsGrantProcessor <>4__this; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A91DD8 Offset: 0x6A8DDD8 VA: 0x6A91DD8
+	public void .ctor() { }
+
+	// RVA: 0x6A9259C Offset: 0x6A8E59C VA: 0x6A9259C
+	internal void <Process>b__0() { }
+}
+

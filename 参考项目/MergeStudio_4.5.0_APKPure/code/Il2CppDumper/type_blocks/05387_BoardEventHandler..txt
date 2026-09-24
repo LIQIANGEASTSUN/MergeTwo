@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardEventHandler.<>c__DisplayClass7_0 // TypeDefIndex: 5387
+{
+	// Fields
+	public int id; // 0x8
+
+	// Methods
+
+	// RVA: 0x1EB4348 Offset: 0x1EB4348 VA: 0x1EB4348
+	public void .ctor() { }
+
+	// RVA: 0x1EB4B58 Offset: 0x1EB4B58 VA: 0x1EB4B58
+	internal bool <ResetEventEntity>b__0(EventBoardConfigItem item) { }
+}
+

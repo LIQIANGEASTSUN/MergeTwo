@@ -1,0 +1,14 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardTileLevelUnlockSystem.<>c__DisplayClass18_0 // TypeDefIndex: 948
+{
+	// Fields
+	public BoardTileLevelUnlockSystem <>4__this; // 0x10
+	public int numShakingTweens; // 0x18
+
+	// Methods
+
+	// RVA: 0x678ABF4 Offset: 0x6786BF4 VA: 0x678ABF4
+	public void .ctor() { }
+}
+

@@ -1,0 +1,145 @@
+// Namespace: ContextualizedECS.Context
+[Extension]
+public static class TickContextExtensions // TypeDefIndex: 33704
+{
+	// Methods
+
+	[Extension]
+	// RVA: -1 Offset: -1
+	public static void SaveChanges<T1>(ValueTuple<Entity, T1> target) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DC61EC Offset: 0x3DC21EC VA: 0x3DC61EC
+	|-TickContextExtensions.SaveChanges<__Il2CppFullySharedGenericStructType>
+	*/
+
+	[Extension]
+	// RVA: -1 Offset: -1
+	public static void SaveChanges<T1, T2>(ValueTuple<Entity, T1, T2> target) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DC6330 Offset: 0x3DC2330 VA: 0x3DC6330
+	|-TickContextExtensions.SaveChanges<BoardTilePositionComponent, TimeCycleComponent>
+	|
+	|-RVA: 0x3DC63DC Offset: 0x3DC23DC VA: 0x3DC63DC
+	|-TickContextExtensions.SaveChanges<BoardTilePositionComponent, TimeLockComponent>
+	|
+	|-RVA: 0x3DC6478 Offset: 0x3DC2478 VA: 0x3DC6478
+	|-TickContextExtensions.SaveChanges<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>
+	*/
+
+	[Extension]
+	// RVA: -1 Offset: -1
+	public static void SaveChanges<T1, T2, T3>(ValueTuple<Entity, T1, T2, T3> target) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DC6684 Offset: 0x3DC2684 VA: 0x3DC6684
+	|-TickContextExtensions.SaveChanges<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>
+	*/
+
+	[Extension]
+	// RVA: -1 Offset: -1
+	public static void SaveChanges<T1, T2, T3, T4>(ValueTuple<Entity, T1, T2, T3, T4> target) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DC6964 Offset: 0x3DC2964 VA: 0x3DC6964
+	|-TickContextExtensions.SaveChanges<BoardTilePositionComponent, ToolSpawningComponent, PendingInteractionComponent, InteractionComponent>
+	|
+	|-RVA: 0x3DC6A34 Offset: 0x3DC2A34 VA: 0x3DC6A34
+	|-TickContextExtensions.SaveChanges<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>
+	*/
+
+	[Extension]
+	// RVA: -1 Offset: -1
+	public static void SaveChanges<T1, T2, T3, T4, T5>(ValueTuple<Entity, T1, T2, T3, T4, T5> target) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DC6DE4 Offset: 0x3DC2DE4 VA: 0x3DC6DE4
+	|-TickContextExtensions.SaveChanges<BoardTilePositionComponent, CollectableComponent, IdComponent, PendingInteractionComponent, InteractionComponent>
+	|
+	|-RVA: 0x3DC6F48 Offset: 0x3DC2F48 VA: 0x3DC6F48
+	|-TickContextExtensions.SaveChanges<ChargeableComponent, ExpendableComponent, BoardTilePositionComponent, IdComponent, PendingInteractionComponent>
+	|
+	|-RVA: 0x3DC7074 Offset: 0x3DC3074 VA: 0x3DC7074
+	|-TickContextExtensions.SaveChanges<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>
+	*/
+
+	[Extension]
+	// RVA: -1 Offset: -1
+	public static void SaveChanges<T1, T2, T3, T4, T5, T6>(ValueTuple<Entity, T1, T2, T3, T4, T5, T6> target) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DC74F4 Offset: 0x3DC34F4 VA: 0x3DC74F4
+	|-TickContextExtensions.SaveChanges<BoardTilePositionComponent, FeedingCombinationComponent, IdComponent, InteractionComponent, ProducerComponent, TimeCycleComponent>
+	|
+	|-RVA: 0x3DC769C Offset: 0x3DC369C VA: 0x3DC769C
+	|-TickContextExtensions.SaveChanges<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>
+	*/
+
+	[Extension]
+	// RVA: -1 Offset: -1
+	public static void SaveChanges<T1, T2, T3, T4, T5, T6, T7>(ValueTuple<Entity, T1, T2, T3, T4, T5, T6, ValueTuple<T7>> target) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DC7BF4 Offset: 0x3DC3BF4 VA: 0x3DC7BF4
+	|-TickContextExtensions.SaveChanges<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>
+	*/
+
+	[Extension]
+	// RVA: -1 Offset: -1
+	public static void SaveChanges<T1, T2, T3, T4, T5, T6, T7, T8>(ValueTuple<Entity, T1, T2, T3, T4, T5, T6, ValueTuple<T7, T8>> target) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DC8264 Offset: 0x3DC4264 VA: 0x3DC8264
+	|-TickContextExtensions.SaveChanges<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>
+	*/
+
+	[Extension]
+	// RVA: -1 Offset: -1
+	public static void SaveChanges<T>(T comp, Entity entity) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DC89F0 Offset: 0x3DC49F0 VA: 0x3DC89F0
+	|-TickContextExtensions.SaveChanges<FeedingCombinationComponent>
+	|
+	|-RVA: 0x3DC8A38 Offset: 0x3DC4A38 VA: 0x3DC8A38
+	|-TickContextExtensions.SaveChanges<TimeLockComponent>
+	|
+	|-RVA: 0x3DC8AAC Offset: 0x3DC4AAC VA: 0x3DC8AAC
+	|-TickContextExtensions.SaveChanges<__Il2CppFullySharedGenericStructType>
+	*/
+
+	[Extension]
+	// RVA: -1 Offset: -1
+	public static void AddTempComponent<T>(TickContext context, Entity entity, T component) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DC5378 Offset: 0x3DC1378 VA: 0x3DC5378
+	|-TickContextExtensions.AddTempComponent<BornComponent>
+	|
+	|-RVA: 0x3DC5504 Offset: 0x3DC1504 VA: 0x3DC5504
+	|-TickContextExtensions.AddTempComponent<ConfirmedItemsCombinationComponent>
+	|
+	|-RVA: 0x3DC5690 Offset: 0x3DC1690 VA: 0x3DC5690
+	|-TickContextExtensions.AddTempComponent<ItemMergedComponent>
+	|
+	|-RVA: 0x3DC581C Offset: 0x3DC181C VA: 0x3DC581C
+	|-TickContextExtensions.AddTempComponent<ItemMovedComponent>
+	|
+	|-RVA: 0x3DC59A8 Offset: 0x3DC19A8 VA: 0x3DC59A8
+	|-TickContextExtensions.AddTempComponent<ItemUnboxedComponent>
+	|
+	|-RVA: 0x3DC5B34 Offset: 0x3DC1B34 VA: 0x3DC5B34
+	|-TickContextExtensions.AddTempComponent<MoveBlockComponent>
+	|
+	|-RVA: 0x3DC5CC0 Offset: 0x3DC1CC0 VA: 0x3DC5CC0
+	|-TickContextExtensions.AddTempComponent<PendingInteractionComponent>
+	|
+	|-RVA: 0x3DC5E54 Offset: 0x3DC1E54 VA: 0x3DC5E54
+	|-TickContextExtensions.AddTempComponent<ResourceConsumedComponent>
+	|
+	|-RVA: 0x3DC5FE0 Offset: 0x3DC1FE0 VA: 0x3DC5FE0
+	|-TickContextExtensions.AddTempComponent<__Il2CppFullySharedGenericStructType>
+	*/
+}
+

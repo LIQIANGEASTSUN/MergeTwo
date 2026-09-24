@@ -1,0 +1,10 @@
+// Namespace: Framework.Core.Services.Backend.Remote.Payloads.BoardState
+[StateName("rewardQueue")]
+public class CoreBoardQueueBackendState : BoardQueueBackendState // TypeDefIndex: 10969
+{
+	// Methods
+
+	// RVA: 0x692761C Offset: 0x692361C VA: 0x692761C
+	public void .ctor() { }
+}
+

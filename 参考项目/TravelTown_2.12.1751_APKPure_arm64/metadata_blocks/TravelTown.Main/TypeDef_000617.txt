@@ -1,0 +1,13 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class HintUtil.<>c__DisplayClass15_0 // TypeDefIndex: 617
+{
+	// Fields
+	public IMergingConfigurationModel mergingConfigurationModel; // 0x10
+
+	// Methods
+
+	// RVA: 0x627658C Offset: 0x627258C VA: 0x627658C
+	public void .ctor() { }
+}
+

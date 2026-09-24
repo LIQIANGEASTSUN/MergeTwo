@@ -1,0 +1,14 @@
+// Namespace: 
+public enum ItemController.PositionUpdateType // TypeDefIndex: 1673
+{
+	// Fields
+	public int value__; // 0x0
+	public const ItemController.PositionUpdateType MOVE = 0;
+	public const ItemController.PositionUpdateType SPAWN = 1;
+	public const ItemController.PositionUpdateType BUBBLE = 2;
+	public const ItemController.PositionUpdateType SWAP = 3;
+	public const ItemController.PositionUpdateType PANEL_ANIMATION = 4;
+	public const ItemController.PositionUpdateType REVERT_MOVE = 5;
+	public const ItemController.PositionUpdateType MERGE = 6;
+}
+

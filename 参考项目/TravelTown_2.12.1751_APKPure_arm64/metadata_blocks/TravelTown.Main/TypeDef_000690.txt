@@ -1,0 +1,48 @@
+// Namespace: MergeEngine.ECS.Systems
+public enum SystemPriorities // TypeDefIndex: 690
+{
+	// Fields
+	public int value__; // 0x0
+	public const SystemPriorities InteractionTrackingSystem = 0;
+	public const SystemPriorities Hints = 1;
+	public const SystemPriorities Scheduling = 2;
+	public const SystemPriorities EntityKiller = 3;
+	public const SystemPriorities VisualState = 4;
+	public const SystemPriorities InviteFriend = 5;
+	public const SystemPriorities LiveOpsEvents = 6;
+	public const SystemPriorities RemoteLiveOpsEvents = 7;
+	public const SystemPriorities InteractionCostSystem = 8;
+	public const SystemPriorities BoosterTrigger = 9;
+	public const SystemPriorities TimeLimitedPostActivation = 10;
+	public const SystemPriorities Expendable = 11;
+	public const SystemPriorities Collect = 12;
+	public const SystemPriorities Producer = 13;
+	public const SystemPriorities Spawner = 14;
+	public const SystemPriorities ToolSpawning = 15;
+	public const SystemPriorities Chargable = 16;
+	public const SystemPriorities TimeLimitedActivation = 17;
+	public const SystemPriorities TimeCycle = 18;
+	public const SystemPriorities ShopOffer = 19;
+	public const SystemPriorities Popup = 20;
+	public const SystemPriorities Cards = 21;
+	public const SystemPriorities Advertisement = 22;
+	public const SystemPriorities BoardIdleHintSystem = 23;
+	public const SystemPriorities TimeLock = 24;
+	public const SystemPriorities SpecialChainOrders = 25;
+	public const SystemPriorities BoardOrderObjectiveHints = 26;
+	public const SystemPriorities Orders = 27;
+	public const SystemPriorities OrderGenerator = 28;
+	public const SystemPriorities Tasks = 29;
+	public const SystemPriorities ResourceReplenishment = 30;
+	public const SystemPriorities Stats = 31;
+	public const SystemPriorities PeriodicSerializer = 32;
+	public const SystemPriorities Tips = 33;
+	public const SystemPriorities AutoPlay = 34;
+	public const SystemPriorities Tutorial = 35;
+	public const SystemPriorities BubbledItems = 36;
+	public const SystemPriorities RotatingShop = 37;
+	public const SystemPriorities ProgressUpdate = 38;
+	public const SystemPriorities TimeDuration = 39;
+	public const SystemPriorities Time = 40;
+}
+

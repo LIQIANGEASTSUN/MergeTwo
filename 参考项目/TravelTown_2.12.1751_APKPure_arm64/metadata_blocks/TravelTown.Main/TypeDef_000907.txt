@@ -1,0 +1,165 @@
+// Namespace: MergeEngine.ECS.Systems.Board
+public class BoardQueueSystem : SystemBase // TypeDefIndex: 907
+{
+	// Fields
+	private const string UseFlyingRewardsAnimationForDequeueKey = "UseFlyingRewardsAnimationForDequeue";
+	private const string ItemToOrderRelationEnabledKey = "ItemToOrderRelationEnabled";
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x40
+	[Inject]
+	private IBoosterModel _boosterModel; // 0x48
+	[Inject]
+	private INotificationDataFactory _notificationDataFactory; // 0x50
+	[Inject]
+	private ISurpriseBoosterAnimationConfigurationModel _boosterAnimationConfigurationModel; // 0x58
+	[Inject]
+	private ITimeTwisterAnimationConfigurationModel _timeTwisterAnimationConfigurationModel; // 0x60
+	[InjectSystem]
+	private OperationTrackingSystem _operationTrackingSystem; // 0x68
+	[InjectSystem]
+	private BoardSystem _boardSystem; // 0x70
+	[Inject]
+	private IBoosterService _boosterService; // 0x78
+	[InjectComponent]
+	private BoardQueueComponent _boardQueueComponent; // 0x80
+	[InjectSystem]
+	private CardsSystem _cardsSystem; // 0x88
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0x90
+	[Inject]
+	private IConnectionCheckService _connectionCheckService; // 0x98
+	[Inject]
+	private IServerTimeService _serverTimeService; // 0xA0
+	[Inject]
+	private IMetricsService _metricsService; // 0xA8
+	[Inject]
+	private IItemsEntityService _itemsEntityService; // 0xB0
+	[InjectSystem]
+	private BoosterBoardSystem _boosterBoardSystem; // 0xB8
+	[Inject]
+	private IBoosterPromisesModel _boosterPromisesModel; // 0xC0
+	[Inject]
+	private IBoosterActivator _boosterActivator; // 0xC8
+	[Inject]
+	private IOperationTrackingService _operationTrackingService; // 0xD0
+	[Inject]
+	private IUserProfileService _userProfileService; // 0xD8
+	[Inject]
+	private IBoardQueueExclusionModel _boardQueueExclusionModel; // 0xE0
+	private ConnectionServiceStatus _prevConnectionStatus; // 0xE8
+	[CompilerGenerated]
+	private Action ItemAddedToBoard; // 0xF0
+
+	// Properties
+	public bool IsAnimatingEnqueueFinished { get; }
+	private IBoardView BoardView { get; }
+	public int NumItemsInQueue { get; }
+
+	// Methods
+
+	// RVA: 0x66623F8 Offset: 0x665E3F8 VA: 0x66623F8
+	public bool get_IsAnimatingEnqueueFinished() { }
+
+	[CompilerGenerated]
+	// RVA: 0x66580E8 Offset: 0x66540E8 VA: 0x66580E8
+	public void add_ItemAddedToBoard(Action value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6658B1C Offset: 0x6654B1C VA: 0x6658B1C
+	public void remove_ItemAddedToBoard(Action value) { }
+
+	// RVA: 0x66624CC Offset: 0x665E4CC VA: 0x66624CC
+	private IBoardView get_BoardView() { }
+
+	// RVA: 0x66624F0 Offset: 0x665E4F0 VA: 0x66624F0
+	public int get_NumItemsInQueue() { }
+
+	// RVA: 0x666250C Offset: 0x665E50C VA: 0x666250C Slot: 6
+	protected override void InitializeSystem() { }
+
+	// RVA: 0x6662AFC Offset: 0x665EAFC VA: 0x6662AFC
+	private void EnqueueItem(EnqueueItemSignal signal) { }
+
+	// RVA: 0x6662FF8 Offset: 0x665EFF8 VA: 0x6662FF8
+	private void EnqueueBoosterItem(EnqueueBoosterItemSignal signal) { }
+
+	// RVA: 0x666367C Offset: 0x665F67C VA: 0x666367C
+	private void EnqueueUndoSellItem(EnqueueUndoSellItemSignal signal) { }
+
+	// RVA: 0x66637B4 Offset: 0x665F7B4 VA: 0x66637B4
+	private void DequeueItem(DequeueItemSignal signal) { }
+
+	// RVA: 0x6663B38 Offset: 0x665FB38 VA: 0x6663B38
+	private void DequeueCurrentItem() { }
+
+	// RVA: 0x66639E4 Offset: 0x665F9E4 VA: 0x66639E4
+	private bool TryDequeueItem(Vector2 queuePositionInRoot, Vector2 worldPosition) { }
+
+	// RVA: 0x6663C0C Offset: 0x665FC0C VA: 0x6663C0C
+	public bool TryDequeueItem(QueuedItem queuedItem, Vector2 positionInRoot, bool showBoardFullText, out BoardItemPosition boardItemPosition, string targetOrderId, bool useFlyingRewardsAnimation = False, ResourceSource source = 0, bool withoutSlide = False) { }
+
+	// RVA: 0x66644F4 Offset: 0x66604F4 VA: 0x66644F4
+	public bool TryDequeueRewardItem(IRewardViewData rewardViewData, Vector2 worldPosition, out BoardItemPosition dequeuedItemPosition, ResourceSource source) { }
+
+	// RVA: 0x6663DE8 Offset: 0x665FDE8 VA: 0x6663DE8
+	private Entity CreateItemOnBoard(IMergeItem mergeItem, Vector2 queuePositionInRoot, QueuedItem queuedItem, IBoosterItem booster, string boosterUuid, string reasonStr, string targetOrderId, bool useFlyingRewardsAnimation = False, ResourceSource source = 0, bool withoutSlide = False) { }
+
+	// RVA: 0x6663838 Offset: 0x665F838 VA: 0x6663838
+	private bool TryDequeueBooster(Vector2 queuePositionInRoot) { }
+
+	// RVA: 0x6664FF4 Offset: 0x6660FF4 VA: 0x6664FF4
+	private bool TryActivateBoosterWithMergeItem(Vector2 queuePositionInRoot, IBoosterItem booster, string boosterUuId, QueuedItem queuedItem) { }
+
+	// RVA: 0x666498C Offset: 0x666098C VA: 0x666498C
+	private Entity GetQueuedItemEntity(BoardItemPosition position, IMergeItem mergeItem, QueuedItem queuedItem) { }
+
+	// RVA: 0x6664E18 Offset: 0x6660E18 VA: 0x6664E18
+	private void SlideItemFromQueue(Vector2 position, BoardItemPosition boardPosition, bool useFlyingRewardsAnimation = False, ResourceSource source = 0) { }
+
+	// RVA: 0x6664B04 Offset: 0x6660B04 VA: 0x6664B04
+	private void SlideBoosterFromQueue(Vector2 queuePositionInRoot, BoardItemPosition position, BoosterType boosterType) { }
+
+	// RVA: 0x6665CE4 Offset: 0x6661CE4 VA: 0x6665CE4
+	private void OnCheatEnqueueItem(CheatEnqueueItemSignal signal) { }
+
+	// RVA: 0x6665E20 Offset: 0x6661E20 VA: 0x6665E20
+	private void TriggerEnqueuedItemAnimation(EnqueueItemAnimationSignal signal) { }
+
+	// RVA: 0x6662CD0 Offset: 0x665ECD0 VA: 0x6662CD0
+	private QueuedItem EnqueueItemInBoardQueueComponent(BoardItemPosition sourcePosition, IMergeItem mergeItem, Entity entity, BoardQueueOrder boardQueueOrder, ResourceSource source, bool slideBoardItemToQueue) { }
+
+	// RVA: 0x6663350 Offset: 0x665F350 VA: 0x6663350
+	private QueuedItem EnqueueBoosterItemInBoardQueueComponent(BoardItemPosition sourcePosition, IMergeItem mergeItem, Entity entity, BoardQueueOrder boardQueueOrder, ResourceSource source, bool slideBoardItemToQueue, string boosterUuid) { }
+
+	// RVA: 0x6664320 Offset: 0x6660320 VA: 0x6664320
+	private void TrackItemDequeueOperation(IMergeItem dequeuedItem, Entity dequeuedEntity, string dequeuedItemUUIDInQueue, IMergeItem createdItem, Entity createdEntity) { }
+
+	// RVA: 0x66658BC Offset: 0x66618BC VA: 0x66658BC
+	public void TrackBoosterDequeueOperation(IBoosterItem dequeuedBooster, string dequeuedBoosterUUIDInQueue, IMergeItem createdItem, Entity createdEntity, string boosterUuid) { }
+
+	// RVA: 0x66660D8 Offset: 0x66620D8 VA: 0x66660D8
+	private void OnFlyAnimationFinished(RewardFlyAnimationFinishedSignal signal) { }
+
+	// RVA: 0x6666258 Offset: 0x6662258 VA: 0x6666258
+	private void OnBoardSwitched() { }
+
+	// RVA: 0x66662FC Offset: 0x66622FC VA: 0x66662FC
+	private void OnGameStateChanged(GameState state) { }
+
+	// RVA: 0x66663A0 Offset: 0x66623A0 VA: 0x66663A0 Slot: 7
+	protected override void DisposeSystem() { }
+
+	// RVA: 0x666692C Offset: 0x666292C VA: 0x666692C
+	public bool HasItemWithUniqueId(string itemUniqueId) { }
+
+	// RVA: 0x6666A04 Offset: 0x6662A04 VA: 0x6666A04
+	private void OnConnectionChanged(ConnectionServiceStatus status) { }
+
+	// RVA: 0x6666A88 Offset: 0x6662A88 VA: 0x6666A88
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6666A90 Offset: 0x6662A90 VA: 0x6666A90
+	private void <TrackBoosterDequeueOperation>b__53_1() { }
+}
+

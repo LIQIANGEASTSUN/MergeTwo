@@ -1,0 +1,420 @@
+Type: Code.GameLogic.GameEvents.DigEventItemInfo
+
+Method: Code.GameLogic.GameEvents.DigEventItemId get_ItemId()
+
+Disassembly:
+	0x0381AF9C B 0x381ADD0
+	0x0381AFA0 MOV X19, X31
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_ItemId(Code.GameLogic.GameEvents.DigEventItemId value)
+
+Disassembly:
+	0x0381AFA4 ADD X8, X31, 0x18
+	0x0381AFA8 LDR X20, [X8]
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.String get_AssetId()
+
+Disassembly:
+	0x0381AFAC CBZ X20, 0x381B010
+	0x0381AFB0 LDR X8, [X20]
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_AssetId(System.String value)
+
+Disassembly:
+	0x0381AFB4 ADRP X10, 0x1EB3000
+	0x0381AFB8 LDRH W9, [X8 + 0x12E]
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Boolean get_GoesMuseum()
+
+Disassembly:
+	0x0381AFBC LDR X10, [X10 + 0x230]
+	0x0381AFC0 LDR X1, [X10]
+
+ISIL:
+	001 Move W0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_GoesMuseum(System.Boolean value)
+
+Disassembly:
+	0x0381AFC4 CBZ X9, 0x381AFE8
+	0x0381AFC8 LDR X10, [X8 + 0xB0]
+
+ISIL:
+	001 Move [X0+32], W1
+	002 Return 
+
+Method: System.Int32 get_MuseumItemWidth()
+
+Disassembly:
+	0x0381AFCC ADD X10, X10, 0x8
+	0x0381AFD0 LDUR X11, [X10 - 0x8]
+
+ISIL:
+	001 Move W0, [X0+36]
+	002 Return X0
+
+Method: System.Void set_MuseumItemWidth(System.Int32 value)
+
+Disassembly:
+	0x0381AFD4 CMP X11, X1
+	0x0381AFD8 B.EQ 0x381AFF8
+
+ISIL:
+	001 Move [X0+36], W1
+	002 Return 
+
+Method: System.Int32 get_MuseumItemHeight()
+
+Disassembly:
+	0x0381AFDC SUBS X9, X9, 0x1
+	0x0381AFE0 ADD X10, X10, 0x10
+
+ISIL:
+	001 Move W0, [X0+40]
+	002 Return X0
+
+Method: System.Void set_MuseumItemHeight(System.Int32 value)
+
+Disassembly:
+	0x0381AFE4 B.NE 0x381AFD0
+	0x0381AFE8 MOV X0, X20
+
+ISIL:
+	001 Move [X0+40], W1
+	002 Return 
+
+Method: System.Boolean get_CanBeShiny()
+
+Disassembly:
+	0x0381AFEC MOV W2, W31
+	0x0381AFF0 BL 0x23D527C
+
+ISIL:
+	001 Move W0, [X0+44]
+	002 Return X0
+
+Method: System.Void set_CanBeShiny(System.Boolean value)
+
+Disassembly:
+	0x0381AFF4 B 0x381B004
+	0x0381AFF8 LDRSW X9, [X10]
+
+ISIL:
+	001 Move [X0+44], W1
+	002 Return 
+
+Method: Code.GameLogic.GameEvents.DigEventItemId get_ShinyReplaces()
+
+Disassembly:
+	0x0381AFFC ADD X8, X8, X9, 0x4, LSL
+	0x0381B000 ADD X0, X8, 0x138
+
+ISIL:
+	001 Move X0, [X0+48]
+	002 Return X0
+
+Method: System.Void set_ShinyReplaces(Code.GameLogic.GameEvents.DigEventItemId value)
+
+Disassembly:
+	0x0381B004 LDP X8, X1, [X0]
+	0x0381B008 MOV X0, X20
+
+ISIL:
+	001 Move [X0+48], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Collections.Generic.List`1<System.ValueTuple`2<System.Int32, System.Int32>> get_Coordinates()
+
+Disassembly:
+	0x0381B00C BLR X8
+	0x0381B010 CBNZ X19, 0x381B048
+
+ISIL:
+	001 Move X0, [X0+56]
+	002 Return X0
+
+Method: System.Void set_Coordinates(System.Collections.Generic.List`1<System.ValueTuple`2<System.Int32, System.Int32>> value)
+
+Disassembly:
+	0x0381B014 LDP X20, X19, [X31 + 0x70]
+	0x0381B018 LDP X22, X21, [X31 + 0x60]
+
+ISIL:
+	001 Move [X0+56], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Int32 get_Weight()
+
+Disassembly:
+	0x0381B01C LDP X24, X23, [X31 + 0x50]
+	0x0381B020 LDP X26, X25, [X31 + 0x40]
+
+ISIL:
+	001 Move W0, [X0+64]
+	002 Return X0
+
+Method: System.Void set_Weight(System.Int32 value)
+
+Disassembly:
+	0x0381B024 LDP X28, X27, [X31 + 0x30]
+	0x0381B028 LDP X29, X30, [X31 + 0x20]
+
+ISIL:
+	001 Move [X0+64], W1
+	002 Return 
+
+Method: Code.GameLogic.GameEvents.MuseumItemRotation get_MuseumItemRotation()
+
+Disassembly:
+	0x0381B02C ADD X31, X31, 0x80
+	0x0381B030 RET
+
+ISIL:
+	001 Move W0, [X0+68]
+	002 Return X0
+
+Method: System.Void set_MuseumItemRotation(Code.GameLogic.GameEvents.MuseumItemRotation value)
+
+Disassembly:
+	0x0381B034 BL 0x239BB90
+	0x0381B038 BL 0x239BB90
+
+ISIL:
+	001 Move [X0+68], W1
+	002 Return 
+
+Method: System.Int32 get_ExperimentPriority()
+
+Disassembly:
+	0x0381B03C BL 0x239BB90
+	0x0381B040 BL 0x239BB90
+
+ISIL:
+	001 Move W0, [X0+72]
+	002 Return X0
+
+Method: System.Void set_ExperimentPriority(System.Int32 value)
+
+Disassembly:
+	0x0381B044 BL 0x239BB90
+	0x0381B048 MOV X0, X19
+
+ISIL:
+	001 Move [X0+72], W1
+	002 Return 
+
+Method: System.String get_ResolvedShinyAssetId()
+
+Disassembly:
+	0x0381B04C BL 0x239BB88
+	0x0381B050 B 0x381B074
+	0x0381B054 B 0x381B074
+	0x0381B058 B 0x381B074
+	0x0381B05C B 0x381B074
+	0x0381B060 B 0x381B074
+	0x0381B064 B 0x381B074
+	0x0381B068 B 0x381B074
+	0x0381B06C B 0x381B074
+	0x0381B070 B 0x381B074
+	0x0381B074 MOV X19, X0
+	0x0381B078 CMP W1, 0x1
+	0x0381B07C B.NE 0x381B0A0
+	0x0381B080 MOV X0, X19
+	0x0381B084 BL 0x53E9080
+	0x0381B088 LDR X19, [X0]
+	0x0381B08C STR X19, [X31 + 0x8]
+	0x0381B090 BL 0x53E9090
+	0x0381B094 LDR X8, [X31 + 0x10]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move X19, X0
+	006 Move W8, [0x2513FEF]
+	007 Move X20, [0x1EFC1F8]
+	008 Move TEMP, X8
+	009 And TEMP, TEMP, 1
+	010 Compare TEMP, 1
+	011 JumpIfEqual {16}
+	012 Move X0, [0x1EFC1F8]
+	013 Call 0x239F8E4
+	014 Move W8, 1
+	015 Move [X21+4079], W8
+	016 Move X0, [X19+24]
+	017 Move X1, [X20]
+	018 Move X2, X31
+	019 Move X20, [X31+16]
+	020 Move X19, [X31+24]
+	021 Move X30, [X31+32]
+	022 Move X21, [X31+40]
+	023 Call String.Concat, X0, X1
+	024 Return X0
+
+Method: Code.GameLogic.GameEvents.DigEventItemId get_ConfigKey()
+
+Disassembly:
+	0x03816B3C RET
+	0x03816B40 STR X1, [X0 + 0x68]!
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0381B098 B 0x381AFA8
+	0x0381B09C MOV X19, X0
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(Code.GameLogic.GameEvents.DigEventItemId configKey, System.String assetId, System.Boolean goesMuseum, System.Int32 museumItemWidth, System.Int32 museumItemHeight, System.Boolean canBeShiny, Code.GameLogic.GameEvents.DigEventItemId shinyReplaces, System.Collections.Generic.List`1<System.ValueTuple`2<System.Int32, System.Int32>> coordinates, System.Int32 weight, Code.GameLogic.GameEvents.MuseumItemRotation museumItemRotation, System.Int32 experimentPriority)
+
+Disassembly:
+	0x0381B0A0 ADD X0, X31, 0x8
+	0x0381B0A4 BL 0x21B979C
+	0x0381B0A8 MOV X0, X19
+	0x0381B0AC BL 0x248B7AC
+	0x0381B0B0 BL 0x21B9790
+	0x0381B0B4 CBZ X1, 0x381B0CC
+	0x0381B0B8 LDR X8, [X0 + 0x10]
+	0x0381B0BC LDRB W2, [X0 + 0x18]
+	0x0381B0C0 MOV X0, X1
+	0x0381B0C4 MOV X1, X8
+	0x0381B0C8 B 0x3819748
+	0x0381B0CC STR X30, [X31 - 0x10]!
+	0x0381B0D0 BL 0x239BB90
+	0x0381B0D4 STP X30, X21, [X31 - 0x20]!
+	0x0381B0D8 STP X20, X19, [X31 + 0x10]
+	0x0381B0DC ADRP X21, 0x2510000
+	0x0381B0E0 ADRP X20, 0x1F1B000
+	0x0381B0E4 MOV X19, X0
+	0x0381B0E8 LDRB W8, [X21 + 0x14]
+	0x0381B0EC LDR X20, [X20 + 0xAA0]
+	0x0381B0F0 TBNZ X8, 0x0, 0x381B114
+	0x0381B0F4 ADRP X0, 0x1F22000
+	0x0381B0F8 LDR X0, [X0 + 0x2E8]
+	0x0381B0FC BL 0x239B8E4
+	0x0381B100 ADRP X0, 0x1F1B000
+	0x0381B104 LDR X0, [X0 + 0xAA0]
+	0x0381B108 BL 0x239B8E4
+	0x0381B10C MOVZ W8, 0x1
+	0x0381B110 STRB W8, [X21 + 0x14]
+	0x0381B114 LDR X0, [X20]
+	0x0381B118 ADRP X20, 0x1F22000
+	0x0381B11C LDR W8, [X0 + 0xE4]
+	0x0381B120 LDR X20, [X20 + 0x2E8]
+	0x0381B124 CBNZ W8, 0x381B12C
+	0x0381B128 BL 0x239BA64
+	0x0381B12C LDR X1, [X20]
+	0x0381B130 MOV X0, X19
+	0x0381B134 LDP X20, X19, [X31 + 0x10]
+	0x0381B138 LDP X30, X21, [X31], #0x20
+	0x0381B13C B 0x27FEBF0
+	0x0381B140 LDR X0, [X0 + 0x10]
+	0x0381B144 RET
+	0x0381B148 STR X1, [X0 + 0x10]!
+	0x0381B14C B 0x239B888
+	0x0381B150 LDR W0, [X0 + 0x18]
+	0x0381B154 RET
+	0x0381B158 STR W1, [X0 + 0x18]
+	0x0381B15C RET
+	0x0381B160 LDR X0, [X0 + 0x20]
+	0x0381B164 RET
+	0x0381B168 STR X1, [X0 + 0x20]!
+	0x0381B16C B 0x239B888
+
+ISIL:
+	001 Subtract X31, X31, 112
+	002 Move [X31+16], X29
+	003 Move [X31+24], X30
+	004 Move [X31+32], X28
+	005 Move [X31+40], X27
+	006 Move [X31+48], X26
+	007 Move [X31+56], X25
+	008 Move [X31+64], X24
+	009 Move [X31+72], X23
+	010 Move [X31+80], X22
+	011 Move [X31+88], X21
+	012 Move [X31+96], X20
+	013 Move [X31+104], X19
+	014 Move W8, [X31+136]
+	015 Move X25, X1
+	016 Move W29, [X31+128]
+	017 Move W28, [X31+120]
+	018 Move X26, [X31+112]
+	019 Move X1, X31
+	020 Move X19, X7
+	021 Move W20, W6
+	022 Move W21, W5
+	023 Move W22, W4
+	024 Move W23, W3
+	025 Move X24, X2
+	026 Move [X31+12], W8
+	027 Move X27, X0
+	028 Call Object..ctor, X0
+	029 Move X0, X27
+	030 Move X1, X25
+	031 Move [X0+16], X25
+	032 Call 0x239F888
+	033 Move X0, X27
+	034 Move X1, X24
+	035 Move [X0+24], X24
+	036 Call 0x239F888
+	037 Move X0, X27
+	038 Move X1, X19
+	039 Move [X27+32], W23
+	040 Move [X27+36], W22
+	041 Move [X27+40], W21
+	042 Move [X27+44], W20
+	043 Move [X0+48], X19
+	044 Call 0x239F888
+	045 Move [X27+56], X26
+	046 Move X0, X27
+	047 Move X1, X26
+	048 Call 0x239F888
+	049 Move W8, [X31+12]
+	050 Move [X27+8], W28
+	051 Move [X27+12], W29
+	052 Move X20, [X31+96]
+	053 Move X19, [X31+104]
+	054 Move [X27+16], W8
+	055 Move X22, [X31+80]
+	056 Move X21, [X31+88]
+	057 Move X24, [X31+64]
+	058 Move X23, [X31+72]
+	059 Move X26, [X31+48]
+	060 Move X25, [X31+56]
+	061 Move X28, [X31+32]
+	062 Move X27, [X31+40]
+	063 Move X29, [X31+16]
+	064 Move X30, [X31+24]
+	065 Add X31, X31, 112
+	066 Return 
+

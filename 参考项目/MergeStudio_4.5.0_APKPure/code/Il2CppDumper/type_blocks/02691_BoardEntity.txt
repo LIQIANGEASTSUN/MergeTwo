@@ -1,0 +1,203 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class BoardEntity // TypeDefIndex: 2691
+{
+	// Fields
+	public List<BoardPositionEntity> Positions; // 0x8
+	public MetaEntity Meta; // 0xC
+	public UserEntity User; // 0x10
+	public SettingsEntity Settings; // 0x14
+	public InventoryEntity Inventory; // 0x18
+	public BoardTaskEntity BoardTask; // 0x1C
+	public SrEntity SrEntity; // 0x20
+	public bool IsInitialized; // 0x24
+	public bool SellUnlocked; // 0x25
+	public List<ItemInfo> SeenItemList; // 0x28
+	public List<ItemInfo> SeenElseWhereItemList; // 0x2C
+	public List<ItemInfo> RewardClaimableItemList; // 0x30
+	public List<int> OpenedCloudLevels; // 0x34
+	[JsonProperty]
+	[SerializeField]
+	private List<int> CompletedTutorialSteps; // 0x38
+	[CanBeNull]
+	public List<int> TutorialStepsToExclude; // 0x3C
+	public bool HasWaitingRateUsPopup; // 0x40
+	public int ReviewRequestCount; // 0x44
+	public int LastReviewShownTaskNo; // 0x48
+	public int ReviewPrePopupShownCount; // 0x4C
+	public int ReviewPrePopupAnswer; // 0x50
+	public SessionSummary SessionSummary; // 0x54
+	public FeatureEntity FeatureEntity; // 0x58
+	public CouponEntity CouponEntity; // 0x5C
+	public string Platform; // 0x60
+	public string InstallVersion; // 0x64
+	public long InstallDate; // 0x68
+	public List<EventEntity> BoardEventEntities; // 0x70
+	public AppsflyerEntity AppsflyerEntity; // 0x74
+	public string LastBoardTaskXPConfig; // 0x78
+	public int LastLegacyLevelXPRange; // 0x7C
+	public int LastLegacyLevelXPRangeLevel; // 0x80
+	public PopupOffersEntity PopupOffersEntity; // 0x84
+	public int LevelGemGet; // 0x88
+	public int LevelGemSpend; // 0x8C
+	public int LevelCoinGet; // 0x90
+	public int LevelCoinSpend; // 0x94
+	public string LastSaveTimestamp; // 0x98
+	public bool IsNewUIPopupShown440; // 0x9C
+
+	// Methods
+
+	// RVA: 0x1A5488C Offset: 0x1A5488C VA: 0x1A5488C
+	public void .ctor() { }
+
+	// RVA: 0x1A54A0C Offset: 0x1A54A0C VA: 0x1A54A0C
+	public void ResetLevelGainAndSpends() { }
+
+	// RVA: 0x1A54A24 Offset: 0x1A54A24 VA: 0x1A54A24
+	public ref List<int> GetExcludedTutorialSteps() { }
+
+	// RVA: 0x1A54AC0 Offset: 0x1A54AC0 VA: 0x1A54AC0
+	public bool SetLastBoardTaskXPConfig(BalanceBoardTaskConfigModel config) { }
+
+	// RVA: 0x1A54E48 Offset: 0x1A54E48 VA: 0x1A54E48
+	public HashSet<int> ClearNonSpecialActiveTasksDangerousOperation() { }
+
+	// RVA: 0x1A555BC Offset: 0x1A555BC VA: 0x1A555BC
+	public SrEntity GetSrEntity() { }
+
+	// RVA: 0x1A55660 Offset: 0x1A55660 VA: 0x1A55660
+	public SeasonPassItemEntity GetSeasonItemEntityByID(int id) { }
+
+	// RVA: 0x1A55784 Offset: 0x1A55784 VA: 0x1A55784
+	public void ResetSessionSummary() { }
+
+	// RVA: 0x1A5596C Offset: 0x1A5596C VA: 0x1A5596C
+	public void UpdateSessionAdLoadAnalyticsData(bool isInterstitial, bool isSuccess) { }
+
+	// RVA: 0x1A55A40 Offset: 0x1A55A40 VA: 0x1A55A40
+	public void UpdateSessionAdShowAnalyticsData(bool isInterstitial, bool isReady) { }
+
+	// RVA: 0x1A55C90 Offset: 0x1A55C90 VA: 0x1A55C90
+	public void UpdateSessionSummary(bool merge, bool spawn, bool remove, bool undo, bool inventory, BoardType boardType, int energyConsume) { }
+
+	// RVA: 0x1A55E94 Offset: 0x1A55E94 VA: 0x1A55E94
+	public SessionSummary GetSessionSummary() { }
+
+	// RVA: 0x1A55EC4 Offset: 0x1A55EC4 VA: 0x1A55EC4
+	public void .ctor(BoardData boardData) { }
+
+	// RVA: 0x1A56B1C Offset: 0x1A56B1C VA: 0x1A56B1C
+	public string GetNewShopSuffix() { }
+
+	// RVA: 0x1A56C5C Offset: 0x1A56C5C VA: 0x1A56C5C
+	public ShopEntity GetShopEntity() { }
+
+	// RVA: 0x1A56D20 Offset: 0x1A56D20 VA: 0x1A56D20
+	public int[] AddRewardsToEntity(EndlessTreasureOfferData offerData, string trigger = "") { }
+
+	// RVA: 0x1A5879C Offset: 0x1A5879C VA: 0x1A5879C
+	public void AddUnlimitedEnergyDuration(long addedDuration) { }
+
+	// RVA: 0x1A58A2C Offset: 0x1A58A2C VA: 0x1A58A2C
+	public bool ChangeBoardEntity(BoardEntity remoteBoardEntity) { }
+
+	// RVA: 0x1A58BC8 Offset: 0x1A58BC8 VA: 0x1A58BC8
+	public void CheckBoosterEntityCounts() { }
+
+	// RVA: 0x1A58D60 Offset: 0x1A58D60 VA: 0x1A58D60
+	public void IncreaseReviewRequestCount(int reviewLastTaskDone) { }
+
+	// RVA: 0x1A58E74 Offset: 0x1A58E74 VA: 0x1A58E74
+	public int GetActiveBoardItemCount(int level, int setID) { }
+
+	// RVA: 0x1A59130 Offset: 0x1A59130 VA: 0x1A59130
+	public int GetTotalItemCount(int level, int setID) { }
+
+	// RVA: 0x1A596E4 Offset: 0x1A596E4 VA: 0x1A596E4
+	public List<BoardPositionEntity> GetActiveBoardPositions(ItemInfo itemInfo) { }
+
+	// RVA: 0x1A599E4 Offset: 0x1A599E4 VA: 0x1A599E4
+	public bool IsEmptyCell(BoardPositionEntity pos) { }
+
+	// RVA: 0x1A59A44 Offset: 0x1A59A44 VA: 0x1A59A44
+	public bool IsItemNull(ItemEntity item) { }
+
+	// RVA: 0x1A59A6C Offset: 0x1A59A6C VA: 0x1A59A6C
+	public bool IsItemExist(ItemEntity itemEntity) { }
+
+	// RVA: 0x1A59C9C Offset: 0x1A59C9C VA: 0x1A59C9C
+	public bool IsBoardFull() { }
+
+	// RVA: 0x1A59E3C Offset: 0x1A59E3C VA: 0x1A59E3C
+	public List<BoardPositionEntity> GetMatchedPositionEntities(List<BoardTaskGoal> goals, bool useCurrentID) { }
+
+	// RVA: 0x1A5A2E8 Offset: 0x1A5A2E8 VA: 0x1A5A2E8
+	public List<BoardPositionEntity> GetMovableMatchedPositionEntities(int[] setIDs) { }
+
+	// RVA: 0x1A5A638 Offset: 0x1A5A638 VA: 0x1A5A638
+	public List<BoardPositionEntity> GetNonBoxedMatchedPositionEntities(int[] setIDs) { }
+
+	// RVA: 0x1A5A95C Offset: 0x1A5A95C VA: 0x1A5A95C
+	public void AddToCompletedTutorials(TutorialIndex tutorialIndex, bool saveBoard = False, bool excludeStep = False) { }
+
+	// RVA: 0x1A5A970 Offset: 0x1A5A970 VA: 0x1A5A970
+	public void AddToCompletedTutorials(int stepNo, bool saveBoard = False, bool excludeStep = False) { }
+
+	// RVA: 0x1A5AB70 Offset: 0x1A5AB70 VA: 0x1A5AB70
+	public bool RemoveFromCompletedTutorials(TutorialIndex tutorialIndex) { }
+
+	// RVA: 0x1A5AB74 Offset: 0x1A5AB74 VA: 0x1A5AB74
+	public bool RemoveFromCompletedTutorials(int stepNo) { }
+
+	// RVA: 0x1A5AC2C Offset: 0x1A5AC2C VA: 0x1A5AC2C
+	public bool IsTutorialStepCompleted(int stepNo) { }
+
+	// RVA: 0x1A5ACA4 Offset: 0x1A5ACA4 VA: 0x1A5ACA4
+	public bool IsTutorialStepCompleted(TutorialIndex tutorialIndex) { }
+
+	// RVA: 0x1A5ACA8 Offset: 0x1A5ACA8 VA: 0x1A5ACA8
+	public bool IsTutorialStepsCompleted(List<int> stepNo) { }
+
+	// RVA: 0x1A5AE50 Offset: 0x1A5AE50 VA: 0x1A5AE50
+	public bool IsTutorialStepsCompleted(TutorialIndex[] args) { }
+
+	// RVA: 0x1A5AEB4 Offset: 0x1A5AEB4 VA: 0x1A5AEB4
+	public bool IsTutorialStepsCompleted(List<TutorialIndex> args) { }
+
+	// RVA: 0x1A5B054 Offset: 0x1A5B054 VA: 0x1A5B054
+	public int GetMaxCompletedTutorialStep() { }
+
+	// RVA: 0x1A5B2A0 Offset: 0x1A5B2A0 VA: 0x1A5B2A0
+	public bool StartWithGameplay() { }
+
+	// RVA: 0x1A5B2B4 Offset: 0x1A5B2B4 VA: 0x1A5B2B4
+	public void Initialize(BoardTaskData boardTaskData, BoardData boardData, LevelData levelData) { }
+
+	// RVA: 0x1A5B308 Offset: 0x1A5B308 VA: 0x1A5B308
+	public void AddEventEntity(EventEntity eventEntity) { }
+
+	// RVA: 0x1A5B570 Offset: 0x1A5B570 VA: 0x1A5B570
+	public EventEntity GetEventEntity(int index) { }
+
+	// RVA: 0x1A5B6E0 Offset: 0x1A5B6E0 VA: 0x1A5B6E0
+	public void RemoveEventEntity(int index) { }
+
+	// RVA: 0x1A5B7F8 Offset: 0x1A5B7F8 VA: 0x1A5B7F8
+	public void RemoveFromGame(int setID) { }
+
+	// RVA: 0x1A5BA8C Offset: 0x1A5BA8C VA: 0x1A5BA8C
+	public int RemoveFromRewardsAndInventory(int setID) { }
+
+	// RVA: 0x1A5BDF4 Offset: 0x1A5BDF4 VA: 0x1A5BDF4
+	public string GetFillRateString() { }
+
+	// RVA: 0x1A5C19C Offset: 0x1A5C19C VA: 0x1A5C19C
+	public void SetNewUIPopupShown440() { }
+
+	// RVA: 0x1A5C1A8 Offset: 0x1A5C1A8 VA: 0x1A5C1A8
+	public bool GetNewUIPopupShown440() { }
+
+	// RVA: 0x1A5C1B0 Offset: 0x1A5C1B0 VA: 0x1A5C1B0
+	public bool IsValidToShownNewUIPopup440() { }
+}
+

@@ -1,0 +1,93 @@
+// Namespace: Merger.Boosters.Declarations.Models
+public interface IBoosterModel // TypeDefIndex: 7821
+{
+	// Properties
+	public abstract ReadOnlyCollection<IBoosterItem> Boosters { get; }
+	public abstract List<RemoteBoosterData> RemoteActiveBoosters { get; set; }
+	public abstract Dictionary<string, BoosterType> PendingQueueActivationBoosters { get; }
+	public abstract HashSet<string> DeactivatedBoosters { get; }
+	public abstract HashSet<string> LockedBoosters { get; }
+	public abstract List<RemoteBoosterData> RemoteActiveBoostersCached { get; set; }
+	public abstract bool ShouldForceProcessAllBoosters { get; set; }
+	public abstract List<BoosterSendToActivationData> BoosterSendToActivationDatas { get; }
+	public abstract bool IsSpecialChainCollectSequence { get; set; }
+	public abstract List<BoosterActivatedSignal> PendingActivationSignal { get; }
+	public abstract bool HasBlockToProcess { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract IBoosterItem GetBooster(string uniqueId);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract bool HasBoosterById(string itemId);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract IBoosterItem GetBoosterByMergeItemId(string itemId);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract ReadOnlyCollection<IBoosterItem> get_Boosters();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract List<RemoteBoosterData> get_RemoteActiveBoosters();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract void set_RemoteActiveBoosters(List<RemoteBoosterData> value);
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract Dictionary<string, BoosterType> get_PendingQueueActivationBoosters();
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract HashSet<string> get_DeactivatedBoosters();
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract HashSet<string> get_LockedBoosters();
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract List<RemoteBoosterData> get_RemoteActiveBoostersCached();
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public abstract void set_RemoteActiveBoostersCached(List<RemoteBoosterData> value);
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public abstract RemoteBoosterData GetRemoteActiveBoosterByUuid(string uuid);
+
+	// RVA: -1 Offset: -1 Slot: 12
+	public abstract bool IsBooster(ComponentBase component);
+
+	// RVA: -1 Offset: -1 Slot: 13
+	public abstract T GetBoosterProgress<T>(string uniqueId);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBoosterModel.GetBoosterProgress<object>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 14
+	public abstract bool HasAnyBoosterPendingForActivation(BoosterType activationBoosterType);
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public abstract void AddBoosterToPendingActivationList(string uuid, BoosterType boosterType);
+
+	// RVA: -1 Offset: -1 Slot: 16
+	public abstract bool get_ShouldForceProcessAllBoosters();
+
+	// RVA: -1 Offset: -1 Slot: 17
+	public abstract void set_ShouldForceProcessAllBoosters(bool value);
+
+	// RVA: -1 Offset: -1 Slot: 18
+	public abstract List<BoosterSendToActivationData> get_BoosterSendToActivationDatas();
+
+	// RVA: -1 Offset: -1 Slot: 19
+	public abstract bool get_IsSpecialChainCollectSequence();
+
+	// RVA: -1 Offset: -1 Slot: 20
+	public abstract void set_IsSpecialChainCollectSequence(bool value);
+
+	// RVA: -1 Offset: -1 Slot: 21
+	public abstract List<BoosterActivatedSignal> get_PendingActivationSignal();
+
+	// RVA: -1 Offset: -1 Slot: 22
+	public abstract bool get_HasBlockToProcess();
+}
+

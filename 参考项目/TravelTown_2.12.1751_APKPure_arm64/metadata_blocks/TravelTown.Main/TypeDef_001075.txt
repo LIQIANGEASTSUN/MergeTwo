@@ -1,0 +1,29 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public interface ITimeDurationComponent // TypeDefIndex: 1075
+{
+	// Properties
+	public abstract double Timeleft { get; set; }
+	public abstract bool Active { get; set; }
+	public abstract double Duration { get; set; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract double get_Timeleft();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void set_Timeleft(double value);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract bool get_Active();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void set_Active(bool value);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract double get_Duration();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract void set_Duration(double value);
+}
+

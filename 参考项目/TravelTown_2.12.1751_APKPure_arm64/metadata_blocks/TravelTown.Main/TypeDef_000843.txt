@@ -1,0 +1,115 @@
+// Namespace: MergeEngine.ECS.Systems.Player
+public class ResourcesSystem : SystemBase // TypeDefIndex: 843
+{
+	// Fields
+	[Inject]
+	private IResourcesConfigurationModel _resourcesConfigurationModel; // 0x40
+	private ResourcesComponent _resourcesComponent; // 0x48
+	private readonly Dictionary<string, int> _pendingReward; // 0x50
+	private readonly Dictionary<string, int> _localChanges; // 0x58
+
+	// Methods
+
+	// RVA: 0x65072A8 Offset: 0x65032A8 VA: 0x65072A8 Slot: 6
+	protected override void InitializeSystem() { }
+
+	// RVA: 0x64F1188 Offset: 0x64ED188 VA: 0x64F1188
+	public bool ConsumeResource(ResourceMultiple resourceMultiple, bool delayDisplay, ResourceSource source, Dictionary<string, object> analyticParameters, bool shouldChangeRealValue = False) { }
+
+	// RVA: 0x6507ADC Offset: 0x6503ADC VA: 0x6507ADC
+	public bool ConsumeResource(PlayerResourceEnum resourceType, int amount, bool delayDisplay, ResourceSource source, Nullable<ResourcePurchaseType> purchaseType, Dictionary<string, object> analyticParameters, bool shouldChangeRealValue = False) { }
+
+	// RVA: 0x6507B94 Offset: 0x6503B94 VA: 0x6507B94
+	public bool ConsumeResource(IRewardType rewardType, int amount, bool delayDisplay, ResourceSource source, Nullable<ResourcePurchaseType> purchaseType, Dictionary<string, object> analyticParameters, bool shouldChangeRealValue = False) { }
+
+	// RVA: 0x6501008 Offset: 0x64FD008 VA: 0x6501008
+	public void AddPendingResource(string resourceType, int amount) { }
+
+	// RVA: 0x6508100 Offset: 0x6504100 VA: 0x6508100
+	private void RemovePendingResource(string resourceType, int amount) { }
+
+	// RVA: 0x65081D0 Offset: 0x65041D0 VA: 0x65081D0
+	public void GrantResourceLocal(IRewardType rewardType, int amount) { }
+
+	// RVA: 0x650830C Offset: 0x650430C VA: 0x650830C
+	public bool ConsumeResourceLocal(IRewardType rewardType, int amount) { }
+
+	// RVA: 0x6508480 Offset: 0x6504480 VA: 0x6508480
+	public void RemoveResourceLocalChanges(IRewardType rewardType) { }
+
+	// RVA: 0x65013A0 Offset: 0x64FD3A0 VA: 0x65013A0
+	public void GrantResource(IRewardType rewardType, int amount, bool delayDisplay, ResourceSource source, Dictionary<string, object> analyticParameters, bool shouldChangeRealValue = False, RewardSource rewardSource) { }
+
+	// RVA: 0x650858C Offset: 0x650458C VA: 0x650858C
+	public ResourceSource GetMostRecentGrantedResourceSource(string resource) { }
+
+	// RVA: 0x6507E54 Offset: 0x6503E54 VA: 0x6507E54
+	private DisplayableBindableProperty<int> GetResourceInternal(string resourceType) { }
+
+	// RVA: 0x650860C Offset: 0x650460C VA: 0x650860C
+	public bool HasResource(IRewardType rewardType) { }
+
+	// RVA: 0x64EB774 Offset: 0x64E7774 VA: 0x64EB774
+	public void SetResource(PlayerResourceEnum resourceType, int value, bool delayDisplay, ResourceSource source) { }
+
+	// RVA: 0x65086C4 Offset: 0x65046C4 VA: 0x65086C4
+	public void SetResource(IRewardType rewardType, int value, bool delayDisplay, ResourceSource source) { }
+
+	// RVA: 0x650883C Offset: 0x650483C VA: 0x650883C
+	private void SendEnergyDeltaAnalytics(DisplayableBindableProperty<int> currentValue, int newValue, string resourceType, ResourceSource resourceSource) { }
+
+	// RVA: 0x6507E70 Offset: 0x6503E70 VA: 0x6507E70
+	private void SetDisplayValue(IRewardType rewardType, DisplayableBindableProperty<int> resource, bool delayDisplay) { }
+
+	// RVA: 0x6508B0C Offset: 0x6504B0C VA: 0x6508B0C
+	private void SendDisplayedNegativeAnalyticIfNeeded(IRewardType rewardType, int resourceDisplayValue) { }
+
+	// RVA: 0x6503B00 Offset: 0x64FFB00 VA: 0x6503B00
+	public BindableProperty<int> GetDisplayableResource(PlayerResourceEnum resourceType) { }
+
+	// RVA: 0x6503558 Offset: 0x64FF558 VA: 0x6503558
+	public BindableProperty<int> GetResource(PlayerResourceEnum resourceType) { }
+
+	// RVA: 0x6508D4C Offset: 0x6504D4C VA: 0x6508D4C
+	public BindableProperty<int> GetDisplayableResource(string resourceType) { }
+
+	// RVA: 0x6505950 Offset: 0x6501950 VA: 0x6505950
+	public BindableProperty<int> GetResource(string resourceType) { }
+
+	// RVA: 0x6508DA8 Offset: 0x6504DA8 VA: 0x6508DA8
+	public void SubscribeToResourceChanged(string resourceType, Action<int, int> changedHandler) { }
+
+	// RVA: 0x6508E1C Offset: 0x6504E1C VA: 0x6508E1C
+	public void UnsubscribeFromResourceChanged(string resourceType, Action<int, int> changedHandler) { }
+
+	// RVA: 0x6501604 Offset: 0x64FD604 VA: 0x6501604
+	public void UpdatePendingResourceDisplayValue(IRewardType rewardType, int pendingAmount, bool isDelayed, ResourceSource source = 0, RewardSource reason, Dictionary<string, object> analyticParameters) { }
+
+	// RVA: 0x6508E90 Offset: 0x6504E90 VA: 0x6508E90
+	public void SetDisplayValue(string resourceType, int amountToDisplay) { }
+
+	// RVA: 0x64F1070 Offset: 0x64ED070 VA: 0x64F1070
+	public bool CanAfford(ResourceMultiple resourceMultiple) { }
+
+	// RVA: 0x6508F3C Offset: 0x6504F3C VA: 0x6508F3C
+	public bool CanAfford(string resource, int resourceAmount) { }
+
+	// RVA: 0x6508FB8 Offset: 0x6504FB8 VA: 0x6508FB8
+	public bool CanAfford(ResourceMultiple[] resourcesMultiple) { }
+
+	// RVA: 0x650906C Offset: 0x650506C VA: 0x650906C
+	public bool PurchaseResource(ResourcePurchaseBase<PlayerResourceEnum> resourcePurchase, ResourceSource resourceSource, ResourcePurchaseType purchaseType) { }
+
+	// RVA: 0x65091A0 Offset: 0x65051A0 VA: 0x65091A0
+	public int GetResourceSpendCount(string resource) { }
+
+	// RVA: 0x6509200 Offset: 0x6505200 VA: 0x6509200
+	public bool HasPendingReward(string resource) { }
+
+	// RVA: 0x6507A54 Offset: 0x6503A54 VA: 0x6507A54
+	private void RegisterResource(string resourceType) { }
+
+	// RVA: 0x650927C Offset: 0x650527C VA: 0x650927C
+	public void .ctor() { }
+}
+

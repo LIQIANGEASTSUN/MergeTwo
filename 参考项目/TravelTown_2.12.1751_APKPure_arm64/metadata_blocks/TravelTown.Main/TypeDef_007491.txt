@@ -1,0 +1,98 @@
+// Namespace: Merger.Bubbles.Buckets
+public class Bucket // TypeDefIndex: 7491
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly int <Start>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly int <End>k__BackingField; // 0x14
+	[CompilerGenerated]
+	private readonly int <MinDataAmount>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private readonly int <MaxDataAmount>k__BackingField; // 0x1C
+	[CompilerGenerated]
+	private readonly float <Addition>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private int <SpawnedBubbles>k__BackingField; // 0x24
+	[CompilerGenerated]
+	private int <BurstBubbles>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private bool <IsConversionCalculated>k__BackingField; // 0x2C
+	[CompilerGenerated]
+	private float <ConversionRatio>k__BackingField; // 0x30
+
+	// Properties
+	public int Start { get; }
+	public int End { get; }
+	public int MinDataAmount { get; }
+	public int MaxDataAmount { get; }
+	public float Addition { get; }
+	public int SpawnedBubbles { get; set; }
+	public int BurstBubbles { get; set; }
+	public bool IsConversionCalculated { get; set; }
+	public float ConversionRatio { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x658A578 Offset: 0x6586578 VA: 0x658A578
+	public int get_Start() { }
+
+	[CompilerGenerated]
+	// RVA: 0x658A580 Offset: 0x6586580 VA: 0x658A580
+	public int get_End() { }
+
+	[CompilerGenerated]
+	// RVA: 0x658A588 Offset: 0x6586588 VA: 0x658A588
+	public int get_MinDataAmount() { }
+
+	[CompilerGenerated]
+	// RVA: 0x658A590 Offset: 0x6586590 VA: 0x658A590
+	public int get_MaxDataAmount() { }
+
+	[CompilerGenerated]
+	// RVA: 0x658A598 Offset: 0x6586598 VA: 0x658A598
+	public float get_Addition() { }
+
+	[CompilerGenerated]
+	// RVA: 0x658A5A0 Offset: 0x65865A0 VA: 0x658A5A0
+	public int get_SpawnedBubbles() { }
+
+	[CompilerGenerated]
+	// RVA: 0x658A5A8 Offset: 0x65865A8 VA: 0x658A5A8
+	public void set_SpawnedBubbles(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x658A5B0 Offset: 0x65865B0 VA: 0x658A5B0
+	public int get_BurstBubbles() { }
+
+	[CompilerGenerated]
+	// RVA: 0x658A5B8 Offset: 0x65865B8 VA: 0x658A5B8
+	public void set_BurstBubbles(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x658A5C0 Offset: 0x65865C0 VA: 0x658A5C0
+	public bool get_IsConversionCalculated() { }
+
+	[CompilerGenerated]
+	// RVA: 0x658A5C8 Offset: 0x65865C8 VA: 0x658A5C8
+	public void set_IsConversionCalculated(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x658A5D4 Offset: 0x65865D4 VA: 0x658A5D4
+	public float get_ConversionRatio() { }
+
+	[CompilerGenerated]
+	// RVA: 0x658A5DC Offset: 0x65865DC VA: 0x658A5DC
+	private void set_ConversionRatio(float value) { }
+
+	// RVA: 0x657DE2C Offset: 0x6579E2C VA: 0x657DE2C
+	public void .ctor(int start, int end, float addition, int minDataAmount, int maxDataAmount) { }
+
+	// RVA: 0x657F8E4 Offset: 0x657B8E4 VA: 0x657F8E4
+	public void UpdateConversionRatio(float newRatio) { }
+
+	// RVA: 0x657FA4C Offset: 0x657BA4C VA: 0x657FA4C
+	public bool IsInBucket(int price) { }
+}
+

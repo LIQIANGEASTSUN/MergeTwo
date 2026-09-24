@@ -1,0 +1,53 @@
+// Namespace: 
+[Serializable]
+public class SummerWatermelonConfig : TableBase // TypeDefIndex: 997
+{
+	// Fields
+	[CompilerGenerated]
+	private int <Id>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private int <LineId>k__BackingField; // 0xC
+	[CompilerGenerated]
+	private List<int> <InitItems>k__BackingField; // 0x10
+
+	// Properties
+	public int Id { get; set; }
+	public int LineId { get; set; }
+	public List<int> InitItems { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x1D930B0 Offset: 0x1D930B0 VA: 0x1D930B0
+	public int get_Id() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1D930B8 Offset: 0x1D930B8 VA: 0x1D930B8
+	public void set_Id(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1D930C0 Offset: 0x1D930C0 VA: 0x1D930C0
+	public int get_LineId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1D930C8 Offset: 0x1D930C8 VA: 0x1D930C8
+	public void set_LineId(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1D930D0 Offset: 0x1D930D0 VA: 0x1D930D0
+	public List<int> get_InitItems() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1D930D8 Offset: 0x1D930D8 VA: 0x1D930D8
+	public void set_InitItems(List<int> value) { }
+
+	// RVA: 0x1D930E0 Offset: 0x1D930E0 VA: 0x1D930E0 Slot: 4
+	public override int GetID() { }
+
+	// RVA: 0x1D93134 Offset: 0x1D93134 VA: 0x1D93134
+	public void .ctor() { }
+
+	// RVA: 0x1D9313C Offset: 0x1D9313C VA: 0x1D9313C
+	public int <>iFixBaseProxy_GetID() { }
+}
+

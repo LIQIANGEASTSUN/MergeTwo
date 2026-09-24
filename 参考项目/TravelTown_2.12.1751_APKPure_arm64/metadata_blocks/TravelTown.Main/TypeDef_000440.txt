@@ -1,0 +1,36 @@
+// Namespace: MergeEngine.Model
+public class RandomNumberModel : IRandomNumberModel, IInitializable // TypeDefIndex: 440
+{
+	// Fields
+	private Random _random; // 0x10
+
+	// Properties
+	public Random Random { get; }
+
+	// Methods
+
+	// RVA: 0x6127470 Offset: 0x6123470 VA: 0x6127470 Slot: 4
+	public Random get_Random() { }
+
+	// RVA: 0x6127478 Offset: 0x6123478 VA: 0x6127478 Slot: 5
+	public int NextInt() { }
+
+	// RVA: 0x61274C0 Offset: 0x61234C0 VA: 0x61274C0 Slot: 6
+	public void SetSeed(int seed) { }
+
+	// RVA: 0x61274A0 Offset: 0x61234A0 VA: 0x61274A0 Slot: 7
+	public int Range(int min, int max) { }
+
+	// RVA: 0x6127530 Offset: 0x6123530 VA: 0x6127530 Slot: 8
+	public int Range(int max) { }
+
+	// RVA: 0x6127550 Offset: 0x6123550 VA: 0x6127550 Slot: 9
+	public double NextDouble() { }
+
+	// RVA: 0x6127570 Offset: 0x6123570 VA: 0x6127570 Slot: 10
+	private void Zenject.IInitializable.Initialize() { }
+
+	// RVA: 0x61275EC Offset: 0x61235EC VA: 0x61275EC
+	public void .ctor() { }
+}
+

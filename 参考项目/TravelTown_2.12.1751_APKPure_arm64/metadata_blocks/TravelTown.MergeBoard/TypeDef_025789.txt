@@ -1,0 +1,25 @@
+// Namespace: Merger.MergeBoard.Systems
+public class ToolSpawningSystem : ISystem // TypeDefIndex: 25789
+{
+	// Fields
+	[Inject]
+	private IMergeBoardLayout _layout; // 0x10
+	[Inject]
+	private IEntityFactory _entityFactory; // 0x18
+	[Inject]
+	private IToolSpawnHandler _toolSpawnHandler; // 0x20
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x28
+
+	// Methods
+
+	// RVA: 0x6A78FD0 Offset: 0x6A74FD0 VA: 0x6A78FD0 Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A79214 Offset: 0x6A75214 VA: 0x6A79214
+	private void SpawnTool(TickContext context, int emptyPosition, ValueTuple<Entity, BoardTilePositionComponent, ToolSpawningComponent, PendingInteractionComponent, InteractionComponent> selectedEntity) { }
+
+	// RVA: 0x6A79838 Offset: 0x6A75838 VA: 0x6A79838
+	public void .ctor() { }
+}
+

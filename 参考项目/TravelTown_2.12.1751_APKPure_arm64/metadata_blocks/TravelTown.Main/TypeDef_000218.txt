@@ -1,0 +1,34 @@
+// Namespace: MergeEngine.Signal.Items
+public class FailedToRemoveItemFromInventorySignal // TypeDefIndex: 218
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly int <SlotIndex>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly InventorySlotType <SlotType>k__BackingField; // 0x14
+	[CompilerGenerated]
+	private readonly FloatingTextType <FloatingTextType>k__BackingField; // 0x18
+
+	// Properties
+	public int SlotIndex { get; }
+	public InventorySlotType SlotType { get; }
+	public FloatingTextType FloatingTextType { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3600 Offset: 0x5FEF600 VA: 0x5FF3600
+	public int get_SlotIndex() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3608 Offset: 0x5FEF608 VA: 0x5FF3608
+	public InventorySlotType get_SlotType() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3610 Offset: 0x5FEF610 VA: 0x5FF3610
+	public FloatingTextType get_FloatingTextType() { }
+
+	// RVA: 0x5FF3618 Offset: 0x5FEF618 VA: 0x5FF3618
+	public void .ctor(int slotIndex, InventorySlotType type, FloatingTextType floatingTextType) { }
+}
+

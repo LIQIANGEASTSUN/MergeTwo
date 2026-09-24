@@ -1,0 +1,9 @@
+// Namespace: Merger.Audio.Data
+public interface ISpecificSound // TypeDefIndex: 7919
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract SoundArguments GetSoundArguments();
+}
+

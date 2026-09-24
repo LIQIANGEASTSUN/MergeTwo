@@ -1,0 +1,16 @@
+// Namespace: MergeEngine.Data
+[Serializable]
+public class SkipCooldownSettings // TypeDefIndex: 1141
+{
+	// Fields
+	[JsonProperty("showTimeLeft")]
+	public bool ShowTimeLeft; // 0x10
+	[JsonProperty("costRanges")]
+	public SkipCooldownCostRange[] CostRanges; // 0x18
+
+	// Methods
+
+	// RVA: 0x69053E0 Offset: 0x69013E0 VA: 0x69053E0
+	public void .ctor() { }
+}
+

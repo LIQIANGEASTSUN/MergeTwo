@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class PizzaTowerModel.<>c__DisplayClass48_0 // TypeDefIndex: 845
+{
+	// Fields
+	public TableMergeItem tableMergeItem; // 0x8
+
+	// Methods
+
+	// RVA: 0x1B0F03C Offset: 0x1B0F03C VA: 0x1B0F03C
+	public void .ctor() { }
+
+	// RVA: 0x1B11844 Offset: 0x1B11844 VA: 0x1B11844
+	internal bool <MergeToProductPizzaTower>b__0(PizzaTowerItem p) { }
+}
+

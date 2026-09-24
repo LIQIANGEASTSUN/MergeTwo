@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemChainManager.<>c__DisplayClass15_0 // TypeDefIndex: 1722
+{
+	// Fields
+	public ItemLinkID linkID; // 0x8
+
+	// Methods
+
+	// RVA: 0x19044D0 Offset: 0x19044D0 VA: 0x19044D0
+	public void .ctor() { }
+
+	// RVA: 0x190F4BC Offset: 0x190F4BC VA: 0x190F4BC
+	internal bool <SetArchiveTaskForRemoval>b__0(InventoryEntity.ArchiveTaskEntity a) { }
+}
+

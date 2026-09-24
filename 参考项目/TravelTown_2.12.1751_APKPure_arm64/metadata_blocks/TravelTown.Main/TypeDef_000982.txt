@@ -1,0 +1,66 @@
+// Namespace: MergeEngine.ECS.Systems.Items
+public abstract class UndoOperationBase<T> : IUndoOperation // TypeDefIndex: 982
+{
+	// Fields
+	protected T _data; // 0x0
+	private Action<T> _performUndoCallback; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor(T data, Action<T> performUndoCallback) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x466981C Offset: 0x466581C VA: 0x466981C
+	|-UndoOperationBase<object>..ctor
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public void PerformUndo() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4669860 Offset: 0x4665860 VA: 0x4669860
+	|-UndoOperationBase<object>.PerformUndo
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public IMergeItem GetMergeItem() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4669888 Offset: 0x4665888 VA: 0x4669888
+	|-UndoOperationBase<object>.GetMergeItem
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public Entity GetEntity() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x46698A4 Offset: 0x46658A4 VA: 0x46698A4
+	|-UndoOperationBase<object>.GetEntity
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public abstract bool ShouldClearUndoOnSelection(PositionComponent selectedItem);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-UndoOperationBase<object>.ShouldClearUndoOnSelection
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public abstract string GetLocalisationString();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-UndoOperationBase<object>.GetLocalisationString
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 12
+	public abstract string[] GetLocalisationParameters();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-UndoOperationBase<object>.GetLocalisationParameters
+	*/
+}
+

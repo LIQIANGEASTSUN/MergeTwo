@@ -1,0 +1,35 @@
+// Namespace: Merger.Bubbles
+public class SmarterBubblesStreakData // TypeDefIndex: 7454
+{
+	// Fields
+	[CompilerGenerated]
+	private int <StreakCount>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private IMergeGraphItem <StreakGraph>k__BackingField; // 0x18
+
+	// Properties
+	public int StreakCount { get; set; }
+	public IMergeGraphItem StreakGraph { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x657B5D0 Offset: 0x65775D0 VA: 0x657B5D0
+	public int get_StreakCount() { }
+
+	[CompilerGenerated]
+	// RVA: 0x657B5D8 Offset: 0x65775D8 VA: 0x657B5D8
+	public void set_StreakCount(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x657B5E0 Offset: 0x65775E0 VA: 0x657B5E0
+	public IMergeGraphItem get_StreakGraph() { }
+
+	[CompilerGenerated]
+	// RVA: 0x657B5E8 Offset: 0x65775E8 VA: 0x657B5E8
+	public void set_StreakGraph(IMergeGraphItem value) { }
+
+	// RVA: 0x657B5F0 Offset: 0x65775F0 VA: 0x657B5F0
+	public void .ctor() { }
+}
+

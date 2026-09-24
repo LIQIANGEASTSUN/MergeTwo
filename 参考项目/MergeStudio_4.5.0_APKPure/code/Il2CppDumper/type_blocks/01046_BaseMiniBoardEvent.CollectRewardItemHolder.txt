@@ -1,0 +1,8 @@
+// Namespace: 
+public struct BaseMiniBoardEvent.CollectRewardItemHolder : IEvent // TypeDefIndex: 1046
+{
+	// Fields
+	public MiniBoardItemController RewardHolderItem; // 0x0
+	public GameMainReward MainReward; // 0x4
+}
+

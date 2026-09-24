@@ -1,0 +1,18 @@
+// Namespace: 
+public sealed class IItemsCombiner.OnItemsCombined : MulticastDelegate // TypeDefIndex: 924
+{
+	// Methods
+
+	// RVA: 0x665F774 Offset: 0x665B774 VA: 0x665F774
+	public void .ctor(object object, IntPtr method) { }
+
+	// RVA: 0x666CC7C Offset: 0x6668C7C VA: 0x666CC7C Slot: 13
+	public virtual void Invoke(bool success, bool shouldSelectItemAtTarget, bool shouldVerifyMerge = False) { }
+
+	// RVA: 0x666CC9C Offset: 0x6668C9C VA: 0x666CC9C Slot: 14
+	public virtual IAsyncResult BeginInvoke(bool success, bool shouldSelectItemAtTarget, bool shouldVerifyMerge, AsyncCallback callback, object object) { }
+
+	// RVA: 0x666CD60 Offset: 0x6668D60 VA: 0x666CD60 Slot: 15
+	public virtual void EndInvoke(IAsyncResult result) { }
+}
+

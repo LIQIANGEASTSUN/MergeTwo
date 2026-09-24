@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardTaskData.<>c // TypeDefIndex: 1961
+{
+	// Fields
+	public static readonly BoardTaskData.<>c <>9; // 0x0
+	public static Predicate<BoardTaskItem> <>9__11_0; // 0x4
+
+	// Methods
+
+	// RVA: 0x19407D8 Offset: 0x19407D8 VA: 0x19407D8
+	private static void .cctor() { }
+
+	// RVA: 0x194084C Offset: 0x194084C VA: 0x194084C
+	public void .ctor() { }
+
+	// RVA: 0x1940854 Offset: 0x1940854 VA: 0x1940854
+	internal bool <ArrangeRolloutFixCompletedTasks>b__11_0(BoardTaskItem item) { }
+}
+

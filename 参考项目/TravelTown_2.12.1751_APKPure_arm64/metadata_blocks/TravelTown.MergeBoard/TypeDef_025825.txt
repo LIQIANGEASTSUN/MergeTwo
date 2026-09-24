@@ -1,0 +1,9 @@
+// Namespace: Merger.MergeBoard.Logic
+public interface IItemSelectionBoxPickHandler // TypeDefIndex: 25825
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void OpenItemSelectionBoxPopup(Entity entity, IMergeItem mergeItem, string uuid, int boardIndex);
+}
+

@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ImmediateToolsSystem.<>c // TypeDefIndex: 25740
+{
+	// Fields
+	public static readonly ImmediateToolsSystem.<>c <>9; // 0x0
+	public static Func<ValueTuple<Entity, IdComponent>, bool> <>9__3_0; // 0x8
+	public static Func<ValueTuple<Entity, IdComponent>, string> <>9__3_1; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A6A948 Offset: 0x6A66948 VA: 0x6A6A948
+	private static void .cctor() { }
+
+	// RVA: 0x6A6A9B0 Offset: 0x6A669B0 VA: 0x6A6A9B0
+	public void .ctor() { }
+
+	// RVA: 0x6A6A9B8 Offset: 0x6A669B8 VA: 0x6A6A9B8
+	internal bool <CollectToolBox>b__3_0(ValueTuple<Entity, IdComponent> query) { }
+
+	// RVA: 0x6A6A9D8 Offset: 0x6A669D8 VA: 0x6A6A9D8
+	internal string <CollectToolBox>b__3_1(ValueTuple<Entity, IdComponent> query) { }
+}
+

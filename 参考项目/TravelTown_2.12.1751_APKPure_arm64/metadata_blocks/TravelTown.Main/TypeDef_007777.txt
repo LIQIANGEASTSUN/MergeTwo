@@ -1,0 +1,26 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoosterModel.<>c__DisplayClass50_0<T> // TypeDefIndex: 7777
+{
+	// Fields
+	public string uniqueId; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4B0F7B0 Offset: 0x4B0B7B0 VA: 0x4B0F7B0
+	|-BoosterModel.<>c__DisplayClass50_0<object>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal bool <GetBoosterProgress>b__0(RemoteBoosterData remoteBooster) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4B0F7B8 Offset: 0x4B0B7B8 VA: 0x4B0F7B8
+	|-BoosterModel.<>c__DisplayClass50_0<object>.<GetBoosterProgress>b__0
+	*/
+}
+

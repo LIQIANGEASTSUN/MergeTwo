@@ -1,0 +1,96 @@
+// Namespace: Merger.Rewards.Constants
+[Extension]
+public static class RewardTypesConstants // TypeDefIndex: 3000
+{
+	// Fields
+	public static readonly IRewardType Default; // 0x0
+	public static readonly IRewardType Booster; // 0x8
+	public static readonly IRewardType SurpriseBoxBooster; // 0x10
+	public static readonly IRewardType TimeTwisterBooster; // 0x18
+	public static readonly IRewardType CardsBoomBooster; // 0x20
+	public static readonly IRewardType Chest; // 0x28
+	public static readonly IRewardType ImmediateChest; // 0x30
+	public static readonly IRewardType GachaChest; // 0x38
+	public static readonly IRewardType Item; // 0x40
+	public static readonly IRewardType Pack; // 0x48
+	public static readonly IRewardType VanityDecoration; // 0x50
+	public static readonly IRewardType SinglePortal; // 0x58
+	public static readonly IRewardType VoucherPortal; // 0x60
+	public static readonly IRewardType SmiliesPortal; // 0x68
+	public static readonly IRewardType AccumulationPortal; // 0x70
+	public static readonly IRewardType PassKeyPortal; // 0x78
+	public static readonly IRewardType ScrollKeyPortal; // 0x80
+	public static readonly IRewardType GenericTokens; // 0x88
+	public static readonly IRewardType ItemToOrderRelation; // 0x90
+	public static readonly IRewardType PointsAccumulation; // 0x98
+	public static readonly IRewardType ResourceDefault; // 0xA0
+	public static readonly IRewardType ResourceEventEnergy; // 0xA8
+	public static readonly IRewardType ResourceEnergy; // 0xB0
+	public static readonly IRewardType ResourceEventXP; // 0xB8
+	public static readonly IRewardType ResourceXP; // 0xC0
+	public static readonly IRewardType ResourceSmiley; // 0xC8
+	public static readonly IRewardType ResourceHc; // 0xD0
+	public static readonly IRewardType ResourceSC; // 0xD8
+	public static readonly IRewardType ResourceVanityIslandToken; // 0xE0
+	public static readonly IRewardType ResourcePicks; // 0xE8
+	public static readonly IRewardType ResourceTool1; // 0xF0
+	public static readonly IRewardType ResourceTool2; // 0xF8
+	public static readonly IRewardType ResourceTool3; // 0x100
+	public static readonly IRewardType ResourceTool4; // 0x108
+	public static readonly IRewardType ResourceTool5; // 0x110
+	public static readonly IRewardType ResourceTool6; // 0x118
+	public static readonly IRewardType ResourceTool7; // 0x120
+	public static readonly IRewardType ResourceTool8; // 0x128
+	public static readonly IRewardType ResourceTool9; // 0x130
+	public static readonly IRewardType ResourceTool10; // 0x138
+	public static readonly IRewardType Frame; // 0x140
+	public static readonly IRewardType Conditional; // 0x148
+	public static readonly IRewardType Wheel; // 0x150
+	public static readonly IRewardType BunchOfItems; // 0x158
+	public static readonly IRewardType BunchOfItems_Reward; // 0x160
+	public static readonly IRewardType BunchOfItems_Items; // 0x168
+	public static readonly IRewardType BunchOfItems_CollectScreenItems; // 0x170
+	public static readonly IRewardType BunchOfItems_SmiliesExtraBonusClaim; // 0x178
+	public static readonly IRewardType Cloche; // 0x180
+	public static readonly IRewardType BubbleBlasters; // 0x188
+	public static readonly RewardTypeWIthSubType<int> BubbleBlasterTier1; // 0x190
+	public static readonly RewardTypeWIthSubType<int> BubbleBlasterTier2; // 0x198
+	public static readonly RewardTypeWIthSubType<int> BubbleBlasterTier3; // 0x1A0
+	public static readonly RewardTypeWIthSubType<int> BubbleBlasterTier4; // 0x1A8
+	public static readonly RewardTypeWIthSubType<int>[] AllBubbleBlasterTiers; // 0x1B0
+	public static readonly IRewardType[] AllTools; // 0x1B8
+	public static readonly IRewardType[] BoardEventResources; // 0x1C0
+	public static readonly IRewardType[] AllItems; // 0x1C8
+	public static readonly IRewardType[] FloatingMergeMetaItems; // 0x1D0
+	public static readonly IRewardType[] FloatingMergeMetaResources; // 0x1D8
+	public static readonly IRewardType[] TopHudResources; // 0x1E0
+	public static readonly IRewardType[] Portals; // 0x1E8
+	public static readonly IRewardType[] AllResources; // 0x1F0
+	public static readonly IRewardType[] MergeButtonResources; // 0x1F8
+	public static readonly IRewardType[] RewardPositionsSupportedItems; // 0x200
+	public static readonly HashSet<string> ResourcesStringTypes; // 0x208
+	public static readonly HashSet<IRewardType> BoosterTypes; // 0x210
+	public static readonly string[] BoosterTypesWithoutDedicatedCollectScreen; // 0x218
+	public static readonly ResourceSource[] AllSources; // 0x220
+	public static readonly HashSet<string> AllItemRewardsTypes; // 0x228
+	public static readonly IRewardType[] Chests; // 0x230
+
+	// Methods
+
+	[Extension]
+	// RVA: 0x614CB20 Offset: 0x6148B20 VA: 0x614CB20
+	public static IRewardType GetRewardType(PlayerResourceEnum resourceEnum) { }
+
+	// RVA: 0x614CEBC Offset: 0x6148EBC VA: 0x614CEBC
+	public static void TryGetChestType(SerializedRewardData data, out IRewardType rewardType) { }
+
+	// RVA: 0x614CFD8 Offset: 0x6148FD8 VA: 0x614CFD8
+	public static IRewardType GetBoosterType(BoosterType boosterType) { }
+
+	// RVA: 0x614D070 Offset: 0x6149070 VA: 0x614D070
+	public static bool AllBoostersPredicate(IRewardViewData rewardViewData) { }
+
+	// RVA: 0x614D168 Offset: 0x6149168 VA: 0x614D168
+	private static void .cctor() { }
+}
+

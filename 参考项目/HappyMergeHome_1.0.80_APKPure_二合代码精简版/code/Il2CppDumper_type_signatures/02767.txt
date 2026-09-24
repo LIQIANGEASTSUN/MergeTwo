@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeConfigManager.<>c__DisplayClass40_0 // TypeDefIndex: 2767
+{
+	// Fields
+	public int smallId; // 0x8
+
+	// Methods
+
+	// RVA: 0x2C3C028 Offset: 0x2C3C028 VA: 0x2C3C028
+	public void .ctor() { }
+
+	// RVA: 0x2C3D2D4 Offset: 0x2C3D2D4 VA: 0x2C3D2D4
+	internal bool <GetProductParent>b__1(TableMergeItem x) { }
+}
+

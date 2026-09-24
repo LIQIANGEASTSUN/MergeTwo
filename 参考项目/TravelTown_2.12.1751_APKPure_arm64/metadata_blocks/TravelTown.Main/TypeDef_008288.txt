@@ -1,0 +1,68 @@
+// Namespace: Merger.Game.ViewModel
+public class InventoryItemsViewModel : GameBaseViewModel // TypeDefIndex: 8288
+{
+	// Fields
+	[Inject]
+	private IInventoryModel _inventoryModel; // 0xD0
+	[Inject]
+	private IVirtualPurchasesService _virtualPurchasesService; // 0xD8
+
+	// Properties
+	public int NumSlots { get; }
+	public int NextSlotPrice { get; }
+	public int MaxSlots { get; }
+	public PlayerResourceEnum SlotPurchaseResource { get; }
+	private InventorySystem _inventorySystem { get; }
+	private BoardSystem _boardSystem { get; }
+
+	// Methods
+
+	// RVA: 0x662AC88 Offset: 0x6626C88 VA: 0x662AC88
+	public int get_NumSlots() { }
+
+	// RVA: 0x662AD2C Offset: 0x6626D2C VA: 0x662AD2C
+	public int get_NextSlotPrice() { }
+
+	// RVA: 0x662ADD0 Offset: 0x6626DD0 VA: 0x662ADD0
+	public int get_MaxSlots() { }
+
+	// RVA: 0x662AE74 Offset: 0x6626E74 VA: 0x662AE74
+	public PlayerResourceEnum get_SlotPurchaseResource() { }
+
+	// RVA: 0x662AF14 Offset: 0x6626F14 VA: 0x662AF14
+	private InventorySystem get__inventorySystem() { }
+
+	// RVA: 0x662AF5C Offset: 0x6626F5C VA: 0x662AF5C
+	private BoardSystem get__boardSystem() { }
+
+	// RVA: 0x662AFA4 Offset: 0x6626FA4 VA: 0x662AFA4
+	public void TryRemoveItem(int slotIndex) { }
+
+	// RVA: 0x662B038 Offset: 0x6627038 VA: 0x662B038
+	public IMergeItem GetItem(int slotIndex) { }
+
+	// RVA: 0x662B0E8 Offset: 0x66270E8 VA: 0x662B0E8
+	public string GetItemUUID(int slotIndex) { }
+
+	// RVA: 0x662B198 Offset: 0x6627198 VA: 0x662B198
+	public IPromise TryBuyInventorySlot() { }
+
+	// RVA: 0x662B710 Offset: 0x6627710 VA: 0x662B710
+	public AssetReferenceT<Sprite> GetItemAsset(int slotIndex, InventorySlotType type) { }
+
+	// RVA: 0x662B7CC Offset: 0x66277CC VA: 0x662B7CC
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x662B7D4 Offset: 0x66277D4 VA: 0x662B7D4
+	private void <TryBuyInventorySlot>b__17_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x662B83C Offset: 0x662783C VA: 0x662B83C
+	private void <TryBuyInventorySlot>b__17_1() { }
+
+	[CompilerGenerated]
+	// RVA: 0x662BB30 Offset: 0x6627B30 VA: 0x662BB30
+	private void <TryBuyInventorySlot>b__17_2(Exception exception) { }
+}
+

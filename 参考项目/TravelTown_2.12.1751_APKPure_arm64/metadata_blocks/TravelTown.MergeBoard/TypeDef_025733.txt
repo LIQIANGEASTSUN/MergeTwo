@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class FeedingCombinationConsumeSystem.<>c // TypeDefIndex: 25733
+{
+	// Fields
+	public static readonly FeedingCombinationConsumeSystem.<>c <>9; // 0x0
+	public static Func<ValueTuple<Entity, BornComponent, IdComponent>, bool> <>9__0_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x6A67898 Offset: 0x6A63898 VA: 0x6A67898
+	private static void .cctor() { }
+
+	// RVA: 0x6A67900 Offset: 0x6A63900 VA: 0x6A67900
+	public void .ctor() { }
+
+	// RVA: 0x6A67908 Offset: 0x6A63908 VA: 0x6A67908
+	internal bool <Tick>b__0_0(ValueTuple<Entity, BornComponent, IdComponent> query) { }
+}
+

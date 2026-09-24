@@ -1,0 +1,12 @@
+// Namespace: Merger.Rewards.Services
+public interface IBoardItemRewardDequeueStrategy // TypeDefIndex: 2896
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract bool CanHandle(ItemMultiple itemMultiple);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract bool TrySpawnDirectlyToBoard(ItemMultiple itemMultiple, List<Tuple<Vector3, IRewardViewData>> rewardsPositions, ResourceSource source, List<Tuple<Vector3, IRewardViewData>> flyRewardsToFill, Dictionary<IRewardViewData, RewardAnimationTargetData> overrideTargetDict);
+}
+

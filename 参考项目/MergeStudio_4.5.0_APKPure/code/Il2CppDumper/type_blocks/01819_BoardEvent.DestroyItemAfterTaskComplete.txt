@@ -1,0 +1,9 @@
+// Namespace: 
+public struct BoardEvent.DestroyItemAfterTaskComplete : IEvent // TypeDefIndex: 1819
+{
+	// Fields
+	public Coordinate BoardIndex; // 0x0
+	public bool SaveBoard; // 0x8
+	public bool IsStart; // 0x9
+}
+

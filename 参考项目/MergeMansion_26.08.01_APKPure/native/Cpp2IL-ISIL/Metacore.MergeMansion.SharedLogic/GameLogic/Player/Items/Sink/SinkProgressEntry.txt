@@ -1,0 +1,17 @@
+Type: GameLogic.Player.Items.Sink.SinkProgressEntry
+
+Method: System.Void .ctor(System.Int32 itemId, System.Int32 progress, System.Int32 target, System.Boolean isAllowed = True)
+
+Disassembly:
+	0x03607FD8 ADRP X24, 0x2722000
+	0x03607FDC ADRP X20, 0x20C7000
+	0x03607FE0 ADRP X22, 0x20CC000
+	0x03607FE4 ADRP X21, 0x20CC000
+
+ISIL:
+	001 Move [X0], W4
+	002 Move [X0+4], W1
+	003 Move [X0+8], W2
+	004 Move [X0+12], W3
+	005 Return 
+

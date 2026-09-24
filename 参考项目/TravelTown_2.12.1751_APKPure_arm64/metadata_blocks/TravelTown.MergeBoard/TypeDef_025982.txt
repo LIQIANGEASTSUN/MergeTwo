@@ -1,0 +1,41 @@
+// Namespace: Merger.MergeBoard.Data.Payload
+public class MergeBoardItemNotificationData : BaseNotificationData // TypeDefIndex: 25982
+{
+	// Fields
+	[JsonProperty("origin", NullValueHandling = 1)]
+	public string Origin; // 0x60
+	[JsonProperty("mergedTimestamp", DefaultValueHandling = 1)]
+	public long MergedTimestamp; // 0x68
+	[JsonProperty("expirationTimestamp", DefaultValueHandling = 1)]
+	public long ExpirationTimestamp; // 0x70
+	[JsonProperty("activationTimestamp", DefaultValueHandling = 1)]
+	public long ActivationTimestamp; // 0x78
+	[JsonProperty("timerDuration", DefaultValueHandling = 1)]
+	public long TimerDuration; // 0x80
+	[JsonProperty("reason", DefaultValueHandling = 1)]
+	public string Reason; // 0x88
+	[JsonProperty("locked", NullValueHandling = 1)]
+	public LockedNotificationData LockedNotificationData; // 0x90
+	[JsonProperty("position", NullValueHandling = 1)]
+	public MergeBoardItemPositionNotificationData PositionNotificationData; // 0x98
+	[JsonProperty("collection", NullValueHandling = 1)]
+	public CollectionNotificationData CollectionNotificationData; // 0xA0
+	[JsonProperty("expandable", NullValueHandling = 1)]
+	public ExpandableNotificationData ExpandableNotificationData; // 0xA8
+	[JsonProperty("chargeable", NullValueHandling = 1)]
+	public ChargeableComponentNotificationData ChargeableComponentNotificationData; // 0xB0
+	[JsonProperty("timeLock", NullValueHandling = 1)]
+	public TimeLockNotificationData TimeLockNotificationData; // 0xB8
+	[JsonProperty("timeCycle", NullValueHandling = 1)]
+	public TimeCycleNotificationData TimeCycleNotificationData; // 0xC0
+	[JsonProperty("dynamicItemConfig", NullValueHandling = 1)]
+	public DynamicMergeItemConfig DynamicItemConfig; // 0xC8
+	[JsonProperty("pot", NullValueHandling = 1)]
+	public List<ItemPayloadBase> FeedingData; // 0xD0
+
+	// Methods
+
+	// RVA: 0x6A9AECC Offset: 0x6A96ECC VA: 0x6A9AECC
+	public void .ctor() { }
+}
+

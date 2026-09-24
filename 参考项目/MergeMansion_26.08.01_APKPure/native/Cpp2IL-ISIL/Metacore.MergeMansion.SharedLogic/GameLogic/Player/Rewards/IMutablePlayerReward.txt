@@ -1,0 +1,16 @@
+Type: GameLogic.Player.Rewards.IMutablePlayerReward
+
+Method: System.Boolean MayMutateAtRuntime(GameLogic.Config.IMergeMansionGameConfig config)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Rewards.IPlayerReward GetMutatedReward(GameLogic.Player.IPlayer player, Metacore.MergeMansion.Common.Options.Option`1<Code.GameLogic.GameEvents.RewardSourceContext> rewardSourceContextOption)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

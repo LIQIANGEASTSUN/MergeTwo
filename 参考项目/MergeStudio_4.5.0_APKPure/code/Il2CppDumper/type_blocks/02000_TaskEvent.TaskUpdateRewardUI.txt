@@ -1,0 +1,4 @@
+// Namespace: 
+public struct TaskEvent.TaskUpdateRewardUI : IEvent // TypeDefIndex: 2000
+{}
+

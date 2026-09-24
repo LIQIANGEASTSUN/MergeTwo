@@ -1,0 +1,5755 @@
+[
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/ActiveCostType.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/ActiveCostType.cs",
+    "sha256": "57149a41ad7aa6ffa5f4446bbc99d57455b602d8d6b4f4012c8b82d017791f0e",
+    "lines": 8,
+    "types": [
+      "ActiveCostType"
+    ],
+    "method_count": 0,
+    "reasons": [
+      "核心类型的基类、接口、枚举或直接依赖"
+    ],
+    "selection_reasons": [
+      "主棋盘与二合规则/状态/操作"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/Candy/CandyModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/Candy/CandyModel.cs",
+    "sha256": "8bdc159c3a39c248b8d258c3db2df2ee7f4b5a26f8836740b6ded6a11ff95829",
+    "lines": 192,
+    "types": [
+      "CandyModel",
+      "ColorEnum"
+    ],
+    "method_count": 33,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "主棋盘直接调用的特殊产出/状态模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/ComboCriticalHit/ComboCriticalHitModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/ComboCriticalHit/ComboCriticalHitModel.cs",
+    "sha256": "f6841b9a2235bf2c5fcce5f98ac50f0648fd6ecf98f714effada8f6d0bfd781f",
+    "lines": 292,
+    "types": [
+      "ComboCriticalHitModel",
+      "_003CAddScore_003Ed__30"
+    ],
+    "method_count": 47,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "改变合成产出/棋盘状态的活动模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/ComboPlay/Model/ComboPlayModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/ComboPlay/Model/ComboPlayModel.cs",
+    "sha256": "c3ca0720881c5ba109a693c80bc1e7804101fa5dd71a00d935de8003b2684a1f",
+    "lines": 282,
+    "types": [
+      "ComboPlayModel",
+      "_003CAddScore_003Ed__33",
+      "_003CFlyCurrency_003Ed__43"
+    ],
+    "method_count": 39,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "改变合成产出/棋盘状态的活动模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/EnergyMergeStage/Model/EnergyMergeStageModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/EnergyMergeStage/Model/EnergyMergeStageModel.cs",
+    "sha256": "bffff9fe676e875f1bf8e9b8b12fed7cb2be816c61aff4c90a3f856113789c7d",
+    "lines": 340,
+    "types": [
+      "EnergyMergeStageModel"
+    ],
+    "method_count": 64,
+    "reasons": [
+      "名称及类型直接涉及合成玩法"
+    ],
+    "selection_reasons": [
+      "主棋盘直接调用的特殊产出/状态模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/GardenTreasure/Model/GardenTreasureModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/GardenTreasure/Model/GardenTreasureModel.cs",
+    "sha256": "4d77a21ff50f1d48c51bf37b2caaa1f47bdf0e10a0ea2238ace72e9071a45389",
+    "lines": 215,
+    "types": [
+      "GardenTreasureModel"
+    ],
+    "method_count": 41,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "主棋盘直接调用的特殊产出/状态模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/LuckyGoldenEgg/LuckyGoldenEggModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/LuckyGoldenEgg/LuckyGoldenEggModel.cs",
+    "sha256": "010e6ecc5072440297b2797e8b676144dfdd934e80468ba428f0eebc4e0f8a8f",
+    "lines": 177,
+    "types": [
+      "LuckyGoldenEggModel"
+    ],
+    "method_count": 33,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "主棋盘直接调用的特殊产出/状态模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/LuckyGoldenPearls/LuckyGoldenPearlsModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/LuckyGoldenPearls/LuckyGoldenPearlsModel.cs",
+    "sha256": "67477beee4b90c16083bf8cdea266ce09dd8f1c3b7d17a982faa830238bee19b",
+    "lines": 177,
+    "types": [
+      "LuckyGoldenPearlsModel"
+    ],
+    "method_count": 33,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "主棋盘直接调用的特殊产出/状态模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/MapAdventure_1/MapAdventureModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/MapAdventure_1/MapAdventureModel.cs",
+    "sha256": "02f4ce0a4296c90b896f133b925e43c06f0ee97f3872e210bdfd9a7b35226d25",
+    "lines": 577,
+    "types": [
+      "MapAdventureModel",
+      "_003C_003Ec__DisplayClass96_0",
+      "_003COnNewItem_003Ed__96"
+    ],
+    "method_count": 97,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "改变合成产出/棋盘状态的活动模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/MapAdventure_1/MapAdventureOneMergeBoard_Big.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/MapAdventure_1/MapAdventureOneMergeBoard_Big.cs",
+    "sha256": "1619d920c9e2666eee706c281803ff956fd380232f75f36d1265a75641b6df73",
+    "lines": 43,
+    "types": [
+      "MapAdventureOneMergeBoard_Big"
+    ],
+    "method_count": 9,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/MapAdventure_2/MapAdventureModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/MapAdventure_2/MapAdventureModel.cs",
+    "sha256": "d32047737766198472a3f615c38b851e9f92ca1e8f2802f5b74d851389a45ac4",
+    "lines": 781,
+    "types": [
+      "MapAdventureModel",
+      "_003C_003Ec__DisplayClass130_0",
+      "_003COnNewItem_003Ed__130"
+    ],
+    "method_count": 137,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "改变合成产出/棋盘状态的活动模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/MapAdventure_2/MapAdventureTwoMergeBoard_Big.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/MapAdventure_2/MapAdventureTwoMergeBoard_Big.cs",
+    "sha256": "4b35a7f38219db50107c39d8e9a73c0d6d68ff3c3604971d0c28b3d258cda62b",
+    "lines": 43,
+    "types": [
+      "MapAdventureTwoMergeBoard_Big"
+    ],
+    "method_count": 9,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelonTwo/SummerWatermelonMergeBoard.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelonTwo/SummerWatermelonMergeBoard.cs",
+    "sha256": "455d2c8700957406433a7c32719e66438296421ed06414df1ad1294d51a6f946",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelonTwo/SummerWatermelonMergeBoard_Big.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelonTwo/SummerWatermelonMergeBoard_Big.cs",
+    "sha256": "2c7dbe3fe7d1ba1cb8af76478b219e85eae8045b00793dc1db91dca9b2b9fa9a",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard_Big"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelonTwo/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelonTwo/SummerWatermelonModel.cs",
+    "sha256": "0b8a94e342bde77b5a426769f8ee122fe7ba0d5428f9d19c437fba7285573ce3",
+    "lines": 425,
+    "types": [
+      "SummerWatermelonModel",
+      "_003COnNewItem_003Ed__93"
+    ],
+    "method_count": 62,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_10/SummerWatermelonMergeBoard.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_10/SummerWatermelonMergeBoard.cs",
+    "sha256": "19a4c3540658e05352b90767579b8c7c3c60a38a79ae36cc40936f404e8d344b",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_10/SummerWatermelonMergeBoard_Big.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_10/SummerWatermelonMergeBoard_Big.cs",
+    "sha256": "18ab0513d3af70e5e8fd4b805c353b2575d1d6280bf334002fec884d0e3b042a",
+    "lines": 43,
+    "types": [
+      "SummerWatermelonMergeBoard_Big"
+    ],
+    "method_count": 9,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_10/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_10/SummerWatermelonModel.cs",
+    "sha256": "e369baa00d6dc9a9628d83efd73e88378dcaf1eda4eb59d9aed404871d17fd46",
+    "lines": 576,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass87_0",
+      "_003COnNewItem_003Ed__87"
+    ],
+    "method_count": 93,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_11/SummerWatermelonMergeBoard.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_11/SummerWatermelonMergeBoard.cs",
+    "sha256": "48ec6b3a50257e4676cf20306a061e4e49ae9f85172494bfae7010ce03bf541f",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_11/SummerWatermelonMergeBoard_Big.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_11/SummerWatermelonMergeBoard_Big.cs",
+    "sha256": "001d8208f9b229699716aef01dbb4954c947a1a25c3b69950b880981b159d24c",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard_Big"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_11/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_11/SummerWatermelonModel.cs",
+    "sha256": "c0480053632a2d71a9c7389468edd66a5951a7e0552a073961aad72ef85c9ac2",
+    "lines": 656,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass96_0",
+      "_003COnNewItem_003Ed__96"
+    ],
+    "method_count": 109,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_12/SummerWatermelonMergeBoard1.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_12/SummerWatermelonMergeBoard1.cs",
+    "sha256": "66280d382e7535dd774b197d8410451adb482df2f6d53f286f6ebf7af2dae9e5",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard1"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_12/SummerWatermelonMergeBoard2.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_12/SummerWatermelonMergeBoard2.cs",
+    "sha256": "60ec1462e58ecdc11885f55340a45430ffac3e8e4ebbb67fa4d6e368190dc107",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard2"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_12/SummerWatermelonMergeBoard3.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_12/SummerWatermelonMergeBoard3.cs",
+    "sha256": "c2aa7e1101d6151cd741caff58fd0ea54a053fed0a85d247fff8d9b45b658755",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard3"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_12/SummerWatermelonMergeBoard4.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_12/SummerWatermelonMergeBoard4.cs",
+    "sha256": "f387ec38b5ced5d68000439ce3f7f2c31519d2f9ba9a9cd8cfbec0de6c36ccbc",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard4"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_12/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_12/SummerWatermelonModel.cs",
+    "sha256": "ff49b74309a332db74e066cf56082d15d34a753847961fb4eb7aec3746d85e77",
+    "lines": 673,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass98_0",
+      "_003COnNewItem_003Ed__98"
+    ],
+    "method_count": 113,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_13/SummerWatermelonMergeBoard1.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_13/SummerWatermelonMergeBoard1.cs",
+    "sha256": "9a086e2c7378ff6d1d9766623e4bc7ee29d3c0c360ad0b4eaf5a5461827bd866",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard1"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_13/SummerWatermelonMergeBoard2.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_13/SummerWatermelonMergeBoard2.cs",
+    "sha256": "3848606599f4478ba8ba4c7625e1e11b4dce9848cbd50804f74be9d5be1b5bc2",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard2"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_13/SummerWatermelonMergeBoard3.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_13/SummerWatermelonMergeBoard3.cs",
+    "sha256": "4895ccfef52f078b9dd2dacd54820904d843eeea78b5c086ebe1305b38dd46a2",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard3"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_13/SummerWatermelonMergeBoard4.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_13/SummerWatermelonMergeBoard4.cs",
+    "sha256": "7ba6be34485d17a46c1969e1e46a80a932b1aa61227f8c187dc4dcdd025a3ce8",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard4"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_13/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_13/SummerWatermelonModel.cs",
+    "sha256": "aeff0e2ea7bc4e9409803ca2a63f0544d79f01c4c61801f6224dca461cff0c00",
+    "lines": 673,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass98_0",
+      "_003COnNewItem_003Ed__98"
+    ],
+    "method_count": 113,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_14/SummerWatermelonMergeBoard.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_14/SummerWatermelonMergeBoard.cs",
+    "sha256": "a7625aa4a3c2fe3a24b6ff4b5163b223ac748c4232da05335b11cb7c42a02ecd",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_14/SummerWatermelonMergeBoard_Big.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_14/SummerWatermelonMergeBoard_Big.cs",
+    "sha256": "48c8fa11662cb5149b673db3ce9c2f22e4e125d0b16ffd90d824b1d92cd3ee2f",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard_Big"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_14/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_14/SummerWatermelonModel.cs",
+    "sha256": "7ad2fd2087abe1aed3928da67ed1b4918a1ed0aee0f467e3b0c97b2372e98eb8",
+    "lines": 599,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass96_0",
+      "_003COnNewItem_003Ed__96"
+    ],
+    "method_count": 97,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_15/SummerWatermelonMergeBoard1.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_15/SummerWatermelonMergeBoard1.cs",
+    "sha256": "74f42388f54864434e15f98b69fe8b11985eb51087f171312b56c906b9074e84",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard1"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_15/SummerWatermelonMergeBoard2.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_15/SummerWatermelonMergeBoard2.cs",
+    "sha256": "fd0eaf1b165f9fb2a34d40c185092cd9c0bc0340ba78ac835132df5dca2de04e",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard2"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_15/SummerWatermelonMergeBoard3.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_15/SummerWatermelonMergeBoard3.cs",
+    "sha256": "ef584fa891c3401536f69f0f08737d1a412ae0c4e4c8c46ef122f47936ba72ae",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard3"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_15/SummerWatermelonMergeBoard4.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_15/SummerWatermelonMergeBoard4.cs",
+    "sha256": "c0a49fe011b335e06f093d21b28fd9a6a80365180fbf848f894585cdc234f55c",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard4"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_15/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_15/SummerWatermelonModel.cs",
+    "sha256": "351040c7e885e9150da345c4e57bcf3a13e892f30a00139229fa5fa01686cd61",
+    "lines": 673,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass98_0",
+      "_003COnNewItem_003Ed__98"
+    ],
+    "method_count": 113,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_16/SummerWatermelonMergeBoard.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_16/SummerWatermelonMergeBoard.cs",
+    "sha256": "705acfa423515d0d72fdfccedb4d6201d8405ab6107f20b6d549a9348686dd1e",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_16/SummerWatermelonMergeBoard_Big.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_16/SummerWatermelonMergeBoard_Big.cs",
+    "sha256": "2c21806641f3bd3216be5c10a43ff641147ba1d5c735f779b2352001126f15cf",
+    "lines": 43,
+    "types": [
+      "SummerWatermelonMergeBoard_Big"
+    ],
+    "method_count": 9,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_16/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_16/SummerWatermelonModel.cs",
+    "sha256": "5b0effa60796360a76679a30ed9702c5c7f61b8b2780ce508066bf5b0643a261",
+    "lines": 585,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass87_0",
+      "_003COnNewItem_003Ed__87"
+    ],
+    "method_count": 95,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_17/SummerWatermelonMergeBoard1.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_17/SummerWatermelonMergeBoard1.cs",
+    "sha256": "47d00d0224ba39d32cb189203db22a3ac439d566a19bf4d203bd70c437c2c1b5",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard1"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_17/SummerWatermelonMergeBoard2.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_17/SummerWatermelonMergeBoard2.cs",
+    "sha256": "5af86a5b6adce6a8606fc8f065699d4bb5a7361f6fda0b6332ad48a04a77560d",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard2"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_17/SummerWatermelonMergeBoard3.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_17/SummerWatermelonMergeBoard3.cs",
+    "sha256": "e6c407214b501d20e2e3807b27736a91781f0aa2ccf8a84fc5e1f6865bbc3312",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard3"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_17/SummerWatermelonMergeBoard4.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_17/SummerWatermelonMergeBoard4.cs",
+    "sha256": "42995ab872bd1b0e591a969f47408a369864a01ecf8a649da8fa8903255795d4",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard4"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_17/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_17/SummerWatermelonModel.cs",
+    "sha256": "7d5987f62ca48142eeec9896a5c102d9fbad27b72d45ee0d8099f12f851cca72",
+    "lines": 680,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass98_0",
+      "_003COnNewItem_003Ed__98"
+    ],
+    "method_count": 114,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_18/SummerWatermelonMergeBoard.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_18/SummerWatermelonMergeBoard.cs",
+    "sha256": "933812ef82b07f5547945b61a46b6b11d6e3af28a4cd1378ac580ea8d67aa1aa",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_18/SummerWatermelonMergeBoard_Big.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_18/SummerWatermelonMergeBoard_Big.cs",
+    "sha256": "92c73950e5d906aa09e4353d07b690b195e4430c26b9ec38a4e3004d8d108b6e",
+    "lines": 43,
+    "types": [
+      "SummerWatermelonMergeBoard_Big"
+    ],
+    "method_count": 9,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_18/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_18/SummerWatermelonModel.cs",
+    "sha256": "a7d860ca3662d5ed6ba2a1f7055a85e415230dbd60921de478d2ac1b47ae07dc",
+    "lines": 642,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass87_0",
+      "_003COnNewItem_003Ed__87"
+    ],
+    "method_count": 107,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_19/SummerWatermelonMergeBoard1.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_19/SummerWatermelonMergeBoard1.cs",
+    "sha256": "e7ca141483f35f55861bde7040dc79e4c9711537d642456f665b7a1fbc051663",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard1"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_19/SummerWatermelonMergeBoard2.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_19/SummerWatermelonMergeBoard2.cs",
+    "sha256": "2db016f0fed9f3375c1e3a09627992359d5fc92ba63b7380da69c4b384caedf0",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard2"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_19/SummerWatermelonMergeBoard3.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_19/SummerWatermelonMergeBoard3.cs",
+    "sha256": "f61c2f2aa725010347f2a4ad3e9f5deec5aa812a927e714c1ed4d9ee70519ace",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard3"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_19/SummerWatermelonMergeBoard4.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_19/SummerWatermelonMergeBoard4.cs",
+    "sha256": "589a5e83563ac456d9f2efd9cc11db1c82b6ce172c46d7ed049784736043b8e4",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard4"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_19/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_19/SummerWatermelonModel.cs",
+    "sha256": "8d58c9128a045ef72040370bcb44c84033f277dd4ffc887d9fce250076c19cc5",
+    "lines": 680,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass98_0",
+      "_003COnNewItem_003Ed__98"
+    ],
+    "method_count": 114,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_20/SummerWatermelonMergeBoard.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_20/SummerWatermelonMergeBoard.cs",
+    "sha256": "4af18f83551c461c8c34694098ec25d3420e2133c772d86d08c1bde609f2d7ee",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_20/SummerWatermelonMergeBoard_Big.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_20/SummerWatermelonMergeBoard_Big.cs",
+    "sha256": "6018cd4b8416d7b506e9b0cfa83aa1d1097d4b020103c2a70fe1b8e7f8478752",
+    "lines": 43,
+    "types": [
+      "SummerWatermelonMergeBoard_Big"
+    ],
+    "method_count": 9,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_20/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_20/SummerWatermelonModel.cs",
+    "sha256": "a7dac14caa2d72b52feba841b02099a91ad41c0e795aa0ed58dd13f4958f4a2d",
+    "lines": 642,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass87_0",
+      "_003COnNewItem_003Ed__87"
+    ],
+    "method_count": 107,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_21/SummerWatermelonMergeBoard1.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_21/SummerWatermelonMergeBoard1.cs",
+    "sha256": "a8dcaa16a4f1714aef7253fc54154be913b41d566d2aa72b9f25509d80b4c6f1",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard1"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_21/SummerWatermelonMergeBoard2.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_21/SummerWatermelonMergeBoard2.cs",
+    "sha256": "102ef54ce4616e989444f3529fb59c04660ed765ba326f91742ec3b928706f98",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard2"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_21/SummerWatermelonMergeBoard3.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_21/SummerWatermelonMergeBoard3.cs",
+    "sha256": "923db47769a52773195376c9b100b1291800c96303f4e5bc5a235fd05dbe5f91",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard3"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_21/SummerWatermelonMergeBoard4.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_21/SummerWatermelonMergeBoard4.cs",
+    "sha256": "f171e4fc898448db3ad5cc70d7f05d7a9aef3044c1580654e56c62efe539a825",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard4"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_21/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_21/SummerWatermelonModel.cs",
+    "sha256": "b6903f42353a6807bc0845d4f8b61154c7ebed709192288126a009fc805e246c",
+    "lines": 680,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass98_0",
+      "_003COnNewItem_003Ed__98"
+    ],
+    "method_count": 114,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_22/SummerWatermelonMergeBoard1.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_22/SummerWatermelonMergeBoard1.cs",
+    "sha256": "4ff5ee581afb6762c6e1b1213cde5b4771c484db1f06b110fc340fe22919bdc1",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard1"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_22/SummerWatermelonMergeBoard2.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_22/SummerWatermelonMergeBoard2.cs",
+    "sha256": "c6bb088e173234ba310250351d8b54c9f97f6ca3d1b8968f5813097e22330e1b",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard2"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_22/SummerWatermelonMergeBoard3.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_22/SummerWatermelonMergeBoard3.cs",
+    "sha256": "5d65fadf5446f94053982df5c955f7ff8f40ae5709eb4dd6522f730aba255486",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard3"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_22/SummerWatermelonMergeBoard4.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_22/SummerWatermelonMergeBoard4.cs",
+    "sha256": "e6c26519c04a0387195244ed8c19af76bb26c2d435f37d97b08f02943f263598",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard4"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_22/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_22/SummerWatermelonModel.cs",
+    "sha256": "994cd6add35814985718c82c2d21046a4e8b4b987802cbcb00ad21de5deace6d",
+    "lines": 693,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass98_0",
+      "_003COnNewItem_003Ed__98"
+    ],
+    "method_count": 117,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_23/SummerWatermelonMergeBoard.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_23/SummerWatermelonMergeBoard.cs",
+    "sha256": "dd35984f31a360f38a01343fee79a1a9118705b7b78a67ea93be1cfc1f658662",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_23/SummerWatermelonMergeBoard_Big.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_23/SummerWatermelonMergeBoard_Big.cs",
+    "sha256": "0fd1edd6bfee4e1e7df5456932a92aa29885896b613cf0d71da082b401ab954e",
+    "lines": 43,
+    "types": [
+      "SummerWatermelonMergeBoard_Big"
+    ],
+    "method_count": 9,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_23/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_23/SummerWatermelonModel.cs",
+    "sha256": "18e8198b659e9374d8cf3b087afc3fbbf1802dfc9d2ba807bfca770f5f9bb7ba",
+    "lines": 655,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass87_0",
+      "_003COnNewItem_003Ed__87"
+    ],
+    "method_count": 110,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_24/SummerWatermelonMergeBoard1.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_24/SummerWatermelonMergeBoard1.cs",
+    "sha256": "7ed1ebec8971026bc1544fe603ab321151579b98037b9e37110372faab67d390",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard1"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_24/SummerWatermelonMergeBoard2.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_24/SummerWatermelonMergeBoard2.cs",
+    "sha256": "e256353efd2ca8804c391ef74cd630a2d0f7a45f362f8c256d2bcfd67b9421c7",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard2"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_24/SummerWatermelonMergeBoard3.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_24/SummerWatermelonMergeBoard3.cs",
+    "sha256": "99f214428d3147a4c7e1e8357f956da5b9606a6b81aa497c8dd2bb7096c963dc",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard3"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_24/SummerWatermelonMergeBoard4.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_24/SummerWatermelonMergeBoard4.cs",
+    "sha256": "b0e5e1feb4080bc659f0ebfe6a542608915f85cca76d8ceaad072d5f891453b7",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard4"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_24/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_24/SummerWatermelonModel.cs",
+    "sha256": "268e9fb72799be2265a99277081493e2e7e585adb8f0b8bb2e6bb2d419cceb78",
+    "lines": 693,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass98_0",
+      "_003COnNewItem_003Ed__98"
+    ],
+    "method_count": 117,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_25/SummerWatermelonMergeBoard.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_25/SummerWatermelonMergeBoard.cs",
+    "sha256": "9b30fd2e7818cf7133d9d77daf7f062bcb26a900970de5de4a22ebd12650c02c",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_25/SummerWatermelonMergeBoard_Big.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_25/SummerWatermelonMergeBoard_Big.cs",
+    "sha256": "94c044bfc6ca86fb9511a7e7dfb4d90fcc34eeda2e9ef135d4bcf3aa2bc312db",
+    "lines": 43,
+    "types": [
+      "SummerWatermelonMergeBoard_Big"
+    ],
+    "method_count": 9,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_25/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_25/SummerWatermelonModel.cs",
+    "sha256": "6d9904c17495ef6de7278a04893f00c678b8b8914a3f3181a04c043e0da397fe",
+    "lines": 655,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass87_0",
+      "_003COnNewItem_003Ed__87"
+    ],
+    "method_count": 110,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_26/SummerWatermelonMergeBoard1.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_26/SummerWatermelonMergeBoard1.cs",
+    "sha256": "a37209c988216271c59ff57450b952c4c32792da5f40d937090698059d55b8cb",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard1"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_26/SummerWatermelonMergeBoard2.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_26/SummerWatermelonMergeBoard2.cs",
+    "sha256": "8255e3a002f7d878ad718e7a881a27c73781f2fd18405f58f6e00be90364da87",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard2"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_26/SummerWatermelonMergeBoard3.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_26/SummerWatermelonMergeBoard3.cs",
+    "sha256": "226083909bfcd6bf9f65c8da596c889aab2f9067c0bc78ad417cb006817f0d45",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard3"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_26/SummerWatermelonMergeBoard4.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_26/SummerWatermelonMergeBoard4.cs",
+    "sha256": "febe2a913498bfe974b6faddbd24d00a5737f07e87c67639fa537a17b9a19455",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard4"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_26/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_26/SummerWatermelonModel.cs",
+    "sha256": "f2b54ffa4f7c149f88f055291096bf262cbdfc77669266be8af81f1fcdf20d1b",
+    "lines": 693,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass98_0",
+      "_003COnNewItem_003Ed__98"
+    ],
+    "method_count": 117,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_27/SummerWatermelonMergeBoard.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_27/SummerWatermelonMergeBoard.cs",
+    "sha256": "cbce9c5887b60da6a4f32461cc39d1b8a85db068acdfe0f51385206b0de7725d",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_27/SummerWatermelonMergeBoard_Big.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_27/SummerWatermelonMergeBoard_Big.cs",
+    "sha256": "f2f8b033d2ec2325a0fdf17bc2ea7650df5c0787c04cc57353dd65ef653287a8",
+    "lines": 43,
+    "types": [
+      "SummerWatermelonMergeBoard_Big"
+    ],
+    "method_count": 9,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_27/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_27/SummerWatermelonModel.cs",
+    "sha256": "b398e3529c8daae71895d176531929cd9fe133437cb619b27d05742843ab8a43",
+    "lines": 655,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass87_0",
+      "_003COnNewItem_003Ed__87"
+    ],
+    "method_count": 110,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_28/SummerWatermelonMergeBoard1.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_28/SummerWatermelonMergeBoard1.cs",
+    "sha256": "97ea10bb04a67b4012f4e6d11b407ea202b25221ac47d5493432127eae49a20b",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard1"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_28/SummerWatermelonMergeBoard2.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_28/SummerWatermelonMergeBoard2.cs",
+    "sha256": "4e65154de086710fca808346cf58179ba9d0759893305ede19192f5a9caa199c",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard2"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_28/SummerWatermelonMergeBoard3.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_28/SummerWatermelonMergeBoard3.cs",
+    "sha256": "39427795b3a7b6cdfe3ca1e7e5b62d6c36f61647c9d33d1df2bac46d4bcd93d3",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard3"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_28/SummerWatermelonMergeBoard4.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_28/SummerWatermelonMergeBoard4.cs",
+    "sha256": "0b3a98ee2eb1d34197cf953d07bf202e88344766afe0fa1c3500c8a6c383ad16",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard4"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_28/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_28/SummerWatermelonModel.cs",
+    "sha256": "16c4549e07cf7228d5b939bb1531a5ba14453223e4bb16de502ec7fff7f93aa9",
+    "lines": 693,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass98_0",
+      "_003COnNewItem_003Ed__98"
+    ],
+    "method_count": 117,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_29/SummerWatermelonMergeBoard.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_29/SummerWatermelonMergeBoard.cs",
+    "sha256": "1ceb2dc6f8b615e5fbcf586ebdbf0b6a54258dc27da0b01fc0d3d09d96ab63cc",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_29/SummerWatermelonMergeBoard_Big.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_29/SummerWatermelonMergeBoard_Big.cs",
+    "sha256": "a48f3844f89de48ab170bd6e414e21855117182171bdde6ad88fbd2ebeb9b604",
+    "lines": 43,
+    "types": [
+      "SummerWatermelonMergeBoard_Big"
+    ],
+    "method_count": 9,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_29/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_29/SummerWatermelonModel.cs",
+    "sha256": "edc8f16625b426b2fe01aa0b940f085c4986bfbcac0955703773c7c44c4c4f97",
+    "lines": 655,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass87_0",
+      "_003COnNewItem_003Ed__87"
+    ],
+    "method_count": 110,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_3/SummerWatermelonMergeBoard.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_3/SummerWatermelonMergeBoard.cs",
+    "sha256": "31a78c2f1b39f13222f9fad833cff5de0686bbff12e35ba60e140c871ed1d82c",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_3/SummerWatermelonMergeBoard_Big.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_3/SummerWatermelonMergeBoard_Big.cs",
+    "sha256": "e385453c02953751579e1113a720fcf400397a9fb5287ed7eb61fddb8cf54e1b",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard_Big"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_3/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_3/SummerWatermelonModel.cs",
+    "sha256": "e68d3a47e477ec039b3a8bcdd6214bd20d1e00896731defc64d049bb4bf8fbb0",
+    "lines": 656,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass96_0",
+      "_003COnNewItem_003Ed__96"
+    ],
+    "method_count": 109,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_30/SummerWatermelonMergeBoard1.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_30/SummerWatermelonMergeBoard1.cs",
+    "sha256": "b4500d230e7e685b0100468b56eb8674f8a6122d879e12dc5a6014353b3d0ff7",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard1"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_30/SummerWatermelonMergeBoard2.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_30/SummerWatermelonMergeBoard2.cs",
+    "sha256": "1543ec81a3b0cfc933ab08c4a999287fcb5d97e9b9816accb45952b22b63a979",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard2"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_30/SummerWatermelonMergeBoard3.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_30/SummerWatermelonMergeBoard3.cs",
+    "sha256": "188612fee9b4d71225908a30e445615ffc06e3a95c97064dd15cb35e0a657cab",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard3"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_30/SummerWatermelonMergeBoard4.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_30/SummerWatermelonMergeBoard4.cs",
+    "sha256": "70e6b217acbc5e97009fcd661b48d09e3366274719cb63429be846ff7513ee46",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard4"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_30/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_30/SummerWatermelonModel.cs",
+    "sha256": "bb0bde8d55b6db1b43b8961be9433a8b4ae1ca2cc0da4bcd91a722e5d02919af",
+    "lines": 693,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass98_0",
+      "_003COnNewItem_003Ed__98"
+    ],
+    "method_count": 117,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_31/SummerWatermelonMergeBoard.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_31/SummerWatermelonMergeBoard.cs",
+    "sha256": "1e8faa6a6c3c18d59fec4666a8c233104f928a1c6cbc2f725c12c6d38dc13987",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_31/SummerWatermelonMergeBoard_Big.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_31/SummerWatermelonMergeBoard_Big.cs",
+    "sha256": "6408b3c9319374a82f3f0ee56134721fe1eab044289feb8259ced1b33d158b26",
+    "lines": 43,
+    "types": [
+      "SummerWatermelonMergeBoard_Big"
+    ],
+    "method_count": 9,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_31/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_31/SummerWatermelonModel.cs",
+    "sha256": "0b201ba9586939a7f41f21b239ec1c92ed1f5a854c8b0ab7b5f01695b0114bfc",
+    "lines": 655,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass87_0",
+      "_003COnNewItem_003Ed__87"
+    ],
+    "method_count": 110,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_32/SummerWatermelonMergeBoard1.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_32/SummerWatermelonMergeBoard1.cs",
+    "sha256": "bd68f5104e6d19405f8418d48aef6487d1a96093831e320263c1f2ff23374200",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard1"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_32/SummerWatermelonMergeBoard2.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_32/SummerWatermelonMergeBoard2.cs",
+    "sha256": "556e4403b79d49366783d88c94def556a6a4a78272d72110d62dea2d11b5b641",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard2"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_32/SummerWatermelonMergeBoard3.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_32/SummerWatermelonMergeBoard3.cs",
+    "sha256": "66aed434f5968b5d17cb2de50750a3a876f1a6d9b2d515d5f5ceb48c0e8d64f0",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard3"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_32/SummerWatermelonMergeBoard4.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_32/SummerWatermelonMergeBoard4.cs",
+    "sha256": "15a679513c2972879fd6c8a8f56f89e77c841fd59a41e0f5eb285fdf8fed8adc",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard4"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_32/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_32/SummerWatermelonModel.cs",
+    "sha256": "aa35537d75bdbd1b83acd250901a395dfe514f057bb44df07b16d5596e0186d2",
+    "lines": 693,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass98_0",
+      "_003COnNewItem_003Ed__98"
+    ],
+    "method_count": 117,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_33/SummerWatermelonMergeBoard.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_33/SummerWatermelonMergeBoard.cs",
+    "sha256": "6c1f2073402514702b69ac767ecf979eae90d133affa7bd0b51f7a8d4cddd54d",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_33/SummerWatermelonMergeBoard_Big.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_33/SummerWatermelonMergeBoard_Big.cs",
+    "sha256": "d5c7bafcdf11c23176e50e0b5e74c0a21a4b5d89726f60523fbad968b2913a46",
+    "lines": 43,
+    "types": [
+      "SummerWatermelonMergeBoard_Big"
+    ],
+    "method_count": 9,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_33/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_33/SummerWatermelonModel.cs",
+    "sha256": "47fe9648837895d97b7f3a2148611dcd4d44e490dbe2514b75f08f53b659dc4c",
+    "lines": 655,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass87_0",
+      "_003COnNewItem_003Ed__87"
+    ],
+    "method_count": 110,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_34/SummerWatermelonMergeBoard1.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_34/SummerWatermelonMergeBoard1.cs",
+    "sha256": "ba6e4a69c6b4f3eb6be21f3b77a33be4a17df2e9487408f4e77df76f0fe88cd4",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard1"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_34/SummerWatermelonMergeBoard2.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_34/SummerWatermelonMergeBoard2.cs",
+    "sha256": "16e4537a388efce6da6896562b601084c795062dacf0f13ba835a43770bd4af5",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard2"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_34/SummerWatermelonMergeBoard3.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_34/SummerWatermelonMergeBoard3.cs",
+    "sha256": "1a4df6cd99b06e8f4ceb7a7e81a5d36e68dbdc2e27cd1e5d701f02990992b6d3",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard3"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_34/SummerWatermelonMergeBoard4.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_34/SummerWatermelonMergeBoard4.cs",
+    "sha256": "dba0ac84c1d94f651a27e2de0def66b04b4685a0606d61f23169528d9ec3ad9a",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard4"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_34/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_34/SummerWatermelonModel.cs",
+    "sha256": "e360a71dd595936e5710682db301afd7c215fe2e8e38d3938629a1574a93c0bd",
+    "lines": 693,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass98_0",
+      "_003COnNewItem_003Ed__98"
+    ],
+    "method_count": 117,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_4/SummerWatermelonMergeBoard.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_4/SummerWatermelonMergeBoard.cs",
+    "sha256": "a283cc35de4cbd9efc11311cd6fcc256efe7a36f2891894dec8145566e14721f",
+    "lines": 51,
+    "types": [
+      "SummerWatermelonMergeBoard"
+    ],
+    "method_count": 10,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_4/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_4/SummerWatermelonModel.cs",
+    "sha256": "fa49f3942b5caa4e1afbc5e11959ec821676be2819f7767056af68a1dd0f0151",
+    "lines": 577,
+    "types": [
+      "SummerWatermelonModel",
+      "_003COnNewItem_003Ed__74",
+      "_003CUseMergeItem_003Ed__87"
+    ],
+    "method_count": 93,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_5/SummerWatermelonMergeBoard.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_5/SummerWatermelonMergeBoard.cs",
+    "sha256": "6e7ec3e8fa28e4c5f42aff1a4d97ac6aeb45e792de8d32aada2c3626f016478f",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_5/SummerWatermelonMergeBoard_Big.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_5/SummerWatermelonMergeBoard_Big.cs",
+    "sha256": "dc9f93e450ad09a38e82c11b14d1af8881ea5c382e465b886ec4e4f179f37f4f",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard_Big"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_5/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_5/SummerWatermelonModel.cs",
+    "sha256": "1149e0cb15e8f8648d0509437f4787ce670912fc7c934041c9b3a07b47e7ef25",
+    "lines": 660,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass96_0",
+      "_003COnNewItem_003Ed__96"
+    ],
+    "method_count": 110,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_6/SummerWatermelonMergeBoard.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_6/SummerWatermelonMergeBoard.cs",
+    "sha256": "21906190eb37b0b1c17ac5a6da35b928f19b0d14123031a13f4b1209c6bc2c69",
+    "lines": 51,
+    "types": [
+      "SummerWatermelonMergeBoard"
+    ],
+    "method_count": 10,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_6/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_6/SummerWatermelonModel.cs",
+    "sha256": "5615d5c17154be84db5c8c0853f36213d6adb96aa6c60641361b6cee97a3dcab",
+    "lines": 581,
+    "types": [
+      "SummerWatermelonModel",
+      "_003COnNewItem_003Ed__74",
+      "_003CUseMergeItem_003Ed__87"
+    ],
+    "method_count": 94,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_7/SummerWatermelonMergeBoard.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_7/SummerWatermelonMergeBoard.cs",
+    "sha256": "84db099cd3d14a562c5aad15e654a9517831d7c6a9652e4b2b27486e94265075",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_7/SummerWatermelonMergeBoard_Big.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_7/SummerWatermelonMergeBoard_Big.cs",
+    "sha256": "36028b6456a3e8255734b8ba3721659da00ce4c2a9994bbd182ebc2ea1a405f1",
+    "lines": 39,
+    "types": [
+      "SummerWatermelonMergeBoard_Big"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_7/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_7/SummerWatermelonModel.cs",
+    "sha256": "133a9cdce303d850075947fda87117e237a14360262a46f4915225291faf78cd",
+    "lines": 474,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass95_0",
+      "_003COnNewItem_003Ed__95"
+    ],
+    "method_count": 72,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_8/SummerWatermelonMergeBoard.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_8/SummerWatermelonMergeBoard.cs",
+    "sha256": "f471ab4b74b382742447163f0e71dcf4e862b7b081677033bbeeacaf4a671288",
+    "lines": 51,
+    "types": [
+      "SummerWatermelonMergeBoard"
+    ],
+    "method_count": 10,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_8/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_8/SummerWatermelonModel.cs",
+    "sha256": "f3b1151ef3a1ce211f6147d6339931085d779f909198c4edbce2c707fa6ce13c",
+    "lines": 581,
+    "types": [
+      "SummerWatermelonModel",
+      "_003COnNewItem_003Ed__74",
+      "_003CUseMergeItem_003Ed__87"
+    ],
+    "method_count": 94,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_9/SummerWatermelonMergeBoard.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_9/SummerWatermelonMergeBoard.cs",
+    "sha256": "609f75c60421c4ecf98579a872cdd105aafbff9d7e7d426ad4daf55a034e7974",
+    "lines": 43,
+    "types": [
+      "SummerWatermelonMergeBoard"
+    ],
+    "method_count": 9,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_9/SummerWatermelonMergeBoard_Big.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_9/SummerWatermelonMergeBoard_Big.cs",
+    "sha256": "dbf82a399a00a590f9ac499d471c35ffea3b4e4cc412377196ca59e611c7fa06",
+    "lines": 43,
+    "types": [
+      "SummerWatermelonMergeBoard_Big"
+    ],
+    "method_count": 9,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/SummerWatermelon_9/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/SummerWatermelon_9/SummerWatermelonModel.cs",
+    "sha256": "418db109ba0f25a860d1c8614cba5614922c205a8d4e13082bb537da2d90cab5",
+    "lines": 474,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass95_0",
+      "_003COnNewItem_003Ed__95"
+    ],
+    "method_count": 72,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "活动棋盘的物品生成与使用模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/TreasureHunt/TreasureHuntModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/TreasureHunt/TreasureHuntModel.cs",
+    "sha256": "305470998474789c274b95fa9f4fd3ee84b59c84ce3756d7d776e0d15fe7c171",
+    "lines": 173,
+    "types": [
+      "TreasureHuntModel"
+    ],
+    "method_count": 31,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "主棋盘直接调用的特殊产出/状态模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Activity/VegetableTreasures/Model/GardenTreasureModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Activity/VegetableTreasures/Model/GardenTreasureModel.cs",
+    "sha256": "fe65c907273c5d3ed4823da9e6d031232af8ab9c53e7d2c00b5bc6205338d435",
+    "lines": 215,
+    "types": [
+      "GardenTreasureModel"
+    ],
+    "method_count": 41,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "主棋盘直接调用的特殊产出/状态模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/ActivityLocal/NewbieRoom/Model/NewbieRoomModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/ActivityLocal/NewbieRoom/Model/NewbieRoomModel.cs",
+    "sha256": "e94b4240f2f7e18d4b5f30ee61ba678a3a7fe96e3fcd42fbdc53e4a5d3a19de5",
+    "lines": 184,
+    "types": [
+      "NewbieRoomModel"
+    ],
+    "method_count": 33,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "改变合成产出/棋盘状态的活动模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/BaseEvent.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/BaseEvent.cs",
+    "sha256": "ab3a40b730375b8fec328a8d00e71b128c001a2a852cf66a643df5359a27eb5c",
+    "lines": 14,
+    "types": [
+      "BaseEvent"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "核心类型的基类、接口、枚举或直接依赖"
+    ],
+    "selection_reasons": [
+      "二合代码的基类/容器/存档结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/BigBoardGridEight.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/BigBoardGridEight.cs",
+    "sha256": "c91c371b4a6ee693b08e0efcdd56a67ebb0013f27d4ecce5573bfa5cc9392936",
+    "lines": 26,
+    "types": [
+      "BigBoardGridEight"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "棋盘格配置类型"
+    ],
+    "selection_reasons": [
+      "含特殊解锁状态与替换物品字段的棋盘格结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/BigBoardGridFour.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/BigBoardGridFour.cs",
+    "sha256": "f85bf389f92a4dfcd3388c8af326bf35de846b0cbab75f30c8404f200679b86b",
+    "lines": 26,
+    "types": [
+      "BigBoardGridFour"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "棋盘格配置类型"
+    ],
+    "selection_reasons": [
+      "含特殊解锁状态与替换物品字段的棋盘格结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/BigBoardGridSix.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/BigBoardGridSix.cs",
+    "sha256": "90d838e9d192a922aa09407ee93eb7cbe86209f4f2dc0f401bfa7d9f46ea81e9",
+    "lines": 26,
+    "types": [
+      "BigBoardGridSix"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "棋盘格配置类型"
+    ],
+    "selection_reasons": [
+      "含特殊解锁状态与替换物品字段的棋盘格结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/ButterflyWorkShopConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/ButterflyWorkShopConfig.cs",
+    "sha256": "55655219be3d23e108f6c2265b4ffc72b3455f72642d6f5e644a9842c8355a24",
+    "lines": 32,
+    "types": [
+      "ButterflyWorkShopConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/ButterflyWorkShopMergeBoard.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/ButterflyWorkShopMergeBoard.cs",
+    "sha256": "bfba25bdaabc4098e8b1697fb9ac6f63111962d3f169fea577791d8719e6531c",
+    "lines": 26,
+    "types": [
+      "ButterflyWorkShopMergeBoard"
+    ],
+    "method_count": 6,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/ButterflyWorkShopModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/ButterflyWorkShopModel.cs",
+    "sha256": "5876903e9cb212be0867531836a95861c988b957f20bc028435e88cc44721b0d",
+    "lines": 300,
+    "types": [
+      "ButterflyWorkShopModel",
+      "_003C_003Ec__DisplayClass62_0",
+      "_003COnNewItem_003Ed__64",
+      "_003COnUseItem_003Ed__62"
+    ],
+    "method_count": 34,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "改变合成产出/棋盘状态的活动模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/ButterflyWorkShopProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/ButterflyWorkShopProductAttenuationConfig.cs",
+    "sha256": "24e50c9c916dd2ddf288371059276acdc5dd32575c1f5275ca1d1191195a1f96",
+    "lines": 21,
+    "types": [
+      "ButterflyWorkShopProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/CatSwimmingModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/CatSwimmingModel.cs",
+    "sha256": "b39d5f34d5ccc11f195650c86f144557f39923d15cc6ea258d4fb6a9d2558e6f",
+    "lines": 416,
+    "types": [
+      "CatSwimmingModel",
+      "_003CAddActivityScore_003Ed__50",
+      "_003CAddScore_003Ed__35"
+    ],
+    "method_count": 57,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "改变合成产出/棋盘状态的活动模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/DragonPlus/Config/EnergyMergeStage/EnergyMergeStageConfigManager.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/DragonPlus/Config/EnergyMergeStage/EnergyMergeStageConfigManager.cs",
+    "sha256": "3a60d4e24d174509fdfdcd43f7671d270b7807269986b70c903726b1ca950e95",
+    "lines": 42,
+    "types": [
+      "EnergyMergeStageConfigManager"
+    ],
+    "method_count": 3,
+    "reasons": [
+      "名称及类型直接涉及合成玩法"
+    ],
+    "selection_reasons": [
+      "直接影响合成产出或活动棋盘规则"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/DragonU3DSDK/Storage/StorageBase.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/DragonU3DSDK/Storage/StorageBase.cs",
+    "sha256": "b5725741f9b1fa82ac2e7ea731025d7c63b22e31f79117839fdcfd41756bb518",
+    "lines": 16,
+    "types": [
+      "StorageBase"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "核心类型的基类、接口、枚举或直接依赖"
+    ],
+    "selection_reasons": [
+      "二合代码的基类/容器/存档结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/DragonU3DSDK/Storage/StorageButterflyWorkShop.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/DragonU3DSDK/Storage/StorageButterflyWorkShop.cs",
+    "sha256": "36055b752073b87e52a33a873e49f051c152146551322dbcbd8b374eacae408b",
+    "lines": 190,
+    "types": [
+      "StorageButterflyWorkShop"
+    ],
+    "method_count": 0,
+    "reasons": [
+      "特殊合成棋盘存档类型"
+    ],
+    "selection_reasons": [
+      "玩法变体的存档结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/DragonU3DSDK/Storage/StorageDictionary.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/DragonU3DSDK/Storage/StorageDictionary.cs",
+    "sha256": "8e326d7a2894366f333d198a34d12bb771a5ba4e1282941535f06d46cbe9f3a7",
+    "lines": 45,
+    "types": [
+      "StorageDictionary"
+    ],
+    "method_count": 5,
+    "reasons": [
+      "核心类型的基类、接口、枚举或直接依赖"
+    ],
+    "selection_reasons": [
+      "二合代码的基类/容器/存档结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/DragonU3DSDK/Storage/StorageGame.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/DragonU3DSDK/Storage/StorageGame.cs",
+    "sha256": "1fbf4abb300bf787e41578a6824bdb8632e813eaba9486845079c64764b0e658",
+    "lines": 30,
+    "types": [
+      "StorageGame"
+    ],
+    "method_count": 0,
+    "reasons": [
+      "核心类型的基类、接口、枚举或直接依赖"
+    ],
+    "selection_reasons": [
+      "二合代码的基类/容器/存档结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/DragonU3DSDK/Storage/StorageList.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/DragonU3DSDK/Storage/StorageList.cs",
+    "sha256": "d61367ce462c874e74a6384c257a329b00fa8af1cbc6b9eb915ecdf8f52c49ff",
+    "lines": 83,
+    "types": [
+      "StorageList"
+    ],
+    "method_count": 14,
+    "reasons": [
+      "核心类型的基类、接口、枚举或直接依赖"
+    ],
+    "selection_reasons": [
+      "二合代码的基类/容器/存档结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/DragonU3DSDK/Storage/StorageMapAdventureOne.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/DragonU3DSDK/Storage/StorageMapAdventureOne.cs",
+    "sha256": "17aa522d161134ec651512d98b18fbca6e15464fcabb57cef77705f0c100964e",
+    "lines": 126,
+    "types": [
+      "StorageMapAdventureOne"
+    ],
+    "method_count": 0,
+    "reasons": [
+      "特殊合成棋盘存档类型"
+    ],
+    "selection_reasons": [
+      "玩法变体的存档结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/DragonU3DSDK/Storage/StorageMapAdventureOneMerge.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/DragonU3DSDK/Storage/StorageMapAdventureOneMerge.cs",
+    "sha256": "a5c8bed21ebff4b9810fcde47e1eaa24982602d8d2ba3c7848150605d4796e38",
+    "lines": 255,
+    "types": [
+      "StorageMapAdventureOneMerge"
+    ],
+    "method_count": 0,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "特殊合成棋盘存档类型"
+    ],
+    "selection_reasons": [
+      "玩法变体的存档结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/DragonU3DSDK/Storage/StorageMergeBoard.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/DragonU3DSDK/Storage/StorageMergeBoard.cs",
+    "sha256": "e090b3e1ea3fba3cc5c0273670adfacee361e5976764ac61ba91d64a2b170770",
+    "lines": 287,
+    "types": [
+      "StorageMergeBoard"
+    ],
+    "method_count": 0,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "二合代码的基类/容器/存档结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/DragonU3DSDK/Storage/StorageMergeItem.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/DragonU3DSDK/Storage/StorageMergeItem.cs",
+    "sha256": "a025551b7b9ce482e9fb096db829b32cad5e70111cd891679e611e3a51fb12f9",
+    "lines": 437,
+    "types": [
+      "StorageMergeItem"
+    ],
+    "method_count": 0,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "二合代码的基类/容器/存档结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/DragonU3DSDK/Storage/StorageMergeUnlockItem.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/DragonU3DSDK/Storage/StorageMergeUnlockItem.cs",
+    "sha256": "197bfb5d371a69ca0ccf0f9de334117074c29a0e13593dbcb471a9ba83763068",
+    "lines": 37,
+    "types": [
+      "StorageMergeUnlockItem"
+    ],
+    "method_count": 0,
+    "reasons": [
+      "名称及类型直接涉及合成玩法"
+    ],
+    "selection_reasons": [
+      "二合代码的基类/容器/存档结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/DragonU3DSDK/Storage/StorageNewbieRoom.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/DragonU3DSDK/Storage/StorageNewbieRoom.cs",
+    "sha256": "07d0c2963a9ef7a12a8f67cd93b5850626ec08cfd9e4ad4223adecdba84ac3d7",
+    "lines": 158,
+    "types": [
+      "StorageNewbieRoom"
+    ],
+    "method_count": 0,
+    "reasons": [
+      "特殊合成棋盘存档类型"
+    ],
+    "selection_reasons": [
+      "玩法变体的存档结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/DragonU3DSDK/Storage/StorageSummerWatermelon.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/DragonU3DSDK/Storage/StorageSummerWatermelon.cs",
+    "sha256": "d553438116b1b563d612eb4932b914c899e481b61c97d243cb5f16daa24e1693",
+    "lines": 156,
+    "types": [
+      "StorageSummerWatermelon"
+    ],
+    "method_count": 0,
+    "reasons": [
+      "特殊合成棋盘存档类型"
+    ],
+    "selection_reasons": [
+      "玩法变体的存档结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/DragonU3DSDK/Storage/StorageSummerWatermelonEleven.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/DragonU3DSDK/Storage/StorageSummerWatermelonEleven.cs",
+    "sha256": "15ded87ff28823e1777c1dbd043185a75d6c2298b391115eb7b663cda1cf18a3",
+    "lines": 303,
+    "types": [
+      "StorageSummerWatermelonEleven"
+    ],
+    "method_count": 0,
+    "reasons": [
+      "特殊合成棋盘存档类型"
+    ],
+    "selection_reasons": [
+      "玩法变体的存档结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/DragonU3DSDK/Storage/StorageSummerWatermelonFifteen.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/DragonU3DSDK/Storage/StorageSummerWatermelonFifteen.cs",
+    "sha256": "c1fc48472ae6b5d05fde80d58d6b44128a1c105bc4ee6dc18e46036dfc57d8ff",
+    "lines": 335,
+    "types": [
+      "StorageSummerWatermelonFifteen"
+    ],
+    "method_count": 0,
+    "reasons": [
+      "特殊合成棋盘存档类型"
+    ],
+    "selection_reasons": [
+      "玩法变体的存档结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/DragonU3DSDK/Storage/StorageSummerWatermelonFour.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/DragonU3DSDK/Storage/StorageSummerWatermelonFour.cs",
+    "sha256": "dd4a7bc394c7b5feb445511b302352148ef4ad87969b6f4b0f8d0cd0d5cabded",
+    "lines": 367,
+    "types": [
+      "StorageSummerWatermelonFour"
+    ],
+    "method_count": 0,
+    "reasons": [
+      "特殊合成棋盘存档类型"
+    ],
+    "selection_reasons": [
+      "玩法变体的存档结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/DragonU3DSDK/Storage/StorageSummerWatermelonSix.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/DragonU3DSDK/Storage/StorageSummerWatermelonSix.cs",
+    "sha256": "c53d9ebb2d58604603bce3ee52d692635f763635369a6898ed22c882a1bcf45f",
+    "lines": 367,
+    "types": [
+      "StorageSummerWatermelonSix"
+    ],
+    "method_count": 0,
+    "reasons": [
+      "特殊合成棋盘存档类型"
+    ],
+    "selection_reasons": [
+      "玩法变体的存档结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/DragonU3DSDK/Storage/StorageSummerWatermelonTen.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/DragonU3DSDK/Storage/StorageSummerWatermelonTen.cs",
+    "sha256": "f70e33e376e6be1b14c60ffa859bc28e0176686775dd347587c5f45d108c6620",
+    "lines": 319,
+    "types": [
+      "StorageSummerWatermelonTen"
+    ],
+    "method_count": 0,
+    "reasons": [
+      "特殊合成棋盘存档类型"
+    ],
+    "selection_reasons": [
+      "玩法变体的存档结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/DragonU3DSDK/Storage/StorageSummerWatermelonTwelve.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/DragonU3DSDK/Storage/StorageSummerWatermelonTwelve.cs",
+    "sha256": "df79590b9425db91964229bc54d8f26c93421abbff7b6cfbdbf240bb06734dde",
+    "lines": 319,
+    "types": [
+      "StorageSummerWatermelonTwelve"
+    ],
+    "method_count": 0,
+    "reasons": [
+      "特殊合成棋盘存档类型"
+    ],
+    "selection_reasons": [
+      "玩法变体的存档结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/DragonU3DSDK/Storage/StorageSummerWatermelonTwo.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/DragonU3DSDK/Storage/StorageSummerWatermelonTwo.cs",
+    "sha256": "c50e3381d2c440447c5554822067a440821038a89cd3697128bb3182e0bd86c0",
+    "lines": 287,
+    "types": [
+      "StorageSummerWatermelonTwo"
+    ],
+    "method_count": 0,
+    "reasons": [
+      "特殊合成棋盘存档类型"
+    ],
+    "selection_reasons": [
+      "玩法变体的存档结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/FishCultureModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/FishCultureModel.cs",
+    "sha256": "eae7b0fdea60ff4cd5985995773fe9b838097cea8b12eb22c89f7038a8c3a705",
+    "lines": 273,
+    "types": [
+      "FishCultureModel",
+      "_003CInitFromServerData_003Ed__29"
+    ],
+    "method_count": 39,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "主棋盘直接调用的特殊产出/状态模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/GameConfigManager.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/GameConfigManager.cs",
+    "sha256": "74c6a16caa33a4d24eb7ad73b27f0afa578f33c625fa274104a3334d3ea03240",
+    "lines": 95,
+    "types": [
+      "GameConfigManager"
+    ],
+    "method_count": 10,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "主棋盘与二合规则/状态/操作"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Gameplay/UserData.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Gameplay/UserData.cs",
+    "sha256": "31522fed8490b4f0a5eef3980dc9d0fa3c2cecc1e282021e5310f1131ae909bb",
+    "lines": 267,
+    "types": [
+      "UserData",
+      "ResourceId",
+      "ItemType",
+      "ResourceSubType"
+    ],
+    "method_count": 27,
+    "reasons": [
+      "核心类型的基类、接口、枚举或直接依赖"
+    ],
+    "selection_reasons": [
+      "主棋盘与二合规则/状态/操作"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MBDrag.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MBDrag.cs",
+    "sha256": "264239bf03b69dacad7bbfd673cda882859c4a422937926fec67a24b225568be",
+    "lines": 44,
+    "types": [
+      "MBDrag"
+    ],
+    "method_count": 5,
+    "reasons": [
+      "核心类型的基类、接口、枚举或直接依赖"
+    ],
+    "selection_reasons": [
+      "主棋盘与二合规则/状态/操作"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MapAdventureOneBarrier.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MapAdventureOneBarrier.cs",
+    "sha256": "876d3bf4c4334278f6a57424f38e3b1555ebbd8d6f66960d3d372e6874b6f1e1",
+    "lines": 21,
+    "types": [
+      "MapAdventureOneBarrier"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊棋盘解锁或障碍代码类型"
+    ],
+    "selection_reasons": [
+      "地图棋盘的障碍与解锁逻辑"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MapAdventureOneBarrierItem.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MapAdventureOneBarrierItem.cs",
+    "sha256": "d96b9fa26f70a464d3d23a6dc2d7b57f4fc22d397257523c039d531f6c2e57d2",
+    "lines": 32,
+    "types": [
+      "MapAdventureOneBarrierItem"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊棋盘解锁或障碍代码类型"
+    ],
+    "selection_reasons": [
+      "地图棋盘的障碍与解锁逻辑"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MapAdventureOneBoardGrid.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MapAdventureOneBoardGrid.cs",
+    "sha256": "1334c56b83bd588f94381993a4ae4970cb5a70072dfe2c37eefb875fe0e339bc",
+    "lines": 21,
+    "types": [
+      "MapAdventureOneBoardGrid"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "棋盘格配置类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MapAdventureOneConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MapAdventureOneConfig.cs",
+    "sha256": "b427b87da8e4f59f47569d515e9a4ea29f2083a160d5e1e0a333c382893ddd26",
+    "lines": 25,
+    "types": [
+      "MapAdventureOneConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MapAdventureOneDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MapAdventureOneDeleItemConfig.cs",
+    "sha256": "6a2411e21aed0b8d8b05e39bf7d7d5f40a672cc51cbb9dec54be6b5cb93075cd",
+    "lines": 19,
+    "types": [
+      "MapAdventureOneDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型",
+      "特殊棋盘解锁或障碍代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MapAdventureOneMergeConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MapAdventureOneMergeConfig.cs",
+    "sha256": "b55dd140f533a27255b3ac37b43839fbd1d6c53510cce1b0f86606650fbafcc3",
+    "lines": 30,
+    "types": [
+      "MapAdventureOneMergeConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MapAdventureOneUnlockFog.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MapAdventureOneUnlockFog.cs",
+    "sha256": "d6c5af30a583b23111d156b0a614640cc368a7c4c6ad0463526b6f29c536e92f",
+    "lines": 21,
+    "types": [
+      "MapAdventureOneUnlockFog"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊棋盘解锁或障碍代码类型"
+    ],
+    "selection_reasons": [
+      "地图棋盘的障碍与解锁逻辑"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MapAdventureTwoBarrier.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MapAdventureTwoBarrier.cs",
+    "sha256": "1d992c0f04578ce0394664b5cab12d885cc48d06db7a8e2e237498c35e0b1e7f",
+    "lines": 21,
+    "types": [
+      "MapAdventureTwoBarrier"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊棋盘解锁或障碍代码类型"
+    ],
+    "selection_reasons": [
+      "地图棋盘的障碍与解锁逻辑"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MapAdventureTwoBarrierItem.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MapAdventureTwoBarrierItem.cs",
+    "sha256": "00b38219e4f0dbad6ef64cc20f56e0ace55c8995451b21d31758b3919bf361ea",
+    "lines": 32,
+    "types": [
+      "MapAdventureTwoBarrierItem"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊棋盘解锁或障碍代码类型"
+    ],
+    "selection_reasons": [
+      "地图棋盘的障碍与解锁逻辑"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MapAdventureTwoBoardGrid.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MapAdventureTwoBoardGrid.cs",
+    "sha256": "fe5820f7db6cd0afd06bd0d1e0d72c10a3ef1d04b305334e13ff29b2390314c4",
+    "lines": 21,
+    "types": [
+      "MapAdventureTwoBoardGrid"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "棋盘格配置类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MapAdventureTwoConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MapAdventureTwoConfig.cs",
+    "sha256": "1dc01c4ee4f114a7a440b7a4fc84c1377e45cf2f0b56c483bb0074dcabc08060",
+    "lines": 25,
+    "types": [
+      "MapAdventureTwoConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MapAdventureTwoDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MapAdventureTwoDeleItemConfig.cs",
+    "sha256": "38c381a5a2c9742dfdd9efa6d7066a7cdb4ccdbd7f9187dd0026f80c21d935a2",
+    "lines": 19,
+    "types": [
+      "MapAdventureTwoDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型",
+      "特殊棋盘解锁或障碍代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MapAdventureTwoMergeConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MapAdventureTwoMergeConfig.cs",
+    "sha256": "585eeaf00c76edbf902a9458f77d209666798941c80257c6cf52a69c1aaef523",
+    "lines": 34,
+    "types": [
+      "MapAdventureTwoMergeConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MapAdventureTwoUnlockFog.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MapAdventureTwoUnlockFog.cs",
+    "sha256": "227f370efefba3664890e8931ae8f0052e5ee96b8f98c875ccaad414a0c2edc0",
+    "lines": 21,
+    "types": [
+      "MapAdventureTwoUnlockFog"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊棋盘解锁或障碍代码类型"
+    ],
+    "selection_reasons": [
+      "地图棋盘的障碍与解锁逻辑"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MergeBoard.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MergeBoard.cs",
+    "sha256": "e84020ff7b3190e9b99090ca6e8176a495eebbd9d0ae588cdaf03774d35e14bc",
+    "lines": 1044,
+    "types": [
+      "MergeBoard",
+      "Grid",
+      "AutoTipType",
+      "_003CDelayPlayAnim_003Ed__152",
+      "_003CDelayWorkGuideLogic_003Ed__56",
+      "_003CPlayTimeSpeedAnimation_003Ed__94",
+      "_003CPlayTimeTween_003Ed__95"
+    ],
+    "method_count": 144,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "主棋盘与二合规则/状态/操作"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MergeBoardEnum.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MergeBoardEnum.cs",
+    "sha256": "702466828d5fe4aea33d415e22f9983fcd7b0230813b09cbd1e9903dc6d9fee9",
+    "lines": 89,
+    "types": [
+      "MergeBoardEnum"
+    ],
+    "method_count": 0,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "核心类型的基类、接口、枚举或直接依赖"
+    ],
+    "selection_reasons": [
+      "主棋盘与二合规则/状态/操作"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MergeBoardItem.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MergeBoardItem.cs",
+    "sha256": "7f1c78f4b1d7d85ef45ed041241e1c90c76f255a3ee012a18d399910e3d51adb",
+    "lines": 1940,
+    "types": [
+      "MergeBoardItem",
+      "_003CHideOrderBoxHintAfterDelay_003Ed__158",
+      "_003COnDecompos_003Ed__143"
+    ],
+    "method_count": 188,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "主棋盘与二合规则/状态/操作"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MergeClickTips.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MergeClickTips.cs",
+    "sha256": "dbe592e740c30ca278f1ff15b63982f42b2743ebb88006ee80ad4e1019257b4a",
+    "lines": 441,
+    "types": [
+      "MergeClickTips",
+      "SpeedUpType",
+      "_003CSetBubbleDismiss_003Ed__98"
+    ],
+    "method_count": 53,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "主棋盘与二合规则/状态/操作"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MergeConfigManager.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MergeConfigManager.cs",
+    "sha256": "e94fac9f9d018a84781006fe70898fc5e29c8c9fe00253d18fa9a966519885c9",
+    "lines": 277,
+    "types": [
+      "MergeConfigManager",
+      "ConfigTemplate"
+    ],
+    "method_count": 48,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "主棋盘与二合规则/状态/操作"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MergeEvent.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MergeEvent.cs",
+    "sha256": "9848705ceb375cd9ac2760451723a6529091ddc534ded5b1faa2869470a043b0",
+    "lines": 36,
+    "types": [
+      "MergeEvent"
+    ],
+    "method_count": 0,
+    "reasons": [
+      "名称及类型直接涉及合成玩法"
+    ],
+    "selection_reasons": [
+      "主棋盘与二合规则/状态/操作"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MergeGuideLogic.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MergeGuideLogic.cs",
+    "sha256": "325b4ba91c236846990c1af68d83b5951141b1a2349ccb51b007b14d244198cf",
+    "lines": 211,
+    "types": [
+      "MergeGuideLogic"
+    ],
+    "method_count": 45,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "主棋盘与二合规则/状态/操作"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MergeItemStatus.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MergeItemStatus.cs",
+    "sha256": "f699e676383d798bc82c44bde28f50ebc4e77e11fcad0dc8f763da900760e4c1",
+    "lines": 11,
+    "types": [
+      "MergeItemStatus"
+    ],
+    "method_count": 0,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "核心类型的基类、接口、枚举或直接依赖"
+    ],
+    "selection_reasons": [
+      "主棋盘与二合规则/状态/操作"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MergeItemType.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MergeItemType.cs",
+    "sha256": "cff6d41a5da1a1c9891cd7406ff87ac5ca43f00f8cbb2d3e459f050e9059f6a6",
+    "lines": 40,
+    "types": [
+      "MergeItemType"
+    ],
+    "method_count": 0,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "核心类型的基类、接口、枚举或直接依赖"
+    ],
+    "selection_reasons": [
+      "主棋盘与二合规则/状态/操作"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MergeMainController.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MergeMainController.cs",
+    "sha256": "10247e225e82e358c1552995f9a0ab60b773670c34794d19351c90f07106ef21",
+    "lines": 499,
+    "types": [
+      "MergeMainController",
+      "MergeBoardTheme",
+      "MergeBoardThemeEnum",
+      "_003CStart_003Ed__77",
+      "_003CWaitHideBagEffect_003Ed__108"
+    ],
+    "method_count": 43,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "主棋盘与二合规则/状态/操作"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MergeManager.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MergeManager.cs",
+    "sha256": "bd6824c60af262842f79c7d81f13ac4b40ad71299c26d74e47f367bd3ecfecd4",
+    "lines": 1425,
+    "types": [
+      "MergeManager",
+      "MergeBoardDataStruct"
+    ],
+    "method_count": 294,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "主棋盘与二合规则/状态/操作"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MergePackageUnit.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MergePackageUnit.cs",
+    "sha256": "d2ec077f9f4394306130cae127ec7afb9bde8e7478528d44ab85c37a816abc1e",
+    "lines": 119,
+    "types": [
+      "MergePackageUnit"
+    ],
+    "method_count": 16,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "主棋盘与二合规则/状态/操作"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MergePackageUnitType.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MergePackageUnitType.cs",
+    "sha256": "f074ea57fb9015246174adfbe5fd278621949b47c6d78508dc1ca27e6e6459bd",
+    "lines": 25,
+    "types": [
+      "MergePackageUnitType"
+    ],
+    "method_count": 0,
+    "reasons": [
+      "名称及类型直接涉及合成玩法"
+    ],
+    "selection_reasons": [
+      "主棋盘与二合规则/状态/操作"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MergeResourceManager.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MergeResourceManager.cs",
+    "sha256": "8d8b263bc0d7acb5959706f5c50b7a8198fd7000356ea8c2a367562e65938dcf",
+    "lines": 182,
+    "types": [
+      "MergeResourceManager",
+      "MergeSourcesType"
+    ],
+    "method_count": 28,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "主棋盘与二合规则/状态/操作"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/MomentsLightModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/MomentsLightModel.cs",
+    "sha256": "9a3a25b324eb53ec92e2366d896583e84fea0a69be5296fccd400bbdccffdc40",
+    "lines": 192,
+    "types": [
+      "MomentsLightModel",
+      "MomentsLightPicStatus"
+    ],
+    "method_count": 36,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "主棋盘直接调用的特殊产出/状态模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/NewbieRoomConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/NewbieRoomConfig.cs",
+    "sha256": "1032269196c17cdc5d5639284d22d63ab552fda3be9da409dd9c3cd6099c6a25",
+    "lines": 22,
+    "types": [
+      "NewbieRoomConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/NewbieRoomMergeBoard.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/NewbieRoomMergeBoard.cs",
+    "sha256": "09796f63b872d5b196a39ec83b23f63e5e436fbac609f7c6b8089d23c38dedfb",
+    "lines": 32,
+    "types": [
+      "NewbieRoomMergeBoard"
+    ],
+    "method_count": 7,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/Order/Order/Creator/CreatorMergeLineFix.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/Order/Order/Creator/CreatorMergeLineFix.cs",
+    "sha256": "b08ef0d5548e8b19b01aafb57de83cbd43beebaccfb0b954defd5ae9c25aec26",
+    "lines": 14,
+    "types": [
+      "CreatorMergeLineFix"
+    ],
+    "method_count": 1,
+    "reasons": [
+      "名称及类型直接涉及合成玩法"
+    ],
+    "selection_reasons": [
+      "主棋盘与二合规则/状态/操作"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/PizzaTowerModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/PizzaTowerModel.cs",
+    "sha256": "6941983e4688bb5fe08bfbc263730b027532fe4e2069e1554d256586aba5cbdb",
+    "lines": 420,
+    "types": [
+      "PizzaTowerModel",
+      "_003CAddActivityScore_003Ed__51",
+      "_003CAddScore_003Ed__36"
+    ],
+    "method_count": 58,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "改变合成产出/棋盘状态的活动模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/RefreshItemSource.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/RefreshItemSource.cs",
+    "sha256": "d506c7b475e1246feecf3989fe1d7cc6205839cf120a4d21212eb178f4a08eab",
+    "lines": 20,
+    "types": [
+      "RefreshItemSource"
+    ],
+    "method_count": 0,
+    "reasons": [
+      "核心类型的基类、接口、枚举或直接依赖"
+    ],
+    "selection_reasons": [
+      "主棋盘与二合规则/状态/操作"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonConfig.cs",
+    "sha256": "aa9825f7e2d2d67d0bb3869dda56cbe3581d28cd8d1330caac9edfc4f94f92c4",
+    "lines": 22,
+    "types": [
+      "SummerWatermelonConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonEighTeenConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonEighTeenConfig.cs",
+    "sha256": "2db5d071e0a587a23d0be3eeb9a71614dadb4719273e01c30ae06ee10f4ee238",
+    "lines": 38,
+    "types": [
+      "SummerWatermelonEighTeenConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonEighTeenDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonEighTeenDeleItemConfig.cs",
+    "sha256": "54d5dfe669abb18f1c178998f66aed7d2932b51a25ee98878e8286a8d8e22548",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonEighTeenDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonEighTeenProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonEighTeenProductAttenuationConfig.cs",
+    "sha256": "249c77afb0316cf5e366688e9db083990d51e45cfcbd70aa1bff652e76cb200d",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonEighTeenProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonEighTeenProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonEighTeenProductConfig.cs",
+    "sha256": "1ce7aacef2e71b2344235d0ee7e4f2ef581ebb18421f07debb6a21db2b220268",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonEighTeenProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonEightConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonEightConfig.cs",
+    "sha256": "befb7525a04d1b59d19ac20d6f5b5d5def498ffda73dba55a46f129743f9f5e3",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonEightConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonEightDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonEightDeleItemConfig.cs",
+    "sha256": "a586011596e2cb43f33bd698fe6e402e2f5c0925716e26dde1094a42b3d7049b",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonEightDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonElevenConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonElevenConfig.cs",
+    "sha256": "fdafaccebe92bc934d6a7be1ab7692d20ba536bce79f3b146352d0ad9c563441",
+    "lines": 32,
+    "types": [
+      "SummerWatermelonElevenConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonElevenDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonElevenDeleItemConfig.cs",
+    "sha256": "6e00f55e1485ee316a7b1a1d3512f4d0442dc0a3ad78582b71b14c72c3e20673",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonElevenDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonElevenProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonElevenProductAttenuationConfig.cs",
+    "sha256": "da5ac211d9dc02c1deb7ba07090e5578016f2f6eaaf6f7bd9ee665de04fd8895",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonElevenProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonElevenProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonElevenProductConfig.cs",
+    "sha256": "007004aceb4a6f097f770fc129dd2090dff59296f22b77ab56cb72745386978c",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonElevenProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonFifteenConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonFifteenConfig.cs",
+    "sha256": "9f4d4f39ca5e1e9f9034ac584f7d1041f2c57510ecae48786d7bfb8dd98868db",
+    "lines": 32,
+    "types": [
+      "SummerWatermelonFifteenConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonFifteenDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonFifteenDeleItemConfig.cs",
+    "sha256": "0f245b0fba239348ed80094b88116d7e3ac442a947bc519376b81ea589b79744",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonFifteenDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonFifteenProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonFifteenProductAttenuationConfig.cs",
+    "sha256": "fec3f1f5d8b4124425eec5ec4b82c0264dfdeda3efed7f4e0e5d096aeababed9",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonFifteenProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonFifteenProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonFifteenProductConfig.cs",
+    "sha256": "6548ab127a53f85589cce3af1b76c0942587729c9f83a44d7b2637d2e2aa91cd",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonFifteenProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonFiveConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonFiveConfig.cs",
+    "sha256": "4ee198c908371c251e2833c78e3544ac5bf2b0472e11de5aa2be94297924e124",
+    "lines": 32,
+    "types": [
+      "SummerWatermelonFiveConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonFiveDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonFiveDeleItemConfig.cs",
+    "sha256": "a2711806d56d5c3ac4bc3a0d96fd5f34770542dd1ca0450f419fd17d44f306de",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonFiveDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonFiveProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonFiveProductAttenuationConfig.cs",
+    "sha256": "c641355a55cfd6e3734dc5a6bb06fbdda1bff5af41519c2c419941e81a01ece0",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonFiveProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonFiveProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonFiveProductConfig.cs",
+    "sha256": "5e68e1cae81dd5c94fc313045a1085579664c7d3cbf2d68277b6b9e31edd9130",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonFiveProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonFourConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonFourConfig.cs",
+    "sha256": "fd16555012e44de05954f2f42635bb1b7cae8f96876d664fd8148c1c6515e42d",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonFourConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonFourDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonFourDeleItemConfig.cs",
+    "sha256": "4ada5e5d6ad4ec814fccad60492c4d5fff4b8275cdfd3196e13b94b2705cd1ef",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonFourDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonFourteenConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonFourteenConfig.cs",
+    "sha256": "aa3e9ac895573fb0240e328c11334f8693dc93d7a8a3ca6ccffce4070bcca01e",
+    "lines": 32,
+    "types": [
+      "SummerWatermelonFourteenConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonFourteenDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonFourteenDeleItemConfig.cs",
+    "sha256": "8e775e1ba73a28d4d3a7df4ad0f19e02dd2ecdc1436c073088938da980cf545e",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonFourteenDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonFourteenProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonFourteenProductAttenuationConfig.cs",
+    "sha256": "1cb5760194acaa95265144b298e0b318080de44214b3bd28a76dadf471b7dd0f",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonFourteenProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonFourteenProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonFourteenProductConfig.cs",
+    "sha256": "8e67722e4504ba0471aff2ba775de03c3936292f3c43a10b3c2cb00e35208454",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonFourteenProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonMergeBoard.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonMergeBoard.cs",
+    "sha256": "824be745e6e4e274bbb6ab9256a3c70a02ce967379474436e3e53e1a3ca3309b",
+    "lines": 36,
+    "types": [
+      "SummerWatermelonMergeBoard"
+    ],
+    "method_count": 8,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "直接覆写二合棋盘方法的玩法变体"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonModel.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonModel.cs",
+    "sha256": "65fec683f185da8e428f631fce35bf209932529e4d06db5ccf2a4f9deb64077a",
+    "lines": 348,
+    "types": [
+      "SummerWatermelonModel",
+      "_003C_003Ec__DisplayClass84_0",
+      "_003COnNewItem_003Ed__84"
+    ],
+    "method_count": 46,
+    "reasons": [
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "早期活动二合物品生成模型"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonNineConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonNineConfig.cs",
+    "sha256": "13965f0d19951eea47ec048d1f2e8761b8f68156d293914361e3333baa64afa5",
+    "lines": 28,
+    "types": [
+      "SummerWatermelonNineConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonNineDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonNineDeleItemConfig.cs",
+    "sha256": "c69c71e796a6df809bef078df14e6482afc6ffd03ab7156a390ef4cbef256804",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonNineDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonNineProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonNineProductAttenuationConfig.cs",
+    "sha256": "283dc8a9b6d14ba3a365d6b3be70bd739f1ea43997a2b4f95951c0175b246a5c",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonNineProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonNineProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonNineProductConfig.cs",
+    "sha256": "4bfff676cc98aa7df45e18b4493017d3f9901c6666b82ad944b350297eda329c",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonNineProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonNineteenConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonNineteenConfig.cs",
+    "sha256": "632df131bfad661fcbdcdebb4c9e2ef00150466c7ded976b38ae8446834c6319",
+    "lines": 34,
+    "types": [
+      "SummerWatermelonNineteenConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonNineteenDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonNineteenDeleItemConfig.cs",
+    "sha256": "6b0e6a9e1ad2ca3f2fd147acb4665b36cef81d027d32912b53622292a91e36f8",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonNineteenDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonNineteenProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonNineteenProductAttenuationConfig.cs",
+    "sha256": "23cfd03ace2d7a5fc92d89a72a455a2cf17fc2b6ef2aa9d5e4dda1b348e5170e",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonNineteenProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonNineteenProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonNineteenProductConfig.cs",
+    "sha256": "942b0d357ea90fe86bda96ca447f7523f7fd25cbdda63d04925f905b4055709f",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonNineteenProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonProductAttenuationConfig.cs",
+    "sha256": "77c17d113c12a42ea153694424b6d912620e8721952dae66f38d1f1d7e0e01d3",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonProductConfig.cs",
+    "sha256": "936e3b3aebd0f5237c60e3bb25e96ba9c27a2041af3984b8550d7aec657ef401",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonSevenConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonSevenConfig.cs",
+    "sha256": "7d621fc6933495d793402034794522f332da26cc8424ecfb65cc7481f36dd98b",
+    "lines": 28,
+    "types": [
+      "SummerWatermelonSevenConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonSevenDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonSevenDeleItemConfig.cs",
+    "sha256": "44e35e87738cc390372dce60260ddea182e29b09b20425b4eefee6a1ba5e7048",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonSevenDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonSevenProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonSevenProductAttenuationConfig.cs",
+    "sha256": "7f99e7ad9de952f63f79c347e470b9792cabe2474a90532886dd8b9f7ecc8672",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonSevenProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonSevenProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonSevenProductConfig.cs",
+    "sha256": "7986a1a1ac948e7ae9523271f75750a80a47cd7b394b8a9f8a2d43cf751a86ca",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonSevenProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonSevenTeenConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonSevenTeenConfig.cs",
+    "sha256": "1bd058d6481ef52dc0d5903ce4dbdd56faf0abfa6fdf9755dbe8e0f7b5b64fca",
+    "lines": 34,
+    "types": [
+      "SummerWatermelonSevenTeenConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonSevenTeenDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonSevenTeenDeleItemConfig.cs",
+    "sha256": "09831135d70ecbaf287bc57850e582220a52bb68d0f9c0658e8951ea06a4615e",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonSevenTeenDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonSevenTeenProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonSevenTeenProductAttenuationConfig.cs",
+    "sha256": "3e7e686dc89caa806e8ab7964e27f8031f81ba3b5f95272d7c1e0dd9764509fd",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonSevenTeenProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonSevenTeenProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonSevenTeenProductConfig.cs",
+    "sha256": "b5d1860c976a6a90a0afb9fc994c87cdec52dfba03393b5133ef002ea5f1fb47",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonSevenTeenProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonSixConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonSixConfig.cs",
+    "sha256": "a86cedff1dacf74d3d70d659d0dfb734f68dd33d9a617ace49b5cd3089d258de",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonSixConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonSixDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonSixDeleItemConfig.cs",
+    "sha256": "1294b7371c69d7e78f756cfe909c2b7bf744bc71aa07f7cae2a2dfd596d90e3e",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonSixDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonSixTeenConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonSixTeenConfig.cs",
+    "sha256": "afa6c082ae7730de416f3df4e97122ab757a4283f53af84cae6ecb8b7324a8d6",
+    "lines": 38,
+    "types": [
+      "SummerWatermelonSixTeenConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonSixTeenDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonSixTeenDeleItemConfig.cs",
+    "sha256": "20bc56602ef9b0cfd1db367d544d66c46c879e08b767a8c80e5005fdd81246d3",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonSixTeenDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonSixTeenProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonSixTeenProductAttenuationConfig.cs",
+    "sha256": "b752b28143371ccb7ea05f9aa1ab6e89851c02692ea3a7b5fdd4c0a6c11541a4",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonSixTeenProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonSixTeenProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonSixTeenProductConfig.cs",
+    "sha256": "8f9b14a65bc19902f8a2712934b1a3d2b6a8ae80ae18dfce9bdd095e297f376d",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonSixTeenProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTenConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTenConfig.cs",
+    "sha256": "0e2523cb1aa48d3a97836a3e3be80f6ec084103c5e25b1e16d1858ac3d41293a",
+    "lines": 38,
+    "types": [
+      "SummerWatermelonTenConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTenDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTenDeleItemConfig.cs",
+    "sha256": "519ca5b3df1fc7a67482e40a4ccce67ea5175099020a44b919a91e441b41bd60",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonTenDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTenProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTenProductAttenuationConfig.cs",
+    "sha256": "4f68c7604e01f15683fec47dab48635a307f961488008638483250111442c1be",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonTenProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTenProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTenProductConfig.cs",
+    "sha256": "b7a519dee6729524e5c487a091afa1b77b947c4138098e9fc417ed5edcf8db03",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonTenProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThirteenConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThirteenConfig.cs",
+    "sha256": "6e5030829399ef2bad6deee20b76158812dda4e1ff12f80797a35d0ece8462cd",
+    "lines": 32,
+    "types": [
+      "SummerWatermelonThirteenConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThirteenDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThirteenDeleItemConfig.cs",
+    "sha256": "723afeb3a1d0142cc931840daa56fd8b3c96c7977d5823260e818c8b939fa4c1",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonThirteenDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThirteenProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThirteenProductAttenuationConfig.cs",
+    "sha256": "332f9c93e013c12de485c9ff1c5d4c79a10e5fad68da689b50401d2fe624db63",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonThirteenProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThirteenProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThirteenProductConfig.cs",
+    "sha256": "59c9638aa698913ce0f05fdbdfd5d4fa6f8af9e898bc5dec60fcfd52f260ba10",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonThirteenProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThirtyConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThirtyConfig.cs",
+    "sha256": "4d1349c9027bc28a172d8175d7c86f620ee2c4fab99f33766bf62e298516e098",
+    "lines": 34,
+    "types": [
+      "SummerWatermelonThirtyConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThirtyDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThirtyDeleItemConfig.cs",
+    "sha256": "cefde8d1a8e4f9dafda0539e94177977d5d82b0b8549fc10c5610c4451b04d9c",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonThirtyDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThirtyFourConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThirtyFourConfig.cs",
+    "sha256": "b4ece1ee268a050d88228e67dc2b94292ff2cf2b854695e5d09ebf80df1c1a62",
+    "lines": 34,
+    "types": [
+      "SummerWatermelonThirtyFourConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThirtyFourDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThirtyFourDeleItemConfig.cs",
+    "sha256": "f52af3941b19be730c9bfcef7a67d1a086b65ab50a7c29cd119ac1bd02cbf925",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonThirtyFourDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThirtyFourProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThirtyFourProductAttenuationConfig.cs",
+    "sha256": "c461e7bed4661efdb8ed87a03d4e7e5251f05c7a93ae4e57f39a0b631cca2a0b",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonThirtyFourProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThirtyFourProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThirtyFourProductConfig.cs",
+    "sha256": "e2450857d237b4dd54b06d464c01a032193fe9ad8b6b8d06cb70d9531c78188f",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonThirtyFourProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThirtyOneConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThirtyOneConfig.cs",
+    "sha256": "22505f3874b30ce3a07e88ba72b86ec56624126153a7e2d95883b2038d5c4f7f",
+    "lines": 38,
+    "types": [
+      "SummerWatermelonThirtyOneConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThirtyOneDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThirtyOneDeleItemConfig.cs",
+    "sha256": "990a36402af0efa330b2da2b674e6ee4548b38b613dbd2293ea20f01b98fb0e0",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonThirtyOneDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThirtyOneProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThirtyOneProductAttenuationConfig.cs",
+    "sha256": "2b314891f5ac7e09733145cb234e517df140f3087e92c411657398d00b39079c",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonThirtyOneProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThirtyOneProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThirtyOneProductConfig.cs",
+    "sha256": "23d89a8b16ddb4d6d0e346c02cf8b00e705848149881062bb3695836a02d7cf7",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonThirtyOneProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThirtyProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThirtyProductAttenuationConfig.cs",
+    "sha256": "4dc377eff4d4857b2cebddffc6bb1c43bd3b66b97b607e4beca72ddbdd41fe47",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonThirtyProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThirtyProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThirtyProductConfig.cs",
+    "sha256": "f32e00f0bf8adfe72927dfb7669cbedeed86be61edcbaddd71f81664bfdeb6c9",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonThirtyProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThirtyThreeConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThirtyThreeConfig.cs",
+    "sha256": "b3bc20c27f5c0dddfcba14c8f5eac7a762717b45947f990f3a4e23da00e616f9",
+    "lines": 38,
+    "types": [
+      "SummerWatermelonThirtyThreeConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThirtyThreeDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThirtyThreeDeleItemConfig.cs",
+    "sha256": "e4739edbb1025d2e71eff7af122c2e505a90a0667c64b065274cbd18d1ea061f",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonThirtyThreeDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThirtyThreeProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThirtyThreeProductAttenuationConfig.cs",
+    "sha256": "e5399a50ae3e756b77f803527ed9b873b22999ff4f18b40d677bb262f2d54789",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonThirtyThreeProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThirtyThreeProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThirtyThreeProductConfig.cs",
+    "sha256": "81006d68fdc9d00bda6ab8a5a76a7aff44d2a34cdb650f054e3d6ce33c832f51",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonThirtyThreeProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThirtyTwoConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThirtyTwoConfig.cs",
+    "sha256": "464826faff28f9ea27654dceb34da925d11f01b78e5db9c1195e45d5f0cf4b45",
+    "lines": 34,
+    "types": [
+      "SummerWatermelonThirtyTwoConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThirtyTwoDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThirtyTwoDeleItemConfig.cs",
+    "sha256": "05336cf12bfc8f0dbaa6461b8c1a59a61430dd4a08402563443f212303557a86",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonThirtyTwoDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThirtyTwoProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThirtyTwoProductAttenuationConfig.cs",
+    "sha256": "c156629715ba9f633bcdf2ede91aa3d07fe21f46137d90862a10730dc378a408",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonThirtyTwoProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThirtyTwoProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThirtyTwoProductConfig.cs",
+    "sha256": "f3a0a96f8eb5180d45416d4b4124bcfabeaf8e2895381f8aab007239509c5dba",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonThirtyTwoProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThreeConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThreeConfig.cs",
+    "sha256": "f50a63764942d17ccec14ac99f5644c626f89544f66a093f1931f60adbf673ca",
+    "lines": 32,
+    "types": [
+      "SummerWatermelonThreeConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThreeDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThreeDeleItemConfig.cs",
+    "sha256": "88dcddfd835d6b86592af7f1847f20b745fb6979f8833c2fc435b96ad63126ab",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonThreeDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThreeProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThreeProductAttenuationConfig.cs",
+    "sha256": "4ce9cf49cd1493cc063b0b19163d6c6fd3bbb69c4217d40e31f6ba0c6f19eb39",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonThreeProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonThreeProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonThreeProductConfig.cs",
+    "sha256": "3b73db3dc3b07d0214706a60d29641e6ffd551fc993dd33ff3ea18a12579c67d",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonThreeProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwelveConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwelveConfig.cs",
+    "sha256": "21256db1b5552fa40d7e5df932c2ce554f8941c59498ac46344109cd6ca127fb",
+    "lines": 32,
+    "types": [
+      "SummerWatermelonTwelveConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwelveDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwelveDeleItemConfig.cs",
+    "sha256": "b6ff80f5abfec1eef8a52a4cca746098cf27960d45a4b252d5fb37d176ba70c5",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonTwelveDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwelveProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwelveProductAttenuationConfig.cs",
+    "sha256": "c74b1ea59fd56e235bed444a0b9ff75798ab059174833dee11092ec56dacc3c2",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonTwelveProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwelveProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwelveProductConfig.cs",
+    "sha256": "b8b2720155a5e80d9938c04b0d47f88b9ef8f9c1f0b2b6a464762dd5c5c836c2",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonTwelveProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyConfig.cs",
+    "sha256": "198062844e5da26fee08072a6f251d78d8af266fd18742a85352dcaadcbe8161",
+    "lines": 38,
+    "types": [
+      "SummerWatermelonTwentyConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyDeleItemConfig.cs",
+    "sha256": "cdc8c5eb3ca1292dd803e46582ff8ff60190e0bc6e08bb081c810256297ca4ca",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonTwentyDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyEightConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyEightConfig.cs",
+    "sha256": "4da33ba393289484f6d6b26bc1154c2a44521a5d5104834793ff54b08c00985a",
+    "lines": 34,
+    "types": [
+      "SummerWatermelonTwentyEightConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyEightDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyEightDeleItemConfig.cs",
+    "sha256": "5488e5eee07353a13152f0656b07689164f4fb98413b9b69a9b48a025e4640a4",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonTwentyEightDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyEightProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyEightProductAttenuationConfig.cs",
+    "sha256": "e14e816dcec972ac754897d8ef592ecf87c76997eff86e6a832931a33eff27b2",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonTwentyEightProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyEightProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyEightProductConfig.cs",
+    "sha256": "71ebc50e4a8a6ff136c58daccdbecd281bf972430172ca1bf57c9b4159ec2824",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonTwentyEightProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyFiveConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyFiveConfig.cs",
+    "sha256": "fbf09e5b03e3dac527d4cf326578cbded9f9ce93ceb6e25135ec772b7c969147",
+    "lines": 38,
+    "types": [
+      "SummerWatermelonTwentyFiveConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyFiveDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyFiveDeleItemConfig.cs",
+    "sha256": "be33890e9a29b6ac054257138bfc63495698a931d8d885a154f685064f28ea8e",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonTwentyFiveDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyFiveProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyFiveProductAttenuationConfig.cs",
+    "sha256": "031c68535efb4d82a9104da0c5c61bfd3e1a3e0679081fd0efccba15455e4153",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonTwentyFiveProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyFiveProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyFiveProductConfig.cs",
+    "sha256": "6b646bac728f6d95350945f553ea6e51f95480837bff232099c02d2dcc7e283b",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonTwentyFiveProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyFourConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyFourConfig.cs",
+    "sha256": "b1a020bfade6ee92fb6a6763c197381592e62e41fb04ba1a7168672966362502",
+    "lines": 34,
+    "types": [
+      "SummerWatermelonTwentyFourConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyFourDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyFourDeleItemConfig.cs",
+    "sha256": "46366fc1c400497ecd55fed290e90a1edea1f5ef3193c1b37820034903536f3c",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonTwentyFourDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyFourProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyFourProductAttenuationConfig.cs",
+    "sha256": "d7e158e4daa86e8a9e0554e6b48d04c0d74994c4f896e2c187569460134ec041",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonTwentyFourProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyFourProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyFourProductConfig.cs",
+    "sha256": "31bfa451700df5874ae315b98994f6047d871dc4d200ad492e0a9cf2196ca45f",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonTwentyFourProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyNineConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyNineConfig.cs",
+    "sha256": "35246e7f61a6bca689e3aec205d925ecfbc877a944699b66a07a3edc51fb2d68",
+    "lines": 38,
+    "types": [
+      "SummerWatermelonTwentyNineConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyNineDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyNineDeleItemConfig.cs",
+    "sha256": "c01824e893d2c786f83e1f0dc1855596d57e684b6099c48acdc5f355bf5ef5f4",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonTwentyNineDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyNineProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyNineProductAttenuationConfig.cs",
+    "sha256": "6fe711ce0cd9accc5206900ff369048deaf7a33abd75ba4138954a13fe634a14",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonTwentyNineProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyNineProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyNineProductConfig.cs",
+    "sha256": "8a4e912b9dfa49db51c8d82a5eefb0d66e59d33a0fe1a67e0b194ba315c73170",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonTwentyNineProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyOneConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyOneConfig.cs",
+    "sha256": "0e778e6343bf070fdf706549ccc9c20992c7064776115cfd99ed804b8f94b492",
+    "lines": 34,
+    "types": [
+      "SummerWatermelonTwentyOneConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyOneDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyOneDeleItemConfig.cs",
+    "sha256": "35543a8920f35a794fa64609163bd8b64db3423061ffd6ab1eac31313473b143",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonTwentyOneDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyOneProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyOneProductAttenuationConfig.cs",
+    "sha256": "1e41375b7a509e8bbd0de51bd979022dae947f3919ee4c072ba1803a3c6e57b6",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonTwentyOneProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyOneProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyOneProductConfig.cs",
+    "sha256": "652b7df0efbede2ba76b3481af6672958539f2cd3b3f88440d42749b6bacb070",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonTwentyOneProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyProductAttenuationConfig.cs",
+    "sha256": "ee135e4c25972304bb58748668a0dd3d9f83406e4e7c82ae7c2c900366727f3c",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonTwentyProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyProductConfig.cs",
+    "sha256": "8b2fa85c008511850d1014a6e4af5243f18d23eb62780d8b9862ef12a65888b9",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonTwentyProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentySevenConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentySevenConfig.cs",
+    "sha256": "397a5facbdb24884f16525a424aeeb60babd888fe8dcef49b24d2f9683267ea2",
+    "lines": 38,
+    "types": [
+      "SummerWatermelonTwentySevenConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentySevenDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentySevenDeleItemConfig.cs",
+    "sha256": "44cf54b476b8828a8db8a82a85e773bff86b6cfd70f93e95cf72ecd3b76c7910",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonTwentySevenDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentySevenProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentySevenProductAttenuationConfig.cs",
+    "sha256": "b12e4345c2692e4de6581495abfd4fcaef313f401154a690a52988e2cfb6178d",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonTwentySevenProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentySevenProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentySevenProductConfig.cs",
+    "sha256": "0e1dce1c923223b2bba4e88c80104016aa7ad62470e30cd650c64d099ec044a9",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonTwentySevenProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentySixConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentySixConfig.cs",
+    "sha256": "9c52b5184bb70e04b48ec952dfe8b3c0c40eec512d4f71ccb5b0743c8a9dd730",
+    "lines": 34,
+    "types": [
+      "SummerWatermelonTwentySixConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentySixDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentySixDeleItemConfig.cs",
+    "sha256": "00cf2400724c8a3cdef94d51c52202b7b5de1ff77ba5b2b6069203aa2debe95a",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonTwentySixDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentySixProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentySixProductAttenuationConfig.cs",
+    "sha256": "aad5827b248e1910fc85d83e21b3f72cef8ac643697ed96691cb932d98462e2c",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonTwentySixProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentySixProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentySixProductConfig.cs",
+    "sha256": "a71c6908d708eb66a3a6e36d51e2d390003d81279913bc0fa22b268297ae672e",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonTwentySixProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyThreeConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyThreeConfig.cs",
+    "sha256": "47ebdad09cf1571efd5ad9f958ba65470c87f152f41ea8cc41424afb3f6e5d7d",
+    "lines": 38,
+    "types": [
+      "SummerWatermelonTwentyThreeConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyThreeDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyThreeDeleItemConfig.cs",
+    "sha256": "5b3ad94d5f7069ed68de93f602c1c120a2761190d04b979bcb1cf5e98d5fbc10",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonTwentyThreeDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyThreeProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyThreeProductAttenuationConfig.cs",
+    "sha256": "500431e595d14ae8c1337d5cfb1301e2731bbbd162d66c8683e18aeffa583130",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonTwentyThreeProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyThreeProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyThreeProductConfig.cs",
+    "sha256": "aa4c1aa0fb7408ad528a315bcf17b92cbc643a223aa88dfaeb7f9737725827f5",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonTwentyThreeProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyTwoConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyTwoConfig.cs",
+    "sha256": "629471ff6c3273d4d44ecdeeb552211b36cd476438fd14287c7639e0e7611bdc",
+    "lines": 34,
+    "types": [
+      "SummerWatermelonTwentyTwoConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyTwoDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyTwoDeleItemConfig.cs",
+    "sha256": "5106c9a0bfda7e7ab4dd94d797c0c1d79005b46d4f14b01defea95b13cea9a61",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonTwentyTwoDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyTwoProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyTwoProductAttenuationConfig.cs",
+    "sha256": "f4af52e9c6d463ff4f5f004d6cfe45375c6d029f1b3cb2d2a0ae505b9aaaad91",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonTwentyTwoProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwentyTwoProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwentyTwoProductConfig.cs",
+    "sha256": "22a43acc429ebfe24e7044e0c69124e413ca676b3fee4931320042999b9f7036",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonTwentyTwoProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwoConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwoConfig.cs",
+    "sha256": "6762f7970509f7575f7227e7e1993981ee772c944376d5052db20215226890e9",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonTwoConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwoDeleItemConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwoDeleItemConfig.cs",
+    "sha256": "0c9096a50464826f28b712a7bc06a391715f25fa878a439de59aff107ce4b82f",
+    "lines": 19,
+    "types": [
+      "SummerWatermelonTwoDeleItemConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwoProductAttenuationConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwoProductAttenuationConfig.cs",
+    "sha256": "1187271036520d0327caa531103540e2db45cb6867b6c979d2dd67921adaa5f0",
+    "lines": 21,
+    "types": [
+      "SummerWatermelonTwoProductAttenuationConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/SummerWatermelonTwoProductConfig.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/SummerWatermelonTwoProductConfig.cs",
+    "sha256": "d9ee141c18ebce7a8ef1e73f9fcc39f9f259c665b19697cfee52bc582bc06969",
+    "lines": 26,
+    "types": [
+      "SummerWatermelonTwoProductConfig"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "生成物及衰减配置类型",
+      "特殊合成棋盘配置代码类型"
+    ],
+    "selection_reasons": [
+      "玩法变体直接使用的规则/生成/格子结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/TableBase.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/TableBase.cs",
+    "sha256": "1a622f55f8622aa00c361f048d86373c3fd0cbb7db4fdf3946cb735819e9ed9e",
+    "lines": 10,
+    "types": [
+      "TableBase"
+    ],
+    "method_count": 1,
+    "reasons": [
+      "核心类型的基类、接口、枚举或直接依赖"
+    ],
+    "selection_reasons": [
+      "二合代码的基类/容器/存档结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/TableBoardGrid.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/TableBoardGrid.cs",
+    "sha256": "392405559be25bf1f0c70176ee54808651b08df39a2ddfb9ce469f8c354ac798",
+    "lines": 21,
+    "types": [
+      "TableBoardGrid"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "棋盘格配置类型"
+    ],
+    "selection_reasons": [
+      "二合物品/合成线/棋盘配置结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/TableBoardGrid2.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/TableBoardGrid2.cs",
+    "sha256": "a59bd349a177ea8d32318c7bc5565fc3ca5dde2ca15294848990af3dbe330f5d",
+    "lines": 21,
+    "types": [
+      "TableBoardGrid2"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "棋盘格配置类型"
+    ],
+    "selection_reasons": [
+      "二合物品/合成线/棋盘配置结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/TableMergeItem.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/TableMergeItem.cs",
+    "sha256": "323580687bd9bfd6eb0b27243f4a8f9d594d7b963e272639bb856edcbfefd0d6",
+    "lines": 159,
+    "types": [
+      "TableMergeItem"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "名称及类型直接涉及合成玩法",
+      "成员签名直接引用核心合成类型"
+    ],
+    "selection_reasons": [
+      "二合物品/合成线/棋盘配置结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/TableMergeItem2.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/TableMergeItem2.cs",
+    "sha256": "1421c1d54578816f2728b98063a49e3dc38aabc68035f9e08ab720f2e0bdd8f0",
+    "lines": 157,
+    "types": [
+      "TableMergeItem2"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "名称及类型直接涉及合成玩法"
+    ],
+    "selection_reasons": [
+      "二合物品/合成线/棋盘配置结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/TableMergeLine.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/TableMergeLine.cs",
+    "sha256": "995f227206e9cd9beb1a1cc66b91b18b484b712ee1700f54f4ab07929511c509",
+    "lines": 37,
+    "types": [
+      "TableMergeLine"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "名称及类型直接涉及合成玩法"
+    ],
+    "selection_reasons": [
+      "二合物品/合成线/棋盘配置结构"
+    ]
+  },
+  {
+    "path": "code/AssetRipper_generated_CSharp/Assembly-CSharp/TableUnlockMergeLine.cs",
+    "source_path": "ExportedProject/Assets/Scripts/Assembly-CSharp/TableUnlockMergeLine.cs",
+    "sha256": "861adb8393e6353aec3ae605a76c29f92d2a4cffad49f01df48bbc7a3b46d60f",
+    "lines": 27,
+    "types": [
+      "TableUnlockMergeLine"
+    ],
+    "method_count": 2,
+    "reasons": [
+      "名称及类型直接涉及合成玩法"
+    ],
+    "selection_reasons": [
+      "二合物品/合成线/棋盘配置结构"
+    ]
+  }
+]

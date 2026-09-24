@@ -1,0 +1,33 @@
+// Namespace: 
+public class ItemChainManager.SpawnerPointsQueryHandler // TypeDefIndex: 1719
+{
+	// Fields
+	private bool _queryInitialized; // 0x8
+	private bool _locked; // 0x9
+	private readonly Dictionary<int, List<ItemChainManager.SpawnerPointsQuery>> _querySetIDDictionary; // 0xC
+	private readonly Dictionary<int, List<ItemChainManager.SpawnerPointsQuery>> _queryLocationDictionary; // 0x10
+
+	// Methods
+
+	// RVA: 0x190CA84 Offset: 0x190CA84 VA: 0x190CA84
+	public int GetTotalPointsForSetIDQuery(int anySetID) { }
+
+	// RVA: 0x190C3E8 Offset: 0x190C3E8 VA: 0x190C3E8
+	public int GetMaxPointsForSetIDQuery(int anySetID, out int counter) { }
+
+	// RVA: 0x190E8D0 Offset: 0x190E8D0 VA: 0x190E8D0
+	public void AddToQueryList(int setID, int location, int index, int level, bool skipCheck = False) { }
+
+	// RVA: 0x190B650 Offset: 0x190B650 VA: 0x190B650
+	public void RemoveQuery(int setID, int location, int oldIndex) { }
+
+	// RVA: 0x190D018 Offset: 0x190D018 VA: 0x190D018
+	public void InitializeSpawnerQuery(List<BoardPositionEntity> positions, List<ItemEntity> inventoryItems, List<RewardEntity> activeRewards) { }
+
+	// RVA: 0x190F200 Offset: 0x190F200 VA: 0x190F200
+	public void SetQueryLock(bool locked) { }
+
+	// RVA: 0x1903D14 Offset: 0x1903D14 VA: 0x1903D14
+	public void .ctor() { }
+}
+

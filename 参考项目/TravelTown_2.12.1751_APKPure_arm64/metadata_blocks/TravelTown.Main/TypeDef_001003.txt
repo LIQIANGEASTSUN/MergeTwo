@@ -1,0 +1,23 @@
+// Namespace: MergeEngine.ECS.Systems.Items.Exceptions
+internal class ProcessItemException : Exception // TypeDefIndex: 1003
+{
+	// Fields
+	private readonly string _id; // 0x90
+	private readonly Exception _originalException; // 0x98
+
+	// Properties
+	public override string Message { get; }
+	public override string StackTrace { get; }
+
+	// Methods
+
+	// RVA: 0x67A3210 Offset: 0x679F210 VA: 0x67A3210
+	public void .ctor(string id, Exception e) { }
+
+	// RVA: 0x67A3298 Offset: 0x679F298 VA: 0x67A3298 Slot: 5
+	public override string get_Message() { }
+
+	// RVA: 0x67A3320 Offset: 0x679F320 VA: 0x67A3320 Slot: 10
+	public override string get_StackTrace() { }
+}
+

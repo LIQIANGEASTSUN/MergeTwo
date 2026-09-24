@@ -1,0 +1,181 @@
+// Namespace: Merger.MergeBoard.View
+public class MergeBoardView : ViewBase<MergeBoardViewModel>, IBoardControllerPostTickProcessor, IMergeBoardContentController // TypeDefIndex: 25687
+{
+	// Fields
+	[SerializeField]
+	private MergeBoardLayout _layout; // 0x30
+	[SerializeField]
+	private MergeBoardItemsContainer _itemsContainer; // 0x38
+	[SerializeField]
+	private MergeBoardHintView _hintView; // 0x40
+	[SerializeField]
+	private MergeBoardSelectorView _selector; // 0x48
+	[SerializeField]
+	private MergeBoardItemsAnimationsView _itemsAnimationsView; // 0x50
+	[SerializeField]
+	private FloatingTextsView _boardFloatingTextView; // 0x58
+	[SerializeField]
+	private MergeBoardCombinationVerificationView _combinationVerificationView; // 0x60
+	[SerializeField]
+	private MergeBoardContentView _boardContentView; // 0x68
+	[CompilerGenerated]
+	private Action BeforeBoardPopulated; // 0x70
+	[CompilerGenerated]
+	private Action BoardPopulated; // 0x78
+	private const int DoubleTabThresholdMilliseconds = 300;
+	private Dictionary<int, BoardCellView> _cellViews; // 0x80
+	private IBoardItemView _draggedItem; // 0x88
+	private IBoardItemView _overlapItemOnDragAction; // 0x90
+	private bool _isDragging; // 0x98
+	private IItemCombinerVisualPresentation _activeItemCombinerVisualPresentation; // 0xA0
+	private double _lastTapTime; // 0xA8
+
+	// Properties
+	private double TimeInMilliseconds { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A38034 Offset: 0x6A34034 VA: 0x6A38034
+	public void add_BeforeBoardPopulated(Action value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A380D0 Offset: 0x6A340D0 VA: 0x6A380D0
+	public void remove_BeforeBoardPopulated(Action value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A3720C Offset: 0x6A3320C VA: 0x6A3720C
+	public void add_BoardPopulated(Action value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A37334 Offset: 0x6A33334 VA: 0x6A37334
+	public void remove_BoardPopulated(Action value) { }
+
+	// RVA: 0x6A3816C Offset: 0x6A3416C VA: 0x6A3816C
+	private double get_TimeInMilliseconds() { }
+
+	// RVA: 0x6A38190 Offset: 0x6A34190 VA: 0x6A38190
+	private void Start() { }
+
+	// RVA: 0x6A38388 Offset: 0x6A34388 VA: 0x6A38388 Slot: 7
+	protected override void OnDestroy() { }
+
+	// RVA: 0x6A38460 Offset: 0x6A34460 VA: 0x6A38460
+	private void DestroyBoard() { }
+
+	// RVA: 0x6A38740 Offset: 0x6A34740 VA: 0x6A38740
+	private void DisposeBoardItemView(IBoardItemView boardItemView) { }
+
+	// RVA: 0x6A38A8C Offset: 0x6A34A8C VA: 0x6A38A8C
+	private void OnItemSelectionRemoval() { }
+
+	// RVA: 0x6A38290 Offset: 0x6A34290 VA: 0x6A38290
+	private void PopulateBoard() { }
+
+	// RVA: 0x6A38C44 Offset: 0x6A34C44 VA: 0x6A38C44
+	private void PopulateCells() { }
+
+	// RVA: 0x6A39150 Offset: 0x6A35150 VA: 0x6A39150
+	private bool CreateItemView(Entity entity) { }
+
+	// RVA: 0x6A39620 Offset: 0x6A35620 VA: 0x6A39620
+	private void CreateItems(IEnumerable<Entity> entities) { }
+
+	// RVA: 0x6A39E3C Offset: 0x6A35E3C VA: 0x6A39E3C
+	private void UpdateCells(IEnumerable<Entity> entities) { }
+
+	// RVA: 0x6A3A378 Offset: 0x6A36378 VA: 0x6A3A378
+	private IReadOnlyCollection<Entity> GetDeletedEntities(TickArgs boardResult) { }
+
+	// RVA: 0x6A3A458 Offset: 0x6A36458 VA: 0x6A3A458
+	private void DeleteItems(IReadOnlyCollection<Entity> removedEntities) { }
+
+	// RVA: 0x6A3A754 Offset: 0x6A36754 VA: 0x6A3A754
+	private void RemoveItem(Entity entity, IBoardItemView boardItemView) { }
+
+	// RVA: 0x6A392C4 Offset: 0x6A352C4 VA: 0x6A392C4
+	private void CreateItem(int index, Entity entity) { }
+
+	// RVA: 0x6A3AB08 Offset: 0x6A36B08 VA: 0x6A3AB08 Slot: 8
+	private void Merger.MergeBoard.Logic.IBoardControllerPostTickProcessor.Process(TickArgs result) { }
+
+	// RVA: 0x6A3ABEC Offset: 0x6A36BEC VA: 0x6A3ABEC
+	private void BoardItemDragged(IBoardItemView boardItem, PointerEventData data) { }
+
+	// RVA: 0x6A3AF20 Offset: 0x6A36F20 VA: 0x6A3AF20
+	private void BoardItemDragStarted(IBoardItemView boardItem) { }
+
+	// RVA: 0x6A3A874 Offset: 0x6A36874 VA: 0x6A3A874
+	private void BoardItemDragCancelled(IBoardItemView boardItem) { }
+
+	// RVA: 0x6A3B850 Offset: 0x6A37850 VA: 0x6A3B850
+	private void BoardItemDragEnded(IBoardItemView boardItem, PointerEventData pointerEventData) { }
+
+	// RVA: 0x6A3B380 Offset: 0x6A37380 VA: 0x6A3B380
+	private void ApplyVisualPresentationOnOverlapItems(Vector2 pointInLayoutSpace) { }
+
+	// RVA: 0x6A3B63C Offset: 0x6A3763C VA: 0x6A3B63C
+	private void ResetDraggedItem() { }
+
+	[IteratorStateMachine(typeof(MergeBoardView.<HandleBoardResult>d__44))]
+	// RVA: 0x6A3AB64 Offset: 0x6A36B64 VA: 0x6A3AB64
+	private IEnumerator HandleBoardResult(TickArgs boardResult) { }
+
+	// RVA: 0x6A3BE08 Offset: 0x6A37E08 VA: 0x6A3BE08
+	private void BoardItemTapped(IBoardItemView boardItemView) { }
+
+	// RVA: 0x6A3C12C Offset: 0x6A3812C VA: 0x6A3C12C
+	private void TryTriggerFloatingText(IBoardItemView boardItemView, Entity entity) { }
+
+	// RVA: 0x6A3BFC0 Offset: 0x6A37FC0 VA: 0x6A3BFC0
+	private bool RequireDoubleTap(IBoardItemView boardItemView) { }
+
+	// RVA: 0x6A3C048 Offset: 0x6A38048 VA: 0x6A3C048
+	private void CheckForDoubleTap(int itemIndex) { }
+
+	// RVA: 0x6A3C0F4 Offset: 0x6A380F4 VA: 0x6A3C0F4
+	private void OnItemSelected(int itemIndex) { }
+
+	// RVA: 0x6A3C0A8 Offset: 0x6A380A8 VA: 0x6A3C0A8
+	private void OnItemTapped(int itemPosition) { }
+
+	// RVA: 0x6A3BF38 Offset: 0x6A37F38 VA: 0x6A3BF38
+	private int GetItemIndex(IBoardItemView boardItemView) { }
+
+	// RVA: 0x6A3B1BC Offset: 0x6A371BC VA: 0x6A3B1BC
+	private void ResetItemCombinerVisualPresentation() { }
+
+	// RVA: 0x6A3C2FC Offset: 0x6A382FC VA: 0x6A3C2FC
+	private void SendFloatingTextSignal(RectTransform rectTransform, FloatingTextType floatingType, FloatingTextData data, bool useDelay = False) { }
+
+	// RVA: 0x6A3C3BC Offset: 0x6A383BC VA: 0x6A3C3BC
+	private void RemoveSelectorFromDeletedEntities(IReadOnlyCollection<Entity> deletedEntities) { }
+
+	// RVA: 0x6A3C6C8 Offset: 0x6A386C8 VA: 0x6A3C6C8
+	private void FinishHintingIfEntitiesDeleted(IReadOnlyCollection<Entity> deletedEntities) { }
+
+	// RVA: 0x6A3C740 Offset: 0x6A38740 VA: 0x6A3C740
+	private void ClearAllItems() { }
+
+	// RVA: 0x6A3C924 Offset: 0x6A38924 VA: 0x6A3C924
+	private void ClearBoardLayout() { }
+
+	// RVA: 0x6A38AB4 Offset: 0x6A34AB4 VA: 0x6A38AB4
+	private void ResetBoardPosition() { }
+
+	// RVA: 0x6A3CB80 Offset: 0x6A38B80 VA: 0x6A3CB80 Slot: 9
+	public void ClearBoardContent() { }
+
+	// RVA: 0x6A3CB98 Offset: 0x6A38B98 VA: 0x6A3CB98 Slot: 10
+	public void RepopulateBoardContent() { }
+
+	// RVA: 0x6A38B14 Offset: 0x6A34B14 VA: 0x6A38B14 Slot: 11
+	public void UpdateBoardTiles() { }
+
+	// RVA: 0x6A3CBAC Offset: 0x6A38BAC VA: 0x6A3CBAC
+	private void RemoveInactiveItems(List<int> activeIndices) { }
+
+	// RVA: 0x6A3CDD4 Offset: 0x6A38DD4 VA: 0x6A3CDD4
+	public void .ctor() { }
+}
+

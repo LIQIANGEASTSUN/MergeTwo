@@ -1,0 +1,102 @@
+// Namespace: Merger.Services.Backend.Sync
+public abstract class SyncPayloadServiceBase<TPayload> : ServiceBase, ISyncPayloadService // TypeDefIndex: 9848
+{
+	// Fields
+	[Inject]
+	private IJsonService _jsonService; // 0x0
+	[Inject]
+	private ISyncRepository _syncRepository; // 0x0
+	[Inject]
+	private ICheatsSyncRepository _cheatsSyncRepository; // 0x0
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0x0
+	[Inject]
+	private IResourcesModel _resourcesModel; // 0x0
+
+	// Properties
+	protected IJsonService JsonService { get; }
+	protected abstract string SyncName { get; }
+	protected bool GameStarted { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	protected IJsonService get_JsonService() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x45527EC Offset: 0x454E7EC VA: 0x45527EC
+	|-SyncPayloadServiceBase<object>.get_JsonService
+	|
+	|-RVA: 0x4552C9C Offset: 0x454EC9C VA: 0x4552C9C
+	|-SyncPayloadServiceBase<__Il2CppFullySharedGenericType>.get_JsonService
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 20
+	protected abstract TPayload CreateSyncPayload(BackendSyncEntitiesWrapper backendSyncEntitiesWrapper);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-SyncPayloadServiceBase<__Il2CppFullySharedGenericType>.CreateSyncPayload
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 21
+	protected abstract IPromise SendSyncRequest(TPayload payload, ISyncRepository repository);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-SyncPayloadServiceBase<__Il2CppFullySharedGenericType>.SendSyncRequest
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 22
+	protected abstract string get_SyncName();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-SyncPayloadServiceBase<__Il2CppFullySharedGenericType>.get_SyncName
+	*/
+
+	// RVA: -1 Offset: -1
+	protected bool get_GameStarted() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x45527F4 Offset: 0x454E7F4 VA: 0x45527F4
+	|-SyncPayloadServiceBase<object>.get_GameStarted
+	|
+	|-RVA: 0x4552CA4 Offset: 0x454ECA4 VA: 0x4552CA4
+	|-SyncPayloadServiceBase<__Il2CppFullySharedGenericType>.get_GameStarted
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 23
+	public virtual IPromise HandleSyncRequest(BackendSyncEntitiesWrapper backendSyncEntitiesWrapper, bool sendAsCheat) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x45528AC Offset: 0x454E8AC VA: 0x45528AC
+	|-SyncPayloadServiceBase<object>.HandleSyncRequest
+	|
+	|-RVA: 0x4552D5C Offset: 0x454ED5C VA: 0x4552D5C
+	|-SyncPayloadServiceBase<__Il2CppFullySharedGenericType>.HandleSyncRequest
+	*/
+
+	// RVA: -1 Offset: -1
+	protected int GetResourceValue(PlayerResourceEnum resource) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4552B90 Offset: 0x454EB90 VA: 0x4552B90
+	|-SyncPayloadServiceBase<object>.GetResourceValue
+	|
+	|-RVA: 0x45530F4 Offset: 0x454F0F4 VA: 0x45530F4
+	|-SyncPayloadServiceBase<__Il2CppFullySharedGenericType>.GetResourceValue
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4552C94 Offset: 0x454EC94 VA: 0x4552C94
+	|-SyncPayloadServiceBase<object>..ctor
+	|
+	|-RVA: 0x45531F8 Offset: 0x454F1F8 VA: 0x45531F8
+	|-SyncPayloadServiceBase<__Il2CppFullySharedGenericType>..ctor
+	*/
+}
+

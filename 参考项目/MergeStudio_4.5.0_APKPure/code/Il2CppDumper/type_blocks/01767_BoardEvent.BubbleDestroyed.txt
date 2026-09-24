@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BoardEvent.BubbleDestroyed : IEvent // TypeDefIndex: 1767
+{
+	// Fields
+	public ItemController Item; // 0x0
+}
+

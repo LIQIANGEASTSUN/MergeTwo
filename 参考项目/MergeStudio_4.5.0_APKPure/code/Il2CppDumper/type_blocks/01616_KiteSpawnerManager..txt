@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class KiteSpawnerManager.<>c__DisplayClass19_0 // TypeDefIndex: 1616
+{
+	// Fields
+	public string key; // 0x8
+
+	// Methods
+
+	// RVA: 0x18C4414 Offset: 0x18C4414 VA: 0x18C4414
+	public void .ctor() { }
+
+	// RVA: 0x18C4BBC Offset: 0x18C4BBC VA: 0x18C4BBC
+	internal bool <CreateProgressiveAdaptors>b__0(BalanceProgressiveConfigModel c) { }
+}
+

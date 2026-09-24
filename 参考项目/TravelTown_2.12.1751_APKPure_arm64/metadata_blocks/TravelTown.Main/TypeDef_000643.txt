@@ -1,0 +1,105 @@
+// Namespace: MergeEngine.ECS.Systems
+public class CombiningSystem : SystemBase, IItemsCombiner // TypeDefIndex: 643
+{
+	// Fields
+	[Inject]
+	private INotificationDataFactory _notificationDataFactory; // 0x40
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x48
+	[Inject]
+	private IJsonService _jsonService; // 0x50
+	[Inject]
+	private IServerTimeService _serverTimeService; // 0x58
+	[InjectSystem]
+	private OperationTrackingSystem _operationTrackingSystem; // 0x60
+	[InjectSystem]
+	private BoardSystem _boardSystem; // 0x68
+	[InjectSystem]
+	private ResourcesSystem _resourcesSystem; // 0x70
+	[InjectSystem]
+	private InteractionSystem _interactionSystem; // 0x78
+	[InjectSystem]
+	private BoardItemsStateSystem<CoreBoardBoardItems> _boardItemsStateSystem; // 0x80
+	[InjectSystem]
+	private PowerBoostSystem _powerBoostSystem; // 0x88
+	[InjectComponent]
+	private InteractionTrackingComponent _interactionTrackingComponent; // 0x90
+	[InjectComponent]
+	private BoardComponent _boardComponent; // 0x98
+	[InjectSystem]
+	private BoardQueueSystem _boardQueueSystem; // 0xA0
+	private CombiningComponent _attemptingToCombineProducer; // 0xA8
+	private readonly float _onItemSlideInDelay; // 0xB0
+
+	// Methods
+
+	// RVA: 0x627C1C0 Offset: 0x62781C0 VA: 0x627C1C0 Slot: 6
+	protected override void InitializeSystem() { }
+
+	// RVA: 0x627C3B4 Offset: 0x62783B4 VA: 0x627C3B4 Slot: 13
+	public bool CanCombineItems(PositionComponent firstItem, PositionComponent secondItem) { }
+
+	// RVA: 0x627C644 Offset: 0x6278644 VA: 0x627C644 Slot: 11
+	protected override void EntityCreated(Entity entity) { }
+
+	// RVA: 0x627C8A8 Offset: 0x62788A8 VA: 0x627C8A8 Slot: 12
+	protected override void EntityRemoved(Entity entity) { }
+
+	// RVA: 0x627CAEC Offset: 0x6278AEC VA: 0x627CAEC
+	private void BeforeEntityRemoved(BeforeEntityRemovedSignal signal) { }
+
+	// RVA: 0x627C848 Offset: 0x6278848 VA: 0x627C848
+	private void TryExtractItem(CombiningComponent combiningComponent, ItemPayloadBase consumedItem, PositionComponent positionComponent) { }
+
+	// RVA: 0x627D278 Offset: 0x6279278 VA: 0x627D278
+	private void AddItemQueue(ItemPayloadBase consumedItem, PositionComponent positionComponent) { }
+
+	// RVA: 0x627C580 Offset: 0x6278580 VA: 0x627C580
+	private void DisableAnimationInteraction(ComponentBase item) { }
+
+	// RVA: 0x627C5E0 Offset: 0x62785E0 VA: 0x627C5E0
+	private static void EnableInteractionAnimation(ComponentBase item) { }
+
+	// RVA: 0x627D498 Offset: 0x6279498 VA: 0x627D498 Slot: 14
+	public bool TryCombineItems(PositionComponent firstItem, PositionComponent secondItem, IItemsCombiner.OnItemsCombined callback) { }
+
+	// RVA: 0x627DB84 Offset: 0x6279B84 VA: 0x627DB84 Slot: 15
+	public void ResetCombine() { }
+
+	// RVA: 0x627D528 Offset: 0x6279528 VA: 0x627D528
+	private void FeedItem(CombiningComponent combiningComponent, PositionComponent item) { }
+
+	// RVA: 0x627DC94 Offset: 0x6279C94 VA: 0x627DC94
+	private void OnItemSpawned(ProducerSpawnedItemSignal signal) { }
+
+	// RVA: 0x627E1B8 Offset: 0x627A1B8 VA: 0x627E1B8
+	private void OnItemSlidedIn(SlideItemInCompletedSignal signal) { }
+
+	// RVA: 0x627DB94 Offset: 0x6279B94 VA: 0x627DB94
+	private void TrackInsertAnalytics(IMergeItem feedingItem, CombiningComponent combiningComponent) { }
+
+	// RVA: 0x627E534 Offset: 0x627A534 VA: 0x627E534
+	private void TrackExtractAnalytics(IMergeItem feedingItem, CombiningComponent combiningComponent, string id) { }
+
+	// RVA: 0x627E2F4 Offset: 0x627A2F4 VA: 0x627E2F4
+	private void PrepareAnalyticsData(CombiningComponent combiningComponent, out TimeCycleComponentAnalytics analyticParams, out int usesLeft, out string consumedIDs, out IEnumerable<int> energyCost) { }
+
+	// RVA: 0x627E644 Offset: 0x627A644 VA: 0x627E644
+	private void OnItemExtractClick(ExtractItemClickedSignal signal) { }
+
+	// RVA: 0x627CB0C Offset: 0x6278B0C VA: 0x627CB0C
+	private void ExtractItem(CombiningComponent combiningComponent, string itemToExtract, bool showAnimation = True) { }
+
+	// RVA: 0x627C4E8 Offset: 0x62784E8 VA: 0x627C4E8
+	private bool CanFeed(CombiningComponent combiningComponent, PositionComponent item) { }
+
+	// RVA: 0x627C480 Offset: 0x6278480 VA: 0x627C480
+	private bool IsLocked(PositionComponent firstItem) { }
+
+	// RVA: 0x627E66C Offset: 0x627A66C VA: 0x627E66C Slot: 7
+	protected override void DisposeSystem() { }
+
+	// RVA: 0x627E860 Offset: 0x627A860 VA: 0x627E860
+	public void .ctor() { }
+}
+

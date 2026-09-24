@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BoardEvent.InventoryLockedItemClick : IEvent // TypeDefIndex: 1794
+{
+	// Fields
+	public InventoryCell InventoryCell; // 0x0
+}
+

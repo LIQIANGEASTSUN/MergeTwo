@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class MiniBoardProgressionEventData.<>c // TypeDefIndex: 969
+{
+	// Fields
+	public static readonly MiniBoardProgressionEventData.<>c <>9; // 0x0
+	public static Func<KiteMiniBoardItemReward, int> <>9__20_0; // 0x4
+
+	// Methods
+
+	// RVA: 0x1793210 Offset: 0x1793210 VA: 0x1793210
+	private static void .cctor() { }
+
+	// RVA: 0x1793284 Offset: 0x1793284 VA: 0x1793284
+	public void .ctor() { }
+
+	// RVA: 0x179328C Offset: 0x179328C VA: 0x179328C
+	internal int <GetBoardTaskEventPoint>b__20_0(KiteMiniBoardItemReward taskItemReward) { }
+}
+

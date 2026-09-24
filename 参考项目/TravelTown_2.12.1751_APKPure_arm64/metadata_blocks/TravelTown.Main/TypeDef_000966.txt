@@ -1,0 +1,61 @@
+// Namespace: MergeEngine.ECS.Systems.Items
+public class SkipCooldownSystem : SystemBase // TypeDefIndex: 966
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x40
+	[Inject]
+	private IGameConfigurationModel _gameConfigurationModel; // 0x48
+	[Inject]
+	private IVirtualPurchasesService _virtualPurchasesService; // 0x50
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0x58
+	[Inject]
+	private IUserProfileService _userProfileService; // 0x60
+	private BoardSystem _boardSystem; // 0x68
+	private ResourcesSystem _resourcesSystem; // 0x70
+	private TimeCycleSystem _timeCycleSystem; // 0x78
+	private TimeLockSystem _timeLockSystem; // 0x80
+
+	// Properties
+	private SkipCooldownConfig SkipCooldownConfig { get; }
+
+	// Methods
+
+	// RVA: 0x67906B0 Offset: 0x678C6B0 VA: 0x67906B0
+	private SkipCooldownConfig get_SkipCooldownConfig() { }
+
+	// RVA: 0x679081C Offset: 0x678C81C VA: 0x679081C Slot: 6
+	protected override void InitializeSystem() { }
+
+	// RVA: 0x6790990 Offset: 0x678C990 VA: 0x6790990 Slot: 7
+	protected override void DisposeSystem() { }
+
+	// RVA: 0x6790A34 Offset: 0x678CA34 VA: 0x6790A34
+	private void SkipBoardItemCooldownSignalFired(SkipBoardItemCooldownSignal signal) { }
+
+	// RVA: 0x6790EB8 Offset: 0x678CEB8 VA: 0x6790EB8
+	public ResourceMultiple GetSkipCooldownPrice(SelectedBoardItem selectedBoardItem) { }
+
+	// RVA: 0x67911FC Offset: 0x678D1FC VA: 0x67911FC
+	public ResourceMultiple GetSkipCooldownPrice(TimeLockComponent timeLockComponent, IItemSpawning itemSpawning) { }
+
+	// RVA: 0x679111C Offset: 0x678D11C VA: 0x679111C
+	private ResourceMultiple CalculatePrice(double timeleft, SkipCooldownSettings skipCooldownSettings) { }
+
+	// RVA: 0x67912D4 Offset: 0x678D2D4 VA: 0x67912D4
+	private ResourceMultiple CalculatePriceWithSkipCooldownSettings(double timeleft, SkipCooldownSettings skipCooldownSettings) { }
+
+	// RVA: 0x67913CC Offset: 0x678D3CC VA: 0x67913CC
+	private ResourceMultiple CalculatePriceWithCoefficents(double timeleft) { }
+
+	// RVA: 0x6791540 Offset: 0x678D540 VA: 0x6791540
+	private double GetTimeLeft(SelectedBoardItem selectedBoardItem) { }
+
+	// RVA: 0x6790F98 Offset: 0x678CF98 VA: 0x6790F98
+	private double GetTimeLeft(ITimeLocked timeLocked, IItemSpawning itemSpawning) { }
+
+	// RVA: 0x6791560 Offset: 0x678D560 VA: 0x6791560
+	public void .ctor() { }
+}
+

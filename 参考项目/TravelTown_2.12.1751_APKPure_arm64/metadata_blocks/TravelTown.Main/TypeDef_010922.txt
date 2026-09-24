@@ -1,0 +1,36 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class RepositoryBase.<>c__DisplayClass45_0<TRequest, TResponse> // TypeDefIndex: 10922
+{
+	// Fields
+	public RepositoryBase <>4__this; // 0x0
+	public Promise<TResponse> promise; // 0x0
+	public IResponseValidator<TResponse> validator; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4B0B97C Offset: 0x4B0797C VA: 0x4B0B97C
+	|-RepositoryBase.<>c__DisplayClass45_0<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal void <Put>b__0(HttpResponse response) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4B0B984 Offset: 0x4B07984 VA: 0x4B0B984
+	|-RepositoryBase.<>c__DisplayClass45_0<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.<Put>b__0
+	*/
+
+	// RVA: -1 Offset: -1
+	internal void <Put>b__1(Exception exception) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4B0B9B8 Offset: 0x4B079B8 VA: 0x4B0B9B8
+	|-RepositoryBase.<>c__DisplayClass45_0<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.<Put>b__1
+	*/
+}
+

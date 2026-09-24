@@ -1,0 +1,55 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class FreeformMergeBoardLayout.<GetAllEmptyPositions>d__7 : IEnumerable<int>, IEnumerable, IEnumerator<int>, IEnumerator, IDisposable // TypeDefIndex: 25697
+{
+	// Fields
+	private int <>1__state; // 0x10
+	private int <>2__current; // 0x14
+	private int <>l__initialThreadId; // 0x18
+	private IEnumerable<int> occupiedPositions; // 0x20
+	public IEnumerable<int> <>3__occupiedPositions; // 0x28
+	public FreeformMergeBoardLayout <>4__this; // 0x30
+	private HashSet<int> <occupiedSet>5__2; // 0x38
+	private Dictionary.KeyCollection.Enumerator<int, RectTransform> <>7__wrap2; // 0x40
+
+	// Properties
+	private int System.Collections.Generic.IEnumerator<System.Int32>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHidden]
+	// RVA: 0x6A40244 Offset: 0x6A3C244 VA: 0x6A40244
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHidden]
+	// RVA: 0x6A40A60 Offset: 0x6A3CA60 VA: 0x6A40A60 Slot: 7
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x6A40A7C Offset: 0x6A3CA7C VA: 0x6A40A7C Slot: 8
+	private bool MoveNext() { }
+
+	// RVA: 0x6A40CDC Offset: 0x6A3CCDC VA: 0x6A40CDC
+	private void <>m__Finally1() { }
+
+	[DebuggerHidden]
+	// RVA: 0x6A40D2C Offset: 0x6A3CD2C VA: 0x6A40D2C Slot: 6
+	private int System.Collections.Generic.IEnumerator<System.Int32>.get_Current() { }
+
+	[DebuggerHidden]
+	// RVA: 0x6A40D34 Offset: 0x6A3CD34 VA: 0x6A40D34 Slot: 10
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHidden]
+	// RVA: 0x6A40D6C Offset: 0x6A3CD6C VA: 0x6A40D6C Slot: 9
+	private object System.Collections.IEnumerator.get_Current() { }
+
+	[DebuggerHidden]
+	// RVA: 0x6A40DC8 Offset: 0x6A3CDC8 VA: 0x6A40DC8 Slot: 4
+	private IEnumerator<int> System.Collections.Generic.IEnumerable<System.Int32>.GetEnumerator() { }
+
+	[DebuggerHidden]
+	// RVA: 0x6A40E7C Offset: 0x6A3CE7C VA: 0x6A40E7C Slot: 5
+	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
+}
+

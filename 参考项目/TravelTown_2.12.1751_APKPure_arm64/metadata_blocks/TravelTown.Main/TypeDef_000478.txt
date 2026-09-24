@@ -1,0 +1,30 @@
+// Namespace: MergeEngine.Model.RemoteSpawning
+public interface IRemoteSpawningModel // TypeDefIndex: 478
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract ItemSpawnable GetNextItem(IMergeItem spawnerItem, int bet, ExtraData extraData);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract string TryPeekNextItem(IMergeItem spawnerItem, int bet);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void OnProducerQueueUpdated(ProducerQueuesPayload producerQueuesPayload);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void ResetQueueFor(string spawnerId, int bet);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract void ResetQueueFor(string spawnerId);
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract void ResetAllQueues();
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract void LeaveRemainingItems(string spawnerId, int numberOfRemaining);
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract void ClearAllExpiredItems();
+}
+

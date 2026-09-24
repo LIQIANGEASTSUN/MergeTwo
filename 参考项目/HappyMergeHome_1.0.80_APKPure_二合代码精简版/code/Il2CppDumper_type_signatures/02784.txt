@@ -1,0 +1,41 @@
+// Namespace: 
+public class MergeMainController.MergeBoardTheme // TypeDefIndex: 2784
+{
+	// Fields
+	public Func<string> TopPath; // 0x8
+	public Func<string> TaskPath; // 0xC
+	public Func<string> BoardPath; // 0x10
+	public Func<string> MainPath; // 0x14
+	public Transform _top; // 0x18
+	public Transform _task; // 0x1C
+	public Transform _board; // 0x20
+	public Transform _main; // 0x24
+	private MergeMainController _mainController; // 0x28
+
+	// Properties
+	public Transform Top { get; }
+	public Transform Task { get; }
+	public Transform Board { get; }
+	public Transform Main { get; }
+
+	// Methods
+
+	// RVA: 0x2C48118 Offset: 0x2C48118 VA: 0x2C48118
+	public Transform get_Top() { }
+
+	// RVA: 0x2C483A0 Offset: 0x2C483A0 VA: 0x2C483A0
+	public Transform get_Task() { }
+
+	// RVA: 0x2C48628 Offset: 0x2C48628 VA: 0x2C48628
+	public Transform get_Board() { }
+
+	// RVA: 0x2C488B0 Offset: 0x2C488B0 VA: 0x2C488B0
+	public Transform get_Main() { }
+
+	// RVA: 0x2C48B38 Offset: 0x2C48B38 VA: 0x2C48B38
+	public void BindMergeMainController(MergeMainController mainController) { }
+
+	// RVA: 0x2C48DF4 Offset: 0x2C48DF4 VA: 0x2C48DF4
+	public void .ctor() { }
+}
+

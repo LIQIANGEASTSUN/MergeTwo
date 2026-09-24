@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeManager.<>c__DisplayClass314_1 // TypeDefIndex: 2708
+{
+	// Fields
+	public int index; // 0x8
+	public MergeManager.<>c__DisplayClass314_0 CS$<>8__locals1; // 0xC
+
+	// Methods
+
+	// RVA: 0x2C28BC4 Offset: 0x2C28BC4 VA: 0x2C28BC4
+	public void .ctor() { }
+
+	// RVA: 0x2C28BCC Offset: 0x2C28BCC VA: 0x2C28BCC
+	internal void <RemoveBoardItems>b__0() { }
+}
+

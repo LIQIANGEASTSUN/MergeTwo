@@ -1,0 +1,12 @@
+// Namespace: Merger.Game.Views.Components.Orders.Rewards
+public interface IPrioritizedOrderReward // TypeDefIndex: 9106
+{
+	// Properties
+	public abstract int Priority { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract int get_Priority();
+}
+

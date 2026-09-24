@@ -1,0 +1,204 @@
+// Namespace: Merger.Game.Views.BoardItem.ViewBehaviours
+public abstract class BoardItemViewBehaviourBase<TViewModel> : ViewBase<TViewModel>, IBoardItemViewBehaviour, IPoolable // TypeDefIndex: 9148
+{
+	// Fields
+	private BoardItemView2 _boardItemView; // 0x0
+	private IVisualComponent _visualComponent; // 0x0
+	[CompilerGenerated]
+	private bool <Initialized>k__BackingField; // 0x0
+
+	// Properties
+	protected IVisualComponent VisualComponent { get; }
+	protected BoardItemView2 BoardItemView { get; }
+	protected bool CanDoUpdate { get; }
+	protected bool Initialized { get; set; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	protected IVisualComponent get_VisualComponent() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C18868 Offset: 0x4C14868 VA: 0x4C18868
+	|-BoardItemViewBehaviourBase<object>.get_VisualComponent
+	*/
+
+	// RVA: -1 Offset: -1
+	protected BoardItemView2 get_BoardItemView() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C18870 Offset: 0x4C14870 VA: 0x4C18870
+	|-BoardItemViewBehaviourBase<object>.get_BoardItemView
+	*/
+
+	// RVA: -1 Offset: -1
+	protected bool get_CanDoUpdate() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C18878 Offset: 0x4C14878 VA: 0x4C18878
+	|-BoardItemViewBehaviourBase<object>.get_CanDoUpdate
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	protected bool get_Initialized() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C18880 Offset: 0x4C14880 VA: 0x4C18880
+	|-BoardItemViewBehaviourBase<object>.get_Initialized
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	private void set_Initialized(bool value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C18888 Offset: 0x4C14888 VA: 0x4C18888
+	|-BoardItemViewBehaviourBase<object>.set_Initialized
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public void Initialise(IVisualComponent visualComponent, BoardItemView2 boardItemView) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C18894 Offset: 0x4C14894 VA: 0x4C18894
+	|-BoardItemViewBehaviourBase<object>.Initialise
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public sealed override void Dispose() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C188E4 Offset: 0x4C148E4 VA: 0x4C188E4
+	|-BoardItemViewBehaviourBase<object>.Dispose
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 15
+	protected virtual void OnInitialize() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C18930 Offset: 0x4C14930 VA: 0x4C18930
+	|-BoardItemViewBehaviourBase<object>.OnInitialize
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 16
+	protected virtual void OnDispose() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C18940 Offset: 0x4C14940 VA: 0x4C18940
+	|-BoardItemViewBehaviourBase<object>.OnDispose
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 17
+	public virtual void BehaviourAdded() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C18944 Offset: 0x4C14944 VA: 0x4C18944
+	|-BoardItemViewBehaviourBase<object>.BehaviourAdded
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 18
+	protected virtual void OnUpdate() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C18948 Offset: 0x4C14948 VA: 0x4C18948
+	|-BoardItemViewBehaviourBase<object>.OnUpdate
+	*/
+
+	// RVA: -1 Offset: -1
+	private void Update() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C1894C Offset: 0x4C1494C VA: 0x4C1894C
+	|-BoardItemViewBehaviourBase<object>.Update
+	*/
+
+	// RVA: -1 Offset: -1
+	protected RectTransform GetContainer(string containerId) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C18968 Offset: 0x4C14968 VA: 0x4C18968
+	|-BoardItemViewBehaviourBase<object>.GetContainer
+	*/
+
+	// RVA: -1 Offset: -1
+	protected TBoardItemViewBehaviour GetBehaviour<TBoardItemViewBehaviour>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3AE449C Offset: 0x3AE049C VA: 0x3AE449C
+	|-BoardItemViewBehaviourBase<object>.GetBehaviour<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	protected bool HasBehaviour<TBoardItemViewBehaviour>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3AE44FC Offset: 0x3AE04FC VA: 0x3AE44FC
+	|-BoardItemViewBehaviourBase<object>.HasBehaviour<object>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 19
+	public virtual bool TryConsumeTap() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C18984 Offset: 0x4C14984 VA: 0x4C18984
+	|-BoardItemViewBehaviourBase<object>.TryConsumeTap
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 20
+	public virtual void ShowVisuals() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C1898C Offset: 0x4C1498C VA: 0x4C1898C
+	|-BoardItemViewBehaviourBase<object>.ShowVisuals
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 21
+	public virtual void HideVisuals() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C18990 Offset: 0x4C14990 VA: 0x4C18990
+	|-BoardItemViewBehaviourBase<object>.HideVisuals
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 7
+	protected override void OnDestroy() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C18994 Offset: 0x4C14994 VA: 0x4C18994
+	|-BoardItemViewBehaviourBase<object>.OnDestroy
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 13
+	public void Initialize() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C189D4 Offset: 0x4C149D4 VA: 0x4C189D4
+	|-BoardItemViewBehaviourBase<object>.Initialize
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 14
+	public void Deactivated() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C189D8 Offset: 0x4C149D8 VA: 0x4C189D8
+	|-BoardItemViewBehaviourBase<object>.Deactivated
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C189DC Offset: 0x4C149DC VA: 0x4C189DC
+	|-BoardItemViewBehaviourBase<object>..ctor
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 11
+	private GameObject Merger.Game.Views.BoardItem.ViewBehaviours.IBoardItemViewBehaviour.get_gameObject() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C189EC Offset: 0x4C149EC VA: 0x4C189EC
+	|-BoardItemViewBehaviourBase<object>.Merger.Game.Views.BoardItem.ViewBehaviours.IBoardItemViewBehaviour.get_gameObject
+	*/
+}
+

@@ -1,0 +1,36 @@
+// Namespace: Merger.MergeBoard.Systems
+public class FeedingCombinationExtractSystem : ISystem // TypeDefIndex: 25737
+{
+	// Fields
+	[Inject]
+	private FeedingItemCombinerValidator _feedingItemCombinerValidator; // 0x10
+	[Inject]
+	private IMergeBoardLayout _layout; // 0x18
+	[Inject]
+	private IEntityFactory _entityFactory; // 0x20
+	[Inject]
+	private IFeedingCombinationConsumedItemSnapshotFactory _feedingCombinationConsumedItemSnapshotFactory; // 0x28
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x30
+
+	// Methods
+
+	// RVA: 0x6A67918 Offset: 0x6A63918 VA: 0x6A67918 Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A67CC0 Offset: 0x6A63CC0 VA: 0x6A67CC0
+	private void ExtractItemByAction(TickContext context, Entity feedingEntity, string itemId) { }
+
+	// RVA: 0x6A67DBC Offset: 0x6A63DBC VA: 0x6A67DBC
+	private void ExtractItemByTime(TickContext context, Entity feedingEntity, string itemId, int deadPosition = 0) { }
+
+	// RVA: 0x6A68000 Offset: 0x6A64000 VA: 0x6A68000
+	private void HandleExtract(TickContext context, Entity feedingEntity, string itemId, int emptyPosition) { }
+
+	// RVA: 0x6A68264 Offset: 0x6A64264 VA: 0x6A68264
+	private FeedingCombinationConsumedItemSnapshot FindConsumedItemSnapshot(Entity feedingEntity, string itemId) { }
+
+	// RVA: 0x6A68378 Offset: 0x6A64378 VA: 0x6A68378
+	public void .ctor() { }
+}
+

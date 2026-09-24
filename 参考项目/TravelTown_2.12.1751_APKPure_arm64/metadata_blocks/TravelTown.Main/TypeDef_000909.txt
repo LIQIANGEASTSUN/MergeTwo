@@ -1,0 +1,16 @@
+// Namespace: MergeEngine.ECS.Systems.Board
+public class BoardResourceStateSystem : StateSystemBase<CoreBoardResources> // TypeDefIndex: 909
+{
+	// Fields
+	[InjectSystem]
+	private ResourcesSystem _resourcesSystem; // 0x48
+
+	// Methods
+
+	// RVA: 0x66672DC Offset: 0x66632DC VA: 0x66672DC Slot: 13
+	protected override void LoadState(CoreBoardResources newState) { }
+
+	// RVA: 0x6667590 Offset: 0x6663590 VA: 0x6667590
+	public void .ctor() { }
+}
+

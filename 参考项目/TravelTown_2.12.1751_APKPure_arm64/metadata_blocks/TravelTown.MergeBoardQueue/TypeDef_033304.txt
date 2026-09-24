@@ -1,0 +1,37 @@
+// Namespace: Merger.MergeBoardQueue.Logic
+public class BoardQueueProcessor : IBoardControllerPostTickProcessor // TypeDefIndex: 33304
+{
+	// Fields
+	[Inject]
+	private IBoardQueueModel _boardQueueModel; // 0x10
+	[Inject]
+	private IResourcesModel _resourcesModel; // 0x18
+	[Inject]
+	private IMergeBoardQueueOperationTrackingService _mergeBoardQueueOperationTrackingService; // 0x20
+	[Inject]
+	private IServerTimeService _serverTimeService; // 0x28
+
+	// Properties
+	private long CurrentServerTimeMS { get; }
+
+	// Methods
+
+	// RVA: 0x6A59B14 Offset: 0x6A55B14 VA: 0x6A59B14
+	private long get_CurrentServerTimeMS() { }
+
+	// RVA: 0x6A59BB4 Offset: 0x6A55BB4 VA: 0x6A59BB4 Slot: 4
+	public void Process(TickArgs result) { }
+
+	// RVA: 0x6A5A9EC Offset: 0x6A569EC VA: 0x6A5A9EC
+	private void DequeueFinished() { }
+
+	// RVA: 0x6A5AC6C Offset: 0x6A56C6C VA: 0x6A5AC6C
+	private void GrantSellPriceResource(string itemId, PlayerResourceEnum resource, int amount) { }
+
+	// RVA: 0x6A5AA90 Offset: 0x6A56A90 VA: 0x6A5AA90
+	private void Enqueue(Entity entity, IMergeItem mergeItem, ResourceSource source) { }
+
+	// RVA: 0x6A5ADF4 Offset: 0x6A56DF4 VA: 0x6A5ADF4
+	public void .ctor() { }
+}
+

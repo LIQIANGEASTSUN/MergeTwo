@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ButterflyWorkShopModel.<>c__DisplayClass13_0 // TypeDefIndex: 188
+{
+	// Fields
+	public int level; // 0x8
+
+	// Methods
+
+	// RVA: 0x29ED830 Offset: 0x29ED830 VA: 0x29ED830
+	public void .ctor() { }
+
+	// RVA: 0x29F25E0 Offset: 0x29F25E0 VA: 0x29F25E0
+	internal bool <GetButterflyWorkShopRewardConfig>b__0(ButterflyWorkShopRewardConfig a) { }
+}
+

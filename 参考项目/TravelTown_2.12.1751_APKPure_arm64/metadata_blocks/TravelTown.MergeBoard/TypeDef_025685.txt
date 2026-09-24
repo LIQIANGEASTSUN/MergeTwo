@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeBoardView.<>c__DisplayClass44_0 // TypeDefIndex: 25685
+{
+	// Fields
+	public MergeBoardView <>4__this; // 0x10
+	public IReadOnlyCollection<Entity> deletedEntities; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A3CE70 Offset: 0x6A38E70 VA: 0x6A3CE70
+	public void .ctor() { }
+
+	// RVA: 0x6A3CE78 Offset: 0x6A38E78 VA: 0x6A3CE78
+	internal void <HandleBoardResult>b__0() { }
+}
+

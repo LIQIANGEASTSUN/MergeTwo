@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardSystem.<>c__DisplayClass47_0 // TypeDefIndex: 911
+{
+	// Fields
+	public ReadOnlyCollection<PositionComponent> positionedItems; // 0x10
+
+	// Methods
+
+	// RVA: 0x6668F7C Offset: 0x6664F7C VA: 0x6668F7C
+	public void .ctor() { }
+
+	// RVA: 0x666BAC8 Offset: 0x6667AC8 VA: 0x666BAC8
+	internal bool <OnGameStarted>b__0(PositionComponent item) { }
+}
+

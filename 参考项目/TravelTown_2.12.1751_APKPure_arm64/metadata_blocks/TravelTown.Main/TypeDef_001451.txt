@@ -1,0 +1,14 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+public class InventorySlotCapability : CapabilityBase // TypeDefIndex: 1451
+{
+	// Fields
+	public int SlotIndex; // 0x14
+	public InventorySlotType SlotType; // 0x18
+	public string SlotId; // 0x20
+
+	// Methods
+
+	// RVA: 0x601085C Offset: 0x600C85C VA: 0x601085C
+	public void .ctor(int slotIndex = 0, InventorySlotType slotType = 0, string slotId) { }
+}
+

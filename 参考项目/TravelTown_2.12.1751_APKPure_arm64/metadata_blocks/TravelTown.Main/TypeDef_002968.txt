@@ -1,0 +1,15 @@
+// Namespace: Merger.Rewards.Interfaces
+public interface IRewardSpriteReferenceProvider // TypeDefIndex: 2968
+{
+	// Properties
+	public abstract string[] SpriteReferenceRewardTypes { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract string[] get_SpriteReferenceRewardTypes();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract AssetReferenceT<Sprite> GetRewardSpriteReference(string rewardType, string uniqueId);
+}
+

@@ -1,0 +1,18 @@
+// Namespace: Merger.MergeBoardSellItemCapability.Models
+public interface IMergeBoardUndoSellItemModel // TypeDefIndex: 33595
+{
+	// Properties
+	public abstract Entity ItemAvailableToUndo { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract Entity get_ItemAvailableToUndo();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void SetItemAvailableToUndo(Entity entity);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void ClearItemAvailableToUndo();
+}
+

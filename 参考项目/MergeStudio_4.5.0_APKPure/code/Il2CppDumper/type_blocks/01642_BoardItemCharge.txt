@@ -1,0 +1,25 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "BoardItemCharge", menuName = "Scriptable/BoardItem/Charge", order = 2)]
+public class BoardItemCharge : BoardItemData, IConfigAdaptor<ChargeAdaptor>, IConfigAdaptorBase // TypeDefIndex: 1642
+{
+	// Fields
+	public int ChargedCapacity; // 0x2C
+
+	// Methods
+
+	// RVA: 0x18C641C Offset: 0x18C641C VA: 0x18C641C Slot: 4
+	public override bool Initialize(BoardEntity boardEntity, IItemController item, long millisecondsPassed, bool isNewlyCreated) { }
+
+	// RVA: 0x18C6424 Offset: 0x18C6424 VA: 0x18C6424 Slot: 6
+	public override int GetTimeRequiredToExitCharging() { }
+
+	// RVA: 0x18C642C Offset: 0x18C642C VA: 0x18C642C Slot: 17
+	public ChargeAdaptor GetConfigAdaptor() { }
+
+	// RVA: 0x18C64F0 Offset: 0x18C64F0 VA: 0x18C64F0 Slot: 18
+	public AdaptorBase ConvertFromLocal() { }
+
+	// RVA: 0x18C6554 Offset: 0x18C6554 VA: 0x18C6554
+	public void .ctor() { }
+}
+

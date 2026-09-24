@@ -1,0 +1,482 @@
+// Namespace: Activity.SummerWatermelon_12
+public class SummerWatermelonModel : ActivityEntityBase // TypeDefIndex: 4361
+{
+	// Fields
+	public static bool InGuideChain; // 0x0
+	public const int BOARD_WIDTH = 5;
+	public const int BOARD_HEIGHT = 5;
+	public const int BOARD_WIDTH_BIG = 6;
+	public const int BOARD_HEIGHT_BIG = 8;
+	private static SummerWatermelonModel _instance; // 0x4
+	private Dictionary<int, SummerWatermelonTwelveProductConfig> _summerWatermelonProductConfig; // 0x3C
+	private Dictionary<int, SummerWatermelonTwelveFirstTimeRewardConfig> _summerWatermelonFirstTimeRewardConfig; // 0x40
+	private Dictionary<int, SummerWatermelonTwelveMergeRewardConfig> _summerWatermelonMergeRewardConfig; // 0x44
+	private Dictionary<int, TableMergeItem> _mergeItemDictionary; // 0x48
+	public int UnSetItemsCount; // 0x4C
+	public const ulong Offset = 0;
+	private bool _isInit; // 0x50
+	private static GameObject _flyItemObj; // 0x8
+	private bool _lastActivityOpenState; // 0x51
+	[CompilerGenerated]
+	private bool <ShowIllustratedRedPoint>k__BackingField; // 0x52
+	public static string battlePassCoolTimeKey; // 0xC
+	private int _redPointNum; // 0x54
+	public static string packageCoolTimeKey; // 0x10
+	public static string newpackageCoolTimeKey; // 0x14
+
+	// Properties
+	public List<SummerWatermelonTwelvePackageConfig> PackageConfig { get; }
+	public List<SummerWatermelonTwelveProductAttenuationConfig> ProductAttenuationConfig { get; }
+	public static SummerWatermelonModel Instance { get; }
+	public override string Guid { get; }
+	public StorageSummerWatermelonTwelve StorageSummerWatermelon { get; }
+	public SummerWatermelonTwelveConfig SummerWatermelonConfig { get; }
+	public Dictionary<int, SummerWatermelonTwelveProductConfig> SummerWatermelonProductConfig { get; }
+	public Dictionary<int, SummerWatermelonTwelveFirstTimeRewardConfig> SummerWatermelonFirstTimeRewardConfig { get; }
+	public Dictionary<int, SummerWatermelonTwelveMergeRewardConfig> SummerWatermelonMergeRewardConfig { get; }
+	public TableMergeLine MergeLineConfig { get; }
+	public Dictionary<int, TableMergeItem> MergeItemDictionary { get; }
+	public StorageList<int> UnSetItems { get; }
+	public StorageList<int> UnSetRewards { get; }
+	public StorageDictionary<int, int> UnCollectRewards { get; }
+	public bool IsStart { get; }
+	public int CurDay { get; }
+	public ulong CurTime { get; }
+	public static GameObject FlyItemObj { get; }
+	public static UIPopupSummerWatermelonMainController MainView { get; }
+	public virtual string MainUIPath { get; }
+	public virtual string StartUIPath { get; }
+	public virtual string NewLevelUIPath { get; }
+	public bool ShowIllustratedRedPoint { get; set; }
+	public int CurScoreRatio { get; }
+	public virtual string PackageUIPath { get; }
+
+	// Methods
+
+	// RVA: 0x3135310 Offset: 0x3135310 VA: 0x3135310
+	public List<SummerWatermelonTwelvePackageConfig> get_PackageConfig() { }
+
+	// RVA: 0x313540C Offset: 0x313540C VA: 0x313540C
+	public List<SummerWatermelonTwelveProductAttenuationConfig> get_ProductAttenuationConfig() { }
+
+	// RVA: 0x3135508 Offset: 0x3135508 VA: 0x3135508
+	public float GetProductAttenuationConfig(int dayProductCount) { }
+
+	// RVA: 0x312E53C Offset: 0x312E53C VA: 0x312E53C
+	public static SummerWatermelonModel get_Instance() { }
+
+	// RVA: 0x31356B4 Offset: 0x31356B4 VA: 0x31356B4 Slot: 4
+	public override string get_Guid() { }
+
+	[RuntimeInitializeOnLoadMethod(0)]
+	// RVA: 0x3135744 Offset: 0x3135744 VA: 0x3135744
+	private static void InitAuto() { }
+
+	// RVA: 0x31357FC Offset: 0x31357FC VA: 0x31357FC
+	public StorageSummerWatermelonTwelve get_StorageSummerWatermelon() { }
+
+	// RVA: 0x313661C Offset: 0x313661C VA: 0x313661C
+	public bool IsABTest() { }
+
+	// RVA: 0x3136010 Offset: 0x3136010 VA: 0x3136010
+	public SummerWatermelonTwelveConfig get_SummerWatermelonConfig() { }
+
+	// RVA: 0x3136670 Offset: 0x3136670 VA: 0x3136670
+	public Dictionary<int, SummerWatermelonTwelveProductConfig> get_SummerWatermelonProductConfig() { }
+
+	// RVA: 0x3136980 Offset: 0x3136980 VA: 0x3136980
+	public Dictionary<int, SummerWatermelonTwelveFirstTimeRewardConfig> get_SummerWatermelonFirstTimeRewardConfig() { }
+
+	// RVA: 0x3136C90 Offset: 0x3136C90 VA: 0x3136C90
+	public Dictionary<int, SummerWatermelonTwelveMergeRewardConfig> get_SummerWatermelonMergeRewardConfig() { }
+
+	// RVA: 0x3136FA0 Offset: 0x3136FA0 VA: 0x3136FA0
+	public TableMergeLine get_MergeLineConfig() { }
+
+	// RVA: 0x31370A0 Offset: 0x31370A0 VA: 0x31370A0
+	public Dictionary<int, TableMergeItem> get_MergeItemDictionary() { }
+
+	// RVA: 0x3136148 Offset: 0x3136148 VA: 0x3136148
+	public TableMergeItem GetMergeItemConfig(int level) { }
+
+	// RVA: 0x31373B0 Offset: 0x31373B0 VA: 0x31373B0
+	public StorageList<int> get_UnSetItems() { }
+
+	// RVA: 0x31335EC Offset: 0x31335EC VA: 0x31335EC
+	public StorageList<int> get_UnSetRewards() { }
+
+	// RVA: 0x313741C Offset: 0x313741C VA: 0x313741C
+	public StorageDictionary<int, int> get_UnCollectRewards() { }
+
+	// RVA: 0x312E88C Offset: 0x312E88C VA: 0x312E88C
+	public bool get_IsStart() { }
+
+	// RVA: 0x3137488 Offset: 0x3137488 VA: 0x3137488
+	public bool IsOpened(bool hasLog = False) { }
+
+	// RVA: 0x313755C Offset: 0x313755C VA: 0x313755C
+	public int get_CurDay() { }
+
+	// RVA: 0x31375C4 Offset: 0x31375C4 VA: 0x31375C4
+	public ulong get_CurTime() { }
+
+	// RVA: 0x31376A4 Offset: 0x31376A4 VA: 0x31376A4
+	public void TryProductWaterMellon(StorageOrderItem orderItem, BaseOrderArea orderArea) { }
+
+	// RVA: 0x3138490 Offset: 0x3138490 VA: 0x3138490
+	public static GameObject get_FlyItemObj() { }
+
+	// RVA: 0x3137F50 Offset: 0x3137F50 VA: 0x3137F50
+	private static void FlyWatermelon(int itemId, Vector2 srcPos, Transform starTransform, float time, bool showEffect, Action action) { }
+
+	// RVA: 0x31386D8 Offset: 0x31386D8 VA: 0x31386D8 Slot: 5
+	public override void InitFromServerData(string activityId, string activityType, ulong startTime, ulong endTime, ulong rewardEndTime, bool manualEnd, string configJson, string activitySubType) { }
+
+	// RVA: 0x3139004 Offset: 0x3139004 VA: 0x3139004
+	public long GetLastActivityEndTime() { }
+
+	// RVA: 0x3139394 Offset: 0x3139394 VA: 0x3139394
+	public bool IsStorageEmpty() { }
+
+	// RVA: 0x31394F4 Offset: 0x31394F4 VA: 0x31394F4
+	public void ClearAllData() { }
+
+	// RVA: 0x3139728 Offset: 0x3139728 VA: 0x3139728 Slot: 18
+	protected override void InitServerDataFinish() { }
+
+	// RVA: 0x312EA10 Offset: 0x312EA10 VA: 0x312EA10
+	public void OpenMainPopup() { }
+
+	// RVA: 0x3136204 Offset: 0x3136204 VA: 0x3136204
+	private void AddBattlePassConfig() { }
+
+	// RVA: 0x3133658 Offset: 0x3133658 VA: 0x3133658
+	public static UIPopupSummerWatermelonMainController get_MainView() { }
+
+	// RVA: 0x3139934 Offset: 0x3139934 VA: 0x3139934 Slot: 26
+	public virtual string get_MainUIPath() { }
+
+	// RVA: 0x31399E0 Offset: 0x31399E0 VA: 0x31399E0 Slot: 27
+	public virtual string get_StartUIPath() { }
+
+	// RVA: 0x3139A8C Offset: 0x3139A8C VA: 0x3139A8C Slot: 28
+	public virtual string get_NewLevelUIPath() { }
+
+	// RVA: 0x3139B38 Offset: 0x3139B38 VA: 0x3139B38
+	public static bool CanShowStartView() { }
+
+	// RVA: 0x3139F5C Offset: 0x3139F5C VA: 0x3139F5C
+	public void OpenNewLevelPopup(TableMergeItem itemConfig, TaskCompletionSource<bool> callbackTask) { }
+
+	// RVA: 0x312E620 Offset: 0x312E620 VA: 0x312E620
+	public void UpdateTime() { }
+
+	// RVA: 0x313A14C Offset: 0x313A14C VA: 0x313A14C
+	public void EndActivity() { }
+
+	// RVA: 0x313A1A4 Offset: 0x313A1A4 VA: 0x313A1A4
+	public void StartActivity() { }
+
+	// RVA: 0x313AB38 Offset: 0x313AB38 VA: 0x313AB38
+	private static bool IsActivityStorageEnd(StorageSummerWatermelonTwelve storage) { }
+
+	// RVA: 0x313AC44 Offset: 0x313AC44 VA: 0x313AC44
+	private static void CompletedStorageActivity(StorageSummerWatermelonTwelve storage) { }
+
+	// RVA: 0x313ACF8 Offset: 0x313ACF8 VA: 0x313ACF8
+	public static void CleanUnCollectRewards() { }
+
+	// RVA: 0x3138BAC Offset: 0x3138BAC VA: 0x3138BAC
+	public void RemoveUselessStorage() { }
+
+	// RVA: 0x313B004 Offset: 0x313B004 VA: 0x313B004
+	public static List<ResData> GetAllUnCollectRewards() { }
+
+	[IDTag(1)]
+	// RVA: 0x313C6E0 Offset: 0x313C6E0 VA: 0x313C6E0
+	public void RemoveUnCollectRewards(List<ResData> datas) { }
+
+	// RVA: 0x313A1F0 Offset: 0x313A1F0 VA: 0x313A1F0
+	public bool CanShowUnCollectRewardsUI() { }
+
+	// RVA: 0x31331D8 Offset: 0x31331D8 VA: 0x31331D8
+	public List<int> GetRewardsOnMerge(TableMergeItem mergeNewConfig) { }
+
+	// RVA: 0x313D018 Offset: 0x313D018 VA: 0x313D018
+	public void AddUnCollectRewards(int rewardId) { }
+
+	[IDTag(0)]
+	// RVA: 0x313D1C4 Offset: 0x313D1C4 VA: 0x313D1C4
+	public void RemoveUnCollectRewards(int rewardId) { }
+
+	// RVA: 0x3133AB8 Offset: 0x3133AB8 VA: 0x3133AB8
+	public void OnUseItem(int id) { }
+
+	// RVA: 0x313D45C Offset: 0x313D45C VA: 0x313D45C
+	public MergeBoardEnum GetCurrentMergeBoardEnum() { }
+
+	// RVA: 0x313D4D8 Offset: 0x313D4D8 VA: 0x313D4D8
+	public MergeBoardEnum GetIndexMergeBoardEnum(int index) { }
+
+	// RVA: 0x313D540 Offset: 0x313D540 VA: 0x313D540
+	public int GetCurrentMergeBoardIndex() { }
+
+	// RVA: 0x313D684 Offset: 0x313D684 VA: 0x313D684
+	public bool ShouldShowLockAtLevel(int level) { }
+
+	// RVA: 0x313D838 Offset: 0x313D838 VA: 0x313D838
+	public int GetBoardIndexByLevel(int level) { }
+
+	// RVA: 0x313D9C0 Offset: 0x313D9C0 VA: 0x313D9C0
+	private void TransferItemsFromSmallToUnSet() { }
+
+	// RVA: 0x313DD94 Offset: 0x313DD94 VA: 0x313DD94
+	public void SwitchBoard() { }
+
+	// RVA: 0x313E0D4 Offset: 0x313E0D4 VA: 0x313E0D4
+	public void CheckAndSwitchBoard(bool isFormAwake = False) { }
+
+	// RVA: 0x313E228 Offset: 0x313E228 VA: 0x313E228
+	public void TryTransferItemsFromSmallToUnSet() { }
+
+	[AsyncStateMachine(typeof(SummerWatermelonModel.<OnNewItem>d__98))]
+	// RVA: 0x31338A4 Offset: 0x31338A4 VA: 0x31338A4
+	public void OnNewItem(int id, RefreshItemSource source) { }
+
+	// RVA: 0x313E2AC Offset: 0x313E2AC VA: 0x313E2AC
+	public Task GetFirstTimeReward(TableMergeItem itemConfig) { }
+
+	// RVA: 0x313EB38 Offset: 0x313EB38 VA: 0x313EB38 Slot: 23
+	public override bool CanDownLoadRes() { }
+
+	// RVA: 0x313EBE4 Offset: 0x313EBE4 VA: 0x313EBE4
+	public int GetLineId(bool isMainLine) { }
+
+	// RVA: 0x3137B78 Offset: 0x3137B78 VA: 0x3137B78
+	public ValueTuple<int, int> GetOrderRewardCardId(StorageOrderItem storageOrderItem) { }
+
+	[CompilerGenerated]
+	// RVA: 0x313EC60 Offset: 0x313EC60 VA: 0x313EC60
+	public bool get_ShowIllustratedRedPoint() { }
+
+	[CompilerGenerated]
+	// RVA: 0x313EC68 Offset: 0x313EC68 VA: 0x313EC68
+	private void set_ShowIllustratedRedPoint(bool value) { }
+
+	// RVA: 0x313EC70 Offset: 0x313EC70 VA: 0x313EC70
+	public string GetIllustratedProgress() { }
+
+	// RVA: 0x313ED9C Offset: 0x313ED9C VA: 0x313ED9C
+	private ValueTuple<int, int> GetLineUnLockProgress(bool isMainLine) { }
+
+	// RVA: 0x3135FA8 Offset: 0x3135FA8 VA: 0x3135FA8
+	public void ResetIllustrated() { }
+
+	[IDTag(1)]
+	// RVA: 0x313F78C Offset: 0x313F78C VA: 0x313F78C
+	public void AddIllustrated() { }
+
+	// RVA: 0x313F55C Offset: 0x313F55C VA: 0x313F55C
+	private void RemoveIllustrated(bool isMainLine) { }
+
+	[IDTag(0)]
+	// RVA: 0x313F7F4 Offset: 0x313F7F4 VA: 0x313F7F4
+	private void AddIllustrated(bool isMainLine) { }
+
+	// RVA: 0x313FA24 Offset: 0x313FA24 VA: 0x313FA24
+	public ValueTuple<int, int> GetUnlockMergeItemRewardNum(int id) { }
+
+	// RVA: 0x313FC38 Offset: 0x313FC38 VA: 0x313FC38
+	public bool CanDeleteItem(int id) { }
+
+	// RVA: 0x312F828 Offset: 0x312F828 VA: 0x312F828
+	public bool CanShowBattlePass() { }
+
+	// RVA: 0x312FA50 Offset: 0x312FA50 VA: 0x312FA50
+	public void OpenBattlePass() { }
+
+	// RVA: 0x313FE18 Offset: 0x313FE18 VA: 0x313FE18
+	public static bool CanShowBattlePassPopupEachDay() { }
+
+	// RVA: 0x31401C4 Offset: 0x31401C4 VA: 0x31401C4
+	public void DebugSetBuyTime() { }
+
+	// RVA: 0x31402F0 Offset: 0x31402F0 VA: 0x31402F0
+	public void DebugSetEndTime() { }
+
+	// RVA: 0x3140394 Offset: 0x3140394 VA: 0x3140394
+	public void DebugSetStartTime() { }
+
+	// RVA: 0x31404CC Offset: 0x31404CC VA: 0x31404CC
+	public void DebugSetSummerWatermelonTenBP() { }
+
+	// RVA: 0x314060C Offset: 0x314060C VA: 0x314060C
+	public void DebugSetBattlePass() { }
+
+	// RVA: 0x3140C0C Offset: 0x3140C0C VA: 0x3140C0C
+	public void DebugSetNewGift() { }
+
+	// RVA: 0x3140C90 Offset: 0x3140C90 VA: 0x3140C90
+	public int get_CurScoreRatio() { }
+
+	// RVA: 0x3140D4C Offset: 0x3140D4C VA: 0x3140D4C
+	public bool IsGetReward(int id, bool isNormal) { }
+
+	// RVA: 0x3140E1C Offset: 0x3140E1C VA: 0x3140E1C
+	private StorageSummerWatermelonTenBattlePassReward GetStorageReward(int id) { }
+
+	// RVA: 0x3140FC4 Offset: 0x3140FC4 VA: 0x3140FC4
+	public bool IsUnLock(int itemId) { }
+
+	// RVA: 0x313F0F4 Offset: 0x313F0F4 VA: 0x313F0F4
+	private void AddUnlockItem(int id) { }
+
+	// RVA: 0x31410DC Offset: 0x31410DC VA: 0x31410DC
+	public void GetReward(int id, bool isNormal) { }
+
+	// RVA: 0x31411B0 Offset: 0x31411B0 VA: 0x31411B0
+	public bool IsPurchase() { }
+
+	// RVA: 0x314122C Offset: 0x314122C VA: 0x314122C
+	public string GetBpPrice() { }
+
+	// RVA: 0x314131C Offset: 0x314131C VA: 0x314131C
+	public int GetBPShopId() { }
+
+	// RVA: 0x3141440 Offset: 0x3141440 VA: 0x3141440
+	public BattlePassTwelve GetBattlePassConfig(int index) { }
+
+	// RVA: 0x31415F8 Offset: 0x31415F8 VA: 0x31415F8
+	public int GetBattlePassConfigCount() { }
+
+	// RVA: 0x3141730 Offset: 0x3141730 VA: 0x3141730
+	public BattlePassTwelve GetFrontRewardConfig(int score = -1) { }
+
+	// RVA: 0x31419A8 Offset: 0x31419A8 VA: 0x31419A8
+	private int GetCurrentScore() { }
+
+	// RVA: 0x3141A64 Offset: 0x3141A64 VA: 0x3141A64
+	public BattlePassTwelve GetRewardConfig(int score, out bool isEnd) { }
+
+	// RVA: 0x3141C0C Offset: 0x3141C0C VA: 0x3141C0C
+	public BattlePassTwelve GetNowRewardConfig() { }
+
+	// RVA: 0x3140790 Offset: 0x3140790 VA: 0x3140790
+	public void UpdateBattlePassRedPoint() { }
+
+	// RVA: 0x312F920 Offset: 0x312F920 VA: 0x312F920
+	public int GetBattlePassRedPointNum() { }
+
+	// RVA: 0x313BC54 Offset: 0x313BC54 VA: 0x313BC54
+	private List<ResData> GetEndBattlePassReward(string key) { }
+
+	// RVA: 0x3141D6C Offset: 0x3141D6C VA: 0x3141D6C
+	public bool IsAdsGetReward(int id) { }
+
+	// RVA: 0x3141E20 Offset: 0x3141E20 VA: 0x3141E20
+	public void SetAdsReward(int id) { }
+
+	// RVA: 0x312FFF0 Offset: 0x312FFF0 VA: 0x312FFF0
+	public SummerWatermelonTwelvePackageConfig GetCurrentPackage() { }
+
+	// RVA: 0x31420B8 Offset: 0x31420B8 VA: 0x31420B8
+	public int GetCurIndex() { }
+
+	// RVA: 0x3142124 Offset: 0x3142124 VA: 0x3142124
+	public void AddCurIndex() { }
+
+	// RVA: 0x3142188 Offset: 0x3142188 VA: 0x3142188
+	public void SetCurIndex(int index) { }
+
+	// RVA: 0x3142208 Offset: 0x3142208 VA: 0x3142208
+	public void DebugSetGiftTime() { }
+
+	// RVA: 0x3141EC8 Offset: 0x3141EC8 VA: 0x3141EC8
+	public bool IsPackageOpened(SummerWatermelonTwelvePackageConfig config) { }
+
+	// RVA: 0x31423BC Offset: 0x31423BC VA: 0x31423BC
+	public ulong GetPackageLeftTime(SummerWatermelonTwelvePackageConfig curPackage) { }
+
+	// RVA: 0x3130628 Offset: 0x3130628 VA: 0x3130628
+	public string GetPackageLeftTimeText(SummerWatermelonTwelvePackageConfig curPackage) { }
+
+	// RVA: 0x3142548 Offset: 0x3142548 VA: 0x3142548
+	public ulong GetNewPackageLeftTime() { }
+
+	// RVA: 0x3130E7C Offset: 0x3130E7C VA: 0x3130E7C
+	public string GetNewPackageLeftTimeText() { }
+
+	// RVA: 0x3130C94 Offset: 0x3130C94 VA: 0x3130C94
+	public bool CanShowNewPackageGift() { }
+
+	// RVA: 0x3130F40 Offset: 0x3130F40 VA: 0x3130F40
+	public void ResetNewGiftData() { }
+
+	// RVA: 0x314277C Offset: 0x314277C VA: 0x314277C
+	public List<SummerWatermelonTwelvePackageFourReward> GetCurrentNewPackageRewards() { }
+
+	// RVA: 0x3142854 Offset: 0x3142854 VA: 0x3142854
+	public int GetNewPackageGiftNum(int id) { }
+
+	// RVA: 0x31429A4 Offset: 0x31429A4 VA: 0x31429A4
+	private void AddNewPackageGiftNum(int id) { }
+
+	// RVA: 0x3142B88 Offset: 0x3142B88 VA: 0x3142B88
+	public int AddAdsNum() { }
+
+	// RVA: 0x3142C1C Offset: 0x3142C1C VA: 0x3142C1C
+	public void ResetAdsNum() { }
+
+	// RVA: 0x3142CA4 Offset: 0x3142CA4 VA: 0x3142CA4
+	public void AddNewGiftsRewards(SummerWatermelonTwelvePackageFourReward rewardConfig) { }
+
+	// RVA: 0x314338C Offset: 0x314338C VA: 0x314338C
+	public bool IsSummerWatermelonItemId(int itemId) { }
+
+	// RVA: 0x31434CC Offset: 0x31434CC VA: 0x31434CC
+	public void PurchasePackageSuccess(TableShop shopConfig) { }
+
+	// RVA: 0x31446E8 Offset: 0x31446E8 VA: 0x31446E8
+	public void GiftBagSendOneGetReward(int index) { }
+
+	// RVA: 0x31451EC Offset: 0x31451EC VA: 0x31451EC
+	public bool ContinuePopupUI() { }
+
+	// RVA: 0x31452F4 Offset: 0x31452F4 VA: 0x31452F4
+	public static bool CanShowPackagePopupEachDay() { }
+
+	// RVA: 0x31455BC Offset: 0x31455BC VA: 0x31455BC
+	public static bool CanShowNewPackagePopupEachDay() { }
+
+	// RVA: 0x31457EC Offset: 0x31457EC VA: 0x31457EC Slot: 29
+	public virtual string get_PackageUIPath() { }
+
+	// RVA: 0x3130804 Offset: 0x3130804 VA: 0x3130804
+	public void OpenGiftPopup(SummerWatermelonTwelvePackageConfig curPackage) { }
+
+	// RVA: 0x31313CC Offset: 0x31313CC VA: 0x31313CC
+	public void OpenNewGiftPopup() { }
+
+	// RVA: 0x3145898 Offset: 0x3145898 VA: 0x3145898
+	public string GetPackageAuxItemAssetPath() { }
+
+	// RVA: 0x3135644 Offset: 0x3135644 VA: 0x3135644
+	public void .ctor() { }
+
+	// RVA: 0x3145928 Offset: 0x3145928 VA: 0x3145928
+	private static void .cctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x3145A04 Offset: 0x3145A04 VA: 0x3145A04
+	private void <SwitchBoard>b__95_0() { }
+
+	// RVA: 0x3145B20 Offset: 0x3145B20 VA: 0x3145B20
+	public void <>iFixBaseProxy_InitFromServerData(string P0, string P1, ulong P2, ulong P3, ulong P4, bool P5, string P6, string P7) { }
+
+	// RVA: 0x3145B78 Offset: 0x3145B78 VA: 0x3145B78
+	public void <>iFixBaseProxy_InitServerDataFinish() { }
+
+	// RVA: 0x3145B80 Offset: 0x3145B80 VA: 0x3145B80
+	public bool <>iFixBaseProxy_CanDownLoadRes() { }
+}
+

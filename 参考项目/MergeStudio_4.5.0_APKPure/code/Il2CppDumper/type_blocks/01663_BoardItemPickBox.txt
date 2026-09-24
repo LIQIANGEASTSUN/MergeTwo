@@ -1,0 +1,45 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "BoardItemPickBox", menuName = "Scriptable/BoardItem/BoardItemPickBox", order = 10)]
+public class BoardItemPickBox : BoardItemData, IConfigAdaptor<PickBoxSpawnerConfigAdaptor>, IConfigAdaptorBase // TypeDefIndex: 1663
+{
+	// Fields
+	public List<SpawnedItem> SpawnedItems1; // 0x2C
+	public List<SpawnedItem> SpawnedItems2; // 0x30
+	public List<SpawnedItem> SpawnedItems3; // 0x34
+
+	// Methods
+
+	// RVA: 0x18CACE4 Offset: 0x18CACE4 VA: 0x18CACE4 Slot: 4
+	public override bool Initialize(BoardEntity boardEntity, IItemController item, long millisecondsPassed, bool isNewlyCreated) { }
+
+	// RVA: 0x18CACEC Offset: 0x18CACEC VA: 0x18CACEC Slot: 6
+	public override int GetTimeRequiredToExitCharging() { }
+
+	// RVA: 0x18CACF4 Offset: 0x18CACF4 VA: 0x18CACF4 Slot: 17
+	public PickBoxSpawnerConfigAdaptor GetConfigAdaptor() { }
+
+	// RVA: 0x18CADB8 Offset: 0x18CADB8 VA: 0x18CADB8
+	public List<SpawnedItem> GetRandomItems() { }
+
+	// RVA: 0x18CB010 Offset: 0x18CB010 VA: 0x18CB010
+	private SpawnedItem GetRandomItemForOption1() { }
+
+	// RVA: 0x18CB054 Offset: 0x18CB054 VA: 0x18CB054
+	private SpawnedItem GetRandomItemForOption2(int option1SelectedSet) { }
+
+	// RVA: 0x18CB1BC Offset: 0x18CB1BC VA: 0x18CB1BC
+	private SpawnedItem GetRandomItemForOption3(int option1SelectedSet, int option2SelectedSet) { }
+
+	// RVA: 0x18CB768 Offset: 0x18CB768 VA: 0x18CB768
+	private SpawnedItem GetExceptionItem() { }
+
+	// RVA: 0x18CB32C Offset: 0x18CB32C VA: 0x18CB32C
+	private SpawnedItem GetRandom(List<SpawnedItem> lst) { }
+
+	// RVA: 0x18CB958 Offset: 0x18CB958 VA: 0x18CB958 Slot: 18
+	public AdaptorBase ConvertFromLocal() { }
+
+	// RVA: 0x18CB9B8 Offset: 0x18CB9B8 VA: 0x18CB9B8
+	public void .ctor() { }
+}
+

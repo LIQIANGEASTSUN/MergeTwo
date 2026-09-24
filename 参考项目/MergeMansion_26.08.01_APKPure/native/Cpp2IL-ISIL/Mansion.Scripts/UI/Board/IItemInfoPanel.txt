@@ -1,0 +1,23 @@
+Type: UI.Board.IItemInfoPanel
+
+Method: System.Void set_Content(UI.Board.IPanelContent value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void add_UndoButtonClicked(System.Action value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void remove_UndoButtonClicked(System.Action value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

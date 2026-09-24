@@ -1,0 +1,37 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class SpawningLane.<>c // TypeDefIndex: 1470
+{
+	// Fields
+	public static readonly SpawningLane.<>c <>9; // 0x0
+	public static Func<WeightedItemSpawnable, IMergeItem> <>9__3_0; // 0x8
+	public static Func<FixedItemSpawnable, IMergeItem> <>9__3_1; // 0x10
+	public static Func<FixedItemSpawnable, KeyValuePair<IMergeItem, int>> <>9__5_0; // 0x18
+	public static Func<WeightedItemSpawnable, int> <>9__5_1; // 0x20
+	public static Func<WeightedItemSpawnable, KeyValuePair<IMergeItem, int>> <>9__5_2; // 0x28
+
+	// Methods
+
+	// RVA: 0x6011EBC Offset: 0x600DEBC VA: 0x6011EBC
+	private static void .cctor() { }
+
+	// RVA: 0x6011F24 Offset: 0x600DF24 VA: 0x6011F24
+	public void .ctor() { }
+
+	// RVA: 0x6011F2C Offset: 0x600DF2C VA: 0x6011F2C
+	internal IMergeItem <GetSpawningList>b__3_0(WeightedItemSpawnable weightedItem) { }
+
+	// RVA: 0x6011F50 Offset: 0x600DF50 VA: 0x6011F50
+	internal IMergeItem <GetSpawningList>b__3_1(FixedItemSpawnable fixedItem) { }
+
+	// RVA: 0x6011F74 Offset: 0x600DF74 VA: 0x6011F74
+	internal KeyValuePair<IMergeItem, int> <GetItemPoolWithSpawnCounts>b__5_0(FixedItemSpawnable fixedItem) { }
+
+	// RVA: 0x6011FF4 Offset: 0x600DFF4 VA: 0x6011FF4
+	internal int <GetItemPoolWithSpawnCounts>b__5_1(WeightedItemSpawnable item) { }
+
+	// RVA: 0x601200C Offset: 0x600E00C VA: 0x601200C
+	internal KeyValuePair<IMergeItem, int> <GetItemPoolWithSpawnCounts>b__5_2(WeightedItemSpawnable weightedItem) { }
+}
+

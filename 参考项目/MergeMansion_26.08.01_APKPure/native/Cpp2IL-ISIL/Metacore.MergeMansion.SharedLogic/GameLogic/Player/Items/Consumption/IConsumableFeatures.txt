@@ -1,0 +1,44 @@
+Type: GameLogic.Player.Items.Consumption.IConsumableFeatures
+
+Method: System.Boolean get_IsConsumable()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Consumption.Logic.IConsumptionLogic get_Logic()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_AllowNearMatching()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_DragSafeAreaEnabled()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_ItemStackCap()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_CanSpawnBubbles()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

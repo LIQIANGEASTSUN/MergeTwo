@@ -1,0 +1,12 @@
+// Namespace: 
+public class BoardTransitionPayload // TypeDefIndex: 33
+{
+	// Fields
+	public string Reason; // 0x10
+
+	// Methods
+
+	// RVA: 0x5FD4240 Offset: 0x5FD0240 VA: 0x5FD4240
+	public void .ctor(string reason) { }
+}
+

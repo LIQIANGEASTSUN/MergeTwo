@@ -1,0 +1,22 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergingConfigurationModel.<>c__DisplayClass51_0 // TypeDefIndex: 563
+{
+	// Fields
+	public HashSet<IMergeItem> allItemsInDependentGraphs; // 0x10
+	public MergeConfigurationDependencyInfo result; // 0x18
+	public Action<IMergeGraphItem> <>9__1; // 0x20
+	public Predicate<IMergeItem> <>9__2; // 0x28
+
+	// Methods
+
+	// RVA: 0x61406CC Offset: 0x613C6CC VA: 0x61406CC
+	public void .ctor() { }
+
+	// RVA: 0x61419C8 Offset: 0x613D9C8 VA: 0x61419C8
+	internal void <BuildRecursiveSpawnInfo>b__1(IMergeGraphItem graph) { }
+
+	// RVA: 0x6141A90 Offset: 0x613DA90 VA: 0x6141A90
+	internal bool <BuildRecursiveSpawnInfo>b__2(IMergeItem candidate) { }
+}
+

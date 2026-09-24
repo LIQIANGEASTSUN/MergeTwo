@@ -1,0 +1,21 @@
+// Namespace: Merger.MergeBoardQueue.Services
+public class MergeBoardItemRewardDequeueStrategyRegistrar : IInitializable, IDisposable // TypeDefIndex: 33296
+{
+	// Fields
+	[Inject]
+	private IBoardItemRewardDequeueProviderRegistry _registry; // 0x10
+	[Inject]
+	private MergeBoardItemRewardDequeueStrategy _strategy; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A57A04 Offset: 0x6A53A04 VA: 0x6A57A04 Slot: 4
+	public void Initialize() { }
+
+	// RVA: 0x6A57AAC Offset: 0x6A53AAC VA: 0x6A57AAC Slot: 5
+	public void Dispose() { }
+
+	// RVA: 0x6A57B58 Offset: 0x6A53B58 VA: 0x6A57B58
+	public void .ctor() { }
+}
+

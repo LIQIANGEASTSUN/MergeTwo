@@ -1,0 +1,9 @@
+// Namespace: MergePuzzle.Locations
+public class BoardLocation : MacroLocationBase // TypeDefIndex: 5023
+{
+	// Methods
+
+	// RVA: 0x1E124EC Offset: 0x1E124EC VA: 0x1E124EC
+	public void .ctor() { }
+}
+

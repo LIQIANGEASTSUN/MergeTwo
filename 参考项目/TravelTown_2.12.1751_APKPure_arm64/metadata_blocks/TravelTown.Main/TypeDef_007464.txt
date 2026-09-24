@@ -1,0 +1,49 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BucketBubbleDropProbabilityModifier.<>c // TypeDefIndex: 7464
+{
+	// Fields
+	public static readonly BucketBubbleDropProbabilityModifier.<>c <>9; // 0x0
+	public static Func<SmarterBubblesConversionConfig, int> <>9__9_0; // 0x8
+	public static Predicate<Bucket> <>9__13_0; // 0x10
+	public static Func<Bucket, int> <>9__13_1; // 0x18
+	public static Func<BubbleData, BubbleData> <>9__13_2; // 0x20
+	public static Func<BubbleData, long> <>9__13_4; // 0x28
+	public static Func<BubbleData, bool> <>9__13_5; // 0x30
+	public static Func<BubbleData, long> <>9__14_1; // 0x38
+	public static Func<BubbleData, bool> <>9__14_2; // 0x40
+
+	// Methods
+
+	// RVA: 0x657F8F4 Offset: 0x657B8F4 VA: 0x657F8F4
+	private static void .cctor() { }
+
+	// RVA: 0x657F95C Offset: 0x657B95C VA: 0x657F95C
+	public void .ctor() { }
+
+	// RVA: 0x657F964 Offset: 0x657B964 VA: 0x657F964
+	internal int <Initialize>b__9_0(SmarterBubblesConversionConfig b) { }
+
+	// RVA: 0x657F97C Offset: 0x657B97C VA: 0x657F97C
+	internal bool <CalculateConversionRatio>b__13_0(Bucket b) { }
+
+	// RVA: 0x657F994 Offset: 0x657B994 VA: 0x657F994
+	internal int <CalculateConversionRatio>b__13_1(Bucket b) { }
+
+	// RVA: 0x657F9AC Offset: 0x657B9AC VA: 0x657F9AC
+	internal BubbleData <CalculateConversionRatio>b__13_2(BubbleData b) { }
+
+	// RVA: 0x657F9B4 Offset: 0x657B9B4 VA: 0x657F9B4
+	internal long <CalculateConversionRatio>b__13_4(BubbleData bubble) { }
+
+	// RVA: 0x657F9CC Offset: 0x657B9CC VA: 0x657F9CC
+	internal bool <CalculateConversionRatio>b__13_5(BubbleData bubble) { }
+
+	// RVA: 0x657F9E4 Offset: 0x657B9E4 VA: 0x657F9E4
+	internal long <UpdateBuckets>b__14_1(BubbleData bubble) { }
+
+	// RVA: 0x657F9FC Offset: 0x657B9FC VA: 0x657F9FC
+	internal bool <UpdateBuckets>b__14_2(BubbleData bubble) { }
+}
+

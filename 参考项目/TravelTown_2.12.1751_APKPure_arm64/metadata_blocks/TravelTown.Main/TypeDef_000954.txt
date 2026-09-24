@@ -1,0 +1,31 @@
+// Namespace: MergeEngine.ECS.Systems.Items
+public class ConsumableDropSystem : SystemBase // TypeDefIndex: 954
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x40
+	[Inject]
+	private IResourcesConfigurationModel _resourcesConfigurationModel; // 0x48
+	[Inject]
+	private IGameConfigurationModel _gameConfigurationModel; // 0x50
+	[InjectComponent]
+	private PlayerProgressionComponent _playerProgressionComponent; // 0x58
+
+	// Properties
+	private BoardSystem BoardSystem { get; }
+
+	// Methods
+
+	// RVA: 0x678C69C Offset: 0x678869C VA: 0x678C69C
+	private BoardSystem get_BoardSystem() { }
+
+	// RVA: 0x678C6E4 Offset: 0x67886E4 VA: 0x678C6E4
+	public IMergeItem TrySpawnConsumableFor(Entity entity, out Entity consumableEntity) { }
+
+	// RVA: 0x678CB14 Offset: 0x6788B14 VA: 0x678CB14
+	private IMergeItem SpawnConsumable(PlayerResourceEnum resource, BoardItemPosition boardItemPosition, BoardItemPosition positionFrom, out Entity consumableEntity) { }
+
+	// RVA: 0x678CF38 Offset: 0x6788F38 VA: 0x678CF38
+	public void .ctor() { }
+}
+

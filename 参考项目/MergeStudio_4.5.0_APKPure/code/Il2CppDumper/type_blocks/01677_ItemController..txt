@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemController.<>c__DisplayClass229_0 // TypeDefIndex: 1677
+{
+	// Fields
+	public Action onComplete; // 0x8
+
+	// Methods
+
+	// RVA: 0x18CD4F8 Offset: 0x18CD4F8 VA: 0x18CD4F8
+	public void .ctor() { }
+
+	// RVA: 0x18CD500 Offset: 0x18CD500 VA: 0x18CD500
+	internal void <AnimateItemToTask>b__0() { }
+}
+

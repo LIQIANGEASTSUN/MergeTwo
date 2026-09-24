@@ -1,0 +1,507 @@
+// Namespace: DragonU3DSDK.Storage
+[DefaultMember("Item")]
+[Serializable]
+public class StorageDictionary<TKey, TValue> : Dictionary<TKey, TValue> // TypeDefIndex: 10853
+{
+	// Fields
+	[CompilerGenerated]
+	private bool <SyncForce>k__BackingField; // 0x0
+	[CompilerGenerated]
+	private bool <SyncForceRemote>k__BackingField; // 0x0
+
+	// Properties
+	private bool SyncForce { get; set; }
+	private bool SyncForceRemote { get; set; }
+	public TValue Item { get; set; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor(bool syncForce = False, bool syncForceRemote = False) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B60590 Offset: 0x3B60590 VA: 0x3B60590
+	|-StorageDictionary<int, bool>..ctor
+	|
+	|-RVA: 0x3B60B60 Offset: 0x3B60B60 VA: 0x3B60B60
+	|-StorageDictionary<int, int>..ctor
+	|
+	|-RVA: 0x3B610D0 Offset: 0x3B610D0 VA: 0x3B610D0
+	|-StorageDictionary<int, long>..ctor
+	|
+	|-RVA: 0x3B61CFC Offset: 0x3B61CFC VA: 0x3B61CFC
+	|-StorageDictionary<int, object>..ctor
+	|
+	|-RVA: 0x3B62258 Offset: 0x3B62258 VA: 0x3B62258
+	|-StorageDictionary<long, object>..ctor
+	|
+	|-RVA: 0x3B62818 Offset: 0x3B62818 VA: 0x3B62818
+	|-StorageDictionary<object, bool>..ctor
+	|
+	|-RVA: 0x3B62DE8 Offset: 0x3B62DE8 VA: 0x3B62DE8
+	|-StorageDictionary<object, int>..ctor
+	|
+	|-RVA: 0x3B63358 Offset: 0x3B63358 VA: 0x3B63358
+	|-StorageDictionary<object, long>..ctor
+	|
+	|-RVA: 0x3B638F4 Offset: 0x3B638F4 VA: 0x3B638F4
+	|-StorageDictionary<object, object>..ctor
+	|
+	|-RVA: 0x3B63E50 Offset: 0x3B63E50 VA: 0x3B63E50
+	|-StorageDictionary<object, uint>..ctor
+	|
+	|-RVA: 0x3B643C0 Offset: 0x3B643C0 VA: 0x3B643C0
+	|-StorageDictionary<ulong, int>..ctor
+	|
+	|-RVA: 0x3B64984 Offset: 0x3B64984 VA: 0x3B64984
+	|-StorageDictionary<ulong, object>..ctor
+	|
+	|-RVA: 0x3B64F44 Offset: 0x3B64F44 VA: 0x3B64F44
+	|-StorageDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>..ctor
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	private bool get_SyncForce() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B605C0 Offset: 0x3B605C0 VA: 0x3B605C0
+	|-StorageDictionary<int, bool>.get_SyncForce
+	|
+	|-RVA: 0x3B60B90 Offset: 0x3B60B90 VA: 0x3B60B90
+	|-StorageDictionary<int, int>.get_SyncForce
+	|
+	|-RVA: 0x3B61100 Offset: 0x3B61100 VA: 0x3B61100
+	|-StorageDictionary<int, long>.get_SyncForce
+	|
+	|-RVA: 0x3B61D2C Offset: 0x3B61D2C VA: 0x3B61D2C
+	|-StorageDictionary<int, object>.get_SyncForce
+	|
+	|-RVA: 0x3B62288 Offset: 0x3B62288 VA: 0x3B62288
+	|-StorageDictionary<long, object>.get_SyncForce
+	|
+	|-RVA: 0x3B62848 Offset: 0x3B62848 VA: 0x3B62848
+	|-StorageDictionary<object, bool>.get_SyncForce
+	|
+	|-RVA: 0x3B62E18 Offset: 0x3B62E18 VA: 0x3B62E18
+	|-StorageDictionary<object, int>.get_SyncForce
+	|
+	|-RVA: 0x3B63388 Offset: 0x3B63388 VA: 0x3B63388
+	|-StorageDictionary<object, long>.get_SyncForce
+	|
+	|-RVA: 0x3B63924 Offset: 0x3B63924 VA: 0x3B63924
+	|-StorageDictionary<object, object>.get_SyncForce
+	|
+	|-RVA: 0x3B63E80 Offset: 0x3B63E80 VA: 0x3B63E80
+	|-StorageDictionary<object, uint>.get_SyncForce
+	|
+	|-RVA: 0x3B643F0 Offset: 0x3B643F0 VA: 0x3B643F0
+	|-StorageDictionary<ulong, int>.get_SyncForce
+	|
+	|-RVA: 0x3B649B4 Offset: 0x3B649B4 VA: 0x3B649B4
+	|-StorageDictionary<ulong, object>.get_SyncForce
+	|
+	|-RVA: 0x3B64FAC Offset: 0x3B64FAC VA: 0x3B64FAC
+	|-StorageDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.get_SyncForce
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	private void set_SyncForce(bool value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B605C8 Offset: 0x3B605C8 VA: 0x3B605C8
+	|-StorageDictionary<int, bool>.set_SyncForce
+	|
+	|-RVA: 0x3B60B98 Offset: 0x3B60B98 VA: 0x3B60B98
+	|-StorageDictionary<int, int>.set_SyncForce
+	|
+	|-RVA: 0x3B61108 Offset: 0x3B61108 VA: 0x3B61108
+	|-StorageDictionary<int, long>.set_SyncForce
+	|
+	|-RVA: 0x3B61D34 Offset: 0x3B61D34 VA: 0x3B61D34
+	|-StorageDictionary<int, object>.set_SyncForce
+	|
+	|-RVA: 0x3B62290 Offset: 0x3B62290 VA: 0x3B62290
+	|-StorageDictionary<long, object>.set_SyncForce
+	|
+	|-RVA: 0x3B62850 Offset: 0x3B62850 VA: 0x3B62850
+	|-StorageDictionary<object, bool>.set_SyncForce
+	|
+	|-RVA: 0x3B62E20 Offset: 0x3B62E20 VA: 0x3B62E20
+	|-StorageDictionary<object, int>.set_SyncForce
+	|
+	|-RVA: 0x3B63390 Offset: 0x3B63390 VA: 0x3B63390
+	|-StorageDictionary<object, long>.set_SyncForce
+	|
+	|-RVA: 0x3B6392C Offset: 0x3B6392C VA: 0x3B6392C
+	|-StorageDictionary<object, object>.set_SyncForce
+	|
+	|-RVA: 0x3B63E88 Offset: 0x3B63E88 VA: 0x3B63E88
+	|-StorageDictionary<object, uint>.set_SyncForce
+	|
+	|-RVA: 0x3B643F8 Offset: 0x3B643F8 VA: 0x3B643F8
+	|-StorageDictionary<ulong, int>.set_SyncForce
+	|
+	|-RVA: 0x3B649BC Offset: 0x3B649BC VA: 0x3B649BC
+	|-StorageDictionary<ulong, object>.set_SyncForce
+	|
+	|-RVA: 0x3B64FB4 Offset: 0x3B64FB4 VA: 0x3B64FB4
+	|-StorageDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.set_SyncForce
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	private bool get_SyncForceRemote() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B605D0 Offset: 0x3B605D0 VA: 0x3B605D0
+	|-StorageDictionary<int, bool>.get_SyncForceRemote
+	|
+	|-RVA: 0x3B60BA0 Offset: 0x3B60BA0 VA: 0x3B60BA0
+	|-StorageDictionary<int, int>.get_SyncForceRemote
+	|
+	|-RVA: 0x3B61110 Offset: 0x3B61110 VA: 0x3B61110
+	|-StorageDictionary<int, long>.get_SyncForceRemote
+	|
+	|-RVA: 0x3B61D3C Offset: 0x3B61D3C VA: 0x3B61D3C
+	|-StorageDictionary<int, object>.get_SyncForceRemote
+	|
+	|-RVA: 0x3B62298 Offset: 0x3B62298 VA: 0x3B62298
+	|-StorageDictionary<long, object>.get_SyncForceRemote
+	|
+	|-RVA: 0x3B62858 Offset: 0x3B62858 VA: 0x3B62858
+	|-StorageDictionary<object, bool>.get_SyncForceRemote
+	|
+	|-RVA: 0x3B62E28 Offset: 0x3B62E28 VA: 0x3B62E28
+	|-StorageDictionary<object, int>.get_SyncForceRemote
+	|
+	|-RVA: 0x3B63398 Offset: 0x3B63398 VA: 0x3B63398
+	|-StorageDictionary<object, long>.get_SyncForceRemote
+	|
+	|-RVA: 0x3B63934 Offset: 0x3B63934 VA: 0x3B63934
+	|-StorageDictionary<object, object>.get_SyncForceRemote
+	|
+	|-RVA: 0x3B63E90 Offset: 0x3B63E90 VA: 0x3B63E90
+	|-StorageDictionary<object, uint>.get_SyncForceRemote
+	|
+	|-RVA: 0x3B64400 Offset: 0x3B64400 VA: 0x3B64400
+	|-StorageDictionary<ulong, int>.get_SyncForceRemote
+	|
+	|-RVA: 0x3B649C4 Offset: 0x3B649C4 VA: 0x3B649C4
+	|-StorageDictionary<ulong, object>.get_SyncForceRemote
+	|
+	|-RVA: 0x3B64FBC Offset: 0x3B64FBC VA: 0x3B64FBC
+	|-StorageDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.get_SyncForceRemote
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	private void set_SyncForceRemote(bool value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B605D8 Offset: 0x3B605D8 VA: 0x3B605D8
+	|-StorageDictionary<int, bool>.set_SyncForceRemote
+	|
+	|-RVA: 0x3B60BA8 Offset: 0x3B60BA8 VA: 0x3B60BA8
+	|-StorageDictionary<int, int>.set_SyncForceRemote
+	|
+	|-RVA: 0x3B61118 Offset: 0x3B61118 VA: 0x3B61118
+	|-StorageDictionary<int, long>.set_SyncForceRemote
+	|
+	|-RVA: 0x3B61D44 Offset: 0x3B61D44 VA: 0x3B61D44
+	|-StorageDictionary<int, object>.set_SyncForceRemote
+	|
+	|-RVA: 0x3B622A0 Offset: 0x3B622A0 VA: 0x3B622A0
+	|-StorageDictionary<long, object>.set_SyncForceRemote
+	|
+	|-RVA: 0x3B62860 Offset: 0x3B62860 VA: 0x3B62860
+	|-StorageDictionary<object, bool>.set_SyncForceRemote
+	|
+	|-RVA: 0x3B62E30 Offset: 0x3B62E30 VA: 0x3B62E30
+	|-StorageDictionary<object, int>.set_SyncForceRemote
+	|
+	|-RVA: 0x3B633A0 Offset: 0x3B633A0 VA: 0x3B633A0
+	|-StorageDictionary<object, long>.set_SyncForceRemote
+	|
+	|-RVA: 0x3B6393C Offset: 0x3B6393C VA: 0x3B6393C
+	|-StorageDictionary<object, object>.set_SyncForceRemote
+	|
+	|-RVA: 0x3B63E98 Offset: 0x3B63E98 VA: 0x3B63E98
+	|-StorageDictionary<object, uint>.set_SyncForceRemote
+	|
+	|-RVA: 0x3B64408 Offset: 0x3B64408 VA: 0x3B64408
+	|-StorageDictionary<ulong, int>.set_SyncForceRemote
+	|
+	|-RVA: 0x3B649CC Offset: 0x3B649CC VA: 0x3B649CC
+	|-StorageDictionary<ulong, object>.set_SyncForceRemote
+	|
+	|-RVA: 0x3B64FC4 Offset: 0x3B64FC4 VA: 0x3B64FC4
+	|-StorageDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.set_SyncForceRemote
+	*/
+
+	// RVA: -1 Offset: -1
+	private void OnStorageChanged() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B605E0 Offset: 0x3B605E0 VA: 0x3B605E0
+	|-StorageDictionary<int, bool>.OnStorageChanged
+	|
+	|-RVA: 0x3B60BB0 Offset: 0x3B60BB0 VA: 0x3B60BB0
+	|-StorageDictionary<int, int>.OnStorageChanged
+	|
+	|-RVA: 0x3B61120 Offset: 0x3B61120 VA: 0x3B61120
+	|-StorageDictionary<int, long>.OnStorageChanged
+	|
+	|-RVA: 0x3B61D4C Offset: 0x3B61D4C VA: 0x3B61D4C
+	|-StorageDictionary<int, object>.OnStorageChanged
+	|
+	|-RVA: 0x3B622A8 Offset: 0x3B622A8 VA: 0x3B622A8
+	|-StorageDictionary<long, object>.OnStorageChanged
+	|
+	|-RVA: 0x3B62868 Offset: 0x3B62868 VA: 0x3B62868
+	|-StorageDictionary<object, bool>.OnStorageChanged
+	|
+	|-RVA: 0x3B62E38 Offset: 0x3B62E38 VA: 0x3B62E38
+	|-StorageDictionary<object, int>.OnStorageChanged
+	|
+	|-RVA: 0x3B633A8 Offset: 0x3B633A8 VA: 0x3B633A8
+	|-StorageDictionary<object, long>.OnStorageChanged
+	|
+	|-RVA: 0x3B63944 Offset: 0x3B63944 VA: 0x3B63944
+	|-StorageDictionary<object, object>.OnStorageChanged
+	|
+	|-RVA: 0x3B63EA0 Offset: 0x3B63EA0 VA: 0x3B63EA0
+	|-StorageDictionary<object, uint>.OnStorageChanged
+	|
+	|-RVA: 0x3B64410 Offset: 0x3B64410 VA: 0x3B64410
+	|-StorageDictionary<ulong, int>.OnStorageChanged
+	|
+	|-RVA: 0x3B649D4 Offset: 0x3B649D4 VA: 0x3B649D4
+	|-StorageDictionary<ulong, object>.OnStorageChanged
+	|
+	|-RVA: 0x3B64FCC Offset: 0x3B64FCC VA: 0x3B64FCC
+	|-StorageDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.OnStorageChanged
+	*/
+
+	// RVA: -1 Offset: -1
+	public void Add(TKey key, TValue value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B60700 Offset: 0x3B60700 VA: 0x3B60700
+	|-StorageDictionary<int, bool>.Add
+	|
+	|-RVA: 0x3B60CD0 Offset: 0x3B60CD0 VA: 0x3B60CD0
+	|-StorageDictionary<int, int>.Add
+	|
+	|-RVA: 0x3B61240 Offset: 0x3B61240 VA: 0x3B61240
+	|-StorageDictionary<int, long>.Add
+	|
+	|-RVA: 0x3B61E6C Offset: 0x3B61E6C VA: 0x3B61E6C
+	|-StorageDictionary<int, object>.Add
+	|
+	|-RVA: 0x3B623C8 Offset: 0x3B623C8 VA: 0x3B623C8
+	|-StorageDictionary<long, object>.Add
+	|
+	|-RVA: 0x3B62988 Offset: 0x3B62988 VA: 0x3B62988
+	|-StorageDictionary<object, bool>.Add
+	|
+	|-RVA: 0x3B62F58 Offset: 0x3B62F58 VA: 0x3B62F58
+	|-StorageDictionary<object, int>.Add
+	|
+	|-RVA: 0x3B634C8 Offset: 0x3B634C8 VA: 0x3B634C8
+	|-StorageDictionary<object, long>.Add
+	|
+	|-RVA: 0x3B63A64 Offset: 0x3B63A64 VA: 0x3B63A64
+	|-StorageDictionary<object, object>.Add
+	|
+	|-RVA: 0x3B63FC0 Offset: 0x3B63FC0 VA: 0x3B63FC0
+	|-StorageDictionary<object, uint>.Add
+	|
+	|-RVA: 0x3B64530 Offset: 0x3B64530 VA: 0x3B64530
+	|-StorageDictionary<ulong, int>.Add
+	|
+	|-RVA: 0x3B64AF4 Offset: 0x3B64AF4 VA: 0x3B64AF4
+	|-StorageDictionary<ulong, object>.Add
+	|
+	|-RVA: 0x3B65118 Offset: 0x3B65118 VA: 0x3B65118
+	|-StorageDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.Add
+	*/
+
+	// RVA: -1 Offset: -1
+	public void Clear() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B60754 Offset: 0x3B60754 VA: 0x3B60754
+	|-StorageDictionary<int, bool>.Clear
+	|
+	|-RVA: 0x3B60D24 Offset: 0x3B60D24 VA: 0x3B60D24
+	|-StorageDictionary<int, int>.Clear
+	|
+	|-RVA: 0x3B612A8 Offset: 0x3B612A8 VA: 0x3B612A8
+	|-StorageDictionary<int, long>.Clear
+	|
+	|-RVA: 0x3B61EC0 Offset: 0x3B61EC0 VA: 0x3B61EC0
+	|-StorageDictionary<int, object>.Clear
+	|
+	|-RVA: 0x3B62430 Offset: 0x3B62430 VA: 0x3B62430
+	|-StorageDictionary<long, object>.Clear
+	|
+	|-RVA: 0x3B629DC Offset: 0x3B629DC VA: 0x3B629DC
+	|-StorageDictionary<object, bool>.Clear
+	|
+	|-RVA: 0x3B62FAC Offset: 0x3B62FAC VA: 0x3B62FAC
+	|-StorageDictionary<object, int>.Clear
+	|
+	|-RVA: 0x3B63530 Offset: 0x3B63530 VA: 0x3B63530
+	|-StorageDictionary<object, long>.Clear
+	|
+	|-RVA: 0x3B63AB8 Offset: 0x3B63AB8 VA: 0x3B63AB8
+	|-StorageDictionary<object, object>.Clear
+	|
+	|-RVA: 0x3B64014 Offset: 0x3B64014 VA: 0x3B64014
+	|-StorageDictionary<object, uint>.Clear
+	|
+	|-RVA: 0x3B64598 Offset: 0x3B64598 VA: 0x3B64598
+	|-StorageDictionary<ulong, int>.Clear
+	|
+	|-RVA: 0x3B64B5C Offset: 0x3B64B5C VA: 0x3B64B5C
+	|-StorageDictionary<ulong, object>.Clear
+	|
+	|-RVA: 0x3B6525C Offset: 0x3B6525C VA: 0x3B6525C
+	|-StorageDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.Clear
+	*/
+
+	// RVA: -1 Offset: -1
+	public bool Remove(TKey key) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B60894 Offset: 0x3B60894 VA: 0x3B60894
+	|-StorageDictionary<int, bool>.Remove
+	|
+	|-RVA: 0x3B60E64 Offset: 0x3B60E64 VA: 0x3B60E64
+	|-StorageDictionary<int, int>.Remove
+	|
+	|-RVA: 0x3B613E8 Offset: 0x3B613E8 VA: 0x3B613E8
+	|-StorageDictionary<int, long>.Remove
+	|
+	|-RVA: 0x3B62000 Offset: 0x3B62000 VA: 0x3B62000
+	|-StorageDictionary<int, object>.Remove
+	|
+	|-RVA: 0x3B62570 Offset: 0x3B62570 VA: 0x3B62570
+	|-StorageDictionary<long, object>.Remove
+	|
+	|-RVA: 0x3B62B1C Offset: 0x3B62B1C VA: 0x3B62B1C
+	|-StorageDictionary<object, bool>.Remove
+	|
+	|-RVA: 0x3B630EC Offset: 0x3B630EC VA: 0x3B630EC
+	|-StorageDictionary<object, int>.Remove
+	|
+	|-RVA: 0x3B63670 Offset: 0x3B63670 VA: 0x3B63670
+	|-StorageDictionary<object, long>.Remove
+	|
+	|-RVA: 0x3B63BF8 Offset: 0x3B63BF8 VA: 0x3B63BF8
+	|-StorageDictionary<object, object>.Remove
+	|
+	|-RVA: 0x3B64154 Offset: 0x3B64154 VA: 0x3B64154
+	|-StorageDictionary<object, uint>.Remove
+	|
+	|-RVA: 0x3B646D8 Offset: 0x3B646D8 VA: 0x3B646D8
+	|-StorageDictionary<ulong, int>.Remove
+	|
+	|-RVA: 0x3B64C9C Offset: 0x3B64C9C VA: 0x3B64C9C
+	|-StorageDictionary<ulong, object>.Remove
+	|
+	|-RVA: 0x3B653A4 Offset: 0x3B653A4 VA: 0x3B653A4
+	|-StorageDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.Remove
+	*/
+
+	// RVA: -1 Offset: -1
+	public TValue get_Item(TKey key) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B609DC Offset: 0x3B609DC VA: 0x3B609DC
+	|-StorageDictionary<int, bool>.get_Item
+	|
+	|-RVA: 0x3B60FAC Offset: 0x3B60FAC VA: 0x3B60FAC
+	|-StorageDictionary<int, int>.get_Item
+	|
+	|-RVA: 0x3B61530 Offset: 0x3B61530 VA: 0x3B61530
+	|-StorageDictionary<int, long>.get_Item
+	|
+	|-RVA: 0x3B62148 Offset: 0x3B62148 VA: 0x3B62148
+	|-StorageDictionary<int, object>.get_Item
+	|
+	|-RVA: 0x3B626CC Offset: 0x3B626CC VA: 0x3B626CC
+	|-StorageDictionary<long, object>.get_Item
+	|
+	|-RVA: 0x3B62C64 Offset: 0x3B62C64 VA: 0x3B62C64
+	|-StorageDictionary<object, bool>.get_Item
+	|
+	|-RVA: 0x3B63234 Offset: 0x3B63234 VA: 0x3B63234
+	|-StorageDictionary<object, int>.get_Item
+	|
+	|-RVA: 0x3B637B8 Offset: 0x3B637B8 VA: 0x3B637B8
+	|-StorageDictionary<object, long>.get_Item
+	|
+	|-RVA: 0x3B63D40 Offset: 0x3B63D40 VA: 0x3B63D40
+	|-StorageDictionary<object, object>.get_Item
+	|
+	|-RVA: 0x3B6429C Offset: 0x3B6429C VA: 0x3B6429C
+	|-StorageDictionary<object, uint>.get_Item
+	|
+	|-RVA: 0x3B64834 Offset: 0x3B64834 VA: 0x3B64834
+	|-StorageDictionary<ulong, int>.get_Item
+	|
+	|-RVA: 0x3B64DF8 Offset: 0x3B64DF8 VA: 0x3B64DF8
+	|-StorageDictionary<ulong, object>.get_Item
+	|
+	|-RVA: 0x3B6559C Offset: 0x3B6559C VA: 0x3B6559C
+	|-StorageDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.get_Item
+	*/
+
+	// RVA: -1 Offset: -1
+	public void set_Item(TKey key, TValue value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B60A14 Offset: 0x3B60A14 VA: 0x3B60A14
+	|-StorageDictionary<int, bool>.set_Item
+	|
+	|-RVA: 0x3B60FE4 Offset: 0x3B60FE4 VA: 0x3B60FE4
+	|-StorageDictionary<int, int>.set_Item
+	|
+	|-RVA: 0x3B61568 Offset: 0x3B61568 VA: 0x3B61568
+	|-StorageDictionary<int, long>.set_Item
+	|
+	|-RVA: 0x3B62180 Offset: 0x3B62180 VA: 0x3B62180
+	|-StorageDictionary<int, object>.set_Item
+	|
+	|-RVA: 0x3B62718 Offset: 0x3B62718 VA: 0x3B62718
+	|-StorageDictionary<long, object>.set_Item
+	|
+	|-RVA: 0x3B62C9C Offset: 0x3B62C9C VA: 0x3B62C9C
+	|-StorageDictionary<object, bool>.set_Item
+	|
+	|-RVA: 0x3B6326C Offset: 0x3B6326C VA: 0x3B6326C
+	|-StorageDictionary<object, int>.set_Item
+	|
+	|-RVA: 0x3B637F0 Offset: 0x3B637F0 VA: 0x3B637F0
+	|-StorageDictionary<object, long>.set_Item
+	|
+	|-RVA: 0x3B63D78 Offset: 0x3B63D78 VA: 0x3B63D78
+	|-StorageDictionary<object, object>.set_Item
+	|
+	|-RVA: 0x3B642D4 Offset: 0x3B642D4 VA: 0x3B642D4
+	|-StorageDictionary<object, uint>.set_Item
+	|
+	|-RVA: 0x3B64880 Offset: 0x3B64880 VA: 0x3B64880
+	|-StorageDictionary<ulong, int>.set_Item
+	|
+	|-RVA: 0x3B64E44 Offset: 0x3B64E44 VA: 0x3B64E44
+	|-StorageDictionary<ulong, object>.set_Item
+	|
+	|-RVA: 0x3B656A0 Offset: 0x3B656A0 VA: 0x3B656A0
+	|-StorageDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.set_Item
+	*/
+}
+

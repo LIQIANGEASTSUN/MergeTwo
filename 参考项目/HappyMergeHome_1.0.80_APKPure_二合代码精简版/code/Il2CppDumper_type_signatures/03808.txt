@@ -1,0 +1,33 @@
+// Namespace: Activity.SummerWatermelon_22
+public class SummerWatermelonMergeBoard4 : MergeBoard // TypeDefIndex: 3808
+{
+	// Methods
+
+	// RVA: 0x2F33F5C Offset: 0x2F33F5C VA: 0x2F33F5C Slot: 5
+	public override void InitBoardId() { }
+
+	// RVA: 0x2F33FBC Offset: 0x2F33FBC VA: 0x2F33FBC Slot: 9
+	public override TableMergeItem MergeToProductActivity(int index, TableMergeItem newConfig, TableMergeItem oldConfig) { }
+
+	// RVA: 0x2F344AC Offset: 0x2F344AC VA: 0x2F344AC Slot: 7
+	public override void OnNewItem(int index, int oldIndex, int id, int oldId, RefreshItemSource source) { }
+
+	// RVA: 0x2F34614 Offset: 0x2F34614 VA: 0x2F34614 Slot: 6
+	public override void OnUseItem(int index, int id) { }
+
+	// RVA: 0x2F34708 Offset: 0x2F34708 VA: 0x2F34708
+	public void .ctor() { }
+
+	// RVA: 0x2F34710 Offset: 0x2F34710 VA: 0x2F34710
+	public void <>iFixBaseProxy_InitBoardId() { }
+
+	// RVA: 0x2F34718 Offset: 0x2F34718 VA: 0x2F34718
+	public TableMergeItem <>iFixBaseProxy_MergeToProductActivity(int P0, TableMergeItem P1, TableMergeItem P2) { }
+
+	// RVA: 0x2F34734 Offset: 0x2F34734 VA: 0x2F34734
+	public void <>iFixBaseProxy_OnNewItem(int P0, int P1, int P2, int P3, RefreshItemSource P4) { }
+
+	// RVA: 0x2F3475C Offset: 0x2F3475C VA: 0x2F3475C
+	public void <>iFixBaseProxy_OnUseItem(int P0, int P1) { }
+}
+

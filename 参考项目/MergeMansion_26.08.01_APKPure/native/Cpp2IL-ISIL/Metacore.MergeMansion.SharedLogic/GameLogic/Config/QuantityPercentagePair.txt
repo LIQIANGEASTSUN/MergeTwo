@@ -1,0 +1,86 @@
+Type: GameLogic.Config.QuantityPercentagePair
+
+Method: Metaplay.Core.Math.F32 get_Quantity()
+
+Disassembly:
+	0x03429438 RET
+	0x0342943C STR X1, [X0 + 0x48]!
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_Quantity(Metaplay.Core.Math.F32 value)
+
+Disassembly:
+	0x03429440 B 0x239B888
+	0x03429444 LDRB W0, [X0 + 0x50]
+
+ISIL:
+	001 Move [X0+16], W1
+	002 Return 
+
+Method: Metaplay.Core.Math.F32 get_Percentage()
+
+Disassembly:
+	0x03429448 RET
+	0x0342944C STRB W1, [X0 + 0x50]
+
+ISIL:
+	001 Move W0, [X0+20]
+	002 Return X0
+
+Method: System.Void set_Percentage(Metaplay.Core.Math.F32 value)
+
+Disassembly:
+	0x03429450 RET
+	0x03429454 LDR W0, [X0 + 0x54]
+
+ISIL:
+	001 Move [X0+20], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03429458 RET
+	0x0342945C STR W1, [X0 + 0x54]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(Metaplay.Core.Math.F32 quantity, Metaplay.Core.Math.F32 percentage)
+
+Disassembly:
+	0x03429460 RET
+	0x03429464 LDR X0, [X0 + 0x58]
+	0x03429468 RET
+	0x0342946C STR X1, [X0 + 0x58]!
+	0x03429470 B 0x239B888
+	0x03429474 LDR X0, [X0 + 0x60]
+	0x03429478 RET
+	0x0342947C STR X1, [X0 + 0x60]!
+	0x03429480 B 0x239B888
+	0x03429484 LDR X0, [X0 + 0x68]
+	0x03429488 RET
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move X20, X1
+	006 Move X1, X31
+	007 Move X19, X2
+	008 Move X21, X0
+	009 Call Object..ctor, X0
+	010 Move [X21+16], W20
+	011 Move [X21+20], W19
+	012 Move X20, [X31+16]
+	013 Move X19, [X31+24]
+	014 Move X30, [X31+32]
+	015 Move X21, [X31+40]
+	016 Return 
+

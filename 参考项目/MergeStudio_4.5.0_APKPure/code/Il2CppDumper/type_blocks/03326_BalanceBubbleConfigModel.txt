@@ -1,0 +1,24 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class BalanceBubbleConfigModel // TypeDefIndex: 3326
+{
+	// Fields
+	public bool IsDefault; // 0x8
+	public bool ProbabilityLogicActive; // 0x9
+	public bool AllowGemSkipWithRewarded; // 0xA
+	public int BubbleTimeSeconds; // 0xC
+	public int MaxActiveBubbleCount; // 0x10
+	public int BubblePinMinLevel; // 0x14
+	public int SessionBubblePinAdLimit; // 0x18
+	public int MinBubblePinCountForAd; // 0x1C
+	public List<BalanceBubbleConfigModel.BalanceBubbleGroupModel> BubbleGroupList; // 0x20
+
+	// Methods
+
+	// RVA: 0x1BAE7D0 Offset: 0x1BAE7D0 VA: 0x1BAE7D0
+	public void .ctor() { }
+
+	// RVA: 0x1BA86C8 Offset: 0x1BA86C8 VA: 0x1BA86C8
+	public BalanceBubbleConfigModel GetValue() { }
+}
+

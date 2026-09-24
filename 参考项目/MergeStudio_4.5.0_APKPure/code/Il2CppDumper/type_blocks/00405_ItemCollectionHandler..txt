@@ -1,0 +1,23 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemCollectionHandler.<>c__DisplayClass105_0 // TypeDefIndex: 405
+{
+	// Fields
+	public BoardData eventBoardData; // 0x8
+	public BoardData mainBoardData; // 0xC
+
+	// Methods
+
+	// RVA: 0x1BA1008 Offset: 0x1BA1008 VA: 0x1BA1008
+	public void .ctor() { }
+
+	// RVA: 0x1BA1524 Offset: 0x1BA1524 VA: 0x1BA1524
+	internal bool <ClearRemovedSeenItemsEventOnly>b__0(ItemInfo el) { }
+
+	// RVA: 0x1BA1640 Offset: 0x1BA1640 VA: 0x1BA1640
+	internal bool <ClearRemovedSeenItemsEventOnly>b__1(ItemInfo el) { }
+
+	// RVA: 0x1BA175C Offset: 0x1BA175C VA: 0x1BA175C
+	internal bool <ClearRemovedSeenItemsEventOnly>b__2(ItemInfo el) { }
+}
+

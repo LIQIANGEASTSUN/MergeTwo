@@ -1,0 +1,37 @@
+// Namespace: Merger.MergeBoard.Systems
+public class SplitSystem : ISystem // TypeDefIndex: 25775
+{
+	// Fields
+	[Inject]
+	private IMergeBoardLayout _layout; // 0x10
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x18
+	[Inject]
+	private IEntityFactory _entityFactory; // 0x20
+	[Inject]
+	private SplitterItemCombinerValidator _splitterItemCombinerValidator; // 0x28
+
+	// Methods
+
+	// RVA: 0x6A75450 Offset: 0x6A71450 VA: 0x6A75450 Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A75914 Offset: 0x6A71914 VA: 0x6A75914
+	private bool CanPerformSplit(Entity firstEntity, Entity secondEntity) { }
+
+	// RVA: 0x6A759E4 Offset: 0x6A719E4 VA: 0x6A759E4
+	private void PerformSplit(ValueTuple<Entity, BoardTilePositionComponent, MergeComponent, IdComponent> firstEntity, ValueTuple<Entity, BoardTilePositionComponent, MergeComponent, IdComponent> secondEntity, TickContext context) { }
+
+	// RVA: 0x6A75D88 Offset: 0x6A71D88 VA: 0x6A75D88
+	private int GetOriginalSplitterPosition(TickContext context, ValueTuple<Entity, BoardTilePositionComponent, MergeComponent, IdComponent> splitterEntity, ValueTuple<Entity, BoardTilePositionComponent, MergeComponent, IdComponent> targetEntity) { }
+
+	// RVA: 0x6A75E44 Offset: 0x6A71E44 VA: 0x6A75E44
+	private Entity CreateSplitResultEntity(string itemId, int position) { }
+
+	// RVA: 0x6A75F0C Offset: 0x6A71F0C VA: 0x6A75F0C
+	private int FindNearestPosition(TickContext context, int targetPosition) { }
+
+	// RVA: 0x6A76164 Offset: 0x6A72164 VA: 0x6A76164
+	public void .ctor() { }
+}
+

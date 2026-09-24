@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ItemConsumeSystem.<>c // TypeDefIndex: 662
+{
+	// Fields
+	public static readonly ItemConsumeSystem.<>c <>9; // 0x0
+	public static Func<VisualComponent, bool> <>9__8_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x628B388 Offset: 0x6287388 VA: 0x628B388
+	private static void .cctor() { }
+
+	// RVA: 0x628B3F0 Offset: 0x62873F0 VA: 0x628B3F0
+	public void .ctor() { }
+
+	// RVA: 0x628B3F8 Offset: 0x62873F8 VA: 0x628B3F8
+	internal bool <TryFindPreferredItemFromHint>b__8_0(VisualComponent component) { }
+}
+

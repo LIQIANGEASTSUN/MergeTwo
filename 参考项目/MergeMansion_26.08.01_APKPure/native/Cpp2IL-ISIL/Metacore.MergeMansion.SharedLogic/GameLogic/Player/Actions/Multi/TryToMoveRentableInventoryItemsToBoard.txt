@@ -1,0 +1,83 @@
+Type: GameLogic.Player.Actions.Multi.TryToMoveRentableInventoryItemsToBoard
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x036F472C MOV X20, X0
+	0x036F4730 BL 0x36C896C
+
+ISIL:
+	001 Move X1, X31
+	002 Call PlayerAction..ctor, X0
+	003 Return 
+
+Method: Metaplay.Core.Model.MetaActionResult Execute(GameLogic.Player.PlayerModel player, System.Boolean commit)
+
+Disassembly:
+	0x036F4734 STR X19, [X20 + 0x10]!
+	0x036F4738 MOV X0, X20
+	0x036F473C MOV X1, X19
+	0x036F4740 LDP X20, X19, [X31 + 0x10]
+	0x036F4744 LDR X30, [X31], #0x20
+	0x036F4748 B 0x239B888
+	0x036F474C STR X30, [X31 - 0x40]!
+	0x036F4750 STP X24, X23, [X31 + 0x10]
+	0x036F4754 STP X22, X21, [X31 + 0x20]
+	0x036F4758 STP X20, X19, [X31 + 0x30]
+	0x036F475C ADRP X24, 0x2636000
+	0x036F4760 ADRP X22, 0x201E000
+	0x036F4764 ADRP X23, 0x2042000
+	0x036F4768 LDRB W8, [X24 + 0x673]
+	0x036F476C LDR X22, [X22 + 0x670]
+	0x036F4770 LDR X23, [X23 + 0x930]
+	0x036F4774 MOV W20, W2
+	0x036F4778 MOV X19, X1
+	0x036F477C MOV X21, X0
+	0x036F4780 TBNZ X8, 0x0, 0x36F47E0
+	0x036F4784 ADRP X0, 0x2042000
+	0x036F4788 LDR X0, [X0 + 0x930]
+	0x036F478C BL 0x239B8E4
+	0x036F4790 ADRP X0, 0x1FE2000
+	0x036F4794 LDR X0, [X0 + 0xFC0]
+	0x036F4798 BL 0x239B8E4
+	0x036F479C ADRP X0, 0x201E000
+	0x036F47A0 LDR X0, [X0 + 0x660]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move W20, W2
+	006 Move X19, X1
+	007 Move W8, [0x263A65E]
+	008 Move TEMP, X8
+	009 And TEMP, TEMP, 1
+	010 Compare TEMP, 1
+	011 Invalid "Jump target not found in method."
+	012 Move X0, [0x1FE67E0]
+	013 Call 0x239F8E4
+	014 Move W8, 1
+	015 Move [X21+1630], W8
+	016 Move X21, [0x1FE67E0]
+	017 Move TEMP, X20
+	018 And TEMP, TEMP, 1
+	019 Compare TEMP, 1
+	020 JumpIfNotEqual {24}
+	021 Move X0, X19
+	022 Move X1, X31
+	023 Call MasterFunctions.TryToMoveItemsFromRentableInventoryToBoard, X0
+	024 Move X0, [X21]
+	025 Move W8, [X0+228]
+	026 Compare W8, 0
+	027 JumpIfNotEqual {30}
+	028 Call 0x239FA64
+	029 Move X0, [X21]
+	030 Move X8, [X0+184]
+	031 Move X20, [X31+16]
+	032 Move X19, [X31+24]
+	033 Move X0, [X8]
+	034 Move X30, [X31+32]
+	035 Move X21, [X31+40]
+	036 Return X0
+

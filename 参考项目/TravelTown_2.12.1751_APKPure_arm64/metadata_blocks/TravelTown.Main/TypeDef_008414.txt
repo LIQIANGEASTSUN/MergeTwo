@@ -1,0 +1,61 @@
+// Namespace: Merger.Game.Model
+public interface IGameSessionModel // TypeDefIndex: 8414
+{
+	// Properties
+	public abstract BindableProperty<bool> Started { get; }
+	public abstract MutableBindableProperty<GameState> GameState { get; }
+	public abstract MutableBindableProperty<GameState> PrimaryGameState { get; }
+	public abstract MutableBindableProperty<CurrentBoardType> CurrentBoardType { get; }
+	public abstract MutableBindableProperty<bool> IsReloadPending { get; }
+	public abstract MutableBindableProperty<bool> IsReloading { get; }
+	public abstract MutableBindableProperty<bool> IsGameStarted { get; }
+	public abstract MutableBindableProperty<bool> IsConnectionLost { get; }
+	public abstract bool IsGameLoadingToMeta { get; }
+	public abstract BindableProperty<bool> IsInMetagame { get; }
+	public abstract BindableProperty<bool> BoardVisible { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract BindableProperty<bool> get_Started();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void Start();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract bool IsOnMainBoard();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract MutableBindableProperty<GameState> get_GameState();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract MutableBindableProperty<GameState> get_PrimaryGameState();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract MutableBindableProperty<CurrentBoardType> get_CurrentBoardType();
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract MutableBindableProperty<bool> get_IsReloadPending();
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract MutableBindableProperty<bool> get_IsReloading();
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract MutableBindableProperty<bool> get_IsGameStarted();
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract MutableBindableProperty<bool> get_IsConnectionLost();
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public abstract bool get_IsGameLoadingToMeta();
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public abstract BindableProperty<bool> get_IsInMetagame();
+
+	// RVA: -1 Offset: -1 Slot: 12
+	public abstract BindableProperty<bool> get_BoardVisible();
+
+	// RVA: -1 Offset: -1 Slot: 13
+	public abstract int GetCurrentLevel();
+}
+

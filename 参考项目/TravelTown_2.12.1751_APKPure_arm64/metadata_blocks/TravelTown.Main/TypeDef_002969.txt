@@ -1,0 +1,12 @@
+// Namespace: Merger.Rewards.Interfaces
+public interface IRewardType : IEquatable<IRewardType> // TypeDefIndex: 2969
+{
+	// Properties
+	public abstract string Type { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract string get_Type();
+}
+

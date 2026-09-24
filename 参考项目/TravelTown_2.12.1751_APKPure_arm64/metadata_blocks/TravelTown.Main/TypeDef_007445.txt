@@ -1,0 +1,16 @@
+// Namespace: Merger.Bubbles
+public interface ISmarterBubblesBucketsModel // TypeDefIndex: 7445
+{
+	// Properties
+	public abstract BucketProbabilityData BucketsProbabilityData { get; }
+	public abstract IReadOnlyDictionary<CurrentBoardType, BucketProbabilityData> ProbabilityData { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract BucketProbabilityData get_BucketsProbabilityData();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract IReadOnlyDictionary<CurrentBoardType, BucketProbabilityData> get_ProbabilityData();
+}
+

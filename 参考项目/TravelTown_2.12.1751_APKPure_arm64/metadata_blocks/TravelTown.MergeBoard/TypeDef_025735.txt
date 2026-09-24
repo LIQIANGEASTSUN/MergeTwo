@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class FeedingCombinationExtractSystem.<>c // TypeDefIndex: 25735
+{
+	// Fields
+	public static readonly FeedingCombinationExtractSystem.<>c <>9; // 0x0
+	public static Func<ValueTuple<Entity, FeedingCombinationComponent, DeadComponent, BoardTilePositionComponent>, bool> <>9__5_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x6A68380 Offset: 0x6A64380 VA: 0x6A68380
+	private static void .cctor() { }
+
+	// RVA: 0x6A683E8 Offset: 0x6A643E8 VA: 0x6A683E8
+	public void .ctor() { }
+
+	// RVA: 0x6A683F0 Offset: 0x6A643F0 VA: 0x6A683F0
+	internal bool <Tick>b__5_0(ValueTuple<Entity, FeedingCombinationComponent, DeadComponent, BoardTilePositionComponent> query) { }
+}
+

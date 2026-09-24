@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemSpawningQueue.<>c__DisplayClass16_0 // TypeDefIndex: 94
+{
+	// Fields
+	public Combination combination; // 0x10
+
+	// Methods
+
+	// RVA: 0x5FE9BEC Offset: 0x5FE5BEC VA: 0x5FE9BEC
+	public void .ctor() { }
+
+	// RVA: 0x5FEAC38 Offset: 0x5FE6C38 VA: 0x5FEAC38
+	internal bool <AddCombinationWeightedItems>b__2(WeightedItemSpawnable item) { }
+}
+

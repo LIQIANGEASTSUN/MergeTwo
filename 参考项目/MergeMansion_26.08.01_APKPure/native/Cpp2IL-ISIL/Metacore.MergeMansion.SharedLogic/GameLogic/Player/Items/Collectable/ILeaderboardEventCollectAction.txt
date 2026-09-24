@@ -1,0 +1,9 @@
+Type: GameLogic.Player.Items.Collectable.ILeaderboardEventCollectAction
+
+Method: Code.GameLogic.GameEvents.LeaderboardEventInfo get_LeaderboardEvent()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

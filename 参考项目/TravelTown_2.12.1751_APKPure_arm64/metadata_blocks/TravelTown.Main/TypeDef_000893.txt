@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardIdleHintSystem.<>c__DisplayClass56_0 // TypeDefIndex: 893
+{
+	// Fields
+	public ProducerHintSignal signal; // 0x10
+
+	// Methods
+
+	// RVA: 0x665AF48 Offset: 0x6656F48 VA: 0x665AF48
+	public void .ctor() { }
+
+	// RVA: 0x665B4B0 Offset: 0x66574B0 VA: 0x665B4B0
+	internal bool <PlayItemHintAnimation>b__0(IdComponent component) { }
+}
+

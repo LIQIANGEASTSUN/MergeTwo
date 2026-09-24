@@ -1,0 +1,9 @@
+// Namespace: MergePuzzle
+public class BoardEvent // TypeDefIndex: 1851
+{
+	// Methods
+
+	// RVA: 0x1912AF8 Offset: 0x1912AF8 VA: 0x1912AF8
+	public void .ctor() { }
+}
+

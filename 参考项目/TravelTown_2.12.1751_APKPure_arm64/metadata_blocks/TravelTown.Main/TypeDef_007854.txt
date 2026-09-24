@@ -1,0 +1,9 @@
+// Namespace: Merger.Boosters.Declarations.Capabilities
+public class BoosterIdCapability : BaseIdCapability // TypeDefIndex: 7854
+{
+	// Methods
+
+	// RVA: 0x65C9954 Offset: 0x65C5954 VA: 0x65C9954
+	public void .ctor(string id, string uuId) { }
+}
+

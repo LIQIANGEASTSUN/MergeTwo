@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ChargableSystem.<>c // TypeDefIndex: 920
+{
+	// Fields
+	public static readonly ChargableSystem.<>c <>9; // 0x0
+	public static Func<ChargableComponent, bool> <>9__10_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x666C640 Offset: 0x6668640 VA: 0x666C640
+	private static void .cctor() { }
+
+	// RVA: 0x666C6A8 Offset: 0x66686A8 VA: 0x666C6A8
+	public void .ctor() { }
+
+	// RVA: 0x666C6B0 Offset: 0x66686B0 VA: 0x666C6B0
+	internal bool <OnWillProcessComponents>b__10_0(ChargableComponent chargable) { }
+}
+

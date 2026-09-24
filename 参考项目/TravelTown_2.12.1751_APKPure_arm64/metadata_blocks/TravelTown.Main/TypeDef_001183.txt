@@ -1,0 +1,16 @@
+// Namespace: MergeEngine.Configuration
+public enum MergeGraphItemType // TypeDefIndex: 1183
+{
+	// Fields
+	public int value__; // 0x0
+	public const MergeGraphItemType MergeChain = 0;
+	public const MergeGraphItemType Booster = 1;
+	public const MergeGraphItemType TrickyProducer = 2;
+	public const MergeGraphItemType MysteryItem = 3;
+	public const MergeGraphItemType RootProducer = 4;
+	public const MergeGraphItemType Crate = 5;
+	public const MergeGraphItemType Collectable = 6;
+	public const MergeGraphItemType Blocker = 7;
+	public const MergeGraphItemType SecondaryProducer = 8;
+}
+

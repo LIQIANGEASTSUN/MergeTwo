@@ -1,0 +1,46 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class ImmediateToolBoxCollectedResult // TypeDefIndex: 25952
+{
+	// Fields
+	[CompilerGenerated]
+	private Entity <Entity>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private int <Position>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private IList<IMergeItem> <CollectedTools>k__BackingField; // 0x20
+
+	// Properties
+	public Entity Entity { get; set; }
+	public int Position { get; set; }
+	public IList<IMergeItem> CollectedTools { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A5E0 Offset: 0x6A965E0 VA: 0x6A9A5E0
+	public Entity get_Entity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A5E8 Offset: 0x6A965E8 VA: 0x6A9A5E8
+	private void set_Entity(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A5F0 Offset: 0x6A965F0 VA: 0x6A9A5F0
+	public int get_Position() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A5F8 Offset: 0x6A965F8 VA: 0x6A9A5F8
+	private void set_Position(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A600 Offset: 0x6A96600 VA: 0x6A9A600
+	public IList<IMergeItem> get_CollectedTools() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A608 Offset: 0x6A96608 VA: 0x6A9A608
+	private void set_CollectedTools(IList<IMergeItem> value) { }
+
+	// RVA: 0x6A9A610 Offset: 0x6A96610 VA: 0x6A9A610
+	public void .ctor(Entity entity, int position, IList<IMergeItem> collectedTools) { }
+}
+

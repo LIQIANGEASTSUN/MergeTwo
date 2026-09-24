@@ -1,0 +1,28 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class CellEntity // TypeDefIndex: 1590
+{
+	// Fields
+	public bool IsLocked; // 0x8
+	public int UnlockLevel; // 0xC
+	public Coordinate BoardIndex; // 0x10
+	public int LockedItemLevel; // 0x18
+	public int LockedItemSetID; // 0x1C
+	public bool IsItemLocked; // 0x20
+	public bool IsItemBoxed; // 0x21
+
+	// Methods
+
+	// RVA: 0x187FE88 Offset: 0x187FE88 VA: 0x187FE88
+	public void .ctor() { }
+
+	// RVA: 0x187FE90 Offset: 0x187FE90 VA: 0x187FE90
+	public void .ctor(Coordinate boardIndex) { }
+
+	// RVA: 0x187FECC Offset: 0x187FECC VA: 0x187FECC
+	public void .ctor(int unlockLevel, Coordinate boardIndex, int lockedItemLevel, int lockedItemSetID, bool isItemLocked, bool isItemBoxed) { }
+
+	// RVA: 0x187FF20 Offset: 0x187FF20 VA: 0x187FF20 Slot: 3
+	public override string ToString() { }
+}
+

@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class KiteSpawnerManager.<>c__DisplayClass25_0 // TypeDefIndex: 1617
+{
+	// Fields
+	public string key; // 0x8
+
+	// Methods
+
+	// RVA: 0x18C441C Offset: 0x18C441C VA: 0x18C441C
+	public void .ctor() { }
+
+	// RVA: 0x18C4BE8 Offset: 0x18C4BE8 VA: 0x18C4BE8
+	internal bool <CreatePerishableSpawnerConfigAdaptors>b__0(BalancePerishableConfigModelItem c) { }
+}
+

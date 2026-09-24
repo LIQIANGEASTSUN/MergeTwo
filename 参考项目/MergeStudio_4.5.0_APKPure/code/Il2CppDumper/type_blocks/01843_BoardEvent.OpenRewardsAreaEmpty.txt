@@ -1,0 +1,4 @@
+// Namespace: 
+public struct BoardEvent.OpenRewardsAreaEmpty : IEvent // TypeDefIndex: 1843
+{}
+

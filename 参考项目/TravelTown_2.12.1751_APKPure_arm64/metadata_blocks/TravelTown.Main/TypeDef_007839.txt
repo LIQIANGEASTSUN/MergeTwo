@@ -1,0 +1,93 @@
+// Namespace: Merger.Boosters.Declarations.Definitions.Interfaces.Models
+public interface IBoosterDataModel<TData> // TypeDefIndex: 7839
+{
+	// Properties
+	public abstract BindableProperty<int> BoostersCount { get; }
+	public abstract bool HasActiveBooster { get; }
+	public abstract IReadOnlyCollection<TData> Boosters { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void add_Updated(Action value);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBoosterDataModel<object>.add_Updated
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void remove_Updated(Action value);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBoosterDataModel<object>.remove_Updated
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract BindableProperty<int> get_BoostersCount();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBoosterDataModel<object>.get_BoostersCount
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract bool get_HasActiveBooster();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBoosterDataModel<object>.get_HasActiveBooster
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract IReadOnlyCollection<TData> get_Boosters();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBoosterDataModel<object>.get_Boosters
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract bool TryGetBooster(string uuid, out TData booster);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBoosterDataModel<object>.TryGetBooster
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract bool TryGetActiveBooster(out TData activeBooster);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBoosterDataModel<object>.TryGetActiveBooster
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract void AddBoosterData(TData data);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBoosterDataModel<object>.AddBoosterData
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract void RemoveBooster(string uuid);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBoosterDataModel<object>.RemoveBooster
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract void NotifyAboutChanges();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBoosterDataModel<object>.NotifyAboutChanges
+	*/
+}
+

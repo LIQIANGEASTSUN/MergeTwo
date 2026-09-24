@@ -1,0 +1,167 @@
+Type: GameLogic.Config.SpeedUpCostBehavior
+
+Method: Metaplay.Core.Math.F64 get_SecondsPerGem()
+
+Disassembly:
+	0x0342C360 LDP X20, X19, [X31 + 0x20]
+	0x0342C364 LDP X22, X21, [X31 + 0x10]
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_SecondsPerGem(Metaplay.Core.Math.F64 value)
+
+Disassembly:
+	0x0342C368 LDR X30, [X31], #0x30
+	0x0342C36C RET
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Return 
+
+Method: Metaplay.Core.Math.F64 get_FirstDiscount()
+
+Disassembly:
+	0x0342C370 SUB X31, X31, 0x30
+	0x0342C374 STP X30, X21, [X31 + 0x10]
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_FirstDiscount(Metaplay.Core.Math.F64 value)
+
+Disassembly:
+	0x0342C378 STP X20, X19, [X31 + 0x20]
+	0x0342C37C ADRP X20, 0x28FC000
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Return 
+
+Method: Metaplay.Core.Math.F64 get_FirstDiscountTime()
+
+Disassembly:
+	0x0342C380 ADRP X21, 0x22A8000
+	0x0342C384 MOV X19, X0
+
+ISIL:
+	001 Move X0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_FirstDiscountTime(Metaplay.Core.Math.F64 value)
+
+Disassembly:
+	0x0342C388 LDRB W8, [X20 + 0xDCC]
+	0x0342C38C LDR X21, [X21 + 0x8D0]
+
+ISIL:
+	001 Move [X0+32], X1
+	002 Return 
+
+Method: Metaplay.Core.Math.F64 get_SecondDiscount()
+
+Disassembly:
+	0x0342C390 TBNZ X8, 0x0, 0x342C3A8
+	0x0342C394 ADRP X0, 0x22A8000
+
+ISIL:
+	001 Move X0, [X0+40]
+	002 Return X0
+
+Method: System.Void set_SecondDiscount(Metaplay.Core.Math.F64 value)
+
+Disassembly:
+	0x0342C398 LDR X0, [X0 + 0x8D0]
+	0x0342C39C BL 0x239B8E4
+
+ISIL:
+	001 Move [X0+40], X1
+	002 Return 
+
+Method: Metaplay.Core.Math.F64 get_SecondDiscountTime()
+
+Disassembly:
+	0x0342C3A0 MOVZ W8, 0x1
+	0x0342C3A4 STRB W8, [X20 + 0xDCC]
+
+ISIL:
+	001 Move X0, [X0+48]
+	002 Return X0
+
+Method: System.Void set_SecondDiscountTime(Metaplay.Core.Math.F64 value)
+
+Disassembly:
+	0x0342C3A8 LDR X0, [X21]
+	0x0342C3AC LDR W8, [X0 + 0xE4]
+
+ISIL:
+	001 Move [X0+48], X1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0342C3B0 CBNZ W8, 0x342C3B8
+	0x0342C3B4 BL 0x239BA64
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(Metaplay.Core.Math.F64 secondsPerGem, Metaplay.Core.Math.F64 firstDiscount, Metaplay.Core.Math.F64 firstDiscountTime, Metaplay.Core.Math.F64 secondDiscount, Metaplay.Core.Math.F64 secondDiscountTime)
+
+Disassembly:
+	0x0342C3B8 ADD X0, X31, 0x8
+	0x0342C3BC MOV X1, X19
+	0x0342C3C0 STR X31, [X31 + 0x8]
+	0x0342C3C4 BL 0x342BAE8
+	0x0342C3C8 LDP X20, X19, [X31 + 0x20]
+	0x0342C3CC LDR X0, [X31 + 0x8]
+	0x0342C3D0 LDP X30, X21, [X31 + 0x10]
+	0x0342C3D4 ADD X31, X31, 0x30
+	0x0342C3D8 RET
+	0x0342C3DC SUB X31, X31, 0x70
+	0x0342C3E0 STP X30, X23, [X31 + 0x40]
+	0x0342C3E4 STP X22, X21, [X31 + 0x50]
+	0x0342C3E8 STP X20, X19, [X31 + 0x60]
+	0x0342C3EC ADRP X21, 0x28FC000
+	0x0342C3F0 ADRP X20, 0x22B8000
+	0x0342C3F4 MOV X19, X0
+	0x0342C3F8 LDRB W8, [X21 + 0xDCD]
+	0x0342C3FC LDR X20, [X20 + 0xFF0]
+	0x0342C400 TBNZ X8, 0x0, 0x342C448
+	0x0342C404 ADRP X0, 0x22A2000
+
+ISIL:
+	001 Move [X31-64], X30
+	002 Move [X31+16], X24
+	003 Move [X31+24], X23
+	004 Move [X31+32], X22
+	005 Move [X31+40], X21
+	006 Move [X31+48], X20
+	007 Move [X31+56], X19
+	008 Move X23, X1
+	009 Move X1, X31
+	010 Move X19, X5
+	011 Move X20, X4
+	012 Move X21, X3
+	013 Move X22, X2
+	014 Move X24, X0
+	015 Call Object..ctor, X0
+	016 Move [X24+16], X23
+	017 Move [X24+24], X22
+	018 Move [X24+32], X21
+	019 Move [X24+40], X20
+	020 Move X22, [X31+32]
+	021 Move X21, [X31+40]
+	022 Move [X24+48], X19
+	023 Move X20, [X31+48]
+	024 Move X19, [X31+56]
+	025 Move X24, [X31+16]
+	026 Move X23, [X31+24]
+	027 Move X30, [X31+64]
+	028 Return 
+

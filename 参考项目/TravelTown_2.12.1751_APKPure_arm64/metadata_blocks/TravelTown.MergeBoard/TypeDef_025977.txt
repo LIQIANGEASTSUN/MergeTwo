@@ -1,0 +1,57 @@
+// Namespace: Merger.MergeBoard.Data.TickInputActions
+public class ItemsCombinationConfirmationAction // TypeDefIndex: 25977
+{
+	// Fields
+	[CompilerGenerated]
+	private bool <IsConfirmed>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private Entity <FirstItem>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private Entity <SecondItem>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private MergeCheckItemType <MergeCheckItemType>k__BackingField; // 0x28
+
+	// Properties
+	public bool IsConfirmed { get; set; }
+	public Entity FirstItem { get; set; }
+	public Entity SecondItem { get; set; }
+	public MergeCheckItemType MergeCheckItemType { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AE04 Offset: 0x6A96E04 VA: 0x6A9AE04
+	public bool get_IsConfirmed() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AE0C Offset: 0x6A96E0C VA: 0x6A9AE0C
+	public void set_IsConfirmed(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AE18 Offset: 0x6A96E18 VA: 0x6A9AE18
+	public Entity get_FirstItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AE20 Offset: 0x6A96E20 VA: 0x6A9AE20
+	public void set_FirstItem(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AE28 Offset: 0x6A96E28 VA: 0x6A9AE28
+	public Entity get_SecondItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AE30 Offset: 0x6A96E30 VA: 0x6A9AE30
+	public void set_SecondItem(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AE38 Offset: 0x6A96E38 VA: 0x6A9AE38
+	public MergeCheckItemType get_MergeCheckItemType() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AE40 Offset: 0x6A96E40 VA: 0x6A9AE40
+	public void set_MergeCheckItemType(MergeCheckItemType value) { }
+
+	// RVA: 0x6A9AE48 Offset: 0x6A96E48 VA: 0x6A9AE48
+	public void .ctor() { }
+}
+

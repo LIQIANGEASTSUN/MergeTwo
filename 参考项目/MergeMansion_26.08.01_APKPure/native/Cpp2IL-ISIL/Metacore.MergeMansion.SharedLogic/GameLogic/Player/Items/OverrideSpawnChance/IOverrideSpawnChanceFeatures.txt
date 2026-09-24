@@ -1,0 +1,9 @@
+Type: GameLogic.Player.Items.OverrideSpawnChance.IOverrideSpawnChanceFeatures
+
+Method: System.Collections.Generic.List`1<GameLogic.Player.Items.OverrideSpawnChance.OverrideSpawnChance> get_OverrideSpawnChances()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

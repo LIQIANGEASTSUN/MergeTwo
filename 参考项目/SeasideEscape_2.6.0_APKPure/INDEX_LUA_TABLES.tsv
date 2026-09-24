@@ -1,0 +1,305 @@
+module	name	kind	parent_if_visible	line	file
+CloudsDash.CloudsDashDefinition	CloudsDashDefinition	table_or_enum_candidate		1	code/Lua/decompiled/CloudsDash/CloudsDashDefinition.lua
+Common.GameConfig	GameConfig	table_or_enum_candidate		4	code/Lua/decompiled/Common/GameConfig.lua
+Drop.DropDefinition	DropDefinition	table_or_enum_candidate		1	code/Lua/decompiled/Drop/DropDefinition.lua
+FreefallActivity.FreefallActivityDefinition	FreefallActivityDefinition	table_or_enum_candidate		1	code/Lua/decompiled/FreefallActivity/FreefallActivityDefinition.lua
+HuntActivity.HuntActivityDefinition	HuntActivityDefinition	table_or_enum_candidate		1	code/Lua/decompiled/HuntActivity/HuntActivityDefinition.lua
+HuntActivity.HuntActivityDefinition	HuntTokenMap	table_or_enum_candidate		2	code/Lua/decompiled/HuntActivity/HuntActivityDefinition.lua
+HuntMapActivity.HuntMapActivityDefinition	HuntMapActivityDefinition	table_or_enum_candidate		1	code/Lua/decompiled/HuntMapActivity/HuntMapActivityDefinition.lua
+Model.ConfigModel	LocalConfigKey	table_or_enum_candidate		1	code/Lua/decompiled/Model/ConfigModel.lua
+Model.ConfigModel	ServerConfigKey	table_or_enum_candidate		42	code/Lua/decompiled/Model/ConfigModel.lua
+Model.ConfigModel	EGeneralConfType	table_or_enum_candidate		93	code/Lua/decompiled/Model/ConfigModel.lua
+Model.ConfigModel	ConfigModel	table_or_enum_candidate		257	code/Lua/decompiled/Model/ConfigModel.lua
+Model.GameModel	GameModel	table_or_enum_candidate		1	code/Lua/decompiled/Model/GameModel.lua
+Model.MapDataModel	MapDataModel	table_or_enum_candidate		1	code/Lua/decompiled/Model/MapDataModel.lua
+Model.MapDataModel	ESkinState	table_or_enum_candidate		6	code/Lua/decompiled/Model/MapDataModel.lua
+Model.MapDataModel	ESlotUpgrade	table_or_enum_candidate		11	code/Lua/decompiled/Model/MapDataModel.lua
+Model.OpenFunctionModel	EFunction	table_or_enum_candidate		1	code/Lua/decompiled/Model/OpenFunctionModel.lua
+Model.OpenFunctionModel	OpenFunctionModel	table_or_enum_candidate		14	code/Lua/decompiled/Model/OpenFunctionModel.lua
+Model.SceneManager	SceneManager	table_or_enum_candidate		2	code/Lua/decompiled/Model/SceneManager.lua
+Model.SceneManager	EGameMode	table_or_enum_candidate		4	code/Lua/decompiled/Model/SceneManager.lua
+Model.SystemConfigModel	SystemConfigKey	table_or_enum_candidate		1	code/Lua/decompiled/Model/SystemConfigModel.lua
+Model.SystemConfigModel	SystemConfigModel	table_or_enum_candidate		54	code/Lua/decompiled/Model/SystemConfigModel.lua
+NoCDTrain.NoCDTrainDefinition	NoCDTrainRewardType	table_or_enum_candidate		1	code/Lua/decompiled/NoCDTrain/NoCDTrainDefinition.lua
+NoCDTrain.NoCDTrainDefinition	NoCDTrainDefinition	table_or_enum_candidate		8	code/Lua/decompiled/NoCDTrain/NoCDTrainDefinition.lua
+TempItemActivity.TempItemModel	TempItemModel	prototype	BaseActivityModel	1	code/Lua/decompiled/TempItemActivity/TempItemModel.lua
+BalloonRewardItem.Model.BalloonRewardModel	BalloonRewardModel	table_or_enum_candidate		1	code/Lua/decompiled/BalloonRewardItem/Model/BalloonRewardModel.lua
+Board.Model.BoardModelHelper	BoardModelHelper	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/BoardModelHelper.lua
+Board.Model.ItemBoxSimilarUtility	ItemBoxSimilarUtility	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/ItemBoxSimilarUtility.lua
+Board.Model.ItemChangeHelper	ItemChangeHelper	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/ItemChangeHelper.lua
+Board.Model.ItemDataModel	EItemUnlockState	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/ItemDataModel.lua
+Board.Model.ItemDataModel	ItemDataModel	table_or_enum_candidate		7	code/Lua/decompiled/Board/Model/ItemDataModel.lua
+Board.Model.ItemModelFactory	ItemModelFactory	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/ItemModelFactory.lua
+Board.Model.ItemUtility	ItemUtility	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/ItemUtility.lua
+Board.Model.ItemUtility	ToolCodeToLevel	table_or_enum_candidate		292	code/Lua/decompiled/Board/Model/ItemUtility.lua
+Board.View.BaseActionBoardView	BaseActionBoardView	prototype	BaseBoardView	1	code/Lua/decompiled/Board/View/BaseActionBoardView.lua
+Board.View.BaseBoardView	BaseBoardView	table_or_enum_candidate		1	code/Lua/decompiled/Board/View/BaseBoardView.lua
+Board.View.BaseSceneBoardView	BaseSceneBoardView	prototype	BaseActionBoardView	1	code/Lua/decompiled/Board/View/BaseSceneBoardView.lua
+Board.View.BaseUIBoardView	BaseUIBoardView	prototype	BaseActionBoardView	1	code/Lua/decompiled/Board/View/BaseUIBoardView.lua
+Board.View.BoardCacheRoot	BoardCacheRoot	table_or_enum_candidate		1	code/Lua/decompiled/Board/View/BoardCacheRoot.lua
+Board.View.BoardPrompt	BoardPromptType	table_or_enum_candidate		1	code/Lua/decompiled/Board/View/BoardPrompt.lua
+Board.View.BoardPrompt	BoardPrompt	table_or_enum_candidate		32	code/Lua/decompiled/Board/View/BoardPrompt.lua
+Board.View.BoardPrompt	BoardPromptMergeItems	prototype	BoardPrompt	68	code/Lua/decompiled/Board/View/BoardPrompt.lua
+Board.View.BoardPrompt	BoardPromptOpenChest	prototype	BoardPrompt	278	code/Lua/decompiled/Board/View/BoardPrompt.lua
+Board.View.BoardPrompt	BoardPromptCollect	prototype	BoardPrompt	332	code/Lua/decompiled/Board/View/BoardPrompt.lua
+Board.View.BoardPrompt	BoardPromptTapSpreadItem	prototype	BoardPrompt	386	code/Lua/decompiled/Board/View/BoardPrompt.lua
+Board.View.BoardPrompt	BoardPromptStoreItem	prototype	BoardPrompt	503	code/Lua/decompiled/Board/View/BoardPrompt.lua
+Board.View.BoardPrompt	BoardPromptFinishOrder	prototype	BoardPrompt	584	code/Lua/decompiled/Board/View/BoardPrompt.lua
+Board.View.BoardPrompt	BoardPromptBuildButton	prototype	BoardPrompt	648	code/Lua/decompiled/Board/View/BoardPrompt.lua
+Board.View.BoardPrompt	BoardPormptPopCache	prototype	BoardPrompt	681	code/Lua/decompiled/Board/View/BoardPrompt.lua
+Board.View.BoardPrompt	BoardPromptCollectAll	prototype	BoardPrompt	699	code/Lua/decompiled/Board/View/BoardPrompt.lua
+Board.View.BoardPrompt	BoardPromptSwallowItems	prototype	BoardPrompt	726	code/Lua/decompiled/Board/View/BoardPrompt.lua
+Board.View.BoardPrompt	BoardPromptMaxLevelResources	prototype	BoardPrompt	863	code/Lua/decompiled/Board/View/BoardPrompt.lua
+Board.View.BoardPrompt	BoardPromptTapSpreadCrucible	prototype	BoardPrompt	970	code/Lua/decompiled/Board/View/BoardPrompt.lua
+Board.View.BoardPrompt	BoardPromptSunshineOrderBoost	prototype	BoardPrompt	1011	code/Lua/decompiled/Board/View/BoardPrompt.lua
+Board.View.MainBoardView	MainBoardView	prototype	BaseSceneBoardView	1	code/Lua/decompiled/Board/View/MainBoardView.lua
+BoxItem.Model.BoxItemDefinition	EBoxItemType	table_or_enum_candidate		1	code/Lua/decompiled/BoxItem/Model/BoxItemDefinition.lua
+BoxItem.Model.BoxItemDefinition	BoxItemDetailWindow	table_or_enum_candidate		2	code/Lua/decompiled/BoxItem/Model/BoxItemDefinition.lua
+BoxItem.Model.BoxItemModel	BoxItemModel	table_or_enum_candidate		1	code/Lua/decompiled/BoxItem/Model/BoxItemModel.lua
+BoxItem.Model.RandomBoxData	RandomBoxData	table_or_enum_candidate		1	code/Lua/decompiled/BoxItem/Model/RandomBoxData.lua
+CloudsDash.Board.CloudsDashHuntBoardModel	CloudsDashHuntBoardModel	prototype	BaseUIBoardModel	1	code/Lua/decompiled/CloudsDash/Board/CloudsDashHuntBoardModel.lua
+CloudsDash.Board.CloudsDashHuntBoardView	CloudsDashHuntBoardView	prototype	BaseUIBoardView	1	code/Lua/decompiled/CloudsDash/Board/CloudsDashHuntBoardView.lua
+CloudsDash.Board.CloudsDashItemLayerModel	CloudsDashItemLayerModel	prototype	BaseUIBoardItemLayerModel	1	code/Lua/decompiled/CloudsDash/Board/CloudsDashItemLayerModel.lua
+CloudsDash.Model.CloudsDashModel	CloudsDashModel	prototype	BaseActivityModel	1	code/Lua/decompiled/CloudsDash/Model/CloudsDashModel.lua
+CloudsDash.Model.CloudsDashModel	CloudsDashLevelDataGroup	table_or_enum_candidate		645	code/Lua/decompiled/CloudsDash/Model/CloudsDashModel.lua
+CloudsDash.Model.CloudsDashModel	CloudsDashLevelData	table_or_enum_candidate		691	code/Lua/decompiled/CloudsDash/Model/CloudsDashModel.lua
+Common.Event.EventDispatcher	EventDispatcher	table_or_enum_candidate		1	code/Lua/decompiled/Common/Event/EventDispatcher.lua
+Common.Event.PairEvent	PairEvent	table_or_enum_candidate		1	code/Lua/decompiled/Common/Event/PairEvent.lua
+Common.Utility.PlayerPrefs	PlayerPrefs	prototype		2	code/Lua/decompiled/Common/Utility/PlayerPrefs.lua
+Common.Utility.PositionUtil	PositionUtil	table_or_enum_candidate		1	code/Lua/decompiled/Common/Utility/PositionUtil.lua
+Common.Utility.Scheduler	Scheduler	table_or_enum_candidate		1	code/Lua/decompiled/Common/Utility/Scheduler.lua
+Common.Utility.Scheduler	SchedulerUnit	table_or_enum_candidate		138	code/Lua/decompiled/Common/Utility/Scheduler.lua
+Common.Utility.StringUtil	StringUtil	table_or_enum_candidate		1	code/Lua/decompiled/Common/Utility/StringUtil.lua
+Common.Utility.Table	Table	table_or_enum_candidate		1	code/Lua/decompiled/Common/Utility/Table.lua
+Common.Utility.TimeUtil	TimeUtil	table_or_enum_candidate		1	code/Lua/decompiled/Common/Utility/TimeUtil.lua
+Common.Utility.TimeUtil	ETimeFormat	table_or_enum_candidate		4	code/Lua/decompiled/Common/Utility/TimeUtil.lua
+Common.Utility.TimeUtil	ETimeUnits	table_or_enum_candidate		11	code/Lua/decompiled/Common/Utility/TimeUtil.lua
+Common.Utility.Vector	Vector	table_or_enum_candidate		1	code/Lua/decompiled/Common/Utility/Vector.lua
+Drop.Board.DropActivityBoard	DropActivityBoard	table_or_enum_candidate		1	code/Lua/decompiled/Drop/Board/DropActivityBoard.lua
+Drop.Board.DropActivityItemFactory	DropActivityItemFactory	table_or_enum_candidate		1	code/Lua/decompiled/Drop/Board/DropActivityItemFactory.lua
+Drop.Model.DropModel	DropModel	prototype	BaseActivityModel	1	code/Lua/decompiled/Drop/Model/DropModel.lua
+FreefallActivity.Board.BoardPromptFreefall	FreefallBoardPromptType	table_or_enum_candidate		1	code/Lua/decompiled/FreefallActivity/Board/BoardPromptFreefall.lua
+FreefallActivity.Board.BoardPromptFreefall	BoardPromptFreefallMergeItems	prototype	BoardPromptMergeItems	2	code/Lua/decompiled/FreefallActivity/Board/BoardPromptFreefall.lua
+FreefallActivity.Board.BoardPromptFreefall	BoardPromptFreefallCollectMaxLevelActivityItems	prototype	BoardPrompt	11	code/Lua/decompiled/FreefallActivity/Board/BoardPromptFreefall.lua
+FreefallActivity.Board.FreefallActivityBoardModel	FreefallHandleItemFailedReason	table_or_enum_candidate		1	code/Lua/decompiled/FreefallActivity/Board/FreefallActivityBoardModel.lua
+FreefallActivity.Board.FreefallActivityBoardModel	FreefallActivitySpecialItemType	table_or_enum_candidate		8	code/Lua/decompiled/FreefallActivity/Board/FreefallActivityBoardModel.lua
+FreefallActivity.Board.FreefallActivityBoardModel	FreefallActivityBoardModel	prototype		13	code/Lua/decompiled/FreefallActivity/Board/FreefallActivityBoardModel.lua
+FreefallActivity.Board.FreefallActivityBoardView	FreefallActivityBoardView	prototype	BaseUIBoardView	1	code/Lua/decompiled/FreefallActivity/Board/FreefallActivityBoardView.lua
+FreefallActivity.Board.FreefallActivityItemLayerModel	FreefallActivityItemLayerModel	prototype	BaseUIBoardItemLayerModel	1	code/Lua/decompiled/FreefallActivity/Board/FreefallActivityItemLayerModel.lua
+FreefallActivity.Model.FreefallActivityModel	FreefallActivityModel	prototype	BaseActivityModel	1	code/Lua/decompiled/FreefallActivity/Model/FreefallActivityModel.lua
+HuntMapActivity.Board.BoardPromptHuntMap	BoardPromptHuntMapPriority	table_or_enum_candidate		8	code/Lua/decompiled/HuntMapActivity/Board/BoardPromptHuntMap.lua
+HuntMapActivity.Board.BoardPromptHuntMap	BoardPromptHuntMapMergeItems	prototype	BoardPromptMergeItems	15	code/Lua/decompiled/HuntMapActivity/Board/BoardPromptHuntMap.lua
+HuntMapActivity.Board.BoardPromptHuntMap	BoardPormptHuntMapPopCache	prototype	BoardPrompt	107	code/Lua/decompiled/HuntMapActivity/Board/BoardPromptHuntMap.lua
+HuntMapActivity.Board.BoardPromptHuntMap	BoardPromptHuntMapCollect	prototype	BoardPrompt	133	code/Lua/decompiled/HuntMapActivity/Board/BoardPromptHuntMap.lua
+HuntMapActivity.Board.BoardPromptHuntMap	BoardPromptHuntMapBubble	prototype	BoardPromptHuntMapCollect	173	code/Lua/decompiled/HuntMapActivity/Board/BoardPromptHuntMap.lua
+HuntMapActivity.Board.BoardPromptHuntMap	BoardPromptHuntMapMaxLevelItem	prototype	BoardPromptHuntMapCollect	206	code/Lua/decompiled/HuntMapActivity/Board/BoardPromptHuntMap.lua
+HuntMapActivity.Board.HuntMapActivityBoardModel	HuntMapActivityBoardModel	prototype	BaseUIBoardModel	1	code/Lua/decompiled/HuntMapActivity/Board/HuntMapActivityBoardModel.lua
+HuntMapActivity.Board.HuntMapActivityBoardView	HuntMapActivityBoardView	prototype	BaseUIBoardView	1	code/Lua/decompiled/HuntMapActivity/Board/HuntMapActivityBoardView.lua
+HuntMapActivity.Board.HuntMapActivityItemLayerModel	HuntMapActivityItemLayerModel	prototype	BaseUIBoardItemLayerModel	1	code/Lua/decompiled/HuntMapActivity/Board/HuntMapActivityItemLayerModel.lua
+HuntMapActivity.Model.HuntMapActivityMapModel	HuntMapActivityMapModel	table_or_enum_candidate		1	code/Lua/decompiled/HuntMapActivity/Model/HuntMapActivityMapModel.lua
+HuntMapActivity.Model.HuntMapActivityModel	HuntMapActivityModel	prototype	BaseActivityModel	1	code/Lua/decompiled/HuntMapActivity/Model/HuntMapActivityModel.lua
+HuntMapActivity.Model.HuntMapActivityTaskModel	HuntMapActivityTaskModel	table_or_enum_candidate		1	code/Lua/decompiled/HuntMapActivity/Model/HuntMapActivityTaskModel.lua
+LuckyProduce.Model.LuckyProduceModel	LuckyProduceModel	table_or_enum_candidate		1	code/Lua/decompiled/LuckyProduce/Model/LuckyProduceModel.lua
+Model.Activity.ActivityManager	ActivityManager	table_or_enum_candidate		1	code/Lua/decompiled/Model/Activity/ActivityManager.lua
+Model.Activity.ActivityTokenHelper	EActTokenAcquireType	table_or_enum_candidate		1	code/Lua/decompiled/Model/Activity/ActivityTokenHelper.lua
+Model.Activity.ActivityTokenHelper	EFlyElementLabelStyle	table_or_enum_candidate		9	code/Lua/decompiled/Model/Activity/ActivityTokenHelper.lua
+Model.Activity.ActivityTokenHelper	ActivityTokenHelper	table_or_enum_candidate		70	code/Lua/decompiled/Model/Activity/ActivityTokenHelper.lua
+Model.Activity.BaseActivityModel	BaseActivityModel	table_or_enum_candidate		1	code/Lua/decompiled/Model/Activity/BaseActivityModel.lua
+Model.DB.DBIdGenerator	DBIdGenerator	table_or_enum_candidate		1	code/Lua/decompiled/Model/DB/DBIdGenerator.lua
+Model.DB.DBTable	EDBValueType	table_or_enum_candidate		2	code/Lua/decompiled/Model/DB/DBTable.lua
+Model.DB.DBTable	DBTable	prototype	BaseDBTable	25	code/Lua/decompiled/Model/DB/DBTable.lua
+Model.DB.DBTableManager	DBTableManager	table_or_enum_candidate		1	code/Lua/decompiled/Model/DB/DBTableManager.lua
+Model.DB.DatabaseModel	DatabaseModel	table_or_enum_candidate		1	code/Lua/decompiled/Model/DB/DatabaseModel.lua
+Model.PropItem.PropItemAccelerator	PropItemAccelerator	prototype	PropItemBase	1	code/Lua/decompiled/Model/PropItem/PropItemAccelerator.lua
+Model.PropItem.PropItemBase	PropItemBase	table_or_enum_candidate		1	code/Lua/decompiled/Model/PropItem/PropItemBase.lua
+Model.PropItem.PropItemEnergy4x	PropItemEnergy4x	prototype	PropItemBase	1	code/Lua/decompiled/Model/PropItem/PropItemEnergy4x.lua
+Model.PropItem.PropItemExtraOrder	PropItemExtraOrder	prototype	PropItemBase	1	code/Lua/decompiled/Model/PropItem/PropItemExtraOrder.lua
+Model.PropItem.PropItemInstance	PropItemMoreCard	prototype	PropItemBase	1	code/Lua/decompiled/Model/PropItem/PropItemInstance.lua
+Model.PropItem.PropItemInstance	PropItemTimedBuff	prototype	PropItemBase	12	code/Lua/decompiled/Model/PropItem/PropItemInstance.lua
+Model.PropItem.PropItemInstance	PropItemBalloon	prototype	PropItemBase	21	code/Lua/decompiled/Model/PropItem/PropItemInstance.lua
+Model.PropItem.PropItemManager	PropItemManager	table_or_enum_candidate		1	code/Lua/decompiled/Model/PropItem/PropItemManager.lua
+Model.PropItem.PropItemManager	EPropItemType	table_or_enum_candidate		3	code/Lua/decompiled/Model/PropItem/PropItemManager.lua
+Model.Sync.SyncModel	SyncModel	table_or_enum_candidate		1	code/Lua/decompiled/Model/Sync/SyncModel.lua
+Model.Sync.SyncModel	ESyncState	table_or_enum_candidate		3	code/Lua/decompiled/Model/Sync/SyncModel.lua
+Model.Tutorial.TutorialHelper	TutorialHelper	table_or_enum_candidate		1	code/Lua/decompiled/Model/Tutorial/TutorialHelper.lua
+Model.Tutorial.TutorialModel	TutorialModel	table_or_enum_candidate		1	code/Lua/decompiled/Model/Tutorial/TutorialModel.lua
+Model.UserData.EnergyModel	EnergyModel	prototype	BaseEnergyModel	1	code/Lua/decompiled/Model/UserData/EnergyModel.lua
+Model.UserData.LevelModel	LevelModel	table_or_enum_candidate		1	code/Lua/decompiled/Model/UserData/LevelModel.lua
+Model.UserData.MiscModel	MiscModel	table_or_enum_candidate		1	code/Lua/decompiled/Model/UserData/MiscModel.lua
+Model.UserData.ModelHelper	ModelHelper	table_or_enum_candidate		1	code/Lua/decompiled/Model/UserData/ModelHelper.lua
+Model.UserData.PropertyDataManager	PropertyDataManager	table_or_enum_candidate		1	code/Lua/decompiled/Model/UserData/PropertyDataManager.lua
+Model.UserData.RewardApi	RewardApi	table_or_enum_candidate		1	code/Lua/decompiled/Model/UserData/RewardApi.lua
+Model.UserData.RewardApi	ECommonPropertyType	table_or_enum_candidate		3	code/Lua/decompiled/Model/UserData/RewardApi.lua
+Model.UserData.UserModel	UserModel	table_or_enum_candidate		1	code/Lua/decompiled/Model/UserData/UserModel.lua
+NoCDTrain.Board.NoCDTrainBoardModel	NoCDTrainBoardModel	prototype	BaseSceneBoardModel	1	code/Lua/decompiled/NoCDTrain/Board/NoCDTrainBoardModel.lua
+NoCDTrain.Board.NoCDTrainBoardView	NoCDTrainBoardView	prototype	BaseSceneBoardView	1	code/Lua/decompiled/NoCDTrain/Board/NoCDTrainBoardView.lua
+NoCDTrain.Board.NoCDTrainItemLayerModel	NoCDTrainItemLayerModel	prototype	BaseItemLayerModel	1	code/Lua/decompiled/NoCDTrain/Board/NoCDTrainItemLayerModel.lua
+NoCDTrain.Model.NoCDTrainModel	NoCDTrainModel	prototype		1	code/Lua/decompiled/NoCDTrain/Model/NoCDTrainModel.lua
+UI.Button.InventoryButton	InventoryButton	prototype	HudGeneralButton	1	code/Lua/decompiled/UI/Button/InventoryButton.lua
+UI.Button.InventoryButton	InventoryBtnFlyItem	table_or_enum_candidate		254	code/Lua/decompiled/UI/Button/InventoryButton.lua
+WheelItem.Model.WheelItemData	WheelItemData	table_or_enum_candidate		1	code/Lua/decompiled/WheelItem/Model/WheelItemData.lua
+WheelItem.Model.WheelItemModel	WheelItemModel	table_or_enum_candidate		1	code/Lua/decompiled/WheelItem/Model/WheelItemModel.lua
+Board.Model.Base.BoardPosition	BoardPosition	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Base/BoardPosition.lua
+Board.Model.Base.Matrix	Matrix	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Base/Matrix.lua
+Board.Model.Board.BaseActionBoardModel	BaseActionBoardModel	prototype	BaseBoardModel	1	code/Lua/decompiled/Board/Model/Board/BaseActionBoardModel.lua
+Board.Model.Board.BaseBoardModel	BaseBoardModel	table_or_enum_candidate		10	code/Lua/decompiled/Board/Model/Board/BaseBoardModel.lua
+Board.Model.Board.BaseItemLayerModel	BaseItemLayerModel	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Board/BaseItemLayerModel.lua
+Board.Model.Board.BaseSceneBoardModel	BaseSceneBoardModel	prototype	BaseActionBoardModel	1	code/Lua/decompiled/Board/Model/Board/BaseSceneBoardModel.lua
+Board.Model.Board.BaseUIBoardItemLayerModel	BaseUIBoardItemLayerModel	prototype	BaseItemLayerModel	1	code/Lua/decompiled/Board/Model/Board/BaseUIBoardItemLayerModel.lua
+Board.Model.Board.BaseUIBoardModel	BaseUIBoardModel	prototype	BaseActionBoardModel	1	code/Lua/decompiled/Board/Model/Board/BaseUIBoardModel.lua
+Board.Model.Board.BoardDefinition	BoardEventType	table_or_enum_candidate		8	code/Lua/decompiled/Board/Model/Board/BoardDefinition.lua
+Board.Model.Board.BoardDefinition	BoardSpreadType	table_or_enum_candidate		78	code/Lua/decompiled/Board/Model/Board/BoardDefinition.lua
+Board.Model.Board.BoardDefinition	BoardSpreadTypeName	table_or_enum_candidate		90	code/Lua/decompiled/Board/Model/Board/BoardDefinition.lua
+Board.Model.Board.BoardDefinition	BoardState	table_or_enum_candidate		99	code/Lua/decompiled/Board/Model/Board/BoardDefinition.lua
+Board.Model.Board.ItemCacheModel	CacheItemType	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Board/ItemCacheModel.lua
+Board.Model.Board.ItemCacheModel	ItemCacheModel	table_or_enum_candidate		7	code/Lua/decompiled/Board/Model/Board/ItemCacheModel.lua
+Board.Model.Board.ItemChainHelper	ItemChainHelper	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Board/ItemChainHelper.lua
+Board.Model.Board.ItemFixedSpreadModel	ItemFixedSpreadModel	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Board/ItemFixedSpreadModel.lua
+Board.Model.Board.ItemLuckySpreadModel	ItemLuckySpreadModel	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Board/ItemLuckySpreadModel.lua
+Board.Model.Board.ItemManager	ItemManager	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Board/ItemManager.lua
+Board.Model.Board.ItemSpreadHelper	ItemSpreadHelper	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Board/ItemSpreadHelper.lua
+Board.Model.Board.ItemStoreModel	ItemStoreModel	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Board/ItemStoreModel.lua
+Board.Model.Board.MainBoardModel	StoreFailedReason	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Board/MainBoardModel.lua
+Board.Model.Board.MainBoardModel	MainBoardModel	prototype	BaseSceneBoardModel	2	code/Lua/decompiled/Board/Model/Board/MainBoardModel.lua
+Board.Model.Board.SceneItemLayerModel	SceneItemLayerModel	prototype	BaseItemLayerModel	1	code/Lua/decompiled/Board/Model/Board/SceneItemLayerModel.lua
+Board.Model.Item.BaseItemComponent	BaseItemComponent	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Item/BaseItemComponent.lua
+Board.Model.Item.ItemBattery	ItemBattery	prototype	BaseItemComponent	1	code/Lua/decompiled/Board/Model/Item/ItemBattery.lua
+Board.Model.Item.ItemBattery	ItemBatteryEventType	table_or_enum_candidate		3	code/Lua/decompiled/Board/Model/Item/ItemBattery.lua
+Board.Model.Item.ItemBroom	ItemBroom	prototype	BaseItemComponent	1	code/Lua/decompiled/Board/Model/Item/ItemBroom.lua
+Board.Model.Item.ItemBubble	ItemBubble	prototype	BaseItemComponent	1	code/Lua/decompiled/Board/Model/Item/ItemBubble.lua
+Board.Model.Item.ItemCharge	ItemCharge	prototype	BaseItemComponent	1	code/Lua/decompiled/Board/Model/Item/ItemCharge.lua
+Board.Model.Item.ItemCharge	ItemChargeEventType	table_or_enum_candidate		3	code/Lua/decompiled/Board/Model/Item/ItemCharge.lua
+Board.Model.Item.ItemCharge	ItemChargeState	table_or_enum_candidate		4	code/Lua/decompiled/Board/Model/Item/ItemCharge.lua
+Board.Model.Item.ItemCharge	ChargeConfig	table_or_enum_candidate		5	code/Lua/decompiled/Board/Model/Item/ItemCharge.lua
+Board.Model.Item.ItemChoose	ItemChoose	prototype	BaseItemComponent	1	code/Lua/decompiled/Board/Model/Item/ItemChoose.lua
+Board.Model.Item.ItemCobweb	ItemCobweb	prototype	BaseItemComponent	1	code/Lua/decompiled/Board/Model/Item/ItemCobweb.lua
+Board.Model.Item.ItemCollectable	ItemCollectable	prototype	BaseItemComponent	1	code/Lua/decompiled/Board/Model/Item/ItemCollectable.lua
+Board.Model.Item.ItemDefinition	ItemType	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Item/ItemDefinition.lua
+Board.Model.Item.ItemDefinition	ItemRewardBoxType	table_or_enum_candidate		74	code/Lua/decompiled/Board/Model/Item/ItemDefinition.lua
+Board.Model.Item.ItemDefinition	ItemEnergyBoxType	table_or_enum_candidate		85	code/Lua/decompiled/Board/Model/Item/ItemDefinition.lua
+Board.Model.Item.ItemDefinition	ToolCode	table_or_enum_candidate		90	code/Lua/decompiled/Board/Model/Item/ItemDefinition.lua
+Board.Model.Item.ItemDefinition	AdaptiveTool	table_or_enum_candidate		96	code/Lua/decompiled/Board/Model/Item/ItemDefinition.lua
+Board.Model.Item.ItemDefinition	ItemCodePrefix	table_or_enum_candidate		103	code/Lua/decompiled/Board/Model/Item/ItemDefinition.lua
+Board.Model.Item.ItemDefinition	ItemInnerCodeStartIndex	table_or_enum_candidate		146	code/Lua/decompiled/Board/Model/Item/ItemDefinition.lua
+Board.Model.Item.ItemDefinition	PaperBoxSprite	table_or_enum_candidate		155	code/Lua/decompiled/Board/Model/Item/ItemDefinition.lua
+Board.Model.Item.ItemDefinition	ItemChain	table_or_enum_candidate		161	code/Lua/decompiled/Board/Model/Item/ItemDefinition.lua
+Board.Model.Item.ItemDefinition	ItemNameDefinition	prototype		206	code/Lua/decompiled/Board/Model/Item/ItemDefinition.lua
+Board.Model.Item.ItemDefinition	ItemChargeImageConfig	table_or_enum_candidate		232	code/Lua/decompiled/Board/Model/Item/ItemDefinition.lua
+Board.Model.Item.ItemDefinition	ItemLotionCollectNum	table_or_enum_candidate		298	code/Lua/decompiled/Board/Model/Item/ItemDefinition.lua
+Board.Model.Item.ItemDefinition	EItemMode	table_or_enum_candidate		305	code/Lua/decompiled/Board/Model/Item/ItemDefinition.lua
+Board.Model.Item.ItemDefinition	ItemDailyProgressCode	table_or_enum_candidate		309	code/Lua/decompiled/Board/Model/Item/ItemDefinition.lua
+Board.Model.Item.ItemDig	ItemDigState	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Item/ItemDig.lua
+Board.Model.Item.ItemDig	DigFailedReason	table_or_enum_candidate		2	code/Lua/decompiled/Board/Model/Item/ItemDig.lua
+Board.Model.Item.ItemDig	ItemDigEventType	table_or_enum_candidate		3	code/Lua/decompiled/Board/Model/Item/ItemDig.lua
+Board.Model.Item.ItemDig	ItemDig	prototype	BaseItemComponent	4	code/Lua/decompiled/Board/Model/Item/ItemDig.lua
+Board.Model.Item.ItemExtraSpread	ItemExtraSpread	prototype	BaseItemComponent	1	code/Lua/decompiled/Board/Model/Item/ItemExtraSpread.lua
+Board.Model.Item.ItemFall	ItemFall	prototype	BaseItemComponent	8	code/Lua/decompiled/Board/Model/Item/ItemFall.lua
+Board.Model.Item.ItemFreefallBoss	ItemFreefallBossEventType	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Item/ItemFreefallBoss.lua
+Board.Model.Item.ItemFreefallBoss	ItemFreefallBoss	prototype	BaseItemComponent	2	code/Lua/decompiled/Board/Model/Item/ItemFreefallBoss.lua
+Board.Model.Item.ItemGray	ItemGray	prototype	BaseItemComponent	1	code/Lua/decompiled/Board/Model/Item/ItemGray.lua
+Board.Model.Item.ItemHuntCloudKey	ItemHuntCloudKey	prototype	BaseItemComponent	1	code/Lua/decompiled/Board/Model/Item/ItemHuntCloudKey.lua
+Board.Model.Item.ItemIce	ItemIce	prototype	BaseItemComponent	1	code/Lua/decompiled/Board/Model/Item/ItemIce.lua
+Board.Model.Item.ItemMapBlocker	ItemMapBlocker	prototype	BaseItemComponent	1	code/Lua/decompiled/Board/Model/Item/ItemMapBlocker.lua
+Board.Model.Item.ItemModel	ItemEventType	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Item/ItemModel.lua
+Board.Model.Item.ItemModel	ItemModel	table_or_enum_candidate		6	code/Lua/decompiled/Board/Model/Item/ItemModel.lua
+Board.Model.Item.ItemPaperBox	ItemPaperBox	prototype	BaseItemComponent	1	code/Lua/decompiled/Board/Model/Item/ItemPaperBox.lua
+Board.Model.Item.ItemPick	ItemPick	prototype	BaseItemComponent	1	code/Lua/decompiled/Board/Model/Item/ItemPick.lua
+Board.Model.Item.ItemPortal	ItemPortal	prototype	BaseItemComponent	1	code/Lua/decompiled/Board/Model/Item/ItemPortal.lua
+Board.Model.Item.ItemPortal	ItemPortalEventType	table_or_enum_candidate		3	code/Lua/decompiled/Board/Model/Item/ItemPortal.lua
+Board.Model.Item.ItemPortal	EItemPortalState	table_or_enum_candidate		4	code/Lua/decompiled/Board/Model/Item/ItemPortal.lua
+Board.Model.Item.ItemRefreshOrder	ItemRefreshOrder	prototype	BaseItemComponent	1	code/Lua/decompiled/Board/Model/Item/ItemRefreshOrder.lua
+Board.Model.Item.ItemRune	ItemRune	prototype	BaseItemComponent	1	code/Lua/decompiled/Board/Model/Item/ItemRune.lua
+Board.Model.Item.ItemSand	ItemSand	prototype	BaseItemComponent	1	code/Lua/decompiled/Board/Model/Item/ItemSand.lua
+Board.Model.Item.ItemSand	ItemSandEventType	table_or_enum_candidate		3	code/Lua/decompiled/Board/Model/Item/ItemSand.lua
+Board.Model.Item.ItemSplit	ItemSplit	prototype	BaseItemComponent	1	code/Lua/decompiled/Board/Model/Item/ItemSplit.lua
+Board.Model.Item.ItemSpread	SpreadFailedReason	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Item/ItemSpread.lua
+Board.Model.Item.ItemSpread	ItemSpreadEventType	table_or_enum_candidate		8	code/Lua/decompiled/Board/Model/Item/ItemSpread.lua
+Board.Model.Item.ItemSpread	ItemSpreadState	table_or_enum_candidate		13	code/Lua/decompiled/Board/Model/Item/ItemSpread.lua
+Board.Model.Item.ItemSpread	ItemSpreadWeightType	table_or_enum_candidate		20	code/Lua/decompiled/Board/Model/Item/ItemSpread.lua
+Board.Model.Item.ItemSpread	ItemSpread	prototype	BaseItemComponent	26	code/Lua/decompiled/Board/Model/Item/ItemSpread.lua
+Board.Model.Item.ItemSticker	ItemSticker	prototype	BaseItemComponent	1	code/Lua/decompiled/Board/Model/Item/ItemSticker.lua
+Board.Model.Item.ItemSticker	ItemStickerEventType	table_or_enum_candidate		3	code/Lua/decompiled/Board/Model/Item/ItemSticker.lua
+Board.Model.Item.ItemSwallow	ItemSwallowEventType	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Item/ItemSwallow.lua
+Board.Model.Item.ItemSwallow	ItemSwallow	prototype	BaseItemComponent	2	code/Lua/decompiled/Board/Model/Item/ItemSwallow.lua
+Board.Model.Item.ItemSwallow	ItemSwallowed	prototype	BaseItemComponent	262	code/Lua/decompiled/Board/Model/Item/ItemSwallow.lua
+Board.Model.Item.ItemSwallowChain	ItemSwallowChain	prototype	ItemSwallow	1	code/Lua/decompiled/Board/Model/Item/ItemSwallowChain.lua
+Board.Model.Item.ItemToken	EItemTokenTriggerType	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Item/ItemToken.lua
+Board.Model.Item.ItemToken	ItemToken	prototype	BaseItemComponent	6	code/Lua/decompiled/Board/Model/Item/ItemToken.lua
+Board.Model.Item.ItemTransform	ItemTransform	prototype	BaseItemComponent	1	code/Lua/decompiled/Board/Model/Item/ItemTransform.lua
+Board.Model.Item.ItemTransform	ItemTransformEventType	table_or_enum_candidate		3	code/Lua/decompiled/Board/Model/Item/ItemTransform.lua
+Board.Model.Item.ItemWheel	ItemWheel	prototype	BaseItemComponent	1	code/Lua/decompiled/Board/Model/Item/ItemWheel.lua
+Board.Model.Order.BaseMainActivityOrder	BaseMainActivityOrder	prototype	BaseOrder	1	code/Lua/decompiled/Board/Model/Order/BaseMainActivityOrder.lua
+Board.Model.Order.BaseOrder	OrderType	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Order/BaseOrder.lua
+Board.Model.Order.BaseOrder	OrderState	table_or_enum_candidate		11	code/Lua/decompiled/Board/Model/Order/BaseOrder.lua
+Board.Model.Order.BaseOrder	OrderStateChange	table_or_enum_candidate		17	code/Lua/decompiled/Board/Model/Order/BaseOrder.lua
+Board.Model.Order.BaseOrder	PrecleanType	table_or_enum_candidate		18	code/Lua/decompiled/Board/Model/Order/BaseOrder.lua
+Board.Model.Order.BaseOrder	BaseOrder	table_or_enum_candidate		23	code/Lua/decompiled/Board/Model/Order/BaseOrder.lua
+Board.Model.Order.BaseOrderModel	BaseOrderModel	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Order/BaseOrderModel.lua
+Board.Model.Order.ClearOrderCreator	ClearOrderHelper	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Order/ClearOrderCreator.lua
+Board.Model.Order.ClearOrderCreator	MainClearOrderCreator	table_or_enum_candidate		24	code/Lua/decompiled/Board/Model/Order/ClearOrderCreator.lua
+Board.Model.Order.CurtainCallOrder	CurtainCallOrder	prototype	MainOrder	1	code/Lua/decompiled/Board/Model/Order/CurtainCallOrder.lua
+Board.Model.Order.CurtainCallOrderCreator	CurtainCallOrderCreator	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Order/CurtainCallOrderCreator.lua
+Board.Model.Order.FixedOrderCreator	OrderCondition	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Order/FixedOrderCreator.lua
+Board.Model.Order.FixedOrderCreator	FixedOrderCreator	table_or_enum_candidate		6	code/Lua/decompiled/Board/Model/Order/FixedOrderCreator.lua
+Board.Model.Order.FixedOrderCreator	MainFixedOrderCreator	prototype	FixedOrderCreator	22	code/Lua/decompiled/Board/Model/Order/FixedOrderCreator.lua
+Board.Model.Order.InsureOrderCreator	InsureOrderCreator	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Order/InsureOrderCreator.lua
+Board.Model.Order.LaneOrderCreator	LaneOrderCreator	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Order/LaneOrderCreator.lua
+Board.Model.Order.LuckyStarOrderCreator	LuckyStarOrderCreator	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Order/LuckyStarOrderCreator.lua
+Board.Model.Order.MainOrder	MainOrder	prototype	BaseOrder	1	code/Lua/decompiled/Board/Model/Order/MainOrder.lua
+Board.Model.Order.MainOrderCreator	EOrderItemWeightValue	table_or_enum_candidate		14	code/Lua/decompiled/Board/Model/Order/MainOrderCreator.lua
+Board.Model.Order.MainOrderCreator	MainOrderCreator	table_or_enum_candidate		23	code/Lua/decompiled/Board/Model/Order/MainOrderCreator.lua
+Board.Model.Order.MainOrderModel	MainOrderModel	prototype	BaseOrderModel	1	code/Lua/decompiled/Board/Model/Order/MainOrderModel.lua
+Board.Model.Order.OrderConfig	FixedOrderConfig	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Order/OrderConfig.lua
+Board.Model.Order.OrderConfig	MainClearOrderConfig	table_or_enum_candidate		49	code/Lua/decompiled/Board/Model/Order/OrderConfig.lua
+Board.Model.Order.OrderConfig	BaseRandomOrderConfig	table_or_enum_candidate		59	code/Lua/decompiled/Board/Model/Order/OrderConfig.lua
+Board.Model.Order.OrderConfig	RandomOrderConfig	prototype	BaseRandomOrderConfig	76	code/Lua/decompiled/Board/Model/Order/OrderConfig.lua
+Board.Model.Order.RandomOrderCreator	DailyOrderHelper	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Order/RandomOrderCreator.lua
+Board.Model.Order.RandomOrderCreator	RandomOrderHelper	table_or_enum_candidate		8	code/Lua/decompiled/Board/Model/Order/RandomOrderCreator.lua
+Board.Model.Order.RandomOrderCreator	MainRandomOrderCreator	table_or_enum_candidate		294	code/Lua/decompiled/Board/Model/Order/RandomOrderCreator.lua
+Board.Model.Order.ReturningOrderCreator	ReturningOrderCreator	table_or_enum_candidate		1	code/Lua/decompiled/Board/Model/Order/ReturningOrderCreator.lua
+Board.View.Item.ItemView	ItemView	table_or_enum_candidate		11	code/Lua/decompiled/Board/View/Item/ItemView.lua
+Board.View.Order.OrderCell	OrderRewardArea	table_or_enum_candidate		1	code/Lua/decompiled/Board/View/Order/OrderCell.lua
+Board.View.Order.OrderCell	OrderCell	prototype	BaseOrderCell	7	code/Lua/decompiled/Board/View/Order/OrderCell.lua
+Board.View.Order.OrderCell	OrderEmpty	table_or_enum_candidate		2126	code/Lua/decompiled/Board/View/Order/OrderCell.lua
+Drop.Board.Item.DropActivityBaseItem	DropActivityBaseItem	table_or_enum_candidate		1	code/Lua/decompiled/Drop/Board/Item/DropActivityBaseItem.lua
+Drop.Board.Item.DropActivityFlyItem	DropActivityFlyItem	table_or_enum_candidate		1	code/Lua/decompiled/Drop/Board/Item/DropActivityFlyItem.lua
+Drop.Board.Item.DropActivityNormalItem	DropActivityNormalItem	prototype	DropActivityBaseItem	1	code/Lua/decompiled/Drop/Board/Item/DropActivityNormalItem.lua
+HuntActivity.Common.Board.BoardPromptHunt	BoardPromptHuntPriority	table_or_enum_candidate		8	code/Lua/decompiled/HuntActivity/Common/Board/BoardPromptHunt.lua
+HuntActivity.Common.Board.BoardPromptHunt	BoardPromptHuntMergeItems	prototype	BoardPromptMergeItems	22	code/Lua/decompiled/HuntActivity/Common/Board/BoardPromptHunt.lua
+HuntActivity.Common.Board.BoardPromptHunt	BoardPormptHuntPopCache	prototype	BoardPrompt	122	code/Lua/decompiled/HuntActivity/Common/Board/BoardPromptHunt.lua
+HuntActivity.Common.Board.BoardPromptHunt	BoardPormptHuntPopSpread	prototype	BoardPrompt	148	code/Lua/decompiled/HuntActivity/Common/Board/BoardPromptHunt.lua
+HuntActivity.Common.Board.BoardPromptHunt	BoardPromptHuntCollect	prototype	BoardPrompt	189	code/Lua/decompiled/HuntActivity/Common/Board/BoardPromptHunt.lua
+HuntActivity.Common.Board.BoardPromptHunt	BoardPromptHuntBubble	prototype	BoardPromptHuntCollect	229	code/Lua/decompiled/HuntActivity/Common/Board/BoardPromptHunt.lua
+HuntActivity.Common.Board.BoardPromptHunt	BoardPromptHuntMaxLevelItem	prototype	BoardPromptHuntCollect	262	code/Lua/decompiled/HuntActivity/Common/Board/BoardPromptHunt.lua
+HuntActivity.Common.Board.BoardPromptHunt	BoardPromptHuntPortal	prototype	BoardPrompt	345	code/Lua/decompiled/HuntActivity/Common/Board/BoardPromptHunt.lua
+HuntActivity.Common.Board.BoardPromptHunt	BoardPromptHuntSwallowItems	prototype	BoardPromptSwallowItems	379	code/Lua/decompiled/HuntActivity/Common/Board/BoardPromptHunt.lua
+HuntActivity.Common.Board.BoardPromptHunt	BoardPromptHuntDigItem	prototype	BoardPrompt	519	code/Lua/decompiled/HuntActivity/Common/Board/BoardPromptHunt.lua
+HuntActivity.Common.Board.BoardPromptHunt	BoardPromptHuntDigCollect	prototype	BoardPrompt	573	code/Lua/decompiled/HuntActivity/Common/Board/BoardPromptHunt.lua
+HuntActivity.Common.Board.BoardPromptHunt	BoardPromptHuntCollectCloudKey	prototype	BoardPromptHuntCollect	604	code/Lua/decompiled/HuntActivity/Common/Board/BoardPromptHunt.lua
+HuntActivity.Common.Board.BoardPromptHunt	BoardPromptHuntClickCow	prototype	BoardPromptHuntCollect	654	code/Lua/decompiled/HuntActivity/Common/Board/BoardPromptHunt.lua
+HuntActivity.Common.Board.HuntActivityBoardModel	HuntActivityBoardModel	prototype	BaseUIBoardModel	1	code/Lua/decompiled/HuntActivity/Common/Board/HuntActivityBoardModel.lua
+HuntActivity.Common.Board.HuntActivityBoardView	HuntActivityBoardView	prototype	BaseUIBoardView	1	code/Lua/decompiled/HuntActivity/Common/Board/HuntActivityBoardView.lua
+HuntActivity.Common.Board.HuntActivityItemLayerModel	HuntActivityItemLayerModel	prototype	BaseUIBoardItemLayerModel	1	code/Lua/decompiled/HuntActivity/Common/Board/HuntActivityItemLayerModel.lua
+HuntActivity.Common.Board.HuntActivityItemTransformLayerModel	HuntActivityItemTransformLayerModel	table_or_enum_candidate		1	code/Lua/decompiled/HuntActivity/Common/Board/HuntActivityItemTransformLayerModel.lua
+HuntActivity.Common.Board.HuntActivitySwallowLock	HuntActivitySwallowLock	table_or_enum_candidate		1	code/Lua/decompiled/HuntActivity/Common/Board/HuntActivitySwallowLock.lua
+HuntActivity.Common.Board.ItemHuntAnim	ItemHuntAnim	prototype	BaseItemComponent	1	code/Lua/decompiled/HuntActivity/Common/Board/ItemHuntAnim.lua
+HuntActivity.Common.Board.ItemHuntAnim	ItemHuntSpread	prototype	BaseItemComponent	13	code/Lua/decompiled/HuntActivity/Common/Board/ItemHuntAnim.lua
+HuntActivity.Common.Board.ItemHuntAnim	ItemHuntAnimView	table_or_enum_candidate		94	code/Lua/decompiled/HuntActivity/Common/Board/ItemHuntAnim.lua
+HuntActivity.Common.Board.ItemHuntAnim	HuntFarmWheat	table_or_enum_candidate		157	code/Lua/decompiled/HuntActivity/Common/Board/ItemHuntAnim.lua
+HuntActivity.Common.Board.ItemHuntAnim	HuntFarmCow	table_or_enum_candidate		189	code/Lua/decompiled/HuntActivity/Common/Board/ItemHuntAnim.lua
+HuntActivity.Common.Board.ItemHuntAnim	HuntKitchenWok	table_or_enum_candidate		468	code/Lua/decompiled/HuntActivity/Common/Board/ItemHuntAnim.lua
+HuntActivity.Common.Board.ItemHuntMonster	ItemHuntMonster	table_or_enum_candidate		1	code/Lua/decompiled/HuntActivity/Common/Board/ItemHuntMonster.lua
+HuntActivity.Common.Board.ItemHuntSignature	ItemHuntSignature	table_or_enum_candidate		1	code/Lua/decompiled/HuntActivity/Common/Board/ItemHuntSignature.lua
+HuntActivity.Common.Model.HuntActivityModel	HuntActivityEventType	table_or_enum_candidate		1	code/Lua/decompiled/HuntActivity/Common/Model/HuntActivityModel.lua
+HuntActivity.Common.Model.HuntActivityModel	HuntActivityModel	prototype		2	code/Lua/decompiled/HuntActivity/Common/Model/HuntActivityModel.lua
+HuntActivity.Common.Model.HuntBookModel	BaseHuntItemBookModel	table_or_enum_candidate		1	code/Lua/decompiled/HuntActivity/Common/Model/HuntBookModel.lua
+HuntActivity.Common.Model.HuntDoubleEnergy.HuntDoubleEnergyModel	HuntDoubleEnergyMultipleDefinition	table_or_enum_candidate		1	code/Lua/decompiled/HuntActivity/Common/Model/HuntDoubleEnergy/HuntDoubleEnergyModel.lua
+HuntActivity.Common.Model.HuntDoubleEnergy.HuntDoubleEnergyModel	HuntDoubleEnergyMultipleArray	table_or_enum_candidate		7	code/Lua/decompiled/HuntActivity/Common/Model/HuntDoubleEnergy/HuntDoubleEnergyModel.lua
+HuntActivity.Common.Model.HuntDoubleEnergy.HuntDoubleEnergyModel	HuntDoubleEnergyUnclockType	table_or_enum_candidate		12	code/Lua/decompiled/HuntActivity/Common/Model/HuntDoubleEnergy/HuntDoubleEnergyModel.lua
+HuntActivity.Common.Model.HuntDoubleEnergy.HuntDoubleEnergyModel	HuntDoubleEnergyMultipleConfig	table_or_enum_candidate		17	code/Lua/decompiled/HuntActivity/Common/Model/HuntDoubleEnergy/HuntDoubleEnergyModel.lua
+HuntActivity.Common.Model.HuntDoubleEnergy.HuntDoubleEnergyModel	HuntDoubleEnergyModel	table_or_enum_candidate		54	code/Lua/decompiled/HuntActivity/Common/Model/HuntDoubleEnergy/HuntDoubleEnergyModel.lua
+HuntMapActivity.Map.Obstacle.Logic.HuntMapBaseObstacle	HuntMapBaseObstacle	table_or_enum_candidate		1	code/Lua/decompiled/HuntMapActivity/Map/Obstacle/Logic/HuntMapBaseObstacle.lua
+HuntMapActivity.Map.Obstacle.Logic.HuntMapCycleObstacle	HuntMapCycleObstacle	prototype	HuntMapBaseObstacle	1	code/Lua/decompiled/HuntMapActivity/Map/Obstacle/Logic/HuntMapCycleObstacle.lua
+HuntMapActivity.Map.Obstacle.Logic.HuntMapNormalObstacle	HuntMapNormalObstacle	prototype	HuntMapBaseObstacle	1	code/Lua/decompiled/HuntMapActivity/Map/Obstacle/Logic/HuntMapNormalObstacle.lua
+HuntMapActivity.Map.Obstacle.Logic.HuntMapResidualObstacle	HuntMapResidualObstacle	prototype	HuntMapBaseObstacle	1	code/Lua/decompiled/HuntMapActivity/Map/Obstacle/Logic/HuntMapResidualObstacle.lua
+HuntMapActivity.Map.Obstacle.Logic.HuntMapTransformObstacle	HuntMapTransformObstacle	prototype	HuntMapBaseObstacle	1	code/Lua/decompiled/HuntMapActivity/Map/Obstacle/Logic/HuntMapTransformObstacle.lua

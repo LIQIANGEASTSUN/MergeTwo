@@ -1,0 +1,24 @@
+// Namespace: Merger.Bubbles.Model
+public class SmarterBubblesDataModel : ModelBase, ISmarterBubblesDataModel // TypeDefIndex: 7483
+{
+	// Fields
+	private const string BubblesDataStorageKey = "smarterBubbles";
+	[Inject]
+	private IPersistentStorageService _persistentStorageService; // 0x28
+	private SmarterBubblesData _smarterBubblesData; // 0x30
+
+	// Properties
+	public SmarterBubblesData SmarterBubblesData { get; }
+
+	// Methods
+
+	// RVA: 0x658274C Offset: 0x657E74C VA: 0x658274C Slot: 19
+	public SmarterBubblesData get_SmarterBubblesData() { }
+
+	// RVA: 0x6582A80 Offset: 0x657EA80 VA: 0x6582A80 Slot: 20
+	public void Save() { }
+
+	// RVA: 0x6582B6C Offset: 0x657EB6C VA: 0x6582B6C
+	public void .ctor() { }
+}
+

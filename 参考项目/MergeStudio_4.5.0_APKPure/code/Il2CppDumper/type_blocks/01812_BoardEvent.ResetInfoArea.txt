@@ -1,0 +1,4 @@
+// Namespace: 
+public struct BoardEvent.ResetInfoArea : IEvent // TypeDefIndex: 1812
+{}
+

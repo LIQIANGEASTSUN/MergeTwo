@@ -1,0 +1,58 @@
+// Namespace: MergeEngine.Model.Configuration
+public abstract class ConfigurationModelBase<TData> : ModelBase // TypeDefIndex: 527
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 17
+	protected override void InitializeModel() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4D919B4 Offset: 0x4D8D9B4 VA: 0x4D919B4
+	|-ConfigurationModelBase<object>.InitializeModel
+	|
+	|-RVA: 0x4D91AC4 Offset: 0x4D8DAC4 VA: 0x4D91AC4
+	|-ConfigurationModelBase<__Il2CppFullySharedGenericType>.InitializeModel
+	*/
+
+	// RVA: -1 Offset: -1
+	private void DataLoaded(TData data) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4D91A30 Offset: 0x4D8DA30 VA: 0x4D91A30
+	|-ConfigurationModelBase<object>.DataLoaded
+	|
+	|-RVA: 0x4D91B48 Offset: 0x4D8DB48 VA: 0x4D91B48
+	|-ConfigurationModelBase<__Il2CppFullySharedGenericType>.DataLoaded
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 18
+	protected override void DisposeModel() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4D91A40 Offset: 0x4D8DA40 VA: 0x4D91A40
+	|-ConfigurationModelBase<object>.DisposeModel
+	|
+	|-RVA: 0x4D91C08 Offset: 0x4D8DC08 VA: 0x4D91C08
+	|-ConfigurationModelBase<__Il2CppFullySharedGenericType>.DisposeModel
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 19
+	protected abstract void HandleDataLoaded(TData data);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-ConfigurationModelBase<__Il2CppFullySharedGenericType>.HandleDataLoaded
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4D91ABC Offset: 0x4D8DABC VA: 0x4D91ABC
+	|-ConfigurationModelBase<object>..ctor
+	|
+	|-RVA: 0x4D91C8C Offset: 0x4D8DC8C VA: 0x4D91C8C
+	|-ConfigurationModelBase<__Il2CppFullySharedGenericType>..ctor
+	*/
+}
+

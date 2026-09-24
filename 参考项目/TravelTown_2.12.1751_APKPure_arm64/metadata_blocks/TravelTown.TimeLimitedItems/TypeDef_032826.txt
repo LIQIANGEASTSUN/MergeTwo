@@ -1,0 +1,15 @@
+// Namespace: Merger.TimeLimitedItems.Systems
+public class TimeLimitedItemsCleanUpSystem : ISystem // TypeDefIndex: 32826
+{
+	// Methods
+
+	// RVA: 0x6B489A4 Offset: 0x6B449A4 VA: 0x6B489A4 Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6B48A30 Offset: 0x6B44A30 VA: 0x6B48A30
+	private void CleanUpEntities(TickContext context, List<Entity> entities) { }
+
+	// RVA: 0x6B48C24 Offset: 0x6B44C24 VA: 0x6B48C24
+	public void .ctor() { }
+}
+

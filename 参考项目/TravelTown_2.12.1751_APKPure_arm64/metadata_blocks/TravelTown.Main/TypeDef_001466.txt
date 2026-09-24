@@ -1,0 +1,9 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+public enum TimeLockGroup // TypeDefIndex: 1466
+{
+	// Fields
+	public int value__; // 0x0
+	public const TimeLockGroup Chests = 0;
+	public const TimeLockGroup Interaction = 1;
+}
+

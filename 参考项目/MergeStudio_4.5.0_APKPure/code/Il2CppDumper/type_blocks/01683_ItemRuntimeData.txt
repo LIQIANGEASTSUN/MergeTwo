@@ -1,0 +1,95 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class ItemRuntimeData : IItemRuntimeData // TypeDefIndex: 1683
+{
+	// Fields
+	public string Name; // 0x8
+	public long NextSpawnerUpdateMs; // 0x10
+	public int UpdateStepMs; // 0x18
+	public bool SpawnerHintLock; // 0x1C
+	public int AutoOfflineCount; // 0x20
+	public int ItemPrice; // 0x24
+	public int SkipPrice; // 0x28
+	public BoardItemData BoardItemData; // 0x2C
+	public Vector3 PreviousPosition; // 0x30
+	public Coordinate PreviousIndexForSellable; // 0x3C
+	public ItemEntity ItemEntity; // 0x44
+	public int TimeRequiredToExitNoCapacity; // 0x48
+	public bool IsBoosterPanelActive; // 0x4C
+	public BoosterItemData BoosterData; // 0x50
+	public long BoosterPanelOpenTick; // 0x58
+	public bool LevelUp; // 0x60
+	public Sequence SpawnerHintSequence; // 0x64
+	public Sequence ClickSequence; // 0x68
+	public Sequence PanelSpawnSequence; // 0x6C
+	public Sequence MergeHintSequence; // 0x70
+	public Animator ChestBoardGlowAnimatorInstance; // 0x74
+	public bool SrOptionsEnabled; // 0x78
+	public bool SpawnAnimating; // 0x79
+	public bool RewardWaiting; // 0x7A
+	public bool RewardEarned; // 0x7B
+	public bool IsFlyingToTask; // 0x7C
+	public bool IsHidden; // 0x7D
+	public ProgressiveItemGoalData CurrentGoal; // 0x80
+	public GameObject RemoveParticle; // 0x84
+	public int SpawnBubbleGemCount; // 0x88
+	public bool ProgressBarPresent; // 0x8C
+	public bool IsTaskTick; // 0x8D
+	public Tuple<int, bool> IsProgressiveTick; // 0x90
+	public bool PreventItemSelect; // 0x94
+	[CompilerGenerated]
+	private bool <MergeHintLock>k__BackingField; // 0x95
+	public bool ClickDownLock; // 0x96
+	public bool SpawnLock; // 0x97
+	public bool MergeTargetLock; // 0x98
+	public bool DragLock; // 0x99
+	public bool BubbleLock; // 0x9A
+	public bool SpawnerUsedEnergy; // 0x9B
+
+	// Properties
+	public bool MergeHintLock { get; set; }
+	public bool IsTick { get; }
+	public IItemEntity GetItemEntity { get; }
+	public int GetUpdateStepMs { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x18CEAE8 Offset: 0x18CEAE8 VA: 0x18CEAE8
+	public bool get_MergeHintLock() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18CEAF0 Offset: 0x18CEAF0 VA: 0x18CEAF0
+	public void set_MergeHintLock(bool value) { }
+
+	// RVA: 0x18CEAF8 Offset: 0x18CEAF8 VA: 0x18CEAF8
+	public bool get_IsTick() { }
+
+	// RVA: 0x18CEB64 Offset: 0x18CEB64 VA: 0x18CEB64 Slot: 4
+	public IItemEntity get_GetItemEntity() { }
+
+	// RVA: 0x18CEB6C Offset: 0x18CEB6C VA: 0x18CEB6C Slot: 5
+	public int get_GetUpdateStepMs() { }
+
+	// RVA: 0x18CEB74 Offset: 0x18CEB74 VA: 0x18CEB74 Slot: 6
+	public void SetUpdateStepMs(int updateStepMs) { }
+
+	// RVA: 0x18CEB7C Offset: 0x18CEB7C VA: 0x18CEB7C Slot: 7
+	public void SetTimeRequiredToExitNoCapacity(int time) { }
+
+	// RVA: 0x18CEB84 Offset: 0x18CEB84 VA: 0x18CEB84 Slot: 8
+	public void SetNextSpawnerUpdateMs(long spawnerUpdateMs) { }
+
+	// RVA: 0x18CEB94 Offset: 0x18CEB94 VA: 0x18CEB94 Slot: 9
+	public void ChangeNextSpawnerUpdateMs(long changedUpdateMs) { }
+
+	// RVA: 0x18CEBAC Offset: 0x18CEBAC VA: 0x18CEBAC Slot: 10
+	public void SetSkipPrice(int skipPrice) { }
+
+	// RVA: 0x18CEBB4 Offset: 0x18CEBB4 VA: 0x18CEBB4
+	public bool PreventItemSell() { }
+
+	// RVA: 0x18CED10 Offset: 0x18CED10 VA: 0x18CED10
+	public void .ctor() { }
+}
+

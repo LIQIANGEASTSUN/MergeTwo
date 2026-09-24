@@ -1,0 +1,97 @@
+// Namespace: 
+[Serializable]
+public class MapAdventureOneMergeConfig : TableBase // TypeDefIndex: 724
+{
+	// Fields
+	[CompilerGenerated]
+	private int <Id>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private int <LineId>k__BackingField; // 0xC
+	[CompilerGenerated]
+	private int <LineIdChild>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private List<int> <NoRecycleItems>k__BackingField; // 0x14
+	[CompilerGenerated]
+	private List<int> <UnlockItemIds>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private int <UnlockStep>k__BackingField; // 0x1C
+	[CompilerGenerated]
+	private List<int> <MoveCheckNum>k__BackingField; // 0x20
+
+	// Properties
+	public int Id { get; set; }
+	public int LineId { get; set; }
+	public int LineIdChild { get; set; }
+	public List<int> NoRecycleItems { get; set; }
+	public List<int> UnlockItemIds { get; set; }
+	public int UnlockStep { get; set; }
+	public List<int> MoveCheckNum { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x18977FC Offset: 0x18977FC VA: 0x18977FC
+	public int get_Id() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1897804 Offset: 0x1897804 VA: 0x1897804
+	public void set_Id(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x189780C Offset: 0x189780C VA: 0x189780C
+	public int get_LineId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1897814 Offset: 0x1897814 VA: 0x1897814
+	public void set_LineId(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x189781C Offset: 0x189781C VA: 0x189781C
+	public int get_LineIdChild() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1897824 Offset: 0x1897824 VA: 0x1897824
+	public void set_LineIdChild(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x189782C Offset: 0x189782C VA: 0x189782C
+	public List<int> get_NoRecycleItems() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1897834 Offset: 0x1897834 VA: 0x1897834
+	public void set_NoRecycleItems(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x189783C Offset: 0x189783C VA: 0x189783C
+	public List<int> get_UnlockItemIds() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1897844 Offset: 0x1897844 VA: 0x1897844
+	public void set_UnlockItemIds(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x189784C Offset: 0x189784C VA: 0x189784C
+	public int get_UnlockStep() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1897854 Offset: 0x1897854 VA: 0x1897854
+	public void set_UnlockStep(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x189785C Offset: 0x189785C VA: 0x189785C
+	public List<int> get_MoveCheckNum() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1897864 Offset: 0x1897864 VA: 0x1897864
+	public void set_MoveCheckNum(List<int> value) { }
+
+	// RVA: 0x189786C Offset: 0x189786C VA: 0x189786C Slot: 4
+	public override int GetID() { }
+
+	// RVA: 0x18978C0 Offset: 0x18978C0 VA: 0x18978C0
+	public void .ctor() { }
+
+	// RVA: 0x18978C8 Offset: 0x18978C8 VA: 0x18978C8
+	public int <>iFixBaseProxy_GetID() { }
+}
+

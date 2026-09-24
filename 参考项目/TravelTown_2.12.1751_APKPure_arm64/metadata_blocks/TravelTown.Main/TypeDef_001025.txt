@@ -1,0 +1,120 @@
+// Namespace: MergeEngine.ECS.Components
+[CacheAs(new[] { typeof(ISerializableComponent) })]
+public abstract class SerializableComponent<TCapability, TSerializable> : ComponentBase<TCapability>, ISerializableComponent, IComponentBase // TypeDefIndex: 1025
+{
+	// Fields
+	private TSerializable _serializable; // 0x0
+
+	// Properties
+	protected TSerializable serializable { get; }
+	public abstract string ComponentKey { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	protected TSerializable get_serializable() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x44E7F48 Offset: 0x44E3F48 VA: 0x44E7F48
+	|-SerializableComponent<BoardItemPosition, object>.get_serializable
+	|
+	|-RVA: 0x44E8300 Offset: 0x44E4300 VA: 0x44E8300
+	|-SerializableComponent<object, object>.get_serializable
+	|
+	|-RVA: 0x44E86B8 Offset: 0x44E46B8 VA: 0x44E86B8
+	|-SerializableComponent<__Il2CppFullySharedGenericType, object>.get_serializable
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor(TCapability capability, Entity entity) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x44E7F50 Offset: 0x44E3F50 VA: 0x44E7F50
+	|-SerializableComponent<BoardItemPosition, object>..ctor
+	|
+	|-RVA: 0x44E8308 Offset: 0x44E4308 VA: 0x44E8308
+	|-SerializableComponent<object, object>..ctor
+	|
+	|-RVA: 0x44E86DC Offset: 0x44E46DC VA: 0x44E86DC
+	|-SerializableComponent<__Il2CppFullySharedGenericType, object>..ctor
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public abstract string get_ComponentKey();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-SerializableComponent<__Il2CppFullySharedGenericType, object>.get_ComponentKey
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public string Serialize() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x44E7FB8 Offset: 0x44E3FB8 VA: 0x44E7FB8
+	|-SerializableComponent<BoardItemPosition, object>.Serialize
+	|
+	|-RVA: 0x44E8370 Offset: 0x44E4370 VA: 0x44E8370
+	|-SerializableComponent<object, object>.Serialize
+	|
+	|-RVA: 0x44E87E8 Offset: 0x44E47E8 VA: 0x44E87E8
+	|-SerializableComponent<__Il2CppFullySharedGenericType, object>.Serialize
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public object GetSerialize() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x44E80EC Offset: 0x44E40EC VA: 0x44E80EC
+	|-SerializableComponent<BoardItemPosition, object>.GetSerialize
+	|
+	|-RVA: 0x44E84A4 Offset: 0x44E44A4 VA: 0x44E84A4
+	|-SerializableComponent<object, object>.GetSerialize
+	|
+	|-RVA: 0x44E8970 Offset: 0x44E4970 VA: 0x44E8970
+	|-SerializableComponent<__Il2CppFullySharedGenericType, object>.GetSerialize
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 12
+	protected virtual void OnBeforeSerialize() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x44E819C Offset: 0x44E419C VA: 0x44E819C
+	|-SerializableComponent<BoardItemPosition, object>.OnBeforeSerialize
+	|
+	|-RVA: 0x44E8554 Offset: 0x44E4554 VA: 0x44E8554
+	|-SerializableComponent<object, object>.OnBeforeSerialize
+	|
+	|-RVA: 0x44E8A6C Offset: 0x44E4A6C VA: 0x44E8A6C
+	|-SerializableComponent<__Il2CppFullySharedGenericType, object>.OnBeforeSerialize
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 13
+	protected virtual void OnAfterDeserialize() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x44E81A0 Offset: 0x44E41A0 VA: 0x44E81A0
+	|-SerializableComponent<BoardItemPosition, object>.OnAfterDeserialize
+	|
+	|-RVA: 0x44E8558 Offset: 0x44E4558 VA: 0x44E8558
+	|-SerializableComponent<object, object>.OnAfterDeserialize
+	|
+	|-RVA: 0x44E8A70 Offset: 0x44E4A70 VA: 0x44E8A70
+	|-SerializableComponent<__Il2CppFullySharedGenericType, object>.OnAfterDeserialize
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public void Deserialize(string componentJson) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x44E81A4 Offset: 0x44E41A4 VA: 0x44E81A4
+	|-SerializableComponent<BoardItemPosition, object>.Deserialize
+	|
+	|-RVA: 0x44E855C Offset: 0x44E455C VA: 0x44E855C
+	|-SerializableComponent<object, object>.Deserialize
+	|
+	|-RVA: 0x44E8A74 Offset: 0x44E4A74 VA: 0x44E8A74
+	|-SerializableComponent<__Il2CppFullySharedGenericType, object>.Deserialize
+	*/
+}
+

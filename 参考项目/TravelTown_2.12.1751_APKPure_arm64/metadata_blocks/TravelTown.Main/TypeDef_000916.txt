@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardSystem.<>c__DisplayClass54_0 // TypeDefIndex: 916
+{
+	// Fields
+	public BoardSystem <>4__this; // 0x10
+	public BoardItemPosition boardItemPosition; // 0x18
+	public BoardItemPosition[] ignorePositions; // 0x20
+
+	// Methods
+
+	// RVA: 0x6669E4C Offset: 0x6665E4C VA: 0x6669E4C
+	public void .ctor() { }
+
+	// RVA: 0x666BD04 Offset: 0x6667D04 VA: 0x666BD04
+	internal int <GetClosestAvailablePositionTo>b__0(BoardItemPosition item1, BoardItemPosition item2) { }
+
+	// RVA: 0x666BDDC Offset: 0x6667DDC VA: 0x666BDDC
+	internal bool <GetClosestAvailablePositionTo>b__1(BoardItemPosition position) { }
+}
+

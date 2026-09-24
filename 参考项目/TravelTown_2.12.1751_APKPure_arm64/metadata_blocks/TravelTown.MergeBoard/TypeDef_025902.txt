@@ -1,0 +1,46 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeBoardItemsEntityFactory.<>c__DisplayClass11_0 // TypeDefIndex: 25902
+{
+	// Fields
+	public MergeBoardItemsEntityFactory <>4__this; // 0x10
+	public IMergeItem itemConfiguration; // 0x18
+	public Entity entity; // 0x20
+	public CollectableItemCapability collectableItemCapability; // 0x28
+
+	// Methods
+
+	// RVA: 0x6A95F90 Offset: 0x6A91F90 VA: 0x6A95F90
+	public void .ctor() { }
+
+	// RVA: 0x6A97B14 Offset: 0x6A93B14 VA: 0x6A97B14
+	internal MergeComponent <CreateBoardItemEntity>b__0() { }
+
+	// RVA: 0x6A97BC8 Offset: 0x6A93BC8 VA: 0x6A97BC8
+	internal ProducerComponent <CreateBoardItemEntity>b__1() { }
+
+	// RVA: 0x6A97C00 Offset: 0x6A93C00 VA: 0x6A97C00
+	internal TimeCycleComponent <CreateBoardItemEntity>b__2() { }
+
+	// RVA: 0x6A97CD4 Offset: 0x6A93CD4 VA: 0x6A97CD4
+	internal SpawnerComponent <CreateBoardItemEntity>b__3() { }
+
+	// RVA: 0x6A97D14 Offset: 0x6A93D14 VA: 0x6A97D14
+	internal TimeCycleComponent <CreateBoardItemEntity>b__4() { }
+
+	// RVA: 0x6A97DEC Offset: 0x6A93DEC VA: 0x6A97DEC
+	internal ExpendableComponent <CreateBoardItemEntity>b__6() { }
+
+	// RVA: 0x6A97E30 Offset: 0x6A93E30 VA: 0x6A97E30
+	internal ChargeableComponent <CreateBoardItemEntity>b__7() { }
+
+	// RVA: 0x6A97E4C Offset: 0x6A93E4C VA: 0x6A97E4C
+	internal TimeLockComponent <CreateBoardItemEntity>b__8() { }
+
+	// RVA: 0x6A97E90 Offset: 0x6A93E90 VA: 0x6A97E90
+	internal ToolSpawningComponent <CreateBoardItemEntity>b__9() { }
+
+	// RVA: 0x6A97F44 Offset: 0x6A93F44 VA: 0x6A97F44
+	internal CollectableComponent <CreateBoardItemEntity>b__10() { }
+}
+

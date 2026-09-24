@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class EventEntity.<>c__DisplayClass29_0 // TypeDefIndex: 1217
+{
+	// Fields
+	public string day; // 0x8
+
+	// Methods
+
+	// RVA: 0x17E64D0 Offset: 0x17E64D0 VA: 0x17E64D0
+	public void .ctor() { }
+
+	// RVA: 0x17E9890 Offset: 0x17E9890 VA: 0x17E9890
+	internal bool <GetCurrentEventDayInfo>b__0(EventDayInfo item) { }
+}
+

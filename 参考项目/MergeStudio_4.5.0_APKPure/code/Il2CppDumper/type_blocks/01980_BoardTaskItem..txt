@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardTaskItem.<>c__DisplayClass49_0 // TypeDefIndex: 1980
+{
+	// Fields
+	public int id; // 0x8
+
+	// Methods
+
+	// RVA: 0x1949D30 Offset: 0x1949D30 VA: 0x1949D30
+	public void .ctor() { }
+
+	// RVA: 0x194A058 Offset: 0x194A058 VA: 0x194A058
+	internal bool <HasEventTaskInfo>b__0(FeatureExtraTaskInfoItem item) { }
+}
+

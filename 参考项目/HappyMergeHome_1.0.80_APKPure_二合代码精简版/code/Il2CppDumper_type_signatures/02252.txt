@@ -1,0 +1,33 @@
+// Namespace: 
+public class MBDrag : MonoBehaviour, IBeginDragHandler, IEventSystemHandler, IEndDragHandler, IDragHandler // TypeDefIndex: 2252
+{
+	// Fields
+	public RectTransform target; // 0x10
+	public Action<bool> onDragEnd; // 0x14
+	public Action<bool> onEnterExitTarget; // 0x18
+	public Transform screenOrigin; // 0x1C
+	private Vector3 _originPosition; // 0x20
+	private bool _isDragging; // 0x2C
+	private bool _isInTarget; // 0x2D
+
+	// Methods
+
+	// RVA: 0x2A52208 Offset: 0x2A52208 VA: 0x2A52208 Slot: 4
+	public void OnBeginDrag(PointerEventData eventData) { }
+
+	// RVA: 0x2A52268 Offset: 0x2A52268 VA: 0x2A52268 Slot: 5
+	public void OnEndDrag(PointerEventData eventData) { }
+
+	// RVA: 0x2A52620 Offset: 0x2A52620 VA: 0x2A52620 Slot: 6
+	public void OnDrag(PointerEventData eventData) { }
+
+	// RVA: 0x2A523B4 Offset: 0x2A523B4 VA: 0x2A523B4
+	private bool isInTarget() { }
+
+	// RVA: 0x2A52528 Offset: 0x2A52528 VA: 0x2A52528
+	private void backToOriginPosition() { }
+
+	// RVA: 0x2A52804 Offset: 0x2A52804 VA: 0x2A52804
+	public void .ctor() { }
+}
+

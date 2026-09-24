@@ -1,0 +1,22 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class SpawningLane // TypeDefIndex: 1471
+{
+	// Fields
+	public List<WeightedItemSpawnable> Items; // 0x10
+	public List<FixedItemSpawnable> FixedItems; // 0x18
+	private List<IMergeItem> _spawningList; // 0x20
+	private List<KeyValuePair<IMergeItem, int>> _itemPoolWithSpawnCounts; // 0x28
+
+	// Methods
+
+	// RVA: 0x601193C Offset: 0x600D93C VA: 0x601193C
+	public List<IMergeItem> GetSpawningList() { }
+
+	// RVA: 0x6011BAC Offset: 0x600DBAC VA: 0x6011BAC
+	public List<KeyValuePair<IMergeItem, int>> GetItemPoolWithSpawnCounts() { }
+
+	// RVA: 0x6011EB4 Offset: 0x600DEB4 VA: 0x6011EB4
+	public void .ctor() { }
+}
+

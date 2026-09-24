@@ -1,0 +1,19 @@
+// Namespace: 
+[Serializable]
+public class UserEntity.BalanceTestEntityModel // TypeDefIndex: 2710
+{
+	// Fields
+	public int SavedGroup; // 0x8
+	public int IsDefault; // 0xC
+	public bool RolloutUser; // 0x10
+	public bool RolloutUserXpFixed; // 0x11
+
+	// Methods
+
+	// RVA: 0x1A63084 Offset: 0x1A63084 VA: 0x1A63084
+	public void .ctor() { }
+
+	// RVA: 0x1A5E1F8 Offset: 0x1A5E1F8 VA: 0x1A5E1F8
+	public void .ctor(bool set) { }
+}
+

@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class InteractionSystem.<>c__DisplayClass3_0 // TypeDefIndex: 25744
+{
+	// Fields
+	public TapAction tap; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A6B9A4 Offset: 0x6A679A4 VA: 0x6A6B9A4
+	public void .ctor() { }
+
+	// RVA: 0x6A6BC94 Offset: 0x6A67C94 VA: 0x6A6BC94
+	internal bool <HandleInteractByTap>b__0(ValueTuple<Entity, InteractionComponent, BoardTilePositionComponent> e) { }
+}
+

@@ -1,0 +1,41 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class MergeBoardItemsEntityFactory.<>c // TypeDefIndex: 25901
+{
+	// Fields
+	public static readonly MergeBoardItemsEntityFactory.<>c <>9; // 0x0
+	public static Func<SplitComponent> <>9__11_5; // 0x8
+	public static Func<Combination, IEnumerable<WeightedItem>> <>9__13_0; // 0x10
+	public static Func<WeightedItem, WeightedItemSpawnable> <>9__13_1; // 0x18
+	public static Func<Combination, IEnumerable<MergeItemWeakReference>> <>9__21_0; // 0x20
+	public static Func<MergeItemWeakReference, ItemMultiple> <>9__21_1; // 0x28
+	public static Func<FixedPositionComponent> <>9__26_0; // 0x30
+
+	// Methods
+
+	// RVA: 0x6A97988 Offset: 0x6A93988 VA: 0x6A97988
+	private static void .cctor() { }
+
+	// RVA: 0x6A979F0 Offset: 0x6A939F0 VA: 0x6A979F0
+	public void .ctor() { }
+
+	// RVA: 0x6A979F8 Offset: 0x6A939F8 VA: 0x6A979F8
+	internal SplitComponent <CreateBoardItemEntity>b__11_5() { }
+
+	// RVA: 0x6A97A00 Offset: 0x6A93A00 VA: 0x6A97A00
+	internal IEnumerable<WeightedItem> <CreateProducerComponent>b__13_0(Combination interactionCostItem) { }
+
+	// RVA: 0x6A97A18 Offset: 0x6A93A18 VA: 0x6A97A18
+	internal WeightedItemSpawnable <CreateProducerComponent>b__13_1(WeightedItem i) { }
+
+	// RVA: 0x6A97A94 Offset: 0x6A93A94 VA: 0x6A97A94
+	internal IEnumerable<MergeItemWeakReference> <CreateInteractionComponent>b__21_0(Combination interactionCostItem) { }
+
+	// RVA: 0x6A97AAC Offset: 0x6A93AAC VA: 0x6A97AAC
+	internal ItemMultiple <CreateInteractionComponent>b__21_1(MergeItemWeakReference i) { }
+
+	// RVA: 0x6A97B0C Offset: 0x6A93B0C VA: 0x6A97B0C
+	internal FixedPositionComponent <TryAddInteractionConstraint>b__26_0() { }
+}
+

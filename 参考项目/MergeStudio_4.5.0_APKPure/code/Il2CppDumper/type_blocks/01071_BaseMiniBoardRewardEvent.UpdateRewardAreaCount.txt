@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BaseMiniBoardRewardEvent.UpdateRewardAreaCount : IEvent // TypeDefIndex: 1071
+{
+	// Fields
+	public int TotalItemCount; // 0x0
+}
+

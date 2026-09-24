@@ -1,0 +1,41 @@
+// Namespace: Merger.Game.Views.BoardItem.ViewBehaviours
+public class LockBehaviour : BoardItemViewBehaviourBase // TypeDefIndex: 9170
+{
+	// Fields
+	private BlockerItemView _blockerItemView; // 0x48
+	private int _levelLock; // 0x50
+
+	// Properties
+	public BlockerItemView BlockerItemView { get; }
+	public bool IsShaking { get; }
+
+	// Methods
+
+	// RVA: 0x6738C84 Offset: 0x6734C84 VA: 0x6738C84
+	public BlockerItemView get_BlockerItemView() { }
+
+	// RVA: 0x6738C8C Offset: 0x6734C8C VA: 0x6738C8C
+	public bool get_IsShaking() { }
+
+	// RVA: 0x6738D74 Offset: 0x6734D74 VA: 0x6738D74 Slot: 15
+	protected override void OnInitialize() { }
+
+	// RVA: 0x6738D7C Offset: 0x6734D7C VA: 0x6738D7C Slot: 16
+	protected override void OnDispose() { }
+
+	// RVA: 0x6738DD8 Offset: 0x6734DD8 VA: 0x6738DD8 Slot: 18
+	protected override void OnUpdate() { }
+
+	// RVA: 0x6739208 Offset: 0x6735208 VA: 0x6739208
+	public bool TryGetParticleSystemByType(SpawnParticleType spawnParticleType, out GameObject particleSystemReference) { }
+
+	// RVA: 0x67392BC Offset: 0x67352BC VA: 0x67392BC
+	public void InstantiateBlockerItem(BlockerItemView blockerItemReference) { }
+
+	// RVA: 0x67393F8 Offset: 0x67353F8 VA: 0x67393F8 Slot: 19
+	public override bool TryConsumeTap() { }
+
+	// RVA: 0x6739530 Offset: 0x6735530 VA: 0x6739530
+	public void .ctor() { }
+}
+

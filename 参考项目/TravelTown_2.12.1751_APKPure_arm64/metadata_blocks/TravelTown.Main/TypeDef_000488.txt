@@ -1,0 +1,14 @@
+// Namespace: 
+[Serializable]
+private class RemoteSpawningModel.RemoteSpawningQueue // TypeDefIndex: 488
+{
+	// Fields
+	public string latestQueueNotificationId; // 0x10
+	public Queue<RemoteSpawningModel.ExpiryItem> Items; // 0x18
+
+	// Methods
+
+	// RVA: 0x6132198 Offset: 0x612E198 VA: 0x6132198
+	public void .ctor() { }
+}
+

@@ -1,0 +1,24 @@
+// Namespace: Merger.Game.Signal.Combinations
+public class JokerCheckPopupClosedSignal // TypeDefIndex: 9489
+{
+	// Fields
+	[CompilerGenerated]
+	private string <UserAnswer>k__BackingField; // 0x10
+
+	// Properties
+	public string UserAnswer { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x676E3E0 Offset: 0x676A3E0 VA: 0x676E3E0
+	public string get_UserAnswer() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E3E8 Offset: 0x676A3E8 VA: 0x676E3E8
+	public void set_UserAnswer(string value) { }
+
+	// RVA: 0x676E3F0 Offset: 0x676A3F0 VA: 0x676E3F0
+	public void .ctor(string userAnswer) { }
+}
+

@@ -1,0 +1,75 @@
+// Namespace: MergePuzzle.EnergyMultiplier
+public class EnergyMultiplierHandler // TypeDefIndex: 4783
+{
+	// Fields
+	private BoardEntity _boardEntity; // 0x8
+	private EnergyMultiplierEntity _entity; // 0xC
+	private KiteEnergyMultiplierConfig _config; // 0x10
+	private bool _isActivated; // 0x14
+	private EnergyMultiplierAssetContainer _assets; // 0x18
+	public const string LocalizationTableName = "EnergyMultiplierStrings";
+	private List<int> _availableMultipliers; // 0x1C
+	private int _tutorialStep103Counter; // 0x20
+
+	// Properties
+	public BoardEntity BoardEntity { get; }
+	public EnergyMultiplierEntity Entity { get; }
+	public KiteEnergyMultiplierConfig Config { get; }
+
+	// Methods
+
+	// RVA: 0x1DC4658 Offset: 0x1DC4658 VA: 0x1DC4658
+	public BoardEntity get_BoardEntity() { }
+
+	// RVA: 0x1DC4660 Offset: 0x1DC4660 VA: 0x1DC4660
+	public EnergyMultiplierEntity get_Entity() { }
+
+	// RVA: 0x1DC4668 Offset: 0x1DC4668 VA: 0x1DC4668
+	public KiteEnergyMultiplierConfig get_Config() { }
+
+	// RVA: 0x1DC4670 Offset: 0x1DC4670 VA: 0x1DC4670
+	public void Initialize(BoardEntity boardEntity) { }
+
+	// RVA: 0x1DC4784 Offset: 0x1DC4784 VA: 0x1DC4784
+	public void SetData(EnergyMultiplierAssetContainer assets) { }
+
+	// RVA: 0x1DC478C Offset: 0x1DC478C VA: 0x1DC478C
+	public void SetActive(bool isActivated) { }
+
+	// RVA: 0x1DC4794 Offset: 0x1DC4794 VA: 0x1DC4794
+	public bool GetSpawnerEnergySprite(ItemController itemController, out Sprite sprite) { }
+
+	// RVA: 0x1DC47D4 Offset: 0x1DC47D4 VA: 0x1DC47D4
+	public bool GetSpawnerEnergySprite(ItemController itemController, int multiplier, out Sprite sprite) { }
+
+	// RVA: 0x1DC4980 Offset: 0x1DC4980 VA: 0x1DC4980
+	public List<int> GetAvailableMultipliers(bool checkEnergyCondition) { }
+
+	// RVA: 0x1DC4994 Offset: 0x1DC4994 VA: 0x1DC4994
+	private void CalculateAvailableMultipliers(bool checkEnergyCondition) { }
+
+	// RVA: 0x1DC4DD0 Offset: 0x1DC4DD0 VA: 0x1DC4DD0
+	public int GetEnergyConsumeAmount(int itemSetID, bool isBoardEvent) { }
+
+	// RVA: 0x1DC4ECC Offset: 0x1DC4ECC VA: 0x1DC4ECC
+	public float GetCapacityReduceAmount(int itemSetID, bool isBoardEvent) { }
+
+	// RVA: 0x1DC51F8 Offset: 0x1DC51F8 VA: 0x1DC51F8
+	public bool ShouldShowTooltip(ItemController spawner, ref int maxAvailableMultiplier) { }
+
+	// RVA: 0x1DC5378 Offset: 0x1DC5378 VA: 0x1DC5378
+	public float GetCurrencyClosestLevelProbability() { }
+
+	// RVA: 0x1DC53D8 Offset: 0x1DC53D8 VA: 0x1DC53D8
+	public BoardItemData GetIncreasedItemData(BoardItemData itemData, int energyConsumeAmount, BoardData boardData, bool isBoardEvent) { }
+
+	// RVA: 0x1DC59EC Offset: 0x1DC59EC VA: 0x1DC59EC
+	public static string GetLocalizedString(string key) { }
+
+	// RVA: 0x1DC5954 Offset: 0x1DC5954 VA: 0x1DC5954
+	public static void Log(string message) { }
+
+	// RVA: 0x1DC5AE4 Offset: 0x1DC5AE4 VA: 0x1DC5AE4
+	public void .ctor() { }
+}
+

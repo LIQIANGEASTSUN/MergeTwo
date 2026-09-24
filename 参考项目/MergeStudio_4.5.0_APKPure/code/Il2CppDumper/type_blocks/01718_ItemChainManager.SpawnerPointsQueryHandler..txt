@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemChainManager.SpawnerPointsQueryHandler.<>c__DisplayClass7_0 // TypeDefIndex: 1718
+{
+	// Fields
+	public int location; // 0x8
+	public int oldIndex; // 0xC
+
+	// Methods
+
+	// RVA: 0x190F1F8 Offset: 0x190F1F8 VA: 0x190F1F8
+	public void .ctor() { }
+
+	// RVA: 0x190F2A0 Offset: 0x190F2A0 VA: 0x190F2A0
+	internal bool <RemoveQuery>b__0(ItemChainManager.SpawnerPointsQuery q) { }
+}
+

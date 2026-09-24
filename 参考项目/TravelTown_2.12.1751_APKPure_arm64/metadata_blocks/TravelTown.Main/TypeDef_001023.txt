@@ -1,0 +1,22 @@
+// Namespace: MergeEngine.ECS.Components
+[CacheAs(new[] { typeof(IWipeableComponent) })]
+public class ProducerInventoryComponent : ComponentBase<ProducerInventoryCapability>, IRemoteLoadedComponent<BoardProducerInventory>, IWipeableComponent, IComponentBase // TypeDefIndex: 1023
+{
+	// Fields
+	public bool ProducerTabEnabled; // 0x28
+	public ObservableList<Entity> ProducerSlots; // 0x30
+	public ObservableList<string> NewProducerSlotItemIds; // 0x38
+	public List<string> UnlockedProducerSlotItemIds; // 0x40
+
+	// Methods
+
+	// RVA: 0x68F8698 Offset: 0x68F4698 VA: 0x68F8698
+	public void .ctor(ProducerInventoryCapability capability, Entity entity) { }
+
+	// RVA: 0x68F8854 Offset: 0x68F4854 VA: 0x68F8854 Slot: 8
+	private void MergeEngine.ECS.Components.IWipeableComponent.Wipe() { }
+
+	// RVA: 0x68F890C Offset: 0x68F490C VA: 0x68F890C Slot: 7
+	public void LoadComponent(BoardProducerInventory componentData) { }
+}
+

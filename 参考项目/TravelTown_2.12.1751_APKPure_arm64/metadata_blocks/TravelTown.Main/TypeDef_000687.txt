@@ -1,0 +1,36 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class SystemManager.<>c__15<TSystem> // TypeDefIndex: 687
+{
+	// Fields
+	public static readonly SystemManager.<>c__15<TSystem> <>9; // 0x0
+	public static Func<Type, bool> <>9__15_0; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	private static void .cctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F28C14 Offset: 0x3F24C14 VA: 0x3F28C14
+	|-SystemManager.<>c__15<object>..cctor
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F28CD0 Offset: 0x3F24CD0 VA: 0x3F28CD0
+	|-SystemManager.<>c__15<object>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal bool <GetSystem>b__15_0(Type systemType) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F28CD8 Offset: 0x3F24CD8 VA: 0x3F28CD8
+	|-SystemManager.<>c__15<object>.<GetSystem>b__15_0
+	*/
+}
+

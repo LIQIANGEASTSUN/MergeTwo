@@ -1,0 +1,38 @@
+// Namespace: MergeEngine.Configuration
+public interface IItem : IUniqueStringKeyAsset // TypeDefIndex: 1177
+{
+	// Properties
+	public abstract string ItemName { get; }
+	public abstract string BundleAssetUrl { get; }
+	public abstract AssetReferenceT<Sprite> Sprite { get; }
+	public abstract BoardQueueOrderCapability BoardQueueOrder { get; }
+	public abstract IItemInfoData ItemInfoData { get; set; }
+	public abstract bool AutoOpenTooltip { get; set; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract string get_ItemName();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract string get_BundleAssetUrl();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract AssetReferenceT<Sprite> get_Sprite();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract BoardQueueOrderCapability get_BoardQueueOrder();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract IItemInfoData get_ItemInfoData();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract void set_ItemInfoData(IItemInfoData value);
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract bool get_AutoOpenTooltip();
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract void set_AutoOpenTooltip(bool value);
+}
+

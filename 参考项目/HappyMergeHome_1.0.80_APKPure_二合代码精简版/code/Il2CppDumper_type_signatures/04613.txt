@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class SummerWatermelonModel.<>c // TypeDefIndex: 4613
+{
+	// Fields
+	public static readonly SummerWatermelonModel.<>c <>9; // 0x0
+	public static Action <>9__168_0; // 0x4
+	public static Predicate<SummerWatermelonThirtyFourPackageConfig> <>9__171_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x323D4DC Offset: 0x323D4DC VA: 0x323D4DC
+	private static void .cctor() { }
+
+	// RVA: 0x323D550 Offset: 0x323D550 VA: 0x323D550
+	public void .ctor() { }
+
+	// RVA: 0x323D558 Offset: 0x323D558 VA: 0x323D558
+	internal void <AddNewGiftsRewards>b__168_0() { }
+
+	// RVA: 0x323D6F4 Offset: 0x323D6F4 VA: 0x323D6F4
+	internal bool <GiftBagSendOneGetReward>b__171_0(SummerWatermelonThirtyFourPackageConfig x) { }
+}
+

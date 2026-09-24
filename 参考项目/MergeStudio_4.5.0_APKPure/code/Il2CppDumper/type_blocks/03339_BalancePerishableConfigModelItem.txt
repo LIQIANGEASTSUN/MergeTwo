@@ -1,0 +1,24 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class BalancePerishableConfigModelItem // TypeDefIndex: 3339
+{
+	// Fields
+	public string SetIDLevel; // 0x8
+	public bool UsesEnergy; // 0xC
+	public int Capacity; // 0x10
+	public string PerishedSpawn; // 0x14
+	public int ChargeSetID; // 0x18
+	public int ChargedCapacity; // 0x1C
+	public bool ShowItemPercentages; // 0x20
+	public bool NonProbabilistic; // 0x21
+	public bool HasProgressText; // 0x22
+	public bool UseIndexedSpawn; // 0x23
+	public List<BalanceSpawnItemModelItem> SpawnedItems; // 0x24
+	public List<BalanceSpawnIndexedItemGroup> IndexedSpawnedItems; // 0x28
+
+	// Methods
+
+	// RVA: 0x1BAEBB8 Offset: 0x1BAEBB8 VA: 0x1BAEBB8
+	public void .ctor() { }
+}
+

@@ -1,0 +1,90 @@
+Type: UnityBoardController+<>c__DisplayClass376_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03278298 LDP X22, X21, [X31 + 0x70]
+	0x0327829C LDR D8, [X31 + 0x30]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <ProcessAddedAct>b__0(System.ValueTuple`2<GameLogic.Player.Board.Coordinate, GameLogic.Merge.MergeBoardAct+ItemActSource> itemAction)
+
+Disassembly:
+	0x032782A0 LDP X24, X23, [X31 + 0x60]
+	0x032782A4 LDP X26, X25, [X31 + 0x50]
+	0x032782A8 LDP X28, X27, [X31 + 0x40]
+	0x032782AC ADD X31, X31, 0x90
+	0x032782B0 RET
+	0x032782B4 BL 0x239BB90
+	0x032782B8 BL 0x239BB90
+	0x032782BC B 0x32782EC
+	0x032782C0 B 0x32782EC
+	0x032782C4 B 0x32782EC
+	0x032782C8 B 0x32782EC
+	0x032782CC B 0x32782EC
+	0x032782D0 B 0x32782EC
+	0x032782D4 B 0x32782EC
+	0x032782D8 B 0x32782EC
+	0x032782DC B 0x32782EC
+	0x032782E0 B 0x32782EC
+	0x032782E4 B 0x32782EC
+	0x032782E8 B 0x32782EC
+	0x032782EC MOV X20, X0
+	0x032782F0 CMP W1, 0x1
+	0x032782F4 B.NE 0x3278384
+	0x032782F8 MOV X0, X20
+	0x032782FC BL 0x53E9080
+	0x03278300 MOV X20, X0
+	0x03278304 ADRP X0, 0x2455000
+	0x03278308 LDR X0, [X0 + 0x388]
+	0x0327830C BL 0x239B8F8
+	0x03278310 LDR X8, [X20]
+	0x03278314 LDR X1, [X8]
+	0x03278318 BL 0x239BF98
+	0x0327831C TBZ X0, 0x0, 0x327835C
+	0x03278320 LDRSW X21, [X31 + 0x8]
+
+ISIL:
+	001 Subtract X31, X31, 48
+	002 Move [X31+16], X30
+	003 Move [X31+24], X21
+	004 Move [X31+32], X20
+	005 Move [X31+40], X19
+	006 Move [X31], X1
+	007 Move W8, [0x2AB41E3]
+	008 Move X20, [0x2471610]
+	009 Move X19, X0
+	010 Move [X31+8], W2
+	011 Move TEMP, X8
+	012 And TEMP, TEMP, 1
+	013 Compare TEMP, 1
+	014 JumpIfEqual {19}
+	015 Move X0, [0x2471610]
+	016 Call 0x239F8E4
+	017 Move W8, 1
+	018 Move [X21+483], W8
+	019 Move X0, [X20]
+	020 NotImplemented "Instruction LDUR not yet implemented."
+	021 Move W8, [X0+228]
+	022 Compare W8, 0
+	023 JumpIfNotEqual {25}
+	024 Call 0x239FA64
+	025 Add X0, X31, 0
+	026 Move X1, X19
+	027 Move X2, X31
+	028 Call Coordinate.Equals, X0, X1
+	029 Move W8, [X31+8]
+	030 Move X20, [X31+32]
+	031 Move X19, [X31+40]
+	032 Move X30, [X31+16]
+	033 Move X21, [X31+24]
+	034 NotImplemented "Instruction CMP not yet implemented."
+	035 NotImplemented "Instruction CSET not yet implemented."
+	036 And W0, W0, W8
+	037 Add X31, X31, 48
+	038 Return X0
+

@@ -1,0 +1,15 @@
+// Namespace: Merger.MergeBoardQueue.Utils
+public class QueuedItemsComparer : IEqualityComparer<QueuedItem> // TypeDefIndex: 33290
+{
+	// Methods
+
+	// RVA: 0x6A56BB8 Offset: 0x6A52BB8 VA: 0x6A56BB8 Slot: 4
+	public bool Equals(QueuedItem leftQueuedItem, QueuedItem rightQueuedItem) { }
+
+	// RVA: 0x6A56BDC Offset: 0x6A52BDC VA: 0x6A56BDC Slot: 5
+	public int GetHashCode(QueuedItem obj) { }
+
+	// RVA: 0x6A56C00 Offset: 0x6A52C00 VA: 0x6A56C00
+	public void .ctor() { }
+}
+

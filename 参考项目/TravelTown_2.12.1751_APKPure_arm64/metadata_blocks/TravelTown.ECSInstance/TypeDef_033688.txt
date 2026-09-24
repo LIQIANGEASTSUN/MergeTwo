@@ -1,0 +1,9 @@
+// Namespace: ContextualizedECS.Systems
+public interface ISystem // TypeDefIndex: 33688
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void Tick(TickContext context);
+}
+

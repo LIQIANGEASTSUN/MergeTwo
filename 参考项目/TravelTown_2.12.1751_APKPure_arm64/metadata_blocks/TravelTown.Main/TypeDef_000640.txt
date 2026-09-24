@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class CombiningSystem.<>c__DisplayClass27_0 // TypeDefIndex: 640
+{
+	// Fields
+	public InteractionComponent interactionComponent; // 0x10
+	public int callbackID; // 0x18
+
+	// Methods
+
+	// RVA: 0x627E1B0 Offset: 0x627A1B0 VA: 0x627E1B0
+	public void .ctor() { }
+
+	// RVA: 0x627E8F8 Offset: 0x627A8F8 VA: 0x627E8F8
+	internal void <OnItemSpawned>b__0() { }
+}
+

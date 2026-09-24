@@ -1,0 +1,89 @@
+// Namespace: MergeEngine.ECS.Systems
+public class PersistenceSystem : SystemBase // TypeDefIndex: 673
+{
+	// Fields
+	[Inject]
+	private IPersistentStorageService _persistentStorageService; // 0x40
+	[Inject]
+	private IBoosterModel _boosterModel; // 0x48
+	[Inject]
+	private IJsonService _jsonService; // 0x50
+	[Inject]
+	private IActionsModel _actionsModel; // 0x58
+	private Dictionary<string, Dictionary<PersistentComponent, Dictionary<string, string>>> _serializationCache; // 0x60
+	private bool _createdEntities; // 0x68
+	private Dictionary<string, Action<Dictionary<string, string>>> _storeKeyToDeserializeMethod; // 0x70
+	private HashSet<string> _dirtyKeys; // 0x78
+	private HashSet<string> _keysToSaveWithPrefix; // 0x80
+	private string _storageKeyPrefix; // 0x88
+	[CompilerGenerated]
+	private Action Reloaded; // 0x90
+
+	// Properties
+	public bool HasData { get; }
+
+	// Methods
+
+	// RVA: 0x628B80C Offset: 0x628780C VA: 0x628B80C
+	public bool get_HasData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x628B8CC Offset: 0x62878CC VA: 0x628B8CC
+	public void add_Reloaded(Action value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x628B968 Offset: 0x6287968 VA: 0x628B968
+	public void remove_Reloaded(Action value) { }
+
+	// RVA: 0x628BA04 Offset: 0x6287A04 VA: 0x628BA04 Slot: 6
+	protected override void InitializeSystem() { }
+
+	// RVA: 0x628C1B0 Offset: 0x62881B0 VA: 0x628C1B0 Slot: 11
+	protected override void EntityCreated(Entity entity) { }
+
+	// RVA: 0x628BD00 Offset: 0x6287D00 VA: 0x628BD00
+	private void TryLoad() { }
+
+	// RVA: 0x628C210 Offset: 0x6288210 VA: 0x628C210
+	private void LoadKeys(List<string> keys) { }
+
+	// RVA: 0x628C810 Offset: 0x6288810 VA: 0x628C810
+	public string GetPersistentKey(string serializationKey) { }
+
+	// RVA: 0x628C8B4 Offset: 0x62888B4 VA: 0x628C8B4
+	private void DeserializeEntity(Entity entity, Dictionary<string, string> serializedEntity) { }
+
+	// RVA: 0x628C9C4 Offset: 0x62889C4 VA: 0x628C9C4
+	private void DeserializeEntity(string persistentStoreKey, Dictionary<string, string> serializedEntity) { }
+
+	// RVA: 0x628CB0C Offset: 0x6288B0C VA: 0x628CB0C Slot: 12
+	protected override void EntityRemoved(Entity entity) { }
+
+	// RVA: 0x628CD34 Offset: 0x6288D34 VA: 0x628CD34
+	private void SerializeComponent(PersistentComponent component) { }
+
+	// RVA: 0x628CFE0 Offset: 0x6288FE0 VA: 0x628CFE0
+	private void Save() { }
+
+	// RVA: 0x628BEC4 Offset: 0x6287EC4 VA: 0x628BEC4
+	private void CreateSerializationCache() { }
+
+	// RVA: 0x628D4D0 Offset: 0x62894D0 VA: 0x628D4D0
+	public void SerializeAndSave() { }
+
+	// RVA: 0x628D920 Offset: 0x6289920 VA: 0x628D920
+	public void SetStorageKeyPrefix(string storageKeyPrefix) { }
+
+	// RVA: 0x628D98C Offset: 0x628998C VA: 0x628D98C
+	public void ClearStorageKeyPrefix() { }
+
+	// RVA: 0x628D9CC Offset: 0x62899CC VA: 0x628D9CC
+	public void DeleteDataWithStorageKeyPrefix(string storageKeyPrefix) { }
+
+	// RVA: 0x628D95C Offset: 0x628995C VA: 0x628D95C
+	private void ReloadKeysUsingSerializationPrefix() { }
+
+	// RVA: 0x628DCE4 Offset: 0x6289CE4 VA: 0x628DCE4
+	public void .ctor() { }
+}
+

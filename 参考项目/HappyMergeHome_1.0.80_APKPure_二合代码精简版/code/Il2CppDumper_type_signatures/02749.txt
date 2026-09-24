@@ -1,0 +1,29 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class MergeBoardItem.<>c // TypeDefIndex: 2749
+{
+	// Fields
+	public static readonly MergeBoardItem.<>c <>9; // 0x0
+	public static TweenCallback <>9__101_0; // 0x4
+	public static Action <>9__139_0; // 0x8
+	public static Action <>9__141_1; // 0xC
+
+	// Methods
+
+	// RVA: 0x2C36F98 Offset: 0x2C36F98 VA: 0x2C36F98
+	private static void .cctor() { }
+
+	// RVA: 0x2C3700C Offset: 0x2C3700C VA: 0x2C3700C
+	public void .ctor() { }
+
+	// RVA: 0x2C37014 Offset: 0x2C37014 VA: 0x2C37014
+	internal void <PlayTweenAnim>b__101_0() { }
+
+	// RVA: 0x2C37018 Offset: 0x2C37018 VA: 0x2C37018
+	internal void <AddCurrency>b__139_0() { }
+
+	// RVA: 0x2C37134 Offset: 0x2C37134 VA: 0x2C37134
+	internal void <AddDogCookies>b__141_1() { }
+}
+

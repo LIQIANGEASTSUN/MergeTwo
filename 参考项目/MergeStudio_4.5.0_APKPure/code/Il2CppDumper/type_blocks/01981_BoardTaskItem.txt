@@ -1,0 +1,120 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class BoardTaskItem // TypeDefIndex: 1981
+{
+	// Fields
+	[JsonProperty]
+	public int TaskNo; // 0x8
+	[JsonProperty]
+	public bool PreCondition; // 0xC
+	[JsonProperty]
+	public int LevelCondition; // 0x10
+	[JsonProperty]
+	private List<BoardTaskGoal> Goals; // 0x14
+	[JsonProperty]
+	public BoardTaskType BoardTaskType; // 0x18
+	[JsonProperty]
+	public BoardTaskDifficultyType Difficulty; // 0x1C
+	[JsonProperty]
+	public int SeasonPoint; // 0x20
+	[JsonProperty]
+	public bool KeepOldItem; // 0x24
+	[JsonProperty]
+	public bool IsStaticTask; // 0x25
+	[JsonProperty]
+	public int IntroBatchLevel; // 0x28
+	[JsonProperty]
+	public bool IsSweeperTask; // 0x2C
+	[JsonProperty]
+	public bool IsOrphanTask; // 0x2D
+	public int SpecialTaskID; // 0x30
+	public int SourceTaskNo; // 0x34
+	public int XP; // 0x38
+	public int CoinReward; // 0x3C
+	public int GemReward; // 0x40
+	public long Interval; // 0x48
+	[JsonProperty]
+	public List<RegularReward> ItemRewards; // 0x50
+	[CanBeNull]
+	public FeatureExtraTaskInfo FeatureExtraTaskInfo; // 0x54
+	public List<GameItemReward> ExtraItems; // 0x58
+	[JsonProperty]
+	public float GemValue; // 0x5C
+	[JsonProperty]
+	public string TaskSource; // 0x60
+	[JsonProperty]
+	public string TaskTrigger; // 0x64
+	[JsonProperty]
+	public string TaskId; // 0x68
+	[JsonProperty]
+	public string GemIndices; // 0x6C
+	[JsonProperty]
+	public int CreatedAtLevel; // 0x70
+	[JsonProperty]
+	public int GeneratedAtTaskTier; // 0x74
+	[JsonProperty]
+	public int GeneratedAtXpTier; // 0x78
+	[JsonProperty]
+	public int GeneratedTaskTierVersion; // 0x7C
+	[JsonProperty]
+	public int GeneratedXpTierVersion; // 0x80
+	[JsonProperty]
+	public string GeneratedConfigKey; // 0x84
+	public static readonly int MinTaskNoForDynamicTask; // 0x0
+	public static readonly int MaxTaskNoForDynamicTask; // 0x4
+	public const int TaskNoForSpecialTask = 1;
+
+	// Methods
+
+	// RVA: 0x1948CC8 Offset: 0x1948CC8 VA: 0x1948CC8
+	public void .ctor() { }
+
+	// RVA: 0x1948CD8 Offset: 0x1948CD8 VA: 0x1948CD8
+	public void .ctor(int taskNo, bool preCondition, int levelCondition, List<BoardTaskGoal> goals, int seasonPoint, int xp, int coinReward) { }
+
+	// RVA: 0x1942570 Offset: 0x1942570 VA: 0x1942570
+	public void .ctor(SpecialTaskData specialTaskData) { }
+
+	// RVA: 0x1948D34 Offset: 0x1948D34 VA: 0x1948D34
+	public void .ctor(TimeLimitedTaskData timeLimitedTaskData, int xp, List<BoardTaskGoal> boardTaskGoals, int coinReward, int gemReward, int seasonPoint) { }
+
+	// RVA: 0x19424EC Offset: 0x19424EC VA: 0x19424EC
+	public void .ctor(int taskNo, BoardTaskItem sourceBoardTask, int loopLevelIncrease = 0) { }
+
+	// RVA: 0x1948DB0 Offset: 0x1948DB0 VA: 0x1948DB0
+	public static BoardTaskItem GetDynamicBoardTaskItem(List<BoardTaskGoal> goals, int coinReward, long interval) { }
+
+	// RVA: 0x19490D4 Offset: 0x19490D4 VA: 0x19490D4
+	public void SetGoals(List<BoardTaskGoal> goals) { }
+
+	// RVA: 0x1946D9C Offset: 0x1946D9C VA: 0x1946D9C
+	public List<BoardTaskGoal> GetGoals() { }
+
+	// RVA: 0x1949108 Offset: 0x1949108 VA: 0x1949108
+	public string GetFirebaseString() { }
+
+	// RVA: 0x194934C Offset: 0x194934C VA: 0x194934C
+	public List<BoardTaskGoal> GetGoalsRaw() { }
+
+	// RVA: 0x1947D04 Offset: 0x1947D04 VA: 0x1947D04
+	public bool ReadyToDone(BoardEntity boardEntity) { }
+
+	// RVA: 0x194935C Offset: 0x194935C VA: 0x194935C
+	public List<int[]> FindMissingItemForReadyToDone(BoardEntity boardEntity) { }
+
+	// RVA: 0x19498D8 Offset: 0x19498D8 VA: 0x19498D8
+	public bool ReadyToDone(EventEntity eventEntity) { }
+
+	// RVA: 0x1949BBC Offset: 0x1949BBC VA: 0x1949BBC
+	public bool HasEventTaskInfo() { }
+
+	// RVA: 0x1949C24 Offset: 0x1949C24 VA: 0x1949C24
+	public bool HasEventTaskInfo(int id) { }
+
+	// RVA: 0x1949D38 Offset: 0x1949D38 VA: 0x1949D38
+	public int GetSeasonPoint() { }
+
+	// RVA: 0x1949E38 Offset: 0x1949E38 VA: 0x1949E38
+	private static void .cctor() { }
+}
+

@@ -1,0 +1,35 @@
+// Namespace: MergeEngine.Signal.Items
+public sealed class ItemAppearedSignal // TypeDefIndex: 221
+{
+	// Fields
+	[CompilerGenerated]
+	private IMergeItem <MergeItem>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private Entity <Entity>k__BackingField; // 0x18
+
+	// Properties
+	public IMergeItem MergeItem { get; set; }
+	public Entity Entity { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3708 Offset: 0x5FEF708 VA: 0x5FF3708
+	public IMergeItem get_MergeItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3710 Offset: 0x5FEF710 VA: 0x5FF3710
+	public void set_MergeItem(IMergeItem value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3718 Offset: 0x5FEF718 VA: 0x5FF3718
+	public Entity get_Entity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3720 Offset: 0x5FEF720 VA: 0x5FF3720
+	public void set_Entity(Entity value) { }
+
+	// RVA: 0x5FF3728 Offset: 0x5FEF728 VA: 0x5FF3728
+	public void .ctor(IMergeItem mergeItem, Entity entity) { }
+}
+

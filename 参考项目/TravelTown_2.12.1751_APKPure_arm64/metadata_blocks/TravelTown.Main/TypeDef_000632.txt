@@ -1,0 +1,18 @@
+// Namespace: MergeEngine.ECS.Util
+public static class ToolProgressConverterUtil // TypeDefIndex: 632
+{
+	// Methods
+
+	// RVA: 0x6278A30 Offset: 0x6274A30 VA: 0x6278A30
+	public static float GetProgressFromItem(IMergeItem item, IMergingConfigurationModel mergingConfig) { }
+
+	// RVA: 0x6278C74 Offset: 0x6274C74 VA: 0x6278C74
+	public static IMergeItem GetItemFromProgress(PlayerResourceEnum toolType, float progressValue, IResourcesConfigurationModel resourcesConfig) { }
+
+	// RVA: 0x6279000 Offset: 0x6275000 VA: 0x6279000
+	public static int GetItemLevelSumPerChain(PlayerResourceEnum toolType, float progressValue, IResourcesConfigurationModel resourcesConfig, Dictionary<int, int> powLookup) { }
+
+	// RVA: 0x6279270 Offset: 0x6275270 VA: 0x6279270
+	public static int GetItemLevelSumPerChain(float progressValue, IMergeGraphItem toolGraph) { }
+}
+

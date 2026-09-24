@@ -1,0 +1,16 @@
+Type: GameLogic.Player.Items.Fishing.IWeightStarRewardData
+
+Method: Metaplay.Core.Math.F32 get_Weight()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Rewards.PlayerReward get_Reward()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

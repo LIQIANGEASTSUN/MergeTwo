@@ -1,0 +1,16 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class PickBoxLevelBucket // TypeDefIndex: 1633
+{
+	// Fields
+	public int MaxLevel; // 0x8
+	public List<SpawnedItem> SpawnedItems1; // 0xC
+	public List<SpawnedItem> SpawnedItems2; // 0x10
+	public List<SpawnedItem> SpawnedItems3; // 0x14
+
+	// Methods
+
+	// RVA: 0x18BFB94 Offset: 0x18BFB94 VA: 0x18BFB94
+	public void .ctor() { }
+}
+

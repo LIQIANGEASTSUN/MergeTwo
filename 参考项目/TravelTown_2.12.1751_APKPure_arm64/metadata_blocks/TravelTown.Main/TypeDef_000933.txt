@@ -1,0 +1,56 @@
+// Namespace: MergeEngine.ECS.Systems.Board
+public class StackingSystem : SystemBase, IItemsCombiner // TypeDefIndex: 933
+{
+	// Fields
+	public const int MaxStackSize = 999;
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x40
+	[Inject]
+	private INotificationDataFactory _notificationDataFactory; // 0x48
+	[Inject]
+	private IPlayerModel _playerModel; // 0x50
+	[Inject]
+	private IBoardConfigService _boardConfigService; // 0x58
+	[InjectSystem]
+	private BoardSystem _boardSystem; // 0x60
+	[InjectSystem]
+	private OperationTrackingSystem _operationTrackingSystem; // 0x68
+	[Inject]
+	private ILiveOpsEventModel _liveOpsEventModel; // 0x70
+
+	// Properties
+	public bool IsStackingEnabled { get; }
+
+	// Methods
+
+	// RVA: 0x6785344 Offset: 0x6781344 VA: 0x6785344
+	public bool get_IsStackingEnabled() { }
+
+	// RVA: 0x6786F78 Offset: 0x6782F78 VA: 0x6786F78
+	public static bool CanCombineStackSizes(int firstStackSize, int secondStackSize) { }
+
+	// RVA: 0x6786DDC Offset: 0x6782DDC VA: 0x6786DDC
+	private bool GetStackingState() { }
+
+	// RVA: 0x6786F88 Offset: 0x6782F88 VA: 0x6786F88 Slot: 13
+	public bool CanCombineItems(PositionComponent firstItem, PositionComponent secondItem) { }
+
+	// RVA: 0x6787304 Offset: 0x6783304 VA: 0x6787304 Slot: 14
+	public bool TryCombineItems(PositionComponent firstItem, PositionComponent secondItem, IItemsCombiner.OnItemsCombined callback) { }
+
+	// RVA: 0x67878B8 Offset: 0x67838B8 VA: 0x67878B8 Slot: 15
+	public void ResetCombine() { }
+
+	// RVA: 0x67873A0 Offset: 0x67833A0 VA: 0x67873A0
+	private void StackItems(PositionComponent firstItem, PositionComponent secondItem, BoardItemPosition targetPosition) { }
+
+	// RVA: 0x6787240 Offset: 0x6783240 VA: 0x6787240
+	private bool IsLocked(PositionComponent item) { }
+
+	// RVA: 0x67872A8 Offset: 0x67832A8 VA: 0x67872A8
+	private bool IsStacking(PositionComponent item) { }
+
+	// RVA: 0x67878BC Offset: 0x67838BC VA: 0x67878BC
+	public void .ctor() { }
+}
+

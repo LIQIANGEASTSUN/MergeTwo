@@ -1,0 +1,14 @@
+// Namespace: MergeEngine.Model.RemoteSpawning
+public class PushedRngItem // TypeDefIndex: 483
+{
+	// Fields
+	public string ItemId; // 0x10
+	public string BoardEventId; // 0x18
+	public string EventId; // 0x20
+
+	// Methods
+
+	// RVA: 0x612EA98 Offset: 0x612AA98 VA: 0x612EA98
+	public void .ctor() { }
+}
+

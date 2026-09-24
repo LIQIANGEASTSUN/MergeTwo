@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class PizzaTowerModel.<>c__DisplayClass54_1 // TypeDefIndex: 851
+{
+	// Fields
+	public int ind; // 0x8
+	public PizzaTowerModel.<>c__DisplayClass54_0 CS$<>8__locals1; // 0xC
+
+	// Methods
+
+	// RVA: 0x1B1023C Offset: 0x1B1023C VA: 0x1B1023C
+	public void .ctor() { }
+
+	// RVA: 0x1B119F0 Offset: 0x1B119F0 VA: 0x1B119F0
+	internal void <FlyScore>b__0() { }
+}
+

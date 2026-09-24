@@ -1,0 +1,16 @@
+// Namespace: Merger.MergeBoard.Systems
+public class ItemMovementLockSystem : ISystem // TypeDefIndex: 25753
+{
+	// Fields
+	[Inject]
+	private List<IItemCombinerValidator> _combinationValidators; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A6D98C Offset: 0x6A6998C VA: 0x6A6D98C Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A6DD7C Offset: 0x6A69D7C VA: 0x6A6DD7C
+	public void .ctor() { }
+}
+

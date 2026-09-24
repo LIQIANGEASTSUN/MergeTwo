@@ -1,0 +1,30 @@
+// Namespace: Merger.MergeBoardSellItemCapability.Models
+public class MergeBoardUndoSellItemModel : ModelBase, IMergeBoardUndoSellItemModel // TypeDefIndex: 33596
+{
+	// Fields
+	[CompilerGenerated]
+	private Entity <ItemAvailableToUndo>k__BackingField; // 0x28
+
+	// Properties
+	public Entity ItemAvailableToUndo { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A60430 Offset: 0x6A5C430 VA: 0x6A60430 Slot: 19
+	public Entity get_ItemAvailableToUndo() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A60438 Offset: 0x6A5C438 VA: 0x6A60438
+	private void set_ItemAvailableToUndo(Entity value) { }
+
+	// RVA: 0x6A60440 Offset: 0x6A5C440 VA: 0x6A60440 Slot: 20
+	public void SetItemAvailableToUndo(Entity entity) { }
+
+	// RVA: 0x6A60448 Offset: 0x6A5C448 VA: 0x6A60448 Slot: 21
+	public void ClearItemAvailableToUndo() { }
+
+	// RVA: 0x6A60454 Offset: 0x6A5C454 VA: 0x6A60454
+	public void .ctor() { }
+}
+

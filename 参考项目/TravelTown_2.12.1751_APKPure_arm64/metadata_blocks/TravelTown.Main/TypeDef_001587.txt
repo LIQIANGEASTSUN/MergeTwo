@@ -1,0 +1,28 @@
+// Namespace: GameCore.Configuration.Definitions
+public class MultipleConfigurationStringKeyLookup<TAsset> : MultipleConfigurationLookup<TAsset, string> // TypeDefIndex: 1587
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 4
+	protected override string GetKey(TAsset item) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4221388 Offset: 0x421D388 VA: 0x4221388
+	|-MultipleConfigurationStringKeyLookup<object>.GetKey
+	|
+	|-RVA: 0x422142C Offset: 0x421D42C VA: 0x422142C
+	|-MultipleConfigurationStringKeyLookup<__Il2CppFullySharedGenericType>.GetKey
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4221424 Offset: 0x421D424 VA: 0x4221424
+	|-MultipleConfigurationStringKeyLookup<object>..ctor
+	|
+	|-RVA: 0x422151C Offset: 0x421D51C VA: 0x422151C
+	|-MultipleConfigurationStringKeyLookup<__Il2CppFullySharedGenericType>..ctor
+	*/
+}
+

@@ -1,0 +1,9 @@
+// Namespace: Merger.MergeBoard.Controller
+public interface IBoardControllerDecorator // TypeDefIndex: 25985
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void DecorateSystems(SystemsBuilder systemManager);
+}
+

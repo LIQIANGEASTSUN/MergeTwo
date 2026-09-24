@@ -1,0 +1,10 @@
+// Namespace: 
+public struct EntityUpdateEvent.RewardAnimationStatusChange : IEvent // TypeDefIndex: 2671
+{
+	// Fields
+	public bool IsStart; // 0x0
+	public bool IsLevelUp; // 0x1
+	public bool XPUpdate; // 0x2
+	public bool IsUseSecondFromLast; // 0x3
+}
+

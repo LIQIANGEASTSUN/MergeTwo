@@ -1,0 +1,155 @@
+// Namespace: Merger.Boosters.Models
+public class BoosterModel : MultipleConfigurationModelBase<IBoosterItem, string, MultipleConfigurationStringKeyLookup<IBoosterItem>>, IBoosterModel, IRewardSpriteReferenceProvider // TypeDefIndex: 7779
+{
+	// Fields
+	[Inject]
+	private IRemoteContentService _remoteContentService; // 0x30
+	[Inject]
+	private ITooltipsDynamicContentAssetsModel _tooltipsDynamicContentAssetsModel; // 0x38
+	[Inject]
+	private ITooltipKeyResolver[] _tooltipKeyResolvers; // 0x40
+	[Inject]
+	private IUserProfileService _userProfileService; // 0x48
+	[Inject]
+	private INavigationModel _navigationModel; // 0x50
+	[CompilerGenerated]
+	private List<RemoteBoosterData> <RemoteActiveBoosters>k__BackingField; // 0x58
+	[CompilerGenerated]
+	private readonly Dictionary<string, BoosterType> <PendingQueueActivationBoosters>k__BackingField; // 0x60
+	[CompilerGenerated]
+	private readonly HashSet<string> <DeactivatedBoosters>k__BackingField; // 0x68
+	[CompilerGenerated]
+	private List<RemoteBoosterData> <RemoteActiveBoostersCached>k__BackingField; // 0x70
+	[CompilerGenerated]
+	private readonly HashSet<string> <LockedBoosters>k__BackingField; // 0x78
+	[CompilerGenerated]
+	private bool <ShouldForceProcessAllBoosters>k__BackingField; // 0x80
+	[CompilerGenerated]
+	private readonly List<BoosterSendToActivationData> <BoosterSendToActivationDatas>k__BackingField; // 0x88
+	[CompilerGenerated]
+	private bool <IsSpecialChainCollectSequence>k__BackingField; // 0x90
+	[CompilerGenerated]
+	private readonly List<BoosterActivatedSignal> <PendingActivationSignal>k__BackingField; // 0x98
+
+	// Properties
+	public ReadOnlyCollection<IBoosterItem> Boosters { get; }
+	public List<RemoteBoosterData> RemoteActiveBoosters { get; set; }
+	public Dictionary<string, BoosterType> PendingQueueActivationBoosters { get; }
+	public HashSet<string> DeactivatedBoosters { get; }
+	public string[] SpriteReferenceRewardTypes { get; }
+	public List<RemoteBoosterData> RemoteActiveBoostersCached { get; set; }
+	public HashSet<string> LockedBoosters { get; }
+	public bool ShouldForceProcessAllBoosters { get; set; }
+	public List<BoosterSendToActivationData> BoosterSendToActivationDatas { get; }
+	public bool IsSpecialChainCollectSequence { get; set; }
+	public List<BoosterActivatedSignal> PendingActivationSignal { get; }
+	public bool HasBlockToProcess { get; }
+
+	// Methods
+
+	// RVA: 0x65C5AFC Offset: 0x65C1AFC VA: 0x65C5AFC Slot: 26
+	public ReadOnlyCollection<IBoosterItem> get_Boosters() { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C5B44 Offset: 0x65C1B44 VA: 0x65C5B44 Slot: 27
+	public List<RemoteBoosterData> get_RemoteActiveBoosters() { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C5B4C Offset: 0x65C1B4C VA: 0x65C5B4C Slot: 28
+	public void set_RemoteActiveBoosters(List<RemoteBoosterData> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C5B54 Offset: 0x65C1B54 VA: 0x65C5B54 Slot: 29
+	public Dictionary<string, BoosterType> get_PendingQueueActivationBoosters() { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C5B5C Offset: 0x65C1B5C VA: 0x65C5B5C Slot: 30
+	public HashSet<string> get_DeactivatedBoosters() { }
+
+	// RVA: 0x65C5B64 Offset: 0x65C1B64 VA: 0x65C5B64 Slot: 46
+	public string[] get_SpriteReferenceRewardTypes() { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C5BEC Offset: 0x65C1BEC VA: 0x65C5BEC Slot: 32
+	public List<RemoteBoosterData> get_RemoteActiveBoostersCached() { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C5BF4 Offset: 0x65C1BF4 VA: 0x65C5BF4 Slot: 33
+	public void set_RemoteActiveBoostersCached(List<RemoteBoosterData> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C5BFC Offset: 0x65C1BFC VA: 0x65C5BFC Slot: 31
+	public HashSet<string> get_LockedBoosters() { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C5C04 Offset: 0x65C1C04 VA: 0x65C5C04 Slot: 39
+	public bool get_ShouldForceProcessAllBoosters() { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C5C0C Offset: 0x65C1C0C VA: 0x65C5C0C Slot: 40
+	public void set_ShouldForceProcessAllBoosters(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C5C18 Offset: 0x65C1C18 VA: 0x65C5C18 Slot: 41
+	public List<BoosterSendToActivationData> get_BoosterSendToActivationDatas() { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C5C20 Offset: 0x65C1C20 VA: 0x65C5C20 Slot: 42
+	public bool get_IsSpecialChainCollectSequence() { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C5C28 Offset: 0x65C1C28 VA: 0x65C5C28 Slot: 43
+	public void set_IsSpecialChainCollectSequence(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C5C34 Offset: 0x65C1C34 VA: 0x65C5C34 Slot: 44
+	public List<BoosterActivatedSignal> get_PendingActivationSignal() { }
+
+	// RVA: 0x65C5C3C Offset: 0x65C1C3C VA: 0x65C5C3C Slot: 23
+	public IBoosterItem GetBooster(string uniqueId) { }
+
+	// RVA: 0x65C5CE0 Offset: 0x65C1CE0 VA: 0x65C5CE0 Slot: 24
+	public bool HasBoosterById(string itemId) { }
+
+	// RVA: 0x65C5D5C Offset: 0x65C1D5C VA: 0x65C5D5C Slot: 45
+	public bool get_HasBlockToProcess() { }
+
+	// RVA: 0x65C5E20 Offset: 0x65C1E20 VA: 0x65C5E20 Slot: 25
+	public IBoosterItem GetBoosterByMergeItemId(string itemId) { }
+
+	// RVA: 0x65C5F48 Offset: 0x65C1F48 VA: 0x65C5F48 Slot: 47
+	public AssetReferenceT<Sprite> GetRewardSpriteReference(string rewardType, string uniqueId) { }
+
+	// RVA: 0x65C6004 Offset: 0x65C2004 VA: 0x65C6004 Slot: 21
+	protected override void ConfigurationAdded(IBoosterItem configuration) { }
+
+	// RVA: 0x65C618C Offset: 0x65C218C VA: 0x65C618C
+	private void InjectDynamicTooltipContent(IBoosterItem configuration) { }
+
+	// RVA: 0x65C64D0 Offset: 0x65C24D0 VA: 0x65C64D0 Slot: 34
+	public RemoteBoosterData GetRemoteActiveBoosterByUuid(string uuid) { }
+
+	// RVA: 0x65C65C0 Offset: 0x65C25C0 VA: 0x65C65C0 Slot: 35
+	public bool IsBooster(ComponentBase component) { }
+
+	// RVA: -1 Offset: -1 Slot: 36
+	public T GetBoosterProgress<T>(string uniqueId) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3BDAF14 Offset: 0x3BD6F14 VA: 0x3BDAF14
+	|-BoosterModel.GetBoosterProgress<object>
+	*/
+
+	// RVA: 0x65C643C Offset: 0x65C243C VA: 0x65C643C
+	private string GetTooltipContentName(RemoteBoosterItem remoteBoosterItem) { }
+
+	// RVA: 0x65C6620 Offset: 0x65C2620 VA: 0x65C6620 Slot: 37
+	public bool HasAnyBoosterPendingForActivation(BoosterType boosterType) { }
+
+	// RVA: 0x65C6708 Offset: 0x65C2708 VA: 0x65C6708 Slot: 38
+	public void AddBoosterToPendingActivationList(string uuid, BoosterType boosterType) { }
+
+	// RVA: 0x65C6850 Offset: 0x65C2850 VA: 0x65C6850
+	public void .ctor() { }
+}
+

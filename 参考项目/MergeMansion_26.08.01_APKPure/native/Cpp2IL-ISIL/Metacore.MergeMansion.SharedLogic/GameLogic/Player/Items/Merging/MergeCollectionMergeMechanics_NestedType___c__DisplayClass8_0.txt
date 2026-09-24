@@ -1,0 +1,133 @@
+Type: GameLogic.Player.Items.Merging.MergeCollectionMergeMechanics+<>c__DisplayClass8_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03627080 ADD W9, W9, 0x1E
+	0x03627084 ADD X8, X8, W9, 0x4, SXTW
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Player.Items.IItemDefinition> <PossibleMergeResults>b__0(System.Collections.Generic.KeyValuePair`2<GameLogic.Merge.MergeCollection+ItemPair, GameLogic.Player.Items.Production.IItemProducer> entry)
+
+Disassembly:
+	0x036272A0 ADD X10, X10, 0x8
+	0x036272A4 LDUR X11, [X10 - 0x8]
+	0x036272A8 CMP X11, X1
+	0x036272AC B.EQ 0x36272CC
+	0x036272B0 SUBS X9, X9, 0x1
+	0x036272B4 ADD X10, X10, 0x10
+	0x036272B8 B.NE 0x36272A4
+	0x036272BC MOV X0, X22
+	0x036272C0 MOV W2, W31
+	0x036272C4 BL 0x23D527C
+	0x036272C8 B 0x36272D8
+	0x036272CC LDRSW X9, [X10]
+	0x036272D0 ADD X8, X8, X9, 0x4, LSL
+	0x036272D4 ADD X0, X8, 0x138
+	0x036272D8 LDP X8, X2, [X0]
+	0x036272DC MOV X0, X22
+	0x036272E0 MOV X1, X24
+	0x036272E4 BLR X8
+	0x036272E8 CBZ X0, 0x3627424
+	0x036272EC ADRP X10, 0x20AE000
+	0x036272F0 LDR X8, [X0]
+	0x036272F4 MOV X24, X0
+	0x036272F8 LDR X10, [X10 + 0x7B0]
+	0x036272FC LDRH W9, [X8 + 0x12E]
+	0x03627300 LDR X1, [X10]
+	0x03627304 CBZ X9, 0x3627328
+	0x03627308 LDR X10, [X8 + 0xB0]
+	0x0362730C ADD X10, X10, 0x8
+	0x03627310 LDUR X11, [X10 - 0x8]
+	0x03627314 CMP X11, X1
+	0x03627318 B.EQ 0x3627338
+	0x0362731C SUBS X9, X9, 0x1
+	0x03627320 ADD X10, X10, 0x10
+	0x03627324 B.NE 0x3627310
+	0x03627328 MOV X0, X24
+	0x0362732C MOVZ W2, 0x2
+	0x03627330 BL 0x23D527C
+	0x03627334 B 0x3627348
+	0x03627338 LDR W9, [X10]
+	0x0362733C ADD W9, W9, 0x2
+	0x03627340 ADD X8, X8, W9, 0x4, SXTW
+	0x03627344 ADD X0, X8, 0x138
+	0x03627348 LDP X8, X1, [X0]
+	0x0362734C MOV X0, X24
+	0x03627350 BLR X8
+	0x03627354 CBZ X0, 0x3627424
+	0x03627358 ADRP X10, 0x20E2000
+	0x0362735C LDR X8, [X0]
+	0x03627360 MOV X24, X0
+	0x03627364 LDR X10, [X10 + 0x588]
+	0x03627368 LDRH W9, [X8 + 0x12E]
+	0x0362736C LDR X1, [X10]
+
+ISIL:
+	001 Subtract X31, X31, 64
+	002 Move [X31+32], X30
+	003 Move [X31+40], X21
+	004 Move [X31+48], X20
+	005 Move [X31+56], X19
+	006 Move X19, X0
+	007 Move W8, [0x2706CBA]
+	008 Move X21, [0x210EE80]
+	009 Move [X31+8], X1
+	010 Move [X31+16], X2
+	011 Move TEMP, X8
+	012 And TEMP, TEMP, 1
+	013 Compare TEMP, 1
+	014 JumpIfEqual {19}
+	015 Move X0, [0x210EE80]
+	016 Call 0x239F8E4
+	017 Move W8, 1
+	018 Move [X20+3258], W8
+	019 Move X20, [X21]
+	020 Move X8, [X20+32]
+	021 Add X9, X8, 309
+	022 NotImplemented "Instruction LDRH not yet implemented."
+	023 Move TEMP, X9
+	024 And TEMP, TEMP, 1
+	025 Compare TEMP, 1
+	026 JumpIfEqual {32}
+	027 Move X0, X8
+	028 Call 0x23D8F40
+	029 Move X8, [X20+32]
+	030 Add X9, X8, 309
+	031 NotImplemented "Instruction LDRH not yet implemented."
+	032 Move X0, X8
+	033 Move X10, [X0+192]
+	034 Move X10, [X10+16]
+	035 Move W20, [X10+252]
+	036 Move TEMP, X9
+	037 And TEMP, TEMP, 1
+	038 Compare TEMP, 1
+	039 JumpIfEqual {43}
+	040 Move X0, X8
+	041 Call 0x23D8F40
+	042 Move X8, X0
+	043 Move X8, [X8+192]
+	044 Add X0, X31, 8
+	045 Move X8, [X8+8]
+	046 Move X8, [X8+128]
+	047 Add X1, X8, 32
+	048 Call 0x239F90C
+	049 Move X1, X0
+	050 Add X0, X31, 24
+	051 Move X2, X20
+	052 Call 0x53ED0D0
+	053 Move X0, [X31+24]
+	054 Move X1, [X19+16]
+	055 Move X2, X31
+	056 Call ItemsExtensions.Produces, X0, X1
+	057 Move X20, [X31+48]
+	058 Move X19, [X31+56]
+	059 Move X30, [X31+32]
+	060 Move X21, [X31+40]
+	061 Add X31, X31, 64
+	062 Return X0
+

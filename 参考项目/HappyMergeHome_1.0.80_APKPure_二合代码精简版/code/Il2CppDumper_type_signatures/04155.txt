@@ -1,0 +1,15 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class SummerWatermelonModel.<>c__DisplayClass52_0 // TypeDefIndex: 4155
+{
+	// Fields
+	public int maxNum; // 0x8
+	public SummerWatermelonModel <>4__this; // 0xC
+	public int rewardNum; // 0x10
+
+	// Methods
+
+	// RVA: 0x3080A1C Offset: 0x3080A1C VA: 0x3080A1C
+	public void .ctor() { }
+}
+

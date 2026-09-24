@@ -1,0 +1,16 @@
+// Namespace: Merger.MergeBoard.Handlers
+public class ItemDiscoveryProcessor : IBoardControllerPostTickProcessor // TypeDefIndex: 25892
+{
+	// Fields
+	[Inject]
+	private IItemsCollectionHandler _itemsCollectionHandler; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A92810 Offset: 0x6A8E810 VA: 0x6A92810 Slot: 4
+	public void Process(TickArgs result) { }
+
+	// RVA: 0x6A92E9C Offset: 0x6A8EE9C VA: 0x6A92E9C
+	public void .ctor() { }
+}
+

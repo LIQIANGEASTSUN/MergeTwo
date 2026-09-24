@@ -1,0 +1,36 @@
+// Namespace: Merger.Services.User.Data.Profile.Game.StartingBoard
+[Serializable]
+public class StartingBoard : IBoard, IUniqueStringKeyAsset // TypeDefIndex: 10129
+{
+	// Fields
+	public List<StartingBoardRow> BoardRows; // 0x10
+	[CompilerGenerated]
+	private string <UniqueId>k__BackingField; // 0x18
+	private MergeBoardItem[,] _boardItems; // 0x20
+
+	// Properties
+	public string UniqueId { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x68418E4 Offset: 0x683D8E4 VA: 0x68418E4 Slot: 5
+	public string get_UniqueId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68418EC Offset: 0x683D8EC VA: 0x68418EC
+	public void set_UniqueId(string value) { }
+
+	// RVA: 0x68418F4 Offset: 0x683D8F4 VA: 0x68418F4 Slot: 4
+	public MergeBoardItem[,] GetBoardItems() { }
+
+	// RVA: 0x6841A74 Offset: 0x683DA74 VA: 0x6841A74
+	public void .ctor() { }
+
+	// RVA: 0x6841A7C Offset: 0x683DA7C VA: 0x6841A7C
+	public void .ctor(string uniqueId, List<StartingBoardRow> boardRows) { }
+
+	// RVA: 0x6841934 Offset: 0x683D934 VA: 0x6841934
+	private MergeBoardItem[,] CreateBoardItems() { }
+}
+

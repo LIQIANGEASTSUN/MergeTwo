@@ -1,0 +1,19 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class Reward.<>c__DisplayClass84_0 // TypeDefIndex: 1323
+{
+	// Fields
+	public RewardAmountType typeToExclude; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A2C188 Offset: 0x6A28188 VA: 0x6A2C188
+	public void .ctor() { }
+
+	// RVA: 0x6A2E720 Offset: 0x6A2A720 VA: 0x6A2E720
+	internal bool <CloneExcludingAmountType>b__0(ConditionalRewardMultiple conditional) { }
+
+	// RVA: 0x6A2E754 Offset: 0x6A2A754 VA: 0x6A2E754
+	internal bool <CloneExcludingAmountType>b__1(IRewardViewData reward) { }
+}
+

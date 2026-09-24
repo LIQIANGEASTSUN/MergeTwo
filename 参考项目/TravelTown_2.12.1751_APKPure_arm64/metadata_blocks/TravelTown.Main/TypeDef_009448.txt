@@ -1,0 +1,12 @@
+// Namespace: Merger.Game.Signal
+public class ToggleDisableBoardSignal // TypeDefIndex: 9448
+{
+	// Fields
+	public bool Enabled; // 0x10
+
+	// Methods
+
+	// RVA: 0x676CD00 Offset: 0x6768D00 VA: 0x676CD00
+	public void .ctor(bool enabled) { }
+}
+

@@ -1,0 +1,32 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class Reward.<>c__DisplayClass100_0<T> // TypeDefIndex: 1321
+{
+	// Fields
+	public T item; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F34120 Offset: 0x3F30120 VA: 0x3F34120
+	|-Reward.<>c__DisplayClass100_0<object>..ctor
+	|
+	|-RVA: 0x3F34D08 Offset: 0x3F30D08 VA: 0x3F34D08
+	|-Reward.<>c__DisplayClass100_0<__Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal bool <Aggregate>b__0(T r) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F34128 Offset: 0x3F30128 VA: 0x3F34128
+	|-Reward.<>c__DisplayClass100_0<object>.<Aggregate>b__0
+	|
+	|-RVA: 0x3F34D10 Offset: 0x3F30D10 VA: 0x3F34D10
+	|-Reward.<>c__DisplayClass100_0<__Il2CppFullySharedGenericType>.<Aggregate>b__0
+	*/
+}
+

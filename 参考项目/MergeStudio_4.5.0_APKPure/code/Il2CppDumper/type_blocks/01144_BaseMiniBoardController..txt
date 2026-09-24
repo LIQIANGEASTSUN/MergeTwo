@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BaseMiniBoardController.<>c__DisplayClass167_0 // TypeDefIndex: 1144
+{
+	// Fields
+	public MiniBoardItemController itemController; // 0x8
+
+	// Methods
+
+	// RVA: 0x17D5440 Offset: 0x17D5440 VA: 0x17D5440
+	public void .ctor() { }
+
+	// RVA: 0x17D5448 Offset: 0x17D5448 VA: 0x17D5448
+	internal void <AnimateMergedItemSpawn>b__0() { }
+}
+

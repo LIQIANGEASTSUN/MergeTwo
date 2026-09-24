@@ -1,0 +1,22 @@
+// Namespace: Merger.Services.Backend.Sync.Data.Payloads
+[Serializable]
+public class BoardStructure // TypeDefIndex: 9873
+{
+	// Fields
+	[JsonProperty(DefaultValueHandling = 1)]
+	public int xp; // 0x10
+	[JsonProperty(DefaultValueHandling = 1)]
+	public int level; // 0x14
+	[JsonProperty(DefaultValueHandling = 1)]
+	public string eventId; // 0x18
+	public List<BoardItem> board; // 0x20
+	public List<Resource> resources; // 0x28
+	public List<FreeVoucher> freeVouchers; // 0x30
+	public List<ItemQueue> itemQueue; // 0x38
+
+	// Methods
+
+	// RVA: 0x67C9974 Offset: 0x67C5974 VA: 0x67C9974
+	public void .ctor() { }
+}
+

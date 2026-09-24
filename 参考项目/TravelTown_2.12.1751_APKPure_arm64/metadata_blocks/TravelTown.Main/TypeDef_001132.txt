@@ -1,0 +1,53 @@
+// Namespace: MergeEngine.Data
+public struct BoardItemPosition : IEquatable<BoardItemPosition> // TypeDefIndex: 1132
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly int <Col>k__BackingField; // 0x0
+	[CompilerGenerated]
+	private readonly int <Row>k__BackingField; // 0x4
+
+	// Properties
+	public int Col { get; }
+	public int Row { get; }
+
+	// Methods
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6904ECC Offset: 0x6900ECC VA: 0x6904ECC
+	public int get_Col() { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6904ED4 Offset: 0x6900ED4 VA: 0x6904ED4
+	public int get_Row() { }
+
+	// RVA: 0x68FDC94 Offset: 0x68F9C94 VA: 0x68FDC94
+	public void .ctor(int col, int row) { }
+
+	// RVA: 0x6904EDC Offset: 0x6900EDC VA: 0x6904EDC
+	public float DistanceTo(BoardItemPosition other) { }
+
+	// RVA: 0x6904F00 Offset: 0x6900F00 VA: 0x6904F00 Slot: 4
+	public bool Equals(BoardItemPosition other) { }
+
+	// RVA: 0x6904F28 Offset: 0x6900F28 VA: 0x6904F28
+	public Vector2 DirectionTo(BoardItemPosition other) { }
+
+	// RVA: 0x6904F44 Offset: 0x6900F44 VA: 0x6904F44 Slot: 0
+	public override bool Equals(object obj) { }
+
+	// RVA: 0x6904FCC Offset: 0x6900FCC VA: 0x6904FCC Slot: 2
+	public override int GetHashCode() { }
+
+	// RVA: 0x6904FE0 Offset: 0x6900FE0 VA: 0x6904FE0 Slot: 3
+	public override string ToString() { }
+
+	// RVA: 0x6905080 Offset: 0x6901080 VA: 0x6905080
+	public static BoardItemPosition BottomLeftCorner() { }
+
+	// RVA: 0x6905088 Offset: 0x6901088 VA: 0x6905088
+	public static BoardItemPosition TopLeftCorner() { }
+}
+

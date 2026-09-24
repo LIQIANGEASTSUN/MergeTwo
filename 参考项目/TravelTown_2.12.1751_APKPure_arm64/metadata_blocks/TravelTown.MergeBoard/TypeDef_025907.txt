@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class FeedingCombinationComponentExtensions.<>c__DisplayClass1_0 // TypeDefIndex: 25907
+{
+	// Fields
+	public Combination combination; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A98508 Offset: 0x6A94508 VA: 0x6A98508
+	public void .ctor() { }
+
+	// RVA: 0x6A98538 Offset: 0x6A94538 VA: 0x6A98538
+	internal bool <GetCombinationsInProgress>b__0(string consumedItemId) { }
+}
+

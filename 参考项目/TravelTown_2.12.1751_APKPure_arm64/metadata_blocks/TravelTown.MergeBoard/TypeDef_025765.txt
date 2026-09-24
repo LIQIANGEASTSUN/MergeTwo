@@ -1,0 +1,36 @@
+// Namespace: Merger.MergeBoard.Systems
+public class PendingItemsCombinationSystem : ISystem // TypeDefIndex: 25765
+{
+	// Fields
+	[Inject]
+	private AnyItemCombinerValidator _anyItemCombinerValidator; // 0x10
+	[Inject]
+	private SplitterItemCombinerValidator _splitterItemCombinerValidator; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A71E58 Offset: 0x6A6DE58 VA: 0x6A71E58 Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A7223C Offset: 0x6A6E23C VA: 0x6A7223C
+	private static void SetPendingConfirmationState(TickContext context, ValueTuple<Entity, BoardTilePositionComponent, MergeComponent> fromEntity, ValueTuple<Entity, BoardTilePositionComponent, MergeComponent> toEntity, MoveAction moveAction) { }
+
+	// RVA: 0x6A72048 Offset: 0x6A6E048 VA: 0x6A72048
+	private static bool FindEntityAtPosition(TickContext context, int position, out ValueTuple<Entity, BoardTilePositionComponent, MergeComponent> result) { }
+
+	// RVA: 0x6A725C4 Offset: 0x6A6E5C4 VA: 0x6A725C4
+	private void HandleCombinationVerification(TickContext context, ItemsCombinationConfirmationAction confirmationAction) { }
+
+	// RVA: 0x6A72A10 Offset: 0x6A6EA10 VA: 0x6A72A10
+	private IEnumerable<ValueTuple<ValueTuple<Entity, BoardTilePositionComponent, MergeComponent, IdComponent, PendingItemsCombinationComponent>, ValueTuple<Entity, BoardTilePositionComponent, MergeComponent, IdComponent, PendingItemsCombinationComponent>>> FindPendingVerificationPairs(TickContext context, string firstEntityUuid, string secondEntityUuid) { }
+
+	// RVA: 0x6A72308 Offset: 0x6A6E308 VA: 0x6A72308
+	private void PendingMergeConfirmation(TickContext context, ValueTuple<Entity, BoardTilePositionComponent, MergeComponent> entity, ValueTuple<Entity, BoardTilePositionComponent, MergeComponent> otherEntity) { }
+
+	// RVA: 0x6A72488 Offset: 0x6A6E488 VA: 0x6A72488
+	private void PendingSplitConfirmation(TickContext context, ValueTuple<Entity, BoardTilePositionComponent, MergeComponent> entity, ValueTuple<Entity, BoardTilePositionComponent, MergeComponent> otherEntity) { }
+
+	// RVA: 0x6A72C00 Offset: 0x6A6EC00 VA: 0x6A72C00
+	public void .ctor() { }
+}
+

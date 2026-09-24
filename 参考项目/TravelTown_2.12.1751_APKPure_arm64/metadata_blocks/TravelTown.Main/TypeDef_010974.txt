@@ -1,0 +1,13 @@
+// Namespace: Framework.Core.Services.Backend.Remote.Payloads.BoardState
+[StateName("boardResourcesEvent")]
+public class EventBoardResources : BoardResources // TypeDefIndex: 10974
+{
+	// Fields
+	public string EventId; // 0x20
+
+	// Methods
+
+	// RVA: 0x6927644 Offset: 0x6923644 VA: 0x6927644
+	public void .ctor() { }
+}
+

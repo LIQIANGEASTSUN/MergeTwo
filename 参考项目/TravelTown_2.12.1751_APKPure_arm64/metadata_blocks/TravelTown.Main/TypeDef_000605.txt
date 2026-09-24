@@ -1,0 +1,24 @@
+// Namespace: MergeEngine.ECS.Util
+public static class ComponentLambdaUtil // TypeDefIndex: 605
+{
+	// Methods
+
+	// RVA: 0x6270E6C Offset: 0x626CE6C VA: 0x6270E6C
+	public static bool MatchesIdAndUnlocked(IComponentBase component, string uniqueId) { }
+
+	// RVA: 0x6270FE0 Offset: 0x626CFE0 VA: 0x6270FE0
+	public static bool AreSameType(IComponentBase component1, IComponentBase component2) { }
+
+	// RVA: 0x6271130 Offset: 0x626D130 VA: 0x6271130
+	public static bool UnlockedAndUnboxed(IComponentBase component) { }
+
+	// RVA: 0x62711FC Offset: 0x626D1FC VA: 0x62711FC
+	public static bool IsBasicItem(IComponentBase component) { }
+
+	// RVA: 0x627134C Offset: 0x626D34C VA: 0x627134C
+	public static bool MergingBlockedByLock(IComponentBase component) { }
+
+	// RVA: 0x627140C Offset: 0x626D40C VA: 0x627140C
+	public static bool IsTimeLocked(IComponentBase component) { }
+}
+

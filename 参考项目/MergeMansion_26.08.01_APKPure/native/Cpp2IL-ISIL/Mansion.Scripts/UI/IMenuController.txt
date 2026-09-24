@@ -1,0 +1,2074 @@
+Type: UI.IMenuController
+
+Method: Metacore.MergeMansion.Common.Rollbacks.ISafeRollback get_Rollback()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.IMenuState get_OpenedPopupModel()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Merge.MergeBoardId get_PlayerActiveMergeBoardId()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_IsMenuOpen()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_IsInTransition()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void StartTransition(System.String menuTag)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void CompleteTransition(System.String menuTag)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void SetBackButtonEnabled(System.Boolean enabled)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.String get_OpenMenuTag()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.IMenuSection GetCurrentMenu()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: TMenu TryGetMenu()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metacore.MergeMansion.UI.Libraries.IIconLibrary get_DefaultIconLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metacore.MergeMansion.UI.Libraries.IIconLibrary get_EventIconLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.ProgressionPackEventPrefabLibrary get_ProgressionPackEventPrefabsLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.AllCollectibleBoardEventsPrefabsLibrary get_CollectibleBoardEventPrefabsLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.MysteryMachineEventPrefabsLibrary get_MysteryMachineEventPrefabsLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.SoloMilestoneEventPrefabsLibrary get_SoloMilestoneEventPrefabsLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.MiniEventPrefabsLibrary get_MiniEventPrefabsLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.TemporaryCardCollectionEvent.TemporaryCardCollectionEventPrefabsLibrary get_TemporaryCardCollectionEventPrefabsLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.DecorationShopPrefabsLibrary get_DecorationShopPrefabsLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.GameEvents.MergeBoards.MergeBoardLibrary get_MergeBoardLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.GameEvents.Decorations.DecorationsLibrary get_DecorationsLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.Offers.IOfferPopupsLibrary get_OfferPopupsLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Animations.IRewardsAnimations get_RewardsAnimations()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metacore.MergeMansion.InputController.IInputController get_InputController()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.CharacterLibrary get_CharacterLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.GameEvents.ArtifactLibrary get_ArtifactLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Banks.Scripts.UI.CurrencyBankLibrary get_CurrencyBankLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.Seasonality.SeasonalityPrefabsLibrary get_SeasonalityPrefabsLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.DailyTasksV2.DailyTasksV2Library get_DailyTasksV2Library()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.BoultonLeagueStageLibrary get_BoultonLeagueStageLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.EnergyModeEventPrefabsLibrary get_EnergyModeEventPrefabsLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: IllustrationLibrary get_IllustrationLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.DailyScoopEventPrefabsLibrary get_DailyScoopEventPrefabsLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.TemporaryCardCollectionEvent.TemporaryCardCollectionEventSpritesLibrary get_TemporaryCardCollectionEventSpritesLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.GameEvents.ShortLeaderboardEventPrefabsLibrary get_ShortLeaderboardEventPrefabsLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.CardCollectionSupportingEventPrefabsLibrary get_CardCollectionSupportingEventPrefabsLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.CoreSupportingEventsPrefabsLibrary get_CoreSupportingEventsPrefabsLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.CoreSupportEventPrefabsLibrary get_CoreSupportEventPrefabsLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: AnimationConfigLibrary get_AnimationConfigLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.MixABooster.MixABoosterEventPrefabsLibrary get_MixABoosterEventPrefabsLibrary()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void add_OnMenuVisibilityChange(System.Action`1<System.Boolean> value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void remove_OnMenuVisibilityChange(System.Action`1<System.Boolean> value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void add_OnStackedMenuPushed(System.Action value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void remove_OnStackedMenuPushed(System.Action value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowSettingsPopupMenu()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowWebViewPopup(Webview.IWebViewTarget webTarget)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowInboxMainView()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowInboxItem(Game.Logic.Mail.IMailMessage inboxItem, UI.Inbox.IInboxVisualElementLibrary visualElementLibrary)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void DeleteInboxItem(Game.Logic.Mail.IMailMessage inboxItem)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowToDoPopupMenu(Metacore.MergeMansion.Common.Options.Option`1<Metacore.MergeMansion.UI.DailyTodo.DailyTodoPopupFocusTarget> focusTargetOption = null, System.Boolean allowOpeningOnTopOfAnother = False, System.Boolean hideCurrentFirst = False, System.Action onPopupShown = null)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowDailyTasksRefreshPurchaseConfirmationPopup()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowDailyTasksV2RefreshPurchaseConfirmationPopup(System.Int32 taskIndex, System.Action tryToPurchase)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowDailyTasksV2TimeExtensionOfferPopup()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowDailyTasksV2InfoPopup()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowCustomItemInfoPopupMenu(GameLogic.Player.Items.IItemDefinition itemDefinition, System.Boolean hideCurrentFirst = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowItemInfoPopupMenu(GameLogic.Player.Items.IMergeItem mergeItem, System.Boolean hideCurrentFirst = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowItemInfoPopupMenu(GameLogic.MergeChains.IMergeChainDefinition mergeChain, GameLogic.Player.Items.IItemDefinition itemDefinition, System.Boolean hideCurrentFirst = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowItemInfoPopupMenu(GameLogic.MergeChains.IMergeChainDefinition mergeChain, GameLogic.Player.Items.IItemDefinition itemDefinition, System.Boolean hideCurrentFirst, UI.States.ItemInfoPopupFlags flags)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowOrderItemInfoPopupMenu(GameLogic.Player.Items.IMergeItem mergeItem, System.Boolean hideCurrentFirst = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowShopItemInfoPopupMenu(GameLogic.MergeChains.IMergeChainDefinition mergeChain, GameLogic.Player.Items.IItemDefinition itemDefinition, System.Boolean forceShowOdds, System.Boolean hideCurrentFirst = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowMergeItemInfoPopupMenu(GameLogic.Player.Items.IMergeItem mergeItem, System.Boolean hideCurrentFirst = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowMergeGoalsPopupMenu(HotspotId hotspotId, GameLogic.Hotspots.TaskSource taskSource)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowEndOfContentPopupMenu()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowEnergyPopupMenu(GameLogic.Player.EnergyType type, System.Boolean tryShowOfferFirst, System.Boolean isMinigameLayerVisible = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowOutOfCSETokensMenu(Code.GameLogic.GameEvents.CoreSupportEventTokenId tokenId, UI.Popups.AuxEnergyMenuLocalisationState localisationState, System.Boolean isMinigameLayerVisible = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowEventEnergyMainBoardInfoPopup(GameLogic.Player.EnergyType energyType)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean TryShowTriggerActivatedOutOfEnergyOfferPopup(GameLogic.Config.OfferPopupTriggerPlacement offerPopupTriggerPlacement, System.Boolean wasTriggeredFirst)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowEventCalendarPopupMenu(System.Boolean hideCurrentFirst = False, UI.States.EventCalendarPopupMenuFlags flags = 0)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowCollectEventProgressRewardPopupMenu(System.Boolean hideCurrentFirst = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowShopOffersPopupMenu(System.Boolean hideCurrentFirst = False, System.Collections.Generic.IEnumerable`1<GameLogic.Offers.IActiveOfferGroup> overrideOfferGroups = null)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void TryShowAutoPopupAppLoading()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void TryShowAutoPopupLobbyReturn()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void TryShowAutoPopupMergeBoardEnter(Merge.MergeBoardId mergeBoardId)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void TryShowAutoPopupPopupOpen(GameLogic.Config.OfferPopupTriggerPopupId id)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void TryShowAutoPopupPopupClose(GameLogic.Config.OfferPopupTriggerPopupId id, UI.IMenuSection closingPopup)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowPlayerRewardInfoPopupMenu(GameLogic.Player.Rewards.IPlayerReward playerReward, System.Boolean hideCurrentFirst = False, UI.States.ItemInfoPopupFlags flags = 0)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowMergeGridShopPopupMenu(System.String shopOpeningSource, GameLogic.Config.Shop.Items.RedDotStatus redDotStatus, System.String showMethod, UI.Shop.ShopMenuContentBlock focusCurrencies = 0, System.Boolean openedFromTitleBar = False, System.Boolean forceOpenCoinsAndGemsShop = False, System.Boolean forceOpenGarageShop = False, System.Boolean forceOpenAnyBoardShop = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowMergeGridInventoryPopupMenu()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowDecorationSelectionMenu(UI.States.DecorationSelectionMenuState wantedState = null)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowPetSelectionMenu(PetSelectionMenuState+PetSelectionMode petSelectionMode, GameLogic.Player.Rewards.PetId previewPetId, GameLogic.Decorations.DecorationId previewDecorationId, System.Int32 decorationLayer)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowPlayerLevelPopupMenu(System.Boolean closeCurrentPopup = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowSocialLoginFailedMessage(System.String error)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowSocialLoginSelectGameStateMessage(UI.States.ResolveSocialAuthConflictPopupMenuState+PlayerData localPlayerData, UI.States.ResolveSocialAuthConflictPopupMenuState+PlayerData remotePlayerData, System.Action`1<UI.States.ResolveSocialAuthConflictPopupMenuState+PlayerData> selectAction)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowSocialLoginAlreadyLoggedInMessage(Metaplay.Core.AuthenticationPlatform authenticationPlatform)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowNotificationWhitelistPopupMenu()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowSystemNotificationsPopupMenu()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowChooseLanguagePopupMenu()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowShopRefreshMessage(System.Action positiveAction, Metaplay.Core.Offers.OfferPlacementId placementId)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowShopWarningOrErrorPopupMenu(System.String title, System.String description, System.String button)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowNotEnoughSomethingPopupMenu(System.ValueTuple`2<Currencies, System.Int32> missing, System.Boolean hideCurrentFirst = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowNotEnoughSomethingPopupMenu(GameLogic.Config.Costs.ICost cost, System.Int32 missingAmount)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowNotEnoughSomethingMultiplesPopupMenu(System.Collections.Generic.List`1<System.ValueTuple`2<Currencies, System.Int32>> costs)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowNotEnoughCurrencyPopup(GameLogic.Config.Costs.ICost cost, System.Int32 missingAmount)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask ShowGarageCleanupEventPopup(Code.GameLogic.GameEvents.GarageCleanupEventModel eventModel, System.String source, System.Threading.CancellationToken ct)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask ShowGarageCleanupInfoPopup(Code.GameLogic.GameEvents.GarageCleanupEventModel eventModel, System.Threading.CancellationToken ct)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask ShowGarageCleanupStartPopup(Metacore.MergeMansion.UI.GarageCleanupEvent.GarageCleanupEventPrefabs eventPrefabs, Code.GameLogic.GameEvents.GarageCleanupEventModel eventModel, System.Threading.CancellationToken ct)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask ShowGarageCleanupEndPopup(Metacore.MergeMansion.UI.GarageCleanupEvent.GarageCleanupEventPrefabs eventPrefabs, Code.GameLogic.GameEvents.GarageCleanupEventModel eventModel, System.Threading.CancellationToken ct)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowCurrencyBankPopup()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowCurrencyBankInfoPopup(GameLogic.Banks.CurrencyBankModel currencyBankModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void PopMenuAndShowAll()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void PopMenuAndShowPrevious(System.Boolean showPreviousImmediately = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void PopMenuAndShowShop(UI.Shop.ShopMenuContentBlock shopContext, System.Boolean forceOpenCoinsAndGems, System.String openingSource, GameLogic.Config.Shop.Items.RedDotStatus redDotStatus, System.String showMethod)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowShop(UI.Shop.ShopMenuContentBlock shopContext, System.Boolean forceOpenCoinsAndGems, System.String openingSource, GameLogic.Config.Shop.Items.RedDotStatus redDotStatus, System.String showMethod, GameLogic.Offers.IActiveOfferGroup overrideOfferGroup = null, System.Boolean fadePanelBackground = True)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowBoardShop(UI.Shop.ShopMenuContentBlock shopContext, System.String openingSource, GameLogic.Config.Shop.Items.RedDotStatus redDotStatus, System.String showMethod, GameLogic.Offers.IActiveOfferGroup overrideOfferGroup = null, System.Boolean fadePanelBackground = True)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowItemObtainedPopup(System.Collections.Generic.IEnumerable`1<GameLogic.Player.Rewards.IPlayerReward> rewards)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void PopMenusBeforeShow(System.String menuTag, System.Int32 maxPopCount = -1)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ForceCloseAllPopups()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean TryHideCurrentMenuWithTag(System.String menuTag)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void HideAllMenus(UI.HideMenuReason reason = 4)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean IsSpecificMenuInStack(System.String menuTag)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean IsMenuInStack()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean IsAnyMenuInStack(System.Type[] menuTypes)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowRatingPopupMenu()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowSocialMediaPopupMenu(SocialMediaPlatform socialMediaPlatform, System.String source)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowTOSv3PopupMenu()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowAccountResetPopup()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowAccountSuccessfullyResettedPopup(System.Action confirmationAction)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowAccountDeleteInformationPopup()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowAccountDeleteScheduledPopup(System.Boolean userInitiated, System.Boolean fromGameLoading)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowGoToAppStoreOrGooglePlayMessage(System.String titleText, System.String descriptionText, System.String buttonText, System.Action positiveButtonAction)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowConnectionErrorMessage(System.String titleText, System.String descriptionText, System.String buttonText, System.Action positiveButtonAction)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowTieredOffersEndPopup(System.String titleText, System.String descriptionText, System.String buttonText, System.Action positiveButtonAction)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowMakeYourOwnOfferInfoPopup()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowNoInternetConnectionPopup(System.Action positiveButtonAction)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowConnectionErrorMessage(System.String titleText, System.String descriptionText, System.String buttonText, System.Action positiveButtonAction, System.Func`1<System.String> livingError)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void PromptSellConfirmation(System.Action confirmationAction)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void PromptCollectConfirmation(System.Action confirmationAction, System.String questionLocalizationIdPrefix = null)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void PromptBuyConfirmation(System.Action confirmationAction, GameLogic.Config.Costs.ICost cost)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowDeleteAccountConfirmation(System.Action confirmationAction)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowResetAccountConfirmation(System.Action confirmationAction)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask ShowExtendGameEventPopup(Code.GameLogic.GameEvents.IBoardEventModel boardEvent, System.Nullable`1<Metaplay.Core.MetaTime> reviewEndAt, System.Boolean automaticShow, System.Action onFinalize, System.Threading.CancellationToken ct)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowOfferGroupPopup(GameLogic.Offers.IActiveOfferGroup activeOfferGroup, System.Boolean wasShownAutomatically, System.String showMethod, Metacore.MergeMansion.Common.Options.Option`1<Metaplay.Core.Offers.OfferPlacementId> overrideOfferPlacementId)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void RegisterPopupToCloseOnEventEnd(Metaplay.Core.Activables.MetaActivableState eventModel, System.String popupToClose)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void UnregisterPopupToCloseOnEventEnd(Metaplay.Core.Activables.MetaActivableState eventModel, System.String popupToClose)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowHotspotPopupForType(GameLogic.Hotspots.IHotspotDefinition hotspot, GameLogic.Hotspots.TaskSource taskSource)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowAreaLockedHotspotPopupMenu(GameLogic.Hotspots.IHotspotDefinition hotspot, GameLogic.Hotspots.TaskSource taskSource)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowAreaHotspotPopupMenu(GameLogic.Hotspots.IHotspotDefinition hotspot, GameLogic.Hotspots.TaskSource taskSource, System.Action showHotspotFinished = null)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowAreaUnlockedPopupMenu(GameLogic.Area.IAreaInfo area)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowAreaInfoPopupMenu(GameLogic.Area.IAreaInfo area, UI.Popups.AreaInfoStyle areaInfoStyle, System.Boolean showIsNavigateBack, GameLogic.Hotspots.TaskSource taskSource)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowAreaCompleteRewardPopup(GameLogic.Area.IAreaInfo area, UI.IWalletState walletState, Metaplay.Core.RandomPCG rewardContainerRandom)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean CloseCurrentMenu(UnityEngine.Object from)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean CloseNoStackedMenu(UI.IMenuSection from)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean NavigateBack(UnityEngine.Object from, System.Action onFinish)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean NavigateBack(UnityEngine.Object from, System.Boolean showAllPrevious = False, System.Boolean showPreviousImmediately = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowThirdPartySurveyInboxItem(Game.Logic.Mail.IMailMessage obj)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void PromptMergeConfirmation(MergeResult mergeResult, GameLogic.Player.Items.MergeItem fromItem, GameLogic.Player.Items.MergeItem toItem, System.Action confirmationAction, System.Action cancelAction, System.Boolean isAutoMergeEnabled)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowAreaHotspotPopupMenuInventorySinkConfirmationPopup(System.Action`1<GameLogic.Hotspots.IHotspotDefinition> confirmationAction, GameLogic.Hotspots.IHotspotDefinition hotspot, System.ValueTuple`2<GameLogic.Player.Items.IItemDefinition, System.Int32>[] sinkItems)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowRentableInventoryAdvertisementPopup(GameLogic.Inventory.RentableInventorySettings settings, System.Action actionToConfirm, System.Action actionToCancel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowRentableInventoryExtensionPopup(GameLogic.Inventory.RentableInventorySettings settings, System.Action actionToConfirm, System.Action actionToCancel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowLayeredDecorationMaxLevelPopup(GameLogic.Decorations.DecorationInfo decoration, System.String headerLocId, System.String descriptionLocId)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowProgressionEventProgressionPopup(Code.GameLogic.GameEvents.ProgressionEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask ShowProgressionEventStartPopup(Code.GameLogic.GameEvents.ProgressionEventModel eventModel, System.Threading.CancellationToken ct)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowProgressionEventGenericInfoPopup(Code.GameLogic.GameEvents.ProgressionEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask ShowProgressionEventGenericInfoPopup(Code.GameLogic.GameEvents.ProgressionEventModel eventModel, System.Threading.CancellationToken ct)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowProgressionEventEndPopup(Code.GameLogic.GameEvents.ProgressionEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask ShowProgressionEventEndPopup(Code.GameLogic.GameEvents.ProgressionEventModel eventModel, System.Threading.CancellationToken ct)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowProgressionEventPurchasePassPopup(Code.GameLogic.GameEvents.ProgressionEventModel eventModel, System.String triggerType, UI.Popups.ProgressionEventPurchasePassStyle style)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowProgressionEventPassObtainedPopup(Code.GameLogic.GameEvents.ProgressionEventModel eventModel, Code.GameLogic.GameEvents.ProgressionEventTrack previousActiveTrack, Code.GameLogic.GameEvents.ProgressionEventTrack purchasedTrack)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowProgressionEventBackToBackPopup(Code.GameLogic.GameEvents.ProgressionEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowProgressionEventChallengeRewardPopup(Code.GameLogic.GameEvents.ProgressionEventModel eventModel, System.Int32 claimedLevelNumber, System.Action rewardClaimedAction)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask ShowProgressionEventChallengeRewardPopup(Code.GameLogic.GameEvents.ProgressionEventModel eventModel, System.Int32 claimedLevelNumber, System.Action rewardClaimedAction, System.Threading.CancellationToken ct)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowProgressionPackEventStartPopup(Code.GameLogic.GameEvents.ProgressionPackEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowProgressionPackEventProgressionPopup(Code.GameLogic.GameEvents.ProgressionPackEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowProgressionPackEventInfoPopup(Code.GameLogic.GameEvents.ProgressionPackEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowProgressionPackAfterPurchasePopup(Code.GameLogic.GameEvents.ProgressionPackEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask ShowCollectibleBoardEventStartPopup(Code.GameLogic.GameEvents.CollectibleBoardEventModel eventModel, System.Threading.CancellationToken ct)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask ShowCollectibleBoardEventEndPopup(Code.GameLogic.GameEvents.CollectibleBoardEventModel eventModel, System.Threading.CancellationToken ct)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask ShowCollectibleBoardEventProgressionPopup(Code.GameLogic.GameEvents.CollectibleBoardEventModel eventModel, System.Threading.CancellationToken ct, System.Boolean hideCurrentFirst = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask ShowCollectibleBoardEventInfoPopup(Code.GameLogic.GameEvents.CollectibleBoardEventModel eventModel, System.Threading.CancellationToken ct)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask ShowCollectibleBoardEventTeasePopup(Code.GameLogic.GameEvents.CollectibleBoardEventInfo eventInfo, System.Threading.CancellationToken ct)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask ShowCollectibleBoardEventExtendPopup(Code.GameLogic.GameEvents.CollectibleBoardEventModel eventModel, System.Nullable`1<Metaplay.Core.MetaTime> reviewEndAt, System.Boolean automaticShow, System.Action onFinalize, System.Threading.CancellationToken ct)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowCollectibleBoardEventTaskPopup(Code.GameLogic.GameEvents.CollectibleBoardEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask ShowCollectibleBoardEventIntroPopup(Code.GameLogic.GameEvents.CollectibleBoardEventInfo eventInfo, Metaplay.Core.Activables.MetaActivableVisibleStatus+InPreview inPreview, System.Threading.CancellationToken ct)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask ShowLayeredDecorationInfoPopup(Code.GameLogic.GameEvents.CollectibleBoardEventModel eventModel, System.Threading.CancellationToken ct)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowFallbackRewardInfoPopup(Code.GameLogic.GameEvents.CollectibleBoardEventModel eventModel, GameLogic.Player.PlayerModel playerModel, PlayerClientContext playerContext, System.Int32 level, Code.GameLogic.GameEvents.LevelEventLevelType levelType, GameLogic.Player.Rewards.IPlayerReward reward, GameLogic.Player.Rewards.IPlayerReward fallbackReward, Metacore.MergeMansion.UI.Libraries.IIconLibrary iconLibrary, System.Action`1<System.Collections.Generic.List`1<GameLogic.Player.Rewards.IPlayerReward>> onClaimed, Merge.IBoardController boardController, ITitleBarRewardWidgets titleBarRewardWidgets, System.Action claimCallback)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask ShowDecorationOwnedPopup(Code.GameLogic.GameEvents.CollectibleBoardEventModel eventModel, System.Threading.CancellationToken ct)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void TryShowBoardEventAreaHotspotPopup(System.String eventId)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask ShowLayeredDecorationLockedPopup(Code.GameLogic.GameEvents.CollectibleBoardEventModel eventModel, System.Threading.CancellationToken ct)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowLevelUpMergeChainPopup(GameLogic.MergeChains.IMergeChainDefinition mergeChain, System.Int32 level)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask ShowLeaderboardEventStartPopup(Code.GameLogic.GameEvents.LeaderboardEventModel eventModel, System.Threading.CancellationToken ct)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask ShowLeaderboardEventInfoPopup(Code.GameLogic.GameEvents.LeaderboardEventModel eventModel, System.Threading.CancellationToken ct)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask ShowLeaderboardEventRankingPopup(Code.GameLogic.GameEvents.LeaderboardEventModel eventModel, System.Threading.CancellationToken ct, System.Action buttonActionOverride = null)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask ShowLeaderboardEventRankingPopup(Code.GameLogic.GameEvents.LeaderboardEventModel eventModel, System.ValueTuple`2<System.Collections.Generic.List`1<Code.GameLogic.GameEvents.LeaderboardEventPlayerRankingEntry>, System.Int32> rankingsAndRankingPosition, System.Threading.CancellationToken ct, System.Action buttonActionOverride = null)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask ShowLeaderboardEventEndPopup(Code.GameLogic.GameEvents.LeaderboardEventModel eventModel, System.Threading.CancellationToken ct)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: UI.Popups.LeaderboardEventRankingPopup TryGetExistingLeaderboardEventRankingPopup(Code.GameLogic.GameEvents.LeaderboardEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowLeaderboardEventDeterminingRewardsPopup()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowMiniEventStartPopup(GameLogic.MiniEvents.MiniEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowMiniEventInfoPopup(GameLogic.MiniEvents.MiniEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowBoultonLeagueEventStartPopup(Code.GameLogic.GameEvents.BoultonLeagueEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowBoultonLeagueEventInfoPopup(Code.GameLogic.GameEvents.BoultonLeagueEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowBoultonLeagueEventProgressionPopup(Code.GameLogic.GameEvents.BoultonLeagueEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowBoultonLeagueEventEndPopup(Code.GameLogic.GameEvents.BoultonLeagueEventModel eventModel, UI.Popups.BoultonLeagueEventEndPopupShowParams showParams = null)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowBoultonLeagueDeterminingLeaderboardPlacementRewardsPopup()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowPlayerNameNotificationPopup(GameLogic.Player.IPlayer playerModel, UI.Popups.PlayerNamePopupFlags playerNamePopupFlags)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowPlayerNamePopup(GameLogic.Player.IPlayer playerModel, System.Boolean hideCurrentFirst = False, UI.Popups.PlayerNamePopupFlags flags = 0)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowReportPlayerPopup(System.Nullable`1<System.Int32> participantIdxToReport, System.Nullable`1<Metaplay.Core.EntityId> entityIdToReport, System.String reportedPlayerName, System.Boolean hideCurrentFirst = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowGenericRewardPopup(GameLogic.Player.Rewards.IPlayerReward reward, System.String headerLocalizationId, System.Object[] headerLocalizationArgs, System.Action onClose, UI.IWalletState customWalletState = null, Metaplay.Core.RandomPCG rewardContainerRandomCheckpoint = null)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowReEngagementRewardPopup(GameLogic.GameFeatures.ReEngagementSettings settings)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask ShowCameraTutorialPopup(Code.GameLogic.GameEvents.CollectibleBoardEventId relatedEventId, System.Threading.CancellationToken ct)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowSeasonStartPopup(GameLogic.Seasonality.SeasonInfo season, System.Action completeAction)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void SetTab(System.String targetId, System.Int32 tabIndex)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean IsDebugStatePreventing()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowPetRewardPopup(GameLogic.Player.Rewards.PetInfo petInfo, System.Action onClose)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowDecorationShopPopup(GameLogic.Config.DecorationShop.DecorationShopModel decorationShopModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowInfiniteEnergyPopup(Metaplay.Core.MetaDuration duration, System.Boolean showAfterMenusClosed = False, System.Boolean animateRewardClaim = True, System.Action onClosed = null)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowAutoMergeBoosterPopup(Metaplay.Core.MetaDuration durationSeconds)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowSkipTimePopup(Metaplay.Core.MetaDuration skipDuration, System.Action onClosed)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowCooldownRemoverRewardPopup(Metaplay.Core.MetaDuration duration, System.Action onClose)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowOnFireRewardPopup(Metaplay.Core.MetaDuration duration, System.Action onClose)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowOnFireInfoPopup(System.Action onImpact)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowCelebrationPopup(System.Action onRestart, System.String type)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowCardGamePopupMenu(GameLogic.Hotspots.IHotspotDefinition hotspot, GameLogic.Hotspots.TaskSource taskSource)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowWebShopPurchasePopupMenu(Game.Cloud.Webshop.WebshopPurchase webShopPurchase)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowWebShopSecureCodePopupMenu()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowWebShopSignInPopupMenu(System.String mergeMansionUrl, System.String code)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowConfirmationDialogPopup(System.String titleTextLocId, System.String questionTextLocId, System.String confirmButtonTextLocId, System.String cancelButtonTextLocId, System.Action confirmAction, System.Action cancelAction, UI.States.ConfirmationDialogExtra extra)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowLocationTravelPopup(GameLogic.Area.LocationTravelInfo locationTravelInfo, GameLogic.Hotspots.TaskSource taskSource, System.Action onTravel = null, System.Boolean allowNegativeActions = True)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowLocationTravelConfirmationPopup(LocationId locationId, System.Boolean forceTravel, System.String eventLocId = , System.Action onTravel = null, GameLogic.Area.IAreaInfo areaInfo = null, System.Boolean isAreaTeaser = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowIllustrationPopupMenu(GameLogic.Hotspots.IHotspotDefinition hotspot, GameLogic.Hotspots.TaskSource taskSource)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowMysteryMachineEventStartPopup(Code.GameLogic.GameEvents.MysteryMachineEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowMysteryMachineEventInfoPopup(Code.GameLogic.GameEvents.MysteryMachineEventModel eventModel, System.Boolean enteringFirstTime = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowMysteryMachineLevelInfoPopup(Code.GameLogic.GameEvents.MysteryMachineEventModel eventModel, System.Boolean levelingUp)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowMysteryMachineConfirmationPopup(Code.GameLogic.GameEvents.MysteryMachineEventModel eventModel, UI.States.MysteryMachineConfirmationData data, System.Action onComplete)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowMysteryMachineEventTaskProgressionPopup(Code.GameLogic.GameEvents.MysteryMachineEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowMysteryMachineEventEndOfRunPopup(Code.GameLogic.GameEvents.MysteryMachineEventModel eventModel, UI.MysteryMachineScoreView scoreView, System.Action onClose)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowMysteryMachineEventEndPopup(Code.GameLogic.GameEvents.MysteryMachineEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowMysteryMachineItemOddsPopup(Code.GameLogic.GameEvents.MysteryMachineEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowMysteryMachineEventDeterminingRewardsPopup()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void RefreshProducerInventoryIndicators()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowSoloMilestoneEventStartPopup(GameLogic.Player.Events.SoloMilestoneEventModel eventModel, System.Boolean isAuto)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowSoloMilestoneEventEndPopup(GameLogic.Player.Events.SoloMilestoneEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowDailyScoopEventStartPopup(Code.GameLogic.Player.Events.DailyScoopEvent.DailyScoopEventModel eventModel, System.Boolean isAuto = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowDailyScoopInfoPopup(System.Boolean isAuto = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowLimitedOfferInfoPopup()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowMiniGameCompletedPopup(System.Action positiveButtonAction)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowDownloadErrorPopup(System.Action retryAction, System.Action cancelAction, System.String titleLocalizationId = DownloadError_Popup_Title, System.String descriptionLocalizationId = DownloadError_Popup_Description, System.String positiveButtonLocalizationId = DownloadError_Popup_Retry, System.String negativeButtonTextLocalizationId = DownloadError_Popup_Cancel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowEnergyModeFTUEPopup(GameLogic.Config.EnergyModeEvent.EnergyModeEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowEnergyModeEventStartPopup(GameLogic.Config.EnergyModeEvent.EnergyModeEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowEnergyModeEventEndPopup(GameLogic.Config.EnergyModeEvent.EnergyModeEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowTemporaryCardCollectionOpenCardPackPopup(Code.GameLogic.GameEvents.TemporaryCardCollectionEventId eventId, System.Collections.Generic.List`1<GameLogic.CardCollection.CardCollectionPackId> openedPackIds, System.Collections.Generic.List`1<System.Collections.Generic.List`1<System.ValueTuple`2<GameLogic.CardCollection.CardCollectionCardId, System.Boolean>>> cardsPerPack)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowTemporaryCardCollectionCardPopup(Code.GameLogic.GameEvents.TemporaryCardCollectionEventModel eventModel, System.Collections.Generic.List`1<GameLogic.CardCollection.CardCollectionCardId> cardIds, GameLogic.CardCollection.CardCollectionCardId currentCardId)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowTemporaryCardCollectionCardSetPopup(Code.GameLogic.GameEvents.TemporaryCardCollectionEventModel eventModel, GameLogic.CardCollection.CardCollectionCardSetId cardCollectionCardSetId, System.Boolean hideCurrentFirst)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowTemporaryCardCollectionCollectedAllCardsPopup(Code.GameLogic.GameEvents.TemporaryCardCollectionEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowTemporaryCardCollectionOddsPopup(Code.GameLogic.GameEvents.TemporaryCardCollectionEventModel eventModel, GameLogic.CardCollection.CardCollectionPackId packId, System.Boolean hideCurrentFirst = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowTemporaryCardCollectionProgressionPopup(Code.GameLogic.GameEvents.TemporaryCardCollectionEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowTemporaryCardCollectionRewardPopup(Code.GameLogic.GameEvents.TemporaryCardCollectionEventModel eventModel, System.Boolean debug = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowTemporaryCardCollectionInfoPopup(Code.GameLogic.GameEvents.TemporaryCardCollectionEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowTemporaryCardCollectionPrestigePopup(Code.GameLogic.GameEvents.TemporaryCardCollectionEventModel eventModel, System.Boolean hideCurrentFirst, System.Boolean goToProgressionPopupOnDismiss = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowActivateWildCardPopup(Code.GameLogic.GameEvents.TemporaryCardCollectionEventModel eventModel, System.Boolean isSpecial, System.Action onTap)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowTransformWildCardPopup(Code.GameLogic.GameEvents.TemporaryCardCollectionEventModel eventModel, GameLogic.CardCollection.CardCollectionCardId cardId, System.Boolean discovered, System.Boolean wildCardIsSpecial)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void PromptCraftCardConfirmation(Code.GameLogic.GameEvents.TemporaryCardCollectionEventModel eventModel, UI.TemporaryCardCollectionEvent.TemporaryCardCollectionCardHolder cardHolder, System.Boolean discovered, System.Boolean wildcardIsSpecial)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowTemporaryCardCollectionEvidenceBoxOpening(GameLogic.CardCollection.CardCollectionEvidenceBoxInfo boxInfo)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowTemporaryCardCollectionEvidenceRoomPopup(Code.GameLogic.GameEvents.TemporaryCardCollectionEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowCardCollectionSupportingEventPopup(GameLogic.Player.Events.CardCollectionSupportingEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowRewardContainerInfoPopup(GameLogic.Player.Rewards.RewardContainerInfo rewardContainer)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowRewardContainerPopup(GameLogic.Player.Rewards.RewardContainerInfo rewardContainer, System.Collections.Generic.List`1<GameLogic.Player.Rewards.IPlayerReward> rewards, Metacore.MergeMansion.Common.Options.Option`1<System.Action> onClose, UI.IWalletState customWalletState = null, Metaplay.Core.RandomPCG rewardContainerRandomCheckpoint = null)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowShortLeaderboardEventStartPopup(Code.GameLogic.GameEvents.ShortLeaderboardEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowShortLeaderboardEventEndPopup(Code.GameLogic.GameEvents.ShortLeaderboardEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowShortLeaderboardEventInfoPopup(Code.GameLogic.GameEvents.ShortLeaderboardEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowShortLeaderboardEventProgressionPopup(Code.GameLogic.GameEvents.ShortLeaderboardEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowShortLeaderboardEventTeasePopup(Code.GameLogic.GameEvents.ShortLeaderboardEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowDigEventPrototype(Code.GameLogic.GameEvents.ICoreSupportEventModel eventModel, System.Boolean enabled)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowCloudTransitionEffect()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowDigEventMuseumPopup(Code.GameLogic.GameEvents.DigEventId digEventId, Code.GameLogic.GameEvents.CoreSupportEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowMuseumInfoPopup(Code.GameLogic.GameEvents.CoreSupportEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowDigEventMinigameInfoPopup(Code.GameLogic.GameEvents.ICoreSupportEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowDigEventItemDiscoveryPopup(Code.GameLogic.GameEvents.CoreSupportEventModel eventModel, System.String treasureId, UnityEngine.Vector2 spriteSize, System.Boolean isShinyItem, System.Action onPopupClosed)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowDigEventCollectionCompletePopup(Code.GameLogic.GameEvents.CoreSupportEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowClassicRacesEventProgressionPopup(Code.GameLogic.GameEvents.ClassicRacesMinigameModel minigameModel, Code.GameLogic.GameEvents.ICoreSupportEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowClassicRacesEventInfoPopup(Code.GameLogic.GameEvents.ClassicRacesMinigameModel minigameModel, System.Action onClosedCallback)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowClassicRacesExtraRacesPopup(Code.GameLogic.GameEvents.ClassicRacesMinigameModel minigameModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowClassicRacesRaceResultPopup(Code.GameLogic.GameEvents.ClassicRacesMinigameModel minigameModel, Code.GameLogic.GameEvents.CoreSupportEventModel eventModel, System.Action onCompletedCallback)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowAutoMergeEventInfoPopup(Code.GameLogic.GameEvents.ICoreSupportEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowAutoMergeEventStartPopup(Code.GameLogic.GameEvents.CoreSupportEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowAutoMergeFeatureFTUEPopup(System.Boolean force = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Cysharp.Threading.Tasks.UniTask BatchRewardContainerClaimSequence(System.Collections.Generic.List`1<GameLogic.Player.Rewards.IPlayerReward> rewardsToClaim, UI.IWalletState startingWalletState, System.Collections.Generic.List`1<Metaplay.Core.RandomPCG> rewardContainerRandomCheckpoints, System.Action onStart, System.Action onComplete)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowRollTheDiceMinigamePopup(RollTheDice minigameModel, Code.GameLogic.GameEvents.ICoreSupportEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowRollTheDiceMinigameInfoPopup(Code.GameLogic.GameEvents.ICoreSupportEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowRollTheDiceRecipeCompletePopup(RollTheDice minigameModel, Code.GameLogic.GameEvents.ICoreSupportEventModel eventModel, UnityEngine.AddressableAssets.AssetReferenceSprite dishSpriteRef, System.String dishName, System.Action onCompletedCallback)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowBuilderEventMinigamePopup(Code.GameLogic.GameEvents.BuilderEventMinigameModel minigameModel, Code.GameLogic.GameEvents.ICoreSupportEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowBuilderEventInfoPopup(Code.GameLogic.GameEvents.ICoreSupportEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowBuilderEventScreenTransitionEffect(Code.GameLogic.GameEvents.ICoreSupportEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowBuilderEventAllBuildsCompletedPopup(System.String titleText, System.String descriptionText, System.String buttonText)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowBuilderEventOutOfTokensPopup(Code.GameLogic.GameEvents.ICoreSupportEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowBuilderEventCompletionRewardPopup(Code.GameLogic.GameEvents.IBuilderEventMinigame minigameModel, Code.GameLogic.GameEvents.ICoreSupportEventModel eventModel, System.Action onCompletedCallback)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowCoreSupportEventStartPopup(Code.GameLogic.GameEvents.CoreSupportEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowCoreSupportEventEndPopup(Code.GameLogic.GameEvents.CoreSupportEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowCoreSupportEventTeasePopup(Code.GameLogic.GameEvents.CoreSupportEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowCoreSupportEventIntroPopup(Code.GameLogic.GameEvents.ICoreSupportEventInfo eventInfo, Metaplay.Core.Activables.MetaActivableVisibleStatus+InPreview inPreview)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowMixABoosterEventPopup(GameLogic.MixABooster.MixABoosterEventModel eventModel, System.Boolean autoPopup)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowMixABoosterStartPopup(GameLogic.MixABooster.MixABoosterEventModel eventModel, System.Boolean showEndVariant, System.Boolean autoPopup)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowMixABoosterInfoPopup(GameLogic.MixABooster.MixABoosterEventModel eventModel, System.Boolean autoPopup)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowDailyChallengesMinigamePopup(GameLogic.Player.IPlayer player, Code.GameLogic.GameEvents.DailyChallenges.IDailyChallengesMinigameModel minigameModel, Code.GameLogic.GameEvents.ICoreSupportEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowDailyChallengesEventInfoPopup(System.Boolean isAuto, Code.GameLogic.GameEvents.ICoreSupportEventModel eventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ShowWildItemInfoPopup(System.Action onPopupClosed = null)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

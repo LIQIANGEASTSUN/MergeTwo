@@ -1,0 +1,9 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public class SellableComponent : ComponentBase<SellCapability> // TypeDefIndex: 1087
+{
+	// Methods
+
+	// RVA: 0x68FDCF0 Offset: 0x68F9CF0 VA: 0x68FDCF0
+	public void .ctor(SellCapability capability, Entity entity) { }
+}
+

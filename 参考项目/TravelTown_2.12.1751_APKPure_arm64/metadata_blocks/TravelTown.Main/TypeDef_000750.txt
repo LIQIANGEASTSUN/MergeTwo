@@ -1,0 +1,14 @@
+// Namespace: MergeEngine.ECS.Systems.State
+public interface IRemoteLoadedComponent<TStatePayload> // TypeDefIndex: 750
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void LoadComponent(TStatePayload componentData);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IRemoteLoadedComponent<__Il2CppFullySharedGenericType>.LoadComponent
+	*/
+}
+

@@ -1,0 +1,14 @@
+// Namespace: MergeEngine.Model.Configuration
+public class MultipleConfigurableScriptableObjectConfigurationModelBase<T> : MultipleConfigurationModelBase<T, string, ConfigurableScriptableObjectsLookup<T>>, IMultipleConfigurableScriptableObjectConfigurationModel<T>, IMultipleConfigurationModel<string, T> // TypeDefIndex: 566
+{
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x421F240 Offset: 0x421B240 VA: 0x421F240
+	|-MultipleConfigurableScriptableObjectConfigurationModelBase<object>..ctor
+	*/
+}
+

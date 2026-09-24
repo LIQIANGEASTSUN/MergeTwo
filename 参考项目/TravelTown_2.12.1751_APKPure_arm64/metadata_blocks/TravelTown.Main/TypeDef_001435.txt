@@ -1,0 +1,19 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class ChargableCapability : CapabilityBase // TypeDefIndex: 1435
+{
+	// Fields
+	[JsonProperty("StateSpritesAssets")]
+	private string[] _stateSpritesPaths; // 0x18
+	[JsonIgnore]
+	private RemoteSpriteLocation[] _stateSpritesLocations; // 0x20
+
+	// Methods
+
+	// RVA: 0x600FA34 Offset: 0x600BA34 VA: 0x600FA34
+	public RemoteSpriteLocation[] GetStateSpriteAssets() { }
+
+	// RVA: 0x600FD1C Offset: 0x600BD1C VA: 0x600FD1C
+	public void .ctor() { }
+}
+

@@ -1,0 +1,9 @@
+// Namespace: Merger.MergeBoard.Signals
+public class MergeBoardClearItemSelectionSignal // TypeDefIndex: 25792
+{
+	// Methods
+
+	// RVA: 0x6A7A950 Offset: 0x6A76950 VA: 0x6A7A950
+	public void .ctor() { }
+}
+

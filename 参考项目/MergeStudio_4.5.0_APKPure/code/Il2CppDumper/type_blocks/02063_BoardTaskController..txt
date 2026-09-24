@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+private struct BoardTaskController.<SpawnDynamicTask>d__40 : IAsyncStateMachine // TypeDefIndex: 2063
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncUniTaskVoidMethodBuilder <>t__builder; // 0x4
+	public BoardTaskController <>4__this; // 0x8
+	public BalanceBoardTaskConfigModel taskConfig; // 0xC
+	private UniTask.Awaiter<bool> <>u__1; // 0x10
+
+	// Methods
+
+	// RVA: 0x1968CA0 Offset: 0x1968CA0 VA: 0x1968CA0 Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x1969C44 Offset: 0x1969C44 VA: 0x1969C44 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

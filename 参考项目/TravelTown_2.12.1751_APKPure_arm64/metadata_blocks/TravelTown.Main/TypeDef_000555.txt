@@ -1,0 +1,29 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class MergingConfigurationModel.<>c // TypeDefIndex: 555
+{
+	// Fields
+	public static readonly MergingConfigurationModel.<>c <>9; // 0x0
+	public static Func<IMergeGraphItem, IEnumerable<IMergeItem>> <>9__16_0; // 0x8
+	public static Func<IMergeGraphItem, bool> <>9__16_1; // 0x10
+	public static Func<IMergeItem, IMergeGraphItem> <>9__51_0; // 0x18
+
+	// Methods
+
+	// RVA: 0x614101C Offset: 0x613D01C VA: 0x614101C
+	private static void .cctor() { }
+
+	// RVA: 0x6141084 Offset: 0x613D084 VA: 0x6141084
+	public void .ctor() { }
+
+	// RVA: 0x614108C Offset: 0x613D08C VA: 0x614108C
+	internal IEnumerable<IMergeItem> <GraphsLoaded>b__16_0(IMergeGraphItem graph) { }
+
+	// RVA: 0x6141128 Offset: 0x613D128 VA: 0x6141128
+	internal bool <GraphsLoaded>b__16_1(IMergeGraphItem graph) { }
+
+	// RVA: 0x61411D4 Offset: 0x613D1D4 VA: 0x61411D4
+	internal IMergeGraphItem <BuildRecursiveSpawnInfo>b__51_0(IMergeItem spawn) { }
+}
+

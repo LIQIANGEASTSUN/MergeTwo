@@ -1,0 +1,9 @@
+Type: GameLogic.Player.Items.Collectable.ICollectCurrencyAction
+
+Method: GameLogic.Player.Items.Collectable.ICalculateCollectValue get_ValueCalculator()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

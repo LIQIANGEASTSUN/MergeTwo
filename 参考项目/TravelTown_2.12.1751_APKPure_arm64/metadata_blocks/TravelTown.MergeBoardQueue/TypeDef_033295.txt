@@ -1,0 +1,28 @@
+// Namespace: Merger.MergeBoardQueue.Services
+public class MergeBoardItemRewardDequeueStrategy : IBoardItemRewardDequeueStrategy // TypeDefIndex: 33295
+{
+	// Fields
+	[Inject]
+	private IBoardQueueModel _boardQueueModel; // 0x10
+	[Inject]
+	private BoardController _boardController; // 0x18
+	[Inject]
+	private IMergeBoardLayout _mergeBoardLayout; // 0x20
+	[Inject]
+	private IMergeBoardModel _mergeBoardModel; // 0x28
+
+	// Methods
+
+	// RVA: 0x6A57630 Offset: 0x6A53630 VA: 0x6A57630 Slot: 4
+	public bool CanHandle(ItemMultiple itemMultiple) { }
+
+	// RVA: 0x6A57704 Offset: 0x6A53704 VA: 0x6A57704 Slot: 5
+	public bool TrySpawnDirectlyToBoard(ItemMultiple itemMultiple, List<Tuple<Vector3, IRewardViewData>> rewardsPositions, ResourceSource source, List<Tuple<Vector3, IRewardViewData>> flyRewardsToFill, Dictionary<IRewardViewData, RewardAnimationTargetData> overrideTargetDict) { }
+
+	// RVA: 0x6A578AC Offset: 0x6A538AC VA: 0x6A578AC
+	private bool IsBoardFull() { }
+
+	// RVA: 0x6A579FC Offset: 0x6A539FC VA: 0x6A579FC
+	public void .ctor() { }
+}
+

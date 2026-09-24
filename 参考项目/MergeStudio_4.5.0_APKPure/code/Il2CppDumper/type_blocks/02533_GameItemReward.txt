@@ -1,0 +1,22 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class GameItemReward : IReward // TypeDefIndex: 2533
+{
+	// Fields
+	public string SetIDLevel; // 0x8
+	public int Quantity; // 0xC
+	public int Sorting; // 0x10
+	public List<GameQuantityWeight> QuantityWeightList; // 0x14
+
+	// Properties
+	public GameRewardType RewardType { get; }
+
+	// Methods
+
+	// RVA: 0x1A1C0BC Offset: 0x1A1C0BC VA: 0x1A1C0BC Slot: 4
+	public GameRewardType get_RewardType() { }
+
+	// RVA: 0x1A1C0C4 Offset: 0x1A1C0C4 VA: 0x1A1C0C4
+	public void .ctor() { }
+}
+

@@ -1,0 +1,45 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BubbledItemSystem.<>c // TypeDefIndex: 7487
+{
+	// Fields
+	public static readonly BubbledItemSystem.<>c <>9; // 0x0
+	public static Comparison<WeightedItemSpawnable> <>9__76_0; // 0x8
+	public static Func<WeightedItemSpawnable, int> <>9__76_1; // 0x10
+	public static Func<WeightedItemSpawnable, IMergeItem> <>9__76_2; // 0x18
+	public static Comparison<WeightedItemSpawnable> <>9__76_3; // 0x20
+	public static Func<WeightedItemSpawnable, int> <>9__76_4; // 0x28
+	public static Func<WeightedItemSpawnable, IMergeItem> <>9__76_5; // 0x30
+	public static Func<LockedComponent, bool> <>9__82_0; // 0x38
+
+	// Methods
+
+	// RVA: 0x658A1E8 Offset: 0x65861E8 VA: 0x658A1E8
+	private static void .cctor() { }
+
+	// RVA: 0x658A250 Offset: 0x6586250 VA: 0x658A250
+	public void .ctor() { }
+
+	// RVA: 0x658A258 Offset: 0x6586258 VA: 0x658A258
+	internal int <CreateExpiredItemsSpawningList>b__76_0(WeightedItemSpawnable item1, WeightedItemSpawnable item2) { }
+
+	// RVA: 0x658A27C Offset: 0x658627C VA: 0x658A27C
+	internal int <CreateExpiredItemsSpawningList>b__76_1(WeightedItemSpawnable item) { }
+
+	// RVA: 0x658A294 Offset: 0x6586294 VA: 0x658A294
+	internal IMergeItem <CreateExpiredItemsSpawningList>b__76_2(WeightedItemSpawnable item) { }
+
+	// RVA: 0x658A2B8 Offset: 0x65862B8 VA: 0x658A2B8
+	internal int <CreateExpiredItemsSpawningList>b__76_3(WeightedItemSpawnable item1, WeightedItemSpawnable item2) { }
+
+	// RVA: 0x658A2DC Offset: 0x65862DC VA: 0x658A2DC
+	internal int <CreateExpiredItemsSpawningList>b__76_4(WeightedItemSpawnable item) { }
+
+	// RVA: 0x658A2F4 Offset: 0x65862F4 VA: 0x658A2F4
+	internal IMergeItem <CreateExpiredItemsSpawningList>b__76_5(WeightedItemSpawnable item) { }
+
+	// RVA: 0x658A318 Offset: 0x6586318 VA: 0x658A318
+	internal bool <OnWillProcessComponents>b__82_0(LockedComponent item) { }
+}
+

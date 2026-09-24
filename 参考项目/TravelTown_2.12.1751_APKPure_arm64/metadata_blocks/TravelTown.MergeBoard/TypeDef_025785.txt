@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class TimeLockSystem.<>c__DisplayClass10_0 // TypeDefIndex: 25785
+{
+	// Fields
+	public Entity currentEntity; // 0x10
+	public TimeLockGroup lockGroup; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A78E1C Offset: 0x6A74E1C VA: 0x6A78E1C
+	public void .ctor() { }
+
+	// RVA: 0x6A78EEC Offset: 0x6A74EEC VA: 0x6A78EEC
+	internal bool <HasOtherUnlockInProgress>b__0(ValueTuple<Entity, TimeLockComponent> e) { }
+}
+

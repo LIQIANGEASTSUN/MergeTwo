@@ -1,0 +1,12 @@
+// Namespace: Merger.Game.Signal
+public class ProducerInventorySlotUnlockedSignal : ItemAmountInventoryBaseSignal // TypeDefIndex: 9415
+{
+	// Fields
+	public string MergeItemUniqueId; // 0x28
+
+	// Methods
+
+	// RVA: 0x676C2F8 Offset: 0x67682F8 VA: 0x676C2F8
+	public void .ctor(string mergeItemUniqueId, int availableSlots, int inventoryCapacity, int freeTilesOnBoard, int numNewProducers, InventorySlotType type) { }
+}
+

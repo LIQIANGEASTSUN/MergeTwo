@@ -1,0 +1,34 @@
+// Namespace: MergeEngine.ECS.Components
+public class BaseIdComponent<TCapability> : ComponentBase<TCapability> // TypeDefIndex: 1004
+{
+	// Properties
+	public string Id { get; }
+	public string UUId { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public string get_Id() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4BEC144 Offset: 0x4BE8144 VA: 0x4BEC144
+	|-BaseIdComponent<object>.get_Id
+	*/
+
+	// RVA: -1 Offset: -1
+	public string get_UUId() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4BEC164 Offset: 0x4BE8164 VA: 0x4BEC164
+	|-BaseIdComponent<object>.get_UUId
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor(TCapability capability, Entity entity) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4BEC184 Offset: 0x4BE8184 VA: 0x4BEC184
+	|-BaseIdComponent<object>..ctor
+	*/
+}
+

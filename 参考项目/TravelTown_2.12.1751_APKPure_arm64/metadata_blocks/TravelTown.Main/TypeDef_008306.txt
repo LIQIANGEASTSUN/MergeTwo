@@ -1,0 +1,35 @@
+// Namespace: Merger.Game.ViewModel
+public class ProducerInventorySlotViewData // TypeDefIndex: 8306
+{
+	// Fields
+	[CompilerGenerated]
+	private IMergeItem <Item>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private int <UnlocksAt>k__BackingField; // 0x18
+
+	// Properties
+	public IMergeItem Item { get; set; }
+	public int UnlocksAt { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x663385C Offset: 0x662F85C VA: 0x663385C
+	public IMergeItem get_Item() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6633864 Offset: 0x662F864 VA: 0x6633864
+	public void set_Item(IMergeItem value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x663386C Offset: 0x662F86C VA: 0x663386C
+	public int get_UnlocksAt() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6633874 Offset: 0x662F874 VA: 0x6633874
+	public void set_UnlocksAt(int value) { }
+
+	// RVA: 0x662C1EC Offset: 0x66281EC VA: 0x662C1EC
+	public void .ctor() { }
+}
+

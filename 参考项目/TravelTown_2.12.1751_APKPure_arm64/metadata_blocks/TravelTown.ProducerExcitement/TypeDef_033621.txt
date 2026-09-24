@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ProducerExcitementService.<>c__DisplayClass27_0 // TypeDefIndex: 33621
+{
+	// Fields
+	public int tableExcitementId; // 0x10
+
+	// Methods
+
+	// RVA: 0x6AD7C10 Offset: 0x6AD3C10 VA: 0x6AD7C10
+	public void .ctor() { }
+
+	// RVA: 0x6AD8984 Offset: 0x6AD4984 VA: 0x6AD8984
+	internal bool <ConsumeExcitementForProducer>b__1(int id) { }
+}
+

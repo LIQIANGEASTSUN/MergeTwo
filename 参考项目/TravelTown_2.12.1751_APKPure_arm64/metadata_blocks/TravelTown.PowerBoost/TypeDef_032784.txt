@@ -1,0 +1,9 @@
+// Namespace: Merger.MergeBoard.PowerBoost.Signals
+public class MergeBoardPowerBoostUnlockFinishedSignal // TypeDefIndex: 32784
+{
+	// Methods
+
+	// RVA: 0x6ACCC64 Offset: 0x6AC8C64 VA: 0x6ACCC64
+	public void .ctor() { }
+}
+

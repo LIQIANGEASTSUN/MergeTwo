@@ -1,0 +1,176 @@
+// Namespace: 
+public class MergeConfigManager : Manager<MergeConfigManager> // TypeDefIndex: 2773
+{
+	// Fields
+	private List<TableMergeItem> tempProductParent; // 0x10
+	private SpriteAtlas m_mergeicon; // 0x14
+	private Dictionary<int, int> maxLevelIds; // 0x18
+	private List<int> _recordEnergyTorrentList; // 0x1C
+	private List<int> _secondOutLineList; // 0x20
+
+	// Properties
+	public SpriteAtlas mergeIcon { get; }
+
+	// Methods
+
+	// RVA: 0x2C388F4 Offset: 0x2C388F4 VA: 0x2C388F4
+	public SpriteAtlas get_mergeIcon() { }
+
+	// RVA: 0x2C38A58 Offset: 0x2C38A58 VA: 0x2C38A58 Slot: 4
+	protected override void InitImmediately() { }
+
+	// RVA: 0x2C38AF0 Offset: 0x2C38AF0 VA: 0x2C38AF0
+	public void InitConfigs() { }
+
+	// RVA: 0x2C386F0 Offset: 0x2C386F0 VA: 0x2C386F0
+	public TableMergeItem GetLastLevelItemConfig(int id) { }
+
+	// RVA: 0x2C38B44 Offset: 0x2C38B44 VA: 0x2C38B44
+	public bool IsMaxEnergy(TableMergeItem item) { }
+
+	// RVA: 0x2C38BC8 Offset: 0x2C38BC8 VA: 0x2C38BC8
+	public int GetItemLevel(int id) { }
+
+	// RVA: 0x2C38CC0 Offset: 0x2C38CC0 VA: 0x2C38CC0
+	public int GetEnergyTorrentPower(int mergeId) { }
+
+	// RVA: 0x2C394F0 Offset: 0x2C394F0 VA: 0x2C394F0
+	public void DebugSetEnergytorrent(int two, int four) { }
+
+	// RVA: 0x2C390F8 Offset: 0x2C390F8 VA: 0x2C390F8
+	private bool IsSecondOutLine(int mergeId) { }
+
+	// RVA: 0x2C3107C Offset: 0x2C3107C VA: 0x2C3107C
+	public int GetOneOutput(TableMergeItem mergeItemConfig) { }
+
+	// RVA: 0x2C3973C Offset: 0x2C3973C VA: 0x2C3973C
+	public int GetOneOutputByLimit(TableMergeItem mergeItemConfig) { }
+
+	// RVA: 0x2C39B10 Offset: 0x2C39B10 VA: 0x2C39B10
+	public int GetOneOutputByLimitDynamicPower(TableMergeItem mergeItemConfig, int index, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2C3A5B4 Offset: 0x2C3A5B4 VA: 0x2C3A5B4
+	public int GetOneTimeOutput(TableMergeItem mergeItemConfig) { }
+
+	// RVA: 0x2C3A66C Offset: 0x2C3A66C VA: 0x2C3A66C
+	public bool IsCanShowStar(TableMergeItem mergeItemConfig) { }
+
+	[IDTag(0)]
+	// RVA: 0x2C3A6EC Offset: 0x2C3A6EC VA: 0x2C3A6EC
+	public bool IsCanProductItem(TableMergeItem mergeItemConfig) { }
+
+	// RVA: 0x2C3A818 Offset: 0x2C3A818 VA: 0x2C3A818
+	public bool IsEnergyTorrentProduct(TableMergeItem mergeItemConfig) { }
+
+	[IDTag(1)]
+	// RVA: 0x2C3A88C Offset: 0x2C3A88C VA: 0x2C3A88C
+	public bool IsCanProductItem(int id) { }
+
+	[IDTag(0)]
+	// RVA: 0x2C3AA30 Offset: 0x2C3AA30 VA: 0x2C3AA30
+	public bool IsEnergyProductItem(TableMergeItem mergeItemConfig) { }
+
+	// RVA: 0x2C3AB04 Offset: 0x2C3AB04 VA: 0x2C3AB04
+	public bool IsProductItem(TableMergeItem mergeItemConfig) { }
+
+	[IDTag(1)]
+	// RVA: 0x2C3AB68 Offset: 0x2C3AB68 VA: 0x2C3AB68
+	public bool IsEnergyProductItem(int id) { }
+
+	[IDTag(0)]
+	// RVA: 0x2C3ACC8 Offset: 0x2C3ACC8 VA: 0x2C3ACC8
+	public bool IsTimeProductItem(TableMergeItem mergeItemConfig) { }
+
+	[IDTag(1)]
+	// RVA: 0x2C3AD50 Offset: 0x2C3AD50 VA: 0x2C3AD50
+	public bool IsTimeProductItem(int id) { }
+
+	// RVA: 0x2C3AE48 Offset: 0x2C3AE48 VA: 0x2C3AE48
+	public bool IsDeathProductItem(TableMergeItem mergeItemConfig, StorageMergeItem storageMergeItem, bool checkOut = True) { }
+
+	// RVA: 0x2C3AF88 Offset: 0x2C3AF88 VA: 0x2C3AF88
+	public bool IsLimitNoCdProductItem(TableMergeItem mergeItemConfig) { }
+
+	[IDTag(0)]
+	// RVA: 0x2C3B048 Offset: 0x2C3B048 VA: 0x2C3B048
+	public bool IsDeathBoxItem(TableMergeItem mergeItemConfig, StorageMergeItem storageMergeItem) { }
+
+	// RVA: 0x2C3B178 Offset: 0x2C3B178 VA: 0x2C3B178
+	public void InitMaxLevelId() { }
+
+	// RVA: 0x2C3B538 Offset: 0x2C3B538 VA: 0x2C3B538
+	public bool IsMaxLevel(int id) { }
+
+	// RVA: 0x2C3B5EC Offset: 0x2C3B5EC VA: 0x2C3B5EC
+	public bool IsCanMergeItem(int id) { }
+
+	[IDTag(1)]
+	// RVA: 0x2C3B714 Offset: 0x2C3B714 VA: 0x2C3B714
+	public bool IsDeathBoxItem(int id, StorageMergeItem storageMergeItem) { }
+
+	// RVA: 0x2C3B828 Offset: 0x2C3B828 VA: 0x2C3B828
+	public ActiveCostType GetActiveCostType(int id) { }
+
+	[IDTag(1)]
+	// RVA: 0x2C3B938 Offset: 0x2C3B938 VA: 0x2C3B938
+	public bool IsStoreItem(int id) { }
+
+	[IDTag(0)]
+	// RVA: 0x2C3BAAC Offset: 0x2C3BAAC VA: 0x2C3BAAC
+	public bool IsStoreItem(TableMergeItem mergeItemConfig) { }
+
+	// RVA: 0x2C3BBA8 Offset: 0x2C3BBA8 VA: 0x2C3BBA8
+	public bool IsTimeStoreItem(TableMergeItem mergeItemConfig) { }
+
+	// RVA: 0x2C3BC20 Offset: 0x2C3BC20 VA: 0x2C3BC20
+	public List<TableMergeItem> GetProductParent(int id) { }
+
+	// RVA: 0x2C3C030 Offset: 0x2C3C030 VA: 0x2C3C030
+	public int GetMergeLineById(int id) { }
+
+	// RVA: 0x2C3A404 Offset: 0x2C3A404 VA: 0x2C3A404
+	public TableMergeLine GetMergeLine(int id) { }
+
+	// RVA: 0x2C3C200 Offset: 0x2C3C200 VA: 0x2C3C200
+	public TableMergeLine GetMergeLineByLine(int line) { }
+
+	// RVA: 0x2C3C2EC Offset: 0x2C3C2EC VA: 0x2C3C2EC
+	public int GetMergeLineProductItemId(int id, int productCount) { }
+
+	// RVA: 0x2C3C474 Offset: 0x2C3C474 VA: 0x2C3C474
+	public MergeItemType GetItemType(int id) { }
+
+	// RVA: 0x2C3C570 Offset: 0x2C3C570 VA: 0x2C3C570
+	public bool IsMagicWand(int id) { }
+
+	// RVA: 0x2C3C678 Offset: 0x2C3C678 VA: 0x2C3C678
+	public bool IsOmnipoten(int id) { }
+
+	// RVA: 0x2C3C780 Offset: 0x2C3C780 VA: 0x2C3C780
+	public bool IsSplit(int id) { }
+
+	// RVA: 0x2C3C888 Offset: 0x2C3C888 VA: 0x2C3C888
+	public TableMergeItem GetXpItem(int level = 1) { }
+
+	// RVA: 0x2C3CA40 Offset: 0x2C3CA40 VA: 0x2C3CA40
+	public bool IsOpenRvSpeedUp(int id) { }
+
+	// RVA: 0x2C3CB48 Offset: 0x2C3CB48 VA: 0x2C3CB48
+	public bool IsCanOmnipoten(TableMergeItem item) { }
+
+	// RVA: 0x2C3CBD0 Offset: 0x2C3CBD0 VA: 0x2C3CBD0
+	public bool IsCanSplit(int id) { }
+
+	// RVA: 0x2C3CCF8 Offset: 0x2C3CCF8 VA: 0x2C3CCF8
+	public TableMergeItem GetLevelItem(int type, int level = -1) { }
+
+	// RVA: 0x2C3CF74 Offset: 0x2C3CF74 VA: 0x2C3CF74
+	public bool IsHaveGalleryAwards(int id) { }
+
+	// RVA: 0x2C3D0D8 Offset: 0x2C3D0D8 VA: 0x2C3D0D8
+	public void .ctor() { }
+
+	// RVA: 0x2C3D21C Offset: 0x2C3D21C VA: 0x2C3D21C
+	public void <>iFixBaseProxy_InitImmediately() { }
+}
+

@@ -1,0 +1,18 @@
+// Namespace: Merger.MergeBoardSkipCooldownCapability.Systems
+public class TimeLockSkipCooldownSystem : ISystem // TypeDefIndex: 33871
+{
+	// Fields
+	[Inject]
+	private TimeLockSkipCooldownStrategy _timeLockSkipCooldownStrategy; // 0x10
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A62DB4 Offset: 0x6A5EDB4 VA: 0x6A62DB4 Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A63074 Offset: 0x6A5F074 VA: 0x6A63074
+	public void .ctor() { }
+}
+

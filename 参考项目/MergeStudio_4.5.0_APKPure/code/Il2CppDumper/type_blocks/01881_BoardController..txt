@@ -1,0 +1,20 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardController.<>c__DisplayClass298_0 // TypeDefIndex: 1881
+{
+	// Fields
+	public Coordinate boardIndex; // 0x8
+	public BoardController <>4__this; // 0x10
+
+	// Methods
+
+	// RVA: 0x19198DC Offset: 0x19198DC VA: 0x19198DC
+	public void .ctor() { }
+
+	// RVA: 0x19198E4 Offset: 0x19198E4 VA: 0x19198E4
+	internal int <IsNextToAutoSpawner>b__2(Coordinate v1, Coordinate v2) { }
+
+	// RVA: 0x19199E8 Offset: 0x19199E8 VA: 0x19199E8
+	internal bool <IsNextToAutoSpawner>b__3(Coordinate pos) { }
+}
+

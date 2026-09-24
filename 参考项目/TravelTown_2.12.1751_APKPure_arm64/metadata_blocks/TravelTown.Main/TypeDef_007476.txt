@@ -1,0 +1,29 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class TLOBubbleProbabilityModifier.<>c // TypeDefIndex: 7476
+{
+	// Fields
+	public static readonly TLOBubbleProbabilityModifier.<>c <>9; // 0x0
+	public static Func<OrderProgress, bool> <>9__5_0; // 0x8
+	public static Func<ItemMultiple, IMergeGraphItem> <>9__5_1; // 0x10
+	public static Func<IMergeGraphItem, IEnumerable<IMergeItem>> <>9__5_2; // 0x18
+
+	// Methods
+
+	// RVA: 0x6581FF0 Offset: 0x657DFF0 VA: 0x6581FF0
+	private static void .cctor() { }
+
+	// RVA: 0x6582058 Offset: 0x657E058 VA: 0x6582058
+	public void .ctor() { }
+
+	// RVA: 0x6582060 Offset: 0x657E060 VA: 0x6582060
+	internal bool <TryModifyProbability>b__5_0(OrderProgress i) { }
+
+	// RVA: 0x65820F0 Offset: 0x657E0F0 VA: 0x65820F0
+	internal IMergeGraphItem <TryModifyProbability>b__5_1(ItemMultiple i) { }
+
+	// RVA: 0x65821B8 Offset: 0x657E1B8 VA: 0x65821B8
+	internal IEnumerable<IMergeItem> <TryModifyProbability>b__5_2(IMergeGraphItem graph) { }
+}
+

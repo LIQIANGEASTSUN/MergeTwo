@@ -1,0 +1,75 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public class CombiningComponent : RemoteLoadedComponent<InteractionCapability, SerializedFeedingComponent, List<ItemPayloadBase>> // TypeDefIndex: 1052
+{
+	// Fields
+	public const string Key = "pot";
+	[CompilerGenerated]
+	private List<ItemPayloadBase> <ConsumedItems>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private readonly List<Combination> <Combinations>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private bool <ReadyToProduce>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private bool <IsProducing>k__BackingField; // 0x41
+	[CompilerGenerated]
+	private bool <BoardIsFullShown>k__BackingField; // 0x42
+
+	// Properties
+	public override string ComponentKey { get; }
+	public List<ItemPayloadBase> ConsumedItems { get; set; }
+	public List<Combination> Combinations { get; }
+	public bool ReadyToProduce { get; set; }
+	public bool IsProducing { get; set; }
+	public bool BoardIsFullShown { get; set; }
+
+	// Methods
+
+	// RVA: 0x68FBDA8 Offset: 0x68F7DA8 VA: 0x68FBDA8 Slot: 11
+	public override string get_ComponentKey() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FBDE8 Offset: 0x68F7DE8 VA: 0x68FBDE8
+	public List<ItemPayloadBase> get_ConsumedItems() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FBDF0 Offset: 0x68F7DF0 VA: 0x68FBDF0
+	private void set_ConsumedItems(List<ItemPayloadBase> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FBDF8 Offset: 0x68F7DF8 VA: 0x68FBDF8
+	public List<Combination> get_Combinations() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FBE00 Offset: 0x68F7E00 VA: 0x68FBE00
+	public bool get_ReadyToProduce() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FBE08 Offset: 0x68F7E08 VA: 0x68FBE08
+	public void set_ReadyToProduce(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FBE14 Offset: 0x68F7E14 VA: 0x68FBE14
+	public bool get_IsProducing() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FBE1C Offset: 0x68F7E1C VA: 0x68FBE1C
+	public void set_IsProducing(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FBE28 Offset: 0x68F7E28 VA: 0x68FBE28
+	public bool get_BoardIsFullShown() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FBE30 Offset: 0x68F7E30 VA: 0x68FBE30
+	public void set_BoardIsFullShown(bool value) { }
+
+	// RVA: 0x68FBE3C Offset: 0x68F7E3C VA: 0x68FBE3C
+	public void .ctor(InteractionCapability capability, Entity entity) { }
+
+	// RVA: 0x68FBF00 Offset: 0x68F7F00 VA: 0x68FBF00 Slot: 12
+	protected override void OnBeforeSerialize() { }
+
+	// RVA: 0x68FBF4C Offset: 0x68F7F4C VA: 0x68FBF4C Slot: 15
+	public override void LoadComponent(List<ItemPayloadBase> componentData) { }
+}
+

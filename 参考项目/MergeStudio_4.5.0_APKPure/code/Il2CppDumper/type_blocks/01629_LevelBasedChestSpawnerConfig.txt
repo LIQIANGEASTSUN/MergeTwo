@@ -1,0 +1,13 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class LevelBasedChestSpawnerConfig // TypeDefIndex: 1629
+{
+	// Fields
+	public List<LevelBasedChestSpawnerConfig.LevelBasedChestSpawn> LevelBasedChestSpawnList; // 0x8
+
+	// Methods
+
+	// RVA: 0x18C5D8C Offset: 0x18C5D8C VA: 0x18C5D8C
+	public void .ctor() { }
+}
+

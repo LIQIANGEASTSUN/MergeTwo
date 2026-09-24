@@ -1,0 +1,44 @@
+Type: GameLogic.MergeChains.IMergeChainElement
+
+Method: System.Int32 get_Count()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 IndexOf(System.Int32 itemId)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean Contains(System.Int32 itemId)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Config.ItemDef get_First()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Config.ItemDef> get_AllItemDefs()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Config.ItemDef ElementAtOrDefault(System.Int32 index)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

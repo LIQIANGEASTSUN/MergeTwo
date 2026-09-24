@@ -1,0 +1,18 @@
+// Namespace: ContextualizedECS.Systems
+public class SystemsManager // TypeDefIndex: 33692
+{
+	// Fields
+	private readonly List<SystemInfo> _systems; // 0x10
+
+	// Methods
+
+	// RVA: 0x5F15668 Offset: 0x5F11668 VA: 0x5F15668
+	public void .ctor(List<SystemInfo> systems) { }
+
+	// RVA: 0x5F15720 Offset: 0x5F11720 VA: 0x5F15720
+	public TickArgs Tick(TickArgs tickArgs, IEntitiesHolder entitiesHolder) { }
+
+	// RVA: 0x5F15904 Offset: 0x5F11904 VA: 0x5F15904
+	private void ExecuteSystems(TickContext context) { }
+}
+

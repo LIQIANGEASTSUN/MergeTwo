@@ -1,0 +1,17 @@
+// Namespace: MergeEngine.Configuration
+[Serializable]
+public class BubbledItemsConfig // TypeDefIndex: 1149
+{
+	// Fields
+	public float BubbleExpirationTime; // 0x10
+	public int MinLevelToDropBubbles; // 0x14
+	public int NumFreeBursts; // 0x18
+	public List<WeightedItemSpawnable> ExpiredBubbleSpawnedItems; // 0x20
+	public List<WeightedItemSpawnable> RemovedBubbleSpawnedItems; // 0x28
+
+	// Methods
+
+	// RVA: 0x6905460 Offset: 0x6901460 VA: 0x6905460
+	public void .ctor() { }
+}
+

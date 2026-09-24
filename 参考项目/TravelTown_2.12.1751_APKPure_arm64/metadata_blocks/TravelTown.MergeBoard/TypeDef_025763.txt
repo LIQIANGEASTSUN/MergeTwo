@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class PendingItemsCombinationSystem.<>c__DisplayClass4_0 // TypeDefIndex: 25763
+{
+	// Fields
+	public int position; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A72A08 Offset: 0x6A6EA08 VA: 0x6A72A08
+	public void .ctor() { }
+
+	// RVA: 0x6A72C08 Offset: 0x6A6EC08 VA: 0x6A72C08
+	internal bool <FindEntityAtPosition>b__0(ValueTuple<Entity, BoardTilePositionComponent, MergeComponent> entity) { }
+}
+

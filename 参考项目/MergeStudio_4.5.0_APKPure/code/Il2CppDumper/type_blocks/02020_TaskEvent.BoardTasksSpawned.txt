@@ -1,0 +1,4 @@
+// Namespace: 
+public struct TaskEvent.BoardTasksSpawned : IEvent // TypeDefIndex: 2020
+{}
+

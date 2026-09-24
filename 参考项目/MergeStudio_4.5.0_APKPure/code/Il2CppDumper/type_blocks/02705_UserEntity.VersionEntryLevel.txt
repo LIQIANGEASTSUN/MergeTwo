@@ -1,0 +1,17 @@
+// Namespace: 
+[Serializable]
+public class UserEntity.VersionEntryLevel // TypeDefIndex: 2705
+{
+	// Fields
+	public int VersionNumber; // 0x8
+	public int Level; // 0xC
+
+	// Methods
+
+	// RVA: 0x1A62B00 Offset: 0x1A62B00 VA: 0x1A62B00
+	public void .ctor() { }
+
+	// RVA: 0x1A5E2C4 Offset: 0x1A5E2C4 VA: 0x1A5E2C4
+	public void .ctor(int versionNumber, int level) { }
+}
+

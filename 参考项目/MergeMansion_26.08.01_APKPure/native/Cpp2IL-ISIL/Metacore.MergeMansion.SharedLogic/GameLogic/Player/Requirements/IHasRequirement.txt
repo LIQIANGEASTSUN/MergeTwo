@@ -1,0 +1,9 @@
+Type: GameLogic.Player.Requirements.IHasRequirement
+
+Method: GameLogic.Player.Requirements.PlayerRequirement get_Requirement()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

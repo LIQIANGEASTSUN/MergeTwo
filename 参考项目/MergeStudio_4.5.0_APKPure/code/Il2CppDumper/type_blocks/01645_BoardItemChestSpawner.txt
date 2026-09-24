@@ -1,0 +1,47 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "BoardItemChestSpawner", menuName = "Scriptable/BoardItem/ChestSpawner", order = 6)]
+public class BoardItemChestSpawner : BoardItemData, IConfigAdaptor<ChestSpawnerConfigAdaptor>, IConfigAdaptorBase // TypeDefIndex: 1645
+{
+	// Fields
+	public ChestSpawnerConfig SpawnerConfig; // 0x2C
+	public string SpineSkin; // 0x30
+	public Sprite OpenSprite; // 0x34
+	public bool UseDefaultSpriteForOpenedState; // 0x38
+	public bool IsBackupChest; // 0x39
+
+	// Methods
+
+	// RVA: 0x18C657C Offset: 0x18C657C VA: 0x18C657C Slot: 19
+	public virtual SpawnedItem GetNonProbabilisticItem(int currentCapacity) { }
+
+	// RVA: 0x18C67C0 Offset: 0x18C67C0 VA: 0x18C67C0 Slot: 20
+	public virtual SpawnedItem GetRandomItem() { }
+
+	// RVA: 0x18C6904 Offset: 0x18C6904 VA: 0x18C6904 Slot: 4
+	public override bool Initialize(BoardEntity boardEntity, IItemController item, long millisecondsPassed, bool isNewlyCreated) { }
+
+	// RVA: 0x18C72FC Offset: 0x18C72FC VA: 0x18C72FC Slot: 6
+	public override int GetTimeRequiredToExitCharging() { }
+
+	// RVA: 0x18C732C Offset: 0x18C732C VA: 0x18C732C Slot: 8
+	public override bool IsMergeable(IItemRuntimeData itself, IItemRuntimeData other) { }
+
+	// RVA: 0x18C764C Offset: 0x18C764C VA: 0x18C764C Slot: 9
+	public override bool IsMergeable(IItemRuntimeData itself) { }
+
+	// RVA: 0x18C7794 Offset: 0x18C7794 VA: 0x18C7794 Slot: 10
+	public override bool IsMergeable(IItemEntity itemEntity) { }
+
+	// RVA: 0x18C66FC Offset: 0x18C66FC VA: 0x18C66FC Slot: 17
+	public ChestSpawnerConfigAdaptor GetConfigAdaptor() { }
+
+	// RVA: 0x18C7850 Offset: 0x18C7850 VA: 0x18C7850 Slot: 18
+	public AdaptorBase ConvertFromLocal() { }
+
+	// RVA: 0x18C78B4 Offset: 0x18C78B4 VA: 0x18C78B4 Slot: 11
+	public override bool PreventStoreToInventory(IItemEntity itemEntity) { }
+
+	// RVA: 0x18C7974 Offset: 0x18C7974 VA: 0x18C7974
+	public void .ctor() { }
+}
+

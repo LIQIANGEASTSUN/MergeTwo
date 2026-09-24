@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergingConfigurationModel.<>c__DisplayClass31_0 // TypeDefIndex: 560
+{
+	// Fields
+	public string id; // 0x10
+
+	// Methods
+
+	// RVA: 0x613E8B0 Offset: 0x613A8B0 VA: 0x613E8B0
+	public void .ctor() { }
+
+	// RVA: 0x6141640 Offset: 0x613D640 VA: 0x6141640
+	internal bool <GetNextItemOnGraph>b__0(IMergeItem item) { }
+}
+

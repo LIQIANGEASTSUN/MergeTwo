@@ -1,0 +1,28 @@
+// Namespace: Merger.Game.Signal
+public class SkipBoardItemCooldownSignal // TypeDefIndex: 9440
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly SelectedBoardItem <SelectedBoardItem>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly ResourceMultiple <Price>k__BackingField; // 0x18
+	public IPromise SkipCooldownPromise; // 0x20
+
+	// Properties
+	public SelectedBoardItem SelectedBoardItem { get; }
+	public ResourceMultiple Price { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x676CA44 Offset: 0x6768A44 VA: 0x676CA44
+	public SelectedBoardItem get_SelectedBoardItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676CA4C Offset: 0x6768A4C VA: 0x676CA4C
+	public ResourceMultiple get_Price() { }
+
+	// RVA: 0x676CA54 Offset: 0x6768A54 VA: 0x676CA54
+	public void .ctor(SelectedBoardItem selectedBoardItem, ResourceMultiple price, IPromise skipCooldownPromise) { }
+}
+

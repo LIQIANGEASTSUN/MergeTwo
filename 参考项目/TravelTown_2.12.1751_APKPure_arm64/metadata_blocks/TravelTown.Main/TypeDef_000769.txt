@@ -1,0 +1,45 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardInventoryStateSystem.<>c<TState> // TypeDefIndex: 769
+{
+	// Fields
+	public static readonly BoardInventoryStateSystem.<>c<TState> <>9; // 0x0
+	public static Func<InventorySlotComponent, bool> <>9__2_0; // 0x0
+	public static Func<InventorySlotComponent, IdComponent> <>9__2_1; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	private static void .cctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3EF4F08 Offset: 0x3EF0F08 VA: 0x3EF4F08
+	|-BoardInventoryStateSystem.<>c<object>..cctor
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3EF4FC4 Offset: 0x3EF0FC4 VA: 0x3EF4FC4
+	|-BoardInventoryStateSystem.<>c<object>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal bool <GetExistingEntityIds>b__2_0(InventorySlotComponent item) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3EF4FCC Offset: 0x3EF0FCC VA: 0x3EF4FCC
+	|-BoardInventoryStateSystem.<>c<object>.<GetExistingEntityIds>b__2_0
+	*/
+
+	// RVA: -1 Offset: -1
+	internal IdComponent <GetExistingEntityIds>b__2_1(InventorySlotComponent items) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3EF4FEC Offset: 0x3EF0FEC VA: 0x3EF4FEC
+	|-BoardInventoryStateSystem.<>c<object>.<GetExistingEntityIds>b__2_1
+	*/
+}
+

@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class TransformSystem.<>c // TypeDefIndex: 25790
+{
+	// Fields
+	public static readonly TransformSystem.<>c <>9; // 0x0
+	public static Func<ValueTuple<Entity, ExpendableComponent, BoardTilePositionComponent, TimeDurationComponent, TimeLimitedActivationComponent>, bool> <>9__9_0; // 0x8
+	public static Predicate<WeightedItemSpawnable> <>9__10_0; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A7A86C Offset: 0x6A7686C VA: 0x6A7A86C
+	private static void .cctor() { }
+
+	// RVA: 0x6A7A8D4 Offset: 0x6A768D4 VA: 0x6A7A8D4
+	public void .ctor() { }
+
+	// RVA: 0x6A7A8DC Offset: 0x6A768DC VA: 0x6A7A8DC
+	internal bool <Tick>b__9_0(ValueTuple<Entity, ExpendableComponent, BoardTilePositionComponent, TimeDurationComponent, TimeLimitedActivationComponent> entity) { }
+
+	// RVA: 0x6A7A8FC Offset: 0x6A768FC VA: 0x6A7A8FC
+	internal bool <HandleTransformByInteract>b__10_0(WeightedItemSpawnable i) { }
+}
+

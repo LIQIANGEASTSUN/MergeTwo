@@ -1,0 +1,57 @@
+// Namespace: Merger.Game.Views
+public class GameViewBase<TViewModel> : ViewBase<TViewModel> // TypeDefIndex: 8590
+{
+	// Properties
+	protected bool HasGameStarted { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	protected bool get_HasGameStarted() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x5269B3C Offset: 0x5265B3C VA: 0x5269B3C
+	|-GameViewBase<object>.get_HasGameStarted
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 8
+	protected virtual void Awake() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x5269B94 Offset: 0x5265B94 VA: 0x5269B94
+	|-GameViewBase<object>.Awake
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 7
+	protected override void OnDestroy() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x5269C70 Offset: 0x5265C70 VA: 0x5269C70
+	|-GameViewBase<object>.OnDestroy
+	*/
+
+	// RVA: -1 Offset: -1
+	private void GameStartedChanged(bool started) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x5269D38 Offset: 0x5265D38 VA: 0x5269D38
+	|-GameViewBase<object>.GameStartedChanged
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 9
+	protected virtual void GameStarted() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x5269E14 Offset: 0x5265E14 VA: 0x5269E14
+	|-GameViewBase<object>.GameStarted
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x5269E18 Offset: 0x5265E18 VA: 0x5269E18
+	|-GameViewBase<object>..ctor
+	*/
+}
+

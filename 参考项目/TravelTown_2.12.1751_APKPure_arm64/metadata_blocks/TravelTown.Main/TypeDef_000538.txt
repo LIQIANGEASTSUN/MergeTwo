@@ -1,0 +1,119 @@
+// Namespace: MergeEngine.Model.Configuration
+public interface IGameConfigurationModel // TypeDefIndex: 538
+{
+	// Properties
+	public abstract InventoryCapability InventoryCapability { get; }
+	public abstract ProducerInventoryCapability ProducerInventoryCapability { get; }
+	public abstract ReadOnlyCollection<IMergeItem> RatePopupTriggerItems { get; }
+	public abstract BubbledItemsConfig BubbledItemsConfig { get; }
+	public abstract SkipCooldownConfig SkipCooldownConfigMainBoard { get; }
+	public abstract SkipCooldownConfig SkipCooldownConfigLiveOpsBoard { get; }
+	public abstract BindableProperty<int> BuildNumber { get; }
+	public abstract string AppVersion { get; }
+	public abstract int MinSupportedBuildNumber { get; }
+	public abstract string StoreUrl { get; }
+	public abstract GameConfig GameConfig { get; }
+	public abstract string ChestInfoUrl { get; }
+	public abstract string PackInfoUrl { get; }
+	public abstract string ItemSelectionBoxInfoUrl { get; }
+	public abstract string FacebookMessengerUrl { get; }
+	public abstract string FacebookPageUrl { get; }
+	public abstract string FacebookGroupUrl { get; }
+	public abstract string TwitterPageUrl { get; }
+	public abstract string InstagramPageUrl { get; }
+	public abstract string ContactUsUrl { get; }
+	public abstract string ContactUsUrlPath { get; }
+	public abstract string ContactUsUrlWithFormPath { get; }
+	public abstract string DeleteAccountFormId { get; }
+	public abstract ZendeskLanguageMapping[] ZendeskLanguageMappings { get; }
+	public abstract float ItemShopHCPriceMultiplier { get; }
+	public abstract int PreviousBuildNumber { get; set; }
+	public abstract int SnapshotUploadLimitPerDay { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract InventoryCapability get_InventoryCapability();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract ProducerInventoryCapability get_ProducerInventoryCapability();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract ReadOnlyCollection<IMergeItem> get_RatePopupTriggerItems();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract BubbledItemsConfig get_BubbledItemsConfig();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract SkipCooldownConfig get_SkipCooldownConfigMainBoard();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract SkipCooldownConfig get_SkipCooldownConfigLiveOpsBoard();
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract BindableProperty<int> get_BuildNumber();
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract string get_AppVersion();
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract int get_MinSupportedBuildNumber();
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract string get_StoreUrl();
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public abstract GameConfig get_GameConfig();
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public abstract string get_ChestInfoUrl();
+
+	// RVA: -1 Offset: -1 Slot: 12
+	public abstract string get_PackInfoUrl();
+
+	// RVA: -1 Offset: -1 Slot: 13
+	public abstract string get_ItemSelectionBoxInfoUrl();
+
+	// RVA: -1 Offset: -1 Slot: 14
+	public abstract string get_FacebookMessengerUrl();
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public abstract string get_FacebookPageUrl();
+
+	// RVA: -1 Offset: -1 Slot: 16
+	public abstract string get_FacebookGroupUrl();
+
+	// RVA: -1 Offset: -1 Slot: 17
+	public abstract string get_TwitterPageUrl();
+
+	// RVA: -1 Offset: -1 Slot: 18
+	public abstract string get_InstagramPageUrl();
+
+	// RVA: -1 Offset: -1 Slot: 19
+	public abstract string get_ContactUsUrl();
+
+	// RVA: -1 Offset: -1 Slot: 20
+	public abstract string get_ContactUsUrlPath();
+
+	// RVA: -1 Offset: -1 Slot: 21
+	public abstract string get_ContactUsUrlWithFormPath();
+
+	// RVA: -1 Offset: -1 Slot: 22
+	public abstract string get_DeleteAccountFormId();
+
+	// RVA: -1 Offset: -1 Slot: 23
+	public abstract ZendeskLanguageMapping[] get_ZendeskLanguageMappings();
+
+	// RVA: -1 Offset: -1 Slot: 24
+	public abstract float get_ItemShopHCPriceMultiplier();
+
+	// RVA: -1 Offset: -1 Slot: 25
+	public abstract int get_PreviousBuildNumber();
+
+	// RVA: -1 Offset: -1 Slot: 26
+	public abstract void set_PreviousBuildNumber(int value);
+
+	// RVA: -1 Offset: -1 Slot: 27
+	public abstract int get_SnapshotUploadLimitPerDay();
+}
+

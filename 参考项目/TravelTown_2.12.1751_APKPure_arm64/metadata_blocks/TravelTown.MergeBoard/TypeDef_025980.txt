@@ -1,0 +1,27 @@
+// Namespace: Merger.MergeBoard.Data.TickInputActions
+public class UnlockEntitiesOnDemandTickAction // TypeDefIndex: 25980
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly List<Entity> <EntitiesToUnlock>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly string <Reason>k__BackingField; // 0x18
+
+	// Properties
+	public List<Entity> EntitiesToUnlock { get; }
+	public string Reason { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AE70 Offset: 0x6A96E70 VA: 0x6A9AE70
+	public List<Entity> get_EntitiesToUnlock() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AE78 Offset: 0x6A96E78 VA: 0x6A9AE78
+	public string get_Reason() { }
+
+	// RVA: 0x6A9AE80 Offset: 0x6A96E80 VA: 0x6A9AE80
+	public void .ctor(List<Entity> entitiesToUnlock, string reason) { }
+}
+

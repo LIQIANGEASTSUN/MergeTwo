@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BoardEvent.MergeCompleted : IEvent // TypeDefIndex: 1775
+{
+	// Fields
+	public ItemController NewItem; // 0x0
+}
+

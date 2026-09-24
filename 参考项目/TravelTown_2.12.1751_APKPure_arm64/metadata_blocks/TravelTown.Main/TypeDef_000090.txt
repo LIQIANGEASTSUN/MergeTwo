@@ -1,0 +1,49 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardUtil.<>c // TypeDefIndex: 90
+{
+	// Fields
+	public static readonly BoardUtil.<>c <>9; // 0x0
+	public static Func<ITimeCycleComponent, bool> <>9__0_0; // 0x8
+	public static Func<ITimeCycleComponent, bool> <>9__1_0; // 0x10
+	public static Func<ITimeCycleComponent, string> <>9__2_0; // 0x18
+	public static Func<IGrouping<string, ITimeCycleComponent>, bool> <>9__2_1; // 0x20
+	public static Func<CollectableComponent, bool> <>9__3_0; // 0x28
+	public static Func<CollectableComponent, bool> <>9__4_0; // 0x30
+	public static Func<PositionComponent, bool> <>9__5_0; // 0x38
+	public static Func<PositionComponent, IEnumerable<ITimeCycleComponent>> <>9__5_1; // 0x40
+
+	// Methods
+
+	// RVA: 0x5FE84A0 Offset: 0x5FE44A0 VA: 0x5FE84A0
+	private static void .cctor() { }
+
+	// RVA: 0x5FE8508 Offset: 0x5FE4508 VA: 0x5FE8508
+	public void .ctor() { }
+
+	// RVA: 0x5FE8510 Offset: 0x5FE4510 VA: 0x5FE8510
+	internal bool <AnyItemsCanBeProduced>b__0_0(ITimeCycleComponent component) { }
+
+	// RVA: 0x5FE85BC Offset: 0x5FE45BC VA: 0x5FE85BC
+	internal bool <GetProducerThatCanProduce>b__1_0(ITimeCycleComponent component) { }
+
+	// RVA: 0x5FE8668 Offset: 0x5FE4668 VA: 0x5FE8668
+	internal string <HasUnmergedProducersOnBoard>b__2_0(ITimeCycleComponent producer) { }
+
+	// RVA: 0x5FE8728 Offset: 0x5FE4728 VA: 0x5FE8728
+	internal bool <HasUnmergedProducersOnBoard>b__2_1(IGrouping<string, ITimeCycleComponent> g) { }
+
+	// RVA: 0x5FE877C Offset: 0x5FE477C VA: 0x5FE877C
+	internal bool <HasToolsOnBoard>b__3_0(CollectableComponent component) { }
+
+	// RVA: 0x5FE8794 Offset: 0x5FE4794 VA: 0x5FE8794
+	internal bool <GetFirstToolOnBoard>b__4_0(CollectableComponent component) { }
+
+	// RVA: 0x5FE87AC Offset: 0x5FE47AC VA: 0x5FE87AC
+	internal bool <GetTimeCycleComponents>b__5_0(PositionComponent component) { }
+
+	// RVA: 0x5FE8808 Offset: 0x5FE4808 VA: 0x5FE8808
+	internal IEnumerable<ITimeCycleComponent> <GetTimeCycleComponents>b__5_1(PositionComponent comp) { }
+}
+

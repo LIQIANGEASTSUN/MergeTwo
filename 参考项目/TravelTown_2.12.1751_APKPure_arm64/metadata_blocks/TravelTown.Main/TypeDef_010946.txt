@@ -1,0 +1,14 @@
+// Namespace: Framework.Core.Services.Backend.Remote.Payloads
+[StateName("genericTokens")]
+public class GenericTokenState : BackendState // TypeDefIndex: 10946
+{
+	// Fields
+	[JsonProperty("tokens")]
+	public List<GenericToken> Tokens; // 0x18
+
+	// Methods
+
+	// RVA: 0x6927440 Offset: 0x6923440 VA: 0x6927440
+	public void .ctor() { }
+}
+

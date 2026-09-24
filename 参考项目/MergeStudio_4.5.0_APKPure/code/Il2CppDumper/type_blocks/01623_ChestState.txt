@@ -1,0 +1,10 @@
+// Namespace: MergePuzzle
+public enum ChestState // TypeDefIndex: 1623
+{
+	// Fields
+	public int value__; // 0x0
+	public const ChestState WAITING = 0;
+	public const ChestState CHARGING = 1;
+	public const ChestState CHARGED = 2;
+}
+

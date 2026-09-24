@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardQueueSystem.<>c // TypeDefIndex: 33291
+{
+	// Fields
+	public static readonly BoardQueueSystem.<>c <>9; // 0x0
+	public static Func<ValueTuple<Entity, BoardTilePositionComponent>, int> <>9__6_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x6A575B8 Offset: 0x6A535B8 VA: 0x6A575B8
+	private static void .cctor() { }
+
+	// RVA: 0x6A57620 Offset: 0x6A53620 VA: 0x6A57620
+	public void .ctor() { }
+
+	// RVA: 0x6A57628 Offset: 0x6A53628 VA: 0x6A57628
+	internal int <TryFindEmptyPositionUsingModel>b__6_0(ValueTuple<Entity, BoardTilePositionComponent> e) { }
+}
+

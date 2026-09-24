@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ProducerSystem.<>c__DisplayClass5_0 // TypeDefIndex: 25767
+{
+	// Fields
+	[TupleElementNames(new[] { "entity", "boardTilePosition", "producerComponent", "timeCycleComponent", "pendingInteraction", "interactionComponent" })]
+	public ValueTuple<Entity, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, PendingInteractionComponent, InteractionComponent> selectedEntity; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A7362C Offset: 0x6A6F62C VA: 0x6A7362C
+	public void .ctor() { }
+
+	// RVA: 0x6A73A10 Offset: 0x6A6FA10 VA: 0x6A73A10
+	internal bool <ProduceItemOnInteract>b__0(ValueTuple<Entity, BoardTilePositionComponent> entity) { }
+}
+

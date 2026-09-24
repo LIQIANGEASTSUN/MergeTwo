@@ -1,0 +1,31 @@
+// Namespace: 
+[Serializable]
+public class InventoryEntity.ArchiveTaskEntity // TypeDefIndex: 1947
+{
+	// Fields
+	public long EndTimeSeconds; // 0x8
+	public int LinkId; // 0x10
+	public bool Activated; // 0x14
+	public bool Removed; // 0x15
+
+	// Methods
+
+	// RVA: 0x193713C Offset: 0x193713C VA: 0x193713C
+	public void .ctor() { }
+
+	// RVA: 0x1937144 Offset: 0x1937144 VA: 0x1937144
+	public void .ctor(long endTimeSeconds, int linkId) { }
+
+	// RVA: 0x1937170 Offset: 0x1937170 VA: 0x1937170
+	public bool IsActive() { }
+
+	// RVA: 0x193718C Offset: 0x193718C VA: 0x193718C
+	public bool IsWaitingForInitializing() { }
+
+	// RVA: 0x19371AC Offset: 0x19371AC VA: 0x19371AC
+	public bool IsWaitingForRemoval() { }
+
+	// RVA: 0x19371CC Offset: 0x19371CC VA: 0x19371CC
+	public bool IsReadyForRemoval() { }
+}
+

@@ -1,0 +1,45 @@
+// Namespace: Merger.MergeBoard.PowerBoost.Signals
+public class PowerBoostInitializeOnEventActivationSignal // TypeDefIndex: 32778
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly string <EventId>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private int <EventIndex>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private readonly int <CurrentLevel>k__BackingField; // 0x1C
+	[CompilerGenerated]
+	private readonly PowerBoostMultiModesConfig <Configuration>k__BackingField; // 0x20
+
+	// Properties
+	public string EventId { get; }
+	public int EventIndex { get; set; }
+	public int CurrentLevel { get; }
+	public PowerBoostMultiModesConfig Configuration { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6ACD39C Offset: 0x6AC939C VA: 0x6ACD39C
+	public string get_EventId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6ACD3A4 Offset: 0x6AC93A4 VA: 0x6ACD3A4
+	public int get_EventIndex() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6ACD3AC Offset: 0x6AC93AC VA: 0x6ACD3AC
+	public void set_EventIndex(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6ACD3B4 Offset: 0x6AC93B4 VA: 0x6ACD3B4
+	public int get_CurrentLevel() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6ACD3BC Offset: 0x6AC93BC VA: 0x6ACD3BC
+	public PowerBoostMultiModesConfig get_Configuration() { }
+
+	// RVA: 0x6ACD3C4 Offset: 0x6AC93C4 VA: 0x6ACD3C4
+	public void .ctor(string eventId, int eventIndex, int currentLevel, PowerBoostMultiModesConfig configuration) { }
+}
+

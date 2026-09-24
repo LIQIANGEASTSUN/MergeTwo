@@ -1,0 +1,4 @@
+// Namespace: 
+public struct BoardEvent.TutorialLevelUpEvent : IEvent // TypeDefIndex: 1832
+{}
+

@@ -1,0 +1,118 @@
+Type: GameLogic.Player.Items.Order.OrderParentState
+
+Method: GameLogic.Player.Items.Order.IOrderState get_CurrentOrder()
+
+Disassembly:
+	0x0360F13C CMP X11, X1
+	0x0360F140 B.EQ 0x360F160
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_CurrentOrder(GameLogic.Player.Items.Order.IOrderState value)
+
+Disassembly:
+	0x0360F144 SUBS X9, X9, 0x1
+	0x0360F148 ADD X10, X10, 0x10
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Int32 get_CurrentOrderIndex()
+
+Disassembly:
+	0x0360F14C B.NE 0x360F138
+	0x0360F150 MOV X0, X20
+
+ISIL:
+	001 Move W0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_CurrentOrderIndex(System.Int32 value)
+
+Disassembly:
+	0x0360F154 MOVZ W2, 0xBA
+	0x0360F158 BL 0x23D527C
+
+ISIL:
+	001 Move [X0+24], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0360F15C B 0x360F170
+	0x0360F160 LDR W9, [X10]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(GameLogic.Player.Items.Order.IOrderState currentOrder)
+
+Disassembly:
+	0x0360E858 BL 0x239BB88
+	0x0360E85C MOV X20, X0
+	0x0360E860 ADD X0, X31, 0x0
+	0x0360E864 BL 0x2308788
+	0x0360E868 MOV X0, X20
+	0x0360E86C BL 0x248B7AC
+	0x0360E870 BL 0x21B9790
+	0x0360E874 STR X30, [X31 - 0x30]!
+	0x0360E878 STP X22, X21, [X31 + 0x10]
+	0x0360E87C STP X20, X19, [X31 + 0x20]
+	0x0360E880 ADRP X21, 0x271B000
+	0x0360E884 MOV X20, X1
+	0x0360E888 MOV X19, X0
+	0x0360E88C LDRB W8, [X21 + 0xC0E]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move X19, X1
+	005 Move X1, X31
+	006 Move X20, X0
+	007 Call Object..ctor, X0
+	008 Move [X20+16], X19
+	009 Move X0, X20
+	010 Move X1, X19
+	011 Call 0x239F888
+	012 Move [X20+8], W31
+	013 Move X20, [X31+16]
+	014 Move X19, [X31+24]
+	015 Move X30, [X31+32]
+	016 Return 
+
+Method: System.Void SetNewOrder(GameLogic.Player.Items.Order.IOrderState newOrder)
+
+Disassembly:
+	0x0360F164 ADD W9, W9, 0xBA
+	0x0360F168 ADD X8, X8, W9, 0x4, SXTW
+	0x0360F16C ADD X0, X8, 0x138
+	0x0360F170 LDP X8, X1, [X0]
+	0x0360F174 MOV X0, X20
+	0x0360F178 BLR X8
+	0x0360F17C LDR X8, [X19 + 0x18]
+	0x0360F180 CBZ X8, 0x360EFBC
+	0x0360F184 LDR X3, [X26]
+	0x0360F188 MOV X19, X0
+
+ISIL:
+	001 Move [X31-16], X30
+	002 Move [X31-8], X19
+	003 Move X19, X0
+	004 Move [X19+16], X1
+	005 Move X0, X19
+	006 Call 0x239F888
+	007 Move W8, [X19+8]
+	008 Add W8, W8, 1
+	009 Move [X19+8], W8
+	010 Move X30, [X31+16]
+	011 Move X19, [X31+24]
+	012 Return 
+

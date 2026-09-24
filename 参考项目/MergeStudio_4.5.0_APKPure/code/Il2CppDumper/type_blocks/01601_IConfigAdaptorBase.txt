@@ -1,0 +1,9 @@
+// Namespace: MergePuzzle
+public interface IConfigAdaptorBase // TypeDefIndex: 1601
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract AdaptorBase ConvertFromLocal();
+}
+

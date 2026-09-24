@@ -1,0 +1,18 @@
+// Namespace: Merger.Rewards.Interfaces.Datas
+public interface IRewardTextRepresented // TypeDefIndex: 2986
+{
+	// Properties
+	public abstract bool HideAmountText { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract string GetTopText(RewardDisplayTextData rewardDisplayTextData, RewardDisplayFlag rewardPresentationViewFlags);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract string GetBottomText(RewardDisplayTextData rewardDisplayTextData);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract bool get_HideAmountText();
+}
+

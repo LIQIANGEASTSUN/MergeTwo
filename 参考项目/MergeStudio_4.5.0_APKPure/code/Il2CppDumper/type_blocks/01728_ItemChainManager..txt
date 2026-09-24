@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemChainManager.<>c__DisplayClass39_0 // TypeDefIndex: 1728
+{
+	// Fields
+	public List<ItemLinkModel> previousLinks; // 0x8
+	public Predicate<BoardTaskGoal> <>9__3; // 0xC
+	public Predicate<BoardTaskGoal> <>9__4; // 0x10
+
+	// Methods
+
+	// RVA: 0x19085D4 Offset: 0x19085D4 VA: 0x19085D4
+	public void .ctor() { }
+
+	// RVA: 0x190F698 Offset: 0x190F698 VA: 0x190F698
+	internal bool <ReplaceOldSetIDs>b__3(BoardTaskGoal g) { }
+
+	// RVA: 0x190F7B0 Offset: 0x190F7B0 VA: 0x190F7B0
+	internal bool <ReplaceOldSetIDs>b__4(BoardTaskGoal g) { }
+}
+

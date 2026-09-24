@@ -1,0 +1,13 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "BubbleGroupData", menuName = "Scriptable/Bubble/BubbleGroupData", order = 1)]
+public class BubbleGroupData : ScriptableObject // TypeDefIndex: 1860
+{
+	// Fields
+	public List<BubbleItemData> BubbleItemList; // 0xC
+
+	// Methods
+
+	// RVA: 0x19169E4 Offset: 0x19169E4 VA: 0x19169E4
+	public void .ctor() { }
+}
+

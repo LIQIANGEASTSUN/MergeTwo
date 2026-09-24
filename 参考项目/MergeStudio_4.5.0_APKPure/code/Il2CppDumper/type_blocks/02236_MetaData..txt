@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MetaData.<>c__DisplayClass12_0 // TypeDefIndex: 2236
+{
+	// Fields
+	public HashSet<string> skins; // 0x8
+	public Action<string> <>9__0; // 0xC
+	public Action<string> <>9__1; // 0x10
+
+	// Methods
+
+	// RVA: 0x19B12FC Offset: 0x19B12FC VA: 0x19B12FC
+	public void .ctor() { }
+
+	// RVA: 0x19B24E0 Offset: 0x19B24E0 VA: 0x19B24E0
+	internal void <GetCompletedMetaTaskSkinsOfLevel>b__0(string item) { }
+
+	// RVA: 0x19B254C Offset: 0x19B254C VA: 0x19B254C
+	internal void <GetCompletedMetaTaskSkinsOfLevel>b__1(string item) { }
+}
+

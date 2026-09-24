@@ -1,0 +1,27 @@
+// Namespace: Merger.MergeBoard.Systems
+public class ImmediateToolsSystem : ISystem // TypeDefIndex: 25741
+{
+	// Fields
+	[Inject]
+	private IToolSpawnHandler _toolSpawnHandler; // 0x10
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A69CD4 Offset: 0x6A65CD4 VA: 0x6A69CD4 Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A69EC0 Offset: 0x6A65EC0 VA: 0x6A69EC0
+	private void CollectToolBox(TickContext context, Entity entity, PendingInteractionComponent pendingInteraction, ImmediateToolComponent immediateToolComponent) { }
+
+	// RVA: 0x6A6A45C Offset: 0x6A6645C VA: 0x6A6A45C
+	private void CollectSingleTool(TickContext context, Entity entity, PendingInteractionComponent pendingInteractionComponent, IdComponent idComponent) { }
+
+	// RVA: 0x6A6A610 Offset: 0x6A66610 VA: 0x6A6A610
+	private void UpdateToolProgressionData(IMergeItem toolItem, ref Dictionary<PlayerResourceEnum, ToolProgressionData> toolsProgressionData) { }
+
+	// RVA: 0x6A6A940 Offset: 0x6A66940 VA: 0x6A6A940
+	public void .ctor() { }
+}
+

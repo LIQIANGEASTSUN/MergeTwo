@@ -1,0 +1,27 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemSelectionBoxPickHandler.<>c__DisplayClass15_0 // TypeDefIndex: 25829
+{
+	// Fields
+	public ItemSelectionBoxPopupData selectionBoxPopupData; // 0x10
+	public ItemSelectionBoxPickHandler <>4__this; // 0x18
+	public string uuid; // 0x20
+	public IMergeItem mergeItem; // 0x28
+	public Entity entity; // 0x30
+	public string itemId; // 0x38
+
+	// Methods
+
+	// RVA: 0x6A82820 Offset: 0x6A7E820 VA: 0x6A82820
+	public void .ctor() { }
+
+	// RVA: 0x6A82C04 Offset: 0x6A7EC04 VA: 0x6A82C04
+	internal void <GenerateContent>b__0(GenerateISBResponse r) { }
+
+	// RVA: 0x6A82FF4 Offset: 0x6A7EFF4 VA: 0x6A82FF4
+	internal void <GenerateContent>b__1(Exception ex) { }
+
+	// RVA: 0x6A8325C Offset: 0x6A7F25C VA: 0x6A8325C
+	internal void <GenerateContent>b__2() { }
+}
+

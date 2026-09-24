@@ -1,0 +1,36 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public class ChargableComponent : RemoteLoadedComponent<ChargableCapability, SerializedChargableComponent, SerializedChargableComponent> // TypeDefIndex: 1049
+{
+	// Fields
+	public const string Key = "chargable";
+	[CompilerGenerated]
+	private readonly ReadOnlyCollection<RemoteSpriteLocation> <StateSprites>k__BackingField; // 0x30
+	public int CurrentState; // 0x38
+
+	// Properties
+	public override string ComponentKey { get; }
+	public ReadOnlyCollection<RemoteSpriteLocation> StateSprites { get; }
+	public RemoteSpriteLocation CurrentStateSprite { get; }
+
+	// Methods
+
+	// RVA: 0x68FB824 Offset: 0x68F7824 VA: 0x68FB824 Slot: 11
+	public override string get_ComponentKey() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FB864 Offset: 0x68F7864 VA: 0x68FB864
+	public ReadOnlyCollection<RemoteSpriteLocation> get_StateSprites() { }
+
+	// RVA: 0x68FB86C Offset: 0x68F786C VA: 0x68FB86C
+	public RemoteSpriteLocation get_CurrentStateSprite() { }
+
+	// RVA: 0x68FB8C0 Offset: 0x68F78C0 VA: 0x68FB8C0
+	public void .ctor(ChargableCapability capability, Entity entity) { }
+
+	// RVA: 0x68FB99C Offset: 0x68F799C VA: 0x68FB99C Slot: 15
+	public override void LoadComponent(SerializedChargableComponent componentData) { }
+
+	// RVA: 0x68FB9B8 Offset: 0x68F79B8 VA: 0x68FB9B8 Slot: 12
+	protected override void OnBeforeSerialize() { }
+}
+

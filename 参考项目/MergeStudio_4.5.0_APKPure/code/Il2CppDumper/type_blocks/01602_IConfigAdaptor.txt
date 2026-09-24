@@ -1,0 +1,14 @@
+// Namespace: MergePuzzle
+public interface IConfigAdaptor<T> : IConfigAdaptorBase // TypeDefIndex: 1602
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract T GetConfigAdaptor();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IConfigAdaptor<object>.GetConfigAdaptor
+	*/
+}
+

@@ -1,0 +1,12 @@
+Type: GameLogic.Player.Items.Consumption.ConsumptionLogicExtensions
+
+Method: System.Boolean IsOk(GameLogic.Player.Items.Consumption.IConsumptionCheckResult checkResult)
+
+Disassembly:
+	0x03632BF8 MOV X0, X24
+	0x03632BFC MOV X1, X25
+
+ISIL:
+	001 Move W0, W31
+	002 Return X0
+

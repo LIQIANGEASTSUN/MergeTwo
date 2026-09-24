@@ -1,0 +1,32 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BaseToolAnalysisSystem.<>c__DisplayClass32_0<T> // TypeDefIndex: 943
+{
+	// Fields
+	public List<PlayerResourceEnum> unfinishedChains; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F54968 Offset: 0x3F50968 VA: 0x3F54968
+	|-BaseToolAnalysisSystem.<>c__DisplayClass32_0<object>..ctor
+	|
+	|-RVA: 0x3F549EC Offset: 0x3F509EC VA: 0x3F549EC
+	|-BaseToolAnalysisSystem.<>c__DisplayClass32_0<__Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal bool <CreateChainBasedFilter>b__0(WeightedTool weightedTool) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F54970 Offset: 0x3F50970 VA: 0x3F54970
+	|-BaseToolAnalysisSystem.<>c__DisplayClass32_0<object>.<CreateChainBasedFilter>b__0
+	|
+	|-RVA: 0x3F549F4 Offset: 0x3F509F4 VA: 0x3F549F4
+	|-BaseToolAnalysisSystem.<>c__DisplayClass32_0<__Il2CppFullySharedGenericType>.<CreateChainBasedFilter>b__0
+	*/
+}
+

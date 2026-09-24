@@ -1,0 +1,9 @@
+// Namespace: MergeEngine.ECS.Systems.Items
+public class UndoSellData : UndoDataBase // TypeDefIndex: 979
+{
+	// Methods
+
+	// RVA: 0x6798FE8 Offset: 0x6794FE8 VA: 0x6798FE8
+	public void .ctor(Entity entity, IMergeItem mergeItem) { }
+}
+

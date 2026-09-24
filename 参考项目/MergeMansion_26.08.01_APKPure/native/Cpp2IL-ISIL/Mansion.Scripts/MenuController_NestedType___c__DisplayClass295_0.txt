@@ -1,0 +1,147 @@
+Type: MenuController+<>c__DisplayClass295_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x02B719E8 MOV X0, X19
+	0x02B719EC MOV X1, X31
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void <ShowPlayerRewardInfoPopupMenu>b__1()
+
+Disassembly:
+	0x02B719F0 BL 0x2B466C0
+	0x02B719F4 MOV X23, X0
+	0x02B719F8 MOV X0, X19
+	0x02B719FC MOV X1, X31
+	0x02B71A00 BL 0x2B466C8
+	0x02B71A04 LDR X8, [X19 + 0x20]
+	0x02B71A08 STR X20, [X31 + 0x28]
+	0x02B71A0C CBZ X8, 0x2B71DFC
+	0x02B71A10 ADRP X10, 0x2B77000
+	0x02B71A14 LDR X9, [X31 + 0x110]
+	0x02B71A18 MOV X25, X0
+	0x02B71A1C LDR X10, [X10 + 0x860]
+	0x02B71A20 LDR X27, [X19 + 0xA8]
+	0x02B71A24 LDR X26, [X8 + 0xD8]
+	0x02B71A28 LDR X28, [X9 + 0x18]
+	0x02B71A2C LDR X29, [X9 + 0x30]
+
+ISIL:
+	001 Move [X31-16], X30
+	002 Move [X31-8], X19
+	003 Move X8, X0
+	004 Move X0, [X0+16]
+	005 Compare X0, 0
+	006 JumpIfEqual {21}
+	007 Move X19, [X8+40]
+	008 Move X1, X31
+	009 Call RewardPet.get_PetId, X0
+	010 Compare X19, 0
+	011 JumpIfEqual {21}
+	012 Move X1, X0
+	013 Move X0, X19
+	014 Move X2, X31
+	015 Move W3, W31
+	016 Move X4, X31
+	017 Move X30, [X31+16]
+	018 Move X19, [X31+24]
+	019 Call MenuController.OnPetPreview, X0, X1, X2, X3
+	020 Return 
+	021 Call 0x239FB90
+
+Method: System.Void <ShowPlayerRewardInfoPopupMenu>b__2()
+
+Disassembly:
+	0x02B71A30 LDR W20, [X9 + 0x38]
+	0x02B71A34 LDR X0, [X10]
+	0x02B71A38 BL 0x239BB80
+	0x02B71A3C MOV X1, X19
+	0x02B71A40 MOV X2, X23
+	0x02B71A44 MOV X3, X25
+	0x02B71A48 MOV X4, X27
+	0x02B71A4C MOV X5, X28
+	0x02B71A50 MOV X6, X26
+	0x02B71A54 MOV X7, X21
+	0x02B71A58 MOV X24, X0
+	0x02B71A5C STP X20, X31, [X31 + 0x8]
+	0x02B71A60 STR X29, [X31]
+	0x02B71A64 BL 0x2B05F60
+	0x02B71A68 LDR X3, [X31 + 0x28]
+
+ISIL:
+	001 Move [X31-16], X30
+	002 Move [X31-8], X19
+	003 Move X8, X0
+	004 Move X0, [X0+24]
+	005 Compare X0, 0
+	006 JumpIfEqual {20}
+	007 Move X19, [X8+40]
+	008 Move X1, X31
+	009 Call RewardDecoration.get_Decoration, X0
+	010 Compare X19, 0
+	011 JumpIfEqual {20}
+	012 Move X1, X0
+	013 Move X0, X19
+	014 Move W2, W31
+	015 Move X3, X31
+	016 Move X30, [X31+16]
+	017 Move X19, [X31+24]
+	018 Call MenuController.<ShowPlayerRewardInfoPopupMenu>g__ShowDecorationPreview|295_0, X0, X1, X2
+	019 Return 
+	020 Call 0x239FB90
+
+Method: System.Void <ShowPlayerRewardInfoPopupMenu>b__3()
+
+Disassembly:
+	0x02B71A6C MOV W2, W31
+	0x02B71A70 MOV W5, W31
+	0x02B71A74 MOV X7, X31
+	0x02B71A78 MOV X0, X19
+	0x02B71A7C MOV X1, X22
+	0x02B71A80 MOV X4, X24
+	0x02B71A84 MOVZ W6, 0x1
+	0x02B71A88 STP X31, X31, [X31 + 0x8]
+	0x02B71A8C STR W31, [X31]
+	0x02B71A90 BL 0x2B4800C
+	0x02B71A94 ADRP X21, 0x2B63000
+	0x02B71A98 MOV X19, X0
+	0x02B71A9C MOV X20, X1
+	0x02B71AA0 LDR X21, [X21 + 0x928]
+	0x02B71AA4 LDR X0, [X21]
+	0x02B71AA8 LDR W8, [X0 + 0xE4]
+	0x02B71AAC CBNZ W8, 0x2B71AB4
+	0x02B71AB0 BL 0x239BA64
+	0x02B71AB4 STP X19, X20, [X31 + 0x30]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move X20, X0
+	005 Move X0, [X0+32]
+	006 Compare X0, 0
+	007 JumpIfEqual {25}
+	008 Move X19, [X20+40]
+	009 Move X1, X31
+	010 Call RewardLayeredDecoration.get_Decoration, X0
+	011 Move X8, [X20+32]
+	012 Compare X8, 0
+	013 JumpIfEqual {25}
+	014 Compare X19, 0
+	015 JumpIfEqual {25}
+	016 Move X1, X0
+	017 Move X0, X19
+	018 Move W2, [X8+32]
+	019 Move X20, [X31+16]
+	020 Move X19, [X31+24]
+	021 Move X3, X31
+	022 Move X30, [X31+32]
+	023 Call MenuController.<ShowPlayerRewardInfoPopupMenu>g__ShowDecorationPreview|295_0, X0, X1, X2
+	024 Return 
+	025 Call 0x239FB90
+

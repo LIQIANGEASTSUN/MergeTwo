@@ -1,0 +1,357 @@
+// Namespace: ContextualizedECS
+public sealed class Entity // TypeDefIndex: 33678
+{
+	// Fields
+	private readonly Dictionary<Type, IComponent> _components; // 0x10
+
+	// Methods
+
+	// RVA: 0x5F14CA0 Offset: 0x5F10CA0 VA: 0x5F14CA0
+	public void .ctor() { }
+
+	// RVA: 0x5F14D28 Offset: 0x5F10D28 VA: 0x5F14D28
+	public void .ctor(Entity otherEntity) { }
+
+	// RVA: -1 Offset: -1
+	public void SetComponent<T>(T component) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C1C618 Offset: 0x3C18618 VA: 0x3C1C618
+	|-Entity.SetComponent<BoardTilePositionComponent>
+	|
+	|-RVA: 0x3C1C6E0 Offset: 0x3C186E0 VA: 0x3C1C6E0
+	|-Entity.SetComponent<BornComponent>
+	|
+	|-RVA: 0x3C1C7A8 Offset: 0x3C187A8 VA: 0x3C1C7A8
+	|-Entity.SetComponent<BoxComponent>
+	|
+	|-RVA: 0x3C1C884 Offset: 0x3C18884 VA: 0x3C1C884
+	|-Entity.SetComponent<ChargeableComponent>
+	|
+	|-RVA: 0x3C1C94C Offset: 0x3C1894C VA: 0x3C1C94C
+	|-Entity.SetComponent<CollectableComponent>
+	|
+	|-RVA: 0x3C1CA28 Offset: 0x3C18A28 VA: 0x3C1CA28
+	|-Entity.SetComponent<ConfirmedItemsCombinationComponent>
+	|
+	|-RVA: 0x3C1CAF0 Offset: 0x3C18AF0 VA: 0x3C1CAF0
+	|-Entity.SetComponent<CooldownBlockComponent>
+	|
+	|-RVA: 0x3C1CBB8 Offset: 0x3C18BB8 VA: 0x3C1CBB8
+	|-Entity.SetComponent<DeadComponent>
+	|
+	|-RVA: 0x3C1CC80 Offset: 0x3C18C80 VA: 0x3C1CC80
+	|-Entity.SetComponent<DynamicItemConfigComponent>
+	|
+	|-RVA: 0x3C1CD5C Offset: 0x3C18D5C VA: 0x3C1CD5C
+	|-Entity.SetComponent<ExpendableComponent>
+	|
+	|-RVA: 0x3C1CE38 Offset: 0x3C18E38 VA: 0x3C1CE38
+	|-Entity.SetComponent<FeedingCombinationComponent>
+	|
+	|-RVA: 0x3C1CF00 Offset: 0x3C18F00 VA: 0x3C1CF00
+	|-Entity.SetComponent<FixedPositionComponent>
+	|
+	|-RVA: 0x3C1CFC8 Offset: 0x3C18FC8 VA: 0x3C1CFC8
+	|-Entity.SetComponent<IdComponent>
+	|
+	|-RVA: 0x3C1D0A4 Offset: 0x3C190A4 VA: 0x3C1D0A4
+	|-Entity.SetComponent<ImmediateToolComponent>
+	|
+	|-RVA: 0x3C1D180 Offset: 0x3C19180 VA: 0x3C1D180
+	|-Entity.SetComponent<InteractionComponent>
+	|
+	|-RVA: 0x3C1D25C Offset: 0x3C1925C VA: 0x3C1D25C
+	|-Entity.SetComponent<ItemConsumedComponent>
+	|
+	|-RVA: 0x3C1D330 Offset: 0x3C19330 VA: 0x3C1D330
+	|-Entity.SetComponent<ItemMergedComponent>
+	|
+	|-RVA: 0x3C1D3F8 Offset: 0x3C193F8 VA: 0x3C1D3F8
+	|-Entity.SetComponent<ItemMovedComponent>
+	|
+	|-RVA: 0x3C1D4C0 Offset: 0x3C194C0 VA: 0x3C1D4C0
+	|-Entity.SetComponent<ItemUnboxedComponent>
+	|
+	|-RVA: 0x3C1D588 Offset: 0x3C19588 VA: 0x3C1D588
+	|-Entity.SetComponent<LockComponent>
+	|
+	|-RVA: 0x3C1D650 Offset: 0x3C19650 VA: 0x3C1D650
+	|-Entity.SetComponent<MergeComponent>
+	|
+	|-RVA: 0x3C1D724 Offset: 0x3C19724 VA: 0x3C1D724
+	|-Entity.SetComponent<MoveBlockComponent>
+	|
+	|-RVA: 0x3C1D7EC Offset: 0x3C197EC VA: 0x3C1D7EC
+	|-Entity.SetComponent<PendingInteractionComponent>
+	|
+	|-RVA: 0x3C1D8C0 Offset: 0x3C198C0 VA: 0x3C1D8C0
+	|-Entity.SetComponent<PendingItemsCombinationComponent>
+	|
+	|-RVA: 0x3C1D988 Offset: 0x3C19988 VA: 0x3C1D988
+	|-Entity.SetComponent<ProducerComponent>
+	|
+	|-RVA: 0x3C1DA5C Offset: 0x3C19A5C VA: 0x3C1DA5C
+	|-Entity.SetComponent<ResourceConsumedComponent>
+	|
+	|-RVA: 0x3C1DB24 Offset: 0x3C19B24 VA: 0x3C1DB24
+	|-Entity.SetComponent<SpawnerComponent>
+	|
+	|-RVA: 0x3C1DC00 Offset: 0x3C19C00 VA: 0x3C1DC00
+	|-Entity.SetComponent<SplitComponent>
+	|
+	|-RVA: 0x3C1DCC8 Offset: 0x3C19CC8 VA: 0x3C1DCC8
+	|-Entity.SetComponent<TimeCycleComponent>
+	|
+	|-RVA: 0x3C1DDA0 Offset: 0x3C19DA0 VA: 0x3C1DDA0
+	|-Entity.SetComponent<TimeDurationComponent>
+	|
+	|-RVA: 0x3C1DE74 Offset: 0x3C19E74 VA: 0x3C1DE74
+	|-Entity.SetComponent<TimeLimitedActivationComponent>
+	|
+	|-RVA: 0x3C1DF48 Offset: 0x3C19F48 VA: 0x3C1DF48
+	|-Entity.SetComponent<TimeLockBlockComponent>
+	|
+	|-RVA: 0x3C1E010 Offset: 0x3C1A010 VA: 0x3C1E010
+	|-Entity.SetComponent<TimeLockComponent>
+	|
+	|-RVA: 0x3C1E0EC Offset: 0x3C1A0EC VA: 0x3C1E0EC
+	|-Entity.SetComponent<ToolSpawningComponent>
+	|
+	|-RVA: 0x3C1E1C0 Offset: 0x3C1A1C0 VA: 0x3C1E1C0
+	|-Entity.SetComponent<__Il2CppFullySharedGenericStructType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public bool TryGetComponent<T>(out T component) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C1E2E4 Offset: 0x3C1A2E4 VA: 0x3C1E2E4
+	|-Entity.TryGetComponent<BoardTilePositionComponent>
+	|
+	|-RVA: 0x3C1E3F0 Offset: 0x3C1A3F0 VA: 0x3C1E3F0
+	|-Entity.TryGetComponent<BornComponent>
+	|
+	|-RVA: 0x3C1E508 Offset: 0x3C1A508 VA: 0x3C1E508
+	|-Entity.TryGetComponent<BoxComponent>
+	|
+	|-RVA: 0x3C1E620 Offset: 0x3C1A620 VA: 0x3C1E620
+	|-Entity.TryGetComponent<ChargeableComponent>
+	|
+	|-RVA: 0x3C1E72C Offset: 0x3C1A72C VA: 0x3C1E72C
+	|-Entity.TryGetComponent<CollectableComponent>
+	|
+	|-RVA: 0x3C1E850 Offset: 0x3C1A850 VA: 0x3C1E850
+	|-Entity.TryGetComponent<ConfirmedItemsCombinationComponent>
+	|
+	|-RVA: 0x3C1E95C Offset: 0x3C1A95C VA: 0x3C1E95C
+	|-Entity.TryGetComponent<DeadComponent>
+	|
+	|-RVA: 0x3C1EA68 Offset: 0x3C1AA68 VA: 0x3C1EA68
+	|-Entity.TryGetComponent<DynamicItemConfigComponent>
+	|
+	|-RVA: 0x3C1EB8C Offset: 0x3C1AB8C VA: 0x3C1EB8C
+	|-Entity.TryGetComponent<ExpendableComponent>
+	|
+	|-RVA: 0x3C1ECB4 Offset: 0x3C1ACB4 VA: 0x3C1ECB4
+	|-Entity.TryGetComponent<FeedingCombinationComponent>
+	|
+	|-RVA: 0x3C1EDCC Offset: 0x3C1ADCC VA: 0x3C1EDCC
+	|-Entity.TryGetComponent<IdComponent>
+	|
+	|-RVA: 0x3C1EEF4 Offset: 0x3C1AEF4 VA: 0x3C1EEF4
+	|-Entity.TryGetComponent<ImmediateToolComponent>
+	|
+	|-RVA: 0x3C1F018 Offset: 0x3C1B018 VA: 0x3C1F018
+	|-Entity.TryGetComponent<InteractionComponent>
+	|
+	|-RVA: 0x3C1F140 Offset: 0x3C1B140 VA: 0x3C1F140
+	|-Entity.TryGetComponent<ItemConsumedComponent>
+	|
+	|-RVA: 0x3C1F258 Offset: 0x3C1B258 VA: 0x3C1F258
+	|-Entity.TryGetComponent<ItemMergedComponent>
+	|
+	|-RVA: 0x3C1F364 Offset: 0x3C1B364 VA: 0x3C1F364
+	|-Entity.TryGetComponent<ItemMovedComponent>
+	|
+	|-RVA: 0x3C1F470 Offset: 0x3C1B470 VA: 0x3C1F470
+	|-Entity.TryGetComponent<LockComponent>
+	|
+	|-RVA: 0x3C1F57C Offset: 0x3C1B57C VA: 0x3C1F57C
+	|-Entity.TryGetComponent<MergeComponent>
+	|
+	|-RVA: 0x3C1F694 Offset: 0x3C1B694 VA: 0x3C1F694
+	|-Entity.TryGetComponent<PendingInteractionComponent>
+	|
+	|-RVA: 0x3C1F7AC Offset: 0x3C1B7AC VA: 0x3C1F7AC
+	|-Entity.TryGetComponent<PendingItemsCombinationComponent>
+	|
+	|-RVA: 0x3C1F8B8 Offset: 0x3C1B8B8 VA: 0x3C1F8B8
+	|-Entity.TryGetComponent<ProducerComponent>
+	|
+	|-RVA: 0x3C1F9D4 Offset: 0x3C1B9D4 VA: 0x3C1F9D4
+	|-Entity.TryGetComponent<ResourceConsumedComponent>
+	|
+	|-RVA: 0x3C1FAE0 Offset: 0x3C1BAE0 VA: 0x3C1FAE0
+	|-Entity.TryGetComponent<SpawnerComponent>
+	|
+	|-RVA: 0x3C1FC04 Offset: 0x3C1BC04 VA: 0x3C1FC04
+	|-Entity.TryGetComponent<TimeCycleComponent>
+	|
+	|-RVA: 0x3C1FD24 Offset: 0x3C1BD24 VA: 0x3C1FD24
+	|-Entity.TryGetComponent<TimeDurationComponent>
+	|
+	|-RVA: 0x3C1FE34 Offset: 0x3C1BE34 VA: 0x3C1FE34
+	|-Entity.TryGetComponent<TimeLimitedActivationComponent>
+	|
+	|-RVA: 0x3C1FF44 Offset: 0x3C1BF44 VA: 0x3C1FF44
+	|-Entity.TryGetComponent<TimeLockComponent>
+	|
+	|-RVA: 0x3C20060 Offset: 0x3C1C060 VA: 0x3C20060
+	|-Entity.TryGetComponent<ToolSpawningComponent>
+	|
+	|-RVA: 0x3C20178 Offset: 0x3C1C178 VA: 0x3C20178
+	|-Entity.TryGetComponent<__Il2CppFullySharedGenericStructType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public T GetComponent<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C1AE90 Offset: 0x3C16E90 VA: 0x3C1AE90
+	|-Entity.GetComponent<BoardTilePositionComponent>
+	|
+	|-RVA: 0x3C1AF74 Offset: 0x3C16F74 VA: 0x3C1AF74
+	|-Entity.GetComponent<BoxComponent>
+	|
+	|-RVA: 0x3C1B070 Offset: 0x3C17070 VA: 0x3C1B070
+	|-Entity.GetComponent<ExpendableComponent>
+	|
+	|-RVA: 0x3C1B16C Offset: 0x3C1716C VA: 0x3C1B16C
+	|-Entity.GetComponent<FeedingCombinationComponent>
+	|
+	|-RVA: 0x3C1B250 Offset: 0x3C17250 VA: 0x3C1B250
+	|-Entity.GetComponent<IdComponent>
+	|
+	|-RVA: 0x3C1B34C Offset: 0x3C1734C VA: 0x3C1B34C
+	|-Entity.GetComponent<InteractionComponent>
+	|
+	|-RVA: 0x3C1B448 Offset: 0x3C17448 VA: 0x3C1B448
+	|-Entity.GetComponent<LockComponent>
+	|
+	|-RVA: 0x3C1B52C Offset: 0x3C1752C VA: 0x3C1B52C
+	|-Entity.GetComponent<MergeComponent>
+	|
+	|-RVA: 0x3C1B614 Offset: 0x3C17614 VA: 0x3C1B614
+	|-Entity.GetComponent<__Il2CppFullySharedGenericStructType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public Entity WithComponent<T>(T component) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C20328 Offset: 0x3C1C328 VA: 0x3C20328
+	|-Entity.WithComponent<__Il2CppFullySharedGenericStructType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public bool HasComponent<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C1B710 Offset: 0x3C17710 VA: 0x3C1B710
+	|-Entity.HasComponent<BornComponent>
+	|
+	|-RVA: 0x3C1B7A8 Offset: 0x3C177A8 VA: 0x3C1B7A8
+	|-Entity.HasComponent<CollectableComponent>
+	|
+	|-RVA: 0x3C1B840 Offset: 0x3C17840 VA: 0x3C1B840
+	|-Entity.HasComponent<CooldownBlockComponent>
+	|
+	|-RVA: 0x3C1B8D8 Offset: 0x3C178D8 VA: 0x3C1B8D8
+	|-Entity.HasComponent<DeadComponent>
+	|
+	|-RVA: 0x3C1B970 Offset: 0x3C17970 VA: 0x3C1B970
+	|-Entity.HasComponent<ExpendableComponent>
+	|
+	|-RVA: 0x3C1BA08 Offset: 0x3C17A08 VA: 0x3C1BA08
+	|-Entity.HasComponent<FeedingCombinationComponent>
+	|
+	|-RVA: 0x3C1BAA0 Offset: 0x3C17AA0 VA: 0x3C1BAA0
+	|-Entity.HasComponent<FixedPositionComponent>
+	|
+	|-RVA: 0x3C1BB38 Offset: 0x3C17B38 VA: 0x3C1BB38
+	|-Entity.HasComponent<ImmediateToolComponent>
+	|
+	|-RVA: 0x3C1BBD0 Offset: 0x3C17BD0 VA: 0x3C1BBD0
+	|-Entity.HasComponent<ItemMovedComponent>
+	|
+	|-RVA: 0x3C1BC68 Offset: 0x3C17C68 VA: 0x3C1BC68
+	|-Entity.HasComponent<ItemUnboxedComponent>
+	|
+	|-RVA: 0x3C1BD00 Offset: 0x3C17D00 VA: 0x3C1BD00
+	|-Entity.HasComponent<MoveBlockComponent>
+	|
+	|-RVA: 0x3C1BD98 Offset: 0x3C17D98 VA: 0x3C1BD98
+	|-Entity.HasComponent<PendingItemsCombinationComponent>
+	|
+	|-RVA: 0x3C1BE30 Offset: 0x3C17E30 VA: 0x3C1BE30
+	|-Entity.HasComponent<ProducerComponent>
+	|
+	|-RVA: 0x3C1BEC8 Offset: 0x3C17EC8 VA: 0x3C1BEC8
+	|-Entity.HasComponent<SpawnerComponent>
+	|
+	|-RVA: 0x3C1BF60 Offset: 0x3C17F60 VA: 0x3C1BF60
+	|-Entity.HasComponent<TimeDurationComponent>
+	|
+	|-RVA: 0x3C1BFF8 Offset: 0x3C17FF8 VA: 0x3C1BFF8
+	|-Entity.HasComponent<TimeLimitedActivationComponent>
+	|
+	|-RVA: 0x3C1C090 Offset: 0x3C18090 VA: 0x3C1C090
+	|-Entity.HasComponent<TimeLockBlockComponent>
+	|
+	|-RVA: 0x3C1C128 Offset: 0x3C18128 VA: 0x3C1C128
+	|-Entity.HasComponent<ToolSpawningComponent>
+	|
+	|-RVA: 0x3C1C1C0 Offset: 0x3C181C0 VA: 0x3C1C1C0
+	|-Entity.HasComponent<__Il2CppFullySharedGenericStructType>
+	*/
+
+	// RVA: 0x5F14F04 Offset: 0x5F10F04 VA: 0x5F14F04
+	public bool HasComponent(Type componentType) { }
+
+	// RVA: -1 Offset: -1
+	public bool RemoveComponent<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C1C258 Offset: 0x3C18258 VA: 0x3C1C258
+	|-Entity.RemoveComponent<CollectableComponent>
+	|
+	|-RVA: 0x3C1C2D0 Offset: 0x3C182D0 VA: 0x3C1C2D0
+	|-Entity.RemoveComponent<CooldownBlockComponent>
+	|
+	|-RVA: 0x3C1C348 Offset: 0x3C18348 VA: 0x3C1C348
+	|-Entity.RemoveComponent<DeadComponent>
+	|
+	|-RVA: 0x3C1C3C0 Offset: 0x3C183C0 VA: 0x3C1C3C0
+	|-Entity.RemoveComponent<ExpendableComponent>
+	|
+	|-RVA: 0x3C1C438 Offset: 0x3C18438 VA: 0x3C1C438
+	|-Entity.RemoveComponent<PendingItemsCombinationComponent>
+	|
+	|-RVA: 0x3C1C4B0 Offset: 0x3C184B0 VA: 0x3C1C4B0
+	|-Entity.RemoveComponent<TimeLockBlockComponent>
+	|
+	|-RVA: 0x3C1C528 Offset: 0x3C18528 VA: 0x3C1C528
+	|-Entity.RemoveComponent<ToolSpawningComponent>
+	|
+	|-RVA: 0x3C1C5A0 Offset: 0x3C185A0 VA: 0x3C1C5A0
+	|-Entity.RemoveComponent<__Il2CppFullySharedGenericStructType>
+	*/
+
+	// RVA: 0x5F14F5C Offset: 0x5F10F5C VA: 0x5F14F5C
+	public bool RemoveComponent(Type type) { }
+
+	// RVA: 0x5F14FB4 Offset: 0x5F10FB4 VA: 0x5F14FB4
+	public void OverrideComponents(Entity otherEntity) { }
+}
+

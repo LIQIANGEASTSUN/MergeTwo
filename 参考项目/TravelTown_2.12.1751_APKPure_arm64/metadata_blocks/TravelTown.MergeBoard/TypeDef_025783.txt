@@ -1,0 +1,15 @@
+// Namespace: Merger.MergeBoard.Systems
+public class TimeDurationSystem : ISystem // TypeDefIndex: 25783
+{
+	// Methods
+
+	// RVA: 0x6A77400 Offset: 0x6A73400 VA: 0x6A77400 Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A77A74 Offset: 0x6A73A74 VA: 0x6A77A74
+	private void ProcessTimeDuration(double deltaTime, ref TimeDurationComponent modifiedComponent) { }
+
+	// RVA: 0x6A77ABC Offset: 0x6A73ABC VA: 0x6A77ABC
+	public void .ctor() { }
+}
+

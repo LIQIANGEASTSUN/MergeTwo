@@ -1,0 +1,44 @@
+Type: GameLogic.Config.ConfigExtensions+ItemIdShadow
+
+Method: System.String get_ItemKey()
+
+Disassembly:
+	0x034045EC LDR X8, [X20]
+	0x034045F0 MOV X20, X0
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_ItemKey(System.String value)
+
+Disassembly:
+	0x034045F4 LDR W9, [X8 + 0xE4]
+	0x034045F8 CBNZ W9, 0x3404604
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.String get_ConfigKey()
+
+Disassembly:
+	0x034045FC MOV X0, X8
+	0x03404600 BL 0x239BA64
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03404604 MOV X0, X19
+	0x03404608 MOV X1, X20
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+

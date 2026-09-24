@@ -1,0 +1,123 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public sealed class TimeLimitedActivationComponent : ComponentBase, ITimeLimitedActivationComponent // TypeDefIndex: 1092
+{
+	// Fields
+	[CompilerGenerated]
+	private long <TimerDuration>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private long <ExpirationTimeStamp>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private long <ActivationTimeStamp>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private bool <HasExpired>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private bool <WasCreatedInPreviousSession>k__BackingField; // 0x39
+	[CompilerGenerated]
+	private ExtraData <ExtraData>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private TimeLimitedAnalyticsData <AnalyticsData>k__BackingField; // 0x48
+	[CompilerGenerated]
+	private bool <ShouldIgnoreSendingData>k__BackingField; // 0x50
+	[CompilerGenerated]
+	private bool <NeedProcessCombiningProducer>k__BackingField; // 0x51
+	[CompilerGenerated]
+	private bool <SendForTheFirstTime>k__BackingField; // 0x52
+
+	// Properties
+	public long TimerDuration { get; set; }
+	public long ExpirationTimeStamp { get; set; }
+	public long ActivationTimeStamp { get; set; }
+	public bool HasExpired { get; set; }
+	public bool WasCreatedInPreviousSession { get; set; }
+	public ExtraData ExtraData { get; set; }
+	public TimeLimitedAnalyticsData AnalyticsData { get; set; }
+	public bool ShouldIgnoreSendingData { get; set; }
+	public bool NeedProcessCombiningProducer { get; set; }
+	public bool SendForTheFirstTime { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x68FDFC0 Offset: 0x68F9FC0 VA: 0x68FDFC0
+	public long get_TimerDuration() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FDFC8 Offset: 0x68F9FC8 VA: 0x68FDFC8
+	public void set_TimerDuration(long value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FDFD0 Offset: 0x68F9FD0 VA: 0x68FDFD0 Slot: 7
+	public long get_ExpirationTimeStamp() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FDFD8 Offset: 0x68F9FD8 VA: 0x68FDFD8
+	public void set_ExpirationTimeStamp(long value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FDFE0 Offset: 0x68F9FE0 VA: 0x68FDFE0 Slot: 8
+	public long get_ActivationTimeStamp() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FDFE8 Offset: 0x68F9FE8 VA: 0x68FDFE8
+	public void set_ActivationTimeStamp(long value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FDFF0 Offset: 0x68F9FF0 VA: 0x68FDFF0 Slot: 9
+	public bool get_HasExpired() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FDFF8 Offset: 0x68F9FF8 VA: 0x68FDFF8
+	public void set_HasExpired(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE004 Offset: 0x68FA004 VA: 0x68FE004
+	public bool get_WasCreatedInPreviousSession() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE00C Offset: 0x68FA00C VA: 0x68FE00C
+	public void set_WasCreatedInPreviousSession(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE018 Offset: 0x68FA018 VA: 0x68FE018
+	public ExtraData get_ExtraData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE020 Offset: 0x68FA020 VA: 0x68FE020
+	public void set_ExtraData(ExtraData value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE028 Offset: 0x68FA028 VA: 0x68FE028
+	public TimeLimitedAnalyticsData get_AnalyticsData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE030 Offset: 0x68FA030 VA: 0x68FE030
+	public void set_AnalyticsData(TimeLimitedAnalyticsData value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE038 Offset: 0x68FA038 VA: 0x68FE038
+	public bool get_ShouldIgnoreSendingData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE040 Offset: 0x68FA040 VA: 0x68FE040
+	public void set_ShouldIgnoreSendingData(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE04C Offset: 0x68FA04C VA: 0x68FE04C
+	public bool get_NeedProcessCombiningProducer() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE054 Offset: 0x68FA054 VA: 0x68FE054
+	public void set_NeedProcessCombiningProducer(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE060 Offset: 0x68FA060 VA: 0x68FE060
+	public bool get_SendForTheFirstTime() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE068 Offset: 0x68FA068 VA: 0x68FE068
+	public void set_SendForTheFirstTime(bool value) { }
+
+	// RVA: 0x68FE074 Offset: 0x68FA074 VA: 0x68FE074
+	public void .ctor(Entity entity) { }
+}
+

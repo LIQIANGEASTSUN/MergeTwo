@@ -1,0 +1,13 @@
+// Namespace: 
+[Serializable]
+public class TableBase // TypeDefIndex: 36
+{
+	// Methods
+
+	// RVA: 0x15EE100 Offset: 0x15EE100 VA: 0x15EE100 Slot: 4
+	public virtual int GetID() { }
+
+	// RVA: 0x15EE154 Offset: 0x15EE154 VA: 0x15EE154
+	public void .ctor() { }
+}
+

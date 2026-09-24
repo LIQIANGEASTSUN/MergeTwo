@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class SummerWatermelonModel.<>c__DisplayClass94_2 // TypeDefIndex: 4752
+{
+	// Fields
+	public int index; // 0x8
+
+	// Methods
+
+	// RVA: 0x32A81EC Offset: 0x32A81EC VA: 0x32A81EC
+	public void .ctor() { }
+
+	// RVA: 0x32A8320 Offset: 0x32A8320 VA: 0x32A8320
+	internal void <ClearBoard>b__2() { }
+}
+

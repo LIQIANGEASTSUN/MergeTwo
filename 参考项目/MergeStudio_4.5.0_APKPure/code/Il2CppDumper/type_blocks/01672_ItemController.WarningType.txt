@@ -1,0 +1,19 @@
+// Namespace: 
+public enum ItemController.WarningType // TypeDefIndex: 1672
+{
+	// Fields
+	public int value__; // 0x0
+	public const ItemController.WarningType RECHARGING = 0;
+	public const ItemController.WarningType BOARD_FULL = 1;
+	public const ItemController.WarningType FULL = 2;
+	public const ItemController.WarningType BUBBLE = 3;
+	public const ItemController.WarningType LOCKED = 4;
+	public const ItemController.WarningType ONLY1CHEST = 5;
+	public const ItemController.WarningType FULLY_CHARGED = 6;
+	public const ItemController.WarningType CANNOT_MERGE = 7;
+	public const ItemController.WarningType CAN_NOT_STORE_INVENTORY = 8;
+	public const ItemController.WarningType NEW_ITEM_FOUND = 9;
+	public const ItemController.WarningType KEEP_PLAYING_UNLOCKED = 10;
+	public const ItemController.WarningType COMMON_JOKER_CARD = 11;
+}
+

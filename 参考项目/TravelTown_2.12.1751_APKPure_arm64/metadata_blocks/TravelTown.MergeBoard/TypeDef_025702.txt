@@ -1,0 +1,76 @@
+// Namespace: Merger.MergeBoard.View.Layout
+public abstract class MergeBoardLayout : ViewComponent, IMergeBoardLayout // TypeDefIndex: 25702
+{
+	// Fields
+	[SerializeField]
+	protected Vector2 _tileSize; // 0x28
+	[CompilerGenerated]
+	private readonly Dictionary<int, RectTransform> <Tiles>k__BackingField; // 0x30
+
+	// Properties
+	public Dictionary<int, RectTransform> Tiles { get; }
+	public Vector2 GetTileSize { get; }
+	public Vector2 GetScaledTileSize { get; }
+	public abstract int GetPositionsCount { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A41A50 Offset: 0x6A3DA50 VA: 0x6A41A50
+	public Dictionary<int, RectTransform> get_Tiles() { }
+
+	// RVA: 0x6A41A58 Offset: 0x6A3DA58 VA: 0x6A41A58 Slot: 14
+	public Vector2 get_GetTileSize() { }
+
+	// RVA: 0x6A41A60 Offset: 0x6A3DA60 VA: 0x6A41A60 Slot: 15
+	public Vector2 get_GetScaledTileSize() { }
+
+	// RVA: 0x6A3CB9C Offset: 0x6A38B9C VA: 0x6A3CB9C
+	public void CreateBoard(IEnumerable<int> configuredTileIndices) { }
+
+	// RVA: 0x6A36D80 Offset: 0x6A32D80 VA: 0x6A36D80
+	public Nullable<int> GetIndexForTransform(Transform tileTransform) { }
+
+	// RVA: 0x6A3926C Offset: 0x6A3526C VA: 0x6A3926C
+	public bool ContainsIndex(int index) { }
+
+	// RVA: 0x6A3604C Offset: 0x6A3204C VA: 0x6A3604C Slot: 7
+	public RectTransform GetTransformAtPosition(int index) { }
+
+	// RVA: 0x6A3BBB8 Offset: 0x6A37BB8 VA: 0x6A3BBB8
+	public RectTransform GetTransformForPosition(Vector2 localPosition) { }
+
+	// RVA: -1 Offset: -1 Slot: 16
+	protected abstract void PrepareBoard(IEnumerable<int> configuredTiles);
+
+	// RVA: -1 Offset: -1 Slot: 17
+	public abstract bool TryGetEmptyPosition(IEnumerable<int> occupiedPositions, out int position);
+
+	// RVA: -1 Offset: -1 Slot: 18
+	public abstract bool TryGetClosestEmptyPosition(IEnumerable<int> occupiedPositions, int refPosition, out int position);
+
+	// RVA: -1 Offset: -1 Slot: 19
+	public abstract IEnumerable<int> GetAllEmptyPositions(IEnumerable<int> occupiedPositions);
+
+	// RVA: -1 Offset: -1 Slot: 20
+	public abstract IEnumerable<int> GetAdjacentPositions(int position);
+
+	// RVA: -1 Offset: -1 Slot: 21
+	public abstract IEnumerable<int> GetHorizontalVerticalAdjacentPositions(int position);
+
+	// RVA: -1 Offset: -1 Slot: 22
+	public abstract int get_GetPositionsCount();
+
+	// RVA: -1 Offset: -1 Slot: 23
+	public abstract float GetMaxDistanceFromNeighbors();
+
+	// RVA: 0x6A41C44 Offset: 0x6A3DC44 VA: 0x6A41C44 Slot: 24
+	public virtual void ToggleIndexText(bool isActive) { }
+
+	// RVA: 0x6A3C980 Offset: 0x6A38980 VA: 0x6A3C980
+	public void ClearBoard() { }
+
+	// RVA: 0x6A409D8 Offset: 0x6A3C9D8 VA: 0x6A409D8
+	protected void .ctor() { }
+}
+

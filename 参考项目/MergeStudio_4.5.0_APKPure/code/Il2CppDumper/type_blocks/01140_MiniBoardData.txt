@@ -1,0 +1,88 @@
+// Namespace: Paxie.MergeStudio.Features.MiniBoard
+public abstract class MiniBoardData : ScriptableObject, IBoardData // TypeDefIndex: 1140
+{
+	// Fields
+	[BoxGroup("Cell")]
+	public MiniBoardCellData CellData; // 0xC
+	[ShowAssetPreview(40, 40)]
+	[BoxGroup("Modules")]
+	public Sprite LockItemBackground; // 0x10
+	[BoxGroup("Modules")]
+	[ShowAssetPreview(40, 40)]
+	public Sprite BoxSprite; // 0x14
+	[ShowAssetPreview(40, 40)]
+	[BoxGroup("Modules")]
+	public Sprite RewardHolderInsideSprite; // 0x18
+	[BoxGroup("Items")]
+	public SerializableDictionary<int, BoardItemSetData> BoardItemDictionary; // 0x1C
+	[BoxGroup("Item Scaling")]
+	public float ItemDefaultScale; // 0x20
+	[BoxGroup("Item Scaling")]
+	public float ItemJellyScale; // 0x24
+	[BoxGroup("Reward Area")]
+	public float RewardAreaMiniBoardItemScale; // 0x28
+	[BoxGroup("Reward Area")]
+	public float RewardAreaItemRewardScale; // 0x2C
+	[BoxGroup("Particles")]
+	public GameObject UnboxParticle; // 0x30
+	[BoxGroup("Particles")]
+	public GameObject JellyDestroyParticle; // 0x34
+
+	// Methods
+
+	// RVA: 0x17C80B0 Offset: 0x17C80B0 VA: 0x17C80B0 Slot: 4
+	public BoardItemData GetBoardItemDataFallback(int setID, int level, bool skipWarning = False, bool fromEventBoard = False) { }
+
+	// RVA: 0x17C83A8 Offset: 0x17C83A8 VA: 0x17C83A8
+	public Vector2 GetFirstCellPosition(int rowCount, int columnCount) { }
+
+	// RVA: 0x17C83D8 Offset: 0x17C83D8 VA: 0x17C83D8
+	public List<BoardItemData> GetBoardItemSetItems(int setID) { }
+
+	// RVA: 0x17C8478 Offset: 0x17C8478 VA: 0x17C8478
+	public List<BoardItemData> GetAllBoardDataItems() { }
+
+	// RVA: -1 Offset: -1
+	public List<T> GetAllBoardDataItems<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2513994 Offset: 0x2513994 VA: 0x2513994
+	|-MiniBoardData.GetAllBoardDataItems<object>
+	*/
+
+	// RVA: 0x17C890C Offset: 0x17C890C VA: 0x17C890C
+	public List<BoardItemData> GetBoardItemSetItems(Type[] types) { }
+
+	// RVA: 0x17C8F60 Offset: 0x17C8F60 VA: 0x17C8F60
+	public BoardItemSetData GetBoardItemSet(int setID, bool checkBothGroups = False) { }
+
+	// RVA: 0x17C8FEC Offset: 0x17C8FEC VA: 0x17C8FEC
+	public BoardItemData GetBoardItemData(ItemInfo itemInfo, bool skipWarning = False) { }
+
+	// RVA: -1 Offset: -1
+	public BoardItemData GetBoardItemData<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2513E04 Offset: 0x2513E04 VA: 0x2513E04
+	|-MiniBoardData.GetBoardItemData<object>
+	|
+	|-RVA: 0x25143D4 Offset: 0x25143D4 VA: 0x25143D4
+	|-MiniBoardData.GetBoardItemData<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x17C9008 Offset: 0x17C9008 VA: 0x17C9008
+	public BoardItemData GetMergedItemData(int setID, int level) { }
+
+	// RVA: 0x17C281C Offset: 0x17C281C VA: 0x17C281C
+	public bool IsItemMaxLevel(int setID, int level) { }
+
+	// RVA: 0x17C9224 Offset: 0x17C9224 VA: 0x17C9224
+	public bool IsItemMaxLevel(ItemInfo itemInfo) { }
+
+	// RVA: 0x17C92F4 Offset: 0x17C92F4 VA: 0x17C92F4
+	public float GetRewardAreaItemScale(GameMainReward mainReward) { }
+
+	// RVA: 0x17C931C Offset: 0x17C931C VA: 0x17C931C
+	protected void .ctor() { }
+}
+

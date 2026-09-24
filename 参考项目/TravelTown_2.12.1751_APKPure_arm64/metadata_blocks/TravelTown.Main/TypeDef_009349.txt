@@ -1,0 +1,9 @@
+// Namespace: Merger.Game.Signal
+public class BoardTileDoubleEmptiedSignal // TypeDefIndex: 9349
+{
+	// Methods
+
+	// RVA: 0x676AC30 Offset: 0x6766C30 VA: 0x676AC30
+	public void .ctor() { }
+}
+

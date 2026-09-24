@@ -1,0 +1,1119 @@
+// Namespace: 
+public class MergeBoardItem : MonoBehaviour // TypeDefIndex: 2764
+{
+	// Fields
+	private MergeBoardEnum _boardId; // 0x10
+	private bool _boardIdSetFlag; // 0x14
+	private string[] _mergeEffectName; // 0x18
+	public TableMergeItem tableMergeItem; // 0x1C
+	private Transform obj_output; // 0x20
+	private Transform obj_output_special; // 0x24
+	private Transform vfx_increase; // 0x28
+	private Transform obj_merge; // 0x2C
+	private Transform obj_smoke; // 0x30
+	private Transform obj_bubble; // 0x34
+	private Transform obj_bubble_tag; // 0x38
+	private Transform obj_box; // 0x3C
+	private Transform obj_box_happygo; // 0x40
+	private Transform obj_ring; // 0x44
+	private Transform obj_task; // 0x48
+	private Transform obj_dailyTask; // 0x4C
+	private Transform obj_orderTask; // 0x50
+	private Transform obj_garageCleanup; // 0x54
+	private Image obj_energy; // 0x58
+	private Transform obj_energyTorrent; // 0x5C
+	private Transform obj_lock; // 0x60
+	private Transform obj_icon; // 0x64
+	private Transform obj_time; // 0x68
+	private Transform obj_mc_time; // 0x6C
+	private Transform obj_vfx_speed; // 0x70
+	private Transform obj_timeMask; // 0x74
+	private Transform obj_power; // 0x78
+	private Transform obj_tap; // 0x7C
+	private Transform obj_hint; // 0x80
+	private Transform obj_orderBoxHint; // 0x84
+	private Transform obj_openTips; // 0x88
+	private Transform obj_taskBg; // 0x8C
+	public Transform vfx_trail; // 0x90
+	private Transform obj_bubbleGroup; // 0x94
+	private Transform vfx_boxHappyGo; // 0x98
+	private Image image_bubble; // 0x9C
+	private Image image_bubble1; // 0xA0
+	public Image image_icon; // 0xA4
+	private Image image_lock; // 0xA8
+	private Image image_lock_happygo; // 0xAC
+	private Image image_time; // 0xB0
+	private Image image_box; // 0xB4
+	private Transform obj_combo; // 0xB8
+	private Transform obj_energyDouble; // 0xBC
+	private Transform obj_energyTorrentDouble; // 0xC0
+	private Animator animator; // 0xC4
+	private Animator anim_bubble; // 0xC8
+	private Animator anim_time; // 0xCC
+	private Animator anim_box; // 0xD0
+	private Animator anim_power; // 0xD4
+	private Animator anim_combo; // 0xD8
+	private Animator anim_criticalHit; // 0xDC
+	private LocalizeTextMeshProUGUI _textCombo; // 0xE0
+	private Transform _fullLevel; // 0xE4
+	private Transform vfx_transition_01; // 0xE8
+	private Material ui_grey; // 0xEC
+	private Slider _eatSlider; // 0xF0
+	private GameObject _eatBackGround; // 0xF4
+	private Transform _iceCubeGroup; // 0xF8
+	private Image _iceCubeSlider; // 0xFC
+	private Transform _iceCubeSliderPointer; // 0x100
+	private Image image_iceCube; // 0x104
+	private float itemSize; // 0x108
+	private int _id; // 0x10C
+	private MergeItemStatus _state; // 0x110
+	private int _index; // 0x114
+	private bool isProductItem; // 0x118
+	private bool isTimeProductItem; // 0x119
+	private bool isEnergyProduct; // 0x11A
+	public StorageMergeItem storageMergeItem; // 0x11C
+	private Dictionary<string, Coroutine> mergeDelayAnims; // 0x120
+	private Coroutine _orderBoxHintCoroutine; // 0x124
+	public Vector3 _orgLocalPosition; // 0x128
+	private Sequence _doTweenSequence; // 0x134
+	private Vector3 _oldLocalPosition; // 0x138
+	private Vector3 _orgLockPosition; // 0x144
+	public Vector3 _orgIconLocalPosition; // 0x150
+	private bool _isShowBubble; // 0x15C
+	private int _biscuitId; // 0x160
+	private Vector3[] path; // 0x164
+	private float[] _energyPowerScale; // 0x168
+	private float speedTweenTime; // 0x16C
+	private int _comboEfIndex; // 0x170
+	private int _criticalHitIndex; // 0x174
+	private Image _mapAdventureOneBoxIcon; // 0x178
+	private Image _mapAdventureOneLockIcon; // 0x17C
+	private Transform _mapAdventureOneBoxFx; // 0x180
+	private Transform _mapAdventureOneUnlockFx; // 0x184
+	private bool _isMapAdventureOne; // 0x188
+	private const string _mapAdventureOnePrefabName = "MapAdventure1";
+	private MergeBoardEnum[] _mapAdventureOneBoard; // 0x18C
+	private Image _mapAdventureTwoBoxIcon; // 0x190
+	private Image _mapAdventureTwoLockIcon; // 0x194
+	private Transform _mapAdventureTwoBoxFx; // 0x198
+	private Transform _mapAdventureTwoUnlockFx; // 0x19C
+	private bool _isMapAdventureTwo; // 0x1A0
+	private const string _mapAdventureTwoPrefabName = "MapAdventure2";
+	private MergeBoardEnum[] _mapAdventureTwoBoard; // 0x1A4
+	private Image _summerWatermelonBoxIconTen; // 0x1A8
+	private Image _summerWatermelonLockIconTen; // 0x1AC
+	private Transform _summerWatermelonBoxFxTen; // 0x1B0
+	private Transform _summerWatermelonUnlockFxTen; // 0x1B4
+	private bool _isSummerWatermelonTen; // 0x1B8
+	private const string _summerWatermelonTenPrefabName = "SummerWatermelon10";
+	private MergeBoardEnum[] _summerWatermelonTenBoard; // 0x1BC
+	private Image _summerWatermelonBoxIconEleven; // 0x1C0
+	private Image _summerWatermelonLockIconEleven; // 0x1C4
+	private Transform _summerWatermelonBoxFxEleven; // 0x1C8
+	private Transform _summerWatermelonUnlockFxEleven; // 0x1CC
+	private bool _isSummerWatermelonEleven; // 0x1D0
+	private const string _summerWatermelonElevenPrefabName = "SummerWatermelon11";
+	private MergeBoardEnum[] _summerWatermelonElevenBoard; // 0x1D4
+	private Image _summerWatermelonBoxIconTwelve; // 0x1D8
+	private Image _summerWatermelonLockIconTwelve; // 0x1DC
+	private Transform _summerWatermelonBoxFxTwelve; // 0x1E0
+	private Transform _summerWatermelonUnlockFxTwelve; // 0x1E4
+	private bool _isSummerWatermelonTwelve; // 0x1E8
+	private const string _summerWatermelonTwelvePrefabName = "SummerWatermelon12";
+	private MergeBoardEnum[] _summerWatermelonTwelveBoard; // 0x1EC
+	private Image _summerWatermelonBoxIconThirteen; // 0x1F0
+	private Image _summerWatermelonLockIconThirteen; // 0x1F4
+	private Transform _summerWatermelonBoxFxThirteen; // 0x1F8
+	private Transform _summerWatermelonUnlockFxThirteen; // 0x1FC
+	private bool _isSummerWatermelonThirteen; // 0x200
+	private const string _summerWatermelonThirteenPrefabName = "SummerWatermelon13";
+	private MergeBoardEnum[] _summerWatermelonThirteenBoard; // 0x204
+	private Image _summerWatermelonBoxIconFourteen; // 0x208
+	private Image _summerWatermelonLockIconFourteen; // 0x20C
+	private Transform _summerWatermelonBoxFxFourteen; // 0x210
+	private Transform _summerWatermelonUnlockFxFourteen; // 0x214
+	private bool _isSummerWatermelonFourteen; // 0x218
+	private const string _summerWatermelonFourteenPrefabName = "SummerWatermelon14";
+	private MergeBoardEnum[] _summerWatermelonFourteenBoard; // 0x21C
+	private Image _summerWatermelonBoxIconFifteen; // 0x220
+	private Image _summerWatermelonLockIconFifteen; // 0x224
+	private Transform _summerWatermelonBoxFxFifteen; // 0x228
+	private Transform _summerWatermelonUnlockFxFifteen; // 0x22C
+	private bool _isSummerWatermelonFifteen; // 0x230
+	private const string _summerWatermelonFifteenPrefabName = "SummerWatermelon15";
+	private MergeBoardEnum[] _summerWatermelonFifteenBoard; // 0x234
+	private Image _summerWatermelonBoxIconSixteen; // 0x238
+	private Image _summerWatermelonLockIconSixteen; // 0x23C
+	private Transform _summerWatermelonBoxFxSixteen; // 0x240
+	private Transform _summerWatermelonUnlockFxSixteen; // 0x244
+	private bool _isSummerWatermelonSixteen; // 0x248
+	private const string _summerWatermelonSixteenPrefabName = "SummerWatermelon16";
+	private MergeBoardEnum[] _summerWatermelonSixteenBoard; // 0x24C
+	private Image _summerWatermelonBoxIconSeventeen; // 0x250
+	private Image _summerWatermelonLockIconSeventeen; // 0x254
+	private Transform _summerWatermelonBoxFxSeventeen; // 0x258
+	private Transform _summerWatermelonUnlockFxSeventeen; // 0x25C
+	private bool _isSummerWatermelonSeventeen; // 0x260
+	private const string _summerWatermelonSeventeenPrefabName = "SummerWatermelon17";
+	private MergeBoardEnum[] _summerWatermelonSeventeenBoard; // 0x264
+	private Image _summerWatermelonBoxIconEighteen; // 0x268
+	private Image _summerWatermelonLockIconEighteen; // 0x26C
+	private Transform _summerWatermelonBoxFxEighteen; // 0x270
+	private Transform _summerWatermelonUnlockFxEighteen; // 0x274
+	private bool _isSummerWatermelonEighteen; // 0x278
+	private const string _summerWatermelonEighteenPrefabName = "SummerWatermelon18";
+	private MergeBoardEnum[] _summerWatermelonEighteenBoard; // 0x27C
+	private Image _summerWatermelonBoxIconNineteen; // 0x280
+	private Image _summerWatermelonLockIconNineteen; // 0x284
+	private Transform _summerWatermelonBoxFxNineteen; // 0x288
+	private Transform _summerWatermelonUnlockFxNineteen; // 0x28C
+	private bool _isSummerWatermelonNineteen; // 0x290
+	private const string _summerWatermelonNineteenPrefabName = "SummerWatermelon19";
+	private MergeBoardEnum[] _summerWatermelonNineteenBoard; // 0x294
+	private Image _summerWatermelonBoxIcon; // 0x298
+	private Image _summerWatermelonLockIcon; // 0x29C
+	private Transform _summerWatermelonBoxFx; // 0x2A0
+	private Transform _summerWatermelonUnlockFx; // 0x2A4
+	private bool _isSummerWatermelonTwo; // 0x2A8
+	private const string _summerWatermelonTwoPrefabName = "SummerWatermelon2";
+	private MergeBoardEnum[] _summerWatermelonTwoBoard; // 0x2AC
+	private Image _summerWatermelonBoxIconTwenty; // 0x2B0
+	private Image _summerWatermelonLockIconTwenty; // 0x2B4
+	private Transform _summerWatermelonBoxFxTwenty; // 0x2B8
+	private Transform _summerWatermelonUnlockFxTwenty; // 0x2BC
+	private bool _isSummerWatermelonTwenty; // 0x2C0
+	private const string _summerWatermelonTwentyPrefabName = "SummerWatermelon20";
+	private MergeBoardEnum[] _summerWatermelonTwentyBoard; // 0x2C4
+	private Image _summerWatermelonBoxIconTwentyOne; // 0x2C8
+	private Image _summerWatermelonLockIconTwentyOne; // 0x2CC
+	private Transform _summerWatermelonBoxFxTwentyOne; // 0x2D0
+	private Transform _summerWatermelonUnlockFxTwentyOne; // 0x2D4
+	private bool _isSummerWatermelonTwentyOne; // 0x2D8
+	private const string _summerWatermelonTwentyOnePrefabName = "SummerWatermelon21";
+	private MergeBoardEnum[] _summerWatermelonTwentyOneBoard; // 0x2DC
+	private Image _summerWatermelonBoxIconTwentyTwo; // 0x2E0
+	private Image _summerWatermelonLockIconTwentyTwo; // 0x2E4
+	private Transform _summerWatermelonBoxFxTwentyTwo; // 0x2E8
+	private Transform _summerWatermelonUnlockFxTwentyTwo; // 0x2EC
+	private bool _isSummerWatermelonTwentyTwo; // 0x2F0
+	private const string _summerWatermelonTwentyTwoPrefabName = "SummerWatermelon22";
+	private MergeBoardEnum[] _summerWatermelonTwentyTwoBoard; // 0x2F4
+	private Image _summerWatermelonBoxIconTwentyThree; // 0x2F8
+	private Image _summerWatermelonLockIconTwentyThree; // 0x2FC
+	private Transform _summerWatermelonBoxFxTwentyThree; // 0x300
+	private Transform _summerWatermelonUnlockFxTwentyThree; // 0x304
+	private bool _isSummerWatermelonTwentyThree; // 0x308
+	private const string _summerWatermelonTwentyThreePrefabName = "SummerWatermelon23";
+	private MergeBoardEnum[] _summerWatermelonTwentyThreeBoard; // 0x30C
+	private Image _summerWatermelonBoxIconTwentyFour; // 0x310
+	private Image _summerWatermelonLockIconTwentyFour; // 0x314
+	private Transform _summerWatermelonBoxFxTwentyFour; // 0x318
+	private Transform _summerWatermelonUnlockFxTwentyFour; // 0x31C
+	private bool _isSummerWatermelonTwentyFour; // 0x320
+	private const string _summerWatermelonTwentyFourPrefabName = "SummerWatermelon24";
+	private MergeBoardEnum[] _summerWatermelonTwentyFourBoard; // 0x324
+	private Image _summerWatermelonBoxIconTwentyFive; // 0x328
+	private Image _summerWatermelonLockIconTwentyFive; // 0x32C
+	private Transform _summerWatermelonBoxFxTwentyFive; // 0x330
+	private Transform _summerWatermelonUnlockFxTwentyFive; // 0x334
+	private bool _isSummerWatermelonTwentyFive; // 0x338
+	private const string _summerWatermelonTwentyFivePrefabName = "SummerWatermelon25";
+	private MergeBoardEnum[] _summerWatermelonTwentyFiveBoard; // 0x33C
+	private Image _summerWatermelonBoxIconTwentySix; // 0x340
+	private Image _summerWatermelonLockIconTwentySix; // 0x344
+	private Transform _summerWatermelonBoxFxTwentySix; // 0x348
+	private Transform _summerWatermelonUnlockFxTwentySix; // 0x34C
+	private bool _isSummerWatermelonTwentySix; // 0x350
+	private const string _summerWatermelonTwentySixPrefabName = "SummerWatermelon26";
+	private MergeBoardEnum[] _summerWatermelonTwentySixBoard; // 0x354
+	private Image _summerWatermelonBoxIconTwentySeven; // 0x358
+	private Image _summerWatermelonLockIconTwentySeven; // 0x35C
+	private Transform _summerWatermelonBoxFxTwentySeven; // 0x360
+	private Transform _summerWatermelonUnlockFxTwentySeven; // 0x364
+	private bool _isSummerWatermelonTwentySeven; // 0x368
+	private const string _summerWatermelonTwentySevenPrefabName = "SummerWatermelon27";
+	private MergeBoardEnum[] _summerWatermelonTwentySevenBoard; // 0x36C
+	private Image _summerWatermelonBoxIconTwentyEight; // 0x370
+	private Image _summerWatermelonLockIconTwentyEight; // 0x374
+	private Transform _summerWatermelonBoxFxTwentyEight; // 0x378
+	private Transform _summerWatermelonUnlockFxTwentyEight; // 0x37C
+	private bool _isSummerWatermelonTwentyEight; // 0x380
+	private const string _summerWatermelonTwentyEightPrefabName = "SummerWatermelon28";
+	private MergeBoardEnum[] _summerWatermelonTwentyEightBoard; // 0x384
+	private Image _summerWatermelonBoxIconTwentyNine; // 0x388
+	private Image _summerWatermelonLockIconTwentyNine; // 0x38C
+	private Transform _summerWatermelonBoxFxTwentyNine; // 0x390
+	private Transform _summerWatermelonUnlockFxTwentyNine; // 0x394
+	private bool _isSummerWatermelonTwentyNine; // 0x398
+	private const string _summerWatermelonTwentyNinePrefabName = "SummerWatermelon29";
+	private MergeBoardEnum[] _summerWatermelonTwentyNineBoard; // 0x39C
+	private Image _summerWatermelonBoxIconThree; // 0x3A0
+	private Image _summerWatermelonLockIconThree; // 0x3A4
+	private Transform _summerWatermelonBoxFxThree; // 0x3A8
+	private Transform _summerWatermelonUnlockFxThree; // 0x3AC
+	private bool _isSummerWatermelonThree; // 0x3B0
+	private const string _summerWatermelonThreePrefabName = "SummerWatermelon3";
+	private MergeBoardEnum[] _summerWatermelonThreeBoard; // 0x3B4
+	private Image _summerWatermelonBoxIconThirty; // 0x3B8
+	private Image _summerWatermelonLockIconThirty; // 0x3BC
+	private Transform _summerWatermelonBoxFxThirty; // 0x3C0
+	private Transform _summerWatermelonUnlockFxThirty; // 0x3C4
+	private bool _isSummerWatermelonThirty; // 0x3C8
+	private const string _summerWatermelonThirtyPrefabName = "SummerWatermelon30";
+	private MergeBoardEnum[] _summerWatermelonThirtyBoard; // 0x3CC
+	private Image _summerWatermelonBoxIconThirtyOne; // 0x3D0
+	private Image _summerWatermelonLockIconThirtyOne; // 0x3D4
+	private Transform _summerWatermelonBoxFxThirtyOne; // 0x3D8
+	private Transform _summerWatermelonUnlockFxThirtyOne; // 0x3DC
+	private bool _isSummerWatermelonThirtyOne; // 0x3E0
+	private const string _summerWatermelonThirtyOnePrefabName = "SummerWatermelon31";
+	private MergeBoardEnum[] _summerWatermelonThirtyOneBoard; // 0x3E4
+	private Image _summerWatermelonBoxIconThirtyTwo; // 0x3E8
+	private Image _summerWatermelonLockIconThirtyTwo; // 0x3EC
+	private Transform _summerWatermelonBoxFxThirtyTwo; // 0x3F0
+	private Transform _summerWatermelonUnlockFxThirtyTwo; // 0x3F4
+	private bool _isSummerWatermelonThirtyTwo; // 0x3F8
+	private const string _summerWatermelonThirtyTwoPrefabName = "SummerWatermelon32";
+	private MergeBoardEnum[] _summerWatermelonThirtyTwoBoard; // 0x3FC
+	private Image _summerWatermelonBoxIconThirtyThree; // 0x400
+	private Image _summerWatermelonLockIconThirtyThree; // 0x404
+	private Transform _summerWatermelonBoxFxThirtyThree; // 0x408
+	private Transform _summerWatermelonUnlockFxThirtyThree; // 0x40C
+	private bool _isSummerWatermelonThirtyThree; // 0x410
+	private const string _summerWatermelonThirtyThreePrefabName = "SummerWatermelon33";
+	private MergeBoardEnum[] _summerWatermelonThirtyThreeBoard; // 0x414
+	private Image _summerWatermelonBoxIconThirtyFour; // 0x418
+	private Image _summerWatermelonLockIconThirtyFour; // 0x41C
+	private Transform _summerWatermelonBoxFxThirtyFour; // 0x420
+	private Transform _summerWatermelonUnlockFxThirtyFour; // 0x424
+	private bool _isSummerWatermelonThirtyFour; // 0x428
+	private const string _summerWatermelonThirtyFourPrefabName = "SummerWatermelon34";
+	private MergeBoardEnum[] _summerWatermelonThirtyFourBoard; // 0x42C
+	private Image _summerWatermelonBoxIconFour; // 0x430
+	private Image _summerWatermelonLockIconFour; // 0x434
+	private Transform _summerWatermelonBoxFxFour; // 0x438
+	private Transform _summerWatermelonUnlockFxFour; // 0x43C
+	private Transform _summerWatermelonCleanGroupFour; // 0x440
+	private Transform _summerWatermeFourIconFx; // 0x444
+	private Transform _summerWatermeFourSliderTwo; // 0x448
+	private Transform _summerWatermeFourSliderTwo0; // 0x44C
+	private Transform _summerWatermeFourSliderTwo1; // 0x450
+	private Transform _summerWatermeFourSliderThree; // 0x454
+	private Transform _summerWatermeFourSliderThree0; // 0x458
+	private Transform _summerWatermeFourSliderThree1; // 0x45C
+	private Transform _summerWatermeFourSliderThree2; // 0x460
+	private bool _isSummerWatermelonFour; // 0x464
+	private const string _summerWatermelonFourPrefabName = "SummerWatermelon4";
+	private MergeBoardEnum[] _summerWatermelonFourBoard; // 0x468
+	private Image _summerWatermelonBoxIconFive; // 0x46C
+	private Image _summerWatermelonLockIconFive; // 0x470
+	private Transform _summerWatermelonBoxFxFive; // 0x474
+	private Transform _summerWatermelonUnlockFxFive; // 0x478
+	private bool _isSummerWatermelonFive; // 0x47C
+	private const string _summerWatermelonFivePrefabName = "SummerWatermelon5";
+	private MergeBoardEnum[] _summerWatermelonFiveBoard; // 0x480
+	private Image _summerWatermelonBoxIconSix; // 0x484
+	private Image _summerWatermelonLockIconSix; // 0x488
+	private Transform _summerWatermelonBoxFxSix; // 0x48C
+	private Transform _summerWatermelonUnlockFxSix; // 0x490
+	private Transform _summerWatermelonCleanGroupSix; // 0x494
+	private Transform _summerWatermeSixIconFx; // 0x498
+	private Transform _summerWatermeSixSliderTwo; // 0x49C
+	private Transform _summerWatermeSixSliderTwo0; // 0x4A0
+	private Transform _summerWatermeSixSliderTwo1; // 0x4A4
+	private Transform _summerWatermeSixSliderThree; // 0x4A8
+	private Transform _summerWatermeSixSliderThree0; // 0x4AC
+	private Transform _summerWatermeSixSliderThree1; // 0x4B0
+	private Transform _summerWatermeSixSliderThree2; // 0x4B4
+	private bool _isSummerWatermelonSix; // 0x4B8
+	private const string _summerWatermelonSixPrefabName = "SummerWatermelon6";
+	private MergeBoardEnum[] _summerWatermelonSixBoard; // 0x4BC
+	private Image _summerWatermelonBoxIconSeven; // 0x4C0
+	private Image _summerWatermelonLockIconSeven; // 0x4C4
+	private Transform _summerWatermelonBoxFxSeven; // 0x4C8
+	private Transform _summerWatermelonUnlockFxSeven; // 0x4CC
+	private bool _isSummerWatermelonSeven; // 0x4D0
+	private const string _summerWatermelonSevenPrefabName = "SummerWatermelon7";
+	private MergeBoardEnum[] _summerWatermelonSevenBoard; // 0x4D4
+	private Image _summerWatermelonBoxIconEight; // 0x4D8
+	private Image _summerWatermelonLockIconEight; // 0x4DC
+	private Transform _summerWatermelonBoxFxEight; // 0x4E0
+	private Transform _summerWatermelonUnlockFxEight; // 0x4E4
+	private Transform _summerWatermelonCleanGroupEight; // 0x4E8
+	private Transform _summerWatermeEightIconFx; // 0x4EC
+	private Transform _summerWatermeEightSliderTwo; // 0x4F0
+	private Transform _summerWatermeEightSliderTwo0; // 0x4F4
+	private Transform _summerWatermeEightSliderTwo1; // 0x4F8
+	private Transform _summerWatermeEightSliderThree; // 0x4FC
+	private Transform _summerWatermeEightSliderThree0; // 0x500
+	private Transform _summerWatermeEightSliderThree1; // 0x504
+	private Transform _summerWatermeEightSliderThree2; // 0x508
+	private bool _isSummerWatermelonEight; // 0x50C
+	private const string _summerWatermelonEightPrefabName = "SummerWatermelon8";
+	private MergeBoardEnum[] _summerWatermelonEightBoard; // 0x510
+	private Image _summerWatermelonBoxIconNine; // 0x514
+	private Image _summerWatermelonLockIconNine; // 0x518
+	private Transform _summerWatermelonBoxFxNine; // 0x51C
+	private Transform _summerWatermelonUnlockFxNine; // 0x520
+	private bool _isSummerWatermelonNine; // 0x524
+	private const string _summerWatermelonNinePrefabName = "SummerWatermelon9";
+	private MergeBoardEnum[] _summerWatermelonNineBoard; // 0x528
+
+	// Properties
+	private MergeBoardEnum BoardId { get; }
+	public Animator Animator { get; }
+	public MergeItemStatus state { get; set; }
+	public int id { get; set; }
+	public int index { get; set; }
+
+	// Methods
+
+	// RVA: 0x2BFC0AC Offset: 0x2BFC0AC VA: 0x2BFC0AC
+	private MergeBoardEnum get_BoardId() { }
+
+	// RVA: 0x2BFC184 Offset: 0x2BFC184 VA: 0x2BFC184
+	public void SetBoardId(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2C09590 Offset: 0x2C09590 VA: 0x2C09590
+	public Animator get_Animator() { }
+
+	// RVA: 0x2C095E4 Offset: 0x2C095E4 VA: 0x2C095E4
+	public MergeItemStatus get_state() { }
+
+	// RVA: 0x2C09638 Offset: 0x2C09638 VA: 0x2C09638
+	public void set_state(MergeItemStatus value) { }
+
+	// RVA: 0x2C0969C Offset: 0x2C0969C VA: 0x2C0969C
+	public int get_id() { }
+
+	// RVA: 0x2C096F0 Offset: 0x2C096F0 VA: 0x2C096F0
+	public void set_id(int value) { }
+
+	// RVA: 0x2C09900 Offset: 0x2C09900 VA: 0x2C09900
+	public int get_index() { }
+
+	// RVA: 0x2C09954 Offset: 0x2C09954 VA: 0x2C09954
+	public void set_index(int value) { }
+
+	// RVA: 0x2C09A68 Offset: 0x2C09A68 VA: 0x2C09A68
+	private void Awake() { }
+
+	// RVA: 0x2C09B68 Offset: 0x2C09B68 VA: 0x2C09B68
+	public void Init() { }
+
+	// RVA: 0x2C0AF98 Offset: 0x2C0AF98 VA: 0x2C0AF98
+	public void UpdateData(bool isInitImages = True) { }
+
+	// RVA: 0x2C0B1D0 Offset: 0x2C0B1D0 VA: 0x2C0B1D0
+	private void InitImages() { }
+
+	// RVA: 0x2C0C724 Offset: 0x2C0C724 VA: 0x2C0C724
+	public void UpdateIconImage(int id = -1) { }
+
+	// RVA: 0x2C0CB80 Offset: 0x2C0CB80 VA: 0x2C0CB80
+	public void PlayMergeEffect() { }
+
+	// RVA: 0x2C0CD2C Offset: 0x2C0CD2C VA: 0x2C0CD2C
+	public void PlayRemoveEffect() { }
+
+	// RVA: 0x2C0CDE8 Offset: 0x2C0CDE8 VA: 0x2C0CDE8
+	public bool IsSpecialBoard() { }
+
+	// RVA: 0x2C0B844 Offset: 0x2C0B844 VA: 0x2C0B844
+	private void InitStatus() { }
+
+	[IDTag(1)]
+	// RVA: 0x2C130DC Offset: 0x2C130DC VA: 0x2C130DC
+	public void PlayAnimator(string name, bool isRefreshStatus = False) { }
+
+	// RVA: 0x2C13454 Offset: 0x2C13454 VA: 0x2C13454
+	public void PlayTweenAnim(Vector3 dir) { }
+
+	// RVA: 0x2C13A10 Offset: 0x2C13A10 VA: 0x2C13A10
+	public void StopTweenAnim() { }
+
+	// RVA: 0x2C13BA0 Offset: 0x2C13BA0 VA: 0x2C13BA0
+	private void OnDestroy() { }
+
+	[IDTag(0)]
+	// RVA: 0x2C13358 Offset: 0x2C13358 VA: 0x2C13358
+	public void PlayAnimator(Animator anim, string name) { }
+
+	// RVA: 0x2C0C20C Offset: 0x2C0C20C VA: 0x2C0C20C
+	private void UpdateImageColor() { }
+
+	// RVA: 0x2C13C20 Offset: 0x2C13C20 VA: 0x2C13C20
+	public GameObject CloneIconGameObject() { }
+
+	// RVA: 0x2C13D08 Offset: 0x2C13D08 VA: 0x2C13D08
+	public Vector3 GetIconPosition() { }
+
+	// RVA: 0x2C13DB4 Offset: 0x2C13DB4 VA: 0x2C13DB4
+	public void Reset() { }
+
+	// RVA: 0x2C0C2EC Offset: 0x2C0C2EC VA: 0x2C0C2EC
+	public void RefreshAllStatus() { }
+
+	// RVA: 0x2C14DD4 Offset: 0x2C14DD4 VA: 0x2C14DD4
+	public void RefreshSlider() { }
+
+	// RVA: 0x2C1544C Offset: 0x2C1544C VA: 0x2C1544C
+	public void RefreshHamsterBubble() { }
+
+	// RVA: 0x2C15D60 Offset: 0x2C15D60 VA: 0x2C15D60
+	private bool CanUpdate() { }
+
+	// RVA: 0x2C15EEC Offset: 0x2C15EEC VA: 0x2C15EEC
+	public void BubbleBreak() { }
+
+	// RVA: 0x2C161D0 Offset: 0x2C161D0 VA: 0x2C161D0
+	public void IceBreak() { }
+
+	// RVA: 0x2C164A4 Offset: 0x2C164A4 VA: 0x2C164A4
+	private void RefreshBubbleStatus() { }
+
+	// RVA: 0x2C16844 Offset: 0x2C16844 VA: 0x2C16844
+	private void RefreshIceCubeStatus() { }
+
+	// RVA: 0x2C14960 Offset: 0x2C14960 VA: 0x2C14960
+	private void RefreshOutPutStatus() { }
+
+	// RVA: 0x2C16D1C Offset: 0x2C16D1C VA: 0x2C16D1C
+	private void SetOutputActive(bool active) { }
+
+	// RVA: 0x2C151D8 Offset: 0x2C151D8 VA: 0x2C151D8
+	public bool IsInProductCD() { }
+
+	// RVA: 0x2C172F0 Offset: 0x2C172F0 VA: 0x2C172F0
+	private void RefreshCdStatus() { }
+
+	// RVA: 0x2C17694 Offset: 0x2C17694 VA: 0x2C17694
+	private void OnDisable() { }
+
+	// RVA: 0x2C178C4 Offset: 0x2C178C4 VA: 0x2C178C4
+	private void OnEnable() { }
+
+	// RVA: 0x2C179D8 Offset: 0x2C179D8 VA: 0x2C179D8
+	public void PlayEatMergeAni() { }
+
+	// RVA: 0x2C15090 Offset: 0x2C15090 VA: 0x2C15090
+	public void SetCdStatus(bool status) { }
+
+	// RVA: 0x2C17B2C Offset: 0x2C17B2C VA: 0x2C17B2C
+	public void SetMergeStatus(bool status) { }
+
+	// RVA: 0x2C17BC0 Offset: 0x2C17BC0 VA: 0x2C17BC0
+	public void DoProductTween(Vector3 oldPos, Vector3 newPos, RefreshItemSource source = 9, Action tweenEndCall) { }
+
+	// RVA: 0x2C18390 Offset: 0x2C18390 VA: 0x2C18390
+	public void SetTaskStatus(bool status, bool bgStatus) { }
+
+	// RVA: 0x2C18470 Offset: 0x2C18470 VA: 0x2C18470
+	public void SetDailyTaskStatus(bool status) { }
+
+	// RVA: 0x2C18504 Offset: 0x2C18504 VA: 0x2C18504
+	public void SetOrderTaskStatus(bool status) { }
+
+	// RVA: 0x2C185CC Offset: 0x2C185CC VA: 0x2C185CC
+	public void SetGarageCleanupStatus(bool status) { }
+
+	// RVA: 0x2C1865C Offset: 0x2C1865C VA: 0x2C1865C
+	public void PlaySpeedUpAnimator(bool rv, Action cb) { }
+
+	// RVA: 0x2C18968 Offset: 0x2C18968 VA: 0x2C18968
+	public void PlayBoxBreakAnimator() { }
+
+	// RVA: 0x2C1D68C Offset: 0x2C1D68C VA: 0x2C1D68C
+	public void DelayCall(Action cb) { }
+
+	// RVA: 0x2C1D7EC Offset: 0x2C1D7EC VA: 0x2C1D7EC
+	private void PlaySmoke() { }
+
+	// RVA: 0x2C1D8B4 Offset: 0x2C1D8B4 VA: 0x2C1D8B4
+	public void DoUseItem(int index) { }
+
+	// RVA: 0x2C1F968 Offset: 0x2C1F968 VA: 0x2C1F968
+	private void AddCurrency(UserData.ResourceId type, TableMergeItem tableMerge, int index) { }
+
+	// RVA: 0x2C20D74 Offset: 0x2C20D74 VA: 0x2C20D74
+	private void AddEasterCoin(TableMergeItem tableMerge, int index) { }
+
+	// RVA: 0x2C200C8 Offset: 0x2C200C8 VA: 0x2C200C8
+	private void AddDogCookies(TableMergeItem tableMerge, int index) { }
+
+	// RVA: 0x2C20E28 Offset: 0x2C20E28 VA: 0x2C20E28
+	public void SpliteItem() { }
+
+	[IteratorStateMachine(typeof(MergeBoardItem.<OnDecompos>d__143))]
+	// RVA: 0x2C20E90 Offset: 0x2C20E90 VA: 0x2C20E90
+	private IEnumerator OnDecompos() { }
+
+	// RVA: 0x2C20DDC Offset: 0x2C20DDC VA: 0x2C20DDC
+	public void SendHarvestBi() { }
+
+	// RVA: 0x2C20F54 Offset: 0x2C20F54 VA: 0x2C20F54
+	private void SendBubbleBreak() { }
+
+	// RVA: 0x2C21108 Offset: 0x2C21108 VA: 0x2C21108
+	private void SendBubbleBreakIn() { }
+
+	// RVA: 0x2C0C0E4 Offset: 0x2C0C0E4 VA: 0x2C0C0E4
+	private void SetTapImageStatus() { }
+
+	// RVA: 0x2C212B8 Offset: 0x2C212B8 VA: 0x2C212B8
+	public void SetTapImageActive(bool isActive) { }
+
+	// RVA: 0x2C213DC Offset: 0x2C213DC VA: 0x2C213DC
+	private void PlayPowerAnimator() { }
+
+	// RVA: 0x2C215A4 Offset: 0x2C215A4 VA: 0x2C215A4
+	public void PlaySpilteVfx() { }
+
+	// RVA: 0x2C215F0 Offset: 0x2C215F0 VA: 0x2C215F0
+	public void DoTimeSpeedUpTween(Vector3 pos) { }
+
+	// RVA: 0x2C21B94 Offset: 0x2C21B94 VA: 0x2C21B94
+	public void OnSellItem() { }
+
+	// RVA: 0x2C21E3C Offset: 0x2C21E3C VA: 0x2C21E3C
+	public void PlayBubbleAnimation(string aniName) { }
+
+	// RVA: 0x2C188A0 Offset: 0x2C188A0 VA: 0x2C188A0
+	public void PlayHintEffect() { }
+
+	// RVA: 0x2C21EA4 Offset: 0x2C21EA4 VA: 0x2C21EA4
+	public void PlayOrderBoxHintEffect() { }
+
+	[IteratorStateMachine(typeof(MergeBoardItem.<HideOrderBoxHintAfterDelay>d__158))]
+	// RVA: 0x2C2201C Offset: 0x2C2201C VA: 0x2C2201C
+	private IEnumerator HideOrderBoxHintAfterDelay() { }
+
+	// RVA: 0x2C220E0 Offset: 0x2C220E0 VA: 0x2C220E0
+	public void Debug_ShowIcon() { }
+
+	// RVA: 0x2C2223C Offset: 0x2C2223C VA: 0x2C2223C
+	public void PlayComboEf(int effectNum = 0) { }
+
+	// RVA: 0x2C22460 Offset: 0x2C22460 VA: 0x2C22460
+	public void PlayCriticalHitEf() { }
+
+	// RVA: 0x2C08A38 Offset: 0x2C08A38 VA: 0x2C08A38
+	private void InitMapAdventureOne(MergeBoardEnum id) { }
+
+	// RVA: 0x2C129C4 Offset: 0x2C129C4 VA: 0x2C129C4
+	private void InitMapAdventureOneStatus() { }
+
+	// RVA: 0x2C1D25C Offset: 0x2C1D25C VA: 0x2C1D25C
+	private void PlayMapAdventureOneBoxBreakAnimator() { }
+
+	// RVA: 0x2C08FE4 Offset: 0x2C08FE4 VA: 0x2C08FE4
+	private void InitMapAdventureTwo(MergeBoardEnum id) { }
+
+	// RVA: 0x2C12D50 Offset: 0x2C12D50 VA: 0x2C12D50
+	private void InitMapAdventureTwoStatus() { }
+
+	// RVA: 0x2C1D474 Offset: 0x2C1D474 VA: 0x2C1D474
+	private void PlayMapAdventureTwoBoxBreakAnimator() { }
+
+	// RVA: 0x2BFFB40 Offset: 0x2BFFB40 VA: 0x2BFFB40
+	private void InitSummerWatermelonTen(MergeBoardEnum id) { }
+
+	// RVA: 0x2C0E504 Offset: 0x2C0E504 VA: 0x2C0E504
+	private void InitSummerWatermelonTenStatus() { }
+
+	// RVA: 0x2C1A370 Offset: 0x2C1A370 VA: 0x2C1A370
+	public void PlaySummerWatermelonTenBoxBreakAnimator() { }
+
+	// RVA: 0x2C000F8 Offset: 0x2C000F8 VA: 0x2C000F8
+	private void InitSummerWatermelonEleven(MergeBoardEnum id) { }
+
+	// RVA: 0x2C0E7C4 Offset: 0x2C0E7C4 VA: 0x2C0E7C4
+	private void InitSummerWatermelonElevenStatus() { }
+
+	// RVA: 0x2C1A54C Offset: 0x2C1A54C VA: 0x2C1A54C
+	private void PlaySummerWatermelonElevenBoxBreakAnimator() { }
+
+	// RVA: 0x2C006B0 Offset: 0x2C006B0 VA: 0x2C006B0
+	private void InitSummerWatermelonTwelve(MergeBoardEnum id) { }
+
+	// RVA: 0x2C0EA84 Offset: 0x2C0EA84 VA: 0x2C0EA84
+	private void InitSummerWatermelonTwelveStatus() { }
+
+	// RVA: 0x2C1A728 Offset: 0x2C1A728 VA: 0x2C1A728
+	private void PlaySummerWatermelonTwelveBoxBreakAnimator() { }
+
+	// RVA: 0x2C00C68 Offset: 0x2C00C68 VA: 0x2C00C68
+	private void InitSummerWatermelonThirteen(MergeBoardEnum id) { }
+
+	// RVA: 0x2C0ED44 Offset: 0x2C0ED44 VA: 0x2C0ED44
+	private void InitSummerWatermelonThirteenStatus() { }
+
+	// RVA: 0x2C1A93C Offset: 0x2C1A93C VA: 0x2C1A93C
+	private void PlaySummerWatermelonThirteenBoxBreakAnimator() { }
+
+	// RVA: 0x2C01220 Offset: 0x2C01220 VA: 0x2C01220
+	private void InitSummerWatermelonFourteen(MergeBoardEnum id) { }
+
+	// RVA: 0x2C0F004 Offset: 0x2C0F004 VA: 0x2C0F004
+	private void InitSummerWatermelonFourteenStatus() { }
+
+	// RVA: 0x2C1AB18 Offset: 0x2C1AB18 VA: 0x2C1AB18
+	private void PlaySummerWatermelonFourteenBoxBreakAnimator() { }
+
+	// RVA: 0x2C017D8 Offset: 0x2C017D8 VA: 0x2C017D8
+	private void InitSummerWatermelonFifteen(MergeBoardEnum id) { }
+
+	// RVA: 0x2C0F2C4 Offset: 0x2C0F2C4 VA: 0x2C0F2C4
+	private void InitSummerWatermelonFifteenStatus() { }
+
+	// RVA: 0x2C1ACF4 Offset: 0x2C1ACF4 VA: 0x2C1ACF4
+	private void PlaySummerWatermelonFifteenBoxBreakAnimator() { }
+
+	// RVA: 0x2C01D90 Offset: 0x2C01D90 VA: 0x2C01D90
+	private void InitSummerWatermelonSixteen(MergeBoardEnum id) { }
+
+	// RVA: 0x2C0F584 Offset: 0x2C0F584 VA: 0x2C0F584
+	private void InitSummerWatermelonSixteenStatus() { }
+
+	// RVA: 0x2C1AED0 Offset: 0x2C1AED0 VA: 0x2C1AED0
+	private void PlaySummerWatermelonSixteenBoxBreakAnimator() { }
+
+	// RVA: 0x2C02348 Offset: 0x2C02348 VA: 0x2C02348
+	private void InitSummerWatermelonSeventeen(MergeBoardEnum id) { }
+
+	// RVA: 0x2C0F844 Offset: 0x2C0F844 VA: 0x2C0F844
+	private void InitSummerWatermelonSeventeenStatus() { }
+
+	// RVA: 0x2C1B0AC Offset: 0x2C1B0AC VA: 0x2C1B0AC
+	private void PlaySummerWatermelonSeventeenBoxBreakAnimator() { }
+
+	// RVA: 0x2C02900 Offset: 0x2C02900 VA: 0x2C02900
+	private void InitSummerWatermelonEighteen(MergeBoardEnum id) { }
+
+	// RVA: 0x2C0FB04 Offset: 0x2C0FB04 VA: 0x2C0FB04
+	private void InitSummerWatermelonEighteenStatus() { }
+
+	// RVA: 0x2C1B288 Offset: 0x2C1B288 VA: 0x2C1B288
+	private void PlaySummerWatermelonEighteenBoxBreakAnimator() { }
+
+	// RVA: 0x2C02EB8 Offset: 0x2C02EB8 VA: 0x2C02EB8
+	private void InitSummerWatermelonNineteen(MergeBoardEnum id) { }
+
+	// RVA: 0x2C0FDC4 Offset: 0x2C0FDC4 VA: 0x2C0FDC4
+	private void InitSummerWatermelonNineteenStatus() { }
+
+	// RVA: 0x2C1B464 Offset: 0x2C1B464 VA: 0x2C1B464
+	private void PlaySummerWatermelonNineteenBoxBreakAnimator() { }
+
+	// RVA: 0x2BFC38C Offset: 0x2BFC38C VA: 0x2BFC38C
+	private void InitSummerWatermelonTwo(MergeBoardEnum id) { }
+
+	// RVA: 0x2C0CE50 Offset: 0x2C0CE50 VA: 0x2C0CE50
+	private void InitSummerWatermelonTwoStatus() { }
+
+	// RVA: 0x2C191F8 Offset: 0x2C191F8 VA: 0x2C191F8
+	private void PlaySummerWatermelonTwoBoxBreakAnimator() { }
+
+	// RVA: 0x2C146F8 Offset: 0x2C146F8 VA: 0x2C146F8
+	private void ResetSummerWatermelonTwo() { }
+
+	// RVA: 0x2C03470 Offset: 0x2C03470 VA: 0x2C03470
+	private void InitSummerWatermelonTwenty(MergeBoardEnum id) { }
+
+	// RVA: 0x2C10084 Offset: 0x2C10084 VA: 0x2C10084
+	private void InitSummerWatermelonTwentyStatus() { }
+
+	// RVA: 0x2C1B640 Offset: 0x2C1B640 VA: 0x2C1B640
+	private void PlaySummerWatermelonTwentyBoxBreakAnimator() { }
+
+	// RVA: 0x2C03A28 Offset: 0x2C03A28 VA: 0x2C03A28
+	private void InitSummerWatermelonTwentyOne(MergeBoardEnum id) { }
+
+	// RVA: 0x2C10344 Offset: 0x2C10344 VA: 0x2C10344
+	private void InitSummerWatermelonTwentyOneStatus() { }
+
+	// RVA: 0x2C1B81C Offset: 0x2C1B81C VA: 0x2C1B81C
+	private void PlaySummerWatermelonTwentyOneBoxBreakAnimator() { }
+
+	// RVA: 0x2C03FE0 Offset: 0x2C03FE0 VA: 0x2C03FE0
+	private void InitSummerWatermelonTwentyTwo(MergeBoardEnum id) { }
+
+	// RVA: 0x2C10604 Offset: 0x2C10604 VA: 0x2C10604
+	private void InitSummerWatermelonTwentyTwoStatus() { }
+
+	// RVA: 0x2C1BA30 Offset: 0x2C1BA30 VA: 0x2C1BA30
+	private void PlaySummerWatermelonTwentyTwoBoxBreakAnimator() { }
+
+	// RVA: 0x2C04598 Offset: 0x2C04598 VA: 0x2C04598
+	private void InitSummerWatermelonTwentyThree(MergeBoardEnum id) { }
+
+	// RVA: 0x2C108C4 Offset: 0x2C108C4 VA: 0x2C108C4
+	private void InitSummerWatermelonTwentyThreeStatus() { }
+
+	// RVA: 0x2C1BC0C Offset: 0x2C1BC0C VA: 0x2C1BC0C
+	private void PlaySummerWatermelonTwentyThreeBoxBreakAnimator() { }
+
+	// RVA: 0x2C04B50 Offset: 0x2C04B50 VA: 0x2C04B50
+	private void InitSummerWatermelonTwentyFour(MergeBoardEnum id) { }
+
+	// RVA: 0x2C10B84 Offset: 0x2C10B84 VA: 0x2C10B84
+	private void InitSummerWatermelonTwentyFourStatus() { }
+
+	// RVA: 0x2C1BDE8 Offset: 0x2C1BDE8 VA: 0x2C1BDE8
+	private void PlaySummerWatermelonTwentyFourBoxBreakAnimator() { }
+
+	// RVA: 0x2C05108 Offset: 0x2C05108 VA: 0x2C05108
+	private void InitSummerWatermelonTwentyFive(MergeBoardEnum id) { }
+
+	// RVA: 0x2C10E44 Offset: 0x2C10E44 VA: 0x2C10E44
+	private void InitSummerWatermelonTwentyFiveStatus() { }
+
+	// RVA: 0x2C1BFC4 Offset: 0x2C1BFC4 VA: 0x2C1BFC4
+	private void PlaySummerWatermelonTwentyFiveBoxBreakAnimator() { }
+
+	// RVA: 0x2C056C0 Offset: 0x2C056C0 VA: 0x2C056C0
+	private void InitSummerWatermelonTwentySix(MergeBoardEnum id) { }
+
+	// RVA: 0x2C11104 Offset: 0x2C11104 VA: 0x2C11104
+	private void InitSummerWatermelonTwentySixStatus() { }
+
+	// RVA: 0x2C1C1A0 Offset: 0x2C1C1A0 VA: 0x2C1C1A0
+	private void PlaySummerWatermelonTwentySixBoxBreakAnimator() { }
+
+	// RVA: 0x2C05C78 Offset: 0x2C05C78 VA: 0x2C05C78
+	private void InitSummerWatermelonTwentySeven(MergeBoardEnum id) { }
+
+	// RVA: 0x2C113C4 Offset: 0x2C113C4 VA: 0x2C113C4
+	private void InitSummerWatermelonTwentySevenStatus() { }
+
+	// RVA: 0x2C1C37C Offset: 0x2C1C37C VA: 0x2C1C37C
+	private void PlaySummerWatermelonTwentySevenBoxBreakAnimator() { }
+
+	// RVA: 0x2C06230 Offset: 0x2C06230 VA: 0x2C06230
+	private void InitSummerWatermelonTwentyEight(MergeBoardEnum id) { }
+
+	// RVA: 0x2C11684 Offset: 0x2C11684 VA: 0x2C11684
+	private void InitSummerWatermelonTwentyEightStatus() { }
+
+	// RVA: 0x2C1C558 Offset: 0x2C1C558 VA: 0x2C1C558
+	private void PlaySummerWatermelonTwentyEightBoxBreakAnimator() { }
+
+	// RVA: 0x2C067E8 Offset: 0x2C067E8 VA: 0x2C067E8
+	private void InitSummerWatermelonTwentyNine(MergeBoardEnum id) { }
+
+	// RVA: 0x2C11944 Offset: 0x2C11944 VA: 0x2C11944
+	private void InitSummerWatermelonTwentyNineStatus() { }
+
+	// RVA: 0x2C1C734 Offset: 0x2C1C734 VA: 0x2C1C734
+	private void PlaySummerWatermelonTwentyNineBoxBreakAnimator() { }
+
+	// RVA: 0x2BFC8F8 Offset: 0x2BFC8F8 VA: 0x2BFC8F8
+	private void InitSummerWatermelonThree(MergeBoardEnum id) { }
+
+	// RVA: 0x2C0D110 Offset: 0x2C0D110 VA: 0x2C0D110
+	private void InitSummerWatermelonThreeStatus() { }
+
+	// RVA: 0x2C193D4 Offset: 0x2C193D4 VA: 0x2C193D4
+	private void PlaySummerWatermelonThreeBoxBreakAnimator() { }
+
+	// RVA: 0x2C06DA0 Offset: 0x2C06DA0 VA: 0x2C06DA0
+	private void InitSummerWatermelonThirty(MergeBoardEnum id) { }
+
+	// RVA: 0x2C11C04 Offset: 0x2C11C04 VA: 0x2C11C04
+	private void InitSummerWatermelonThirtyStatus() { }
+
+	// RVA: 0x2C1C910 Offset: 0x2C1C910 VA: 0x2C1C910
+	private void PlaySummerWatermelonThirtyBoxBreakAnimator() { }
+
+	// RVA: 0x2C07358 Offset: 0x2C07358 VA: 0x2C07358
+	private void InitSummerWatermelonThirtyOne(MergeBoardEnum id) { }
+
+	// RVA: 0x2C11EC4 Offset: 0x2C11EC4 VA: 0x2C11EC4
+	private void InitSummerWatermelonThirtyOneStatus() { }
+
+	// RVA: 0x2C1CAEC Offset: 0x2C1CAEC VA: 0x2C1CAEC
+	private void PlaySummerWatermelonThirtyOneBoxBreakAnimator() { }
+
+	// RVA: 0x2C07910 Offset: 0x2C07910 VA: 0x2C07910
+	private void InitSummerWatermelonThirtyTwo(MergeBoardEnum id) { }
+
+	// RVA: 0x2C12184 Offset: 0x2C12184 VA: 0x2C12184
+	private void InitSummerWatermelonThirtyTwoStatus() { }
+
+	// RVA: 0x2C1CCC8 Offset: 0x2C1CCC8 VA: 0x2C1CCC8
+	private void PlaySummerWatermelonThirtyTwoBoxBreakAnimator() { }
+
+	// RVA: 0x2C07EC8 Offset: 0x2C07EC8 VA: 0x2C07EC8
+	private void InitSummerWatermelonThirtyThree(MergeBoardEnum id) { }
+
+	// RVA: 0x2C12444 Offset: 0x2C12444 VA: 0x2C12444
+	private void InitSummerWatermelonThirtyThreeStatus() { }
+
+	// RVA: 0x2C1CEA4 Offset: 0x2C1CEA4 VA: 0x2C1CEA4
+	private void PlaySummerWatermelonThirtyThreeBoxBreakAnimator() { }
+
+	// RVA: 0x2C08480 Offset: 0x2C08480 VA: 0x2C08480
+	private void InitSummerWatermelonThirtyFour(MergeBoardEnum id) { }
+
+	// RVA: 0x2C12704 Offset: 0x2C12704 VA: 0x2C12704
+	private void InitSummerWatermelonThirtyFourStatus() { }
+
+	// RVA: 0x2C1D080 Offset: 0x2C1D080 VA: 0x2C1D080
+	private void PlaySummerWatermelonThirtyFourBoxBreakAnimator() { }
+
+	// RVA: 0x2BFCEAC Offset: 0x2BFCEAC VA: 0x2BFCEAC
+	private void InitSummerWatermelonFour(MergeBoardEnum id) { }
+
+	// RVA: 0x2C0D3D0 Offset: 0x2C0D3D0 VA: 0x2C0D3D0
+	private void InitSummerWatermelonFourStatus() { }
+
+	// RVA: 0x2C2263C Offset: 0x2C2263C VA: 0x2C2263C
+	public void UpdateHoeSlider() { }
+
+	// RVA: 0x2C22B30 Offset: 0x2C22B30 VA: 0x2C22B30
+	public void UpdateHoeIconFx(bool isShow) { }
+
+	// RVA: 0x2C195E8 Offset: 0x2C195E8 VA: 0x2C195E8
+	public void PlaySummerWatermelonFourBoxBreakAnimator() { }
+
+	// RVA: 0x2C22C3C Offset: 0x2C22C3C VA: 0x2C22C3C
+	public void PlayHoeAnimator(Action cb) { }
+
+	// RVA: 0x2BFD7D0 Offset: 0x2BFD7D0 VA: 0x2BFD7D0
+	private void InitSummerWatermelonFive(MergeBoardEnum id) { }
+
+	// RVA: 0x2C0D6CC Offset: 0x2C0D6CC VA: 0x2C0D6CC
+	private void InitSummerWatermelonFiveStatus() { }
+
+	// RVA: 0x2C1985C Offset: 0x2C1985C VA: 0x2C1985C
+	public void PlaySummerWatermelonFiveBoxBreakAnimator() { }
+
+	// RVA: 0x2BFDD88 Offset: 0x2BFDD88 VA: 0x2BFDD88
+	private void InitSummerWatermelonSix(MergeBoardEnum id) { }
+
+	// RVA: 0x2C0D98C Offset: 0x2C0D98C VA: 0x2C0D98C
+	private void InitSummerWatermelonSixStatus() { }
+
+	// RVA: 0x2C19A38 Offset: 0x2C19A38 VA: 0x2C19A38
+	public void PlaySummerWatermelonSixBoxBreakAnimator() { }
+
+	// RVA: 0x2C233E4 Offset: 0x2C233E4 VA: 0x2C233E4
+	public void PlayHoeSixAnimator(Action cb) { }
+
+	// RVA: 0x2C22DE4 Offset: 0x2C22DE4 VA: 0x2C22DE4
+	public void UpdateHoeSixSlider() { }
+
+	// RVA: 0x2C232D8 Offset: 0x2C232D8 VA: 0x2C232D8
+	public void UpdateHoeIconFxSix(bool isShow) { }
+
+	// RVA: 0x2BFE6AC Offset: 0x2BFE6AC VA: 0x2BFE6AC
+	private void InitSummerWatermelonSeven(MergeBoardEnum id) { }
+
+	// RVA: 0x2C0DC88 Offset: 0x2C0DC88 VA: 0x2C0DC88
+	private void InitSummerWatermelonSevenStatus() { }
+
+	// RVA: 0x2C19CAC Offset: 0x2C19CAC VA: 0x2C19CAC
+	private void PlaySummerWatermelonSevenBoxBreakAnimator() { }
+
+	// RVA: 0x2BFEC64 Offset: 0x2BFEC64 VA: 0x2BFEC64
+	private void InitSummerWatermelonEight(MergeBoardEnum id) { }
+
+	// RVA: 0x2C0DF48 Offset: 0x2C0DF48 VA: 0x2C0DF48
+	private void InitSummerWatermelonEightStatus() { }
+
+	// RVA: 0x2C19E88 Offset: 0x2C19E88 VA: 0x2C19E88
+	private void PlaySummerWatermelonEightBoxBreakAnimator() { }
+
+	// RVA: 0x2C23B8C Offset: 0x2C23B8C VA: 0x2C23B8C
+	public void PlayHoeEightAnimator(Action cb) { }
+
+	// RVA: 0x2C2358C Offset: 0x2C2358C VA: 0x2C2358C
+	public void UpdateHoeEightSlider() { }
+
+	// RVA: 0x2C23A80 Offset: 0x2C23A80 VA: 0x2C23A80
+	public void UpdateHoeIconFxEight(bool isShow) { }
+
+	// RVA: 0x2BFF588 Offset: 0x2BFF588 VA: 0x2BFF588
+	private void InitSummerWatermelonNine(MergeBoardEnum id) { }
+
+	// RVA: 0x2C0E244 Offset: 0x2C0E244 VA: 0x2C0E244
+	private void InitSummerWatermelonNineStatus() { }
+
+	// RVA: 0x2C1A0FC Offset: 0x2C1A0FC VA: 0x2C1A0FC
+	private void PlaySummerWatermelonNineBoxBreakAnimator() { }
+
+	// RVA: 0x2C1482C Offset: 0x2C1482C VA: 0x2C1482C
+	private void ResetSummerWatermelonNine() { }
+
+	// RVA: 0x2C23D34 Offset: 0x2C23D34 VA: 0x2C23D34
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C24AD4 Offset: 0x2C24AD4 VA: 0x2C24AD4
+	private void <RefreshHamsterBubble>b__113_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C24AE0 Offset: 0x2C24AE0 VA: 0x2C24AE0
+	private void <BubbleBreak>b__115_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C24D88 Offset: 0x2C24D88 VA: 0x2C24D88
+	private void <IceBreak>b__116_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25028 Offset: 0x2C25028 VA: 0x2C25028
+	private void <RefreshBubbleStatus>b__117_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C252D0 Offset: 0x2C252D0 VA: 0x2C252D0
+	private void <PlayEatMergeAni>b__125_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25314 Offset: 0x2C25314 VA: 0x2C25314
+	private void <PlayBoxBreakAnimator>b__135_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C2531C Offset: 0x2C2531C VA: 0x2C2531C
+	private void <DoTimeSpeedUpTween>b__153_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C253D0 Offset: 0x2C253D0 VA: 0x2C253D0
+	private void <PlayMapAdventureOneBoxBreakAnimator>b__173_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C2540C Offset: 0x2C2540C VA: 0x2C2540C
+	private void <PlayMapAdventureTwoBoxBreakAnimator>b__183_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25448 Offset: 0x2C25448 VA: 0x2C25448
+	private void <PlaySummerWatermelonTenBoxBreakAnimator>b__193_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C2548C Offset: 0x2C2548C VA: 0x2C2548C
+	private void <PlaySummerWatermelonElevenBoxBreakAnimator>b__203_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C254D0 Offset: 0x2C254D0 VA: 0x2C254D0
+	private void <PlaySummerWatermelonTwelveBoxBreakAnimator>b__213_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25514 Offset: 0x2C25514 VA: 0x2C25514
+	private void <PlaySummerWatermelonThirteenBoxBreakAnimator>b__223_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25558 Offset: 0x2C25558 VA: 0x2C25558
+	private void <PlaySummerWatermelonFourteenBoxBreakAnimator>b__233_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C2559C Offset: 0x2C2559C VA: 0x2C2559C
+	private void <PlaySummerWatermelonFifteenBoxBreakAnimator>b__243_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C255E0 Offset: 0x2C255E0 VA: 0x2C255E0
+	private void <PlaySummerWatermelonSixteenBoxBreakAnimator>b__253_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25624 Offset: 0x2C25624 VA: 0x2C25624
+	private void <PlaySummerWatermelonSeventeenBoxBreakAnimator>b__263_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25668 Offset: 0x2C25668 VA: 0x2C25668
+	private void <PlaySummerWatermelonEighteenBoxBreakAnimator>b__273_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C256AC Offset: 0x2C256AC VA: 0x2C256AC
+	private void <PlaySummerWatermelonNineteenBoxBreakAnimator>b__283_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C256F0 Offset: 0x2C256F0 VA: 0x2C256F0
+	private void <PlaySummerWatermelonTwoBoxBreakAnimator>b__293_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25734 Offset: 0x2C25734 VA: 0x2C25734
+	private void <PlaySummerWatermelonTwentyBoxBreakAnimator>b__304_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25778 Offset: 0x2C25778 VA: 0x2C25778
+	private void <PlaySummerWatermelonTwentyOneBoxBreakAnimator>b__314_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C257BC Offset: 0x2C257BC VA: 0x2C257BC
+	private void <PlaySummerWatermelonTwentyTwoBoxBreakAnimator>b__324_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25800 Offset: 0x2C25800 VA: 0x2C25800
+	private void <PlaySummerWatermelonTwentyThreeBoxBreakAnimator>b__334_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25844 Offset: 0x2C25844 VA: 0x2C25844
+	private void <PlaySummerWatermelonTwentyFourBoxBreakAnimator>b__344_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25888 Offset: 0x2C25888 VA: 0x2C25888
+	private void <PlaySummerWatermelonTwentyFiveBoxBreakAnimator>b__354_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C258CC Offset: 0x2C258CC VA: 0x2C258CC
+	private void <PlaySummerWatermelonTwentySixBoxBreakAnimator>b__364_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25910 Offset: 0x2C25910 VA: 0x2C25910
+	private void <PlaySummerWatermelonTwentySevenBoxBreakAnimator>b__374_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25954 Offset: 0x2C25954 VA: 0x2C25954
+	private void <PlaySummerWatermelonTwentyEightBoxBreakAnimator>b__384_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25998 Offset: 0x2C25998 VA: 0x2C25998
+	private void <PlaySummerWatermelonTwentyNineBoxBreakAnimator>b__394_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C259DC Offset: 0x2C259DC VA: 0x2C259DC
+	private void <PlaySummerWatermelonThreeBoxBreakAnimator>b__404_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25A20 Offset: 0x2C25A20 VA: 0x2C25A20
+	private void <PlaySummerWatermelonThirtyBoxBreakAnimator>b__414_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25A64 Offset: 0x2C25A64 VA: 0x2C25A64
+	private void <PlaySummerWatermelonThirtyOneBoxBreakAnimator>b__424_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25AA8 Offset: 0x2C25AA8 VA: 0x2C25AA8
+	private void <PlaySummerWatermelonThirtyTwoBoxBreakAnimator>b__434_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25AEC Offset: 0x2C25AEC VA: 0x2C25AEC
+	private void <PlaySummerWatermelonThirtyThreeBoxBreakAnimator>b__444_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25B30 Offset: 0x2C25B30 VA: 0x2C25B30
+	private void <PlaySummerWatermelonThirtyFourBoxBreakAnimator>b__454_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25B74 Offset: 0x2C25B74 VA: 0x2C25B74
+	private void <PlaySummerWatermelonFourBoxBreakAnimator>b__475_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25BB8 Offset: 0x2C25BB8 VA: 0x2C25BB8
+	private void <PlaySummerWatermelonFiveBoxBreakAnimator>b__486_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25BFC Offset: 0x2C25BFC VA: 0x2C25BFC
+	private void <PlaySummerWatermelonSixBoxBreakAnimator>b__505_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25C40 Offset: 0x2C25C40 VA: 0x2C25C40
+	private void <PlaySummerWatermelonSevenBoxBreakAnimator>b__518_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25C84 Offset: 0x2C25C84 VA: 0x2C25C84
+	private void <PlaySummerWatermelonEightBoxBreakAnimator>b__537_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C25CC8 Offset: 0x2C25CC8 VA: 0x2C25CC8
+	private void <PlaySummerWatermelonNineBoxBreakAnimator>b__550_0() { }
+}
+

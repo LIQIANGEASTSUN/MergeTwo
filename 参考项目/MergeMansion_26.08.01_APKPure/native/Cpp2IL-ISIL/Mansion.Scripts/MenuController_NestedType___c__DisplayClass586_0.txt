@@ -1,0 +1,86 @@
+Type: MenuController+<>c__DisplayClass586_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x02B73A68 LDR X1, [X10]
+	0x02B73A6C CBZ X9, 0x2B73A90
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: UI.IMenuSection <ShowAutoMergeEventStartPopup>b__0()
+
+Disassembly:
+	0x02B73A70 LDR X10, [X8 + 0xB0]
+	0x02B73A74 ADD X10, X10, 0x8
+	0x02B73A78 LDUR X11, [X10 - 0x8]
+	0x02B73A7C CMP X11, X1
+	0x02B73A80 B.EQ 0x2B73AF4
+	0x02B73A84 SUBS X9, X9, 0x1
+	0x02B73A88 ADD X10, X10, 0x10
+	0x02B73A8C B.NE 0x2B73A78
+	0x02B73A90 MOV X0, X19
+	0x02B73A94 MOVZ W2, 0x2
+	0x02B73A98 BL 0x23D527C
+	0x02B73A9C B 0x2B73B04
+	0x02B73AA0 LDR X8, [X31 + 0xC8]
+	0x02B73AA4 LDR X20, [X8 + 0x30]
+	0x02B73AA8 CBZ X20, 0x2B73F7C
+	0x02B73AAC ADRP X10, 0x2B73000
+	0x02B73AB0 LDR X8, [X20]
+	0x02B73AB4 LDR X10, [X10 + 0xB50]
+	0x02B73AB8 LDRH W9, [X8 + 0x12E]
+	0x02B73ABC LDR X1, [X10]
+	0x02B73AC0 CBZ X9, 0x2B73AE4
+	0x02B73AC4 LDR X10, [X8 + 0xB0]
+	0x02B73AC8 ADD X10, X10, 0x8
+	0x02B73ACC LDUR X11, [X10 - 0x8]
+	0x02B73AD0 CMP X11, X1
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move X20, X0
+	005 Move X0, [X0+32]
+	006 Compare X0, 0
+	007 JumpIfEqual {32}
+	008 Move X8, [X0]
+	009 Move X19, [X20+16]
+	010 Move X9, [X8+424]
+	011 Move X1, [X8+432]
+	012 NotImplemented "Instruction BLR not yet implemented."
+	013 Move X8, [X20+24]
+	014 Compare X8, 0
+	015 JumpIfEqual {32}
+	016 Move X20, X0
+	017 Move X0, X8
+	018 Move X1, X31
+	019 Call Component.get_gameObject, X0
+	020 Compare X19, 0
+	021 JumpIfEqual {32}
+	022 Move X2, X0
+	023 Move X0, X19
+	024 Move X1, X20
+	025 Move X20, [X31+16]
+	026 Move X19, [X31+24]
+	027 Move W3, W31
+	028 Move X4, X31
+	029 Move X30, [X31+32]
+	030 Call MenuController.FindMenuWithTag, X0, X1, X2, X3
+	031 Return X0
+	032 Call 0x239FB90
+
+Method: UI.IMenuState <ShowAutoMergeEventStartPopup>b__1()
+
+Disassembly:
+	0x02B73AD4 B.EQ 0x2B73B80
+	0x02B73AD8 SUBS X9, X9, 0x1
+
+ISIL:
+	001 Move X0, [X0+32]
+	002 Return X0
+

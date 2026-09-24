@@ -1,0 +1,61 @@
+// Namespace: Merger.MergeBoard.Models
+public class ItemsDiscoveryModel : ModelBase, IItemsDiscoveryModel, IPlayerItemsCollectionModel // TypeDefIndex: 25810
+{
+	// Fields
+	private readonly Dictionary<string, ItemsDiscoveryModel.ItemDiscoveryRecord> _items; // 0x28
+	private readonly ObservableList<string> _rewardPendingItemIds; // 0x30
+
+	// Properties
+	public ObservableList<string> RewardPendingItemIds { get; }
+
+	// Methods
+
+	// RVA: 0x6A7C770 Offset: 0x6A78770 VA: 0x6A7C770 Slot: 19
+	public ObservableList<string> get_RewardPendingItemIds() { }
+
+	// RVA: 0x6A7C778 Offset: 0x6A78778 VA: 0x6A7C778 Slot: 20
+	public CollectionBookStickerState GetItemState(string id) { }
+
+	// RVA: 0x6A7C7FC Offset: 0x6A787FC VA: 0x6A7C7FC Slot: 25
+	public bool IsItemCollected(string id) { }
+
+	// RVA: 0x6A7C8A8 Offset: 0x6A788A8 VA: 0x6A7C8A8 Slot: 26
+	public bool IsItemCreated(string id) { }
+
+	// RVA: 0x6A7C95C Offset: 0x6A7895C VA: 0x6A7C95C Slot: 24
+	public bool IsItemRewardPending(string id) { }
+
+	// RVA: 0x6A7CA08 Offset: 0x6A78A08 VA: 0x6A7CA08 Slot: 23
+	public bool IsItemRewardCollected(string id) { }
+
+	// RVA: 0x6A7CAB4 Offset: 0x6A78AB4 VA: 0x6A7CAB4 Slot: 27
+	public bool TryAddDiscoveredItem(IMergeItem item) { }
+
+	// RVA: 0x6A7CD78 Offset: 0x6A78D78 VA: 0x6A7CD78 Slot: 28
+	public bool TryAddCreatedItem(IMergeItem item) { }
+
+	// RVA: 0x6A7D0D0 Offset: 0x6A790D0 VA: 0x6A7D0D0 Slot: 22
+	public void MarkItemRewardCollected(IMergeItem item) { }
+
+	// RVA: 0x6A7D254 Offset: 0x6A79254 VA: 0x6A7D254 Slot: 21
+	public void OverrideItemsDiscoveryState(CollectionStateResponse state) { }
+
+	// RVA: 0x6A7D5FC Offset: 0x6A795FC VA: 0x6A7D5FC
+	private void RebuildRewardPendingIds() { }
+
+	// RVA: 0x6A7C938 Offset: 0x6A78938 VA: 0x6A7C938
+	private bool IsItemCreated(ItemsDiscoveryModel.ItemDiscoveryRecord record) { }
+
+	// RVA: 0x6A7C9E8 Offset: 0x6A789E8 VA: 0x6A7C9E8
+	private bool IsItemRewardPending(ItemsDiscoveryModel.ItemDiscoveryRecord record) { }
+
+	// RVA: 0x6A7CA94 Offset: 0x6A78A94 VA: 0x6A7CA94
+	private bool IsItemRewardCollected(ItemsDiscoveryModel.ItemDiscoveryRecord record) { }
+
+	// RVA: 0x6A7C888 Offset: 0x6A78888 VA: 0x6A7C888
+	private bool IsItemDiscovered(ItemsDiscoveryModel.ItemDiscoveryRecord record) { }
+
+	// RVA: 0x6A7D86C Offset: 0x6A7986C VA: 0x6A7D86C
+	public void .ctor() { }
+}
+

@@ -1,0 +1,20 @@
+// Namespace: MergeEngine.Signal.Items
+public class ToolItemSpawnedSignal : MergeItemSignalBase // TypeDefIndex: 240
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly IMergeItem <SpawnedFrom>k__BackingField; // 0x20
+
+	// Properties
+	public IMergeItem SpawnedFrom { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3E14 Offset: 0x5FEFE14 VA: 0x5FF3E14
+	public IMergeItem get_SpawnedFrom() { }
+
+	// RVA: 0x5FF3E1C Offset: 0x5FEFE1C VA: 0x5FF3E1C
+	public void .ctor(IMergeItem spawned, int level, IMergeItem spawnedFrom) { }
+}
+

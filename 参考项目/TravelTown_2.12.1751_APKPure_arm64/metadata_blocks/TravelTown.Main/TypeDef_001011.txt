@@ -1,0 +1,9 @@
+// Namespace: MergeEngine.ECS.Components
+public class EntityReferencesComponent : ComponentBase // TypeDefIndex: 1011
+{
+	// Methods
+
+	// RVA: 0x68F7428 Offset: 0x68F3428 VA: 0x68F7428
+	public void .ctor(Entity entity) { }
+}
+

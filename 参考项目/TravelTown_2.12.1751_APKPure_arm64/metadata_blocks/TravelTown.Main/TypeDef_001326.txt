@@ -1,0 +1,32 @@
+// Namespace: MergeEngine.Configuration.Definitions
+[Serializable]
+public class RewardDestination // TypeDefIndex: 1326
+{
+	// Fields
+	[CompilerGenerated]
+	private RewardDestinationType <DestinationType>k__BackingField; // 0x10
+	[JsonProperty("EventId")]
+	public string EventId; // 0x18
+
+	// Properties
+	[JsonProperty("type")]
+	public string typeString { set; }
+	public RewardDestinationType DestinationType { get; set; }
+
+	// Methods
+
+	// RVA: 0x6A2E84C Offset: 0x6A2A84C VA: 0x6A2E84C
+	public void set_typeString(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A2E8F0 Offset: 0x6A2A8F0 VA: 0x6A2E8F0
+	public RewardDestinationType get_DestinationType() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A2E8F8 Offset: 0x6A2A8F8 VA: 0x6A2E8F8
+	public void set_DestinationType(RewardDestinationType value) { }
+
+	// RVA: 0x6A2E900 Offset: 0x6A2A900 VA: 0x6A2E900
+	public void .ctor() { }
+}
+

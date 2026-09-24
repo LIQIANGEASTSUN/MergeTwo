@@ -1,0 +1,9 @@
+Type: GameLogic.Player.Board.IFreeSpaceChecker
+
+Method: System.Boolean HasFreeSpace(GameLogic.Player.Board.Coordinate coordinate, SpawnStyle spawnStyle)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

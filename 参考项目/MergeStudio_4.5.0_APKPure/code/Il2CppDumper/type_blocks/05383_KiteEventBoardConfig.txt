@@ -1,0 +1,19 @@
+// Namespace: MergePuzzle.BoardEvents
+[Serializable]
+public class KiteEventBoardConfig // TypeDefIndex: 5383
+{
+	// Fields
+	public List<EventBoardConfigItem> Events; // 0x8
+
+	// Methods
+
+	// RVA: 0x1EB21DC Offset: 0x1EB21DC VA: 0x1EB21DC
+	public List<BalanceProgressiveConfigModel> GetProgressiveConfigModels() { }
+
+	// RVA: 0x1EB2504 Offset: 0x1EB2504 VA: 0x1EB2504
+	public List<BalanceSpawnerConfigModel> GetBalanceSpawnerConfigModels() { }
+
+	// RVA: 0x1EB2880 Offset: 0x1EB2880 VA: 0x1EB2880
+	public void .ctor() { }
+}
+

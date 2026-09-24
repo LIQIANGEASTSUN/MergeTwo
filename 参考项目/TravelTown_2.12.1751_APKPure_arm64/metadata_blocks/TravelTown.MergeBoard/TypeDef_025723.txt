@@ -1,0 +1,12 @@
+// Namespace: Merger.MergeBoard.Utils
+public interface IExpendSpawnService // TypeDefIndex: 25723
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void TrySpawnExpendedItems(Entity sourceEntity, TickContext context, IEntityFactory entityFactory, IMergeBoardLayout layout, ExpendableComponent expendableComponent, int sourcePosition);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void TransformAtSamePosition(Entity sourceEntity, TickContext context, IEntityFactory entityFactory, ExpendableComponent expendableComponent, int sourcePosition, string reason);
+}
+

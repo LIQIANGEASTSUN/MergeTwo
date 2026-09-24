@@ -1,0 +1,18 @@
+// Namespace: Framework.Core.Services.Backend.Remote.Payloads.BoardState
+[Serializable]
+public class BoardState // TypeDefIndex: 10978
+{
+	// Fields
+	public BoardItems BoardItems; // 0x10
+	public BoardInventorySlots BoardInventorySlots; // 0x18
+	public BoardInventory BoardInventory; // 0x20
+	public BoardResources BoardResources; // 0x28
+	[JsonProperty("rewardQueue")]
+	public BoardQueueBackendState BoardQueueBackendState; // 0x30
+
+	// Methods
+
+	// RVA: 0x6927664 Offset: 0x6923664 VA: 0x6927664
+	public void .ctor() { }
+}
+

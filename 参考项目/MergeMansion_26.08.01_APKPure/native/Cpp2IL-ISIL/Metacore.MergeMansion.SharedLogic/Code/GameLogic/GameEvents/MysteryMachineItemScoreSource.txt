@@ -1,0 +1,217 @@
+Type: Code.GameLogic.GameEvents.MysteryMachineItemScoreSource
+
+Method: System.Int32 get_ExperimentPriority()
+
+Disassembly:
+	0x0332EF74 ADD X3, X31, 0xC
+	0x0332EF78 MOV X0, X20
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_ExperimentPriority(System.Int32 value)
+
+Disassembly:
+	0x0332EF7C MOVZ W1, 0x7
+	0x0332EF80 MOV X4, X31
+
+ISIL:
+	001 Move [X0+16], W1
+	002 Return 
+
+Method: Code.GameLogic.GameEvents.MysteryMachineItemScoreId get_ConfigKey()
+
+Disassembly:
+	0x0332EF84 BL 0x44A26E8
+	0x0332EF88 TBZ X0, 0x0, 0x332F06C
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_ConfigKey(Code.GameLogic.GameEvents.MysteryMachineItemScoreId value)
+
+Disassembly:
+	0x0332EF8C LDR W8, [X31 + 0xC]
+	0x0332EF90 CMP W8, 0x0
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.String get_ItemType()
+
+Disassembly:
+	0x0332EF94 B.LE 0x332F06C
+	0x0332EF98 LDR X3, [X22]
+
+ISIL:
+	001 Move X0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_ItemType(System.String value)
+
+Disassembly:
+	0x0332EF9C ADD X2, X31, 0x18
+	0x0332EFA0 MOV X0, X19
+
+ISIL:
+	001 Move [X0+32], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.String get_ItemId()
+
+Disassembly:
+	0x0332EFA4 MOVZ W1, 0x1
+	0x0332EFA8 BL 0x272B3C4
+
+ISIL:
+	001 Move X0, [X0+40]
+	002 Return X0
+
+Method: System.Void set_ItemId(System.String value)
+
+Disassembly:
+	0x0332EFAC LDR X0, [X21]
+	0x0332EFB0 LDR X19, [X31 + 0x18]
+
+ISIL:
+	001 Move [X0+40], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Int32 get_Score()
+
+Disassembly:
+	0x0332EFB4 LDR W8, [X0 + 0xE4]
+	0x0332EFB8 CBNZ W8, 0x332EFC0
+
+ISIL:
+	001 Move W0, [X0+48]
+	002 Return X0
+
+Method: System.Void set_Score(System.Int32 value)
+
+Disassembly:
+	0x0332EFBC BL 0x239BA64
+	0x0332EFC0 MOV X0, X31
+
+ISIL:
+	001 Move [X0+48], W1
+	002 Return 
+
+Method: System.Int32 get_Multiplier()
+
+Disassembly:
+	0x0332EFC4 BL 0x4437E58
+	0x0332EFC8 MOV X2, X0
+
+ISIL:
+	001 Move W0, [X0+52]
+	002 Return X0
+
+Method: System.Void set_Multiplier(System.Int32 value)
+
+Disassembly:
+	0x0332EFCC ADD X3, X31, 0x8
+	0x0332EFD0 MOV X0, X19
+
+ISIL:
+	001 Move [X0+52], W1
+	002 Return 
+
+Method: Code.GameLogic.GameEvents.MysteryMachineItemScore ToConfigData(Metaplay.Core.Config.GameConfigBuildLog buildLog)
+
+Disassembly:
+	0x0332EFD4 MOVZ W1, 0x7
+	0x0332EFD8 MOV X4, X31
+	0x0332EFDC BL 0x44A26E8
+	0x0332EFE0 TBZ X0, 0x0, 0x332F08C
+	0x0332EFE4 LDR W20, [X31 + 0x8]
+	0x0332EFE8 CMP W20, 0x1
+	0x0332EFEC B.LE 0x332F08C
+	0x0332EFF0 ADRP X8, 0x23EA000
+	0x0332EFF4 LDR X8, [X8 + 0xFC8]
+	0x0332EFF8 LDR W21, [X31 + 0xC]
+	0x0332EFFC LDR X0, [X8]
+	0x0332F000 BL 0x239BB80
+	0x0332F004 MOV X1, X31
+	0x0332F008 MOV X19, X0
+	0x0332F00C BL 0x44E8DEC
+	0x0332F010 STP W21, W20, [X19 + 0x10]
+	0x0332F014 MOV X0, X19
+	0x0332F018 LDR X30, [X31 + 0x10]
+	0x0332F01C LDP X20, X19, [X31 + 0x30]
+	0x0332F020 LDP X22, X21, [X31 + 0x20]
+	0x0332F024 ADD X31, X31, 0x40
+	0x0332F028 RET
+	0x0332F02C ADRP X0, 0x239E000
+	0x0332F030 LDR X0, [X0 + 0x388]
+	0x0332F034 BL 0x239B8F8
+	0x0332F038 BL 0x239BB80
+	0x0332F03C MOV X19, X0
+	0x0332F040 ADRP X0, 0x23E9000
+	0x0332F044 LDR X0, [X0 + 0xFD0]
+	0x0332F048 B 0x332F0A8
+	0x0332F04C ADRP X0, 0x239E000
+	0x0332F050 LDR X0, [X0 + 0x388]
+	0x0332F054 BL 0x239B8F8
+	0x0332F058 BL 0x239BB80
+
+ISIL:
+	001 Move [X31-64], X30
+	002 Move [X31+16], X24
+	003 Move [X31+24], X23
+	004 Move [X31+32], X22
+	005 Move [X31+40], X21
+	006 Move [X31+48], X20
+	007 Move [X31+56], X19
+	008 Move X19, X0
+	009 Move W8, [0x29FE5A9]
+	010 Move X24, [0x23EECA0]
+	011 Move TEMP, X8
+	012 And TEMP, TEMP, 1
+	013 Compare TEMP, 1
+	014 JumpIfEqual {19}
+	015 Move X0, [0x23EECA0]
+	016 Call 0x239F8E4
+	017 Move W8, 1
+	018 Move [X20+1449], W8
+	019 Move W22, [X19+48]
+	020 Move W23, [X19+52]
+	021 Move X0, [X24]
+	022 Move X20, [X19+24]
+	023 Move X21, [X19+40]
+	024 Move W19, [X19+16]
+	025 Call 0x239FB80
+	026 Move X1, X20
+	027 Move X2, X21
+	028 Move W3, W22
+	029 Move W4, W23
+	030 Move W5, W19
+	031 Move X24, X0
+	032 Call MysteryMachineItemScore..ctor, X0, X1, X2, X3, X4, X5
+	033 Move X0, X24
+	034 Move X20, [X31+48]
+	035 Move X19, [X31+56]
+	036 Move X22, [X31+32]
+	037 Move X21, [X31+40]
+	038 Move X24, [X31+16]
+	039 Move X23, [X31+24]
+	040 Move X30, [X31+64]
+	041 Return X0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0332F05C MOV X19, X0
+	0x0332F060 ADRP X0, 0x23E9000
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+

@@ -1,0 +1,119 @@
+// Namespace: MergePuzzle
+public abstract class FeatureHandlerBase : IFeature // TypeDefIndex: 1568
+{
+	// Fields
+	[CompilerGenerated]
+	private int <ID>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private bool <IsInitialized>k__BackingField; // 0xC
+	[CompilerGenerated]
+	private bool <SetReadyForInitialize>k__BackingField; // 0xD
+	private MasterFeatureHandler _masterFeatureHandler; // 0x10
+	[CompilerGenerated]
+	private bool <IsProcessing>k__BackingField; // 0x14
+
+	// Properties
+	public int ID { get; set; }
+	public bool IsInitialized { get; set; }
+	public bool SetReadyForInitialize { get; set; }
+	public abstract bool IsActive { get; }
+	public bool IsProcessing { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x18745C4 Offset: 0x18745C4 VA: 0x18745C4 Slot: 5
+	public int get_ID() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18745CC Offset: 0x18745CC VA: 0x18745CC
+	public void set_ID(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x18745D4 Offset: 0x18745D4 VA: 0x18745D4
+	public bool get_IsInitialized() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18745DC Offset: 0x18745DC VA: 0x18745DC
+	public void set_IsInitialized(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x18745E4 Offset: 0x18745E4 VA: 0x18745E4
+	public bool get_SetReadyForInitialize() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18745EC Offset: 0x18745EC VA: 0x18745EC
+	public void set_SetReadyForInitialize(bool value) { }
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract bool get_IsActive();
+
+	[CompilerGenerated]
+	// RVA: 0x18745F4 Offset: 0x18745F4 VA: 0x18745F4 Slot: 7
+	public bool get_IsProcessing() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18745FC Offset: 0x18745FC VA: 0x18745FC
+	protected void set_IsProcessing(bool value) { }
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract void Initialize();
+
+	// RVA: 0x1874604 Offset: 0x1874604 VA: 0x1874604 Slot: 9
+	public virtual void Process() { }
+
+	// RVA: 0x1874608 Offset: 0x1874608 VA: 0x1874608 Slot: 10
+	public virtual void RemoveCompletely() { }
+
+	// RVA: 0x18746A4 Offset: 0x18746A4 VA: 0x18746A4 Slot: 11
+	public virtual void Disable() { }
+
+	// RVA: 0x18746A8 Offset: 0x18746A8 VA: 0x18746A8 Slot: 12
+	public virtual void ProcessLevelUp() { }
+
+	// RVA: 0x18746AC Offset: 0x18746AC VA: 0x18746AC
+	protected void ActivateProcessing() { }
+
+	// RVA: 0x1874758 Offset: 0x1874758 VA: 0x1874758 Slot: 13
+	public virtual void OnInitializeBoard() { }
+
+	// RVA: 0x187475C Offset: 0x187475C VA: 0x187475C
+	protected void TryRequestAddressable() { }
+
+	// RVA: -1 Offset: -1 Slot: 14
+	public abstract FeatureAddressableRequest GetAddressableRequest();
+
+	// RVA: 0x187484C Offset: 0x187484C VA: 0x187484C Slot: 15
+	public virtual string GetAddressableLabel() { }
+
+	[AsyncStateMachine(typeof(FeatureHandlerBase.<LoadAndGetAddressable>d__29<T>))]
+	// RVA: -1 Offset: -1
+	protected UniTask<T> LoadAndGetAddressable<T>(string label) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x248DED0 Offset: 0x248DED0 VA: 0x248DED0
+	|-FeatureHandlerBase.LoadAndGetAddressable<object>
+	*/
+
+	// RVA: 0x1874894 Offset: 0x1874894 VA: 0x1874894
+	public void BindToParent(MasterFeatureHandler masterFeatureHandler) { }
+
+	// RVA: 0x187489C Offset: 0x187489C VA: 0x187489C Slot: 16
+	public virtual void OnTutorialFinished() { }
+
+	// RVA: 0x18748A0 Offset: 0x18748A0 VA: 0x18748A0
+	protected void SaveBoard() { }
+
+	// RVA: 0x18748AC Offset: 0x18748AC VA: 0x18748AC
+	protected MasterFeatureHandler GetMasterFeatureHandler() { }
+
+	// RVA: 0x18748B4 Offset: 0x18748B4 VA: 0x18748B4
+	protected void InputEnable() { }
+
+	// RVA: 0x18749A0 Offset: 0x18749A0 VA: 0x18749A0
+	protected void InputDisable() { }
+
+	// RVA: 0x1874A8C Offset: 0x1874A8C VA: 0x1874A8C
+	protected void .ctor() { }
+}
+

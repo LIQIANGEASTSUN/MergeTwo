@@ -1,0 +1,44 @@
+// Namespace: Merger.MergeBoard.View
+public class MergeBoardContentView : ViewComponent // TypeDefIndex: 25681
+{
+	// Fields
+	[SerializeField]
+	private MergeBoardLayout _layout; // 0x28
+	[SerializeField]
+	private MergeBoardItemsContainer _itemsContainer; // 0x30
+	private Vector2 _layoutBasePosition; // 0x38
+	private Vector2 _itemsContainerBasePosition; // 0x40
+	[CompilerGenerated]
+	private Vector2 <CurrentOffset>k__BackingField; // 0x48
+
+	// Properties
+	public MergeBoardLayout Layout { get; }
+	public MergeBoardItemsContainer ItemsContainer { get; }
+	public Vector2 CurrentOffset { get; set; }
+
+	// Methods
+
+	// RVA: 0x6A37090 Offset: 0x6A33090 VA: 0x6A37090
+	public MergeBoardLayout get_Layout() { }
+
+	// RVA: 0x6A37098 Offset: 0x6A33098 VA: 0x6A37098
+	public MergeBoardItemsContainer get_ItemsContainer() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A370A0 Offset: 0x6A330A0 VA: 0x6A370A0
+	public Vector2 get_CurrentOffset() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A370A8 Offset: 0x6A330A8 VA: 0x6A370A8
+	private void set_CurrentOffset(Vector2 value) { }
+
+	// RVA: 0x6A370B0 Offset: 0x6A330B0 VA: 0x6A370B0
+	private void Awake() { }
+
+	// RVA: 0x6A37104 Offset: 0x6A33104 VA: 0x6A37104
+	public void SetContentOffset(Vector2 offset) { }
+
+	// RVA: 0x6A37178 Offset: 0x6A33178 VA: 0x6A37178
+	public void .ctor() { }
+}
+

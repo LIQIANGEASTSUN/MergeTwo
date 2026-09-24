@@ -1,0 +1,122 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public class ExpendableComponent : RemoteLoadedComponent<ExpendableCapability, SerializedExpendableComponent, SerializedExpendableComponent> // TypeDefIndex: 1058
+{
+	// Fields
+	public const string Key = "expandable";
+	public int Uses; // 0x30
+	[CompilerGenerated]
+	private readonly List<WeightedItemSpawnable> <Transforms>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private readonly bool <SpawnParticles>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private readonly SpawnParticleType <SpawnParticleType>k__BackingField; // 0x44
+	[CompilerGenerated]
+	private readonly int <NumItemsToSpawn>k__BackingField; // 0x48
+	[CompilerGenerated]
+	private readonly bool <RequireAllItemsToSpawn>k__BackingField; // 0x4C
+	[CompilerGenerated]
+	private readonly bool <SpawnOnEachInteraction>k__BackingField; // 0x4D
+	[CompilerGenerated]
+	private readonly List<EmptiableWeightedItemSpawnable> <SpawnOnExpendedItems>k__BackingField; // 0x50
+	[CompilerGenerated]
+	private readonly ProducerTimerConfig <ProducerTimer>k__BackingField; // 0x58
+	[CompilerGenerated]
+	private bool <NeedProcessCombiningProducer>k__BackingField; // 0x60
+	[CompilerGenerated]
+	private bool <IsTransformationByReason>k__BackingField; // 0x61
+	[CompilerGenerated]
+	private ItemSpawningTrackingData <ItemSpawningTrackingData>k__BackingField; // 0x68
+
+	// Properties
+	public override string ComponentKey { get; }
+	public List<WeightedItemSpawnable> Transforms { get; }
+	public bool SpawnParticles { get; }
+	public SpawnParticleType SpawnParticleType { get; }
+	public int NumItemsToSpawn { get; }
+	public bool RequireAllItemsToSpawn { get; }
+	public bool SpawnOnEachInteraction { get; }
+	public List<EmptiableWeightedItemSpawnable> SpawnOnExpendedItems { get; }
+	public string SpawnedItemsLabel { get; }
+	public ProducerTimerConfig ProducerTimer { get; }
+	public bool HasTimer { get; }
+	public bool NeedProcessCombiningProducer { get; set; }
+	public bool IsTransformationByReason { get; set; }
+	public ItemSpawningTrackingData ItemSpawningTrackingData { get; set; }
+
+	// Methods
+
+	// RVA: 0x68FC100 Offset: 0x68F8100 VA: 0x68FC100 Slot: 11
+	public override string get_ComponentKey() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC140 Offset: 0x68F8140 VA: 0x68FC140
+	public List<WeightedItemSpawnable> get_Transforms() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC148 Offset: 0x68F8148 VA: 0x68FC148
+	public bool get_SpawnParticles() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC150 Offset: 0x68F8150 VA: 0x68FC150
+	public SpawnParticleType get_SpawnParticleType() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC158 Offset: 0x68F8158 VA: 0x68FC158
+	public int get_NumItemsToSpawn() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC160 Offset: 0x68F8160 VA: 0x68FC160
+	public bool get_RequireAllItemsToSpawn() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC168 Offset: 0x68F8168 VA: 0x68FC168
+	public bool get_SpawnOnEachInteraction() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC170 Offset: 0x68F8170 VA: 0x68FC170
+	public List<EmptiableWeightedItemSpawnable> get_SpawnOnExpendedItems() { }
+
+	// RVA: 0x68FC178 Offset: 0x68F8178 VA: 0x68FC178
+	public string get_SpawnedItemsLabel() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC1C0 Offset: 0x68F81C0 VA: 0x68FC1C0
+	public ProducerTimerConfig get_ProducerTimer() { }
+
+	// RVA: 0x68FC1C8 Offset: 0x68F81C8 VA: 0x68FC1C8
+	public bool get_HasTimer() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC1D8 Offset: 0x68F81D8 VA: 0x68FC1D8
+	public bool get_NeedProcessCombiningProducer() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC1E0 Offset: 0x68F81E0 VA: 0x68FC1E0
+	public void set_NeedProcessCombiningProducer(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC1EC Offset: 0x68F81EC VA: 0x68FC1EC
+	public bool get_IsTransformationByReason() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC1F4 Offset: 0x68F81F4 VA: 0x68FC1F4
+	public void set_IsTransformationByReason(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC200 Offset: 0x68F8200 VA: 0x68FC200
+	public ItemSpawningTrackingData get_ItemSpawningTrackingData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FC208 Offset: 0x68F8208 VA: 0x68FC208
+	public void set_ItemSpawningTrackingData(ItemSpawningTrackingData value) { }
+
+	// RVA: 0x68FC210 Offset: 0x68F8210 VA: 0x68FC210
+	public void .ctor(ExpendableCapability capability, Entity entity) { }
+
+	// RVA: 0x68FC3C4 Offset: 0x68F83C4 VA: 0x68FC3C4 Slot: 15
+	public override void LoadComponent(SerializedExpendableComponent componentData) { }
+
+	// RVA: 0x68FC3E0 Offset: 0x68F83E0 VA: 0x68FC3E0 Slot: 12
+	protected override void OnBeforeSerialize() { }
+}
+

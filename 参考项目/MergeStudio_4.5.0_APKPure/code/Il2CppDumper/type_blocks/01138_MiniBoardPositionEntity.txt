@@ -1,0 +1,28 @@
+// Namespace: Paxie.MergeStudio.Features.MiniBoard
+[Serializable]
+public class MiniBoardPositionEntity // TypeDefIndex: 1138
+{
+	// Fields
+	public Coordinate Index; // 0x8
+	public CellEntity Cell; // 0x10
+	[CanBeNull]
+	public MiniBoardItemEntity Item; // 0x14
+
+	// Methods
+
+	// RVA: 0x17C7CC4 Offset: 0x17C7CC4 VA: 0x17C7CC4
+	public void .ctor() { }
+
+	// RVA: 0x17C7CCC Offset: 0x17C7CCC VA: 0x17C7CCC
+	public void .ctor(Coordinate index) { }
+
+	// RVA: 0x17C7CF0 Offset: 0x17C7CF0 VA: 0x17C7CF0
+	public void .ctor(Coordinate index, CellEntity cell, MiniBoardItemEntity item) { }
+
+	// RVA: 0x17C7D38 Offset: 0x17C7D38 VA: 0x17C7D38
+	public void Clear() { }
+
+	// RVA: 0x17C7D94 Offset: 0x17C7D94 VA: 0x17C7D94 Slot: 3
+	public override string ToString() { }
+}
+

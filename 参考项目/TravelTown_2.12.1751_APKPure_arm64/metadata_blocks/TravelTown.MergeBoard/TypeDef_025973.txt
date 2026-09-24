@@ -1,0 +1,35 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class TimeDurationEndedResult // TypeDefIndex: 25973
+{
+	// Fields
+	[CompilerGenerated]
+	private Entity <Entity>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private int <Position>k__BackingField; // 0x18
+
+	// Properties
+	public Entity Entity { get; set; }
+	public int Position { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9ACE0 Offset: 0x6A96CE0 VA: 0x6A9ACE0
+	public Entity get_Entity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9ACE8 Offset: 0x6A96CE8 VA: 0x6A9ACE8
+	public void set_Entity(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9ACF0 Offset: 0x6A96CF0 VA: 0x6A9ACF0
+	public int get_Position() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9ACF8 Offset: 0x6A96CF8 VA: 0x6A9ACF8
+	public void set_Position(int value) { }
+
+	// RVA: 0x6A9AD00 Offset: 0x6A96D00 VA: 0x6A9AD00
+	public void .ctor() { }
+}
+

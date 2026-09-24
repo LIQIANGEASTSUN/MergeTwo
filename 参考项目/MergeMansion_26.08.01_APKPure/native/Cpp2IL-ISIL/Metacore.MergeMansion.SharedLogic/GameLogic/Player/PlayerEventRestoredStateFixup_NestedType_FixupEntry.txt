@@ -1,0 +1,100 @@
+Type: GameLogic.Player.PlayerEventRestoredStateFixup+FixupEntry
+
+Method: System.String get_Source()
+
+Disassembly:
+	0x0357EB54 ADRP X21, 0x216B000
+	0x0357EB58 MOV X20, X1
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_Source(System.String value)
+
+Disassembly:
+	0x0357EB5C LDRB W8, [X22 + 0x74E]
+	0x0357EB60 LDR X21, [X21 + 0x960]
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.String get_Change()
+
+Disassembly:
+	0x0357EB64 MOV X19, X0
+	0x0357EB68 TBNZ X8, 0x0, 0x357EBA4
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_Change(System.String value)
+
+Disassembly:
+	0x0357EB6C ADRP X0, 0x21B1000
+	0x0357EB70 LDR X0, [X0 + 0x7E8]
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0357EB74 BL 0x239B8E4
+	0x0357EB78 ADRP X0, 0x216B000
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(System.String source, System.String change)
+
+Disassembly:
+	0x0357E7BC BL 0x239B8E4
+	0x0357E7C0 MOVZ W8, 0x1
+	0x0357E7C4 STRB W8, [X22 + 0x748]
+	0x0357E7C8 LDR X0, [X21 + 0x80]
+	0x0357E7CC STR X31, [X31 + 0x8]
+	0x0357E7D0 CBZ X0, 0x357E864
+	0x0357E7D4 ADRP X8, 0x21B1000
+	0x0357E7D8 ADD X2, X31, 0x8
+	0x0357E7DC MOV X1, X19
+	0x0357E7E0 LDR X8, [X8 + 0x7B0]
+	0x0357E7E4 LDR X3, [X8]
+	0x0357E7E8 BL 0x274DFBC
+	0x0357E7EC LDR X21, [X21 + 0x80]
+	0x0357E7F0 MOV W22, W0
+	0x0357E7F4 MOV X0, X20
+	0x0357E7F8 MOV X1, X31
+	0x0357E7FC BL 0x342CC84
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move X20, X1
+	006 Move X1, X31
+	007 Move X19, X2
+	008 Move X21, X0
+	009 Call Object..ctor, X0
+	010 Move X0, X21
+	011 Move X1, X20
+	012 Move [X0+16], X20
+	013 Call 0x239F888
+	014 Move [X21+24], X19
+	015 Move X1, X19
+	016 Move X20, [X31+16]
+	017 Move X19, [X31+24]
+	018 Move X0, X21
+	019 Move X30, [X31+32]
+	020 Move X21, [X31+40]
+	021 Call 0x239F888
+	022 Return 
+

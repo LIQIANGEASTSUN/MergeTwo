@@ -1,0 +1,9 @@
+Type: GameLogic.Player.Items.Collectable.ICollectEventProgressAction
+
+Method: System.Int32 get_ProgressGiven()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

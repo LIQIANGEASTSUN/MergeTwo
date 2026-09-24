@@ -1,0 +1,16 @@
+// Namespace: Merger.TimeLimitedItems.Decorators
+public class TimeLimitedItemsSystemDecorator : IBoardControllerDecorator // TypeDefIndex: 32855
+{
+	// Fields
+	[Inject]
+	private DiContainer _container; // 0x10
+
+	// Methods
+
+	// RVA: 0x6B4DD40 Offset: 0x6B49D40 VA: 0x6B4DD40 Slot: 4
+	public void DecorateSystems(SystemsBuilder systemsBuilder) { }
+
+	// RVA: 0x6B4DDC0 Offset: 0x6B49DC0 VA: 0x6B4DDC0
+	public void .ctor() { }
+}
+

@@ -1,0 +1,25 @@
+// Namespace: Merger.MergeBoard.Logic.CombineValidators
+public class SplitterItemCombinerValidator : IItemCombinerValidator, IItemCombinerVisualPresentation // TypeDefIndex: 25858
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A87CA0 Offset: 0x6A83CA0 VA: 0x6A87CA0 Slot: 4
+	public bool CanCombineItems(Entity entity1, Entity entity2) { }
+
+	// RVA: 0x6A8825C Offset: 0x6A8425C VA: 0x6A8825C Slot: 5
+	public void ToggleVisuals(IVisualComponent draggedItem, IVisualComponent overlapItemOnDragAction, bool toggle) { }
+
+	// RVA: 0x6A883D4 Offset: 0x6A843D4 VA: 0x6A883D4
+	public string GetSplitResultItemId(string targetItemId) { }
+
+	// RVA: 0x6A8809C Offset: 0x6A8409C VA: 0x6A8809C
+	private bool CanBeSplit(string itemId) { }
+
+	// RVA: 0x6A88500 Offset: 0x6A84500 VA: 0x6A88500
+	public void .ctor() { }
+}
+

@@ -1,0 +1,46 @@
+Type: UnityBoardController+DelayedTapHintData
+
+Method: System.Void .ctor(System.Int32 itemId, GameLogic.Player.Board.Coordinate coordinate, GameLogic.Merge.ItemVisibility visibility, GameLogic.Config.DirectorGroupId groupId, System.Boolean allowBubbleItems, System.Single startDelay)
+
+Disassembly:
+	0x03276C9C LDR V0, [X31 + 0xA]
+	0x03276CA0 MOVZ W8, 0x1
+	0x03276CA4 STR W8, [X19]
+	0x03276CA8 STUR V0, [X19 + 0x78]
+	0x03276CAC ADD X0, X19, 0x78
+	0x03276CB0 MOV X1, X31
+	0x03276CB4 BL 0x239B888
+	0x03276CB8 ADRP X8, 0x249B000
+	0x03276CBC LDR X8, [X8 + 0x8C8]
+	0x03276CC0 LDR X3, [X8]
+	0x03276CC4 ADD X0, X19, 0x8
+	0x03276CC8 ADD X1, X31, 0xA0
+	0x03276CCC MOV X2, X19
+	0x03276CD0 BL 0x25D3DE4
+	0x03276CD4 B 0x3276C78
+	0x03276CD8 LDR W8, [X19 + 0x30]
+	0x03276CDC CMP W8, 0x0
+	0x03276CE0 CSET W8, EQ
+
+ISIL:
+	001 Move [X31-32], D8
+	002 Move [X31+8], X30
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move [X0], W1
+	006 Move X1, X4
+	007 Move S8, S0
+	008 Move W19, W5
+	009 Move X20, X0
+	010 Move [X0+4], X2
+	011 Move [X0+12], W3
+	012 Move [X0+16], X4
+	013 Call 0x239F888
+	014 Move [X20+24], W19
+	015 Move X30, [X31+8]
+	016 Move [X20+28], S8
+	017 Move X20, [X31+16]
+	018 Move X19, [X31+24]
+	019 Move V8, [X31+32]
+	020 Return 
+

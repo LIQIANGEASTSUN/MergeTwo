@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemChainManager.<>c__DisplayClass39_3 // TypeDefIndex: 1731
+{
+	// Fields
+	public RewardEntity re; // 0x8
+
+	// Methods
+
+	// RVA: 0x1908648 Offset: 0x1908648 VA: 0x1908648
+	public void .ctor() { }
+
+	// RVA: 0x190FA50 Offset: 0x190FA50 VA: 0x190FA50
+	internal bool <ReplaceOldSetIDs>b__2(ItemLinkModel c) { }
+}
+

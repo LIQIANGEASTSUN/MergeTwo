@@ -1,0 +1,11 @@
+// Namespace: 
+public enum ItemCollectionElement.Type // TypeDefIndex: 392
+{
+	// Fields
+	public int value__; // 0x0
+	public const ItemCollectionElement.Type Discovered = 0;
+	public const ItemCollectionElement.Type RewardCollectable = 1;
+	public const ItemCollectionElement.Type SeenElseWhere = 2;
+	public const ItemCollectionElement.Type Unknown = 3;
+}
+

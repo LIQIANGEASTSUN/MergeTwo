@@ -1,0 +1,9 @@
+// Namespace: Merger.MergeBoard.Logic.BoardOperations
+public interface IOperationPayloadEnrichment // TypeDefIndex: 25880
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract OperationNotificationData Enrich(OperationNotificationData payload);
+}
+

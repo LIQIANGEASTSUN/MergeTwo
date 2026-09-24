@@ -1,0 +1,70 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "MetaData", menuName = "Scriptable/Meta/MetaData", order = 1)]
+public class MetaData : ScriptableObject // TypeDefIndex: 2249
+{
+	// Fields
+	public List<MetaVisitData> MetaCharacterList; // 0xC
+	public List<MetaTaskItemData> MetaTaskItemList; // 0x10
+	public ItemCollectionConfig ItemCollectionConfig; // 0x14
+	public MetaCommonAssetContainer MetaCommonAssetContainer; // 0x18
+	public int MetaTaskRewardCoinCount; // 0x1C
+	public int ShopPurchaseAnimatedGemCount; // 0x20
+	private MetaTaskData _metaTaskData; // 0x24
+
+	// Properties
+	public MetaTaskData MetaTaskData { get; }
+
+	// Methods
+
+	// RVA: 0x19B03D4 Offset: 0x19B03D4 VA: 0x19B03D4
+	public MetaTaskData get_MetaTaskData() { }
+
+	// RVA: 0x19B03DC Offset: 0x19B03DC VA: 0x19B03DC
+	private ShopBasePackage FindPackage(MetaEntity metaEntity, ShopBasePackage package, string platformBasedID) { }
+
+	// RVA: 0x19B06A4 Offset: 0x19B06A4 VA: 0x19B06A4
+	public ShopBasePackage GetPackageFromID(string platformBasedID) { }
+
+	// RVA: 0x19B0C14 Offset: 0x19B0C14 VA: 0x19B0C14
+	public void SetMetaTaskData(MetaTaskData metaTaskData) { }
+
+	// RVA: 0x19B0EE0 Offset: 0x19B0EE0 VA: 0x19B0EE0
+	public HashSet<string> GetCompletedMetaTaskSkinsOfLevel(MetaEntity metaEntity, int level) { }
+
+	// RVA: 0x19B1420 Offset: 0x19B1420 VA: 0x19B1420
+	public HashSet<string> GetCompletedPreviouslyRemovedMetaTaskSkinsOfLevel(MetaEntity metaEntity, int level) { }
+
+	// RVA: 0x19B1990 Offset: 0x19B1990 VA: 0x19B1990
+	public MetaVisitData GetMetaCharacter(int metaLevel) { }
+
+	// RVA: 0x19B1304 Offset: 0x19B1304 VA: 0x19B1304
+	public MetaTaskItem GetMetaTaskItem(int level, int taskNo) { }
+
+	// RVA: 0x19A2CE4 Offset: 0x19A2CE4 VA: 0x19A2CE4
+	public List<MetaTaskItem> GetMetaTaskItemsOfLevel(int level) { }
+
+	// RVA: 0x19B1AAC Offset: 0x19B1AAC VA: 0x19B1AAC
+	public List<MetaTaskItem> GetEditableMetaTaskItemsOfLevel(int level, bool isClothes) { }
+
+	// RVA: 0x19B1BD0 Offset: 0x19B1BD0 VA: 0x19B1BD0
+	public List<MetaTaskItem> GetEditableMetaTaskItemsOfLevel(int level) { }
+
+	// RVA: 0x19A3A20 Offset: 0x19A3A20 VA: 0x19A3A20
+	public bool UpdateMetaLevelIfRequired(MetaEntity metaEntity) { }
+
+	// RVA: 0x19A56D4 Offset: 0x19A56D4 VA: 0x19A56D4
+	public MetaTaskItemData GetRevealTaskForLevel(int level) { }
+
+	// RVA: 0x19B1D40 Offset: 0x19B1D40 VA: 0x19B1D40
+	public int GetRevealTaskNoForLevel(int level) { }
+
+	// RVA: 0x19B1FC4 Offset: 0x19B1FC4 VA: 0x19B1FC4
+	public MetaTaskItem GetActiveMetaTaskItem(MetaEntity metaEntity) { }
+
+	// RVA: 0x19A4EEC Offset: 0x19A4EEC VA: 0x19A4EEC
+	public List<MetaTaskItem> GetActiveMetaTaskItems(MetaEntity metaEntity) { }
+
+	// RVA: 0x19B2350 Offset: 0x19B2350 VA: 0x19B2350
+	public void .ctor() { }
+}
+

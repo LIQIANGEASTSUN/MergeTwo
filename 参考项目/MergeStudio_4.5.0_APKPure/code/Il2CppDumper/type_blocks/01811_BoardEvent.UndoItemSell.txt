@@ -1,0 +1,8 @@
+// Namespace: 
+public struct BoardEvent.UndoItemSell : IEvent // TypeDefIndex: 1811
+{
+	// Fields
+	public ItemEntity ItemEntity; // 0x0
+	public BoardItemData ItemData; // 0x4
+}
+

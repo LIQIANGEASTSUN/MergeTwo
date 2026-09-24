@@ -1,0 +1,20 @@
+// Namespace: Merger.Game.Signal
+public class ScheduledItemExpiredSignal // TypeDefIndex: 9430
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly AbstractSchedulerItem <Item>k__BackingField; // 0x10
+
+	// Properties
+	public AbstractSchedulerItem Item { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x676C88C Offset: 0x676888C VA: 0x676C88C
+	public AbstractSchedulerItem get_Item() { }
+
+	// RVA: 0x676C894 Offset: 0x6768894 VA: 0x676C894
+	public void .ctor(AbstractSchedulerItem item) { }
+}
+

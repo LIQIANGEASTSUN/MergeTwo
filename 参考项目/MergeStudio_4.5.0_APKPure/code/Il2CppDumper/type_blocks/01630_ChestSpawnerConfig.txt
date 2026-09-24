@@ -1,0 +1,19 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class ChestSpawnerConfig // TypeDefIndex: 1630
+{
+	// Fields
+	public bool UsesEnergy; // 0x8
+	public int Capacity; // 0xC
+	public int ChargeTime; // 0x10
+	public int GemSkipAmount; // 0x14
+	public int GemDecreaseCount; // 0x18
+	public bool NonProbabilistic; // 0x1C
+	public List<SpawnedItem> SpawnedItems; // 0x20
+
+	// Methods
+
+	// RVA: 0x18C5D9C Offset: 0x18C5D9C VA: 0x18C5D9C
+	public void .ctor() { }
+}
+

@@ -1,0 +1,13 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class SpawnCapability : ItemsSpawningCapability // TypeDefIndex: 1461
+{
+	// Fields
+	public bool Anywhere; // 0x80
+
+	// Methods
+
+	// RVA: 0x60118C8 Offset: 0x600D8C8 VA: 0x60118C8
+	public void .ctor() { }
+}
+

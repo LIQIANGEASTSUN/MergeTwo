@@ -1,0 +1,9 @@
+// Namespace: Framework.Util.BlockingFlags
+public interface IDebugBlockingFlags // TypeDefIndex: 10271
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract List<string> GetBlockingFlags();
+}
+

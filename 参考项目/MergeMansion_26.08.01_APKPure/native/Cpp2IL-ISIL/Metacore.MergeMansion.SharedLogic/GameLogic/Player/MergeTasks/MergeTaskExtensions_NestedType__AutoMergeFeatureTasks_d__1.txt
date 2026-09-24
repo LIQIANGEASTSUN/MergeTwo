@@ -1,0 +1,406 @@
+Type: GameLogic.Player.MergeTasks.MergeTaskExtensions+<AutoMergeFeatureTasks>d__1
+
+Method: System.Void .ctor(System.Int32 <>1__state)
+
+Disassembly:
+	0x035AADC0 ADRP X21, 0x277F000
+	0x035AADC4 MOV X19, X1
+	0x035AADC8 MOV X20, X0
+	0x035AADCC LDRB W8, [X21 + 0x8F9]
+	0x035AADD0 TBNZ X8, 0x0, 0x35AADE8
+	0x035AADD4 ADRP X0, 0x2145000
+	0x035AADD8 LDR X0, [X0 + 0x290]
+	0x035AADDC BL 0x239B8E4
+	0x035AADE0 MOVZ W8, 0x1
+	0x035AADE4 STRB W8, [X21 + 0x8F9]
+	0x035AADE8 CBZ X19, 0x35AAE20
+	0x035AADEC ADRP X8, 0x2145000
+	0x035AADF0 ADD X1, X31, 0xC
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move W19, W1
+	005 Move X1, X31
+	006 Move X20, X0
+	007 Call Object..ctor, X0
+	008 Move X0, X31
+	009 Move [X20+16], W19
+	010 Call Environment.get_CurrentManagedThreadId
+	011 Move [X20+32], W0
+	012 Move X20, [X31+16]
+	013 Move X19, [X31+24]
+	014 Move X30, [X31+32]
+	015 Return 
+
+Method: System.Void System.IDisposable.Dispose()
+
+Disassembly:
+	0x035AEE24 LDRSW X9, [X10]
+
+ISIL:
+	001 Return 
+
+Method: System.Boolean MoveNext()
+
+Disassembly:
+	0x035AEE28 ADD X8, X8, X9, 0x4, LSL
+	0x035AEE2C ADD X0, X8, 0x138
+	0x035AEE30 LDP X8, X1, [X0]
+	0x035AEE34 MOV X0, X19
+	0x035AEE38 BLR X8
+	0x035AEE3C MOV X1, X0
+	0x035AEE40 LDR X0, [X31 + 0x18]
+	0x035AEE44 STR X1, [X0 + 0x38]!
+	0x035AEE48 BL 0x239B888
+	0x035AEE4C LDR X19, [X31 + 0x18]
+	0x035AEE50 LDR X20, [X19 + 0x38]
+	0x035AEE54 MOVN W8, 0x4
+	0x035AEE58 STR W8, [X19 + 0x10]
+	0x035AEE5C CBZ X20, 0x35B0448
+	0x035AEE60 ADRP X10, 0x211F000
+	0x035AEE64 LDR X8, [X20]
+	0x035AEE68 LDR X10, [X10 + 0x310]
+	0x035AEE6C LDRH W9, [X8 + 0x12E]
+	0x035AEE70 LDR X1, [X10]
+	0x035AEE74 CBZ X9, 0x35AEE98
+	0x035AEE78 LDR X10, [X8 + 0xB0]
+	0x035AEE7C ADD X10, X10, 0x8
+	0x035AEE80 LDUR X11, [X10 - 0x8]
+	0x035AEE84 CMP X11, X1
+	0x035AEE88 B.EQ 0x35AEEA8
+	0x035AEE8C SUBS X9, X9, 0x1
+	0x035AEE90 ADD X10, X10, 0x10
+	0x035AEE94 B.NE 0x35AEE80
+	0x035AEE98 MOV X0, X20
+	0x035AEE9C MOV W2, W31
+	0x035AEEA0 BL 0x23D527C
+	0x035AEEA4 B 0x35AEEB4
+	0x035AEEA8 LDRSW X9, [X10]
+	0x035AEEAC ADD X8, X8, X9, 0x4, LSL
+	0x035AEEB0 ADD X0, X8, 0x138
+	0x035AEEB4 LDP X8, X1, [X0]
+	0x035AEEB8 MOV X0, X20
+	0x035AEEBC BLR X8
+	0x035AEEC0 MOV W8, W0
+	0x035AEEC4 LDR X0, [X31 + 0x18]
+	0x035AEEC8 TBZ X8, 0x0, 0x35AEF1C
+	0x035AEECC LDR X19, [X0 + 0x38]
+	0x035AEED0 CBZ X19, 0x35B0490
+	0x035AEED4 ADRP X10, 0x2139000
+	0x035AEED8 LDR X8, [X19]
+	0x035AEEDC LDR X10, [X10 + 0x2B8]
+	0x035AEEE0 LDRH W9, [X8 + 0x12E]
+	0x035AEEE4 LDR X1, [X10]
+	0x035AEEE8 CBZ X9, 0x35AEF0C
+	0x035AEEEC LDR X10, [X8 + 0xB0]
+	0x035AEEF0 ADD X10, X10, 0x8
+	0x035AEEF4 LDUR X11, [X10 - 0x8]
+	0x035AEEF8 CMP X11, X1
+	0x035AEEFC B.EQ 0x35AEF8C
+	0x035AEF00 SUBS X9, X9, 0x1
+	0x035AEF04 ADD X10, X10, 0x10
+	0x035AEF08 B.NE 0x35AEEF4
+	0x035AEF0C MOV X0, X19
+	0x035AEF10 MOV W2, W31
+	0x035AEF14 BL 0x23D527C
+	0x035AEF18 B 0x35AEF98
+	0x035AEF1C BL 0x35B0874
+	0x035AEF20 LDR X0, [X31 + 0x18]
+	0x035AEF24 STR X31, [X0 + 0x38]!
+	0x035AEF28 MOV X1, X31
+	0x035AEF2C BL 0x239B888
+	0x035AEF30 LDR X8, [X31 + 0x18]
+	0x035AEF34 LDR X0, [X8 + 0x28]
+	0x035AEF38 BL 0x35A7178
+	0x035AEF3C MOV X19, X0
+	0x035AEF40 CBZ X0, 0x35B04CC
+	0x035AEF44 ADRP X10, 0x2139000
+	0x035AEF48 LDR X8, [X19]
+	0x035AEF4C LDR X10, [X10 + 0x2B0]
+	0x035AEF50 LDRH W9, [X8 + 0x12E]
+	0x035AEF54 LDR X1, [X10]
+	0x035AEF58 CBZ X9, 0x35AEF7C
+	0x035AEF5C LDR X10, [X8 + 0xB0]
+	0x035AEF60 ADD X10, X10, 0x8
+	0x035AEF64 LDUR X11, [X10 - 0x8]
+	0x035AEF68 CMP X11, X1
+	0x035AEF6C B.EQ 0x35AEFBC
+	0x035AEF70 SUBS X9, X9, 0x1
+	0x035AEF74 ADD X10, X10, 0x10
+	0x035AEF78 B.NE 0x35AEF64
+	0x035AEF7C MOV X0, X19
+	0x035AEF80 MOV W2, W31
+	0x035AEF84 BL 0x23D527C
+	0x035AEF88 B 0x35AEFC8
+	0x035AEF8C LDRSW X9, [X10]
+	0x035AEF90 ADD X8, X8, X9, 0x4, LSL
+	0x035AEF94 ADD X0, X8, 0x138
+	0x035AEF98 LDP X8, X1, [X0]
+	0x035AEF9C MOV X0, X19
+	0x035AEFA0 BLR X8
+	0x035AEFA4 MOV X1, X0
+	0x035AEFA8 LDR X0, [X31 + 0x18]
+	0x035AEFAC STR X1, [X0 + 0x18]!
+	0x035AEFB0 BL 0x239B888
+	0x035AEFB4 MOVZ W8, 0x3
+	0x035AEFB8 B 0x35B041C
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move X19, X0
+	006 Move W8, [0x277F8FA]
+	007 Move TEMP, X8
+	008 And TEMP, TEMP, 1
+	009 Compare TEMP, 1
+	010 JumpIfEqual {19}
+	011 Move X0, [0x2143110]
+	012 Call 0x239F8E4
+	013 Move X0, [0x21485C8]
+	014 Call 0x239F8E4
+	015 Move X0, [0x212AD60]
+	016 Call 0x239F8E4
+	017 Move W8, 1
+	018 Move [X20+2298], W8
+	019 Move W8, [X19+16]
+	020 Move W0, W31
+	021 NotImplemented "Instruction CMP not yet implemented."
+	022 Compare W8, 0
+	023 JumpIfNotEqual {101}
+	024 Move X20, [X19+40]
+	025 Move TEMP, 0
+	026 Not TEMP
+	027 Move W8, TEMP
+	028 Move [X19+16], W8
+	029 Compare X20, 0
+	030 JumpIfEqual {106}
+	031 Move X8, [X20]
+	032 Move X10, [0x212AD60]
+	033 NotImplemented "Instruction LDRH not yet implemented."
+	034 Move X1, [X10]
+	035 Compare X9, 0
+	036 JumpIfEqual {43}
+	037 Move X10, [X8+176]
+	038 Add X10, X10, 8
+	039 NotImplemented "Instruction LDUR not yet implemented."
+	040 NotImplemented "Instruction CMP not yet implemented."
+	041 Subtract X9, X9, 1
+	042 Add X10, X10, 16
+	043 Move X0, X20
+	044 Move W2, 86
+	045 Call 0x23D927C
+	046 Move TEMP, 0
+	047 Not TEMP
+	048 Move W8, TEMP
+	049 Move W9, [X10]
+	050 Add W9, W9, 86
+	051 Add X8, X8, W9
+	052 Add X0, X8, 312
+	053 Move X8, [X0]
+	054 Move X1, [X0+8]
+	055 Move X0, X20
+	056 NotImplemented "Instruction BLR not yet implemented."
+	057 Compare X0, 0
+	058 JumpIfEqual {106}
+	059 Move X8, [X0]
+	060 Move X20, X0
+	061 Move X10, [0x21485C8]
+	062 NotImplemented "Instruction LDRH not yet implemented."
+	063 Move X1, [X10]
+	064 Compare X9, 0
+	065 JumpIfEqual {72}
+	066 Move X10, [X8+176]
+	067 Add X10, X10, 8
+	068 NotImplemented "Instruction LDUR not yet implemented."
+	069 NotImplemented "Instruction CMP not yet implemented."
+	070 Subtract X9, X9, 1
+	071 Add X10, X10, 16
+	072 Move X0, X20
+	073 Move W2, W31
+	074 Call 0x23D927C
+	075 NotImplemented "Instruction LDRSW not yet implemented."
+	076 Add X8, X8, X9
+	077 Add X0, X8, 312
+	078 Move X8, [X0]
+	079 Move X1, [X0+8]
+	080 Move X0, X20
+	081 NotImplemented "Instruction BLR not yet implemented."
+	082 Move TEMP, X0
+	083 And TEMP, TEMP, 1
+	084 Compare TEMP, 1
+	085 JumpIfNotEqual {100}
+	086 Move X8, [0x2143110]
+	087 Move X20, [X19+40]
+	088 Move X0, [X8]
+	089 Call 0x239FB80
+	090 Move X1, X20
+	091 Move X21, X0
+	092 Call AutoMergeFeatureTask..ctor, X0, X1
+	093 Move X0, X19
+	094 Move X1, X21
+	095 Move [X0+24], X21
+	096 Call 0x239F888
+	097 Move W8, 1
+	098 Move W0, 1
+	099 Move [X19+16], W8
+	100 Move W0, W31
+	101 Move X20, [X31+16]
+	102 Move X19, [X31+24]
+	103 Move X30, [X31+32]
+	104 Move X21, [X31+40]
+	105 Return X0
+	106 Call 0x239FB90
+
+Method: GameLogic.Player.MergeTasks.MergeTask System.Collections.Generic.IEnumerator<GameLogic.Player.MergeTasks.MergeTask>.get_Current()
+
+Disassembly:
+	0x035AEFBC LDRSW X9, [X10]
+	0x035AEFC0 ADD X8, X8, X9, 0x4, LSL
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void System.Collections.IEnumerator.Reset()
+
+Disassembly:
+	0x035AEFC4 ADD X0, X8, 0x138
+	0x035AEFC8 LDP X8, X1, [X0]
+	0x035AEFCC MOV X0, X19
+	0x035AEFD0 BLR X8
+	0x035AEFD4 MOV X1, X0
+	0x035AEFD8 LDR X0, [X31 + 0x18]
+	0x035AEFDC STR X1, [X0 + 0x38]!
+	0x035AEFE0 BL 0x239B888
+	0x035AEFE4 LDR X19, [X31 + 0x18]
+	0x035AEFE8 LDR X20, [X19 + 0x38]
+	0x035AEFEC MOVN W8, 0x5
+	0x035AEFF0 STR W8, [X19 + 0x10]
+	0x035AEFF4 CBZ X20, 0x35B044C
+	0x035AEFF8 ADRP X10, 0x211F000
+
+ISIL:
+	001 Move [X31-16], X30
+	002 Move [X31-8], X19
+	003 Move X0, [0x21240E8]
+	004 Call 0x239F8F8
+	005 Call 0x239FB80
+	006 Move X1, X31
+	007 Move X19, X0
+	008 Call NotSupportedException..ctor, X0
+	009 Move X0, [0x2186740]
+	010 Call 0x239F8F8
+	011 Move X1, X0
+	012 Move X0, X19
+	013 Call 0x239FA54
+
+Method: System.Object System.Collections.IEnumerator.get_Current()
+
+Disassembly:
+	0x035AEFFC LDR X8, [X20]
+	0x035AF000 B 0x53E8E48
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Collections.Generic.IEnumerator`1<GameLogic.Player.MergeTasks.MergeTask> System.Collections.Generic.IEnumerable<GameLogic.Player.MergeTasks.MergeTask>.GetEnumerator()
+
+Disassembly:
+	0x035AF004 LDRH W9, [X8 + 0x12E]
+	0x035AF008 LDR X1, [X10]
+	0x035AF00C CBZ X9, 0x35AF030
+	0x035AF010 LDR X10, [X8 + 0xB0]
+	0x035AF014 ADD X10, X10, 0x8
+	0x035AF018 LDUR X11, [X10 - 0x8]
+	0x035AF01C CMP X11, X1
+	0x035AF020 B.EQ 0x35AF040
+	0x035AF024 SUBS X9, X9, 0x1
+	0x035AF028 ADD X10, X10, 0x10
+	0x035AF02C B.NE 0x35AF018
+	0x035AF030 MOV X0, X20
+	0x035AF034 MOV W2, W31
+	0x035AF038 BL 0x23D527C
+	0x035AF03C B 0x35AF04C
+	0x035AF040 LDRSW X9, [X10]
+	0x035AF044 ADD X8, X8, X9, 0x4, LSL
+	0x035AF048 ADD X0, X8, 0x138
+	0x035AF04C LDP X8, X1, [X0]
+	0x035AF050 MOV X0, X20
+	0x035AF054 BLR X8
+	0x035AF058 MOV W8, W0
+	0x035AF05C LDR X0, [X31 + 0x18]
+	0x035AF060 TBZ X8, 0x0, 0x35AF0B4
+	0x035AF064 LDR X19, [X0 + 0x38]
+	0x035AF068 CBZ X19, 0x35B0494
+	0x035AF06C ADRP X10, 0x2138000
+	0x035AF070 LDR X8, [X19]
+	0x035AF074 LDR X10, [X10 + 0x2B8]
+	0x035AF078 LDRH W9, [X8 + 0x12E]
+	0x035AF07C LDR X1, [X10]
+	0x035AF080 CBZ X9, 0x35AF0A4
+	0x035AF084 LDR X10, [X8 + 0xB0]
+	0x035AF088 ADD X10, X10, 0x8
+	0x035AF08C LDUR X11, [X10 - 0x8]
+	0x035AF090 CMP X11, X1
+	0x035AF094 B.EQ 0x35AF124
+	0x035AF098 SUBS X9, X9, 0x1
+	0x035AF09C ADD X10, X10, 0x10
+	0x035AF0A0 B.NE 0x35AF08C
+	0x035AF0A4 MOV X0, X19
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move X19, X0
+	005 Move W8, [0x277E8FB]
+	006 Move TEMP, X8
+	007 And TEMP, TEMP, 1
+	008 Compare TEMP, 1
+	009 JumpIfEqual {14}
+	010 Move X0, [0x2185538]
+	011 Call 0x239F8E4
+	012 Move W8, 1
+	013 Move [X20+2299], W8
+	014 Move W8, [X19+16]
+	015 Add W31, W8, 2
+	016 Move W20, [X19+32]
+	017 Move X0, X31
+	018 Call Environment.get_CurrentManagedThreadId
+	019 NotImplemented "Instruction CMP not yet implemented."
+	020 Move [X19+16], W31
+	021 Move X20, X19
+	022 Move X8, [0x2185538]
+	023 Move X0, [X8]
+	024 Call 0x239FB80
+	025 Move X1, X31
+	026 Move X20, X0
+	027 Call Object..ctor, X0
+	028 Move X0, X31
+	029 Move [X20+16], W31
+	030 Call Environment.get_CurrentManagedThreadId
+	031 Move [X20+32], W0
+	032 Move X1, [X19+48]
+	033 Move X0, X20
+	034 Move [X0+40], X1
+	035 Call 0x239F888
+	036 Move X0, X20
+	037 Move X20, [X31+16]
+	038 Move X19, [X31+24]
+	039 Move X30, [X31+32]
+	040 Return X0
+
+Method: System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+
+Disassembly:
+	0x035AF0A8 MOV W2, W31
+
+ISIL:
+	001 Call <AutoMergeFeatureTasks>d__1.System.Collections.Generic.IEnumerable<GameLogic.Player.MergeTasks.MergeTask>.GetEnumerator, X0
+	002 Return X0
+

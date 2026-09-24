@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class SummerWatermelonModel.<>c__DisplayClass87_0 // TypeDefIndex: 5621
+{
+	// Fields
+	public SummerWatermelonModel <>4__this; // 0x8
+	public TableMergeItem itemConfig; // 0xC
+
+	// Methods
+
+	// RVA: 0x18C4190 Offset: 0x18C4190 VA: 0x18C4190
+	public void .ctor() { }
+
+	// RVA: 0x18C4198 Offset: 0x18C4198 VA: 0x18C4198
+	internal void <OnNewItem>b__0() { }
+}
+

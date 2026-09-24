@@ -1,0 +1,123 @@
+Type: GameLogic.Player.Items.MergeItem+<>c__DisplayClass181_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x035E6DDC ADD X8, X8, W9, 0x4, SXTW
+	0x035E6DE0 ADD X0, X8, 0x138
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Collections.Generic.IEnumerable`1<System.ValueTuple`3<Code.GameLogic.GameEvents.IBubbleBonusEvent, GameLogic.Player.EnergyType, Metaplay.Core.Math.F32>> <GetPotentialEventsForBubbleBonus>g__GetBubbleBonusesForEvent|0(Code.GameLogic.GameEvents.IBubbleBonusEvent bubbleBonusEvent, GameLogic.Player.Board.MergeBoard eventBoard, GameLogic.Player.EnergyType defaultEnergyType)
+
+Disassembly:
+	0x035E6DE4 LDP X2, X1, [X0]
+	0x035E6DE8 MOV X0, X19
+	0x035E6DEC LDP X20, X19, [X31 + 0x10]
+	0x035E6DF0 LDP X30, X21, [X31], #0x20
+	0x035E6DF4 BR X2
+	0x035E6DF8 BL 0x239BB90
+	0x035E6DFC STR X30, [X31 - 0x20]!
+	0x035E6E00 STP X20, X19, [X31 + 0x10]
+	0x035E6E04 ADRP X20, 0x2743000
+	0x035E6E08 MOV X19, X0
+	0x035E6E0C LDRB W8, [X20 + 0xA93]
+	0x035E6E10 TBNZ X8, 0x0, 0x35E6E28
+	0x035E6E14 ADRP X0, 0x2100000
+	0x035E6E18 LDR X0, [X0 + 0x958]
+	0x035E6E1C BL 0x239B8E4
+	0x035E6E20 MOVZ W8, 0x1
+	0x035E6E24 STRB W8, [X20 + 0xA93]
+	0x035E6E28 CBZ X19, 0x35E6F08
+	0x035E6E2C ADRP X20, 0x2100000
+	0x035E6E30 LDR X8, [X19]
+	0x035E6E34 LDR X20, [X20 + 0x958]
+	0x035E6E38 LDRH W9, [X8 + 0x12E]
+	0x035E6E3C LDR X1, [X20]
+	0x035E6E40 CBZ X9, 0x35E6E64
+	0x035E6E44 LDR X10, [X8 + 0xB0]
+	0x035E6E48 ADD X10, X10, 0x8
+	0x035E6E4C LDUR X11, [X10 - 0x8]
+	0x035E6E50 CMP X11, X1
+	0x035E6E54 B.EQ 0x35E6E74
+	0x035E6E58 SUBS X9, X9, 0x1
+	0x035E6E5C ADD X10, X10, 0x10
+	0x035E6E60 B.NE 0x35E6E4C
+	0x035E6E64 MOV X0, X19
+	0x035E6E68 MOVZ W2, 0x5
+	0x035E6E6C BL 0x23D527C
+	0x035E6E70 B 0x35E6E84
+	0x035E6E74 LDR W9, [X10]
+	0x035E6E78 ADD W9, W9, 0x5
+	0x035E6E7C ADD X8, X8, W9, 0x4, SXTW
+	0x035E6E80 ADD X0, X8, 0x138
+	0x035E6E84 LDP X8, X1, [X0]
+	0x035E6E88 MOV X0, X19
+	0x035E6E8C BLR X8
+	0x035E6E90 CBZ X0, 0x35E6EFC
+	0x035E6E94 LDR X8, [X19]
+	0x035E6E98 LDR X1, [X20]
+	0x035E6E9C LDRH W9, [X8 + 0x12E]
+	0x035E6EA0 CBZ X9, 0x35E6EC4
+
+ISIL:
+	001 Move [X31-64], X30
+	002 Move [X31+16], X24
+	003 Move [X31+24], X23
+	004 Move [X31+32], X22
+	005 Move [X31+40], X21
+	006 Move [X31+48], X20
+	007 Move [X31+56], X19
+	008 Move W19, W3
+	009 Move W8, [0x2747A76]
+	010 Move X24, [0x214F1D0]
+	011 Move X20, X2
+	012 Move X21, X1
+	013 Move X22, X0
+	014 Move TEMP, X8
+	015 And TEMP, TEMP, 1
+	016 Compare TEMP, 1
+	017 JumpIfEqual {22}
+	018 Move X0, [0x214F1D0]
+	019 Call 0x239F8E4
+	020 Move W8, 1
+	021 Move [X23+2678], W8
+	022 Move X0, [X24]
+	023 Call 0x239FB80
+	024 Move X1, X31
+	025 Move X23, X0
+	026 Call Object..ctor, X0
+	027 Move TEMP, 1
+	028 Not TEMP
+	029 Move W8, TEMP
+	030 Move X0, X31
+	031 Move [X23+16], W8
+	032 Call Environment.get_CurrentManagedThreadId
+	033 Move X8, X23
+	034 Move [X23+40], W0
+	035 Move X1, X22
+	036 Move [X8+64], X22
+	037 Move X0, X8
+	038 Call 0x239F888
+	039 Move X0, X23
+	040 Move X1, X21
+	041 Move [X0+80], X21
+	042 Call 0x239F888
+	043 Move X0, X23
+	044 Move X1, X20
+	045 Move [X0+56], X20
+	046 Call 0x239F888
+	047 Move X0, X23
+	048 Move [X23+92], W19
+	049 Move X20, [X31+48]
+	050 Move X19, [X31+56]
+	051 Move X22, [X31+32]
+	052 Move X21, [X31+40]
+	053 Move X24, [X31+16]
+	054 Move X23, [X31+24]
+	055 Move X30, [X31+64]
+	056 Return X0
+

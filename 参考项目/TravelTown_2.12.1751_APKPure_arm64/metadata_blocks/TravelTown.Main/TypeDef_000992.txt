@@ -1,0 +1,220 @@
+// Namespace: MergeEngine.ECS.Systems.Items.Producers
+public abstract class SpawningItemsSystem<T> : BaseItemSystem<T> // TypeDefIndex: 992
+{
+	// Fields
+	[Inject]
+	protected IRandomNumberModel RandomNumberModel; // 0x0
+	[Inject]
+	protected IMergingConfigurationModel MergingConfigurationModel; // 0x0
+	[Inject]
+	private INotificationDataFactory _notificationDataFactory; // 0x0
+	[Inject]
+	private IPlayerModel _playerModel; // 0x0
+	[InjectComponent]
+	protected BoardComponent BoardComponent; // 0x0
+	[InjectComponent]
+	private InteractionTrackingComponent _interactionTrackingComponent; // 0x0
+	[InjectSystem]
+	protected PowerBoostSystem _powerBoostSystem; // 0x0
+	[Inject]
+	private IRemoteSpawningModel _remoteSpawningModel; // 0x0
+	[Inject]
+	private IBoardConfigService _boardConfigService; // 0x0
+	[Inject]
+	private List<ILowLevelProduceStrategy> _produceStrategies; // 0x0
+	protected BoardSystem BoardSystem; // 0x0
+
+	// Properties
+	protected abstract ItemOrigin ItemOrigin { get; }
+	public bool IsRemoteSpawning { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 19
+	protected abstract ItemOrigin get_ItemOrigin();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-SpawningItemsSystem<object>.get_ItemOrigin
+	*/
+
+	// RVA: -1 Offset: -1
+	public bool get_IsRemoteSpawning() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4532CCC Offset: 0x452ECCC VA: 0x4532CCC
+	|-SpawningItemsSystem<object>.get_IsRemoteSpawning
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 6
+	protected override void InitializeSystem() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4532DC4 Offset: 0x452EDC4 VA: 0x4532DC4
+	|-SpawningItemsSystem<object>.InitializeSystem
+	*/
+
+	// RVA: -1 Offset: -1
+	protected List<TComponent> GetUnlockedComponents<TComponent>(IList<TComponent> components) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3AF6E54 Offset: 0x3AF2E54 VA: 0x3AF6E54
+	|-SpawningItemsSystem<object>.GetUnlockedComponents<object>
+	|
+	|-RVA: 0x3AF6F98 Offset: 0x3AF2F98 VA: 0x3AF6F98
+	|-SpawningItemsSystem<object>.GetUnlockedComponents<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	private void RefillQueueFor(IItemSpawningComponent itemSpawningComponent, List<Combination> combinations) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4532E24 Offset: 0x452EE24 VA: 0x4532E24
+	|-SpawningItemsSystem<object>.RefillQueueFor
+	*/
+
+	// RVA: -1 Offset: -1
+	protected ItemSpawnable SpawnAt(BoardItemPosition position, IItemSpawningComponent itemSpawningComponent, InteractionComponent interactionComponent, OperationContext operationContext, bool isSpawner = False, LowLevelItemProduceData lowLevelData, ProducerExcitementSpawnData excitementData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x45330D4 Offset: 0x452F0D4 VA: 0x45330D4
+	|-SpawningItemsSystem<object>.SpawnAt
+	*/
+
+	// RVA: -1 Offset: -1
+	private void CopyTimerItemData(TimerItemData from, TimerItemData to) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4533ED0 Offset: 0x452FED0 VA: 0x4533ED0
+	|-SpawningItemsSystem<object>.CopyTimerItemData
+	*/
+
+	// RVA: -1 Offset: -1
+	private ItemSpawnable GetSpawnableItem(InteractionComponent interactionComponent, IItemSpawningComponent itemSpawningComponent, LowLevelItemProduceData lowLevelData, ProducerExcitementSpawnData excitementData, out ExtraData extraData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4533F3C Offset: 0x452FF3C VA: 0x4533F3C
+	|-SpawningItemsSystem<object>.GetSpawnableItem
+	*/
+
+	// RVA: -1 Offset: -1
+	private ItemSpawnable TryReplaceWithRemoteSpawnable(InteractionComponent interactionComponent, IItemSpawningComponent itemSpawningComponent, ExtraData extraData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4534164 Offset: 0x4530164 VA: 0x4534164
+	|-SpawningItemsSystem<object>.TryReplaceWithRemoteSpawnable
+	*/
+
+	// RVA: -1 Offset: -1
+	private ItemSpawnable GetItemFromDefaultQueue(InteractionComponent interactionComponent, IItemSpawningComponent itemSpawningComponent) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x45342CC Offset: 0x45302CC VA: 0x45342CC
+	|-SpawningItemsSystem<object>.GetItemFromDefaultQueue
+	*/
+
+	// RVA: -1 Offset: -1
+	private string GetMaxLevelPrimaryProducerIdOnBoard(IItemSpawningComponent itemSpawningComponent) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4534608 Offset: 0x4530608 VA: 0x4534608
+	|-SpawningItemsSystem<object>.GetMaxLevelPrimaryProducerIdOnBoard
+	*/
+
+	// RVA: -1 Offset: -1
+	private ItemSpawnable CreateNewBoostedItem(IMergeItem producer, ItemSpawnable itemSpawnable) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4534B0C Offset: 0x4530B0C VA: 0x4534B0C
+	|-SpawningItemsSystem<object>.CreateNewBoostedItem
+	*/
+
+	// RVA: -1 Offset: -1
+	private void SetItemSpawningTrackingData(IItemSpawningComponent itemSpawningComponent, TimeDurationComponent timeDurationComponent, IMergeItem spawnerItem, ItemSpawnable itemSpawnable, LowLevelItemProduceData lowLevelData, ProducerExcitementSpawnData excitementData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4535260 Offset: 0x4531260 VA: 0x4535260
+	|-SpawningItemsSystem<object>.SetItemSpawningTrackingData
+	*/
+
+	// RVA: -1 Offset: -1
+	private ItemSpawningTrackingData GetItemSpawningTrackingData(IItemSpawningComponent itemSpawningComponent, IMergeItem spawnerItem, ItemSpawnable itemSpawnable) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x453588C Offset: 0x453188C VA: 0x453588C
+	|-SpawningItemsSystem<object>.GetItemSpawningTrackingData
+	*/
+
+	// RVA: -1 Offset: -1
+	private void SetRemoteItemSpawningTrackingData(string stackId, int bet, bool isFromRemoteQueue, string pushedItemSource) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4535BBC Offset: 0x4531BBC VA: 0x4535BBC
+	|-SpawningItemsSystem<object>.SetRemoteItemSpawningTrackingData
+	*/
+
+	// RVA: -1 Offset: -1
+	private void SpawnItemAt(ItemSpawnable item, BoardItemPosition position, IItemSpawningComponent itemSpawningComponent, InteractionComponent interactionComponent, OperationContext operationContext, ExtraData extraData, bool isExcitementItem) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4535CC4 Offset: 0x4531CC4 VA: 0x4535CC4
+	|-SpawningItemsSystem<object>.SpawnItemAt
+	*/
+
+	// RVA: -1 Offset: -1
+	private void OnItemBoosted(BoardItemPosition position, VisualComponent visualComponent) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x453657C Offset: 0x453257C VA: 0x453657C
+	|-SpawningItemsSystem<object>.OnItemBoosted
+	*/
+
+	// RVA: -1 Offset: -1
+	protected bool TryGetLowLevelProduceData(IItemSpawningComponent itemSpawningComponent, out LowLevelItemProduceData lowLevelData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4536734 Offset: 0x4532734 VA: 0x4536734
+	|-SpawningItemsSystem<object>.TryGetLowLevelProduceData
+	*/
+
+	// RVA: -1 Offset: -1
+	protected bool IsLocked(T component) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4536958 Offset: 0x4532958 VA: 0x4536958
+	|-SpawningItemsSystem<object>.IsLocked
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void HandleFloatingTexts(IItemSpawningComponent itemSpawningComponent) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4536A00 Offset: 0x4532A00 VA: 0x4536A00
+	|-SpawningItemsSystem<object>.HandleFloatingTexts
+	*/
+
+	// RVA: -1 Offset: -1
+	private void HandleFireChargingFloatingText(IItemSpawningComponent itemSpawningComponent) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4536AC8 Offset: 0x4532AC8 VA: 0x4536AC8
+	|-SpawningItemsSystem<object>.HandleFireChargingFloatingText
+	*/
+
+	// RVA: -1 Offset: -1
+	private void HandleExpiredFloatingText(IItemSpawningComponent itemSpawningComponent) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4536CD8 Offset: 0x4532CD8 VA: 0x4536CD8
+	|-SpawningItemsSystem<object>.HandleExpiredFloatingText
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4536E84 Offset: 0x4532E84 VA: 0x4536E84
+	|-SpawningItemsSystem<object>..ctor
+	*/
+}
+

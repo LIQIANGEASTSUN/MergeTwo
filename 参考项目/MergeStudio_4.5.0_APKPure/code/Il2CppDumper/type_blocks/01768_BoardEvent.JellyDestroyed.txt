@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BoardEvent.JellyDestroyed : IEvent // TypeDefIndex: 1768
+{
+	// Fields
+	public ItemController Item; // 0x0
+}
+

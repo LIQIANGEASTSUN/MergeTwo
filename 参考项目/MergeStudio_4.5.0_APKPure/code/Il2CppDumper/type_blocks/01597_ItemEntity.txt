@@ -1,0 +1,153 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class ItemEntity : IItemEntity // TypeDefIndex: 1597
+{
+	// Fields
+	public Coordinate BoardIndex; // 0x8
+	public int Level; // 0x10
+	public int SetID; // 0x14
+	public bool IsJelly; // 0x18
+	public bool IsBubbled; // 0x19
+	public long BubbleFinishAtTick; // 0x20
+	public float CurrentCapacity; // 0x28
+	public int ChargeAmount; // 0x2C
+	public long ChargingFinishAtTick; // 0x30
+	public ChestState ChestState; // 0x38
+	public SpawnerState SpawnerState; // 0x3C
+	public SpawnerState SkippedState; // 0x40
+	public int NoCapacityCounter; // 0x44
+	public TutorialState TutorialState; // 0x48
+	public long InventoryRemainingChargingTick; // 0x50
+	public long ShopRemainingChargingTick; // 0x58
+	public int CurrentTaskIndex; // 0x60
+	public bool IsBoxed; // 0x64
+	public int UnboxLevel; // 0x68
+	public PickBoxSelectedEntity PickBoxSelectedEntity; // 0x6C
+	public string BubbleSpawnTrigger; // 0x70
+	public RewardHistoryEntity RewardHistoryEntity; // 0x74
+
+	// Properties
+	public int GetLevel { get; }
+	public int GetSetID { get; }
+	public bool GetIsBubbled { get; }
+	public float GetCurrentCapacity { get; }
+	public long GetChargingFinishAtTick { get; }
+	public ChestState GetChestState { get; }
+
+	// Methods
+
+	// RVA: 0x1882C48 Offset: 0x1882C48 VA: 0x1882C48 Slot: 4
+	public int get_GetLevel() { }
+
+	// RVA: 0x1882C50 Offset: 0x1882C50 VA: 0x1882C50 Slot: 5
+	public int get_GetSetID() { }
+
+	// RVA: 0x1882C58 Offset: 0x1882C58 VA: 0x1882C58 Slot: 6
+	public bool get_GetIsBubbled() { }
+
+	// RVA: 0x1882C60 Offset: 0x1882C60 VA: 0x1882C60 Slot: 7
+	public float get_GetCurrentCapacity() { }
+
+	// RVA: 0x1882C68 Offset: 0x1882C68 VA: 0x1882C68 Slot: 8
+	public long get_GetChargingFinishAtTick() { }
+
+	// RVA: 0x1882C70 Offset: 0x1882C70 VA: 0x1882C70 Slot: 9
+	public ChestState get_GetChestState() { }
+
+	// RVA: 0x1882C78 Offset: 0x1882C78 VA: 0x1882C78 Slot: 10
+	public bool IsSameLevelAndSet(IItemEntity item) { }
+
+	// RVA: 0x1882DC0 Offset: 0x1882DC0 VA: 0x1882DC0 Slot: 11
+	public void SetCurrentCapacity(float capacity) { }
+
+	// RVA: 0x1882DC8 Offset: 0x1882DC8 VA: 0x1882DC8 Slot: 12
+	public void SetChargingFinishAtTick(long chargingFinishAtTick) { }
+
+	// RVA: 0x1882DD8 Offset: 0x1882DD8 VA: 0x1882DD8 Slot: 13
+	public void SetSkippedState(SpawnerState state) { }
+
+	// RVA: 0x1882DE0 Offset: 0x1882DE0 VA: 0x1882DE0 Slot: 14
+	public void CalculateNextChargingTime(BoardItemSpawnerData data) { }
+
+	// RVA: 0x188312C Offset: 0x188312C VA: 0x188312C Slot: 15
+	public void SetChestState(IItemController item, ChestState chestState, BoardItemChestSpawner chestSpawner, bool animateClockDisappear = False, bool init = False) { }
+
+	// RVA: 0x18835D4 Offset: 0x18835D4 VA: 0x18835D4
+	public void .ctor(int level, int setID, bool isJelly, Coordinate boardIndex, RewardHistoryRecord rewardHistoryRecord) { }
+
+	// RVA: 0x188366C Offset: 0x188366C VA: 0x188366C
+	public void .ctor(ItemInfo itemInfo, bool isJelly, Coordinate boardIndex, RewardHistoryRecord rewardHistoryRecord) { }
+
+	// RVA: 0x1883700 Offset: 0x1883700 VA: 0x1883700
+	public void .ctor(int level, int setID, bool isJelly, Coordinate boardIndex, RewardHistoryEntity rewardHistoryEntity) { }
+
+	// RVA: 0x1883780 Offset: 0x1883780 VA: 0x1883780
+	public void .ctor(ItemInfo itemInfo, bool isJelly, Coordinate boardIndex, bool isBoxed, int unboxLevel, RewardHistoryRecord record) { }
+
+	// RVA: 0x1883828 Offset: 0x1883828 VA: 0x1883828
+	public void .ctor(ItemInfo itemInfo, bool isJelly, Coordinate boardIndex, bool isBoxed, int unboxLevel, RewardHistoryEntity rewardHistoryEntity) { }
+
+	// RVA: 0x18838B4 Offset: 0x18838B4 VA: 0x18838B4
+	public void .ctor(int level, int setID, bool isJelly, Coordinate boardIndex, int currentTaskIndex, RewardHistoryEntity rewardHistoryEntity) { }
+
+	// RVA: 0x1883934 Offset: 0x1883934 VA: 0x1883934
+	public void .ctor(ItemInfo itemInfo, bool isJelly, Coordinate boardIndex, int currentTaskIndex, RewardHistoryRecord record) { }
+
+	// RVA: 0x18839D0 Offset: 0x18839D0 VA: 0x18839D0
+	public void .ctor(int level, int setID, bool isJelly, bool isBubbled, Coordinate boardIndex, RewardHistoryRecord rewardHistoryRecord) { }
+
+	// RVA: 0x1883A74 Offset: 0x1883A74 VA: 0x1883A74
+	public void .ctor(int level, int setID, bool isJelly, RewardHistoryEntity rewardHistoryEntity) { }
+
+	// RVA: 0x1883AD8 Offset: 0x1883AD8 VA: 0x1883AD8
+	public void .ctor(RewardEntity rewardEntity) { }
+
+	// RVA: 0x1883B10 Offset: 0x1883B10 VA: 0x1883B10
+	public void .ctor() { }
+
+	// RVA: 0x1883B18 Offset: 0x1883B18 VA: 0x1883B18
+	public void RemoveBubble() { }
+
+	// RVA: 0x1883B24 Offset: 0x1883B24 VA: 0x1883B24
+	public bool IsInactiveItem() { }
+
+	// RVA: 0x1883B54 Offset: 0x1883B54 VA: 0x1883B54
+	public bool IsInActiveAndNonMergeableItem() { }
+
+	// RVA: 0x1883B78 Offset: 0x1883B78 VA: 0x1883B78
+	public bool IsJellyOrBoxedItem() { }
+
+	// RVA: 0x1883B9C Offset: 0x1883B9C VA: 0x1883B9C
+	public bool IsOnlyJelly() { }
+
+	// RVA: 0x1883BB8 Offset: 0x1883BB8 VA: 0x1883BB8
+	public bool IsMovable() { }
+
+	// RVA: 0x1883BD8 Offset: 0x1883BD8 VA: 0x1883BD8
+	public bool IsSpecialTaskItem(BoardData boardData) { }
+
+	// RVA: 0x1883C04 Offset: 0x1883C04 VA: 0x1883C04
+	public void ActivateTutorialState() { }
+
+	// RVA: 0x1883C94 Offset: 0x1883C94 VA: 0x1883C94
+	public bool IsInTutorialState() { }
+
+	// RVA: 0x1883CC4 Offset: 0x1883CC4 VA: 0x1883CC4
+	public void SetSpawnerState(IItemController item, BoardItemSpawnerData data, SpawnerState spawnerState, string label, bool animateClockDisappear = False) { }
+
+	// RVA: 0x1884070 Offset: 0x1884070 VA: 0x1884070
+	public bool IsInvalid() { }
+
+	// RVA: 0x1884098 Offset: 0x1884098 VA: 0x1884098
+	public void SetBubbleData(bool isBubbled, long bubbleDeactivationTime, string spawnTrigger) { }
+
+	// RVA: 0x18840C0 Offset: 0x18840C0 VA: 0x18840C0
+	public bool IsSameLevelAndSet(ItemEntity item) { }
+
+	// RVA: 0x1884104 Offset: 0x1884104 VA: 0x1884104
+	public bool IsSameLevelAndSet(BoardTaskGoal goal, bool useCurrentID = False) { }
+
+	// RVA: 0x1884238 Offset: 0x1884238 VA: 0x1884238
+	public void CreateEmptyHistoryEntityIfNull() { }
+}
+

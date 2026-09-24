@@ -1,0 +1,70 @@
+// Namespace: MergePuzzle.EnergyMultiplier
+public class EnergyMultiplierController : BaseSubscriber, IEventReceiver<BoardEvent.InitializeBoard>, IEventReceiverBase, IEventReceiver<EnergyMultiplierEvents.PopupClosed>, IEventReceiver<CameraEvent.CameraChangeCompletedPostEvent>, IEventReceiver<EntityUpdateEvent.EnergyUpdateUI>, IEventReceiver<CanvasEvent.OpenEventScreen>, IEventReceiver<EnergyMultiplierEvents.CheckMultiplierPopups> // TypeDefIndex: 4775
+{
+	// Fields
+	[SerializeField]
+	private EnergyMultiplierAssetContainer assets; // 0x1C
+	private EnergyMultiplierEntity _entity; // 0x20
+	private KiteEnergyMultiplierConfig _config; // 0x24
+	private EnergyMultiplierHandler _handler; // 0x28
+	private BoardEntity _boardEntity; // 0x2C
+	private EventEntity _eventEntity; // 0x30
+	private BoardData _boardData; // 0x34
+	private bool _isEventBoard; // 0x38
+	private bool _isGameplayEnabled; // 0x39
+	private bool _isActivated; // 0x3A
+	private bool _isIconCreated; // 0x3B
+	private int _uiEnergy; // 0x3C
+	private EnergyMultiplierFloatingText _floatingText; // 0x40
+
+	// Properties
+	private Transform FloatingTextParent { get; }
+
+	// Methods
+
+	// RVA: 0x1DC188C Offset: 0x1DC188C VA: 0x1DC188C
+	private Transform get_FloatingTextParent() { }
+
+	// RVA: 0x1DC1910 Offset: 0x1DC1910 VA: 0x1DC1910 Slot: 17
+	public void OnEvent(BoardEvent.InitializeBoard e) { }
+
+	// RVA: 0x1DC1B54 Offset: 0x1DC1B54 VA: 0x1DC1B54 Slot: 19
+	public void OnEvent(CameraEvent.CameraChangeCompletedPostEvent e) { }
+
+	// RVA: 0x1DC22E8 Offset: 0x1DC22E8 VA: 0x1DC22E8 Slot: 20
+	public void OnEvent(EntityUpdateEvent.EnergyUpdateUI e) { }
+
+	// RVA: 0x1DC2304 Offset: 0x1DC2304 VA: 0x1DC2304 Slot: 18
+	public void OnEvent(EnergyMultiplierEvents.PopupClosed e) { }
+
+	// RVA: 0x1DC2E38 Offset: 0x1DC2E38 VA: 0x1DC2E38 Slot: 15
+	public override void OnEvent(CanvasEvent.GameplayStatusUpdate e) { }
+
+	// RVA: 0x1DC2E44 Offset: 0x1DC2E44 VA: 0x1DC2E44 Slot: 21
+	public void OnEvent(CanvasEvent.OpenEventScreen e) { }
+
+	// RVA: 0x1DC2E50 Offset: 0x1DC2E50 VA: 0x1DC2E50 Slot: 22
+	public void OnEvent(EnergyMultiplierEvents.CheckMultiplierPopups e) { }
+
+	// RVA: 0x1DC1964 Offset: 0x1DC1964 VA: 0x1DC1964
+	private void Initialize(bool isEventBoard) { }
+
+	// RVA: 0x1DC2E54 Offset: 0x1DC2E54 VA: 0x1DC2E54
+	private void FixEntityMultiplier() { }
+
+	// RVA: 0x1DC1BEC Offset: 0x1DC1BEC VA: 0x1DC1BEC
+	private void CheckMultipliers() { }
+
+	// RVA: 0x1DC2F60 Offset: 0x1DC2F60 VA: 0x1DC2F60
+	private void ActivateMultiplier() { }
+
+	// RVA: 0x1DC31C8 Offset: 0x1DC31C8 VA: 0x1DC31C8
+	private void CreateIcon() { }
+
+	// RVA: 0x1DC2D20 Offset: 0x1DC2D20 VA: 0x1DC2D20
+	private void TriggerFloatingText() { }
+
+	// RVA: 0x1DC32F8 Offset: 0x1DC32F8 VA: 0x1DC32F8
+	public void .ctor() { }
+}
+

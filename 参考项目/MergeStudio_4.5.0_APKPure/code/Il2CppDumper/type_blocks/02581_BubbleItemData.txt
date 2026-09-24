@@ -1,0 +1,16 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class BubbleItemData // TypeDefIndex: 2581
+{
+	// Fields
+	public float BubbleProbability; // 0x8
+	public int RequiredGemToSkip; // 0xC
+	public int BalanceConfigGemToSkip; // 0x10
+	public bool CanBeSkippedWithRewarded; // 0x14
+
+	// Methods
+
+	// RVA: 0x1A3E1B8 Offset: 0x1A3E1B8 VA: 0x1A3E1B8
+	public void .ctor() { }
+}
+

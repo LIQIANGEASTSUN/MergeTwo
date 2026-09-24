@@ -1,0 +1,59 @@
+// Namespace: MergeEngine.ECS.Systems.Items
+public class TimeCycleSystem : BaseItemSystem<ITimeCycleComponent> // TypeDefIndex: 969
+{
+	// Fields
+	[InjectSystem]
+	private OperationTrackingSystem _operationTrackingSystem; // 0x40
+	[InjectSystem]
+	private TimeSystem _timeSystem; // 0x48
+	[InjectSystem]
+	private BoardSystem _boardSystem; // 0x50
+	[InjectSystem]
+	private SkipCooldownSystem _skipCooldownSystem; // 0x58
+	[Inject]
+	private INotificationDataFactory _notificationDataFactory; // 0x60
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x68
+
+	// Properties
+	public override SystemPriorities Priority { get; }
+
+	// Methods
+
+	// RVA: 0x6791ECC Offset: 0x678DECC VA: 0x6791ECC Slot: 15
+	public override SystemPriorities get_Priority() { }
+
+	// RVA: 0x6791ED4 Offset: 0x678DED4 VA: 0x6791ED4
+	private List<ITimeCycleComponent> GetUnlockedComponents(IList<ITimeCycleComponent> components) { }
+
+	// RVA: 0x6791FF0 Offset: 0x678DFF0 VA: 0x6791FF0 Slot: 17
+	protected override IEnumerable<ITimeCycleComponent> OnWillProcessComponents(ReadOnlyCollection<ITimeCycleComponent> components) { }
+
+	// RVA: 0x6791FF4 Offset: 0x678DFF4 VA: 0x6791FF4 Slot: 18
+	protected override void ProcessComponent(ITimeCycleComponent component) { }
+
+	// RVA: 0x679202C Offset: 0x678E02C VA: 0x679202C
+	private void ProcessTimeCheckIfLocked(double seconds, ITimeCycleComponent component) { }
+
+	// RVA: 0x6791AF8 Offset: 0x678DAF8 VA: 0x6791AF8
+	public void ProcessTime(double seconds, ITimeCycleComponent component) { }
+
+	// RVA: 0x67921FC Offset: 0x678E1FC VA: 0x67921FC
+	private void ProcessDelay(ITimeCycleComponent component, double seconds) { }
+
+	// RVA: 0x6792768 Offset: 0x678E768 VA: 0x6792768
+	private void ProcessCycles(ITimeCycleComponent component, double seconds) { }
+
+	// RVA: 0x6793EA8 Offset: 0x678FEA8 VA: 0x6793EA8
+	private bool SkipCooldownEntirely(ITimeCycleComponent component) { }
+
+	// RVA: 0x6793FBC Offset: 0x678FFBC VA: 0x6793FBC
+	private void ProcessCycle(ITimeCycleComponent component, double seconds) { }
+
+	// RVA: 0x6793788 Offset: 0x678F788 VA: 0x6793788
+	private void CheckCooldownState(TimeCycleState previousState, TimeCycleState currentState, IMergeItem item, TimeCycleComponentAnalytics analyticParams, ITimeCycleComponent component) { }
+
+	// RVA: 0x679456C Offset: 0x679056C VA: 0x679456C
+	public void .ctor() { }
+}
+

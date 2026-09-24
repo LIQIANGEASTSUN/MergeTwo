@@ -1,0 +1,30 @@
+Type: GameLogic.Player.Items.TimeContainer.ITimeContainerFeatures
+
+Method: System.Boolean get_StoresTime()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Config.Types.MetacoreDuration get_DefaultInitialTime()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.TimeContainer.TimeContainerMergeBehavior get_MergeBehavior()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void set_MergeBehavior(GameLogic.Player.Items.TimeContainer.TimeContainerMergeBehavior value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

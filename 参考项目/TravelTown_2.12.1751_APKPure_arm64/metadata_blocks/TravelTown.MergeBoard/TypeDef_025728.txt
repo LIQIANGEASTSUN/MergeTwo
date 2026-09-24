@@ -1,0 +1,16 @@
+// Namespace: Merger.MergeBoard.Systems
+public class CollectItemSystem : ISystem // TypeDefIndex: 25728
+{
+	// Fields
+	[Inject]
+	private IResourcesModel _resourcesModel; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A656BC Offset: 0x6A616BC VA: 0x6A656BC Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A659DC Offset: 0x6A619DC VA: 0x6A659DC
+	public void .ctor() { }
+}
+

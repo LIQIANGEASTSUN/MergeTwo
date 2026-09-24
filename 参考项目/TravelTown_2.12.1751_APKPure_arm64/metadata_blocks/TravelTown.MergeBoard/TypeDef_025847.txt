@@ -1,0 +1,12 @@
+// Namespace: Merger.MergeBoard.Logic.State.Updaters
+public class SpawnerComponentStateUpdater : ComponentStateUpdaterBase<SpawnerComponent, ItemPayloadBase>, IBoardItemComponentStateUpdater // TypeDefIndex: 25847
+{
+	// Methods
+
+	// RVA: 0x6A85C54 Offset: 0x6A81C54 VA: 0x6A85C54 Slot: 5
+	protected override void UpdateFromState(ref SpawnerComponent component, ItemPayloadBase itemState) { }
+
+	// RVA: 0x6A85D00 Offset: 0x6A81D00 VA: 0x6A85D00
+	public void .ctor() { }
+}
+

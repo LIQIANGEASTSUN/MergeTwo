@@ -1,0 +1,31 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class BoardPositionEntity // TypeDefIndex: 1852
+{
+	// Fields
+	public Coordinate Index; // 0x8
+	public CellEntity Cell; // 0x10
+	[CanBeNull]
+	public ItemEntity Item; // 0x14
+
+	// Methods
+
+	// RVA: 0x1912B00 Offset: 0x1912B00 VA: 0x1912B00
+	public void .ctor(Coordinate index, CellEntity cell, ItemEntity item) { }
+
+	// RVA: 0x1912B48 Offset: 0x1912B48 VA: 0x1912B48
+	public void .ctor(Coordinate index) { }
+
+	// RVA: 0x1912B6C Offset: 0x1912B6C VA: 0x1912B6C
+	public void .ctor() { }
+
+	// RVA: 0x1912B74 Offset: 0x1912B74 VA: 0x1912B74
+	public void Clear() { }
+
+	// RVA: 0x1912D2C Offset: 0x1912D2C VA: 0x1912D2C
+	public void SetItem(ItemEntity itemEntity) { }
+
+	// RVA: 0x1912EA4 Offset: 0x1912EA4 VA: 0x1912EA4 Slot: 3
+	public override string ToString() { }
+}
+

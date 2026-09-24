@@ -1,0 +1,41 @@
+// Namespace: MergeEngine.ECS.Systems.Items
+public class ToolSpawningSystem : BaseToolAnalysisSystem<ToolSpawningComponent> // TypeDefIndex: 974
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x98
+	[Inject]
+	private IRandomNumberModel _randomNumberModel; // 0xA0
+	[Inject]
+	private INotificationDataFactory _notificationDataFactory; // 0xA8
+	[InjectSystem]
+	private OperationTrackingSystem _operationTrackingSystem; // 0xB0
+	[InjectSystem]
+	private BoardSystem _boardSystem; // 0xB8
+	[InjectSystem]
+	private MetagameSystem _metagameSystem; // 0xC0
+	[InjectSystem]
+	private InteractionSystem _interactionSystem; // 0xC8
+	[Inject]
+	private IResourcesModel _resourcesModel; // 0xD0
+	[InjectComponent]
+	private InteractionTrackingComponent _interactionTrackingComponent; // 0xD8
+
+	// Methods
+
+	// RVA: 0x67971E4 Offset: 0x67931E4 VA: 0x67971E4 Slot: 18
+	protected override void ProcessComponent(ToolSpawningComponent toolSpawningComponent) { }
+
+	// RVA: 0x67972F8 Offset: 0x67932F8 VA: 0x67972F8
+	private void SpawnTool(ToolSpawningComponent toolSpawningComponent) { }
+
+	// RVA: 0x6797538 Offset: 0x6793538 VA: 0x6797538
+	private Dictionary<PlayerResourceEnum, int> CalculateCurrentToolAmounts(Dictionary<PlayerResourceEnum, int> collectableTools) { }
+
+	// RVA: 0x6797740 Offset: 0x6793740 VA: 0x6797740
+	private void CreateTool(IMergeGraphItem toolGraph, ToolSpawningComponent origin, bool isUnfinishedChain, int currentLevelSum) { }
+
+	// RVA: 0x6797E28 Offset: 0x6793E28 VA: 0x6797E28
+	public void .ctor() { }
+}
+

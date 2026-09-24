@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class TimeLimitedItemsRepository.<>c__DisplayClass2_0 // TypeDefIndex: 32853
+{
+	// Fields
+	public IPromise promise; // 0x10
+
+	// Methods
+
+	// RVA: 0x6B4DC48 Offset: 0x6B49C48 VA: 0x6B4DC48
+	public void .ctor() { }
+
+	// RVA: 0x6B4DC9C Offset: 0x6B49C9C VA: 0x6B4DC9C
+	internal void <RequestCleanup>b__0(BackendStates _) { }
+}
+

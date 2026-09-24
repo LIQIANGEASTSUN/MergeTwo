@@ -1,0 +1,68 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class FeedingCombinationItemExtractedResult // TypeDefIndex: 25949
+{
+	// Fields
+	[CompilerGenerated]
+	private Entity <FeedingEntity>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private Entity <ExtractedEntity>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private int <SourcePosition>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private int <TargetPosition>k__BackingField; // 0x24
+	[CompilerGenerated]
+	private ItemAnalyticsData <AnalyticsData>k__BackingField; // 0x28
+
+	// Properties
+	public Entity FeedingEntity { get; set; }
+	public Entity ExtractedEntity { get; set; }
+	public int SourcePosition { get; set; }
+	public int TargetPosition { get; set; }
+	public ItemAnalyticsData AnalyticsData { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A550 Offset: 0x6A96550 VA: 0x6A9A550
+	public Entity get_FeedingEntity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A558 Offset: 0x6A96558 VA: 0x6A9A558
+	public void set_FeedingEntity(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A560 Offset: 0x6A96560 VA: 0x6A9A560
+	public Entity get_ExtractedEntity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A568 Offset: 0x6A96568 VA: 0x6A9A568
+	public void set_ExtractedEntity(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A570 Offset: 0x6A96570 VA: 0x6A9A570
+	public int get_SourcePosition() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A578 Offset: 0x6A96578 VA: 0x6A9A578
+	public void set_SourcePosition(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A580 Offset: 0x6A96580 VA: 0x6A9A580
+	public int get_TargetPosition() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A588 Offset: 0x6A96588 VA: 0x6A9A588
+	public void set_TargetPosition(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A590 Offset: 0x6A96590 VA: 0x6A9A590
+	public ItemAnalyticsData get_AnalyticsData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A598 Offset: 0x6A96598 VA: 0x6A9A598
+	public void set_AnalyticsData(ItemAnalyticsData value) { }
+
+	// RVA: 0x6A9A5A0 Offset: 0x6A965A0 VA: 0x6A9A5A0
+	public void .ctor() { }
+}
+

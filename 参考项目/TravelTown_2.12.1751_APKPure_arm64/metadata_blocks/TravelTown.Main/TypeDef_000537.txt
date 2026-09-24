@@ -1,0 +1,18 @@
+// Namespace: MergeEngine.Model.Configuration
+public interface IDynamicMergeItemConfigurationModel // TypeDefIndex: 537
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void AddDynamicMergeItem(string id, IMergeItem mergeItem);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract IMergeItem GetDynamicMergeItem(string id);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract IMergeItem GetDynamicMergeItemFromComponent(IComponentBase component);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract IMergeItem GetDynamicMergeItemWithItemId(string itemId);
+}
+

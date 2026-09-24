@@ -1,0 +1,101 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class HintUtil.<>c // TypeDefIndex: 611
+{
+	// Fields
+	public static readonly HintUtil.<>c <>9; // 0x0
+	public static Func<PositionComponent, IdComponent> <>9__0_0; // 0x8
+	public static Func<IdComponent, bool> <>9__0_2; // 0x10
+	public static Func<IdComponent, bool> <>9__0_4; // 0x18
+	public static Func<IdComponent, string> <>9__0_6; // 0x20
+	public static Func<ItemMultiple, ItemMultiple> <>9__1_4; // 0x28
+	public static Func<PositionComponent, IdComponent> <>9__2_2; // 0x30
+	public static Func<IMergeItem, bool> <>9__4_0; // 0x38
+	public static Func<IMergeItem, bool> <>9__4_1; // 0x40
+	public static Func<PositionComponent, bool> <>9__5_0; // 0x48
+	public static Func<PositionComponent, MergeComponent> <>9__5_1; // 0x50
+	public static Func<PositionComponent, MergeComponent> <>9__5_3; // 0x58
+	public static Func<PositionComponent, IdComponent> <>9__7_0; // 0x60
+	public static Func<IdComponent, bool> <>9__7_2; // 0x68
+	public static Func<PositionComponent, IdComponent> <>9__10_0; // 0x70
+	public static Func<IdComponent, bool> <>9__10_1; // 0x78
+	public static Func<PositionComponent, bool> <>9__13_0; // 0x80
+	public static Func<PositionComponent, MergeComponent> <>9__14_0; // 0x88
+	public static Func<MergeComponent, string> <>9__14_2; // 0x90
+	public static Func<MergeComponent, bool> <>9__14_3; // 0x98
+	public static Func<PositionComponent, bool> <>9__15_0; // 0xA0
+	public static Func<PositionComponent, bool> <>9__16_0; // 0xA8
+
+	// Methods
+
+	// RVA: 0x627659C Offset: 0x627259C VA: 0x627659C
+	private static void .cctor() { }
+
+	// RVA: 0x6276604 Offset: 0x6272604 VA: 0x6276604
+	public void .ctor() { }
+
+	// RVA: 0x627660C Offset: 0x627260C VA: 0x627660C
+	internal IdComponent <GetHint>b__0_0(PositionComponent position) { }
+
+	// RVA: 0x627665C Offset: 0x627265C VA: 0x627665C
+	internal bool <GetHint>b__0_2(IdComponent id) { }
+
+	// RVA: 0x62766C0 Offset: 0x62726C0 VA: 0x62766C0
+	internal bool <GetHint>b__0_4(IdComponent id) { }
+
+	// RVA: 0x627671C Offset: 0x627271C VA: 0x627671C
+	internal string <GetHint>b__0_6(IdComponent idComponent) { }
+
+	// RVA: 0x6276734 Offset: 0x6272734 VA: 0x6276734
+	internal ItemMultiple <TryFindConsumeHint>b__1_4(ItemMultiple item) { }
+
+	// RVA: 0x627673C Offset: 0x627273C VA: 0x627673C
+	internal IdComponent <TryFindStackableHint>b__2_2(PositionComponent pos) { }
+
+	// RVA: 0x627678C Offset: 0x627278C VA: 0x627678C
+	internal bool <TryFindPrioritizedStackingHint>b__4_0(IMergeItem item) { }
+
+	// RVA: 0x6276798 Offset: 0x6272798 VA: 0x6276798
+	internal bool <TryFindPrioritizedStackingHint>b__4_1(IMergeItem item) { }
+
+	// RVA: 0x62767A4 Offset: 0x62727A4 VA: 0x62767A4
+	internal bool <TryFindMergeAnyHint>b__5_0(PositionComponent position) { }
+
+	// RVA: 0x6276820 Offset: 0x6272820 VA: 0x6276820
+	internal MergeComponent <TryFindMergeAnyHint>b__5_1(PositionComponent position) { }
+
+	// RVA: 0x6276870 Offset: 0x6272870 VA: 0x6276870
+	internal MergeComponent <TryFindMergeAnyHint>b__5_3(PositionComponent position) { }
+
+	// RVA: 0x62768C0 Offset: 0x62728C0 VA: 0x62768C0
+	internal IdComponent <GetCollectable>b__7_0(PositionComponent position) { }
+
+	// RVA: 0x6276910 Offset: 0x6272910 VA: 0x6276910
+	internal bool <GetCollectable>b__7_2(IdComponent item) { }
+
+	// RVA: 0x6276944 Offset: 0x6272944 VA: 0x6276944
+	internal IdComponent <GetLowestLevelBasicItem>b__10_0(PositionComponent position) { }
+
+	// RVA: 0x6276994 Offset: 0x6272994 VA: 0x6276994
+	internal bool <GetLowestLevelBasicItem>b__10_1(IdComponent item) { }
+
+	// RVA: 0x6276A70 Offset: 0x6272A70 VA: 0x6276A70
+	internal bool <CountFeeds>b__13_0(PositionComponent item) { }
+
+	// RVA: 0x6276B28 Offset: 0x6272B28 VA: 0x6276B28
+	internal MergeComponent <CountMergeTiles>b__14_0(PositionComponent position) { }
+
+	// RVA: 0x6276B78 Offset: 0x6272B78 VA: 0x6276B78
+	internal string <CountMergeTiles>b__14_2(MergeComponent mergeComponent) { }
+
+	// RVA: 0x6276BD4 Offset: 0x6272BD4 VA: 0x6276BD4
+	internal bool <CountMergeTiles>b__14_3(MergeComponent item) { }
+
+	// RVA: 0x6276BDC Offset: 0x6272BDC VA: 0x6276BDC
+	internal bool <CountJokerMergeTiles>b__15_0(PositionComponent position) { }
+
+	// RVA: 0x6276C58 Offset: 0x6272C58 VA: 0x6276C58
+	internal bool <CountCollectables>b__16_0(PositionComponent item) { }
+}
+

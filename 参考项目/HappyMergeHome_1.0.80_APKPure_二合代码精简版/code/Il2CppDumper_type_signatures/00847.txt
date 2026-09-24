@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class PizzaTowerModel.<>c__DisplayClass50_0 // TypeDefIndex: 847
+{
+	// Fields
+	public StorageOrderItem storageOrderItem; // 0x8
+
+	// Methods
+
+	// RVA: 0x1B0F87C Offset: 0x1B0F87C VA: 0x1B0F87C
+	public void .ctor() { }
+
+	// RVA: 0x1B118B4 Offset: 0x1B118B4 VA: 0x1B118B4
+	internal bool <GetRandomTaskScore>b__0(PizzaTowerOrder p) { }
+}
+

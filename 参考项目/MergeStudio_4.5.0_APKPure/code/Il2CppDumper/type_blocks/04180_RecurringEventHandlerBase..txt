@@ -1,0 +1,22 @@
+// Namespace: 
+[CompilerGenerated]
+private struct RecurringEventHandlerBase.<LoadAndGetAddressable>d__64 : IAsyncStateMachine // TypeDefIndex: 4180
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncUniTaskMethodBuilder <>t__builder; // 0x4
+	public RecurringEventHandlerBase <>4__this; // 0xC
+	private RecurringEventAddressableBase <addressable>5__2; // 0x10
+	private UniTask.Awaiter<RecurringEventAddressableBase> <>u__1; // 0x14
+	private UniTask.Awaiter <>u__2; // 0x20
+
+	// Methods
+
+	// RVA: 0x1CCC63C Offset: 0x1CCC63C VA: 0x1CCC63C Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x1CCD0FC Offset: 0x1CCD0FC VA: 0x1CCD0FC Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

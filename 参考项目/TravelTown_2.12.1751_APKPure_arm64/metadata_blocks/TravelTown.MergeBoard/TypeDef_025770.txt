@@ -1,0 +1,25 @@
+// Namespace: Merger.MergeBoard.Systems
+public class ResourceItemDropSystem : ISystem // TypeDefIndex: 25770
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x10
+	[Inject]
+	private IEntityFactory _entityFactory; // 0x18
+	[Inject]
+	private IMergeBoardLayout _layout; // 0x20
+	[Inject]
+	private IResourcesConfigurationModel _resourcesConfigurationModel; // 0x28
+
+	// Methods
+
+	// RVA: 0x6A73A24 Offset: 0x6A6FA24 VA: 0x6A73A24 Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A73F14 Offset: 0x6A6FF14 VA: 0x6A73F14
+	private void SpawnResourceItem(TickContext context, PlayerResourceEnum resource, int emptyPosition, Entity sourceEntity, BoardTilePositionComponent sourceEntityPositionComponent) { }
+
+	// RVA: 0x6A7430C Offset: 0x6A7030C VA: 0x6A7430C
+	public void .ctor() { }
+}
+

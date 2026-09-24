@@ -1,0 +1,33 @@
+// Namespace: Merger.MergeBoard.Systems
+public class InteractionSystem : ISystem // TypeDefIndex: 25747
+{
+	// Fields
+	[Inject]
+	private IItemInteractionAffordabilityChecker _affordability; // 0x10
+	[Inject]
+	private ItemConsumableCombinerValidator _itemConsumableCombinerValidator; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A6B1F8 Offset: 0x6A671F8 VA: 0x6A6B1F8 Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A6B2BC Offset: 0x6A672BC VA: 0x6A6B2BC
+	private void HandleInteractByTap(TickContext context, TapAction tap) { }
+
+	// RVA: 0x6A6B684 Offset: 0x6A67684 VA: 0x6A6B684
+	private void HandleInteractForConsumableItem(TickContext context) { }
+
+	// RVA: 0x6A6B9AC Offset: 0x6A679AC VA: 0x6A6B9AC
+	private bool IsInteractionAvailable(TickContext context, Entity interactableEntity) { }
+
+	// RVA: 0x6A6BA7C Offset: 0x6A67A7C VA: 0x6A6BA7C
+	private string GetDefaultEntityUuidToConsume(TickContext context, ItemMultiple itemToConsume) { }
+
+	// RVA: 0x6A6BBCC Offset: 0x6A67BCC VA: 0x6A6BBCC
+	private bool IsItemEligibleForConsume(Entity entity, ItemMultiple itemToConsume) { }
+
+	// RVA: 0x6A6BC8C Offset: 0x6A67C8C VA: 0x6A6BC8C
+	public void .ctor() { }
+}
+

@@ -1,0 +1,36 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class OperationTrackingSystem.<>c__24<TItemNotificationData> // TypeDefIndex: 9784
+{
+	// Fields
+	public static readonly OperationTrackingSystem.<>c__24<TItemNotificationData> <>9; // 0x0
+	public static Func<RemoteBoosterData, string> <>9__24_0; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	private static void .cctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F2BC10 Offset: 0x3F27C10 VA: 0x3F2BC10
+	|-OperationTrackingSystem.<>c__24<object>..cctor
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F2BCCC Offset: 0x3F27CCC VA: 0x3F2BCCC
+	|-OperationTrackingSystem.<>c__24<object>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal string <TrackDequeueItemOperation>b__24_0(RemoteBoosterData x) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F2BCD4 Offset: 0x3F27CD4 VA: 0x3F2BCD4
+	|-OperationTrackingSystem.<>c__24<object>.<TrackDequeueItemOperation>b__24_0
+	*/
+}
+

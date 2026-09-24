@@ -1,0 +1,108 @@
+// Namespace: Merger.Game.Views
+public class BoardUIView : GameViewBase<BoardUIViewModel>, IBoardUIView, IViewComponent, IEnterStateHandler, IExitStateHandler // TypeDefIndex: 8575
+{
+	// Fields
+	[CompilerGenerated]
+	private Action<BoardItemPosition> ItemDroppedOnInventory; // 0x30
+	[SerializeField]
+	private RectTransform _inventoryRectTransform; // 0x38
+	[SerializeField]
+	private RectTransform _metaGameRectTransform; // 0x40
+	[SerializeField]
+	private SwitchMergingMetaButtonView _metaGameButton; // 0x48
+	[SerializeField]
+	private ReactiveButton _inventoryButton; // 0x50
+	[SerializeField]
+	private Animator _inventoryButtonAnimator; // 0x58
+	[SerializeField]
+	private GameObject _inventoryNotification; // 0x60
+	[Header("Hinting")]
+	[SerializeField]
+	private RectTransform _metaTutorial; // 0x68
+	[SerializeField]
+	private float _showMetaTutorialAfterBeingIdleFor; // 0x70
+	private static readonly int ToolBoxReceivingHash; // 0x0
+	private float _idleTime; // 0x74
+	private Tween _inventoryMoveTween; // 0x78
+	private Tween _inventoryScaleTween; // 0x80
+
+	// Properties
+	public SwitchMergingMetaButtonView MetaGameButton { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x668F078 Offset: 0x668B078 VA: 0x668F078 Slot: 10
+	public void add_ItemDroppedOnInventory(Action<BoardItemPosition> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x668F128 Offset: 0x668B128 VA: 0x668F128 Slot: 11
+	public void remove_ItemDroppedOnInventory(Action<BoardItemPosition> value) { }
+
+	// RVA: 0x668F1D8 Offset: 0x668B1D8 VA: 0x668F1D8
+	public SwitchMergingMetaButtonView get_MetaGameButton() { }
+
+	// RVA: 0x668F1E0 Offset: 0x668B1E0 VA: 0x668F1E0
+	private void OnEnable() { }
+
+	// RVA: 0x668F434 Offset: 0x668B434 VA: 0x668F434
+	private void OnDisable() { }
+
+	// RVA: 0x668F604 Offset: 0x668B604 VA: 0x668F604
+	private void OnBoardTypeChange(CurrentBoardType boardType) { }
+
+	// RVA: 0x668F650 Offset: 0x668B650 VA: 0x668F650
+	private void OnGameStateChanged(GameState gameState) { }
+
+	// RVA: 0x668F69C Offset: 0x668B69C VA: 0x668F69C
+	private void OnInventoryNotificationChanged(bool value) { }
+
+	// RVA: 0x668F734 Offset: 0x668B734 VA: 0x668F734
+	private void Start() { }
+
+	// RVA: 0x668F760 Offset: 0x668B760 VA: 0x668F760 Slot: 9
+	protected override void GameStarted() { }
+
+	// RVA: 0x668F864 Offset: 0x668B864 VA: 0x668F864
+	private void Update() { }
+
+	// RVA: 0x668F9A0 Offset: 0x668B9A0 VA: 0x668F9A0 Slot: 12
+	public void StartInventoryButtonHinting() { }
+
+	// RVA: 0x668FA80 Offset: 0x668BA80 VA: 0x668FA80 Slot: 13
+	public void StopInventoryButtonHinting() { }
+
+	// RVA: 0x668FB58 Offset: 0x668BB58 VA: 0x668FB58 Slot: 14
+	public void DropItemOnInventory(BoardItemPosition boardItemPosition) { }
+
+	// RVA: 0x668FB74 Offset: 0x668BB74 VA: 0x668FB74 Slot: 16
+	public void DisableUI() { }
+
+	// RVA: 0x668FBAC Offset: 0x668BBAC VA: 0x668FBAC Slot: 15
+	public void EnableUI() { }
+
+	// RVA: 0x668FBE4 Offset: 0x668BBE4 VA: 0x668FBE4
+	private void OnRewardIconArrived(RewardFlyIconAnimationFinishedSignal signal) { }
+
+	// RVA: 0x668F8E8 Offset: 0x668B8E8 VA: 0x668F8E8
+	private void CheckShowMetaButtonTutorial() { }
+
+	// RVA: 0x668FE08 Offset: 0x668BE08 VA: 0x668FE08
+	private void CheckStopMetaButtonTutorial() { }
+
+	// RVA: 0x668FE60 Offset: 0x668BE60 VA: 0x668FE60 Slot: 17
+	private void Framework.UIFSM.Fsm.IEnterStateHandler.HandleEnterState() { }
+
+	// RVA: 0x668FE68 Offset: 0x668BE68 VA: 0x668FE68 Slot: 18
+	private void Framework.UIFSM.Fsm.IExitStateHandler.HandleExitState() { }
+
+	// RVA: 0x668FE70 Offset: 0x668BE70 VA: 0x668FE70
+	public void .ctor() { }
+
+	// RVA: 0x668FEC0 Offset: 0x668BEC0 VA: 0x668FEC0
+	private static void .cctor() { }
+
+	// RVA: 0x668FF28 Offset: 0x668BF28 VA: 0x668FF28 Slot: 5
+	private GameObject Framework.Core.View.IViewComponent.get_gameObject() { }
+}
+

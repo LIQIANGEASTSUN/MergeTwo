@@ -1,0 +1,119 @@
+// Namespace: Gameplay
+public sealed class UserData : GlobalSystem<UserData> // TypeDefIndex: 3409
+{
+	// Fields
+	private StorageHome _storageHome; // 0xC
+
+	// Properties
+	private StorageHome storageHome { get; }
+	public StorageDictionary<int, int> Bag { get; }
+
+	// Methods
+
+	// RVA: 0x2E51C0C Offset: 0x2E51C0C VA: 0x2E51C0C
+	private StorageHome get_storageHome() { }
+
+	// RVA: 0x2E51D28 Offset: 0x2E51D28 VA: 0x2E51D28
+	public StorageDictionary<int, int> get_Bag() { }
+
+	[IDTag(1)]
+	// RVA: 0x2E51D94 Offset: 0x2E51D94 VA: 0x2E51D94
+	public bool CanAfford(ResData cost) { }
+
+	[IDTag(2)]
+	// RVA: 0x2E51E94 Offset: 0x2E51E94 VA: 0x2E51E94
+	public bool CanAfford(UserData.ResourceId id, int cout, out int needCount) { }
+
+	[IDTag(3)]
+	// RVA: 0x2E52894 Offset: 0x2E52894 VA: 0x2E52894
+	public bool CanAfford(List<ResData> costList) { }
+
+	[IDTag(0)]
+	// RVA: 0x2E51E0C Offset: 0x2E51E0C VA: 0x2E51E0C
+	public bool CanAfford(UserData.ResourceId id, int cout) { }
+
+	// RVA: 0x2E52A7C Offset: 0x2E52A7C VA: 0x2E52A7C
+	public void DebugSetResEnergy(int count) { }
+
+	[IDTag(0)]
+	// RVA: 0x2E52AFC Offset: 0x2E52AFC VA: 0x2E52AFC
+	public void ConsumeRes(UserData.ResourceId resourceId, int count, GameBIManager.ItemChangeReasonArgs reason, bool isIgnore = False) { }
+
+	[IDTag(1)]
+	// RVA: 0x2E54120 Offset: 0x2E54120 VA: 0x2E54120
+	public void ConsumeRes(ResData cost, GameBIManager.ItemChangeReasonArgs reason) { }
+
+	[IDTag(2)]
+	// RVA: 0x2E54228 Offset: 0x2E54228 VA: 0x2E54228
+	public void ConsumeRes(List<ResData> costList, GameBIManager.ItemChangeReasonArgs reason) { }
+
+	[IDTag(3)]
+	// RVA: 0x2E54460 Offset: 0x2E54460 VA: 0x2E54460
+	public void AddRes(int id, int count, GameBIManager.ItemChangeReasonArgs reason, bool isEvent = True, ShowRewardType rewardType = 0, bool isIgnore = False) { }
+
+	[IDTag(2)]
+	// RVA: 0x2E55614 Offset: 0x2E55614 VA: 0x2E55614
+	private void AddRes(UserData.ResourceId resourceId, int count, GameBIManager.ItemChangeReasonArgs reason, bool isEvent = True) { }
+
+	[IDTag(0)]
+	// RVA: 0x2E57250 Offset: 0x2E57250 VA: 0x2E57250
+	public void AddRes(ResData cost, GameBIManager.ItemChangeReasonArgs reason, bool isEvent = True, ShowRewardType rewardType = 0) { }
+
+	[IDTag(1)]
+	// RVA: 0x2E56FFC Offset: 0x2E56FFC VA: 0x2E56FFC
+	public void AddRes(List<ResData> costList, GameBIManager.ItemChangeReasonArgs reason, bool isEvent = True) { }
+
+	// RVA: 0x2E5737C Offset: 0x2E5737C VA: 0x2E5737C
+	public int GetTotalDecoCoin() { }
+
+	// RVA: 0x2E51F28 Offset: 0x2E51F28 VA: 0x2E51F28
+	public int GetRes(UserData.ResourceId resourceId) { }
+
+	// RVA: 0x2E5382C Offset: 0x2E5382C VA: 0x2E5382C
+	public void SetRes(UserData.ResourceId resourceId, int count, GameBIManager.ItemChangeReasonArgs reason) { }
+
+	// RVA: 0x2E551CC Offset: 0x2E551CC VA: 0x2E551CC
+	public bool IsResource(int resourceId) { }
+
+	// RVA: 0x2E574A4 Offset: 0x2E574A4 VA: 0x2E574A4
+	public bool IsCardCollectionCard(int cardId) { }
+
+	[IDTag(1)]
+	// RVA: 0x2E57664 Offset: 0x2E57664 VA: 0x2E57664
+	public static string ParseRewardNumText(int resourceId, int num) { }
+
+	[IDTag(0)]
+	// RVA: 0x2E576C8 Offset: 0x2E576C8 VA: 0x2E576C8
+	public static string ParseRewardNumText(UserData.ResourceId resourceId, int num) { }
+
+	// RVA: 0x2E577A4 Offset: 0x2E577A4 VA: 0x2E577A4
+	public static string GetResourceName(UserData.ResourceId resourceId) { }
+
+	// RVA: 0x2E578D4 Offset: 0x2E578D4 VA: 0x2E578D4
+	public static string GetResourceDesc(UserData.ResourceId resourceId) { }
+
+	[IDTag(2)]
+	// RVA: 0x2E57A04 Offset: 0x2E57A04 VA: 0x2E57A04
+	public static Sprite GetResourceIcon(int resourceId, UserData.ResourceSubType subType = 0) { }
+
+	// RVA: 0x2E57E80 Offset: 0x2E57E80 VA: 0x2E57E80
+	public static string GetResourceIconName(int resourceId, UserData.ResourceSubType subType = 0) { }
+
+	[IDTag(1)]
+	// RVA: 0x2E57BF0 Offset: 0x2E57BF0 VA: 0x2E57BF0
+	public static Sprite GetResourceIcon(UserData.ResourceId resourceId, UserData.ResourceSubType subType = 0) { }
+
+	[IDTag(0)]
+	// RVA: 0x2E57F98 Offset: 0x2E57F98 VA: 0x2E57F98
+	public static Sprite GetResourceIcon(string fileName) { }
+
+	// RVA: 0x2E573E8 Offset: 0x2E573E8 VA: 0x2E573E8
+	public string GetCurrencyKey(UserData.ResourceId resId) { }
+
+	// RVA: 0x2E582AC Offset: 0x2E582AC VA: 0x2E582AC
+	public UserData.ItemType CheckItemType(int resourceId) { }
+
+	// RVA: 0x2E583A4 Offset: 0x2E583A4 VA: 0x2E583A4
+	public void .ctor() { }
+}
+

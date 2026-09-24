@@ -1,0 +1,44 @@
+// Namespace: MergeEngine.Model.RemoteSpawning
+public class PushedRngItemsModel : ModelBase, IPushedRngItemsModel // TypeDefIndex: 487
+{
+	// Fields
+	[Inject]
+	private IJsonService _jsonService; // 0x28
+	[Inject]
+	private ISystemManager _systemManager; // 0x30
+	private IList<PushedRngItem> contextPushedItems; // 0x38
+	private LiveOpsEventSystem _liveOpsEventSystem; // 0x40
+
+	// Properties
+	private LiveOpsEventSystem LiveOpsEventSystem { get; }
+
+	// Methods
+
+	// RVA: 0x612EAA0 Offset: 0x612AAA0 VA: 0x612EAA0
+	private LiveOpsEventSystem get_LiveOpsEventSystem() { }
+
+	// RVA: 0x612EB80 Offset: 0x612AB80 VA: 0x612EB80 Slot: 20
+	public void AddPushItem(PushedItem pushedItem) { }
+
+	// RVA: 0x612EEA4 Offset: 0x612AEA4 VA: 0x612EEA4
+	private PushedRngItem ConvertToPushedItem(string itemId, string eventId, string boardEventId) { }
+
+	// RVA: 0x612EF44 Offset: 0x612AF44 VA: 0x612EF44
+	private void AddPushedItem(PushedRngItem newPushedRngItem) { }
+
+	// RVA: 0x612F124 Offset: 0x612B124 VA: 0x612F124 Slot: 19
+	public void ClearCache(string eventId) { }
+
+	// RVA: 0x612F5B4 Offset: 0x612B5B4 VA: 0x612F5B4 Slot: 21
+	public PushedItemNotificationData FindBoardEventItem(string boardEventId) { }
+
+	// RVA: 0x612F864 Offset: 0x612B864 VA: 0x612F864 Slot: 22
+	public PushedItemNotificationData FindItem() { }
+
+	// RVA: 0x612F768 Offset: 0x612B768 VA: 0x612F768
+	private PushedItemNotificationData HandleFoundItem(PushedRngItem rngItem) { }
+
+	// RVA: 0x612FA08 Offset: 0x612BA08 VA: 0x612FA08
+	public void .ctor() { }
+}
+

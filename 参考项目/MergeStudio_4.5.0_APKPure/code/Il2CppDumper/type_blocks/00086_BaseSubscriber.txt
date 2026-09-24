@@ -1,0 +1,114 @@
+// Namespace: Paxie
+public class BaseSubscriber : MonoBehaviour, IEventReceiver<CanvasEvent.GameplayStatusUpdate>, IEventReceiverBase, IEventReceiver<CanvasEvent.TutorialScreenStatusChange> // TypeDefIndex: 86
+{
+	// Fields
+	[CompilerGenerated]
+	private bool <IsGameObjectDestroyed>k__BackingField; // 0x10
+	private CancellationToken _ct; // 0x14
+	private float _time; // 0x18
+	private static readonly float TickSeconds; // 0x0
+
+	// Properties
+	public bool IsGameObjectDestroyed { get; set; }
+	public TutorialStepConfig ActiveTutorialStepConfig { get; }
+	public TutorialIndex ActiveIndex { get; }
+	public int SequentialTutorialMainIndex { get; }
+	public SceneController.State GameState { get; }
+	public TutorialController TutorialController { get; }
+	public RectTransform rectTransform { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x176D4B0 Offset: 0x176D4B0 VA: 0x176D4B0
+	public bool get_IsGameObjectDestroyed() { }
+
+	[CompilerGenerated]
+	// RVA: 0x176D4B8 Offset: 0x176D4B8 VA: 0x176D4B8
+	private void set_IsGameObjectDestroyed(bool value) { }
+
+	// RVA: 0x176D4C0 Offset: 0x176D4C0 VA: 0x176D4C0
+	public TutorialStepConfig get_ActiveTutorialStepConfig() { }
+
+	// RVA: 0x176D630 Offset: 0x176D630 VA: 0x176D630
+	public TutorialIndex get_ActiveIndex() { }
+
+	// RVA: 0x176D6F0 Offset: 0x176D6F0 VA: 0x176D6F0
+	public int get_SequentialTutorialMainIndex() { }
+
+	// RVA: 0x176D860 Offset: 0x176D860 VA: 0x176D860
+	public SceneController.State get_GameState() { }
+
+	// RVA: 0x176C240 Offset: 0x176C240 VA: 0x176C240
+	public TutorialController get_TutorialController() { }
+
+	// RVA: 0x176D864 Offset: 0x176D864 VA: 0x176D864
+	public SceneController.State GetGameState() { }
+
+	// RVA: 0x176D964 Offset: 0x176D964 VA: 0x176D964
+	public bool IsTutorialState() { }
+
+	// RVA: 0x176DA70 Offset: 0x176DA70 VA: 0x176DA70
+	public bool IsTutorialActive() { }
+
+	// RVA: 0x176D4C4 Offset: 0x176D4C4 VA: 0x176D4C4
+	public TutorialStepConfig GetActiveTutorialStep() { }
+
+	// RVA: 0x176D6F4 Offset: 0x176D6F4 VA: 0x176D6F4
+	public TutorialIndex GetSequentialTutorialMainIndex() { }
+
+	// RVA: 0x176DB44 Offset: 0x176DB44 VA: 0x176DB44
+	public RectTransform get_rectTransform() { }
+
+	// RVA: 0x176DBCC Offset: 0x176DBCC VA: 0x176DBCC Slot: 6
+	public virtual void Awake() { }
+
+	// RVA: 0x176DC34 Offset: 0x176DC34 VA: 0x176DC34 Slot: 7
+	public virtual void Start() { }
+
+	// RVA: 0x176DC38 Offset: 0x176DC38 VA: 0x176DC38 Slot: 8
+	public virtual void OnEnable() { }
+
+	// RVA: 0x176DC3C Offset: 0x176DC3C VA: 0x176DC3C Slot: 9
+	public virtual void OnDestroy() { }
+
+	// RVA: 0x176DCAC Offset: 0x176DCAC VA: 0x176DCAC Slot: 10
+	public virtual void DOKill() { }
+
+	// RVA: 0x176DCB0 Offset: 0x176DCB0 VA: 0x176DCB0
+	private void Update() { }
+
+	// RVA: 0x176DEDC Offset: 0x176DEDC VA: 0x176DEDC
+	protected AddressableReferenceData GetAddressableReferenceData() { }
+
+	// RVA: 0x176DCE8 Offset: 0x176DCE8 VA: 0x176DCE8
+	private void UpdateImmediateInternal(bool skipTimeCheck) { }
+
+	// RVA: 0x176DF94 Offset: 0x176DF94 VA: 0x176DF94 Slot: 11
+	public virtual void UpdatePlayingTick(float elapsedTime) { }
+
+	// RVA: 0x176DF98 Offset: 0x176DF98 VA: 0x176DF98 Slot: 12
+	public virtual void UpdateTutorialTick(float elapsedTime) { }
+
+	// RVA: 0x176DF9C Offset: 0x176DF9C VA: 0x176DF9C Slot: 13
+	public virtual void UpdatePausedTick(float elapsedTime) { }
+
+	// RVA: 0x176DFA0 Offset: 0x176DFA0 VA: 0x176DFA0 Slot: 14
+	public virtual void UpdateTick() { }
+
+	// RVA: 0x176DFA4 Offset: 0x176DFA4 VA: 0x176DFA4 Slot: 15
+	public virtual void OnEvent(CanvasEvent.GameplayStatusUpdate e) { }
+
+	// RVA: 0x176DFA8 Offset: 0x176DFA8 VA: 0x176DFA8 Slot: 16
+	public virtual void OnEvent(CanvasEvent.TutorialScreenStatusChange e) { }
+
+	// RVA: 0x176DFAC Offset: 0x176DFAC VA: 0x176DFAC
+	public CancellationToken GetCancellationTokenOnDestroy() { }
+
+	// RVA: 0x176C414 Offset: 0x176C414 VA: 0x176C414
+	public void .ctor() { }
+
+	// RVA: 0x176E0F4 Offset: 0x176E0F4 VA: 0x176E0F4
+	private static void .cctor() { }
+}
+

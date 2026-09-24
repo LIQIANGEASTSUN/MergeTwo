@@ -1,0 +1,4 @@
+// Namespace: Merger.MergeBoard.Components
+public struct CooldownBlockComponent : IComponent // TypeDefIndex: 25994
+{}
+

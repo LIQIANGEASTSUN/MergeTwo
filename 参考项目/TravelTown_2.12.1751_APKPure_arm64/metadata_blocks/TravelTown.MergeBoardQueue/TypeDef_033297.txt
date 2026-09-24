@@ -1,0 +1,27 @@
+// Namespace: Merger.MergeBoardQueue.Services
+public class MergeBoardQueueOperationTrackingService : ServiceBase, IMergeBoardQueueOperationTrackingService, IMergeBoardQueueOperationTrackingCheatService // TypeDefIndex: 33297
+{
+	// Fields
+	[Inject]
+	private IMergeBoardOperationTrackingService _operationTrackingService; // 0x28
+	[Inject]
+	private IBoardQueueModel _boardQueueModel; // 0x30
+
+	// Methods
+
+	// RVA: 0x6A57B60 Offset: 0x6A53B60 VA: 0x6A57B60 Slot: 21
+	public void TrackEnqueueItemOperation(IMergeItem mergeItem, string uuidInBoardQueue, long enqueueTimestamp) { }
+
+	// RVA: 0x6A58000 Offset: 0x6A54000 VA: 0x6A58000 Slot: 19
+	public void TrackEnqueueItemOperation(Entity entity, IMergeItem mergeItem) { }
+
+	// RVA: 0x6A5856C Offset: 0x6A5456C VA: 0x6A5856C Slot: 20
+	public void TrackEnqueueItemOperationFromUndoSell(Entity entity, IMergeItem mergeItem) { }
+
+	// RVA: 0x6A58078 Offset: 0x6A54078 VA: 0x6A58078
+	private void SendOperation(Entity entity, IMergeItem mergeItem, string operationType) { }
+
+	// RVA: 0x6A585E4 Offset: 0x6A545E4 VA: 0x6A585E4
+	public void .ctor() { }
+}
+

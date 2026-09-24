@@ -1,0 +1,33 @@
+// Namespace: MergeEngine.Util
+public static class BoardUtil // TypeDefIndex: 91
+{
+	// Methods
+
+	// RVA: 0x5FE7918 Offset: 0x5FE3918 VA: 0x5FE7918
+	public static bool AnyItemsCanBeProduced(IEntityManager entityManager) { }
+
+	// RVA: 0x5FE7BF0 Offset: 0x5FE3BF0 VA: 0x5FE7BF0
+	public static ITimeCycleComponent GetProducerThatCanProduce(IEntityManager entityManager) { }
+
+	// RVA: 0x5FE7CFC Offset: 0x5FE3CFC VA: 0x5FE7CFC
+	public static bool HasUnmergedProducersOnBoard(IEntityManager entityManager) { }
+
+	// RVA: 0x5FE7EC8 Offset: 0x5FE3EC8 VA: 0x5FE7EC8
+	public static bool HasToolsOnBoard(IEntityManager entityManager) { }
+
+	// RVA: 0x5FE8064 Offset: 0x5FE4064 VA: 0x5FE8064
+	public static CollectableComponent GetFirstToolOnBoard(IEntityManager entityManager) { }
+
+	// RVA: 0x5FE7A24 Offset: 0x5FE3A24 VA: 0x5FE7A24
+	private static IEnumerable<ITimeCycleComponent> GetTimeCycleComponents(IEntityManager entityManager) { }
+
+	// RVA: 0x5FE8200 Offset: 0x5FE4200 VA: 0x5FE8200
+	public static IEnumerable<PositionComponent> GetUnlockedComponents(IEntityManager entityManager) { }
+
+	// RVA: 0x5FE8394 Offset: 0x5FE4394 VA: 0x5FE8394
+	public static bool AnyItemsCanBeMerged(ISystemManager systemManager) { }
+
+	// RVA: 0x5FE8460 Offset: 0x5FE4460 VA: 0x5FE8460
+	public static bool IsInBounds(BoardItemPosition pos, BoardComponent board) { }
+}
+

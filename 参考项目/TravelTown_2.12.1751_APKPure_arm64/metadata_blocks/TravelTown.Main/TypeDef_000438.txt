@@ -1,0 +1,18 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ResourcesConfigurationModel.<>c__DisplayClass24_0 // TypeDefIndex: 438
+{
+	// Fields
+	public string spriteName; // 0x10
+	public ResourcesConfigurationModel <>4__this; // 0x18
+	public string tokenType; // 0x20
+
+	// Methods
+
+	// RVA: 0x61271A4 Offset: 0x61231A4 VA: 0x61271A4
+	public void .ctor() { }
+
+	// RVA: 0x6127388 Offset: 0x6123388 VA: 0x6127388
+	internal void <LoadTokenSpriteAsset>b__0(AsyncOperationHandle<Sprite> handle) { }
+}
+

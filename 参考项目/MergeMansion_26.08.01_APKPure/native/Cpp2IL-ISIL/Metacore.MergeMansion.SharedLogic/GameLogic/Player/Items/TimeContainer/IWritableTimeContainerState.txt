@@ -1,0 +1,9 @@
+Type: GameLogic.Player.Items.TimeContainer.IWritableTimeContainerState
+
+Method: System.Void SetRemaining(GameLogic.Config.Types.MetacoreDuration remaining)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

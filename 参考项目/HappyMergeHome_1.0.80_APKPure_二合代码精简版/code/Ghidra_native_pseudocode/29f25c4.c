@@ -1,0 +1,10 @@
+
+undefined1 FUN_02a025c4(undefined4 param_1,int param_2)
+
+{
+  if (param_2 == 0) {
+    func_0x014388e4();
+  }
+  return *(undefined1 *)(param_2 + 0x18);
+}
+

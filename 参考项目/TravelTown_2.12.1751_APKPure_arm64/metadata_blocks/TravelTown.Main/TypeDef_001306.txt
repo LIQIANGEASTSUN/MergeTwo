@@ -1,0 +1,73 @@
+// Namespace: MergeEngine.Configuration.Definitions
+[Serializable]
+public class ItemMultiple : ItemMultipleBase<IMergeItem, MergeItemWeakReference>, IRewardItemViewData, IRewardViewData, IRewardTextRepresented, IRewardTooltipData, IEquatable<IRewardViewData>, IRewardViewPresentable, IRewardData, IPrioritizedOrderReward // TypeDefIndex: 1306
+{
+	// Fields
+	[CompilerGenerated]
+	private HashSet<string> <RewardQueueUuids>k__BackingField; // 0x68
+
+	// Properties
+	[JsonIgnore]
+	public HashSet<string> RewardQueueUuids { get; set; }
+	private AssetReferenceT<Sprite> Merger.Rewards.Interfaces.IRewardViewPresentable.SpriteReference { get; }
+	public override bool ShouldHideIButton { get; }
+	public override bool HasCollectScreen { get; }
+	public override bool ShowInfoButtonAfterContentLoad { get; }
+	private IItem Merger.Rewards.Interfaces.Datas.IRewardItemViewData.Item { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A29AAC Offset: 0x6A25AAC VA: 0x6A29AAC
+	public HashSet<string> get_RewardQueueUuids() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A29AB4 Offset: 0x6A25AB4 VA: 0x6A29AB4
+	public void set_RewardQueueUuids(HashSet<string> value) { }
+
+	// RVA: 0x6A29ABC Offset: 0x6A25ABC VA: 0x6A29ABC Slot: 39
+	public override bool Equals(IRewardViewData other) { }
+
+	// RVA: 0x6A29AFC Offset: 0x6A25AFC VA: 0x6A29AFC
+	public bool CompareItems(IRewardViewData other) { }
+
+	// RVA: 0x6A29BA4 Offset: 0x6A25BA4 VA: 0x6A29BA4
+	protected void .ctor() { }
+
+	// RVA: 0x6A29C34 Offset: 0x6A25C34 VA: 0x6A29C34
+	public void .ctor(string itemId, int amount, RewardDestination destination) { }
+
+	// RVA: 0x6A29D38 Offset: 0x6A25D38 VA: 0x6A29D38
+	public void .ctor(MergeItemWeakReference itemReference, int amount) { }
+
+	// RVA: 0x6A29E04 Offset: 0x6A25E04 VA: 0x6A29E04
+	public void .ctor(string itemId, RewardAmount rewardAmount) { }
+
+	// RVA: 0x6A29ECC Offset: 0x6A25ECC VA: 0x6A29ECC
+	public void .ctor(MergeItemWeakReference itemReference, RewardAmount rewardAmount, RewardDestination destination, RewardSource rewardSource) { }
+
+	// RVA: 0x6A29F80 Offset: 0x6A25F80 VA: 0x6A29F80 Slot: 38
+	public override IRewardViewData Clone() { }
+
+	// RVA: 0x6A2A03C Offset: 0x6A2603C VA: 0x6A2A03C Slot: 37
+	protected override string GetExtraLogData() { }
+
+	// RVA: 0x6A2A0B4 Offset: 0x6A260B4 VA: 0x6A2A0B4 Slot: 21
+	private AssetReferenceT<Sprite> Merger.Rewards.Interfaces.IRewardViewPresentable.get_SpriteReference() { }
+
+	// RVA: 0x6A2A178 Offset: 0x6A26178 VA: 0x6A2A178 Slot: 33
+	public override bool get_ShouldHideIButton() { }
+
+	// RVA: 0x6A2A180 Offset: 0x6A26180 VA: 0x6A2A180 Slot: 31
+	public override bool get_HasCollectScreen() { }
+
+	// RVA: 0x6A2A188 Offset: 0x6A26188 VA: 0x6A2A188 Slot: 34
+	public override bool get_ShowInfoButtonAfterContentLoad() { }
+
+	// RVA: 0x6A2A280 Offset: 0x6A26280 VA: 0x6A2A280 Slot: 36
+	public override string GetBottomText(RewardDisplayTextData rewardDisplayTextData) { }
+
+	// RVA: 0x6A2A32C Offset: 0x6A2632C VA: 0x6A2A32C Slot: 44
+	private IItem Merger.Rewards.Interfaces.Datas.IRewardItemViewData.get_Item() { }
+}
+

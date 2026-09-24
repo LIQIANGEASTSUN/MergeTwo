@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class TimeDurationSystem.<>c // TypeDefIndex: 25782
+{
+	// Fields
+	public static readonly TimeDurationSystem.<>c <>9; // 0x0
+	public static Func<ValueTuple<Entity, TimeDurationComponent, IdComponent, BoardTilePositionComponent>, bool> <>9__0_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x6A77AC4 Offset: 0x6A73AC4 VA: 0x6A77AC4
+	private static void .cctor() { }
+
+	// RVA: 0x6A77B2C Offset: 0x6A73B2C VA: 0x6A77B2C
+	public void .ctor() { }
+
+	// RVA: 0x6A77B34 Offset: 0x6A73B34 VA: 0x6A77B34
+	internal bool <Tick>b__0_0(ValueTuple<Entity, TimeDurationComponent, IdComponent, BoardTilePositionComponent> timeDuration) { }
+}
+

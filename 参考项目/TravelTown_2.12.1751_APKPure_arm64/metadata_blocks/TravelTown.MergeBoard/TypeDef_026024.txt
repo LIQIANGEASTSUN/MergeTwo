@@ -1,0 +1,122 @@
+// Namespace: Merger.MergeBoard.Components
+public struct TimeLockComponent : IComponent // TypeDefIndex: 26024
+{
+	// Fields
+	[CompilerGenerated]
+	private double <TimeLeft>k__BackingField; // 0x0
+	[CompilerGenerated]
+	private double <LockTime>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private bool <IsCooldownBlocked>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private TimeLockGroup <LockGroup>k__BackingField; // 0x14
+	[CompilerGenerated]
+	private bool <BeingUnlocked>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private bool <CanBeUnlocked>k__BackingField; // 0x19
+	[CompilerGenerated]
+	private ItemOrigin <LockOrigins>k__BackingField; // 0x1C
+	[CompilerGenerated]
+	private bool <ModifiedByStateLoad>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private bool <Used>k__BackingField; // 0x21
+
+	// Properties
+	public double TimeLeft { get; set; }
+	public double LockTime { get; set; }
+	public bool IsCooldownBlocked { get; set; }
+	public TimeLockGroup LockGroup { get; set; }
+	public bool BeingUnlocked { get; set; }
+	public bool CanBeUnlocked { get; set; }
+	public ItemOrigin LockOrigins { get; set; }
+	public bool ModifiedByStateLoad { get; set; }
+	public bool Used { get; set; }
+	public bool Locked { get; }
+
+	// Methods
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9C580 Offset: 0x6A98580 VA: 0x6A9C580
+	public double get_TimeLeft() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C588 Offset: 0x6A98588 VA: 0x6A9C588
+	public void set_TimeLeft(double value) { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9C590 Offset: 0x6A98590 VA: 0x6A9C590
+	public double get_LockTime() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C598 Offset: 0x6A98598 VA: 0x6A9C598
+	public void set_LockTime(double value) { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9C5A0 Offset: 0x6A985A0 VA: 0x6A9C5A0
+	public bool get_IsCooldownBlocked() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C5A8 Offset: 0x6A985A8 VA: 0x6A9C5A8
+	public void set_IsCooldownBlocked(bool value) { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9C5B4 Offset: 0x6A985B4 VA: 0x6A9C5B4
+	public TimeLockGroup get_LockGroup() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C5BC Offset: 0x6A985BC VA: 0x6A9C5BC
+	public void set_LockGroup(TimeLockGroup value) { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9C5C4 Offset: 0x6A985C4 VA: 0x6A9C5C4
+	public bool get_BeingUnlocked() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C5CC Offset: 0x6A985CC VA: 0x6A9C5CC
+	public void set_BeingUnlocked(bool value) { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9C5D8 Offset: 0x6A985D8 VA: 0x6A9C5D8
+	public bool get_CanBeUnlocked() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C5E0 Offset: 0x6A985E0 VA: 0x6A9C5E0
+	public void set_CanBeUnlocked(bool value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9C5EC Offset: 0x6A985EC VA: 0x6A9C5EC
+	public ItemOrigin get_LockOrigins() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C5F4 Offset: 0x6A985F4 VA: 0x6A9C5F4
+	public void set_LockOrigins(ItemOrigin value) { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9C5FC Offset: 0x6A985FC VA: 0x6A9C5FC
+	public bool get_ModifiedByStateLoad() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C604 Offset: 0x6A98604 VA: 0x6A9C604
+	public void set_ModifiedByStateLoad(bool value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9C610 Offset: 0x6A98610 VA: 0x6A9C610
+	public bool get_Used() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C618 Offset: 0x6A98618 VA: 0x6A9C618
+	public void set_Used(bool value) { }
+
+	// RVA: 0x6A9C624 Offset: 0x6A98624 VA: 0x6A9C624
+	public bool get_Locked() { }
+}
+

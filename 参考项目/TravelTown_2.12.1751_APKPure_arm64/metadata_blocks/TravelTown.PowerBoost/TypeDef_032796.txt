@@ -1,0 +1,123 @@
+// Namespace: Merger.MergeBoard.PowerBoost.Models
+public class PowerBoostModel : IPowerBoostModel, IInitializable // TypeDefIndex: 32796
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x10
+	[CompilerGenerated]
+	private PowerBoostMultiModesConfig <Configuration>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private int <CurrentConfigLevel>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private string <EventId>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private int <EventIndex>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private MutableBindableProperty<int> <BoostMode>k__BackingField; // 0x38
+	private bool _unlockPopupOpening; // 0x40
+
+	// Properties
+	public int DefaultPowerBoostMode { get; }
+	public int MinUnlockableBoost { get; }
+	public int MaxBoostIndicationThreshold { get; }
+	public PowerBoostMultiModesConfig Configuration { get; set; }
+	public int CurrentConfigLevel { get; set; }
+	public bool HasConfiguration { get; }
+	public bool IsPowerBoostEnabled { get; }
+	public int LastGrantedBoostRemote { get; }
+	public BindableProperty<int> CurrentPowerBoostMode { get; }
+	public string EventId { get; set; }
+	public int EventIndex { get; set; }
+	private MutableBindableProperty<int> BoostMode { get; set; }
+
+	// Methods
+
+	// RVA: 0x6AD1C2C Offset: 0x6ACDC2C VA: 0x6AD1C2C Slot: 5
+	public int get_DefaultPowerBoostMode() { }
+
+	// RVA: 0x6AD1C34 Offset: 0x6ACDC34 VA: 0x6AD1C34 Slot: 6
+	public int get_MinUnlockableBoost() { }
+
+	// RVA: 0x6AD1C3C Offset: 0x6ACDC3C VA: 0x6AD1C3C Slot: 7
+	public int get_MaxBoostIndicationThreshold() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6AD1C44 Offset: 0x6ACDC44 VA: 0x6AD1C44 Slot: 8
+	public PowerBoostMultiModesConfig get_Configuration() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6AD1C4C Offset: 0x6ACDC4C VA: 0x6AD1C4C
+	private void set_Configuration(PowerBoostMultiModesConfig value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6AD1C54 Offset: 0x6ACDC54 VA: 0x6AD1C54 Slot: 14
+	public int get_CurrentConfigLevel() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6AD1C5C Offset: 0x6ACDC5C VA: 0x6AD1C5C
+	private void set_CurrentConfigLevel(int value) { }
+
+	// RVA: 0x6AD1C64 Offset: 0x6ACDC64 VA: 0x6AD1C64 Slot: 10
+	public bool get_HasConfiguration() { }
+
+	// RVA: 0x6AD1CC0 Offset: 0x6ACDCC0 VA: 0x6AD1CC0 Slot: 9
+	public bool get_IsPowerBoostEnabled() { }
+
+	// RVA: 0x6AD1D88 Offset: 0x6ACDD88 VA: 0x6AD1D88 Slot: 11
+	public int get_LastGrantedBoostRemote() { }
+
+	// RVA: 0x6AD1DA0 Offset: 0x6ACDDA0 VA: 0x6AD1DA0 Slot: 4
+	public BindableProperty<int> get_CurrentPowerBoostMode() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6AD1DA8 Offset: 0x6ACDDA8 VA: 0x6AD1DA8 Slot: 12
+	public string get_EventId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6AD1DB0 Offset: 0x6ACDDB0 VA: 0x6AD1DB0
+	private void set_EventId(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6AD1DB8 Offset: 0x6ACDDB8 VA: 0x6AD1DB8 Slot: 13
+	public int get_EventIndex() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6AD1DC0 Offset: 0x6ACDDC0 VA: 0x6AD1DC0
+	private void set_EventIndex(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6AD1DC8 Offset: 0x6ACDDC8 VA: 0x6AD1DC8
+	private MutableBindableProperty<int> get_BoostMode() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6AD1DD0 Offset: 0x6ACDDD0 VA: 0x6AD1DD0
+	private void set_BoostMode(MutableBindableProperty<int> value) { }
+
+	// RVA: 0x6AD1DD8 Offset: 0x6ACDDD8 VA: 0x6AD1DD8 Slot: 22
+	public void Initialize() { }
+
+	// RVA: 0x6AD1E58 Offset: 0x6ACDE58 VA: 0x6AD1E58 Slot: 15
+	public void UpdateConfiguration(string eventId, int eventIndex, int configLevel, PowerBoostMultiModesConfig configuration) { }
+
+	// RVA: 0x6AD1EA4 Offset: 0x6ACDEA4 VA: 0x6AD1EA4 Slot: 17
+	public void SetPowerBoostMode(int mode) { }
+
+	// RVA: 0x6AD1F3C Offset: 0x6ACDF3C VA: 0x6AD1F3C Slot: 18
+	public void SetPowerBoostModeAndNotify(int mode) { }
+
+	// RVA: 0x6AD1FD4 Offset: 0x6ACDFD4 VA: 0x6AD1FD4 Slot: 16
+	public int GetEnergyThreshold(int boost) { }
+
+	// RVA: 0x6AD20F8 Offset: 0x6ACE0F8 VA: 0x6AD20F8 Slot: 19
+	public void OnStartUnlockPopup() { }
+
+	// RVA: 0x6AD2104 Offset: 0x6ACE104 VA: 0x6AD2104 Slot: 20
+	public void OnUnlockPopupOpened() { }
+
+	// RVA: 0x6AD210C Offset: 0x6ACE10C VA: 0x6AD210C Slot: 21
+	public bool IsUnlockPopupOpening() { }
+
+	// RVA: 0x6AD2114 Offset: 0x6ACE114 VA: 0x6AD2114
+	public void .ctor() { }
+}
+

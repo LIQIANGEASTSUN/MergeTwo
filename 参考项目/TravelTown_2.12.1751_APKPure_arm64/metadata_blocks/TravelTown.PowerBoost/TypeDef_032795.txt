@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class PowerBoostModel.<>c__DisplayClass40_0 // TypeDefIndex: 32795
+{
+	// Fields
+	public int boost; // 0x10
+
+	// Methods
+
+	// RVA: 0x6AD20F0 Offset: 0x6ACE0F0 VA: 0x6AD20F0
+	public void .ctor() { }
+
+	// RVA: 0x6AD211C Offset: 0x6ACE11C VA: 0x6AD211C
+	internal bool <GetEnergyThreshold>b__0(BoostModeConfig boostConfig) { }
+}
+

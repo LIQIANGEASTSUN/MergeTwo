@@ -1,0 +1,38 @@
+// Namespace: Paxie.MergeStudio.Features.MiniBoard
+public class MiniBoardItemControllerFactory // TypeDefIndex: 1133
+{
+	// Fields
+	private readonly CommonFactoryService _factoryService; // 0x8
+	private readonly ObjectPoolerBase _objectPool; // 0xC
+	private readonly Dictionary<Type, MiniBoardItemControllerModuleBase> _prefabsByType; // 0x10
+
+	// Methods
+
+	// RVA: 0x17C5EAC Offset: 0x17C5EAC VA: 0x17C5EAC
+	public void .ctor(CommonFactoryService factoryService, ObjectPoolerBase objectPool) { }
+
+	// RVA: -1 Offset: -1
+	public T GetItemModule<T>(MiniBoardItemController itemController, Transform parent) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2514AC0 Offset: 0x2514AC0 VA: 0x2514AC0
+	|-MiniBoardItemControllerFactory.GetItemModule<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	private MiniBoardItemControllerModuleBase GetPrefabForType<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2514D74 Offset: 0x2514D74 VA: 0x2514D74
+	|-MiniBoardItemControllerFactory.GetPrefabForType<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public void DestroyItemModule<T>(T module) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2514A1C Offset: 0x2514A1C VA: 0x2514A1C
+	|-MiniBoardItemControllerFactory.DestroyItemModule<object>
+	*/
+}
+

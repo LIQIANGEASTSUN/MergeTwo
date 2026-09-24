@@ -1,0 +1,30 @@
+// Namespace: Merger.TimeLimitedItems.Data
+[Serializable]
+public class TimeLimitedItemsCleanupPayload // TypeDefIndex: 32857
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly string <EventId>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly OperationNotificationData[] <BoardOperations>k__BackingField; // 0x18
+
+	// Properties
+	[JsonProperty("eventId")]
+	public string EventId { get; }
+	[JsonProperty("boardOperations", NullValueHandling = 1)]
+	public OperationNotificationData[] BoardOperations { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6B4DDE0 Offset: 0x6B49DE0 VA: 0x6B4DDE0
+	public string get_EventId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6B4DDE8 Offset: 0x6B49DE8 VA: 0x6B4DDE8
+	public OperationNotificationData[] get_BoardOperations() { }
+
+	// RVA: 0x6B4DC50 Offset: 0x6B49C50 VA: 0x6B4DC50
+	public void .ctor(string eventId, OperationNotificationData[] boardOperations) { }
+}
+

@@ -1,0 +1,9 @@
+// Namespace: MergeEngine.ECS.Systems.State.Board.Event
+public class EventBoardItemsStateSystem : BoardItemsStateSystem<EventBoardBoardItems> // TypeDefIndex: 784
+{
+	// Methods
+
+	// RVA: 0x64EAD54 Offset: 0x64E6D54 VA: 0x64EAD54
+	public void .ctor() { }
+}
+

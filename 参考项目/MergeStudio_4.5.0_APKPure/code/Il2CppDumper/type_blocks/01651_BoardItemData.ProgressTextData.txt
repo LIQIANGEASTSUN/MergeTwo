@@ -1,0 +1,11 @@
+// Namespace: 
+[Serializable]
+public struct BoardItemData.ProgressTextData // TypeDefIndex: 1651
+{
+	// Fields
+	public Vector3 position; // 0x0
+	public Vector3 rotation; // 0xC
+	public Vector2 rectSize; // 0x18
+	public Vector3 scale; // 0x20
+}
+

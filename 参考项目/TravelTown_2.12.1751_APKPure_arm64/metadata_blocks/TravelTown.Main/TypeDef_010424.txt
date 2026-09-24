@@ -1,0 +1,147 @@
+// Namespace: Framework.Core
+public class Base // TypeDefIndex: 10424
+{
+	// Fields
+	[Inject]
+	private IDataRouterService _dataRouterService; // 0x10
+	private bool _disposed; // 0x18
+	private SignalBus _signalBus; // 0x20
+
+	// Properties
+	[Inject]
+	protected SignalBus SignalBus { get; set; }
+
+	// Methods
+
+	// RVA: 0x68B2E64 Offset: 0x68AEE64 VA: 0x68B2E64
+	protected SignalBus get_SignalBus() { }
+
+	// RVA: 0x68B2E6C Offset: 0x68AEE6C VA: 0x68B2E6C
+	private void set_SignalBus(SignalBus value) { }
+
+	// RVA: 0x68B2E90 Offset: 0x68AEE90 VA: 0x68B2E90 Slot: 4
+	protected virtual void SubscribeToSignals() { }
+
+	// RVA: 0x68B2E94 Offset: 0x68AEE94 VA: 0x68B2E94 Slot: 5
+	protected virtual void UnsubscribeFromSignals() { }
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public void SubscribeToSignal<TSignal>(Action<TSignal> listener) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3BC70A8 Offset: 0x3BC30A8 VA: 0x3BC70A8
+	|-Base.SubscribeToSignal<object>
+	|
+	|-RVA: 0x3BC7160 Offset: 0x3BC3160 VA: 0x3BC7160
+	|-Base.SubscribeToSignal<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public void SubscribeToSignal<TSignal>(Action listener) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3BC7104 Offset: 0x3BC3104 VA: 0x3BC7104
+	|-Base.SubscribeToSignal<object>
+	|
+	|-RVA: 0x3BC71C0 Offset: 0x3BC31C0 VA: 0x3BC71C0
+	|-Base.SubscribeToSignal<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public void UnsubscribeFromSignal<TSignal>(Action<TSignal> listener) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3BC74C4 Offset: 0x3BC34C4 VA: 0x3BC74C4
+	|-Base.UnsubscribeFromSignal<object>
+	|
+	|-RVA: 0x3BC7564 Offset: 0x3BC3564 VA: 0x3BC7564
+	|-Base.UnsubscribeFromSignal<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public void UnsubscribeFromSignal<TSignal>(Action listener) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3BC7514 Offset: 0x3BC3514 VA: 0x3BC7514
+	|-Base.UnsubscribeFromSignal<object>
+	|
+	|-RVA: 0x3BC75B8 Offset: 0x3BC35B8 VA: 0x3BC75B8
+	|-Base.UnsubscribeFromSignal<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public void FireSignal<TSignal>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3BC6B28 Offset: 0x3BC2B28 VA: 0x3BC6B28
+	|-Base.FireSignal<object>
+	|
+	|-RVA: 0x3BC6B7C Offset: 0x3BC2B7C VA: 0x3BC6B7C
+	|-Base.FireSignal<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public void FireSignal<TSignal>(TSignal signal) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3BC6BD4 Offset: 0x3BC2BD4 VA: 0x3BC6BD4
+	|-Base.FireSignal<object>
+	|
+	|-RVA: 0x3BC6C30 Offset: 0x3BC2C30 VA: 0x3BC6C30
+	|-Base.FireSignal<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 12
+	public void TryFireSignal<TSignal>(TSignal signal) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3BC7220 Offset: 0x3BC3220 VA: 0x3BC7220
+	|-Base.TryFireSignal<object>
+	|
+	|-RVA: 0x3BC727C Offset: 0x3BC327C VA: 0x3BC727C
+	|-Base.TryFireSignal<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x68B2E98 Offset: 0x68AEE98 VA: 0x68B2E98 Slot: 13
+	public void Dispose() { }
+
+	// RVA: 0x68B2EF8 Offset: 0x68AEEF8 VA: 0x68B2EF8 Slot: 14
+	protected virtual void HandleDisposed() { }
+
+	// RVA: -1 Offset: -1
+	protected void Subscribe<T>(Action<T> listener) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3BC6F20 Offset: 0x3BC2F20 VA: 0x3BC6F20
+	|-Base.Subscribe<object>
+	|
+	|-RVA: 0x3BC6FE4 Offset: 0x3BC2FE4 VA: 0x3BC6FE4
+	|-Base.Subscribe<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void Unsubscribe<T>(Action<T> listener) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3BC7364 Offset: 0x3BC3364 VA: 0x3BC7364
+	|-Base.Unsubscribe<object>
+	|
+	|-RVA: 0x3BC7414 Offset: 0x3BC3414 VA: 0x3BC7414
+	|-Base.Unsubscribe<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void Publish<T>(T data) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3BC6D18 Offset: 0x3BC2D18 VA: 0x3BC6D18
+	|-Base.Publish<object>
+	|
+	|-RVA: 0x3BC6DDC Offset: 0x3BC2DDC VA: 0x3BC6DDC
+	|-Base.Publish<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x68B2EFC Offset: 0x68AEEFC VA: 0x68B2EFC
+	public void .ctor() { }
+}
+

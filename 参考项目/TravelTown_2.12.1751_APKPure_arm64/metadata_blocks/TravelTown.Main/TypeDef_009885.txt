@@ -1,0 +1,13 @@
+// Namespace: Merger.Services.Backend.Sync.Data.Payloads.Board
+public class ProducerInventorySlotBase // TypeDefIndex: 9885
+{
+	// Fields
+	public string status; // 0x10
+	public string flagStatus; // 0x18
+
+	// Methods
+
+	// RVA: 0x67CCABC Offset: 0x67C8ABC VA: 0x67CCABC
+	public void .ctor() { }
+}
+

@@ -1,0 +1,9 @@
+// Namespace: MergeEngine.ECS.Systems.Items.Producers.LowLevelItemProduce
+public interface ILowLevelProduceStrategy // TypeDefIndex: 993
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract bool TryGetProduceData(IItemSpawningComponent itemSpawningComponent, out LowLevelItemProduceData result);
+}
+

@@ -1,0 +1,49 @@
+Type: UnityBoardController+<>c__DisplayClass490_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03278774 ADD X0, X31, 0xF0
+	0x03278778 ADD X1, X31, 0x0
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void <AnimateAuxEnergyForEventsOnBoard>g__OnComplete|0()
+
+Disassembly:
+	0x0327877C BL 0x26AC14C
+	0x03278780 ADRP X21, 0x246D000
+	0x03278784 LDR X21, [X21 + 0xD10]
+	0x03278788 LDR V0, [X31]
+	0x0327878C LDR X0, [X21]
+	0x03278790 STR V0, [X31 + 0x12]
+	0x03278794 LDR W8, [X0 + 0xE4]
+	0x03278798 CBNZ W8, 0x32787A0
+	0x0327879C BL 0x239BA64
+	0x032787A0 ADRP X8, 0x246D000
+	0x032787A4 LDR X8, [X8 + 0xD08]
+	0x032787A8 LDR X2, [X8]
+	0x032787AC ADD X0, X31, 0x120
+
+ISIL:
+	001 Move [X31-16], X30
+	002 Move X8, [X0+16]
+	003 Compare X8, 0
+	004 JumpIfEqual {17}
+	005 Move X8, [X8+856]
+	006 Compare X8, 0
+	007 JumpIfEqual {17}
+	008 Move X8, [X8+200]
+	009 Compare X8, 0
+	010 JumpIfEqual {17}
+	011 Move X1, [X0+24]
+	012 Move X0, X8
+	013 Move X2, X31
+	014 Move X30, [X31+16]
+	015 Call BoardViewEventHandler.UpdateCardForPriorityChanges, X0, X1
+	016 Return 
+	017 Call 0x239FB90
+

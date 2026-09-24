@@ -1,0 +1,9 @@
+// Namespace: Paxie.MergeStudio.Features.MiniBoard
+public class BaseMiniBoardRewardEvent // TypeDefIndex: 1072
+{
+	// Methods
+
+	// RVA: 0x17AD1B4 Offset: 0x17AD1B4 VA: 0x17AD1B4
+	public void .ctor() { }
+}
+

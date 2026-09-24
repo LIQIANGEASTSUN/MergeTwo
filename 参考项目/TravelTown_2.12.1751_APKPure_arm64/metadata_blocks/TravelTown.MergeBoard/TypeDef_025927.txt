@@ -1,0 +1,13 @@
+// Namespace: Merger.MergeBoard.Data
+public class ItemSelectionBoxTransformData // TypeDefIndex: 25927
+{
+	// Fields
+	public IMergeItem FromMergeItem; // 0x10
+	public IMergeItem ToMergeItem; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A9A108 Offset: 0x6A96108 VA: 0x6A9A108
+	public void .ctor() { }
+}
+

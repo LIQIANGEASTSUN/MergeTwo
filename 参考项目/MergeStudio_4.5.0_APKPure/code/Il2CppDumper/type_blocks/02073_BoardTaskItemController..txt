@@ -1,0 +1,20 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardTaskItemController.<>c__DisplayClass126_0 // TypeDefIndex: 2073
+{
+	// Fields
+	public BoardTaskItemController <>4__this; // 0x8
+	public TaskEvent.TaskLastCoinOut e; // 0xC
+
+	// Methods
+
+	// RVA: 0x1974CD8 Offset: 0x1974CD8 VA: 0x1974CD8
+	public void .ctor() { }
+
+	// RVA: 0x1975568 Offset: 0x1975568 VA: 0x1975568
+	internal void <OnEvent>b__0() { }
+
+	// RVA: 0x19755A0 Offset: 0x19755A0 VA: 0x19755A0
+	internal void <OnEvent>b__1() { }
+}
+

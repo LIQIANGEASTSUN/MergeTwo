@@ -1,0 +1,16 @@
+Type: Code.GameLogic.GameEvents.IBubbleBonusEvent
+
+Method: System.Nullable`1<Metaplay.Core.Math.F32> get_BubbleBonusDivisor()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.List`1<Code.GameLogic.GameEvents.BubbleBonusInfo> get_SecondaryBoardBubbleBonus()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

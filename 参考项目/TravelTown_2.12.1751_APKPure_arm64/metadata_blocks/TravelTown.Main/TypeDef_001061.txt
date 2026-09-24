@@ -1,0 +1,34 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public interface ICollectableComponent // TypeDefIndex: 1061
+{
+	// Properties
+	public abstract bool Collected { get; set; }
+	public abstract AfterCollectAnimation AfterCollectAnimation { get; }
+	public abstract Reward CollectableReward { get; }
+	public abstract bool ShouldRemoveFromBoard { get; set; }
+	public abstract bool IsPlaygroundPoints { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract bool get_Collected();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void set_Collected(bool value);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract AfterCollectAnimation get_AfterCollectAnimation();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract Reward get_CollectableReward();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract bool get_ShouldRemoveFromBoard();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract void set_ShouldRemoveFromBoard(bool value);
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract bool get_IsPlaygroundPoints();
+}
+

@@ -1,0 +1,43 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class RepositoryBase.<>c__DisplayClass38_0<TPayload, TResponse> // TypeDefIndex: 10916
+{
+	// Fields
+	public Promise<TResponse> promise; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F58054 Offset: 0x3F54054 VA: 0x3F58054
+	|-RepositoryBase.<>c__DisplayClass38_0<object, object>..ctor
+	|
+	|-RVA: 0x3F5809C Offset: 0x3F5409C VA: 0x3F5809C
+	|-RepositoryBase.<>c__DisplayClass38_0<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal void <WebsocketRequest>b__0(TResponse response) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F5805C Offset: 0x3F5405C VA: 0x3F5805C
+	|-RepositoryBase.<>c__DisplayClass38_0<object, object>.<WebsocketRequest>b__0
+	|
+	|-RVA: 0x3F580A4 Offset: 0x3F540A4 VA: 0x3F580A4
+	|-RepositoryBase.<>c__DisplayClass38_0<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.<WebsocketRequest>b__0
+	*/
+
+	// RVA: -1 Offset: -1
+	internal void <WebsocketRequest>b__1(Exception exception) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F58080 Offset: 0x3F54080 VA: 0x3F58080
+	|-RepositoryBase.<>c__DisplayClass38_0<object, object>.<WebsocketRequest>b__1
+	|
+	|-RVA: 0x3F58168 Offset: 0x3F54168 VA: 0x3F58168
+	|-RepositoryBase.<>c__DisplayClass38_0<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.<WebsocketRequest>b__1
+	*/
+}
+

@@ -1,0 +1,45 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoosterService.<>c__DisplayClass40_0<TData, TResultData> // TypeDefIndex: 7760
+{
+	// Fields
+	public BoosterService <>4__this; // 0x0
+	public string uuId; // 0x0
+	public Func<BoosterIdComponent, bool> <>9__2; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4B09DEC Offset: 0x4B05DEC VA: 0x4B09DEC
+	|-BoosterService.<>c__DisplayClass40_0<object, object>..ctor
+	|
+	|-RVA: 0x4B0A054 Offset: 0x4B06054 VA: 0x4B0A054
+	|-BoosterService.<>c__DisplayClass40_0<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal void <InteractWithBooster>b__0(BoosterInteractResponse<TResultData> response) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4B09DF4 Offset: 0x4B05DF4 VA: 0x4B09DF4
+	|-BoosterService.<>c__DisplayClass40_0<object, object>.<InteractWithBooster>b__0
+	|
+	|-RVA: 0x4B0A05C Offset: 0x4B0605C VA: 0x4B0A05C
+	|-BoosterService.<>c__DisplayClass40_0<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.<InteractWithBooster>b__0
+	*/
+
+	// RVA: -1 Offset: -1
+	internal bool <InteractWithBooster>b__2(BoosterIdComponent b) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4B09FF4 Offset: 0x4B05FF4 VA: 0x4B09FF4
+	|-BoosterService.<>c__DisplayClass40_0<object, object>.<InteractWithBooster>b__2
+	|
+	|-RVA: 0x4B0A338 Offset: 0x4B06338 VA: 0x4B0A338
+	|-BoosterService.<>c__DisplayClass40_0<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.<InteractWithBooster>b__2
+	*/
+}
+

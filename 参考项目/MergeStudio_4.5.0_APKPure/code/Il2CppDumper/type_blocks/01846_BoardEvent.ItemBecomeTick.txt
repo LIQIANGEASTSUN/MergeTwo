@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BoardEvent.ItemBecomeTick : IEvent // TypeDefIndex: 1846
+{
+	// Fields
+	public ItemController Item; // 0x0
+}
+

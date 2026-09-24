@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class InteractionSystem.<>c__DisplayClass6_0 // TypeDefIndex: 25746
+{
+	// Fields
+	public InteractionSystem <>4__this; // 0x10
+	public ItemMultiple itemToConsume; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A6BBC4 Offset: 0x6A67BC4 VA: 0x6A6BBC4
+	public void .ctor() { }
+
+	// RVA: 0x6A6BCD0 Offset: 0x6A67CD0 VA: 0x6A6BCD0
+	internal bool <GetDefaultEntityUuidToConsume>b__0(Entity entity) { }
+}
+

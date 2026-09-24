@@ -1,0 +1,30 @@
+Type: GameLogic.Player.Requirements.MergeChainItemNeededRequirement+<>c__DisplayClass16_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03599660 BL 0x248B7AC
+	0x03599664 BL 0x21B9790
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Collections.Generic.IEnumerable`1<System.Collections.Generic.IEnumerable`1<GameLogic.Player.Items.IItemDefinition>> <Matches>b__0(GameLogic.Player.MergeTasks.MergeTask task)
+
+Disassembly:
+	0x035997D0 MOV X0, X22
+	0x035997D4 MOV X1, X21
+	0x035997D8 BL 0x239B888
+	0x035997DC STP X20, X19, [X22 + 0x8]
+	0x035997E0 LDP X20, X19, [X31 + 0x20]
+
+ISIL:
+	001 Move X8, [X0+16]
+	002 Move X0, X1
+	003 Move X2, X31
+	004 Move X1, X8
+	005 Call MergeTaskExtensions.RequiresItems, X0, X1
+	006 Return X0
+

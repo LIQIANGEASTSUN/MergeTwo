@@ -1,0 +1,67 @@
+// Namespace: Framework.Core.MVVM.ViewModel
+public class ViewModelBase : NavigationViewModel, IViewModelBase // TypeDefIndex: 11215
+{
+	// Fields
+	[Inject]
+	private IAssetManager _assetManager; // 0x40
+	[Inject]
+	private IAssetOverrideMappingModel _assetOverrideMappingModel; // 0x48
+	[Inject]
+	private DiContainer _container; // 0x50
+	[Inject]
+	private ISafeAreaModel _safeAreaModel; // 0x58
+	private readonly HashSet<Object> _loadedAssets; // 0x60
+
+	// Properties
+	public BindableProperty<Rect> SafeArea { get; }
+	protected DiContainer Container { get; }
+
+	// Methods
+
+	// RVA: 0x694B4B8 Offset: 0x69474B8 VA: 0x694B4B8 Slot: 34
+	public BindableProperty<Rect> get_SafeArea() { }
+
+	// RVA: 0x694B558 Offset: 0x6947558 VA: 0x694B558
+	protected DiContainer get_Container() { }
+
+	// RVA: 0x694B560 Offset: 0x6947560 VA: 0x694B560 Slot: 40
+	public IPromise<GameObject> InstantiatePrefab(IAsset assetDefinition, Transform parent, DiContainer container) { }
+
+	// RVA: -1 Offset: -1
+	private IPromise<T> GetFailedPromise<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3E2F6B0 Offset: 0x3E2B6B0 VA: 0x3E2F6B0
+	|-ViewModelBase.GetFailedPromise<object>
+	*/
+
+	// RVA: 0x694B838 Offset: 0x6947838 VA: 0x694B838
+	private bool IsAssetInvalid(IAsset assetDefinition) { }
+
+	// RVA: -1 Offset: -1 Slot: 41
+	public IPromise<T> LoadAssetAsync<T>(IAsset assetDefinition) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3E2F83C Offset: 0x3E2B83C VA: 0x3E2F83C
+	|-ViewModelBase.LoadAssetAsync<object>
+	*/
+
+	// RVA: 0x694B8E4 Offset: 0x69478E4 VA: 0x694B8E4
+	private void OnAssetLoaded(Object obj) { }
+
+	// RVA: 0x694B93C Offset: 0x694793C VA: 0x694B93C Slot: 42
+	public void UnloadAllAssets() { }
+
+	// RVA: 0x694BB8C Offset: 0x6947B8C VA: 0x694BB8C Slot: 43
+	public void UnloadAsset(Object asset) { }
+
+	// RVA: 0x694BC78 Offset: 0x6947C78 VA: 0x694BC78 Slot: 44
+	public GameObject InstantiateInjected(GameObject original, Transform parent, bool worldPositionStays = False) { }
+
+	// RVA: 0x694BC94 Offset: 0x6947C94 VA: 0x694BC94 Slot: 45
+	public void RequestAssetOverrideTransition(Asset localAsset, IAsset remoteAsset, string transition, object payload) { }
+
+	// RVA: 0x694B430 Offset: 0x6947430 VA: 0x694B430
+	public void .ctor() { }
+}
+

@@ -1,0 +1,16 @@
+// Namespace: Merger.MergeBoard.PowerBoost.Systems
+public class PowerBoostDecorator : IBoardControllerDecorator // TypeDefIndex: 32774
+{
+	// Fields
+	[Inject]
+	private DiContainer _container; // 0x10
+
+	// Methods
+
+	// RVA: 0x6ACCCA8 Offset: 0x6AC8CA8 VA: 0x6ACCCA8 Slot: 4
+	public void DecorateSystems(SystemsBuilder systemsBuilder) { }
+
+	// RVA: 0x6ACCD28 Offset: 0x6AC8D28 VA: 0x6ACCD28
+	public void .ctor() { }
+}
+

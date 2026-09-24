@@ -1,0 +1,23 @@
+// Namespace: Merger.Boosters.Declarations.Capabilities
+[Serializable]
+public class MergeItemCapability : CapabilityBase // TypeDefIndex: 7856
+{
+	// Fields
+	[JsonProperty("mergeItemRef")]
+	public MergeItemWeakReference MergeItemReference; // 0x18
+	[JsonIgnore]
+	public MergeItemSpawnBehaviour SpawnBehaviour; // 0x20
+
+	// Properties
+	[JsonProperty("spawnBehaviour")]
+	private string SerializedSpawnBehaviour { set; }
+
+	// Methods
+
+	// RVA: 0x65C9964 Offset: 0x65C5964 VA: 0x65C9964
+	private void set_SerializedSpawnBehaviour(string value) { }
+
+	// RVA: 0x65C99FC Offset: 0x65C59FC VA: 0x65C99FC
+	public void .ctor() { }
+}
+

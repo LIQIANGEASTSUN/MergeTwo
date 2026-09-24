@@ -1,0 +1,90 @@
+// Namespace: MergeEngine.Configuration
+public abstract class ItemBase : ConfigurableScriptableObject, IItem, IUniqueStringKeyAsset // TypeDefIndex: 1180
+{
+	// Fields
+	[SerializeField]
+	[JsonProperty("spriteAsset")]
+	private string _spriteAsset; // 0x70
+	[JsonIgnore]
+	private RemoteSpriteLocation _sprite; // 0x78
+	[SerializeField]
+	[LocalisationIdentifier(Required = False)]
+	private string _itemName; // 0x80
+	[CompilerGenerated]
+	private bool <AutoOpenTooltip>k__BackingField; // 0x88
+	[SerializeField]
+	private BoardQueueOrderCapability _boardQueueOrder; // 0x90
+	[CompilerGenerated]
+	private RemoteContentBundleHandle <BundleHandle>k__BackingField; // 0x98
+	[CompilerGenerated]
+	private IItemInfoData <ItemInfoData>k__BackingField; // 0xA0
+
+	// Properties
+	[JsonIgnore]
+	public AssetReferenceT<Sprite> Sprite { get; }
+	[JsonIgnore]
+	public bool AutoOpenTooltip { get; set; }
+	public string ItemName { get; }
+	[JsonIgnore]
+	public string BundleAssetUrl { get; }
+	public BoardQueueOrderCapability BoardQueueOrder { get; }
+	[JsonIgnore]
+	public RemoteContentBundleHandle BundleHandle { get; set; }
+	public IItemInfoData ItemInfoData { get; set; }
+	protected abstract string LocalSpritesPath { get; }
+	protected abstract string SpriteLocatorUniqueId { get; }
+
+	// Methods
+
+	// RVA: 0x6912B64 Offset: 0x690EB64 VA: 0x6912B64 Slot: 12
+	public AssetReferenceT<Sprite> get_Sprite() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6912C3C Offset: 0x690EC3C VA: 0x6912C3C Slot: 16
+	public bool get_AutoOpenTooltip() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6912C44 Offset: 0x690EC44 VA: 0x6912C44 Slot: 17
+	public void set_AutoOpenTooltip(bool value) { }
+
+	// RVA: 0x6912C50 Offset: 0x690EC50 VA: 0x6912C50 Slot: 10
+	public string get_ItemName() { }
+
+	// RVA: 0x6912C58 Offset: 0x690EC58 VA: 0x6912C58 Slot: 11
+	public string get_BundleAssetUrl() { }
+
+	// RVA: 0x6912C60 Offset: 0x690EC60 VA: 0x6912C60 Slot: 13
+	public BoardQueueOrderCapability get_BoardQueueOrder() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6912C68 Offset: 0x690EC68 VA: 0x6912C68
+	public RemoteContentBundleHandle get_BundleHandle() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6912C70 Offset: 0x690EC70 VA: 0x6912C70
+	public void set_BundleHandle(RemoteContentBundleHandle value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6912C7C Offset: 0x690EC7C VA: 0x6912C7C Slot: 14
+	public IItemInfoData get_ItemInfoData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6912C84 Offset: 0x690EC84 VA: 0x6912C84 Slot: 15
+	public void set_ItemInfoData(IItemInfoData value) { }
+
+	// RVA: -1 Offset: -1 Slot: 18
+	protected abstract string get_LocalSpritesPath();
+
+	// RVA: -1 Offset: -1 Slot: 19
+	protected abstract string get_SpriteLocatorUniqueId();
+
+	// RVA: 0x6912BA4 Offset: 0x690EBA4 VA: 0x6912BA4
+	private RemoteSpriteLocation GetParsedSpriteLocation() { }
+
+	// RVA: 0x6912C8C Offset: 0x690EC8C VA: 0x6912C8C Slot: 20
+	public void SetAsLocalSprite() { }
+
+	// RVA: 0x6912CFC Offset: 0x690ECFC VA: 0x6912CFC
+	protected void .ctor() { }
+}
+

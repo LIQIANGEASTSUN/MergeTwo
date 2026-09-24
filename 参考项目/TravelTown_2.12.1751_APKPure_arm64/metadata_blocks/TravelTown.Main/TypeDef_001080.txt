@@ -1,0 +1,307 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public class LockedComponent : RemoteLoadedComponent<LockedCapability, SerializedLockedComponent, SerializedLockedComponent>, ILocked, ILockedComponent // TypeDefIndex: 1080
+{
+	// Fields
+	public const string Key = "locked";
+	[CompilerGenerated]
+	private bool <Locked>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private bool <Bubbled>k__BackingField; // 0x31
+	[CompilerGenerated]
+	private bool <Meteor>k__BackingField; // 0x32
+	[CompilerGenerated]
+	private bool <Boxed>k__BackingField; // 0x33
+	[CompilerGenerated]
+	private UnboxingType <UnboxingType>k__BackingField; // 0x34
+	[CompilerGenerated]
+	private int <InteractionAmount>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private int <TotalInteractionAmount>k__BackingField; // 0x3C
+	[CompilerGenerated]
+	private PlayerResourceEnum <InteractionResource>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private int <LevelLock>k__BackingField; // 0x44
+	[CompilerGenerated]
+	private double <BubbleTimeLeft>k__BackingField; // 0x48
+	[CompilerGenerated]
+	private long <MeteorEndTime>k__BackingField; // 0x50
+	[CompilerGenerated]
+	private long <MeteorDuration>k__BackingField; // 0x58
+	[CompilerGenerated]
+	private string <MeteorCycleId>k__BackingField; // 0x60
+	[CompilerGenerated]
+	private int <MeteorLocationItemIndex>k__BackingField; // 0x68
+	[CompilerGenerated]
+	private bool <BubbleModifiedByStateLoad>k__BackingField; // 0x6C
+	[CompilerGenerated]
+	private int <BlasterableTier>k__BackingField; // 0x70
+	[CompilerGenerated]
+	private bool <LockedByTutorial>k__BackingField; // 0x74
+	[CompilerGenerated]
+	private bool <DragLockedByTutorial>k__BackingField; // 0x75
+	[CompilerGenerated]
+	private bool <InteractionLockedByTutorial>k__BackingField; // 0x76
+	[CompilerGenerated]
+	private bool <LockedByInteraction>k__BackingField; // 0x77
+	[CompilerGenerated]
+	private bool <LockedByNetworkOperation>k__BackingField; // 0x78
+	[CompilerGenerated]
+	private bool <LockedByFlyingAnimation>k__BackingField; // 0x79
+	public bool BubbleExpiringBlocked; // 0x7A
+
+	// Properties
+	public override string ComponentKey { get; }
+	public bool Locked { get; set; }
+	public bool Bubbled { get; set; }
+	public bool Meteor { get; set; }
+	public bool Boxed { get; set; }
+	public UnboxingType UnboxingType { get; set; }
+	public int InteractionAmount { get; set; }
+	public int TotalInteractionAmount { get; set; }
+	public PlayerResourceEnum InteractionResource { get; set; }
+	public bool LockedByLevel { get; }
+	public int LevelLock { get; set; }
+	public double BubbleTimeLeft { get; set; }
+	public long MeteorEndTime { get; set; }
+	public long MeteorDuration { get; set; }
+	public string MeteorCycleId { get; set; }
+	public int MeteorLocationItemIndex { get; set; }
+	public bool BubbleModifiedByStateLoad { get; set; }
+	public int BlasterableTier { get; set; }
+	public bool IsBlasterable { get; }
+	public bool LockedByTutorial { get; set; }
+	public bool DragLockedByTutorial { get; set; }
+	public bool InteractionLockedByTutorial { get; set; }
+	public bool LockedByInteraction { get; set; }
+	public bool LockedByNetworkOperation { get; set; }
+	public bool LockedByFlyingAnimation { get; set; }
+	public bool AnyLock { get; }
+	public bool OnlyLock { get; }
+	public bool AnyMergePreventingLock { get; }
+	public bool BoxedLockedOrLockedByTutorial { get; }
+	public bool InteractionLocked { get; }
+	public bool DragLocked { get; }
+	public bool StartDraggingLocked { get; }
+	public bool BubbleExpirationBlocked { get; }
+
+	// Methods
+
+	// RVA: 0x68FD528 Offset: 0x68F9528 VA: 0x68FD528 Slot: 11
+	public override string get_ComponentKey() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD568 Offset: 0x68F9568 VA: 0x68FD568 Slot: 32
+	public bool get_Locked() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD570 Offset: 0x68F9570 VA: 0x68FD570
+	public void set_Locked(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD57C Offset: 0x68F957C VA: 0x68FD57C Slot: 33
+	public bool get_Bubbled() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD584 Offset: 0x68F9584 VA: 0x68FD584
+	public void set_Bubbled(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD590 Offset: 0x68F9590 VA: 0x68FD590 Slot: 44
+	public bool get_Meteor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD598 Offset: 0x68F9598 VA: 0x68FD598
+	public void set_Meteor(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD5A4 Offset: 0x68F95A4 VA: 0x68FD5A4 Slot: 34
+	public bool get_Boxed() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD5AC Offset: 0x68F95AC VA: 0x68FD5AC
+	public void set_Boxed(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD5B8 Offset: 0x68F95B8 VA: 0x68FD5B8
+	public UnboxingType get_UnboxingType() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD5C0 Offset: 0x68F95C0 VA: 0x68FD5C0
+	public void set_UnboxingType(UnboxingType value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD5C8 Offset: 0x68F95C8 VA: 0x68FD5C8
+	public int get_InteractionAmount() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD5D0 Offset: 0x68F95D0 VA: 0x68FD5D0
+	public void set_InteractionAmount(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD5D8 Offset: 0x68F95D8 VA: 0x68FD5D8
+	public int get_TotalInteractionAmount() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD5E0 Offset: 0x68F95E0 VA: 0x68FD5E0
+	public void set_TotalInteractionAmount(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD5E8 Offset: 0x68F95E8 VA: 0x68FD5E8
+	public PlayerResourceEnum get_InteractionResource() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD5F0 Offset: 0x68F95F0 VA: 0x68FD5F0
+	public void set_InteractionResource(PlayerResourceEnum value) { }
+
+	// RVA: 0x68FD5F8 Offset: 0x68F95F8 VA: 0x68FD5F8 Slot: 35
+	public bool get_LockedByLevel() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD608 Offset: 0x68F9608 VA: 0x68FD608 Slot: 36
+	public int get_LevelLock() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD610 Offset: 0x68F9610 VA: 0x68FD610
+	public void set_LevelLock(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD618 Offset: 0x68F9618 VA: 0x68FD618 Slot: 37
+	public double get_BubbleTimeLeft() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD620 Offset: 0x68F9620 VA: 0x68FD620 Slot: 26
+	public void set_BubbleTimeLeft(double value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD628 Offset: 0x68F9628 VA: 0x68FD628 Slot: 45
+	public long get_MeteorEndTime() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD630 Offset: 0x68F9630 VA: 0x68FD630 Slot: 46
+	public void set_MeteorEndTime(long value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD638 Offset: 0x68F9638 VA: 0x68FD638 Slot: 47
+	public long get_MeteorDuration() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD640 Offset: 0x68F9640 VA: 0x68FD640 Slot: 48
+	public void set_MeteorDuration(long value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD648 Offset: 0x68F9648 VA: 0x68FD648 Slot: 49
+	public string get_MeteorCycleId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD650 Offset: 0x68F9650 VA: 0x68FD650 Slot: 50
+	public void set_MeteorCycleId(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD658 Offset: 0x68F9658 VA: 0x68FD658 Slot: 51
+	public int get_MeteorLocationItemIndex() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD660 Offset: 0x68F9660 VA: 0x68FD660 Slot: 52
+	public void set_MeteorLocationItemIndex(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD668 Offset: 0x68F9668 VA: 0x68FD668
+	public bool get_BubbleModifiedByStateLoad() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD670 Offset: 0x68F9670 VA: 0x68FD670
+	public void set_BubbleModifiedByStateLoad(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD67C Offset: 0x68F967C VA: 0x68FD67C Slot: 30
+	public int get_BlasterableTier() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD684 Offset: 0x68F9684 VA: 0x68FD684 Slot: 31
+	public void set_BlasterableTier(int value) { }
+
+	// RVA: 0x68FD68C Offset: 0x68F968C VA: 0x68FD68C
+	public bool get_IsBlasterable() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD69C Offset: 0x68F969C VA: 0x68FD69C Slot: 21
+	public bool get_LockedByTutorial() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD6A4 Offset: 0x68F96A4 VA: 0x68FD6A4
+	public void set_LockedByTutorial(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD6B0 Offset: 0x68F96B0 VA: 0x68FD6B0
+	public bool get_DragLockedByTutorial() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD6B8 Offset: 0x68F96B8 VA: 0x68FD6B8
+	public void set_DragLockedByTutorial(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD6C4 Offset: 0x68F96C4 VA: 0x68FD6C4
+	public bool get_InteractionLockedByTutorial() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD6CC Offset: 0x68F96CC VA: 0x68FD6CC
+	public void set_InteractionLockedByTutorial(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD6D8 Offset: 0x68F96D8 VA: 0x68FD6D8
+	public bool get_LockedByInteraction() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD6E0 Offset: 0x68F96E0 VA: 0x68FD6E0 Slot: 38
+	public void set_LockedByInteraction(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD6EC Offset: 0x68F96EC VA: 0x68FD6EC Slot: 28
+	public bool get_LockedByNetworkOperation() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD6F4 Offset: 0x68F96F4 VA: 0x68FD6F4 Slot: 29
+	public void set_LockedByNetworkOperation(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD700 Offset: 0x68F9700 VA: 0x68FD700 Slot: 39
+	public bool get_LockedByFlyingAnimation() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FD708 Offset: 0x68F9708 VA: 0x68FD708 Slot: 40
+	public void set_LockedByFlyingAnimation(bool value) { }
+
+	// RVA: 0x68FD714 Offset: 0x68F9714 VA: 0x68FD714 Slot: 41
+	public bool get_AnyLock() { }
+
+	// RVA: 0x68FD760 Offset: 0x68F9760 VA: 0x68FD760 Slot: 42
+	public bool get_OnlyLock() { }
+
+	// RVA: 0x68FD7AC Offset: 0x68F97AC VA: 0x68FD7AC
+	public bool get_AnyMergePreventingLock() { }
+
+	// RVA: 0x68FD7E8 Offset: 0x68F97E8 VA: 0x68FD7E8
+	public bool get_BoxedLockedOrLockedByTutorial() { }
+
+	// RVA: 0x68FD814 Offset: 0x68F9814 VA: 0x68FD814 Slot: 23
+	public bool get_InteractionLocked() { }
+
+	// RVA: 0x68FD83C Offset: 0x68F983C VA: 0x68FD83C Slot: 43
+	public bool get_DragLocked() { }
+
+	// RVA: 0x68FD878 Offset: 0x68F9878 VA: 0x68FD878
+	public bool get_StartDraggingLocked() { }
+
+	// RVA: 0x68FD8C4 Offset: 0x68F98C4 VA: 0x68FD8C4
+	public bool get_BubbleExpirationBlocked() { }
+
+	// RVA: 0x68FD8E4 Offset: 0x68F98E4 VA: 0x68FD8E4
+	public void .ctor(LockedCapability locked, Entity entity) { }
+
+	// RVA: 0x68FD988 Offset: 0x68F9988 VA: 0x68FD988 Slot: 15
+	public override void LoadComponent(SerializedLockedComponent componentData) { }
+
+	// RVA: 0x68FDA14 Offset: 0x68F9A14 VA: 0x68FDA14 Slot: 12
+	protected override void OnBeforeSerialize() { }
+}
+

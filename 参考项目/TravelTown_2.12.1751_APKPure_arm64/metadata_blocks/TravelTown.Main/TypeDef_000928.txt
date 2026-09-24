@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemCountSystem.<>c__DisplayClass15_0 // TypeDefIndex: 928
+{
+	// Fields
+	public string itemId; // 0x10
+
+	// Methods
+
+	// RVA: 0x666D72C Offset: 0x666972C VA: 0x666D72C
+	public void .ctor() { }
+
+	// RVA: 0x666D800 Offset: 0x6669800 VA: 0x666D800
+	internal bool <GetItemCountById>b__0(KeyValuePair<IMergeItem, int> data) { }
+}
+

@@ -1,0 +1,107 @@
+// Namespace: MergePuzzle
+public class CommonFactoryService : MonoBehaviour // TypeDefIndex: 2658
+{
+	// Fields
+	[SerializeField]
+	[BoxGroup("Pool")]
+	private ObjectPoolerBase ObjectPool; // 0x10
+	[Foldout("Warning Text")]
+	[SerializeField]
+	private WarningText WarningTextPrefab; // 0x14
+	[Foldout("Item Controller")]
+	public SpawnerClockController ItemSpawnerClockPrefab; // 0x18
+	[Foldout("Item Controller")]
+	public ItemControllerDialogue ItemDialoguePrefab; // 0x1C
+	[Foldout("Item Controller")]
+	public ItemControllerTick ItemTickPrefab; // 0x20
+	[Foldout("Item Controller")]
+	public ItemControllerProgressBar ItemProgressBarPrefab; // 0x24
+	[Foldout("Item Controller")]
+	public ItemControllerMaxBadge ItemMaxBadgePrefab; // 0x28
+	[Foldout("Item Controller")]
+	public ItemControllerDebug ItemDebugPrefab; // 0x2C
+	[Foldout("Item Controller")]
+	public ItemControllerBox ItemBoxPrefab; // 0x30
+	[Foldout("Item Controller")]
+	public ItemControllerLock ItemLockPrefab; // 0x34
+	[Foldout("Item Controller")]
+	public ItemControllerTreasureBoxUnlock ItemTreasureBoxUnlockPrefab; // 0x38
+	[Foldout("Item Controller")]
+	public ItemControllerSpawnerEnergy ItemSpawnerEnergyPrefab; // 0x3C
+	[Foldout("Item Controller")]
+	public ItemControllerProgressText ItemProgressTextPrefab; // 0x40
+	[Foldout("Item Controller")]
+	public ItemControllerTreasureBoxOpenSprite ItemTreasureBoxOpenSpritePrefab; // 0x44
+	[Foldout("Item Controller")]
+	public ItemControllerTreasureBoxOpened ItemTreasureBoxOpenedPrefab; // 0x48
+	[Foldout("Item Controller")]
+	public ItemControllerBubble ItemBubblePrefab; // 0x4C
+	[Foldout("Mini Board Item Controller")]
+	public MiniBoardItemControllerBox MiniBoardItemBoxPrefab; // 0x50
+	[Foldout("Mini Board Item Controller")]
+	public MiniBoardItemControllerDebug MiniBoardItemDebugPrefab; // 0x54
+	[Foldout("Mini Board Item Controller")]
+	public MiniBoardItemControllerLock MiniBoardItemLockPrefab; // 0x58
+	[Foldout("Mini Board Item Controller")]
+	public MiniBoardItemControllerMaxBadge MiniBoardItemMaxBadgePrefab; // 0x5C
+	[Foldout("Mini Board Item Controller")]
+	public MiniBoardItemControllerRewardIcon MiniBoardItemRewardIconPrefab; // 0x60
+	[Foldout("Mini Board Item Controller")]
+	public MiniBoardItemControllerRewardHolderIcon MiniBoardItemRewardHolderIconPrefab; // 0x64
+	[CompilerGenerated]
+	private WarningTextFactory <WarningTextFactory>k__BackingField; // 0x68
+	[CompilerGenerated]
+	private ItemControllerFactory <ItemControllerFactory>k__BackingField; // 0x6C
+	[CompilerGenerated]
+	private MiniBoardItemControllerFactory <MiniBoardItemControllerFactory>k__BackingField; // 0x70
+
+	// Properties
+	public WarningTextFactory WarningTextFactory { get; set; }
+	public ItemControllerFactory ItemControllerFactory { get; set; }
+	public MiniBoardItemControllerFactory MiniBoardItemControllerFactory { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x1A512CC Offset: 0x1A512CC VA: 0x1A512CC
+	public WarningTextFactory get_WarningTextFactory() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1A512D4 Offset: 0x1A512D4 VA: 0x1A512D4
+	private void set_WarningTextFactory(WarningTextFactory value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1A512DC Offset: 0x1A512DC VA: 0x1A512DC
+	public ItemControllerFactory get_ItemControllerFactory() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1A512E4 Offset: 0x1A512E4 VA: 0x1A512E4
+	private void set_ItemControllerFactory(ItemControllerFactory value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1A512EC Offset: 0x1A512EC VA: 0x1A512EC
+	public MiniBoardItemControllerFactory get_MiniBoardItemControllerFactory() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1A512F4 Offset: 0x1A512F4 VA: 0x1A512F4
+	private void set_MiniBoardItemControllerFactory(MiniBoardItemControllerFactory value) { }
+
+	// RVA: 0x1A512FC Offset: 0x1A512FC VA: 0x1A512FC
+	public void Initialize() { }
+
+	// RVA: 0x1A51418 Offset: 0x1A51418 VA: 0x1A51418
+	private void InitObjectPool() { }
+
+	// RVA: 0x1A52924 Offset: 0x1A52924 VA: 0x1A52924
+	public void CheckNull() { }
+
+	// RVA: 0x1A5161C Offset: 0x1A5161C VA: 0x1A5161C
+	private void AddItemPoolModules(List<PoolableType> poolableTypes) { }
+
+	// RVA: 0x1A52324 Offset: 0x1A52324 VA: 0x1A52324
+	private void AddMiniBoardItemPoolModules(List<PoolableType> poolableTypes) { }
+
+	// RVA: 0x1A52948 Offset: 0x1A52948 VA: 0x1A52948
+	public void .ctor() { }
+}
+

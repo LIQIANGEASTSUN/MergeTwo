@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemSpawningQueue.<>c__DisplayClass17_1 // TypeDefIndex: 97
+{
+	// Fields
+	public ConsumedItemToProducedItemMapping item; // 0x10
+
+	// Methods
+
+	// RVA: 0x5FEAE84 Offset: 0x5FE6E84 VA: 0x5FEAE84
+	public void .ctor() { }
+
+	// RVA: 0x5FEAF8C Offset: 0x5FE6F8C VA: 0x5FEAF8C
+	internal bool <GetNextItems>b__2(ItemMultiple consumedItem) { }
+}
+

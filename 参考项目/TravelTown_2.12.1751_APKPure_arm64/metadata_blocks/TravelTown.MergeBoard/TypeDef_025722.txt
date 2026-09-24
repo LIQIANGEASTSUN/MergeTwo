@@ -1,0 +1,26 @@
+// Namespace: Merger.MergeBoard.Utils
+public class ExpendSpawnService : IExpendSpawnService // TypeDefIndex: 25722
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x10
+	private const string ExpendSpawnNoSpaceReason = "expend_no_space";
+
+	// Methods
+
+	// RVA: 0x6A4D77C Offset: 0x6A4977C VA: 0x6A4D77C Slot: 4
+	public void TrySpawnExpendedItems(Entity sourceEntity, TickContext context, IEntityFactory entityFactory, IMergeBoardLayout layout, ExpendableComponent expendableComponent, int sourcePosition) { }
+
+	// RVA: 0x6A4E438 Offset: 0x6A4A438 VA: 0x6A4E438 Slot: 5
+	public void TransformAtSamePosition(Entity sourceEntity, TickContext context, IEntityFactory entityFactory, ExpendableComponent expendableComponent, int sourcePosition, string reason) { }
+
+	// RVA: 0x6A4E2B8 Offset: 0x6A4A2B8 VA: 0x6A4E2B8
+	private void AddSpawnFailedResult(EmptiableWeightedItemSpawnable item, IEntityFactory entityFactory, TickContext context) { }
+
+	// RVA: 0x6A4DFFC Offset: 0x6A49FFC VA: 0x6A4DFFC
+	private WeightedItemSpawnable SelectWeightedItem(List<WeightedItemSpawnable> items) { }
+
+	// RVA: 0x6A4E7DC Offset: 0x6A4A7DC VA: 0x6A4E7DC
+	public void .ctor() { }
+}
+

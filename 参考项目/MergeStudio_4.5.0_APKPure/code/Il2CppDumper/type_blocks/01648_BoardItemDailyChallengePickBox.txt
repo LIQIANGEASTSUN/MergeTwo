@@ -1,0 +1,28 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "BoardItemDailyChallengePickBox", menuName = "Scriptable/BoardItem/BoardItemDailyChallengePickBox", order = 10)]
+public class BoardItemDailyChallengePickBox : BoardItemData, IConfigAdaptor<DailyChallengePickBoxSpawnerAdaptor>, IConfigAdaptorBase // TypeDefIndex: 1648
+{
+	// Fields
+	public List<SpawnedItem> SpawnedItemsList; // 0x2C
+
+	// Methods
+
+	// RVA: 0x18C7BB8 Offset: 0x18C7BB8 VA: 0x18C7BB8 Slot: 4
+	public override bool Initialize(BoardEntity boardEntity, IItemController item, long millisecondsPassed, bool isNewlyCreated) { }
+
+	// RVA: 0x18C7BC0 Offset: 0x18C7BC0 VA: 0x18C7BC0 Slot: 6
+	public override int GetTimeRequiredToExitCharging() { }
+
+	// RVA: 0x18C7BC8 Offset: 0x18C7BC8 VA: 0x18C7BC8 Slot: 17
+	public DailyChallengePickBoxSpawnerAdaptor GetConfigAdaptor() { }
+
+	// RVA: 0x18C7C8C Offset: 0x18C7C8C VA: 0x18C7C8C
+	public List<DailyChallengeRewardData> GetSpawnedItems() { }
+
+	// RVA: 0x18C7CBC Offset: 0x18C7CBC VA: 0x18C7CBC Slot: 18
+	public AdaptorBase ConvertFromLocal() { }
+
+	// RVA: 0x18C7D1C Offset: 0x18C7D1C VA: 0x18C7D1C
+	public void .ctor() { }
+}
+

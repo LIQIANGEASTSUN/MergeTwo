@@ -1,0 +1,33 @@
+// Namespace: MergePuzzle
+public class PickBoxSpawnerConfigAdaptor : AdaptorBase // TypeDefIndex: 1608
+{
+	// Fields
+	private PickBoxConfig _activeConfig; // 0xC
+
+	// Properties
+	private int UserLevel { get; }
+
+	// Methods
+
+	// RVA: 0x18BF8DC Offset: 0x18BF8DC VA: 0x18BF8DC
+	private int get_UserLevel() { }
+
+	// RVA: 0x18BF9B4 Offset: 0x18BF9B4 VA: 0x18BF9B4
+	public void .ctor(string setIDLevel, PickBoxConfig activeConfigBase) { }
+
+	// RVA: 0x18BF9DC Offset: 0x18BF9DC VA: 0x18BF9DC
+	public void .ctor(BoardItemPickBox boardItemPickBox) { }
+
+	// RVA: 0x18BFB9C Offset: 0x18BFB9C VA: 0x18BFB9C
+	private PickBoxLevelBucket GetPickBoxLevelBucket() { }
+
+	// RVA: 0x18BFC14 Offset: 0x18BFC14 VA: 0x18BFC14
+	public List<SpawnedItem> GetSpawnedItems1() { }
+
+	// RVA: 0x18BFC34 Offset: 0x18BFC34 VA: 0x18BFC34
+	public List<SpawnedItem> GetSpawnedItems2() { }
+
+	// RVA: 0x18BFC54 Offset: 0x18BFC54 VA: 0x18BFC54
+	public List<SpawnedItem> GetSpawnedItems3() { }
+}
+

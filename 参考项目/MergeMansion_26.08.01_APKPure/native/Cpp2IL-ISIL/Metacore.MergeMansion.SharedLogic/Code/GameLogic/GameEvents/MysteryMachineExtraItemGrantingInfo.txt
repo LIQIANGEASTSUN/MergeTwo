@@ -1,0 +1,227 @@
+Type: Code.GameLogic.GameEvents.MysteryMachineExtraItemGrantingInfo
+
+Method: Code.GameLogic.GameEvents.MysteryMachineExtraItemGrantingId get_ConfigKey()
+
+Disassembly:
+	0x0332B274 BL 0x332B108
+	0x0332B278 MOV X0, X22
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_ConfigKey(Code.GameLogic.GameEvents.MysteryMachineExtraItemGrantingId value)
+
+Disassembly:
+	0x0332B27C LDP X20, X19, [X31 + 0x20]
+	0x0332B280 LDP X22, X21, [X31 + 0x10]
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: GameLogic.MergeChains.MergeChainId get_ChainId()
+
+Disassembly:
+	0x0332B284 LDR X30, [X31], #0x30
+	0x0332B288 RET
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_ChainId(GameLogic.MergeChains.MergeChainId value)
+
+Disassembly:
+	0x0332B28C MOV X1, X31
+	0x0332B290 B 0x44E8DEC
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Collections.Generic.List`1<GameLogic.Config.ItemDef> get_ItemDefs()
+
+Disassembly:
+	0x0332B294 STP X30, X21, [X31 - 0x20]!
+	0x0332B298 STP X20, X19, [X31 + 0x10]
+
+ISIL:
+	001 Move X0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_ItemDefs(System.Collections.Generic.List`1<GameLogic.Config.ItemDef> value)
+
+Disassembly:
+	0x0332B29C ADRP X21, 0x29FD000
+	0x0332B2A0 ADRP X20, 0x23ED000
+
+ISIL:
+	001 Move [X0+32], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Collections.Generic.List`1<System.Int32> get_ExtraItemAmounts()
+
+Disassembly:
+	0x0332B2A4 MOV X19, X0
+	0x0332B2A8 LDRB W8, [X21 + 0x5AD]
+
+ISIL:
+	001 Move X0, [X0+40]
+	002 Return X0
+
+Method: System.Void set_ExtraItemAmounts(System.Collections.Generic.List`1<System.Int32> value)
+
+Disassembly:
+	0x0332B2AC LDR X20, [X20 + 0xCD8]
+	0x0332B2B0 TBNZ X8, 0x0, 0x332B2D4
+
+ISIL:
+	001 Move [X0+40], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Int32 get_ExperimentPriority()
+
+Disassembly:
+	0x0332B2B4 ADRP X0, 0x23ED000
+	0x0332B2B8 LDR X0, [X0 + 0xCE0]
+
+ISIL:
+	001 Move W0, [X0+48]
+	002 Return X0
+
+Method: System.Void set_ExperimentPriority(System.Int32 value)
+
+Disassembly:
+	0x0332B2BC BL 0x239B8E4
+	0x0332B2C0 ADRP X0, 0x23ED000
+
+ISIL:
+	001 Move [X0+48], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0332B2C4 LDR X0, [X0 + 0xCD8]
+	0x0332B2C8 BL 0x239B8E4
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(Code.GameLogic.GameEvents.MysteryMachineExtraItemGrantingId configKey, GameLogic.MergeChains.MergeChainId chainId, System.Collections.Generic.List`1<GameLogic.Config.ItemDef> itemDefs, System.Collections.Generic.List`1<System.Int32> extraItemAmounts, System.Int32 experimentPriority)
+
+Disassembly:
+	0x0332B2CC MOVZ W8, 0x1
+	0x0332B2D0 STRB W8, [X21 + 0x5AD]
+	0x0332B2D4 LDR X0, [X20]
+	0x0332B2D8 ADRP X20, 0x23ED000
+	0x0332B2DC LDR W8, [X0 + 0xE4]
+	0x0332B2E0 LDR X20, [X20 + 0xCE0]
+	0x0332B2E4 CBNZ W8, 0x332B2EC
+	0x0332B2E8 BL 0x239BA64
+	0x0332B2EC LDR X1, [X20]
+	0x0332B2F0 MOV X0, X19
+	0x0332B2F4 LDP X20, X19, [X31 + 0x10]
+	0x0332B2F8 LDP X30, X21, [X31], #0x20
+	0x0332B2FC B 0x27FEBF0
+	0x0332B300 LDR X0, [X0 + 0x10]
+	0x0332B304 RET
+	0x0332B308 STR X1, [X0 + 0x10]!
+	0x0332B30C B 0x239B888
+	0x0332B310 LDR X0, [X0 + 0x18]
+	0x0332B314 RET
+	0x0332B318 STR X1, [X0 + 0x18]
+	0x0332B31C RET
+	0x0332B320 LDR W0, [X0 + 0x20]
+	0x0332B324 RET
+	0x0332B328 STR W1, [X0 + 0x20]
+	0x0332B32C RET
+	0x0332B330 MOV X1, X31
+	0x0332B334 B 0x44E8DEC
+	0x0332B338 STR X30, [X31 - 0x40]!
+	0x0332B33C STP X24, X23, [X31 + 0x10]
+	0x0332B340 STP X22, X21, [X31 + 0x20]
+	0x0332B344 STP X20, X19, [X31 + 0x30]
+	0x0332B348 ADRP X24, 0x29FD000
+	0x0332B34C ADRP X23, 0x23AA000
+	0x0332B350 MOV W19, W3
+
+ISIL:
+	001 Move [X31-64], X30
+	002 Move [X31+16], X24
+	003 Move [X31+24], X23
+	004 Move [X31+32], X22
+	005 Move [X31+40], X21
+	006 Move [X31+48], X20
+	007 Move [X31+56], X19
+	008 Move X23, X1
+	009 Move X1, X31
+	010 Move W19, W5
+	011 Move X20, X4
+	012 Move X21, X3
+	013 Move X22, X2
+	014 Move X24, X0
+	015 Call Object..ctor, X0
+	016 Move X0, X24
+	017 Move X1, X23
+	018 Move [X0+16], X23
+	019 Call 0x239F888
+	020 Move X0, X24
+	021 Move X1, X22
+	022 Move [X0+24], X22
+	023 Call 0x239F888
+	024 Move X0, X24
+	025 Move X1, X21
+	026 Move [X0+32], X21
+	027 Call 0x239F888
+	028 Move [X24+40], X20
+	029 Move X0, X24
+	030 Move X1, X20
+	031 Call 0x239F888
+	032 Move [X24+8], W19
+	033 Move X20, [X31+48]
+	034 Move X19, [X31+56]
+	035 Move X22, [X31+32]
+	036 Move X21, [X31+40]
+	037 Move X24, [X31+16]
+	038 Move X23, [X31+24]
+	039 Move X30, [X31+64]
+	040 Return 
+
+Method: System.Collections.Generic.List`1<GameLogic.Config.ItemDef> FixRefs(Metaplay.Core.Serialization.MetaMemberDeserializationFailureParams failureParams)
+
+Disassembly:
+	0x0332B354 LDRB W8, [X24 + 0x5AE]
+	0x0332B358 LDR X23, [X23 + 0x210]
+	0x0332B35C MOV X20, X2
+	0x0332B360 MOV X21, X1
+	0x0332B364 MOV X22, X0
+	0x0332B368 TBNZ X8, 0x0, 0x332B38C
+	0x0332B36C ADRP X0, 0x23AA000
+	0x0332B370 LDR X0, [X0 + 0x210]
+	0x0332B374 BL 0x239B8E4
+	0x0332B378 ADRP X0, 0x23B7000
+	0x0332B37C LDR X0, [X0 + 0xBB0]
+	0x0332B380 BL 0x239B8E4
+
+ISIL:
+	001 Subtract X31, X31, 48
+	002 Move [X31+32], X30
+	003 Move V0, [X0]
+	004 Move X8, [X0+16]
+	005 Add X0, X31, 0
+	006 Move X1, X31
+	007 Move [X31], V0
+	008 Move [X31+16], X8
+	009 Call ItemDef.FixRefList, X0
+	010 Move X30, [X31+32]
+	011 Add X31, X31, 48
+	012 Return X0
+

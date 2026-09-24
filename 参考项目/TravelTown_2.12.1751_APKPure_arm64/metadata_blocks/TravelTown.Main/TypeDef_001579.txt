@@ -1,0 +1,36 @@
+// Namespace: GameCore.Configuration.WeakReferences.Providers
+public abstract class WeakReferenceTargetProvider<TAsset, TKey> // TypeDefIndex: 1579
+{
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public TAsset GetInstance(WeakReference<TAsset, TKey> weakReference) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4941BEC Offset: 0x493DBEC VA: 0x4941BEC
+	|-WeakReferenceTargetProvider<object, object>.GetInstance
+	|
+	|-RVA: 0x4941C00 Offset: 0x493DC00 VA: 0x4941C00
+	|-WeakReferenceTargetProvider<object, __Il2CppFullySharedGenericType>.GetInstance
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 4
+	protected abstract TAsset ProvideInstance(WeakReference<TAsset, TKey> reference);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-WeakReferenceTargetProvider<object, __Il2CppFullySharedGenericType>.ProvideInstance
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4941BF8 Offset: 0x493DBF8 VA: 0x4941BF8
+	|-WeakReferenceTargetProvider<object, object>..ctor
+	|
+	|-RVA: 0x4941C0C Offset: 0x493DC0C VA: 0x4941C0C
+	|-WeakReferenceTargetProvider<object, __Il2CppFullySharedGenericType>..ctor
+	*/
+}
+

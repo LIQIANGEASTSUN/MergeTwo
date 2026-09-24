@@ -1,0 +1,15 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class CollectCapability : CapabilityBase // TypeDefIndex: 1437
+{
+	// Fields
+	public PlayerResourceEnum Resource; // 0x14
+	public int Amount; // 0x18
+	public bool CollectWhenDroppedOnInventory; // 0x1C
+
+	// Methods
+
+	// RVA: 0x600FDAC Offset: 0x600BDAC VA: 0x600FDAC
+	public void .ctor() { }
+}
+

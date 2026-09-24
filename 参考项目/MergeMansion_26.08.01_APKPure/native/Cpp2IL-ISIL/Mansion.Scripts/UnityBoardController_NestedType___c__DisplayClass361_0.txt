@@ -1,0 +1,61 @@
+Type: UnityBoardController+<>c__DisplayClass361_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03277F74 CBNZ W8, 0x3277F7C
+	0x03277F78 BL 0x239BA64
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void <ProcessManualDecayAutoDecaySoldOrCollectedAct>b__1()
+
+Disassembly:
+	0x03277F7C MOV X0, X21
+	0x03277F80 MOV X1, X31
+	0x03277F84 BL 0x4A6AEF4
+	0x03277F88 STP X0, X1, [X31 + 0x20]
+	0x03277F8C ADD X0, X31, 0x20
+	0x03277F90 MOV X1, X31
+	0x03277F94 BL 0x239B888
+	0x03277F98 LDR V0, [X31 + 0x2]
+
+ISIL:
+	001 Move X8, X0
+	002 Move X0, [X0+16]
+	003 Compare X0, 0
+	004 JumpIfEqual {9}
+	005 Move X1, [X8+24]
+	006 Move X2, X31
+	007 Call UnityBoardController.ReturnBoardItemHandlerToPool, X0, X1
+	008 Return 
+	009 Move [X31-16], X30
+	010 Call 0x239FB90
+
+Method: System.Void <ProcessManualDecayAutoDecaySoldOrCollectedAct>b__0()
+
+Disassembly:
+	0x03277F9C LDRB W8, [X26 + 0x498]
+	0x03277FA0 STR V0, [X31 + 0x1]
+	0x03277FA4 CBNZ W8, 0x3277FBC
+	0x03277FA8 ADRP X0, 0x245D000
+	0x03277FAC LDR X0, [X0 + 0x928]
+	0x03277FB0 BL 0x239B8E4
+	0x03277FB4 MOVZ W8, 0x1
+	0x03277FB8 STRB W8, [X26 + 0x498]
+
+ISIL:
+	001 Move X8, X0
+	002 Move X0, [X0+16]
+	003 Compare X0, 0
+	004 JumpIfEqual {9}
+	005 Move X1, [X8+24]
+	006 Move X2, X31
+	007 Call UnityBoardController.ReturnBoardItemHandlerToPool, X0, X1
+	008 Return 
+	009 Move [X31-16], X30
+	010 Call 0x239FB90
+

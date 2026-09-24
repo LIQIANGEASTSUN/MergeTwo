@@ -1,0 +1,14 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class MergeCapability : CapabilityBase // TypeDefIndex: 1455
+{
+	// Fields
+	public MergeType MergeType; // 0x14
+	public string SpecificMergeItem; // 0x18
+
+	// Methods
+
+	// RVA: 0x6011838 Offset: 0x600D838 VA: 0x6011838
+	public void .ctor() { }
+}
+

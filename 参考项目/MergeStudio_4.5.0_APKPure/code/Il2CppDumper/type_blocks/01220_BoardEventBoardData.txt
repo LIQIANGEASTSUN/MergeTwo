@@ -1,0 +1,20 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "BoardEventBoardData", menuName = "Scriptable/Board/BoardEventBoardData", order = 4)]
+public class BoardEventBoardData : BoardData // TypeDefIndex: 1220
+{
+	// Fields
+	[ShowAssetPreview(40, 40)]
+	[BoxGroup("Board Event")]
+	public Sprite TaskXPImage; // 0x10C
+	[BoxGroup("Board Event")]
+	[ShowAssetPreview(40, 40)]
+	public Sprite EnergyPopupEnergy; // 0x110
+	[BoxGroup("Board Event")]
+	public float LockItemExtraOffset; // 0x114
+
+	// Methods
+
+	// RVA: 0x17E98E8 Offset: 0x17E98E8 VA: 0x17E98E8
+	public void .ctor() { }
+}
+

@@ -1,0 +1,41 @@
+Type: Code.GameLogic.ExtraSpawns.ExtraSpawnBoardData
+
+Method: System.Void .ctor(GameLogic.Player.Board.MergeBoard board, GameLogic.Player.Board.Coordinate coordinate, GameLogic.Player.Items.IItemDefinition itemDefinition)
+
+Disassembly:
+	0x037C9D40 STP X20, X19, [X31 + 0x40]
+	0x037C9D44 ADRP X22, 0x2561000
+	0x037C9D48 MOV W19, W2
+	0x037C9D4C MOV X20, X1
+	0x037C9D50 LDRB W8, [X22 + 0xD92]
+	0x037C9D54 MOV X21, X0
+	0x037C9D58 TBNZ X8, 0x0, 0x37C9D88
+	0x037C9D5C ADRP X0, 0x1F11000
+	0x037C9D60 LDR X0, [X0 + 0xFE8]
+	0x037C9D64 BL 0x239B8E4
+	0x037C9D68 ADRP X0, 0x1F09000
+	0x037C9D6C LDR X0, [X0 + 0x588]
+	0x037C9D70 BL 0x239B8E4
+	0x037C9D74 ADRP X0, 0x1F05000
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move X19, X3
+	006 Move X20, X2
+	007 Move X21, X0
+	008 Move [X0], X1
+	009 Call 0x239F888
+	010 Move [X21+16], X19
+	011 Move X1, X19
+	012 Move [X21-8], X20
+	013 Move X20, [X31+16]
+	014 Move X19, [X31+24]
+	015 Move X0, X21
+	016 Move X30, [X31+32]
+	017 Move X21, [X31+40]
+	018 Call 0x239F888
+	019 Return 
+

@@ -1,0 +1,13 @@
+Type: GameLogic.Player.Actions.Basic.DirectorTryMakeReadyForActivation+DirectorActivationEventDefinition
+
+Method: System.Void .ctor(System.Func`3<GameLogic.Player.PlayerModel, System.Boolean, Metaplay.Core.Model.MetaActionResult> operation)
+
+Disassembly:
+	0x0371CC1C MOV X23, X0
+	0x0371CC20 LDR X8, [X8 + 0xFF0]
+
+ISIL:
+	001 Move [X0], X1
+	002 Call 0x239F888
+	003 Return 
+

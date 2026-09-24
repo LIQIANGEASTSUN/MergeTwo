@@ -1,0 +1,15 @@
+// Namespace: Merger.MergeBoard.Systems
+public class KillSystem : ISystem // TypeDefIndex: 25759
+{
+	// Methods
+
+	// RVA: 0x6A70CA8 Offset: 0x6A6CCA8 VA: 0x6A70CA8 Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A70F94 Offset: 0x6A6CF94 VA: 0x6A70F94
+	private void RemoveTempComponents(TickContext context) { }
+
+	// RVA: 0x6A71220 Offset: 0x6A6D220 VA: 0x6A71220
+	public void .ctor() { }
+}
+

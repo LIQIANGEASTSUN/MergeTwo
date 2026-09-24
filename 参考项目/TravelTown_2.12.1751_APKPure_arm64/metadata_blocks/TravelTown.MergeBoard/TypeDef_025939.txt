@@ -1,0 +1,24 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class ChargeableChangedResult // TypeDefIndex: 25939
+{
+	// Fields
+	[CompilerGenerated]
+	private ItemAnalyticsData <AnalyticsData>k__BackingField; // 0x10
+
+	// Properties
+	public ItemAnalyticsData AnalyticsData { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A298 Offset: 0x6A96298 VA: 0x6A9A298
+	public ItemAnalyticsData get_AnalyticsData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A2A0 Offset: 0x6A962A0 VA: 0x6A9A2A0
+	public void set_AnalyticsData(ItemAnalyticsData value) { }
+
+	// RVA: 0x6A9A2A8 Offset: 0x6A962A8 VA: 0x6A9A2A8
+	public void .ctor() { }
+}
+

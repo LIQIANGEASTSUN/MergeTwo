@@ -1,0 +1,4 @@
+// Namespace: MergeEngine.Model.Configuration
+public interface IMultipleConfigurableScriptableObjectConfigurationModel<T> : IMultipleConfigurationModel<string, T> // TypeDefIndex: 541
+{}
+

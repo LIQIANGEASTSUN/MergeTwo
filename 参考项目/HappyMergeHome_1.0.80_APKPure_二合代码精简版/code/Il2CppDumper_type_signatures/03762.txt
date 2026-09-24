@@ -1,0 +1,139 @@
+// Namespace: Activity.TreasureHunt
+public class TreasureHuntModel : ActivityEntityBase // TypeDefIndex: 3762
+{
+	// Fields
+	private static TreasureHuntModel _instance; // 0x0
+	private static readonly string coolTimeKey; // 0x4
+	private TreasureHuntActivityConfig _treasureHuntActivityConfig; // 0x3C
+	public bool CanBreak; // 0x40
+	private static GameObject _flyItemObj; // 0x8
+
+	// Properties
+	public static TreasureHuntModel Instance { get; }
+	public override string Guid { get; }
+	private bool OpenFun { get; }
+	public StorageTreasureHunt TreasureHunt { get; }
+	public TreasureHuntActivityConfig TreasureHuntActivityConfig { get; }
+	public static GameObject FlyItemObj { get; }
+
+	// Methods
+
+	// RVA: 0x2F090CC Offset: 0x2F090CC VA: 0x2F090CC
+	public static TreasureHuntModel get_Instance() { }
+
+	// RVA: 0x2F095AC Offset: 0x2F095AC VA: 0x2F095AC Slot: 4
+	public override string get_Guid() { }
+
+	// RVA: 0x2F0963C Offset: 0x2F0963C VA: 0x2F0963C
+	private bool get_OpenFun() { }
+
+	// RVA: 0x2F096E8 Offset: 0x2F096E8 VA: 0x2F096E8
+	public StorageTreasureHunt get_TreasureHunt() { }
+
+	// RVA: 0x2F097F8 Offset: 0x2F097F8 VA: 0x2F097F8
+	public TreasureHuntActivityConfig get_TreasureHuntActivityConfig() { }
+
+	// RVA: 0x2F09928 Offset: 0x2F09928 VA: 0x2F09928
+	public TreasureHuntLevelConfig GetTreasureHuntLevelConfig() { }
+
+	// RVA: 0x2F09AF4 Offset: 0x2F09AF4 VA: 0x2F09AF4
+	public TreasureHuntStoreConfig GetTreasureHuntStoreConfig(int shopId) { }
+
+	[RuntimeInitializeOnLoadMethod(0)]
+	// RVA: 0x2F09CAC Offset: 0x2F09CAC VA: 0x2F09CAC
+	private static void InitAuto() { }
+
+	// RVA: 0x2F09D64 Offset: 0x2F09D64 VA: 0x2F09D64 Slot: 5
+	public override void InitFromServerData(string activityId, string activityType, ulong startTime, ulong endTime, ulong rewardEndTime, bool manualEnd, string configJson, string activitySubType) { }
+
+	// RVA: 0x2F09F1C Offset: 0x2F09F1C VA: 0x2F09F1C Slot: 19
+	public override void UpdateActivityState() { }
+
+	// RVA: 0x2F09F80 Offset: 0x2F09F80 VA: 0x2F09F80 Slot: 23
+	public override bool CanDownLoadRes() { }
+
+	// RVA: 0x2F0A02C Offset: 0x2F0A02C VA: 0x2F0A02C Slot: 18
+	protected override void InitServerDataFinish() { }
+
+	// RVA: 0x2F091B8 Offset: 0x2F091B8 VA: 0x2F091B8
+	public bool IsOpen() { }
+
+	// RVA: 0x2F0A13C Offset: 0x2F0A13C VA: 0x2F0A13C
+	public void Start() { }
+
+	// RVA: 0x2F0A1B4 Offset: 0x2F0A1B4 VA: 0x2F0A1B4
+	public bool IsStart() { }
+
+	// RVA: 0x2F0A228 Offset: 0x2F0A228 VA: 0x2F0A228
+	public bool IsPreheating() { }
+
+	// RVA: 0x2F0A3C8 Offset: 0x2F0A3C8 VA: 0x2F0A3C8 Slot: 26
+	public virtual string GetActivityPreheatLeftTimeString() { }
+
+	// RVA: 0x2F0A48C Offset: 0x2F0A48C VA: 0x2F0A48C
+	public ulong GetActivityPreheatLeftTime() { }
+
+	// RVA: 0x2F0A604 Offset: 0x2F0A604 VA: 0x2F0A604
+	public void AddHammer(int count) { }
+
+	// RVA: 0x2F0A688 Offset: 0x2F0A688 VA: 0x2F0A688
+	public int GetHammer() { }
+
+	// RVA: 0x2F0A6F4 Offset: 0x2F0A6F4 VA: 0x2F0A6F4
+	public float GetCostProgress() { }
+
+	// RVA: 0x2F0A788 Offset: 0x2F0A788 VA: 0x2F0A788
+	public int GetCastEnergy() { }
+
+	// RVA: 0x2F0A94C Offset: 0x2F0A94C VA: 0x2F0A94C
+	public void TryProductHammer(int index, int id, MergeBoard board, int doubleEnergyTimes) { }
+
+	// RVA: 0x2F0B128 Offset: 0x2F0B128 VA: 0x2F0B128
+	public static GameObject get_FlyItemObj() { }
+
+	// RVA: 0x2F0AE48 Offset: 0x2F0AE48 VA: 0x2F0AE48
+	public static void FlyHammer(Vector2 srcPos, Transform starTransform, float time, bool showEffect, Action action) { }
+
+	// RVA: 0x2F0B378 Offset: 0x2F0B378 VA: 0x2F0B378
+	public void PurchaseSuccess(TableShop cfg) { }
+
+	// RVA: 0x2F0B564 Offset: 0x2F0B564 VA: 0x2F0B564
+	public void PopReward(List<ResData> listResData) { }
+
+	// RVA: 0x2F0B8B0 Offset: 0x2F0B8B0 VA: 0x2F0B8B0
+	public bool IsBreak(int index) { }
+
+	// RVA: 0x2F0B97C Offset: 0x2F0B97C VA: 0x2F0B97C
+	public void BreakItem(int index, TreasureHuntLevelConfig levelConfig) { }
+
+	// RVA: 0x2F0C9E0 Offset: 0x2F0C9E0 VA: 0x2F0C9E0
+	public Transform GetFlyTarget() { }
+
+	// RVA: 0x2F0CB98 Offset: 0x2F0CB98 VA: 0x2F0CB98
+	public void OpenMainPopup() { }
+
+	// RVA: 0x2F0CDA0 Offset: 0x2F0CDA0 VA: 0x2F0CDA0
+	public bool CanShowUI() { }
+
+	// RVA: 0x2F0D148 Offset: 0x2F0D148 VA: 0x2F0D148
+	public void ClearStorage() { }
+
+	// RVA: 0x2F0953C Offset: 0x2F0953C VA: 0x2F0953C
+	public void .ctor() { }
+
+	// RVA: 0x2F0D290 Offset: 0x2F0D290 VA: 0x2F0D290
+	private static void .cctor() { }
+
+	// RVA: 0x2F0D304 Offset: 0x2F0D304 VA: 0x2F0D304
+	public void <>iFixBaseProxy_InitFromServerData(string P0, string P1, ulong P2, ulong P3, ulong P4, bool P5, string P6, string P7) { }
+
+	// RVA: 0x2F0D35C Offset: 0x2F0D35C VA: 0x2F0D35C
+	public void <>iFixBaseProxy_UpdateActivityState() { }
+
+	// RVA: 0x2F0D364 Offset: 0x2F0D364 VA: 0x2F0D364
+	public bool <>iFixBaseProxy_CanDownLoadRes() { }
+
+	// RVA: 0x2F0D36C Offset: 0x2F0D36C VA: 0x2F0D36C
+	public void <>iFixBaseProxy_InitServerDataFinish() { }
+}
+

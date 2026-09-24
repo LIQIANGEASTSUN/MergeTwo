@@ -1,0 +1,19 @@
+// Namespace: Merger.MergeBoard.Extensions
+[Extension]
+public static class InteractionComponentExtensions // TypeDefIndex: 25911
+{
+	// Methods
+
+	[Extension]
+	// RVA: 0x6A9859C Offset: 0x6A9459C VA: 0x6A9859C
+	public static ItemMultiple FindReadyItemToConsume(InteractionComponent interactionComponent, List<string> itemsIds) { }
+
+	[Extension]
+	// RVA: 0x6A9868C Offset: 0x6A9468C VA: 0x6A9868C
+	public static List<Combination> FindReadyCombinations(InteractionComponent interactionComponent, List<string> itemsIds) { }
+
+	[Extension]
+	// RVA: 0x6A8702C Offset: 0x6A8302C VA: 0x6A8702C
+	public static Combination TryFindSuitableCombination(InteractionComponent interactionComponent, string itemId) { }
+}
+

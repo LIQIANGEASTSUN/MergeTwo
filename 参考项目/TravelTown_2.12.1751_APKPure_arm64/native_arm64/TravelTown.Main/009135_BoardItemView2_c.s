@@ -1,0 +1,127 @@
+; Capstone 4 disassembly of Travel Town 2.12.1751 libil2cpp.so
+; TypeDefIndex 9135 .BoardItemView2.<>c
+; Boundaries: next address in Il2CppDumper script.json; these bounds are inferred.
+
+; RVA 0x6731500 | private static void .cctor() { }
+; bytes=104 sha256=ffe52b3ea8499df002311118ddea7df556db3917bd55fc8346f893351761fefb status=arm64_complete_bound indexed_start=True
+0x06731500: fe0f1ef8  str x30, [sp, #-0x20]!
+0x06731504: f44f01a9  stp x20, x19, [sp, #0x10]
+0x06731508: b3af00f0  adrp x19, #0x7d28000
+0x0673150C: f47e0090  adrp x20, #0x770d000
+0x06731510: 682a6639  ldrb w8, [x19, #0x98a]
+0x06731514: 94fa43f9  ldr x20, [x20, #0x7f0]
+0x06731518: c8000037  tbnz w8, #0, #0x6731530
+0x0673151C: e07e0090  adrp x0, #0x770d000
+0x06731520: 00f843f9  ldr x0, [x0, #0x7f0]
+0x06731524: 3d3d2997  bl #0x3180a18
+0x06731528: 28008052  movz w8, #0x1
+0x0673152C: 682a2639  strb w8, [x19, #0x98a]
+0x06731530: 800240f9  ldr x0, [x20]
+0x06731534: db3d2997  bl #0x3180ca0
+0x06731538: e1031faa  mov x1, xzr
+0x0673153C: f30300aa  mov x19, x0
+0x06731540: 2fa4be97  bl #0x56da5fc
+0x06731544: 880240f9  ldr x8, [x20]
+0x06731548: e10313aa  mov x1, x19
+0x0673154C: 085d40f9  ldr x8, [x8, #0xb8]
+0x06731550: 130100f9  str x19, [x8]
+0x06731554: 880240f9  ldr x8, [x20]
+0x06731558: f44f41a9  ldp x20, x19, [sp, #0x10]
+0x0673155C: 005d40f9  ldr x0, [x8, #0xb8]
+0x06731560: fe0742f8  ldr x30, [sp], #0x20
+0x06731564: 183d2917  b #0x31809c4
+
+; RVA 0x6731568 | public void .ctor() { }
+; bytes=8 sha256=d7b9c5d41b861bcdeda067df0cac4f03e04b9a75e5607ebcf030caaee96cde93 status=arm64_complete_bound indexed_start=True
+0x06731568: e1031faa  mov x1, xzr
+0x0673156C: 24a4be17  b #0x56da5fc
+
+; RVA 0x6731570 | internal void <WipeBehaviours>b__27_1(KeyValuePair<Type, IBoardItemViewBehaviour> behaviour) { }
+; bytes=172 sha256=2e39e2810902e764595b9cf0e13c695dbd77aa1b3e4e55ca0d6ada4d376d697d status=arm64_complete_bound indexed_start=True
+0x06731570: fe0f1ef8  str x30, [sp, #-0x20]!
+0x06731574: f44f01a9  stp x20, x19, [sp, #0x10]
+0x06731578: b4af00f0  adrp x20, #0x7d28000
+0x0673157C: 882e6639  ldrb w8, [x20, #0x98b]
+0x06731580: f30302aa  mov x19, x2
+0x06731584: 28010037  tbnz w8, #0, #0x67315a8
+0x06731588: e07e0090  adrp x0, #0x770d000
+0x0673158C: 001444f9  ldr x0, [x0, #0x828]
+0x06731590: 223d2997  bl #0x3180a18
+0x06731594: e07e0090  adrp x0, #0x770d000
+0x06731598: 000444f9  ldr x0, [x0, #0x808]
+0x0673159C: 1f3d2997  bl #0x3180a18
+0x067315A0: 28008052  movz w8, #0x1
+0x067315A4: 882e2639  strb w8, [x20, #0x98b]
+0x067315A8: 930300b4  cbz x19, #0x6731618
+0x067315AC: ea7e0090  adrp x10, #0x770d000
+0x067315B0: 680240f9  ldr x8, [x19]
+0x067315B4: 4a1544f9  ldr x10, [x10, #0x828]
+0x067315B8: 095d4279  ldrh w9, [x8, #0x12e]
+0x067315BC: 410140f9  ldr x1, [x10]
+0x067315C0: 290100b4  cbz x9, #0x67315e4
+0x067315C4: 0a5940f9  ldr x10, [x8, #0xb0]
+0x067315C8: 4a210091  add x10, x10, #8
+0x067315CC: 4b815ff8  ldur x11, [x10, #-8]
+0x067315D0: 7f0101eb  cmp x11, x1
+0x067315D4: 00010054  b.eq #0x67315f4
+0x067315D8: 290500f1  subs x9, x9, #1
+0x067315DC: 4a410091  add x10, x10, #0x10
+0x067315E0: 61ffff54  b.ne #0x67315cc
+0x067315E4: 42008052  movz w2, #0x2
+0x067315E8: e00313aa  mov x0, x19
+0x067315EC: 49952897  bl #0x3156b10
+0x067315F0: 05000014  b #0x6731604
+0x067315F4: 490140b9  ldr w9, [x10]
+0x067315F8: 29090011  add w9, w9, #2
+0x067315FC: 08d1298b  add x8, x8, w9, sxtw #4
+0x06731600: 00e10491  add x0, x8, #0x138
+0x06731604: 020440a9  ldp x2, x1, [x0]
+0x06731608: e00313aa  mov x0, x19
+0x0673160C: f44f41a9  ldp x20, x19, [sp, #0x10]
+0x06731610: fe0742f8  ldr x30, [sp], #0x20
+0x06731614: 40001fd6  br x2
+0x06731618: a53d2997  bl #0x3180cac
+
+; RVA 0x673161C | internal void <NotifyBehaviourAdded>b__29_0(IBoardItemViewBehaviour behaviour) { }
+; bytes=160 sha256=2e96877db33e3b8e73c81f3209e455278bcac5ba26fd757454d3484e84b27aa9 status=arm64_complete_bound indexed_start=True
+0x0673161C: fe0f1ef8  str x30, [sp, #-0x20]!
+0x06731620: f44f01a9  stp x20, x19, [sp, #0x10]
+0x06731624: b4af00f0  adrp x20, #0x7d28000
+0x06731628: 88326639  ldrb w8, [x20, #0x98c]
+0x0673162C: f30301aa  mov x19, x1
+0x06731630: c8000037  tbnz w8, #0, #0x6731648
+0x06731634: e07e0090  adrp x0, #0x770d000
+0x06731638: 001444f9  ldr x0, [x0, #0x828]
+0x0673163C: f73c2997  bl #0x3180a18
+0x06731640: 28008052  movz w8, #0x1
+0x06731644: 88322639  strb w8, [x20, #0x98c]
+0x06731648: 930300b4  cbz x19, #0x67316b8
+0x0673164C: ea7e0090  adrp x10, #0x770d000
+0x06731650: 680240f9  ldr x8, [x19]
+0x06731654: 4a1544f9  ldr x10, [x10, #0x828]
+0x06731658: 095d4279  ldrh w9, [x8, #0x12e]
+0x0673165C: 410140f9  ldr x1, [x10]
+0x06731660: 290100b4  cbz x9, #0x6731684
+0x06731664: 0a5940f9  ldr x10, [x8, #0xb0]
+0x06731668: 4a210091  add x10, x10, #8
+0x0673166C: 4b815ff8  ldur x11, [x10, #-8]
+0x06731670: 7f0101eb  cmp x11, x1
+0x06731674: 00010054  b.eq #0x6731694
+0x06731678: 290500f1  subs x9, x9, #1
+0x0673167C: 4a410091  add x10, x10, #0x10
+0x06731680: 61ffff54  b.ne #0x673166c
+0x06731684: 22008052  movz w2, #0x1
+0x06731688: e00313aa  mov x0, x19
+0x0673168C: 21952897  bl #0x3156b10
+0x06731690: 05000014  b #0x67316a4
+0x06731694: 490140b9  ldr w9, [x10]
+0x06731698: 29050011  add w9, w9, #1
+0x0673169C: 08d1298b  add x8, x8, w9, sxtw #4
+0x067316A0: 00e10491  add x0, x8, #0x138
+0x067316A4: 020440a9  ldp x2, x1, [x0]
+0x067316A8: e00313aa  mov x0, x19
+0x067316AC: f44f41a9  ldp x20, x19, [sp, #0x10]
+0x067316B0: fe0742f8  ldr x30, [sp], #0x20
+0x067316B4: 40001fd6  br x2
+0x067316B8: 7d3d2997  bl #0x3180cac
+

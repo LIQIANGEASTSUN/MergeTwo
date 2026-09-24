@@ -1,0 +1,9 @@
+Type: Events.IMergeBoardGenerator
+
+Method: GameLogic.Player.Board.MergeBoard GenerateBoard(GameLogic.Player.IPlayer player, GameLogic.Random.IGenerationContext generationContext, GameLogic.Config.IMergeMansionGameConfig gameConfig, Metaplay.Core.MetaTime creationTime)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

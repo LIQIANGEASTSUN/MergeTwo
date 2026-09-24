@@ -1,0 +1,21 @@
+// Namespace: Merger.Services.Backend.Sync.Data.Payloads.Board
+[Serializable]
+public class ItemQueue // TypeDefIndex: 9881
+{
+	// Fields
+	public string id; // 0x10
+	[JsonProperty("uuid")]
+	public string UUID; // 0x18
+	[JsonProperty(DefaultValueHandling = 1)]
+	public ItemPayloadBase itemData; // 0x20
+	[JsonProperty("dynamicConfig", DefaultValueHandling = 1)]
+	public DynamicMergeItemConfig DynamicMergeItemConfig; // 0x28
+	[JsonProperty("queueAddedLatestTimestamp", DefaultValueHandling = 1)]
+	public long ItemAdditionTimestamp; // 0x30
+
+	// Methods
+
+	// RVA: 0x67CCA1C Offset: 0x67C8A1C VA: 0x67CCA1C
+	public void .ctor(string itemId, string uuid, ItemPayloadBase itemBaseData, DynamicMergeItemConfig dynamicMergeItemConfig, long addedTimestamp = 0) { }
+}
+

@@ -1,0 +1,128 @@
+Type: GameLogic.Player.Items.Consumption.ConsumableFeaturesSource
+
+Method: System.String get_ConfigKey()
+
+Disassembly:
+	0x03632214 LDR X25, [X25 + 0xE60]
+	0x03632218 MOV X22, X0
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.String get_ItemType()
+
+Disassembly:
+	0x0363221C LDR X1, [X10]
+	0x03632220 CBZ X9, 0x3632244
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: GameLogic.Player.Items.Consumption.ConsumableFeatures ToConfigData(GameLogic.Player.Items.Production.IProducerFactory producerFactory)
+
+Disassembly:
+	0x03632224 LDR X10, [X8 + 0xB0]
+	0x03632228 ADD X10, X10, 0x8
+	0x0363222C LDUR X11, [X10 - 0x8]
+	0x03632230 CMP X11, X1
+	0x03632234 B.EQ 0x3632254
+	0x03632238 SUBS X9, X9, 0x1
+	0x0363223C ADD X10, X10, 0x10
+	0x03632240 B.NE 0x363222C
+	0x03632244 MOV X0, X21
+	0x03632248 MOVZ W2, 0x1F
+	0x0363224C BL 0x23D527C
+	0x03632250 B 0x3632264
+	0x03632254 LDR W9, [X10]
+	0x03632258 ADD W9, W9, 0x1F
+	0x0363225C ADD X8, X8, W9, 0x4, SXTW
+	0x03632260 ADD X0, X8, 0x138
+	0x03632264 ADRP X26, 0x2100000
+	0x03632268 LDR X26, [X26 + 0x1B8]
+	0x0363226C LDP X8, X1, [X0]
+	0x03632270 MOV X0, X21
+	0x03632274 BLR X8
+	0x03632278 LDR X8, [X23]
+	0x0363227C MOV W23, W0
+	0x03632280 MOV X0, X8
+	0x03632284 BL 0x239BB80
+	0x03632288 MOV W1, W23
+	0x0363228C MOV X2, X31
+	0x03632290 MOV X21, X0
+	0x03632294 BL 0x379AB4C
+	0x03632298 LDR X0, [X25]
+	0x0363229C LDR W8, [X0 + 0xE4]
+	0x036322A0 CBNZ W8, 0x36322A8
+	0x036322A4 BL 0x239BA64
+	0x036322A8 ADRP X23, 0x20A2000
+	0x036322AC MOV X0, X22
+	0x036322B0 MOV X1, X21
+	0x036322B4 LDR X23, [X23 + 0xD50]
+	0x036322B8 LDR X2, [X26]
+	0x036322BC BL 0x26661A0
+	0x036322C0 LDR X8, [X20]
+	0x036322C4 LDR X1, [X24]
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31-40], X23
+	003 Move [X31+16], X22
+	004 Move [X31+24], X21
+	005 Move [X31+32], X20
+	006 Move [X31+40], X19
+	007 Move X19, X0
+	008 Move W8, [0x26FBD25]
+	009 Move X20, [0x2102970]
+	010 Move TEMP, X8
+	011 And TEMP, TEMP, 1
+	012 Compare TEMP, 1
+	013 JumpIfEqual {18}
+	014 Move X0, [0x2102970]
+	015 Call 0x239F8E4
+	016 Move W8, 1
+	017 Move [X21+3365], W8
+	018 Move X0, [X19+24]
+	019 Move X1, [X19+32]
+	020 Move X2, X31
+	021 Call ItemsConfigExtensions.ConstructLogic, X0, X1
+	022 Move X8, [X20]
+	023 NotImplemented "Instruction LDRH not yet implemented."
+	024 Move W22, [X19+44]
+	025 Move W23, [X19+48]
+	026 Move X19, X0
+	027 Move X0, X8
+	028 Call 0x239FB80
+	029 Move X1, X31
+	030 Move X20, X0
+	031 Call Object..ctor, X0
+	032 Move W8, 1
+	033 Move X0, X20
+	034 Move X1, X19
+	035 Move [X20+16], W8
+	036 Move [X0+24], X19
+	037 Call 0x239F888
+	038 NotImplemented "Instruction STRH not yet implemented."
+	039 Move X0, X20
+	040 Move [X20+36], W22
+	041 Move X22, [X31+16]
+	042 Move X21, [X31+24]
+	043 Move [X20+40], W23
+	044 Move X20, [X31+32]
+	045 Move X19, [X31+40]
+	046 Move X30, [X31+48]
+	047 Move X23, [X31+56]
+	048 Return X0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x036322C8 LDRH W9, [X8 + 0x12E]
+	0x036322CC CBZ X9, 0x36322F0
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+

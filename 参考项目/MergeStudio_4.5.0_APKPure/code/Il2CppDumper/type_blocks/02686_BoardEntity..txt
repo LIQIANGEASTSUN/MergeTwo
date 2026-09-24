@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardEntity.<>c__DisplayClass44_0 // TypeDefIndex: 2686
+{
+	// Fields
+	public int id; // 0x8
+
+	// Methods
+
+	// RVA: 0x1A5577C Offset: 0x1A5577C VA: 0x1A5577C
+	public void .ctor() { }
+
+	// RVA: 0x1A5C390 Offset: 0x1A5C390 VA: 0x1A5C390
+	internal bool <GetSeasonItemEntityByID>b__0(SeasonPassItemEntity item) { }
+}
+

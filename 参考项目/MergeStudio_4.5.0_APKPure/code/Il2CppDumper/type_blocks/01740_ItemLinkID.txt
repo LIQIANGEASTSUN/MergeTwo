@@ -1,0 +1,32 @@
+// Namespace: MergePuzzle
+[IsReadOnly]
+public struct ItemLinkID // TypeDefIndex: 1740
+{
+	// Fields
+	private const int LINK_BITS = 16;
+	private const int CHAIN_MASK = -65536;
+	private const int LINK_MASK = 65535;
+	public readonly int Value; // 0x0
+
+	// Properties
+	public int ChainIndex { get; }
+	public int LinkIndex { get; }
+
+	// Methods
+
+	// RVA: 0x190FEF0 Offset: 0x190FEF0 VA: 0x190FEF0
+	public void .ctor(int chainIndex, int linkIndex) { }
+
+	// RVA: 0x190FEFC Offset: 0x190FEFC VA: 0x190FEFC
+	public int get_ChainIndex() { }
+
+	// RVA: 0x190FF08 Offset: 0x190FF08 VA: 0x190FF08
+	public int get_LinkIndex() { }
+
+	// RVA: 0x190FF10 Offset: 0x190FF10 VA: 0x190FF10
+	public static int op_Implicit(ItemLinkID linkID) { }
+
+	// RVA: 0x1904768 Offset: 0x1904768 VA: 0x1904768
+	public static ItemLinkID op_Implicit(int value) { }
+}
+

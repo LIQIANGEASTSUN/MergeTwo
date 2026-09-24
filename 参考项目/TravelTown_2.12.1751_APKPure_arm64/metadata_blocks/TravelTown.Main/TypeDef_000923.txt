@@ -1,0 +1,29 @@
+// Namespace: MergeEngine.ECS.Systems.Board
+public class GenericTokensStateSystem : StateSystemBase<GenericTokenState> // TypeDefIndex: 923
+{
+	// Fields
+	[Inject]
+	private IResourcesModel _resourcesModel; // 0x48
+	[Inject]
+	private ISystemManager _systemManager; // 0x50
+	[Inject]
+	private IResourceReplenishmentModel _resourceReplenishmentModel; // 0x58
+
+	// Properties
+	private ResourceReplenishmentSystem ResourceReplenishmentSystem { get; }
+
+	// Methods
+
+	// RVA: 0x666C728 Offset: 0x6668728 VA: 0x666C728
+	private ResourceReplenishmentSystem get_ResourceReplenishmentSystem() { }
+
+	// RVA: 0x666C7E0 Offset: 0x66687E0 VA: 0x666C7E0 Slot: 13
+	protected override void LoadState(GenericTokenState newState) { }
+
+	// RVA: 0x666CABC Offset: 0x6668ABC VA: 0x666CABC
+	public void UpdateRefillData(IRewardType rewardType, RewardRefillData rewardRefillData) { }
+
+	// RVA: 0x666CC34 Offset: 0x6668C34 VA: 0x666CC34
+	public void .ctor() { }
+}
+

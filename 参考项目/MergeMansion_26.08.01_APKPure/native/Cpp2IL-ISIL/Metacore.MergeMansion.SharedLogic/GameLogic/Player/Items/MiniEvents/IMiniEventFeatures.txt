@@ -1,0 +1,30 @@
+Type: GameLogic.Player.Items.MiniEvents.IMiniEventFeatures
+
+Method: System.Boolean TryGetProducerTimeSkipPriceOverride(GameLogic.Player.IPlayer player, out Metaplay.Core.Math.F64 outPrice)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean TryGetProducerCapacityOverride(GameLogic.Player.IPlayer player, out System.Int32 outValue)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean TryGetProducerTimerOverride(GameLogic.Player.IPlayer player, out Metaplay.Core.MetaDuration outValue)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean TryGetBubblePriceOverride(GameLogic.Player.IPlayer player, out System.Int32 outPrice)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

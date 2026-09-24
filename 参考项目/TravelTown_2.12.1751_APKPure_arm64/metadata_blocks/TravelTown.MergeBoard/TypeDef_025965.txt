@@ -1,0 +1,18 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class ItemsMergedResult // TypeDefIndex: 25965
+{
+	// Fields
+	public string ActionUuid; // 0x10
+	public Entity Item1; // 0x18
+	public Entity Item2; // 0x20
+	public Entity NewItem; // 0x28
+	public int Position; // 0x30
+	public ItemAnalyticsData AnalyticsData; // 0x38
+	public int ItemLevel; // 0x40
+
+	// Methods
+
+	// RVA: 0x6A9A9DC Offset: 0x6A969DC VA: 0x6A9A9DC
+	public void .ctor() { }
+}
+

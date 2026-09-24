@@ -1,0 +1,24 @@
+// Namespace: Merger.Services.Backend.Sync.Data.Payloads.Board
+public class BoosterItemQueue : ItemQueue // TypeDefIndex: 9878
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly BoosterData <BoosterData>k__BackingField; // 0x38
+
+	// Properties
+	[JsonProperty("boosterData", DefaultValueHandling = 1)]
+	public BoosterData BoosterData { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x67CC9D8 Offset: 0x67C89D8 VA: 0x67CC9D8
+	public BoosterData get_BoosterData() { }
+
+	// RVA: 0x67CC9E0 Offset: 0x67C89E0 VA: 0x67CC9E0
+	public void .ctor(string itemId, BoosterData boosterData) { }
+
+	// RVA: 0x67CCAA4 Offset: 0x67C8AA4 VA: 0x67CCAA4
+	public void .ctor(string itemId, string uuid, ItemPayloadBase itemBaseData, DynamicMergeItemConfig dynamicMergeItemConfig) { }
+}
+

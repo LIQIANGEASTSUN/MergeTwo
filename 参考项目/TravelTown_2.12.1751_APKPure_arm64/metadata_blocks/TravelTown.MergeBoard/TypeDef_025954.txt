@@ -1,0 +1,24 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class ItemBeingTimeUnlockedResult // TypeDefIndex: 25954
+{
+	// Fields
+	[CompilerGenerated]
+	private Entity <Entity>k__BackingField; // 0x10
+
+	// Properties
+	public Entity Entity { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A6E8 Offset: 0x6A966E8 VA: 0x6A9A6E8
+	public Entity get_Entity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A6F0 Offset: 0x6A966F0 VA: 0x6A9A6F0
+	public void set_Entity(Entity value) { }
+
+	// RVA: 0x6A9A6F8 Offset: 0x6A966F8 VA: 0x6A9A6F8
+	public void .ctor() { }
+}
+

@@ -1,0 +1,35 @@
+// Namespace: MergeEngine.Signal.Board
+public class ProducerHintSignal // TypeDefIndex: 269
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly string <ItemUuid>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly Transform <HintTransform>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private readonly string <Source>k__BackingField; // 0x20
+	public IMergeItem ProducerMergeItem; // 0x28
+
+	// Properties
+	public string ItemUuid { get; }
+	public Transform HintTransform { get; }
+	public string Source { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5FF4B04 Offset: 0x5FF0B04 VA: 0x5FF4B04
+	public string get_ItemUuid() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF4B0C Offset: 0x5FF0B0C VA: 0x5FF4B0C
+	public Transform get_HintTransform() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF4B14 Offset: 0x5FF0B14 VA: 0x5FF4B14
+	public string get_Source() { }
+
+	// RVA: 0x5FF4B1C Offset: 0x5FF0B1C VA: 0x5FF4B1C
+	public void .ctor(IMergeItem producerMergeItem, string itemUuid, Transform hintTransform, string analyticsReason) { }
+}
+

@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BaseMiniBoardEvent.ItemDragStarted : IEvent // TypeDefIndex: 1056
+{
+	// Fields
+	public MiniBoardItemController ItemController; // 0x0
+}
+

@@ -1,0 +1,70 @@
+// Namespace: Framework.Core.Services.Backend.Remote.Payloads.BoardState
+public class BackendBoardQueueItem // TypeDefIndex: 10955
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly string <UUIDInBoardQueue>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly IItem <QueuedItem>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private readonly ItemPayloadBase <ItemBase>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private readonly BoosterData <BoosterData>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private readonly long <EnqueueTimestamp>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private readonly CardPackData <CardPackData>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private readonly string <Reason>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private readonly BoardQueueOrder <BoardQueueOrder>k__BackingField; // 0x48
+
+	// Properties
+	[JsonProperty("uuidInRewardQueue")]
+	public string UUIDInBoardQueue { get; }
+	public IItem QueuedItem { get; }
+	public ItemPayloadBase ItemBase { get; }
+	public BoosterData BoosterData { get; }
+	public long EnqueueTimestamp { get; }
+	public CardPackData CardPackData { get; }
+	public string Reason { get; }
+	public BoardQueueOrder BoardQueueOrder { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x69274B4 Offset: 0x69234B4 VA: 0x69274B4
+	public string get_UUIDInBoardQueue() { }
+
+	[CompilerGenerated]
+	// RVA: 0x69274BC Offset: 0x69234BC VA: 0x69274BC
+	public IItem get_QueuedItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x69274C4 Offset: 0x69234C4 VA: 0x69274C4
+	public ItemPayloadBase get_ItemBase() { }
+
+	[CompilerGenerated]
+	// RVA: 0x69274CC Offset: 0x69234CC VA: 0x69274CC
+	public BoosterData get_BoosterData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x69274D4 Offset: 0x69234D4 VA: 0x69274D4
+	public long get_EnqueueTimestamp() { }
+
+	[CompilerGenerated]
+	// RVA: 0x69274DC Offset: 0x69234DC VA: 0x69274DC
+	public CardPackData get_CardPackData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x69274E4 Offset: 0x69234E4 VA: 0x69274E4
+	public string get_Reason() { }
+
+	[CompilerGenerated]
+	// RVA: 0x69274EC Offset: 0x69234EC VA: 0x69274EC
+	public BoardQueueOrder get_BoardQueueOrder() { }
+
+	// RVA: 0x69274F4 Offset: 0x69234F4 VA: 0x69274F4
+	public void .ctor(string uuidInBoardQueue, IItem queuedItem, ItemPayloadBase itemBase, BoosterData boosterData, CardPackData cardPackData, long enqueueTimestamp, string reason, BoardQueueOrder boardQueueOrder) { }
+}
+

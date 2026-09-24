@@ -1,0 +1,9 @@
+Type: GameLogic.Player.Items.IItemContext
+
+Method: System.Boolean IsItemUnlockedAndAvailable(GameLogic.Player.Items.IItemDefinition itemDefinition, GameLogic.Player.IPlayer player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

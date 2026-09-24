@@ -1,0 +1,42 @@
+// Namespace: MergeEngine.ECS.Systems.State.Board
+public class BoardInventoryStateSystem<TState> : ItemsStateSystemBase<TState> // TypeDefIndex: 770
+{
+	// Fields
+	[InjectSystem]
+	private InventorySystem _inventorySystem; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 14
+	protected override void EntitiesRemovalLogic(IComponentBase component) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C1802C Offset: 0x4C1402C VA: 0x4C1802C
+	|-BoardInventoryStateSystem<object>.EntitiesRemovalLogic
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public override List<IdComponent> GetExistingEntityIds() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C181F4 Offset: 0x4C141F4 VA: 0x4C181F4
+	|-BoardInventoryStateSystem<object>.GetExistingEntityIds
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 16
+	protected override void ProcessItems(TState boardInventory, List<IdComponent> existingEntityIds) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C184F4 Offset: 0x4C144F4 VA: 0x4C184F4
+	|-BoardInventoryStateSystem<object>.ProcessItems
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C18858 Offset: 0x4C14858 VA: 0x4C18858
+	|-BoardInventoryStateSystem<object>..ctor
+	*/
+}
+

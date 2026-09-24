@@ -1,0 +1,33 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class SyncPayloadServiceBase.<>c__DisplayClass13_0<TPayload> // TypeDefIndex: 9847
+{
+	// Fields
+	public IPromise promise; // 0x0
+	public SyncPayloadServiceBase<TPayload> <>4__this; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F38EAC Offset: 0x3F34EAC VA: 0x3F38EAC
+	|-SyncPayloadServiceBase.<>c__DisplayClass13_0<object>..ctor
+	|
+	|-RVA: 0x3F39140 Offset: 0x3F35140 VA: 0x3F39140
+	|-SyncPayloadServiceBase.<>c__DisplayClass13_0<__Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal void <HandleSyncRequest>b__0(Exception exception) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F38EB4 Offset: 0x3F34EB4 VA: 0x3F38EB4
+	|-SyncPayloadServiceBase.<>c__DisplayClass13_0<object>.<HandleSyncRequest>b__0
+	|
+	|-RVA: 0x3F39148 Offset: 0x3F35148 VA: 0x3F39148
+	|-SyncPayloadServiceBase.<>c__DisplayClass13_0<__Il2CppFullySharedGenericType>.<HandleSyncRequest>b__0
+	*/
+}
+

@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ToolSpawnHandler.<>c__DisplayClass22_0 // TypeDefIndex: 25833
+{
+	// Fields
+	public ToolSpawnHandler <>4__this; // 0x10
+	public ToolProgressionData toolProgressionData; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A84DBC Offset: 0x6A80DBC VA: 0x6A84DBC
+	public void .ctor() { }
+
+	// RVA: 0x6A84DC4 Offset: 0x6A80DC4 VA: 0x6A84DC4
+	internal bool <FilterToolLevelsByProgressionOnBoard>b__0(WeightedToolLevel weightedTool) { }
+}
+

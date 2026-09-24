@@ -1,0 +1,29 @@
+// Namespace: MergeEngine.ECS.Components.Items.Producers
+public class ProducerComponent : ItemSpawningComponent<ProduceCapability> // TypeDefIndex: 1106
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly string <ProducedItemsLabel>k__BackingField; // 0x88
+
+	// Properties
+	public string ProducedItemsLabel { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6900318 Offset: 0x68FC318 VA: 0x6900318
+	public string get_ProducedItemsLabel() { }
+
+	// RVA: 0x6900320 Offset: 0x68FC320 VA: 0x6900320
+	public void .ctor(ProduceCapability capability, Entity entity) { }
+
+	// RVA: 0x6900380 Offset: 0x68FC380 VA: 0x6900380
+	public void FillItemsQueue(List<Combination> feedingComponentCombinations) { }
+
+	// RVA: 0x69003D4 Offset: 0x68FC3D4 VA: 0x69003D4
+	public void SetCombinations(List<Combination> feedingComponentCombinations) { }
+
+	// RVA: 0x6900424 Offset: 0x68FC424 VA: 0x6900424
+	public void FillItemsQueue(List<WeightedItemSpawnable> items) { }
+}
+

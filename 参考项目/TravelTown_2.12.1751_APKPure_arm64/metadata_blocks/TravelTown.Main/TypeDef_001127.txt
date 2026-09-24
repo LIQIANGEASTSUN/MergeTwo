@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardQueueComponent.<>c // TypeDefIndex: 1127
+{
+	// Fields
+	public static readonly BoardQueueComponent.<>c <>9; // 0x0
+	public static Func<QueuedItem, bool> <>9__35_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x6904CE8 Offset: 0x6900CE8 VA: 0x6904CE8
+	private static void .cctor() { }
+
+	// RVA: 0x6904D50 Offset: 0x6900D50 VA: 0x6904D50
+	public void .ctor() { }
+
+	// RVA: 0x6904D58 Offset: 0x6900D58 VA: 0x6904D58
+	internal bool <CollectIds>b__35_0(QueuedItem item) { }
+}
+

@@ -1,0 +1,24 @@
+// Namespace: Framework.Core.View
+public class ViewComponent : MonoBehaviour, IViewComponent // TypeDefIndex: 10428
+{
+	// Fields
+	private RectTransform _rectTransform; // 0x20
+
+	// Properties
+	public RectTransform RectTransform { get; }
+
+	// Methods
+
+	// RVA: 0x68AAF28 Offset: 0x68A6F28 VA: 0x68AAF28 Slot: 4
+	public RectTransform get_RectTransform() { }
+
+	// RVA: 0x68B48E8 Offset: 0x68B08E8 VA: 0x68B48E8 Slot: 6
+	public virtual void Dispose() { }
+
+	// RVA: 0x68A2BC0 Offset: 0x689EBC0 VA: 0x68A2BC0
+	public void .ctor() { }
+
+	// RVA: 0x68B48EC Offset: 0x68B08EC VA: 0x68B48EC Slot: 5
+	private GameObject Framework.Core.View.IViewComponent.get_gameObject() { }
+}
+

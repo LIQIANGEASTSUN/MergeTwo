@@ -1,0 +1,19 @@
+// Namespace: MergeEngine.ECS.Systems.State.Board.Event
+public class EventBoardQueueStateSystem : BoardQueueStateSystem<EventBoardQueueBackendState> // TypeDefIndex: 785
+{
+	// Fields
+	[Inject]
+	private IBoardEventQueueModel _boardEventQueueModel; // 0x78
+
+	// Methods
+
+	// RVA: 0x64EAD9C Offset: 0x64E6D9C VA: 0x64EAD9C Slot: 14
+	protected override bool ShouldLoadStateForDomain() { }
+
+	// RVA: 0x64EAE0C Offset: 0x64E6E0C VA: 0x64EAE0C Slot: 13
+	protected override void LoadState(EventBoardQueueBackendState boardQueueBackendState) { }
+
+	// RVA: 0x64EAEE0 Offset: 0x64E6EE0 VA: 0x64EAEE0
+	public void .ctor() { }
+}
+

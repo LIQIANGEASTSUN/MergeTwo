@@ -1,0 +1,35 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public class MergeComponent : ComponentBase<MergeCapability> // TypeDefIndex: 1082
+{
+	// Fields
+	[CompilerGenerated]
+	private MergeType <MergeType>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private string <SpecificMergeItem>k__BackingField; // 0x30
+
+	// Properties
+	public MergeType MergeType { get; set; }
+	public string SpecificMergeItem { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x68FDAA0 Offset: 0x68F9AA0 VA: 0x68FDAA0
+	public MergeType get_MergeType() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FDAA8 Offset: 0x68F9AA8 VA: 0x68FDAA8
+	public void set_MergeType(MergeType value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FDAB0 Offset: 0x68F9AB0 VA: 0x68FDAB0
+	public string get_SpecificMergeItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FDAB8 Offset: 0x68F9AB8 VA: 0x68FDAB8
+	public void set_SpecificMergeItem(string value) { }
+
+	// RVA: 0x68FDAC0 Offset: 0x68F9AC0 VA: 0x68FDAC0
+	public void .ctor(MergeCapability capability, Entity entity) { }
+}
+

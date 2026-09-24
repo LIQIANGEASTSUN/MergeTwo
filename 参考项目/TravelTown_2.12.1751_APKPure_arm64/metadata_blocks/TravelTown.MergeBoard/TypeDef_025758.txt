@@ -1,0 +1,18 @@
+// Namespace: Merger.MergeBoard.Systems
+public class ItemUnlockingSystem : ISystem // TypeDefIndex: 25758
+{
+	// Methods
+
+	// RVA: 0x6A70964 Offset: 0x6A6C964 VA: 0x6A70964 Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A70988 Offset: 0x6A6C988 VA: 0x6A70988
+	private void UnlockOnDemand(TickContext context) { }
+
+	// RVA: 0x6A70A14 Offset: 0x6A6CA14 VA: 0x6A70A14
+	private void UnlockEntities(TickContext context, List<Entity> entities) { }
+
+	// RVA: 0x6A70CA0 Offset: 0x6A6CCA0 VA: 0x6A70CA0
+	public void .ctor() { }
+}
+

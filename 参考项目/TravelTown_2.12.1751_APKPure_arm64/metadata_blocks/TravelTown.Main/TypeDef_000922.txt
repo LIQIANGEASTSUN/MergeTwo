@@ -1,0 +1,51 @@
+// Namespace: MergeEngine.ECS.Systems.Board
+public class ChargableSystem : BaseItemSystem<ChargableComponent> // TypeDefIndex: 922
+{
+	// Fields
+	[InjectSystem]
+	private ResourcesSystem _resourcesSystem; // 0x40
+	[InjectComponent]
+	private BoardItemCountComponent _boardItemCountComponent; // 0x48
+	[InjectSystem]
+	private InteractionSystem _interactionSystem; // 0x50
+	[InjectComponent]
+	private InteractionTrackingComponent _interactionTrackingComponent; // 0x58
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x60
+
+	// Properties
+	public override SystemPriorities Priority { get; }
+
+	// Methods
+
+	// RVA: 0x666BF10 Offset: 0x6667F10 VA: 0x666BF10 Slot: 15
+	public override SystemPriorities get_Priority() { }
+
+	// RVA: 0x666BF18 Offset: 0x6667F18 VA: 0x666BF18 Slot: 6
+	protected override void InitializeSystem() { }
+
+	// RVA: 0x666BF9C Offset: 0x6667F9C VA: 0x666BF9C
+	private void OnAllSystemsInitialized() { }
+
+	// RVA: 0x666C0C0 Offset: 0x66680C0 VA: 0x666C0C0 Slot: 11
+	protected override void EntityCreated(Entity entity) { }
+
+	// RVA: 0x666C19C Offset: 0x666819C VA: 0x666C19C Slot: 17
+	protected override IEnumerable<ChargableComponent> OnWillProcessComponents(ReadOnlyCollection<ChargableComponent> components) { }
+
+	// RVA: 0x666C2B8 Offset: 0x66682B8 VA: 0x666C2B8 Slot: 18
+	protected override void ProcessComponent(ChargableComponent chargable) { }
+
+	// RVA: 0x666C558 Offset: 0x6668558 VA: 0x666C558
+	private void ChargeItem(ChargableComponent chargableComponent) { }
+
+	// RVA: 0x666C128 Offset: 0x6668128 VA: 0x666C128
+	private void UpdateSprite(ChargableComponent chargable) { }
+
+	// RVA: 0x666C440 Offset: 0x6668440 VA: 0x666C440
+	private void SendChargableAnalytics(ChargableComponent chargable) { }
+
+	// RVA: 0x666C5F8 Offset: 0x66685F8 VA: 0x666C5F8
+	public void .ctor() { }
+}
+

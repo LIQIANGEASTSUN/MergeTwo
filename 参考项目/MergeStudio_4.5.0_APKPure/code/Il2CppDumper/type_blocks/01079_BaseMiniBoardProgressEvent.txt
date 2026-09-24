@@ -1,0 +1,9 @@
+// Namespace: Paxie.MergeStudio.Features.MiniBoard
+public class BaseMiniBoardProgressEvent // TypeDefIndex: 1079
+{
+	// Methods
+
+	// RVA: 0x17AD1BC Offset: 0x17AD1BC VA: 0x17AD1BC
+	public void .ctor() { }
+}
+

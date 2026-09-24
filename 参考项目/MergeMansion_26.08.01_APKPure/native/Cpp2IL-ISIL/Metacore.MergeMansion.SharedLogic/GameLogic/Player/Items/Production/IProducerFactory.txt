@@ -1,0 +1,16 @@
+Type: GameLogic.Player.Items.Production.IProducerFactory
+
+Method: GameLogic.Player.Items.Production.IItemSpawner Create(GameLogic.Player.Items.Production.RollHistoryType rollType, System.String producerType, System.Int32 markerString, GameLogic.Player.Items.Activation.InitialSequenceType initialSequenceType, System.String initialSequence, System.Collections.Generic.IEnumerable`1<System.ValueTuple`2<System.Int32, System.Int32>> pairs)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Production.IOrderSpawner CreateOrderProducer(GameLogic.Player.Items.Production.RollHistoryType rollType, System.String producerType, System.Int32 markerString, System.Collections.Generic.IEnumerable`1<System.ValueTuple`2<GameLogic.Player.Items.Order.OrderRequirementsId, System.Int32>> pairs)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

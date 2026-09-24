@@ -1,0 +1,29 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardIdleHintSystem.<>c // TypeDefIndex: 889
+{
+	// Fields
+	public static readonly BoardIdleHintSystem.<>c <>9; // 0x0
+	public static Func<VisualComponent, bool> <>9__41_0; // 0x8
+	public static Func<IComponentBase, bool> <>9__46_0; // 0x10
+	public static Func<IMergeItem, string> <>9__47_1; // 0x18
+
+	// Methods
+
+	// RVA: 0x665B1E4 Offset: 0x66571E4 VA: 0x665B1E4
+	private static void .cctor() { }
+
+	// RVA: 0x665B24C Offset: 0x665724C VA: 0x665B24C
+	public void .ctor() { }
+
+	// RVA: 0x665B254 Offset: 0x6657254 VA: 0x665B254
+	internal bool <CheckStillNeedHinting>b__41_0(VisualComponent visualComponent) { }
+
+	// RVA: 0x665B26C Offset: 0x665726C VA: 0x665B26C
+	internal bool <GetFirstMergeableItemTuple>b__46_0(IComponentBase component) { }
+
+	// RVA: 0x665B338 Offset: 0x6657338 VA: 0x665B338
+	internal string <GetExcludedItemIds>b__47_1(IMergeItem item) { }
+}
+

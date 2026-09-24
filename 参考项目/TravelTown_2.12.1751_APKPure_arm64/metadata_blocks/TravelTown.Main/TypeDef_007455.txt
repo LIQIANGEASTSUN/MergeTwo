@@ -1,0 +1,27 @@
+// Namespace: Merger.Bubbles
+public class SmarterBubblesStreakModel : ISmarterBubblesStreakModel // TypeDefIndex: 7455
+{
+	// Fields
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0x10
+	private readonly IReadOnlyDictionary<CurrentBoardType, SmarterBubblesStreakData> _streakBoardData; // 0x18
+
+	// Properties
+	public SmarterBubblesStreakData StreakData { get; }
+	public IReadOnlyDictionary<CurrentBoardType, SmarterBubblesStreakData> StreakBoardData { get; }
+
+	// Methods
+
+	// RVA: 0x657B5F8 Offset: 0x65775F8 VA: 0x657B5F8 Slot: 4
+	public SmarterBubblesStreakData get_StreakData() { }
+
+	// RVA: 0x657B72C Offset: 0x657772C VA: 0x657B72C Slot: 5
+	public IReadOnlyDictionary<CurrentBoardType, SmarterBubblesStreakData> get_StreakBoardData() { }
+
+	// RVA: 0x657B734 Offset: 0x6577734 VA: 0x657B734 Slot: 6
+	public void TryAdd(IMergeGraphItem mergeGraphItem) { }
+
+	// RVA: 0x657B7A0 Offset: 0x65777A0 VA: 0x657B7A0
+	public void .ctor() { }
+}
+

@@ -1,0 +1,81 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class Reward.<>c // TypeDefIndex: 1319
+{
+	// Fields
+	public static readonly Reward.<>c <>9; // 0x0
+	public static Predicate<IRewardViewData> <>9__76_0; // 0x8
+	public static Func<BoosterMultiple, bool> <>9__80_0; // 0x10
+	public static Func<IRewardViewData, IRewardViewData> <>9__83_0; // 0x18
+	public static Func<ConditionalRewardMultiple, ConditionalRewardMultiple> <>9__83_1; // 0x20
+	public static Func<IRewardViewData, IRewardViewData> <>9__84_2; // 0x28
+	public static Func<ConditionalRewardMultiple, ConditionalRewardMultiple> <>9__84_3; // 0x30
+	public static Func<PortalItem, string> <>9__90_0; // 0x38
+	public static Func<PortalItem, int> <>9__90_1; // 0x40
+	public static Func<ItemMultiple, bool> <>9__93_0; // 0x48
+	public static Func<ItemMultiple, bool> <>9__93_1; // 0x50
+	public static Func<ItemMultiple, MergeItemWeakReference> <>9__93_2; // 0x58
+	public static Func<ItemMultiple, bool> <>9__93_3; // 0x60
+	public static Func<ItemMultiple, bool> <>9__93_4; // 0x68
+	public static Func<ItemMultiple, MergeItemWeakReference> <>9__93_5; // 0x70
+	public static Predicate<IRewardViewData> <>9__101_0; // 0x78
+	public static Predicate<ResourceMultiple> <>9__101_1; // 0x80
+
+	// Methods
+
+	// RVA: 0x6A2D9BC Offset: 0x6A299BC VA: 0x6A2D9BC
+	private static void .cctor() { }
+
+	// RVA: 0x6A2DA24 Offset: 0x6A29A24 VA: 0x6A2DA24
+	public void .ctor() { }
+
+	// RVA: 0x6A2DA2C Offset: 0x6A29A2C VA: 0x6A2DA2C
+	internal bool <get_AllItemRewards>b__76_0(IRewardViewData q) { }
+
+	// RVA: 0x6A2DB24 Offset: 0x6A29B24 VA: 0x6A2DB24
+	internal bool <get_AllRewardsCountWithoutOutOfBoosters>b__80_0(BoosterMultiple booster) { }
+
+	// RVA: 0x6A2DB4C Offset: 0x6A29B4C VA: 0x6A2DB4C
+	internal IRewardViewData <Clone>b__83_0(IRewardViewData item) { }
+
+	// RVA: 0x6A2DBE8 Offset: 0x6A29BE8 VA: 0x6A2DBE8
+	internal ConditionalRewardMultiple <Clone>b__83_1(ConditionalRewardMultiple item) { }
+
+	// RVA: 0x6A2DC68 Offset: 0x6A29C68 VA: 0x6A2DC68
+	internal IRewardViewData <CloneExcludingAmountType>b__84_2(IRewardViewData item) { }
+
+	// RVA: 0x6A2DD04 Offset: 0x6A29D04 VA: 0x6A2DD04
+	internal ConditionalRewardMultiple <CloneExcludingAmountType>b__84_3(ConditionalRewardMultiple item) { }
+
+	// RVA: 0x6A2DD84 Offset: 0x6A29D84 VA: 0x6A2DD84
+	internal string <GetGroupedPortalItems>b__90_0(PortalItem portalItem) { }
+
+	// RVA: 0x6A2DD9C Offset: 0x6A29D9C VA: 0x6A2DD9C
+	internal int <GetGroupedPortalItems>b__90_1(PortalItem item) { }
+
+	// RVA: 0x6A2DDB4 Offset: 0x6A29DB4 VA: 0x6A2DDB4
+	internal bool <CompareItemBoxes>b__93_0(ItemMultiple x) { }
+
+	// RVA: 0x6A2DF88 Offset: 0x6A29F88 VA: 0x6A2DF88
+	internal bool <CompareItemBoxes>b__93_1(ItemMultiple x) { }
+
+	// RVA: 0x6A2E00C Offset: 0x6A2A00C VA: 0x6A2E00C
+	internal MergeItemWeakReference <CompareItemBoxes>b__93_2(ItemMultiple x) { }
+
+	// RVA: 0x6A2E024 Offset: 0x6A2A024 VA: 0x6A2E024
+	internal bool <CompareItemBoxes>b__93_3(ItemMultiple x) { }
+
+	// RVA: 0x6A2E1F8 Offset: 0x6A2A1F8 VA: 0x6A2E1F8
+	internal bool <CompareItemBoxes>b__93_4(ItemMultiple x) { }
+
+	// RVA: 0x6A2E27C Offset: 0x6A2A27C VA: 0x6A2E27C
+	internal MergeItemWeakReference <CompareItemBoxes>b__93_5(ItemMultiple x) { }
+
+	// RVA: 0x6A2E294 Offset: 0x6A2A294 VA: 0x6A2E294
+	internal bool <CloneAndRemoveEventXP>b__101_0(IRewardViewData q) { }
+
+	// RVA: 0x6A2E44C Offset: 0x6A2A44C VA: 0x6A2E44C
+	internal bool <CloneAndRemoveEventXP>b__101_1(ResourceMultiple q) { }
+}
+

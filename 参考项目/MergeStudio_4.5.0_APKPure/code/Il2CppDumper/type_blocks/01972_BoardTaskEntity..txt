@@ -1,0 +1,22 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardTaskEntity.<>c__DisplayClass95_0 // TypeDefIndex: 1972
+{
+	// Fields
+	public BoardTaskType boardTaskType; // 0x8
+
+	// Methods
+
+	// RVA: 0x19471EC Offset: 0x19471EC VA: 0x19471EC
+	public void .ctor() { }
+
+	// RVA: 0x19481E4 Offset: 0x19481E4 VA: 0x19481E4
+	internal bool <RemoveTask>b__0(BoardTaskItem item) { }
+
+	// RVA: 0x1948214 Offset: 0x1948214 VA: 0x1948214
+	internal bool <RemoveTask>b__1(BoardTaskItem item) { }
+
+	// RVA: 0x1948244 Offset: 0x1948244 VA: 0x1948244
+	internal bool <RemoveTask>b__2(BoardTaskItem item) { }
+}
+

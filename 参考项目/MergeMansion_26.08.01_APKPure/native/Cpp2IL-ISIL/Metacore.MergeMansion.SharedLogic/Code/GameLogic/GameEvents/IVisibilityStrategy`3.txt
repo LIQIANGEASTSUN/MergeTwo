@@ -1,0 +1,9 @@
+Type: Code.GameLogic.GameEvents.IVisibilityStrategy`3
+
+Method: System.Boolean ShouldBeVisible(GameLogic.Player.PlayerModel playerModel, Metaplay.Core.Activables.MetaActivableVisibleStatus visibleStatus, Metacore.MergeMansion.Common.Options.Option`1<TModel> eventModelOption)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

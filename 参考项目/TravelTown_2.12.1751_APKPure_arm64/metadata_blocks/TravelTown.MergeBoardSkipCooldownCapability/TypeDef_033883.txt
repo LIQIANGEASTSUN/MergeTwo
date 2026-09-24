@@ -1,0 +1,35 @@
+// Namespace: Merger.MergeBoardSkipCooldownCapability.Data.TickResultArgs
+public class CooldownSkipped // TypeDefIndex: 33883
+{
+	// Fields
+	[CompilerGenerated]
+	private ResourceMultiple <Price>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private ItemAnalyticsData <AnalyticsData>k__BackingField; // 0x18
+
+	// Properties
+	public ResourceMultiple Price { get; set; }
+	public ItemAnalyticsData AnalyticsData { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A64354 Offset: 0x6A60354 VA: 0x6A64354
+	public ResourceMultiple get_Price() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A6435C Offset: 0x6A6035C VA: 0x6A6435C
+	public void set_Price(ResourceMultiple value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A64364 Offset: 0x6A60364 VA: 0x6A64364
+	public ItemAnalyticsData get_AnalyticsData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A6436C Offset: 0x6A6036C VA: 0x6A6436C
+	public void set_AnalyticsData(ItemAnalyticsData value) { }
+
+	// RVA: 0x6A62CC4 Offset: 0x6A5ECC4 VA: 0x6A62CC4
+	public void .ctor() { }
+}
+

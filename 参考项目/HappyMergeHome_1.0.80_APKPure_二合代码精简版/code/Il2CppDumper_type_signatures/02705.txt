@@ -1,0 +1,18 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeManager.<>c__DisplayClass283_0 // TypeDefIndex: 2705
+{
+	// Fields
+	public MergeManager <>4__this; // 0x8
+	public int i; // 0xC
+	public Predicate<TableMergeLine> <>9__0; // 0x10
+
+	// Methods
+
+	// RVA: 0x2C28AC4 Offset: 0x2C28AC4 VA: 0x2C28AC4
+	public void .ctor() { }
+
+	// RVA: 0x2C28ACC Offset: 0x2C28ACC VA: 0x2C28ACC
+	internal bool <RemoveDeleteStoreageId>b__0(TableMergeLine x) { }
+}
+

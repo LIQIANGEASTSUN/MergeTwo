@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class GameConfigManager.<>c // TypeDefIndex: 1967
+{
+	// Fields
+	public static readonly GameConfigManager.<>c <>9; // 0x0
+	public static Comparison<TableMergeItem> <>9__18_1; // 0x4
+	public static Comparison<TableMergeItem> <>9__18_2; // 0x8
+
+	// Methods
+
+	// RVA: 0x29A1C30 Offset: 0x29A1C30 VA: 0x29A1C30
+	private static void .cctor() { }
+
+	// RVA: 0x29A1CA4 Offset: 0x29A1CA4 VA: 0x29A1CA4
+	public void .ctor() { }
+
+	// RVA: 0x29A1CAC Offset: 0x29A1CAC VA: 0x29A1CAC
+	internal int <InitConfigs>b__18_1(TableMergeItem x, TableMergeItem y) { }
+
+	// RVA: 0x29A1CE0 Offset: 0x29A1CE0 VA: 0x29A1CE0
+	internal int <InitConfigs>b__18_2(TableMergeItem x, TableMergeItem y) { }
+}
+

@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ItemInteractionAffordabilityChecker.<>c // TypeDefIndex: 25827
+{
+	// Fields
+	public static readonly ItemInteractionAffordabilityChecker.<>c <>9; // 0x0
+	public static Func<Entity, bool> <>9__5_0; // 0x8
+	public static Func<Entity, string> <>9__5_1; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A81730 Offset: 0x6A7D730 VA: 0x6A81730
+	private static void .cctor() { }
+
+	// RVA: 0x6A81798 Offset: 0x6A7D798 VA: 0x6A81798
+	public void .ctor() { }
+
+	// RVA: 0x6A817A0 Offset: 0x6A7D7A0 VA: 0x6A817A0
+	internal bool <CanAffordItemInteractionCost>b__5_0(Entity iteratedEntity) { }
+
+	// RVA: 0x6A817C0 Offset: 0x6A7D7C0 VA: 0x6A817C0
+	internal string <CanAffordItemInteractionCost>b__5_1(Entity iteratedEntity) { }
+}
+

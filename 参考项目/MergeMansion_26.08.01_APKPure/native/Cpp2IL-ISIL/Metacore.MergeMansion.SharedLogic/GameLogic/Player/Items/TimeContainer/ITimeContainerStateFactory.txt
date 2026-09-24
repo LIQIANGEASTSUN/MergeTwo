@@ -1,0 +1,62 @@
+Type: GameLogic.Player.Items.TimeContainer.ITimeContainerStateFactory
+
+Method: GameLogic.Player.Items.TimeContainer.ITimeContainerState Create(GameLogic.Config.Types.MetacoreDuration remaining)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.TimeContainer.ITimeContainerStateFactory GetFactory()
+
+Disassembly:
+	0x03600EF0 STRB W8, [X20 + 0xB5C]
+	0x03600EF4 CBZ X21, 0x3601010
+	0x03600EF8 ADRP X10, 0x211B000
+	0x03600EFC LDR X8, [X21]
+	0x03600F00 LDR X10, [X10 + 0x500]
+	0x03600F04 LDR W20, [X19 + 0x14]
+	0x03600F08 LDRH W9, [X8 + 0x12E]
+	0x03600F0C LDR X1, [X10]
+	0x03600F10 CBZ X9, 0x3600F34
+	0x03600F14 LDR X10, [X8 + 0xB0]
+	0x03600F18 ADD X10, X10, 0x8
+	0x03600F1C LDUR X11, [X10 - 0x8]
+	0x03600F20 CMP X11, X1
+	0x03600F24 B.EQ 0x3600F44
+	0x03600F28 SUBS X9, X9, 0x1
+	0x03600F2C ADD X10, X10, 0x10
+	0x03600F30 B.NE 0x3600F1C
+	0x03600F34 MOV X0, X21
+	0x03600F38 MOVZ W2, 0x2
+	0x03600F3C BL 0x23D527C
+	0x03600F40 B 0x3600F54
+	0x03600F44 LDR W9, [X10]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move W8, [0x272DB25]
+	005 Move X19, [0x21353D8]
+	006 Move TEMP, X8
+	007 And TEMP, TEMP, 1
+	008 Compare TEMP, 1
+	009 JumpIfEqual {14}
+	010 Move X0, [0x21353D8]
+	011 Call 0x239F8E4
+	012 Move W8, 1
+	013 Move [X20+2853], W8
+	014 Move X0, [X19]
+	015 Move W8, [X0+228]
+	016 Compare W8, 0
+	017 JumpIfNotEqual {20}
+	018 Call 0x239FA64
+	019 Move X0, [X19]
+	020 Move X8, [X0+184]
+	021 Move X20, [X31+16]
+	022 Move X19, [X31+24]
+	023 Move X0, [X8]
+	024 Move X30, [X31+32]
+	025 Return X0
+

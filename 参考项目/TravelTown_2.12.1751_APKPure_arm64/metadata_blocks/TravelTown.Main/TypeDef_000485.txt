@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class PushedRngItemsModel.<>c__DisplayClass10_0 // TypeDefIndex: 485
+{
+	// Fields
+	public string boardEventId; // 0x10
+
+	// Methods
+
+	// RVA: 0x612F760 Offset: 0x612B760 VA: 0x612F760
+	public void .ctor() { }
+
+	// RVA: 0x612FB5C Offset: 0x612BB5C VA: 0x612FB5C
+	internal bool <FindBoardEventItem>b__0(PushedRngItem e) { }
+}
+

@@ -1,0 +1,12 @@
+// Namespace: Merger.Game.Signal
+public class SlideItemInCompletedSignal // TypeDefIndex: 9441
+{
+	// Fields
+	public BoardItemPosition Position; // 0x10
+
+	// Methods
+
+	// RVA: 0x676CAB4 Offset: 0x6768AB4 VA: 0x676CAB4
+	public void .ctor(BoardItemPosition position) { }
+}
+

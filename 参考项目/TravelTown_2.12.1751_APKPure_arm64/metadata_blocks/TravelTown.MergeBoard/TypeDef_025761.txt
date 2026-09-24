@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MoveSystem.<>c__DisplayClass0_0 // TypeDefIndex: 25761
+{
+	// Fields
+	public MoveAction moveAction; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A71E24 Offset: 0x6A6DE24 VA: 0x6A71E24
+	public void .ctor() { }
+
+	// RVA: 0x6A71E34 Offset: 0x6A6DE34 VA: 0x6A71E34
+	internal bool <Tick>b__0(ValueTuple<Entity, BoardTilePositionComponent> entity) { }
+}
+

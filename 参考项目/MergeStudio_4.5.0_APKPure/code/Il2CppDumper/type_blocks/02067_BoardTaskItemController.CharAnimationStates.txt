@@ -1,0 +1,12 @@
+// Namespace: 
+public struct BoardTaskItemController.CharAnimationStates // TypeDefIndex: 2067
+{
+	// Fields
+	public const string EMPTY = "EMPTY";
+	public const string IDLE_DEFAULT = "IDLE_ANIM";
+	public const string APPEAR_ANIM = "UP_ANIM";
+	public const string DISAPPEAR_ANIM = "DOWN_ANIM";
+	public const string IDLE_HAPPY = "HAPPY_ANIM";
+	public const string REACTION_ANIM = "REACTION_ANIM";
+}
+

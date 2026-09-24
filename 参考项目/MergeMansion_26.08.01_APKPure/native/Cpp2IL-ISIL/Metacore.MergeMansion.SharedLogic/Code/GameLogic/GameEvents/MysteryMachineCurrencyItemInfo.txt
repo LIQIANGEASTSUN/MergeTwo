@@ -1,0 +1,174 @@
+Type: Code.GameLogic.GameEvents.MysteryMachineCurrencyItemInfo
+
+Method: Code.GameLogic.GameEvents.MysteryMachineCurrencyItemId get_ConfigKey()
+
+Disassembly:
+	0x03320B38 B 0x3320B5C
+	0x03320B3C B 0x3320B5C
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_ConfigKey(Code.GameLogic.GameEvents.MysteryMachineCurrencyItemId value)
+
+Disassembly:
+	0x03320B40 B 0x3320B5C
+	0x03320B44 B 0x3320B5C
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: Currencies get_Currency()
+
+Disassembly:
+	0x03320B48 B 0x3320B5C
+	0x03320B4C B 0x3320B5C
+
+ISIL:
+	001 Move W0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_Currency(Currencies value)
+
+Disassembly:
+	0x03320B50 B 0x3320B5C
+	0x03320B54 B 0x3320B5C
+
+ISIL:
+	001 Move [X0+24], W1
+	002 Return 
+
+Method: System.Int32 get_Amount()
+
+Disassembly:
+	0x03320B58 B 0x3320B5C
+	0x03320B5C MOV X19, X0
+
+ISIL:
+	001 Move W0, [X0+28]
+	002 Return X0
+
+Method: System.Void set_Amount(System.Int32 value)
+
+Disassembly:
+	0x03320B60 CMP W1, 0x1
+	0x03320B64 B.NE 0x3320B98
+
+ISIL:
+	001 Move [X0+28], W1
+	002 Return 
+
+Method: System.Int32 get_DisplayAmount()
+
+Disassembly:
+	0x03320B68 MOV X0, X19
+	0x03320B6C BL 0x53E9080
+
+ISIL:
+	001 Move W0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_DisplayAmount(System.Int32 value)
+
+Disassembly:
+	0x03320B70 LDR X19, [X0]
+	0x03320B74 STR X19, [X31 + 0x8]
+
+ISIL:
+	001 Move [X0+32], W1
+	002 Return 
+
+Method: System.Int32 get_ExperimentPriority()
+
+Disassembly:
+	0x03320B78 BL 0x53E9090
+	0x03320B7C LDR X0, [X31 + 0x10]
+
+ISIL:
+	001 Move W0, [X0+36]
+	002 Return X0
+
+Method: System.Void set_ExperimentPriority(System.Int32 value)
+
+Disassembly:
+	0x03320B80 LDR X1, [X21]
+	0x03320B84 BL 0x29592CC
+
+ISIL:
+	001 Move [X0+36], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03320B88 CBZ X19, 0x3320A34
+	0x03320B8C MOV X0, X19
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(Code.GameLogic.GameEvents.MysteryMachineCurrencyItemId configKey, Currencies currency, System.Int32 amount, System.Int32 displayAmount, System.Int32 experimentPriority)
+
+Disassembly:
+	0x03320B90 BL 0x239BB88
+	0x03320B94 MOV X19, X0
+	0x03320B98 ADD X0, X31, 0x8
+	0x03320B9C BL 0x230514C
+	0x03320BA0 MOV X0, X19
+	0x03320BA4 BL 0x248B7AC
+	0x03320BA8 BL 0x21B9790
+	0x03320BAC SUB X31, X31, 0x160
+	0x03320BB0 STP X29, X30, [X31 + 0x100]
+	0x03320BB4 STP X28, X27, [X31 + 0x110]
+	0x03320BB8 STP X26, X25, [X31 + 0x120]
+	0x03320BBC STP X24, X23, [X31 + 0x130]
+	0x03320BC0 STP X22, X21, [X31 + 0x140]
+	0x03320BC4 STP X20, X19, [X31 + 0x150]
+	0x03320BC8 ADRP X21, 0x2A08000
+	0x03320BCC ADRP X25, 0x23B4000
+	0x03320BD0 MOV X19, X2
+	0x03320BD4 LDRB W8, [X21 + 0x568]
+	0x03320BD8 LDR X25, [X25 + 0x8D0]
+	0x03320BDC MOV X23, X1
+	0x03320BE0 MOV X20, X0
+	0x03320BE4 TBNZ X8, 0x0, 0x3320CA4
+	0x03320BE8 ADRP X0, 0x23AD000
+
+ISIL:
+	001 Move [X31-64], X30
+	002 Move [X31+16], X24
+	003 Move [X31+24], X23
+	004 Move [X31+32], X22
+	005 Move [X31+40], X21
+	006 Move [X31+48], X20
+	007 Move [X31+56], X19
+	008 Move X23, X1
+	009 Move X1, X31
+	010 Move W19, W5
+	011 Move W20, W4
+	012 Move W21, W3
+	013 Move W22, W2
+	014 Move X24, X0
+	015 Call Object..ctor, X0
+	016 Move [X24+16], X23
+	017 Move X0, X24
+	018 Move X1, X23
+	019 Call 0x239F888
+	020 Move [X24+8], W22
+	021 Move [X24+12], W21
+	022 Move X22, [X31+32]
+	023 Move X21, [X31+40]
+	024 Move [X24+16], W20
+	025 Move [X24+20], W19
+	026 Move X20, [X31+48]
+	027 Move X19, [X31+56]
+	028 Move X24, [X31+16]
+	029 Move X23, [X31+24]
+	030 Move X30, [X31+64]
+	031 Return 
+

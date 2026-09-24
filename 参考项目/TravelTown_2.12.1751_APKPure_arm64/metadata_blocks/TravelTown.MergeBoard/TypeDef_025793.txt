@@ -1,0 +1,41 @@
+// Namespace: Merger.MergeBoard.Signals
+public class MergeBoardItemLandedSignal // TypeDefIndex: 25793
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly Entity <ItemEntity>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly Entity <SourceEntity>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private readonly IBoardItemView <ItemView>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private readonly ItemCreatedSource <ItemCreatedSource>k__BackingField; // 0x28
+
+	// Properties
+	public Entity ItemEntity { get; }
+	public Entity SourceEntity { get; }
+	public IBoardItemView ItemView { get; }
+	public ItemCreatedSource ItemCreatedSource { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A7A958 Offset: 0x6A76958 VA: 0x6A7A958
+	public Entity get_ItemEntity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A7A960 Offset: 0x6A76960 VA: 0x6A7A960
+	public Entity get_SourceEntity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A7A968 Offset: 0x6A76968 VA: 0x6A7A968
+	public IBoardItemView get_ItemView() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A7A970 Offset: 0x6A76970 VA: 0x6A7A970
+	public ItemCreatedSource get_ItemCreatedSource() { }
+
+	// RVA: 0x6A7A978 Offset: 0x6A76978 VA: 0x6A7A978
+	public void .ctor(Entity sourceEntity, Entity itemEntity, IBoardItemView itemView, ItemCreatedSource spawnedItemCreatedBy) { }
+}
+

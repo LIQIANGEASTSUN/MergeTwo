@@ -1,0 +1,14 @@
+// Namespace: MergeEngine.ECS.Systems
+[Serializable]
+public class ItemIdPayload // TypeDefIndex: 667
+{
+	// Fields
+	[JsonProperty("itemId")]
+	public string ItemId; // 0x10
+
+	// Methods
+
+	// RVA: 0x628B804 Offset: 0x6287804 VA: 0x628B804
+	public void .ctor() { }
+}
+

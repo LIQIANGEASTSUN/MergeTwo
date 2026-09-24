@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BoardEvent.RemoveItemViaSellComplete : IEvent // TypeDefIndex: 1829
+{
+	// Fields
+	public bool IsNotSellable; // 0x0
+}
+

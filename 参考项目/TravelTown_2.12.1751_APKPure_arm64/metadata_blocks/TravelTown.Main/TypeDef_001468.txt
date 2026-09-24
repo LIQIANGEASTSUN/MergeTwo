@@ -1,0 +1,14 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class ToolSpawningCapability : CapabilityBase // TypeDefIndex: 1468
+{
+	// Fields
+	public List<WeightedTool> Tools; // 0x18
+	public List<WeightedToolLevel> ToolLevels; // 0x20
+
+	// Methods
+
+	// RVA: 0x60118FC Offset: 0x600D8FC VA: 0x60118FC
+	public void .ctor() { }
+}
+

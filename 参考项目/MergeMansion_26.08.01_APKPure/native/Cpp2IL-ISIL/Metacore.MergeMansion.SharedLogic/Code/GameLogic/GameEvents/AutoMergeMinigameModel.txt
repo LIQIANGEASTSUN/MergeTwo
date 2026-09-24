@@ -1,0 +1,217 @@
+Type: Code.GameLogic.GameEvents.AutoMergeMinigameModel
+
+Method: Code.GameLogic.GameEvents.CoreSupportEventMinigameId get_MinigameId()
+
+Disassembly:
+	0x037D8B98 BL 0x239B8E4
+	0x037D8B9C ADRP X0, 0x1F63000
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_MinigameId(Code.GameLogic.GameEvents.CoreSupportEventMinigameId value)
+
+Disassembly:
+	0x037D8BA0 LDR X0, [X0 + 0xB90]
+	0x037D8BA4 BL 0x239B8E4
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Boolean get_IsAutoMergeEnabled_DEPRECATED()
+
+Disassembly:
+	0x037D8BA8 ADRP X0, 0x1F63000
+	0x037D8BAC LDR X0, [X0 + 0xB98]
+
+ISIL:
+	001 Move W0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_IsAutoMergeEnabled_DEPRECATED(System.Boolean value)
+
+Disassembly:
+	0x037D8BB0 BL 0x239B8E4
+	0x037D8BB4 ADRP X0, 0x1F63000
+
+ISIL:
+	001 Move [X0+24], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x037D8BB8 LDR X0, [X0 + 0xBA0]
+	0x037D8BBC BL 0x239B8E4
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(Code.GameLogic.GameEvents.CoreSupportEventMinigameId minigameId)
+
+Disassembly:
+	0x037D8BC0 ADRP X0, 0x1F63000
+	0x037D8BC4 LDR X0, [X0 + 0xBA8]
+	0x037D8BC8 BL 0x239B8E4
+	0x037D8BCC MOVZ W8, 0x1
+	0x037D8BD0 STRB W8, [X20 + 0xE06]
+	0x037D8BD4 CBZ X19, 0x37D8EDC
+	0x037D8BD8 LDR X0, [X19 + 0x50]
+	0x037D8BDC CBZ X0, 0x37D8EDC
+	0x037D8BE0 ADRP X25, 0x1F63000
+	0x037D8BE4 ADRP X22, 0x1F63000
+	0x037D8BE8 LDR X25, [X25 + 0xB78]
+	0x037D8BEC LDR X8, [X0]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move X19, X1
+	005 Move X1, X31
+	006 Move X20, X0
+	007 Call Object..ctor, X0
+	008 Move [X20+16], X19
+	009 Move X0, X20
+	010 Move X1, X19
+	011 Move X20, [X31+16]
+	012 Move X19, [X31+24]
+	013 Move X30, [X31+32]
+	014 Call 0x239F888
+	015 Return 
+
+Method: System.Collections.Generic.List`1<System.ValueTuple`2<Code.GameLogic.GameEvents.ICoreSupportEventMinigameRewardId, System.Collections.Generic.List`1<GameLogic.Player.Rewards.IPlayerReward>>> GetClaimableRewards(GameLogic.Player.IPlayer player)
+
+Disassembly:
+	0x037D8BF0 LDR X22, [X22 + 0xBA8]
+	0x037D8BF4 LDR X9, [X8 + 0x2E8]
+	0x037D8BF8 LDR X1, [X8 + 0x2F0]
+	0x037D8BFC BLR X9
+	0x037D8C00 LDR X1, [X25]
+	0x037D8C04 BL 0x25E8394
+	0x037D8C08 LDR X8, [X22]
+	0x037D8C0C MOV X20, X0
+	0x037D8C10 LDR W9, [X8 + 0xE4]
+	0x037D8C14 CBNZ W9, 0x37D8C24
+	0x037D8C18 MOV X0, X8
+	0x037D8C1C BL 0x239BA64
+	0x037D8C20 LDR X8, [X22]
+	0x037D8C24 LDR X9, [X8 + 0xB8]
+	0x037D8C28 LDR X19, [X9 + 0x8]
+	0x037D8C2C CBNZ X19, 0x37D8C8C
+	0x037D8C30 LDR W10, [X8 + 0xE4]
+	0x037D8C34 CBNZ W10, 0x37D8C48
+	0x037D8C38 MOV X0, X8
+	0x037D8C3C BL 0x239BA64
+	0x037D8C40 LDR X8, [X22]
+	0x037D8C44 LDR X9, [X8 + 0xB8]
+	0x037D8C48 ADRP X8, 0x1F48000
+	0x037D8C4C LDR X8, [X8 + 0x2E0]
+	0x037D8C50 LDR X21, [X9]
+	0x037D8C54 LDR X0, [X8]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move W8, [0x2556DD5]
+	006 Move X21, [0x1F3E7F0]
+	007 Move X19, [0x1F3E7F8]
+	008 Move TEMP, X8
+	009 And TEMP, TEMP, 1
+	010 Compare TEMP, 1
+	011 JumpIfEqual {18}
+	012 Move X0, [0x1F3E7F8]
+	013 Call 0x239F8E4
+	014 Move X0, [0x1F3E7F0]
+	015 Call 0x239F8E4
+	016 Move W8, 1
+	017 Move [X20+3541], W8
+	018 Move X0, [X21]
+	019 Call 0x239FB80
+	020 Move X1, [X19]
+	021 Move X19, X0
+	022 Call 0x272EE2C, X0
+	023 Move X0, X19
+	024 Move X20, [X31+16]
+	025 Move X19, [X31+24]
+	026 Move X30, [X31+32]
+	027 Move X21, [X31+40]
+	028 Return X0
+
+Method: System.Boolean CanClaimReward(GameLogic.Player.IPlayer player, Code.GameLogic.GameEvents.ICoreSupportEventMinigameRewardId id)
+
+Disassembly:
+	0x037D8C58 BL 0x239BB80
+	0x037D8C5C ADRP X8, 0x1F63000
+
+ISIL:
+	001 Move W0, W31
+	002 Return X0
+
+Method: System.Void ClaimReward(GameLogic.Player.IPlayer player, Code.GameLogic.GameEvents.ICoreSupportEventMinigameRewardId id)
+
+Disassembly:
+	0x037D8C60 MOV X1, X21
+
+ISIL:
+	001 Return 
+
+Method: System.Void OnGameTick(GameLogic.Player.IPlayer player)
+
+Disassembly:
+	0x037D8C64 MOV X3, X31
+
+ISIL:
+	001 Return 
+
+Method: System.Void OnInactiveGameTick(GameLogic.Player.IPlayer player, Code.GameLogic.GameEvents.ICoreSupportEventModel eventModel, System.Boolean inReview)
+
+Disassembly:
+	0x037D8C68 LDR X8, [X8 + 0xB90]
+
+ISIL:
+	001 Return 
+
+Method: System.Void OnTokenAmountChanged(GameLogic.Player.IPlayer player, System.Int64 amount, CurrencySource source)
+
+Disassembly:
+	0x037D8C6C MOV X19, X0
+
+ISIL:
+	001 Return 
+
+Method: System.Boolean CanFinalizeEventEarly(GameLogic.Player.IPlayer player)
+
+Disassembly:
+	0x037D8C70 LDR X2, [X8]
+	0x037D8C74 BL 0x290C06C
+
+ISIL:
+	001 Move W0, W31
+	002 Return X0
+
+Method: System.Void Finalize(GameLogic.Player.IPlayer player)
+
+Disassembly:
+	0x037D8C78 LDR X8, [X22]
+
+ISIL:
+	001 Return 
+
+Method: System.Void SetAutoMergeEnabled(System.Boolean enabled)
+
+Disassembly:
+	0x037D8C7C MOV X1, X19
+	0x037D8C80 LDR X0, [X8 + 0xB8]
+
+ISIL:
+	001 Move [X0+24], W1
+	002 Return 
+

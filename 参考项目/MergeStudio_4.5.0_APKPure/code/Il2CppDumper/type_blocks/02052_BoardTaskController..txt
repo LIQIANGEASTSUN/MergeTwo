@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardTaskController.<>c__DisplayClass46_0 // TypeDefIndex: 2052
+{
+	// Fields
+	public Action<bool> callback; // 0x8
+
+	// Methods
+
+	// RVA: 0x196023C Offset: 0x196023C VA: 0x196023C
+	public void .ctor() { }
+
+	// RVA: 0x1960244 Offset: 0x1960244 VA: 0x1960244
+	internal void <InitializeTasks>b__0() { }
+}
+

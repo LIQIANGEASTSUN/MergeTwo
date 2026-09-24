@@ -1,0 +1,27 @@
+// Namespace: MergePuzzle
+public class DailyChallengePickBoxSpawnerAdaptor : AdaptorBase // TypeDefIndex: 1605
+{
+	// Fields
+	private DailyChallengePickBoxConfig _activeConfig; // 0xC
+
+	// Methods
+
+	// RVA: 0x18BD060 Offset: 0x18BD060 VA: 0x18BD060
+	public void .ctor(string setIDLevel, DailyChallengePickBoxConfig activeConfigBase) { }
+
+	// RVA: 0x18BD088 Offset: 0x18BD088 VA: 0x18BD088
+	public void .ctor(BoardItemDailyChallengePickBox boardItemDailyChallengePickBox) { }
+
+	// RVA: 0x18BD754 Offset: 0x18BD754 VA: 0x18BD754
+	public List<DailyChallengeRewardData> GetSpawnedItems() { }
+
+	// RVA: 0x18BD1E8 Offset: 0x18BD1E8 VA: 0x18BD1E8
+	public List<DailyChallengeRewardData> CreateSpawnedItemWithLocal(List<SpawnedItem> spawnedItemsList) { }
+
+	// RVA: 0x18BD770 Offset: 0x18BD770 VA: 0x18BD770
+	public void UpdateSpawnedItems(ItemRewardConvertEvent.FeatureStatusUpdated e) { }
+
+	// RVA: 0x18BD914 Offset: 0x18BD914 VA: 0x18BD914
+	private void ConvertDailyChallengeReward(ItemRewardConvertEvent.FeatureStatusUpdated e, DailyChallengeRewardData rewardData) { }
+}
+

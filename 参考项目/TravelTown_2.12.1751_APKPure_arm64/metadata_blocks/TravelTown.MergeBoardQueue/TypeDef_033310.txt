@@ -1,0 +1,57 @@
+// Namespace: Merger.MergeBoardQueue.Data.TickResultArgs
+public class ItemDequeuedResult // TypeDefIndex: 33310
+{
+	// Fields
+	[CompilerGenerated]
+	private Entity <Entity>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private ItemAnalyticsData <AnalyticsData>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private QueuedItem <Item>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private int <DestinationPosition>k__BackingField; // 0x28
+
+	// Properties
+	public Entity Entity { get; set; }
+	public ItemAnalyticsData AnalyticsData { get; set; }
+	public QueuedItem Item { get; set; }
+	public int DestinationPosition { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A5BA84 Offset: 0x6A57A84 VA: 0x6A5BA84
+	public Entity get_Entity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A5BA8C Offset: 0x6A57A8C VA: 0x6A5BA8C
+	private void set_Entity(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A5BA94 Offset: 0x6A57A94 VA: 0x6A5BA94
+	public ItemAnalyticsData get_AnalyticsData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A5BA9C Offset: 0x6A57A9C VA: 0x6A5BA9C
+	private void set_AnalyticsData(ItemAnalyticsData value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A5BAA4 Offset: 0x6A57AA4 VA: 0x6A5BAA4
+	public QueuedItem get_Item() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A5BAAC Offset: 0x6A57AAC VA: 0x6A5BAAC
+	private void set_Item(QueuedItem value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A5BAB4 Offset: 0x6A57AB4 VA: 0x6A5BAB4
+	public int get_DestinationPosition() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A5BABC Offset: 0x6A57ABC VA: 0x6A5BABC
+	private void set_DestinationPosition(int value) { }
+
+	// RVA: 0x6A57234 Offset: 0x6A53234 VA: 0x6A57234
+	public void .ctor(Entity entity, ItemAnalyticsData itemAnalyticsData, QueuedItem item, int destinationPosition) { }
+}
+

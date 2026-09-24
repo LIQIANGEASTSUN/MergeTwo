@@ -1,0 +1,151 @@
+// Namespace: Merger.Boosters.Declarations.Definitions
+[Serializable]
+public class RemoteBoosterItem : RemoteItemBase, IBoosterItem, IItem, IUniqueStringKeyAsset // TypeDefIndex: 7826
+{
+	// Fields
+	[CompilerGenerated]
+	private string <UniqueId>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private TimeDurationCapability <TimeDuration>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private MergeItemCapability <MergeItem>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private BoosterRemoteConfig <BoosterRemoteConfig>k__BackingField; // 0x48
+	[CompilerGenerated]
+	private List<ClientAsset> <ClientAssets>k__BackingField; // 0x50
+	[JsonIgnore]
+	private ActivationCapability _activationCapability; // 0x58
+	[CompilerGenerated]
+	private RemoteContentBundleHandle <BundleHandle>k__BackingField; // 0x60
+	[CompilerGenerated]
+	private IItemInfoData <ItemInfoData>k__BackingField; // 0x68
+	[CompilerGenerated]
+	private bool <AutoOpenTooltip>k__BackingField; // 0x70
+
+	// Properties
+	[JsonProperty("boosterId")]
+	public override string UniqueId { get; set; }
+	protected override string LocalSpritesPath { get; }
+	protected override string SpriteLocatorUniqueId { get; }
+	[JsonProperty("type")]
+	private string SerializedBoosterType { set; }
+	[JsonIgnore]
+	public BoosterType BoosterType { get; set; }
+	[JsonProperty("timeDuration")]
+	public TimeDurationCapability TimeDuration { get; set; }
+	[JsonProperty("mergeItemConfig")]
+	public MergeItemCapability MergeItem { get; set; }
+	[JsonProperty("serializedBoosterConfig")]
+	public BoosterRemoteConfig BoosterRemoteConfig { get; set; }
+	[JsonProperty("clientAssets")]
+	public List<ClientAsset> ClientAssets { get; set; }
+	[JsonIgnore]
+	public CooldownBlockCapability CooldownBlock { get; }
+	[JsonIgnore]
+	public ActivationCapability Activation { get; }
+	public string ItemName { get; }
+	[JsonIgnore]
+	public RemoteContentBundleHandle BundleHandle { get; set; }
+	[JsonIgnore]
+	public string BundleAssetUrl { get; }
+	public IItemInfoData ItemInfoData { get; set; }
+	[JsonIgnore]
+	public bool AutoOpenTooltip { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x65C9408 Offset: 0x65C5408 VA: 0x65C9408 Slot: 9
+	public override string get_UniqueId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C9410 Offset: 0x65C5410 VA: 0x65C9410 Slot: 10
+	public override void set_UniqueId(string value) { }
+
+	// RVA: 0x65C9418 Offset: 0x65C5418 VA: 0x65C9418 Slot: 12
+	protected override string get_LocalSpritesPath() { }
+
+	// RVA: 0x65C947C Offset: 0x65C547C VA: 0x65C947C Slot: 13
+	protected override string get_SpriteLocatorUniqueId() { }
+
+	// RVA: 0x65C94E8 Offset: 0x65C54E8 VA: 0x65C94E8
+	private void set_SerializedBoosterType(string value) { }
+
+	// RVA: 0x65C9584 Offset: 0x65C5584 VA: 0x65C9584
+	private void set_BoosterType(BoosterType value) { }
+
+	// RVA: 0x65BAAA0 Offset: 0x65B6AA0 VA: 0x65BAAA0
+	public BoosterType get_BoosterType() { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C9604 Offset: 0x65C5604 VA: 0x65C9604 Slot: 14
+	public TimeDurationCapability get_TimeDuration() { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C960C Offset: 0x65C560C VA: 0x65C960C
+	public void set_TimeDuration(TimeDurationCapability value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C9614 Offset: 0x65C5614 VA: 0x65C9614 Slot: 17
+	public MergeItemCapability get_MergeItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C961C Offset: 0x65C561C VA: 0x65C961C
+	public void set_MergeItem(MergeItemCapability value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C9624 Offset: 0x65C5624 VA: 0x65C9624
+	public BoosterRemoteConfig get_BoosterRemoteConfig() { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C962C Offset: 0x65C562C VA: 0x65C962C
+	public void set_BoosterRemoteConfig(BoosterRemoteConfig value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C9634 Offset: 0x65C5634 VA: 0x65C9634
+	public List<ClientAsset> get_ClientAssets() { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C963C Offset: 0x65C563C VA: 0x65C963C
+	private void set_ClientAssets(List<ClientAsset> value) { }
+
+	// RVA: 0x65BAAB8 Offset: 0x65B6AB8 VA: 0x65BAAB8 Slot: 16
+	public CooldownBlockCapability get_CooldownBlock() { }
+
+	// RVA: 0x65C9644 Offset: 0x65C5644 VA: 0x65C9644 Slot: 15
+	public ActivationCapability get_Activation() { }
+
+	// RVA: 0x65C964C Offset: 0x65C564C VA: 0x65C964C Slot: 18
+	public string get_ItemName() { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C9738 Offset: 0x65C5738 VA: 0x65C9738
+	public RemoteContentBundleHandle get_BundleHandle() { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C9740 Offset: 0x65C5740 VA: 0x65C9740
+	public void set_BundleHandle(RemoteContentBundleHandle value) { }
+
+	// RVA: 0x65C974C Offset: 0x65C574C VA: 0x65C974C Slot: 19
+	public string get_BundleAssetUrl() { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C9754 Offset: 0x65C5754 VA: 0x65C9754 Slot: 22
+	public IItemInfoData get_ItemInfoData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C975C Offset: 0x65C575C VA: 0x65C975C Slot: 23
+	public void set_ItemInfoData(IItemInfoData value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C9764 Offset: 0x65C5764 VA: 0x65C9764 Slot: 24
+	public bool get_AutoOpenTooltip() { }
+
+	[CompilerGenerated]
+	// RVA: 0x65C976C Offset: 0x65C576C VA: 0x65C976C Slot: 25
+	public void set_AutoOpenTooltip(bool value) { }
+
+	// RVA: 0x65C9778 Offset: 0x65C5778 VA: 0x65C9778
+	public void .ctor() { }
+}
+

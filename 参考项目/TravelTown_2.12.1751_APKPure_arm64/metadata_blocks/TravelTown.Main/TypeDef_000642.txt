@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class CombiningSystem.<>c__DisplayClass33_0 // TypeDefIndex: 642
+{
+	// Fields
+	public string itemToExtract; // 0x10
+
+	// Methods
+
+	// RVA: 0x627E664 Offset: 0x627A664 VA: 0x627E664
+	public void .ctor() { }
+
+	// RVA: 0x627E99C Offset: 0x627A99C VA: 0x627E99C
+	internal bool <ExtractItem>b__0(ItemPayloadBase item) { }
+}
+

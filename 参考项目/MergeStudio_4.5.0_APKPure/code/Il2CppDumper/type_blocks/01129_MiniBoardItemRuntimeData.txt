@@ -1,0 +1,69 @@
+// Namespace: Paxie.MergeStudio.Features.MiniBoard
+[Serializable]
+public class MiniBoardItemRuntimeData : IItemRuntimeData // TypeDefIndex: 1129
+{
+	// Fields
+	public string Name; // 0x8
+	public long NextSpawnerUpdateMs; // 0x10
+	public int UpdateStepMs; // 0x18
+	public bool SpawnerHintLock; // 0x1C
+	public int SkipPrice; // 0x20
+	public BoardItemData BoardItemData; // 0x24
+	public Vector3 PreviousPosition; // 0x28
+	public Coordinate PreviousIndexForSellable; // 0x34
+	public MiniBoardItemEntity ItemEntity; // 0x3C
+	public int TimeRequiredToExitNoCapacity; // 0x40
+	public Sequence SpawnerHintSequence; // 0x44
+	public Sequence ClickSequence; // 0x48
+	public Sequence PanelSpawnSequence; // 0x4C
+	public Sequence MergeHintSequence; // 0x50
+	public bool SpawnAnimating; // 0x54
+	public bool IsFlyingToTask; // 0x55
+	public GameObject RemoveParticle; // 0x58
+	[CompilerGenerated]
+	private bool <MergeHintLock>k__BackingField; // 0x5C
+	public bool ClickDownLock; // 0x5D
+	public bool SpawnLock; // 0x5E
+	public bool MergeTargetLock; // 0x5F
+	public bool DragLock; // 0x60
+
+	// Properties
+	public bool MergeHintLock { get; set; }
+	public IItemEntity GetItemEntity { get; }
+	public int GetUpdateStepMs { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x17C5534 Offset: 0x17C5534 VA: 0x17C5534
+	public bool get_MergeHintLock() { }
+
+	[CompilerGenerated]
+	// RVA: 0x17C553C Offset: 0x17C553C VA: 0x17C553C
+	public void set_MergeHintLock(bool value) { }
+
+	// RVA: 0x17C5544 Offset: 0x17C5544 VA: 0x17C5544 Slot: 4
+	public IItemEntity get_GetItemEntity() { }
+
+	// RVA: 0x17C554C Offset: 0x17C554C VA: 0x17C554C Slot: 5
+	public int get_GetUpdateStepMs() { }
+
+	// RVA: 0x17C5554 Offset: 0x17C5554 VA: 0x17C5554 Slot: 6
+	public void SetUpdateStepMs(int updateStepMs) { }
+
+	// RVA: 0x17C555C Offset: 0x17C555C VA: 0x17C555C Slot: 7
+	public void SetTimeRequiredToExitNoCapacity(int time) { }
+
+	// RVA: 0x17C5564 Offset: 0x17C5564 VA: 0x17C5564 Slot: 8
+	public void SetNextSpawnerUpdateMs(long spawnerUpdateMs) { }
+
+	// RVA: 0x17C5574 Offset: 0x17C5574 VA: 0x17C5574 Slot: 9
+	public void ChangeNextSpawnerUpdateMs(long changedUpdateMs) { }
+
+	// RVA: 0x17C558C Offset: 0x17C558C VA: 0x17C558C Slot: 10
+	public void SetSkipPrice(int skipPrice) { }
+
+	// RVA: 0x17BC510 Offset: 0x17BC510 VA: 0x17BC510
+	public void .ctor() { }
+}
+

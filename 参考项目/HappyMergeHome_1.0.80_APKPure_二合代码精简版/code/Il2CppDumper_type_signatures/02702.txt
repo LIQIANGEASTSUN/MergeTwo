@@ -1,0 +1,64 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class MergeManager.<>c // TypeDefIndex: 2702
+{
+	// Fields
+	public static readonly MergeManager.<>c <>9; // 0x0
+	public static Predicate<TableBag> <>9__50_0; // 0x4
+	public static Predicate<TableBagBuilding> <>9__219_0; // 0x8
+	public static Predicate<StorageMergeItem> <>9__222_0; // 0xC
+	public static Comparison<TableMergeItem> <>9__279_0; // 0x10
+	public static Func<KeyValuePair<int, List<int>>, int> <>9__297_0; // 0x14
+	public static Func<KeyValuePair<int, List<int>>, int> <>9__297_1; // 0x18
+	public static Func<KeyValuePair<int, List<int>>, List<int>> <>9__297_2; // 0x1C
+	public static Func<KeyValuePair<int, List<int>>, int> <>9__297_3; // 0x20
+	public static Func<KeyValuePair<int, List<int>>, int> <>9__297_4; // 0x24
+	public static Func<KeyValuePair<int, List<int>>, List<int>> <>9__297_5; // 0x28
+	public static Action <>9__305_0; // 0x2C
+
+	// Methods
+
+	// RVA: 0x2C28578 Offset: 0x2C28578 VA: 0x2C28578
+	private static void .cctor() { }
+
+	// RVA: 0x2C285EC Offset: 0x2C285EC VA: 0x2C285EC
+	public void .ctor() { }
+
+	// RVA: 0x2C285F4 Offset: 0x2C285F4 VA: 0x2C285F4
+	internal bool <InitMergeBoard>b__50_0(TableBag x) { }
+
+	// RVA: 0x2C2861C Offset: 0x2C2861C VA: 0x2C2861C
+	internal bool <GetBuildingBagCapacity>b__219_0(TableBagBuilding x) { }
+
+	// RVA: 0x2C28644 Offset: 0x2C28644 VA: 0x2C28644
+	internal bool <GetEmptBoardItemCount>b__222_0(StorageMergeItem x) { }
+
+	// RVA: 0x2C28664 Offset: 0x2C28664 VA: 0x2C28664
+	internal int <FindAllProductBoardItem>b__279_0(TableMergeItem x, TableMergeItem y) { }
+
+	// RVA: 0x2C28698 Offset: 0x2C28698 VA: 0x2C28698
+	internal int <GetCodeLevelMap>b__297_0(KeyValuePair<int, List<int>> p) { }
+
+	// RVA: 0x2C286D8 Offset: 0x2C286D8 VA: 0x2C286D8
+	internal int <GetCodeLevelMap>b__297_1(KeyValuePair<int, List<int>> p) { }
+
+	// RVA: 0x2C28718 Offset: 0x2C28718 VA: 0x2C28718
+	internal List<int> <GetCodeLevelMap>b__297_2(KeyValuePair<int, List<int>> o) { }
+
+	// RVA: 0x2C28758 Offset: 0x2C28758 VA: 0x2C28758
+	internal int <GetCodeLevelMap>b__297_3(KeyValuePair<int, List<int>> p) { }
+
+	// RVA: 0x2C28798 Offset: 0x2C28798 VA: 0x2C28798
+	internal int <GetCodeLevelMap>b__297_4(KeyValuePair<int, List<int>> p) { }
+
+	// RVA: 0x2C287D8 Offset: 0x2C287D8 VA: 0x2C287D8
+	internal List<int> <GetCodeLevelMap>b__297_5(KeyValuePair<int, List<int>> o) { }
+
+	// RVA: 0x2C28818 Offset: 0x2C28818 VA: 0x2C28818
+	internal void <ResetBuilding>b__305_0() { }
+
+	// RVA: 0x2C2881C Offset: 0x2C2881C VA: 0x2C2881C
+	internal object <.cctor>b__326_0() { }
+}
+

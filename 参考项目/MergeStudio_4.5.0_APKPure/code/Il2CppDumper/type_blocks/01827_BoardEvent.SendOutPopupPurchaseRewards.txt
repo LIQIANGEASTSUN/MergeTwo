@@ -1,0 +1,8 @@
+// Namespace: 
+public struct BoardEvent.SendOutPopupPurchaseRewards : IEvent // TypeDefIndex: 1827
+{
+	// Fields
+	public string PackageID; // 0x0
+	public bool IsShopPopup; // 0x4
+}
+

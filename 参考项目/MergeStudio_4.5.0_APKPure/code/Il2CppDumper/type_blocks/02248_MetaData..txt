@@ -1,0 +1,19 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MetaData.<>c__DisplayClass9_0 // TypeDefIndex: 2248
+{
+	// Fields
+	public string platformBasedID; // 0x8
+
+	// Methods
+
+	// RVA: 0x19B069C Offset: 0x19B069C VA: 0x19B069C
+	public void .ctor() { }
+
+	// RVA: 0x19B2A10 Offset: 0x19B2A10 VA: 0x19B2A10
+	internal bool <FindPackage>b__0(ShopBasePackage item) { }
+
+	// RVA: 0x19B2A44 Offset: 0x19B2A44 VA: 0x19B2A44
+	internal bool <FindPackage>b__1(ShopBasePackage item) { }
+}
+

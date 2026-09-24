@@ -1,0 +1,9 @@
+Type: GameLogic.Player.Items.Collectable.ICalculateCollectValue
+
+Method: System.ValueTuple`2<Currencies, System.Int32> CalculateCollectValue(GameLogic.Player.Items.IItemDefinition itemDefinition)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

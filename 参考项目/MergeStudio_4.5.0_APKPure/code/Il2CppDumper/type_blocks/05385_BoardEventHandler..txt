@@ -1,0 +1,33 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardEventHandler.<>c // TypeDefIndex: 5385
+{
+	// Fields
+	public static readonly BoardEventHandler.<>c <>9; // 0x0
+	public static Predicate<EventBoardConfigItem> <>9__4_3; // 0x4
+	public static Predicate<EventBoardConfigItem> <>9__4_0; // 0x8
+	public static Func<EventBoardConfigItem, long> <>9__4_1; // 0xC
+	public static Func<EventBoardConfigItem, long> <>9__8_0; // 0x10
+
+	// Methods
+
+	// RVA: 0x1EB49D8 Offset: 0x1EB49D8 VA: 0x1EB49D8
+	private static void .cctor() { }
+
+	// RVA: 0x1EB4A4C Offset: 0x1EB4A4C VA: 0x1EB4A4C
+	public void .ctor() { }
+
+	// RVA: 0x1EB4A54 Offset: 0x1EB4A54 VA: 0x1EB4A54
+	internal bool <InitializeEntities>b__4_3(EventBoardConfigItem e) { }
+
+	// RVA: 0x1EB4A78 Offset: 0x1EB4A78 VA: 0x1EB4A78
+	internal bool <InitializeEntities>b__4_0(EventBoardConfigItem item) { }
+
+	// RVA: 0x1EB4A9C Offset: 0x1EB4A9C VA: 0x1EB4A9C
+	internal long <InitializeEntities>b__4_1(EventBoardConfigItem i) { }
+
+	// RVA: 0x1EB4AB8 Offset: 0x1EB4AB8 VA: 0x1EB4AB8
+	internal long <FindFinishWaitingBoardEvent>b__8_0(EventBoardConfigItem i) { }
+}
+

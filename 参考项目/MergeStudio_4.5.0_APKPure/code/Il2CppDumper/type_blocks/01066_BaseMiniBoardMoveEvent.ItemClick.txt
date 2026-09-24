@@ -1,0 +1,8 @@
+// Namespace: 
+public struct BaseMiniBoardMoveEvent.ItemClick : IEvent // TypeDefIndex: 1066
+{
+	// Fields
+	public MiniBoardMovable Moving; // 0x0
+	public MiniBoardMovable.InteractionStatus InteractionStatus; // 0x4
+}
+

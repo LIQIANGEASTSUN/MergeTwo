@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardItemConsumerSystem.<>c // TypeDefIndex: 897
+{
+	// Fields
+	public static readonly BoardItemConsumerSystem.<>c <>9; // 0x0
+	public static Func<IdComponent, bool> <>9__7_1; // 0x8
+
+	// Methods
+
+	// RVA: 0x6661810 Offset: 0x665D810 VA: 0x6661810
+	private static void .cctor() { }
+
+	// RVA: 0x6661878 Offset: 0x665D878 VA: 0x6661878
+	public void .ctor() { }
+
+	// RVA: 0x6661880 Offset: 0x665D880 VA: 0x6661880
+	internal bool <GetTaskConsumeItems>b__7_1(IdComponent id) { }
+}
+

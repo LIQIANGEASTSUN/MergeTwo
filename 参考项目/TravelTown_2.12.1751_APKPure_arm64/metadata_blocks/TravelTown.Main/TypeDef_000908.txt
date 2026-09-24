@@ -1,0 +1,21 @@
+// Namespace: MergeEngine.ECS.Systems.Board
+public class ResourcesRefillingStateSystem : StateSystemBase<CoreBoardResourcesRefilling> // TypeDefIndex: 908
+{
+	// Fields
+	[Inject]
+	private IResourceReplenishmentModel _resourceReplenishmentModel; // 0x48
+	[InjectSystem]
+	private ResourceReplenishmentSystem _resourceReplenishmentSystem; // 0x50
+
+	// Methods
+
+	// RVA: 0x6666E38 Offset: 0x6662E38 VA: 0x6666E38 Slot: 13
+	protected override void LoadState(CoreBoardResourcesRefilling newState) { }
+
+	// RVA: 0x6667118 Offset: 0x6663118 VA: 0x6667118
+	private void UpdateResourceRefill(IRewardType rewardType, BoardResourceRefill refillState) { }
+
+	// RVA: 0x6667294 Offset: 0x6663294 VA: 0x6667294
+	public void .ctor() { }
+}
+

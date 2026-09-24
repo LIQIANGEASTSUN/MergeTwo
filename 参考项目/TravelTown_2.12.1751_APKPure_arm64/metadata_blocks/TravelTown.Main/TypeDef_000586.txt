@@ -1,0 +1,15 @@
+// Namespace: MergeEngine.Model.Board
+public interface IBoardEventQueueModel // TypeDefIndex: 586
+{
+	// Properties
+	public abstract BindableProperty<int> BoardEventQueueCount { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void SetBoardEventQueue(BoardQueueBackendState boardEventQueueState);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract BindableProperty<int> get_BoardEventQueueCount();
+}
+

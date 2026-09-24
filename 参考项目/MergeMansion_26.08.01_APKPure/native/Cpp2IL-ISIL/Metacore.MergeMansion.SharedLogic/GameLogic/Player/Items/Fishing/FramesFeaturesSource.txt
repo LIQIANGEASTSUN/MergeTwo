@@ -1,0 +1,103 @@
+Type: GameLogic.Player.Items.Fishing.FramesFeaturesSource
+
+Method: System.String get_ConfigKey()
+
+Disassembly:
+	0x0362D804 MOV X0, X8
+	0x0362D808 BL 0x239BA64
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.String get_ItemType()
+
+Disassembly:
+	0x0362D80C MOV W0, W19
+	0x0362D810 LDP X20, X19, [X31 + 0x10]
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: GameLogic.Player.Items.Fishing.FramesFeatures ToConfigData(GameLogic.Player.Items.Production.IProducerFactory producerFactory)
+
+Disassembly:
+	0x0362D814 MOV X1, X31
+	0x0362D818 LDR X30, [X31], #0x20
+	0x0362D81C B 0x414FB98
+	0x0362D820 BL 0x239BB90
+	0x0362D824 STP X30, X25, [X31 - 0x40]!
+	0x0362D828 STP X24, X23, [X31 + 0x10]
+	0x0362D82C STP X22, X21, [X31 + 0x20]
+	0x0362D830 STP X20, X19, [X31 + 0x30]
+	0x0362D834 ADRP X23, 0x26FC000
+	0x0362D838 MOV X19, X3
+	0x0362D83C MOV X22, X2
+	0x0362D840 LDRB W8, [X23 + 0xD20]
+	0x0362D844 MOV X20, X1
+	0x0362D848 MOV X21, X0
+	0x0362D84C TBNZ X8, 0x0, 0x362D8AC
+	0x0362D850 ADRP X0, 0x2105000
+	0x0362D854 LDR X0, [X0 + 0xE0]
+	0x0362D858 BL 0x239B8E4
+	0x0362D85C ADRP X0, 0x2100000
+	0x0362D860 LDR X0, [X0 + 0x8A0]
+	0x0362D864 BL 0x239B8E4
+	0x0362D868 ADRP X0, 0x20A7000
+	0x0362D86C LDR X0, [X0 + 0xD50]
+	0x0362D870 BL 0x239B8E4
+	0x0362D874 ADRP X0, 0x20A8000
+	0x0362D878 LDR X0, [X0 + 0x7B0]
+	0x0362D87C BL 0x239B8E4
+	0x0362D880 ADRP X0, 0x20BC000
+	0x0362D884 LDR X0, [X0 + 0x7E8]
+	0x0362D888 BL 0x239B8E4
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move X19, X0
+	006 Move W8, [0x2700CFA]
+	007 Move X20, [0x21079B8]
+	008 Move TEMP, X8
+	009 And TEMP, TEMP, 1
+	010 Compare TEMP, 1
+	011 JumpIfEqual {16}
+	012 Move X0, [0x21079B8]
+	013 Call 0x239F8E4
+	014 Move W8, 1
+	015 Move [X21+3322], W8
+	016 Move X0, [X19+24]
+	017 Move X1, X31
+	018 Call ItemConverter.ConvertToConfigKey, X0
+	019 Move X8, [X20]
+	020 Move W19, W0
+	021 Move X0, X8
+	022 Call 0x239FB80
+	023 Move X1, X31
+	024 Move X20, X0
+	025 Call Object..ctor, X0
+	026 Move W8, 1
+	027 Move X0, X20
+	028 Move [X20+20], W19
+	029 Move [X20+16], W8
+	030 Move X20, [X31+16]
+	031 Move X19, [X31+24]
+	032 Move X30, [X31+32]
+	033 Move X21, [X31+40]
+	034 Return X0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0362D88C ADRP X0, 0x2105000
+	0x0362D890 LDR X0, [X0 + 0xE8]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+

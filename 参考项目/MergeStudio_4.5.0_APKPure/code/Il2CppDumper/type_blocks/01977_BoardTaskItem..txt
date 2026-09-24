@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardTaskItem.<>c__DisplayClass45_0 // TypeDefIndex: 1977
+{
+	// Fields
+	public BoardTaskGoal goal; // 0x8
+	public BoardTaskItem <>4__this; // 0xC
+
+	// Methods
+
+	// RVA: 0x1949354 Offset: 0x1949354 VA: 0x1949354
+	public void .ctor() { }
+
+	// RVA: 0x1949E94 Offset: 0x1949E94 VA: 0x1949E94
+	internal bool <ReadyToDone>b__0(BoardPositionEntity position) { }
+}
+

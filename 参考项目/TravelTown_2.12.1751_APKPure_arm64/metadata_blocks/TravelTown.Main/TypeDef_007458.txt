@@ -1,0 +1,33 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ActiveOrdersBubbleDropProbabilityModifier.<>c // TypeDefIndex: 7458
+{
+	// Fields
+	public static readonly ActiveOrdersBubbleDropProbabilityModifier.<>c <>9; // 0x0
+	public static Func<SingleTaskOrderProgress, bool> <>9__13_0; // 0x8
+	public static Func<ItemMultiple, IMergeGraphItem> <>9__13_3; // 0x10
+	public static Func<SingleTaskOrderProgress, <>f__AnonymousType4<string, List<IMergeGraphItem>>> <>9__13_1; // 0x18
+	public static Func<<>f__AnonymousType4<string, List<IMergeGraphItem>>, IEnumerable<OrderData>> <>9__13_2; // 0x20
+
+	// Methods
+
+	// RVA: 0x657CC2C Offset: 0x6578C2C VA: 0x657CC2C
+	private static void .cctor() { }
+
+	// RVA: 0x657CC94 Offset: 0x6578C94 VA: 0x657CC94
+	public void .ctor() { }
+
+	// RVA: 0x657CC9C Offset: 0x6578C9C VA: 0x657CC9C
+	internal bool <get_Objectives>b__13_0(SingleTaskOrderProgress orderProgress) { }
+
+	// RVA: 0x657CD58 Offset: 0x6578D58 VA: 0x657CD58
+	internal <>f__AnonymousType4<string, List<IMergeGraphItem>> <get_Objectives>b__13_1(SingleTaskOrderProgress orderProgress) { }
+
+	// RVA: 0x657CF7C Offset: 0x6578F7C VA: 0x657CF7C
+	internal IMergeGraphItem <get_Objectives>b__13_3(ItemMultiple itemMultiple) { }
+
+	// RVA: 0x657D044 Offset: 0x6579044 VA: 0x657D044
+	internal IEnumerable<OrderData> <get_Objectives>b__13_2(<>f__AnonymousType4<string, List<IMergeGraphItem>> obj) { }
+}
+

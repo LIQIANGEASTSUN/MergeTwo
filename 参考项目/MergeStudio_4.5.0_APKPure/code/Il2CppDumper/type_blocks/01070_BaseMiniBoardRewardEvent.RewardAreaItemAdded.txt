@@ -1,0 +1,8 @@
+// Namespace: 
+public struct BaseMiniBoardRewardEvent.RewardAreaItemAdded : IEvent // TypeDefIndex: 1070
+{
+	// Fields
+	public int AddedItemCount; // 0x0
+	public bool UpdateBoardIcon; // 0x4
+}
+

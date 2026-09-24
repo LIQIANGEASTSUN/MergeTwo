@@ -1,0 +1,96 @@
+Type: GameLogic.Player.Items.Sink.MultiTargetSinkStateFactory+<>c
+
+Method: System.Void .cctor()
+
+Disassembly:
+	0x036096D4 MOV X20, X0
+	0x036096D8 BL 0x44E8DEC
+	0x036096DC MOV X0, X31
+	0x036096E0 STR W19, [X20 + 0x10]
+	0x036096E4 BL 0x44ECB1C
+	0x036096E8 STR W0, [X20 + 0x18]
+	0x036096EC LDP X20, X19, [X31 + 0x10]
+	0x036096F0 LDR X30, [X31], #0x20
+	0x036096F4 RET
+	0x036096F8 LDR X8, [X0 + 0x10]
+	0x036096FC LDR W1, [X0 + 0x18]
+	0x03609700 LDR X2, [X0 + 0x20]
+	0x03609704 MOV X0, X8
+	0x03609708 B 0x36081A4
+	0x0360970C LDR W8, [X0 + 0x10]
+	0x03609710 CMP W8, 0x1
+	0x03609714 B.EQ 0x3609720
+	0x03609718 ADDS W31, W8, 0x3
+	0x0360971C B.NE 0x3609724
+	0x03609720 B 0x3609B90
+	0x03609724 RET
+	0x03609728 SUB X31, X31, 0x70
+	0x0360972C STP X0, X30, [X31 + 0x28]
+	0x03609730 STP X24, X23, [X31 + 0x40]
+	0x03609734 STP X22, X21, [X31 + 0x50]
+	0x03609738 STP X20, X19, [X31 + 0x60]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move W8, [0x2724B9A]
+	005 Move X20, [0x212C568]
+	006 Move TEMP, X8
+	007 And TEMP, TEMP, 1
+	008 Compare TEMP, 1
+	009 JumpIfEqual {14}
+	010 Move X0, [0x212C568]
+	011 Call 0x239F8E4
+	012 Move W8, 1
+	013 Move [X19+2970], W8
+	014 Move X0, [X20]
+	015 Call 0x239FB80
+	016 Move X1, X31
+	017 Move X19, X0
+	018 Call Object..ctor, X0
+	019 Move X8, [X20]
+	020 Move X1, X19
+	021 Move X8, [X8+184]
+	022 Move [X8], X19
+	023 Move X8, [X20]
+	024 Move X20, [X31+16]
+	025 Move X19, [X31+24]
+	026 Move X0, [X8+184]
+	027 Move X30, [X31+32]
+	028 Call 0x239F888
+	029 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0360973C ADRP X19, 0x2720000
+	0x03609740 MOV X20, X0
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Int32 <.ctor>b__9_0(System.ValueTuple`2<System.Int32, System.Int32> score)
+
+Disassembly:
+	0x03609744 LDRB W8, [X19 + 0xBD2]
+	0x03609748 TBNZ X8, 0x0, 0x360979C
+
+ISIL:
+	001 Move X0, X1
+	002 Return X0
+
+Method: System.Int32 <.ctor>b__9_1(System.ValueTuple`2<System.Int32, System.Int32> score)
+
+Disassembly:
+	0x0360974C ADRP X0, 0x2117000
+	0x03609750 LDR X0, [X0 + 0xC48]
+
+ISIL:
+	001 Move X0, X1
+	002 ShiftRight X0, 32
+	003 And X0, X0, 0x7FFFFFFF
+	004 Return X0
+

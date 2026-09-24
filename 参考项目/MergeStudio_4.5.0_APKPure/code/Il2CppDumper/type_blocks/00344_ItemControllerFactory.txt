@@ -1,0 +1,38 @@
+// Namespace: Paxie.MergePuzzle
+public class ItemControllerFactory // TypeDefIndex: 344
+{
+	// Fields
+	private readonly CommonFactoryService _factoryService; // 0x8
+	private readonly ObjectPoolerBase _objectPool; // 0xC
+	private readonly Dictionary<Type, ItemControllerModuleBase> _prefabsByType; // 0x10
+
+	// Methods
+
+	// RVA: 0x1B9372C Offset: 0x1B9372C VA: 0x1B9372C
+	public void .ctor(CommonFactoryService factoryService, ObjectPoolerBase objectPool) { }
+
+	// RVA: -1 Offset: -1
+	public T GetItemModule<T>(ItemController itemController, Transform parent) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x24DEDC4 Offset: 0x24DEDC4 VA: 0x24DEDC4
+	|-ItemControllerFactory.GetItemModule<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	private ItemControllerModuleBase GetPrefabForType<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x24DF078 Offset: 0x24DF078 VA: 0x24DF078
+	|-ItemControllerFactory.GetPrefabForType<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public void DestroyItemModule<T>(T module) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x24DED20 Offset: 0x24DED20 VA: 0x24DED20
+	|-ItemControllerFactory.DestroyItemModule<object>
+	*/
+}
+

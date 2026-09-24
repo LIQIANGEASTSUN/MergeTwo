@@ -1,0 +1,70 @@
+// Namespace: MergeEngine.ECS.Components
+[CacheAs(new[] { typeof(IWipeableComponent) })]
+public class InventoryComponent : ComponentBase<InventoryCapability>, IRemoteLoadedComponent<BoardInventorySlots>, IRemoteLoadedComponent<Dictionary<PlayerResourceEnum, float>>, IWipeableComponent, IComponentBase // TypeDefIndex: 1015
+{
+	// Fields
+	public ObservableList<Entity> Slots; // 0x28
+	public bool Enabled; // 0x30
+	[CompilerGenerated]
+	private Dictionary<PlayerResourceEnum, float> <ToolsProgress>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private int <MaxSlots>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private InventorySlotCost <NextSlotCost>k__BackingField; // 0x48
+
+	// Properties
+	public Dictionary<PlayerResourceEnum, float> ToolsProgress { get; set; }
+	public int MaxSlots { get; set; }
+	public InventorySlotCost NextSlotCost { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x68F752C Offset: 0x68F352C VA: 0x68F752C
+	public Dictionary<PlayerResourceEnum, float> get_ToolsProgress() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68F7534 Offset: 0x68F3534 VA: 0x68F7534
+	private void set_ToolsProgress(Dictionary<PlayerResourceEnum, float> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68F753C Offset: 0x68F353C VA: 0x68F753C
+	public int get_MaxSlots() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68F7544 Offset: 0x68F3544 VA: 0x68F7544
+	private void set_MaxSlots(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68F754C Offset: 0x68F354C VA: 0x68F754C
+	public InventorySlotCost get_NextSlotCost() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68F7554 Offset: 0x68F3554 VA: 0x68F7554
+	private void set_NextSlotCost(InventorySlotCost value) { }
+
+	// RVA: 0x68F755C Offset: 0x68F355C VA: 0x68F755C
+	public void .ctor(InventoryCapability capability, Entity entity) { }
+
+	// RVA: 0x68F779C Offset: 0x68F379C VA: 0x68F779C Slot: 9
+	private void MergeEngine.ECS.Components.IWipeableComponent.Wipe() { }
+
+	// RVA: 0x68F7880 Offset: 0x68F3880 VA: 0x68F7880
+	public void UpdateToolProgress(PlayerResourceEnum toolType, float progressToAdd) { }
+
+	// RVA: 0x68F793C Offset: 0x68F393C VA: 0x68F793C
+	public float GetToolProgressPercentage(PlayerResourceEnum toolType) { }
+
+	// RVA: 0x68F7998 Offset: 0x68F3998 VA: 0x68F7998
+	public void OverrideSlotsConfig(int startSlots, int maxSlots) { }
+
+	// RVA: 0x68F7B04 Offset: 0x68F3B04 VA: 0x68F7B04 Slot: 7
+	public void LoadComponent(BoardInventorySlots componentData) { }
+
+	// RVA: 0x68F7C0C Offset: 0x68F3C0C VA: 0x68F7C0C Slot: 8
+	public void LoadComponent(Dictionary<PlayerResourceEnum, float> backendProgressData) { }
+
+	// RVA: 0x68F7694 Offset: 0x68F3694 VA: 0x68F7694
+	private Dictionary<PlayerResourceEnum, float> InitializeEmptyToolsProgress() { }
+}
+

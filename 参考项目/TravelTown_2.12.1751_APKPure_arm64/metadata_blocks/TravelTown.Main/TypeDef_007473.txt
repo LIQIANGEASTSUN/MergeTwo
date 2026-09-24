@@ -1,0 +1,35 @@
+// Namespace: Merger.Bubbles.Modifiers
+public interface IBubbleDropProbabilityModifier // TypeDefIndex: 7473
+{
+	// Properties
+	public abstract bool IsEnabled { get; }
+	public abstract string AnalyticsString { get; }
+	public abstract SmarterBubblesConfig SmarterBubblesConfig { get; set; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract bool get_IsEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract string get_AnalyticsString();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract SmarterBubblesConfig get_SmarterBubblesConfig();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void set_SmarterBubblesConfig(SmarterBubblesConfig value);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract void Initialize();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract void Update();
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract void Reset();
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract void TryModifyProbability(ref float probability, IMergeItem mergeItem, SmarterBubblesCheatData cheatData);
+}
+

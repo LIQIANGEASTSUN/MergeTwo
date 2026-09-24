@@ -1,0 +1,18 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class SummerWatermelonModel.<>c__DisplayClass125_0 // TypeDefIndex: 4870
+{
+	// Fields
+	public int index; // 0x8
+	public SummerWatermelonSevenPackageReward _curGiftBagData; // 0xC
+	public SummerWatermelonModel <>4__this; // 0x10
+
+	// Methods
+
+	// RVA: 0x3309F9C Offset: 0x3309F9C VA: 0x3309F9C
+	public void .ctor() { }
+
+	// RVA: 0x330AC44 Offset: 0x330AC44 VA: 0x330AC44
+	internal void <GiftBagSendOneGetReward>b__1() { }
+}
+

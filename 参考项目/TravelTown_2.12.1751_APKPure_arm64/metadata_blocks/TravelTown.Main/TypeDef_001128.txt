@@ -1,0 +1,107 @@
+// Namespace: MergeEngine.ECS.Components.Board
+[CacheAs(new[] { typeof(IWipeableComponent) })]
+public class BoardQueueComponent : RemoteLoadedComponent<SerializedBoardQueueComponent, List<QueuedItem>>, IWipeableComponent, IComponentBase // TypeDefIndex: 1128
+{
+	// Fields
+	private LinkedList<QueuedItem> _frontItemsQueue; // 0x28
+	private LinkedList<QueuedItem> _backItemsQueue; // 0x30
+	private HashSet<string> _dequeuedItemsUUIDs; // 0x38
+	private HashSet<string> _previousStateUUIDs; // 0x40
+	private QueuedItemsComparer _queuedItemsComparer; // 0x48
+	private bool _isLoaded; // 0x50
+	private readonly MutableBindableProperty<List<QueuedItem>> _queuedItems; // 0x58
+	[CompilerGenerated]
+	private readonly MutableBindableProperty<bool> <IsQueueItemLoading>k__BackingField; // 0x60
+
+	// Properties
+	public override string ComponentKey { get; }
+	public int Count { get; }
+	public MutableBindableProperty<bool> IsQueueItemLoading { get; }
+	public BindableProperty<List<QueuedItem>> QueuedItems { get; }
+	public bool IsLoaded { get; }
+
+	// Methods
+
+	// RVA: 0x6903798 Offset: 0x68FF798 VA: 0x6903798 Slot: 11
+	public override string get_ComponentKey() { }
+
+	// RVA: 0x69037D8 Offset: 0x68FF7D8 VA: 0x69037D8
+	public int get_Count() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6903830 Offset: 0x68FF830 VA: 0x6903830
+	public MutableBindableProperty<bool> get_IsQueueItemLoading() { }
+
+	// RVA: 0x6903838 Offset: 0x68FF838 VA: 0x6903838
+	public BindableProperty<List<QueuedItem>> get_QueuedItems() { }
+
+	// RVA: 0x6903840 Offset: 0x68FF840 VA: 0x6903840
+	public bool get_IsLoaded() { }
+
+	// RVA: 0x6903848 Offset: 0x68FF848 VA: 0x6903848
+	public void .ctor(Entity entity) { }
+
+	// RVA: 0x6903AE8 Offset: 0x68FFAE8 VA: 0x6903AE8 Slot: 15
+	public override void LoadComponent(List<QueuedItem> componentData) { }
+
+	// RVA: 0x6904030 Offset: 0x6900030 VA: 0x6904030 Slot: 16
+	public void Wipe() { }
+
+	// RVA: 0x69040B8 Offset: 0x69000B8 VA: 0x69040B8
+	public void Enqueue(QueuedItem queuedItem) { }
+
+	// RVA: 0x6904140 Offset: 0x6900140 VA: 0x6904140
+	public QueuedItem Dequeue() { }
+
+	// RVA: 0x690429C Offset: 0x690029C VA: 0x690429C
+	public bool RemoveElement(QueuedItem itemToRemove) { }
+
+	// RVA: 0x6904354 Offset: 0x6900354 VA: 0x6904354
+	public QueuedItem Peek() { }
+
+	// RVA: 0x690439C Offset: 0x690039C VA: 0x690439C
+	public List<string> TrackPreviousState(List<QueuedItem> queuedItems) { }
+
+	// RVA: 0x69040AC Offset: 0x69000AC VA: 0x69040AC
+	public void ClearPreviousState() { }
+
+	// RVA: 0x69048B4 Offset: 0x69008B4 VA: 0x69048B4
+	public List<QueuedItem> ToList() { }
+
+	// RVA: -1 Offset: -1
+	public IEnumerable<T> Select<T>(Func<QueuedItem, T> selector) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3BDA44C Offset: 0x3BD644C VA: 0x3BDA44C
+	|-BoardQueueComponent.Select<object>
+	|
+	|-RVA: 0x3BDA4BC Offset: 0x3BD64BC VA: 0x3BDA4BC
+	|-BoardQueueComponent.Select<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x6904920 Offset: 0x6900920 VA: 0x6904920
+	public bool Any(Func<QueuedItem, bool> predicate) { }
+
+	// RVA: 0x69049A0 Offset: 0x69009A0 VA: 0x69049A0
+	public bool All(Func<QueuedItem, bool> predicate) { }
+
+	// RVA: 0x6904A20 Offset: 0x6900A20 VA: 0x6904A20
+	public int CountById(string itemId) { }
+
+	// RVA: 0x69041FC Offset: 0x69001FC VA: 0x69041FC
+	private LinkedListNode<QueuedItem> HeadOfQueue() { }
+
+	// RVA: 0x6903FD0 Offset: 0x68FFFD0 VA: 0x6903FD0
+	private void NotifyQueueChanged() { }
+
+	// RVA: 0x6903EE4 Offset: 0x68FFEE4 VA: 0x6903EE4
+	private void InsertSorted(LinkedList<QueuedItem> queue, QueuedItem queuedItem) { }
+
+	// RVA: 0x6904498 Offset: 0x6900498 VA: 0x6904498
+	private static HashSet<string> CollectIds(List<QueuedItem> queuedItems) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6904C84 Offset: 0x6900C84 VA: 0x6904C84
+	private bool <TrackPreviousState>b__25_0(string uuid) { }
+}
+

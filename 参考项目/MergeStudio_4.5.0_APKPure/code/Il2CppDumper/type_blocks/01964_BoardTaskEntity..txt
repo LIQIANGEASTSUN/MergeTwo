@@ -1,0 +1,41 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardTaskEntity.<>c // TypeDefIndex: 1964
+{
+	// Fields
+	public static readonly BoardTaskEntity.<>c <>9; // 0x0
+	public static Func<BoardTaskItem, bool> <>9__83_0; // 0x4
+	public static Func<BoardTaskItem, bool> <>9__86_1; // 0x8
+	public static Predicate<BoardTaskItem> <>9__88_0; // 0xC
+	public static Predicate<BoardTaskItem> <>9__92_0; // 0x10
+	public static Func<BoardTaskItem, bool> <>9__99_0; // 0x14
+	public static Func<BoardTaskItem, int> <>9__100_1; // 0x18
+
+	// Methods
+
+	// RVA: 0x1947B7C Offset: 0x1947B7C VA: 0x1947B7C
+	private static void .cctor() { }
+
+	// RVA: 0x1947BF0 Offset: 0x1947BF0 VA: 0x1947BF0
+	public void .ctor() { }
+
+	// RVA: 0x1947BF8 Offset: 0x1947BF8 VA: 0x1947BF8
+	internal bool <GetAvailableTaskCellCount>b__83_0(BoardTaskItem item) { }
+
+	// RVA: 0x1947C20 Offset: 0x1947C20 VA: 0x1947C20
+	internal bool <FillFromUpcomingTasks>b__86_1(BoardTaskItem t) { }
+
+	// RVA: 0x1947C44 Offset: 0x1947C44 VA: 0x1947C44
+	internal bool <TransitionToLegacyMode>b__88_0(BoardTaskItem t) { }
+
+	// RVA: 0x1947C7C Offset: 0x1947C7C VA: 0x1947C7C
+	internal bool <ArrangeActiveTasks>b__92_0(BoardTaskItem item) { }
+
+	// RVA: 0x1947C98 Offset: 0x1947C98 VA: 0x1947C98
+	internal bool <GetDefaultActiveBoardTaskItems>b__99_0(BoardTaskItem el) { }
+
+	// RVA: 0x1947CC0 Offset: 0x1947CC0 VA: 0x1947CC0
+	internal int <GetReadyToDoneTasks>b__100_1(BoardTaskItem task) { }
+}
+

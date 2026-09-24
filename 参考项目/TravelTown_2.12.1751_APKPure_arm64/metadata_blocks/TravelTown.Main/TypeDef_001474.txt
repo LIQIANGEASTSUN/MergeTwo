@@ -1,0 +1,29 @@
+// Namespace: MergeEngine.Configuration.Board
+[Serializable]
+public class MergeBoardItem // TypeDefIndex: 1474
+{
+	// Fields
+	public LockedCapability LockedCapability; // 0x10
+	public string BlockerArt; // 0x18
+	[SerializeField]
+	private MergeItemWeakReference _itemReference; // 0x20
+
+	// Properties
+	public IMergeItem Item { get; }
+	public MergeItemWeakReference ItemReference { get; set; }
+
+	// Methods
+
+	// RVA: 0x601210C Offset: 0x600E10C VA: 0x601210C
+	public IMergeItem get_Item() { }
+
+	// RVA: 0x6012124 Offset: 0x600E124 VA: 0x6012124
+	public MergeItemWeakReference get_ItemReference() { }
+
+	// RVA: 0x601212C Offset: 0x600E12C VA: 0x601212C
+	public void set_ItemReference(MergeItemWeakReference value) { }
+
+	// RVA: 0x6012134 Offset: 0x600E134 VA: 0x6012134
+	public void .ctor() { }
+}
+

@@ -1,0 +1,24 @@
+// Namespace: Merger.MergeBoard.Models
+public interface ITileConfigurationModel // TypeDefIndex: 25811
+{
+	// Properties
+	public abstract IEnumerable<int> TileIndices { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract IEnumerable<int> get_TileIndices();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract DynamicBoardCellConfiguration GetTileConfiguration(int tileIndex);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract bool HasTileConfiguration(int tileIndex);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void SetTileConfiguration(List<DynamicBoardCellConfiguration> tileConfigurationData);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract List<DynamicBoardCellConfiguration> GetTileConfiguration();
+}
+

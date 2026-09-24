@@ -1,0 +1,62 @@
+// Namespace: Merger.TimeLimitedItems.Handlers
+public class TimeLimitedItemsControllerCleanupHandler : Base, ITimeLimitedItemsControllerCleanupHandler // TypeDefIndex: 32848
+{
+	// Fields
+	[Inject]
+	private IActionsModel _actionsModel; // 0x28
+	[Inject]
+	private ITimeLimitedItemsRepository _timeLimitedItemsRepository; // 0x30
+	[Inject]
+	private IBoardMiniGameGlobalDataRegistry _boardMiniGameGlobalDataRegistry; // 0x38
+	private TimeLimitedItemsControllerCleanupHandler.CleanupState _cleanupState; // 0x40
+	private IAction _cleanUpAction; // 0x48
+	private Action _onCompleted; // 0x50
+	private TimeLimitedItemsEventData _eventData; // 0x58
+
+	// Properties
+	private bool HasConnectedActiveBoardMiniGame { get; }
+	private bool HasRelatedActivePendingBoardMiniGame { get; }
+
+	// Methods
+
+	// RVA: 0x6B4BA18 Offset: 0x6B47A18 VA: 0x6B4BA18
+	private bool get_HasConnectedActiveBoardMiniGame() { }
+
+	// RVA: 0x6B4BB40 Offset: 0x6B47B40 VA: 0x6B4BB40
+	private bool get_HasRelatedActivePendingBoardMiniGame() { }
+
+	// RVA: 0x6B4BC34 Offset: 0x6B47C34 VA: 0x6B4BC34 Slot: 15
+	public void CleanUp(TimeLimitedItemsEventData eventData, Action onCompleted) { }
+
+	// RVA: 0x6B4BD7C Offset: 0x6B47D7C VA: 0x6B4BD7C Slot: 4
+	protected override void SubscribeToSignals() { }
+
+	// RVA: 0x6B4BE2C Offset: 0x6B47E2C VA: 0x6B4BE2C Slot: 5
+	protected override void UnsubscribeFromSignals() { }
+
+	// RVA: 0x6B4BC88 Offset: 0x6B47C88 VA: 0x6B4BC88
+	private void EvaluateCleanupInternal() { }
+
+	// RVA: 0x6B4BFB0 Offset: 0x6B47FB0 VA: 0x6B4BFB0
+	private void StartGracefulCleanupWait() { }
+
+	// RVA: 0x6B4C3D0 Offset: 0x6B483D0 VA: 0x6B4C3D0
+	private void OnBoardMiniGameStarted(BoardMiniGameEventStartedSignal signal) { }
+
+	// RVA: 0x6B4C484 Offset: 0x6B48484 VA: 0x6B4C484
+	private void OnBoardMiniGameEnded() { }
+
+	// RVA: 0x6B4C188 Offset: 0x6B48188 VA: 0x6B4C188
+	private void PerformImmediateCleanUp() { }
+
+	// RVA: 0x6B4C5C4 Offset: 0x6B485C4 VA: 0x6B4C5C4
+	private void OnCleanUpCompleted() { }
+
+	// RVA: 0x6B4C5E8 Offset: 0x6B485E8 VA: 0x6B4C5E8
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6B4C5F0 Offset: 0x6B485F0 VA: 0x6B4C5F0
+	private bool <get_HasConnectedActiveBoardMiniGame>b__9_0(IEventGlobalMetadata entry) { }
+}
+

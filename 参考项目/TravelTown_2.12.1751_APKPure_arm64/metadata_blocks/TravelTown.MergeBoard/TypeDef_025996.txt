@@ -1,0 +1,37 @@
+// Namespace: Merger.MergeBoard.Components
+public struct DynamicItemConfigComponent : IComponent // TypeDefIndex: 25996
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly string <DynamicMergeItemId>k__BackingField; // 0x0
+	[CompilerGenerated]
+	private readonly DynamicMergeItemInfoPopup <InfoPopup>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private readonly bool <IsItemSelectionBox>k__BackingField; // 0x10
+
+	// Properties
+	public string DynamicMergeItemId { get; }
+	public DynamicMergeItemInfoPopup InfoPopup { get; }
+	public bool IsItemSelectionBox { get; }
+
+	// Methods
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9BD6C Offset: 0x6A97D6C VA: 0x6A9BD6C
+	public string get_DynamicMergeItemId() { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9BD74 Offset: 0x6A97D74 VA: 0x6A9BD74
+	public DynamicMergeItemInfoPopup get_InfoPopup() { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9BD7C Offset: 0x6A97D7C VA: 0x6A9BD7C
+	public bool get_IsItemSelectionBox() { }
+
+	// RVA: 0x6A85194 Offset: 0x6A81194 VA: 0x6A85194
+	public void .ctor(DynamicMergeItemConfig dynamicItemConfig) { }
+}
+

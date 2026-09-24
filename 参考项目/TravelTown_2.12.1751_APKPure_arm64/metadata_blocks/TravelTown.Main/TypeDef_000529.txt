@@ -1,0 +1,24 @@
+// Namespace: MergeEngine.Model.Configuration
+public class DynamicMergeItemConfigurationModel : ModelBase, IDynamicMergeItemConfigurationModel // TypeDefIndex: 529
+{
+	// Fields
+	private readonly Dictionary<string, IMergeItem> _dynamicMergeItemsCache; // 0x28
+
+	// Methods
+
+	// RVA: 0x613B558 Offset: 0x6137558 VA: 0x613B558 Slot: 19
+	public void AddDynamicMergeItem(string id, IMergeItem mergeItem) { }
+
+	// RVA: 0x613B5C0 Offset: 0x61375C0 VA: 0x613B5C0 Slot: 20
+	public IMergeItem GetDynamicMergeItem(string id) { }
+
+	// RVA: 0x613B650 Offset: 0x6137650 VA: 0x613B650 Slot: 21
+	public IMergeItem GetDynamicMergeItemFromComponent(IComponentBase component) { }
+
+	// RVA: 0x613B784 Offset: 0x6137784 VA: 0x613B784 Slot: 22
+	public IMergeItem GetDynamicMergeItemWithItemId(string itemId) { }
+
+	// RVA: 0x613B8BC Offset: 0x61378BC VA: 0x613B8BC
+	public void .ctor() { }
+}
+

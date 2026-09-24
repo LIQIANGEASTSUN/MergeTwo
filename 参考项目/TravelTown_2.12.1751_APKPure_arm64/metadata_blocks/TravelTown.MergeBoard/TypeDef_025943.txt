@@ -1,0 +1,57 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class ExpendableInteractionResult // TypeDefIndex: 25943
+{
+	// Fields
+	[CompilerGenerated]
+	private Entity <Entity>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private int <Position>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private int <UsesRemaining>k__BackingField; // 0x1C
+	[CompilerGenerated]
+	private string <Reason>k__BackingField; // 0x20
+
+	// Properties
+	public Entity Entity { get; set; }
+	public int Position { get; set; }
+	public int UsesRemaining { get; set; }
+	public string Reason { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A334 Offset: 0x6A96334 VA: 0x6A9A334
+	public Entity get_Entity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A33C Offset: 0x6A9633C VA: 0x6A9A33C
+	public void set_Entity(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A344 Offset: 0x6A96344 VA: 0x6A9A344
+	public int get_Position() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A34C Offset: 0x6A9634C VA: 0x6A9A34C
+	public void set_Position(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A354 Offset: 0x6A96354 VA: 0x6A9A354
+	public int get_UsesRemaining() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A35C Offset: 0x6A9635C VA: 0x6A9A35C
+	public void set_UsesRemaining(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A364 Offset: 0x6A96364 VA: 0x6A9A364
+	public string get_Reason() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A36C Offset: 0x6A9636C VA: 0x6A9A36C
+	public void set_Reason(string value) { }
+
+	// RVA: 0x6A9A374 Offset: 0x6A96374 VA: 0x6A9A374
+	public void .ctor() { }
+}
+

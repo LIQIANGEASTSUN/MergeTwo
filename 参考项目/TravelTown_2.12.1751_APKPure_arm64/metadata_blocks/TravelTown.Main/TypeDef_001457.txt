@@ -1,0 +1,27 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+public class PersistentCapability // TypeDefIndex: 1457
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly string <PersistentStoreKey>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly bool <UseLiveOpsPrefix>k__BackingField; // 0x18
+
+	// Properties
+	public string PersistentStoreKey { get; }
+	public bool UseLiveOpsPrefix { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6011858 Offset: 0x600D858 VA: 0x6011858
+	public string get_PersistentStoreKey() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6011860 Offset: 0x600D860 VA: 0x6011860
+	public bool get_UseLiveOpsPrefix() { }
+
+	// RVA: 0x6011868 Offset: 0x600D868 VA: 0x6011868
+	public void .ctor(string persistentStoreKey, bool useLiveOpsPrefix = False) { }
+}
+

@@ -1,0 +1,13 @@
+// Namespace: MergeEngine.Configuration.Definitions
+[Serializable]
+public class FixedItemSpawnable : ItemSpawnable // TypeDefIndex: 1304
+{
+	// Fields
+	public int NumItemsInCycles; // 0x24
+
+	// Methods
+
+	// RVA: 0x6A29A94 Offset: 0x6A25A94 VA: 0x6A29A94
+	public void .ctor() { }
+}
+

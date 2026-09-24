@@ -1,0 +1,17 @@
+// Namespace: Merger.MergeBoard.Services
+public interface IMergeBoardOperationTrackingService : IBlockingFlags<OperationTrackingFlags>, IDebugBlockingFlags // TypeDefIndex: 25798
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void SendOperationData(IList<OperationNotificationData> operationNotificationDatas, Dictionary<string, string> metadata);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract OperationNotificationData CreatePayload<TNotificationData>(string operationType, List<TNotificationData> itemNotificationData, ExtraData extraData);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IMergeBoardOperationTrackingService.CreatePayload<object>
+	*/
+}
+

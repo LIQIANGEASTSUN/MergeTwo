@@ -1,0 +1,11 @@
+// Namespace: 
+public enum MomentsLightModel.MomentsLightPicStatus // TypeDefIndex: 785
+{
+	// Fields
+	public int value__; // 0x0
+	public const MomentsLightModel.MomentsLightPicStatus Locked = 0;
+	public const MomentsLightModel.MomentsLightPicStatus Unlocked = 1;
+	public const MomentsLightModel.MomentsLightPicStatus Drawing = 2;
+	public const MomentsLightModel.MomentsLightPicStatus Completed = 3;
+}
+

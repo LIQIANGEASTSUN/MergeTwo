@@ -1,0 +1,169 @@
+// Namespace: MergePuzzle
+[DefaultMember("Item")]
+[Serializable]
+public struct Coordinate : IEquatable<Coordinate>, IFormattable // TypeDefIndex: 3671
+{
+	// Fields
+	private int m_X; // 0x0
+	private int m_Y; // 0x4
+	private static readonly Coordinate s_Zero; // 0x0
+	private static readonly Coordinate s_One; // 0x8
+	private static readonly Coordinate s_Up; // 0x10
+	private static readonly Coordinate s_Down; // 0x18
+	private static readonly Coordinate s_Left; // 0x20
+	private static readonly Coordinate s_Right; // 0x28
+	private static readonly Coordinate s_Empty; // 0x30
+
+	// Properties
+	public int x { get; set; }
+	public int y { get; set; }
+	public int Item { get; set; }
+	public static Coordinate empty { get; }
+	public static Coordinate zero { get; }
+	public static Coordinate one { get; }
+	public static Coordinate up { get; }
+	public static Coordinate down { get; }
+	public static Coordinate left { get; }
+	public static Coordinate right { get; }
+
+	// Methods
+
+	// RVA: 0x1C45A10 Offset: 0x1C45A10 VA: 0x1C45A10
+	public int get_x() { }
+
+	// RVA: 0x1C45A18 Offset: 0x1C45A18 VA: 0x1C45A18
+	public void set_x(int value) { }
+
+	// RVA: 0x1C45A20 Offset: 0x1C45A20 VA: 0x1C45A20
+	public int get_y() { }
+
+	// RVA: 0x1C45A28 Offset: 0x1C45A28 VA: 0x1C45A28
+	public void set_y(int value) { }
+
+	// RVA: 0x1C45A30 Offset: 0x1C45A30 VA: 0x1C45A30
+	public void .ctor(int x, int y) { }
+
+	// RVA: 0x1C45A38 Offset: 0x1C45A38 VA: 0x1C45A38
+	public void Set(int x, int y) { }
+
+	// RVA: 0x1C45A40 Offset: 0x1C45A40 VA: 0x1C45A40
+	public int get_Item(int index) { }
+
+	// RVA: 0x1C45B68 Offset: 0x1C45B68 VA: 0x1C45B68
+	public void set_Item(int index, int value) { }
+
+	// RVA: 0x1C45C94 Offset: 0x1C45C94 VA: 0x1C45C94
+	public int ToInt() { }
+
+	// RVA: 0x1C45D9C Offset: 0x1C45D9C VA: 0x1C45D9C
+	public static Coordinate GetDummy() { }
+
+	// RVA: 0x1C45DAC Offset: 0x1C45DAC VA: 0x1C45DAC
+	public float GetMagnitude() { }
+
+	// RVA: 0x1C45E24 Offset: 0x1C45E24 VA: 0x1C45E24
+	public float GetSqrtMagnitude() { }
+
+	// RVA: 0x1C45E98 Offset: 0x1C45E98 VA: 0x1C45E98
+	public static float Distance(Coordinate a, Coordinate b) { }
+
+	// RVA: 0x1C45F60 Offset: 0x1C45F60 VA: 0x1C45F60
+	public static Coordinate Min(Coordinate lhs, Coordinate rhs) { }
+
+	// RVA: 0x1C45FE0 Offset: 0x1C45FE0 VA: 0x1C45FE0
+	public static Coordinate Max(Coordinate lhs, Coordinate rhs) { }
+
+	// RVA: 0x1C46060 Offset: 0x1C46060 VA: 0x1C46060
+	public static Coordinate Scale(Coordinate a, Coordinate b) { }
+
+	// RVA: 0x1C460D8 Offset: 0x1C460D8 VA: 0x1C460D8
+	public void Scale(Coordinate scale) { }
+
+	// RVA: 0x1C4614C Offset: 0x1C4614C VA: 0x1C4614C
+	public void Clamp(Coordinate min, Coordinate max) { }
+
+	// RVA: 0x1C4623C Offset: 0x1C4623C VA: 0x1C4623C
+	public static Vector2 op_Implicit(Coordinate v) { }
+
+	// RVA: 0x1C462B8 Offset: 0x1C462B8 VA: 0x1C462B8
+	public static Vector3Int op_Explicit(Coordinate v) { }
+
+	// RVA: 0x1C4632C Offset: 0x1C4632C VA: 0x1C4632C
+	public static Coordinate FloorToInt(Vector2 v) { }
+
+	// RVA: 0x1C4642C Offset: 0x1C4642C VA: 0x1C4642C
+	public static Coordinate CeilToInt(Vector2 v) { }
+
+	// RVA: 0x1C46530 Offset: 0x1C46530 VA: 0x1C46530
+	public static Coordinate RoundToInt(Vector2 v) { }
+
+	// RVA: 0x1C46738 Offset: 0x1C46738 VA: 0x1C46738
+	public static Coordinate op_UnaryNegation(Coordinate v) { }
+
+	// RVA: 0x1C467A8 Offset: 0x1C467A8 VA: 0x1C467A8
+	public static Coordinate op_Addition(Coordinate a, Coordinate b) { }
+
+	// RVA: 0x1C46820 Offset: 0x1C46820 VA: 0x1C46820
+	public static Coordinate op_Subtraction(Coordinate a, Coordinate b) { }
+
+	// RVA: 0x1C46898 Offset: 0x1C46898 VA: 0x1C46898
+	public static Coordinate op_Multiply(Coordinate a, Coordinate b) { }
+
+	// RVA: 0x1C46910 Offset: 0x1C46910 VA: 0x1C46910
+	public static Coordinate op_Multiply(int a, Coordinate b) { }
+
+	// RVA: 0x1C46984 Offset: 0x1C46984 VA: 0x1C46984
+	public static Coordinate op_Multiply(Coordinate a, int b) { }
+
+	// RVA: 0x1C469F8 Offset: 0x1C469F8 VA: 0x1C469F8
+	public static Coordinate op_Division(Coordinate a, int b) { }
+
+	// RVA: 0x1C46A80 Offset: 0x1C46A80 VA: 0x1C46A80
+	public static bool op_Equality(Coordinate lhs, Coordinate rhs) { }
+
+	// RVA: 0x1C46B14 Offset: 0x1C46B14 VA: 0x1C46B14
+	public static bool op_Inequality(Coordinate lhs, Coordinate rhs) { }
+
+	// RVA: 0x1C46B9C Offset: 0x1C46B9C VA: 0x1C46B9C Slot: 0
+	public override bool Equals(object other) { }
+
+	// RVA: 0x1C46C54 Offset: 0x1C46C54 VA: 0x1C46C54 Slot: 4
+	public bool Equals(Coordinate other) { }
+
+	// RVA: 0x1C46CEC Offset: 0x1C46CEC VA: 0x1C46CEC Slot: 2
+	public override int GetHashCode() { }
+
+	// RVA: 0x1C46D84 Offset: 0x1C46D84 VA: 0x1C46D84 Slot: 3
+	public override string ToString() { }
+
+	// RVA: 0x1C46F20 Offset: 0x1C46F20 VA: 0x1C46F20
+	public string ToString(string format) { }
+
+	// RVA: 0x1C46E44 Offset: 0x1C46E44 VA: 0x1C46E44 Slot: 5
+	public string ToString(string format, IFormatProvider formatProvider) { }
+
+	// RVA: 0x1C46FE0 Offset: 0x1C46FE0 VA: 0x1C46FE0
+	public static Coordinate get_empty() { }
+
+	// RVA: 0x1C47054 Offset: 0x1C47054 VA: 0x1C47054
+	public static Coordinate get_zero() { }
+
+	// RVA: 0x1C470C8 Offset: 0x1C470C8 VA: 0x1C470C8
+	public static Coordinate get_one() { }
+
+	// RVA: 0x1C4713C Offset: 0x1C4713C VA: 0x1C4713C
+	public static Coordinate get_up() { }
+
+	// RVA: 0x1C471B0 Offset: 0x1C471B0 VA: 0x1C471B0
+	public static Coordinate get_down() { }
+
+	// RVA: 0x1C47224 Offset: 0x1C47224 VA: 0x1C47224
+	public static Coordinate get_left() { }
+
+	// RVA: 0x1C47298 Offset: 0x1C47298 VA: 0x1C47298
+	public static Coordinate get_right() { }
+
+	// RVA: 0x1C4730C Offset: 0x1C4730C VA: 0x1C4730C
+	private static void .cctor() { }
+}
+

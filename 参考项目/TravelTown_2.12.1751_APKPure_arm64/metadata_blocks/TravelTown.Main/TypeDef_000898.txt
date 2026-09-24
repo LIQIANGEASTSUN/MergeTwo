@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardItemConsumerSystem.<>c__DisplayClass11_0 // TypeDefIndex: 898
+{
+	// Fields
+	public ConsumeBoardItemSignal signal; // 0x10
+
+	// Methods
+
+	// RVA: 0x6660E78 Offset: 0x665CE78 VA: 0x6660E78
+	public void .ctor() { }
+
+	// RVA: 0x66618E8 Offset: 0x665D8E8 VA: 0x66618E8
+	internal void <ConsumeItem>b__0() { }
+}
+

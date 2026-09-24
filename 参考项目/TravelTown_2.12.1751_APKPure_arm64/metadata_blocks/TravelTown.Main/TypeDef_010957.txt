@@ -1,0 +1,10 @@
+// Namespace: Framework.Core.Services.Backend.Remote.Payloads.BoardState
+[StateName("boardFreeVouchers")]
+public class CoreBoardFreeVouchers : BoardFreeVouchers // TypeDefIndex: 10957
+{
+	// Methods
+
+	// RVA: 0x69275BC Offset: 0x69235BC VA: 0x69275BC
+	public void .ctor() { }
+}
+

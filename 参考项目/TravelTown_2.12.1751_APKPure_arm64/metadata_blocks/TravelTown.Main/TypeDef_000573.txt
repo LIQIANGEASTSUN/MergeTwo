@@ -1,0 +1,18 @@
+// Namespace: MergeEngine.Model.Configuration
+public class ProducerInventoryConfigurationModel : ConfigurationModelBase<IList<InventoryProducerSlotUnlock>>, IProducerInventoryConfigurationModel // TypeDefIndex: 573
+{
+	// Fields
+	private IList<InventoryProducerSlotUnlock> _producerSlotUnlocks; // 0x28
+
+	// Methods
+
+	// RVA: 0x6142544 Offset: 0x613E544 VA: 0x6142544 Slot: 19
+	protected override void HandleDataLoaded(IList<InventoryProducerSlotUnlock> data) { }
+
+	// RVA: 0x6142654 Offset: 0x613E654 VA: 0x6142654 Slot: 20
+	public IList<InventoryProducerSlotUnlock> GetProducerInventorySlotUnlocks() { }
+
+	// RVA: 0x614265C Offset: 0x613E65C VA: 0x614265C
+	public void .ctor() { }
+}
+

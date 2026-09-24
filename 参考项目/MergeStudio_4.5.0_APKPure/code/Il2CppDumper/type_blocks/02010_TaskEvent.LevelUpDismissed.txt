@@ -1,0 +1,9 @@
+// Namespace: 
+public struct TaskEvent.LevelUpDismissed : IEvent // TypeDefIndex: 2010
+{
+	// Fields
+	public UserEntity UserEntity; // 0x0
+	public CanvasEvent.DismissLevelUpPopup FirstDismissEvent; // 0x4
+	public bool IsEvent; // 0x24
+}
+

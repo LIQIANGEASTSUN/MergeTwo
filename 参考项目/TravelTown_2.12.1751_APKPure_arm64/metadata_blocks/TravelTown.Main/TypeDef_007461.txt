@@ -1,0 +1,52 @@
+// Namespace: Merger.Bubbles.Modifiers
+public class ActiveOrdersBubbleDropProbabilityModifier : BubbleDropProbabilityModifierBase // TypeDefIndex: 7461
+{
+	// Fields
+	[InjectComponent]
+	private OrdersComponent _ordersComponent; // 0x20
+	[Inject]
+	private IMergeGraphChainModel _mergeGraphChainModel; // 0x28
+	[Inject]
+	private ISmarterBubblesAnalyticsModel _analyticsModel; // 0x30
+	[Inject]
+	private IItemsRelationsModel _itemsRelationsModel; // 0x38
+	[Inject]
+	private ISmarterBubblesActiveOrdersChainsModel _activeOrdersChainsModel; // 0x40
+	private bool _shouldUseItemsRelations; // 0x48
+
+	// Properties
+	public override bool IsEnabled { get; }
+	public override string AnalyticsString { get; }
+	private float ActiveOrdersBoostValue { get; }
+	private HashSet<OrderData> Objectives { get; }
+
+	// Methods
+
+	// RVA: 0x657BA18 Offset: 0x6577A18 VA: 0x657BA18 Slot: 12
+	public override bool get_IsEnabled() { }
+
+	// RVA: 0x657BA94 Offset: 0x6577A94 VA: 0x657BA94 Slot: 13
+	public override string get_AnalyticsString() { }
+
+	// RVA: 0x657BAEC Offset: 0x6577AEC VA: 0x657BAEC
+	private float get_ActiveOrdersBoostValue() { }
+
+	// RVA: 0x657BB60 Offset: 0x6577B60 VA: 0x657BB60
+	private HashSet<OrderData> get_Objectives() { }
+
+	// RVA: 0x657BE50 Offset: 0x6577E50 VA: 0x657BE50 Slot: 16
+	public override void Initialize() { }
+
+	// RVA: 0x657C150 Offset: 0x6578150 VA: 0x657C150 Slot: 14
+	public override void Reset() { }
+
+	// RVA: 0x657C224 Offset: 0x6578224 VA: 0x657C224 Slot: 15
+	public override void TryModifyProbability(ref float probability, IMergeItem mergeItem, SmarterBubblesCheatData cheatData) { }
+
+	// RVA: 0x657C77C Offset: 0x657877C VA: 0x657C77C
+	private HashSet<ChainData> GetRelatedGraphs(HashSet<OrderData> objectives, bool shouldUseItemsRelations) { }
+
+	// RVA: 0x657CC1C Offset: 0x6578C1C VA: 0x657CC1C
+	public void .ctor() { }
+}
+

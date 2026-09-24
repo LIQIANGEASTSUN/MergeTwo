@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemConsumeSystem.<>c__DisplayClass8_0 // TypeDefIndex: 665
+{
+	// Fields
+	public ItemMultiple consumed; // 0x10
+	public ItemConsumeSystem <>4__this; // 0x18
+
+	// Methods
+
+	// RVA: 0x628B1E0 Offset: 0x62871E0 VA: 0x628B1E0
+	public void .ctor() { }
+
+	// RVA: 0x628B718 Offset: 0x6287718 VA: 0x628B718
+	internal bool <TryFindPreferredItemFromHint>b__1(VisualComponent item) { }
+}
+

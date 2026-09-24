@@ -1,0 +1,115 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public class TimeLockComponent : RemoteLoadedComponent<TimeLockCapability, SerializedTimeLockComponent, SerializedTimeLockComponent>, ITimeLocked // TypeDefIndex: 1094
+{
+	// Fields
+	public const string Key = "timeLock";
+	[CompilerGenerated]
+	private double <TimeLeft>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private readonly double <LockTime>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private readonly TimeLockGroup <LockGroup>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private bool <BeingUnlocked>k__BackingField; // 0x44
+	[CompilerGenerated]
+	private bool <CanBeUnlocked>k__BackingField; // 0x45
+	[CompilerGenerated]
+	private bool <Used>k__BackingField; // 0x46
+	[CompilerGenerated]
+	private readonly ItemOrigin <LockOrigins>k__BackingField; // 0x48
+	[CompilerGenerated]
+	private bool <ModifiedByStateLoad>k__BackingField; // 0x4C
+	[CompilerGenerated]
+	private bool <IsCooldownBlocked>k__BackingField; // 0x4D
+
+	// Properties
+	public override string ComponentKey { get; }
+	public double TimeLeft { get; set; }
+	public double LockTime { get; }
+	public TimeLockGroup LockGroup { get; }
+	public bool Locked { get; }
+	public bool BeingUnlocked { get; set; }
+	public bool CanBeUnlocked { get; set; }
+	public bool Used { get; set; }
+	public ItemOrigin LockOrigins { get; }
+	public bool ModifiedByStateLoad { get; set; }
+	public bool IsCooldownBlocked { get; set; }
+
+	// Methods
+
+	// RVA: 0x68FE0EC Offset: 0x68FA0EC VA: 0x68FE0EC Slot: 11
+	public override string get_ComponentKey() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE12C Offset: 0x68FA12C VA: 0x68FE12C Slot: 17
+	public double get_TimeLeft() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE134 Offset: 0x68FA134 VA: 0x68FE134
+	public void set_TimeLeft(double value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE13C Offset: 0x68FA13C VA: 0x68FE13C Slot: 16
+	public double get_LockTime() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE144 Offset: 0x68FA144 VA: 0x68FE144 Slot: 22
+	public TimeLockGroup get_LockGroup() { }
+
+	// RVA: 0x68FE14C Offset: 0x68FA14C VA: 0x68FE14C Slot: 18
+	public bool get_Locked() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE170 Offset: 0x68FA170 VA: 0x68FE170 Slot: 19
+	public bool get_BeingUnlocked() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE178 Offset: 0x68FA178 VA: 0x68FE178
+	public void set_BeingUnlocked(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE184 Offset: 0x68FA184 VA: 0x68FE184 Slot: 20
+	public bool get_CanBeUnlocked() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE18C Offset: 0x68FA18C VA: 0x68FE18C
+	public void set_CanBeUnlocked(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE198 Offset: 0x68FA198 VA: 0x68FE198 Slot: 21
+	public bool get_Used() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE1A0 Offset: 0x68FA1A0 VA: 0x68FE1A0
+	public void set_Used(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE1AC Offset: 0x68FA1AC VA: 0x68FE1AC
+	public ItemOrigin get_LockOrigins() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE1B4 Offset: 0x68FA1B4 VA: 0x68FE1B4
+	public bool get_ModifiedByStateLoad() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE1BC Offset: 0x68FA1BC VA: 0x68FE1BC
+	public void set_ModifiedByStateLoad(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE1C8 Offset: 0x68FA1C8 VA: 0x68FE1C8
+	public bool get_IsCooldownBlocked() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FE1D0 Offset: 0x68FA1D0 VA: 0x68FE1D0
+	public void set_IsCooldownBlocked(bool value) { }
+
+	// RVA: 0x68FE1DC Offset: 0x68FA1DC VA: 0x68FE1DC
+	public void .ctor(TimeLockCapability capability, Entity entity) { }
+
+	// RVA: 0x68FE26C Offset: 0x68FA26C VA: 0x68FE26C Slot: 15
+	public override void LoadComponent(SerializedTimeLockComponent componentData) { }
+
+	// RVA: 0x68FE2A0 Offset: 0x68FA2A0 VA: 0x68FE2A0 Slot: 12
+	protected override void OnBeforeSerialize() { }
+}
+

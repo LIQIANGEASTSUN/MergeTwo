@@ -1,0 +1,20 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemController.<>c__DisplayClass245_0 // TypeDefIndex: 1679
+{
+	// Fields
+	public ItemController <>4__this; // 0x8
+	public Vector3 transformPosition; // 0xC
+
+	// Methods
+
+	// RVA: 0x18CD980 Offset: 0x18CD980 VA: 0x18CD980
+	public void .ctor() { }
+
+	// RVA: 0x18CD988 Offset: 0x18CD988 VA: 0x18CD988
+	internal bool <DragStopped>b__0(CellController cellItem) { }
+
+	// RVA: 0x18CDA64 Offset: 0x18CDA64 VA: 0x18CDA64
+	internal int <DragStopped>b__1(CellController item1, CellController item2) { }
+}
+

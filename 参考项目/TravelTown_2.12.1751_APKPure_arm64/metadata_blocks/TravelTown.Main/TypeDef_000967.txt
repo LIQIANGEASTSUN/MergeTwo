@@ -1,0 +1,10 @@
+// Namespace: MergeEngine.ECS.Systems.Items
+[SoundBoundSignal("Splitter")]
+public class SplitItemSignal // TypeDefIndex: 967
+{
+	// Methods
+
+	// RVA: 0x6786510 Offset: 0x6782510 VA: 0x6786510
+	public void .ctor() { }
+}
+

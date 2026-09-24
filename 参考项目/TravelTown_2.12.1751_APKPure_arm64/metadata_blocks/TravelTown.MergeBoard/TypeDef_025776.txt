@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class SwapSystem.<>c__DisplayClass0_0 // TypeDefIndex: 25776
+{
+	// Fields
+	[TupleElementNames(new[] { "entity", "movedItemComponent" })]
+	public ValueTuple<Entity, ItemMovedComponent> movedEntity; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A76524 Offset: 0x6A72524 VA: 0x6A76524
+	public void .ctor() { }
+
+	// RVA: 0x6A76550 Offset: 0x6A72550 VA: 0x6A76550
+	internal bool <Tick>b__0(ValueTuple<Entity, BoardTilePositionComponent> destinationEntity) { }
+}
+

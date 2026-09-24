@@ -1,0 +1,4 @@
+// Namespace: 
+public struct BoardEvent.DecreaseBoosterCountEntity : IEvent // TypeDefIndex: 1817
+{}
+

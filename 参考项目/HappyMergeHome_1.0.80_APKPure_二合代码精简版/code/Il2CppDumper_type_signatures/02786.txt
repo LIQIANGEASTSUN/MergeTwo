@@ -1,0 +1,49 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class MergeMainController.<>c // TypeDefIndex: 2786
+{
+	// Fields
+	public static readonly MergeMainController.<>c <>9; // 0x0
+	public static Func<string> <>9__86_0; // 0x4
+	public static Func<string> <>9__86_1; // 0x8
+	public static Func<string> <>9__86_2; // 0xC
+	public static Func<string> <>9__86_3; // 0x10
+	public static Func<string> <>9__86_4; // 0x14
+	public static Func<string> <>9__86_5; // 0x18
+	public static Func<string> <>9__86_6; // 0x1C
+	public static Func<string> <>9__86_7; // 0x20
+
+	// Methods
+
+	// RVA: 0x2C48DFC Offset: 0x2C48DFC VA: 0x2C48DFC
+	private static void .cctor() { }
+
+	// RVA: 0x2C48E70 Offset: 0x2C48E70 VA: 0x2C48E70
+	public void .ctor() { }
+
+	// RVA: 0x2C48E78 Offset: 0x2C48E78 VA: 0x2C48E78
+	internal string <CreateMergeBoardTheme>b__86_0() { }
+
+	// RVA: 0x2C48F48 Offset: 0x2C48F48 VA: 0x2C48F48
+	internal string <CreateMergeBoardTheme>b__86_1() { }
+
+	// RVA: 0x2C48F90 Offset: 0x2C48F90 VA: 0x2C48F90
+	internal string <CreateMergeBoardTheme>b__86_2() { }
+
+	// RVA: 0x2C48FD8 Offset: 0x2C48FD8 VA: 0x2C48FD8
+	internal string <CreateMergeBoardTheme>b__86_3() { }
+
+	// RVA: 0x2C49020 Offset: 0x2C49020 VA: 0x2C49020
+	internal string <CreateMergeBoardTheme>b__86_4() { }
+
+	// RVA: 0x2C4914C Offset: 0x2C4914C VA: 0x2C4914C
+	internal string <CreateMergeBoardTheme>b__86_5() { }
+
+	// RVA: 0x2C491E8 Offset: 0x2C491E8 VA: 0x2C491E8
+	internal string <CreateMergeBoardTheme>b__86_6() { }
+
+	// RVA: 0x2C49284 Offset: 0x2C49284 VA: 0x2C49284
+	internal string <CreateMergeBoardTheme>b__86_7() { }
+}
+

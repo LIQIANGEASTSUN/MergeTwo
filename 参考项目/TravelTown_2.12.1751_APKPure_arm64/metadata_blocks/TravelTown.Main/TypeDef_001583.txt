@@ -1,0 +1,16 @@
+// Namespace: GameCore.Configuration.Definitions
+public interface IItemMultipleBase // TypeDefIndex: 1583
+{
+	// Properties
+	public abstract int Amount { get; }
+	public abstract string ItemId { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract int get_Amount();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract string get_ItemId();
+}
+

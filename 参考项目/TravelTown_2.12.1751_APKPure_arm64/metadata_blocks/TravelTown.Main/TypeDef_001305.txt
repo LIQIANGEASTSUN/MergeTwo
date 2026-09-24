@@ -1,0 +1,11 @@
+// Namespace: MergeEngine.Configuration.Definitions
+public enum ItemConsumeMode // TypeDefIndex: 1305
+{
+	// Fields
+	public int value__; // 0x0
+	public const ItemConsumeMode All = 0;
+	public const ItemConsumeMode Any = 1;
+	public const ItemConsumeMode None = 2;
+	public const ItemConsumeMode Combining = 3;
+}
+

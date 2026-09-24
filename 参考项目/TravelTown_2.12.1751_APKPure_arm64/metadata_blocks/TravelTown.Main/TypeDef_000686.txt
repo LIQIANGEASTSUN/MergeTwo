@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class SystemManager.<>c // TypeDefIndex: 686
+{
+	// Fields
+	public static readonly SystemManager.<>c <>9; // 0x0
+	public static Comparison<ITickableSystem> <>9__17_0; // 0x8
+	public static Action<KeyValuePair<Type, SystemBase>> <>9__18_1; // 0x10
+
+	// Methods
+
+	// RVA: 0x63A7E78 Offset: 0x63A3E78 VA: 0x63A7E78
+	private static void .cctor() { }
+
+	// RVA: 0x63A7EE0 Offset: 0x63A3EE0 VA: 0x63A7EE0
+	public void .ctor() { }
+
+	// RVA: 0x63A7EE8 Offset: 0x63A3EE8 VA: 0x63A7EE8
+	internal int <SortSystems>b__17_0(ITickableSystem system1, ITickableSystem system2) { }
+
+	// RVA: 0x63A7FF0 Offset: 0x63A3FF0 VA: 0x63A7FF0
+	internal void <InitializeAll>b__18_1(KeyValuePair<Type, SystemBase> keyValue) { }
+}
+

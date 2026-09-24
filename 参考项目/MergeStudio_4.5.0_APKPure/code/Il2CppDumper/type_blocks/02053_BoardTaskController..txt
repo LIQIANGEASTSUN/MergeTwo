@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardTaskController.<>c__DisplayClass50_0 // TypeDefIndex: 2053
+{
+	// Fields
+	public int taskNo; // 0x8
+
+	// Methods
+
+	// RVA: 0x1960264 Offset: 0x1960264 VA: 0x1960264
+	public void .ctor() { }
+
+	// RVA: 0x196026C Offset: 0x196026C VA: 0x196026C
+	internal bool <SpawnBoardTaskItems>b__0(BoardTaskItemController c) { }
+}
+

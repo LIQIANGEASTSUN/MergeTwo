@@ -1,0 +1,24 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class InventoryCapability // TypeDefIndex: 1450
+{
+	// Fields
+	[JsonProperty("numStartSlots")]
+	public int NumStartSlots; // 0x10
+	[JsonProperty("maxSlots")]
+	public int MaxSlots; // 0x14
+	[JsonProperty("firstSlotPrice")]
+	public int FirstSlotPrice; // 0x18
+	[JsonProperty("slotPriceMultiplier")]
+	public float SlotPriceMultiplier; // 0x1C
+	[JsonProperty("priceCap")]
+	public int PriceCap; // 0x20
+	[JsonProperty("slotPriceCurrency")]
+	public PlayerResourceEnum SlotPriceCurrency; // 0x24
+
+	// Methods
+
+	// RVA: 0x6010854 Offset: 0x600C854 VA: 0x6010854
+	public void .ctor() { }
+}
+

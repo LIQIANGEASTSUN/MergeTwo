@@ -1,0 +1,22 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemSpawningQueue.<>c__DisplayClass22_0 // TypeDefIndex: 99
+{
+	// Fields
+	public IMergeItem item; // 0x10
+
+	// Methods
+
+	// RVA: 0x5FEA940 Offset: 0x5FE6940 VA: 0x5FEA940
+	public void .ctor() { }
+
+	// RVA: 0x5FEB0B8 Offset: 0x5FE70B8 VA: 0x5FEB0B8
+	internal bool <IsItemInQueue>b__1(IMergeItem i) { }
+
+	// RVA: 0x5FEB1CC Offset: 0x5FE71CC VA: 0x5FEB1CC
+	internal bool <IsItemInQueue>b__2(ConsumedItemToProducedItemMapping linkedItem) { }
+
+	// RVA: 0x5FEB29C Offset: 0x5FE729C VA: 0x5FEB29C
+	internal bool <IsItemInQueue>b__3(ItemSpawnable itemSpawnable) { }
+}
+

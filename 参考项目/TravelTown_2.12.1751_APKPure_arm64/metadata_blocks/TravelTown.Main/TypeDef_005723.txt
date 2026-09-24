@@ -1,0 +1,34 @@
+// Namespace: Merger.ItemSelectionBox.ViewModels
+public class ItemSelectionBoxViewModel : GameBaseViewModel // TypeDefIndex: 5723
+{
+	// Fields
+	protected readonly IAsset MergeGraphPopupAsset; // 0xD0
+	[Inject]
+	private ItemSelectionBoxConfigurationModel _itemSelectionBoxConfigurationModel; // 0xD8
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0xE0
+
+	// Properties
+	public ObservableDictionary<string, List<IMergeItem>> SelectionItems { get; }
+
+	// Methods
+
+	// RVA: 0x63E17C0 Offset: 0x63DD7C0 VA: 0x63E17C0
+	public ObservableDictionary<string, List<IMergeItem>> get_SelectionItems() { }
+
+	// RVA: 0x63E2BD0 Offset: 0x63DEBD0 VA: 0x63E2BD0
+	public void SelectItem(string fromUniqueId, string toUniqueId, BoardItemPosition boardItemPosition) { }
+
+	// RVA: 0x63E2F94 Offset: 0x63DEF94 VA: 0x63E2F94 Slot: 70
+	public virtual void TransitionToMergeGraph(IMergeItem mergeItem) { }
+
+	// RVA: 0x63E1E2C Offset: 0x63DDE2C VA: 0x63E1E2C
+	public bool TryGetMergeItems(string uuid, out List<IMergeItem> mergeItems) { }
+
+	// RVA: 0x63E2674 Offset: 0x63DE674 VA: 0x63E2674
+	public float GetDiffScore(string itemId) { }
+
+	// RVA: 0x63E30D0 Offset: 0x63DF0D0 VA: 0x63E30D0
+	public void .ctor() { }
+}
+

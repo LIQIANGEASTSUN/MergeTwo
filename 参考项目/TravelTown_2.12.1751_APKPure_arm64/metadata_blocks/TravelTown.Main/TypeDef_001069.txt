@@ -1,0 +1,29 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class InteractionComponent.<>c // TypeDefIndex: 1069
+{
+	// Fields
+	public static readonly InteractionComponent.<>c <>9; // 0x0
+	public static Func<Combination, IEnumerable<MergeItemWeakReference>> <>9__72_0; // 0x8
+	public static Func<MergeItemWeakReference, ItemMultiple> <>9__72_1; // 0x10
+	public static Action<Action> <>9__74_0; // 0x18
+
+	// Methods
+
+	// RVA: 0x68FD2B8 Offset: 0x68F92B8 VA: 0x68FD2B8
+	private static void .cctor() { }
+
+	// RVA: 0x68FD320 Offset: 0x68F9320 VA: 0x68FD320
+	public void .ctor() { }
+
+	// RVA: 0x68FD328 Offset: 0x68F9328 VA: 0x68FD328
+	internal IEnumerable<MergeItemWeakReference> <FillItemsToConsume>b__72_0(Combination interactionCostItem) { }
+
+	// RVA: 0x68FD340 Offset: 0x68F9340 VA: 0x68FD340
+	internal ItemMultiple <FillItemsToConsume>b__72_1(MergeItemWeakReference i) { }
+
+	// RVA: 0x68FD3A0 Offset: 0x68F93A0 VA: 0x68FD3A0
+	internal void <TryInvokeCallback>b__74_0(Action callback) { }
+}
+

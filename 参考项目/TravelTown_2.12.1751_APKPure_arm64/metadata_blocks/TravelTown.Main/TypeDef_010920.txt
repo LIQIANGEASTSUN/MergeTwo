@@ -1,0 +1,46 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class RepositoryBase.<>c__DisplayClass43_0<TResponse> // TypeDefIndex: 10920
+{
+	// Fields
+	public RepositoryBase <>4__this; // 0x0
+	public Promise<TResponse> promise; // 0x0
+	public IResponseValidator<TResponse> validator; // 0x0
+	public bool reportParsingMetric; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4B0B474 Offset: 0x4B07474 VA: 0x4B0B474
+	|-RepositoryBase.<>c__DisplayClass43_0<object>..ctor
+	|
+	|-RVA: 0x4B0B4C8 Offset: 0x4B074C8 VA: 0x4B0B4C8
+	|-RepositoryBase.<>c__DisplayClass43_0<__Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal void <Get>b__0(HttpResponse response) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4B0B47C Offset: 0x4B0747C VA: 0x4B0B47C
+	|-RepositoryBase.<>c__DisplayClass43_0<object>.<Get>b__0
+	|
+	|-RVA: 0x4B0B4D0 Offset: 0x4B074D0 VA: 0x4B0B4D0
+	|-RepositoryBase.<>c__DisplayClass43_0<__Il2CppFullySharedGenericType>.<Get>b__0
+	*/
+
+	// RVA: -1 Offset: -1
+	internal void <Get>b__1(Exception exception) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4B0B4AC Offset: 0x4B074AC VA: 0x4B0B4AC
+	|-RepositoryBase.<>c__DisplayClass43_0<object>.<Get>b__1
+	|
+	|-RVA: 0x4B0B504 Offset: 0x4B07504 VA: 0x4B0B504
+	|-RepositoryBase.<>c__DisplayClass43_0<__Il2CppFullySharedGenericType>.<Get>b__1
+	*/
+}
+

@@ -1,0 +1,18 @@
+// Namespace: Merger.MergeBoard.Systems
+public class ItemSelectionBoxSystem : ISystem // TypeDefIndex: 25754
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x10
+	[Inject]
+	private IEntityFactory _entityFactory; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A6DE7C Offset: 0x6A69E7C VA: 0x6A6DE7C Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A6E388 Offset: 0x6A6A388 VA: 0x6A6E388
+	public void .ctor() { }
+}
+

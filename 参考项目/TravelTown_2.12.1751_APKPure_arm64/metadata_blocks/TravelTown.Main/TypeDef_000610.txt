@@ -1,0 +1,25 @@
+// Namespace: MergeEngine.ECS.Util
+public static class ECSInjectionUtil // TypeDefIndex: 610
+{
+	// Fields
+	private const BindingFlags BindingFlags = 10292;
+	private static Dictionary<Type, MethodInfo> _callCache; // 0x0
+
+	// Methods
+
+	// RVA: 0x62714EC Offset: 0x626D4EC VA: 0x62714EC
+	public static void InjectComponents(object target, IEntityManager entityManager) { }
+
+	// RVA: 0x6271724 Offset: 0x626D724 VA: 0x6271724
+	public static void InjectSystems(object target, ISystemManager systemManager) { }
+
+	// RVA: 0x627196C Offset: 0x626D96C VA: 0x627196C
+	public static void InjectAll(object target, DiContainer container) { }
+
+	// RVA: 0x62719E0 Offset: 0x626D9E0 VA: 0x62719E0
+	public static void InjectSystemsAndComponents(object target, DiContainer container) { }
+
+	// RVA: 0x6271AA0 Offset: 0x626DAA0 VA: 0x6271AA0
+	private static void .cctor() { }
+}
+

@@ -1,0 +1,292 @@
+// Namespace: DragonU3DSDK.Storage
+[Serializable]
+public class StorageMergeItem : StorageBase // TypeDefIndex: 11022
+{
+	// Fields
+	[JsonProperty]
+	private int id; // 0x8
+	[JsonProperty]
+	private int state; // 0xC
+	[JsonProperty]
+	private int unlockState; // 0x10
+	[JsonProperty]
+	private ulong productTime; // 0x18
+	[JsonProperty]
+	private ulong timProductTime; // 0x20
+	[JsonProperty]
+	private int productCount; // 0x28
+	[JsonProperty]
+	private int timeProductCount; // 0x2C
+	[JsonProperty]
+	private ulong openTime; // 0x30
+	[JsonProperty]
+	private StorageList<int> productItems; // 0x38
+	[JsonProperty]
+	private int storeMax; // 0x3C
+	[JsonProperty]
+	private int timeStoreMax; // 0x40
+	[JsonProperty]
+	private ulong inCdTime; // 0x48
+	[JsonProperty]
+	private int bubbleType; // 0x50
+	[JsonProperty]
+	private int bubbleDiscount; // 0x54
+	[JsonProperty]
+	private ulong activeTime; // 0x58
+	[JsonProperty]
+	private bool isPause; // 0x60
+	[JsonProperty]
+	private int pauseCDTime; // 0x64
+	[JsonProperty]
+	private StorageDictionary<int, int> dropIntervalDic; // 0x68
+	[JsonProperty]
+	private int playRvNum; // 0x6C
+	[JsonProperty]
+	private int productWheel; // 0x70
+	[JsonProperty]
+	private int boosterFactor; // 0x74
+	[JsonProperty]
+	private ulong bsRefreshTime; // 0x78
+	[JsonProperty]
+	private int bsIndex; // 0x80
+	[JsonProperty]
+	private StorageDictionary<int, int> eatBuildingDic; // 0x84
+	[JsonProperty]
+	private string userInfo; // 0x88
+	[JsonProperty]
+	private int uniqueId; // 0x8C
+	[JsonProperty]
+	private StorageList<int> replaceItems; // 0x90
+	[JsonProperty]
+	private int mineIndex; // 0x94
+	[JsonProperty]
+	private int iceCubeExistTime; // 0x98
+
+	// Properties
+	[JsonIgnore]
+	public int Id { get; set; }
+	[JsonIgnore]
+	public int State { get; set; }
+	[JsonIgnore]
+	public int UnlockState { get; set; }
+	[JsonIgnore]
+	public ulong ProductTime { get; set; }
+	[JsonIgnore]
+	public ulong TimProductTime { get; set; }
+	[JsonIgnore]
+	public int ProductCount { get; set; }
+	[JsonIgnore]
+	public int TimeProductCount { get; set; }
+	[JsonIgnore]
+	public ulong OpenTime { get; set; }
+	[JsonIgnore]
+	public StorageList<int> ProductItems { get; }
+	[JsonIgnore]
+	public int StoreMax { get; set; }
+	[JsonIgnore]
+	public int TimeStoreMax { get; set; }
+	[JsonIgnore]
+	public ulong InCdTime { get; set; }
+	[JsonIgnore]
+	public int BubbleType { get; set; }
+	[JsonIgnore]
+	public int BubbleDiscount { get; set; }
+	[JsonIgnore]
+	public ulong ActiveTime { get; set; }
+	[JsonIgnore]
+	public bool IsPause { get; set; }
+	[JsonIgnore]
+	public int PauseCDTime { get; set; }
+	[JsonIgnore]
+	public StorageDictionary<int, int> DropIntervalDic { get; }
+	[JsonIgnore]
+	public int PlayRvNum { get; set; }
+	[JsonIgnore]
+	public int ProductWheel { get; set; }
+	[JsonIgnore]
+	public int BoosterFactor { get; set; }
+	[JsonIgnore]
+	public ulong BsRefreshTime { get; set; }
+	[JsonIgnore]
+	public int BsIndex { get; set; }
+	[JsonIgnore]
+	public StorageDictionary<int, int> EatBuildingDic { get; }
+	[JsonIgnore]
+	public string UserInfo { get; set; }
+	[JsonIgnore]
+	public int UniqueId { get; set; }
+	[JsonIgnore]
+	public StorageList<int> ReplaceItems { get; }
+	[JsonIgnore]
+	public int MineIndex { get; set; }
+	[JsonIgnore]
+	public int IceCubeExistTime { get; set; }
+
+	// Methods
+
+	// RVA: 0x26E6B34 Offset: 0x26E6B34 VA: 0x26E6B34
+	public int get_Id() { }
+
+	// RVA: 0x26E6B3C Offset: 0x26E6B3C VA: 0x26E6B3C
+	public void set_Id(int value) { }
+
+	// RVA: 0x26E6BF0 Offset: 0x26E6BF0 VA: 0x26E6BF0
+	public int get_State() { }
+
+	// RVA: 0x26E6BF8 Offset: 0x26E6BF8 VA: 0x26E6BF8
+	public void set_State(int value) { }
+
+	// RVA: 0x26E6CAC Offset: 0x26E6CAC VA: 0x26E6CAC
+	public int get_UnlockState() { }
+
+	// RVA: 0x26E6CB4 Offset: 0x26E6CB4 VA: 0x26E6CB4
+	public void set_UnlockState(int value) { }
+
+	// RVA: 0x26E6D68 Offset: 0x26E6D68 VA: 0x26E6D68
+	public ulong get_ProductTime() { }
+
+	// RVA: 0x26E6D70 Offset: 0x26E6D70 VA: 0x26E6D70
+	public void set_ProductTime(ulong value) { }
+
+	// RVA: 0x26E6E38 Offset: 0x26E6E38 VA: 0x26E6E38
+	public ulong get_TimProductTime() { }
+
+	// RVA: 0x26E6E40 Offset: 0x26E6E40 VA: 0x26E6E40
+	public void set_TimProductTime(ulong value) { }
+
+	// RVA: 0x26E6F08 Offset: 0x26E6F08 VA: 0x26E6F08
+	public int get_ProductCount() { }
+
+	// RVA: 0x26E6F10 Offset: 0x26E6F10 VA: 0x26E6F10
+	public void set_ProductCount(int value) { }
+
+	// RVA: 0x26E6FC4 Offset: 0x26E6FC4 VA: 0x26E6FC4
+	public int get_TimeProductCount() { }
+
+	// RVA: 0x26E6FCC Offset: 0x26E6FCC VA: 0x26E6FCC
+	public void set_TimeProductCount(int value) { }
+
+	// RVA: 0x26E7080 Offset: 0x26E7080 VA: 0x26E7080
+	public ulong get_OpenTime() { }
+
+	// RVA: 0x26E7088 Offset: 0x26E7088 VA: 0x26E7088
+	public void set_OpenTime(ulong value) { }
+
+	// RVA: 0x26E7150 Offset: 0x26E7150 VA: 0x26E7150
+	public StorageList<int> get_ProductItems() { }
+
+	// RVA: 0x26E7158 Offset: 0x26E7158 VA: 0x26E7158
+	public int get_StoreMax() { }
+
+	// RVA: 0x26E7160 Offset: 0x26E7160 VA: 0x26E7160
+	public void set_StoreMax(int value) { }
+
+	// RVA: 0x26E7214 Offset: 0x26E7214 VA: 0x26E7214
+	public int get_TimeStoreMax() { }
+
+	// RVA: 0x26E721C Offset: 0x26E721C VA: 0x26E721C
+	public void set_TimeStoreMax(int value) { }
+
+	// RVA: 0x26E72D0 Offset: 0x26E72D0 VA: 0x26E72D0
+	public ulong get_InCdTime() { }
+
+	// RVA: 0x26E72D8 Offset: 0x26E72D8 VA: 0x26E72D8
+	public void set_InCdTime(ulong value) { }
+
+	// RVA: 0x26E73A0 Offset: 0x26E73A0 VA: 0x26E73A0
+	public int get_BubbleType() { }
+
+	// RVA: 0x26E73A8 Offset: 0x26E73A8 VA: 0x26E73A8
+	public void set_BubbleType(int value) { }
+
+	// RVA: 0x26E745C Offset: 0x26E745C VA: 0x26E745C
+	public int get_BubbleDiscount() { }
+
+	// RVA: 0x26E7464 Offset: 0x26E7464 VA: 0x26E7464
+	public void set_BubbleDiscount(int value) { }
+
+	// RVA: 0x26E7518 Offset: 0x26E7518 VA: 0x26E7518
+	public ulong get_ActiveTime() { }
+
+	// RVA: 0x26E7520 Offset: 0x26E7520 VA: 0x26E7520
+	public void set_ActiveTime(ulong value) { }
+
+	// RVA: 0x26E75E8 Offset: 0x26E75E8 VA: 0x26E75E8
+	public bool get_IsPause() { }
+
+	// RVA: 0x26E75F0 Offset: 0x26E75F0 VA: 0x26E75F0
+	public void set_IsPause(bool value) { }
+
+	// RVA: 0x26E76A4 Offset: 0x26E76A4 VA: 0x26E76A4
+	public int get_PauseCDTime() { }
+
+	// RVA: 0x26E76AC Offset: 0x26E76AC VA: 0x26E76AC
+	public void set_PauseCDTime(int value) { }
+
+	// RVA: 0x26E7760 Offset: 0x26E7760 VA: 0x26E7760
+	public StorageDictionary<int, int> get_DropIntervalDic() { }
+
+	// RVA: 0x26E7768 Offset: 0x26E7768 VA: 0x26E7768
+	public int get_PlayRvNum() { }
+
+	// RVA: 0x26E7770 Offset: 0x26E7770 VA: 0x26E7770
+	public void set_PlayRvNum(int value) { }
+
+	// RVA: 0x26E7824 Offset: 0x26E7824 VA: 0x26E7824
+	public int get_ProductWheel() { }
+
+	// RVA: 0x26E782C Offset: 0x26E782C VA: 0x26E782C
+	public void set_ProductWheel(int value) { }
+
+	// RVA: 0x26E78E0 Offset: 0x26E78E0 VA: 0x26E78E0
+	public int get_BoosterFactor() { }
+
+	// RVA: 0x26E78E8 Offset: 0x26E78E8 VA: 0x26E78E8
+	public void set_BoosterFactor(int value) { }
+
+	// RVA: 0x26E799C Offset: 0x26E799C VA: 0x26E799C
+	public ulong get_BsRefreshTime() { }
+
+	// RVA: 0x26E79A4 Offset: 0x26E79A4 VA: 0x26E79A4
+	public void set_BsRefreshTime(ulong value) { }
+
+	// RVA: 0x26E7A6C Offset: 0x26E7A6C VA: 0x26E7A6C
+	public int get_BsIndex() { }
+
+	// RVA: 0x26E7A74 Offset: 0x26E7A74 VA: 0x26E7A74
+	public void set_BsIndex(int value) { }
+
+	// RVA: 0x26E7B28 Offset: 0x26E7B28 VA: 0x26E7B28
+	public StorageDictionary<int, int> get_EatBuildingDic() { }
+
+	// RVA: 0x26E7B30 Offset: 0x26E7B30 VA: 0x26E7B30
+	public string get_UserInfo() { }
+
+	// RVA: 0x26E7B38 Offset: 0x26E7B38 VA: 0x26E7B38
+	public void set_UserInfo(string value) { }
+
+	// RVA: 0x26E7C04 Offset: 0x26E7C04 VA: 0x26E7C04
+	public int get_UniqueId() { }
+
+	// RVA: 0x26E7C0C Offset: 0x26E7C0C VA: 0x26E7C0C
+	public void set_UniqueId(int value) { }
+
+	// RVA: 0x26E7CC0 Offset: 0x26E7CC0 VA: 0x26E7CC0
+	public StorageList<int> get_ReplaceItems() { }
+
+	// RVA: 0x26E7CC8 Offset: 0x26E7CC8 VA: 0x26E7CC8
+	public int get_MineIndex() { }
+
+	// RVA: 0x26E7CD0 Offset: 0x26E7CD0 VA: 0x26E7CD0
+	public void set_MineIndex(int value) { }
+
+	// RVA: 0x26E7D84 Offset: 0x26E7D84 VA: 0x26E7D84
+	public int get_IceCubeExistTime() { }
+
+	// RVA: 0x26E7D8C Offset: 0x26E7D8C VA: 0x26E7D8C
+	public void set_IceCubeExistTime(int value) { }
+
+	// RVA: 0x26E7E40 Offset: 0x26E7E40 VA: 0x26E7E40
+	public void .ctor() { }
+}
+

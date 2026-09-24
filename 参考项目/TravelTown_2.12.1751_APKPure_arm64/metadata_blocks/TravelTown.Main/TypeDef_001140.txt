@@ -1,0 +1,9 @@
+// Namespace: MergeEngine.Data
+public struct SerializedBoardItemEntry // TypeDefIndex: 1140
+{
+	// Methods
+
+	// RVA: 0x69053A8 Offset: 0x69013A8 VA: 0x69053A8
+	public void .ctor(int col, int row, int id) { }
+}
+

@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ProducerExcitementService.<>c__DisplayClass31_0 // TypeDefIndex: 33622
+{
+	// Fields
+	public List<BoardItemPosition> ignorePositions; // 0x10
+
+	// Methods
+
+	// RVA: 0x6AD80B8 Offset: 0x6AD40B8 VA: 0x6AD80B8
+	public void .ctor() { }
+
+	// RVA: 0x6AD8994 Offset: 0x6AD4994 VA: 0x6AD8994
+	internal bool <TryGetExcitementPosition>b__0(BoardItemPosition position) { }
+}
+

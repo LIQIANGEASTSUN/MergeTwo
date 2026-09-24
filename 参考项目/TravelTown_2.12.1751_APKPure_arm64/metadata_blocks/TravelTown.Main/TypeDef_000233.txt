@@ -1,0 +1,9 @@
+// Namespace: MergeEngine.Signal.Items
+public class MergeItemDiscoveredSignal : MergeItemSignalBase // TypeDefIndex: 233
+{
+	// Methods
+
+	// RVA: 0x5FF3BA8 Offset: 0x5FEFBA8 VA: 0x5FF3BA8
+	public void .ctor(IMergeItem item) { }
+}
+

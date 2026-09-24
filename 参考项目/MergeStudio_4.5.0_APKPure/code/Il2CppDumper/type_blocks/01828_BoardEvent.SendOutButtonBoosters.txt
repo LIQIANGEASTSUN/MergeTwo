@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BoardEvent.SendOutButtonBoosters : IEvent // TypeDefIndex: 1828
+{
+	// Fields
+	public int BoosterID; // 0x0
+}
+

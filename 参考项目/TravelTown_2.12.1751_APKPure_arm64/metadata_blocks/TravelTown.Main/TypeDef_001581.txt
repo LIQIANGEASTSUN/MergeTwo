@@ -1,0 +1,47 @@
+// Namespace: GameCore.Configuration.Definitions
+public abstract class ConfigurableScriptableObject : SerializedScriptableObject, IUniqueStringKeyAsset // TypeDefIndex: 1581
+{
+	// Fields
+	[JsonProperty("uniqueId")]
+	[ConstructorParameter(1)]
+	[SerializeField]
+	private string _storedUniqueId; // 0x58
+	[FormerlySerializedAs("_ignoreInUniqueIdCheck")]
+	[SerializeField]
+	[JsonIgnore]
+	private bool _isPartOfAbTest; // 0x60
+	private string _overrideUniqueId; // 0x68
+
+	// Properties
+	[JsonIgnore]
+	public string UniqueId { get; }
+	[JsonIgnore]
+	public bool IsPartOfAbTest { get; set; }
+
+	// Methods
+
+	// RVA: 0x601F910 Offset: 0x601B910 VA: 0x601F910 Slot: 8
+	public string get_UniqueId() { }
+
+	// RVA: 0x601F940 Offset: 0x601B940 VA: 0x601F940
+	public bool get_IsPartOfAbTest() { }
+
+	// RVA: 0x601F948 Offset: 0x601B948 VA: 0x601F948
+	public void set_IsPartOfAbTest(bool value) { }
+
+	// RVA: 0x601F954 Offset: 0x601B954 VA: 0x601F954
+	protected void .ctor() { }
+
+	// RVA: 0x601F95C Offset: 0x601B95C VA: 0x601F95C
+	protected void .ctor(string storedUniqueId) { }
+
+	// RVA: 0x601F98C Offset: 0x601B98C VA: 0x601F98C
+	public void SetUniqueId(string id) { }
+
+	// RVA: 0x601F994 Offset: 0x601B994 VA: 0x601F994
+	public void SetOverrideUniqueIdFrom(ConfigurableScriptableObject other) { }
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract string GetStoragePath();
+}
+

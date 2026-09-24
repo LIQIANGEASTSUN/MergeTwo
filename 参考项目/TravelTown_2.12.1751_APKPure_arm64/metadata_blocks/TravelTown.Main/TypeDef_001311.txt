@@ -1,0 +1,12 @@
+// Namespace: MergeEngine.Configuration.Definitions
+public enum MergeType // TypeDefIndex: 1311
+{
+	// Fields
+	public int value__; // 0x0
+	public const MergeType Same = 0;
+	public const MergeType AnyItemOnly = 1;
+	public const MergeType None = 2;
+	public const MergeType SpecificItem = 3;
+	public const MergeType Splitter = 4;
+}
+

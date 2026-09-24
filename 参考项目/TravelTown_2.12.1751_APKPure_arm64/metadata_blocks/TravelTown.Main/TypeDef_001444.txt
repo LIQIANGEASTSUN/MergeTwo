@@ -1,0 +1,12 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+public enum ProducerTimerTrigger // TypeDefIndex: 1444
+{
+	// Fields
+	public int value__; // 0x0
+	public const ProducerTimerTrigger Undefined = 0;
+	[EnumMember(Value = "created")]
+	public const ProducerTimerTrigger Created = 1;
+	[EnumMember(Value = "firstTimeProduce")]
+	public const ProducerTimerTrigger FirstTimeProduce = 2;
+}
+

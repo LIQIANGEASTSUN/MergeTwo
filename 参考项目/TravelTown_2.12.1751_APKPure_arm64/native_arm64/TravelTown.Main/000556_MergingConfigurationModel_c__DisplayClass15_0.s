@@ -1,0 +1,98 @@
+; Capstone 4 disassembly of Travel Town 2.12.1751 libil2cpp.so
+; TypeDefIndex 556 .MergingConfigurationModel.<>c__DisplayClass15_0
+; Boundaries: next address in Il2CppDumper script.json; these bounds are inferred.
+
+; RVA 0x613C994 | public void .ctor() { }
+; bytes=8 sha256=599f47d6f75968c1256d5c0c76f9814b67bf53f9c28d274788545bc0929cfbc3 status=arm64_complete_bound indexed_start=True
+0x0613C994: e1031faa  mov x1, xzr
+0x0613C998: 1977d617  b #0x56da5fc
+
+; RVA 0x6141274 | internal void <GraphLoaded>b__0(IMergeItem item) { }
+; bytes=344 sha256=6a3e76b4a8bc5978b4e973a6e086f443c3029958cc60c3ef323c360d6e9d1a5d status=arm64_complete_bound indexed_start=True
+0x06141274: fe0f1df8  str x30, [sp, #-0x30]!
+0x06141278: f65701a9  stp x22, x21, [sp, #0x10]
+0x0614127C: f44f02a9  stp x20, x19, [sp, #0x20]
+0x06141280: 15df00f0  adrp x21, #0x7d24000
+0x06141284: a8325739  ldrb w8, [x21, #0x5cc]
+0x06141288: f30301aa  mov x19, x1
+0x0614128C: f40300aa  mov x20, x0
+0x06141290: 88010037  tbnz w8, #0, #0x61412c0
+0x06141294: c0ac00d0  adrp x0, #0x76db000
+0x06141298: 005042f9  ldr x0, [x0, #0x4a0]
+0x0614129C: dffd4097  bl #0x3180a18
+0x061412A0: e0a900b0  adrp x0, #0x767e000
+0x061412A4: 00a442f9  ldr x0, [x0, #0x548]
+0x061412A8: dcfd4097  bl #0x3180a18
+0x061412AC: c0a90090  adrp x0, #0x7679000
+0x061412B0: 001044f9  ldr x0, [x0, #0x820]
+0x061412B4: d9fd4097  bl #0x3180a18
+0x061412B8: 28008052  movz w8, #0x1
+0x061412BC: a8321739  strb w8, [x21, #0x5cc]
+0x061412C0: 890a40f9  ldr x9, [x20, #0x10]
+0x061412C4: 290800b4  cbz x9, #0x61413c8
+0x061412C8: 130800b4  cbz x19, #0x61413c8
+0x061412CC: caa90090  adrp x10, #0x7679000
+0x061412D0: 680240f9  ldr x8, [x19]
+0x061412D4: 4a1144f9  ldr x10, [x10, #0x820]
+0x061412D8: 352140f9  ldr x21, [x9, #0x40]
+0x061412DC: 095d4279  ldrh w9, [x8, #0x12e]
+0x061412E0: 410140f9  ldr x1, [x10]
+0x061412E4: 290100b4  cbz x9, #0x6141308
+0x061412E8: 0a5940f9  ldr x10, [x8, #0xb0]
+0x061412EC: 4a210091  add x10, x10, #8
+0x061412F0: 4b815ff8  ldur x11, [x10, #-8]
+0x061412F4: 7f0101eb  cmp x11, x1
+0x061412F8: 00010054  b.eq #0x6141318
+0x061412FC: 290500f1  subs x9, x9, #1
+0x06141300: 4a410091  add x10, x10, #0x10
+0x06141304: 61ffff54  b.ne #0x61412f0
+0x06141308: e00313aa  mov x0, x19
+0x0614130C: e2031f2a  mov w2, wzr
+0x06141310: 00564097  bl #0x3156b10
+0x06141314: 04000014  b #0x6141324
+0x06141318: 490180b9  ldrsw x9, [x10]
+0x0614131C: 0811098b  add x8, x8, x9, lsl #4
+0x06141320: 00e10491  add x0, x8, #0x138
+0x06141324: 080440a9  ldp x8, x1, [x0]
+0x06141328: e00313aa  mov x0, x19
+0x0614132C: 00013fd6  blr x8
+0x06141330: d50400b4  cbz x21, #0x61413c8
+0x06141334: c8ac00d0  adrp x8, #0x76db000
+0x06141338: 085142f9  ldr x8, [x8, #0x4a0]
+0x0614133C: 820e40f9  ldr x2, [x20, #0x18]
+0x06141340: f6a900b0  adrp x22, #0x767e000
+0x06141344: e10300aa  mov x1, x0
+0x06141348: 030140f9  ldr x3, [x8]
+0x0614134C: d6a642f9  ldr x22, [x22, #0x548]
+0x06141350: e00315aa  mov x0, x21
+0x06141354: 8586b697  bl #0x4ee2d68
+0x06141358: 680240f9  ldr x8, [x19]
+0x0614135C: 940e40f9  ldr x20, [x20, #0x18]
+0x06141360: c10240f9  ldr x1, [x22]
+0x06141364: 095d4279  ldrh w9, [x8, #0x12e]
+0x06141368: 290100b4  cbz x9, #0x614138c
+0x0614136C: 0a5940f9  ldr x10, [x8, #0xb0]
+0x06141370: 4a210091  add x10, x10, #8
+0x06141374: 4b815ff8  ldur x11, [x10, #-8]
+0x06141378: 7f0101eb  cmp x11, x1
+0x0614137C: 00010054  b.eq #0x614139c
+0x06141380: 290500f1  subs x9, x9, #1
+0x06141384: 4a410091  add x10, x10, #0x10
+0x06141388: 61ffff54  b.ne #0x6141374
+0x0614138C: 82038052  movz w2, #0x1c
+0x06141390: e00313aa  mov x0, x19
+0x06141394: df554097  bl #0x3156b10
+0x06141398: 05000014  b #0x61413ac
+0x0614139C: 490140b9  ldr w9, [x10]
+0x061413A0: 29710011  add w9, w9, #0x1c
+0x061413A4: 08d1298b  add x8, x8, w9, sxtw #4
+0x061413A8: 00e10491  add x0, x8, #0x138
+0x061413AC: 030840a9  ldp x3, x2, [x0]
+0x061413B0: e00313aa  mov x0, x19
+0x061413B4: e10314aa  mov x1, x20
+0x061413B8: f44f42a9  ldp x20, x19, [sp, #0x20]
+0x061413BC: f65741a9  ldp x22, x21, [sp, #0x10]
+0x061413C0: fe0743f8  ldr x30, [sp], #0x30
+0x061413C4: 60001fd6  br x3
+0x061413C8: 39fe4097  bl #0x3180cac
+

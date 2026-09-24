@@ -1,0 +1,15 @@
+// Namespace: GameCore.Model
+public interface IResourcesConfigurationModelBase // TypeDefIndex: 1564
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract AssetReferenceT<Sprite> GetResourceIcon(IRewardType rewardType);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract string GetResourceName(IRewardType resource);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract string GetResourceSpriteTag(IRewardType resource);
+}
+

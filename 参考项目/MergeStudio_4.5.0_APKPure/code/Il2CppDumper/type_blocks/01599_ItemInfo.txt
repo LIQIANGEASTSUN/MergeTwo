@@ -1,0 +1,41 @@
+// Namespace: MergePuzzle
+[Serializable]
+public struct ItemInfo // TypeDefIndex: 1599
+{
+	// Fields
+	public int SetID; // 0x0
+	public int Level; // 0x4
+
+	// Properties
+	public static ItemInfo Empty { get; }
+
+	// Methods
+
+	// RVA: 0x1884750 Offset: 0x1884750 VA: 0x1884750
+	public void .ctor(int setID, int level) { }
+
+	// RVA: 0x1885384 Offset: 0x1885384 VA: 0x1885384
+	public ItemInfo GetActiveItemInfo() { }
+
+	// RVA: 0x188547C Offset: 0x188547C VA: 0x188547C Slot: 0
+	public override bool Equals(object obj) { }
+
+	// RVA: 0x1885524 Offset: 0x1885524 VA: 0x1885524
+	public bool Equals(ItemInfo other) { }
+
+	// RVA: 0x1885548 Offset: 0x1885548 VA: 0x1885548 Slot: 2
+	public override int GetHashCode() { }
+
+	// RVA: 0x188550C Offset: 0x188550C VA: 0x188550C
+	public static bool op_Equality(ItemInfo x, ItemInfo y) { }
+
+	// RVA: 0x1885560 Offset: 0x1885560 VA: 0x1885560
+	public static bool op_Inequality(ItemInfo x, ItemInfo y) { }
+
+	// RVA: 0x188483C Offset: 0x188483C VA: 0x188483C Slot: 3
+	public override string ToString() { }
+
+	// RVA: 0x1885574 Offset: 0x1885574 VA: 0x1885574
+	public static ItemInfo get_Empty() { }
+}
+

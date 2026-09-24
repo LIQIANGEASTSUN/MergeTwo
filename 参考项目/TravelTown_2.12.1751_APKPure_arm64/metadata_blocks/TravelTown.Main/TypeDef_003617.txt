@@ -1,0 +1,34 @@
+// Namespace: Merger.PowerBoost.Providers
+public interface IPowerBoostDataProvider // TypeDefIndex: 3617
+{
+	// Properties
+	public abstract bool IsPowerBoostAvailable { get; }
+	public abstract bool IsPowerBoostActive { get; }
+	public abstract int CurrentPowerBoost { get; }
+	public abstract int MaxAvailableBoost { get; }
+	public abstract bool IsMaxBoostActive { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract bool get_IsPowerBoostAvailable();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract bool get_IsPowerBoostActive();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract int get_CurrentPowerBoost();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract int get_MaxAvailableBoost();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract bool get_IsMaxBoostActive();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract bool IsPowerBoostable(string id);
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract IEnumerable<int> GetPlayableBoosts();
+}
+

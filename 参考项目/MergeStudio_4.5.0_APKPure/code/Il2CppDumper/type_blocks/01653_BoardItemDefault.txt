@@ -1,0 +1,16 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "BoardItemDefault", menuName = "Scriptable/BoardItem/Default", order = 1)]
+public class BoardItemDefault : BoardItemData // TypeDefIndex: 1653
+{
+	// Methods
+
+	// RVA: 0x18CA1D0 Offset: 0x18CA1D0 VA: 0x18CA1D0 Slot: 4
+	public override bool Initialize(BoardEntity boardEntity, IItemController item, long millisecondsPassed, bool isNewlyCreated) { }
+
+	// RVA: 0x18CA1D8 Offset: 0x18CA1D8 VA: 0x18CA1D8 Slot: 6
+	public override int GetTimeRequiredToExitCharging() { }
+
+	// RVA: 0x18CA1E0 Offset: 0x18CA1E0 VA: 0x18CA1E0
+	public void .ctor() { }
+}
+

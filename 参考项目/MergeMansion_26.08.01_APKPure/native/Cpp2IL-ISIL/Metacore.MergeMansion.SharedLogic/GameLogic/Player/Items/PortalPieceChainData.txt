@@ -1,0 +1,17 @@
+Type: GameLogic.Player.Items.PortalPieceChainData
+
+Method: System.Void .ctor(System.Int32 portal, System.Collections.Generic.List`1<System.Int32> portalPieces)
+
+Disassembly:
+	0x035FEDF4 RET
+	0x035FEDF8 STP X30, X21, [X31 - 0x20]!
+	0x035FEDFC STP X20, X19, [X31 + 0x10]
+	0x035FEE00 ADRP X20, 0x272B000
+
+ISIL:
+	001 Move [X0], W1
+	002 Move X1, X2
+	003 Move [X0+8], X2
+	004 Call 0x239F888
+	005 Return 
+

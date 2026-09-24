@@ -1,0 +1,22 @@
+// Namespace: Merger.MergeBoard.Commands
+public class ItemSelectionBoxItemPickedCommand : CommandBase<ItemSelectionBoxItemSelectedSignal> // TypeDefIndex: 26029
+{
+	// Fields
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0x30
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x38
+	[Inject]
+	private BoardController _boardController; // 0x40
+	[Inject]
+	private IMergeBoardLayout _layout; // 0x48
+
+	// Methods
+
+	// RVA: 0x6A9E918 Offset: 0x6A9A918 VA: 0x6A9E918 Slot: 15
+	public override void Execute(ItemSelectionBoxItemSelectedSignal signal) { }
+
+	// RVA: 0x6A9EBBC Offset: 0x6A9ABBC VA: 0x6A9EBBC
+	public void .ctor() { }
+}
+

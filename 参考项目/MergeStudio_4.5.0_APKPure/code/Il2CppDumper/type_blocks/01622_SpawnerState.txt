@@ -1,0 +1,11 @@
+// Namespace: MergePuzzle
+public enum SpawnerState // TypeDefIndex: 1622
+{
+	// Fields
+	public int value__; // 0x0
+	public const SpawnerState NO_CAPACITY = 0;
+	public const SpawnerState SMALL_CAPACITY = 1;
+	public const SpawnerState BIG_CAPACITY = 2;
+	public const SpawnerState NON_INITIALIZED = 3;
+}
+

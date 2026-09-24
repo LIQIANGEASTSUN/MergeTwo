@@ -1,0 +1,19 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class TimeCycleCapability : CapabilityBase // TypeDefIndex: 1464
+{
+	// Fields
+	public int CycleDelay; // 0x14
+	public int SubCycles; // 0x18
+	public int SubCycleTime; // 0x1C
+	public int ItemsPerSubCycle; // 0x20
+	public int Capacity; // 0x24
+	public bool LimitLifetimeSpawnedItems; // 0x28
+	public int LifetimeSpawnedItemsLimit; // 0x2C
+
+	// Methods
+
+	// RVA: 0x601142C Offset: 0x600D42C VA: 0x601142C
+	public void .ctor() { }
+}
+

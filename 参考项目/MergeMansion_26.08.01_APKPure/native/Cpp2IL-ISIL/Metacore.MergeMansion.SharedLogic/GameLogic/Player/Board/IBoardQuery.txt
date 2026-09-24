@@ -1,0 +1,23 @@
+Type: GameLogic.Player.Board.IBoardQuery
+
+Method: System.ValueTuple`2<System.Int32, System.Int32> get_BoardDimensions()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean IsValid(GameLogic.Player.Board.Coordinate coordinate)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean IsEmpty(GameLogic.Player.Board.Coordinate coordinate)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

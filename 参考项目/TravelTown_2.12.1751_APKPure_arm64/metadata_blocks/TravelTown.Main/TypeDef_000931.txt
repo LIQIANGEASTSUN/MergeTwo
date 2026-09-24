@@ -1,0 +1,134 @@
+// Namespace: 
+private class SplitSystem.SplitContext // TypeDefIndex: 931
+{
+	// Fields
+	[CompilerGenerated]
+	private SplitComponent <SplitItem>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private PositionComponent <SplitTarget>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private BoardItemPosition <From>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private BoardItemPosition <To>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private BoardItemPosition <SplitterPosition>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private IMergeItem <TargetItem>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private IMergeItem <PreviousItem>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private IMergeItem <SplitterMergeItem>k__BackingField; // 0x48
+	[CompilerGenerated]
+	private StackingComponent <SplitterStacking>k__BackingField; // 0x50
+	[CompilerGenerated]
+	private bool <IsBoardFull>k__BackingField; // 0x58
+	[CompilerGenerated]
+	private bool <IntoSplitter>k__BackingField; // 0x59
+
+	// Properties
+	public SplitComponent SplitItem { get; set; }
+	public PositionComponent SplitTarget { get; set; }
+	public BoardItemPosition From { get; set; }
+	public BoardItemPosition To { get; set; }
+	public BoardItemPosition SplitterPosition { get; set; }
+	public IMergeItem TargetItem { get; set; }
+	public IMergeItem PreviousItem { get; set; }
+	public IMergeItem SplitterMergeItem { get; set; }
+	public StackingComponent SplitterStacking { get; set; }
+	public bool IsBoardFull { get; set; }
+	public bool IntoSplitter { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6786D24 Offset: 0x6782D24 VA: 0x6786D24
+	public SplitComponent get_SplitItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6786D2C Offset: 0x6782D2C VA: 0x6786D2C
+	public void set_SplitItem(SplitComponent value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6786D34 Offset: 0x6782D34 VA: 0x6786D34
+	public PositionComponent get_SplitTarget() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6786D3C Offset: 0x6782D3C VA: 0x6786D3C
+	public void set_SplitTarget(PositionComponent value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6786D44 Offset: 0x6782D44 VA: 0x6786D44
+	public BoardItemPosition get_From() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6786D4C Offset: 0x6782D4C VA: 0x6786D4C
+	public void set_From(BoardItemPosition value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6786D54 Offset: 0x6782D54 VA: 0x6786D54
+	public BoardItemPosition get_To() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6786D5C Offset: 0x6782D5C VA: 0x6786D5C
+	public void set_To(BoardItemPosition value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6786D64 Offset: 0x6782D64 VA: 0x6786D64
+	public BoardItemPosition get_SplitterPosition() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6786D6C Offset: 0x6782D6C VA: 0x6786D6C
+	public void set_SplitterPosition(BoardItemPosition value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6786D74 Offset: 0x6782D74 VA: 0x6786D74
+	public IMergeItem get_TargetItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6786D7C Offset: 0x6782D7C VA: 0x6786D7C
+	public void set_TargetItem(IMergeItem value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6786D84 Offset: 0x6782D84 VA: 0x6786D84
+	public IMergeItem get_PreviousItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6786D8C Offset: 0x6782D8C VA: 0x6786D8C
+	public void set_PreviousItem(IMergeItem value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6786D94 Offset: 0x6782D94 VA: 0x6786D94
+	public IMergeItem get_SplitterMergeItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6786D9C Offset: 0x6782D9C VA: 0x6786D9C
+	public void set_SplitterMergeItem(IMergeItem value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6786DA4 Offset: 0x6782DA4 VA: 0x6786DA4
+	public StackingComponent get_SplitterStacking() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6786DAC Offset: 0x6782DAC VA: 0x6786DAC
+	public void set_SplitterStacking(StackingComponent value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6786DB4 Offset: 0x6782DB4 VA: 0x6786DB4
+	public bool get_IsBoardFull() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6786DBC Offset: 0x6782DBC VA: 0x6786DBC
+	public void set_IsBoardFull(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6786DC8 Offset: 0x6782DC8 VA: 0x6786DC8
+	public bool get_IntoSplitter() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6786DD0 Offset: 0x6782DD0 VA: 0x6786DD0
+	public void set_IntoSplitter(bool value) { }
+
+	// RVA: 0x6786518 Offset: 0x6782518 VA: 0x6786518
+	public void .ctor() { }
+}
+

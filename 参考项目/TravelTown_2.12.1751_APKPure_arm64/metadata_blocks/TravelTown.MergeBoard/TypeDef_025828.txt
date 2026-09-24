@@ -1,0 +1,27 @@
+// Namespace: Merger.MergeBoard.Logic
+public class ItemInteractionAffordabilityChecker : IItemInteractionAffordabilityChecker // TypeDefIndex: 25828
+{
+	// Fields
+	[Inject]
+	private IResourcesModel _resourceModel; // 0x10
+	[Inject]
+	private IMergeBoardModel _mergeBoardModel; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A8108C Offset: 0x6A7D08C VA: 0x6A8108C Slot: 4
+	public bool CanAfford(Entity entity) { }
+
+	// RVA: 0x6A81624 Offset: 0x6A7D624 VA: 0x6A81624 Slot: 5
+	public void ConsumeResource(InteractionComponent interactionComponent) { }
+
+	// RVA: 0x6A8114C Offset: 0x6A7D14C VA: 0x6A8114C
+	private bool CanAffordResourceInteractionCost(InteractionComponent interactionComponent) { }
+
+	// RVA: 0x6A812C4 Offset: 0x6A7D2C4 VA: 0x6A812C4
+	private bool CanAffordItemInteractionCost(Entity entity, InteractionComponent interactionComponent) { }
+
+	// RVA: 0x6A81728 Offset: 0x6A7D728 VA: 0x6A81728
+	public void .ctor() { }
+}
+

@@ -1,0 +1,59 @@
+// Namespace: Merger.Rewards.ViewModels
+public class RewardAnimationTargetViewModel : AudioViewModelBase // TypeDefIndex: 2860
+{
+	// Fields
+	[Inject]
+	private IRewardAnimationTargetsModel _rewardAnimationTargetsModel; // 0x78
+	private RewardAnimationTarget _rewardAnimationTarget; // 0x80
+
+	// Properties
+	protected virtual RewardAnimationTarget RewardAnimationTarget { get; }
+
+	// Methods
+
+	// RVA: 0x6112AB0 Offset: 0x610EAB0 VA: 0x6112AB0 Slot: 67
+	protected virtual RewardAnimationTarget get_RewardAnimationTarget() { }
+
+	// RVA: 0x6112AB8 Offset: 0x610EAB8 VA: 0x6112AB8
+	public void ResetRewardTargets(RectTransform transform) { }
+
+	// RVA: 0x6112AFC Offset: 0x610EAFC VA: 0x6112AFC Slot: 68
+	public virtual void UnregisterRewardTargets() { }
+
+	// RVA: 0x6112BBC Offset: 0x610EBBC VA: 0x6112BBC Slot: 69
+	public virtual void RegisterRewardTargets(RectTransform targetRectTransform) { }
+
+	// RVA: 0x6112BC0 Offset: 0x610EBC0 VA: 0x6112BC0
+	public void RegisterItemRewardTarget(IRewardType rewardType, RectTransform targetRectTransform, RewardDestinationType destinationType = 3) { }
+
+	// RVA: 0x6112E0C Offset: 0x610EE0C VA: 0x6112E0C
+	public void RegisterItemRewardTarget(IRewardType rewardType, RectTransform targetRectTransform, Vector2 offset, RewardDestinationType destinationType = 3) { }
+
+	// RVA: 0x6112E18 Offset: 0x610EE18 VA: 0x6112E18
+	public void RegisterItemRewardTargetForAllDestinations(IRewardType rewardType, RectTransform targetRectTransform, Vector2 offset) { }
+
+	// RVA: 0x6112E90 Offset: 0x610EE90 VA: 0x6112E90
+	public void RegisterResourceRewardTarget(IRewardType rewardType, RectTransform targetRectTransform, Vector2 offset, ResourceSource resourceSource = 0) { }
+
+	// RVA: 0x6112E98 Offset: 0x610EE98 VA: 0x6112E98
+	public void RegisterResourceRewardTarget(IRewardType rewardType, RectTransform targetRectTransform, ResourceSource resourceSource = 0) { }
+
+	// RVA: 0x6112C34 Offset: 0x610EC34 VA: 0x6112C34
+	protected void RegisterRewardTarget(IRewardType rewardType, RectTransform targetRectTransform, Vector2 offset, ResourceSource resourceSource, RewardDestinationType destinationType) { }
+
+	// RVA: 0x6112F0C Offset: 0x610EF0C VA: 0x6112F0C
+	public bool IsRewardTarget(RewardAnimationTarget rewardAnimationTarget) { }
+
+	// RVA: 0x6112F38 Offset: 0x610EF38 VA: 0x6112F38
+	public Vector2 GetResourceTargetPositionInRootCanvas(PlayerResourceEnum playerResourceEnum) { }
+
+	// RVA: 0x6112FE4 Offset: 0x610EFE4 VA: 0x6112FE4
+	protected void UnregisterRewardTargets(IRewardType rewardType) { }
+
+	// RVA: 0x61130AC Offset: 0x610F0AC VA: 0x61130AC
+	protected void SetRegisterTarget(RewardAnimationTarget rewardAnimationTarget) { }
+
+	// RVA: 0x61130B4 Offset: 0x610F0B4 VA: 0x61130B4
+	public void .ctor() { }
+}
+

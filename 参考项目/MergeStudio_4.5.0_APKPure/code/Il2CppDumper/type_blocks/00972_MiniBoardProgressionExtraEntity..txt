@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MiniBoardProgressionExtraEntity.<>c__DisplayClass31_0 // TypeDefIndex: 972
+{
+	// Fields
+	public int setID; // 0x8
+
+	// Methods
+
+	// RVA: 0x17957AC Offset: 0x17957AC VA: 0x17957AC
+	public void .ctor() { }
+
+	// RVA: 0x17958EC Offset: 0x17958EC VA: 0x17958EC
+	internal bool <TryAddSideItemProgress>b__0(MiniBoardProgressionSideItemProgress sideProgress) { }
+}
+

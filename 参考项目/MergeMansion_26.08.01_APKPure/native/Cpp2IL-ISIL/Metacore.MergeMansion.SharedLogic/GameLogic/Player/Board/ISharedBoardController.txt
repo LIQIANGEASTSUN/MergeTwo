@@ -1,0 +1,30 @@
+Type: GameLogic.Player.Board.ISharedBoardController
+
+Method: GameLogic.Player.Board.MergeBoard get_CurrentBoard()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metacore.MergeMansion.Common.Options.Option`1<Code.GameLogic.GameEvents.BoardInfo> get_CurrentBoardInfoOption()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean BoardActive(Merge.MergeBoardId boardId)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.MergeItem get_SelectedItem()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

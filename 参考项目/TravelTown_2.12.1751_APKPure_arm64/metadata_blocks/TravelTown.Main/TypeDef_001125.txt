@@ -1,0 +1,48 @@
+// Namespace: MergeEngine.ECS.Components.Board
+public class BoardComponent : ComponentBase<BoardCapability> // TypeDefIndex: 1125
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly int <Cols>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private readonly int <Rows>k__BackingField; // 0x2C
+	public Nullable<BoardItemPosition> DropItemGuess; // 0x30
+	public bool Initializing; // 0x3C
+	private TwoDArray<PositionComponent> _boardArray; // 0x40
+	public Dictionary<BoardItemPosition, Dictionary<BoardItemPosition, int>> BoardDistanceLookup; // 0x48
+
+	// Properties
+	public int Cols { get; }
+	public int Rows { get; }
+	public bool IsFull { get; }
+	public ReadOnlyCollection<BoardItemPosition> EmptyPositions { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x69022C4 Offset: 0x68FE2C4 VA: 0x69022C4
+	public int get_Cols() { }
+
+	[CompilerGenerated]
+	// RVA: 0x69022CC Offset: 0x68FE2CC VA: 0x69022CC
+	public int get_Rows() { }
+
+	// RVA: 0x69022D4 Offset: 0x68FE2D4 VA: 0x69022D4
+	public bool get_IsFull() { }
+
+	// RVA: 0x6902324 Offset: 0x68FE324 VA: 0x6902324
+	public ReadOnlyCollection<BoardItemPosition> get_EmptyPositions() { }
+
+	// RVA: 0x6902374 Offset: 0x68FE374 VA: 0x6902374
+	public void .ctor(BoardCapability capability, Entity entity) { }
+
+	// RVA: 0x6902444 Offset: 0x68FE444 VA: 0x6902444
+	public PositionComponent GetItem(BoardItemPosition position) { }
+
+	// RVA: 0x690249C Offset: 0x68FE49C VA: 0x690249C
+	public bool SetItem(BoardItemPosition position, PositionComponent item) { }
+
+	// RVA: 0x6902524 Offset: 0x68FE524 VA: 0x6902524
+	public List<BoardItemPosition> GetAdjacentPositions(BoardItemPosition position, bool includeDiagonal) { }
+}
+

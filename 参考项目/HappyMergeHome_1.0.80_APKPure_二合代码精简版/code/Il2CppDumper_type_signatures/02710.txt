@@ -1,0 +1,24 @@
+// Namespace: 
+public enum RefreshItemSource // TypeDefIndex: 2710
+{
+	// Fields
+	public int value__; // 0x0
+	public const RefreshItemSource none = 0;
+	public const RefreshItemSource remove = 1;
+	public const RefreshItemSource product = 2;
+	public const RefreshItemSource timeProduct = 3;
+	public const RefreshItemSource unlock = 4;
+	public const RefreshItemSource rewards = 5;
+	public const RefreshItemSource bag = 6;
+	public const RefreshItemSource deathAdd = 7;
+	public const RefreshItemSource merge = 8;
+	public const RefreshItemSource notDeal = 9;
+	public const RefreshItemSource mergeOk = 10;
+	public const RefreshItemSource mergeOk_omnipoten = 11;
+	public const RefreshItemSource mergeBubble = 12;
+	public const RefreshItemSource iceCube = 13;
+	public const RefreshItemSource exp = 14;
+	public const RefreshItemSource webUnlock = 15;
+	public const RefreshItemSource newGuide = 16;
+}
+

@@ -1,0 +1,30 @@
+// Namespace: Merger.RemoteLiveOps.Model
+public interface IEventDataHolder<TEventData> // TypeDefIndex: 6394
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void SetStartEventData(string eventId, TEventData eventData, MutableBindableProperty<double> timeLeft);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IEventDataHolder<__Il2CppFullySharedGenericType>.SetStartEventData
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void UpdateEventData(TEventData eventData);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IEventDataHolder<__Il2CppFullySharedGenericType>.UpdateEventData
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void EndEvent();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IEventDataHolder<__Il2CppFullySharedGenericType>.EndEvent
+	*/
+}
+

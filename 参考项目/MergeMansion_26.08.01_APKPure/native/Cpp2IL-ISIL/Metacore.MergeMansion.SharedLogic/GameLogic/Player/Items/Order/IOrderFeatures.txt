@@ -1,0 +1,51 @@
+Type: GameLogic.Player.Items.Order.IOrderFeatures
+
+Method: System.Boolean get_IsOrder()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_HideRequirementsPhaseProgressBar()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Board.Placement.IPlacement get_RewardsPlacement()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Merge.ItemVisibility get_RewardsItemVisibility()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Production.IItemProducer get_DecayProducer()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Order.OrderParentState CreateState(GameLogic.Random.IGenerationContext context)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Order.IOrderState GetNextOrder(GameLogic.Player.Items.Order.OrderParentState currentState, GameLogic.Random.IGenerationContext context)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

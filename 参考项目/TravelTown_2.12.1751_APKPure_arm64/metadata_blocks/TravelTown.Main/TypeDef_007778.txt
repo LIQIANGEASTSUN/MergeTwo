@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoosterModel.<>c__DisplayClass52_0 // TypeDefIndex: 7778
+{
+	// Fields
+	public BoosterType boosterType; // 0x10
+
+	// Methods
+
+	// RVA: 0x65C6700 Offset: 0x65C2700 VA: 0x65C6700
+	public void .ctor() { }
+
+	// RVA: 0x65C6B74 Offset: 0x65C2B74 VA: 0x65C6B74
+	internal bool <HasAnyBoosterPendingForActivation>b__0(KeyValuePair<string, BoosterType> booster) { }
+}
+

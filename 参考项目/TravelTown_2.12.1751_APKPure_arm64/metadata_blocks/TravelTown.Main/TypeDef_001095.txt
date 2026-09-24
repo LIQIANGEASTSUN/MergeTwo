@@ -1,0 +1,16 @@
+// Namespace: MergeEngine.ECS.Components.Items
+[Serializable]
+public class SerializedTimeLockComponent // TypeDefIndex: 1095
+{
+	// Fields
+	public double TimeLeft; // 0x10
+	public bool BeingUnlocked; // 0x18
+	public bool IsCooldownBlocked; // 0x19
+	public long UnlockEndTime; // 0x20
+
+	// Methods
+
+	// RVA: 0x68FE2FC Offset: 0x68FA2FC VA: 0x68FE2FC
+	public void .ctor() { }
+}
+

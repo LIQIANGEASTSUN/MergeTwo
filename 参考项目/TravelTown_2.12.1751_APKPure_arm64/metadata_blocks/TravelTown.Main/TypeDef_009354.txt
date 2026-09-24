@@ -1,0 +1,41 @@
+// Namespace: Merger.Game.Signal
+public class BubbledItemExpiredSignal : MergeItemBubbleSignalBase // TypeDefIndex: 9354
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly int <BubblesOnBoard>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private readonly int <BurstPrice>k__BackingField; // 0x2C
+	[CompilerGenerated]
+	private readonly BubbledItemExpiredSignal.Collectable <SpawnedCollectable>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private readonly int <BubbleTier>k__BackingField; // 0x38
+
+	// Properties
+	public int BubblesOnBoard { get; }
+	public int BurstPrice { get; }
+	public BubbledItemExpiredSignal.Collectable SpawnedCollectable { get; }
+	public int BubbleTier { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x676AE88 Offset: 0x6766E88 VA: 0x676AE88
+	public int get_BubblesOnBoard() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676AE90 Offset: 0x6766E90 VA: 0x676AE90
+	public int get_BurstPrice() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676AE98 Offset: 0x6766E98 VA: 0x676AE98
+	public BubbledItemExpiredSignal.Collectable get_SpawnedCollectable() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676AEA0 Offset: 0x6766EA0 VA: 0x676AEA0
+	public int get_BubbleTier() { }
+
+	// RVA: 0x676AEA8 Offset: 0x6766EA8 VA: 0x676AEA8
+	public void .ctor(IMergeItem mergeItem, int mergeItemLevel, int bubblesOnBoard, int burstPrice, CollectableComponent spawnedCollectableComponent, int bubbleTier) { }
+}
+

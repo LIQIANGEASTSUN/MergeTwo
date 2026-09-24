@@ -1,0 +1,16 @@
+Type: GameLogic.Player.Items.Collectable.IInfiniteEnergyCollectAction
+
+Method: System.Double get_DurationMinutes()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.EnergyType get_EnergyType()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

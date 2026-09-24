@@ -1,0 +1,90 @@
+// Namespace: 
+[Serializable]
+public class TableMergeItem : TableBase // TypeDefIndex: 2037
+{
+	// Fields
+	public int id; // 0x8
+	public string name_key; // 0xC
+	public string image; // 0x10
+	public string image_full; // 0x14
+	public float offsetY; // 0x18
+	public int type; // 0x1C
+	public int subType; // 0x20
+	public bool showText; // 0x24
+	public string showAnimAsset; // 0x28
+	public int level; // 0x2C
+	public int in_line; // 0x30
+	public int airIsland; // 0x34
+	public int[] re_line; // 0x38
+	public int[] reSp_line; // 0x3C
+	public bool order_possible; // 0x40
+	public string item_des; // 0x44
+	public int pre_level; // 0x48
+	public int next_level; // 0x4C
+	public int sold_gold; // 0x50
+	public int output_lock; // 0x54
+	public bool energy_frenzy; // 0x58
+	public bool is_product_all_cd; // 0x59
+	public float cd_time; // 0x5C
+	public int[] outputLimit; // 0x60
+	public int[] outputLimitByTimes; // 0x64
+	public int[] dynamicPowerItem; // 0x68
+	public int dynamicPower; // 0x6C
+	public int[] active_cost; // 0x70
+	public int[] produce_cost; // 0x74
+	public bool isIgnoreCd; // 0x78
+	public int[] cdspeed_cost; // 0x7C
+	public int[] output_cost; // 0x80
+	public int[] output; // 0x84
+	public int[] power; // 0x88
+	public int output_amount; // 0x8C
+	public int max_output_amount; // 0x90
+	public int[] time_cdspeed_cost; // 0x94
+	public int[] timeOutput_cost; // 0x98
+	public int[] timeOutput; // 0x9C
+	public int[] timeOutputPower; // 0xA0
+	public int time_output_amount; // 0xA4
+	public int time_max_output_amount; // 0xA8
+	public int[] Max_Drop_Interval; // 0xAC
+	public int[] show_power; // 0xB0
+	public int onelife; // 0xB4
+	public int out_death; // 0xB8
+	public int value; // 0xBC
+	public int[] bubble_rate; // 0xC0
+	public int[] unlcok_power_bubble; // 0xC4
+	public int unlcok_cost_bubble; // 0xC8
+	public int day_bubble_count; // 0xCC
+	public int unlcok_cost_net; // 0xD0
+	public int booster_factor; // 0xD4
+	public int Gem_split; // 0xD8
+	public bool rv_speedup; // 0xDC
+	public bool sold_confirm; // 0xDD
+	public int rv_speed_count; // 0xE0
+	public int original_count; // 0xE4
+	public int time_original_count; // 0xE8
+	public int[] gallery_award; // 0xEC
+	public int price; // 0xF0
+	public bool isSpecial; // 0xF4
+	public int output_rules_task; // 0xF8
+	public bool master_card_undo; // 0xFC
+	public int merge_output; // 0x100
+	public int merge_effect_index; // 0x104
+	public int[] output_probability; // 0x108
+	public int[] big_smale_cd; // 0x10C
+	public string big_smale_cdspeed; // 0x110
+	public int recovery_item; // 0x114
+	public int[] level_box_produce; // 0x118
+	public bool isBuildingBag; // 0x11C
+
+	// Methods
+
+	// RVA: 0x29ABFA0 Offset: 0x29ABFA0 VA: 0x29ABFA0 Slot: 4
+	public override int GetID() { }
+
+	// RVA: 0x29ABFF4 Offset: 0x29ABFF4 VA: 0x29ABFF4
+	public void .ctor() { }
+
+	// RVA: 0x29ABFFC Offset: 0x29ABFFC VA: 0x29ABFFC
+	public int <>iFixBaseProxy_GetID() { }
+}
+

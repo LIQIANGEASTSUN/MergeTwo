@@ -1,0 +1,70 @@
+// Namespace: Merger.MergeBoard.Components
+public struct BoxComponent : IComponent // TypeDefIndex: 25990
+{
+	// Fields
+	[CompilerGenerated]
+	private bool <Boxed>k__BackingField; // 0x0
+	[CompilerGenerated]
+	private int <InteractionAmount>k__BackingField; // 0x4
+	[CompilerGenerated]
+	private int <TotalInteractionAmount>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private UnboxingType <UnboxingType>k__BackingField; // 0xC
+	[CompilerGenerated]
+	private PlayerResourceEnum <InteractionResource>k__BackingField; // 0x10
+
+	// Properties
+	public bool Boxed { get; set; }
+	public int InteractionAmount { get; set; }
+	public int TotalInteractionAmount { get; set; }
+	public UnboxingType UnboxingType { get; set; }
+	public PlayerResourceEnum InteractionResource { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9BC20 Offset: 0x6A97C20 VA: 0x6A9BC20
+	public bool get_Boxed() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BC28 Offset: 0x6A97C28 VA: 0x6A9BC28
+	public void set_Boxed(bool value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9BC34 Offset: 0x6A97C34 VA: 0x6A9BC34
+	public int get_InteractionAmount() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BC3C Offset: 0x6A97C3C VA: 0x6A9BC3C
+	public void set_InteractionAmount(int value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9BC44 Offset: 0x6A97C44 VA: 0x6A9BC44
+	public int get_TotalInteractionAmount() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BC4C Offset: 0x6A97C4C VA: 0x6A9BC4C
+	public void set_TotalInteractionAmount(int value) { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9BC54 Offset: 0x6A97C54 VA: 0x6A9BC54
+	public UnboxingType get_UnboxingType() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BC5C Offset: 0x6A97C5C VA: 0x6A9BC5C
+	public void set_UnboxingType(UnboxingType value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9BC64 Offset: 0x6A97C64 VA: 0x6A9BC64
+	public PlayerResourceEnum get_InteractionResource() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BC6C Offset: 0x6A97C6C VA: 0x6A9BC6C
+	public void set_InteractionResource(PlayerResourceEnum value) { }
+}
+

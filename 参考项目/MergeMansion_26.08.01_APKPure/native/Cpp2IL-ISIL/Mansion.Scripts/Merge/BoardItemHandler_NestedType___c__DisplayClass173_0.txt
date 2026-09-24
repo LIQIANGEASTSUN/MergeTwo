@@ -1,0 +1,64 @@
+Type: Merge.BoardItemHandler+<>c__DisplayClass173_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03059F6C ADRP X0, 0x2674000
+	0x03059F70 LDR X0, [X0 + 0xBE0]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void <PlayTransformOutAndAppear>b__0()
+
+Disassembly:
+	0x03059F74 BL 0x239B8E4
+	0x03059F78 MOVZ W8, 0x1
+	0x03059F7C STRB W8, [X21 + 0x78F]
+	0x03059F80 ADRP X8, 0x2674000
+	0x03059F84 LDR X8, [X8 + 0xBE0]
+	0x03059F88 LDR X0, [X8]
+	0x03059F8C LDR W8, [X0 + 0xE4]
+	0x03059F90 CBNZ W8, 0x3059F98
+	0x03059F94 BL 0x239BA64
+	0x03059F98 CBZ X20, 0x305A018
+	0x03059F9C FSUB S10, S10, S11
+	0x03059FA0 FSUB S8, S8, S9
+	0x03059FA4 MOV X0, X20
+	0x03059FA8 MOV X1, X31
+	0x03059FAC FMUL S0, S10, S10
+	0x03059FB0 FMUL S1, S8, S8
+	0x03059FB4 FADD S0, S0, S1
+	0x03059FB8 LDR S1, [X19 + 0x30]
+	0x03059FBC FSQRT S0, S0
+
+ISIL:
+	001 Move [X31-16], X30
+	002 Move [X31-8], X19
+	003 Move X19, X0
+	004 Move X0, [X0+16]
+	005 Compare X0, 0
+	006 JumpIfEqual {26}
+	007 Move X1, [X19+24]
+	008 Move X2, X31
+	009 Call BoardItemHandler.DeinitEffect, X0, X1
+	010 Move X0, [X19+16]
+	011 Compare X0, 0
+	012 JumpIfEqual {26}
+	013 Move W2, [X19+40]
+	014 Move W3, [X19+44]
+	015 Move X1, [X19+32]
+	016 Move X4, X31
+	017 Call BoardItemHandler.ChangeItemTo, X0, X1, X2, X3
+	018 Move X0, [X19+16]
+	019 Compare X0, 0
+	020 JumpIfEqual {26}
+	021 Move X1, X31
+	022 Move X30, [X31+16]
+	023 Move X19, [X31+24]
+	024 Call BoardItemHandler.PlayTransformAppear, X0
+	025 Return 
+	026 Call 0x239FB90
+

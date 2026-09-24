@@ -1,0 +1,164 @@
+Type: GameLogic.Player.Items.TimeContainer.TimeContainerState
+
+Method: Metaplay.Core.MetaDuration get_Remaining()
+
+Disassembly:
+	0x03601A14 B 0x239B888
+	0x03601A18 MOV X1, X31
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_Remaining(Metaplay.Core.MetaDuration value)
+
+Disassembly:
+	0x03601A1C B 0x44E8DEC
+	0x03601A20 STP X30, X21, [X31 - 0x20]!
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Return 
+
+Method: GameLogic.Config.Types.MetacoreDuration GameLogic.Player.Items.TimeContainer.ITimeContainerState.get_Remaining()
+
+Disassembly:
+	0x03601A24 STP X20, X19, [X31 + 0x10]
+	0x03601A28 ADRP X21, 0x2728000
+	0x03601A2C MOV X20, X2
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Move X1, X31
+	003 Call MetaDurationExtensions.ToMetacoreDuration, X0
+	004 Return X0
+
+Method: System.Void SetRemaining(GameLogic.Config.Types.MetacoreDuration remaining)
+
+Disassembly:
+	0x03601A30 MOV X19, X0
+	0x03601A34 LDRB W8, [X21 + 0xB68]
+	0x03601A38 TBNZ X8, 0x0, 0x3601A50
+	0x03601A3C ADRP X0, 0x2130000
+	0x03601A40 LDR X0, [X0 + 0x420]
+	0x03601A44 BL 0x239B8E4
+	0x03601A48 MOVZ W8, 0x1
+	0x03601A4C STRB W8, [X21 + 0xB68]
+	0x03601A50 MOV X0, X19
+	0x03601A54 MOV X1, X31
+	0x03601A58 BL 0x44E8DEC
+	0x03601A5C MOVZ W8, 0x1
+	0x03601A60 STRB W8, [X19 + 0x10]
+	0x03601A64 CBZ X20, 0x3601A84
+	0x03601A68 ADRP X8, 0x2130000
+	0x03601A6C MOV X0, X20
+	0x03601A70 LDR X8, [X8 + 0x420]
+	0x03601A74 LDR X1, [X8]
+	0x03601A78 BL 0x25E8394
+	0x03601A7C MOV X1, X0
+	0x03601A80 B 0x3601A88
+	0x03601A84 MOV X1, X31
+	0x03601A88 STR X1, [X19 + 0x18]!
+	0x03601A8C MOV X0, X19
+	0x03601A90 LDP X20, X19, [X31 + 0x10]
+	0x03601A94 LDP X30, X21, [X31], #0x20
+	0x03601A98 B 0x239B888
+
+ISIL:
+	001 Subtract X31, X31, 48
+	002 Move [X31+16], X30
+	003 Move [X31+24], X21
+	004 Move [X31+32], X20
+	005 Move [X31+40], X19
+	006 Move X19, X0
+	007 Move W8, [0x272CB2D]
+	008 Move X21, [0x20E8EE0]
+	009 Move [X31+8], X1
+	010 Move TEMP, X8
+	011 And TEMP, TEMP, 1
+	012 Compare TEMP, 1
+	013 JumpIfEqual {18}
+	014 Move X0, [0x20E8EE0]
+	015 Call 0x239F8E4
+	016 Move W8, 1
+	017 Move [X20+2861], W8
+	018 Move X0, [X21]
+	019 Move W8, [X0+228]
+	020 Compare W8, 0
+	021 JumpIfNotEqual {23}
+	022 Call 0x239FA64
+	023 Add X0, X31, 8
+	024 Move X1, X31
+	025 Call MetacoreDuration.ToMetaDuration, X0
+	026 Move [X19+16], X0
+	027 Move X20, [X31+32]
+	028 Move X19, [X31+40]
+	029 Move X30, [X31+16]
+	030 Move X21, [X31+24]
+	031 Add X31, X31, 48
+	032 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03600FE4 MOV X0, X8
+	0x03600FE8 BL 0x239BA64
+	0x03600FEC MOV W0, W20
+	0x03600FF0 MOV W1, W21
+	0x03600FF4 MOV X2, X31
+	0x03600FF8 BL 0x44A5BD0
+	0x03600FFC STR W0, [X19 + 0x14]
+	0x03601000 LDP X20, X19, [X31 + 0x20]
+	0x03601004 LDP X22, X21, [X31 + 0x10]
+	0x03601008 LDR X30, [X31], #0x30
+	0x0360100C RET
+	0x03601010 BL 0x239BB90
+	0x03601014 SUB X31, X31, 0x70
+	0x03601018 STP X30, X25, [X31 + 0x30]
+	0x0360101C STP X24, X23, [X31 + 0x40]
+	0x03601020 STP X22, X21, [X31 + 0x50]
+	0x03601024 STP X20, X19, [X31 + 0x60]
+	0x03601028 ADRP X24, 0x2728000
+	0x0360102C ADRP X25, 0x212F000
+	0x03601030 MOV X20, X7
+	0x03601034 LDRB W8, [X24 + 0xB5D]
+	0x03601038 LDR X25, [X25 + 0xD68]
+	0x0360103C MOV X19, X6
+	0x03601040 MOV X23, X5
+	0x03601044 MOV X22, X4
+	0x03601048 MOV X21, X3
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move X19, X0
+	006 Move W8, [0x272DB2E]
+	007 Move X21, [0x20D88A8]
+	008 Move TEMP, X8
+	009 And TEMP, TEMP, 1
+	010 Compare TEMP, 1
+	011 JumpIfEqual {16}
+	012 Move X0, [0x20D78A8]
+	013 Call 0x239F8E4
+	014 Move W8, 1
+	015 Move [X20+2862], W8
+	016 Move X0, [X21]
+	017 Move W8, [X0+228]
+	018 Compare W8, 0
+	019 JumpIfNotEqual {21}
+	020 Call 0x239FA64
+	021 Move X0, X31
+	022 Call MetaDuration.get_Zero
+	023 Move X8, X0
+	024 Move X0, X19
+	025 Move X1, X31
+	026 Move [X19+16], X8
+	027 Move X20, [X31+16]
+	028 Move X19, [X31+24]
+	029 Move X30, [X31+32]
+	030 Move X21, [X31+40]
+	031 Call Object..ctor, X0
+	032 Return 
+

@@ -1,0 +1,55 @@
+// Namespace: MergeEngine.ECS.Systems.Board
+public class UnboxingSystem : SystemBase // TypeDefIndex: 935
+{
+	// Fields
+	private InteractionSystem _interactionSystem; // 0x40
+	private MergeSystem _mergingSystem; // 0x48
+	private BoardComponent _boardComponent; // 0x50
+	private BoardItemCountComponent _boardItemCountComponent; // 0x58
+	[Inject]
+	private IMergingConfigurationModel _configurationModel; // 0x60
+	[Inject]
+	private INotificationDataFactory _notificationDataFactory; // 0x68
+	[InjectSystem]
+	private OperationTrackingSystem _operationTrackingSystem; // 0x70
+	[InjectSystem]
+	private PlayerEventLevelSystem _playerEventLevelSystem; // 0x78
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x80
+
+	// Methods
+
+	// RVA: 0x67878C4 Offset: 0x67838C4 VA: 0x67878C4 Slot: 6
+	protected override void InitializeSystem() { }
+
+	// RVA: 0x6787A7C Offset: 0x6783A7C VA: 0x6787A7C
+	private void ItemMerged(IMergeItem newMergeItem, BoardItemPosition position, IMergeItem firstMergeItem, IMergeItem secondMergeItem) { }
+
+	// RVA: 0x67881A4 Offset: 0x67841A4 VA: 0x67881A4
+	private void ItemInteracted(IMergeItem mergeItem, BoardItemPosition position, InteractionType interactionType, List<ItemMultiple> consumedItems) { }
+
+	// RVA: 0x67881C4 Offset: 0x67841C4 VA: 0x67881C4
+	private void ProcessItemConsumeUnboxing(IMergeItem mergeItem, BoardItemPosition position, List<ItemMultiple> consumedItems) { }
+
+	// RVA: 0x67885C8 Offset: 0x67845C8 VA: 0x67885C8
+	private void ProcessResourceConsumeUnboxing(IMergeItem mergeItem, BoardItemPosition position) { }
+
+	// RVA: 0x6788908 Offset: 0x6784908 VA: 0x6788908
+	private void NotifyAndTrackInteractionProgress(LockedComponent adjacentItemLocked) { }
+
+	// RVA: 0x6788A80 Offset: 0x6784A80 VA: 0x6788A80
+	private void FireLiveOpsZoneUnboxedIfNeeded(LockedComponent adjacentItemLocked, string mergeItemType, string reason, string interactionItems, Vector2 interactionLocation) { }
+
+	// RVA: 0x6788C0C Offset: 0x6784C0C VA: 0x6788C0C
+	private static int GetInteractionAmountLeft(LockedComponent locked) { }
+
+	// RVA: 0x6787EC8 Offset: 0x6783EC8 VA: 0x6787EC8
+	private static Vector2 ToVector2(BoardItemPosition position) { }
+
+	// RVA: 0x6787EF4 Offset: 0x6783EF4 VA: 0x6787EF4
+	public void UnboxItem(LockedComponent lockedComponent) { }
+
+	// RVA: 0x6788C90 Offset: 0x6784C90 VA: 0x6788C90
+	public void .ctor() { }
+}
+

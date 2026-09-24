@@ -1,0 +1,9 @@
+// Namespace: Merger.MergeBoardQueue.Services
+public interface IMergeBoardQueueOperationTrackingCheatService // TypeDefIndex: 33293
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void TrackEnqueueItemOperation(IMergeItem mergeItem, string uuidInBoardQueue, long enqueueTimestamp);
+}
+

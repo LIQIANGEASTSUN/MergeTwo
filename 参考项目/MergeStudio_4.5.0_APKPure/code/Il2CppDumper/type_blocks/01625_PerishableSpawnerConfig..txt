@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class PerishableSpawnerConfig.<>c__DisplayClass10_0 // TypeDefIndex: 1625
+{
+	// Fields
+	public int currentIndex; // 0x8
+	public float r; // 0xC
+	public float sum; // 0x10
+
+	// Methods
+
+	// RVA: 0x18C5B90 Offset: 0x18C5B90 VA: 0x18C5B90
+	public void .ctor() { }
+
+	// RVA: 0x18C5CCC Offset: 0x18C5CCC VA: 0x18C5CCC
+	internal bool <GetIndexedSpawnedItem>b__0(SpawnIndexedItemGroup group) { }
+
+	// RVA: 0x18C5CFC Offset: 0x18C5CFC VA: 0x18C5CFC
+	internal bool <GetIndexedSpawnedItem>b__1(SpawnedItem item) { }
+}
+

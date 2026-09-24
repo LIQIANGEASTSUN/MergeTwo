@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class SyncBoardService.<>c // TypeDefIndex: 9863
+{
+	// Fields
+	public static readonly SyncBoardService.<>c <>9; // 0x0
+	public static Func<PositionComponent, IdComponent> <>9__14_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x67CB398 Offset: 0x67C7398 VA: 0x67CB398
+	private static void .cctor() { }
+
+	// RVA: 0x67CB400 Offset: 0x67C7400 VA: 0x67CB400
+	public void .ctor() { }
+
+	// RVA: 0x67CB408 Offset: 0x67C7408 VA: 0x67CB408
+	internal IdComponent <ConstructBoardItems>b__14_0(PositionComponent positionComponent) { }
+}
+

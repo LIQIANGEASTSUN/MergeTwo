@@ -1,0 +1,12 @@
+// Namespace: MergePuzzle
+public enum BoosterType // TypeDefIndex: 1915
+{
+	// Fields
+	public int value__; // 0x0
+	public const BoosterType None = 0;
+	public const BoosterType Axe = 1;
+	public const BoosterType Wand = 2;
+	public const BoosterType Charger = 3;
+	public const BoosterType Dart = 4;
+}
+

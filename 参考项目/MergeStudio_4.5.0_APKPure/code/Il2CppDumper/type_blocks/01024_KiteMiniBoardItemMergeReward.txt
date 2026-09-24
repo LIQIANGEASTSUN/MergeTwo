@@ -1,0 +1,14 @@
+// Namespace: Paxie.MergeStudio.Features.MiniBoard
+[Serializable]
+public class KiteMiniBoardItemMergeReward // TypeDefIndex: 1024
+{
+	// Fields
+	public string SetIDLevel; // 0x8
+	public List<KiteMiniBoardItemReward> Rewards; // 0xC
+
+	// Methods
+
+	// RVA: 0x17A8A60 Offset: 0x17A8A60 VA: 0x17A8A60
+	public void .ctor() { }
+}
+

@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardCollectToolboxOperationDataCreator.<>c // TypeDefIndex: 25861
+{
+	// Fields
+	public static readonly BoardCollectToolboxOperationDataCreator.<>c <>9; // 0x0
+	public static Func<IMergeItem, string> <>9__2_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x6A8A4A8 Offset: 0x6A864A8 VA: 0x6A8A4A8
+	private static void .cctor() { }
+
+	// RVA: 0x6A8A510 Offset: 0x6A86510 VA: 0x6A8A510
+	public void .ctor() { }
+
+	// RVA: 0x6A8A518 Offset: 0x6A86518 VA: 0x6A8A518
+	internal string <CreateOperationData>b__2_0(IMergeItem tool) { }
+}
+

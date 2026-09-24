@@ -1,0 +1,24 @@
+// Namespace: Merger.Game.Views.BoardItem.ViewBehaviours
+public interface IBoardItemViewBehaviour // TypeDefIndex: 9165
+{
+	// Properties
+	public abstract GameObject gameObject { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void Initialise(IVisualComponent visualComponent, BoardItemView2 boardItemView);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void BehaviourAdded();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void Dispose();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract GameObject get_gameObject();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract bool TryConsumeTap();
+}
+

@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardController.<>c__DisplayClass142_1 // TypeDefIndex: 1868
+{
+	// Fields
+	public MetaTaskItem metaTaskItem; // 0x8
+	public BoardController.<>c__DisplayClass142_0 CS$<>8__locals1; // 0xC
+
+	// Methods
+
+	// RVA: 0x191846C Offset: 0x191846C VA: 0x191846C
+	public void .ctor() { }
+
+	// RVA: 0x1918474 Offset: 0x1918474 VA: 0x1918474
+	internal bool <FixMissingCompletedMetaTaskItems>b__0(MetaTaskItemEntity item) { }
+}
+

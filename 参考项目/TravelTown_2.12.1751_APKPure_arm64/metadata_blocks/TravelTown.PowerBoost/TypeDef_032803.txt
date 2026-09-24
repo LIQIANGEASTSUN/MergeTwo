@@ -1,0 +1,15 @@
+// Namespace: Merger.MergeBoard.PowerBoost.Data
+public class LocalPlayerPersistentPowerBoostData // TypeDefIndex: 32803
+{
+	// Fields
+	[JsonProperty("currentBoost")]
+	public int CurrentBoost; // 0x10
+	[JsonProperty("unlockedBoosts")]
+	public List<int> UnlockedBoosts; // 0x18
+
+	// Methods
+
+	// RVA: 0x6AD0FCC Offset: 0x6ACCFCC VA: 0x6AD0FCC
+	public void .ctor() { }
+}
+

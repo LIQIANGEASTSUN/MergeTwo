@@ -1,0 +1,14 @@
+// Namespace: 
+public enum MiniBoardItemController.PositionUpdateType // TypeDefIndex: 1123
+{
+	// Fields
+	public int value__; // 0x0
+	public const MiniBoardItemController.PositionUpdateType MOVE = 0;
+	public const MiniBoardItemController.PositionUpdateType SPAWN = 1;
+	public const MiniBoardItemController.PositionUpdateType BUBBLE = 2;
+	public const MiniBoardItemController.PositionUpdateType SWAP = 3;
+	public const MiniBoardItemController.PositionUpdateType PANEL_ANIMATION = 4;
+	public const MiniBoardItemController.PositionUpdateType REVERT_MOVE = 5;
+	public const MiniBoardItemController.PositionUpdateType MERGE = 6;
+}
+

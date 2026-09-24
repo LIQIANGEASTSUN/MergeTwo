@@ -1,0 +1,12 @@
+// Namespace: Framework.Core.Services.Backend.Signal
+public class FetchBackendUpdatesSignal // TypeDefIndex: 10889
+{
+	// Fields
+	public readonly bool ProfileChanged; // 0x10
+
+	// Methods
+
+	// RVA: 0x691DC30 Offset: 0x6919C30 VA: 0x691DC30
+	public void .ctor(bool profileChanged) { }
+}
+

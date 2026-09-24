@@ -1,0 +1,14 @@
+// Namespace: Merger.Services.Backend.Sync.Data.Payloads
+[Serializable]
+public class Resource // TypeDefIndex: 9870
+{
+	// Fields
+	public string type; // 0x10
+	public int value; // 0x18
+
+	// Methods
+
+	// RVA: 0x67CB348 Offset: 0x67C7348 VA: 0x67CB348
+	public void .ctor() { }
+}
+

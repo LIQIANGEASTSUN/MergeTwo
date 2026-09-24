@@ -1,0 +1,371 @@
+Type: GameLogic.Config.ProducerInventorySlotSource
+
+Method: System.Int32 get_ExperimentPriority()
+
+Disassembly:
+	0x0342927C MOV X0, X19
+	0x03429280 BL 0x53E9080
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_ExperimentPriority(System.Int32 value)
+
+Disassembly:
+	0x03429284 LDR X19, [X0]
+	0x03429288 STR X19, [X31 + 0x8]
+
+ISIL:
+	001 Move [X0+16], W1
+	002 Return 
+
+Method: GameLogic.Config.ProducerInventorySlotId get_ConfigKey()
+
+Disassembly:
+	0x0342928C BL 0x53E9090
+	0x03429290 LDR X0, [X31 + 0x10]
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_ConfigKey(GameLogic.Config.ProducerInventorySlotId value)
+
+Disassembly:
+	0x03429294 LDR X1, [X22]
+	0x03429298 BL 0x29592CC
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Collections.Generic.List`1<System.String> get_TeaseRequirementType()
+
+Disassembly:
+	0x0342929C CBNZ X19, 0x34292A8
+	0x034292A0 MOV W20, W31
+
+ISIL:
+	001 Move X0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_TeaseRequirementType(System.Collections.Generic.List`1<System.String> value)
+
+Disassembly:
+	0x034292A4 B 0x342922C
+	0x034292A8 MOV X0, X19
+
+ISIL:
+	001 Move [X0+32], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Collections.Generic.List`1<System.String> get_TeaseRequirementId()
+
+Disassembly:
+	0x034292AC BL 0x239BB88
+	0x034292B0 MOV X19, X0
+
+ISIL:
+	001 Move X0, [X0+40]
+	002 Return X0
+
+Method: System.Void set_TeaseRequirementId(System.Collections.Generic.List`1<System.String> value)
+
+Disassembly:
+	0x034292B4 ADD X0, X31, 0x8
+	0x034292B8 BL 0x22EDA2C
+
+ISIL:
+	001 Move [X0+40], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Collections.Generic.List`1<System.String> get_TeaseRequirementAmount()
+
+Disassembly:
+	0x034292BC MOV X0, X19
+	0x034292C0 BL 0x248B7AC
+
+ISIL:
+	001 Move X0, [X0+48]
+	002 Return X0
+
+Method: System.Void set_TeaseRequirementAmount(System.Collections.Generic.List`1<System.String> value)
+
+Disassembly:
+	0x034292C4 BL 0x21B9790
+	0x034292C8 MOV X8, X0
+
+ISIL:
+	001 Move [X0+48], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Collections.Generic.List`1<System.String> get_TeaseRequirementAux0()
+
+Disassembly:
+	0x034292CC LDR X0, [X0 + 0x60]
+	0x034292D0 CBZ X0, 0x34292D8
+
+ISIL:
+	001 Move X0, [X0+56]
+	002 Return X0
+
+Method: System.Void set_TeaseRequirementAux0(System.Collections.Generic.List`1<System.String> value)
+
+Disassembly:
+	0x034292D4 RET
+	0x034292D8 LDR X8, [X8 + 0x10]
+
+ISIL:
+	001 Move [X0+56], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Collections.Generic.List`1<System.String> get_UnlockRequirementType()
+
+Disassembly:
+	0x034292DC CBZ X8, 0x34292E8
+	0x034292E0 LDR X0, [X8 + 0x10]
+
+ISIL:
+	001 Move X0, [X0+64]
+	002 Return X0
+
+Method: System.Void set_UnlockRequirementType(System.Collections.Generic.List`1<System.String> value)
+
+Disassembly:
+	0x034292E4 RET
+	0x034292E8 STR X30, [X31 - 0x10]!
+
+ISIL:
+	001 Move [X0+64], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Collections.Generic.List`1<System.String> get_UnlockRequirementId()
+
+Disassembly:
+	0x034292EC BL 0x239BB90
+	0x034292F0 STR X30, [X31 - 0x30]!
+
+ISIL:
+	001 Move X0, [X0+72]
+	002 Return X0
+
+Method: System.Void set_UnlockRequirementId(System.Collections.Generic.List`1<System.String> value)
+
+Disassembly:
+	0x034292F4 STP X22, X21, [X31 + 0x10]
+	0x034292F8 STP X20, X19, [X31 + 0x20]
+
+ISIL:
+	001 Move [X0+72], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Collections.Generic.List`1<System.String> get_UnlockRequirementAmount()
+
+Disassembly:
+	0x034292FC ADRP X20, 0x28FF000
+	0x03429300 ADRP X21, 0x22F7000
+
+ISIL:
+	001 Move X0, [X0+80]
+	002 Return X0
+
+Method: System.Void set_UnlockRequirementAmount(System.Collections.Generic.List`1<System.String> value)
+
+Disassembly:
+	0x03429304 ADRP X22, 0x22F7000
+	0x03429308 LDRB W8, [X20 + 0xD8B]
+
+ISIL:
+	001 Move [X0+80], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Collections.Generic.List`1<System.String> get_UnlockRequirementAux0()
+
+Disassembly:
+	0x0342930C LDR X21, [X21 + 0xFA8]
+	0x03429310 LDR X22, [X22 + 0xFB0]
+
+ISIL:
+	001 Move X0, [X0+88]
+	002 Return X0
+
+Method: System.Void set_UnlockRequirementAux0(System.Collections.Generic.List`1<System.String> value)
+
+Disassembly:
+	0x03429314 MOV X19, X0
+	0x03429318 TBNZ X8, 0x0, 0x342933C
+
+ISIL:
+	001 Move [X0+88], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: GameLogic.Config.ProducerInventorySlotConfig ToConfigData(Metaplay.Core.Config.GameConfigBuildLog buildLog)
+
+Disassembly:
+	0x0342931C ADRP X0, 0x22F7000
+	0x03429320 LDR X0, [X0 + 0xFB0]
+	0x03429324 BL 0x239B8E4
+	0x03429328 ADRP X0, 0x22F7000
+	0x0342932C LDR X0, [X0 + 0xFA8]
+	0x03429330 BL 0x239B8E4
+	0x03429334 MOVZ W8, 0x1
+	0x03429338 STRB W8, [X20 + 0xD8B]
+	0x0342933C LDR X0, [X21]
+	0x03429340 LDR X2, [X22]
+	0x03429344 MOV X1, X19
+	0x03429348 LDP X20, X19, [X31 + 0x20]
+	0x0342934C LDP X22, X21, [X31 + 0x10]
+	0x03429350 LDR X30, [X31], #0x30
+	0x03429354 B 0x25ECB84
+	0x03429358 SUB X31, X31, 0x40
+	0x0342935C STP X30, X21, [X31 + 0x20]
+	0x03429360 STP X20, X19, [X31 + 0x30]
+	0x03429364 ADRP X21, 0x28FF000
+	0x03429368 ADRP X20, 0x22EE000
+	0x0342936C MOV X19, X0
+	0x03429370 LDRB W8, [X21 + 0xD8C]
+	0x03429374 LDR X20, [X20 + 0xCA8]
+	0x03429378 TBNZ X8, 0x0, 0x3429390
+	0x0342937C ADRP X0, 0x22EE000
+	0x03429380 LDR X0, [X0 + 0xCA8]
+	0x03429384 BL 0x239B8E4
+	0x03429388 MOVZ W8, 0x1
+	0x0342938C STRB W8, [X21 + 0xD8C]
+	0x03429390 LDR V0, [X19]
+	0x03429394 LDR X8, [X19 + 0x10]
+	0x03429398 ADD X0, X31, 0x0
+	0x0342939C LDR X1, [X20]
+	0x034293A0 STR V0, [X31]
+	0x034293A4 STR X8, [X31 + 0x10]
+	0x034293A8 BL 0x2652488
+	0x034293AC LDP X20, X19, [X31 + 0x30]
+	0x034293B0 LDP X30, X21, [X31 + 0x20]
+	0x034293B4 ADD X31, X31, 0x40
+	0x034293B8 RET
+	0x034293BC LDR X0, [X0 + 0x30]
+	0x034293C0 RET
+	0x034293C4 LDR W0, [X0 + 0x10]
+	0x034293C8 RET
+	0x034293CC STR W1, [X0 + 0x10]
+	0x034293D0 RET
+	0x034293D4 LDR X0, [X0 + 0x18]
+	0x034293D8 RET
+	0x034293DC STR X1, [X0 + 0x18]!
+	0x034293E0 B 0x239B888
+	0x034293E4 LDR X0, [X0 + 0x20]
+	0x034293E8 RET
+	0x034293EC STR X1, [X0 + 0x20]!
+	0x034293F0 B 0x239B888
+	0x034293F4 LDR X0, [X0 + 0x28]
+	0x034293F8 RET
+	0x034293FC STR X1, [X0 + 0x28]!
+	0x03429400 B 0x239B888
+	0x03429404 LDR X0, [X0 + 0x30]
+	0x03429408 RET
+	0x0342940C STR X1, [X0 + 0x30]!
+	0x03429410 B 0x239B888
+	0x03429414 LDRB W0, [X0 + 0x38]
+	0x03429418 RET
+	0x0342941C STRB W1, [X0 + 0x38]
+	0x03429420 RET
+	0x03429424 LDR X0, [X0 + 0x40]
+	0x03429428 RET
+	0x0342942C STR X1, [X0 + 0x40]!
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31-40], X23
+	003 Move [X31+16], X22
+	004 Move [X31+24], X21
+	005 Move [X31+32], X20
+	006 Move [X31+40], X19
+	007 Move W8, [0x2903D6B]
+	008 Move X21, [0x22F2EB8]
+	009 Move X20, [0x22B0118]
+	010 Move X19, X0
+	011 Move TEMP, X8
+	012 And TEMP, TEMP, 1
+	013 Compare TEMP, 1
+	014 Invalid "Jump target not found in method."
+	015 Move X0, [0x22B0118]
+	016 Call 0x239F8E4
+	017 Move X0, [0x22F2EB8]
+	018 Call 0x239F8E4
+	019 Move X0, [0x22FBCD0]
+	020 Call 0x239F8E4
+	021 Move X0, [0x22A8338]
+	022 Call 0x239F8E4
+	023 Move W8, 1
+	024 Move [X22+3435], W8
+	025 Move X23, [0x22A8338]
+	026 Move X22, [0x22FBCD0]
+	027 Move X4, [X21]
+	028 Move X0, [X19+32]
+	029 Move X1, [X19+40]
+	030 Move X2, [X19+48]
+	031 Move X3, [X19+56]
+	032 Call 0x26401A8, X0, X1, X2, X3
+	033 Move X8, [X20]
+	034 Move X20, X0
+	035 Move W9, [X8+228]
+	036 Compare W9, 0
+	037 JumpIfNotEqual {40}
+	038 Move X0, X8
+	039 Call 0x239FA64
+	040 Move X1, [X23]
+	041 Move X0, X20
+	042 Move X2, X31
+	043 Call ConfigExtensions.ResolveRequirements, X0, X1
+	044 Move X8, [X19+64]
+	045 Move X1, [X19+72]
+	046 Move X20, X0
+	047 Move X2, [X19+80]
+	048 Move X3, [X19+88]
+	049 Move X4, [X21]
+	050 Move X0, X8
+	051 Call 0x26401A8, X0, X1, X2, X3
+	052 Move X1, [X23]
+	053 Move X2, X31
+	054 Call ConfigExtensions.ResolveRequirements, X0, X1
+	055 Move X8, [X22]
+	056 Move X21, [X19+24]
+	057 Move X22, X0
+	058 Move W19, [X19+16]
+	059 Move X0, X8
+	060 Call 0x239FB80
+	061 Move X1, X21
+	062 Move X2, X20
+	063 Move X3, X22
+	064 Move W4, W19
+	065 Move X23, X0
+	066 Call ProducerInventorySlotConfig..ctor, X0, X1, X2, X3, X4
+	067 Move X20, [X31+32]
+	068 Move X19, [X31+40]
+	069 Move X0, X23
+	070 Move X22, [X31+16]
+	071 Move X21, [X31+24]
+	072 Move X30, [X31+48]
+	073 Move X23, [X31+56]
+	074 Return X0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03429430 B 0x239B888
+	0x03429434 LDR X0, [X0 + 0x48]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+

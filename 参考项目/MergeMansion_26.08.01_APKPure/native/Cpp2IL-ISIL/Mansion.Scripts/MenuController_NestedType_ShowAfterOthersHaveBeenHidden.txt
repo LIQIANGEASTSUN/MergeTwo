@@ -1,0 +1,317 @@
+Type: MenuController+ShowAfterOthersHaveBeenHidden
+
+Method: System.Func`1<UI.IMenuSection> get_ConstructMenuSection()
+
+Disassembly:
+	0x02B70938 LDR X0, [X0 + 0x438]
+	0x02B7093C BL 0x239B8E4
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Func`1<UI.IMenuState> get_ConstructMenuState()
+
+Disassembly:
+	0x02B70940 MOVZ W8, 0x1
+	0x02B70944 STRB W8, [X19 + 0xBE7]
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Boolean get_HideNavigation()
+
+Disassembly:
+	0x02B70948 LDR W8, [X20]
+	0x02B7094C LDR X19, [X20 + 0x18]
+
+ISIL:
+	001 Move W0, [X0+32]
+	002 Return X0
+
+Method: System.String get_MenuTag()
+
+Disassembly:
+	0x02B70950 STR W31, [X31 + 0xC4]
+	0x02B70954 STP X31, X31, [X31 + 0xB0]
+
+ISIL:
+	001 Move X0, [X0+40]
+	002 Return X0
+
+Method: Metacore.MergeMansion.Common.Options.Option`1<UnityEngine.AddressableAssets.AssetReferenceT`1<UnityEngine.GameObject>> get_PrefabRef()
+
+Disassembly:
+	0x02B70958 STP X31, X31, [X31 + 0xA0]
+	0x02B7095C STP X31, X31, [X31 + 0x80]
+	0x02B70960 STR X31, [X31 + 0x90]
+
+ISIL:
+	001 Move X8, [X0+48]
+	002 Move X1, [X0+56]
+	003 Move X0, X8
+	004 Return X0
+
+Method: System.String get_EventId()
+
+Disassembly:
+	0x02B70964 STP X31, X31, [X31 + 0x60]
+	0x02B70968 STR X31, [X31 + 0x70]
+
+ISIL:
+	001 Move X0, [X0+64]
+	002 Return X0
+
+Method: System.Void set_EventId(System.String value)
+
+Disassembly:
+	0x02B7096C STP X31, X31, [X31 + 0x50]
+	0x02B70970 STP X31, X31, [X31 + 0x40]
+
+ISIL:
+	001 Move [X0+64], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: Metacore.MergeMansion.Common.Addressables.IDisposableAssetHandle`1<UnityEngine.GameObject> get_PopupHandle()
+
+Disassembly:
+	0x02B70974 STR W31, [X31 + 0x38]
+	0x02B70978 STR W8, [X31 + 0xC4]
+
+ISIL:
+	001 Move X0, [X0+72]
+	002 Return X0
+
+Method: System.Void set_PopupHandle(Metacore.MergeMansion.Common.Addressables.IDisposableAssetHandle`1<UnityEngine.GameObject> value)
+
+Disassembly:
+	0x02B7097C CBZ W8, 0x2B7099C
+	0x02B70980 CMP W8, 0x1
+
+ISIL:
+	001 Move [X0+72], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Void .ctor(System.Func`1<UI.IMenuSection> constructMenuSection, System.Func`1<UI.IMenuState> constructMenuState, System.Boolean hideNavigation, System.String eventId, Metacore.MergeMansion.Common.Addressables.IDisposableAssetHandle`1<UnityEngine.GameObject> popupHandle = null)
+
+Disassembly:
+	0x02B70984 B.NE 0x2B70A94
+	0x02B70988 ADD X8, X31, 0xC4
+	0x02B7098C ADD X9, X31, 0xC8
+	0x02B70990 STP X31, X8, [X31 + 0x18]
+	0x02B70994 STR X9, [X31 + 0x28]
+	0x02B70998 B 0x2B70A04
+	0x02B7099C LDR X8, [X20 + 0x48]
+	0x02B709A0 LDUR V0, [X20 + 0x38]
+	0x02B709A4 STP X31, X31, [X20 + 0x40]
+	0x02B709A8 STR X31, [X20 + 0x38]
+	0x02B709AC STR X8, [X31 + 0x90]
+	0x02B709B0 MOVN W8, 0x0
+	0x02B709B4 STR V0, [X31 + 0x8]
+	0x02B709B8 STR W8, [X31 + 0xC4]
+	0x02B709BC STR W8, [X20]
+	0x02B709C0 ADRP X8, 0x2B67000
+	0x02B709C4 LDR X8, [X8 + 0xDE8]
+	0x02B709C8 LDR X2, [X8]
+	0x02B709CC ADD X0, X31, 0x80
+	0x02B709D0 ADD X1, X31, 0x18
+	0x02B709D4 BL 0x26AC14C
+	0x02B709D8 LDR X1, [X31 + 0x18]
+	0x02B709DC LDR X0, [X31 + 0xC8]
+	0x02B709E0 STR X1, [X0 + 0x30]!
+	0x02B709E4 BL 0x239B888
+	0x02B709E8 LDR W8, [X31 + 0xC4]
+	0x02B709EC ADD X9, X31, 0xC4
+	0x02B709F0 STP X31, X9, [X31 + 0x18]
+	0x02B709F4 ADD X9, X31, 0xC8
+	0x02B709F8 CMP W8, 0x1
+	0x02B709FC STR X9, [X31 + 0x28]
+	0x02B70A00 B.NE 0x2B70C2C
+	0x02B70A04 LDR X8, [X31 + 0xC8]
+
+ISIL:
+	001 Move [X31-64], X30
+	002 Move [X31+16], X24
+	003 Move [X31+24], X23
+	004 Move [X31+32], X22
+	005 Move [X31+40], X21
+	006 Move [X31+48], X20
+	007 Move [X31+56], X19
+	008 Move X23, X1
+	009 Move X1, X31
+	010 Move X19, X5
+	011 Move X20, X4
+	012 Move W21, W3
+	013 Move X22, X2
+	014 Move X24, X0
+	015 Call Object..ctor, X0
+	016 Move X0, X24
+	017 Move X1, X23
+	018 Move [X0+16], X23
+	019 Call 0x239F888
+	020 Move X0, X24
+	021 Move X1, X22
+	022 Move [X0+24], X22
+	023 Call 0x239F888
+	024 Move X0, X24
+	025 Move X1, X20
+	026 Move [X24+32], W21
+	027 Move [X0+64], X20
+	028 Call 0x239F888
+	029 Move [X24+72], X19
+	030 Move X0, X24
+	031 Move X1, X19
+	032 Move X20, [X31+48]
+	033 Move X19, [X31+56]
+	034 Move X22, [X31+32]
+	035 Move X21, [X31+40]
+	036 Move X24, [X31+16]
+	037 Move X23, [X31+24]
+	038 Move X30, [X31+64]
+	039 Call 0x239F888
+	040 Return 
+
+Method: System.Void .ctor(System.String menuTag, UnityEngine.AddressableAssets.AssetReferenceT`1<UnityEngine.GameObject> prefabRef, System.Func`1<UI.IMenuState> constructMenuState, System.Boolean hideNavigation, System.String eventId = null)
+
+Disassembly:
+	0x02B70A08 MOVN W9, 0x0
+	0x02B70A0C STR W9, [X31 + 0xC4]
+	0x02B70A10 LDR V0, [X8 + 0x5]
+	0x02B70A14 STP X31, X31, [X8 + 0x50]
+	0x02B70A18 STR V0, [X31 + 0x4]
+	0x02B70A1C STR W9, [X8]
+	0x02B70A20 ADRP X19, 0x31B3000
+	0x02B70A24 LDRB W8, [X19 + 0x49A]
+	0x02B70A28 CBNZ W8, 0x2B70A40
+	0x02B70A2C ADRP X0, 0x2B67000
+	0x02B70A30 LDR X0, [X0 + 0xD10]
+	0x02B70A34 BL 0x239B8E4
+	0x02B70A38 MOVZ W8, 0x1
+	0x02B70A3C STRB W8, [X19 + 0x49A]
+	0x02B70A40 LDR X19, [X31 + 0x40]
+	0x02B70A44 CBZ X19, 0x2B70CA4
+	0x02B70A48 ADRP X10, 0x2B67000
+	0x02B70A4C LDR X8, [X19]
+	0x02B70A50 LDR X10, [X10 + 0xD10]
+	0x02B70A54 LDRH W20, [X31 + 0x48]
+	0x02B70A58 LDRH W9, [X8 + 0x12E]
+	0x02B70A5C LDR X1, [X10]
+	0x02B70A60 CBZ X9, 0x2B70A84
+	0x02B70A64 LDR X10, [X8 + 0xB0]
+	0x02B70A68 ADD X10, X10, 0x8
+	0x02B70A6C LDUR X11, [X10 - 0x8]
+	0x02B70A70 CMP X11, X1
+	0x02B70A74 B.EQ 0x2B70C80
+	0x02B70A78 SUBS X9, X9, 0x1
+	0x02B70A7C ADD X10, X10, 0x10
+	0x02B70A80 B.NE 0x2B70A6C
+	0x02B70A84 MOV X0, X19
+	0x02B70A88 MOVZ W2, 0x2
+	0x02B70A8C BL 0x23D527C
+	0x02B70A90 B 0x2B70C90
+	0x02B70A94 CBZ X19, 0x2B710B4
+	0x02B70A98 LDR X8, [X19 + 0x20]
+	0x02B70A9C CBZ X8, 0x2B710B8
+	0x02B70AA0 LDR X0, [X8 + 0x108]
+	0x02B70AA4 CBZ X0, 0x2B710BC
+	0x02B70AA8 LDR X1, [X20 + 0x20]
+	0x02B70AAC MOV X2, X31
+	0x02B70AB0 BL 0x2C944C0
+	0x02B70AB4 ADRP X8, 0x2B65000
+	0x02B70AB8 LDR X8, [X8 + 0x80]
+	0x02B70ABC STP X0, X1, [X31 + 0xA8]
+	0x02B70AC0 LDR X8, [X8]
+	0x02B70AC4 LDR W9, [X8 + 0xE4]
+	0x02B70AC8 CBNZ W9, 0x2B70AD4
+	0x02B70ACC MOV X0, X8
+	0x02B70AD0 BL 0x239BA64
+	0x02B70AD4 ADRP X8, 0x2B65000
+	0x02B70AD8 LDR X8, [X8 + 0x60]
+	0x02B70ADC LDR X2, [X8]
+	0x02B70AE0 ADD X0, X31, 0xA8
+	0x02B70AE4 ADD X1, X31, 0xB8
+	0x02B70AE8 BL 0x278ADA8
+	0x02B70AEC TBZ X0, 0x0, 0x2B70F90
+	0x02B70AF0 LDR X8, [X31 + 0xB8]
+	0x02B70AF4 CBZ X8, 0x2B70F90
+	0x02B70AF8 ADRP X9, 0x2B78000
+	0x02B70AFC LDR X9, [X9 + 0x838]
+	0x02B70B00 LDR X10, [X8]
+	0x02B70B04 LDR X9, [X9]
+
+ISIL:
+	001 Subtract X31, X31, 96
+	002 Move [X31+16], X30
+	003 Move [X31+32], X26
+	004 Move [X31+40], X25
+	005 Move [X31+48], X24
+	006 Move [X31+56], X23
+	007 Move [X31+64], X22
+	008 Move [X31+72], X21
+	009 Move [X31+80], X20
+	010 Move [X31+88], X19
+	011 Move X19, X5
+	012 Move W8, [0x31B8BC7]
+	013 Move X25, [0x2B7B668]
+	014 Move W23, W4
+	015 Move X20, X3
+	016 Move X22, X2
+	017 Move X24, X1
+	018 Move X21, X0
+	019 Move TEMP, X8
+	020 And TEMP, TEMP, 1
+	021 Compare TEMP, 1
+	022 Invalid "Jump target not found in method."
+	023 Move X0, [0x2B7C740]
+	024 Call 0x239F8E4
+	025 Move X0, [0x2B7B668]
+	026 Call 0x239F8E4
+	027 Move W8, 1
+	028 Move [X26+3015], W8
+	029 Move X0, X21
+	030 Move X1, X31
+	031 Move X26, [0x2B7C740]
+	032 Call Object..ctor, X0
+	033 Move X0, X21
+	034 Move X1, X24
+	035 Move [X0+40], X24
+	036 Call 0x239F888
+	037 Move X0, [X25]
+	038 Move W8, [X0+228]
+	039 Compare W8, 0
+	040 JumpIfNotEqual {42}
+	041 Call 0x239FA64
+	042 Move X2, [X26]
+	043 Add X1, X31, 0
+	044 Move X0, X22
+	045 And W23, W23, 1
+	046 Call 0x278F218, X0
+	047 Move V0, [X31]
+	048 Add X0, X21, 56
+	049 Move X1, X31
+	050 Move [X21+3], V0
+	051 Call 0x239F888
+	052 Move X0, X21
+	053 Move X1, X20
+	054 Move [X0+24], X20
+	055 Call 0x239F888
+	056 Move [X21+64], X19
+	057 Move X0, X21
+	058 Move X1, X19
+	059 NotImplemented "Instruction STURB not yet implemented."
+	060 Call 0x239F888
+	061 Move X20, [X31+80]
+	062 Move X19, [X31+88]
+	063 Move X30, [X31+16]
+	064 Move X22, [X31+64]
+	065 Move X21, [X31+72]
+	066 Move X24, [X31+48]
+	067 Move X23, [X31+56]
+	068 Move X26, [X31+32]
+	069 Move X25, [X31+40]
+	070 Add X31, X31, 96
+	071 Return 
+

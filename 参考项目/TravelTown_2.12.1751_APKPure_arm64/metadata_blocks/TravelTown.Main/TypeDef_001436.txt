@@ -1,0 +1,13 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+public class CollectableItemCapability : CapabilityBase // TypeDefIndex: 1436
+{
+	// Fields
+	public readonly CollectCapability ItemConfigurationCollect; // 0x18
+	public readonly CollectResourceCapability ItemConfigurationCollectResource; // 0x20
+
+	// Methods
+
+	// RVA: 0x600FD24 Offset: 0x600BD24 VA: 0x600FD24
+	public void .ctor(CollectCapability itemConfigurationCollect, CollectResourceCapability itemConfigurationCollectResource) { }
+}
+

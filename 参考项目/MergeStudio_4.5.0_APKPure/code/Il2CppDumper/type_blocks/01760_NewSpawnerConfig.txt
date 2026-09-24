@@ -1,0 +1,13 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "NewSpawnerConfig", menuName = "Scriptable/NewSpawner/NewSpawnerConfig", order = 2)]
+public class NewSpawnerConfig : FeatureConfigBase // TypeDefIndex: 1760
+{
+	// Fields
+	public List<ItemChainScriptableData> ItemChains; // 0x14
+
+	// Methods
+
+	// RVA: 0x1912A3C Offset: 0x1912A3C VA: 0x1912A3C
+	public void .ctor() { }
+}
+

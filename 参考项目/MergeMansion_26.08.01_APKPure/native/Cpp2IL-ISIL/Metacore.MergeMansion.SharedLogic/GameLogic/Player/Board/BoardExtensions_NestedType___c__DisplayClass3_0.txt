@@ -1,0 +1,115 @@
+Type: GameLogic.Player.Board.BoardExtensions+<>c__DisplayClass3_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0366E344 B 0x44E8DEC
+	0x0366E348 CMP X2, 0x0
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <EmptyCells>b__0(GameLogic.Player.Board.Coordinate coord)
+
+Disassembly:
+	0x03672B74 LDR X10, [X8 + 0xB0]
+	0x03672B78 ADD X10, X10, 0x8
+	0x03672B7C LDUR X11, [X10 - 0x8]
+	0x03672B80 CMP X11, X1
+	0x03672B84 B.EQ 0x3673378
+	0x03672B88 SUBS X9, X9, 0x1
+	0x03672B8C ADD X10, X10, 0x10
+	0x03672B90 B.NE 0x3672B7C
+	0x03672B94 MOV X0, X22
+	0x03672B98 MOVZ W2, 0x5
+	0x03672B9C BL 0x23D527C
+	0x03672BA0 B 0x3673388
+	0x03672BA4 LDR W9, [X10]
+	0x03672BA8 ADD W9, W9, 0x5
+	0x03672BAC ADD X8, X8, W9, 0x4, SXTW
+	0x03672BB0 ADD X0, X8, 0x138
+	0x03672BB4 LDP X8, X1, [X0]
+	0x03672BB8 MOV X0, X19
+	0x03672BBC BLR X8
+	0x03672BC0 MOV X28, X0
+	0x03672BC4 CBZ X0, 0x36736F0
+	0x03672BC8 LDR X8, [X28]
+	0x03672BCC ADRP X10, 0x2062000
+	0x03672BD0 LDRH W9, [X8 + 0x12E]
+	0x03672BD4 LDR X10, [X10 + 0xD58]
+	0x03672BD8 LDR X1, [X10]
+	0x03672BDC CBZ X9, 0x3672C00
+	0x03672BE0 LDR X10, [X8 + 0xB0]
+	0x03672BE4 ADD X10, X10, 0x8
+	0x03672BE8 LDUR X11, [X10 - 0x8]
+	0x03672BEC CMP X11, X1
+	0x03672BF0 B.EQ 0x3672D38
+	0x03672BF4 SUBS X9, X9, 0x1
+	0x03672BF8 ADD X10, X10, 0x10
+	0x03672BFC B.NE 0x3672BE8
+	0x03672C00 MOV X0, X28
+	0x03672C04 MOVZ W2, 0x36
+	0x03672C08 BL 0x23D527C
+	0x03672C0C B 0x3672D48
+	0x03672C10 LDR W9, [X10]
+	0x03672C14 ADD W9, W9, 0x5
+	0x03672C18 ADD X8, X8, W9, 0x4, SXTW
+	0x03672C1C ADD X0, X8, 0x138
+	0x03672C20 LDP X8, X1, [X0]
+	0x03672C24 MOV X0, X22
+	0x03672C28 BLR X8
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move X19, X1
+	006 Move X20, X0
+	007 Move W8, [0x26BBF61]
+	008 Move TEMP, X8
+	009 And TEMP, TEMP, 1
+	010 Compare TEMP, 1
+	011 JumpIfEqual {16}
+	012 Move X0, [0x209DE10]
+	013 Call 0x239F8E4
+	014 Move W8, 1
+	015 Move [X21+3937], W8
+	016 Move X20, [X20+16]
+	017 Compare X20, 0
+	018 JumpIfEqual {50}
+	019 Move X8, [X20]
+	020 Move X10, [0x209DE10]
+	021 NotImplemented "Instruction LDRH not yet implemented."
+	022 Move X1, [X10]
+	023 Compare X9, 0
+	024 JumpIfEqual {31}
+	025 Move X10, [X8+176]
+	026 Add X10, X10, 8
+	027 NotImplemented "Instruction LDUR not yet implemented."
+	028 NotImplemented "Instruction CMP not yet implemented."
+	029 Subtract X9, X9, 1
+	030 Add X10, X10, 16
+	031 Move X0, X20
+	032 Move W2, 5
+	033 Call 0x23D927C
+	034 Move W9, [X10]
+	035 Add W9, W9, 5
+	036 Add X8, X8, W9
+	037 Add X0, X8, 312
+	038 Move X8, [X0]
+	039 Move X2, [X0+8]
+	040 Move X0, X20
+	041 Move X1, X19
+	042 NotImplemented "Instruction BLR not yet implemented."
+	043 Move X20, [X31+16]
+	044 Move X19, [X31+24]
+	045 NotImplemented "Instruction CMP not yet implemented."
+	046 NotImplemented "Instruction CSET not yet implemented."
+	047 Move X30, [X31+32]
+	048 Move X21, [X31+40]
+	049 Return X0
+	050 Call 0x239FB90
+

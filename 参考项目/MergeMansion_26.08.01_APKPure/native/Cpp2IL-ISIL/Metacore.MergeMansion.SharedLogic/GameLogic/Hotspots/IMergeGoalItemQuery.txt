@@ -1,0 +1,9 @@
+Type: GameLogic.Hotspots.IMergeGoalItemQuery
+
+Method: System.Boolean IsActiveMergeGoalItem(System.Int32 itemId, out System.Int32 requiredItemCount)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

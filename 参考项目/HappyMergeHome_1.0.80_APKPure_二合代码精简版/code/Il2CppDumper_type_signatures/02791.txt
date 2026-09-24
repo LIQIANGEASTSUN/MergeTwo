@@ -1,0 +1,79 @@
+// Namespace: 
+public class MergePackageUnit : MonoBehaviour // TypeDefIndex: 2791
+{
+	// Fields
+	private MergeBoardEnum _boardId; // 0x10
+	private bool _boardIdSetFlag; // 0x14
+	private MergePackageUnitState state1; // 0x18
+	private MergePackageUnitState state2; // 0x1C
+	private MergePackageUnitState state3; // 0x20
+	private MergePackageUnitState state4; // 0x24
+	private Image icon; // 0x28
+	private Transform masterCardIcon; // 0x2C
+	private Button useBtn; // 0x30
+	private Button tipBtn; // 0x34
+	private int index; // 0x38
+	private MergePackageUnitType mType; // 0x3C
+	private TableMergeItem mergeItemConfig; // 0x40
+	private Transform Bg; // 0x44
+	private Transform BgBuilding; // 0x48
+
+	// Properties
+	private MergeBoardEnum BoardId { get; }
+
+	// Methods
+
+	// RVA: 0x2C49E5C Offset: 0x2C49E5C VA: 0x2C49E5C
+	private MergeBoardEnum get_BoardId() { }
+
+	// RVA: 0x2C49F34 Offset: 0x2C49F34 VA: 0x2C49F34
+	public void SetBoardId(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2C49F98 Offset: 0x2C49F98 VA: 0x2C49F98
+	private void Awake() { }
+
+	// RVA: 0x2C4A470 Offset: 0x2C4A470 VA: 0x2C4A470
+	private void OnDestroy() { }
+
+	[IDTag(0)]
+	// RVA: 0x2C4A5EC Offset: 0x2C4A5EC VA: 0x2C4A5EC
+	public void SetItemInfomation(TableMergeItem itemConfig, int choosedIndex, MergePackageUnitType type, int parentId = 0, int count = 0) { }
+
+	[IDTag(1)]
+	// RVA: 0x2C4BB44 Offset: 0x2C4BB44 VA: 0x2C4BB44
+	public void SetItemInfomation(int itemId, MergePackageUnitType type) { }
+
+	// RVA: 0x2C4BD50 Offset: 0x2C4BD50 VA: 0x2C4BD50
+	public void SetNameText(string txt) { }
+
+	// RVA: 0x2C4BE98 Offset: 0x2C4BE98 VA: 0x2C4BE98
+	public void SetLevelText(string txt) { }
+
+	// RVA: 0x2C4ABF0 Offset: 0x2C4ABF0 VA: 0x2C4ABF0
+	private void ClearStatus() { }
+
+	// RVA: 0x2C4BFE0 Offset: 0x2C4BFE0 VA: 0x2C4BFE0
+	public void SetTaskStatus(int curCount, int needCount) { }
+
+	// RVA: 0x2C4C290 Offset: 0x2C4C290 VA: 0x2C4C290
+	public void SetTaskText(string msg) { }
+
+	// RVA: 0x2C4C488 Offset: 0x2C4C488 VA: 0x2C4C488
+	public void SetBagCost(int type, int cost) { }
+
+	// RVA: 0x2C4C768 Offset: 0x2C4C768 VA: 0x2C4C768
+	private void OnClickItem() { }
+
+	// RVA: 0x2C4CCD8 Offset: 0x2C4CCD8 VA: 0x2C4CCD8
+	private void UseBagItem(int emptyIndex) { }
+
+	// RVA: 0x2C4D6C0 Offset: 0x2C4D6C0 VA: 0x2C4D6C0
+	private void UseBuildBagItem(int emptyIndex) { }
+
+	// RVA: 0x2C4E0A4 Offset: 0x2C4E0A4 VA: 0x2C4E0A4
+	private void MergeInfoProductEvent(BaseEvent e) { }
+
+	// RVA: 0x2C4E268 Offset: 0x2C4E268 VA: 0x2C4E268
+	public void .ctor() { }
+}
+

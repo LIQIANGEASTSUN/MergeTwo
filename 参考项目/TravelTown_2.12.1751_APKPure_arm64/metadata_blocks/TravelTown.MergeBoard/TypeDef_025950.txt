@@ -1,0 +1,46 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class FeedingCombinationItemInsertedResult // TypeDefIndex: 25950
+{
+	// Fields
+	[CompilerGenerated]
+	private Entity <FeedingEntity>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private Entity <ConsumedEntity>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private ItemAnalyticsData <AnalyticsData>k__BackingField; // 0x20
+
+	// Properties
+	public Entity FeedingEntity { get; set; }
+	public Entity ConsumedEntity { get; set; }
+	public ItemAnalyticsData AnalyticsData { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A5A8 Offset: 0x6A965A8 VA: 0x6A9A5A8
+	public Entity get_FeedingEntity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A5B0 Offset: 0x6A965B0 VA: 0x6A9A5B0
+	public void set_FeedingEntity(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A5B8 Offset: 0x6A965B8 VA: 0x6A9A5B8
+	public Entity get_ConsumedEntity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A5C0 Offset: 0x6A965C0 VA: 0x6A9A5C0
+	public void set_ConsumedEntity(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A5C8 Offset: 0x6A965C8 VA: 0x6A9A5C8
+	public ItemAnalyticsData get_AnalyticsData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A5D0 Offset: 0x6A965D0 VA: 0x6A9A5D0
+	public void set_AnalyticsData(ItemAnalyticsData value) { }
+
+	// RVA: 0x6A9A5D8 Offset: 0x6A965D8 VA: 0x6A9A5D8
+	public void .ctor() { }
+}
+

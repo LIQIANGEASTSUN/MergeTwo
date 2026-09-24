@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BoardEvent.UpdateScrollableItemsClickableStatus : IEvent // TypeDefIndex: 1786
+{
+	// Fields
+	public bool Interactable; // 0x0
+}
+

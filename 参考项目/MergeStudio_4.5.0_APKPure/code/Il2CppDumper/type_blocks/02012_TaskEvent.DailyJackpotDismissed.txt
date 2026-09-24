@@ -1,0 +1,8 @@
+// Namespace: 
+public struct TaskEvent.DailyJackpotDismissed : IEvent // TypeDefIndex: 2012
+{
+	// Fields
+	public List<DailyJackpotItemData> RewardedItems; // 0x0
+	public bool PlayRewardedAnimations; // 0x4
+}
+

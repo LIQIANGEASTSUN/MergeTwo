@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BaseMiniBoardEvent.PreMergeParticleActive : IEvent // TypeDefIndex: 1052
+{
+	// Fields
+	public MiniBoardItemController ItemController; // 0x0
+}
+

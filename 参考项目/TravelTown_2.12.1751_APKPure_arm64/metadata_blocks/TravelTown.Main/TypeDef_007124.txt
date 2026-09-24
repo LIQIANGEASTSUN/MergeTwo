@@ -1,0 +1,9 @@
+// Namespace: Merger.CoinMultipliers.Signals
+public class CoinMultipliersStateUpdatedSignal // TypeDefIndex: 7124
+{
+	// Methods
+
+	// RVA: 0x6522B54 Offset: 0x651EB54 VA: 0x6522B54
+	public void .ctor() { }
+}
+

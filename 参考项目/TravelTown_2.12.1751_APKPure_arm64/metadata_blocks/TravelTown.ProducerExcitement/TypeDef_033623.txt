@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ProducerExcitementService.<>c__DisplayClass33_0 // TypeDefIndex: 33623
+{
+	// Fields
+	public ProducerExcitementService <>4__this; // 0x10
+	public long cycleEndDate; // 0x18
+
+	// Methods
+
+	// RVA: 0x6AD85A0 Offset: 0x6AD45A0 VA: 0x6AD85A0
+	public void .ctor() { }
+
+	// RVA: 0x6AD89F8 Offset: 0x6AD49F8 VA: 0x6AD89F8
+	internal void <RegisterCycleEndTimer>b__0(string _) { }
+}
+

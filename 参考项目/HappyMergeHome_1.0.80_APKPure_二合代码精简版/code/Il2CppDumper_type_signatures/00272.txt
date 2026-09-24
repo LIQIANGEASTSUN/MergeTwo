@@ -1,0 +1,254 @@
+// Namespace: 
+public class CatSwimmingModel : ActivityEntityBase // TypeDefIndex: 272
+{
+	// Fields
+	private static CatSwimmingModel _instance; // 0x0
+	private int _lastCurLevel; // 0x3C
+	private int _lastTotalLevel; // 0x40
+	private int _curLevel; // 0x44
+	private int _totalLevel; // 0x48
+	private bool LoopCreateStorage; // 0x4C
+	private List<TaskCompletionSource<bool>> AddScoreAsyncLock; // 0x50
+	private bool AddScoreInAsync; // 0x54
+	private Dictionary<int, CatSwimmingProductConfig> _CatSwimmingProductConfig; // 0x58
+	private bool _isFlyCollection; // 0x5C
+	private bool _lastActivityOpenState; // 0x5D
+	public Dictionary<int, CatSwimmingConfig> CatSwimmingDictionary; // 0x60
+	public int MaxLevel; // 0x64
+	public int MinLevel; // 0x68
+	public int MaxScore; // 0x6C
+
+	// Properties
+	public static CatSwimmingModel Instance { get; }
+	public override string Guid { get; }
+	public int CurScore { get; set; }
+	public int TotalScore { get; set; }
+	public int CurLevel { get; }
+	public int TotalLevel { get; }
+	public Dictionary<int, CatSwimmingProductConfig> CatSwimmingProductConfig { get; }
+	public List<CatSwimmingConfig> CatSwimmingList { get; }
+	public List<CatSwimmingProductConfig> CatSwimmingProductList { get; }
+	public CatSwimmingGlobalConfig GlobalConfig { get; }
+	public List<CatSwimmingLeaderBoardRewardConfig> LeaderBoardRewardConfig { get; }
+	public static StorageDictionary<string, StorageCatSwimming> StorageCatSwimming { get; }
+	public StorageCatSwimming CurStorageCatSwimmingWeek { get; }
+
+	// Methods
+
+	// RVA: 0x2B2DE64 Offset: 0x2B2DE64 VA: 0x2B2DE64
+	public bool ShowEntrance() { }
+
+	// RVA: 0x2B2DDA0 Offset: 0x2B2DDA0 VA: 0x2B2DDA0
+	public static CatSwimmingModel get_Instance() { }
+
+	// RVA: 0x2B397CC Offset: 0x2B397CC VA: 0x2B397CC Slot: 4
+	public override string get_Guid() { }
+
+	// RVA: 0x2B3985C Offset: 0x2B3985C VA: 0x2B3985C
+	public int get_CurScore() { }
+
+	// RVA: 0x2B398C8 Offset: 0x2B398C8 VA: 0x2B398C8
+	public void set_CurScore(int value) { }
+
+	// RVA: 0x2B2E290 Offset: 0x2B2E290 VA: 0x2B2E290
+	public int get_TotalScore() { }
+
+	// RVA: 0x2B3A260 Offset: 0x2B3A260 VA: 0x2B3A260
+	public void set_TotalScore(int value) { }
+
+	// RVA: 0x2B3A748 Offset: 0x2B3A748 VA: 0x2B3A748
+	public List<int> GetUnCollectLevels() { }
+
+	// RVA: 0x2B3AAA8 Offset: 0x2B3AAA8 VA: 0x2B3AAA8
+	private static bool IsCatSwimmingStorageEnd(StorageCatSwimming storageCatSwimming) { }
+
+	// RVA: 0x2B3AB88 Offset: 0x2B3AB88 VA: 0x2B3AB88
+	public List<ResData> GetUnCollectRewards() { }
+
+	// RVA: 0x2B3B130 Offset: 0x2B3B130 VA: 0x2B3B130
+	public List<ResData> GetCurrentUnCollectRewards() { }
+
+	// RVA: 0x2B3B498 Offset: 0x2B3B498 VA: 0x2B3B498
+	public void CleanUnCollectRewardsList() { }
+
+	// RVA: 0x2B2DF18 Offset: 0x2B2DF18 VA: 0x2B2DF18
+	public int get_CurLevel() { }
+
+	// RVA: 0x2B3A6F4 Offset: 0x2B3A6F4 VA: 0x2B3A6F4
+	public int get_TotalLevel() { }
+
+	[RuntimeInitializeOnLoadMethod(0)]
+	// RVA: 0x2B3B7DC Offset: 0x2B3B7DC VA: 0x2B3B7DC
+	private static void InitAuto() { }
+
+	// RVA: 0x2B3B844 Offset: 0x2B3B844 VA: 0x2B3B844 Slot: 5
+	public override void InitFromServerData(string activityId, string activityType, ulong startTime, ulong endTime, ulong rewardEndTime, bool manualEnd, string configJson, string activitySubType) { }
+
+	// RVA: 0x2B3C560 Offset: 0x2B3C560 VA: 0x2B3C560 Slot: 17
+	public override void SetTempEndTime(int timer = 10) { }
+
+	// RVA: 0x2B395F4 Offset: 0x2B395F4 VA: 0x2B395F4
+	public bool IsPrivateOpened() { }
+
+	// RVA: 0x2B3C76C Offset: 0x2B3C76C VA: 0x2B3C76C Slot: 19
+	public override void UpdateActivityState() { }
+
+	// RVA: 0x2B3C7D0 Offset: 0x2B3C7D0 VA: 0x2B3C7D0 Slot: 18
+	protected override void InitServerDataFinish() { }
+
+	// RVA: 0x2B3C698 Offset: 0x2B3C698 VA: 0x2B3C698
+	public bool IsOpened(bool hasLog = False) { }
+
+	[AsyncStateMachine(typeof(CatSwimmingModel.<AddScore>d__35))]
+	// RVA: 0x2B3C81C Offset: 0x2B3C81C VA: 0x2B3C81C
+	public void AddScore(int score, List<TaskCompletionSource<bool>> addValueTask) { }
+
+	// RVA: 0x2B30C64 Offset: 0x2B30C64 VA: 0x2B30C64
+	public bool IsMaxLevel() { }
+
+	// RVA: 0x2B3C94C Offset: 0x2B3C94C VA: 0x2B3C94C
+	public void RemoveAllCatSwimmingBanana() { }
+
+	// RVA: 0x2B3CA64 Offset: 0x2B3CA64 VA: 0x2B3CA64
+	public bool CanManualActivity() { }
+
+	// RVA: 0x2B2E314 Offset: 0x2B2E314 VA: 0x2B2E314
+	public int GetUpperScore(int score, int level) { }
+
+	// RVA: 0x2B3CBC4 Offset: 0x2B3CBC4 VA: 0x2B3CBC4
+	public void CompletedActivity() { }
+
+	// RVA: 0x2B3CC3C Offset: 0x2B3CC3C VA: 0x2B3CC3C
+	public bool IsComplete() { }
+
+	// RVA: 0x2B3CCD8 Offset: 0x2B3CCD8 VA: 0x2B3CCD8
+	public void EndActivity() { }
+
+	// RVA: 0x2B3CF8C Offset: 0x2B3CF8C VA: 0x2B3CF8C
+	public void StartActivity() { }
+
+	// RVA: 0x2B3CFD8 Offset: 0x2B3CFD8 VA: 0x2B3CFD8
+	public Dictionary<int, CatSwimmingProductConfig> get_CatSwimmingProductConfig() { }
+
+	// RVA: 0x2B3D350 Offset: 0x2B3D350 VA: 0x2B3D350
+	public void MergeToProductCatSwimming(TableMergeItem tableMergeItem, Vector3 srcPos) { }
+
+	// RVA: 0x2B3D6A8 Offset: 0x2B3D6A8 VA: 0x2B3D6A8
+	public void AddRandomTaskScore(int seat, int coin, Vector3 scrPos) { }
+
+	// RVA: 0x2B3DA18 Offset: 0x2B3DA18 VA: 0x2B3DA18
+	public int GetRandomTaskScore(StorageOrderItem storageOrderItem) { }
+
+	[AsyncStateMachine(typeof(CatSwimmingModel.<AddActivityScore>d__50))]
+	[IDTag(1)]
+	// RVA: 0x2B3D568 Offset: 0x2B3D568 VA: 0x2B3D568
+	public void AddActivityScore(int count, Vector3 srcPos) { }
+
+	[IDTag(0)]
+	// RVA: 0x2B3DDAC Offset: 0x2B3DDAC VA: 0x2B3DDAC
+	public void AddActivityScore(int count) { }
+
+	// RVA: 0x2B3E01C Offset: 0x2B3E01C VA: 0x2B3E01C
+	private void FlyScore(int count, Vector3 scrPos, Action endCall) { }
+
+	// RVA: 0x2B3E698 Offset: 0x2B3E698 VA: 0x2B3E698
+	public bool CanShowStartView() { }
+
+	// RVA: 0x2B3E728 Offset: 0x2B3E728 VA: 0x2B3E728
+	public void ShowStartView() { }
+
+	// RVA: 0x2B3E7A0 Offset: 0x2B3E7A0 VA: 0x2B3E7A0
+	public bool CanShowPreStartView() { }
+
+	// RVA: 0x2B3E830 Offset: 0x2B3E830 VA: 0x2B3E830
+	public void ShowPreStartView() { }
+
+	// RVA: 0x2B39680 Offset: 0x2B39680 VA: 0x2B39680
+	public void .ctor() { }
+
+	// RVA: 0x2B3E8A8 Offset: 0x2B3E8A8 VA: 0x2B3E8A8
+	public void UpdateTime() { }
+
+	// RVA: 0x2B3CF0C Offset: 0x2B3CF0C VA: 0x2B3CF0C
+	public bool IsCanClearBananas() { }
+
+	// RVA: 0x2B3E9D8 Offset: 0x2B3E9D8 VA: 0x2B3E9D8
+	public bool IsActivityEnd() { }
+
+	// RVA: 0x2B3ECDC Offset: 0x2B3ECDC VA: 0x2B3ECDC Slot: 23
+	public override bool CanDownLoadRes() { }
+
+	// RVA: 0x2B3C2F0 Offset: 0x2B3C2F0 VA: 0x2B3C2F0
+	public void CleanUselessStorage() { }
+
+	// RVA: 0x2B3F104 Offset: 0x2B3F104 VA: 0x2B3F104
+	public bool CanShowTip() { }
+
+	// RVA: 0x2B3F3D8 Offset: 0x2B3F3D8 VA: 0x2B3F3D8
+	public List<CatSwimmingConfig> get_CatSwimmingList() { }
+
+	// RVA: 0x2B3D278 Offset: 0x2B3D278 VA: 0x2B3D278
+	public List<CatSwimmingProductConfig> get_CatSwimmingProductList() { }
+
+	// RVA: 0x2B30E60 Offset: 0x2B30E60 VA: 0x2B30E60
+	public CatSwimmingGlobalConfig get_GlobalConfig() { }
+
+	// RVA: 0x2B314D4 Offset: 0x2B314D4 VA: 0x2B314D4
+	public List<CatSwimmingLeaderBoardRewardConfig> get_LeaderBoardRewardConfig() { }
+
+	// RVA: 0x2B3C120 Offset: 0x2B3C120 VA: 0x2B3C120
+	public void InitConfig() { }
+
+	// RVA: 0x2B3F62C Offset: 0x2B3F62C VA: 0x2B3F62C
+	public int GetMaxLevel() { }
+
+	// RVA: 0x2B3F780 Offset: 0x2B3F780 VA: 0x2B3F780
+	public int GetMaxScore() { }
+
+	// RVA: 0x2B39DB4 Offset: 0x2B39DB4 VA: 0x2B39DB4
+	public int GetLevelByScore(int score) { }
+
+	// RVA: 0x2B3CAD8 Offset: 0x2B3CAD8 VA: 0x2B3CAD8
+	public int GetLevelBaseScore(int level) { }
+
+	// RVA: 0x2B2E3A4 Offset: 0x2B2E3A4 VA: 0x2B2E3A4
+	public int GetLevelStageScore(int level) { }
+
+	// RVA: 0x2B39E9C Offset: 0x2B39E9C VA: 0x2B39E9C
+	public List<ResData> GetLevelRewards(int level) { }
+
+	// RVA: 0x2B2EF50 Offset: 0x2B2EF50 VA: 0x2B2EF50
+	public int GetLevelRewardsShowId(int level) { }
+
+	// RVA: 0x2B3ED88 Offset: 0x2B3ED88 VA: 0x2B3ED88
+	public static StorageDictionary<string, StorageCatSwimming> get_StorageCatSwimming() { }
+
+	// RVA: 0x2B2EBC0 Offset: 0x2B2EBC0 VA: 0x2B2EBC0
+	public StorageCatSwimming get_CurStorageCatSwimmingWeek() { }
+
+	// RVA: 0x2B3BDE4 Offset: 0x2B3BDE4 VA: 0x2B3BDE4
+	public bool CreateStorage() { }
+
+	// RVA: 0x2B32188 Offset: 0x2B32188 VA: 0x2B32188
+	public static StorageCatSwimming GetFirstWeekCanGetReward() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2B3F8D4 Offset: 0x2B3F8D4 VA: 0x2B3F8D4
+	private bool <get_CatSwimmingList>b__68_0(CatSwimmingConfig a) { }
+
+	// RVA: 0x2B3F91C Offset: 0x2B3F91C VA: 0x2B3F91C
+	public void <>iFixBaseProxy_InitFromServerData(string P0, string P1, ulong P2, ulong P3, ulong P4, bool P5, string P6, string P7) { }
+
+	// RVA: 0x2B3F974 Offset: 0x2B3F974 VA: 0x2B3F974
+	public void <>iFixBaseProxy_SetTempEndTime(int P0) { }
+
+	// RVA: 0x2B3F97C Offset: 0x2B3F97C VA: 0x2B3F97C
+	public void <>iFixBaseProxy_UpdateActivityState() { }
+
+	// RVA: 0x2B3F984 Offset: 0x2B3F984 VA: 0x2B3F984
+	public void <>iFixBaseProxy_InitServerDataFinish() { }
+
+	// RVA: 0x2B3F98C Offset: 0x2B3F98C VA: 0x2B3F98C
+	public bool <>iFixBaseProxy_CanDownLoadRes() { }
+}
+

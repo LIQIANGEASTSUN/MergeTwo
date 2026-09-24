@@ -1,0 +1,16 @@
+Type: GameLogic.Player.Items.IBoardItem
+
+Method: System.Int32 get_ItemId()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.String GetItemType(GameLogic.Config.IMergeMansionGameConfig config)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

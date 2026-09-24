@@ -1,0 +1,8 @@
+// Namespace: 
+public struct TaskEvent.RemoveScrollableItem : IEvent // TypeDefIndex: 2016
+{
+	// Fields
+	public ScrollableItemType ScrollableInfoType; // 0x0
+	public int Index; // 0x4
+}
+

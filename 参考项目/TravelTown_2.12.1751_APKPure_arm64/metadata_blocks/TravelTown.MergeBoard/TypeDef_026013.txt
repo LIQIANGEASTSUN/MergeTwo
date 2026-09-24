@@ -1,0 +1,13 @@
+// Namespace: Merger.MergeBoard.Components
+public struct PendingInteractionComponent : IComponent // TypeDefIndex: 26013
+{
+	// Fields
+	public bool Used; // 0x0
+	public string PendingItemUuidToConsume; // 0x8
+
+	// Methods
+
+	// RVA: 0x6A9C2A4 Offset: 0x6A982A4 VA: 0x6A9C2A4
+	public PendingInteractionComponent Use() { }
+}
+

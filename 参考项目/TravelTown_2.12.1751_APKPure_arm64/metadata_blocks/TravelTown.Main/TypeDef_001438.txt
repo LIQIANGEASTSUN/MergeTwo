@@ -1,0 +1,27 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class CollectResourceCapability : CapabilityBase // TypeDefIndex: 1438
+{
+	// Fields
+	[JsonProperty("collectableType")]
+	public CollectableType CollectableType; // 0x14
+	[JsonProperty("rewards")]
+	public Reward Reward; // 0x18
+	[JsonProperty("clientAssets")]
+	public ClientAsset[] Assets; // 0x20
+	[JsonProperty("afterCollectAnimation")]
+	private string _afterCollectAnimation; // 0x28
+
+	// Properties
+	[JsonIgnore]
+	public AfterCollectAnimation AfterCollectAnimation { get; }
+
+	// Methods
+
+	// RVA: 0x600FDB4 Offset: 0x600BDB4 VA: 0x600FDB4
+	public AfterCollectAnimation get_AfterCollectAnimation() { }
+
+	// RVA: 0x600FE48 Offset: 0x600BE48 VA: 0x600FE48
+	public void .ctor() { }
+}
+

@@ -1,0 +1,12 @@
+// Namespace: MergePuzzle
+public interface IReward // TypeDefIndex: 2528
+{
+	// Properties
+	public abstract GameRewardType RewardType { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract GameRewardType get_RewardType();
+}
+

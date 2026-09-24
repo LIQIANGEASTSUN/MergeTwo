@@ -1,0 +1,264 @@
+// Namespace: DragonU3DSDK.Storage
+[Serializable]
+public class StorageSummerWatermelonSix : StorageBase // TypeDefIndex: 11005
+{
+	// Fields
+	[JsonProperty]
+	private bool isStart; // 0x8
+	[JsonProperty]
+	private int maxUnlockLevel; // 0xC
+	[JsonProperty]
+	private StorageList<int> unSetRewards; // 0x10
+	[JsonProperty]
+	private StorageDictionary<int, int> unCollectRewards; // 0x14
+	[JsonProperty]
+	private StorageList<int> unSetItems; // 0x18
+	[JsonProperty]
+	private long startActivityTime; // 0x20
+	[JsonProperty]
+	private long activityEndTime; // 0x28
+	[JsonProperty]
+	private StorageDictionary<int, int> buyPackageShopIdDictionary; // 0x30
+	[JsonProperty]
+	private int dayProductCount; // 0x34
+	[JsonProperty]
+	private int dayId; // 0x38
+	[JsonProperty]
+	private StorageDictionary<int, bool> packageEnableStateDictionary; // 0x3C
+	[JsonProperty]
+	private bool isShowEnd; // 0x40
+	[JsonProperty]
+	private bool isOpenBigBoard; // 0x41
+	[JsonProperty]
+	private StorageDictionary<int, bool> claimedFirstRwards; // 0x44
+	[JsonProperty]
+	private StorageList<int> mergeItems; // 0x48
+	[JsonProperty]
+	private long giftBuyTime; // 0x50
+	[JsonProperty]
+	private int giftBuyNum; // 0x58
+	[JsonProperty]
+	private int oneByOneIndex; // 0x5C
+	[JsonProperty]
+	private bool isABTest; // 0x60
+	[JsonProperty]
+	private StorageList<int> noRecycleItems; // 0x64
+	[JsonProperty]
+	private int hoe; // 0x68
+	[JsonProperty]
+	private long exp; // 0x70
+	[JsonProperty]
+	private int level; // 0x78
+	[JsonProperty]
+	private StorageDictionary<int, bool> claimedStageRewards; // 0x7C
+	[JsonProperty]
+	private int mergeBoardOffect; // 0x80
+	[JsonProperty]
+	private StorageDictionary<int, bool> mergeLineRwards; // 0x84
+	[JsonProperty]
+	private bool isClaimFinalReward; // 0x88
+	[JsonProperty]
+	private int biMaxMergeItemLevel; // 0x8C
+
+	// Properties
+	[JsonIgnore]
+	public bool IsStart { get; set; }
+	[JsonIgnore]
+	public int MaxUnlockLevel { get; set; }
+	[JsonIgnore]
+	public StorageList<int> UnSetRewards { get; }
+	[JsonIgnore]
+	public StorageDictionary<int, int> UnCollectRewards { get; }
+	[JsonIgnore]
+	public StorageList<int> UnSetItems { get; }
+	[JsonIgnore]
+	public long StartActivityTime { get; set; }
+	[JsonIgnore]
+	public long ActivityEndTime { get; set; }
+	[JsonIgnore]
+	public StorageDictionary<int, int> BuyPackageShopIdDictionary { get; }
+	[JsonIgnore]
+	public int DayProductCount { get; set; }
+	[JsonIgnore]
+	public int DayId { get; set; }
+	[JsonIgnore]
+	public StorageDictionary<int, bool> PackageEnableStateDictionary { get; }
+	[JsonIgnore]
+	public bool IsShowEnd { get; set; }
+	[JsonIgnore]
+	public bool IsOpenBigBoard { get; set; }
+	[JsonIgnore]
+	public StorageDictionary<int, bool> ClaimedFirstRwards { get; }
+	[JsonIgnore]
+	public StorageList<int> MergeItems { get; }
+	[JsonIgnore]
+	public long GiftBuyTime { get; set; }
+	[JsonIgnore]
+	public int GiftBuyNum { get; set; }
+	[JsonIgnore]
+	public int OneByOneIndex { get; set; }
+	[JsonIgnore]
+	public bool IsABTest { get; set; }
+	[JsonIgnore]
+	public StorageList<int> NoRecycleItems { get; }
+	[JsonIgnore]
+	public int Hoe { get; set; }
+	[JsonIgnore]
+	public long Exp { get; set; }
+	[JsonIgnore]
+	public int Level { get; set; }
+	[JsonIgnore]
+	public StorageDictionary<int, bool> ClaimedStageRewards { get; }
+	[JsonIgnore]
+	public int MergeBoardOffect { get; set; }
+	[JsonIgnore]
+	public StorageDictionary<int, bool> MergeLineRwards { get; }
+	[JsonIgnore]
+	public bool IsClaimFinalReward { get; set; }
+	[JsonIgnore]
+	public int BiMaxMergeItemLevel { get; set; }
+
+	// Methods
+
+	// RVA: 0x26DE2A8 Offset: 0x26DE2A8 VA: 0x26DE2A8
+	public bool get_IsStart() { }
+
+	// RVA: 0x26DE2B0 Offset: 0x26DE2B0 VA: 0x26DE2B0
+	public void set_IsStart(bool value) { }
+
+	// RVA: 0x26DE364 Offset: 0x26DE364 VA: 0x26DE364
+	public int get_MaxUnlockLevel() { }
+
+	// RVA: 0x26DE36C Offset: 0x26DE36C VA: 0x26DE36C
+	public void set_MaxUnlockLevel(int value) { }
+
+	// RVA: 0x26DE420 Offset: 0x26DE420 VA: 0x26DE420
+	public StorageList<int> get_UnSetRewards() { }
+
+	// RVA: 0x26DE428 Offset: 0x26DE428 VA: 0x26DE428
+	public StorageDictionary<int, int> get_UnCollectRewards() { }
+
+	// RVA: 0x26DE430 Offset: 0x26DE430 VA: 0x26DE430
+	public StorageList<int> get_UnSetItems() { }
+
+	// RVA: 0x26DE438 Offset: 0x26DE438 VA: 0x26DE438
+	public long get_StartActivityTime() { }
+
+	// RVA: 0x26DE440 Offset: 0x26DE440 VA: 0x26DE440
+	public void set_StartActivityTime(long value) { }
+
+	// RVA: 0x26DE508 Offset: 0x26DE508 VA: 0x26DE508
+	public long get_ActivityEndTime() { }
+
+	// RVA: 0x26DE510 Offset: 0x26DE510 VA: 0x26DE510
+	public void set_ActivityEndTime(long value) { }
+
+	// RVA: 0x26DE5D8 Offset: 0x26DE5D8 VA: 0x26DE5D8
+	public StorageDictionary<int, int> get_BuyPackageShopIdDictionary() { }
+
+	// RVA: 0x26DE5E0 Offset: 0x26DE5E0 VA: 0x26DE5E0
+	public int get_DayProductCount() { }
+
+	// RVA: 0x26DE5E8 Offset: 0x26DE5E8 VA: 0x26DE5E8
+	public void set_DayProductCount(int value) { }
+
+	// RVA: 0x26DE69C Offset: 0x26DE69C VA: 0x26DE69C
+	public int get_DayId() { }
+
+	// RVA: 0x26DE6A4 Offset: 0x26DE6A4 VA: 0x26DE6A4
+	public void set_DayId(int value) { }
+
+	// RVA: 0x26DE758 Offset: 0x26DE758 VA: 0x26DE758
+	public StorageDictionary<int, bool> get_PackageEnableStateDictionary() { }
+
+	// RVA: 0x26DE760 Offset: 0x26DE760 VA: 0x26DE760
+	public bool get_IsShowEnd() { }
+
+	// RVA: 0x26DE768 Offset: 0x26DE768 VA: 0x26DE768
+	public void set_IsShowEnd(bool value) { }
+
+	// RVA: 0x26DE81C Offset: 0x26DE81C VA: 0x26DE81C
+	public bool get_IsOpenBigBoard() { }
+
+	// RVA: 0x26DE824 Offset: 0x26DE824 VA: 0x26DE824
+	public void set_IsOpenBigBoard(bool value) { }
+
+	// RVA: 0x26DE8D8 Offset: 0x26DE8D8 VA: 0x26DE8D8
+	public StorageDictionary<int, bool> get_ClaimedFirstRwards() { }
+
+	// RVA: 0x26DE8E0 Offset: 0x26DE8E0 VA: 0x26DE8E0
+	public StorageList<int> get_MergeItems() { }
+
+	// RVA: 0x26DE8E8 Offset: 0x26DE8E8 VA: 0x26DE8E8
+	public long get_GiftBuyTime() { }
+
+	// RVA: 0x26DE8F0 Offset: 0x26DE8F0 VA: 0x26DE8F0
+	public void set_GiftBuyTime(long value) { }
+
+	// RVA: 0x26DE9B8 Offset: 0x26DE9B8 VA: 0x26DE9B8
+	public int get_GiftBuyNum() { }
+
+	// RVA: 0x26DE9C0 Offset: 0x26DE9C0 VA: 0x26DE9C0
+	public void set_GiftBuyNum(int value) { }
+
+	// RVA: 0x26DEA74 Offset: 0x26DEA74 VA: 0x26DEA74
+	public int get_OneByOneIndex() { }
+
+	// RVA: 0x26DEA7C Offset: 0x26DEA7C VA: 0x26DEA7C
+	public void set_OneByOneIndex(int value) { }
+
+	// RVA: 0x26DEB30 Offset: 0x26DEB30 VA: 0x26DEB30
+	public bool get_IsABTest() { }
+
+	// RVA: 0x26DEB38 Offset: 0x26DEB38 VA: 0x26DEB38
+	public void set_IsABTest(bool value) { }
+
+	// RVA: 0x26DEBEC Offset: 0x26DEBEC VA: 0x26DEBEC
+	public StorageList<int> get_NoRecycleItems() { }
+
+	// RVA: 0x26DEBF4 Offset: 0x26DEBF4 VA: 0x26DEBF4
+	public int get_Hoe() { }
+
+	// RVA: 0x26DEBFC Offset: 0x26DEBFC VA: 0x26DEBFC
+	public void set_Hoe(int value) { }
+
+	// RVA: 0x26DECB0 Offset: 0x26DECB0 VA: 0x26DECB0
+	public long get_Exp() { }
+
+	// RVA: 0x26DECB8 Offset: 0x26DECB8 VA: 0x26DECB8
+	public void set_Exp(long value) { }
+
+	// RVA: 0x26DED80 Offset: 0x26DED80 VA: 0x26DED80
+	public int get_Level() { }
+
+	// RVA: 0x26DED88 Offset: 0x26DED88 VA: 0x26DED88
+	public void set_Level(int value) { }
+
+	// RVA: 0x26DEE3C Offset: 0x26DEE3C VA: 0x26DEE3C
+	public StorageDictionary<int, bool> get_ClaimedStageRewards() { }
+
+	// RVA: 0x26DEE44 Offset: 0x26DEE44 VA: 0x26DEE44
+	public int get_MergeBoardOffect() { }
+
+	// RVA: 0x26DEE4C Offset: 0x26DEE4C VA: 0x26DEE4C
+	public void set_MergeBoardOffect(int value) { }
+
+	// RVA: 0x26DEF00 Offset: 0x26DEF00 VA: 0x26DEF00
+	public StorageDictionary<int, bool> get_MergeLineRwards() { }
+
+	// RVA: 0x26DEF08 Offset: 0x26DEF08 VA: 0x26DEF08
+	public bool get_IsClaimFinalReward() { }
+
+	// RVA: 0x26DEF10 Offset: 0x26DEF10 VA: 0x26DEF10
+	public void set_IsClaimFinalReward(bool value) { }
+
+	// RVA: 0x26DEFC4 Offset: 0x26DEFC4 VA: 0x26DEFC4
+	public int get_BiMaxMergeItemLevel() { }
+
+	// RVA: 0x26DEFCC Offset: 0x26DEFCC VA: 0x26DEFCC
+	public void set_BiMaxMergeItemLevel(int value) { }
+
+	// RVA: 0x26DF080 Offset: 0x26DF080 VA: 0x26DF080
+	public void .ctor() { }
+}
+

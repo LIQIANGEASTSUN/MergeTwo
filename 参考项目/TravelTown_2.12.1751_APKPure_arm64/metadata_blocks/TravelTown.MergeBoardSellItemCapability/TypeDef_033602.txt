@@ -1,0 +1,16 @@
+// Namespace: Merger.MergeBoardSellItemCapability.Decorators
+public class SellItemSystemDecorator : IBoardControllerDecorator // TypeDefIndex: 33602
+{
+	// Fields
+	[Inject]
+	private DiContainer _container; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A61264 Offset: 0x6A5D264 VA: 0x6A61264 Slot: 4
+	public void DecorateSystems(SystemsBuilder systemsBuilder) { }
+
+	// RVA: 0x6A61324 Offset: 0x6A5D324 VA: 0x6A61324
+	public void .ctor() { }
+}
+

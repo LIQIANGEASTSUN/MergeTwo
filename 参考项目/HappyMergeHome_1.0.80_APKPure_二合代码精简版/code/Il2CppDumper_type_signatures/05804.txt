@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class SummerWatermelonModel.<>c__DisplayClass142_0 // TypeDefIndex: 5804
+{
+	// Fields
+	public BattlePassThirty config; // 0x8
+
+	// Methods
+
+	// RVA: 0x19611BC Offset: 0x19611BC VA: 0x19611BC
+	public void .ctor() { }
+
+	// RVA: 0x19611C4 Offset: 0x19611C4 VA: 0x19611C4
+	internal bool <GetFrontRewardConfig>b__0(BattlePassThirty a) { }
+}
+

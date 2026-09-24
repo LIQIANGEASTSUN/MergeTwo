@@ -1,0 +1,79 @@
+// Namespace: MergeEngine.Model.Configuration
+public class BubbledItemsConfigurationModel : ConfigurationModelBase<GameConfig>, IBubbledItemsConfigurationModel // TypeDefIndex: 513
+{
+	// Fields
+	[Inject]
+	private ILiveOpsEventModel _liveOpsEventModel; // 0x28
+	[Inject]
+	private IUserProfileService _userProfileService; // 0x30
+	[Inject]
+	private IRemoteMergeItemsService _remoteMergeItemsService; // 0x38
+	[Inject]
+	private ISystemManager _systemManager; // 0x40
+	[Inject]
+	private IRemoteContentService _remoteContentService; // 0x48
+	[Inject]
+	private IBubbleBlasterFeatureModel _blasterFeatureModel; // 0x50
+	private BubbledItemsConfig _defaultBubbledItemsConfig; // 0x58
+	private List<WeightedItemSpawnable> _expiredBubbleSpawns; // 0x60
+	private List<WeightedItemSpawnable> _removedBubbleSpawns; // 0x68
+	private RemoteContentBundleHandle _remoteContentBundleHandler; // 0x70
+
+	// Properties
+	public BubbledItemsConfig BubbledItemsConfig { get; }
+	public NewBubbledItemsConfig NewBubbledItemsConfig { get; }
+	public NewBubbledItemsConfig CoreBoardNewBubbledItemsConfig { get; }
+	public List<LiveOpsEventsSharedConfigurationSingleBubbleItemSettings> BubbledItemOverrides { get; }
+	private IBoardLiveOpsConfiguration LiveOpBoardConfig { get; }
+	private BubbledItemsConfig LiveOpBubbledItemsConfig { get; }
+	public List<WeightedItemSpawnable> ExpiredBubbleSpawnedItems { get; }
+	public List<WeightedItemSpawnable> CompensationForRemovedBubblesItemsSpawnList { get; }
+
+	// Methods
+
+	// RVA: 0x61371C8 Offset: 0x61331C8 VA: 0x61371C8 Slot: 20
+	public BubbledItemsConfig get_BubbledItemsConfig() { }
+
+	// RVA: 0x61373E0 Offset: 0x61333E0 VA: 0x61373E0 Slot: 21
+	public NewBubbledItemsConfig get_NewBubbledItemsConfig() { }
+
+	// RVA: 0x6137734 Offset: 0x6133734 VA: 0x6137734 Slot: 22
+	public NewBubbledItemsConfig get_CoreBoardNewBubbledItemsConfig() { }
+
+	// RVA: 0x6137738 Offset: 0x6133738 VA: 0x6137738
+	public List<LiveOpsEventsSharedConfigurationSingleBubbleItemSettings> get_BubbledItemOverrides() { }
+
+	// RVA: 0x613731C Offset: 0x613331C VA: 0x613731C
+	private IBoardLiveOpsConfiguration get_LiveOpBoardConfig() { }
+
+	// RVA: 0x61377E4 Offset: 0x61337E4 VA: 0x61377E4
+	private BubbledItemsConfig get_LiveOpBubbledItemsConfig() { }
+
+	// RVA: 0x6137920 Offset: 0x6133920 VA: 0x6137920 Slot: 23
+	public List<WeightedItemSpawnable> get_ExpiredBubbleSpawnedItems() { }
+
+	// RVA: 0x6137D64 Offset: 0x6133D64 VA: 0x6137D64 Slot: 24
+	public List<WeightedItemSpawnable> get_CompensationForRemovedBubblesItemsSpawnList() { }
+
+	// RVA: 0x6137A08 Offset: 0x6133A08 VA: 0x6137A08
+	private void SetupExpiredBubbleSpawns() { }
+
+	// RVA: 0x6137E4C Offset: 0x6133E4C VA: 0x6137E4C
+	private void SetupRemovedBubbleSpawns() { }
+
+	// RVA: 0x61375E8 Offset: 0x61335E8 VA: 0x61375E8
+	private NewBubbledItemsConfig GetCoreBoardBubbledItemsConfig() { }
+
+	// RVA: 0x61374B4 Offset: 0x61334B4 VA: 0x61374B4
+	private NewBubbledItemsConfig GetLiveOpsBubbledItemsConfig() { }
+
+	// RVA: 0x61381A8 Offset: 0x61341A8 VA: 0x61381A8 Slot: 25
+	public BubbleBlasterTierConfig GetBlasterTierForHc(int hcValue) { }
+
+	// RVA: 0x6138388 Offset: 0x6134388 VA: 0x6138388 Slot: 19
+	protected override void HandleDataLoaded(GameConfig data) { }
+
+	// RVA: 0x61383A4 Offset: 0x61343A4 VA: 0x61383A4
+	public void .ctor() { }
+}
+

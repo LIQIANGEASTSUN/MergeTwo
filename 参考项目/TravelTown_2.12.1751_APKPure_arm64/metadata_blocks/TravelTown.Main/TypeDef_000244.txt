@@ -1,0 +1,12 @@
+// Namespace: MergeEngine.Signal.Inventory
+public class ItemAmountInventoryBaseSignal : InventoryBaseSignal // TypeDefIndex: 244
+{
+	// Fields
+	public int NumNewProducerSlots; // 0x20
+
+	// Methods
+
+	// RVA: 0x5FF3FB4 Offset: 0x5FEFFB4 VA: 0x5FF3FB4
+	public void .ctor(int availableSlots, int inventoryCapacity, int freeTilesOnBoard, InventorySlotType type, int numNewProducerSlots) { }
+}
+

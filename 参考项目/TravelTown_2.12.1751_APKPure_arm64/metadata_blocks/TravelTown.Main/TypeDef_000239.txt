@@ -1,0 +1,41 @@
+// Namespace: MergeEngine.Signal.Items
+public class SpawnerSpawnedItemSignal // TypeDefIndex: 239
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly IItemSpawningComponent <Spawner>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly IMergeItem <SpawnerItem>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private readonly IMergeItem <SpawnedItem>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private readonly int <EmptyTiles>k__BackingField; // 0x28
+
+	// Properties
+	public IItemSpawningComponent Spawner { get; }
+	public IMergeItem SpawnerItem { get; }
+	public IMergeItem SpawnedItem { get; }
+	public int EmptyTiles { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3D88 Offset: 0x5FEFD88 VA: 0x5FF3D88
+	public IItemSpawningComponent get_Spawner() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3D90 Offset: 0x5FEFD90 VA: 0x5FF3D90
+	public IMergeItem get_SpawnerItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3D98 Offset: 0x5FEFD98 VA: 0x5FF3D98
+	public IMergeItem get_SpawnedItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3DA0 Offset: 0x5FEFDA0 VA: 0x5FF3DA0
+	public int get_EmptyTiles() { }
+
+	// RVA: 0x5FF3DA8 Offset: 0x5FEFDA8 VA: 0x5FF3DA8
+	public void .ctor(IItemSpawningComponent spawner, IMergeItem spawnerItem, IMergeItem spawnedItem, int emptyTiles) { }
+}
+

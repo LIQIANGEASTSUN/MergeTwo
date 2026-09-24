@@ -1,0 +1,51 @@
+Type: GameLogic.Player.Items.Fishing.IFishingRodFeatures
+
+Method: System.Boolean get_IsFishingRod()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IReadOnlyList`1<GameLogic.Player.Items.Production.IItemOdds> get_ItemOdds()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Board.Placement.IPlacement get_Placement()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Fishing.FishingRodRarity get_Rarity()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32[] get_FishWeightCategoryOddsOverrides()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32[] get_FishWeightCategorySizePercentagesOverrides()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_WaterDropletOverride()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

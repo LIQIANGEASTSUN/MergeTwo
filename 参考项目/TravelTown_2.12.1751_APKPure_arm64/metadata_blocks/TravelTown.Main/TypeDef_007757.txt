@@ -1,0 +1,45 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoosterService.<>c__40<TData, TResultData> // TypeDefIndex: 7757
+{
+	// Fields
+	public static readonly BoosterService.<>c__40<TData, TResultData> <>9; // 0x0
+	public static Action<Exception> <>9__40_1; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	private static void .cctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F2F3C4 Offset: 0x3F2B3C4 VA: 0x3F2F3C4
+	|-BoosterService.<>c__40<object, object>..cctor
+	|
+	|-RVA: 0x3F2F594 Offset: 0x3F2B594 VA: 0x3F2F594
+	|-BoosterService.<>c__40<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>..cctor
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F2F480 Offset: 0x3F2B480 VA: 0x3F2F480
+	|-BoosterService.<>c__40<object, object>..ctor
+	|
+	|-RVA: 0x3F2F688 Offset: 0x3F2B688 VA: 0x3F2F688
+	|-BoosterService.<>c__40<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal void <InteractWithBooster>b__40_1(Exception ex) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F2F488 Offset: 0x3F2B488 VA: 0x3F2F488
+	|-BoosterService.<>c__40<object, object>.<InteractWithBooster>b__40_1
+	|
+	|-RVA: 0x3F2F690 Offset: 0x3F2B690 VA: 0x3F2F690
+	|-BoosterService.<>c__40<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.<InteractWithBooster>b__40_1
+	*/
+}
+

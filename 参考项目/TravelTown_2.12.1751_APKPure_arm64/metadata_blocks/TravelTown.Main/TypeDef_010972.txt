@@ -1,0 +1,13 @@
+// Namespace: Framework.Core.Services.Backend.Remote.Payloads.BoardState
+[Serializable]
+public class BoardResources : BackendState // TypeDefIndex: 10972
+{
+	// Fields
+	public List<Resource> Resources; // 0x18
+
+	// Methods
+
+	// RVA: 0x6927634 Offset: 0x6923634 VA: 0x6927634
+	public void .ctor() { }
+}
+

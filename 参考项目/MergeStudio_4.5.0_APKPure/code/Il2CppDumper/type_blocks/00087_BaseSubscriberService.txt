@@ -1,0 +1,9 @@
+// Namespace: Paxie
+public class BaseSubscriberService : BaseSubscriber, IGameService // TypeDefIndex: 87
+{
+	// Methods
+
+	// RVA: 0x176E14C Offset: 0x176E14C VA: 0x176E14C
+	public void .ctor() { }
+}
+

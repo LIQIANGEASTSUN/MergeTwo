@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class CombiningSystem.<>c__DisplayClass28_0 // TypeDefIndex: 641
+{
+	// Fields
+	public VisualComponent visualComponent; // 0x10
+
+	// Methods
+
+	// RVA: 0x627E2EC Offset: 0x627A2EC VA: 0x627E2EC
+	public void .ctor() { }
+
+	// RVA: 0x627E940 Offset: 0x627A940 VA: 0x627E940
+	internal void <OnItemSlidedIn>b__0() { }
+}
+

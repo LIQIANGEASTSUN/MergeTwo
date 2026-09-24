@@ -1,0 +1,9 @@
+// Namespace: 
+public struct EntityUpdateEvent.CurrencyUpdate : IEvent // TypeDefIndex: 2659
+{
+	// Fields
+	public int SetID; // 0x0
+	public int ChangeAmount; // 0x4
+	public string Trigger; // 0x8
+}
+

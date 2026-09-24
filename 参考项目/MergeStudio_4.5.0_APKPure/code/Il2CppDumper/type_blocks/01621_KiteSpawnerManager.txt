@@ -1,0 +1,112 @@
+// Namespace: MergePuzzle
+public class KiteSpawnerManager : KiteManagerBase // TypeDefIndex: 1621
+{
+	// Fields
+	private KiteGeneralSpawnerConfigModel _kiteGeneralSpawnerConfigModel; // 0x8
+	private KiteIndividualSpawnerConfigModel _kiteIndividualSpawnerConfigModel; // 0xC
+	private static KiteSpawnerManager _instance; // 0x0
+	private Dictionary<Tuple<int, int>, KiteSpawnerElementModel> _spawnerElementConfigs; // 0x10
+	private ValueForHasSet<float, Tuple<int, int>> _capacityMultiplier; // 0x14
+	private ValueForHasSet<float, Tuple<int, int>> _rechargePriceMultiplier; // 0x18
+	private ValueForHasSet<float, Tuple<int, int>> _rechargeDurationMultiplier; // 0x1C
+	private Dictionary<string, AdaptorBase> _configAdaptors; // 0x20
+	private static readonly long WeekAnchorMs; // 0x8
+
+	// Properties
+	public static KiteSpawnerManager Instance { get; }
+
+	// Methods
+
+	// RVA: 0x18C0AC8 Offset: 0x18C0AC8 VA: 0x18C0AC8
+	public static KiteSpawnerManager get_Instance() { }
+
+	// RVA: 0x18C0B94 Offset: 0x18C0B94 VA: 0x18C0B94
+	private void .ctor() { }
+
+	[AsyncStateMachine(typeof(KiteSpawnerManager.<Init>d__11))]
+	// RVA: 0x18C0B9C Offset: 0x18C0B9C VA: 0x18C0B9C
+	public UniTask Init(KiteModelBalanceConfig balanceConfig) { }
+
+	[AsyncStateMachine(typeof(KiteSpawnerManager.<InitBoardEvent>d__12))]
+	// RVA: 0x18C0C78 Offset: 0x18C0C78 VA: 0x18C0C78
+	public UniTask InitBoardEvent(KiteEventBoardConfig eventBoardConfig, BoardEventBoardData boardData) { }
+
+	// RVA: 0x18C0D70 Offset: 0x18C0D70 VA: 0x18C0D70
+	public void InitRecurringEventPerishableSpawners(List<BalancePerishableConfigModelItem> perishableConfigModelItems, IBoardData boardData) { }
+
+	// RVA: 0x18C1640 Offset: 0x18C1640 VA: 0x18C1640
+	private void ReadBalanceChestConfig(BalanceChestConfigModel kiteConfig, BoardData boardData) { }
+
+	// RVA: 0x18C1F84 Offset: 0x18C1F84 VA: 0x18C1F84
+	private void ReadBalanceSpawnerConfig(BalanceSpawnerConfigModel kiteConfig, BoardData boardData) { }
+
+	// RVA: 0x18C2B38 Offset: 0x18C2B38 VA: 0x18C2B38
+	private void ReadBalanceProgressiveConfig(List<BalanceProgressiveConfigModel> kiteConfig) { }
+
+	// RVA: 0x18C3300 Offset: 0x18C3300 VA: 0x18C3300
+	private void ReadSpecialTaskConfig(KiteSpecialTaskConfig kiteConfig, BoardData boardData) { }
+
+	// RVA: 0x18C347C Offset: 0x18C347C VA: 0x18C347C
+	private void ReadDailyChallengeConfig(BoardData boardData) { }
+
+	// RVA: 0x18C2B3C Offset: 0x18C2B3C VA: 0x18C2B3C
+	private void CreateProgressiveAdaptors(List<BalanceProgressiveConfigModel> kiteConfig) { }
+
+	// RVA: 0x18C16AC Offset: 0x18C16AC VA: 0x18C16AC
+	private void CreateChestSpawnerConfigAdaptors(List<BalanceChestConfigModelItem> configList, BoardData boardData) { }
+
+	// RVA: 0x18C18D4 Offset: 0x18C18D4 VA: 0x18C18D4
+	private void CreatePickBoxSpawnerConfigAdaptors(List<BalancePickBoxConfigModelItem> configList, BoardData boardData) { }
+
+	// RVA: 0x18C4144 Offset: 0x18C4144 VA: 0x18C4144
+	private static List<KiteDailyChallengeDayConfig> GetActiveDayConfigList(KiteDailyChallengeConfig config) { }
+
+	// RVA: 0x18C38EC Offset: 0x18C38EC VA: 0x18C38EC
+	private void CreateDailyChallengePickBoxSpawnerConfigAdaptors(KiteDailyChallengeConfig kiteDailyChallengeConfig, BoardData boardData) { }
+
+	// RVA: 0x18C0D74 Offset: 0x18C0D74 VA: 0x18C0D74
+	private void CreatePerishableSpawnerConfigAdaptors(List<BalancePerishableConfigModelItem> configList, IBoardData boardData) { }
+
+	// RVA: 0x18C1B08 Offset: 0x18C1B08 VA: 0x18C1B08
+	private void CreateLevelBasedChestSpawnerConfigAdaptors(List<BalanceLevelBasedChestSpawnerConfigModelItem> configList, BoardData boardData) { }
+
+	// RVA: 0x18C1D54 Offset: 0x18C1D54 VA: 0x18C1D54
+	private void CreateTaskSupportChestConfigAdaptors(List<BalanceTaskSupportChestModel> configList, BoardData boardData) { }
+
+	// RVA: 0x18C2048 Offset: 0x18C2048 VA: 0x18C2048
+	private void CreateSpawnerConfigAdaptors(List<BalanceSpawnerConfigModelItem> configList, BoardData boardData) { }
+
+	// RVA: 0x18C2928 Offset: 0x18C2928 VA: 0x18C2928
+	private void CreateChargeAdaptors(List<BalanceChargeModelItem> configList) { }
+
+	// RVA: 0x18C442C Offset: 0x18C442C VA: 0x18C442C
+	private void CheckKiteConfigWithBoardData(BoardData boardData) { }
+
+	// RVA: -1 Offset: -1
+	public bool TryGetAdaptorConfig<T>(int setID, int level, out T adaptor) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x24EB924 Offset: 0x24EB924 VA: 0x24EB924
+	|-KiteSpawnerManager.TryGetAdaptorConfig<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	private bool TryAddAdaptorOnFailedAttempt<T>(int setID, int level, out T adaptor) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x24EB194 Offset: 0x24EB194 VA: 0x24EB194
+	|-KiteSpawnerManager.TryAddAdaptorOnFailedAttempt<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public bool TryGetAdaptorConfig<T>(int setID, out T spawnerAdaptor) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x24EB8B0 Offset: 0x24EB8B0 VA: 0x24EB8B0
+	|-KiteSpawnerManager.TryGetAdaptorConfig<object>
+	*/
+
+	// RVA: 0x18C49D0 Offset: 0x18C49D0 VA: 0x18C49D0
+	private static void .cctor() { }
+}
+

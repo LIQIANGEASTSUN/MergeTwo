@@ -1,0 +1,16 @@
+// Namespace: Merger.Bubbles.Model.Data
+[Serializable]
+public class BubbleData // TypeDefIndex: 7484
+{
+	// Fields
+	public int Price; // 0x10
+	public bool Bursted; // 0x14
+	public long Timestamp; // 0x18
+	public string UUID; // 0x20
+
+	// Methods
+
+	// RVA: 0x6582B74 Offset: 0x657EB74 VA: 0x6582B74
+	public void .ctor(int price, long timestamp, string uuid) { }
+}
+

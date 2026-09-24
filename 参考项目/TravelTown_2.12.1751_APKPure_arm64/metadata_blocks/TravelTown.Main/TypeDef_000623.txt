@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class HintUtil.<>c__DisplayClass5_0 // TypeDefIndex: 623
+{
+	// Fields
+	public List<string> excludeItemIds; // 0x10
+	public MergeComponent mergeAny; // 0x18
+	public IMergingConfigurationModel mergingConfigurationModel; // 0x20
+
+	// Methods
+
+	// RVA: 0x6274780 Offset: 0x6270780 VA: 0x6274780
+	public void .ctor() { }
+
+	// RVA: 0x6277AC8 Offset: 0x6273AC8 VA: 0x6277AC8
+	internal bool <TryFindMergeAnyHint>b__2(PositionComponent position) { }
+
+	// RVA: 0x6277BDC Offset: 0x6273BDC VA: 0x6277BDC
+	internal int <TryFindMergeAnyHint>b__4(MergeComponent merge) { }
+}
+

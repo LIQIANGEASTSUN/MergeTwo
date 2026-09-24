@@ -1,0 +1,24 @@
+// Namespace: Merger.Boosters.Declarations.Definitions.Interfaces
+public interface IBoosterItem : IItem, IUniqueStringKeyAsset // TypeDefIndex: 7833
+{
+	// Properties
+	public abstract TimeDurationCapability TimeDuration { get; }
+	public abstract ActivationCapability Activation { get; }
+	public abstract CooldownBlockCapability CooldownBlock { get; }
+	public abstract MergeItemCapability MergeItem { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract TimeDurationCapability get_TimeDuration();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract ActivationCapability get_Activation();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract CooldownBlockCapability get_CooldownBlock();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract MergeItemCapability get_MergeItem();
+}
+

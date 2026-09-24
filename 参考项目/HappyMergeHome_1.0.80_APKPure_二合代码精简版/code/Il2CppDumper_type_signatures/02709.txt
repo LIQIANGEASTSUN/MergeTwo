@@ -1,0 +1,981 @@
+// Namespace: 
+public class MergeManager : Manager<MergeManager> // TypeDefIndex: 2709
+{
+	// Fields
+	private Random random; // 0x10
+	public const int BOARD_WIDTH = 7;
+	public const int BOARD_HEIGHT = 9;
+	public const int BAG_CAPACITY = 5;
+	public const int BubbleCD = 60;
+	private static ClassObjectPool mergeItemPool; // 0x0
+	protected StorageDictionary<int, StorageMergeBoard> storageMergeBoardDict; // 0x14
+	protected int mergeBoadrId1; // 0x18
+	private Dictionary<int, int> mergeItemCounts; // 0x1C
+	public bool mergeItemCountsDirty; // 0x20
+	public Dictionary<int, int> _requirementData; // 0x24
+	private int[] easterLines; // 0x28
+	private int[] sealLines; // 0x2C
+	private int[] dolphinLines; // 0x30
+	private Dictionary<int, List<TableMergeItem>> productItems; // 0x34
+	private static Dictionary<MergeBoardEnum, int> _leftEmptyGridCountDic; // 0x4
+	private static Dictionary<MergeBoardEnum, int> _leftBagEmptyGridCountDic; // 0x8
+	private static Dictionary<MergeBoardEnum, int> _bagGridCountDic; // 0xC
+	public static bool IsDestroy; // 0x10
+	[CompilerGenerated]
+	private bool <IsInUnlimitedProductState>k__BackingField; // 0x38
+
+	// Properties
+	public int MergeBoardID1 { get; }
+	public StorageMergeBoard storageBoard { get; }
+	private StorageMergeUnlockItem unlockItems { get; }
+	public StorageMergeUnlockItem UnlockItems { get; }
+	private bool IsInUnlimitedProductState { get; set; }
+
+	// Methods
+
+	// RVA: 0x2B9CF2C Offset: 0x2B9CF2C VA: 0x2B9CF2C
+	public bool HasBubble(MergeBoardEnum boardId) { }
+
+	[IDTag(1)]
+	// RVA: 0x2B9D168 Offset: 0x2B9D168 VA: 0x2B9D168
+	public bool IsBubble(int index, MergeBoardEnum boardId) { }
+
+	[IDTag(0)]
+	// RVA: 0x2B9D0F4 Offset: 0x2B9D0F4 VA: 0x2B9D0F4
+	public bool IsBubble(StorageMergeItem itemStorage) { }
+
+	// RVA: 0x2B9D358 Offset: 0x2B9D358 VA: 0x2B9D358
+	public float GetOccurBubbleRate(int id) { }
+
+	// RVA: 0x2B9D484 Offset: 0x2B9D484 VA: 0x2B9D484
+	public int RandomBubbleType(int id) { }
+
+	// RVA: 0x2B9D590 Offset: 0x2B9D590 VA: 0x2B9D590
+	public void SetBoardItemBubbleType(int type, int index, MergeBoardEnum boardId, int itemId) { }
+
+	// RVA: 0x2B9D670 Offset: 0x2B9D670 VA: 0x2B9D670
+	public bool IsCanOccurBubble(int id) { }
+
+	// RVA: 0x2B9DA20 Offset: 0x2B9DA20 VA: 0x2B9DA20
+	public int GetBubbleLeftCdTime(int index, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2B9DC08 Offset: 0x2B9DC08 VA: 0x2B9DC08
+	public void RefreshBubbleInfo(bool force = False) { }
+
+	// RVA: 0x2B9DE6C Offset: 0x2B9DE6C VA: 0x2B9DE6C
+	public void RecordBubbleInfo(int id) { }
+
+	// RVA: 0x2B9E118 Offset: 0x2B9E118 VA: 0x2B9E118
+	public void AddToadyBubbuleCount() { }
+
+	// RVA: 0x2B9E194 Offset: 0x2B9E194 VA: 0x2B9E194
+	public bool TodayIsCanProductBubble(int id) { }
+
+	// RVA: 0x2B9E3F4 Offset: 0x2B9E3F4 VA: 0x2B9E3F4
+	private bool IsArrivalMaxBubbleCount(int id) { }
+
+	// RVA: 0x2B9E7B4 Offset: 0x2B9E7B4 VA: 0x2B9E7B4
+	private bool IsArrivalTodayBubbleMaxCount() { }
+
+	// RVA: 0x2B9E5D4 Offset: 0x2B9E5D4 VA: 0x2B9E5D4
+	private bool IsProductBubbleInCd() { }
+
+	// RVA: 0x2B9E8E0 Offset: 0x2B9E8E0 VA: 0x2B9E8E0
+	public int GetCreateBubbleCD() { }
+
+	// RVA: 0x2B9EABC Offset: 0x2B9EABC VA: 0x2B9EABC
+	public void DebugClearTodayBubbleInfo() { }
+
+	// RVA: 0x2B9EB18 Offset: 0x2B9EB18 VA: 0x2B9EB18
+	public bool IsHaveOpenBox(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2B9EEC8 Offset: 0x2B9EEC8 VA: 0x2B9EEC8
+	public int get_MergeBoardID1() { }
+
+	// RVA: 0x2B9DDD0 Offset: 0x2B9DDD0 VA: 0x2B9DDD0
+	public StorageMergeBoard get_storageBoard() { }
+
+	// RVA: 0x2B9D050 Offset: 0x2B9D050 VA: 0x2B9D050
+	public StorageMergeBoard GetStorageBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2B9EF1C Offset: 0x2B9EF1C VA: 0x2B9EF1C
+	private StorageMergeUnlockItem get_unlockItems() { }
+
+	// RVA: 0x2B9F02C Offset: 0x2B9F02C VA: 0x2B9F02C
+	public StorageMergeUnlockItem get_UnlockItems() { }
+
+	// RVA: 0x2B9F084 Offset: 0x2B9F084 VA: 0x2B9F084
+	public Dictionary<int, int> GetMergeItemCounts(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2B9F304 Offset: 0x2B9F304 VA: 0x2B9F304
+	public Dictionary<int, int> GetBagItemCounts(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2B9F4FC Offset: 0x2B9F4FC VA: 0x2B9F4FC
+	public Dictionary<int, int> GetVipBagItemCounts(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2B9F6F4 Offset: 0x2B9F6F4 VA: 0x2B9F6F4
+	public bool IsCompleted(Dictionary<int, int> needCounts, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2B9F9D8 Offset: 0x2B9F9D8 VA: 0x2B9F9D8
+	public bool IsEnoughCount(Dictionary<int, int> needCounts, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2B9FCB8 Offset: 0x2B9FCB8 VA: 0x2B9FCB8
+	public List<int> GetBagItemIndex(Dictionary<int, int> requirement, MergeBoardEnum boardType) { }
+
+	// RVA: 0x2BA02C4 Offset: 0x2BA02C4 VA: 0x2BA02C4
+	public List<int> GetVipBagItemIndex(Dictionary<int, int> requirement, MergeBoardEnum boardType) { }
+
+	// RVA: 0x2BA0900 Offset: 0x2BA0900 VA: 0x2BA0900
+	public List<int> GetBoardItemIndex(Dictionary<int, int> requirement, MergeBoardEnum boardType) { }
+
+	// RVA: 0x2BA0F80 Offset: 0x2BA0F80 VA: 0x2BA0F80
+	public bool ConsumeRequirement(Dictionary<int, int> requirement, MergeBoardEnum boardId, bool checkHave = True) { }
+
+	// RVA: 0x2BA35DC Offset: 0x2BA35DC VA: 0x2BA35DC Slot: 4
+	protected override void InitImmediately() { }
+
+	// RVA: 0x2BA3638 Offset: 0x2BA3638 VA: 0x2BA3638
+	public void Refresh(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BA3F3C Offset: 0x2BA3F3C VA: 0x2BA3F3C
+	protected void InitStorage() { }
+
+	// RVA: 0x2BA5060 Offset: 0x2BA5060 VA: 0x2BA5060 Slot: 5
+	public virtual void InitMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BA5960 Offset: 0x2BA5960 VA: 0x2BA5960 Slot: 6
+	public virtual void ResetMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BA5DBC Offset: 0x2BA5DBC VA: 0x2BA5DBC Slot: 7
+	public virtual void InitButterflyWorkShopMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BA61AC Offset: 0x2BA61AC VA: 0x2BA61AC Slot: 8
+	public virtual void InitSummerWatermelonMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BA659C Offset: 0x2BA659C VA: 0x2BA659C Slot: 9
+	public virtual void InitSummerWatermelonTwoMinMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BA6AD4 Offset: 0x2BA6AD4 VA: 0x2BA6AD4 Slot: 10
+	public virtual void InitSummerWatermelonTwoMaxMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BA700C Offset: 0x2BA700C VA: 0x2BA700C Slot: 11
+	public virtual void InitSummerWatermelonThreeMinMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BA7544 Offset: 0x2BA7544 VA: 0x2BA7544 Slot: 12
+	public virtual void InitSummerWatermelonThreeMaxMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BA7A7C Offset: 0x2BA7A7C VA: 0x2BA7A7C Slot: 13
+	public virtual void InitSummerWatermelonFourMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BA80AC Offset: 0x2BA80AC VA: 0x2BA80AC Slot: 14
+	public virtual void InitSummerWatermelonSixMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BA86DC Offset: 0x2BA86DC VA: 0x2BA86DC Slot: 15
+	public virtual void InitSummerWatermelonFiveMinMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BA8C14 Offset: 0x2BA8C14 VA: 0x2BA8C14 Slot: 16
+	public virtual void InitSummerWatermelonFiveMaxMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BA914C Offset: 0x2BA914C VA: 0x2BA914C Slot: 17
+	public virtual void InitSummerWatermelonSevenMinMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BA9684 Offset: 0x2BA9684 VA: 0x2BA9684 Slot: 18
+	public virtual void InitSummerWatermelonSevenMaxMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BA9BBC Offset: 0x2BA9BBC VA: 0x2BA9BBC Slot: 19
+	public virtual void InitSummerWatermelonElevenMinMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BAA0F4 Offset: 0x2BAA0F4 VA: 0x2BAA0F4 Slot: 20
+	public virtual void InitSummerWatermelonElevenMaxMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BAA62C Offset: 0x2BAA62C VA: 0x2BAA62C Slot: 21
+	public virtual void InitSummerWatermelonFourteenMinMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BAAB64 Offset: 0x2BAAB64 VA: 0x2BAAB64 Slot: 22
+	public virtual void InitSummerWatermelonFourteenMaxMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BAB09C Offset: 0x2BAB09C VA: 0x2BAB09C Slot: 23
+	public virtual void InitSummerWatermelonTwelveMergeBoard1(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BAB5BC Offset: 0x2BAB5BC VA: 0x2BAB5BC Slot: 24
+	public virtual void InitSummerWatermelonTwelveMergeBoard2(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BABADC Offset: 0x2BABADC VA: 0x2BABADC Slot: 25
+	public virtual void InitSummerWatermelonTwelveMergeBoard3(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BABFFC Offset: 0x2BABFFC VA: 0x2BABFFC Slot: 26
+	public virtual void InitSummerWatermelonTwelveMergeBoard4(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BAC51C Offset: 0x2BAC51C VA: 0x2BAC51C Slot: 27
+	public virtual void InitSummerWatermelonThirteenMergeBoard1(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BACA3C Offset: 0x2BACA3C VA: 0x2BACA3C Slot: 28
+	public virtual void InitSummerWatermelonThirteenMergeBoard2(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BACF5C Offset: 0x2BACF5C VA: 0x2BACF5C Slot: 29
+	public virtual void InitSummerWatermelonThirteenMergeBoard3(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BAD47C Offset: 0x2BAD47C VA: 0x2BAD47C Slot: 30
+	public virtual void InitSummerWatermelonThirteenMergeBoard4(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BAD99C Offset: 0x2BAD99C VA: 0x2BAD99C Slot: 31
+	public virtual void InitSummerWatermelonFifteenMergeBoard1(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BADEBC Offset: 0x2BADEBC VA: 0x2BADEBC Slot: 32
+	public virtual void InitSummerWatermelonFifteenMergeBoard2(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BAE3DC Offset: 0x2BAE3DC VA: 0x2BAE3DC Slot: 33
+	public virtual void InitSummerWatermelonFifteenMergeBoard3(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BAE8FC Offset: 0x2BAE8FC VA: 0x2BAE8FC Slot: 34
+	public virtual void InitSummerWatermelonFifteenMergeBoard4(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BAEE1C Offset: 0x2BAEE1C VA: 0x2BAEE1C Slot: 35
+	public virtual void InitSummerWatermelonSevenTeenMergeBoard1(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BAF33C Offset: 0x2BAF33C VA: 0x2BAF33C Slot: 36
+	public virtual void InitSummerWatermelonSevenTeenMergeBoard2(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BAF85C Offset: 0x2BAF85C VA: 0x2BAF85C Slot: 37
+	public virtual void InitSummerWatermelonSevenTeenMergeBoard3(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BAFD7C Offset: 0x2BAFD7C VA: 0x2BAFD7C Slot: 38
+	public virtual void InitSummerWatermelonSevenTeenMergeBoard4(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BB029C Offset: 0x2BB029C VA: 0x2BB029C Slot: 39
+	public virtual void InitSummerWatermelonNineTeenMergeBoard1(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BB07BC Offset: 0x2BB07BC VA: 0x2BB07BC Slot: 40
+	public virtual void InitSummerWatermelonNineTeenMergeBoard2(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BB0CDC Offset: 0x2BB0CDC VA: 0x2BB0CDC Slot: 41
+	public virtual void InitSummerWatermelonNineTeenMergeBoard3(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BB11FC Offset: 0x2BB11FC VA: 0x2BB11FC Slot: 42
+	public virtual void InitSummerWatermelonNineTeenMergeBoard4(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BB171C Offset: 0x2BB171C VA: 0x2BB171C Slot: 43
+	public virtual void InitSummerWatermelonNineMinMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BB1C54 Offset: 0x2BB1C54 VA: 0x2BB1C54 Slot: 44
+	public virtual void InitSummerWatermelonNineMaxMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BB218C Offset: 0x2BB218C VA: 0x2BB218C Slot: 45
+	public virtual void ReAddSummerWatermelonFourMergeBoard() { }
+
+	// RVA: 0x2BB2A4C Offset: 0x2BB2A4C VA: 0x2BB2A4C Slot: 46
+	public virtual void ReAddSummerWatermelonSixMergeBoard(int moveStep = 2) { }
+
+	// RVA: 0x2BB331C Offset: 0x2BB331C VA: 0x2BB331C Slot: 47
+	public virtual void InitSummerWatermelonEightMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BB394C Offset: 0x2BB394C VA: 0x2BB394C Slot: 48
+	public virtual void ReAddSummerWatermelonEightMergeBoard(int moveStep = 2) { }
+
+	// RVA: 0x2BB421C Offset: 0x2BB421C VA: 0x2BB421C Slot: 49
+	public virtual void InitSummerWatermelonTenMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BB4754 Offset: 0x2BB4754 VA: 0x2BB4754 Slot: 50
+	public virtual void InitMapAdventureOneMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BB4CE0 Offset: 0x2BB4CE0 VA: 0x2BB4CE0 Slot: 51
+	public virtual void InitMapAdventureTwoMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BB526C Offset: 0x2BB526C VA: 0x2BB526C Slot: 52
+	public virtual void InitSummerWatermelonSixteenMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BB57A4 Offset: 0x2BB57A4 VA: 0x2BB57A4 Slot: 53
+	public virtual void InitSummerWatermelonEighteenMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BB5CDC Offset: 0x2BB5CDC VA: 0x2BB5CDC Slot: 54
+	public virtual void InitSummerWatermelonTwentyMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BB6A30 Offset: 0x2BB6A30 VA: 0x2BB6A30 Slot: 55
+	public virtual void InitSummerWatermelonTwentyOneMergeBoard1(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BB6F50 Offset: 0x2BB6F50 VA: 0x2BB6F50 Slot: 56
+	public virtual void InitSummerWatermelonTwentyOneMergeBoard2(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BB7470 Offset: 0x2BB7470 VA: 0x2BB7470 Slot: 57
+	public virtual void InitSummerWatermelonTwentyOneMergeBoard3(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BB7990 Offset: 0x2BB7990 VA: 0x2BB7990 Slot: 58
+	public virtual void InitSummerWatermelonTwentyOneMergeBoard4(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BB7EB0 Offset: 0x2BB7EB0 VA: 0x2BB7EB0 Slot: 59
+	public virtual void InitSummerWatermelonTwentyTwoMergeBoard1(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BB83D0 Offset: 0x2BB83D0 VA: 0x2BB83D0 Slot: 60
+	public virtual void InitSummerWatermelonTwentyTwoMergeBoard2(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BB88F0 Offset: 0x2BB88F0 VA: 0x2BB88F0 Slot: 61
+	public virtual void InitSummerWatermelonTwentyTwoMergeBoard3(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BB8E10 Offset: 0x2BB8E10 VA: 0x2BB8E10 Slot: 62
+	public virtual void InitSummerWatermelonTwentyTwoMergeBoard4(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BB9330 Offset: 0x2BB9330 VA: 0x2BB9330 Slot: 63
+	public virtual void InitSummerWatermelonTwentyFourMergeBoard1(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BB9808 Offset: 0x2BB9808 VA: 0x2BB9808 Slot: 64
+	public virtual void InitSummerWatermelonTwentyFourMergeBoard2(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BB9CE0 Offset: 0x2BB9CE0 VA: 0x2BB9CE0 Slot: 65
+	public virtual void InitSummerWatermelonTwentyFourMergeBoard3(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BBA1B8 Offset: 0x2BBA1B8 VA: 0x2BBA1B8 Slot: 66
+	public virtual void InitSummerWatermelonTwentySixMergeBoard1(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BBA690 Offset: 0x2BBA690 VA: 0x2BBA690 Slot: 67
+	public virtual void InitSummerWatermelonTwentySixMergeBoard2(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BBAB68 Offset: 0x2BBAB68 VA: 0x2BBAB68 Slot: 68
+	public virtual void InitSummerWatermelonTwentySixMergeBoard3(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BBB040 Offset: 0x2BBB040 VA: 0x2BBB040 Slot: 69
+	public virtual void InitSummerWatermelonTwentySixMergeBoard4(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BBB518 Offset: 0x2BBB518 VA: 0x2BBB518 Slot: 70
+	public virtual void InitSummerWatermelonTwentyEightMergeBoard1(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BBB9F0 Offset: 0x2BBB9F0 VA: 0x2BBB9F0 Slot: 71
+	public virtual void InitSummerWatermelonTwentyEightMergeBoard2(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BBBEC8 Offset: 0x2BBBEC8 VA: 0x2BBBEC8 Slot: 72
+	public virtual void InitSummerWatermelonTwentyEightMergeBoard3(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BBC3A0 Offset: 0x2BBC3A0 VA: 0x2BBC3A0 Slot: 73
+	public virtual void InitSummerWatermelonTwentyEightMergeBoard4(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BBC878 Offset: 0x2BBC878 VA: 0x2BBC878 Slot: 74
+	public virtual void InitSummerWatermelonThirtyMergeBoard1(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BBCD50 Offset: 0x2BBCD50 VA: 0x2BBCD50 Slot: 75
+	public virtual void InitSummerWatermelonThirtyMergeBoard2(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BBD228 Offset: 0x2BBD228 VA: 0x2BBD228 Slot: 76
+	public virtual void InitSummerWatermelonThirtyMergeBoard3(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BBD700 Offset: 0x2BBD700 VA: 0x2BBD700 Slot: 77
+	public virtual void InitSummerWatermelonThirtyMergeBoard4(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BBDBD8 Offset: 0x2BBDBD8 VA: 0x2BBDBD8 Slot: 78
+	public virtual void InitSummerWatermelonThirtyTwoMergeBoard1(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BBE0B0 Offset: 0x2BBE0B0 VA: 0x2BBE0B0 Slot: 79
+	public virtual void InitSummerWatermelonThirtyTwoMergeBoard2(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BBE588 Offset: 0x2BBE588 VA: 0x2BBE588 Slot: 80
+	public virtual void InitSummerWatermelonThirtyTwoMergeBoard3(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BBEA60 Offset: 0x2BBEA60 VA: 0x2BBEA60 Slot: 81
+	public virtual void InitSummerWatermelonThirtyTwoMergeBoard4(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BBEF38 Offset: 0x2BBEF38 VA: 0x2BBEF38 Slot: 82
+	public virtual void InitSummerWatermelonThirtyFourMergeBoard1(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BBF410 Offset: 0x2BBF410 VA: 0x2BBF410 Slot: 83
+	public virtual void InitSummerWatermelonThirtyFourMergeBoard2(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BBF8E8 Offset: 0x2BBF8E8 VA: 0x2BBF8E8 Slot: 84
+	public virtual void InitSummerWatermelonThirtyFourMergeBoard3(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BBFDC0 Offset: 0x2BBFDC0 VA: 0x2BBFDC0 Slot: 85
+	public virtual void InitSummerWatermelonThirtyFourMergeBoard4(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BC0298 Offset: 0x2BC0298 VA: 0x2BC0298 Slot: 86
+	public virtual void InitSummerWatermelonTwentyFourMergeBoard4(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BC0770 Offset: 0x2BC0770 VA: 0x2BC0770 Slot: 87
+	public virtual void InitNewbieRoomMergeBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BA5818 Offset: 0x2BA5818 VA: 0x2BA5818
+	public void InitOrzginalStoreCount(StorageMergeBoard board, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BC0E74 Offset: 0x2BC0E74 VA: 0x2BC0E74
+	public int GetBoardWidth(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BC0FBC Offset: 0x2BC0FBC VA: 0x2BC0FBC
+	public int GetBoardHeight(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BC1034 Offset: 0x2BC1034 VA: 0x2BC1034
+	public int GetBoardCount(MergeBoardEnum boardId) { }
+
+	[IDTag(0)]
+	// RVA: 0x2BC10D0 Offset: 0x2BC10D0 VA: 0x2BC10D0
+	public bool IsOpen(StorageMergeItem storageMergeItem) { }
+
+	[IDTag(1)]
+	// RVA: 0x2BC114C Offset: 0x2BC114C VA: 0x2BC114C
+	public bool IsOpen(int index, MergeBoardEnum boardId) { }
+
+	[IDTag(2)]
+	// RVA: 0x2BC11EC Offset: 0x2BC11EC VA: 0x2BC11EC
+	public bool IsBox(StorageMergeItem storageMergeItem) { }
+
+	// RVA: 0x2BC1270 Offset: 0x2BC1270 VA: 0x2BC1270
+	public bool IsSurpriseBox(TableMergeItem config) { }
+
+	[IDTag(1)]
+	// RVA: 0x2BC12F0 Offset: 0x2BC12F0 VA: 0x2BC12F0
+	public bool IsActiveItem(int index, MergeBoardEnum boardId) { }
+
+	[IDTag(0)]
+	// RVA: 0x2BC138C Offset: 0x2BC138C VA: 0x2BC138C
+	public bool IsActiveItem(StorageMergeItem itemStorage) { }
+
+	[IDTag(0)]
+	// RVA: 0x2BC1400 Offset: 0x2BC1400 VA: 0x2BC1400
+	public bool IsBox(int index, MergeBoardEnum boardId) { }
+
+	[IDTag(1)]
+	// RVA: 0x2BC149C Offset: 0x2BC149C VA: 0x2BC149C
+	public bool IsBox(TableMergeItem config) { }
+
+	// RVA: 0x2BC1524 Offset: 0x2BC1524 VA: 0x2BC1524
+	public MergeItemStatus GetMergeItemStatus(StorageMergeItem storageMergeItem) { }
+
+	// RVA: 0x2B9F28C Offset: 0x2B9F28C VA: 0x2B9F28C
+	public bool IsUnlock(StorageMergeItem storageMergeItem) { }
+
+	// RVA: 0x2BC158C Offset: 0x2BC158C VA: 0x2BC158C
+	public bool IsLockWeb(int index, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BC1624 Offset: 0x2BC1624 VA: 0x2BC1624
+	public StorageMergeItem GetEmptyItem() { }
+
+	// RVA: 0x2B9D204 Offset: 0x2B9D204 VA: 0x2B9D204
+	public StorageMergeItem GetBoardItem(int index, MergeBoardEnum boardId) { }
+
+	[IDTag(1)]
+	// RVA: 0x2BC1A34 Offset: 0x2BC1A34 VA: 0x2BC1A34
+	public void SetBoardItem(int index, StorageMergeItem storageMergeItem, RefreshItemSource source, MergeBoardEnum boardId, bool isDispatchEvent = True, int oldId = -1) { }
+
+	[IDTag(0)]
+	// RVA: 0x2BA18C4 Offset: 0x2BA18C4 VA: 0x2BA18C4
+	public void SetBoardItem(int index, int id, RefreshItemSource source, MergeBoardEnum boardId, int oldIndex = -1, bool isDispatchEvent = True, int oldId = -1, string userInfo = "") { }
+
+	// RVA: 0x2BC2CF0 Offset: 0x2BC2CF0 VA: 0x2BC2CF0
+	public void SetNewBoardItem(int index, int id, int state, RefreshItemSource source, MergeBoardEnum boardId, int oldIndex = -1, bool isDispatchEvent = True, int oldId = -1, int existTime = 0) { }
+
+	// RVA: 0x2BC3598 Offset: 0x2BC3598 VA: 0x2BC3598
+	public void SetProductCount(int index, int count, MergeBoardEnum boardId) { }
+
+	[IDTag(2)]
+	// RVA: 0x2BC3648 Offset: 0x2BC3648 VA: 0x2BC3648
+	public void SetBoardItem(int index, int id, int state, RefreshItemSource source, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BC3848 Offset: 0x2BC3848 VA: 0x2BC3848
+	public void RecordProductInfo(int index, int productId, MergeBoardEnum boardId, RefreshItemSource source = 9) { }
+
+	// RVA: 0x2BC4B70 Offset: 0x2BC4B70 VA: 0x2BC4B70
+	public void RecordDropInterval(int index, int productId, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BC477C Offset: 0x2BC477C VA: 0x2BC477C
+	public void RecordMergeLineProductInfo(int index, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BC4E5C Offset: 0x2BC4E5C VA: 0x2BC4E5C
+	public int GetMergeLineProductCount(int index, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BC4FF4 Offset: 0x2BC4FF4 VA: 0x2BC4FF4
+	public int GetMergeLineProductItemId(int index, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BC5138 Offset: 0x2BC5138 VA: 0x2BC5138
+	public int GetDropIntervalOutputId(int index, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BC560C Offset: 0x2BC560C VA: 0x2BC560C
+	public void RecordTimeProductItem(int index, int id, TableMergeItem itemConfig, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BC58B4 Offset: 0x2BC58B4 VA: 0x2BC58B4
+	public List<int> GetTimeProductItems(int index, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BC59AC Offset: 0x2BC59AC VA: 0x2BC59AC
+	public void FreeTimeProductItems(int index, int id, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BC577C Offset: 0x2BC577C VA: 0x2BC577C
+	public bool IsTimeProductMaxCount(int index, TableMergeItem itemConfig, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BC5B4C Offset: 0x2BC5B4C VA: 0x2BC5B4C
+	public int GetTimeProductTimes(int index, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BC5C68 Offset: 0x2BC5C68 VA: 0x2BC5C68
+	public bool IsTimeProductInCD(int index, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BC6808 Offset: 0x2BC6808 VA: 0x2BC6808
+	public int GetTimeProductCount(int index, MergeBoardEnum boardId) { }
+
+	[IDTag(1)]
+	// RVA: 0x2BC694C Offset: 0x2BC694C VA: 0x2BC694C
+	public int GetTimeProductCd(int index, ref float percent, MergeBoardEnum boardId) { }
+
+	[IDTag(0)]
+	// RVA: 0x2BC6AE8 Offset: 0x2BC6AE8 VA: 0x2BC6AE8
+	public int GetTimeProductCd(int index, TableMergeItem tableMergeItem, ref float percent, MergeBoardEnum boardId) { }
+
+	[IDTag(1)]
+	// RVA: 0x2BC6F74 Offset: 0x2BC6F74 VA: 0x2BC6F74
+	public int GetLeftProductCount(int index, MergeBoardEnum boardId) { }
+
+	[IDTag(0)]
+	// RVA: 0x2BC72B0 Offset: 0x2BC72B0 VA: 0x2BC72B0
+	public int GetLeftProductCount(int index, TableMergeItem config, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BC7B58 Offset: 0x2BC7B58 VA: 0x2BC7B58
+	public int GetLeftProductCountInBag(int index, MergeBoardEnum boardId) { }
+
+	[IDTag(2)]
+	// RVA: 0x2BC7FE8 Offset: 0x2BC7FE8 VA: 0x2BC7FE8
+	public int GetLeftActiveTime(int index, ref float percent, MergeBoardEnum boardId) { }
+
+	[IDTag(1)]
+	// RVA: 0x2B9ED80 Offset: 0x2B9ED80 VA: 0x2B9ED80
+	public int GetLeftActiveTime(int index, MergeBoardEnum boardId) { }
+
+	[IDTag(0)]
+	// RVA: 0x2BC8188 Offset: 0x2BC8188 VA: 0x2BC8188
+	public int GetLeftActiveTime(StorageMergeItem itemStorage, TableMergeItem mergeItem, ref float percent) { }
+
+	// RVA: 0x2B9ED04 Offset: 0x2B9ED04 VA: 0x2B9ED04
+	public ActiveCostType GetActiveCostType(TableMergeItem mergeItem) { }
+
+	// RVA: 0x2BC6714 Offset: 0x2BC6714 VA: 0x2BC6714
+	public int GetTimeProductCdTime(TableMergeItem config) { }
+
+	// RVA: 0x2BC8354 Offset: 0x2BC8354 VA: 0x2BC8354
+	public int[] GetCdSpeedCost(TableMergeItem config, StorageMergeItem item) { }
+
+	// RVA: 0x2BC84DC Offset: 0x2BC84DC VA: 0x2BC84DC
+	public int GetProductCdTime(TableMergeItem config, StorageMergeItem item) { }
+
+	[IDTag(2)]
+	// RVA: 0x2BC8784 Offset: 0x2BC8784 VA: 0x2BC8784
+	public int GetLeftProductTime(int index, MergeBoardEnum boardId) { }
+
+	[IDTag(1)]
+	// RVA: 0x2BC880C Offset: 0x2BC880C VA: 0x2BC880C
+	public int GetLeftProductTime(int index, ref float percent, MergeBoardEnum boardId) { }
+
+	[IDTag(0)]
+	// RVA: 0x2BC8B98 Offset: 0x2BC8B98 VA: 0x2BC8B98
+	public int GetLeftProductTime(int index, TableMergeItem config, ref float percent, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BC7514 Offset: 0x2BC7514 VA: 0x2BC7514
+	private void ResetProductCount(int index, TableMergeItem itemConfig, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BC93C8 Offset: 0x2BC93C8 VA: 0x2BC93C8
+	public void ResumeBuildCD(StorageMergeItem boardItem) { }
+
+	// RVA: 0x2BC9554 Offset: 0x2BC9554 VA: 0x2BC9554
+	public void ResetProductCD(int index, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BC9790 Offset: 0x2BC9790 VA: 0x2BC9790
+	public void ResetActiveCD(int index, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BC98A4 Offset: 0x2BC98A4 VA: 0x2BC98A4
+	public void ResetTimeProductCD(int index, MergeBoardEnum boardId) { }
+
+	[IDTag(2)]
+	// RVA: 0x2BC9A1C Offset: 0x2BC9A1C VA: 0x2BC9A1C
+	public void RemoveBoardItem(int index, out StorageMergeItem result, string sources, MergeBoardEnum boardId, bool sendEvent = True) { }
+
+	// RVA: 0x2BC1794 Offset: 0x2BC1794 VA: 0x2BC1794
+	private void ResetStorageMergeBoardStatus(StorageMergeItem item) { }
+
+	// RVA: 0x2BC9FB8 Offset: 0x2BC9FB8 VA: 0x2BC9FB8
+	public void RemoveAllItemByType(MergeItemType itemType, MergeBoardEnum boardId, string sources) { }
+
+	// RVA: 0x2BCA9BC Offset: 0x2BCA9BC VA: 0x2BCA9BC
+	public void ReplaceEaster(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCB72C Offset: 0x2BCB72C VA: 0x2BCB72C
+	public void ReplaceSeal(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCB818 Offset: 0x2BCB818 VA: 0x2BCB818
+	public void ReplaceDolphin(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCB904 Offset: 0x2BCB904 VA: 0x2BCB904
+	public int GetProductCdByLine(int line, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCBB88 Offset: 0x2BCBB88 VA: 0x2BCBB88
+	public int GetTimeProductCdByLine(int line, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCBEA0 Offset: 0x2BCBEA0 VA: 0x2BCBEA0
+	public List<TableMergeItem> GetItemsByLine(int line, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCAAA8 Offset: 0x2BCAAA8 VA: 0x2BCAAA8
+	public void RePlaceAllItemByLine(int line, MergeBoardEnum boardId, string sources) { }
+
+	[IDTag(3)]
+	// RVA: 0x2BCA8AC Offset: 0x2BCA8AC VA: 0x2BCA8AC
+	public void RemoveBoardItem(int index, MergeBoardEnum boardId, string sources, bool sendEvent = True) { }
+
+	// RVA: 0x2BCC5B8 Offset: 0x2BCC5B8 VA: 0x2BCC5B8
+	public void RemoveMergeItem(int mergeId, string userInfo, MergeBoardEnum boardId) { }
+
+	[IDTag(1)]
+	// RVA: 0x2BCCDC8 Offset: 0x2BCCDC8 VA: 0x2BCCDC8
+	public void RemoveBoardItem(int index, MergeBoardEnum boardId, bool sendEvent = True) { }
+
+	[IDTag(0)]
+	// RVA: 0x2BCCED4 Offset: 0x2BCCED4 VA: 0x2BCCED4
+	public void RemoveBoardItem(int index, out StorageMergeItem result, MergeBoardEnum boardId, bool sendEvent = True) { }
+
+	// RVA: 0x2BCD468 Offset: 0x2BCD468 VA: 0x2BCD468
+	public bool IsBoardItemExist(int index, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCD5C4 Offset: 0x2BCD5C4 VA: 0x2BCD5C4
+	public void SwapBoardItem(int a, int b, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCD790 Offset: 0x2BCD790 VA: 0x2BCD790
+	public int FindEmptyGrid(int index, MergeBoardEnum boardId, bool ignoreSelf = False) { }
+
+	// RVA: 0x2BCDD68 Offset: 0x2BCDD68 VA: 0x2BCDD68
+	public bool MergeBoardIsFull(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCDEB4 Offset: 0x2BCDEB4 VA: 0x2BCDEB4
+	public bool MergeBoardIsFullAndCantMerge(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCE358 Offset: 0x2BCE358 VA: 0x2BCE358
+	public int GetLeftEmptyGridCount(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCE4A4 Offset: 0x2BCE4A4 VA: 0x2BCE4A4
+	public int GetBagGridCount(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCE554 Offset: 0x2BCE554 VA: 0x2BCE554
+	public int GetBuildBagGridCount(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCE604 Offset: 0x2BCE604 VA: 0x2BCE604
+	public int GetLeftBagEmptyGridCount(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCE700 Offset: 0x2BCE700 VA: 0x2BCE700
+	public int GetLeftBuildBagEmptyGridCount(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCD814 Offset: 0x2BCD814 VA: 0x2BCD814
+	public int FindEmptyGridView(int index, MergeBoardEnum boardId, bool ignoreSelf = False) { }
+
+	// RVA: 0x2BCE7FC Offset: 0x2BCE7FC VA: 0x2BCE7FC
+	public int GetSudokuEmptIndex(int m_index, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BC7E48 Offset: 0x2BC7E48 VA: 0x2BC7E48
+	public int GetBagCount(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCE980 Offset: 0x2BCE980 VA: 0x2BCE980
+	public int GetBagCapacity(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCE9F8 Offset: 0x2BCE9F8 VA: 0x2BCE9F8
+	public int GetBuildingBagCapacity(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCEC74 Offset: 0x2BCEC74 VA: 0x2BCEC74
+	public bool IsBagFull(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCECF8 Offset: 0x2BCECF8 VA: 0x2BCECF8
+	public int GetLeftBagCount(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCEDF8 Offset: 0x2BCEDF8 VA: 0x2BCEDF8
+	public int GetEmptBoardItemCount(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCEFB0 Offset: 0x2BCEFB0 VA: 0x2BCEFB0
+	public int GetStorBoardItemCount(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BC7F00 Offset: 0x2BC7F00 VA: 0x2BC7F00
+	public StorageMergeItem GetBagItem(int index, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCF068 Offset: 0x2BCF068 VA: 0x2BCF068
+	public void AddBagItem(StorageMergeItem storageMergeItem, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCF42C Offset: 0x2BCF42C VA: 0x2BCF42C
+	public int GetBuildingBagCount(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCF4E4 Offset: 0x2BCF4E4 VA: 0x2BCF4E4
+	public StorageMergeItem GetBuildingBagItem(int index, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCF5CC Offset: 0x2BCF5CC VA: 0x2BCF5CC
+	public void AddBuildingBagItem(StorageMergeItem storageMergeItem, MergeBoardEnum boardId) { }
+
+	[IDTag(0)]
+	// RVA: 0x2BCF804 Offset: 0x2BCF804 VA: 0x2BCF804
+	public void RemoveBagItem(int index, out StorageMergeItem result, MergeBoardEnum boardId) { }
+
+	[IDTag(0)]
+	// RVA: 0x2BCFC74 Offset: 0x2BCFC74 VA: 0x2BCFC74
+	public void RemoveBuildingBagItem(int index, out StorageMergeItem result, MergeBoardEnum boardId) { }
+
+	[IDTag(1)]
+	// RVA: 0x2BA33D4 Offset: 0x2BA33D4 VA: 0x2BA33D4
+	public void RemoveBagItem(int index, MergeBoardEnum boardId) { }
+
+	[IDTag(1)]
+	// RVA: 0x2BA34D8 Offset: 0x2BA34D8 VA: 0x2BA34D8
+	public void RemoveBuildingBagItem(int index, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCFF00 Offset: 0x2BCFF00 VA: 0x2BCFF00
+	public void UseBgItem(int index, int emptyIndex, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD0904 Offset: 0x2BD0904 VA: 0x2BD0904
+	public void UseBuildingBgItem(int index, int emptyIndex, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD078C Offset: 0x2BD078C VA: 0x2BD078C
+	private void SendUseBagBi(int id) { }
+
+	// RVA: 0x2BCF2A0 Offset: 0x2BCF2A0 VA: 0x2BCF2A0
+	private void SendMovetoBagBi(int id) { }
+
+	// RVA: 0x2BD0A54 Offset: 0x2BD0A54 VA: 0x2BD0A54
+	public int GetRewardCount(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD0B0C Offset: 0x2BD0B0C VA: 0x2BD0B0C
+	public StorageMergeItem GetRewardItem(int index, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD0BF4 Offset: 0x2BD0BF4 VA: 0x2BD0BF4
+	public void AddRewardItem(StorageMergeItem storageMergeItem, MergeBoardEnum boardId, int cout = 1, bool inFirst = False) { }
+
+	[IDTag(0)]
+	// RVA: 0x2BD0E98 Offset: 0x2BD0E98 VA: 0x2BD0E98
+	public void RemoveRewardItem(int index, out StorageMergeItem result, MergeBoardEnum boardId, bool isSendEvent = True) { }
+
+	[IDTag(1)]
+	// RVA: 0x2BD1134 Offset: 0x2BD1134 VA: 0x2BD1134
+	public void RemoveRewardItem(int index, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD1240 Offset: 0x2BD1240 VA: 0x2BD1240
+	public bool IsShowedItemId(int id) { }
+
+	// RVA: 0x2BD1348 Offset: 0x2BD1348 VA: 0x2BD1348
+	public bool IsItemGetGalleryAwards(int id) { }
+
+	// RVA: 0x2BD1414 Offset: 0x2BD1414 VA: 0x2BD1414
+	public void RecordItemGalleryAwards(int id) { }
+
+	// RVA: 0x2BC2354 Offset: 0x2BC2354 VA: 0x2BC2354
+	public void RecordGetItem(StorageMergeItem item, int index = -1) { }
+
+	// RVA: 0x2BA4BE0 Offset: 0x2BA4BE0 VA: 0x2BA4BE0
+	public void InitRecordGetItems(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD153C Offset: 0x2BD153C VA: 0x2BD153C
+	public bool IsUnLockMergeItem(int id) { }
+
+	// RVA: 0x2BD1608 Offset: 0x2BD1608 VA: 0x2BD1608
+	public void RemoveUnLockMergeItem(int id) { }
+
+	// RVA: 0x2BD17E0 Offset: 0x2BD17E0 VA: 0x2BD17E0
+	public void AddUnlockMergeItem(int id) { }
+
+	// RVA: 0x2BD190C Offset: 0x2BD190C VA: 0x2BD190C
+	public bool IsGalleryShowRedPoint() { }
+
+	// RVA: 0x2BC204C Offset: 0x2BC204C VA: 0x2BC204C
+	public void AddShowedItemId(int id) { }
+
+	// RVA: 0x2BD1AE0 Offset: 0x2BD1AE0 VA: 0x2BD1AE0
+	public bool IsUnlockLines(int mergeLineID) { }
+
+	// RVA: 0x2BD1BE8 Offset: 0x2BD1BE8 VA: 0x2BD1BE8
+	public int GetMaxOutputAmount(TableMergeItem itemConfig) { }
+
+	// RVA: 0x2BC7AF0 Offset: 0x2BC7AF0 VA: 0x2BC7AF0
+	public int GetOutputAmount(TableMergeItem itemConfig) { }
+
+	// RVA: 0x2BC5AE4 Offset: 0x2BC5AE4 VA: 0x2BC5AE4
+	public int GetTimeMaxOutputAmount(TableMergeItem itemConfig) { }
+
+	// RVA: 0x2BC67A0 Offset: 0x2BC67A0 VA: 0x2BC67A0
+	public int GetTimeOutputAmount(TableMergeItem itemConfig) { }
+
+	// RVA: 0x2BC8F60 Offset: 0x2BC8F60 VA: 0x2BC8F60
+	public void RefreshMaxStoreCount(int id, int index, TableMergeItem itemConfig, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD1C50 Offset: 0x2BD1C50 VA: 0x2BD1C50
+	public void RefreshInCdTime(int id, int index, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD1F2C Offset: 0x2BD1F2C VA: 0x2BD1F2C
+	public void SpeedUpOneItem(StorageMergeItem item, ulong time) { }
+
+	// RVA: 0x2BD206C Offset: 0x2BD206C VA: 0x2BD206C
+	public void SpeedUpAllItem(ulong time, MergeBoardEnum boardId) { }
+
+	[IDTag(0)]
+	// RVA: 0x2BC0B60 Offset: 0x2BC0B60 VA: 0x2BC0B60
+	public void SetOrginalStoreCount(int id, int index, MergeBoardEnum boardId, int extra = 0) { }
+
+	[IDTag(2)]
+	// RVA: 0x2BD21BC Offset: 0x2BD21BC VA: 0x2BD21BC
+	public void SetOrginalStoreCount(StorageMergeItem item, bool isUseRv = False) { }
+
+	// RVA: 0x2BD240C Offset: 0x2BD240C VA: 0x2BD240C
+	public void SetTimeProductStoreCount(StorageMergeItem item, bool isUseRv = False) { }
+
+	[IDTag(1)]
+	// RVA: 0x2BC2AFC Offset: 0x2BC2AFC VA: 0x2BC2AFC
+	public void SetOrginalStoreCount(StorageMergeItem item, RefreshItemSource source, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD1DC0 Offset: 0x2BD1DC0 VA: 0x2BD1DC0
+	public bool IsInStoreCd(int id, int index, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD25E4 Offset: 0x2BD25E4 VA: 0x2BD25E4
+	public void AddMergeCount(int id, int newId, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD283C Offset: 0x2BD283C VA: 0x2BD283C
+	public int GetMergeCount(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD28B4 Offset: 0x2BD28B4 VA: 0x2BD28B4
+	public void AddFinishTaskCount(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD293C Offset: 0x2BD293C VA: 0x2BD293C
+	public int GetFinishTaskCount(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD29B4 Offset: 0x2BD29B4 VA: 0x2BD29B4
+	public void AddDecoCount(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD2A3C Offset: 0x2BD2A3C VA: 0x2BD2A3C
+	public int GetDecoCount(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD2AB4 Offset: 0x2BD2AB4 VA: 0x2BD2AB4
+	public void ClearMergeCount(int id, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD2C00 Offset: 0x2BD2C00 VA: 0x2BD2C00
+	public void PauseAllCdTime(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD316C Offset: 0x2BD316C VA: 0x2BD316C
+	public void ResumAllCdTime(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD2EF0 Offset: 0x2BD2EF0 VA: 0x2BD2EF0
+	public void PauseCd(int index, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BCFFFC Offset: 0x2BCFFFC VA: 0x2BCFFFC
+	public void ResumeCd(int index, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD3278 Offset: 0x2BD3278 VA: 0x2BD3278
+	public bool IsCanSold(int id) { }
+
+	// RVA: 0x2BD3378 Offset: 0x2BD3378 VA: 0x2BD3378
+	private void FindAllProductBoardItem(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BA4058 Offset: 0x2BA4058 VA: 0x2BA4058
+	public void ReMapBoardOldId(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BA42BC Offset: 0x2BA42BC VA: 0x2BA42BC
+	public void ReMapBagOldId(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BA4520 Offset: 0x2BA4520 VA: 0x2BA4520
+	public void ReMapTempStorageBagOldId(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BA4784 Offset: 0x2BA4784 VA: 0x2BA4784
+	protected void RemoveDeleteStoreageId() { }
+
+	// RVA: 0x2BD3A48 Offset: 0x2BD3A48 VA: 0x2BD3A48
+	public int GetBoardItemCountByType(MergeItemStatus status, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD3BE4 Offset: 0x2BD3BE4 VA: 0x2BD3BE4
+	public void ClearMerBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD3C9C Offset: 0x2BD3C9C VA: 0x2BD3C9C
+	public static int LeftEmptyGridCount(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD3E3C Offset: 0x2BD3E3C VA: 0x2BD3E3C
+	public static int LeftBagEmptyGridCount(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD3FDC Offset: 0x2BD3FDC VA: 0x2BD3FDC
+	public static int LeftBuildBagEmptyGridCount(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD40BC Offset: 0x2BD40BC VA: 0x2BD40BC
+	public static int BagGridCount(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD425C Offset: 0x2BD425C VA: 0x2BD425C
+	public static int BuildBagGridCount(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD433C Offset: 0x2BD433C VA: 0x2BD433C
+	private void OnDestroy() { }
+
+	// RVA: 0x2BD46AC Offset: 0x2BD46AC VA: 0x2BD46AC
+	public Dictionary<int, int> GetCodeCountMap(bool includeBoard, bool includeCache, bool includeBag, bool ignoreOrder = False) { }
+
+	// RVA: 0x2BD50BC Offset: 0x2BD50BC VA: 0x2BD50BC
+	public Dictionary<int, List<int>> GetCodeLevelMap(bool isDescending, bool includeBoard, bool includeCache, bool includeBag, int filterId = -1) { }
+
+	// RVA: 0x2BD5AA8 Offset: 0x2BD5AA8 VA: 0x2BD5AA8
+	public bool IsEatAllFood(StorageMergeItem storageMergeItem) { }
+
+	// RVA: 0x2BD5D18 Offset: 0x2BD5D18 VA: 0x2BD5D18
+	public void BuildEat(StorageMergeItem storageMergeItem, int mergeId) { }
+
+	// RVA: 0x2BD5ED4 Offset: 0x2BD5ED4 VA: 0x2BD5ED4
+	public float GetEatProgress(StorageMergeItem storageMergeItem, TableMergeItem mergeItem) { }
+
+	// RVA: 0x2BD6048 Offset: 0x2BD6048 VA: 0x2BD6048
+	public bool IsBuildEat(StorageMergeItem storageMergeItem, int mergeId) { }
+
+	// RVA: 0x2BD6124 Offset: 0x2BD6124 VA: 0x2BD6124
+	public void SendMergeBoardBI(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD6438 Offset: 0x2BD6438 VA: 0x2BD6438
+	public MergeManager.MergeBoardDataStruct GetMergeBoardDataStruct(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD6D38 Offset: 0x2BD6D38 VA: 0x2BD6D38
+	public void ResetBuilding(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD7288 Offset: 0x2BD7288 VA: 0x2BD7288
+	public void AddUnlimitedProductTime(long time, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD73F4 Offset: 0x2BD73F4 VA: 0x2BD73F4
+	public long UnlimitedProductLeftTime(MergeBoardEnum boardId) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2BD7524 Offset: 0x2BD7524 VA: 0x2BD7524
+	private bool get_IsInUnlimitedProductState() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2BD752C Offset: 0x2BD752C VA: 0x2BD752C
+	private void set_IsInUnlimitedProductState(bool value) { }
+
+	// RVA: 0x2BC496C Offset: 0x2BC496C VA: 0x2BC496C
+	public bool IsInUnlimitedProduct(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD7534 Offset: 0x2BD7534 VA: 0x2BD7534
+	public string GetUnlimitedProductTimeStr(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD7604 Offset: 0x2BD7604 VA: 0x2BD7604
+	public bool RemoveBoardItems(MergeBoardEnum boardId, List<int> items, bool isSendEvent = True, string sources = "") { }
+
+	// RVA: 0x2BD5CB0 Offset: 0x2BD5CB0 VA: 0x2BD5CB0
+	public int[] GetProduceCost(TableMergeItem config) { }
+
+	// RVA: 0x2BD7FC4 Offset: 0x2BD7FC4 VA: 0x2BD7FC4
+	public void AdaptBoard() { }
+
+	// RVA: 0x2BD8158 Offset: 0x2BD8158 VA: 0x2BD8158
+	public void RemoveBoard(MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD82DC Offset: 0x2BD82DC VA: 0x2BD82DC
+	public bool HasIceCube(MergeBoardEnum boardId) { }
+
+	[IDTag(1)]
+	// RVA: 0x2BD8474 Offset: 0x2BD8474 VA: 0x2BD8474
+	public bool IsIceCube(int index, MergeBoardEnum boardId) { }
+
+	[IDTag(0)]
+	// RVA: 0x2BD8400 Offset: 0x2BD8400 VA: 0x2BD8400
+	public bool IsIceCube(StorageMergeItem itemStorage) { }
+
+	// RVA: 0x2BD2D0C Offset: 0x2BD2D0C VA: 0x2BD2D0C
+	public int GetIceCubeLeftTime(int index, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD8510 Offset: 0x2BD8510 VA: 0x2BD8510
+	public float GetIceCubeLeftTimePercent(int index, MergeBoardEnum boardId) { }
+
+	// RVA: 0x2BD85C8 Offset: 0x2BD85C8 VA: 0x2BD85C8
+	public void RecordIceCubeInfo(int id) { }
+
+	// RVA: 0x2BD8708 Offset: 0x2BD8708 VA: 0x2BD8708
+	public bool IsProductIceCubeInCd() { }
+
+	// RVA: 0x2BD88DC Offset: 0x2BD88DC VA: 0x2BD88DC
+	public void .ctor() { }
+
+	// RVA: 0x2BD8BA8 Offset: 0x2BD8BA8 VA: 0x2BD8BA8
+	private static void .cctor() { }
+
+	// RVA: 0x2BD8D84 Offset: 0x2BD8D84 VA: 0x2BD8D84
+	public void <>iFixBaseProxy_InitImmediately() { }
+}
+

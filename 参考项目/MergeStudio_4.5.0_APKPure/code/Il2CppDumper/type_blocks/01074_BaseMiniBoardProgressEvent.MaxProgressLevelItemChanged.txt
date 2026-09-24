@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BaseMiniBoardProgressEvent.MaxProgressLevelItemChanged : IEvent // TypeDefIndex: 1074
+{
+	// Fields
+	public int MaxLevel; // 0x0
+}
+

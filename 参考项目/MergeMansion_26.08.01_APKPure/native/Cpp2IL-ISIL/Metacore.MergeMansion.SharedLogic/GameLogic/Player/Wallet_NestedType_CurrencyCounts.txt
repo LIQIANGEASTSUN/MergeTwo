@@ -1,0 +1,203 @@
+Type: GameLogic.Player.Wallet+CurrencyCounts
+
+Method: System.Func`1<System.Int64> get_Soft()
+
+Disassembly:
+	0x0358E2FC ADRP X21, 0x279B000
+	0x0358E300 ADRP X22, 0x2147000
+
+ISIL:
+	001 Move X0, [X0]
+	002 Return X0
+
+Method: System.Void set_Soft(System.Func`1<System.Int64> value)
+
+Disassembly:
+	0x0358E304 MOV X20, X1
+	0x0358E308 LDRB W8, [X21 + 0x7DB]
+
+ISIL:
+	001 Move [X0], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Action`1<System.Int64> get_SoftSetter()
+
+Disassembly:
+	0x0358E30C LDR X22, [X22 + 0xE60]
+	0x0358E310 MOV X19, X0
+
+ISIL:
+	001 Move X0, [X0+8]
+	002 Return X0
+
+Method: System.Void set_SoftSetter(System.Action`1<System.Int64> value)
+
+Disassembly:
+	0x0358E314 TBNZ X8, 0x0, 0x358E344
+	0x0358E318 ADRP X0, 0x215B000
+
+ISIL:
+	001 Move [X0+8], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Func`1<System.Int64> get_Hard()
+
+Disassembly:
+	0x0358E31C LDR X0, [X0 + 0x580]
+	0x0358E320 BL 0x239B8E4
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_Hard(System.Func`1<System.Int64> value)
+
+Disassembly:
+	0x0358E324 ADRP X0, 0x2146000
+	0x0358E328 LDR X0, [X0 + 0xD60]
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Action`1<System.Int64> get_HardSetter()
+
+Disassembly:
+	0x0358E32C BL 0x239B8E4
+	0x0358E330 ADRP X0, 0x2147000
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_HardSetter(System.Action`1<System.Int64> value)
+
+Disassembly:
+	0x0358E334 LDR X0, [X0 + 0xE60]
+	0x0358E338 BL 0x239B8E4
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Int64 get_Total()
+
+Disassembly:
+	0x0358C8C8 BL 0x27FED04
+	0x0358C8CC MOV X20, X0
+	0x0358C8D0 CBZ X0, 0x358C8E8
+	0x0358C8D4 LDR X8, [X19]
+	0x0358C8D8 MOV X0, X20
+	0x0358C8DC LDR X1, [X8 + 0x40]
+	0x0358C8E0 BL 0x239BA68
+	0x0358C8E4 CBZ X0, 0x358CA1C
+	0x0358C8E8 LDR W8, [X19 + 0x18]
+	0x0358C8EC CMP W8, 0x2
+	0x0358C8F0 B.LS 0x358CA18
+	0x0358C8F4 ADRP X22, 0x21A3000
+	0x0358C8F8 MOV X0, X19
+	0x0358C8FC MOV X1, X20
+	0x0358C900 LDR X22, [X22 + 0xE38]
+	0x0358C904 STR X20, [X0 + 0x30]!
+	0x0358C908 BL 0x239B888
+	0x0358C90C LDR X0, [X22]
+	0x0358C910 LDR X1, [X21]
+	0x0358C914 BL 0x27FED04
+	0x0358C918 MOV X20, X0
+	0x0358C91C CBZ X0, 0x358C934
+	0x0358C920 LDR X8, [X19]
+	0x0358C924 MOV X0, X20
+
+ISIL:
+	001 Subtract X31, X31, 32
+	002 Move [X31+16], X30
+	003 Move [X31+24], X19
+	004 Move X8, [X0]
+	005 Compare X8, 0
+	006 JumpIfEqual {28}
+	007 Move X19, X0
+	008 Move X9, [X8+24]
+	009 Move X0, [X8+64]
+	010 Move X2, [X8+40]
+	011 Add X1, X31, 8
+	012 NotImplemented "Instruction BLR not yet implemented."
+	013 Move X8, [X19+16]
+	014 Compare X8, 0
+	015 JumpIfEqual {28}
+	016 Move X9, [X8+24]
+	017 Move X0, [X8+64]
+	018 Add X1, X31, 8
+	019 Move X2, [X8+40]
+	020 Move X19, [X31+8]
+	021 NotImplemented "Instruction BLR not yet implemented."
+	022 Move X8, [X31+8]
+	023 Add X0, X8, X19
+	024 Move X30, [X31+16]
+	025 Move X19, [X31+24]
+	026 Add X31, X31, 32
+	027 Return X0
+	028 Call 0x239FB90
+
+Method: System.Void .ctor(System.Func`1<System.Int64> soft, System.Func`1<System.Int64> hard, System.Action`1<System.Int64> softSet, System.Action`1<System.Int64> hardSet)
+
+Disassembly:
+	0x0358CAC4 LDR X0, [X0 + 0xE10]
+	0x0358CAC8 BL 0x239B8E4
+	0x0358CACC ADRP X0, 0x21A3000
+	0x0358CAD0 LDR X0, [X0 + 0xE08]
+	0x0358CAD4 BL 0x239B8E4
+	0x0358CAD8 ADRP X0, 0x21A3000
+	0x0358CADC LDR X0, [X0 + 0xE50]
+	0x0358CAE0 BL 0x239B8E4
+	0x0358CAE4 MOVZ W8, 0x1
+	0x0358CAE8 STRB W8, [X20 + 0x7C8]
+	0x0358CAEC LDR X0, [X19]
+	0x0358CAF0 ADRP X20, 0x21A3000
+	0x0358CAF4 ADRP X21, 0x21A3000
+	0x0358CAF8 ADRP X19, 0x2162000
+	0x0358CAFC LDR X20, [X20 + 0xE50]
+	0x0358CB00 LDR X21, [X21 + 0xE10]
+	0x0358CB04 LDR W8, [X0 + 0xE4]
+	0x0358CB08 LDR X19, [X19 + 0x990]
+	0x0358CB0C CBNZ W8, 0x358CB14
+	0x0358CB10 BL 0x239BA64
+	0x0358CB14 LDR X0, [X20]
+	0x0358CB18 LDR X1, [X21]
+	0x0358CB1C BL 0x27FED04
+	0x0358CB20 LDR X8, [X19]
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31+16], X22
+	003 Move [X31+24], X21
+	004 Move [X31+32], X20
+	005 Move [X31+40], X19
+	006 Move X19, X4
+	007 Move X20, X3
+	008 Move X21, X2
+	009 Move X22, X0
+	010 Move [X0], X1
+	011 Call 0x239F888
+	012 Move X0, X22
+	013 Move X1, X21
+	014 Move [X0+16], X21
+	015 Call 0x239F888
+	016 Move X0, X22
+	017 Move X1, X20
+	018 Move [X0+8], X20
+	019 Call 0x239F888
+	020 Move [X22+24], X19
+	021 Move X0, X22
+	022 Move X1, X19
+	023 Move X20, [X31+32]
+	024 Move X19, [X31+40]
+	025 Move X22, [X31+16]
+	026 Move X21, [X31+24]
+	027 Move X30, [X31+48]
+	028 Call 0x239F888
+	029 Return 
+

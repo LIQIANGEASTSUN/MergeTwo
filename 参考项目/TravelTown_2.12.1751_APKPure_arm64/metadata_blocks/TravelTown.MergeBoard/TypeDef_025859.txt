@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardChangeStateOperationDataCreator.<>c // TypeDefIndex: 25859
+{
+	// Fields
+	public static readonly BoardChangeStateOperationDataCreator.<>c <>9; // 0x0
+	public static Func<Entity, bool> <>9__2_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x6A89D90 Offset: 0x6A85D90 VA: 0x6A89D90
+	private static void .cctor() { }
+
+	// RVA: 0x6A89DF8 Offset: 0x6A85DF8 VA: 0x6A89DF8
+	public void .ctor() { }
+
+	// RVA: 0x6A89E00 Offset: 0x6A85E00 VA: 0x6A89E00
+	internal bool <CreateOperationData>b__2_0(Entity entity) { }
+}
+

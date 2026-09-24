@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ActiveOrdersBubbleDropProbabilityModifier.<>c__DisplayClass13_0 // TypeDefIndex: 7459
+{
+	// Fields
+	public <>f__AnonymousType4<string, List<IMergeGraphItem>> obj; // 0x10
+
+	// Methods
+
+	// RVA: 0x657D138 Offset: 0x6579138 VA: 0x657D138
+	public void .ctor() { }
+
+	// RVA: 0x657D140 Offset: 0x6579140 VA: 0x657D140
+	internal OrderData <get_Objectives>b__4(IMergeGraphItem graph) { }
+}
+

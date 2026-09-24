@@ -1,0 +1,36 @@
+Type: GameLogic.Player.BoardInventory+<>c__DisplayClass38_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0352ECBC ADD X8, X8, X9, 0x4, LSL
+	0x0352ECC0 ADD X0, X8, 0x138
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <GetItemIndex>b__0(GameLogic.Player.BoardInventory+InventoryEntry entry)
+
+Disassembly:
+	0x03532930 CMP X11, X1
+	0x03532934 B.EQ 0x3532954
+	0x03532938 SUBS X9, X9, 0x1
+	0x0353293C ADD X10, X10, 0x10
+	0x03532940 B.NE 0x353292C
+	0x03532944 MOV X0, X19
+	0x03532948 MOV W2, W31
+	0x0353294C BL 0x23D527C
+
+ISIL:
+	001 Compare X1, 0
+	002 JumpIfEqual {8}
+	003 Move X8, [X1+16]
+	004 Move X9, [X0+16]
+	005 NotImplemented "Instruction CMP not yet implemented."
+	006 NotImplemented "Instruction CSET not yet implemented."
+	007 Return X0
+	008 Move [X31-16], X30
+	009 Call 0x239FB90
+

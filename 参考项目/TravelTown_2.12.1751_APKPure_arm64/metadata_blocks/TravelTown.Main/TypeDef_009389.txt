@@ -1,0 +1,9 @@
+// Namespace: Merger.Game.Signal
+public class MoveItemQueueToBackSignal // TypeDefIndex: 9389
+{
+	// Methods
+
+	// RVA: 0x676BE38 Offset: 0x6767E38 VA: 0x676BE38
+	public void .ctor() { }
+}
+

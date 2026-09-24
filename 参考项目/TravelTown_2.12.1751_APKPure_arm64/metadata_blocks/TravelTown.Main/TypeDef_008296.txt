@@ -1,0 +1,9 @@
+// Namespace: Merger.Game.ViewModel
+public class MergeCheckPopupViewModel : ItemViewModelBase // TypeDefIndex: 8296
+{
+	// Methods
+
+	// RVA: 0x662DC94 Offset: 0x6629C94 VA: 0x662DC94
+	public void .ctor() { }
+}
+

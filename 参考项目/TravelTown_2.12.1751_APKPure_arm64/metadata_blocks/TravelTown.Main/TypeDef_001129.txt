@@ -1,0 +1,13 @@
+// Namespace: MergeEngine.ECS.Components.Board
+[Serializable]
+public class SerializedBoardQueueComponent // TypeDefIndex: 1129
+{
+	// Fields
+	public List<string> ItemsIds; // 0x10
+
+	// Methods
+
+	// RVA: 0x6904D78 Offset: 0x6900D78 VA: 0x6904D78
+	public void .ctor() { }
+}
+

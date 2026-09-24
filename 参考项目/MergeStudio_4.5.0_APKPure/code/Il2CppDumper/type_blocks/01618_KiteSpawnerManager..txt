@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class KiteSpawnerManager.<>c__DisplayClass28_0 // TypeDefIndex: 1618
+{
+	// Fields
+	public string key; // 0x8
+
+	// Methods
+
+	// RVA: 0x18C4424 Offset: 0x18C4424 VA: 0x18C4424
+	public void .ctor() { }
+
+	// RVA: 0x18C4C14 Offset: 0x18C4C14 VA: 0x18C4C14
+	internal bool <CreateSpawnerConfigAdaptors>b__0(BalanceSpawnerConfigModelItem c) { }
+}
+

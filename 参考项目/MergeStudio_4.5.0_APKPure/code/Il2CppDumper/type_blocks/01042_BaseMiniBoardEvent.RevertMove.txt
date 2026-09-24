@@ -1,0 +1,8 @@
+// Namespace: 
+public struct BaseMiniBoardEvent.RevertMove : IEvent // TypeDefIndex: 1042
+{
+	// Fields
+	public MiniBoardItemController Item; // 0x0
+	public bool ApplyScaleDownAnim; // 0x4
+}
+

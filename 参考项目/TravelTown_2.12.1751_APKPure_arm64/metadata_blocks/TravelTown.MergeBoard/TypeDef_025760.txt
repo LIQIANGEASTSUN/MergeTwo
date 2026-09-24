@@ -1,0 +1,23 @@
+// Namespace: Merger.MergeBoard.Systems
+public class MergeSystem : ISystem // TypeDefIndex: 25760
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x10
+	[Inject]
+	private IEntityFactory _entityFactory; // 0x18
+	[Inject]
+	private MergeItemCombinerValidator _mergeItemCombinerValidator; // 0x20
+
+	// Methods
+
+	// RVA: 0x6A71228 Offset: 0x6A6D228 VA: 0x6A71228 Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A7170C Offset: 0x6A6D70C VA: 0x6A7170C
+	private void PerformMerge(ValueTuple<Entity, BoardTilePositionComponent, MergeComponent, IdComponent> entity, ValueTuple<Entity, BoardTilePositionComponent, MergeComponent, IdComponent> otherEntity, TickContext context) { }
+
+	// RVA: 0x6A71B4C Offset: 0x6A6DB4C VA: 0x6A71B4C
+	public void .ctor() { }
+}
+

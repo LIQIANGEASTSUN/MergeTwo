@@ -1,0 +1,17 @@
+// Namespace: 
+private class ItemChainManager.SpawnerPointsQuery : IComparable<ItemChainManager.SpawnerPointsQuery> // TypeDefIndex: 1720
+{
+	// Fields
+	public int Location; // 0x8
+	public int Index; // 0xC
+	public int Points; // 0x10
+
+	// Methods
+
+	// RVA: 0x190F2E4 Offset: 0x190F2E4 VA: 0x190F2E4 Slot: 4
+	public int CompareTo(ItemChainManager.SpawnerPointsQuery other) { }
+
+	// RVA: 0x190B648 Offset: 0x190B648 VA: 0x190B648
+	public void .ctor() { }
+}
+

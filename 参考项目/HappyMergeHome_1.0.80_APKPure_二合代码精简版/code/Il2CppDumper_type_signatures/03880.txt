@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class SummerWatermelonModel.<>c__DisplayClass153_1 // TypeDefIndex: 3880
+{
+	// Fields
+	public SummerWatermelonTwentyThreePackageConfig config; // 0x8
+
+	// Methods
+
+	// RVA: 0x2F96EA8 Offset: 0x2F96EA8 VA: 0x2F96EA8
+	public void .ctor() { }
+
+	// RVA: 0x2F96EB0 Offset: 0x2F96EB0 VA: 0x2F96EB0
+	internal bool <PurchasePackageSuccess>b__1(SummerWatermelonTwentyThreePackageReward x) { }
+}
+

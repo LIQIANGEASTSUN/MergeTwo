@@ -1,0 +1,16 @@
+// Namespace: MergeEngine.ECS.Systems.Items
+[SoundBoundSignal("Cooldown")]
+public class CooldownLifecycleChangeSignal : ISpecificSound // TypeDefIndex: 955
+{
+	// Fields
+	private readonly string _audioKey; // 0x10
+
+	// Methods
+
+	// RVA: 0x678CF40 Offset: 0x6788F40 VA: 0x678CF40
+	public void .ctor(bool alive) { }
+
+	// RVA: 0x678CFC8 Offset: 0x6788FC8 VA: 0x678CFC8 Slot: 4
+	public SoundArguments GetSoundArguments() { }
+}
+

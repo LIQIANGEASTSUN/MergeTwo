@@ -1,0 +1,107 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public class CollectableComponent : ComponentBase<CollectableItemCapability>, ICollectable, ICollectableComponent // TypeDefIndex: 1051
+{
+	// Fields
+	[CompilerGenerated]
+	private bool <Collected>k__BackingField; // 0x28
+	public bool DroppedOnInventory; // 0x29
+	[CompilerGenerated]
+	private readonly PlayerResourceEnum <Resource>k__BackingField; // 0x2C
+	[CompilerGenerated]
+	private int <Amount>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private readonly bool <CollectWhenDroppedOnInventory>k__BackingField; // 0x34
+	[CompilerGenerated]
+	private readonly ClientAsset[] <Assets>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private readonly AfterCollectAnimation <AfterCollectAnimation>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private bool <ShouldRemoveFromBoard>k__BackingField; // 0x44
+
+	// Properties
+	public bool Collected { get; set; }
+	public PlayerResourceEnum Resource { get; }
+	public int Amount { get; set; }
+	public bool CollectWhenDroppedOnInventory { get; }
+	public ClientAsset[] Assets { get; }
+	public AfterCollectAnimation AfterCollectAnimation { get; }
+	public bool IsATool { get; }
+	public bool RequiresDoubleTap { get; }
+	public bool IsCollectableItem { get; }
+	public bool IsCollectableItemWithResource { get; }
+	public bool ShouldCollectableItemFly { get; }
+	public Reward CollectableReward { get; }
+	public bool IsImmediateReward { get; }
+	public bool IsPlaygroundPoints { get; }
+	public bool ShouldRemoveFromBoard { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x68FBA0C Offset: 0x68F7A0C VA: 0x68FBA0C Slot: 8
+	public bool get_Collected() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FBA14 Offset: 0x68F7A14 VA: 0x68FBA14 Slot: 9
+	public void set_Collected(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FBA20 Offset: 0x68F7A20 VA: 0x68FBA20
+	public PlayerResourceEnum get_Resource() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FBA28 Offset: 0x68F7A28 VA: 0x68FBA28 Slot: 7
+	public int get_Amount() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FBA30 Offset: 0x68F7A30 VA: 0x68FBA30
+	public void set_Amount(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FBA38 Offset: 0x68F7A38 VA: 0x68FBA38
+	public bool get_CollectWhenDroppedOnInventory() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FBA40 Offset: 0x68F7A40 VA: 0x68FBA40
+	public ClientAsset[] get_Assets() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FBA48 Offset: 0x68F7A48 VA: 0x68FBA48 Slot: 10
+	public AfterCollectAnimation get_AfterCollectAnimation() { }
+
+	// RVA: 0x68FBA50 Offset: 0x68F7A50 VA: 0x68FBA50
+	public bool get_IsATool() { }
+
+	// RVA: 0x68FBAAC Offset: 0x68F7AAC VA: 0x68FBAAC
+	public bool get_RequiresDoubleTap() { }
+
+	// RVA: 0x68FBAB0 Offset: 0x68F7AB0 VA: 0x68FBAB0
+	public bool get_IsCollectableItem() { }
+
+	// RVA: 0x68FBB00 Offset: 0x68F7B00 VA: 0x68FBB00
+	public bool get_IsCollectableItemWithResource() { }
+
+	// RVA: 0x68FBB70 Offset: 0x68F7B70 VA: 0x68FBB70
+	public bool get_ShouldCollectableItemFly() { }
+
+	// RVA: 0x68FBBE4 Offset: 0x68F7BE4 VA: 0x68FBBE4 Slot: 11
+	public Reward get_CollectableReward() { }
+
+	// RVA: 0x68FBC34 Offset: 0x68F7C34 VA: 0x68FBC34
+	public bool get_IsImmediateReward() { }
+
+	// RVA: 0x68FBC8C Offset: 0x68F7C8C VA: 0x68FBC8C Slot: 14
+	public bool get_IsPlaygroundPoints() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FBCE4 Offset: 0x68F7CE4 VA: 0x68FBCE4 Slot: 12
+	public bool get_ShouldRemoveFromBoard() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FBCEC Offset: 0x68F7CEC VA: 0x68FBCEC Slot: 13
+	public void set_ShouldRemoveFromBoard(bool value) { }
+
+	// RVA: 0x68FBCF8 Offset: 0x68F7CF8 VA: 0x68FBCF8
+	public void .ctor(CollectableItemCapability capability, Entity entity) { }
+}
+

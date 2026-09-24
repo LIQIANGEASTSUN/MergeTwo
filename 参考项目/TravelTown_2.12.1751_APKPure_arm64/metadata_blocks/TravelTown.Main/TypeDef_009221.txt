@@ -1,0 +1,162 @@
+// Namespace: Merger.Game.Views.Board
+[RequireComponent(typeof(AnimationGraphPlayer))]
+public sealed class BoardQueueView2 : GameViewBase<BoardQueueViewModel>, IEnterStateHandler, IExitStateHandler, IBoardWidgetContainer // TypeDefIndex: 9221
+{
+	// Fields
+	[SerializeField]
+	private AnimationGraphPlayer _animationGraphPlayer; // 0x30
+	[SerializeField]
+	private string _inNodeName; // 0x38
+	[SerializeField]
+	private string _outNodeName; // 0x40
+	[SerializeField]
+	private SlideIconTweenSettings _iconTweenSettings; // 0x48
+	[SerializeField]
+	private AddressableImage _queuedItemImage; // 0x50
+	[SerializeField]
+	private ReactiveButton _dequeueButton; // 0x58
+	[SerializeField]
+	private ReactiveText _counterText; // 0x60
+	[SerializeField]
+	private ReactiveText _timerText; // 0x68
+	[SerializeField]
+	private SlideBoardItemView _slideBoardItemView; // 0x70
+	[Header("Hinting")]
+	[SerializeField]
+	private RectTransform _tutorialHand; // 0x78
+	[SerializeField]
+	private int _showTutorialHintUntilLevel; // 0x80
+	[SerializeField]
+	private float _showTutorialAfterBeingIdleFor; // 0x84
+	[SerializeField]
+	private GameObject _loader; // 0x88
+	private float _idleTime; // 0x90
+	private bool _isInBoardState; // 0x94
+	private bool _isChangingRectSize; // 0x95
+	private Vector2 _itemEndPosition; // 0x98
+	private Animation _hintAnimation; // 0xA0
+	private GameObject _counter; // 0xA8
+	private RectTransform _overlayRectTransform; // 0xB0
+	[CompilerGenerated]
+	private Action<bool> QueueStatusChanged; // 0xB8
+
+	// Properties
+	public bool ShouldShowWidget { get; }
+	private bool HasItems { get; }
+	private RectTransform ParentContainer { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6742D20 Offset: 0x673ED20 VA: 0x6742D20
+	public void add_QueueStatusChanged(Action<bool> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6742DD0 Offset: 0x673EDD0 VA: 0x6742DD0
+	public void remove_QueueStatusChanged(Action<bool> value) { }
+
+	// RVA: 0x6742E80 Offset: 0x673EE80 VA: 0x6742E80 Slot: 12
+	public bool get_ShouldShowWidget() { }
+
+	// RVA: 0x6742EA0 Offset: 0x673EEA0 VA: 0x6742EA0
+	private bool get_HasItems() { }
+
+	// RVA: 0x6742F08 Offset: 0x673EF08 VA: 0x6742F08
+	private RectTransform get_ParentContainer() { }
+
+	// RVA: 0x6742F7C Offset: 0x673EF7C VA: 0x6742F7C Slot: 8
+	protected override void Awake() { }
+
+	// RVA: 0x674306C Offset: 0x673F06C VA: 0x674306C
+	private void InitializeUiComponents() { }
+
+	// RVA: 0x67435D0 Offset: 0x673F5D0 VA: 0x67435D0 Slot: 7
+	protected override void OnDestroy() { }
+
+	// RVA: 0x6743A58 Offset: 0x673FA58 VA: 0x6743A58
+	private void Start() { }
+
+	// RVA: 0x6743AC0 Offset: 0x673FAC0 VA: 0x6743AC0
+	private void OnEnable() { }
+
+	// RVA: 0x6743D1C Offset: 0x673FD1C VA: 0x6743D1C
+	private void Update() { }
+
+	// RVA: 0x6743EB8 Offset: 0x673FEB8 VA: 0x6743EB8
+	private void LateUpdate() { }
+
+	// RVA: 0x6743F34 Offset: 0x673FF34 VA: 0x6743F34 Slot: 9
+	protected override void GameStarted() { }
+
+	// RVA: 0x674411C Offset: 0x674011C VA: 0x674411C
+	private void MoveToFront() { }
+
+	// RVA: 0x6744168 Offset: 0x6740168 VA: 0x6744168
+	private void MoveToBack() { }
+
+	// RVA: 0x6744184 Offset: 0x6740184 VA: 0x6744184
+	private void EnqueueItem(ItemQueuedSignal signal) { }
+
+	// RVA: 0x674465C Offset: 0x674065C VA: 0x674465C
+	private void SlideItemIntoQueue(IItem item, Vector2 itemStartPosition, Func<GameObject> getPrefabInstance, Func<FlyingIconView, InstantiateAndSlideIconsAnimationSettings, Tween> overrideTween, InstantiateAndSlideIconsAnimationSettings animationSettings) { }
+
+	// RVA: 0x6744020 Offset: 0x6740020 VA: 0x6744020
+	private void TryDisplayQueuedItem() { }
+
+	// RVA: 0x67449C0 Offset: 0x67409C0 VA: 0x67449C0
+	private void UpdateTimerView() { }
+
+	// RVA: 0x67445C4 Offset: 0x67405C4 VA: 0x67445C4
+	private void TryEnableQueueView() { }
+
+	// RVA: 0x6744AE8 Offset: 0x6740AE8 VA: 0x6744AE8
+	private void Dequeue() { }
+
+	// RVA: 0x6744C24 Offset: 0x6740C24 VA: 0x6744C24
+	private void TryPlayHideAnimation() { }
+
+	// RVA: 0x67431E8 Offset: 0x673F1E8 VA: 0x67431E8
+	private void SubscribeOnSignals() { }
+
+	// RVA: 0x6744D0C Offset: 0x6740D0C VA: 0x6744D0C
+	private void OnEffectiveQueueCountChanged(int count) { }
+
+	// RVA: 0x6744DBC Offset: 0x6740DBC VA: 0x6744DBC
+	private void OnEffectiveHeadSpriteChanged(AssetReferenceT<Sprite> sprite) { }
+
+	// RVA: 0x6744E70 Offset: 0x6740E70 VA: 0x6744E70
+	private void OnRewardCameToTarget(RewardFlyAnimationFinishedSignal signal) { }
+
+	// RVA: 0x6744F38 Offset: 0x6740F38 VA: 0x6744F38
+	private void SetButtonInteractable(bool isLoading) { }
+
+	// RVA: 0x6743BA0 Offset: 0x673FBA0 VA: 0x6743BA0
+	private void ActivateGameObject(bool isOn) { }
+
+	// RVA: 0x6744FD8 Offset: 0x6740FD8 VA: 0x6744FD8
+	private void GameStateChanged(GameState state) { }
+
+	// RVA: 0x674503C Offset: 0x674103C VA: 0x674503C
+	private void BoardVisibilityChanged(BoardVisibilityChangedSignal signal) { }
+
+	// RVA: 0x6744FDC Offset: 0x6740FDC VA: 0x6744FDC
+	private void ResetRewardTargets() { }
+
+	// RVA: 0x6745040 Offset: 0x6741040 VA: 0x6745040 Slot: 10
+	private void Framework.UIFSM.Fsm.IEnterStateHandler.HandleEnterState() { }
+
+	// RVA: 0x674504C Offset: 0x674104C VA: 0x674504C Slot: 11
+	private void Framework.UIFSM.Fsm.IExitStateHandler.HandleExitState() { }
+
+	// RVA: 0x6745054 Offset: 0x6741054 VA: 0x6745054
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x67450F8 Offset: 0x67410F8 VA: 0x67450F8
+	private void <OnEnable>b__33_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6745100 Offset: 0x6741100 VA: 0x6745100
+	private void <TryPlayHideAnimation>b__45_0() { }
+}
+

@@ -1,0 +1,24 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class CooldownLifecycleChangeResult // TypeDefIndex: 25940
+{
+	// Fields
+	[CompilerGenerated]
+	private bool <CooldownStarted>k__BackingField; // 0x10
+
+	// Properties
+	public bool CooldownStarted { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A2B0 Offset: 0x6A962B0 VA: 0x6A9A2B0
+	public bool get_CooldownStarted() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A2B8 Offset: 0x6A962B8 VA: 0x6A9A2B8
+	public void set_CooldownStarted(bool value) { }
+
+	// RVA: 0x6A9A2C4 Offset: 0x6A962C4 VA: 0x6A9A2C4
+	public void .ctor() { }
+}
+

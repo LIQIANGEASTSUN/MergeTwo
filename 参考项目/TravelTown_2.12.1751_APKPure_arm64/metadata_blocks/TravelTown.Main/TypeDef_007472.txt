@@ -1,0 +1,54 @@
+// Namespace: Merger.Bubbles.Modifiers
+public class ChainRelationsProbabilityModifier : BubbleDropProbabilityModifierBase // TypeDefIndex: 7472
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x20
+	[InjectComponent]
+	private BoardItemCountComponent _itemCountComponent; // 0x28
+	[InjectComponent]
+	private InventoryItemCountComponent _inventoryItemCountComponent; // 0x30
+	private Dictionary<IMergeGraphItem, List<IMergeGraphItem>> _consumersToConsumablesCache; // 0x38
+	private Dictionary<IMergeGraphItem, IMergeItem> _consumablesToConsumersCache; // 0x40
+
+	// Properties
+	public override bool IsEnabled { get; }
+	public override string AnalyticsString { get; }
+
+	// Methods
+
+	// RVA: 0x657FBE0 Offset: 0x657BBE0 VA: 0x657FBE0 Slot: 12
+	public override bool get_IsEnabled() { }
+
+	// RVA: 0x657FC04 Offset: 0x657BC04 VA: 0x657FC04 Slot: 13
+	public override string get_AnalyticsString() { }
+
+	// RVA: 0x657FC5C Offset: 0x657BC5C VA: 0x657FC5C Slot: 15
+	public override void TryModifyProbability(ref float probability, IMergeItem mergeItem, SmarterBubblesCheatData cheatData) { }
+
+	// RVA: 0x657FD0C Offset: 0x657BD0C VA: 0x657FD0C
+	private bool TryCalculateProbabilityForConsumer(ref float probability, IMergeItem consumer, SmarterBubblesCheatData cheatData) { }
+
+	// RVA: 0x657FE44 Offset: 0x657BE44 VA: 0x657FE44
+	private void TryCalculateProbabilityForConsumable(ref float probability, IMergeItem consumableItem, SmarterBubblesCheatData cheatData) { }
+
+	// RVA: 0x657FEE4 Offset: 0x657BEE4 VA: 0x657FEE4
+	private List<IMergeGraphItem> GetConsumables(IMergeItem mergeItem) { }
+
+	// RVA: 0x658075C Offset: 0x657C75C VA: 0x658075C
+	private IMergeItem GetConsumer(IMergeItem mergeItem) { }
+
+	// RVA: 0x658031C Offset: 0x657C31C VA: 0x658031C
+	private int GetLastItemsCount(IMergeItem mergeItem, bool countLastItemInGraphAsBeforeMerge = False) { }
+
+	// RVA: 0x65804AC Offset: 0x657C4AC VA: 0x65804AC
+	private void ModifyProbability(ref float probability, int diff, SmarterBubblesCheatData cheatData) { }
+
+	// RVA: 0x6580BB4 Offset: 0x657CBB4 VA: 0x6580BB4
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6580C90 Offset: 0x657CC90 VA: 0x6580C90
+	private int <TryCalculateProbabilityForConsumer>b__10_0(int res, IMergeGraphItem item) { }
+}
+

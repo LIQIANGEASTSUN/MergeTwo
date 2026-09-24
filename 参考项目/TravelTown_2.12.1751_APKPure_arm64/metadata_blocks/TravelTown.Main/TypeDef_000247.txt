@@ -1,0 +1,27 @@
+// Namespace: MergeEngine.Signal.Inventory
+public class TryRemoveInventoryItemSignal // TypeDefIndex: 247
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly int <SlotIndex>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly InventorySlotType <SlotType>k__BackingField; // 0x14
+
+	// Properties
+	public int SlotIndex { get; }
+	public InventorySlotType SlotType { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5FF40F8 Offset: 0x5FF00F8 VA: 0x5FF40F8
+	public int get_SlotIndex() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF4100 Offset: 0x5FF0100 VA: 0x5FF4100
+	public InventorySlotType get_SlotType() { }
+
+	// RVA: 0x5FF4108 Offset: 0x5FF0108 VA: 0x5FF4108
+	public void .ctor(int slotIndex, InventorySlotType slotType) { }
+}
+

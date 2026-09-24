@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BoardEvent.ShowItemInfo : IEvent // TypeDefIndex: 1778
+{
+	// Fields
+	public ItemController SelectedItem; // 0x0
+}
+

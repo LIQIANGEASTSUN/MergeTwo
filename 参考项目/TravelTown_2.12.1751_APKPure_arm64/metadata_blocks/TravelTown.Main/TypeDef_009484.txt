@@ -1,0 +1,12 @@
+// Namespace: Merger.Game.Signal.Combinations
+public class BeforeEntityRemovedSignal // TypeDefIndex: 9484
+{
+	// Fields
+	public readonly Entity Entity; // 0x10
+
+	// Methods
+
+	// RVA: 0x676E218 Offset: 0x676A218 VA: 0x676E218
+	public void .ctor(Entity entity) { }
+}
+

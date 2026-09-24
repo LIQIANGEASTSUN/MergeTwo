@@ -1,0 +1,9 @@
+Type: GameLogic.Player.Items.TimeContainer.ITimeContainerState
+
+Method: GameLogic.Config.Types.MetacoreDuration get_Remaining()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

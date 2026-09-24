@@ -1,0 +1,32 @@
+// Namespace: MergeEngine.ECS.Systems.Items
+public sealed class TimeLimitedPostActivationSystem : BaseItemSystem<TimeLimitedActivationComponent> // TypeDefIndex: 972
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x40
+	[InjectSystem]
+	private BoardInteractionSystem _boardInteractionSystem; // 0x48
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0x50
+	[Inject]
+	private IServerTimeService _serverTimeService; // 0x58
+
+	// Properties
+	private long CurrentServerTimeMS { get; }
+	public override SystemPriorities Priority { get; }
+
+	// Methods
+
+	// RVA: 0x6795AFC Offset: 0x6791AFC VA: 0x6795AFC
+	private long get_CurrentServerTimeMS() { }
+
+	// RVA: 0x6795B9C Offset: 0x6791B9C VA: 0x6795B9C Slot: 15
+	public override SystemPriorities get_Priority() { }
+
+	// RVA: 0x6795BA4 Offset: 0x6791BA4 VA: 0x6795BA4 Slot: 18
+	protected override void ProcessComponent(TimeLimitedActivationComponent component) { }
+
+	// RVA: 0x6795DFC Offset: 0x6791DFC VA: 0x6795DFC
+	public void .ctor() { }
+}
+

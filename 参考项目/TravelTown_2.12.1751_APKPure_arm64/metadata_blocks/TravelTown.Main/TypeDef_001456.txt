@@ -1,0 +1,26 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class OrderSpawnCapability : CapabilityBase // TypeDefIndex: 1456
+{
+	// Fields
+	[CompilerGenerated]
+	private string <OrderTreeId>k__BackingField; // 0x18
+
+	// Properties
+	[JsonProperty("orderGraphTreeReference")]
+	public string OrderTreeId { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6011840 Offset: 0x600D840 VA: 0x6011840
+	public string get_OrderTreeId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6011848 Offset: 0x600D848 VA: 0x6011848
+	private void set_OrderTreeId(string value) { }
+
+	// RVA: 0x6011850 Offset: 0x600D850 VA: 0x6011850
+	public void .ctor() { }
+}
+

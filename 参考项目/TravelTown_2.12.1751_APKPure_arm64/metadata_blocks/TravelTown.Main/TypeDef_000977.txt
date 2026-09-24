@@ -1,0 +1,24 @@
+// Namespace: MergeEngine.ECS.Systems.Items
+public interface IUndoOperation // TypeDefIndex: 977
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void PerformUndo();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract IMergeItem GetMergeItem();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract Entity GetEntity();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract bool ShouldClearUndoOnSelection(PositionComponent selectedItem);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract string GetLocalisationString();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract string[] GetLocalisationParameters();
+}
+

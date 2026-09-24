@@ -1,0 +1,14 @@
+// Namespace: 
+public enum Movable.BoardActionType // TypeDefIndex: 173
+{
+	// Fields
+	public int value__; // 0x0
+	public const Movable.BoardActionType Merge = 0;
+	public const Movable.BoardActionType Spawn = 1;
+	public const Movable.BoardActionType Drag = 2;
+	public const Movable.BoardActionType Swap = 3;
+	public const Movable.BoardActionType AutoSwap = 4;
+	public const Movable.BoardActionType Claim = 5;
+	public const Movable.BoardActionType Task = 6;
+}
+

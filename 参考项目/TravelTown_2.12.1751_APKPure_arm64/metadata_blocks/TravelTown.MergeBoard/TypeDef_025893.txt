@@ -1,0 +1,23 @@
+// Namespace: Merger.MergeBoard.Handlers
+public class ItemsCollectionHandler : Base, IItemsCollectionHandler // TypeDefIndex: 25893
+{
+	// Fields
+	[Inject]
+	private IPlayerItemsCollectionModel _playerItemsCollectionModel; // 0x28
+	[Inject]
+	private IMergeItemStateChangedModel _mergeItemStateChangedModel; // 0x30
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0x38
+
+	// Methods
+
+	// RVA: 0x6A92EA4 Offset: 0x6A8EEA4 VA: 0x6A92EA4 Slot: 15
+	public void ReportItemDiscovered(IMergeItem item) { }
+
+	// RVA: 0x6A9306C Offset: 0x6A8F06C VA: 0x6A9306C Slot: 16
+	public void ReportItemCreated(IMergeItem item) { }
+
+	// RVA: 0x6A93304 Offset: 0x6A8F304 VA: 0x6A93304
+	public void .ctor() { }
+}
+

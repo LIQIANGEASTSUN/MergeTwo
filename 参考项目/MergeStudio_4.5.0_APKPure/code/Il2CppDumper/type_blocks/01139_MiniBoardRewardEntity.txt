@@ -1,0 +1,25 @@
+// Namespace: Paxie.MergeStudio.Features.MiniBoard
+[Serializable]
+public class MiniBoardRewardEntity // TypeDefIndex: 1139
+{
+	// Fields
+	public int SetID; // 0x8
+	public int Level; // 0xC
+	public GameMainReward GameMainReward; // 0x10
+	public MiniBoardItemEntity ItemEntity; // 0x14
+
+	// Methods
+
+	// RVA: 0x17C8014 Offset: 0x17C8014 VA: 0x17C8014
+	public void .ctor() { }
+
+	// RVA: 0x17C801C Offset: 0x17C801C VA: 0x17C801C
+	public void .ctor(int setID, int level) { }
+
+	// RVA: 0x17C8040 Offset: 0x17C8040 VA: 0x17C8040
+	public void .ctor(int setID, int level, GameMainReward gameMainReward) { }
+
+	// RVA: 0x17C8078 Offset: 0x17C8078 VA: 0x17C8078
+	public void .ctor(int setID, int level, MiniBoardItemEntity itemEntity) { }
+}
+

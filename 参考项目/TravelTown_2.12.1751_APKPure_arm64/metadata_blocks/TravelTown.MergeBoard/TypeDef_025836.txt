@@ -1,0 +1,85 @@
+// Namespace: Merger.MergeBoard.Logic
+public class ToolSpawnHandler : Base, IInitializable, IToolSpawnHandler, IDisposable // TypeDefIndex: 25836
+{
+	// Fields
+	[Inject]
+	private IResourcesConfigurationModel _resourcesConfigurationModel; // 0x28
+	[Inject]
+	private IMetagameModel _metagameModel; // 0x30
+	[Inject]
+	private IRandomNumberModel _randomNumberModel; // 0x38
+	[Inject]
+	private IResourcesModel _resourcesModel; // 0x40
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x48
+	[Inject]
+	private IGameConfigurationModel _gameConfigurationModel; // 0x50
+	[Inject]
+	private IPlayerModel _playerModel; // 0x58
+	[Inject]
+	private IInventoryModel _inventoryModel; // 0x60
+	private const int MaxToolsChainsInProgress = 2;
+	private readonly ToolsRequiredByBuildingsHelper _requiredToolsHelper; // 0x68
+	private readonly Dictionary<IMergeGraphItem, PlayerResourceEnum> _graphToResource; // 0x70
+	private readonly Dictionary<PlayerResourceEnum, IMergeGraphItem> _resourceToGraph; // 0x78
+
+	// Properties
+	private float ToolsRequiredByMetagameBooster { get; }
+
+	// Methods
+
+	// RVA: 0x6A8328C Offset: 0x6A7F28C VA: 0x6A8328C
+	private float get_ToolsRequiredByMetagameBooster() { }
+
+	// RVA: 0x6A833C0 Offset: 0x6A7F3C0 VA: 0x6A833C0 Slot: 16
+	public PlayerResourceEnum GraphToResource(IMergeGraphItem graph) { }
+
+	// RVA: 0x6A83418 Offset: 0x6A7F418 VA: 0x6A83418 Slot: 17
+	public IMergeGraphItem ResourceToGraph(PlayerResourceEnum resource) { }
+
+	// RVA: 0x6A83470 Offset: 0x6A7F470 VA: 0x6A83470 Slot: 15
+	public void Initialize() { }
+
+	// RVA: 0x6A836AC Offset: 0x6A7F6AC VA: 0x6A836AC Slot: 19
+	public Dictionary<PlayerResourceEnum, ToolProgressionData> GetToolProgressionData(IEnumerable<string> unlockedItemsOnBoard) { }
+
+	// RVA: 0x6A83BE0 Offset: 0x6A7FBE0 VA: 0x6A83BE0 Slot: 18
+	public IMergeItem GetToolToSpawn(Dictionary<PlayerResourceEnum, ToolProgressionData> toolsProgressionData, List<WeightedTool> availableToolsToSpawn, List<WeightedToolLevel> toolLevelWeights) { }
+
+	// RVA: 0x6A8433C Offset: 0x6A8033C VA: 0x6A8433C Slot: 20
+	public int CalculateMergeValue(int itemLevel) { }
+
+	// RVA: 0x6A83CDC Offset: 0x6A7FCDC VA: 0x6A83CDC
+	private PlayerResourceEnum SelectRandomWeightedTool(List<WeightedTool> availableToolsToSpawn, Dictionary<PlayerResourceEnum, ToolProgressionData> toolsProgressionOnBoard) { }
+
+	// RVA: 0x6A84068 Offset: 0x6A80068 VA: 0x6A84068
+	private IMergeItem GenerateRandomToolItemFromWeights(List<WeightedToolLevel> toolLevelWeights, IMergeGraphItem toolGraph) { }
+
+	// RVA: 0x6A83F4C Offset: 0x6A7FF4C VA: 0x6A83F4C
+	private List<WeightedToolLevel> FilterToolLevelsByProgressionOnBoard(List<WeightedToolLevel> toolLevelWeights, ToolProgressionData toolProgressionData) { }
+
+	// RVA: 0x6A84674 Offset: 0x6A80674 VA: 0x6A84674
+	private void ApplyMetagameWeightBoosts(List<WeightedTool> availableToolsToSpawn, Dictionary<PlayerResourceEnum, int> currentToolAmounts) { }
+
+	// RVA: 0x6A843FC Offset: 0x6A803FC VA: 0x6A843FC
+	private Dictionary<PlayerResourceEnum, int> CalculateCurrentToolAmounts(Dictionary<PlayerResourceEnum, ToolProgressionData> toolsProgressionOnBoard) { }
+
+	// RVA: 0x6A84780 Offset: 0x6A80780 VA: 0x6A84780
+	private void BoostRequiredToolWeights(List<WeightedTool> toolWeights, HashSet<PlayerResourceEnum> requiredTools) { }
+
+	// RVA: 0x6A839AC Offset: 0x6A7F9AC VA: 0x6A839AC
+	private int SumItemsMergeValue(IMergeGraphItem toolGraph, IEnumerable<string> boardItemIds) { }
+
+	// RVA: 0x6A838EC Offset: 0x6A7F8EC VA: 0x6A838EC
+	private int GetMaxItemMergeValue(IMergeGraphItem toolGraph) { }
+
+	// RVA: 0x6A8434C Offset: 0x6A8034C VA: 0x6A8434C
+	private List<WeightedTool> GetFilteredTools(List<WeightedTool> availableToolsToSpawn, Dictionary<PlayerResourceEnum, ToolProgressionData> toolsProgressionOnBoard) { }
+
+	// RVA: 0x6A848D8 Offset: 0x6A808D8 VA: 0x6A848D8
+	private Func<WeightedTool, bool> GetToolSpawnPriorityStrategy(Dictionary<PlayerResourceEnum, ToolProgressionData> toolsProgressionOnBoard) { }
+
+	// RVA: 0x6A84B78 Offset: 0x6A80B78 VA: 0x6A84B78
+	public void .ctor() { }
+}
+

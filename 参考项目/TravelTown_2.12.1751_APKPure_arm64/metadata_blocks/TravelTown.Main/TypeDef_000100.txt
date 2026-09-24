@@ -1,0 +1,62 @@
+// Namespace: MergeEngine.Util
+public class ItemSpawningQueue // TypeDefIndex: 100
+{
+	// Fields
+	private List<ItemSpawnable> _itemsList; // 0x10
+	private Dictionary<string, List<ItemSpawnable>> _multiItemsList; // 0x18
+	private Random _random; // 0x20
+	private readonly ItemsSpawningCapability _capability; // 0x28
+	private int _seed; // 0x30
+	[CompilerGenerated]
+	private int <CurrentItemIndex>k__BackingField; // 0x34
+	private ItemSpawnable[] _nextItems; // 0x38
+
+	// Properties
+	public int CurrentItemIndex { get; set; }
+	public bool HasMoreItems { get; }
+	private int NumItemsInCycle { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5FE8950 Offset: 0x5FE4950 VA: 0x5FE8950
+	public int get_CurrentItemIndex() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FE8958 Offset: 0x5FE4958 VA: 0x5FE8958
+	private void set_CurrentItemIndex(int value) { }
+
+	// RVA: 0x5FE8960 Offset: 0x5FE4960 VA: 0x5FE8960
+	public bool get_HasMoreItems() { }
+
+	// RVA: 0x5FE89A4 Offset: 0x5FE49A4 VA: 0x5FE89A4
+	private int get_NumItemsInCycle() { }
+
+	// RVA: 0x5FE89C8 Offset: 0x5FE49C8 VA: 0x5FE89C8
+	public void .ctor(ItemsSpawningCapability capability, int seed, int startIndex = 0) { }
+
+	// RVA: 0x5FE8B04 Offset: 0x5FE4B04 VA: 0x5FE8B04
+	public void Refill(int seed = 0, List<Combination> combinations) { }
+
+	// RVA: 0x5FE932C Offset: 0x5FE532C VA: 0x5FE932C
+	public void AddCombinationWeightedItems(List<Combination> combinations, int numItemsInCycles) { }
+
+	// RVA: 0x5FE9BF4 Offset: 0x5FE5BF4 VA: 0x5FE9BF4
+	public ItemSpawnable GetNextItems(ItemMultiple[] consumedItems, List<Combination> combinations, List<ItemPayloadBase> feedingConsumedItems) { }
+
+	// RVA: 0x5FE8DBC Offset: 0x5FE4DBC VA: 0x5FE8DBC
+	private void AddFixedItems(List<ItemSpawnable> spawningList, List<FixedItemSpawnable> fixedItems) { }
+
+	// RVA: 0x5FEA444 Offset: 0x5FE6444 VA: 0x5FEA444
+	public void AddWeightedItems(List<WeightedItemSpawnable> items) { }
+
+	// RVA: 0x5FE8FE0 Offset: 0x5FE4FE0 VA: 0x5FE8FE0
+	private void AddWeightedItems(List<ItemSpawnable> spawningList, List<WeightedItemSpawnable> items, int numItemsInCycles) { }
+
+	// RVA: 0x5FEA5F4 Offset: 0x5FE65F4 VA: 0x5FEA5F4
+	public ItemSpawnable PeekNextItem() { }
+
+	// RVA: 0x5FEA690 Offset: 0x5FE6690 VA: 0x5FEA690
+	public bool IsItemInQueue(IMergeItem item) { }
+}
+

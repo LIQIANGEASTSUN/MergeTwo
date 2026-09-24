@@ -1,0 +1,78 @@
+// Namespace: MergePuzzle
+public class BoardCloudItemController : BaseSubscriber, IEventReceiver<CameraEvent.CameraChangedRequest>, IEventReceiverBase, IEventReceiver<BoardEvent.BoosterPanelStatusChange> // TypeDefIndex: 1863
+{
+	// Fields
+	[BoxGroup("UI")]
+	public Canvas Canvas; // 0x1C
+	[BoxGroup("UI")]
+	public RectTransform RectTransform; // 0x20
+	[BoxGroup("UI")]
+	public Image Background; // 0x24
+	[BoxGroup("UI")]
+	public TextMeshProUGUI TapText; // 0x28
+	[BoxGroup("UI")]
+	public TextMeshProUGUI UnlockLevelText; // 0x2C
+	[BoxGroup("UI")]
+	public Image Crown; // 0x30
+	[BoxGroup("Animation")]
+	public AnimationController TapTextAnimationController; // 0x34
+	[BoxGroup("Animation")]
+	public AnimationLoop TapTextIdleAnimationLoop; // 0x38
+	[BoxGroup("Animation")]
+	public SkeletonGraphic CloudRemoveAnimPrefab; // 0x3C
+	private EventEntity _eventEntity; // 0x40
+	private bool _isClickable; // 0x44
+	private SkeletonGraphic _cloudRemoveAnim; // 0x48
+	private BoardEntity _boardEntity; // 0x4C
+	private Vector3 _tapTextDefaultScale; // 0x50
+	private WarningTextFactory _warningTextFactory; // 0x5C
+	[CompilerGenerated]
+	private int <UnlockLevel>k__BackingField; // 0x60
+
+	// Properties
+	public int UnlockLevel { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x19169FC Offset: 0x19169FC VA: 0x19169FC
+	public int get_UnlockLevel() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1916A04 Offset: 0x1916A04 VA: 0x1916A04
+	private void set_UnlockLevel(int value) { }
+
+	// RVA: 0x1916A0C Offset: 0x1916A0C VA: 0x1916A0C
+	public void Initialize(BoardEntity boardEntity, EventEntity eventEntity, int unlockLevel, bool hasUpperSortingOrder, SpriteRenderer spriteRenderer, Vector3 size, BoardData boardData, MetaData metaData) { }
+
+	// RVA: 0x1916EFC Offset: 0x1916EFC VA: 0x1916EFC
+	private void SetScale() { }
+
+	// RVA: 0x1916F64 Offset: 0x1916F64 VA: 0x1916F64
+	public void OnCloudClick() { }
+
+	// RVA: 0x19172B4 Offset: 0x19172B4 VA: 0x19172B4
+	private void RemoveCloud() { }
+
+	// RVA: 0x191737C Offset: 0x191737C VA: 0x191737C
+	private void PlayCloudRemoveAnimation() { }
+
+	// RVA: 0x1916E88 Offset: 0x1916E88 VA: 0x1916E88
+	private bool IsReadyToDestroy() { }
+
+	// RVA: 0x19175CC Offset: 0x19175CC VA: 0x19175CC Slot: 17
+	public void OnEvent(CameraEvent.CameraChangedRequest e) { }
+
+	// RVA: 0x1917100 Offset: 0x1917100 VA: 0x1917100
+	private void ThrowWarning() { }
+
+	// RVA: 0x1917874 Offset: 0x1917874 VA: 0x1917874 Slot: 18
+	public void OnEvent(BoardEvent.BoosterPanelStatusChange e) { }
+
+	// RVA: 0x19179F0 Offset: 0x19179F0 VA: 0x19179F0 Slot: 9
+	public override void OnDestroy() { }
+
+	// RVA: 0x1917AAC Offset: 0x1917AAC VA: 0x1917AAC
+	public void .ctor() { }
+}
+

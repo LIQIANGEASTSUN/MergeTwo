@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BoardEvent.ClearBoard : IEvent // TypeDefIndex: 1822
+{
+	// Fields
+	public bool DeleteSpawner; // 0x0
+}
+

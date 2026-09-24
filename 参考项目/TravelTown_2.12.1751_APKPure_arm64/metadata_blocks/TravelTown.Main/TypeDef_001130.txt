@@ -1,0 +1,67 @@
+// Namespace: MergeEngine.ECS.Components.Board
+public class DisplayedItem // TypeDefIndex: 1130
+{
+	// Fields
+	[CompilerGenerated]
+	private string <UUID>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private IItem <Item>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private readonly MutableBindableProperty<bool> <IsLoading>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private long <ItemAdditionTimestamp>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private string <Reason>k__BackingField; // 0x30
+
+	// Properties
+	public string UUID { get; set; }
+	public IItem Item { get; set; }
+	public MutableBindableProperty<bool> IsLoading { get; }
+	public long ItemAdditionTimestamp { get; set; }
+	public string Reason { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6904D80 Offset: 0x6900D80 VA: 0x6904D80
+	public string get_UUID() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6904D88 Offset: 0x6900D88 VA: 0x6904D88
+	public void set_UUID(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6904D90 Offset: 0x6900D90 VA: 0x6904D90
+	public IItem get_Item() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6904D98 Offset: 0x6900D98 VA: 0x6904D98
+	public void set_Item(IItem value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6904DA0 Offset: 0x6900DA0 VA: 0x6904DA0
+	public MutableBindableProperty<bool> get_IsLoading() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6904DA8 Offset: 0x6900DA8 VA: 0x6904DA8
+	public long get_ItemAdditionTimestamp() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6904DB0 Offset: 0x6900DB0 VA: 0x6904DB0
+	public void set_ItemAdditionTimestamp(long value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6904DB8 Offset: 0x6900DB8 VA: 0x6904DB8
+	public string get_Reason() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6904DC0 Offset: 0x6900DC0 VA: 0x6904DC0
+	public void set_Reason(string value) { }
+
+	// RVA: 0x6904DC8 Offset: 0x6900DC8 VA: 0x6904DC8
+	public void Wipe() { }
+
+	// RVA: 0x6904E38 Offset: 0x6900E38 VA: 0x6904E38
+	public void .ctor() { }
+}
+

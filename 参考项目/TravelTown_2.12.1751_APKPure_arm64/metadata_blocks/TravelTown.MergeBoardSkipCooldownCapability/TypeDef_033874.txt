@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class SkipCooldownProvider.<>c__DisplayClass6_0 // TypeDefIndex: 33874
+{
+	// Fields
+	public Entity entity; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A632CC Offset: 0x6A5F2CC VA: 0x6A632CC
+	public void .ctor() { }
+
+	// RVA: 0x6A63854 Offset: 0x6A5F854 VA: 0x6A63854
+	internal bool <CanSkipCooldown>b__0(ISkipCooldownStrategy strategy) { }
+}
+

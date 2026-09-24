@@ -1,0 +1,41 @@
+Type: GameLogic.Player.Items.Bubble.BracketedBubbleLogic+<>c__DisplayClass27_1
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0364770C BL 0x239BB80
+	0x03647710 LDR X1, [X25]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <ComputeSpawnChance>b__1(GameLogic.Player.MergeTasks.MergeTask task)
+
+Disassembly:
+	0x03648868 BL 0x239BB90
+	0x0364886C STR X30, [X31 - 0x20]!
+	0x03648870 STP X20, X19, [X31 + 0x10]
+	0x03648874 MOV X20, X2
+	0x03648878 MOV X19, X1
+	0x0364887C BL 0x36488A8
+	0x03648880 CBZ X19, 0x36488A4
+	0x03648884 STR W0, [X19 + 0x30]
+	0x03648888 MOV X0, X20
+	0x0364888C MOV X1, X31
+
+ISIL:
+	001 Move X9, [X0+24]
+	002 Compare X9, 0
+	003 JumpIfEqual {11}
+	004 Move X8, [X0+16]
+	005 Move X2, [X9+24]
+	006 Move X0, X1
+	007 Move X3, X31
+	008 Move X1, X8
+	009 Call MergeTaskExtensions.RequiresAnyItem, X0, X1, X2
+	010 Return X0
+	011 Move [X31-16], X30
+	012 Call 0x239FB90
+

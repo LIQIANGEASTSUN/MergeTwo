@@ -1,0 +1,349 @@
+Type: Metaplay.Core.Activables.MetaActivableSet`3+<>c
+
+Method: System.Void .cctor()
+
+Disassembly:
+	0x026C0CFC CMP X8, 0x0
+	0x026C0D00 CSET W0, NE
+	0x026C0D04 RET
+	0x026C0D08 STR X30, [X31 - 0x20]!
+	0x026C0D0C STP X20, X19, [X31 + 0x10]
+	0x026C0D10 MOV X19, X0
+	0x026C0D14 LDR X0, [X0 + 0x20]
+	0x026C0D18 ADD X8, X0, 0x135
+	0x026C0D1C LDRH W8, [X8]
+	0x026C0D20 TBNZ X8, 0x0, 0x26C0D28
+	0x026C0D24 BL 0x23D4F40
+	0x026C0D28 LDR X8, [X0 + 0xC0]
+	0x026C0D2C LDR X0, [X8]
+	0x026C0D30 ADD X8, X0, 0x135
+	0x026C0D34 LDRH W8, [X8]
+	0x026C0D38 TBNZ X8, 0x0, 0x26C0D40
+	0x026C0D3C BL 0x23D4F40
+	0x026C0D40 BL 0x239BB80
+	0x026C0D44 LDR X8, [X19 + 0x20]
+	0x026C0D48 MOV X20, X0
+	0x026C0D4C ADD X9, X8, 0x135
+	0x026C0D50 LDRH W9, [X9]
+	0x026C0D54 TBNZ X9, 0x0, 0x26C0D60
+	0x026C0D58 MOV X0, X8
+	0x026C0D5C BL 0x23D4F40
+	0x026C0D60 MOV X0, X20
+	0x026C0D64 MOV X1, X31
+	0x026C0D68 BL 0x44E8DEC
+	0x026C0D6C LDR X0, [X19 + 0x20]
+	0x026C0D70 ADD X8, X0, 0x135
+	0x026C0D74 LDRH W8, [X8]
+	0x026C0D78 TBNZ X8, 0x0, 0x26C0D80
+	0x026C0D7C BL 0x23D4F40
+	0x026C0D80 LDR X8, [X0 + 0xC0]
+	0x026C0D84 LDR X0, [X8 + 0x10]
+	0x026C0D88 ADD X8, X0, 0x135
+	0x026C0D8C LDRH W8, [X8]
+	0x026C0D90 TBNZ X8, 0x0, 0x26C0D98
+	0x026C0D94 BL 0x23D4F40
+	0x026C0D98 LDR X8, [X0 + 0xB8]
+	0x026C0D9C LDR X0, [X19 + 0x20]
+	0x026C0DA0 STR X20, [X8]
+	0x026C0DA4 ADD X8, X0, 0x135
+	0x026C0DA8 LDRH W8, [X8]
+	0x026C0DAC TBNZ X8, 0x0, 0x26C0DB4
+	0x026C0DB0 BL 0x23D4F40
+	0x026C0DB4 LDR X8, [X0 + 0xC0]
+	0x026C0DB8 LDR X0, [X8 + 0x10]
+	0x026C0DBC ADD X8, X0, 0x135
+	0x026C0DC0 LDRH W8, [X8]
+	0x026C0DC4 TBNZ X8, 0x0, 0x26C0DCC
+	0x026C0DC8 BL 0x23D4F40
+	0x026C0DCC MOV X1, X20
+	0x026C0DD0 LDP X20, X19, [X31 + 0x10]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move X19, X0
+	005 Move X0, [X0+32]
+	006 Add X8, X0, 309
+	007 NotImplemented "Instruction LDRH not yet implemented."
+	008 Move TEMP, X8
+	009 And TEMP, TEMP, 1
+	010 Compare TEMP, 1
+	011 JumpIfEqual {13}
+	012 Call 0x23D8F40
+	013 Move X8, [X0+192]
+	014 Move X0, [X8]
+	015 Add X8, X0, 309
+	016 NotImplemented "Instruction LDRH not yet implemented."
+	017 Move TEMP, X8
+	018 And TEMP, TEMP, 1
+	019 Compare TEMP, 1
+	020 JumpIfEqual {22}
+	021 Call 0x23D8F40
+	022 Call 0x239FB80
+	023 Move X8, [X19+32]
+	024 Move X20, X0
+	025 Add X9, X8, 309
+	026 NotImplemented "Instruction LDRH not yet implemented."
+	027 Move TEMP, X9
+	028 And TEMP, TEMP, 1
+	029 Compare TEMP, 1
+	030 JumpIfEqual {33}
+	031 Move X0, X8
+	032 Call 0x23D8F40
+	033 Move X0, X20
+	034 Move X1, X31
+	035 Call Object..ctor, X0
+	036 Move X0, [X19+32]
+	037 Add X8, X0, 309
+	038 NotImplemented "Instruction LDRH not yet implemented."
+	039 Move TEMP, X8
+	040 And TEMP, TEMP, 1
+	041 Compare TEMP, 1
+	042 JumpIfEqual {44}
+	043 Call 0x23D8F40
+	044 Move X8, [X0+192]
+	045 Move X0, [X8+16]
+	046 Add X8, X0, 309
+	047 NotImplemented "Instruction LDRH not yet implemented."
+	048 Move TEMP, X8
+	049 And TEMP, TEMP, 1
+	050 Compare TEMP, 1
+	051 JumpIfEqual {53}
+	052 Call 0x23D8F40
+	053 Move X8, [X0+184]
+	054 Move X0, [X19+32]
+	055 Move [X8], X20
+	056 Add X8, X0, 309
+	057 NotImplemented "Instruction LDRH not yet implemented."
+	058 Move TEMP, X8
+	059 And TEMP, TEMP, 1
+	060 Compare TEMP, 1
+	061 JumpIfEqual {63}
+	062 Call 0x23D8F40
+	063 Move X8, [X0+192]
+	064 Move X0, [X8+16]
+	065 Add X8, X0, 309
+	066 NotImplemented "Instruction LDRH not yet implemented."
+	067 Move TEMP, X8
+	068 And TEMP, TEMP, 1
+	069 Compare TEMP, 1
+	070 JumpIfEqual {72}
+	071 Call 0x23D8F40
+	072 Move X1, X20
+	073 Move X20, [X31+16]
+	074 Move X19, [X31+24]
+	075 Move X0, [X0+184]
+	076 Move X30, [X31+32]
+	077 Call 0x239F888
+	078 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x026C0DD4 LDR X0, [X0 + 0xB8]
+	0x026C0DD8 LDR X30, [X31], #0x20
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <OrganizeActivableStatesByValidityOnDeserialization>b__2_0(Metaplay.Core.MetaDictionary`2+KeyValue<TId, TActivableState> kv)
+
+Disassembly:
+	0x026C0DDC B 0x239B888
+	0x026C0DE0 MOV X1, X31
+	0x026C0DE4 B 0x44E8DEC
+	0x026C0DE8 STP X29, X30, [X31 - 0x60]!
+	0x026C0DEC STP X28, X27, [X31 + 0x10]
+	0x026C0DF0 STP X26, X25, [X31 + 0x20]
+	0x026C0DF4 STP X24, X23, [X31 + 0x30]
+	0x026C0DF8 STP X22, X21, [X31 + 0x40]
+	0x026C0DFC STP X20, X19, [X31 + 0x50]
+	0x026C0E00 ADD X29, X31, 0x0
+	0x026C0E04 SUB X31, X31, 0x80
+	0x026C0E08 STP X3, X4, [X29 - 0x38]
+	0x026C0E0C STUR X2, [X29 - 0x50]
+	0x026C0E10 MRS X8, 0xC000
+	0x026C0E14 STUR X8, [X29 - 0x28]
+	0x026C0E18 LDR X8, [X8 + 0x28]
+	0x026C0E1C STUR X8, [X29 - 0x8]
+	0x026C0E20 LDR X8, [X5 + 0x20]
+	0x026C0E24 STP X2, X1, [X29 - 0x18]
+	0x026C0E28 STUR X3, [X29 - 0x20]
+	0x026C0E2C LDR X9, [X8 + 0xC0]
+	0x026C0E30 LDP X8, X19, [X9 + 0x18]
+	0x026C0E34 LDR X10, [X9 + 0x28]
+	0x026C0E38 STP X10, X9, [X29 - 0x48]
+	0x026C0E3C LDR X9, [X9 + 0x30]
+	0x026C0E40 LDR W23, [X10 + 0xFC]
+	0x026C0E44 LDR W2, [X8 + 0xFC]
+	0x026C0E48 LDR W20, [X19 + 0xFC]
+	0x026C0E4C LDR W27, [X9 + 0xFC]
+	0x026C0E50 ADD X9, X31, 0x0
+	0x026C0E54 ADD X10, X2, 0xF
+	0x026C0E58 AND X10, X10, 0x1FFFFFFFF
+	0x026C0E5C SUB X24, X9, X10
+	0x026C0E60 ADD X31, X24, 0x0
+	0x026C0E64 ADD X9, X31, 0x0
+	0x026C0E68 SUB X9, X9, X10
+	0x026C0E6C STUR X9, [X29 - 0x78]
+	0x026C0E70 ADD X31, X9, 0x0
+	0x026C0E74 ADD X10, X20, 0xF
+	0x026C0E78 ADD X9, X31, 0x0
+	0x026C0E7C AND X10, X10, 0x1FFFFFFFF
+	0x026C0E80 SUB X21, X9, X10
+	0x026C0E84 ADD X31, X21, 0x0
+	0x026C0E88 ADD X9, X31, 0x0
+	0x026C0E8C SUB X9, X9, X10
+
+ISIL:
+	001 Move [X31-48], X29
+	002 Move [X31-40], X30
+	003 Move [X31+16], X21
+	004 Move [X31+32], X20
+	005 Move [X31+40], X19
+	006 Add X29, X31, 0
+	007 Subtract X31, X31, 16
+	008 NotImplemented "Instruction MRS not yet implemented."
+	009 Move X8, [X20+40]
+	010 Move [X29-8], X8
+	011 Move X8, [X2+32]
+	012 Move X8, [X8+192]
+	013 Move X21, [X8+24]
+	014 Add X8, X31, 0
+	015 Move W2, [X21+252]
+	016 Add X9, X2, 15
+	017 And X9, X9, 0x1FFFFFFFF
+	018 Subtract X19, X8, X9
+	019 Add X31, X19, 0
+	020 Move X0, X19
+	021 Call 0x53ED0D0
+	022 Move X8, [X21+128]
+	023 Move X0, X19
+	024 Add X1, X8, 32
+	025 Call 0x239F90C
+	026 Move X0, [X0]
+	027 Compare X0, 0
+	028 JumpIfEqual {45}
+	029 Move X8, [X0]
+	030 Move X9, [X8+392]
+	031 Move X1, [X8+400]
+	032 NotImplemented "Instruction BLR not yet implemented."
+	033 Move X8, [X20+40]
+	034 NotImplemented "Instruction LDUR not yet implemented."
+	035 NotImplemented "Instruction CMP not yet implemented."
+	036 Xor W8, W0, 1
+	037 And W0, W8, 1
+	038 Add X31, X29, 0
+	039 Move X20, [X31+32]
+	040 Move X19, [X31+40]
+	041 Move X21, [X31+16]
+	042 Move X29, [X31+48]
+	043 Move X30, [X31+56]
+	044 Return X0
+	045 Move X8, [X20+40]
+	046 NotImplemented "Instruction LDUR not yet implemented."
+	047 NotImplemented "Instruction CMP not yet implemented."
+	048 Call 0x239FB90
+	049 Call 0x53ED0F0
+
+Method: System.Boolean <OrganizeActivableStatesByValidityOnDeserialization>b__2_1(Metaplay.Core.MetaDictionary`2+KeyValue<TId, TActivableState> kv)
+
+Disassembly:
+	0x026C0E90 STUR X9, [X29 - 0x58]
+	0x026C0E94 ADD X31, X9, 0x0
+	0x026C0E98 ADD X10, X23, 0xF
+	0x026C0E9C ADD X9, X31, 0x0
+	0x026C0EA0 AND X10, X10, 0x1FFFFFFFF
+	0x026C0EA4 SUB X28, X9, X10
+	0x026C0EA8 ADD X31, X28, 0x0
+	0x026C0EAC ADD X9, X31, 0x0
+	0x026C0EB0 SUB X9, X9, X10
+	0x026C0EB4 STP X2, X9, [X29 - 0x70]
+	0x026C0EB8 ADD X31, X9, 0x0
+	0x026C0EBC ADD X10, X27, 0xF
+	0x026C0EC0 ADD X9, X31, 0x0
+	0x026C0EC4 AND X10, X10, 0x1FFFFFFFF
+	0x026C0EC8 SUB X25, X9, X10
+	0x026C0ECC ADD X31, X25, 0x0
+	0x026C0ED0 LDR W26, [X8 + 0x28]
+	0x026C0ED4 SUB X8, X29, 0x10
+	0x026C0ED8 MOV X0, X24
+	0x026C0EDC CMP W26, 0x0
+	0x026C0EE0 CSEL X22, X1, X8, LT
+	0x026C0EE4 MOV X1, X22
+	0x026C0EE8 BL 0x53E90D0
+	0x026C0EEC LDR W19, [X19 + 0x28]
+	0x026C0EF0 LDUR X9, [X29 - 0x50]
+	0x026C0EF4 SUB X8, X29, 0x18
+	0x026C0EF8 MOV X0, X21
+	0x026C0EFC MOV X2, X20
+	0x026C0F00 STUR X20, [X29 - 0x60]
+	0x026C0F04 CMP W19, 0x0
+	0x026C0F08 CSEL X1, X9, X8, LT
+	0x026C0F0C STUR X1, [X29 - 0x80]
+	0x026C0F10 BL 0x53E90D0
+	0x026C0F14 LDUR X8, [X29 - 0x48]
+	0x026C0F18 LDUR X9, [X29 - 0x38]
+	0x026C0F1C MOV X0, X28
+	0x026C0F20 MOV X2, X23
+	0x026C0F24 STP X23, X28, [X29 - 0x50]
+	0x026C0F28 LDR W20, [X8 + 0x28]
+	0x026C0F2C SUB X8, X29, 0x20
+	0x026C0F30 CMP W20, 0x0
+	0x026C0F34 CSEL X8, X9, X8, LT
+	0x026C0F38 MOV X1, X8
+	0x026C0F3C MOV X28, X8
+
+ISIL:
+	001 Move [X31-48], X29
+	002 Move [X31-40], X30
+	003 Move [X31+16], X21
+	004 Move [X31+32], X20
+	005 Move [X31+40], X19
+	006 Add X29, X31, 0
+	007 Subtract X31, X31, 16
+	008 NotImplemented "Instruction MRS not yet implemented."
+	009 Move X8, [X20+40]
+	010 Move [X29-8], X8
+	011 Move X8, [X2+32]
+	012 Move X8, [X8+192]
+	013 Move X21, [X8+24]
+	014 Add X8, X31, 0
+	015 Move W2, [X21+252]
+	016 Add X9, X2, 15
+	017 And X9, X9, 0x1FFFFFFFF
+	018 Subtract X19, X8, X9
+	019 Add X31, X19, 0
+	020 Move X0, X19
+	021 Call 0x53ED0D0
+	022 Move X8, [X21+128]
+	023 Move X0, X19
+	024 Add X1, X8, 32
+	025 Call 0x239F90C
+	026 Move X0, [X0]
+	027 Compare X0, 0
+	028 JumpIfEqual {44}
+	029 Move X8, [X0]
+	030 Move X9, [X8+392]
+	031 Move X1, [X8+400]
+	032 NotImplemented "Instruction BLR not yet implemented."
+	033 Move X8, [X20+40]
+	034 NotImplemented "Instruction LDUR not yet implemented."
+	035 NotImplemented "Instruction CMP not yet implemented."
+	036 And W0, W0, 1
+	037 Add X31, X29, 0
+	038 Move X20, [X31+32]
+	039 Move X19, [X31+40]
+	040 Move X21, [X31+16]
+	041 Move X29, [X31+48]
+	042 Move X30, [X31+56]
+	043 Return X0
+	044 Move X8, [X20+40]
+	045 NotImplemented "Instruction LDUR not yet implemented."
+	046 NotImplemented "Instruction CMP not yet implemented."
+	047 Call 0x239FB90
+	048 Call 0x53ED0F0
+

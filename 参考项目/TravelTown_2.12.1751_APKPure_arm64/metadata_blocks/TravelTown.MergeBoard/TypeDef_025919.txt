@@ -1,0 +1,12 @@
+// Namespace: Merger.MergeBoard.Data
+public class FeedingCombinationConsumedItemSnapshot // TypeDefIndex: 25919
+{
+	// Fields
+	public ItemPayloadBase ItemPayloadBase; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A85560 Offset: 0x6A81560 VA: 0x6A85560
+	public void .ctor(ItemPayloadBase itemPayloadBase) { }
+}
+

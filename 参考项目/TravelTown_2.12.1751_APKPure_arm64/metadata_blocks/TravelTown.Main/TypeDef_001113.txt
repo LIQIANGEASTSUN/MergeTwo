@@ -1,0 +1,25 @@
+// Namespace: MergeEngine.ECS.Components.InteractionTracking
+public class ExpendableTrackingData // TypeDefIndex: 1113
+{
+	// Fields
+	public IMergeItem SpawnerItem; // 0x10
+	public bool IsExpend; // 0x18
+	public Nullable<int> ExpendUsesLeft; // 0x1C
+	public string ExpendItemTransform; // 0x28
+	private string _expendItemSpawned; // 0x30
+
+	// Properties
+	public string ExpendItemSpawned { get; set; }
+
+	// Methods
+
+	// RVA: 0x6900500 Offset: 0x68FC500 VA: 0x6900500
+	public string get_ExpendItemSpawned() { }
+
+	// RVA: 0x6900508 Offset: 0x68FC508 VA: 0x6900508
+	public void set_ExpendItemSpawned(string value) { }
+
+	// RVA: 0x69005E4 Offset: 0x68FC5E4 VA: 0x69005E4
+	public void .ctor() { }
+}
+

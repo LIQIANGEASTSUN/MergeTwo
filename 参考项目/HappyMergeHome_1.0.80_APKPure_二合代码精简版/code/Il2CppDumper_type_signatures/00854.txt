@@ -1,0 +1,257 @@
+// Namespace: 
+public class PizzaTowerModel : ActivityEntityBase // TypeDefIndex: 854
+{
+	// Fields
+	private static PizzaTowerModel _instance; // 0x0
+	private int _lastCurLevel; // 0x3C
+	private int _lastTotalLevel; // 0x40
+	private int _curLevel; // 0x44
+	private int _totalLevel; // 0x48
+	private bool LoopCreateStorage; // 0x4C
+	private List<TaskCompletionSource<bool>> AddScoreAsyncLock; // 0x50
+	private bool AddScoreInAsync; // 0x54
+	private Dictionary<int, PizzaTowerProductConfig> _PizzaTowerProductConfig; // 0x58
+	private bool _isFlyCollection; // 0x5C
+	private bool _lastActivityOpenState; // 0x5D
+	public Dictionary<int, PizzaTowerConfig> PizzaTowerDictionary; // 0x60
+	public int MaxLevel; // 0x64
+	public int MinLevel; // 0x68
+	public int MaxScore; // 0x6C
+
+	// Properties
+	public static PizzaTowerModel Instance { get; }
+	public override string Guid { get; }
+	public int CurScore { get; set; }
+	public int TotalScore { get; set; }
+	public int CurLevel { get; }
+	public int TotalLevel { get; }
+	public Dictionary<int, PizzaTowerProductConfig> PizzaTowerProductConfig { get; }
+	public List<PizzaTowerConfig> PizzaTowerList { get; }
+	public List<PizzaTowerProductConfig> PizzaTowerProductList { get; }
+	public PizzaTowerGlobalConfig GlobalConfig { get; }
+	public List<PizzaTowerLeaderBoardRewardConfig> LeaderBoardRewardConfig { get; }
+	public static StoragePizzaTower StoragePizzaTower { get; }
+	public StoragePizzaTower CurStoragePizzaTowerWeek { get; }
+
+	// Methods
+
+	// RVA: 0x1B0AE08 Offset: 0x1B0AE08 VA: 0x1B0AE08
+	public bool ShowEntrance() { }
+
+	// RVA: 0x1B088F4 Offset: 0x1B088F4 VA: 0x1B088F4
+	public static PizzaTowerModel get_Instance() { }
+
+	// RVA: 0x1B0B094 Offset: 0x1B0B094 VA: 0x1B0B094 Slot: 4
+	public override string get_Guid() { }
+
+	// RVA: 0x1B0B124 Offset: 0x1B0B124 VA: 0x1B0B124
+	public int get_CurScore() { }
+
+	// RVA: 0x1B0B190 Offset: 0x1B0B190 VA: 0x1B0B190
+	public void set_CurScore(int value) { }
+
+	// RVA: 0x1B0BB7C Offset: 0x1B0BB7C VA: 0x1B0BB7C
+	public int get_TotalScore() { }
+
+	// RVA: 0x1B0BC00 Offset: 0x1B0BC00 VA: 0x1B0BC00
+	public void set_TotalScore(int value) { }
+
+	// RVA: 0x1B0C0E8 Offset: 0x1B0C0E8 VA: 0x1B0C0E8
+	public void RebuildScoreState(int totalScore, int curScore) { }
+
+	// RVA: 0x1B0C30C Offset: 0x1B0C30C VA: 0x1B0C30C
+	public List<int> GetUnCollectLevels() { }
+
+	// RVA: 0x1B0C4DC Offset: 0x1B0C4DC VA: 0x1B0C4DC
+	private static bool IsPizzaTowerStorageEnd(StoragePizzaTower storagePizzaTower) { }
+
+	// RVA: 0x1B0C5BC Offset: 0x1B0C5BC VA: 0x1B0C5BC
+	public List<ResData> GetUnCollectRewards() { }
+
+	// RVA: 0x1B0C9CC Offset: 0x1B0C9CC VA: 0x1B0C9CC
+	public List<ResData> GetCurrentUnCollectRewards() { }
+
+	// RVA: 0x1B0CD34 Offset: 0x1B0CD34 VA: 0x1B0CD34
+	public void CleanUnCollectRewardsList() { }
+
+	// RVA: 0x1B0B764 Offset: 0x1B0B764 VA: 0x1B0B764
+	public int get_CurLevel() { }
+
+	// RVA: 0x1B0C094 Offset: 0x1B0C094 VA: 0x1B0C094
+	public int get_TotalLevel() { }
+
+	[RuntimeInitializeOnLoadMethod(0)]
+	// RVA: 0x1B0CEF8 Offset: 0x1B0CEF8 VA: 0x1B0CEF8
+	private static void InitAuto() { }
+
+	// RVA: 0x1B0CF60 Offset: 0x1B0CF60 VA: 0x1B0CF60 Slot: 5
+	public override void InitFromServerData(string activityId, string activityType, ulong startTime, ulong endTime, ulong rewardEndTime, bool manualEnd, string configJson, string activitySubType) { }
+
+	// RVA: 0x1B0DEEC Offset: 0x1B0DEEC VA: 0x1B0DEEC Slot: 17
+	public override void SetTempEndTime(int timer = 10) { }
+
+	// RVA: 0x1B0AEBC Offset: 0x1B0AEBC VA: 0x1B0AEBC
+	public bool IsPrivateOpened() { }
+
+	// RVA: 0x1B0E11C Offset: 0x1B0E11C VA: 0x1B0E11C Slot: 19
+	public override void UpdateActivityState() { }
+
+	// RVA: 0x1B0E180 Offset: 0x1B0E180 VA: 0x1B0E180 Slot: 18
+	protected override void InitServerDataFinish() { }
+
+	// RVA: 0x1B0E048 Offset: 0x1B0E048 VA: 0x1B0E048
+	public bool IsOpened(bool hasLog = False) { }
+
+	[AsyncStateMachine(typeof(PizzaTowerModel.<AddScore>d__36))]
+	// RVA: 0x1B0E1CC Offset: 0x1B0E1CC VA: 0x1B0E1CC
+	public void AddScore(int score, List<TaskCompletionSource<bool>> addValueTask) { }
+
+	// RVA: 0x1B0E2FC Offset: 0x1B0E2FC VA: 0x1B0E2FC
+	public bool IsMaxLevel() { }
+
+	// RVA: 0x1B0E37C Offset: 0x1B0E37C VA: 0x1B0E37C
+	public void RemoveAllPizzaTowerBanana() { }
+
+	// RVA: 0x1B0E494 Offset: 0x1B0E494 VA: 0x1B0E494
+	public bool CanManualActivity() { }
+
+	// RVA: 0x1B0E508 Offset: 0x1B0E508 VA: 0x1B0E508
+	public int GetUpperScore(int score, int level) { }
+
+	// RVA: 0x1B0E684 Offset: 0x1B0E684 VA: 0x1B0E684
+	public void CompletedActivity() { }
+
+	// RVA: 0x1B0E6FC Offset: 0x1B0E6FC VA: 0x1B0E6FC
+	public bool IsComplete() { }
+
+	// RVA: 0x1B0E798 Offset: 0x1B0E798 VA: 0x1B0E798
+	public void EndActivity() { }
+
+	// RVA: 0x1B0EA68 Offset: 0x1B0EA68 VA: 0x1B0EA68
+	public void StartActivity() { }
+
+	// RVA: 0x1B0EAB4 Offset: 0x1B0EAB4 VA: 0x1B0EAB4
+	public Dictionary<int, PizzaTowerProductConfig> get_PizzaTowerProductConfig() { }
+
+	// RVA: 0x1B0EE2C Offset: 0x1B0EE2C VA: 0x1B0EE2C
+	public void MergeToProductPizzaTower(TableMergeItem tableMergeItem, Vector3 srcPos) { }
+
+	// RVA: 0x1B0F180 Offset: 0x1B0F180 VA: 0x1B0F180
+	public void AddRandomTaskScore(int seat, int coin, Vector3 scrPos) { }
+
+	// RVA: 0x1B0F4F0 Offset: 0x1B0F4F0 VA: 0x1B0F4F0
+	public int GetRandomTaskScore(StorageOrderItem storageOrderItem) { }
+
+	[AsyncStateMachine(typeof(PizzaTowerModel.<AddActivityScore>d__51))]
+	[IDTag(1)]
+	// RVA: 0x1B0F044 Offset: 0x1B0F044 VA: 0x1B0F044
+	public void AddActivityScore(int count, Vector3 srcPos) { }
+
+	[IDTag(0)]
+	// RVA: 0x1B0F884 Offset: 0x1B0F884 VA: 0x1B0F884
+	public void AddActivityScore(int count) { }
+
+	// RVA: 0x1B0FBC8 Offset: 0x1B0FBC8 VA: 0x1B0FBC8
+	private void FlyScore(int count, Vector3 scrPos, Action endCall) { }
+
+	// RVA: 0x1B10244 Offset: 0x1B10244 VA: 0x1B10244
+	public bool CanShowStartView() { }
+
+	// RVA: 0x1B102D4 Offset: 0x1B102D4 VA: 0x1B102D4
+	public void ShowStartView() { }
+
+	// RVA: 0x1B1034C Offset: 0x1B1034C VA: 0x1B1034C
+	public bool CanShowPreStartView() { }
+
+	// RVA: 0x1B103DC Offset: 0x1B103DC VA: 0x1B103DC
+	public void ShowPreStartView() { }
+
+	// RVA: 0x1B0AF48 Offset: 0x1B0AF48 VA: 0x1B0AF48
+	public void .ctor() { }
+
+	// RVA: 0x1B10454 Offset: 0x1B10454 VA: 0x1B10454
+	public void UpdateTime() { }
+
+	// RVA: 0x1B0E9E8 Offset: 0x1B0E9E8 VA: 0x1B0E9E8
+	public bool IsCanClearBananas() { }
+
+	// RVA: 0x1B10584 Offset: 0x1B10584 VA: 0x1B10584
+	public bool IsActivityEnd() { }
+
+	// RVA: 0x1B10708 Offset: 0x1B10708 VA: 0x1B10708 Slot: 23
+	public override bool CanDownLoadRes() { }
+
+	// RVA: 0x1B0DE94 Offset: 0x1B0DE94 VA: 0x1B0DE94
+	public void CleanUselessStorage() { }
+
+	// RVA: 0x1B10DB0 Offset: 0x1B10DB0 VA: 0x1B10DB0
+	public bool CanShowTip() { }
+
+	// RVA: 0x1B11084 Offset: 0x1B11084 VA: 0x1B11084
+	public List<PizzaTowerConfig> get_PizzaTowerList() { }
+
+	// RVA: 0x1B0ED54 Offset: 0x1B0ED54 VA: 0x1B0ED54
+	public List<PizzaTowerProductConfig> get_PizzaTowerProductList() { }
+
+	// RVA: 0x1B089B8 Offset: 0x1B089B8 VA: 0x1B089B8
+	public PizzaTowerGlobalConfig get_GlobalConfig() { }
+
+	// RVA: 0x1B09378 Offset: 0x1B09378 VA: 0x1B09378
+	public List<PizzaTowerLeaderBoardRewardConfig> get_LeaderBoardRewardConfig() { }
+
+	// RVA: 0x1B0DCC4 Offset: 0x1B0DCC4 VA: 0x1B0DCC4
+	public void InitConfig() { }
+
+	// RVA: 0x1B112D8 Offset: 0x1B112D8 VA: 0x1B112D8
+	public int GetMaxLevel() { }
+
+	// RVA: 0x1B1142C Offset: 0x1B1142C VA: 0x1B1142C
+	public int GetMaxScore() { }
+
+	// RVA: 0x1B0B67C Offset: 0x1B0B67C VA: 0x1B0B67C
+	public int GetLevelByScore(int score) { }
+
+	// RVA: 0x1B0E598 Offset: 0x1B0E598 VA: 0x1B0E598
+	public int GetLevelBaseScore(int level) { }
+
+	// RVA: 0x1B11580 Offset: 0x1B11580 VA: 0x1B11580
+	public int GetLevelStageScore(int level) { }
+
+	// RVA: 0x1B0B7B8 Offset: 0x1B0B7B8 VA: 0x1B0B7B8
+	public List<ResData> GetLevelRewards(int level) { }
+
+	// RVA: 0x1B115F8 Offset: 0x1B115F8 VA: 0x1B115F8
+	public int GetLevelRewardsShowId(int level) { }
+
+	// RVA: 0x1B107B4 Offset: 0x1B107B4 VA: 0x1B107B4
+	public static StoragePizzaTower get_StoragePizzaTower() { }
+
+	// RVA: 0x1B08C14 Offset: 0x1B08C14 VA: 0x1B08C14
+	public StoragePizzaTower get_CurStoragePizzaTowerWeek() { }
+
+	// RVA: 0x1B0D650 Offset: 0x1B0D650 VA: 0x1B0D650
+	public bool CreateStorage() { }
+
+	// RVA: 0x1B0D4EC Offset: 0x1B0D4EC VA: 0x1B0D4EC
+	public static StoragePizzaTower GetFirstWeekCanGetReward() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B11784 Offset: 0x1B11784 VA: 0x1B11784
+	private bool <get_PizzaTowerList>b__69_0(PizzaTowerConfig a) { }
+
+	// RVA: 0x1B117CC Offset: 0x1B117CC VA: 0x1B117CC
+	public void <>iFixBaseProxy_InitFromServerData(string P0, string P1, ulong P2, ulong P3, ulong P4, bool P5, string P6, string P7) { }
+
+	// RVA: 0x1B11824 Offset: 0x1B11824 VA: 0x1B11824
+	public void <>iFixBaseProxy_SetTempEndTime(int P0) { }
+
+	// RVA: 0x1B1182C Offset: 0x1B1182C VA: 0x1B1182C
+	public void <>iFixBaseProxy_UpdateActivityState() { }
+
+	// RVA: 0x1B11834 Offset: 0x1B11834 VA: 0x1B11834
+	public void <>iFixBaseProxy_InitServerDataFinish() { }
+
+	// RVA: 0x1B1183C Offset: 0x1B1183C VA: 0x1B1183C
+	public bool <>iFixBaseProxy_CanDownLoadRes() { }
+}
+

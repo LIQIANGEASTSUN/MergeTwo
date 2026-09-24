@@ -1,0 +1,41 @@
+// Namespace: Merger.Game.Views.Inventory
+public abstract class BaseInventoryTabContentView<TViewModel> : GameViewBase<TViewModel>, IBaseInventoryTabContentView<TViewModel> // TypeDefIndex: 8921
+{
+	// Fields
+	[SerializeField]
+	protected int _itemsInRow; // 0x0
+	[SerializeField]
+	protected List<float> _viewportSizes; // 0x0
+	[SerializeField]
+	private float _defaultViewportSize; // 0x0
+
+	// Properties
+	protected virtual int ItemsCount { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 11
+	protected virtual int get_ItemsCount() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4BEC194 Offset: 0x4BE8194 VA: 0x4BEC194
+	|-BaseInventoryTabContentView<object>.get_ItemsCount
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public float GetViewportHeight() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4BEC1B8 Offset: 0x4BE81B8 VA: 0x4BEC1B8
+	|-BaseInventoryTabContentView<object>.GetViewportHeight
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4BEC2B0 Offset: 0x4BE82B0 VA: 0x4BEC2B0
+	|-BaseInventoryTabContentView<object>..ctor
+	*/
+}
+

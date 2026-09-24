@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeBoard.<>c__DisplayClass139_0 // TypeDefIndex: 2720
+{
+	// Fields
+	public int firstItemId; // 0x8
+
+	// Methods
+
+	// RVA: 0x2C2F928 Offset: 0x2C2F928 VA: 0x2C2F928
+	public void .ctor() { }
+
+	// RVA: 0x2C2F930 Offset: 0x2C2F930 VA: 0x2C2F930
+	internal bool <MergeToProductIceCube>b__0(TableIceItemConfig x) { }
+}
+

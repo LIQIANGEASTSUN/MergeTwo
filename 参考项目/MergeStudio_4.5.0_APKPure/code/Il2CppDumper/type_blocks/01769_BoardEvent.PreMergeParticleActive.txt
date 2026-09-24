@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BoardEvent.PreMergeParticleActive : IEvent // TypeDefIndex: 1769
+{
+	// Fields
+	public ItemController ItemController; // 0x0
+}
+

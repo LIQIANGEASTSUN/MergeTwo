@@ -1,0 +1,9 @@
+// Namespace: 
+public struct EnergyMultiplierEvents.PopupClosed : IEvent // TypeDefIndex: 4780
+{
+	// Fields
+	public int SelectedMultiplier; // 0x0
+	public int UnlockedMultiplier; // 0x4
+	public EnergyMultiplierPopupType PopupType; // 0x8
+}
+

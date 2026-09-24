@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemChainModel.<>c__DisplayClass10_0 // TypeDefIndex: 1749
+{
+	// Fields
+	public int unlockLevel; // 0x8
+
+	// Methods
+
+	// RVA: 0x1910E54 Offset: 0x1910E54 VA: 0x1910E54
+	public void .ctor() { }
+
+	// RVA: 0x1911CB4 Offset: 0x1911CB4 VA: 0x1911CB4
+	internal bool <GetLinksByUnlockLevel>b__0(ItemLinkModel l) { }
+}
+

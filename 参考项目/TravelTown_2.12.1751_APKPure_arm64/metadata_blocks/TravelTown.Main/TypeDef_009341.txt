@@ -1,0 +1,48 @@
+// Namespace: Merger.Game.Signal
+public class BoardItemCooldownSkippedSignal // TypeDefIndex: 9341
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly IMergeItem <Item>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly int <NumEmptyPositions>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private readonly ResourceMultiple <Price>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private readonly bool <ShowTimeLeft>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private readonly TimeCycleComponentAnalytics <TimeCycleComponentAnalytics>k__BackingField; // 0x30
+
+	// Properties
+	public IMergeItem Item { get; }
+	public int NumEmptyPositions { get; }
+	public ResourceMultiple Price { get; }
+	public bool ShowTimeLeft { get; }
+	public TimeCycleComponentAnalytics TimeCycleComponentAnalytics { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x676AB18 Offset: 0x6766B18 VA: 0x676AB18
+	public IMergeItem get_Item() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676AB20 Offset: 0x6766B20 VA: 0x676AB20
+	public int get_NumEmptyPositions() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676AB28 Offset: 0x6766B28 VA: 0x676AB28
+	public ResourceMultiple get_Price() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676AB30 Offset: 0x6766B30 VA: 0x676AB30
+	public bool get_ShowTimeLeft() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676AB38 Offset: 0x6766B38 VA: 0x676AB38
+	public TimeCycleComponentAnalytics get_TimeCycleComponentAnalytics() { }
+
+	// RVA: 0x676AB4C Offset: 0x6766B4C VA: 0x676AB4C
+	public void .ctor(IMergeItem item, int numEmptyPositions, ResourceMultiple price, TimeCycleComponentAnalytics timeCycleComponentAnalytics, bool showTimeLeft) { }
+}
+

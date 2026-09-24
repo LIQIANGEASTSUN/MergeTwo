@@ -1,0 +1,44 @@
+// Namespace: MergeEngine.ECS.Util
+[Extension]
+public static class InteractionUtil // TypeDefIndex: 631
+{
+	// Methods
+
+	// RVA: 0x6277D78 Offset: 0x6273D78 VA: 0x6277D78
+	public static string[] GetMissingItemsNames(InteractionComponent interactionComponent, BoardItemCountComponent boardItemCountComponent) { }
+
+	// RVA: 0x6277F5C Offset: 0x6273F5C VA: 0x6277F5C
+	public static ItemMultiple[] GetConsumedItems(InteractionComponent interactionComponent, BoardItemCountComponent boardItemCountComponent) { }
+
+	// RVA: 0x6278140 Offset: 0x6274140 VA: 0x6278140
+	public static int GetItemInteractionCount(InteractionComponent interactionComponent) { }
+
+	// RVA: 0x627826C Offset: 0x627426C VA: 0x627826C
+	public static int GetEmptyPositionCount(InteractionComponent interactionComponent, BoardSystem boardSystem) { }
+
+	[Extension]
+	// RVA: 0x62782A8 Offset: 0x62742A8 VA: 0x62782A8
+	public static bool IsAnyMode(InteractionCapability capability) { }
+
+	[Extension]
+	// RVA: 0x6278400 Offset: 0x6274400 VA: 0x6278400
+	public static bool IsComboProducer(InteractionCapability capability) { }
+
+	[Extension]
+	// RVA: 0x6278558 Offset: 0x6274558 VA: 0x6278558
+	public static bool IsAnyMode(ProduceCapability capability) { }
+
+	[Extension]
+	// RVA: 0x62785B8 Offset: 0x62745B8 VA: 0x62785B8
+	public static bool IsComboProducer(ProduceCapability capability) { }
+
+	// RVA: 0x6278460 Offset: 0x6274460 VA: 0x6278460
+	private static bool IsComboProducer(List<Combination> combinations) { }
+
+	// RVA: 0x6278308 Offset: 0x6274308 VA: 0x6278308
+	private static bool IsAnyMode(List<Combination> combinations) { }
+
+	// RVA: 0x6278618 Offset: 0x6274618 VA: 0x6278618
+	public static bool CanAffordResourceInteractionCost(InteractionComponent interactionComponent, ResourcesSystem resourcesSystem) { }
+}
+

@@ -1,0 +1,19 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoosterActivator.<>c__DisplayClass11_0 // TypeDefIndex: 7789
+{
+	// Fields
+	public RemoteBoosterData remoteActiveBooster; // 0x10
+
+	// Methods
+
+	// RVA: 0x65C8C00 Offset: 0x65C4C00 VA: 0x65C8C00
+	public void .ctor() { }
+
+	// RVA: 0x65C8EF8 Offset: 0x65C4EF8 VA: 0x65C8EF8
+	internal bool <BoosterActivated>b__0(IBoosterController q) { }
+
+	// RVA: 0x65C8FB0 Offset: 0x65C4FB0 VA: 0x65C8FB0
+	internal bool <BoosterActivated>b__1(RemoteBoosterData a) { }
+}
+

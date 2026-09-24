@@ -1,0 +1,35 @@
+Type: Code.GameLogic.GameEvents.PlayerCollectibleBoardEventsModel+<>c__DisplayClass5_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x038064D8 MOV X20, X0
+	0x038064DC LDRB W8, [X21 + 0xF67]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <RefreshState>g__CanStartActivationBasedOnGroup|0(Code.GameLogic.GameEvents.CollectibleBoardEventInfo eventInfo)
+
+Disassembly:
+	0x03807DBC RET
+	0x03807DC0 SUB X31, X31, 0x30
+	0x03807DC4 STP X30, X21, [X31 + 0x10]
+	0x03807DC8 STP X20, X19, [X31 + 0x20]
+	0x03807DCC ADRP X21, 0x2523000
+	0x03807DD0 ADRP X20, 0x1F35000
+	0x03807DD4 MOV X19, X0
+
+ISIL:
+	001 Compare X1, 0
+	002 JumpIfEqual {8}
+	003 Move X8, [X0+16]
+	004 Move X0, X1
+	005 Move X1, X8
+	006 Call CollectibleBoardEventInfo.CanStartActivationBasedOnGroup, X0, X1
+	007 Return X0
+	008 Move [X31-16], X30
+	009 Call 0x239FB90
+

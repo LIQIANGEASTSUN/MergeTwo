@@ -1,0 +1,13 @@
+// Namespace: Merger.Services.Backend.Sync.Data.Payloads.Board
+[Serializable]
+public class BoardItem : ItemPayloadBase // TypeDefIndex: 9876
+{
+	// Fields
+	public SerializedPositionComponent position; // 0xA8
+
+	// Methods
+
+	// RVA: 0x67CAD8C Offset: 0x67C6D8C VA: 0x67CAD8C
+	public void .ctor() { }
+}
+

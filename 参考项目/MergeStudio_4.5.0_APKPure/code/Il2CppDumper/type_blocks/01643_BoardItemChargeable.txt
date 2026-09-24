@@ -1,0 +1,23 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "BoardItemChargeable", menuName = "Scriptable/BoardItem/Chargeable", order = 1)]
+public class BoardItemChargeable : BoardItemData // TypeDefIndex: 1643
+{
+	// Fields
+	public int ChargeSetID; // 0x2C
+	public int ChargeCountToCovertPerishable; // 0x30
+	public bool HasProgressText; // 0x34
+	[ShowIf("HasProgressText")]
+	public BoardItemData.ProgressTextData ProgressTextDataValue; // 0x38
+
+	// Methods
+
+	// RVA: 0x18C6564 Offset: 0x18C6564 VA: 0x18C6564 Slot: 4
+	public override bool Initialize(BoardEntity boardEntity, IItemController item, long millisecondsPassed, bool isNewlyCreated) { }
+
+	// RVA: 0x18C656C Offset: 0x18C656C VA: 0x18C656C Slot: 6
+	public override int GetTimeRequiredToExitCharging() { }
+
+	// RVA: 0x18C6574 Offset: 0x18C6574 VA: 0x18C6574
+	public void .ctor() { }
+}
+

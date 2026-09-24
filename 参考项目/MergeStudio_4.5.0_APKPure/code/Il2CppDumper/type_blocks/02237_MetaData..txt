@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MetaData.<>c__DisplayClass14_0 // TypeDefIndex: 2237
+{
+	// Fields
+	public int metaLevel; // 0x8
+
+	// Methods
+
+	// RVA: 0x19B1A94 Offset: 0x19B1A94 VA: 0x19B1A94
+	public void .ctor() { }
+
+	// RVA: 0x19B25B8 Offset: 0x19B25B8 VA: 0x19B25B8
+	internal bool <GetMetaCharacter>b__0(MetaVisitData item) { }
+}
+

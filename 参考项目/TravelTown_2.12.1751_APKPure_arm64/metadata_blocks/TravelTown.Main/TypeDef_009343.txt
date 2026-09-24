@@ -1,0 +1,9 @@
+// Namespace: Merger.Game.Signal
+public sealed class BoardItemSellClickButtonSignal // TypeDefIndex: 9343
+{
+	// Methods
+
+	// RVA: 0x676AC00 Offset: 0x6766C00 VA: 0x676AC00
+	public void .ctor() { }
+}
+

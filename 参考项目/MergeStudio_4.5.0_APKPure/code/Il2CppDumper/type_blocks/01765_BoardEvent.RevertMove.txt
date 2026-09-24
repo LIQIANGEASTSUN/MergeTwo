@@ -1,0 +1,8 @@
+// Namespace: 
+public struct BoardEvent.RevertMove : IEvent // TypeDefIndex: 1765
+{
+	// Fields
+	public ItemController Item; // 0x0
+	public bool ApplyScaleDownAnim; // 0x4
+}
+

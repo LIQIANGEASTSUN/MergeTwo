@@ -1,0 +1,72 @@
+// Namespace: Merger.RemoteLiveOps.Data.EventData
+public abstract class RemoteEventData // TypeDefIndex: 6438
+{
+	// Fields
+	[CompilerGenerated]
+	private RemoteFeatureStatus <Status>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private long <StartDate>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private long <EndDate>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private string[] <ConditionIds>k__BackingField; // 0x28
+
+	// Properties
+	[JsonProperty("status")]
+	public RemoteFeatureStatus Status { get; set; }
+	[JsonProperty("startDate")]
+	public long StartDate { get; set; }
+	[JsonProperty("endDate")]
+	public long EndDate { get; set; }
+	[JsonProperty("conditionIds")]
+	public string[] ConditionIds { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x64660BC Offset: 0x64620BC VA: 0x64660BC
+	public RemoteFeatureStatus get_Status() { }
+
+	[CompilerGenerated]
+	// RVA: 0x64660C4 Offset: 0x64620C4 VA: 0x64660C4
+	public void set_Status(RemoteFeatureStatus value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x64660CC Offset: 0x64620CC VA: 0x64660CC
+	public long get_StartDate() { }
+
+	[CompilerGenerated]
+	// RVA: 0x64660D4 Offset: 0x64620D4 VA: 0x64660D4
+	public void set_StartDate(long value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x64660DC Offset: 0x64620DC VA: 0x64660DC
+	public long get_EndDate() { }
+
+	[CompilerGenerated]
+	// RVA: 0x64660E4 Offset: 0x64620E4 VA: 0x64660E4
+	public void set_EndDate(long value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x64660EC Offset: 0x64620EC VA: 0x64660EC
+	public string[] get_ConditionIds() { }
+
+	[CompilerGenerated]
+	// RVA: 0x64660F4 Offset: 0x64620F4 VA: 0x64660F4
+	public void set_ConditionIds(string[] value) { }
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public virtual void Update<TUpdateData>(TUpdateData dataData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D6E904 Offset: 0x3D6A904 VA: 0x3D6E904
+	|-RemoteEventData.Update<object>
+	*/
+
+	// RVA: 0x64660FC Offset: 0x64620FC VA: 0x64660FC
+	public RemoteEventData ShallowCopy() { }
+
+	// RVA: 0x6465F70 Offset: 0x6461F70 VA: 0x6465F70
+	protected void .ctor() { }
+}
+

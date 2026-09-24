@@ -1,0 +1,46 @@
+Type: GameLogic.Player.Modifiers.InfiniteEnergyPlayerModifier
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x035A78C8 BL 0x23D527C
+	0x035A78CC B 0x35A78E0
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(Metaplay.Core.MetaTime startTime, Metaplay.Core.MetaDuration duration)
+
+Disassembly:
+	0x035A78D0 LDR W9, [X10]
+	0x035A78D4 ADD W9, W9, 0x6
+	0x035A78D8 ADD X8, X8, W9, 0x4, SXTW
+	0x035A78DC ADD X0, X8, 0x138
+	0x035A78E0 LDP X8, X1, [X0]
+	0x035A78E4 MOV X0, X19
+	0x035A78E8 BLR X8
+	0x035A78EC MOV X1, X0
+	0x035A78F0 STR X0, [X31 + 0x18]
+	0x035A78F4 ADD X0, X20, 0x10
+	0x035A78F8 BL 0x239B888
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move X20, X1
+	006 Move X1, X31
+	007 Move X19, X2
+	008 Move X21, X0
+	009 Call Object..ctor, X0
+	010 Move [X21+16], X20
+	011 Move [X21+24], X19
+	012 Move X20, [X31+16]
+	013 Move X19, [X31+24]
+	014 Move X30, [X31+32]
+	015 Move X21, [X31+40]
+	016 Return 
+

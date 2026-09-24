@@ -1,0 +1,94 @@
+// Namespace: Paxie.MergeStudio.Features.MiniBoard
+public class MiniBoardMovable : MonoBehaviour, IDragHandler, IEventSystemHandler, IBeginDragHandler, IEndDragHandler, IPointerClickHandler // TypeDefIndex: 1132
+{
+	// Fields
+	[SerializeField]
+	private MiniBoardMovable.Status _status; // 0x10
+	[SerializeField]
+	private MiniBoardMovable.InteractionStatus _interactionStatus; // 0x14
+	private readonly HashSet<Collider2D> _currentColliders; // 0x18
+	public MiniBoardItemController item; // 0x1C
+	private bool _dragEnded; // 0x20
+
+	// Properties
+	public MiniBoardMovable.InteractionStatus GetInteractionStatus { get; }
+	public MiniBoardMovable.Status MoveStatus { get; }
+
+	// Methods
+
+	// RVA: 0x17C5594 Offset: 0x17C5594 VA: 0x17C5594
+	public MiniBoardMovable.InteractionStatus get_GetInteractionStatus() { }
+
+	// RVA: 0x17C559C Offset: 0x17C559C VA: 0x17C559C
+	public MiniBoardMovable.Status get_MoveStatus() { }
+
+	// RVA: 0x17BDFD8 Offset: 0x17BDFD8 VA: 0x17BDFD8
+	public void SetStatus(MiniBoardMovable.Status status) { }
+
+	// RVA: 0x17BE0AC Offset: 0x17BE0AC VA: 0x17BE0AC
+	public void SetInteractionStatus(MiniBoardMovable.InteractionStatus interactionStatus) { }
+
+	// RVA: -1 Offset: -1
+	public T GetNearestCollidingComponent<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2514F0C Offset: 0x2514F0C VA: 0x2514F0C
+	|-MiniBoardMovable.GetNearestCollidingComponent<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public bool IsColliding<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2515904 Offset: 0x2515904 VA: 0x2515904
+	|-MiniBoardMovable.IsColliding<object>
+	|
+	|-RVA: 0x2515AF0 Offset: 0x2515AF0 VA: 0x2515AF0
+	|-MiniBoardMovable.IsColliding<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public List<T> GetNearestCollidingComponents<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2515358 Offset: 0x2515358 VA: 0x2515358
+	|-MiniBoardMovable.GetNearestCollidingComponents<object>
+	|
+	|-RVA: 0x25155D8 Offset: 0x25155D8 VA: 0x25155D8
+	|-MiniBoardMovable.GetNearestCollidingComponents<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x17C55C0 Offset: 0x17C55C0 VA: 0x17C55C0
+	private void OnTriggerEnter2D(Collider2D other) { }
+
+	// RVA: 0x17C5668 Offset: 0x17C5668 VA: 0x17C5668
+	private void OnTriggerStay2D(Collider2D other) { }
+
+	// RVA: 0x17C5724 Offset: 0x17C5724 VA: 0x17C5724
+	private void OnTriggerExit2D(Collider2D other) { }
+
+	// RVA: 0x17C57D0 Offset: 0x17C57D0 VA: 0x17C57D0
+	public void LogCurrentColliders() { }
+
+	// RVA: 0x17C55A4 Offset: 0x17C55A4 VA: 0x17C55A4
+	private void CancelDragBeforeChangingInteractionStatus(MiniBoardMovable.InteractionStatus interactionStatus) { }
+
+	// RVA: 0x17C5BB0 Offset: 0x17C5BB0 VA: 0x17C5BB0 Slot: 5
+	public void OnBeginDrag(PointerEventData eventData) { }
+
+	// RVA: 0x17C5C54 Offset: 0x17C5C54 VA: 0x17C5C54 Slot: 4
+	public void OnDrag(PointerEventData eventData) { }
+
+	// RVA: 0x17C5D94 Offset: 0x17C5D94 VA: 0x17C5D94 Slot: 6
+	public void OnEndDrag(PointerEventData eventData) { }
+
+	// RVA: 0x17C5B00 Offset: 0x17C5B00 VA: 0x17C5B00
+	private void DragEnded() { }
+
+	// RVA: 0x17C5D98 Offset: 0x17C5D98 VA: 0x17C5D98 Slot: 7
+	public void OnPointerClick(PointerEventData eventData) { }
+
+	// RVA: 0x17C5E0C Offset: 0x17C5E0C VA: 0x17C5E0C
+	public void .ctor() { }
+}
+

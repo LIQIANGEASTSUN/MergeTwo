@@ -1,0 +1,57 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class PendingItemsCombinationResult // TypeDefIndex: 25971
+{
+	// Fields
+	[CompilerGenerated]
+	private MergeCheckItemType <MergeCheckItemType>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private Entity <FirstItem>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private Entity <SecondItem>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private string <ResultItem>k__BackingField; // 0x28
+
+	// Properties
+	public MergeCheckItemType MergeCheckItemType { get; set; }
+	public Entity FirstItem { get; set; }
+	public Entity SecondItem { get; set; }
+	public string ResultItem { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AC60 Offset: 0x6A96C60 VA: 0x6A9AC60
+	public MergeCheckItemType get_MergeCheckItemType() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AC68 Offset: 0x6A96C68 VA: 0x6A9AC68
+	public void set_MergeCheckItemType(MergeCheckItemType value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AC70 Offset: 0x6A96C70 VA: 0x6A9AC70
+	public Entity get_FirstItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AC78 Offset: 0x6A96C78 VA: 0x6A9AC78
+	public void set_FirstItem(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AC80 Offset: 0x6A96C80 VA: 0x6A9AC80
+	public Entity get_SecondItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AC88 Offset: 0x6A96C88 VA: 0x6A9AC88
+	public void set_SecondItem(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AC90 Offset: 0x6A96C90 VA: 0x6A9AC90
+	public string get_ResultItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AC98 Offset: 0x6A96C98 VA: 0x6A9AC98
+	public void set_ResultItem(string value) { }
+
+	// RVA: 0x6A9ACA0 Offset: 0x6A96CA0 VA: 0x6A9ACA0
+	public void .ctor() { }
+}
+

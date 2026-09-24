@@ -1,0 +1,159 @@
+// Namespace: MergePuzzle
+public class CellController : MonoBehaviour, ITutorialSetSorting // TypeDefIndex: 1592
+{
+	// Fields
+	private static readonly Vector3 NormalScale; // 0x0
+	private static readonly Vector3 CustomTutorialScale; // 0xC
+	[BoxGroup("Data")]
+	[SerializeField]
+	private BoardCellData DefaultBoardCellData; // 0x10
+	[BoxGroup("Component")]
+	[SerializeField]
+	private BoxCollider2D BoxCollider2D; // 0x14
+	[SerializeField]
+	[BoxGroup("Component")]
+	private SortingGroup SortingGroup; // 0x18
+	[SerializeField]
+	[BoxGroup("UI")]
+	private SpriteRenderer Background; // 0x1C
+	[BoxGroup("UI")]
+	[SerializeField]
+	private SpriteRenderer SelectIcon; // 0x20
+	[BoxGroup("UI")]
+	[SerializeField]
+	private SpriteRenderer DoneableBackground; // 0x24
+	[SerializeField]
+	[BoxGroup("Animation")]
+	private AnimationController AnimationController; // 0x28
+	[BoxGroup("Animation")]
+	[SerializeField]
+	private AnimationLoop SelectedIconAnimation; // 0x2C
+	[SerializeField]
+	[BoxGroup("Animation")]
+	private AnimationLoop DoneableFadeAnimation; // 0x30
+	[CompilerGenerated]
+	private CellEntity <CellEntity>k__BackingField; // 0x34
+	[CompilerGenerated]
+	private SortingData <SortingData>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private bool <IsEvenCell>k__BackingField; // 0x3C
+	private BoardController _board; // 0x40
+	private bool _doneable; // 0x44
+	private BoardCellData _boardCellData; // 0x48
+	private Sequence _doneableSequence; // 0x4C
+
+	// Properties
+	public CellEntity CellEntity { get; set; }
+	public SortingData SortingData { get; set; }
+	public bool IsEvenCell { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x188022C Offset: 0x188022C VA: 0x188022C
+	public CellEntity get_CellEntity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1880234 Offset: 0x1880234 VA: 0x1880234
+	public void set_CellEntity(CellEntity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x188023C Offset: 0x188023C VA: 0x188023C
+	public SortingData get_SortingData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1880244 Offset: 0x1880244 VA: 0x1880244
+	private void set_SortingData(SortingData value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x188024C Offset: 0x188024C VA: 0x188024C
+	public bool get_IsEvenCell() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1880254 Offset: 0x1880254 VA: 0x1880254
+	private void set_IsEvenCell(bool value) { }
+
+	// RVA: 0x188025C Offset: 0x188025C VA: 0x188025C Slot: 4
+	public void SetTutorialSortingData(SortingData sortingData) { }
+
+	// RVA: 0x18802D4 Offset: 0x18802D4 VA: 0x18802D4 Slot: 5
+	public SortingData GetTutorialSortingData() { }
+
+	// RVA: 0x18802AC Offset: 0x18802AC VA: 0x18802AC
+	private void SetSortingData(SortingData sortingData) { }
+
+	// RVA: 0x1880370 Offset: 0x1880370 VA: 0x1880370
+	private void ArrangeSorting(bool moveToFront) { }
+
+	// RVA: 0x1880458 Offset: 0x1880458 VA: 0x1880458
+	public void Initialize(BoardController board, CellEntity cellEntity) { }
+
+	// RVA: 0x1880750 Offset: 0x1880750 VA: 0x1880750
+	public void ArrangeBackground(bool customTutorialEnabled) { }
+
+	// RVA: 0x1880980 Offset: 0x1880980 VA: 0x1880980
+	public void Deselect() { }
+
+	// RVA: 0x18809A0 Offset: 0x18809A0 VA: 0x18809A0
+	public void Select() { }
+
+	// RVA: 0x1880A90 Offset: 0x1880A90 VA: 0x1880A90
+	public void SelectWithAnimation() { }
+
+	// RVA: 0x18808D8 Offset: 0x18808D8 VA: 0x18808D8
+	public void ArrangeSelectedImage(bool isActive) { }
+
+	// RVA: 0x1880FD0 Offset: 0x1880FD0 VA: 0x1880FD0
+	public void DisableTrigger(bool disabled) { }
+
+	// RVA: 0x188106C Offset: 0x188106C VA: 0x188106C
+	public void SetDoneableBackground(bool enable) { }
+
+	// RVA: 0x188130C Offset: 0x188130C VA: 0x188130C
+	public void DisableDoneableBackground() { }
+
+	// RVA: 0x1881314 Offset: 0x1881314 VA: 0x1881314
+	public void EnableDoneableBackground() { }
+
+	// RVA: 0x1881228 Offset: 0x1881228 VA: 0x1881228
+	public Tween DODoneableBackground(bool fadeIn) { }
+
+	// RVA: 0x188131C Offset: 0x188131C VA: 0x188131C
+	public Vector3 GetCornerPosition(Transform referenceTransform) { }
+
+	// RVA: 0x1881350 Offset: 0x1881350 VA: 0x1881350
+	public Vector3 GetCornerPosition(Transform referenceTransform, float coef) { }
+
+	// RVA: 0x18814D0 Offset: 0x18814D0 VA: 0x18814D0
+	public void ArrangeSortingJelly() { }
+
+	// RVA: 0x18814E0 Offset: 0x18814E0 VA: 0x18814E0
+	public void RestoreSorting() { }
+
+	// RVA: 0x18814F0 Offset: 0x18814F0 VA: 0x18814F0
+	public void StartMergeHintSorting(int offset) { }
+
+	// RVA: 0x1880F4C Offset: 0x1880F4C VA: 0x1880F4C
+	private bool IsTutorialActive() { }
+
+	// RVA: 0x18803B4 Offset: 0x18803B4 VA: 0x18803B4
+	private bool IsStepOneTransition() { }
+
+	// RVA: 0x1881528 Offset: 0x1881528 VA: 0x1881528
+	private void OnDestroy() { }
+
+	// RVA: 0x1881568 Offset: 0x1881568 VA: 0x1881568
+	public void .ctor() { }
+
+	// RVA: 0x1881570 Offset: 0x1881570 VA: 0x1881570
+	private static void .cctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18815E4 Offset: 0x18815E4 VA: 0x18815E4
+	private void <SetDoneableBackground>b__38_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1881628 Offset: 0x1881628 VA: 0x1881628
+	private void <SetDoneableBackground>b__38_1() { }
+}
+

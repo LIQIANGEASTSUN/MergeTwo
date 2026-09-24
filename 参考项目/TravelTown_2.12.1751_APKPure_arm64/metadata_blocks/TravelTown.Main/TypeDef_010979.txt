@@ -1,0 +1,14 @@
+// Namespace: Framework.Core.Services.Backend.Remote.Payloads.BoardState
+[Serializable]
+public class BoardStateResponse : BackendStates // TypeDefIndex: 10979
+{
+	// Fields
+	[JsonProperty("event", DefaultValueHandling = 1)]
+	public EventData EventData; // 0x20
+
+	// Methods
+
+	// RVA: 0x692766C Offset: 0x692366C VA: 0x692766C
+	public void .ctor() { }
+}
+

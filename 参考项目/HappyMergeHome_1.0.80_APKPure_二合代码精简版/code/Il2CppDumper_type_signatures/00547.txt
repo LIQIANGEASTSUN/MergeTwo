@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class FishCultureModel.<>c__DisplayClass38_1 // TypeDefIndex: 547
+{
+	// Fields
+	public int ind; // 0x8
+	public FishCultureModel.<>c__DisplayClass38_0 CS$<>8__locals1; // 0xC
+
+	// Methods
+
+	// RVA: 0x31D8C04 Offset: 0x31D8C04 VA: 0x31D8C04
+	public void .ctor() { }
+
+	// RVA: 0x31DC244 Offset: 0x31DC244 VA: 0x31DC244
+	internal void <FlyScore>b__0() { }
+}
+

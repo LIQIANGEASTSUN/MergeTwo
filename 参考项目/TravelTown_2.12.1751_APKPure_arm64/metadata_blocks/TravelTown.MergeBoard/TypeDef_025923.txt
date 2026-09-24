@@ -1,0 +1,9 @@
+// Namespace: Merger.MergeBoard.Data
+public interface IItemCombinerVisualPresentation // TypeDefIndex: 25923
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void ToggleVisuals(IVisualComponent draggedItem, IVisualComponent overlapItemOnDragAction, bool toggle);
+}
+

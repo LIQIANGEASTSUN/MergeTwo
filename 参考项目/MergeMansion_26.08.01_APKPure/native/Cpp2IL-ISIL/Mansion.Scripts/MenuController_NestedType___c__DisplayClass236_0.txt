@@ -1,0 +1,39 @@
+Type: MenuController+<>c__DisplayClass236_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x02B71388 STR X31, [X31 + 0xE0]
+	0x02B7138C STP X31, X31, [X31 + 0xB0]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void <PopMenuAndShowShop>b__0()
+
+Disassembly:
+	0x02B71390 STR X31, [X31 + 0xC0]
+	0x02B71394 STP X31, X31, [X31 + 0xA0]
+	0x02B71398 STP X31, X31, [X31 + 0x90]
+	0x02B7139C STR W31, [X31 + 0x88]
+	0x02B713A0 STR W8, [X31 + 0x10C]
+	0x02B713A4 CBZ W8, 0x2B713C4
+	0x02B713A8 CMP W8, 0x1
+	0x02B713AC B.NE 0x2B71464
+	0x02B713B0 ADD X8, X31, 0x10C
+
+ISIL:
+	001 Move X8, X0
+	002 Move X0, [X0+16]
+	003 Compare X0, 0
+	004 JumpIfEqual {10}
+	005 Move X1, [X8+24]
+	006 Move W2, 1
+	007 Move X3, X31
+	008 Call MenuController.OnHideMenuComplete, X0, X1, X2
+	009 Return 
+	010 Move [X31-16], X30
+	011 Call 0x239FB90
+

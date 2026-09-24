@@ -1,0 +1,9 @@
+// Namespace: 
+public struct BaseMiniBoardEvent.MergeStart : IEvent // TypeDefIndex: 1039
+{
+	// Fields
+	public MiniBoardItemController Item1; // 0x0
+	public MiniBoardItemController Item2; // 0x4
+	public BoardItemData SpawnedItem; // 0x8
+}
+

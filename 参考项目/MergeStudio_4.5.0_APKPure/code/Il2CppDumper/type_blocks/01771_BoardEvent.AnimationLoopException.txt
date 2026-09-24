@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BoardEvent.AnimationLoopException : IEvent // TypeDefIndex: 1771
+{
+	// Fields
+	public Exception Exception; // 0x0
+}
+

@@ -1,0 +1,17 @@
+// Namespace: Merger.Game.Signal.Combinations
+public class ItemExtractedSignal // TypeDefIndex: 9487
+{
+	// Fields
+	public IMergeItem ComboProducer; // 0x10
+	public TimeCycleComponentAnalytics TimeCycleComponentAnalytics; // 0x18
+	public int ExpendUsesLeft; // 0x40
+	public string ConsumedItems; // 0x48
+	public IEnumerable<int> EnergyCostOptions; // 0x50
+	public string SpawnedItemID; // 0x58
+
+	// Methods
+
+	// RVA: 0x676E2BC Offset: 0x676A2BC VA: 0x676E2BC
+	public void .ctor(IMergeItem comboProducer, TimeCycleComponentAnalytics timeCycleComponentAnalytics, int expendUsesLeft, string consumedItems, IEnumerable<int> energyCostOptions, string id) { }
+}
+

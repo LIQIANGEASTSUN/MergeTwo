@@ -1,0 +1,63 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class WeightedItemList.<>c<TItem> // TypeDefIndex: 119
+{
+	// Fields
+	public static readonly WeightedItemList.<>c<TItem> <>9; // 0x0
+	public static Func<WeightedItem<TItem>, TItem> <>9__2_0; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	private static void .cctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3EF3B58 Offset: 0x3EEFB58 VA: 0x3EF3B58
+	|-WeightedItemList.<>c<int>..cctor
+	|
+	|-RVA: 0x3EF45EC Offset: 0x3EF05EC VA: 0x3EF45EC
+	|-WeightedItemList.<>c<Int32Enum>..cctor
+	|
+	|-RVA: 0x3EF7F00 Offset: 0x3EF3F00 VA: 0x3EF7F00
+	|-WeightedItemList.<>c<object>..cctor
+	|
+	|-RVA: 0x3EFCB10 Offset: 0x3EF8B10 VA: 0x3EFCB10
+	|-WeightedItemList.<>c<__Il2CppFullySharedGenericType>..cctor
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3EF3C14 Offset: 0x3EEFC14 VA: 0x3EF3C14
+	|-WeightedItemList.<>c<int>..ctor
+	|
+	|-RVA: 0x3EF46A8 Offset: 0x3EF06A8 VA: 0x3EF46A8
+	|-WeightedItemList.<>c<Int32Enum>..ctor
+	|
+	|-RVA: 0x3EF7FBC Offset: 0x3EF3FBC VA: 0x3EF7FBC
+	|-WeightedItemList.<>c<object>..ctor
+	|
+	|-RVA: 0x3EFCC04 Offset: 0x3EF8C04 VA: 0x3EFCC04
+	|-WeightedItemList.<>c<__Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal TItem <get_PlainItems>b__2_0(WeightedItem<TItem> weightedItem) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3EF3C1C Offset: 0x3EEFC1C VA: 0x3EF3C1C
+	|-WeightedItemList.<>c<int>.<get_PlainItems>b__2_0
+	|
+	|-RVA: 0x3EF46B0 Offset: 0x3EF06B0 VA: 0x3EF46B0
+	|-WeightedItemList.<>c<Int32Enum>.<get_PlainItems>b__2_0
+	|
+	|-RVA: 0x3EF7FC4 Offset: 0x3EF3FC4 VA: 0x3EF7FC4
+	|-WeightedItemList.<>c<object>.<get_PlainItems>b__2_0
+	|
+	|-RVA: 0x3EFCC0C Offset: 0x3EF8C0C VA: 0x3EFCC0C
+	|-WeightedItemList.<>c<__Il2CppFullySharedGenericType>.<get_PlainItems>b__2_0
+	*/
+}
+

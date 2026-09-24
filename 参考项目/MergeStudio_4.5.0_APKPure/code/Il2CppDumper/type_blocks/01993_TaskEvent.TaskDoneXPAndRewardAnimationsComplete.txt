@@ -1,0 +1,4 @@
+// Namespace: 
+public struct TaskEvent.TaskDoneXPAndRewardAnimationsComplete : IEvent // TypeDefIndex: 1993
+{}
+

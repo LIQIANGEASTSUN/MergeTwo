@@ -1,0 +1,10 @@
+// Namespace: 
+public struct TaskEvent.TaskDoneProcessStarted : IEvent // TypeDefIndex: 1992
+{
+	// Fields
+	public BoardTaskItem CompletedTask; // 0x0
+	public BoardTaskItemController TaskItemController; // 0x4
+	public List<BoardTaskItem> AddedTasks; // 0x8
+	public bool PhaseUpdate; // 0xC
+}
+

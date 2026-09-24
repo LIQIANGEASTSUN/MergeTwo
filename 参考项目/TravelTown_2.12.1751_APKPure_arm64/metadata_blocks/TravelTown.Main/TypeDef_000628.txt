@@ -1,0 +1,37 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class InteractionUtil.<>c // TypeDefIndex: 628
+{
+	// Fields
+	public static readonly InteractionUtil.<>c <>9; // 0x0
+	public static Func<ItemMultiple, string> <>9__0_1; // 0x8
+	public static Func<ItemMultiple, ItemMultiple> <>9__1_1; // 0x10
+	public static Func<ItemMultiple, int> <>9__2_0; // 0x18
+	public static Func<Combination, bool> <>9__8_0; // 0x20
+	public static Func<Combination, bool> <>9__9_0; // 0x28
+
+	// Methods
+
+	// RVA: 0x6278724 Offset: 0x6274724 VA: 0x6278724
+	private static void .cctor() { }
+
+	// RVA: 0x627878C Offset: 0x627478C VA: 0x627878C
+	public void .ctor() { }
+
+	// RVA: 0x6278794 Offset: 0x6274794 VA: 0x6278794
+	internal string <GetMissingItemsNames>b__0_1(ItemMultiple itemMultiple) { }
+
+	// RVA: 0x6278858 Offset: 0x6274858 VA: 0x6278858
+	internal ItemMultiple <GetConsumedItems>b__1_1(ItemMultiple itemMultiple) { }
+
+	// RVA: 0x6278860 Offset: 0x6274860 VA: 0x6278860
+	internal int <GetItemInteractionCount>b__2_0(ItemMultiple item) { }
+
+	// RVA: 0x6278878 Offset: 0x6274878 VA: 0x6278878
+	internal bool <IsComboProducer>b__8_0(Combination r) { }
+
+	// RVA: 0x62788CC Offset: 0x62748CC VA: 0x62788CC
+	internal bool <IsAnyMode>b__9_0(Combination r) { }
+}
+

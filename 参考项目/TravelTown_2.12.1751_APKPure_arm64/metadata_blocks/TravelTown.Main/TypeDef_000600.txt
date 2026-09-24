@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class CombiningUtil.<>c__DisplayClass1_0 // TypeDefIndex: 600
+{
+	// Fields
+	public ItemPayloadBase consumedItem; // 0x10
+
+	// Methods
+
+	// RVA: 0x626FF30 Offset: 0x626BF30 VA: 0x626FF30
+	public void .ctor() { }
+
+	// RVA: 0x6270984 Offset: 0x626C984 VA: 0x6270984
+	internal bool <RemoveConsumedItems>b__0(MergeItemWeakReference i) { }
+}
+

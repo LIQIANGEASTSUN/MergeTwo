@@ -1,0 +1,27 @@
+// Namespace: Merger.TimeLimitedItems.Handlers
+public class TimeLimitedItemsBoardMiniGameCleanUpHandler : Base, ITimeLimitedItemsBoardMiniGameCleanUpHandler // TypeDefIndex: 32846
+{
+	// Fields
+	[Inject]
+	private ITimeLimitedItemsCleanUpItemsProvider _itemsProvider; // 0x28
+	[Inject]
+	private ITimeLimitedItemsDestroyOperationsBuilder _operationsBuilder; // 0x30
+	[Inject]
+	private ITimeLimitedItemsRepository _timeLimitedItemsRepository; // 0x38
+	[Inject]
+	private BoardController _boardController; // 0x40
+	[Inject]
+	private IBoardQueueModel _boardQueueModel; // 0x48
+
+	// Methods
+
+	// RVA: 0x6B4B26C Offset: 0x6B4726C VA: 0x6B4B26C Slot: 15
+	public IPromise CleanUp(string eventId, HashSet<string> graphIds) { }
+
+	// RVA: 0x6B4B694 Offset: 0x6B47694 VA: 0x6B4B694
+	private void ExtractQueuedItems(List<QueuedItem> queuedItemsToDestroy) { }
+
+	// RVA: 0x6B4B8DC Offset: 0x6B478DC VA: 0x6B4B8DC
+	public void .ctor() { }
+}
+

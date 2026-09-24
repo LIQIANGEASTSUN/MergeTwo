@@ -1,0 +1,17 @@
+// Namespace: 
+[Serializable]
+public class UserEntity.DailyRewardEntity.DailyChestEntity // TypeDefIndex: 2707
+{
+	// Fields
+	public int Week; // 0x8
+	public List<int> ClaimedChests; // 0xC
+
+	// Methods
+
+	// RVA: 0x1A62E34 Offset: 0x1A62E34 VA: 0x1A62E34
+	public void .ctor() { }
+
+	// RVA: 0x1A62B10 Offset: 0x1A62B10 VA: 0x1A62B10
+	public void .ctor(bool set) { }
+}
+

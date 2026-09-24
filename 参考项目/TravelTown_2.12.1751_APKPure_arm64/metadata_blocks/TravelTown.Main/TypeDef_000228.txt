@@ -1,0 +1,21 @@
+// Namespace: MergeEngine.Signal.Items
+[SoundBoundSignal("Item Sell")]
+public class ItemSoldSignal : MergeItemSignalBase // TypeDefIndex: 228
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly Reward <RewardForSelling>k__BackingField; // 0x20
+
+	// Properties
+	public Reward RewardForSelling { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3A20 Offset: 0x5FEFA20 VA: 0x5FF3A20
+	public Reward get_RewardForSelling() { }
+
+	// RVA: 0x5FF3A28 Offset: 0x5FEFA28 VA: 0x5FF3A28
+	public void .ctor(IMergeItem item, int level, Reward reward) { }
+}
+

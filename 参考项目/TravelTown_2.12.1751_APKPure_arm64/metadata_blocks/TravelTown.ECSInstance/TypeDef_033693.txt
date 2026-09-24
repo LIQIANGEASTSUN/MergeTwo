@@ -1,0 +1,626 @@
+// Namespace: 
+public sealed class Entities.MatchDelegate<T> : MulticastDelegate // TypeDefIndex: 33693
+{
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor(object object, IntPtr method) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x41D8EFC Offset: 0x41D4EFC VA: 0x41D8EFC
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent>>..ctor
+	|
+	|-RVA: 0x41D9084 Offset: 0x41D5084 VA: 0x41D9084
+	|-Entities.MatchDelegate<ValueTuple<object, BornComponent>>..ctor
+	|
+	|-RVA: 0x41D920C Offset: 0x41D520C VA: 0x41D920C
+	|-Entities.MatchDelegate<ValueTuple<object, DeadComponent>>..ctor
+	|
+	|-RVA: 0x41D9394 Offset: 0x41D5394 VA: 0x41D9394
+	|-Entities.MatchDelegate<ValueTuple<object, IdComponent>>..ctor
+	|
+	|-RVA: 0x41D951C Offset: 0x41D551C VA: 0x41D951C
+	|-Entities.MatchDelegate<ValueTuple<object, ItemMovedComponent>>..ctor
+	|
+	|-RVA: 0x41D96A4 Offset: 0x41D56A4 VA: 0x41D96A4
+	|-Entities.MatchDelegate<ValueTuple<object, TimeCycleComponent>>..ctor
+	|
+	|-RVA: 0x41D982C Offset: 0x41D582C VA: 0x41D982C
+	|-Entities.MatchDelegate<ValueTuple<object, TimeLockComponent>>..ctor
+	|
+	|-RVA: 0x41D99B4 Offset: 0x41D59B4 VA: 0x41D99B4
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, BoxComponent>>..ctor
+	|
+	|-RVA: 0x41D9B3C Offset: 0x41D5B3C VA: 0x41D9B3C
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, IdComponent>>..ctor
+	|
+	|-RVA: 0x41D9CC4 Offset: 0x41D5CC4 VA: 0x41D9CC4
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, MergeComponent>>..ctor
+	|
+	|-RVA: 0x41D9E4C Offset: 0x41D5E4C VA: 0x41D9E4C
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, TimeCycleComponent>>..ctor
+	|
+	|-RVA: 0x41D9FD4 Offset: 0x41D5FD4 VA: 0x41D9FD4
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, TimeLockComponent>>..ctor
+	|
+	|-RVA: 0x41DA15C Offset: 0x41D615C VA: 0x41DA15C
+	|-Entities.MatchDelegate<ValueTuple<object, BornComponent, IdComponent>>..ctor
+	|
+	|-RVA: 0x41DA2E4 Offset: 0x41D62E4 VA: 0x41DA2E4
+	|-Entities.MatchDelegate<ValueTuple<object, CollectableComponent, IdComponent>>..ctor
+	|
+	|-RVA: 0x41DA46C Offset: 0x41D646C VA: 0x41DA46C
+	|-Entities.MatchDelegate<ValueTuple<object, IdComponent, BoardTilePositionComponent>>..ctor
+	|
+	|-RVA: 0x41DA5F4 Offset: 0x41D65F4 VA: 0x41DA5F4
+	|-Entities.MatchDelegate<ValueTuple<object, InteractionComponent, BoardTilePositionComponent>>..ctor
+	|
+	|-RVA: 0x41DA77C Offset: 0x41D677C VA: 0x41DA77C
+	|-Entities.MatchDelegate<ValueTuple<object, PendingInteractionComponent, InteractionComponent>>..ctor
+	|
+	|-RVA: 0x41DA904 Offset: 0x41D6904 VA: 0x41DA904
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, IdComponent, InteractionComponent>>..ctor
+	|
+	|-RVA: 0x41DAA8C Offset: 0x41D6A8C VA: 0x41DAA8C
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, ItemMovedComponent, IdComponent>>..ctor
+	|
+	|-RVA: 0x41DAC14 Offset: 0x41D6C14 VA: 0x41DAC14
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, MergeComponent, IdComponent>>..ctor
+	|
+	|-RVA: 0x41DAD9C Offset: 0x41D6D9C VA: 0x41DAD9C
+	|-Entities.MatchDelegate<ValueTuple<object, CollectableComponent, IdComponent, BornComponent>>..ctor
+	|
+	|-RVA: 0x41DAF24 Offset: 0x41D6F24 VA: 0x41DAF24
+	|-Entities.MatchDelegate<ValueTuple<object, DeadComponent, ItemConsumedComponent, IdComponent>>..ctor
+	|
+	|-RVA: 0x41DB0AC Offset: 0x41D70AC VA: 0x41DB0AC
+	|-Entities.MatchDelegate<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, DeadComponent>>..ctor
+	|
+	|-RVA: 0x41DB234 Offset: 0x41D7234 VA: 0x41DB234
+	|-Entities.MatchDelegate<ValueTuple<object, ExpendableComponent, TimeLimitedActivationComponent, TimeDurationComponent>>..ctor
+	|
+	|-RVA: 0x41DB3BC Offset: 0x41D73BC VA: 0x41DB3BC
+	|-Entities.MatchDelegate<ValueTuple<object, FeedingCombinationComponent, DeadComponent, BoardTilePositionComponent>>..ctor
+	|
+	|-RVA: 0x41DB544 Offset: 0x41D7544 VA: 0x41DB544
+	|-Entities.MatchDelegate<ValueTuple<object, IdComponent, DeadComponent, BoardTilePositionComponent>>..ctor
+	|
+	|-RVA: 0x41DB6CC Offset: 0x41D76CC VA: 0x41DB6CC
+	|-Entities.MatchDelegate<ValueTuple<object, IdComponent, LockComponent, BoxComponent>>..ctor
+	|
+	|-RVA: 0x41DB854 Offset: 0x41D7854 VA: 0x41DB854
+	|-Entities.MatchDelegate<ValueTuple<object, ResourceConsumedComponent, InteractionComponent, BoardTilePositionComponent>>..ctor
+	|
+	|-RVA: 0x41DB9DC Offset: 0x41D79DC VA: 0x41DB9DC
+	|-Entities.MatchDelegate<ValueTuple<object, TimeDurationComponent, IdComponent, BoardTilePositionComponent>>..ctor
+	|
+	|-RVA: 0x41DBB64 Offset: 0x41D7B64 VA: 0x41DBB64
+	|-Entities.MatchDelegate<ValueTuple<object, TimeLockComponent, BoardTilePositionComponent, IdComponent>>..ctor
+	|
+	|-RVA: 0x41DBCEC Offset: 0x41D7CEC VA: 0x41DBCEC
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, BornComponent, IdComponent, ItemMergedComponent>>..ctor
+	|
+	|-RVA: 0x41DBE74 Offset: 0x41D7E74 VA: 0x41DBE74
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, IdComponent, BornComponent, ItemMergedComponent>>..ctor
+	|
+	|-RVA: 0x41DBFFC Offset: 0x41D7FFC VA: 0x41DBFFC
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, IdComponent, DynamicItemConfigComponent, PendingInteractionComponent>>..ctor
+	|
+	|-RVA: 0x41DC184 Offset: 0x41D8184 VA: 0x41DC184
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, MergeComponent, IdComponent, PendingItemsCombinationComponent>>..ctor
+	|
+	|-RVA: 0x41DC30C Offset: 0x41D830C VA: 0x41DC30C
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, FeedingCombinationComponent, InteractionComponent>>..ctor
+	|
+	|-RVA: 0x41DC494 Offset: 0x41D8494 VA: 0x41DC494
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, InteractionComponent>>..ctor
+	|
+	|-RVA: 0x41DC6EC Offset: 0x41D86EC VA: 0x41DC6EC
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, ToolSpawningComponent, PendingInteractionComponent, InteractionComponent>>..ctor
+	|
+	|-RVA: 0x41DC874 Offset: 0x41D8874 VA: 0x41DC874
+	|-Entities.MatchDelegate<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>>..ctor
+	|
+	|-RVA: 0x41DC9FC Offset: 0x41D89FC VA: 0x41DC9FC
+	|-Entities.MatchDelegate<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, TimeDurationComponent, TimeLimitedActivationComponent>>..ctor
+	|
+	|-RVA: 0x41DCB84 Offset: 0x41D8B84 VA: 0x41DCB84
+	|-Entities.MatchDelegate<ValueTuple<object, IdComponent, BoardTilePositionComponent, ImmediateToolComponent, PendingInteractionComponent>>..ctor
+	|
+	|-RVA: 0x41DCD0C Offset: 0x41D8D0C VA: 0x41DCD0C
+	|-Entities.MatchDelegate<ValueTuple<object, IdComponent, InteractionComponent, BoardTilePositionComponent, ProducerComponent>>..ctor
+	|
+	|-RVA: 0x41DCE94 Offset: 0x41D8E94 VA: 0x41DCE94
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, CollectableComponent, IdComponent, PendingInteractionComponent, InteractionComponent>>..ctor
+	|
+	|-RVA: 0x41DD01C Offset: 0x41D901C VA: 0x41DD01C
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, PendingInteractionComponent, InteractionComponent>>..ctor
+	|
+	|-RVA: 0x41DD1A4 Offset: 0x41D91A4 VA: 0x41DD1A4
+	|-Entities.MatchDelegate<ValueTuple<object, ChargeableComponent, ExpendableComponent, BoardTilePositionComponent, IdComponent, PendingInteractionComponent>>..ctor
+	|
+	|-RVA: 0x41DD32C Offset: 0x41D932C VA: 0x41DD32C
+	|-Entities.MatchDelegate<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent, PendingInteractionComponent>>..ctor
+	|
+	|-RVA: 0x41DD4B4 Offset: 0x41D94B4 VA: 0x41DD4B4
+	|-Entities.MatchDelegate<ValueTuple<object, SpawnerComponent, TimeCycleComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>>..ctor
+	|
+	|-RVA: 0x41DD63C Offset: 0x41D963C VA: 0x41DD63C
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, FeedingCombinationComponent, IdComponent, InteractionComponent, ProducerComponent, TimeCycleComponent>>..ctor
+	|
+	|-RVA: 0x41DD7C4 Offset: 0x41D97C4 VA: 0x41DD7C4
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, SpawnerComponent, IdComponent, TimeCycleComponent, InteractionComponent, PendingInteractionComponent>>..ctor
+	|
+	|-RVA: 0x41DD94C Offset: 0x41D994C VA: 0x41DD94C
+	|-Entities.MatchDelegate<ValueTuple<object, ExpendableComponent, IdComponent, InteractionComponent, PendingInteractionComponent, TimeLimitedActivationComponent, TimeDurationComponent>>..ctor
+	|
+	|-RVA: 0x41DDAD4 Offset: 0x41D9AD4 VA: 0x41DDAD4
+	|-Entities.MatchDelegate<__Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 13
+	public virtual bool Invoke(Entity entity, out T result) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x41D8FB0 Offset: 0x41D4FB0 VA: 0x41D8FB0
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent>>.Invoke
+	|
+	|-RVA: 0x41D9138 Offset: 0x41D5138 VA: 0x41D9138
+	|-Entities.MatchDelegate<ValueTuple<object, BornComponent>>.Invoke
+	|
+	|-RVA: 0x41D92C0 Offset: 0x41D52C0 VA: 0x41D92C0
+	|-Entities.MatchDelegate<ValueTuple<object, DeadComponent>>.Invoke
+	|
+	|-RVA: 0x41D9448 Offset: 0x41D5448 VA: 0x41D9448
+	|-Entities.MatchDelegate<ValueTuple<object, IdComponent>>.Invoke
+	|
+	|-RVA: 0x41D95D0 Offset: 0x41D55D0 VA: 0x41D95D0
+	|-Entities.MatchDelegate<ValueTuple<object, ItemMovedComponent>>.Invoke
+	|
+	|-RVA: 0x41D9758 Offset: 0x41D5758 VA: 0x41D9758
+	|-Entities.MatchDelegate<ValueTuple<object, TimeCycleComponent>>.Invoke
+	|
+	|-RVA: 0x41D98E0 Offset: 0x41D58E0 VA: 0x41D98E0
+	|-Entities.MatchDelegate<ValueTuple<object, TimeLockComponent>>.Invoke
+	|
+	|-RVA: 0x41D9A68 Offset: 0x41D5A68 VA: 0x41D9A68
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, BoxComponent>>.Invoke
+	|
+	|-RVA: 0x41D9BF0 Offset: 0x41D5BF0 VA: 0x41D9BF0
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, IdComponent>>.Invoke
+	|
+	|-RVA: 0x41D9D78 Offset: 0x41D5D78 VA: 0x41D9D78
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, MergeComponent>>.Invoke
+	|
+	|-RVA: 0x41D9F00 Offset: 0x41D5F00 VA: 0x41D9F00
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, TimeCycleComponent>>.Invoke
+	|
+	|-RVA: 0x41DA088 Offset: 0x41D6088 VA: 0x41DA088
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, TimeLockComponent>>.Invoke
+	|
+	|-RVA: 0x41DA210 Offset: 0x41D6210 VA: 0x41DA210
+	|-Entities.MatchDelegate<ValueTuple<object, BornComponent, IdComponent>>.Invoke
+	|
+	|-RVA: 0x41DA398 Offset: 0x41D6398 VA: 0x41DA398
+	|-Entities.MatchDelegate<ValueTuple<object, CollectableComponent, IdComponent>>.Invoke
+	|
+	|-RVA: 0x41DA520 Offset: 0x41D6520 VA: 0x41DA520
+	|-Entities.MatchDelegate<ValueTuple<object, IdComponent, BoardTilePositionComponent>>.Invoke
+	|
+	|-RVA: 0x41DA6A8 Offset: 0x41D66A8 VA: 0x41DA6A8
+	|-Entities.MatchDelegate<ValueTuple<object, InteractionComponent, BoardTilePositionComponent>>.Invoke
+	|
+	|-RVA: 0x41DA830 Offset: 0x41D6830 VA: 0x41DA830
+	|-Entities.MatchDelegate<ValueTuple<object, PendingInteractionComponent, InteractionComponent>>.Invoke
+	|
+	|-RVA: 0x41DA9B8 Offset: 0x41D69B8 VA: 0x41DA9B8
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, IdComponent, InteractionComponent>>.Invoke
+	|
+	|-RVA: 0x41DAB40 Offset: 0x41D6B40 VA: 0x41DAB40
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, ItemMovedComponent, IdComponent>>.Invoke
+	|
+	|-RVA: 0x41DACC8 Offset: 0x41D6CC8 VA: 0x41DACC8
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, MergeComponent, IdComponent>>.Invoke
+	|
+	|-RVA: 0x41DAE50 Offset: 0x41D6E50 VA: 0x41DAE50
+	|-Entities.MatchDelegate<ValueTuple<object, CollectableComponent, IdComponent, BornComponent>>.Invoke
+	|
+	|-RVA: 0x41DAFD8 Offset: 0x41D6FD8 VA: 0x41DAFD8
+	|-Entities.MatchDelegate<ValueTuple<object, DeadComponent, ItemConsumedComponent, IdComponent>>.Invoke
+	|
+	|-RVA: 0x41DB160 Offset: 0x41D7160 VA: 0x41DB160
+	|-Entities.MatchDelegate<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, DeadComponent>>.Invoke
+	|
+	|-RVA: 0x41DB2E8 Offset: 0x41D72E8 VA: 0x41DB2E8
+	|-Entities.MatchDelegate<ValueTuple<object, ExpendableComponent, TimeLimitedActivationComponent, TimeDurationComponent>>.Invoke
+	|
+	|-RVA: 0x41DB470 Offset: 0x41D7470 VA: 0x41DB470
+	|-Entities.MatchDelegate<ValueTuple<object, FeedingCombinationComponent, DeadComponent, BoardTilePositionComponent>>.Invoke
+	|
+	|-RVA: 0x41DB5F8 Offset: 0x41D75F8 VA: 0x41DB5F8
+	|-Entities.MatchDelegate<ValueTuple<object, IdComponent, DeadComponent, BoardTilePositionComponent>>.Invoke
+	|
+	|-RVA: 0x41DB780 Offset: 0x41D7780 VA: 0x41DB780
+	|-Entities.MatchDelegate<ValueTuple<object, IdComponent, LockComponent, BoxComponent>>.Invoke
+	|
+	|-RVA: 0x41DB908 Offset: 0x41D7908 VA: 0x41DB908
+	|-Entities.MatchDelegate<ValueTuple<object, ResourceConsumedComponent, InteractionComponent, BoardTilePositionComponent>>.Invoke
+	|
+	|-RVA: 0x41DBA90 Offset: 0x41D7A90 VA: 0x41DBA90
+	|-Entities.MatchDelegate<ValueTuple<object, TimeDurationComponent, IdComponent, BoardTilePositionComponent>>.Invoke
+	|
+	|-RVA: 0x41DBC18 Offset: 0x41D7C18 VA: 0x41DBC18
+	|-Entities.MatchDelegate<ValueTuple<object, TimeLockComponent, BoardTilePositionComponent, IdComponent>>.Invoke
+	|
+	|-RVA: 0x41DBDA0 Offset: 0x41D7DA0 VA: 0x41DBDA0
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, BornComponent, IdComponent, ItemMergedComponent>>.Invoke
+	|
+	|-RVA: 0x41DBF28 Offset: 0x41D7F28 VA: 0x41DBF28
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, IdComponent, BornComponent, ItemMergedComponent>>.Invoke
+	|
+	|-RVA: 0x41DC0B0 Offset: 0x41D80B0 VA: 0x41DC0B0
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, IdComponent, DynamicItemConfigComponent, PendingInteractionComponent>>.Invoke
+	|
+	|-RVA: 0x41DC238 Offset: 0x41D8238 VA: 0x41DC238
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, MergeComponent, IdComponent, PendingItemsCombinationComponent>>.Invoke
+	|
+	|-RVA: 0x41DC3C0 Offset: 0x41D83C0 VA: 0x41DC3C0
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, FeedingCombinationComponent, InteractionComponent>>.Invoke
+	|
+	|-RVA: 0x41DC548 Offset: 0x41D8548 VA: 0x41DC548
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, InteractionComponent>>.Invoke
+	|
+	|-RVA: 0x41DC7A0 Offset: 0x41D87A0 VA: 0x41DC7A0
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, ToolSpawningComponent, PendingInteractionComponent, InteractionComponent>>.Invoke
+	|
+	|-RVA: 0x41DC928 Offset: 0x41D8928 VA: 0x41DC928
+	|-Entities.MatchDelegate<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>>.Invoke
+	|
+	|-RVA: 0x41DCAB0 Offset: 0x41D8AB0 VA: 0x41DCAB0
+	|-Entities.MatchDelegate<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, TimeDurationComponent, TimeLimitedActivationComponent>>.Invoke
+	|
+	|-RVA: 0x41DCC38 Offset: 0x41D8C38 VA: 0x41DCC38
+	|-Entities.MatchDelegate<ValueTuple<object, IdComponent, BoardTilePositionComponent, ImmediateToolComponent, PendingInteractionComponent>>.Invoke
+	|
+	|-RVA: 0x41DCDC0 Offset: 0x41D8DC0 VA: 0x41DCDC0
+	|-Entities.MatchDelegate<ValueTuple<object, IdComponent, InteractionComponent, BoardTilePositionComponent, ProducerComponent>>.Invoke
+	|
+	|-RVA: 0x41DCF48 Offset: 0x41D8F48 VA: 0x41DCF48
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, CollectableComponent, IdComponent, PendingInteractionComponent, InteractionComponent>>.Invoke
+	|
+	|-RVA: 0x41DD0D0 Offset: 0x41D90D0 VA: 0x41DD0D0
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, PendingInteractionComponent, InteractionComponent>>.Invoke
+	|
+	|-RVA: 0x41DD258 Offset: 0x41D9258 VA: 0x41DD258
+	|-Entities.MatchDelegate<ValueTuple<object, ChargeableComponent, ExpendableComponent, BoardTilePositionComponent, IdComponent, PendingInteractionComponent>>.Invoke
+	|
+	|-RVA: 0x41DD3E0 Offset: 0x41D93E0 VA: 0x41DD3E0
+	|-Entities.MatchDelegate<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent, PendingInteractionComponent>>.Invoke
+	|
+	|-RVA: 0x41DD568 Offset: 0x41D9568 VA: 0x41DD568
+	|-Entities.MatchDelegate<ValueTuple<object, SpawnerComponent, TimeCycleComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>>.Invoke
+	|
+	|-RVA: 0x41DD6F0 Offset: 0x41D96F0 VA: 0x41DD6F0
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, FeedingCombinationComponent, IdComponent, InteractionComponent, ProducerComponent, TimeCycleComponent>>.Invoke
+	|
+	|-RVA: 0x41DD878 Offset: 0x41D9878 VA: 0x41DD878
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, SpawnerComponent, IdComponent, TimeCycleComponent, InteractionComponent, PendingInteractionComponent>>.Invoke
+	|
+	|-RVA: 0x41DDA00 Offset: 0x41D9A00 VA: 0x41DDA00
+	|-Entities.MatchDelegate<ValueTuple<object, ExpendableComponent, IdComponent, InteractionComponent, PendingInteractionComponent, TimeLimitedActivationComponent, TimeDurationComponent>>.Invoke
+	|
+	|-RVA: 0x41DDB88 Offset: 0x41D9B88 VA: 0x41DDB88
+	|-Entities.MatchDelegate<__Il2CppFullySharedGenericType>.Invoke
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 14
+	public virtual IAsyncResult BeginInvoke(Entity entity, out T result, AsyncCallback callback, object object) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x41D8FC4 Offset: 0x41D4FC4 VA: 0x41D8FC4
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41D914C Offset: 0x41D514C VA: 0x41D914C
+	|-Entities.MatchDelegate<ValueTuple<object, BornComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41D92D4 Offset: 0x41D52D4 VA: 0x41D92D4
+	|-Entities.MatchDelegate<ValueTuple<object, DeadComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41D945C Offset: 0x41D545C VA: 0x41D945C
+	|-Entities.MatchDelegate<ValueTuple<object, IdComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41D95E4 Offset: 0x41D55E4 VA: 0x41D95E4
+	|-Entities.MatchDelegate<ValueTuple<object, ItemMovedComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41D976C Offset: 0x41D576C VA: 0x41D976C
+	|-Entities.MatchDelegate<ValueTuple<object, TimeCycleComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41D98F4 Offset: 0x41D58F4 VA: 0x41D98F4
+	|-Entities.MatchDelegate<ValueTuple<object, TimeLockComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41D9A7C Offset: 0x41D5A7C VA: 0x41D9A7C
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, BoxComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41D9C04 Offset: 0x41D5C04 VA: 0x41D9C04
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, IdComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41D9D8C Offset: 0x41D5D8C VA: 0x41D9D8C
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, MergeComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41D9F14 Offset: 0x41D5F14 VA: 0x41D9F14
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, TimeCycleComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DA09C Offset: 0x41D609C VA: 0x41DA09C
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, TimeLockComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DA224 Offset: 0x41D6224 VA: 0x41DA224
+	|-Entities.MatchDelegate<ValueTuple<object, BornComponent, IdComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DA3AC Offset: 0x41D63AC VA: 0x41DA3AC
+	|-Entities.MatchDelegate<ValueTuple<object, CollectableComponent, IdComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DA534 Offset: 0x41D6534 VA: 0x41DA534
+	|-Entities.MatchDelegate<ValueTuple<object, IdComponent, BoardTilePositionComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DA6BC Offset: 0x41D66BC VA: 0x41DA6BC
+	|-Entities.MatchDelegate<ValueTuple<object, InteractionComponent, BoardTilePositionComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DA844 Offset: 0x41D6844 VA: 0x41DA844
+	|-Entities.MatchDelegate<ValueTuple<object, PendingInteractionComponent, InteractionComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DA9CC Offset: 0x41D69CC VA: 0x41DA9CC
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, IdComponent, InteractionComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DAB54 Offset: 0x41D6B54 VA: 0x41DAB54
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, ItemMovedComponent, IdComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DACDC Offset: 0x41D6CDC VA: 0x41DACDC
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, MergeComponent, IdComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DAE64 Offset: 0x41D6E64 VA: 0x41DAE64
+	|-Entities.MatchDelegate<ValueTuple<object, CollectableComponent, IdComponent, BornComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DAFEC Offset: 0x41D6FEC VA: 0x41DAFEC
+	|-Entities.MatchDelegate<ValueTuple<object, DeadComponent, ItemConsumedComponent, IdComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DB174 Offset: 0x41D7174 VA: 0x41DB174
+	|-Entities.MatchDelegate<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, DeadComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DB2FC Offset: 0x41D72FC VA: 0x41DB2FC
+	|-Entities.MatchDelegate<ValueTuple<object, ExpendableComponent, TimeLimitedActivationComponent, TimeDurationComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DB484 Offset: 0x41D7484 VA: 0x41DB484
+	|-Entities.MatchDelegate<ValueTuple<object, FeedingCombinationComponent, DeadComponent, BoardTilePositionComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DB60C Offset: 0x41D760C VA: 0x41DB60C
+	|-Entities.MatchDelegate<ValueTuple<object, IdComponent, DeadComponent, BoardTilePositionComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DB794 Offset: 0x41D7794 VA: 0x41DB794
+	|-Entities.MatchDelegate<ValueTuple<object, IdComponent, LockComponent, BoxComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DB91C Offset: 0x41D791C VA: 0x41DB91C
+	|-Entities.MatchDelegate<ValueTuple<object, ResourceConsumedComponent, InteractionComponent, BoardTilePositionComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DBAA4 Offset: 0x41D7AA4 VA: 0x41DBAA4
+	|-Entities.MatchDelegate<ValueTuple<object, TimeDurationComponent, IdComponent, BoardTilePositionComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DBC2C Offset: 0x41D7C2C VA: 0x41DBC2C
+	|-Entities.MatchDelegate<ValueTuple<object, TimeLockComponent, BoardTilePositionComponent, IdComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DBDB4 Offset: 0x41D7DB4 VA: 0x41DBDB4
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, BornComponent, IdComponent, ItemMergedComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DBF3C Offset: 0x41D7F3C VA: 0x41DBF3C
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, IdComponent, BornComponent, ItemMergedComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DC0C4 Offset: 0x41D80C4 VA: 0x41DC0C4
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, IdComponent, DynamicItemConfigComponent, PendingInteractionComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DC24C Offset: 0x41D824C VA: 0x41DC24C
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, MergeComponent, IdComponent, PendingItemsCombinationComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DC3D4 Offset: 0x41D83D4 VA: 0x41DC3D4
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, FeedingCombinationComponent, InteractionComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DC55C Offset: 0x41D855C VA: 0x41DC55C
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, InteractionComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DC7B4 Offset: 0x41D87B4 VA: 0x41DC7B4
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, ToolSpawningComponent, PendingInteractionComponent, InteractionComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DC93C Offset: 0x41D893C VA: 0x41DC93C
+	|-Entities.MatchDelegate<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DCAC4 Offset: 0x41D8AC4 VA: 0x41DCAC4
+	|-Entities.MatchDelegate<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, TimeDurationComponent, TimeLimitedActivationComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DCC4C Offset: 0x41D8C4C VA: 0x41DCC4C
+	|-Entities.MatchDelegate<ValueTuple<object, IdComponent, BoardTilePositionComponent, ImmediateToolComponent, PendingInteractionComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DCDD4 Offset: 0x41D8DD4 VA: 0x41DCDD4
+	|-Entities.MatchDelegate<ValueTuple<object, IdComponent, InteractionComponent, BoardTilePositionComponent, ProducerComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DCF5C Offset: 0x41D8F5C VA: 0x41DCF5C
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, CollectableComponent, IdComponent, PendingInteractionComponent, InteractionComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DD0E4 Offset: 0x41D90E4 VA: 0x41DD0E4
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, PendingInteractionComponent, InteractionComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DD26C Offset: 0x41D926C VA: 0x41DD26C
+	|-Entities.MatchDelegate<ValueTuple<object, ChargeableComponent, ExpendableComponent, BoardTilePositionComponent, IdComponent, PendingInteractionComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DD3F4 Offset: 0x41D93F4 VA: 0x41DD3F4
+	|-Entities.MatchDelegate<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent, PendingInteractionComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DD57C Offset: 0x41D957C VA: 0x41DD57C
+	|-Entities.MatchDelegate<ValueTuple<object, SpawnerComponent, TimeCycleComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DD704 Offset: 0x41D9704 VA: 0x41DD704
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, FeedingCombinationComponent, IdComponent, InteractionComponent, ProducerComponent, TimeCycleComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DD88C Offset: 0x41D988C VA: 0x41DD88C
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, SpawnerComponent, IdComponent, TimeCycleComponent, InteractionComponent, PendingInteractionComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DDA14 Offset: 0x41D9A14 VA: 0x41DDA14
+	|-Entities.MatchDelegate<ValueTuple<object, ExpendableComponent, IdComponent, InteractionComponent, PendingInteractionComponent, TimeLimitedActivationComponent, TimeDurationComponent>>.BeginInvoke
+	|
+	|-RVA: 0x41DDB9C Offset: 0x41D9B9C VA: 0x41DDB9C
+	|-Entities.MatchDelegate<__Il2CppFullySharedGenericType>.BeginInvoke
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public virtual bool EndInvoke(out T result, IAsyncResult __result) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x41D9058 Offset: 0x41D5058 VA: 0x41D9058
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent>>.EndInvoke
+	|
+	|-RVA: 0x41D91E0 Offset: 0x41D51E0 VA: 0x41D91E0
+	|-Entities.MatchDelegate<ValueTuple<object, BornComponent>>.EndInvoke
+	|
+	|-RVA: 0x41D9368 Offset: 0x41D5368 VA: 0x41D9368
+	|-Entities.MatchDelegate<ValueTuple<object, DeadComponent>>.EndInvoke
+	|
+	|-RVA: 0x41D94F0 Offset: 0x41D54F0 VA: 0x41D94F0
+	|-Entities.MatchDelegate<ValueTuple<object, IdComponent>>.EndInvoke
+	|
+	|-RVA: 0x41D9678 Offset: 0x41D5678 VA: 0x41D9678
+	|-Entities.MatchDelegate<ValueTuple<object, ItemMovedComponent>>.EndInvoke
+	|
+	|-RVA: 0x41D9800 Offset: 0x41D5800 VA: 0x41D9800
+	|-Entities.MatchDelegate<ValueTuple<object, TimeCycleComponent>>.EndInvoke
+	|
+	|-RVA: 0x41D9988 Offset: 0x41D5988 VA: 0x41D9988
+	|-Entities.MatchDelegate<ValueTuple<object, TimeLockComponent>>.EndInvoke
+	|
+	|-RVA: 0x41D9B10 Offset: 0x41D5B10 VA: 0x41D9B10
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, BoxComponent>>.EndInvoke
+	|
+	|-RVA: 0x41D9C98 Offset: 0x41D5C98 VA: 0x41D9C98
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, IdComponent>>.EndInvoke
+	|
+	|-RVA: 0x41D9E20 Offset: 0x41D5E20 VA: 0x41D9E20
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, MergeComponent>>.EndInvoke
+	|
+	|-RVA: 0x41D9FA8 Offset: 0x41D5FA8 VA: 0x41D9FA8
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, TimeCycleComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DA130 Offset: 0x41D6130 VA: 0x41DA130
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, TimeLockComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DA2B8 Offset: 0x41D62B8 VA: 0x41DA2B8
+	|-Entities.MatchDelegate<ValueTuple<object, BornComponent, IdComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DA440 Offset: 0x41D6440 VA: 0x41DA440
+	|-Entities.MatchDelegate<ValueTuple<object, CollectableComponent, IdComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DA5C8 Offset: 0x41D65C8 VA: 0x41DA5C8
+	|-Entities.MatchDelegate<ValueTuple<object, IdComponent, BoardTilePositionComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DA750 Offset: 0x41D6750 VA: 0x41DA750
+	|-Entities.MatchDelegate<ValueTuple<object, InteractionComponent, BoardTilePositionComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DA8D8 Offset: 0x41D68D8 VA: 0x41DA8D8
+	|-Entities.MatchDelegate<ValueTuple<object, PendingInteractionComponent, InteractionComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DAA60 Offset: 0x41D6A60 VA: 0x41DAA60
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, IdComponent, InteractionComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DABE8 Offset: 0x41D6BE8 VA: 0x41DABE8
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, ItemMovedComponent, IdComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DAD70 Offset: 0x41D6D70 VA: 0x41DAD70
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, MergeComponent, IdComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DAEF8 Offset: 0x41D6EF8 VA: 0x41DAEF8
+	|-Entities.MatchDelegate<ValueTuple<object, CollectableComponent, IdComponent, BornComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DB080 Offset: 0x41D7080 VA: 0x41DB080
+	|-Entities.MatchDelegate<ValueTuple<object, DeadComponent, ItemConsumedComponent, IdComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DB208 Offset: 0x41D7208 VA: 0x41DB208
+	|-Entities.MatchDelegate<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, DeadComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DB390 Offset: 0x41D7390 VA: 0x41DB390
+	|-Entities.MatchDelegate<ValueTuple<object, ExpendableComponent, TimeLimitedActivationComponent, TimeDurationComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DB518 Offset: 0x41D7518 VA: 0x41DB518
+	|-Entities.MatchDelegate<ValueTuple<object, FeedingCombinationComponent, DeadComponent, BoardTilePositionComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DB6A0 Offset: 0x41D76A0 VA: 0x41DB6A0
+	|-Entities.MatchDelegate<ValueTuple<object, IdComponent, DeadComponent, BoardTilePositionComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DB828 Offset: 0x41D7828 VA: 0x41DB828
+	|-Entities.MatchDelegate<ValueTuple<object, IdComponent, LockComponent, BoxComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DB9B0 Offset: 0x41D79B0 VA: 0x41DB9B0
+	|-Entities.MatchDelegate<ValueTuple<object, ResourceConsumedComponent, InteractionComponent, BoardTilePositionComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DBB38 Offset: 0x41D7B38 VA: 0x41DBB38
+	|-Entities.MatchDelegate<ValueTuple<object, TimeDurationComponent, IdComponent, BoardTilePositionComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DBCC0 Offset: 0x41D7CC0 VA: 0x41DBCC0
+	|-Entities.MatchDelegate<ValueTuple<object, TimeLockComponent, BoardTilePositionComponent, IdComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DBE48 Offset: 0x41D7E48 VA: 0x41DBE48
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, BornComponent, IdComponent, ItemMergedComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DBFD0 Offset: 0x41D7FD0 VA: 0x41DBFD0
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, IdComponent, BornComponent, ItemMergedComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DC158 Offset: 0x41D8158 VA: 0x41DC158
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, IdComponent, DynamicItemConfigComponent, PendingInteractionComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DC2E0 Offset: 0x41D82E0 VA: 0x41DC2E0
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, MergeComponent, IdComponent, PendingItemsCombinationComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DC468 Offset: 0x41D8468 VA: 0x41DC468
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, FeedingCombinationComponent, InteractionComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DC5F0 Offset: 0x41D85F0 VA: 0x41DC5F0
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, InteractionComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DC848 Offset: 0x41D8848 VA: 0x41DC848
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, ToolSpawningComponent, PendingInteractionComponent, InteractionComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DC9D0 Offset: 0x41D89D0 VA: 0x41DC9D0
+	|-Entities.MatchDelegate<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DCB58 Offset: 0x41D8B58 VA: 0x41DCB58
+	|-Entities.MatchDelegate<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, TimeDurationComponent, TimeLimitedActivationComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DCCE0 Offset: 0x41D8CE0 VA: 0x41DCCE0
+	|-Entities.MatchDelegate<ValueTuple<object, IdComponent, BoardTilePositionComponent, ImmediateToolComponent, PendingInteractionComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DCE68 Offset: 0x41D8E68 VA: 0x41DCE68
+	|-Entities.MatchDelegate<ValueTuple<object, IdComponent, InteractionComponent, BoardTilePositionComponent, ProducerComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DCFF0 Offset: 0x41D8FF0 VA: 0x41DCFF0
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, CollectableComponent, IdComponent, PendingInteractionComponent, InteractionComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DD178 Offset: 0x41D9178 VA: 0x41DD178
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, PendingInteractionComponent, InteractionComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DD300 Offset: 0x41D9300 VA: 0x41DD300
+	|-Entities.MatchDelegate<ValueTuple<object, ChargeableComponent, ExpendableComponent, BoardTilePositionComponent, IdComponent, PendingInteractionComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DD488 Offset: 0x41D9488 VA: 0x41DD488
+	|-Entities.MatchDelegate<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent, PendingInteractionComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DD610 Offset: 0x41D9610 VA: 0x41DD610
+	|-Entities.MatchDelegate<ValueTuple<object, SpawnerComponent, TimeCycleComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DD798 Offset: 0x41D9798 VA: 0x41DD798
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, FeedingCombinationComponent, IdComponent, InteractionComponent, ProducerComponent, TimeCycleComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DD920 Offset: 0x41D9920 VA: 0x41DD920
+	|-Entities.MatchDelegate<ValueTuple<object, BoardTilePositionComponent, SpawnerComponent, IdComponent, TimeCycleComponent, InteractionComponent, PendingInteractionComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DDAA8 Offset: 0x41D9AA8 VA: 0x41DDAA8
+	|-Entities.MatchDelegate<ValueTuple<object, ExpendableComponent, IdComponent, InteractionComponent, PendingInteractionComponent, TimeLimitedActivationComponent, TimeDurationComponent>>.EndInvoke
+	|
+	|-RVA: 0x41DDC20 Offset: 0x41D9C20 VA: 0x41DDC20
+	|-Entities.MatchDelegate<__Il2CppFullySharedGenericType>.EndInvoke
+	*/
+}
+

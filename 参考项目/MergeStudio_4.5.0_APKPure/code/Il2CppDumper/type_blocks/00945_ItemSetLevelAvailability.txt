@@ -1,0 +1,42 @@
+// Namespace: Paxie.MergeStudio.GameCore.Gameplay.Board
+public class ItemSetLevelAvailability // TypeDefIndex: 945
+{
+	// Fields
+	public BoardItemSetData SetData; // 0x8
+	[CompilerGenerated]
+	private Dictionary<int, int> <DirectlyAvailableLevelByCount>k__BackingField; // 0xC
+	[CompilerGenerated]
+	private Dictionary<int, int> <AvailableThroughMerging>k__BackingField; // 0x10
+
+	// Properties
+	public Dictionary<int, int> DirectlyAvailableLevelByCount { get; set; }
+	public Dictionary<int, int> AvailableThroughMerging { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x178F768 Offset: 0x178F768 VA: 0x178F768
+	public Dictionary<int, int> get_DirectlyAvailableLevelByCount() { }
+
+	[CompilerGenerated]
+	// RVA: 0x178F770 Offset: 0x178F770 VA: 0x178F770
+	public void set_DirectlyAvailableLevelByCount(Dictionary<int, int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x178F778 Offset: 0x178F778 VA: 0x178F778
+	public Dictionary<int, int> get_AvailableThroughMerging() { }
+
+	[CompilerGenerated]
+	// RVA: 0x178F780 Offset: 0x178F780 VA: 0x178F780
+	public void set_AvailableThroughMerging(Dictionary<int, int> value) { }
+
+	// RVA: 0x178F534 Offset: 0x178F534 VA: 0x178F534
+	public void .ctor(BoardItemSetData setData) { }
+
+	// RVA: 0x178F788 Offset: 0x178F788 VA: 0x178F788
+	public bool IsAvailable(int level) { }
+
+	// RVA: 0x178F824 Offset: 0x178F824 VA: 0x178F824
+	public bool IsAvailable(ItemInfo itemInfo) { }
+}
+

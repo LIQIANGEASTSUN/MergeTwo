@@ -1,0 +1,79 @@
+Type: GameLogic.Player.Items.Bubble.IBubbleFeatures
+
+Method: GameLogic.Config.Types.MetacoreDuration get_BubbleDuration()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Currencies get_OpenCurrency()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_OpenQuantity()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_SpawnOdds()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.ValueTuple`2<Currencies, System.Int32> get_OpenCost()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.List`1<GameLogic.Player.Items.Bubble.BubbleVariationId> get_BubbleVariants()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean TryGetRelevantBubbleVariant(GameLogic.Player.IPlayer player, out GameLogic.Player.Items.Bubble.BubbleVariantsDefinition variationDefinition)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Config.Types.MetacoreDuration GetBubbleDuration(GameLogic.Player.IPlayer player, GameLogic.Player.Items.Bubble.BubbleVariationId variationId)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 GetSpawnOdds(GameLogic.Player.IPlayer player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.ValueTuple`2<Currencies, System.Int32> GetOpenCost(GameLogic.Player.IPlayer player, GameLogic.Player.Items.Bubble.BubbleVariationId variationId)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.IItemDefinition GetReplacementItem(GameLogic.Player.IPlayer player, GameLogic.Player.Items.Bubble.BubbleVariationId variationId)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

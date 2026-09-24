@@ -1,0 +1,37 @@
+// Namespace: Merger.Boosters.Strategies
+public abstract class BoosterStrategyBase : Base, IBoosterStrategy, IInitializable, IDisposable // TypeDefIndex: 7742
+{
+	// Fields
+	[Inject]
+	private IBoosterService _boosterService; // 0x28
+
+	// Properties
+	public abstract BoosterType BoosterType { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 21
+	public abstract BoosterType get_BoosterType();
+
+	// RVA: -1 Offset: -1 Slot: 22
+	public abstract void Execute(RemoteBoosterData boosterData, bool newBooster);
+
+	// RVA: 0x65BF1B0 Offset: 0x65BB1B0 VA: 0x65BF1B0 Slot: 17
+	public void TryActivate() { }
+
+	// RVA: 0x65BF258 Offset: 0x65BB258 VA: 0x65BF258 Slot: 23
+	public virtual void TryDeactivate(string uuid) { }
+
+	// RVA: 0x65BF25C Offset: 0x65BB25C VA: 0x65BF25C Slot: 19
+	private void Zenject.IInitializable.Initialize() { }
+
+	// RVA: 0x65BF26C Offset: 0x65BB26C VA: 0x65BF26C Slot: 20
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x65BF274 Offset: 0x65BB274 VA: 0x65BF274 Slot: 24
+	protected virtual void InitializeStrategy() { }
+
+	// RVA: 0x65BF278 Offset: 0x65BB278 VA: 0x65BF278
+	protected void .ctor() { }
+}
+

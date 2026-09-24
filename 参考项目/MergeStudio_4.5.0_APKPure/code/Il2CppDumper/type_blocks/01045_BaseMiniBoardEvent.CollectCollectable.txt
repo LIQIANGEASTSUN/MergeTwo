@@ -1,0 +1,8 @@
+// Namespace: 
+public struct BaseMiniBoardEvent.CollectCollectable : IEvent // TypeDefIndex: 1045
+{
+	// Fields
+	public MiniBoardItemController Collectable; // 0x0
+	public BoardItemCollectable CollectableData; // 0x4
+}
+

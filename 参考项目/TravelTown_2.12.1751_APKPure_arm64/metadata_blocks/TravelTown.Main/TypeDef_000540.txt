@@ -1,0 +1,121 @@
+// Namespace: MergeEngine.Model.Configuration
+public interface IMergingConfigurationModel // TypeDefIndex: 540
+{
+	// Properties
+	public abstract ReadOnlyCollection<IMergeGraphItem> Graphs { get; }
+	public abstract ReadOnlyCollection<IMergeItem> AllItems { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract ReadOnlyCollection<IMergeGraphItem> get_Graphs();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract ReadOnlyCollection<IMergeItem> get_AllItems();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract bool HasGraphById(string graphId);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract bool TryGetGraphFor(string id, out IMergeGraphItem graph);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract IMergeGraphItem GetGraphFor(string id);
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract IMergeGraphItem GetGraph(string graphId);
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract ReadOnlyCollection<IMergeItem> GetLocalMergeItems();
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract IReadOnlyCollection<IMergeGraphItem> GetGraphsByType(MergeGraphItemType graphType);
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract bool HasItemById(string id);
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract IMergeItem GetItemById(string id);
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public abstract IMergeItem GetItemWithDynamicConfig(string dynamicConfigId);
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public abstract IMergeItem GetNextItemOnGraph(IMergeItem item);
+
+	// RVA: -1 Offset: -1 Slot: 12
+	public abstract IMergeItem GetPreviousItemFromGraph(string itemUniqueId, int boost);
+
+	// RVA: -1 Offset: -1 Slot: 13
+	public abstract IMergeItem GetNextItemOnGraph(string id);
+
+	// RVA: -1 Offset: -1 Slot: 14
+	public abstract IMergeItem GetNextItemOnGraph(string id, int skipNum);
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public abstract IMergeItem GetNextItemFromGraph(string itemUniqueId, int boost);
+
+	// RVA: -1 Offset: -1 Slot: 16
+	public abstract IMergeItem GetPreviousItemOnGraph(IMergeItem item);
+
+	// RVA: -1 Offset: -1 Slot: 17
+	public abstract IMergeItem GetPreviousItemOnGraph(string id);
+
+	// RVA: -1 Offset: -1 Slot: 18
+	public abstract List<IMergeItem> GetAllItemsOnGraphByItemId(string id);
+
+	// RVA: -1 Offset: -1 Slot: 19
+	public abstract int GetItemIndex(IMergeItem item);
+
+	// RVA: -1 Offset: -1 Slot: 20
+	public abstract IMergeItem GetMergeItemFromComponent(IComponentBase component);
+
+	// RVA: -1 Offset: -1 Slot: 21
+	public abstract IMergeItem GetLastItemInGraph(string mergeGraphId);
+
+	// RVA: -1 Offset: -1 Slot: 22
+	public abstract bool IsLastItemInProducerBaseChain(string itemUniqueId, List<string> spawnableIds);
+
+	// RVA: -1 Offset: -1 Slot: 23
+	public abstract IMergeGraphItem GetMergeGraphItemFromComponent(IComponentBase component);
+
+	// RVA: -1 Offset: -1 Slot: 24
+	public abstract bool IsItemInProducerChain(IMergeItem item, IMergeItem producer);
+
+	// RVA: -1 Offset: -1 Slot: 25
+	public abstract int GetItemLevel(string id);
+
+	// RVA: -1 Offset: -1 Slot: 26
+	public abstract bool IsMaxLevel(string id);
+
+	// RVA: -1 Offset: -1 Slot: 27
+	public abstract IMergeGraphItem GetItemOriginGraph(IMergeItem item);
+
+	// RVA: -1 Offset: -1 Slot: 28
+	public abstract bool AreItemsInSameGraph(IMergeItem[] items);
+
+	// RVA: -1 Offset: -1 Slot: 29
+	public abstract bool AreItemsInSameGraph(IMergeItem item1, IMergeItem item2);
+
+	// RVA: -1 Offset: -1 Slot: 30
+	public abstract MergeConfigurationDependencyInfo BuildRecursiveSpawnInfo(IMergeItem item);
+
+	// RVA: -1 Offset: -1 Slot: 31
+	public abstract bool IsPrimaryProducer(string mergeItemUniqueId);
+
+	// RVA: -1 Offset: -1 Slot: 32
+	public abstract bool IsPrimaryProducer(IMergeGraphItem mergeItemUniqueId);
+
+	// RVA: -1 Offset: -1 Slot: 33
+	public abstract bool IsItemBoosted(List<string> producerSpawnableIds, string boostedProducedItem, string originalProducedItem);
+
+	// RVA: -1 Offset: -1 Slot: 34
+	public abstract int GetItemIndexInGraph(IMergeItem mergeItem);
+
+	// RVA: -1 Offset: -1 Slot: 35
+	public abstract bool IsGatewayItem(IMergeItem mergeItem);
+
+	// RVA: -1 Offset: -1 Slot: 36
+	public abstract string GetGatewayFloatingTextKey(IMergeItem mergeItem);
+}
+

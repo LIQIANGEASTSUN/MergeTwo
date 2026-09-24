@@ -1,0 +1,70 @@
+// Namespace: Merger.TimeLimitedItems.Models
+public class TimeLimitedItemsModel : ITimeLimitedItemsModel, IEventDataHolder<TimeLimitedItemsEventData> // TypeDefIndex: 32837
+{
+	// Fields
+	private HashSet<string> _graphIds; // 0x10
+	private MutableBindableProperty<double> _timeLeft; // 0x18
+	private readonly MutableBindableProperty<bool> _eventIsActive; // 0x20
+	[CompilerGenerated]
+	private string <EventId>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private string <EventName>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private string <ThemeId>k__BackingField; // 0x38
+
+	// Properties
+	public string EventId { get; set; }
+	public string EventName { get; set; }
+	public string ThemeId { get; set; }
+	public BindableProperty<bool> EventIsActive { get; }
+	public BindableProperty<double> EventTimeLeft { get; }
+	public HashSet<string> GraphIds { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6B4A240 Offset: 0x6B46240 VA: 0x6B4A240 Slot: 4
+	public string get_EventId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6B4A248 Offset: 0x6B46248 VA: 0x6B4A248
+	private void set_EventId(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6B4A250 Offset: 0x6B46250 VA: 0x6B4A250 Slot: 5
+	public string get_EventName() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6B4A258 Offset: 0x6B46258 VA: 0x6B4A258
+	private void set_EventName(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6B4A260 Offset: 0x6B46260 VA: 0x6B4A260 Slot: 6
+	public string get_ThemeId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6B4A268 Offset: 0x6B46268 VA: 0x6B4A268
+	private void set_ThemeId(string value) { }
+
+	// RVA: 0x6B4A270 Offset: 0x6B46270 VA: 0x6B4A270 Slot: 7
+	public BindableProperty<bool> get_EventIsActive() { }
+
+	// RVA: 0x6B4A278 Offset: 0x6B46278 VA: 0x6B4A278 Slot: 8
+	public BindableProperty<double> get_EventTimeLeft() { }
+
+	// RVA: 0x6B4A280 Offset: 0x6B46280 VA: 0x6B4A280 Slot: 9
+	public HashSet<string> get_GraphIds() { }
+
+	// RVA: 0x6B4A288 Offset: 0x6B46288 VA: 0x6B4A288 Slot: 10
+	public void SetStartEventData(string eventId, TimeLimitedItemsEventData eventData, MutableBindableProperty<double> timeLeft) { }
+
+	// RVA: 0x6B4A354 Offset: 0x6B46354 VA: 0x6B4A354 Slot: 11
+	public void UpdateEventData(TimeLimitedItemsEventData eventData) { }
+
+	// RVA: 0x6B4A370 Offset: 0x6B46370 VA: 0x6B4A370 Slot: 12
+	public void EndEvent() { }
+
+	// RVA: 0x6B4A3D4 Offset: 0x6B463D4 VA: 0x6B4A3D4
+	public void .ctor() { }
+}
+

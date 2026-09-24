@@ -1,0 +1,192 @@
+// Namespace: MergePuzzle
+public class SceneController : BaseSubscriber, IEventReceiver<EntityUpdateEvent.SaveBoard>, IEventReceiverBase, IEventReceiver<EntityUpdateEvent.InventoryUpdated>, IEventReceiver<BoardEvent.SellItemTrial>, IEventReceiver<BoardEvent.RevertMove>, IEventReceiver<BoardEvent.BoardItemPositionUpdateStart>, IEventReceiver<BoardEvent.RemoveItemViaSellComplete>, IEventReceiver<BoardEvent.BoardItemRemoveFinished>, IEventReceiver<BoardEvent.BubbleDestroyed>, IEventReceiver<BoardEvent.JellyDestroyed> // TypeDefIndex: 2869
+{
+	// Fields
+	protected CameraController _cameraController; // 0x1C
+	protected MetaContextService _metaContextService; // 0x20
+	protected GameplayContextService _GameplayContextService; // 0x24
+	private BoardController _boardController; // 0x28
+	private GameplayNonScaledCanvasView _gameplayNonScaledCanvasView; // 0x2C
+	private MetaOverlayCanvasController _metaOverlayCanvasController; // 0x30
+	private DefaultPopupScreenController _defaultPopupScreenController; // 0x34
+	private HeightScaledPopupScreenController _heightScaledPopupScreenController; // 0x38
+	private MasterPopupService _masterPopupService; // 0x3C
+	private PopupScreenParent _popupScreen; // 0x40
+	private ScreenNavigator _screenNavigator; // 0x44
+	private GameplayScaledCanvasView _gameplayScaledCanvasView; // 0x48
+	private static SceneController _instance; // 0x0
+	public SceneController.State _gameState; // 0x4C
+
+	// Properties
+	public GameplayContextService GameplayContextService { get; }
+	public GameplayScaledCanvasView GameplayScaledCanvasView { get; }
+	public GameplayNonScaledCanvasView GameplayNonScaledCanvasView { get; }
+	public PopupScreenParent PopupScreenParent { get; }
+	public ScreenNavigator ScreenNavigator { get; }
+	public BoardController BoardController { get; }
+	public CameraController CameraController { get; }
+	public MetaContextService MetaContextService { get; }
+	public MetaOverlayCanvasController MetaOverlayCanvasController { get; }
+	public DefaultPopupScreenController DefaultPopupScreenController { get; }
+	public HeightScaledPopupScreenController HeightScaledPopupScreenController { get; }
+	public MasterPopupService MasterPopupService { get; }
+	public SceneController.State GameStatus { get; }
+	public static SceneController Instance { get; set; }
+
+	// Methods
+
+	// RVA: 0x1A9895C Offset: 0x1A9895C VA: 0x1A9895C
+	public GameplayContextService get_GameplayContextService() { }
+
+	// RVA: 0x1A9D948 Offset: 0x1A9D948 VA: 0x1A9D948
+	public GameplayScaledCanvasView get_GameplayScaledCanvasView() { }
+
+	// RVA: 0x1A9DA18 Offset: 0x1A9DA18 VA: 0x1A9DA18
+	public GameplayNonScaledCanvasView get_GameplayNonScaledCanvasView() { }
+
+	// RVA: 0x1A9DAE8 Offset: 0x1A9DAE8 VA: 0x1A9DAE8
+	public PopupScreenParent get_PopupScreenParent() { }
+
+	// RVA: 0x1A9DBB8 Offset: 0x1A9DBB8 VA: 0x1A9DBB8
+	public ScreenNavigator get_ScreenNavigator() { }
+
+	// RVA: 0x1A9DC88 Offset: 0x1A9DC88 VA: 0x1A9DC88
+	public BoardController get_BoardController() { }
+
+	// RVA: 0x1A95B18 Offset: 0x1A95B18 VA: 0x1A95B18
+	public CameraController get_CameraController() { }
+
+	// RVA: 0x1A9DD58 Offset: 0x1A9DD58 VA: 0x1A9DD58
+	public MetaContextService get_MetaContextService() { }
+
+	// RVA: 0x1A9DD68 Offset: 0x1A9DD68 VA: 0x1A9DD68
+	public MetaOverlayCanvasController get_MetaOverlayCanvasController() { }
+
+	// RVA: 0x1A9DE38 Offset: 0x1A9DE38 VA: 0x1A9DE38
+	public DefaultPopupScreenController get_DefaultPopupScreenController() { }
+
+	// RVA: 0x1A9DF08 Offset: 0x1A9DF08 VA: 0x1A9DF08
+	public HeightScaledPopupScreenController get_HeightScaledPopupScreenController() { }
+
+	// RVA: 0x1A9544C Offset: 0x1A9544C VA: 0x1A9544C
+	public MasterPopupService get_MasterPopupService() { }
+
+	// RVA: 0x1A9E0A4 Offset: 0x1A9E0A4 VA: 0x1A9E0A4
+	public SceneController.State get_GameStatus() { }
+
+	// RVA: 0x1A9E0AC Offset: 0x1A9E0AC VA: 0x1A9E0AC
+	public static SceneController get_Instance() { }
+
+	// RVA: 0x1A9E0FC Offset: 0x1A9E0FC VA: 0x1A9E0FC
+	public static void set_Instance(SceneController value) { }
+
+	// RVA: 0x1A9E160 Offset: 0x1A9E160 VA: 0x1A9E160 Slot: 6
+	public override void Awake() { }
+
+	// RVA: 0x1A9E318 Offset: 0x1A9E318 VA: 0x1A9E318 Slot: 9
+	public override void OnDestroy() { }
+
+	// RVA: 0x1A9E38C Offset: 0x1A9E38C VA: 0x1A9E38C Slot: 14
+	public override void UpdateTick() { }
+
+	// RVA: 0x1A9E42C Offset: 0x1A9E42C VA: 0x1A9E42C
+	public bool SeasonPassAvailableForBoard() { }
+
+	// RVA: 0x1A9E4C8 Offset: 0x1A9E4C8 VA: 0x1A9E4C8
+	public bool GetSeasonPassBadgeStatus(BoardData boardData, BoardTaskItem boardTaskItem) { }
+
+	// RVA: 0x1A9E390 Offset: 0x1A9E390 VA: 0x1A9E390
+	private void CheckBackClick() { }
+
+	// RVA: 0x1A9E7E0 Offset: 0x1A9E7E0 VA: 0x1A9E7E0 Slot: 11
+	public override void UpdatePlayingTick(float elapsedTime) { }
+
+	// RVA: 0x1A9E904 Offset: 0x1A9E904 VA: 0x1A9E904 Slot: 13
+	public override void UpdatePausedTick(float elapsedTime) { }
+
+	// RVA: 0x1A9EA28 Offset: 0x1A9EA28 VA: 0x1A9EA28 Slot: 12
+	public override void UpdateTutorialTick(float elapsedTime) { }
+
+	// RVA: 0x1A9EB4C Offset: 0x1A9EB4C VA: 0x1A9EB4C Slot: 17
+	public void OnEvent(EntityUpdateEvent.SaveBoard e) { }
+
+	// RVA: 0x1A9EC3C Offset: 0x1A9EC3C VA: 0x1A9EC3C Slot: 18
+	public void OnEvent(EntityUpdateEvent.InventoryUpdated e) { }
+
+	// RVA: 0x1A9EDD0 Offset: 0x1A9EDD0 VA: 0x1A9EDD0 Slot: 16
+	public override void OnEvent(CanvasEvent.TutorialScreenStatusChange e) { }
+
+	// RVA: 0x1A9EEF4 Offset: 0x1A9EEF4 VA: 0x1A9EEF4 Slot: 15
+	public override void OnEvent(CanvasEvent.GameplayStatusUpdate e) { }
+
+	// RVA: 0x1A9EFFC Offset: 0x1A9EFFC VA: 0x1A9EFFC Slot: 19
+	public void OnEvent(BoardEvent.SellItemTrial e) { }
+
+	// RVA: 0x1A9F014 Offset: 0x1A9F014 VA: 0x1A9F014 Slot: 20
+	public void OnEvent(BoardEvent.RevertMove e) { }
+
+	// RVA: 0x1A9F020 Offset: 0x1A9F020 VA: 0x1A9F020 Slot: 21
+	public void OnEvent(BoardEvent.BoardItemPositionUpdateStart e) { }
+
+	// RVA: 0x1A9F03C Offset: 0x1A9F03C VA: 0x1A9F03C Slot: 22
+	public void OnEvent(BoardEvent.RemoveItemViaSellComplete e) { }
+
+	// RVA: 0x1A9F048 Offset: 0x1A9F048 VA: 0x1A9F048 Slot: 23
+	public void OnEvent(BoardEvent.BoardItemRemoveFinished e) { }
+
+	// RVA: 0x1A9F054 Offset: 0x1A9F054 VA: 0x1A9F054 Slot: 24
+	public void OnEvent(BoardEvent.BubbleDestroyed e) { }
+
+	// RVA: 0x1A9F060 Offset: 0x1A9F060 VA: 0x1A9F060 Slot: 25
+	public void OnEvent(BoardEvent.JellyDestroyed e) { }
+
+	// RVA: 0x1A9F008 Offset: 0x1A9F008 VA: 0x1A9F008
+	private void SendBoardItemStatusChange() { }
+
+	// RVA: 0x1A9E7C0 Offset: 0x1A9E7C0 VA: 0x1A9E7C0
+	private void ProcessBackClick() { }
+
+	[IteratorStateMachine(typeof(SceneController.<ProcessBackDelayed>d__66))]
+	// RVA: 0x1A9F06C Offset: 0x1A9F06C VA: 0x1A9F06C
+	private IEnumerator ProcessBackDelayed() { }
+
+	// RVA: 0x1A9F100 Offset: 0x1A9F100 VA: 0x1A9F100 Slot: 26
+	protected virtual MetaContextService GetMainMenuController() { }
+
+	// RVA: 0x1A9D87C Offset: 0x1A9D87C VA: 0x1A9D87C
+	private GameplayContextService GetGameplayContextService() { }
+
+	// RVA: 0x1A9DC8C Offset: 0x1A9DC8C VA: 0x1A9DC8C
+	private BoardController GetBoardController() { }
+
+	// RVA: 0x1A9F230 Offset: 0x1A9F230 VA: 0x1A9F230 Slot: 27
+	protected virtual CameraController GetCameraController() { }
+
+	// RVA: 0x1A9DA1C Offset: 0x1A9DA1C VA: 0x1A9DA1C
+	private GameplayNonScaledCanvasView GetNonScaledCanvasController() { }
+
+	// RVA: 0x1A9DD6C Offset: 0x1A9DD6C VA: 0x1A9DD6C
+	private MetaOverlayCanvasController GetMetaOverlayCanvasController() { }
+
+	// RVA: 0x1A9DE3C Offset: 0x1A9DE3C VA: 0x1A9DE3C
+	private DefaultPopupScreenController GetDefaultPopupScreenController() { }
+
+	// RVA: 0x1A9DF0C Offset: 0x1A9DF0C VA: 0x1A9DF0C
+	private HeightScaledPopupScreenController GetHeightScaledPopupScreenController() { }
+
+	// RVA: 0x1A9DFD8 Offset: 0x1A9DFD8 VA: 0x1A9DFD8
+	private MasterPopupService GetMasterPopupController() { }
+
+	// RVA: 0x1A9DAEC Offset: 0x1A9DAEC VA: 0x1A9DAEC
+	private PopupScreenParent GetPopupScreenParent() { }
+
+	// RVA: 0x1A9DBBC Offset: 0x1A9DBBC VA: 0x1A9DBBC
+	private ScreenNavigator GetScreenNavigator() { }
+
+	// RVA: 0x1A9D94C Offset: 0x1A9D94C VA: 0x1A9D94C
+	private GameplayScaledCanvasView GetGameplayCanvasView() { }
+
+	// RVA: 0x1A9F2FC Offset: 0x1A9F2FC VA: 0x1A9F2FC
+	public void .ctor() { }
+}
+

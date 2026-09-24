@@ -1,0 +1,147 @@
+Type: GameLogic.Config.InventorySlotsConfig
+
+Method: GameLogic.Config.InventorySlotId get_ConfigKey()
+
+Disassembly:
+	0x03416928 LDRB W9, [X1 + 0x130]
+	0x0341692C CMP W10, W9
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_ConfigKey(GameLogic.Config.InventorySlotId value)
+
+Disassembly:
+	0x03416930 B.CC 0x341697C
+	0x03416934 LDR X8, [X8 + 0xC8]
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: Currencies get_Currency()
+
+Disassembly:
+	0x03416938 ADD X8, X8, X9, 0x3, LSL
+	0x0341693C LDUR X8, [X8 - 0x8]
+
+ISIL:
+	001 Move W0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_Currency(Currencies value)
+
+Disassembly:
+	0x03416940 CMP X8, X1
+	0x03416944 B.NE 0x341697C
+
+ISIL:
+	001 Move [X0+24], W1
+	002 Return 
+
+Method: System.Int32 get_Cost()
+
+Disassembly:
+	0x03416948 LDR X0, [X19 + 0x220]
+	0x0341694C CBZ X0, 0x3416984
+
+ISIL:
+	001 Move W0, [X0+28]
+	002 Return X0
+
+Method: System.Void set_Cost(System.Int32 value)
+
+Disassembly:
+	0x03416950 MOV X1, X31
+	0x03416954 BL 0x377B1E8
+
+ISIL:
+	001 Move [X0+28], W1
+	002 Return 
+
+Method: System.Int32 get_ExperimentPriority()
+
+Disassembly:
+	0x03416958 CBZ X0, 0x3416970
+	0x0341695C LDR X8, [X0]
+
+ISIL:
+	001 Move W0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_ExperimentPriority(System.Int32 value)
+
+Disassembly:
+	0x03416960 LDP X20, X19, [X31 + 0x10]
+	0x03416964 LDP X2, X1, [X8 + 0x168]
+
+ISIL:
+	001 Move [X0+32], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03416968 LDR X30, [X31], #0x20
+	0x0341696C BR X2
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(GameLogic.Config.InventorySlotId slotId, Currencies currency, System.Int32 cost, System.Int32 experimentPriority)
+
+Disassembly:
+	0x03416970 LDP X20, X19, [X31 + 0x10]
+	0x03416974 LDR X30, [X31], #0x20
+	0x03416978 RET
+	0x0341697C MOV X0, X19
+	0x03416980 BL 0x239BF10
+	0x03416984 BL 0x239BB90
+	0x03416988 STR X30, [X31 - 0x20]!
+	0x0341698C STP X20, X19, [X31 + 0x10]
+	0x03416990 ADRP X19, 0x2912000
+	0x03416994 ADRP X20, 0x230A000
+	0x03416998 LDRB W8, [X19 + 0xC6C]
+	0x0341699C LDR X20, [X20 + 0x7A8]
+	0x034169A0 TBNZ X8, 0x0, 0x34169B8
+	0x034169A4 ADRP X0, 0x230A000
+	0x034169A8 LDR X0, [X0 + 0x7A8]
+	0x034169AC BL 0x239B8E4
+	0x034169B0 MOVZ W8, 0x1
+	0x034169B4 STRB W8, [X19 + 0xC6C]
+	0x034169B8 LDR X0, [X20]
+	0x034169BC LDP X20, X19, [X31 + 0x10]
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31-40], X23
+	003 Move [X31+16], X22
+	004 Move [X31+24], X21
+	005 Move [X31+32], X20
+	006 Move [X31+40], X19
+	007 Move X22, X1
+	008 Move X1, X31
+	009 Move W19, W4
+	010 Move W20, W3
+	011 Move W21, W2
+	012 Move X23, X0
+	013 Call Object..ctor, X0
+	014 Move [X23+16], X22
+	015 Move X0, X23
+	016 Move X1, X22
+	017 Call 0x239F888
+	018 Move [X23+8], W21
+	019 Move [X23+12], W20
+	020 Move X22, [X31+16]
+	021 Move X21, [X31+24]
+	022 Move [X23+16], W19
+	023 Move X20, [X31+32]
+	024 Move X19, [X31+40]
+	025 Move X30, [X31+48]
+	026 Move X23, [X31+56]
+	027 Return 
+

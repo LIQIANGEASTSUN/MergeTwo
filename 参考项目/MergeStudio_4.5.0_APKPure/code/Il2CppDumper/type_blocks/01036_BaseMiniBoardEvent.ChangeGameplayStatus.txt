@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BaseMiniBoardEvent.ChangeGameplayStatus : IEvent // TypeDefIndex: 1036
+{
+	// Fields
+	public bool EnableGameplay; // 0x0
+}
+

@@ -1,0 +1,26 @@
+// Namespace: MergeEngine.ECS.Components
+public class TimeComponent : ComponentBase // TypeDefIndex: 1027
+{
+	// Fields
+	public double DeltaTimeToProcess; // 0x20
+	public bool TickProcessed; // 0x28
+	[CompilerGenerated]
+	private double <TimeMultiplier>k__BackingField; // 0x30
+
+	// Properties
+	public double TimeMultiplier { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x68F8DE4 Offset: 0x68F4DE4 VA: 0x68F8DE4
+	public double get_TimeMultiplier() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68F8DEC Offset: 0x68F4DEC VA: 0x68F8DEC
+	public void set_TimeMultiplier(double value) { }
+
+	// RVA: 0x68F8DF4 Offset: 0x68F4DF4 VA: 0x68F8DF4
+	public void .ctor(Entity entity) { }
+}
+

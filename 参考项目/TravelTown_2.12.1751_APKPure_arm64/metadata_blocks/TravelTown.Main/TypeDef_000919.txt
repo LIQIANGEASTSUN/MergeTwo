@@ -1,0 +1,228 @@
+// Namespace: MergeEngine.ECS.Systems.Board
+public class BoardSystem : BaseBoardSystem // TypeDefIndex: 919
+{
+	// Fields
+	[CompilerGenerated]
+	private IBoardUIView <BoardUIView>k__BackingField; // 0x40
+	[Inject]
+	private IEntityFactory _entityFactory; // 0x48
+	[Inject]
+	private IRandomNumberModel _randomNumberModel; // 0x50
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x58
+	[Inject]
+	private IGameConfigurationModel _gameConfigurationModel; // 0x60
+	[Inject]
+	private IViewRegistryModel _viewRegistryModel; // 0x68
+	[Inject]
+	private INotificationDataFactory _notificationDataFactory; // 0x70
+	[InjectSystem]
+	private OperationTrackingSystem _operationTrackingSystem; // 0x78
+	[InjectSystem]
+	private PowerBoostSystem _powerBoostSystem; // 0x80
+	[InjectComponent]
+	private BoardComponent _boardComponent; // 0x88
+	[InjectComponent]
+	private BoardItemCountComponent _boardCountComponent; // 0x90
+	[InjectComponent]
+	private LiveOpsEventComponent _liveOpsEventComponent; // 0x98
+	[InjectSystem]
+	private TutorialSystem _tutorialSystem; // 0xA0
+	[InjectSystem]
+	private LiveOpsEventSystem _liveOpsEventSystem; // 0xA8
+	[Inject]
+	private IPersistentStorageService _persistentStorageService; // 0xB0
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0xB8
+	[Inject]
+	private IUserProfileService _userProfileService; // 0xC0
+	[Inject]
+	private IBubbleSaleService _bubbleSaleService; // 0xC8
+	[Inject]
+	private IGameSessionModel _sessionModel; // 0xD0
+	private IBoardView _boardView; // 0xD8
+	[CompilerGenerated]
+	private float <MergeAnimationSpeed>k__BackingField; // 0xE0
+	[CompilerGenerated]
+	private float <ProduceAnimationSpeed>k__BackingField; // 0xE4
+
+	// Properties
+	public override IBoardView BoardView { get; }
+	public IBoardUIView BoardUIView { get; set; }
+	public bool IsFull { get; }
+	public int NumEmptyPositions { get; }
+	public ReadOnlyCollection<BoardItemPosition> EmptyPositions { get; }
+	private string CurrentEventId { get; }
+	private ReadOnlyCollection<PositionComponent> BoardItems { get; }
+	public float MergeAnimationSpeed { get; set; }
+	public float ProduceAnimationSpeed { get; set; }
+
+	// Methods
+
+	// RVA: 0x66675D8 Offset: 0x66635D8 VA: 0x66675D8 Slot: 13
+	public override IBoardView get_BoardView() { }
+
+	[CompilerGenerated]
+	// RVA: 0x66675E0 Offset: 0x66635E0 VA: 0x66675E0
+	public IBoardUIView get_BoardUIView() { }
+
+	[CompilerGenerated]
+	// RVA: 0x66675E8 Offset: 0x66635E8 VA: 0x66675E8
+	private void set_BoardUIView(IBoardUIView value) { }
+
+	// RVA: 0x6659DC0 Offset: 0x6655DC0 VA: 0x6659DC0
+	public bool get_IsFull() { }
+
+	// RVA: 0x66675F0 Offset: 0x66635F0 VA: 0x66675F0
+	public int get_NumEmptyPositions() { }
+
+	// RVA: 0x666764C Offset: 0x666364C VA: 0x666764C
+	public ReadOnlyCollection<BoardItemPosition> get_EmptyPositions() { }
+
+	// RVA: 0x6667668 Offset: 0x6663668 VA: 0x6667668
+	private string get_CurrentEventId() { }
+
+	// RVA: 0x66676D4 Offset: 0x66636D4 VA: 0x66676D4
+	private ReadOnlyCollection<PositionComponent> get_BoardItems() { }
+
+	[CompilerGenerated]
+	// RVA: 0x666778C Offset: 0x666378C VA: 0x666778C
+	public float get_MergeAnimationSpeed() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6667794 Offset: 0x6663794 VA: 0x6667794
+	private void set_MergeAnimationSpeed(float value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x666779C Offset: 0x666379C VA: 0x666779C
+	public float get_ProduceAnimationSpeed() { }
+
+	[CompilerGenerated]
+	// RVA: 0x66677A4 Offset: 0x66637A4 VA: 0x66677A4
+	private void set_ProduceAnimationSpeed(float value) { }
+
+	// RVA: 0x66677AC Offset: 0x66637AC VA: 0x66677AC
+	public void TryLockBoardItems(CurrentBoardType boardType) { }
+
+	// RVA: 0x6667AF8 Offset: 0x6663AF8 VA: 0x6667AF8
+	private void BoardViewChanged(IViewComponent boardView) { }
+
+	// RVA: 0x6668448 Offset: 0x6664448 VA: 0x6668448 Slot: 6
+	protected override void InitializeSystem() { }
+
+	// RVA: 0x66688FC Offset: 0x66648FC VA: 0x66688FC
+	private void OnBoardSwitchComplete() { }
+
+	// RVA: 0x6668C48 Offset: 0x6664C48 VA: 0x6668C48 Slot: 8
+	protected override void OnGameStarted() { }
+
+	// RVA: 0x6668F84 Offset: 0x6664F84 VA: 0x6668F84
+	public void MoveDuplicatePositionedItemsToItemQueue(IEnumerable<PositionComponent> duplicatePositionedItems) { }
+
+	// RVA: 0x6668828 Offset: 0x6664828 VA: 0x6668828
+	private void CreateBoardDistanceLookup() { }
+
+	// RVA: 0x6669B08 Offset: 0x6665B08 VA: 0x6669B08
+	private void OnAllSystemsInitialized() { }
+
+	// RVA: 0x6667EB8 Offset: 0x6663EB8 VA: 0x6667EB8
+	private void CreateBoard() { }
+
+	// RVA: 0x6669B24 Offset: 0x6665B24 VA: 0x6669B24
+	private void LockBoardItemsBeforeFirstTutorial() { }
+
+	// RVA: 0x6664880 Offset: 0x6660880 VA: 0x6664880
+	public BoardItemPosition GetRandomAvailablePosition() { }
+
+	// RVA: 0x6669C6C Offset: 0x6665C6C VA: 0x6669C6C
+	public BoardItemPosition GetClosestAvailablePositionTo(BoardItemPosition boardItemPosition, BoardItemPosition[] ignorePositions) { }
+
+	// RVA: 0x6669E54 Offset: 0x6665E54 VA: 0x6669E54 Slot: 11
+	protected override void EntityCreated(Entity entity) { }
+
+	// RVA: 0x6669F68 Offset: 0x6665F68 VA: 0x6669F68
+	private void AddBoardItem(PositionComponent positionComponent) { }
+
+	// RVA: 0x666805C Offset: 0x666405C VA: 0x666805C
+	private void AddItem(PositionComponent positionComponent) { }
+
+	// RVA: 0x6669FE4 Offset: 0x6665FE4 VA: 0x6669FE4
+	private void TryCreateItemsOnBoard(PositionComponent positionComponent, IdComponent idComponent, VisualComponent visualComponent, IMergeItem mergeItem, LockedComponent lockedComponent) { }
+
+	// RVA: 0x6669F80 Offset: 0x6665F80 VA: 0x6669F80
+	private int GetProduceCost(bool isBoostable, InteractionComponent interactionComponent) { }
+
+	// RVA: 0x666A51C Offset: 0x666651C VA: 0x666A51C
+	private void OnPowerBoostToggleChanged() { }
+
+	// RVA: 0x6668918 Offset: 0x6664918 VA: 0x6668918
+	private void SetProduceCost() { }
+
+	// RVA: 0x66698A0 Offset: 0x66658A0 VA: 0x66698A0
+	private void TryDispatchBoardIsFull() { }
+
+	// RVA: 0x666A488 Offset: 0x6666488 VA: 0x666A488
+	private void FireItemCreatedSignal(ItemOrigin itemOrigin) { }
+
+	// RVA: 0x666A520 Offset: 0x6666520 VA: 0x666A520 Slot: 14
+	public override void RemoveItem(PositionComponent positionComponent, string source, bool killEntity = True, bool removeItemCount = True) { }
+
+	// RVA: 0x666AB4C Offset: 0x6666B4C VA: 0x666AB4C
+	public List<BoardItemPosition> GetAdjascentPositions(BoardItemPosition position, bool includeDiagonal, Func<BoardItemPosition, bool> includePredicate) { }
+
+	// RVA: 0x665EABC Offset: 0x665AABC VA: 0x665EABC
+	public void SwapItems(BoardItemPosition firstItemPosition, BoardItemPosition secondItemPosition) { }
+
+	// RVA: 0x665EF40 Offset: 0x665AF40 VA: 0x665EF40
+	public void MoveItemWithOperation(BoardItemPosition oldPosition, BoardItemPosition newPosition, PositionComponent itemToMove) { }
+
+	// RVA: 0x665EF68 Offset: 0x665AF68 VA: 0x665EF68
+	public void MoveItem(BoardItemPosition oldPosition, BoardItemPosition newPosition, PositionComponent itemToMove) { }
+
+	// RVA: 0x666AC9C Offset: 0x6666C9C VA: 0x666AC9C
+	public void TrackMoveItemNotificationData(PositionComponent itemToMove) { }
+
+	// RVA: 0x6660834 Offset: 0x665C834 VA: 0x6660834
+	public PositionComponent GetItem(BoardItemPosition position) { }
+
+	// RVA: 0x666AEE4 Offset: 0x6666EE4 VA: 0x666AEE4
+	public bool IsPositionEmpty(BoardItemPosition position) { }
+
+	// RVA: 0x666AF0C Offset: 0x6666F0C VA: 0x666AF0C
+	public bool IsUnlockedItemOnBoard(string itemId) { }
+
+	// RVA: 0x666AF24 Offset: 0x6666F24 VA: 0x666AF24
+	public PositionComponent GetUnlockedItemById(string uniqueId) { }
+
+	// RVA: 0x666B038 Offset: 0x6667038 VA: 0x666B038
+	public int GetUnlockedItemCountById(string itemId) { }
+
+	// RVA: 0x666B380 Offset: 0x6667380 VA: 0x666B380 Slot: 7
+	protected override void DisposeSystem() { }
+
+	// RVA: 0x666A900 Offset: 0x6666900 VA: 0x666A900
+	private void KillEntity(PositionComponent positionComponent, string source) { }
+
+	// RVA: 0x666B5B0 Offset: 0x66675B0 VA: 0x666B5B0
+	public bool IsItemInDrag() { }
+
+	// RVA: 0x666B6D4 Offset: 0x66676D4 VA: 0x666B6D4
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6669A94 Offset: 0x6665A94 VA: 0x6669A94
+	internal static void <CreateBoardDistanceLookup>g__InvokeForAllPositions|49_0(Action<BoardItemPosition> action) { }
+
+	[CompilerGenerated]
+	// RVA: 0x666B6E8 Offset: 0x66676E8 VA: 0x666B6E8
+	private void <CreateBoardDistanceLookup>b__49_1(BoardItemPosition position1) { }
+
+	[CompilerGenerated]
+	// RVA: 0x666B7B4 Offset: 0x66677B4 VA: 0x666B7B4
+	private void <CreateBoardDistanceLookup>g__InsertDistanceToDictionary|49_3(BoardItemPosition firstPosition, BoardItemPosition secondPosition, ref BoardSystem.<>c__DisplayClass49_1 ) { }
+
+	[CompilerGenerated]
+	// RVA: 0x666B8FC Offset: 0x66678FC VA: 0x666B8FC
+	private bool <AddItem>b__57_0() { }
+}
+

@@ -1,0 +1,93 @@
+Type: GameLogic.Config.ConfigExtensions+<>c__DisplayClass2_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03406988 MOV X0, X8
+	0x0340698C BL 0x239BB80
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: GameLogic.Player.Requirements.PlayerRequirement <ResolveRequirements>b__0(System.ValueTuple`4<System.String, System.String, System.String, System.String> requirement)
+
+Disassembly:
+	0x03406990 MOV X1, X20
+	0x03406994 MOV X2, X31
+	0x03406998 MOV X19, X0
+	0x0340699C BL 0x3420118
+	0x034069A0 B 0x3405128
+	0x034069A4 ADRP X8, 0x2319000
+	0x034069A8 MOV X0, X20
+	0x034069AC MOV X2, X31
+	0x034069B0 LDR X8, [X8 + 0x698]
+	0x034069B4 LDR X1, [X8]
+	0x034069B8 BL 0x4310D74
+	0x034069BC TBZ X0, 0x0, 0x340721C
+	0x034069C0 ADRP X8, 0x2319000
+	0x034069C4 LDR X8, [X8 + 0x578]
+	0x034069C8 LDR X0, [X8]
+	0x034069CC BL 0x239BB80
+	0x034069D0 MOV X19, X0
+	0x034069D4 BL 0x3407680
+	0x034069D8 B 0x3405128
+	0x034069DC ADRP X8, 0x2319000
+	0x034069E0 MOV X0, X20
+	0x034069E4 MOV X2, X31
+	0x034069E8 LDR X8, [X8 + 0x870]
+	0x034069EC LDR X1, [X8]
+	0x034069F0 BL 0x4310D74
+	0x034069F4 TBZ X0, 0x0, 0x340721C
+	0x034069F8 ADRP X8, 0x2319000
+	0x034069FC LDR X8, [X8 + 0x450]
+	0x03406A00 LDR X0, [X8]
+	0x03406A04 BL 0x239BB80
+	0x03406A08 MOV X1, X31
+	0x03406A0C MOV X19, X0
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31-40], X23
+	003 Move [X31+16], X22
+	004 Move [X31+24], X21
+	005 Move [X31+32], X20
+	006 Move [X31+40], X19
+	007 Move X19, X1
+	008 Move W8, [0x2926BDD]
+	009 Move X21, [0x22D3118]
+	010 Move X20, X0
+	011 Move TEMP, X8
+	012 And TEMP, TEMP, 1
+	013 Compare TEMP, 1
+	014 JumpIfEqual {19}
+	015 Move X0, [0x22D3118]
+	016 Call 0x239F8E4
+	017 Move W8, 1
+	018 Move [X22+3037], W8
+	019 Move X0, [X21]
+	020 Move X21, [X19]
+	021 Move X22, [X19+8]
+	022 Move X23, [X19+16]
+	023 Move X19, [X19+24]
+	024 Move X20, [X20+16]
+	025 Move W8, [X0+228]
+	026 Compare W8, 0
+	027 JumpIfNotEqual {29}
+	028 Call 0x239FA64
+	029 Move X0, X21
+	030 Move X1, X22
+	031 Move X3, X19
+	032 Move X4, X20
+	033 Move X20, [X31+32]
+	034 Move X19, [X31+40]
+	035 Move X22, [X31+16]
+	036 Move X21, [X31+24]
+	037 Move X2, X23
+	038 Move X5, X31
+	039 Move X30, [X31+48]
+	040 Move X23, [X31+56]
+	041 Call ConfigExtensions.ResolveRequirement, X0, X1, X2, X3, X4
+	042 Return X0
+

@@ -1,0 +1,45 @@
+// Namespace: Merger.MergeBoard.PowerBoost.Providers
+public class MergeBoardPowerBoostDataProvider : IPowerBoostDataProvider // TypeDefIndex: 32793
+{
+	// Fields
+	[Inject]
+	private IPowerBoostModel _powerBoostModel; // 0x10
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x18
+	[Inject]
+	private IPowerBoostModesCalculator _powerBoostModesCalculator; // 0x20
+
+	// Properties
+	public int CurrentPowerBoost { get; }
+	public int MaxAvailableBoost { get; }
+	public bool IsPowerBoostActive { get; }
+	public bool IsMaxBoostActive { get; }
+	public bool IsPowerBoostAvailable { get; }
+
+	// Methods
+
+	// RVA: 0x6AD13C4 Offset: 0x6ACD3C4 VA: 0x6AD13C4 Slot: 6
+	public int get_CurrentPowerBoost() { }
+
+	// RVA: 0x6AD1518 Offset: 0x6ACD518 VA: 0x6AD1518 Slot: 7
+	public int get_MaxAvailableBoost() { }
+
+	// RVA: 0x6AD15B8 Offset: 0x6ACD5B8 VA: 0x6AD15B8 Slot: 5
+	public bool get_IsPowerBoostActive() { }
+
+	// RVA: 0x6AD16E4 Offset: 0x6ACD6E4 VA: 0x6AD16E4 Slot: 8
+	public bool get_IsMaxBoostActive() { }
+
+	// RVA: 0x6AD1834 Offset: 0x6ACD834 VA: 0x6AD1834 Slot: 4
+	public bool get_IsPowerBoostAvailable() { }
+
+	// RVA: 0x6AD18D8 Offset: 0x6ACD8D8 VA: 0x6AD18D8 Slot: 9
+	public bool IsPowerBoostable(string id) { }
+
+	// RVA: 0x6AD1B80 Offset: 0x6ACDB80 VA: 0x6AD1B80 Slot: 10
+	public IEnumerable<int> GetPlayableBoosts() { }
+
+	// RVA: 0x6AD1C24 Offset: 0x6ACDC24 VA: 0x6AD1C24
+	public void .ctor() { }
+}
+

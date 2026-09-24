@@ -1,0 +1,13 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+public class BoardCapability // TypeDefIndex: 1431
+{
+	// Fields
+	public const int Cols = 7;
+	public const int Rows = 9;
+
+	// Methods
+
+	// RVA: 0x600FA1C Offset: 0x600BA1C VA: 0x600FA1C
+	public void .ctor() { }
+}
+

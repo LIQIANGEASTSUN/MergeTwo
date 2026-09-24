@@ -1,0 +1,348 @@
+// Namespace: MergeEngine.Configuration.Definitions
+[Serializable]
+public class Reward // TypeDefIndex: 1325
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly List<ConditionalRewardMultiple> <ConditionalRewards>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly List<IRewardViewData> <OriginalOrderRewards>k__BackingField; // 0x18
+	public bool IsWeightedContainer; // 0x20
+
+	// Properties
+	[Obsolete("UseOriginalOrderRewards")]
+	public List<ResourceMultiple> Resources { get; }
+	[Obsolete("UseOriginalOrderRewards")]
+	public List<ItemMultiple> Items { get; }
+	[Obsolete("UseOriginalOrderRewards")]
+	public List<BoosterMultiple> Boosters { get; }
+	[Obsolete("UseOriginalOrderRewards")]
+	public List<CardsPackMultiple> Packs { get; }
+	[Obsolete("UseOriginalOrderRewards")]
+	public List<VanityRewardItemMultiple> VanityItems { get; }
+	[Obsolete("UseOriginalOrderRewards")]
+	public List<ChestMultiple> Chests { get; }
+	[Obsolete("UseOriginalOrderRewards")]
+	public List<FrameMultiple> Frames { get; }
+	[Obsolete("UseOriginalOrderRewards")]
+	public List<PortalItem> PortalItems { get; }
+	public List<ConditionalRewardMultiple> ConditionalRewards { get; }
+	[Obsolete("UseOriginalOrderRewards")]
+	public List<GenericTokenMultiple> GenericTokens { get; }
+	[Obsolete("UseOriginalOrderRewards")]
+	public List<WheelMultiple> Wheels { get; }
+	[Obsolete("UseOriginalOrderRewards")]
+	public List<BubbleBlasterMultiple> BubbleBlasters { get; }
+	[JsonIgnore]
+	[Obsolete("UseCount")]
+	public int ResourcesCount { get; }
+	[JsonIgnore]
+	[Obsolete("UseCount")]
+	public int BoostersCount { get; }
+	[JsonIgnore]
+	[Obsolete("UseCount")]
+	public int FramesCount { get; }
+	[Obsolete("UseCount")]
+	[JsonIgnore]
+	public int VanityItemsCount { get; }
+	[JsonIgnore]
+	[Obsolete("UseCount")]
+	public int PacksCount { get; }
+	[JsonIgnore]
+	[Obsolete("UseCount")]
+	public int ItemsCount { get; }
+	[JsonIgnore]
+	public bool HasResources { get; }
+	[JsonIgnore]
+	public bool HasGenericTokens { get; }
+	[JsonIgnore]
+	public bool HasBubbleBlasters { get; }
+	[JsonIgnore]
+	public bool HasMergeItems { get; }
+	[JsonIgnore]
+	public bool HasBoosters { get; }
+	[JsonIgnore]
+	public bool HasPacks { get; }
+	[JsonIgnore]
+	public bool HasChests { get; }
+	[JsonIgnore]
+	public bool HasFrames { get; }
+	[JsonIgnore]
+	public bool HasBunchOfItems { get; }
+	[JsonIgnore]
+	public bool HasPendable { get; }
+	[JsonIgnore]
+	public bool HasVanityItems { get; }
+	[JsonIgnore]
+	public bool HasAnyItems { get; }
+	[JsonIgnore]
+	public bool ContainsReward { get; }
+	[JsonIgnore]
+	public bool HasPortalItems { get; }
+	[JsonIgnore]
+	public bool HasWheels { get; }
+	[JsonIgnore]
+	public int UnpendingRewardsCount { get; }
+	[JsonIgnore]
+	public List<IRewardViewData> OriginalOrderRewards { get; }
+	[JsonIgnore]
+	public List<IRewardAnalyticsData> RewardAnalyticsDatas { get; }
+	[JsonIgnore]
+	public List<IRewardViewData> AllItemRewards { get; }
+	[JsonIgnore]
+	public int AllRewardsCount { get; }
+	[JsonIgnore]
+	public int AllRewardsCountWithoutOutOfBoosters { get; }
+	public bool IsEmpty { get; }
+
+	// Methods
+
+	// RVA: 0x6A2AAA0 Offset: 0x6A26AA0 VA: 0x6A2AAA0
+	public List<ResourceMultiple> get_Resources() { }
+
+	// RVA: 0x6A2AAEC Offset: 0x6A26AEC VA: 0x6A2AAEC
+	public List<ItemMultiple> get_Items() { }
+
+	// RVA: 0x6A2AB38 Offset: 0x6A26B38 VA: 0x6A2AB38
+	public List<BoosterMultiple> get_Boosters() { }
+
+	// RVA: 0x6A2AB84 Offset: 0x6A26B84 VA: 0x6A2AB84
+	public List<CardsPackMultiple> get_Packs() { }
+
+	// RVA: 0x6A2ABD0 Offset: 0x6A26BD0 VA: 0x6A2ABD0
+	public List<VanityRewardItemMultiple> get_VanityItems() { }
+
+	// RVA: 0x6A2AC1C Offset: 0x6A26C1C VA: 0x6A2AC1C
+	public List<ChestMultiple> get_Chests() { }
+
+	// RVA: 0x6A2AC68 Offset: 0x6A26C68 VA: 0x6A2AC68
+	public List<FrameMultiple> get_Frames() { }
+
+	// RVA: 0x6A2ACB4 Offset: 0x6A26CB4 VA: 0x6A2ACB4
+	public List<PortalItem> get_PortalItems() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A2AD00 Offset: 0x6A26D00 VA: 0x6A2AD00
+	public List<ConditionalRewardMultiple> get_ConditionalRewards() { }
+
+	// RVA: 0x6A2AD08 Offset: 0x6A26D08 VA: 0x6A2AD08
+	public List<GenericTokenMultiple> get_GenericTokens() { }
+
+	// RVA: 0x6A2AD54 Offset: 0x6A26D54 VA: 0x6A2AD54
+	public List<WheelMultiple> get_Wheels() { }
+
+	// RVA: 0x6A2ADA0 Offset: 0x6A26DA0 VA: 0x6A2ADA0
+	public List<BubbleBlasterMultiple> get_BubbleBlasters() { }
+
+	// RVA: 0x6A2ADEC Offset: 0x6A26DEC VA: 0x6A2ADEC
+	public int get_ResourcesCount() { }
+
+	// RVA: 0x6A2B130 Offset: 0x6A27130 VA: 0x6A2B130
+	public int get_BoostersCount() { }
+
+	// RVA: 0x6A2B190 Offset: 0x6A27190 VA: 0x6A2B190
+	public int get_FramesCount() { }
+
+	// RVA: 0x6A2B2D8 Offset: 0x6A272D8 VA: 0x6A2B2D8
+	public int get_VanityItemsCount() { }
+
+	// RVA: 0x6A2B338 Offset: 0x6A27338 VA: 0x6A2B338
+	public int get_PacksCount() { }
+
+	// RVA: 0x6A2B398 Offset: 0x6A27398 VA: 0x6A2B398
+	public int get_ItemsCount() { }
+
+	// RVA: 0x6A2B3F8 Offset: 0x6A273F8 VA: 0x6A2B3F8
+	public bool get_HasResources() { }
+
+	// RVA: 0x6A2B410 Offset: 0x6A27410 VA: 0x6A2B410
+	public bool get_HasGenericTokens() { }
+
+	// RVA: 0x6A2B470 Offset: 0x6A27470 VA: 0x6A2B470
+	public bool get_HasBubbleBlasters() { }
+
+	// RVA: 0x6A2B4C8 Offset: 0x6A274C8 VA: 0x6A2B4C8
+	public bool get_HasMergeItems() { }
+
+	// RVA: 0x6A2B4E0 Offset: 0x6A274E0 VA: 0x6A2B4E0
+	public bool get_HasBoosters() { }
+
+	// RVA: 0x6A2B4F8 Offset: 0x6A274F8 VA: 0x6A2B4F8
+	public bool get_HasPacks() { }
+
+	// RVA: 0x6A2B510 Offset: 0x6A27510 VA: 0x6A2B510
+	public bool get_HasChests() { }
+
+	// RVA: 0x6A2B57C Offset: 0x6A2757C VA: 0x6A2B57C
+	public bool get_HasFrames() { }
+
+	// RVA: 0x6A2B594 Offset: 0x6A27594 VA: 0x6A2B594
+	public bool get_HasBunchOfItems() { }
+
+	// RVA: 0x6A2B600 Offset: 0x6A27600 VA: 0x6A2B600
+	public bool get_HasPendable() { }
+
+	// RVA: 0x6A2B724 Offset: 0x6A27724 VA: 0x6A2B724
+	public bool get_HasVanityItems() { }
+
+	// RVA: 0x6A2B73C Offset: 0x6A2773C VA: 0x6A2B73C
+	public bool get_HasAnyItems() { }
+
+	// RVA: 0x6A2B7CC Offset: 0x6A277CC VA: 0x6A2B7CC
+	public bool get_ContainsReward() { }
+
+	// RVA: 0x6A2B660 Offset: 0x6A27660 VA: 0x6A2B660
+	public bool get_HasPortalItems() { }
+
+	// RVA: 0x6A2B6CC Offset: 0x6A276CC VA: 0x6A2B6CC
+	public bool get_HasWheels() { }
+
+	// RVA: 0x6A2B81C Offset: 0x6A2781C VA: 0x6A2B81C
+	public int get_UnpendingRewardsCount() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A2B898 Offset: 0x6A27898 VA: 0x6A2B898
+	public List<IRewardViewData> get_OriginalOrderRewards() { }
+
+	// RVA: 0x6A2B8A0 Offset: 0x6A278A0 VA: 0x6A2B8A0
+	public List<IRewardAnalyticsData> get_RewardAnalyticsDatas() { }
+
+	// RVA: 0x6A2B97C Offset: 0x6A2797C VA: 0x6A2B97C
+	public List<IRewardViewData> get_AllItemRewards() { }
+
+	// RVA: 0x6A2BA80 Offset: 0x6A27A80 VA: 0x6A2BA80
+	public int get_AllRewardsCount() { }
+
+	// RVA: 0x6A2BAC8 Offset: 0x6A27AC8 VA: 0x6A2BAC8
+	public int get_AllRewardsCountWithoutOutOfBoosters() { }
+
+	// RVA: 0x6A24C88 Offset: 0x6A20C88 VA: 0x6A24C88
+	public void .ctor(IEnumerable<IRewardViewData> originalOrderRewards, List<ConditionalRewardMultiple> conditionals) { }
+
+	// RVA: 0x6A1CD68 Offset: 0x6A18D68 VA: 0x6A1CD68
+	public void .ctor() { }
+
+	// RVA: 0x6A2BBF0 Offset: 0x6A27BF0 VA: 0x6A2BBF0
+	public Reward Clone() { }
+
+	// RVA: 0x6A2BE30 Offset: 0x6A27E30 VA: 0x6A2BE30
+	public Reward CloneExcludingAmountType(RewardAmountType typeToExclude) { }
+
+	// RVA: 0x6A2C190 Offset: 0x6A28190 VA: 0x6A2C190
+	public bool get_IsEmpty() { }
+
+	// RVA: 0x6A2C1E0 Offset: 0x6A281E0 VA: 0x6A2C1E0 Slot: 0
+	public override bool Equals(object obj) { }
+
+	// RVA: 0x6A27FCC Offset: 0x6A23FCC VA: 0x6A27FCC
+	public bool Equals(Reward otherReward) { }
+
+	// RVA: 0x6A2C260 Offset: 0x6A28260 VA: 0x6A2C260
+	private bool IsSameOrderRewards(Reward otherReward) { }
+
+	// RVA: 0x6A2C3D4 Offset: 0x6A283D4 VA: 0x6A2C3D4
+	public IReadOnlyList<PortalItem> GetGroupedPortalItems() { }
+
+	// RVA: -1 Offset: -1
+	public List<TMultiple> EnrichMultipleWithConditionals<TMultiple>(List<TMultiple> multipleList) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D7C7F4 Offset: 0x3D787F4 VA: 0x3D7C7F4
+	|-Reward.EnrichMultipleWithConditionals<object>
+	|
+	|-RVA: 0x3D7C958 Offset: 0x3D78958 VA: 0x3D7C958
+	|-Reward.EnrichMultipleWithConditionals<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x6A2CA88 Offset: 0x6A28A88 VA: 0x6A2CA88
+	public void AccumulateRewards(Reward otherReward) { }
+
+	// RVA: 0x6A2CC04 Offset: 0x6A28C04 VA: 0x6A2CC04
+	private bool CompareItemBoxes(Reward otherReward) { }
+
+	// RVA: 0x6A2D160 Offset: 0x6A29160 VA: 0x6A2D160
+	private bool AreItemBoxesRefsEqual(List<DynamicMergeItemWeakReference> myRewardItemsRefs, List<DynamicMergeItemWeakReference> otherRewardItemsRefs) { }
+
+	// RVA: 0x6A2D37C Offset: 0x6A2937C VA: 0x6A2D37C
+	public void FixOriginalRewardsIfMissingChests() { }
+
+	// RVA: 0x6A2D42C Offset: 0x6A2942C VA: 0x6A2D42C
+	public Reward RemovePendingBoosters() { }
+
+	// RVA: 0x6A2D4E0 Offset: 0x6A294E0 VA: 0x6A2D4E0
+	public Reward AggregateRewardTypesByConfigurationId() { }
+
+	// RVA: -1 Offset: -1
+	private List<T> TryAggregate<T>(List<T> source) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D7D040 Offset: 0x3D79040 VA: 0x3D7D040
+	|-Reward.TryAggregate<object>
+	|
+	|-RVA: 0x3D7D09C Offset: 0x3D7909C VA: 0x3D7D09C
+	|-Reward.TryAggregate<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	private bool CanAggregate<T>(List<T> source) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D7C4DC Offset: 0x3D784DC VA: 0x3D7C4DC
+	|-Reward.CanAggregate<object>
+	|
+	|-RVA: 0x3D7C650 Offset: 0x3D78650 VA: 0x3D7C650
+	|-Reward.CanAggregate<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	private List<T> Aggregate<T>(List<T> source) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D7B80C Offset: 0x3D7780C VA: 0x3D7B80C
+	|-Reward.Aggregate<object>
+	|
+	|-RVA: 0x3D7BD80 Offset: 0x3D77D80 VA: 0x3D7BD80
+	|-Reward.Aggregate<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x6A2D6CC Offset: 0x6A296CC VA: 0x6A2D6CC
+	public Reward CloneAndRemoveEventXP() { }
+
+	// RVA: -1 Offset: -1
+	public List<TMultiple> FindAllMultiplesByType<TMultiple>(bool isEnrich = True) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D7CAC0 Offset: 0x3D78AC0 VA: 0x3D7CAC0
+	|-Reward.FindAllMultiplesByType<object>
+	|
+	|-RVA: 0x3D7CD50 Offset: 0x3D78D50 VA: 0x3D7CD50
+	|-Reward.FindAllMultiplesByType<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x6A25ACC Offset: 0x6A21ACC VA: 0x6A25ACC
+	public void AddViewData(IRewardViewData rewardViewData) { }
+
+	// RVA: 0x6A2D65C Offset: 0x6A2965C VA: 0x6A2D65C
+	public void Clear() { }
+
+	// RVA: -1 Offset: -1
+	public void AddViewDatas<TMultiple>(ReadOnlyCollection<TMultiple> newDataItems) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D7B228 Offset: 0x3D77228 VA: 0x3D7B228
+	|-Reward.AddViewDatas<object>
+	|
+	|-RVA: 0x3D7B4B4 Offset: 0x3D774B4 VA: 0x3D7B4B4
+	|-Reward.AddViewDatas<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x6A2B1F0 Offset: 0x6A271F0 VA: 0x6A2B1F0
+	public int Count(IRewardType rewardType) { }
+
+	// RVA: 0x6A2AE4C Offset: 0x6A26E4C VA: 0x6A2AE4C
+	public int Count(IEnumerable<IRewardType> rewardTypes) { }
+
+	// RVA: 0x6A2D8BC Offset: 0x6A298BC VA: 0x6A2D8BC
+	public bool RequiresTapToClaimPopup() { }
+}
+

@@ -1,0 +1,41 @@
+// Namespace: MergeEngine.Signal.Inventory
+public class InventoryBaseSignal // TypeDefIndex: 241
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly int <AvailableSlots>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly int <InventoryCapacity>k__BackingField; // 0x14
+	[CompilerGenerated]
+	private readonly int <FreeTilesOnBoard>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private readonly InventorySlotType <Type>k__BackingField; // 0x1C
+
+	// Properties
+	public int AvailableSlots { get; }
+	public int InventoryCapacity { get; }
+	public int FreeTilesOnBoard { get; }
+	public InventorySlotType Type { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3E70 Offset: 0x5FEFE70 VA: 0x5FF3E70
+	public int get_AvailableSlots() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3E78 Offset: 0x5FEFE78 VA: 0x5FF3E78
+	public int get_InventoryCapacity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3E80 Offset: 0x5FEFE80 VA: 0x5FF3E80
+	public int get_FreeTilesOnBoard() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3E88 Offset: 0x5FEFE88 VA: 0x5FF3E88
+	public InventorySlotType get_Type() { }
+
+	// RVA: 0x5FF3E90 Offset: 0x5FEFE90 VA: 0x5FF3E90
+	public void .ctor(int availableSlots, int inventoryCapacity, int freeTilesOnBoard, InventorySlotType type) { }
+}
+

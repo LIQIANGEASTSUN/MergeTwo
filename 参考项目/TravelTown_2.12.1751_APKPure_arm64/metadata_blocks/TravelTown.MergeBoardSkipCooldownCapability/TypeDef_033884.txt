@@ -1,0 +1,35 @@
+// Namespace: Merger.MergeBoardSkipCooldownCapability.Data.TickInputActions
+public class SkipCooldownAction // TypeDefIndex: 33884
+{
+	// Fields
+	[CompilerGenerated]
+	private ResourceMultiple <Price>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private int <SelectedEntityPosition>k__BackingField; // 0x18
+
+	// Properties
+	public ResourceMultiple Price { get; set; }
+	public int SelectedEntityPosition { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A64374 Offset: 0x6A60374 VA: 0x6A64374
+	public ResourceMultiple get_Price() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A6437C Offset: 0x6A6037C VA: 0x6A6437C
+	public void set_Price(ResourceMultiple value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A64384 Offset: 0x6A60384 VA: 0x6A64384
+	public int get_SelectedEntityPosition() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A6438C Offset: 0x6A6038C VA: 0x6A6438C
+	public void set_SelectedEntityPosition(int value) { }
+
+	// RVA: 0x6A62680 Offset: 0x6A5E680 VA: 0x6A62680
+	public void .ctor() { }
+}
+

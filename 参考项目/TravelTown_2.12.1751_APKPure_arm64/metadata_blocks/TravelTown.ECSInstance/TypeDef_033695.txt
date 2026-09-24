@@ -1,0 +1,453 @@
+// Namespace: ContextualizedECS.Query
+public static class Entities // TypeDefIndex: 33695
+{
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public static bool Exclude<T1>(Entity entity) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C14818 Offset: 0x3C10818 VA: 0x3C14818
+	|-Entities.Exclude<DeadComponent>
+	|
+	|-RVA: 0x3C14858 Offset: 0x3C10858 VA: 0x3C14858
+	|-Entities.Exclude<MoveBlockComponent>
+	|
+	|-RVA: 0x3C14898 Offset: 0x3C10898 VA: 0x3C14898
+	|-Entities.Exclude<__Il2CppFullySharedGenericStructType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public static bool Exclude<T1, T2>(Entity entity) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C148DC Offset: 0x3C108DC VA: 0x3C148DC
+	|-Entities.Exclude<DeadComponent, CooldownBlockComponent>
+	|
+	|-RVA: 0x3C14940 Offset: 0x3C10940 VA: 0x3C14940
+	|-Entities.Exclude<DeadComponent, ItemMovedComponent>
+	|
+	|-RVA: 0x3C149A4 Offset: 0x3C109A4 VA: 0x3C149A4
+	|-Entities.Exclude<DeadComponent, PendingItemsCombinationComponent>
+	|
+	|-RVA: 0x3C14A08 Offset: 0x3C10A08 VA: 0x3C14A08
+	|-Entities.Exclude<DeadComponent, ProducerComponent>
+	|
+	|-RVA: 0x3C14A6C Offset: 0x3C10A6C VA: 0x3C14A6C
+	|-Entities.Exclude<DeadComponent, TimeLockBlockComponent>
+	|
+	|-RVA: 0x3C14AD0 Offset: 0x3C10AD0 VA: 0x3C14AD0
+	|-Entities.Exclude<MoveBlockComponent, PendingItemsCombinationComponent>
+	|
+	|-RVA: 0x3C14B34 Offset: 0x3C10B34 VA: 0x3C14B34
+	|-Entities.Exclude<ProducerComponent, DeadComponent>
+	|
+	|-RVA: 0x3C14B98 Offset: 0x3C10B98 VA: 0x3C14B98
+	|-Entities.Exclude<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public static bool Exclude<T1, T2, T3>(Entity entity) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C14C04 Offset: 0x3C10C04 VA: 0x3C14C04
+	|-Entities.Exclude<DeadComponent, CooldownBlockComponent, TimeLockBlockComponent>
+	|
+	|-RVA: 0x3C14C7C Offset: 0x3C10C7C VA: 0x3C14C7C
+	|-Entities.Exclude<DeadComponent, MoveBlockComponent, PendingItemsCombinationComponent>
+	|
+	|-RVA: 0x3C14CF4 Offset: 0x3C10CF4 VA: 0x3C14CF4
+	|-Entities.Exclude<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public static Entities.MatchDelegate<ValueTuple<Entity, T1>> With<T1>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C19C6C Offset: 0x3C15C6C VA: 0x3C19C6C
+	|-Entities.With<BoardTilePositionComponent>
+	|
+	|-RVA: 0x3C19CC0 Offset: 0x3C15CC0 VA: 0x3C19CC0
+	|-Entities.With<BornComponent>
+	|
+	|-RVA: 0x3C19D14 Offset: 0x3C15D14 VA: 0x3C19D14
+	|-Entities.With<DeadComponent>
+	|
+	|-RVA: 0x3C19D68 Offset: 0x3C15D68 VA: 0x3C19D68
+	|-Entities.With<IdComponent>
+	|
+	|-RVA: 0x3C19DBC Offset: 0x3C15DBC VA: 0x3C19DBC
+	|-Entities.With<ItemMovedComponent>
+	|
+	|-RVA: 0x3C19E10 Offset: 0x3C15E10 VA: 0x3C19E10
+	|-Entities.With<TimeCycleComponent>
+	|
+	|-RVA: 0x3C19E64 Offset: 0x3C15E64 VA: 0x3C19E64
+	|-Entities.With<TimeLockComponent>
+	|
+	|-RVA: 0x3C19EB8 Offset: 0x3C15EB8 VA: 0x3C19EB8
+	|-Entities.With<__Il2CppFullySharedGenericStructType>
+	*/
+
+	// RVA: -1 Offset: -1
+	private static bool MatchMethod<T1>(Entity entity, out ValueTuple<Entity, T1> result) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C14D78 Offset: 0x3C10D78 VA: 0x3C14D78
+	|-Entities.MatchMethod<BoardTilePositionComponent>
+	|
+	|-RVA: 0x3C14E18 Offset: 0x3C10E18 VA: 0x3C14E18
+	|-Entities.MatchMethod<BornComponent>
+	|
+	|-RVA: 0x3C14EB8 Offset: 0x3C10EB8 VA: 0x3C14EB8
+	|-Entities.MatchMethod<DeadComponent>
+	|
+	|-RVA: 0x3C14F58 Offset: 0x3C10F58 VA: 0x3C14F58
+	|-Entities.MatchMethod<IdComponent>
+	|
+	|-RVA: 0x3C15038 Offset: 0x3C11038 VA: 0x3C15038
+	|-Entities.MatchMethod<ItemMovedComponent>
+	|
+	|-RVA: 0x3C150D8 Offset: 0x3C110D8 VA: 0x3C150D8
+	|-Entities.MatchMethod<TimeCycleComponent>
+	|
+	|-RVA: 0x3C151BC Offset: 0x3C111BC VA: 0x3C151BC
+	|-Entities.MatchMethod<TimeLockComponent>
+	|
+	|-RVA: 0x3C15288 Offset: 0x3C11288 VA: 0x3C15288
+	|-Entities.MatchMethod<__Il2CppFullySharedGenericStructType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public static Entities.MatchDelegate<ValueTuple<Entity, T1, T2>> With<T1, T2>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C19F10 Offset: 0x3C15F10 VA: 0x3C19F10
+	|-Entities.With<BoardTilePositionComponent, BoxComponent>
+	|
+	|-RVA: 0x3C19F64 Offset: 0x3C15F64 VA: 0x3C19F64
+	|-Entities.With<BoardTilePositionComponent, IdComponent>
+	|
+	|-RVA: 0x3C19FB8 Offset: 0x3C15FB8 VA: 0x3C19FB8
+	|-Entities.With<BoardTilePositionComponent, MergeComponent>
+	|
+	|-RVA: 0x3C1A00C Offset: 0x3C1600C VA: 0x3C1A00C
+	|-Entities.With<BoardTilePositionComponent, TimeCycleComponent>
+	|
+	|-RVA: 0x3C1A060 Offset: 0x3C16060 VA: 0x3C1A060
+	|-Entities.With<BoardTilePositionComponent, TimeLockComponent>
+	|
+	|-RVA: 0x3C1A0B4 Offset: 0x3C160B4 VA: 0x3C1A0B4
+	|-Entities.With<BornComponent, IdComponent>
+	|
+	|-RVA: 0x3C1A108 Offset: 0x3C16108 VA: 0x3C1A108
+	|-Entities.With<CollectableComponent, IdComponent>
+	|
+	|-RVA: 0x3C1A15C Offset: 0x3C1615C VA: 0x3C1A15C
+	|-Entities.With<IdComponent, BoardTilePositionComponent>
+	|
+	|-RVA: 0x3C1A1B0 Offset: 0x3C161B0 VA: 0x3C1A1B0
+	|-Entities.With<InteractionComponent, BoardTilePositionComponent>
+	|
+	|-RVA: 0x3C1A204 Offset: 0x3C16204 VA: 0x3C1A204
+	|-Entities.With<PendingInteractionComponent, InteractionComponent>
+	|
+	|-RVA: 0x3C1A258 Offset: 0x3C16258 VA: 0x3C1A258
+	|-Entities.With<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>
+	*/
+
+	// RVA: -1 Offset: -1
+	private static bool MatchMethod<T1, T2>(Entity entity, out ValueTuple<Entity, T1, T2> result) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C15424 Offset: 0x3C11424 VA: 0x3C15424
+	|-Entities.MatchMethod<BoardTilePositionComponent, BoxComponent>
+	|
+	|-RVA: 0x3C154FC Offset: 0x3C114FC VA: 0x3C154FC
+	|-Entities.MatchMethod<BoardTilePositionComponent, IdComponent>
+	|
+	|-RVA: 0x3C155F4 Offset: 0x3C115F4 VA: 0x3C155F4
+	|-Entities.MatchMethod<BoardTilePositionComponent, MergeComponent>
+	|
+	|-RVA: 0x3C156B8 Offset: 0x3C116B8 VA: 0x3C156B8
+	|-Entities.MatchMethod<BoardTilePositionComponent, TimeCycleComponent>
+	|
+	|-RVA: 0x3C157BC Offset: 0x3C117BC VA: 0x3C157BC
+	|-Entities.MatchMethod<BoardTilePositionComponent, TimeLockComponent>
+	|
+	|-RVA: 0x3C158B4 Offset: 0x3C118B4 VA: 0x3C158B4
+	|-Entities.MatchMethod<BornComponent, IdComponent>
+	|
+	|-RVA: 0x3C159AC Offset: 0x3C119AC VA: 0x3C159AC
+	|-Entities.MatchMethod<CollectableComponent, IdComponent>
+	|
+	|-RVA: 0x3C15AD0 Offset: 0x3C11AD0 VA: 0x3C15AD0
+	|-Entities.MatchMethod<IdComponent, BoardTilePositionComponent>
+	|
+	|-RVA: 0x3C15BC8 Offset: 0x3C11BC8 VA: 0x3C15BC8
+	|-Entities.MatchMethod<InteractionComponent, BoardTilePositionComponent>
+	|
+	|-RVA: 0x3C15CC8 Offset: 0x3C11CC8 VA: 0x3C15CC8
+	|-Entities.MatchMethod<PendingInteractionComponent, InteractionComponent>
+	|
+	|-RVA: 0x3C15DC0 Offset: 0x3C11DC0 VA: 0x3C15DC0
+	|-Entities.MatchMethod<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public static Entities.MatchDelegate<ValueTuple<Entity, T1, T2, T3>> With<T1, T2, T3>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C1A2B0 Offset: 0x3C162B0 VA: 0x3C1A2B0
+	|-Entities.With<BoardTilePositionComponent, IdComponent, InteractionComponent>
+	|
+	|-RVA: 0x3C1A304 Offset: 0x3C16304 VA: 0x3C1A304
+	|-Entities.With<BoardTilePositionComponent, ItemMovedComponent, IdComponent>
+	|
+	|-RVA: 0x3C1A358 Offset: 0x3C16358 VA: 0x3C1A358
+	|-Entities.With<BoardTilePositionComponent, MergeComponent, IdComponent>
+	|
+	|-RVA: 0x3C1A3AC Offset: 0x3C163AC VA: 0x3C1A3AC
+	|-Entities.With<CollectableComponent, IdComponent, BornComponent>
+	|
+	|-RVA: 0x3C1A400 Offset: 0x3C16400 VA: 0x3C1A400
+	|-Entities.With<DeadComponent, ItemConsumedComponent, IdComponent>
+	|
+	|-RVA: 0x3C1A454 Offset: 0x3C16454 VA: 0x3C1A454
+	|-Entities.With<ExpendableComponent, BoardTilePositionComponent, DeadComponent>
+	|
+	|-RVA: 0x3C1A4A8 Offset: 0x3C164A8 VA: 0x3C1A4A8
+	|-Entities.With<ExpendableComponent, TimeLimitedActivationComponent, TimeDurationComponent>
+	|
+	|-RVA: 0x3C1A4FC Offset: 0x3C164FC VA: 0x3C1A4FC
+	|-Entities.With<FeedingCombinationComponent, DeadComponent, BoardTilePositionComponent>
+	|
+	|-RVA: 0x3C1A550 Offset: 0x3C16550 VA: 0x3C1A550
+	|-Entities.With<IdComponent, DeadComponent, BoardTilePositionComponent>
+	|
+	|-RVA: 0x3C1A5A4 Offset: 0x3C165A4 VA: 0x3C1A5A4
+	|-Entities.With<IdComponent, LockComponent, BoxComponent>
+	|
+	|-RVA: 0x3C1A5F8 Offset: 0x3C165F8 VA: 0x3C1A5F8
+	|-Entities.With<ResourceConsumedComponent, InteractionComponent, BoardTilePositionComponent>
+	|
+	|-RVA: 0x3C1A64C Offset: 0x3C1664C VA: 0x3C1A64C
+	|-Entities.With<TimeDurationComponent, IdComponent, BoardTilePositionComponent>
+	|
+	|-RVA: 0x3C1A6A0 Offset: 0x3C166A0 VA: 0x3C1A6A0
+	|-Entities.With<TimeLockComponent, BoardTilePositionComponent, IdComponent>
+	|
+	|-RVA: 0x3C1A6F4 Offset: 0x3C166F4 VA: 0x3C1A6F4
+	|-Entities.With<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>
+	*/
+
+	// RVA: -1 Offset: -1
+	private static bool MatchMethod<T1, T2, T3>(Entity entity, out ValueTuple<Entity, T1, T2, T3> result) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C16000 Offset: 0x3C12000 VA: 0x3C16000
+	|-Entities.MatchMethod<BoardTilePositionComponent, IdComponent, InteractionComponent>
+	|
+	|-RVA: 0x3C16154 Offset: 0x3C12154 VA: 0x3C16154
+	|-Entities.MatchMethod<BoardTilePositionComponent, ItemMovedComponent, IdComponent>
+	|
+	|-RVA: 0x3C1627C Offset: 0x3C1227C VA: 0x3C1627C
+	|-Entities.MatchMethod<BoardTilePositionComponent, MergeComponent, IdComponent>
+	|
+	|-RVA: 0x3C163A0 Offset: 0x3C123A0 VA: 0x3C163A0
+	|-Entities.MatchMethod<CollectableComponent, IdComponent, BornComponent>
+	|
+	|-RVA: 0x3C164EC Offset: 0x3C124EC VA: 0x3C164EC
+	|-Entities.MatchMethod<DeadComponent, ItemConsumedComponent, IdComponent>
+	|
+	|-RVA: 0x3C16610 Offset: 0x3C12610 VA: 0x3C16610
+	|-Entities.MatchMethod<ExpendableComponent, BoardTilePositionComponent, DeadComponent>
+	|
+	|-RVA: 0x3C16728 Offset: 0x3C12728 VA: 0x3C16728
+	|-Entities.MatchMethod<ExpendableComponent, TimeLimitedActivationComponent, TimeDurationComponent>
+	|
+	|-RVA: 0x3C1686C Offset: 0x3C1286C VA: 0x3C1686C
+	|-Entities.MatchMethod<FeedingCombinationComponent, DeadComponent, BoardTilePositionComponent>
+	|
+	|-RVA: 0x3C16958 Offset: 0x3C12958 VA: 0x3C16958
+	|-Entities.MatchMethod<IdComponent, DeadComponent, BoardTilePositionComponent>
+	|
+	|-RVA: 0x3C16A70 Offset: 0x3C12A70 VA: 0x3C16A70
+	|-Entities.MatchMethod<IdComponent, LockComponent, BoxComponent>
+	|
+	|-RVA: 0x3C16BA8 Offset: 0x3C12BA8 VA: 0x3C16BA8
+	|-Entities.MatchMethod<ResourceConsumedComponent, InteractionComponent, BoardTilePositionComponent>
+	|
+	|-RVA: 0x3C16CC0 Offset: 0x3C12CC0 VA: 0x3C16CC0
+	|-Entities.MatchMethod<TimeDurationComponent, IdComponent, BoardTilePositionComponent>
+	|
+	|-RVA: 0x3C16DF0 Offset: 0x3C12DF0 VA: 0x3C16DF0
+	|-Entities.MatchMethod<TimeLockComponent, BoardTilePositionComponent, IdComponent>
+	|
+	|-RVA: 0x3C16F34 Offset: 0x3C12F34 VA: 0x3C16F34
+	|-Entities.MatchMethod<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public static Entities.MatchDelegate<ValueTuple<Entity, T1, T2, T3, T4>> With<T1, T2, T3, T4>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C1A74C Offset: 0x3C1674C VA: 0x3C1A74C
+	|-Entities.With<BoardTilePositionComponent, BornComponent, IdComponent, ItemMergedComponent>
+	|
+	|-RVA: 0x3C1A7A0 Offset: 0x3C167A0 VA: 0x3C1A7A0
+	|-Entities.With<BoardTilePositionComponent, IdComponent, BornComponent, ItemMergedComponent>
+	|
+	|-RVA: 0x3C1A7F4 Offset: 0x3C167F4 VA: 0x3C1A7F4
+	|-Entities.With<BoardTilePositionComponent, IdComponent, DynamicItemConfigComponent, PendingInteractionComponent>
+	|
+	|-RVA: 0x3C1A848 Offset: 0x3C16848 VA: 0x3C1A848
+	|-Entities.With<BoardTilePositionComponent, MergeComponent, IdComponent, PendingItemsCombinationComponent>
+	|
+	|-RVA: 0x3C1A89C Offset: 0x3C1689C VA: 0x3C1A89C
+	|-Entities.With<BoardTilePositionComponent, ProducerComponent, FeedingCombinationComponent, InteractionComponent>
+	|
+	|-RVA: 0x3C1A8F0 Offset: 0x3C168F0 VA: 0x3C1A8F0
+	|-Entities.With<BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, InteractionComponent>
+	|
+	|-RVA: 0x3C1A944 Offset: 0x3C16944 VA: 0x3C1A944
+	|-Entities.With<BoardTilePositionComponent, ToolSpawningComponent, PendingInteractionComponent, InteractionComponent>
+	|
+	|-RVA: 0x3C1A998 Offset: 0x3C16998 VA: 0x3C1A998
+	|-Entities.With<ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>
+	|
+	|-RVA: 0x3C1A9EC Offset: 0x3C169EC VA: 0x3C1A9EC
+	|-Entities.With<ExpendableComponent, BoardTilePositionComponent, TimeDurationComponent, TimeLimitedActivationComponent>
+	|
+	|-RVA: 0x3C1AA40 Offset: 0x3C16A40 VA: 0x3C1AA40
+	|-Entities.With<IdComponent, BoardTilePositionComponent, ImmediateToolComponent, PendingInteractionComponent>
+	|
+	|-RVA: 0x3C1AA94 Offset: 0x3C16A94 VA: 0x3C1AA94
+	|-Entities.With<IdComponent, InteractionComponent, BoardTilePositionComponent, ProducerComponent>
+	|
+	|-RVA: 0x3C1AAE8 Offset: 0x3C16AE8 VA: 0x3C1AAE8
+	|-Entities.With<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>
+	*/
+
+	// RVA: -1 Offset: -1
+	private static bool MatchMethod<T1, T2, T3, T4>(Entity entity, out ValueTuple<Entity, T1, T2, T3, T4> result) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C17210 Offset: 0x3C13210 VA: 0x3C17210
+	|-Entities.MatchMethod<BoardTilePositionComponent, BornComponent, IdComponent, ItemMergedComponent>
+	|
+	|-RVA: 0x3C17354 Offset: 0x3C13354 VA: 0x3C17354
+	|-Entities.MatchMethod<BoardTilePositionComponent, IdComponent, BornComponent, ItemMergedComponent>
+	|
+	|-RVA: 0x3C17498 Offset: 0x3C13498 VA: 0x3C17498
+	|-Entities.MatchMethod<BoardTilePositionComponent, IdComponent, DynamicItemConfigComponent, PendingInteractionComponent>
+	|
+	|-RVA: 0x3C1760C Offset: 0x3C1360C VA: 0x3C1760C
+	|-Entities.MatchMethod<BoardTilePositionComponent, MergeComponent, IdComponent, PendingItemsCombinationComponent>
+	|
+	|-RVA: 0x3C17758 Offset: 0x3C13758 VA: 0x3C17758
+	|-Entities.MatchMethod<BoardTilePositionComponent, ProducerComponent, FeedingCombinationComponent, InteractionComponent>
+	|
+	|-RVA: 0x3C178A8 Offset: 0x3C138A8 VA: 0x3C178A8
+	|-Entities.MatchMethod<BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, InteractionComponent>
+	|
+	|-RVA: 0x3C17A24 Offset: 0x3C13A24 VA: 0x3C17A24
+	|-Entities.MatchMethod<BoardTilePositionComponent, ToolSpawningComponent, PendingInteractionComponent, InteractionComponent>
+	|
+	|-RVA: 0x3C17B78 Offset: 0x3C13B78 VA: 0x3C17B78
+	|-Entities.MatchMethod<ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>
+	|
+	|-RVA: 0x3C17D10 Offset: 0x3C13D10 VA: 0x3C17D10
+	|-Entities.MatchMethod<ExpendableComponent, BoardTilePositionComponent, TimeDurationComponent, TimeLimitedActivationComponent>
+	|
+	|-RVA: 0x3C17E70 Offset: 0x3C13E70 VA: 0x3C17E70
+	|-Entities.MatchMethod<IdComponent, BoardTilePositionComponent, ImmediateToolComponent, PendingInteractionComponent>
+	|
+	|-RVA: 0x3C17FE4 Offset: 0x3C13FE4 VA: 0x3C17FE4
+	|-Entities.MatchMethod<IdComponent, InteractionComponent, BoardTilePositionComponent, ProducerComponent>
+	|
+	|-RVA: 0x3C18168 Offset: 0x3C14168 VA: 0x3C18168
+	|-Entities.MatchMethod<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public static Entities.MatchDelegate<ValueTuple<Entity, T1, T2, T3, T4, T5>> With<T1, T2, T3, T4, T5>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C1AB40 Offset: 0x3C16B40 VA: 0x3C1AB40
+	|-Entities.With<BoardTilePositionComponent, CollectableComponent, IdComponent, PendingInteractionComponent, InteractionComponent>
+	|
+	|-RVA: 0x3C1AB94 Offset: 0x3C16B94 VA: 0x3C1AB94
+	|-Entities.With<BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, PendingInteractionComponent, InteractionComponent>
+	|
+	|-RVA: 0x3C1ABE8 Offset: 0x3C16BE8 VA: 0x3C1ABE8
+	|-Entities.With<ChargeableComponent, ExpendableComponent, BoardTilePositionComponent, IdComponent, PendingInteractionComponent>
+	|
+	|-RVA: 0x3C1AC3C Offset: 0x3C16C3C VA: 0x3C1AC3C
+	|-Entities.With<ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent, PendingInteractionComponent>
+	|
+	|-RVA: 0x3C1AC90 Offset: 0x3C16C90 VA: 0x3C1AC90
+	|-Entities.With<SpawnerComponent, TimeCycleComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>
+	|
+	|-RVA: 0x3C1ACE4 Offset: 0x3C16CE4 VA: 0x3C1ACE4
+	|-Entities.With<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>
+	*/
+
+	// RVA: -1 Offset: -1
+	private static bool MatchMethod<T1, T2, T3, T4, T5>(Entity entity, out ValueTuple<Entity, T1, T2, T3, T4, T5> result) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C184F8 Offset: 0x3C144F8 VA: 0x3C184F8
+	|-Entities.MatchMethod<BoardTilePositionComponent, CollectableComponent, IdComponent, PendingInteractionComponent, InteractionComponent>
+	|
+	|-RVA: 0x3C186BC Offset: 0x3C146BC VA: 0x3C186BC
+	|-Entities.MatchMethod<BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, PendingInteractionComponent, InteractionComponent>
+	|
+	|-RVA: 0x3C18868 Offset: 0x3C14868 VA: 0x3C18868
+	|-Entities.MatchMethod<ChargeableComponent, ExpendableComponent, BoardTilePositionComponent, IdComponent, PendingInteractionComponent>
+	|
+	|-RVA: 0x3C18A1C Offset: 0x3C14A1C VA: 0x3C18A1C
+	|-Entities.MatchMethod<ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent, PendingInteractionComponent>
+	|
+	|-RVA: 0x3C18BE8 Offset: 0x3C14BE8 VA: 0x3C18BE8
+	|-Entities.MatchMethod<SpawnerComponent, TimeCycleComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>
+	|
+	|-RVA: 0x3C18DC0 Offset: 0x3C14DC0 VA: 0x3C18DC0
+	|-Entities.MatchMethod<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public static Entities.MatchDelegate<ValueTuple<Entity, T1, T2, T3, T4, T5, T6>> With<T1, T2, T3, T4, T5, T6>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C1AD3C Offset: 0x3C16D3C VA: 0x3C1AD3C
+	|-Entities.With<BoardTilePositionComponent, FeedingCombinationComponent, IdComponent, InteractionComponent, ProducerComponent, TimeCycleComponent>
+	|
+	|-RVA: 0x3C1AD90 Offset: 0x3C16D90 VA: 0x3C1AD90
+	|-Entities.With<BoardTilePositionComponent, SpawnerComponent, IdComponent, TimeCycleComponent, InteractionComponent, PendingInteractionComponent>
+	|
+	|-RVA: 0x3C1ADE4 Offset: 0x3C16DE4 VA: 0x3C1ADE4
+	|-Entities.With<ExpendableComponent, IdComponent, InteractionComponent, PendingInteractionComponent, TimeLimitedActivationComponent, TimeDurationComponent>
+	|
+	|-RVA: 0x3C1AE38 Offset: 0x3C16E38 VA: 0x3C1AE38
+	|-Entities.With<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>
+	*/
+
+	// RVA: -1 Offset: -1
+	private static bool MatchMethod<T1, T2, T3, T4, T5, T6>(Entity entity, out ValueTuple<Entity, T1, T2, T3, T4, T5, T6> result) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C191DC Offset: 0x3C151DC VA: 0x3C191DC
+	|-Entities.MatchMethod<BoardTilePositionComponent, FeedingCombinationComponent, IdComponent, InteractionComponent, ProducerComponent, TimeCycleComponent>
+	|
+	|-RVA: 0x3C193C8 Offset: 0x3C153C8 VA: 0x3C193C8
+	|-Entities.MatchMethod<BoardTilePositionComponent, SpawnerComponent, IdComponent, TimeCycleComponent, InteractionComponent, PendingInteractionComponent>
+	|
+	|-RVA: 0x3C195BC Offset: 0x3C155BC VA: 0x3C195BC
+	|-Entities.MatchMethod<ExpendableComponent, IdComponent, InteractionComponent, PendingInteractionComponent, TimeLimitedActivationComponent, TimeDurationComponent>
+	|
+	|-RVA: 0x3C197B0 Offset: 0x3C157B0 VA: 0x3C197B0
+	|-Entities.MatchMethod<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>
+	*/
+}
+

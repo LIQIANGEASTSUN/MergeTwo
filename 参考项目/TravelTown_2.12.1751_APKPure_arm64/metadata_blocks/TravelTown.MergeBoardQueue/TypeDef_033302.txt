@@ -1,0 +1,44 @@
+// Namespace: Merger.MergeBoardQueue.Models
+public interface IBoardQueueModel : IBoardQueueSyncModel // TypeDefIndex: 33302
+{
+	// Properties
+	public abstract BindableProperty<int> BoardEventQueueCount { get; }
+	public abstract BindableProperty<QueuedItem> HeadItem { get; }
+	public abstract int Count { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract BindableProperty<int> get_BoardEventQueueCount();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract BindableProperty<QueuedItem> get_HeadItem();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract QueuedItem Peek();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract QueuedItem Dequeue();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract void ExtractItem(QueuedItem item);
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract QueuedItem FindNewestInQueue(string itemId);
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract QueuedItem EnqueueItem(IMergeItem mergeItem, string entity, long enqueuingTimestamp, BoardQueueOrder boardQueueOrder, ResourceSource source);
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract QueuedItem EnqueueItemPendingSync(IMergeItem mergeItem, string uuidInBoardQueue, long enqueuingTimestamp, BoardQueueOrder boardQueueOrder, ResourceSource source);
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract void SyncPendingEnqueuedItem(string uuid);
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract int get_Count();
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public abstract IEnumerable<QueuedItem> GetAllItems();
+}
+

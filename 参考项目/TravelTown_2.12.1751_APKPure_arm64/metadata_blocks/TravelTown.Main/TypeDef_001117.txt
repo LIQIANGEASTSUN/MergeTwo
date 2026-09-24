@@ -1,0 +1,31 @@
+// Namespace: MergeEngine.ECS.Components.InteractionTracking
+public class ItemSpawningTrackingData // TypeDefIndex: 1117
+{
+	// Fields
+	public int ProducerCapacity; // 0x10
+	public int NumberOfSubcycles; // 0x14
+	public int ProducerCycleCooldown; // 0x18
+	public int ProducerSubcycleCooldown; // 0x1C
+	public int CurrentCycle; // 0x20
+	public int CurrentSubcycle; // 0x24
+	public int CurrentCapacity; // 0x28
+	public string InteractionCostItems; // 0x30
+	public string UiType; // 0x38
+	public IMergeItem SpawnerItem; // 0x40
+	public IMergeItem SpawnedItem; // 0x48
+	public Nullable<int> LifetimeSpawnedLeft; // 0x50
+	public double TimeLeft; // 0x58
+	public LowLevelProduceTrackingData LowLevelProduceData; // 0x60
+
+	// Methods
+
+	// RVA: 0x6901AF4 Offset: 0x68FDAF4 VA: 0x6901AF4
+	public Nullable<int> SetLifeTime(IMergeItem spawnerItem, IItemSpawningComponent itemSpawningComponent) { }
+
+	// RVA: 0x6901D24 Offset: 0x68FDD24 VA: 0x6901D24
+	public int GetRemainingItemsInSubCycle(IItemSpawningComponent producer) { }
+
+	// RVA: 0x6901F0C Offset: 0x68FDF0C VA: 0x6901F0C
+	public void .ctor() { }
+}
+

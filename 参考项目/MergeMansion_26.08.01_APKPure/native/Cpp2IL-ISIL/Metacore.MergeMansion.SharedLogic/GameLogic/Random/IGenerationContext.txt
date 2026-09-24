@@ -1,0 +1,51 @@
+Type: GameLogic.Random.IGenerationContext
+
+Method: GameLogic.Player.Statistics get_Statistics()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.WeightedDistributionStates get_DistributionStates()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Game.Logic.SpawnFactoryState get_SpawnState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.RandomPCG get_Random()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Config.SharedGameConfig get_GameConfig()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Config.IMergeMansionGameConfig get_MergeMansionGameConfig()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.GameEvents.GarageCleanupEventModel get_GarageCleanupEventModel()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

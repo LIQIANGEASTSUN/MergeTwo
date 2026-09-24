@@ -1,0 +1,48 @@
+// Namespace: Merger.MergeBoard.Systems
+public class TimeLockSystem : ISystem // TypeDefIndex: 25787
+{
+	// Methods
+
+	// RVA: 0x6A77B70 Offset: 0x6A73B70 VA: 0x6A77B70 Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A77C40 Offset: 0x6A73C40 VA: 0x6A77C40
+	private void HandleTapAction(TickContext context, TapAction tapAction) { }
+
+	// RVA: 0x6A77E88 Offset: 0x6A73E88 VA: 0x6A77E88
+	private void ProcessIntervalTick(TickContext context, IntervalTick intervalTick) { }
+
+	// RVA: 0x6A78648 Offset: 0x6A74648 VA: 0x6A78648
+	private void ProcessInteractionLockGroup(TickContext context, Entity entity, ref TimeLockComponent timeLock, IdComponent id, HashSet<TimeLockGroup> groupsBeingUnlocked) { }
+
+	// RVA: 0x6A78754 Offset: 0x6A74754 VA: 0x6A78754
+	private void UpdateCanBeUnlockedFlag(ref TimeLockComponent timeLock, HashSet<TimeLockGroup> groupsBeingUnlocked) { }
+
+	// RVA: 0x6A787D4 Offset: 0x6A747D4 VA: 0x6A787D4
+	private void ProcessTime(ref TimeLockComponent timeLock, float deltaTime) { }
+
+	// RVA: 0x6A78800 Offset: 0x6A74800 VA: 0x6A78800
+	private void UpdateTimeLockBlockComponent(Entity entity, in TimeLockComponent timeLock) { }
+
+	// RVA: 0x6A789D4 Offset: 0x6A749D4 VA: 0x6A789D4
+	private void ApplyGroupLockBlock(TickContext context) { }
+
+	// RVA: 0x6A78E08 Offset: 0x6A74E08 VA: 0x6A78E08
+	private bool ShouldStartUnlockOnInteraction(TimeLockComponent timeLock, IdComponent id) { }
+
+	// RVA: 0x6A78304 Offset: 0x6A74304 VA: 0x6A78304
+	private bool CanStartUnlocking(TimeLockComponent timeLock) { }
+
+	// RVA: 0x6A78328 Offset: 0x6A74328 VA: 0x6A78328
+	private bool HasOtherUnlockInProgress(TickContext context, Entity currentEntity, TimeLockGroup lockGroup) { }
+
+	// RVA: 0x6A78508 Offset: 0x6A74508 VA: 0x6A78508
+	private void StartUnlocking(TickContext context, Entity entity, ref TimeLockComponent timeLock) { }
+
+	// RVA: 0x6A788D8 Offset: 0x6A748D8 VA: 0x6A788D8
+	private void BlockMergeComponentIfUsed(Entity entity, ref TimeLockComponent modifiedTimeLock) { }
+
+	// RVA: 0x6A78E24 Offset: 0x6A74E24 VA: 0x6A78E24
+	public void .ctor() { }
+}
+

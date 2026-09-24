@@ -1,0 +1,30 @@
+Type: Code.GameLogic.Player.IWritableProducerInventorySlotState
+
+Method: System.Boolean get_Unlocked()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void set_Unlocked(System.Boolean value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_Seen()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void set_Seen(System.Boolean value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

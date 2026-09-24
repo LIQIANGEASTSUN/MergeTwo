@@ -1,0 +1,8 @@
+// Namespace: 
+public struct BoardEvent.RemoveFromRewardUI : IEvent // TypeDefIndex: 1791
+{
+	// Fields
+	public ItemEntity ItemEntity; // 0x0
+	public BoardItemData ItemData; // 0x4
+}
+

@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardTaskController.<>c__DisplayClass42_0 // TypeDefIndex: 2051
+{
+	// Fields
+	public BoardTaskItem task; // 0x8
+
+	// Methods
+
+	// RVA: 0x1960148 Offset: 0x1960148 VA: 0x1960148
+	public void .ctor() { }
+
+	// RVA: 0x1960150 Offset: 0x1960150 VA: 0x1960150
+	internal bool <VerifyAndSpawnMissingTasks>b__1(BoardTaskItemController c) { }
+}
+

@@ -1,0 +1,34 @@
+// Namespace: 
+public class MergeBoard.Grid // TypeDefIndex: 2717
+{
+	// Fields
+	private int _id; // 0x8
+	public MergeBoardItem board; // 0xC
+	public int oldId; // 0x10
+	public int state; // 0x14
+	public float cd; // 0x18
+	public int xIndex; // 0x1C
+	public int yIndex; // 0x20
+	public int index; // 0x24
+	public bool isProduct; // 0x28
+	public bool isAnim; // 0x29
+
+	// Properties
+	public int id { get; set; }
+	public bool canTip { get; }
+
+	// Methods
+
+	// RVA: 0x2C2F4B4 Offset: 0x2C2F4B4 VA: 0x2C2F4B4
+	public int get_id() { }
+
+	// RVA: 0x2C2F508 Offset: 0x2C2F508 VA: 0x2C2F508
+	public void set_id(int value) { }
+
+	// RVA: 0x2C2F56C Offset: 0x2C2F56C VA: 0x2C2F56C
+	public bool get_canTip() { }
+
+	// RVA: 0x2C2F5E0 Offset: 0x2C2F5E0 VA: 0x2C2F5E0
+	public void .ctor() { }
+}
+

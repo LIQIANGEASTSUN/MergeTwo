@@ -1,0 +1,8 @@
+// Namespace: 
+public struct BoardEvent.CollectCollectable : IEvent // TypeDefIndex: 1803
+{
+	// Fields
+	public ItemController Collectable; // 0x0
+	public BoardItemCollectable CollectableData; // 0x4
+}
+

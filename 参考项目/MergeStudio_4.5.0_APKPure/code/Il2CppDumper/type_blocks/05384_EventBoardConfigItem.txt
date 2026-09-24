@@ -1,0 +1,48 @@
+// Namespace: MergePuzzle.BoardEvents
+[Serializable]
+public class EventBoardConfigItem // TypeDefIndex: 5384
+{
+	// Fields
+	public int Index; // 0x8
+	public string ActiveOfferPackageID; // 0xC
+	public bool Disabled; // 0x10
+	public List<string> RequiredAddressables; // 0x14
+	public long EventDurationUnix; // 0x18
+	public int OfferMaxPurchase; // 0x20
+	public long EventStartUnix; // 0x28
+	public int TeaserShowLevel; // 0x30
+	public long TeaserStartUnix; // 0x38
+	public int EventLevel; // 0x40
+	public int SpecialEnergyInitialCount; // 0x44
+	public bool UseDefaultEnergies; // 0x48
+	public string EventTag; // 0x4C
+	public int InitInventorySize; // 0x50
+	public int TotalEnergyFillTime; // 0x54
+	public int MaxUserEnergy; // 0x58
+	public LevelData Levels; // 0x5C
+	public BoardTaskData Tasks; // 0x60
+	public BalanceEnergyRefillCostModel EnergyRefillConfig; // 0x64
+	public List<int> InventoryPriceList; // 0x68
+	public List<BoardPositionData> InitialPositionData; // 0x6C
+	public BalanceRewardedAdConfigModel AdConfig; // 0x70
+	public BalanceBubbleConfigModel BubbleConfig; // 0x74
+	public BalanceItemSetConfigModel ItemSetConfig; // 0x78
+	public List<BalanceProgressiveConfigModel> ProgressiveConfigs; // 0x7C
+	public BalanceSpawnerConfigModel SpawnerConfig; // 0x80
+	public bool PreventCustomSound; // 0x84
+
+	// Methods
+
+	// RVA: 0x1EB294C Offset: 0x1EB294C VA: 0x1EB294C
+	public List<string> GetRequiredAddressables() { }
+
+	// RVA: 0x1EB2B68 Offset: 0x1EB2B68 VA: 0x1EB2B68
+	public bool IsSameEvent(EventBoardConfigItem eventItem) { }
+
+	// RVA: 0x1EB2BB4 Offset: 0x1EB2BB4 VA: 0x1EB2BB4
+	public long EventFinishUnix() { }
+
+	// RVA: 0x1EB2BC8 Offset: 0x1EB2BC8 VA: 0x1EB2BC8
+	public void .ctor() { }
+}
+

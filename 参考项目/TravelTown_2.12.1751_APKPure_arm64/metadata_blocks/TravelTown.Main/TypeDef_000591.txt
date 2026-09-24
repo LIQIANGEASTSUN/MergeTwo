@@ -1,0 +1,92 @@
+// Namespace: MergeEngine.ECS
+public class EntityManager : IEntityManager // TypeDefIndex: 591
+{
+	// Fields
+	private List<Entity> _entities; // 0x10
+	private Dictionary<Type, IList> _componentsCache; // 0x18
+	private Dictionary<Type, IList> _emptyComponentsCache; // 0x20
+	[CompilerGenerated]
+	private Action<Entity> EntityCreated; // 0x28
+	[CompilerGenerated]
+	private Action<Entity> EntityRemoved; // 0x30
+
+	// Properties
+	public ReadOnlyCollection<Entity> Entities { get; }
+
+	// Methods
+
+	// RVA: 0x6146670 Offset: 0x6142670 VA: 0x6146670 Slot: 8
+	public ReadOnlyCollection<Entity> get_Entities() { }
+
+	[CompilerGenerated]
+	// RVA: 0x61466C0 Offset: 0x61426C0 VA: 0x61466C0 Slot: 4
+	public void add_EntityCreated(Action<Entity> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6146770 Offset: 0x6142770 VA: 0x6146770 Slot: 5
+	public void remove_EntityCreated(Action<Entity> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6146820 Offset: 0x6142820 VA: 0x6146820 Slot: 6
+	public void add_EntityRemoved(Action<Entity> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x61468D0 Offset: 0x61428D0 VA: 0x61468D0 Slot: 7
+	public void remove_EntityRemoved(Action<Entity> value) { }
+
+	// RVA: 0x6146980 Offset: 0x6142980 VA: 0x6146980 Slot: 9
+	public void AddEntity(Entity entity) { }
+
+	// RVA: 0x6146E18 Offset: 0x6142E18 VA: 0x6146E18 Slot: 10
+	public bool RemoveEntity(Entity entity) { }
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public ReadOnlyCollection<TComponent> GetComponents<TComponent>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C224B0 Offset: 0x3C1E4B0 VA: 0x3C224B0
+	|-EntityManager.GetComponents<object>
+	|
+	|-RVA: 0x3C22768 Offset: 0x3C1E768 VA: 0x3C22768
+	|-EntityManager.GetComponents<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 12
+	public TComponent GetComponent<TComponent>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C2233C Offset: 0x3C1E33C VA: 0x3C2233C
+	|-EntityManager.GetComponent<object>
+	|
+	|-RVA: 0x3C22390 Offset: 0x3C1E390 VA: 0x3C22390
+	|-EntityManager.GetComponent<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x6146F6C Offset: 0x6142F6C VA: 0x6146F6C
+	private void RemoveAllComponentsOfEntityFromCache(Entity entity) { }
+
+	// RVA: 0x61473E0 Offset: 0x61433E0 VA: 0x61473E0
+	private void RemoveComponentFromCache(Type componentType, ComponentBase component) { }
+
+	// RVA: 0x61474A8 Offset: 0x61434A8 VA: 0x61474A8
+	private IList GetComponents(Type componentType, bool createIfDoesNotExist = False) { }
+
+	// RVA: 0x6146AF8 Offset: 0x6142AF8 VA: 0x6146AF8
+	private void CacheAllComponentsOfEntity(Entity entity) { }
+
+	// RVA: 0x61476A4 Offset: 0x61436A4 VA: 0x61476A4
+	private void CacheComponent(Type componentType, IComponentBase component) { }
+
+	// RVA: 0x614776C Offset: 0x614376C VA: 0x614776C
+	private void TryCacheComponentAsSubtype(Type componentType, IComponentBase component) { }
+
+	// RVA: 0x61478DC Offset: 0x61438DC VA: 0x61478DC
+	private void EntityComponentAdded(IComponentBase component) { }
+
+	// RVA: 0x61479A8 Offset: 0x61439A8 VA: 0x61479A8
+	private void EntityComponentRemoved(IComponentBase component) { }
+
+	// RVA: 0x6147A74 Offset: 0x6143A74 VA: 0x6147A74
+	public void .ctor() { }
+}
+

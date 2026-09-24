@@ -1,0 +1,88 @@
+// Namespace: MergeEngine.ECS.Systems.Board
+public class SplitSystem : SystemBase, IItemsCombiner // TypeDefIndex: 932
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x40
+	[Inject]
+	private INotificationDataFactory _notificationDataFactory; // 0x48
+	[Inject]
+	private IUserProfileService _userProfileService; // 0x50
+	[InjectSystem]
+	private BoardSystem _boardSystem; // 0x58
+	[InjectSystem]
+	private OperationTrackingSystem _operationTrackingSystem; // 0x60
+	[InjectSystem]
+	private TaskRequirementsSystem _taskRequirementsSystem; // 0x68
+	[InjectSystem]
+	private StackingSystem _stackingSystem; // 0x70
+
+	// Methods
+
+	// RVA: 0x67844BC Offset: 0x67804BC VA: 0x67844BC Slot: 13
+	public bool CanCombineItems(PositionComponent firstItem, PositionComponent secondItem) { }
+
+	// RVA: 0x6784A48 Offset: 0x6780A48 VA: 0x6784A48 Slot: 14
+	public bool TryCombineItems(PositionComponent firstItem, PositionComponent secondItem, IItemsCombiner.OnItemsCombined callback) { }
+
+	// RVA: 0x6784AF4 Offset: 0x6780AF4 VA: 0x6784AF4
+	private bool ShouldVerifySplit(PositionComponent firstItem, PositionComponent secondItem) { }
+
+	// RVA: 0x6784CD8 Offset: 0x6780CD8 VA: 0x6784CD8
+	private void VerifyMerge(PositionComponent firstItem, PositionComponent secondItem) { }
+
+	// RVA: 0x67850F8 Offset: 0x67810F8 VA: 0x67850F8
+	private void OnVerifySplitConfirmed(BoardItemPosition firstItemPosition, BoardItemPosition secondItemPosition) { }
+
+	// RVA: 0x6784EE4 Offset: 0x6780EE4 VA: 0x6784EE4
+	private bool PerformTryCombineItems(PositionComponent firstItem, PositionComponent secondItem, IItemsCombiner.OnItemsCombined callback) { }
+
+	// RVA: 0x67851C0 Offset: 0x67811C0 VA: 0x67851C0 Slot: 15
+	public void ResetCombine() { }
+
+	// RVA: 0x678459C Offset: 0x678059C VA: 0x678459C
+	private bool GetSplitterAndTarget(PositionComponent firstItem, PositionComponent secondItem, out SplitComponent splitItem, out PositionComponent splitTarget, out BoardItemPosition splitterPosition) { }
+
+	// RVA: 0x6784534 Offset: 0x6780534 VA: 0x6784534
+	private bool IsLocked(PositionComponent firstItem) { }
+
+	// RVA: 0x6785154 Offset: 0x6781154 VA: 0x6785154
+	private bool TrySplitItem(SplitComponent splitItem, PositionComponent splitTarget, BoardItemPosition from, BoardItemPosition to, BoardItemPosition splitterPosition) { }
+
+	// RVA: 0x67846B4 Offset: 0x67806B4 VA: 0x67846B4
+	private bool CanBeSplit(PositionComponent splitTarget) { }
+
+	// RVA: 0x67851C4 Offset: 0x67811C4 VA: 0x67851C4
+	private bool Split(SplitComponent splitItem, PositionComponent splitTarget, BoardItemPosition from, BoardItemPosition to, BoardItemPosition splitterPosition) { }
+
+	// RVA: 0x6785BC0 Offset: 0x6781BC0 VA: 0x6785BC0
+	private void Split(SplitComponent splitItem, PositionComponent splitTarget, BoardItemPosition from, BoardItemPosition to) { }
+
+	// RVA: 0x6785408 Offset: 0x6781408 VA: 0x6785408
+	private SplitSystem.SplitContext CreateSplitContext(SplitComponent splitItem, PositionComponent splitTarget, BoardItemPosition from, BoardItemPosition to, BoardItemPosition splitterPosition) { }
+
+	// RVA: 0x67858F8 Offset: 0x67818F8 VA: 0x67858F8
+	private bool SplitStackingWithBoardFull(SplitSystem.SplitContext context) { }
+
+	// RVA: 0x67856C8 Offset: 0x67816C8 VA: 0x67856C8
+	private bool SplitStackingWithAvailableSpace(SplitSystem.SplitContext context) { }
+
+	// RVA: 0x67862E8 Offset: 0x67822E8 VA: 0x67862E8
+	private PositionComponent CreateEntityAt(BoardItemPosition position, IMergeItem item) { }
+
+	// RVA: 0x6786494 Offset: 0x6782494 VA: 0x6786494
+	private void UpdateItemQueueAddedTimestamp(PositionComponent positionComponent, PositionComponent sourcePositionComponent) { }
+
+	// RVA: 0x67868AC Offset: 0x67828AC VA: 0x67868AC
+	private List<ItemNotificationData> BuildAvailableSpaceNotifications(SplitSystem.SplitContext context, PositionComponent movingItem, PositionComponent sentinelItem) { }
+
+	// RVA: 0x6786520 Offset: 0x6782520 VA: 0x6786520
+	private List<ItemNotificationData> BuildBoardFullNotifications(SplitSystem.SplitContext context, PositionComponent firstSplitItem) { }
+
+	// RVA: 0x6784F94 Offset: 0x6780F94 VA: 0x6784F94
+	private IMergeItem GetResultItem(PositionComponent firstItem, PositionComponent secondItem) { }
+
+	// RVA: 0x6786D1C Offset: 0x6782D1C VA: 0x6786D1C
+	public void .ctor() { }
+}
+

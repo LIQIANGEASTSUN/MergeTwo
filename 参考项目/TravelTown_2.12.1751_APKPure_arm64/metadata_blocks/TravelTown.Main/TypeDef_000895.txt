@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardInteractionSystem.<>c__DisplayClass59_0 // TypeDefIndex: 895
+{
+	// Fields
+	public BoardInteractionSystem <>4__this; // 0x10
+	public BoardItemPosition oldPosition; // 0x18
+	public BoardItemPosition newPosition; // 0x20
+	public PositionComponent itemAtNewPosition; // 0x28
+
+	// Methods
+
+	// RVA: 0x665E77C Offset: 0x665A77C VA: 0x665E77C
+	public void .ctor() { }
+
+	// RVA: 0x665F470 Offset: 0x665B470 VA: 0x665F470
+	internal void <BoardItemDragEnded>g__ItemDroppedOnOrderFailed|0() { }
+
+	// RVA: 0x665F4F0 Offset: 0x665B4F0 VA: 0x665F4F0
+	internal void <BoardItemDragEnded>g__OnItemCombineComplete|1(bool success, bool shouldSelectItemAtTarget, bool shouldVerifyMerge = False) { }
+
+	// RVA: 0x665F66C Offset: 0x665B66C VA: 0x665F66C
+	internal bool <BoardItemDragEnded>b__2(IItemsCombiner combiner) { }
+}
+

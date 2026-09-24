@@ -1,0 +1,40 @@
+Type: UnityBoardController+<>c__DisplayClass332_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03277644 CBNZ X21, 0x327767C
+	0x03277648 B 0x32776E4
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void <CollectItemAttempt>g__Action|0()
+
+Disassembly:
+	0x0327764C LDUR V0, [X19 + 0x78]
+	0x03277650 MOVN W8, 0x0
+	0x03277654 STP X31, X31, [X19 + 0x78]
+	0x03277658 STR W8, [X19]
+	0x0327765C STR V0, [X31 + 0xA]
+	0x03277660 B 0x32776E4
+	0x03277664 ADRP X0, 0x2460000
+	0x03277668 LDR X0, [X0 + 0xD10]
+	0x0327766C BL 0x239B8E4
+
+ISIL:
+	001 Move X8, X0
+	002 Move X0, [X0+16]
+	003 Compare X0, 0
+	004 JumpIfEqual {11}
+	005 Move X1, [X8+24]
+	006 Move X2, [X8+32]
+	007 Move X4, X31
+	008 Move X3, [X8+40]
+	009 Call UnityBoardController.CollectItem, X0, X1, X2, X3
+	010 Return 
+	011 Move [X31-16], X30
+	012 Call 0x239FB90
+

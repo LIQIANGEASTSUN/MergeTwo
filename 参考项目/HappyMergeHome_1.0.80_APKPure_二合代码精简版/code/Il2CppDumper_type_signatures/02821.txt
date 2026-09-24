@@ -1,0 +1,39 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeClickTips.<SetBubbleDismiss>d__98 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 2821
+{
+	// Fields
+	private int <>1__state; // 0x8
+	private object <>2__current; // 0xC
+	public MergeClickTips <>4__this; // 0x10
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHidden]
+	// RVA: 0x2C693CC Offset: 0x2C693CC VA: 0x2C693CC
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHidden]
+	// RVA: 0x2C693E8 Offset: 0x2C693E8 VA: 0x2C693E8 Slot: 5
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x2C693EC Offset: 0x2C693EC VA: 0x2C693EC Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x2C69534 Offset: 0x2C69534 VA: 0x2C69534 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHidden]
+	// RVA: 0x2C6953C Offset: 0x2C6953C VA: 0x2C6953C Slot: 8
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHidden]
+	// RVA: 0x2C69580 Offset: 0x2C69580 VA: 0x2C69580 Slot: 7
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+

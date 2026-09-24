@@ -1,0 +1,30 @@
+Type: Code.GameLogic.GameEvents.IEventSharedInfo
+
+Method: Metacore.MergeMansion.Common.Options.Option`1<Code.GameLogic.GameEvents.EventGroupId> get_GroupIdOption()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_Priority()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.String get_SharedEventId()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.GameEvents.EventCategoryInfo get_CategoryInfo()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

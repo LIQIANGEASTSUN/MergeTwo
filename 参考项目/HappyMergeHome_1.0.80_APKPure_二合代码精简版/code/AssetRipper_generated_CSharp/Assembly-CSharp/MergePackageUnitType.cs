@@ -1,0 +1,25 @@
+public enum MergePackageUnitType
+{
+	bag = 0,
+	baglock = 1,
+	bagUnlock = 2,
+	bagMax = 3,
+	buildBag = 4,
+	buildBaglock = 5,
+	buildBagUnlock = 6,
+	buildBagMax = 7,
+	vipBagUnlock = 8,
+	vipBag = 9,
+	info = 10,
+	product = 11,
+	productExplain = 12,
+	bigInfo = 13,
+	infoTips = 14,
+	taskRewards = 15,
+	taskXpRewards = 16,
+	warning = 17,
+	splite = 18,
+	buildBundle = 19,
+	notMergeIcon = 20,
+	increasItem = 21
+}

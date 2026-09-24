@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class TimeLimitedItemsBoardMiniGameCleanUpHandler.<>c__DisplayClass5_0 // TypeDefIndex: 32845
+{
+	// Fields
+	public TimeLimitedItemsBoardMiniGameCleanUpHandler <>4__this; // 0x10
+	public List<QueuedItem> queuedItemsToDestroy; // 0x18
+	public List<Entity> entitiesToDestroy; // 0x20
+
+	// Methods
+
+	// RVA: 0x6B4B68C Offset: 0x6B4768C VA: 0x6B4B68C
+	public void .ctor() { }
+
+	// RVA: 0x6B4B8E4 Offset: 0x6B478E4 VA: 0x6B4B8E4
+	internal void <CleanUp>b__0() { }
+
+	// RVA: 0x6B4B9C0 Offset: 0x6B479C0 VA: 0x6B4B9C0
+	internal void <CleanUp>b__1() { }
+}
+

@@ -1,0 +1,91 @@
+Type: GameLogic.Player.PlayerExtensions+<>c__DisplayClass92_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0355B228 STR X8, [X31 + 0x40]
+	0x0355B22C ADD X9, X31, 0x30
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <RemoveAuxEnergyAttachments>g__IsAuxEnergyAttachment|0(GameLogic.Player.Items.Attachments.IItemAttachment attachment)
+
+Disassembly:
+	0x0355B230 LDR X28, [X28 + 0x4E0]
+	0x0355B234 LDR X29, [X29 + 0xFF0]
+	0x0355B238 STP X31, X9, [X31]
+	0x0355B23C LDR X1, [X24]
+	0x0355B240 ADD X0, X31, 0x30
+	0x0355B244 BL 0x29548F4
+	0x0355B248 TBZ X0, 0x0, 0x355B3C0
+	0x0355B24C LDR X21, [X25]
+	0x0355B250 LDR X0, [X21 + 0x20]
+	0x0355B254 ADD X8, X0, 0x135
+	0x0355B258 LDRH W9, [X8]
+	0x0355B25C TBNZ X9, 0x0, 0x355B278
+	0x0355B260 BL 0x23D4F40
+	0x0355B264 MOV X8, X0
+	0x0355B268 LDR X0, [X21 + 0x20]
+	0x0355B26C ADD X9, X0, 0x135
+	0x0355B270 LDRH W9, [X9]
+	0x0355B274 B 0x355B27C
+	0x0355B278 MOV X8, X0
+	0x0355B27C LDR X8, [X8 + 0xC0]
+	0x0355B280 LDR X8, [X8 + 0x10]
+	0x0355B284 LDR W21, [X8 + 0xFC]
+	0x0355B288 TBNZ X9, 0x0, 0x355B290
+	0x0355B28C BL 0x23D4F40
+	0x0355B290 LDR X8, [X0 + 0xC0]
+	0x0355B294 LDR X8, [X8 + 0x8]
+	0x0355B298 LDR X8, [X8 + 0x80]
+	0x0355B29C ADD X0, X31, 0x30
+	0x0355B2A0 ADD X1, X8, 0x60
+	0x0355B2A4 BL 0x239B90C
+	0x0355B2A8 MOV X1, X0
+	0x0355B2AC ADD X0, X31, 0x4C
+	0x0355B2B0 MOV X2, X21
+	0x0355B2B4 BL 0x53E90D0
+	0x0355B2B8 LDR W21, [X31 + 0x4C]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move X19, X1
+	006 Move X20, X0
+	007 Move W8, [0x27D2614]
+	008 Move TEMP, X8
+	009 And TEMP, TEMP, 1
+	010 Compare TEMP, 1
+	011 JumpIfEqual {16}
+	012 Move X0, [0x21BA2D8]
+	013 Call 0x239F8E4
+	014 Move W8, 1
+	015 Move [X21+1556], W8
+	016 Compare X19, 0
+	017 JumpIfEqual {28}
+	018 Move X8, [0x21BA2D8]
+	019 Move X9, [X19]
+	020 Move X8, [X8]
+	021 Move W11, [X9+304]
+	022 Move W10, [X8+304]
+	023 NotImplemented "Instruction CMP not yet implemented."
+	024 Move X9, [X9+200]
+	025 Add X9, X9, X10
+	026 NotImplemented "Instruction LDUR not yet implemented."
+	027 NotImplemented "Instruction CMP not yet implemented."
+	028 Move W0, W31
+	029 Move X20, [X31+16]
+	030 Move X19, [X31+24]
+	031 Move X30, [X31+32]
+	032 Move X21, [X31+40]
+	033 Return X0
+	034 Move W8, [X19+16]
+	035 Move W9, [X20+16]
+	036 NotImplemented "Instruction CMP not yet implemented."
+	037 NotImplemented "Instruction CSET not yet implemented."
+

@@ -1,0 +1,7 @@
+// Namespace: 
+public struct TaskEvent.LastXPArrived : IEvent // TypeDefIndex: 2004
+{
+	// Fields
+	public bool IsLevelUp; // 0x0
+}
+

@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class HintUtil.<>c__DisplayClass0_1 // TypeDefIndex: 613
+{
+	// Fields
+	public IdComponent first; // 0x10
+
+	// Methods
+
+	// RVA: 0x62735D4 Offset: 0x626F5D4 VA: 0x62735D4
+	public void .ctor() { }
+
+	// RVA: 0x6277014 Offset: 0x6273014 VA: 0x6277014
+	internal bool <GetHint>b__8(IdComponent item) { }
+}
+

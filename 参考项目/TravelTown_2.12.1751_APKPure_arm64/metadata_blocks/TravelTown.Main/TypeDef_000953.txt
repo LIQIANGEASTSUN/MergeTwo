@@ -1,0 +1,63 @@
+// Namespace: MergeEngine.ECS.Systems.Items
+public class CollectSystem : BaseItemSystem<CollectableComponent> // TypeDefIndex: 953
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x40
+	[Inject]
+	private INotificationDataFactory _notificationDataFactory; // 0x48
+	[Inject]
+	private ILiveOpsEventModel _liveOpsEventModel; // 0x50
+	[InjectSystem]
+	private BoardSystem _boardSystem; // 0x58
+	[InjectSystem]
+	private ResourcesSystem _resourcesSystem; // 0x60
+	[InjectSystem]
+	private InteractionSystem _interactionSystem; // 0x68
+	[InjectSystem]
+	private OperationTrackingSystem _operationTrackingSystem; // 0x70
+	[InjectComponent]
+	private BoardItemCountComponent _boardItemCountComponent; // 0x78
+	[Inject]
+	private ICollectableRewardsModel _collectableRewardsModel; // 0x80
+	[Inject]
+	private ICoinMultiplierCollectFloatingTextBuilder _coinMultiplierCollectFloatingTextBuilder; // 0x88
+	private List<CollectableComponent> _entitiesToCollect; // 0x90
+
+	// Properties
+	public override SystemPriorities Priority { get; }
+	private bool IsInBoardEvent { get; }
+
+	// Methods
+
+	// RVA: 0x678B040 Offset: 0x6787040 VA: 0x678B040 Slot: 15
+	public override SystemPriorities get_Priority() { }
+
+	// RVA: 0x678B048 Offset: 0x6787048 VA: 0x678B048
+	private bool get_IsInBoardEvent() { }
+
+	// RVA: 0x678B0EC Offset: 0x67870EC VA: 0x678B0EC Slot: 17
+	protected override IEnumerable<CollectableComponent> OnWillProcessComponents(ReadOnlyCollection<CollectableComponent> components) { }
+
+	// RVA: 0x678B208 Offset: 0x6787208 VA: 0x678B208 Slot: 18
+	protected override void ProcessComponent(CollectableComponent collectable) { }
+
+	// RVA: 0x678B72C Offset: 0x678772C VA: 0x678B72C
+	private void PlayFlyAnimationForCollectableItems(CollectableComponent collectable) { }
+
+	// RVA: 0x678BA10 Offset: 0x6787A10 VA: 0x678BA10
+	private void CreateFloatingTextSignal(CollectableComponent collectable) { }
+
+	// RVA: 0x678B620 Offset: 0x6787620 VA: 0x678B620
+	private void HandleVisualState(CollectableComponent collectable) { }
+
+	// RVA: 0x678BEE8 Offset: 0x6787EE8 VA: 0x678BEE8
+	private void CreateSlidingIcon(CollectableComponent collectable) { }
+
+	// RVA: 0x678B58C Offset: 0x678758C VA: 0x678B58C
+	public void RemoveItemFromBoard(CollectableComponent collectable) { }
+
+	// RVA: 0x678C170 Offset: 0x6788170 VA: 0x678C170
+	public void .ctor() { }
+}
+

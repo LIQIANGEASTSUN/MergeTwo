@@ -1,0 +1,66 @@
+Type: MasterFunctions+<>c__DisplayClass101_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03689AF8 MOV X1, X0
+	0x03689AFC ADD X0, X31, 0x20
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <RollPurchasedDailyTasks>b__0(GameLogic.Player.DailyTasks.DailyTaskState taskState)
+
+Disassembly:
+	0x03689B00 ADD X2, X31, 0x50
+	0x03689B04 STP X31, X31, [X31 + 0x20]
+	0x03689B08 STR W20, [X31 + 0x50]
+	0x03689B0C BL 0x284F678
+	0x03689B10 ADD W8, W25, W25, 0x2, LSL
+	0x03689B14 LDR V0, [X31 + 0x2]
+	0x03689B18 LDR X3, [X29]
+	0x03689B1C ADD X2, X31, 0x50
+	0x03689B20 MOV X0, X23
+	0x03689B24 ADD W1, W8, 0x3
+	0x03689B28 STR V0, [X31 + 0x5]
+	0x03689B2C BL 0x272B44C
+	0x03689B30 ADRP X19, 0x205C000
+	0x03689B34 LDR X19, [X19 + 0xAB8]
+	0x03689B38 LDR X0, [X19]
+	0x03689B3C LDR W8, [X0 + 0xE4]
+	0x03689B40 CBNZ W8, 0x3689B4C
+	0x03689B44 BL 0x239BA64
+	0x03689B48 LDR X0, [X19]
+	0x03689B4C ADRP X8, 0x205B000
+	0x03689B50 LDR X19, [X31 + 0x8]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Compare X1, 0
+	005 JumpIfEqual {26}
+	006 Move X19, X1
+	007 Move X20, X0
+	008 Move X0, X1
+	009 Move X1, X31
+	010 Call DailyTaskState.get_IsComplete, X0
+	011 Move TEMP, X0
+	012 And TEMP, TEMP, 1
+	013 Compare TEMP, 1
+	014 JumpIfNotEqual {16}
+	015 Move W0, W31
+	016 Move X1, [X20+16]
+	017 Move X0, X19
+	018 Move X2, X31
+	019 Call DailyTaskState.RefreshesMissingToBeRemoved, X0, X1
+	020 NotImplemented "Instruction CMP not yet implemented."
+	021 NotImplemented "Instruction CSET not yet implemented."
+	022 Move X20, [X31+16]
+	023 Move X19, [X31+24]
+	024 Move X30, [X31+32]
+	025 Return X0
+	026 Call 0x239FB90
+

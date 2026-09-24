@@ -1,0 +1,54 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class SpawningItemsSystem.<>c<T> // TypeDefIndex: 989
+{
+	// Fields
+	public static readonly SpawningItemsSystem.<>c<T> <>9; // 0x0
+	public static Func<FixedItemSpawnable, string> <>9__24_0; // 0x0
+	public static Func<WeightedItemSpawnable, string> <>9__24_1; // 0x0
+	public static Func<ItemPayloadBase, string> <>9__25_0; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	private static void .cctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3EF7090 Offset: 0x3EF3090 VA: 0x3EF7090
+	|-SpawningItemsSystem.<>c<object>..cctor
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3EF714C Offset: 0x3EF314C VA: 0x3EF714C
+	|-SpawningItemsSystem.<>c<object>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal string <CreateNewBoostedItem>b__24_0(FixedItemSpawnable spawnable) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3EF7154 Offset: 0x3EF3154 VA: 0x3EF7154
+	|-SpawningItemsSystem.<>c<object>.<CreateNewBoostedItem>b__24_0
+	*/
+
+	// RVA: -1 Offset: -1
+	internal string <CreateNewBoostedItem>b__24_1(WeightedItemSpawnable spawnable) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3EF7178 Offset: 0x3EF3178 VA: 0x3EF7178
+	|-SpawningItemsSystem.<>c<object>.<CreateNewBoostedItem>b__24_1
+	*/
+
+	// RVA: -1 Offset: -1
+	internal string <SetItemSpawningTrackingData>b__25_0(ItemPayloadBase item) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3EF719C Offset: 0x3EF319C VA: 0x3EF719C
+	|-SpawningItemsSystem.<>c<object>.<SetItemSpawningTrackingData>b__25_0
+	*/
+}
+

@@ -1,0 +1,23 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardController.<>c__DisplayClass339_0 // TypeDefIndex: 1883
+{
+	// Fields
+	public BoosterItemController boosterController; // 0x8
+	public BoardController <>4__this; // 0xC
+	public ItemController item; // 0x10
+	public ItemEntity itemEntity; // 0x14
+	public Coordinate targetPosition; // 0x18
+
+	// Methods
+
+	// RVA: 0x1919D20 Offset: 0x1919D20 VA: 0x1919D20
+	public void .ctor() { }
+
+	// RVA: 0x1919D28 Offset: 0x1919D28 VA: 0x1919D28
+	internal void <OnEvent>b__0() { }
+
+	// RVA: 0x1919E88 Offset: 0x1919E88 VA: 0x1919E88
+	internal void <OnEvent>b__4() { }
+}
+

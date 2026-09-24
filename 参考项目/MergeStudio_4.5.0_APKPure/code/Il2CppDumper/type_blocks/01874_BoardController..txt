@@ -1,0 +1,19 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardController.<>c__DisplayClass215_0 // TypeDefIndex: 1874
+{
+	// Fields
+	public ItemController item; // 0x8
+	public BoardPosition selectedBoardPosition; // 0xC
+	public BoardController <>4__this; // 0x10
+	public ItemCreationHandler itemCreationHandler; // 0x14
+
+	// Methods
+
+	// RVA: 0x1918DF4 Offset: 0x1918DF4 VA: 0x1918DF4
+	public void .ctor() { }
+
+	// RVA: 0x1918DFC Offset: 0x1918DFC VA: 0x1918DFC
+	internal void <SwapItemAnimation>b__0() { }
+}
+

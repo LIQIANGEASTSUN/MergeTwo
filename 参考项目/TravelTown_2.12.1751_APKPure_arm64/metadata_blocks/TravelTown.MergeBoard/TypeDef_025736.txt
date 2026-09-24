@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class FeedingCombinationExtractSystem.<>c__DisplayClass9_0 // TypeDefIndex: 25736
+{
+	// Fields
+	public string itemId; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A68370 Offset: 0x6A64370 VA: 0x6A68370
+	public void .ctor() { }
+
+	// RVA: 0x6A68440 Offset: 0x6A64440 VA: 0x6A68440
+	internal bool <FindConsumedItemSnapshot>b__0(FeedingCombinationConsumedItemSnapshot item) { }
+}
+

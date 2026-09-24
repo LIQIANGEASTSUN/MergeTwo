@@ -1,0 +1,43 @@
+// Namespace: Merger.MergeBoard.Systems
+public class TimeCycleSystem : ISystem // TypeDefIndex: 25781
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A765EC Offset: 0x6A725EC VA: 0x6A765EC Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A76BB0 Offset: 0x6A72BB0 VA: 0x6A76BB0
+	private void ProcessTimeCheckIfLocked(TickContext context, double seconds, ref TimeCycleComponent component, Entity entity) { }
+
+	// RVA: 0x6A76BE4 Offset: 0x6A72BE4 VA: 0x6A76BE4
+	private void ProcessTime(TickContext context, double seconds, ref TimeCycleComponent component, Entity entity) { }
+
+	// RVA: 0x6A76CAC Offset: 0x6A72CAC VA: 0x6A76CAC
+	private void ProcessDelay(TickContext context, double seconds, ref TimeCycleComponent component, Entity entity) { }
+
+	// RVA: 0x6A76D50 Offset: 0x6A72D50 VA: 0x6A76D50
+	private void ProcessCycles(TickContext context, double seconds, ref TimeCycleComponent component, Entity entity) { }
+
+	// RVA: 0x6A770AC Offset: 0x6A730AC VA: 0x6A770AC
+	private bool SkipCooldownEntirely(TimeCycleComponent component) { }
+
+	// RVA: 0x6A770CC Offset: 0x6A730CC VA: 0x6A770CC
+	private void ProcessCycle(TickContext context, double seconds, ref TimeCycleComponent component, Entity entity) { }
+
+	// RVA: 0x6A76EE4 Offset: 0x6A72EE4 VA: 0x6A76EE4
+	private bool ShouldFireCooldownStartedEvent(TimeCycleState previousState, TimeCycleState currentState) { }
+
+	// RVA: 0x6A76F04 Offset: 0x6A72F04 VA: 0x6A76F04
+	private void AddCooldownStartedResult(TickContext context, ref TimeCycleComponent timeCycleComponent, Entity entity) { }
+
+	// RVA: 0x6A771C4 Offset: 0x6A731C4 VA: 0x6A771C4
+	private void AddCooldownEndedResult(TickContext context, ref TimeCycleComponent timeCycleComponent, Entity entity) { }
+
+	// RVA: 0x6A77368 Offset: 0x6A73368 VA: 0x6A77368
+	public void .ctor() { }
+}
+

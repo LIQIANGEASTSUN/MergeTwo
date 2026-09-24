@@ -1,0 +1,72 @@
+Type: GameLogic.Player.PlayerExtensions+<>c__DisplayClass52_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0355A834 LDR X23, [X23 + 0x8A8]
+	0x0355A838 STR X31, [X31]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <RemoveItemsFromInventories>b__0(GameLogic.Player.Items.ItemDefinition itemDef)
+
+Disassembly:
+	0x0355A83C CBNZ W8, 0x355A844
+	0x0355A840 BL 0x239BA64
+	0x0355A844 ADRP X24, 0x2173000
+	0x0355A848 MOV X0, X21
+	0x0355A84C MOV X1, X19
+	0x0355A850 LDR X24, [X24 + 0xB48]
+	0x0355A854 MOV X2, X20
+	0x0355A858 BL 0x355A38C
+	0x0355A85C LDR X8, [X23]
+	0x0355A860 MOV X20, X0
+	0x0355A864 LDR W9, [X8 + 0xE4]
+	0x0355A868 CBNZ W9, 0x355A874
+	0x0355A86C MOV X0, X8
+	0x0355A870 BL 0x239BA64
+	0x0355A874 ADD X0, X31, 0x8
+	0x0355A878 MOV X1, X31
+	0x0355A87C ADD X22, X20, 0x1
+	0x0355A880 BL 0x41500E0
+	0x0355A884 LDR X8, [X24]
+	0x0355A888 STR X0, [X31]
+	0x0355A88C LDR W9, [X8 + 0xE4]
+	0x0355A890 CBNZ W9, 0x355A89C
+	0x0355A894 MOV X0, X8
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move X20, X1
+	006 Move X19, X0
+	007 Move W8, [0x27D360A]
+	008 Move TEMP, X8
+	009 And TEMP, TEMP, 1
+	010 Compare TEMP, 1
+	011 JumpIfEqual {16}
+	012 Move X0, [0x2184FE8]
+	013 Call 0x239F8E4
+	014 Move W8, 1
+	015 Move [X21+1546], W8
+	016 Compare X20, 0
+	017 JumpIfEqual {30}
+	018 Move X0, [X20+200]
+	019 Compare X0, 0
+	020 JumpIfEqual {30}
+	021 Move X8, [0x2184FE8]
+	022 Move X1, [X19+16]
+	023 Move X20, [X31+16]
+	024 Move X19, [X31+24]
+	025 Move X2, [X8]
+	026 Move X30, [X31+32]
+	027 Move X21, [X31+40]
+	028 Call 0x27302EC, X0, X1
+	029 Return X0
+	030 Call 0x239FB90
+

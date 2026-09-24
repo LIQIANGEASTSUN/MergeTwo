@@ -1,0 +1,24 @@
+// Namespace: 
+[CompilerGenerated]
+private struct BaseMiniBoardController.<CreateParticleAsync>d__194 : IAsyncStateMachine // TypeDefIndex: 1152
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncUniTaskVoidMethodBuilder <>t__builder; // 0x4
+	public Transform parent; // 0x8
+	public BaseMiniBoardController <>4__this; // 0xC
+	public GameObject particlePrefab; // 0x10
+	public Vector3 position; // 0x14
+	public SortingData sortingData; // 0x20
+	private YieldAwaitable.Awaiter <>u__1; // 0x24
+
+	// Methods
+
+	// RVA: 0x17D5A58 Offset: 0x17D5A58 VA: 0x17D5A58 Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x17D5E18 Offset: 0x17D5E18 VA: 0x17D5E18 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

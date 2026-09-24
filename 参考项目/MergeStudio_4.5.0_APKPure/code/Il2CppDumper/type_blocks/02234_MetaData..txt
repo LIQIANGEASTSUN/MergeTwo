@@ -1,0 +1,41 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class MetaData.<>c // TypeDefIndex: 2234
+{
+	// Fields
+	public static readonly MetaData.<>c <>9; // 0x0
+	public static Func<MetaTaskItemData, int> <>9__19_0; // 0x4
+	public static Func<MetaTaskItemData, int> <>9__20_1; // 0x8
+	public static Func<MetaTaskItemData, int> <>9__21_1; // 0xC
+	public static Func<MetaTaskItem, int> <>9__22_2; // 0x10
+	public static Func<MetaTaskItem, int> <>9__22_0; // 0x14
+	public static Func<MetaTaskItem, int> <>9__23_1; // 0x18
+
+	// Methods
+
+	// RVA: 0x19B2358 Offset: 0x19B2358 VA: 0x19B2358
+	private static void .cctor() { }
+
+	// RVA: 0x19B23CC Offset: 0x19B23CC VA: 0x19B23CC
+	public void .ctor() { }
+
+	// RVA: 0x19B23D4 Offset: 0x19B23D4 VA: 0x19B23D4
+	internal int <UpdateMetaLevelIfRequired>b__19_0(MetaTaskItemData item) { }
+
+	// RVA: 0x19B23F0 Offset: 0x19B23F0 VA: 0x19B23F0
+	internal int <GetRevealTaskForLevel>b__20_1(MetaTaskItemData item) { }
+
+	// RVA: 0x19B240C Offset: 0x19B240C VA: 0x19B240C
+	internal int <GetRevealTaskNoForLevel>b__21_1(MetaTaskItemData item) { }
+
+	// RVA: 0x19B2428 Offset: 0x19B2428 VA: 0x19B2428
+	internal int <GetActiveMetaTaskItem>b__22_2(MetaTaskItem item) { }
+
+	// RVA: 0x19B2444 Offset: 0x19B2444 VA: 0x19B2444
+	internal int <GetActiveMetaTaskItem>b__22_0(MetaTaskItem item) { }
+
+	// RVA: 0x19B2460 Offset: 0x19B2460 VA: 0x19B2460
+	internal int <GetActiveMetaTaskItems>b__23_1(MetaTaskItem item) { }
+}
+

@@ -1,0 +1,22 @@
+// Namespace: Merger.MergeBoard.Components
+public struct LockComponent : IComponent // TypeDefIndex: 26010
+{
+	// Fields
+	[CompilerGenerated]
+	private bool <Locked>k__BackingField; // 0x0
+
+	// Properties
+	public bool Locked { get; set; }
+
+	// Methods
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9C290 Offset: 0x6A98290 VA: 0x6A9C290
+	public bool get_Locked() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C298 Offset: 0x6A98298 VA: 0x6A9C298
+	public void set_Locked(bool value) { }
+}
+

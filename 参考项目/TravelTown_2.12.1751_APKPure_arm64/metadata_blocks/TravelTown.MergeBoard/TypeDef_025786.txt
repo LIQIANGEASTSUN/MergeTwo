@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class TimeLockSystem.<>c__DisplayClass1_0 // TypeDefIndex: 25786
+{
+	// Fields
+	public TapAction tapAction; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A782FC Offset: 0x6A742FC VA: 0x6A782FC
+	public void .ctor() { }
+
+	// RVA: 0x6A78FA8 Offset: 0x6A74FA8 VA: 0x6A78FA8
+	internal bool <HandleTapAction>b__0(ValueTuple<Entity, TimeLockComponent, BoardTilePositionComponent, IdComponent> e) { }
+}
+

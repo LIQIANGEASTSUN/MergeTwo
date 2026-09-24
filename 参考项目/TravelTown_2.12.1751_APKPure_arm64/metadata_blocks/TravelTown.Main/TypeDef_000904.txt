@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardQueueSystem.<>c // TypeDefIndex: 904
+{
+	// Fields
+	public static readonly BoardQueueSystem.<>c <>9; // 0x0
+	public static Func<QueuedItem, long> <>9__41_1; // 0x8
+	public static Func<QueuedItem, string> <>9__53_0; // 0x10
+
+	// Methods
+
+	// RVA: 0x6666BB4 Offset: 0x6662BB4 VA: 0x6666BB4
+	private static void .cctor() { }
+
+	// RVA: 0x6666C1C Offset: 0x6662C1C VA: 0x6666C1C
+	public void .ctor() { }
+
+	// RVA: 0x6666C24 Offset: 0x6662C24 VA: 0x6666C24
+	internal long <TryDequeueRewardItem>b__41_1(QueuedItem x) { }
+
+	// RVA: 0x6666C3C Offset: 0x6662C3C VA: 0x6666C3C
+	internal string <TrackBoosterDequeueOperation>b__53_0(QueuedItem x) { }
+}
+

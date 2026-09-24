@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MetaData.<>c__DisplayClass23_1 // TypeDefIndex: 2246
+{
+	// Fields
+	public MetaTaskItemEntity completedMetaTaskListEntity; // 0x8
+
+	// Methods
+
+	// RVA: 0x19B2348 Offset: 0x19B2348 VA: 0x19B2348
+	public void .ctor() { }
+
+	// RVA: 0x19B296C Offset: 0x19B296C VA: 0x19B296C
+	internal bool <GetActiveMetaTaskItems>b__4(MetaTaskItem item) { }
+}
+

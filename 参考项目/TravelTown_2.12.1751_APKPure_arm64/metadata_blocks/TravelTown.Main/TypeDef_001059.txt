@@ -1,0 +1,13 @@
+// Namespace: MergeEngine.ECS.Components.Items
+[Serializable]
+public class SerializedExpendableComponent // TypeDefIndex: 1059
+{
+	// Fields
+	public int Uses; // 0x10
+
+	// Methods
+
+	// RVA: 0x68FC42C Offset: 0x68F842C VA: 0x68FC42C
+	public void .ctor() { }
+}
+

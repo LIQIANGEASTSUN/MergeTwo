@@ -1,0 +1,8 @@
+// Namespace: 
+public struct BoardEvent.Move : IEvent // TypeDefIndex: 1764
+{
+	// Fields
+	public ItemController Item; // 0x0
+	public CellController Cell; // 0x4
+}
+

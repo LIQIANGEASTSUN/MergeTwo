@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoosterService.<>c // TypeDefIndex: 7756
+{
+	// Fields
+	public static readonly BoosterService.<>c <>9; // 0x0
+	public static Comparison<RemoteBoosterData> <>9__36_2; // 0x8
+
+	// Methods
+
+	// RVA: 0x65C45E8 Offset: 0x65C05E8 VA: 0x65C45E8
+	private static void .cctor() { }
+
+	// RVA: 0x65C4650 Offset: 0x65C0650 VA: 0x65C4650
+	public void .ctor() { }
+
+	// RVA: 0x65C4658 Offset: 0x65C0658 VA: 0x65C4658
+	internal int <GetActiveBoosters>b__36_2(RemoteBoosterData x, RemoteBoosterData y) { }
+}
+

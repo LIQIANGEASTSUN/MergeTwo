@@ -1,0 +1,21 @@
+// Namespace: Paxie.MergeStudio.Features.MiniBoard
+public class MiniBoardPosition // TypeDefIndex: 1163
+{
+	// Fields
+	public Coordinate Index; // 0x8
+	public MiniBoardCellController Cell; // 0x10
+	[CanBeNull]
+	public MiniBoardItemController Item; // 0x14
+
+	// Methods
+
+	// RVA: 0x17D9C10 Offset: 0x17D9C10 VA: 0x17D9C10
+	public void .ctor() { }
+
+	// RVA: 0x17D7BB8 Offset: 0x17D7BB8 VA: 0x17D7BB8
+	public void .ctor(Coordinate index) { }
+
+	// RVA: 0x17D9C18 Offset: 0x17D9C18 VA: 0x17D9C18
+	public void SetItemToNull() { }
+}
+

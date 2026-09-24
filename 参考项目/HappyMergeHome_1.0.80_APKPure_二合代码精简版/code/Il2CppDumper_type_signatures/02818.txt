@@ -1,0 +1,10 @@
+// Namespace: 
+public enum MergeClickTips.SpeedUpType // TypeDefIndex: 2818
+{
+	// Fields
+	public int value__; // 0x0
+	public const MergeClickTips.SpeedUpType active = 0;
+	public const MergeClickTips.SpeedUpType product = 1;
+	public const MergeClickTips.SpeedUpType timeProduct = 2;
+}
+

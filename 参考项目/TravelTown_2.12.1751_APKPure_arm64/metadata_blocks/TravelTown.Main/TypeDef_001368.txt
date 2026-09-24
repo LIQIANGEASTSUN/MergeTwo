@@ -1,0 +1,28 @@
+// Namespace: MergeEngine.Configuration.Definitions.WeakReferences.Providers
+public class MergeItemProvider : WeakReferenceTargetProvider<IMergeItem, string> // TypeDefIndex: 1368
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x10
+	[Inject]
+	private IJsonService _jsonService; // 0x18
+	[Inject]
+	private IDynamicMergeItemModificationModel _dynamicMergeItemModificationModel; // 0x20
+	[Inject]
+	private IDynamicMergeItemConfigurationModel _dynamicMergeItemConfigurationModel; // 0x28
+
+	// Methods
+
+	// RVA: 0x60051A8 Offset: 0x60011A8 VA: 0x60051A8 Slot: 4
+	protected override IMergeItem ProvideInstance(WeakReference<IMergeItem, string> reference) { }
+
+	// RVA: 0x6005368 Offset: 0x6001368 VA: 0x6005368
+	private IMergeItem GetDynamicMergeItem(IMergeItem originalMergeItem, DynamicMergeItemConfig mergeItemDynamicMergeData) { }
+
+	// RVA: 0x600565C Offset: 0x600165C VA: 0x600565C
+	private IMergeItem CloneMergeItem(IMergeItem originalMergeItem) { }
+
+	// RVA: 0x6004264 Offset: 0x6000264 VA: 0x6004264
+	public void .ctor() { }
+}
+

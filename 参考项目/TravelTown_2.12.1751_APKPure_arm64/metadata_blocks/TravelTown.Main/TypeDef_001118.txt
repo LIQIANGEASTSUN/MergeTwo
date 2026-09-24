@@ -1,0 +1,46 @@
+// Namespace: MergeEngine.ECS.Components.InteractionTracking
+public class LowLevelProduceTrackingData // TypeDefIndex: 1118
+{
+	// Fields
+	[CompilerGenerated]
+	private string <OrderId>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private int <ResourceAmount>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private string <SpawnReason>k__BackingField; // 0x20
+
+	// Properties
+	public string OrderId { get; set; }
+	public int ResourceAmount { get; set; }
+	public string SpawnReason { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6901F64 Offset: 0x68FDF64 VA: 0x6901F64
+	public string get_OrderId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6901F6C Offset: 0x68FDF6C VA: 0x6901F6C
+	public void set_OrderId(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6901F74 Offset: 0x68FDF74 VA: 0x6901F74
+	public int get_ResourceAmount() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6901F7C Offset: 0x68FDF7C VA: 0x6901F7C
+	public void set_ResourceAmount(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6901F84 Offset: 0x68FDF84 VA: 0x6901F84
+	public string get_SpawnReason() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6901F8C Offset: 0x68FDF8C VA: 0x6901F8C
+	public void set_SpawnReason(string value) { }
+
+	// RVA: 0x6901F94 Offset: 0x68FDF94 VA: 0x6901F94
+	public void .ctor() { }
+}
+

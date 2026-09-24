@@ -1,0 +1,265 @@
+// Namespace: Merger.Bubbles.ECS.Systems
+public class BubbledItemSystem : BaseItemSystem<LockedComponent> // TypeDefIndex: 7490
+{
+	// Fields
+	private const double SerializationInterval = 2000;
+	[InjectSystem]
+	private BoardInteractionSystem _boardInteractionSystem; // 0x40
+	[Inject]
+	private IRewardedAdsService _rewardedAdsService; // 0x48
+	[InjectSystem]
+	private LiveOpsEventSystem _liveOpsEventSystem; // 0x50
+	[InjectSystem]
+	private OperationTrackingSystem _operationTrackingSystem; // 0x58
+	[Inject]
+	private IBubbledItemsConfigurationModel _bubbledItemsConfigurationModel; // 0x60
+	[Inject]
+	private IBubbleSaleService _bubbleSaleService; // 0x68
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x70
+	[Inject]
+	private IRandomNumberModel _randomNumberModel; // 0x78
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0x80
+	[Inject]
+	private IEntityManager _entityManager; // 0x88
+	[Inject]
+	private INotificationDataFactory _notificationDataFactory; // 0x90
+	[Inject]
+	private IUserProfileService _userProfileService; // 0x98
+	[Inject]
+	private IVirtualPurchasesService _virtualPurchasesService; // 0xA0
+	[Inject]
+	private IVoucherService _voucherService; // 0xA8
+	[Inject]
+	private IServerTimeService _serverTimeService; // 0xB0
+	[Inject]
+	private ISmarterBubblesProbabilityModel _smarterBubblesProbabilityModel; // 0xB8
+	[Inject]
+	private ISmarterBubblesDataModel _bubblesDataModel; // 0xC0
+	[Inject]
+	private ISmarterBubblesStreakModel _smarterBubblesStreakModel; // 0xC8
+	[Inject]
+	private ISmarterBubblesAnalyticsModel _smarterBubblesAnalyticsModel; // 0xD0
+	[Inject]
+	private IBubbleBlasterInventoryModel _blasterInventoryModel; // 0xD8
+	[Inject]
+	private IBubbleBlasterFeatureModel _blasterFeatureModel; // 0xE0
+	[Inject]
+	private IBubbleBlasterFtueModel _blasterFtueModel; // 0xE8
+	[Inject]
+	private BubbleBlasterFtueBubbleAutoBlastHandler _ftueAutoBlastHandler; // 0xF0
+	[Inject]
+	private IOperationTrackingService _operationTrackingService; // 0xF8
+	private double _secondsToProcess; // 0x100
+	private double _timeSinceLastSerialization; // 0x108
+	private bool _setDirty; // 0x110
+	private BoardSystem _boardSystem; // 0x118
+	private TimeSystem _timeSystem; // 0x120
+	private ResourcesSystem _resourcesSystem; // 0x128
+	private PlayerLevelSystem _playerLevelSystem; // 0x130
+	private PlayerEventLevelSystem _playerEventLevelSystem; // 0x138
+	private BoardItemCountComponent _boardItemCountComponent; // 0x140
+	private WeightedItemList<IMergeItem> _expiredBubblesItemsSpawnList; // 0x148
+	private WeightedItemList<IMergeItem> _compensationForRemovedBubblesItemsSpawnList; // 0x150
+	[CompilerGenerated]
+	private int <MainBoardFreeBubbleBurst>k__BackingField; // 0x158
+	private bool _ftueBubbleSpawnedThisSession; // 0x15C
+	private TutorialSystem _tutorialSystem; // 0x160
+
+	// Properties
+	public int MainBoardFreeBubbleBurst { get; set; }
+	public bool RemoveBubbleEnabled { get; }
+	private bool IsBlasterTutorialCompleted { get; }
+	public override SystemPriorities Priority { get; }
+	private long CurrentServerTimeMS { get; }
+	private bool SmarterBubblesEnabledCore { get; }
+	private bool SmarterBubblesEnabledEvent { get; }
+	private bool BubbleCompensationEnabled { get; }
+	private BoardItemCountComponent BoardItemCountComponent { get; }
+	private BubbledItemsConfig BubbledItemsConfig { get; }
+	private NewBubbledItemsConfig NewBubbledItemsConfig { get; }
+	private List<WeightedItemSpawnable> ExpiredBubbleSpawnedItems { get; }
+	private List<WeightedItemSpawnable> CompensationForRemovedBubblesItemsSpawnList { get; }
+	private SmarterBubblesData BubblesData { get; }
+	public bool SmarterBubblesEnabled { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6582ED4 Offset: 0x657EED4 VA: 0x6582ED4
+	public int get_MainBoardFreeBubbleBurst() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6582EDC Offset: 0x657EEDC VA: 0x6582EDC
+	public void set_MainBoardFreeBubbleBurst(int value) { }
+
+	// RVA: 0x6582EE4 Offset: 0x657EEE4 VA: 0x6582EE4
+	public bool get_RemoveBubbleEnabled() { }
+
+	// RVA: 0x6583040 Offset: 0x657F040 VA: 0x6583040
+	private bool get_IsBlasterTutorialCompleted() { }
+
+	// RVA: 0x65830B8 Offset: 0x657F0B8 VA: 0x65830B8
+	public void BlastBubbleWithBlaster(PositionComponent posComp, int blasterTier) { }
+
+	// RVA: 0x6583EE0 Offset: 0x657FEE0 VA: 0x6583EE0 Slot: 15
+	public override SystemPriorities get_Priority() { }
+
+	// RVA: 0x6583EE8 Offset: 0x657FEE8 VA: 0x6583EE8
+	private long get_CurrentServerTimeMS() { }
+
+	// RVA: 0x6583F88 Offset: 0x657FF88 VA: 0x6583F88
+	private bool get_SmarterBubblesEnabledCore() { }
+
+	// RVA: 0x658402C Offset: 0x658002C VA: 0x658402C
+	private bool get_SmarterBubblesEnabledEvent() { }
+
+	// RVA: 0x65840D0 Offset: 0x65800D0 VA: 0x65840D0
+	private bool get_BubbleCompensationEnabled() { }
+
+	// RVA: 0x6584228 Offset: 0x6580228 VA: 0x6584228
+	private BoardItemCountComponent get_BoardItemCountComponent() { }
+
+	// RVA: 0x65842E0 Offset: 0x65802E0 VA: 0x65842E0
+	private BubbledItemsConfig get_BubbledItemsConfig() { }
+
+	// RVA: 0x6584380 Offset: 0x6580380 VA: 0x6584380
+	private NewBubbledItemsConfig get_NewBubbledItemsConfig() { }
+
+	// RVA: 0x6584424 Offset: 0x6580424 VA: 0x6584424
+	private List<WeightedItemSpawnable> get_ExpiredBubbleSpawnedItems() { }
+
+	// RVA: 0x65844C8 Offset: 0x65804C8 VA: 0x65844C8
+	private List<WeightedItemSpawnable> get_CompensationForRemovedBubblesItemsSpawnList() { }
+
+	// RVA: 0x658456C Offset: 0x658056C VA: 0x658456C
+	private SmarterBubblesData get_BubblesData() { }
+
+	// RVA: 0x6582EE8 Offset: 0x657EEE8 VA: 0x6582EE8
+	private bool IsRemoveBubbleEnabled() { }
+
+	// RVA: 0x6579370 Offset: 0x6575370 VA: 0x6579370
+	public bool get_SmarterBubblesEnabled() { }
+
+	// RVA: 0x658460C Offset: 0x658060C VA: 0x658460C Slot: 6
+	protected override void InitializeSystem() { }
+
+	// RVA: 0x6584F90 Offset: 0x6580F90 VA: 0x6584F90 Slot: 7
+	protected override void DisposeSystem() { }
+
+	// RVA: 0x65852D4 Offset: 0x65812D4 VA: 0x65852D4 Slot: 11
+	protected override void EntityCreated(Entity entity) { }
+
+	// RVA: 0x65852D8 Offset: 0x65812D8 VA: 0x65852D8
+	private void TrySettingBubbleExpirationTime(Entity entity) { }
+
+	// RVA: 0x6584B00 Offset: 0x6580B00 VA: 0x6584B00
+	private void CreateExpiredItemsSpawningList() { }
+
+	// RVA: 0x6585520 Offset: 0x6581520 VA: 0x6585520
+	public bool TryDropBubble(PositionComponent newItem, out Entity bubbledEntity) { }
+
+	// RVA: 0x65863F4 Offset: 0x65823F4 VA: 0x65863F4
+	private bool ShouldDropBubble(IComponentBase newItem, int playerLevel) { }
+
+	// RVA: 0x65866BC Offset: 0x65826BC VA: 0x65866BC
+	private float GetBubbleProbability(IMergeItem item) { }
+
+	// RVA: 0x6585A34 Offset: 0x6581A34 VA: 0x6585A34
+	private Entity DropBubble(PositionComponent newItem, int blasterableTier = 0) { }
+
+	// RVA: 0x6587378 Offset: 0x6583378 VA: 0x6587378
+	private void TrySendingBoardBubbleLimitReachedSignal() { }
+
+	// RVA: 0x6587430 Offset: 0x6583430 VA: 0x6587430 Slot: 17
+	protected override IEnumerable<LockedComponent> OnWillProcessComponents(ReadOnlyCollection<LockedComponent> lockedItems) { }
+
+	// RVA: 0x6587590 Offset: 0x6583590 VA: 0x6587590 Slot: 18
+	protected override void ProcessComponent(LockedComponent bubbled) { }
+
+	// RVA: 0x658767C Offset: 0x658367C VA: 0x658767C
+	private bool CanExpireBubble(LockedComponent bubbled, PositionComponent bubblePosition) { }
+
+	// RVA: 0x6588038 Offset: 0x6584038 VA: 0x6588038
+	public void ToggleBubbleExpireTimer(BoardItemPosition boardItemPosition, bool blocked) { }
+
+	// RVA: 0x6587744 Offset: 0x6583744 VA: 0x6587744
+	private void ExpireBubble(PositionComponent bubbledPosition) { }
+
+	// RVA: 0x6583250 Offset: 0x657F250 VA: 0x6583250
+	private void BurstBubble(TryBurstBubbleSignal tryBurstBubbleSignal, PositionComponent item, IMergeItem mergeItem, BoardItemPosition boardItemPosition, ResourceMultiple burstPrice, bool isBlasterBurst = False) { }
+
+	// RVA: 0x6577884 Offset: 0x6573884 VA: 0x6577884
+	public void TryApplyToAllBubbles() { }
+
+	// RVA: 0x65883F0 Offset: 0x65843F0 VA: 0x65883F0
+	private void TryBurstBubble(TryBurstBubbleSignal tryBurstBubbleSignal) { }
+
+	// RVA: 0x6588A34 Offset: 0x6584A34 VA: 0x6588A34
+	private void TryRemoveBubble(TryRemoveBubbleSignal signal) { }
+
+	// RVA: 0x6588A88 Offset: 0x6584A88 VA: 0x6588A88
+	private void RemoveBubble(PositionComponent bubbledPosition) { }
+
+	// RVA: 0x65890D0 Offset: 0x65850D0 VA: 0x65890D0
+	private void ReportRemoveBubble(PositionComponent bubbledPosition, IMergeItem itemLost, Entity spawnedItem) { }
+
+	// RVA: 0x658957C Offset: 0x658557C VA: 0x658957C
+	public void ReportRemoveBubbleClicked(BoardItemPosition position) { }
+
+	// RVA: 0x65892B4 Offset: 0x65852B4 VA: 0x65892B4
+	private void SetBubbleRemoveAnalytics(PositionComponent bubbledPosition, Entity spawnedItem, BubbleRemoveSignalBase bubbledItemRemovedSignal, LockedComponent locked, IMergeItem itemLost) { }
+
+	// RVA: 0x6586E7C Offset: 0x6582E7C VA: 0x6586E7C
+	private void AddBubbleData(ResourceMultiple burstPrice, Entity bubbledItemEntity) { }
+
+	// RVA: 0x658816C Offset: 0x658416C VA: 0x658816C
+	private void SetBurstBubbleData(Entity bubbledItemEntity) { }
+
+	// RVA: 0x6589924 Offset: 0x6585924 VA: 0x6589924
+	private void OnBoardConfigUpdated() { }
+
+	// RVA: 0x65867F8 Offset: 0x65827F8 VA: 0x65867F8
+	private void TryMarkAsBlasterable(Entity bubbledEntity, IMergeItem mergeItem, out bool abortSpawn, out int blasterTier) { }
+
+	// RVA: 0x6589C6C Offset: 0x6585C6C VA: 0x6589C6C
+	private void OnBlasterSelectionPopupOpened(BubbleBlasterOpenSelectionPopupSignal signal) { }
+
+	// RVA: 0x6589CE4 Offset: 0x6585CE4 VA: 0x6589CE4
+	private void OnBlasterSelectionPopupClosed(BubbleBlasterSelectionPopupClosedSignal signal) { }
+
+	// RVA: 0x6589D58 Offset: 0x6585D58 VA: 0x6589D58
+	private void TryBurstWithBlaster(BubbleBlasterTryBurstWithBlasterSignal signal) { }
+
+	// RVA: 0x658A068 Offset: 0x6586068 VA: 0x658A068
+	private void BoardSwitchedFired() { }
+
+	// RVA: 0x657DF50 Offset: 0x6579F50 VA: 0x657DF50
+	public ResourceMultiple GetBurstPrice(IMergeItem mergeItem) { }
+
+	// RVA: 0x658A06C Offset: 0x658606C VA: 0x658A06C
+	private bool HasFreeBursts() { }
+
+	// RVA: 0x6585970 Offset: 0x6581970 VA: 0x6585970
+	private bool IsOnMainBoard() { }
+
+	// RVA: 0x658A0BC Offset: 0x65860BC VA: 0x658A0BC
+	public bool IsBurstBubbleWithRewardedAdSupported(IMergeItem mergeItem) { }
+
+	// RVA: 0x6586DB0 Offset: 0x6582DB0 VA: 0x6586DB0
+	public bool CanBurstBubbleWithRewardedAd(IMergeItem mergeItem) { }
+
+	// RVA: 0x6588164 Offset: 0x6584164 VA: 0x6588164
+	public RewardedAdPlacementType GetRewardedAdPlacementType() { }
+
+	// RVA: 0x658A19C Offset: 0x658619C VA: 0x658A19C
+	public BubbledItemsConfig GetDefaultBubbledItemsConfig() { }
+
+	// RVA: 0x65880B8 Offset: 0x65840B8 VA: 0x65880B8
+	private void UpdateStreakModel(IMergeGraphItem mergeGraphItem) { }
+
+	// RVA: 0x658A1A0 Offset: 0x65861A0 VA: 0x658A1A0
+	public void .ctor() { }
+}
+

@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardMergeOperationDataCreator.<>c // TypeDefIndex: 25870
+{
+	// Fields
+	public static readonly BoardMergeOperationDataCreator.<>c <>9; // 0x0
+	public static Func<ItemSpawnedResult, bool> <>9__2_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x6A8DAE0 Offset: 0x6A89AE0 VA: 0x6A8DAE0
+	private static void .cctor() { }
+
+	// RVA: 0x6A8DB48 Offset: 0x6A89B48 VA: 0x6A8DB48
+	public void .ctor() { }
+
+	// RVA: 0x6A8DB50 Offset: 0x6A89B50 VA: 0x6A8DB50
+	internal bool <CreateOperationData>b__2_0(ItemSpawnedResult item) { }
+}
+

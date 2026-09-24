@@ -1,0 +1,49 @@
+// Namespace: Framework.Util.BlockingFlags
+public interface IBlockingFlags<TBlockFlag> : IDebugBlockingFlags // TypeDefIndex: 10270
+{
+	// Properties
+	public abstract BindableProperty<bool> Enabled { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract BindableProperty<bool> get_Enabled();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBlockingFlags<__Il2CppFullySharedGenericStructType>.get_Enabled
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void ClearBlockingFlag(TBlockFlag flagToClear);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBlockingFlags<__Il2CppFullySharedGenericStructType>.ClearBlockingFlag
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void RaiseBlockingFlag(TBlockFlag flagToRaise);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBlockingFlags<__Il2CppFullySharedGenericStructType>.RaiseBlockingFlag
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void ClearBlockingFlags(TBlockFlag[] flags);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBlockingFlags<__Il2CppFullySharedGenericStructType>.ClearBlockingFlags
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract bool HasBlockingFlag(TBlockFlag flag);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBlockingFlags<__Il2CppFullySharedGenericStructType>.HasBlockingFlag
+	*/
+}
+

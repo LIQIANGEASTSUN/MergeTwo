@@ -1,0 +1,74 @@
+// Namespace: Merger.Game.Data
+public class QueuedItem // TypeDefIndex: 8495
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly IItem <Item>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private Entity <Entity>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private readonly string <UUIDInBoardQueue>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private readonly string <BoosterUUID>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private readonly long <EnqueueTimestamp>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private string <Reason>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private readonly BoardQueueOrder <BoardQueueOrder>k__BackingField; // 0x40
+
+	// Properties
+	public IItem Item { get; }
+	public Entity Entity { get; set; }
+	public string Id { get; }
+	public string UUIDInBoardQueue { get; }
+	public string BoosterUUID { get; }
+	public long EnqueueTimestamp { get; }
+	public string Reason { get; set; }
+	public BoardQueueOrder BoardQueueOrder { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x667D004 Offset: 0x6679004 VA: 0x667D004
+	public IItem get_Item() { }
+
+	[CompilerGenerated]
+	// RVA: 0x667D00C Offset: 0x667900C VA: 0x667D00C
+	public Entity get_Entity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x667D014 Offset: 0x6679014 VA: 0x667D014
+	public void set_Entity(Entity value) { }
+
+	// RVA: 0x667D01C Offset: 0x667901C VA: 0x667D01C
+	public string get_Id() { }
+
+	[CompilerGenerated]
+	// RVA: 0x667D0BC Offset: 0x66790BC VA: 0x667D0BC
+	public string get_UUIDInBoardQueue() { }
+
+	[CompilerGenerated]
+	// RVA: 0x667D0C4 Offset: 0x66790C4 VA: 0x667D0C4
+	public string get_BoosterUUID() { }
+
+	[CompilerGenerated]
+	// RVA: 0x667D0CC Offset: 0x66790CC VA: 0x667D0CC
+	public long get_EnqueueTimestamp() { }
+
+	[CompilerGenerated]
+	// RVA: 0x667D0D4 Offset: 0x66790D4 VA: 0x667D0D4
+	public string get_Reason() { }
+
+	[CompilerGenerated]
+	// RVA: 0x667D0DC Offset: 0x66790DC VA: 0x667D0DC
+	public void set_Reason(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x667D0E4 Offset: 0x66790E4 VA: 0x667D0E4
+	public BoardQueueOrder get_BoardQueueOrder() { }
+
+	// RVA: 0x667D0EC Offset: 0x66790EC VA: 0x667D0EC
+	public void .ctor(IItem item, long enqueueTimestamp, BoardQueueOrder boardQueueOrder, string uuidInBoardQueue, Entity entityData, string boosterUuid, string reason) { }
+}
+

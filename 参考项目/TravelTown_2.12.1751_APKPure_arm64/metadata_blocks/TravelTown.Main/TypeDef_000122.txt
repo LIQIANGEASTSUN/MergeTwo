@@ -1,0 +1,44 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class WeightedItemUtil.<>c__DisplayClass0_0<TItemData, TItem> // TypeDefIndex: 122
+{
+	// Fields
+	public Func<TItemData, int> getWeightFunc; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F32E9C Offset: 0x3F2EE9C VA: 0x3F32E9C
+	|-WeightedItemUtil.<>c__DisplayClass0_0<object, object>..ctor
+	|
+	|-RVA: 0x3F32F50 Offset: 0x3F2EF50 VA: 0x3F32F50
+	|-WeightedItemUtil.<>c__DisplayClass0_0<WeightedTool, Int32Enum>..ctor
+	|
+	|-RVA: 0x3F32FBC Offset: 0x3F2EFBC VA: 0x3F32FBC
+	|-WeightedItemUtil.<>c__DisplayClass0_0<WeightedToolLevel, int>..ctor
+	|
+	|-RVA: 0x3F3335C Offset: 0x3F2F35C VA: 0x3F3335C
+	|-WeightedItemUtil.<>c__DisplayClass0_0<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal int <GenerateWeightedItemList>b__0(TItemData item1, TItemData item2) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F32EA4 Offset: 0x3F2EEA4 VA: 0x3F32EA4
+	|-WeightedItemUtil.<>c__DisplayClass0_0<object, object>.<GenerateWeightedItemList>b__0
+	|
+	|-RVA: 0x3F32F58 Offset: 0x3F2EF58 VA: 0x3F32F58
+	|-WeightedItemUtil.<>c__DisplayClass0_0<WeightedTool, Int32Enum>.<GenerateWeightedItemList>b__0
+	|
+	|-RVA: 0x3F32FC4 Offset: 0x3F2EFC4 VA: 0x3F32FC4
+	|-WeightedItemUtil.<>c__DisplayClass0_0<WeightedToolLevel, int>.<GenerateWeightedItemList>b__0
+	|
+	|-RVA: 0x3F33364 Offset: 0x3F2F364 VA: 0x3F33364
+	|-WeightedItemUtil.<>c__DisplayClass0_0<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.<GenerateWeightedItemList>b__0
+	*/
+}
+

@@ -1,0 +1,88 @@
+Type: GameLogic.Player.Actions.Basic.DirectorTryToUnpauseMergeBoard
+
+Method: Metaplay.Core.Model.MetaActionResult Execute(GameLogic.Player.PlayerModel player, System.Boolean commit)
+
+Disassembly:
+	0x0371CCA4 CBNZ W8, 0x371CCB0
+	0x0371CCA8 BL 0x239BA64
+	0x0371CCAC LDR X0, [X19]
+	0x0371CCB0 LDR X8, [X0 + 0xB8]
+	0x0371CCB4 LDP X20, X19, [X31 + 0x20]
+	0x0371CCB8 LDR X0, [X8]
+	0x0371CCBC LDP X22, X21, [X31 + 0x10]
+	0x0371CCC0 LDP X30, X23, [X31], #0x30
+	0x0371CCC4 RET
+	0x0371CCC8 BL 0x239BB90
+	0x0371CCCC LDR X0, [X0 + 0x10]
+	0x0371CCD0 RET
+	0x0371CCD4 STR X1, [X0 + 0x10]!
+	0x0371CCD8 B 0x239B888
+	0x0371CCDC LDR X0, [X0 + 0x18]
+	0x0371CCE0 RET
+	0x0371CCE4 STR X1, [X0 + 0x18]!
+	0x0371CCE8 B 0x239B888
+	0x0371CCEC LDR X0, [X0 + 0x20]
+	0x0371CCF0 RET
+	0x0371CCF4 STR X1, [X0 + 0x20]!
+	0x0371CCF8 B 0x239B888
+	0x0371CCFC LDR X0, [X0 + 0x28]
+	0x0371CD00 RET
+	0x0371CD04 STR X1, [X0 + 0x28]!
+	0x0371CD08 B 0x239B888
+	0x0371CD0C MOV X1, X31
+	0x0371CD10 B 0x36C896C
+	0x0371CD14 STP X30, X23, [X31 - 0x30]!
+	0x0371CD18 STP X22, X21, [X31 + 0x10]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move W20, W2
+	006 Move X19, X1
+	007 Move W8, [0x2612762]
+	008 Move TEMP, X8
+	009 And TEMP, TEMP, 1
+	010 Compare TEMP, 1
+	011 JumpIfEqual {16}
+	012 Move X0, [0x1FBE7E0]
+	013 Call 0x239F8E4
+	014 Move W8, 1
+	015 Move [X21+1890], W8
+	016 Move TEMP, X20
+	017 And TEMP, TEMP, 1
+	018 Compare TEMP, 1
+	019 Invalid "Jump target not found in method."
+	020 Compare X19, 0
+	021 JumpIfEqual {39}
+	022 Move X0, [X19+576]
+	023 Move X1, X31
+	024 Call MasterFunctions.UnpauseAllBoardItems, X0
+	025 Move X19, [0x1FBE7E0]
+	026 Move X0, [X19]
+	027 Move W8, [X0+228]
+	028 Compare W8, 0
+	029 JumpIfNotEqual {32}
+	030 Call 0x239FA64
+	031 Move X0, [X19]
+	032 Move X8, [X0+184]
+	033 Move X20, [X31+16]
+	034 Move X19, [X31+24]
+	035 Move X0, [X8]
+	036 Move X30, [X31+32]
+	037 Move X21, [X31+40]
+	038 Return X0
+	039 Call 0x239FB90
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0371CD1C STP X20, X19, [X31 + 0x20]
+	0x0371CD20 MOV X22, X1
+
+ISIL:
+	001 Move X1, X31
+	002 Call PlayerAction..ctor, X0
+	003 Return 
+

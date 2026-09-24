@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class KiteEventBoardConfig.<>c // TypeDefIndex: 5382
+{
+	// Fields
+	public static readonly KiteEventBoardConfig.<>c <>9; // 0x0
+	public static Predicate<EventBoardConfigItem> <>9__1_0; // 0x4
+	public static Predicate<EventBoardConfigItem> <>9__2_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x1EB2888 Offset: 0x1EB2888 VA: 0x1EB2888
+	private static void .cctor() { }
+
+	// RVA: 0x1EB28FC Offset: 0x1EB28FC VA: 0x1EB28FC
+	public void .ctor() { }
+
+	// RVA: 0x1EB2904 Offset: 0x1EB2904 VA: 0x1EB2904
+	internal bool <GetProgressiveConfigModels>b__1_0(EventBoardConfigItem item) { }
+
+	// RVA: 0x1EB2928 Offset: 0x1EB2928 VA: 0x1EB2928
+	internal bool <GetBalanceSpawnerConfigModels>b__2_0(EventBoardConfigItem item) { }
+}
+

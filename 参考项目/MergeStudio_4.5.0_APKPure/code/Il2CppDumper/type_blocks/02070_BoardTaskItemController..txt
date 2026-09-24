@@ -1,0 +1,20 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardTaskItemController.<>c__DisplayClass113_0 // TypeDefIndex: 2070
+{
+	// Fields
+	public BoardTaskItemController <>4__this; // 0x8
+	public Action<bool> callback; // 0xC
+
+	// Methods
+
+	// RVA: 0x1974238 Offset: 0x1974238 VA: 0x1974238
+	public void .ctor() { }
+
+	// RVA: 0x19753BC Offset: 0x19753BC VA: 0x19753BC
+	internal void <SetCharAnim>b__0(bool result) { }
+
+	// RVA: 0x19754C4 Offset: 0x19754C4 VA: 0x19754C4
+	internal void <SetCharAnim>b__1(bool result) { }
+}
+

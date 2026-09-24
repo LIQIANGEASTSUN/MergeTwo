@@ -1,0 +1,20 @@
+// Namespace: 
+[CompilerGenerated]
+private struct BoardController.<StopBoard>d__150 : IAsyncStateMachine // TypeDefIndex: 1905
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncUniTaskVoidMethodBuilder <>t__builder; // 0x4
+	public BoardController <>4__this; // 0x8
+	private YieldAwaitable.Awaiter <>u__1; // 0xC
+
+	// Methods
+
+	// RVA: 0x1926554 Offset: 0x1926554 VA: 0x1926554 Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x1926774 Offset: 0x1926774 VA: 0x1926774 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

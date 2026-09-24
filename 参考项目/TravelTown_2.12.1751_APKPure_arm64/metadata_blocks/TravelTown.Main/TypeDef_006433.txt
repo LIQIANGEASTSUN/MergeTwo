@@ -1,0 +1,91 @@
+// Namespace: Merger.RemoteLiveOps.Data.EventData
+public class RemoteLiveOpData : RemoteEventData // TypeDefIndex: 6433
+{
+	// Fields
+	[CompilerGenerated]
+	private string <eventId>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private readonly RemoteEventType <Type>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private string <ConfigurationName>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private RemoteLiveOpEventTheme <Theme>k__BackingField; // 0x48
+	[CompilerGenerated]
+	private bool <ForceEnrollment>k__BackingField; // 0x50
+	[CompilerGenerated]
+	private LiveOpsEventAnalyticsData <Analytics>k__BackingField; // 0x58
+	[JsonProperty("dynamicWidgetPlacementsHolder")]
+	public Dictionary<DynamicWidgetSlotHostType, int> DynamicWidgetSlotKeys; // 0x60
+
+	// Properties
+	public bool HasTheme { get; }
+	[JsonProperty("eventId")]
+	public string eventId { get; set; }
+	[JsonProperty("eventType")]
+	[PolymorphicProperty]
+	public virtual RemoteEventType Type { get; }
+	[JsonProperty("configurationName")]
+	public string ConfigurationName { get; set; }
+	[JsonProperty("theme")]
+	public RemoteLiveOpEventTheme Theme { get; set; }
+	[JsonProperty("forceEnrollment")]
+	public bool ForceEnrollment { get; set; }
+	[JsonProperty("analytics")]
+	public LiveOpsEventAnalyticsData Analytics { get; set; }
+
+	// Methods
+
+	// RVA: 0x6465EF4 Offset: 0x6461EF4 VA: 0x6465EF4
+	public bool get_HasTheme() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6465F04 Offset: 0x6461F04 VA: 0x6465F04
+	public string get_eventId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6465F0C Offset: 0x6461F0C VA: 0x6465F0C
+	private void set_eventId(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6465F14 Offset: 0x6461F14 VA: 0x6465F14 Slot: 5
+	public virtual RemoteEventType get_Type() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6465F1C Offset: 0x6461F1C VA: 0x6465F1C
+	public string get_ConfigurationName() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6465F24 Offset: 0x6461F24 VA: 0x6465F24
+	public void set_ConfigurationName(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6465F2C Offset: 0x6461F2C VA: 0x6465F2C
+	public RemoteLiveOpEventTheme get_Theme() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6465F34 Offset: 0x6461F34 VA: 0x6465F34
+	public void set_Theme(RemoteLiveOpEventTheme value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6465F3C Offset: 0x6461F3C VA: 0x6465F3C
+	public bool get_ForceEnrollment() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6465F44 Offset: 0x6461F44 VA: 0x6465F44
+	public void set_ForceEnrollment(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6465F50 Offset: 0x6461F50 VA: 0x6465F50
+	public LiveOpsEventAnalyticsData get_Analytics() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6465F58 Offset: 0x6461F58 VA: 0x6465F58
+	private void set_Analytics(LiveOpsEventAnalyticsData value) { }
+
+	// RVA: 0x6465F60 Offset: 0x6461F60 VA: 0x6465F60
+	public void .ctor() { }
+
+	// RVA: 0x6465F78 Offset: 0x6461F78 VA: 0x6465F78
+	public void .ctor(RemoteFeatureStatus status, long startDate, long endDate) { }
+}
+

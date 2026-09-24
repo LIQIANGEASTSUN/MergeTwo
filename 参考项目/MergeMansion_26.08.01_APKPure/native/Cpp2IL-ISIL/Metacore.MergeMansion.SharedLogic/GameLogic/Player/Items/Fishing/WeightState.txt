@@ -1,0 +1,114 @@
+Type: GameLogic.Player.Items.Fishing.WeightState
+
+Method: Metaplay.Core.Math.F32 get_Weight()
+
+Disassembly:
+	0x0362F428 CMP X11, X1
+	0x0362F42C B.EQ 0x362F44C
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_Weight(Metaplay.Core.Math.F32 value)
+
+Disassembly:
+	0x0362F430 SUBS X9, X9, 0x1
+	0x0362F434 ADD X10, X10, 0x10
+
+ISIL:
+	001 Move [X0+16], W1
+	002 Return 
+
+Method: GameLogic.Player.Items.Fishing.WeightCategory get_WeightCategory()
+
+Disassembly:
+	0x0362F438 B.NE 0x362F424
+	0x0362F43C MOV X0, X21
+
+ISIL:
+	001 Move W0, [X0+20]
+	002 Return X0
+
+Method: System.Void set_WeightCategory(GameLogic.Player.Items.Fishing.WeightCategory value)
+
+Disassembly:
+	0x0362F440 MOVZ W2, 0x5
+	0x0362F444 BL 0x23D527C
+
+ISIL:
+	001 Move [X0+20], W1
+	002 Return 
+
+Method: System.Int32 get_RodUsed()
+
+Disassembly:
+	0x0362F448 B 0x362F45C
+	0x0362F44C LDR W9, [X10]
+
+ISIL:
+	001 Move W0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_RodUsed(System.Int32 value)
+
+Disassembly:
+	0x0362F450 ADD W9, W9, 0x5
+	0x0362F454 ADD X8, X8, W9, 0x4, SXTW
+
+ISIL:
+	001 Move [X0+24], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0362F458 ADD X0, X8, 0x138
+	0x0362F45C LDP X8, X1, [X0]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(Metaplay.Core.Math.F32 weight, GameLogic.Player.Items.Fishing.WeightCategory weightCategory, System.Int32 rodUsed)
+
+Disassembly:
+	0x0362F460 MOV X0, X21
+	0x0362F464 BLR X8
+	0x0362F468 LDR X8, [X19]
+	0x0362F46C LDR X1, [X24]
+	0x0362F470 MOV X23, X0
+	0x0362F474 LDRH W9, [X8 + 0x12E]
+	0x0362F478 CBZ X9, 0x362F49C
+	0x0362F47C LDR X10, [X8 + 0xB0]
+	0x0362F480 ADD X10, X10, 0x8
+	0x0362F484 LDUR X11, [X10 - 0x8]
+	0x0362F488 CMP X11, X1
+	0x0362F48C B.EQ 0x362F4AC
+	0x0362F490 SUBS X9, X9, 0x1
+	0x0362F494 ADD X10, X10, 0x10
+	0x0362F498 B.NE 0x362F484
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31+16], X22
+	003 Move [X31+24], X21
+	004 Move [X31+32], X20
+	005 Move [X31+40], X19
+	006 Move X21, X1
+	007 Move X1, X31
+	008 Move W19, W3
+	009 Move W20, W2
+	010 Move X22, X0
+	011 Call Object..ctor, X0
+	012 Move [X22+16], W21
+	013 Move [X22+20], W20
+	014 Move [X22+24], W19
+	015 Move X20, [X31+32]
+	016 Move X19, [X31+40]
+	017 Move X22, [X31+16]
+	018 Move X21, [X31+24]
+	019 Move X30, [X31+48]
+	020 Return 
+

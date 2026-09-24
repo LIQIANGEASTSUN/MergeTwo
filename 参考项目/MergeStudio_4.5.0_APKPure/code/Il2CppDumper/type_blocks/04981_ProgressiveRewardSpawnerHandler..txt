@@ -1,0 +1,22 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ProgressiveRewardSpawnerHandler.<>c__DisplayClass2_0 // TypeDefIndex: 4981
+{
+	// Fields
+	public List<int> boardItemSetIDList; // 0x8
+
+	// Methods
+
+	// RVA: 0x1E060A4 Offset: 0x1E060A4 VA: 0x1E060A4
+	public void .ctor() { }
+
+	// RVA: 0x1E06B44 Offset: 0x1E06B44 VA: 0x1E06B44
+	internal bool <DestroyBoardItems>b__0(RewardEntity entity) { }
+
+	// RVA: 0x1E06BC0 Offset: 0x1E06BC0 VA: 0x1E06BC0
+	internal bool <DestroyBoardItems>b__1(ItemEntity entity) { }
+
+	// RVA: 0x1E06C3C Offset: 0x1E06C3C VA: 0x1E06C3C
+	internal bool <DestroyBoardItems>b__2(BoardPositionEntity entity) { }
+}
+

@@ -1,0 +1,36 @@
+// Namespace: Merger.Game.Command
+public abstract class UpdateBoardResourcesStateCommandBase<T> : CommandBase<T> // TypeDefIndex: 8555
+{
+	// Fields
+	[Inject]
+	private IRemoteServerStateUpdaterService _remoteServerStateUpdaterService; // 0x0
+	[Inject]
+	private ISystemManager _systemManager; // 0x0
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public override void Execute(T signal) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x46C26E4 Offset: 0x46BE6E4 VA: 0x46C26E4
+	|-UpdateBoardResourcesStateCommandBase<object>.Execute
+	|
+	|-RVA: 0x46C28FC Offset: 0x46BE8FC VA: 0x46C28FC
+	|-UpdateBoardResourcesStateCommandBase<__Il2CppFullySharedGenericType>.Execute
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x46C28EC Offset: 0x46BE8EC VA: 0x46C28EC
+	|-UpdateBoardResourcesStateCommandBase<object>..ctor
+	|
+	|-RVA: 0x46C2B04 Offset: 0x46BEB04 VA: 0x46C2B04
+	|-UpdateBoardResourcesStateCommandBase<__Il2CppFullySharedGenericType>..ctor
+	*/
+}
+

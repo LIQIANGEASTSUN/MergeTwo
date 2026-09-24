@@ -1,0 +1,110 @@
+Type: Code.GameLogic.Player.Board.CustomMergeBoardsState
+
+Method: System.Collections.Generic.SortedDictionary`2<Merge.MergeBoardId, GameLogic.Player.Board.MergeBoard> get_MergeBoards()
+
+Disassembly:
+	0x037AE9EC ADRP X24, 0x1F28000
+	0x037AE9F0 MOV X0, X22
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_MergeBoards(System.Collections.Generic.SortedDictionary`2<Merge.MergeBoardId, GameLogic.Player.Board.MergeBoard> value)
+
+Disassembly:
+	0x037AE9F4 MOV X1, X23
+	0x037AE9F8 LDR X24, [X24 + 0x7E0]
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Collections.Generic.IReadOnlyDictionary`2<Merge.MergeBoardId, GameLogic.Player.Board.MergeBoard> Code.GameLogic.Player.Board.ICustomMergeBoardsState.get_MergeBoards()
+
+Disassembly:
+	0x037AE9FC LDR X2, [X27]
+	0x037AEA00 BL 0x27FF710
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x037AEA04 TBZ X0, 0x0, 0x37AEB00
+	0x037AEA08 LDR X0, [X25]
+	0x037AEA0C LDR X22, [X19 + 0x10]
+	0x037AEA10 LDR W8, [X0 + 0xE4]
+	0x037AEA14 CBNZ W8, 0x37AEA20
+	0x037AEA18 BL 0x239BA64
+	0x037AEA1C LDR X0, [X25]
+	0x037AEA20 LDR X8, [X26]
+	0x037AEA24 LDR X9, [X0 + 0xB8]
+	0x037AEA28 LDR W10, [X8 + 0xE4]
+	0x037AEA2C LDR X23, [X9 + 0x650]
+	0x037AEA30 CBNZ W10, 0x37AEA3C
+	0x037AEA34 MOV X0, X8
+	0x037AEA38 BL 0x239BA64
+	0x037AEA3C LDR X2, [X27]
+	0x037AEA40 MOV X0, X22
+	0x037AEA44 MOV X1, X23
+	0x037AEA48 BL 0x27FF710
+	0x037AEA4C TBZ X0, 0x0, 0x37AEB00
+	0x037AEA50 LDR X0, [X25]
+	0x037AEA54 LDR X22, [X19 + 0x10]
+	0x037AEA58 LDR W8, [X0 + 0xE4]
+	0x037AEA5C CBNZ W8, 0x37AEA68
+	0x037AEA60 BL 0x239BA64
+	0x037AEA64 LDR X0, [X25]
+	0x037AEA68 LDR X8, [X26]
+	0x037AEA6C LDR X9, [X0 + 0xB8]
+	0x037AEA70 LDR W10, [X8 + 0xE4]
+	0x037AEA74 LDR X23, [X9 + 0x640]
+	0x037AEA78 CBNZ W10, 0x37AEA84
+	0x037AEA7C MOV X0, X8
+	0x037AEA80 BL 0x239BA64
+	0x037AEA84 LDR X2, [X27]
+	0x037AEA88 MOV X0, X22
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31+16], X22
+	003 Move [X31+24], X21
+	004 Move [X31+32], X20
+	005 Move [X31+40], X19
+	006 Move W8, [0x2580C9B]
+	007 Move X22, [0x1F907A8]
+	008 Move X20, [0x1F907B0]
+	009 Move X19, X0
+	010 Move TEMP, X8
+	011 And TEMP, TEMP, 1
+	012 Compare TEMP, 1
+	013 JumpIfEqual {20}
+	014 Move X0, [0x1F907B0]
+	015 Call 0x239F8E4
+	016 Move X0, [0x1F907A8]
+	017 Call 0x239F8E4
+	018 Move W8, 1
+	019 Move [X21+3227], W8
+	020 Move X0, [X22]
+	021 Call 0x239FB80
+	022 Move X1, [X20]
+	023 Move X20, X0
+	024 Call 0x27EB6A8, X0
+	025 Move X0, X19
+	026 Move X1, X20
+	027 Move [X0+16], X20
+	028 Call 0x239F888
+	029 Move X0, X19
+	030 Move X20, [X31+32]
+	031 Move X19, [X31+40]
+	032 Move X22, [X31+16]
+	033 Move X21, [X31+24]
+	034 Move X1, X31
+	035 Move X30, [X31+48]
+	036 Call Object..ctor, X0
+	037 Return 
+

@@ -1,0 +1,10 @@
+// Namespace: 
+public struct BoardEvent.AutoSpawnerSpawn : IEvent // TypeDefIndex: 1806
+{
+	// Fields
+	public ItemController Spawner; // 0x0
+	public int ItemCountToSpawn; // 0x4
+	public BoardItemAutoSpawner AutoSpawnerData; // 0x8
+	public bool NotAnimated; // 0xC
+}
+

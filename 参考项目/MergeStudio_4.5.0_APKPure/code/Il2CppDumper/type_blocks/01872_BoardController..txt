@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardController.<>c__DisplayClass179_0 // TypeDefIndex: 1872
+{
+	// Fields
+	public ItemEntity itemEntity; // 0x8
+
+	// Methods
+
+	// RVA: 0x19188E0 Offset: 0x19188E0 VA: 0x19188E0
+	public void .ctor() { }
+
+	// RVA: 0x19188E8 Offset: 0x19188E8 VA: 0x19188E8
+	internal bool <FindSameItem>b__0(BoardPositionEntity otherItem) { }
+}
+

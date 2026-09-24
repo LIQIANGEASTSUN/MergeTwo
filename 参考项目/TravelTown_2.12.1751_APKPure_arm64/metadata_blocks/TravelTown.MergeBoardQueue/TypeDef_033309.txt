@@ -1,0 +1,48 @@
+// Namespace: Merger.MergeBoardQueue.Data
+public class QueuedItem // TypeDefIndex: 33309
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly IItem <Item>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly ItemPayloadBase <RestoredItemPayload>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private readonly string <UUIDInBoardQueue>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private readonly long <EnqueueTimestamp>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private readonly BoardQueueOrder <BoardQueueOrder>k__BackingField; // 0x30
+
+	// Properties
+	public IItem Item { get; }
+	public ItemPayloadBase RestoredItemPayload { get; }
+	public string UUIDInBoardQueue { get; }
+	public long EnqueueTimestamp { get; }
+	public BoardQueueOrder BoardQueueOrder { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A5BA5C Offset: 0x6A57A5C VA: 0x6A5BA5C
+	public IItem get_Item() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A5BA64 Offset: 0x6A57A64 VA: 0x6A5BA64
+	public ItemPayloadBase get_RestoredItemPayload() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A5BA6C Offset: 0x6A57A6C VA: 0x6A5BA6C
+	public string get_UUIDInBoardQueue() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A5BA74 Offset: 0x6A57A74 VA: 0x6A5BA74
+	public long get_EnqueueTimestamp() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A5BA7C Offset: 0x6A57A7C VA: 0x6A5BA7C
+	public BoardQueueOrder get_BoardQueueOrder() { }
+
+	// RVA: 0x6A59160 Offset: 0x6A55160 VA: 0x6A59160
+	public void .ctor(IItem item, long enqueueTimestamp, BoardQueueOrder boardQueueOrder, string uuidInBoardQueue, ItemPayloadBase itemPayload) { }
+}
+

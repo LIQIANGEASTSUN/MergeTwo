@@ -1,0 +1,15 @@
+// Namespace: Merger.Bubbles.Model
+public interface ISmarterBubblesDataModel // TypeDefIndex: 7480
+{
+	// Properties
+	public abstract SmarterBubblesData SmarterBubblesData { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract SmarterBubblesData get_SmarterBubblesData();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void Save();
+}
+

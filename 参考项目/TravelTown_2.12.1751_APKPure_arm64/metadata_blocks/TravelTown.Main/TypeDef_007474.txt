@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class RareChainsBubbleDropProbabilityModifier.<>c__DisplayClass7_0 // TypeDefIndex: 7474
+{
+	// Fields
+	public IMergeItem mergeItem; // 0x10
+
+	// Methods
+
+	// RVA: 0x658178C Offset: 0x657D78C VA: 0x658178C
+	public void .ctor() { }
+
+	// RVA: 0x658179C Offset: 0x657D79C VA: 0x658179C
+	internal bool <TryModifyProbability>b__0(SmarterBubblesRareChainConfig r) { }
+}
+

@@ -1,0 +1,23 @@
+// Namespace: MergeEngine.ECS.Systems.State.Board.Event
+public class EventFreeVouchersStateSystem : StateSystemBase<EventBoardFreeVouchers> // TypeDefIndex: 788
+{
+	// Fields
+	[Inject]
+	private ISystemManager _systemManager; // 0x48
+	private LiveOpsEventSystem _liveOpsEventSystem; // 0x50
+
+	// Methods
+
+	// RVA: 0x64EB84C Offset: 0x64E784C VA: 0x64EB84C Slot: 6
+	protected override void InitializeSystem() { }
+
+	// RVA: 0x64EB93C Offset: 0x64E793C VA: 0x64EB93C Slot: 13
+	protected override void LoadState(EventBoardFreeVouchers newState) { }
+
+	// RVA: 0x64EBC58 Offset: 0x64E7C58 VA: 0x64EBC58
+	private void UpdateFreeBurst(int value, LiveOpsEventProgress progress) { }
+
+	// RVA: 0x64EBC70 Offset: 0x64E7C70 VA: 0x64EBC70
+	public void .ctor() { }
+}
+

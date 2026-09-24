@@ -1,0 +1,310 @@
+Type: GameLogic.Player.MergeTasks.MergeTaskExtensions+<ComingSoonTasks>d__18
+
+Method: System.Void .ctor(System.Int32 <>1__state)
+
+Disassembly:
+	0x035AC318 B.EQ 0x35AC344
+	0x035AC31C SUBS X9, X9, 0x1
+	0x035AC320 ADD X10, X10, 0x10
+	0x035AC324 B.NE 0x35AC310
+	0x035AC328 MOV X0, X19
+	0x035AC32C MOV W2, W31
+	0x035AC330 BL 0x23D527C
+	0x035AC334 B 0x35AC350
+	0x035AC338 LDP X20, X19, [X31 + 0x10]
+	0x035AC33C LDR X30, [X31], #0x20
+	0x035AC340 RET
+	0x035AC344 LDRSW X9, [X10]
+	0x035AC348 ADD X8, X8, X9, 0x4, LSL
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move W19, W1
+	005 Move X1, X31
+	006 Move X20, X0
+	007 Call Object..ctor, X0
+	008 Move X0, X31
+	009 Move [X20+16], W19
+	010 Call Environment.get_CurrentManagedThreadId
+	011 Move [X20+32], W0
+	012 Move X20, [X31+16]
+	013 Move X19, [X31+24]
+	014 Move X30, [X31+32]
+	015 Return 
+
+Method: System.Void System.IDisposable.Dispose()
+
+Disassembly:
+	0x035AFBD4 BL 0x23D527C
+
+ISIL:
+	001 Return 
+
+Method: System.Boolean MoveNext()
+
+Disassembly:
+	0x035AFBD8 B 0x35AFC58
+	0x035AFBDC BL 0x35B0DF4
+	0x035AFBE0 LDR X0, [X31 + 0x18]
+	0x035AFBE4 STR X31, [X0 + 0x38]!
+	0x035AFBE8 MOV X1, X31
+	0x035AFBEC BL 0x239B888
+	0x035AFBF0 LDR X8, [X31 + 0x18]
+	0x035AFBF4 LDR X0, [X8 + 0x28]
+	0x035AFBF8 BL 0x35A7714
+	0x035AFBFC MOV X19, X0
+	0x035AFC00 CBZ X0, 0x35B04EC
+	0x035AFC04 ADRP X10, 0x2138000
+	0x035AFC08 LDR X8, [X19]
+	0x035AFC0C LDR X10, [X10 + 0x2B0]
+	0x035AFC10 LDRH W9, [X8 + 0x12E]
+	0x035AFC14 LDR X1, [X10]
+	0x035AFC18 CBZ X9, 0x35AFC3C
+	0x035AFC1C LDR X10, [X8 + 0xB0]
+	0x035AFC20 ADD X10, X10, 0x8
+	0x035AFC24 LDUR X11, [X10 - 0x8]
+	0x035AFC28 CMP X11, X1
+	0x035AFC2C B.EQ 0x35AFC7C
+	0x035AFC30 SUBS X9, X9, 0x1
+	0x035AFC34 ADD X10, X10, 0x10
+	0x035AFC38 B.NE 0x35AFC24
+	0x035AFC3C MOV X0, X19
+	0x035AFC40 MOV W2, W31
+	0x035AFC44 BL 0x23D527C
+	0x035AFC48 B 0x35AFC88
+	0x035AFC4C LDRSW X9, [X10]
+	0x035AFC50 ADD X8, X8, X9, 0x4, LSL
+	0x035AFC54 ADD X0, X8, 0x138
+	0x035AFC58 LDP X8, X1, [X0]
+	0x035AFC5C MOV X0, X19
+	0x035AFC60 BLR X8
+	0x035AFC64 MOV X1, X0
+	0x035AFC68 LDR X0, [X31 + 0x18]
+	0x035AFC6C STR X1, [X0 + 0x18]!
+	0x035AFC70 BL 0x239B888
+	0x035AFC74 MOVZ W8, 0xB
+	0x035AFC78 B 0x35B041C
+	0x035AFC7C LDRSW X9, [X10]
+	0x035AFC80 ADD X8, X8, X9, 0x4, LSL
+	0x035AFC84 ADD X0, X8, 0x138
+	0x035AFC88 LDP X8, X1, [X0]
+	0x035AFC8C MOV X0, X19
+	0x035AFC90 BLR X8
+	0x035AFC94 MOV X1, X0
+	0x035AFC98 LDR X0, [X31 + 0x18]
+	0x035AFC9C STR X1, [X0 + 0x38]!
+	0x035AFCA0 BL 0x239B888
+	0x035AFCA4 LDR X19, [X31 + 0x18]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move X19, X0
+	006 Move W8, [0x277E902]
+	007 Move TEMP, X8
+	008 And TEMP, TEMP, 1
+	009 Compare TEMP, 1
+	010 JumpIfEqual {17}
+	011 Move X0, [0x21420D8]
+	012 Call 0x239F8E4
+	013 Move X0, [0x2185758]
+	014 Call 0x239F8E4
+	015 Move W8, 1
+	016 Move [X20+2306], W8
+	017 Move W8, [X19+16]
+	018 Move W0, W31
+	019 NotImplemented "Instruction CMP not yet implemented."
+	020 Compare W8, 0
+	021 JumpIfNotEqual {55}
+	022 Move X0, [X19+40]
+	023 Move TEMP, 0
+	024 Not TEMP
+	025 Move W8, TEMP
+	026 Move [X19+16], W8
+	027 Call MergeTaskExtensions.ShouldDisplayComingSoonTask, X0
+	028 Move TEMP, X0
+	029 And TEMP, TEMP, 1
+	030 Compare TEMP, 1
+	031 JumpIfNotEqual {54}
+	032 Move X8, [0x21420D8]
+	033 Move X0, [X8]
+	034 Call 0x239FB80
+	035 Move X1, X31
+	036 Move X21, X0
+	037 Move X8, [0x2185758]
+	038 Move X20, [X8]
+	039 Call Object..ctor, X0
+	040 Move X0, X21
+	041 Move X1, X20
+	042 Move [X0+16], X20
+	043 Call 0x239F888
+	044 Move X0, X19
+	045 Move X1, X21
+	046 Move [X0+24], X21
+	047 Call 0x239F888
+	048 Move W8, 1
+	049 Move W0, 1
+	050 Move TEMP, 0
+	051 Not TEMP
+	052 Move W8, TEMP
+	053 Move [X19+16], W8
+	054 Move W0, W31
+	055 Move X20, [X31+16]
+	056 Move X19, [X31+24]
+	057 Move X30, [X31+32]
+	058 Move X21, [X31+40]
+	059 Return X0
+
+Method: GameLogic.Player.MergeTasks.MergeTask System.Collections.Generic.IEnumerator<GameLogic.Player.MergeTasks.MergeTask>.get_Current()
+
+Disassembly:
+	0x035AFCA8 LDR X20, [X19 + 0x38]
+	0x035AFCAC MOVN W8, 0xD
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void System.Collections.IEnumerator.Reset()
+
+Disassembly:
+	0x035AFCB0 STR W8, [X19 + 0x10]
+	0x035AFCB4 CBZ X20, 0x35B046C
+	0x035AFCB8 ADRP X10, 0x211E000
+	0x035AFCBC LDR X8, [X20]
+	0x035AFCC0 LDR X10, [X10 + 0x310]
+	0x035AFCC4 LDRH W9, [X8 + 0x12E]
+	0x035AFCC8 LDR X1, [X10]
+	0x035AFCCC CBZ X9, 0x35AFCF0
+	0x035AFCD0 LDR X10, [X8 + 0xB0]
+	0x035AFCD4 ADD X10, X10, 0x8
+	0x035AFCD8 LDUR X11, [X10 - 0x8]
+	0x035AFCDC CMP X11, X1
+	0x035AFCE0 B.EQ 0x35AFD00
+	0x035AFCE4 SUBS X9, X9, 0x1
+
+ISIL:
+	001 Move [X31-16], X30
+	002 Move [X31-8], X19
+	003 Move X0, [0x21230E8]
+	004 Call 0x239F8F8
+	005 Call 0x239FB80
+	006 Move X1, X31
+	007 Move X19, X0
+	008 Call NotSupportedException..ctor, X0
+	009 Move X0, [0x2185760]
+	010 Call 0x239F8F8
+	011 Move X1, X0
+	012 Move X0, X19
+	013 Call 0x239FA54
+
+Method: System.Object System.Collections.IEnumerator.get_Current()
+
+Disassembly:
+	0x035AFCE8 ADD X10, X10, 0x10
+	0x035AFCEC B.NE 0x35AFCD8
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Collections.Generic.IEnumerator`1<GameLogic.Player.MergeTasks.MergeTask> System.Collections.Generic.IEnumerable<GameLogic.Player.MergeTasks.MergeTask>.GetEnumerator()
+
+Disassembly:
+	0x035AFCF0 MOV X0, X20
+	0x035AFCF4 MOV W2, W31
+	0x035AFCF8 BL 0x23D527C
+	0x035AFCFC B 0x35AFD0C
+	0x035AFD00 LDRSW X9, [X10]
+	0x035AFD04 ADD X8, X8, X9, 0x4, LSL
+	0x035AFD08 ADD X0, X8, 0x138
+	0x035AFD0C LDP X8, X1, [X0]
+	0x035AFD10 MOV X0, X20
+	0x035AFD14 BLR X8
+	0x035AFD18 MOV W8, W0
+	0x035AFD1C LDR X0, [X31 + 0x18]
+	0x035AFD20 TBZ X8, 0x0, 0x35AFD74
+	0x035AFD24 LDR X19, [X0 + 0x38]
+	0x035AFD28 CBZ X19, 0x35B04B8
+	0x035AFD2C ADRP X10, 0x2138000
+	0x035AFD30 LDR X8, [X19]
+	0x035AFD34 LDR X10, [X10 + 0x2B8]
+	0x035AFD38 LDRH W9, [X8 + 0x12E]
+	0x035AFD3C LDR X1, [X10]
+	0x035AFD40 CBZ X9, 0x35AFD64
+	0x035AFD44 LDR X10, [X8 + 0xB0]
+	0x035AFD48 ADD X10, X10, 0x8
+	0x035AFD4C LDUR X11, [X10 - 0x8]
+	0x035AFD50 CMP X11, X1
+	0x035AFD54 B.EQ 0x35AFDE4
+	0x035AFD58 SUBS X9, X9, 0x1
+	0x035AFD5C ADD X10, X10, 0x10
+	0x035AFD60 B.NE 0x35AFD4C
+	0x035AFD64 MOV X0, X19
+	0x035AFD68 MOV W2, W31
+	0x035AFD6C BL 0x23D527C
+	0x035AFD70 B 0x35AFDF0
+	0x035AFD74 BL 0x35B0EA4
+	0x035AFD78 LDR X0, [X31 + 0x18]
+	0x035AFD7C STR X31, [X0 + 0x38]!
+	0x035AFD80 MOV X1, X31
+	0x035AFD84 BL 0x239B888
+	0x035AFD88 LDR X8, [X31 + 0x18]
+	0x035AFD8C LDR X0, [X8 + 0x28]
+	0x035AFD90 BL 0x35A7590
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move X19, X0
+	005 Move W8, [0x277E903]
+	006 Move TEMP, X8
+	007 And TEMP, TEMP, 1
+	008 Compare TEMP, 1
+	009 JumpIfEqual {14}
+	010 Move X0, [0x21855D0]
+	011 Call 0x239F8E4
+	012 Move W8, 1
+	013 Move [X20+2307], W8
+	014 Move W8, [X19+16]
+	015 Add W31, W8, 2
+	016 Move W20, [X19+32]
+	017 Move X0, X31
+	018 Call Environment.get_CurrentManagedThreadId
+	019 NotImplemented "Instruction CMP not yet implemented."
+	020 Move [X19+16], W31
+	021 Move X20, X19
+	022 Move X8, [0x21855D0]
+	023 Move X0, [X8]
+	024 Call 0x239FB80
+	025 Move X1, X31
+	026 Move X20, X0
+	027 Call Object..ctor, X0
+	028 Move X0, X31
+	029 Move [X20+16], W31
+	030 Call Environment.get_CurrentManagedThreadId
+	031 Move [X20+32], W0
+	032 Move X1, [X19+48]
+	033 Move X0, X20
+	034 Move [X0+40], X1
+	035 Call 0x239F888
+	036 Move X0, X20
+	037 Move X20, [X31+16]
+	038 Move X19, [X31+24]
+	039 Move X30, [X31+32]
+	040 Return X0
+
+Method: System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+
+Disassembly:
+	0x035AFD94 MOV X19, X0
+
+ISIL:
+	001 Call <ComingSoonTasks>d__18.System.Collections.Generic.IEnumerable<GameLogic.Player.MergeTasks.MergeTask>.GetEnumerator, X0
+	002 Return X0
+

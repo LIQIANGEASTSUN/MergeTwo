@@ -1,0 +1,7 @@
+// Namespace: 
+public struct TaskEvent.CreateTimeLimitedTask : IEvent // TypeDefIndex: 2014
+{
+	// Fields
+	public BoardTaskItem BoardTaskItem; // 0x0
+}
+

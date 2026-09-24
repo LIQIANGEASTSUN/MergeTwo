@@ -1,0 +1,14 @@
+// Namespace: 
+[Serializable]
+public class LevelBasedChestSpawnerConfig.LevelBasedChestSpawn // TypeDefIndex: 1628
+{
+	// Fields
+	public int LevelThreshold; // 0x8
+	public List<SpawnedItem> SpawnedItems; // 0xC
+
+	// Methods
+
+	// RVA: 0x18C5D94 Offset: 0x18C5D94 VA: 0x18C5D94
+	public void .ctor() { }
+}
+

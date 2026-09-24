@@ -1,0 +1,75 @@
+// Namespace: MergePuzzle
+public class InventoryCell : MonoBehaviour // TypeDefIndex: 1954
+{
+	// Fields
+	[HideInInspector]
+	public bool IsLocked; // 0x10
+	[HideInInspector]
+	public int Index; // 0x14
+	[HideInInspector]
+	public int UnlockGemPrice; // 0x18
+	public Image SlotImage; // 0x1C
+	public Image Shelf; // 0x20
+	public Image ItemImage; // 0x24
+	public Transform BuyNewSlot; // 0x28
+	public TextMeshProUGUI SlotPrice; // 0x2C
+	public Button InfoButton; // 0x30
+	public Button Parent; // 0x34
+	[SerializeField]
+	private Transform CellParent; // 0x38
+	[SerializeField]
+	private GameObject ItemParent; // 0x3C
+	[SerializeField]
+	private GameObject SpawnerParent; // 0x40
+	[SerializeField]
+	private TextMeshProUGUI UnlockText; // 0x44
+	[SerializeField]
+	private Image SpawnerImage; // 0x48
+	private ItemEntity _itemEntity; // 0x4C
+	private BoardItemData _boardItemData; // 0x50
+	private BoardEntity _boardEntity; // 0x54
+	private EventEntity _eventEntity; // 0x58
+	private InventoryPopup _inventoryPopup; // 0x5C
+	private bool _shelfActive; // 0x60
+	private bool _spawnerInventory; // 0x61
+	private int _cellIndex; // 0x64
+
+	// Methods
+
+	// RVA: 0x193826C Offset: 0x193826C VA: 0x193826C
+	public void OnInventoryCellClick() { }
+
+	// RVA: 0x1938620 Offset: 0x1938620 VA: 0x1938620
+	private bool IsLockedAndIsLast() { }
+
+	// RVA: 0x1938694 Offset: 0x1938694 VA: 0x1938694
+	public void OnInventoryInfoClick() { }
+
+	// RVA: 0x193874C Offset: 0x193874C VA: 0x193874C
+	private void Initialize(BoardEntity boardEntity, ItemEntity itemEntity, BoardItemData boardItemData, EventEntity eventEntity, InventoryPopup inventoryPopup, int index) { }
+
+	// RVA: 0x19387B8 Offset: 0x19387B8 VA: 0x19387B8
+	public void InitializeRegular(BoardData boardData, BoardEntity boardEntity, ItemEntity itemEntity, BoardItemData boardItemData, bool isLocked, int index, int unlockGemPrice, EventEntity eventEntity, InventoryPopup inventoryPopup) { }
+
+	// RVA: 0x1938CD4 Offset: 0x1938CD4 VA: 0x1938CD4
+	public void InitializeSpawner(BoardEntity boardEntity, ItemEntity itemEntity, BoardItemData boardItemData, ItemLinkModel link, int index, EventEntity eventEntity, InventoryPopup inventoryPopup) { }
+
+	// RVA: 0x193859C Offset: 0x193859C VA: 0x193859C
+	public InventoryEntity GetInventoryEntity() { }
+
+	// RVA: 0x1938928 Offset: 0x1938928 VA: 0x1938928
+	public void UpdateUI() { }
+
+	// RVA: 0x193902C Offset: 0x193902C VA: 0x193902C
+	public void SetItemParent(bool isEnabled) { }
+
+	// RVA: 0x19390B0 Offset: 0x19390B0 VA: 0x19390B0
+	public void SetSpawnerParent(bool isEnabled) { }
+
+	// RVA: 0x19390DC Offset: 0x19390DC VA: 0x19390DC
+	private void OnDestroy() { }
+
+	// RVA: 0x19390F8 Offset: 0x19390F8 VA: 0x19390F8
+	public void .ctor() { }
+}
+

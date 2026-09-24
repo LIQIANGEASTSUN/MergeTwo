@@ -1,0 +1,65 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ItemSpawningQueue.<>c // TypeDefIndex: 93
+{
+	// Fields
+	public static readonly ItemSpawningQueue.<>c <>9; // 0x0
+	public static Func<Combination, IEnumerable<WeightedItem>> <>9__16_0; // 0x8
+	public static Func<WeightedItem, WeightedItemSpawnable> <>9__16_1; // 0x10
+	public static Comparison<WeightedItemSpawnable> <>9__16_3; // 0x18
+	public static Func<WeightedItemSpawnable, int> <>9__16_4; // 0x20
+	public static Func<WeightedItemSpawnable, WeightedItemSpawnable> <>9__16_5; // 0x28
+	public static Func<MergeItemWeakReference, string> <>9__17_4; // 0x30
+	public static Func<ItemPayloadBase, string> <>9__17_5; // 0x38
+	public static Comparison<WeightedItemSpawnable> <>9__20_0; // 0x40
+	public static Func<WeightedItemSpawnable, int> <>9__20_1; // 0x48
+	public static Func<WeightedItemSpawnable, WeightedItemSpawnable> <>9__20_2; // 0x50
+	public static Func<WeightedItem, IMergeItem> <>9__22_4; // 0x58
+	public static Func<Combination, IEnumerable<IMergeItem>> <>9__22_0; // 0x60
+
+	// Methods
+
+	// RVA: 0x5FEA948 Offset: 0x5FE6948 VA: 0x5FEA948
+	private static void .cctor() { }
+
+	// RVA: 0x5FEA9B0 Offset: 0x5FE69B0 VA: 0x5FEA9B0
+	public void .ctor() { }
+
+	// RVA: 0x5FEA9B8 Offset: 0x5FE69B8 VA: 0x5FEA9B8
+	internal IEnumerable<WeightedItem> <AddCombinationWeightedItems>b__16_0(Combination interactionCostItem) { }
+
+	// RVA: 0x5FEA9D0 Offset: 0x5FE69D0 VA: 0x5FEA9D0
+	internal WeightedItemSpawnable <AddCombinationWeightedItems>b__16_1(WeightedItem i) { }
+
+	// RVA: 0x5FEAA4C Offset: 0x5FE6A4C VA: 0x5FEAA4C
+	internal int <AddCombinationWeightedItems>b__16_3(WeightedItemSpawnable item1, WeightedItemSpawnable item2) { }
+
+	// RVA: 0x5FEAA70 Offset: 0x5FE6A70 VA: 0x5FEAA70
+	internal int <AddCombinationWeightedItems>b__16_4(WeightedItemSpawnable item) { }
+
+	// RVA: 0x5FEAA88 Offset: 0x5FE6A88 VA: 0x5FEAA88
+	internal WeightedItemSpawnable <AddCombinationWeightedItems>b__16_5(WeightedItemSpawnable item) { }
+
+	// RVA: 0x5FEAA90 Offset: 0x5FE6A90 VA: 0x5FEAA90
+	internal string <GetNextItems>b__17_4(MergeItemWeakReference i) { }
+
+	// RVA: 0x5FEAAB4 Offset: 0x5FE6AB4 VA: 0x5FEAAB4
+	internal string <GetNextItems>b__17_5(ItemPayloadBase i) { }
+
+	// RVA: 0x5FEAACC Offset: 0x5FE6ACC VA: 0x5FEAACC
+	internal int <AddWeightedItems>b__20_0(WeightedItemSpawnable item1, WeightedItemSpawnable item2) { }
+
+	// RVA: 0x5FEAAF0 Offset: 0x5FE6AF0 VA: 0x5FEAAF0
+	internal int <AddWeightedItems>b__20_1(WeightedItemSpawnable item) { }
+
+	// RVA: 0x5FEAB08 Offset: 0x5FE6B08 VA: 0x5FEAB08
+	internal WeightedItemSpawnable <AddWeightedItems>b__20_2(WeightedItemSpawnable item) { }
+
+	// RVA: 0x5FEAB10 Offset: 0x5FE6B10 VA: 0x5FEAB10
+	internal IEnumerable<IMergeItem> <IsItemInQueue>b__22_0(Combination c) { }
+
+	// RVA: 0x5FEAC14 Offset: 0x5FE6C14 VA: 0x5FEAC14
+	internal IMergeItem <IsItemInQueue>b__22_4(WeightedItem p) { }
+}
+

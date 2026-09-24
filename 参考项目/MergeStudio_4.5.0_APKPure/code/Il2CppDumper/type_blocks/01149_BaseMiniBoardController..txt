@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BaseMiniBoardController.<>c__DisplayClass190_0 // TypeDefIndex: 1149
+{
+	// Fields
+	public List<MiniBoardProgressionMergedRewards> itemsToRemove; // 0x8
+
+	// Methods
+
+	// RVA: 0x17D5834 Offset: 0x17D5834 VA: 0x17D5834
+	public void .ctor() { }
+
+	// RVA: 0x17D583C Offset: 0x17D583C VA: 0x17D583C
+	internal bool <CheckMergedRewards>b__2(MiniBoardProgressionMergedRewards item) { }
+}
+

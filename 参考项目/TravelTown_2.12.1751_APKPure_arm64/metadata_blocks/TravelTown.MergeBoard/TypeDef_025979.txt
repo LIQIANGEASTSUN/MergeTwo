@@ -1,0 +1,24 @@
+// Namespace: Merger.MergeBoard.Data.TickInputActions
+public class TapAction // TypeDefIndex: 25979
+{
+	// Fields
+	[CompilerGenerated]
+	private int <SelectedEntityPosition>k__BackingField; // 0x10
+
+	// Properties
+	public int SelectedEntityPosition { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AE58 Offset: 0x6A96E58 VA: 0x6A9AE58
+	public int get_SelectedEntityPosition() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AE60 Offset: 0x6A96E60 VA: 0x6A9AE60
+	public void set_SelectedEntityPosition(int value) { }
+
+	// RVA: 0x6A9AE68 Offset: 0x6A96E68 VA: 0x6A9AE68
+	public void .ctor() { }
+}
+

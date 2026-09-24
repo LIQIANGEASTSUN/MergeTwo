@@ -1,0 +1,123 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class ItemSpawnedResult // TypeDefIndex: 25966
+{
+	// Fields
+	[CompilerGenerated]
+	private Entity <SourceEntity>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private Entity <NewEntity>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private int <SourcePosition>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private int <TargetPosition>k__BackingField; // 0x24
+	[CompilerGenerated]
+	private ItemCreatedSource <CreatedBy>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private bool <Rare>k__BackingField; // 0x2C
+	[CompilerGenerated]
+	private bool <Legendary>k__BackingField; // 0x2D
+	[CompilerGenerated]
+	private bool <Boosted>k__BackingField; // 0x2E
+	[CompilerGenerated]
+	private ItemAnalyticsData <SourceEntityAnalyticsData>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private ItemAnalyticsData <NewEntityAnalyticsData>k__BackingField; // 0x38
+
+	// Properties
+	public Entity SourceEntity { get; set; }
+	public Entity NewEntity { get; set; }
+	public int SourcePosition { get; set; }
+	public int TargetPosition { get; set; }
+	public ItemCreatedSource CreatedBy { get; set; }
+	public bool Rare { get; set; }
+	public bool Legendary { get; set; }
+	public bool Boosted { get; set; }
+	public ItemAnalyticsData SourceEntityAnalyticsData { get; set; }
+	public ItemAnalyticsData NewEntityAnalyticsData { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A9E4 Offset: 0x6A969E4 VA: 0x6A9A9E4
+	public Entity get_SourceEntity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A9EC Offset: 0x6A969EC VA: 0x6A9A9EC
+	private void set_SourceEntity(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A9F4 Offset: 0x6A969F4 VA: 0x6A9A9F4
+	public Entity get_NewEntity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A9FC Offset: 0x6A969FC VA: 0x6A9A9FC
+	private void set_NewEntity(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AA04 Offset: 0x6A96A04 VA: 0x6A9AA04
+	public int get_SourcePosition() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AA0C Offset: 0x6A96A0C VA: 0x6A9AA0C
+	private void set_SourcePosition(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AA14 Offset: 0x6A96A14 VA: 0x6A9AA14
+	public int get_TargetPosition() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AA1C Offset: 0x6A96A1C VA: 0x6A9AA1C
+	private void set_TargetPosition(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AA24 Offset: 0x6A96A24 VA: 0x6A9AA24
+	public ItemCreatedSource get_CreatedBy() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AA2C Offset: 0x6A96A2C VA: 0x6A9AA2C
+	private void set_CreatedBy(ItemCreatedSource value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AA34 Offset: 0x6A96A34 VA: 0x6A9AA34
+	public bool get_Rare() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AA3C Offset: 0x6A96A3C VA: 0x6A9AA3C
+	private void set_Rare(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AA48 Offset: 0x6A96A48 VA: 0x6A9AA48
+	public bool get_Legendary() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AA50 Offset: 0x6A96A50 VA: 0x6A9AA50
+	private void set_Legendary(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AA5C Offset: 0x6A96A5C VA: 0x6A9AA5C
+	public bool get_Boosted() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AA64 Offset: 0x6A96A64 VA: 0x6A9AA64
+	private void set_Boosted(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AA70 Offset: 0x6A96A70 VA: 0x6A9AA70
+	public ItemAnalyticsData get_SourceEntityAnalyticsData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AA78 Offset: 0x6A96A78 VA: 0x6A9AA78
+	private void set_SourceEntityAnalyticsData(ItemAnalyticsData value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AA80 Offset: 0x6A96A80 VA: 0x6A9AA80
+	public ItemAnalyticsData get_NewEntityAnalyticsData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AA88 Offset: 0x6A96A88 VA: 0x6A9AA88
+	private void set_NewEntityAnalyticsData(ItemAnalyticsData value) { }
+
+	// RVA: 0x6A9AA90 Offset: 0x6A96A90 VA: 0x6A9AA90
+	public void .ctor(Entity sourceEntity, Entity newEntity, int sourcePosition, int targetPosition, ItemCreatedSource itemCreatedSource, ItemAnalyticsData sourceEntityAnalyticsData, ItemAnalyticsData newEntityAnalyticsData, bool rare = False, bool legendary = False, bool boosted = False) { }
+}
+

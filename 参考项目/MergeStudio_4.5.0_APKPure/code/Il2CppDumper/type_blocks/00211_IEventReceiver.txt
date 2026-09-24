@@ -1,0 +1,14 @@
+// Namespace: Paxie
+public interface IEventReceiver<T> : IEventReceiverBase // TypeDefIndex: 211
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void OnEvent(T e);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IEventReceiver<__Il2CppFullySharedGenericType>.OnEvent
+	*/
+}
+

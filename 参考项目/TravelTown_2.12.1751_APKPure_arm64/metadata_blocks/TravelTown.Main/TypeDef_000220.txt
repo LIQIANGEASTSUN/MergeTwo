@@ -1,0 +1,20 @@
+// Namespace: MergeEngine.Signal.Items
+public class InteractionTrackingSignal // TypeDefIndex: 220
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly InteractionTrackingData <InteractionTrackingData>k__BackingField; // 0x10
+
+	// Properties
+	public InteractionTrackingData InteractionTrackingData { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5FF36D0 Offset: 0x5FEF6D0 VA: 0x5FF36D0
+	public InteractionTrackingData get_InteractionTrackingData() { }
+
+	// RVA: 0x5FF36D8 Offset: 0x5FEF6D8 VA: 0x5FF36D8
+	public void .ctor(InteractionTrackingData interactionTrackingData) { }
+}
+

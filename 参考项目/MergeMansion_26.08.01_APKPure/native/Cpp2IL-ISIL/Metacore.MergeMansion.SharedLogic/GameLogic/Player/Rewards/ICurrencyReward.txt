@@ -1,0 +1,16 @@
+Type: GameLogic.Player.Rewards.ICurrencyReward
+
+Method: Currencies get_Currency()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_Amount()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

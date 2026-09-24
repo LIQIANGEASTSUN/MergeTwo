@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ExpendSpawnService.<>c__DisplayClass3_0 // TypeDefIndex: 25721
+{
+	// Fields
+	public string reason; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A4E7D4 Offset: 0x6A4A7D4 VA: 0x6A4E7D4
+	public void .ctor() { }
+
+	// RVA: 0x6A4E874 Offset: 0x6A4A874 VA: 0x6A4E874
+	internal bool <TransformAtSamePosition>b__0(WeightedItemSpawnable i) { }
+}
+

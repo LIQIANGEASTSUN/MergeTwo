@@ -1,0 +1,21 @@
+// Namespace: Merger.Boosters.Declarations.Definitions.Interfaces
+public interface IBoosterStrategy // TypeDefIndex: 7835
+{
+	// Properties
+	public abstract BoosterType BoosterType { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract BoosterType get_BoosterType();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void Execute(RemoteBoosterData boosterData, bool newBooster);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void TryActivate();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void TryDeactivate(string uuid);
+}
+

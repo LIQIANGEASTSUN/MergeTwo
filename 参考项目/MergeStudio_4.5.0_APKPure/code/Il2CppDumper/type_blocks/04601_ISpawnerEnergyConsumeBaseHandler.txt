@@ -1,0 +1,21 @@
+// Namespace: MergePuzzle.RecurringEvents
+public interface ISpawnerEnergyConsumeBaseHandler // TypeDefIndex: 4601
+{
+	// Properties
+	public abstract List<int> SpawnerList { get; set; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract List<int> get_SpawnerList();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void set_SpawnerList(List<int> value);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void SetSpawnerList();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void OnEnergyConsumed(ISpawnerEnergyConsumeBaseHandler.EnergyConsumeResult energyConsumeResult);
+}
+

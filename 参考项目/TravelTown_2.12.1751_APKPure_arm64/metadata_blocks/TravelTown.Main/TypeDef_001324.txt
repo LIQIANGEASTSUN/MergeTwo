@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class Reward.<>c__DisplayClass94_0 // TypeDefIndex: 1324
+{
+	// Fields
+	public DynamicMergeItemWeakReference myRewardRef; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A2D374 Offset: 0x6A29374 VA: 0x6A2D374
+	public void .ctor() { }
+
+	// RVA: 0x6A2E810 Offset: 0x6A2A810 VA: 0x6A2E810
+	internal bool <AreItemBoxesRefsEqual>b__0(DynamicMergeItemWeakReference x) { }
+}
+

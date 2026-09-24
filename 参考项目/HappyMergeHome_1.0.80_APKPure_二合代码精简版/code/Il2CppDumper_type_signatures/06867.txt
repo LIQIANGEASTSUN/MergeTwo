@@ -1,0 +1,261 @@
+// Namespace: Activity.EnergyMergeStage.Model
+public class EnergyMergeStageModel : ActivityEntityBase // TypeDefIndex: 6867
+{
+	// Fields
+	private const int TOTAL_PERSON_COUNT = 57;
+	private const int MaxRoundCount = 4;
+	private const int NodesPerRound = 7;
+	private static EnergyMergeStageModel _instance; // 0x0
+	private EnergyMSRoundReward _currentRoundReward; // 0x3C
+	private List<EnergyMSReward> _currentGroupRewards; // 0x40
+	private EnergyMSReward _currentReward; // 0x44
+	private readonly List<int> _seatNums; // 0x48
+	private readonly string _coolTimeKey; // 0x4C
+	private bool _playMainIntroAfterRoundPopupJoin; // 0x50
+	private bool _isFlyCollection; // 0x51
+
+	// Properties
+	public static EnergyMergeStageModel Instance { get; }
+	public override string Guid { get; }
+	public EnergyMSReward CurrentReward { get; }
+	public EnergyMSReward CurrentEnergyRaceReward { get; }
+	public List<EnergyMSReward> CurrentGroupRewards { get; }
+	public EnergyMSRoundReward CurrentRoundRewards { get; }
+	public List<EnergyMSReward> CurrentGroupEnergyRaceRewards { get; }
+	public List<int> SeatNums { get; }
+	public StorageEnergyMergeStage Data { get; }
+	public StorageEnergyMergeStage EnergyRaceData { get; }
+
+	// Methods
+
+	// RVA: 0x1C581C4 Offset: 0x1C581C4 VA: 0x1C581C4
+	public static EnergyMergeStageModel get_Instance() { }
+
+	// RVA: 0x1C6FD5C Offset: 0x1C6FD5C VA: 0x1C6FD5C Slot: 4
+	public override string get_Guid() { }
+
+	// RVA: 0x1C6FDEC Offset: 0x1C6FDEC VA: 0x1C6FDEC
+	public EnergyMSReward get_CurrentReward() { }
+
+	// RVA: 0x1C60AA4 Offset: 0x1C60AA4 VA: 0x1C60AA4
+	public EnergyMSReward get_CurrentEnergyRaceReward() { }
+
+	// RVA: 0x1C6FE40 Offset: 0x1C6FE40 VA: 0x1C6FE40
+	public List<EnergyMSReward> get_CurrentGroupRewards() { }
+
+	// RVA: 0x1C65224 Offset: 0x1C65224 VA: 0x1C65224
+	public EnergyMSRoundReward get_CurrentRoundRewards() { }
+
+	// RVA: 0x1C6B808 Offset: 0x1C6B808 VA: 0x1C6B808
+	public List<EnergyMSReward> get_CurrentGroupEnergyRaceRewards() { }
+
+	// RVA: 0x1C6FE94 Offset: 0x1C6FE94 VA: 0x1C6FE94
+	public List<int> get_SeatNums() { }
+
+	// RVA: 0x1C5A748 Offset: 0x1C5A748 VA: 0x1C5A748
+	public int GetSeatNumForLevel(int levelIndex) { }
+
+	// RVA: 0x1C633A0 Offset: 0x1C633A0 VA: 0x1C633A0
+	public StorageEnergyMergeStage get_Data() { }
+
+	// RVA: 0x1C5F9FC Offset: 0x1C5F9FC VA: 0x1C5F9FC
+	public StorageEnergyMergeStage get_EnergyRaceData() { }
+
+	[RuntimeInitializeOnLoadMethod(0)]
+	// RVA: 0x1C6FEE8 Offset: 0x1C6FEE8 VA: 0x1C6FEE8
+	private static void InitAuto() { }
+
+	// RVA: 0x1C70028 Offset: 0x1C70028 VA: 0x1C70028
+	private static void OnEnergyMergeApplicationQuitting() { }
+
+	// RVA: 0x1C700C4 Offset: 0x1C700C4 VA: 0x1C700C4
+	private void TryAbortEnergyMergeOnboardingOnQuit() { }
+
+	// RVA: 0x1C6F858 Offset: 0x1C6F858 VA: 0x1C6F858
+	private void .ctor() { }
+
+	// RVA: 0x1C701F8 Offset: 0x1C701F8 VA: 0x1C701F8 Slot: 5
+	public override void InitFromServerData(string activityId, string activityType, ulong startTime, ulong endTime, ulong rewardEndTime, bool manualEnd, string configJson, string activitySubType) { }
+
+	// RVA: 0x1C70410 Offset: 0x1C70410 VA: 0x1C70410 Slot: 18
+	protected override void InitServerDataFinish() { }
+
+	// RVA: 0x1C703B0 Offset: 0x1C703B0 VA: 0x1C703B0
+	private void InitGroup() { }
+
+	// RVA: 0x1C70AAC Offset: 0x1C70AAC VA: 0x1C70AAC
+	private void InitRoundAward() { }
+
+	// RVA: 0x1C69068 Offset: 0x1C69068 VA: 0x1C69068
+	public EnergyMSRoundReward TryGetRoundRewardConfigForZeroBasedRound(int zeroBasedRoundIndex) { }
+
+	// RVA: 0x1C70E00 Offset: 0x1C70E00 VA: 0x1C70E00
+	private void InitAwardList() { }
+
+	// RVA: 0x1C71224 Offset: 0x1C71224 VA: 0x1C71224
+	public bool IsOpened() { }
+
+	// RVA: 0x1C6B864 Offset: 0x1C6B864 VA: 0x1C6B864
+	public bool ShouldPlayRoundFirstEnterIntro() { }
+
+	// RVA: 0x1C6BF9C Offset: 0x1C6BF9C VA: 0x1C6BF9C
+	public void MarkRoundFirstEnterIntroPlayed() { }
+
+	// RVA: 0x1C6F5F4 Offset: 0x1C6F5F4 VA: 0x1C6F5F4
+	public void RequestMainIntroAfterRoundPopupJoin() { }
+
+	// RVA: 0x1C712F0 Offset: 0x1C712F0 VA: 0x1C712F0
+	public bool IsJoinRacing() { }
+
+	// RVA: 0x1C71390 Offset: 0x1C71390 VA: 0x1C71390
+	public bool IsShowReward() { }
+
+	// RVA: 0x1C71400 Offset: 0x1C71400 VA: 0x1C71400
+	public bool CanShowRedPoint() { }
+
+	// RVA: 0x1C714B8 Offset: 0x1C714B8 VA: 0x1C714B8
+	public bool IsShowEnd() { }
+
+	// RVA: 0x1C7150C Offset: 0x1C7150C VA: 0x1C7150C
+	public bool CanShowEnd() { }
+
+	// RVA: 0x1C5B5FC Offset: 0x1C5B5FC VA: 0x1C5B5FC
+	public float GetCurrentLevelProgress() { }
+
+	// RVA: 0x1C5B6D0 Offset: 0x1C5B6D0 VA: 0x1C5B6D0
+	public string GetCurrentLevel() { }
+
+	// RVA: 0x1C71560 Offset: 0x1C71560 VA: 0x1C71560
+	public int GetSelfScore() { }
+
+	// RVA: 0x1C64DC0 Offset: 0x1C64DC0 VA: 0x1C64DC0
+	public string GetProgress() { }
+
+	// RVA: 0x1C64B78 Offset: 0x1C64B78 VA: 0x1C64B78
+	public ValueTuple<int, int> GetProgressNum() { }
+
+	// RVA: 0x1C716FC Offset: 0x1C716FC VA: 0x1C716FC
+	public ValueTuple<int, int> GetProgressCompleteNum() { }
+
+	// RVA: 0x1C58288 Offset: 0x1C58288 VA: 0x1C58288
+	public int GetCurrentIndex() { }
+
+	// RVA: 0x1C5C224 Offset: 0x1C5C224 VA: 0x1C5C224
+	public StorageEnergyRaceLevel GetEnergyRaceLevel(int index) { }
+
+	// RVA: 0x1C6A7D4 Offset: 0x1C6A7D4 VA: 0x1C6A7D4
+	public void SetSeatsData(int level, int seatId, int iconId) { }
+
+	// RVA: 0x1C71920 Offset: 0x1C71920 VA: 0x1C71920
+	public void SetStaticSeatsData(int level, int seatId, int iconId) { }
+
+	// RVA: 0x1C6AAB8 Offset: 0x1C6AAB8 VA: 0x1C6AAB8
+	public void RemoveSeatsData(int level, int seatId) { }
+
+	// RVA: 0x1C71C04 Offset: 0x1C71C04 VA: 0x1C71C04
+	public void CreateSeatData(int level) { }
+
+	// RVA: 0x1C71F10 Offset: 0x1C71F10 VA: 0x1C71F10
+	private EnergyMSReward GetCurrentRaceReward(int id) { }
+
+	// RVA: 0x1C72084 Offset: 0x1C72084 VA: 0x1C72084
+	private EnergyMSReward GetNextCurrentRaceReward(int id) { }
+
+	// RVA: 0x1C68FAC Offset: 0x1C68FAC VA: 0x1C68FAC
+	public bool IsLastNodeOfCurrentRound() { }
+
+	// RVA: 0x1C693B0 Offset: 0x1C693B0 VA: 0x1C693B0
+	public void ApplyAwaitManualNextRoundAfterRoundRewards() { }
+
+	// RVA: 0x1C7225C Offset: 0x1C7225C VA: 0x1C7225C
+	private int GetFristRewardId() { }
+
+	// RVA: 0x1C6EC00 Offset: 0x1C6EC00 VA: 0x1C6EC00
+	public void JoinOrInitRacing(bool isJoin) { }
+
+	// RVA: 0x1C72340 Offset: 0x1C72340 VA: 0x1C72340
+	private void InitRacingPlayer(bool isCreateNew, int count) { }
+
+	// RVA: 0x1C734AC Offset: 0x1C734AC VA: 0x1C734AC
+	private void CalRobotScoreChange(long beginTime, int targetScore, StorageEnergyRacePlayer robot) { }
+
+	// RVA: 0x1C74194 Offset: 0x1C74194 VA: 0x1C74194
+	private void CheckRobotScoreUpdate() { }
+
+	// RVA: 0x1C74820 Offset: 0x1C74820 VA: 0x1C74820
+	private void CalRacingEnd() { }
+
+	// RVA: 0x1C74E9C Offset: 0x1C74E9C VA: 0x1C74E9C
+	private void CalRacingDone() { }
+
+	// RVA: 0x1C74C48 Offset: 0x1C74C48 VA: 0x1C74C48
+	private void SortRank() { }
+
+	// RVA: 0x1C75050 Offset: 0x1C75050 VA: 0x1C75050
+	public int GetRandomTaskScore(StorageOrderItem orderItem) { }
+
+	// RVA: 0x1C753E0 Offset: 0x1C753E0 VA: 0x1C753E0
+	public void AddRandomTaskScore(int seat, int coin, Vector3 scrPos) { }
+
+	// RVA: 0x1C75DA4 Offset: 0x1C75DA4 VA: 0x1C75DA4
+	public void AddMergeScore(int mergeId, Vector3 scrPos, string from) { }
+
+	// RVA: 0x1C75FB4 Offset: 0x1C75FB4 VA: 0x1C75FB4
+	public void AddNextScore(int score) { }
+
+	// RVA: 0x1C73380 Offset: 0x1C73380 VA: 0x1C73380
+	private void TryFlushNextAddScoreAfterJoin() { }
+
+	// RVA: 0x1C75744 Offset: 0x1C75744 VA: 0x1C75744
+	private void AddScore(int score, Vector3 scrPos, bool isFly = True) { }
+
+	// RVA: 0x1C760BC Offset: 0x1C760BC VA: 0x1C760BC
+	private void FlyScore(int count, Vector3 scrPos, Action callBack) { }
+
+	// RVA: 0x1C6923C Offset: 0x1C6923C VA: 0x1C6923C
+	public void SendRewarRoundBI() { }
+
+	// RVA: 0x1C6E7C4 Offset: 0x1C6E7C4 VA: 0x1C6E7C4
+	public void SendEnergyMergeStageStartBi() { }
+
+	// RVA: 0x1C68DD4 Offset: 0x1C68DD4 VA: 0x1C68DD4
+	public void SendEnergyMergeStageResultBi(bool challengeSuccess) { }
+
+	// RVA: 0x1C767FC Offset: 0x1C767FC VA: 0x1C767FC
+	public bool CanShowJoinRacing() { }
+
+	// RVA: 0x1C6D1C0 Offset: 0x1C6D1C0 VA: 0x1C6D1C0
+	public void RecordOpenJoinRacing() { }
+
+	// RVA: 0x1C76AAC Offset: 0x1C76AAC VA: 0x1C76AAC
+	public bool TimeCheckRacingEnding() { }
+
+	// RVA: 0x1C66514 Offset: 0x1C66514 VA: 0x1C66514
+	public void TryOpenMain(bool isWin = False) { }
+
+	// RVA: 0x1C76E6C Offset: 0x1C76E6C VA: 0x1C76E6C
+	public void DebugReset() { }
+
+	// RVA: 0x1C76F90 Offset: 0x1C76F90 VA: 0x1C76F90
+	public void AddScoreDebug(int collection) { }
+
+	// RVA: 0x1C77054 Offset: 0x1C77054 VA: 0x1C77054
+	public void DebugSetRobotScore() { }
+
+	// RVA: 0x1C77590 Offset: 0x1C77590 VA: 0x1C77590
+	public void DebugSetRobotScoreTwo() { }
+
+	// RVA: 0x1C77AE8 Offset: 0x1C77AE8 VA: 0x1C77AE8
+	public void DebugResetStartCoolTime() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1C77BD4 Offset: 0x1C77BD4 VA: 0x1C77BD4
+	private bool <InitAwardList>b__41_0(EnergyMSReward x) { }
+
+	// RVA: 0x1C77C1C Offset: 0x1C77C1C VA: 0x1C77C1C
+	public void <>iFixBaseProxy_InitFromServerData(string P0, string P1, ulong P2, ulong P3, ulong P4, bool P5, string P6, string P7) { }
+
+	// RVA: 0x1C77C74 Offset: 0x1C77C74 VA: 0x1C77C74
+	public void <>iFixBaseProxy_InitServerDataFinish() { }
+}
+

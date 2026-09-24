@@ -1,0 +1,250 @@
+// Namespace: 
+public class MergeMainController : UIWindowController // TypeDefIndex: 2790
+{
+	// Fields
+	private MergeBoard _mergeBoard; // 0x30
+	private Transform _mRoot; // 0x34
+	public Button _mBagBtn; // 0x38
+	private Transform _mBagMasterIcon; // 0x3C
+	private Button _mRewardBtn; // 0x40
+	private Button backBtn; // 0x44
+	private Animator _bagAnimator; // 0x48
+	private LocalizeTextMeshProUGUI backNumText; // 0x4C
+	private GameObject backRedPoint; // 0x50
+	private Animator backAnimator; // 0x54
+	[CompilerGenerated]
+	private GameObject <BackDecoGuideObj>k__BackingField; // 0x58
+	private Image rewardIcon; // 0x5C
+	private Transform taskGuideRoot; // 0x60
+	private Animator _animator; // 0x64
+	private Transform _starJourneyTrans; // 0x68
+	private List<Transform> _blindBoxTrans; // 0x6C
+	public MergeComboPlay ComboPlay; // 0x70
+	private Transform _comboPlayTrans; // 0x74
+	public MergeComboCriticalHit ComboCriticalHit; // 0x78
+	private Transform _comboCriticalHitTrans; // 0x7C
+	private GameObject lastDraginGo; // 0x80
+	private bool multiTouchEnabled; // 0x84
+	private GameObject noticeGo; // 0x88
+	public Vector3 bagItemPostion; // 0x8C
+	public MergeClickTips mergeClickTips; // 0x98
+	[CompilerGenerated]
+	private int <selcedItemId>k__BackingField; // 0x9C
+	public static MergeMainController Instance; // 0x0
+	[CompilerGenerated]
+	private Transform <FlyNode>k__BackingField; // 0xA0
+	private LocalizeTextMeshProUGUI rewardNumText; // 0xA4
+	private Animator storeBtnAnimator; // 0xA8
+	private Image storeBubbleImage; // 0xAC
+	private GameObject storeRedPoint; // 0xB0
+	private GameObject intoBagEffectObj; // 0xB4
+	private GameObject intoBagMergeObj; // 0xB8
+	private GameObject guideMask; // 0xBC
+	public MergeMainBalloon _balloon; // 0xC0
+	private bool isInit; // 0xC4
+	private RectTransform bottomGroupTransform; // 0xC8
+	private int curRewardCount; // 0xCC
+	private Transform _topBG; // 0xD0
+	private Transform _taskBG; // 0xD4
+	private Transform _boardBG; // 0xD8
+	private Transform _boardMainBG; // 0xDC
+	private Transform mermaid_topBG; // 0xE0
+	private Transform mermaid_taskBG; // 0xE4
+	private Transform mermaid_boardBG; // 0xE8
+	private Transform mermaid_boardMainBG; // 0xEC
+	public Transform BubbleHangPoint; // 0xF0
+	private Transform _tranLuckyBalloonRv; // 0xF4
+	private MergeMainController.MergeBoardTheme curTheme; // 0xF8
+	private Dictionary<MergeMainController.MergeBoardThemeEnum, MergeMainController.MergeBoardTheme> _themeDic; // 0xFC
+	private float clickRewardsTime; // 0x100
+	private string[] _dynamicEntryKey; // 0x104
+	private Dictionary<string, MonoBehaviour> _dynamicEntryMap; // 0x108
+
+	// Properties
+	public MergeBoard MergeBoard { get; }
+	public float RootScale { get; }
+	public GameObject BackDecoGuideObj { get; set; }
+	public Vector3 rewardBtnPos { get; }
+	public Transform rewardBtnTrans { get; }
+	public RectTransform bagTrans { get; }
+	public RectTransform backTrans { get; }
+	public Transform StarJourneyTrans { get; }
+	public Transform BlindBoxTrans { get; }
+	public int selcedItemId { get; set; }
+	public Transform FlyNode { get; set; }
+
+	// Methods
+
+	// RVA: 0x2C2D868 Offset: 0x2C2D868 VA: 0x2C2D868
+	public MergeBoard get_MergeBoard() { }
+
+	// RVA: 0x2C407E0 Offset: 0x2C407E0 VA: 0x2C407E0
+	public float get_RootScale() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C4087C Offset: 0x2C4087C VA: 0x2C4087C
+	public GameObject get_BackDecoGuideObj() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C40884 Offset: 0x2C40884 VA: 0x2C40884
+	private void set_BackDecoGuideObj(GameObject value) { }
+
+	// RVA: 0x2C2E3F8 Offset: 0x2C2E3F8 VA: 0x2C2E3F8
+	public Vector3 get_rewardBtnPos() { }
+
+	// RVA: 0x2C4036C Offset: 0x2C4036C VA: 0x2C4036C
+	public Transform get_rewardBtnTrans() { }
+
+	// RVA: 0x2C4088C Offset: 0x2C4088C VA: 0x2C4088C
+	public RectTransform get_bagTrans() { }
+
+	// RVA: 0x2C40958 Offset: 0x2C40958 VA: 0x2C40958
+	public RectTransform get_backTrans() { }
+
+	// RVA: 0x2C40A24 Offset: 0x2C40A24 VA: 0x2C40A24
+	public Transform get_StarJourneyTrans() { }
+
+	// RVA: 0x2C40A78 Offset: 0x2C40A78 VA: 0x2C40A78
+	public Transform get_BlindBoxTrans() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C40B9C Offset: 0x2C40B9C VA: 0x2C40B9C
+	public int get_selcedItemId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C40BA4 Offset: 0x2C40BA4 VA: 0x2C40BA4
+	public void set_selcedItemId(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C40BAC Offset: 0x2C40BAC VA: 0x2C40BAC
+	public Transform get_FlyNode() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2C40BB4 Offset: 0x2C40BB4 VA: 0x2C40BB4
+	private void set_FlyNode(Transform value) { }
+
+	// RVA: 0x2C40BBC Offset: 0x2C40BBC VA: 0x2C40BBC Slot: 10
+	public override void PrivateAwake() { }
+
+	[IteratorStateMachine(typeof(MergeMainController.<Start>d__77))]
+	// RVA: 0x2C42F44 Offset: 0x2C42F44 VA: 0x2C42F44
+	private IEnumerator Start() { }
+
+	// RVA: 0x2C43008 Offset: 0x2C43008 VA: 0x2C43008
+	private void SetCanvas(string path, int order) { }
+
+	// RVA: 0x2C43134 Offset: 0x2C43134 VA: 0x2C43134
+	private void UpdateGuideMaskOrder() { }
+
+	// RVA: 0x2C43340 Offset: 0x2C43340 VA: 0x2C43340 Slot: 7
+	protected override void OnOpenWindow(object[] objs) { }
+
+	// RVA: 0x2C43394 Offset: 0x2C43394 VA: 0x2C43394
+	private void OnEnable() { }
+
+	// RVA: 0x2C43624 Offset: 0x2C43624 VA: 0x2C43624
+	private void UpdateUI() { }
+
+	// RVA: 0x2C42D8C Offset: 0x2C42D8C VA: 0x2C42D8C
+	public MergeMainController.MergeBoardTheme GetMergeBoardTheme(MergeMainController.MergeBoardThemeEnum themeEnum) { }
+
+	// RVA: 0x2C43F54 Offset: 0x2C43F54 VA: 0x2C43F54
+	public MergeMainController.MergeBoardTheme CreateMergeBoardTheme(MergeMainController.MergeBoardThemeEnum themeEnum) { }
+
+	[IDTag(0)]
+	// RVA: 0x2C44700 Offset: 0x2C44700 VA: 0x2C44700
+	private void UpdateBgGroupByTheme(MergeMainController.MergeBoardTheme theme) { }
+
+	[IDTag(1)]
+	// RVA: 0x2C44A4C Offset: 0x2C44A4C VA: 0x2C44A4C
+	public void UpdateBgGroupByTheme(MergeMainController.MergeBoardThemeEnum themeEnum) { }
+
+	// RVA: 0x2C43EF8 Offset: 0x2C43EF8 VA: 0x2C43EF8
+	private void UpdateBgGroup() { }
+
+	// RVA: 0x2C44ABC Offset: 0x2C44ABC VA: 0x2C44ABC
+	private void OnDisable() { }
+
+	// RVA: 0x2C44B58 Offset: 0x2C44B58 VA: 0x2C44B58
+	private void CheckBalloon() { }
+
+	// RVA: 0x2C44BC4 Offset: 0x2C44BC4 VA: 0x2C44BC4
+	private void OnDestroy() { }
+
+	[IDTag(1)]
+	// RVA: 0x2C44FC0 Offset: 0x2C44FC0 VA: 0x2C44FC0
+	private void RefreshRewards(BaseEvent e) { }
+
+	// RVA: 0x2C451F4 Offset: 0x2C451F4 VA: 0x2C451F4
+	private void RefreshMergeBoard(BaseEvent e) { }
+
+	// RVA: 0x2C45520 Offset: 0x2C45520 VA: 0x2C45520
+	private void RefreshTask(BaseEvent e) { }
+
+	[IDTag(0)]
+	// RVA: 0x2C43C40 Offset: 0x2C43C40 VA: 0x2C43C40
+	private void RefreshRewards(bool isCheckGuide) { }
+
+	// RVA: 0x2C45630 Offset: 0x2C45630 VA: 0x2C45630
+	private void RefreshRewardIcon() { }
+
+	// RVA: 0x2C458E4 Offset: 0x2C458E4 VA: 0x2C458E4
+	private void OnClickBagBtn() { }
+
+	// RVA: 0x2C45C9C Offset: 0x2C45C9C VA: 0x2C45C9C
+	public void OnClickRewardBtn() { }
+
+	// RVA: 0x2C46774 Offset: 0x2C46774 VA: 0x2C46774
+	private void SendUseAwardBagBi(int id) { }
+
+	// RVA: 0x2C42C9C Offset: 0x2C42C9C VA: 0x2C42C9C
+	private void OnRefreshOnCompleteTask(BaseEvent obj) { }
+
+	// RVA: 0x2C46860 Offset: 0x2C46860 VA: 0x2C46860
+	private void OnClickBackBtn() { }
+
+	[IDTag(1)]
+	// RVA: 0x2C46A58 Offset: 0x2C46A58 VA: 0x2C46A58
+	private void OnMergeBoardDragIn(BaseEvent e) { }
+
+	[IDTag(0)]
+	// RVA: 0x2C46B44 Offset: 0x2C46B44 VA: 0x2C46B44
+	private void OnMergeBoardDragIn(GameObject collision) { }
+
+	[IDTag(1)]
+	// RVA: 0x2C46FF0 Offset: 0x2C46FF0 VA: 0x2C46FF0
+	private void OnMergeBoardPointerUp(BaseEvent e) { }
+
+	[IDTag(0)]
+	// RVA: 0x2C470DC Offset: 0x2C470DC VA: 0x2C470DC
+	private void OnMergeBoardPointerUp(GameObject collision) { }
+
+	[IteratorStateMachine(typeof(MergeMainController.<WaitHideBagEffect>d__108))]
+	// RVA: 0x2C47B7C Offset: 0x2C47B7C VA: 0x2C47B7C
+	private IEnumerator WaitHideBagEffect() { }
+
+	// RVA: 0x2C42AB4 Offset: 0x2C42AB4 VA: 0x2C42AB4
+	public void UpdateTaskRedPoint() { }
+
+	// RVA: 0x2C47C40 Offset: 0x2C47C40 VA: 0x2C47C40
+	public void PlayAnimation(bool isAppear, Action callBack) { }
+
+	// RVA: 0x2C42A24 Offset: 0x2C42A24 VA: 0x2C42A24
+	public void SetGuideMaskActive(bool active) { }
+
+	// RVA: 0x2C47E04 Offset: 0x2C47E04 VA: 0x2C47E04
+	public bool RewardItemIsShow() { }
+
+	// RVA: 0x2C43540 Offset: 0x2C43540 VA: 0x2C43540
+	private void PlayBagAnim(string animName) { }
+
+	// RVA: 0x2C439E4 Offset: 0x2C439E4 VA: 0x2C439E4
+	private void RefreshDynamicEntry() { }
+
+	// RVA: 0x2C47EC4 Offset: 0x2C47EC4 VA: 0x2C47EC4
+	public void .ctor() { }
+
+	// RVA: 0x2C48110 Offset: 0x2C48110 VA: 0x2C48110
+	public void <>iFixBaseProxy_OnOpenWindow(object[] P0) { }
+}
+

@@ -1,0 +1,69 @@
+// Namespace: Merger.Services.Backend.Sync.Implementations
+public class SyncBoardService : SyncPayloadServiceBase<SyncBoardPayload> // TypeDefIndex: 9865
+{
+	// Fields
+	[Inject]
+	private IBubbledItemsConfigurationModel _bubbledItemsConfigurationModel; // 0x50
+	[Inject]
+	private IServerTimeService _serverTimeService; // 0x58
+	[Inject]
+	private IEntityManager _entityManager; // 0x60
+	[Inject]
+	private IJsonService _jsonService; // 0x68
+	[Inject]
+	private IBoosterModel _boosterModel; // 0x70
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x78
+	[Inject]
+	private CardsPackConfigurationModel _cardsPackConfigurationModel; // 0x80
+	[Inject]
+	private ItemSelectionBoxConfigurationModel _itemSelectionBoxConfigurationModel; // 0x88
+
+	// Properties
+	protected override string SyncName { get; }
+
+	// Methods
+
+	// RVA: 0x67C9508 Offset: 0x67C5508 VA: 0x67C9508 Slot: 22
+	protected override string get_SyncName() { }
+
+	// RVA: 0x67C9548 Offset: 0x67C5548 VA: 0x67C9548 Slot: 17
+	protected override void InitializeService() { }
+
+	// RVA: 0x67C964C Offset: 0x67C564C VA: 0x67C964C Slot: 20
+	protected override SyncBoardPayload CreateSyncPayload(BackendSyncEntitiesWrapper backendSyncEntitiesWrapper) { }
+
+	// RVA: 0x67C98D0 Offset: 0x67C58D0 VA: 0x67C98D0 Slot: 21
+	protected override IPromise SendSyncRequest(SyncBoardPayload payload, ISyncRepository repository) { }
+
+	// RVA: 0x67C97BC Offset: 0x67C57BC VA: 0x67C97BC
+	private BoardStructure ConstructMainBoard(BackendSyncEntitiesWrapper backendSyncEntitiesWrapper) { }
+
+	// RVA: 0x67C9AF8 Offset: 0x67C5AF8 VA: 0x67C9AF8
+	public List<BoardItem> ConstructBoardItems(PersistentEntitiesWrapper boardItems) { }
+
+	// RVA: 0x67CAEF4 Offset: 0x67C6EF4 VA: 0x67CAEF4
+	private void TryAddCooldownEndTimes(ItemPayloadBase item) { }
+
+	// RVA: 0x67CAC28 Offset: 0x67C6C28 VA: 0x67CAC28
+	private List<FreeVoucher> ConstructFreeVouchers(string eventId) { }
+
+	// RVA: 0x67CB20C Offset: 0x67C720C VA: 0x67CB20C
+	private int GetFreeBubbleBurstRemains(string eventId) { }
+
+	// RVA: 0x67CB228 Offset: 0x67C7228 VA: 0x67CB228
+	private int GetCoreFreeBubbleBurst() { }
+
+	// RVA: 0x67CB2D8 Offset: 0x67C72D8 VA: 0x67CB2D8
+	private int GetEventFreeBubbleBurst(string eventId) { }
+
+	// RVA: 0x67CAA30 Offset: 0x67C6A30 VA: 0x67CAA30
+	private List<Resource> ConstructPlayerResources(bool isEvent) { }
+
+	// RVA: 0x67CAD94 Offset: 0x67C6D94 VA: 0x67CAD94
+	private void MapIdComponent(ItemPayloadBase item, SerializedIdComponent idComponent) { }
+
+	// RVA: 0x67CB350 Offset: 0x67C7350 VA: 0x67CB350
+	public void .ctor() { }
+}
+

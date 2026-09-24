@@ -1,0 +1,7 @@
+// Namespace: 
+public struct EntityUpdateEvent.EnergyConsume : IEvent // TypeDefIndex: 2665
+{
+	// Fields
+	public int Amount; // 0x0
+}
+

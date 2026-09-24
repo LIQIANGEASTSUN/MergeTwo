@@ -1,0 +1,67 @@
+Type: GameLogic.Player.MergeTasks.MergeTask
+
+Method: System.String get_DescriptionLocId()
+
+Disassembly:
+	0x035AAC80 LDR W9, [X10]
+	0x035AAC84 ADD W9, W9, 0x35
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: Code.GameLogic.Player.MergeTasks.TaskCategory get_Category()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void .ctor(System.String descriptionLocId = )
+
+Disassembly:
+	0x035A89D4 LDP X8, X1, [X0]
+	0x035A89D8 MOV X0, X21
+	0x035A89DC BLR X8
+	0x035A89E0 CBNZ X19, 0x35A8A20
+	0x035A89E4 MOV X0, X20
+	0x035A89E8 LDP X20, X19, [X31 + 0x60]
+	0x035A89EC LDP X22, X21, [X31 + 0x50]
+	0x035A89F0 LDP X24, X23, [X31 + 0x40]
+	0x035A89F4 LDP X26, X25, [X31 + 0x30]
+	0x035A89F8 LDP X30, X27, [X31 + 0x20]
+	0x035A89FC ADD X31, X31, 0x70
+	0x035A8A00 RET
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move X19, X1
+	005 Move X1, X31
+	006 Move X20, X0
+	007 Call Object..ctor, X0
+	008 Move [X20+16], X19
+	009 Move X0, X20
+	010 Move X1, X19
+	011 Move X20, [X31+16]
+	012 Move X19, [X31+24]
+	013 Move X30, [X31+32]
+	014 Call 0x239F888
+	015 Return 
+
+Method: System.Void Update()
+
+Disassembly:
+	0x035AAC88 ADD X8, X8, W9, 0x4, SXTW
+
+ISIL:
+	001 Return 
+
+Method: System.Boolean Matches(GameLogic.Player.MergeTasks.MergeTask other)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

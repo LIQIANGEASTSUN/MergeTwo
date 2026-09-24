@@ -1,0 +1,15 @@
+// Namespace: Merger.Game.Data
+public enum GameState // TypeDefIndex: 8484
+{
+	// Fields
+	public int value__; // 0x0
+	public const GameState Merging = 0;
+	public const GameState Metagame = 1;
+	public const GameState Other = 2;
+	public const GameState Shop = 3;
+	public const GameState PickingGame = 4;
+	public const GameState BoardMiniGame = 5;
+	public const GameState ExpeditionGame = 6;
+	public const GameState ResourceGenerator = 7;
+}
+

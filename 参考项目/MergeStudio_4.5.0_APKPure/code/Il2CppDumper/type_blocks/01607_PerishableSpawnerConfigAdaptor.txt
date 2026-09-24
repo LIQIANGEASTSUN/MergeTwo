@@ -1,0 +1,53 @@
+// Namespace: MergePuzzle
+public class PerishableSpawnerConfigAdaptor : AdaptorBase // TypeDefIndex: 1607
+{
+	// Fields
+	private PerishableSpawnerConfig _activeConfig; // 0xC
+	private BoardItemData _perishedSpawn; // 0x10
+	private int _chargeSetID; // 0x14
+	private int _chargedCapacity; // 0x18
+	private bool _showItemPercentages; // 0x1C
+	private bool _hasProgressText; // 0x1D
+
+	// Methods
+
+	// RVA: 0x18BE118 Offset: 0x18BE118 VA: 0x18BE118
+	public void .ctor(string setIDLevel, BalancePerishableConfigModelItem balancePerishableConfig, IBoardData boardData) { }
+
+	// RVA: 0x18BEED8 Offset: 0x18BEED8 VA: 0x18BEED8
+	public void .ctor(BoardItemPerishableSpawner perishableSpawner) { }
+
+	// RVA: 0x18BEF44 Offset: 0x18BEF44 VA: 0x18BEF44
+	public bool GetUsesEnergy() { }
+
+	// RVA: 0x18BEF60 Offset: 0x18BEF60 VA: 0x18BEF60
+	public int GetCapacity() { }
+
+	// RVA: 0x18BEFF4 Offset: 0x18BEFF4 VA: 0x18BEFF4
+	public bool GetNonProbabilistic() { }
+
+	// RVA: 0x18BF010 Offset: 0x18BF010 VA: 0x18BF010
+	public bool GetUseIndexedSpawn() { }
+
+	// RVA: 0x18BF02C Offset: 0x18BF02C VA: 0x18BF02C
+	public List<SpawnedItem> GetSpawnedItems(bool useOriginalSetID = False) { }
+
+	// RVA: 0x18BF7B0 Offset: 0x18BF7B0 VA: 0x18BF7B0
+	public List<SpawnIndexedItemGroup> GetIndexedItemGroups() { }
+
+	// RVA: 0x18BF7CC Offset: 0x18BF7CC VA: 0x18BF7CC
+	public void UpdatePerishedSpawn(IBoardData boardData, int setID, int level) { }
+
+	// RVA: 0x18BF8BC Offset: 0x18BF8BC VA: 0x18BF8BC
+	public BoardItemData GetPerishedSpawn() { }
+
+	// RVA: 0x18BF8C4 Offset: 0x18BF8C4 VA: 0x18BF8C4
+	public int GetChargedCapacity() { }
+
+	// RVA: 0x18BF8CC Offset: 0x18BF8CC VA: 0x18BF8CC
+	public bool GetShowItemPercentages() { }
+
+	// RVA: 0x18BF8D4 Offset: 0x18BF8D4 VA: 0x18BF8D4
+	public bool GetHasProgressText() { }
+}
+

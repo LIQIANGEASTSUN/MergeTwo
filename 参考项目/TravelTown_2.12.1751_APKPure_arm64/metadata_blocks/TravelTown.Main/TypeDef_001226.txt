@@ -1,0 +1,22 @@
+// Namespace: MergeEngine.Configuration.Orders.Difficulty
+[Extension]
+public static class MergeItemUtils // TypeDefIndex: 1226
+{
+	// Methods
+
+	// RVA: 0x6A1D7F8 Offset: 0x6A197F8 VA: 0x6A1D7F8
+	public static bool IsPrimaryProducer(IMergeGraphItem graph) { }
+
+	[Extension]
+	// RVA: 0x6A1D910 Offset: 0x6A19910 VA: 0x6A1D910
+	public static bool IsJokerItem(IMergeItem mergeItem) { }
+
+	[Extension]
+	// RVA: 0x6A1D9C4 Offset: 0x6A199C4 VA: 0x6A1D9C4
+	public static bool IsSplitterItem(IMergeItem mergeItem) { }
+
+	[Extension]
+	// RVA: 0x6A1DAE8 Offset: 0x6A19AE8 VA: 0x6A1DAE8
+	public static bool IsSecondaryProducerItem(IMergeItem mergeItem) { }
+}
+

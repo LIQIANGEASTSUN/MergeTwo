@@ -1,0 +1,58 @@
+// Namespace: Merger.MergeBoard.Components
+public struct TimeLimitedActivationComponent : IComponent, ITimeLimitedActivationComponent // TypeDefIndex: 26022
+{
+	// Fields
+	[CompilerGenerated]
+	private long <TimerDuration>k__BackingField; // 0x0
+	[CompilerGenerated]
+	private long <ExpirationTimeStamp>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private long <ActivationTimeStamp>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private bool <HasExpired>k__BackingField; // 0x18
+
+	// Properties
+	public long TimerDuration { get; set; }
+	public long ExpirationTimeStamp { get; set; }
+	public long ActivationTimeStamp { get; set; }
+	public bool HasExpired { get; set; }
+
+	// Methods
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9C53C Offset: 0x6A9853C VA: 0x6A9C53C
+	public long get_TimerDuration() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C544 Offset: 0x6A98544 VA: 0x6A9C544
+	public void set_TimerDuration(long value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9C54C Offset: 0x6A9854C VA: 0x6A9C54C Slot: 4
+	public long get_ExpirationTimeStamp() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C554 Offset: 0x6A98554 VA: 0x6A9C554
+	public void set_ExpirationTimeStamp(long value) { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9C55C Offset: 0x6A9855C VA: 0x6A9C55C Slot: 5
+	public long get_ActivationTimeStamp() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C564 Offset: 0x6A98564 VA: 0x6A9C564
+	public void set_ActivationTimeStamp(long value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9C56C Offset: 0x6A9856C VA: 0x6A9C56C Slot: 6
+	public bool get_HasExpired() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C574 Offset: 0x6A98574 VA: 0x6A9C574
+	public void set_HasExpired(bool value) { }
+}
+

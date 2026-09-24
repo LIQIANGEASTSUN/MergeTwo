@@ -1,0 +1,7 @@
+// Namespace: 
+public struct EnergyMultiplierEvents.MultiplierEntityChanged : IEvent // TypeDefIndex: 4779
+{
+	// Fields
+	public int Multiplier; // 0x0
+}
+

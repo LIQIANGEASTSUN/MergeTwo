@@ -1,0 +1,41 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "ItemSet_", menuName = "Scriptable/BoardItemSet/BoardItemSetData", order = 4)]
+public class BoardItemSetData : ScriptableObject // TypeDefIndex: 1668
+{
+	// Fields
+	public int SetID; // 0xC
+	public string Name; // 0x10
+	public List<BoardItemData> Items; // 0x14
+	public BoardItemData ItemSpawnedByLastLevel; // 0x18
+	public PriceGroupData PriceGroup; // 0x1C
+	public JellyGroupData JellyGroupData; // 0x20
+	public bool HasTip; // 0x24
+	public bool HasSplitTip; // 0x25
+	public bool HasShortTip; // 0x26
+	public List<BoardItemData> TipItems; // 0x28
+	public int RemoveLevel; // 0x2C
+	public bool UseVariantLocalization; // 0x30
+	public int FeatureID; // 0x34
+	public Sprite TutorialImage; // 0x38
+
+	// Methods
+
+	// RVA: 0x18CC8C4 Offset: 0x18CC8C4 VA: 0x18CC8C4
+	public bool IsFeature() { }
+
+	// RVA: 0x18CC8E0 Offset: 0x18CC8E0 VA: 0x18CC8E0
+	public bool IsBoardEventFeature() { }
+
+	// RVA: 0x18CC8F8 Offset: 0x18CC8F8 VA: 0x18CC8F8
+	public bool IsRecurringEventFeature() { }
+
+	// RVA: 0x18CC910 Offset: 0x18CC910 VA: 0x18CC910
+	public bool IsDefaultBoardFeature() { }
+
+	// RVA: 0x18CC934 Offset: 0x18CC934 VA: 0x18CC934
+	public bool IsDailyChallengeFeature() { }
+
+	// RVA: 0x18CC94C Offset: 0x18CC94C VA: 0x18CC94C
+	public void .ctor() { }
+}
+

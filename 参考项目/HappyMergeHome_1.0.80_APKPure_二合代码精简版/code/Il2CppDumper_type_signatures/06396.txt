@@ -1,0 +1,36 @@
+// Namespace: Activity.MapAdventure_2
+public class MapAdventureTwoMergeBoard_Big : MergeBoard // TypeDefIndex: 6396
+{
+	// Methods
+
+	// RVA: 0x1AE9D6C Offset: 0x1AE9D6C VA: 0x1AE9D6C Slot: 5
+	public override void InitBoardId() { }
+
+	// RVA: 0x1AE9DCC Offset: 0x1AE9DCC VA: 0x1AE9DCC Slot: 9
+	public override TableMergeItem MergeToProductActivity(int index, TableMergeItem newConfig, TableMergeItem oldConfig) { }
+
+	// RVA: 0x1AEA288 Offset: 0x1AEA288 VA: 0x1AEA288 Slot: 7
+	public override void OnNewItem(int index, int oldIndex, int id, int oldId, RefreshItemSource source) { }
+
+	// RVA: 0x1AEA350 Offset: 0x1AEA350 VA: 0x1AEA350 Slot: 6
+	public override void OnUseItem(int index, int id) { }
+
+	// RVA: 0x1AEA3FC Offset: 0x1AEA3FC VA: 0x1AEA3FC
+	public void Release() { }
+
+	// RVA: 0x1AEA564 Offset: 0x1AEA564 VA: 0x1AEA564
+	public void .ctor() { }
+
+	// RVA: 0x1AEA56C Offset: 0x1AEA56C VA: 0x1AEA56C
+	public void <>iFixBaseProxy_InitBoardId() { }
+
+	// RVA: 0x1AEA574 Offset: 0x1AEA574 VA: 0x1AEA574
+	public TableMergeItem <>iFixBaseProxy_MergeToProductActivity(int P0, TableMergeItem P1, TableMergeItem P2) { }
+
+	// RVA: 0x1AEA590 Offset: 0x1AEA590 VA: 0x1AEA590
+	public void <>iFixBaseProxy_OnNewItem(int P0, int P1, int P2, int P3, RefreshItemSource P4) { }
+
+	// RVA: 0x1AEA5B8 Offset: 0x1AEA5B8 VA: 0x1AEA5B8
+	public void <>iFixBaseProxy_OnUseItem(int P0, int P1) { }
+}
+

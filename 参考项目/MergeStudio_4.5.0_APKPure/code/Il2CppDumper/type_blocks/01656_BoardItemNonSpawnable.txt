@@ -1,0 +1,18 @@
+// Namespace: MergePuzzle
+public abstract class BoardItemNonSpawnable : BoardItemData // TypeDefIndex: 1656
+{
+	// Methods
+
+	// RVA: 0x18CA208 Offset: 0x18CA208 VA: 0x18CA208 Slot: 4
+	public override bool Initialize(BoardEntity boardEntity, IItemController item, long millisecondsPassed, bool isNewlyCreated) { }
+
+	// RVA: 0x18CA210 Offset: 0x18CA210 VA: 0x18CA210 Slot: 6
+	public override int GetTimeRequiredToExitCharging() { }
+
+	// RVA: 0x18CA218 Offset: 0x18CA218 VA: 0x18CA218 Slot: 12
+	public override bool IsSpawnableFromRewardArea() { }
+
+	// RVA: 0x18C6414 Offset: 0x18C6414 VA: 0x18C6414
+	protected void .ctor() { }
+}
+

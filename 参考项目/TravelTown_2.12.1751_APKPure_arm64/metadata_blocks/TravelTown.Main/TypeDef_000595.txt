@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardItemUtil.<>c // TypeDefIndex: 595
+{
+	// Fields
+	public static readonly BoardItemUtil.<>c <>9; // 0x0
+	public static Func<PositionComponent, bool> <>9__1_1; // 0x8
+
+	// Methods
+
+	// RVA: 0x626F4CC Offset: 0x626B4CC VA: 0x626F4CC
+	private static void .cctor() { }
+
+	// RVA: 0x626F534 Offset: 0x626B534 VA: 0x626F534
+	public void .ctor() { }
+
+	// RVA: 0x626F53C Offset: 0x626B53C VA: 0x626F53C
+	internal bool <GetPositionItemClosestToInventory>b__1_1(PositionComponent item) { }
+}
+

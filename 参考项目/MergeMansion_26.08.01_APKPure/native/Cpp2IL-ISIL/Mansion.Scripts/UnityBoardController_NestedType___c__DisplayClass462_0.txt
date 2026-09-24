@@ -1,0 +1,37 @@
+Type: UnityBoardController+<>c__DisplayClass462_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0327874C LDUR V0, [X19 + 0x48]
+	0x03278750 LDUR V2, [X19 + 0x58]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void <AnimateCollectibleBoardEventCollectActionReward>b__0()
+
+Disassembly:
+	0x03278754 MOVN W8, 0x0
+	0x03278758 STP V0, V2, [X31 + 0xF0]
+	0x0327875C STR W8, [X19]
+	0x03278760 STUR V1, [X19 + 0x48]
+	0x03278764 STUR V1, [X19 + 0x58]
+	0x03278768 ADRP X8, 0x246D000
+	0x0327876C LDR X8, [X8 + 0xCF8]
+	0x03278770 LDR X2, [X8]
+
+ISIL:
+	001 Move X8, X0
+	002 Move X0, [X0+16]
+	003 Compare X0, 0
+	004 JumpIfEqual {9}
+	005 Move X1, [X8+24]
+	006 Move X2, X31
+	007 Call UnityBoardController.ReturnBoardItemHandlerToPool, X0, X1
+	008 Return 
+	009 Move [X31-16], X30
+	010 Call 0x239FB90
+

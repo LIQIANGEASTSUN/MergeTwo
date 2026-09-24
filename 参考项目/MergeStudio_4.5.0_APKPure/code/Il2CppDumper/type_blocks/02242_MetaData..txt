@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MetaData.<>c__DisplayClass20_0 // TypeDefIndex: 2242
+{
+	// Fields
+	public int level; // 0x8
+
+	// Methods
+
+	// RVA: 0x19B1D38 Offset: 0x19B1D38 VA: 0x19B1D38
+	public void .ctor() { }
+
+	// RVA: 0x19B2714 Offset: 0x19B2714 VA: 0x19B2714
+	internal bool <GetRevealTaskForLevel>b__0(MetaTaskItemData item) { }
+}
+

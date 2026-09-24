@@ -1,0 +1,89 @@
+// Namespace: Framework.Core.Services
+public abstract class BlockingFlagsService<TEnum> : ServiceBase, IBlockingFlags<TEnum>, IDebugBlockingFlags // TypeDefIndex: 10569
+{
+	// Fields
+	private readonly IBlockingFlags<TEnum> _blockingFlags; // 0x0
+
+	// Properties
+	public BindableProperty<bool> Enabled { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 19
+	public BindableProperty<bool> get_Enabled() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C1693C Offset: 0x4C1293C VA: 0x4C1693C
+	|-BlockingFlagsService<Int32Enum>.get_Enabled
+	|
+	|-RVA: 0x4C16D44 Offset: 0x4C12D44 VA: 0x4C16D44
+	|-BlockingFlagsService<__Il2CppFullySharedGenericStructType>.get_Enabled
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 21
+	public void RaiseBlockingFlag(TEnum flagToRaise) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C169C4 Offset: 0x4C129C4 VA: 0x4C169C4
+	|-BlockingFlagsService<Int32Enum>.RaiseBlockingFlag
+	|
+	|-RVA: 0x4C16DCC Offset: 0x4C12DCC VA: 0x4C16DCC
+	|-BlockingFlagsService<__Il2CppFullySharedGenericStructType>.RaiseBlockingFlag
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 20
+	public void ClearBlockingFlag(TEnum flagToClear) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C16A60 Offset: 0x4C12A60 VA: 0x4C16A60
+	|-BlockingFlagsService<Int32Enum>.ClearBlockingFlag
+	|
+	|-RVA: 0x4C16ED0 Offset: 0x4C12ED0 VA: 0x4C16ED0
+	|-BlockingFlagsService<__Il2CppFullySharedGenericStructType>.ClearBlockingFlag
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 22
+	public void ClearBlockingFlags(TEnum[] flags) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C16AFC Offset: 0x4C12AFC VA: 0x4C16AFC
+	|-BlockingFlagsService<Int32Enum>.ClearBlockingFlags
+	|
+	|-RVA: 0x4C16FD4 Offset: 0x4C12FD4 VA: 0x4C16FD4
+	|-BlockingFlagsService<__Il2CppFullySharedGenericStructType>.ClearBlockingFlags
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 23
+	public bool HasBlockingFlag(TEnum flag) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C16B98 Offset: 0x4C12B98 VA: 0x4C16B98
+	|-BlockingFlagsService<Int32Enum>.HasBlockingFlag
+	|
+	|-RVA: 0x4C17070 Offset: 0x4C13070 VA: 0x4C17070
+	|-BlockingFlagsService<__Il2CppFullySharedGenericStructType>.HasBlockingFlag
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 24
+	private List<string> Framework.Util.BlockingFlags.IDebugBlockingFlags.GetBlockingFlags() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C16C34 Offset: 0x4C12C34 VA: 0x4C16C34
+	|-BlockingFlagsService<Int32Enum>.Framework.Util.BlockingFlags.IDebugBlockingFlags.GetBlockingFlags
+	|
+	|-RVA: 0x4C17180 Offset: 0x4C13180 VA: 0x4C17180
+	|-BlockingFlagsService<__Il2CppFullySharedGenericStructType>.Framework.Util.BlockingFlags.IDebugBlockingFlags.GetBlockingFlags
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C16CD4 Offset: 0x4C12CD4 VA: 0x4C16CD4
+	|-BlockingFlagsService<Int32Enum>..ctor
+	|
+	|-RVA: 0x4C17220 Offset: 0x4C13220 VA: 0x4C17220
+	|-BlockingFlagsService<__Il2CppFullySharedGenericStructType>..ctor
+	*/
+}
+

@@ -1,0 +1,9 @@
+// Namespace: 
+public struct BoardEvent.BoardItemRemoved : IEvent // TypeDefIndex: 1813
+{
+	// Fields
+	public ItemController Item; // 0x0
+	public bool InventoryAdd; // 0x4
+	public bool IsItemSell; // 0x5
+}
+

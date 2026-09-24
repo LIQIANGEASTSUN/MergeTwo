@@ -1,0 +1,26 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemsStateSystemBase.<>c__DisplayClass10_0<TLoadable> // TypeDefIndex: 779
+{
+	// Fields
+	public string itemUuid; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F34FF4 Offset: 0x3F30FF4 VA: 0x3F34FF4
+	|-ItemsStateSystemBase.<>c__DisplayClass10_0<object>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal bool <TryGetExistingItem>b__0(IdComponent idComponent) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F34FFC Offset: 0x3F30FFC VA: 0x3F34FFC
+	|-ItemsStateSystemBase.<>c__DisplayClass10_0<object>.<TryGetExistingItem>b__0
+	*/
+}
+

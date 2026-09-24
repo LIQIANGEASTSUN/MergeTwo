@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardExpendOperationDataCreator.<>c // TypeDefIndex: 25864
+{
+	// Fields
+	public static readonly BoardExpendOperationDataCreator.<>c <>9; // 0x0
+	public static Func<TimeDurationEndedResult, bool> <>9__2_0; // 0x8
+	public static Func<ItemSpawnedResult, bool> <>9__2_1; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A8B6B8 Offset: 0x6A876B8 VA: 0x6A8B6B8
+	private static void .cctor() { }
+
+	// RVA: 0x6A8B720 Offset: 0x6A87720 VA: 0x6A8B720
+	public void .ctor() { }
+
+	// RVA: 0x6A8B728 Offset: 0x6A87728 VA: 0x6A8B728
+	internal bool <CreateOperationData>b__2_0(TimeDurationEndedResult item) { }
+
+	// RVA: 0x6A8B77C Offset: 0x6A8777C VA: 0x6A8B77C
+	internal bool <CreateOperationData>b__2_1(ItemSpawnedResult item) { }
+}
+

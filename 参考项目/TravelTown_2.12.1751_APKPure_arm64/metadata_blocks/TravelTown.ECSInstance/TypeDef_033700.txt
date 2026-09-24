@@ -1,0 +1,57 @@
+// Namespace: ContextualizedECS.Context
+public class EntitiesManager : IEntitiesHolder // TypeDefIndex: 33700
+{
+	// Fields
+	[CompilerGenerated]
+	private Action<Entity> EntityAdded; // 0x10
+	[CompilerGenerated]
+	private Action<Entity> EntityRemoved; // 0x18
+	[CompilerGenerated]
+	private Action EntitiesCleared; // 0x20
+	private readonly List<Entity> _entities; // 0x28
+
+	// Properties
+	public IEnumerable<Entity> Entities { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5F15E14 Offset: 0x5F11E14 VA: 0x5F15E14
+	public void add_EntityAdded(Action<Entity> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x5F15EC4 Offset: 0x5F11EC4 VA: 0x5F15EC4
+	public void remove_EntityAdded(Action<Entity> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x5F15F74 Offset: 0x5F11F74 VA: 0x5F15F74
+	public void add_EntityRemoved(Action<Entity> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x5F16024 Offset: 0x5F12024 VA: 0x5F16024
+	public void remove_EntityRemoved(Action<Entity> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x5F160D4 Offset: 0x5F120D4 VA: 0x5F160D4
+	public void add_EntitiesCleared(Action value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x5F16170 Offset: 0x5F12170 VA: 0x5F16170
+	public void remove_EntitiesCleared(Action value) { }
+
+	// RVA: 0x5F1620C Offset: 0x5F1220C VA: 0x5F1620C Slot: 4
+	public IEnumerable<Entity> get_Entities() { }
+
+	// RVA: 0x5F16214 Offset: 0x5F12214 VA: 0x5F16214 Slot: 5
+	public Entity AddEntity(Entity entity) { }
+
+	// RVA: 0x5F162E0 Offset: 0x5F122E0 VA: 0x5F162E0 Slot: 6
+	public bool RemoveEntity(Entity entity) { }
+
+	// RVA: 0x5F16368 Offset: 0x5F12368 VA: 0x5F16368 Slot: 7
+	public void ClearEntities() { }
+
+	// RVA: 0x5F163F0 Offset: 0x5F123F0 VA: 0x5F163F0
+	public void .ctor() { }
+}
+

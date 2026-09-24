@@ -1,0 +1,20 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoosterActivator.<>c__DisplayClass8_0 // TypeDefIndex: 7790
+{
+	// Fields
+	public string uuId; // 0x10
+	public BoosterActivator <>4__this; // 0x18
+
+	// Methods
+
+	// RVA: 0x65C82D0 Offset: 0x65C42D0 VA: 0x65C82D0
+	public void .ctor() { }
+
+	// RVA: 0x65C8FD8 Offset: 0x65C4FD8 VA: 0x65C8FD8
+	internal bool <CanActivateBooster>b__0(RemoteBoosterData activeBooster) { }
+
+	// RVA: 0x65C901C Offset: 0x65C501C VA: 0x65C901C
+	internal IBoosterItem <CanActivateBooster>b__1(BoosterIdComponent boosterId) { }
+}
+

@@ -1,0 +1,86 @@
+Type: Code.GameLogic.GameEvents.DigEventTreasureItem
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0381184C TBZ X0, 0x0, 0x3811970
+	0x03811850 LDR X1, [X19]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(System.String treasureName, System.Collections.Generic.List`1<System.ValueTuple`2<System.Int32, System.Int32>> shape, Metaplay.Core.Math.F32 weight, System.String assetId, System.Boolean isShiny = False)
+
+Disassembly:
+	0x03811854 ADD X0, X31, 0x30
+	0x03811858 BL 0x2848DD4
+	0x0381185C LDR X29, [X0]
+	0x03811860 CBZ X29, 0x381199C
+	0x03811864 LDR X8, [X29 + 0x10]
+	0x03811868 CBZ X8, 0x38119A0
+	0x0381186C LDR X24, [X8 + 0x48]
+	0x03811870 CBZ X24, 0x3811998
+	0x03811874 LDR W8, [X24 + 0x18]
+	0x03811878 CMP W8, 0x1
+	0x0381187C B.LT 0x381183C
+	0x03811880 MOV W23, W31
+	0x03811884 LDR X3, [X20]
+	0x03811888 ADD X2, X31, 0x40
+	0x0381188C MOV X0, X24
+	0x03811890 MOV W1, W23
+	0x03811894 BL 0x272B3C4
+	0x03811898 LDR X0, [X28]
+	0x0381189C LDR X25, [X31 + 0x40]
+	0x038118A0 LDR W8, [X0 + 0xE4]
+	0x038118A4 CBNZ W8, 0x38118AC
+	0x038118A8 BL 0x239BA64
+	0x038118AC LDR X2, [X27]
+	0x038118B0 MOV X0, X21
+	0x038118B4 MOV X1, X25
+	0x038118B8 BL 0x27FF704
+	0x038118BC TBNZ X0, 0x0, 0x38118D4
+	0x038118C0 LDR W8, [X24 + 0x18]
+	0x038118C4 ADD W23, W23, 0x1
+	0x038118C8 CMP W23, W8
+
+ISIL:
+	001 Move [X31-64], X30
+	002 Move [X31+16], X24
+	003 Move [X31+24], X23
+	004 Move [X31+32], X22
+	005 Move [X31+40], X21
+	006 Move [X31+48], X20
+	007 Move [X31+56], X19
+	008 Move X23, X1
+	009 Move X1, X31
+	010 Move W19, W5
+	011 Move X20, X4
+	012 Move X21, X3
+	013 Move X22, X2
+	014 Move X24, X0
+	015 Call Object..ctor, X0
+	016 Move X0, X24
+	017 Move X1, X23
+	018 Move [X0+16], X23
+	019 Call 0x239F888
+	020 Move X0, X24
+	021 Move X1, X22
+	022 Move [X0+24], X22
+	023 Call 0x239F888
+	024 Move [X24+40], X20
+	025 Move X0, X24
+	026 Move [X24-8], W21
+	027 Move X1, X20
+	028 NotImplemented "Instruction STURB not yet implemented."
+	029 Move X20, [X31+48]
+	030 Move X19, [X31+56]
+	031 Move X22, [X31+32]
+	032 Move X21, [X31+40]
+	033 Move X24, [X31+16]
+	034 Move X23, [X31+24]
+	035 Move X30, [X31+64]
+	036 Call 0x239F888
+	037 Return 
+

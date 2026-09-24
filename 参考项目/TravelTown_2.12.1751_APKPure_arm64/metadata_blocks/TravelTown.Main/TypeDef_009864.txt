@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class SyncBoardService.<>c__DisplayClass14_0 // TypeDefIndex: 9864
+{
+	// Fields
+	public BoardItem boardItem; // 0x10
+
+	// Methods
+
+	// RVA: 0x67CAD84 Offset: 0x67C6D84 VA: 0x67CAD84
+	public void .ctor() { }
+
+	// RVA: 0x67CB458 Offset: 0x67C7458 VA: 0x67CB458
+	internal bool <ConstructBoardItems>b__1(IdComponent idComponent) { }
+}
+

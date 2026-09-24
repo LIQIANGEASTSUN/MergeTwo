@@ -1,0 +1,19 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public class DynamicItemConfigComponent : ComponentBase<DynamicMergeItemConfig> // TypeDefIndex: 1057
+{
+	// Properties
+	public DynamicMergeItemConfig DynamicItemConfig { get; }
+	public string DynamicMergeItemId { get; }
+
+	// Methods
+
+	// RVA: 0x68FC01C Offset: 0x68F801C VA: 0x68FC01C
+	public DynamicMergeItemConfig get_DynamicItemConfig() { }
+
+	// RVA: 0x68FC058 Offset: 0x68F8058 VA: 0x68FC058
+	public string get_DynamicMergeItemId() { }
+
+	// RVA: 0x68FC0A0 Offset: 0x68F80A0 VA: 0x68FC0A0
+	public void .ctor(DynamicMergeItemConfig capability, Entity entity) { }
+}
+

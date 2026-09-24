@@ -1,0 +1,64 @@
+Type: UnityBoardController+<>c__DisplayClass349_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03277BD4 B 0x3277BFC
+	0x03277BD8 B 0x3277BFC
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void <ProcessEnqueuedAutoSellItemFromBoardActs>b__2()
+
+Disassembly:
+	0x03277BDC B 0x3277BFC
+	0x03277BE0 B 0x3277BFC
+	0x03277BE4 B 0x3277BFC
+	0x03277BE8 B 0x3277BFC
+	0x03277BEC B 0x3277BFC
+	0x03277BF0 B 0x3277BFC
+	0x03277BF4 B 0x3277BFC
+	0x03277BF8 B 0x3277BFC
+	0x03277BFC MOV X20, X0
+	0x03277C00 CMP W1, 0x1
+	0x03277C04 B.NE 0x3277CB4
+	0x03277C08 MOV X0, X20
+	0x03277C0C BL 0x53E9080
+	0x03277C10 MOV X20, X0
+	0x03277C14 ADRP X0, 0x2456000
+	0x03277C18 LDR X0, [X0 + 0x388]
+	0x03277C1C BL 0x239B8F8
+	0x03277C20 LDR X8, [X20]
+	0x03277C24 LDR X1, [X8]
+	0x03277C28 BL 0x239BF98
+	0x03277C2C TBZ X0, 0x0, 0x3277C8C
+
+ISIL:
+	001 Subtract X31, X31, 112
+	002 Move [X31+80], X30
+	003 Move [X31+96], X20
+	004 Move [X31+104], X19
+	005 Move X19, [X0+104]
+	006 Compare X19, 0
+	007 JumpIfEqual {24}
+	008 Move X8, X0
+	009 Move X20, [X0+96]
+	010 Add X0, X31, 0
+	011 Add X1, X8, 16
+	012 Move W2, 80
+	013 Call 0x53ED0D0
+	014 Add X1, X31, 0
+	015 Move X0, X19
+	016 Move X2, X20
+	017 Move X3, X31
+	018 Call UnityBoardController.PlayRewardAnimationsAndRemoveVisualItems, X0, X1, X2
+	019 Move X20, [X31+96]
+	020 Move X19, [X31+104]
+	021 Move X30, [X31+80]
+	022 Add X31, X31, 112
+	023 Return 
+	024 Call 0x239FB90
+

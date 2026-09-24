@@ -1,0 +1,20 @@
+// Namespace: MergeEngine.ECS.Components.Items.Producers
+public class SpawnerComponent : ItemSpawningComponent<SpawnCapability> // TypeDefIndex: 1107
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly bool <Anywhere>k__BackingField; // 0x88
+
+	// Properties
+	public bool Anywhere { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6900474 Offset: 0x68FC474 VA: 0x6900474
+	public bool get_Anywhere() { }
+
+	// RVA: 0x690047C Offset: 0x68FC47C VA: 0x690047C
+	public void .ctor(SpawnCapability capability, Entity entity) { }
+}
+

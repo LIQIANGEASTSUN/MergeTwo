@@ -1,0 +1,18 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ImmediateToolCollectSystem.<>c__DisplayClass17_0 // TypeDefIndex: 1000
+{
+	// Fields
+	public ImmediateToolComponent toolClicked; // 0x10
+	public ImmediateToolCollectSystem <>4__this; // 0x18
+	public PositionComponent positionComponent; // 0x20
+
+	// Methods
+
+	// RVA: 0x67A1510 Offset: 0x679D510 VA: 0x67A1510
+	public void .ctor() { }
+
+	// RVA: 0x67A18DC Offset: 0x679D8DC VA: 0x67A18DC
+	internal void <AnimateToolsToInventorySequence>g__OnAllToolsReachedTarget|0() { }
+}
+

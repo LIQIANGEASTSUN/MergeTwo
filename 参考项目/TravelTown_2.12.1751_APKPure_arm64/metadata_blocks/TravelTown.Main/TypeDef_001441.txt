@@ -1,0 +1,29 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ExpendableCapability.<>c // TypeDefIndex: 1441
+{
+	// Fields
+	public static readonly ExpendableCapability.<>c <>9; // 0x0
+	public static Func<EmptiableWeightedItemSpawnable, bool> <>9__13_0; // 0x8
+	public static Func<EmptiableWeightedItemSpawnable, IMergeItem> <>9__13_1; // 0x10
+	public static Func<WeightedItemSpawnable, IMergeItem> <>9__13_2; // 0x18
+
+	// Methods
+
+	// RVA: 0x601037C Offset: 0x600C37C VA: 0x601037C
+	private static void .cctor() { }
+
+	// RVA: 0x60103E4 Offset: 0x600C3E4 VA: 0x60103E4
+	public void .ctor() { }
+
+	// RVA: 0x60103EC Offset: 0x600C3EC VA: 0x60103EC
+	internal bool <get_SpawnedMergeItems>b__13_0(EmptiableWeightedItemSpawnable empitable) { }
+
+	// RVA: 0x601040C Offset: 0x600C40C VA: 0x601040C
+	internal IMergeItem <get_SpawnedMergeItems>b__13_1(EmptiableWeightedItemSpawnable weightedItem) { }
+
+	// RVA: 0x6010430 Offset: 0x600C430 VA: 0x6010430
+	internal IMergeItem <get_SpawnedMergeItems>b__13_2(WeightedItemSpawnable item) { }
+}
+

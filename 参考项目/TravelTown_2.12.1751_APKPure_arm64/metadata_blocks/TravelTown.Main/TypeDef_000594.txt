@@ -1,0 +1,55 @@
+// Namespace: MergeEngine.ECS
+public class ItemsEntityService : ServiceBase, IItemsEntityService // TypeDefIndex: 594
+{
+	// Fields
+	[Inject]
+	private IServerTimeService _serverTimeService; // 0x28
+	[Inject]
+	private ISystemManager _systemManager; // 0x30
+
+	// Properties
+	private DateTime ServerDateTime { get; }
+	public double TotalSecondsNow { get; }
+	private long CurrentServerTimeMS { get; }
+
+	// Methods
+
+	// RVA: 0x626E2B8 Offset: 0x626A2B8 VA: 0x626E2B8
+	private DateTime get_ServerDateTime() { }
+
+	// RVA: 0x626E35C Offset: 0x626A35C VA: 0x626E35C
+	public double get_TotalSecondsNow() { }
+
+	// RVA: 0x626E40C Offset: 0x626A40C VA: 0x626E40C
+	private long get_CurrentServerTimeMS() { }
+
+	// RVA: 0x626E4AC Offset: 0x626A4AC VA: 0x626E4AC Slot: 19
+	public void TryLoadSharedItemComponents(Entity entity, ItemPayloadBase item) { }
+
+	// RVA: 0x626EA4C Offset: 0x626AA4C VA: 0x626EA4C
+	private void TryInitializeTimeLimitedItem(Entity entity, ItemPayloadBase item) { }
+
+	// RVA: -1 Offset: -1
+	private bool TryLoadComponent<TComponent, TPayload>(TComponent component, TPayload payload) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3CE8960 Offset: 0x3CE4960 VA: 0x3CE8960
+	|-ItemsEntityService.TryLoadComponent<object, object>
+	|
+	|-RVA: 0x3CE8A20 Offset: 0x3CE4A20 VA: 0x3CE8A20
+	|-ItemsEntityService.TryLoadComponent<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x626E98C Offset: 0x626A98C VA: 0x626E98C
+	private void CalculateBubbleTimeLeft(SerializedLockedComponent lockedComponent) { }
+
+	// RVA: 0x626E9EC Offset: 0x626A9EC VA: 0x626E9EC
+	private void CalculateUnlockTimeLeft(SerializedTimeLockComponent timeLockComponent) { }
+
+	// RVA: 0x626E8E8 Offset: 0x626A8E8 VA: 0x626E8E8
+	private void CalculateCyclesDelay(SerializedItemSpawningComponent itemSpawningComponent) { }
+
+	// RVA: 0x626ECCC Offset: 0x626ACCC VA: 0x626ECCC
+	public void .ctor() { }
+}
+

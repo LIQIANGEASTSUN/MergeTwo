@@ -1,0 +1,28 @@
+// Namespace: MergeEngine.ECS.Components
+public class PersistentComponent : ComponentBase<PersistentCapability> // TypeDefIndex: 1022
+{
+	// Fields
+	public bool IsDirty; // 0x28
+	[CompilerGenerated]
+	private readonly string <PersistentStoreKey>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private readonly bool <UseLiveOpsPrefix>k__BackingField; // 0x38
+
+	// Properties
+	public string PersistentStoreKey { get; }
+	public bool UseLiveOpsPrefix { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x68F8604 Offset: 0x68F4604 VA: 0x68F8604
+	public string get_PersistentStoreKey() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68F860C Offset: 0x68F460C VA: 0x68F860C
+	public bool get_UseLiveOpsPrefix() { }
+
+	// RVA: 0x68F8614 Offset: 0x68F4614 VA: 0x68F8614
+	public void .ctor(PersistentCapability capability, Entity entity) { }
+}
+

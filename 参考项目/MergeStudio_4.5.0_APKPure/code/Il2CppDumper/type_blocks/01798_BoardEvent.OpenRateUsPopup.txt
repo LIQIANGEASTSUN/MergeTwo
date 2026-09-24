@@ -1,0 +1,9 @@
+// Namespace: 
+public struct BoardEvent.OpenRateUsPopup : IEvent // TypeDefIndex: 1798
+{
+	// Fields
+	public int TaskNo; // 0x0
+	public bool IsAfterPrePopup; // 0x4
+	public bool IsEnqueuePopup; // 0x5
+}
+

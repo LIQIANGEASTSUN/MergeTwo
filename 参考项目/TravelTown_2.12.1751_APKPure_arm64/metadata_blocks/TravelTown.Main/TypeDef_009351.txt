@@ -1,0 +1,83 @@
+// Namespace: Merger.Game.Signal
+public class BubbleBurstSignal : MergeItemBubbleSignalBase // TypeDefIndex: 9351
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly bool <IsBubbleOnMainBoard>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private readonly bool <WasBurstFree>k__BackingField; // 0x29
+	[CompilerGenerated]
+	private readonly double <SecondsUntilExpiry>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private readonly float <BubbleSpawnProbability>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private readonly string <AdCampaignId>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private readonly ResourceMultiple <BurstPrice>k__BackingField; // 0x48
+	[CompilerGenerated]
+	private readonly bool <BurstWithAd>k__BackingField; // 0x50
+	[CompilerGenerated]
+	private readonly bool <WasBubbleBlaster>k__BackingField; // 0x51
+	[CompilerGenerated]
+	private readonly int <BubbleTier>k__BackingField; // 0x54
+	[CompilerGenerated]
+	private readonly int <BlasterTier>k__BackingField; // 0x58
+
+	// Properties
+	public bool IsBubbleOnMainBoard { get; }
+	public bool WasBurstFree { get; }
+	public double SecondsUntilExpiry { get; }
+	public float BubbleSpawnProbability { get; }
+	public string AdCampaignId { get; }
+	public ResourceMultiple BurstPrice { get; }
+	public bool BurstWithAd { get; }
+	public bool WasBubbleBlaster { get; }
+	public int BubbleTier { get; }
+	public int BlasterTier { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x676AC68 Offset: 0x6766C68 VA: 0x676AC68
+	public bool get_IsBubbleOnMainBoard() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676AC70 Offset: 0x6766C70 VA: 0x676AC70
+	public bool get_WasBurstFree() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676AC78 Offset: 0x6766C78 VA: 0x676AC78
+	public double get_SecondsUntilExpiry() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676AC80 Offset: 0x6766C80 VA: 0x676AC80
+	public float get_BubbleSpawnProbability() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676AC88 Offset: 0x6766C88 VA: 0x676AC88
+	public string get_AdCampaignId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676AC90 Offset: 0x6766C90 VA: 0x676AC90
+	public ResourceMultiple get_BurstPrice() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676AC98 Offset: 0x6766C98 VA: 0x676AC98
+	public bool get_BurstWithAd() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676ACA0 Offset: 0x6766CA0 VA: 0x676ACA0
+	public bool get_WasBubbleBlaster() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676ACA8 Offset: 0x6766CA8 VA: 0x676ACA8
+	public int get_BubbleTier() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676ACB0 Offset: 0x6766CB0 VA: 0x676ACB0
+	public int get_BlasterTier() { }
+
+	// RVA: 0x676ACB8 Offset: 0x6766CB8 VA: 0x676ACB8
+	public void .ctor(IMergeItem item, int level, bool isBubbleOnMainBoard, bool wasBurstFree, double secondsUntilExpiry, float bubbleSpawnProbability, string adCampaignId, ResourceMultiple burstPrice, bool burstWithAd, bool wasBubbleBlaster, int bubbleTier, int blasterTier) { }
+}
+

@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class InteractionComponent.<>c // TypeDefIndex: 26003
+{
+	// Fields
+	public static readonly InteractionComponent.<>c <>9; // 0x0
+	public static Func<ItemMultiple, string> <>9__7_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x6A9BF84 Offset: 0x6A97F84 VA: 0x6A9BF84
+	private static void .cctor() { }
+
+	// RVA: 0x6A9BFEC Offset: 0x6A97FEC VA: 0x6A9BFEC
+	public void .ctor() { }
+
+	// RVA: 0x6A9BFF4 Offset: 0x6A97FF4 VA: 0x6A9BFF4
+	internal string <get_ItemsToConsumeIds>b__7_0(ItemMultiple item) { }
+}
+

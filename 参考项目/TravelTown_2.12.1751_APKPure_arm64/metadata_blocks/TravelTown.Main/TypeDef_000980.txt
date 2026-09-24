@@ -1,0 +1,12 @@
+// Namespace: MergeEngine.ECS.Systems.Items
+public class SetUndoOperationSignal // TypeDefIndex: 980
+{
+	// Fields
+	public IUndoOperation Operation; // 0x10
+
+	// Methods
+
+	// RVA: 0x6799030 Offset: 0x6795030 VA: 0x6799030
+	public void .ctor(IUndoOperation operation) { }
+}
+

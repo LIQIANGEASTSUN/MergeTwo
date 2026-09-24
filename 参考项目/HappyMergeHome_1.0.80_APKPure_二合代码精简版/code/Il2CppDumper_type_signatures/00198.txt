@@ -1,0 +1,181 @@
+// Namespace: 
+public class ButterflyWorkShopModel : ActivityEntityBase // TypeDefIndex: 198
+{
+	// Fields
+	public static bool InGuideChain; // 0x0
+	public const int BOARD_WIDTH = 5;
+	public const int BOARD_HEIGHT = 2;
+	private static ButterflyWorkShopModel _instance; // 0x4
+	private Dictionary<int, TableMergeItem> _mergeItemDictionary; // 0x3C
+	public int UnSetItemsCount; // 0x40
+	public const ulong Offset = 0;
+	private static GameObject _flyItemObj; // 0x8
+	private static GameObject _butterFly; // 0xC
+	private static string coolTimeKey; // 0x10
+	public bool IsInUseItem; // 0x44
+
+	// Properties
+	public static ButterflyWorkShopModel Instance { get; }
+	public override string Guid { get; }
+	public StorageButterflyWorkShop StorageButterflyWorkShop { get; }
+	public ButterflyWorkShopConfig ButterflyWorkShopConfig { get; }
+	public TableMergeLine MergeLineConfig { get; }
+	public Dictionary<int, TableMergeItem> MergeItemDictionary { get; }
+	public StorageList<int> UnSetItems { get; }
+	public bool IsStart { get; }
+	public int CurDay { get; }
+	public ulong CurTime { get; }
+	public List<ButterflyWorkShopProductAttenuationConfig> ProductAttenuationConfig { get; }
+	public static GameObject FlyItemObj { get; }
+	public static GameObject ButterFly { get; }
+	public static UIButterflyWorkShopMainController MainView { get; }
+	public virtual string MainUIPath { get; }
+
+	// Methods
+
+	// RVA: 0x29EC490 Offset: 0x29EC490 VA: 0x29EC490
+	public static ButterflyWorkShopModel get_Instance() { }
+
+	// RVA: 0x29ECEA4 Offset: 0x29ECEA4 VA: 0x29ECEA4 Slot: 4
+	public override string get_Guid() { }
+
+	[RuntimeInitializeOnLoadMethod(0)]
+	// RVA: 0x29ECF34 Offset: 0x29ECF34 VA: 0x29ECF34
+	private static void InitAuto() { }
+
+	// RVA: 0x29ECFE8 Offset: 0x29ECFE8 VA: 0x29ECFE8
+	public StorageButterflyWorkShop get_StorageButterflyWorkShop() { }
+
+	// RVA: 0x29ED48C Offset: 0x29ED48C VA: 0x29ED48C
+	public ButterflyWorkShopConfig get_ButterflyWorkShopConfig() { }
+
+	// RVA: 0x29ED680 Offset: 0x29ED680 VA: 0x29ED680
+	public ButterflyWorkShopRewardConfig GetButterflyWorkShopRewardConfig(int level) { }
+
+	// RVA: 0x29ED838 Offset: 0x29ED838 VA: 0x29ED838
+	public TableMergeLine get_MergeLineConfig() { }
+
+	// RVA: 0x29ED938 Offset: 0x29ED938 VA: 0x29ED938
+	public Dictionary<int, TableMergeItem> get_MergeItemDictionary() { }
+
+	// RVA: 0x29ED5C4 Offset: 0x29ED5C4 VA: 0x29ED5C4
+	public TableMergeItem GetMergeItemConfig(int level) { }
+
+	// RVA: 0x29EDC50 Offset: 0x29EDC50 VA: 0x29EDC50
+	public StorageList<int> get_UnSetItems() { }
+
+	// RVA: 0x29EC754 Offset: 0x29EC754 VA: 0x29EC754
+	public bool get_IsStart() { }
+
+	// RVA: 0x29EDCBC Offset: 0x29EDCBC VA: 0x29EDCBC
+	public bool IsOpened(bool hasLog = False) { }
+
+	// RVA: 0x29EDD8C Offset: 0x29EDD8C VA: 0x29EDD8C
+	public int get_CurDay() { }
+
+	// RVA: 0x29EDDF4 Offset: 0x29EDDF4 VA: 0x29EDDF4
+	public ulong get_CurTime() { }
+
+	// RVA: 0x29EDED4 Offset: 0x29EDED4 VA: 0x29EDED4
+	public List<ButterflyWorkShopProductAttenuationConfig> get_ProductAttenuationConfig() { }
+
+	// RVA: 0x29EDFD0 Offset: 0x29EDFD0 VA: 0x29EDFD0
+	public float GetProductAttenuationConfig(int dayProductCount) { }
+
+	// RVA: 0x29EE10C Offset: 0x29EE10C VA: 0x29EE10C
+	public void TryProductActivityItem(int index, int id, MergeBoard board, int doubleEnergyTimes) { }
+
+	// RVA: 0x29EECC8 Offset: 0x29EECC8 VA: 0x29EECC8
+	public static GameObject get_FlyItemObj() { }
+
+	// RVA: 0x29EE818 Offset: 0x29EE818 VA: 0x29EE818
+	public static void FlyProductItem(int itemId, Vector2 srcPos, Transform starTransform, float time, bool showEffect, Action action) { }
+
+	// RVA: 0x29EEF18 Offset: 0x29EEF18 VA: 0x29EEF18
+	public static GameObject get_ButterFly() { }
+
+	// RVA: 0x29EF18C Offset: 0x29EF18C VA: 0x29EF18C
+	public static void FlyButterFly(int index, Vector2 srcPos, Vector3 targetPos, float time, bool showEffect, Action action) { }
+
+	// RVA: 0x29EFA74 Offset: 0x29EFA74 VA: 0x29EFA74 Slot: 5
+	public override void InitFromServerData(string activityId, string activityType, ulong startTime, ulong endTime, ulong rewardEndTime, bool manualEnd, string configJson, string activitySubType) { }
+
+	// RVA: 0x29F0110 Offset: 0x29F0110 VA: 0x29F0110 Slot: 18
+	protected override void InitServerDataFinish() { }
+
+	// RVA: 0x29F01E4 Offset: 0x29F01E4 VA: 0x29F01E4
+	public bool IsClaimed(int index) { }
+
+	// RVA: 0x29EC574 Offset: 0x29EC574 VA: 0x29EC574
+	public void OpenMainPopup() { }
+
+	// RVA: 0x29F02B0 Offset: 0x29F02B0 VA: 0x29F02B0
+	public void PurchaseSuccess(TableShop tableShop) { }
+
+	// RVA: 0x29F0834 Offset: 0x29F0834 VA: 0x29F0834
+	public void PopReward(List<ResData> listResData) { }
+
+	// RVA: 0x29F0B80 Offset: 0x29F0B80 VA: 0x29F0B80
+	public static UIButterflyWorkShopMainController get_MainView() { }
+
+	// RVA: 0x29F0CD4 Offset: 0x29F0CD4 VA: 0x29F0CD4 Slot: 26
+	public virtual string get_MainUIPath() { }
+
+	// RVA: 0x29F0D80 Offset: 0x29F0D80 VA: 0x29F0D80
+	public static bool CanShowUI() { }
+
+	// RVA: 0x29F1410 Offset: 0x29F1410 VA: 0x29F1410
+	private static bool IsActivityStorageEnd(StorageButterflyWorkShop storage) { }
+
+	// RVA: 0x29EFD94 Offset: 0x29EFD94 VA: 0x29EFD94
+	public static void RemoveUselessStorage() { }
+
+	// RVA: 0x29F151C Offset: 0x29F151C VA: 0x29F151C
+	public StageRewardConfig GetStageRewardConfig() { }
+
+	// RVA: 0x29EF8B8 Offset: 0x29EF8B8 VA: 0x29EF8B8
+	public int GetButterFlyType(int index) { }
+
+	// RVA: 0x29F1850 Offset: 0x29F1850 VA: 0x29F1850
+	public int GetRandomIndex() { }
+
+	// RVA: 0x29F1E48 Offset: 0x29F1E48 VA: 0x29F1E48
+	public bool IsFinish() { }
+
+	[AsyncStateMachine(typeof(ButterflyWorkShopModel.<OnUseItem>d__62))]
+	// RVA: 0x29ECCF0 Offset: 0x29ECCF0 VA: 0x29ECCF0
+	public void OnUseItem(int index, int id) { }
+
+	// RVA: 0x29F1F2C Offset: 0x29F1F2C VA: 0x29F1F2C
+	public void CheckFinish() { }
+
+	[AsyncStateMachine(typeof(ButterflyWorkShopModel.<OnNewItem>d__64))]
+	// RVA: 0x29ECAE0 Offset: 0x29ECAE0 VA: 0x29ECAE0
+	public void OnNewItem(int index, int id, RefreshItemSource source) { }
+
+	// RVA: 0x29F2244 Offset: 0x29F2244 VA: 0x29F2244
+	public Transform GetFlyTarget() { }
+
+	// RVA: 0x29F2314 Offset: 0x29F2314 VA: 0x29F2314 Slot: 23
+	public override bool CanDownLoadRes() { }
+
+	// RVA: 0x29ECE40 Offset: 0x29ECE40 VA: 0x29ECE40
+	public void .ctor() { }
+
+	// RVA: 0x29F23C0 Offset: 0x29F23C0 VA: 0x29F23C0
+	private static void .cctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x29F243C Offset: 0x29F243C VA: 0x29F243C
+	private void <TryProductActivityItem>b__34_0() { }
+
+	// RVA: 0x29F244C Offset: 0x29F244C VA: 0x29F244C
+	public void <>iFixBaseProxy_InitFromServerData(string P0, string P1, ulong P2, ulong P3, ulong P4, bool P5, string P6, string P7) { }
+
+	// RVA: 0x29F24A0 Offset: 0x29F24A0 VA: 0x29F24A0
+	public void <>iFixBaseProxy_InitServerDataFinish() { }
+
+	// RVA: 0x29F24A4 Offset: 0x29F24A4 VA: 0x29F24A4
+	public bool <>iFixBaseProxy_CanDownLoadRes() { }
+}
+

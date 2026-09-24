@@ -1,0 +1,15 @@
+// Namespace: Paxie.MergeStudio.Features.MiniBoard
+[Serializable]
+public class KiteMiniBoardInitialBoardModel // TypeDefIndex: 1022
+{
+	// Fields
+	public int RowCount; // 0x8
+	public int ColumnCount; // 0xC
+	public List<MiniBoardPositionData> InitialPositionData; // 0x10
+
+	// Methods
+
+	// RVA: 0x17A8A50 Offset: 0x17A8A50 VA: 0x17A8A50
+	public void .ctor() { }
+}
+

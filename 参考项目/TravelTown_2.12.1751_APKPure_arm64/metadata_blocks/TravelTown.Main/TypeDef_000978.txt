@@ -1,0 +1,21 @@
+// Namespace: MergeEngine.ECS.Systems.Items
+public class UndoSell : UndoOperationBase<UndoSellData> // TypeDefIndex: 978
+{
+	// Methods
+
+	// RVA: 0x6798AB0 Offset: 0x6794AB0 VA: 0x6798AB0
+	public void .ctor(UndoSellData data, Action<UndoSellData> performUndoCallback) { }
+
+	// RVA: 0x6798B10 Offset: 0x6794B10 VA: 0x6798B10 Slot: 10
+	public override bool ShouldClearUndoOnSelection(PositionComponent selectedItem) { }
+
+	// RVA: 0x6798B78 Offset: 0x6794B78 VA: 0x6798B78 Slot: 11
+	public override string GetLocalisationString() { }
+
+	// RVA: 0x6798CB4 Offset: 0x6794CB4 VA: 0x6798CB4 Slot: 12
+	public override string[] GetLocalisationParameters() { }
+
+	// RVA: 0x6798BF4 Offset: 0x6794BF4 VA: 0x6798BF4
+	private bool HasSellCost() { }
+}
+

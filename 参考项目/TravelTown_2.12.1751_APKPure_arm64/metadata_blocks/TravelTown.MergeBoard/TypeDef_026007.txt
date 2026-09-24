@@ -1,0 +1,34 @@
+// Namespace: Merger.MergeBoard.Components
+public struct ItemMovedComponent : IComponent // TypeDefIndex: 26007
+{
+	// Fields
+	[CompilerGenerated]
+	private int <FromPosition>k__BackingField; // 0x0
+	[CompilerGenerated]
+	private int <ToPosition>k__BackingField; // 0x4
+
+	// Properties
+	public int FromPosition { get; set; }
+	public int ToPosition { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9C064 Offset: 0x6A98064 VA: 0x6A9C064
+	public int get_FromPosition() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C06C Offset: 0x6A9806C VA: 0x6A9C06C
+	public void set_FromPosition(int value) { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9C074 Offset: 0x6A98074 VA: 0x6A9C074
+	public int get_ToPosition() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C07C Offset: 0x6A9807C VA: 0x6A9C07C
+	public void set_ToPosition(int value) { }
+}
+

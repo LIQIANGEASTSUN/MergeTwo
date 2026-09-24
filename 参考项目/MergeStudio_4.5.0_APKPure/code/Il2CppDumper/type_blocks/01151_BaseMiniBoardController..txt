@@ -1,0 +1,19 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BaseMiniBoardController.<>c__DisplayClass202_0 // TypeDefIndex: 1151
+{
+	// Fields
+	public MiniBoardItemController item; // 0x8
+	public BaseMiniBoardController <>4__this; // 0xC
+	public MiniBoardPosition previousPosition; // 0x10
+	public BaseMiniBoardEvent.RevertMove e; // 0x14
+
+	// Methods
+
+	// RVA: 0x17D5960 Offset: 0x17D5960 VA: 0x17D5960
+	public void .ctor() { }
+
+	// RVA: 0x17D5968 Offset: 0x17D5968 VA: 0x17D5968
+	internal void <OnEvent>b__0() { }
+}
+

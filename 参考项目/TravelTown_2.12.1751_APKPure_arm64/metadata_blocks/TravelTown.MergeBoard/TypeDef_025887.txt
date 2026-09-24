@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class CollectableItemsGrantProcessor.<>c__DisplayClass5_1 // TypeDefIndex: 25887
+{
+	// Fields
+	public string uuid; // 0x10
+	public CollectableItemsGrantProcessor.<>c__DisplayClass5_0 CS$<>8__locals1; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A91DE0 Offset: 0x6A8DDE0 VA: 0x6A91DE0
+	public void .ctor() { }
+
+	// RVA: 0x6A926AC Offset: 0x6A8E6AC VA: 0x6A926AC
+	internal void <Process>b__1() { }
+}
+

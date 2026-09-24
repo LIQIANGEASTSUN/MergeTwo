@@ -1,0 +1,9 @@
+// Namespace: 
+public struct BoardEvent.ApplicationPause : IEvent // TypeDefIndex: 1834
+{
+	// Fields
+	public bool PauseStatus; // 0x0
+	public bool IsAdsOpened; // 0x1
+	public long ElapsedTimeInPause; // 0x8
+}
+

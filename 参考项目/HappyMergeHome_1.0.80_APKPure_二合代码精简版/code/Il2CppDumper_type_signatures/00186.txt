@@ -1,0 +1,27 @@
+// Namespace: 
+public class ButterflyWorkShopMergeBoard : MergeBoard // TypeDefIndex: 186
+{
+	// Methods
+
+	// RVA: 0x29EC964 Offset: 0x29EC964 VA: 0x29EC964 Slot: 5
+	public override void InitBoardId() { }
+
+	// RVA: 0x29EC9C4 Offset: 0x29EC9C4 VA: 0x29EC9C4 Slot: 7
+	public override void OnNewItem(int index, int oldIndex, int id, int oldId, RefreshItemSource source) { }
+
+	// RVA: 0x29ECBF8 Offset: 0x29ECBF8 VA: 0x29ECBF8 Slot: 6
+	public override void OnUseItem(int index, int id) { }
+
+	// RVA: 0x29ECE00 Offset: 0x29ECE00 VA: 0x29ECE00
+	public void .ctor() { }
+
+	// RVA: 0x29ECE08 Offset: 0x29ECE08 VA: 0x29ECE08
+	public void <>iFixBaseProxy_InitBoardId() { }
+
+	// RVA: 0x29ECE10 Offset: 0x29ECE10 VA: 0x29ECE10
+	public void <>iFixBaseProxy_OnNewItem(int P0, int P1, int P2, int P3, RefreshItemSource P4) { }
+
+	// RVA: 0x29ECE38 Offset: 0x29ECE38 VA: 0x29ECE38
+	public void <>iFixBaseProxy_OnUseItem(int P0, int P1) { }
+}
+

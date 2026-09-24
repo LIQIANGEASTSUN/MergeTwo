@@ -1,0 +1,28 @@
+// Namespace: Merger.Rewards.Interfaces.Datas
+public interface IRewardData // TypeDefIndex: 2983
+{
+	// Properties
+	public abstract string ConfigurationId { get; }
+	public abstract string Name { get; }
+	public abstract string Type { get; }
+	public abstract IRewardType RewardType { get; }
+	public abstract RewardAmount RewardAmount { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract string get_ConfigurationId();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract string get_Name();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract string get_Type();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract IRewardType get_RewardType();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract RewardAmount get_RewardAmount();
+}
+

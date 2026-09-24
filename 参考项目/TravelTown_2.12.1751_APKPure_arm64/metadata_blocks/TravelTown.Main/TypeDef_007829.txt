@@ -1,0 +1,9 @@
+// Namespace: Merger.Boosters.Declarations.Definitions.Interfaces
+public interface IBoosterActivationPolicy // TypeDefIndex: 7829
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract bool CanActivate(IBoosterItem booster, List<RemoteBoosterData> activeBoosters, IEnumerable<IBoosterItem> activeBoostersLocal);
+}
+

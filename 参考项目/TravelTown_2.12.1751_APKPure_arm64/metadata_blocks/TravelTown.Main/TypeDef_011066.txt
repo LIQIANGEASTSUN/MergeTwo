@@ -1,0 +1,31 @@
+// Namespace: Framework.Core.Services.Backend.Data.Payload
+public class BaseNotificationData // TypeDefIndex: 11066
+{
+	// Fields
+	[JsonIgnore]
+	public string Action; // 0x10
+	[JsonIgnore]
+	public string Destination; // 0x18
+	[JsonIgnore]
+	public ExtraData ExtraData; // 0x20
+	[JsonProperty("id", NullValueHandling = 1)]
+	public string ID; // 0x28
+	[JsonProperty("uuid", NullValueHandling = 1)]
+	public string Uuid; // 0x30
+	[JsonProperty("createdTimestamp")]
+	public long CreatedTimestamp; // 0x38
+	[JsonProperty("queueAddedTimestamp")]
+	public long QueueAddedTimestamp; // 0x40
+	[JsonProperty("boosterData")]
+	public BoosterData BoosterData; // 0x48
+	[JsonProperty("uuidInRewardQueue")]
+	public string UUIDInRewardQueue; // 0x50
+	[JsonProperty("queueAddedLatestTimestamp")]
+	public long QueueAddedLatestTimestamp; // 0x58
+
+	// Methods
+
+	// RVA: 0x6930DD4 Offset: 0x692CDD4 VA: 0x6930DD4
+	public void .ctor() { }
+}
+

@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class InteractionSystem.<>c__DisplayClass4_0 // TypeDefIndex: 25745
+{
+	// Fields
+	[TupleElementNames(new[] { "entity", "positionComponent", "itemMovedComponent", "idComponent" })]
+	public ValueTuple<Entity, BoardTilePositionComponent, ItemMovedComponent, IdComponent> movedEntity; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A6BBBC Offset: 0x6A67BBC VA: 0x6A6BBBC
+	public void .ctor() { }
+
+	// RVA: 0x6A6BCBC Offset: 0x6A67CBC VA: 0x6A6BCBC
+	internal bool <HandleInteractForConsumableItem>b__0(ValueTuple<Entity, BoardTilePositionComponent, IdComponent, InteractionComponent> a) { }
+}
+

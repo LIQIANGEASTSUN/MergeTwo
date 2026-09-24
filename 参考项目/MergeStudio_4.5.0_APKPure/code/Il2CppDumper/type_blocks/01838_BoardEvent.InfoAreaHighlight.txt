@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BoardEvent.InfoAreaHighlight : IEvent // TypeDefIndex: 1838
+{
+	// Fields
+	public ItemController ItemController; // 0x0
+}
+

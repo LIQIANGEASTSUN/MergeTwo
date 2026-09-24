@@ -1,0 +1,68 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class ExpendFromTransformTimeLimitResult : IExpendableResult // TypeDefIndex: 25947
+{
+	// Fields
+	[CompilerGenerated]
+	private Entity <Entity>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private int <Position>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private string <Reason>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private bool <SpawnParticles>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private SpawnParticleType <ParticleType>k__BackingField; // 0x2C
+
+	// Properties
+	public Entity Entity { get; set; }
+	public int Position { get; set; }
+	public string Reason { get; set; }
+	public bool SpawnParticles { get; set; }
+	public SpawnParticleType ParticleType { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A464 Offset: 0x6A96464 VA: 0x6A9A464 Slot: 4
+	public Entity get_Entity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A46C Offset: 0x6A9646C VA: 0x6A9A46C Slot: 5
+	public void set_Entity(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A474 Offset: 0x6A96474 VA: 0x6A9A474 Slot: 6
+	public int get_Position() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A47C Offset: 0x6A9647C VA: 0x6A9A47C Slot: 7
+	public void set_Position(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A484 Offset: 0x6A96484 VA: 0x6A9A484 Slot: 8
+	public string get_Reason() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A48C Offset: 0x6A9648C VA: 0x6A9A48C Slot: 9
+	public void set_Reason(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A494 Offset: 0x6A96494 VA: 0x6A9A494
+	public bool get_SpawnParticles() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A49C Offset: 0x6A9649C VA: 0x6A9A49C
+	public void set_SpawnParticles(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A4A8 Offset: 0x6A964A8 VA: 0x6A9A4A8
+	public SpawnParticleType get_ParticleType() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A4B0 Offset: 0x6A964B0 VA: 0x6A9A4B0
+	public void set_ParticleType(SpawnParticleType value) { }
+
+	// RVA: 0x6A9A4B8 Offset: 0x6A964B8 VA: 0x6A9A4B8
+	public void .ctor() { }
+}
+

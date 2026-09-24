@@ -1,0 +1,10 @@
+// Namespace: MergePuzzle
+public enum RewardType // TypeDefIndex: 2609
+{
+	// Fields
+	public int value__; // 0x0
+	public const RewardType COIN = 0;
+	public const RewardType GEM = 1;
+	public const RewardType BOOSTER = 2;
+}
+

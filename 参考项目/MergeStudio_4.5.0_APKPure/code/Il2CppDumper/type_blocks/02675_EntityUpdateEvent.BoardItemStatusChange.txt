@@ -1,0 +1,7 @@
+// Namespace: 
+public struct EntityUpdateEvent.BoardItemStatusChange : IEvent // TypeDefIndex: 2675
+{
+	// Fields
+	public bool UpdateBoardTask; // 0x0
+}
+

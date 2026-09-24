@@ -1,0 +1,108 @@
+// Namespace: MergePuzzle
+public abstract class BoardItemData : ScriptableObject // TypeDefIndex: 1652
+{
+	// Fields
+	public string Name; // 0xC
+	[ShowAssetPreview(40, 40)]
+	public Sprite LockItem; // 0x10
+	[ShowAssetPreview(150, 150)]
+	public Sprite Image; // 0x14
+	public int SetID; // 0x18
+	public int Level; // 0x1C
+	public bool IsLockDouble; // 0x20
+	public int FeatureID; // 0x24
+	public float OptionalGoalImageScale; // 0x28
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract bool Initialize(BoardEntity boardEntity, IItemController item, long millisecondsPassed, bool isNewlyCreated);
+
+	// RVA: 0x18C8F8C Offset: 0x18C8F8C VA: 0x18C8F8C Slot: 5
+	public virtual bool Initialize(BoardEntity boardEntity, IItemController item, long millisecondsPassed, bool isNewlyCreated, float capacity) { }
+
+	// RVA: 0x18C8F94 Offset: 0x18C8F94 VA: 0x18C8F94
+	public void OverrideImage(Sprite image) { }
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract int GetTimeRequiredToExitCharging();
+
+	// RVA: 0x18BD150 Offset: 0x18BD150 VA: 0x18BD150
+	public string GetStringValue() { }
+
+	// RVA: 0x18C8F9C Offset: 0x18C8F9C VA: 0x18C8F9C
+	public List<SpawnedItem> GetSpawnedItems(bool useOriginalSetID = False) { }
+
+	// RVA: 0x18C984C Offset: 0x18C984C VA: 0x18C984C
+	public bool IsNormalAutoPerishableSpawner() { }
+
+	// RVA: 0x18C9958 Offset: 0x18C9958 VA: 0x18C9958
+	public bool StoreInventoryRemainingTime() { }
+
+	// RVA: 0x18C9A64 Offset: 0x18C9A64 VA: 0x18C9A64
+	public bool IsCollectableOrSpawner() { }
+
+	// RVA: 0x18C9C30 Offset: 0x18C9C30 VA: 0x18C9C30
+	public bool IsAutoSpawner() { }
+
+	// RVA: 0x18C4884 Offset: 0x18C4884 VA: 0x18C4884
+	public bool CanSpawn() { }
+
+	// RVA: 0x18C9CB4 Offset: 0x18C9CB4 VA: 0x18C9CB4
+	public bool CanSpawnWithoutChest() { }
+
+	// RVA: 0x18C9DC0 Offset: 0x18C9DC0 VA: 0x18C9DC0
+	public bool IsSpawnerPart() { }
+
+	// RVA: 0x18C9F08 Offset: 0x18C9F08 VA: 0x18C9F08
+	public bool IsSpawnerPartWithoutChest() { }
+
+	// RVA: 0x18C9188 Offset: 0x18C9188 VA: 0x18C9188
+	public List<SpawnedItem> GetPerishableSpawnedItems(BoardItemPerishableSpawner perishableSpawner, bool useOriginalSetID) { }
+
+	// RVA: 0x18CA114 Offset: 0x18CA114 VA: 0x18CA114
+	public bool IsDefaultBoardFeature() { }
+
+	// RVA: 0x18CA138 Offset: 0x18CA138 VA: 0x18CA138
+	public bool IsBoardEventFeature() { }
+
+	// RVA: 0x18CA150 Offset: 0x18CA150 VA: 0x18CA150 Slot: 7
+	public virtual bool IsCardCollectionItem() { }
+
+	// RVA: 0x18CA158 Offset: 0x18CA158 VA: 0x18CA158
+	public bool IsRecurringEventFeature() { }
+
+	// RVA: 0x18CA170 Offset: 0x18CA170 VA: 0x18CA170
+	public bool IsDailyChallengeFeature() { }
+
+	// RVA: 0x18CA188 Offset: 0x18CA188 VA: 0x18CA188 Slot: 8
+	public virtual bool IsMergeable(IItemRuntimeData itself, IItemRuntimeData other) { }
+
+	// RVA: 0x18CA190 Offset: 0x18CA190 VA: 0x18CA190 Slot: 9
+	public virtual bool IsMergeable(IItemRuntimeData itself) { }
+
+	// RVA: 0x18CA198 Offset: 0x18CA198 VA: 0x18CA198 Slot: 10
+	public virtual bool IsMergeable(IItemEntity itemEntity) { }
+
+	// RVA: 0x18CA1A0 Offset: 0x18CA1A0 VA: 0x18CA1A0 Slot: 11
+	public virtual bool PreventStoreToInventory(IItemEntity itemEntity) { }
+
+	// RVA: 0x18CA1A8 Offset: 0x18CA1A8 VA: 0x18CA1A8 Slot: 12
+	public virtual bool IsSpawnableFromRewardArea() { }
+
+	// RVA: 0x18CA1B0 Offset: 0x18CA1B0 VA: 0x18CA1B0 Slot: 13
+	public virtual bool CanThrownIntoBoard() { }
+
+	// RVA: 0x18CA1B8 Offset: 0x18CA1B8 VA: 0x18CA1B8 Slot: 14
+	public virtual bool IsDraggable() { }
+
+	// RVA: 0x18CA1C0 Offset: 0x18CA1C0 VA: 0x18CA1C0 Slot: 15
+	public virtual bool IsClickable() { }
+
+	// RVA: 0x18CA1C8 Offset: 0x18CA1C8 VA: 0x18CA1C8 Slot: 16
+	public virtual bool OpenBadgeAtMaxLevel() { }
+
+	// RVA: 0x18C655C Offset: 0x18C655C VA: 0x18C655C
+	protected void .ctor() { }
+}
+

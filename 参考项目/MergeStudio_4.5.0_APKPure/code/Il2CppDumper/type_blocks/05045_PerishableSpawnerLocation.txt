@@ -1,0 +1,9 @@
+// Namespace: MergePuzzle.Locations
+public class PerishableSpawnerLocation : LocationBase // TypeDefIndex: 5045
+{
+	// Methods
+
+	// RVA: 0x1E12B5C Offset: 0x1E12B5C VA: 0x1E12B5C
+	public void .ctor() { }
+}
+

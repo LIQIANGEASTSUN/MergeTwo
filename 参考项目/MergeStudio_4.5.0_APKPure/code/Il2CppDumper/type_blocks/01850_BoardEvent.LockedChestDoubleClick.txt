@@ -1,0 +1,4 @@
+// Namespace: 
+public struct BoardEvent.LockedChestDoubleClick : IEvent // TypeDefIndex: 1850
+{}
+

@@ -1,0 +1,179 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class UserEntity // TypeDefIndex: 2711
+{
+	// Fields
+	public int Gem; // 0x8
+	public int Coin; // 0xC
+	public int Energy; // 0x10
+	public int TotalXP; // 0x14
+	public int LevelXP; // 0x18
+	public int Level; // 0x1C
+	public List<RewardEntity> ActiveRewards; // 0x20
+	public List<BoosterEntity> Boosters; // 0x24
+	public LevelUpReward TempLevelUpReward; // 0x28
+	public UserEntity.LevelUpPopupInfo TempLevelUpPopupInfo; // 0x2C
+	public long NextEnergyUpdatesAt; // 0x40
+	public bool NoAds; // 0x48
+	public bool SeenFirstAd; // 0x49
+	public bool NoSpawnerHelp; // 0x4A
+	public List<RewardData> WaitingEventRewardData; // 0x4C
+	public DiscoveryBoxEntity NewItemBoxEntity; // 0x50
+	public long LastFreeSpinCompletedMs; // 0x58
+	public int DailyJackpotSpinLevel; // 0x60
+	public bool AllDailyJackpotCompleted; // 0x64
+	public int DailyInterstitialCount; // 0x68
+	public int CurrentEnergyPriceIndex; // 0x6C
+	public long EnergyPriceResetAt; // 0x70
+	public int EndlessTreasureIndex; // 0x78
+	public int EndlessTreasureYilanIndex; // 0x7C
+	public UnlimitedEnergyEntity UnlimitedEnergyEntity; // 0x80
+	public bool SeenDailyJackpotBefore; // 0x84
+	public bool EnergizedBundlePurchasedBefore; // 0x85
+	public long EnergizedBundlePurchasedTime; // 0x88
+	public bool SeenLeaderBoardBefore; // 0x90
+	public PiggyBankEntity PiggyBankEntity; // 0x94
+	public SeasonPassEntity SeasonPassEntity; // 0x98
+	public long FirstDailyJackpotOpeningMs; // 0xA0
+	public UserEntity.DailyRewardEntity DailyReward; // 0xA8
+	public UserEntity.RewardedAdEntityModel RewardedAdEntity; // 0xAC
+	public long MidnightLocal; // 0xB0
+	public long MidnightUtc; // 0xB8
+	public UserEntity.BalanceTestEntityModel BalanceTestEntity; // 0xC0
+	public List<UserEntity.VersionEntryLevel> VersionEntryLevelList; // 0xC4
+	public int DeviceScore; // 0xC8
+	public bool DeviceScoreOverridden; // 0xCC
+	public AvatarEntity AvatarEntity; // 0xD0
+
+	// Methods
+
+	// RVA: 0x1A5E054 Offset: 0x1A5E054 VA: 0x1A5E054
+	public void .ctor() { }
+
+	// RVA: 0x1A5E05C Offset: 0x1A5E05C VA: 0x1A5E05C
+	public void ClearTempLevelupPopup() { }
+
+	// RVA: 0x1A563C0 Offset: 0x1A563C0 VA: 0x1A563C0
+	public void .ctor(BoardData boardData) { }
+
+	// RVA: 0x1A5E578 Offset: 0x1A5E578 VA: 0x1A5E578
+	public bool HasWaitingAnimations(bool isLevelup, bool isEvent) { }
+
+	// RVA: 0x1A5E8CC Offset: 0x1A5E8CC VA: 0x1A5E8CC
+	public void ChangeXPLevelAndRewardsBecauseOfLevelupRollout(int newLevel, int levelXP, int totalXP, LevelUpReward reward) { }
+
+	// RVA: 0x1A5F47C Offset: 0x1A5F47C VA: 0x1A5F47C
+	public void EnableNoAds() { }
+
+	// RVA: 0x1A5E2E8 Offset: 0x1A5E2E8 VA: 0x1A5E2E8
+	private void InitBoosters(BoardData boardData) { }
+
+	// RVA: 0x1A5F488 Offset: 0x1A5F488 VA: 0x1A5F488
+	public List<BoosterEntity> CheckBoosterLockStatuses(int newLevel) { }
+
+	// RVA: 0x1A5F718 Offset: 0x1A5F718 VA: 0x1A5F718
+	public string GetBoosterCountsAsString() { }
+
+	// RVA: 0x1A5E08C Offset: 0x1A5E08C VA: 0x1A5E08C
+	public int GetInitialGemAmount(BoardData boardData) { }
+
+	// RVA: 0x1A5E0D8 Offset: 0x1A5E0D8 VA: 0x1A5E0D8
+	public int GetInitialCoinAmount(BoardData boardData) { }
+
+	// RVA: 0x1A5E124 Offset: 0x1A5E124 VA: 0x1A5E124
+	public int GetInitialEnergyAmount(BoardData boardData) { }
+
+	// RVA: 0x1A5F888 Offset: 0x1A5F888 VA: 0x1A5F888
+	public List<RegularReward> GetUpcomingRegularRewards(LevelItem currentLevel) { }
+
+	// RVA: 0x1A5FB14 Offset: 0x1A5FB14 VA: 0x1A5FB14
+	public bool ProcessTaskComplete(BoardTaskItem boardTaskItem, BoardData boardData, LevelData levelData) { }
+
+	// RVA: 0x1A6014C Offset: 0x1A6014C VA: 0x1A6014C
+	public bool ProcessXPUpdate(LevelData levelData, int addedXP, bool isEvent, bool saveBoard, bool isXpFixWorkaround, string triggerName = "") { }
+
+	// RVA: 0x1A60848 Offset: 0x1A60848 VA: 0x1A60848
+	private void ProcessXPUpdate(int taskXp, LevelItem currentLevel, bool isEvent) { }
+
+	// RVA: 0x1A60934 Offset: 0x1A60934 VA: 0x1A60934
+	private List<RegularReward> FindGainedRegularRewards(int taskXp, LevelItem currentLevel, bool isEvent) { }
+
+	// RVA: 0x1A606B4 Offset: 0x1A606B4 VA: 0x1A606B4
+	private void ProcessLevelUpdate(int taskXp, int extraXp, LevelItem currentLevel, LevelItem newLevelData, bool isEvent) { }
+
+	// RVA: 0x1A60EE4 Offset: 0x1A60EE4 VA: 0x1A60EE4
+	private void SetTempLevelUpInfo(EntityUpdateEvent.LevelUpdateEntity levelUpEvent) { }
+
+	// RVA: 0x1A61018 Offset: 0x1A61018 VA: 0x1A61018
+	public void RemoveActiveRewards(int setID) { }
+
+	// RVA: 0x1A5EFD8 Offset: 0x1A5EFD8 VA: 0x1A5EFD8
+	public void ChangeActiveRewards(int setID, int level, int amount, string trigger = "") { }
+
+	// RVA: 0x1A61208 Offset: 0x1A61208 VA: 0x1A61208
+	public void ChangeActiveRewardsDontSendFirebase(int setID, int level, string trigger = "", bool ignoreArchiveLogic = False) { }
+
+	// RVA: 0x1A58028 Offset: 0x1A58028 VA: 0x1A58028
+	public void ChangeActiveRewards(int setID, int level, string trigger = "", bool ignoreArchiveLogic = False) { }
+
+	// RVA: 0x1A616D0 Offset: 0x1A616D0 VA: 0x1A616D0
+	public void ChangeActiveRewardsFeature(int setID, int level, int featureID, int amount, string trigger) { }
+
+	// RVA: 0x1A61720 Offset: 0x1A61720 VA: 0x1A61720
+	public void ChangeActiveRewardsFeature(int setID, int level, int featureID, string trigger) { }
+
+	// RVA: 0x1A61A0C Offset: 0x1A61A0C VA: 0x1A61A0C
+	public bool CheckDailyChallengeItem(int setID) { }
+
+	// RVA: 0x1A6132C Offset: 0x1A6132C VA: 0x1A6132C
+	public void AddRewardToActiveRewards(int setID, int level, int featureID, string trigger) { }
+
+	// RVA: 0x1A61B20 Offset: 0x1A61B20 VA: 0x1A61B20
+	public bool CheckAndFixRewardSorting() { }
+
+	// RVA: 0x1A61CB0 Offset: 0x1A61CB0 VA: 0x1A61CB0
+	public void RemoveAllActiveRewards() { }
+
+	// RVA: 0x1A61D5C Offset: 0x1A61D5C VA: 0x1A61D5C
+	public void RemoveActiveReward(RewardEntity rewardEntity) { }
+
+	// RVA: 0x1A61F64 Offset: 0x1A61F64 VA: 0x1A61F64
+	public void ChangeCurrency(int setID, int amount, bool sendUpdate = True, bool saveBoard = True, string triggerName = "") { }
+
+	// RVA: 0x1A62548 Offset: 0x1A62548 VA: 0x1A62548
+	public void ChangeCurrency(CollectableType collectableType, int amount, bool sendUpdate = True, bool saveBoard = True, string triggerName = "") { }
+
+	// RVA: 0x1A62568 Offset: 0x1A62568 VA: 0x1A62568
+	private void ArrangeLevelGemGetAndSpend(int gemGain) { }
+
+	// RVA: 0x1A62768 Offset: 0x1A62768 VA: 0x1A62768
+	private void ArrangeLevelCoinGetAndSpend(int coinGain) { }
+
+	// RVA: 0x1A578BC Offset: 0x1A578BC VA: 0x1A578BC
+	public void ChangeGem(int changedGem, bool sendUpdate = True, bool saveBoard = True) { }
+
+	// RVA: 0x1A57B04 Offset: 0x1A57B04 VA: 0x1A57B04
+	public void ChangeCoin(int changedCoin, bool sendUpdate = True, bool saveBoard = True, string triggerName = "", string eventName = "") { }
+
+	// RVA: 0x1A57638 Offset: 0x1A57638 VA: 0x1A57638
+	public void ChangeEnergy(int changedEnergy, bool sendUpdate = True, bool saveBoard = True) { }
+
+	// RVA: 0x1A62218 Offset: 0x1A62218 VA: 0x1A62218
+	public void ChangeXP(int changedXP, bool sendUpdate = True, bool saveBoard = True, string triggerName = "") { }
+
+	// RVA: 0x1A6293C Offset: 0x1A6293C VA: 0x1A6293C
+	public void ChangeBooster(BoosterType boosterType, int quantity, string trigger = "", bool saveBoard = False) { }
+
+	// RVA: 0x1A58638 Offset: 0x1A58638 VA: 0x1A58638
+	public void ChangeBooster(int boosterID, int quantity, string trigger = "", bool saveBoard = False) { }
+
+	// RVA: 0x1A62958 Offset: 0x1A62958 VA: 0x1A62958
+	public int GetTotalBoosterCount() { }
+
+	// RVA: 0x1A62AF0 Offset: 0x1A62AF0 VA: 0x1A62AF0
+	public void ResetDailyJackpot() { }
+
+	// RVA: 0x1A5E56C Offset: 0x1A5E56C VA: 0x1A5E56C
+	private void SaveBoard() { }
+}
+

@@ -1,0 +1,38 @@
+// Namespace: Merger.Rewards.Interfaces.Datas
+public interface IRewardViewData : IRewardTextRepresented, IRewardTooltipData, IEquatable<IRewardViewData>, IRewardViewPresentable, IRewardData, IPrioritizedOrderReward // TypeDefIndex: 2988
+{
+	// Properties
+	public abstract bool IsFeatured { get; }
+	public abstract bool ShouldBeHidden { get; }
+	public abstract bool HasCollectScreen { get; }
+	public abstract RewardDestination Destination { get; }
+	[CanBeNull]
+	public abstract RewardSource RewardSource { get; set; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract IRewardViewData Clone();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract bool get_IsFeatured();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract bool get_ShouldBeHidden();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract bool get_HasCollectScreen();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract RewardDestination get_Destination();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract RewardSource get_RewardSource();
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract void set_RewardSource(RewardSource value);
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract string GetLogDebug();
+}
+

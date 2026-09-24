@@ -1,0 +1,33 @@
+// Namespace: Merger.Audio.ViewModels
+public class AudioViewModelBase : ViewModelBase // TypeDefIndex: 7884
+{
+	// Fields
+	[Inject]
+	private IAudioService _audioService; // 0x68
+	[Inject]
+	private IAudioConfigurationModel _audioConfigurationModel; // 0x70
+
+	// Methods
+
+	// RVA: 0x65CCED0 Offset: 0x65C8ED0 VA: 0x65CCED0
+	public void PlaySound(string configId, string soundKey) { }
+
+	// RVA: 0x65CCF8C Offset: 0x65C8F8C VA: 0x65CCF8C
+	public void PlaySound(AudioClip clip, bool loop, float pitch = 0, float volume = 1) { }
+
+	// RVA: 0x65CD070 Offset: 0x65C9070 VA: 0x65CD070
+	public void PlaySound(string configId, SoundArguments soundArguments) { }
+
+	// RVA: 0x65CD134 Offset: 0x65C9134 VA: 0x65CD134
+	public ISound GetSoundById(string soundId) { }
+
+	// RVA: 0x65CD1E0 Offset: 0x65C91E0 VA: 0x65CD1E0
+	public bool HasSoundWithConfig(string soundId, SoundArguments soundArguments) { }
+
+	// RVA: 0x65CD2C0 Offset: 0x65C92C0 VA: 0x65CD2C0
+	public void StopAllPlayingSounds() { }
+
+	// RVA: 0x65CD364 Offset: 0x65C9364 VA: 0x65CD364
+	public void .ctor() { }
+}
+

@@ -1,0 +1,33 @@
+// Namespace: Merger.MergeBoard.Logic.BoardOperations
+public class BoardOperationActionsBuilder : IBoardOperationActionsBuilder // TypeDefIndex: 25873
+{
+	// Fields
+	[Inject]
+	private IMergeBoardItemNotificationDataFactory _mergeBoardItemNotificationDataFactory; // 0x10
+	private readonly List<MergeBoardItemNotificationData> _payloadItems; // 0x18
+	private MergeBoardItemNotificationData _lastAddedItem; // 0x20
+
+	// Methods
+
+	// RVA: 0x6A8E064 Offset: 0x6A8A064 VA: 0x6A8E064 Slot: 4
+	public IBoardOperationActionsBuilder SetAction(Entity entity, string destination) { }
+
+	// RVA: 0x6A8E238 Offset: 0x6A8A238 VA: 0x6A8E238 Slot: 5
+	public IBoardOperationActionsBuilder RemoveAction(Entity entity, string destination) { }
+
+	// RVA: 0x6A8E298 Offset: 0x6A8A298 VA: 0x6A8E298 Slot: 6
+	public IBoardOperationActionsBuilder UpdateAction(Entity entity, string destination) { }
+
+	// RVA: 0x6A8E2F8 Offset: 0x6A8A2F8 VA: 0x6A8E2F8 Slot: 7
+	public IBoardOperationActionsBuilder WithExtraData(ExtraData extraData) { }
+
+	// RVA: 0x6A8E31C Offset: 0x6A8A31C VA: 0x6A8E31C Slot: 8
+	public List<MergeBoardItemNotificationData> Build() { }
+
+	// RVA: 0x6A8E0C4 Offset: 0x6A8A0C4 VA: 0x6A8E0C4
+	private IBoardOperationActionsBuilder AddAction(Entity entity, string action, string destination) { }
+
+	// RVA: 0x6A8E3E4 Offset: 0x6A8A3E4 VA: 0x6A8E3E4
+	public void .ctor() { }
+}
+

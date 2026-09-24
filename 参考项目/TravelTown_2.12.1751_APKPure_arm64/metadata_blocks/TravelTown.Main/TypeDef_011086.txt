@@ -1,0 +1,34 @@
+// Namespace: Framework.Core.Services.Backend.Data.Payload
+public sealed class TimerItemData // TypeDefIndex: 11086
+{
+	// Fields
+	[JsonProperty("timeLeft")]
+	public long TimeLeft; // 0x10
+	[JsonProperty("isTimerActivated")]
+	public bool IsTimerActivated; // 0x18
+	[JsonProperty("creationReason", NullValueHandling = 1)]
+	public string CreationReason; // 0x20
+	[JsonProperty("triggerReason", NullValueHandling = 1)]
+	public string TriggerReason; // 0x28
+	[JsonProperty("removeReason", NullValueHandling = 1)]
+	public string RemoveReason; // 0x30
+	[CompilerGenerated]
+	private bool <ShouldIgnore>k__BackingField; // 0x38
+
+	// Properties
+	public bool ShouldIgnore { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6930F44 Offset: 0x692CF44 VA: 0x6930F44
+	public bool get_ShouldIgnore() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6930F4C Offset: 0x692CF4C VA: 0x6930F4C
+	public void set_ShouldIgnore(bool value) { }
+
+	// RVA: 0x6930F58 Offset: 0x692CF58 VA: 0x6930F58
+	public void .ctor() { }
+}
+

@@ -1,0 +1,21 @@
+// Namespace: Framework.Core.Services.Backend.Remote.Payloads.BoardState
+public class BoardResourceRefill // TypeDefIndex: 10971
+{
+	// Fields
+	[JsonProperty("type")]
+	public string Type; // 0x10
+	[JsonProperty("date")]
+	public long TimestampInMilliSeconds; // 0x18
+	[JsonProperty("interval")]
+	public int IntervalInMilliSeconds; // 0x20
+	[JsonProperty("threshold")]
+	public int Threshold; // 0x24
+	[JsonProperty("step")]
+	public int Step; // 0x28
+
+	// Methods
+
+	// RVA: 0x692762C Offset: 0x692362C VA: 0x692762C
+	public void .ctor() { }
+}
+

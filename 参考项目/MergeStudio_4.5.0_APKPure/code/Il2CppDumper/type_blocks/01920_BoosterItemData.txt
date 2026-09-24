@@ -1,0 +1,36 @@
+// Namespace: MergePuzzle
+public abstract class BoosterItemData : ScriptableObject // TypeDefIndex: 1920
+{
+	// Fields
+	public int ID; // 0xC
+	public string Name; // 0x10
+	[Multiline(2)]
+	public string Description; // 0x14
+	public string NotUsableText; // 0x18
+	public int RequiredLevel; // 0x1C
+	public int PackCount; // 0x20
+	public int RequiredGem; // 0x24
+	public Sprite BoosterImage; // 0x28
+	public Sprite BoosterImageSmall; // 0x2C
+	public Sprite BoosterInactiveImage; // 0x30
+	public Sprite BoosterCountBackground; // 0x34
+	public Sprite BoosterInactiveCountBackground; // 0x38
+
+	// Methods
+
+	// RVA: 0x1928AEC Offset: 0x1928AEC VA: 0x1928AEC
+	public int GetRequiredPackGemCount() { }
+
+	// RVA: 0x1928B2C Offset: 0x1928B2C VA: 0x1928B2C
+	public string GetWarningText() { }
+
+	// RVA: 0x1928C10 Offset: 0x1928C10 VA: 0x1928C10
+	public string GetWarningText(string keySuffix) { }
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract List<BoardPositionEntity> GetAvailablePositions(BoardEntity boardEntity, EventEntity eventEntity, BoardData boardData, out string keySuffix);
+
+	// RVA: 0x1928D6C Offset: 0x1928D6C VA: 0x1928D6C
+	protected void .ctor() { }
+}
+

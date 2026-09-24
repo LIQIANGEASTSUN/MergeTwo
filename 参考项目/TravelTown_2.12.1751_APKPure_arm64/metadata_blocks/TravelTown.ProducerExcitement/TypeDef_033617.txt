@@ -1,0 +1,32 @@
+// Namespace: Merger.ProducerExcitement.Services
+public class ProducerExcitementChannelService : ServiceBase // TypeDefIndex: 33617
+{
+	// Fields
+	[Inject]
+	private IWebSocketChannelObservable _webSocketChannelObservable; // 0x28
+	[Inject]
+	private IJsonService _jsonService; // 0x30
+	[Inject]
+	private ISignalBus _signalBus; // 0x38
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0x40
+	private ProducerExcitementCreatedChannelListener _excitementReceivedChannelListener; // 0x48
+
+	// Properties
+	protected ProducerExcitementCreatedChannelListener ExcitementReceivedChannelListener { get; }
+
+	// Methods
+
+	// RVA: 0x6AD4EF4 Offset: 0x6AD0EF4 VA: 0x6AD4EF4
+	protected ProducerExcitementCreatedChannelListener get_ExcitementReceivedChannelListener() { }
+
+	// RVA: 0x6AD4EFC Offset: 0x6AD0EFC VA: 0x6AD4EFC Slot: 17
+	protected override void InitializeService() { }
+
+	// RVA: 0x6AD5060 Offset: 0x6AD1060 VA: 0x6AD5060 Slot: 18
+	protected override void DisposeService() { }
+
+	// RVA: 0x6AD5118 Offset: 0x6AD1118 VA: 0x6AD5118
+	public void .ctor() { }
+}
+

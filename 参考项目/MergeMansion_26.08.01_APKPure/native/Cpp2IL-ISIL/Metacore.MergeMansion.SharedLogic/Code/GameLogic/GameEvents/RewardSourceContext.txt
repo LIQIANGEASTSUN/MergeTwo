@@ -1,0 +1,475 @@
+Type: Code.GameLogic.GameEvents.RewardSourceContext
+
+Method: Code.GameLogic.GameEvents.RewardSourceContext get_MakeYourOwnOffer()
+
+Disassembly:
+	0x037F8158 STR X1, [X0 + 0xC0]!
+	0x037F815C B 0x239B888
+	0x037F8160 LDR X0, [X0 + 0xC8]
+	0x037F8164 RET
+	0x037F8168 STR X1, [X0 + 0xC8]
+	0x037F816C RET
+	0x037F8170 LDP X8, X1, [X0 + 0xD0]
+	0x037F8174 MOV X0, X8
+	0x037F8178 RET
+	0x037F817C STP X1, X2, [X0 + 0xD0]
+	0x037F8180 RET
+	0x037F8184 LDR W0, [X0 + 0xE0]
+	0x037F8188 RET
+	0x037F818C STR W1, [X0 + 0xE0]
+	0x037F8190 RET
+	0x037F8194 LDRB W0, [X0 + 0xE4]
+	0x037F8198 RET
+	0x037F819C STRB W1, [X0 + 0xE4]
+	0x037F81A0 RET
+	0x037F81A4 LDR X0, [X0 + 0xE8]
+	0x037F81A8 RET
+	0x037F81AC STR X1, [X0 + 0xE8]!
+	0x037F81B0 B 0x239B888
+	0x037F81B4 LDR X0, [X0 + 0xF0]
+	0x037F81B8 RET
+	0x037F81BC STR X1, [X0 + 0xF0]!
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move X19, X8
+	006 Move W9, [0x2536ECF]
+	007 Move X20, [0x1F46BE8]
+	008 Move TEMP, X9
+	009 And TEMP, TEMP, 1
+	010 Compare TEMP, 1
+	011 JumpIfEqual {16}
+	012 Move X0, [0x1F46BE8]
+	013 Call 0x239F8E4
+	014 Move W8, 1
+	015 Move [X21+3791], W8
+	016 Move X1, [X20]
+	017 Move X0, X19
+	018 Move [X19+16], X31
+	019 Move [X19], X31
+	020 Move [X0+8], X1
+	021 Call 0x239F888
+	022 NotImplemented "Instruction MOVI not yet implemented."
+	023 Move W8, 1
+	024 Move [X19], W8
+	025 Move [X19+16], D0
+	026 Move X20, [X31+16]
+	027 Move X19, [X31+24]
+	028 Move X30, [X31+32]
+	029 Move X21, [X31+40]
+	030 Return X0
+
+Method: Code.GameLogic.GameEvents.RewardSourceContext get_BigBundleOffer()
+
+Disassembly:
+	0x037F81F0 ADD X0, X0, 0x108
+	0x037F81F4 STR X1, [X8 + 0x108]
+	0x037F81F8 B 0x239B888
+	0x037F81FC LDR W0, [X0 + 0x110]
+	0x037F8200 RET
+	0x037F8204 STR W1, [X0 + 0x110]
+	0x037F8208 RET
+	0x037F820C LDR W0, [X0 + 0x114]
+	0x037F8210 RET
+	0x037F8214 STR W1, [X0 + 0x114]
+	0x037F8218 RET
+	0x037F821C LDP X8, X1, [X0 + 0x118]
+	0x037F8220 MOV X0, X8
+	0x037F8224 RET
+	0x037F8228 MOV X8, X1
+	0x037F822C MOV X9, X0
+	0x037F8230 MOV X1, X31
+	0x037F8234 ADD X0, X0, 0x118
+	0x037F8238 STP X8, X2, [X9 + 0x118]
+	0x037F823C B 0x239B888
+	0x037F8240 LDR X0, [X0 + 0x128]
+	0x037F8244 RET
+	0x037F8248 MOV X8, X0
+	0x037F824C ADD X0, X0, 0x128
+	0x037F8250 STR X1, [X8 + 0x128]
+	0x037F8254 B 0x239B888
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move X19, X8
+	006 Move W9, [0x2536ED0]
+	007 Move X20, [0x1F46C20]
+	008 Move TEMP, X9
+	009 And TEMP, TEMP, 1
+	010 Compare TEMP, 1
+	011 JumpIfEqual {16}
+	012 Move X0, [0x1F46C20]
+	013 Call 0x239F8E4
+	014 Move W8, 1
+	015 Move [X21+3792], W8
+	016 Move X1, [X20]
+	017 Move X0, X19
+	018 Move [X19+16], X31
+	019 Move [X19], X31
+	020 Move [X0+8], X1
+	021 Call 0x239F888
+	022 NotImplemented "Instruction MOVI not yet implemented."
+	023 Move W8, 1
+	024 Move [X19], W8
+	025 Move [X19+16], D0
+	026 Move X20, [X31+16]
+	027 Move X19, [X31+24]
+	028 Move X30, [X31+32]
+	029 Move X21, [X31+40]
+	030 Return X0
+
+Method: Code.GameLogic.GameEvents.RewardSourceContext get_GenericOffer()
+
+Disassembly:
+	0x037F8258 LDR X0, [X0 + 0x130]
+	0x037F825C RET
+	0x037F8260 MOV X8, X0
+	0x037F8264 ADD X0, X0, 0x130
+	0x037F8268 STR X1, [X8 + 0x130]
+	0x037F826C B 0x239B888
+	0x037F8270 LDRB W0, [X0 + 0x138]
+	0x037F8274 RET
+	0x037F8278 STRB W1, [X0 + 0x138]
+	0x037F827C RET
+	0x037F8280 LDR X0, [X0 + 0x140]
+	0x037F8284 RET
+	0x037F8288 MOV X8, X0
+	0x037F828C ADD X0, X0, 0x140
+	0x037F8290 STR X1, [X8 + 0x140]
+	0x037F8294 B 0x239B888
+	0x037F8298 LDR W0, [X0 + 0x148]
+	0x037F829C RET
+	0x037F82A0 STR W1, [X0 + 0x148]
+	0x037F82A4 RET
+	0x037F82A8 LDR W0, [X0 + 0x14C]
+	0x037F82AC RET
+	0x037F82B0 STR W1, [X0 + 0x14C]
+	0x037F82B4 RET
+	0x037F82B8 LDR X0, [X0 + 0x150]
+	0x037F82BC RET
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move X19, X8
+	006 Move W9, [0x2536ED1]
+	007 Move X20, [0x1F06BF8]
+	008 Move TEMP, X9
+	009 And TEMP, TEMP, 1
+	010 Compare TEMP, 1
+	011 JumpIfEqual {16}
+	012 Move X0, [0x1F06BF8]
+	013 Call 0x239F8E4
+	014 Move W8, 1
+	015 Move [X21+3793], W8
+	016 Move X1, [X20]
+	017 Move X0, X19
+	018 Move [X19+16], X31
+	019 Move [X19], X31
+	020 Move [X0+8], X1
+	021 Call 0x239F888
+	022 NotImplemented "Instruction MOVI not yet implemented."
+	023 Move W8, 1
+	024 Move [X19], W8
+	025 Move [X19+16], D0
+	026 Move X20, [X31+16]
+	027 Move X19, [X31+24]
+	028 Move X30, [X31+32]
+	029 Move X21, [X31+40]
+	030 Return X0
+
+Method: Code.GameLogic.GameEvents.RewardSourceContext get_None()
+
+Disassembly:
+	0x037F82C0 MOV X8, X0
+	0x037F82C4 ADD X0, X0, 0x150
+	0x037F82C8 STR X1, [X8 + 0x150]
+	0x037F82CC B 0x239B888
+	0x037F82D0 LDR W0, [X0 + 0x158]
+	0x037F82D4 RET
+	0x037F82D8 STR W1, [X0 + 0x158]
+	0x037F82DC RET
+	0x037F82E0 LDR X8, [X0 + 0x10]
+	0x037F82E4 CBZ X8, 0x37F82F0
+	0x037F82E8 LDR X0, [X8 + 0x10]
+	0x037F82EC RET
+	0x037F82F0 STR X30, [X31 - 0x10]!
+
+ISIL:
+	001 Move [X31-16], X30
+	002 Move [X31-8], X19
+	003 Move X0, X8
+	004 Move X1, X31
+	005 Move X19, X8
+	006 Move [X8], X31
+	007 Move [X8+16], X31
+	008 Move [X0+8], X31
+	009 Call 0x239F888
+	010 NotImplemented "Instruction MOVI not yet implemented."
+	011 Move [X19], W31
+	012 Move [X19+16], D0
+	013 Move X30, [X31+16]
+	014 Move X19, [X31+24]
+	015 Return X0
+
+Method: System.Boolean get_IsOffer()
+
+Disassembly:
+	0x037F82F4 BL 0x239BB90
+	0x037F82F8 LDR X0, [X0 + 0x10]
+
+ISIL:
+	001 Move W0, [X0]
+	002 Return X0
+
+Method: System.Void set_IsOffer(System.Boolean value)
+
+Disassembly:
+	0x037F82FC RET
+	0x037F8300 SUB X31, X31, 0x30
+
+ISIL:
+	001 Move [X0], W1
+	002 Return 
+
+Method: System.String get_SourceId()
+
+Disassembly:
+	0x037F8304 STP X30, X21, [X31 + 0x10]
+	0x037F8308 STP X20, X19, [X31 + 0x20]
+
+ISIL:
+	001 Move X0, [X0+8]
+	002 Return X0
+
+Method: System.Void set_SourceId(System.String value)
+
+Disassembly:
+	0x037F830C ADRP X21, 0x2532000
+	0x037F8310 ADRP X20, 0x1F1F000
+
+ISIL:
+	001 Move [X0+8], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Int32 get_LevelNumber()
+
+Disassembly:
+	0x037F8314 MOV X19, X0
+	0x037F8318 LDRB W8, [X21 + 0xEFD]
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_LevelNumber(System.Int32 value)
+
+Disassembly:
+	0x037F831C LDR X20, [X20 + 0xC58]
+	0x037F8320 TBNZ X8, 0x0, 0x37F8338
+
+ISIL:
+	001 Move [X0+16], W1
+	002 Return 
+
+Method: System.Int32 get_PlayerLevel()
+
+Disassembly:
+	0x037F8324 ADRP X0, 0x1F1F000
+	0x037F8328 LDR X0, [X0 + 0xC58]
+
+ISIL:
+	001 Move W0, [X0+20]
+	002 Return X0
+
+Method: System.Void set_PlayerLevel(System.Int32 value)
+
+Disassembly:
+	0x037F832C BL 0x239B8E4
+	0x037F8330 MOVZ W8, 0x1
+
+ISIL:
+	001 Move [X0+20], W1
+	002 Return 
+
+Method: System.Boolean get_IsValid()
+
+Disassembly:
+	0x037F8334 STRB W8, [X21 + 0xEFD]
+	0x037F8338 LDR X0, [X19 + 0xE8]
+	0x037F833C LDR X2, [X20]
+	0x037F8340 ADD X1, X31, 0x0
+
+ISIL:
+	001 Move X8, [X0+8]
+	002 NotImplemented "Instruction CMP not yet implemented."
+	003 NotImplemented "Instruction CSET not yet implemented."
+	004 Return X0
+
+Method: System.Void .ctor(Code.GameLogic.IAP.OfferType offerType)
+
+Disassembly:
+	0x037F8344 BL 0x265DFB4
+	0x037F8348 LDP X0, X1, [X31]
+	0x037F834C LDP X20, X19, [X31 + 0x20]
+	0x037F8350 LDP X30, X21, [X31 + 0x10]
+	0x037F8354 ADD X31, X31, 0x30
+	0x037F8358 RET
+	0x037F835C LDR X0, [X0 + 0x10]
+	0x037F8360 RET
+	0x037F8364 LDR X8, [X0 + 0x10]
+	0x037F8368 CBZ X8, 0x37F8374
+	0x037F836C LDR X0, [X8 + 0x10]
+	0x037F8370 RET
+	0x037F8374 STR X30, [X31 - 0x10]!
+	0x037F8378 BL 0x239BB90
+	0x037F837C MOV X0, X31
+	0x037F8380 RET
+	0x037F8384 STR X30, [X31 - 0x20]!
+	0x037F8388 STP X20, X19, [X31 + 0x10]
+	0x037F838C ADRP X20, 0x2532000
+	0x037F8390 MOV X19, X0
+	0x037F8394 LDRB W8, [X20 + 0xEFE]
+	0x037F8398 TBNZ X8, 0x0, 0x37F83BC
+	0x037F839C ADRP X0, 0x1F44000
+	0x037F83A0 LDR X0, [X0 + 0x678]
+	0x037F83A4 BL 0x239B8E4
+	0x037F83A8 ADRP X0, 0x1EFF000
+	0x037F83AC LDR X0, [X0 + 0xA00]
+	0x037F83B0 BL 0x239B8E4
+	0x037F83B4 MOVZ W8, 0x1
+	0x037F83B8 STRB W8, [X20 + 0xEFE]
+	0x037F83BC LDR X0, [X19 + 0x38]
+	0x037F83C0 CBZ X0, 0x37F8400
+	0x037F83C4 ADRP X8, 0x1F44000
+	0x037F83C8 ADD X2, X31, 0x8
+	0x037F83CC MOV W1, W31
+	0x037F83D0 LDR X8, [X8 + 0x678]
+
+ISIL:
+	001 Subtract X31, X31, 80
+	002 Move [X31+32], X30
+	003 Move [X31+48], X22
+	004 Move [X31+56], X21
+	005 Move [X31+64], X20
+	006 Move [X31+72], X19
+	007 Move W20, W1
+	008 Move W8, [0x2536ED2]
+	009 Move X22, [0x1F46B70]
+	010 Move X19, X0
+	011 Move TEMP, X8
+	012 And TEMP, TEMP, 1
+	013 Compare TEMP, 1
+	014 JumpIfEqual {19}
+	015 Move X0, [0x1F46B70]
+	016 Call 0x239F8E4
+	017 Move W8, 1
+	018 Move [X21+3794], W8
+	019 Move X8, [X22]
+	020 Move TEMP, 0
+	021 Not TEMP
+	022 Move X9, TEMP
+	023 Add X0, X31, 8
+	024 Move X1, X31
+	025 Move [X31+24], W20
+	026 Move [X31+8], X8
+	027 Move [X31+16], X9
+	028 Call Enum.ToString, X0
+	029 Move X1, X0
+	030 Move X0, X19
+	031 Move [X0+8], X1
+	032 Call 0x239F888
+	033 NotImplemented "Instruction MOVI not yet implemented."
+	034 Move W8, 1
+	035 Move X30, [X31+32]
+	036 Move [X19], W8
+	037 Move X22, [X31+48]
+	038 Move X21, [X31+56]
+	039 Move [X19+16], D0
+	040 Move X20, [X31+64]
+	041 Move X19, [X31+72]
+	042 Add X31, X31, 80
+	043 Return 
+
+Method: System.Void .ctor(System.String sourceId, System.Boolean isOffer = False)
+
+Disassembly:
+	0x037F81C0 B 0x239B888
+	0x037F81C4 LDR X0, [X0 + 0xF8]
+	0x037F81C8 RET
+	0x037F81CC STR X1, [X0 + 0xF8]!
+	0x037F81D0 B 0x239B888
+	0x037F81D4 LDRB W0, [X0 + 0x100]
+	0x037F81D8 RET
+	0x037F81DC STRB W1, [X0 + 0x100]
+	0x037F81E0 RET
+	0x037F81E4 LDR X0, [X0 + 0x108]
+	0x037F81E8 RET
+	0x037F81EC MOV X8, X0
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move W19, W2
+	005 Move X20, X0
+	006 Move [X0+8], X1
+	007 Call 0x239F888
+	008 NotImplemented "Instruction MOVI not yet implemented."
+	009 Move [X20], W19
+	010 Move [X20+16], D0
+	011 Move X20, [X31+16]
+	012 Move X19, [X31+24]
+	013 Move X30, [X31+32]
+	014 Return 
+
+Method: System.Void .ctor(System.String sourceId, System.Int32 levelNumber, System.Int32 playerLevel, System.Boolean isOffer = False)
+
+Disassembly:
+	0x037F83D4 LDR X3, [X8]
+	0x037F83D8 BL 0x272B3C4
+	0x037F83DC LDR X0, [X31 + 0x8]
+	0x037F83E0 CBZ X0, 0x37F8400
+	0x037F83E4 ADRP X8, 0x1EFF000
+	0x037F83E8 LDR X8, [X8 + 0xA00]
+	0x037F83EC LDR X1, [X8]
+	0x037F83F0 BL 0x27550B8
+	0x037F83F4 LDP X20, X19, [X31 + 0x10]
+	0x037F83F8 LDR X30, [X31], #0x20
+	0x037F83FC RET
+	0x037F8400 BL 0x239BB90
+	0x037F8404 LDR X0, [X0 + 0x10]
+	0x037F8408 RET
+	0x037F840C STR X30, [X31 - 0x20]!
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31+16], X22
+	003 Move [X31+24], X21
+	004 Move [X31+32], X20
+	005 Move [X31+40], X19
+	006 Move W19, W4
+	007 Move W20, W3
+	008 Move W21, W2
+	009 Move X22, X0
+	010 Move [X0+8], X1
+	011 Call 0x239F888
+	012 Move [X22], W19
+	013 Move [X22+16], W21
+	014 Move [X22+20], W20
+	015 Move X20, [X31+32]
+	016 Move X19, [X31+40]
+	017 Move X22, [X31+16]
+	018 Move X21, [X31+24]
+	019 Move X30, [X31+48]
+	020 Return 
+

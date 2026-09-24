@@ -1,0 +1,63 @@
+// Namespace: MergeEngine.ECS.Systems
+public interface ISystemManager // TypeDefIndex: 661
+{
+	// Properties
+	public abstract bool IsInitialized { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void add_Initialized(Action value);
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void remove_Initialized(Action value);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract bool get_IsInitialized();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract bool AddSystem<TSystem>();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-ISystemManager.AddSystem<object>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract bool AddSystem<TSystem>(object[] constructorParameters);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-ISystemManager.AddSystem<object>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract TSystem GetSystem<TSystem>();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-ISystemManager.GetSystem<object>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract bool RemoveSystem<TSystem>();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-ISystemManager.RemoveSystem<object>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract void InitializeAll(Action beforeInitialized);
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract bool HasSystem<TSystem>();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-ISystemManager.HasSystem<object>
+	*/
+}
+

@@ -1,0 +1,19 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoosterService.<>c__DisplayClass39_0 // TypeDefIndex: 7759
+{
+	// Fields
+	public RemoteBoosterData booster; // 0x10
+
+	// Methods
+
+	// RVA: 0x65C2A30 Offset: 0x65BEA30 VA: 0x65C2A30
+	public void .ctor() { }
+
+	// RVA: 0x65C4B68 Offset: 0x65C0B68 VA: 0x65C4B68
+	internal bool <UpdateRemoteBoosterFromResponse>b__0(RemoteBoosterData b) { }
+
+	// RVA: 0x65C4B90 Offset: 0x65C0B90 VA: 0x65C4B90
+	internal bool <UpdateRemoteBoosterFromResponse>b__1(BoosterIdComponent component) { }
+}
+

@@ -1,0 +1,36 @@
+// Namespace: MergePuzzle
+public class ChestSpawnerConfigAdaptor : AdaptorBase // TypeDefIndex: 1604
+{
+	// Fields
+	protected readonly ChestSpawnerConfig activeConfigBase; // 0xC
+
+	// Methods
+
+	// RVA: 0x1885F80 Offset: 0x1885F80 VA: 0x1885F80
+	public void .ctor(string setIDLevel, ChestSpawnerConfig activeConfigBase) { }
+
+	// RVA: 0x1885FA4 Offset: 0x1885FA4 VA: 0x1885FA4
+	public void .ctor(BoardItemChestSpawner boardItemChestSpawner) { }
+
+	// RVA: 0x1886008 Offset: 0x1886008 VA: 0x1886008
+	public bool GetUsesEnergy() { }
+
+	// RVA: 0x1886024 Offset: 0x1886024 VA: 0x1886024
+	public int GetCapacity() { }
+
+	// RVA: 0x18835B8 Offset: 0x18835B8 VA: 0x18835B8
+	public int GetChargeTime() { }
+
+	// RVA: 0x18860B8 Offset: 0x18860B8 VA: 0x18860B8
+	public int GetGemSkipAmount() { }
+
+	// RVA: 0x18860D4 Offset: 0x18860D4 VA: 0x18860D4
+	public int GetGemDecreaseCount() { }
+
+	// RVA: 0x18860F0 Offset: 0x18860F0 VA: 0x18860F0
+	public bool GetNonProbabilistic() { }
+
+	// RVA: 0x188610C Offset: 0x188610C VA: 0x188610C
+	public List<SpawnedItem> GetSpawnedItems() { }
+}
+

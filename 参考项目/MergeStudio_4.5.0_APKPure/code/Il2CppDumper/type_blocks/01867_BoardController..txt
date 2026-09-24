@@ -1,0 +1,13 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardController.<>c__DisplayClass142_0 // TypeDefIndex: 1867
+{
+	// Fields
+	public int currentLevel; // 0x8
+
+	// Methods
+
+	// RVA: 0x1918464 Offset: 0x1918464 VA: 0x1918464
+	public void .ctor() { }
+}
+

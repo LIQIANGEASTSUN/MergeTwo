@@ -1,0 +1,38 @@
+// Namespace: Merger.MergeBoard.Handlers
+public class CollectableItemsGrantProcessor : Base, IBoardControllerPostTickProcessor, IDisposable // TypeDefIndex: 25889
+{
+	// Fields
+	[Inject]
+	private IResourcesModel _resourcesModel; // 0x28
+	[Inject]
+	private IMergeBoardLayout _layout; // 0x30
+	[Inject]
+	private ICollectableRewardsModel _itemRewardCollectableModel; // 0x38
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0x40
+	private Dictionary<string, Action> _pendingUpdateResourceDisplayValueCallbacks; // 0x48
+
+	// Methods
+
+	// RVA: 0x6A9125C Offset: 0x6A8D25C VA: 0x6A9125C Slot: 15
+	public void Process(TickArgs result) { }
+
+	// RVA: 0x6A922E4 Offset: 0x6A8E2E4 VA: 0x6A922E4 Slot: 14
+	protected override void HandleDisposed() { }
+
+	// RVA: 0x6A91DE8 Offset: 0x6A8DDE8 VA: 0x6A91DE8
+	private void GrantResource(string itemId, IRewardType rewardType, int amount, ResourceSource resourceSource) { }
+
+	// RVA: 0x6A92464 Offset: 0x6A8E464 VA: 0x6A92464
+	private Transform GetTransformAtPosition(int positionComponentPosition) { }
+
+	// RVA: 0x6A91F48 Offset: 0x6A8DF48 VA: 0x6A91F48
+	private void PlayResourceGrantAnimation(ItemResourceCollectedResult resourceCollected, Action onComplete) { }
+
+	// RVA: 0x6A91C30 Offset: 0x6A8DC30 VA: 0x6A91C30
+	private void PlayFlyAnimationForCollectableItems(ItemCollectedResult collected, Reward rewardReceivedFromBackend) { }
+
+	// RVA: 0x6A92514 Offset: 0x6A8E514 VA: 0x6A92514
+	public void .ctor() { }
+}
+

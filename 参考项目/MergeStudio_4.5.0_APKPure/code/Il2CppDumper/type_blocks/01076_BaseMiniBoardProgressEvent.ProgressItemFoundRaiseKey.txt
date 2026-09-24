@@ -1,0 +1,9 @@
+// Namespace: 
+public struct BaseMiniBoardProgressEvent.ProgressItemFoundRaiseKey : IEvent // TypeDefIndex: 1076
+{
+	// Fields
+	public Vector3 KeyPosition; // 0x0
+	public float KeyWorldScale; // 0xC
+	public Sprite KeySprite; // 0x10
+}
+

@@ -1,0 +1,29 @@
+// Namespace: Merger.Game.Views
+public interface IBoardUIView : IViewComponent // TypeDefIndex: 8591
+{
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void add_ItemDroppedOnInventory(Action<BoardItemPosition> value);
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void remove_ItemDroppedOnInventory(Action<BoardItemPosition> value);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void StartInventoryButtonHinting();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void StopInventoryButtonHinting();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract void DropItemOnInventory(BoardItemPosition boardItemPosition);
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract void EnableUI();
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract void DisableUI();
+}
+

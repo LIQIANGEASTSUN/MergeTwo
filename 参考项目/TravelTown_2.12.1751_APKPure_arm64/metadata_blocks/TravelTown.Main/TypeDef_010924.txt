@@ -1,0 +1,280 @@
+// Namespace: Framework.Core.Services.Backend.Repositories
+public abstract class RepositoryBase : IInitializable // TypeDefIndex: 10924
+{
+	// Fields
+	[Inject]
+	protected DiContainer DiContainer; // 0x10
+	[Inject]
+	private IHttpRequestService _httpRequestService; // 0x18
+	[Inject]
+	protected IWebsocketRequestService _websocketRequestService; // 0x20
+	[Inject]
+	private IHttpRequestFactory _requestFactory; // 0x28
+	[Inject]
+	protected IBackendCredentialsModel _backendCredentialsModel; // 0x30
+	[Inject]
+	private IJsonService _jsonService; // 0x38
+	[Inject]
+	private IHeaderBuilder _headerBuilder; // 0x40
+	[Inject]
+	private SignalBus _signalBus; // 0x48
+	[Inject]
+	private IClientConfigService _clientConfigService; // 0x50
+	[Inject]
+	private IBootstrapPreDownloadService _iIBootstrapPreDownloadService; // 0x58
+
+	// Properties
+	protected virtual string UserId { get; }
+	protected IHttpRequestService HttpRequestService { get; }
+	protected IJsonService JsonService { get; }
+	protected SignalBus SignalBus { get; }
+	protected virtual IHttpRequestFactory RequestFactory { get; }
+	protected virtual bool ForceDeserializationOnMainThread { get; }
+
+	// Methods
+
+	// RVA: 0x6922374 Offset: 0x691E374 VA: 0x6922374 Slot: 5
+	protected virtual string get_UserId() { }
+
+	// RVA: 0x6922430 Offset: 0x691E430 VA: 0x6922430
+	protected IHttpRequestService get_HttpRequestService() { }
+
+	// RVA: 0x6922438 Offset: 0x691E438 VA: 0x6922438
+	protected IJsonService get_JsonService() { }
+
+	// RVA: 0x6922440 Offset: 0x691E440 VA: 0x6922440
+	protected SignalBus get_SignalBus() { }
+
+	// RVA: 0x6922448 Offset: 0x691E448 VA: 0x6922448 Slot: 6
+	protected virtual IHttpRequestFactory get_RequestFactory() { }
+
+	// RVA: 0x6922450 Offset: 0x691E450 VA: 0x6922450 Slot: 7
+	protected virtual bool get_ForceDeserializationOnMainThread() { }
+
+	// RVA: 0x6922458 Offset: 0x691E458 VA: 0x6922458 Slot: 4
+	private void Zenject.IInitializable.Initialize() { }
+
+	// RVA: 0x6922464 Offset: 0x691E464 VA: 0x6922464 Slot: 8
+	protected virtual void InitializeRepository() { }
+
+	// RVA: -1 Offset: -1
+	protected IPromise<HttpResponse> MakePostRequest<TPayload>(string path, TPayload payload, bool userAuthorizationHeader = True, string version = "v1", Dictionary<string, string> additionalHeaders, RetryStrategy retryStrategy, ISuccessStrategy successStrategy, bool useUnityWebRequest = False) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D736D4 Offset: 0x3D6F6D4 VA: 0x3D736D4
+	|-RepositoryBase.MakePostRequest<object>
+	|
+	|-RVA: 0x3D73784 Offset: 0x3D6F784 VA: 0x3D73784
+	|-RepositoryBase.MakePostRequest<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	protected IPromise<HttpResponse> MakePatchRequest<TPayload>(string path, TPayload payload, bool userAuthorizationHeader = True, string version = "v1", Dictionary<string, string> additionalHeaders, RetryStrategy retryStrategy, ISuccessStrategy successStrategy, IHttpErrorHandler httpErrorHandler) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D734FC Offset: 0x3D6F4FC VA: 0x3D734FC
+	|-RepositoryBase.MakePatchRequest<object>
+	|
+	|-RVA: 0x3D735A4 Offset: 0x3D6F5A4 VA: 0x3D735A4
+	|-RepositoryBase.MakePatchRequest<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	protected IPromise<HttpResponse> MakeDeleteRequest<TPayload>(string path, TPayload payload, bool userAuthorizationHeader = True, string version = "v1", Dictionary<string, string> additionalHeaders, bool disableCache = False, RetryStrategy retryStrategy) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D733D0 Offset: 0x3D6F3D0 VA: 0x3D733D0
+	|-RepositoryBase.MakeDeleteRequest<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x6922468 Offset: 0x691E468 VA: 0x6922468
+	protected IPromise<HttpResponse> MakeGetRequest(string path, bool userAuthorizationHeader = True, string version = "v1", Dictionary<string, string> additionalHeaders, bool disableCache = False, RetryStrategy retryStrategy) { }
+
+	// RVA: 0x69225F0 Offset: 0x691E5F0 VA: 0x69225F0
+	protected HttpRequest CreateGetRequest(string path, bool userAuthorizationHeader = True, string version = "v1", Dictionary<string, string> additionalHeaders, bool disableCache = False, RetryStrategy retryStrategy) { }
+
+	// RVA: -1 Offset: -1
+	protected IPromise<HttpResponse> MakePutRequest<TPayload>(string path, TPayload payload, bool userAuthorizationHeader = True, string version = "v1", Dictionary<string, string> additionalHeaders, RetryStrategy retryStrategy) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D738B4 Offset: 0x3D6F8B4 VA: 0x3D738B4
+	|-RepositoryBase.MakePutRequest<object>
+	|
+	|-RVA: 0x3D73950 Offset: 0x3D6F950 VA: 0x3D73950
+	|-RepositoryBase.MakePutRequest<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void ConvertToObject<T>(HttpResponse response, IPromise<T> promise, IResponseValidator<T> validator, bool reportParsingMetric = False) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D71224 Offset: 0x3D6D224 VA: 0x3D71224
+	|-RepositoryBase.ConvertToObject<object>
+	|
+	|-RVA: 0x3D713B8 Offset: 0x3D6D3B8 VA: 0x3D713B8
+	|-RepositoryBase.ConvertToObject<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void ConvertToObject<T>(BackendMessageNotification messageNotification, IPromise<T> promise, IResponseValidator<T> validator, bool reportParsingMetric = False) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D7114C Offset: 0x3D6D14C VA: 0x3D7114C
+	|-RepositoryBase.ConvertToObject<object>
+	|
+	|-RVA: 0x3D712DC Offset: 0x3D6D2DC VA: 0x3D712DC
+	|-RepositoryBase.ConvertToObject<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	protected T ConvertToObject<T>(HttpResponse response, IResponseValidator<T> validator) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D708F4 Offset: 0x3D6C8F4 VA: 0x3D708F4
+	|-RepositoryBase.ConvertToObject<object>
+	|
+	|-RVA: 0x3D70C90 Offset: 0x3D6CC90 VA: 0x3D70C90
+	|-RepositoryBase.ConvertToObject<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	private void ConvertToObjectInternal<T>(string data, IPromise<T> promise, string requestUniqueId, bool reportParsingMetric, IResponseValidator<T> validator, string customLogData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D71474 Offset: 0x3D6D474 VA: 0x3D71474
+	|-RepositoryBase.ConvertToObjectInternal<object>
+	|
+	|-RVA: 0x3D71CAC Offset: 0x3D6DCAC VA: 0x3D71CAC
+	|-RepositoryBase.ConvertToObjectInternal<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	private IPromise<HttpResponse> MakeRequest<TPayload>(string path, TPayload payload, bool userAuthorizationHeader, HttpRequestType requestType, Dictionary<string, string> additionalHeaders, string version, RetryStrategy retryStrategy, ISuccessStrategy successStrategy, bool useUnityWebRequest = False, IHttpErrorHandler httpErrorHandler) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D73A7C Offset: 0x3D6FA7C VA: 0x3D73A7C
+	|-RepositoryBase.MakeRequest<object>
+	|
+	|-RVA: 0x3D73BB8 Offset: 0x3D6FBB8 VA: 0x3D73BB8
+	|-RepositoryBase.MakeRequest<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	private HttpRequest CreateRequest<TPayload>(string path, TPayload payload, bool userAuthorizationHeader, HttpRequestType requestType, Dictionary<string, string> additionalHeaders, string version, RetryStrategy retryStrategy, ISuccessStrategy successStrategy, bool useUnityWebRequest = False, IHttpErrorHandler httpErrorHandler) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D725B8 Offset: 0x3D6E5B8 VA: 0x3D725B8
+	|-RepositoryBase.CreateRequest<object>
+	|
+	|-RVA: 0x3D727DC Offset: 0x3D6E7DC VA: 0x3D727DC
+	|-RepositoryBase.CreateRequest<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x6922934 Offset: 0x691E934 VA: 0x6922934
+	private void TryAddRetryStrategy(RequestData requestData, RetryStrategy retryStrategy) { }
+
+	// RVA: -1 Offset: -1
+	protected IPromise<T> MakeWebsocketRequest<T>(string topic, string action, object payload, int timeout = 30, int retryCount = 0, IResponseValidator<T> validator) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D73D84 Offset: 0x3D6FD84 VA: 0x3D73D84
+	|-RepositoryBase.MakeWebsocketRequest<object>
+	|
+	|-RVA: 0x3D73E74 Offset: 0x3D6FE74 VA: 0x3D73E74
+	|-RepositoryBase.MakeWebsocketRequest<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	protected IPromise<TResponse> WebsocketRequest<TPayload, TResponse>(string topic, string action, TPayload payload, int timeout = 30, int retryCount = 0, IResponseValidator<TResponse> validator) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D7535C Offset: 0x3D7135C VA: 0x3D7535C
+	|-RepositoryBase.WebsocketRequest<object, object>
+	|
+	|-RVA: 0x3D755CC Offset: 0x3D715CC VA: 0x3D755CC
+	|-RepositoryBase.WebsocketRequest<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	protected IPromise<TResponse> WebsocketRequest<TResponse>(string topic, string action, int timeout = 30, int retryCount = 0) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D750C0 Offset: 0x3D710C0 VA: 0x3D750C0
+	|-RepositoryBase.WebsocketRequest<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x6922A8C Offset: 0x691EA8C VA: 0x6922A8C
+	protected void MakeWebsocketRequestWithoutReply(string topic, string action, object payload, int timeout = 30, int retryCount = 0) { }
+
+	// RVA: -1 Offset: -1
+	protected IPromise<TResponse> Post<TRequest, TResponse>(string path, TRequest payload, IResponseValidator<TResponse> validator) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D7428C Offset: 0x3D7028C VA: 0x3D7428C
+	|-RepositoryBase.Post<object, object>
+	|
+	|-RVA: 0x3D74520 Offset: 0x3D70520 VA: 0x3D74520
+	|-RepositoryBase.Post<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	protected IPromise Delete<TRequest>(string path, TRequest payload) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D72A98 Offset: 0x3D6EA98 VA: 0x3D72A98
+	|-RepositoryBase.Delete<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	protected IPromise<TResponse> Get<TResponse>(string path, IResponseValidator<TResponse> validator, Dictionary<string, string> additionalHeaders, bool reportParsingMetric = False) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D72D9C Offset: 0x3D6ED9C VA: 0x3D72D9C
+	|-RepositoryBase.Get<object>
+	|
+	|-RVA: 0x3D73030 Offset: 0x3D6F030 VA: 0x3D73030
+	|-RepositoryBase.Get<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	protected IPromise<TResponse> Patch<TRequest, TResponse>(string path, TRequest payload, IResponseValidator<TResponse> validator) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D73F64 Offset: 0x3D6FF64 VA: 0x3D73F64
+	|-RepositoryBase.Patch<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	protected IPromise<TResponse> Put<TRequest, TResponse>(string path, TRequest payload, IResponseValidator<TResponse> validator) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D74DA0 Offset: 0x3D70DA0 VA: 0x3D74DA0
+	|-RepositoryBase.Put<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	protected IPromise Put<TRequest>(string path, TRequest payload) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D7484C Offset: 0x3D7084C VA: 0x3D7484C
+	|-RepositoryBase.Put<object>
+	|
+	|-RVA: 0x3D74AA8 Offset: 0x3D70AA8 VA: 0x3D74AA8
+	|-RepositoryBase.Put<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	protected TValidator InstantiateValidator<TValidator, TResponse>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D732CC Offset: 0x3D6F2CC VA: 0x3D732CC
+	|-RepositoryBase.InstantiateValidator<object, object>
+	|
+	|-RVA: 0x3D7330C Offset: 0x3D6F30C VA: 0x3D7330C
+	|-RepositoryBase.InstantiateValidator<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x691DA00 Offset: 0x6919A00 VA: 0x691DA00
+	protected void .ctor() { }
+}
+

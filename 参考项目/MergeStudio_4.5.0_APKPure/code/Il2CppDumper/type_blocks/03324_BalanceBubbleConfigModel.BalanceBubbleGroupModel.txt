@@ -1,0 +1,14 @@
+// Namespace: 
+[Serializable]
+public class BalanceBubbleConfigModel.BalanceBubbleGroupModel // TypeDefIndex: 3324
+{
+	// Fields
+	public int GroupID; // 0x8
+	public List<BalanceBubbleConfigModel.BalanceBubbleItemModel> BubbleItemList; // 0xC
+
+	// Methods
+
+	// RVA: 0x1BAE7D8 Offset: 0x1BAE7D8 VA: 0x1BAE7D8
+	public void .ctor() { }
+}
+

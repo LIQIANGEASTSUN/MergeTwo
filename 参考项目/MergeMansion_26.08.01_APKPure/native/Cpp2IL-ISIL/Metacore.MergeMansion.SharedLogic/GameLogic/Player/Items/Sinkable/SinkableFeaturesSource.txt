@@ -1,0 +1,118 @@
+Type: GameLogic.Player.Items.Sinkable.SinkableFeaturesSource
+
+Method: System.String get_ConfigKey()
+
+Disassembly:
+	0x03605B08 ADD X31, X31, 0x30
+	0x03605B0C RET
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.String get_ItemType()
+
+Disassembly:
+	0x03605B10 STR X30, [X31 - 0x20]!
+	0x03605B14 STP X20, X19, [X31 + 0x10]
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: GameLogic.Player.Items.Sinkable.SinkableFeatures ToConfigData(GameLogic.Player.Items.Production.IProducerFactory producerFactory)
+
+Disassembly:
+	0x03605B18 ADRP X20, 0x2724000
+	0x03605B1C MOV X19, X0
+	0x03605B20 LDRB W8, [X20 + 0xB9F]
+	0x03605B24 TBNZ X8, 0x0, 0x3605B3C
+	0x03605B28 ADRP X0, 0x212C000
+	0x03605B2C LDR X0, [X0 + 0x590]
+	0x03605B30 BL 0x239B8E4
+	0x03605B34 MOVZ W8, 0x1
+	0x03605B38 STRB W8, [X20 + 0xB9F]
+	0x03605B3C LDR W8, [X19 + 0x10]
+	0x03605B40 ADDS W31, W8, 0x2
+	0x03605B44 B.NE 0x3605B68
+	0x03605B48 LDR W20, [X19 + 0x28]
+	0x03605B4C MOV X0, X31
+	0x03605B50 BL 0x44ECB1C
+	0x03605B54 CMP W20, W0
+	0x03605B58 B.NE 0x3605B68
+	0x03605B5C STR W31, [X19 + 0x10]
+	0x03605B60 MOV X20, X19
+	0x03605B64 B 0x3605BA4
+	0x03605B68 ADRP X8, 0x212C000
+	0x03605B6C LDR X8, [X8 + 0x590]
+	0x03605B70 LDR X0, [X8]
+	0x03605B74 BL 0x239BB80
+	0x03605B78 MOV X1, X31
+	0x03605B7C MOV X20, X0
+	0x03605B80 BL 0x44E8DEC
+	0x03605B84 MOV X0, X31
+	0x03605B88 STR W31, [X20 + 0x10]
+	0x03605B8C BL 0x44ECB1C
+	0x03605B90 LDR X1, [X19 + 0x30]
+	0x03605B94 STR W0, [X20 + 0x28]
+	0x03605B98 MOV X0, X20
+	0x03605B9C STR X1, [X0 + 0x30]!
+	0x03605BA0 BL 0x239B888
+	0x03605BA4 LDR X1, [X19 + 0x40]
+	0x03605BA8 MOV X0, X20
+	0x03605BAC STR X1, [X0 + 0x38]!
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move X19, X0
+	006 Move W8, [0x2728B6A]
+	007 Move X20, [0x20D4118]
+	008 Move TEMP, X8
+	009 And TEMP, TEMP, 1
+	010 Compare TEMP, 1
+	011 JumpIfEqual {18}
+	012 Move X0, [0x20D4118]
+	013 Call 0x239F8E4
+	014 Move X0, [0x212F9B0]
+	015 Call 0x239F8E4
+	016 Move W8, 1
+	017 Move [X21+2922], W8
+	018 Move X0, [X20]
+	019 Move W8, [X0+228]
+	020 Move X20, [0x212F9B0]
+	021 Move X19, [X19+24]
+	022 Compare W8, 0
+	023 JumpIfNotEqual {25}
+	024 Call 0x239FA64
+	025 Move X0, X19
+	026 Move X1, X31
+	027 Call ConfigExtensions.ParseSinkInActions, X0
+	028 Move X8, [X20]
+	029 Move X19, X0
+	030 Move X0, X8
+	031 Call 0x239FB80
+	032 Move W1, W31
+	033 Move X2, X19
+	034 Move X20, X0
+	035 Call SinkableFeatures..ctor, X0, X1, X2
+	036 Move X0, X20
+	037 Move X20, [X31+16]
+	038 Move X19, [X31+24]
+	039 Move X30, [X31+32]
+	040 Move X21, [X31+40]
+	041 Return X0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03605BB0 BL 0x239B888
+	0x03605BB4 MOV X0, X20
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+

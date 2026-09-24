@@ -1,0 +1,20 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ToolSpawnHandler.<>c__DisplayClass26_0 // TypeDefIndex: 25834
+{
+	// Fields
+	public IMergeGraphItem toolGraph; // 0x10
+	public ToolSpawnHandler <>4__this; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A84E28 Offset: 0x6A80E28 VA: 0x6A84E28
+	public void .ctor() { }
+
+	// RVA: 0x6A84E30 Offset: 0x6A80E30 VA: 0x6A84E30
+	internal bool <SumItemsMergeValue>b__0(string itemId) { }
+
+	// RVA: 0x6A84EFC Offset: 0x6A80EFC VA: 0x6A84EFC
+	internal int <SumItemsMergeValue>b__1(string itemId) { }
+}
+

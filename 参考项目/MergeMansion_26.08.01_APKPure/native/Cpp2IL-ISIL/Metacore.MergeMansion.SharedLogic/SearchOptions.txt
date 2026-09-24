@@ -1,0 +1,35 @@
+Type: SearchOptions
+
+Method: System.Void .ctor(SearchType st, System.Int32 it = 0)
+
+Disassembly:
+	0x032B8304 MOV X0, X19
+	0x032B8308 BL 0x53E9080
+	0x032B830C LDR X8, [X0]
+	0x032B8310 STR X8, [X31]
+	0x032B8314 BL 0x53E9090
+	0x032B8318 MOV W21, W31
+	0x032B831C B 0x32B8258
+	0x032B8320 MOV X20, X1
+	0x032B8324 MOV X19, X0
+	0x032B8328 ADD X0, X31, 0x0
+	0x032B832C BL 0x230454C
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move W20, W1
+	006 Move X1, X31
+	007 Move W19, W2
+	008 Move X21, X0
+	009 Call Object..ctor, X0
+	010 Move [X21+16], W20
+	011 Move [X21+20], W19
+	012 Move X20, [X31+16]
+	013 Move X19, [X31+24]
+	014 Move X30, [X31+32]
+	015 Move X21, [X31+40]
+	016 Return 
+

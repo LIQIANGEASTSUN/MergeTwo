@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class RemoteSpawningModel.<>c__DisplayClass12_0 // TypeDefIndex: 491
+{
+	// Fields
+	public string foundItemId; // 0x10
+
+	// Methods
+
+	// RVA: 0x61311D0 Offset: 0x612D1D0 VA: 0x61311D0
+	public void .ctor() { }
+
+	// RVA: 0x613329C Offset: 0x612F29C VA: 0x613329C
+	internal bool <GetNextItem>b__1(ItemSpawnable spawnable) { }
+}
+

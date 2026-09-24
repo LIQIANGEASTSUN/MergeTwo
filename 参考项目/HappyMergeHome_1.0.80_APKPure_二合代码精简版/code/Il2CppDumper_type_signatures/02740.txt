@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeBoard.<>c__DisplayClass189_0 // TypeDefIndex: 2740
+{
+	// Fields
+	public int index; // 0x8
+	public MergeBoard <>4__this; // 0xC
+	public int nowActiveIndex; // 0x10
+
+	// Methods
+
+	// RVA: 0x2C35DD8 Offset: 0x2C35DD8 VA: 0x2C35DD8
+	public void .ctor() { }
+
+	// RVA: 0x2C35DE0 Offset: 0x2C35DE0 VA: 0x2C35DE0
+	internal void <Procedure_SpeedUp>b__0() { }
+
+	// RVA: 0x2C3609C Offset: 0x2C3609C VA: 0x2C3609C
+	internal void <Procedure_SpeedUp>b__1() { }
+}
+

@@ -1,0 +1,4 @@
+// Namespace: 
+public struct BaseMiniBoardProgressEvent.BoardCongratsPopupClosed : IEvent // TypeDefIndex: 1078
+{}
+

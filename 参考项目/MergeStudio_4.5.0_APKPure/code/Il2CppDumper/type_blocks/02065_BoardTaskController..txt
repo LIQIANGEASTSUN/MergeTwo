@@ -1,0 +1,23 @@
+// Namespace: 
+[CompilerGenerated]
+private struct BoardTaskController.<SpawnTasksAsyncAfterLevelUpDismiss>d__64 : IAsyncStateMachine // TypeDefIndex: 2065
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncUniTaskMethodBuilder<bool> <>t__builder; // 0x4
+	public BoardTaskController <>4__this; // 0x10
+	public List<BoardTaskItem> newTasks; // 0x14
+	public bool isInitialize; // 0x18
+	private UniTask.Awaiter<bool> <>u__1; // 0x1C
+	private YieldAwaitable.Awaiter <>u__2; // 0x24
+
+	// Methods
+
+	// RVA: 0x196A614 Offset: 0x196A614 VA: 0x196A614 Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x196B2D4 Offset: 0x196B2D4 VA: 0x196B2D4 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

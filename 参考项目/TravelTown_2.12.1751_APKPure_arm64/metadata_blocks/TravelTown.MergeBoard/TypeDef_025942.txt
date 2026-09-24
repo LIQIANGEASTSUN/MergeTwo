@@ -1,0 +1,35 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class EntitiesKilledResult // TypeDefIndex: 25942
+{
+	// Fields
+	[CompilerGenerated]
+	private int <KilledCount>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private IReadOnlyCollection<Entity> <KilledEntities>k__BackingField; // 0x18
+
+	// Properties
+	public int KilledCount { get; set; }
+	public IReadOnlyCollection<Entity> KilledEntities { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A30C Offset: 0x6A9630C VA: 0x6A9A30C
+	public int get_KilledCount() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A314 Offset: 0x6A96314 VA: 0x6A9A314
+	public void set_KilledCount(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A31C Offset: 0x6A9631C VA: 0x6A9A31C
+	public IReadOnlyCollection<Entity> get_KilledEntities() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A324 Offset: 0x6A96324 VA: 0x6A9A324
+	public void set_KilledEntities(IReadOnlyCollection<Entity> value) { }
+
+	// RVA: 0x6A9A32C Offset: 0x6A9632C VA: 0x6A9A32C
+	public void .ctor() { }
+}
+

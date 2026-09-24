@@ -1,0 +1,23 @@
+// Namespace: Merger.ProducerExcitement.Signals
+public class ProducerExcitementRefreshStateSignal // TypeDefIndex: 33615
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly ProducerExcitementCycleDataResponse <CycleData>k__BackingField; // 0x10
+
+	// Properties
+	public ProducerExcitementCycleDataResponse CycleData { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6AD4EB4 Offset: 0x6AD0EB4 VA: 0x6AD4EB4
+	public ProducerExcitementCycleDataResponse get_CycleData() { }
+
+	// RVA: 0x6AD4EBC Offset: 0x6AD0EBC VA: 0x6AD4EBC
+	public void .ctor() { }
+
+	// RVA: 0x6AD4EC4 Offset: 0x6AD0EC4 VA: 0x6AD4EC4
+	public void .ctor(ProducerExcitementCycleDataResponse cycleData) { }
+}
+

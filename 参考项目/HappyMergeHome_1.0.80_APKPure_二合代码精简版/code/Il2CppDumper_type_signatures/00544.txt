@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class FishCultureModel.<>c // TypeDefIndex: 544
+{
+	// Fields
+	public static readonly FishCultureModel.<>c <>9; // 0x0
+	public static Action <>9__36_0; // 0x4
+
+	// Methods
+
+	// RVA: 0x31DC050 Offset: 0x31DC050 VA: 0x31DC050
+	private static void .cctor() { }
+
+	// RVA: 0x31DC0C4 Offset: 0x31DC0C4 VA: 0x31DC0C4
+	public void .ctor() { }
+
+	// RVA: 0x31DC0CC Offset: 0x31DC0CC VA: 0x31DC0CC
+	internal void <AddActivityScore>b__36_0() { }
+}
+

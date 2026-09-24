@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class PersistenceSystem.<>c__DisplayClass21_0 // TypeDefIndex: 671
+{
+	// Fields
+	public string persistentStoreKey; // 0x10
+
+	// Methods
+
+	// RVA: 0x628CB04 Offset: 0x6288B04 VA: 0x628CB04
+	public void .ctor() { }
+
+	// RVA: 0x628DFE8 Offset: 0x6289FE8 VA: 0x628DFE8
+	internal bool <DeserializeEntity>b__0(PersistentComponent persistentComp) { }
+}
+

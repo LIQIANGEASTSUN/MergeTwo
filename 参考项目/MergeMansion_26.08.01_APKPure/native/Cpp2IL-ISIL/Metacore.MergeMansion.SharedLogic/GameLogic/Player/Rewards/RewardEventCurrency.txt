@@ -1,0 +1,395 @@
+Type: GameLogic.Player.Rewards.RewardEventCurrency
+
+Method: Code.GameLogic.GameEvents.EventCurrencyId get_EventCurrencyId()
+
+Disassembly:
+	0x03741B54 ADRP X8, 0x1F8D000
+	0x03741B58 LDR X8, [X8 + 0xCD0]
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_EventCurrencyId(Code.GameLogic.GameEvents.EventCurrencyId value)
+
+Disassembly:
+	0x03741B5C LDR X8, [X8]
+	0x03741B60 LDR X0, [X8 + 0x20]
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Int32 get_Amount()
+
+Disassembly:
+	0x03741B64 ADD X8, X0, 0x135
+	0x03741B68 LDRH W8, [X8]
+
+ISIL:
+	001 Move W0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_Amount(System.Int32 value)
+
+Disassembly:
+	0x03741B6C TBNZ X8, 0x0, 0x3741B74
+	0x03741B70 BL 0x23D4F40
+
+ISIL:
+	001 Move [X0+32], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03741B74 LDR X8, [X0 + 0xC0]
+	0x03741B78 ADD X0, X31, 0x18
+	0x03741B7C LDR X8, [X8 + 0x8]
+	0x03741B80 LDR X1, [X8 + 0x80]
+
+ISIL:
+	001 Move W8, 10
+	002 Move X1, X31
+	003 Move [X0+32], W8
+	004 Call MetaPlayerRewardBase..ctor, X0
+	005 Return 
+
+Method: System.Void .ctor(Code.GameLogic.GameEvents.EventCurrencyId eventCurrencyId, System.Int32 amount, CurrencySource currencySource)
+
+Disassembly:
+	0x03741B84 BL 0x239B90C
+	0x03741B88 LDRB W8, [X0]
+	0x03741B8C CBZ W8, 0x3741BF4
+	0x03741B90 ADRP X8, 0x1F90000
+	0x03741B94 ADD X1, X31, 0x8
+	0x03741B98 LDR X8, [X8 + 0x7C8]
+	0x03741B9C LDR X9, [X31 + 0x18]
+	0x03741BA0 LDR X0, [X8]
+	0x03741BA4 STR X9, [X31 + 0x8]
+	0x03741BA8 BL 0x239BA6C
+	0x03741BAC ADRP X8, 0x1FA5000
+	0x03741BB0 MOV X1, X0
+	0x03741BB4 MOV X2, X31
+	0x03741BB8 LDR X8, [X8 + 0x9B0]
+	0x03741BBC LDR X8, [X8]
+	0x03741BC0 MOV X0, X8
+	0x03741BC4 BL 0x4310B40
+	0x03741BC8 B 0x3741C08
+	0x03741BCC LDR X8, [X20]
+	0x03741BD0 MOV X0, X20
+	0x03741BD4 MOV X1, X19
+	0x03741BD8 LDP X20, X19, [X31 + 0x30]
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31-40], X23
+	003 Move [X31+16], X22
+	004 Move [X31+24], X21
+	005 Move [X31+32], X20
+	006 Move [X31+40], X19
+	007 Move X21, X1
+	008 Move W8, 10
+	009 Move X1, X31
+	010 Move W19, W3
+	011 Move W20, W2
+	012 Move X22, X0
+	013 Move [X0+32], W8
+	014 Call MetaPlayerRewardBase..ctor, X0
+	015 Move X23, X22
+	016 Move X1, X21
+	017 Move [X23+24], X21
+	018 Move X0, X23
+	019 Call 0x239F888
+	020 Move [X22+32], W20
+	021 Move X22, [X31+16]
+	022 Move X21, [X31+24]
+	023 Move [X23-8], W19
+	024 Move X20, [X31+32]
+	025 Move X19, [X31+40]
+	026 Move X30, [X31+48]
+	027 Move X23, [X31+56]
+	028 Return 
+
+Method: System.Void Consume(GameLogic.Player.IPlayer playerModel, GameLogic.Player.AnalyticsContext context, GameLogic.Player.Rewards.IRewardContext rewardContext)
+
+Disassembly:
+	0x03741BDC LDR X30, [X31 + 0x10]
+	0x03741BE0 LDP X22, X21, [X31 + 0x20]
+	0x03741BE4 LDR X2, [X8 + 0x260]
+	0x03741BE8 LDR X3, [X8 + 0x258]
+	0x03741BEC ADD X31, X31, 0x40
+	0x03741BF0 BR X3
+	0x03741BF4 ADRP X8, 0x1F8C000
+	0x03741BF8 LDR X8, [X8 + 0x248]
+	0x03741BFC LDR X8, [X8 + 0x90]
+	0x03741C00 LDR X8, [X8 + 0xB8]
+	0x03741C04 LDR X0, [X8]
+	0x03741C08 LDP X20, X19, [X31 + 0x30]
+	0x03741C0C LDR X30, [X31 + 0x10]
+	0x03741C10 LDP X22, X21, [X31 + 0x20]
+	0x03741C14 ADD X31, X31, 0x40
+	0x03741C18 RET
+	0x03741C1C STP X30, X21, [X31 - 0x20]!
+	0x03741C20 STP X20, X19, [X31 + 0x10]
+	0x03741C24 ADRP X21, 0x25E9000
+	0x03741C28 MOV X20, X1
+	0x03741C2C MOV X19, X0
+	0x03741C30 LDRB W8, [X21 + 0x8AF]
+	0x03741C34 TBNZ X8, 0x0, 0x3741C58
+	0x03741C38 ADRP X0, 0x1F93000
+	0x03741C3C LDR X0, [X0 + 0xD50]
+	0x03741C40 BL 0x239B8E4
+	0x03741C44 ADRP X0, 0x1F94000
+	0x03741C48 LDR X0, [X0 + 0x7B0]
+	0x03741C4C BL 0x239B8E4
+	0x03741C50 MOVZ W8, 0x1
+	0x03741C54 STRB W8, [X21 + 0x8AF]
+	0x03741C58 CBZ X20, 0x3741D50
+	0x03741C5C ADRP X10, 0x1F93000
+	0x03741C60 LDR X8, [X20]
+	0x03741C64 LDR X10, [X10 + 0xD50]
+	0x03741C68 LDRH W9, [X8 + 0x12E]
+	0x03741C6C LDR X1, [X10]
+	0x03741C70 CBZ X9, 0x3741C94
+	0x03741C74 LDR X10, [X8 + 0xB0]
+	0x03741C78 ADD X10, X10, 0x8
+	0x03741C7C LDUR X11, [X10 - 0x8]
+	0x03741C80 CMP X11, X1
+	0x03741C84 B.EQ 0x3741CA4
+	0x03741C88 SUBS X9, X9, 0x1
+	0x03741C8C ADD X10, X10, 0x10
+	0x03741C90 B.NE 0x3741C7C
+	0x03741C94 MOV X0, X20
+	0x03741C98 MOVZ W2, 0x5
+	0x03741C9C BL 0x23D527C
+	0x03741CA0 B 0x3741CB4
+	0x03741CA4 LDR W9, [X10]
+	0x03741CA8 ADD W9, W9, 0x5
+	0x03741CAC ADD X8, X8, W9, 0x4, SXTW
+	0x03741CB0 ADD X0, X8, 0x138
+	0x03741CB4 LDP X8, X1, [X0]
+	0x03741CB8 MOV X0, X20
+	0x03741CBC BLR X8
+	0x03741CC0 LDR X8, [X19 + 0x18]
+	0x03741CC4 CBZ X8, 0x3741D50
+	0x03741CC8 LDR X9, [X8]
+	0x03741CCC MOV X1, X0
+	0x03741CD0 MOV X0, X8
+
+ISIL:
+	001 Move [X31-64], X30
+	002 Move [X31-56], X25
+	003 Move [X31+16], X24
+	004 Move [X31+24], X23
+	005 Move [X31+32], X22
+	006 Move [X31+40], X21
+	007 Move [X31+48], X20
+	008 Move [X31+56], X19
+	009 Move X21, X3
+	010 Move X19, X2
+	011 Move W8, [0x25ED885]
+	012 Move X20, X1
+	013 Move X22, X0
+	014 Move TEMP, X8
+	015 And TEMP, TEMP, 1
+	016 Compare TEMP, 1
+	017 JumpIfEqual {22}
+	018 Move X0, [0x1F97D60]
+	019 Call 0x239F8E4
+	020 Move W8, 1
+	021 Move [X23+2181], W8
+	022 Compare X20, 0
+	023 JumpIfEqual {72}
+	024 Move X8, [X20]
+	025 Move X10, [0x1F97D60]
+	026 NotImplemented "Instruction LDRH not yet implemented."
+	027 Move X1, [X10]
+	028 Compare X9, 0
+	029 JumpIfEqual {36}
+	030 Move X10, [X8+176]
+	031 Add X10, X10, 8
+	032 NotImplemented "Instruction LDUR not yet implemented."
+	033 NotImplemented "Instruction CMP not yet implemented."
+	034 Subtract X9, X9, 1
+	035 Add X10, X10, 16
+	036 Move X0, X20
+	037 Move W2, 4
+	038 Call 0x23D927C
+	039 Move W9, [X10]
+	040 Add W9, W9, 4
+	041 Add X8, X8, W9
+	042 Add X0, X8, 312
+	043 Move X8, [X0]
+	044 Move X1, [X0+8]
+	045 Move X0, X20
+	046 NotImplemented "Instruction BLR not yet implemented."
+	047 Move X23, [X22+24]
+	048 NotImplemented "Instruction LDRSW not yet implemented."
+	049 Move X25, X0
+	050 Move X0, X22
+	051 Move X1, X21
+	052 Call PlayerReward.GetCurrencySource, X0, X1
+	053 Compare X25, 0
+	054 JumpIfEqual {72}
+	055 Move X1, X20
+	056 Move X2, X23
+	057 Move X3, X24
+	058 Move X5, X19
+	059 Move X20, [X31+48]
+	060 Move X19, [X31+56]
+	061 Move X22, [X31+32]
+	062 Move X21, [X31+40]
+	063 Move W4, W0
+	064 Move X24, [X31+16]
+	065 Move X23, [X31+24]
+	066 Move X0, X25
+	067 Move X6, X31
+	068 Move X30, [X31+64]
+	069 Move X25, [X31+72]
+	070 Call Wallet.AddEventCurrency, X0, X1, X2, X3, X4, X5
+	071 Return 
+	072 Call 0x239FB90
+
+Method: System.Void Validate(GameLogic.Config.IMergeMansionGameConfig configuration, Metaplay.Core.Config.GameConfigValidationResult variantEntries)
+
+Disassembly:
+	0x03741CD4 LDP X10, X2, [X9 + 0x1C8]
+
+ISIL:
+	001 Return 
+
+Method: System.String Name(GameLogic.Player.IPlayer player)
+
+Disassembly:
+	0x03741CD8 BLR X10
+	0x03741CDC CBZ X0, 0x3741D50
+	0x03741CE0 ADRP X10, 0x1F94000
+	0x03741CE4 LDR X8, [X0]
+	0x03741CE8 MOV X19, X0
+	0x03741CEC LDR X10, [X10 + 0x7B0]
+
+ISIL:
+	001 Move X8, [X0+24]
+	002 Compare X8, 0
+	003 JumpIfEqual {6}
+	004 Move X0, [X8+16]
+	005 Return X0
+	006 Move [X31-16], X30
+	007 Call 0x239FB90
+
+Method: System.String TypeString()
+
+Disassembly:
+	0x03741CF0 LDRH W9, [X8 + 0x12E]
+	0x03741CF4 LDR X1, [X10]
+	0x03741CF8 CBZ X9, 0x3741D1C
+	0x03741CFC LDR X10, [X8 + 0xB0]
+	0x03741D00 ADD X10, X10, 0x8
+	0x03741D04 LDUR X11, [X10 - 0x8]
+	0x03741D08 CMP X11, X1
+	0x03741D0C B.EQ 0x3741D2C
+	0x03741D10 SUBS X9, X9, 0x1
+	0x03741D14 ADD X10, X10, 0x10
+	0x03741D18 B.NE 0x3741D04
+	0x03741D1C MOV X0, X19
+	0x03741D20 MOVZ W2, 0x1A
+	0x03741D24 BL 0x23D527C
+	0x03741D28 B 0x3741D3C
+	0x03741D2C LDR W9, [X10]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move W8, [0x25ED886]
+	005 Move X20, [0x1FC4FA8]
+	006 Move TEMP, X8
+	007 And TEMP, TEMP, 1
+	008 Compare TEMP, 1
+	009 JumpIfEqual {14}
+	010 Move X0, [0x1FC4FA8]
+	011 Call 0x239F8E4
+	012 Move W8, 1
+	013 Move [X19+2182], W8
+	014 Move X0, [X20]
+	015 Move X20, [X31+16]
+	016 Move X19, [X31+24]
+	017 Move X30, [X31+32]
+	018 Return X0
+
+Method: System.String ToString()
+
+Disassembly:
+	0x03741D30 ADD W9, W9, 0x1A
+	0x03741D34 ADD X8, X8, W9, 0x4, SXTW
+	0x03741D38 ADD X0, X8, 0x138
+	0x03741D3C LDP X2, X1, [X0]
+	0x03741D40 MOV X0, X19
+	0x03741D44 LDP X20, X19, [X31 + 0x10]
+	0x03741D48 LDP X30, X21, [X31], #0x20
+	0x03741D4C BR X2
+	0x03741D50 BL 0x239BB90
+	0x03741D54 STR X30, [X31 - 0x20]!
+	0x03741D58 STP X20, X19, [X31 + 0x10]
+	0x03741D5C ADRP X19, 0x25E9000
+	0x03741D60 ADRP X20, 0x1FF6000
+	0x03741D64 LDRB W8, [X19 + 0x8B0]
+	0x03741D68 LDR X20, [X20 + 0xB00]
+	0x03741D6C TBNZ X8, 0x0, 0x3741D84
+	0x03741D70 ADRP X0, 0x1FF6000
+	0x03741D74 LDR X0, [X0 + 0xB00]
+	0x03741D78 BL 0x239B8E4
+	0x03741D7C MOVZ W8, 0x1
+	0x03741D80 STRB W8, [X19 + 0x8B0]
+	0x03741D84 LDR X0, [X20]
+	0x03741D88 LDP X20, X19, [X31 + 0x10]
+	0x03741D8C LDR X30, [X31], #0x20
+	0x03741D90 RET
+	0x03741D94 SUB X31, X31, 0x40
+	0x03741D98 STP X30, X23, [X31 + 0x10]
+	0x03741D9C STP X22, X21, [X31 + 0x20]
+	0x03741DA0 STP X20, X19, [X31 + 0x30]
+	0x03741DA4 ADRP X20, 0x25E9000
+	0x03741DA8 MOV X19, X0
+	0x03741DAC LDRB W8, [X20 + 0x8B1]
+	0x03741DB0 TBNZ X8, 0x0, 0x3741DEC
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move X19, X0
+	005 Move W8, [0x25ED887]
+	006 Move TEMP, X8
+	007 And TEMP, TEMP, 1
+	008 Compare TEMP, 1
+	009 JumpIfEqual {14}
+	010 Move X0, [0x1FFAA00]
+	011 Call 0x239F8E4
+	012 Move W8, 1
+	013 Move [X20+2183], W8
+	014 Move X8, [X19+24]
+	015 Compare X8, 0
+	016 JumpIfEqual {35}
+	017 Add X1, X31, 12
+	018 Move X9, [0x1F90248]
+	019 Move X20, [0x1FFAA00]
+	020 Move W10, [X19+32]
+	021 Move X19, [X8+16]
+	022 Move X0, [X9+72]
+	023 Move [X31+12], W10
+	024 Call 0x239FA6C
+	025 Move X8, [X20]
+	026 Move X2, X0
+	027 Move X1, X19
+	028 Move X3, X31
+	029 Move X0, X8
+	030 Call String.Format, X0, X1, X2
+	031 Move X20, [X31+16]
+	032 Move X19, [X31+24]
+	033 Move X30, [X31+32]
+	034 Return X0
+	035 Call 0x239FB90
+

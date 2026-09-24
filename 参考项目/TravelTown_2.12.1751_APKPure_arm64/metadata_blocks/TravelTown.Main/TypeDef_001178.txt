@@ -1,0 +1,107 @@
+// Namespace: MergeEngine.Configuration
+public interface IMergeGraphItem : IUniqueStringKeyAsset // TypeDefIndex: 1178
+{
+	// Properties
+	public abstract List<IMergeItem> Items { get; }
+	public abstract Dictionary<string, IMergeItem> ItemsById { get; }
+	public abstract string GraphName { get; }
+	public abstract bool DropConsumable { get; }
+	public abstract bool PowerBoostable { get; }
+	public abstract int DropConsumableFromItemLevel { get; }
+	public abstract PlayerResourceEnum ConsumableDropResource { get; }
+	public abstract bool PrioritizeHinting { get; }
+	public abstract bool DropBubbledItems { get; }
+	public abstract int DropBubbleItemsFromLevel { get; }
+	public abstract float BubbledItemPriceMultiplier { get; }
+	public abstract bool PreventMergeWithAnyItem { get; }
+	public abstract bool IsInCollectionBook { get; }
+	public abstract CollectionBookCategoryConfigWeakReference CollectionBookTab { get; }
+	public abstract int SortOrderInCollectionBook { get; }
+	public abstract MergeGraphItemType GraphType { get; }
+	public abstract bool OverrideOriginGraph { get; }
+	public abstract IMergeGraphItem OriginGraph { get; }
+	public abstract IMergeGraphItem OverridenOriginGraph { get; set; }
+	public abstract MergeGraphItemWeakReference OriginGraphReference { get; }
+	public abstract bool PreventAddToInventory { get; }
+	public abstract bool IsSpecialChain { get; }
+	public abstract bool IsGateway { get; }
+	public abstract string GatewayText { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract List<IMergeItem> get_Items();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract Dictionary<string, IMergeItem> get_ItemsById();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract string get_GraphName();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract bool get_DropConsumable();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract bool get_PowerBoostable();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract int get_DropConsumableFromItemLevel();
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract PlayerResourceEnum get_ConsumableDropResource();
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract bool get_PrioritizeHinting();
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract bool get_DropBubbledItems();
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract int get_DropBubbleItemsFromLevel();
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public abstract float get_BubbledItemPriceMultiplier();
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public abstract bool get_PreventMergeWithAnyItem();
+
+	// RVA: -1 Offset: -1 Slot: 12
+	public abstract bool get_IsInCollectionBook();
+
+	// RVA: -1 Offset: -1 Slot: 13
+	public abstract CollectionBookCategoryConfigWeakReference get_CollectionBookTab();
+
+	// RVA: -1 Offset: -1 Slot: 14
+	public abstract int get_SortOrderInCollectionBook();
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public abstract MergeGraphItemType get_GraphType();
+
+	// RVA: -1 Offset: -1 Slot: 16
+	public abstract bool get_OverrideOriginGraph();
+
+	// RVA: -1 Offset: -1 Slot: 17
+	public abstract IMergeGraphItem get_OriginGraph();
+
+	// RVA: -1 Offset: -1 Slot: 18
+	public abstract IMergeGraphItem get_OverridenOriginGraph();
+
+	// RVA: -1 Offset: -1 Slot: 19
+	public abstract void set_OverridenOriginGraph(IMergeGraphItem value);
+
+	// RVA: -1 Offset: -1 Slot: 20
+	public abstract MergeGraphItemWeakReference get_OriginGraphReference();
+
+	// RVA: -1 Offset: -1 Slot: 21
+	public abstract bool get_PreventAddToInventory();
+
+	// RVA: -1 Offset: -1 Slot: 22
+	public abstract bool get_IsSpecialChain();
+
+	// RVA: -1 Offset: -1 Slot: 23
+	public abstract bool get_IsGateway();
+
+	// RVA: -1 Offset: -1 Slot: 24
+	public abstract string get_GatewayText();
+}
+

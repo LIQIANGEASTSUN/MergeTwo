@@ -1,0 +1,57 @@
+// Namespace: MergeEngine.ECS.Util
+public static class HintUtil // TypeDefIndex: 625
+{
+	// Methods
+
+	// RVA: 0x62721E4 Offset: 0x626E1E4 VA: 0x62721E4
+	public static Tuple<IdComponent, IdComponent> GetHint(ReadOnlyCollection<PositionComponent> boardItems, IMergingConfigurationModel mergingConfigurationModel, Func<IComponentBase, bool> unlockPredicate, BoardItemCountComponent boardItemCountComponent, bool isStackingEnabled, IMergeItem itemType, List<string> excludeItemIds) { }
+
+	// RVA: 0x6272C9C Offset: 0x626EC9C VA: 0x6272C9C
+	private static bool TryFindConsumeHint(out IdComponent first, out IdComponent second, ReadOnlyCollection<PositionComponent> boardItems, List<string> excludeItemIds, IMergingConfigurationModel mergingConfigurationModel, BoardItemCountComponent boardItemCountComponent) { }
+
+	// RVA: 0x6273CA4 Offset: 0x626FCA4 VA: 0x6273CA4
+	private static bool TryFindStackableHint(out IdComponent first, out IdComponent second, ReadOnlyCollection<PositionComponent> boardItems, List<string> excludeItemIds, IMergingConfigurationModel mergingConfigurationModel, Func<IComponentBase, bool> unlockPredicate, Func<IMergeItem, bool> itemTypePredicate) { }
+
+	// RVA: 0x6274364 Offset: 0x6270364 VA: 0x6274364
+	private static bool TrySetStackingHintPair(IEnumerable<IdComponent> unlockedItems, IEnumerable<IdComponent> candidateItems, out IdComponent first, out IdComponent second) { }
+
+	// RVA: 0x62735DC Offset: 0x626F5DC VA: 0x62735DC
+	private static Tuple<IdComponent, IdComponent> TryFindPrioritizedStackingHint(ReadOnlyCollection<PositionComponent> boardItems, List<string> excludeItemIds, IMergingConfigurationModel mergingConfigurationModel, Func<IComponentBase, bool> unlockPredicate) { }
+
+	// RVA: 0x6273844 Offset: 0x626F844 VA: 0x6273844
+	private static Tuple<IdComponent, IdComponent> TryFindMergeAnyHint(ReadOnlyCollection<PositionComponent> boardItems, IMergingConfigurationModel mergingConfigurationModel, List<string> excludeItemIds) { }
+
+	// RVA: 0x6274788 Offset: 0x6270788 VA: 0x6274788
+	private static bool CanBeMerged(IdComponent idComponent, Func<string, IMergeItem> getNextItemOnGraphFunction) { }
+
+	// RVA: 0x6274824 Offset: 0x6270824 VA: 0x6274824
+	public static IdComponent GetCollectable(ReadOnlyCollection<PositionComponent> boardItems, IMergingConfigurationModel mergingConfigurationModel) { }
+
+	// RVA: 0x6274AC8 Offset: 0x6270AC8 VA: 0x6274AC8
+	private static bool IsLocked(IdComponent item) { }
+
+	// RVA: 0x6274B24 Offset: 0x6270B24 VA: 0x6274B24
+	private static bool CanBeCollected(IdComponent item) { }
+
+	// RVA: 0x6274B88 Offset: 0x6270B88 VA: 0x6274B88
+	public static IdComponent GetLowestLevelBasicItem(IEnumerable<PositionComponent> boardItems, IMergingConfigurationModel mergingConfigurationModel) { }
+
+	// RVA: 0x6274E3C Offset: 0x6270E3C VA: 0x6274E3C
+	public static int CountEmptiableTiles(ReadOnlyCollection<PositionComponent> boardItems, IMergingConfigurationModel mergingConfigurationModel, BoardItemCountComponent boardItemCountComponent, MergeSystem mergeSystem) { }
+
+	// RVA: 0x6276534 Offset: 0x6272534 VA: 0x6276534
+	public static int CountEmptiableTileByMerges(ReadOnlyCollection<PositionComponent> boardItems, IMergingConfigurationModel mergingConfigurationModel, BoardItemCountComponent boardItemCountComponent, MergeSystem mergeSystem) { }
+
+	// RVA: 0x6274EA8 Offset: 0x6270EA8 VA: 0x6274EA8
+	private static int CountFeeds(ReadOnlyCollection<PositionComponent> boardItems, BoardItemCountComponent boardItemCountComponent) { }
+
+	// RVA: 0x62753D4 Offset: 0x62713D4 VA: 0x62753D4
+	private static int CountMergeTiles(ReadOnlyCollection<PositionComponent> boardItems, IMergingConfigurationModel mergingConfigurationModel, MergeSystem mergeSystem) { }
+
+	// RVA: 0x6275F7C Offset: 0x6271F7C VA: 0x6275F7C
+	private static int CountJokerMergeTiles(ReadOnlyCollection<PositionComponent> boardItems, IMergingConfigurationModel mergingConfigurationModel) { }
+
+	// RVA: 0x627643C Offset: 0x627243C VA: 0x627643C
+	private static int CountCollectables(ReadOnlyCollection<PositionComponent> boardItems) { }
+}
+

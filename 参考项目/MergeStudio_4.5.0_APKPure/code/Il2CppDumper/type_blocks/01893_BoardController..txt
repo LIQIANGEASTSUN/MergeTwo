@@ -1,0 +1,48 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardController.<ItemSetAnimationRoutine>d__209 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 1893
+{
+	// Fields
+	private int <>1__state; // 0x8
+	private object <>2__current; // 0xC
+	public ItemController item; // 0x10
+	public bool nonAnimated; // 0x14
+	public BoardPosition selectedBoardPosition; // 0x18
+	public BoardController <>4__this; // 0x1C
+	public ItemCreationHandler itemCreationHandler; // 0x20
+	public bool spawnAnimated; // 0x24
+	public CellController targetCell; // 0x28
+	public bool boosterSplit; // 0x2C
+	public bool swapAnimated; // 0x2D
+	public bool panelAnimated; // 0x2E
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHidden]
+	// RVA: 0x191EF00 Offset: 0x191EF00 VA: 0x191EF00
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHidden]
+	// RVA: 0x191EF1C Offset: 0x191EF1C VA: 0x191EF1C Slot: 5
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x191EF20 Offset: 0x191EF20 VA: 0x191EF20 Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x191F200 Offset: 0x191F200 VA: 0x191F200 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHidden]
+	// RVA: 0x191F208 Offset: 0x191F208 VA: 0x191F208 Slot: 8
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHidden]
+	// RVA: 0x191F24C Offset: 0x191F24C VA: 0x191F24C Slot: 7
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+

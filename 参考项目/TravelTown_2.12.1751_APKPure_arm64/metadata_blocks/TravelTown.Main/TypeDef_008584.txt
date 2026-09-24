@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardView.<>c__DisplayClass167_1 // TypeDefIndex: 8584
+{
+	// Fields
+	public GameObject stackingContainer; // 0x10
+
+	// Methods
+
+	// RVA: 0x669A878 Offset: 0x6696878 VA: 0x669A878
+	public void .ctor() { }
+
+	// RVA: 0x669A880 Offset: 0x6696880 VA: 0x669A880
+	internal void <PlayStackingAnimation>b__1() { }
+}
+

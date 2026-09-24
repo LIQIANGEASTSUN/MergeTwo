@@ -1,0 +1,9 @@
+// Namespace: Merger.DynamicMergeItems.MergeItemModifiers
+public interface IDynamicMergeItemModificationModel // TypeDefIndex: 6906
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void ModifyMergeItem(IMergeItem mergeItem, DynamicMergeItemConfig dynamicMergeItemData);
+}
+

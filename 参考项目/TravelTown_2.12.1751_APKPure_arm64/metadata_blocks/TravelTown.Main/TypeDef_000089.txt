@@ -1,0 +1,9 @@
+// Namespace: MergeEngine
+public interface IItemsEntityService // TypeDefIndex: 89
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void TryLoadSharedItemComponents(Entity entity, ItemPayloadBase item);
+}
+

@@ -1,0 +1,208 @@
+Type: Code.GameLogic.GameEvents.BoardCell
+
+Method: System.Int32 get_ItemId()
+
+Disassembly:
+	0x037D90A4 BL 0x239B8F8
+	0x037D90A8 MOV X2, X0
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_ItemId(System.Int32 value)
+
+Disassembly:
+	0x037D90AC MOV X0, X20
+	0x037D90B0 MOV X1, X31
+
+ISIL:
+	001 Move [X0+16], W1
+	002 Return 
+
+Method: GameLogic.Merge.ItemVisibility get_ItemVisibility()
+
+Disassembly:
+	0x037D90B4 BL 0x21B9930
+	0x037D90B8 MOV X0, X21
+
+ISIL:
+	001 Move W0, [X0+20]
+	002 Return X0
+
+Method: System.Void set_ItemVisibility(GameLogic.Merge.ItemVisibility value)
+
+Disassembly:
+	0x037D90BC BL 0x21B9A28
+	0x037D90C0 ADRP X22, 0x1EF4000
+
+ISIL:
+	001 Move [X0+20], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x037D90C4 ADD X1, X31, 0x18
+	0x037D90C8 LDR X22, [X22 + 0x248]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(System.Int32 itemId, GameLogic.Merge.ItemVisibility itemVisibility)
+
+Disassembly:
+	0x037D90CC LDR W8, [X21 + 0x10]
+	0x037D90D0 LDR X0, [X22 + 0x48]
+	0x037D90D4 STR W8, [X31 + 0x18]
+	0x037D90D8 BL 0x239BA6C
+	0x037D90DC MOV X21, X0
+	0x037D90E0 MOV X0, X20
+	0x037D90E4 MOV X1, X21
+	0x037D90E8 BL 0x21B9984
+	0x037D90EC MOV X0, X20
+	0x037D90F0 MOVZ W1, 0x1
+	0x037D90F4 MOV X2, X21
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move W20, W1
+	006 Move X1, X31
+	007 Move W19, W2
+	008 Move X21, X0
+	009 Call Object..ctor, X0
+	010 Move [X21+16], W20
+	011 Move [X21+20], W19
+	012 Move X20, [X31+16]
+	013 Move X19, [X31+24]
+	014 Move X30, [X31+32]
+	015 Move X21, [X31+40]
+	016 Return 
+
+Method: Code.GameLogic.GameEvents.BoardCell FromTuple(System.ValueTuple`2<System.Int32, GameLogic.Merge.ItemVisibility> tuple)
+
+Disassembly:
+	0x037D90F8 BL 0x21B9930
+	0x037D90FC ADRP X21, 0x1F62000
+	0x037D9100 LDR X21, [X21 + 0xBB8]
+	0x037D9104 MOV X0, X21
+	0x037D9108 BL 0x239B8F8
+	0x037D910C MOV X1, X0
+	0x037D9110 MOV X0, X20
+	0x037D9114 BL 0x21B9984
+	0x037D9118 MOV X0, X21
+	0x037D911C BL 0x239B8F8
+	0x037D9120 MOV X2, X0
+	0x037D9124 MOV X0, X20
+	0x037D9128 MOVZ W1, 0x2
+	0x037D912C BL 0x21B9930
+	0x037D9130 MOV X0, X19
+	0x037D9134 BL 0x21B9A28
+	0x037D9138 LDR W8, [X19 + 0x10]
+	0x037D913C LDR X0, [X22 + 0x48]
+	0x037D9140 ADD X1, X31, 0x14
+	0x037D9144 STR W8, [X31 + 0x14]
+	0x037D9148 BL 0x239BA6C
+	0x037D914C MOV X19, X0
+	0x037D9150 MOV X0, X20
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move X19, X0
+	006 Move W8, [0x2555DD9]
+	007 Move X21, [0x1F669A0]
+	008 Move TEMP, X8
+	009 And TEMP, TEMP, 1
+	010 Compare TEMP, 1
+	011 JumpIfEqual {16}
+	012 Move X0, [0x1F669A0]
+	013 Call 0x239F8E4
+	014 Move W8, 1
+	015 Move [X20+3545], W8
+	016 Move X0, [X21]
+	017 Call 0x239FB80
+	018 Move X1, X31
+	019 Move X20, X0
+	020 Call Object..ctor, X0
+	021 Move X0, X20
+	022 Move [X20+16], X19
+	023 Move X20, [X31+16]
+	024 Move X19, [X31+24]
+	025 Move X30, [X31+32]
+	026 Move X21, [X31+40]
+	027 Return X0
+
+Method: System.ValueTuple`2<System.Int32, GameLogic.Merge.ItemVisibility> ToTuple()
+
+Disassembly:
+	0x037D9154 MOV X1, X19
+	0x037D9158 BL 0x21B9984
+	0x037D915C MOV X0, X20
+	0x037D9160 MOVZ W1, 0x3
+	0x037D9164 MOV X2, X19
+	0x037D9168 BL 0x21B9930
+	0x037D916C ADRP X0, 0x1F62000
+	0x037D9170 LDR X0, [X0 + 0xBC8]
+	0x037D9174 B 0x37D9910
+	0x037D9178 ADRP X0, 0x1EF4000
+	0x037D917C LDR X0, [X0 + 0x328]
+	0x037D9180 BL 0x239B8F8
+	0x037D9184 MOVZ W1, 0x4
+	0x037D9188 BL 0x239B9D4
+	0x037D918C MOV X20, X0
+	0x037D9190 BL 0x21B9A28
+	0x037D9194 ADRP X22, 0x1F4D000
+	0x037D9198 LDR X22, [X22 + 0x8F0]
+	0x037D919C MOV X0, X22
+	0x037D91A0 BL 0x239B8F8
+	0x037D91A4 MOV X1, X0
+	0x037D91A8 MOV X0, X20
+	0x037D91AC BL 0x21B9984
+	0x037D91B0 MOV X0, X22
+	0x037D91B4 BL 0x239B8F8
+	0x037D91B8 MOV X2, X0
+	0x037D91BC MOV X0, X20
+
+ISIL:
+	001 Subtract X31, X31, 48
+	002 Move [X31+16], X30
+	003 Move [X31+24], X21
+	004 Move [X31+32], X20
+	005 Move [X31+40], X19
+	006 Move X19, X0
+	007 Move W8, [0x2555DDA]
+	008 Move X20, [0x1F10F20]
+	009 Move TEMP, X8
+	010 And TEMP, TEMP, 1
+	011 Compare TEMP, 1
+	012 JumpIfEqual {17}
+	013 Move X0, [0x1F10F20]
+	014 Call 0x239F8E4
+	015 Move W8, 1
+	016 Move [X21+3546], W8
+	017 Move W8, [X19+16]
+	018 Move W9, [X19+20]
+	019 Move X3, [X20]
+	020 Add X0, X31, 0
+	021 Add X1, X31, 12
+	022 Add X2, X31, 8
+	023 Move [X31], X31
+	024 Move [X31+8], W9
+	025 Move [X31+12], W8
+	026 Call 0x2853678, X0, X1, X2
+	027 Move X20, [X31+32]
+	028 Move X19, [X31+40]
+	029 Move X0, [X31]
+	030 Move X30, [X31+16]
+	031 Move X21, [X31+24]
+	032 Add X31, X31, 48
+	033 Return X0
+

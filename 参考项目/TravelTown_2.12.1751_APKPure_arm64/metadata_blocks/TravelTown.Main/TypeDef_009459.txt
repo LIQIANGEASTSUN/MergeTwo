@@ -1,0 +1,9 @@
+// Namespace: Merger.Game.Signal
+public class UpdateBoardResourcesStateSignal // TypeDefIndex: 9459
+{
+	// Methods
+
+	// RVA: 0x676D190 Offset: 0x6769190 VA: 0x676D190
+	public void .ctor() { }
+}
+

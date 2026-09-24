@@ -1,0 +1,135 @@
+Type: GameLogic.Player.Items.Order.OrderStateReward
+
+Method: GameLogic.Player.Items.ItemDefinition get_Item()
+
+Disassembly:
+	0x03611788 BL 0x44ECB1C
+	0x0361178C LDR X1, [X19 + 0x38]
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_Item(GameLogic.Player.Items.ItemDefinition value)
+
+Disassembly:
+	0x03611790 STR W0, [X20 + 0x20]
+	0x03611794 MOV X0, X20
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Int32 get_Amount()
+
+Disassembly:
+	0x03611798 STR X1, [X0 + 0x38]!
+	0x0361179C BL 0x239B888
+
+ISIL:
+	001 Move W0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_Amount(System.Int32 value)
+
+Disassembly:
+	0x036117A0 LDR X1, [X19 + 0x30]
+	0x036117A4 MOV X0, X20
+
+ISIL:
+	001 Move [X0+24], W1
+	002 Return 
+
+Method: System.Int32 get_Claimed()
+
+Disassembly:
+	0x036117A8 STR X1, [X0 + 0x28]!
+	0x036117AC BL 0x239B888
+
+ISIL:
+	001 Move W0, [X0+28]
+	002 Return X0
+
+Method: System.Void set_Claimed(System.Int32 value)
+
+Disassembly:
+	0x036117B0 LDR W8, [X19 + 0x54]
+	0x036117B4 LDR X1, [X19 + 0x48]
+
+ISIL:
+	001 Move [X0+28], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x036117B8 MOV X0, X20
+	0x036117BC STR W8, [X20 + 0x50]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(GameLogic.Player.Items.ItemDefinition item, System.Int32 amount, System.Int32 claimed)
+
+Disassembly:
+	0x036117C0 STR X1, [X0 + 0x40]!
+	0x036117C4 BL 0x239B888
+	0x036117C8 MOV X0, X20
+	0x036117CC LDP X20, X19, [X31 + 0x10]
+	0x036117D0 LDR X30, [X31], #0x20
+	0x036117D4 RET
+	0x036117D8 B 0x361170C
+	0x036117DC LDR W0, [X0 + 0x10]
+	0x036117E0 RET
+	0x036117E4 STR W1, [X0 + 0x10]
+	0x036117E8 RET
+	0x036117EC LDR W0, [X0 + 0x14]
+	0x036117F0 RET
+	0x036117F4 STR W1, [X0 + 0x14]
+	0x036117F8 RET
+	0x036117FC LDR W0, [X0 + 0x18]
+	0x03611800 RET
+	0x03611804 STR W1, [X0 + 0x18]
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31+16], X22
+	003 Move [X31+24], X21
+	004 Move [X31+32], X20
+	005 Move [X31+40], X19
+	006 Move X21, X1
+	007 Move X1, X31
+	008 Move W19, W3
+	009 Move W20, W2
+	010 Move X22, X0
+	011 Call Object..ctor, X0
+	012 Move [X22+16], X21
+	013 Move X0, X22
+	014 Move X1, X21
+	015 Call 0x239F888
+	016 Move [X22+8], W20
+	017 Move [X22+12], W19
+	018 Move X20, [X31+32]
+	019 Move X19, [X31+40]
+	020 Move X22, [X31+16]
+	021 Move X21, [X31+24]
+	022 Move X30, [X31+48]
+	023 Return 
+
+Method: System.Void IncrementClaimed()
+
+Disassembly:
+	0x03611808 RET
+	0x0361180C LDR X0, [X0 + 0x20]
+	0x03611810 RET
+	0x03611814 STR X1, [X0 + 0x20]!
+
+ISIL:
+	001 Move W8, [X0+28]
+	002 Add W8, W8, 1
+	003 Move [X0+28], W8
+	004 Return 
+

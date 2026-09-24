@@ -1,0 +1,20 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class BubbleItemCapability : CapabilityBase // TypeDefIndex: 1433
+{
+	// Fields
+	public float DropProbabilityPercentage; // 0x14
+	public int BurstPriceInHardCurrency; // 0x18
+	public Nullable<int> SaleBurstPriceInHardCurrency; // 0x1C
+	public bool CanBeBurstByRewardedAd; // 0x24
+	public int BubbleExpirationTimeInSeconds; // 0x28
+	public Nullable<float> SmarterBubblesOverrideValue; // 0x2C
+	[JsonIgnore]
+	public bool WasOverriden; // 0x34
+
+	// Methods
+
+	// RVA: 0x600FA2C Offset: 0x600BA2C VA: 0x600FA2C
+	public void .ctor() { }
+}
+

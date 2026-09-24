@@ -1,0 +1,12 @@
+// Namespace: 
+public enum ActiveCostType // TypeDefIndex: 2777
+{
+	// Fields
+	public int value__; // 0x0
+	public const ActiveCostType none = 0;
+	public const ActiveCostType diamonds = 1;
+	public const ActiveCostType coin = 2;
+	public const ActiveCostType time_active = 3;
+	public const ActiveCostType time_inactive = 4;
+}
+

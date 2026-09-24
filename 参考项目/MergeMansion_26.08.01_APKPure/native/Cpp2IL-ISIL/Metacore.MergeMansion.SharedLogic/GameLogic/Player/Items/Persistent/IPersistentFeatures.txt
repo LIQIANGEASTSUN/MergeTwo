@@ -1,0 +1,37 @@
+Type: GameLogic.Player.Items.Persistent.IPersistentFeatures
+
+Method: System.Boolean get_HasPersistentFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_HasItemStates()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_DecayCycles()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_ItemStates()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Config.ItemDef get_ResetToItem()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

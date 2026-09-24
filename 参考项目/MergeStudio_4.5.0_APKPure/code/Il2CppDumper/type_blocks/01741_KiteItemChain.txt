@@ -1,0 +1,17 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class KiteItemChain // TypeDefIndex: 1741
+{
+	// Fields
+	public int ChainIndex; // 0x8
+	public List<KiteItemLink> Links; // 0xC
+
+	// Methods
+
+	// RVA: 0x190FF14 Offset: 0x190FF14 VA: 0x190FF14
+	public void .ctor() { }
+
+	// RVA: 0x190FF1C Offset: 0x190FF1C VA: 0x190FF1C
+	public void Initialize() { }
+}
+

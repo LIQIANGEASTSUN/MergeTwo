@@ -1,0 +1,159 @@
+// Namespace: Merger.Game.Views
+public interface IBoardView : IViewComponent // TypeDefIndex: 8592
+{
+	// Properties
+	public abstract SelectorMode SelectorMode { set; }
+	public abstract float GridCellSize { get; }
+	public abstract IBoardUIView BoardUIView { get; }
+	public abstract RectTransform BoardContainer { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void add_ItemTapped(Action<BoardItemPosition, bool> value);
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void remove_ItemTapped(Action<BoardItemPosition, bool> value);
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void add_ItemDragStarted(Action<BoardItemPosition> value);
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void remove_ItemDragStarted(Action<BoardItemPosition> value);
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract void add_ItemDragged(Action<Vector2> value);
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract void remove_ItemDragged(Action<Vector2> value);
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract void add_ItemDragEnded(Action<Vector2, Vector2> value);
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract void remove_ItemDragEnded(Action<Vector2, Vector2> value);
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract void add_ItemDragCancelled(Action value);
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract void remove_ItemDragCancelled(Action value);
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 10
+	public abstract void add_Destroyed(Action value);
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 11
+	public abstract void remove_Destroyed(Action value);
+
+	// RVA: -1 Offset: -1 Slot: 12
+	public abstract void set_SelectorMode(SelectorMode value);
+
+	// RVA: -1 Offset: -1 Slot: 13
+	public abstract float get_GridCellSize();
+
+	// RVA: -1 Offset: -1 Slot: 14
+	public abstract IBoardUIView get_BoardUIView();
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public abstract RectTransform get_BoardContainer();
+
+	// RVA: -1 Offset: -1 Slot: 16
+	public abstract void InitializeBoard(int cols, int rows);
+
+	// RVA: -1 Offset: -1 Slot: 17
+	public abstract IBoardItemView CreateItem(VisualComponent visualComponent, Transform container);
+
+	// RVA: -1 Offset: -1 Slot: 18
+	public abstract void CreateItemAndAddToBoard(BoardItemPosition position, VisualComponent visualComponent, bool transitionIn, BlockerItemView blockerArtOverride);
+
+	// RVA: -1 Offset: -1 Slot: 19
+	public abstract BlockerItemView GetBoardItemAsset(BoardItemPosition position, string blockerArtFromAdmin);
+
+	// RVA: -1 Offset: -1 Slot: 20
+	public abstract void RemoveItem(BoardItemPosition position, IPromise delayedViewRemovePromise);
+
+	// RVA: -1 Offset: -1 Slot: 21
+	public abstract void StartDragging(BoardItemPosition itemAtPosition);
+
+	// RVA: -1 Offset: -1 Slot: 22
+	public abstract void MoveItem(BoardItemPosition oldPosition, BoardItemPosition newPosition);
+
+	// RVA: -1 Offset: -1 Slot: 23
+	public abstract IBoardItemView GetItemAtPosition(BoardItemPosition position);
+
+	// RVA: -1 Offset: -1 Slot: 24
+	public abstract bool IsPlayingOutAnimation(BoardItemPosition position);
+
+	// RVA: -1 Offset: -1 Slot: 25
+	public abstract void SwapItems(BoardItemPosition firstBoardPosition, BoardItemPosition secondBoardPosition);
+
+	// RVA: -1 Offset: -1 Slot: 26
+	public abstract void SlideItem(BoardItemPosition itemAtPosition, BoardItemPosition fromPosition, BoardItemPosition toPosition, float tweenDuration, Ease ease = 7);
+
+	// RVA: -1 Offset: -1 Slot: 27
+	public abstract void SlideItem(BoardItemPosition itemAtPosition, BoardItemPosition toPosition, float tweenDuration, Ease ease = 7);
+
+	// RVA: -1 Offset: -1 Slot: 28
+	public abstract void SlideItemOut(BoardItemPosition itemAtPosition, Vector2 pointInRoot, float tweenDuration, TweenCallback slideCompleted, Ease ease = 7);
+
+	// RVA: -1 Offset: -1 Slot: 29
+	public abstract void SlideItemInWithFlyingRewards(BoardItemPosition itemAtPosition, Vector2 worldPosition, ResourceSource source);
+
+	// RVA: -1 Offset: -1 Slot: 30
+	public abstract void SlideItemIn(BoardItemPosition itemAtPosition, Vector2 pointInRoot, float tweenDuration, TweenCallback slideCompleted, Ease ease = 7);
+
+	// RVA: -1 Offset: -1 Slot: 31
+	public abstract void SlideBoosterIn(BoardItemPosition itemAtPosition, Vector2 pointInRoot, float tweenDuration, TweenCallback slideCompleted, float jumpPower, Ease ease = 7);
+
+	// RVA: -1 Offset: -1 Slot: 32
+	public abstract Vector2 GetTileCoordinates(BoardItemPosition position, RectTransform otherRectTransform);
+
+	// RVA: -1 Offset: -1 Slot: 33
+	public abstract Vector2 GetTileCoordinatesGlobal(BoardItemPosition position);
+
+	// RVA: -1 Offset: -1 Slot: 34
+	public abstract bool MoveItemToTopContainer(BoardItemPosition itemAtPosition, bool overrideSorting, bool setSecondLastSiblingIndex = False);
+
+	// RVA: -1 Offset: -1 Slot: 35
+	public abstract void MoveItemBackToOwnContainer(BoardItemPosition itemAtPosition);
+
+	// RVA: -1 Offset: -1 Slot: 36
+	public abstract void HideSelector();
+
+	// RVA: -1 Offset: -1 Slot: 37
+	public abstract void MoveSelector(BoardItemPosition tappedItemPosition);
+
+	// RVA: -1 Offset: -1 Slot: 38
+	public abstract void HideItem(BoardItemPosition position);
+
+	// RVA: -1 Offset: -1 Slot: 39
+	public abstract void ShowItem(BoardItemPosition position);
+
+	// RVA: -1 Offset: -1 Slot: 40
+	public abstract void ForceDeselectItem();
+
+	// RVA: -1 Offset: -1 Slot: 41
+	public abstract IPromise PlayUnlockSurpriseBoxOnBoard(BoardItemPosition position);
+
+	// RVA: -1 Offset: -1 Slot: 42
+	public abstract BoardCellView GetTile(BoardItemPosition position);
+
+	// RVA: -1 Offset: -1 Slot: 43
+	public abstract void BoardItemFlyInAnimationStarted(IBoardItemView flyingItem, IRewardViewData rewardData);
+
+	// RVA: -1 Offset: -1 Slot: 44
+	public abstract void PlayStackingAnimation(BoardItemPosition position, int stackSizeAdded);
+}
+

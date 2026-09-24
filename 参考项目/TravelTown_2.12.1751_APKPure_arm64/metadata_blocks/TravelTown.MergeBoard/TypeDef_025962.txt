@@ -1,0 +1,79 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class ItemResourceCollectedResult // TypeDefIndex: 25962
+{
+	// Fields
+	[CompilerGenerated]
+	private Entity <Entity>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private string <EntityId>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private string <ItemId>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private int <Position>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private PlayerResourceEnum <Resource>k__BackingField; // 0x2C
+	[CompilerGenerated]
+	private int <Amount>k__BackingField; // 0x30
+
+	// Properties
+	public Entity Entity { get; set; }
+	public string EntityId { get; set; }
+	public string ItemId { get; set; }
+	public int Position { get; set; }
+	public PlayerResourceEnum Resource { get; set; }
+	public int Amount { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A8E4 Offset: 0x6A968E4 VA: 0x6A9A8E4
+	public Entity get_Entity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A8EC Offset: 0x6A968EC VA: 0x6A9A8EC
+	public void set_Entity(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A8F4 Offset: 0x6A968F4 VA: 0x6A9A8F4
+	public string get_EntityId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A8FC Offset: 0x6A968FC VA: 0x6A9A8FC
+	public void set_EntityId(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A904 Offset: 0x6A96904 VA: 0x6A9A904
+	public string get_ItemId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A90C Offset: 0x6A9690C VA: 0x6A9A90C
+	public void set_ItemId(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A914 Offset: 0x6A96914 VA: 0x6A9A914
+	public int get_Position() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A91C Offset: 0x6A9691C VA: 0x6A9A91C
+	public void set_Position(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A924 Offset: 0x6A96924 VA: 0x6A9A924
+	public PlayerResourceEnum get_Resource() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A92C Offset: 0x6A9692C VA: 0x6A9A92C
+	public void set_Resource(PlayerResourceEnum value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A934 Offset: 0x6A96934 VA: 0x6A9A934
+	public int get_Amount() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A93C Offset: 0x6A9693C VA: 0x6A9A93C
+	public void set_Amount(int value) { }
+
+	// RVA: 0x6A9A944 Offset: 0x6A96944 VA: 0x6A9A944
+	public void .ctor() { }
+}
+

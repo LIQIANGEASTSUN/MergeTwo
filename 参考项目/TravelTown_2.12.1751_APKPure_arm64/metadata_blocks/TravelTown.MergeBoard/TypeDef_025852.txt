@@ -1,0 +1,108 @@
+// Namespace: Merger.MergeBoard.Logic.State.Updaters.Base
+public abstract class ComponentStateUpdaterBase<TComponent, TState> // TypeDefIndex: 25852
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public void UpdateComponent(Entity entity, TState itemState) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4D5FFD0 Offset: 0x4D5BFD0 VA: 0x4D5FFD0
+	|-ComponentStateUpdaterBase<BoxComponent, object>.UpdateComponent
+	|
+	|-RVA: 0x4D60080 Offset: 0x4D5C080 VA: 0x4D60080
+	|-ComponentStateUpdaterBase<ChargeableComponent, object>.UpdateComponent
+	|
+	|-RVA: 0x4D6010C Offset: 0x4D5C10C VA: 0x4D6010C
+	|-ComponentStateUpdaterBase<DynamicItemConfigComponent, object>.UpdateComponent
+	|
+	|-RVA: 0x4D601BC Offset: 0x4D5C1BC VA: 0x4D601BC
+	|-ComponentStateUpdaterBase<ExpendableComponent, object>.UpdateComponent
+	|
+	|-RVA: 0x4D60270 Offset: 0x4D5C270 VA: 0x4D60270
+	|-ComponentStateUpdaterBase<FeedingCombinationComponent, object>.UpdateComponent
+	|
+	|-RVA: 0x4D602FC Offset: 0x4D5C2FC VA: 0x4D602FC
+	|-ComponentStateUpdaterBase<IdComponent, object>.UpdateComponent
+	|
+	|-RVA: 0x4D603B0 Offset: 0x4D5C3B0 VA: 0x4D603B0
+	|-ComponentStateUpdaterBase<LockComponent, object>.UpdateComponent
+	|
+	|-RVA: 0x4D6043C Offset: 0x4D5C43C VA: 0x4D6043C
+	|-ComponentStateUpdaterBase<ProducerComponent, object>.UpdateComponent
+	|
+	|-RVA: 0x4D604E0 Offset: 0x4D5C4E0 VA: 0x4D604E0
+	|-ComponentStateUpdaterBase<SpawnerComponent, object>.UpdateComponent
+	|
+	|-RVA: 0x4D60590 Offset: 0x4D5C590 VA: 0x4D60590
+	|-ComponentStateUpdaterBase<TimeCycleComponent, object>.UpdateComponent
+	|
+	|-RVA: 0x4D60654 Offset: 0x4D5C654 VA: 0x4D60654
+	|-ComponentStateUpdaterBase<TimeDurationComponent, object>.UpdateComponent
+	|
+	|-RVA: 0x4D606F8 Offset: 0x4D5C6F8 VA: 0x4D606F8
+	|-ComponentStateUpdaterBase<TimeLimitedActivationComponent, object>.UpdateComponent
+	|
+	|-RVA: 0x4D6079C Offset: 0x4D5C79C VA: 0x4D6079C
+	|-ComponentStateUpdaterBase<TimeLockComponent, object>.UpdateComponent
+	|
+	|-RVA: 0x4D60850 Offset: 0x4D5C850 VA: 0x4D60850
+	|-ComponentStateUpdaterBase<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericType>.UpdateComponent
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 5
+	protected abstract void UpdateFromState(ref TComponent component, TState itemState);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-ComponentStateUpdaterBase<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericType>.UpdateFromState
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4D60078 Offset: 0x4D5C078 VA: 0x4D60078
+	|-ComponentStateUpdaterBase<BoxComponent, object>..ctor
+	|
+	|-RVA: 0x4D60104 Offset: 0x4D5C104 VA: 0x4D60104
+	|-ComponentStateUpdaterBase<ChargeableComponent, object>..ctor
+	|
+	|-RVA: 0x4D601B4 Offset: 0x4D5C1B4 VA: 0x4D601B4
+	|-ComponentStateUpdaterBase<DynamicItemConfigComponent, object>..ctor
+	|
+	|-RVA: 0x4D60268 Offset: 0x4D5C268 VA: 0x4D60268
+	|-ComponentStateUpdaterBase<ExpendableComponent, object>..ctor
+	|
+	|-RVA: 0x4D602F4 Offset: 0x4D5C2F4 VA: 0x4D602F4
+	|-ComponentStateUpdaterBase<FeedingCombinationComponent, object>..ctor
+	|
+	|-RVA: 0x4D603A8 Offset: 0x4D5C3A8 VA: 0x4D603A8
+	|-ComponentStateUpdaterBase<IdComponent, object>..ctor
+	|
+	|-RVA: 0x4D60434 Offset: 0x4D5C434 VA: 0x4D60434
+	|-ComponentStateUpdaterBase<LockComponent, object>..ctor
+	|
+	|-RVA: 0x4D604D8 Offset: 0x4D5C4D8 VA: 0x4D604D8
+	|-ComponentStateUpdaterBase<ProducerComponent, object>..ctor
+	|
+	|-RVA: 0x4D60588 Offset: 0x4D5C588 VA: 0x4D60588
+	|-ComponentStateUpdaterBase<SpawnerComponent, object>..ctor
+	|
+	|-RVA: 0x4D6064C Offset: 0x4D5C64C VA: 0x4D6064C
+	|-ComponentStateUpdaterBase<TimeCycleComponent, object>..ctor
+	|
+	|-RVA: 0x4D606F0 Offset: 0x4D5C6F0 VA: 0x4D606F0
+	|-ComponentStateUpdaterBase<TimeDurationComponent, object>..ctor
+	|
+	|-RVA: 0x4D60794 Offset: 0x4D5C794 VA: 0x4D60794
+	|-ComponentStateUpdaterBase<TimeLimitedActivationComponent, object>..ctor
+	|
+	|-RVA: 0x4D60848 Offset: 0x4D5C848 VA: 0x4D60848
+	|-ComponentStateUpdaterBase<TimeLockComponent, object>..ctor
+	|
+	|-RVA: 0x4D609D4 Offset: 0x4D5C9D4 VA: 0x4D609D4
+	|-ComponentStateUpdaterBase<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericType>..ctor
+	*/
+}
+

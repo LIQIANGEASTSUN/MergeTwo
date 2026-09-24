@@ -1,0 +1,20 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class PowerBoostModesCalculator.<>c__DisplayClass24_0 // TypeDefIndex: 32790
+{
+	// Fields
+	public PowerBoostModesCalculator <>4__this; // 0x10
+	public int currentEnergy; // 0x18
+
+	// Methods
+
+	// RVA: 0x6AD00C0 Offset: 0x6ACC0C0 VA: 0x6AD00C0
+	public void .ctor() { }
+
+	// RVA: 0x6AD06B0 Offset: 0x6ACC6B0 VA: 0x6AD06B0
+	internal bool <CalculatePlayableBoosts>b__0(BoostModeConfig boost) { }
+
+	// RVA: 0x6AD0784 Offset: 0x6ACC784 VA: 0x6AD0784
+	internal bool <CalculatePlayableBoosts>b__1(BoostModeConfig boostConfig) { }
+}
+

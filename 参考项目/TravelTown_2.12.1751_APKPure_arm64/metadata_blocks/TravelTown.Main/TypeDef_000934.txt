@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class UnboxingSystem.<>c // TypeDefIndex: 934
+{
+	// Fields
+	public static readonly UnboxingSystem.<>c <>9; // 0x0
+	public static Func<ItemMultiple, string> <>9__12_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x6788C98 Offset: 0x6784C98 VA: 0x6788C98
+	private static void .cctor() { }
+
+	// RVA: 0x6788D00 Offset: 0x6784D00 VA: 0x6788D00
+	public void .ctor() { }
+
+	// RVA: 0x6788D08 Offset: 0x6784D08 VA: 0x6788D08
+	internal string <ProcessItemConsumeUnboxing>b__12_0(ItemMultiple p) { }
+}
+

@@ -1,0 +1,13 @@
+// Namespace: MergeEngine.Configuration.Definitions
+[Serializable]
+public class EmptiableWeightedItemSpawnable : WeightedItemSpawnable // TypeDefIndex: 1303
+{
+	// Fields
+	public bool SpawnNothing; // 0x2A
+
+	// Methods
+
+	// RVA: 0x6A29A74 Offset: 0x6A25A74 VA: 0x6A29A74
+	public void .ctor() { }
+}
+

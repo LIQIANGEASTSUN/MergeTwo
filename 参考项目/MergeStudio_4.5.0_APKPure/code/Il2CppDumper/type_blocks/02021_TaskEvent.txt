@@ -1,0 +1,9 @@
+// Namespace: MergePuzzle
+public class TaskEvent // TypeDefIndex: 2021
+{
+	// Methods
+
+	// RVA: 0x194AD64 Offset: 0x194AD64 VA: 0x194AD64
+	public void .ctor() { }
+}
+

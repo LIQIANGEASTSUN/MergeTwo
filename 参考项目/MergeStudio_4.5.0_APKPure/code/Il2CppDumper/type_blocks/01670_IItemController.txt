@@ -1,0 +1,37 @@
+// Namespace: MergePuzzle
+public interface IItemController // TypeDefIndex: 1670
+{
+	// Properties
+	public abstract IBoardController GetBoardController { get; }
+	public abstract IItemRuntimeData GetRuntimeData { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract IBoardController get_GetBoardController();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract IItemRuntimeData get_GetRuntimeData();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void ChangeCurrentCapacity(BoardItemSpawnerData spawnerData, float amount, bool isRewardedCapacity = False, bool animateClockDisappear = False, string changeReason = "", bool saveBoard = True);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract bool PreventRecharge(bool log = False);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract void ArrangeOpenChestSpawnerState();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract void BoardChangeState(bool animateClockDisappear);
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract bool ProcessSpawn(BoardItemSpawnerData boardItemSpawnerData, int energyConsumeAmount);
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract bool ProcessSpawn(BoardItemPerishableSpawner boardItemPerishableSpawner, int energyConsumeAmount);
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract bool ProcessSpawn(BoardItemChestSpawner boardItemChestSpawner, int energyConsumeAmount);
+}
+

@@ -1,0 +1,29 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class PersistenceSystem.<>c // TypeDefIndex: 669
+{
+	// Fields
+	public static readonly PersistenceSystem.<>c <>9; // 0x0
+	public static Func<FieldInfo, bool> <>9__15_0; // 0x8
+	public static Func<FieldInfo, string> <>9__15_1; // 0x10
+	public static Func<PersistentComponent, bool> <>9__26_0; // 0x18
+
+	// Methods
+
+	// RVA: 0x628DD90 Offset: 0x6289D90 VA: 0x628DD90
+	private static void .cctor() { }
+
+	// RVA: 0x628DDF8 Offset: 0x6289DF8 VA: 0x628DDF8
+	public void .ctor() { }
+
+	// RVA: 0x628DE00 Offset: 0x6289E00 VA: 0x628DE00
+	internal bool <InitializeSystem>b__15_0(FieldInfo field) { }
+
+	// RVA: 0x628DE54 Offset: 0x6289E54 VA: 0x628DE54
+	internal string <InitializeSystem>b__15_1(FieldInfo field) { }
+
+	// RVA: 0x628DE8C Offset: 0x6289E8C VA: 0x628DE8C
+	internal bool <SerializeAndSave>b__26_0(PersistentComponent persistent) { }
+}
+

@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class InventorySystem.<>c__DisplayClass92_0 // TypeDefIndex: 655
+{
+	// Fields
+	public List<Tuple<ProducerInventoryItem, int>> slotAndIndex; // 0x10
+
+	// Methods
+
+	// RVA: 0x62887C4 Offset: 0x62847C4 VA: 0x62887C4
+	public void .ctor() { }
+
+	// RVA: 0x628A820 Offset: 0x6286820 VA: 0x628A820
+	internal int <SortBackendSlotsToConfig>b__0(ProducerInventoryItem lhs, ProducerInventoryItem rhs) { }
+}
+

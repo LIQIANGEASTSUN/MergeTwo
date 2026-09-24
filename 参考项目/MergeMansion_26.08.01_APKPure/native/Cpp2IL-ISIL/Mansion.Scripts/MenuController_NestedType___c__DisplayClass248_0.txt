@@ -1,0 +1,130 @@
+Type: MenuController+<>c__DisplayClass248_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x02B715E8 LDR X10, [X8 + 0xB0]
+	0x02B715EC ADD X10, X10, 0x8
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void <PopMenu>b__0()
+
+Disassembly:
+	0x02B715F0 LDUR X11, [X10 - 0x8]
+	0x02B715F4 CMP X11, X1
+	0x02B715F8 B.EQ 0x2B71618
+	0x02B715FC SUBS X9, X9, 0x1
+	0x02B71600 ADD X10, X10, 0x10
+	0x02B71604 B.NE 0x2B715F0
+	0x02B71608 MOV X0, X21
+	0x02B7160C MOVZ W2, 0xC
+	0x02B71610 BL 0x23D527C
+	0x02B71614 B 0x2B71628
+	0x02B71618 LDR W9, [X10]
+	0x02B7161C ADD W9, W9, 0xC
+	0x02B71620 ADD X8, X8, W9, 0x4, SXTW
+	0x02B71624 ADD X0, X8, 0x138
+	0x02B71628 LDP X8, X1, [X0]
+	0x02B7162C MOV X0, X21
+	0x02B71630 BLR X8
+	0x02B71634 CMP W20, W0
+	0x02B71638 B.NE 0x2B7169C
+	0x02B7163C MOV X0, X19
+	0x02B71640 MOV X1, X31
+	0x02B71644 BL 0x2B456F4
+	0x02B71648 CBZ X0, 0x2B71E00
+	0x02B7164C LDR X8, [X31 + 0x110]
+	0x02B71650 LDR X21, [X8 + 0x18]
+	0x02B71654 CBZ X21, 0x2B71E04
+	0x02B71658 LDR X8, [X21]
+	0x02B7165C LDR X20, [X0 + 0x18]
+	0x02B71660 LDR X1, [X23]
+	0x02B71664 LDRH W9, [X8 + 0x12E]
+	0x02B71668 CBZ X9, 0x2B7168C
+	0x02B7166C LDR X10, [X8 + 0xB0]
+	0x02B71670 ADD X10, X10, 0x8
+	0x02B71674 LDUR X11, [X10 - 0x8]
+	0x02B71678 CMP X11, X1
+	0x02B7167C B.EQ 0x2B71BDC
+	0x02B71680 SUBS X9, X9, 0x1
+	0x02B71684 ADD X10, X10, 0x10
+	0x02B71688 B.NE 0x2B71674
+	0x02B7168C MOV X0, X21
+	0x02B71690 MOVZ W2, 0x32
+	0x02B71694 BL 0x23D527C
+	0x02B71698 B 0x2B71BEC
+	0x02B7169C LDR X8, [X31 + 0x110]
+	0x02B716A0 LDR X1, [X8 + 0x18]
+	0x02B716A4 LDR X2, [X8 + 0x30]
+	0x02B716A8 LDR W3, [X8 + 0x38]
+	0x02B716AC MOV X0, X19
+	0x02B716B0 MOV X4, X31
+	0x02B716B4 MOV X5, X31
+	0x02B716B8 BL 0x2B591B4
+	0x02B716BC B 0x2B718CC
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move X19, X0
+	006 Move W8, [0x31B7BD0]
+	007 Move TEMP, X8
+	008 And TEMP, TEMP, 1
+	009 Compare TEMP, 1
+	010 JumpIfEqual {15}
+	011 Move X0, [0x2B77570]
+	012 Call 0x239F8E4
+	013 Move W8, 1
+	014 Move [X20+3024], W8
+	015 Move X21, [X19+24]
+	016 Compare X21, 0
+	017 JumpIfEqual {59}
+	018 Move X8, [X21]
+	019 Move X10, [0x2B77570]
+	020 Move X20, [X19+16]
+	021 NotImplemented "Instruction LDRH not yet implemented."
+	022 Move X1, [X10]
+	023 Compare X9, 0
+	024 JumpIfEqual {31}
+	025 Move X10, [X8+176]
+	026 Add X10, X10, 8
+	027 NotImplemented "Instruction LDUR not yet implemented."
+	028 NotImplemented "Instruction CMP not yet implemented."
+	029 Subtract X9, X9, 1
+	030 Add X10, X10, 16
+	031 Move X0, X21
+	032 Move W2, W31
+	033 Call 0x23D927C
+	034 NotImplemented "Instruction LDRSW not yet implemented."
+	035 Add X8, X8, X9
+	036 Add X0, X8, 312
+	037 Move X8, [X0]
+	038 Move X1, [X0+8]
+	039 Move X0, X21
+	040 NotImplemented "Instruction BLR not yet implemented."
+	041 Compare X20, 0
+	042 JumpIfEqual {59}
+	043 Move X1, X0
+	044 Move X0, X20
+	045 Move X2, X31
+	046 Call MenuController.OnHiddenFinished, X0, X1
+	047 Move X0, [X19+16]
+	048 Compare X0, 0
+	049 JumpIfEqual {59}
+	050 Move X1, [X19+24]
+	051 Move X20, [X31+16]
+	052 Move X19, [X31+24]
+	053 Move W2, 1
+	054 Move X3, X31
+	055 Move X30, [X31+32]
+	056 Move X21, [X31+40]
+	057 Call MenuController.OnHideMenuComplete, X0, X1, X2
+	058 Return 
+	059 Call 0x239FB90
+

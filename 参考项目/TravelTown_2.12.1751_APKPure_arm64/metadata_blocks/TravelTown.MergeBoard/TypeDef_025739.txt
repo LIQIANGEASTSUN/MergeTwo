@@ -1,0 +1,39 @@
+// Namespace: Merger.MergeBoard.Systems
+public class ImmediateToolsConversionSystem : ISystem // TypeDefIndex: 25739
+{
+	// Fields
+	[Inject]
+	private IToolSpawnHandler _toolSpawnHandler; // 0x10
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x18
+	[Inject]
+	private IBoardConfigService _boardConfigService; // 0x20
+	[Inject]
+	private IPlayerModel _playerModel; // 0x28
+	[Inject]
+	private IEntityFactory _entityFactory; // 0x30
+
+	// Methods
+
+	// RVA: 0x6A68F9C Offset: 0x6A64F9C VA: 0x6A68F9C Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A69568 Offset: 0x6A65568 VA: 0x6A69568
+	private bool IsToolOrToolbox(string itemId) { }
+
+	// RVA: 0x6A69A94 Offset: 0x6A65A94 VA: 0x6A69A94
+	private bool IsToolbox(IMergeItem mergeItem) { }
+
+	// RVA: 0x6A69BA8 Offset: 0x6A65BA8 VA: 0x6A69BA8
+	private bool IsTool(IMergeItem mergeItem) { }
+
+	// RVA: 0x6A69640 Offset: 0x6A65640 VA: 0x6A69640
+	private void EnforceImmediateToolBehavior(Entity entity, IdComponent idComponent) { }
+
+	// RVA: 0x6A698AC Offset: 0x6A658AC VA: 0x6A698AC
+	private void RemoveImmediateToolBehavior(Entity entity, IdComponent idComponent, BoardTilePositionComponent boardTilePositionComponent) { }
+
+	// RVA: 0x6A69CCC Offset: 0x6A65CCC VA: 0x6A69CCC
+	public void .ctor() { }
+}
+

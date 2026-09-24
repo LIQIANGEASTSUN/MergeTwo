@@ -1,0 +1,16 @@
+// Namespace: 
+public class BaseEvent // TypeDefIndex: 1850
+{
+	// Fields
+	public string type; // 0x8
+	public object[] datas; // 0xC
+
+	// Methods
+
+	// RVA: 0x297FD4C Offset: 0x297FD4C VA: 0x297FD4C
+	public void .ctor(string type) { }
+
+	// RVA: 0x297FD74 Offset: 0x297FD74 VA: 0x297FD74
+	public void .ctor(string type, object[] datas) { }
+}
+

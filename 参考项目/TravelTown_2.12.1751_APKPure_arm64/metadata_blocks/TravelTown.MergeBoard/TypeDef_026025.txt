@@ -1,0 +1,8 @@
+// Namespace: Merger.MergeBoard.Components
+public struct ToolSpawningComponent : IComponent // TypeDefIndex: 26025
+{
+	// Fields
+	public List<WeightedTool> ToolsWeights; // 0x0
+	public List<WeightedToolLevel> ToolLevelsWeights; // 0x8
+}
+

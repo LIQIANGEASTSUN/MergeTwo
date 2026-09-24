@@ -1,0 +1,8 @@
+// Namespace: 
+[CompilerGenerated]
+private struct BoardSystem.<>c__DisplayClass49_1 // TypeDefIndex: 915
+{
+	// Fields
+	public int distance; // 0x0
+}
+

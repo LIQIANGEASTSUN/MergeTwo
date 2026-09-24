@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class CoinMultiplierApplySystem.<>c // TypeDefIndex: 26030
+{
+	// Fields
+	public static readonly CoinMultiplierApplySystem.<>c <>9; // 0x0
+	public static Func<ValueTuple<Entity, CollectableComponent, IdComponent, BornComponent>, bool> <>9__1_0; // 0x8
+	public static Func<ValueTuple<Entity, CollectableComponent, IdComponent>, bool> <>9__2_0; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A9F728 Offset: 0x6A9B728 VA: 0x6A9F728
+	private static void .cctor() { }
+
+	// RVA: 0x6A9F790 Offset: 0x6A9B790 VA: 0x6A9F790
+	public void .ctor() { }
+
+	// RVA: 0x6A9F798 Offset: 0x6A9B798 VA: 0x6A9F798
+	internal bool <Tick>b__1_0(ValueTuple<Entity, CollectableComponent, IdComponent, BornComponent> item) { }
+
+	// RVA: 0x6A9F7D4 Offset: 0x6A9B7D4 VA: 0x6A9F7D4
+	internal bool <ProcessAllComponents>b__2_0(ValueTuple<Entity, CollectableComponent, IdComponent> item) { }
+}
+

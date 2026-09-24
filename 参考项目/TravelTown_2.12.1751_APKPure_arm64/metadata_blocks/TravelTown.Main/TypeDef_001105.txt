@@ -1,0 +1,109 @@
+// Namespace: MergeEngine.ECS.Components.Items.Producers
+public interface ITimeCycleComponent : IComponentBase // TypeDefIndex: 1105
+{
+	// Properties
+	public abstract int ItemsPerSubCycle { get; }
+	public abstract int SubCycleTime { get; }
+	public abstract int SubCycles { get; }
+	public abstract int CycleDelay { get; }
+	public abstract double CycleDelayLeft { get; set; }
+	public abstract double SubCycleDelayLeft { get; set; }
+	public abstract int CurrentSubCycle { get; set; }
+	public abstract int ItemsToProduce { get; set; }
+	public abstract int ItemsProducedPerSubCycle { get; set; }
+	public abstract int Capacity { get; }
+	public abstract TimeCycleState State { get; set; }
+	public abstract int TotalNumberOfCycles { get; set; }
+	public abstract bool ExceededLifetimeLimit { get; }
+	public abstract int TotalSpawnedItemsInLifetime { get; set; }
+	public abstract bool ModifiedByStateLoad { get; set; }
+	public abstract bool ModifiedBySubCycle { get; set; }
+	public abstract bool IsCooldownBlocked { get; set; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract int get_ItemsPerSubCycle();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract int get_SubCycleTime();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract int get_SubCycles();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract int get_CycleDelay();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract double get_CycleDelayLeft();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract void set_CycleDelayLeft(double value);
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract double get_SubCycleDelayLeft();
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract void set_SubCycleDelayLeft(double value);
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract int get_CurrentSubCycle();
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract void set_CurrentSubCycle(int value);
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public abstract int get_ItemsToProduce();
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public abstract void set_ItemsToProduce(int value);
+
+	// RVA: -1 Offset: -1 Slot: 12
+	public abstract int get_ItemsProducedPerSubCycle();
+
+	// RVA: -1 Offset: -1 Slot: 13
+	public abstract void set_ItemsProducedPerSubCycle(int value);
+
+	// RVA: -1 Offset: -1 Slot: 14
+	public abstract int get_Capacity();
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public abstract TimeCycleState get_State();
+
+	// RVA: -1 Offset: -1 Slot: 16
+	public abstract void set_State(TimeCycleState value);
+
+	// RVA: -1 Offset: -1 Slot: 17
+	public abstract int get_TotalNumberOfCycles();
+
+	// RVA: -1 Offset: -1 Slot: 18
+	public abstract void set_TotalNumberOfCycles(int value);
+
+	// RVA: -1 Offset: -1 Slot: 19
+	public abstract bool get_ExceededLifetimeLimit();
+
+	// RVA: -1 Offset: -1 Slot: 20
+	public abstract int get_TotalSpawnedItemsInLifetime();
+
+	// RVA: -1 Offset: -1 Slot: 21
+	public abstract void set_TotalSpawnedItemsInLifetime(int value);
+
+	// RVA: -1 Offset: -1 Slot: 22
+	public abstract bool get_ModifiedByStateLoad();
+
+	// RVA: -1 Offset: -1 Slot: 23
+	public abstract void set_ModifiedByStateLoad(bool value);
+
+	// RVA: -1 Offset: -1 Slot: 24
+	public abstract bool get_ModifiedBySubCycle();
+
+	// RVA: -1 Offset: -1 Slot: 25
+	public abstract void set_ModifiedBySubCycle(bool value);
+
+	// RVA: -1 Offset: -1 Slot: 26
+	public abstract bool get_IsCooldownBlocked();
+
+	// RVA: -1 Offset: -1 Slot: 27
+	public abstract void set_IsCooldownBlocked(bool value);
+}
+

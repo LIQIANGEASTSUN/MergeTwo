@@ -1,0 +1,8 @@
+// Namespace: 
+public struct BaseMiniBoardEvent.InitializeBoard : IEvent // TypeDefIndex: 1035
+{
+	// Fields
+	public BoardEntity BoardEntity; // 0x0
+	public MiniBoardData MiniBoardData; // 0x4
+}
+

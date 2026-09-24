@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardIdleHintSystem.<>c__DisplayClass52_0 // TypeDefIndex: 891
+{
+	// Fields
+	public BoardIdleHintSystem <>4__this; // 0x10
+	public PositionComponent producer; // 0x18
+
+	// Methods
+
+	// RVA: 0x665A738 Offset: 0x6656738 VA: 0x665A738
+	public void .ctor() { }
+
+	// RVA: 0x665B3E4 Offset: 0x66573E4 VA: 0x665B3E4
+	internal void <TryShowProducerHint>b__0() { }
+}
+

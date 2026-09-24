@@ -1,0 +1,33 @@
+// Namespace: MergeEngine.ECS.Components.Items
+[Serializable]
+public class SerializedLockedComponent // TypeDefIndex: 1081
+{
+	// Fields
+	public bool Boxed; // 0x10
+	public bool Locked; // 0x11
+	public bool Bubbled; // 0x12
+	public bool Meteor; // 0x13
+	public int LevelLock; // 0x14
+	public long BubbleEndTime; // 0x18
+	public double BubbleTimeLeft; // 0x20
+	[JsonProperty("blasterableTier")]
+	public int BlasterableTier; // 0x28
+	public long MeteorEndTime; // 0x30
+	public long MeteorDuration; // 0x38
+	public string MeteorCycleId; // 0x40
+	public int MeteorLocationItemIndex; // 0x48
+	[JsonProperty("boxedType")]
+	public UnboxingType UnboxingType; // 0x4C
+	[JsonProperty("interactionAmount")]
+	public int InteractionAmount; // 0x50
+	[JsonProperty("totalInteractionAmount")]
+	public int TotalInteractionAmount; // 0x54
+	[JsonProperty("resourceType")]
+	public PlayerResourceEnum InteractionResource; // 0x58
+
+	// Methods
+
+	// RVA: 0x68FDA98 Offset: 0x68F9A98 VA: 0x68FDA98
+	public void .ctor() { }
+}
+

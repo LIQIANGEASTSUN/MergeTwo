@@ -1,0 +1,9 @@
+// Namespace: MergeEngine.Configuration.Definitions
+[Serializable]
+public struct WeightedToolLevel // TypeDefIndex: 1337
+{
+	// Fields
+	public int Weight; // 0x0
+	public int Level; // 0x4
+}
+

@@ -1,0 +1,27 @@
+// Namespace: Merger.MergeBoard.Extensions
+[Extension]
+public static class MergeBoardEntitiesExtensions // TypeDefIndex: 25912
+{
+	// Methods
+
+	[Extension]
+	// RVA: 0x6A98B30 Offset: 0x6A94B30 VA: 0x6A98B30
+	public static Entity GetEntityAtPosition(IEnumerable<Entity> entities, int position) { }
+
+	[Extension]
+	// RVA: 0x6A98E60 Offset: 0x6A94E60 VA: 0x6A98E60
+	public static void AddEntity(TickContext tickContext, Entity entity, Entity sourceEntity) { }
+
+	[Extension]
+	// RVA: 0x6A98F6C Offset: 0x6A94F6C VA: 0x6A98F6C
+	public static void RemoveEntity(TickContext tickContext, Entity entity) { }
+
+	[Extension]
+	// RVA: 0x6A98FC0 Offset: 0x6A94FC0 VA: 0x6A98FC0
+	public static void BlockMovement(TickContext context, Entity entity, int originalPosition) { }
+
+	[Extension]
+	// RVA: 0x6A990BC Offset: 0x6A950BC VA: 0x6A990BC
+	public static bool IsNotBeingConsumed(Entity entity, PendingInteractionComponent pendingInteractionComponent) { }
+}
+

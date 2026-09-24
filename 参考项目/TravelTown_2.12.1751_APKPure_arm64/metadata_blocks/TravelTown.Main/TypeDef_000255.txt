@@ -1,0 +1,42 @@
+// Namespace: MergeEngine.Signal.Board
+public class ConsumeBoardItemSignal // TypeDefIndex: 255
+{
+	// Fields
+	public Vector2 TargetPosition; // 0x10
+	[CompilerGenerated]
+	private readonly Action <CompleteCallback>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private readonly IMergeItem <ItemToConsume>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private readonly BoardItemPosition <PositionOfItemToConsume>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private readonly Entity <Entity>k__BackingField; // 0x30
+
+	// Properties
+	public Action CompleteCallback { get; }
+	public IMergeItem ItemToConsume { get; }
+	public BoardItemPosition PositionOfItemToConsume { get; }
+	public Entity Entity { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5FF4254 Offset: 0x5FF0254 VA: 0x5FF4254
+	public Action get_CompleteCallback() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF425C Offset: 0x5FF025C VA: 0x5FF425C
+	public IMergeItem get_ItemToConsume() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF4264 Offset: 0x5FF0264 VA: 0x5FF4264
+	public BoardItemPosition get_PositionOfItemToConsume() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF426C Offset: 0x5FF026C VA: 0x5FF426C
+	public Entity get_Entity() { }
+
+	// RVA: 0x5FF4274 Offset: 0x5FF0274 VA: 0x5FF4274
+	public void .ctor(Entity entity, Vector2 targetPosition, Action completeCallback, IMergeItem itemToConsume, BoardItemPosition positionOfItemToConsume) { }
+}
+

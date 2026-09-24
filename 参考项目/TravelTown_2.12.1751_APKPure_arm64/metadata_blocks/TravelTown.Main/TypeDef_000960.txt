@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ExpendableSystem.<>c__DisplayClass22_0 // TypeDefIndex: 960
+{
+	// Fields
+	public string reason; // 0x10
+
+	// Methods
+
+	// RVA: 0x678EB2C Offset: 0x678AB2C VA: 0x678EB2C
+	public void .ctor() { }
+
+	// RVA: 0x679054C Offset: 0x678C54C VA: 0x679054C
+	internal bool <SpawnItems>b__1(WeightedItemSpawnable i) { }
+}
+

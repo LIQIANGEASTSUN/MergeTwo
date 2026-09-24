@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoosterService.<>c__DisplayClass50_0 // TypeDefIndex: 7764
+{
+	// Fields
+	public string uuid; // 0x10
+
+	// Methods
+
+	// RVA: 0x65C3D34 Offset: 0x65BFD34 VA: 0x65C3D34
+	public void .ctor() { }
+
+	// RVA: 0x65C50C8 Offset: 0x65C10C8 VA: 0x65C50C8
+	internal bool <GetLinkedMergeItemIdComponent>b__0(MergeItemBoosterComponent idComponent) { }
+}
+

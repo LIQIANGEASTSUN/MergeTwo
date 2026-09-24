@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardQueueSystem.<>c__DisplayClass41_0 // TypeDefIndex: 905
+{
+	// Fields
+	public IRewardViewData rewardViewData; // 0x10
+
+	// Methods
+
+	// RVA: 0x6664878 Offset: 0x6660878 VA: 0x6664878
+	public void .ctor() { }
+
+	// RVA: 0x6666C54 Offset: 0x6662C54 VA: 0x6666C54
+	internal bool <TryDequeueRewardItem>b__0(QueuedItem x) { }
+}
+

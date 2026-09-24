@@ -1,0 +1,38 @@
+// Namespace: MergeEngine.Model.Board
+public class BoardEventQueueModel : ModelBase, IBoardEventQueueModel // TypeDefIndex: 585
+{
+	// Fields
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0x28
+	[Inject]
+	private ISystemManager _systemManager; // 0x30
+	private MutableBindableProperty<int> _boardEventQueueCount; // 0x38
+
+	// Properties
+	private BoardQueueSystem BoardQueueSystem { get; }
+	public BindableProperty<int> BoardEventQueueCount { get; }
+
+	// Methods
+
+	// RVA: 0x61439B4 Offset: 0x613F9B4 VA: 0x61439B4
+	private BoardQueueSystem get_BoardQueueSystem() { }
+
+	// RVA: 0x6143A6C Offset: 0x613FA6C VA: 0x6143A6C Slot: 20
+	public BindableProperty<int> get_BoardEventQueueCount() { }
+
+	// RVA: 0x6143A74 Offset: 0x613FA74 VA: 0x6143A74 Slot: 4
+	protected override void SubscribeToSignals() { }
+
+	// RVA: 0x6143B24 Offset: 0x613FB24 VA: 0x6143B24 Slot: 5
+	protected override void UnsubscribeFromSignals() { }
+
+	// RVA: 0x6143BD4 Offset: 0x613FBD4 VA: 0x6143BD4
+	private void BoardEventClosed() { }
+
+	// RVA: 0x6143C40 Offset: 0x613FC40 VA: 0x6143C40 Slot: 19
+	public void SetBoardEventQueue(BoardQueueBackendState boardEventQueueState) { }
+
+	// RVA: 0x6143D88 Offset: 0x613FD88 VA: 0x6143D88
+	public void .ctor() { }
+}
+

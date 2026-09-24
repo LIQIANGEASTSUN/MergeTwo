@@ -1,0 +1,40 @@
+// Namespace: Merger.Boosters.Controllers
+public class JokerCardBoosterController : IBoosterController // TypeDefIndex: 7863
+{
+	// Fields
+	[Inject]
+	private IRemoteContentService _remoteContentService; // 0x10
+	[Inject]
+	private ISystemManager _systemManager; // 0x18
+	[Inject]
+	private IBoosterModel _boosterModel; // 0x20
+	private BoosterBoardSystem _boosterBoardSystem; // 0x28
+
+	// Properties
+	private BoosterBoardSystem BoosterBoardSystem { get; }
+	public BoosterType Type { get; }
+
+	// Methods
+
+	// RVA: 0x65C9B98 Offset: 0x65C5B98 VA: 0x65C9B98
+	private BoosterBoardSystem get_BoosterBoardSystem() { }
+
+	// RVA: 0x65C9C78 Offset: 0x65C5C78 VA: 0x65C9C78 Slot: 4
+	public BoosterType get_Type() { }
+
+	// RVA: 0x65C9C80 Offset: 0x65C5C80 VA: 0x65C9C80 Slot: 5
+	public void Process(List<RemoteBoosterData> boosters) { }
+
+	// RVA: 0x65C9EF8 Offset: 0x65C5EF8 VA: 0x65C9EF8 Slot: 6
+	public void BoosterActivated(RemoteBoosterData activeBooster) { }
+
+	// RVA: 0x65C9EFC Offset: 0x65C5EFC VA: 0x65C9EFC Slot: 7
+	public void BoosterExpired(string uuid) { }
+
+	// RVA: 0x65C9F00 Offset: 0x65C5F00 VA: 0x65C9F00
+	private bool CanActivateOnMetaScreen(RemoteBoosterData remoteActiveBooster) { }
+
+	// RVA: 0x65C9F20 Offset: 0x65C5F20 VA: 0x65C9F20
+	public void .ctor() { }
+}
+

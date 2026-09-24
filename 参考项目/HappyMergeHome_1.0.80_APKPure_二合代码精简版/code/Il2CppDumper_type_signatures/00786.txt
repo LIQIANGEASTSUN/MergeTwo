@@ -1,0 +1,33 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class MomentsLightModel.<>c // TypeDefIndex: 786
+{
+	// Fields
+	public static readonly MomentsLightModel.<>c <>9; // 0x0
+	public static Comparison<MomentsLightPic> <>9__25_0; // 0x4
+	public static Comparison<MomentsLightPic> <>9__26_0; // 0x8
+	public static Action <>9__28_1; // 0xC
+	public static Action <>9__36_0; // 0x10
+
+	// Methods
+
+	// RVA: 0x19E196C Offset: 0x19E196C VA: 0x19E196C
+	private static void .cctor() { }
+
+	// RVA: 0x19E19E0 Offset: 0x19E19E0 VA: 0x19E19E0
+	public void .ctor() { }
+
+	// RVA: 0x19E19E8 Offset: 0x19E19E8 VA: 0x19E19E8
+	internal int <TryUnlockNextPic>b__25_0(MomentsLightPic a, MomentsLightPic b) { }
+
+	// RVA: 0x19E1A30 Offset: 0x19E1A30 VA: 0x19E1A30
+	internal int <IsLastUnlockedPic>b__26_0(MomentsLightPic a, MomentsLightPic b) { }
+
+	// RVA: 0x19E1A78 Offset: 0x19E1A78 VA: 0x19E1A78
+	internal void <PurchaseSuccess>b__28_1() { }
+
+	// RVA: 0x19E1BB0 Offset: 0x19E1BB0 VA: 0x19E1BB0
+	internal void <FlyBrush>b__36_0() { }
+}
+

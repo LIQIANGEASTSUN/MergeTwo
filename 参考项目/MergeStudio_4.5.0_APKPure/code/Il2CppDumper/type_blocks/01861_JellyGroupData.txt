@@ -1,0 +1,13 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "JellyGroupData", menuName = "Scriptable/Jelly/JellyGroupData", order = 1)]
+public class JellyGroupData : ScriptableObject // TypeDefIndex: 1861
+{
+	// Fields
+	public List<int> JellyPriceList; // 0xC
+
+	// Methods
+
+	// RVA: 0x19169EC Offset: 0x19169EC VA: 0x19169EC
+	public void .ctor() { }
+}
+

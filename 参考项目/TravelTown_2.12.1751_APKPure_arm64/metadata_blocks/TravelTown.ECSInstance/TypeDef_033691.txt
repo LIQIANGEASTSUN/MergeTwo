@@ -1,0 +1,18 @@
+// Namespace: ContextualizedECS.Systems
+public class SystemsBuilder // TypeDefIndex: 33691
+{
+	// Fields
+	private readonly List<SystemInfo> _systemsRegistry; // 0x10
+
+	// Methods
+
+	// RVA: 0x5F153A8 Offset: 0x5F113A8 VA: 0x5F153A8
+	internal void RegisterSystem(SystemInfo systemInfo) { }
+
+	// RVA: 0x5F15454 Offset: 0x5F11454 VA: 0x5F15454
+	public SystemsManager Build() { }
+
+	// RVA: 0x5F15698 Offset: 0x5F11698 VA: 0x5F15698
+	public void .ctor() { }
+}
+

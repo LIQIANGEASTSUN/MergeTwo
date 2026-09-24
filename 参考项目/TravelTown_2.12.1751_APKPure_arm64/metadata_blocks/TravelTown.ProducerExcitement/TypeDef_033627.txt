@@ -1,0 +1,58 @@
+// Namespace: Merger.ProducerExcitement.Models
+public class ProducerExcitementModel : ModelBase, IProducerExcitementModel // TypeDefIndex: 33627
+{
+	// Fields
+	private readonly ObservableList<ProducerExcitementDataResponse> _excitementStates; // 0x28
+	private readonly List<int> _claimedExcitementIds; // 0x30
+	private readonly Dictionary<int, ExcitementVisibility> _excitementIdsGhostModeDictionary; // 0x38
+	private readonly Dictionary<int, ProducerExcitementAnalyticsDataPayload> _excitementAnalyticsDictionary; // 0x40
+
+	// Properties
+	public ObservableList<ProducerExcitementDataResponse> ExcitementStates { get; }
+	public IReadOnlyList<int> ClaimedExcitementIds { get; }
+
+	// Methods
+
+	// RVA: 0x6AD8DD0 Offset: 0x6AD4DD0 VA: 0x6AD8DD0 Slot: 19
+	public ObservableList<ProducerExcitementDataResponse> get_ExcitementStates() { }
+
+	// RVA: 0x6AD8DD8 Offset: 0x6AD4DD8 VA: 0x6AD8DD8 Slot: 20
+	public IReadOnlyList<int> get_ClaimedExcitementIds() { }
+
+	// RVA: 0x6AD8DE0 Offset: 0x6AD4DE0 VA: 0x6AD8DE0 Slot: 24
+	public void Update(ProducerExcitementDataResponse stateExcitements) { }
+
+	// RVA: 0x6AD8F04 Offset: 0x6AD4F04 VA: 0x6AD8F04 Slot: 25
+	public ExcitementVisibility GetVisibilityMode(int excitementClaimId) { }
+
+	// RVA: 0x6AD8F60 Offset: 0x6AD4F60 VA: 0x6AD8F60 Slot: 26
+	public ProducerExcitementAnalyticsDataPayload GetAnalyticsDataPayload(int excitementClaimId) { }
+
+	// RVA: 0x6AD8FB8 Offset: 0x6AD4FB8 VA: 0x6AD8FB8 Slot: 21
+	public void RegisterAnalyticsData(ProducerExcitementAnalyticsDataPayload payload, int excitementId) { }
+
+	// RVA: 0x6AD9020 Offset: 0x6AD5020 VA: 0x6AD9020 Slot: 22
+	public void AddClaimedExcitementId(int excitementId) { }
+
+	// RVA: 0x6AD916C Offset: 0x6AD516C VA: 0x6AD916C Slot: 23
+	public void ResetClaimedExcitements() { }
+
+	// RVA: 0x6AD91BC Offset: 0x6AD51BC VA: 0x6AD91BC Slot: 4
+	protected override void SubscribeToSignals() { }
+
+	// RVA: 0x6AD926C Offset: 0x6AD526C VA: 0x6AD926C Slot: 5
+	protected override void UnsubscribeFromSignals() { }
+
+	// RVA: 0x6AD931C Offset: 0x6AD531C VA: 0x6AD931C
+	private void OnProducerExcitementReceived(ProducerExcitementReceivedSignal signal) { }
+
+	// RVA: 0x6AD9334 Offset: 0x6AD5334 VA: 0x6AD9334
+	private void SetVisibilityMode(int excitementClaimId, ExcitementVisibility visibility) { }
+
+	// RVA: 0x6AD8DE4 Offset: 0x6AD4DE4 VA: 0x6AD8DE4
+	private void AddExcitementInternal(ProducerExcitementDataResponse stateExcitement) { }
+
+	// RVA: 0x6AD939C Offset: 0x6AD539C VA: 0x6AD939C
+	public void .ctor() { }
+}
+

@@ -1,0 +1,296 @@
+Type: GameLogic.Player.Board.BoardExtensions+<>c
+
+Method: System.Void .cctor()
+
+Disassembly:
+	0x036722D8 BL 0x3673F20
+	0x036722DC LDP X1, X2, [X31 + 0x28]
+	0x036722E0 MOV X0, X26
+	0x036722E4 MOV X3, X31
+	0x036722E8 BL 0x35D672C
+	0x036722EC MOV X28, X0
+	0x036722F0 CBZ X0, 0x36723D0
+	0x036722F4 MOV X0, X26
+	0x036722F8 MOV X1, X31
+	0x036722FC BL 0x35EB334
+	0x03672300 TBZ X0, 0x0, 0x367232C
+	0x03672304 MOV X0, X26
+	0x03672308 MOV X1, X31
+	0x0367230C BL 0x35E28A8
+	0x03672310 CMP W0, 0x0
+	0x03672314 B.GT 0x367232C
+	0x03672318 MOV X0, X26
+	0x0367231C MOV X1, X31
+	0x03672320 BL 0x35CF218
+	0x03672324 CBZ X0, 0x3673820
+	0x03672328 LDR X28, [X0 + 0x20]
+	0x0367232C ADRP X8, 0x2072000
+	0x03672330 LDR X8, [X8 + 0xFF0]
+	0x03672334 LDR X0, [X8]
+	0x03672338 LDR W8, [X0 + 0xE4]
+	0x0367233C CBNZ W8, 0x3672344
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move W8, [0x26BBF58]
+	005 Move X20, [0x20C4E48]
+	006 Move TEMP, X8
+	007 And TEMP, TEMP, 1
+	008 Compare TEMP, 1
+	009 JumpIfEqual {14}
+	010 Move X0, [0x20C4E48]
+	011 Call 0x239F8E4
+	012 Move W8, 1
+	013 Move [X19+3928], W8
+	014 Move X0, [X20]
+	015 Call 0x239FB80
+	016 Move X1, X31
+	017 Move X19, X0
+	018 Call Object..ctor, X0
+	019 Move X8, [X20]
+	020 Move X1, X19
+	021 Move X8, [X8+184]
+	022 Move [X8], X19
+	023 Move X8, [X20]
+	024 Move X20, [X31+16]
+	025 Move X19, [X31+24]
+	026 Move X0, [X8+184]
+	027 Move X30, [X31+32]
+	028 Call 0x239F888
+	029 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03672340 BL 0x239BA64
+	0x03672344 MOV X0, X24
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <Items>b__1_0(System.ValueTuple`2<GameLogic.Player.Board.Coordinate, GameLogic.Player.Items.MergeItem> pair)
+
+Disassembly:
+	0x03672348 MOV X1, X31
+	0x0367234C BL 0x342C158
+	0x03672350 MOV X5, X0
+
+ISIL:
+	001 NotImplemented "Instruction CMP not yet implemented."
+	002 NotImplemented "Instruction CSET not yet implemented."
+	003 Return X0
+
+Method: System.Boolean <VisibleItems>b__2_0(GameLogic.Player.Items.MergeItem item)
+
+Disassembly:
+	0x03672354 LDP X4, X0, [X31 + 0x28]
+	0x03672358 MOV X1, X22
+	0x0367235C MOV X2, X25
+	0x03672360 MOV X3, X28
+	0x03672364 MOVZ W6, 0x2
+	0x03672368 MOV W7, W31
+
+ISIL:
+	001 Compare X1, 0
+	002 JumpIfEqual {7}
+	003 Move X0, X1
+	004 Move X1, X31
+	005 Call MergeItem.get_IsVisible, X0
+	006 Return X0
+	007 Move [X31-16], X30
+	008 Call 0x239FB90
+
+Method: GameLogic.Player.Board.Coordinate <FindAllActivableAndVisibleItems>b__8_1(System.ValueTuple`2<GameLogic.Player.Board.Coordinate, GameLogic.Player.Items.MergeItem> pair)
+
+Disassembly:
+	0x0367236C BL 0x3670F00
+	0x03672370 MOV X27, X0
+
+ISIL:
+	001 Move X0, X1
+	002 Return X0
+
+Method: System.Boolean <FindFirstEmptySlot>b__9_0(System.ValueTuple`2<GameLogic.Player.Board.Coordinate, GameLogic.Player.Items.MergeItem> cell)
+
+Disassembly:
+	0x03672374 MOV X0, X26
+	0x03672378 MOV X1, X31
+	0x0367237C BL 0x35EB334
+
+ISIL:
+	001 NotImplemented "Instruction CMP not yet implemented."
+	002 NotImplemented "Instruction CSET not yet implemented."
+	003 Return X0
+
+Method: GameLogic.Player.Board.Coordinate <FindFirstEmptySlot>b__9_1(System.ValueTuple`2<GameLogic.Player.Board.Coordinate, GameLogic.Player.Items.MergeItem> cell)
+
+Disassembly:
+	0x03672380 TBZ X0, 0x0, 0x3672658
+	0x03672384 CBZ X28, 0x36737D8
+
+ISIL:
+	001 Move X0, X1
+	002 Return X0
+
+Method: GameLogic.Player.Board.Coordinate <FindFirstItemOfCertainType>b__11_1(System.ValueTuple`2<GameLogic.Player.Board.Coordinate, GameLogic.Player.Items.MergeItem> pair)
+
+Disassembly:
+	0x03672388 LDR X8, [X28]
+	0x0367238C ADRP X10, 0x2063000
+
+ISIL:
+	001 Move X0, X1
+	002 Return X0
+
+Method: GameLogic.Player.Board.Coordinate <FindAllCoordinatesOfCertainItemType>b__12_1(System.ValueTuple`2<GameLogic.Player.Board.Coordinate, GameLogic.Player.Items.MergeItem> pair)
+
+Disassembly:
+	0x03672390 LDRH W9, [X8 + 0x12E]
+	0x03672394 LDR X10, [X10 + 0x7B0]
+
+ISIL:
+	001 Move X0, X1
+	002 Return X0
+
+Method: System.Boolean <CountAllItemsInBubbles>b__14_0(GameLogic.Player.Items.MergeItem item)
+
+Disassembly:
+	0x03672398 LDR X1, [X10]
+	0x0367239C CBZ X9, 0x36723C0
+	0x036723A0 LDR X10, [X8 + 0xB0]
+	0x036723A4 ADD X10, X10, 0x8
+	0x036723A8 LDUR X11, [X10 - 0x8]
+	0x036723AC CMP X11, X1
+
+ISIL:
+	001 Compare X1, 0
+	002 JumpIfEqual {7}
+	003 Move X0, X1
+	004 Move X1, X31
+	005 Call MergeItem.get_IsInsideBubble, X0
+	006 Return X0
+	007 Move [X31-16], X30
+	008 Call 0x239FB90
+
+Method: GameLogic.Player.Board.Coordinate <FindAllItemsOfCertainTypes>b__15_1(System.ValueTuple`2<GameLogic.Player.Board.Coordinate, GameLogic.Player.Items.MergeItem> pair)
+
+Disassembly:
+	0x036723B0 B.EQ 0x3672528
+	0x036723B4 SUBS X9, X9, 0x1
+
+ISIL:
+	001 Move X0, X1
+	002 Return X0
+
+Method: System.Int32 <CountVisibleItemsOfTypes>b__26_0(GameLogic.Player.Items.IItemDefinition i)
+
+Disassembly:
+	0x036723B8 ADD X10, X10, 0x10
+	0x036723BC B.NE 0x36723A8
+	0x036723C0 MOV X0, X28
+	0x036723C4 MOVZ W2, 0x8
+	0x036723C8 BL 0x23D527C
+	0x036723CC B 0x3672538
+	0x036723D0 ADRP X8, 0x2072000
+	0x036723D4 LDR X8, [X8 + 0xFF0]
+	0x036723D8 LDR X0, [X8]
+	0x036723DC LDR W8, [X0 + 0xE4]
+	0x036723E0 CBNZ W8, 0x36723E8
+	0x036723E4 BL 0x239BA64
+	0x036723E8 MOV X0, X24
+	0x036723EC MOV X1, X31
+	0x036723F0 BL 0x342C158
+	0x036723F4 MOV X3, X0
+	0x036723F8 LDR X0, [X31 + 0x30]
+	0x036723FC MOV X1, X22
+	0x03672400 MOV X2, X25
+	0x03672404 MOVZ W4, 0x1
+	0x03672408 BL 0x36749BC
+	0x0367240C MOV X0, X24
+	0x03672410 MOV X1, X31
+	0x03672414 BL 0x342C158
+	0x03672418 MOVI V0.2D, 0x0
+	0x0367241C ADD X8, X31, 0x270
+	0x03672420 MOV X4, X0
+	0x03672424 STP V0, V0, [X8 + 0x10]
+	0x03672428 STP V0, V0, [X8 + 0x30]
+	0x0367242C STR V0, [X8]
+	0x03672430 ADD X0, X31, 0x270
+	0x03672434 MOVZ W1, 0x2
+	0x03672438 MOV X2, X25
+	0x0367243C MOV X3, X25
+	0x03672440 MOV X5, X31
+	0x03672444 MOV X6, X26
+	0x03672448 MOV W7, W31
+	0x0367244C STR X31, [X31]
+	0x03672450 BL 0x33B6910
+	0x03672454 CBZ X23, 0x36737D0
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move X19, X1
+	005 Move W8, [0x26BBF59]
+	006 Move TEMP, X8
+	007 And TEMP, TEMP, 1
+	008 Compare TEMP, 1
+	009 JumpIfEqual {14}
+	010 Move X0, [0x20677B0]
+	011 Call 0x239F8E4
+	012 Move W8, 1
+	013 Move [X20+3929], W8
+	014 Compare X19, 0
+	015 JumpIfEqual {42}
+	016 Move X8, [X19]
+	017 Move X10, [0x20677B0]
+	018 NotImplemented "Instruction LDRH not yet implemented."
+	019 Move X1, [X10]
+	020 Compare X9, 0
+	021 JumpIfEqual {28}
+	022 Move X10, [X8+176]
+	023 Add X10, X10, 8
+	024 NotImplemented "Instruction LDUR not yet implemented."
+	025 NotImplemented "Instruction CMP not yet implemented."
+	026 Subtract X9, X9, 1
+	027 Add X10, X10, 16
+	028 Move X0, X19
+	029 Move W2, 31
+	030 Call 0x23D927C
+	031 Move W9, [X10]
+	032 Add W9, W9, 31
+	033 Add X8, X8, W9
+	034 Add X0, X8, 312
+	035 Move X2, [X0]
+	036 Move X1, [X0+8]
+	037 Move X0, X19
+	038 Move X20, [X31+16]
+	039 Move X19, [X31+24]
+	040 Move X30, [X31+32]
+	041 CallNoReturn X2
+	042 Call 0x239FB90
+
+Method: System.Boolean <CountAllVisibleItems>b__31_0(GameLogic.Player.Items.MergeItem item)
+
+Disassembly:
+	0x03672458 ADRP X8, 0x208B000
+	0x0367245C ADD X0, X31, 0x1D0
+	0x03672460 ADD X1, X31, 0x270
+	0x03672464 LDR X8, [X8 + 0xDB0]
+	0x03672468 MOVZ W2, 0x50
+	0x0367246C LDR X21, [X8]
+
+ISIL:
+	001 Compare X1, 0
+	002 JumpIfEqual {7}
+	003 Move X0, X1
+	004 Move X1, X31
+	005 Call MergeItem.get_IsVisible, X0
+	006 Return X0
+	007 Move [X31-16], X30
+	008 Call 0x239FB90
+

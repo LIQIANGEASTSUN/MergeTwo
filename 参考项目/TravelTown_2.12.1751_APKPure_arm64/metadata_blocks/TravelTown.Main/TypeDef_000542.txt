@@ -1,0 +1,25 @@
+// Namespace: MergeEngine.Model.Configuration
+public interface IMultipleConfigurationModel<TKey, T> // TypeDefIndex: 542
+{
+	// Properties
+	public abstract ReadOnlyCollection<T> Configurations { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract ReadOnlyCollection<T> get_Configurations();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IMultipleConfigurationModel<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.get_Configurations
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract T GetById(TKey uniqueId);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IMultipleConfigurationModel<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.GetById
+	*/
+}
+

@@ -1,0 +1,9 @@
+Type: GameLogic.Player.Items.ProgressionEvent.IProgressionEventItemSpawner
+
+Method: GameLogic.Player.Items.IItemDefinition ShouldSpawn(GameLogic.Player.Items.IItemDefinition mergeFromItem, GameLogic.Player.Items.IItemDefinition mergeToItem, GameLogic.Config.Types.MetacoreTime currentTime)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

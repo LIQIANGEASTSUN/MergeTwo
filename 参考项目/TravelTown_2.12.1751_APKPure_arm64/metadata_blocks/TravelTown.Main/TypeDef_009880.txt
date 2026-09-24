@@ -1,0 +1,40 @@
+// Namespace: Merger.Services.Backend.Sync.Data.Payloads.Board
+[Serializable]
+public class ItemPayloadBase // TypeDefIndex: 9880
+{
+	// Fields
+	public string id; // 0x10
+	public string uuid; // 0x18
+	public string origin; // 0x20
+	public long createdTimestamp; // 0x28
+	public long mergedTimestamp; // 0x30
+	public long queueAddedTimestamp; // 0x38
+	public long expirationTimeStamp; // 0x40
+	public long timerDuration; // 0x48
+	public string reason; // 0x50
+	public long activationTimestamp; // 0x58
+	[JsonProperty(DefaultValueHandling = 1)]
+	public SerializedLockedComponent locked; // 0x60
+	[JsonProperty(DefaultValueHandling = 1)]
+	public SerializedExpendableComponent expandable; // 0x68
+	[JsonProperty(DefaultValueHandling = 1)]
+	public SerializedItemSpawningComponent timeCycle; // 0x70
+	[JsonProperty(DefaultValueHandling = 1)]
+	public SerializedTimeLockComponent timeLock; // 0x78
+	[JsonProperty(DefaultValueHandling = 1)]
+	public SerializedChargableComponent chargeable; // 0x80
+	[JsonProperty(DefaultValueHandling = 1)]
+	public DynamicMergeItemConfig dynamicItemConfig; // 0x88
+	[JsonProperty(DefaultValueHandling = 1)]
+	public SerializedMergeItemBoosterComponent mergeItemBoosterComponent; // 0x90
+	[JsonProperty(DefaultValueHandling = 1)]
+	public List<ItemPayloadBase> pot; // 0x98
+	[JsonProperty(DefaultValueHandling = 1)]
+	public SerializedStackingComponent stacking; // 0xA0
+
+	// Methods
+
+	// RVA: 0x67CC998 Offset: 0x67C8998 VA: 0x67CC998
+	public void .ctor() { }
+}
+

@@ -1,0 +1,14 @@
+// Namespace: Merger.MergeBoardQueue.Data.TickInputActions
+public class DequeueAction // TypeDefIndex: 33312
+{
+	// Fields
+	public string ItemNameToDequeue; // 0x10
+	public ItemPayloadBase ItemPayload; // 0x18
+	public IMergeItem MergeItem; // 0x20
+
+	// Methods
+
+	// RVA: 0x6A54EE8 Offset: 0x6A50EE8 VA: 0x6A54EE8
+	public void .ctor() { }
+}
+

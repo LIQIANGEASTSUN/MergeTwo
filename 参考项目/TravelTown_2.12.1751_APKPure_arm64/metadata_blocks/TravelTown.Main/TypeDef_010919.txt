@@ -1,0 +1,34 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class RepositoryBase.<>c__DisplayClass42_0<TRequest> // TypeDefIndex: 10919
+{
+	// Fields
+	public IPromise promise; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4B0AED4 Offset: 0x4B06ED4 VA: 0x4B0AED4
+	|-RepositoryBase.<>c__DisplayClass42_0<__Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal void <Delete>b__0(HttpResponse _) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4B0AEDC Offset: 0x4B06EDC VA: 0x4B0AEDC
+	|-RepositoryBase.<>c__DisplayClass42_0<__Il2CppFullySharedGenericType>.<Delete>b__0
+	*/
+
+	// RVA: -1 Offset: -1
+	internal void <Delete>b__1(Exception exception) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4B0AF80 Offset: 0x4B06F80 VA: 0x4B0AF80
+	|-RepositoryBase.<>c__DisplayClass42_0<__Il2CppFullySharedGenericType>.<Delete>b__1
+	*/
+}
+

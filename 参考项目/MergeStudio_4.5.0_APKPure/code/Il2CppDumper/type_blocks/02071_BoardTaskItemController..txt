@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardTaskItemController.<>c__DisplayClass114_0 // TypeDefIndex: 2071
+{
+	// Fields
+	public Action<bool> completion; // 0x8
+
+	// Methods
+
+	// RVA: 0x19745D0 Offset: 0x19745D0 VA: 0x19745D0
+	public void .ctor() { }
+
+	// RVA: 0x197551C Offset: 0x197551C VA: 0x197551C
+	internal void <PlayDisappearCharAnim>b__0(TrackEntry entry) { }
+}
+

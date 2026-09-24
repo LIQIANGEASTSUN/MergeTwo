@@ -1,0 +1,94 @@
+Type: GameLogic.Player.Items.Bubble.BubbleProgressionEventProgressBonus
+
+Method: Code.GameLogic.GameEvents.ProgressionEventId get_EventId()
+
+Disassembly:
+	0x03648AEC BL 0x44E8DEC
+	0x03648AF0 CBZ X20, 0x3648C08
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_EventId(Code.GameLogic.GameEvents.ProgressionEventId value)
+
+Disassembly:
+	0x03648AF4 MOV X23, X20
+	0x03648AF8 MOV X1, X22
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Int32 get_Progress()
+
+Disassembly:
+	0x03648AFC STR X22, [X23 + 0x10]!
+	0x03648B00 MOV X0, X23
+
+ISIL:
+	001 Move W0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_Progress(System.Int32 value)
+
+Disassembly:
+	0x03648B04 BL 0x239B888
+	0x03648B08 STR X21, [X23 + 0x8]
+
+ISIL:
+	001 Move [X0+24], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03648B0C CBZ X19, 0x3648C08
+	0x03648B10 ADRP X10, 0x208C000
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(Code.GameLogic.GameEvents.ProgressionEventId eventId, System.Int32 progress)
+
+Disassembly:
+	0x03648B14 ADRP X25, 0x20EA000
+	0x03648B18 ADRP X21, 0x20EA000
+	0x03648B1C LDR X10, [X10 + 0xD60]
+	0x03648B20 LDR X25, [X25 + 0x5E8]
+	0x03648B24 LDR X21, [X21 + 0x5F0]
+	0x03648B28 LDR X8, [X19]
+	0x03648B2C ADRP X24, 0x20EA000
+	0x03648B30 ADRP X23, 0x2088000
+	0x03648B34 ADRP X22, 0x20EA000
+	0x03648B38 LDR X24, [X24 + 0x5E0]
+	0x03648B3C LDR X23, [X23 + 0xF08]
+	0x03648B40 LDRH W9, [X8 + 0x12E]
+	0x03648B44 LDR X22, [X22 + 0x5F8]
+	0x03648B48 LDR X1, [X10]
+	0x03648B4C CBZ X9, 0x3648B70
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move X20, X1
+	006 Move X1, X31
+	007 Move W19, W2
+	008 Move X21, X0
+	009 Call Object..ctor, X0
+	010 Move [X21+16], X20
+	011 Move X0, X21
+	012 Move X1, X20
+	013 Call 0x239F888
+	014 Move [X21+8], W19
+	015 Move X20, [X31+16]
+	016 Move X19, [X31+24]
+	017 Move X30, [X31+32]
+	018 Move X21, [X31+40]
+	019 Return 
+

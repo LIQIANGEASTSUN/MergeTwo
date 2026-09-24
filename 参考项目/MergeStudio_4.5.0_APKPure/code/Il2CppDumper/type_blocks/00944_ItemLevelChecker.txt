@@ -1,0 +1,19 @@
+// Namespace: Paxie.MergeStudio.GameCore.Gameplay.Board
+public class ItemLevelChecker // TypeDefIndex: 944
+{
+	// Fields
+	private readonly BoardEntity _boardEntity; // 0x8
+	private readonly BoardData _boardData; // 0xC
+
+	// Methods
+
+	// RVA: 0x178EEA0 Offset: 0x178EEA0 VA: 0x178EEA0
+	public void .ctor(BoardEntity boardEntity, BoardData boardData) { }
+
+	// RVA: 0x178EEDC Offset: 0x178EEDC VA: 0x178EEDC
+	public Dictionary<int, ItemSetLevelAvailability> GetDetailedAvailableLevels() { }
+
+	// RVA: 0x178F600 Offset: 0x178F600 VA: 0x178F600
+	private void CalculateAvailableThroughMerging(ItemSetLevelAvailability itemSetLevelAvailability) { }
+}
+

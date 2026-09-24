@@ -1,0 +1,24 @@
+// Namespace: MergePuzzle
+public interface IBoardItemCurrencyHandler : IBoardItemAnimationHandler, IBoardItemHandler, IFeatureHandler // TypeDefIndex: 1497
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void CurrencyClicked(ItemRuntimeData itemRuntimeData);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract int GetCurrencyProgressPerLevel(int level);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract int GetCurrencySetID();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract BoardItemSetData GetCurrencySet();
+
+	// RVA: 0x186A28C Offset: 0x186A28C VA: 0x186A28C Slot: 4
+	public virtual Sprite GetLevelCurrencyImage() { }
+
+	// RVA: 0x186A348 Offset: 0x186A348 VA: 0x186A348 Slot: 5
+	public virtual BoardItemData GetLevel1ItemData() { }
+}
+

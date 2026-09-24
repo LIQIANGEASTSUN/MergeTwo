@@ -1,0 +1,8 @@
+// Namespace: 
+public struct BoardEvent.RewardBoosterArrived : IEvent // TypeDefIndex: 1826
+{
+	// Fields
+	public int ID; // 0x0
+	public bool UpdateAll; // 0x4
+}
+

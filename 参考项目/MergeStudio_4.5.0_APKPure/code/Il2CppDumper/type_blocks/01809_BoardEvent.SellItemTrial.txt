@@ -1,0 +1,8 @@
+// Namespace: 
+public struct BoardEvent.SellItemTrial : IEvent // TypeDefIndex: 1809
+{
+	// Fields
+	public ItemController Item; // 0x0
+	public bool IsNotSellable; // 0x4
+}
+

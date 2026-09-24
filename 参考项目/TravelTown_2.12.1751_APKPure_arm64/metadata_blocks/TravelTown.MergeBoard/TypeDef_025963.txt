@@ -1,0 +1,57 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class ItemSelectionBoxPendingPickResult // TypeDefIndex: 25963
+{
+	// Fields
+	[CompilerGenerated]
+	private string <Uuid>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private int <BoardPosition>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private IMergeItem <MergeItem>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private Entity <Entity>k__BackingField; // 0x28
+
+	// Properties
+	public string Uuid { get; set; }
+	public int BoardPosition { get; set; }
+	public IMergeItem MergeItem { get; set; }
+	public Entity Entity { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A94C Offset: 0x6A9694C VA: 0x6A9A94C
+	public string get_Uuid() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A954 Offset: 0x6A96954 VA: 0x6A9A954
+	public void set_Uuid(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A95C Offset: 0x6A9695C VA: 0x6A9A95C
+	public int get_BoardPosition() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A964 Offset: 0x6A96964 VA: 0x6A9A964
+	public void set_BoardPosition(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A96C Offset: 0x6A9696C VA: 0x6A9A96C
+	public IMergeItem get_MergeItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A974 Offset: 0x6A96974 VA: 0x6A9A974
+	public void set_MergeItem(IMergeItem value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A97C Offset: 0x6A9697C VA: 0x6A9A97C
+	public Entity get_Entity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A984 Offset: 0x6A96984 VA: 0x6A9A984
+	public void set_Entity(Entity value) { }
+
+	// RVA: 0x6A9A98C Offset: 0x6A9698C VA: 0x6A9A98C
+	public void .ctor() { }
+}
+

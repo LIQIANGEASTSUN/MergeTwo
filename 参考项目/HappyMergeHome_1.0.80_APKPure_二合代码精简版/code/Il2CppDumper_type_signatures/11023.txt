@@ -1,0 +1,42 @@
+// Namespace: DragonU3DSDK.Storage
+[Serializable]
+public class StorageMergeUnlockItem : StorageBase // TypeDefIndex: 11023
+{
+	// Fields
+	[JsonProperty]
+	private StorageList<int> unlockIds; // 0x8
+	[JsonProperty]
+	private StorageList<int> unlockLines; // 0xC
+	[JsonProperty]
+	private StorageList<int> galleryAwarded; // 0x10
+	[JsonProperty]
+	private StorageDictionary<int, int> gainItemIds; // 0x14
+
+	// Properties
+	[JsonIgnore]
+	public StorageList<int> UnlockIds { get; }
+	[JsonIgnore]
+	public StorageList<int> UnlockLines { get; }
+	[JsonIgnore]
+	public StorageList<int> GalleryAwarded { get; }
+	[JsonIgnore]
+	public StorageDictionary<int, int> GainItemIds { get; }
+
+	// Methods
+
+	// RVA: 0x26E7FC4 Offset: 0x26E7FC4 VA: 0x26E7FC4
+	public StorageList<int> get_UnlockIds() { }
+
+	// RVA: 0x26E7FCC Offset: 0x26E7FCC VA: 0x26E7FCC
+	public StorageList<int> get_UnlockLines() { }
+
+	// RVA: 0x26E7FD4 Offset: 0x26E7FD4 VA: 0x26E7FD4
+	public StorageList<int> get_GalleryAwarded() { }
+
+	// RVA: 0x26E7FDC Offset: 0x26E7FDC VA: 0x26E7FDC
+	public StorageDictionary<int, int> get_GainItemIds() { }
+
+	// RVA: 0x26E5D20 Offset: 0x26E5D20 VA: 0x26E5D20
+	public void .ctor() { }
+}
+

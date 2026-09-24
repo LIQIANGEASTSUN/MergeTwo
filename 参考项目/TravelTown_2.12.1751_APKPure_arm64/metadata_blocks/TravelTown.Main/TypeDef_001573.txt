@@ -1,0 +1,122 @@
+// Namespace: GameCore.Configuration.WeakReferences
+[Serializable]
+public abstract class WeakReference<TAsset, TKey> : WeakReferenceBase // TypeDefIndex: 1573
+{
+	// Fields
+	[SerializeField]
+	[HideInInspector]
+	[JsonProperty]
+	protected TKey _uniqueId; // 0x0
+	protected TAsset asset; // 0x0
+
+	// Properties
+	internal virtual bool Resolved { get; }
+	[JsonIgnore]
+	public virtual TKey UniqueId { get; set; }
+	[JsonIgnore]
+	public virtual TAsset Asset { get; }
+	[JsonIgnore]
+	public override bool HasReference { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 8
+	internal virtual bool get_Resolved() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4942048 Offset: 0x493E048 VA: 0x4942048
+	|-WeakReference<object, object>.get_Resolved
+	|
+	|-RVA: 0x4942360 Offset: 0x493E360 VA: 0x4942360
+	|-WeakReference<object, __Il2CppFullySharedGenericType>.get_Resolved
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public virtual TKey get_UniqueId() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4942058 Offset: 0x493E058 VA: 0x4942058
+	|-WeakReference<object, object>.get_UniqueId
+	|
+	|-RVA: 0x4942390 Offset: 0x493E390 VA: 0x4942390
+	|-WeakReference<object, __Il2CppFullySharedGenericType>.get_UniqueId
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public virtual void set_UniqueId(TKey value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4942060 Offset: 0x493E060 VA: 0x4942060
+	|-WeakReference<object, object>.set_UniqueId
+	|
+	|-RVA: 0x494242C Offset: 0x493E42C VA: 0x494242C
+	|-WeakReference<object, __Il2CppFullySharedGenericType>.set_UniqueId
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public virtual TAsset get_Asset() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4942080 Offset: 0x493E080 VA: 0x4942080
+	|-WeakReference<object, object>.get_Asset
+	|
+	|-RVA: 0x4942504 Offset: 0x493E504 VA: 0x4942504
+	|-WeakReference<object, __Il2CppFullySharedGenericType>.get_Asset
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public override bool get_HasReference() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4942118 Offset: 0x493E118 VA: 0x4942118
+	|-WeakReference<object, object>.get_HasReference
+	|
+	|-RVA: 0x49425BC Offset: 0x493E5BC VA: 0x49425BC
+	|-WeakReference<object, __Il2CppFullySharedGenericType>.get_HasReference
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void .ctor(TKey uniqueId) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4942140 Offset: 0x493E140 VA: 0x4942140
+	|-WeakReference<object, object>..ctor
+	|
+	|-RVA: 0x49425E4 Offset: 0x493E5E4 VA: 0x49425E4
+	|-WeakReference<object, __Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4942170 Offset: 0x493E170 VA: 0x4942170
+	|-WeakReference<object, object>..ctor
+	|
+	|-RVA: 0x49426B4 Offset: 0x493E6B4 VA: 0x49426B4
+	|-WeakReference<object, __Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public override void Resolve(IWeakReferenceAssetsProvider assetProvider) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4942178 Offset: 0x493E178 VA: 0x4942178
+	|-WeakReference<object, object>.Resolve
+	|
+	|-RVA: 0x49426BC Offset: 0x493E6BC VA: 0x49426BC
+	|-WeakReference<object, __Il2CppFullySharedGenericType>.Resolve
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public override void Dispose() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4942358 Offset: 0x493E358 VA: 0x4942358
+	|-WeakReference<object, object>.Dispose
+	|
+	|-RVA: 0x4942928 Offset: 0x493E928 VA: 0x4942928
+	|-WeakReference<object, __Il2CppFullySharedGenericType>.Dispose
+	*/
+}
+

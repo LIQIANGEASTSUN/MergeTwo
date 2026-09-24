@@ -1,0 +1,9 @@
+// Namespace: 
+public struct TaskEvent.RefreshScrollableArea : IEvent // TypeDefIndex: 1996
+{
+	// Fields
+	public ScrollableItem Item; // 0x0
+	public int BoardTaskNo; // 0x4
+	public bool RefreshImmediate; // 0x8
+}
+

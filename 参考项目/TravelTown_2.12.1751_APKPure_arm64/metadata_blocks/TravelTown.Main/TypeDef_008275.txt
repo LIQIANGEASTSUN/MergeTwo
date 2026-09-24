@@ -1,0 +1,114 @@
+// Namespace: Merger.Game.ViewModel
+public class BoardViewModel : GameBaseViewModel // TypeDefIndex: 8275
+{
+	// Fields
+	[CompilerGenerated]
+	private Action SelectedItemSold; // 0xD0
+	[Inject]
+	public IPlayerModel PlayerModel; // 0xD8
+	[Inject]
+	private ISystemManager _systemManager; // 0xE0
+	[Inject]
+	private IViewRegistryModel _viewRegistryModel; // 0xE8
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0xF0
+	[Inject]
+	private IBoardItemViewBehaviourFactory _boardItemViewBehaviourFactory; // 0xF8
+	[Inject]
+	private IBoardItemBehavioursConfigurationModel _boardItemBehavioursConfigurationModel; // 0x100
+	[Inject]
+	private ICoreBoardTogglesModel _coreBoardTogglesModel; // 0x108
+	[Inject]
+	private IMergingHudLayoutModel _mergingHudLayoutModel; // 0x110
+	public MutableBindableProperty<bool> Enabled; // 0x118
+	private OrdersSystem _ordersSystem; // 0x120
+	private PowerBoostSystem _powerBoostSystem; // 0x128
+
+	// Properties
+	public bool IsLiveMergingHudLayoutRefreshEnabled { get; }
+	public GameObject BoardItemView2Prefab { get; }
+	public GameObject InitializablePool { get; }
+	public PowerBoostMultiModesConfig CurrentPowerBoostConfig { get; }
+	public bool IsNewCoreBoardBackgroundAndBlockersEnabled { get; }
+	public bool IsMainBoard { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x66240EC Offset: 0x66200EC VA: 0x66240EC
+	public void add_SelectedItemSold(Action value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6624188 Offset: 0x6620188 VA: 0x6624188
+	public void remove_SelectedItemSold(Action value) { }
+
+	// RVA: 0x6624224 Offset: 0x6620224 VA: 0x6624224
+	public bool get_IsLiveMergingHudLayoutRefreshEnabled() { }
+
+	// RVA: 0x66242C4 Offset: 0x66202C4 VA: 0x66242C4
+	public GameObject get_BoardItemView2Prefab() { }
+
+	// RVA: 0x6624368 Offset: 0x6620368 VA: 0x6624368
+	public GameObject get_InitializablePool() { }
+
+	// RVA: 0x662440C Offset: 0x662040C VA: 0x662440C
+	public PowerBoostMultiModesConfig get_CurrentPowerBoostConfig() { }
+
+	// RVA: 0x6624488 Offset: 0x6620488 VA: 0x6624488
+	public bool get_IsNewCoreBoardBackgroundAndBlockersEnabled() { }
+
+	// RVA: 0x662452C Offset: 0x662052C VA: 0x662452C
+	public bool get_IsMainBoard() { }
+
+	// RVA: 0x66245F0 Offset: 0x66205F0 VA: 0x66245F0
+	public void RegisterView(IBoardView boardView) { }
+
+	// RVA: 0x66246B0 Offset: 0x66206B0 VA: 0x66246B0
+	public void SubscribeToCurrentBoardTypeChanged(Action<CurrentBoardType> listener) { }
+
+	// RVA: 0x662477C Offset: 0x662077C VA: 0x662477C
+	public void UnsubscribeFromCurrentBoardTypeChanged(Action<CurrentBoardType> listener) { }
+
+	// RVA: 0x6624848 Offset: 0x6620848 VA: 0x6624848 Slot: 4
+	protected override void SubscribeToSignals() { }
+
+	// RVA: 0x662495C Offset: 0x662095C VA: 0x662495C
+	private void SellSelectedItemSignalFired() { }
+
+	// RVA: 0x6624978 Offset: 0x6620978 VA: 0x6624978 Slot: 5
+	protected override void UnsubscribeFromSignals() { }
+
+	// RVA: 0x6624A8C Offset: 0x6620A8C VA: 0x6624A8C
+	private void OnToggleBoard(ToggleDisableBoardSignal signal) { }
+
+	// RVA: 0x6624AE8 Offset: 0x6620AE8 VA: 0x6624AE8
+	public void TryStartTutorial() { }
+
+	// RVA: 0x6624BAC Offset: 0x6620BAC VA: 0x6624BAC
+	public void ChangeGameStateToMerging(string enterStateReason) { }
+
+	// RVA: 0x6624D98 Offset: 0x6620D98 VA: 0x6624D98
+	public void ChangeGameStateToOther() { }
+
+	// RVA: 0x6624E60 Offset: 0x6620E60 VA: 0x6624E60
+	public void UnregisterView(IBoardView boardView) { }
+
+	// RVA: 0x6624F20 Offset: 0x6620F20 VA: 0x6624F20
+	public void PlayFlyTimers(Vector2 position, Action boosterPulse, Action boosterUnlock, Action onFinish) { }
+
+	// RVA: 0x6624C84 Offset: 0x6620C84 VA: 0x6624C84
+	private void SendCoreBoardEnteredAnalytic(string enterStateReason) { }
+
+	// RVA: 0x6624FF0 Offset: 0x6620FF0 VA: 0x6624FF0
+	public void AttachBehaviours(Entity entity, BoardItemView2 boardItemView2) { }
+
+	// RVA: 0x66250A8 Offset: 0x66210A8 VA: 0x66250A8
+	public IReadOnlyDictionary<BehaviourPrefabData, InstantiationType> GetBehaviourInstantiationTypeByData() { }
+
+	// RVA: 0x6625148 Offset: 0x6621148 VA: 0x6625148
+	public IReadOnlyDictionary<string, BehaviourPrefabData> GetBehaviourDataByType() { }
+
+	// RVA: 0x66251EC Offset: 0x66211EC VA: 0x66251EC
+	public void .ctor() { }
+}
+

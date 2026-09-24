@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class MiniBoardHandlerBase.<>c // TypeDefIndex: 1031
+{
+	// Fields
+	public static readonly MiniBoardHandlerBase.<>c <>9; // 0x0
+	public static Func<MiniBoardRewardEntity, bool> <>9__56_0; // 0x4
+
+	// Methods
+
+	// RVA: 0x17ACEEC Offset: 0x17ACEEC VA: 0x17ACEEC
+	private static void .cctor() { }
+
+	// RVA: 0x17ACF60 Offset: 0x17ACF60 VA: 0x17ACF60
+	public void .ctor() { }
+
+	// RVA: 0x17ACF68 Offset: 0x17ACF68 VA: 0x17ACF68
+	internal bool <GetRewardAreaInfoForNoticePopup>b__56_0(MiniBoardRewardEntity item) { }
+}
+

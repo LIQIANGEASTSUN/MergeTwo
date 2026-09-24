@@ -1,0 +1,53 @@
+// Namespace: 
+[Serializable]
+public class SummerWatermelonTwentyFiveProductAttenuationConfig : TableBase // TypeDefIndex: 1357
+{
+	// Fields
+	[CompilerGenerated]
+	private int <Id>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private int <ProductCount>k__BackingField; // 0xC
+	[CompilerGenerated]
+	private float <TotalWeightMulti>k__BackingField; // 0x10
+
+	// Properties
+	public int Id { get; set; }
+	public int ProductCount { get; set; }
+	public float TotalWeightMulti { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x2144CF8 Offset: 0x2144CF8 VA: 0x2144CF8
+	public int get_Id() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2144D00 Offset: 0x2144D00 VA: 0x2144D00
+	public void set_Id(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2144D08 Offset: 0x2144D08 VA: 0x2144D08
+	public int get_ProductCount() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2144D10 Offset: 0x2144D10 VA: 0x2144D10
+	public void set_ProductCount(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2144D18 Offset: 0x2144D18 VA: 0x2144D18
+	public float get_TotalWeightMulti() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2144D20 Offset: 0x2144D20 VA: 0x2144D20
+	public void set_TotalWeightMulti(float value) { }
+
+	// RVA: 0x2144D28 Offset: 0x2144D28 VA: 0x2144D28 Slot: 4
+	public override int GetID() { }
+
+	// RVA: 0x2144D7C Offset: 0x2144D7C VA: 0x2144D7C
+	public void .ctor() { }
+
+	// RVA: 0x2144D84 Offset: 0x2144D84 VA: 0x2144D84
+	public int <>iFixBaseProxy_GetID() { }
+}
+

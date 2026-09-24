@@ -1,0 +1,15 @@
+// Namespace: Order.Order.Creator
+public class CreatorMergeLineFix // TypeDefIndex: 3002
+{
+	// Fields
+	private const OrderType _orgType = 70;
+
+	// Methods
+
+	// RVA: 0x2D76A60 Offset: 0x2D76A60 VA: 0x2D76A60
+	public static StorageOrderItem TryCreateOrder(int mergeId) { }
+
+	// RVA: 0x2D76F44 Offset: 0x2D76F44 VA: 0x2D76F44
+	public void .ctor() { }
+}
+

@@ -1,0 +1,18 @@
+// Namespace: Merger.MergeBoardSellItemCapability.Logic
+public class BoardSellItemOperationDataCreator : BoardOperationDataCreator // TypeDefIndex: 33597
+{
+	// Properties
+	public override string OperationType { get; }
+
+	// Methods
+
+	// RVA: 0x6A6045C Offset: 0x6A5C45C VA: 0x6A6045C Slot: 7
+	public override string get_OperationType() { }
+
+	// RVA: 0x6A6049C Offset: 0x6A5C49C VA: 0x6A6049C Slot: 6
+	public override List<MergeBoardItemNotificationData> CreateOperationData(TickArgs tickArgs) { }
+
+	// RVA: 0x6A6088C Offset: 0x6A5C88C VA: 0x6A6088C
+	public void .ctor() { }
+}
+

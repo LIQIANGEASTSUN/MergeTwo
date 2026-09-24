@@ -1,0 +1,20 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MiniBoardItemController.<>c__DisplayClass154_0 // TypeDefIndex: 1125
+{
+	// Fields
+	public MiniBoardItemController <>4__this; // 0x8
+	public Vector3 transformPosition; // 0xC
+
+	// Methods
+
+	// RVA: 0x17C2104 Offset: 0x17C2104 VA: 0x17C2104
+	public void .ctor() { }
+
+	// RVA: 0x17C44D8 Offset: 0x17C44D8 VA: 0x17C44D8
+	internal bool <DragStopped>b__0(MiniBoardCellController cellItem) { }
+
+	// RVA: 0x17C45B4 Offset: 0x17C45B4 VA: 0x17C45B4
+	internal int <DragStopped>b__1(MiniBoardCellController item1, MiniBoardCellController item2) { }
+}
+

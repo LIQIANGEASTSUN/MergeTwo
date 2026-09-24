@@ -1,0 +1,15 @@
+// Namespace: MergeEngine.ECS.Util
+public static class ComponentCacheUtil // TypeDefIndex: 604
+{
+	// Fields
+	private static Dictionary<Type, List<Type>> _subtypeReflectionCache; // 0x0
+
+	// Methods
+
+	// RVA: 0x6270A60 Offset: 0x626CA60 VA: 0x6270A60
+	public static List<Type> GetTypesToCacheAs(Type componentType) { }
+
+	// RVA: 0x6270DD4 Offset: 0x626CDD4 VA: 0x6270DD4
+	private static void .cctor() { }
+}
+

@@ -1,0 +1,7 @@
+// Namespace: 
+public struct TaskEvent.TaskDoneNewTasksAppeared : IEvent // TypeDefIndex: 2007
+{
+	// Fields
+	public BoardTaskItem CompletedTask; // 0x0
+}
+

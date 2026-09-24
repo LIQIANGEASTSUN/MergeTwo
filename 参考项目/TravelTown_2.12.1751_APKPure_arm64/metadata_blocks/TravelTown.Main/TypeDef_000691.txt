@@ -1,0 +1,47 @@
+// Namespace: MergeEngine.ECS.Systems
+public abstract class TickableSystem<TComponent> : SystemBase, ITickableSystem // TypeDefIndex: 691
+{
+	// Properties
+	public abstract SystemPriorities Priority { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public abstract SystemPriorities get_Priority();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-TickableSystem<__Il2CppFullySharedGenericType>.get_Priority
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 14
+	private void MergeEngine.ECS.Systems.ITickableSystem.Tick() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x45F03B0 Offset: 0x45EC3B0 VA: 0x45F03B0
+	|-TickableSystem<object>.MergeEngine.ECS.Systems.ITickableSystem.Tick
+	|
+	|-RVA: 0x45F042C Offset: 0x45EC42C VA: 0x45F042C
+	|-TickableSystem<__Il2CppFullySharedGenericType>.MergeEngine.ECS.Systems.ITickableSystem.Tick
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 16
+	protected abstract void ProcessComponents(ReadOnlyCollection<TComponent> components);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-TickableSystem<__Il2CppFullySharedGenericType>.ProcessComponents
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x45F0424 Offset: 0x45EC424 VA: 0x45F0424
+	|-TickableSystem<object>..ctor
+	|
+	|-RVA: 0x45F04A8 Offset: 0x45EC4A8 VA: 0x45F04A8
+	|-TickableSystem<__Il2CppFullySharedGenericType>..ctor
+	*/
+}
+

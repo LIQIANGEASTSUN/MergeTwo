@@ -1,0 +1,15 @@
+// Namespace: 
+private class PushedGraphItemsModel.PushedGraphItem // TypeDefIndex: 479
+{
+	// Fields
+	public string PushNotificationId; // 0x10
+	public string ItemId; // 0x18
+	public int MinLevelInGraph; // 0x20
+	public string PushType; // 0x28
+
+	// Methods
+
+	// RVA: 0x612E0A0 Offset: 0x612A0A0 VA: 0x612E0A0
+	public void .ctor() { }
+}
+

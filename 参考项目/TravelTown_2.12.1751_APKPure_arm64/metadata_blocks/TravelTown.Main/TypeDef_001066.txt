@@ -1,0 +1,69 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public interface ILocked // TypeDefIndex: 1066
+{
+	// Properties
+	public abstract bool Locked { get; }
+	public abstract bool Boxed { get; }
+	public abstract int LevelLock { get; }
+	public abstract bool LockedByLevel { get; }
+	public abstract bool AnyLock { get; }
+	public abstract bool LockedByTutorial { get; }
+	public abstract bool DragLocked { get; }
+	public abstract bool InteractionLocked { get; }
+	public abstract bool Bubbled { get; }
+	public abstract double BubbleTimeLeft { get; set; }
+	public abstract bool Meteor { get; }
+	public abstract bool LockedByNetworkOperation { get; set; }
+	public abstract int BlasterableTier { get; set; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract bool get_Locked();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract bool get_Boxed();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract int get_LevelLock();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract bool get_LockedByLevel();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract bool get_AnyLock();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract bool get_LockedByTutorial();
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract bool get_DragLocked();
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract bool get_InteractionLocked();
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract bool get_Bubbled();
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract double get_BubbleTimeLeft();
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public abstract void set_BubbleTimeLeft(double value);
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public abstract bool get_Meteor();
+
+	// RVA: -1 Offset: -1 Slot: 12
+	public abstract bool get_LockedByNetworkOperation();
+
+	// RVA: -1 Offset: -1 Slot: 13
+	public abstract void set_LockedByNetworkOperation(bool value);
+
+	// RVA: -1 Offset: -1 Slot: 14
+	public abstract int get_BlasterableTier();
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public abstract void set_BlasterableTier(int value);
+}
+

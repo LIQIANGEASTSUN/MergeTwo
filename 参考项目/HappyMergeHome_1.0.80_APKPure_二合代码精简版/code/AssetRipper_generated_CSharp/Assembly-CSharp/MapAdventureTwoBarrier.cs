@@ -1,0 +1,21 @@
+using System;
+
+[Serializable]
+public class MapAdventureTwoBarrier : TableBase
+{
+	public int Id { get; set; }
+
+	public int Index { get; set; }
+
+	public int BarrierItemId { get; set; }
+
+	public override int GetID()
+	{
+		return 0;
+	}
+
+	public int _003C_003EiFixBaseProxy_GetID()
+	{
+		return 0;
+	}
+}

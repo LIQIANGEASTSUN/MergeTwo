@@ -1,0 +1,27 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class SlotFullCounter // TypeDefIndex: 2701
+{
+	// Fields
+	public SlotFullCounter.BoardType BoardTypeTag; // 0x8
+	public List<SlotFull> SlotFulls; // 0xC
+
+	// Properties
+	public static SlotFullCounter MainBoard { get; }
+	public static SlotFullCounter MFSBoard { get; }
+
+	// Methods
+
+	// RVA: 0x1A5DE28 Offset: 0x1A5DE28 VA: 0x1A5DE28
+	public void .ctor(SlotFullCounter.BoardType boardTypeTag) { }
+
+	// RVA: 0x1A5C820 Offset: 0x1A5C820 VA: 0x1A5C820
+	public static SlotFullCounter get_MainBoard() { }
+
+	// RVA: 0x1A5C87C Offset: 0x1A5C87C VA: 0x1A5C87C
+	public static SlotFullCounter get_MFSBoard() { }
+
+	// RVA: 0x1A5E030 Offset: 0x1A5E030 VA: 0x1A5E030
+	public static SlotFullCounter GetSlotFullCounter(SlotFullCounter.BoardType boardType) { }
+}
+

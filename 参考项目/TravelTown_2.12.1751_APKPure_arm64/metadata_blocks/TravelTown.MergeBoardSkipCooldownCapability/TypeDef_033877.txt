@@ -1,0 +1,15 @@
+// Namespace: Merger.MergeBoardSkipCooldownCapability.Logic
+public class TimeCycleSkipCooldownStrategy : ISkipCooldownStrategy // TypeDefIndex: 33877
+{
+	// Methods
+
+	// RVA: 0x6A62D1C Offset: 0x6A5ED1C VA: 0x6A62D1C Slot: 4
+	public bool IsOnCooldown(Entity entity) { }
+
+	// RVA: 0x6A639A4 Offset: 0x6A5F9A4 VA: 0x6A639A4 Slot: 5
+	public double GetTimeLeft(Entity entity) { }
+
+	// RVA: 0x6A63A28 Offset: 0x6A5FA28 VA: 0x6A63A28
+	public void .ctor() { }
+}
+

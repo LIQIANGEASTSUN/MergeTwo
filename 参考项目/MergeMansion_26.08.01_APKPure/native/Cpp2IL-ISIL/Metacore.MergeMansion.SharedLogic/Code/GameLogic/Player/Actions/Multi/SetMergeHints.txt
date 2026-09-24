@@ -1,0 +1,147 @@
+Type: Code.GameLogic.Player.Actions.Multi.SetMergeHints
+
+Method: System.Boolean get_State()
+
+Disassembly:
+	0x037B1340 RET
+	0x037B1344 LDR X0, [X0 + 0x70]
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_State(System.Boolean value)
+
+Disassembly:
+	0x037B1348 RET
+	0x037B134C LDR X0, [X0 + 0xA8]
+
+ISIL:
+	001 Move [X0+16], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x037B1350 RET
+	0x037B1354 LDR X0, [X0 + 0x78]
+
+ISIL:
+	001 Move X1, X31
+	002 Call PlayerAction..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(System.Boolean state)
+
+Disassembly:
+	0x037B1358 RET
+	0x037B135C LDR X0, [X0 + 0x80]
+	0x037B1360 RET
+	0x037B1364 LDR W0, [X0 + 0x88]
+	0x037B1368 RET
+	0x037B136C LDRB W0, [X0 + 0x8C]
+	0x037B1370 RET
+	0x037B1374 SUB X31, X31, 0x30
+	0x037B1378 STP X30, X21, [X31 + 0x10]
+	0x037B137C STP X20, X19, [X31 + 0x20]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move W19, W1
+	005 Move X1, X31
+	006 Move X20, X0
+	007 Call PlayerAction..ctor, X0
+	008 Move [X20+16], W19
+	009 Move X20, [X31+16]
+	010 Move X19, [X31+24]
+	011 Move X30, [X31+32]
+	012 Return 
+
+Method: Metaplay.Core.Model.MetaActionResult Execute(GameLogic.Player.PlayerModel player, System.Boolean commit)
+
+Disassembly:
+	0x037B1380 ADRP X21, 0x2579000
+	0x037B1384 ADRP X20, 0x1F1D000
+	0x037B1388 MOV X19, X0
+	0x037B138C LDRB W8, [X21 + 0xCDC]
+	0x037B1390 LDR X20, [X20 + 0xCD0]
+	0x037B1394 TBNZ X8, 0x0, 0x37B13AC
+	0x037B1398 ADRP X0, 0x1F1D000
+	0x037B139C LDR X0, [X0 + 0xCD0]
+	0x037B13A0 BL 0x239B8E4
+	0x037B13A4 MOVZ W8, 0x1
+	0x037B13A8 STRB W8, [X21 + 0xCDC]
+	0x037B13AC LDR X8, [X20]
+	0x037B13B0 LDR X0, [X8 + 0x20]
+	0x037B13B4 LDR X8, [X19 + 0xB0]
+	0x037B13B8 LDRB W9, [X0 + 0x135]
+	0x037B13BC STR X8, [X31 + 0x8]
+	0x037B13C0 TBNZ X9, 0x0, 0x37B13C8
+	0x037B13C4 BL 0x23D4F40
+	0x037B13C8 LDR X8, [X0 + 0xC0]
+	0x037B13CC ADD X0, X31, 0x8
+	0x037B13D0 LDR X8, [X8 + 0x8]
+	0x037B13D4 LDR X1, [X8 + 0x80]
+	0x037B13D8 BL 0x239B90C
+	0x037B13DC LDP X20, X19, [X31 + 0x20]
+	0x037B13E0 LDRB W0, [X0]
+	0x037B13E4 LDP X30, X21, [X31 + 0x10]
+	0x037B13E8 ADD X31, X31, 0x30
+	0x037B13EC RET
+	0x037B13F0 SUB X31, X31, 0x40
+	0x037B13F4 STR X30, [X31 + 0x10]
+	0x037B13F8 STP X22, X21, [X31 + 0x20]
+	0x037B13FC STP X20, X19, [X31 + 0x30]
+	0x037B1400 ADRP X20, 0x2579000
+	0x037B1404 MOV X19, X0
+	0x037B1408 LDRB W8, [X20 + 0xCDD]
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31+16], X22
+	003 Move [X31+24], X21
+	004 Move [X31+32], X20
+	005 Move [X31+40], X19
+	006 Move W21, W2
+	007 Move X20, X1
+	008 Move W8, [0x257DCB4]
+	009 Move X19, X0
+	010 Move TEMP, X8
+	011 And TEMP, TEMP, 1
+	012 Compare TEMP, 1
+	013 JumpIfEqual {18}
+	014 Move X0, [0x1F297E0]
+	015 Call 0x239F8E4
+	016 Move W8, 1
+	017 Move [X22+3252], W8
+	018 Move TEMP, X21
+	019 And TEMP, TEMP, 1
+	020 Compare TEMP, 1
+	021 Invalid "Jump target not found in method."
+	022 Compare X20, 0
+	023 JumpIfEqual {45}
+	024 Move X0, [X20+512]
+	025 Compare X0, 0
+	026 JumpIfEqual {45}
+	027 Move W1, [X19+16]
+	028 Move X2, X31
+	029 Call GameSettings.SetMergeHintsOn, X0, X1
+	030 Move X19, [0x1F297E0]
+	031 Move X0, [X19]
+	032 Move W8, [X0+228]
+	033 Compare W8, 0
+	034 JumpIfNotEqual {37}
+	035 Call 0x239FA64
+	036 Move X0, [X19]
+	037 Move X8, [X0+184]
+	038 Move X20, [X31+32]
+	039 Move X19, [X31+40]
+	040 Move X22, [X31+16]
+	041 Move X21, [X31+24]
+	042 Move X0, [X8]
+	043 Move X30, [X31+48]
+	044 Return X0
+	045 Call 0x239FB90
+

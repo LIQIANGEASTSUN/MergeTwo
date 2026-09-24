@@ -1,0 +1,94 @@
+Type: Code.GameLogic.Player.Board.IWritableCustomMergeBoardsStateExtensions+<>c__DisplayClass0_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x037AE898 LDR X0, [X19]
+	0x037AE89C LDR W8, [X0 + 0xE4]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.ValueTuple`2<GameLogic.Player.Items.ItemDefinition, GameLogic.Merge.ItemVisibility> <AddMergeBoard>b__0(Code.GameLogic.GameEvents.BoardCell cell)
+
+Disassembly:
+	0x037AE964 MOV X20, X1
+	0x037AE968 MOV X19, X0
+	0x037AE96C TBNZ X8, 0x0, 0x37AE9A8
+	0x037AE970 ADRP X0, 0x1F38000
+	0x037AE974 LDR X0, [X0 + 0xF0]
+	0x037AE978 BL 0x239B8E4
+	0x037AE97C ADRP X0, 0x1F28000
+	0x037AE980 LDR X0, [X0 + 0x7E0]
+	0x037AE984 BL 0x239B8E4
+	0x037AE988 ADRP X0, 0x1F51000
+	0x037AE98C LDR X0, [X0 + 0x78]
+	0x037AE990 BL 0x239B8E4
+	0x037AE994 ADRP X0, 0x1F36000
+	0x037AE998 LDR X0, [X0 + 0x4A0]
+	0x037AE99C BL 0x239B8E4
+	0x037AE9A0 MOVZ W8, 0x1
+	0x037AE9A4 STRB W8, [X22 + 0xCBF]
+	0x037AE9A8 LDR X0, [X25]
+	0x037AE9AC ADRP X26, 0x1F36000
+	0x037AE9B0 LDR W8, [X0 + 0xE4]
+	0x037AE9B4 LDR X26, [X26 + 0x4A0]
+	0x037AE9B8 LDR X22, [X19 + 0x10]
+	0x037AE9BC CBNZ W8, 0x37AE9C8
+	0x037AE9C0 BL 0x239BA64
+	0x037AE9C4 LDR X0, [X25]
+	0x037AE9C8 LDR X8, [X26]
+	0x037AE9CC LDR X9, [X0 + 0xB8]
+	0x037AE9D0 ADRP X27, 0x1F51000
+	0x037AE9D4 LDR W10, [X8 + 0xE4]
+	0x037AE9D8 LDR X27, [X27 + 0x78]
+	0x037AE9DC LDR X23, [X9 + 0x648]
+	0x037AE9E0 CBNZ W10, 0x37AE9EC
+	0x037AE9E4 MOV X0, X8
+	0x037AE9E8 BL 0x239BA64
+
+ISIL:
+	001 Subtract X31, X31, 64
+	002 Move [X31+32], X30
+	003 Move [X31+40], X21
+	004 Move [X31+48], X20
+	005 Move [X31+56], X19
+	006 Move X19, X1
+	007 Move X20, X0
+	008 Move W8, [0x2580C9A]
+	009 Move TEMP, X8
+	010 And TEMP, TEMP, 1
+	011 Compare TEMP, 1
+	012 JumpIfEqual {17}
+	013 Move X0, [0x1F6DF78]
+	014 Call 0x239F8E4
+	015 Move W8, 1
+	016 Move [X21+3226], W8
+	017 Compare X19, 0
+	018 JumpIfEqual {41}
+	019 Move X2, X31
+	020 Move X21, [0x1F6DF78]
+	021 Move X0, [X20+16]
+	022 Move W1, [X19+16]
+	023 Call MergeMansionGameConfigExtensions.LookupItem, X0, X1
+	024 Move W8, [X19+20]
+	025 Move X3, [X21]
+	026 Move X1, X0
+	027 Add X0, X31, 8
+	028 Add X2, X31, 28
+	029 Move [X31+8], X31
+	030 Move [X31+16], X31
+	031 Move [X31+28], W8
+	032 Call 0x2853678, X0, X1, X2
+	033 Move X0, [X31+8]
+	034 Move X1, [X31+16]
+	035 Move X20, [X31+48]
+	036 Move X19, [X31+56]
+	037 Move X30, [X31+32]
+	038 Move X21, [X31+40]
+	039 Add X31, X31, 64
+	040 Return X0
+	041 Call 0x239FB90
+

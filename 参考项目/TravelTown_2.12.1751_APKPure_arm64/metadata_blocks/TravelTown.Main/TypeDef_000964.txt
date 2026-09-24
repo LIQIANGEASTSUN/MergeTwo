@@ -1,0 +1,90 @@
+// Namespace: MergeEngine.ECS.Systems.Items
+public class ExpendableSystem : BaseItemSystem<ExpendableComponent> // TypeDefIndex: 964
+{
+	// Fields
+	private const string TapReason = "tap";
+	private const string TimerReason = "timer";
+	[Inject]
+	private IRandomNumberModel _randomNumberModel; // 0x40
+	[Inject]
+	private INotificationDataFactory _notificationDataFactory; // 0x48
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x50
+	[InjectSystem]
+	private BoardSystem _boardSystem; // 0x58
+	[InjectSystem]
+	private ResourcesSystem _resourcesSystem; // 0x60
+	[InjectSystem]
+	private InteractionSystem _interactionSystem; // 0x68
+	[InjectSystem]
+	private OperationTrackingSystem _operationTrackingSystem; // 0x70
+	[InjectSystem]
+	private SpecialChainSequenceSystem _specialChainSequenceSystem; // 0x78
+	[InjectComponent]
+	private BoardItemCountComponent _boardItemCountComponent; // 0x80
+	[InjectComponent]
+	private InteractionTrackingComponent _interactionTrackingComponent; // 0x88
+	[Inject]
+	private IServerTimeService _serverTimeService; // 0x90
+
+	// Properties
+	private long CurrentServerTimeMS { get; }
+	public override SystemPriorities Priority { get; }
+
+	// Methods
+
+	// RVA: 0x678CFFC Offset: 0x6788FFC VA: 0x678CFFC
+	private long get_CurrentServerTimeMS() { }
+
+	// RVA: 0x678D09C Offset: 0x678909C VA: 0x678D09C Slot: 15
+	public override SystemPriorities get_Priority() { }
+
+	// RVA: 0x678D0A4 Offset: 0x67890A4 VA: 0x678D0A4 Slot: 17
+	protected override IEnumerable<ExpendableComponent> OnWillProcessComponents(ReadOnlyCollection<ExpendableComponent> components) { }
+
+	// RVA: 0x678D1C0 Offset: 0x67891C0 VA: 0x678D1C0 Slot: 18
+	protected override void ProcessComponent(ExpendableComponent expendableComponent) { }
+
+	// RVA: 0x678E128 Offset: 0x678A128 VA: 0x678E128
+	private void TrySpawnItems(ExpendableComponent expendableComponent, InteractionComponent interactionComponent, PositionComponent positionComponent, OperationContext operationContext, bool transformTimeLimited = False) { }
+
+	// RVA: 0x678DCDC Offset: 0x6789CDC VA: 0x678DCDC
+	private void TrySpawnParticles(ExpendableComponent expendableComponent, InteractionComponent interactionComponent, PositionComponent positionComponent) { }
+
+	// RVA: 0x678D9F4 Offset: 0x67899F4 VA: 0x678D9F4
+	private bool CanExpend(ExpendableComponent expendableComponent, PositionComponent positionComponent) { }
+
+	// RVA: 0x678E6E4 Offset: 0x678A6E4 VA: 0x678E6E4
+	private void SpawnItems(ExpendableComponent expendable, bool isTransformationByReason, string reason, int numItemsToSpawn, Func<BoardItemPosition> getPositionFunc, ItemOrigin itemOrigin, OperationContext operationContext, bool shouldHideTransformedItems, bool transformTimeLimited = False) { }
+
+	// RVA: 0x678E368 Offset: 0x678A368 VA: 0x678E368
+	private void SpawnItems(ExpendableComponent expendable, IList<EmptiableWeightedItemSpawnable> itemSpawnables, int numItemsToSpawn, Func<BoardItemPosition> getPositionFunc, ItemOrigin itemOrigin, OperationContext operationContext, bool transformTimeLimited = False) { }
+
+	// RVA: 0x678EB34 Offset: 0x678AB34 VA: 0x678EB34
+	private void SpawnItem(WeightedItemSpawnable itemSpawnable, ExpendableComponent expendable, Func<BoardItemPosition> getPositionFunc, ItemOrigin itemOrigin, OperationContext operationContext, bool shouldHideTransformedItems, bool transformTimeLimited = False) { }
+
+	// RVA: 0x678DE24 Offset: 0x6789E24 VA: 0x678DE24
+	private void TryTransformItem(ExpendableComponent expendableComponent, OperationContext operationContext, string reason, bool shouldHideTransformedItems, CombiningComponent combiningComponent, bool transformTimeLimited = False) { }
+
+	// RVA: 0x678F3D4 Offset: 0x678B3D4 VA: 0x678F3D4
+	private void SetExpendableTrackingData(ItemOrigin itemOrigin, WeightedItemSpawnable itemSpawnable, ExpendableComponent expendable) { }
+
+	// RVA: 0x678DC1C Offset: 0x6789C1C VA: 0x678DC1C
+	private void SetExpendableTrackingDataWithoutSpawn(ExpendableComponent expendable) { }
+
+	// RVA: 0x678F124 Offset: 0x678B124 VA: 0x678F124
+	private void UpdateProducersCreatedTimestamp(ExpendableComponent expandable, Entity spawnable) { }
+
+	// RVA: 0x678F5C0 Offset: 0x678B5C0 VA: 0x678F5C0 Slot: 12
+	protected override void EntityRemoved(Entity entity) { }
+
+	// RVA: 0x678FC10 Offset: 0x678BC10 VA: 0x678FC10
+	private void TransformTimeLimitedItem(ExpendableComponent expendableComponent, TimeLimitedActivationComponent timeLimitedComponent) { }
+
+	// RVA: 0x6790040 Offset: 0x678C040 VA: 0x6790040
+	private void SetTimeLimitedExtraData(TimeLimitedActivationComponent timeLimitedComponent, ExpendableComponent expendableComponent) { }
+
+	// RVA: 0x6790278 Offset: 0x678C278 VA: 0x6790278
+	public void .ctor() { }
+}
+

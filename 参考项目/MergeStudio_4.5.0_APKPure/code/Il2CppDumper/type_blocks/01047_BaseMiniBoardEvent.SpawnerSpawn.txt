@@ -1,0 +1,10 @@
+// Namespace: 
+public struct BaseMiniBoardEvent.SpawnerSpawn : IEvent // TypeDefIndex: 1047
+{
+	// Fields
+	public MiniBoardItemController Spawner; // 0x0
+	public BoardItemDefaultSpawner DefaultSpawnerData; // 0x4
+	public BoardItemAutoSpawner AutoSpawnerData; // 0x8
+	public Coordinate TargetPosition; // 0xC
+}
+

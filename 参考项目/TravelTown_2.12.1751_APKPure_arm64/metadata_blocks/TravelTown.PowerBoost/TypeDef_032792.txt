@@ -1,0 +1,50 @@
+// Namespace: Merger.MergeBoard.PowerBoost.Services
+public class PowerBoostPersistanceService : IPowerBoostPersistanceService, IDisposable // TypeDefIndex: 32792
+{
+	// Fields
+	[Inject]
+	private IPowerBoostModel _powerBoostModel; // 0x10
+	[Inject]
+	private IJsonService _jsonService; // 0x18
+	private string _id; // 0x20
+	private const string PowerBoostStorageKeyPrefix = "powerBoost";
+	private readonly IKeyValueStorage _keyValueStorage; // 0x28
+	private LocalPlayerPersistentPowerBoostData _localPlayerPersistentPowerBoostData; // 0x30
+	private Dictionary<int, bool> _boostTooltipShown; // 0x38
+
+	// Methods
+
+	// RVA: 0x6AD07A8 Offset: 0x6ACC7A8 VA: 0x6AD07A8 Slot: 4
+	public void Setup(string id) { }
+
+	// RVA: 0x6AD0B10 Offset: 0x6ACCB10 VA: 0x6AD0B10
+	private void SubscribeToStateChanges() { }
+
+	// RVA: 0x6AD0C2C Offset: 0x6ACCC2C VA: 0x6AD0C2C Slot: 9
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x6AD0D48 Offset: 0x6ACCD48 VA: 0x6AD0D48
+	private void OnPowerBoostModeChanged(int newValue) { }
+
+	// RVA: 0x6AD0950 Offset: 0x6ACC950 VA: 0x6AD0950
+	private void LoadData() { }
+
+	// RVA: 0x6AD0E68 Offset: 0x6ACCE68 VA: 0x6AD0E68
+	private void SaveData() { }
+
+	// RVA: 0x6AD1054 Offset: 0x6ACD054 VA: 0x6AD1054 Slot: 5
+	public bool IsBoostLocallyUnlocked(int boostMode) { }
+
+	// RVA: 0x6AD1114 Offset: 0x6ACD114 VA: 0x6AD1114 Slot: 6
+	public void MarkBoostAsUnlocked(int boostMode) { }
+
+	// RVA: 0x6AD1210 Offset: 0x6ACD210 VA: 0x6AD1210 Slot: 7
+	public bool WasTooltipShownForBoost(int boostMode) { }
+
+	// RVA: 0x6AD1288 Offset: 0x6ACD288 VA: 0x6AD1288 Slot: 8
+	public void MarkTooltipAsShownForBoost(int boostMode) { }
+
+	// RVA: 0x6AD12E4 Offset: 0x6ACD2E4 VA: 0x6AD12E4
+	public void .ctor() { }
+}
+

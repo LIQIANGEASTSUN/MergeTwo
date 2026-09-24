@@ -1,0 +1,30 @@
+// Namespace: Merger.Bubbles.Modifiers
+public class RareChainsBubbleDropProbabilityModifier : BubbleDropProbabilityModifierBase // TypeDefIndex: 7475
+{
+	// Fields
+	[Inject]
+	private IBubbledItemsConfigurationModel _bubbledItemsConfigurationModel; // 0x20
+
+	// Properties
+	public override bool IsEnabled { get; }
+	public override string AnalyticsString { get; }
+	private List<SmarterBubblesRareChainConfig> RareChainConfigs { get; }
+
+	// Methods
+
+	// RVA: 0x6581414 Offset: 0x657D414 VA: 0x6581414 Slot: 12
+	public override bool get_IsEnabled() { }
+
+	// RVA: 0x6581550 Offset: 0x657D550 VA: 0x6581550 Slot: 13
+	public override string get_AnalyticsString() { }
+
+	// RVA: 0x658149C Offset: 0x657D49C VA: 0x658149C
+	private List<SmarterBubblesRareChainConfig> get_RareChainConfigs() { }
+
+	// RVA: 0x65815A8 Offset: 0x657D5A8 VA: 0x65815A8 Slot: 15
+	public override void TryModifyProbability(ref float probability, IMergeItem mergeItem, SmarterBubblesCheatData cheatData) { }
+
+	// RVA: 0x6581794 Offset: 0x657D794 VA: 0x6581794
+	public void .ctor() { }
+}
+

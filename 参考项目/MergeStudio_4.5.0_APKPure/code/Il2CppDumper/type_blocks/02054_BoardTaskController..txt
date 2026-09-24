@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardTaskController.<>c__DisplayClass65_0 // TypeDefIndex: 2054
+{
+	// Fields
+	public ItemEntity itemEntity; // 0x8
+	public Predicate<BoardTaskGoal> <>9__0; // 0xC
+
+	// Methods
+
+	// RVA: 0x1960348 Offset: 0x1960348 VA: 0x1960348
+	public void .ctor() { }
+
+	// RVA: 0x1960350 Offset: 0x1960350 VA: 0x1960350
+	internal bool <IsItemInTask>b__0(BoardTaskGoal boardTaskItem) { }
+}
+

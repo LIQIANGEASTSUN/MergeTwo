@@ -1,0 +1,13 @@
+// Namespace: 
+private enum TimeLimitedItemsControllerCleanupHandler.CleanupState // TypeDefIndex: 32847
+{
+	// Fields
+	public int value__; // 0x0
+	public const TimeLimitedItemsControllerCleanupHandler.CleanupState NotStarted = 0;
+	public const TimeLimitedItemsControllerCleanupHandler.CleanupState Initiated = 1;
+	public const TimeLimitedItemsControllerCleanupHandler.CleanupState WaitingForBoardMiniGameStart = 2;
+	public const TimeLimitedItemsControllerCleanupHandler.CleanupState WaitingForBoardMiniGameCleanUp = 3;
+	public const TimeLimitedItemsControllerCleanupHandler.CleanupState InProgress = 4;
+	public const TimeLimitedItemsControllerCleanupHandler.CleanupState Completed = 5;
+}
+

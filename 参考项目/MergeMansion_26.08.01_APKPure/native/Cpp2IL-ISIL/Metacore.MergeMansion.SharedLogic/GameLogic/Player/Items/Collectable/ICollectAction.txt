@@ -1,0 +1,30 @@
+Type: GameLogic.Player.Items.Collectable.ICollectAction
+
+Method: System.Boolean CanBeCollected(GameLogic.Player.Items.Collectable.ICollectionContext collectionContext, GameLogic.Player.Items.IItemDefinition collectedItemDefinition, GameLogic.Player.Items.IMergeItem collectedMergeItem, GameLogic.Config.Types.MetacoreTime timestamp)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void Collect(GameLogic.Player.Items.Collectable.ICollectionContext collectionContext, GameLogic.Player.Board.Coordinate coordinate, GameLogic.Player.Items.IMergeItem collectedItem, GameLogic.Config.Types.MetacoreTime timestamp, System.Collections.Generic.ICollection`1<GameLogic.Merge.MergeBoardAct> collectedActs)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void CollectFromInventory(GameLogic.Player.Items.Collectable.ICollectionContext collectionContext, GameLogic.Player.Items.IMergeItem collectedItem, GameLogic.Config.Types.MetacoreTime timestamp)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void CollectFromPocket(GameLogic.Player.Items.Collectable.ICollectionContext collectionContext, GameLogic.Player.Items.IItemDefinition collectedItem, GameLogic.Config.Types.MetacoreTime timestamp)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

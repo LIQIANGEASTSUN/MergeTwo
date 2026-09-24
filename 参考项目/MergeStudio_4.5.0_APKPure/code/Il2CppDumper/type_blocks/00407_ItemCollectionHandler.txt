@@ -1,0 +1,319 @@
+// Namespace: Paxie.MergePuzzle.ItemCollections.Model
+public class ItemCollectionHandler : FeatureHandlerBase // TypeDefIndex: 407
+{
+	// Fields
+	[CompilerGenerated]
+	private KiteItemCollectionConfig <KiteItemCollectionConfig>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private BoardData <BoardData>k__BackingField; // 0x1C
+	[CompilerGenerated]
+	private BoardEntity <BoardEntity>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private bool <IsUnlocked>k__BackingField; // 0x24
+	[CompilerGenerated]
+	private SerializableDictionary<ItemInfo, ItemCollectionElement> <ItemElements>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private List<ItemInfo> <DiscoveredItemList>k__BackingField; // 0x2C
+	[CompilerGenerated]
+	private List<ItemInfo> <SeenElseWhereItemList>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private List<ItemInfo> <RewardClaimableItemList>k__BackingField; // 0x34
+	[CompilerGenerated]
+	private List<BoardItemCollectionData> <ItemCollectionDatas>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private List<ItemInfo> <AlwaysDiscoveryItems>k__BackingField; // 0x3C
+	[CompilerGenerated]
+	private ItemCollectionHandler.Delegates.Initialize <OnInitialize>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private ItemCollectionHandler.Delegates.UnLocked <OnUnLocked>k__BackingField; // 0x44
+	[CompilerGenerated]
+	private readonly bool <IsActive>k__BackingField; // 0x48
+
+	// Properties
+	private KiteItemCollectionConfig KiteItemCollectionConfig { get; set; }
+	public bool GemActive { get; }
+	public bool LockedActive { get; }
+	public BoardData BoardData { get; set; }
+	private BoardEntity BoardEntity { get; set; }
+	public bool IsUnlocked { get; set; }
+	public string BoardLabel { get; }
+	public SerializableDictionary<ItemInfo, ItemCollectionElement> ItemElements { get; set; }
+	public List<ItemInfo> DiscoveredItemList { get; set; }
+	public List<ItemInfo> SeenElseWhereItemList { get; set; }
+	public List<ItemInfo> RewardClaimableItemList { get; set; }
+	private List<BoardItemCollectionData> ItemCollectionDatas { get; set; }
+	private List<ItemInfo> AlwaysDiscoveryItems { get; set; }
+	public int UnlockedLevel { get; }
+	public ItemCollectionHandler.Delegates.Initialize OnInitialize { get; set; }
+	public ItemCollectionHandler.Delegates.UnLocked OnUnLocked { get; set; }
+	public List<int> LeftTopMostSortedRewardClaimableSetList { get; }
+	public override bool IsActive { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DE24 Offset: 0x1B9DE24 VA: 0x1B9DE24
+	private KiteItemCollectionConfig get_KiteItemCollectionConfig() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DE2C Offset: 0x1B9DE2C VA: 0x1B9DE2C
+	private void set_KiteItemCollectionConfig(KiteItemCollectionConfig value) { }
+
+	// RVA: 0x1B9DE34 Offset: 0x1B9DE34 VA: 0x1B9DE34
+	public bool get_GemActive() { }
+
+	// RVA: 0x1B9DE50 Offset: 0x1B9DE50 VA: 0x1B9DE50
+	public bool get_LockedActive() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DE6C Offset: 0x1B9DE6C VA: 0x1B9DE6C
+	public BoardData get_BoardData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DE74 Offset: 0x1B9DE74 VA: 0x1B9DE74
+	public void set_BoardData(BoardData value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DE7C Offset: 0x1B9DE7C VA: 0x1B9DE7C
+	private BoardEntity get_BoardEntity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DE84 Offset: 0x1B9DE84 VA: 0x1B9DE84
+	private void set_BoardEntity(BoardEntity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DE8C Offset: 0x1B9DE8C VA: 0x1B9DE8C
+	public bool get_IsUnlocked() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DE94 Offset: 0x1B9DE94 VA: 0x1B9DE94
+	private void set_IsUnlocked(bool value) { }
+
+	// RVA: 0x1B9DE9C Offset: 0x1B9DE9C VA: 0x1B9DE9C
+	public string get_BoardLabel() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DEC0 Offset: 0x1B9DEC0 VA: 0x1B9DEC0
+	public SerializableDictionary<ItemInfo, ItemCollectionElement> get_ItemElements() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DEC8 Offset: 0x1B9DEC8 VA: 0x1B9DEC8
+	public void set_ItemElements(SerializableDictionary<ItemInfo, ItemCollectionElement> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DED0 Offset: 0x1B9DED0 VA: 0x1B9DED0
+	public List<ItemInfo> get_DiscoveredItemList() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DED8 Offset: 0x1B9DED8 VA: 0x1B9DED8
+	public void set_DiscoveredItemList(List<ItemInfo> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DEE0 Offset: 0x1B9DEE0 VA: 0x1B9DEE0
+	public List<ItemInfo> get_SeenElseWhereItemList() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DEE8 Offset: 0x1B9DEE8 VA: 0x1B9DEE8
+	public void set_SeenElseWhereItemList(List<ItemInfo> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DEF0 Offset: 0x1B9DEF0 VA: 0x1B9DEF0
+	public List<ItemInfo> get_RewardClaimableItemList() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DEF8 Offset: 0x1B9DEF8 VA: 0x1B9DEF8
+	public void set_RewardClaimableItemList(List<ItemInfo> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DF00 Offset: 0x1B9DF00 VA: 0x1B9DF00
+	private List<BoardItemCollectionData> get_ItemCollectionDatas() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DF08 Offset: 0x1B9DF08 VA: 0x1B9DF08
+	private void set_ItemCollectionDatas(List<BoardItemCollectionData> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DF10 Offset: 0x1B9DF10 VA: 0x1B9DF10
+	private List<ItemInfo> get_AlwaysDiscoveryItems() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DF18 Offset: 0x1B9DF18 VA: 0x1B9DF18
+	private void set_AlwaysDiscoveryItems(List<ItemInfo> value) { }
+
+	// RVA: 0x1B9B544 Offset: 0x1B9B544 VA: 0x1B9B544
+	public int get_UnlockedLevel() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DF20 Offset: 0x1B9DF20 VA: 0x1B9DF20
+	public ItemCollectionHandler.Delegates.Initialize get_OnInitialize() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DF28 Offset: 0x1B9DF28 VA: 0x1B9DF28
+	public void set_OnInitialize(ItemCollectionHandler.Delegates.Initialize value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DF30 Offset: 0x1B9DF30 VA: 0x1B9DF30
+	public ItemCollectionHandler.Delegates.UnLocked get_OnUnLocked() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DF38 Offset: 0x1B9DF38 VA: 0x1B9DF38
+	public void set_OnUnLocked(ItemCollectionHandler.Delegates.UnLocked value) { }
+
+	// RVA: 0x1B9DF40 Offset: 0x1B9DF40 VA: 0x1B9DF40
+	public List<int> get_LeftTopMostSortedRewardClaimableSetList() { }
+
+	// RVA: 0x1B9E1AC Offset: 0x1B9E1AC VA: 0x1B9E1AC
+	public void .ctor() { }
+
+	// RVA: 0x1B9E1B4 Offset: 0x1B9E1B4 VA: 0x1B9E1B4
+	public void .ctor(KiteItemCollectionConfig kiteItemCollectionConfig, BoardData boardData, BoardEntity boardEntity, List<BoardItemCollectionData> itemCollectionDatas, List<ItemInfo> alwaysDiscoveryItems) { }
+
+	// RVA: 0x1B9E2AC Offset: 0x1B9E2AC VA: 0x1B9E2AC
+	private void CreateItemCollectionElements() { }
+
+	// RVA: 0x1B9F194 Offset: 0x1B9F194 VA: 0x1B9F194
+	private void RolloutCheckForGem() { }
+
+	// RVA: 0x1B9F02C Offset: 0x1B9F02C VA: 0x1B9F02C
+	private bool TryCreateItemCollectionItem(BoardItemData boardItemData, out ItemCollectionElement itemCollectionElement) { }
+
+	// RVA: 0x1B9ED38 Offset: 0x1B9ED38 VA: 0x1B9ED38
+	private bool TryCreateExceptionItemCollectionItem(BoardItemData boardItemData, out ItemCollectionElement itemCollectionElement) { }
+
+	// RVA: 0x1B9F660 Offset: 0x1B9F660 VA: 0x1B9F660
+	public void CreateItemCollectionItems(List<BoardItemSetData> setDataLst) { }
+
+	// RVA: 0x1B9F988 Offset: 0x1B9F988 VA: 0x1B9F988
+	public void CreateItemCollectionItems(List<BoardItemData> boardItemDatas) { }
+
+	// RVA: 0x1B9F7E4 Offset: 0x1B9F7E4 VA: 0x1B9F7E4
+	public void CreateItemCollectionItems(BoardItemSetData setData) { }
+
+	// RVA: 0x1B9FB1C Offset: 0x1B9FB1C VA: 0x1B9FB1C
+	public void CreateItemCollectionItems(SerializableDictionary<int, BoardItemSetData> boardItemSetDatas) { }
+
+	// RVA: 0x1B9F584 Offset: 0x1B9F584 VA: 0x1B9F584
+	public void Subscribe(ItemCollectionElement itemCollectionElement) { }
+
+	// RVA: 0x1B9AFA8 Offset: 0x1B9AFA8 VA: 0x1B9AFA8
+	public int GetTabCount() { }
+
+	// RVA: 0x1B9AF28 Offset: 0x1B9AF28 VA: 0x1B9AF28
+	public List<int> GetTabSetIdsSetIds(int tabIndex) { }
+
+	// RVA: 0x1B9C0E0 Offset: 0x1B9C0E0 VA: 0x1B9C0E0
+	public bool TryGetTargetSetsOnSameTab(int tabIndex, out List<int> targetSets) { }
+
+	// RVA: 0x1BA0020 Offset: 0x1BA0020 VA: 0x1BA0020
+	public int CompareLeftTop(int setIDx, int setIDy) { }
+
+	// RVA: 0x1B9B5A8 Offset: 0x1B9B5A8 VA: 0x1B9B5A8
+	public int GetFirstTabIndex() { }
+
+	// RVA: 0x1BA0090 Offset: 0x1BA0090 VA: 0x1BA0090
+	public ValueTuple<int, int> GetTabIndexAndListIndex(int setID) { }
+
+	// RVA: 0x1B9BE08 Offset: 0x1B9BE08 VA: 0x1B9BE08
+	public int GetListIndex(int setID) { }
+
+	// RVA: 0x1BA01D4 Offset: 0x1BA01D4 VA: 0x1BA01D4
+	public int GetRewardOnCollect() { }
+
+	// RVA: 0x1B9F41C Offset: 0x1B9F41C VA: 0x1B9F41C
+	private ItemCollectionElement.Type GetDiscoverType(ItemInfo itemInfo) { }
+
+	// RVA: 0x1BA01DC Offset: 0x1BA01DC VA: 0x1BA01DC
+	private int GetContainingCombination(ItemInfo itemInfo) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1BA02B0 Offset: 0x1BA02B0 VA: 0x1BA02B0 Slot: 6
+	public override bool get_IsActive() { }
+
+	// RVA: 0x1BA02B8 Offset: 0x1BA02B8 VA: 0x1BA02B8 Slot: 8
+	public override void Initialize() { }
+
+	// RVA: 0x1BA03D0 Offset: 0x1BA03D0 VA: 0x1BA03D0 Slot: 9
+	public override void Process() { }
+
+	// RVA: 0x1BA03D4 Offset: 0x1BA03D4 VA: 0x1BA03D4 Slot: 11
+	public override void Disable() { }
+
+	// RVA: 0x1BA03D8 Offset: 0x1BA03D8 VA: 0x1BA03D8 Slot: 14
+	public override FeatureAddressableRequest GetAddressableRequest() { }
+
+	// RVA: 0x1BA02D8 Offset: 0x1BA02D8 VA: 0x1BA02D8
+	public void TryUnlock() { }
+
+	// RVA: 0x1B9979C Offset: 0x1B9979C VA: 0x1B9979C
+	public ItemCollectionElement GetItemCollectionElement(ItemInfo itemInfo) { }
+
+	// RVA: 0x1BA03E0 Offset: 0x1BA03E0 VA: 0x1BA03E0
+	public bool IsInCollection(ItemInfo itemInfo) { }
+
+	// RVA: 0x1BA0494 Offset: 0x1BA0494 VA: 0x1BA0494
+	public bool TryAddToDiscoveredListCheckGemActive(ItemInfo itemInfo) { }
+
+	// RVA: 0x1BA0538 Offset: 0x1BA0538 VA: 0x1BA0538
+	public bool TryAddToDiscoveredItemList(ItemInfo itemInfo) { }
+
+	// RVA: 0x1BA04E8 Offset: 0x1BA04E8 VA: 0x1BA04E8
+	public bool TryAddToRewardClaimableItemList(ItemInfo itemInfo) { }
+
+	// RVA: 0x1BA058C Offset: 0x1BA058C VA: 0x1BA058C Slot: 17
+	public virtual bool TryAddToSeenElseWhereItemList(ItemInfo itemInfo) { }
+
+	// RVA: 0x1BA05E4 Offset: 0x1BA05E4 VA: 0x1BA05E4
+	private bool CheckDiscoverType(ItemInfo itemInfo, ItemCollectionElement.Type discoverType) { }
+
+	// RVA: 0x1B9BA00 Offset: 0x1B9BA00 VA: 0x1B9BA00
+	public bool HasRewardClaimable(int tabIndex) { }
+
+	// RVA: 0x1B99978 Offset: 0x1B99978 VA: 0x1B99978
+	public bool HasRewardClaimable() { }
+
+	// RVA: 0x1BA060C Offset: 0x1BA060C VA: 0x1BA060C
+	public bool IsNewItem(ItemInfo itemInfo) { }
+
+	// RVA: 0x1BA06B4 Offset: 0x1BA06B4 VA: 0x1BA06B4
+	public bool IsItemDiscovered(ItemInfo itemInfo) { }
+
+	// RVA: 0x1BA06D4 Offset: 0x1BA06D4 VA: 0x1BA06D4
+	public bool IsItemRewardClaimable(ItemInfo itemInfo) { }
+
+	// RVA: 0x1BA066C Offset: 0x1BA066C VA: 0x1BA066C
+	public bool IsItemSeenElseWhere(ItemInfo itemInfo) { }
+
+	// RVA: 0x1BA0690 Offset: 0x1BA0690 VA: 0x1BA0690
+	public bool IsItemUnknownItem(ItemInfo itemInfo) { }
+
+	// RVA: 0x1BA06F8 Offset: 0x1BA06F8 VA: 0x1BA06F8
+	public void ModifyListsOnChangeType(ItemCollectionElement.Type oldType, ItemCollectionElement itemCollectionElement) { }
+
+	// RVA: 0x1BA0A58 Offset: 0x1BA0A58 VA: 0x1BA0A58
+	private void CollectReward(ItemCollectionElement itemCollectionElement) { }
+
+	// RVA: 0x1BA0C14 Offset: 0x1BA0C14 VA: 0x1BA0C14
+	public void ClearRemovedSeenItems() { }
+
+	// RVA: 0x1BA0D98 Offset: 0x1BA0D98 VA: 0x1BA0D98
+	public void ClearRemovedSeenItemsEventOnly(BoardData eventBoardData) { }
+
+	// RVA: 0x1BA1010 Offset: 0x1BA1010 VA: 0x1BA1010 Slot: 12
+	public override void ProcessLevelUp() { }
+
+	// RVA: 0x1B9EF6C Offset: 0x1B9EF6C VA: 0x1B9EF6C
+	public static void Log(object msg) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1BA1054 Offset: 0x1BA1054 VA: 0x1BA1054
+	private bool <ClearRemovedSeenItems>b__104_0(ItemInfo el) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1BA1104 Offset: 0x1BA1104 VA: 0x1BA1104
+	private bool <ClearRemovedSeenItems>b__104_1(ItemInfo el) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1BA11B4 Offset: 0x1BA11B4 VA: 0x1BA11B4
+	private bool <ClearRemovedSeenItems>b__104_2(ItemInfo el) { }
+}
+

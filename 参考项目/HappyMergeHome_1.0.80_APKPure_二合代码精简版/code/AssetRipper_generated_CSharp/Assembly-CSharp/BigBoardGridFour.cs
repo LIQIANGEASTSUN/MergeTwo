@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+
+[Serializable]
+public class BigBoardGridFour : TableBase
+{
+	public int Id { get; set; }
+
+	public int ItemId { get; set; }
+
+	public int State { get; set; }
+
+	public int UnlockState { get; set; }
+
+	public List<int> ReplaceItem { get; set; }
+
+	public override int GetID()
+	{
+		return 0;
+	}
+
+	public int _003C_003EiFixBaseProxy_GetID()
+	{
+		return 0;
+	}
+}

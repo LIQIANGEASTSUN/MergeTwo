@@ -1,0 +1,15 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class SellCapability : CapabilityBase // TypeDefIndex: 1460
+{
+	// Fields
+	public PlayerResourceEnum Resource; // 0x14
+	public int Amount; // 0x18
+	public int MinLevel; // 0x1C
+
+	// Methods
+
+	// RVA: 0x60118B0 Offset: 0x600D8B0 VA: 0x60118B0
+	public void .ctor() { }
+}
+

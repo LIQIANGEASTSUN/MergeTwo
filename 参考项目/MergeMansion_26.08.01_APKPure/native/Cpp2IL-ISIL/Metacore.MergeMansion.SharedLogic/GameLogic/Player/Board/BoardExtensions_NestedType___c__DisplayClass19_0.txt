@@ -1,0 +1,136 @@
+Type: GameLogic.Player.Board.BoardExtensions+<>c__DisplayClass19_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0366FC98 LDR X21, [X21 + 0x208]
+	0x0366FC9C CBNZ W8, 0x366FCA4
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <FindFirstItemOfCertainType>b__0(GameLogic.Player.Board.Coordinate coord)
+
+Disassembly:
+	0x036727BC MOVZ W2, 0x5
+	0x036727C0 BL 0x23D527C
+	0x036727C4 B 0x3672B3C
+	0x036727C8 CMP W19, 0x5
+	0x036727CC B.EQ 0x36728B4
+	0x036727D0 CMP W19, 0x6
+	0x036727D4 B.EQ 0x3672980
+	0x036727D8 CMP W19, 0x7
+	0x036727DC B.NE 0x3671D8C
+	0x036727E0 CBZ X26, 0x3673798
+	0x036727E4 MOV X0, X26
+	0x036727E8 MOV X1, X31
+	0x036727EC BL 0x35D1EC8
+	0x036727F0 CBZ X22, 0x3673738
+	0x036727F4 LDR X8, [X22]
+	0x036727F8 ADRP X10, 0x2062000
+	0x036727FC MOV X25, X0
+	0x03672800 LDRH W9, [X8 + 0x12E]
+	0x03672804 LDR X10, [X10 + 0xD50]
+	0x03672808 LDR X1, [X10]
+	0x0367280C CBZ X9, 0x3672830
+	0x03672810 LDR X10, [X8 + 0xB0]
+	0x03672814 ADD X10, X10, 0x8
+	0x03672818 LDUR X11, [X10 - 0x8]
+	0x0367281C CMP X11, X1
+	0x03672820 B.EQ 0x3672C10
+	0x03672824 SUBS X9, X9, 0x1
+	0x03672828 ADD X10, X10, 0x10
+	0x0367282C B.NE 0x3672818
+	0x03672830 MOV X0, X22
+	0x03672834 MOVZ W2, 0x5
+	0x03672838 BL 0x23D527C
+	0x0367283C B 0x3672C20
+	0x03672840 ADRP X8, 0x2072000
+	0x03672844 LDR X8, [X8 + 0xFF0]
+	0x03672848 LDR X0, [X8]
+	0x0367284C LDR W8, [X0 + 0xE4]
+	0x03672850 CBNZ W8, 0x3672858
+	0x03672854 BL 0x239BA64
+	0x03672858 MOV X0, X24
+	0x0367285C MOV X1, X31
+	0x03672860 LDR X19, [X31 + 0x30]
+	0x03672864 BL 0x342C158
+	0x03672868 MOV X20, X0
+	0x0367286C MOV X0, X19
+	0x03672870 MOV X1, X22
+	0x03672874 MOVZ W2, 0x1
+	0x03672878 BL 0x3674AA0
+	0x0367287C MOV W21, W0
+	0x03672880 MOV X0, X19
+	0x03672884 MOV X1, X22
+	0x03672888 BL 0x3674BF0
+	0x0367288C CBZ X26, 0x3673778
+	0x03672890 AND W3, W21, 0x1
+	0x03672894 AND W4, W0, 0x1
+	0x03672898 MOV X0, X26
+	0x0367289C MOV X1, X22
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move X20, X1
+	006 Move X19, X0
+	007 Move W8, [0x26BBF5E]
+	008 Move TEMP, X8
+	009 And TEMP, TEMP, 1
+	010 Compare TEMP, 1
+	011 JumpIfEqual {16}
+	012 Move X0, [0x209DE10]
+	013 Call 0x239F8E4
+	014 Move W8, 1
+	015 Move [X21+3934], W8
+	016 Move X21, [X19+16]
+	017 Compare X21, 0
+	018 JumpIfEqual {60}
+	019 Move X8, [X21]
+	020 Move X10, [0x209DE10]
+	021 NotImplemented "Instruction LDRH not yet implemented."
+	022 Move X1, [X10]
+	023 Compare X9, 0
+	024 JumpIfEqual {31}
+	025 Move X10, [X8+176]
+	026 Add X10, X10, 8
+	027 NotImplemented "Instruction LDUR not yet implemented."
+	028 NotImplemented "Instruction CMP not yet implemented."
+	029 Subtract X9, X9, 1
+	030 Add X10, X10, 16
+	031 Move X0, X21
+	032 Move W2, 5
+	033 Call 0x23D927C
+	034 Move W9, [X10]
+	035 Add W9, W9, 5
+	036 Add X8, X8, W9
+	037 Add X0, X8, 312
+	038 Move X8, [X0]
+	039 Move X2, [X0+8]
+	040 Move X0, X21
+	041 Move X1, X20
+	042 NotImplemented "Instruction BLR not yet implemented."
+	043 Compare X0, 0
+	044 JumpIfEqual {55}
+	045 Move X1, X31
+	046 Move X20, X0
+	047 Call MergeItem.get_ItemId, X0
+	048 Move W8, [X19+24]
+	049 NotImplemented "Instruction CMP not yet implemented."
+	050 Move W8, [X20+24]
+	051 Move W9, [X19+28]
+	052 NotImplemented "Instruction CMP not yet implemented."
+	053 NotImplemented "Instruction CSET not yet implemented."
+	054 Move W0, W31
+	055 Move X20, [X31+16]
+	056 Move X19, [X31+24]
+	057 Move X30, [X31+32]
+	058 Move X21, [X31+40]
+	059 Return X0
+	060 Call 0x239FB90
+

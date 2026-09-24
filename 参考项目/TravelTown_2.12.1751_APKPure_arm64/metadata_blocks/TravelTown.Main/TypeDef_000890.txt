@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardIdleHintSystem.<>c__DisplayClass47_0 // TypeDefIndex: 890
+{
+	// Fields
+	public IMergeItem item; // 0x10
+
+	// Methods
+
+	// RVA: 0x665B1DC Offset: 0x66571DC VA: 0x665B1DC
+	public void .ctor() { }
+
+	// RVA: 0x665B3D4 Offset: 0x66573D4 VA: 0x665B3D4
+	internal bool <GetExcludedItemIds>b__2(IMergeItem objectiveItem) { }
+}
+

@@ -1,0 +1,9 @@
+// Namespace: MergeEngine.ECS.Util
+public static class BoardSystemUtil // TypeDefIndex: 599
+{
+	// Methods
+
+	// RVA: 0x626F74C Offset: 0x626B74C VA: 0x626F74C
+	public static void SlideItemInOnInteractionCostDeducted(BoardSystem boardSystem, BoardItemPosition position, BoardItemPosition fromPosition, InteractionComponent interactionComponent) { }
+}
+

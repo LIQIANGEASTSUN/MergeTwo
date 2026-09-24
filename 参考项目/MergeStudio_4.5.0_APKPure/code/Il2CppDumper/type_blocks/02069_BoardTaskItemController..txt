@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardTaskItemController.<>c__DisplayClass111_0 // TypeDefIndex: 2069
+{
+	// Fields
+	public bool isLastTask; // 0x8
+
+	// Methods
+
+	// RVA: 0x1974230 Offset: 0x1974230 VA: 0x1974230
+	public void .ctor() { }
+
+	// RVA: 0x1975328 Offset: 0x1975328 VA: 0x1975328
+	internal void <MoveAfterItemDisappearFinished>b__0() { }
+}
+

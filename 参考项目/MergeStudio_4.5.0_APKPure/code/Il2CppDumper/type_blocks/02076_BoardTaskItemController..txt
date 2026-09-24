@@ -1,0 +1,22 @@
+// Namespace: 
+[CompilerGenerated]
+private struct BoardTaskItemController.<ProcessDoneClickBasedOnType>d__89 : IAsyncStateMachine // TypeDefIndex: 2076
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncUniTaskMethodBuilder<bool> <>t__builder; // 0x4
+	public BoardTaskItemController <>4__this; // 0x10
+	private BoardController <board>5__2; // 0x14
+	private UniTask.Awaiter <>u__1; // 0x18
+	private UniTask.Awaiter<bool> <>u__2; // 0x20
+
+	// Methods
+
+	// RVA: 0x1976D0C Offset: 0x1976D0C VA: 0x1976D0C Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x19791E4 Offset: 0x19791E4 VA: 0x19791E4 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

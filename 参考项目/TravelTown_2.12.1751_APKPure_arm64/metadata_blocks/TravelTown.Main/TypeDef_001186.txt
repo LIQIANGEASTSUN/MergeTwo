@@ -1,0 +1,86 @@
+// Namespace: MergeEngine.Configuration
+public class MergeItemInstanceConfiguration // TypeDefIndex: 1186
+{
+	// Fields
+	public Nullable<ItemOrigin> ItemOrigin; // 0x10
+	[CompilerGenerated]
+	private Nullable<BoardItemPosition> <Position>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private LockedCapability <Locked>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private Nullable<int> <SlotIndex>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private InventorySlotType <SlotType>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private string <SlotId>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private string <Uuid>k__BackingField; // 0x48
+
+	// Properties
+	public Nullable<BoardItemPosition> Position { get; set; }
+	public LockedCapability Locked { get; set; }
+	public Nullable<int> SlotIndex { get; set; }
+	public InventorySlotType SlotType { get; set; }
+	public string SlotId { get; set; }
+	public string Uuid { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6913B5C Offset: 0x690FB5C VA: 0x6913B5C
+	public Nullable<BoardItemPosition> get_Position() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6913B6C Offset: 0x690FB6C VA: 0x6913B6C
+	private void set_Position(Nullable<BoardItemPosition> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6913B78 Offset: 0x690FB78 VA: 0x6913B78
+	public LockedCapability get_Locked() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6913B80 Offset: 0x690FB80 VA: 0x6913B80
+	private void set_Locked(LockedCapability value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6913B88 Offset: 0x690FB88 VA: 0x6913B88
+	public Nullable<int> get_SlotIndex() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6913B90 Offset: 0x690FB90 VA: 0x6913B90
+	private void set_SlotIndex(Nullable<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6913B98 Offset: 0x690FB98 VA: 0x6913B98
+	public InventorySlotType get_SlotType() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6913BA0 Offset: 0x690FBA0 VA: 0x6913BA0
+	private void set_SlotType(InventorySlotType value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6913BA8 Offset: 0x690FBA8 VA: 0x6913BA8
+	public string get_SlotId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6913BB0 Offset: 0x690FBB0 VA: 0x6913BB0
+	private void set_SlotId(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6913BB8 Offset: 0x690FBB8 VA: 0x6913BB8
+	public string get_Uuid() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6913BC0 Offset: 0x690FBC0 VA: 0x6913BC0
+	private void set_Uuid(string value) { }
+
+	// RVA: 0x6913BC8 Offset: 0x690FBC8 VA: 0x6913BC8
+	public static MergeItemInstanceConfiguration CreateBoardConfiguration(BoardItemPosition position, Nullable<ItemOrigin> itemOrigin, LockedCapability lockedCapability, string uuid) { }
+
+	// RVA: 0x6913CFC Offset: 0x690FCFC VA: 0x6913CFC
+	public static MergeItemInstanceConfiguration CreateInventoryConfiguration(int slotIndex, InventorySlotType slotType = 0, string slotId) { }
+
+	// RVA: 0x6913CF4 Offset: 0x690FCF4 VA: 0x6913CF4
+	public void .ctor() { }
+}
+

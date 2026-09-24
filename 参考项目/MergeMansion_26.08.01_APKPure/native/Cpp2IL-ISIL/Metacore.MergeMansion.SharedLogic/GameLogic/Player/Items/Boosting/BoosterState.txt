@@ -1,0 +1,115 @@
+Type: GameLogic.Player.Items.Boosting.BoosterState
+
+Method: Metaplay.Core.Math.F32 get_BoostMultiplier()
+
+Disassembly:
+	0x0364D9C0 ADRP X20, 0x20CA000
+	0x0364D9C4 MOV X19, X0
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_BoostMultiplier(Metaplay.Core.Math.F32 value)
+
+Disassembly:
+	0x0364D9C8 LDRB W8, [X21 + 0xE4E]
+	0x0364D9CC LDR X20, [X20 + 0xEB0]
+
+ISIL:
+	001 Move [X0+16], W1
+	002 Return 
+
+Method: Metaplay.Core.MetaTime get_LastCalculationTime()
+
+Disassembly:
+	0x0364D9D0 TBNZ X8, 0x0, 0x364D9E8
+	0x0364D9D4 ADRP X0, 0x20CA000
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_LastCalculationTime(Metaplay.Core.MetaTime value)
+
+Disassembly:
+	0x0364D9D8 LDR X0, [X0 + 0xEB0]
+	0x0364D9DC BL 0x239B8E4
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Return 
+
+Method: Metaplay.Core.Math.F32 get_SpawnBoostMultiplier()
+
+Disassembly:
+	0x0364D9E0 MOVZ W8, 0x1
+	0x0364D9E4 STRB W8, [X21 + 0xE4E]
+
+ISIL:
+	001 Move W0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_SpawnBoostMultiplier(Metaplay.Core.Math.F32 value)
+
+Disassembly:
+	0x0364D9E8 LDR V0, [X19]
+	0x0364D9EC LDR X8, [X19 + 0x10]
+
+ISIL:
+	001 Move [X0+32], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0364D9F0 ADD X0, X31, 0x0
+	0x0364D9F4 LDR X1, [X20]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(Metaplay.Core.Math.F32 boostMultiplier, Metaplay.Core.Math.F32 spawnBoostMultiplier, Metaplay.Core.MetaTime lastCalculationTime)
+
+Disassembly:
+	0x0364D9F8 STR V0, [X31]
+	0x0364D9FC STR X8, [X31 + 0x10]
+	0x0364DA00 BL 0x26525E4
+	0x0364DA04 LDP X20, X19, [X31 + 0x30]
+	0x0364DA08 LDP X30, X21, [X31 + 0x20]
+	0x0364DA0C ADD X31, X31, 0x40
+	0x0364DA10 RET
+	0x0364DA14 STR X30, [X31 - 0x20]!
+	0x0364DA18 STP X20, X19, [X31 + 0x10]
+	0x0364DA1C ADRP X19, 0x26DC000
+	0x0364DA20 ADRP X20, 0x20E3000
+	0x0364DA24 LDRB W8, [X19 + 0xE4F]
+	0x0364DA28 LDR X20, [X20 + 0x930]
+	0x0364DA2C TBNZ X8, 0x0, 0x364DA44
+	0x0364DA30 ADRP X0, 0x20E3000
+	0x0364DA34 LDR X0, [X0 + 0x930]
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31+16], X22
+	003 Move [X31+24], X21
+	004 Move [X31+32], X20
+	005 Move [X31+40], X19
+	006 Move X21, X1
+	007 Move X1, X31
+	008 Move X19, X3
+	009 Move X20, X2
+	010 Move X22, X0
+	011 Call Object..ctor, X0
+	012 Move [X22+16], W21
+	013 Move [X22+32], W20
+	014 Move [X22+24], X19
+	015 Move X20, [X31+32]
+	016 Move X19, [X31+40]
+	017 Move X22, [X31+16]
+	018 Move X21, [X31+24]
+	019 Move X30, [X31+48]
+	020 Return 
+

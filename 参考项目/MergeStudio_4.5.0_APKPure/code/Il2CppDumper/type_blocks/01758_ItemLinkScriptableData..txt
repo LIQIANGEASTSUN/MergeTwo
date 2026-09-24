@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemLinkScriptableData.<>c__DisplayClass10_0 // TypeDefIndex: 1758
+{
+	// Fields
+	public int newSetID; // 0x8
+
+	// Methods
+
+	// RVA: 0x19128BC Offset: 0x19128BC VA: 0x19128BC
+	public void .ctor() { }
+
+	// RVA: 0x1912A0C Offset: 0x1912A0C VA: 0x1912A0C
+	internal bool <GetItemSet>b__0(ItemLinkScriptableData.ItemLinkScriptableSetData s) { }
+}
+

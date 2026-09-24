@@ -1,0 +1,24 @@
+// Namespace: 
+[CompilerGenerated]
+private struct SummerWatermelonModel.<OnNewItem>d__87 : IAsyncStateMachine // TypeDefIndex: 5623
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncVoidMethodBuilder <>t__builder; // 0x4
+	public SummerWatermelonModel <>4__this; // 0x14
+	public int id; // 0x18
+	public RefreshItemSource source; // 0x1C
+	private SummerWatermelonModel.<>c__DisplayClass87_0 <>8__1; // 0x20
+	private TaskAwaiter <>u__1; // 0x24
+	private TaskAwaiter<bool> <>u__2; // 0x28
+
+	// Methods
+
+	// RVA: 0x18C4560 Offset: 0x18C4560 VA: 0x18C4560 Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x18C5AB4 Offset: 0x18C5AB4 VA: 0x18C5AB4 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

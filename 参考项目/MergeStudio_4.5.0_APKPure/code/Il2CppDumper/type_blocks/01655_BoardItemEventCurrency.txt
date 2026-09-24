@@ -1,0 +1,16 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "BoardItemEventCurrency", menuName = "Scriptable/BoardItem/BoardItemEventCurrency", order = 0)]
+public class BoardItemEventCurrency : BoardItemData // TypeDefIndex: 1655
+{
+	// Methods
+
+	// RVA: 0x18CA1F0 Offset: 0x18CA1F0 VA: 0x18CA1F0 Slot: 4
+	public override bool Initialize(BoardEntity boardEntity, IItemController item, long millisecondsPassed, bool isNewlyCreated) { }
+
+	// RVA: 0x18CA1F8 Offset: 0x18CA1F8 VA: 0x18CA1F8 Slot: 6
+	public override int GetTimeRequiredToExitCharging() { }
+
+	// RVA: 0x18CA200 Offset: 0x18CA200 VA: 0x18CA200
+	public void .ctor() { }
+}
+

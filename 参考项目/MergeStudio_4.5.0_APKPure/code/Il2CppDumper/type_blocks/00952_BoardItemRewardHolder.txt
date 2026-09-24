@@ -1,0 +1,28 @@
+// Namespace: Paxie.MergeStudio.GameCore.Gameplay.Board.Items
+[CreateAssetMenu(fileName = "BoardItemRewardHolder", menuName = "Scriptable/BoardItem/RewardHolder", order = 4)]
+public class BoardItemRewardHolder : BoardItemData // TypeDefIndex: 952
+{
+	// Methods
+
+	// RVA: 0x178FCC8 Offset: 0x178FCC8 VA: 0x178FCC8 Slot: 4
+	public override bool Initialize(BoardEntity boardEntity, IItemController item, long millisecondsPassed, bool isNewlyCreated) { }
+
+	// RVA: 0x178FCD0 Offset: 0x178FCD0 VA: 0x178FCD0 Slot: 6
+	public override int GetTimeRequiredToExitCharging() { }
+
+	// RVA: 0x178FCD8 Offset: 0x178FCD8 VA: 0x178FCD8 Slot: 8
+	public override bool IsMergeable(IItemRuntimeData itself, IItemRuntimeData other) { }
+
+	// RVA: 0x178FCE0 Offset: 0x178FCE0 VA: 0x178FCE0 Slot: 9
+	public override bool IsMergeable(IItemRuntimeData itself) { }
+
+	// RVA: 0x178FCE8 Offset: 0x178FCE8 VA: 0x178FCE8 Slot: 10
+	public override bool IsMergeable(IItemEntity itemEntity) { }
+
+	// RVA: 0x178FCF0 Offset: 0x178FCF0 VA: 0x178FCF0 Slot: 16
+	public override bool OpenBadgeAtMaxLevel() { }
+
+	// RVA: 0x178FCF8 Offset: 0x178FCF8 VA: 0x178FCF8
+	public void .ctor() { }
+}
+

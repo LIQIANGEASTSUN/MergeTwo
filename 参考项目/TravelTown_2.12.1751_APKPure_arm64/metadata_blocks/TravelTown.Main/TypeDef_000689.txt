@@ -1,0 +1,111 @@
+// Namespace: MergeEngine.ECS.Systems
+public class SystemManager : ITickable, ISystemManager // TypeDefIndex: 689
+{
+	// Fields
+	[Inject]
+	private DiContainer _container; // 0x10
+	[Inject]
+	private SignalBus _signalBus; // 0x18
+	[Inject]
+	private IActionsModel _actionsModel; // 0x20
+	[Inject]
+	private DisposableManager _disposableManager; // 0x28
+	private List<ITickableSystem> _tickableSystems; // 0x30
+	private Dictionary<Type, SystemBase> _systemsByType; // 0x38
+	[CompilerGenerated]
+	private Action Initialized; // 0x40
+	private bool _initialized; // 0x48
+
+	// Properties
+	public bool IsInitialized { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x63A7548 Offset: 0x63A3548 VA: 0x63A7548 Slot: 5
+	public void add_Initialized(Action value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x63A75E4 Offset: 0x63A35E4 VA: 0x63A75E4 Slot: 6
+	public void remove_Initialized(Action value) { }
+
+	// RVA: 0x63A7680 Offset: 0x63A3680 VA: 0x63A7680 Slot: 7
+	public bool get_IsInitialized() { }
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public bool AddSystem<TSystem>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DB7430 Offset: 0x3DB3430 VA: 0x3DB7430
+	|-SystemManager.AddSystem<object>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public bool AddSystem<TSystem>(object[] constructorParameters) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DB749C Offset: 0x3DB349C VA: 0x3DB749C
+	|-SystemManager.AddSystem<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	private bool InternalAddSystem<TSystem>(Func<TSystem> instantiateFunction) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DB78B4 Offset: 0x3DB38B4 VA: 0x3DB78B4
+	|-SystemManager.InternalAddSystem<object>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public TSystem GetSystem<TSystem>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DB7564 Offset: 0x3DB3564 VA: 0x3DB7564
+	|-SystemManager.GetSystem<object>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public bool RemoveSystem<TSystem>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DB7A70 Offset: 0x3DB3A70 VA: 0x3DB7A70
+	|-SystemManager.RemoveSystem<object>
+	*/
+
+	// RVA: 0x63A7688 Offset: 0x63A3688 VA: 0x63A7688
+	private void SortSystems() { }
+
+	// RVA: 0x63A778C Offset: 0x63A378C VA: 0x63A778C Slot: 12
+	public void InitializeAll(Action beforeInitialized) { }
+
+	// RVA: -1 Offset: -1 Slot: 13
+	public bool HasSystem<TSystem>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DB781C Offset: 0x3DB381C VA: 0x3DB781C
+	|-SystemManager.HasSystem<object>
+	*/
+
+	// RVA: 0x63A7A78 Offset: 0x63A3A78 VA: 0x63A7A78 Slot: 4
+	private void Zenject.ITickable.Tick() { }
+
+	// RVA: 0x63A7A88 Offset: 0x63A3A88 VA: 0x63A7A88
+	private void UpdateSystems() { }
+
+	// RVA: 0x63A7D9C Offset: 0x63A3D9C VA: 0x63A7D9C
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	private TSystem <AddSystem>b__12_0<TSystem>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DB73F0 Offset: 0x3DB33F0 VA: 0x3DB73F0
+	|-SystemManager.<AddSystem>b__12_0<object>
+	*/
+
+	[CompilerGenerated]
+	// RVA: 0x63A79D0 Offset: 0x63A39D0 VA: 0x63A79D0
+	private void <InitializeAll>g__HandleStartupException|18_0(Exception exception) { }
+}
+

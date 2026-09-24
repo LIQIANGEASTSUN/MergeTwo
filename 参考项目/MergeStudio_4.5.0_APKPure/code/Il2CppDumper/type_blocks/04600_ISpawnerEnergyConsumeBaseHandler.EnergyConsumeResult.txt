@@ -1,0 +1,9 @@
+// Namespace: 
+public struct ISpawnerEnergyConsumeBaseHandler.EnergyConsumeResult // TypeDefIndex: 4600
+{
+	// Fields
+	public ItemController ItemController; // 0x0
+	public bool SpawnerUsedEnergy; // 0x4
+	public int EnergyConsumeAmount; // 0x8
+}
+

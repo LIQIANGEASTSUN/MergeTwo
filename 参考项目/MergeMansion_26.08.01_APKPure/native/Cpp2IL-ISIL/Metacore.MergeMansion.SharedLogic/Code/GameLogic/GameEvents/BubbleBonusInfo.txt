@@ -1,0 +1,114 @@
+Type: Code.GameLogic.GameEvents.BubbleBonusInfo
+
+Method: GameLogic.Player.EnergyType get_DivisorEnergyType()
+
+Disassembly:
+	0x037DF76C ADD X10, X10, 0x8
+	0x037DF770 LDUR X11, [X10 - 0x8]
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_DivisorEnergyType(GameLogic.Player.EnergyType value)
+
+Disassembly:
+	0x037DF774 CMP X11, X1
+	0x037DF778 B.EQ 0x37DF798
+
+ISIL:
+	001 Move [X0+16], W1
+	002 Return 
+
+Method: Metaplay.Core.Math.F32 get_DivisorOverride()
+
+Disassembly:
+	0x037DF77C SUBS X9, X9, 0x1
+	0x037DF780 ADD X10, X10, 0x10
+
+ISIL:
+	001 Move W0, [X0+20]
+	002 Return X0
+
+Method: System.Void set_DivisorOverride(Metaplay.Core.Math.F32 value)
+
+Disassembly:
+	0x037DF784 B.NE 0x37DF770
+	0x037DF788 MOV X0, X22
+
+ISIL:
+	001 Move [X0+20], W1
+	002 Return 
+
+Method: System.Boolean get_DivisorEnabled()
+
+Disassembly:
+	0x037DF78C MOVZ W2, 0x2
+	0x037DF790 BL 0x23D527C
+
+ISIL:
+	001 Move W0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_DivisorEnabled(System.Boolean value)
+
+Disassembly:
+	0x037DF794 B 0x37DF7A8
+	0x037DF798 LDR W9, [X10]
+
+ISIL:
+	001 Move [X0+24], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x037DF79C ADD W9, W9, 0x2
+	0x037DF7A0 ADD X8, X8, W9, 0x4, SXTW
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(GameLogic.Player.EnergyType divisorEnergyType, Metaplay.Core.Math.F32 divisorOverride, System.Boolean divisorEnabled)
+
+Disassembly:
+	0x037DF7A4 ADD X0, X8, 0x138
+	0x037DF7A8 LDP X8, X2, [X0]
+	0x037DF7AC MOV X0, X22
+	0x037DF7B0 MOV X1, X21
+	0x037DF7B4 BLR X8
+	0x037DF7B8 CBZ X0, 0x37DF8CC
+	0x037DF7BC ADRP X10, 0x1F2C000
+	0x037DF7C0 ADRP X24, 0x1F2C000
+	0x037DF7C4 ADRP X25, 0x1F5C000
+	0x037DF7C8 LDR X10, [X10 + 0x5F8]
+	0x037DF7CC LDR X24, [X24 + 0x6E8]
+	0x037DF7D0 LDR X8, [X0]
+	0x037DF7D4 ADRP X23, 0x1F5C000
+	0x037DF7D8 ADRP X22, 0x1F2C000
+	0x037DF7DC LDR X25, [X25 + 0xE50]
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31+16], X22
+	003 Move [X31+24], X21
+	004 Move [X31+32], X20
+	005 Move [X31+40], X19
+	006 Move W21, W1
+	007 Move X1, X31
+	008 Move W19, W3
+	009 Move X20, X2
+	010 Move X22, X0
+	011 Call Object..ctor, X0
+	012 Move [X22+16], W21
+	013 Move [X22+20], W20
+	014 Move [X22+24], W19
+	015 Move X20, [X31+32]
+	016 Move X19, [X31+40]
+	017 Move X22, [X31+16]
+	018 Move X21, [X31+24]
+	019 Move X30, [X31+48]
+	020 Return 
+

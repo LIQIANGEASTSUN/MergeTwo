@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class InteractionCostSystem.<>c__DisplayClass2_0 // TypeDefIndex: 25742
+{
+	// Fields
+	public PendingInteractionComponent pendingInteractionComponent; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A6B170 Offset: 0x6A67170 VA: 0x6A6B170
+	public void .ctor() { }
+
+	// RVA: 0x6A6B180 Offset: 0x6A67180 VA: 0x6A6B180
+	internal bool <ConsumeItems>b__0(Entity entity) { }
+}
+

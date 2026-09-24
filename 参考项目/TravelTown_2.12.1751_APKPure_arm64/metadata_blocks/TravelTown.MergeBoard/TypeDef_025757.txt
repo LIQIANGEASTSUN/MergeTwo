@@ -1,0 +1,43 @@
+// Namespace: Merger.MergeBoard.Systems
+public class ItemUnboxingSystem : ISystem // TypeDefIndex: 25757
+{
+	// Fields
+	[Inject]
+	private IMergeBoardLayout _mergeBoardLayout; // 0x10
+	private const string MergeItemReason = "merge_item";
+	private const string ResourceConsumeReason = "resource_consumed";
+	private const string ItemConsumeReason = "interaction_item";
+
+	// Methods
+
+	// RVA: 0x6A6E390 Offset: 0x6A6A390 VA: 0x6A6E390 Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A6EC5C Offset: 0x6A6AC5C VA: 0x6A6EC5C
+	private void UnboxOnMerge(TickContext context) { }
+
+	// RVA: 0x6A6E400 Offset: 0x6A6A400 VA: 0x6A6E400
+	private void UnboxOnConsume(TickContext context) { }
+
+	// RVA: 0x6A6F388 Offset: 0x6A6B388 VA: 0x6A6F388
+	private void UnboxOnResourceConsume(TickContext context) { }
+
+	// RVA: 0x6A6FC40 Offset: 0x6A6BC40 VA: 0x6A6FC40
+	private void UnboxOnDemand(TickContext context) { }
+
+	// RVA: 0x6A6FEB0 Offset: 0x6A6BEB0 VA: 0x6A6FEB0
+	private IList<Entity> GetAdjacentBoxedEntities(TickContext context, int position) { }
+
+	// RVA: 0x6A704CC Offset: 0x6A6C4CC VA: 0x6A704CC
+	private bool TryGetBoxedEntity(TickContext context, int position, out Entity entity) { }
+
+	// RVA: 0x6A702E4 Offset: 0x6A6C2E4 VA: 0x6A702E4
+	private void UnboxItem(TickContext context, Entity boxedEntity, BoxComponent boxComponent, string reason, int interactionPosition) { }
+
+	// RVA: 0x6A706D8 Offset: 0x6A6C6D8 VA: 0x6A706D8
+	private ValueTuple<string, string> GetSourcesForAnalytics(TickContext context, int position) { }
+
+	// RVA: 0x6A70920 Offset: 0x6A6C920 VA: 0x6A70920
+	public void .ctor() { }
+}
+

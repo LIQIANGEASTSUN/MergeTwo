@@ -1,0 +1,23 @@
+// Namespace: Merger.ProducerExcitement.Signals
+public class ProducerExcitementReceivedSignal // TypeDefIndex: 33614
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly ProducerExcitementDataResponse <Response>k__BackingField; // 0x10
+
+	// Properties
+	public ProducerExcitementDataResponse Response { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6AD4E74 Offset: 0x6AD0E74 VA: 0x6AD4E74
+	public ProducerExcitementDataResponse get_Response() { }
+
+	// RVA: 0x6AD4E7C Offset: 0x6AD0E7C VA: 0x6AD4E7C
+	public void .ctor() { }
+
+	// RVA: 0x6AD4E84 Offset: 0x6AD0E84 VA: 0x6AD4E84
+	public void .ctor(ProducerExcitementDataResponse response) { }
+}
+

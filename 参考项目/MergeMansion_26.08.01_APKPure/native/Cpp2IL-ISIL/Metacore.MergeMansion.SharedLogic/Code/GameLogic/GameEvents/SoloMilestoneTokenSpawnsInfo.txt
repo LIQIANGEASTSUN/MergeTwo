@@ -1,0 +1,441 @@
+Type: Code.GameLogic.GameEvents.SoloMilestoneTokenSpawnsInfo
+
+Method: Code.GameLogic.GameEvents.SoloMilestoneTokenSpawnsId get_ConfigKey()
+
+Disassembly:
+	0x0334C60C BL 0x272AE2C
+	0x0334C610 CBZ X22, 0x334CCA4
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_ConfigKey(Code.GameLogic.GameEvents.SoloMilestoneTokenSpawnsId value)
+
+Disassembly:
+	0x0334C614 ADRP X8, 0x23CD000
+	0x0334C618 LDR X8, [X8 + 0xBF8]
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: Code.GameLogic.GameEvents.SoloMilestone.SoloMilestoneEventId get_EventId()
+
+Disassembly:
+	0x0334C61C STR W23, [X31 + 0x30]
+	0x0334C620 LDR X3, [X8]
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_EventId(Code.GameLogic.GameEvents.SoloMilestone.SoloMilestoneEventId value)
+
+Disassembly:
+	0x0334C624 ADD X1, X31, 0x30
+	0x0334C628 MOV X0, X22
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Int32 get_Milestone()
+
+Disassembly:
+	0x0334C62C MOV X2, X24
+	0x0334C630 BL 0x2937FD0
+
+ISIL:
+	001 Move W0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_Milestone(System.Int32 value)
+
+Disassembly:
+	0x0334C634 LDR X23, [X31 + 0x28]
+	0x0334C638 ADD X21, X21, 0x1
+
+ISIL:
+	001 Move [X0+32], W1
+	002 Return 
+
+Method: Metaplay.Core.Player.PlayerSegmentId get_Segment()
+
+Disassembly:
+	0x0334C63C LDR W8, [X23 + 0x18]
+	0x0334C640 CMP X21, W8, SXTW
+
+ISIL:
+	001 Move X0, [X0+40]
+	002 Return X0
+
+Method: System.Void set_Segment(Metaplay.Core.Player.PlayerSegmentId value)
+
+Disassembly:
+	0x0334C644 B.LT 0x334C5DC
+	0x0334C648 LDR X8, [X31 + 0x70]
+
+ISIL:
+	001 Move [X0+40], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: Code.GameLogic.StatsTracking.StatsTrackingType get_TokenSource()
+
+Disassembly:
+	0x0334C64C CBZ X8, 0x334CD08
+	0x0334C650 LDR X0, [X8 + 0x20]
+
+ISIL:
+	001 Move W0, [X0+48]
+	002 Return X0
+
+Method: System.Void set_TokenSource(Code.GameLogic.StatsTracking.StatsTrackingType value)
+
+Disassembly:
+	0x0334C654 CBZ X0, 0x334CD0C
+	0x0334C658 STR X22, [X31 + 0x18]
+
+ISIL:
+	001 Move [X0+48], W1
+	002 Return 
+
+Method: System.Int32 get_BaseTokenSpawnChance()
+
+Disassembly:
+	0x0334C65C ADRP X8, 0x23AD000
+	0x0334C660 LDR X8, [X8 + 0x290]
+
+ISIL:
+	001 Move W0, [X0+52]
+	002 Return X0
+
+Method: System.Void set_BaseTokenSpawnChance(System.Int32 value)
+
+Disassembly:
+	0x0334C664 LDR X2, [X8]
+	0x0334C668 ADD X1, X31, 0x30
+
+ISIL:
+	001 Move [X0+52], W1
+	002 Return 
+
+Method: System.Boolean get_BaseTokenSpawnEnabled()
+
+Disassembly:
+	0x0334C66C BL 0x272D0E8
+	0x0334C670 LDR X8, [X31 + 0x40]
+
+ISIL:
+	001 Move W0, [X0+56]
+	002 Return X0
+
+Method: System.Void set_BaseTokenSpawnEnabled(System.Boolean value)
+
+Disassembly:
+	0x0334C674 LDR V0, [X31 + 0x3]
+	0x0334C678 STR X8, [X31 + 0x60]
+
+ISIL:
+	001 Move [X0+56], W1
+	002 Return 
+
+Method: Metaplay.Core.Math.F32 get_BaseTokenSpawnMultiplierMin()
+
+Disassembly:
+	0x0334C67C ADD X8, X31, 0x50
+	0x0334C680 STR V0, [X31 + 0x5]
+
+ISIL:
+	001 Move W0, [X0+60]
+	002 Return X0
+
+Method: System.Void set_BaseTokenSpawnMultiplierMin(Metaplay.Core.Math.F32 value)
+
+Disassembly:
+	0x0334C684 STP X31, X8, [X31 + 0x30]
+	0x0334C688 ADRP X8, 0x23AD000
+
+ISIL:
+	001 Move [X0+60], W1
+	002 Return 
+
+Method: Metaplay.Core.Math.F32 get_BaseTokenSpawnMultiplierMax()
+
+Disassembly:
+	0x0334C68C LDR X8, [X8 + 0x278]
+	0x0334C690 LDR X1, [X8]
+
+ISIL:
+	001 Move W0, [X0+64]
+	002 Return X0
+
+Method: System.Void set_BaseTokenSpawnMultiplierMax(Metaplay.Core.Math.F32 value)
+
+Disassembly:
+	0x0334C694 ADD X0, X31, 0x50
+	0x0334C698 BL 0x29592D0
+
+ISIL:
+	001 Move [X0+64], W1
+	002 Return 
+
+Method: System.Collections.Generic.List`1<System.Int32> get_Parameters()
+
+Disassembly:
+	0x0334C69C TBZ X0, 0x0, 0x334C8B0
+	0x0334C6A0 ADRP X8, 0x23AD000
+
+ISIL:
+	001 Move X0, [X0+72]
+	002 Return X0
+
+Method: System.Void set_Parameters(System.Collections.Generic.List`1<System.Int32> value)
+
+Disassembly:
+	0x0334C6A4 LDR X8, [X8 + 0x280]
+	0x0334C6A8 LDR X21, [X8]
+
+ISIL:
+	001 Move [X0+72], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Int32 get_SegmentPriority()
+
+Disassembly:
+	0x0334C6AC LDR X0, [X21 + 0x20]
+	0x0334C6B0 ADD X8, X0, 0x135
+
+ISIL:
+	001 Move W0, [X0+80]
+	002 Return X0
+
+Method: System.Void set_SegmentPriority(System.Int32 value)
+
+Disassembly:
+	0x0334C6B4 LDRH W9, [X8]
+	0x0334C6B8 TBNZ X9, 0x0, 0x334C6D4
+
+ISIL:
+	001 Move [X0+80], W1
+	002 Return 
+
+Method: System.Int32 get_ExperimentPriority()
+
+Disassembly:
+	0x0334C6BC BL 0x23D4F40
+	0x0334C6C0 MOV X8, X0
+
+ISIL:
+	001 Move W0, [X0+84]
+	002 Return X0
+
+Method: System.Void set_ExperimentPriority(System.Int32 value)
+
+Disassembly:
+	0x0334C6C4 LDR X0, [X21 + 0x20]
+	0x0334C6C8 ADD X9, X0, 0x135
+
+ISIL:
+	001 Move [X0+84], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0334C6CC LDRH W9, [X9]
+	0x0334C6D0 B 0x334C6D8
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(Code.GameLogic.GameEvents.SoloMilestoneTokenSpawnsId configKey, Code.GameLogic.GameEvents.SoloMilestone.SoloMilestoneEventId eventId, System.Int32 milestone, Metaplay.Core.Player.PlayerSegmentId segment, System.Int32 segmentPriority, Code.GameLogic.StatsTracking.StatsTrackingType tokenSource, System.Int32 baseTokenSpawnChance, System.Boolean baseTokenSpawnEnabled, Metaplay.Core.Math.F32 baseTokenSpawnMultiplierMin, Metaplay.Core.Math.F32 baseTokenSpawnMultiplierMax, System.Collections.Generic.List`1<System.Int32> parameters, System.Int32 experimentPriority)
+
+Disassembly:
+	0x0334C6D4 MOV X8, X0
+	0x0334C6D8 LDR X8, [X8 + 0xC0]
+	0x0334C6DC LDR X8, [X8 + 0x10]
+	0x0334C6E0 LDR W26, [X8 + 0xFC]
+	0x0334C6E4 TBNZ X9, 0x0, 0x334C6EC
+	0x0334C6E8 BL 0x23D4F40
+	0x0334C6EC LDR X8, [X0 + 0xC0]
+	0x0334C6F0 LDR X8, [X8 + 0x8]
+	0x0334C6F4 LDR X8, [X8 + 0x80]
+	0x0334C6F8 ADD X0, X31, 0x50
+	0x0334C6FC ADD X1, X8, 0x60
+	0x0334C700 BL 0x239B90C
+	0x0334C704 MOV X1, X0
+	0x0334C708 ADD X0, X31, 0xA8
+	0x0334C70C MOV X2, X26
+	0x0334C710 BL 0x53E90D0
+	0x0334C714 LDR X8, [X20]
+	0x0334C718 ADRP X10, 0x2388000
+	0x0334C71C LDR X26, [X31 + 0xA8]
+	0x0334C720 LDRH W9, [X8 + 0x12E]
+	0x0334C724 LDR X10, [X10 + 0xD50]
+	0x0334C728 LDR X1, [X10]
+	0x0334C72C CBZ X9, 0x334C750
+	0x0334C730 LDR X10, [X8 + 0xB0]
+	0x0334C734 ADD X10, X10, 0x8
+	0x0334C738 LDUR X11, [X10 - 0x8]
+	0x0334C73C CMP X11, X1
+	0x0334C740 B.EQ 0x334C760
+	0x0334C744 SUBS X9, X9, 0x1
+	0x0334C748 ADD X10, X10, 0x10
+	0x0334C74C B.NE 0x334C738
+	0x0334C750 MOV X0, X20
+	0x0334C754 MOVZ W2, 0x5
+	0x0334C758 BL 0x23D527C
+	0x0334C75C B 0x334C770
+	0x0334C760 LDR W9, [X10]
+	0x0334C764 ADD W9, W9, 0x5
+	0x0334C768 ADD X8, X8, W9, 0x4, SXTW
+	0x0334C76C ADD X0, X8, 0x138
+	0x0334C770 LDP X8, X1, [X0]
+	0x0334C774 MOV X0, X20
+	0x0334C778 BLR X8
+	0x0334C77C MOV X27, X0
+	0x0334C780 CBZ X0, 0x334CBD4
+	0x0334C784 LDR X8, [X27]
+	0x0334C788 ADRP X10, 0x2388000
+	0x0334C78C LDRH W9, [X8 + 0x12E]
+	0x0334C790 LDR X10, [X10 + 0xD58]
+	0x0334C794 LDR X1, [X10]
+	0x0334C798 CBZ X9, 0x334C7BC
+	0x0334C79C LDR X10, [X8 + 0xB0]
+	0x0334C7A0 ADD X10, X10, 0x8
+	0x0334C7A4 LDUR X11, [X10 - 0x8]
+
+ISIL:
+	001 Subtract X31, X31, 112
+	002 Move [X31+16], X29
+	003 Move [X31+24], X30
+	004 Move [X31+32], X28
+	005 Move [X31+40], X27
+	006 Move [X31+48], X26
+	007 Move [X31+56], X25
+	008 Move [X31+64], X24
+	009 Move [X31+72], X23
+	010 Move [X31+80], X22
+	011 Move [X31+88], X21
+	012 Move [X31+96], X20
+	013 Move [X31+104], X19
+	014 Move W8, [X31+144]
+	015 Move X28, [X31+120]
+	016 Move X29, [X31+128]
+	017 Move X25, X1
+	018 Move W19, [X31+112]
+	019 Move X1, X31
+	020 Move X26, [X31+136]
+	021 Move W20, W6
+	022 Move W21, W5
+	023 Move X22, X4
+	024 Move W23, W3
+	025 Move X24, X2
+	026 Move [X31+8], W7
+	027 Move [X31+12], W8
+	028 Move X27, X0
+	029 Call Object..ctor, X0
+	030 Move X0, X27
+	031 Move X1, X25
+	032 Move [X0+16], X25
+	033 Call 0x239F888
+	034 Move X0, X27
+	035 Move X1, X24
+	036 Move [X0+24], X24
+	037 Call 0x239F888
+	038 Move X0, X27
+	039 Move X1, X22
+	040 Move [X27+32], W23
+	041 Move [X0+40], X22
+	042 Call 0x239F888
+	043 Move W8, [X31+8]
+	044 Move [X27+72], X26
+	045 Move X0, X27
+	046 Move X1, X26
+	047 Move [X27+8], W21
+	048 Move [X27-24], W20
+	049 Move [X27-20], W8
+	050 NotImplemented "Instruction STURB not yet implemented."
+	051 Move [X27-12], W28
+	052 Move [X27-8], W29
+	053 Call 0x239F888
+	054 Move W8, [X31+12]
+	055 Move X20, [X31+96]
+	056 Move X19, [X31+104]
+	057 Move X22, [X31+80]
+	058 Move X21, [X31+88]
+	059 Move [X27+12], W8
+	060 Move X24, [X31+64]
+	061 Move X23, [X31+72]
+	062 Move X26, [X31+48]
+	063 Move X25, [X31+56]
+	064 Move X28, [X31+32]
+	065 Move X27, [X31+40]
+	066 Move X29, [X31+16]
+	067 Move X30, [X31+24]
+	068 Add X31, X31, 112
+	069 Return 
+
+Method: System.Int32 CompareTo(Code.GameLogic.GameEvents.SoloMilestoneTokenSpawnsInfo other)
+
+Disassembly:
+	0x0334C7A8 CMP X11, X1
+	0x0334C7AC B.EQ 0x334C7CC
+	0x0334C7B0 SUBS X9, X9, 0x1
+	0x0334C7B4 ADD X10, X10, 0x10
+	0x0334C7B8 B.NE 0x334C7A4
+	0x0334C7BC MOV X0, X27
+	0x0334C7C0 MOVZ W2, 0x6E
+	0x0334C7C4 BL 0x23D527C
+	0x0334C7C8 B 0x334C7DC
+	0x0334C7CC LDR W9, [X10]
+	0x0334C7D0 ADD W9, W9, 0x6E
+	0x0334C7D4 ADD X8, X8, W9, 0x4, SXTW
+	0x0334C7D8 ADD X0, X8, 0x138
+	0x0334C7DC LDP X8, X1, [X0]
+	0x0334C7E0 MOV X0, X27
+	0x0334C7E4 BLR X8
+	0x0334C7E8 MOV X27, X0
+	0x0334C7EC CBZ X0, 0x334CBDC
+	0x0334C7F0 LDR X8, [X27]
+	0x0334C7F4 ADRP X10, 0x23AD000
+	0x0334C7F8 LDRH W9, [X8 + 0x12E]
+	0x0334C7FC LDR X10, [X10 + 0x190]
+	0x0334C800 LDR X1, [X10]
+
+ISIL:
+	001 Compare X1, 0
+	002 JumpIfEqual {12}
+	003 Move W8, [X0+48]
+	004 Move W9, [X1+48]
+	005 NotImplemented "Instruction CMP not yet implemented."
+	006 Move W8, [X0+32]
+	007 Move W9, [X1+32]
+	008 NotImplemented "Instruction CMP not yet implemented."
+	009 Move W8, [X0+80]
+	010 Move W9, [X1+80]
+	011 NotImplemented "Instruction CMP not yet implemented."
+	012 Move TEMP, 0
+	013 Not TEMP
+	014 Move W0, TEMP
+	015 Return X0
+	016 Move TEMP, 0
+	017 Not TEMP
+	018 Move W8, TEMP
+	019 NotImplemented "Instruction CSNEG not yet implemented."
+	020 Return X0
+	021 Move TEMP, 0
+	022 Not TEMP
+	023 Move W8, TEMP
+	024 NotImplemented "Instruction CSNEG not yet implemented."
+	025 Return X0
+	026 NotImplemented "Instruction CSET not yet implemented."
+	027 Return X0
+

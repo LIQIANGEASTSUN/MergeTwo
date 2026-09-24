@@ -1,0 +1,44 @@
+// Namespace: MergeEngine.ECS.Systems.Items.Producers.LowLevelItemProduce
+public abstract class LowLevelProduceStrategyBase : ILowLevelProduceStrategy // TypeDefIndex: 998
+{
+	// Fields
+	[Inject]
+	protected IMergingConfigurationModel MergingConfigurationModel; // 0x10
+	[Inject]
+	protected IGameSessionModel GameSessionModel; // 0x18
+	[Inject]
+	private ISystemManager _systemManager; // 0x20
+	private PowerBoostSystem _powerBoostSystem; // 0x28
+	private BoardSystem _boardSystem; // 0x30
+	private InventorySystem _inventorySystem; // 0x38
+
+	// Properties
+	protected PowerBoostSystem PowerBoostSystem { get; }
+	protected BoardSystem BoardSystem { get; }
+	protected InventorySystem InventorySystem { get; }
+	protected abstract int SpawnPercentage { get; }
+
+	// Methods
+
+	// RVA: 0x679CE90 Offset: 0x6798E90 VA: 0x679CE90
+	protected PowerBoostSystem get_PowerBoostSystem() { }
+
+	// RVA: 0x679E2FC Offset: 0x679A2FC VA: 0x679E2FC
+	protected BoardSystem get_BoardSystem() { }
+
+	// RVA: 0x679E3DC Offset: 0x679A3DC VA: 0x679E3DC
+	protected InventorySystem get_InventorySystem() { }
+
+	// RVA: -1 Offset: -1 Slot: 5
+	protected abstract int get_SpawnPercentage();
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract bool TryGetProduceData(IItemSpawningComponent itemSpawningComponent, out LowLevelItemProduceData result);
+
+	// RVA: 0x679D1B8 Offset: 0x67991B8 VA: 0x679D1B8
+	protected bool CanPowerBoostItemSpawn(IItemSpawningComponent itemSpawningComponent) { }
+
+	// RVA: 0x679E4C4 Offset: 0x679A4C4 VA: 0x679E4C4
+	protected void .ctor() { }
+}
+

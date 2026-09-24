@@ -1,0 +1,19 @@
+// Namespace: MergeEngine.ECS.Systems
+public class InventoryWebSocket // TypeDefIndex: 660
+{
+	// Fields
+	[Inject]
+	private IWebSocketDeliveryGuaranteeService _webSocketSender; // 0x10
+
+	// Methods
+
+	// RVA: 0x6289848 Offset: 0x6285848 VA: 0x6289848
+	public void SendUnlockSlot(string slotId) { }
+
+	// RVA: 0x62862D8 Offset: 0x62822D8 VA: 0x62862D8
+	public void SendFlagStateChanged(List<Tuple<string, string>> slotAndStatus) { }
+
+	// RVA: 0x628A398 Offset: 0x6286398 VA: 0x628A398
+	public void .ctor() { }
+}
+

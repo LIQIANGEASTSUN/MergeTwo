@@ -1,0 +1,14 @@
+// Namespace: MergeEngine.ECS.Components.Items
+[Serializable]
+public class SerializedStackingComponent // TypeDefIndex: 1090
+{
+	// Fields
+	[JsonProperty("usesAmount")]
+	public int StackSize; // 0x10
+
+	// Methods
+
+	// RVA: 0x68FDEE4 Offset: 0x68F9EE4 VA: 0x68FDEE4
+	public void .ctor() { }
+}
+

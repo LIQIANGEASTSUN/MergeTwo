@@ -1,0 +1,24 @@
+// Namespace: Merger.MergeBoard.PowerBoost.Commands
+public class MergeBoardPowerBoostedItemSelectedCommand : CommandBase<MergeBoardItemSelectedSignal> // TypeDefIndex: 32807
+{
+	// Fields
+	[Inject]
+	private IPowerBoostModesCalculator _powerBoostModesCalculator; // 0x30
+	[Inject]
+	private IPowerBoostModel _powerBoostModel; // 0x38
+	[Inject]
+	private IPowerBoostDataProvider _powerBoostDataProvider; // 0x40
+	[Inject]
+	private IActionsModel _actionsModel; // 0x48
+	[Inject]
+	private DiContainer _container; // 0x50
+
+	// Methods
+
+	// RVA: 0x6AD41F4 Offset: 0x6AD01F4 VA: 0x6AD41F4 Slot: 15
+	public override void Execute(MergeBoardItemSelectedSignal signal) { }
+
+	// RVA: 0x6AD4750 Offset: 0x6AD0750 VA: 0x6AD4750
+	public void .ctor() { }
+}
+

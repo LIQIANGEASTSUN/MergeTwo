@@ -1,0 +1,18 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ExpendableSystem.<>c__DisplayClass20_0 // TypeDefIndex: 959
+{
+	// Fields
+	public ExpendableSystem <>4__this; // 0x10
+	public ExpendableComponent expendableComponent; // 0x18
+	public PositionComponent positionComponent; // 0x20
+
+	// Methods
+
+	// RVA: 0x678E6DC Offset: 0x678A6DC VA: 0x678E6DC
+	public void .ctor() { }
+
+	// RVA: 0x679049C Offset: 0x678C49C VA: 0x679049C
+	internal void <TrySpawnParticles>b__0() { }
+}
+

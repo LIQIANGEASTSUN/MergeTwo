@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ButterflyWorkShopModel.<>c // TypeDefIndex: 187
+{
+	// Fields
+	public static readonly ButterflyWorkShopModel.<>c <>9; // 0x0
+	public static Action <>9__42_0; // 0x4
+	public static Predicate<StageRewardConfig> <>9__57_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x29F24A8 Offset: 0x29F24A8 VA: 0x29F24A8
+	private static void .cctor() { }
+
+	// RVA: 0x29F251C Offset: 0x29F251C VA: 0x29F251C
+	public void .ctor() { }
+
+	// RVA: 0x29F2524 Offset: 0x29F2524 VA: 0x29F2524
+	internal void <FlyButterFly>b__42_0() { }
+
+	// RVA: 0x29F25C4 Offset: 0x29F25C4 VA: 0x29F25C4
+	internal bool <GetStageRewardConfig>b__57_0(StageRewardConfig a) { }
+}
+

@@ -1,0 +1,9 @@
+// Namespace: Merger.Game.Data
+public enum CurrentBoardType // TypeDefIndex: 8483
+{
+	// Fields
+	public int value__; // 0x0
+	public const CurrentBoardType MainBoard = 0;
+	public const CurrentBoardType LiveOpsEvent = 1;
+}
+

@@ -1,0 +1,8 @@
+// Namespace: 
+public struct BoardEvent.ArchiveTaskEjectFinished : IEvent // TypeDefIndex: 1848
+{
+	// Fields
+	public Transform AnimatedTrans; // 0x0
+	public ItemLinkID ItemLinkID; // 0x4
+}
+

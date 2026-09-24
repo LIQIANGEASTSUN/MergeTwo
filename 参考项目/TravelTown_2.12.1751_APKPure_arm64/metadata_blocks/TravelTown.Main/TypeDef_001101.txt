@@ -1,0 +1,28 @@
+// Namespace: MergeEngine.ECS.Components.Items.Producers
+public interface IItemSpawning // TypeDefIndex: 1101
+{
+	// Properties
+	public abstract int ItemsToProduce { get; }
+	public abstract double TimeUntilFullCapacity { get; }
+	public abstract string SpawnedItemsLabel { get; }
+	public abstract bool ExceededLifetimeLimit { get; }
+	public abstract SkipCooldownSettings SkipCooldownSettings { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract int get_ItemsToProduce();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract double get_TimeUntilFullCapacity();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract string get_SpawnedItemsLabel();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract bool get_ExceededLifetimeLimit();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract SkipCooldownSettings get_SkipCooldownSettings();
+}
+

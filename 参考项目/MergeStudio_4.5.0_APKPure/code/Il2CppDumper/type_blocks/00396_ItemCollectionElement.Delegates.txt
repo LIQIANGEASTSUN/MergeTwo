@@ -1,0 +1,9 @@
+// Namespace: 
+public class ItemCollectionElement.Delegates // TypeDefIndex: 396
+{
+	// Methods
+
+	// RVA: 0x1B9DB94 Offset: 0x1B9DB94 VA: 0x1B9DB94
+	public void .ctor() { }
+}
+

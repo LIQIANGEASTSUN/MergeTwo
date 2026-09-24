@@ -1,0 +1,1034 @@
+// Namespace: Paxie
+[DefaultMember("Item")]
+[Serializable]
+public class SerializableDictionary<TKey, TValue> : SerializableDictionary, ISerializationCallbackReceiver, IDictionary<TKey, TValue>, ICollection<KeyValuePair<TKey, TValue>>, IEnumerable<KeyValuePair<TKey, TValue>>, IEnumerable // TypeDefIndex: 201
+{
+	// Fields
+	[SerializeField]
+	private List<SerializableDictionary.SerializableKeyValuePair<TKey, TValue>> list; // 0x0
+	private Lazy<Dictionary<TKey, uint>> _keyPositions; // 0x0
+
+	// Properties
+	private Dictionary<TKey, uint> KeyPositions { get; }
+	public TValue Item { get; set; }
+	public ICollection<TKey> Keys { get; }
+	public ICollection<TValue> Values { get; }
+	public int Count { get; }
+	public bool IsReadOnly { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	private Dictionary<TKey, uint> get_KeyPositions() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2FBBF00 Offset: 0x2FBBF00 VA: 0x2FBBF00
+	|-SerializableDictionary<int, Color>.get_KeyPositions
+	|
+	|-RVA: 0x2FBCF00 Offset: 0x2FBCF00 VA: 0x2FBCF00
+	|-SerializableDictionary<int, int>.get_KeyPositions
+	|
+	|-RVA: 0x2FBDDC8 Offset: 0x2FBDDC8 VA: 0x2FBDDC8
+	|-SerializableDictionary<int, long>.get_KeyPositions
+	|
+	|-RVA: 0x2FBED34 Offset: 0x2FBED34 VA: 0x2FBED34
+	|-SerializableDictionary<int, object>.get_KeyPositions
+	|
+	|-RVA: 0x2FBFCAC Offset: 0x2FBFCAC VA: 0x2FBFCAC
+	|-SerializableDictionary<int, float>.get_KeyPositions
+	|
+	|-RVA: 0x2FC0B84 Offset: 0x2FC0B84 VA: 0x2FC0B84
+	|-SerializableDictionary<Int32Enum, int>.get_KeyPositions
+	|
+	|-RVA: 0x2FC1A4C Offset: 0x2FC1A4C VA: 0x2FC1A4C
+	|-SerializableDictionary<Int32Enum, object>.get_KeyPositions
+	|
+	|-RVA: 0x2FC29C4 Offset: 0x2FC29C4 VA: 0x2FC29C4
+	|-SerializableDictionary<Int32Enum, Vector3>.get_KeyPositions
+	|
+	|-RVA: 0x2FC3964 Offset: 0x2FC3964 VA: 0x2FC3964
+	|-SerializableDictionary<ItemInfo, object>.get_KeyPositions
+	|
+	|-RVA: 0x2FC49E4 Offset: 0x2FC49E4 VA: 0x2FC49E4
+	|-SerializableDictionary<object, object>.get_KeyPositions
+	|
+	|-RVA: 0x2FC5984 Offset: 0x2FC5984 VA: 0x2FC5984
+	|-SerializableDictionary<object, float>.get_KeyPositions
+	|
+	|-RVA: 0x2FC68FC Offset: 0x2FC68FC VA: 0x2FC68FC
+	|-SerializableDictionary<object, Vector3>.get_KeyPositions
+	|
+	|-RVA: 0x2FC795C Offset: 0x2FC795C VA: 0x2FC795C
+	|-SerializableDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.get_KeyPositions
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2FBBF30 Offset: 0x2FBBF30 VA: 0x2FBBF30
+	|-SerializableDictionary<int, Color>..ctor
+	|
+	|-RVA: 0x2FBCF30 Offset: 0x2FBCF30 VA: 0x2FBCF30
+	|-SerializableDictionary<int, int>..ctor
+	|
+	|-RVA: 0x2FBDDF8 Offset: 0x2FBDDF8 VA: 0x2FBDDF8
+	|-SerializableDictionary<int, long>..ctor
+	|
+	|-RVA: 0x2FBED64 Offset: 0x2FBED64 VA: 0x2FBED64
+	|-SerializableDictionary<int, object>..ctor
+	|
+	|-RVA: 0x2FBFCDC Offset: 0x2FBFCDC VA: 0x2FBFCDC
+	|-SerializableDictionary<int, float>..ctor
+	|
+	|-RVA: 0x2FC0BB4 Offset: 0x2FC0BB4 VA: 0x2FC0BB4
+	|-SerializableDictionary<Int32Enum, int>..ctor
+	|
+	|-RVA: 0x2FC1A7C Offset: 0x2FC1A7C VA: 0x2FC1A7C
+	|-SerializableDictionary<Int32Enum, object>..ctor
+	|
+	|-RVA: 0x2FC29F4 Offset: 0x2FC29F4 VA: 0x2FC29F4
+	|-SerializableDictionary<Int32Enum, Vector3>..ctor
+	|
+	|-RVA: 0x2FC3994 Offset: 0x2FC3994 VA: 0x2FC3994
+	|-SerializableDictionary<ItemInfo, object>..ctor
+	|
+	|-RVA: 0x2FC4A14 Offset: 0x2FC4A14 VA: 0x2FC4A14
+	|-SerializableDictionary<object, object>..ctor
+	|
+	|-RVA: 0x2FC59B4 Offset: 0x2FC59B4 VA: 0x2FC59B4
+	|-SerializableDictionary<object, float>..ctor
+	|
+	|-RVA: 0x2FC692C Offset: 0x2FC692C VA: 0x2FC692C
+	|-SerializableDictionary<object, Vector3>..ctor
+	|
+	|-RVA: 0x2FC79AC Offset: 0x2FC79AC VA: 0x2FC79AC
+	|-SerializableDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	private Dictionary<TKey, uint> MakeKeyPositions() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2FBC020 Offset: 0x2FBC020 VA: 0x2FBC020
+	|-SerializableDictionary<int, Color>.MakeKeyPositions
+	|
+	|-RVA: 0x2FBD020 Offset: 0x2FBD020 VA: 0x2FBD020
+	|-SerializableDictionary<int, int>.MakeKeyPositions
+	|
+	|-RVA: 0x2FBDEE8 Offset: 0x2FBDEE8 VA: 0x2FBDEE8
+	|-SerializableDictionary<int, long>.MakeKeyPositions
+	|
+	|-RVA: 0x2FBEE54 Offset: 0x2FBEE54 VA: 0x2FBEE54
+	|-SerializableDictionary<int, object>.MakeKeyPositions
+	|
+	|-RVA: 0x2FBFDCC Offset: 0x2FBFDCC VA: 0x2FBFDCC
+	|-SerializableDictionary<int, float>.MakeKeyPositions
+	|
+	|-RVA: 0x2FC0CA4 Offset: 0x2FC0CA4 VA: 0x2FC0CA4
+	|-SerializableDictionary<Int32Enum, int>.MakeKeyPositions
+	|
+	|-RVA: 0x2FC1B6C Offset: 0x2FC1B6C VA: 0x2FC1B6C
+	|-SerializableDictionary<Int32Enum, object>.MakeKeyPositions
+	|
+	|-RVA: 0x2FC2AE4 Offset: 0x2FC2AE4 VA: 0x2FC2AE4
+	|-SerializableDictionary<Int32Enum, Vector3>.MakeKeyPositions
+	|
+	|-RVA: 0x2FC3A84 Offset: 0x2FC3A84 VA: 0x2FC3A84
+	|-SerializableDictionary<ItemInfo, object>.MakeKeyPositions
+	|
+	|-RVA: 0x2FC4B04 Offset: 0x2FC4B04 VA: 0x2FC4B04
+	|-SerializableDictionary<object, object>.MakeKeyPositions
+	|
+	|-RVA: 0x2FC5AA4 Offset: 0x2FC5AA4 VA: 0x2FC5AA4
+	|-SerializableDictionary<object, float>.MakeKeyPositions
+	|
+	|-RVA: 0x2FC6A1C Offset: 0x2FC6A1C VA: 0x2FC6A1C
+	|-SerializableDictionary<object, Vector3>.MakeKeyPositions
+	|
+	|-RVA: 0x2FC7AA8 Offset: 0x2FC7AA8 VA: 0x2FC7AA8
+	|-SerializableDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.MakeKeyPositions
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public void OnBeforeSerialize() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2FBC100 Offset: 0x2FBC100 VA: 0x2FBC100
+	|-SerializableDictionary<int, Color>.OnBeforeSerialize
+	|
+	|-RVA: 0x2FBD100 Offset: 0x2FBD100 VA: 0x2FBD100
+	|-SerializableDictionary<int, int>.OnBeforeSerialize
+	|
+	|-RVA: 0x2FBDFC8 Offset: 0x2FBDFC8 VA: 0x2FBDFC8
+	|-SerializableDictionary<int, long>.OnBeforeSerialize
+	|
+	|-RVA: 0x2FBEF34 Offset: 0x2FBEF34 VA: 0x2FBEF34
+	|-SerializableDictionary<int, object>.OnBeforeSerialize
+	|
+	|-RVA: 0x2FBFEAC Offset: 0x2FBFEAC VA: 0x2FBFEAC
+	|-SerializableDictionary<int, float>.OnBeforeSerialize
+	|
+	|-RVA: 0x2FC0D84 Offset: 0x2FC0D84 VA: 0x2FC0D84
+	|-SerializableDictionary<Int32Enum, int>.OnBeforeSerialize
+	|
+	|-RVA: 0x2FC1C4C Offset: 0x2FC1C4C VA: 0x2FC1C4C
+	|-SerializableDictionary<Int32Enum, object>.OnBeforeSerialize
+	|
+	|-RVA: 0x2FC2BC4 Offset: 0x2FC2BC4 VA: 0x2FC2BC4
+	|-SerializableDictionary<Int32Enum, Vector3>.OnBeforeSerialize
+	|
+	|-RVA: 0x2FC3B70 Offset: 0x2FC3B70 VA: 0x2FC3B70
+	|-SerializableDictionary<ItemInfo, object>.OnBeforeSerialize
+	|
+	|-RVA: 0x2FC4BE4 Offset: 0x2FC4BE4 VA: 0x2FC4BE4
+	|-SerializableDictionary<object, object>.OnBeforeSerialize
+	|
+	|-RVA: 0x2FC5B84 Offset: 0x2FC5B84 VA: 0x2FC5B84
+	|-SerializableDictionary<object, float>.OnBeforeSerialize
+	|
+	|-RVA: 0x2FC6AFC Offset: 0x2FC6AFC VA: 0x2FC6AFC
+	|-SerializableDictionary<object, Vector3>.OnBeforeSerialize
+	|
+	|-RVA: 0x2FC7CA4 Offset: 0x2FC7CA4 VA: 0x2FC7CA4
+	|-SerializableDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.OnBeforeSerialize
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public void OnAfterDeserialize() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2FBC104 Offset: 0x2FBC104 VA: 0x2FBC104
+	|-SerializableDictionary<int, Color>.OnAfterDeserialize
+	|
+	|-RVA: 0x2FBD104 Offset: 0x2FBD104 VA: 0x2FBD104
+	|-SerializableDictionary<int, int>.OnAfterDeserialize
+	|
+	|-RVA: 0x2FBDFCC Offset: 0x2FBDFCC VA: 0x2FBDFCC
+	|-SerializableDictionary<int, long>.OnAfterDeserialize
+	|
+	|-RVA: 0x2FBEF38 Offset: 0x2FBEF38 VA: 0x2FBEF38
+	|-SerializableDictionary<int, object>.OnAfterDeserialize
+	|
+	|-RVA: 0x2FBFEB0 Offset: 0x2FBFEB0 VA: 0x2FBFEB0
+	|-SerializableDictionary<int, float>.OnAfterDeserialize
+	|
+	|-RVA: 0x2FC0D88 Offset: 0x2FC0D88 VA: 0x2FC0D88
+	|-SerializableDictionary<Int32Enum, int>.OnAfterDeserialize
+	|
+	|-RVA: 0x2FC1C50 Offset: 0x2FC1C50 VA: 0x2FC1C50
+	|-SerializableDictionary<Int32Enum, object>.OnAfterDeserialize
+	|
+	|-RVA: 0x2FC2BC8 Offset: 0x2FC2BC8 VA: 0x2FC2BC8
+	|-SerializableDictionary<Int32Enum, Vector3>.OnAfterDeserialize
+	|
+	|-RVA: 0x2FC3B74 Offset: 0x2FC3B74 VA: 0x2FC3B74
+	|-SerializableDictionary<ItemInfo, object>.OnAfterDeserialize
+	|
+	|-RVA: 0x2FC4BE8 Offset: 0x2FC4BE8 VA: 0x2FC4BE8
+	|-SerializableDictionary<object, object>.OnAfterDeserialize
+	|
+	|-RVA: 0x2FC5B88 Offset: 0x2FC5B88 VA: 0x2FC5B88
+	|-SerializableDictionary<object, float>.OnAfterDeserialize
+	|
+	|-RVA: 0x2FC6B00 Offset: 0x2FC6B00 VA: 0x2FC6B00
+	|-SerializableDictionary<object, Vector3>.OnAfterDeserialize
+	|
+	|-RVA: 0x2FC7CA8 Offset: 0x2FC7CA8 VA: 0x2FC7CA8
+	|-SerializableDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.OnAfterDeserialize
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public TValue get_Item(TKey key) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2FBC1A0 Offset: 0x2FBC1A0 VA: 0x2FBC1A0
+	|-SerializableDictionary<int, Color>.get_Item
+	|
+	|-RVA: 0x2FBD1A0 Offset: 0x2FBD1A0 VA: 0x2FBD1A0
+	|-SerializableDictionary<int, int>.get_Item
+	|
+	|-RVA: 0x2FBE068 Offset: 0x2FBE068 VA: 0x2FBE068
+	|-SerializableDictionary<int, long>.get_Item
+	|
+	|-RVA: 0x2FBEFD4 Offset: 0x2FBEFD4 VA: 0x2FBEFD4
+	|-SerializableDictionary<int, object>.get_Item
+	|
+	|-RVA: 0x2FBFF4C Offset: 0x2FBFF4C VA: 0x2FBFF4C
+	|-SerializableDictionary<int, float>.get_Item
+	|
+	|-RVA: 0x2FC0E24 Offset: 0x2FC0E24 VA: 0x2FC0E24
+	|-SerializableDictionary<Int32Enum, int>.get_Item
+	|
+	|-RVA: 0x2FC1CEC Offset: 0x2FC1CEC VA: 0x2FC1CEC
+	|-SerializableDictionary<Int32Enum, object>.get_Item
+	|
+	|-RVA: 0x2FC2C64 Offset: 0x2FC2C64 VA: 0x2FC2C64
+	|-SerializableDictionary<Int32Enum, Vector3>.get_Item
+	|
+	|-RVA: 0x2FC3C10 Offset: 0x2FC3C10 VA: 0x2FC3C10
+	|-SerializableDictionary<ItemInfo, object>.get_Item
+	|
+	|-RVA: 0x2FC4C84 Offset: 0x2FC4C84 VA: 0x2FC4C84
+	|-SerializableDictionary<object, object>.get_Item
+	|
+	|-RVA: 0x2FC5C24 Offset: 0x2FC5C24 VA: 0x2FC5C24
+	|-SerializableDictionary<object, float>.get_Item
+	|
+	|-RVA: 0x2FC6B9C Offset: 0x2FC6B9C VA: 0x2FC6B9C
+	|-SerializableDictionary<object, Vector3>.get_Item
+	|
+	|-RVA: 0x2FC7D4C Offset: 0x2FC7D4C VA: 0x2FC7D4C
+	|-SerializableDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.get_Item
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public void set_Item(TKey key, TValue value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2FBC250 Offset: 0x2FBC250 VA: 0x2FBC250
+	|-SerializableDictionary<int, Color>.set_Item
+	|
+	|-RVA: 0x2FBD224 Offset: 0x2FBD224 VA: 0x2FBD224
+	|-SerializableDictionary<int, int>.set_Item
+	|
+	|-RVA: 0x2FBE0F0 Offset: 0x2FBE0F0 VA: 0x2FBE0F0
+	|-SerializableDictionary<int, long>.set_Item
+	|
+	|-RVA: 0x2FBF058 Offset: 0x2FBF058 VA: 0x2FBF058
+	|-SerializableDictionary<int, object>.set_Item
+	|
+	|-RVA: 0x2FBFFD0 Offset: 0x2FBFFD0 VA: 0x2FBFFD0
+	|-SerializableDictionary<int, float>.set_Item
+	|
+	|-RVA: 0x2FC0EA8 Offset: 0x2FC0EA8 VA: 0x2FC0EA8
+	|-SerializableDictionary<Int32Enum, int>.set_Item
+	|
+	|-RVA: 0x2FC1D70 Offset: 0x2FC1D70 VA: 0x2FC1D70
+	|-SerializableDictionary<Int32Enum, object>.set_Item
+	|
+	|-RVA: 0x2FC2D14 Offset: 0x2FC2D14 VA: 0x2FC2D14
+	|-SerializableDictionary<Int32Enum, Vector3>.set_Item
+	|
+	|-RVA: 0x2FC3C9C Offset: 0x2FC3C9C VA: 0x2FC3C9C
+	|-SerializableDictionary<ItemInfo, object>.set_Item
+	|
+	|-RVA: 0x2FC4D08 Offset: 0x2FC4D08 VA: 0x2FC4D08
+	|-SerializableDictionary<object, object>.set_Item
+	|
+	|-RVA: 0x2FC5CA8 Offset: 0x2FC5CA8 VA: 0x2FC5CA8
+	|-SerializableDictionary<object, float>.set_Item
+	|
+	|-RVA: 0x2FC6C4C Offset: 0x2FC6C4C VA: 0x2FC6C4C
+	|-SerializableDictionary<object, Vector3>.set_Item
+	|
+	|-RVA: 0x2FC7F24 Offset: 0x2FC7F24 VA: 0x2FC7F24
+	|-SerializableDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.set_Item
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public ICollection<TKey> get_Keys() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2FBC3EC Offset: 0x2FBC3EC VA: 0x2FBC3EC
+	|-SerializableDictionary<int, Color>.get_Keys
+	|
+	|-RVA: 0x2FBD394 Offset: 0x2FBD394 VA: 0x2FBD394
+	|-SerializableDictionary<int, int>.get_Keys
+	|
+	|-RVA: 0x2FBE280 Offset: 0x2FBE280 VA: 0x2FBE280
+	|-SerializableDictionary<int, long>.get_Keys
+	|
+	|-RVA: 0x2FBF208 Offset: 0x2FBF208 VA: 0x2FBF208
+	|-SerializableDictionary<int, object>.get_Keys
+	|
+	|-RVA: 0x2FC0148 Offset: 0x2FC0148 VA: 0x2FC0148
+	|-SerializableDictionary<int, float>.get_Keys
+	|
+	|-RVA: 0x2FC1018 Offset: 0x2FC1018 VA: 0x2FC1018
+	|-SerializableDictionary<Int32Enum, int>.get_Keys
+	|
+	|-RVA: 0x2FC1F20 Offset: 0x2FC1F20 VA: 0x2FC1F20
+	|-SerializableDictionary<Int32Enum, object>.get_Keys
+	|
+	|-RVA: 0x2FC2EA0 Offset: 0x2FC2EA0 VA: 0x2FC2EA0
+	|-SerializableDictionary<Int32Enum, Vector3>.get_Keys
+	|
+	|-RVA: 0x2FC3E8C Offset: 0x2FC3E8C VA: 0x2FC3E8C
+	|-SerializableDictionary<ItemInfo, object>.get_Keys
+	|
+	|-RVA: 0x2FC4ED0 Offset: 0x2FC4ED0 VA: 0x2FC4ED0
+	|-SerializableDictionary<object, object>.get_Keys
+	|
+	|-RVA: 0x2FC5E54 Offset: 0x2FC5E54 VA: 0x2FC5E54
+	|-SerializableDictionary<object, float>.get_Keys
+	|
+	|-RVA: 0x2FC6E20 Offset: 0x2FC6E20 VA: 0x2FC6E20
+	|-SerializableDictionary<object, Vector3>.get_Keys
+	|
+	|-RVA: 0x2FC83B0 Offset: 0x2FC83B0 VA: 0x2FC83B0
+	|-SerializableDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.get_Keys
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public ICollection<TValue> get_Values() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2FBC560 Offset: 0x2FBC560 VA: 0x2FBC560
+	|-SerializableDictionary<int, Color>.get_Values
+	|
+	|-RVA: 0x2FBD508 Offset: 0x2FBD508 VA: 0x2FBD508
+	|-SerializableDictionary<int, int>.get_Values
+	|
+	|-RVA: 0x2FBE3F4 Offset: 0x2FBE3F4 VA: 0x2FBE3F4
+	|-SerializableDictionary<int, long>.get_Values
+	|
+	|-RVA: 0x2FBF37C Offset: 0x2FBF37C VA: 0x2FBF37C
+	|-SerializableDictionary<int, object>.get_Values
+	|
+	|-RVA: 0x2FC02BC Offset: 0x2FC02BC VA: 0x2FC02BC
+	|-SerializableDictionary<int, float>.get_Values
+	|
+	|-RVA: 0x2FC118C Offset: 0x2FC118C VA: 0x2FC118C
+	|-SerializableDictionary<Int32Enum, int>.get_Values
+	|
+	|-RVA: 0x2FC2094 Offset: 0x2FC2094 VA: 0x2FC2094
+	|-SerializableDictionary<Int32Enum, object>.get_Values
+	|
+	|-RVA: 0x2FC3014 Offset: 0x2FC3014 VA: 0x2FC3014
+	|-SerializableDictionary<Int32Enum, Vector3>.get_Values
+	|
+	|-RVA: 0x2FC4000 Offset: 0x2FC4000 VA: 0x2FC4000
+	|-SerializableDictionary<ItemInfo, object>.get_Values
+	|
+	|-RVA: 0x2FC5044 Offset: 0x2FC5044 VA: 0x2FC5044
+	|-SerializableDictionary<object, object>.get_Values
+	|
+	|-RVA: 0x2FC5FC8 Offset: 0x2FC5FC8 VA: 0x2FC5FC8
+	|-SerializableDictionary<object, float>.get_Values
+	|
+	|-RVA: 0x2FC6F94 Offset: 0x2FC6F94 VA: 0x2FC6F94
+	|-SerializableDictionary<object, Vector3>.get_Values
+	|
+	|-RVA: 0x2FC8530 Offset: 0x2FC8530 VA: 0x2FC8530
+	|-SerializableDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.get_Values
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public void Add(TKey key, TValue value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2FBC6D4 Offset: 0x2FBC6D4 VA: 0x2FBC6D4
+	|-SerializableDictionary<int, Color>.Add
+	|
+	|-RVA: 0x2FBD67C Offset: 0x2FBD67C VA: 0x2FBD67C
+	|-SerializableDictionary<int, int>.Add
+	|
+	|-RVA: 0x2FBE568 Offset: 0x2FBE568 VA: 0x2FBE568
+	|-SerializableDictionary<int, long>.Add
+	|
+	|-RVA: 0x2FBF4F0 Offset: 0x2FBF4F0 VA: 0x2FBF4F0
+	|-SerializableDictionary<int, object>.Add
+	|
+	|-RVA: 0x2FC0430 Offset: 0x2FC0430 VA: 0x2FC0430
+	|-SerializableDictionary<int, float>.Add
+	|
+	|-RVA: 0x2FC1300 Offset: 0x2FC1300 VA: 0x2FC1300
+	|-SerializableDictionary<Int32Enum, int>.Add
+	|
+	|-RVA: 0x2FC2208 Offset: 0x2FC2208 VA: 0x2FC2208
+	|-SerializableDictionary<Int32Enum, object>.Add
+	|
+	|-RVA: 0x2FC3188 Offset: 0x2FC3188 VA: 0x2FC3188
+	|-SerializableDictionary<Int32Enum, Vector3>.Add
+	|
+	|-RVA: 0x2FC4174 Offset: 0x2FC4174 VA: 0x2FC4174
+	|-SerializableDictionary<ItemInfo, object>.Add
+	|
+	|-RVA: 0x2FC51B8 Offset: 0x2FC51B8 VA: 0x2FC51B8
+	|-SerializableDictionary<object, object>.Add
+	|
+	|-RVA: 0x2FC613C Offset: 0x2FC613C VA: 0x2FC613C
+	|-SerializableDictionary<object, float>.Add
+	|
+	|-RVA: 0x2FC7108 Offset: 0x2FC7108 VA: 0x2FC7108
+	|-SerializableDictionary<object, Vector3>.Add
+	|
+	|-RVA: 0x2FC86B0 Offset: 0x2FC86B0 VA: 0x2FC86B0
+	|-SerializableDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.Add
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public bool ContainsKey(TKey key) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2FBC878 Offset: 0x2FBC878 VA: 0x2FBC878
+	|-SerializableDictionary<int, Color>.ContainsKey
+	|
+	|-RVA: 0x2FBD7EC Offset: 0x2FBD7EC VA: 0x2FBD7EC
+	|-SerializableDictionary<int, int>.ContainsKey
+	|
+	|-RVA: 0x2FBE700 Offset: 0x2FBE700 VA: 0x2FBE700
+	|-SerializableDictionary<int, long>.ContainsKey
+	|
+	|-RVA: 0x2FBF694 Offset: 0x2FBF694 VA: 0x2FBF694
+	|-SerializableDictionary<int, object>.ContainsKey
+	|
+	|-RVA: 0x2FC05A8 Offset: 0x2FC05A8 VA: 0x2FC05A8
+	|-SerializableDictionary<int, float>.ContainsKey
+	|
+	|-RVA: 0x2FC1470 Offset: 0x2FC1470 VA: 0x2FC1470
+	|-SerializableDictionary<Int32Enum, int>.ContainsKey
+	|
+	|-RVA: 0x2FC23AC Offset: 0x2FC23AC VA: 0x2FC23AC
+	|-SerializableDictionary<Int32Enum, object>.ContainsKey
+	|
+	|-RVA: 0x2FC331C Offset: 0x2FC331C VA: 0x2FC331C
+	|-SerializableDictionary<Int32Enum, Vector3>.ContainsKey
+	|
+	|-RVA: 0x2FC4340 Offset: 0x2FC4340 VA: 0x2FC4340
+	|-SerializableDictionary<ItemInfo, object>.ContainsKey
+	|
+	|-RVA: 0x2FC536C Offset: 0x2FC536C VA: 0x2FC536C
+	|-SerializableDictionary<object, object>.ContainsKey
+	|
+	|-RVA: 0x2FC62F0 Offset: 0x2FC62F0 VA: 0x2FC62F0
+	|-SerializableDictionary<object, float>.ContainsKey
+	|
+	|-RVA: 0x2FC72E4 Offset: 0x2FC72E4 VA: 0x2FC72E4
+	|-SerializableDictionary<object, Vector3>.ContainsKey
+	|
+	|-RVA: 0x2FC8A8C Offset: 0x2FC8A8C VA: 0x2FC8A8C
+	|-SerializableDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.ContainsKey
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 12
+	public bool Remove(TKey key) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2FBC8C0 Offset: 0x2FBC8C0 VA: 0x2FBC8C0
+	|-SerializableDictionary<int, Color>.Remove
+	|
+	|-RVA: 0x2FBD834 Offset: 0x2FBD834 VA: 0x2FBD834
+	|-SerializableDictionary<int, int>.Remove
+	|
+	|-RVA: 0x2FBE748 Offset: 0x2FBE748 VA: 0x2FBE748
+	|-SerializableDictionary<int, long>.Remove
+	|
+	|-RVA: 0x2FBF6DC Offset: 0x2FBF6DC VA: 0x2FBF6DC
+	|-SerializableDictionary<int, object>.Remove
+	|
+	|-RVA: 0x2FC05F0 Offset: 0x2FC05F0 VA: 0x2FC05F0
+	|-SerializableDictionary<int, float>.Remove
+	|
+	|-RVA: 0x2FC14B8 Offset: 0x2FC14B8 VA: 0x2FC14B8
+	|-SerializableDictionary<Int32Enum, int>.Remove
+	|
+	|-RVA: 0x2FC23F4 Offset: 0x2FC23F4 VA: 0x2FC23F4
+	|-SerializableDictionary<Int32Enum, object>.Remove
+	|
+	|-RVA: 0x2FC3364 Offset: 0x2FC3364 VA: 0x2FC3364
+	|-SerializableDictionary<Int32Enum, Vector3>.Remove
+	|
+	|-RVA: 0x2FC4390 Offset: 0x2FC4390 VA: 0x2FC4390
+	|-SerializableDictionary<ItemInfo, object>.Remove
+	|
+	|-RVA: 0x2FC53B4 Offset: 0x2FC53B4 VA: 0x2FC53B4
+	|-SerializableDictionary<object, object>.Remove
+	|
+	|-RVA: 0x2FC6338 Offset: 0x2FC6338 VA: 0x2FC6338
+	|-SerializableDictionary<object, float>.Remove
+	|
+	|-RVA: 0x2FC732C Offset: 0x2FC732C VA: 0x2FC732C
+	|-SerializableDictionary<object, Vector3>.Remove
+	|
+	|-RVA: 0x2FC8B80 Offset: 0x2FC8B80 VA: 0x2FC8B80
+	|-SerializableDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.Remove
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 13
+	public bool TryGetValue(TKey key, out TValue value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2FBCA40 Offset: 0x2FBCA40 VA: 0x2FBCA40
+	|-SerializableDictionary<int, Color>.TryGetValue
+	|
+	|-RVA: 0x2FBD9B4 Offset: 0x2FBD9B4 VA: 0x2FBD9B4
+	|-SerializableDictionary<int, int>.TryGetValue
+	|
+	|-RVA: 0x2FBE8C8 Offset: 0x2FBE8C8 VA: 0x2FBE8C8
+	|-SerializableDictionary<int, long>.TryGetValue
+	|
+	|-RVA: 0x2FBF85C Offset: 0x2FBF85C VA: 0x2FBF85C
+	|-SerializableDictionary<int, object>.TryGetValue
+	|
+	|-RVA: 0x2FC0770 Offset: 0x2FC0770 VA: 0x2FC0770
+	|-SerializableDictionary<int, float>.TryGetValue
+	|
+	|-RVA: 0x2FC1638 Offset: 0x2FC1638 VA: 0x2FC1638
+	|-SerializableDictionary<Int32Enum, int>.TryGetValue
+	|
+	|-RVA: 0x2FC2574 Offset: 0x2FC2574 VA: 0x2FC2574
+	|-SerializableDictionary<Int32Enum, object>.TryGetValue
+	|
+	|-RVA: 0x2FC34E4 Offset: 0x2FC34E4 VA: 0x2FC34E4
+	|-SerializableDictionary<Int32Enum, Vector3>.TryGetValue
+	|
+	|-RVA: 0x2FC4530 Offset: 0x2FC4530 VA: 0x2FC4530
+	|-SerializableDictionary<ItemInfo, object>.TryGetValue
+	|
+	|-RVA: 0x2FC5534 Offset: 0x2FC5534 VA: 0x2FC5534
+	|-SerializableDictionary<object, object>.TryGetValue
+	|
+	|-RVA: 0x2FC64B8 Offset: 0x2FC64B8 VA: 0x2FC64B8
+	|-SerializableDictionary<object, float>.TryGetValue
+	|
+	|-RVA: 0x2FC74AC Offset: 0x2FC74AC VA: 0x2FC74AC
+	|-SerializableDictionary<object, Vector3>.TryGetValue
+	|
+	|-RVA: 0x2FC8ED8 Offset: 0x2FC8ED8 VA: 0x2FC8ED8
+	|-SerializableDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.TryGetValue
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 14
+	public int get_Count() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2FBCB18 Offset: 0x2FBCB18 VA: 0x2FBCB18
+	|-SerializableDictionary<int, Color>.get_Count
+	|
+	|-RVA: 0x2FBDA6C Offset: 0x2FBDA6C VA: 0x2FBDA6C
+	|-SerializableDictionary<int, int>.get_Count
+	|
+	|-RVA: 0x2FBE98C Offset: 0x2FBE98C VA: 0x2FBE98C
+	|-SerializableDictionary<int, long>.get_Count
+	|
+	|-RVA: 0x2FBF920 Offset: 0x2FBF920 VA: 0x2FBF920
+	|-SerializableDictionary<int, object>.get_Count
+	|
+	|-RVA: 0x2FC0828 Offset: 0x2FC0828 VA: 0x2FC0828
+	|-SerializableDictionary<int, float>.get_Count
+	|
+	|-RVA: 0x2FC16F0 Offset: 0x2FC16F0 VA: 0x2FC16F0
+	|-SerializableDictionary<Int32Enum, int>.get_Count
+	|
+	|-RVA: 0x2FC2638 Offset: 0x2FC2638 VA: 0x2FC2638
+	|-SerializableDictionary<Int32Enum, object>.get_Count
+	|
+	|-RVA: 0x2FC35C4 Offset: 0x2FC35C4 VA: 0x2FC35C4
+	|-SerializableDictionary<Int32Enum, Vector3>.get_Count
+	|
+	|-RVA: 0x2FC4600 Offset: 0x2FC4600 VA: 0x2FC4600
+	|-SerializableDictionary<ItemInfo, object>.get_Count
+	|
+	|-RVA: 0x2FC55F8 Offset: 0x2FC55F8 VA: 0x2FC55F8
+	|-SerializableDictionary<object, object>.get_Count
+	|
+	|-RVA: 0x2FC6570 Offset: 0x2FC6570 VA: 0x2FC6570
+	|-SerializableDictionary<object, float>.get_Count
+	|
+	|-RVA: 0x2FC758C Offset: 0x2FC758C VA: 0x2FC758C
+	|-SerializableDictionary<object, Vector3>.get_Count
+	|
+	|-RVA: 0x2FC9120 Offset: 0x2FC9120 VA: 0x2FC9120
+	|-SerializableDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.get_Count
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public bool get_IsReadOnly() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2FBCB34 Offset: 0x2FBCB34 VA: 0x2FBCB34
+	|-SerializableDictionary<int, Color>.get_IsReadOnly
+	|
+	|-RVA: 0x2FBDA88 Offset: 0x2FBDA88 VA: 0x2FBDA88
+	|-SerializableDictionary<int, int>.get_IsReadOnly
+	|
+	|-RVA: 0x2FBE9A8 Offset: 0x2FBE9A8 VA: 0x2FBE9A8
+	|-SerializableDictionary<int, long>.get_IsReadOnly
+	|
+	|-RVA: 0x2FBF93C Offset: 0x2FBF93C VA: 0x2FBF93C
+	|-SerializableDictionary<int, object>.get_IsReadOnly
+	|
+	|-RVA: 0x2FC0844 Offset: 0x2FC0844 VA: 0x2FC0844
+	|-SerializableDictionary<int, float>.get_IsReadOnly
+	|
+	|-RVA: 0x2FC170C Offset: 0x2FC170C VA: 0x2FC170C
+	|-SerializableDictionary<Int32Enum, int>.get_IsReadOnly
+	|
+	|-RVA: 0x2FC2654 Offset: 0x2FC2654 VA: 0x2FC2654
+	|-SerializableDictionary<Int32Enum, object>.get_IsReadOnly
+	|
+	|-RVA: 0x2FC35E0 Offset: 0x2FC35E0 VA: 0x2FC35E0
+	|-SerializableDictionary<Int32Enum, Vector3>.get_IsReadOnly
+	|
+	|-RVA: 0x2FC461C Offset: 0x2FC461C VA: 0x2FC461C
+	|-SerializableDictionary<ItemInfo, object>.get_IsReadOnly
+	|
+	|-RVA: 0x2FC5614 Offset: 0x2FC5614 VA: 0x2FC5614
+	|-SerializableDictionary<object, object>.get_IsReadOnly
+	|
+	|-RVA: 0x2FC658C Offset: 0x2FC658C VA: 0x2FC658C
+	|-SerializableDictionary<object, float>.get_IsReadOnly
+	|
+	|-RVA: 0x2FC75A8 Offset: 0x2FC75A8 VA: 0x2FC75A8
+	|-SerializableDictionary<object, Vector3>.get_IsReadOnly
+	|
+	|-RVA: 0x2FC9154 Offset: 0x2FC9154 VA: 0x2FC9154
+	|-SerializableDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.get_IsReadOnly
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 16
+	public void Add(KeyValuePair<TKey, TValue> kvp) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2FBCB3C Offset: 0x2FBCB3C VA: 0x2FBCB3C
+	|-SerializableDictionary<int, Color>.Add
+	|
+	|-RVA: 0x2FBDA90 Offset: 0x2FBDA90 VA: 0x2FBDA90
+	|-SerializableDictionary<int, int>.Add
+	|
+	|-RVA: 0x2FBE9B0 Offset: 0x2FBE9B0 VA: 0x2FBE9B0
+	|-SerializableDictionary<int, long>.Add
+	|
+	|-RVA: 0x2FBF944 Offset: 0x2FBF944 VA: 0x2FBF944
+	|-SerializableDictionary<int, object>.Add
+	|
+	|-RVA: 0x2FC084C Offset: 0x2FC084C VA: 0x2FC084C
+	|-SerializableDictionary<int, float>.Add
+	|
+	|-RVA: 0x2FC1714 Offset: 0x2FC1714 VA: 0x2FC1714
+	|-SerializableDictionary<Int32Enum, int>.Add
+	|
+	|-RVA: 0x2FC265C Offset: 0x2FC265C VA: 0x2FC265C
+	|-SerializableDictionary<Int32Enum, object>.Add
+	|
+	|-RVA: 0x2FC35E8 Offset: 0x2FC35E8 VA: 0x2FC35E8
+	|-SerializableDictionary<Int32Enum, Vector3>.Add
+	|
+	|-RVA: 0x2FC4624 Offset: 0x2FC4624 VA: 0x2FC4624
+	|-SerializableDictionary<ItemInfo, object>.Add
+	|
+	|-RVA: 0x2FC561C Offset: 0x2FC561C VA: 0x2FC561C
+	|-SerializableDictionary<object, object>.Add
+	|
+	|-RVA: 0x2FC6594 Offset: 0x2FC6594 VA: 0x2FC6594
+	|-SerializableDictionary<object, float>.Add
+	|
+	|-RVA: 0x2FC75B0 Offset: 0x2FC75B0 VA: 0x2FC75B0
+	|-SerializableDictionary<object, Vector3>.Add
+	|
+	|-RVA: 0x2FC915C Offset: 0x2FC915C VA: 0x2FC915C
+	|-SerializableDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.Add
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 17
+	public void Clear() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2FBCB70 Offset: 0x2FBCB70 VA: 0x2FBCB70
+	|-SerializableDictionary<int, Color>.Clear
+	|
+	|-RVA: 0x2FBDAA0 Offset: 0x2FBDAA0 VA: 0x2FBDAA0
+	|-SerializableDictionary<int, int>.Clear
+	|
+	|-RVA: 0x2FBE9E4 Offset: 0x2FBE9E4 VA: 0x2FBE9E4
+	|-SerializableDictionary<int, long>.Clear
+	|
+	|-RVA: 0x2FBF954 Offset: 0x2FBF954 VA: 0x2FBF954
+	|-SerializableDictionary<int, object>.Clear
+	|
+	|-RVA: 0x2FC085C Offset: 0x2FC085C VA: 0x2FC085C
+	|-SerializableDictionary<int, float>.Clear
+	|
+	|-RVA: 0x2FC1724 Offset: 0x2FC1724 VA: 0x2FC1724
+	|-SerializableDictionary<Int32Enum, int>.Clear
+	|
+	|-RVA: 0x2FC266C Offset: 0x2FC266C VA: 0x2FC266C
+	|-SerializableDictionary<Int32Enum, object>.Clear
+	|
+	|-RVA: 0x2FC3618 Offset: 0x2FC3618 VA: 0x2FC3618
+	|-SerializableDictionary<Int32Enum, Vector3>.Clear
+	|
+	|-RVA: 0x2FC464C Offset: 0x2FC464C VA: 0x2FC464C
+	|-SerializableDictionary<ItemInfo, object>.Clear
+	|
+	|-RVA: 0x2FC562C Offset: 0x2FC562C VA: 0x2FC562C
+	|-SerializableDictionary<object, object>.Clear
+	|
+	|-RVA: 0x2FC65A4 Offset: 0x2FC65A4 VA: 0x2FC65A4
+	|-SerializableDictionary<object, float>.Clear
+	|
+	|-RVA: 0x2FC75E0 Offset: 0x2FC75E0 VA: 0x2FC75E0
+	|-SerializableDictionary<object, Vector3>.Clear
+	|
+	|-RVA: 0x2FC9294 Offset: 0x2FC9294 VA: 0x2FC9294
+	|-SerializableDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.Clear
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 18
+	public bool Contains(KeyValuePair<TKey, TValue> kvp) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2FBCB9C Offset: 0x2FBCB9C VA: 0x2FBCB9C
+	|-SerializableDictionary<int, Color>.Contains
+	|
+	|-RVA: 0x2FBDACC Offset: 0x2FBDACC VA: 0x2FBDACC
+	|-SerializableDictionary<int, int>.Contains
+	|
+	|-RVA: 0x2FBEA10 Offset: 0x2FBEA10 VA: 0x2FBEA10
+	|-SerializableDictionary<int, long>.Contains
+	|
+	|-RVA: 0x2FBF99C Offset: 0x2FBF99C VA: 0x2FBF99C
+	|-SerializableDictionary<int, object>.Contains
+	|
+	|-RVA: 0x2FC0888 Offset: 0x2FC0888 VA: 0x2FC0888
+	|-SerializableDictionary<int, float>.Contains
+	|
+	|-RVA: 0x2FC1750 Offset: 0x2FC1750 VA: 0x2FC1750
+	|-SerializableDictionary<Int32Enum, int>.Contains
+	|
+	|-RVA: 0x2FC26B4 Offset: 0x2FC26B4 VA: 0x2FC26B4
+	|-SerializableDictionary<Int32Enum, object>.Contains
+	|
+	|-RVA: 0x2FC3644 Offset: 0x2FC3644 VA: 0x2FC3644
+	|-SerializableDictionary<Int32Enum, Vector3>.Contains
+	|
+	|-RVA: 0x2FC4694 Offset: 0x2FC4694 VA: 0x2FC4694
+	|-SerializableDictionary<ItemInfo, object>.Contains
+	|
+	|-RVA: 0x2FC5674 Offset: 0x2FC5674 VA: 0x2FC5674
+	|-SerializableDictionary<object, object>.Contains
+	|
+	|-RVA: 0x2FC65EC Offset: 0x2FC65EC VA: 0x2FC65EC
+	|-SerializableDictionary<object, float>.Contains
+	|
+	|-RVA: 0x2FC7628 Offset: 0x2FC7628 VA: 0x2FC7628
+	|-SerializableDictionary<object, Vector3>.Contains
+	|
+	|-RVA: 0x2FC92C8 Offset: 0x2FC92C8 VA: 0x2FC92C8
+	|-SerializableDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.Contains
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 19
+	public void CopyTo(KeyValuePair<TKey, TValue>[] array, int arrayIndex) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2FBCBE4 Offset: 0x2FBCBE4 VA: 0x2FBCBE4
+	|-SerializableDictionary<int, Color>.CopyTo
+	|
+	|-RVA: 0x2FBDB14 Offset: 0x2FBDB14 VA: 0x2FBDB14
+	|-SerializableDictionary<int, int>.CopyTo
+	|
+	|-RVA: 0x2FBEA58 Offset: 0x2FBEA58 VA: 0x2FBEA58
+	|-SerializableDictionary<int, long>.CopyTo
+	|
+	|-RVA: 0x2FBF9E4 Offset: 0x2FBF9E4 VA: 0x2FBF9E4
+	|-SerializableDictionary<int, object>.CopyTo
+	|
+	|-RVA: 0x2FC08D0 Offset: 0x2FC08D0 VA: 0x2FC08D0
+	|-SerializableDictionary<int, float>.CopyTo
+	|
+	|-RVA: 0x2FC1798 Offset: 0x2FC1798 VA: 0x2FC1798
+	|-SerializableDictionary<Int32Enum, int>.CopyTo
+	|
+	|-RVA: 0x2FC26FC Offset: 0x2FC26FC VA: 0x2FC26FC
+	|-SerializableDictionary<Int32Enum, object>.CopyTo
+	|
+	|-RVA: 0x2FC368C Offset: 0x2FC368C VA: 0x2FC368C
+	|-SerializableDictionary<Int32Enum, Vector3>.CopyTo
+	|
+	|-RVA: 0x2FC46E4 Offset: 0x2FC46E4 VA: 0x2FC46E4
+	|-SerializableDictionary<ItemInfo, object>.CopyTo
+	|
+	|-RVA: 0x2FC56BC Offset: 0x2FC56BC VA: 0x2FC56BC
+	|-SerializableDictionary<object, object>.CopyTo
+	|
+	|-RVA: 0x2FC6634 Offset: 0x2FC6634 VA: 0x2FC6634
+	|-SerializableDictionary<object, float>.CopyTo
+	|
+	|-RVA: 0x2FC7670 Offset: 0x2FC7670 VA: 0x2FC7670
+	|-SerializableDictionary<object, Vector3>.CopyTo
+	|
+	|-RVA: 0x2FC93BC Offset: 0x2FC93BC VA: 0x2FC93BC
+	|-SerializableDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.CopyTo
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 20
+	public bool Remove(KeyValuePair<TKey, TValue> kvp) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2FBCD64 Offset: 0x2FBCD64 VA: 0x2FBCD64
+	|-SerializableDictionary<int, Color>.Remove
+	|
+	|-RVA: 0x2FBDC60 Offset: 0x2FBDC60 VA: 0x2FBDC60
+	|-SerializableDictionary<int, int>.Remove
+	|
+	|-RVA: 0x2FBEBB0 Offset: 0x2FBEBB0 VA: 0x2FBEBB0
+	|-SerializableDictionary<int, long>.Remove
+	|
+	|-RVA: 0x2FBFB44 Offset: 0x2FBFB44 VA: 0x2FBFB44
+	|-SerializableDictionary<int, object>.Remove
+	|
+	|-RVA: 0x2FC0A1C Offset: 0x2FC0A1C VA: 0x2FC0A1C
+	|-SerializableDictionary<int, float>.Remove
+	|
+	|-RVA: 0x2FC18E4 Offset: 0x2FC18E4 VA: 0x2FC18E4
+	|-SerializableDictionary<Int32Enum, int>.Remove
+	|
+	|-RVA: 0x2FC285C Offset: 0x2FC285C VA: 0x2FC285C
+	|-SerializableDictionary<Int32Enum, object>.Remove
+	|
+	|-RVA: 0x2FC37DC Offset: 0x2FC37DC VA: 0x2FC37DC
+	|-SerializableDictionary<Int32Enum, Vector3>.Remove
+	|
+	|-RVA: 0x2FC485C Offset: 0x2FC485C VA: 0x2FC485C
+	|-SerializableDictionary<ItemInfo, object>.Remove
+	|
+	|-RVA: 0x2FC581C Offset: 0x2FC581C VA: 0x2FC581C
+	|-SerializableDictionary<object, object>.Remove
+	|
+	|-RVA: 0x2FC6794 Offset: 0x2FC6794 VA: 0x2FC6794
+	|-SerializableDictionary<object, float>.Remove
+	|
+	|-RVA: 0x2FC77D4 Offset: 0x2FC77D4 VA: 0x2FC77D4
+	|-SerializableDictionary<object, Vector3>.Remove
+	|
+	|-RVA: 0x2FC97A8 Offset: 0x2FC97A8 VA: 0x2FC97A8
+	|-SerializableDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.Remove
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 21
+	public IEnumerator<KeyValuePair<TKey, TValue>> GetEnumerator() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2FBCD78 Offset: 0x2FBCD78 VA: 0x2FBCD78
+	|-SerializableDictionary<int, Color>.GetEnumerator
+	|
+	|-RVA: 0x2FBDC70 Offset: 0x2FBDC70 VA: 0x2FBDC70
+	|-SerializableDictionary<int, int>.GetEnumerator
+	|
+	|-RVA: 0x2FBEBC8 Offset: 0x2FBEBC8 VA: 0x2FBEBC8
+	|-SerializableDictionary<int, long>.GetEnumerator
+	|
+	|-RVA: 0x2FBFB54 Offset: 0x2FBFB54 VA: 0x2FBFB54
+	|-SerializableDictionary<int, object>.GetEnumerator
+	|
+	|-RVA: 0x2FC0A2C Offset: 0x2FC0A2C VA: 0x2FC0A2C
+	|-SerializableDictionary<int, float>.GetEnumerator
+	|
+	|-RVA: 0x2FC18F4 Offset: 0x2FC18F4 VA: 0x2FC18F4
+	|-SerializableDictionary<Int32Enum, int>.GetEnumerator
+	|
+	|-RVA: 0x2FC286C Offset: 0x2FC286C VA: 0x2FC286C
+	|-SerializableDictionary<Int32Enum, object>.GetEnumerator
+	|
+	|-RVA: 0x2FC37F0 Offset: 0x2FC37F0 VA: 0x2FC37F0
+	|-SerializableDictionary<Int32Enum, Vector3>.GetEnumerator
+	|
+	|-RVA: 0x2FC4870 Offset: 0x2FC4870 VA: 0x2FC4870
+	|-SerializableDictionary<ItemInfo, object>.GetEnumerator
+	|
+	|-RVA: 0x2FC582C Offset: 0x2FC582C VA: 0x2FC582C
+	|-SerializableDictionary<object, object>.GetEnumerator
+	|
+	|-RVA: 0x2FC67A4 Offset: 0x2FC67A4 VA: 0x2FC67A4
+	|-SerializableDictionary<object, float>.GetEnumerator
+	|
+	|-RVA: 0x2FC77E8 Offset: 0x2FC77E8 VA: 0x2FC77E8
+	|-SerializableDictionary<object, Vector3>.GetEnumerator
+	|
+	|-RVA: 0x2FC9878 Offset: 0x2FC9878 VA: 0x2FC9878
+	|-SerializableDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.GetEnumerator
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 22
+	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2FBCE74 Offset: 0x2FBCE74 VA: 0x2FBCE74
+	|-SerializableDictionary<int, Color>.System.Collections.IEnumerable.GetEnumerator
+	|
+	|-RVA: 0x2FBDD6C Offset: 0x2FBDD6C VA: 0x2FBDD6C
+	|-SerializableDictionary<int, int>.System.Collections.IEnumerable.GetEnumerator
+	|
+	|-RVA: 0x2FBECC4 Offset: 0x2FBECC4 VA: 0x2FBECC4
+	|-SerializableDictionary<int, long>.System.Collections.IEnumerable.GetEnumerator
+	|
+	|-RVA: 0x2FBFC50 Offset: 0x2FBFC50 VA: 0x2FBFC50
+	|-SerializableDictionary<int, object>.System.Collections.IEnumerable.GetEnumerator
+	|
+	|-RVA: 0x2FC0B28 Offset: 0x2FC0B28 VA: 0x2FC0B28
+	|-SerializableDictionary<int, float>.System.Collections.IEnumerable.GetEnumerator
+	|
+	|-RVA: 0x2FC19F0 Offset: 0x2FC19F0 VA: 0x2FC19F0
+	|-SerializableDictionary<Int32Enum, int>.System.Collections.IEnumerable.GetEnumerator
+	|
+	|-RVA: 0x2FC2968 Offset: 0x2FC2968 VA: 0x2FC2968
+	|-SerializableDictionary<Int32Enum, object>.System.Collections.IEnumerable.GetEnumerator
+	|
+	|-RVA: 0x2FC38EC Offset: 0x2FC38EC VA: 0x2FC38EC
+	|-SerializableDictionary<Int32Enum, Vector3>.System.Collections.IEnumerable.GetEnumerator
+	|
+	|-RVA: 0x2FC496C Offset: 0x2FC496C VA: 0x2FC496C
+	|-SerializableDictionary<ItemInfo, object>.System.Collections.IEnumerable.GetEnumerator
+	|
+	|-RVA: 0x2FC5928 Offset: 0x2FC5928 VA: 0x2FC5928
+	|-SerializableDictionary<object, object>.System.Collections.IEnumerable.GetEnumerator
+	|
+	|-RVA: 0x2FC68A0 Offset: 0x2FC68A0 VA: 0x2FC68A0
+	|-SerializableDictionary<object, float>.System.Collections.IEnumerable.GetEnumerator
+	|
+	|-RVA: 0x2FC78E4 Offset: 0x2FC78E4 VA: 0x2FC78E4
+	|-SerializableDictionary<object, Vector3>.System.Collections.IEnumerable.GetEnumerator
+	|
+	|-RVA: 0x2FC997C Offset: 0x2FC997C VA: 0x2FC997C
+	|-SerializableDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.System.Collections.IEnumerable.GetEnumerator
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	internal static KeyValuePair<TKey, TValue> <GetEnumerator>g__ToKeyValuePair|29_0(SerializableDictionary.SerializableKeyValuePair<TKey, TValue> skvp) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2FBCE84 Offset: 0x2FBCE84 VA: 0x2FBCE84
+	|-SerializableDictionary<int, Color>.<GetEnumerator>g__ToKeyValuePair|29_0
+	|
+	|-RVA: 0x2FBDD7C Offset: 0x2FBDD7C VA: 0x2FBDD7C
+	|-SerializableDictionary<int, int>.<GetEnumerator>g__ToKeyValuePair|29_0
+	|
+	|-RVA: 0x2FBECD4 Offset: 0x2FBECD4 VA: 0x2FBECD4
+	|-SerializableDictionary<int, long>.<GetEnumerator>g__ToKeyValuePair|29_0
+	|
+	|-RVA: 0x2FBFC60 Offset: 0x2FBFC60 VA: 0x2FBFC60
+	|-SerializableDictionary<int, object>.<GetEnumerator>g__ToKeyValuePair|29_0
+	|
+	|-RVA: 0x2FC0B38 Offset: 0x2FC0B38 VA: 0x2FC0B38
+	|-SerializableDictionary<int, float>.<GetEnumerator>g__ToKeyValuePair|29_0
+	|
+	|-RVA: 0x2FC1A00 Offset: 0x2FC1A00 VA: 0x2FC1A00
+	|-SerializableDictionary<Int32Enum, int>.<GetEnumerator>g__ToKeyValuePair|29_0
+	|
+	|-RVA: 0x2FC2978 Offset: 0x2FC2978 VA: 0x2FC2978
+	|-SerializableDictionary<Int32Enum, object>.<GetEnumerator>g__ToKeyValuePair|29_0
+	|
+	|-RVA: 0x2FC38FC Offset: 0x2FC38FC VA: 0x2FC38FC
+	|-SerializableDictionary<Int32Enum, Vector3>.<GetEnumerator>g__ToKeyValuePair|29_0
+	|
+	|-RVA: 0x2FC497C Offset: 0x2FC497C VA: 0x2FC497C
+	|-SerializableDictionary<ItemInfo, object>.<GetEnumerator>g__ToKeyValuePair|29_0
+	|
+	|-RVA: 0x2FC5938 Offset: 0x2FC5938 VA: 0x2FC5938
+	|-SerializableDictionary<object, object>.<GetEnumerator>g__ToKeyValuePair|29_0
+	|
+	|-RVA: 0x2FC68B0 Offset: 0x2FC68B0 VA: 0x2FC68B0
+	|-SerializableDictionary<object, float>.<GetEnumerator>g__ToKeyValuePair|29_0
+	|
+	|-RVA: 0x2FC78F4 Offset: 0x2FC78F4 VA: 0x2FC78F4
+	|-SerializableDictionary<object, Vector3>.<GetEnumerator>g__ToKeyValuePair|29_0
+	|
+	|-RVA: 0x2FC9990 Offset: 0x2FC9990 VA: 0x2FC9990
+	|-SerializableDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.<GetEnumerator>g__ToKeyValuePair|29_0
+	*/
+}
+

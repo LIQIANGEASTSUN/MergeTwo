@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardEventQueueModel.<>c // TypeDefIndex: 584
+{
+	// Fields
+	public static readonly BoardEventQueueModel.<>c <>9; // 0x0
+	public static Func<BackendBoardQueueItem, bool> <>9__10_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x6143E14 Offset: 0x613FE14 VA: 0x6143E14
+	private static void .cctor() { }
+
+	// RVA: 0x6143E7C Offset: 0x613FE7C VA: 0x6143E7C
+	public void .ctor() { }
+
+	// RVA: 0x6143E84 Offset: 0x613FE84 VA: 0x6143E84
+	internal bool <SetBoardEventQueue>b__10_0(BackendBoardQueueItem item) { }
+}
+

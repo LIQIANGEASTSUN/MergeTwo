@@ -1,0 +1,9 @@
+// Namespace: MergeEngine.Signal.Board
+public class ItemAddedOnBoardSignal // TypeDefIndex: 267
+{
+	// Methods
+
+	// RVA: 0x5FF4AB8 Offset: 0x5FF0AB8 VA: 0x5FF4AB8
+	public void .ctor() { }
+}
+

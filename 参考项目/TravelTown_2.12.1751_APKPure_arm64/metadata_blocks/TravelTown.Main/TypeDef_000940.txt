@@ -1,0 +1,105 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BaseToolAnalysisSystem.<>c<T> // TypeDefIndex: 940
+{
+	// Fields
+	public static readonly BaseToolAnalysisSystem.<>c<T> <>9; // 0x0
+	public static Func<T, bool> <>9__20_0; // 0x0
+	public static Func<LockedComponent, bool> <>9__24_0; // 0x0
+	public static Func<WeightedTool, int> <>9__33_0; // 0x0
+	public static Func<WeightedTool, PlayerResourceEnum> <>9__33_1; // 0x0
+	public static Func<WeightedToolLevel, int> <>9__34_0; // 0x0
+	public static Func<WeightedToolLevel, int> <>9__34_1; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	private static void .cctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3EF4BD0 Offset: 0x3EF0BD0 VA: 0x3EF4BD0
+	|-BaseToolAnalysisSystem.<>c<object>..cctor
+	|
+	|-RVA: 0x3EFA71C Offset: 0x3EF671C VA: 0x3EFA71C
+	|-BaseToolAnalysisSystem.<>c<__Il2CppFullySharedGenericType>..cctor
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3EF4C8C Offset: 0x3EF0C8C VA: 0x3EF4C8C
+	|-BaseToolAnalysisSystem.<>c<object>..ctor
+	|
+	|-RVA: 0x3EFA810 Offset: 0x3EF6810 VA: 0x3EFA810
+	|-BaseToolAnalysisSystem.<>c<__Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal bool <OnWillProcessComponents>b__20_0(T component) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3EF4C94 Offset: 0x3EF0C94 VA: 0x3EF4C94
+	|-BaseToolAnalysisSystem.<>c<object>.<OnWillProcessComponents>b__20_0
+	|
+	|-RVA: 0x3EFA818 Offset: 0x3EF6818 VA: 0x3EFA818
+	|-BaseToolAnalysisSystem.<>c<__Il2CppFullySharedGenericType>.<OnWillProcessComponents>b__20_0
+	*/
+
+	// RVA: -1 Offset: -1
+	internal bool <GetUnlockedItemsOnBoard>b__24_0(LockedComponent locked) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3EF4D34 Offset: 0x3EF0D34 VA: 0x3EF4D34
+	|-BaseToolAnalysisSystem.<>c<object>.<GetUnlockedItemsOnBoard>b__24_0
+	|
+	|-RVA: 0x3EFA920 Offset: 0x3EF6920 VA: 0x3EFA920
+	|-BaseToolAnalysisSystem.<>c<__Il2CppFullySharedGenericType>.<GetUnlockedItemsOnBoard>b__24_0
+	*/
+
+	// RVA: -1 Offset: -1
+	internal int <SelectRandomWeightedTool>b__33_0(WeightedTool weighted) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3EF4D5C Offset: 0x3EF0D5C VA: 0x3EF4D5C
+	|-BaseToolAnalysisSystem.<>c<object>.<SelectRandomWeightedTool>b__33_0
+	|
+	|-RVA: 0x3EFA948 Offset: 0x3EF6948 VA: 0x3EFA948
+	|-BaseToolAnalysisSystem.<>c<__Il2CppFullySharedGenericType>.<SelectRandomWeightedTool>b__33_0
+	*/
+
+	// RVA: -1 Offset: -1
+	internal PlayerResourceEnum <SelectRandomWeightedTool>b__33_1(WeightedTool weighted) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3EF4D64 Offset: 0x3EF0D64 VA: 0x3EF4D64
+	|-BaseToolAnalysisSystem.<>c<object>.<SelectRandomWeightedTool>b__33_1
+	|
+	|-RVA: 0x3EFA950 Offset: 0x3EF6950 VA: 0x3EFA950
+	|-BaseToolAnalysisSystem.<>c<__Il2CppFullySharedGenericType>.<SelectRandomWeightedTool>b__33_1
+	*/
+
+	// RVA: -1 Offset: -1
+	internal int <GenerateRandomToolFromWeights>b__34_0(WeightedToolLevel weightedToolLevel) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3EF4D6C Offset: 0x3EF0D6C VA: 0x3EF4D6C
+	|-BaseToolAnalysisSystem.<>c<object>.<GenerateRandomToolFromWeights>b__34_0
+	|
+	|-RVA: 0x3EFA958 Offset: 0x3EF6958 VA: 0x3EFA958
+	|-BaseToolAnalysisSystem.<>c<__Il2CppFullySharedGenericType>.<GenerateRandomToolFromWeights>b__34_0
+	*/
+
+	// RVA: -1 Offset: -1
+	internal int <GenerateRandomToolFromWeights>b__34_1(WeightedToolLevel weightedToolLevel) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3EF4D74 Offset: 0x3EF0D74 VA: 0x3EF4D74
+	|-BaseToolAnalysisSystem.<>c<object>.<GenerateRandomToolFromWeights>b__34_1
+	|
+	|-RVA: 0x3EFA960 Offset: 0x3EF6960 VA: 0x3EFA960
+	|-BaseToolAnalysisSystem.<>c<__Il2CppFullySharedGenericType>.<GenerateRandomToolFromWeights>b__34_1
+	*/
+}
+

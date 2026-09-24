@@ -1,0 +1,12 @@
+// Namespace: 
+public class CellMergeCollider : MonoBehaviour // TypeDefIndex: 30
+{
+	// Fields
+	public CellController CellController; // 0x10
+
+	// Methods
+
+	// RVA: 0x175E9CC Offset: 0x175E9CC VA: 0x175E9CC
+	public void .ctor() { }
+}
+

@@ -1,0 +1,141 @@
+// Namespace: MergeEngine.Model.Configuration
+public class GameConfigurationModel : ConfigurationModelBase<GameConfig>, IGameConfigurationModel // TypeDefIndex: 530
+{
+	// Fields
+	private const string ChestInfoUrlKey = "chestProbabilitiesInfoUrl";
+	private const string PackInfoUrlKey = "cardsInfoUrl";
+	private const string ItemSelectionBoxInfoUrlKey = "ISBInfoUrl";
+	[Inject]
+	private IUserProfileService _userProfileService; // 0x28
+	private GameConfig _gameConfig; // 0x30
+	private MutableBindableProperty<int> _buildNumber; // 0x38
+	private SkipCooldownConfig _skipCooldownConfigMainBoard; // 0x40
+	private SkipCooldownConfig _skipCooldownConfigLiveOpsBoard; // 0x48
+	private ProducerInventoryCapability _producerInventoryCapability; // 0x50
+	[CompilerGenerated]
+	private int <PreviousBuildNumber>k__BackingField; // 0x58
+
+	// Properties
+	public InventoryCapability InventoryCapability { get; }
+	public ProducerInventoryCapability ProducerInventoryCapability { get; }
+	public ReadOnlyCollection<IMergeItem> RatePopupTriggerItems { get; }
+	public BubbledItemsConfig BubbledItemsConfig { get; }
+	public SkipCooldownConfig SkipCooldownConfigMainBoard { get; }
+	public SkipCooldownConfig SkipCooldownConfigLiveOpsBoard { get; }
+	public BindableProperty<int> BuildNumber { get; }
+	public string AppVersion { get; }
+	public int MinSupportedBuildNumber { get; }
+	public string ChestInfoUrl { get; }
+	public string PackInfoUrl { get; }
+	public string ItemSelectionBoxInfoUrl { get; }
+	public string FacebookMessengerUrl { get; }
+	public string FacebookPageUrl { get; }
+	public string FacebookGroupUrl { get; }
+	public string TwitterPageUrl { get; }
+	public string InstagramPageUrl { get; }
+	public string ContactUsUrl { get; }
+	public string ContactUsUrlPath { get; }
+	public string ContactUsUrlWithFormPath { get; }
+	public string DeleteAccountFormId { get; }
+	public ZendeskLanguageMapping[] ZendeskLanguageMappings { get; }
+	public float ItemShopHCPriceMultiplier { get; }
+	public int PreviousBuildNumber { get; set; }
+	public int SnapshotUploadLimitPerDay { get; }
+	public string StoreUrl { get; }
+	public GameConfig GameConfig { get; }
+
+	// Methods
+
+	// RVA: 0x613B9F0 Offset: 0x61379F0 VA: 0x613B9F0 Slot: 20
+	public InventoryCapability get_InventoryCapability() { }
+
+	// RVA: 0x613BA0C Offset: 0x6137A0C VA: 0x613BA0C Slot: 21
+	public ProducerInventoryCapability get_ProducerInventoryCapability() { }
+
+	// RVA: 0x613BA14 Offset: 0x6137A14 VA: 0x613BA14 Slot: 22
+	public ReadOnlyCollection<IMergeItem> get_RatePopupTriggerItems() { }
+
+	// RVA: 0x613BA30 Offset: 0x6137A30 VA: 0x613BA30 Slot: 23
+	public BubbledItemsConfig get_BubbledItemsConfig() { }
+
+	// RVA: 0x613BA4C Offset: 0x6137A4C VA: 0x613BA4C Slot: 24
+	public SkipCooldownConfig get_SkipCooldownConfigMainBoard() { }
+
+	// RVA: 0x613BA54 Offset: 0x6137A54 VA: 0x613BA54 Slot: 25
+	public SkipCooldownConfig get_SkipCooldownConfigLiveOpsBoard() { }
+
+	// RVA: 0x613BA5C Offset: 0x6137A5C VA: 0x613BA5C Slot: 26
+	public BindableProperty<int> get_BuildNumber() { }
+
+	// RVA: 0x613BA64 Offset: 0x6137A64 VA: 0x613BA64 Slot: 27
+	public string get_AppVersion() { }
+
+	// RVA: 0x613BAB4 Offset: 0x6137AB4 VA: 0x613BAB4 Slot: 28
+	public int get_MinSupportedBuildNumber() { }
+
+	// RVA: 0x613BAD0 Offset: 0x6137AD0 VA: 0x613BAD0 Slot: 31
+	public string get_ChestInfoUrl() { }
+
+	// RVA: 0x613BBBC Offset: 0x6137BBC VA: 0x613BBBC Slot: 32
+	public string get_PackInfoUrl() { }
+
+	// RVA: 0x613BCA8 Offset: 0x6137CA8 VA: 0x613BCA8 Slot: 33
+	public string get_ItemSelectionBoxInfoUrl() { }
+
+	// RVA: 0x613BD94 Offset: 0x6137D94 VA: 0x613BD94 Slot: 34
+	public string get_FacebookMessengerUrl() { }
+
+	// RVA: 0x613BDB0 Offset: 0x6137DB0 VA: 0x613BDB0 Slot: 35
+	public string get_FacebookPageUrl() { }
+
+	// RVA: 0x613BDCC Offset: 0x6137DCC VA: 0x613BDCC Slot: 36
+	public string get_FacebookGroupUrl() { }
+
+	// RVA: 0x613BDE8 Offset: 0x6137DE8 VA: 0x613BDE8 Slot: 37
+	public string get_TwitterPageUrl() { }
+
+	// RVA: 0x613BE04 Offset: 0x6137E04 VA: 0x613BE04 Slot: 38
+	public string get_InstagramPageUrl() { }
+
+	// RVA: 0x613BE20 Offset: 0x6137E20 VA: 0x613BE20 Slot: 39
+	public string get_ContactUsUrl() { }
+
+	// RVA: 0x613BE3C Offset: 0x6137E3C VA: 0x613BE3C Slot: 40
+	public string get_ContactUsUrlPath() { }
+
+	// RVA: 0x613BE58 Offset: 0x6137E58 VA: 0x613BE58 Slot: 41
+	public string get_ContactUsUrlWithFormPath() { }
+
+	// RVA: 0x613BE74 Offset: 0x6137E74 VA: 0x613BE74 Slot: 42
+	public string get_DeleteAccountFormId() { }
+
+	// RVA: 0x613BE90 Offset: 0x6137E90 VA: 0x613BE90 Slot: 43
+	public ZendeskLanguageMapping[] get_ZendeskLanguageMappings() { }
+
+	// RVA: 0x613BEAC Offset: 0x6137EAC VA: 0x613BEAC Slot: 44
+	public float get_ItemShopHCPriceMultiplier() { }
+
+	[CompilerGenerated]
+	// RVA: 0x613BEC8 Offset: 0x6137EC8 VA: 0x613BEC8 Slot: 45
+	public int get_PreviousBuildNumber() { }
+
+	[CompilerGenerated]
+	// RVA: 0x613BED0 Offset: 0x6137ED0 VA: 0x613BED0 Slot: 46
+	public void set_PreviousBuildNumber(int value) { }
+
+	// RVA: 0x613BED8 Offset: 0x6137ED8 VA: 0x613BED8 Slot: 47
+	public int get_SnapshotUploadLimitPerDay() { }
+
+	// RVA: 0x613BEF4 Offset: 0x6137EF4 VA: 0x613BEF4 Slot: 29
+	public string get_StoreUrl() { }
+
+	// RVA: 0x613BF6C Offset: 0x6137F6C VA: 0x613BF6C Slot: 30
+	public GameConfig get_GameConfig() { }
+
+	// RVA: 0x613BF74 Offset: 0x6137F74 VA: 0x613BF74 Slot: 19
+	protected override void HandleDataLoaded(GameConfig data) { }
+
+	// RVA: 0x613C094 Offset: 0x6138094 VA: 0x613C094
+	public void .ctor() { }
+}
+

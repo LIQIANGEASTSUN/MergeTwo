@@ -1,0 +1,9 @@
+// Namespace: Merger.MergeBoard.CoinMultipliers.Data.TickInputActions
+public class CoinMultipliersUpdatedAction // TypeDefIndex: 26032
+{
+	// Methods
+
+	// RVA: 0x6A9F810 Offset: 0x6A9B810 VA: 0x6A9F810
+	public void .ctor() { }
+}
+

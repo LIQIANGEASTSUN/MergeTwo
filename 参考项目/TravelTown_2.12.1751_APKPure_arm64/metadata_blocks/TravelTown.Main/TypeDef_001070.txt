@@ -1,0 +1,196 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public class InteractionComponent : ComponentBase<InteractionCapability> // TypeDefIndex: 1070
+{
+	// Fields
+	public Action<InteractionComponent> OnInteractionConsumed; // 0x28
+	[CompilerGenerated]
+	private bool <Interacting>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private bool <TryFinishOrder>k__BackingField; // 0x31
+	private bool _interactionConsumed; // 0x32
+	[CompilerGenerated]
+	private bool <PlayerNotifiedOfCostNotAffordable>k__BackingField; // 0x33
+	[CompilerGenerated]
+	private PositionComponent <PreferredItemToConsume>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private IItemsCombiner.OnItemsCombined <ItemsConsumedCallback>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private readonly PlayerResourceEnum <ResourceToConsume>k__BackingField; // 0x48
+	[CompilerGenerated]
+	private int <ResourceAmountToConsume>k__BackingField; // 0x4C
+	[CompilerGenerated]
+	private readonly int <DefaultResourceAmountToConsume>k__BackingField; // 0x50
+	[CompilerGenerated]
+	private readonly bool <InteractionCostsResource>k__BackingField; // 0x54
+	[CompilerGenerated]
+	private readonly bool <InteractionCostsItems>k__BackingField; // 0x55
+	[CompilerGenerated]
+	private ItemMultiple[] <ItemsToConsume>k__BackingField; // 0x58
+	[CompilerGenerated]
+	private ItemMultiple[] <ConsumedItems>k__BackingField; // 0x60
+	[CompilerGenerated]
+	private int <TotalInteractions>k__BackingField; // 0x68
+	[CompilerGenerated]
+	private readonly ItemConsumeMode <ConsumeMode>k__BackingField; // 0x6C
+	[CompilerGenerated]
+	private readonly List<Combination> <Combinations>k__BackingField; // 0x70
+	[CompilerGenerated]
+	private readonly Dictionary<int, List<Action>> <CostConsumedCallbacks>k__BackingField; // 0x78
+	[CompilerGenerated]
+	private readonly HashSet<int> <InvokedCallbackIds>k__BackingField; // 0x80
+	public int CurrentCallbackId; // 0x88
+	private static int _nextCallbackId; // 0x0
+
+	// Properties
+	public bool Interacting { get; set; }
+	public bool TryFinishOrder { get; set; }
+	public bool InteractionConsumed { get; set; }
+	public bool PlayerNotifiedOfCostNotAffordable { get; set; }
+	public PositionComponent PreferredItemToConsume { get; set; }
+	public IItemsCombiner.OnItemsCombined ItemsConsumedCallback { get; set; }
+	public PlayerResourceEnum ResourceToConsume { get; }
+	public int ResourceAmountToConsume { get; set; }
+	public int DefaultResourceAmountToConsume { get; }
+	public bool InteractionCostsResource { get; }
+	public bool InteractionCostsItems { get; }
+	public ItemMultiple[] ItemsToConsume { get; set; }
+	public ItemMultiple[] ConsumedItems { get; set; }
+	public int TotalInteractions { get; set; }
+	public ItemConsumeMode ConsumeMode { get; }
+	public List<Combination> Combinations { get; }
+	public Dictionary<int, List<Action>> CostConsumedCallbacks { get; }
+	public HashSet<int> InvokedCallbackIds { get; }
+	public static int NextCallbackId { get; }
+	public bool HasInteractionCost { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x68FCA18 Offset: 0x68F8A18 VA: 0x68FCA18
+	public bool get_Interacting() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FCA20 Offset: 0x68F8A20 VA: 0x68FCA20
+	public void set_Interacting(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FCA2C Offset: 0x68F8A2C VA: 0x68FCA2C
+	public bool get_TryFinishOrder() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FCA34 Offset: 0x68F8A34 VA: 0x68FCA34
+	public void set_TryFinishOrder(bool value) { }
+
+	// RVA: 0x68FCA40 Offset: 0x68F8A40 VA: 0x68FCA40
+	public bool get_InteractionConsumed() { }
+
+	// RVA: 0x68FCA48 Offset: 0x68F8A48 VA: 0x68FCA48
+	public void set_InteractionConsumed(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FCA80 Offset: 0x68F8A80 VA: 0x68FCA80
+	public bool get_PlayerNotifiedOfCostNotAffordable() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FCA88 Offset: 0x68F8A88 VA: 0x68FCA88
+	public void set_PlayerNotifiedOfCostNotAffordable(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FCA94 Offset: 0x68F8A94 VA: 0x68FCA94
+	public PositionComponent get_PreferredItemToConsume() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FCA9C Offset: 0x68F8A9C VA: 0x68FCA9C
+	public void set_PreferredItemToConsume(PositionComponent value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FCAA4 Offset: 0x68F8AA4 VA: 0x68FCAA4
+	public IItemsCombiner.OnItemsCombined get_ItemsConsumedCallback() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FCAAC Offset: 0x68F8AAC VA: 0x68FCAAC
+	public void set_ItemsConsumedCallback(IItemsCombiner.OnItemsCombined value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FCAB4 Offset: 0x68F8AB4 VA: 0x68FCAB4
+	public PlayerResourceEnum get_ResourceToConsume() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FCABC Offset: 0x68F8ABC VA: 0x68FCABC
+	public int get_ResourceAmountToConsume() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FCAC4 Offset: 0x68F8AC4 VA: 0x68FCAC4
+	public void set_ResourceAmountToConsume(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FCACC Offset: 0x68F8ACC VA: 0x68FCACC
+	public int get_DefaultResourceAmountToConsume() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FCAD4 Offset: 0x68F8AD4 VA: 0x68FCAD4
+	public bool get_InteractionCostsResource() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FCADC Offset: 0x68F8ADC VA: 0x68FCADC
+	public bool get_InteractionCostsItems() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FCAE4 Offset: 0x68F8AE4 VA: 0x68FCAE4
+	public ItemMultiple[] get_ItemsToConsume() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FCAEC Offset: 0x68F8AEC VA: 0x68FCAEC
+	private void set_ItemsToConsume(ItemMultiple[] value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FCAF4 Offset: 0x68F8AF4 VA: 0x68FCAF4
+	public ItemMultiple[] get_ConsumedItems() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FCAFC Offset: 0x68F8AFC VA: 0x68FCAFC
+	public void set_ConsumedItems(ItemMultiple[] value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FCB04 Offset: 0x68F8B04 VA: 0x68FCB04
+	public int get_TotalInteractions() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FCB0C Offset: 0x68F8B0C VA: 0x68FCB0C
+	public void set_TotalInteractions(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FCB14 Offset: 0x68F8B14 VA: 0x68FCB14
+	public ItemConsumeMode get_ConsumeMode() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FCB1C Offset: 0x68F8B1C VA: 0x68FCB1C
+	public List<Combination> get_Combinations() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FCB24 Offset: 0x68F8B24 VA: 0x68FCB24
+	public Dictionary<int, List<Action>> get_CostConsumedCallbacks() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FCB2C Offset: 0x68F8B2C VA: 0x68FCB2C
+	public HashSet<int> get_InvokedCallbackIds() { }
+
+	// RVA: 0x68FCB34 Offset: 0x68F8B34 VA: 0x68FCB34
+	public static int get_NextCallbackId() { }
+
+	// RVA: 0x68FCB84 Offset: 0x68F8B84 VA: 0x68FCB84
+	public bool get_HasInteractionCost() { }
+
+	// RVA: 0x68FCBB4 Offset: 0x68F8BB4 VA: 0x68FCBB4
+	public void .ctor(InteractionCapability capability, Entity entity) { }
+
+	// RVA: 0x68FCD78 Offset: 0x68F8D78 VA: 0x68FCD78
+	private void FillItemsToConsume(List<Combination> combinations) { }
+
+	// RVA: 0x68FCF84 Offset: 0x68F8F84 VA: 0x68FCF84
+	public void AddCostConsumedCallback(Action callback) { }
+
+	// RVA: 0x68FD11C Offset: 0x68F911C VA: 0x68FD11C
+	public void TryInvokeCallback(int interactionCallbackId) { }
+}
+

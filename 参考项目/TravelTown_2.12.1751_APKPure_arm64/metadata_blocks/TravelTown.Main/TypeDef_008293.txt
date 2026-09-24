@@ -1,0 +1,39 @@
+// Namespace: Merger.Game.ViewModel
+public class ItemViewModelBase : GameBaseViewModel // TypeDefIndex: 8293
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _configurationModel; // 0xD0
+	[Inject]
+	private IPlayerItemsCollectionModel _itemsCollectionModel; // 0xD8
+
+	// Methods
+
+	// RVA: 0x662CD48 Offset: 0x6628D48 VA: 0x662CD48
+	public IMergeGraphItem GetGraphFor(IMergeItem mergeItem) { }
+
+	// RVA: 0x662CE68 Offset: 0x6628E68 VA: 0x662CE68
+	public int GetItemIndex(IMergeItem mergeItem) { }
+
+	// RVA: 0x662CF14 Offset: 0x6628F14 VA: 0x662CF14
+	public int GetItemLevel(IMergeItem item) { }
+
+	// RVA: 0x662A660 Offset: 0x6626660 VA: 0x662A660
+	public IMergeItem GetNextItem(IMergeItem item) { }
+
+	// RVA: 0x662D034 Offset: 0x6629034 VA: 0x662D034
+	public IMergeItem GetItemFromComponent(IComponentBase component) { }
+
+	// RVA: 0x662D0E0 Offset: 0x66290E0 VA: 0x662D0E0
+	public string GetResourceName(PlayerResourceEnum resource) { }
+
+	// RVA: 0x662D1C8 Offset: 0x66291C8 VA: 0x662D1C8
+	public string GetResourceSpriteTag(PlayerResourceEnum resource) { }
+
+	// RVA: 0x662D2B0 Offset: 0x66292B0 VA: 0x662D2B0
+	public bool IsCollected(IMergeItem mergeItem) { }
+
+	// RVA: 0x662AA38 Offset: 0x6626A38 VA: 0x662AA38
+	public void .ctor() { }
+}
+

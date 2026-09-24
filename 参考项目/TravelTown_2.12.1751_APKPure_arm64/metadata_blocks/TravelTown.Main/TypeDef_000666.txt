@@ -1,0 +1,46 @@
+// Namespace: MergeEngine.ECS.Systems
+public class ItemConsumeSystem : SystemBase // TypeDefIndex: 666
+{
+	// Fields
+	[InjectComponent]
+	private BoardItemCountComponent _boardItemCountComponent; // 0x40
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x48
+	[InjectSystem]
+	private BoardSystem _boardSystem; // 0x50
+	[InjectSystem]
+	private CombiningSystem _combiningSystem; // 0x58
+
+	// Methods
+
+	// RVA: 0x627FF78 Offset: 0x627BF78 VA: 0x627FF78
+	public bool CanAffordItemInteractionCost(InteractionComponent interactionComponent) { }
+
+	// RVA: 0x6280184 Offset: 0x627C184 VA: 0x6280184
+	public bool TryConsumeInteractionCostItems(InteractionComponent interactionComponent, OperationContext context, Action<int> onComplete, out List<ItemMultiple> consumedItems) { }
+
+	// RVA: 0x628AB74 Offset: 0x6286B74 VA: 0x628AB74
+	private ItemMultiple[] GetConsumedItems(InteractionComponent interactionComponent) { }
+
+	// RVA: 0x628AEC8 Offset: 0x6286EC8 VA: 0x628AEC8
+	private ItemMultiple[] GetAnyConsumedItems(InteractionComponent interactionComponent) { }
+
+	// RVA: 0x628ABF0 Offset: 0x6286BF0 VA: 0x628ABF0
+	private Tuple<IMergeItem, PositionComponent> TryFindPreferredItemFromHint(ItemMultiple[] consumedItems) { }
+
+	// RVA: 0x628B1E8 Offset: 0x62871E8 VA: 0x628B1E8
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x628B1F0 Offset: 0x62871F0 VA: 0x628B1F0
+	private bool <CanAffordItemInteractionCost>b__4_0(ItemMultiple itemMultiple) { }
+
+	[CompilerGenerated]
+	// RVA: 0x628B278 Offset: 0x6287278 VA: 0x628B278
+	private bool <CanAffordItemInteractionCost>b__4_1(ItemMultiple itemMultiple) { }
+
+	[CompilerGenerated]
+	// RVA: 0x628B300 Offset: 0x6287300 VA: 0x628B300
+	private bool <GetAnyConsumedItems>b__7_0(ItemMultiple itemMultiple) { }
+}
+

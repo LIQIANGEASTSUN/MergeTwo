@@ -1,0 +1,16 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class PickBoxSelectedEntity // TypeDefIndex: 2693
+{
+	// Fields
+	public List<RewardEntity> RewardEntities; // 0x8
+
+	// Methods
+
+	// RVA: 0x1A5C4A4 Offset: 0x1A5C4A4 VA: 0x1A5C4A4
+	public void .ctor() { }
+
+	// RVA: 0x1A5C4AC Offset: 0x1A5C4AC VA: 0x1A5C4AC
+	public void .ctor(List<RewardEntity> rewardEntities) { }
+}
+

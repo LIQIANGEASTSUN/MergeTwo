@@ -1,0 +1,14 @@
+// Namespace: MergeEngine.ECS.Systems.Items
+[Serializable]
+public class SerializedMergeItemBoosterComponent // TypeDefIndex: 938
+{
+	// Fields
+	public string UUId; // 0x10
+	public string ConfigurationId; // 0x18
+
+	// Methods
+
+	// RVA: 0x678984C Offset: 0x678584C VA: 0x678984C
+	public void .ctor() { }
+}
+

@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class InventoryEntity.<>c__DisplayClass25_0 // TypeDefIndex: 1951
+{
+	// Fields
+	public ItemChainManager itemChainManager; // 0x8
+	public BoardItemSetData setData; // 0xC
+
+	// Methods
+
+	// RVA: 0x1937134 Offset: 0x1937134 VA: 0x1937134
+	public void .ctor() { }
+
+	// RVA: 0x19372B4 Offset: 0x19372B4 VA: 0x19372B4
+	internal bool <ToSpawnerInventory>b__0(InventoryEntity.InventorySpawnerEntity s) { }
+}
+

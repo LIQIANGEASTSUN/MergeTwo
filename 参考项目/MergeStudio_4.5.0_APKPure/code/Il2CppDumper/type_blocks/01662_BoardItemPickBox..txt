@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardItemPickBox.<>c__DisplayClass9_0 // TypeDefIndex: 1662
+{
+	// Fields
+	public int option1SelectedSet; // 0x8
+	public int option2SelectedSet; // 0xC
+
+	// Methods
+
+	// RVA: 0x18CB760 Offset: 0x18CB760 VA: 0x18CB760
+	public void .ctor() { }
+
+	// RVA: 0x18CBA98 Offset: 0x18CBA98 VA: 0x18CBA98
+	internal bool <GetRandomItemForOption3>b__0(SpawnedItem el) { }
+}
+

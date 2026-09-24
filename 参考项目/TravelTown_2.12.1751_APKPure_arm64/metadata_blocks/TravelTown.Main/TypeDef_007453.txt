@@ -1,0 +1,70 @@
+// Namespace: Merger.Bubbles
+public class SmarterBubblesProbabilityModel : GameModelBase, ISmarterBubblesProbabilityModel // TypeDefIndex: 7453
+{
+	// Fields
+	[Inject]
+	private DiContainer _container; // 0x38
+	[Inject]
+	private IBubbledItemsConfigurationModel _bubbledItemsConfigurationModel; // 0x40
+	[Inject]
+	private ISmarterBubblesAnalyticsModel _analyticsModel; // 0x48
+	[Inject]
+	private IEntityManager _entityManager; // 0x50
+	[Inject]
+	private IBubbleDropProbabilityModifier[] _modifiers; // 0x58
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0x60
+	private SmarterBubblesConfig _smarterBubblesConfig; // 0x68
+	[CompilerGenerated]
+	private SmarterBubblesCheatData <CheatData>k__BackingField; // 0x70
+
+	// Properties
+	public SmarterBubblesCheatData CheatData { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x657A0C0 Offset: 0x65760C0 VA: 0x657A0C0
+	public SmarterBubblesCheatData get_CheatData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x657A0C8 Offset: 0x65760C8 VA: 0x657A0C8
+	public void set_CheatData(SmarterBubblesCheatData value) { }
+
+	// RVA: 0x657A0D0 Offset: 0x65760D0 VA: 0x657A0D0 Slot: 17
+	protected override void InitializeModel() { }
+
+	// RVA: 0x657A27C Offset: 0x657627C VA: 0x657A27C
+	private void BoardTypeChanged(CurrentBoardType boardType) { }
+
+	// RVA: 0x657A3E0 Offset: 0x65763E0 VA: 0x657A3E0
+	private void OnGameStarted(bool value) { }
+
+	// RVA: 0x657A56C Offset: 0x657656C VA: 0x657A56C
+	private void TryRegisterModifiers() { }
+
+	// RVA: 0x657A75C Offset: 0x657675C VA: 0x657A75C Slot: 19
+	public float GetBubbleProbability(IMergeItem mergeItem) { }
+
+	// RVA: 0x657A280 Offset: 0x6576280 VA: 0x657A280
+	private void ResetPreviousBubbleCachedData() { }
+
+	// RVA: 0x657B2D8 Offset: 0x65772D8 VA: 0x657B2D8 Slot: 20
+	public void UpdateModifiers() { }
+
+	// RVA: 0x657B168 Offset: 0x6577168 VA: 0x657B168
+	private Nullable<float> GetOverrideValue(IMergeItem mergeItem) { }
+
+	// RVA: 0x657AE38 Offset: 0x6576E38 VA: 0x657AE38
+	private float GetBaseProbability() { }
+
+	// RVA: 0x657B3C0 Offset: 0x65773C0 VA: 0x657B3C0 Slot: 18
+	protected override void DisposeModel() { }
+
+	// RVA: 0x657AE50 Offset: 0x6576E50 VA: 0x657AE50
+	private bool IsItemAlreadyOnBoard(IMergeItem mergeItem) { }
+
+	// RVA: 0x657B480 Offset: 0x6577480 VA: 0x657B480
+	public void .ctor() { }
+}
+

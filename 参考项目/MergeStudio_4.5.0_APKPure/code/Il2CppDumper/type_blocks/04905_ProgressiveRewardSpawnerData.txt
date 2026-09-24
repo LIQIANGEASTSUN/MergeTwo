@@ -1,0 +1,9 @@
+// Namespace: MergePuzzle.DailyChallenge
+public class ProgressiveRewardSpawnerData : DailyChallengeDayData // TypeDefIndex: 4905
+{
+	// Methods
+
+	// RVA: 0x1DF0EA8 Offset: 0x1DF0EA8 VA: 0x1DF0EA8
+	public void .ctor(KiteDailyChallengeDayConfig remoteConfig) { }
+}
+

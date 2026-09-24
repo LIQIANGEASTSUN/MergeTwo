@@ -1,0 +1,31 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "BoardItemCardPack", menuName = "Scriptable/BoardItem/BoardItemCardPack", order = 0)]
+public class BoardItemCardPack : BoardItemNonSpawnable // TypeDefIndex: 1641
+{
+	// Methods
+
+	// RVA: 0x18C63D4 Offset: 0x18C63D4 VA: 0x18C63D4 Slot: 4
+	public override bool Initialize(BoardEntity boardEntity, IItemController item, long millisecondsPassed, bool isNewlyCreated) { }
+
+	// RVA: 0x18C63DC Offset: 0x18C63DC VA: 0x18C63DC Slot: 6
+	public override int GetTimeRequiredToExitCharging() { }
+
+	// RVA: 0x18C63E4 Offset: 0x18C63E4 VA: 0x18C63E4 Slot: 7
+	public override bool IsCardCollectionItem() { }
+
+	// RVA: 0x18C63EC Offset: 0x18C63EC VA: 0x18C63EC Slot: 8
+	public override bool IsMergeable(IItemRuntimeData itself, IItemRuntimeData other) { }
+
+	// RVA: 0x18C63F4 Offset: 0x18C63F4 VA: 0x18C63F4 Slot: 9
+	public override bool IsMergeable(IItemRuntimeData itself) { }
+
+	// RVA: 0x18C63FC Offset: 0x18C63FC VA: 0x18C63FC Slot: 10
+	public override bool IsMergeable(IItemEntity itemEntity) { }
+
+	// RVA: 0x18C6404 Offset: 0x18C6404 VA: 0x18C6404 Slot: 13
+	public override bool CanThrownIntoBoard() { }
+
+	// RVA: 0x18C640C Offset: 0x18C640C VA: 0x18C640C
+	public void .ctor() { }
+}
+

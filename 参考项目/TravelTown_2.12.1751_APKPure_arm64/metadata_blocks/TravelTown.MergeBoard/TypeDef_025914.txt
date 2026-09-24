@@ -1,0 +1,31 @@
+// Namespace: Merger.MergeBoard.Extensions
+[Extension]
+public static class MergeBoardLayoutExtensions // TypeDefIndex: 25914
+{
+	// Methods
+
+	[Extension]
+	// RVA: 0x6A99134 Offset: 0x6A95134 VA: 0x6A99134
+	public static BoardItemPosition GetItemPositionForIndex(IMergeBoardLayout layout, int index) { }
+
+	[Extension]
+	// RVA: 0x6A99240 Offset: 0x6A95240 VA: 0x6A99240
+	public static int GetIndexFromBoardItemPosition(IMergeBoardLayout layout, BoardItemPosition position) { }
+
+	[Extension]
+	// RVA: 0x6A9932C Offset: 0x6A9532C VA: 0x6A9932C
+	public static Transform GetTransformForPosition(IMergeBoardLayout layout, BoardItemPosition position) { }
+
+	[Extension]
+	// RVA: 0x6A993DC Offset: 0x6A953DC VA: 0x6A993DC
+	public static bool TryGetClosestEmptyPositionFromContext(IMergeBoardLayout layout, TickContext context, BoardTilePositionComponent producerPositionComponent, out int emptyPosition) { }
+
+	[Extension]
+	// RVA: 0x6A99684 Offset: 0x6A95684 VA: 0x6A99684
+	public static bool TryGetRandomEmptyPositionIncludingDeadPosition(IMergeBoardLayout layout, TickContext context, int deadPosition, out int emptyPosition) { }
+
+	[Extension]
+	// RVA: 0x6A99994 Offset: 0x6A95994 VA: 0x6A99994
+	public static bool TryGetRandomEmptyPositionFromContext(IMergeBoardLayout layout, TickContext context, out int emptyPosition) { }
+}
+

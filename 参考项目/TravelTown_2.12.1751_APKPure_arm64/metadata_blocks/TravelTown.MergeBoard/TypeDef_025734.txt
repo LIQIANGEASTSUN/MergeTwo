@@ -1,0 +1,12 @@
+// Namespace: Merger.MergeBoard.Systems
+public class FeedingCombinationConsumeSystem : ISystem // TypeDefIndex: 25734
+{
+	// Methods
+
+	// RVA: 0x6A67368 Offset: 0x6A63368 VA: 0x6A67368 Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A67890 Offset: 0x6A63890 VA: 0x6A67890
+	public void .ctor() { }
+}
+

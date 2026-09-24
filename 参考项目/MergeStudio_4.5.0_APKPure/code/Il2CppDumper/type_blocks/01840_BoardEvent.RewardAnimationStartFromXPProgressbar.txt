@@ -1,0 +1,4 @@
+// Namespace: 
+public struct BoardEvent.RewardAnimationStartFromXPProgressbar : IEvent // TypeDefIndex: 1840
+{}
+

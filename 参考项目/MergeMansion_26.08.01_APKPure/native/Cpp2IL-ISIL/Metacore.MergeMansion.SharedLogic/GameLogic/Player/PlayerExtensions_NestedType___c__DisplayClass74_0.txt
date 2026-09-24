@@ -1,0 +1,110 @@
+Type: GameLogic.Player.PlayerExtensions+<>c__DisplayClass74_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0355B024 BL 0x239B8E4
+	0x0355B028 ADRP X0, 0x218A000
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <IsPendingPopup>b__0(GameLogic.Player.Director.ScriptedEvent e)
+
+Disassembly:
+	0x0355B02C LDR X0, [X0 + 0x8B8]
+	0x0355B030 BL 0x239B8E4
+	0x0355B034 ADRP X0, 0x2189000
+	0x0355B038 LDR X0, [X0 + 0xFF0]
+	0x0355B03C BL 0x239B8E4
+	0x0355B040 ADRP X0, 0x21A8000
+	0x0355B044 LDR X0, [X0 + 0x4E0]
+	0x0355B048 BL 0x239B8E4
+	0x0355B04C ADRP X0, 0x21A8000
+	0x0355B050 LDR X0, [X0 + 0x4E8]
+	0x0355B054 BL 0x239B8E4
+	0x0355B058 MOVZ W8, 0x1
+	0x0355B05C STRB W8, [X20 + 0x63A]
+	0x0355B060 STP X31, X31, [X31 + 0x30]
+	0x0355B064 STR X31, [X31 + 0x40]
+	0x0355B068 STP X31, X31, [X31 + 0x20]
+	0x0355B06C STR X31, [X31 + 0x18]
+	0x0355B070 CBZ X19, 0x355B400
+	0x0355B074 LDR X0, [X19 + 0x220]
+	0x0355B078 CBZ X0, 0x355B400
+	0x0355B07C MOV X1, X31
+	0x0355B080 BL 0x3776FF0
+	0x0355B084 CBZ X0, 0x355B400
+	0x0355B088 ADRP X22, 0x2187000
+	0x0355B08C ADRP X24, 0x2187000
+	0x0355B090 ADRP X25, 0x2187000
+	0x0355B094 LDR X22, [X22 + 0x398]
+	0x0355B098 ADRP X23, 0x2187000
+	0x0355B09C LDR X24, [X24 + 0x378]
+	0x0355B0A0 LDR X25, [X25 + 0x388]
+	0x0355B0A4 LDR X23, [X23 + 0x368]
+	0x0355B0A8 ADD X1, X31, 0x0
+	0x0355B0AC LDR X2, [X22]
+	0x0355B0B0 BL 0x29B9F04
+	0x0355B0B4 LDR X8, [X31 + 0x10]
+	0x0355B0B8 LDR V0, [X31]
+	0x0355B0BC MOV X0, X31
+	0x0355B0C0 MOV W27, W31
+	0x0355B0C4 MOV W26, W31
+	0x0355B0C8 STR X8, [X31 + 0x40]
+	0x0355B0CC ADD X8, X31, 0x30
+	0x0355B0D0 STR V0, [X31 + 0x3]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move X20, X1
+	006 Move X19, X0
+	007 Move W8, [0x27D2612]
+	008 Move TEMP, X8
+	009 And TEMP, TEMP, 1
+	010 Compare TEMP, 1
+	011 JumpIfEqual {16}
+	012 Move X0, [0x21D7700]
+	013 Call 0x239F8E4
+	014 Move W8, 1
+	015 Move [X21+1554], W8
+	016 Compare X20, 0
+	017 JumpIfEqual {49}
+	018 Move X0, X20
+	019 Move X1, X31
+	020 Call ScriptedEvent.GetAction, X0
+	021 Compare X0, 0
+	022 JumpIfEqual {33}
+	023 Move X8, [0x21D7700]
+	024 Move X9, [X0]
+	025 Move X8, [X8]
+	026 Move W11, [X9+304]
+	027 Move W10, [X8+304]
+	028 NotImplemented "Instruction CMP not yet implemented."
+	029 Move X9, [X9+200]
+	030 Add X9, X9, X10
+	031 NotImplemented "Instruction LDUR not yet implemented."
+	032 NotImplemented "Instruction CMP not yet implemented."
+	033 Move X20, [X31+16]
+	034 Move X19, [X31+24]
+	035 Move W0, W31
+	036 Move X30, [X31+32]
+	037 Move X21, [X31+40]
+	038 Return X0
+	039 Move X1, X31
+	040 Call TriggerPopupSerializedAction.GetPopupId, X0
+	041 Move X1, [X19+16]
+	042 Move X20, [X31+16]
+	043 Move X19, [X31+24]
+	044 Move X2, X31
+	045 Move X30, [X31+32]
+	046 Move X21, [X31+40]
+	047 Call String.op_Equality, X0, X1
+	048 Return X0
+	049 Call 0x239FB90
+

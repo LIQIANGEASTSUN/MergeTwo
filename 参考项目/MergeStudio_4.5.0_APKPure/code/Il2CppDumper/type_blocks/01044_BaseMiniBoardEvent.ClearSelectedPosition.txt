@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BaseMiniBoardEvent.ClearSelectedPosition : IEvent // TypeDefIndex: 1044
+{
+	// Fields
+	public bool ItemDestroy; // 0x0
+}
+

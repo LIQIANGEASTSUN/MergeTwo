@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class DynamicMergeItemConfigurationModel.<>c__DisplayClass4_0 // TypeDefIndex: 528
+{
+	// Fields
+	public string itemId; // 0x10
+
+	// Methods
+
+	// RVA: 0x613B8B4 Offset: 0x61378B4 VA: 0x613B8B4
+	public void .ctor() { }
+
+	// RVA: 0x613B944 Offset: 0x6137944 VA: 0x613B944
+	internal bool <GetDynamicMergeItemWithItemId>b__0(IMergeItem mergeItem) { }
+}
+

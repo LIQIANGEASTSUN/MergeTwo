@@ -1,0 +1,73 @@
+// Namespace: Merger.MergeBoard.PowerBoost.Models
+public interface IPowerBoostModel // TypeDefIndex: 32794
+{
+	// Properties
+	public abstract BindableProperty<int> CurrentPowerBoostMode { get; }
+	public abstract int DefaultPowerBoostMode { get; }
+	public abstract int MinUnlockableBoost { get; }
+	public abstract int MaxBoostIndicationThreshold { get; }
+	public abstract PowerBoostMultiModesConfig Configuration { get; }
+	public abstract bool IsPowerBoostEnabled { get; }
+	public abstract bool HasConfiguration { get; }
+	public abstract int LastGrantedBoostRemote { get; }
+	public abstract string EventId { get; }
+	public abstract int EventIndex { get; }
+	public abstract int CurrentConfigLevel { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract BindableProperty<int> get_CurrentPowerBoostMode();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract int get_DefaultPowerBoostMode();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract int get_MinUnlockableBoost();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract int get_MaxBoostIndicationThreshold();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract PowerBoostMultiModesConfig get_Configuration();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract bool get_IsPowerBoostEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract bool get_HasConfiguration();
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract int get_LastGrantedBoostRemote();
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract string get_EventId();
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract int get_EventIndex();
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public abstract int get_CurrentConfigLevel();
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public abstract void UpdateConfiguration(string eventId, int eventIndex, int configLevel, PowerBoostMultiModesConfig configuration);
+
+	// RVA: -1 Offset: -1 Slot: 12
+	public abstract int GetEnergyThreshold(int boost);
+
+	// RVA: -1 Offset: -1 Slot: 13
+	public abstract void SetPowerBoostMode(int mode);
+
+	// RVA: -1 Offset: -1 Slot: 14
+	public abstract void SetPowerBoostModeAndNotify(int mode);
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public abstract void OnStartUnlockPopup();
+
+	// RVA: -1 Offset: -1 Slot: 16
+	public abstract void OnUnlockPopupOpened();
+
+	// RVA: -1 Offset: -1 Slot: 17
+	public abstract bool IsUnlockPopupOpening();
+}
+

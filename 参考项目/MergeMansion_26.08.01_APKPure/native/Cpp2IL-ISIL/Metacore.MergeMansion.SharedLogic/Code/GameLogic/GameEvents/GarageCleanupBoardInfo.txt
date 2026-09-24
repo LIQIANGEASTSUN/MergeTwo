@@ -1,0 +1,100 @@
+Type: Code.GameLogic.GameEvents.GarageCleanupBoardInfo
+
+Method: Code.GameLogic.GameEvents.GarageCleanupBoardId get_ConfigKey()
+
+Disassembly:
+	0x0330526C RET
+	0x03305270 STR X1, [X0 + 0xC8]!
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_ConfigKey(Code.GameLogic.GameEvents.GarageCleanupBoardId value)
+
+Disassembly:
+	0x03305274 B 0x239B888
+	0x03305278 LDR X0, [X0 + 0xD0]
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Collections.Generic.List`1<Code.GameLogic.GameEvents.GarageCleanupBoardRowId> get_Rows()
+
+Disassembly:
+	0x0330527C RET
+	0x03305280 STR X1, [X0 + 0xD0]!
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_Rows(System.Collections.Generic.List`1<Code.GameLogic.GameEvents.GarageCleanupBoardRowId> value)
+
+Disassembly:
+	0x03305284 B 0x239B888
+	0x03305288 LDR X0, [X0 + 0xD8]
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0330528C RET
+	0x03305290 STR X1, [X0 + 0xD8]!
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(Code.GameLogic.GameEvents.GarageCleanupBoardId boardId, System.Collections.Generic.List`1<Code.GameLogic.GameEvents.GarageCleanupBoardRowId> rows)
+
+Disassembly:
+	0x03305294 B 0x239B888
+	0x03305298 LDR X0, [X0 + 0xE0]
+	0x0330529C RET
+	0x033052A0 STR X1, [X0 + 0xE0]!
+	0x033052A4 B 0x239B888
+	0x033052A8 LDR X0, [X0 + 0xE8]
+	0x033052AC RET
+	0x033052B0 STR X1, [X0 + 0xE8]!
+	0x033052B4 B 0x239B888
+	0x033052B8 LDR W0, [X0 + 0xF0]
+	0x033052BC RET
+	0x033052C0 STR W1, [X0 + 0xF0]
+	0x033052C4 RET
+	0x033052C8 LDR X0, [X0 + 0xF8]
+	0x033052CC RET
+	0x033052D0 STR X1, [X0 + 0xF8]!
+	0x033052D4 B 0x239B888
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move X20, X1
+	006 Move X1, X31
+	007 Move X19, X2
+	008 Move X21, X0
+	009 Call Object..ctor, X0
+	010 Move X0, X21
+	011 Move X1, X20
+	012 Move [X0+16], X20
+	013 Call 0x239F888
+	014 Move [X21+24], X19
+	015 Move X1, X19
+	016 Move X20, [X31+16]
+	017 Move X19, [X31+24]
+	018 Move X0, X21
+	019 Move X30, [X31+32]
+	020 Move X21, [X31+40]
+	021 Call 0x239F888
+	022 Return 
+

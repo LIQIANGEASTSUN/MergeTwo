@@ -1,0 +1,16 @@
+Type: GameLogic.Player.Items.Consumption.IConsumptionCheckResult
+
+Method: System.Boolean get_Success()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.String get_ErrorLocKey()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

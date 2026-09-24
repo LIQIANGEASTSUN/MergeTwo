@@ -1,0 +1,52 @@
+// Namespace: Merger.Bubbles.Modifiers
+public class BucketBubbleDropProbabilityModifier : BubbleDropProbabilityModifierBase // TypeDefIndex: 7469
+{
+	// Fields
+	[InjectSystem]
+	private BubbledItemSystem _bubbledItemSystem; // 0x20
+	[Inject]
+	private ISmarterBubblesDataModel _bubblesDataModel; // 0x28
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0x30
+	[Inject]
+	private ISmarterBubblesAnalyticsModel _analyticsModel; // 0x38
+	[Inject]
+	private ISmarterBubblesBucketsModel _bucketsModel; // 0x40
+
+	// Properties
+	public override bool IsEnabled { get; }
+	public override string AnalyticsString { get; }
+
+	// Methods
+
+	// RVA: 0x657D894 Offset: 0x6579894 VA: 0x657D894 Slot: 12
+	public override bool get_IsEnabled() { }
+
+	// RVA: 0x657D8B8 Offset: 0x65798B8 VA: 0x657D8B8 Slot: 13
+	public override string get_AnalyticsString() { }
+
+	// RVA: 0x657D910 Offset: 0x6579910 VA: 0x657D910 Slot: 16
+	public override void Initialize() { }
+
+	// RVA: 0x657DE7C Offset: 0x6579E7C VA: 0x657DE7C
+	public int GetBubblePrice(IMergeItem mergeItem) { }
+
+	// RVA: 0x657E258 Offset: 0x657A258 VA: 0x657E258 Slot: 15
+	public override void TryModifyProbability(ref float probability, IMergeItem mergeItem, SmarterBubblesCheatData cheatData) { }
+
+	// RVA: 0x657E598 Offset: 0x657A598 VA: 0x657E598 Slot: 17
+	public override void Update() { }
+
+	// RVA: 0x657EE6C Offset: 0x657AE6C VA: 0x657EE6C
+	private float CalculateConversionRatio(BucketProbabilityData data, List<BubbleData> bubbles, string source) { }
+
+	// RVA: 0x657E9B4 Offset: 0x657A9B4 VA: 0x657E9B4
+	private bool UpdateBuckets(List<Bucket> buckets, List<BubbleData> bubbles, string source) { }
+
+	// RVA: 0x657F390 Offset: 0x657B390 VA: 0x657F390
+	private void UpdateBucketsAnalyticsData(BucketProbabilityData data) { }
+
+	// RVA: 0x657F8EC Offset: 0x657B8EC VA: 0x657F8EC
+	public void .ctor() { }
+}
+

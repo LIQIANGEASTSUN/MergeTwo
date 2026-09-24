@@ -1,0 +1,27 @@
+// Namespace: 
+[CompilerGenerated]
+private struct ButterflyWorkShopModel.<OnUseItem>d__62 : IAsyncStateMachine // TypeDefIndex: 197
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncVoidMethodBuilder <>t__builder; // 0x4
+	public ButterflyWorkShopModel <>4__this; // 0x14
+	public int id; // 0x18
+	public int index; // 0x1C
+	private ButterflyWorkShopModel.<>c__DisplayClass62_0 <>8__1; // 0x20
+	private List<ResData> <rewardsList>5__2; // 0x24
+	private int <targetIndex>5__3; // 0x28
+	private GameBIManager.ItemChangeReasonArgs <reasonArgs>5__4; // 0x30
+	private TaskAwaiter <>u__1; // 0x50
+	private TaskAwaiter<bool> <>u__2; // 0x54
+
+	// Methods
+
+	// RVA: 0x29F3060 Offset: 0x29F3060 VA: 0x29F3060 Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x29F4AE0 Offset: 0x29F4AE0 VA: 0x29F4AE0 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

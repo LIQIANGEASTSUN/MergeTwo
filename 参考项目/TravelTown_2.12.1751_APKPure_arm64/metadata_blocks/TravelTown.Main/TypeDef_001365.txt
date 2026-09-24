@@ -1,0 +1,16 @@
+// Namespace: MergeEngine.Configuration.Definitions.WeakReferences.Providers
+public class MergeBoardProvider : WeakReferenceTargetProvider<IBoard, string> // TypeDefIndex: 1365
+{
+	// Fields
+	[Inject]
+	private IStartingBoardConfigurationModel _startingBoardConfigurationModel; // 0x10
+
+	// Methods
+
+	// RVA: 0x6004EA4 Offset: 0x6000EA4 VA: 0x6004EA4 Slot: 4
+	protected override IBoard ProvideInstance(WeakReference<IBoard, string> reference) { }
+
+	// RVA: 0x600433C Offset: 0x600033C VA: 0x600433C
+	public void .ctor() { }
+}
+

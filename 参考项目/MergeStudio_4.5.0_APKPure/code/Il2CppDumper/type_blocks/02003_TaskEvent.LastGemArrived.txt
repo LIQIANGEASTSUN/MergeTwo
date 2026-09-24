@@ -1,0 +1,4 @@
+// Namespace: 
+public struct TaskEvent.LastGemArrived : IEvent // TypeDefIndex: 2003
+{}
+

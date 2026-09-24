@@ -1,0 +1,30 @@
+Type: Code.GameLogic.IEnergyAttachmentEvent
+
+Method: System.Int32 GetAuxEnergyAttachmentChance(GameLogic.Player.PlayerModel player, Code.GameLogic.StatsTracking.StatsTrackingType trackingType)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.EnergyType get_EnergyType()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 CalculateEnergyAmount(GameLogic.Player.IPlayer player, Code.GameLogic.StatsTracking.StatsTrackingType trackingType, System.Int32 resourcesUsed)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.GameEvents.SoloMilestoneTokenSpawnsInfo GetSpawnedTokenInfo(GameLogic.Player.IPlayer player, Code.GameLogic.StatsTracking.StatsTrackingType trackingType)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

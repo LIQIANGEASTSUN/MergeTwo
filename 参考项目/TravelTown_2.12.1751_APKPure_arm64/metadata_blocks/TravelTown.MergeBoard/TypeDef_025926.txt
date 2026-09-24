@@ -1,0 +1,12 @@
+// Namespace: Merger.MergeBoard.Data
+public enum ItemCreatedSource // TypeDefIndex: 25926
+{
+	// Fields
+	public int value__; // 0x0
+	public const ItemCreatedSource Produce = 0;
+	public const ItemCreatedSource Spawn = 1;
+	public const ItemCreatedSource Expend = 2;
+	public const ItemCreatedSource Transform = 3;
+	public const ItemCreatedSource Merge = 4;
+}
+

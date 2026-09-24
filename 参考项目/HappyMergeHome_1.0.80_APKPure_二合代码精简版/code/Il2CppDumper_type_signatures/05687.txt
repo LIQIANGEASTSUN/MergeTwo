@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class SummerWatermelonModel.<>c__DisplayClass93_0 // TypeDefIndex: 5687
+{
+	// Fields
+	public SummerWatermelonModel <>4__this; // 0x8
+	public int moveStep; // 0xC
+	public Action <>9__1; // 0x10
+
+	// Methods
+
+	// RVA: 0x18F258C Offset: 0x18F258C VA: 0x18F258C
+	public void .ctor() { }
+
+	// RVA: 0x18F8CA8 Offset: 0x18F8CA8 VA: 0x18F8CA8
+	internal void <DebugMove>b__0() { }
+
+	// RVA: 0x18F928C Offset: 0x18F928C VA: 0x18F928C
+	internal void <DebugMove>b__1() { }
+}
+

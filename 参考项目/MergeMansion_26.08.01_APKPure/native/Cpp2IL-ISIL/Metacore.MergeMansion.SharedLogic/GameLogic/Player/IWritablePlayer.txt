@@ -1,0 +1,9 @@
+Type: GameLogic.Player.IWritablePlayer
+
+Method: System.Void SetWallet(GameLogic.Player.Wallet wallet)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

@@ -1,0 +1,26 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MetaData.<>c__DisplayClass23_0 // TypeDefIndex: 2245
+{
+	// Fields
+	public MetaEntity metaEntity; // 0x8
+	public int maxCompletedPrecondition; // 0xC
+
+	// Methods
+
+	// RVA: 0x19B2340 Offset: 0x19B2340 VA: 0x19B2340
+	public void .ctor() { }
+
+	// RVA: 0x19B27B0 Offset: 0x19B27B0 VA: 0x19B27B0
+	internal bool <GetActiveMetaTaskItems>b__0(MetaTaskItem item) { }
+
+	// RVA: 0x19B27EC Offset: 0x19B27EC VA: 0x19B27EC
+	internal bool <GetActiveMetaTaskItems>b__2(MetaTaskItem item) { }
+
+	// RVA: 0x19B290C Offset: 0x19B290C VA: 0x19B290C
+	internal bool <GetActiveMetaTaskItems>b__3(MetaTaskItem item) { }
+
+	// RVA: 0x19B293C Offset: 0x19B293C VA: 0x19B293C
+	internal bool <GetActiveMetaTaskItems>b__6(MetaTaskItem item) { }
+}
+

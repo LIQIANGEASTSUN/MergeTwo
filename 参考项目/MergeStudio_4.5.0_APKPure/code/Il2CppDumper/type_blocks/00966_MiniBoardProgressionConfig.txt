@@ -1,0 +1,15 @@
+// Namespace: Paxie.MergeStudio.Features.RecurringEvents.MiniBoardProgression
+public class MiniBoardProgressionConfig : MiniBoardConfig<MiniBoardProgressionAddressable> // TypeDefIndex: 966
+{
+	// Methods
+
+	// RVA: 0x17921F0 Offset: 0x17921F0 VA: 0x17921F0
+	public void .ctor(KiteMiniBoardProgressionConfigItem kiteMiniBoardProgressionConfigItem, RecurringEventLocalConfigBase local) { }
+
+	// RVA: 0x17922D8 Offset: 0x17922D8 VA: 0x17922D8 Slot: 7
+	public override bool WaitForForceMainPopupAfterStepUpdateForOffer() { }
+
+	// RVA: 0x17922E0 Offset: 0x17922E0 VA: 0x17922E0 Slot: 8
+	public override bool WaitJustStepUpdateEntityForOffer() { }
+}
+

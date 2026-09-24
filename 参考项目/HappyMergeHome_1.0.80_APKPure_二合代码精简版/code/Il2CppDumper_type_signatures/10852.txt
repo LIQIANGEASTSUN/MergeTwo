@@ -1,0 +1,13 @@
+// Namespace: DragonU3DSDK.Storage
+[Serializable]
+public abstract class StorageBase // TypeDefIndex: 10852
+{
+	// Methods
+
+	// RVA: 0x267BE6C Offset: 0x267BE6C VA: 0x267BE6C
+	public void Clear() { }
+
+	// RVA: 0x267B170 Offset: 0x267B170 VA: 0x267B170
+	protected void .ctor() { }
+}
+

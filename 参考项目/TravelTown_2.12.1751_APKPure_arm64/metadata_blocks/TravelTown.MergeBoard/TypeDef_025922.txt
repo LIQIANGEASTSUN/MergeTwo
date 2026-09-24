@@ -1,0 +1,24 @@
+// Namespace: Merger.MergeBoard.Data
+public class FeedingItemCombination // TypeDefIndex: 25922
+{
+	// Fields
+	[CompilerGenerated]
+	private List<string> <ItemsToConsumeIds>k__BackingField; // 0x10
+
+	// Properties
+	public List<string> ItemsToConsumeIds { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A0A0 Offset: 0x6A960A0 VA: 0x6A9A0A0
+	public List<string> get_ItemsToConsumeIds() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A0A8 Offset: 0x6A960A8 VA: 0x6A9A0A8
+	public void set_ItemsToConsumeIds(List<string> value) { }
+
+	// RVA: 0x6A9A0B0 Offset: 0x6A960B0 VA: 0x6A9A0B0
+	public void .ctor() { }
+}
+

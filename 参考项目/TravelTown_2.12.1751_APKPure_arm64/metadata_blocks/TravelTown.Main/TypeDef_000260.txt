@@ -1,0 +1,76 @@
+// Namespace: MergeEngine.Signal.Board
+public class EnqueueBoosterItemSignal // TypeDefIndex: 260
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly IMergeItem <MergeItem>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly Entity <Entity>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private readonly BoardItemPosition <SourcePosition>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private readonly BoardQueueOrder <BoardQueueOrder>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private readonly ResourceSource <Source>k__BackingField; // 0x2C
+	[CompilerGenerated]
+	private readonly bool <SlideBoardItemToQueue>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private readonly string <BoosterUUId>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private readonly string <BoosterId>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private readonly IBoosterItem <BoosterItem>k__BackingField; // 0x48
+
+	// Properties
+	public IMergeItem MergeItem { get; }
+	public Entity Entity { get; }
+	public BoardItemPosition SourcePosition { get; }
+	public BoardQueueOrder BoardQueueOrder { get; }
+	public ResourceSource Source { get; }
+	public bool SlideBoardItemToQueue { get; }
+	public string BoosterUUId { get; }
+	public string BoosterId { get; }
+	public IBoosterItem BoosterItem { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5FF4584 Offset: 0x5FF0584 VA: 0x5FF4584
+	public IMergeItem get_MergeItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF458C Offset: 0x5FF058C VA: 0x5FF458C
+	public Entity get_Entity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF4594 Offset: 0x5FF0594 VA: 0x5FF4594
+	public BoardItemPosition get_SourcePosition() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF459C Offset: 0x5FF059C VA: 0x5FF459C
+	public BoardQueueOrder get_BoardQueueOrder() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF45A4 Offset: 0x5FF05A4 VA: 0x5FF45A4
+	public ResourceSource get_Source() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF45AC Offset: 0x5FF05AC VA: 0x5FF45AC
+	public bool get_SlideBoardItemToQueue() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF45B4 Offset: 0x5FF05B4 VA: 0x5FF45B4
+	public string get_BoosterUUId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF45BC Offset: 0x5FF05BC VA: 0x5FF45BC
+	public string get_BoosterId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF45C4 Offset: 0x5FF05C4 VA: 0x5FF45C4
+	public IBoosterItem get_BoosterItem() { }
+
+	// RVA: 0x5FF45CC Offset: 0x5FF05CC VA: 0x5FF45CC
+	public void .ctor(IMergeItem mergeItem, Entity entity, BoardItemPosition sourcePosition, BoardQueueOrder boardQueueOrder, ResourceSource source, string boosterUuId, string boosterId, IBoosterItem boosterItem, bool slideBoardItemToQueue = False) { }
+}
+

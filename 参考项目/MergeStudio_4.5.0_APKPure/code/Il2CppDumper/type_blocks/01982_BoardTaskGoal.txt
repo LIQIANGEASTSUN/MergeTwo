@@ -1,0 +1,18 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class BoardTaskGoal // TypeDefIndex: 1982
+{
+	// Fields
+	public int ItemSet; // 0x8
+	public int ItemLevel; // 0xC
+	public int Quantity; // 0x10
+
+	// Methods
+
+	// RVA: 0x194A088 Offset: 0x194A088 VA: 0x194A088
+	public void .ctor() { }
+
+	// RVA: 0x19490DC Offset: 0x19490DC VA: 0x19490DC
+	public void .ctor(int itemSet, int itemLevel, int quantity) { }
+}
+

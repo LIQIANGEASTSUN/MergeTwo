@@ -1,0 +1,96 @@
+Type: GameLogic.Player.Items.Sink.SimpleSinkStateFactory+<>c
+
+Method: System.Void .cctor()
+
+Disassembly:
+	0x0360A43C CSET W0, GE
+	0x0360A440 LDR X30, [X31], #0x10
+	0x0360A444 RET
+	0x0360A448 SUB X31, X31, 0x70
+	0x0360A44C STP X30, X23, [X31 + 0x40]
+	0x0360A450 STP X22, X21, [X31 + 0x50]
+	0x0360A454 STP X20, X19, [X31 + 0x60]
+	0x0360A458 ADRP X21, 0x271F000
+	0x0360A45C ADRP X20, 0x20CA000
+	0x0360A460 MOV X19, X0
+	0x0360A464 LDRB W8, [X21 + 0xBD8]
+	0x0360A468 LDR X20, [X20 + 0xD30]
+	0x0360A46C TBNZ X8, 0x0, 0x360A4B4
+	0x0360A470 ADRP X0, 0x2127000
+	0x0360A474 LDR X0, [X0 + 0x6D0]
+	0x0360A478 BL 0x239B8E4
+	0x0360A47C ADRP X0, 0x2127000
+	0x0360A480 LDR X0, [X0 + 0x6D8]
+	0x0360A484 BL 0x239B8E4
+	0x0360A488 ADRP X0, 0x2127000
+	0x0360A48C LDR X0, [X0 + 0x6E0]
+	0x0360A490 BL 0x239B8E4
+	0x0360A494 ADRP X0, 0x2127000
+	0x0360A498 LDR X0, [X0 + 0x6E8]
+	0x0360A49C BL 0x239B8E4
+	0x0360A4A0 ADRP X0, 0x20CA000
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move W8, [0x2723BA9]
+	005 Move X20, [0x212B5B8]
+	006 Move TEMP, X8
+	007 And TEMP, TEMP, 1
+	008 Compare TEMP, 1
+	009 JumpIfEqual {14}
+	010 Move X0, [0x212B5B8]
+	011 Call 0x239F8E4
+	012 Move W8, 1
+	013 Move [X19+2985], W8
+	014 Move X0, [X20]
+	015 Call 0x239FB80
+	016 Move X1, X31
+	017 Move X19, X0
+	018 Call Object..ctor, X0
+	019 Move X8, [X20]
+	020 Move X1, X19
+	021 Move X8, [X8+184]
+	022 Move [X8], X19
+	023 Move X8, [X20]
+	024 Move X20, [X31+16]
+	025 Move X19, [X31+24]
+	026 Move X0, [X8+184]
+	027 Move X30, [X31+32]
+	028 Call 0x239F888
+	029 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0360A4A4 LDR X0, [X0 + 0xD30]
+	0x0360A4A8 BL 0x239B8E4
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Int32 <.ctor>b__13_0(System.ValueTuple`2<System.Int32, System.Int32> score)
+
+Disassembly:
+	0x0360A4AC MOVZ W8, 0x1
+	0x0360A4B0 STRB W8, [X21 + 0xBD8]
+
+ISIL:
+	001 Move X0, X1
+	002 Return X0
+
+Method: System.Int32 <.ctor>b__13_1(System.ValueTuple`2<System.Int32, System.Int32> score)
+
+Disassembly:
+	0x0360A4B4 LDR X3, [X20]
+	0x0360A4B8 ADD X0, X31, 0x0
+
+ISIL:
+	001 Move X0, X1
+	002 ShiftRight X0, 32
+	003 And X0, X0, 0x7FFFFFFF
+	004 Return X0
+

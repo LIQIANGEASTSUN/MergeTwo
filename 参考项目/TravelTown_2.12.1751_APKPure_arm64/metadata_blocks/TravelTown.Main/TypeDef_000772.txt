@@ -1,0 +1,26 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardItemsStateSystem.<>c__DisplayClass9_0<TState> // TypeDefIndex: 772
+{
+	// Fields
+	public List<PositionComponent> positionedItems; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4B1D590 Offset: 0x4B19590 VA: 0x4B1D590
+	|-BoardItemsStateSystem.<>c__DisplayClass9_0<object>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal bool <HandleDuplicatedEntityPositions>b__0(PositionComponent item) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4B1D598 Offset: 0x4B19598 VA: 0x4B1D598
+	|-BoardItemsStateSystem.<>c__DisplayClass9_0<object>.<HandleDuplicatedEntityPositions>b__0
+	*/
+}
+

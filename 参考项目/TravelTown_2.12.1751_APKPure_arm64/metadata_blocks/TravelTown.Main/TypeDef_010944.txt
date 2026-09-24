@@ -1,0 +1,14 @@
+// Namespace: Framework.Core.Services.Backend.Remote.Payloads
+[Serializable]
+public class BackendStates : PendingRewardHolder // TypeDefIndex: 10944
+{
+	// Fields
+	[JsonProperty("states")]
+	public Dictionary<string, JToken> States; // 0x18
+
+	// Methods
+
+	// RVA: 0x69167A0 Offset: 0x69127A0 VA: 0x69167A0
+	public void .ctor() { }
+}
+

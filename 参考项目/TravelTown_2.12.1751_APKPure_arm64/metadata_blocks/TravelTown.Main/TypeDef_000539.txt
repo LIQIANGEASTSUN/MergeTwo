@@ -1,0 +1,12 @@
+// Namespace: MergeEngine.Model.Configuration
+public interface ILocalMergeItemsConfigurationModel // TypeDefIndex: 539
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract bool IsLocalItem(string itemName);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract ReadOnlyCollection<string> GetLocalItemNames();
+}
+

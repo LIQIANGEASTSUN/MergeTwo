@@ -1,0 +1,69 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class InventoryEntity // TypeDefIndex: 1952
+{
+	// Fields
+	public List<ItemEntity> InventoryItems; // 0x8
+	public List<InventoryEntity.InventorySpawnerEntity> SpawnerItems; // 0xC
+	public List<InventoryEntity.ArchiveTaskEntity> ArchiveTaskItems; // 0x10
+	public int InventorySize; // 0x14
+	public bool InventoryUnlocked; // 0x18
+	public bool IsRemoveInventoryItem; // 0x19
+
+	// Methods
+
+	// RVA: 0x193514C Offset: 0x193514C VA: 0x193514C
+	public void .ctor() { }
+
+	// RVA: 0x1935154 Offset: 0x1935154 VA: 0x1935154
+	public void .ctor(EventBoardConfigItem conf) { }
+
+	// RVA: 0x19352C4 Offset: 0x19352C4 VA: 0x19352C4
+	public void .ctor(BoardData boardData) { }
+
+	// RVA: 0x1935434 Offset: 0x1935434 VA: 0x1935434
+	public List<ItemEntity> PopIllegalSpawnerItems() { }
+
+	// RVA: 0x19357A0 Offset: 0x19357A0 VA: 0x19357A0
+	public void IncreaseInventorySize(int amount) { }
+
+	// RVA: 0x19357BC Offset: 0x19357BC VA: 0x19357BC
+	public void AddToInventory(ItemEntity entity) { }
+
+	// RVA: 0x1935AB0 Offset: 0x1935AB0 VA: 0x1935AB0
+	public List<ItemEntity> GetSpawnerInventoryItemEntities() { }
+
+	// RVA: 0x1935D28 Offset: 0x1935D28 VA: 0x1935D28
+	public void AddToSpawnerInventory(ItemEntity entity, ItemLinkModel itemLink, ItemChainManager itemChainManager) { }
+
+	// RVA: 0x19359C8 Offset: 0x19359C8 VA: 0x19359C8
+	public void AddBoardSlotFullCounter() { }
+
+	// RVA: 0x1936198 Offset: 0x1936198 VA: 0x1936198
+	private SlotFullCounter.BoardType GetFireSlotFullType() { }
+
+	// RVA: 0x19361A0 Offset: 0x19361A0 VA: 0x19361A0
+	public void RemoveFromInventoryWithGameplay(ItemEntity entity, bool spawnerInventory) { }
+
+	// RVA: 0x193623C Offset: 0x193623C VA: 0x193623C
+	public void RemoveFromInventory(ItemEntity entity, bool spawnerInventory) { }
+
+	// RVA: 0x1936650 Offset: 0x1936650 VA: 0x1936650
+	public void RemoveFromInventory(int setID, int level) { }
+
+	// RVA: 0x1936958 Offset: 0x1936958 VA: 0x1936958
+	public void RemoveFromInventory(int setID) { }
+
+	// RVA: 0x1936B44 Offset: 0x1936B44 VA: 0x1936B44
+	public void Reset() { }
+
+	// RVA: 0x1936D14 Offset: 0x1936D14 VA: 0x1936D14
+	public bool IsFull() { }
+
+	// RVA: 0x19357B4 Offset: 0x19357B4 VA: 0x19357B4
+	private void SendUpdateEvent() { }
+
+	// RVA: 0x1936DD4 Offset: 0x1936DD4 VA: 0x1936DD4
+	public bool ToSpawnerInventory(BoardItemData itemData) { }
+}
+

@@ -1,0 +1,140 @@
+// Namespace: MergeEngine.Configuration
+public interface IMergeItem : IItem, IUniqueStringKeyAsset // TypeDefIndex: 1179
+{
+	// Properties
+	public abstract ProduceCapability Produce { get; }
+	public abstract SpawnCapability Spawn { get; }
+	public abstract ExpendableCapability Expend { get; }
+	public abstract SellCapability Sell { get; }
+	public abstract CollectCapability Collect { get; }
+	public abstract CollectResourceCapability CollectResource { get; }
+	public abstract TimeLockCapability TimeLock { get; }
+	public abstract MergeCapability Merge { get; }
+	public abstract InteractionCapability Interaction { get; }
+	public abstract ChargableCapability Chargable { get; }
+	public abstract OrderSpawnCapability OrderSpawn { get; }
+	public abstract InteractionConstraintCapability InteractionConstraint { get; }
+	public abstract ToolSpawningCapability ToolSpawning { get; }
+	public abstract BubbleItemCapability BubbleItem { get; }
+	public abstract BubbleItemCapability BubbleItemOverride { get; }
+	public abstract DifficultyCapability Difficulty { get; }
+	public abstract SplitCapability Split { get; }
+	public abstract StackingCapability Stacking { get; }
+	public abstract float DiscoverItemResourceRewardMultiplier { get; }
+	public abstract string CustomInfoText { get; }
+	public abstract bool ForceAllowMergeWithJoker { get; }
+	public abstract bool RequestedByOrders { get; }
+	public abstract bool EventTransferable { get; }
+	public abstract ToolData ToolData { get; }
+	public abstract MergeItemWeakReference TransformOriginItemReference { get; set; }
+	public abstract ItemsSpawningCapability ItemsSpawning { get; }
+	public abstract IMergeGraphItem ParentGraph { get; set; }
+	public abstract List<IMergeItem> AllSpawnedMergeItems { get; }
+	public abstract DynamicMergeItemConfig DynamicItemConfig { get; set; }
+	public abstract RemoteAnimatedAsset RemoteAnimatedAsset { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract ProduceCapability get_Produce();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract SpawnCapability get_Spawn();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract ExpendableCapability get_Expend();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract SellCapability get_Sell();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract CollectCapability get_Collect();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract CollectResourceCapability get_CollectResource();
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract TimeLockCapability get_TimeLock();
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract MergeCapability get_Merge();
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract InteractionCapability get_Interaction();
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract ChargableCapability get_Chargable();
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public abstract OrderSpawnCapability get_OrderSpawn();
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public abstract InteractionConstraintCapability get_InteractionConstraint();
+
+	// RVA: -1 Offset: -1 Slot: 12
+	public abstract ToolSpawningCapability get_ToolSpawning();
+
+	// RVA: -1 Offset: -1 Slot: 13
+	public abstract BubbleItemCapability get_BubbleItem();
+
+	// RVA: -1 Offset: -1 Slot: 14
+	public abstract BubbleItemCapability get_BubbleItemOverride();
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public abstract DifficultyCapability get_Difficulty();
+
+	// RVA: -1 Offset: -1 Slot: 16
+	public abstract SplitCapability get_Split();
+
+	// RVA: -1 Offset: -1 Slot: 17
+	public abstract StackingCapability get_Stacking();
+
+	// RVA: -1 Offset: -1 Slot: 18
+	public abstract float get_DiscoverItemResourceRewardMultiplier();
+
+	// RVA: -1 Offset: -1 Slot: 19
+	public abstract string get_CustomInfoText();
+
+	// RVA: -1 Offset: -1 Slot: 20
+	public abstract bool get_ForceAllowMergeWithJoker();
+
+	// RVA: -1 Offset: -1 Slot: 21
+	public abstract bool get_RequestedByOrders();
+
+	// RVA: -1 Offset: -1 Slot: 22
+	public abstract bool get_EventTransferable();
+
+	// RVA: -1 Offset: -1 Slot: 23
+	public abstract ToolData get_ToolData();
+
+	// RVA: -1 Offset: -1 Slot: 24
+	public abstract MergeItemWeakReference get_TransformOriginItemReference();
+
+	// RVA: -1 Offset: -1 Slot: 25
+	public abstract void set_TransformOriginItemReference(MergeItemWeakReference value);
+
+	// RVA: -1 Offset: -1 Slot: 26
+	public abstract ItemsSpawningCapability get_ItemsSpawning();
+
+	// RVA: -1 Offset: -1 Slot: 27
+	public abstract IMergeGraphItem get_ParentGraph();
+
+	// RVA: -1 Offset: -1 Slot: 28
+	public abstract void set_ParentGraph(IMergeGraphItem value);
+
+	// RVA: -1 Offset: -1 Slot: 29
+	public abstract List<IMergeItem> get_AllSpawnedMergeItems();
+
+	// RVA: -1 Offset: -1 Slot: 30
+	public abstract DynamicMergeItemConfig get_DynamicItemConfig();
+
+	// RVA: -1 Offset: -1 Slot: 31
+	public abstract void set_DynamicItemConfig(DynamicMergeItemConfig value);
+
+	// RVA: -1 Offset: -1 Slot: 32
+	public abstract void SetAsLocalSprite();
+
+	// RVA: -1 Offset: -1 Slot: 33
+	public abstract RemoteAnimatedAsset get_RemoteAnimatedAsset();
+}
+

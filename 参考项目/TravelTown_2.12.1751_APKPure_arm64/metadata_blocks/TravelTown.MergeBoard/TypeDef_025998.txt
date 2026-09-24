@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class FeedingCombinationComponent.<>c // TypeDefIndex: 25998
+{
+	// Fields
+	public static readonly FeedingCombinationComponent.<>c <>9; // 0x0
+	public static Func<FeedingCombinationConsumedItemSnapshot, string> <>9__1_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x6A9BE54 Offset: 0x6A97E54 VA: 0x6A9BE54
+	private static void .cctor() { }
+
+	// RVA: 0x6A9BEBC Offset: 0x6A97EBC VA: 0x6A9BEBC
+	public void .ctor() { }
+
+	// RVA: 0x6A9BEC4 Offset: 0x6A97EC4 VA: 0x6A9BEC4
+	internal string <get_ConsumedItemIds>b__1_0(FeedingCombinationConsumedItemSnapshot item) { }
+}
+

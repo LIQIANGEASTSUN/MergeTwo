@@ -1,0 +1,9 @@
+// Namespace: Merger.TimeLimitedItems.Handlers
+public interface ITimeLimitedItemsControllerCleanupHandler // TypeDefIndex: 32841
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void CleanUp(TimeLimitedItemsEventData eventData, Action onCompleted);
+}
+

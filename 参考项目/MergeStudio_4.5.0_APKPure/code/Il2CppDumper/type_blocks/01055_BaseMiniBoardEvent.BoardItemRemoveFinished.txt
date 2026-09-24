@@ -1,0 +1,4 @@
+// Namespace: 
+public struct BaseMiniBoardEvent.BoardItemRemoveFinished : IEvent // TypeDefIndex: 1055
+{}
+

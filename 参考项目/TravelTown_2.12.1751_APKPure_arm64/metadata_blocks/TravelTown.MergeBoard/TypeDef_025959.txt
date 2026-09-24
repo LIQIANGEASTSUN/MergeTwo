@@ -1,0 +1,20 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class ItemDiscoveredForFirstTime // TypeDefIndex: 25959
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly IMergeItem <Item>k__BackingField; // 0x10
+
+	// Properties
+	public IMergeItem Item { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A86C Offset: 0x6A9686C VA: 0x6A9A86C
+	public IMergeItem get_Item() { }
+
+	// RVA: 0x6A9A874 Offset: 0x6A96874 VA: 0x6A9A874
+	public void .ctor(IMergeItem item) { }
+}
+

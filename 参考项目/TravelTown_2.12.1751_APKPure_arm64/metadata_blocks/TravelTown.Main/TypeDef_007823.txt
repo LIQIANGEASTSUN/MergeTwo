@@ -1,0 +1,14 @@
+// Namespace: Merger.Boosters.Declarations.Enums
+public enum BoosterType // TypeDefIndex: 7823
+{
+	// Fields
+	public int value__; // 0x0
+	[Fallback]
+	public const BoosterType Undefined = 0;
+	public const BoosterType TimeTwister = 1;
+	public const BoosterType OrderSurpriseBox = 2;
+	public const BoosterType TimeLimitedOrder = 3;
+	public const BoosterType JokerCard = 4;
+	public const BoosterType CardsBoomBooster = 5;
+}
+

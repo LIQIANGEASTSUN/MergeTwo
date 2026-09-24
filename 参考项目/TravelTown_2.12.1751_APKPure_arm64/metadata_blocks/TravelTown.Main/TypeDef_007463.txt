@@ -1,0 +1,26 @@
+// Namespace: Merger.Bubbles.Modifiers
+public class BubbleDropStreakModifier : BubbleDropProbabilityModifierBase // TypeDefIndex: 7463
+{
+	// Fields
+	[Inject]
+	private ISmarterBubblesStreakModel _smarterBubblesStreakModel; // 0x20
+
+	// Properties
+	public override bool IsEnabled { get; }
+	public override string AnalyticsString { get; }
+
+	// Methods
+
+	// RVA: 0x657D2B0 Offset: 0x65792B0 VA: 0x657D2B0 Slot: 12
+	public override bool get_IsEnabled() { }
+
+	// RVA: 0x657D310 Offset: 0x6579310 VA: 0x657D310 Slot: 13
+	public override string get_AnalyticsString() { }
+
+	// RVA: 0x657D368 Offset: 0x6579368 VA: 0x657D368 Slot: 15
+	public override void TryModifyProbability(ref float probability, IMergeItem mergeItem, SmarterBubblesCheatData cheatData) { }
+
+	// RVA: 0x657D88C Offset: 0x657988C VA: 0x657D88C
+	public void .ctor() { }
+}
+

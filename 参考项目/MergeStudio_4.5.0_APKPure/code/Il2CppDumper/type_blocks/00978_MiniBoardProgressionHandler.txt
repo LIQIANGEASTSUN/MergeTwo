@@ -1,0 +1,205 @@
+// Namespace: Paxie.MergeStudio.Features.RecurringEvents.MiniBoardProgression
+public class MiniBoardProgressionHandler : MiniBoardHandler<MiniBoardProgressionConfig> // TypeDefIndex: 978
+{
+	// Fields
+	[CompilerGenerated]
+	private MiniBoardProgressionExtraEntity <MiniBoardProgressionExtraEntity>k__BackingField; // 0x44
+	[CompilerGenerated]
+	private MiniBoardProgressionContainer <MiniBoardProgressionContainer>k__BackingField; // 0x48
+	private Dictionary<int, float> _itemProbabilityCache; // 0x4C
+
+	// Properties
+	public MiniBoardProgressionConfig MiniBoardProgressionConfig { get; }
+	public MiniBoardProgressionAddressable MiniBoardProgressionAddressable { get; }
+	public MiniBoardProgressionAssetContainer MiniBoardProgressionAssetContainer { get; }
+	public MiniBoardProgressionEventData MiniBoardProgressionEventData { get; }
+	public MiniBoardProgressionData MiniBoardProgressionBoardData { get; }
+	public MiniBoardProgressionExtraEntity MiniBoardProgressionExtraEntity { get; set; }
+	public MiniBoardProgressionContainer MiniBoardProgressionContainer { get; set; }
+
+	// Methods
+
+	// RVA: 0x1795924 Offset: 0x1795924 VA: 0x1795924
+	public MiniBoardProgressionConfig get_MiniBoardProgressionConfig() { }
+
+	// RVA: 0x179592C Offset: 0x179592C VA: 0x179592C
+	public MiniBoardProgressionAddressable get_MiniBoardProgressionAddressable() { }
+
+	// RVA: 0x17959D4 Offset: 0x17959D4 VA: 0x17959D4
+	public MiniBoardProgressionAssetContainer get_MiniBoardProgressionAssetContainer() { }
+
+	// RVA: 0x1795A74 Offset: 0x1795A74 VA: 0x1795A74
+	public MiniBoardProgressionEventData get_MiniBoardProgressionEventData() { }
+
+	// RVA: 0x1795B0C Offset: 0x1795B0C VA: 0x1795B0C
+	public MiniBoardProgressionData get_MiniBoardProgressionBoardData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1795BA8 Offset: 0x1795BA8 VA: 0x1795BA8
+	public MiniBoardProgressionExtraEntity get_MiniBoardProgressionExtraEntity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1795BB0 Offset: 0x1795BB0 VA: 0x1795BB0
+	private void set_MiniBoardProgressionExtraEntity(MiniBoardProgressionExtraEntity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1795BB8 Offset: 0x1795BB8 VA: 0x1795BB8
+	public MiniBoardProgressionContainer get_MiniBoardProgressionContainer() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1795BC0 Offset: 0x1795BC0 VA: 0x1795BC0
+	private void set_MiniBoardProgressionContainer(MiniBoardProgressionContainer value) { }
+
+	// RVA: 0x1795BC8 Offset: 0x1795BC8 VA: 0x1795BC8 Slot: 89
+	public override string GetScrollableFeatureParams(int point) { }
+
+	// RVA: 0x1795E28 Offset: 0x1795E28 VA: 0x1795E28
+	private void InitializeItemProbabilityCache() { }
+
+	// RVA: 0x1796090 Offset: 0x1796090 VA: 0x1796090 Slot: 132
+	public sealed override void SetSpawnerList() { }
+
+	// RVA: 0x17960D0 Offset: 0x17960D0 VA: 0x17960D0 Slot: 133
+	public override void OnEnergyConsumed(ISpawnerEnergyConsumeBaseHandler.EnergyConsumeResult energyConsumeResult) { }
+
+	// RVA: 0x1796440 Offset: 0x1796440 VA: 0x1796440
+	private bool CheckCurrencySpawn(float probability) { }
+
+	// RVA: 0x1796404 Offset: 0x1796404 VA: 0x1796404
+	private int GetSpawnerEnergyConsumeAmount() { }
+
+	// RVA: 0x1796420 Offset: 0x1796420 VA: 0x1796420
+	private void SetSpawnerEnergyConsumeAmount(int energyConsumeAmount) { }
+
+	// RVA: 0x1796478 Offset: 0x1796478 VA: 0x1796478
+	public void .ctor(BoardEntity boardEntity, BoardData boardData, MiniBoardProgressionConfig config) { }
+
+	// RVA: 0x1796550 Offset: 0x1796550 VA: 0x1796550 Slot: 134
+	public override void LoadSounds() { }
+
+	// RVA: 0x179665C Offset: 0x179665C VA: 0x179665C Slot: 135
+	public override MiniBoardContainer GetMiniBoardContainer() { }
+
+	// RVA: 0x1796740 Offset: 0x1796740 VA: 0x1796740 Slot: 136
+	public override MiniBoardAssetContainerBase GetMiniBoardAssetContainer() { }
+
+	// RVA: 0x1796744 Offset: 0x1796744 VA: 0x1796744 Slot: 137
+	public override MiniBoardData GetMiniBoardData() { }
+
+	// RVA: 0x1796764 Offset: 0x1796764 VA: 0x1796764 Slot: 138
+	public override MiniBoardRemoteParticleData GetMiniBoardRemoteParticleData() { }
+
+	// RVA: 0x1796784 Offset: 0x1796784 VA: 0x1796784 Slot: 139
+	public override KiteMiniBoardInitialBoardModel GetInitialBoardModel() { }
+
+	// RVA: 0x17967D4 Offset: 0x17967D4 VA: 0x17967D4 Slot: 140
+	public override List<KiteMiniBoardItemReward> GetInitialActiveRewardList() { }
+
+	// RVA: 0x1796804 Offset: 0x1796804 VA: 0x1796804 Slot: 141
+	public override IMiniBoardEntity GetMiniBoardEntity() { }
+
+	// RVA: 0x179680C Offset: 0x179680C VA: 0x179680C Slot: 142
+	public override MiniBoardAreaEntity GetMiniBoardAreaEntity() { }
+
+	// RVA: 0x1796828 Offset: 0x1796828 VA: 0x1796828 Slot: 143
+	public override PerishableSpawnerEntity GetPerishableSpawnerEntity(int setID) { }
+
+	// RVA: 0x179695C Offset: 0x179695C VA: 0x179695C
+	public BoardItemData GetFinishedBoardTargetItemData() { }
+
+	// RVA: 0x1796A58 Offset: 0x1796A58 VA: 0x1796A58
+	public int GetTargetItemLevel() { }
+
+	// RVA: 0x1796AA8 Offset: 0x1796AA8 VA: 0x1796AA8
+	public int GetSeenMaxLevelItem() { }
+
+	// RVA: 0x1796AC4 Offset: 0x1796AC4 VA: 0x1796AC4
+	public bool IsLastBoard() { }
+
+	// RVA: 0x1796B28 Offset: 0x1796B28 VA: 0x1796B28 Slot: 144
+	protected override string GetSpawnerConsumeItemReward() { }
+
+	// RVA: 0x1796B4C Offset: 0x1796B4C VA: 0x1796B4C Slot: 145
+	protected override void ClaimMiniBoardItemsOnBoardTaskDone(BoardTaskItem boardTaskItem, int taskCoin) { }
+
+	// RVA: 0x1796FEC Offset: 0x1796FEC VA: 0x1796FEC Slot: 146
+	public override void OnMainPopupBoardOpened() { }
+
+	// RVA: 0x1796FF4 Offset: 0x1796FF4 VA: 0x1796FF4 Slot: 59
+	protected override void SetSavedEntity(RecurringEventEntity savedEntity) { }
+
+	// RVA: 0x17970D0 Offset: 0x17970D0 VA: 0x17970D0 Slot: 60
+	protected override void CreateEntity() { }
+
+	// RVA: 0x1797070 Offset: 0x1797070 VA: 0x1797070
+	private void CreateEntityFromScratch() { }
+
+	// RVA: 0x17970EC Offset: 0x17970EC VA: 0x17970EC
+	private void TryCreateAdditionalEntityValues() { }
+
+	// RVA: 0x179755C Offset: 0x179755C VA: 0x179755C Slot: 61
+	protected override void ResetEntity() { }
+
+	// RVA: 0x1797590 Offset: 0x1797590 VA: 0x1797590 Slot: 11
+	public override void Disable() { }
+
+	// RVA: 0x17975D8 Offset: 0x17975D8 VA: 0x17975D8
+	public void TryProcessMaxLevelItemSeen(int level, UnityAction<int> onLevelSet) { }
+
+	// RVA: 0x179761C Offset: 0x179761C VA: 0x179761C
+	public void TryProcessBoardLevelUp(Action<bool> indexIncreased) { }
+
+	// RVA: 0x1797E44 Offset: 0x1797E44 VA: 0x1797E44
+	public void OnMaxLevelItemChanged() { }
+
+	// RVA: 0x1797EA0 Offset: 0x1797EA0 VA: 0x1797EA0 Slot: 54
+	public override void OnTimeoutFinish() { }
+
+	// RVA: 0x1797EB8 Offset: 0x1797EB8 VA: 0x1797EB8 Slot: 55
+	public override void OnMaxReachedFinish() { }
+
+	// RVA: 0x1797ED0 Offset: 0x1797ED0 VA: 0x1797ED0 Slot: 56
+	public override void ShowRewardsArea() { }
+
+	// RVA: 0x1797EE8 Offset: 0x1797EE8 VA: 0x1797EE8 Slot: 87
+	public override RecurringEventInfoPopupControllerBase GetRecurringEventInfoPopupController() { }
+
+	// RVA: 0x1797FA0 Offset: 0x1797FA0 VA: 0x1797FA0
+	public void OpenBoardNoticePopup() { }
+
+	// RVA: 0x1797FDC Offset: 0x1797FDC VA: 0x1797FDC
+	public void OpenBoardCongratsPopup() { }
+
+	// RVA: 0x1798018 Offset: 0x1798018 VA: 0x1798018 Slot: 57
+	protected override void FinishInitialize() { }
+
+	// RVA: 0x1798034 Offset: 0x1798034 VA: 0x1798034
+	private void InitPerishableSpawnerAdaptors() { }
+
+	// RVA: 0x1797F08 Offset: 0x1797F08 VA: 0x1797F08
+	public MiniBoardProgressionLocalConfig GetLocalConfig() { }
+
+	// RVA: 0x1798104 Offset: 0x1798104 VA: 0x1798104
+	public void OnFinishTryGetCurrencyConversion() { }
+
+	// RVA: 0x179860C Offset: 0x179860C VA: 0x179860C
+	private CollectableReward GetCurrencyConversionCollectableReward() { }
+
+	// RVA: 0x1798C24 Offset: 0x1798C24 VA: 0x1798C24 Slot: 77
+	public override void UpdateEntityOnClaim(bool isUpdateUI = True) { }
+
+	// RVA: 0x1798C28 Offset: 0x1798C28 VA: 0x1798C28 Slot: 102
+	public override void InitializeItemRewardConversion() { }
+
+	// RVA: 0x1798C30 Offset: 0x1798C30 VA: 0x1798C30 Slot: 103
+	public override void ItemRewardConvertUpdated(ItemRewardConvertEvent.FeatureStatusUpdated e) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1799094 Offset: 0x1799094 VA: 0x1799094
+	private bool <TryProcessBoardLevelUp>b__51_0(MiniBoardPositionEntity position) { }
+
+	[CompilerGenerated]
+	// RVA: 0x17990FC Offset: 0x17990FC VA: 0x17990FC
+	private int <TryProcessBoardLevelUp>b__51_2(MiniBoardItemEntity a, MiniBoardItemEntity b) { }
+}
+

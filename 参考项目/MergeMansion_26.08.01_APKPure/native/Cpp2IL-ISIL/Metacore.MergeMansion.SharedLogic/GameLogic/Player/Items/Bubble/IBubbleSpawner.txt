@@ -1,0 +1,9 @@
+Type: GameLogic.Player.Items.Bubble.IBubbleSpawner
+
+Method: GameLogic.Player.Items.IItemDefinition ShouldSpawn(GameLogic.Player.Items.IItemDefinition itemDefinition, GameLogic.Config.Types.MetacoreTime currentTime)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

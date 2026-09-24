@@ -1,0 +1,36 @@
+// Namespace: Merger.MergeBoard.Models
+public class ActiveTilesModel : IActiveTilesModel // TypeDefIndex: 25804
+{
+	// Fields
+	[Inject]
+	private ITileConfigurationModel _tileConfigurationModel; // 0x10
+	private HashSet<int> _activeIndices; // 0x18
+	[CompilerGenerated]
+	private Action ActiveTilesChanged; // 0x20
+
+	// Properties
+	public IEnumerable<int> ActiveTileIndices { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A7C48C Offset: 0x6A7848C VA: 0x6A7C48C Slot: 4
+	public void add_ActiveTilesChanged(Action value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A7C528 Offset: 0x6A78528 VA: 0x6A7C528 Slot: 5
+	public void remove_ActiveTilesChanged(Action value) { }
+
+	// RVA: 0x6A7C5C4 Offset: 0x6A785C4 VA: 0x6A7C5C4 Slot: 6
+	public IEnumerable<int> get_ActiveTileIndices() { }
+
+	// RVA: 0x6A7C678 Offset: 0x6A78678 VA: 0x6A7C678 Slot: 7
+	public void SetActiveTiles(IEnumerable<int> indices) { }
+
+	// RVA: 0x6A7C72C Offset: 0x6A7872C VA: 0x6A7C72C Slot: 8
+	public void ClearActiveTiles() { }
+
+	// RVA: 0x6A7C768 Offset: 0x6A78768 VA: 0x6A7C768
+	public void .ctor() { }
+}
+

@@ -1,0 +1,102 @@
+// Namespace: Paxie
+public class Movable : MonoBehaviour, IDragHandler, IEventSystemHandler, IBeginDragHandler, IEndDragHandler, IPointerClickHandler // TypeDefIndex: 174
+{
+	// Fields
+	[SerializeField]
+	private Movable.Status _status; // 0x10
+	[SerializeField]
+	private Movable.InteractionStatus _interactionStatus; // 0x14
+	private readonly HashSet<Collider2D> _currentColliders; // 0x18
+	private PointerEventData _lastPointerDragEventData; // 0x1C
+	public ItemController item; // 0x20
+	private bool _dragEnded; // 0x24
+
+	// Properties
+	public Movable.InteractionStatus GetInteractionStatus { get; }
+	public Movable.Status MoveStatus { get; }
+	public PointerEventData LastPointerDragEventData { get; }
+
+	// Methods
+
+	// RVA: 0x18B8B80 Offset: 0x18B8B80 VA: 0x18B8B80
+	public Movable.InteractionStatus get_GetInteractionStatus() { }
+
+	// RVA: 0x18B8B88 Offset: 0x18B8B88 VA: 0x18B8B88
+	public Movable.Status get_MoveStatus() { }
+
+	// RVA: 0x18B8B90 Offset: 0x18B8B90 VA: 0x18B8B90
+	public PointerEventData get_LastPointerDragEventData() { }
+
+	// RVA: -1 Offset: -1
+	public T GetNearestCollidingComponent<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x25174AC Offset: 0x25174AC VA: 0x25174AC
+	|-Movable.GetNearestCollidingComponent<object>
+	|
+	|-RVA: 0x25177D8 Offset: 0x25177D8 VA: 0x25177D8
+	|-Movable.GetNearestCollidingComponent<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public bool IsColliding<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x25181D0 Offset: 0x25181D0 VA: 0x25181D0
+	|-Movable.IsColliding<object>
+	|
+	|-RVA: 0x25183BC Offset: 0x25183BC VA: 0x25183BC
+	|-Movable.IsColliding<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public List<T> GetNearestCollidingComponents<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2517C24 Offset: 0x2517C24 VA: 0x2517C24
+	|-Movable.GetNearestCollidingComponents<object>
+	|
+	|-RVA: 0x2517EA4 Offset: 0x2517EA4 VA: 0x2517EA4
+	|-Movable.GetNearestCollidingComponents<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x18B8B98 Offset: 0x18B8B98 VA: 0x18B8B98
+	private void OnTriggerEnter2D(Collider2D other) { }
+
+	// RVA: 0x18B8C40 Offset: 0x18B8C40 VA: 0x18B8C40
+	private void OnTriggerExit2D(Collider2D other) { }
+
+	// RVA: 0x18B8CE8 Offset: 0x18B8CE8 VA: 0x18B8CE8
+	private void OnTriggerStay2D(Collider2D other) { }
+
+	// RVA: 0x18B8E0C Offset: 0x18B8E0C VA: 0x18B8E0C
+	public void LogCurrentColliders() { }
+
+	// RVA: 0x18B9138 Offset: 0x18B9138 VA: 0x18B9138
+	public void SetStatus(Movable.Status status) { }
+
+	// RVA: 0x18B9208 Offset: 0x18B9208 VA: 0x18B9208
+	public void SetInteractionStatus(Movable.InteractionStatus interactionStatus) { }
+
+	// RVA: 0x18B92F4 Offset: 0x18B92F4 VA: 0x18B92F4
+	private void CancelDragBeforeChangingInteractionStatus(Movable.InteractionStatus interactionStatus) { }
+
+	// RVA: 0x18B93C4 Offset: 0x18B93C4 VA: 0x18B93C4 Slot: 5
+	public void OnBeginDrag(PointerEventData eventData) { }
+
+	// RVA: 0x18B946C Offset: 0x18B946C VA: 0x18B946C Slot: 6
+	public void OnEndDrag(PointerEventData eventData) { }
+
+	// RVA: 0x18B9310 Offset: 0x18B9310 VA: 0x18B9310
+	public void DragEnded() { }
+
+	// RVA: 0x18B9470 Offset: 0x18B9470 VA: 0x18B9470 Slot: 4
+	public void OnDrag(PointerEventData eventData) { }
+
+	// RVA: 0x18B95B4 Offset: 0x18B95B4 VA: 0x18B95B4 Slot: 7
+	public void OnPointerClick(PointerEventData eventData) { }
+
+	// RVA: 0x18B97EC Offset: 0x18B97EC VA: 0x18B97EC
+	public void .ctor() { }
+}
+

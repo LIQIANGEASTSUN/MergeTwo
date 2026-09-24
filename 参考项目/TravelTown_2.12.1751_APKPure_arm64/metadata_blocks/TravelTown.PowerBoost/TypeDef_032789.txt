@@ -1,0 +1,33 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class PowerBoostModesCalculator.<>c // TypeDefIndex: 32789
+{
+	// Fields
+	public static readonly PowerBoostModesCalculator.<>c <>9; // 0x0
+	public static Func<BoostModeConfig, int> <>9__24_2; // 0x8
+	public static Func<int, int> <>9__24_3; // 0x10
+	public static Func<BoostModeConfig, int> <>9__25_0; // 0x18
+	public static Func<int, int> <>9__25_1; // 0x20
+
+	// Methods
+
+	// RVA: 0x6AD0600 Offset: 0x6ACC600 VA: 0x6AD0600
+	private static void .cctor() { }
+
+	// RVA: 0x6AD0668 Offset: 0x6ACC668 VA: 0x6AD0668
+	public void .ctor() { }
+
+	// RVA: 0x6AD0670 Offset: 0x6ACC670 VA: 0x6AD0670
+	internal int <CalculatePlayableBoosts>b__24_2(BoostModeConfig availableBoosts) { }
+
+	// RVA: 0x6AD0688 Offset: 0x6ACC688 VA: 0x6AD0688
+	internal int <CalculatePlayableBoosts>b__24_3(int x) { }
+
+	// RVA: 0x6AD0690 Offset: 0x6ACC690 VA: 0x6AD0690
+	internal int <CalculateAvailableBoostsByLevel>b__25_0(BoostModeConfig availableBoosts) { }
+
+	// RVA: 0x6AD06A8 Offset: 0x6ACC6A8 VA: 0x6AD06A8
+	internal int <CalculateAvailableBoostsByLevel>b__25_1(int x) { }
+}
+

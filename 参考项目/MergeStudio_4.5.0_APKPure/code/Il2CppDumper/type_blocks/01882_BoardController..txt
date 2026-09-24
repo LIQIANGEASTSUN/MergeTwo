@@ -1,0 +1,19 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardController.<>c__DisplayClass321_0 // TypeDefIndex: 1882
+{
+	// Fields
+	public ItemController item; // 0x8
+	public BoardController <>4__this; // 0xC
+	public BoardPosition previousPosition; // 0x10
+	public BoardEvent.RevertMove e; // 0x14
+
+	// Methods
+
+	// RVA: 0x1919B80 Offset: 0x1919B80 VA: 0x1919B80
+	public void .ctor() { }
+
+	// RVA: 0x1919B88 Offset: 0x1919B88 VA: 0x1919B88
+	internal void <OnEvent>b__0() { }
+}
+

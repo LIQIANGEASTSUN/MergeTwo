@@ -1,0 +1,23 @@
+Type: GameLogic.Random.ControlledRandom.ControlledRandomMinMaxSequenceContext`1
+
+Method: System.Boolean FixElementsForFixedCardsStars(System.Collections.Generic.List`1<T> elements)
+
+Disassembly:
+	0x02921DB0 LDRH W8, [X8]
+	0x02921DB4 TBNZ X8, 0x0, 0x2921DC4
+
+ISIL:
+	001 Move W0, W31
+	002 Return X0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x02921DB8 MOV X0, X1
+	0x02921DBC BL 0x23D4F40
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+

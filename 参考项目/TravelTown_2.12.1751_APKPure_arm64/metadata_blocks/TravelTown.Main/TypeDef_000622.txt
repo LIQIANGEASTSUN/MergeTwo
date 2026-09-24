@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class HintUtil.<>c__DisplayClass3_0 // TypeDefIndex: 622
+{
+	// Fields
+	public IdComponent unlockedItem; // 0x10
+
+	// Methods
+
+	// RVA: 0x6274778 Offset: 0x6270778 VA: 0x6274778
+	public void .ctor() { }
+
+	// RVA: 0x6277A20 Offset: 0x6273A20 VA: 0x6277A20
+	internal bool <TrySetStackingHintPair>b__0(IdComponent item) { }
+}
+

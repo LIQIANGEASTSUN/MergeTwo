@@ -1,0 +1,19 @@
+// Namespace: Merger.Game.Views.BoardItem
+public class BoardItemViewContainer : SerializedMonoBehaviour // TypeDefIndex: 9138
+{
+	// Fields
+	[SerializeField]
+	private string _containerName; // 0x60
+
+	// Properties
+	public string ContainerName { get; }
+
+	// Methods
+
+	// RVA: 0x6731DAC Offset: 0x672DDAC VA: 0x6731DAC
+	public string get_ContainerName() { }
+
+	// RVA: 0x6731DB4 Offset: 0x672DDB4 VA: 0x6731DB4
+	public void .ctor() { }
+}
+

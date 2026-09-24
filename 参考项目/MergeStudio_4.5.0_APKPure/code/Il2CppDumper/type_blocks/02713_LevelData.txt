@@ -1,0 +1,44 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class LevelData // TypeDefIndex: 2713
+{
+	// Fields
+	public List<LevelItem> LevelItems; // 0x8
+	public int LoopIndex; // 0xC
+
+	// Methods
+
+	// RVA: 0x1A60420 Offset: 0x1A60420 VA: 0x1A60420
+	public LevelItem GetCurrentLevelData(UserEntity user, bool skipRewardOverrides = False) { }
+
+	// RVA: 0x1A60568 Offset: 0x1A60568 VA: 0x1A60568
+	public LevelItem GetNextLevelData(UserEntity user, bool skipRewardOverrides = False) { }
+
+	// RVA: 0x1A63DD8 Offset: 0x1A63DD8 VA: 0x1A63DD8
+	private void OverrideLevelItem(int level, LevelItem levelItem, bool skipRewardOverrides = False) { }
+
+	// RVA: 0x1A63ED0 Offset: 0x1A63ED0 VA: 0x1A63ED0
+	private void TryOverrideXpFromDynamicConfig(int level, LevelItem levelItem) { }
+
+	// RVA: 0x1A63CB0 Offset: 0x1A63CB0 VA: 0x1A63CB0
+	public int GetModuloLevel(int userLevel) { }
+
+	// RVA: 0x1A642AC Offset: 0x1A642AC VA: 0x1A642AC
+	public int[] GetMinMaxXPOfLevel(int userLevel) { }
+
+	// RVA: 0x1A643E0 Offset: 0x1A643E0 VA: 0x1A643E0
+	public LevelItem GetCurrentLevelData(EventEntity eventEntity) { }
+
+	// RVA: 0x1A6449C Offset: 0x1A6449C VA: 0x1A6449C
+	public LevelItem GetLastLevelData() { }
+
+	// RVA: 0x1A64518 Offset: 0x1A64518 VA: 0x1A64518
+	public LevelItem GetPreviousLevelData(EventEntity eventEntity) { }
+
+	// RVA: 0x1A645D8 Offset: 0x1A645D8 VA: 0x1A645D8
+	public LevelItem GetNextLevelData(EventEntity eventEntity) { }
+
+	// RVA: 0x1A64694 Offset: 0x1A64694 VA: 0x1A64694
+	public void .ctor() { }
+}
+

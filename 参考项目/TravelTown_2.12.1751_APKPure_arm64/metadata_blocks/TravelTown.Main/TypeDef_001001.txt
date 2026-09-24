@@ -1,0 +1,68 @@
+// Namespace: MergeEngine.ECS.Systems.Items.ImmidateToolsSystem
+public class ImmediateToolCollectSystem : BaseToolAnalysisSystem<ImmediateToolComponent> // TypeDefIndex: 1001
+{
+	// Fields
+	[InjectSystem]
+	private InventorySystem _inventorySystem; // 0x98
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0xA0
+	[InjectSystem]
+	private InteractionSystem _interactionSystem; // 0xA8
+	[Inject]
+	private INotificationDataFactory _notificationDataFactory; // 0xB0
+	[InjectSystem]
+	private OperationTrackingSystem _operationTrackingSystem; // 0xB8
+	[InjectSystem]
+	private BoardSystem _boardSystem; // 0xC0
+	[Inject]
+	private IUserProfileService _userProfileService; // 0xC8
+	private InventoryComponent _inventoryComponent; // 0xD0
+
+	// Methods
+
+	// RVA: 0x679F450 Offset: 0x679B450 VA: 0x679F450 Slot: 6
+	protected override void InitializeSystem() { }
+
+	// RVA: 0x679F4D0 Offset: 0x679B4D0 VA: 0x679F4D0 Slot: 18
+	protected override void ProcessComponent(ImmediateToolComponent immediateToolComponent) { }
+
+	// RVA: 0x679F560 Offset: 0x679B560 VA: 0x679F560
+	private void HandleToolboxCollection(ImmediateToolComponent toolboxComponent) { }
+
+	// RVA: 0x679F5AC Offset: 0x679B5AC VA: 0x679F5AC
+	private void HandleSingleToolCollection(ImmediateToolComponent singleToolComponent) { }
+
+	// RVA: 0x679F884 Offset: 0x679B884 VA: 0x679F884
+	private List<IMergeItem> CalculateToolsToSpawn(ImmediateToolComponent toolboxComponent, int numberOfTools) { }
+
+	// RVA: 0x679FCE0 Offset: 0x679BCE0 VA: 0x679FCE0
+	private void AnalyzeToolsInInventory(List<PlayerResourceEnum> unfinishedChains, Dictionary<PlayerResourceEnum, int> unfinishedItemLevelSumPerChain, Dictionary<PlayerResourceEnum, int> collectableTools) { }
+
+	// RVA: 0x67A03CC Offset: 0x679C3CC VA: 0x67A03CC
+	private ValueTuple<IMergeItem, int> GenerateSingleTool(List<WeightedTool> toolsWeights, List<WeightedToolLevel> toolLevelWeights, List<PlayerResourceEnum> unfinishedChains, Dictionary<PlayerResourceEnum, int> itemsLevelSumPerChain, Dictionary<PlayerResourceEnum, int> collectableTools) { }
+
+	// RVA: 0x67A059C Offset: 0x679C59C VA: 0x67A059C
+	private void UpdateChainsAfterToolGeneration(IMergeItem toolItem, int toolLevel, ref List<PlayerResourceEnum> unfinishedChains, ref Dictionary<PlayerResourceEnum, int> itemsLevelSumPerChain, ref Dictionary<PlayerResourceEnum, int> collectableTools) { }
+
+	// RVA: 0x679FAC8 Offset: 0x679BAC8 VA: 0x679FAC8
+	private void StartToolCollectionSequence(ImmediateToolComponent toolboxComponent, List<IMergeItem> toolsToSpawn) { }
+
+	// RVA: 0x67A12E0 Offset: 0x679D2E0 VA: 0x67A12E0
+	private void AnimateToolsToInventorySequence(ImmediateToolComponent toolClicked, List<ValueTuple<IMergeItem, ResourceMultiple>> toolsWithAnimationData) { }
+
+	// RVA: 0x67A0CC4 Offset: 0x679CCC4 VA: 0x67A0CC4
+	private List<ValueTuple<IMergeItem, ResourceMultiple>> UpdateInventoryAndResources(List<IMergeItem> toolsToSpawn) { }
+
+	// RVA: 0x67A09F8 Offset: 0x679C9F8 VA: 0x67A09F8
+	private void SendToolboxCollectNotification(ImmediateToolComponent toolboxComponent, List<string> toolboxContent) { }
+
+	// RVA: 0x679FC54 Offset: 0x679BC54 VA: 0x679FC54
+	private void StartSingleToolCollectionSequence(ImmediateToolComponent singleToolComponent, List<IMergeItem> toolsToSpawn) { }
+
+	// RVA: 0x67A1518 Offset: 0x679D518 VA: 0x67A1518
+	private void SendSingleToolCollectNotification(ImmediateToolComponent singleToolComponent) { }
+
+	// RVA: 0x67A1788 Offset: 0x679D788 VA: 0x67A1788
+	public void .ctor() { }
+}
+

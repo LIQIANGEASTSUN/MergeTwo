@@ -1,0 +1,31 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "BoardItemCollectable", menuName = "Scriptable/BoardItem/Collectable", order = 5)]
+public class BoardItemCollectable : BoardItemData // TypeDefIndex: 1647
+{
+	// Fields
+	public BoardItemCollectable.CollectableType collectableType; // 0x2C
+	[SerializeField]
+	private int rewardAmount; // 0x30
+	public int animatedAmount; // 0x34
+
+	// Properties
+	public int AnimatedAmount { get; }
+
+	// Methods
+
+	// RVA: 0x18C79C4 Offset: 0x18C79C4 VA: 0x18C79C4
+	public int get_AnimatedAmount() { }
+
+	// RVA: 0x18C7A14 Offset: 0x18C7A14 VA: 0x18C7A14
+	public int RewardAmount() { }
+
+	// RVA: 0x18C7BA0 Offset: 0x18C7BA0 VA: 0x18C7BA0 Slot: 4
+	public override bool Initialize(BoardEntity boardEntity, IItemController item, long millisecondsPassed, bool isNewlyCreated) { }
+
+	// RVA: 0x18C7BA8 Offset: 0x18C7BA8 VA: 0x18C7BA8 Slot: 6
+	public override int GetTimeRequiredToExitCharging() { }
+
+	// RVA: 0x18C7BB0 Offset: 0x18C7BB0 VA: 0x18C7BB0
+	public void .ctor() { }
+}
+

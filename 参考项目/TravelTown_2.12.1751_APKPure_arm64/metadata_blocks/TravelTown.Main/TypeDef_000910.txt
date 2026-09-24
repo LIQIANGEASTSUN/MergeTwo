@@ -1,0 +1,29 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardSystem.<>c // TypeDefIndex: 910
+{
+	// Fields
+	public static readonly BoardSystem.<>c <>9; // 0x0
+	public static Func<PositionComponent, bool> <>9__47_2; // 0x8
+	public static Action<PositionComponent> <>9__52_0; // 0x10
+	public static Func<PositionComponent, bool> <>9__77_0; // 0x18
+
+	// Methods
+
+	// RVA: 0x666B918 Offset: 0x6667918 VA: 0x666B918
+	private static void .cctor() { }
+
+	// RVA: 0x666B980 Offset: 0x6667980 VA: 0x666B980
+	public void .ctor() { }
+
+	// RVA: 0x666B988 Offset: 0x6667988 VA: 0x666B988
+	internal bool <OnGameStarted>b__47_2(PositionComponent item) { }
+
+	// RVA: 0x666B9E4 Offset: 0x66679E4 VA: 0x666B9E4
+	internal void <LockBoardItemsBeforeFirstTutorial>b__52_0(PositionComponent component) { }
+
+	// RVA: 0x666BA4C Offset: 0x6667A4C VA: 0x666BA4C
+	internal bool <IsItemInDrag>b__77_0(PositionComponent entity) { }
+}
+

@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardTaskEntity.<>c__DisplayClass69_1 // TypeDefIndex: 1968
+{
+	// Fields
+	public BoardTaskItem leftoverActiveTask; // 0x8
+
+	// Methods
+
+	// RVA: 0x19424E4 Offset: 0x19424E4 VA: 0x19424E4
+	public void .ctor() { }
+
+	// RVA: 0x1948060 Offset: 0x1948060 VA: 0x1948060
+	internal bool <InitializeActiveTaskLogic>b__1(BoardTaskItem item) { }
+}
+

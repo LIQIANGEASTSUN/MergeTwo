@@ -1,0 +1,8 @@
+// Namespace: 
+public struct BoardEvent.MergeChargeWithChargeable : IEvent // TypeDefIndex: 1776
+{
+	// Fields
+	public ItemController ChargeItem; // 0x0
+	public ItemController ChargeableItem; // 0x4
+}
+

@@ -1,0 +1,31 @@
+// Namespace: MergeEngine.ECS.Systems
+public class TimeDurationSystem : TickableSystem<TimeDurationComponent> // TypeDefIndex: 693
+{
+	// Fields
+	private const string KillComponentSource = "timeDurationExpired";
+	[InjectSystem]
+	private TimeSystem _timeSystem; // 0x40
+	[InjectSystem]
+	private BoardSystem _boardSystem; // 0x48
+
+	// Properties
+	public override SystemPriorities Priority { get; }
+
+	// Methods
+
+	// RVA: 0x63A8034 Offset: 0x63A4034 VA: 0x63A8034 Slot: 15
+	public override SystemPriorities get_Priority() { }
+
+	// RVA: 0x63A803C Offset: 0x63A403C VA: 0x63A803C Slot: 16
+	protected override void ProcessComponents(ReadOnlyCollection<TimeDurationComponent> components) { }
+
+	// RVA: 0x63A854C Offset: 0x63A454C VA: 0x63A854C
+	private void AddKillComponentIfNoTimeLeft(TimeDurationComponent timeDurationComponent) { }
+
+	// RVA: 0x63A8454 Offset: 0x63A4454 VA: 0x63A8454
+	private bool IsLocked(ComponentBase component) { }
+
+	// RVA: 0x63A85DC Offset: 0x63A45DC VA: 0x63A85DC
+	public void .ctor() { }
+}
+

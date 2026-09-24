@@ -1,0 +1,13 @@
+// Namespace: MergeEngine.ECS.Components.InteractionTracking
+public class ChargableTrackingData // TypeDefIndex: 1111
+{
+	// Fields
+	public IMergeItem SpawnerItem; // 0x10
+	public bool IsChargable; // 0x18
+
+	// Methods
+
+	// RVA: 0x69004F0 Offset: 0x68FC4F0 VA: 0x69004F0
+	public void .ctor() { }
+}
+

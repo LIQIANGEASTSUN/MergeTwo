@@ -1,0 +1,15 @@
+// Namespace: MergeEngine.ECS.Systems
+public interface ITickableSystem // TypeDefIndex: 668
+{
+	// Properties
+	public abstract SystemPriorities Priority { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract SystemPriorities get_Priority();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void Tick();
+}
+

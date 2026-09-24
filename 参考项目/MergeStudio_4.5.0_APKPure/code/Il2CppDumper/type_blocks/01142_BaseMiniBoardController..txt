@@ -1,0 +1,49 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BaseMiniBoardController.<>c // TypeDefIndex: 1142
+{
+	// Fields
+	public static readonly BaseMiniBoardController.<>c <>9; // 0x0
+	public static Func<CellEntity, Coordinate> <>9__151_0; // 0x4
+	public static Func<MiniBoardItemEntity, int> <>9__177_0; // 0x8
+	public static Func<MiniBoardItemEntity, int> <>9__177_1; // 0xC
+	public static Predicate<MiniBoardItemController> <>9__187_0; // 0x10
+	public static Func<MiniBoardItemController, bool> <>9__187_1; // 0x14
+	public static Func<MiniBoardPosition, MiniBoardItemController> <>9__189_0; // 0x18
+	public static Func<MiniBoardItemController, bool> <>9__189_1; // 0x1C
+	public static Func<CellEntity, Coordinate> <>9__190_0; // 0x20
+
+	// Methods
+
+	// RVA: 0x17D50C8 Offset: 0x17D50C8 VA: 0x17D50C8
+	private static void .cctor() { }
+
+	// RVA: 0x17D513C Offset: 0x17D513C VA: 0x17D513C
+	public void .ctor() { }
+
+	// RVA: 0x17D5144 Offset: 0x17D5144 VA: 0x17D5144
+	internal Coordinate <GetAvailableCellCoordinates>b__151_0(CellEntity cell) { }
+
+	// RVA: 0x17D516C Offset: 0x17D516C VA: 0x17D516C
+	internal int <GetProcessExtraItemEntitiesOnMerge>b__177_0(MiniBoardItemEntity x) { }
+
+	// RVA: 0x17D5190 Offset: 0x17D5190 VA: 0x17D5190
+	internal int <GetProcessExtraItemEntitiesOnMerge>b__177_1(MiniBoardItemEntity x) { }
+
+	// RVA: 0x17D51AC Offset: 0x17D51AC VA: 0x17D51AC
+	internal bool <StartSpawnerAnimations>b__187_0(MiniBoardItemController spawnerItem) { }
+
+	// RVA: 0x17D5218 Offset: 0x17D5218 VA: 0x17D5218
+	internal bool <StartSpawnerAnimations>b__187_1(MiniBoardItemController spawner) { }
+
+	// RVA: 0x17D5250 Offset: 0x17D5250 VA: 0x17D5250
+	internal MiniBoardItemController <GetSpawnersWithSpineOnBoard>b__189_0(MiniBoardPosition boardPos) { }
+
+	// RVA: 0x17D526C Offset: 0x17D526C VA: 0x17D526C
+	internal bool <GetSpawnersWithSpineOnBoard>b__189_1(MiniBoardItemController item) { }
+
+	// RVA: 0x17D530C Offset: 0x17D530C VA: 0x17D530C
+	internal Coordinate <CheckMergedRewards>b__190_0(CellEntity cell) { }
+}
+

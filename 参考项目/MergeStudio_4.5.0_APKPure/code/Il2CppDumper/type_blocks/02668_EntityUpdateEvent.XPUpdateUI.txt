@@ -1,0 +1,10 @@
+// Namespace: 
+public struct EntityUpdateEvent.XPUpdateUI : IEvent // TypeDefIndex: 2668
+{
+	// Fields
+	public int CurrentAmount; // 0x0
+	public bool MakeImpactAnim; // 0x4
+	public bool Meta; // 0x5
+	public bool IsGoingLevelUp; // 0x6
+}
+

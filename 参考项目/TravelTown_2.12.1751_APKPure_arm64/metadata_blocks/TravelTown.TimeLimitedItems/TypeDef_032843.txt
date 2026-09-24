@@ -1,0 +1,9 @@
+// Namespace: Merger.TimeLimitedItems.Handlers
+public interface ITimeLimitedItemsRepository // TypeDefIndex: 32843
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract IPromise RequestCleanup(string eventId, OperationNotificationData[] boardOperations);
+}
+

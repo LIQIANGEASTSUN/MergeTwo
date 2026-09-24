@@ -1,0 +1,155 @@
+Type: GameLogic.Player.Items.Merging.MergeReward
+
+Method: GameLogic.Player.Items.Merging.MergeRewardId get_ConfigKey()
+
+Disassembly:
+	0x03629DA4 LDR X0, [X19]
+	0x03629DA8 LDR W8, [X0 + 0xE4]
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_ConfigKey(GameLogic.Player.Items.Merging.MergeRewardId value)
+
+Disassembly:
+	0x03629DAC CBNZ W8, 0x3629DD0
+	0x03629DB0 BL 0x239BA64
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Int32 get_ExperienceRequired()
+
+Disassembly:
+	0x03629DB4 LDRB W8, [X20 + 0x369]
+	0x03629DB8 CBNZ W8, 0x3629DD0
+
+ISIL:
+	001 Move W0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_ExperienceRequired(System.Int32 value)
+
+Disassembly:
+	0x03629DBC ADRP X0, 0x20AC000
+	0x03629DC0 LDR X0, [X0 + 0x210]
+
+ISIL:
+	001 Move [X0+24], W1
+	002 Return 
+
+Method: System.Collections.Generic.List`1<GameLogic.Player.Rewards.PlayerReward> get_Rewards()
+
+Disassembly:
+	0x03629DC4 BL 0x239B8E4
+	0x03629DC8 MOVZ W8, 0x1
+
+ISIL:
+	001 Move X0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_Rewards(System.Collections.Generic.List`1<GameLogic.Player.Rewards.PlayerReward> value)
+
+Disassembly:
+	0x03629DCC STRB W8, [X20 + 0x369]
+	0x03629DD0 LDR X0, [X19]
+
+ISIL:
+	001 Move [X0+32], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Int32 get_ExperimentPriority()
+
+Disassembly:
+	0x03629DD4 LDR W8, [X0 + 0xE4]
+	0x03629DD8 CBNZ W8, 0x3629DFC
+
+ISIL:
+	001 Move W0, [X0+40]
+	002 Return X0
+
+Method: System.Void set_ExperimentPriority(System.Int32 value)
+
+Disassembly:
+	0x03629DDC BL 0x239BA64
+	0x03629DE0 LDRB W8, [X20 + 0x369]
+
+ISIL:
+	001 Move [X0+40], W1
+	002 Return 
+
+Method: System.Collections.Generic.List`1<GameLogic.Player.Rewards.PlayerReward> FixPlayerRewards(Metaplay.Core.Serialization.MetaMemberDeserializationFailureParams failureParams)
+
+Disassembly:
+	0x03629DE4 CBNZ W8, 0x3629DFC
+	0x03629DE8 ADRP X0, 0x20AC000
+	0x03629DEC LDR X0, [X0 + 0x210]
+	0x03629DF0 BL 0x239B8E4
+	0x03629DF4 MOVZ W8, 0x1
+	0x03629DF8 STRB W8, [X20 + 0x369]
+	0x03629DFC LDR X0, [X19]
+	0x03629E00 ADRP X20, 0x2107000
+	0x03629E04 LDR W8, [X0 + 0xE4]
+	0x03629E08 LDR X20, [X20 + 0x9A0]
+	0x03629E0C CBNZ W8, 0x3629E14
+	0x03629E10 BL 0x239BA64
+	0x03629E14 LDR X0, [X20]
+	0x03629E18 BL 0x239BB80
+	0x03629E1C MOV W1, W31
+	0x03629E20 MOV X2, X31
+	0x03629E24 MOV X3, X31
+	0x03629E28 MOV W4, W31
+	0x03629E2C MOV X5, X31
+	0x03629E30 MOV X6, X31
+	0x03629E34 MOV X7, X31
+	0x03629E38 MOVZ W8, 0x2
+	0x03629E3C MOV X19, X0
+	0x03629E40 STR W31, [X31 + 0x20]
+	0x03629E44 STR W8, [X31 + 0x18]
+
+ISIL:
+	001 Subtract X31, X31, 64
+	002 Move [X31+32], X30
+	003 Move [X31+40], X21
+	004 Move [X31+48], X20
+	005 Move [X31+56], X19
+	006 Move X19, X0
+	007 Move W8, [0x2704CD6]
+	008 Move X20, [0x20ED8C8]
+	009 Move TEMP, X8
+	010 And TEMP, TEMP, 1
+	011 Compare TEMP, 1
+	012 JumpIfEqual {17}
+	013 Move X0, [0x20ED8C8]
+	014 Call 0x239F8E4
+	015 Move W8, 1
+	016 Move [X21+3286], W8
+	017 Move V0, [X19]
+	018 Move X8, [X19+16]
+	019 Add X0, X31, 0
+	020 Move X1, [X20]
+	021 Move [X31], V0
+	022 Move [X31+16], X8
+	023 Call 0x26565E4, X0
+	024 Move X20, [X31+48]
+	025 Move X19, [X31+56]
+	026 Move X30, [X31+32]
+	027 Move X21, [X31+40]
+	028 Add X31, X31, 64
+	029 Return X0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03629E48 STR X31, [X31 + 0x10]
+	0x03629E4C STR W31, [X31 + 0x8]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+

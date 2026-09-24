@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BaseMiniBoardController.<>c__DisplayClass190_1 // TypeDefIndex: 1150
+{
+	// Fields
+	public Coordinate targetCoordinate; // 0x8
+
+	// Methods
+
+	// RVA: 0x17D58AC Offset: 0x17D58AC VA: 0x17D58AC
+	public void .ctor() { }
+
+	// RVA: 0x17D58B4 Offset: 0x17D58B4 VA: 0x17D58B4
+	internal float <CheckMergedRewards>b__1(Coordinate coord) { }
+}
+

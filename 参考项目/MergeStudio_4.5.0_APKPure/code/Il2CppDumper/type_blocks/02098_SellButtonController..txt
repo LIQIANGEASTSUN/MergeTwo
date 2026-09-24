@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class SellButtonController.<>c__DisplayClass46_0 // TypeDefIndex: 2098
+{
+	// Fields
+	public SellButtonController <>4__this; // 0x8
+	public BoardEvent.SellItemTrial e; // 0xC
+
+	// Methods
+
+	// RVA: 0x197F01C Offset: 0x197F01C VA: 0x197F01C
+	public void .ctor() { }
+
+	// RVA: 0x197F284 Offset: 0x197F284 VA: 0x197F284
+	internal void <OnEvent>b__0() { }
+}
+

@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class SummerWatermelonModel.<>c__DisplayClass92_0 // TypeDefIndex: 1009
+{
+	// Fields
+	public SummerWatermelonModel <>4__this; // 0x8
+	public bool openPopup; // 0xC
+
+	// Methods
+
+	// RVA: 0x1EC6DC4 Offset: 0x1EC6DC4 VA: 0x1EC6DC4
+	public void .ctor() { }
+
+	// RVA: 0x1EC6DCC Offset: 0x1EC6DCC VA: 0x1EC6DCC
+	internal void <PurchasePackageSuccess>b__0() { }
+}
+

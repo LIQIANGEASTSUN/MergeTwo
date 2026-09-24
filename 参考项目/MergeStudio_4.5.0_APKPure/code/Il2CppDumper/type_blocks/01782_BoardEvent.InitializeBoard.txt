@@ -1,0 +1,14 @@
+// Namespace: 
+public struct BoardEvent.InitializeBoard : IEvent // TypeDefIndex: 1782
+{
+	// Fields
+	public BoardEntity BoardEntity; // 0x0
+	public EventEntity EventEntity; // 0x4
+	public BoardData BoardData; // 0x8
+	public MetaData MetaData; // 0xC
+	public LevelItem LevelData; // 0x10
+	public SpriteRenderer ItemActionArea; // 0x14
+	public bool IsFirstSession; // 0x18
+	public bool IsEventBoard; // 0x19
+}
+

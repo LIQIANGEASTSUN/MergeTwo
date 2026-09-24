@@ -1,0 +1,9 @@
+Type: Code.GameLogic.Config.IValidatable
+
+Method: System.Void Validate(GameLogic.Config.IMergeMansionGameConfig configuration, Metaplay.Core.Config.GameConfigValidationResult variantEntries)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

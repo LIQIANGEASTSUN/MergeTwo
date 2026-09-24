@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class InteractionSystem.<>c__DisplayClass20_0 // TypeDefIndex: 647
+{
+	// Fields
+	public IMergeItem candidateItem; // 0x10
+
+	// Methods
+
+	// RVA: 0x6280888 Offset: 0x627C888 VA: 0x6280888
+	public void .ctor() { }
+
+	// RVA: 0x6280A84 Offset: 0x627CA84 VA: 0x6280A84
+	internal bool <CanCombineItems>b__0(ItemMultiple consumedItem) { }
+}
+

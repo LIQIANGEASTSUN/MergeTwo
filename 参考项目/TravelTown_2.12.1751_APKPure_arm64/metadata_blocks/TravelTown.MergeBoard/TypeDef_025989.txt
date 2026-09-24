@@ -1,0 +1,22 @@
+// Namespace: Merger.MergeBoard.Components
+public struct BornComponent : IComponent // TypeDefIndex: 25989
+{
+	// Fields
+	[CompilerGenerated]
+	private Entity <SourceEntity>k__BackingField; // 0x0
+
+	// Properties
+	public Entity SourceEntity { get; set; }
+
+	// Methods
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9BC10 Offset: 0x6A97C10 VA: 0x6A9BC10
+	public Entity get_SourceEntity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BC18 Offset: 0x6A97C18 VA: 0x6A9BC18
+	public void set_SourceEntity(Entity value) { }
+}
+

@@ -1,0 +1,32 @@
+// Namespace: Merger.TimeLimitedItems.Models
+public interface ITimeLimitedItemsModel // TypeDefIndex: 32836
+{
+	// Properties
+	public abstract string EventId { get; }
+	public abstract string EventName { get; }
+	public abstract string ThemeId { get; }
+	public abstract BindableProperty<bool> EventIsActive { get; }
+	public abstract BindableProperty<double> EventTimeLeft { get; }
+	public abstract HashSet<string> GraphIds { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract string get_EventId();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract string get_EventName();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract string get_ThemeId();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract BindableProperty<bool> get_EventIsActive();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract BindableProperty<double> get_EventTimeLeft();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract HashSet<string> get_GraphIds();
+}
+

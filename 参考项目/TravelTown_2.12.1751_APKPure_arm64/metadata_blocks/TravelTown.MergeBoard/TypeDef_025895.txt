@@ -1,0 +1,18 @@
+// Namespace: Merger.MergeBoard.Factories
+public class FeedingCombinationConsumedItemSnapshotFactory : IFeedingCombinationConsumedItemSnapshotFactory // TypeDefIndex: 25895
+{
+	// Fields
+	[Inject]
+	private IJsonService _jsonService; // 0x10
+	[Inject]
+	private IMergeBoardItemNotificationDataFactory _mergeBoardItemNotificationDataFactory; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A93BC0 Offset: 0x6A8FBC0 VA: 0x6A93BC0 Slot: 4
+	public FeedingCombinationConsumedItemSnapshot CreateFeedingCombinationConsumedItemSnapshot(Entity entity) { }
+
+	// RVA: 0x6A93E10 Offset: 0x6A8FE10 VA: 0x6A93E10
+	public void .ctor() { }
+}
+

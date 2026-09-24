@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardQueueSystem.<>c__DisplayClass58_0 // TypeDefIndex: 906
+{
+	// Fields
+	public string itemUniqueId; // 0x10
+
+	// Methods
+
+	// RVA: 0x66669FC Offset: 0x66629FC VA: 0x66669FC
+	public void .ctor() { }
+
+	// RVA: 0x6666D84 Offset: 0x6662D84 VA: 0x6666D84
+	internal bool <HasItemWithUniqueId>b__0(QueuedItem queuedItem) { }
+}
+

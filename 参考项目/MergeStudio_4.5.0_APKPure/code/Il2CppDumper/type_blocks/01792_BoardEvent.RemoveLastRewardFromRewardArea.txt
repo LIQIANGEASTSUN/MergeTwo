@@ -1,0 +1,8 @@
+// Namespace: 
+public struct BoardEvent.RemoveLastRewardFromRewardArea : IEvent // TypeDefIndex: 1792
+{
+	// Fields
+	public BoardItemData ItemData; // 0x0
+	public bool IsEventBoard; // 0x4
+}
+

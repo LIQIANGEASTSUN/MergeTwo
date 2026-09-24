@@ -1,0 +1,46 @@
+// Namespace: Merger.MergeBoard.Data
+public class ItemCollectable // TypeDefIndex: 25924
+{
+	// Fields
+	[CompilerGenerated]
+	private AfterCollectAnimation <AfterCollectAnimation>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private Reward <Reward>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private CollectableType <CollectableType>k__BackingField; // 0x20
+
+	// Properties
+	public AfterCollectAnimation AfterCollectAnimation { get; set; }
+	public Reward Reward { get; set; }
+	public CollectableType CollectableType { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A0B8 Offset: 0x6A960B8 VA: 0x6A9A0B8
+	public AfterCollectAnimation get_AfterCollectAnimation() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A0C0 Offset: 0x6A960C0 VA: 0x6A9A0C0
+	public void set_AfterCollectAnimation(AfterCollectAnimation value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A0C8 Offset: 0x6A960C8 VA: 0x6A9A0C8
+	public Reward get_Reward() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A0D0 Offset: 0x6A960D0 VA: 0x6A9A0D0
+	public void set_Reward(Reward value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A0D8 Offset: 0x6A960D8 VA: 0x6A9A0D8
+	public CollectableType get_CollectableType() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A0E0 Offset: 0x6A960E0 VA: 0x6A9A0E0
+	public void set_CollectableType(CollectableType value) { }
+
+	// RVA: 0x6A977A8 Offset: 0x6A937A8 VA: 0x6A977A8
+	public void .ctor() { }
+}
+

@@ -1,0 +1,84 @@
+// Namespace: MergeEngine.ECS.Systems.State.Board
+public class BoardQueueStateSystem<TState> : StateSystemBase<TState> // TypeDefIndex: 777
+{
+	// Fields
+	[InjectSystem]
+	private BoardQueueSystem _boardQueueSystem; // 0x0
+	[InjectSystem]
+	protected LiveOpsEventSystem _liveOpsEventSystem; // 0x0
+	[Inject]
+	private IItemsEntityService _itemsEntityService; // 0x0
+	[Inject]
+	private IPendingRewardsService _pendingRewardsService; // 0x0
+	[Inject]
+	private IBoosterModel _boosterModel; // 0x0
+	[Inject]
+	private IBoardQueueExclusionModel _boardQueueExclusionModel; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 6
+	protected override void InitializeSystem() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C1A7A8 Offset: 0x4C167A8 VA: 0x4C1A7A8
+	|-BoardQueueStateSystem<object>.InitializeSystem
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 7
+	protected override void DisposeSystem() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C1A85C Offset: 0x4C1685C VA: 0x4C1A85C
+	|-BoardQueueStateSystem<object>.DisposeSystem
+	*/
+
+	// RVA: -1 Offset: -1
+	private void OnBoardSwitched() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C1A910 Offset: 0x4C16910 VA: 0x4C1A910
+	|-BoardQueueStateSystem<object>.OnBoardSwitched
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 13
+	protected override void LoadState(TState boardQueueBackendState) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C1A96C Offset: 0x4C1696C VA: 0x4C1A96C
+	|-BoardQueueStateSystem<object>.LoadState
+	*/
+
+	// RVA: -1 Offset: -1
+	private List<QueuedItem> ConvertToQueuedItem(List<BackendBoardQueueItem> backendBoardQueueItems) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C1AAD4 Offset: 0x4C16AD4 VA: 0x4C1AAD4
+	|-BoardQueueStateSystem<object>.ConvertToQueuedItem
+	*/
+
+	// RVA: -1 Offset: -1
+	private Entity GetItemEntityData(IItem mergeItem, ItemPayloadBase itemData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C1ADA4 Offset: 0x4C16DA4 VA: 0x4C1ADA4
+	|-BoardQueueStateSystem<object>.GetItemEntityData
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 14
+	protected virtual bool ShouldLoadStateForDomain() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C1AF98 Offset: 0x4C16F98 VA: 0x4C1AF98
+	|-BoardQueueStateSystem<object>.ShouldLoadStateForDomain
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C1AFFC Offset: 0x4C16FFC VA: 0x4C1AFFC
+	|-BoardQueueStateSystem<object>..ctor
+	*/
+}
+

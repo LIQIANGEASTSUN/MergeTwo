@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ProducerExcitementModel.<>c__DisplayClass12_0 // TypeDefIndex: 33626
+{
+	// Fields
+	public int excitementId; // 0x10
+
+	// Methods
+
+	// RVA: 0x6AD9164 Offset: 0x6AD5164 VA: 0x6AD9164
+	public void .ctor() { }
+
+	// RVA: 0x6AD9520 Offset: 0x6AD5520 VA: 0x6AD9520
+	internal bool <AddClaimedExcitementId>b__0(ProducerExcitementDataResponse s) { }
+}
+

@@ -1,0 +1,333 @@
+Type: Game.Logic.PlayerMovedItemFromPocketToBoard
+
+Method: Analytics.AnalyticsEventType get_EventType()
+
+Disassembly:
+	0x037769F4 ADD X31, X31, 0x50
+	0x037769F8 RET
+
+ISIL:
+	001 Move W0, 132
+	002 Return X0
+
+Method: System.Int32 get_Item()
+
+Disassembly:
+	0x037769FC BL 0x239BB90
+	0x03776A00 STR X30, [X31 - 0x30]!
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_Item(System.Int32 value)
+
+Disassembly:
+	0x03776A04 STP X22, X21, [X31 + 0x10]
+	0x03776A08 STP X20, X19, [X31 + 0x20]
+
+ISIL:
+	001 Move [X0+16], W1
+	002 Return 
+
+Method: Merge.MergeBoardId get_BoardId()
+
+Disassembly:
+	0x03776A0C ADRP X21, 0x25B4000
+	0x03776A10 ADRP X22, 0x1FC3000
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_BoardId(Merge.MergeBoardId value)
+
+Disassembly:
+	0x03776A14 MOV X19, X1
+	0x03776A18 LDRB W8, [X21 + 0xADA]
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.String get_ItemName()
+
+Disassembly:
+	0x03776A1C LDR X22, [X22 + 0x600]
+	0x03776A20 MOV X20, X0
+
+ISIL:
+	001 Move X0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_ItemName(System.String value)
+
+Disassembly:
+	0x03776A24 TBNZ X8, 0x0, 0x3776A3C
+	0x03776A28 ADRP X0, 0x1FC3000
+
+ISIL:
+	001 Move [X0+32], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Int32 get_GarageEmptyBoardSlots()
+
+Disassembly:
+	0x03776A2C LDR X0, [X0 + 0x600]
+	0x03776A30 BL 0x239B8E4
+
+ISIL:
+	001 Move W0, [X0+40]
+	002 Return X0
+
+Method: System.Void set_GarageEmptyBoardSlots(System.Int32 value)
+
+Disassembly:
+	0x03776A34 MOVZ W8, 0x1
+	0x03776A38 STRB W8, [X21 + 0xADA]
+
+ISIL:
+	001 Move [X0+40], W1
+	002 Return 
+
+Method: System.Int32 get_GarageFreeInventorySlots()
+
+Disassembly:
+	0x03776A3C LDR X0, [X22]
+	0x03776A40 BL 0x239BB80
+
+ISIL:
+	001 Move W0, [X0+44]
+	002 Return X0
+
+Method: System.Void set_GarageFreeInventorySlots(System.Int32 value)
+
+Disassembly:
+	0x03776A44 MOV X1, X31
+	0x03776A48 MOV X21, X0
+
+ISIL:
+	001 Move [X0+44], W1
+	002 Return 
+
+Method: System.Int32 get_FreeProducerInventorySlots()
+
+Disassembly:
+	0x03776A4C BL 0x44E8DEC
+	0x03776A50 MOVN W8, 0x1
+
+ISIL:
+	001 Move W0, [X0+48]
+	002 Return X0
+
+Method: System.Void set_FreeProducerInventorySlots(System.Int32 value)
+
+Disassembly:
+	0x03776A54 MOV X0, X31
+	0x03776A58 STR W8, [X21 + 0x10]
+
+ISIL:
+	001 Move [X0+48], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03776A5C BL 0x44ECB1C
+	0x03776A60 MOV X8, X21
+
+ISIL:
+	001 Move X1, X31
+	002 Call AnalyticsServersideEventBase..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(System.Int32 item, Merge.MergeBoardId boardId, System.String itemName, Metacore.MergeMansion.Common.Options.Option`1<GameLogic.Player.IPlayer> player = null)
+
+Disassembly:
+	0x03776A64 STR W0, [X21 + 0x20]
+	0x03776A68 MOV X1, X20
+	0x03776A6C STR X20, [X8 + 0x28]!
+	0x03776A70 MOV X0, X8
+	0x03776A74 BL 0x239B888
+	0x03776A78 MOV X0, X21
+	0x03776A7C MOV X1, X19
+	0x03776A80 STR X19, [X0 + 0x38]!
+	0x03776A84 BL 0x239B888
+	0x03776A88 MOV X0, X21
+	0x03776A8C LDP X20, X19, [X31 + 0x20]
+	0x03776A90 LDP X22, X21, [X31 + 0x10]
+	0x03776A94 LDR X30, [X31], #0x30
+	0x03776A98 RET
+	0x03776A9C STR X30, [X31 - 0x20]!
+	0x03776AA0 STP X20, X19, [X31 + 0x10]
+	0x03776AA4 MOV W19, W1
+	0x03776AA8 MOV X1, X31
+	0x03776AAC MOV X20, X0
+	0x03776AB0 BL 0x44E8DEC
+	0x03776AB4 MOV X0, X31
+	0x03776AB8 STR W19, [X20 + 0x10]
+	0x03776ABC BL 0x44ECB1C
+	0x03776AC0 STR W0, [X20 + 0x20]
+	0x03776AC4 LDP X20, X19, [X31 + 0x10]
+	0x03776AC8 LDR X30, [X31], #0x20
+	0x03776ACC RET
+	0x03776AD0 STP X30, X21, [X31 - 0x20]!
+	0x03776AD4 STP X20, X19, [X31 + 0x10]
+	0x03776AD8 ADRP X21, 0x25B4000
+	0x03776ADC MOV X19, X1
+	0x03776AE0 MOV X20, X0
+	0x03776AE4 LDRB W8, [X21 + 0xADB]
+	0x03776AE8 TBNZ X8, 0x0, 0x3776B00
+	0x03776AEC ADRP X0, 0x1FC3000
+	0x03776AF0 LDR X0, [X0 + 0x608]
+	0x03776AF4 BL 0x239B8E4
+	0x03776AF8 MOVZ W8, 0x1
+	0x03776AFC STRB W8, [X21 + 0xADB]
+	0x03776B00 LDR X0, [X20 + 0x230]
+	0x03776B04 CBZ X0, 0x3776B24
+	0x03776B08 ADRP X8, 0x1FC3000
+	0x03776B0C MOV X1, X19
+	0x03776B10 LDR X8, [X8 + 0x608]
+	0x03776B14 LDP X20, X19, [X31 + 0x10]
+	0x03776B18 LDR X2, [X8]
+	0x03776B1C LDP X30, X21, [X31], #0x20
+	0x03776B20 B 0x274E8CC
+	0x03776B24 BL 0x239BB90
+	0x03776B28 STP X30, X21, [X31 - 0x20]!
+	0x03776B2C STP X20, X19, [X31 + 0x10]
+	0x03776B30 ADRP X20, 0x25B4000
+	0x03776B34 ADRP X21, 0x1F5F000
+	0x03776B38 MOV X19, X1
+	0x03776B3C LDRB W8, [X20 + 0xADC]
+	0x03776B40 LDR X21, [X21 + 0xE60]
+	0x03776B44 TBNZ X8, 0x0, 0x3776B5C
+	0x03776B48 ADRP X0, 0x1F5F000
+	0x03776B4C LDR X0, [X0 + 0xE60]
+	0x03776B50 BL 0x239B8E4
+	0x03776B54 MOVZ W8, 0x1
+
+ISIL:
+	001 Subtract X31, X31, 80
+	002 Move [X31+16], X30
+	003 Move [X31+32], X24
+	004 Move [X31+40], X23
+	005 Move [X31+48], X22
+	006 Move [X31+56], X21
+	007 Move [X31+64], X20
+	008 Move [X31+72], X19
+	009 Move X20, X3
+	010 Move W8, [0x25B8A9B]
+	011 Move X23, [0x1F98638]
+	012 Move X21, X2
+	013 Move W22, W1
+	014 Move X19, X0
+	015 Move [X31], X4
+	016 Move [X31+8], X5
+	017 Move TEMP, X8
+	018 And TEMP, TEMP, 1
+	019 Compare TEMP, 1
+	020 Invalid "Jump target not found in method."
+	021 Move X0, [0x1F98630]
+	022 Call 0x239F8E4
+	023 Move X0, [0x1F98638]
+	024 Call 0x239F8E4
+	025 Move W8, 1
+	026 Move [X24+2715], W8
+	027 Move X0, X19
+	028 Move X1, X31
+	029 Move X24, [0x1F98630]
+	030 Move [X31+24], X31
+	031 Call AnalyticsServersideEventBase..ctor, X0
+	032 Move X0, X19
+	033 Move X1, X21
+	034 Move [X19+16], W22
+	035 Move [X0+24], X21
+	036 Call 0x239F888
+	037 Move X0, X19
+	038 Move X1, X20
+	039 Move [X0+32], X20
+	040 Call 0x239F888
+	041 Move X0, [X23]
+	042 Move W8, [X0+228]
+	043 Compare W8, 0
+	044 JumpIfNotEqual {46}
+	045 Call 0x239FA64
+	046 Move X2, [X24]
+	047 Add X0, X31, 0
+	048 Add X1, X31, 24
+	049 Call 0x278EDA8, X0, X1
+	050 Move TEMP, X0
+	051 And TEMP, TEMP, 1
+	052 Compare TEMP, 1
+	053 JumpIfNotEqual {62}
+	054 Move X0, [X31+24]
+	055 Call PlayerEventLogFreeSlotCountHelper.CalculateFreeSlots, X0
+	056 Compare X0, 0
+	057 JumpIfEqual {71}
+	058 Move D0, [X0+16]
+	059 Move [X19+40], D0
+	060 Move W8, [X0+24]
+	061 Move [X19+48], W8
+	062 Move X20, [X31+64]
+	063 Move X19, [X31+72]
+	064 Move X30, [X31+16]
+	065 Move X22, [X31+48]
+	066 Move X21, [X31+56]
+	067 Move X24, [X31+32]
+	068 Move X23, [X31+40]
+	069 Add X31, X31, 80
+	070 Return 
+	071 Call 0x239FB90
+
+Method: System.String get_EventDescription()
+
+Disassembly:
+	0x03776B58 STRB W8, [X20 + 0xADC]
+	0x03776B5C LDR X0, [X21]
+	0x03776B60 LDR W8, [X0 + 0xE4]
+	0x03776B64 CBNZ W8, 0x3776B6C
+	0x03776B68 BL 0x239BA64
+	0x03776B6C MOV X0, X19
+	0x03776B70 LDP X20, X19, [X31 + 0x10]
+	0x03776B74 MOV X1, X31
+	0x03776B78 LDP X30, X21, [X31], #0x20
+	0x03776B7C B 0x3536C04
+	0x03776B80 SUB X31, X31, 0xA0
+	0x03776B84 STP X29, X30, [X31 + 0x40]
+	0x03776B88 STP X28, X27, [X31 + 0x50]
+	0x03776B8C STP X26, X25, [X31 + 0x60]
+	0x03776B90 STP X24, X23, [X31 + 0x70]
+	0x03776B94 STP X22, X21, [X31 + 0x80]
+	0x03776B98 STP X20, X19, [X31 + 0x90]
+	0x03776B9C ADRP X23, 0x25B4000
+	0x03776BA0 ADRP X22, 0x1F8D000
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move X19, X0
+	006 Move W8, [0x25B8A9C]
+	007 Move X20, [0x1FC7460]
+	008 Move TEMP, X8
+	009 And TEMP, TEMP, 1
+	010 Compare TEMP, 1
+	011 JumpIfEqual {16}
+	012 Move X0, [0x1FC7460]
+	013 Call 0x239F8E4
+	014 Move W8, 1
+	015 Move [X21+2716], W8
+	016 Move X0, [X20]
+	017 Move X2, [X19+24]
+	018 Move X1, [X19+32]
+	019 Move X20, [X31+16]
+	020 Move X19, [X31+24]
+	021 Move X3, X31
+	022 Move X30, [X31+32]
+	023 Move X21, [X31+40]
+	024 Call String.Format, X0, X1, X2
+	025 Return X0
+

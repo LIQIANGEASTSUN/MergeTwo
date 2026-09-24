@@ -1,0 +1,57 @@
+// Namespace: MergeEngine.ECS.Systems.Items.Producers.LowLevelItemProduce
+public class LowLevelItemProduceData // TypeDefIndex: 997
+{
+	// Fields
+	[CompilerGenerated]
+	private string <UniqueId>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private int <Boost>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private string <OrderId>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private string <Reason>k__BackingField; // 0x28
+
+	// Properties
+	public string UniqueId { get; set; }
+	public int Boost { get; set; }
+	public string OrderId { get; set; }
+	public string Reason { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x679F410 Offset: 0x679B410 VA: 0x679F410
+	public string get_UniqueId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x679F418 Offset: 0x679B418 VA: 0x679F418
+	public void set_UniqueId(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x679F420 Offset: 0x679B420 VA: 0x679F420
+	public int get_Boost() { }
+
+	[CompilerGenerated]
+	// RVA: 0x679F428 Offset: 0x679B428 VA: 0x679F428
+	public void set_Boost(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x679F430 Offset: 0x679B430 VA: 0x679F430
+	public string get_OrderId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x679F438 Offset: 0x679B438 VA: 0x679F438
+	public void set_OrderId(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x679F440 Offset: 0x679B440 VA: 0x679F440
+	public string get_Reason() { }
+
+	[CompilerGenerated]
+	// RVA: 0x679F448 Offset: 0x679B448 VA: 0x679F448
+	public void set_Reason(string value) { }
+
+	// RVA: 0x679DAD0 Offset: 0x6799AD0 VA: 0x679DAD0
+	public void .ctor() { }
+}
+

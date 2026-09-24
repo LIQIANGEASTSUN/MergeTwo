@@ -1,0 +1,34 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class SummerWatermelonModel.<>c // TypeDefIndex: 5354
+{
+	// Fields
+	public static readonly SummerWatermelonModel.<>c <>9; // 0x0
+	public static Action <>9__38_0; // 0x4
+	public static Action <>9__87_0; // 0x8
+	public static Action <>9__87_1; // 0xC
+	public static Predicate<SummerWatermelonFourPackageConfig> <>9__121_0; // 0x10
+
+	// Methods
+
+	// RVA: 0x17D2E8C Offset: 0x17D2E8C VA: 0x17D2E8C
+	private static void .cctor() { }
+
+	// RVA: 0x17D2F00 Offset: 0x17D2F00 VA: 0x17D2F00
+	public void .ctor() { }
+
+	// RVA: 0x17D2F08 Offset: 0x17D2F08 VA: 0x17D2F08
+	internal void <TryProductWaterMellon>b__38_0() { }
+
+	[AsyncStateMachine(typeof(SummerWatermelonModel.<>c.<<UseMergeItem>b__87_0>d))]
+	// RVA: 0x17D2F0C Offset: 0x17D2F0C VA: 0x17D2F0C
+	internal void <UseMergeItem>b__87_0() { }
+
+	// RVA: 0x17D2FB0 Offset: 0x17D2FB0 VA: 0x17D2FB0
+	internal void <UseMergeItem>b__87_1() { }
+
+	// RVA: 0x17D2FB4 Offset: 0x17D2FB4 VA: 0x17D2FB4
+	internal bool <GiftBagSendOneGetReward>b__121_0(SummerWatermelonFourPackageConfig x) { }
+}
+

@@ -1,0 +1,64 @@
+// Namespace: Framework.Core.Services.Storage
+public interface IPersistentStorageService // TypeDefIndex: 10588
+{
+	// Properties
+	public abstract bool Enabled { get; }
+	public abstract string DefaultStoragePath { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract bool get_Enabled();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract string get_DefaultStoragePath();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract string GetRaw(string entryId);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void SetRaw(string entryId, string value);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract T Get<T>(string entryId, bool handleCorrupted = True);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IPersistentStorageService.Get<__Il2CppFullySharedGenericType>
+	|-IPersistentStorageService.Get<int>
+	|-IPersistentStorageService.Get<long>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract void Set<T>(string entryId, T value);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IPersistentStorageService.Set<__Il2CppFullySharedGenericType>
+	|-IPersistentStorageService.Set<bool>
+	|-IPersistentStorageService.Set<int>
+	|-IPersistentStorageService.Set<long>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract bool HasEntry(string entryId);
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract bool HasEntry(string entryId, out string err);
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract void Delete(string entryId);
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract void Wipe();
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public abstract bool HasLock();
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public abstract void Lock();
+
+	// RVA: -1 Offset: -1 Slot: 12
+	public abstract void Unlock();
+}
+

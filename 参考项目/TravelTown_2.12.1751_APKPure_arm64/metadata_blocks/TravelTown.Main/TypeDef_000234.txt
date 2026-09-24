@@ -1,0 +1,30 @@
+// Namespace: MergeEngine.Signal.Items
+public class MergeItemSignalBase // TypeDefIndex: 234
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly IMergeItem <Item>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly int <Level>k__BackingField; // 0x18
+
+	// Properties
+	public IMergeItem Item { get; }
+	public int Level { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3BD8 Offset: 0x5FEFBD8 VA: 0x5FF3BD8
+	public IMergeItem get_Item() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3BE0 Offset: 0x5FEFBE0 VA: 0x5FF3BE0
+	public int get_Level() { }
+
+	// RVA: 0x5FF21AC Offset: 0x5FEE1AC VA: 0x5FF21AC
+	protected void .ctor(IMergeItem item) { }
+
+	// RVA: 0x5FF20A0 Offset: 0x5FEE0A0 VA: 0x5FF20A0
+	protected void .ctor(IMergeItem item, int level) { }
+}
+

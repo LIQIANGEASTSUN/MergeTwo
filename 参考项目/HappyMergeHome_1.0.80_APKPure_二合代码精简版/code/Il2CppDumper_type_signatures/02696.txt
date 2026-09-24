@@ -1,0 +1,161 @@
+// Namespace: 
+public class MergeGuideLogic : Manager<MergeGuideLogic> // TypeDefIndex: 2696
+{
+	// Fields
+	private int guideGridIndex; // 0x10
+	private MergeBoard.Grid cdGridItem; // 0x14
+	private Coroutine _coroutineProduct; // 0x18
+	private static bool _frenzyCard2TipPlaying; // 0x0
+	private static bool _frenzyCard2TipRequested; // 0x1
+
+	// Methods
+
+	// RVA: 0x2B8F600 Offset: 0x2B8F600 VA: 0x2B8F600
+	public void CheckMergeGuide(bool isPointerUp = False) { }
+
+	[IDTag(0)]
+	// RVA: 0x2B8FEF4 Offset: 0x2B8FEF4 VA: 0x2B8FEF4
+	private void CheckMergeFinish() { }
+
+	// RVA: 0x2B916E0 Offset: 0x2B916E0 VA: 0x2B916E0
+	public void CheckProductFinish() { }
+
+	// RVA: 0x2B9A56C Offset: 0x2B9A56C VA: 0x2B9A56C
+	private void TriggerProductFinish(MergeBoard.Grid grid) { }
+
+	// RVA: 0x2B91F3C Offset: 0x2B91F3C VA: 0x2B91F3C
+	private void CheckOrderFinish() { }
+
+	// RVA: 0x2B93B0C Offset: 0x2B93B0C VA: 0x2B93B0C
+	public void CheckChoseItemGuide() { }
+
+	// RVA: 0x2B92B08 Offset: 0x2B92B08 VA: 0x2B92B08
+	public void CheckGetReward() { }
+
+	// RVA: 0x2B91D20 Offset: 0x2B91D20 VA: 0x2B91D20
+	private void CheckOrderNeedItem() { }
+
+	// RVA: 0x2B93044 Offset: 0x2B93044 VA: 0x2B93044
+	public void ChoseCdProduct() { }
+
+	// RVA: 0x2B9257C Offset: 0x2B9257C VA: 0x2B9257C
+	public void ChoseBubbleProduct() { }
+
+	// RVA: 0x2B8F858 Offset: 0x2B8F858 VA: 0x2B8F858
+	public void CheckTriggerProduct() { }
+
+	// RVA: 0x2B8FC94 Offset: 0x2B8FC94 VA: 0x2B8FC94
+	private void CheckProduct() { }
+
+	// RVA: 0x2B94698 Offset: 0x2B94698 VA: 0x2B94698
+	public void CheckUnLockModule() { }
+
+	// RVA: 0x2B9A958 Offset: 0x2B9A958 VA: 0x2B9A958
+	private void CheckUnLockStore() { }
+
+	// RVA: 0x2B946F8 Offset: 0x2B946F8 VA: 0x2B946F8
+	public bool CheckUnLockDecoTask() { }
+
+	// RVA: 0x2B9ABF4 Offset: 0x2B9ABF4 VA: 0x2B9ABF4
+	private bool UnLockCheckUI() { }
+
+	// RVA: 0x2B949D4 Offset: 0x2B949D4 VA: 0x2B949D4
+	private void EnergyTorrentLogic() { }
+
+	// RVA: 0x2B99D64 Offset: 0x2B99D64 VA: 0x2B99D64
+	public void EnergyTorrentLogic8() { }
+
+	// RVA: 0x2B94BFC Offset: 0x2B94BFC VA: 0x2B94BFC
+	public void CheckMergePackageGuide() { }
+
+	// RVA: 0x2B94F00 Offset: 0x2B94F00 VA: 0x2B94F00
+	public void CheckBackHomeDecoNodeGuide() { }
+
+	// RVA: 0x2B9621C Offset: 0x2B9621C VA: 0x2B9621C
+	public void CheckDetectiveLogic() { }
+
+	// RVA: 0x2B951AC Offset: 0x2B951AC VA: 0x2B951AC
+	public void CheckCatSwimmingLogic() { }
+
+	// RVA: 0x2B9599C Offset: 0x2B9599C VA: 0x2B9599C
+	public void CheckPizzaTowerLogic() { }
+
+	// RVA: 0x2B967A8 Offset: 0x2B967A8 VA: 0x2B967A8
+	public void CheckCardCollectionGuide() { }
+
+	// RVA: 0x2B96CA0 Offset: 0x2B96CA0 VA: 0x2B96CA0
+	private void CheckRecoverCoinLogic() { }
+
+	// RVA: 0x2B97358 Offset: 0x2B97358 VA: 0x2B97358
+	private void CheckThemeDecoLogic() { }
+
+	// RVA: 0x2B97770 Offset: 0x2B97770 VA: 0x2B97770
+	private void CheckNewbieRoomLogic() { }
+
+	// RVA: 0x2B97DB0 Offset: 0x2B97DB0 VA: 0x2B97DB0
+	private void CheckStarJourneyEntrance() { }
+
+	// RVA: 0x2B98364 Offset: 0x2B98364 VA: 0x2B98364
+	public void CheckStarJourneyTask() { }
+
+	// RVA: 0x2B9879C Offset: 0x2B9879C VA: 0x2B9879C
+	public void CheckSummerWatermelonLogic() { }
+
+	// RVA: 0x2B99248 Offset: 0x2B99248 VA: 0x2B99248
+	public void CheckFrenzyCardTask() { }
+
+	// RVA: 0x2B996C0 Offset: 0x2B996C0 VA: 0x2B996C0
+	public void CheckFrenzyCard2Task() { }
+
+	// RVA: 0x2B9AF80 Offset: 0x2B9AF80 VA: 0x2B9AF80
+	public static void RequestFrenzyCard2Tip() { }
+
+	// RVA: 0x2B9B014 Offset: 0x2B9B014 VA: 0x2B9B014
+	public void CheckEightFoldEnergy() { }
+
+	// RVA: 0x2B99F6C Offset: 0x2B99F6C VA: 0x2B99F6C
+	public void CheckComboCriticalHit() { }
+
+	[IDTag(1)]
+	// RVA: 0x2B9B44C Offset: 0x2B9B44C VA: 0x2B9B44C
+	private void CheckMergeFinish(MergeBoard mergeBoard) { }
+
+	// RVA: 0x2B9B750 Offset: 0x2B9B750 VA: 0x2B9B750
+	private bool TryProcessExistingMergeGuide(MergeBoard mergeBoard) { }
+
+	// RVA: 0x2B9C2E4 Offset: 0x2B9C2E4 VA: 0x2B9C2E4
+	private void SetupMergeTips(MergeBoard mergeBoard, MergeBoard.Grid startGrid, MergeBoard.Grid endGrid) { }
+
+	// RVA: 0x2B9BB4C Offset: 0x2B9BB4C VA: 0x2B9BB4C
+	private void EnsureMergeTipList(MergeBoard mergeBoard) { }
+
+	// RVA: 0x2B9BC50 Offset: 0x2B9BC50 VA: 0x2B9BC50
+	private bool ValidateMergeGuideTarget() { }
+
+	// RVA: 0x2B9BD78 Offset: 0x2B9BD78 VA: 0x2B9BD78
+	private bool TryGetCorrectTips(MergeBoard mergeBoard, out MergeBoard.Grid grid_1, out MergeBoard.Grid grid_2) { }
+
+	// RVA: 0x2B9C548 Offset: 0x2B9C548 VA: 0x2B9C548
+	private bool TryFindTaskRequiredTips(MergeBoard mergeBoard, out MergeBoard.Grid grid_1, out MergeBoard.Grid grid_2) { }
+
+	// RVA: 0x2B9C85C Offset: 0x2B9C85C VA: 0x2B9C85C
+	private void UpdateMergeTips(MergeBoard mergeBoard, MergeBoard.Grid grid_1, MergeBoard.Grid grid_2) { }
+
+	// RVA: 0x2B9BFE0 Offset: 0x2B9BFE0 VA: 0x2B9BFE0
+	private void SwapGridsIfNeeded(MergeBoard mergeBoard, ref MergeBoard.Grid grid_1, ref MergeBoard.Grid grid_2) { }
+
+	// RVA: 0x2B9C134 Offset: 0x2B9C134 VA: 0x2B9C134
+	private void UpdateConfigIndices(MergeBoard.Grid grid_1, MergeBoard.Grid grid_2) { }
+
+	// RVA: 0x2B9CC4C Offset: 0x2B9CC4C VA: 0x2B9CC4C
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2B9CCD8 Offset: 0x2B9CCD8 VA: 0x2B9CCD8
+	private void <CheckProduct>b__14_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2B9CECC Offset: 0x2B9CECC VA: 0x2B9CECC
+	private void <CheckFrenzyCard2Task>b__34_0() { }
+}
+

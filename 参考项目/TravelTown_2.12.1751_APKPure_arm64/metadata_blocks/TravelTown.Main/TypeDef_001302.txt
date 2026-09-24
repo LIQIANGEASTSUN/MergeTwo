@@ -1,0 +1,14 @@
+// Namespace: MergeEngine.Configuration.Definitions
+[Serializable]
+public class ConsumedItemToProducedItemMapping // TypeDefIndex: 1302
+{
+	// Fields
+	public MergeItemWeakReference ConsumedItem; // 0x10
+	public MergeItemWeakReference ProducedItem; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A29A6C Offset: 0x6A25A6C VA: 0x6A29A6C
+	public void .ctor() { }
+}
+

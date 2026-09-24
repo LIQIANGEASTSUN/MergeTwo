@@ -1,0 +1,25 @@
+// Namespace: Merger.TimeLimitedItems.Data
+public class TimeLimitedItemsEventData : RemoteLiveOpData // TypeDefIndex: 32859
+{
+	// Fields
+	[JsonProperty("displayTriggers")]
+	public Dictionary<TriggerType, DisplayTriggerResponse> DisplayTriggers; // 0x68
+	[JsonProperty("graphIds")]
+	public HashSet<string> TimeLimitedItemGraphIds; // 0x70
+
+	// Properties
+	[PolymorphicProperty]
+	public override RemoteEventType Type { get; }
+
+	// Methods
+
+	// RVA: 0x6B4DE68 Offset: 0x6B49E68 VA: 0x6B4DE68 Slot: 5
+	public override RemoteEventType get_Type() { }
+
+	// RVA: 0x6B4DE70 Offset: 0x6B49E70 VA: 0x6B4DE70
+	public bool IsValid() { }
+
+	// RVA: 0x6B4DECC Offset: 0x6B49ECC VA: 0x6B4DECC
+	public void .ctor() { }
+}
+

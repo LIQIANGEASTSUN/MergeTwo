@@ -1,0 +1,468 @@
+// Namespace: DragonU3DSDK.Storage
+[DefaultMember("Item")]
+[Serializable]
+public class StorageList<TValue> : List<TValue> // TypeDefIndex: 10854
+{
+	// Fields
+	[CompilerGenerated]
+	private bool <SyncForce>k__BackingField; // 0x0
+	[CompilerGenerated]
+	private bool <SyncForceRemote>k__BackingField; // 0x0
+
+	// Properties
+	private bool SyncForce { get; set; }
+	private bool SyncForceRemote { get; set; }
+	public TValue Item { get; set; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor(bool syncForce = False, bool syncForceRemote = False) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B65A00 Offset: 0x3B65A00 VA: 0x3B65A00
+	|-StorageList<int>..ctor
+	|
+	|-RVA: 0x3B66710 Offset: 0x3B66710 VA: 0x3B66710
+	|-StorageList<long>..ctor
+	|
+	|-RVA: 0x3B67470 Offset: 0x3B67470 VA: 0x3B67470
+	|-StorageList<object>..ctor
+	|
+	|-RVA: 0x3B68194 Offset: 0x3B68194 VA: 0x3B68194
+	|-StorageList<float>..ctor
+	|
+	|-RVA: 0x3B68EB0 Offset: 0x3B68EB0 VA: 0x3B68EB0
+	|-StorageList<ulong>..ctor
+	|
+	|-RVA: 0x3B69C10 Offset: 0x3B69C10 VA: 0x3B69C10
+	|-StorageList<__Il2CppFullySharedGenericType>..ctor
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	private bool get_SyncForce() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B65A60 Offset: 0x3B65A60 VA: 0x3B65A60
+	|-StorageList<int>.get_SyncForce
+	|
+	|-RVA: 0x3B66770 Offset: 0x3B66770 VA: 0x3B66770
+	|-StorageList<long>.get_SyncForce
+	|
+	|-RVA: 0x3B674D0 Offset: 0x3B674D0 VA: 0x3B674D0
+	|-StorageList<object>.get_SyncForce
+	|
+	|-RVA: 0x3B681F4 Offset: 0x3B681F4 VA: 0x3B681F4
+	|-StorageList<float>.get_SyncForce
+	|
+	|-RVA: 0x3B68F10 Offset: 0x3B68F10 VA: 0x3B68F10
+	|-StorageList<ulong>.get_SyncForce
+	|
+	|-RVA: 0x3B69CA4 Offset: 0x3B69CA4 VA: 0x3B69CA4
+	|-StorageList<__Il2CppFullySharedGenericType>.get_SyncForce
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	private void set_SyncForce(bool value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B65A68 Offset: 0x3B65A68 VA: 0x3B65A68
+	|-StorageList<int>.set_SyncForce
+	|
+	|-RVA: 0x3B66778 Offset: 0x3B66778 VA: 0x3B66778
+	|-StorageList<long>.set_SyncForce
+	|
+	|-RVA: 0x3B674D8 Offset: 0x3B674D8 VA: 0x3B674D8
+	|-StorageList<object>.set_SyncForce
+	|
+	|-RVA: 0x3B681FC Offset: 0x3B681FC VA: 0x3B681FC
+	|-StorageList<float>.set_SyncForce
+	|
+	|-RVA: 0x3B68F18 Offset: 0x3B68F18 VA: 0x3B68F18
+	|-StorageList<ulong>.set_SyncForce
+	|
+	|-RVA: 0x3B69CAC Offset: 0x3B69CAC VA: 0x3B69CAC
+	|-StorageList<__Il2CppFullySharedGenericType>.set_SyncForce
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	private bool get_SyncForceRemote() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B65A70 Offset: 0x3B65A70 VA: 0x3B65A70
+	|-StorageList<int>.get_SyncForceRemote
+	|
+	|-RVA: 0x3B66780 Offset: 0x3B66780 VA: 0x3B66780
+	|-StorageList<long>.get_SyncForceRemote
+	|
+	|-RVA: 0x3B674E0 Offset: 0x3B674E0 VA: 0x3B674E0
+	|-StorageList<object>.get_SyncForceRemote
+	|
+	|-RVA: 0x3B68204 Offset: 0x3B68204 VA: 0x3B68204
+	|-StorageList<float>.get_SyncForceRemote
+	|
+	|-RVA: 0x3B68F20 Offset: 0x3B68F20 VA: 0x3B68F20
+	|-StorageList<ulong>.get_SyncForceRemote
+	|
+	|-RVA: 0x3B69CB4 Offset: 0x3B69CB4 VA: 0x3B69CB4
+	|-StorageList<__Il2CppFullySharedGenericType>.get_SyncForceRemote
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	private void set_SyncForceRemote(bool value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B65A78 Offset: 0x3B65A78 VA: 0x3B65A78
+	|-StorageList<int>.set_SyncForceRemote
+	|
+	|-RVA: 0x3B66788 Offset: 0x3B66788 VA: 0x3B66788
+	|-StorageList<long>.set_SyncForceRemote
+	|
+	|-RVA: 0x3B674E8 Offset: 0x3B674E8 VA: 0x3B674E8
+	|-StorageList<object>.set_SyncForceRemote
+	|
+	|-RVA: 0x3B6820C Offset: 0x3B6820C VA: 0x3B6820C
+	|-StorageList<float>.set_SyncForceRemote
+	|
+	|-RVA: 0x3B68F28 Offset: 0x3B68F28 VA: 0x3B68F28
+	|-StorageList<ulong>.set_SyncForceRemote
+	|
+	|-RVA: 0x3B69CBC Offset: 0x3B69CBC VA: 0x3B69CBC
+	|-StorageList<__Il2CppFullySharedGenericType>.set_SyncForceRemote
+	*/
+
+	// RVA: -1 Offset: -1
+	private void OnStorageChanged() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B65A80 Offset: 0x3B65A80 VA: 0x3B65A80
+	|-StorageList<int>.OnStorageChanged
+	|
+	|-RVA: 0x3B66790 Offset: 0x3B66790 VA: 0x3B66790
+	|-StorageList<long>.OnStorageChanged
+	|
+	|-RVA: 0x3B674F0 Offset: 0x3B674F0 VA: 0x3B674F0
+	|-StorageList<object>.OnStorageChanged
+	|
+	|-RVA: 0x3B68214 Offset: 0x3B68214 VA: 0x3B68214
+	|-StorageList<float>.OnStorageChanged
+	|
+	|-RVA: 0x3B68F30 Offset: 0x3B68F30 VA: 0x3B68F30
+	|-StorageList<ulong>.OnStorageChanged
+	|
+	|-RVA: 0x3B69CC4 Offset: 0x3B69CC4 VA: 0x3B69CC4
+	|-StorageList<__Il2CppFullySharedGenericType>.OnStorageChanged
+	*/
+
+	// RVA: -1 Offset: -1
+	public void Add(TValue item) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B65BA0 Offset: 0x3B65BA0 VA: 0x3B65BA0
+	|-StorageList<int>.Add
+	|
+	|-RVA: 0x3B668B0 Offset: 0x3B668B0 VA: 0x3B668B0
+	|-StorageList<long>.Add
+	|
+	|-RVA: 0x3B67610 Offset: 0x3B67610 VA: 0x3B67610
+	|-StorageList<object>.Add
+	|
+	|-RVA: 0x3B68334 Offset: 0x3B68334 VA: 0x3B68334
+	|-StorageList<float>.Add
+	|
+	|-RVA: 0x3B69050 Offset: 0x3B69050 VA: 0x3B69050
+	|-StorageList<ulong>.Add
+	|
+	|-RVA: 0x3B69E10 Offset: 0x3B69E10 VA: 0x3B69E10
+	|-StorageList<__Il2CppFullySharedGenericType>.Add
+	*/
+
+	// RVA: -1 Offset: -1
+	public void AddRange(IEnumerable<TValue> collection) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B65C38 Offset: 0x3B65C38 VA: 0x3B65C38
+	|-StorageList<int>.AddRange
+	|
+	|-RVA: 0x3B6695C Offset: 0x3B6695C VA: 0x3B6695C
+	|-StorageList<long>.AddRange
+	|
+	|-RVA: 0x3B676B0 Offset: 0x3B676B0 VA: 0x3B676B0
+	|-StorageList<object>.AddRange
+	|
+	|-RVA: 0x3B683D0 Offset: 0x3B683D0 VA: 0x3B683D0
+	|-StorageList<float>.AddRange
+	|
+	|-RVA: 0x3B690FC Offset: 0x3B690FC VA: 0x3B690FC
+	|-StorageList<ulong>.AddRange
+	|
+	|-RVA: 0x3B69EF0 Offset: 0x3B69EF0 VA: 0x3B69EF0
+	|-StorageList<__Il2CppFullySharedGenericType>.AddRange
+	*/
+
+	// RVA: -1 Offset: -1
+	public void Clear() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B65C84 Offset: 0x3B65C84 VA: 0x3B65C84
+	|-StorageList<int>.Clear
+	|
+	|-RVA: 0x3B669A8 Offset: 0x3B669A8 VA: 0x3B669A8
+	|-StorageList<long>.Clear
+	|
+	|-RVA: 0x3B676FC Offset: 0x3B676FC VA: 0x3B676FC
+	|-StorageList<object>.Clear
+	|
+	|-RVA: 0x3B6841C Offset: 0x3B6841C VA: 0x3B6841C
+	|-StorageList<float>.Clear
+	|
+	|-RVA: 0x3B69148 Offset: 0x3B69148 VA: 0x3B69148
+	|-StorageList<ulong>.Clear
+	|
+	|-RVA: 0x3B69F44 Offset: 0x3B69F44 VA: 0x3B69F44
+	|-StorageList<__Il2CppFullySharedGenericType>.Clear
+	*/
+
+	// RVA: -1 Offset: -1
+	public List<TOutput> ConvertAll<TOutput>(Converter<TValue, TOutput> converter) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x341F11C Offset: 0x341F11C VA: 0x341F11C
+	|-StorageList<__Il2CppFullySharedGenericType>.ConvertAll<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public void Insert(int index, TValue item) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B65DC4 Offset: 0x3B65DC4 VA: 0x3B65DC4
+	|-StorageList<int>.Insert
+	|
+	|-RVA: 0x3B66AE8 Offset: 0x3B66AE8 VA: 0x3B66AE8
+	|-StorageList<long>.Insert
+	|
+	|-RVA: 0x3B67858 Offset: 0x3B67858 VA: 0x3B67858
+	|-StorageList<object>.Insert
+	|
+	|-RVA: 0x3B6855C Offset: 0x3B6855C VA: 0x3B6855C
+	|-StorageList<float>.Insert
+	|
+	|-RVA: 0x3B69288 Offset: 0x3B69288 VA: 0x3B69288
+	|-StorageList<ulong>.Insert
+	|
+	|-RVA: 0x3B6A08C Offset: 0x3B6A08C VA: 0x3B6A08C
+	|-StorageList<__Il2CppFullySharedGenericType>.Insert
+	*/
+
+	// RVA: -1 Offset: -1
+	public void InsertRange(int index, IEnumerable<TValue> collection) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B65E18 Offset: 0x3B65E18 VA: 0x3B65E18
+	|-StorageList<int>.InsertRange
+	|
+	|-RVA: 0x3B66B50 Offset: 0x3B66B50 VA: 0x3B66B50
+	|-StorageList<long>.InsertRange
+	|
+	|-RVA: 0x3B678AC Offset: 0x3B678AC VA: 0x3B678AC
+	|-StorageList<object>.InsertRange
+	|
+	|-RVA: 0x3B685B0 Offset: 0x3B685B0 VA: 0x3B685B0
+	|-StorageList<float>.InsertRange
+	|
+	|-RVA: 0x3B692F0 Offset: 0x3B692F0 VA: 0x3B692F0
+	|-StorageList<ulong>.InsertRange
+	|
+	|-RVA: 0x3B6A180 Offset: 0x3B6A180 VA: 0x3B6A180
+	|-StorageList<__Il2CppFullySharedGenericType>.InsertRange
+	*/
+
+	// RVA: -1 Offset: -1
+	public bool Remove(TValue item) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B65E6C Offset: 0x3B65E6C VA: 0x3B65E6C
+	|-StorageList<int>.Remove
+	|
+	|-RVA: 0x3B66BA4 Offset: 0x3B66BA4 VA: 0x3B66BA4
+	|-StorageList<long>.Remove
+	|
+	|-RVA: 0x3B67900 Offset: 0x3B67900 VA: 0x3B67900
+	|-StorageList<object>.Remove
+	|
+	|-RVA: 0x3B68604 Offset: 0x3B68604 VA: 0x3B68604
+	|-StorageList<float>.Remove
+	|
+	|-RVA: 0x3B69344 Offset: 0x3B69344 VA: 0x3B69344
+	|-StorageList<ulong>.Remove
+	|
+	|-RVA: 0x3B6A1DC Offset: 0x3B6A1DC VA: 0x3B6A1DC
+	|-StorageList<__Il2CppFullySharedGenericType>.Remove
+	*/
+
+	// RVA: -1 Offset: -1
+	public int RemoveAll(Predicate<TValue> match) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B65FB4 Offset: 0x3B65FB4 VA: 0x3B65FB4
+	|-StorageList<int>.RemoveAll
+	|
+	|-RVA: 0x3B66D00 Offset: 0x3B66D00 VA: 0x3B66D00
+	|-StorageList<long>.RemoveAll
+	|
+	|-RVA: 0x3B67A48 Offset: 0x3B67A48 VA: 0x3B67A48
+	|-StorageList<object>.RemoveAll
+	|
+	|-RVA: 0x3B6874C Offset: 0x3B6874C VA: 0x3B6874C
+	|-StorageList<float>.RemoveAll
+	|
+	|-RVA: 0x3B694A0 Offset: 0x3B694A0 VA: 0x3B694A0
+	|-StorageList<ulong>.RemoveAll
+	|
+	|-RVA: 0x3B6A3D4 Offset: 0x3B6A3D4 VA: 0x3B6A3D4
+	|-StorageList<__Il2CppFullySharedGenericType>.RemoveAll
+	*/
+
+	// RVA: -1 Offset: -1
+	public void RemoveAt(int index) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B660FC Offset: 0x3B660FC VA: 0x3B660FC
+	|-StorageList<int>.RemoveAt
+	|
+	|-RVA: 0x3B66E48 Offset: 0x3B66E48 VA: 0x3B66E48
+	|-StorageList<long>.RemoveAt
+	|
+	|-RVA: 0x3B67B90 Offset: 0x3B67B90 VA: 0x3B67B90
+	|-StorageList<object>.RemoveAt
+	|
+	|-RVA: 0x3B68894 Offset: 0x3B68894 VA: 0x3B68894
+	|-StorageList<float>.RemoveAt
+	|
+	|-RVA: 0x3B695E8 Offset: 0x3B695E8 VA: 0x3B695E8
+	|-StorageList<ulong>.RemoveAt
+	|
+	|-RVA: 0x3B6A524 Offset: 0x3B6A524 VA: 0x3B6A524
+	|-StorageList<__Il2CppFullySharedGenericType>.RemoveAt
+	*/
+
+	// RVA: -1 Offset: -1
+	public void RemoveRange(int index, int count) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B66244 Offset: 0x3B66244 VA: 0x3B66244
+	|-StorageList<int>.RemoveRange
+	|
+	|-RVA: 0x3B66F90 Offset: 0x3B66F90 VA: 0x3B66F90
+	|-StorageList<long>.RemoveRange
+	|
+	|-RVA: 0x3B67CD8 Offset: 0x3B67CD8 VA: 0x3B67CD8
+	|-StorageList<object>.RemoveRange
+	|
+	|-RVA: 0x3B689DC Offset: 0x3B689DC VA: 0x3B689DC
+	|-StorageList<float>.RemoveRange
+	|
+	|-RVA: 0x3B69730 Offset: 0x3B69730 VA: 0x3B69730
+	|-StorageList<ulong>.RemoveRange
+	|
+	|-RVA: 0x3B6A674 Offset: 0x3B6A674 VA: 0x3B6A674
+	|-StorageList<__Il2CppFullySharedGenericType>.RemoveRange
+	*/
+
+	// RVA: -1 Offset: -1
+	public void Reverse() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B66394 Offset: 0x3B66394 VA: 0x3B66394
+	|-StorageList<int>.Reverse
+	|
+	|-RVA: 0x3B670E0 Offset: 0x3B670E0 VA: 0x3B670E0
+	|-StorageList<long>.Reverse
+	|
+	|-RVA: 0x3B67E28 Offset: 0x3B67E28 VA: 0x3B67E28
+	|-StorageList<object>.Reverse
+	|
+	|-RVA: 0x3B68B2C Offset: 0x3B68B2C VA: 0x3B68B2C
+	|-StorageList<float>.Reverse
+	|
+	|-RVA: 0x3B69880 Offset: 0x3B69880 VA: 0x3B69880
+	|-StorageList<ulong>.Reverse
+	|
+	|-RVA: 0x3B6A7CC Offset: 0x3B6A7CC VA: 0x3B6A7CC
+	|-StorageList<__Il2CppFullySharedGenericType>.Reverse
+	*/
+
+	// RVA: -1 Offset: -1
+	public void Sort(Comparison<TValue> comparison) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B664D4 Offset: 0x3B664D4 VA: 0x3B664D4
+	|-StorageList<int>.Sort
+	|
+	|-RVA: 0x3B67220 Offset: 0x3B67220 VA: 0x3B67220
+	|-StorageList<long>.Sort
+	|
+	|-RVA: 0x3B67F68 Offset: 0x3B67F68 VA: 0x3B67F68
+	|-StorageList<object>.Sort
+	|
+	|-RVA: 0x3B68C6C Offset: 0x3B68C6C VA: 0x3B68C6C
+	|-StorageList<float>.Sort
+	|
+	|-RVA: 0x3B699C0 Offset: 0x3B699C0 VA: 0x3B699C0
+	|-StorageList<ulong>.Sort
+	|
+	|-RVA: 0x3B6A914 Offset: 0x3B6A914 VA: 0x3B6A914
+	|-StorageList<__Il2CppFullySharedGenericType>.Sort
+	*/
+
+	// RVA: -1 Offset: -1
+	public TValue get_Item(int index) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B6661C Offset: 0x3B6661C VA: 0x3B6661C
+	|-StorageList<int>.get_Item
+	|
+	|-RVA: 0x3B67368 Offset: 0x3B67368 VA: 0x3B67368
+	|-StorageList<long>.get_Item
+	|
+	|-RVA: 0x3B680B0 Offset: 0x3B680B0 VA: 0x3B680B0
+	|-StorageList<object>.get_Item
+	|
+	|-RVA: 0x3B68DB4 Offset: 0x3B68DB4 VA: 0x3B68DB4
+	|-StorageList<float>.get_Item
+	|
+	|-RVA: 0x3B69B08 Offset: 0x3B69B08 VA: 0x3B69B08
+	|-StorageList<ulong>.get_Item
+	|
+	|-RVA: 0x3B6AA64 Offset: 0x3B6AA64 VA: 0x3B6AA64
+	|-StorageList<__Il2CppFullySharedGenericType>.get_Item
+	*/
+
+	// RVA: -1 Offset: -1
+	public void set_Item(int index, TValue value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3B66654 Offset: 0x3B66654 VA: 0x3B66654
+	|-StorageList<int>.set_Item
+	|
+	|-RVA: 0x3B673A0 Offset: 0x3B673A0 VA: 0x3B673A0
+	|-StorageList<long>.set_Item
+	|
+	|-RVA: 0x3B680E8 Offset: 0x3B680E8 VA: 0x3B680E8
+	|-StorageList<object>.set_Item
+	|
+	|-RVA: 0x3B68DEC Offset: 0x3B68DEC VA: 0x3B68DEC
+	|-StorageList<float>.set_Item
+	|
+	|-RVA: 0x3B69B40 Offset: 0x3B69B40 VA: 0x3B69B40
+	|-StorageList<ulong>.set_Item
+	|
+	|-RVA: 0x3B6AB24 Offset: 0x3B6AB24 VA: 0x3B6AB24
+	|-StorageList<__Il2CppFullySharedGenericType>.set_Item
+	*/
+}
+

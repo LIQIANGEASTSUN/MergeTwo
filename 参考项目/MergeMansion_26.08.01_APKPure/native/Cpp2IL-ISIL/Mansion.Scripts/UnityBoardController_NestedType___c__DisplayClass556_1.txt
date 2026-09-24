@@ -1,0 +1,35 @@
+Type: UnityBoardController+<>c__DisplayClass556_1
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03278CEC ADD X0, X31, 0xF0
+	0x03278CF0 BL 0x22F2AA8
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void <AnimateExtraSpawnCurrency>b__3()
+
+Disassembly:
+	0x03278CF4 TBNZ X0, 0x0, 0x3278768
+	0x03278CF8 LDP V0, V1, [X31 + 0xF0]
+	0x03278CFC STR W31, [X19]
+	0x03278D00 STUR V0, [X19 + 0x48]
+	0x03278D04 STUR V1, [X19 + 0x58]
+	0x03278D08 ADD X0, X19, 0x48
+	0x03278D0C MOV X1, X31
+
+ISIL:
+	001 Move X8, [X0+24]
+	002 Compare X8, 0
+	003 JumpIfEqual {8}
+	004 Move X1, [X0+16]
+	005 Move X0, X8
+	006 Call <>c__DisplayClass556_0.<AnimateExtraSpawnCurrency>g__UpdateCard|1, X0, X1
+	007 Return 
+	008 Move [X31-16], X30
+	009 Call 0x239FB90
+

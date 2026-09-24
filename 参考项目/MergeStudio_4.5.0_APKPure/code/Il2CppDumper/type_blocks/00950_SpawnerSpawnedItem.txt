@@ -1,0 +1,16 @@
+// Namespace: Paxie.MergeStudio.GameCore.Gameplay.Board.Items
+[Serializable]
+public class SpawnerSpawnedItem // TypeDefIndex: 950
+{
+	// Fields
+	public string SetIDLevel; // 0x8
+	public float Probability; // 0xC
+	public bool IsLocked; // 0x10
+	public GameMainReward Reward; // 0x14
+
+	// Methods
+
+	// RVA: 0x178FCB8 Offset: 0x178FCB8 VA: 0x178FCB8
+	public void .ctor() { }
+}
+

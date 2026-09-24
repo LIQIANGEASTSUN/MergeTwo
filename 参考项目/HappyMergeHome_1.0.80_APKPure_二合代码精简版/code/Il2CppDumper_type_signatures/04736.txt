@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class SummerWatermelonMergeBoard.<>c // TypeDefIndex: 4736
+{
+	// Fields
+	public static readonly SummerWatermelonMergeBoard.<>c <>9; // 0x0
+	public static Action <>9__2_0; // 0x4
+
+	// Methods
+
+	// RVA: 0x329827C Offset: 0x329827C VA: 0x329827C
+	private static void .cctor() { }
+
+	// RVA: 0x32982F0 Offset: 0x32982F0 VA: 0x32982F0
+	public void .ctor() { }
+
+	// RVA: 0x32982F8 Offset: 0x32982F8 VA: 0x32982F8
+	internal void <OnNewItem>b__2_0() { }
+}
+

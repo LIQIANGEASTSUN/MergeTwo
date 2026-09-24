@@ -1,0 +1,31 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class BoardPositionData // TypeDefIndex: 1910
+{
+	// Fields
+	public bool IsCellLocked; // 0x8
+	[ConditionalField("IsCellLocked", False, new[] { True })]
+	public int UnlockLevel; // 0xC
+	public bool IsItemLocked; // 0x10
+	[ConditionalField("IsItemLocked", False, new[] { True })]
+	public int JellyItemGemCount; // 0x14
+	public bool IsItemBoxed; // 0x18
+	public bool IsItemPresent; // 0x19
+	[ConditionalField("IsItemPresent", False, new[] { True })]
+	public int SetID; // 0x1C
+	[ConditionalField("IsItemPresent", False, new[] { True })]
+	public int LevelID; // 0x20
+	public int CellUnlockLevel; // 0x24
+
+	// Methods
+
+	// RVA: 0x1927A0C Offset: 0x1927A0C VA: 0x1927A0C
+	public void .ctor() { }
+
+	// RVA: 0x1927A14 Offset: 0x1927A14 VA: 0x1927A14
+	public bool ContainsItem() { }
+
+	// RVA: 0x1927A38 Offset: 0x1927A38 VA: 0x1927A38
+	public BoardPositionData Copy() { }
+}
+

@@ -1,0 +1,100 @@
+Type: GameLogic.MergeChains.IMergeChainDefinition
+
+Method: GameLogic.MergeChains.MergeChainId get_ConfigKey()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IReadOnlyList`1<GameLogic.MergeChains.IMergeChainElement> get_PrimaryChain()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IReadOnlyList`1<GameLogic.MergeChains.IMergeChainElement> get_FallbackChain()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.String get_CompletionSfx()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Nullable`1<System.Int32> get_InitialLevel()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Nullable`1<System.Int32> get_UnsellableUntilPlayerLevel()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Nullable`1<System.Int32> get_ShowSellConfirmationUntilPlayerLevel()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.String get_OverrideMergeChainSfx()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_Length()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_FallbackLength()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Player.Items.IItemDefinition> DefaultItems(GameLogic.Player.IPlayer player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Player.Items.IItemDefinition> DefaultItems(GameLogic.Config.IMergeMansionGameConfig config)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Codex.CodexCategoryInfo get_CodexCategory()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Codex.CodexDiscoveryRewardInfo get_DiscoveryReward()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

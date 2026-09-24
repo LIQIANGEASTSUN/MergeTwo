@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class MergeBoardPowerBoostedItemLandedCommand.<>c // TypeDefIndex: 32805
+{
+	// Fields
+	public static readonly MergeBoardPowerBoostedItemLandedCommand.<>c <>9; // 0x0
+	public static Func<IMergeItem, string> <>9__3_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x6AD40E8 Offset: 0x6AD00E8 VA: 0x6AD40E8
+	private static void .cctor() { }
+
+	// RVA: 0x6AD4150 Offset: 0x6AD0150 VA: 0x6AD4150
+	public void .ctor() { }
+
+	// RVA: 0x6AD4158 Offset: 0x6AD0158 VA: 0x6AD4158
+	internal string <Execute>b__3_0(IMergeItem i) { }
+}
+

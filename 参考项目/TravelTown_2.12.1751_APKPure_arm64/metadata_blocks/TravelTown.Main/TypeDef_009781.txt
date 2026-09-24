@@ -1,0 +1,9 @@
+// Namespace: Merger.Services.Backend.WebSocket
+public enum OperationTrackingFlags // TypeDefIndex: 9781
+{
+	// Fields
+	public int value__; // 0x0
+	public const OperationTrackingFlags LiveOpPreparation = 0;
+	public const OperationTrackingFlags BackendStateLoading = 1;
+}
+

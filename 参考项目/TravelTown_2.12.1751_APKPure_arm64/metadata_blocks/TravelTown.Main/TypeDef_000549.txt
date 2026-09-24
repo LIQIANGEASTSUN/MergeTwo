@@ -1,0 +1,9 @@
+// Namespace: MergeEngine.Model.Configuration
+public interface IStartingBoardConfigurationModel // TypeDefIndex: 549
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract IBoard GetById(string uniqueId);
+}
+

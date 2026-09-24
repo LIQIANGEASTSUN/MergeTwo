@@ -1,0 +1,81 @@
+// Namespace: Merger.Boosters.Implementations
+public abstract class BoosterImplementationBase<TData, TAssetData> : IBoosterImplementation<TData> // TypeDefIndex: 7793
+{
+	// Fields
+	[Inject]
+	protected IGameSessionModel GameSessionModel; // 0x0
+	[Inject]
+	protected BoosterAssetModel<TData, TAssetData> AssetModel; // 0x0
+	[Inject]
+	private IBoosterModel _boosterModel; // 0x0
+
+	// Properties
+	public abstract BoosterType Type { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public abstract BoosterType get_Type();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-BoosterImplementationBase<object, object>.get_Type
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public virtual bool CanProcess() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C21094 Offset: 0x4C1D094 VA: 0x4C21094
+	|-BoosterImplementationBase<object, object>.CanProcess
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 12
+	public abstract TData CreateBoosterData(RemoteBoosterData remoteActiveBooster);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-BoosterImplementationBase<object, object>.CreateBoosterData
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 13
+	public virtual void BoosterUpdated(TData implementation) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C212D4 Offset: 0x4C1D2D4 VA: 0x4C212D4
+	|-BoosterImplementationBase<object, object>.BoosterUpdated
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 14
+	public virtual void BoosterRemoved(TData implementation) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C212D8 Offset: 0x4C1D2D8 VA: 0x4C212D8
+	|-BoosterImplementationBase<object, object>.BoosterRemoved
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public virtual void OnLastBoosterExpire() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C212DC Offset: 0x4C1D2DC VA: 0x4C212DC
+	|-BoosterImplementationBase<object, object>.OnLastBoosterExpire
+	*/
+
+	// RVA: -1 Offset: -1
+	protected bool TryGetAssetData(RemoteBoosterData boosterData, out TAssetData assetData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C212E0 Offset: 0x4C1D2E0 VA: 0x4C212E0
+	|-BoosterImplementationBase<object, object>.TryGetAssetData
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C2130C Offset: 0x4C1D30C VA: 0x4C2130C
+	|-BoosterImplementationBase<object, object>..ctor
+	*/
+}
+

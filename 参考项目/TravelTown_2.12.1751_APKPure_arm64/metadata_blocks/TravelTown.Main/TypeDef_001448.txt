@@ -1,0 +1,26 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class InteractionCapability // TypeDefIndex: 1448
+{
+	// Fields
+	public bool InteractionCostResource; // 0x10
+	public bool InteractionCostsItems; // 0x11
+	public PlayerResourceEnum ResourceToConsume; // 0x14
+	public int ResourceAmountToConsume; // 0x18
+	public ItemConsumeMode ItemsConsumeMode; // 0x1C
+	public ItemMultiple[] ItemsToConsume; // 0x20
+	[JsonProperty("combinations")]
+	public List<Combination> Combinations; // 0x28
+
+	// Properties
+	public bool Enabled { get; }
+
+	// Methods
+
+	// RVA: 0x601060C Offset: 0x600C60C VA: 0x601060C
+	public bool get_Enabled() { }
+
+	// RVA: 0x6010754 Offset: 0x600C754 VA: 0x6010754
+	public void .ctor() { }
+}
+

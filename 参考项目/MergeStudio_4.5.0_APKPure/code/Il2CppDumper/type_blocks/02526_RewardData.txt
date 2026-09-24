@@ -1,0 +1,35 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class RewardData : IComparable<RewardData> // TypeDefIndex: 2526
+{
+	// Fields
+	public int Tier; // 0x8
+	public int SortingOrder; // 0xC
+	public int Id; // 0x10
+	public int Level; // 0x14
+	public int Count; // 0x18
+	public bool UnlimitedEnergy; // 0x1C
+	public bool Last; // 0x1D
+	public bool ForceAsItem; // 0x1E
+
+	// Methods
+
+	// RVA: 0x1A1B4B4 Offset: 0x1A1B4B4 VA: 0x1A1B4B4
+	public static RewardData GetItemRewardData(BoardData boardData, int id, int level, int count, bool last, bool forceAsItem) { }
+
+	// RVA: 0x1A1BAE4 Offset: 0x1A1BAE4 VA: 0x1A1BAE4
+	public static RewardData GetCollectableRewardData(BoardData boardData, int id, int level, int count, bool last) { }
+
+	// RVA: 0x1A1BE8C Offset: 0x1A1BE8C VA: 0x1A1BE8C
+	public static RewardData GetBoosterRewardData(int id, int count, bool last) { }
+
+	// RVA: 0x1A1BADC Offset: 0x1A1BADC VA: 0x1A1BADC
+	public void .ctor() { }
+
+	// RVA: 0x1A1BFC4 Offset: 0x1A1BFC4 VA: 0x1A1BFC4
+	public void .ctor(bool unlimitedEnergy) { }
+
+	// RVA: 0x1A1BFEC Offset: 0x1A1BFEC VA: 0x1A1BFEC Slot: 4
+	public int CompareTo(RewardData other) { }
+}
+

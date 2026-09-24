@@ -1,0 +1,29 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardProducerInventoryStateSystem.<>c // TypeDefIndex: 775
+{
+	// Fields
+	public static readonly BoardProducerInventoryStateSystem.<>c <>9; // 0x0
+	public static Func<ProducerInventoryItem, InventoryItem> <>9__2_0; // 0x8
+	public static Func<InventorySlotComponent, bool> <>9__5_0; // 0x10
+	public static Func<InventorySlotComponent, IdComponent> <>9__5_1; // 0x18
+
+	// Methods
+
+	// RVA: 0x64EA9D4 Offset: 0x64E69D4 VA: 0x64EA9D4
+	private static void .cctor() { }
+
+	// RVA: 0x64EAA3C Offset: 0x64E6A3C VA: 0x64EAA3C
+	public void .ctor() { }
+
+	// RVA: 0x64EAA44 Offset: 0x64E6A44 VA: 0x64EAA44
+	internal InventoryItem <ProcessItems>b__2_0(ProducerInventoryItem i) { }
+
+	// RVA: 0x64EAA5C Offset: 0x64E6A5C VA: 0x64EAA5C
+	internal bool <GetExistingEntityIds>b__5_0(InventorySlotComponent item) { }
+
+	// RVA: 0x64EAA7C Offset: 0x64E6A7C VA: 0x64EAA7C
+	internal IdComponent <GetExistingEntityIds>b__5_1(InventorySlotComponent items) { }
+}
+

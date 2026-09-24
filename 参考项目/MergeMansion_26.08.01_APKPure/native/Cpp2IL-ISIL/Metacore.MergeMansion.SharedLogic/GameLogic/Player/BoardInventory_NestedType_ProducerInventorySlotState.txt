@@ -1,0 +1,128 @@
+Type: GameLogic.Player.BoardInventory+ProducerInventorySlotState
+
+Method: System.Boolean get_Unlocked()
+
+Disassembly:
+	0x0353192C B 0x3531970
+	0x03531930 LDRSW X9, [X10]
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_Unlocked(System.Boolean value)
+
+Disassembly:
+	0x03531934 ADD X8, X8, X9, 0x4, LSL
+	0x03531938 ADD X0, X8, 0x138
+
+ISIL:
+	001 Move [X0+16], W1
+	002 Return 
+
+Method: System.Boolean get_Seen()
+
+Disassembly:
+	0x0353193C LDP X8, X1, [X0]
+	0x03531940 MOV X0, X19
+
+ISIL:
+	001 Move W0, [X0+17]
+	002 Return X0
+
+Method: System.Void set_Seen(System.Boolean value)
+
+Disassembly:
+	0x03531944 BLR X8
+	0x03531948 MOV X1, X0
+
+ISIL:
+	001 Move [X0+17], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0353194C LDR X0, [X31 + 0x18]
+	0x03531950 STR X1, [X0 + 0x18]!
+	0x03531954 BL 0x239B888
+	0x03531958 MOVZ W8, 0x1
+	0x0353195C B 0x3532048
+	0x03531960 LDR W9, [X10]
+	0x03531964 ADD W9, W9, 0x26
+
+ISIL:
+	001 Move [X31-16], X30
+	002 Move [X31-8], X19
+	003 Move X1, X31
+	004 Move X19, X0
+	005 Call Object..ctor, X0
+	006 NotImplemented "Instruction STRH not yet implemented."
+	007 Move X30, [X31+16]
+	008 Move X19, [X31+24]
+	009 Return 
+
+Method: System.Void .ctor(System.Boolean unlocked)
+
+Disassembly:
+	0x03531968 ADD X8, X8, W9, 0x4, SXTW
+	0x0353196C ADD X0, X8, 0x138
+	0x03531970 LDP X8, X1, [X0]
+	0x03531974 MOV X0, X19
+	0x03531978 BLR X8
+	0x0353197C LDR X19, [X31 + 0x18]
+	0x03531980 MOV X20, X0
+	0x03531984 CBNZ X0, 0x35319EC
+	0x03531988 ADRP X8, 0x21FC000
+	0x0353198C LDR X8, [X8 + 0xD00]
+	0x03531990 LDR X20, [X8]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move W19, W1
+	005 Move X1, X31
+	006 Move X20, X0
+	007 Call Object..ctor, X0
+	008 Move [X20+16], W19
+	009 Move [X20+17], W19
+	010 Move X20, [X31+16]
+	011 Move X19, [X31+24]
+	012 Move X30, [X31+32]
+	013 Return 
+
+Method: System.Void .ctor(System.Boolean unlocked, System.Boolean seen)
+
+Disassembly:
+	0x03531994 LDR X8, [X20 + 0x38]
+	0x03531998 CBNZ X8, 0x35319A8
+	0x0353199C MOV X0, X20
+	0x035319A0 BL 0x23D4F9C
+	0x035319A4 LDR X8, [X20 + 0x38]
+	0x035319A8 LDR X0, [X8 + 0x10]
+	0x035319AC ADD X8, X0, 0x135
+	0x035319B0 LDRH W8, [X8]
+	0x035319B4 TBNZ X8, 0x0, 0x35319BC
+	0x035319B8 BL 0x23D4F40
+	0x035319BC LDR W8, [X0 + 0xE4]
+	0x035319C0 CBNZ W8, 0x35319C8
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move W20, W1
+	006 Move X1, X31
+	007 Move W19, W2
+	008 Move X21, X0
+	009 Call Object..ctor, X0
+	010 Move [X21+16], W20
+	011 Move [X21+17], W19
+	012 Move X20, [X31+16]
+	013 Move X19, [X31+24]
+	014 Move X30, [X31+32]
+	015 Move X21, [X31+40]
+	016 Return 
+

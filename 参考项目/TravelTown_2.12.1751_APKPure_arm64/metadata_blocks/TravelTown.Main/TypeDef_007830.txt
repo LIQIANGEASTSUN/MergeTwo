@@ -1,0 +1,12 @@
+// Namespace: Merger.Boosters.Declarations.Definitions.Interfaces
+public interface IBoosterActivator // TypeDefIndex: 7830
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract bool CanActivateBooster(IBoosterItem booster, string uuId);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void ActivateBooster(string Uuid, BoosterActivationData payload);
+}
+

@@ -1,0 +1,24 @@
+// Namespace: 
+[CompilerGenerated]
+private struct BoardEventHandlerBase.<LoadEventData>d__10 : IAsyncStateMachine // TypeDefIndex: 5391
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncUniTaskMethodBuilder<EventData> <>t__builder; // 0x4
+	public BoardEventHandlerBase <>4__this; // 0x10
+	public int index; // 0x14
+	private long <startTime>5__2; // 0x18
+	private AsyncOperationHandle<EventData> <handler>5__3; // 0x20
+	private UniTask.Awaiter<long> <>u__1; // 0x30
+	private UniTask.Awaiter<EventData> <>u__2; // 0x48
+
+	// Methods
+
+	// RVA: 0x1EB7EF0 Offset: 0x1EB7EF0 VA: 0x1EB7EF0 Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x1EB8C88 Offset: 0x1EB8C88 VA: 0x1EB8C88 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

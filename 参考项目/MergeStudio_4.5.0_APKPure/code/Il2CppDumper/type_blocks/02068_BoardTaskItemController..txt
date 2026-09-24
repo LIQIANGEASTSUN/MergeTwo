@@ -1,0 +1,41 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardTaskItemController.<>c // TypeDefIndex: 2068
+{
+	// Fields
+	public static readonly BoardTaskItemController.<>c <>9; // 0x0
+	public static Func<BoardPositionEntity, bool> <>9__67_0; // 0x4
+	public static Func<RegularReward, string> <>9__67_2; // 0x8
+	public static Action<bool> <>9__89_2; // 0xC
+	public static Action<bool> <>9__89_5; // 0x10
+	public static Action<bool> <>9__89_7; // 0x14
+	public static Action<ITaskProgressHandler> <>9__90_0; // 0x18
+
+	// Methods
+
+	// RVA: 0x19750C4 Offset: 0x19750C4 VA: 0x19750C4
+	private static void .cctor() { }
+
+	// RVA: 0x1975138 Offset: 0x1975138 VA: 0x1975138
+	public void .ctor() { }
+
+	// RVA: 0x1975140 Offset: 0x1975140 VA: 0x1975140
+	internal bool <SendFirebaseEvent>b__67_0(BoardPositionEntity p) { }
+
+	// RVA: 0x1975174 Offset: 0x1975174 VA: 0x1975174
+	internal string <SendFirebaseEvent>b__67_2(RegularReward r) { }
+
+	// RVA: 0x197524C Offset: 0x197524C VA: 0x197524C
+	internal void <ProcessDoneClickBasedOnType>b__89_2(bool isFirstItem) { }
+
+	// RVA: 0x1975258 Offset: 0x1975258 VA: 0x1975258
+	internal void <ProcessDoneClickBasedOnType>b__89_5(bool isFirstItem) { }
+
+	// RVA: 0x1975264 Offset: 0x1975264 VA: 0x1975264
+	internal void <ProcessDoneClickBasedOnType>b__89_7(bool isFirstItem) { }
+
+	// RVA: 0x1975270 Offset: 0x1975270 VA: 0x1975270
+	internal void <SetTaskProgressForFeatures>b__90_0(ITaskProgressHandler handler) { }
+}
+

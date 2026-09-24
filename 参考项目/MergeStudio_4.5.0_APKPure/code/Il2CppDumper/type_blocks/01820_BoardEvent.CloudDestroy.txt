@@ -1,0 +1,9 @@
+// Namespace: 
+public struct BoardEvent.CloudDestroy : IEvent // TypeDefIndex: 1820
+{
+	// Fields
+	public UnityAction OnItemsSet; // 0x0
+	public int Level; // 0x4
+	public bool IsSentByTutorial; // 0x8
+}
+

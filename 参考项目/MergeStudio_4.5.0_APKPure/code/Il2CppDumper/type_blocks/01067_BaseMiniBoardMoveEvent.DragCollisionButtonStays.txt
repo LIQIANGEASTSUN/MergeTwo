@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BaseMiniBoardMoveEvent.DragCollisionButtonStays : IEvent // TypeDefIndex: 1067
+{
+	// Fields
+	public MiniBoardMovable Moving; // 0x0
+}
+

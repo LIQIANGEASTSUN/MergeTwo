@@ -1,0 +1,30 @@
+// Namespace: Merger.MergeBoard.Models
+public interface IMergeBoardModel // TypeDefIndex: 25807
+{
+	// Properties
+	public abstract IEntitiesHolder BoardState { get; }
+	public abstract IEnumerable<Entity> Entities { get; }
+	public abstract bool IsInitialized { get; set; }
+	public abstract long LastBoardTimeSyncTimestamp { get; set; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract IEntitiesHolder get_BoardState();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract IEnumerable<Entity> get_Entities();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract bool get_IsInitialized();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void set_IsInitialized(bool value);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract long get_LastBoardTimeSyncTimestamp();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract void set_LastBoardTimeSyncTimestamp(long value);
+}
+

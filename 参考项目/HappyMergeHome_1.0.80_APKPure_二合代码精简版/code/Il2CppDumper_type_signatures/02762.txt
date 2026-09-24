@@ -1,0 +1,39 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeBoardItem.<HideOrderBoxHintAfterDelay>d__158 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 2762
+{
+	// Fields
+	private int <>1__state; // 0x8
+	private object <>2__current; // 0xC
+	public MergeBoardItem <>4__this; // 0x10
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHidden]
+	// RVA: 0x2C37EDC Offset: 0x2C37EDC VA: 0x2C37EDC
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHidden]
+	// RVA: 0x2C37EF8 Offset: 0x2C37EF8 VA: 0x2C37EF8 Slot: 5
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x2C37EFC Offset: 0x2C37EFC VA: 0x2C37EFC Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x2C38050 Offset: 0x2C38050 VA: 0x2C38050 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHidden]
+	// RVA: 0x2C38058 Offset: 0x2C38058 VA: 0x2C38058 Slot: 8
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHidden]
+	// RVA: 0x2C3809C Offset: 0x2C3809C VA: 0x2C3809C Slot: 7
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+

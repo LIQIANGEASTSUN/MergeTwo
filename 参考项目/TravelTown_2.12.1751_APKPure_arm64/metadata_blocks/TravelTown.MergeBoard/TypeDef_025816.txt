@@ -1,0 +1,40 @@
+// Namespace: Merger.MergeBoard.Models
+public class ViewportMergeBoardModel : ModelBase, IMergeBoardModel // TypeDefIndex: 25816
+{
+	// Fields
+	private readonly MergeBoardModel _outerModel; // 0x28
+	private readonly ViewportEntitiesHolder _viewportEntitiesHolder; // 0x30
+
+	// Properties
+	public IEntitiesHolder BoardState { get; }
+	public IEnumerable<Entity> Entities { get; }
+	public bool IsInitialized { get; set; }
+	public long LastBoardTimeSyncTimestamp { get; set; }
+
+	// Methods
+
+	// RVA: 0x6A7E1B0 Offset: 0x6A7A1B0 VA: 0x6A7E1B0 Slot: 19
+	public IEntitiesHolder get_BoardState() { }
+
+	// RVA: 0x6A7E1B8 Offset: 0x6A7A1B8 VA: 0x6A7E1B8 Slot: 20
+	public IEnumerable<Entity> get_Entities() { }
+
+	// RVA: 0x6A7E258 Offset: 0x6A7A258 VA: 0x6A7E258 Slot: 21
+	public bool get_IsInitialized() { }
+
+	// RVA: 0x6A7E274 Offset: 0x6A7A274 VA: 0x6A7E274 Slot: 22
+	public void set_IsInitialized(bool value) { }
+
+	// RVA: 0x6A7E294 Offset: 0x6A7A294 VA: 0x6A7E294 Slot: 23
+	public long get_LastBoardTimeSyncTimestamp() { }
+
+	// RVA: 0x6A7E2B0 Offset: 0x6A7A2B0 VA: 0x6A7E2B0 Slot: 24
+	public void set_LastBoardTimeSyncTimestamp(long value) { }
+
+	// RVA: 0x6A7E2CC Offset: 0x6A7A2CC VA: 0x6A7E2CC
+	public void .ctor(MergeBoardModel outerModel, IActiveTilesModel activeTilesModel) { }
+
+	// RVA: 0x6A7E36C Offset: 0x6A7A36C VA: 0x6A7E36C Slot: 18
+	protected override void DisposeModel() { }
+}
+

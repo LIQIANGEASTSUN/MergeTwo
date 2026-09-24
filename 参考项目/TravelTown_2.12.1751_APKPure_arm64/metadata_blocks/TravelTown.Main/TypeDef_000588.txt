@@ -1,0 +1,142 @@
+// Namespace: MergeEngine.ECS
+public class Entity // TypeDefIndex: 588
+{
+	// Fields
+	private List<IComponentBase> _components; // 0x10
+	private Dictionary<Type, IComponentBase> _componentByTypeLookup; // 0x18
+	private Dictionary<Type, IList> _componentsByTypeLookup; // 0x20
+	[CompilerGenerated]
+	private IJsonService <JsonSerializer>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private Action<IComponentBase> ComponentAdded; // 0x30
+	[CompilerGenerated]
+	private Action<IComponentBase> ComponentRemoved; // 0x38
+
+	// Properties
+	public ReadOnlyCollection<IComponentBase> Components { get; }
+	protected IJsonService JsonSerializer { get; set; }
+
+	// Methods
+
+	// RVA: 0x6143E90 Offset: 0x613FE90 VA: 0x6143E90
+	public ReadOnlyCollection<IComponentBase> get_Components() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6143EE0 Offset: 0x613FEE0 VA: 0x6143EE0
+	protected IJsonService get_JsonSerializer() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6143EE8 Offset: 0x613FEE8 VA: 0x6143EE8
+	public void set_JsonSerializer(IJsonService value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6143EF0 Offset: 0x613FEF0 VA: 0x6143EF0
+	public void add_ComponentAdded(Action<IComponentBase> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6143FA0 Offset: 0x613FFA0 VA: 0x6143FA0
+	public void remove_ComponentAdded(Action<IComponentBase> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6144050 Offset: 0x6140050 VA: 0x6144050
+	public void add_ComponentRemoved(Action<IComponentBase> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6144100 Offset: 0x6140100 VA: 0x6144100
+	public void remove_ComponentRemoved(Action<IComponentBase> value) { }
+
+	// RVA: -1 Offset: -1
+	public TComponent AddComponent<TCapability, TComponent>(TCapability capability) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C205BC Offset: 0x3C1C5BC VA: 0x3C205BC
+	|-Entity.AddComponent<BoardItemPosition, object>
+	|
+	|-RVA: 0x3C20838 Offset: 0x3C1C838 VA: 0x3C20838
+	|-Entity.AddComponent<object, object>
+	|
+	|-RVA: 0x3C20A90 Offset: 0x3C1CA90 VA: 0x3C20A90
+	|-Entity.AddComponent<__Il2CppFullySharedGenericType, object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public TComponent TryAddComponent<TCapability, TComponent>(TCapability capability) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C21B68 Offset: 0x3C1DB68 VA: 0x3C21B68
+	|-Entity.TryAddComponent<object, object>
+	|
+	|-RVA: 0x3C21DD8 Offset: 0x3C1DDD8 VA: 0x3C21DD8
+	|-Entity.TryAddComponent<__Il2CppFullySharedGenericType, object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public TComponent AddComponent<TComponent>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C203E4 Offset: 0x3C1C3E4 VA: 0x3C203E4
+	|-Entity.AddComponent<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	private ConstructorInfo GetConstructor<TComponent>(Type[] types) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C210B0 Offset: 0x3C1D0B0 VA: 0x3C210B0
+	|-Entity.GetConstructor<object>
+	|
+	|-RVA: 0x3C213D8 Offset: 0x3C1D3D8 VA: 0x3C213D8
+	|-Entity.GetConstructor<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public TComponent TryAddComponent<TComponent>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C21978 Offset: 0x3C1D978 VA: 0x3C21978
+	|-Entity.TryAddComponent<object>
+	*/
+
+	// RVA: 0x61441B0 Offset: 0x61401B0 VA: 0x61441B0
+	private void InternalAddComponent(ComponentBase componentInstance) { }
+
+	// RVA: -1 Offset: -1
+	public bool RemoveComponent<TComponent>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C21700 Offset: 0x3C1D700 VA: 0x3C21700
+	|-Entity.RemoveComponent<object>
+	|
+	|-RVA: 0x3C2183C Offset: 0x3C1D83C VA: 0x3C2183C
+	|-Entity.RemoveComponent<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public TComponent GetComponent<TComponent>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C20D84 Offset: 0x3C1CD84 VA: 0x3C20D84
+	|-Entity.GetComponent<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public ReadOnlyCollection<TComponent> GetComponents<TComponent>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3C20E9C Offset: 0x3C1CE9C VA: 0x3C20E9C
+	|-Entity.GetComponents<object>
+	|
+	|-RVA: 0x3C20FA4 Offset: 0x3C1CFA4 VA: 0x3C20FA4
+	|-Entity.GetComponents<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x61442B0 Offset: 0x61402B0 VA: 0x61442B0
+	private void CacheComponent(Type type, IComponentBase component) { }
+
+	// RVA: 0x61446D0 Offset: 0x61406D0 VA: 0x61446D0
+	private void RemoveComponentFromCache(Type type, IComponentBase component) { }
+
+	// RVA: 0x6144928 Offset: 0x6140928 VA: 0x6144928
+	public void .ctor() { }
+}
+

@@ -1,0 +1,7 @@
+// Namespace: 
+public struct EntityUpdateEvent.SaveDataToCloud : IEvent // TypeDefIndex: 2677
+{
+	// Fields
+	public BoardEntity BoardEntity; // 0x0
+}
+

@@ -1,0 +1,29 @@
+// Namespace: Merger.MergeBoard.Systems
+public class SpawnerSystem : ISystem // TypeDefIndex: 25773
+{
+	// Fields
+	[Inject]
+	private IEntityFactory _entityFactory; // 0x10
+	[Inject]
+	private IMergeBoardLayout _layout; // 0x18
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x20
+
+	// Methods
+
+	// RVA: 0x6A743A4 Offset: 0x6A703A4 VA: 0x6A743A4 Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A74708 Offset: 0x6A70708 VA: 0x6A74708
+	private void HandleSpawnByTap(TickContext context) { }
+
+	// RVA: 0x6A74AA4 Offset: 0x6A70AA4 VA: 0x6A74AA4
+	private void HandleSpawnByTick(TickContext context, Entity spawnerEntity, SpawnerComponent spawnerComponent, TimeCycleComponent timeCycleComponent, BoardTilePositionComponent spawnerPositionComponent, InteractionComponent interactionComponent) { }
+
+	// RVA: 0x6A75030 Offset: 0x6A71030 VA: 0x6A75030
+	private void SpawnItem(TickContext context, Entity entity, BoardTilePositionComponent positionComponent, ref TimeCycleComponent timeCycleComponent, int emptyPosition, ItemSpawnable itemToSpawn) { }
+
+	// RVA: 0x6A7532C Offset: 0x6A7132C VA: 0x6A7532C
+	public void .ctor() { }
+}
+

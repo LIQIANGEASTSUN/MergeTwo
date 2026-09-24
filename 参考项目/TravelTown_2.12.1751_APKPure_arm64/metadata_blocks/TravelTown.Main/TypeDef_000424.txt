@@ -1,0 +1,46 @@
+// Namespace: MergeEngine.Model
+public interface IInventoryModel // TypeDefIndex: 424
+{
+	// Properties
+	public abstract PlayerResourceEnum SlotPriceCurrency { get; }
+	public abstract int NumSlots { get; }
+	public abstract int NumProducerSlots { get; }
+	public abstract int NextSlotPrice { get; }
+	public abstract int MaxSlots { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract PlayerResourceEnum get_SlotPriceCurrency();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract float GetToolProgressPercentage(PlayerResourceEnum resource);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract int get_NumSlots();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract int get_NumProducerSlots();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract int get_NextSlotPrice();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract int get_MaxSlots();
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract IMergeItem GetItem(int slotIndex, InventorySlotType type);
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract string GetItemUUID(int slotIndex, InventorySlotType type);
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract AssetReferenceT<Sprite> GetItemAsset(int slotIndex, InventorySlotType type);
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract void SetToolProgress(PlayerResourceEnum resource, float progress);
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public abstract void UpdateToolProgress(PlayerResourceEnum toolType, float progressToAdd);
+}
+

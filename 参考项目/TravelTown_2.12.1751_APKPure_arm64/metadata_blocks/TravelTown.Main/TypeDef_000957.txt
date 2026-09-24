@@ -1,0 +1,49 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ExpendableSystem.<>c // TypeDefIndex: 957
+{
+	// Fields
+	public static readonly ExpendableSystem.<>c <>9; // 0x0
+	public static Func<ExpendableComponent, bool> <>9__17_0; // 0x8
+	public static Func<ItemMultiple, int> <>9__21_0; // 0x10
+	public static Comparison<WeightedItemSpawnable> <>9__22_0; // 0x18
+	public static Func<WeightedItemSpawnable, int> <>9__22_2; // 0x20
+	public static Func<WeightedItemSpawnable, WeightedItemSpawnable> <>9__22_3; // 0x28
+	public static Comparison<EmptiableWeightedItemSpawnable> <>9__23_0; // 0x30
+	public static Func<EmptiableWeightedItemSpawnable, int> <>9__23_1; // 0x38
+	public static Func<EmptiableWeightedItemSpawnable, EmptiableWeightedItemSpawnable> <>9__23_2; // 0x40
+
+	// Methods
+
+	// RVA: 0x67902C0 Offset: 0x678C2C0 VA: 0x67902C0
+	private static void .cctor() { }
+
+	// RVA: 0x6790328 Offset: 0x678C328 VA: 0x6790328
+	public void .ctor() { }
+
+	// RVA: 0x6790330 Offset: 0x678C330 VA: 0x6790330
+	internal bool <OnWillProcessComponents>b__17_0(ExpendableComponent expendable) { }
+
+	// RVA: 0x67903C8 Offset: 0x678C3C8 VA: 0x67903C8
+	internal int <CanExpend>b__21_0(ItemMultiple itemMultiple) { }
+
+	// RVA: 0x67903E0 Offset: 0x678C3E0 VA: 0x67903E0
+	internal int <SpawnItems>b__22_0(WeightedItemSpawnable item1, WeightedItemSpawnable item2) { }
+
+	// RVA: 0x6790404 Offset: 0x678C404 VA: 0x6790404
+	internal int <SpawnItems>b__22_2(WeightedItemSpawnable item) { }
+
+	// RVA: 0x679041C Offset: 0x678C41C VA: 0x679041C
+	internal WeightedItemSpawnable <SpawnItems>b__22_3(WeightedItemSpawnable item) { }
+
+	// RVA: 0x6790424 Offset: 0x678C424 VA: 0x6790424
+	internal int <SpawnItems>b__23_0(EmptiableWeightedItemSpawnable item1, EmptiableWeightedItemSpawnable item2) { }
+
+	// RVA: 0x6790448 Offset: 0x678C448 VA: 0x6790448
+	internal int <SpawnItems>b__23_1(EmptiableWeightedItemSpawnable item) { }
+
+	// RVA: 0x6790460 Offset: 0x678C460 VA: 0x6790460
+	internal EmptiableWeightedItemSpawnable <SpawnItems>b__23_2(EmptiableWeightedItemSpawnable item) { }
+}
+

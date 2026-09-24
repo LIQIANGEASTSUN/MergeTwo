@@ -1,0 +1,75 @@
+// Namespace: 
+[Serializable]
+public class SummerWatermelonEightConfig : TableBase // TypeDefIndex: 1053
+{
+	// Fields
+	[CompilerGenerated]
+	private int <Id>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private int <Hoe>k__BackingField; // 0xC
+	[CompilerGenerated]
+	private List<int> <RecycleItems>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private List<int> <CollectAllReward>k__BackingField; // 0x14
+	[CompilerGenerated]
+	private List<int> <CollectAllRewardCount>k__BackingField; // 0x18
+
+	// Properties
+	public int Id { get; set; }
+	public int Hoe { get; set; }
+	public List<int> RecycleItems { get; set; }
+	public List<int> CollectAllReward { get; set; }
+	public List<int> CollectAllRewardCount { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x1ED1CE0 Offset: 0x1ED1CE0 VA: 0x1ED1CE0
+	public int get_Id() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED1CE8 Offset: 0x1ED1CE8 VA: 0x1ED1CE8
+	public void set_Id(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED1CF0 Offset: 0x1ED1CF0 VA: 0x1ED1CF0
+	public int get_Hoe() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED1CF8 Offset: 0x1ED1CF8 VA: 0x1ED1CF8
+	public void set_Hoe(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED1D00 Offset: 0x1ED1D00 VA: 0x1ED1D00
+	public List<int> get_RecycleItems() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED1D08 Offset: 0x1ED1D08 VA: 0x1ED1D08
+	public void set_RecycleItems(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED1D10 Offset: 0x1ED1D10 VA: 0x1ED1D10
+	public List<int> get_CollectAllReward() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED1D18 Offset: 0x1ED1D18 VA: 0x1ED1D18
+	public void set_CollectAllReward(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED1D20 Offset: 0x1ED1D20 VA: 0x1ED1D20
+	public List<int> get_CollectAllRewardCount() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED1D28 Offset: 0x1ED1D28 VA: 0x1ED1D28
+	public void set_CollectAllRewardCount(List<int> value) { }
+
+	// RVA: 0x1ED1D30 Offset: 0x1ED1D30 VA: 0x1ED1D30 Slot: 4
+	public override int GetID() { }
+
+	// RVA: 0x1ED1D84 Offset: 0x1ED1D84 VA: 0x1ED1D84
+	public void .ctor() { }
+
+	// RVA: 0x1ED1D8C Offset: 0x1ED1D8C VA: 0x1ED1D8C
+	public int <>iFixBaseProxy_GetID() { }
+}
+

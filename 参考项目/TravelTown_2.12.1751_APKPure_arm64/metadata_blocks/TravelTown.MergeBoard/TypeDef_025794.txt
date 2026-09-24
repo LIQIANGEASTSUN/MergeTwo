@@ -1,0 +1,20 @@
+// Namespace: Merger.MergeBoard.Signals
+public class MergeBoardItemSelectedSignal // TypeDefIndex: 25794
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly Entity <ItemViewEntity>k__BackingField; // 0x10
+
+	// Properties
+	public Entity ItemViewEntity { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A7A9E4 Offset: 0x6A769E4 VA: 0x6A7A9E4
+	public Entity get_ItemViewEntity() { }
+
+	// RVA: 0x6A7A9EC Offset: 0x6A769EC VA: 0x6A7A9EC
+	public void .ctor(Entity itemViewEntity) { }
+}
+

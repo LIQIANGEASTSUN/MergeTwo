@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeBoardItem.<>c__DisplayClass100_0 // TypeDefIndex: 2750
+{
+	// Fields
+	public MergeBoardItem <>4__this; // 0x8
+	public string name; // 0xC
+
+	// Methods
+
+	// RVA: 0x2C37138 Offset: 0x2C37138 VA: 0x2C37138
+	public void .ctor() { }
+
+	// RVA: 0x2C37140 Offset: 0x2C37140 VA: 0x2C37140
+	internal void <PlayAnimator>b__0() { }
+}
+

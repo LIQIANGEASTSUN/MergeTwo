@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemController.<>c__DisplayClass195_0 // TypeDefIndex: 1674
+{
+	// Fields
+	public Vector3 transformPosition; // 0x8
+
+	// Methods
+
+	// RVA: 0x18CCF98 Offset: 0x18CCF98 VA: 0x18CCF98
+	public void .ctor() { }
+
+	// RVA: 0x18CCFA0 Offset: 0x18CCFA0 VA: 0x18CCFA0
+	internal int <IsMergeAvailable>b__0(CellMergeCollider item1, CellMergeCollider item2) { }
+}
+

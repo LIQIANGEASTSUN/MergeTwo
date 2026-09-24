@@ -1,0 +1,55 @@
+// Namespace: MergePuzzle.BoardEvents
+[Serializable]
+public class BoardEventHandler : BoardEventHandlerBase // TypeDefIndex: 5388
+{
+	// Methods
+
+	// RVA: 0x1EB2BD0 Offset: 0x1EB2BD0 VA: 0x1EB2BD0
+	public void InitializeEventsWithBoard(BoardEntity boardEntity, KiteFeatureCalendarConfig calendarConfig) { }
+
+	// RVA: 0x1EB3D90 Offset: 0x1EB3D90 VA: 0x1EB3D90
+	public bool PurchaseLimitReached() { }
+
+	// RVA: 0x1EB3EC4 Offset: 0x1EB3EC4 VA: 0x1EB3EC4
+	public bool IsInitialized() { }
+
+	// RVA: 0x1EB3ED4 Offset: 0x1EB3ED4 VA: 0x1EB3ED4
+	public ValueTuple<List<string>, bool> GetSplashAddressableLabels() { }
+
+	// RVA: 0x1EB2D50 Offset: 0x1EB2D50 VA: 0x1EB2D50
+	private void InitializeEntities(BoardEntity boardEntity, KiteFeatureCalendarConfig calendarConfig) { }
+
+	// RVA: 0x1EB4160 Offset: 0x1EB4160 VA: 0x1EB4160
+	public BoardEntity GetBoardEntity() { }
+
+	// RVA: 0x1EB40C4 Offset: 0x1EB40C4 VA: 0x1EB40C4
+	private void CreateNewEventEntity(EventBoardConfigItem configItem, BoardEntity boardEntity) { }
+
+	// RVA: 0x1EB4218 Offset: 0x1EB4218 VA: 0x1EB4218
+	public void ResetEventEntity(int id) { }
+
+	// RVA: 0x1EB376C Offset: 0x1EB376C VA: 0x1EB376C
+	public void FindFinishWaitingBoardEvent(BoardEntity boardEntity) { }
+
+	// RVA: 0x1EB43EC Offset: 0x1EB43EC VA: 0x1EB43EC
+	private void TryRemoveRunningBoardConfigItem(EventBoardConfigItem item) { }
+
+	// RVA: 0x1EB4350 Offset: 0x1EB4350 VA: 0x1EB4350
+	public void SetFinishWaitingEvent(EventBoardConfigItem item) { }
+
+	// RVA: 0x1EB43DC Offset: 0x1EB43DC VA: 0x1EB43DC
+	public void RemoveFinishWaitingEvent() { }
+
+	// RVA: 0x1EB4550 Offset: 0x1EB4550 VA: 0x1EB4550
+	public bool IsEventPlayable() { }
+
+	// RVA: 0x1EB47F0 Offset: 0x1EB47F0 VA: 0x1EB47F0
+	public void RemovePopupRequests() { }
+
+	// RVA: 0x1EB487C Offset: 0x1EB487C VA: 0x1EB487C
+	public void TryQueuePopup() { }
+
+	// RVA: 0x1EB493C Offset: 0x1EB493C VA: 0x1EB493C
+	public void .ctor() { }
+}
+

@@ -1,0 +1,15 @@
+// Namespace: Framework.Core.Services.Backend.Remote.Payloads.BoardState
+[Serializable]
+public class EventData // TypeDefIndex: 10981
+{
+	// Fields
+	public int XP; // 0x10
+	public int Level; // 0x14
+	public string EventId; // 0x18
+
+	// Methods
+
+	// RVA: 0x6927678 Offset: 0x6923678 VA: 0x6927678
+	public void .ctor() { }
+}
+

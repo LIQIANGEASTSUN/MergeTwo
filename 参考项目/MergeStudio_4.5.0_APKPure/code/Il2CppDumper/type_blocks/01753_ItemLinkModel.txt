@@ -1,0 +1,48 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class ItemLinkModel // TypeDefIndex: 1753
+{
+	// Fields
+	[SerializeField]
+	private int ChainIndex; // 0x8
+	public int LinkIndex; // 0xC
+	public int ArchiveLevel; // 0x10
+	public int UnlockLevel; // 0x14
+	public int SpawnerSetId; // 0x18
+	public bool SpawnerArchiveRemovable; // 0x1C
+	public List<int> ItemSetIdList; // 0x20
+	private Nullable<ItemLinkID> _cachedLinkID; // 0x24
+
+	// Properties
+	public ItemLinkID LinkID { get; }
+
+	// Methods
+
+	// RVA: 0x190672C Offset: 0x190672C VA: 0x190672C
+	public ItemLinkID get_LinkID() { }
+
+	// RVA: 0x1910A7C Offset: 0x1910A7C VA: 0x1910A7C
+	public void .ctor() { }
+
+	// RVA: 0x1911D44 Offset: 0x1911D44 VA: 0x1911D44
+	public int GetChainIndex() { }
+
+	// RVA: 0x1910B14 Offset: 0x1910B14 VA: 0x1910B14
+	internal void SetChainIndex(int chainIndex) { }
+
+	// RVA: 0x190F61C Offset: 0x190F61C VA: 0x190F61C
+	public bool ContainsItemSet(int itemSetId) { }
+
+	// RVA: 0x1911D4C Offset: 0x1911D4C VA: 0x1911D4C
+	public bool AddItemSet(int itemSetId) { }
+
+	// RVA: 0x1911EBC Offset: 0x1911EBC VA: 0x1911EBC
+	public bool RemoveItemSet(int itemSetId) { }
+
+	// RVA: 0x1911F28 Offset: 0x1911F28 VA: 0x1911F28
+	public List<string> Validate() { }
+
+	// RVA: 0x191224C Offset: 0x191224C VA: 0x191224C
+	public string GetFirebaseCodeName() { }
+}
+

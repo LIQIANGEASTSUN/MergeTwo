@@ -1,0 +1,12 @@
+// Namespace: Merger.ProducerExcitement.Compatibility
+public interface IProducerExcitementService // TypeDefIndex: 3573
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract bool TryDropExcitementItem(PositionComponent producerPosition, out BoardItemPosition excitementPosition, out ProducerExcitementSpawnData spawnData);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void ApplyVisuals(VisualComponent visualComponent, BoardItemPosition entityPosition);
+}
+

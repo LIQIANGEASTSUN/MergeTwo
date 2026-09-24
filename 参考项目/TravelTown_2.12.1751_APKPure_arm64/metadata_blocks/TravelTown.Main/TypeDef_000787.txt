@@ -1,0 +1,30 @@
+// Namespace: MergeEngine.ECS.Systems.State.Board.Event
+public class EventBoardResourceStateSystem : StateSystemBase<EventBoardResources> // TypeDefIndex: 787
+{
+	// Fields
+	[InjectSystem]
+	private ResourcesSystem _resourcesSystem; // 0x48
+	[InjectSystem]
+	private PlayerEventLevelSystem _playerEventLevelSystem; // 0x50
+
+	// Methods
+
+	// RVA: 0x64EB4D0 Offset: 0x64E74D0 VA: 0x64EB4D0 Slot: 13
+	protected override void LoadState(EventBoardResources newState) { }
+
+	// RVA: 0x64EB608 Offset: 0x64E7608 VA: 0x64EB608
+	private void UpdateSpecificResource(Resource resource) { }
+
+	// RVA: 0x64EB6F8 Offset: 0x64E76F8 VA: 0x64EB6F8
+	private void UpdateEventLevel(Resource resource) { }
+
+	// RVA: 0x64EB71C Offset: 0x64E771C VA: 0x64EB71C
+	private void UpdateEventXp(Resource resource) { }
+
+	// RVA: 0x64EB748 Offset: 0x64E7748 VA: 0x64EB748
+	private void UpdateEventEnergy(Resource resource) { }
+
+	// RVA: 0x64EB804 Offset: 0x64E7804 VA: 0x64EB804
+	public void .ctor() { }
+}
+

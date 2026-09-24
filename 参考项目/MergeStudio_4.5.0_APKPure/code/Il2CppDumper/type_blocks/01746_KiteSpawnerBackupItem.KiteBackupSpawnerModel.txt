@@ -1,0 +1,14 @@
+// Namespace: 
+[Serializable]
+public class KiteSpawnerBackupItem.KiteBackupSpawnerModel // TypeDefIndex: 1746
+{
+	// Fields
+	public int SetID; // 0x8
+	public int SpawnerLevel; // 0xC
+
+	// Methods
+
+	// RVA: 0x1910624 Offset: 0x1910624 VA: 0x1910624
+	public void .ctor() { }
+}
+

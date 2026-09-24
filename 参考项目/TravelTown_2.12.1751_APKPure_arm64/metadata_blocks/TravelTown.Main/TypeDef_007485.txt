@@ -1,0 +1,14 @@
+// Namespace: Merger.Bubbles.Model.Data
+[Serializable]
+public class SmarterBubblesData // TypeDefIndex: 7485
+{
+	// Fields
+	public List<BubbleData> BubblesCore; // 0x10
+	public List<BubbleData> BubblesEvent; // 0x18
+
+	// Methods
+
+	// RVA: 0x65829D4 Offset: 0x657E9D4 VA: 0x65829D4
+	public void .ctor() { }
+}
+

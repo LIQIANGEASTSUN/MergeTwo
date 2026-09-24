@@ -1,0 +1,19 @@
+// Namespace: MergeEngine.Configuration.Definitions.WeakReferences.References
+[Serializable]
+public class MergeGraphItemWeakReference : WeakReference<IMergeGraphItem, string>, IStringKeyWeakReference // TypeDefIndex: 1353
+{
+	// Properties
+	public override bool IsKeyEmpty { get; }
+
+	// Methods
+
+	// RVA: 0x6004920 Offset: 0x6000920 VA: 0x6004920
+	public void .ctor(string uniqueId) { }
+
+	// RVA: 0x6004978 Offset: 0x6000978 VA: 0x6004978
+	public void .ctor() { }
+
+	// RVA: 0x60049C0 Offset: 0x60009C0 VA: 0x60049C0 Slot: 4
+	public override bool get_IsKeyEmpty() { }
+}
+

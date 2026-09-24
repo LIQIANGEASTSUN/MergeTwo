@@ -1,0 +1,23 @@
+// Namespace: MergeEngine.Configuration.Definitions.WeakReferences.References
+public class DynamicMergeItemWeakReference : MergeItemWeakReference // TypeDefIndex: 1350
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly DynamicMergeItemConfig <DynamicConfig>k__BackingField; // 0x20
+
+	// Properties
+	public DynamicMergeItemConfig DynamicConfig { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x60046E4 Offset: 0x60006E4 VA: 0x60046E4
+	public DynamicMergeItemConfig get_DynamicConfig() { }
+
+	// RVA: 0x60046EC Offset: 0x60006EC VA: 0x60046EC
+	public void .ctor(string uniqueId, DynamicMergeItemConfig dynamicMergeItemData) { }
+
+	// RVA: 0x6004770 Offset: 0x6000770 VA: 0x6004770 Slot: 19
+	public override bool Equals(MergeItemWeakReference other) { }
+}
+

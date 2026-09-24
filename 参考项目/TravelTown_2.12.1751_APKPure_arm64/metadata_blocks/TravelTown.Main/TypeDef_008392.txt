@@ -1,0 +1,126 @@
+// Namespace: Merger.Game.ViewModel.Board
+public class BoardQueueViewModel : GameBaseViewModel // TypeDefIndex: 8392
+{
+	// Fields
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0xD0
+	[Inject]
+	private IUserProfileService _userProfileService; // 0xD8
+	[Inject]
+	private ISystemManager _systemManager; // 0xE0
+	[Inject]
+	private IBoosterModel _boosterModel; // 0xE8
+	[Inject]
+	private CardsConfigurationModel _cardsConfigurationModel; // 0xF0
+	[Inject]
+	private IDisplayableBoardQueueModel _displayableBoardQueueModel; // 0xF8
+	private HashSet<IRewardType> _flyingRewardTypes; // 0x100
+	private BoardQueueComponent _boardQueueComponent; // 0x108
+	private BoardComponent _boardComponent; // 0x110
+	private PlayerProgressionComponent _playerProgressionComponent; // 0x118
+	private TutorialProgressComponent _tutorialProgressComponent; // 0x120
+	private LiveOpsEventSystem _liveOpsEventSystem; // 0x128
+
+	// Properties
+	public BindableProperty<int> EffectiveQueueCount { get; }
+	public BindableProperty<AssetReferenceT<Sprite>> EffectiveHeadSprite { get; }
+	private BoardQueueComponent BoardQueueComponent { get; }
+	private BoardComponent BoardComponent { get; }
+	private PlayerProgressionComponent PlayerProgressionComponent { get; }
+	private TutorialProgressComponent TutorialProgressComponent { get; }
+	private LiveOpsEventSystem LiveOpsEventSystem { get; }
+	public IGameSessionModel GameSessionModel { get; }
+	public bool CanDequeueInCurrentBoardEvent { get; }
+	public AssetReferenceT<Sprite> FirstQueuedItemSprite { get; }
+	public double ItemDuration { get; }
+	public bool IsBoardFull { get; }
+	public int NumItemsInQueue { get; }
+	public int PlayerLevel { get; }
+	public bool ShowingTutorial { get; }
+	public BindableProperty<bool> IsLoading { get; }
+	public BindableProperty<GameState> PrimaryGameState { get; }
+	public BindableProperty<GameState> GameState { get; }
+	protected override RewardAnimationTarget RewardAnimationTarget { get; }
+	public bool IsBoardVisible { get; }
+
+	// Methods
+
+	// RVA: 0x664ADA4 Offset: 0x6646DA4 VA: 0x664ADA4
+	public BindableProperty<int> get_EffectiveQueueCount() { }
+
+	// RVA: 0x664AE44 Offset: 0x6646E44 VA: 0x664AE44
+	public BindableProperty<AssetReferenceT<Sprite>> get_EffectiveHeadSprite() { }
+
+	// RVA: 0x664AEE8 Offset: 0x6646EE8 VA: 0x664AEE8
+	private BoardQueueComponent get_BoardQueueComponent() { }
+
+	// RVA: 0x664AFC8 Offset: 0x6646FC8 VA: 0x664AFC8
+	private BoardComponent get_BoardComponent() { }
+
+	// RVA: 0x664B0A8 Offset: 0x66470A8 VA: 0x664B0A8
+	private PlayerProgressionComponent get_PlayerProgressionComponent() { }
+
+	// RVA: 0x664B188 Offset: 0x6647188 VA: 0x664B188
+	private TutorialProgressComponent get_TutorialProgressComponent() { }
+
+	// RVA: 0x664B268 Offset: 0x6647268 VA: 0x664B268
+	private LiveOpsEventSystem get_LiveOpsEventSystem() { }
+
+	// RVA: 0x664B348 Offset: 0x6647348 VA: 0x664B348
+	public IGameSessionModel get_GameSessionModel() { }
+
+	// RVA: 0x664B350 Offset: 0x6647350 VA: 0x664B350
+	public bool get_CanDequeueInCurrentBoardEvent() { }
+
+	// RVA: 0x664B454 Offset: 0x6647454 VA: 0x664B454
+	public AssetReferenceT<Sprite> get_FirstQueuedItemSprite() { }
+
+	// RVA: 0x664B51C Offset: 0x664751C VA: 0x664B51C
+	public double get_ItemDuration() { }
+
+	// RVA: 0x664B664 Offset: 0x6647664 VA: 0x664B664
+	public bool get_IsBoardFull() { }
+
+	// RVA: 0x664B680 Offset: 0x6647680 VA: 0x664B680
+	public int get_NumItemsInQueue() { }
+
+	// RVA: 0x664B69C Offset: 0x664769C VA: 0x664B69C
+	public int get_PlayerLevel() { }
+
+	// RVA: 0x664B6F0 Offset: 0x66476F0 VA: 0x664B6F0
+	public bool get_ShowingTutorial() { }
+
+	// RVA: 0x664B714 Offset: 0x6647714 VA: 0x664B714
+	public BindableProperty<bool> get_IsLoading() { }
+
+	// RVA: 0x664B72C Offset: 0x664772C VA: 0x664B72C
+	public BindableProperty<GameState> get_PrimaryGameState() { }
+
+	// RVA: 0x664B7D0 Offset: 0x66477D0 VA: 0x664B7D0
+	public BindableProperty<GameState> get_GameState() { }
+
+	// RVA: 0x664B874 Offset: 0x6647874 VA: 0x664B874 Slot: 67
+	protected override RewardAnimationTarget get_RewardAnimationTarget() { }
+
+	// RVA: 0x664B87C Offset: 0x664787C VA: 0x664B87C
+	public bool get_IsBoardVisible() { }
+
+	// RVA: 0x664B93C Offset: 0x664793C VA: 0x664B93C
+	public void SendUserActionDuringOrderCompleteAnalytic(UserActionTypeDuringOrderComplete actionType, string mergeItemId) { }
+
+	// RVA: 0x664B9D4 Offset: 0x66479D4 VA: 0x664B9D4 Slot: 69
+	public override void RegisterRewardTargets(RectTransform targetRectTransform) { }
+
+	// RVA: 0x664BDEC Offset: 0x6647DEC VA: 0x664BDEC
+	public bool ShouldSlide(CurrentBoardType boardType, ItemQueuedSignal signal, Nullable<RewardDestinationType> destinationType, bool activeInHierarchy) { }
+
+	// RVA: 0x664BF08 Offset: 0x6647F08 VA: 0x664BF08
+	private bool ShouldSlideOnEventBoard(ItemQueuedSignal signal, Nullable<RewardDestinationType> destinationType, bool activeInHierarchy) { }
+
+	// RVA: 0x664BE28 Offset: 0x6647E28 VA: 0x664BE28
+	private bool ShouldSlideOnCoreBoard(ItemQueuedSignal signal, Nullable<RewardDestinationType> destinationType, bool activeInHierarchy) { }
+
+	// RVA: 0x664BFE8 Offset: 0x6647FE8 VA: 0x664BFE8
+	public void .ctor() { }
+}
+

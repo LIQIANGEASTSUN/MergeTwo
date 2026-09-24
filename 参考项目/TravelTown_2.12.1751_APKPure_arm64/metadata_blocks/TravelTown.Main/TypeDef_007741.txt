@@ -1,0 +1,83 @@
+// Namespace: Merger.Boosters.Systems
+public class BoosterSystem : SystemBase // TypeDefIndex: 7741
+{
+	// Fields
+	[Inject]
+	private IEntityFactory _entityFactory; // 0x40
+	[Inject]
+	private IEntityManager _entityManager; // 0x48
+	[Inject]
+	private IBoosterModel _boosterModel; // 0x50
+	[Inject]
+	private IServerTimeService _serverTimeService; // 0x58
+	[Inject]
+	private ILiveOpsEventModel _liveOpsEventModel; // 0x60
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0x68
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x70
+	[Inject]
+	private INotificationDataFactory _notificationDataFactory; // 0x78
+	[Inject]
+	private IOperationTrackingService _operationTrackingService; // 0x80
+	[Inject]
+	private IBoosterService _boosterService; // 0x88
+	[Inject]
+	private IBoosterActivator _boosterActivator; // 0x90
+	private BoardSystem _boardSystem; // 0x98
+	private HashSet<string> _activationInProgressBoosters; // 0xA0
+
+	// Properties
+	private BoardSystem BoardSystem { get; }
+
+	// Methods
+
+	// RVA: 0x65BCB58 Offset: 0x65B8B58 VA: 0x65BCB58
+	private BoardSystem get_BoardSystem() { }
+
+	// RVA: 0x65BCBC8 Offset: 0x65B8BC8 VA: 0x65BCBC8
+	public void ApplyActiveBooster(RemoteBoosterData remoteActiveBooster, bool wasSuspended = False) { }
+
+	// RVA: 0x65BD484 Offset: 0x65B9484 VA: 0x65BD484
+	public void TryActivateBoosterEntity(IBoosterItem booster, string uuId, string reason, ResourceSource source = 0) { }
+
+	// RVA: 0x65BD778 Offset: 0x65B9778 VA: 0x65BD778
+	public void DestroyMergeItemsOfExpiredBoosters() { }
+
+	// RVA: 0x65BCE54 Offset: 0x65B8E54 VA: 0x65BCE54
+	private Entity GetOrCreateBoosterItemEntity(IBoosterItem booster, string uuId, string reason, ResourceSource source, out bool alreadyExisted) { }
+
+	// RVA: 0x65BDE8C Offset: 0x65B9E8C VA: 0x65BDE8C
+	private void AddAnalyticsData(IBoosterItem booster, string reason, ResourceSource source, Entity entity) { }
+
+	// RVA: 0x65BD14C Offset: 0x65B914C VA: 0x65BD14C
+	private void BoosterActivatedSendAnalytic(Entity entity) { }
+
+	// RVA: 0x65BE11C Offset: 0x65BA11C VA: 0x65BE11C Slot: 11
+	protected override void EntityCreated(Entity entity) { }
+
+	// RVA: 0x65BE2D0 Offset: 0x65BA2D0 VA: 0x65BE2D0 Slot: 12
+	protected override void EntityRemoved(Entity entity) { }
+
+	// RVA: 0x65BE3D0 Offset: 0x65BA3D0 VA: 0x65BE3D0
+	private void DeactivateBooster(BoosterIdComponent boosterId) { }
+
+	// RVA: 0x65BE798 Offset: 0x65BA798 VA: 0x65BE798
+	private void ForceDeactivateBooster(BoosterIdComponent boosterId) { }
+
+	// RVA: 0x65BEA1C Offset: 0x65BAA1C VA: 0x65BEA1C
+	private void TryDeleteBoosterMergeItem(BoosterIdComponent boosterId) { }
+
+	// RVA: 0x65BDBAC Offset: 0x65B9BAC VA: 0x65BDBAC
+	private void TryDeleteBoosterMergeItem(string boosterUUId) { }
+
+	// RVA: 0x65BEC44 Offset: 0x65BAC44 VA: 0x65BEC44
+	private IdComponent GetLinkedMergeItemIdComponent(string uuid) { }
+
+	// RVA: 0x65BEA7C Offset: 0x65BAA7C VA: 0x65BEA7C
+	private void CheckBoosterDeactivatedRemote(BoosterIdComponent boosterId) { }
+
+	// RVA: 0x65BEE00 Offset: 0x65BAE00 VA: 0x65BEE00
+	public void .ctor() { }
+}
+

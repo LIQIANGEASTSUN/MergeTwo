@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardSystem.<>c__DisplayClass48_0 // TypeDefIndex: 913
+{
+	// Fields
+	public PositionComponent duplicatePositionItem; // 0x10
+
+	// Methods
+
+	// RVA: 0x6669A8C Offset: 0x6665A8C VA: 0x6669A8C
+	public void .ctor() { }
+
+	// RVA: 0x666BC04 Offset: 0x6667C04 VA: 0x666BC04
+	internal bool <MoveDuplicatePositionedItemsToItemQueue>b__0(PositionComponent first) { }
+}
+

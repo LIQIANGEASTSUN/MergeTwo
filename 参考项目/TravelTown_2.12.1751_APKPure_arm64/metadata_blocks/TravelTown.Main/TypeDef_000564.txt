@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergingConfigurationModel.<>c__DisplayClass55_0 // TypeDefIndex: 564
+{
+	// Fields
+	public List<string> producerSpawnableIds; // 0x10
+
+	// Methods
+
+	// RVA: 0x6140980 Offset: 0x613C980 VA: 0x6140980
+	public void .ctor() { }
+
+	// RVA: 0x6141AF0 Offset: 0x613DAF0 VA: 0x6141AF0
+	internal bool <IsProducedItemFromTooShortChain>b__0(IMergeItem item) { }
+}
+

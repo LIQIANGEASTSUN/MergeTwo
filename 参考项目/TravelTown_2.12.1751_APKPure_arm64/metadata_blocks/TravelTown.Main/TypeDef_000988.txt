@@ -1,0 +1,47 @@
+// Namespace: MergeEngine.ECS.Systems.Items.Producers
+public class SpawnerSystem : SpawningItemsSystem<SpawnerComponent> // TypeDefIndex: 988
+{
+	// Fields
+	[InjectSystem]
+	private InteractionSystem _interactionSystem; // 0x98
+	[InjectSystem]
+	private OperationTrackingSystem _operationTrackingSystem; // 0xA0
+	[InjectSystem]
+	private UndoSellAbuseSystem _undoSellAbuseSystem; // 0xA8
+	[Inject]
+	private IProducerExcitementService _producerExcitementService; // 0xB0
+
+	// Properties
+	public override SystemPriorities Priority { get; }
+	protected override ItemOrigin ItemOrigin { get; }
+
+	// Methods
+
+	// RVA: 0x679C31C Offset: 0x679831C VA: 0x679C31C Slot: 15
+	public override SystemPriorities get_Priority() { }
+
+	// RVA: 0x679C324 Offset: 0x6798324 VA: 0x679C324 Slot: 19
+	protected override ItemOrigin get_ItemOrigin() { }
+
+	// RVA: 0x679C32C Offset: 0x679832C VA: 0x679C32C Slot: 17
+	protected override IEnumerable<SpawnerComponent> OnWillProcessComponents(ReadOnlyCollection<SpawnerComponent> components) { }
+
+	// RVA: 0x679C384 Offset: 0x6798384 VA: 0x679C384 Slot: 18
+	protected override void ProcessComponent(SpawnerComponent spawner) { }
+
+	// RVA: 0x679C7E8 Offset: 0x67987E8 VA: 0x679C7E8
+	private void TryForceSpawn(SpawnerComponent spawner) { }
+
+	// RVA: 0x679C4FC Offset: 0x67984FC VA: 0x679C4FC
+	private void TrySpawn(SpawnerComponent spawner, InteractionComponent interaction) { }
+
+	// RVA: 0x679C938 Offset: 0x6798938 VA: 0x679C938
+	private void SpawnInternal(SpawnerComponent spawner, BoardItemPosition position, bool forceSpawn) { }
+
+	// RVA: 0x679CBD0 Offset: 0x6798BD0 VA: 0x679CBD0
+	private bool IsTileReady(BoardItemPosition position) { }
+
+	// RVA: 0x679CCBC Offset: 0x6798CBC VA: 0x679CCBC
+	public void .ctor() { }
+}
+

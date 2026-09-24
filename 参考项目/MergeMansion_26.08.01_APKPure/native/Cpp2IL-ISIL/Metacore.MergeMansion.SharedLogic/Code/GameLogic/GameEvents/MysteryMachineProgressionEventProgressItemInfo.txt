@@ -1,0 +1,121 @@
+Type: Code.GameLogic.GameEvents.MysteryMachineProgressionEventProgressItemInfo
+
+Method: Code.GameLogic.GameEvents.MysteryMachineProgressionEventProgressItemId get_ConfigKey()
+
+Disassembly:
+	0x03330EE0 LDR X23, [X23 + 0x310]
+	0x03330EE4 LDR X24, [X24 + 0xE8]
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_ConfigKey(Code.GameLogic.GameEvents.MysteryMachineProgressionEventProgressItemId value)
+
+Disassembly:
+	0x03330EE8 LDR X22, [X22 + 0x230]
+	0x03330EEC MOV X1, X31
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Int32 get_Amount()
+
+Disassembly:
+	0x03330EF0 BL 0x44CC46C
+	0x03330EF4 ADD X8, X31, 0x28
+
+ISIL:
+	001 Move W0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_Amount(System.Int32 value)
+
+Disassembly:
+	0x03330EF8 STR X0, [X31 + 0x28]
+	0x03330EFC STP X31, X8, [X31]
+
+ISIL:
+	001 Move [X0+24], W1
+	002 Return 
+
+Method: System.Int32 get_ExperimentPriority()
+
+Disassembly:
+	0x03330F00 ADD X8, X31, 0x18
+	0x03330F04 STR X8, [X31 + 0x10]
+
+ISIL:
+	001 Move W0, [X0+28]
+	002 Return X0
+
+Method: System.Void set_ExperimentPriority(System.Int32 value)
+
+Disassembly:
+	0x03330F08 LDR X21, [X31 + 0x28]
+	0x03330F0C CBZ X21, 0x33310B0
+
+ISIL:
+	001 Move [X0+28], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03330F10 LDR X8, [X21]
+	0x03330F14 LDR X1, [X23]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(Code.GameLogic.GameEvents.MysteryMachineProgressionEventProgressItemId configKey, System.Int32 amount, System.Int32 experimentPriority)
+
+Disassembly:
+	0x03330F18 LDRH W9, [X8 + 0x12E]
+	0x03330F1C CBZ X9, 0x3330F40
+	0x03330F20 LDR X10, [X8 + 0xB0]
+	0x03330F24 ADD X10, X10, 0x8
+	0x03330F28 LDUR X11, [X10 - 0x8]
+	0x03330F2C CMP X11, X1
+	0x03330F30 B.EQ 0x3330F50
+	0x03330F34 SUBS X9, X9, 0x1
+	0x03330F38 ADD X10, X10, 0x10
+	0x03330F3C B.NE 0x3330F28
+	0x03330F40 MOV X0, X21
+	0x03330F44 MOV W2, W31
+	0x03330F48 BL 0x23D527C
+	0x03330F4C B 0x3330F5C
+	0x03330F50 LDRSW X9, [X10]
+	0x03330F54 ADD X8, X8, X9, 0x4, LSL
+	0x03330F58 ADD X0, X8, 0x138
+	0x03330F5C LDP X8, X1, [X0]
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31+16], X22
+	003 Move [X31+24], X21
+	004 Move [X31+32], X20
+	005 Move [X31+40], X19
+	006 Move X21, X1
+	007 Move X1, X31
+	008 Move W19, W3
+	009 Move W20, W2
+	010 Move X22, X0
+	011 Call Object..ctor, X0
+	012 Move [X22+16], X21
+	013 Move X0, X22
+	014 Move X1, X21
+	015 Call 0x239F888
+	016 Move [X22+8], W20
+	017 Move [X22+12], W19
+	018 Move X20, [X31+32]
+	019 Move X19, [X31+40]
+	020 Move X22, [X31+16]
+	021 Move X21, [X31+24]
+	022 Move X30, [X31+48]
+	023 Return 
+

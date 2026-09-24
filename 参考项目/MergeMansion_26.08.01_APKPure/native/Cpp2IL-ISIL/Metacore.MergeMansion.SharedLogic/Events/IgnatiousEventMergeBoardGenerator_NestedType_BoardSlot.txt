@@ -1,0 +1,56 @@
+Type: Events.IgnatiousEventMergeBoardGenerator+BoardSlot
+
+Method: System.Void .ctor(System.Int32 itemId, GameLogic.Merge.ItemVisibility itemVisibility, System.Int32 x, System.Int32 y, System.Single probability)
+
+Disassembly:
+	0x0368DF70 BL 0x44B4C2C
+	0x0368DF74 MOV X1, X0
+	0x0368DF78 ADD X0, X31, 0x1000
+	0x0368DF7C MOV W2, W31
+	0x0368DF80 ADD X0, X0, 0x8B8
+	0x0368DF84 MOV X3, X31
+	0x0368DF88 MOV X4, X31
+	0x0368DF8C STR X31, [X31 + 0x18C8]
+	0x0368DF90 STR X31, [X31 + 0x18C0]
+	0x0368DF94 STR X31, [X31 + 0x18B8]
+	0x0368DF98 BL 0x414ACA4
+	0x0368DF9C LDR V0, [X27 + 0x180]
+	0x0368DFA0 LDR X8, [X31 + 0x18C8]
+	0x0368DFA4 ADD X2, X31, 0x1000
+	0x0368DFA8 ADD X2, X2, 0x8A0
+	0x0368DFAC MOV X0, X19
+	0x0368DFB0 MOV X1, X20
+	0x0368DFB4 MOV X3, X31
+	0x0368DFB8 STR V0, [X31 + 0x18A]
+	0x0368DFBC STR X8, [X31 + 0x18B0]
+
+ISIL:
+	001 Move [X31-64], D8
+	002 Move [X31+16], X30
+	003 Move [X31+24], X23
+	004 Move [X31+32], X22
+	005 Move [X31+40], X21
+	006 Move [X31+48], X20
+	007 Move [X31+56], X19
+	008 Move W22, W1
+	009 Move X1, X31
+	010 Move S8, S0
+	011 Move W19, W4
+	012 Move W20, W3
+	013 Move W21, W2
+	014 Move X23, X0
+	015 Call Object..ctor, X0
+	016 Move [X23+16], W22
+	017 Move [X23+20], W21
+	018 Move X22, [X31+32]
+	019 Move X21, [X31+40]
+	020 Move [X23+24], W20
+	021 Move [X23+28], W19
+	022 Move X20, [X31+48]
+	023 Move X19, [X31+56]
+	024 Move [X23+32], S8
+	025 Move X30, [X31+16]
+	026 Move X23, [X31+24]
+	027 Move V8, [X31+64]
+	028 Return 
+

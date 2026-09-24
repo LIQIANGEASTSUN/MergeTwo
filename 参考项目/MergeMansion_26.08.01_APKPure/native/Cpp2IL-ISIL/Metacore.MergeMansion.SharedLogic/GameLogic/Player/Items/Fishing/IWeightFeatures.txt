@@ -1,0 +1,86 @@
+Type: GameLogic.Player.Items.Fishing.IWeightFeatures
+
+Method: System.Boolean get_HasWeight()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.Math.F32 get_MinWeight()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.Math.F32 get_MaxWeight()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_FramesItem()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.Math.F32 get_WorldRecordWeightThreshold()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Story.StoryDefinitionId get_WorldRecordWeightDialogue()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IReadOnlyList`1<GameLogic.Player.Rewards.PlayerReward> get_WorldRecordRewards()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IReadOnlyDictionary`2<GameLogic.Player.Items.Fishing.WeightCategory, GameLogic.Player.Items.Fishing.SplashType> get_SplashTypesByWeightCategory()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Fishing.FishRarity get_FishRarity()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IReadOnlyList`1<GameLogic.Player.Items.Fishing.IWeightStarRewardData> get_StarRewards()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.GameEvents.LuckyType get_LuckyType()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Fishing.SubjectType get_SubjectType()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

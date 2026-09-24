@@ -1,0 +1,48 @@
+// Namespace: MergePuzzle
+public class SpawnerConfigAdaptor : AdaptorBase // TypeDefIndex: 1610
+{
+	// Fields
+	private readonly SpawnerConfig _activeConfigBase; // 0xC
+
+	// Methods
+
+	// RVA: 0x18C02B8 Offset: 0x18C02B8 VA: 0x18C02B8
+	public void .ctor(string setIDLevel, SpawnerConfig activeConfigBase, BoardData boardData) { }
+
+	// RVA: 0x18C0888 Offset: 0x18C0888 VA: 0x18C0888
+	public void .ctor(BoardItemSpawnerData boardItemSpawnerData) { }
+
+	// RVA: 0x18C08EC Offset: 0x18C08EC VA: 0x18C08EC
+	public bool GetUsesEnergy() { }
+
+	// RVA: 0x18C0908 Offset: 0x18C0908 VA: 0x18C0908
+	public int GetSmallCapacity() { }
+
+	// RVA: 0x18C0924 Offset: 0x18C0924 VA: 0x18C0924
+	public int GetBigCapacity() { }
+
+	// RVA: 0x18C0940 Offset: 0x18C0940 VA: 0x18C0940
+	public int GetChargeTime() { }
+
+	// RVA: 0x18C095C Offset: 0x18C095C VA: 0x18C095C
+	public int GetGemSkipAmount() { }
+
+	// RVA: 0x18C0978 Offset: 0x18C0978 VA: 0x18C0978
+	public int GetGemDecreaseCount() { }
+
+	// RVA: 0x18C0994 Offset: 0x18C0994 VA: 0x18C0994
+	public int GetRewardedCapacity() { }
+
+	// RVA: 0x18C09B0 Offset: 0x18C09B0 VA: 0x18C09B0
+	public List<SpawnedItem> GetSpawnedItems() { }
+
+	// RVA: 0x18C09FC Offset: 0x18C09FC VA: 0x18C09FC
+	public List<SpawnedItem> GetTutorialItems() { }
+
+	// RVA: 0x18C0A18 Offset: 0x18C0A18 VA: 0x18C0A18
+	public SpawnerState GetSpawnerStartState() { }
+
+	// RVA: 0x18C0A34 Offset: 0x18C0A34 VA: 0x18C0A34
+	public SpawnerState GetSpawnerSkippedState() { }
+}
+

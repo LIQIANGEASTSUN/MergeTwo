@@ -1,0 +1,67 @@
+// Namespace: ContextualizedECS.Systems
+[Extension]
+public static class SystemInfoExtensions // TypeDefIndex: 33690
+{
+	// Methods
+
+	[Extension]
+	// RVA: -1 Offset: -1
+	public static SystemInfo Register<T>(SystemsBuilder builder, T system) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DB6E70 Offset: 0x3DB2E70 VA: 0x3DB6E70
+	|-SystemInfoExtensions.Register<object>
+	|
+	|-RVA: 0x3DB6F48 Offset: 0x3DB2F48 VA: 0x3DB6F48
+	|-SystemInfoExtensions.Register<__Il2CppFullySharedGenericType>
+	*/
+
+	[Extension]
+	// RVA: -1 Offset: -1
+	public static SystemInfo After<T>(SystemInfo system) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DB6D68 Offset: 0x3DB2D68 VA: 0x3DB6D68
+	|-SystemInfoExtensions.After<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	private static int ResolveAfter<T>(IList<SystemInfo> systems) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DB70A4 Offset: 0x3DB30A4 VA: 0x3DB70A4
+	|-SystemInfoExtensions.ResolveAfter<__Il2CppFullySharedGenericType>
+	*/
+
+	[Extension]
+	// RVA: -1 Offset: -1
+	public static SystemInfo Before<T>(SystemInfo system) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DB6DEC Offset: 0x3DB2DEC VA: 0x3DB6DEC
+	|-SystemInfoExtensions.Before<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	private static int ResolveBefore<T>(IList<SystemInfo> systems) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DB7248 Offset: 0x3DB3248 VA: 0x3DB7248
+	|-SystemInfoExtensions.ResolveBefore<__Il2CppFullySharedGenericType>
+	*/
+
+	[Extension]
+	// RVA: 0x5F151DC Offset: 0x5F111DC VA: 0x5F151DC
+	public static SystemInfo Last(SystemInfo system) { }
+
+	// RVA: 0x5F15270 Offset: 0x5F11270 VA: 0x5F15270
+	private static int ResolveLast(IList<SystemInfo> systems) { }
+
+	[Extension]
+	// RVA: 0x5F1530C Offset: 0x5F1130C VA: 0x5F1530C
+	public static SystemInfo First(SystemInfo system) { }
+
+	// RVA: 0x5F153A0 Offset: 0x5F113A0 VA: 0x5F153A0
+	private static int ResolveFirst(IList<SystemInfo> systems) { }
+}
+

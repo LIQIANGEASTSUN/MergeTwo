@@ -1,0 +1,30 @@
+{
+  "package_name": "io.randomco.travel",
+  "version_name": "2.12.1751",
+  "version_code": "87571",
+  "unity_version": "2022.3.62f2",
+  "abi": "arm64-v8a",
+  "input_xapk_sha256": "fbb89dfe7c7cf99e4646205e1588ecbc2ac722ba6f05f3013d553fe91e27ffc2",
+  "libil2cpp_sha256": "2267448a88011b3e705e243f6c706f47dce5b9fa1ce03fe195b071806996f606",
+  "global_metadata_sha256": "11b884d290a928aa9850fdc0a628c4456abf1aef5c5ff076e6e023162c5ba793",
+  "il2cpp_dump_cs_sha256": "6e1ee96081f51d137eca8677341bcbe1c9264a36a8634f1ca98521e2323a1468",
+  "source_layers": {
+    "generated_csharp": "AssetRipper 1.3.14 + Cpp2IL; placeholders, not original C# bodies",
+    "metadata_blocks": "Il2CppDumper dump.cs exact selected type blocks",
+    "native_arm64": "Capstone 4 decoding original libil2cpp.so bytes, boundary inferred from script.json",
+    "ghidra_pseudoc": "Ghidra 12.1.2 Java headless decompilation of selected native methods",
+    "generic_instantiations": "Il2CppDumper script.json ScriptMethod entries matched to selected generic types; machine code is from libil2cpp.so",
+    "ghidra_bounded_pseudoc": "Ghidra 12.1.2 Java headless decompilation with disassembly/function body restricted to the inferred next script.json address; this is not a proven source-level boundary."
+  },
+  "ghidra_image_base": "0x100000",
+  "pruning": {
+    "input_type_count": 3288,
+    "previous_retained_type_count": 1400,
+    "retained_type_count": 1355,
+    "rule": "gameplay systems, item/board components, merge/spawn/consume/lock/state/sync, board interaction, direct base/interface dependencies and nested types in retained complete scripts",
+    "unrelated_code_removed": true,
+    "noncode_resources_retained": false,
+    "machine_code_files_unchanged": true,
+    "generated_csharp_files_unchanged": true
+  }
+}

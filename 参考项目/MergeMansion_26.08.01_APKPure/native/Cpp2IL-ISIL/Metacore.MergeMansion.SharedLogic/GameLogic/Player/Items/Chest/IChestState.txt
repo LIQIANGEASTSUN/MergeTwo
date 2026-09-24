@@ -1,0 +1,197 @@
+Type: GameLogic.Player.Items.Chest.IChestState
+
+Method: System.UInt64 get_ActivationCount()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Chest.ChestContext get_ChestContext()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Config.Types.MetacoreTime get_OpenStartTime()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Config.Types.MetacoreTime get_EstimatedEndTime()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean HasOpeningStarted()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean IsReadyForOpen(GameLogic.Config.Types.MetacoreTime timestamp)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void StartChestOpenCountdown(GameLogic.Config.Types.MetacoreTime startTime, GameLogic.Config.Types.MetacoreDuration duration, Metaplay.Core.Math.F32 boostFactor)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void CalculateEstimatedOpenEndTime(GameLogic.Config.Types.MetacoreDuration duration, Metaplay.Core.Math.F32 boostFactor, GameLogic.Config.Types.MetacoreTime currentTimestamp)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void IncreaseRelativeTimeSpendOnOpen(GameLogic.Config.Types.MetacoreDuration add)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void AddAbsoluteTimeSpendOnOpen(GameLogic.Config.Types.MetacoreTime timestamp)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean IsReadyForLooting()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ForceCompleteCountdown()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean IsForceCompleted()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void OpenAndFillRewards(System.Collections.Generic.IEnumerable`1<GameLogic.Player.Items.IItemDefinition> rewards, GameLogic.Player.IPlayer player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 GetLootCount()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.IItemDefinition GetNextLoot(GameLogic.Player.IPlayer player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Player.Items.IItemDefinition> RemoveFromChest(System.Predicate`1<GameLogic.Player.Items.IItemDefinition> itemMatcher, GameLogic.Config.IMergeMansionGameConfig config)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.ValueTuple`2<Currencies, System.Int32> CalculateFastOpenCost(GameLogic.Config.Types.MetacoreTime currentTime, GameLogic.Config.Types.MetacoreDuration maxDuration)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void SkipGameTime(GameLogic.Config.Types.MetacoreDuration numMillisecondToSkip)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void IncreaseActivationCount()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void InitChestContext(GameLogic.Player.IPlayer player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Chest.IChestState CreateChestState()
+
+Disassembly:
+	0x0364181C B.CC 0x3641868
+	0x03641820 LDR X8, [X8 + 0xC8]
+	0x03641824 ADD X8, X8, X9, 0x3, LSL
+	0x03641828 LDUR X8, [X8 - 0x8]
+	0x0364182C CMP X8, X1
+	0x03641830 B.NE 0x3641868
+	0x03641834 MOV X0, X20
+	0x03641838 MOV X1, X19
+	0x0364183C LDP X20, X19, [X31 + 0x20]
+	0x03641840 LDP X22, X21, [X31 + 0x10]
+	0x03641844 LDR X30, [X31], #0x30
+	0x03641848 B 0x3641718
+	0x0364184C MOV W0, W31
+	0x03641850 B 0x3641858
+	0x03641854 MOVZ W0, 0x1
+	0x03641858 LDP X20, X19, [X31 + 0x20]
+	0x0364185C LDP X22, X21, [X31 + 0x10]
+	0x03641860 LDR X30, [X31], #0x30
+	0x03641864 RET
+	0x03641868 MOV X0, X19
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move W8, [0x26ECDB4]
+	005 Move X20, [0x20F3F90]
+	006 Move TEMP, X8
+	007 And TEMP, TEMP, 1
+	008 Compare TEMP, 1
+	009 JumpIfEqual {14}
+	010 Move X0, [0x20F3F90]
+	011 Call 0x239F8E4
+	012 Move W8, 1
+	013 Move [X19+3508], W8
+	014 Move X0, [X20]
+	015 Call 0x239FB80
+	016 Move X19, X0
+	017 Call ChestState..ctor, X0
+	018 Move X0, X19
+	019 Move X20, [X31+16]
+	020 Move X19, [X31+24]
+	021 Move X30, [X31+32]
+	022 Return X0
+

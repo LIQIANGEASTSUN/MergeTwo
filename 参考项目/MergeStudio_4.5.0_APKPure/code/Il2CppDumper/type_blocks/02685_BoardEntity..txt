@@ -1,0 +1,29 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardEntity.<>c // TypeDefIndex: 2685
+{
+	// Fields
+	public static readonly BoardEntity.<>c <>9; // 0x0
+	public static Predicate<BoardTaskItem> <>9__42_0; // 0x4
+	public static Predicate<BoardTaskItem> <>9__42_1; // 0x8
+	public static Func<BoardPositionEntity, bool> <>9__85_0; // 0xC
+
+	// Methods
+
+	// RVA: 0x1A5C280 Offset: 0x1A5C280 VA: 0x1A5C280
+	private static void .cctor() { }
+
+	// RVA: 0x1A5C2F4 Offset: 0x1A5C2F4 VA: 0x1A5C2F4
+	public void .ctor() { }
+
+	// RVA: 0x1A5C2FC Offset: 0x1A5C2FC VA: 0x1A5C2FC
+	internal bool <ClearNonSpecialActiveTasksDangerousOperation>b__42_0(BoardTaskItem item) { }
+
+	// RVA: 0x1A5C334 Offset: 0x1A5C334 VA: 0x1A5C334
+	internal bool <ClearNonSpecialActiveTasksDangerousOperation>b__42_1(BoardTaskItem item) { }
+
+	// RVA: 0x1A5C36C Offset: 0x1A5C36C VA: 0x1A5C36C
+	internal bool <GetFillRateString>b__85_0(BoardPositionEntity position) { }
+}
+

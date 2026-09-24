@@ -1,0 +1,142 @@
+Type: Code.GameLogic.GameEvents.MysteryMachineProgressionEventProgressItemChainSource
+
+Method: System.Int32 get_ExperimentPriority()
+
+Disassembly:
+	0x03330DCC LDR X8, [X8 + 0xD8]
+	0x03330DD0 MOV W1, W22
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_ExperimentPriority(System.Int32 value)
+
+Disassembly:
+	0x03330DD4 B 0x3330DF4
+	0x03330DD8 MOV X0, X31
+
+ISIL:
+	001 Move [X0+16], W1
+	002 Return 
+
+Method: Code.GameLogic.GameEvents.MysteryMachineProgressionEventProgressItemChainId get_ConfigKey()
+
+Disassembly:
+	0x03330DDC B 0x3330E00
+	0x03330DE0 ADRP X8, 0x23E9000
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_ConfigKey(Code.GameLogic.GameEvents.MysteryMachineProgressionEventProgressItemChainId value)
+
+Disassembly:
+	0x03330DE4 ADD X2, X31, 0x8
+	0x03330DE8 MOV X0, X20
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Collections.Generic.List`1<Metaplay.Core.MetaRef`1<Code.GameLogic.GameEvents.MysteryMachineProgressionEventProgressItemInfo>> get_Items()
+
+Disassembly:
+	0x03330DEC LDR X8, [X8 + 0xD8]
+	0x03330DF0 MOV W1, W21
+
+ISIL:
+	001 Move X0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_Items(System.Collections.Generic.List`1<Metaplay.Core.MetaRef`1<Code.GameLogic.GameEvents.MysteryMachineProgressionEventProgressItemInfo>> value)
+
+Disassembly:
+	0x03330DF4 LDR X3, [X8]
+	0x03330DF8 BL 0x25DFFD0
+
+ISIL:
+	001 Move [X0+32], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: Code.GameLogic.GameEvents.MysteryMachineProgressionEventProgressItemChainInfo ToConfigData(Metaplay.Core.Config.GameConfigBuildLog buildLog)
+
+Disassembly:
+	0x03330DFC LDR X0, [X31 + 0x8]
+	0x03330E00 LDP X20, X19, [X31 + 0x30]
+	0x03330E04 LDP X22, X21, [X31 + 0x20]
+	0x03330E08 LDP X30, X23, [X31 + 0x10]
+	0x03330E0C ADD X31, X31, 0x40
+	0x03330E10 RET
+	0x03330E14 SUB X31, X31, 0x60
+	0x03330E18 STR X30, [X31 + 0x20]
+	0x03330E1C STP X24, X23, [X31 + 0x30]
+	0x03330E20 STP X22, X21, [X31 + 0x40]
+	0x03330E24 STP X20, X19, [X31 + 0x50]
+	0x03330E28 ADRP X22, 0x29F8000
+	0x03330E2C ADRP X21, 0x23E9000
+	0x03330E30 MOV W19, W1
+	0x03330E34 LDRB W8, [X22 + 0x5FC]
+	0x03330E38 LDR X21, [X21 + 0xE0]
+	0x03330E3C MOV X20, X0
+	0x03330E40 TBNZ X8, 0x0, 0x3330E7C
+	0x03330E44 ADRP X0, 0x239D000
+	0x03330E48 LDR X0, [X0 + 0x230]
+	0x03330E4C BL 0x239B8E4
+	0x03330E50 ADRP X0, 0x239D000
+	0x03330E54 LDR X0, [X0 + 0x310]
+	0x03330E58 BL 0x239B8E4
+	0x03330E5C ADRP X0, 0x23E9000
+	0x03330E60 LDR X0, [X0 + 0xE0]
+	0x03330E64 BL 0x239B8E4
+	0x03330E68 ADRP X0, 0x23E9000
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31+16], X22
+	003 Move [X31+24], X21
+	004 Move [X31+32], X20
+	005 Move [X31+40], X19
+	006 Move X19, X0
+	007 Move W8, [0x29FC5C3]
+	008 Move X22, [0x23ECDF0]
+	009 Move TEMP, X8
+	010 And TEMP, TEMP, 1
+	011 Compare TEMP, 1
+	012 JumpIfEqual {17}
+	013 Move X0, [0x23ECDF0]
+	014 Call 0x239F8E4
+	015 Move W8, 1
+	016 Move [X20+1475], W8
+	017 Move X20, [X19+24]
+	018 Move X21, [X19+32]
+	019 Move X0, [X22]
+	020 Move W19, [X19+16]
+	021 Call 0x239FB80
+	022 Move X1, X20
+	023 Move X2, X21
+	024 Move W3, W19
+	025 Move X22, X0
+	026 Call MysteryMachineProgressionEventProgressItemChainInfo..ctor, X0, X1, X2, X3
+	027 Move X0, X22
+	028 Move X20, [X31+32]
+	029 Move X19, [X31+40]
+	030 Move X22, [X31+16]
+	031 Move X21, [X31+24]
+	032 Move X30, [X31+48]
+	033 Return X0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03330E6C LDR X0, [X0 + 0xE8]
+	0x03330E70 BL 0x239B8E4
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+

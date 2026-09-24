@@ -1,0 +1,90 @@
+// Namespace: MergeEngine.Util
+public class WeightedItem<T> // TypeDefIndex: 118
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly T <Item>k__BackingField; // 0x0
+	[CompilerGenerated]
+	private readonly int <Weight>k__BackingField; // 0x0
+	[CompilerGenerated]
+	private readonly int <SumWeights>k__BackingField; // 0x0
+
+	// Properties
+	public T Item { get; }
+	public int Weight { get; }
+	public int SumWeights { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	public T get_Item() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4945424 Offset: 0x4941424 VA: 0x4945424
+	|-WeightedItem<int>.get_Item
+	|
+	|-RVA: 0x4945478 Offset: 0x4941478 VA: 0x4945478
+	|-WeightedItem<Int32Enum>.get_Item
+	|
+	|-RVA: 0x49454CC Offset: 0x49414CC VA: 0x49454CC
+	|-WeightedItem<object>.get_Item
+	|
+	|-RVA: 0x494552C Offset: 0x494152C VA: 0x494552C
+	|-WeightedItem<__Il2CppFullySharedGenericType>.get_Item
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	public int get_Weight() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x494542C Offset: 0x494142C VA: 0x494542C
+	|-WeightedItem<int>.get_Weight
+	|
+	|-RVA: 0x4945480 Offset: 0x4941480 VA: 0x4945480
+	|-WeightedItem<Int32Enum>.get_Weight
+	|
+	|-RVA: 0x49454D4 Offset: 0x49414D4 VA: 0x49454D4
+	|-WeightedItem<object>.get_Weight
+	|
+	|-RVA: 0x49455C4 Offset: 0x49415C4 VA: 0x49455C4
+	|-WeightedItem<__Il2CppFullySharedGenericType>.get_Weight
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	public int get_SumWeights() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4945434 Offset: 0x4941434 VA: 0x4945434
+	|-WeightedItem<int>.get_SumWeights
+	|
+	|-RVA: 0x4945488 Offset: 0x4941488 VA: 0x4945488
+	|-WeightedItem<Int32Enum>.get_SumWeights
+	|
+	|-RVA: 0x49454DC Offset: 0x49414DC VA: 0x49454DC
+	|-WeightedItem<object>.get_SumWeights
+	|
+	|-RVA: 0x49455EC Offset: 0x49415EC VA: 0x49455EC
+	|-WeightedItem<__Il2CppFullySharedGenericType>.get_SumWeights
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor(T item, int weight, int sumWeights) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x494543C Offset: 0x494143C VA: 0x494543C
+	|-WeightedItem<int>..ctor
+	|
+	|-RVA: 0x4945490 Offset: 0x4941490 VA: 0x4945490
+	|-WeightedItem<Int32Enum>..ctor
+	|
+	|-RVA: 0x49454E4 Offset: 0x49414E4 VA: 0x49454E4
+	|-WeightedItem<object>..ctor
+	|
+	|-RVA: 0x4945614 Offset: 0x4941614 VA: 0x4945614
+	|-WeightedItem<__Il2CppFullySharedGenericType>..ctor
+	*/
+}
+

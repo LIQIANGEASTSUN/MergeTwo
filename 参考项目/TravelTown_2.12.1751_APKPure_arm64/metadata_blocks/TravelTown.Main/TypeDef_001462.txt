@@ -1,0 +1,10 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class SplitCapability : CapabilityBase // TypeDefIndex: 1462
+{
+	// Methods
+
+	// RVA: 0x60118CC Offset: 0x600D8CC VA: 0x60118CC
+	public void .ctor() { }
+}
+

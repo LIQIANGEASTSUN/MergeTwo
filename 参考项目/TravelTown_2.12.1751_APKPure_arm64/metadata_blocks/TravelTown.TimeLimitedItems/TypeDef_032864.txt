@@ -1,0 +1,87 @@
+// Namespace: Merger.TimeLimitedItems.Controllers
+public class TimeLimitedItemsEventController : EventControllerBase<TimeLimitedItemsEventData> // TypeDefIndex: 32864
+{
+	// Fields
+	[Inject]
+	private IEventAssetsHandler _eventAssetsHandler; // 0x118
+	[Inject]
+	private IEventDataHolder<TimeLimitedItemsEventData> _eventDataHolder; // 0x120
+	[Inject]
+	private IEventTriggeredPopupHandler _eventTriggeredPopupHandler; // 0x128
+	[Inject]
+	private ILiveOpsEventStateTrackingModel _liveOpsEventStateTrackingModel; // 0x130
+	[Inject]
+	private ITimeLimitedItemsControllerCleanupHandler _cleanupHandler; // 0x138
+	private bool _isEndEventInProgress; // 0x140
+
+	// Properties
+	private bool IsEventDataValid { get; }
+	private bool IsEventTimeExpired { get; }
+	private bool IsInCompensationPeriod { get; }
+	private bool IsInCleanupPhase { get; }
+
+	// Methods
+
+	// RVA: 0x6B4E3D8 Offset: 0x6B4A3D8 VA: 0x6B4E3D8
+	private bool get_IsEventDataValid() { }
+
+	// RVA: 0x6B4E424 Offset: 0x6B4A424 VA: 0x6B4E424
+	private bool get_IsEventTimeExpired() { }
+
+	// RVA: 0x6B4E4B4 Offset: 0x6B4A4B4 VA: 0x6B4E4B4
+	private bool get_IsInCompensationPeriod() { }
+
+	// RVA: 0x6B4E504 Offset: 0x6B4A504 VA: 0x6B4E504
+	private bool get_IsInCleanupPhase() { }
+
+	// RVA: 0x6B4E554 Offset: 0x6B4A554 VA: 0x6B4E554 Slot: 33
+	protected override void OnInitialized() { }
+
+	// RVA: 0x6B4E83C Offset: 0x6B4A83C VA: 0x6B4E83C Slot: 53
+	protected override bool EventReadyForActivation() { }
+
+	// RVA: 0x6B4E91C Offset: 0x6B4A91C VA: 0x6B4E91C Slot: 31
+	protected override void StartEvent() { }
+
+	// RVA: 0x6B4EC68 Offset: 0x6B4AC68 VA: 0x6B4EC68 Slot: 36
+	protected override void OnAfterAssetsDownloaded() { }
+
+	// RVA: 0x6B4F028 Offset: 0x6B4B028 VA: 0x6B4F028 Slot: 52
+	protected override void Tick() { }
+
+	// RVA: 0x6B4F09C Offset: 0x6B4B09C VA: 0x6B4F09C Slot: 32
+	protected override void OnDataUpdated() { }
+
+	// RVA: 0x6B4F348 Offset: 0x6B4B348 VA: 0x6B4F348 Slot: 41
+	protected override void EndEvent() { }
+
+	// RVA: 0x6B4EDB8 Offset: 0x6B4ADB8 VA: 0x6B4EDB8
+	private void InitiateEndEventProcess() { }
+
+	// RVA: 0x6B4E744 Offset: 0x6B4A744 VA: 0x6B4E744
+	private void RegisterPopupTriggers() { }
+
+	// RVA: 0x6B4EBB8 Offset: 0x6B4ABB8 VA: 0x6B4EBB8
+	private void EnablePopupTriggers() { }
+
+	// RVA: 0x6B4F24C Offset: 0x6B4B24C VA: 0x6B4F24C
+	private void UpdatePopupTriggers() { }
+
+	// RVA: 0x6B4F598 Offset: 0x6B4B598 VA: 0x6B4F598
+	private void UnregisterPopupTriggers() { }
+
+	// RVA: 0x6B4F4F4 Offset: 0x6B4B4F4 VA: 0x6B4F4F4
+	private void DisposeEventInProgress() { }
+
+	// RVA: 0x6B4F63C Offset: 0x6B4B63C VA: 0x6B4F63C
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6B4F684 Offset: 0x6B4B684 VA: 0x6B4F684
+	private void <InitiateEndEventProcess>b__21_0(RemoteLiveOpsService.StateRequestMessage _, bool __) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6B4F778 Offset: 0x6B4B778 VA: 0x6B4F778
+	private void <InitiateEndEventProcess>b__21_1(Exception exception) { }
+}
+

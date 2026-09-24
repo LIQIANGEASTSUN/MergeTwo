@@ -1,0 +1,31 @@
+// Namespace: 
+public class MergeEvent // TypeDefIndex: 2778
+{
+	// Fields
+	public static readonly string MERGE_BOARD_DRAGIN; // 0x0
+	public static readonly string MERGE_BOARD_POINTERUP; // 0x4
+	public static readonly string MERGE_BOARD_REFRESH; // 0x8
+	public static readonly string MERGE_BAG_REFRESH; // 0xC
+	public static readonly string MERGE_REWARD_REFRESH; // 0x10
+	public static readonly string MERGE_BORAD_SELECTED_GRID; // 0x14
+	public static readonly string MERGE_BORAD_REFRESH_ALL_CD; // 0x18
+	public static readonly string MERGE_BORAD_SELL_ITEM; // 0x1C
+	public static readonly string DO_REFRESH_EXPERENCE; // 0x20
+	public static readonly string DAILYDEALS_PURCHASE_SUCCESS; // 0x24
+	public static readonly string MERGE_INFO_PRODUCT_EXPLAIN; // 0x28
+	public static readonly string MERGE_BORAD_REFRESH_ENERGY_TORREND; // 0x2C
+	public static readonly string BALLOON_RESET; // 0x30
+	public static readonly string MERGE_BOARD_NEW_ITEM; // 0x34
+	public static readonly string MERGE_BOARD_USE_ITEM; // 0x38
+	public static readonly string MERGE_BORAD_REFRESH_UNLIMITEDPRODUCT; // 0x3C
+	public static readonly string MERGE_BORAD_REFRESH_COMBO_DOUBLE; // 0x40
+
+	// Methods
+
+	// RVA: 0x2C3D430 Offset: 0x2C3D430 VA: 0x2C3D430
+	public void .ctor() { }
+
+	// RVA: 0x2C3D438 Offset: 0x2C3D438 VA: 0x2C3D438
+	private static void .cctor() { }
+}
+

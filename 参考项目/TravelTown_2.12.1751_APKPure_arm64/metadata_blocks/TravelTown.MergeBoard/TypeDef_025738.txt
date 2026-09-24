@@ -1,0 +1,33 @@
+// Namespace: Merger.MergeBoard.Systems
+public class FeedingCombinationFeedSystem : ISystem // TypeDefIndex: 25738
+{
+	// Fields
+	[Inject]
+	private FeedingItemCombinerValidator _feedingItemCombinerValidator; // 0x10
+	[Inject]
+	private IMergeBoardLayout _layout; // 0x18
+	[Inject]
+	private IEntityFactory _entityFactory; // 0x20
+	[Inject]
+	private IFeedingCombinationConsumedItemSnapshotFactory _feedingCombinationConsumedItemSnapshotFactory; // 0x28
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x30
+
+	// Methods
+
+	// RVA: 0x6A6846C Offset: 0x6A6446C VA: 0x6A6846C Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A684F4 Offset: 0x6A644F4 VA: 0x6A684F4
+	private void TryFeedItem(TickContext context) { }
+
+	// RVA: 0x6A68D3C Offset: 0x6A64D3C VA: 0x6A68D3C
+	private void FeedItem(ValueTuple<Entity, BoardTilePositionComponent, FeedingCombinationComponent, IdComponent, InteractionComponent, ProducerComponent, TimeCycleComponent> feedingCombinationsEntity, ValueTuple<Entity, BoardTilePositionComponent, ItemMovedComponent, IdComponent> consumedEntity, TickContext context) { }
+
+	// RVA: 0x6A687EC Offset: 0x6A647EC VA: 0x6A687EC
+	private void CheckForFedProducers(TickContext context) { }
+
+	// RVA: 0x6A68F94 Offset: 0x6A64F94 VA: 0x6A68F94
+	public void .ctor() { }
+}
+

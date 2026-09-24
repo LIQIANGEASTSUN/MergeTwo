@@ -1,0 +1,304 @@
+// Namespace: MergeEngine.ECS.Systems.Items
+public abstract class BaseToolAnalysisSystem<T> : BaseItemSystem<T> // TypeDefIndex: 944
+{
+	// Fields
+	private const int MaxToolsChainsInProgress = 2;
+	[Inject]
+	protected IMergingConfigurationModel MergingConfigurationModel; // 0x0
+	[Inject]
+	protected IResourcesConfigurationModel ResourcesConfigurationModel; // 0x0
+	[Inject]
+	protected IResourcesModel ResourcesModel; // 0x0
+	[Inject]
+	private IGameConfigurationModel _gameConfigurationModel; // 0x0
+	[Inject]
+	private IRandomNumberModel _randomNumberModel; // 0x0
+	[InjectSystem]
+	private MetagameSystem _metagameSystem; // 0x0
+	[InjectSystem]
+	private PlayerLevelSystem _playerLevelSystem; // 0x0
+	[CompilerGenerated]
+	private readonly Dictionary<IMergeGraphItem, PlayerResourceEnum> <GraphToResource>k__BackingField; // 0x0
+	[CompilerGenerated]
+	private readonly Dictionary<PlayerResourceEnum, IMergeGraphItem> <ResourceToGraph>k__BackingField; // 0x0
+	protected Dictionary<int, int> PowLookup; // 0x0
+	private ToolsRequiredByBuildingsHelper RequiredToolsHelper; // 0x0
+
+	// Properties
+	public override SystemPriorities Priority { get; }
+	protected Dictionary<IMergeGraphItem, PlayerResourceEnum> GraphToResource { get; }
+	protected Dictionary<PlayerResourceEnum, IMergeGraphItem> ResourceToGraph { get; }
+	private float ToolsRequiredByMetagameBooster { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public override SystemPriorities get_Priority() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C035F8 Offset: 0x4BFF5F8 VA: 0x4C035F8
+	|-BaseToolAnalysisSystem<object>.get_Priority
+	|
+	|-RVA: 0x4C05708 Offset: 0x4C01708 VA: 0x4C05708
+	|-BaseToolAnalysisSystem<__Il2CppFullySharedGenericType>.get_Priority
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	protected Dictionary<IMergeGraphItem, PlayerResourceEnum> get_GraphToResource() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C03600 Offset: 0x4BFF600 VA: 0x4C03600
+	|-BaseToolAnalysisSystem<object>.get_GraphToResource
+	|
+	|-RVA: 0x4C05710 Offset: 0x4C01710 VA: 0x4C05710
+	|-BaseToolAnalysisSystem<__Il2CppFullySharedGenericType>.get_GraphToResource
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	protected Dictionary<PlayerResourceEnum, IMergeGraphItem> get_ResourceToGraph() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C03608 Offset: 0x4BFF608 VA: 0x4C03608
+	|-BaseToolAnalysisSystem<object>.get_ResourceToGraph
+	|
+	|-RVA: 0x4C05718 Offset: 0x4C01718 VA: 0x4C05718
+	|-BaseToolAnalysisSystem<__Il2CppFullySharedGenericType>.get_ResourceToGraph
+	*/
+
+	// RVA: -1 Offset: -1
+	private float get_ToolsRequiredByMetagameBooster() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C03610 Offset: 0x4BFF610 VA: 0x4C03610
+	|-BaseToolAnalysisSystem<object>.get_ToolsRequiredByMetagameBooster
+	|
+	|-RVA: 0x4C05720 Offset: 0x4C01720 VA: 0x4C05720
+	|-BaseToolAnalysisSystem<__Il2CppFullySharedGenericType>.get_ToolsRequiredByMetagameBooster
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 17
+	protected override IEnumerable<T> OnWillProcessComponents(ReadOnlyCollection<T> components) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C036E0 Offset: 0x4BFF6E0 VA: 0x4C036E0
+	|-BaseToolAnalysisSystem<object>.OnWillProcessComponents
+	|
+	|-RVA: 0x4C057F0 Offset: 0x4C017F0 VA: 0x4C057F0
+	|-BaseToolAnalysisSystem<__Il2CppFullySharedGenericType>.OnWillProcessComponents
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 6
+	protected override void InitializeSystem() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C0382C Offset: 0x4BFF82C VA: 0x4C0382C
+	|-BaseToolAnalysisSystem<object>.InitializeSystem
+	|
+	|-RVA: 0x4C05944 Offset: 0x4C01944 VA: 0x4C05944
+	|-BaseToolAnalysisSystem<__Il2CppFullySharedGenericType>.InitializeSystem
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void AnalyzeBoardToolChains(out List<PlayerResourceEnum> unfinishedChains, out Dictionary<PlayerResourceEnum, int> unfinishedItemLevelSumPerChain, out Dictionary<PlayerResourceEnum, int> collectableTools) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C03AD8 Offset: 0x4BFFAD8 VA: 0x4C03AD8
+	|-BaseToolAnalysisSystem<object>.AnalyzeBoardToolChains
+	|
+	|-RVA: 0x4C05C28 Offset: 0x4C01C28 VA: 0x4C05C28
+	|-BaseToolAnalysisSystem<__Il2CppFullySharedGenericType>.AnalyzeBoardToolChains
+	*/
+
+	// RVA: -1 Offset: -1
+	private void CreatePowLookup(int maxLevelItem) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C03EE0 Offset: 0x4BFFEE0 VA: 0x4C03EE0
+	|-BaseToolAnalysisSystem<object>.CreatePowLookup
+	|
+	|-RVA: 0x4C0603C Offset: 0x4C0203C VA: 0x4C0603C
+	|-BaseToolAnalysisSystem<__Il2CppFullySharedGenericType>.CreatePowLookup
+	*/
+
+	// RVA: -1 Offset: -1
+	private List<IMergeItem> GetUnlockedItemsOnBoard() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C03FC0 Offset: 0x4BFFFC0 VA: 0x4C03FC0
+	|-BaseToolAnalysisSystem<object>.GetUnlockedItemsOnBoard
+	|
+	|-RVA: 0x4C0611C Offset: 0x4C0211C VA: 0x4C0611C
+	|-BaseToolAnalysisSystem<__Il2CppFullySharedGenericType>.GetUnlockedItemsOnBoard
+	*/
+
+	// RVA: -1 Offset: -1
+	private List<IMergeGraphItem> GetToolGraphsFromItems(List<IMergeItem> items) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C041EC Offset: 0x4C001EC VA: 0x4C041EC
+	|-BaseToolAnalysisSystem<object>.GetToolGraphsFromItems
+	|
+	|-RVA: 0x4C06348 Offset: 0x4C02348 VA: 0x4C06348
+	|-BaseToolAnalysisSystem<__Il2CppFullySharedGenericType>.GetToolGraphsFromItems
+	*/
+
+	// RVA: -1 Offset: -1
+	private void AnalyzeSingleToolGraph(IMergeGraphItem toolGraph, List<IMergeItem> boardItems, Dictionary<PlayerResourceEnum, int> unfinishedItemLevelSumPerChain, Dictionary<PlayerResourceEnum, int> collectableTools) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C04334 Offset: 0x4C00334 VA: 0x4C04334
+	|-BaseToolAnalysisSystem<object>.AnalyzeSingleToolGraph
+	|
+	|-RVA: 0x4C06490 Offset: 0x4C02490 VA: 0x4C06490
+	|-BaseToolAnalysisSystem<__Il2CppFullySharedGenericType>.AnalyzeSingleToolGraph
+	*/
+
+	// RVA: -1 Offset: -1
+	private int CalculateItemsLevelSum(IMergeGraphItem toolGraph, List<IMergeItem> boardItems) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C044D0 Offset: 0x4C004D0 VA: 0x4C044D0
+	|-BaseToolAnalysisSystem<object>.CalculateItemsLevelSum
+	|
+	|-RVA: 0x4C0666C Offset: 0x4C0266C VA: 0x4C0666C
+	|-BaseToolAnalysisSystem<__Il2CppFullySharedGenericType>.CalculateItemsLevelSum
+	*/
+
+	// RVA: -1 Offset: -1
+	private void AddOrUpdateDictionary(Dictionary<PlayerResourceEnum, int> dictionary, PlayerResourceEnum key, int value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C04634 Offset: 0x4C00634 VA: 0x4C04634
+	|-BaseToolAnalysisSystem<object>.AddOrUpdateDictionary
+	|
+	|-RVA: 0x4C067D4 Offset: 0x4C027D4 VA: 0x4C067D4
+	|-BaseToolAnalysisSystem<__Il2CppFullySharedGenericType>.AddOrUpdateDictionary
+	*/
+
+	// RVA: -1 Offset: -1
+	private List<WeightedToolLevel> FilterToolLevelsByChainProgress(List<WeightedToolLevel> originalToolLevels, int currentLevelSum, IMergeGraphItem toolGraph) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C046EC Offset: 0x4C006EC VA: 0x4C046EC
+	|-BaseToolAnalysisSystem<object>.FilterToolLevelsByChainProgress
+	|
+	|-RVA: 0x4C0688C Offset: 0x4C0288C VA: 0x4C0688C
+	|-BaseToolAnalysisSystem<__Il2CppFullySharedGenericType>.FilterToolLevelsByChainProgress
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void ApplyMetagameWeightBoosts(List<WeightedTool> toolWeights, Dictionary<PlayerResourceEnum, int> collectableTools) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C048BC Offset: 0x4C008BC VA: 0x4C048BC
+	|-BaseToolAnalysisSystem<object>.ApplyMetagameWeightBoosts
+	|
+	|-RVA: 0x4C06A60 Offset: 0x4C02A60 VA: 0x4C06A60
+	|-BaseToolAnalysisSystem<__Il2CppFullySharedGenericType>.ApplyMetagameWeightBoosts
+	*/
+
+	// RVA: -1 Offset: -1
+	protected List<WeightedTool> ApplyToolFiltering(List<WeightedTool> tools, Func<WeightedTool, bool> filterPredicate) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C04970 Offset: 0x4C00970 VA: 0x4C04970
+	|-BaseToolAnalysisSystem<object>.ApplyToolFiltering
+	|
+	|-RVA: 0x4C06B18 Offset: 0x4C02B18 VA: 0x4C06B18
+	|-BaseToolAnalysisSystem<__Il2CppFullySharedGenericType>.ApplyToolFiltering
+	*/
+
+	// RVA: -1 Offset: -1
+	protected Func<WeightedTool, bool> CreateChainBasedFilter(List<PlayerResourceEnum> unfinishedChains) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C04A08 Offset: 0x4C00A08 VA: 0x4C04A08
+	|-BaseToolAnalysisSystem<object>.CreateChainBasedFilter
+	|
+	|-RVA: 0x4C06BB0 Offset: 0x4C02BB0 VA: 0x4C06BB0
+	|-BaseToolAnalysisSystem<__Il2CppFullySharedGenericType>.CreateChainBasedFilter
+	*/
+
+	// RVA: -1 Offset: -1
+	protected PlayerResourceEnum SelectRandomWeightedTool(List<WeightedTool> filteredToolWeights) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C04AC4 Offset: 0x4C00AC4 VA: 0x4C04AC4
+	|-BaseToolAnalysisSystem<object>.SelectRandomWeightedTool
+	|
+	|-RVA: 0x4C06C70 Offset: 0x4C02C70 VA: 0x4C06C70
+	|-BaseToolAnalysisSystem<__Il2CppFullySharedGenericType>.SelectRandomWeightedTool
+	*/
+
+	// RVA: -1 Offset: -1
+	protected ValueTuple<IMergeItem, int> GenerateRandomToolFromWeights(List<WeightedToolLevel> toolLevelWeights, IMergeGraphItem toolGraph, bool shouldFilterByChain, int currentLevelSum) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C04DE8 Offset: 0x4C00DE8 VA: 0x4C04DE8
+	|-BaseToolAnalysisSystem<object>.GenerateRandomToolFromWeights
+	|
+	|-RVA: 0x4C06F94 Offset: 0x4C02F94 VA: 0x4C06F94
+	|-BaseToolAnalysisSystem<__Il2CppFullySharedGenericType>.GenerateRandomToolFromWeights
+	*/
+
+	// RVA: -1 Offset: -1
+	private void BoostRequiredToolWeights(List<WeightedTool> toolWeights, HashSet<PlayerResourceEnum> requiredTools) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C05210 Offset: 0x4C01210 VA: 0x4C05210
+	|-BaseToolAnalysisSystem<object>.BoostRequiredToolWeights
+	|
+	|-RVA: 0x4C073C0 Offset: 0x4C033C0 VA: 0x4C073C0
+	|-BaseToolAnalysisSystem<__Il2CppFullySharedGenericType>.BoostRequiredToolWeights
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C05368 Offset: 0x4C01368 VA: 0x4C05368
+	|-BaseToolAnalysisSystem<object>..ctor
+	|
+	|-RVA: 0x4C0752C Offset: 0x4C0352C VA: 0x4C0752C
+	|-BaseToolAnalysisSystem<__Il2CppFullySharedGenericType>..ctor
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	private IMergeItem <GetUnlockedItemsOnBoard>b__24_1(LockedComponent locked) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C054E4 Offset: 0x4C014E4 VA: 0x4C054E4
+	|-BaseToolAnalysisSystem<object>.<GetUnlockedItemsOnBoard>b__24_1
+	|
+	|-RVA: 0x4C076AC Offset: 0x4C036AC VA: 0x4C076AC
+	|-BaseToolAnalysisSystem<__Il2CppFullySharedGenericType>.<GetUnlockedItemsOnBoard>b__24_1
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	private IMergeGraphItem <GetToolGraphsFromItems>b__25_0(IMergeItem item) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C05590 Offset: 0x4C01590 VA: 0x4C05590
+	|-BaseToolAnalysisSystem<object>.<GetToolGraphsFromItems>b__25_0
+	|
+	|-RVA: 0x4C07758 Offset: 0x4C03758 VA: 0x4C07758
+	|-BaseToolAnalysisSystem<__Il2CppFullySharedGenericType>.<GetToolGraphsFromItems>b__25_0
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	private bool <GetToolGraphsFromItems>b__25_1(IMergeGraphItem graph) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C056B0 Offset: 0x4C016B0 VA: 0x4C056B0
+	|-BaseToolAnalysisSystem<object>.<GetToolGraphsFromItems>b__25_1
+	|
+	|-RVA: 0x4C07878 Offset: 0x4C03878 VA: 0x4C07878
+	|-BaseToolAnalysisSystem<__Il2CppFullySharedGenericType>.<GetToolGraphsFromItems>b__25_1
+	*/
+}
+

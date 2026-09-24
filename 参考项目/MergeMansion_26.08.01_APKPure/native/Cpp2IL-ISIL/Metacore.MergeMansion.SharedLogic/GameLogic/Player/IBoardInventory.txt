@@ -1,0 +1,289 @@
+Type: GameLogic.Player.IBoardInventory
+
+Method: System.Int32 get_Size()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void set_Size(System.Int32 value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Merge.MergeBoardId get_BoardId()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_IsLocked()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void set_IsLocked(System.Boolean value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_ItemCount()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_IsFull()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_IsEmpty()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Game.Logic.InventoryContentChanged get_InventoryChanged()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void set_InventoryChanged(Game.Logic.InventoryContentChanged value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Player.Items.MergeItem> get_MergeItems()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.List`1<GameLogic.Player.BoardInventory+InventoryEntry> get_Entries()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void SetInitialSize(System.Int32 startingSize)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.MergeItem GetItemAtIndex(System.Int32 index)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean AddItemToInventory(GameLogic.Player.IPlayer player, GameLogic.Player.Items.MergeItem itemToAdd, GameLogic.Config.Types.MetacoreTime currentTime, out System.Boolean removeItemFromBoard)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.Dictionary`2<System.Int32, System.Int32> GetItemTypesAndAmountsOfItems()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.Dictionary`2<System.Int32, System.Collections.Generic.IEnumerable`1<GameLogic.Player.Items.MergeItem>> GetItemsGroupedByType()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Player.Items.MergeItem> GetItemsSorted(GameLogic.Player.IPlayer player, GameLogic.Player.BoardInventorySortMode sortMode = 0)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 GetItemIndex(GameLogic.Player.Items.MergeItem item)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 FindItemOfCertainType(System.Int32 itemId)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Player.Items.MergeItem> GetItems()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Player.Items.MergeItem> GetItemsOfCertainChain(GameLogic.Player.IPlayer player, GameLogic.Player.Items.IItemDefinition itemDefinition)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.ValueTuple`2<GameLogic.Player.Items.MergeItem, Metaplay.Core.MetaTime> TakeItemOut(System.Int32 index)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean RemoveItem(System.String typeToRemove, System.Int32 index, GameLogic.Player.IPlayer player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ReplaceItems(GameLogic.Player.IPlayer player, System.Predicate`1<GameLogic.Player.Items.MergeItem> itemMatcher, GameLogic.Player.Items.IItemDefinition replacement, GameLogic.Config.Types.MetacoreTime replacementTime)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void RemoveItems(System.Predicate`1<GameLogic.Player.Items.MergeItem> itemMatcher)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void RemoveItems(System.Predicate`1<GameLogic.Player.Items.MergeItem> itemMatcher, System.Action`1<GameLogic.Player.Items.MergeItem> onRemoved)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void CollectItems(System.Predicate`1<GameLogic.Player.Items.MergeItem> itemMatcher, GameLogic.Player.Items.Collectable.ICollectionContext context, GameLogic.Config.Types.MetacoreTime timestamp)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void CollectItemsFromChest(System.Predicate`1<GameLogic.Player.Items.IItemDefinition> itemMatcher, GameLogic.Player.Items.Collectable.ICollectionContext context, GameLogic.Config.Types.MetacoreTime timestamp)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void RemoveItem(GameLogic.Player.Items.MergeItem mergeItem, System.Predicate`1<GameLogic.Player.Items.MergeItem> itemMatcher)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean FindAndRemoveFirstOfType(System.Int32 itemId)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean FindAndRemoveFirstVisibleItemOfCertainType(System.Collections.Generic.IEnumerable`1<System.Int32> itemTypes, GameLogic.Config.Types.MetacoreTime timestamp, System.Boolean areBubbleItemsAllowed = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Player.Items.IMergeItem> RemoveAndReturnItems(System.Predicate`1<GameLogic.Player.Items.IMergeItem> itemMatcher)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void RestoreInternalState(GameLogic.Config.Types.MetacoreTime restorationTime, GameLogic.Player.IPlayer player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 CountVisibleItemsOfTypes(System.Collections.Generic.IEnumerable`1<GameLogic.Player.Items.IItemDefinition> itemTypes, System.Boolean areBubbleItemsAllowed = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 CountVisibleItemsOfTypes(System.Collections.Generic.IEnumerable`1<System.Int32> itemIds, System.Boolean areBubbleItemsAllowed = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.List`1<Code.GameLogic.Player.IInventoryEntry> RemoveEntriesStartingFrom(System.Int32 startIndex)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void SetItemStoredTimeStamp(GameLogic.Player.Items.MergeItem mergeItem, Metaplay.Core.MetaTime timeStamp)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.MetaTime GetItemStoredTimeStamp(GameLogic.Player.Items.MergeItem mergeItem)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean CanAddItem(GameLogic.Player.Items.MergeItem item, GameLogic.Player.IPlayer player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metacore.MergeMansion.Common.Options.Option`1<Code.GameLogic.Player.IInventoryEntry> MergeableInventoryItemOption(GameLogic.Player.IPlayer player, GameLogic.Player.Items.MergeItem itemToAdd, GameLogic.Config.Types.MetacoreTime currentTime)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

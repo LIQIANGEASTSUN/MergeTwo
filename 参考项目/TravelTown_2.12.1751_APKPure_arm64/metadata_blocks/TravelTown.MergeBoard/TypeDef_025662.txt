@@ -1,0 +1,29 @@
+// Namespace: Merger.MergeBoard.ViewModel
+public class MergeBoardItemCreatorViewModel : ViewModelBase // TypeDefIndex: 25662
+{
+	// Fields
+	[Inject]
+	private DiContainer _container; // 0x68
+	[Inject]
+	private IMergeBoardLayout _boardLayout; // 0x70
+	[Inject]
+	private ITileConfigurationModel _tileConfigurationModel; // 0x78
+
+	// Methods
+
+	// RVA: 0x6A31A40 Offset: 0x6A2DA40 VA: 0x6A31A40
+	public VisualAdapter GetVisualAdapter(Entity entity) { }
+
+	// RVA: 0x6A31AE8 Offset: 0x6A2DAE8 VA: 0x6A31AE8
+	public Transform GetTransformForIndex(int index) { }
+
+	// RVA: 0x6A31B90 Offset: 0x6A2DB90 VA: 0x6A31B90
+	public bool HasTileConfiguration(int index) { }
+
+	// RVA: 0x6A31C3C Offset: 0x6A2DC3C VA: 0x6A31C3C
+	public DynamicBoardCellConfiguration GetTileConfiguration(int index) { }
+
+	// RVA: 0x6A31CE8 Offset: 0x6A2DCE8 VA: 0x6A31CE8
+	public void .ctor() { }
+}
+

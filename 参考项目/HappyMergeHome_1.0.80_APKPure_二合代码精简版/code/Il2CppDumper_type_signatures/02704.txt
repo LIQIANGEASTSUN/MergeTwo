@@ -1,0 +1,23 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeManager.<>c__DisplayClass200_1 // TypeDefIndex: 2704
+{
+	// Fields
+	public TableMergeItem config; // 0x8
+	public MergeBoard.Grid grid; // 0xC
+	public int index; // 0x10
+	public MergeManager.<>c__DisplayClass200_0 CS$<>8__locals1; // 0x14
+	public TweenCallback <>9__1; // 0x18
+
+	// Methods
+
+	// RVA: 0x2C28880 Offset: 0x2C28880 VA: 0x2C28880
+	public void .ctor() { }
+
+	// RVA: 0x2C28888 Offset: 0x2C28888 VA: 0x2C28888
+	internal void <RePlaceAllItemByLine>b__0() { }
+
+	// RVA: 0x2C2899C Offset: 0x2C2899C VA: 0x2C2899C
+	internal void <RePlaceAllItemByLine>b__1() { }
+}
+

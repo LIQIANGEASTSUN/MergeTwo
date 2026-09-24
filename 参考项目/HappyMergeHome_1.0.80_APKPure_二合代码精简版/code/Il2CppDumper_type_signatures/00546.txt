@@ -1,0 +1,15 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class FishCultureModel.<>c__DisplayClass38_0 // TypeDefIndex: 546
+{
+	// Fields
+	public Vector3 endPos; // 0x8
+	public FishCultureModel <>4__this; // 0x14
+	public Action endCall; // 0x18
+
+	// Methods
+
+	// RVA: 0x31D8BFC Offset: 0x31D8BFC VA: 0x31D8BFC
+	public void .ctor() { }
+}
+

@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardController.<>c__DisplayClass149_0 // TypeDefIndex: 1870
+{
+	// Fields
+	public BoardTaskGoal boardTaskGoal; // 0x8
+
+	// Methods
+
+	// RVA: 0x1918520 Offset: 0x1918520 VA: 0x1918520
+	public void .ctor() { }
+
+	// RVA: 0x1918528 Offset: 0x1918528 VA: 0x1918528
+	internal bool <FindDoneItems>b__0(BoardPosition position) { }
+}
+

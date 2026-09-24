@@ -1,0 +1,20 @@
+// Namespace: Merger.MergeBoard.Signals
+public class MergeBoardNewItemCreatedSignal // TypeDefIndex: 25795
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly string <ItemId>k__BackingField; // 0x10
+
+	// Properties
+	public string ItemId { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A7AA1C Offset: 0x6A76A1C VA: 0x6A7AA1C
+	public string get_ItemId() { }
+
+	// RVA: 0x6A7AA24 Offset: 0x6A76A24 VA: 0x6A7AA24
+	public void .ctor(string itemId) { }
+}
+

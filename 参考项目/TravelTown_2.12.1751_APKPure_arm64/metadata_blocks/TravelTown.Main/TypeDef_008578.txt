@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardView.<>c__DisplayClass131_0 // TypeDefIndex: 8578
+{
+	// Fields
+	public IBoardItemView boardItemView; // 0x10
+	public BoardView <>4__this; // 0x18
+
+	// Methods
+
+	// RVA: 0x66969BC Offset: 0x66929BC VA: 0x66969BC
+	public void .ctor() { }
+
+	// RVA: 0x6699BCC Offset: 0x6695BCC VA: 0x6699BCC
+	internal void <RemoveItem>b__0() { }
+}
+

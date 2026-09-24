@@ -1,0 +1,75 @@
+// Namespace: 
+[Serializable]
+public class SummerWatermelonTwentySevenProductConfig : TableBase // TypeDefIndex: 1400
+{
+	// Fields
+	[CompilerGenerated]
+	private int <Id>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private int <ItemId>k__BackingField; // 0xC
+	[CompilerGenerated]
+	private List<int> <OutPut>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private List<int> <Weight>k__BackingField; // 0x14
+	[CompilerGenerated]
+	private int <MaxWeight>k__BackingField; // 0x18
+
+	// Properties
+	public int Id { get; set; }
+	public int ItemId { get; set; }
+	public List<int> OutPut { get; set; }
+	public List<int> Weight { get; set; }
+	public int MaxWeight { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x2146BF4 Offset: 0x2146BF4 VA: 0x2146BF4
+	public int get_Id() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2146BFC Offset: 0x2146BFC VA: 0x2146BFC
+	public void set_Id(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2146C04 Offset: 0x2146C04 VA: 0x2146C04
+	public int get_ItemId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2146C0C Offset: 0x2146C0C VA: 0x2146C0C
+	public void set_ItemId(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2146C14 Offset: 0x2146C14 VA: 0x2146C14
+	public List<int> get_OutPut() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2146C1C Offset: 0x2146C1C VA: 0x2146C1C
+	public void set_OutPut(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2146C24 Offset: 0x2146C24 VA: 0x2146C24
+	public List<int> get_Weight() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2146C2C Offset: 0x2146C2C VA: 0x2146C2C
+	public void set_Weight(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2146C34 Offset: 0x2146C34 VA: 0x2146C34
+	public int get_MaxWeight() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2146C3C Offset: 0x2146C3C VA: 0x2146C3C
+	public void set_MaxWeight(int value) { }
+
+	// RVA: 0x2146C44 Offset: 0x2146C44 VA: 0x2146C44 Slot: 4
+	public override int GetID() { }
+
+	// RVA: 0x2146C98 Offset: 0x2146C98 VA: 0x2146C98
+	public void .ctor() { }
+
+	// RVA: 0x2146CA0 Offset: 0x2146CA0 VA: 0x2146CA0
+	public int <>iFixBaseProxy_GetID() { }
+}
+

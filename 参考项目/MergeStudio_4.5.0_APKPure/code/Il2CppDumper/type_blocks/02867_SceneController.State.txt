@@ -1,0 +1,11 @@
+// Namespace: 
+public enum SceneController.State // TypeDefIndex: 2867
+{
+	// Fields
+	public int value__; // 0x0
+	public const SceneController.State NON_INITIALIZED = 0;
+	public const SceneController.State GAMEPLAY_ACTIVE = 1;
+	public const SceneController.State GAMEPLAY_PAUSED = 2;
+	public const SceneController.State TUTORIAL = 3;
+}
+

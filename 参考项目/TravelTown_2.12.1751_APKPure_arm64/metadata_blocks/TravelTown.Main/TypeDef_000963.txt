@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ExpendableSystem.<>c__DisplayClass29_0 // TypeDefIndex: 963
+{
+	// Fields
+	public ExpendableSystem <>4__this; // 0x10
+	public PositionComponent positionComponent; // 0x18
+
+	// Methods
+
+	// RVA: 0x678FC08 Offset: 0x678BC08 VA: 0x678FC08
+	public void .ctor() { }
+
+	// RVA: 0x679067C Offset: 0x678C67C VA: 0x679067C
+	internal BoardItemPosition <EntityRemoved>b__0() { }
+}
+

@@ -1,0 +1,24 @@
+// Namespace: Merger.Bubbles
+public class SmarterBubblesBucketsModel : ISmarterBubblesBucketsModel // TypeDefIndex: 7450
+{
+	// Fields
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0x10
+	private readonly IReadOnlyDictionary<CurrentBoardType, BucketProbabilityData> _probabilityData; // 0x18
+
+	// Properties
+	public BucketProbabilityData BucketsProbabilityData { get; }
+	public IReadOnlyDictionary<CurrentBoardType, BucketProbabilityData> ProbabilityData { get; }
+
+	// Methods
+
+	// RVA: 0x6579C8C Offset: 0x6575C8C VA: 0x6579C8C Slot: 4
+	public BucketProbabilityData get_BucketsProbabilityData() { }
+
+	// RVA: 0x6579DC0 Offset: 0x6575DC0 VA: 0x6579DC0 Slot: 5
+	public IReadOnlyDictionary<CurrentBoardType, BucketProbabilityData> get_ProbabilityData() { }
+
+	// RVA: 0x6579DC8 Offset: 0x6575DC8 VA: 0x6579DC8
+	public void .ctor() { }
+}
+

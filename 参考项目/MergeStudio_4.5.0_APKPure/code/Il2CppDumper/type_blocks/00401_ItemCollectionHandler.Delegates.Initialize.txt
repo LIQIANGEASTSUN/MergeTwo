@@ -1,0 +1,18 @@
+// Namespace: 
+public sealed class ItemCollectionHandler.Delegates.Initialize : MulticastDelegate // TypeDefIndex: 401
+{
+	// Methods
+
+	// RVA: 0x1BA126C Offset: 0x1BA126C VA: 0x1BA126C
+	public void .ctor(object object, IntPtr method) { }
+
+	// RVA: 0x1BA1310 Offset: 0x1BA1310 VA: 0x1BA1310 Slot: 13
+	public virtual void Invoke(bool isLocked) { }
+
+	// RVA: 0x1BA1320 Offset: 0x1BA1320 VA: 0x1BA1320 Slot: 14
+	public virtual IAsyncResult BeginInvoke(bool isLocked, AsyncCallback callback, object object) { }
+
+	// RVA: 0x1BA13AC Offset: 0x1BA13AC VA: 0x1BA13AC Slot: 15
+	public virtual void EndInvoke(IAsyncResult result) { }
+}
+

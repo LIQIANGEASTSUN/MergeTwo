@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardController.<>c__DisplayClass339_1 // TypeDefIndex: 1884
+{
+	// Fields
+	public GameObject wandMoveParticle; // 0x8
+	public BoardController.<>c__DisplayClass339_0 CS$<>8__locals1; // 0xC
+	public TweenCallback <>9__2; // 0x10
+
+	// Methods
+
+	// RVA: 0x1919FB8 Offset: 0x1919FB8 VA: 0x1919FB8
+	public void .ctor() { }
+
+	// RVA: 0x1919FC0 Offset: 0x1919FC0 VA: 0x1919FC0
+	internal void <OnEvent>b__1() { }
+
+	// RVA: 0x191A378 Offset: 0x191A378 VA: 0x191A378
+	internal void <OnEvent>b__2() { }
+}
+

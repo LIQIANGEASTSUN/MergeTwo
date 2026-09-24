@@ -1,0 +1,16 @@
+// Namespace: Merger.Bubbles.Model
+public class SmarterBubblesActiveOrdersChainsModel : ModelBase, ISmarterBubblesActiveOrdersChainsModel // TypeDefIndex: 7481
+{
+	// Fields
+	[Inject]
+	private IMergeGraphChainModel _mergeGraphChainModel; // 0x28
+
+	// Methods
+
+	// RVA: 0x6582254 Offset: 0x657E254 VA: 0x6582254 Slot: 19
+	public HashSet<IMergeGraphItem> GetRelatedGraphs(IMergeItem objectiveItem) { }
+
+	// RVA: 0x6582718 Offset: 0x657E718 VA: 0x6582718
+	public void .ctor() { }
+}
+

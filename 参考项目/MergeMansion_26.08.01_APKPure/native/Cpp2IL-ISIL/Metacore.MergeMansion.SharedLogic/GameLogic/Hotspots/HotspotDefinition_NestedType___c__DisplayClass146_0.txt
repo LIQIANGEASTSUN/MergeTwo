@@ -1,0 +1,39 @@
+Type: GameLogic.Hotspots.HotspotDefinition+<>c__DisplayClass146_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x034F9DB8 MOVZ W2, 0x2E
+	0x034F9DBC BL 0x23D527C
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: GameLogic.Hotspots.IHotspotDefinition <UnlockingParents>b__0(Game.Cloud.Config.HotspotDef o)
+
+Disassembly:
+	0x034F9DC0 B 0x34F9DD4
+	0x034F9DC4 LDR W9, [X10]
+	0x034F9DC8 ADD W9, W9, 0x2E
+	0x034F9DCC ADD X8, X8, W9, 0x4, SXTW
+	0x034F9DD0 ADD X0, X8, 0x138
+	0x034F9DD4 LDP X8, X1, [X0]
+	0x034F9DD8 MOV X0, X19
+	0x034F9DDC BLR X8
+	0x034F9DE0 LDR X1, [X21]
+
+ISIL:
+	001 Compare X1, 0
+	002 JumpIfEqual {10}
+	003 Move X9, [X1]
+	004 Move X8, [X0+16]
+	005 Move X0, X1
+	006 Move X3, [X9+456]
+	007 Move X2, [X9+464]
+	008 Move X1, X8
+	009 CallNoReturn X3
+	010 Move [X31-16], X30
+	011 Call 0x239FB90
+

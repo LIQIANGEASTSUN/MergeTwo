@@ -1,0 +1,42 @@
+// Namespace: Paxie.MergeStudio.GameCore.Gameplay.Board
+[CreateAssetMenu(fileName = "BoardItemTaskSupportChest", menuName = "Scriptable/BoardItem/BoardItemTaskSupportChest")]
+public class BoardItemTaskSupportChest : BoardItemData, IConfigAdaptor<TaskSupportChestAdaptor>, IConfigAdaptorBase // TypeDefIndex: 943
+{
+	// Properties
+	private TaskSupportChestHandler TaskSupportChestHandler { get; }
+	public TaskSupportChestAdaptor ConfigAdaptor { get; }
+
+	// Methods
+
+	// RVA: 0x178E148 Offset: 0x178E148 VA: 0x178E148
+	private TaskSupportChestHandler get_TaskSupportChestHandler() { }
+
+	// RVA: 0x178E210 Offset: 0x178E210 VA: 0x178E210
+	public TaskSupportChestAdaptor get_ConfigAdaptor() { }
+
+	// RVA: 0x178E2DC Offset: 0x178E2DC VA: 0x178E2DC Slot: 4
+	public override bool Initialize(BoardEntity boardEntity, IItemController item, long millisecondsPassed, bool isNewlyCreated) { }
+
+	// RVA: 0x178E56C Offset: 0x178E56C VA: 0x178E56C Slot: 6
+	public override int GetTimeRequiredToExitCharging() { }
+
+	// RVA: 0x178E574 Offset: 0x178E574 VA: 0x178E574
+	public bool ProcessSpawn(ItemController itemController, BoardController board, int energyConsumeAmount) { }
+
+	// RVA: 0x178EA38 Offset: 0x178EA38 VA: 0x178EA38
+	public SpawnedItem GetRandomItem(BoardController board) { }
+
+	// RVA: 0x178E214 Offset: 0x178E214 VA: 0x178E214 Slot: 17
+	public TaskSupportChestAdaptor GetConfigAdaptor() { }
+
+	// RVA: 0x178ECD0 Offset: 0x178ECD0 VA: 0x178ECD0 Slot: 18
+	public AdaptorBase ConvertFromLocal() { }
+
+	// RVA: 0x178EE34 Offset: 0x178EE34 VA: 0x178EE34
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x178EE3C Offset: 0x178EE3C VA: 0x178EE3C
+	private bool <ConvertFromLocal>b__9_0(BalanceTaskSupportChestModel model) { }
+}
+

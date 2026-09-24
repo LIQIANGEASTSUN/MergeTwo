@@ -1,0 +1,15 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeManager.<>c__DisplayClass314_0 // TypeDefIndex: 2707
+{
+	// Fields
+	public MergeManager <>4__this; // 0x8
+	public MergeBoardEnum boardId; // 0xC
+	public string sources; // 0x10
+
+	// Methods
+
+	// RVA: 0x2C28BBC Offset: 0x2C28BBC VA: 0x2C28BBC
+	public void .ctor() { }
+}
+

@@ -1,0 +1,366 @@
+Type: GameLogic.Player.Items.Persistent.PersistentState
+
+Method: System.Boolean get_HasItemStates()
+
+Disassembly:
+	0x036063C8 MOV X0, X20
+	0x036063CC LDP X20, X19, [X31 + 0x10]
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_HasItemStates(System.Boolean value)
+
+Disassembly:
+	0x036063D0 LDP X30, X21, [X31], #0x20
+	0x036063D4 RET
+
+ISIL:
+	001 Move [X0+16], W1
+	002 Return 
+
+Method: System.Int32 get_DecayCycles()
+
+Disassembly:
+	0x036063D8 STR X30, [X31 - 0x20]!
+	0x036063DC STP X20, X19, [X31 + 0x10]
+
+ISIL:
+	001 Move W0, [X0+20]
+	002 Return X0
+
+Method: System.Void set_DecayCycles(System.Int32 value)
+
+Disassembly:
+	0x036063E0 MOV W19, W1
+	0x036063E4 MOV X1, X31
+
+ISIL:
+	001 Move [X0+20], W1
+	002 Return 
+
+Method: System.Int32 get_ItemStates()
+
+Disassembly:
+	0x036063E8 MOV X20, X0
+	0x036063EC BL 0x44E8DEC
+
+ISIL:
+	001 Move W0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_ItemStates(System.Int32 value)
+
+Disassembly:
+	0x036063F0 MOV X0, X31
+	0x036063F4 STR W19, [X20 + 0x10]
+
+ISIL:
+	001 Move [X0+24], W1
+	002 Return 
+
+Method: GameLogic.Player.Items.ItemDefinition get_ResetToItem()
+
+Disassembly:
+	0x036063F8 BL 0x44ECB1C
+	0x036063FC STR W0, [X20 + 0x18]
+
+ISIL:
+	001 Move X0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_ResetToItem(GameLogic.Player.Items.ItemDefinition value)
+
+Disassembly:
+	0x03606400 LDP X20, X19, [X31 + 0x10]
+	0x03606404 LDR X30, [X31], #0x20
+
+ISIL:
+	001 Move [X0+32], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Int32 get_StartCycles()
+
+Disassembly:
+	0x03606408 RET
+	0x0360640C SUB X31, X31, 0x30
+
+ISIL:
+	001 Move W0, [X0+40]
+	002 Return X0
+
+Method: System.Void set_StartCycles(System.Int32 value)
+
+Disassembly:
+	0x03606410 STR X30, [X31 + 0x20]
+	0x03606414 LDR V0, [X0]
+
+ISIL:
+	001 Move [X0+40], W1
+	002 Return 
+
+Method: System.Int32 get_CurrentState()
+
+Disassembly:
+	0x03606418 LDR X8, [X0 + 0x10]
+	0x0360641C ADD X0, X31, 0x0
+
+ISIL:
+	001 Move W0, [X0+44]
+	002 Return X0
+
+Method: System.Void set_CurrentState(System.Int32 value)
+
+Disassembly:
+	0x03606420 MOV X1, X31
+	0x03606424 STR V0, [X31]
+
+ISIL:
+	001 Move [X0+44], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03606428 STR X8, [X31 + 0x10]
+	0x0360642C BL 0x3412C68
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(System.Boolean hasItemStates, System.Int32 decayCycles, System.Int32 itemStates, GameLogic.Player.Items.IItemDefinition resetToItem, System.Int32 startCycles, System.Int32 currentState)
+
+Disassembly:
+	0x03606430 LDR X30, [X31 + 0x20]
+	0x03606434 ADD X31, X31, 0x30
+	0x03606438 RET
+	0x0360643C STR X30, [X31 - 0x20]!
+	0x03606440 STP X20, X19, [X31 + 0x10]
+	0x03606444 ADRP X19, 0x2723000
+	0x03606448 ADRP X20, 0x212B000
+	0x0360644C LDRB W8, [X19 + 0xBA9]
+	0x03606450 LDR X20, [X20 + 0x5B8]
+	0x03606454 TBNZ X8, 0x0, 0x360646C
+	0x03606458 ADRP X0, 0x212B000
+	0x0360645C LDR X0, [X0 + 0x5B8]
+	0x03606460 BL 0x239B8E4
+	0x03606464 MOVZ W8, 0x1
+	0x03606468 STRB W8, [X19 + 0xBA9]
+	0x0360646C LDR X0, [X20]
+	0x03606470 BL 0x239BB80
+	0x03606474 MOV X1, X31
+	0x03606478 MOV X19, X0
+	0x0360647C BL 0x44E8DEC
+	0x03606480 LDR X8, [X20]
+	0x03606484 MOV X1, X19
+	0x03606488 LDR X8, [X8 + 0xB8]
+	0x0360648C STR X19, [X8]
+	0x03606490 LDR X8, [X20]
+	0x03606494 LDP X20, X19, [X31 + 0x10]
+	0x03606498 LDR X0, [X8 + 0xB8]
+	0x0360649C LDR X30, [X31], #0x20
+	0x036064A0 B 0x239B888
+	0x036064A4 MOV X1, X31
+	0x036064A8 B 0x44E8DEC
+	0x036064AC MOV X0, X1
+	0x036064B0 RET
+	0x036064B4 UBFM X0, X1, 0x20, 0x3F
+	0x036064B8 RET
+	0x036064BC RET
+	0x036064C0 SUB X31, X31, 0x30
+	0x036064C4 STR X30, [X31 + 0x10]
+	0x036064C8 STP X20, X19, [X31 + 0x20]
+	0x036064CC ADRP X20, 0x2723000
+	0x036064D0 MOV X19, X0
+	0x036064D4 LDRB W8, [X20 + 0xBAA]
+	0x036064D8 TBNZ X8, 0x0, 0x3606514
+	0x036064DC ADRP X0, 0x20F9000
+	0x036064E0 LDR X0, [X0 + 0x1D0]
+	0x036064E4 BL 0x239B8E4
+	0x036064E8 ADRP X0, 0x20F9000
+	0x036064EC LDR X0, [X0 + 0x1E8]
+	0x036064F0 BL 0x239B8E4
+	0x036064F4 ADRP X0, 0x212B000
+	0x036064F8 LDR X0, [X0 + 0x4D8]
+	0x036064FC BL 0x239B8E4
+	0x03606500 ADRP X0, 0x20F9000
+	0x03606504 LDR X0, [X0 + 0x260]
+	0x03606508 BL 0x239B8E4
+	0x0360650C MOVZ W8, 0x1
+	0x03606510 STRB W8, [X20 + 0xBAA]
+	0x03606514 LDR W8, [X19 + 0x10]
+	0x03606518 STR X31, [X31 + 0x18]
+	0x0360651C STR X31, [X31 + 0x8]
+	0x03606520 CMP W8, 0x1
+	0x03606524 B.EQ 0x3606570
+	0x03606528 MOV W0, W31
+	0x0360652C CBNZ W8, 0x36065E0
+	0x03606530 LDR X8, [X19 + 0x20]
+	0x03606534 MOVN W9, 0x0
+	0x03606538 STR W9, [X19 + 0x10]
+	0x0360653C CBZ X8, 0x36065F0
+	0x03606540 LDR X0, [X8 + 0x10]
+	0x03606544 CBZ X0, 0x36065F0
+	0x03606548 ADRP X8, 0x20F9000
+	0x0360654C LDR X8, [X8 + 0x260]
+	0x03606550 LDR X1, [X8]
+	0x03606554 BL 0x274F258
+	0x03606558 MOV X8, X19
+	0x0360655C STP X0, X1, [X8 + 0x28]!
+	0x03606560 MOV X0, X8
+	0x03606564 MOV X1, X31
+	0x03606568 BL 0x239B888
+	0x0360656C B 0x3606578
+	0x03606570 MOVN W8, 0x0
+	0x03606574 STR W8, [X19 + 0x10]
+	0x03606578 ADRP X8, 0x20F9000
+	0x0360657C ADD X0, X19, 0x28
+	0x03606580 LDR X8, [X8 + 0x1D0]
+
+ISIL:
+	001 Move [X31-80], X30
+	002 Move [X31+16], X26
+	003 Move [X31+24], X25
+	004 Move [X31+32], X24
+	005 Move [X31+40], X23
+	006 Move [X31+48], X22
+	007 Move [X31+56], X21
+	008 Move [X31+64], X20
+	009 Move [X31+72], X19
+	010 Move W19, W6
+	011 Move W20, W5
+	012 Move W8, [0x2727B70]
+	013 Move X21, X4
+	014 Move W23, W3
+	015 Move W24, W2
+	016 Move W25, W1
+	017 Move X22, X0
+	018 Move TEMP, X8
+	019 And TEMP, TEMP, 1
+	020 Compare TEMP, 1
+	021 JumpIfEqual {26}
+	022 Move X0, [0x20E77E8]
+	023 Call 0x239F8E4
+	024 Move W8, 1
+	025 Move [X26+2928], W8
+	026 Move X0, X22
+	027 Move X1, X31
+	028 Call Object..ctor, X0
+	029 Compare X21, 0
+	030 Invalid "Jump target not found in method."
+	031 Move X8, [0x20E77E8]
+	032 Move X9, [X21]
+	033 Move X1, [X8]
+	034 Move W10, [X9+304]
+	035 Move W8, [X1+304]
+	036 NotImplemented "Instruction CMP not yet implemented."
+	037 Move X9, [X9+200]
+	038 Add X9, X9, X8
+	039 NotImplemented "Instruction LDUR not yet implemented."
+	040 NotImplemented "Instruction CMP not yet implemented."
+	041 And W9, W25, 1
+	042 Move [X22+20], W24
+	043 Move [X22+24], W23
+	044 Move [X22+16], W9
+	045 Move X9, [X21]
+	046 Move W10, [X9+304]
+	047 NotImplemented "Instruction CMP not yet implemented."
+	048 Move X9, [X9+200]
+	049 Add X8, X9, X8
+	050 NotImplemented "Instruction LDUR not yet implemented."
+	051 NotImplemented "Instruction CMP not yet implemented."
+	052 Move [X22+32], X21
+	053 Move X0, X22
+	054 Move X1, X21
+	055 Call 0x239F888
+	056 Move [X22+8], W20
+	057 Move [X22+12], W19
+	058 Move X20, [X31+64]
+	059 Move X19, [X31+72]
+	060 Move X22, [X31+48]
+	061 Move X21, [X31+56]
+	062 Move X24, [X31+32]
+	063 Move X23, [X31+40]
+	064 Move X26, [X31+16]
+	065 Move X25, [X31+24]
+	066 Move X30, [X31+80]
+	067 Return 
+	068 Move X0, [0x20CEE90]
+	069 Call 0x239F8F8
+	070 Call 0x239FB80
+	071 Move X19, X0
+	072 Move X0, [0x212F428]
+	073 Call 0x239F8F8
+	074 Move X20, X0
+	075 Move X0, [0x212F430]
+	076 Call 0x239F8F8
+	077 Move X2, X0
+	078 Move X0, X19
+	079 Move X1, X20
+	080 Move X3, X31
+	081 Call ArgumentException..ctor, X0, X1, X2
+	082 Move X0, [0x212F438]
+	083 Call 0x239F8F8
+	084 Move X1, X0
+	085 Move X0, X19
+	086 Call 0x239FA54
+	087 Move X0, X21
+	088 Call 0x239FF10
+
+Method: System.Void NextState()
+
+Disassembly:
+	0x03606584 LDR X1, [X8]
+	0x03606588 BL 0x2963B7C
+	0x0360658C TBZ X0, 0x0, 0x36065D8
+	0x03606590 ADRP X8, 0x20F9000
+	0x03606594 ADD X0, X19, 0x28
+	0x03606598 LDR X8, [X8 + 0x1E8]
+	0x0360659C LDR X1, [X8]
+	0x036065A0 BL 0x2963CA0
+	0x036065A4 ADRP X8, 0x212B000
+
+ISIL:
+	001 Move W9, [X0+20]
+	002 Move W8, [X0+24]
+	003 Move W10, [X0+44]
+	004 Subtract W8, W8, 1
+	005 Subtract W9, W9, 1
+	006 NotImplemented "Instruction CMP not yet implemented."
+	007 Move [X0+20], W9
+	008 NotImplemented "Instruction CSINC not yet implemented."
+	009 Move [X0+44], W8
+	010 Return 
+
+Method: System.Void ResetCycles()
+
+Disassembly:
+	0x036065A8 ADD X1, X31, 0xC
+	0x036065AC ADD X2, X31, 0x8
+	0x036065B0 LDR X8, [X8 + 0x4D8]
+
+ISIL:
+	001 Move W8, [X0+40]
+	002 Move [X0+20], W8
+	003 Return 
+
+Method: System.Boolean AreCyclesFull()
+
+Disassembly:
+	0x036065B4 LDR X9, [X0]
+	0x036065B8 ADD X0, X31, 0x18
+	0x036065BC LDR X3, [X8]
+	0x036065C0 STR X9, [X31 + 0x18]
+	0x036065C4 BL 0x2A04C20
+
+ISIL:
+	001 Move W8, [X0+20]
+	002 Move W9, [X0+40]
+	003 NotImplemented "Instruction CMP not yet implemented."
+	004 NotImplemented "Instruction CSET not yet implemented."
+	005 Return X0
+

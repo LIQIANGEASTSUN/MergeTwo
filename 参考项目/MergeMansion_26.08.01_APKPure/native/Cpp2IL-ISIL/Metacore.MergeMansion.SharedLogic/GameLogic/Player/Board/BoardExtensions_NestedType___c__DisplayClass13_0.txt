@@ -1,0 +1,40 @@
+Type: GameLogic.Player.Board.BoardExtensions+<>c__DisplayClass13_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0366F344 MOV X0, X19
+	0x0366F348 BL 0x239BB88
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <FindItems>b__0(System.ValueTuple`2<GameLogic.Player.Board.Coordinate, GameLogic.Player.Items.MergeItem> pair)
+
+Disassembly:
+	0x036725BC CBZ X0, 0x36737F0
+	0x036725C0 LDRB W23, [X0 + 0x10]
+	0x036725C4 MOV X0, X26
+	0x036725C8 MOV X1, X31
+	0x036725CC BL 0x35CF218
+	0x036725D0 CBZ X0, 0x36737E8
+	0x036725D4 LDR W28, [X0 + 0x14]
+	0x036725D8 MOV X0, X26
+	0x036725DC MOV X1, X31
+	0x036725E0 BL 0x35CF218
+
+ISIL:
+	001 Move X9, [X0+16]
+	002 Compare X9, 0
+	003 JumpIfEqual {10}
+	004 Move X8, [X9+40]
+	005 Move X0, [X9+64]
+	006 Move X1, X2
+	007 Move X3, [X9+24]
+	008 Move X2, X8
+	009 CallNoReturn X3
+	010 Move [X31-16], X30
+	011 Call 0x239FB90
+

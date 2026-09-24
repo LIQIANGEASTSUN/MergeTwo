@@ -1,0 +1,52 @@
+// Namespace: Merger.Game.ViewModel
+public class InventoryProducerViewModel : GameBaseViewModel // TypeDefIndex: 8289
+{
+	// Fields
+	[Inject]
+	private IInventoryModel _inventoryModel; // 0xD0
+	[Inject]
+	private IProducerInventoryConfigurationModel _producerInventoryConfigurationModel; // 0xD8
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0xE0
+	[Inject]
+	private IPlayerModel _playerModel; // 0xE8
+	private InventorySystem _inventorySystem; // 0xF0
+
+	// Properties
+	public List<ProducerInventorySlotViewData> UnlocksAtItems { get; }
+	public ReadOnlyCollection<IMergeItem> UnlockedProducerSlotItems { get; }
+	public ReadOnlyCollection<string> NewProducerSlotItemIds { get; }
+	private InventorySystem InventorySystem { get; }
+
+	// Methods
+
+	// RVA: 0x662BBDC Offset: 0x6627BDC VA: 0x662BBDC
+	public List<ProducerInventorySlotViewData> get_UnlocksAtItems() { }
+
+	// RVA: 0x662BD90 Offset: 0x6627D90 VA: 0x662BD90
+	public ReadOnlyCollection<IMergeItem> get_UnlockedProducerSlotItems() { }
+
+	// RVA: 0x662BE18 Offset: 0x6627E18 VA: 0x662BE18
+	public ReadOnlyCollection<string> get_NewProducerSlotItemIds() { }
+
+	// RVA: 0x662BDAC Offset: 0x6627DAC VA: 0x662BDAC
+	private InventorySystem get_InventorySystem() { }
+
+	// RVA: 0x662BE34 Offset: 0x6627E34 VA: 0x662BE34
+	public void TryRemoveItem(int slotIndex) { }
+
+	// RVA: 0x662BEC8 Offset: 0x6627EC8 VA: 0x662BEC8
+	public IMergeItem GetItem(int slotIndex) { }
+
+	// RVA: 0x662BF78 Offset: 0x6627F78 VA: 0x662BF78
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x662BF80 Offset: 0x6627F80 VA: 0x662BF80
+	private bool <get_UnlocksAtItems>b__6_0(InventoryProducerSlotUnlock el) { }
+
+	[CompilerGenerated]
+	// RVA: 0x662C054 Offset: 0x6628054 VA: 0x662C054
+	private ProducerInventorySlotViewData <get_UnlocksAtItems>b__6_1(InventoryProducerSlotUnlock x) { }
+}
+

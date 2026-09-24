@@ -1,0 +1,12 @@
+// Namespace: Paxie.MergeStudio.Features.MiniBoard
+public class MiniBoardCellMergeCollider : MonoBehaviour // TypeDefIndex: 1083
+{
+	// Fields
+	public MiniBoardCellController CellController; // 0x10
+
+	// Methods
+
+	// RVA: 0x17AFD5C Offset: 0x17AFD5C VA: 0x17AFD5C
+	public void .ctor() { }
+}
+

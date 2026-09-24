@@ -1,0 +1,30 @@
+// Namespace: MergePuzzle
+public class ItemMovableInputManager : MonoBehaviour // TypeDefIndex: 1639
+{
+	// Fields
+	private static Movable _lastDraggedItem; // 0x0
+
+	// Methods
+
+	// RVA: 0x18C5DC4 Offset: 0x18C5DC4 VA: 0x18C5DC4
+	public static void ResetStatus() { }
+
+	// RVA: 0x18C5E2C Offset: 0x18C5E2C VA: 0x18C5E2C
+	public static void OnBeginDrag(Movable movable) { }
+
+	// RVA: 0x18C5F54 Offset: 0x18C5F54 VA: 0x18C5F54
+	public static void OnDragEnded(Movable movable) { }
+
+	// RVA: 0x18C5E94 Offset: 0x18C5E94 VA: 0x18C5E94
+	private static void HandleLastDraggedItem() { }
+
+	// RVA: 0x18C5DC8 Offset: 0x18C5DC8 VA: 0x18C5DC8
+	private static void ClearLastDraggedItem() { }
+
+	// RVA: 0x18C5FF4 Offset: 0x18C5FF4 VA: 0x18C5FF4
+	private void Update() { }
+
+	// RVA: 0x18C6028 Offset: 0x18C6028 VA: 0x18C6028
+	public void .ctor() { }
+}
+

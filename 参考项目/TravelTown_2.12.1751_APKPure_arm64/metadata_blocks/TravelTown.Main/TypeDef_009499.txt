@@ -1,0 +1,93 @@
+// Namespace: Merger.Game.Signal.Bubbles
+public class BubbleRemoveSignalBase : MergeItemBubbleSignalBase // TypeDefIndex: 9499
+{
+	// Fields
+	[CompilerGenerated]
+	private bool <HasBurstPrice>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private int <BurstPrice>k__BackingField; // 0x2C
+	[CompilerGenerated]
+	private PlayerResourceEnum <BurstResourceType>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private double <BubbleExpirationTimeInSeconds>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private int <BubblesOnBoard>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private bool <HasOptionToBurstBubbleWithAd>k__BackingField; // 0x44
+	[CompilerGenerated]
+	private BubbledItemExpiredSignal.Collectable <SpawnedCollectable>k__BackingField; // 0x48
+
+	// Properties
+	public bool HasBurstPrice { get; set; }
+	public int BurstPrice { get; set; }
+	public PlayerResourceEnum BurstResourceType { get; set; }
+	public double BubbleExpirationTimeInSeconds { get; set; }
+	public int BubblesOnBoard { get; set; }
+	public bool HasOptionToBurstBubbleWithAd { get; set; }
+	public BubbledItemExpiredSignal.Collectable SpawnedCollectable { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x676E678 Offset: 0x676A678 VA: 0x676E678
+	public bool get_HasBurstPrice() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E680 Offset: 0x676A680 VA: 0x676E680
+	public void set_HasBurstPrice(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E68C Offset: 0x676A68C VA: 0x676E68C
+	public int get_BurstPrice() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E694 Offset: 0x676A694 VA: 0x676E694
+	public void set_BurstPrice(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E69C Offset: 0x676A69C VA: 0x676E69C
+	public PlayerResourceEnum get_BurstResourceType() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E6A4 Offset: 0x676A6A4 VA: 0x676E6A4
+	public void set_BurstResourceType(PlayerResourceEnum value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E6AC Offset: 0x676A6AC VA: 0x676E6AC
+	public double get_BubbleExpirationTimeInSeconds() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E6B4 Offset: 0x676A6B4 VA: 0x676E6B4
+	public void set_BubbleExpirationTimeInSeconds(double value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E6BC Offset: 0x676A6BC VA: 0x676E6BC
+	public int get_BubblesOnBoard() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E6C4 Offset: 0x676A6C4 VA: 0x676E6C4
+	public void set_BubblesOnBoard(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E6CC Offset: 0x676A6CC VA: 0x676E6CC
+	public bool get_HasOptionToBurstBubbleWithAd() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E6D4 Offset: 0x676A6D4 VA: 0x676E6D4
+	public void set_HasOptionToBurstBubbleWithAd(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E6E0 Offset: 0x676A6E0 VA: 0x676E6E0
+	public BubbledItemExpiredSignal.Collectable get_SpawnedCollectable() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E6E8 Offset: 0x676A6E8 VA: 0x676E6E8
+	public void set_SpawnedCollectable(BubbledItemExpiredSignal.Collectable value) { }
+
+	// RVA: 0x676E6F0 Offset: 0x676A6F0 VA: 0x676E6F0
+	protected void .ctor(IMergeItem item) { }
+
+	// RVA: 0x676E650 Offset: 0x676A650 VA: 0x676E650
+	protected void .ctor(IMergeItem item, int level) { }
+}
+

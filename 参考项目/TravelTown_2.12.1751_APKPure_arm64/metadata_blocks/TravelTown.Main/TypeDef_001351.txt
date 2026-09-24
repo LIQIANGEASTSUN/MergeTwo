@@ -1,0 +1,12 @@
+// Namespace: MergeEngine.Configuration.Definitions.WeakReferences.References
+public interface IItemWeakReference : IStringKeyWeakReference // TypeDefIndex: 1351
+{
+	// Properties
+	public abstract IItem Item { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract IItem get_Item();
+}
+

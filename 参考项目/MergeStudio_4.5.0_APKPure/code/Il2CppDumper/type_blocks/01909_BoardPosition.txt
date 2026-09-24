@@ -1,0 +1,21 @@
+// Namespace: MergePuzzle
+public class BoardPosition // TypeDefIndex: 1909
+{
+	// Fields
+	public Coordinate Index; // 0x8
+	public CellController Cell; // 0x10
+	[CanBeNull]
+	public ItemController Item; // 0x14
+
+	// Methods
+
+	// RVA: 0x192796C Offset: 0x192796C VA: 0x192796C
+	public void .ctor() { }
+
+	// RVA: 0x1927974 Offset: 0x1927974 VA: 0x1927974
+	public void .ctor(Coordinate index) { }
+
+	// RVA: 0x1927998 Offset: 0x1927998 VA: 0x1927998
+	public void SetItemToNull() { }
+}
+

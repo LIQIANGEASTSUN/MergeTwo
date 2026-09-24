@@ -1,0 +1,14 @@
+// Namespace: Framework.Core.Services.Backend.Remote.Payloads.BoardState
+[Serializable]
+public class InventorySlotCost // TypeDefIndex: 10982
+{
+	// Fields
+	public string Name; // 0x10
+	public int Value; // 0x18
+
+	// Methods
+
+	// RVA: 0x6927680 Offset: 0x6923680 VA: 0x6927680
+	public void .ctor() { }
+}
+

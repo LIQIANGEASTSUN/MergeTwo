@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemCollectionHandler.<>c__DisplayClass72_0 // TypeDefIndex: 406
+{
+	// Fields
+	public List<int> currentTabSets; // 0x8
+
+	// Methods
+
+	// RVA: 0x1BA0018 Offset: 0x1BA0018 VA: 0x1BA0018
+	public void .ctor() { }
+
+	// RVA: 0x1BA1878 Offset: 0x1BA1878 VA: 0x1BA1878
+	internal bool <TryGetTargetSetsOnSameTab>b__0(int el) { }
+}
+

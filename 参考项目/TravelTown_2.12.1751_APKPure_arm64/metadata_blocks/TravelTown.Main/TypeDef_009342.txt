@@ -1,0 +1,20 @@
+// Namespace: Merger.Game.Signal
+public class BoardItemSelectedSignal // TypeDefIndex: 9342
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly SelectedBoardItem <SelectedBoardItem>k__BackingField; // 0x10
+
+	// Properties
+	public SelectedBoardItem SelectedBoardItem { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x676ABC8 Offset: 0x6766BC8 VA: 0x676ABC8
+	public SelectedBoardItem get_SelectedBoardItem() { }
+
+	// RVA: 0x676ABD0 Offset: 0x6766BD0 VA: 0x676ABD0
+	public void .ctor(SelectedBoardItem selectedBoardItem) { }
+}
+

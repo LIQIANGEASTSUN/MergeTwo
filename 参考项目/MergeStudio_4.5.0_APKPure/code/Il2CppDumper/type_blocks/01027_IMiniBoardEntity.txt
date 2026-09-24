@@ -1,0 +1,48 @@
+// Namespace: Paxie.MergeStudio.Features.MiniBoard
+public interface IMiniBoardEntity // TypeDefIndex: 1027
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract bool IsBoardFull();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract Coordinate GetItemCoordinate(MiniBoardItemEntity miniBoardItemEntity);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract List<MiniBoardRewardEntity> GetActiveRewards();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void AddToActiveRewards(int setID, int level, int amount, bool updateBoardIcon);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract void AddToActiveRewards(int setID, int level, GameMainReward mainReward, int amount, bool updateBoardIcon);
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract void AddRewardToActiveRewardsFromStart(int setID, int level);
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract void AddRewardToActiveRewardsFromStart(int setID, int level, MiniBoardItemEntity itemEntity);
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract void AddToActiveRewards(int setID, int level);
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract void AddToActiveRewards(int setID, int level, GameMainReward mainReward);
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract Queue<MiniBoardProgressionMergedRewards> GetMergedRewardsQueue();
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public abstract void AddToMergedRewardList(MiniBoardItemEntity itemEntity, int setID, int level);
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public abstract void AddToMergedRewardList(MiniBoardItemEntity itemEntity, int setID, int level, GameMainReward mainReward);
+
+	// RVA: -1 Offset: -1 Slot: 12
+	public abstract void ConvertAndAddToMergedRewardList(List<MiniBoardItemEntity> convertedItemEntities, MiniBoardItemEntity createdItemEntity);
+
+	// RVA: -1 Offset: -1 Slot: 13
+	public abstract void ConvertAllMergedRewardsToMaxLevelItem(int setID, int level);
+}
+

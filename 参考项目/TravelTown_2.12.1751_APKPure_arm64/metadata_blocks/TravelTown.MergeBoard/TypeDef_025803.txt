@@ -1,0 +1,16 @@
+// Namespace: Merger.MergeBoard.Providers
+public interface IOperationTrackingMetadataProvider // TypeDefIndex: 25803
+{
+	// Properties
+	public abstract string Topic { get; }
+	public abstract string Action { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract string get_Topic();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract string get_Action();
+}
+

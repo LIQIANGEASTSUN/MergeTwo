@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemChainScriptableData.<>c__DisplayClass6_0 // TypeDefIndex: 1754
+{
+	// Fields
+	public ItemLinkID linkID; // 0x8
+
+	// Methods
+
+	// RVA: 0x19125F8 Offset: 0x19125F8 VA: 0x19125F8
+	public void .ctor() { }
+
+	// RVA: 0x19126F8 Offset: 0x19126F8 VA: 0x19126F8
+	internal bool <GetLinkDataByID>b__0(ItemLinkScriptableData l) { }
+}
+

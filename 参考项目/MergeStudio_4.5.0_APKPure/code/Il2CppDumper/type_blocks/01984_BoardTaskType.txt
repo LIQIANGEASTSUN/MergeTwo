@@ -1,0 +1,13 @@
+// Namespace: MergePuzzle
+public enum BoardTaskType // TypeDefIndex: 1984
+{
+	// Fields
+	public int value__; // 0x0
+	public const BoardTaskType Default = 0;
+	public const BoardTaskType Special = 1;
+	public const BoardTaskType Dynamic = 2;
+	public const BoardTaskType TimeLimited = 3;
+	public const BoardTaskType GemIndex = 4;
+	public const BoardTaskType Sweeper = 5;
+}
+

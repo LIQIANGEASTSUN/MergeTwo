@@ -1,0 +1,4 @@
+// Namespace: Merger.MergeBoard.Components
+public struct FixedPositionComponent : IComponent // TypeDefIndex: 26000
+{}
+

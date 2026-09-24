@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class HintUtil.<>c__DisplayClass14_0 // TypeDefIndex: 616
+{
+	// Fields
+	public IMergingConfigurationModel mergingConfigurationModel; // 0x10
+
+	// Methods
+
+	// RVA: 0x6276584 Offset: 0x6272584 VA: 0x6276584
+	public void .ctor() { }
+
+	// RVA: 0x6277190 Offset: 0x6273190 VA: 0x6277190
+	internal bool <CountMergeTiles>b__1(MergeComponent item) { }
+}
+

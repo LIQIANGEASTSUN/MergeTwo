@@ -1,0 +1,37 @@
+// Namespace: MergeEngine.Model
+[Extension]
+public static class PlayerResourceEnumExtensions // TypeDefIndex: 434
+{
+	// Fields
+	public static readonly PlayerResourceEnum[] ActiveTools; // 0x0
+
+	// Methods
+
+	[Extension]
+	// RVA: 0x61253C0 Offset: 0x61213C0 VA: 0x61253C0
+	public static bool IsTool(PlayerResourceEnum resource) { }
+
+	[Extension]
+	// RVA: 0x61253D0 Offset: 0x61213D0 VA: 0x61253D0
+	public static string ConvertToString(PlayerResourceEnum resource) { }
+
+	[Extension]
+	// RVA: 0x612554C Offset: 0x612154C VA: 0x612554C
+	public static bool IsEnergy(PlayerResourceEnum resource) { }
+
+	[Extension]
+	// RVA: 0x612555C Offset: 0x612155C VA: 0x612555C
+	public static ShopCategoryItemType GetShopCategoryType(PlayerResourceEnum resource) { }
+
+	[Extension]
+	// RVA: 0x6125580 Offset: 0x6121580 VA: 0x6125580
+	public static string GetSpriteName(PlayerResourceEnum resource) { }
+
+	[Extension]
+	// RVA: 0x61255E4 Offset: 0x61215E4 VA: 0x61255E4
+	public static bool IsBoardEventResource(PlayerResourceEnum resource) { }
+
+	// RVA: 0x61255F4 Offset: 0x61215F4 VA: 0x61255F4
+	private static void .cctor() { }
+}
+

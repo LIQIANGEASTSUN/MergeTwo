@@ -1,0 +1,81 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardController.<>c // TypeDefIndex: 1864
+{
+	// Fields
+	public static readonly BoardController.<>c <>9; // 0x0
+	public static Func<BoardPositionData, bool> <>9__140_0; // 0x4
+	public static Predicate<ItemController> <>9__158_0; // 0x8
+	public static Func<ItemController, bool> <>9__158_1; // 0xC
+	public static Func<ItemController, bool> <>9__159_0; // 0x10
+	public static Action<ITaskProgressHandler> <>9__191_0; // 0x14
+	public static Predicate<BoardPosition> <>9__208_0; // 0x18
+	public static Func<BoardPosition, CellController> <>9__251_0; // 0x1C
+	public static Func<CellController, Coordinate> <>9__251_1; // 0x20
+	public static Func<CellEntity, Coordinate> <>9__269_0; // 0x24
+	public static Func<BoardTaskItem, bool> <>9__283_0; // 0x28
+	public static Func<BoardItemData, bool> <>9__283_1; // 0x2C
+	public static Func<BoardPosition, CellController> <>9__298_0; // 0x30
+	public static Func<CellController, Coordinate> <>9__298_1; // 0x34
+	public static Func<BalanceLevelRewardConfigModel.DiscoveryBoxConfigModel.DiscoveryRewardItemModel, int> <>9__300_0; // 0x38
+	public static Action <>9__316_0; // 0x3C
+	public static Predicate<BoardPosition> <>9__325_0; // 0x40
+
+	// Methods
+
+	// RVA: 0x1917B14 Offset: 0x1917B14 VA: 0x1917B14
+	private static void .cctor() { }
+
+	// RVA: 0x1917B88 Offset: 0x1917B88 VA: 0x1917B88
+	public void .ctor() { }
+
+	// RVA: 0x1917B90 Offset: 0x1917B90 VA: 0x1917B90
+	internal bool <LoadBoard>b__140_0(BoardPositionData data) { }
+
+	// RVA: 0x1917BB4 Offset: 0x1917BB4 VA: 0x1917BB4
+	internal bool <StartSpawnerAnimations>b__158_0(ItemController spawnerItem) { }
+
+	// RVA: 0x1917C20 Offset: 0x1917C20 VA: 0x1917C20
+	internal bool <StartSpawnerAnimations>b__158_1(ItemController spawner) { }
+
+	// RVA: 0x1917C58 Offset: 0x1917C58 VA: 0x1917C58
+	internal bool <GetSpawnerAnimationPosition>b__159_0(ItemController spawner) { }
+
+	// RVA: 0x1917C90 Offset: 0x1917C90 VA: 0x1917C90
+	internal void <MergeItemsOnBoard>b__191_0(ITaskProgressHandler handler) { }
+
+	// RVA: 0x1917D48 Offset: 0x1917D48 VA: 0x1917D48
+	internal bool <ArrangeTutorialEventsOnSetItems>b__208_0(BoardPosition pos) { }
+
+	// RVA: 0x1917EC0 Offset: 0x1917EC0 VA: 0x1917EC0
+	internal CellController <GetAvailableNeighborCellPositions>b__251_0(BoardPosition pos) { }
+
+	// RVA: 0x1917EDC Offset: 0x1917EDC VA: 0x1917EDC
+	internal Coordinate <GetAvailableNeighborCellPositions>b__251_1(CellController cell) { }
+
+	// RVA: 0x1917F14 Offset: 0x1917F14 VA: 0x1917F14
+	internal Coordinate <GetAvailableCellCoordinates>b__269_0(CellEntity cell) { }
+
+	// RVA: 0x1917F3C Offset: 0x1917F3C VA: 0x1917F3C
+	internal bool <TryFixSpecialTaskSpawner>b__283_0(BoardTaskItem item) { }
+
+	// RVA: 0x1917F64 Offset: 0x1917F64 VA: 0x1917F64
+	internal bool <TryFixSpecialTaskSpawner>b__283_1(BoardItemData data) { }
+
+	// RVA: 0x1917FE8 Offset: 0x1917FE8 VA: 0x1917FE8
+	internal CellController <IsNextToAutoSpawner>b__298_0(BoardPosition pos) { }
+
+	// RVA: 0x1918004 Offset: 0x1918004 VA: 0x1918004
+	internal Coordinate <IsNextToAutoSpawner>b__298_1(CellController cell) { }
+
+	// RVA: 0x191803C Offset: 0x191803C VA: 0x191803C
+	internal int <GetDiscoveryBoxIds>b__300_0(BalanceLevelRewardConfigModel.DiscoveryBoxConfigModel.DiscoveryRewardItemModel reward) { }
+
+	// RVA: 0x1918058 Offset: 0x1918058 VA: 0x1918058
+	internal void <ArrangeBubbleInterstitial>b__316_0() { }
+
+	// RVA: 0x19180DC Offset: 0x19180DC VA: 0x19180DC
+	internal bool <OnEvent>b__325_0(BoardPosition position) { }
+}
+

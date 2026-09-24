@@ -1,0 +1,137 @@
+// Namespace: Activity.LuckyGoldenPearls
+public class LuckyGoldenPearlsModel : ActivityEntityBase, I_ActivityStatus // TypeDefIndex: 6589
+{
+	// Fields
+	private static LuckyGoldenPearlsModel _instance; // 0x0
+	public bool CanBreak; // 0x39
+	private static GameObject _flyItemObj; // 0x4
+	private static string coolTimeKey; // 0x8
+	private static string coolTimeKey_Preheating; // 0xC
+
+	// Properties
+	public static LuckyGoldenPearlsModel Instance { get; }
+	public override string Guid { get; }
+	public StorageLuckyGoldenEgg LuckyGoldenPearls { get; }
+	public static GameObject FlyItemObj { get; }
+
+	// Methods
+
+	// RVA: 0x1B91DB8 Offset: 0x1B91DB8 VA: 0x1B91DB8
+	public static LuckyGoldenPearlsModel get_Instance() { }
+
+	// RVA: 0x1BA0D68 Offset: 0x1BA0D68 VA: 0x1BA0D68 Slot: 4
+	public override string get_Guid() { }
+
+	// RVA: 0x1B99704 Offset: 0x1B99704 VA: 0x1B99704
+	public StorageLuckyGoldenEgg get_LuckyGoldenPearls() { }
+
+	[RuntimeInitializeOnLoadMethod(0)]
+	// RVA: 0x1BA0DF8 Offset: 0x1BA0DF8 VA: 0x1BA0DF8
+	private static void InitAuto() { }
+
+	// RVA: 0x1BA0EB0 Offset: 0x1BA0EB0 VA: 0x1BA0EB0 Slot: 5
+	public override void InitFromServerData(string activityId, string activityType, ulong startTime, ulong endTime, ulong rewardEndTime, bool manualEnd, string configJson, string activitySubType) { }
+
+	// RVA: 0x1BA108C Offset: 0x1BA108C VA: 0x1BA108C Slot: 19
+	public override void UpdateActivityState() { }
+
+	// RVA: 0x1BA10F0 Offset: 0x1BA10F0 VA: 0x1BA10F0 Slot: 23
+	public override bool CanDownLoadRes() { }
+
+	// RVA: 0x1BA119C Offset: 0x1BA119C VA: 0x1BA119C Slot: 18
+	protected override void InitServerDataFinish() { }
+
+	// RVA: 0x1BA1374 Offset: 0x1BA1374 VA: 0x1BA1374
+	public int PayLevelGroup() { }
+
+	// RVA: 0x1BA0BF0 Offset: 0x1BA0BF0 VA: 0x1BA0BF0
+	public bool IsOpen() { }
+
+	// RVA: 0x1B9EE88 Offset: 0x1B9EE88 VA: 0x1B9EE88
+	public void Start() { }
+
+	// RVA: 0x1BA05BC Offset: 0x1BA05BC VA: 0x1BA05BC
+	public bool IsStart() { }
+
+	// RVA: 0x1B9E7E0 Offset: 0x1B9E7E0 VA: 0x1B9E7E0
+	public bool IsPreheating() { }
+
+	// RVA: 0x1BA1460 Offset: 0x1BA1460 VA: 0x1BA1460 Slot: 27
+	public virtual string GetActivityPreheatLeftTimeString() { }
+
+	// RVA: 0x1BA1524 Offset: 0x1BA1524 VA: 0x1BA1524
+	public ulong GetActivityPreheatLeftTime() { }
+
+	// RVA: 0x1BA1758 Offset: 0x1BA1758 VA: 0x1BA1758
+	public void AddGoldenEgg(int count) { }
+
+	// RVA: 0x1B98784 Offset: 0x1B98784 VA: 0x1B98784
+	public int GetGoldenEgg() { }
+
+	// RVA: 0x1BA0630 Offset: 0x1BA0630 VA: 0x1BA0630
+	public float GetCostProgress() { }
+
+	// RVA: 0x1BA06C4 Offset: 0x1BA06C4 VA: 0x1BA06C4
+	public int GetCastEnergy() { }
+
+	// RVA: 0x1BA17DC Offset: 0x1BA17DC VA: 0x1BA17DC
+	public void TryProductHammer(int index, int id, MergeBoard board, int doubleEnergyTimes) { }
+
+	// RVA: 0x1BA211C Offset: 0x1BA211C VA: 0x1BA211C
+	public static GameObject get_FlyItemObj() { }
+
+	// RVA: 0x1BA1E40 Offset: 0x1BA1E40 VA: 0x1BA1E40
+	public static void FlyHammer(Vector2 srcPos, Transform starTransform, float time, bool showEffect, Action action) { }
+
+	// RVA: 0x1BA236C Offset: 0x1BA236C VA: 0x1BA236C
+	public void PurchaseSuccess(TableShop cfg) { }
+
+	// RVA: 0x1BA26FC Offset: 0x1BA26FC VA: 0x1BA26FC
+	public void PopReward(List<ResData> listResData) { }
+
+	// RVA: 0x1B91EA4 Offset: 0x1B91EA4 VA: 0x1B91EA4
+	public bool IsBreak(int index) { }
+
+	// RVA: 0x1B92A18 Offset: 0x1B92A18 VA: 0x1B92A18
+	public void BreakItem(int index, LuckyGoldenPearlsLevelConfig levelConfig) { }
+
+	// RVA: 0x1BA2A48 Offset: 0x1BA2A48 VA: 0x1BA2A48
+	public Transform GetFlyTarget() { }
+
+	// RVA: 0x1B9FF94 Offset: 0x1B9FF94 VA: 0x1B9FF94
+	public void OpenMainPopup() { }
+
+	// RVA: 0x1BA2C00 Offset: 0x1BA2C00 VA: 0x1BA2C00
+	public static bool CanShowUI() { }
+
+	// RVA: 0x1BA31FC Offset: 0x1BA31FC VA: 0x1BA31FC Slot: 26
+	public I_ActivityStatus.ActivityStatus GetActivityStatus() { }
+
+	// RVA: 0x1BA13E0 Offset: 0x1BA13E0 VA: 0x1BA13E0
+	public void SetActivityStatus(I_ActivityStatus.ActivityStatus status) { }
+
+	// RVA: 0x1BA3268 Offset: 0x1BA3268 VA: 0x1BA3268
+	public void DebugSet() { }
+
+	// RVA: 0x1BA3468 Offset: 0x1BA3468 VA: 0x1BA3468
+	public void DebugSetPreTime() { }
+
+	// RVA: 0x1BA0CF8 Offset: 0x1BA0CF8 VA: 0x1BA0CF8
+	public void .ctor() { }
+
+	// RVA: 0x1BA34C4 Offset: 0x1BA34C4 VA: 0x1BA34C4
+	private static void .cctor() { }
+
+	// RVA: 0x1BA3568 Offset: 0x1BA3568 VA: 0x1BA3568
+	public void <>iFixBaseProxy_InitFromServerData(string P0, string P1, ulong P2, ulong P3, ulong P4, bool P5, string P6, string P7) { }
+
+	// RVA: 0x1BA35C0 Offset: 0x1BA35C0 VA: 0x1BA35C0
+	public void <>iFixBaseProxy_UpdateActivityState() { }
+
+	// RVA: 0x1BA35C8 Offset: 0x1BA35C8 VA: 0x1BA35C8
+	public bool <>iFixBaseProxy_CanDownLoadRes() { }
+
+	// RVA: 0x1BA35D0 Offset: 0x1BA35D0 VA: 0x1BA35D0
+	public void <>iFixBaseProxy_InitServerDataFinish() { }
+}
+

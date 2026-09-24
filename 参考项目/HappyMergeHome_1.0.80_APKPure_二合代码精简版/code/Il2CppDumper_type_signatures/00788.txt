@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MomentsLightModel.<>c__DisplayClass21_0 // TypeDefIndex: 788
+{
+	// Fields
+	public int picId; // 0x8
+
+	// Methods
+
+	// RVA: 0x19DEE58 Offset: 0x19DEE58 VA: 0x19DEE58
+	public void .ctor() { }
+
+	// RVA: 0x19E1D18 Offset: 0x19E1D18 VA: 0x19E1D18
+	internal bool <GetPicProgress>b__0(MomentsLightPic pic) { }
+}
+

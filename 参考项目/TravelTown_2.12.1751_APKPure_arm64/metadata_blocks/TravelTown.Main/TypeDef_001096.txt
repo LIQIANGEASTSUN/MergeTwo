@@ -1,0 +1,13 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public class ToolSpawningComponent : ComponentBase<ToolSpawningCapability> // TypeDefIndex: 1096
+{
+	// Fields
+	public readonly List<WeightedTool> ToolsWeights; // 0x28
+	public readonly List<WeightedToolLevel> ToolLevelsWeights; // 0x30
+
+	// Methods
+
+	// RVA: 0x68FE304 Offset: 0x68FA304 VA: 0x68FE304
+	public void .ctor(ToolSpawningCapability capability, Entity entity) { }
+}
+

@@ -1,0 +1,37 @@
+// Namespace: Paxie.MergeStudio.GameCore.Gameplay.Board.Items
+[CreateAssetMenu(fileName = "BoardItemStaticInteractable", menuName = "Scriptable/BoardItem/StaticInteractable", order = 3)]
+public class BoardItemStaticInteractable : BoardItemNonSpawnable // TypeDefIndex: 953
+{
+	// Methods
+
+	// RVA: 0x178FD00 Offset: 0x178FD00 VA: 0x178FD00 Slot: 4
+	public override bool Initialize(BoardEntity boardEntity, IItemController item, long millisecondsPassed, bool isNewlyCreated) { }
+
+	// RVA: 0x178FD08 Offset: 0x178FD08 VA: 0x178FD08 Slot: 6
+	public override int GetTimeRequiredToExitCharging() { }
+
+	// RVA: 0x178FD10 Offset: 0x178FD10 VA: 0x178FD10 Slot: 8
+	public override bool IsMergeable(IItemRuntimeData itself, IItemRuntimeData other) { }
+
+	// RVA: 0x178FD18 Offset: 0x178FD18 VA: 0x178FD18 Slot: 9
+	public override bool IsMergeable(IItemRuntimeData itself) { }
+
+	// RVA: 0x178FD20 Offset: 0x178FD20 VA: 0x178FD20 Slot: 10
+	public override bool IsMergeable(IItemEntity itemEntity) { }
+
+	// RVA: 0x178FD28 Offset: 0x178FD28 VA: 0x178FD28 Slot: 13
+	public override bool CanThrownIntoBoard() { }
+
+	// RVA: 0x178FD30 Offset: 0x178FD30 VA: 0x178FD30 Slot: 14
+	public override bool IsDraggable() { }
+
+	// RVA: 0x178FD38 Offset: 0x178FD38 VA: 0x178FD38 Slot: 15
+	public override bool IsClickable() { }
+
+	// RVA: 0x178FD40 Offset: 0x178FD40 VA: 0x178FD40 Slot: 16
+	public override bool OpenBadgeAtMaxLevel() { }
+
+	// RVA: 0x178FD48 Offset: 0x178FD48 VA: 0x178FD48
+	public void .ctor() { }
+}
+

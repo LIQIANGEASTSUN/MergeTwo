@@ -1,0 +1,12 @@
+// Namespace: Merger.Rewards.Interfaces.Datas
+public interface IRewardItemViewData : IRewardViewData, IRewardTextRepresented, IRewardTooltipData, IEquatable<IRewardViewData>, IRewardViewPresentable, IRewardData, IPrioritizedOrderReward // TypeDefIndex: 2984
+{
+	// Properties
+	public abstract IItem Item { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract IItem get_Item();
+}
+

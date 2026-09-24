@@ -1,0 +1,4 @@
+// Namespace: 
+public struct BoardEvent.SellItemDestroyed : IEvent // TypeDefIndex: 1784
+{}
+

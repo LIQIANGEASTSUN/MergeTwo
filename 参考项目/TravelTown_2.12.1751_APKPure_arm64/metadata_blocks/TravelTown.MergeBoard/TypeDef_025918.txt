@@ -1,0 +1,14 @@
+// Namespace: Merger.MergeBoard.Data
+[Serializable]
+public class DynamicBoardCellConfiguration : StartingBoardCell // TypeDefIndex: 25918
+{
+	// Fields
+	[JsonProperty("index")]
+	public int Index; // 0x34
+
+	// Methods
+
+	// RVA: 0x6A99F9C Offset: 0x6A95F9C VA: 0x6A99F9C
+	public void .ctor() { }
+}
+

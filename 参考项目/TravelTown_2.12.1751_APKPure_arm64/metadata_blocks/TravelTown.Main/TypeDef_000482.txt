@@ -1,0 +1,54 @@
+// Namespace: MergeEngine.Model.RemoteSpawning
+public class PushedGraphItemsModel : ModelBase, IPushedItemsModel // TypeDefIndex: 482
+{
+	// Fields
+	[Inject]
+	private IJsonService _jsonService; // 0x28
+	[Inject]
+	protected IMergingConfigurationModel _mergingConfigurationModel; // 0x30
+	private const string ModelCacheKey = "PushedItemsModel";
+	private Dictionary<string, List<PushedGraphItemsModel.PushedGraphItem>> graphContextPushedItems; // 0x38
+	private List<string> _processedPushIds; // 0x40
+
+	// Methods
+
+	// RVA: 0x612D6DC Offset: 0x61296DC VA: 0x612D6DC Slot: 17
+	protected override void InitializeModel() { }
+
+	// RVA: 0x612D774 Offset: 0x6129774 VA: 0x612D774 Slot: 18
+	protected override void DisposeModel() { }
+
+	// RVA: 0x612D800 Offset: 0x6129800 VA: 0x612D800 Slot: 19
+	public void AddPushItem(PushedItem pushedItem) { }
+
+	// RVA: 0x612DB30 Offset: 0x6129B30 VA: 0x612DB30
+	private PushedGraphItemsModel.PushedGraphItem ConvertToPushedGraphItem(string pushId, string itemId, GraphPushedItemData extraData) { }
+
+	// RVA: 0x612DBDC Offset: 0x6129BDC VA: 0x612DBDC
+	private void AddPushedGraphItem(PushedGraphItemsModel.PushedGraphItem itemData, string graphId) { }
+
+	// RVA: 0x612E0B0 Offset: 0x612A0B0 VA: 0x612E0B0 Slot: 21
+	public PushedItemNotificationData FindItemToPushForSpawner(string spawnerId) { }
+
+	// RVA: 0x612E438 Offset: 0x612A438 VA: 0x612E438 Slot: 22
+	public string PeekItemForSpawner(string spawnerId) { }
+
+	// RVA: 0x612D790 Offset: 0x6129790 VA: 0x612D790 Slot: 20
+	public void SaveCache() { }
+
+	// RVA: 0x612D6F8 Offset: 0x61296F8 VA: 0x612D6F8
+	public void LoadCache() { }
+
+	// RVA: 0x612E868 Offset: 0x612A868 VA: 0x612E868
+	private void LoadFromJson(string json) { }
+
+	// RVA: 0x612E778 Offset: 0x612A778 VA: 0x612E778
+	private string SaveToJson() { }
+
+	// RVA: 0x612E0B4 Offset: 0x612A0B4 VA: 0x612E0B4
+	private PushedItemNotificationData FindGraphItemToPush(string spawnerId) { }
+
+	// RVA: 0x612E96C Offset: 0x612A96C VA: 0x612E96C
+	public void .ctor() { }
+}
+

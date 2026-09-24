@@ -1,0 +1,30 @@
+Type: GameLogic.Player.PlayerExtensions+<>c__DisplayClass18_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x035592EC LDRSW X9, [X10]
+	0x035592F0 ADD X8, X8, X9, 0x4, LSL
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <IsCalendarAvailable>b__0(TimedMergeBoards.TimedMergeBoard tm)
+
+Disassembly:
+	0x035592F4 ADD X0, X8, 0x138
+	0x035592F8 LDP X2, X1, [X0]
+	0x035592FC MOV X0, X19
+	0x03559300 LDP X20, X19, [X31 + 0x10]
+	0x03559304 LDR X30, [X31], #0x20
+
+ISIL:
+	001 Move X8, [X0+16]
+	002 Move X0, X1
+	003 Move X2, X31
+	004 Move X1, X8
+	005 Call PlayerRequirementsExtensions.PassesRequirements, X0, X1
+	006 Return X0
+

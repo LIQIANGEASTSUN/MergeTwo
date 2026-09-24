@@ -1,0 +1,12 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class CantAffordInteractionResult // TypeDefIndex: 25938
+{
+	// Fields
+	public Entity InteractedEntity; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A9A290 Offset: 0x6A96290 VA: 0x6A9A290
+	public void .ctor() { }
+}
+

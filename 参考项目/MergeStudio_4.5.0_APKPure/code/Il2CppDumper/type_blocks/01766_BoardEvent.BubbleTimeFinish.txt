@@ -1,0 +1,9 @@
+// Namespace: 
+public struct BoardEvent.BubbleTimeFinish : IEvent // TypeDefIndex: 1766
+{
+	// Fields
+	public ItemController Item; // 0x0
+	public bool SelectCell; // 0x4
+	public bool BubblePin; // 0x5
+}
+

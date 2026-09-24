@@ -1,0 +1,318 @@
+Type: GameLogic.ItemsInPocket.ItemInPocketInfo
+
+Method: GameLogic.ItemsInPocket.ItemInPocketId get_ConfigKey()
+
+Disassembly:
+	0x033BBA00 STR X3, [X31 + 0x20]
+	0x033BBA04 ADRP X21, 0x296D000
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_ConfigKey(GameLogic.ItemsInPocket.ItemInPocketId value)
+
+Disassembly:
+	0x033BBA08 ADRP X20, 0x2361000
+	0x033BBA0C STR X1, [X31 + 0x30]
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: GameLogic.Config.ItemDef get_ItemDef()
+
+Disassembly:
+	0x033BBA10 ADRP X19, 0x2331000
+	0x033BBA14 LDRB W8, [X21 + 0xA62]
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_ItemDef(GameLogic.Config.ItemDef value)
+
+Disassembly:
+	0x033BBA18 LDR X20, [X20 + 0x928]
+	0x033BBA1C LDR X19, [X19 + 0x7E0]
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Boolean get_IsNecessaryValidCoordinateToRunFromPocket()
+
+Disassembly:
+	0x033BBA20 MOV X22, X2
+	0x033BBA24 STR X0, [X31 + 0x28]
+
+ISIL:
+	001 Move W0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_IsNecessaryValidCoordinateToRunFromPocket(System.Boolean value)
+
+Disassembly:
+	0x033BBA28 TBNZ X8, 0x0, 0x33BBBC0
+	0x033BBA2C ADRP X0, 0x2361000
+
+ISIL:
+	001 Move [X0+32], W1
+	002 Return 
+
+Method: System.Boolean get_CanMoveToBoard()
+
+Disassembly:
+	0x033BBA30 LDR X0, [X0 + 0x930]
+	0x033BBA34 BL 0x239B8E4
+
+ISIL:
+	001 Move W0, [X0+33]
+	002 Return X0
+
+Method: System.Void set_CanMoveToBoard(System.Boolean value)
+
+Disassembly:
+	0x033BBA38 ADRP X0, 0x232A000
+	0x033BBA3C LDR X0, [X0 + 0x610]
+
+ISIL:
+	001 Move [X0+33], W1
+	002 Return 
+
+Method: System.Int32 get_PriorityInPocket()
+
+Disassembly:
+	0x033BBA40 BL 0x239B8E4
+	0x033BBA44 ADRP X0, 0x2361000
+
+ISIL:
+	001 Move W0, [X0+36]
+	002 Return X0
+
+Method: System.Void set_PriorityInPocket(System.Int32 value)
+
+Disassembly:
+	0x033BBA48 LDR X0, [X0 + 0x938]
+	0x033BBA4C BL 0x239B8E4
+
+ISIL:
+	001 Move [X0+36], W1
+	002 Return 
+
+Method: System.Collections.Generic.List`1<GameLogic.Player.Director.Config.IDirectorAction> get_ActionsToRunFromPocket()
+
+Disassembly:
+	0x033BBA50 ADRP X0, 0x232D000
+	0x033BBA54 LDR X0, [X0 + 0xCF8]
+
+ISIL:
+	001 Move X0, [X0+40]
+	002 Return X0
+
+Method: System.Void set_ActionsToRunFromPocket(System.Collections.Generic.List`1<GameLogic.Player.Director.Config.IDirectorAction> value)
+
+Disassembly:
+	0x033BBA58 BL 0x239B8E4
+	0x033BBA5C ADRP X0, 0x2361000
+
+ISIL:
+	001 Move [X0+40], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Int32 get_ExperimentPriority()
+
+Disassembly:
+	0x033BBA60 LDR X0, [X0 + 0x940]
+	0x033BBA64 BL 0x239B8E4
+
+ISIL:
+	001 Move W0, [X0+48]
+	002 Return X0
+
+Method: System.Void set_ExperimentPriority(System.Int32 value)
+
+Disassembly:
+	0x033BBA68 ADRP X0, 0x2361000
+	0x033BBA6C LDR X0, [X0 + 0x948]
+
+ISIL:
+	001 Move [X0+48], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x033BBA70 BL 0x239B8E4
+	0x033BBA74 ADRP X0, 0x2361000
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(GameLogic.ItemsInPocket.ItemInPocketId itemInPocketId, System.Int32 itemRef, System.Boolean isNecessaryValidCoordinateToRunFromPocket, System.Boolean canMoveToBoard, System.Int32 priorityInPocket, System.Collections.Generic.List`1<GameLogic.Player.Director.Config.IDirectorAction> actionsToRunFromPocket, System.Int32 experimentPriority)
+
+Disassembly:
+	0x033BBA78 LDR X0, [X0 + 0x950]
+	0x033BBA7C BL 0x239B8E4
+	0x033BBA80 ADRP X0, 0x2361000
+	0x033BBA84 LDR X0, [X0 + 0x958]
+	0x033BBA88 BL 0x239B8E4
+	0x033BBA8C ADRP X0, 0x2319000
+	0x033BBA90 LDR X0, [X0 + 0xD50]
+	0x033BBA94 BL 0x239B8E4
+	0x033BBA98 ADRP X0, 0x2361000
+	0x033BBA9C LDR X0, [X0 + 0x960]
+	0x033BBAA0 BL 0x239B8E4
+	0x033BBAA4 ADRP X0, 0x2361000
+	0x033BBAA8 LDR X0, [X0 + 0x968]
+	0x033BBAAC BL 0x239B8E4
+	0x033BBAB0 ADRP X0, 0x2361000
+	0x033BBAB4 LDR X0, [X0 + 0x970]
+	0x033BBAB8 BL 0x239B8E4
+	0x033BBABC ADRP X0, 0x2361000
+	0x033BBAC0 LDR X0, [X0 + 0x978]
+	0x033BBAC4 BL 0x239B8E4
+	0x033BBAC8 ADRP X0, 0x2355000
+	0x033BBACC LDR X0, [X0 + 0xAA8]
+	0x033BBAD0 BL 0x239B8E4
+	0x033BBAD4 ADRP X0, 0x2355000
+	0x033BBAD8 LDR X0, [X0 + 0xAB8]
+	0x033BBADC BL 0x239B8E4
+	0x033BBAE0 ADRP X0, 0x2361000
+	0x033BBAE4 LDR X0, [X0 + 0x980]
+	0x033BBAE8 BL 0x239B8E4
+	0x033BBAEC ADRP X0, 0x2313000
+	0x033BBAF0 LDR X0, [X0 + 0x5C0]
+	0x033BBAF4 BL 0x239B8E4
+	0x033BBAF8 ADRP X0, 0x2361000
+	0x033BBAFC LDR X0, [X0 + 0x988]
+	0x033BBB00 BL 0x239B8E4
+	0x033BBB04 ADRP X0, 0x2361000
+	0x033BBB08 LDR X0, [X0 + 0x990]
+	0x033BBB0C BL 0x239B8E4
+	0x033BBB10 ADRP X0, 0x2331000
+	0x033BBB14 LDR X0, [X0 + 0x7E0]
+	0x033BBB18 BL 0x239B8E4
+	0x033BBB1C ADRP X0, 0x232A000
+	0x033BBB20 LDR X0, [X0 + 0xAB8]
+	0x033BBB24 BL 0x239B8E4
+	0x033BBB28 ADRP X0, 0x235C000
+	0x033BBB2C LDR X0, [X0 + 0xF58]
+	0x033BBB30 BL 0x239B8E4
+	0x033BBB34 ADRP X0, 0x2329000
+	0x033BBB38 LDR X0, [X0 + 0xFF0]
+	0x033BBB3C BL 0x239B8E4
+	0x033BBB40 ADRP X0, 0x2361000
+	0x033BBB44 LDR X0, [X0 + 0x998]
+	0x033BBB48 BL 0x239B8E4
+	0x033BBB4C ADRP X0, 0x2361000
+	0x033BBB50 LDR X0, [X0 + 0x9A0]
+	0x033BBB54 BL 0x239B8E4
+	0x033BBB58 ADRP X0, 0x2360000
+	0x033BBB5C LDR X0, [X0 + 0xC28]
+
+ISIL:
+	001 Move [X31-96], X30
+	002 Move [X31+16], X28
+	003 Move [X31+24], X27
+	004 Move [X31+32], X26
+	005 Move [X31+40], X25
+	006 Move [X31+48], X24
+	007 Move [X31+56], X23
+	008 Move [X31+64], X22
+	009 Move [X31+72], X21
+	010 Move [X31+80], X20
+	011 Move [X31+88], X19
+	012 Move W19, W7
+	013 Move W8, [0x2971A3A]
+	014 Move X27, [0x235B648]
+	015 Move X20, X6
+	016 Move W21, W5
+	017 Move W23, W4
+	018 Move W24, W3
+	019 Move W25, W2
+	020 Move X26, X1
+	021 Move X22, X0
+	022 Move TEMP, X8
+	023 And TEMP, TEMP, 1
+	024 Compare TEMP, 1
+	025 JumpIfEqual {30}
+	026 Move X0, [0x235B648]
+	027 Call 0x239F8E4
+	028 Move W8, 1
+	029 Move [X28+2618], W8
+	030 Move X0, X22
+	031 Move X1, X31
+	032 Call Object..ctor, X0
+	033 Move X0, X22
+	034 Move X1, X26
+	035 Move [X0+16], X26
+	036 Call 0x239F888
+	037 Move X0, [X27]
+	038 Call 0x239FB80
+	039 Move W1, W25
+	040 Move X2, X31
+	041 Move X26, X0
+	042 Call ItemDef..ctor, X0, X1
+	043 Move X0, X22
+	044 Move X1, X26
+	045 Move [X0+24], X26
+	046 Call 0x239F888
+	047 And W8, W24, 1
+	048 Move [X22+40], X20
+	049 And W9, W23, 1
+	050 Move X0, X22
+	051 Move X1, X20
+	052 NotImplemented "Instruction STURB not yet implemented."
+	053 NotImplemented "Instruction STURB not yet implemented."
+	054 Move [X22-4], W21
+	055 Call 0x239F888
+	056 Move [X22+8], W19
+	057 Move X20, [X31+80]
+	058 Move X19, [X31+88]
+	059 Move X22, [X31+64]
+	060 Move X21, [X31+72]
+	061 Move X24, [X31+48]
+	062 Move X23, [X31+56]
+	063 Move X26, [X31+32]
+	064 Move X25, [X31+40]
+	065 Move X28, [X31+16]
+	066 Move X27, [X31+24]
+	067 Move X30, [X31+96]
+	068 Return 
+
+Method: GameLogic.Config.ItemDef FixRef(Metaplay.Core.Serialization.MetaMemberDeserializationFailureParams failureParams)
+
+Disassembly:
+	0x033BBB60 BL 0x239B8E4
+	0x033BBB64 ADRP X0, 0x2361000
+	0x033BBB68 LDR X0, [X0 + 0x9A8]
+	0x033BBB6C BL 0x239B8E4
+	0x033BBB70 ADRP X0, 0x2361000
+	0x033BBB74 LDR X0, [X0 + 0x9B0]
+	0x033BBB78 BL 0x239B8E4
+	0x033BBB7C ADRP X0, 0x2361000
+	0x033BBB80 LDR X0, [X0 + 0x9B8]
+	0x033BBB84 BL 0x239B8E4
+	0x033BBB88 ADRP X0, 0x2361000
+	0x033BBB8C LDR X0, [X0 + 0x9C0]
+
+ISIL:
+	001 Subtract X31, X31, 48
+	002 Move [X31+32], X30
+	003 Move V0, [X0]
+	004 Move X8, [X0+16]
+	005 Add X0, X31, 0
+	006 Move X1, X31
+	007 Move [X31], V0
+	008 Move [X31+16], X8
+	009 Call ItemDef.FixRef, X0
+	010 Move X30, [X31+32]
+	011 Add X31, X31, 48
+	012 Return X0
+

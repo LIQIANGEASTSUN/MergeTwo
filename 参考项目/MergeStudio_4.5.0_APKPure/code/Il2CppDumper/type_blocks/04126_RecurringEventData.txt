@@ -1,0 +1,97 @@
+// Namespace: MergePuzzle.RecurringEvents
+public class RecurringEventData // TypeDefIndex: 4126
+{
+	// Fields
+	private readonly KiteRecurringEventConfigItem _remoteConfig; // 0x8
+	private List<RecurringRewardData> _localSavedRewards; // 0xC
+
+	// Properties
+	public int ID { get; }
+	public int MinimumLevel { get; }
+	public int MinimumLevelForTeaserShow { get; }
+	public long TeaserStartTime { get; }
+	public long StartTime { get; }
+	public long EndTime { get; }
+	public bool Disable { get; }
+	public Dictionary<int, int> BoardTaskEventPointEconomy { get; }
+	public List<int> CurrencyRewardEconomy { get; }
+	public List<RecurringRewardData> KiteRewards { get; }
+	public List<RecurringRewardData> Rewards { get; }
+	public int InitialEventCurrency { get; }
+	public string AddressableLabel { get; }
+
+	// Methods
+
+	// RVA: 0x1CC2D2C Offset: 0x1CC2D2C VA: 0x1CC2D2C
+	public int get_ID() { }
+
+	// RVA: 0x1CC2D48 Offset: 0x1CC2D48 VA: 0x1CC2D48
+	public int get_MinimumLevel() { }
+
+	// RVA: 0x1CC2D64 Offset: 0x1CC2D64 VA: 0x1CC2D64
+	public int get_MinimumLevelForTeaserShow() { }
+
+	// RVA: 0x1CC2D80 Offset: 0x1CC2D80 VA: 0x1CC2D80
+	public long get_TeaserStartTime() { }
+
+	// RVA: 0x1CC2D9C Offset: 0x1CC2D9C VA: 0x1CC2D9C
+	public long get_StartTime() { }
+
+	// RVA: 0x1CC2DB8 Offset: 0x1CC2DB8 VA: 0x1CC2DB8
+	public long get_EndTime() { }
+
+	// RVA: 0x1CC2DD4 Offset: 0x1CC2DD4 VA: 0x1CC2DD4
+	public bool get_Disable() { }
+
+	// RVA: 0x1CC2DF0 Offset: 0x1CC2DF0 VA: 0x1CC2DF0
+	public Dictionary<int, int> get_BoardTaskEventPointEconomy() { }
+
+	// RVA: 0x1CC2E0C Offset: 0x1CC2E0C VA: 0x1CC2E0C
+	public List<int> get_CurrencyRewardEconomy() { }
+
+	// RVA: 0x1CC2E28 Offset: 0x1CC2E28 VA: 0x1CC2E28
+	public List<RecurringRewardData> get_KiteRewards() { }
+
+	// RVA: 0x1CC2E44 Offset: 0x1CC2E44 VA: 0x1CC2E44
+	public List<RecurringRewardData> get_Rewards() { }
+
+	// RVA: 0x1CC2E70 Offset: 0x1CC2E70 VA: 0x1CC2E70
+	public int get_InitialEventCurrency() { }
+
+	// RVA: 0x1CC2E8C Offset: 0x1CC2E8C VA: 0x1CC2E8C
+	public string get_AddressableLabel() { }
+
+	// RVA: 0x1CC2EA8 Offset: 0x1CC2EA8 VA: 0x1CC2EA8
+	public void .ctor(KiteRecurringEventConfigItem remoteConfig) { }
+
+	// RVA: 0x1CC2ED0 Offset: 0x1CC2ED0 VA: 0x1CC2ED0
+	public int GetCurrencyReward(int itemLevel) { }
+
+	// RVA: 0x1CC2F88 Offset: 0x1CC2F88 VA: 0x1CC2F88 Slot: 4
+	public RecurringRewardData GetReward(int step) { }
+
+	// RVA: 0x1CC30D0 Offset: 0x1CC30D0 VA: 0x1CC30D0
+	public List<IRecurringEventReward> GetSupReward(int step, int progressPoint) { }
+
+	// RVA: 0x1CC341C Offset: 0x1CC341C VA: 0x1CC341C
+	public List<IRecurringEventReward> GetSupReward(int step, int progressPoint, int lastSeenPoint) { }
+
+	// RVA: 0x1CC3774 Offset: 0x1CC3774 VA: 0x1CC3774
+	public RecurringRewardData GetLastReward() { }
+
+	// RVA: 0x1CC37E4 Offset: 0x1CC37E4 VA: 0x1CC37E4
+	public RecurringRewardData GetFirstReward() { }
+
+	// RVA: 0x1CC3854 Offset: 0x1CC3854 VA: 0x1CC3854
+	public void SetLocalSaveRewards(RecurringEventEntity recurringEventEntity) { }
+
+	// RVA: 0x1CC3880 Offset: 0x1CC3880 VA: 0x1CC3880
+	public void ResetLocalSavedRewards() { }
+
+	// RVA: 0x1CC3890 Offset: 0x1CC3890 VA: 0x1CC3890
+	public int GetRewardCount() { }
+
+	// RVA: 0x1CC38FC Offset: 0x1CC38FC VA: 0x1CC38FC
+	public void SetEndTimeAsNow() { }
+}
+

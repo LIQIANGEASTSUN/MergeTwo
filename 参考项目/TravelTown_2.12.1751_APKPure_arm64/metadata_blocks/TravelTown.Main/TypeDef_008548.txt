@@ -1,0 +1,23 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class SellSelectedItemCommand.<>c__DisplayClass18_0 // TypeDefIndex: 8548
+{
+	// Fields
+	public SellSelectedItemCommand <>4__this; // 0x10
+	public IRewardType rewardType; // 0x18
+	public int sellAmount; // 0x20
+	public Entity entity; // 0x28
+	public SelectedBoardItem sellItem; // 0x30
+
+	// Methods
+
+	// RVA: 0x6688254 Offset: 0x6684254 VA: 0x6688254
+	public void .ctor() { }
+
+	// RVA: 0x6688BEC Offset: 0x6684BEC VA: 0x6688BEC
+	internal void <Execute>b__0() { }
+
+	// RVA: 0x6688CB8 Offset: 0x6684CB8 VA: 0x6688CB8
+	internal void <Execute>b__1() { }
+}
+

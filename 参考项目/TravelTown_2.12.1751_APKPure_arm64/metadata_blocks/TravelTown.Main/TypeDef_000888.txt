@@ -1,0 +1,18 @@
+// Namespace: MergeEngine.ECS.Systems.Board
+public abstract class BaseBoardSystem : SystemBase // TypeDefIndex: 888
+{
+	// Properties
+	public abstract IBoardView BoardView { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 13
+	public abstract IBoardView get_BoardView();
+
+	// RVA: -1 Offset: -1 Slot: 14
+	public abstract void RemoveItem(PositionComponent positionComponent, string source, bool killEntity = True, bool removeItemCount = True);
+
+	// RVA: 0x665774C Offset: 0x665374C VA: 0x665774C
+	protected void .ctor() { }
+}
+

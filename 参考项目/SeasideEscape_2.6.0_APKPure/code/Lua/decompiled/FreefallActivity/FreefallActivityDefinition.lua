@@ -1,0 +1,62 @@
+FreefallActivityDefinition = {
+  [ActivityType.MonsterFreefall] = {
+    EntryButtonKey = ESceneViewHudButtonKey.MonsterFreefall,
+    ActivityDataTableName = VirtualDBTableName.MonsterFreefall,
+    ItemDataTableName = VirtualDBTableName.MonsterFreefallItem,
+    ItemLayerDataTableName = VirtualDBTableName.MonsterFreefallItemLayer,
+    ItemCacheDataTableName = VirtualDBTableName.MonsterFreefallItemCache,
+    BoardDataTableName = VirtualDBTableName.MonsterFreefallBoard,
+    StateChangedEvent = EEventType.MonsterFreefallStateChanged,
+    OnSettlementEvent = EEventType.MonsterFreefallOnSettlement,
+    SettlementFinishedEvent = EEventType.MonsterFreefallSettlementFinished,
+    BIAddTokenFree = EBIType.MonsterFreefallAddTokenFree,
+    BIConsumeToken = EBIType.MonsterFreefallConsumeToken,
+    BIHitTarget = EBIType.MonsterFreefallHitTarget,
+    BIAcquireTargetBeatenScore = EBIType.MonsterFreefallAcquireTargetBeatenScore,
+    BIAcquireTargetBeatenReward = EBIType.MonsterFreefallAcquireTargetBeatenReward,
+    BIAcquireRoundReward = EBIType.MonsterFreefallAcquireRoundReward,
+    BIRecoverToken = EBIType.MonsterFreefallRecoverToken,
+    BIRecoverBoard = EBIType.MonsterFreefallRecoverBoard,
+    BIClickRoundReward = EBIType.MonsterFreefallClickRoundReward,
+    BIClickProgressReward = EBIType.MonsterFreefallClickProgressReward,
+    BITaskProgressReward = EBIType.MonsterFreefallTaskReward,
+    BoardModelConfigName = "FreefallBoardModelConfig",
+    BoardSpawnConfigName = "FreefallBoardSpawnConfig",
+    ResourceLabels = {
+      AddressableLabel.MonsterFreefall
+    },
+    BoardViewPrefabName = ScenePrefabConfigName.MonsterFreefallActivityBoardView,
+    MapEntryPrefabName = UIPrefabConfigName.MonsterFreefallMapEntry,
+    BoardEntryPrefabName = UIPrefabConfigName.MonsterFreefallBoardEntry,
+    MainWindowPrefabName = UIPrefabConfigName.MonsterFreefallActivityMainWindow,
+    HelpWindowPrefabName = UIPrefabConfigName.MonsterFreefallActivityHelpWindow,
+    ReadyWindowPrefabName = UIPrefabConfigName.MonsterFreefallActivityReadyWindow,
+    CompleteWindowPrefabName = UIPrefabConfigName.MonsterFreefallActivityCompleteWindow,
+    EndWindowPrefabName = UIPrefabConfigName.MonsterFreefallActivityEndWindow,
+    RewardRecoverWindowPrefabName = UIPrefabConfigName.MonsterFreefallActivityRewardRecoverWindow,
+    BossRewardWindowPrefabName = UIPrefabConfigName.MonsterFreefallActivityRoundRewardWindow,
+    BoardBg = UIPrefabConfigName.MonsterFreefallActivityBoardBg,
+    LockWindowPrefabName = UIPrefabConfigName.MonsterFreefallActivityLockWindow,
+    TileImageName1 = ImageFileConfigName.monster_freefall_tile_bg1,
+    TileImageName2 = ImageFileConfigName.monster_freefall_tile_bg2,
+    CobwebSprite = ImageFileConfigName.ff_mb_1,
+    CobwebSpriteOffset = Vector3(0, 20, -1),
+    LineAnimationAudioName = AudioFileConfigName.sfxFreefallMonsterRayLaunch,
+    SpecialItemWindingAudioName = AudioFileConfigName.sfxFreefallMonsterItemWinding,
+    TargetRefreshAudioName = AudioFileConfigName.sfxFreefallMonsterRefresh,
+    ActivityTokenPropertyType = EPropertyType.MonsterFreefallStepToken,
+    TokenBigIconName = ImageFileConfigName.monster_freefall_step_token,
+    TokenIconName = ImageFileConfigName.monster_freefall_step_token,
+    ActivityItemChainIds = {
+      "ff_1",
+      "ff_2",
+      "ff_3"
+    },
+    RandomLevelUpItemCount = 7,
+    BundleUICodes = {
+      "FreeFall_1n_1",
+      "FreeFall_1n_2"
+    },
+    TutorialStartCondition = ETutorialStartCondition.FreefallStart
+  }
+}

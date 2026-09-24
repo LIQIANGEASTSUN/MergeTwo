@@ -1,0 +1,4 @@
+// Namespace: 
+public struct BoardEvent.UpdateUIBooster : IEvent // TypeDefIndex: 1845
+{}
+

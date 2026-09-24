@@ -1,0 +1,27 @@
+// Namespace: MergeEngine.Signal.Items
+public class MergeItemBubbleSignalBase : MergeItemSignalBase // TypeDefIndex: 232
+{
+	// Fields
+	[CompilerGenerated]
+	private SmarterBubblesAnalyticsData <SmarterBubblesAnalyticsData>k__BackingField; // 0x20
+
+	// Properties
+	public SmarterBubblesAnalyticsData SmarterBubblesAnalyticsData { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3B2C Offset: 0x5FEFB2C VA: 0x5FF3B2C
+	public SmarterBubblesAnalyticsData get_SmarterBubblesAnalyticsData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3B34 Offset: 0x5FEFB34 VA: 0x5FF3B34
+	public void set_SmarterBubblesAnalyticsData(SmarterBubblesAnalyticsData value) { }
+
+	// RVA: 0x5FF3B3C Offset: 0x5FEFB3C VA: 0x5FF3B3C
+	protected void .ctor(IMergeItem item) { }
+
+	// RVA: 0x5FF3B6C Offset: 0x5FEFB6C VA: 0x5FF3B6C
+	protected void .ctor(IMergeItem item, int level) { }
+}
+

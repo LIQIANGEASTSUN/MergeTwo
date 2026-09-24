@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class PersistenceSystem.<>c__DisplayClass23_0 // TypeDefIndex: 672
+{
+	// Fields
+	public Dictionary<string, string> serializedEntity; // 0x10
+
+	// Methods
+
+	// RVA: 0x628CFD8 Offset: 0x6288FD8 VA: 0x628CFD8
+	public void .ctor() { }
+
+	// RVA: 0x628E00C Offset: 0x628A00C VA: 0x628E00C
+	internal void <SerializeComponent>b__0(ISerializableComponent serializable) { }
+}
+

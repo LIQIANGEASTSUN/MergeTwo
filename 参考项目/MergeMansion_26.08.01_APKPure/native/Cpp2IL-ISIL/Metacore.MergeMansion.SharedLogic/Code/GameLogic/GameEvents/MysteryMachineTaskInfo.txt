@@ -1,0 +1,427 @@
+Type: Code.GameLogic.GameEvents.MysteryMachineTaskInfo
+
+Method: Code.GameLogic.GameEvents.MysteryMachineTaskId get_ConfigKey()
+
+Disassembly:
+	0x03332258 MOV W2, W31
+	0x0333225C BL 0x23D527C
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_ConfigKey(Code.GameLogic.GameEvents.MysteryMachineTaskId value)
+
+Disassembly:
+	0x03332260 B 0x3332270
+	0x03332264 LDRSW X9, [X10]
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: Code.GameLogic.GameEvents.IMysteryMachineTask get_Task()
+
+Disassembly:
+	0x03332268 ADD X8, X8, X9, 0x4, LSL
+	0x0333226C ADD X0, X8, 0x138
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_Task(Code.GameLogic.GameEvents.IMysteryMachineTask value)
+
+Disassembly:
+	0x03332270 LDP X8, X1, [X0]
+	0x03332274 MOV X0, X22
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: GameLogic.Player.Rewards.PlayerReward get_Reward()
+
+Disassembly:
+	0x03332278 BLR X8
+	0x0333227C TBZ X0, 0x0, 0x3332324
+
+ISIL:
+	001 Move X0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_Reward(GameLogic.Player.Rewards.PlayerReward value)
+
+Disassembly:
+	0x03332280 LDR X22, [X31 + 0x28]
+	0x03332284 CBZ X22, 0x33323D0
+
+ISIL:
+	001 Move [X0+32], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Boolean get_Recurring()
+
+Disassembly:
+	0x03332288 LDR X8, [X22]
+	0x0333228C LDR X1, [X23]
+
+ISIL:
+	001 Move W0, [X0+40]
+	002 Return X0
+
+Method: System.Void set_Recurring(System.Boolean value)
+
+Disassembly:
+	0x03332290 LDRH W9, [X8 + 0x12E]
+	0x03332294 CBZ X9, 0x33322B8
+
+ISIL:
+	001 Move [X0+40], W1
+	002 Return 
+
+Method: System.Int32 get_RecurringIncrease()
+
+Disassembly:
+	0x03332298 LDR X10, [X8 + 0xB0]
+	0x0333229C ADD X10, X10, 0x8
+
+ISIL:
+	001 Move W0, [X0+44]
+	002 Return X0
+
+Method: System.Void set_RecurringIncrease(System.Int32 value)
+
+Disassembly:
+	0x033322A0 LDUR X11, [X10 - 0x8]
+	0x033322A4 CMP X11, X1
+
+ISIL:
+	001 Move [X0+44], W1
+	002 Return 
+
+Method: System.Int32 get_ExperimentPriority()
+
+Disassembly:
+	0x033322A8 B.EQ 0x33322C8
+	0x033322AC SUBS X9, X9, 0x1
+
+ISIL:
+	001 Move W0, [X0+48]
+	002 Return X0
+
+Method: System.Void set_ExperimentPriority(System.Int32 value)
+
+Disassembly:
+	0x033322B0 ADD X10, X10, 0x10
+	0x033322B4 B.NE 0x33322A0
+
+ISIL:
+	001 Move [X0+48], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x033322B8 MOV X0, X22
+	0x033322BC MOVZ W2, 0x1
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(Code.GameLogic.GameEvents.MysteryMachineTaskId configKey, Code.GameLogic.GameEvents.IMysteryMachineTask task, GameLogic.Player.Rewards.PlayerReward reward, System.Boolean recurring, System.Int32 recurringIncrease, System.Int32 experimentPriority)
+
+Disassembly:
+	0x033322C0 BL 0x23D527C
+	0x033322C4 B 0x33322D8
+	0x033322C8 LDR W9, [X10]
+	0x033322CC ADD W9, W9, 0x1
+	0x033322D0 ADD X8, X8, W9, 0x4, SXTW
+	0x033322D4 ADD X0, X8, 0x138
+	0x033322D8 LDP X8, X1, [X0]
+	0x033322DC MOV X0, X22
+	0x033322E0 BLR X8
+	0x033322E4 CBZ X0, 0x33323CC
+	0x033322E8 LDR X1, [X24]
+	0x033322EC LDR X8, [X0]
+	0x033322F0 LDR X8, [X8 + 0x40]
+	0x033322F4 LDR X9, [X1 + 0x40]
+	0x033322F8 CMP X8, X9
+	0x033322FC B.NE 0x33323C8
+	0x03332300 BL 0x239BA70
+	0x03332304 LDR W1, [X0]
+	0x03332308 MOV X0, X21
+	0x0333230C MOV X2, X20
+	0x03332310 BL 0x333243C
+	0x03332314 LDR X22, [X31 + 0x28]
+	0x03332318 ADD W19, W0, W19
+	0x0333231C CBNZ X22, 0x3332224
+	0x03332320 BL 0x239BB90
+	0x03332324 MOV X20, X31
+	0x03332328 ADD X8, X31, 0x28
+	0x0333232C ADD X22, X31, 0x18
+	0x03332330 ADRP X23, 0x239B000
+	0x03332334 LDR X23, [X23 + 0x230]
+	0x03332338 LDR X0, [X8]
+	0x0333233C LDR X1, [X23]
+	0x03332340 BL 0x239BA68
+	0x03332344 STR X0, [X22]
+	0x03332348 CBZ X0, 0x33323A8
+	0x0333234C LDR X8, [X0]
+	0x03332350 LDR X1, [X23]
+	0x03332354 MOV X21, X0
+	0x03332358 LDRH W9, [X8 + 0x12E]
+	0x0333235C CBZ X9, 0x3332380
+	0x03332360 LDR X10, [X8 + 0xB0]
+	0x03332364 ADD X10, X10, 0x8
+	0x03332368 LDUR X11, [X10 - 0x8]
+	0x0333236C CMP X11, X1
+	0x03332370 B.EQ 0x3332390
+	0x03332374 SUBS X9, X9, 0x1
+	0x03332378 ADD X10, X10, 0x10
+	0x0333237C B.NE 0x3332368
+	0x03332380 MOV X0, X21
+	0x03332384 MOV W2, W31
+	0x03332388 BL 0x23D527C
+	0x0333238C B 0x333239C
+	0x03332390 LDRSW X9, [X10]
+	0x03332394 ADD X8, X8, X9, 0x4, LSL
+	0x03332398 ADD X0, X8, 0x138
+	0x0333239C LDP X8, X1, [X0]
+	0x033323A0 MOV X0, X21
+	0x033323A4 BLR X8
+	0x033323A8 CBNZ X20, 0x33323E0
+	0x033323AC MOV W0, W19
+	0x033323B0 LDP X20, X19, [X31 + 0x50]
+	0x033323B4 LDP X22, X21, [X31 + 0x40]
+	0x033323B8 LDR X30, [X31 + 0x20]
+	0x033323BC LDP X24, X23, [X31 + 0x30]
+	0x033323C0 ADD X31, X31, 0x60
+	0x033323C4 RET
+	0x033323C8 BL 0x239BF10
+	0x033323CC BL 0x239BB90
+	0x033323D0 BL 0x239BB90
+	0x033323D4 BL 0x239BB90
+	0x033323D8 MOV W19, W31
+	0x033323DC B 0x3332320
+	0x033323E0 MOV X0, X20
+	0x033323E4 BL 0x239BB88
+	0x033323E8 B 0x33323FC
+	0x033323EC B 0x33323FC
+	0x033323F0 B 0x33323FC
+	0x033323F4 B 0x33323FC
+	0x033323F8 B 0x33323FC
+	0x033323FC MOV X20, X0
+	0x03332400 CMP W1, 0x1
+	0x03332404 B.NE 0x3332428
+	0x03332408 MOV X0, X20
+	0x0333240C BL 0x53E9080
+	0x03332410 LDR X20, [X0]
+	0x03332414 STR X20, [X31]
+	0x03332418 BL 0x53E9090
+	0x0333241C LDP X8, X22, [X31 + 0x8]
+	0x03332420 B 0x3332330
+	0x03332424 MOV X20, X0
+	0x03332428 ADD X0, X31, 0x0
+	0x0333242C BL 0x21B9858
+	0x03332430 MOV X0, X20
+	0x03332434 BL 0x248B7AC
+	0x03332438 BL 0x21B9790
+	0x0333243C SUB X31, X31, 0x90
+	0x03332440 STP X29, X30, [X31 + 0x30]
+	0x03332444 STP X28, X27, [X31 + 0x40]
+	0x03332448 STP X26, X25, [X31 + 0x50]
+	0x0333244C STP X24, X23, [X31 + 0x60]
+	0x03332450 STP X22, X21, [X31 + 0x70]
+	0x03332454 STP X20, X19, [X31 + 0x80]
+	0x03332458 ADRP X24, 0x29F6000
+	0x0333245C ADRP X23, 0x23A4000
+	0x03332460 ADRP X19, 0x23A4000
+	0x03332464 LDRB W8, [X24 + 0x604]
+	0x03332468 LDR X23, [X23 + 0xFA0]
+	0x0333246C LDR X19, [X19 + 0xF98]
+	0x03332470 MOV X20, X2
+	0x03332474 MOV W21, W1
+	0x03332478 MOV X22, X0
+
+ISIL:
+	001 Move [X31-64], X30
+	002 Move [X31-56], X25
+	003 Move [X31+16], X24
+	004 Move [X31+24], X23
+	005 Move [X31+32], X22
+	006 Move [X31+40], X21
+	007 Move [X31+48], X20
+	008 Move [X31+56], X19
+	009 Move X25, X1
+	010 Move X1, X31
+	011 Move W19, W6
+	012 Move W20, W5
+	013 Move W21, W4
+	014 Move X23, X3
+	015 Move X24, X2
+	016 Move X22, X0
+	017 Call Object..ctor, X0
+	018 Compare W20, 0
+	019 JumpIfEqual {24}
+	020 Move TEMP, X21
+	021 And TEMP, TEMP, 1
+	022 Compare TEMP, 1
+	023 Invalid "Jump target not found in method."
+	024 Move TEMP, X20
+	025 And TEMP, TEMP, -2147483648
+	026 Compare TEMP, -2147483648
+	027 Invalid "Jump target not found in method."
+	028 Compare X25, 0
+	029 Invalid "Jump target not found in method."
+	030 Compare X22, 0
+	031 JumpIfEqual {94}
+	032 Move X0, X22
+	033 Move X1, X25
+	034 Move [X0+16], X25
+	035 Call 0x239F888
+	036 Compare X24, 0
+	037 Invalid "Jump target not found in method."
+	038 Move X0, X22
+	039 Move X1, X24
+	040 Move [X0+24], X24
+	041 Call 0x239F888
+	042 Compare X23, 0
+	043 Invalid "Jump target not found in method."
+	044 Move [X22+32], X23
+	045 Move X0, X22
+	046 Move X1, X23
+	047 Call 0x239F888
+	048 And W8, W21, 1
+	049 Move [X22+12], W20
+	050 Move [X22+16], W19
+	051 Move [X22+8], W8
+	052 Move X20, [X31+48]
+	053 Move X19, [X31+56]
+	054 Move X22, [X31+32]
+	055 Move X21, [X31+40]
+	056 Move X24, [X31+16]
+	057 Move X23, [X31+24]
+	058 Move X30, [X31+64]
+	059 Move X25, [X31+72]
+	060 Return 
+	061 Move X0, [0x23A2E90]
+	062 Call 0x239F8F8
+	063 Call 0x239FB80
+	064 Move X19, X0
+	065 Move X0, [0x23EAF00]
+	066 Call 0x239F8F8
+	067 Move X20, X0
+	068 Move X0, [0x23EAF08]
+	069 Call 0x239F8F8
+	070 Move X2, X0
+	071 Move X0, X19
+	072 Move X1, X20
+	073 Move X3, X31
+	074 Call ArgumentException..ctor, X0, X1, X2
+	075 Move X0, [0x23A52D8]
+	076 Call 0x239F8F8
+	077 Call 0x239FB80
+	078 Move X19, X0
+	079 Move X0, [0x23EAF08]
+	080 Call 0x239F8F8
+	081 Move X20, X0
+	082 Move X0, [0x23EAF10]
+	083 Call 0x239F8F8
+	084 Move X2, X0
+	085 Move X0, X19
+	086 Move X1, X20
+	087 Move X3, X31
+	088 Call ArgumentOutOfRangeException..ctor, X0, X1, X2
+	089 Move X0, [0x23A2E78]
+	090 Call 0x239F8F8
+	091 Call 0x239FB80
+	092 Move X19, X0
+	093 Move X0, [0x23E9E98]
+	094 Call 0x239FB90
+	095 Move X0, [0x23A2E78]
+	096 Call 0x239F8F8
+	097 Call 0x239FB80
+	098 Move X19, X0
+	099 Move X0, [0x23A9288]
+	100 Move X0, [0x23A2E78]
+	101 Call 0x239F8F8
+	102 Call 0x239FB80
+	103 Move X19, X0
+	104 Move X0, [0x23EAF18]
+	105 Call 0x239F8F8
+	106 Move X1, X0
+	107 Move X0, X19
+	108 Move X2, X31
+	109 Call ArgumentNullException..ctor, X0, X1
+	110 Move X0, [0x23EAF20]
+	111 Call 0x239F8F8
+	112 Move X1, X0
+	113 Move X0, X19
+	114 Call 0x239FA54
+
+Method: GameLogic.Player.Rewards.PlayerReward FixPlayerReward(Metaplay.Core.Serialization.MetaMemberDeserializationFailureParams failureParams)
+
+Disassembly:
+	0x0333247C TBNZ X8, 0x0, 0x3332524
+	0x03332480 ADRP X0, 0x239B000
+	0x03332484 LDR X0, [X0 + 0x230]
+	0x03332488 BL 0x239B8E4
+	0x0333248C ADRP X0, 0x23BA000
+	0x03332490 LDR X0, [X0 + 0x810]
+	0x03332494 BL 0x239B8E4
+	0x03332498 ADRP X0, 0x23B8000
+	0x0333249C LDR X0, [X0 + 0x410]
+	0x033324A0 BL 0x239B8E4
+	0x033324A4 ADRP X0, 0x23BA000
+	0x033324A8 LDR X0, [X0 + 0x818]
+	0x033324AC BL 0x239B8E4
+	0x033324B0 ADRP X0, 0x23B8000
+	0x033324B4 LDR X0, [X0 + 0x418]
+	0x033324B8 BL 0x239B8E4
+	0x033324BC ADRP X0, 0x239B000
+	0x033324C0 LDR X0, [X0 + 0x310]
+	0x033324C4 BL 0x239B8E4
+	0x033324C8 ADRP X0, 0x23A4000
+	0x033324CC LDR X0, [X0 + 0xF90]
+	0x033324D0 BL 0x239B8E4
+	0x033324D4 ADRP X0, 0x23BF000
+	0x033324D8 LDR X0, [X0 + 0x970]
+	0x033324DC BL 0x239B8E4
+
+ISIL:
+	001 Subtract X31, X31, 64
+	002 Move [X31+32], X30
+	003 Move [X31+40], X21
+	004 Move [X31+48], X20
+	005 Move [X31+56], X19
+	006 Move X19, X0
+	007 Move W8, [0x29FA5DA]
+	008 Move X20, [0x23EAB80]
+	009 Move TEMP, X8
+	010 And TEMP, TEMP, 1
+	011 Compare TEMP, 1
+	012 JumpIfEqual {17}
+	013 Move X0, [0x23EAB80]
+	014 Call 0x239F8E4
+	015 Move W8, 1
+	016 Move [X21+1498], W8
+	017 Move V0, [X19]
+	018 Move X8, [X19+16]
+	019 Add X0, X31, 0
+	020 Move X1, [X20]
+	021 Move [X31], V0
+	022 Move [X31+16], X8
+	023 Call 0x2656488, X0
+	024 Move X20, [X31+48]
+	025 Move X19, [X31+56]
+	026 Move X30, [X31+32]
+	027 Move X21, [X31+40]
+	028 Add X31, X31, 64
+	029 Return X0
+

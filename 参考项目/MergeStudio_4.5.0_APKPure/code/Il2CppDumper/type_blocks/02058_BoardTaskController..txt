@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+private struct BoardTaskController.<ProcessLevelUpDismissAndGenerateBoardTasks>d__77 : IAsyncStateMachine // TypeDefIndex: 2058
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncUniTaskVoidMethodBuilder <>t__builder; // 0x4
+	public BoardTaskController <>4__this; // 0x8
+	private BoardTaskController.<>c__DisplayClass77_0 <>8__1; // 0xC
+	private UniTask.Awaiter<bool> <>u__1; // 0x10
+
+	// Methods
+
+	// RVA: 0x1960870 Offset: 0x1960870 VA: 0x1960870 Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x1961D18 Offset: 0x1961D18 VA: 0x1961D18 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

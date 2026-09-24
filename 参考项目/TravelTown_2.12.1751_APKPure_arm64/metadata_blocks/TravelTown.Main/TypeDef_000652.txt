@@ -1,0 +1,53 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class InventorySystem.<>c // TypeDefIndex: 652
+{
+	// Fields
+	public static readonly InventorySystem.<>c <>9; // 0x0
+	public static Func<Entity, bool> <>9__62_0; // 0x8
+	public static Func<Entity, bool> <>9__65_0; // 0x10
+	public static Func<Entity, bool> <>9__66_0; // 0x18
+	public static Func<Entity, bool> <>9__79_0; // 0x20
+	public static Func<Entity, bool> <>9__80_0; // 0x28
+	public static Func<InventorySlotComponent, bool> <>9__98_0; // 0x30
+	public static Func<Tuple<IMergeItem, int>, IMergeItem> <>9__101_2; // 0x38
+	public static Func<IMergeItem, string> <>9__102_0; // 0x40
+	public static Func<Entity, bool> <>9__102_1; // 0x48
+
+	// Methods
+
+	// RVA: 0x628A494 Offset: 0x6286494 VA: 0x628A494
+	private static void .cctor() { }
+
+	// RVA: 0x628A4FC Offset: 0x62864FC VA: 0x628A4FC
+	public void .ctor() { }
+
+	// RVA: 0x628A504 Offset: 0x6286504 VA: 0x628A504
+	internal bool <IsFull>b__62_0(Entity entity) { }
+
+	// RVA: 0x628A510 Offset: 0x6286510 VA: 0x628A510
+	internal bool <NumFreeSlots>b__65_0(Entity entity) { }
+
+	// RVA: 0x628A51C Offset: 0x628651C VA: 0x628A51C
+	internal bool <NumFreeProducerSlots>b__66_0(Entity entity) { }
+
+	// RVA: 0x628A528 Offset: 0x6286528 VA: 0x628A528
+	internal bool <SendItemAddedToInventoryEvent>b__79_0(Entity entity) { }
+
+	// RVA: 0x628A534 Offset: 0x6286534 VA: 0x628A534
+	internal bool <SendItemRemovedFromInventoryEvent>b__80_0(Entity entity) { }
+
+	// RVA: 0x628A540 Offset: 0x6286540 VA: 0x628A540
+	internal bool <UpdateEntitiesToNewMergeItemList>b__98_0(InventorySlotComponent item) { }
+
+	// RVA: 0x628A560 Offset: 0x6286560 VA: 0x628A560
+	internal IMergeItem <TryUnlockSlots>b__101_2(Tuple<IMergeItem, int> tuple) { }
+
+	// RVA: 0x628A5A4 Offset: 0x62865A4 VA: 0x628A5A4
+	internal string <AddUnlockedSlot>b__102_0(IMergeItem mergeItem) { }
+
+	// RVA: 0x628A640 Offset: 0x6286640 VA: 0x628A640
+	internal bool <AddUnlockedSlot>b__102_1(Entity entity) { }
+}
+

@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeBoard.<>c__DisplayClass155_0 // TypeDefIndex: 2722
+{
+	// Fields
+	public int targetId; // 0x8
+	public Predicate<MergeBoard.Grid> <>9__0; // 0xC
+
+	// Methods
+
+	// RVA: 0x2C2F998 Offset: 0x2C2F998 VA: 0x2C2F998
+	public void .ctor() { }
+
+	// RVA: 0x2C2F9A0 Offset: 0x2C2F9A0 VA: 0x2C2F9A0
+	internal bool <BuildAutoTips>b__0(MergeBoard.Grid a) { }
+}
+

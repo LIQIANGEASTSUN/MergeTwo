@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardItemBehavioursHandlerViewModel.<>c // TypeDefIndex: 25657
+{
+	// Fields
+	public static readonly BoardItemBehavioursHandlerViewModel.<>c <>9; // 0x0
+	public static Func<BehaviourPrefabData, string> <>9__7_0; // 0x8
+	public static Func<BehaviourPrefabData, BehaviourPrefabData> <>9__7_1; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A311D0 Offset: 0x6A2D1D0 VA: 0x6A311D0
+	private static void .cctor() { }
+
+	// RVA: 0x6A31238 Offset: 0x6A2D238 VA: 0x6A31238
+	public void .ctor() { }
+
+	// RVA: 0x6A31240 Offset: 0x6A2D240 VA: 0x6A31240
+	internal string <GetCombinedBehaviourConfig>b__7_0(BehaviourPrefabData data) { }
+
+	// RVA: 0x6A31258 Offset: 0x6A2D258 VA: 0x6A31258
+	internal BehaviourPrefabData <GetCombinedBehaviourConfig>b__7_1(BehaviourPrefabData data) { }
+}
+

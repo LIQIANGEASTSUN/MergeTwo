@@ -1,0 +1,36 @@
+// Namespace: MergeEngine.Configuration
+[CreateAssetMenu(fileName = "ResourceConfig.asset", menuName = "Game/Resource Config")]
+[Serializable]
+public class ResourceConfig : SerializedScriptableObject // TypeDefIndex: 1192
+{
+	// Fields
+	[NonEmpty]
+	public List<ResourceDefinition> ResourceDefinitions; // 0x58
+	public int FreeEnergyRefillCount; // 0x60
+	public List<ResourceReplenishment> Replenishments; // 0x68
+	private Dictionary<string, ResourceDefinition> _resourceDefinitionsDictionary; // 0x70
+
+	// Methods
+
+	// RVA: 0x6914258 Offset: 0x6910258 VA: 0x6914258
+	private ResourceDefinition GetDefinition(string resource) { }
+
+	// RVA: 0x69143B8 Offset: 0x69103B8 VA: 0x69143B8
+	public AssetReferenceT<Sprite> GetResourceIcon(IRewardType rewardType) { }
+
+	// RVA: 0x6914470 Offset: 0x6910470 VA: 0x6914470
+	public string GetResourceName(IRewardType rewardType) { }
+
+	// RVA: 0x69145DC Offset: 0x69105DC VA: 0x69145DC
+	public string GetResourceSpriteTag(IRewardType rewardType) { }
+
+	// RVA: 0x6914768 Offset: 0x6910768 VA: 0x6914768
+	public IMergeGraphItem GetResourceGraph(string resource) { }
+
+	// RVA: 0x6914790 Offset: 0x6910790 VA: 0x6914790
+	private bool IsResourceDefinitionsNotValid(List<ResourceDefinition> resources) { }
+
+	// RVA: 0x69148AC Offset: 0x69108AC VA: 0x69148AC
+	public void .ctor() { }
+}
+

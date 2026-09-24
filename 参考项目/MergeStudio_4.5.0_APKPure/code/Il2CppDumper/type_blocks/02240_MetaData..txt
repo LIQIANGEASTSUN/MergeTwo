@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MetaData.<>c__DisplayClass17_0 // TypeDefIndex: 2240
+{
+	// Fields
+	public int level; // 0x8
+	public bool isClothes; // 0xC
+
+	// Methods
+
+	// RVA: 0x19B1BC8 Offset: 0x19B1BC8 VA: 0x19B1BC8
+	public void .ctor() { }
+
+	// RVA: 0x19B265C Offset: 0x19B265C VA: 0x19B265C
+	internal bool <GetEditableMetaTaskItemsOfLevel>b__0(MetaTaskItem item) { }
+}
+

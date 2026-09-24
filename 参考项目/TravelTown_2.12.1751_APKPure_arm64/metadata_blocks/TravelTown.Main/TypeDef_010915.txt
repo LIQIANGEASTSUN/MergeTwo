@@ -1,0 +1,50 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class RepositoryBase.<>c__DisplayClass33_0<T> // TypeDefIndex: 10915
+{
+	// Fields
+	public Stopwatch stopwatch; // 0x0
+	public RepositoryBase <>4__this; // 0x0
+	public string requestUniqueId; // 0x0
+	public bool reportParsingMetric; // 0x0
+	public IResponseValidator<T> validator; // 0x0
+	public string data; // 0x0
+	public IPromise<T> promise; // 0x0
+	public string customLogData; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F55028 Offset: 0x3F51028 VA: 0x3F55028
+	|-RepositoryBase.<>c__DisplayClass33_0<object>..ctor
+	|
+	|-RVA: 0x3F5577C Offset: 0x3F5177C VA: 0x3F5577C
+	|-RepositoryBase.<>c__DisplayClass33_0<__Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal void <ConvertToObjectInternal>b__0(T obj) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F55030 Offset: 0x3F51030 VA: 0x3F55030
+	|-RepositoryBase.<>c__DisplayClass33_0<object>.<ConvertToObjectInternal>b__0
+	|
+	|-RVA: 0x3F55784 Offset: 0x3F51784 VA: 0x3F55784
+	|-RepositoryBase.<>c__DisplayClass33_0<__Il2CppFullySharedGenericType>.<ConvertToObjectInternal>b__0
+	*/
+
+	// RVA: -1 Offset: -1
+	internal void <ConvertToObjectInternal>g__HandleDeserializedResponse|1(T deserializedResponse) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F5512C Offset: 0x3F5112C VA: 0x3F5512C
+	|-RepositoryBase.<>c__DisplayClass33_0<object>.<ConvertToObjectInternal>g__HandleDeserializedResponse|1
+	|
+	|-RVA: 0x3F55928 Offset: 0x3F51928 VA: 0x3F55928
+	|-RepositoryBase.<>c__DisplayClass33_0<__Il2CppFullySharedGenericType>.<ConvertToObjectInternal>g__HandleDeserializedResponse|1
+	*/
+}
+

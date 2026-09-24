@@ -1,0 +1,9 @@
+Type: GameLogic.Player.Requirements.IMergeItemExtraChecker
+
+Method: System.Boolean MeetsItemExtraCheck(System.Collections.Generic.IEnumerable`1<GameLogic.Player.Items.MergeItem+MergeItemExtra> extras)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

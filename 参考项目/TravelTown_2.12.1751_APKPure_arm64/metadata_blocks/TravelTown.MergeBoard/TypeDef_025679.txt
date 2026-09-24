@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeBoardCombinationVerificationView.<>c__DisplayClass9_0 // TypeDefIndex: 25679
+{
+	// Fields
+	public MergeBoardCombinationVerificationView <>4__this; // 0x10
+	public MergeCheckItemType checkType; // 0x18
+	public PendingItemsCombinationResult result; // 0x20
+
+	// Methods
+
+	// RVA: 0x6A369D8 Offset: 0x6A329D8 VA: 0x6A369D8
+	public void .ctor() { }
+
+	// RVA: 0x6A37044 Offset: 0x6A33044 VA: 0x6A37044
+	internal void <OpenVerifyCombinationPopup>b__0(BoardItemPosition first, BoardItemPosition second) { }
+
+	// RVA: 0x6A37064 Offset: 0x6A33064 VA: 0x6A37064
+	internal void <OpenVerifyCombinationPopup>b__1() { }
+}
+

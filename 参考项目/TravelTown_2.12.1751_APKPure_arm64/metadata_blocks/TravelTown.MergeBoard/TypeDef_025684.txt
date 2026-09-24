@@ -1,0 +1,43 @@
+// Namespace: Merger.MergeBoard.View
+public class MergeBoardSelectorView : ViewBase<MergeBoardSelectorViewModel> // TypeDefIndex: 25684
+{
+	// Fields
+	[SerializeField]
+	private SelectorView _selector; // 0x30
+	[SerializeField]
+	private MergeBoardItemsContainer _itemsContainer; // 0x38
+	private IBoardItemView _selectedItem; // 0x40
+
+	// Methods
+
+	// RVA: 0x6A37A68 Offset: 0x6A33A68 VA: 0x6A37A68
+	public bool IsItemSelected(IBoardItemView itemView) { }
+
+	// RVA: 0x6A37A78 Offset: 0x6A33A78 VA: 0x6A37A78
+	public void Show() { }
+
+	// RVA: 0x6A37C6C Offset: 0x6A33C6C VA: 0x6A37C6C
+	public void Hide() { }
+
+	// RVA: 0x6A37CD8 Offset: 0x6A33CD8 VA: 0x6A37CD8
+	public void SetSelectedItem(IBoardItemView itemView) { }
+
+	// RVA: 0x6A37E14 Offset: 0x6A33E14 VA: 0x6A37E14
+	public void SetSelectedItem(int position) { }
+
+	// RVA: 0x6A37E8C Offset: 0x6A33E8C VA: 0x6A37E8C
+	public void ClearSelection() { }
+
+	// RVA: 0x6A37EE0 Offset: 0x6A33EE0 VA: 0x6A37EE0
+	public void RemoveSelectorFromItem(IBoardItemView itemToRemove) { }
+
+	// RVA: 0x6A37F3C Offset: 0x6A33F3C VA: 0x6A37F3C
+	private bool TryGetItemViewOnSamePosition(IBoardItemView removedItemView, out IBoardItemView boardItemView) { }
+
+	// RVA: 0x6A37AF8 Offset: 0x6A33AF8 VA: 0x6A37AF8
+	private void ShowSelectorAt(IBoardItemView boardItem, RectTransform tileTransform) { }
+
+	// RVA: 0x6A37FEC Offset: 0x6A33FEC VA: 0x6A37FEC
+	public void .ctor() { }
+}
+

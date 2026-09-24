@@ -1,0 +1,20 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoosterSystem.<>c__DisplayClass23_0 // TypeDefIndex: 7738
+{
+	// Fields
+	public BoosterIdComponent boosterId; // 0x10
+	public BoosterSystem <>4__this; // 0x18
+
+	// Methods
+
+	// RVA: 0x65BE790 Offset: 0x65BA790 VA: 0x65BE790
+	public void .ctor() { }
+
+	// RVA: 0x65BEF10 Offset: 0x65BAF10 VA: 0x65BEF10
+	internal bool <DeactivateBooster>b__0(RemoteBoosterData booster) { }
+
+	// RVA: 0x65BEF7C Offset: 0x65BAF7C VA: 0x65BEF7C
+	internal void <DeactivateBooster>b__1() { }
+}
+

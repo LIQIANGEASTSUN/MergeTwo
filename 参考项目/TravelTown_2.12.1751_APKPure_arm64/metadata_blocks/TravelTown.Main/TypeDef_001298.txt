@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class Combination.<>c // TypeDefIndex: 1298
+{
+	// Fields
+	public static readonly Combination.<>c <>9; // 0x0
+	public static Func<MergeItemWeakReference, string> <>9__5_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x6A289A4 Offset: 0x6A249A4 VA: 0x6A289A4
+	private static void .cctor() { }
+
+	// RVA: 0x6A28A0C Offset: 0x6A24A0C VA: 0x6A28A0C
+	public void .ctor() { }
+
+	// RVA: 0x6A28A14 Offset: 0x6A24A14 VA: 0x6A28A14
+	internal string <get_ItemsToConsumeIDs>b__5_0(MergeItemWeakReference item) { }
+}
+

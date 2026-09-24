@@ -1,0 +1,130 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class EventEntity // TypeDefIndex: 1219
+{
+	// Fields
+	public int Progress; // 0x8
+	public int Step; // 0xC
+	public List<BoardPositionEntity> Positions; // 0x10
+	public BoardTaskEntity BoardTask; // 0x14
+	public long EventEndUnix; // 0x18
+	public long EventStartUnix; // 0x20
+	public bool IsInitialized; // 0x28
+	public List<RewardEntity> ActiveRewards; // 0x2C
+	public InventoryEntity Inventory; // 0x30
+	public bool IsEventFinished; // 0x34
+	public bool IsFinishPopupShown; // 0x35
+	public bool IsAllLevelsCompleted; // 0x36
+	public int Index; // 0x38
+	public long NextEnergyUpdatesAt; // 0x40
+	public int SpecialEnergy; // 0x48
+	public LevelUpReward TempLevelUpGameplayReward; // 0x4C
+	public UserEntity.LevelUpPopupInfo TempLevelUpGameplayPopupInfo; // 0x50
+	public int CurrentEnergyPriceIndex; // 0x64
+	public bool UseDefaultEnergy; // 0x68
+	public List<string> PurchasedPackages; // 0x6C
+	public bool IsProgressPopupShown; // 0x70
+	public List<EventDayInfo> EventDayInfo; // 0x74
+	public int LevelGemGet; // 0x78
+	public int LevelGemSpend; // 0x7C
+	public int LevelEnergySpend; // 0x80
+
+	// Methods
+
+	// RVA: 0x17E606C Offset: 0x17E606C VA: 0x17E606C
+	public void AllLevelsFinished() { }
+
+	// RVA: 0x17E61BC Offset: 0x17E61BC VA: 0x17E61BC
+	public void ResetLevelGainAndSpends() { }
+
+	// RVA: 0x17E61B0 Offset: 0x17E61B0 VA: 0x17E61B0
+	public void SetEventFinished() { }
+
+	// RVA: 0x17E61DC Offset: 0x17E61DC VA: 0x17E61DC
+	public void SetFinishPopupShown() { }
+
+	// RVA: 0x17E61FC Offset: 0x17E61FC VA: 0x17E61FC
+	public EventDayInfo GetCurrentEventDayInfo() { }
+
+	// RVA: 0x17E64D8 Offset: 0x17E64D8 VA: 0x17E64D8
+	public bool HasUserSeenEventBefore() { }
+
+	// RVA: 0x17E6694 Offset: 0x17E6694 VA: 0x17E6694
+	public void ClearTempLevelupPopup() { }
+
+	// RVA: 0x17E66C4 Offset: 0x17E66C4 VA: 0x17E66C4
+	public int GetEventEnterCount() { }
+
+	// RVA: 0x17E6870 Offset: 0x17E6870 VA: 0x17E6870
+	public int GetSpecialEnergy() { }
+
+	// RVA: 0x17E6A7C Offset: 0x17E6A7C VA: 0x17E6A7C
+	public void AddEventEnterDay() { }
+
+	// RVA: 0x17E6D48 Offset: 0x17E6D48 VA: 0x17E6D48
+	public void ChangeEnergy(int amount, bool sendUpdate = True, bool saveBoard = True) { }
+
+	// RVA: 0x17E7020 Offset: 0x17E7020 VA: 0x17E7020
+	public int GetPurchasedPackageCount() { }
+
+	// RVA: 0x17E706C Offset: 0x17E706C VA: 0x17E706C
+	public void AddToPurchasedPackages(string packageID) { }
+
+	// RVA: 0x17E7138 Offset: 0x17E7138 VA: 0x17E7138
+	public void .ctor() { }
+
+	// RVA: 0x17E7140 Offset: 0x17E7140 VA: 0x17E7140
+	public void .ctor(EventBoardConfigItem eventConfig, int eventCount) { }
+
+	// RVA: 0x17E745C Offset: 0x17E745C VA: 0x17E745C
+	public void Initialize(BoardTaskData boardTaskData, BoardData boardData, LevelData levelData) { }
+
+	// RVA: 0x17E755C Offset: 0x17E755C VA: 0x17E755C
+	public List<RegularReward> GetUpcomingRegularRewards(LevelItem currentLevel) { }
+
+	// RVA: 0x17E77E8 Offset: 0x17E77E8 VA: 0x17E77E8
+	public long GetNextEnergyUpdatesAt() { }
+
+	// RVA: 0x17E79B8 Offset: 0x17E79B8 VA: 0x17E79B8
+	public bool IsAnyTaskDone() { }
+
+	// RVA: 0x17E79C8 Offset: 0x17E79C8 VA: 0x17E79C8 Slot: 4
+	public virtual bool ProcessTaskComplete(BoardData boardData, BoardTaskItem completedTask, LevelData levelData) { }
+
+	// RVA: 0x17E7DA4 Offset: 0x17E7DA4 VA: 0x17E7DA4
+	public void ChangeActiveRewards(BoardData boardData, int setID, int level, int amount, string trigger = "") { }
+
+	// RVA: 0x17E7C10 Offset: 0x17E7C10 VA: 0x17E7C10
+	public void ProcessEventProgressUpdate(BoardData boardData, BoardTaskItem completedTask, LevelItem currentLevel) { }
+
+	// RVA: 0x17E8AD0 Offset: 0x17E8AD0 VA: 0x17E8AD0 Slot: 5
+	protected virtual void ProcessLevelUpdate(BoardData boardData, BoardTaskItem completedTask, int extraXp, LevelItem currentLevel, LevelItem newLevelData) { }
+
+	// RVA: 0x17E8590 Offset: 0x17E8590 VA: 0x17E8590
+	protected List<RegularReward> FindGainedRegularRewards(BoardData boardData, BoardTaskItem completedTask, List<RegularReward> regularRewards) { }
+
+	// RVA: 0x17E8CC8 Offset: 0x17E8CC8 VA: 0x17E8CC8
+	public int GetActiveBoardItemCount(int level, int setID) { }
+
+	// RVA: 0x17E8EB8 Offset: 0x17E8EB8 VA: 0x17E8EB8
+	public List<BoardPositionEntity> GetActiveBoardPositions(ItemInfo itemInfo) { }
+
+	// RVA: 0x17E91B8 Offset: 0x17E91B8 VA: 0x17E91B8
+	public bool IsEmptyCell(BoardPositionEntity pos) { }
+
+	// RVA: 0x17E9218 Offset: 0x17E9218 VA: 0x17E9218
+	public bool IsItemNull(ItemEntity item) { }
+
+	// RVA: 0x17E9240 Offset: 0x17E9240 VA: 0x17E9240
+	public bool IsBoardFull() { }
+
+	// RVA: 0x17E93E0 Offset: 0x17E93E0 VA: 0x17E93E0
+	public List<BoardPositionEntity> GetMatchedPositionEntities(List<BoardTaskGoal> goals) { }
+
+	// RVA: 0x17E9874 Offset: 0x17E9874 VA: 0x17E9874
+	public bool IsOpenedBefore() { }
+
+	// RVA: 0x17E61F0 Offset: 0x17E61F0 VA: 0x17E61F0
+	public void SaveBoard() { }
+}
+

@@ -1,0 +1,108 @@
+// Namespace: 
+[Serializable]
+public class MapAdventureOneBarrierItem : TableBase // TypeDefIndex: 718
+{
+	// Fields
+	[CompilerGenerated]
+	private int <Id>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private int <BarrierType>k__BackingField; // 0xC
+	[CompilerGenerated]
+	private int <ConsumeNum>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private int <ConsumeCount>k__BackingField; // 0x14
+	[CompilerGenerated]
+	private List<int> <RewardId>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private List<int> <RewardNum>k__BackingField; // 0x1C
+	[CompilerGenerated]
+	private List<int> <RewardId2>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private List<int> <RewardNum2>k__BackingField; // 0x24
+
+	// Properties
+	public int Id { get; set; }
+	public int BarrierType { get; set; }
+	public int ConsumeNum { get; set; }
+	public int ConsumeCount { get; set; }
+	public List<int> RewardId { get; set; }
+	public List<int> RewardNum { get; set; }
+	public List<int> RewardId2 { get; set; }
+	public List<int> RewardNum2 { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x18973C4 Offset: 0x18973C4 VA: 0x18973C4
+	public int get_Id() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18973CC Offset: 0x18973CC VA: 0x18973CC
+	public void set_Id(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x18973D4 Offset: 0x18973D4 VA: 0x18973D4
+	public int get_BarrierType() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18973DC Offset: 0x18973DC VA: 0x18973DC
+	public void set_BarrierType(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x18973E4 Offset: 0x18973E4 VA: 0x18973E4
+	public int get_ConsumeNum() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18973EC Offset: 0x18973EC VA: 0x18973EC
+	public void set_ConsumeNum(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x18973F4 Offset: 0x18973F4 VA: 0x18973F4
+	public int get_ConsumeCount() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18973FC Offset: 0x18973FC VA: 0x18973FC
+	public void set_ConsumeCount(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1897404 Offset: 0x1897404 VA: 0x1897404
+	public List<int> get_RewardId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x189740C Offset: 0x189740C VA: 0x189740C
+	public void set_RewardId(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1897414 Offset: 0x1897414 VA: 0x1897414
+	public List<int> get_RewardNum() { }
+
+	[CompilerGenerated]
+	// RVA: 0x189741C Offset: 0x189741C VA: 0x189741C
+	public void set_RewardNum(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1897424 Offset: 0x1897424 VA: 0x1897424
+	public List<int> get_RewardId2() { }
+
+	[CompilerGenerated]
+	// RVA: 0x189742C Offset: 0x189742C VA: 0x189742C
+	public void set_RewardId2(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1897434 Offset: 0x1897434 VA: 0x1897434
+	public List<int> get_RewardNum2() { }
+
+	[CompilerGenerated]
+	// RVA: 0x189743C Offset: 0x189743C VA: 0x189743C
+	public void set_RewardNum2(List<int> value) { }
+
+	// RVA: 0x1897444 Offset: 0x1897444 VA: 0x1897444 Slot: 4
+	public override int GetID() { }
+
+	// RVA: 0x1897498 Offset: 0x1897498 VA: 0x1897498
+	public void .ctor() { }
+
+	// RVA: 0x18974A0 Offset: 0x18974A0 VA: 0x18974A0
+	public int <>iFixBaseProxy_GetID() { }
+}
+

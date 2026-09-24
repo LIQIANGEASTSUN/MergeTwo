@@ -1,0 +1,29 @@
+// Namespace: Paxie.MergeStudio.Features.MiniBoard
+[CreateAssetMenu(fileName = "MiniBoardCellData", menuName = "Scriptable/MiniBoard/MiniBoardCellData", order = 1)]
+public class MiniBoardCellData : ScriptableObject // TypeDefIndex: 1081
+{
+	// Fields
+	[ShowAssetPreview(40, 40)]
+	[BoxGroup("Sprites")]
+	public Sprite BackgroundDark; // 0xC
+	[BoxGroup("Sprites")]
+	[ShowAssetPreview(40, 40)]
+	public Sprite BackgroundWarm; // 0x10
+	[ShowAssetPreview(40, 40)]
+	[BoxGroup("Sprites")]
+	public Sprite SelectedImage; // 0x14
+	[BoxGroup("Sprites")]
+	[ShowAssetPreview(40, 40)]
+	public Sprite BackgroundDarkSquare; // 0x18
+	[ShowAssetPreview(40, 40)]
+	[BoxGroup("Sprites")]
+	public Sprite BackgroundWarmSquare; // 0x1C
+	[BoxGroup("Coloring")]
+	public Color DoneableColor; // 0x20
+
+	// Methods
+
+	// RVA: 0x17AEBE8 Offset: 0x17AEBE8 VA: 0x17AEBE8
+	public void .ctor() { }
+}
+

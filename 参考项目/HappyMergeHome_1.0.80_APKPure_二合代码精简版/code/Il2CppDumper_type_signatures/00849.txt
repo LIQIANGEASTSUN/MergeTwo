@@ -1,0 +1,18 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class PizzaTowerModel.<>c__DisplayClass52_0 // TypeDefIndex: 849
+{
+	// Fields
+	public Game_PizzaTower gamePizzaTower; // 0x8
+	public int count; // 0xC
+	public List<TaskCompletionSource<bool>> addValueTask; // 0x10
+
+	// Methods
+
+	// RVA: 0x1B0FBC0 Offset: 0x1B0FBC0 VA: 0x1B0FBC0
+	public void .ctor() { }
+
+	// RVA: 0x1B11938 Offset: 0x1B11938 VA: 0x1B11938
+	internal void <AddActivityScore>b__0() { }
+}
+

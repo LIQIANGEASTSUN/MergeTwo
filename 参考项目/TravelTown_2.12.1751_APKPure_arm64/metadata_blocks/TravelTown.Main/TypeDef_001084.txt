@@ -1,0 +1,20 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public class OrderSpawnComponent : ComponentBase<OrderSpawnCapability> // TypeDefIndex: 1084
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly string <OrderTreeId>k__BackingField; // 0x28
+
+	// Properties
+	public string OrderTreeId { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x68FDB40 Offset: 0x68F9B40 VA: 0x68FDB40
+	public string get_OrderTreeId() { }
+
+	// RVA: 0x68FDB48 Offset: 0x68F9B48 VA: 0x68FDB48
+	public void .ctor(OrderSpawnCapability capability, Entity entity) { }
+}
+

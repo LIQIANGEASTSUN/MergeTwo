@@ -1,0 +1,34 @@
+// Namespace: Merger.Game.Signal.Bubbles
+public class BubbledItemRemoveIconClickedSignal : BubbleRemoveSignalBase // TypeDefIndex: 9498
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly bool <HasCompensation>k__BackingField; // 0x50
+	[CompilerGenerated]
+	private readonly int <CompensationAmount>k__BackingField; // 0x54
+	[CompilerGenerated]
+	private readonly PlayerResourceEnum <CompensationResourceType>k__BackingField; // 0x58
+
+	// Properties
+	public bool HasCompensation { get; }
+	public int CompensationAmount { get; }
+	public PlayerResourceEnum CompensationResourceType { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x676E658 Offset: 0x676A658 VA: 0x676E658
+	public bool get_HasCompensation() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E660 Offset: 0x676A660 VA: 0x676E660
+	public int get_CompensationAmount() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E668 Offset: 0x676A668 VA: 0x676E668
+	public PlayerResourceEnum get_CompensationResourceType() { }
+
+	// RVA: 0x676E670 Offset: 0x676A670 VA: 0x676E670
+	public void .ctor(IMergeItem mergeItem, int mergeItemLevel) { }
+}
+

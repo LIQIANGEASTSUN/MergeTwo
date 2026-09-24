@@ -1,0 +1,24 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class CooldownBlocked // TypeDefIndex: 25941
+{
+	// Fields
+	[CompilerGenerated]
+	private Entity <Entity>k__BackingField; // 0x10
+
+	// Properties
+	public Entity Entity { get; set; }
+
+	// Methods
+
+	// RVA: 0x6A9A2CC Offset: 0x6A962CC VA: 0x6A9A2CC
+	public void .ctor(Entity entity) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A2FC Offset: 0x6A962FC VA: 0x6A9A2FC
+	public Entity get_Entity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A304 Offset: 0x6A96304 VA: 0x6A9A304
+	public void set_Entity(Entity value) { }
+}
+

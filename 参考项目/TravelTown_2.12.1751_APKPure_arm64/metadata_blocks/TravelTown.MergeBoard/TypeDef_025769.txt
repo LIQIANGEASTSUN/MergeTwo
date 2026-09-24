@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ResourceItemDropSystem.<>c // TypeDefIndex: 25769
+{
+	// Fields
+	public static readonly ResourceItemDropSystem.<>c <>9; // 0x0
+	public static Func<ValueTuple<Entity, BoardTilePositionComponent, IdComponent, BornComponent, ItemMergedComponent>, bool> <>9__4_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x6A74314 Offset: 0x6A70314 VA: 0x6A74314
+	private static void .cctor() { }
+
+	// RVA: 0x6A7437C Offset: 0x6A7037C VA: 0x6A7437C
+	public void .ctor() { }
+
+	// RVA: 0x6A74384 Offset: 0x6A70384 VA: 0x6A74384
+	internal bool <Tick>b__4_0(ValueTuple<Entity, BoardTilePositionComponent, IdComponent, BornComponent, ItemMergedComponent> queryEntity) { }
+}
+

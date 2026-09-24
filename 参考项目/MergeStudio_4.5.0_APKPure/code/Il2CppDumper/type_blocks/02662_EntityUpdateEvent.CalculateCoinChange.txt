@@ -1,0 +1,9 @@
+// Namespace: 
+public struct EntityUpdateEvent.CalculateCoinChange : IEvent // TypeDefIndex: 2662
+{
+	// Fields
+	public int ChangeAmount; // 0x0
+	public bool MakeImpactAnim; // 0x4
+	public bool Meta; // 0x5
+}
+

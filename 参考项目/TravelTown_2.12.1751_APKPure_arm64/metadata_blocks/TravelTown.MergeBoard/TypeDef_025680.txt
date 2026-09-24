@@ -1,0 +1,49 @@
+// Namespace: Merger.MergeBoard.View
+public class MergeBoardCombinationVerificationView : ViewBase<MergeBoardViewModel> // TypeDefIndex: 25680
+{
+	// Fields
+	[SerializeField]
+	private MergeBoardLayout _layout; // 0x30
+	[SerializeField]
+	private MergeBoardItemsContainer _itemsContainer; // 0x38
+	private bool _isPopupOpen; // 0x40
+	private IBoardItemView _item1DisplayedInPopup; // 0x48
+	private IBoardItemView _item2DisplayedInPopup; // 0x50
+	private PendingItemsCombinationResult _pendingCombinationResult; // 0x58
+
+	// Methods
+
+	// RVA: 0x6A36524 Offset: 0x6A32524 VA: 0x6A36524
+	private void Start() { }
+
+	// RVA: 0x6A365F0 Offset: 0x6A325F0 VA: 0x6A365F0 Slot: 7
+	protected override void OnDestroy() { }
+
+	// RVA: 0x6A366D0 Offset: 0x6A326D0 VA: 0x6A366D0
+	public void ConfirmCombination(TickArgs boardResult) { }
+
+	// RVA: 0x6A3676C Offset: 0x6A3276C VA: 0x6A3676C
+	private void OpenVerifyCombinationPopup(PendingItemsCombinationResult result) { }
+
+	// RVA: 0x6A36AD8 Offset: 0x6A32AD8 VA: 0x6A36AD8
+	private void OnItemRemoved(IBoardItemView boardItemView) { }
+
+	// RVA: 0x6A369E0 Offset: 0x6A329E0 VA: 0x6A369E0
+	private BoardItemPosition GetBoardItemPosition(Entity entity) { }
+
+	// RVA: 0x6A36B68 Offset: 0x6A32B68 VA: 0x6A36B68
+	private void OnVerifyCombinationFailed(Entity firstItem, Entity secondItem, MergeCheckItemType checkType) { }
+
+	// RVA: 0x6A36C58 Offset: 0x6A32C58 VA: 0x6A36C58
+	private void OnVerifyCombinationSuccess(BoardItemPosition firstItemPosition, BoardItemPosition secondItemPosition, MergeCheckItemType checkType) { }
+
+	// RVA: 0x6A36A48 Offset: 0x6A32A48 VA: 0x6A36A48
+	private void OnPopupOpened(PendingItemsCombinationResult result) { }
+
+	// RVA: 0x6A36C1C Offset: 0x6A32C1C VA: 0x6A36C1C
+	private void OnPopupClosed() { }
+
+	// RVA: 0x6A36FFC Offset: 0x6A32FFC VA: 0x6A36FFC
+	public void .ctor() { }
+}
+

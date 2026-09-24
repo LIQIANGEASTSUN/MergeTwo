@@ -1,0 +1,13 @@
+// Namespace: Framework.Core.Services.Backend.Remote.Payloads.BoardState
+[StateName("boardRefillingEvent")]
+public class EventBoardResourcesRefilling : BoardResourcesRefilling // TypeDefIndex: 10977
+{
+	// Fields
+	public string EventId; // 0x20
+
+	// Methods
+
+	// RVA: 0x692765C Offset: 0x692365C VA: 0x692765C
+	public void .ctor() { }
+}
+

@@ -1,0 +1,18 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ECSInjectionUtil.<>c__DisplayClass3_0 // TypeDefIndex: 609
+{
+	// Fields
+	public object target; // 0x10
+	public Type type; // 0x18
+	public ISystemManager systemManager; // 0x20
+
+	// Methods
+
+	// RVA: 0x6271964 Offset: 0x626D964 VA: 0x6271964
+	public void .ctor() { }
+
+	// RVA: 0x6271E84 Offset: 0x626DE84 VA: 0x6271E84
+	internal void <InjectSystems>b__1(FieldInfo field) { }
+}
+

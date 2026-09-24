@@ -1,0 +1,9 @@
+// Namespace: Merger.Game.Signal
+public class ClearItemSelectedSignal // TypeDefIndex: 9359
+{
+	// Methods
+
+	// RVA: 0x676B08C Offset: 0x676708C VA: 0x676B08C
+	public void .ctor() { }
+}
+

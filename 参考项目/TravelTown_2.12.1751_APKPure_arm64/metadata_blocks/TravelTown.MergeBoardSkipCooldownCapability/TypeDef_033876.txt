@@ -1,0 +1,40 @@
+// Namespace: Merger.MergeBoardSkipCooldownCapability.Logic
+public class SkipCooldownProvider : Base, ISkipCooldownProvider // TypeDefIndex: 33876
+{
+	// Fields
+	[Inject]
+	private IGameConfigurationModel _gameConfigurationModel; // 0x28
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0x30
+	[Inject]
+	private IUserProfileService _userProfileService; // 0x38
+	[Inject]
+	private List<ISkipCooldownStrategy> _strategies; // 0x40
+
+	// Properties
+	private SkipCooldownConfig SkipCooldownConfig { get; }
+
+	// Methods
+
+	// RVA: 0x6A63140 Offset: 0x6A5F140 VA: 0x6A63140
+	private SkipCooldownConfig get_SkipCooldownConfig() { }
+
+	// RVA: 0x6A631E4 Offset: 0x6A5F1E4 VA: 0x6A631E4 Slot: 15
+	public bool CanSkipCooldown(Entity entity) { }
+
+	// RVA: 0x6A632D4 Offset: 0x6A5F2D4 VA: 0x6A632D4 Slot: 16
+	public double GetTimeLeft(Entity entity) { }
+
+	// RVA: 0x6A63460 Offset: 0x6A5F460 VA: 0x6A63460 Slot: 17
+	public ResourceMultiple GetSkipCooldownPrice(Entity entity, IMergeItem mergeItem) { }
+
+	// RVA: 0x6A635E0 Offset: 0x6A5F5E0 VA: 0x6A635E0
+	private ResourceMultiple CalculatePriceWithSkipCooldownSettings(double timeLeft, SkipCooldownSettings skipCooldownSettings) { }
+
+	// RVA: 0x6A636D8 Offset: 0x6A5F6D8 VA: 0x6A636D8
+	private ResourceMultiple CalculatePriceWithCoefficents(double timeleft) { }
+
+	// RVA: 0x6A6384C Offset: 0x6A5F84C VA: 0x6A6384C
+	public void .ctor() { }
+}
+

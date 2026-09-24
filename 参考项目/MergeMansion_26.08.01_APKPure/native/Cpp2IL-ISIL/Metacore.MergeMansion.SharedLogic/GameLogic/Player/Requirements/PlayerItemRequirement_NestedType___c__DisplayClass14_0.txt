@@ -1,0 +1,39 @@
+Type: GameLogic.Player.Requirements.PlayerItemRequirement+<>c__DisplayClass14_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x035A1544 SUBS X9, X9, 0x1
+	0x035A1548 ADD X10, X10, 0x10
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: GameLogic.Player.Items.IItemDefinition <ItemDefinitions>b__0(GameLogic.Config.ItemDef itemRef)
+
+Disassembly:
+	0x035A2CEC LDR X1, [X10]
+	0x035A2CF0 CBZ X9, 0x35A2D14
+	0x035A2CF4 LDR X10, [X8 + 0xB0]
+	0x035A2CF8 ADD X10, X10, 0x8
+	0x035A2CFC LDUR X11, [X10 - 0x8]
+	0x035A2D00 CMP X11, X1
+	0x035A2D04 B.EQ 0x35A2D24
+	0x035A2D08 SUBS X9, X9, 0x1
+	0x035A2D0C ADD X10, X10, 0x10
+
+ISIL:
+	001 Compare X1, 0
+	002 JumpIfEqual {10}
+	003 Move X9, [X1]
+	004 Move X8, [X0+16]
+	005 Move X0, X1
+	006 Move X3, [X9+456]
+	007 Move X2, [X9+464]
+	008 Move X1, X8
+	009 CallNoReturn X3
+	010 Move X0, X31
+	011 Return X0
+

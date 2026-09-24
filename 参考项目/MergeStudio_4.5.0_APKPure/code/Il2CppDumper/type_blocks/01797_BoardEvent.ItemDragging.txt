@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BoardEvent.ItemDragging : IEvent // TypeDefIndex: 1797
+{
+	// Fields
+	public ItemController ItemController; // 0x0
+}
+

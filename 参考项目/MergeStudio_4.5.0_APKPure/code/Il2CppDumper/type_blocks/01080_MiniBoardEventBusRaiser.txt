@@ -1,0 +1,141 @@
+// Namespace: Paxie.MergeStudio.Features.MiniBoard
+public static class MiniBoardEventBusRaiser // TypeDefIndex: 1080
+{
+	// Methods
+
+	// RVA: 0x17AD1C4 Offset: 0x17AD1C4 VA: 0x17AD1C4
+	public static void InitializeBoard(BoardEntity boardEntity, MiniBoardData boardData) { }
+
+	// RVA: 0x17A5314 Offset: 0x17A5314 VA: 0x17A5314
+	public static void ChangeGameplayStatus(bool enableGameplay) { }
+
+	// RVA: 0x17AD288 Offset: 0x17AD288 VA: 0x17AD288
+	public static void BoardMove(MiniBoardItemController itemController, MiniBoardCellController cellController) { }
+
+	// RVA: 0x17AD34C Offset: 0x17AD34C VA: 0x17AD34C
+	public static void BoardSwap(MiniBoardItemController itemController, MiniBoardItemController itemController2) { }
+
+	// RVA: 0x17AD410 Offset: 0x17AD410 VA: 0x17AD410
+	public static void BoardMergeStart(MiniBoardItemController itemController, MiniBoardItemController itemController2, BoardItemData spawnedItem) { }
+
+	// RVA: 0x17AD4F0 Offset: 0x17AD4F0 VA: 0x17AD4F0
+	public static void BoardMerge(MiniBoardItemController itemController, MiniBoardItemController itemController2, BoardItemData spawnedItem) { }
+
+	// RVA: 0x17AD5D0 Offset: 0x17AD5D0 VA: 0x17AD5D0
+	public static void BoardMergeCompleted(MiniBoardItemController newItem) { }
+
+	// RVA: 0x17AD670 Offset: 0x17AD670 VA: 0x17AD670
+	public static void BoardRevertMove(MiniBoardItemController itemController, bool applyScaleDownAnim = False) { }
+
+	// RVA: 0x17AD728 Offset: 0x17AD728 VA: 0x17AD728
+	public static void DestroyFromBoard(int setID, int level) { }
+
+	// RVA: 0x17AD7B4 Offset: 0x17AD7B4 VA: 0x17AD7B4
+	public static void ClearSelectedPosition(bool itemDestroy) { }
+
+	// RVA: 0x17AD838 Offset: 0x17AD838 VA: 0x17AD838
+	public static void CollectCollectable(MiniBoardItemController collectable, BoardItemCollectable collectableData) { }
+
+	// RVA: 0x17AD8FC Offset: 0x17AD8FC VA: 0x17AD8FC
+	public static void CollectRewardItemHolder(MiniBoardItemController rewardHolderItem, GameMainReward mainReward) { }
+
+	// RVA: 0x17AD9C0 Offset: 0x17AD9C0 VA: 0x17AD9C0
+	public static void SpawnerSpawn(MiniBoardItemController spawner, BoardItemDefaultSpawner defaultSpawnerData, BoardItemAutoSpawner autoSpawnerData, Coordinate targetPosition) { }
+
+	// RVA: 0x17ADAC0 Offset: 0x17ADAC0 VA: 0x17ADAC0
+	public static void PerishableSpawnerSpawn(MiniBoardItemController spawner, BoardItemPerishableSpawner perishableSpawnerData, Coordinate targetPosition) { }
+
+	// RVA: 0x17ADBAC Offset: 0x17ADBAC VA: 0x17ADBAC
+	public static void OnStateChange(bool animateClockDisappear) { }
+
+	// RVA: 0x17ADC30 Offset: 0x17ADC30 VA: 0x17ADC30
+	public static void RemoveFromRewardUI(Transform spawnTransform, MiniBoardItemEntity itemEntity, BoardItemData itemData) { }
+
+	// RVA: 0x17ADD10 Offset: 0x17ADD10 VA: 0x17ADD10
+	public static void ClearBoard() { }
+
+	// RVA: 0x17ADD90 Offset: 0x17ADD90 VA: 0x17ADD90
+	public static void PreMergeParticleActive(MiniBoardItemController itemController) { }
+
+	// RVA: 0x17ADE30 Offset: 0x17ADE30 VA: 0x17ADE30
+	public static void BoardItemPositionUpdateStart(MiniBoardItemController itemController, MiniBoardItemController.PositionUpdateType positionUpdateType) { }
+
+	// RVA: 0x17ADEE4 Offset: 0x17ADEE4 VA: 0x17ADEE4
+	public static void BoardItemPositionUpdate(MiniBoardItemController itemController, MiniBoardItemController.PositionUpdateType positionUpdateType) { }
+
+	// RVA: 0x17ADF98 Offset: 0x17ADF98 VA: 0x17ADF98
+	public static void BoardItemRemoveFinished() { }
+
+	// RVA: 0x17AE018 Offset: 0x17AE018 VA: 0x17AE018
+	public static void ItemDragStarted(MiniBoardItemController itemController) { }
+
+	// RVA: 0x17AE0B8 Offset: 0x17AE0B8 VA: 0x17AE0B8
+	public static void ItemDragging(MiniBoardItemController itemController) { }
+
+	// RVA: 0x17AE158 Offset: 0x17AE158 VA: 0x17AE158
+	public static void ItemDragStopped() { }
+
+	// RVA: 0x17AE1D8 Offset: 0x17AE1D8 VA: 0x17AE1D8
+	public static void SpawnerHintAdd(MiniBoardItemController itemController) { }
+
+	// RVA: 0x17AA1BC Offset: 0x17AA1BC VA: 0x17AA1BC
+	public static void ItemGainFromSpawnerReward(MiniBoardItemGainFromSpawnerReward itemGainFromSpawnerReward) { }
+
+	// RVA: 0x17AE278 Offset: 0x17AE278 VA: 0x17AE278
+	public static void BoardItemStatusChange(bool updateBoardTask) { }
+
+	// RVA: 0x17AE2FC Offset: 0x17AE2FC VA: 0x17AE2FC
+	public static void BoardNonMovableItemClick(MiniBoardMovable moving, MiniBoardMovable.InteractionStatus interactionStatus) { }
+
+	// RVA: 0x17AE3B0 Offset: 0x17AE3B0 VA: 0x17AE3B0
+	public static void BoardItemClick(MiniBoardMovable moving, MiniBoardMovable.InteractionStatus interactionStatus) { }
+
+	// RVA: 0x17AE464 Offset: 0x17AE464 VA: 0x17AE464
+	public static void BoardDragCollisionButtonStays(MiniBoardMovable moving) { }
+
+	// RVA: 0x17A9D28 Offset: 0x17A9D28 VA: 0x17A9D28
+	public static void BoardRewardAreaUIUpdate() { }
+
+	// RVA: 0x17AE504 Offset: 0x17AE504 VA: 0x17AE504
+	public static void BoardRewardAreaItemAdded(int addedItemCount, bool updateBoardIcon) { }
+
+	// RVA: 0x17AE590 Offset: 0x17AE590 VA: 0x17AE590
+	public static void BoardUpdateRewardAreaCount(int totalItemCount) { }
+
+	// RVA: 0x17AE614 Offset: 0x17AE614 VA: 0x17AE614
+	public static void ProgressionBoardLoadNewBoard() { }
+
+	// RVA: 0x17AE694 Offset: 0x17AE694 VA: 0x17AE694
+	public static void ProgressionBoardMaxProgressLevelItemChanged(int maxLevel) { }
+
+	// RVA: 0x17AE718 Offset: 0x17AE718 VA: 0x17AE718
+	public static void ProgressionBoardAnimatedProgressItemAnimationCompleted() { }
+
+	// RVA: 0x17A3CF0 Offset: 0x17A3CF0 VA: 0x17A3CF0
+	public static void ProgressionBoardProgressItemFoundRaiseKey(Vector3 keyPosition, float keyWorldScale, Sprite keySprite) { }
+
+	// RVA: 0x17A79C4 Offset: 0x17A79C4 VA: 0x17A79C4
+	public static void ProgressionBoardNoticePopupClosed() { }
+
+	// RVA: 0x17AE798 Offset: 0x17AE798 VA: 0x17AE798
+	public static void ProgressionBoardCongratsPopupClosed() { }
+
+	// RVA: 0x17AE818 Offset: 0x17AE818 VA: 0x17AE818
+	public static void SRClearRewardArea() { }
+
+	// RVA: 0x17AE898 Offset: 0x17AE898 VA: 0x17AE898
+	public static void SRBoardAddItemToRewardArea(int setID, int level, int boosterID, GameMainReward gameMainReward) { }
+
+	// RVA: 0x17AE964 Offset: 0x17AE964 VA: 0x17AE964
+	public static void SRBoardSpawnItemRequest(int setID, int level) { }
+
+	// RVA: 0x17AE9F0 Offset: 0x17AE9F0 VA: 0x17AE9F0
+	public static void SRBoardSpawnItem(MiniBoardItemEntity itemEntity, List<MiniBoardItemEntity> itemEntityList) { }
+
+	// RVA: 0x17AEAB4 Offset: 0x17AEAB4 VA: 0x17AEAB4
+	public static void SRBoardSpawnRewardHolderItemRequest(int rewardSetID, int rewardLevel, int boosterID) { }
+
+	// RVA: 0x17AEB48 Offset: 0x17AEB48 VA: 0x17AEB48
+	public static void SRBoardSpawnRewardHolderItem(MiniBoardItemEntity itemEntity) { }
+}
+

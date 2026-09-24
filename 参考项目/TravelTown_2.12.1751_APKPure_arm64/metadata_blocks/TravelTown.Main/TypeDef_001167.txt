@@ -1,0 +1,96 @@
+// Namespace: MergeEngine.Configuration
+[CreateAssetMenu(fileName = "GameConfig.asset", menuName = "Game/Config")]
+[BakedConfiguration("Assets/Configuration/GameConfig.asset", "Assets/Scripts/MergeEngine/Configuration/Baked/BakedGameConfig.cs")]
+[Serializable]
+public class GameConfig : SerializedScriptableObject // TypeDefIndex: 1167
+{
+	// Fields
+	public InventoryCapability Inventory; // 0x58
+	public int BuildNumber; // 0x60
+	public int MinSupportedBuildNumber; // 0x64
+	[RequiredWeakReference]
+	[SerializeField]
+	public List<MergeItemWeakReference> RatePopupTriggerItems; // 0x68
+	public BubbledItemsConfig BubbledItemsConfig; // 0x70
+	public SkipCooldownConfig SkipCooldownConfigMainBoard; // 0x78
+	public SkipCooldownConfig SkipCooldownConfigLiveOpsBoard; // 0x80
+	public string IosStoreUrl; // 0x88
+	public float IapMigrationMultiplierBonus; // 0x90
+	public SkinConfiguration SkinConfiguration; // 0x98
+	public string ChestInfoUrl; // 0xA0
+	public string PackInfoUrl; // 0xA8
+	public string ItemSelectionBoxInfoUrl; // 0xB0
+	public string FacebookMessengerUrl; // 0xB8
+	public string ContactUsUrl; // 0xC0
+	public string ContactUsUrlPath; // 0xC8
+	public string ContactUsUrlWithFormPath; // 0xD0
+	public string DeleteAccountFormId; // 0xD8
+	public ZendeskLanguageMapping[] ZendeskLanguageMapping; // 0xE0
+	public int FtueEndPlayerLevel; // 0xE8
+	public int PreventConsumableSpawnsBeforeLevel; // 0xEC
+	public float ToolsRequiredByMetagameBooster; // 0xF0
+	public MergeItemWeakReference[] ItemsTransferableFromLiveOpsEvent; // 0xF8
+	public float ItemShopHCPriceMultiplier; // 0x100
+	public int SnapshotUploadLimitPerDay; // 0x104
+	[AssetGroupFilter("UI")]
+	public Asset SpinnerOverlayAsset; // 0x108
+	[AssetGroupFilter("UI")]
+	public Asset SpinnerAsset; // 0x110
+	[AssetGroupFilter("UI")]
+	public Asset ThreeDotsLoaderAsset; // 0x118
+	[AssetGroupFilter("UI")]
+	public Asset MaintenanceModeOverlayAsset; // 0x120
+	[AssetGroupFilter("UI")]
+	public Asset ModedApkOverlayAsset; // 0x128
+	[SerializeField]
+	private string _facebookPageUrl; // 0x130
+	[SerializeField]
+	private string _facebookGroupUrl; // 0x138
+	[SerializeField]
+	private string _twitterPageUrl; // 0x140
+	[SerializeField]
+	private string _instagramPageUrl; // 0x148
+
+	// Properties
+	public ReadOnlyCollection<IMergeItem> RatePopupTriggerItems2 { get; }
+	public string FacebookPageUrl { get; set; }
+	public string FacebookGroupUrl { get; set; }
+	public string TwitterPageUrl { get; set; }
+	public string InstagramPageUrl { get; set; }
+
+	// Methods
+
+	// RVA: 0x690A20C Offset: 0x690620C VA: 0x690A20C
+	public ReadOnlyCollection<IMergeItem> get_RatePopupTriggerItems2() { }
+
+	// RVA: 0x690A350 Offset: 0x6906350 VA: 0x690A350
+	public string get_FacebookPageUrl() { }
+
+	// RVA: 0x690A358 Offset: 0x6906358 VA: 0x690A358
+	public void set_FacebookPageUrl(string value) { }
+
+	// RVA: 0x690A368 Offset: 0x6906368 VA: 0x690A368
+	public string get_FacebookGroupUrl() { }
+
+	// RVA: 0x690A370 Offset: 0x6906370 VA: 0x690A370
+	public void set_FacebookGroupUrl(string value) { }
+
+	// RVA: 0x690A380 Offset: 0x6906380 VA: 0x690A380
+	public string get_TwitterPageUrl() { }
+
+	// RVA: 0x690A388 Offset: 0x6906388 VA: 0x690A388
+	public void set_TwitterPageUrl(string value) { }
+
+	// RVA: 0x690A398 Offset: 0x6906398 VA: 0x690A398
+	public string get_InstagramPageUrl() { }
+
+	// RVA: 0x690A3A0 Offset: 0x69063A0 VA: 0x690A3A0
+	public void set_InstagramPageUrl(string value) { }
+
+	// RVA: 0x690A3B0 Offset: 0x69063B0 VA: 0x690A3B0
+	private bool InventoryValid(InventoryCapability inventory) { }
+
+	// RVA: 0x690A3E8 Offset: 0x69063E8 VA: 0x690A3E8
+	public void .ctor() { }
+}
+

@@ -1,0 +1,115 @@
+// Namespace: MergeEngine.ECS.Systems.Board
+public class MergeSystem : SystemBase, IItemsCombiner // TypeDefIndex: 930
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x40
+	[Inject]
+	private IRandomNumberModel _randomNumberModel; // 0x48
+	[Inject]
+	private INotificationDataFactory _notificationDataFactory; // 0x50
+	[Inject]
+	private IUserProfileService _userProfileService; // 0x58
+	[Inject]
+	private IMeteorService _meteorService; // 0x60
+	[InjectSystem]
+	private BoardSystem _boardSystem; // 0x68
+	[InjectSystem]
+	private OperationTrackingSystem _operationTrackingSystem; // 0x70
+	[InjectSystem]
+	private StackingSystem _stackingSystem; // 0x78
+	[CompilerGenerated]
+	private Action<IMergeItem, BoardItemPosition, IMergeItem, IMergeItem> ItemMerged; // 0x80
+	private ConsumableDropSystem _consumableDropSystem; // 0x88
+	private BubbledItemSystem _bubbledItemsSystem; // 0x90
+	private PlayerItemsCollectionSystem _playerItemsCollectionSystem; // 0x98
+	private CollectionBookSystem _collectionBookSystem; // 0xA0
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6658184 Offset: 0x6654184 VA: 0x6658184
+	public void add_ItemMerged(Action<IMergeItem, BoardItemPosition, IMergeItem, IMergeItem> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6658BB8 Offset: 0x6654BB8 VA: 0x6658BB8
+	public void remove_ItemMerged(Action<IMergeItem, BoardItemPosition, IMergeItem, IMergeItem> value) { }
+
+	// RVA: 0x666D8B8 Offset: 0x66698B8 VA: 0x666D8B8 Slot: 6
+	protected override void InitializeSystem() { }
+
+	// RVA: 0x666D9B0 Offset: 0x66699B0 VA: 0x666D9B0 Slot: 13
+	public bool CanCombineItems(PositionComponent firstItem, PositionComponent secondItem) { }
+
+	// RVA: 0x666DAE0 Offset: 0x6669AE0 VA: 0x666DAE0 Slot: 14
+	public bool TryCombineItems(PositionComponent firstItem, PositionComponent secondItem, IItemsCombiner.OnItemsCombined callback) { }
+
+	// RVA: 0x666DBEC Offset: 0x6669BEC VA: 0x666DBEC
+	private bool ShouldVerifyMerge(PositionComponent firstItem, PositionComponent secondItem) { }
+
+	// RVA: 0x666DDD0 Offset: 0x6669DD0 VA: 0x666DDD0
+	private void VerifyMerge(PositionComponent firstItem, PositionComponent secondItem) { }
+
+	// RVA: 0x666E140 Offset: 0x666A140 VA: 0x666E140
+	private void OnVerifyMergeConfirmed(BoardItemPosition firstItemPosition, BoardItemPosition secondItemPosition) { }
+
+	// RVA: 0x666E020 Offset: 0x666A020 VA: 0x666E020
+	private bool PerformTryCombineItems(PositionComponent firstItem, PositionComponent secondItem, IItemsCombiner.OnItemsCombined callback) { }
+
+	// RVA: 0x666E204 Offset: 0x666A204 VA: 0x666E204 Slot: 15
+	public void ResetCombine() { }
+
+	// RVA: 0x666E1A8 Offset: 0x666A1A8 VA: 0x666E1A8
+	public bool TryMergeItems(MergeComponent firstItem, MergeComponent secondItem, BoardItemPosition newPosition) { }
+
+	// RVA: 0x666E208 Offset: 0x666A208 VA: 0x666E208
+	private void Merge(MergeComponent firstItem, MergeComponent secondItem, BoardItemPosition newPosition, IMergeItem newItem, bool isSpecificMerge = False) { }
+
+	// RVA: 0x666F61C Offset: 0x666B61C VA: 0x666F61C
+	private ValueTuple<bool, ItemNotificationData, ItemNotificationData> HandleStackingJokers(MergeComponent firstItem, IMergeItem firstMergeItem, MergeComponent secondItem, IMergeItem secondMergeItem, ref BoardItemPosition boardItemPosition) { }
+
+	// RVA: 0x666F98C Offset: 0x666B98C VA: 0x666F98C
+	private IMergeItem TrySpawnConsumable(PositionComponent mergedItemPosition, out Entity consumableEntity) { }
+
+	// RVA: 0x666FBF0 Offset: 0x666BBF0 VA: 0x666FBF0
+	private void HandleFireMergedFloatingText(BoardItemPosition position) { }
+
+	// RVA: -1 Offset: -1
+	private void HandleMergeItemCapacity<TComponent>(Entity firstMerged, Entity secondMerged, Entity newEntity) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D21A0C Offset: 0x3D1DA0C VA: 0x3D21A0C
+	|-MergeSystem.HandleMergeItemCapacity<object>
+	*/
+
+	// RVA: 0x666FD20 Offset: 0x666BD20 VA: 0x666FD20
+	private bool CanMergeSame(MergeComponent item1, MergeComponent item2) { }
+
+	// RVA: 0x666DA34 Offset: 0x6669A34 VA: 0x666DA34
+	public bool CanMerge(MergeComponent item1, MergeComponent item2) { }
+
+	// RVA: 0x666FE64 Offset: 0x666BE64 VA: 0x666FE64
+	private bool ItemsNotMergeLocked(MergeComponent item1, MergeComponent item2) { }
+
+	// RVA: 0x666FEF8 Offset: 0x666BEF8 VA: 0x666FEF8
+	private bool ItemsNotMeteorLocked(MergeComponent item1, MergeComponent item2) { }
+
+	// RVA: 0x666FAC4 Offset: 0x666BAC4 VA: 0x666FAC4
+	private void UpdateItemTimestamps(MergeComponent firstItem, MergeComponent secondItem, Entity mergedItemEntity) { }
+
+	// RVA: 0x666E0EC Offset: 0x666A0EC VA: 0x666E0EC
+	private IMergeItem GetResultItem(MergeComponent firstMergeItem, MergeComponent secondMergeItem) { }
+
+	// RVA: 0x6670014 Offset: 0x666C014 VA: 0x6670014
+	private IMergeItem GetAnyItemOnlyResult(MergeComponent firstItem, MergeComponent secondItem) { }
+
+	// RVA: 0x6670128 Offset: 0x666C128 VA: 0x6670128
+	private IMergeItem GetSameItemResult(MergeComponent firstItem, MergeComponent secondItem) { }
+
+	// RVA: 0x6670248 Offset: 0x666C248 VA: 0x6670248
+	private IMergeItem GetSpecificItemResult(MergeComponent firstItem, MergeComponent secondItem) { }
+
+	// RVA: 0x6670384 Offset: 0x666C384 VA: 0x6670384
+	public void .ctor() { }
+}
+

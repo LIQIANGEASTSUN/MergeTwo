@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class LevelBasedChestSpawner.<>c__DisplayClass4_0 // TypeDefIndex: 1666
+{
+	// Fields
+	public float r; // 0x8
+	public float sum; // 0xC
+
+	// Methods
+
+	// RVA: 0x18CC7E4 Offset: 0x18CC7E4 VA: 0x18CC7E4
+	public void .ctor() { }
+
+	// RVA: 0x18CC87C Offset: 0x18CC87C VA: 0x18CC87C
+	internal bool <GetRandomItem>b__0(SpawnedItem item) { }
+}
+

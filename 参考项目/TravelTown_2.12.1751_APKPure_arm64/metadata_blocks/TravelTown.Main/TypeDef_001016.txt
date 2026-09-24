@@ -1,0 +1,34 @@
+// Namespace: MergeEngine.ECS.Components
+public class InventoryItemCountComponent : ComponentBase // TypeDefIndex: 1016
+{
+	// Fields
+	[CompilerGenerated]
+	private Action<IMergeItem> ItemChanged; // 0x20
+	private Dictionary<IMergeItem, int> _itemsInInventoryCount; // 0x28
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x68F7DD4 Offset: 0x68F3DD4 VA: 0x68F7DD4
+	public void add_ItemChanged(Action<IMergeItem> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68F7E84 Offset: 0x68F3E84 VA: 0x68F7E84
+	public void remove_ItemChanged(Action<IMergeItem> value) { }
+
+	// RVA: 0x68F7F34 Offset: 0x68F3F34 VA: 0x68F7F34
+	public void .ctor(Entity entity) { }
+
+	// RVA: 0x68F7FD0 Offset: 0x68F3FD0 VA: 0x68F7FD0
+	public void AddItem(IMergeItem mergeItem) { }
+
+	// RVA: 0x68F80FC Offset: 0x68F40FC VA: 0x68F80FC
+	public void RemoveItem(IMergeItem mergeItem) { }
+
+	// RVA: 0x68F81B4 Offset: 0x68F41B4 VA: 0x68F81B4
+	public int GetItemInInventoryCount(IMergeItem mergeItem) { }
+
+	// RVA: 0x68F80E0 Offset: 0x68F40E0 VA: 0x68F80E0
+	private void InvokeChanged(IMergeItem mergeItem) { }
+}
+

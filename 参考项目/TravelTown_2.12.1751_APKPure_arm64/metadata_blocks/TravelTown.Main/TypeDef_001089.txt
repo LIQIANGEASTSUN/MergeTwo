@@ -1,0 +1,35 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public class StackingComponent : ComponentBase<StackingCapability>, IRemoteLoadedComponent<SerializedStackingComponent> // TypeDefIndex: 1089
+{
+	// Fields
+	public const string Key = "stacking";
+	private int _stackSize; // 0x28
+
+	// Properties
+	public int StackSize { get; set; }
+	public bool IsStacking { get; }
+
+	// Methods
+
+	// RVA: 0x68FDDB0 Offset: 0x68F9DB0 VA: 0x68FDDB0
+	public void .ctor(StackingCapability capability, Entity entity) { }
+
+	// RVA: 0x68FDE24 Offset: 0x68F9E24 VA: 0x68FDE24
+	public int get_StackSize() { }
+
+	// RVA: 0x68FDE2C Offset: 0x68F9E2C VA: 0x68FDE2C
+	private void set_StackSize(int value) { }
+
+	// RVA: 0x68FDEA0 Offset: 0x68F9EA0 VA: 0x68FDEA0 Slot: 7
+	public void LoadComponent(SerializedStackingComponent componentData) { }
+
+	// RVA: 0x68FDEBC Offset: 0x68F9EBC VA: 0x68FDEBC
+	public void IncrementStackSize(int amount = 1) { }
+
+	// RVA: 0x68FDEC8 Offset: 0x68F9EC8 VA: 0x68FDEC8
+	public void DecrementStackSize(int amount = 1) { }
+
+	// RVA: 0x68FDED4 Offset: 0x68F9ED4 VA: 0x68FDED4
+	public bool get_IsStacking() { }
+}
+

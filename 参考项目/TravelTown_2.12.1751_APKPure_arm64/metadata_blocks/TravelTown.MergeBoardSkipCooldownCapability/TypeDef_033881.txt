@@ -1,0 +1,16 @@
+// Namespace: Merger.MergeBoardSkipCooldownCapability.Decorators
+public class SkipCooldownSystemDecorator : IBoardControllerDecorator // TypeDefIndex: 33881
+{
+	// Fields
+	[Inject]
+	private DiContainer _container; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A641EC Offset: 0x6A601EC VA: 0x6A641EC Slot: 4
+	public void DecorateSystems(SystemsBuilder systemsBuilder) { }
+
+	// RVA: 0x6A642AC Offset: 0x6A602AC VA: 0x6A642AC
+	public void .ctor() { }
+}
+

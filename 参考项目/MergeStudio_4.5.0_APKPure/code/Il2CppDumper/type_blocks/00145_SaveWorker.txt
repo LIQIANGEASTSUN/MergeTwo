@@ -1,0 +1,38 @@
+// Namespace: Paxie
+public class SaveWorker : MonoBehaviour // TypeDefIndex: 145
+{
+	// Fields
+	private static readonly string SkipDiskWriteKey; // 0x0
+	public Queue<Action> RunInUpdate; // 0x10
+	private static SaveWorker _instance; // 0x4
+
+	// Properties
+	public static SaveWorker Instance { get; }
+
+	// Methods
+
+	// RVA: 0x18A8F94 Offset: 0x18A8F94 VA: 0x18A8F94
+	public static SaveWorker get_Instance() { }
+
+	// RVA: 0x18A8FF8 Offset: 0x18A8FF8 VA: 0x18A8FF8
+	private void Awake() { }
+
+	// RVA: 0x18A9108 Offset: 0x18A9108 VA: 0x18A9108
+	public void Initialize() { }
+
+	// RVA: 0x18A910C Offset: 0x18A910C VA: 0x18A910C
+	private void SaveMapAsync(object threadInput) { }
+
+	// RVA: 0x18A99F4 Offset: 0x18A99F4 VA: 0x18A99F4
+	public void SaveMap(Dictionary<string, object> map, bool skipDiskWrite) { }
+
+	// RVA: 0x18A9B40 Offset: 0x18A9B40 VA: 0x18A9B40
+	private void FixedUpdate() { }
+
+	// RVA: 0x18A9CCC Offset: 0x18A9CCC VA: 0x18A9CCC
+	public void .ctor() { }
+
+	// RVA: 0x18A9D64 Offset: 0x18A9D64 VA: 0x18A9D64
+	private static void .cctor() { }
+}
+

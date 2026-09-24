@@ -1,0 +1,155 @@
+// Namespace: Activity.Candy
+public class CandyModel : ActivityEntityBase // TypeDefIndex: 7154
+{
+	// Fields
+	private static CandyModel _instance; // 0x0
+	private static GameObject _flyItemObj; // 0x4
+	private int _createPrice; // 0x3C
+	private int _consumeNum; // 0x40
+	private List<CandyRandomGroupConfig> _candyRandomGroupConfigList; // 0x44
+	private const string _coolTimeKey = "candyCoolTime";
+
+	// Properties
+	public static CandyModel Instance { get; }
+	public override string Guid { get; }
+	public static GameObject FlyItemObj { get; }
+	public StorageCandy CandyData { get; }
+
+	// Methods
+
+	// RVA: 0x1D29B00 Offset: 0x1D29B00 VA: 0x1D29B00
+	public static CandyModel get_Instance() { }
+
+	// RVA: 0x1D2A704 Offset: 0x1D2A704 VA: 0x1D2A704 Slot: 4
+	public override string get_Guid() { }
+
+	// RVA: 0x1D2A794 Offset: 0x1D2A794 VA: 0x1D2A794
+	public static GameObject get_FlyItemObj() { }
+
+	[RuntimeInitializeOnLoadMethod(0)]
+	// RVA: 0x1D2A958 Offset: 0x1D2A958 VA: 0x1D2A958
+	private static void InitAuto() { }
+
+	// RVA: 0x1D2A9C0 Offset: 0x1D2A9C0 VA: 0x1D2A9C0
+	public StorageCandy get_CandyData() { }
+
+	// RVA: 0x1D29BC4 Offset: 0x1D29BC4 VA: 0x1D29BC4
+	public bool IsOpened(bool hasLog = False) { }
+
+	// RVA: 0x1D2AAD0 Offset: 0x1D2AAD0 VA: 0x1D2AAD0 Slot: 5
+	public override void InitFromServerData(string activityId, string activityType, ulong startTime, ulong endTime, ulong rewardEndTime, bool manualEnd, string configJson, string activitySubType) { }
+
+	// RVA: 0x1D2AC90 Offset: 0x1D2AC90 VA: 0x1D2AC90
+	private void InitCandyRandomGroupConfigList() { }
+
+	// RVA: 0x1D2AE34 Offset: 0x1D2AE34 VA: 0x1D2AE34
+	private void RandomGroupId() { }
+
+	// RVA: 0x1D2AF70 Offset: 0x1D2AF70 VA: 0x1D2AF70 Slot: 18
+	protected override void InitServerDataFinish() { }
+
+	// RVA: 0x1D2B28C Offset: 0x1D2B28C VA: 0x1D2B28C
+	public void AddScore(int score, string reason) { }
+
+	// RVA: 0x1D2B428 Offset: 0x1D2B428 VA: 0x1D2B428
+	public bool UseScore() { }
+
+	// RVA: 0x1D2B6A0 Offset: 0x1D2B6A0 VA: 0x1D2B6A0
+	private int GetCreatePrice() { }
+
+	// RVA: 0x1D2B514 Offset: 0x1D2B514 VA: 0x1D2B514
+	private int GetConsumeNum() { }
+
+	// RVA: 0x1D2B8E4 Offset: 0x1D2B8E4 VA: 0x1D2B8E4
+	public void AddEnergy(int index, int id, MergeBoard board, int doubleEnergyTimes) { }
+
+	// RVA: 0x1D2BDF0 Offset: 0x1D2BDF0 VA: 0x1D2BDF0
+	private void FlyCandy(Vector2 srcPos, Vector2 startPos, float time, bool showEffect, Action action) { }
+
+	// RVA: 0x1D2A3EC Offset: 0x1D2A3EC VA: 0x1D2A3EC
+	public int GetScore() { }
+
+	// RVA: 0x1D2A4D0 Offset: 0x1D2A4D0 VA: 0x1D2A4D0
+	public void OpenMainPopup() { }
+
+	// RVA: 0x1D2C094 Offset: 0x1D2C094 VA: 0x1D2C094
+	public int GetCurrentRound() { }
+
+	// RVA: 0x1D2C104 Offset: 0x1D2C104 VA: 0x1D2C104
+	public int GetCardReward(int id) { }
+
+	// RVA: 0x1D2C35C Offset: 0x1D2C35C VA: 0x1D2C35C
+	public int GetCandyNum(int id) { }
+
+	// RVA: 0x1D2C564 Offset: 0x1D2C564 VA: 0x1D2C564
+	public float GetCostProgress() { }
+
+	// RVA: 0x1D2C5F8 Offset: 0x1D2C5F8 VA: 0x1D2C5F8
+	public string GetCostProgressString() { }
+
+	// RVA: 0x1D2C70C Offset: 0x1D2C70C VA: 0x1D2C70C
+	public ValueTuple<List<int>, List<int>> LuckyDraw() { }
+
+	// RVA: 0x1D2DB14 Offset: 0x1D2DB14 VA: 0x1D2DB14
+	public bool CheckCardReward() { }
+
+	// RVA: 0x1D2E770 Offset: 0x1D2E770 VA: 0x1D2E770
+	public void CheckEnd() { }
+
+	// RVA: 0x1D2EB7C Offset: 0x1D2EB7C VA: 0x1D2EB7C
+	private CandyRandomGroupConfig GetCurrentRandomGroup() { }
+
+	// RVA: 0x1D2C24C Offset: 0x1D2C24C VA: 0x1D2C24C
+	private int GetTotalCardRewardNum(int id) { }
+
+	// RVA: 0x1D2E660 Offset: 0x1D2E660 VA: 0x1D2E660
+	private int GetTotalCardRewardId(int id) { }
+
+	// RVA: 0x1D2D964 Offset: 0x1D2D964 VA: 0x1D2D964
+	public CandyRewadId GetRewardId(int id) { }
+
+	// RVA: 0x1D2EC88 Offset: 0x1D2EC88 VA: 0x1D2EC88
+	private bool CanShowCommonEntranceGuide(GuideTriggerPosition position, GuideTargetType targetType) { }
+
+	// RVA: 0x1D2F4F4 Offset: 0x1D2F4F4 VA: 0x1D2F4F4
+	public bool CanShowPopupEachDay() { }
+
+	// RVA: 0x1D2F6C4 Offset: 0x1D2F6C4 VA: 0x1D2F6C4
+	public void DebugClear() { }
+
+	// RVA: 0x1D2F7E8 Offset: 0x1D2F7E8 VA: 0x1D2F7E8
+	public void DebugSetGroupId(int id) { }
+
+	// RVA: 0x1D2F870 Offset: 0x1D2F870 VA: 0x1D2F870
+	public void DebugSetCandyTime() { }
+
+	// RVA: 0x1D2A690 Offset: 0x1D2A690 VA: 0x1D2A690
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1D2F9B4 Offset: 0x1D2F9B4 VA: 0x1D2F9B4
+	private bool <InitCandyRandomGroupConfigList>b__17_0(CandyRandomGroupConfig x) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1D2F9FC Offset: 0x1D2F9FC VA: 0x1D2F9FC
+	private bool <GetCreatePrice>b__22_0(CandyConfig x) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1D2FA44 Offset: 0x1D2FA44 VA: 0x1D2FA44
+	private bool <GetConsumeNum>b__23_0(CandyConfig x) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1D2FA8C Offset: 0x1D2FA8C VA: 0x1D2FA8C
+	private void <CheckCardReward>b__34_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1D2FA90 Offset: 0x1D2FA90 VA: 0x1D2FA90
+	private bool <GetCurrentRandomGroup>b__36_0(CandyRandomGroupConfig x) { }
+
+	// RVA: 0x1D2FAD8 Offset: 0x1D2FAD8 VA: 0x1D2FAD8
+	public void <>iFixBaseProxy_InitFromServerData(string P0, string P1, ulong P2, ulong P3, ulong P4, bool P5, string P6, string P7) { }
+
+	// RVA: 0x1D2FB30 Offset: 0x1D2FB30 VA: 0x1D2FB30
+	public void <>iFixBaseProxy_InitServerDataFinish() { }
+}
+

@@ -1,0 +1,294 @@
+// Namespace: MergeEngine.Configuration
+[SetViewPayloadAsType(typeof(IMergeItem))]
+public class MergeItem : ItemBase, IMergeItem, IItem, IUniqueStringKeyAsset // TypeDefIndex: 1185
+{
+	// Fields
+	[FormerlySerializedAs("Produce")]
+	[JsonProperty("Produce")]
+	[SerializeField]
+	private ProduceCapability _produce; // 0xA8
+	[SerializeField]
+	[JsonProperty("Spawn")]
+	[FormerlySerializedAs("Spawn")]
+	private SpawnCapability _spawn; // 0xB0
+	[JsonProperty("Expend")]
+	[SerializeField]
+	[FormerlySerializedAs("Expend")]
+	private ExpendableCapability _expend; // 0xB8
+	[JsonProperty("Sell")]
+	[SerializeField]
+	[FormerlySerializedAs("Sell")]
+	private SellCapability _sell; // 0xC0
+	[SerializeField]
+	[JsonProperty("Collect")]
+	[FormerlySerializedAs("Collect")]
+	private CollectCapability _collect; // 0xC8
+	[JsonProperty("CollectResource")]
+	[SerializeField]
+	[FormerlySerializedAs("CollectResource")]
+	private CollectResourceCapability _collectResource; // 0xD0
+	[FormerlySerializedAs("TimeLock")]
+	[SerializeField]
+	[JsonProperty("TimeLock")]
+	private TimeLockCapability _timeLock; // 0xD8
+	[JsonProperty("Merge")]
+	[FormerlySerializedAs("Merge")]
+	[SerializeField]
+	private MergeCapability _merge; // 0xE0
+	[JsonProperty("Interaction")]
+	[SerializeField]
+	[FormerlySerializedAs("Interaction")]
+	private InteractionCapability _interaction; // 0xE8
+	[FormerlySerializedAs("Chargable")]
+	[SerializeField]
+	[JsonProperty("chargeable")]
+	private ChargableCapability _chargable; // 0xF0
+	[SerializeField]
+	[FormerlySerializedAs("OrderSpawn")]
+	[JsonProperty("OrderSpawn")]
+	private OrderSpawnCapability _orderSpawn; // 0xF8
+	[FormerlySerializedAs("InteractionConstraint")]
+	[JsonProperty("InteractionConstraint")]
+	[SerializeField]
+	private InteractionConstraintCapability _interactionConstraint; // 0x100
+	[SerializeField]
+	[FormerlySerializedAs("ToolSpawning")]
+	[JsonProperty("ToolSpawning")]
+	private ToolSpawningCapability _toolSpawning; // 0x108
+	[SerializeField]
+	[FormerlySerializedAs("BubbleItem")]
+	[JsonProperty("BubbleItem")]
+	private BubbleItemCapability _bubbleItem; // 0x110
+	[JsonProperty("Difficulty")]
+	[FormerlySerializedAs("Difficulty")]
+	[SerializeField]
+	private DifficultyCapability _difficulty; // 0x118
+	[JsonProperty("Split")]
+	[SerializeField]
+	private SplitCapability _split; // 0x120
+	[JsonProperty("Stacking")]
+	[SerializeField]
+	private StackingCapability _stacking; // 0x128
+	[JsonProperty("DiscoverItemResourceRewardMultiplier")]
+	[FormerlySerializedAs("DiscoverItemResourceRewardMultiplier")]
+	[SerializeField]
+	private float _discoverItemResourceRewardMultiplier; // 0x130
+	[LocalisationIdentifier]
+	[JsonProperty("CustomInfoText")]
+	[FormerlySerializedAs("CustomInfoText")]
+	[SerializeField]
+	private string _customInfoText; // 0x138
+	[JsonProperty("ForceAllowMergeWithJoker")]
+	[FormerlySerializedAs("ForceAllowMergeWithJoker")]
+	[SerializeField]
+	private bool _forceAllowMergeWithJoker; // 0x140
+	[FormerlySerializedAs("RequestedByOrders")]
+	[JsonProperty("RequestedByOrders")]
+	[SerializeField]
+	private bool _requestedByOrders; // 0x141
+	[SerializeField]
+	[FormerlySerializedAs("EventTransferable")]
+	[JsonProperty("EventTransferable")]
+	private bool _eventTransferable; // 0x142
+	[JsonProperty("toolData")]
+	[SerializeField]
+	private ToolData _toolData; // 0x148
+	[CompilerGenerated]
+	private readonly bool <IsProducer>k__BackingField; // 0x150
+	[CompilerGenerated]
+	private MergeItemWeakReference <TransformOriginItemReference>k__BackingField; // 0x158
+	[CompilerGenerated]
+	private IMergeGraphItem <ParentGraph>k__BackingField; // 0x160
+	[CompilerGenerated]
+	private DynamicMergeItemConfig <DynamicItemConfig>k__BackingField; // 0x168
+	[CompilerGenerated]
+	private readonly RemoteAnimatedAsset <RemoteAnimatedAsset>k__BackingField; // 0x170
+	private List<IMergeItem> _allSpawnedMergeItems; // 0x178
+
+	// Properties
+	[JsonIgnore]
+	public ProduceCapability Produce { get; }
+	[JsonIgnore]
+	public SpawnCapability Spawn { get; }
+	[JsonIgnore]
+	public ExpendableCapability Expend { get; }
+	[JsonIgnore]
+	public SellCapability Sell { get; }
+	[JsonIgnore]
+	public CollectCapability Collect { get; }
+	public CollectResourceCapability CollectResource { get; }
+	[JsonIgnore]
+	public TimeLockCapability TimeLock { get; }
+	[JsonIgnore]
+	public MergeCapability Merge { get; }
+	[JsonIgnore]
+	public InteractionCapability Interaction { get; }
+	[JsonIgnore]
+	public ChargableCapability Chargable { get; }
+	[JsonIgnore]
+	public OrderSpawnCapability OrderSpawn { get; }
+	[JsonIgnore]
+	public InteractionConstraintCapability InteractionConstraint { get; }
+	[JsonIgnore]
+	public ToolSpawningCapability ToolSpawning { get; }
+	[JsonIgnore]
+	public BubbleItemCapability BubbleItem { get; }
+	public BubbleItemCapability BubbleItemOverride { get; }
+	[JsonIgnore]
+	public DifficultyCapability Difficulty { get; }
+	[JsonIgnore]
+	public SplitCapability Split { get; }
+	[JsonIgnore]
+	public StackingCapability Stacking { get; }
+	[JsonIgnore]
+	public float DiscoverItemResourceRewardMultiplier { get; }
+	[JsonIgnore]
+	public string CustomInfoText { get; }
+	[JsonIgnore]
+	public bool ForceAllowMergeWithJoker { get; }
+	[JsonIgnore]
+	public bool RequestedByOrders { get; }
+	[JsonIgnore]
+	public bool EventTransferable { get; }
+	[JsonIgnore]
+	public ToolData ToolData { get; }
+	public bool IsProducer { get; }
+	[JsonIgnore]
+	public MergeItemWeakReference TransformOriginItemReference { get; set; }
+	[JsonIgnore]
+	public ItemsSpawningCapability ItemsSpawning { get; }
+	[JsonIgnore]
+	public IMergeGraphItem ParentGraph { get; set; }
+	[JsonIgnore]
+	public DynamicMergeItemConfig DynamicItemConfig { get; set; }
+	public RemoteAnimatedAsset RemoteAnimatedAsset { get; }
+	protected override string LocalSpritesPath { get; }
+	protected override string SpriteLocatorUniqueId { get; }
+	[JsonIgnore]
+	public List<IMergeItem> AllSpawnedMergeItems { get; }
+
+	// Methods
+
+	// RVA: 0x691338C Offset: 0x690F38C VA: 0x691338C Slot: 21
+	public ProduceCapability get_Produce() { }
+
+	// RVA: 0x6913394 Offset: 0x690F394 VA: 0x6913394 Slot: 22
+	public SpawnCapability get_Spawn() { }
+
+	// RVA: 0x691339C Offset: 0x690F39C VA: 0x691339C Slot: 23
+	public ExpendableCapability get_Expend() { }
+
+	// RVA: 0x69133A4 Offset: 0x690F3A4 VA: 0x69133A4 Slot: 24
+	public SellCapability get_Sell() { }
+
+	// RVA: 0x69133AC Offset: 0x690F3AC VA: 0x69133AC Slot: 25
+	public CollectCapability get_Collect() { }
+
+	// RVA: 0x69133B4 Offset: 0x690F3B4 VA: 0x69133B4 Slot: 26
+	public CollectResourceCapability get_CollectResource() { }
+
+	// RVA: 0x69133BC Offset: 0x690F3BC VA: 0x69133BC Slot: 27
+	public TimeLockCapability get_TimeLock() { }
+
+	// RVA: 0x69133C4 Offset: 0x690F3C4 VA: 0x69133C4 Slot: 28
+	public MergeCapability get_Merge() { }
+
+	// RVA: 0x69133CC Offset: 0x690F3CC VA: 0x69133CC Slot: 29
+	public InteractionCapability get_Interaction() { }
+
+	// RVA: 0x69133D4 Offset: 0x690F3D4 VA: 0x69133D4 Slot: 30
+	public ChargableCapability get_Chargable() { }
+
+	// RVA: 0x69133DC Offset: 0x690F3DC VA: 0x69133DC Slot: 31
+	public OrderSpawnCapability get_OrderSpawn() { }
+
+	// RVA: 0x69133E4 Offset: 0x690F3E4 VA: 0x69133E4 Slot: 32
+	public InteractionConstraintCapability get_InteractionConstraint() { }
+
+	// RVA: 0x69133EC Offset: 0x690F3EC VA: 0x69133EC Slot: 33
+	public ToolSpawningCapability get_ToolSpawning() { }
+
+	// RVA: 0x69133F4 Offset: 0x690F3F4 VA: 0x69133F4 Slot: 34
+	public BubbleItemCapability get_BubbleItem() { }
+
+	// RVA: 0x69133FC Offset: 0x690F3FC VA: 0x69133FC Slot: 35
+	public BubbleItemCapability get_BubbleItemOverride() { }
+
+	// RVA: 0x6913404 Offset: 0x690F404 VA: 0x6913404 Slot: 36
+	public DifficultyCapability get_Difficulty() { }
+
+	// RVA: 0x691340C Offset: 0x690F40C VA: 0x691340C Slot: 37
+	public SplitCapability get_Split() { }
+
+	// RVA: 0x6913414 Offset: 0x690F414 VA: 0x6913414 Slot: 38
+	public StackingCapability get_Stacking() { }
+
+	// RVA: 0x691341C Offset: 0x690F41C VA: 0x691341C Slot: 39
+	public float get_DiscoverItemResourceRewardMultiplier() { }
+
+	// RVA: 0x6913424 Offset: 0x690F424 VA: 0x6913424 Slot: 40
+	public string get_CustomInfoText() { }
+
+	// RVA: 0x691342C Offset: 0x690F42C VA: 0x691342C Slot: 41
+	public bool get_ForceAllowMergeWithJoker() { }
+
+	// RVA: 0x6913434 Offset: 0x690F434 VA: 0x6913434 Slot: 42
+	public bool get_RequestedByOrders() { }
+
+	// RVA: 0x691343C Offset: 0x690F43C VA: 0x691343C Slot: 43
+	public bool get_EventTransferable() { }
+
+	// RVA: 0x6913444 Offset: 0x690F444 VA: 0x6913444 Slot: 44
+	public ToolData get_ToolData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x691344C Offset: 0x690F44C VA: 0x691344C
+	public bool get_IsProducer() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6913454 Offset: 0x690F454 VA: 0x6913454 Slot: 45
+	public MergeItemWeakReference get_TransformOriginItemReference() { }
+
+	[CompilerGenerated]
+	// RVA: 0x691345C Offset: 0x690F45C VA: 0x691345C Slot: 46
+	public void set_TransformOriginItemReference(MergeItemWeakReference value) { }
+
+	// RVA: 0x691346C Offset: 0x690F46C VA: 0x691346C Slot: 47
+	public ItemsSpawningCapability get_ItemsSpawning() { }
+
+	// RVA: 0x69134A4 Offset: 0x690F4A4 VA: 0x69134A4 Slot: 9
+	public override string GetStoragePath() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6913524 Offset: 0x690F524 VA: 0x6913524 Slot: 48
+	public IMergeGraphItem get_ParentGraph() { }
+
+	[CompilerGenerated]
+	// RVA: 0x691352C Offset: 0x690F52C VA: 0x691352C Slot: 49
+	public void set_ParentGraph(IMergeGraphItem value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x691353C Offset: 0x690F53C VA: 0x691353C Slot: 51
+	public DynamicMergeItemConfig get_DynamicItemConfig() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6913544 Offset: 0x690F544 VA: 0x6913544 Slot: 52
+	public void set_DynamicItemConfig(DynamicMergeItemConfig value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6913554 Offset: 0x690F554 VA: 0x6913554 Slot: 54
+	public RemoteAnimatedAsset get_RemoteAnimatedAsset() { }
+
+	// RVA: 0x691355C Offset: 0x690F55C VA: 0x691355C Slot: 18
+	protected override string get_LocalSpritesPath() { }
+
+	// RVA: 0x69135C0 Offset: 0x690F5C0 VA: 0x69135C0 Slot: 19
+	protected override string get_SpriteLocatorUniqueId() { }
+
+	// RVA: 0x691362C Offset: 0x690F62C VA: 0x691362C Slot: 50
+	public List<IMergeItem> get_AllSpawnedMergeItems() { }
+
+	// RVA: 0x6913710 Offset: 0x690F710 VA: 0x6913710
+	public void .ctor() { }
+}
+

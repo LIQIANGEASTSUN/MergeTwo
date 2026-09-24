@@ -1,0 +1,26 @@
+// Namespace: Merger.MergeBoard.Components
+public struct FeedingCombinationComponent : IComponent // TypeDefIndex: 25999
+{
+	// Fields
+	[CompilerGenerated]
+	private List<FeedingCombinationConsumedItemSnapshot> <ConsumedItems>k__BackingField; // 0x0
+
+	// Properties
+	public List<string> ConsumedItemIds { get; }
+	public List<FeedingCombinationConsumedItemSnapshot> ConsumedItems { get; set; }
+
+	// Methods
+
+	// RVA: 0x6A86B60 Offset: 0x6A82B60 VA: 0x6A86B60
+	public List<string> get_ConsumedItemIds() { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9BE44 Offset: 0x6A97E44 VA: 0x6A9BE44
+	public List<FeedingCombinationConsumedItemSnapshot> get_ConsumedItems() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BE4C Offset: 0x6A97E4C VA: 0x6A9BE4C
+	public void set_ConsumedItems(List<FeedingCombinationConsumedItemSnapshot> value) { }
+}
+

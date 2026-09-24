@@ -1,0 +1,101 @@
+// Namespace: MergeEngine.Model.Configuration
+public abstract class MultipleConfigurationModelBase<TConfiguration, TKey, TLookup> : ModelBase, IMultipleConfigurationModel<TKey, TConfiguration> // TypeDefIndex: 567
+{
+	// Fields
+	private readonly TLookup _lookup; // 0x0
+
+	// Properties
+	public ReadOnlyCollection<TConfiguration> Configurations { get; }
+	protected ReadOnlyDictionary<TKey, TConfiguration> ConfigurationById { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 19
+	public ReadOnlyCollection<TConfiguration> get_Configurations() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4220AA4 Offset: 0x421CAA4 VA: 0x4220AA4
+	|-MultipleConfigurationModelBase<object, object, object>.get_Configurations
+	|
+	|-RVA: 0x4220E90 Offset: 0x421CE90 VA: 0x4220E90
+	|-MultipleConfigurationModelBase<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType, object>.get_Configurations
+	*/
+
+	// RVA: -1 Offset: -1
+	protected ReadOnlyDictionary<TKey, TConfiguration> get_ConfigurationById() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4220AE4 Offset: 0x421CAE4 VA: 0x4220AE4
+	|-MultipleConfigurationModelBase<object, object, object>.get_ConfigurationById
+	|
+	|-RVA: 0x4220EB8 Offset: 0x421CEB8 VA: 0x4220EB8
+	|-MultipleConfigurationModelBase<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType, object>.get_ConfigurationById
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 17
+	protected override void InitializeModel() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4220B08 Offset: 0x421CB08 VA: 0x4220B08
+	|-MultipleConfigurationModelBase<object, object, object>.InitializeModel
+	|
+	|-RVA: 0x4220EE0 Offset: 0x421CEE0 VA: 0x4220EE0
+	|-MultipleConfigurationModelBase<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType, object>.InitializeModel
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 18
+	protected override void DisposeModel() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4220C98 Offset: 0x421CC98 VA: 0x4220C98
+	|-MultipleConfigurationModelBase<object, object, object>.DisposeModel
+	|
+	|-RVA: 0x4221090 Offset: 0x421D090 VA: 0x4221090
+	|-MultipleConfigurationModelBase<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType, object>.DisposeModel
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 20
+	public TConfiguration GetById(TKey uniqueId) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4220E28 Offset: 0x421CE28 VA: 0x4220E28
+	|-MultipleConfigurationModelBase<object, object, object>.GetById
+	|
+	|-RVA: 0x4221240 Offset: 0x421D240 VA: 0x4221240
+	|-MultipleConfigurationModelBase<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType, object>.GetById
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 21
+	protected virtual void ConfigurationAdded(TConfiguration configuration) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4220E4C Offset: 0x421CE4C VA: 0x4220E4C
+	|-MultipleConfigurationModelBase<object, object, object>.ConfigurationAdded
+	|
+	|-RVA: 0x4221344 Offset: 0x421D344 VA: 0x4221344
+	|-MultipleConfigurationModelBase<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType, object>.ConfigurationAdded
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 22
+	protected virtual void ConfigurationRemoved(TConfiguration configuration) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4220E50 Offset: 0x421CE50 VA: 0x4220E50
+	|-MultipleConfigurationModelBase<object, object, object>.ConfigurationRemoved
+	|
+	|-RVA: 0x4221348 Offset: 0x421D348 VA: 0x4221348
+	|-MultipleConfigurationModelBase<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType, object>.ConfigurationRemoved
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4220E54 Offset: 0x421CE54 VA: 0x4220E54
+	|-MultipleConfigurationModelBase<object, object, object>..ctor
+	|
+	|-RVA: 0x422134C Offset: 0x421D34C VA: 0x422134C
+	|-MultipleConfigurationModelBase<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType, object>..ctor
+	*/
+}
+

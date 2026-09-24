@@ -1,0 +1,873 @@
+// Namespace: MergePuzzle
+public class ItemController : BaseSubscriber, ITutorialSetSorting, IEventReceiver<BoardEvent.BoosterPanelStatusChange>, IEventReceiverBase, IEventReceiver<CanvasEvent.ToggleScreenInputBlocker>, IEventReceiver<TaskEvent.SetLevelUpOnItems>, IEventReceiver<TaskEvent.LevelUpDismissed>, IEventReceiver<SrDebuggerEvent.ShowDebugLayers>, IEventReceiver<CanvasEvent.StopBubbleTick>, IEventReceiver<CanvasEvent.ContinueBubbleTick>, IEventReceiver<SDKEvents.RewardedAdEarned>, IEventReceiver<SDKEvents.RewardedAdDismissed>, IEventReceiver<SDKEvents.RewardedAdFailedToShown>, IEventReceiver<TaskEvent.TaskDoneBoardTaskItemDisappearStarted>, IEventReceiver<BoardEvent.BoardItemRemoveFinished>, IEventReceiver<BoardEvent.RemoveItemViaSellComplete>, IEventReceiver<EntityUpdateEvent.BoardItemStatusChange>, IEventReceiver<CanvasEvent.OpenGameplayRequest>, IItemController // TypeDefIndex: 1682
+{
+	// Fields
+	private Sequence _taskMoveSequence; // 0x1C
+	private Sequence _taskMoveScaleSequence; // 0x20
+	public static float BoardImageJellyScale; // 0x0
+	public static float BoardImageDefaultScale; // 0x4
+	private static readonly List<TutorialIndex> TutorialBoardItemSortingLayerSteps; // 0x8
+	private static readonly List<TutorialIndex> TutorialBoardItemNoEnergySteps; // 0xC
+	public Action<SortingData> OnItemSortingUpdated; // 0x24
+	[BoxGroup("UI")]
+	public Transform SpawnerItemsParent; // 0x28
+	[BoxGroup("Item")]
+	public ItemControllerItemIcon ItemIcon; // 0x2C
+	[Foldout("Animation")]
+	public AnimationController AnimationController; // 0x30
+	[Foldout("Animation")]
+	public AnimationLoop SpawnerHint; // 0x34
+	[Foldout("Animation")]
+	public AnimationLoop MoveDisappearLoop; // 0x38
+	[Foldout("Animation")]
+	public AnimationLoop SellDisappearLoop; // 0x3C
+	[Foldout("Animation")]
+	public AnimationLoop ClickLoop; // 0x40
+	[Foldout("Animation")]
+	public AnimationLoop TaskMoveToObjective; // 0x44
+	[Foldout("Animation")]
+	public AnimationLoop TaskMoveToObjectiveScale; // 0x48
+	[Foldout("Animation")]
+	public AnimationItem MergeDisappear; // 0x4C
+	[Foldout("Animation")]
+	public AnimationItem MergeMoveBehind; // 0x50
+	[Foldout("Animation")]
+	public AnimationItem DragScaleUp; // 0x54
+	[Foldout("Animation")]
+	public AnimationItem DragScaleDown; // 0x58
+	[Foldout("Animation")]
+	public DoMove ChargeMoveBehind; // 0x5C
+	[CompilerGenerated]
+	private SortingGroup <SortingGroup>k__BackingField; // 0x60
+	[CompilerGenerated]
+	private ItemParticleController <ItemParticleController>k__BackingField; // 0x64
+	[CompilerGenerated]
+	private ItemRuntimeData <ItemRuntimeData>k__BackingField; // 0x68
+	[CompilerGenerated]
+	private Movable <Movable>k__BackingField; // 0x6C
+	[CompilerGenerated]
+	private BoardController <Board>k__BackingField; // 0x70
+	[CompilerGenerated]
+	private Collider2D <Collider2D>k__BackingField; // 0x74
+	[CompilerGenerated]
+	private SortingData <SortingData>k__BackingField; // 0x78
+	private InventoryEntity _inventoryEntity; // 0x7C
+	private Coordinate _lastGameObjectBoardIndex; // 0x80
+	private bool _initialized; // 0x88
+	[CompilerGenerated]
+	private SpawnerClockController <SpawnerClockController>k__BackingField; // 0x8C
+	[CompilerGenerated]
+	private ItemControllerDialogue <ItemControllerDialogue>k__BackingField; // 0x90
+	[CompilerGenerated]
+	private ItemControllerTick <ItemControllerTick>k__BackingField; // 0x94
+	[CompilerGenerated]
+	private ItemControllerProgressBar <ItemControllerProgressBar>k__BackingField; // 0x98
+	[CompilerGenerated]
+	private ItemControllerMaxBadge <ItemControllerMaxBadge>k__BackingField; // 0x9C
+	[CompilerGenerated]
+	private ItemControllerDebug <ItemControllerDebug>k__BackingField; // 0xA0
+	[CompilerGenerated]
+	private ItemControllerBox <ItemControllerBox>k__BackingField; // 0xA4
+	[CompilerGenerated]
+	private ItemControllerLock <ItemControllerLock>k__BackingField; // 0xA8
+	[CompilerGenerated]
+	private ItemControllerTreasureBoxUnlock <ItemControllerTreasureBoxUnlock>k__BackingField; // 0xAC
+	[CompilerGenerated]
+	private ItemControllerSpawnerEnergy <ItemControllerSpawnerEnergy>k__BackingField; // 0xB0
+	[CompilerGenerated]
+	private ItemControllerProgressText <ItemControllerProgressText>k__BackingField; // 0xB4
+	[CompilerGenerated]
+	private ItemControllerTreasureBoxOpenSprite <ItemControllerTreasureBoxOpenSprite>k__BackingField; // 0xB8
+	[CompilerGenerated]
+	private ItemControllerTreasureBoxOpened <ItemControllerTreasureBoxOpened>k__BackingField; // 0xBC
+	[CompilerGenerated]
+	private ItemControllerBubble <ItemControllerBubble>k__BackingField; // 0xC0
+
+	// Properties
+	public Transform IconTransform { get; }
+	public SortingGroup SortingGroup { get; set; }
+	public ItemParticleController ItemParticleController { get; set; }
+	public ItemRuntimeData ItemRuntimeData { get; set; }
+	public Movable Movable { get; set; }
+	public BoardController Board { get; set; }
+	public Collider2D Collider2D { get; set; }
+	public SortingData SortingData { get; set; }
+	private GameplayScaledCanvasView GameplayScaledCanvasView { get; }
+	private GameplayNonScaledCanvasView GameplayNonScaledCanvasView { get; }
+	private EnergyMultiplierHandler EnergyMultiplierHandler { get; }
+	public SpawnerClockController SpawnerClockController { get; set; }
+	public ItemControllerDialogue ItemControllerDialogue { get; set; }
+	public ItemControllerTick ItemControllerTick { get; set; }
+	public ItemControllerProgressBar ItemControllerProgressBar { get; set; }
+	public ItemControllerMaxBadge ItemControllerMaxBadge { get; set; }
+	public ItemControllerDebug ItemControllerDebug { get; set; }
+	public ItemControllerBox ItemControllerBox { get; set; }
+	public ItemControllerLock ItemControllerLock { get; set; }
+	public ItemControllerTreasureBoxUnlock ItemControllerTreasureBoxUnlock { get; set; }
+	public ItemControllerSpawnerEnergy ItemControllerSpawnerEnergy { get; set; }
+	public ItemControllerProgressText ItemControllerProgressText { get; set; }
+	public ItemControllerTreasureBoxOpenSprite ItemControllerTreasureBoxOpenSprite { get; set; }
+	public ItemControllerTreasureBoxOpened ItemControllerTreasureBoxOpened { get; set; }
+	public ItemControllerBubble ItemControllerBubble { get; set; }
+	public IBoardController GetBoardController { get; }
+	public IItemRuntimeData GetRuntimeData { get; }
+
+	// Methods
+
+	// RVA: 0x1886840 Offset: 0x1886840 VA: 0x1886840
+	public Transform get_IconTransform() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886864 Offset: 0x1886864 VA: 0x1886864
+	public SortingGroup get_SortingGroup() { }
+
+	[CompilerGenerated]
+	// RVA: 0x188686C Offset: 0x188686C VA: 0x188686C
+	private void set_SortingGroup(SortingGroup value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886874 Offset: 0x1886874 VA: 0x1886874
+	public ItemParticleController get_ItemParticleController() { }
+
+	[CompilerGenerated]
+	// RVA: 0x188687C Offset: 0x188687C VA: 0x188687C
+	public void set_ItemParticleController(ItemParticleController value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886884 Offset: 0x1886884 VA: 0x1886884
+	public ItemRuntimeData get_ItemRuntimeData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x188688C Offset: 0x188688C VA: 0x188688C
+	private void set_ItemRuntimeData(ItemRuntimeData value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886894 Offset: 0x1886894 VA: 0x1886894
+	public Movable get_Movable() { }
+
+	[CompilerGenerated]
+	// RVA: 0x188689C Offset: 0x188689C VA: 0x188689C
+	private void set_Movable(Movable value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x18868A4 Offset: 0x18868A4 VA: 0x18868A4
+	public BoardController get_Board() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18868AC Offset: 0x18868AC VA: 0x18868AC
+	private void set_Board(BoardController value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x18868B4 Offset: 0x18868B4 VA: 0x18868B4
+	public Collider2D get_Collider2D() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18868BC Offset: 0x18868BC VA: 0x18868BC
+	private void set_Collider2D(Collider2D value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x18868C4 Offset: 0x18868C4 VA: 0x18868C4
+	public SortingData get_SortingData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18868CC Offset: 0x18868CC VA: 0x18868CC
+	private void set_SortingData(SortingData value) { }
+
+	// RVA: 0x18868D4 Offset: 0x18868D4 VA: 0x18868D4
+	private GameplayScaledCanvasView get_GameplayScaledCanvasView() { }
+
+	// RVA: 0x188693C Offset: 0x188693C VA: 0x188693C
+	private GameplayNonScaledCanvasView get_GameplayNonScaledCanvasView() { }
+
+	// RVA: 0x18869A4 Offset: 0x18869A4 VA: 0x18869A4
+	private EnergyMultiplierHandler get_EnergyMultiplierHandler() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886A6C Offset: 0x1886A6C VA: 0x1886A6C
+	public SpawnerClockController get_SpawnerClockController() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886A74 Offset: 0x1886A74 VA: 0x1886A74
+	public void set_SpawnerClockController(SpawnerClockController value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886A7C Offset: 0x1886A7C VA: 0x1886A7C
+	public ItemControllerDialogue get_ItemControllerDialogue() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886A84 Offset: 0x1886A84 VA: 0x1886A84
+	public void set_ItemControllerDialogue(ItemControllerDialogue value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886A8C Offset: 0x1886A8C VA: 0x1886A8C
+	public ItemControllerTick get_ItemControllerTick() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886A94 Offset: 0x1886A94 VA: 0x1886A94
+	public void set_ItemControllerTick(ItemControllerTick value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886A9C Offset: 0x1886A9C VA: 0x1886A9C
+	public ItemControllerProgressBar get_ItemControllerProgressBar() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886AA4 Offset: 0x1886AA4 VA: 0x1886AA4
+	public void set_ItemControllerProgressBar(ItemControllerProgressBar value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886AAC Offset: 0x1886AAC VA: 0x1886AAC
+	public ItemControllerMaxBadge get_ItemControllerMaxBadge() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886AB4 Offset: 0x1886AB4 VA: 0x1886AB4
+	public void set_ItemControllerMaxBadge(ItemControllerMaxBadge value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886ABC Offset: 0x1886ABC VA: 0x1886ABC
+	public ItemControllerDebug get_ItemControllerDebug() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886AC4 Offset: 0x1886AC4 VA: 0x1886AC4
+	public void set_ItemControllerDebug(ItemControllerDebug value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886ACC Offset: 0x1886ACC VA: 0x1886ACC
+	public ItemControllerBox get_ItemControllerBox() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886AD4 Offset: 0x1886AD4 VA: 0x1886AD4
+	public void set_ItemControllerBox(ItemControllerBox value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886ADC Offset: 0x1886ADC VA: 0x1886ADC
+	public ItemControllerLock get_ItemControllerLock() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886AE4 Offset: 0x1886AE4 VA: 0x1886AE4
+	public void set_ItemControllerLock(ItemControllerLock value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886AEC Offset: 0x1886AEC VA: 0x1886AEC
+	public ItemControllerTreasureBoxUnlock get_ItemControllerTreasureBoxUnlock() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886AF4 Offset: 0x1886AF4 VA: 0x1886AF4
+	public void set_ItemControllerTreasureBoxUnlock(ItemControllerTreasureBoxUnlock value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886AFC Offset: 0x1886AFC VA: 0x1886AFC
+	public ItemControllerSpawnerEnergy get_ItemControllerSpawnerEnergy() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886B04 Offset: 0x1886B04 VA: 0x1886B04
+	public void set_ItemControllerSpawnerEnergy(ItemControllerSpawnerEnergy value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886B0C Offset: 0x1886B0C VA: 0x1886B0C
+	public ItemControllerProgressText get_ItemControllerProgressText() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886B14 Offset: 0x1886B14 VA: 0x1886B14
+	public void set_ItemControllerProgressText(ItemControllerProgressText value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886B1C Offset: 0x1886B1C VA: 0x1886B1C
+	public ItemControllerTreasureBoxOpenSprite get_ItemControllerTreasureBoxOpenSprite() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886B24 Offset: 0x1886B24 VA: 0x1886B24
+	public void set_ItemControllerTreasureBoxOpenSprite(ItemControllerTreasureBoxOpenSprite value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886B2C Offset: 0x1886B2C VA: 0x1886B2C
+	public ItemControllerTreasureBoxOpened get_ItemControllerTreasureBoxOpened() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886B34 Offset: 0x1886B34 VA: 0x1886B34
+	public void set_ItemControllerTreasureBoxOpened(ItemControllerTreasureBoxOpened value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886B3C Offset: 0x1886B3C VA: 0x1886B3C
+	public ItemControllerBubble get_ItemControllerBubble() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1886B44 Offset: 0x1886B44 VA: 0x1886B44
+	public void set_ItemControllerBubble(ItemControllerBubble value) { }
+
+	// RVA: 0x1886B4C Offset: 0x1886B4C VA: 0x1886B4C Slot: 34
+	public IBoardController get_GetBoardController() { }
+
+	// RVA: 0x1886B54 Offset: 0x1886B54 VA: 0x1886B54 Slot: 35
+	public IItemRuntimeData get_GetRuntimeData() { }
+
+	// RVA: 0x1886B5C Offset: 0x1886B5C VA: 0x1886B5C Slot: 36
+	public void ChangeCurrentCapacity(BoardItemSpawnerData spawnerData, float amount, bool isRewardedCapacity = False, bool animateClockDisappear = False, string changeReason = "", bool saveBoard = True) { }
+
+	// RVA: 0x18876A4 Offset: 0x18876A4 VA: 0x18876A4 Slot: 37
+	public bool PreventRecharge(bool log = False) { }
+
+	// RVA: 0x18878A0 Offset: 0x18878A0 VA: 0x18878A0 Slot: 38
+	public void ArrangeOpenChestSpawnerState() { }
+
+	// RVA: 0x1887AEC Offset: 0x1887AEC VA: 0x1887AEC Slot: 39
+	public void BoardChangeState(bool animateClockDisappear) { }
+
+	// RVA: 0x1887B70 Offset: 0x1887B70 VA: 0x1887B70 Slot: 40
+	public bool ProcessSpawn(BoardItemSpawnerData boardItemSpawnerData, int energyConsumeAmount) { }
+
+	// RVA: 0x18887EC Offset: 0x18887EC VA: 0x18887EC Slot: 41
+	public bool ProcessSpawn(BoardItemPerishableSpawner boardItemPerishableSpawner, int energyConsumeAmount) { }
+
+	// RVA: 0x1889294 Offset: 0x1889294 VA: 0x1889294 Slot: 42
+	public bool ProcessSpawn(BoardItemChestSpawner boardItemChestSpawner, int energyConsumeAmount) { }
+
+	// RVA: 0x1889974 Offset: 0x1889974 VA: 0x1889974 Slot: 6
+	public override void Awake() { }
+
+	// RVA: 0x1889BF0 Offset: 0x1889BF0 VA: 0x1889BF0
+	private void OnDisable() { }
+
+	// RVA: 0x1889BFC Offset: 0x1889BFC VA: 0x1889BFC Slot: 9
+	public override void OnDestroy() { }
+
+	// RVA: 0x1889D9C Offset: 0x1889D9C VA: 0x1889D9C
+	public void DestroyItem(bool undoDestroy) { }
+
+	// RVA: 0x1889B40 Offset: 0x1889B40 VA: 0x1889B40
+	private static ItemRuntimeData GetDefaultRuntimeData() { }
+
+	// RVA: 0x188AB78 Offset: 0x188AB78 VA: 0x188AB78
+	public void SetScale(Vector3 scale) { }
+
+	// RVA: 0x188ABB4 Offset: 0x188ABB4 VA: 0x188ABB4 Slot: 11
+	public override void UpdatePlayingTick(float elapsedTime) { }
+
+	// RVA: 0x188ACF4 Offset: 0x188ACF4 VA: 0x188ACF4
+	private void ChangeGameObjectName() { }
+
+	// RVA: 0x188AFA0 Offset: 0x188AFA0 VA: 0x188AFA0
+	private bool IsPlayingTickUnavailable() { }
+
+	// RVA: 0x188BD60 Offset: 0x188BD60 VA: 0x188BD60 Slot: 13
+	public override void UpdatePausedTick(float elapsedTime) { }
+
+	// RVA: 0x188BDBC Offset: 0x188BDBC VA: 0x188BDBC Slot: 12
+	public override void UpdateTutorialTick(float elapsedTime) { }
+
+	// RVA: 0x188BBE8 Offset: 0x188BBE8 VA: 0x188BBE8
+	public void SetGoalTick() { }
+
+	// RVA: 0x188CF88 Offset: 0x188CF88 VA: 0x188CF88
+	public BoardPosition GetPosition() { }
+
+	// RVA: 0x188D13C Offset: 0x188D13C VA: 0x188D13C
+	public CellController GetCell() { }
+
+	// RVA: 0x188BEF4 Offset: 0x188BEF4 VA: 0x188BEF4
+	public void ArrangeItemTickImage() { }
+
+	// RVA: 0x188B0C4 Offset: 0x188B0C4 VA: 0x188B0C4
+	private void CheckBubbleTime() { }
+
+	// RVA: 0x188D1A4 Offset: 0x188D1A4 VA: 0x188D1A4
+	public void ClearTreasureBoxNotif() { }
+
+	// RVA: 0x188D1A8 Offset: 0x188D1A8 VA: 0x188D1A8
+	public bool IsColliderEnabled() { }
+
+	// RVA: 0x188D1CC Offset: 0x188D1CC VA: 0x188D1CC
+	public void SetColliderState(bool state) { }
+
+	// RVA: 0x188D1F8 Offset: 0x188D1F8 VA: 0x188D1F8
+	private void CheckSpawnTutorialFinish() { }
+
+	// RVA: 0x188D298 Offset: 0x188D298 VA: 0x188D298
+	public bool IsItemSpawnerOrCollectable() { }
+
+	// RVA: 0x188D438 Offset: 0x188D438 VA: 0x188D438
+	private bool IsCollidingButton(Button button) { }
+
+	// RVA: 0x188D4BC Offset: 0x188D4BC VA: 0x188D4BC
+	public void PrepareRecurringEventClick() { }
+
+	// RVA: 0x188D4EC Offset: 0x188D4EC VA: 0x188D4EC Slot: 17
+	public void SetTutorialSortingData(SortingData sortingData) { }
+
+	// RVA: 0x188D56C Offset: 0x188D56C VA: 0x188D56C Slot: 18
+	public SortingData GetTutorialSortingData() { }
+
+	// RVA: 0x188D608 Offset: 0x188D608 VA: 0x188D608
+	public void ArrangeInitializationSortingStatus(bool enableCollisions) { }
+
+	// RVA: 0x188DBB4 Offset: 0x188DBB4 VA: 0x188DBB4
+	private void SetTutorialSortingForward() { }
+
+	// RVA: 0x188DC5C Offset: 0x188DC5C VA: 0x188DC5C
+	public void StartMergeHintSorting(int offset) { }
+
+	// RVA: 0x188DD3C Offset: 0x188DD3C VA: 0x188DD3C
+	public void RestoreMergeHintSorting(int order) { }
+
+	// RVA: 0x188DF38 Offset: 0x188DF38 VA: 0x188DF38
+	public void ArrangeSorting(bool moveToFront) { }
+
+	// RVA: 0x188D4F0 Offset: 0x188D4F0 VA: 0x188D4F0
+	public void SetSortingData(SortingData sortingData) { }
+
+	[AsyncStateMachine(typeof(ItemController.<ChangeModulesSortingData>d__160))]
+	// RVA: 0x188E2D4 Offset: 0x188E2D4 VA: 0x188E2D4
+	private UniTaskVoid ChangeModulesSortingData(SortingData sortingData) { }
+
+	// RVA: 0x188DDF8 Offset: 0x188DDF8 VA: 0x188DDF8
+	private void SetCellSortingData(ItemEntity itemEntity) { }
+
+	// RVA: 0x188E390 Offset: 0x188E390 VA: 0x188E390
+	public void Initialize(BoardController board, BoardItemData boardItemData, ItemEntity itemEntity, bool isNewlyCreated, bool onBoardInitialize) { }
+
+	// RVA: 0x188ECF8 Offset: 0x188ECF8 VA: 0x188ECF8
+	private bool AddToSpawnerHint() { }
+
+	// RVA: 0x188E794 Offset: 0x188E794 VA: 0x188E794
+	private void InitializeItemRuntimeData(BoardItemData boardItemData, ItemEntity itemEntity, bool onBoardInitialize) { }
+
+	// RVA: 0x188E860 Offset: 0x188E860 VA: 0x188E860
+	private void InitializeStartedDefaultUIElements() { }
+
+	// RVA: 0x188E898 Offset: 0x188E898 VA: 0x188E898
+	private void InitializeMovableStatusAndUI(BoardItemData boardItemData, ItemEntity itemEntity, BoardData boardData) { }
+
+	// RVA: 0x188EB84 Offset: 0x188EB84 VA: 0x188EB84
+	private void InitializeLockImageAndSorting(ItemEntity itemEntity) { }
+
+	// RVA: 0x188EBE8 Offset: 0x188EBE8 VA: 0x188EBE8
+	private void InitializeLockImageRendererAndPosition(ItemEntity itemEntity, BoardData boardData) { }
+
+	// RVA: 0x188EF24 Offset: 0x188EF24 VA: 0x188EF24
+	private void InitializeItemProgressiveWithData(BoardItemData boardItemData, ItemEntity itemEntity, bool onBoardInitialize, BoardItemProgressive progressive, BoardData boardData) { }
+
+	// RVA: 0x188F0B4 Offset: 0x188F0B4 VA: 0x188F0B4
+	private void InitializePerishableWithData(ItemEntity itemEntity, BoardItemPerishableSpawner perishable) { }
+
+	// RVA: 0x188F2B0 Offset: 0x188F2B0 VA: 0x188F2B0
+	private void InitializeChargeableWithData(ItemEntity itemEntity, BoardItemChargeable chargeable) { }
+
+	// RVA: 0x188F950 Offset: 0x188F950 VA: 0x188F950
+	private void InitializeValidateCurrentTaskIndex(BoardItemProgressive progressive) { }
+
+	// RVA: 0x188FE28 Offset: 0x188FE28 VA: 0x188FE28
+	public void DisableChestBoardGlow() { }
+
+	// RVA: 0x188FE5C Offset: 0x188FE5C VA: 0x188FE5C
+	public void DisableTrigger(bool disabled) { }
+
+	// RVA: 0x188FF1C Offset: 0x188FF1C VA: 0x188FF1C
+	public void Unbox(bool withAnimation) { }
+
+	// RVA: 0x189042C Offset: 0x189042C VA: 0x189042C
+	public bool IsGoal(ItemEntity entity) { }
+
+	// RVA: 0x1890530 Offset: 0x1890530 VA: 0x1890530
+	public bool CanClickAnimation() { }
+
+	// RVA: 0x1890564 Offset: 0x1890564 VA: 0x1890564 Slot: 19
+	public void OnEvent(BoardEvent.BoosterPanelStatusChange e) { }
+
+	// RVA: 0x18908E4 Offset: 0x18908E4 VA: 0x18908E4 Slot: 20
+	public void OnEvent(CanvasEvent.ToggleScreenInputBlocker e) { }
+
+	// RVA: 0x18908EC Offset: 0x18908EC VA: 0x18908EC Slot: 21
+	public void OnEvent(TaskEvent.SetLevelUpOnItems e) { }
+
+	// RVA: 0x189090C Offset: 0x189090C VA: 0x189090C Slot: 22
+	public void OnEvent(TaskEvent.LevelUpDismissed e) { }
+
+	// RVA: 0x189092C Offset: 0x189092C VA: 0x189092C Slot: 23
+	public void OnEvent(SrDebuggerEvent.ShowDebugLayers e) { }
+
+	// RVA: 0x1890930 Offset: 0x1890930 VA: 0x1890930 Slot: 24
+	public void OnEvent(CanvasEvent.StopBubbleTick e) { }
+
+	// RVA: 0x189097C Offset: 0x189097C VA: 0x189097C Slot: 25
+	public void OnEvent(CanvasEvent.ContinueBubbleTick e) { }
+
+	// RVA: 0x1890A0C Offset: 0x1890A0C VA: 0x1890A0C Slot: 26
+	public void OnEvent(SDKEvents.RewardedAdEarned e) { }
+
+	// RVA: 0x1890A28 Offset: 0x1890A28 VA: 0x1890A28 Slot: 27
+	public void OnEvent(SDKEvents.RewardedAdDismissed e) { }
+
+	// RVA: 0x18913C4 Offset: 0x18913C4 VA: 0x18913C4 Slot: 28
+	public void OnEvent(SDKEvents.RewardedAdFailedToShown e) { }
+
+	// RVA: 0x18913D8 Offset: 0x18913D8 VA: 0x18913D8 Slot: 29
+	public void OnEvent(TaskEvent.TaskDoneBoardTaskItemDisappearStarted e) { }
+
+	// RVA: 0x18913DC Offset: 0x18913DC VA: 0x18913DC Slot: 30
+	public void OnEvent(BoardEvent.BoardItemRemoveFinished e) { }
+
+	// RVA: 0x18913E0 Offset: 0x18913E0 VA: 0x18913E0 Slot: 31
+	public void OnEvent(BoardEvent.RemoveItemViaSellComplete e) { }
+
+	// RVA: 0x18913E4 Offset: 0x18913E4 VA: 0x18913E4 Slot: 32
+	public void OnEvent(EntityUpdateEvent.BoardItemStatusChange e) { }
+
+	// RVA: 0x1891424 Offset: 0x1891424 VA: 0x1891424 Slot: 33
+	public void OnEvent(CanvasEvent.OpenGameplayRequest e) { }
+
+	// RVA: 0x18914A8 Offset: 0x18914A8 VA: 0x18914A8 Slot: 15
+	public override void OnEvent(CanvasEvent.GameplayStatusUpdate e) { }
+
+	// RVA: 0x18914D4 Offset: 0x18914D4 VA: 0x18914D4
+	public bool PreventMerge() { }
+
+	// RVA: 0x189153C Offset: 0x189153C VA: 0x189153C
+	public ItemController IsMergeAvailable(bool performMerge) { }
+
+	// RVA: 0x1892AF4 Offset: 0x1892AF4 VA: 0x1892AF4
+	private void MergeIt(ItemController targetItem, CellController nearestCollidingCell, BoardItemData mergedItemData) { }
+
+	// RVA: 0x1892764 Offset: 0x1892764 VA: 0x1892764
+	private void ChargeIt(CellController nearestCollidingCell, ItemController candidateItem) { }
+
+	[AsyncStateMachine(typeof(ItemController.<MergeTweenAction>d__198))]
+	// RVA: 0x18930DC Offset: 0x18930DC VA: 0x18930DC
+	private UniTaskVoid MergeTweenAction(ItemController targetItem, BoardItemData mergedItemData, CellController nearestCollidingCell) { }
+
+	// RVA: 0x18931C0 Offset: 0x18931C0 VA: 0x18931C0
+	public void SetRewardWaiting() { }
+
+	// RVA: 0x1890D0C Offset: 0x1890D0C VA: 0x1890D0C
+	private void RewardEarned() { }
+
+	// RVA: 0x188F5C8 Offset: 0x188F5C8 VA: 0x188F5C8
+	private void InitializeBubbleItem(ItemEntity itemEntity, BoardData boardData) { }
+
+	// RVA: 0x18931D4 Offset: 0x18931D4 VA: 0x18931D4
+	public void RemoveBubble(string trigger) { }
+
+	// RVA: 0x1894220 Offset: 0x1894220 VA: 0x1894220
+	public void RemoveJelly(bool isSelect = True) { }
+
+	// RVA: 0x1894690 Offset: 0x1894690 VA: 0x1894690
+	public bool IsSellable() { }
+
+	// RVA: 0x1894E04 Offset: 0x1894E04 VA: 0x1894E04
+	private bool CheckSellableForItemSet41() { }
+
+	// RVA: 0x18953D4 Offset: 0x18953D4 VA: 0x18953D4
+	public bool ProcessSellButtonClick() { }
+
+	// RVA: 0x189371C Offset: 0x189371C VA: 0x189371C
+	private int GetRewardedCapacity(BoardItemDefaultSpawner spawnerData) { }
+
+	// RVA: 0x1893758 Offset: 0x1893758 VA: 0x1893758
+	private int GetRewardedCapacity(BoardItemAutoSpawner spawnerData) { }
+
+	// RVA: 0x1895528 Offset: 0x1895528 VA: 0x1895528
+	public bool IsSpawner() { }
+
+	// RVA: 0x1895648 Offset: 0x1895648 VA: 0x1895648
+	public bool IsSpawnerPart() { }
+
+	// RVA: 0x189567C Offset: 0x189567C VA: 0x189567C
+	public bool IsSpawnerParticleAvailable() { }
+
+	// RVA: 0x1893794 Offset: 0x1893794 VA: 0x1893794
+	public void SkipChargingState(bool animateClockDisappear, bool saveBoard = True, bool chargeToFullCapacity = False) { }
+
+	// RVA: 0x189583C Offset: 0x189583C VA: 0x189583C
+	private int GetSkipCapacity(int smallCapacity, int bigCapacity, SpawnerState skippedState) { }
+
+	// RVA: 0x18958B8 Offset: 0x18958B8 VA: 0x18958B8
+	public void StartSpawnerHintAnimation() { }
+
+	// RVA: 0x1895970 Offset: 0x1895970 VA: 0x1895970
+	private void StartSpawnerHint() { }
+
+	// RVA: 0x1895E3C Offset: 0x1895E3C VA: 0x1895E3C
+	private void SpawnerTweenAction(ItemController item, bool onKilled) { }
+
+	// RVA: 0x188B748 Offset: 0x188B748 VA: 0x188B748
+	private void UpdateSpawners(float elapsedTime) { }
+
+	// RVA: 0x1895F9C Offset: 0x1895F9C VA: 0x1895F9C
+	private void SkipSpawnerUpdate(BoardItemData data) { }
+
+	// RVA: 0x1896740 Offset: 0x1896740 VA: 0x1896740
+	private void SpawnerCharge(BoardItemSpawnerData spawnerData) { }
+
+	// RVA: 0x1893CF8 Offset: 0x1893CF8 VA: 0x1893CF8
+	public void ArrangeSpawnerParticle(SpawnerState eSpawnerState, bool animateClockDisappear = False) { }
+
+	// RVA: 0x1886F94 Offset: 0x1886F94 VA: 0x1886F94
+	private void ArrangeSpawnerState(BoardItemSpawnerData spawnerData, bool isRewardedCapacity = False, bool animateClockDisappear = False) { }
+
+	// RVA: 0x189698C Offset: 0x189698C VA: 0x189698C
+	private void CheckChargerTutorialState() { }
+
+	// RVA: 0x1896CF0 Offset: 0x1896CF0 VA: 0x1896CF0
+	public void TryStartSpawnerHint() { }
+
+	// RVA: 0x1888498 Offset: 0x1888498 VA: 0x1888498
+	public bool UsesEnergy() { }
+
+	// RVA: 0x1896FD4 Offset: 0x1896FD4 VA: 0x1896FD4
+	private bool RecurringEventUseEnergy() { }
+
+	// RVA: 0x18930B0 Offset: 0x18930B0 VA: 0x18930B0
+	public void KillAnimationActiveLoops(Sequence exception1, Sequence exception2, Sequence exception3, Sequence exception4) { }
+
+	// RVA: 0x18973FC Offset: 0x18973FC VA: 0x18973FC
+	private void ProcessTaskMoveCompletedForFirstItem(BoardTaskItem completedTask) { }
+
+	// RVA: 0x18974AC Offset: 0x18974AC VA: 0x18974AC
+	public void AnimateItemToTask(BoardTaskItemController completedTaskItemController, Coordinate position, int goalUIIndex, Action<bool> callback) { }
+
+	// RVA: 0x1897750 Offset: 0x1897750 VA: 0x1897750
+	private void AnimateItemToTask(BoardTaskItemController completedTaskItemController, int goalUIIndex, Action onComplete) { }
+
+	// RVA: 0x1897B98 Offset: 0x1897B98 VA: 0x1897B98
+	public void AnimateItemToSpecialTask(BoardTaskItemController completedTaskItemController, Coordinate position, int goalUIIndex) { }
+
+	// RVA: 0x1897B44 Offset: 0x1897B44 VA: 0x1897B44
+	private void PrepareAnimate() { }
+
+	// RVA: 0x1897E24 Offset: 0x1897E24 VA: 0x1897E24
+	public void ScaleDownWithAnimation() { }
+
+	// RVA: 0x1897F3C Offset: 0x1897F3C VA: 0x1897F3C
+	private void ArrangeAnimator(bool activate, Animator animatorPrefab, ref Animator currentInstance, bool create = True) { }
+
+	// RVA: 0x1889C48 Offset: 0x1889C48 VA: 0x1889C48
+	private void _DOKill() { }
+
+	// RVA: 0x189814C Offset: 0x189814C VA: 0x189814C
+	private void KillItemRuntimeSequences() { }
+
+	// RVA: 0x188A24C Offset: 0x188A24C VA: 0x188A24C
+	public void KillPanelAnimation(bool completeKill = True) { }
+
+	// RVA: 0x1898294 Offset: 0x1898294 VA: 0x1898294
+	public void KillMergeHintAnimation(bool completeKill = True) { }
+
+	// RVA: 0x18898D0 Offset: 0x18898D0 VA: 0x18898D0
+	public void ThrowWarning(ItemController.WarningType warningType) { }
+
+	// RVA: 0x1898308 Offset: 0x1898308 VA: 0x1898308
+	private void ThrowDragWarning() { }
+
+	// RVA: 0x18984B0 Offset: 0x18984B0 VA: 0x18984B0
+	private void ThrowBoosterWarning() { }
+
+	// RVA: 0x18986A8 Offset: 0x18986A8 VA: 0x18986A8
+	public void DragCollisionEnter(GameObject other) { }
+
+	// RVA: 0x18987D4 Offset: 0x18987D4 VA: 0x18987D4
+	public void DragCollisionExit(GameObject other) { }
+
+	// RVA: 0x18988DC Offset: 0x18988DC VA: 0x18988DC
+	public void DragStarted() { }
+
+	// RVA: 0x1898BC0 Offset: 0x1898BC0 VA: 0x1898BC0
+	public void DragContinues() { }
+
+	// RVA: 0x1898CE0 Offset: 0x1898CE0 VA: 0x1898CE0
+	public void DragStopped() { }
+
+	// RVA: 0x1899CD8 Offset: 0x1899CD8 VA: 0x1899CD8
+	private bool ProcessDragStopForButtons(Button button) { }
+
+	// RVA: 0x189A6BC Offset: 0x189A6BC VA: 0x189A6BC
+	private void TryToPositionNearestCell(List<CellController> nearestAvailableOtherCells) { }
+
+	// RVA: 0x189AA4C Offset: 0x189AA4C VA: 0x189AA4C
+	public void ProcessItemClick() { }
+
+	// RVA: 0x189ACA4 Offset: 0x189ACA4 VA: 0x189ACA4
+	private bool ProcessItemClickValidCheck(BoardPosition selectedPosition) { }
+
+	// RVA: 0x189AD5C Offset: 0x189AD5C VA: 0x189AD5C
+	private void ProcessDoubleClick() { }
+
+	// RVA: 0x189ABCC Offset: 0x189ABCC VA: 0x189ABCC
+	private void CommonClickArrangement() { }
+
+	// RVA: 0x189C5E4 Offset: 0x189C5E4 VA: 0x189C5E4
+	private bool CanClickLoop() { }
+
+	// RVA: 0x189C618 Offset: 0x189C618 VA: 0x189C618
+	private void StartClickLoop() { }
+
+	// RVA: 0x189CE90 Offset: 0x189CE90 VA: 0x189CE90
+	private void ClickTweenAction(ItemController item) { }
+
+	// RVA: 0x189CF28 Offset: 0x189CF28 VA: 0x189CF28
+	public bool ProcessNonMovableItemClick() { }
+
+	// RVA: 0x189D194 Offset: 0x189D194 VA: 0x189D194
+	private void ProcessNonMovableDoubleClick() { }
+
+	// RVA: 0x189D260 Offset: 0x189D260 VA: 0x189D260
+	public void OnBoosterPanelStatusChange(BoardEvent.BoosterPanelStatusChange e) { }
+
+	// RVA: 0x189D854 Offset: 0x189D854 VA: 0x189D854
+	private SpawnerClockController GetSpawnerClock() { }
+
+	// RVA: 0x188A6A0 Offset: 0x188A6A0 VA: 0x188A6A0
+	public void DestroySpawnerClock() { }
+
+	// RVA: 0x1896848 Offset: 0x1896848 VA: 0x1896848
+	private void ArrangeSpawnerClockStatus(bool enable, bool disableWithAnimation) { }
+
+	// RVA: 0x189D950 Offset: 0x189D950 VA: 0x189D950
+	private ItemControllerDialogue GetDialogue() { }
+
+	// RVA: 0x189DA4C Offset: 0x189DA4C VA: 0x189DA4C
+	public GameObject GetDialogueObject() { }
+
+	// RVA: 0x188F4D0 Offset: 0x188F4D0 VA: 0x188F4D0
+	public void DestroyItemDialogue() { }
+
+	// RVA: 0x189DB34 Offset: 0x189DB34 VA: 0x189DB34
+	public bool IsDialogueActive() { }
+
+	// RVA: 0x188FBC8 Offset: 0x188FBC8 VA: 0x188FBC8
+	private void OpenProgressiveDialogue() { }
+
+	// RVA: 0x188D040 Offset: 0x188D040 VA: 0x188D040
+	private ItemControllerTick GetItemTick() { }
+
+	// RVA: 0x188A5A8 Offset: 0x188A5A8 VA: 0x188A5A8
+	public void DestroyItemTick() { }
+
+	// RVA: 0x188CFDC Offset: 0x188CFDC VA: 0x188CFDC
+	private bool OpenTick() { }
+
+	// RVA: 0x18901B0 Offset: 0x18901B0 VA: 0x18901B0
+	private ItemControllerProgressBar GetProgressBar() { }
+
+	// RVA: 0x189DC38 Offset: 0x189DC38 VA: 0x189DC38
+	public GameObject GetItemProgressBarObject() { }
+
+	// RVA: 0x188A2C0 Offset: 0x188A2C0 VA: 0x188A2C0
+	private void DestroyItemProgressBar() { }
+
+	// RVA: 0x188FAF4 Offset: 0x188FAF4 VA: 0x188FAF4
+	private void ArrangeItemProgressBar(bool isActive, int maxProgress, int currentProgress) { }
+
+	// RVA: 0x1892AE0 Offset: 0x1892AE0 VA: 0x1892AE0
+	public void SetBarFillAmount(int amount) { }
+
+	// RVA: 0x189DD20 Offset: 0x189DD20 VA: 0x189DD20
+	private ItemControllerMaxBadge GetItemMaxBadge() { }
+
+	// RVA: 0x188AA80 Offset: 0x188AA80 VA: 0x188AA80
+	private void DestroyItemMaxLevelBadge() { }
+
+	// RVA: 0x188F3DC Offset: 0x188F3DC VA: 0x188F3DC
+	private void SetMaxLevelBadge(BoardController board, ItemEntity itemEntity) { }
+
+	// RVA: 0x189DE1C Offset: 0x189DE1C VA: 0x189DE1C
+	private ItemControllerDebug GetDebug() { }
+
+	// RVA: 0x188A798 Offset: 0x188A798 VA: 0x188A798
+	private void DestroyItemDebug() { }
+
+	// RVA: 0x188F44C Offset: 0x188F44C VA: 0x188F44C
+	private void CheckItemDebug() { }
+
+	// RVA: 0x189DF10 Offset: 0x189DF10 VA: 0x189DF10
+	private ItemControllerBox GetBox() { }
+
+	// RVA: 0x1890334 Offset: 0x1890334 VA: 0x1890334
+	private void DestroyItemBox() { }
+
+	// RVA: 0x188ECAC Offset: 0x188ECAC VA: 0x188ECAC
+	private void InitBoxImage() { }
+
+	// RVA: 0x188F854 Offset: 0x188F854 VA: 0x188F854
+	private ItemControllerLock GetLock() { }
+
+	// RVA: 0x188A988 Offset: 0x188A988 VA: 0x188A988
+	private void DestroyItemLock() { }
+
+	// RVA: 0x18902AC Offset: 0x18902AC VA: 0x18902AC
+	private void CheckItemLock() { }
+
+	// RVA: 0x189E00C Offset: 0x189E00C VA: 0x189E00C
+	private ItemControllerTreasureBoxUnlock GetTreasureBoxUnlock() { }
+
+	// RVA: 0x188A4B0 Offset: 0x188A4B0 VA: 0x188A4B0
+	public void DestroyItemTreasureBoxUnlock() { }
+
+	// RVA: 0x189E0FC Offset: 0x189E0FC VA: 0x189E0FC
+	public void CreateTreasureBoxUnlock(BoardData boardData) { }
+
+	// RVA: 0x189689C Offset: 0x189689C VA: 0x189689C
+	private ItemControllerSpawnerEnergy GetSpawnerEnergy() { }
+
+	// RVA: 0x188A890 Offset: 0x188A890 VA: 0x188A890
+	private void DestroyItemSpawnerEnergy() { }
+
+	// RVA: 0x189E12C Offset: 0x189E12C VA: 0x189E12C
+	public void SetSpawnerEnergyParticle(bool enable) { }
+
+	// RVA: 0x188FD1C Offset: 0x188FD1C VA: 0x188FD1C
+	private ItemControllerProgressText GetProgressText() { }
+
+	// RVA: 0x188A3B8 Offset: 0x188A3B8 VA: 0x188A3B8
+	private void DestroyItemProgressText() { }
+
+	// RVA: 0x189D748 Offset: 0x189D748 VA: 0x189D748
+	private ItemControllerTreasureBoxOpenSprite GetTreasureBoxOpenSprite() { }
+
+	// RVA: 0x189D650 Offset: 0x189D650 VA: 0x189D650
+	private void DestroyItemTreasureBoxOpenSprite() { }
+
+	// RVA: 0x18879E0 Offset: 0x18879E0 VA: 0x18879E0
+	private ItemControllerTreasureBoxOpened GetTreasureBoxOpened() { }
+
+	// RVA: 0x188F75C Offset: 0x188F75C VA: 0x188F75C
+	private void DestroyItemTreasureBoxOpened() { }
+
+	// RVA: 0x1893BFC Offset: 0x1893BFC VA: 0x1893BFC
+	private ItemControllerBubble GetBubble() { }
+
+	// RVA: 0x188A154 Offset: 0x188A154 VA: 0x188A154
+	private void DestroyItemBubble() { }
+
+	// RVA: 0x189E140 Offset: 0x189E140 VA: 0x189E140
+	public void .ctor() { }
+
+	// RVA: 0x189E234 Offset: 0x189E234 VA: 0x189E234
+	private static void .cctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x189EDB4 Offset: 0x189EDB4 VA: 0x189EDB4
+	private bool <ArrangeItemTickImage>b__143_0(BoardTaskGoal goal) { }
+
+	[CompilerGenerated]
+	// RVA: 0x189EE40 Offset: 0x189EE40 VA: 0x189EE40
+	private void <StartSpawnerHint>b__215_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x189EE4C Offset: 0x189EE4C VA: 0x189EE4C
+	private void <StartSpawnerHint>b__215_1() { }
+
+	[CompilerGenerated]
+	// RVA: 0x189EE58 Offset: 0x189EE58 VA: 0x189EE58
+	private void <ProcessDragStopForButtons>b__246_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x189F0A4 Offset: 0x189F0A4 VA: 0x189F0A4
+	private void <StartClickLoop>b__253_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x189F0AC Offset: 0x189F0AC VA: 0x189F0AC
+	private void <StartClickLoop>b__253_1() { }
+
+	[CompilerGenerated]
+	// RVA: 0x189F0B4 Offset: 0x189F0B4 VA: 0x189F0B4
+	private bool <OnBoosterPanelStatusChange>b__257_0(BoardPositionEntity item) { }
+}
+

@@ -1,0 +1,79 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class ItemCollectedResult // TypeDefIndex: 25955
+{
+	// Fields
+	[CompilerGenerated]
+	private Entity <Entity>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private string <EntityId>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private string <ItemId>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private int <Position>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private Reward <Reward>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private bool <IsImmediateReward>k__BackingField; // 0x38
+
+	// Properties
+	public Entity Entity { get; set; }
+	public string EntityId { get; set; }
+	public string ItemId { get; set; }
+	public int Position { get; set; }
+	public Reward Reward { get; set; }
+	public bool IsImmediateReward { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A700 Offset: 0x6A96700 VA: 0x6A9A700
+	public Entity get_Entity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A708 Offset: 0x6A96708 VA: 0x6A9A708
+	public void set_Entity(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A710 Offset: 0x6A96710 VA: 0x6A9A710
+	public string get_EntityId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A718 Offset: 0x6A96718 VA: 0x6A9A718
+	public void set_EntityId(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A720 Offset: 0x6A96720 VA: 0x6A9A720
+	public string get_ItemId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A728 Offset: 0x6A96728 VA: 0x6A9A728
+	public void set_ItemId(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A730 Offset: 0x6A96730 VA: 0x6A9A730
+	public int get_Position() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A738 Offset: 0x6A96738 VA: 0x6A9A738
+	public void set_Position(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A740 Offset: 0x6A96740 VA: 0x6A9A740
+	public Reward get_Reward() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A748 Offset: 0x6A96748 VA: 0x6A9A748
+	public void set_Reward(Reward value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A750 Offset: 0x6A96750 VA: 0x6A9A750
+	public bool get_IsImmediateReward() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A758 Offset: 0x6A96758 VA: 0x6A9A758
+	public void set_IsImmediateReward(bool value) { }
+
+	// RVA: 0x6A9A764 Offset: 0x6A96764 VA: 0x6A9A764
+	public void .ctor() { }
+}
+

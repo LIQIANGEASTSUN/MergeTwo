@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class FeedingCombinationComponentExtensions.<>c__DisplayClass0_0 // TypeDefIndex: 25906
+{
+	// Fields
+	public string itemId; // 0x10
+	public Func<string, bool> <>9__0; // 0x18
+	public Func<string, bool> <>9__1; // 0x20
+
+	// Methods
+
+	// RVA: 0x6A981C4 Offset: 0x6A941C4 VA: 0x6A981C4
+	public void .ctor() { }
+
+	// RVA: 0x6A98510 Offset: 0x6A94510 VA: 0x6A98510
+	internal bool <GetCombinationsInProgressWithItem>b__0(string iteratedItemToConsume) { }
+
+	// RVA: 0x6A98524 Offset: 0x6A94524 VA: 0x6A98524
+	internal bool <GetCombinationsInProgressWithItem>b__1(string iteratedItemId) { }
+}
+

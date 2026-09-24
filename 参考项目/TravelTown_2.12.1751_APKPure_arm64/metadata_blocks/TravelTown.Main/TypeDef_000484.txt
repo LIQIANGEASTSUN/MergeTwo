@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class PushedRngItemsModel.<>c // TypeDefIndex: 484
+{
+	// Fields
+	public static readonly PushedRngItemsModel.<>c <>9; // 0x0
+	public static Func<PushedRngItem, bool> <>9__11_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x612FA90 Offset: 0x612BA90 VA: 0x612FA90
+	private static void .cctor() { }
+
+	// RVA: 0x612FAF8 Offset: 0x612BAF8 VA: 0x612FAF8
+	public void .ctor() { }
+
+	// RVA: 0x612FB00 Offset: 0x612BB00 VA: 0x612FB00
+	internal bool <FindItem>b__11_0(PushedRngItem e) { }
+}
+

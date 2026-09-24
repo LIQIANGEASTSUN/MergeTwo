@@ -1,0 +1,153 @@
+Type: GameLogic.Player.Rewards.EventRewardContext
+
+Method: CurrencySource get_FallbackCurrencySource()
+
+Disassembly:
+	0x03735A04 BL 0x239BB90
+	0x03735A08 BL 0x239BB90
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_FallbackCurrencySource(CurrencySource value)
+
+Disassembly:
+	0x03735A0C BL 0x239BB90
+	0x03735A10 BL 0x239BB90
+
+ISIL:
+	001 Move [X0+16], W1
+	002 Return 
+
+Method: System.Void .ctor(Metaplay.Core.IStringId eventId, CurrencySource fallbackCurrencySource)
+
+Disassembly:
+	0x03735A14 MOV X22, X0
+	0x03735A18 ADD X0, X31, 0x20
+	0x03735A1C BL 0x21B979C
+	0x03735A20 B 0x37363AC
+	0x03735A24 B 0x3735A40
+	0x03735A28 B 0x3735A40
+	0x03735A2C B 0x3735A40
+	0x03735A30 B 0x3735A40
+	0x03735A34 B 0x3735A40
+	0x03735A38 B 0x3735A40
+	0x03735A3C B 0x3735A40
+	0x03735A40 MOV X22, X0
+	0x03735A44 CMP W1, 0x1
+	0x03735A48 B.NE 0x3735BFC
+	0x03735A4C MOV X0, X22
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move X20, X1
+	006 Move X1, X31
+	007 Move W19, W2
+	008 Move X21, X0
+	009 Call Object..ctor, X0
+	010 Move [X21+24], X20
+	011 Move X0, X21
+	012 Move X1, X20
+	013 Call 0x239F888
+	014 Move [X21-8], W19
+	015 Move X20, [X31+16]
+	016 Move X19, [X31+24]
+	017 Move X30, [X31+32]
+	018 Move X21, [X31+40]
+	019 Return 
+
+Method: Metaplay.Core.IStringId get_EventId()
+
+Disassembly:
+	0x03735A50 BL 0x53E9080
+	0x03735A54 LDR X8, [X0]
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_EventId(Metaplay.Core.IStringId value)
+
+Disassembly:
+	0x03735A58 STR X8, [X31 + 0x20]
+	0x03735A5C BL 0x53E9090
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: GameLogic.Player.Rewards.IRewardContext ForEvent(Metaplay.Core.IStringId eventId, CurrencySource fallbackCurrencySource)
+
+Disassembly:
+	0x03727650 STR W1, [X0 + 0x28]
+	0x03727654 RET
+	0x03727658 MOV X1, X31
+	0x0372765C B 0x36C896C
+	0x03727660 STP X30, X23, [X31 - 0x30]!
+	0x03727664 STP X22, X21, [X31 + 0x10]
+	0x03727668 STP X20, X19, [X31 + 0x20]
+	0x0372766C MOV X22, X1
+	0x03727670 MOV X1, X31
+	0x03727674 MOV W19, W4
+	0x03727678 MOV X20, X3
+	0x0372767C MOV X21, X2
+	0x03727680 MOV X23, X0
+	0x03727684 BL 0x36C896C
+	0x03727688 STR X22, [X23 + 0x10]!
+	0x0372768C MOV X0, X23
+	0x03727690 MOV X1, X22
+	0x03727694 BL 0x239B888
+	0x03727698 STP X21, X20, [X23 + 0x8]
+	0x0372769C LDP X22, X21, [X31 + 0x10]
+	0x037276A0 STR W19, [X23 + 0x18]
+	0x037276A4 LDP X20, X19, [X31 + 0x20]
+	0x037276A8 LDP X30, X23, [X31], #0x30
+	0x037276AC RET
+	0x037276B0 SUB X31, X31, 0x60
+	0x037276B4 STR X30, [X31 + 0x10]
+	0x037276B8 STP X26, X25, [X31 + 0x20]
+	0x037276BC STP X24, X23, [X31 + 0x30]
+	0x037276C0 STP X22, X21, [X31 + 0x40]
+	0x037276C4 STP X20, X19, [X31 + 0x50]
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31+16], X22
+	003 Move [X31+24], X21
+	004 Move [X31+32], X20
+	005 Move [X31+40], X19
+	006 Move W19, W1
+	007 Move W8, [0x2607809]
+	008 Move X22, [0x1FE1F00]
+	009 Move X20, X0
+	010 Move TEMP, X8
+	011 And TEMP, TEMP, 1
+	012 Compare TEMP, 1
+	013 JumpIfEqual {18}
+	014 Move X0, [0x1FE1F00]
+	015 Call 0x239F8E4
+	016 Move W8, 1
+	017 Move [X21+2057], W8
+	018 Move X0, [X22]
+	019 Call 0x239FB80
+	020 Move X1, X31
+	021 Move X21, X0
+	022 Call Object..ctor, X0
+	023 Move X0, X21
+	024 Move X1, X20
+	025 Move [X0+24], X20
+	026 Call 0x239F888
+	027 Move X0, X21
+	028 Move [X21+16], W19
+	029 Move X20, [X31+32]
+	030 Move X19, [X31+40]
+	031 Move X22, [X31+16]
+	032 Move X21, [X31+24]
+	033 Move X30, [X31+48]
+	034 Return X0
+

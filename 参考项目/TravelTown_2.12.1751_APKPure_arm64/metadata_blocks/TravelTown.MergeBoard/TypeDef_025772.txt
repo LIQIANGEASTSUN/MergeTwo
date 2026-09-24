@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class SpawnerSystem.<>c__DisplayClass5_0 // TypeDefIndex: 25772
+{
+	// Fields
+	public List<int> occupiedPositions; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A75324 Offset: 0x6A71324 VA: 0x6A75324
+	public void .ctor() { }
+
+	// RVA: 0x6A753EC Offset: 0x6A713EC VA: 0x6A753EC
+	internal bool <HandleSpawnByTick>b__1(int pos) { }
+}
+

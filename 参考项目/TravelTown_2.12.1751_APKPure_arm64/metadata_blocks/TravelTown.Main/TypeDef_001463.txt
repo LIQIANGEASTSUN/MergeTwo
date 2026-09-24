@@ -1,0 +1,14 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class StackingCapability : CapabilityBase // TypeDefIndex: 1463
+{
+	// Fields
+	[JsonProperty("usesAmount")]
+	public int StackSize; // 0x14
+
+	// Methods
+
+	// RVA: 0x60118D4 Offset: 0x600D8D4 VA: 0x60118D4
+	public void .ctor() { }
+}
+

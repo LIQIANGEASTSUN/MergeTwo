@@ -1,0 +1,9 @@
+// Namespace: Merger.Game.Views.BoardItem
+public interface IBoardItemViewBehaviourFactory // TypeDefIndex: 9140
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void AddBehaviours(Entity entity, BoardItemView2 boardItemView2);
+}
+

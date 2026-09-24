@@ -1,0 +1,37 @@
+Type: Merge.BoardItemHandler+<>c__DisplayClass103_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03059E74 MOV X0, X19
+	0x03059E78 FMOV S0, S8
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void <StopAllTapHinAnimations>b__0()
+
+Disassembly:
+	0x03059E7C FMOV S1, S9
+	0x03059E80 FMOV S2, S10
+	0x03059E84 FMOV S3, S11
+	0x03059E88 LDR X30, [X31 + 0x30]
+	0x03059E8C LDP X20, X19, [X31 + 0x50]
+	0x03059E90 LDP X22, X21, [X31 + 0x40]
+	0x03059E94 LDP D9, D8, [X31 + 0x20]
+	0x03059E98 LDP D11, D10, [X31 + 0x10]
+
+ISIL:
+	001 Move X8, X0
+	002 Move X0, [X0+24]
+	003 Compare X0, 0
+	004 JumpIfEqual {9}
+	005 Move X1, [X8+16]
+	006 Move X2, X31
+	007 Call BoardItemHandler.DeinitEffect, X0, X1
+	008 Return 
+	009 Move [X31-16], X30
+	010 Call 0x239FB90
+

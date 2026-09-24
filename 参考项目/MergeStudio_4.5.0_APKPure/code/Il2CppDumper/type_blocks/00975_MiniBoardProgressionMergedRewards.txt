@@ -1,0 +1,14 @@
+// Namespace: Paxie.MergeStudio.Features.RecurringEvents.MiniBoardProgression
+[Serializable]
+public class MiniBoardProgressionMergedRewards // TypeDefIndex: 975
+{
+	// Fields
+	public MiniBoardItemEntity ItemEntity; // 0x8
+	public Queue<MiniBoardRewardEntity> MergedRewards; // 0xC
+
+	// Methods
+
+	// RVA: 0x1794090 Offset: 0x1794090 VA: 0x1794090
+	public void .ctor(MiniBoardItemEntity itemEntity) { }
+}
+

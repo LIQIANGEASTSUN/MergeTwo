@@ -1,0 +1,16 @@
+Type: Code.GameLogic.GameEvents.DigEventBoardData
+
+Method: System.Void .ctor(System.Int32 gridWidth, System.Int32 gridHeight, System.Int32 cellSize, System.Int32 cellSpacing)
+
+Disassembly:
+	0x03811840 ADD X0, X31, 0x30
+	0x03811844 BL 0x2848FCC
+	0x03811848 MOV W22, W0
+
+ISIL:
+	001 Move [X0], W1
+	002 Move [X0+4], W2
+	003 Move [X0+8], W3
+	004 Move [X0+12], W4
+	005 Return 
+

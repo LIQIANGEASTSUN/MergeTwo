@@ -1,0 +1,13 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "BoardItemAutoSpawner", menuName = "Scriptable/BoardItem/AutoSpawner", order = 4)]
+public class BoardItemAutoSpawner : BoardItemSpawnerData // TypeDefIndex: 1640
+{
+	// Methods
+
+	// RVA: 0x18C6030 Offset: 0x18C6030 VA: 0x18C6030
+	public bool ProcessItemSpawn(ItemController itemController, BoardController board) { }
+
+	// RVA: 0x18C63C4 Offset: 0x18C63C4 VA: 0x18C63C4
+	public void .ctor() { }
+}
+

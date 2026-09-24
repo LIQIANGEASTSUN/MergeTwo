@@ -1,0 +1,101 @@
+// Namespace: Framework.Core.Services
+public interface IJsonService // TypeDefIndex: 10577
+{
+	// Properties
+	public abstract JsonSerializerSettings JsonSettings { get; }
+	public abstract JsonSerializer JsonSerializer { get; }
+	public abstract bool DeserializeOnThreads { get; set; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract JsonSerializerSettings get_JsonSettings();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract JsonSerializer get_JsonSerializer();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract bool get_DeserializeOnThreads();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void set_DeserializeOnThreads(bool value);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract string Serialize<T>(T objectForSerialization);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IJsonService.Serialize<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract string SerializeAsCamelCase<T>(T objectForSerialization);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IJsonService.SerializeAsCamelCase<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract T Deserialize<T>(string serializedData);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IJsonService.Deserialize<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract T Deserialize<T>(string data, IContractResolver resolver);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IJsonService.Deserialize<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract T Convert<T>(JToken data);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IJsonService.Convert<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract T Convert<T>(JObject data);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IJsonService.Convert<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public abstract object Deserialize(string data, Type type);
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public abstract IPromise<T> DeserializeThreaded<T>(string json, IContractResolver contractResolver);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IJsonService.DeserializeThreaded<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 12
+	public abstract void AddJsonConverter(JsonConverter converter);
+
+	// RVA: -1 Offset: -1 Slot: 13
+	public abstract T ToObject<T>(JObject data);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IJsonService.ToObject<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 14
+	public abstract T ToObject<T>(JToken data);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IJsonService.ToObject<__Il2CppFullySharedGenericType>
+	*/
+}
+

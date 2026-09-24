@@ -1,0 +1,15 @@
+// Namespace: Framework.Core.Services.Backend.User
+public interface IUserProfileServiceBase // TypeDefIndex: 10869
+{
+	// Properties
+	public abstract UserProfileInfo UserProfileInfo { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract UserProfileInfo get_UserProfileInfo();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract IPromise CreateAndStoreUserProfile();
+}
+

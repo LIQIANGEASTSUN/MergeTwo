@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoosterSystem.<>c__DisplayClass17_0 // TypeDefIndex: 7736
+{
+	// Fields
+	public MergeItemBoosterComponent mergeItemBoosterComponent; // 0x10
+
+	// Methods
+
+	// RVA: 0x65BDBA4 Offset: 0x65B9BA4 VA: 0x65BDBA4
+	public void .ctor() { }
+
+	// RVA: 0x65BEE88 Offset: 0x65BAE88 VA: 0x65BEE88
+	internal bool <DestroyMergeItemsOfExpiredBoosters>b__0(RemoteBoosterData b) { }
+}
+

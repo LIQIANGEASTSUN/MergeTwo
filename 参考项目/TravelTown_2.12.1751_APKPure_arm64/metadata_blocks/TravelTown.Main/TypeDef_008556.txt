@@ -1,0 +1,12 @@
+// Namespace: Merger.Game.Command
+public class UpdateBoardResourcesStateOnConfigUpdatedCommand : UpdateBoardResourcesStateCommandBase<FetchBackendUpdatesSignal> // TypeDefIndex: 8556
+{
+	// Methods
+
+	// RVA: 0x668AB90 Offset: 0x6686B90 VA: 0x668AB90 Slot: 15
+	public override void Execute(FetchBackendUpdatesSignal signal) { }
+
+	// RVA: 0x668ABFC Offset: 0x6686BFC VA: 0x668ABFC
+	public void .ctor() { }
+}
+

@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class CatSwimmingModel.<>c__DisplayClass49_0 // TypeDefIndex: 265
+{
+	// Fields
+	public StorageOrderItem storageOrderItem; // 0x8
+
+	// Methods
+
+	// RVA: 0x2B3DDA4 Offset: 0x2B3DDA4 VA: 0x2B3DDA4
+	public void .ctor() { }
+
+	// RVA: 0x2B3FA04 Offset: 0x2B3FA04 VA: 0x2B3FA04
+	internal bool <GetRandomTaskScore>b__0(CatSwimmingOrder p) { }
+}
+

@@ -1,0 +1,22 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class RecurringEventHandlerBase.<>c__DisplayClass101_0 // TypeDefIndex: 4179
+{
+	// Fields
+	public int setID; // 0x8
+
+	// Methods
+
+	// RVA: 0x1CC796C Offset: 0x1CC796C VA: 0x1CC796C
+	public void .ctor() { }
+
+	// RVA: 0x1CCC598 Offset: 0x1CCC598 VA: 0x1CCC598
+	internal bool <ConvertCurrenciesToPoints>b__0(RewardEntity entity) { }
+
+	// RVA: 0x1CCC5C8 Offset: 0x1CCC5C8 VA: 0x1CCC5C8
+	internal bool <ConvertCurrenciesToPoints>b__1(ItemEntity entity) { }
+
+	// RVA: 0x1CCC5F8 Offset: 0x1CCC5F8 VA: 0x1CCC5F8
+	internal bool <ConvertCurrenciesToPoints>b__2(BoardPositionEntity entity) { }
+}
+

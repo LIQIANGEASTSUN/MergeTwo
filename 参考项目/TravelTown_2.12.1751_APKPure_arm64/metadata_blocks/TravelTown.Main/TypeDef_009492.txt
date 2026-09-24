@@ -1,0 +1,46 @@
+// Namespace: Merger.Game.Signal.Combinations
+public class SplitCheckPopupOpenedSignal // TypeDefIndex: 9492
+{
+	// Fields
+	[CompilerGenerated]
+	private string <BeforeSplitItemId>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private string <AfterSplitFirstItemId>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private string <AfterSplitSecondItemId>k__BackingField; // 0x20
+
+	// Properties
+	public string BeforeSplitItemId { get; set; }
+	public string AfterSplitFirstItemId { get; set; }
+	public string AfterSplitSecondItemId { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x676E4F0 Offset: 0x676A4F0 VA: 0x676E4F0
+	public string get_BeforeSplitItemId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E4F8 Offset: 0x676A4F8 VA: 0x676E4F8
+	public void set_BeforeSplitItemId(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E500 Offset: 0x676A500 VA: 0x676E500
+	public string get_AfterSplitFirstItemId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E508 Offset: 0x676A508 VA: 0x676E508
+	public void set_AfterSplitFirstItemId(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E510 Offset: 0x676A510 VA: 0x676E510
+	public string get_AfterSplitSecondItemId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E518 Offset: 0x676A518 VA: 0x676E518
+	public void set_AfterSplitSecondItemId(string value) { }
+
+	// RVA: 0x676E520 Offset: 0x676A520 VA: 0x676E520
+	public void .ctor(string beforeSplitItemId, string afterSplitFirstItemId, string afterSplitSecondItemId) { }
+}
+

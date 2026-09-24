@@ -1,0 +1,13 @@
+Type: GameLogic.Player.Items.Bubble.BubbleStateData
+
+Method: System.Void .ctor(Currencies openCurrency, System.Int32 openCostAmount)
+
+Disassembly:
+	0x0364A538 BL 0x265DFB4
+	0x0364A53C LDP X0, X1, [X31]
+
+ISIL:
+	001 Move [X0], W1
+	002 Move [X0+4], W2
+	003 Return 
+

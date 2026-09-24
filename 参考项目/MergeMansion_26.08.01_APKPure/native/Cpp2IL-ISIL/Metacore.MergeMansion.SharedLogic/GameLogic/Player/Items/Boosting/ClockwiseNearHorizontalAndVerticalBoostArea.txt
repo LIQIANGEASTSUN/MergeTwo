@@ -1,0 +1,102 @@
+Type: GameLogic.Player.Items.Boosting.ClockwiseNearHorizontalAndVerticalBoostArea
+
+Method: System.Collections.Generic.List`1<GameLogic.Player.Board.Coordinate> GetAllBoostedCoordinates(GameLogic.Player.Board.Coordinate boosterCoordinate, System.Func`2<GameLogic.Player.Board.Coordinate, System.Boolean> validBoostTargetChecker)
+
+Disassembly:
+	0x0364DB80 ADD X2, X31, 0x0
+	0x0364DB84 MOV X0, X23
+	0x0364DB88 MOV X1, X20
+	0x0364DB8C MOV X3, X19
+	0x0364DB90 MOV X4, X31
+	0x0364DB94 STR V0, [X31]
+	0x0364DB98 STR X8, [X31 + 0x10]
+	0x0364DB9C BL 0x361B1BC
+	0x0364DBA0 LDP X20, X19, [X31 + 0x70]
+	0x0364DBA4 LDP X22, X21, [X31 + 0x60]
+	0x0364DBA8 LDP X24, X23, [X31 + 0x50]
+	0x0364DBAC LDP X30, X25, [X31 + 0x40]
+	0x0364DBB0 ADD X31, X31, 0x80
+	0x0364DBB4 RET
+	0x0364DBB8 BL 0x239BB90
+	0x0364DBBC LDR X0, [X0 + 0x10]
+	0x0364DBC0 RET
+	0x0364DBC4 LDR X0, [X0 + 0x10]
+	0x0364DBC8 RET
+	0x0364DBCC LDR X0, [X0 + 0x100]
+	0x0364DBD0 RET
+	0x0364DBD4 MOV X8, X0
+	0x0364DBD8 ADD X0, X0, 0x100
+	0x0364DBDC STR X1, [X8 + 0x100]
+	0x0364DBE0 B 0x239B888
+	0x0364DBE4 LDR X0, [X0 + 0x108]
+	0x0364DBE8 RET
+	0x0364DBEC MOV X8, X0
+	0x0364DBF0 ADD X0, X0, 0x108
+	0x0364DBF4 STR X1, [X8 + 0x108]
+	0x0364DBF8 B 0x239B888
+	0x0364DBFC LDR X0, [X0 + 0x110]
+	0x0364DC00 RET
+	0x0364DC04 MOV X8, X0
+	0x0364DC08 ADD X0, X0, 0x110
+	0x0364DC0C STR X1, [X8 + 0x110]
+	0x0364DC10 B 0x239B888
+	0x0364DC14 LDR X0, [X0 + 0x118]
+	0x0364DC18 RET
+	0x0364DC1C MOV X8, X0
+	0x0364DC20 ADD X0, X0, 0x118
+
+ISIL:
+	001 Subtract X31, X31, 48
+	002 Move [X31+16], X30
+	003 Move [X31+24], X21
+	004 Move [X31+32], X20
+	005 Move [X31+40], X19
+	006 Move X19, X2
+	007 Move W8, [0x26E0E23]
+	008 Move X20, [0x209C610]
+	009 Move [X31+8], X1
+	010 Move TEMP, X8
+	011 And TEMP, TEMP, 1
+	012 Compare TEMP, 1
+	013 JumpIfEqual {22}
+	014 Move X0, [0x209C610]
+	015 Call 0x239F8E4
+	016 Move X0, [0x20C8018]
+	017 Call 0x239F8E4
+	018 Move X0, [0x20E9650]
+	019 Call 0x239F8E4
+	020 Move W8, 1
+	021 Move [X21+3619], W8
+	022 Move X0, [X20]
+	023 Move X21, [0x20E9650]
+	024 Move W8, [X0+228]
+	025 Move X20, [0x20C8018]
+	026 Compare W8, 0
+	027 JumpIfNotEqual {29}
+	028 Call 0x239FA64
+	029 Add X0, X31, 8
+	030 Move X1, X31
+	031 Call Coordinate.get_CrossNeighbours, X0
+	032 Move X2, [X21]
+	033 Move X1, X19
+	034 Call 0x25EC554, X0, X1
+	035 Move X1, [X20]
+	036 Call 0x25EC394, X0
+	037 Move X20, [X31+32]
+	038 Move X19, [X31+40]
+	039 Move X30, [X31+16]
+	040 Move X21, [X31+24]
+	041 Add X31, X31, 48
+	042 Return X0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0364D104 STR W8, [X19 + 0x38]
+	0x0364D108 BL 0x239BB80
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+

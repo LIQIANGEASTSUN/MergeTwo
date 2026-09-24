@@ -1,0 +1,10 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class ProducerInventoryCapability // TypeDefIndex: 1459
+{
+	// Methods
+
+	// RVA: 0x60118A8 Offset: 0x600D8A8 VA: 0x60118A8
+	public void .ctor() { }
+}
+

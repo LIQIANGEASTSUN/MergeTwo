@@ -1,0 +1,261 @@
+Type: GameLogic.Player.Items.IMergeItem
+
+Method: GameLogic.Player.Items.IItemDefinition GetDefinition(GameLogic.Config.IMergeMansionGameConfig config)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.MergeChains.IMergeChainDefinition GetMergeChain(GameLogic.Config.IMergeMansionGameConfig config)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Merge.ItemVisibility get_Visibility()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Config.Types.MetacoreTime get_CreatedAt()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Decay.DecayState get_DecayState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Activation.ActivationState get_ActivationState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Spawning.SpawnState get_SpawnState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.StorageState get_ActivationStorageState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.StorageState get_SpawnStorageState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Chest.IChestState get_ChestState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Boosting.BoosterState get_BoosterState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Bubble.BubbleState get_BubbleState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_SpecialActivationAmount()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Sink.ISinkState get_SinkState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.TimeContainer.ITimeContainerState get_TimeContainerState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Charges.ChargesState get_ChargesState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Merging.XpState get_ExperienceState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Attachments.ItemAttachmentsState get_AttachmentsState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Attachments.ItemLeaderboardState get_LeaderboardState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.ItemRewardsState get_RewardsState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Fishing.FishingRodState get_FishingRodState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Fishing.WeightState get_WeightState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Persistent.PersistentState get_PersistentState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Order.OrderParentState get_OrderState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_IsInsideBubble()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metacore.MergeMansion.Common.Options.Option`1<GameLogic.Config.Types.MetacoreTime> get_NextSpawnStorageTimestampOption()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_IsVisible()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_IsPartiallyVisible()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_ActivationPaused()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Config.Types.MetacoreDuration get_RemainingTimeContained()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Nullable`1<GameLogic.Config.Types.MetacoreDuration> get_RemainingDuration()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_IsLootable()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Fishing.WeightState get_WeightStateMaybe()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Attachments.ItemAttachmentsState get_AttachmentsStateMaybe()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.MergeItem+MergeItemExtra get_Extra()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.Math.F32 get_TimeBoostMultiplier()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.Math.F32 get_TimeSpawnBoostMultiplier()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

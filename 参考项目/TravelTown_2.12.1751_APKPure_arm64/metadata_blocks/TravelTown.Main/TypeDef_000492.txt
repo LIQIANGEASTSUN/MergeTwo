@@ -1,0 +1,105 @@
+// Namespace: MergeEngine.Model.RemoteSpawning
+public class RemoteSpawningModel : ModelBase, IRemoteSpawningModel // TypeDefIndex: 492
+{
+	// Fields
+	[Inject]
+	private IServerTimeService _serverTimeService; // 0x28
+	[Inject]
+	private IJsonService _jsonService; // 0x30
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x38
+	[Inject]
+	private IPushedItemsModel _pushedItemsModel; // 0x40
+	private const string ModelCacheKey = "RemoteSpawningModel";
+	private Dictionary<string, Dictionary<int, RemoteSpawningModel.RemoteSpawningQueue>> spawningQueuesMap; // 0x48
+	private List<string> _processedStackUuIds; // 0x50
+
+	// Properties
+	private long CurrentServerTimestamp { get; }
+
+	// Methods
+
+	// RVA: 0x612FBA4 Offset: 0x612BBA4 VA: 0x612FBA4
+	private long get_CurrentServerTimestamp() { }
+
+	// RVA: 0x612FC44 Offset: 0x612BC44 VA: 0x612FC44 Slot: 17
+	protected override void InitializeModel() { }
+
+	// RVA: 0x612FD78 Offset: 0x612BD78 VA: 0x612FD78
+	private void ServerTimeUpdated() { }
+
+	// RVA: 0x6130478 Offset: 0x612C478 VA: 0x6130478 Slot: 18
+	protected override void DisposeModel() { }
+
+	// RVA: 0x613050C Offset: 0x612C50C VA: 0x613050C Slot: 19
+	public ItemSpawnable GetNextItem(IMergeItem spawnerItem, int bet, ExtraData extraData) { }
+
+	// RVA: 0x61311D8 Offset: 0x612D1D8 VA: 0x61311D8
+	private RemoteSpawningNotificationData GetStacksDataFor(string producerId, int boostOption) { }
+
+	// RVA: 0x613162C Offset: 0x612D62C VA: 0x613162C Slot: 20
+	public string TryPeekNextItem(IMergeItem spawnerItem, int bet) { }
+
+	// RVA: 0x6131300 Offset: 0x612D300 VA: 0x6131300
+	private string GetNextItemInQueueForId(string producerId, int boostOption, RemoteSpawningNotificationData stacksData) { }
+
+	// RVA: 0x61319EC Offset: 0x612D9EC VA: 0x61319EC
+	private RemoteSpawningModel.ExpiryItem FindNotExpiredNextItem(RemoteSpawningModel.RemoteSpawningQueue itemsQueue, int boostOption, string producerId) { }
+
+	// RVA: 0x6131C58 Offset: 0x612DC58 VA: 0x6131C58 Slot: 21
+	public void OnProducerQueueUpdated(ProducerQueuesPayload producerQueuesPayload) { }
+
+	// RVA: 0x6132354 Offset: 0x612E354 VA: 0x6132354
+	private void AddNewQueueToProducer(string producerId, Dictionary<int, RemoteSpawningModel.RemoteSpawningQueue> producerQueue, ProducerQueuesPayload queuePayload) { }
+
+	// RVA: 0x61321A0 Offset: 0x612E1A0 VA: 0x61321A0
+	private void AppendToQueue(string producerId, int bet, string latestQueueNotificationId, Queue<RemoteSpawningModel.ExpiryItem> queueToAppend, string[] stackItems, long expirationTimestamp) { }
+
+	// RVA: 0x6132504 Offset: 0x612E504 VA: 0x6132504 Slot: 22
+	public void ResetQueueFor(string spawnerId, int bet) { }
+
+	// RVA: 0x6131450 Offset: 0x612D450 VA: 0x6131450 Slot: 23
+	public void ResetQueueFor(string spawnerId) { }
+
+	// RVA: 0x6132618 Offset: 0x612E618 VA: 0x6132618
+	private void ResetQueueForAllSecondaryProducerOfPrimary(IMergeGraphItem graph) { }
+
+	// RVA: 0x6132BC8 Offset: 0x612EBC8 VA: 0x6132BC8 Slot: 24
+	public void ResetAllQueues() { }
+
+	// RVA: 0x6132C20 Offset: 0x612EC20 VA: 0x6132C20 Slot: 25
+	public void LeaveRemainingItems(string spawnerId, int numberOfRemaining) { }
+
+	// RVA: 0x61319D0 Offset: 0x612D9D0 VA: 0x61319D0
+	private bool IsTimestampPast(long expirationTimestamp) { }
+
+	// RVA: 0x612FE24 Offset: 0x612BE24 VA: 0x612FE24 Slot: 26
+	public void ClearAllExpiredItems() { }
+
+	// RVA: 0x613049C Offset: 0x612C49C VA: 0x613049C
+	private void SaveCache() { }
+
+	// RVA: 0x612FCFC Offset: 0x612BCFC VA: 0x612FCFC
+	private void LoadCache() { }
+
+	// RVA: 0x6132F58 Offset: 0x612EF58 VA: 0x6132F58
+	private void LoadFromJson(string json) { }
+
+	// RVA: 0x6132E68 Offset: 0x612EE68 VA: 0x6132E68
+	private string SaveToJson() { }
+
+	// RVA: 0x6131594 Offset: 0x612D594 VA: 0x6131594
+	private void SendProducerChainRenewedAnalytic(string producerId, string itemId) { }
+
+	// RVA: 0x6133054 Offset: 0x612F054 VA: 0x6133054
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6133130 Offset: 0x612F130 VA: 0x6133130
+	private bool <ClearAllExpiredItems>b__26_0(RemoteSpawningModel.ExpiryItem item) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6133154 Offset: 0x612F154 VA: 0x6133154
+	private bool <ClearAllExpiredItems>b__26_2(RemoteSpawningModel.ExpiryItem item) { }
+}
+

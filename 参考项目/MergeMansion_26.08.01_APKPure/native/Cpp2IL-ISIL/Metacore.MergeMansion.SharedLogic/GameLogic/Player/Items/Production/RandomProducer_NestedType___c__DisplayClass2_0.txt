@@ -1,0 +1,100 @@
+Type: GameLogic.Player.Items.Production.RandomProducer+<>c__DisplayClass2_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03620650 B 0x3620750
+	0x03620654 B 0x3620700
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.ValueTuple`2<GameLogic.Player.Items.IItemDefinition, System.Int32> <GetOdds>b__0(GameLogic.Player.Items.Production.ItemOdds odds)
+
+Disassembly:
+	0x036211D0 MOV X21, X0
+	0x036211D4 LDRH W9, [X8 + 0x12E]
+	0x036211D8 LDR X10, [X10 + 0x958]
+	0x036211DC LDR X1, [X10]
+	0x036211E0 CBZ X9, 0x3621204
+	0x036211E4 LDR X10, [X8 + 0xB0]
+	0x036211E8 ADD X10, X10, 0x8
+	0x036211EC LDUR X11, [X10 - 0x8]
+	0x036211F0 CMP X11, X1
+	0x036211F4 B.EQ 0x3621214
+	0x036211F8 SUBS X9, X9, 0x1
+	0x036211FC ADD X10, X10, 0x10
+	0x03621200 B.NE 0x36211EC
+	0x03621204 MOV X0, X27
+	0x03621208 MOVZ W2, 0x8
+	0x0362120C BL 0x23D527C
+	0x03621210 B 0x3621224
+	0x03621214 LDR W9, [X10]
+	0x03621218 ADD W9, W9, 0x8
+	0x0362121C ADD X8, X8, W9, 0x4, SXTW
+	0x03621220 ADD X0, X8, 0x138
+	0x03621224 LDP X8, X1, [X0]
+	0x03621228 MOV X0, X27
+	0x0362122C BLR X8
+	0x03621230 MOV X4, X0
+	0x03621234 MOV X0, X19
+	0x03621238 MOV X1, X23
+	0x0362123C MOV X2, X22
+	0x03621240 MOV X3, X21
+	0x03621244 MOV X5, X24
+	0x03621248 MOV X6, X31
+	0x0362124C BL 0x35FF5B8
+	0x03621250 LDR X9, [X20]
+	0x03621254 STR X0, [X31 + 0x68]
+	0x03621258 ADRP X8, 0x20B4000
+	0x0362125C LDRH W10, [X9 + 0x12E]
+
+ISIL:
+	001 Subtract X31, X31, 64
+	002 Move [X31+32], X30
+	003 Move [X31+40], X21
+	004 Move [X31+48], X20
+	005 Move [X31+56], X19
+	006 Move X19, X1
+	007 Move X20, X0
+	008 Move W8, [0x270CCA3]
+	009 Move TEMP, X8
+	010 And TEMP, TEMP, 1
+	011 Compare TEMP, 1
+	012 JumpIfEqual {17}
+	013 Move X0, [0x20D8220]
+	014 Call 0x239F8E4
+	015 Move W8, 1
+	016 Move [X21+3235], W8
+	017 Compare X19, 0
+	018 JumpIfEqual {45}
+	019 Move X0, [X19+16]
+	020 Compare X0, 0
+	021 JumpIfEqual {45}
+	022 Move X8, [X0]
+	023 Move X21, [0x20D8220]
+	024 Move X1, [X20+16]
+	025 Move X9, [X8+456]
+	026 Move X2, [X8+464]
+	027 NotImplemented "Instruction BLR not yet implemented."
+	028 Move W8, [X19+24]
+	029 Move X3, [X21]
+	030 Move X1, X0
+	031 Add X0, X31, 8
+	032 Add X2, X31, 28
+	033 Move [X31+8], X31
+	034 Move [X31+16], X31
+	035 Move [X31+28], W8
+	036 Call 0x2853678, X0, X1, X2
+	037 Move X0, [X31+8]
+	038 Move X1, [X31+16]
+	039 Move X20, [X31+48]
+	040 Move X19, [X31+56]
+	041 Move X30, [X31+32]
+	042 Move X21, [X31+40]
+	043 Add X31, X31, 64
+	044 Return X0
+	045 Call 0x239FB90
+

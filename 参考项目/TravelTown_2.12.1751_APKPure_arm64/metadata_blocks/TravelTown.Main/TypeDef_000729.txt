@@ -1,0 +1,57 @@
+// Namespace: MergeEngine.ECS.Systems.Timing
+public class TimeSystem : TickableSystem<TimeComponent> // TypeDefIndex: 729
+{
+	// Fields
+	[Inject]
+	private IServerTimeService _serverTimeService; // 0x40
+	private TimeComponent _boardTimeComponent; // 0x48
+	[CompilerGenerated]
+	private static readonly double <TimeMultiplier>k__BackingField; // 0x0
+
+	// Properties
+	private TimeComponent BoardTimeComponent { get; }
+	private DateTime ServerDateTime { get; }
+	public double TotalSecondsNow { get; }
+	public DateTime CurrentDateTime { get; }
+	public double DeltaTime { get; }
+	public static double TimeMultiplier { get; }
+	public override SystemPriorities Priority { get; }
+	public double DeltaTimeToProcess { get; }
+
+	// Methods
+
+	// RVA: 0x63B75A0 Offset: 0x63B35A0 VA: 0x63B75A0
+	private TimeComponent get_BoardTimeComponent() { }
+
+	// RVA: 0x63B7634 Offset: 0x63B3634 VA: 0x63B7634
+	private DateTime get_ServerDateTime() { }
+
+	// RVA: 0x63B4C18 Offset: 0x63B0C18 VA: 0x63B4C18
+	public double get_TotalSecondsNow() { }
+
+	// RVA: 0x63AD3BC Offset: 0x63A93BC VA: 0x63AD3BC
+	public DateTime get_CurrentDateTime() { }
+
+	// RVA: 0x63AD3A4 Offset: 0x63A93A4 VA: 0x63AD3A4
+	public double get_DeltaTime() { }
+
+	[CompilerGenerated]
+	// RVA: 0x63B76D8 Offset: 0x63B36D8 VA: 0x63B76D8
+	public static double get_TimeMultiplier() { }
+
+	// RVA: 0x63B7730 Offset: 0x63B3730 VA: 0x63B7730 Slot: 15
+	public override SystemPriorities get_Priority() { }
+
+	// RVA: 0x63A84BC Offset: 0x63A44BC VA: 0x63A84BC
+	public double get_DeltaTimeToProcess() { }
+
+	// RVA: 0x63B7738 Offset: 0x63B3738 VA: 0x63B7738 Slot: 16
+	protected override void ProcessComponents(ReadOnlyCollection<TimeComponent> components) { }
+
+	// RVA: 0x63B7A68 Offset: 0x63B3A68 VA: 0x63B7A68
+	public void .ctor() { }
+
+	// RVA: 0x63B7AB0 Offset: 0x63B3AB0 VA: 0x63B7AB0
+	private static void .cctor() { }
+}
+

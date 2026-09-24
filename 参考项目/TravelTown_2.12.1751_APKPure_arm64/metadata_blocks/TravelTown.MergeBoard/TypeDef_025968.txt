@@ -1,0 +1,79 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class ItemUnboxedResult // TypeDefIndex: 25968
+{
+	// Fields
+	[CompilerGenerated]
+	private Entity <Entity>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private int <Position>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private string <Reason>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private string <MergedItemId1>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private string <MergedItemId2>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private int <InteractionPosition>k__BackingField; // 0x38
+
+	// Properties
+	public Entity Entity { get; set; }
+	public int Position { get; set; }
+	public string Reason { get; set; }
+	public string MergedItemId1 { get; set; }
+	public string MergedItemId2 { get; set; }
+	public int InteractionPosition { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9ABB0 Offset: 0x6A96BB0 VA: 0x6A9ABB0
+	public Entity get_Entity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9ABB8 Offset: 0x6A96BB8 VA: 0x6A9ABB8
+	public void set_Entity(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9ABC0 Offset: 0x6A96BC0 VA: 0x6A9ABC0
+	public int get_Position() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9ABC8 Offset: 0x6A96BC8 VA: 0x6A9ABC8
+	public void set_Position(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9ABD0 Offset: 0x6A96BD0 VA: 0x6A9ABD0
+	public string get_Reason() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9ABD8 Offset: 0x6A96BD8 VA: 0x6A9ABD8
+	public void set_Reason(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9ABE0 Offset: 0x6A96BE0 VA: 0x6A9ABE0
+	public string get_MergedItemId1() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9ABE8 Offset: 0x6A96BE8 VA: 0x6A9ABE8
+	public void set_MergedItemId1(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9ABF0 Offset: 0x6A96BF0 VA: 0x6A9ABF0
+	public string get_MergedItemId2() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9ABF8 Offset: 0x6A96BF8 VA: 0x6A9ABF8
+	public void set_MergedItemId2(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AC00 Offset: 0x6A96C00 VA: 0x6A9AC00
+	public int get_InteractionPosition() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AC08 Offset: 0x6A96C08 VA: 0x6A9AC08
+	public void set_InteractionPosition(int value) { }
+
+	// RVA: 0x6A9AC10 Offset: 0x6A96C10 VA: 0x6A9AC10
+	public void .ctor() { }
+}
+

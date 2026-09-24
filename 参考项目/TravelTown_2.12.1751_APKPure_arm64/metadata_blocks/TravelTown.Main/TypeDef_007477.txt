@@ -1,0 +1,26 @@
+// Namespace: Merger.Bubbles.Modifiers
+public class TLOBubbleProbabilityModifier : BubbleDropProbabilityModifierBase // TypeDefIndex: 7477
+{
+	// Fields
+	[InjectComponent]
+	private OrdersComponent _ordersComponent; // 0x20
+
+	// Properties
+	public override bool IsEnabled { get; }
+	public override string AnalyticsString { get; }
+
+	// Methods
+
+	// RVA: 0x65818D0 Offset: 0x657D8D0 VA: 0x65818D0 Slot: 12
+	public override bool get_IsEnabled() { }
+
+	// RVA: 0x6581918 Offset: 0x657D918 VA: 0x6581918 Slot: 13
+	public override string get_AnalyticsString() { }
+
+	// RVA: 0x6581970 Offset: 0x657D970 VA: 0x6581970 Slot: 15
+	public override void TryModifyProbability(ref float probability, IMergeItem mergeItem, SmarterBubblesCheatData cheatData) { }
+
+	// RVA: 0x6581FE8 Offset: 0x657DFE8 VA: 0x6581FE8
+	public void .ctor() { }
+}
+

@@ -1,0 +1,79 @@
+// Namespace: Merger.MergeBoardSellItemCapability.Data.TickResultArgs
+public class ItemUndoSellResult // TypeDefIndex: 33604
+{
+	// Fields
+	[CompilerGenerated]
+	private Entity <Entity>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private string <EntityId>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private string <ItemId>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private int <TargetPosition>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private int <Amount>k__BackingField; // 0x2C
+	[CompilerGenerated]
+	private PlayerResourceEnum <Resource>k__BackingField; // 0x30
+
+	// Properties
+	public Entity Entity { get; set; }
+	public string EntityId { get; set; }
+	public string ItemId { get; set; }
+	public int TargetPosition { get; set; }
+	public int Amount { get; set; }
+	public PlayerResourceEnum Resource { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A6138C Offset: 0x6A5D38C VA: 0x6A6138C
+	public Entity get_Entity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A61394 Offset: 0x6A5D394 VA: 0x6A61394
+	public void set_Entity(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A6139C Offset: 0x6A5D39C VA: 0x6A6139C
+	public string get_EntityId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A613A4 Offset: 0x6A5D3A4 VA: 0x6A613A4
+	public void set_EntityId(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A613AC Offset: 0x6A5D3AC VA: 0x6A613AC
+	public string get_ItemId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A613B4 Offset: 0x6A5D3B4 VA: 0x6A613B4
+	public void set_ItemId(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A613BC Offset: 0x6A5D3BC VA: 0x6A613BC
+	public int get_TargetPosition() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A613C4 Offset: 0x6A5D3C4 VA: 0x6A613C4
+	public void set_TargetPosition(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A613CC Offset: 0x6A5D3CC VA: 0x6A613CC
+	public int get_Amount() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A613D4 Offset: 0x6A5D3D4 VA: 0x6A613D4
+	public void set_Amount(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A613DC Offset: 0x6A5D3DC VA: 0x6A613DC
+	public PlayerResourceEnum get_Resource() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A613E4 Offset: 0x6A5D3E4 VA: 0x6A613E4
+	public void set_Resource(PlayerResourceEnum value) { }
+
+	// RVA: 0x6A60420 Offset: 0x6A5C420 VA: 0x6A60420
+	public void .ctor() { }
+}
+

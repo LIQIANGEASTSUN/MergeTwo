@@ -1,0 +1,46 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class ExpendableItemRemovedResult : IExpendableResult // TypeDefIndex: 25944
+{
+	// Fields
+	[CompilerGenerated]
+	private Entity <Entity>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private int <Position>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private string <Reason>k__BackingField; // 0x20
+
+	// Properties
+	public Entity Entity { get; set; }
+	public int Position { get; set; }
+	public string Reason { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A37C Offset: 0x6A9637C VA: 0x6A9A37C Slot: 4
+	public Entity get_Entity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A384 Offset: 0x6A96384 VA: 0x6A9A384 Slot: 5
+	public void set_Entity(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A38C Offset: 0x6A9638C VA: 0x6A9A38C Slot: 6
+	public int get_Position() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A394 Offset: 0x6A96394 VA: 0x6A9A394 Slot: 7
+	public void set_Position(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A39C Offset: 0x6A9639C VA: 0x6A9A39C Slot: 8
+	public string get_Reason() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A3A4 Offset: 0x6A963A4 VA: 0x6A9A3A4 Slot: 9
+	public void set_Reason(string value) { }
+
+	// RVA: 0x6A9A3AC Offset: 0x6A963AC VA: 0x6A9A3AC
+	public void .ctor() { }
+}
+

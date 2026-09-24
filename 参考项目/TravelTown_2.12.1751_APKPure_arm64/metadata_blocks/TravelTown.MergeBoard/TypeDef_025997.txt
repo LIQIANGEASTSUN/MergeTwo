@@ -1,0 +1,146 @@
+// Namespace: Merger.MergeBoard.Components
+public struct ExpendableComponent : IComponent // TypeDefIndex: 25997
+{
+	// Fields
+	[CompilerGenerated]
+	private int <Uses>k__BackingField; // 0x0
+	[CompilerGenerated]
+	private int <MaxUses>k__BackingField; // 0x4
+	[CompilerGenerated]
+	private int <NumItemsToSpawn>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private bool <RequireAllItemsToSpawn>k__BackingField; // 0xC
+	[CompilerGenerated]
+	private bool <SpawnOnEachInteraction>k__BackingField; // 0xD
+	[CompilerGenerated]
+	private bool <IsTransformationByReason>k__BackingField; // 0xE
+	[CompilerGenerated]
+	private List<WeightedItemSpawnable> <Transforms>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private List<EmptiableWeightedItemSpawnable> <SpawnOnExpendedItems>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private bool <SpawnParticles>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private SpawnParticleType <SpawnParticleType>k__BackingField; // 0x24
+	[CompilerGenerated]
+	private ProducerTimerConfig <ProducerTimer>k__BackingField; // 0x28
+
+	// Properties
+	public int Uses { get; set; }
+	public int MaxUses { get; set; }
+	public int NumItemsToSpawn { get; set; }
+	public bool RequireAllItemsToSpawn { get; set; }
+	public bool SpawnOnEachInteraction { get; set; }
+	public bool IsTransformationByReason { get; set; }
+	public List<WeightedItemSpawnable> Transforms { get; set; }
+	public List<EmptiableWeightedItemSpawnable> SpawnOnExpendedItems { get; set; }
+	public bool SpawnParticles { get; set; }
+	public SpawnParticleType SpawnParticleType { get; set; }
+	public ProducerTimerConfig ProducerTimer { get; set; }
+	public bool HasTimer { get; }
+
+	// Methods
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9BD84 Offset: 0x6A97D84 VA: 0x6A9BD84
+	public int get_Uses() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BD8C Offset: 0x6A97D8C VA: 0x6A9BD8C
+	public void set_Uses(int value) { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9BD94 Offset: 0x6A97D94 VA: 0x6A9BD94
+	public int get_MaxUses() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BD9C Offset: 0x6A97D9C VA: 0x6A9BD9C
+	public void set_MaxUses(int value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9BDA4 Offset: 0x6A97DA4 VA: 0x6A9BDA4
+	public int get_NumItemsToSpawn() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BDAC Offset: 0x6A97DAC VA: 0x6A9BDAC
+	public void set_NumItemsToSpawn(int value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9BDB4 Offset: 0x6A97DB4 VA: 0x6A9BDB4
+	public bool get_RequireAllItemsToSpawn() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BDBC Offset: 0x6A97DBC VA: 0x6A9BDBC
+	public void set_RequireAllItemsToSpawn(bool value) { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9BDC8 Offset: 0x6A97DC8 VA: 0x6A9BDC8
+	public bool get_SpawnOnEachInteraction() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BDD0 Offset: 0x6A97DD0 VA: 0x6A9BDD0
+	public void set_SpawnOnEachInteraction(bool value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9BDDC Offset: 0x6A97DDC VA: 0x6A9BDDC
+	public bool get_IsTransformationByReason() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BDE4 Offset: 0x6A97DE4 VA: 0x6A9BDE4
+	public void set_IsTransformationByReason(bool value) { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9BDF0 Offset: 0x6A97DF0 VA: 0x6A9BDF0
+	public List<WeightedItemSpawnable> get_Transforms() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BDF8 Offset: 0x6A97DF8 VA: 0x6A9BDF8
+	public void set_Transforms(List<WeightedItemSpawnable> value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9BE00 Offset: 0x6A97E00 VA: 0x6A9BE00
+	public List<EmptiableWeightedItemSpawnable> get_SpawnOnExpendedItems() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BE08 Offset: 0x6A97E08 VA: 0x6A9BE08
+	public void set_SpawnOnExpendedItems(List<EmptiableWeightedItemSpawnable> value) { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9BE10 Offset: 0x6A97E10 VA: 0x6A9BE10
+	public bool get_SpawnParticles() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BE18 Offset: 0x6A97E18 VA: 0x6A9BE18
+	public void set_SpawnParticles(bool value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9BE24 Offset: 0x6A97E24 VA: 0x6A9BE24
+	public SpawnParticleType get_SpawnParticleType() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BE2C Offset: 0x6A97E2C VA: 0x6A9BE2C
+	public void set_SpawnParticleType(SpawnParticleType value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9BE34 Offset: 0x6A97E34 VA: 0x6A9BE34
+	public ProducerTimerConfig get_ProducerTimer() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9BE3C Offset: 0x6A97E3C VA: 0x6A9BE3C
+	public void set_ProducerTimer(ProducerTimerConfig value) { }
+
+	// RVA: 0x6A972F4 Offset: 0x6A932F4 VA: 0x6A972F4
+	public bool get_HasTimer() { }
+}
+

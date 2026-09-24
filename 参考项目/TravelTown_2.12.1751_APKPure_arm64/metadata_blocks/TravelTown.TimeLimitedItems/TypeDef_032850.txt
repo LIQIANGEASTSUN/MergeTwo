@@ -1,0 +1,24 @@
+// Namespace: Merger.TimeLimitedItems.Handlers
+public class TimeLimitedItemsDestroyOperationsBuilder : ITimeLimitedItemsDestroyOperationsBuilder // TypeDefIndex: 32850
+{
+	// Fields
+	[Inject]
+	private IBoardOperationActionsBuilder _boardOperationActionsBuilder; // 0x10
+	[Inject]
+	private IMergeBoardOperationTrackingService _operationTrackingService; // 0x18
+
+	// Methods
+
+	// RVA: 0x6B4C72C Offset: 0x6B4872C VA: 0x6B4C72C Slot: 4
+	public OperationNotificationData[] Build(List<Entity> entitiesToDestroy, List<QueuedItem> queuedItemsToDestroy) { }
+
+	// RVA: 0x6B4C9A8 Offset: 0x6B489A8 VA: 0x6B4C9A8
+	private List<MergeBoardItemNotificationData> BuildBoardItemNotificationData(List<Entity> entities) { }
+
+	// RVA: 0x6B4CC00 Offset: 0x6B48C00 VA: 0x6B4CC00
+	private List<MergeBoardItemNotificationData> BuildQueueItemNotificationData(List<QueuedItem> queuedItems) { }
+
+	// RVA: 0x6B4CD1C Offset: 0x6B48D1C VA: 0x6B4CD1C
+	public void .ctor() { }
+}
+

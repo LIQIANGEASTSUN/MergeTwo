@@ -1,0 +1,4 @@
+// Namespace: 
+public struct BaseMiniBoardProgressEvent.LoadNewBoard : IEvent // TypeDefIndex: 1073
+{}
+

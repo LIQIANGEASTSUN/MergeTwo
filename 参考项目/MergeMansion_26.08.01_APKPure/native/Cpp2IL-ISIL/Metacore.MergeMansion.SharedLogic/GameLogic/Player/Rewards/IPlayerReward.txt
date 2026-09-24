@@ -1,0 +1,58 @@
+Type: GameLogic.Player.Rewards.IPlayerReward
+
+Method: CurrencySource get_Source()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_ShouldShowInfoButton()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void Consume(GameLogic.Player.IPlayer player, GameLogic.Player.AnalyticsContext analyticsContext, GameLogic.Player.Rewards.IRewardContext rewardContext)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.String GetAmountString(System.Nullable`1<System.Int32> value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.String GetAmountString(System.Nullable`1<System.Int32> value, System.Boolean isPlusSigned)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.String Name(GameLogic.Player.IPlayer player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.String TypeString()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: CurrencySource GetCurrencySource(GameLogic.Player.Rewards.IRewardContext rewardContext)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

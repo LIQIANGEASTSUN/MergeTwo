@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class CombiningUtil.<>c__DisplayClass2_0 // TypeDefIndex: 601
+{
+	// Fields
+	public IdComponent idComponent; // 0x10
+	public Func<MergeItemWeakReference, bool> <>9__0; // 0x18
+
+	// Methods
+
+	// RVA: 0x6270194 Offset: 0x626C194 VA: 0x6270194
+	public void .ctor() { }
+
+	// RVA: 0x62709C0 Offset: 0x626C9C0 VA: 0x62709C0
+	internal bool <TryFindSuitableCombination>b__0(MergeItemWeakReference i) { }
+}
+

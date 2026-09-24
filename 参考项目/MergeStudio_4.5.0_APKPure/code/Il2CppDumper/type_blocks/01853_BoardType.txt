@@ -1,0 +1,9 @@
+// Namespace: MergePuzzle
+public enum BoardType // TypeDefIndex: 1853
+{
+	// Fields
+	public int value__; // 0x0
+	public const BoardType DEFAULT = 0;
+	public const BoardType EVENT = 1;
+}
+

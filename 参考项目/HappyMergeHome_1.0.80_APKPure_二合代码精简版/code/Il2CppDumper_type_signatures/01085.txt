@@ -1,0 +1,75 @@
+// Namespace: 
+[Serializable]
+public class SummerWatermelonElevenProductConfig : TableBase // TypeDefIndex: 1085
+{
+	// Fields
+	[CompilerGenerated]
+	private int <Id>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private int <ItemId>k__BackingField; // 0xC
+	[CompilerGenerated]
+	private List<int> <OutPut>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private List<int> <Weight>k__BackingField; // 0x14
+	[CompilerGenerated]
+	private int <MaxWeight>k__BackingField; // 0x18
+
+	// Properties
+	public int Id { get; set; }
+	public int ItemId { get; set; }
+	public List<int> OutPut { get; set; }
+	public List<int> Weight { get; set; }
+	public int MaxWeight { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x1ED3450 Offset: 0x1ED3450 VA: 0x1ED3450
+	public int get_Id() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED3458 Offset: 0x1ED3458 VA: 0x1ED3458
+	public void set_Id(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED3460 Offset: 0x1ED3460 VA: 0x1ED3460
+	public int get_ItemId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED3468 Offset: 0x1ED3468 VA: 0x1ED3468
+	public void set_ItemId(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED3470 Offset: 0x1ED3470 VA: 0x1ED3470
+	public List<int> get_OutPut() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED3478 Offset: 0x1ED3478 VA: 0x1ED3478
+	public void set_OutPut(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED3480 Offset: 0x1ED3480 VA: 0x1ED3480
+	public List<int> get_Weight() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED3488 Offset: 0x1ED3488 VA: 0x1ED3488
+	public void set_Weight(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED3490 Offset: 0x1ED3490 VA: 0x1ED3490
+	public int get_MaxWeight() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED3498 Offset: 0x1ED3498 VA: 0x1ED3498
+	public void set_MaxWeight(int value) { }
+
+	// RVA: 0x1ED34A0 Offset: 0x1ED34A0 VA: 0x1ED34A0 Slot: 4
+	public override int GetID() { }
+
+	// RVA: 0x1ED34F4 Offset: 0x1ED34F4 VA: 0x1ED34F4
+	public void .ctor() { }
+
+	// RVA: 0x1ED34FC Offset: 0x1ED34FC VA: 0x1ED34FC
+	public int <>iFixBaseProxy_GetID() { }
+}
+

@@ -1,0 +1,133 @@
+// Namespace: ActivityLocal.NewbieRoom.Model
+public class NewbieRoomModel : Manager<NewbieRoomModel> // TypeDefIndex: 3595
+{
+	// Fields
+	public const int BOARD_WIDTH = 4;
+	public const int BOARD_HEIGHT = 4;
+	public const int LINE_ID = 22206;
+	private Dictionary<int, TableMergeItem> _mergeItemDictionary; // 0x10
+	public int UnSetItemsCount; // 0x14
+
+	// Properties
+	public TableMergeLine MergeLineConfig { get; }
+	public Dictionary<int, TableMergeItem> MergeItemDictionary { get; }
+	public StorageList<int> UnSetItems { get; }
+	public StorageNewbieRoom StorageNewbieRoom { get; }
+
+	// Methods
+
+	// RVA: 0x2EA84A0 Offset: 0x2EA84A0 VA: 0x2EA84A0
+	public NewbieRoomNode GetCurrentNewbieRoomNode() { }
+
+	// RVA: 0x2EACC6C Offset: 0x2EACC6C VA: 0x2EACC6C
+	public List<NewbieRoomTask> GetNewbieRoomTaskConfigList() { }
+
+	// RVA: 0x2EACD44 Offset: 0x2EACD44 VA: 0x2EACD44
+	public List<NewbieRoomConfig> GetNewbieRoomConfigList() { }
+
+	// RVA: 0x2EACE1C Offset: 0x2EACE1C VA: 0x2EACE1C
+	public List<NewbieRoomReawrd> GetNewbieRoomRewardConfigList() { }
+
+	// RVA: 0x2EACEF4 Offset: 0x2EACEF4 VA: 0x2EACEF4
+	public NewbieRoomReawrd GetNewbieRoomRewardConfig(int id) { }
+
+	// RVA: 0x2EA5B50 Offset: 0x2EA5B50 VA: 0x2EA5B50
+	public NewbieRoomConfig GetNewbieRoomConfig() { }
+
+	// RVA: 0x2EA5D94 Offset: 0x2EA5D94 VA: 0x2EA5D94
+	public NewbieRoomNode GetNewbieRoomNode(int id) { }
+
+	// RVA: 0x2EAD0BC Offset: 0x2EAD0BC VA: 0x2EAD0BC
+	public TableMergeLine get_MergeLineConfig() { }
+
+	// RVA: 0x2EAD1A0 Offset: 0x2EAD1A0 VA: 0x2EAD1A0
+	public Dictionary<int, TableMergeItem> get_MergeItemDictionary() { }
+
+	// RVA: 0x2EAD498 Offset: 0x2EAD498 VA: 0x2EAD498
+	public TableMergeItem GetMergeItemConfig(int level) { }
+
+	// RVA: 0x2EA41A4 Offset: 0x2EA41A4 VA: 0x2EA41A4
+	public bool IsOpenedHomeEntry() { }
+
+	// RVA: 0x2EA45D4 Offset: 0x2EA45D4 VA: 0x2EA45D4
+	public bool IsOpened() { }
+
+	// RVA: 0x2EAD7E4 Offset: 0x2EAD7E4 VA: 0x2EAD7E4
+	public void InitFirstRoom() { }
+
+	// RVA: 0x2EAD980 Offset: 0x2EAD980 VA: 0x2EAD980
+	public StorageList<int> get_UnSetItems() { }
+
+	// RVA: 0x2EAC9C0 Offset: 0x2EAC9C0 VA: 0x2EAC9C0
+	public StorageNewbieRoom get_StorageNewbieRoom() { }
+
+	// RVA: 0x2EA60B0 Offset: 0x2EA60B0 VA: 0x2EA60B0
+	public bool IsOwnNode(int nodeId) { }
+
+	// RVA: 0x2EAD554 Offset: 0x2EAD554 VA: 0x2EAD554
+	public long GetLeftTime() { }
+
+	// RVA: 0x2EAD9EC Offset: 0x2EAD9EC VA: 0x2EAD9EC
+	public string GetLeftTimeString() { }
+
+	// RVA: 0x2EADAB0 Offset: 0x2EADAB0 VA: 0x2EADAB0
+	public void AddKnifeCount(int count) { }
+
+	// RVA: 0x2EA6D70 Offset: 0x2EA6D70 VA: 0x2EA6D70
+	public int GetKnifeCount() { }
+
+	// RVA: 0x2EA9FFC Offset: 0x2EA9FFC VA: 0x2EA9FFC
+	public void BuyNode(NewbieRoomNode _config) { }
+
+	// RVA: 0x2EA85F4 Offset: 0x2EA85F4 VA: 0x2EA85F4
+	public void SetOpeningBox(int nodeId) { }
+
+	// RVA: 0x2EA6DDC Offset: 0x2EA6DDC VA: 0x2EA6DDC
+	public int GetOpeningBox() { }
+
+	// RVA: 0x2EAC4C4 Offset: 0x2EAC4C4 VA: 0x2EAC4C4
+	public bool IsBoxClaimed(int id) { }
+
+	// RVA: 0x2EAA200 Offset: 0x2EAA200 VA: 0x2EAA200
+	public NewbieRoomReawrd GetCanClaim() { }
+
+	// RVA: 0x2EAC380 Offset: 0x2EAC380 VA: 0x2EAC380
+	public bool IsCanClaim(int id) { }
+
+	// RVA: 0x2EAB11C Offset: 0x2EAB11C VA: 0x2EAB11C
+	public void ClaimBox(int id, Action action) { }
+
+	// RVA: 0x2EAA4C0 Offset: 0x2EAA4C0 VA: 0x2EAA4C0
+	public void AddBoxReward(int id) { }
+
+	// RVA: 0x2EADB34 Offset: 0x2EADB34 VA: 0x2EADB34
+	public float GetSliderValue() { }
+
+	// RVA: 0x2EA46D0 Offset: 0x2EA46D0 VA: 0x2EA46D0
+	public bool IsShowStart() { }
+
+	// RVA: 0x2EADE80 Offset: 0x2EADE80 VA: 0x2EADE80
+	public void RecordShowStart() { }
+
+	// RVA: 0x2EADEF8 Offset: 0x2EADEF8 VA: 0x2EADEF8
+	public void OnProduct(int index, int id, MergeBoard board, int doubleEnergyTimes) { }
+
+	// RVA: 0x2EAE468 Offset: 0x2EAE468 VA: 0x2EAE468
+	private void FlyKnife(int count, Vector3 scrPos) { }
+
+	// RVA: 0x2EAE34C Offset: 0x2EAE34C VA: 0x2EAE34C
+	public NewbieRoomTask GetCurrentTaskConfig() { }
+
+	// RVA: 0x2EAE668 Offset: 0x2EAE668 VA: 0x2EAE668
+	public void AddExp(int count) { }
+
+	// RVA: 0x2EAEA58 Offset: 0x2EAEA58 VA: 0x2EAEA58
+	public int GetExp() { }
+
+	// RVA: 0x2EA6C88 Offset: 0x2EA6C88 VA: 0x2EA6C88
+	public bool IsFinishAllNode() { }
+
+	// RVA: 0x2EAEAC4 Offset: 0x2EAEAC4 VA: 0x2EAEAC4
+	public void .ctor() { }
+}
+

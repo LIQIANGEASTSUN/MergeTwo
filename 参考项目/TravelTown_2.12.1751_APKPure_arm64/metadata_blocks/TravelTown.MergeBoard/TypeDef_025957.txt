@@ -1,0 +1,27 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class ItemCreatedForFirstTime // TypeDefIndex: 25957
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly IMergeItem <Item>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly Entity <Entity>k__BackingField; // 0x18
+
+	// Properties
+	public IMergeItem Item { get; }
+	public Entity Entity { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A7B4 Offset: 0x6A967B4 VA: 0x6A9A7B4
+	public IMergeItem get_Item() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A7BC Offset: 0x6A967BC VA: 0x6A9A7BC
+	public Entity get_Entity() { }
+
+	// RVA: 0x6A9A7C4 Offset: 0x6A967C4 VA: 0x6A9A7C4
+	public void .ctor(IMergeItem item, Entity entity) { }
+}
+

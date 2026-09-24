@@ -1,0 +1,45 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class Reward.<>c__99<T> // TypeDefIndex: 1320
+{
+	// Fields
+	public static readonly Reward.<>c__99<T> <>9; // 0x0
+	public static Func<T, string> <>9__99_0; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	private static void .cctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F32294 Offset: 0x3F2E294 VA: 0x3F32294
+	|-Reward.<>c__99<object>..cctor
+	|
+	|-RVA: 0x3F323F4 Offset: 0x3F2E3F4 VA: 0x3F323F4
+	|-Reward.<>c__99<__Il2CppFullySharedGenericType>..cctor
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F32350 Offset: 0x3F2E350 VA: 0x3F32350
+	|-Reward.<>c__99<object>..ctor
+	|
+	|-RVA: 0x3F324E8 Offset: 0x3F2E4E8 VA: 0x3F324E8
+	|-Reward.<>c__99<__Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal string <CanAggregate>b__99_0(T item) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F32358 Offset: 0x3F2E358 VA: 0x3F32358
+	|-Reward.<>c__99<object>.<CanAggregate>b__99_0
+	|
+	|-RVA: 0x3F324F0 Offset: 0x3F2E4F0 VA: 0x3F324F0
+	|-Reward.<>c__99<__Il2CppFullySharedGenericType>.<CanAggregate>b__99_0
+	*/
+}
+

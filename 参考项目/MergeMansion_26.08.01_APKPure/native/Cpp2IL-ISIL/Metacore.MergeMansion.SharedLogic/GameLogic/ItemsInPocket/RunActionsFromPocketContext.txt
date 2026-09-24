@@ -1,0 +1,40 @@
+Type: GameLogic.ItemsInPocket.RunActionsFromPocketContext
+
+Method: System.Boolean get_LogEnabled()
+
+Disassembly:
+	0x033BBDA0 LDR X1, [X8]
+	0x033BBDA4 MOV X0, X27
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void .ctor(System.Boolean logEnabled)
+
+Disassembly:
+	0x033BBDA8 BL 0x25E8394
+	0x033BBDAC LDR X8, [X31 + 0x30]
+	0x033BBDB0 CBZ X8, 0x33BC860
+	0x033BBDB4 LDR X8, [X8]
+	0x033BBDB8 ADRP X10, 0x2319000
+	0x033BBDBC MOV X27, X0
+	0x033BBDC0 LDRH W9, [X8 + 0x12E]
+	0x033BBDC4 LDR X10, [X10 + 0xD50]
+	0x033BBDC8 LDR X1, [X10]
+	0x033BBDCC CBZ X9, 0x33BBDF0
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move W19, W1
+	005 Move X1, X31
+	006 Move X20, X0
+	007 Call Object..ctor, X0
+	008 Move [X20+16], W19
+	009 Move X20, [X31+16]
+	010 Move X19, [X31+24]
+	011 Move X30, [X31+32]
+	012 Return 
+

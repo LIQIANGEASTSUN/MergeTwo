@@ -1,0 +1,19 @@
+// Namespace: MergeEngine.ECS.Components.Items
+[Serializable]
+public class SerializedIdComponent // TypeDefIndex: 1064
+{
+	// Fields
+	public string Id; // 0x10
+	public string UUId; // 0x18
+	public int Origin; // 0x20
+	public long CreatedTimestamp; // 0x28
+	public long MergedTimestamp; // 0x30
+	public long QueueAddedTimestamp; // 0x38
+	public int SerializationVersion; // 0x40
+
+	// Methods
+
+	// RVA: 0x68FC890 Offset: 0x68F8890 VA: 0x68FC890
+	public void .ctor() { }
+}
+

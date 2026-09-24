@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardIdleHintSystem.<>c__DisplayClass54_0 // TypeDefIndex: 892
+{
+	// Fields
+	public string uniqueId; // 0x10
+
+	// Methods
+
+	// RVA: 0x665AE00 Offset: 0x6656E00 VA: 0x665AE00
+	public void .ctor() { }
+
+	// RVA: 0x665B404 Offset: 0x6657404 VA: 0x665B404
+	internal bool <GetItemOnBoard>b__0(PositionComponent item) { }
+}
+

@@ -1,0 +1,9 @@
+// Namespace: Merger.Services.Backend.Sync
+public interface ISyncPayloadService // TypeDefIndex: 9845
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract IPromise HandleSyncRequest(BackendSyncEntitiesWrapper backendSyncEntitiesWrapper, bool sendAsCheat);
+}
+

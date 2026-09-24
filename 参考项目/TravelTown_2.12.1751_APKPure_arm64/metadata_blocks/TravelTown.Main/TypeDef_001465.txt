@@ -1,0 +1,15 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class TimeDurationCapability : CapabilityBase // TypeDefIndex: 1465
+{
+	// Fields
+	[TimeDuration]
+	[JsonProperty("duration")]
+	public double Duration; // 0x18
+
+	// Methods
+
+	// RVA: 0x60118E4 Offset: 0x600D8E4 VA: 0x60118E4
+	public void .ctor() { }
+}
+

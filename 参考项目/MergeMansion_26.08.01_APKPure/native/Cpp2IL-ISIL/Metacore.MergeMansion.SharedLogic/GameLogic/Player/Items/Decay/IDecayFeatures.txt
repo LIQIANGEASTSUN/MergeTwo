@@ -1,0 +1,72 @@
+Type: GameLogic.Player.Items.Decay.IDecayFeatures
+
+Method: System.Boolean get_DoesDecay()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Config.Types.MetacoreDuration get_Lifetime()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Production.IItemProducer get_ItemProducer()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Decay.DecayMergeMode get_DecayMergeMode()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_DoesBoosterAccelerateDecay()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Decay.DecayInheritMode get_DecayInheritMode()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_ShowDecayTimer()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_ShowDecayVfx()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Config.Types.MetacoreDuration get_RemainingDurationForDecayVfx()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_NeedsDecayState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

@@ -1,0 +1,8 @@
+// Namespace: 
+public struct BaseMiniBoardEvent.Swap : IEvent // TypeDefIndex: 1038
+{
+	// Fields
+	public MiniBoardItemController Item1; // 0x0
+	public MiniBoardItemController Item2; // 0x4
+}
+

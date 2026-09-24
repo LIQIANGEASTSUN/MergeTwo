@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BucketBubbleDropProbabilityModifier.<>c__DisplayClass14_0 // TypeDefIndex: 7468
+{
+	// Fields
+	public Bucket bucket; // 0x10
+
+	// Methods
+
+	// RVA: 0x657F8DC Offset: 0x657B8DC VA: 0x657F8DC
+	public void .ctor() { }
+
+	// RVA: 0x657FBA0 Offset: 0x657BBA0 VA: 0x657FBA0
+	internal bool <UpdateBuckets>b__0(BubbleData bubble) { }
+}
+

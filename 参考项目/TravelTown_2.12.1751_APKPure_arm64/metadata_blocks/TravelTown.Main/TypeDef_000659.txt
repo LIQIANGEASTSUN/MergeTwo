@@ -1,0 +1,283 @@
+// Namespace: MergeEngine.ECS.Systems
+public class InventorySystem : SystemBase // TypeDefIndex: 659
+{
+	// Fields
+	private InventoryComponent _inventory; // 0x40
+	private ProducerInventoryComponent _producerInventoryComponent; // 0x48
+	private BoardSystem _boardSystem; // 0x50
+	[Inject]
+	private DiContainer _container; // 0x58
+	[Inject]
+	private IMergingConfigurationModel _configurationModel; // 0x60
+	[Inject]
+	private IUserProfileService _userProfileService; // 0x68
+	[Inject]
+	private MetaConfigurationService _metaConfigurationService; // 0x70
+	[InjectSystem]
+	private PlayerLevelSystem _playerLevelSystem; // 0x78
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0x80
+	[Inject]
+	private INotificationDataFactory _notificationDataFactory; // 0x88
+	[InjectSystem]
+	private OperationTrackingSystem _operationTrackingSystem; // 0x90
+	[Inject]
+	private IProducerInventoryConfigurationModel _producerInventoryConfigurationModel; // 0x98
+	[Inject]
+	private IBoosterModel _boosterModel; // 0xA0
+	[Inject]
+	private ILiveOpsEventModel _liveOpsEventModel; // 0xA8
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0xB0
+	[InjectSystem]
+	private BoardInteractionSystem _boardInteractionSystem; // 0xB8
+	[InjectSystem]
+	private UndoSellAbuseSystem _undoSellAbuseSystem; // 0xC0
+	[Inject]
+	private IInventoryModel _inventoryModel; // 0xC8
+	private bool _tutorialDisabled; // 0xD0
+	private List<Tuple<IMergeItem, int>> _configuredUnlocks; // 0xD8
+	private Dictionary<IMergeItem, IMergeItem> _recursiveExpendSlotMapping; // 0xE0
+	private List<ProducerInventoryItem> _backendSlots; // 0xE8
+	private ReadOnlyCollection<IMergeItem> _unlockedProducerSlotItems; // 0xF0
+	public MutableBindableProperty<bool> ShowProducerNotification; // 0xF8
+	private bool _hasTriggeredSeenNotification; // 0x100
+	private InventoryWebSocket _webSocket; // 0x108
+	private List<IMergeItem> _unlockedSlotsSinceLastLevelUp; // 0x110
+	private InventoryItemCountComponent _inventoryItemCountComponent; // 0x118
+	private List<VisualComponent> _removedItems; // 0x120
+
+	// Properties
+	public bool Enabled { get; }
+	public bool ProducerTabEnabled { get; }
+	public ReadOnlyCollection<IMergeItem> UnlockedProducerSlotItems { get; }
+	public ReadOnlyCollection<string> NewProducerSlotItemIds { get; }
+	private IList<InventoryProducerSlotUnlock> ConfiguredSlotUnlocks { get; }
+	private bool HasReachedProducerUnlockLevel { get; }
+	private bool NewInventoryAbilities { get; }
+
+	// Methods
+
+	// RVA: 0x6280B3C Offset: 0x627CB3C VA: 0x6280B3C
+	public bool get_Enabled() { }
+
+	// RVA: 0x6280B5C Offset: 0x627CB5C VA: 0x6280B5C
+	public bool get_ProducerTabEnabled() { }
+
+	// RVA: 0x6280C70 Offset: 0x627CC70 VA: 0x6280C70
+	public ReadOnlyCollection<IMergeItem> get_UnlockedProducerSlotItems() { }
+
+	// RVA: 0x6280C78 Offset: 0x627CC78 VA: 0x6280C78
+	public ReadOnlyCollection<string> get_NewProducerSlotItemIds() { }
+
+	// RVA: 0x6280CD0 Offset: 0x627CCD0 VA: 0x6280CD0
+	private IList<InventoryProducerSlotUnlock> get_ConfiguredSlotUnlocks() { }
+
+	// RVA: 0x6280D70 Offset: 0x627CD70 VA: 0x6280D70
+	private bool get_HasReachedProducerUnlockLevel() { }
+
+	// RVA: 0x6280E58 Offset: 0x627CE58 VA: 0x6280E58
+	private bool get_NewInventoryAbilities() { }
+
+	// RVA: 0x6280FB0 Offset: 0x627CFB0 VA: 0x6280FB0
+	public bool IsItemInInventory(string itemId) { }
+
+	// RVA: 0x6281150 Offset: 0x627D150 VA: 0x6281150
+	public int GetItemCountInInventory(string itemId) { }
+
+	// RVA: 0x62812EC Offset: 0x627D2EC VA: 0x62812EC Slot: 6
+	protected override void InitializeSystem() { }
+
+	// RVA: 0x628176C Offset: 0x627D76C VA: 0x628176C Slot: 7
+	protected override void DisposeSystem() { }
+
+	// RVA: 0x6281B10 Offset: 0x627DB10 VA: 0x6281B10
+	private void UpdateProducerTabEnabled() { }
+
+	// RVA: 0x6281C04 Offset: 0x627DC04 VA: 0x6281C04 Slot: 8
+	protected override void OnGameStarted() { }
+
+	// RVA: 0x6281E0C Offset: 0x627DE0C VA: 0x6281E0C
+	private void OnLevelUp() { }
+
+	// RVA: 0x6281DF4 Offset: 0x627DDF4 VA: 0x6281DF4
+	private void OnGameStateChanged(GameState state) { }
+
+	// RVA: 0x62828C4 Offset: 0x627E8C4 VA: 0x62828C4
+	private void OnBoardTypeChanged(CurrentBoardType value) { }
+
+	// RVA: 0x628261C Offset: 0x627E61C VA: 0x628261C
+	private void TrySendProducerInventoryNotificationSeenTracking() { }
+
+	// RVA: 0x6280B60 Offset: 0x627CB60 VA: 0x6280B60
+	private bool IsProducerTabEnabled() { }
+
+	// RVA: 0x6282418 Offset: 0x627E418 VA: 0x6282418
+	private void UpdateShowInventoryNotification() { }
+
+	// RVA: 0x628292C Offset: 0x627E92C VA: 0x628292C
+	private void SetupUnlockConfiguration() { }
+
+	// RVA: 0x6282CD4 Offset: 0x627ECD4 VA: 0x6282CD4
+	private IList<InventoryProducerSlotUnlock> ValidateSlotUnlockConfig(IList<InventoryProducerSlotUnlock> slotUnlockConfig) { }
+
+	// RVA: 0x62831D0 Offset: 0x627F1D0 VA: 0x62831D0
+	private int CompareSlotUnlockConfigs(InventoryProducerSlotUnlock lhs, InventoryProducerSlotUnlock rhs) { }
+
+	// RVA: 0x6283240 Offset: 0x627F240 VA: 0x6283240
+	private int GetBuildingIndexForProducer(string graphName) { }
+
+	// RVA: 0x6283304 Offset: 0x627F304 VA: 0x6283304
+	private void AttemptItemRemoveFromInventory(TryRemoveInventoryItemSignal signal) { }
+
+	// RVA: 0x6283CA4 Offset: 0x627FCA4 VA: 0x6283CA4
+	private void SlotPurchased() { }
+
+	// RVA: 0x6283D00 Offset: 0x627FD00 VA: 0x6283D00 Slot: 11
+	protected override void EntityCreated(Entity entity) { }
+
+	// RVA: 0x6284290 Offset: 0x6280290 VA: 0x6284290
+	public bool IsFull() { }
+
+	// RVA: 0x6284398 Offset: 0x6280398 VA: 0x6284398
+	public int NumSlots() { }
+
+	// RVA: 0x62843E8 Offset: 0x62803E8 VA: 0x62843E8
+	public int NumProducerSlots() { }
+
+	// RVA: 0x6284188 Offset: 0x6280188 VA: 0x6284188
+	public int NumFreeSlots() { }
+
+	// RVA: 0x6284438 Offset: 0x6280438 VA: 0x6284438
+	public int NumFreeProducerSlots() { }
+
+	// RVA: 0x62828DC Offset: 0x627E8DC VA: 0x62828DC
+	public int NumNewProducerSlots() { }
+
+	// RVA: 0x6284540 Offset: 0x6280540 VA: 0x6284540
+	private int GetFirstAvailableIndex() { }
+
+	// RVA: 0x628459C Offset: 0x628059C VA: 0x628459C
+	public bool TryInsert(PositionComponent positionComponent) { }
+
+	// RVA: 0x62849EC Offset: 0x62809EC VA: 0x62849EC
+	private bool Insert(PositionComponent positionComponent) { }
+
+	// RVA: 0x628537C Offset: 0x628137C VA: 0x628537C
+	private int GetProducerSlotIndex(IMergeItem mergeItem) { }
+
+	// RVA: 0x6285288 Offset: 0x6281288 VA: 0x6285288
+	private InventorySlotType EvaluateSlotType(IMergeItem mergeItem) { }
+
+	// RVA: 0x62856D0 Offset: 0x62816D0 VA: 0x62856D0
+	private void EnableInventory() { }
+
+	// RVA: 0x6283440 Offset: 0x627F440 VA: 0x6283440
+	private void Retrieve(InventorySlotComponent slotComponent) { }
+
+	// RVA: 0x6285D18 Offset: 0x6281D18 VA: 0x6285D18
+	private void SelectAfterRetrieve(PositionComponent positionComponent) { }
+
+	// RVA: 0x6285988 Offset: 0x6281988 VA: 0x6285988
+	private void SetEntityEnterAnimation(Entity entity) { }
+
+	// RVA: 0x62856F8 Offset: 0x62816F8 VA: 0x62856F8
+	private IEnumerable<BaseNotificationData> SortAndCreateNotificationList() { }
+
+	// RVA: 0x6285D7C Offset: 0x6281D7C VA: 0x6285D7C
+	private ItemNotificationData CreateUpdatedItemNotificationData(Entity entity, int index) { }
+
+	// RVA: 0x628542C Offset: 0x628142C VA: 0x628542C
+	private void SendItemAddedToInventoryEvent(IMergeItem mergeItem, int slotIndex, InventorySlotType slotType, Nullable<int> indexOnBoard, Entity entity) { }
+
+	// RVA: 0x6285A60 Offset: 0x6281A60 VA: 0x6285A60
+	private void SendItemRemovedFromInventoryEvent(IMergeItem mergeItem, int slotIndex, InventorySlotType slotType, Nullable<int> indexOnBoard, Entity entity) { }
+
+	// RVA: 0x6285F08 Offset: 0x6281F08 VA: 0x6285F08
+	private Nullable<int> GetStackSizeIfStacking(IMergeItem mergeItem, Entity entity) { }
+
+	// RVA: 0x6285FC0 Offset: 0x6281FC0 VA: 0x6285FC0
+	public void DisableInventoryFromTutorial() { }
+
+	// RVA: 0x6285FCC Offset: 0x6281FCC VA: 0x6285FCC
+	public void EnableInventoryFromTutorial() { }
+
+	// RVA: 0x6285FD4 Offset: 0x6281FD4 VA: 0x6285FD4
+	public void NewProducerSlotsSeen() { }
+
+	// RVA: 0x6286690 Offset: 0x6282690 VA: 0x6286690
+	public bool UnlockedInventorySlotAtLevel() { }
+
+	// RVA: 0x6286B40 Offset: 0x6282B40 VA: 0x6286B40
+	public List<IMergeItem> GetUnlockedSlotsSinceLastLevelup() { }
+
+	// RVA: 0x6286B48 Offset: 0x6282B48 VA: 0x6286B48
+	public void RemoveInventoryItem(InventorySlotComponent slotComponent) { }
+
+	// RVA: 0x6286E48 Offset: 0x6282E48 VA: 0x6286E48
+	public void ReloadProducerInventory(List<ProducerInventoryItem> slots) { }
+
+	// RVA: 0x6281CE4 Offset: 0x627DCE4 VA: 0x6281CE4
+	private void SetupProducerInventory() { }
+
+	// RVA: 0x6286E90 Offset: 0x6282E90 VA: 0x6286E90
+	private void UpdateSlots(List<ProducerInventoryItem> slots) { }
+
+	// RVA: 0x628771C Offset: 0x628371C VA: 0x628771C
+	private List<ProducerInventoryItem> ValidateBackendSlots(List<ProducerInventoryItem> slots) { }
+
+	// RVA: 0x6287AF8 Offset: 0x6283AF8 VA: 0x6287AF8
+	private List<ProducerInventoryItem> SortBackendSlotsToConfig(List<ProducerInventoryItem> slots) { }
+
+	// RVA: 0x6287FE8 Offset: 0x6283FE8 VA: 0x6287FE8
+	private void UpdateMergeItemList(List<ProducerInventoryItem> slots) { }
+
+	// RVA: 0x6288768 Offset: 0x6284768 VA: 0x6288768
+	private string GetSlotId(ProducerInventoryItem slot) { }
+
+	// RVA: 0x6288364 Offset: 0x6284364 VA: 0x6288364
+	private void RecreateRecursiveExpends() { }
+
+	// RVA: 0x62887D4 Offset: 0x62847D4 VA: 0x62887D4
+	private List<IMergeItem> FindCircularExpends(IMergeItem root) { }
+
+	// RVA: 0x6288B08 Offset: 0x6284B08 VA: 0x6288B08
+	private bool RecursivelyExpendsTo(IMergeItem currentItem, ref List<IMergeItem> items, IMergeItem targetItem) { }
+
+	// RVA: 0x6286ECC Offset: 0x6282ECC VA: 0x6286ECC
+	private void UpdateEntitiesToNewMergeItemList() { }
+
+	// RVA: 0x6287498 Offset: 0x6283498 VA: 0x6287498
+	private void TryMoveItemsFromInventoryToProducerInventory() { }
+
+	// RVA: 0x6288F84 Offset: 0x6284F84 VA: 0x6288F84
+	private void TryMoveItemFromInventoryToProducerInventory(IMergeItem mergeItem) { }
+
+	// RVA: 0x6281E90 Offset: 0x627DE90 VA: 0x6281E90
+	private void TryUnlockSlots() { }
+
+	// RVA: 0x62899B8 Offset: 0x62859B8 VA: 0x62899B8
+	private void AddUnlockedSlot(IMergeItem mergeItem) { }
+
+	// RVA: 0x6289F5C Offset: 0x6285F5C VA: 0x6289F5C
+	public static string GetDestinationForItem(Entity entity) { }
+
+	// RVA: 0x628A004 Offset: 0x6286004 VA: 0x628A004
+	private void InventoryClosed(InventoryTransitionOutStartedSignal signal) { }
+
+	// RVA: 0x628A18C Offset: 0x628618C VA: 0x628A18C
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x628A3A0 Offset: 0x62863A0 VA: 0x628A3A0
+	private string <UpdateMergeItemList>b__93_0(ProducerInventoryItem slot) { }
+
+	[CompilerGenerated]
+	// RVA: 0x628A3A4 Offset: 0x62863A4 VA: 0x628A3A4
+	private bool <TryUnlockSlots>b__101_0(Tuple<IMergeItem, int> tuple) { }
+
+	[CompilerGenerated]
+	// RVA: 0x628A420 Offset: 0x6286420 VA: 0x628A420
+	private bool <TryUnlockSlots>b__101_1(Tuple<IMergeItem, int> tuple) { }
+}
+

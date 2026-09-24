@@ -1,0 +1,10 @@
+// Namespace: 
+public struct BoardEvent.PerishableSpawnerSpawn : IEvent // TypeDefIndex: 1805
+{
+	// Fields
+	public ItemController Spawner; // 0x0
+	public BoardItemPerishableSpawner PerishableSpawnerData; // 0x4
+	public Coordinate TargetPosition; // 0x8
+	public int EnergyConsumeAmount; // 0x10
+}
+

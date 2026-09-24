@@ -1,0 +1,60 @@
+// Namespace: Merger.Game.Model
+public interface IResourcesModel // TypeDefIndex: 8420
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract BindableProperty<int> GetDisplayableResource(IRewardType rewardType);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract BindableProperty<int> GetResource(IRewardType rewardType);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract bool ConsumeResource(IRewardType rewardType, int amount, bool delayDisplay, ResourceSource source, Dictionary<string, object> analyticParameters, bool shouldChangeRealValue = False);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void GrantResource(IRewardType rewardType, int amount, bool delayDisplay, ResourceSource source, Dictionary<string, object> analyticParameters, bool shouldChangeRealValue = False);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract bool ConsumeResourceLocal(IRewardType rewardType, int amount);
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract void GrantResourceLocal(IRewardType rewardType, int amount);
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract void RemoveResourceLocalChanges(IRewardType rewardType);
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract void AddPendingResource(IRewardType rewardType, int amount);
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract bool HasResource(IRewardType rewardType);
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract void SetResource(IRewardType rewardType, int value, bool delayDisplay, ResourceSource source);
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public abstract void UpdateResourceDisplayValue(IRewardType rewardType, int pendingAmount, bool isDelayed, ResourceSource source = 0, RewardSource reason, Dictionary<string, object> analyticParameters);
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public abstract void PurchaseResource(ResourcePurchase resource, ResourceSource source, ResourcePurchaseType purchaseType);
+
+	// RVA: -1 Offset: -1 Slot: 12
+	public abstract bool CanAfford(ResourceMultiple resourceMultiple);
+
+	// RVA: -1 Offset: -1 Slot: 13
+	public abstract bool CanAfford(ResourceMultiple[] resourceMultiple);
+
+	// RVA: -1 Offset: -1 Slot: 14
+	public abstract bool CanAfford(string resource, int resourceAmount);
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public abstract BindableProperty<double> GetResourceReplenishLeftSeconds(IRewardType resource);
+
+	// RVA: -1 Offset: -1 Slot: 16
+	public abstract void SetResourceDisplayValue(IRewardType resourceType, int displayValue);
+
+	// RVA: -1 Offset: -1 Slot: 17
+	public abstract float GetProgressPercentage(ResourceMultiple resourceMultiple);
+}
+

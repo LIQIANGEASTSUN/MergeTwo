@@ -1,0 +1,26 @@
+// Namespace: MergeEngine.ECS.Systems.State.Board
+public class BoardInventorySlotsStateSystem<TState> : StateSystemBase<TState> // TypeDefIndex: 768
+{
+	// Fields
+	[InjectSystem]
+	private InventorySystem _inventorySystem; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 13
+	protected override void LoadState(TState boardInventorySlots) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C17F4C Offset: 0x4C13F4C VA: 0x4C17F4C
+	|-BoardInventorySlotsStateSystem<object>.LoadState
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4C1801C Offset: 0x4C1401C VA: 0x4C1801C
+	|-BoardInventorySlotsStateSystem<object>..ctor
+	*/
+}
+

@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeBoardItem.<>c__DisplayClass138_0 // TypeDefIndex: 2755
+{
+	// Fields
+	public Transform target1; // 0x8
+	public Action <>9__0; // 0xC
+
+	// Methods
+
+	// RVA: 0x2C377D4 Offset: 0x2C377D4 VA: 0x2C377D4
+	public void .ctor() { }
+
+	// RVA: 0x2C377DC Offset: 0x2C377DC VA: 0x2C377DC
+	internal void <DoUseItem>b__0() { }
+}
+

@@ -1,0 +1,17 @@
+// Namespace: 
+private struct SummerWatermelonModel.<>c.<<UseMergeItem>b__87_0>d : IAsyncStateMachine // TypeDefIndex: 4738
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncVoidMethodBuilder <>t__builder; // 0x4
+
+	// Methods
+
+	// RVA: 0x32A6498 Offset: 0x32A6498 VA: 0x32A6498 Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x32A64A8 Offset: 0x32A64A8 VA: 0x32A64A8 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

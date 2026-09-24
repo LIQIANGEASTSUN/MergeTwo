@@ -1,0 +1,213 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "BoardData", menuName = "Scriptable/Board/BoardData", order = 2)]
+public class BoardData : ScriptableObject, IBoardData // TypeDefIndex: 1858
+{
+	// Fields
+	public BoardConfigurableUIData BoardConfigurableUIData; // 0xC
+	public EventData EventData; // 0x10
+	public float TaskCoinIncrementDelay; // 0x14
+	public float TaskGemIncrementDelay; // 0x18
+	public float LevelUpCollectableMoveExtraDelay; // 0x1C
+	public int RowCount; // 0x20
+	public int ColumnCount; // 0x24
+	public int InitInventorySize; // 0x28
+	public int InitGemCount; // 0x2C
+	public int InitCoinCount; // 0x30
+	public int InitUserEnergy; // 0x34
+	public int MaxUserEnergy; // 0x38
+	public int TotalEnergyFillTime; // 0x3C
+	public int MaxChargingChestCount; // 0x40
+	public int MaxActiveTaskCount; // 0x44
+	public int TaskRewardCount; // 0x48
+	[ShowAssetPreview(40, 40)]
+	public Sprite LockItemBackground; // 0x4C
+	[ShowAssetPreview(40, 40)]
+	public Sprite TreasureBoxLockNotif; // 0x50
+	[ShowAssetPreview(40, 40)]
+	public Sprite TreasureBoxExclamation; // 0x54
+	[ShowAssetPreview(40, 40)]
+	public Sprite SpawnerEnergySprite; // 0x58
+	public BoardItemCollectable CoinCollectable; // 0x5C
+	public BoardItemCollectable GemCollectable; // 0x60
+	public BoardItemCollectable XPCollectable; // 0x64
+	public List<BoosterItemData> BoosterItemList; // 0x68
+	public List<int> DiscoveryBoxIdList; // 0x6C
+	public SerializableDictionary<int, BoardItemSetData> BoardItemDictionary; // 0x70
+	public SerializableDictionary<int, BoardItemSetData> BoardItemDictionaryVariant; // 0x74
+	public SerializableDictionary<int, long> UnlimitedEnergyDurationByLevel; // 0x78
+	public List<BoardPositionData> InitialPositionData; // 0x7C
+	public Vector3 ItemDefaultScale; // 0x80
+	public Vector3 ItemJellyScale; // 0x8C
+	public int MinimumBubbleGameplayLevel; // 0x98
+	public int MinimumExtraItemGameplayLevel; // 0x9C
+	public int InventoryCellCount; // 0xA0
+	public bool ShowBoosters; // 0xA4
+	public bool ShowInventory; // 0xA5
+	public bool ShowRewardsController; // 0xA6
+	public float AnimationTierInterval; // 0xA8
+	public float AnimationSortingInterval; // 0xAC
+	public float CustomAnimationSortingIntervalTier2; // 0xB0
+	public GameObject UnboxParticle; // 0xB4
+	public GameObject JellyDestroyParticle; // 0xB8
+	[ShowAssetPreview(40, 40)]
+	public Sprite BoxSprite; // 0xBC
+	[ShowAssetPreview(40, 40)]
+	public Sprite LeveledBoxSprite; // 0xC0
+	[ShowAssetPreview(40, 40)]
+	public Sprite GameplayCharBackground; // 0xC4
+	public int RandomStartLevel; // 0xC8
+	public int EnergySetID; // 0xCC
+	public int GemSetID; // 0xD0
+	public int CoinSetID; // 0xD4
+	public int XPSetID; // 0xD8
+	[SerializeField]
+	private MetaData _metaData; // 0xDC
+	public SpecialTaskDataConfig SpecialTaskDataConfig; // 0xE0
+	[ShowAssetPreview(40, 40)]
+	public Sprite EnergyTopUI; // 0xE4
+	public SpineAnimationData SpineAnimationData; // 0xE8
+	[ShowAssetPreview(40, 40)]
+	public Sprite EnergyCollectableSprite; // 0xEC
+	[ShowAssetPreview(40, 40)]
+	public Sprite GemCollectableSprite; // 0xF0
+	[ShowAssetPreview(40, 40)]
+	public Sprite CoinCollectableSprite; // 0xF4
+	[BoxGroup("TimeLimitedTask")]
+	[Expandable]
+	public TimeLimitedTaskData TimeLimitedTaskData; // 0xF8
+	private BoardItemDictionaryHandler _boardItemDictionaryHandler; // 0xFC
+	private string _levelLabel; // 0x100
+	private string _taskLabel; // 0x104
+	private string _label; // 0x108
+
+	// Properties
+	public MetaData MetaData { get; set; }
+	public BoardItemDictionaryHandler BoardItemDictionaryHandler { get; }
+	public string Label { get; }
+	public string TaskLabel { get; }
+
+	// Methods
+
+	// RVA: 0x1913124 Offset: 0x1913124 VA: 0x1913124
+	public MetaData get_MetaData() { }
+
+	// RVA: 0x1913224 Offset: 0x1913224 VA: 0x1913224
+	public void set_MetaData(MetaData value) { }
+
+	// RVA: 0x191322C Offset: 0x191322C VA: 0x191322C
+	public BoardItemDictionaryHandler get_BoardItemDictionaryHandler() { }
+
+	// RVA: 0x19132C0 Offset: 0x19132C0 VA: 0x19132C0 Slot: 4
+	public BoardItemData GetBoardItemDataFallback(int setID, int level, bool skipWarning = False, bool fromEventBoard = False) { }
+
+	// RVA: 0x1913230 Offset: 0x1913230 VA: 0x1913230
+	private BoardItemDictionaryHandler GetBoardItemDictionaryHandler() { }
+
+	// RVA: 0x1913AE0 Offset: 0x1913AE0 VA: 0x1913AE0
+	public string get_Label() { }
+
+	// RVA: 0x1913BE8 Offset: 0x1913BE8 VA: 0x1913BE8
+	public string get_TaskLabel() { }
+
+	// RVA: 0x1913C84 Offset: 0x1913C84 VA: 0x1913C84
+	public BoardPositionData GetInitialPositionData(int index) { }
+
+	// RVA: 0x1913B78 Offset: 0x1913B78 VA: 0x1913B78
+	public bool IsEvent() { }
+
+	// RVA: 0x1913E70 Offset: 0x1913E70 VA: 0x1913E70
+	public LevelData GetLevelData() { }
+
+	// RVA: 0x191400C Offset: 0x191400C VA: 0x191400C
+	public Vector2 GetFirstCellPosition() { }
+
+	// RVA: 0x1914028 Offset: 0x1914028 VA: 0x1914028
+	public int GetListPosition(Coordinate coordinate) { }
+
+	// RVA: 0x1914094 Offset: 0x1914094 VA: 0x1914094
+	public List<BoardItemData> GetBoardItemSetItems(int setID) { }
+
+	// RVA: 0x1914164 Offset: 0x1914164 VA: 0x1914164
+	public List<BoardItemData> GetAllBoardDataItems() { }
+
+	// RVA: -1 Offset: -1
+	public List<T> GetAllBoardDataItems<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x23DED34 Offset: 0x23DED34 VA: 0x23DED34
+	|-BoardData.GetAllBoardDataItems<object>
+	*/
+
+	// RVA: 0x19146A0 Offset: 0x19146A0 VA: 0x19146A0
+	public List<BoardItemData> GetBoardItemSetItems(Type[] types) { }
+
+	// RVA: 0x1914AF4 Offset: 0x1914AF4 VA: 0x1914AF4
+	public BoardItemSetData GetBoardItemSet(int setID, bool checkBothGroups = False) { }
+
+	// RVA: 0x190B578 Offset: 0x190B578 VA: 0x190B578
+	public BoardItemSetData GetBoardItemSetFallback(int setID, bool checkBothGroups = False) { }
+
+	// RVA: 0x1914DD4 Offset: 0x1914DD4 VA: 0x1914DD4
+	public BoosterItemData GetBoosterItemData(int ID) { }
+
+	// RVA: 0x1914EE0 Offset: 0x1914EE0 VA: 0x1914EE0
+	public BoosterItemData GetBoosterItemData(BoosterType boosterType) { }
+
+	// RVA: 0x1914FEC Offset: 0x1914FEC VA: 0x1914FEC
+	public Sprite GetBoosterSprite(BoosterType boosterType) { }
+
+	// RVA: 0x191508C Offset: 0x191508C VA: 0x191508C
+	public int GetItemPrice(ItemEntity item) { }
+
+	// RVA: 0x1915224 Offset: 0x1915224 VA: 0x1915224
+	public Tuple<int, int> GetItemBubbleData(ItemInfo itemInfo, out BalanceBubbleConfigModel.BalanceBubbleItemModel bubbleData) { }
+
+	// RVA: 0x1915508 Offset: 0x1915508 VA: 0x1915508
+	public Tuple<int, int> GetItemBubbleData(ItemEntity item, out BalanceBubbleConfigModel.BalanceBubbleItemModel bubbleData) { }
+
+	// RVA: 0x1915544 Offset: 0x1915544 VA: 0x1915544
+	public int GetItemJellyPrice(ItemEntity item) { }
+
+	// RVA: 0x1915778 Offset: 0x1915778 VA: 0x1915778
+	public BoardItemData GetBoardItemData(ItemInfo itemInfo, bool skipWarning = False) { }
+
+	// RVA: 0x191362C Offset: 0x191362C VA: 0x191362C
+	public BoardItemData GetBoardItemData(int setID, int level, bool skipWarning = False) { }
+
+	// RVA: 0x1915804 Offset: 0x1915804 VA: 0x1915804
+	public BoardItemData GetBoardItemDataFallback(ItemInfo itemInfo, bool skipWarning = False) { }
+
+	// RVA: 0x1915890 Offset: 0x1915890 VA: 0x1915890
+	public BoardItemData GetMergedItemData(int setID, int level) { }
+
+	// RVA: 0x1915AAC Offset: 0x1915AAC VA: 0x1915AAC
+	public bool IsMergeable(int setID, int level) { }
+
+	// RVA: 0x1915414 Offset: 0x1915414 VA: 0x1915414
+	public bool IsItemMaxLevel(int setID, int level) { }
+
+	// RVA: 0x1915B34 Offset: 0x1915B34 VA: 0x1915B34
+	public bool IsItemMaxLevel(ItemInfo itemInfo) { }
+
+	// RVA: 0x1915C28 Offset: 0x1915C28 VA: 0x1915C28
+	public bool IsCollectable(int setID) { }
+
+	// RVA: 0x1915C54 Offset: 0x1915C54 VA: 0x1915C54
+	public List<BoardItemSetData> GetAllSets() { }
+
+	// RVA: 0x1915C78 Offset: 0x1915C78 VA: 0x1915C78
+	public long GetEnergyUpdateNextMs() { }
+
+	// RVA: 0x1915C98 Offset: 0x1915C98 VA: 0x1915C98
+	public int GetMaxUserEnergy() { }
+
+	// RVA: 0x1915CD0 Offset: 0x1915CD0 VA: 0x1915CD0
+	public bool IsSpecialTaskItem(int setID) { }
+
+	// RVA: 0x1915D0C Offset: 0x1915D0C VA: 0x1915D0C
+	public Sprite GetCollectableUISprite(CollectableType collectableType) { }
+
+	// RVA: 0x1915D3C Offset: 0x1915D3C VA: 0x1915D3C
+	public void .ctor() { }
+}
+

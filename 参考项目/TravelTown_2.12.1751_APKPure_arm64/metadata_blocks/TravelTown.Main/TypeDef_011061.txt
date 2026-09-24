@@ -1,0 +1,31 @@
+// Namespace: Framework.Core.Services.Backend.Data
+public class ClientMessageNotification // TypeDefIndex: 11061
+{
+	// Fields
+	[JsonProperty("topic", NullValueHandling = 1)]
+	public string Topic; // 0x10
+	[JsonProperty("action", NullValueHandling = 1)]
+	public string Action; // 0x18
+	[JsonProperty("payload", NullValueHandling = 1)]
+	public object Payload; // 0x20
+	[JsonProperty("metadata", NullValueHandling = 1)]
+	public Dictionary<string, string> MetaData; // 0x28
+
+	// Methods
+
+	// RVA: 0x69309A0 Offset: 0x692C9A0 VA: 0x69309A0
+	public string GenerateUuid() { }
+
+	// RVA: 0x6930AD4 Offset: 0x692CAD4 VA: 0x6930AD4
+	public ClientMessageNotification Clone() { }
+
+	// RVA: 0x6930A18 Offset: 0x692CA18 VA: 0x6930A18
+	public void AddMetaData(string key, string value) { }
+
+	// RVA: 0x6930BF0 Offset: 0x692CBF0 VA: 0x6930BF0
+	public bool GetMetaData(string key, out string value) { }
+
+	// RVA: 0x6930C58 Offset: 0x692CC58 VA: 0x6930C58
+	public void .ctor() { }
+}
+

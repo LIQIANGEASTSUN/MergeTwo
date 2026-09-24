@@ -1,0 +1,61 @@
+Type: MenuController+<>c__DisplayClass228_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x02B71104 B 0x2B71168
+	0x02B71108 B 0x2B71168
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void <PushAndShow>b__2()
+
+Disassembly:
+	0x02B7110C B 0x2B71168
+	0x02B71110 B 0x2B71168
+	0x02B71114 B 0x2B71168
+	0x02B71118 B 0x2B71168
+	0x02B7111C B 0x2B71168
+	0x02B71120 B 0x2B71168
+	0x02B71124 B 0x2B71168
+	0x02B71128 B 0x2B71168
+
+ISIL:
+	001 Move X8, X0
+	002 Move X0, [X0+16]
+	003 Compare X0, 0
+	004 JumpIfEqual {9}
+	005 Move X1, [X8+40]
+	006 Move X2, X31
+	007 Call MenuController.OnShownFinished, X0, X1
+	008 Return 
+	009 Move [X31-16], X30
+	010 Call 0x239FB90
+
+Method: System.Void <PushAndShow>b__0()
+
+Disassembly:
+	0x02B7112C B 0x2B711AC
+	0x02B71130 B 0x2B71168
+	0x02B71134 B 0x2B71168
+	0x02B71138 B 0x2B71168
+	0x02B7113C B 0x2B71168
+	0x02B71140 B 0x2B71168
+	0x02B71144 B 0x2B71168
+	0x02B71148 B 0x2B711AC
+
+ISIL:
+	001 Move X8, X0
+	002 Move X0, [X0+16]
+	003 Compare X0, 0
+	004 JumpIfEqual {9}
+	005 Move X1, [X8+40]
+	006 Move X2, X31
+	007 Call MenuController.OnShownFinished, X0, X1
+	008 Return 
+	009 Move [X31-16], X30
+	010 Call 0x239FB90
+

@@ -1,0 +1,12 @@
+// Namespace: MergeEngine.Configuration
+public enum OverrideGraphType // TypeDefIndex: 1184
+{
+	// Fields
+	public int value__; // 0x0
+	public const OverrideGraphType None = 0;
+	public const OverrideGraphType Booster = 1;
+	public const OverrideGraphType MysteryItem = 2;
+	public const OverrideGraphType Blocker = 3;
+	public const OverrideGraphType Chest = 4;
+}
+

@@ -1,0 +1,9 @@
+Type: Metaplay.Core.Config.IHasGameConfigKey`1
+
+Method: TGameConfigKey get_ConfigKey()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

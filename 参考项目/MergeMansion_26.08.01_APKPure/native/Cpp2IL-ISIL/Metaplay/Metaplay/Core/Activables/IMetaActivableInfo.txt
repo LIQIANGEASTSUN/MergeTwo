@@ -1,0 +1,9 @@
+Type: Metaplay.Core.Activables.IMetaActivableInfo
+
+Method: Metaplay.Core.Activables.MetaActivableParams get_ActivableParams()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

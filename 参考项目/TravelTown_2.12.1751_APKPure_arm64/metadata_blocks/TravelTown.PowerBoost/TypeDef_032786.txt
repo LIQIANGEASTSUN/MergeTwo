@@ -1,0 +1,21 @@
+// Namespace: Merger.MergeBoard.PowerBoost.Services
+public interface IPowerBoostPersistanceService // TypeDefIndex: 32786
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void Setup(string id);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract bool IsBoostLocallyUnlocked(int boostMode);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void MarkBoostAsUnlocked(int boostMode);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract bool WasTooltipShownForBoost(int boostMode);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract void MarkTooltipAsShownForBoost(int boostMode);
+}
+

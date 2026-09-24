@@ -1,0 +1,4 @@
+// Namespace: Merger.MergeBoard.Components
+public struct TimeLockBlockComponent : IComponent // TypeDefIndex: 26023
+{}
+

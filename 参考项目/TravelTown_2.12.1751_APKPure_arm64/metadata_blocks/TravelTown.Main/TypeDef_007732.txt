@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoosterBoardSystem.<>c__DisplayClass11_0 // TypeDefIndex: 7732
+{
+	// Fields
+	public string uuId; // 0x10
+
+	// Methods
+
+	// RVA: 0x65BC58C Offset: 0x65B858C VA: 0x65BC58C
+	public void .ctor() { }
+
+	// RVA: 0x65BCA74 Offset: 0x65B8A74 VA: 0x65BCA74
+	internal bool <CreateBoosterItemEntity>b__0(BoosterIdComponent c) { }
+}
+

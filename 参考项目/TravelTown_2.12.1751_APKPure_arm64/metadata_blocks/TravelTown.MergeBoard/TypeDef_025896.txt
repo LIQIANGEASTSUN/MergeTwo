@@ -1,0 +1,15 @@
+// Namespace: Merger.MergeBoard.Factories
+public interface IEntityFactory // TypeDefIndex: 25896
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract Entity CreateEntity(IMergeItem mergeItem, int position, ItemOrigin origin, bool isLocked = False, DynamicMergeItemConfig dynamicItemConfig);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract Entity CreateEntity(string itemId, int position, ItemOrigin origin, bool isLocked = False, DynamicMergeItemConfig dynamicItemConfig);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract Entity CreateEntity(ItemPayloadBase itemState, int position);
+}
+

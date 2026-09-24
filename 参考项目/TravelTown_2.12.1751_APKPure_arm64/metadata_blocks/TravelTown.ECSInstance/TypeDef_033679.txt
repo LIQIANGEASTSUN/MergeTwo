@@ -1,0 +1,4 @@
+// Namespace: ContextualizedECS
+public interface IComponent // TypeDefIndex: 33679
+{}
+

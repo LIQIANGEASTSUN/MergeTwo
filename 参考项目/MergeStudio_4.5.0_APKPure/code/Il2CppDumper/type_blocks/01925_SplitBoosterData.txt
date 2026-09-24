@@ -1,0 +1,20 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "SplitBoosterData", menuName = "Scriptable/Booster/SplitBoosterData", order = 3)]
+public class SplitBoosterData : BoosterItemData // TypeDefIndex: 1925
+{
+	// Fields
+	public string NotEnoughSpaceText; // 0x3C
+	private List<int> _blockedIds; // 0x40
+
+	// Methods
+
+	// RVA: 0x192AC5C Offset: 0x192AC5C VA: 0x192AC5C
+	public bool IsItemDataSplittable(BoardData boardData, BoardItemData itemData) { }
+
+	// RVA: 0x192AE04 Offset: 0x192AE04 VA: 0x192AE04 Slot: 4
+	public override List<BoardPositionEntity> GetAvailablePositions(BoardEntity boardEntity, EventEntity eventEntity, BoardData boardData, out string keySuffix) { }
+
+	// RVA: 0x192B40C Offset: 0x192B40C VA: 0x192B40C
+	public void .ctor() { }
+}
+

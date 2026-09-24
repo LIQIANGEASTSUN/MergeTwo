@@ -1,0 +1,57 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class ItemSelectionBoxTransformedResult // TypeDefIndex: 25964
+{
+	// Fields
+	[CompilerGenerated]
+	private IMergeItem <FromMergeItem>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private IMergeItem <ToMergeItem>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private Entity <NewItem>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private Entity <RemovedItem>k__BackingField; // 0x28
+
+	// Properties
+	public IMergeItem FromMergeItem { get; set; }
+	public IMergeItem ToMergeItem { get; set; }
+	public Entity NewItem { get; set; }
+	public Entity RemovedItem { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A994 Offset: 0x6A96994 VA: 0x6A9A994
+	public IMergeItem get_FromMergeItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A99C Offset: 0x6A9699C VA: 0x6A9A99C
+	public void set_FromMergeItem(IMergeItem value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A9A4 Offset: 0x6A969A4 VA: 0x6A9A9A4
+	public IMergeItem get_ToMergeItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A9AC Offset: 0x6A969AC VA: 0x6A9A9AC
+	public void set_ToMergeItem(IMergeItem value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A9B4 Offset: 0x6A969B4 VA: 0x6A9A9B4
+	public Entity get_NewItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A9BC Offset: 0x6A969BC VA: 0x6A9A9BC
+	public void set_NewItem(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A9C4 Offset: 0x6A969C4 VA: 0x6A9A9C4
+	public Entity get_RemovedItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A9CC Offset: 0x6A969CC VA: 0x6A9A9CC
+	public void set_RemovedItem(Entity value) { }
+
+	// RVA: 0x6A9A9D4 Offset: 0x6A969D4 VA: 0x6A9A9D4
+	public void .ctor() { }
+}
+

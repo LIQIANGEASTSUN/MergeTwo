@@ -1,0 +1,9 @@
+// Namespace: Merger.MergeBoard.Data.Signals
+public class BoardFullOnPopulateSignal // TypeDefIndex: 25981
+{
+	// Methods
+
+	// RVA: 0x6A9AEC4 Offset: 0x6A96EC4 VA: 0x6A9AEC4
+	public void .ctor() { }
+}
+

@@ -1,0 +1,39 @@
+Type: GameLogic.Player.Items.Chest.ChestState+<>c__DisplayClass42_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03643890 MOVZ W8, 0x1
+	0x03643894 STRB W8, [X22 + 0xDEC]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: GameLogic.Player.Items.IItemDefinition <GetRemainingLoot>b__0(GameLogic.Config.ItemDef item)
+
+Disassembly:
+	0x03643C40 LDR X0, [X8]
+	0x03643C44 BL 0x239B9D4
+	0x03643C48 LDR X8, [X23]
+	0x03643C4C LDR X1, [X25]
+	0x03643C50 MOV X19, X0
+	0x03643C54 LDRH W9, [X8 + 0x12E]
+	0x03643C58 CBZ X9, 0x3643C7C
+	0x03643C5C LDR X10, [X8 + 0xB0]
+	0x03643C60 ADD X10, X10, 0x8
+
+ISIL:
+	001 Compare X1, 0
+	002 JumpIfEqual {10}
+	003 Move X9, [X1]
+	004 Move X8, [X0+16]
+	005 Move X0, X1
+	006 Move X3, [X9+456]
+	007 Move X2, [X9+464]
+	008 Move X1, X8
+	009 CallNoReturn X3
+	010 Move [X31-16], X30
+	011 Call 0x239FB90
+

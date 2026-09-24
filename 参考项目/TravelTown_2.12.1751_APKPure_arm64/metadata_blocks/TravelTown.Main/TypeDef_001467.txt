@@ -1,0 +1,16 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class TimeLockCapability : CapabilityBase // TypeDefIndex: 1467
+{
+	// Fields
+	public int LockTime; // 0x14
+	public TimeLockGroup LockGroup; // 0x18
+	[JsonConverter(typeof(AdminItemOriginJsonConverter))]
+	public ItemOrigin LockOrigins; // 0x1C
+
+	// Methods
+
+	// RVA: 0x60118EC Offset: 0x600D8EC VA: 0x60118EC
+	public void .ctor() { }
+}
+

@@ -1,0 +1,86 @@
+// Namespace: MergeEngine.ECS.Systems.State.Board
+public abstract class ItemsStateSystemBase<TLoadable> : StateSystemBase<TLoadable> // TypeDefIndex: 781
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _mergeConfigurationModel; // 0x0
+	[Inject]
+	private IOperationTrackingService _operationTrackingService; // 0x0
+	[Inject]
+	protected IItemsEntityService ItemsEntityService; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 14
+	protected abstract void EntitiesRemovalLogic(IComponentBase component);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-ItemsStateSystemBase<object>.EntitiesRemovalLogic
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public abstract List<IdComponent> GetExistingEntityIds();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-ItemsStateSystemBase<object>.GetExistingEntityIds
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 16
+	protected abstract void ProcessItems(TLoadable itemsState, List<IdComponent> existingEntityIds);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-ItemsStateSystemBase<object>.ProcessItems
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 13
+	protected override void LoadState(TLoadable newState) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x53971D0 Offset: 0x53931D0 VA: 0x53971D0
+	|-ItemsStateSystemBase<object>.LoadState
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void AddNewEntity(Entity entity) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x53973F4 Offset: 0x53933F4 VA: 0x53973F4
+	|-ItemsStateSystemBase<object>.AddNewEntity
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void HandleExistingEntities(List<IdComponent> existingEntitiesIds, IEnumerable<ItemPayloadBase> items) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x53974A4 Offset: 0x53934A4 VA: 0x53974A4
+	|-ItemsStateSystemBase<object>.HandleExistingEntities
+	*/
+
+	// RVA: -1 Offset: -1
+	protected bool TryGetEntity(IEnumerable<IdComponent> existingEntityIds, ItemPayloadBase item, MergeItemInstanceConfiguration configuration, out Entity entity) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x5397634 Offset: 0x5393634 VA: 0x5397634
+	|-ItemsStateSystemBase<object>.TryGetEntity
+	*/
+
+	// RVA: -1 Offset: -1
+	private bool TryGetExistingItem(IEnumerable<IdComponent> existingItems, string itemUuid, out IdComponent existingItem) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x5397834 Offset: 0x5393834 VA: 0x5397834
+	|-ItemsStateSystemBase<object>.TryGetExistingItem
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x539793C Offset: 0x539393C VA: 0x539793C
+	|-ItemsStateSystemBase<object>..ctor
+	*/
+}
+

@@ -1,0 +1,13 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class BoardQueueOrderCapability : CapabilityBase // TypeDefIndex: 1432
+{
+	// Fields
+	public BoardQueueOrder Order; // 0x14
+
+	// Methods
+
+	// RVA: 0x600FA24 Offset: 0x600BA24 VA: 0x600FA24
+	public void .ctor() { }
+}
+

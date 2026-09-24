@@ -1,0 +1,9 @@
+// Namespace: Merger.Game.Command
+public class UpdateBoardResourcesStateCommand : UpdateBoardResourcesStateCommandBase<UpdateBoardResourcesStateSignal> // TypeDefIndex: 8554
+{
+	// Methods
+
+	// RVA: 0x668AB48 Offset: 0x6686B48 VA: 0x668AB48
+	public void .ctor() { }
+}
+

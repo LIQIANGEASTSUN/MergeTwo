@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class SummerWatermelonModel.<>c__DisplayClass99_0 // TypeDefIndex: 4923
+{
+	// Fields
+	public List<ResData> rewardsList; // 0x8
+	public TaskCompletionSource<bool> taskRewardCollect; // 0xC
+
+	// Methods
+
+	// RVA: 0x1644040 Offset: 0x1644040 VA: 0x1644040
+	public void .ctor() { }
+
+	// RVA: 0x1644048 Offset: 0x1644048 VA: 0x1644048
+	internal void <GetFirstTimeReward>b__0() { }
+}
+

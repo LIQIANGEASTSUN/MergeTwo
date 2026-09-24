@@ -1,0 +1,8 @@
+// Namespace: 
+public struct EntityUpdateEvent.SaveBoard : IEvent // TypeDefIndex: 2676
+{
+	// Fields
+	public bool Time; // 0x0
+	public int EventIndex; // 0x4
+}
+

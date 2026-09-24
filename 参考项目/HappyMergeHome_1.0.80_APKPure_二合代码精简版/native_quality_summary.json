@@ -1,0 +1,13 @@
+{
+  "method_count": 10788,
+  "flag_counts": {
+    "unknown_native_type": 10316,
+    "ghidra_warning_comment": 6664,
+    "unassigned_register": 432,
+    "bad_instruction": 227,
+    "halt_baddata": 227,
+    "pcode_error": 228,
+    "unresolved_constructor": 228,
+    "thunk_alias_declaration": 4
+  }
+}

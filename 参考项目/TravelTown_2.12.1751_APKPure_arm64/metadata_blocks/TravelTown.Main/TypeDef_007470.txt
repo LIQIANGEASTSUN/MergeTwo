@@ -1,0 +1,37 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ChainRelationsProbabilityModifier.<>c // TypeDefIndex: 7470
+{
+	// Fields
+	public static readonly ChainRelationsProbabilityModifier.<>c <>9; // 0x0
+	public static Func<IMergeItem, IEnumerable<ItemMultiple>> <>9__12_0; // 0x8
+	public static Func<ItemMultiple, IMergeGraphItem> <>9__12_1; // 0x10
+	public static Func<IMergeGraphItem, IMergeItem> <>9__13_0; // 0x18
+	public static Func<IMergeItem, bool> <>9__13_1; // 0x20
+	public static Func<ItemMultiple, IMergeGraphItem> <>9__13_3; // 0x28
+
+	// Methods
+
+	// RVA: 0x6580D70 Offset: 0x657CD70 VA: 0x6580D70
+	private static void .cctor() { }
+
+	// RVA: 0x6580DD8 Offset: 0x657CDD8 VA: 0x6580DD8
+	public void .ctor() { }
+
+	// RVA: 0x6580DE0 Offset: 0x657CDE0 VA: 0x6580DE0
+	internal IEnumerable<ItemMultiple> <GetConsumables>b__12_0(IMergeItem mergeItem) { }
+
+	// RVA: 0x6580E8C Offset: 0x657CE8C VA: 0x6580E8C
+	internal IMergeGraphItem <GetConsumables>b__12_1(ItemMultiple itemMultiple) { }
+
+	// RVA: 0x6580F54 Offset: 0x657CF54 VA: 0x6580F54
+	internal IMergeItem <GetConsumer>b__13_0(IMergeGraphItem graph) { }
+
+	// RVA: 0x658100C Offset: 0x657D00C VA: 0x658100C
+	internal bool <GetConsumer>b__13_1(IMergeItem item) { }
+
+	// RVA: 0x6581138 Offset: 0x657D138 VA: 0x6581138
+	internal IMergeGraphItem <GetConsumer>b__13_3(ItemMultiple item) { }
+}
+

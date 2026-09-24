@@ -1,0 +1,53 @@
+Type: GameLogic.Player.Items.Merging.MergeExtensions+<>c__DisplayClass2_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x036275B0 MOV X0, X19
+	0x036275B4 MOVZ W2, 0x10
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <PotentialRewards>b__0(GameLogic.Player.Items.Merging.MergeReward reward)
+
+Disassembly:
+	0x03628880 MOV X1, X23
+	0x03628884 MOV X3, X31
+	0x03628888 LDR X8, [X8 + 0xFC8]
+	0x0362888C MOV X22, X0
+	0x03628890 LDR X2, [X8]
+	0x03628894 BL 0x2996A34
+	0x03628898 LDR X8, [X24]
+	0x0362889C MOV X1, X22
+	0x036288A0 LDR X0, [X8 + 0xB8]
+	0x036288A4 STR X22, [X0 + 0x8]!
+	0x036288A8 BL 0x239B888
+	0x036288AC ADRP X8, 0x2109000
+	0x036288B0 MOV X0, X21
+	0x036288B4 MOV X1, X22
+	0x036288B8 LDR X8, [X8 + 0xCF0]
+	0x036288BC LDR X2, [X8]
+	0x036288C0 BL 0x25E7684
+
+ISIL:
+	001 Move [X31-16], X30
+	002 Compare X1, 0
+	003 JumpIfEqual {17}
+	004 Move W8, [X1+24]
+	005 Move W9, [X0+16]
+	006 NotImplemented "Instruction CMP not yet implemented."
+	007 Move X0, [X0+24]
+	008 Compare X0, 0
+	009 JumpIfEqual {17}
+	010 Move X2, X31
+	011 Call ProgressState.WasMergeRewardCollected, X0, X1
+	012 Xor W8, W0, 1
+	013 Move W8, W31
+	014 And W0, W8, 1
+	015 Move X30, [X31+16]
+	016 Return X0
+	017 Call 0x239FB90
+

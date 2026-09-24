@@ -1,0 +1,27 @@
+// Namespace: MergeEngine.Signal.Items
+public class ItemDequeuedSignal : MergeItemSignalBase // TypeDefIndex: 223
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly string <BoosterUuid>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private readonly IBoosterItem <BoosterItem>k__BackingField; // 0x28
+
+	// Properties
+	public string BoosterUuid { get; }
+	public IBoosterItem BoosterItem { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5FF37B0 Offset: 0x5FEF7B0 VA: 0x5FF37B0
+	public string get_BoosterUuid() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF37B8 Offset: 0x5FEF7B8 VA: 0x5FF37B8
+	public IBoosterItem get_BoosterItem() { }
+
+	// RVA: 0x5FF37C0 Offset: 0x5FEF7C0 VA: 0x5FF37C0
+	public void .ctor(IMergeItem item, int level, IBoosterItem boosterItem, string boosterUuid) { }
+}
+

@@ -1,0 +1,24 @@
+// Namespace: MergePuzzle.EnergyMultiplier
+[Serializable]
+public class EnergyMultiplierOptions // TypeDefIndex: 4785
+{
+	// Fields
+	public int Multiplier; // 0x8
+	public int UnlockLevel; // 0xC
+	public int UnlockEnergy; // 0x10
+	public float DefaultCapacityReduceAmount; // 0x14
+	public List<SpawnerOptions> SpawnerOptions; // 0x18
+	private Dictionary<int, float> _capacityReduceAmountCache; // 0x1C
+
+	// Methods
+
+	// RVA: 0x1DC50F4 Offset: 0x1DC50F4 VA: 0x1DC50F4
+	public float GetCapacityReduceAmount(int setID) { }
+
+	// RVA: 0x1DC5DD4 Offset: 0x1DC5DD4 VA: 0x1DC5DD4
+	private void InitializeCapacityReduceAmountCache() { }
+
+	// RVA: 0x1DC60FC Offset: 0x1DC60FC VA: 0x1DC60FC
+	public void .ctor() { }
+}
+

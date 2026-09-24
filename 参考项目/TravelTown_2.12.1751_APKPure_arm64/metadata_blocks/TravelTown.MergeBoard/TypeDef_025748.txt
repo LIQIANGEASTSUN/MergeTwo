@@ -1,0 +1,27 @@
+// Namespace: 
+private struct ItemDiscoverySystem.DiscoverableItems : IComponentGroup<IdComponent, LockComponent, BoxComponent> // TypeDefIndex: 25748
+{
+	// Fields
+	public Entity Entity; // 0x0
+	public IdComponent IdComponent; // 0x8
+	public LockComponent LockComponent; // 0x38
+	public BoxComponent BoxComponent; // 0x3C
+
+	// Methods
+
+	// RVA: 0x6A6D664 Offset: 0x6A69664 VA: 0x6A6D664
+	public void .ctor(ValueTuple<Entity, IdComponent, LockComponent, BoxComponent> tuple) { }
+
+	// RVA: 0x6A6CBC0 Offset: 0x6A68BC0 VA: 0x6A6CBC0
+	public static ItemDiscoverySystem.DiscoverableItems op_Implicit(ValueTuple<Entity, IdComponent, LockComponent, BoxComponent> tuple) { }
+
+	// RVA: 0x6A6D6F0 Offset: 0x6A696F0 VA: 0x6A6D6F0
+	public static ValueTuple<Entity, IdComponent, LockComponent, BoxComponent> op_Implicit(ItemDiscoverySystem.DiscoverableItems group) { }
+
+	// RVA: 0x6A6D7C4 Offset: 0x6A697C4 VA: 0x6A6D7C4
+	public void Deconstruct(out Entity entity, out IdComponent idComponent, out LockComponent lockComponent, out BoxComponent boxComponent) { }
+
+	// RVA: 0x6A6CB80 Offset: 0x6A68B80 VA: 0x6A6CB80
+	public static Entities.MatchDelegate<ValueTuple<Entity, IdComponent, LockComponent, BoxComponent>> GetMatchMethod() { }
+}
+

@@ -1,0 +1,648 @@
+Type: GameLogic.Player.Items.IItemDefinition
+
+Method: GameLogic.Player.Items.Spawning.ISpawnFeatures get_SpawnFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Decay.IDecayFeatures get_DecayFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Merging.IMergeFeatures get_MergeFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Activation.IActivationFeatures get_ActivationFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Chest.IChestFeatures get_ChestFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Sink.ISinkFeatures get_SinkFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Bubble.IBubbleFeatures get_BubbleFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Charges.IChargesFeatures get_ChargesFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Persistent.IPersistentFeatures get_PersistentFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Order.IOrderFeatures get_OrderFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Fishing.IFishingRodFeatures get_FishingRodFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Fishing.ICameraFeatures get_CameraFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Fishing.IWeightFeatures get_WeightFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.TimeContainer.ITimeContainerFeatures get_TimeContainerFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Collectable.ICollectableFeatures get_CollectableFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Leaderboard.ILeaderboardFeatures get_LeaderboardFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.IPortalFeatures get_PortalFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Boosting.IBoosterFeatures get_BoosterFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Consumption.IConsumableFeatures get_ConsumableFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.MiniEvents.IMiniEventFeatures get_MiniEventFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Sinkable.ISinkableFeatures get_SinkableFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Fishing.IFramesFeatures get_FramesFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.OverrideSpawnChance.IOverrideSpawnChanceFeatures get_OverrideSpawnChanceFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.IAudioFeatures get_AudioFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.IItemEffectFeatures get_ItemEffectFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.IOnFireFeatures get_OnFireFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.String get_ItemType()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_Movable()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.List`1<System.String> get_ConfirmableMergeResults()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_ExperienceValue()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_LevelNumber()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_ConfigKey()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.String get_PoolTag()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.String get_SkinName()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.List`1<System.String> get_Tags()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_Unsellable()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_ShowTutorialFingerOnDiscovery()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_HasUnlockRequirements()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.String get_LocalizationItemKey()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.String get_FullOverrideLocalizationItemKey()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.String get_OverrideLocalizationItemCategory()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.List`1<System.String> get_AnalyticsMetaData()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.List`1<System.Int32> get_CombineInfoWithItem()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.List`1<System.String> get_SpawnEffects()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_ShowCustomItemInfoPopupOnDiscovery()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.String get_SinkTag()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void set_SinkTag(System.String value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_SinkPoints()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void set_SinkPoints(System.Int32 value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.List`1<System.Int32> get_OverrideProductionSource()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void set_OverrideProductionSource(System.Collections.Generic.List`1<System.Int32> value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Player.Director.Config.IDirectorAction> get_OnDiscovered()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: ItemRarity get_Rarity()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.Math.F64 get_CostInDiamonds()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.Math.F64 get_TimeSkipPriceGems()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.Math.F64 get_UnlockOnBoardPriceGems()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.List`1<GameLogic.Player.Requirements.PlayerRequirement> get_UnlockRequirements()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.List`1<GameLogic.Player.Rewards.PlayerReward> get_Rewards()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Config.MergeChainDef get_MergeChainDef()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Currencies SellCurrency()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 GetItemSellPrice(GameLogic.Config.SharedGlobals sharedGlobals)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.ValueTuple`2<Currencies, System.Int64> SellPrice(GameLogic.Config.SharedGlobals sharedGlobals)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.Math.F64 AnchorPrice(Currencies currency)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.Math.F64 BubbleDiscount(GameLogic.Player.IPlayer player, Currencies openCurrency, System.Int32 openCost)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean IsUnlockedMaxLevel(GameLogic.Player.IPlayer player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean HasUnlockRequirement(System.Type requirementType, out GameLogic.Player.Requirements.PlayerRequirement requirement)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 GetItemValueRequirementForDailyTasksV2(GameLogic.Player.IPlayer player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.ConfigPrefabs.ConfigPrefabId get_CustomItemInfoPopupId()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.MergeChains.IMergeChainDefinition GetMergeChain(GameLogic.Player.IPlayer player)
+
+Disassembly:
+	0x035BBA7C MOV X2, X31
+	0x035BBA80 BL 0x4312F8C
+	0x035BBA84 ADRP X8, 0x2119000
+	0x035BBA88 MOV X23, X0
+	0x035BBA8C LDR X8, [X8 + 0x8A0]
+	0x035BBA90 LDR X8, [X8]
+	0x035BBA94 MOV X0, X8
+	0x035BBA98 BL 0x239BB80
+	0x035BBA9C MOVZ W1, 0x409
+	0x035BBAA0 MOV X2, X31
+	0x035BBAA4 MOV X24, X0
+	0x035BBAA8 BL 0x376B548
+	0x035BBAAC CBZ X27, 0x35BBB38
+	0x035BBAB0 ADRP X8, 0x2163000
+	0x035BBAB4 ADRP X9, 0x2175000
+	0x035BBAB8 ADRP X10, 0x2175000
+	0x035BBABC ADRP X11, 0x211F000
+	0x035BBAC0 LDR X8, [X8 + 0x8]
+	0x035BBAC4 LDR X9, [X9 + 0xB60]
+	0x035BBAC8 LDR X10, [X10 + 0xB18]
+	0x035BBACC LDR X11, [X11 + 0xF00]
+	0x035BBAD0 MOV X0, X27
+	0x035BBAD4 LDR X1, [X8]
+	0x035BBAD8 LDR X4, [X9]
+	0x035BBADC MOVZ W8, 0x27C
+	0x035BBAE0 LDR X6, [X10]
+	0x035BBAE4 LDR X7, [X11]
+	0x035BBAE8 MOV X2, X22
+	0x035BBAEC MOV X3, X23
+	0x035BBAF0 MOV X5, X24
+	0x035BBAF4 STR X31, [X31 + 0x8]
+	0x035BBAF8 STR W8, [X31]
+	0x035BBAFC BL 0x41CF540
+	0x035BBB00 MOV X0, X28
+	0x035BBB04 MOV X1, X27
+	0x035BBB08 BL 0x35BBC48
+	0x035BBB0C MOV X0, X28
+	0x035BBB10 MOV X1, X26
+	0x035BBB14 BL 0x35BBFB8
+	0x035BBB18 LDP X20, X19, [X31 + 0xA0]
+	0x035BBB1C LDP X22, X21, [X31 + 0x90]
+	0x035BBB20 LDP X24, X23, [X31 + 0x80]
+	0x035BBB24 LDP X26, X25, [X31 + 0x70]
+	0x035BBB28 LDP X28, X27, [X31 + 0x60]
+	0x035BBB2C LDP X29, X30, [X31 + 0x50]
+	0x035BBB30 ADD X31, X31, 0xB0
+	0x035BBB34 RET
+	0x035BBB38 BL 0x239BB90
+	0x035BBB3C BL 0x239BB90
+	0x035BBB40 BL 0x239BB90
+	0x035BBB44 MOV X27, X0
+	0x035BBB48 BL 0x239BB90
+	0x035BBB4C BL 0x239BB90
+	0x035BBB50 BL 0x239BB90
+	0x035BBB54 MOV X0, X22
+	0x035BBB58 BL 0x239BB88
+	0x035BBB5C MOV X24, X31
+	0x035BBB60 B 0x35BB908
+	0x035BBB64 MOV X0, X23
+	0x035BBB68 BL 0x239BB88
+	0x035BBB6C B 0x35BBBF0
+	0x035BBB70 B 0x35BBB98
+	0x035BBB74 B 0x35BBBF0
+	0x035BBB78 B 0x35BBB98
+	0x035BBB7C MOV X23, X0
+	0x035BBB80 MOV X25, X24
+	0x035BBB84 B 0x35BBB9C
+	0x035BBB88 B 0x35BBBF0
+	0x035BBB8C B 0x35BBBF0
+	0x035BBB90 B 0x35BBBF0
+	0x035BBB94 B 0x35BBB98
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move X20, X1
+	006 Move X19, X0
+	007 Move W8, [0x277296F]
+	008 Move TEMP, X8
+	009 And TEMP, TEMP, 1
+	010 Compare TEMP, 1
+	011 JumpIfEqual {18}
+	012 Move X0, [0x211DD50]
+	013 Call 0x239F8E4
+	014 Move X0, [0x211E7B0]
+	015 Call 0x239F8E4
+	016 Move W8, 1
+	017 Move [X21+2415], W8
+	018 Compare X20, 0
+	019 JumpIfEqual {72}
+	020 Move X8, [X20]
+	021 Move X10, [0x211DD50]
+	022 NotImplemented "Instruction LDRH not yet implemented."
+	023 Move X21, [0x211E7B0]
+	024 Move X1, [X10]
+	025 Compare X9, 0
+	026 JumpIfEqual {33}
+	027 Move X10, [X8+176]
+	028 Add X10, X10, 8
+	029 NotImplemented "Instruction LDUR not yet implemented."
+	030 NotImplemented "Instruction CMP not yet implemented."
+	031 Subtract X9, X9, 1
+	032 Add X10, X10, 16
+	033 Move X0, X20
+	034 Move W2, 5
+	035 Call 0x23D927C
+	036 Move W9, [X10]
+	037 Add W9, W9, 5
+	038 Add X8, X8, W9
+	039 Add X0, X8, 312
+	040 Move X8, [X0]
+	041 Move X1, [X0+8]
+	042 Move X0, X20
+	043 NotImplemented "Instruction BLR not yet implemented."
+	044 Move X8, [X19]
+	045 Move X1, [X21]
+	046 Move X20, X0
+	047 NotImplemented "Instruction LDRH not yet implemented."
+	048 Compare X9, 0
+	049 JumpIfEqual {56}
+	050 Move X10, [X8+176]
+	051 Add X10, X10, 8
+	052 NotImplemented "Instruction LDUR not yet implemented."
+	053 NotImplemented "Instruction CMP not yet implemented."
+	054 Subtract X9, X9, 1
+	055 Add X10, X10, 16
+	056 Move X0, X19
+	057 Move W2, 69
+	058 Call 0x23D927C
+	059 Move W9, [X10]
+	060 Add W9, W9, 69
+	061 Add X8, X8, W9
+	062 Add X0, X8, 312
+	063 Move X3, [X0]
+	064 Move X2, [X0+8]
+	065 Move X0, X19
+	066 Move X1, X20
+	067 Move X20, [X31+16]
+	068 Move X19, [X31+24]
+	069 Move X30, [X31+32]
+	070 Move X21, [X31+40]
+	071 CallNoReturn X3
+	072 Call 0x239FB90
+
+Method: GameLogic.MergeChains.IMergeChainDefinition GetMergeChain(GameLogic.Config.IMergeMansionGameConfig config)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean IsMaxLevel(GameLogic.Player.IPlayer player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 GetItemValueRewardForDailyTasksV2(GameLogic.Player.IPlayer player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

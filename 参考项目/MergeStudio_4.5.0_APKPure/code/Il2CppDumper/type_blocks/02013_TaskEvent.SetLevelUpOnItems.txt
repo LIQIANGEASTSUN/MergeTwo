@@ -1,0 +1,4 @@
+// Namespace: 
+public struct TaskEvent.SetLevelUpOnItems : IEvent // TypeDefIndex: 2013
+{}
+

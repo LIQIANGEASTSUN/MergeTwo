@@ -1,0 +1,75 @@
+// Namespace: 
+[Serializable]
+public class SummerWatermelonThirtyThreeProductConfig : TableBase // TypeDefIndex: 1050
+{
+	// Fields
+	[CompilerGenerated]
+	private int <Id>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private int <ItemId>k__BackingField; // 0xC
+	[CompilerGenerated]
+	private List<int> <OutPut>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private List<int> <Weight>k__BackingField; // 0x14
+	[CompilerGenerated]
+	private int <MaxWeight>k__BackingField; // 0x18
+
+	// Properties
+	public int Id { get; set; }
+	public int ItemId { get; set; }
+	public List<int> OutPut { get; set; }
+	public List<int> Weight { get; set; }
+	public int MaxWeight { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x1ED1AC4 Offset: 0x1ED1AC4 VA: 0x1ED1AC4
+	public int get_Id() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED1ACC Offset: 0x1ED1ACC VA: 0x1ED1ACC
+	public void set_Id(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED1AD4 Offset: 0x1ED1AD4 VA: 0x1ED1AD4
+	public int get_ItemId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED1ADC Offset: 0x1ED1ADC VA: 0x1ED1ADC
+	public void set_ItemId(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED1AE4 Offset: 0x1ED1AE4 VA: 0x1ED1AE4
+	public List<int> get_OutPut() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED1AEC Offset: 0x1ED1AEC VA: 0x1ED1AEC
+	public void set_OutPut(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED1AF4 Offset: 0x1ED1AF4 VA: 0x1ED1AF4
+	public List<int> get_Weight() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED1AFC Offset: 0x1ED1AFC VA: 0x1ED1AFC
+	public void set_Weight(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED1B04 Offset: 0x1ED1B04 VA: 0x1ED1B04
+	public int get_MaxWeight() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ED1B0C Offset: 0x1ED1B0C VA: 0x1ED1B0C
+	public void set_MaxWeight(int value) { }
+
+	// RVA: 0x1ED1B14 Offset: 0x1ED1B14 VA: 0x1ED1B14 Slot: 4
+	public override int GetID() { }
+
+	// RVA: 0x1ED1B68 Offset: 0x1ED1B68 VA: 0x1ED1B68
+	public void .ctor() { }
+
+	// RVA: 0x1ED1B70 Offset: 0x1ED1B70 VA: 0x1ED1B70
+	public int <>iFixBaseProxy_GetID() { }
+}
+

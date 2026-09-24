@@ -1,0 +1,12 @@
+// Namespace: Merger.MergeBoard.Logic.State.Updaters
+public class TimeCycleComponentStateUpdater : ComponentStateUpdaterBase<TimeCycleComponent, ItemPayloadBase>, IBoardItemComponentStateUpdater // TypeDefIndex: 25848
+{
+	// Methods
+
+	// RVA: 0x6A85D48 Offset: 0x6A81D48 VA: 0x6A85D48 Slot: 5
+	protected override void UpdateFromState(ref TimeCycleComponent component, ItemPayloadBase itemState) { }
+
+	// RVA: 0x6A85E24 Offset: 0x6A81E24 VA: 0x6A85E24
+	public void .ctor() { }
+}
+

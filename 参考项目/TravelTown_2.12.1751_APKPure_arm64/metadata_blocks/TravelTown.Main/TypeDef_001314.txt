@@ -1,0 +1,81 @@
+// Namespace: MergeEngine.Configuration.Definitions
+public class ResourceMultiple : BaseReward, IPrioritizedOrderReward // TypeDefIndex: 1314
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly PlayerResourceEnum <Resource>k__BackingField; // 0x5C
+	[CompilerGenerated]
+	private IRewardType <ResourceType>k__BackingField; // 0x60
+
+	// Properties
+	public PlayerResourceEnum Resource { get; }
+	public virtual IRewardType ResourceType { get; set; }
+	private int Merger.Game.Views.Components.Orders.Rewards.IPrioritizedOrderReward.Priority { get; }
+	public override string ConfigurationId { get; }
+	public override string Name { get; }
+	public override AssetReferenceT<Sprite> SpriteReference { get; }
+	public override bool ShouldHideIButton { get; }
+	public override bool ShowInfoButtonAfterContentLoad { get; }
+	public override bool HasCollectScreen { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A2A38C Offset: 0x6A2638C VA: 0x6A2A38C
+	public PlayerResourceEnum get_Resource() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A2A394 Offset: 0x6A26394 VA: 0x6A2A394 Slot: 42
+	public virtual IRewardType get_ResourceType() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A2A39C Offset: 0x6A2639C VA: 0x6A2A39C
+	private void set_ResourceType(IRewardType value) { }
+
+	// RVA: 0x6A2A3A4 Offset: 0x6A263A4 VA: 0x6A2A3A4 Slot: 27
+	private int Merger.Game.Views.Components.Orders.Rewards.IPrioritizedOrderReward.get_Priority() { }
+
+	// RVA: 0x6A2A3FC Offset: 0x6A263FC VA: 0x6A2A3FC Slot: 29
+	public override string get_ConfigurationId() { }
+
+	// RVA: 0x6A2A4B0 Offset: 0x6A264B0 VA: 0x6A2A4B0 Slot: 30
+	public override string get_Name() { }
+
+	// RVA: 0x6A2A59C Offset: 0x6A2659C VA: 0x6A2A59C
+	public void .ctor(PlayerResourceEnum resource, RewardAmount rewardAmount, RewardDestination destination) { }
+
+	// RVA: 0x6A2A648 Offset: 0x6A26648 VA: 0x6A2A648
+	public void .ctor(IRewardType rewardType, RewardAmount rewardAmount, RewardDestination destination) { }
+
+	// RVA: 0x6A2A678 Offset: 0x6A26678 VA: 0x6A2A678
+	protected void .ctor(PlayerResourceEnum resource, IRewardType rewardType, RewardAmount rewardAmount, RewardDestination destination) { }
+
+	[JsonConstructor]
+	// RVA: 0x6A21870 Offset: 0x6A1D870 VA: 0x6A21870
+	public void .ctor(PlayerResourceEnum resource, int amount, bool shouldBeHidden = False) { }
+
+	// RVA: 0x6A2A6BC Offset: 0x6A266BC VA: 0x6A2A6BC Slot: 38
+	public override IRewardViewData Clone() { }
+
+	// RVA: 0x6A2A75C Offset: 0x6A2675C VA: 0x6A2A75C Slot: 37
+	protected override string GetExtraLogData() { }
+
+	// RVA: 0x6A2A800 Offset: 0x6A26800 VA: 0x6A2A800
+	public bool IsTool() { }
+
+	// RVA: 0x6A2A85C Offset: 0x6A2685C VA: 0x6A2A85C Slot: 32
+	public override AssetReferenceT<Sprite> get_SpriteReference() { }
+
+	// RVA: 0x6A2A8D4 Offset: 0x6A268D4 VA: 0x6A2A8D4 Slot: 33
+	public override bool get_ShouldHideIButton() { }
+
+	// RVA: 0x6A2A8DC Offset: 0x6A268DC VA: 0x6A2A8DC Slot: 34
+	public override bool get_ShowInfoButtonAfterContentLoad() { }
+
+	// RVA: 0x6A2A8E4 Offset: 0x6A268E4 VA: 0x6A2A8E4 Slot: 31
+	public override bool get_HasCollectScreen() { }
+
+	// RVA: 0x6A2A8EC Offset: 0x6A268EC VA: 0x6A2A8EC Slot: 2
+	public override int GetHashCode() { }
+}
+

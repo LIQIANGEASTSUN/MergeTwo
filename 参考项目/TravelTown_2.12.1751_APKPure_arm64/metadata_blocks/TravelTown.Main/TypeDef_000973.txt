@@ -1,0 +1,68 @@
+// Namespace: MergeEngine.ECS.Systems.Items
+public class TimeLockSystem : TickableSystem<TimeLockComponent> // TypeDefIndex: 973
+{
+	// Fields
+	[InjectSystem]
+	private OperationTrackingSystem _operationTrackingSystem; // 0x40
+	[Inject]
+	private INotificationDataFactory _notificationDataFactory; // 0x48
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x50
+	private TimeSystem _timeSystem; // 0x58
+	public static readonly TimeLockGroup[] SingleUnlockTimeLockGroups; // 0x0
+	private Dictionary<TimeLockGroup, List<TimeLockComponent>> _timeLocksPerGroup; // 0x60
+
+	// Properties
+	public override SystemPriorities Priority { get; }
+
+	// Methods
+
+	// RVA: 0x6795E44 Offset: 0x6791E44 VA: 0x6795E44 Slot: 15
+	public override SystemPriorities get_Priority() { }
+
+	// RVA: 0x6795E4C Offset: 0x6791E4C VA: 0x6795E4C Slot: 6
+	protected override void InitializeSystem() { }
+
+	// RVA: 0x6795F20 Offset: 0x6791F20 VA: 0x6795F20 Slot: 7
+	protected override void DisposeSystem() { }
+
+	// RVA: 0x6791AD0 Offset: 0x678DAD0 VA: 0x6791AD0
+	public void CompleteUnlocking(TimeLockComponent timeLockComponent) { }
+
+	// RVA: 0x6796064 Offset: 0x6792064 VA: 0x6796064
+	private void UnlockTimeLockSignalFired(UnlockTimeLockSignal signal) { }
+
+	// RVA: 0x67960F4 Offset: 0x67920F4 VA: 0x67960F4
+	private void StartUnlocking(TimeLockComponent timeLockComponent) { }
+
+	// RVA: 0x6796908 Offset: 0x6792908 VA: 0x6796908 Slot: 16
+	protected override void ProcessComponents(ReadOnlyCollection<TimeLockComponent> components) { }
+
+	// RVA: 0x6796D20 Offset: 0x6792D20 VA: 0x6796D20
+	private void HandleMergeState(TimeLockComponent timeLockComponent) { }
+
+	// RVA: 0x67962DC Offset: 0x67922DC VA: 0x67962DC
+	private bool AreItemsInGroupBeingUnlocked(TimeLockComponent timeLockComponent) { }
+
+	// RVA: 0x6795FC4 Offset: 0x6791FC4 VA: 0x6795FC4
+	private void ProcessCountdown(TimeLockComponent timeLockComponent) { }
+
+	// RVA: 0x67966A8 Offset: 0x67926A8 VA: 0x67966A8
+	private void UpdateCanUnlockStatus(TimeLockComponent timeLockComponent) { }
+
+	// RVA: 0x67964D4 Offset: 0x67924D4 VA: 0x67964D4
+	private void FireUnlockStateSignal(TimeLockComponent timeLockComponent, bool isStarted) { }
+
+	// RVA: 0x6796DD4 Offset: 0x6792DD4 VA: 0x6796DD4 Slot: 11
+	protected override void EntityCreated(Entity entity) { }
+
+	// RVA: 0x6796FEC Offset: 0x6792FEC VA: 0x6796FEC Slot: 12
+	protected override void EntityRemoved(Entity entity) { }
+
+	// RVA: 0x67970D4 Offset: 0x67930D4 VA: 0x67970D4
+	public void .ctor() { }
+
+	// RVA: 0x6797170 Offset: 0x6793170 VA: 0x6797170
+	private static void .cctor() { }
+}
+

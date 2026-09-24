@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ExpendableSystem.<>c__DisplayClass7_0 // TypeDefIndex: 25729
+{
+	// Fields
+	public Entity expendableEntity; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A664CC Offset: 0x6A624CC VA: 0x6A664CC
+	public void .ctor() { }
+
+	// RVA: 0x6A664DC Offset: 0x6A624DC VA: 0x6A664DC
+	internal bool <HasSpawnedAnItemThisTick>b__0(ValueTuple<Entity, BornComponent> newEntityQuery) { }
+}
+

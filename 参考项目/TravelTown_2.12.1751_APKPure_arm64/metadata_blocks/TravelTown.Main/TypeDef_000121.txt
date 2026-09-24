@@ -1,0 +1,134 @@
+// Namespace: MergeEngine.Util
+public class WeightedItemList<TItem> // TypeDefIndex: 121
+{
+	// Fields
+	private List<WeightedItem<TItem>> _items; // 0x0
+	private int _weightSum; // 0x0
+
+	// Properties
+	public List<TItem> PlainItems { get; }
+	public int Count { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public List<TItem> get_PlainItems() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x49443D8 Offset: 0x49403D8 VA: 0x49443D8
+	|-WeightedItemList<int>.get_PlainItems
+	|
+	|-RVA: 0x49447BC Offset: 0x49407BC VA: 0x49447BC
+	|-WeightedItemList<Int32Enum>.get_PlainItems
+	|
+	|-RVA: 0x4944BA0 Offset: 0x4940BA0 VA: 0x4944BA0
+	|-WeightedItemList<object>.get_PlainItems
+	|
+	|-RVA: 0x4944F84 Offset: 0x4940F84 VA: 0x4944F84
+	|-WeightedItemList<__Il2CppFullySharedGenericType>.get_PlainItems
+	*/
+
+	// RVA: -1 Offset: -1
+	public int get_Count() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4944538 Offset: 0x4940538 VA: 0x4944538
+	|-WeightedItemList<int>.get_Count
+	|
+	|-RVA: 0x494491C Offset: 0x494091C VA: 0x494491C
+	|-WeightedItemList<Int32Enum>.get_Count
+	|
+	|-RVA: 0x4944D00 Offset: 0x4940D00 VA: 0x4944D00
+	|-WeightedItemList<object>.get_Count
+	|
+	|-RVA: 0x49450F0 Offset: 0x49410F0 VA: 0x49450F0
+	|-WeightedItemList<__Il2CppFullySharedGenericType>.get_Count
+	*/
+
+	// RVA: -1 Offset: -1
+	public void AddItem(WeightedItem<TItem> item) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4944554 Offset: 0x4940554 VA: 0x4944554
+	|-WeightedItemList<int>.AddItem
+	|
+	|-RVA: 0x4944938 Offset: 0x4940938 VA: 0x4944938
+	|-WeightedItemList<Int32Enum>.AddItem
+	|
+	|-RVA: 0x4944D1C Offset: 0x4940D1C VA: 0x4944D1C
+	|-WeightedItemList<object>.AddItem
+	|
+	|-RVA: 0x4945118 Offset: 0x4941118 VA: 0x4945118
+	|-WeightedItemList<__Il2CppFullySharedGenericType>.AddItem
+	*/
+
+	// RVA: -1 Offset: -1
+	public void AddItems(IEnumerable<WeightedItem<TItem>> items) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x49445D4 Offset: 0x49405D4 VA: 0x49445D4
+	|-WeightedItemList<int>.AddItems
+	|
+	|-RVA: 0x49449B8 Offset: 0x49409B8 VA: 0x49449B8
+	|-WeightedItemList<Int32Enum>.AddItems
+	|
+	|-RVA: 0x4944D9C Offset: 0x4940D9C VA: 0x4944D9C
+	|-WeightedItemList<object>.AddItems
+	|
+	|-RVA: 0x4945190 Offset: 0x4941190 VA: 0x4945190
+	|-WeightedItemList<__Il2CppFullySharedGenericType>.AddItems
+	*/
+
+	// RVA: -1 Offset: -1
+	public TItem GetItem(Random random) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4944654 Offset: 0x4940654 VA: 0x4944654
+	|-WeightedItemList<int>.GetItem
+	|
+	|-RVA: 0x4944A38 Offset: 0x4940A38 VA: 0x4944A38
+	|-WeightedItemList<Int32Enum>.GetItem
+	|
+	|-RVA: 0x4944E1C Offset: 0x4940E1C VA: 0x4944E1C
+	|-WeightedItemList<object>.GetItem
+	|
+	|-RVA: 0x4945218 Offset: 0x4941218 VA: 0x4945218
+	|-WeightedItemList<__Il2CppFullySharedGenericType>.GetItem
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x494473C Offset: 0x494073C VA: 0x494473C
+	|-WeightedItemList<int>..ctor
+	|
+	|-RVA: 0x4944B20 Offset: 0x4940B20 VA: 0x4944B20
+	|-WeightedItemList<Int32Enum>..ctor
+	|
+	|-RVA: 0x4944F04 Offset: 0x4940F04 VA: 0x4944F04
+	|-WeightedItemList<object>..ctor
+	|
+	|-RVA: 0x494539C Offset: 0x494139C VA: 0x494539C
+	|-WeightedItemList<__Il2CppFullySharedGenericType>..ctor
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	private void <AddItems>b__7_0(WeightedItem<TItem> item) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x49447AC Offset: 0x49407AC VA: 0x49447AC
+	|-WeightedItemList<int>.<AddItems>b__7_0
+	|
+	|-RVA: 0x4944B90 Offset: 0x4940B90 VA: 0x4944B90
+	|-WeightedItemList<Int32Enum>.<AddItems>b__7_0
+	|
+	|-RVA: 0x4944F74 Offset: 0x4940F74 VA: 0x4944F74
+	|-WeightedItemList<object>.<AddItems>b__7_0
+	|
+	|-RVA: 0x4945410 Offset: 0x4941410 VA: 0x4945410
+	|-WeightedItemList<__Il2CppFullySharedGenericType>.<AddItems>b__7_0
+	*/
+}
+

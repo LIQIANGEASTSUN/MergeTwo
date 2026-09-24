@@ -1,0 +1,30 @@
+Type: GameLogic.Player.Items.Collectable.ICollectableFeatures
+
+Method: System.Boolean get_Collectable()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Collectable.ICollectAction get_CollectAction()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_ConfirmCollectBelowMergeChainLevel()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_CollectOnSpawn()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

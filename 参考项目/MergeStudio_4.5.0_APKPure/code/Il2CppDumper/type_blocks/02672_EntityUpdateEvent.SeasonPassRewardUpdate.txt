@@ -1,0 +1,4 @@
+// Namespace: 
+public struct EntityUpdateEvent.SeasonPassRewardUpdate : IEvent // TypeDefIndex: 2672
+{}
+

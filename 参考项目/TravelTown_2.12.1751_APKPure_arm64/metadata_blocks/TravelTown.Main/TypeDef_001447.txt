@@ -1,0 +1,61 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class ImmediateToolCapability // TypeDefIndex: 1447
+{
+	// Fields
+	[CompilerGenerated]
+	private bool <IsToolbox>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private List<WeightedTool> <ToolsWeights>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private List<WeightedToolLevel> <ToolLevelsWeights>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private int <NumberOfToolsToSpawn>k__BackingField; // 0x28
+
+	// Properties
+	public bool IsToolbox { get; set; }
+	public List<WeightedTool> ToolsWeights { get; set; }
+	public List<WeightedToolLevel> ToolLevelsWeights { get; set; }
+	public int NumberOfToolsToSpawn { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6010698 Offset: 0x600C698 VA: 0x6010698
+	public bool get_IsToolbox() { }
+
+	[CompilerGenerated]
+	// RVA: 0x60106A0 Offset: 0x600C6A0 VA: 0x60106A0
+	public void set_IsToolbox(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x60106AC Offset: 0x600C6AC VA: 0x60106AC
+	public List<WeightedTool> get_ToolsWeights() { }
+
+	[CompilerGenerated]
+	// RVA: 0x60106B4 Offset: 0x600C6B4 VA: 0x60106B4
+	public void set_ToolsWeights(List<WeightedTool> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x60106BC Offset: 0x600C6BC VA: 0x60106BC
+	public List<WeightedToolLevel> get_ToolLevelsWeights() { }
+
+	[CompilerGenerated]
+	// RVA: 0x60106C4 Offset: 0x600C6C4 VA: 0x60106C4
+	public void set_ToolLevelsWeights(List<WeightedToolLevel> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x60106CC Offset: 0x600C6CC VA: 0x60106CC
+	public int get_NumberOfToolsToSpawn() { }
+
+	[CompilerGenerated]
+	// RVA: 0x60106D4 Offset: 0x600C6D4 VA: 0x60106D4
+	public void set_NumberOfToolsToSpawn(int value) { }
+
+	// RVA: 0x60106DC Offset: 0x600C6DC VA: 0x60106DC
+	public void .ctor() { }
+
+	// RVA: 0x60106F8 Offset: 0x600C6F8 VA: 0x60106F8
+	public void .ctor(ToolSpawningCapability toolSpawning, int numberOfToolsToSpawn) { }
+}
+

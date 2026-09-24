@@ -1,0 +1,18 @@
+// Namespace: Merger.MergeBoard.Models
+public interface IMergeBoardSelectedItemModel // TypeDefIndex: 25808
+{
+	// Properties
+	public abstract BindableProperty<ValueTuple<Entity, IMergeItem>> SelectedItem { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract BindableProperty<ValueTuple<Entity, IMergeItem>> get_SelectedItem();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void SetSelectedItem(Entity entity, IMergeItem mergeItem);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void ClearSelectedItem();
+}
+

@@ -1,0 +1,12 @@
+// Namespace: 
+private enum RewardEntity.RewardType // TypeDefIndex: 1990
+{
+	// Fields
+	public int value__; // 0x0
+	public const RewardEntity.RewardType RegularItem = 0;
+	public const RewardEntity.RewardType RegularSpawner = 1;
+	public const RewardEntity.RewardType DailyChallengeItem = 2;
+	public const RewardEntity.RewardType DailyChallengeSpawner = 3;
+	public const RewardEntity.RewardType DiscoveryBox = 4;
+}
+

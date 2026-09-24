@@ -1,0 +1,32 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class ExpendableCapability : CapabilityBase // TypeDefIndex: 1442
+{
+	// Fields
+	public int Uses; // 0x14
+	public bool IsTransformationByReason; // 0x18
+	public WeightedItemSpawnable[] Transformations; // 0x20
+	public EmptiableWeightedItemSpawnable[] SpawnItemOnExpended; // 0x28
+	public int NumItemsToSpawn; // 0x30
+	public bool RequireAllItemsToSpawn; // 0x34
+	public bool SpawnParticles; // 0x35
+	public bool SpawnOnEachInteraction; // 0x36
+	public SpawnParticleType SpawnParticleType; // 0x38
+	[LocalisationIdentifier]
+	public string SpawnedItemsLabel; // 0x40
+	private List<IMergeItem> _allSpawnedMergeItems; // 0x48
+	public ProducerTimerConfig Timer; // 0x50
+
+	// Properties
+	[JsonIgnore]
+	public List<IMergeItem> SpawnedMergeItems { get; }
+
+	// Methods
+
+	// RVA: 0x600FEE0 Offset: 0x600BEE0 VA: 0x600FEE0
+	public List<IMergeItem> get_SpawnedMergeItems() { }
+
+	// RVA: 0x601020C Offset: 0x600C20C VA: 0x601020C
+	public void .ctor() { }
+}
+

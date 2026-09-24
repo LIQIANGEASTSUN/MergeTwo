@@ -1,0 +1,39 @@
+{
+  "selected_source_files": 836,
+  "selected_structure_files": 849,
+  "selected_native_files": 1310,
+  "method_rows": 13384,
+  "native_implementation_rows": 12054,
+  "signature_only_rows": 1330,
+  "role_counts": {
+    "玩法基础类型与流程": 30,
+    "玩法模型直接依赖": 105,
+    "基类与直接依赖": 27,
+    "活动棋盘与扩展玩法": 97,
+    "状态、事件与存档直接依赖": 21,
+    "物品、棋盘与能量配置类型": 28,
+    "玩法动作与判定": 53,
+    "玩家状态与存档": 22,
+    "棋盘、格子与摆放": 20,
+    "合成物、生成与特殊功能": 333,
+    "合成任务": 14,
+    "玩法条件与奖励": 55,
+    "生成随机性直接依赖": 9,
+    "物品视觉与交互": 4,
+    "棋盘与物品界面直接引用": 12,
+    "棋盘界面与交互": 6
+  },
+  "ghidra_selected_methods": 112,
+  "ghidra_decompiled_methods": 109,
+  "ghidra_failed_methods": 3,
+  "ghidra_quality_screen": {
+    "candidate_for_manual_review": 39,
+    "out_of_range_control_flow": 62,
+    "expanded_output": 8
+  },
+  "type_declarations": 1047,
+  "script_signatures": 13345,
+  "named_calls": 18652,
+  "uniquely_resolved_named_calls": 9768,
+  "removed_source_files": 829
+}

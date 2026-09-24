@@ -1,0 +1,14 @@
+// Namespace: Framework.Core.Services.Backend.Remote.Payloads.BoardState
+public class BoardInventorySlots : BackendState // TypeDefIndex: 10963
+{
+	// Fields
+	public int MaxSlotsAmount; // 0x18
+	public int OpenSlotsAmount; // 0x1C
+	public InventorySlotCost NextSlotCost; // 0x20
+
+	// Methods
+
+	// RVA: 0x69275DC Offset: 0x69235DC VA: 0x69275DC
+	public void .ctor() { }
+}
+

@@ -1,0 +1,122 @@
+// Namespace: GameCore.Configuration.Definitions
+[Serializable]
+public abstract class ItemMultipleBase<TItemClass, TItemReference> : BaseReward, IItemMultipleBase // TypeDefIndex: 1584
+{
+	// Fields
+	[RequiredWeakReference]
+	[JsonProperty("itemReference")]
+	[ConstructorParameter(1)]
+	public TItemReference ItemReference; // 0x0
+
+	// Properties
+	[JsonIgnore]
+	public TItemClass Item { get; }
+	public override int Priority { get; }
+	public override string Name { get; }
+	[JsonIgnore]
+	public override string ConfigurationId { get; }
+	[JsonProperty("itemId")]
+	public string ItemId { get; set; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public TItemClass get_Item() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x5392218 Offset: 0x538E218 VA: 0x5392218
+	|-ItemMultipleBase<object, object>.get_Item
+	|
+	|-RVA: 0x5392BFC Offset: 0x538EBFC VA: 0x5392BFC
+	|-ItemMultipleBase<object, __Il2CppFullySharedGenericType>.get_Item
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 41
+	public override int get_Priority() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x5392308 Offset: 0x538E308 VA: 0x5392308
+	|-ItemMultipleBase<object, object>.get_Priority
+	|
+	|-RVA: 0x5392D3C Offset: 0x538ED3C VA: 0x5392D3C
+	|-ItemMultipleBase<object, __Il2CppFullySharedGenericType>.get_Priority
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 30
+	public override string get_Name() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x5392530 Offset: 0x538E530 VA: 0x5392530
+	|-ItemMultipleBase<object, object>.get_Name
+	|
+	|-RVA: 0x5392F68 Offset: 0x538EF68 VA: 0x5392F68
+	|-ItemMultipleBase<object, __Il2CppFullySharedGenericType>.get_Name
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 29
+	public override string get_ConfigurationId() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x5392894 Offset: 0x538E894 VA: 0x5392894
+	|-ItemMultipleBase<object, object>.get_ConfigurationId
+	|
+	|-RVA: 0x53933B4 Offset: 0x538F3B4 VA: 0x53933B4
+	|-ItemMultipleBase<object, __Il2CppFullySharedGenericType>.get_ConfigurationId
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 43
+	public string get_ItemId() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x5392898 Offset: 0x538E898 VA: 0x5392898
+	|-ItemMultipleBase<object, object>.get_ItemId
+	|
+	|-RVA: 0x53933C8 Offset: 0x538F3C8 VA: 0x53933C8
+	|-ItemMultipleBase<object, __Il2CppFullySharedGenericType>.get_ItemId
+	*/
+
+	// RVA: -1 Offset: -1
+	public void set_ItemId(string value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x5392938 Offset: 0x538E938 VA: 0x5392938
+	|-ItemMultipleBase<object, object>.set_ItemId
+	|
+	|-RVA: 0x53934C4 Offset: 0x538F4C4 VA: 0x53934C4
+	|-ItemMultipleBase<object, __Il2CppFullySharedGenericType>.set_ItemId
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 37
+	protected override string GetExtraLogData() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x5392B60 Offset: 0x538EB60 VA: 0x5392B60
+	|-ItemMultipleBase<object, object>.GetExtraLogData
+	|
+	|-RVA: 0x5393750 Offset: 0x538F750 VA: 0x5393750
+	|-ItemMultipleBase<object, __Il2CppFullySharedGenericType>.GetExtraLogData
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void .ctor(IRewardType type, RewardAmount rewardAmount, RewardDestination destination) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x5392BB8 Offset: 0x538EBB8 VA: 0x5392BB8
+	|-ItemMultipleBase<object, object>..ctor
+	|
+	|-RVA: 0x53937C4 Offset: 0x538F7C4 VA: 0x53937C4
+	|-ItemMultipleBase<object, __Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor(TItemReference itemReference, IRewardType type, RewardAmount rewardAmount, RewardDestination destination) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x5392BC0 Offset: 0x538EBC0 VA: 0x5392BC0
+	|-ItemMultipleBase<object, object>..ctor
+	|
+	|-RVA: 0x53937CC Offset: 0x538F7CC VA: 0x53937CC
+	|-ItemMultipleBase<object, __Il2CppFullySharedGenericType>..ctor
+	*/
+}
+

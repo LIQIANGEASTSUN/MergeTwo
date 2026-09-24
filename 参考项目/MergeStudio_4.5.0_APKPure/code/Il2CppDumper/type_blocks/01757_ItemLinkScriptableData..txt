@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ItemLinkScriptableData.<>c // TypeDefIndex: 1757
+{
+	// Fields
+	public static readonly ItemLinkScriptableData.<>c <>9; // 0x0
+	public static Func<ItemLinkScriptableData.ItemLinkScriptableSetData, bool> <>9__9_0; // 0x4
+	public static Func<ItemLinkScriptableData.ItemLinkScriptableSetData, int> <>9__9_1; // 0x8
+
+	// Methods
+
+	// RVA: 0x1912964 Offset: 0x1912964 VA: 0x1912964
+	private static void .cctor() { }
+
+	// RVA: 0x19129D8 Offset: 0x19129D8 VA: 0x19129D8
+	public void .ctor() { }
+
+	// RVA: 0x19129E0 Offset: 0x19129E0 VA: 0x19129E0
+	internal bool <ToModel>b__9_0(ItemLinkScriptableData.ItemLinkScriptableSetData s) { }
+
+	// RVA: 0x19129F0 Offset: 0x19129F0 VA: 0x19129F0
+	internal int <ToModel>b__9_1(ItemLinkScriptableData.ItemLinkScriptableSetData s) { }
+}
+

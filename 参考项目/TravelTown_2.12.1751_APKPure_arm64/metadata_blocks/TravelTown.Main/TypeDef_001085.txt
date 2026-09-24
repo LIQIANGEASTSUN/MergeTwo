@@ -1,0 +1,26 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public class PositionComponent : RemoteLoadedComponent<BoardItemPosition, SerializedPositionComponent, SerializedPositionComponent> // TypeDefIndex: 1085
+{
+	// Fields
+	public const string Key = "position";
+	public BoardItemPosition Position; // 0x30
+	public bool OnBoard; // 0x38
+
+	// Properties
+	public override string ComponentKey { get; }
+
+	// Methods
+
+	// RVA: 0x68FDBC0 Offset: 0x68F9BC0 VA: 0x68FDBC0 Slot: 11
+	public override string get_ComponentKey() { }
+
+	// RVA: 0x68FDC00 Offset: 0x68F9C00 VA: 0x68FDC00
+	public void .ctor(BoardItemPosition position, Entity entity) { }
+
+	// RVA: 0x68FDC78 Offset: 0x68F9C78 VA: 0x68FDC78 Slot: 15
+	public override void LoadComponent(SerializedPositionComponent componentData) { }
+
+	// RVA: 0x68FDC9C Offset: 0x68F9C9C VA: 0x68FDC9C Slot: 12
+	protected override void OnBeforeSerialize() { }
+}
+

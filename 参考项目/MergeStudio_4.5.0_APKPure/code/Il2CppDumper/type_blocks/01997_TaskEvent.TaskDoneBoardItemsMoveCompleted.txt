@@ -1,0 +1,9 @@
+// Namespace: 
+public struct TaskEvent.TaskDoneBoardItemsMoveCompleted : IEvent // TypeDefIndex: 1997
+{
+	// Fields
+	public BoardTaskItem CompletedTask; // 0x0
+	public RectTransform TargetSpawnItem; // 0x4
+	public Vector3 InitialPos; // 0x8
+}
+

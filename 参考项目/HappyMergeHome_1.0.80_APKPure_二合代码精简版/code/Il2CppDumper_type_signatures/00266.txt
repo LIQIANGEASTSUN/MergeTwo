@@ -1,0 +1,18 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class CatSwimmingModel.<>c__DisplayClass50_0 // TypeDefIndex: 266
+{
+	// Fields
+	public Game_CatSwimming gameCatSwimming; // 0x8
+	public int count; // 0xC
+	public List<TaskCompletionSource<bool>> addValueTask; // 0x10
+
+	// Methods
+
+	// RVA: 0x2B3FA44 Offset: 0x2B3FA44 VA: 0x2B3FA44
+	public void .ctor() { }
+
+	// RVA: 0x2B3FA4C Offset: 0x2B3FA4C VA: 0x2B3FA4C
+	internal void <AddActivityScore>b__0() { }
+}
+

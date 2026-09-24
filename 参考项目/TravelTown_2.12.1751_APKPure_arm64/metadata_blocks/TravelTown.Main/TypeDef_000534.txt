@@ -1,0 +1,31 @@
+// Namespace: MergeEngine.Model.Configuration
+public interface IBubbledItemsConfigurationModel // TypeDefIndex: 534
+{
+	// Properties
+	public abstract BubbledItemsConfig BubbledItemsConfig { get; }
+	public abstract NewBubbledItemsConfig NewBubbledItemsConfig { get; }
+	public abstract NewBubbledItemsConfig CoreBoardNewBubbledItemsConfig { get; }
+	public abstract List<WeightedItemSpawnable> ExpiredBubbleSpawnedItems { get; }
+	public abstract List<WeightedItemSpawnable> CompensationForRemovedBubblesItemsSpawnList { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract BubbledItemsConfig get_BubbledItemsConfig();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract NewBubbledItemsConfig get_NewBubbledItemsConfig();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract NewBubbledItemsConfig get_CoreBoardNewBubbledItemsConfig();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract List<WeightedItemSpawnable> get_ExpiredBubbleSpawnedItems();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract List<WeightedItemSpawnable> get_CompensationForRemovedBubblesItemsSpawnList();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract BubbleBlasterTierConfig GetBlasterTierForHc(int hcValue);
+}
+

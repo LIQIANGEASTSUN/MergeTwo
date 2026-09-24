@@ -1,0 +1,168 @@
+Type: InventoryPopup+<ScrollToBottom>d__42
+
+Method: System.Void .ctor(System.Int32 <>1__state)
+
+Disassembly:
+	0x02B9B67C BL 0x2C1BC80
+	0x02B9B680 LDP X20, X19, [X31 + 0x20]
+	0x02B9B684 MOV X2, X31
+	0x02B9B688 LDP X22, X21, [X31 + 0x10]
+	0x02B9B68C LDP X30, X23, [X31], #0x30
+	0x02B9B690 B 0x4A75464
+	0x02B9B694 STP X30, X23, [X31 - 0x30]!
+	0x02B9B698 STP X22, X21, [X31 + 0x10]
+	0x02B9B69C STP X20, X19, [X31 + 0x20]
+	0x02B9B6A0 ADRP X22, 0x3189000
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move W19, W1
+	005 Move X1, X31
+	006 Move X20, X0
+	007 Call Object..ctor, X0
+	008 Move [X20+16], W19
+	009 Move X20, [X31+16]
+	010 Move X19, [X31+24]
+	011 Move X30, [X31+32]
+	012 Return 
+
+Method: System.Void System.IDisposable.Dispose()
+
+Disassembly:
+	0x02B9B93C ADD X10, X10, 0x10
+
+ISIL:
+	001 Return 
+
+Method: System.Boolean MoveNext()
+
+Disassembly:
+	0x02B9B940 B.NE 0x2B9B92C
+	0x02B9B944 MOV X0, X23
+	0x02B9B948 MOVZ W2, 0x1
+	0x02B9B94C BL 0x23D527C
+	0x02B9B950 B 0x2B9B964
+	0x02B9B954 LDR W9, [X10]
+	0x02B9B958 ADD W9, W9, 0x1
+	0x02B9B95C ADD X8, X8, W9, 0x4, SXTW
+	0x02B9B960 ADD X0, X8, 0x138
+	0x02B9B964 LDP X8, X1, [X0]
+	0x02B9B968 MOV X0, X23
+	0x02B9B96C BLR X8
+	0x02B9B970 MOV X24, X0
+	0x02B9B974 CBZ X0, 0x2B9B88C
+	0x02B9B978 LDR X8, [X24]
+	0x02B9B97C LDR X1, [X25]
+	0x02B9B980 LDRH W9, [X8 + 0x12E]
+	0x02B9B984 CBZ X9, 0x2B9B9A8
+	0x02B9B988 LDR X10, [X8 + 0xB0]
+	0x02B9B98C ADD X10, X10, 0x8
+	0x02B9B990 LDUR X11, [X10 - 0x8]
+	0x02B9B994 CMP X11, X1
+	0x02B9B998 B.EQ 0x2B9B9B8
+	0x02B9B99C SUBS X9, X9, 0x1
+	0x02B9B9A0 ADD X10, X10, 0x10
+	0x02B9B9A4 B.NE 0x2B9B990
+	0x02B9B9A8 MOV X0, X24
+	0x02B9B9AC MOVZ W2, 0x6
+	0x02B9B9B0 BL 0x23D527C
+	0x02B9B9B4 B 0x2B9B9C8
+	0x02B9B9B8 LDR W9, [X10]
+	0x02B9B9BC ADD W9, W9, 0x6
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move W20, [X0+16]
+	005 Move X19, X0
+	006 Compare W20, 0
+	007 JumpIfEqual {23}
+	008 NotImplemented "Instruction CMP not yet implemented."
+	009 Move X8, [X19+32]
+	010 Move TEMP, 0
+	011 Not TEMP
+	012 Move W9, TEMP
+	013 Move [X19+16], W9
+	014 Compare X8, 0
+	015 JumpIfEqual {39}
+	016 Move X0, [X8+256]
+	017 Compare X0, 0
+	018 JumpIfEqual {39}
+	019 NotImplemented "Instruction MOVI not yet implemented."
+	020 NotImplemented "Instruction MOVI not yet implemented."
+	021 Move X1, X31
+	022 Call ScrollRect.set_normalizedPosition, X0, X1
+	023 Move [X19+24], X31
+	024 Move TEMP, 0
+	025 Not TEMP
+	026 Move W8, TEMP
+	027 Move X0, X19
+	028 Move X1, X31
+	029 Move [X19-8], W8
+	030 Call 0x239F888
+	031 Move W8, 1
+	032 Move [X19-8], W8
+	033 NotImplemented "Instruction CMP not yet implemented."
+	034 Move X20, [X31+16]
+	035 Move X19, [X31+24]
+	036 NotImplemented "Instruction CSET not yet implemented."
+	037 Move X30, [X31+32]
+	038 Return X0
+	039 Call 0x239FB90
+
+Method: System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+
+Disassembly:
+	0x02B9B9C0 ADD X8, X8, W9, 0x4, SXTW
+	0x02B9B9C4 ADD X0, X8, 0x138
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void System.Collections.IEnumerator.Reset()
+
+Disassembly:
+	0x02B9B9C8 LDP X8, X2, [X0]
+	0x02B9B9CC MOV X0, X24
+	0x02B9B9D0 MOV X1, X19
+	0x02B9B9D4 BLR X8
+	0x02B9B9D8 CBZ X0, 0x2B9B88C
+	0x02B9B9DC LDR X8, [X29]
+	0x02B9B9E0 LDR X9, [X0]
+	0x02B9B9E4 LDRB W11, [X9 + 0x130]
+	0x02B9B9E8 LDRB W10, [X8 + 0x130]
+	0x02B9B9EC CMP W11, W10
+	0x02B9B9F0 B.CC 0x2B9B88C
+	0x02B9B9F4 LDR X9, [X9 + 0xC8]
+	0x02B9B9F8 ADD X9, X9, X10, 0x3, LSL
+	0x02B9B9FC LDUR X9, [X9 - 0x8]
+
+ISIL:
+	001 Move [X31-16], X30
+	002 Move [X31-8], X19
+	003 Move X0, [0x2B370E8]
+	004 Call 0x239F8F8
+	005 Call 0x239FB80
+	006 Move X1, X31
+	007 Move X19, X0
+	008 Call NotSupportedException..ctor, X0
+	009 Move X0, [0x2B52608]
+	010 Call 0x239F8F8
+	011 Move X1, X0
+	012 Move X0, X19
+	013 Call 0x239FA54
+
+Method: System.Object System.Collections.IEnumerator.get_Current()
+
+Disassembly:
+	0x02B9BA00 CMP X9, X8
+	0x02B9BA04 B.NE 0x2B9B88C
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+

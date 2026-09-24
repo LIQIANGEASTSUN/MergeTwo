@@ -1,0 +1,25 @@
+// Namespace: Paxie.MergeStudio.Features.MiniBoard
+public abstract class MiniBoardHandler<T> : MiniBoardHandlerBase // TypeDefIndex: 1030
+{
+	// Fields
+	public T Config; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 50
+	public override RecurringEventConfigBase GetBaseConfig() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2D0604C Offset: 0x2D0604C VA: 0x2D0604C
+	|-MiniBoardHandler<object>.GetBaseConfig
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2D06054 Offset: 0x2D06054 VA: 0x2D06054
+	|-MiniBoardHandler<object>..ctor
+	*/
+}
+

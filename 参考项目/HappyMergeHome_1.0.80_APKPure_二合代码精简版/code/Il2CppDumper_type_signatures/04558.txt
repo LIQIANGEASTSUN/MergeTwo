@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class SummerWatermelonModel.<>c__DisplayClass54_0 // TypeDefIndex: 4558
+{
+	// Fields
+	public Vector3 position; // 0x8
+	public Action action; // 0x14
+
+	// Methods
+
+	// RVA: 0x31FCC5C Offset: 0x31FCC5C VA: 0x31FCC5C
+	public void .ctor() { }
+
+	// RVA: 0x3208F70 Offset: 0x3208F70 VA: 0x3208F70
+	internal void <FlyWatermelon>b__0() { }
+}
+

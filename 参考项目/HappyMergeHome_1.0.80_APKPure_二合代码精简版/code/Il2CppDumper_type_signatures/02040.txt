@@ -1,0 +1,24 @@
+// Namespace: 
+[Serializable]
+public class TableUnlockMergeLine : TableBase // TypeDefIndex: 2040
+{
+	// Fields
+	public int id; // 0x8
+	public int unlockType; // 0xC
+	public int[] unlockParam; // 0x10
+	public int unlockMergeId; // 0x14
+	public string desKey; // 0x18
+	public string animName; // 0x1C
+
+	// Methods
+
+	// RVA: 0x29AC0CC Offset: 0x29AC0CC VA: 0x29AC0CC Slot: 4
+	public override int GetID() { }
+
+	// RVA: 0x29AC120 Offset: 0x29AC120 VA: 0x29AC120
+	public void .ctor() { }
+
+	// RVA: 0x29AC128 Offset: 0x29AC128 VA: 0x29AC128
+	public int <>iFixBaseProxy_GetID() { }
+}
+

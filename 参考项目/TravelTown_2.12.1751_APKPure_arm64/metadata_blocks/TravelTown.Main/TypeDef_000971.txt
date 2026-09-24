@@ -1,0 +1,51 @@
+// Namespace: MergeEngine.ECS.Systems.Items
+public sealed class TimeLimitedActivationSystem : BaseItemSystem<TimeLimitedActivationComponent> // TypeDefIndex: 971
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x40
+	[Inject]
+	private INotificationDataFactory _notificationDataFactory; // 0x48
+	[Inject]
+	private IServerTimeService _serverTimeService; // 0x50
+	[InjectSystem]
+	private OperationTrackingSystem _operationTrackingSystem; // 0x58
+	[InjectSystem]
+	private BoardSystem _boardSystem; // 0x60
+	[InjectSystem]
+	private BoardInteractionSystem _boardInteractionSystem; // 0x68
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0x70
+
+	// Properties
+	public override SystemPriorities Priority { get; }
+	private long CurrentServerTimeMS { get; }
+
+	// Methods
+
+	// RVA: 0x67946F0 Offset: 0x67906F0 VA: 0x67946F0 Slot: 15
+	public override SystemPriorities get_Priority() { }
+
+	// RVA: 0x67946F8 Offset: 0x67906F8 VA: 0x67946F8
+	private long get_CurrentServerTimeMS() { }
+
+	[IteratorStateMachine(typeof(TimeLimitedActivationSystem.<OnWillProcessComponents>d__11))]
+	// RVA: 0x6794798 Offset: 0x6790798 VA: 0x6794798 Slot: 17
+	protected override IEnumerable<TimeLimitedActivationComponent> OnWillProcessComponents(ReadOnlyCollection<TimeLimitedActivationComponent> components) { }
+
+	// RVA: 0x6794848 Offset: 0x6790848 VA: 0x6794848 Slot: 18
+	protected override void ProcessComponent(TimeLimitedActivationComponent component) { }
+
+	// RVA: 0x6794B28 Offset: 0x6790B28 VA: 0x6794B28 Slot: 11
+	protected override void EntityCreated(Entity entity) { }
+
+	// RVA: 0x6794A24 Offset: 0x6790A24 VA: 0x6794A24
+	public static ExtraData CreateExtraDataWithTimerItemData(int timeLeft, bool isTimerActivated, string creationReason, string triggerReason, string removeReason) { }
+
+	// RVA: 0x67955EC Offset: 0x67915EC VA: 0x67955EC
+	private bool IsLocked(ComponentBase component) { }
+
+	// RVA: 0x6795654 Offset: 0x6791654 VA: 0x6795654
+	public void .ctor() { }
+}
+

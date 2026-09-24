@@ -1,0 +1,16 @@
+// Namespace: Paxie.MergeStudio.Features.MiniBoard
+[Serializable]
+public class KiteMiniBoardItemReward // TypeDefIndex: 1023
+{
+	// Fields
+	public string SetIDLevel; // 0x8
+	public int Quantity; // 0xC
+	public GameMainReward Reward; // 0x10
+	public float Probability; // 0x14
+
+	// Methods
+
+	// RVA: 0x17A8A58 Offset: 0x17A8A58 VA: 0x17A8A58
+	public void .ctor() { }
+}
+

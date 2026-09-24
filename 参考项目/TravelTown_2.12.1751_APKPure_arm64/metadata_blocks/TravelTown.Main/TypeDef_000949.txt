@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardTileLevelUnlockSystem.<>c__DisplayClass18_1 // TypeDefIndex: 949
+{
+	// Fields
+	public LockedComponent lockedComponent; // 0x10
+	public VisualComponent visualComponent; // 0x18
+	public BoardTileLevelUnlockSystem.<>c__DisplayClass18_0 CS$<>8__locals1; // 0x20
+
+	// Methods
+
+	// RVA: 0x678ABFC Offset: 0x6786BFC VA: 0x678ABFC
+	public void .ctor() { }
+
+	// RVA: 0x678AE10 Offset: 0x6786E10 VA: 0x678AE10
+	internal void <TryUnlockItems>g__ShakingCompleted|1(bool shaking) { }
+
+	// RVA: 0x678AFC8 Offset: 0x6786FC8 VA: 0x678AFC8
+	internal void <TryUnlockItems>g__UnlockingCompleted|2() { }
+}
+

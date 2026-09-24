@@ -1,0 +1,19 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "SpawnerSkipBoosterData", menuName = "Scriptable/Booster/SpawnerSkipBoosterData", order = 2)]
+public class SpawnerSkipBoosterData : BoosterItemData // TypeDefIndex: 1924
+{
+	// Fields
+	private List<int> _blockedIds; // 0x3C
+
+	// Methods
+
+	// RVA: 0x1929CEC Offset: 0x1929CEC VA: 0x1929CEC Slot: 4
+	public override List<BoardPositionEntity> GetAvailablePositions(BoardEntity boardEntity, EventEntity eventEntity, BoardData boardData, out string keySuffix) { }
+
+	// RVA: 0x192A27C Offset: 0x192A27C VA: 0x192A27C
+	public bool IsValidForTutorial(BoardEntity boardEntity, BoardData boardData) { }
+
+	// RVA: 0x192A4DC Offset: 0x192A4DC VA: 0x192A4DC
+	public void .ctor() { }
+}
+

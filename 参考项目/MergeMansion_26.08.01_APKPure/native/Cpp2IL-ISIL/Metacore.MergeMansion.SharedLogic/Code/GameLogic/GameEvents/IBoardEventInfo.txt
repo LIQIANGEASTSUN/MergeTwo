@@ -1,0 +1,103 @@
+Type: Code.GameLogic.GameEvents.IBoardEventInfo
+
+Method: Metaplay.Core.IStringId get_BoardEventId()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Requirements.PlayerRequirement get_UnlockRequirement()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Decorations.DecorationInfo get_ActiveDecoration()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Merge.MergeBoardId get_MergeBoardId()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.Activables.ExtendableEventParams get_ExtendableEventParams()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.MetaRef`1<Code.GameLogic.IAP.InAppProductInfo> get_ExtensionInAppProduct()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.MetaDuration get_ExtensionPurchaseSafetyMargin()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.List`1<GameLogic.Player.Rewards.IPlayerReward> GetExtensionRewards(GameLogic.Player.IPlayer player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean CanExtendLatestActivation(GameLogic.Player.PlayerModel player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean IsEndingSoon(GameLogic.Player.PlayerModel player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean TryGetVisibleStatus(GameLogic.Player.PlayerModel player, out Metaplay.Core.Activables.MetaActivableVisibleStatus visibleStatus)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean UsesLeaderboard()
+
+Disassembly:
+	0x0330D38C RET
+	0x0330D390 STR X1, [X0 + 0x40]!
+
+ISIL:
+	001 Move W0, W31
+	002 Return X0
+
+Method: Metaplay.Core.Activables.MetaActivableParams get_ActivableParams()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.String get_Description()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BoardEvent.BoardFeatureTutorialStatusChanged : IEvent // TypeDefIndex: 1847
+{
+	// Fields
+	public bool IsActive; // 0x0
+}
+

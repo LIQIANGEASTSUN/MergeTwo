@@ -1,0 +1,23 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeBoard.<>c__DisplayClass89_0 // TypeDefIndex: 2743
+{
+	// Fields
+	public MergeBoard.Grid grid; // 0x8
+	public Action tweenEndCall; // 0xC
+
+	// Methods
+
+	// RVA: 0x2C3639C Offset: 0x2C3639C VA: 0x2C3639C
+	public void .ctor() { }
+
+	// RVA: 0x2C363A4 Offset: 0x2C363A4 VA: 0x2C363A4
+	internal void <DoAnimation>b__0() { }
+
+	// RVA: 0x2C364F8 Offset: 0x2C364F8 VA: 0x2C364F8
+	internal void <DoAnimation>b__1() { }
+
+	// RVA: 0x2C365DC Offset: 0x2C365DC VA: 0x2C365DC
+	internal void <DoAnimation>b__2() { }
+}
+

@@ -1,0 +1,35 @@
+// Namespace: MergeEngine.Signal.Inventory
+public class ItemAddedToInventorySignal : ItemAmountInventoryBaseSignal // TypeDefIndex: 243
+{
+	// Fields
+	public string ItemId; // 0x28
+	[CompilerGenerated]
+	private readonly int <SlotIndex>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private readonly Nullable<int> <BoardItemIndex>k__BackingField; // 0x34
+	[CompilerGenerated]
+	private readonly Nullable<int> <StackSize>k__BackingField; // 0x3C
+
+	// Properties
+	public int SlotIndex { get; }
+	public Nullable<int> BoardItemIndex { get; }
+	public Nullable<int> StackSize { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3F10 Offset: 0x5FEFF10 VA: 0x5FF3F10
+	public int get_SlotIndex() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3F18 Offset: 0x5FEFF18 VA: 0x5FF3F18
+	public Nullable<int> get_BoardItemIndex() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3F20 Offset: 0x5FEFF20 VA: 0x5FF3F20
+	public Nullable<int> get_StackSize() { }
+
+	// RVA: 0x5FF3F28 Offset: 0x5FEFF28 VA: 0x5FF3F28
+	public void .ctor(string itemId, Nullable<int> boardItemIndex, int slotIndex, int availableSlots, int inventoryCapacity, int freeTilesOnBoard, InventorySlotType type, int numNewProducers, Nullable<int> stackSize) { }
+}
+

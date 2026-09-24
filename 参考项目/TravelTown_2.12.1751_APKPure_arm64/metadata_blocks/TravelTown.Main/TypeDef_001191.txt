@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ResourceConfig.<>c__DisplayClass9_0 // TypeDefIndex: 1191
+{
+	// Fields
+	public HashSet<PlayerResourceEnum> hash; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A139B8 Offset: 0x6A0F9B8 VA: 0x6A139B8
+	public void .ctor() { }
+
+	// RVA: 0x6A139C0 Offset: 0x6A0F9C0 VA: 0x6A139C0
+	internal bool <IsResourceDefinitionsNotValid>b__0(ResourceDefinition x) { }
+}
+

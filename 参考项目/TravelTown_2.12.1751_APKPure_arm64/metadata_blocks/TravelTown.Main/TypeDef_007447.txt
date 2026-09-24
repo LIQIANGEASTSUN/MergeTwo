@@ -1,0 +1,19 @@
+// Namespace: Merger.Bubbles
+public interface ISmarterBubblesStreakModel // TypeDefIndex: 7447
+{
+	// Properties
+	public abstract SmarterBubblesStreakData StreakData { get; }
+	public abstract IReadOnlyDictionary<CurrentBoardType, SmarterBubblesStreakData> StreakBoardData { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract SmarterBubblesStreakData get_StreakData();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract IReadOnlyDictionary<CurrentBoardType, SmarterBubblesStreakData> get_StreakBoardData();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void TryAdd(IMergeGraphItem mergeGraphItem);
+}
+

@@ -1,0 +1,14 @@
+// Namespace: 
+[Serializable]
+public class KiteItemLink.ArchiveRewardItem // TypeDefIndex: 1742
+{
+	// Fields
+	public int SetID; // 0x8
+	public int Level; // 0xC
+
+	// Methods
+
+	// RVA: 0x19100E8 Offset: 0x19100E8 VA: 0x19100E8
+	public void .ctor() { }
+}
+

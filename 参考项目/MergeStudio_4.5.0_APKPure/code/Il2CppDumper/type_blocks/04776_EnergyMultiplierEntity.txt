@@ -1,0 +1,28 @@
+// Namespace: MergePuzzle.EnergyMultiplier
+[Serializable]
+public class EnergyMultiplierEntity // TypeDefIndex: 4776
+{
+	// Fields
+	public int Multiplier; // 0x8
+	public List<int> LevelUnlockedMultipliers; // 0xC
+	public List<int> LevelUnlockPopupShownMultipliers; // 0x10
+	public List<int> EnergyUnlockedMultipliers; // 0x14
+	public List<int> EnergyUnlockPopupShownMultipliers; // 0x18
+	public int TutorialStep103WorkaroundCount; // 0x1C
+	public Dictionary<int, int> EnergySpends; // 0x20
+
+	// Methods
+
+	// RVA: 0x1DC3FF0 Offset: 0x1DC3FF0 VA: 0x1DC3FF0
+	public void ResetEnergySpends() { }
+
+	// RVA: 0x1DC4054 Offset: 0x1DC4054 VA: 0x1DC4054
+	public void AddEnergySpend(int multiplier, int energySpend) { }
+
+	// RVA: 0x1DC4174 Offset: 0x1DC4174 VA: 0x1DC4174
+	public void Reset() { }
+
+	// RVA: 0x1DC4248 Offset: 0x1DC4248 VA: 0x1DC4248
+	public void .ctor() { }
+}
+

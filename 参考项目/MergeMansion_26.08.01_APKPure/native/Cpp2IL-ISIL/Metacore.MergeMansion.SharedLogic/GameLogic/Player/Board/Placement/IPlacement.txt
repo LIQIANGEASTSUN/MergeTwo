@@ -1,0 +1,16 @@
+Type: GameLogic.Player.Board.Placement.IPlacement
+
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Player.Board.Coordinate> ProducePlacements(GameLogic.Player.Board.Coordinate originalCoordinate, GameLogic.Player.Board.IBoardQuery boardQuery)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean HasSpace(GameLogic.Player.Board.Coordinate originalCoordinate, GameLogic.Player.Board.IBoardQuery boardQuery)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

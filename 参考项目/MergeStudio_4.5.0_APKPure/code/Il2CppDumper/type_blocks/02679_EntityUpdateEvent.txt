@@ -1,0 +1,9 @@
+// Namespace: MergePuzzle
+public class EntityUpdateEvent // TypeDefIndex: 2679
+{
+	// Methods
+
+	// RVA: 0x1A52950 Offset: 0x1A52950 VA: 0x1A52950
+	public void .ctor() { }
+}
+

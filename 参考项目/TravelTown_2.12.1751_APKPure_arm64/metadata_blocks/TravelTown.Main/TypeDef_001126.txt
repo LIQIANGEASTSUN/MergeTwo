@@ -1,0 +1,65 @@
+// Namespace: MergeEngine.ECS.Components.Board
+public class BoardItemCountComponent : ComponentBase // TypeDefIndex: 1126
+{
+	// Fields
+	[CompilerGenerated]
+	private Action Changed; // 0x20
+	[CompilerGenerated]
+	private Action<IMergeItem> ItemChanged; // 0x28
+	private Dictionary<string, int> _itemsCount; // 0x30
+	private Dictionary<string, int> _unlockedItemsCount; // 0x38
+	private Dictionary<string, int> _unboxedItemsCount; // 0x40
+	private int _bubbledItemsCount; // 0x48
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x690258C Offset: 0x68FE58C VA: 0x690258C
+	public void add_Changed(Action value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6902628 Offset: 0x68FE628 VA: 0x6902628
+	public void remove_Changed(Action value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x69026C4 Offset: 0x68FE6C4 VA: 0x69026C4
+	public void add_ItemChanged(Action<IMergeItem> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6902774 Offset: 0x68FE774 VA: 0x6902774
+	public void remove_ItemChanged(Action<IMergeItem> value) { }
+
+	// RVA: 0x6902824 Offset: 0x68FE824 VA: 0x6902824
+	public void .ctor(Entity entity) { }
+
+	// RVA: 0x6902908 Offset: 0x68FE908 VA: 0x6902908
+	public void AddItem(IMergeItem mergeItem, LockedComponent lockedComponent) { }
+
+	// RVA: 0x6902DC8 Offset: 0x68FEDC8 VA: 0x6902DC8
+	public void RemoveItem(IMergeItem mergeItem, LockedComponent lockedComponent) { }
+
+	// RVA: 0x6903040 Offset: 0x68FF040 VA: 0x6903040
+	public void UpdateItemToUnboxed(IMergeItem mergeItem, LockedComponent lockedComponent) { }
+
+	// RVA: 0x6903280 Offset: 0x68FF280 VA: 0x6903280
+	public int GetUnlockedItemsCount(IMergeItem item) { }
+
+	// RVA: 0x6903364 Offset: 0x68FF364 VA: 0x6903364
+	public int GetUnboxedItemsCount(IMergeItem item) { }
+
+	// RVA: 0x6903448 Offset: 0x68FF448 VA: 0x6903448
+	public void UpdateItemToLocked(IMergeItem mergeItem) { }
+
+	// RVA: 0x69035EC Offset: 0x68FF5EC VA: 0x69035EC
+	public void UpdateItemToUnlocked(IMergeItem mergeItem) { }
+
+	// RVA: 0x6903030 Offset: 0x68FF030 VA: 0x6903030
+	public void HandleBubbleBurst() { }
+
+	// RVA: 0x6903790 Offset: 0x68FF790 VA: 0x6903790
+	public int GetBubbledItemsCount() { }
+
+	// RVA: 0x6902D70 Offset: 0x68FED70 VA: 0x6902D70
+	private void InvokeChanged(IMergeItem mergeItem) { }
+}
+

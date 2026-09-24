@@ -1,0 +1,27 @@
+Type: UnityBoardController+<>c__DisplayClass551_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03278AA0 B.EQ 0x3278E84
+	0x03278AA4 ADRP X10, 0x245D000
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void <ProcessExtraSpawnQueue_Default>b__0()
+
+Disassembly:
+	0x03278AA8 LDR X10, [X10 + 0x90]
+	0x03278AAC LDR X10, [X10]
+	0x03278AB0 LDRB W11, [X10 + 0x130]
+	0x03278AB4 CMP W9, W11
+
+ISIL:
+	001 Move W8, [X0+16]
+	002 Subtract W8, W8, 1
+	003 Move [X0+16], W8
+	004 Return 
+

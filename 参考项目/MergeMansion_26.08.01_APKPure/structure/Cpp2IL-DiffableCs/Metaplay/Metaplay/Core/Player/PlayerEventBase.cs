@@ -1,0 +1,10 @@
+namespace Metaplay.Core.Player;
+
+[AnalyticsEventCategory("Player")]
+public abstract class PlayerEventBase : EntityEventBase
+{
+
+	protected PlayerEventBase() { }
+
+}
+

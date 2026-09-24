@@ -1,0 +1,21 @@
+// Namespace: ContextualizedECS.Context
+public interface IEntitiesHolder // TypeDefIndex: 33701
+{
+	// Properties
+	public abstract IEnumerable<Entity> Entities { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract IEnumerable<Entity> get_Entities();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract Entity AddEntity(Entity entity);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract bool RemoveEntity(Entity entity);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void ClearEntities();
+}
+

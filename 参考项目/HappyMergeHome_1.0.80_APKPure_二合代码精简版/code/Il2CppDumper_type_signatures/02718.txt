@@ -1,0 +1,12 @@
+// Namespace: 
+private enum MergeBoard.AutoTipType // TypeDefIndex: 2718
+{
+	// Fields
+	public int value__; // 0x0
+	public const MergeBoard.AutoTipType None = -1;
+	public const MergeBoard.AutoTipType Web = 0;
+	public const MergeBoard.AutoTipType Unlock = 1;
+	public const MergeBoard.AutoTipType Product = 2;
+	public const MergeBoard.AutoTipType Count = 3;
+}
+

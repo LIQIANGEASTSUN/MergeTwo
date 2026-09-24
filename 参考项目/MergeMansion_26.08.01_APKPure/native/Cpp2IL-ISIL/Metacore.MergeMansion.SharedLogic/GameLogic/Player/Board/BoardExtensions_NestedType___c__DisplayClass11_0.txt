@@ -1,0 +1,46 @@
+Type: GameLogic.Player.Board.BoardExtensions+<>c__DisplayClass11_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0366F084 BL 0x239BB80
+	0x0366F088 ADRP X8, 0x20C4000
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <FindFirstItemOfCertainType>b__0(System.ValueTuple`2<GameLogic.Player.Board.Coordinate, GameLogic.Player.Items.MergeItem> pair)
+
+Disassembly:
+	0x0367255C LDR X1, [X10]
+	0x03672560 CBZ X9, 0x3672584
+	0x03672564 LDR X10, [X8 + 0xB0]
+	0x03672568 ADD X10, X10, 0x8
+	0x0367256C LDUR X11, [X10 - 0x8]
+	0x03672570 CMP X11, X1
+	0x03672574 B.EQ 0x3672594
+	0x03672578 SUBS X9, X9, 0x1
+	0x0367257C ADD X10, X10, 0x10
+	0x03672580 B.NE 0x367256C
+	0x03672584 MOV X0, X28
+	0x03672588 MOV W2, W31
+
+ISIL:
+	001 Move [X31-16], X30
+	002 Move [X31-8], X19
+	003 Compare X2, 0
+	004 JumpIfEqual {15}
+	005 Move X19, X0
+	006 Move X0, X2
+	007 Move X1, X31
+	008 Call MergeItem.get_ItemId, X0
+	009 Move W8, [X19+16]
+	010 NotImplemented "Instruction CMP not yet implemented."
+	011 NotImplemented "Instruction CSET not yet implemented."
+	012 Move X30, [X31+16]
+	013 Move X19, [X31+24]
+	014 Return X0
+	015 Call 0x239FB90
+

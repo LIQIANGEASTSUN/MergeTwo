@@ -1,0 +1,22 @@
+// Namespace: GameCore.Configuration.Definitions
+public class ConfigurableScriptableObjectsLookup<T> : MultipleConfigurationLookup<T, string> // TypeDefIndex: 1582
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 4
+	protected override string GetKey(T item) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4D9198C Offset: 0x4D8D98C VA: 0x4D9198C
+	|-ConfigurableScriptableObjectsLookup<object>.GetKey
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4D919A4 Offset: 0x4D8D9A4 VA: 0x4D919A4
+	|-ConfigurableScriptableObjectsLookup<object>..ctor
+	*/
+}
+

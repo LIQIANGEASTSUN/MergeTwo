@@ -1,0 +1,49 @@
+// Namespace: ContextualizedECS.Context
+public struct TickContext // TypeDefIndex: 33703
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly IEntitiesHolder <EntitiesHolder>k__BackingField; // 0x0
+	[CompilerGenerated]
+	private readonly TickArgs <InArgs>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private readonly TickArgs <Result>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly Dictionary<Entity, HashSet<Type>> <TempComponents>k__BackingField; // 0x18
+
+	// Properties
+	public IEnumerable<Entity> Entities { get; }
+	public IEntitiesHolder EntitiesHolder { get; }
+	public TickArgs InArgs { get; }
+	public TickArgs Result { get; }
+	public Dictionary<Entity, HashSet<Type>> TempComponents { get; }
+
+	// Methods
+
+	// RVA: 0x5F16680 Offset: 0x5F12680 VA: 0x5F16680
+	public IEnumerable<Entity> get_Entities() { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x5F16720 Offset: 0x5F12720 VA: 0x5F16720
+	public IEntitiesHolder get_EntitiesHolder() { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x5F16728 Offset: 0x5F12728 VA: 0x5F16728
+	public TickArgs get_InArgs() { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x5F16730 Offset: 0x5F12730 VA: 0x5F16730
+	public TickArgs get_Result() { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x5F16738 Offset: 0x5F12738 VA: 0x5F16738
+	public Dictionary<Entity, HashSet<Type>> get_TempComponents() { }
+
+	// RVA: 0x5F15844 Offset: 0x5F11844 VA: 0x5F15844
+	public void .ctor(IEntitiesHolder entitiesManager, TickArgs inArgs, TickArgs result) { }
+}
+

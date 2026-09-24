@@ -1,0 +1,129 @@
+// Namespace: Paxie.MergeStudio.Features.MiniBoard
+public class MiniBoardCellController : MonoBehaviour // TypeDefIndex: 1082
+{
+	// Fields
+	private static readonly Vector3 NormalScale; // 0x0
+	[BoxGroup("Component")]
+	[SerializeField]
+	private BoxCollider2D BoxCollider2D; // 0x10
+	[BoxGroup("UI")]
+	[SerializeField]
+	private SpriteRenderer Background; // 0x14
+	[BoxGroup("UI")]
+	[SerializeField]
+	private SpriteRenderer DoneableBackground; // 0x18
+	[SerializeField]
+	[BoxGroup("UI")]
+	private SpriteRenderer SelectIcon; // 0x1C
+	[BoxGroup("Animation")]
+	[SerializeField]
+	private AnimationController AnimationController; // 0x20
+	[BoxGroup("Animation")]
+	[SerializeField]
+	private AnimationLoop SelectedIconAnimation; // 0x24
+	[BoxGroup("Animation")]
+	[SerializeField]
+	private AnimationLoop DoneableFadeAnimation; // 0x28
+	[CompilerGenerated]
+	private CellEntity <CellEntity>k__BackingField; // 0x2C
+	[CompilerGenerated]
+	private bool <IsEvenCell>k__BackingField; // 0x30
+	private BaseMiniBoardController _board; // 0x34
+	private bool _doneable; // 0x38
+	private MiniBoardCellData _boardCellData; // 0x3C
+	private Sequence _doneableSequence; // 0x40
+
+	// Properties
+	public CellEntity CellEntity { get; set; }
+	public bool IsEvenCell { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x17AEBF0 Offset: 0x17AEBF0 VA: 0x17AEBF0
+	public CellEntity get_CellEntity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x17AEBF8 Offset: 0x17AEBF8 VA: 0x17AEBF8
+	private void set_CellEntity(CellEntity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x17AEC00 Offset: 0x17AEC00 VA: 0x17AEC00
+	public bool get_IsEvenCell() { }
+
+	[CompilerGenerated]
+	// RVA: 0x17AEC08 Offset: 0x17AEC08 VA: 0x17AEC08
+	private void set_IsEvenCell(bool value) { }
+
+	// RVA: 0x17AEC10 Offset: 0x17AEC10 VA: 0x17AEC10
+	private void ArrangeSorting(bool moveToFront) { }
+
+	// RVA: 0x17AEE10 Offset: 0x17AEE10 VA: 0x17AEE10
+	public void Initialize(BaseMiniBoardController board, CellEntity cellEntity) { }
+
+	// RVA: 0x17AF04C Offset: 0x17AF04C VA: 0x17AF04C
+	private void ArrangeBackground() { }
+
+	// RVA: 0x17AF1C0 Offset: 0x17AF1C0 VA: 0x17AF1C0
+	public void Deselect() { }
+
+	// RVA: 0x17AF1E0 Offset: 0x17AF1E0 VA: 0x17AF1E0
+	public void Select() { }
+
+	// RVA: 0x17AF2D0 Offset: 0x17AF2D0 VA: 0x17AF2D0
+	public void SelectWithAnimation() { }
+
+	// RVA: 0x17AF148 Offset: 0x17AF148 VA: 0x17AF148
+	public void ArrangeSelectedImage(bool isActive) { }
+
+	// RVA: 0x17AF660 Offset: 0x17AF660 VA: 0x17AF660
+	public void DisableTrigger(bool disabled) { }
+
+	// RVA: 0x17AF6FC Offset: 0x17AF6FC VA: 0x17AF6FC
+	public void SetDoneableBackground(bool enable) { }
+
+	// RVA: 0x17AF99C Offset: 0x17AF99C VA: 0x17AF99C
+	public void DisableDoneableBackground() { }
+
+	// RVA: 0x17AF9A4 Offset: 0x17AF9A4 VA: 0x17AF9A4
+	public void EnableDoneableBackground() { }
+
+	// RVA: 0x17AF8B8 Offset: 0x17AF8B8 VA: 0x17AF8B8
+	public Tween DODoneableBackground(bool fadeIn) { }
+
+	// RVA: 0x17AF9AC Offset: 0x17AF9AC VA: 0x17AF9AC
+	public Vector3 GetCornerPosition(Transform referenceTransform) { }
+
+	// RVA: 0x17AF9E0 Offset: 0x17AF9E0 VA: 0x17AF9E0
+	public Vector3 GetCornerPosition(Transform referenceTransform, float coef) { }
+
+	// RVA: 0x17AFB60 Offset: 0x17AFB60 VA: 0x17AFB60
+	public void ArrangeSortingJelly() { }
+
+	// RVA: 0x17AFB70 Offset: 0x17AFB70 VA: 0x17AFB70
+	public void RestoreSorting() { }
+
+	// RVA: 0x17AFB80 Offset: 0x17AFB80 VA: 0x17AFB80
+	public void StartMergeHintSorting(int offset) { }
+
+	// RVA: 0x17AFBB8 Offset: 0x17AFBB8 VA: 0x17AFBB8
+	public void DestroyCell() { }
+
+	// RVA: 0x17AFC28 Offset: 0x17AFC28 VA: 0x17AFC28
+	private void OnDestroy() { }
+
+	// RVA: 0x17AFC68 Offset: 0x17AFC68 VA: 0x17AFC68
+	public void .ctor() { }
+
+	// RVA: 0x17AFC70 Offset: 0x17AFC70 VA: 0x17AFC70
+	private static void .cctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x17AFCD4 Offset: 0x17AFCD4 VA: 0x17AFCD4
+	private void <SetDoneableBackground>b__28_0() { }
+
+	[CompilerGenerated]
+	// RVA: 0x17AFD18 Offset: 0x17AFD18 VA: 0x17AFD18
+	private void <SetDoneableBackground>b__28_1() { }
+}
+

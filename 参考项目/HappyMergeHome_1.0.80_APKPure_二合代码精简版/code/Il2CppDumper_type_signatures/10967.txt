@@ -1,0 +1,115 @@
+// Namespace: DragonU3DSDK.Storage
+[Serializable]
+public class StorageNewbieRoom : StorageBase // TypeDefIndex: 10967
+{
+	// Fields
+	[JsonProperty]
+	private int roomId; // 0x8
+	[JsonProperty]
+	private StorageList<int> nodesData; // 0xC
+	[JsonProperty]
+	private long startTime; // 0x10
+	[JsonProperty]
+	private long endTime; // 0x18
+	[JsonProperty]
+	private StorageList<int> boxData; // 0x20
+	[JsonProperty]
+	private int knifeCount; // 0x24
+	[JsonProperty]
+	private StorageList<int> unSetItems; // 0x28
+	[JsonProperty]
+	private int openBox; // 0x2C
+	[JsonProperty]
+	private bool isShowStart; // 0x30
+	[JsonProperty]
+	private int taskIndex; // 0x34
+	[JsonProperty]
+	private int exp; // 0x38
+
+	// Properties
+	[JsonIgnore]
+	public int RoomId { get; set; }
+	[JsonIgnore]
+	public StorageList<int> NodesData { get; }
+	[JsonIgnore]
+	public long StartTime { get; set; }
+	[JsonIgnore]
+	public long EndTime { get; set; }
+	[JsonIgnore]
+	public StorageList<int> BoxData { get; }
+	[JsonIgnore]
+	public int KnifeCount { get; set; }
+	[JsonIgnore]
+	public StorageList<int> UnSetItems { get; }
+	[JsonIgnore]
+	public int OpenBox { get; set; }
+	[JsonIgnore]
+	public bool IsShowStart { get; set; }
+	[JsonIgnore]
+	public int TaskIndex { get; set; }
+	[JsonIgnore]
+	public int Exp { get; set; }
+
+	// Methods
+
+	// RVA: 0x26B270C Offset: 0x26B270C VA: 0x26B270C
+	public int get_RoomId() { }
+
+	// RVA: 0x26B2714 Offset: 0x26B2714 VA: 0x26B2714
+	public void set_RoomId(int value) { }
+
+	// RVA: 0x26B27C8 Offset: 0x26B27C8 VA: 0x26B27C8
+	public StorageList<int> get_NodesData() { }
+
+	// RVA: 0x26B27D0 Offset: 0x26B27D0 VA: 0x26B27D0
+	public long get_StartTime() { }
+
+	// RVA: 0x26B27D8 Offset: 0x26B27D8 VA: 0x26B27D8
+	public void set_StartTime(long value) { }
+
+	// RVA: 0x26B28A0 Offset: 0x26B28A0 VA: 0x26B28A0
+	public long get_EndTime() { }
+
+	// RVA: 0x26B28A8 Offset: 0x26B28A8 VA: 0x26B28A8
+	public void set_EndTime(long value) { }
+
+	// RVA: 0x26B2970 Offset: 0x26B2970 VA: 0x26B2970
+	public StorageList<int> get_BoxData() { }
+
+	// RVA: 0x26B2978 Offset: 0x26B2978 VA: 0x26B2978
+	public int get_KnifeCount() { }
+
+	// RVA: 0x26B2980 Offset: 0x26B2980 VA: 0x26B2980
+	public void set_KnifeCount(int value) { }
+
+	// RVA: 0x26B2A34 Offset: 0x26B2A34 VA: 0x26B2A34
+	public StorageList<int> get_UnSetItems() { }
+
+	// RVA: 0x26B2A3C Offset: 0x26B2A3C VA: 0x26B2A3C
+	public int get_OpenBox() { }
+
+	// RVA: 0x26B2A44 Offset: 0x26B2A44 VA: 0x26B2A44
+	public void set_OpenBox(int value) { }
+
+	// RVA: 0x26B2AF8 Offset: 0x26B2AF8 VA: 0x26B2AF8
+	public bool get_IsShowStart() { }
+
+	// RVA: 0x26B2B00 Offset: 0x26B2B00 VA: 0x26B2B00
+	public void set_IsShowStart(bool value) { }
+
+	// RVA: 0x26B2BB4 Offset: 0x26B2BB4 VA: 0x26B2BB4
+	public int get_TaskIndex() { }
+
+	// RVA: 0x26B2BBC Offset: 0x26B2BBC VA: 0x26B2BBC
+	public void set_TaskIndex(int value) { }
+
+	// RVA: 0x26B2C70 Offset: 0x26B2C70 VA: 0x26B2C70
+	public int get_Exp() { }
+
+	// RVA: 0x26B2C78 Offset: 0x26B2C78 VA: 0x26B2C78
+	public void set_Exp(int value) { }
+
+	// RVA: 0x26B2D2C Offset: 0x26B2D2C VA: 0x26B2D2C
+	public void .ctor() { }
+}
+

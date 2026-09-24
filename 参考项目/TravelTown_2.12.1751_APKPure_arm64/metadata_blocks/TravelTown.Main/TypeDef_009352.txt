@@ -1,0 +1,79 @@
+// Namespace: Merger.Game.Signal
+public class BubbledItemCreatedSignal : MergeItemBubbleSignalBase // TypeDefIndex: 9352
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly bool <HasBurstPrice>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private readonly int <BurstPrice>k__BackingField; // 0x2C
+	[CompilerGenerated]
+	private readonly PlayerResourceEnum <BurstResourceType>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private readonly float <BubbleSpawnProbability>k__BackingField; // 0x34
+	[CompilerGenerated]
+	private readonly int <MinGameLevelToDropBubbles>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private readonly double <BubbleExpirationTimeInSeconds>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private readonly int <BubblesOnBoard>k__BackingField; // 0x48
+	[CompilerGenerated]
+	private readonly bool <HasOptionToBurstBubbleWithAd>k__BackingField; // 0x4C
+	[CompilerGenerated]
+	private readonly int <BlasterableTier>k__BackingField; // 0x50
+
+	// Properties
+	public bool HasBurstPrice { get; }
+	public int BurstPrice { get; }
+	public PlayerResourceEnum BurstResourceType { get; }
+	public float BubbleSpawnProbability { get; }
+	public int MinGameLevelToDropBubbles { get; }
+	public double BubbleExpirationTimeInSeconds { get; }
+	public int BubblesOnBoard { get; }
+	public bool HasOptionToBurstBubbleWithAd { get; }
+	public int BlasterableTier { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x676AD60 Offset: 0x6766D60 VA: 0x676AD60
+	public bool get_HasBurstPrice() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676AD68 Offset: 0x6766D68 VA: 0x676AD68
+	public int get_BurstPrice() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676AD70 Offset: 0x6766D70 VA: 0x676AD70
+	public PlayerResourceEnum get_BurstResourceType() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676AD78 Offset: 0x6766D78 VA: 0x676AD78
+	public float get_BubbleSpawnProbability() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676AD80 Offset: 0x6766D80 VA: 0x676AD80
+	public int get_MinGameLevelToDropBubbles() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676AD88 Offset: 0x6766D88 VA: 0x676AD88
+	public double get_BubbleExpirationTimeInSeconds() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676AD90 Offset: 0x6766D90 VA: 0x676AD90
+	public int get_BubblesOnBoard() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676AD98 Offset: 0x6766D98 VA: 0x676AD98
+	public bool get_HasOptionToBurstBubbleWithAd() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676ADA0 Offset: 0x6766DA0 VA: 0x676ADA0
+	public int get_BlasterableTier() { }
+
+	// RVA: 0x676ADA8 Offset: 0x6766DA8 VA: 0x676ADA8
+	public void .ctor(IMergeItem mergeItem, int mergeItemLevel, int burstPrice, PlayerResourceEnum burstResourceType, float bubbleSpawnProbability, int minGameLevelToDropBubbles, double bubbleExpirationTimeInSeconds, int bubblesOnBoard, bool hasOptionToBurstBubbleWithAd, int blasterableTier) { }
+
+	// RVA: 0x676AE24 Offset: 0x6766E24 VA: 0x676AE24
+	public void .ctor(IMergeItem mergeItem, int mergeItemLevel, float bubbleSpawnProbability, int minGameLevelToDropBubbles, double bubbleExpirationTimeInSeconds, int bubblesOnBoard, bool hasOptionToBurstBubbleWithAd, int blasterableTier) { }
+}
+

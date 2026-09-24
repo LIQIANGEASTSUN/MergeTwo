@@ -1,0 +1,43 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class RewardEntity : IComparable<RewardEntity> // TypeDefIndex: 1991
+{
+	// Fields
+	public int Level; // 0x8
+	public int SetID; // 0xC
+	public int FeatureID; // 0x10
+	public RewardHistoryEntity RewardHistoryEntity; // 0x14
+
+	// Methods
+
+	// RVA: 0x194A6F0 Offset: 0x194A6F0 VA: 0x194A6F0
+	public void .ctor() { }
+
+	// RVA: 0x194A70C Offset: 0x194A70C VA: 0x194A70C
+	public void .ctor(int setID, int level, RewardHistoryRecord historyRecord) { }
+
+	// RVA: 0x194A78C Offset: 0x194A78C VA: 0x194A78C
+	public void .ctor(int setID, int level, int featureID, RewardHistoryRecord historyRecord) { }
+
+	// RVA: 0x194A814 Offset: 0x194A814 VA: 0x194A814
+	private void .ctor(int setID, int level) { }
+
+	// RVA: 0x194A854 Offset: 0x194A854 VA: 0x194A854
+	public void CreateEmptyHistoryEntityIfNull() { }
+
+	// RVA: 0x194A930 Offset: 0x194A930 VA: 0x194A930
+	public bool IsFeature() { }
+
+	// RVA: 0x194A940 Offset: 0x194A940 VA: 0x194A940
+	private RewardEntity.RewardType GetRewardType() { }
+
+	// RVA: 0x194AC38 Offset: 0x194AC38 VA: 0x194AC38 Slot: 4
+	public int CompareTo(RewardEntity other) { }
+
+	// RVA: 0x194ACF4 Offset: 0x194ACF4 VA: 0x194ACF4
+	public static RewardEntity GetPickBoxEntity(ItemInfo itemInfo) { }
+
+	// RVA: 0x194AD5C Offset: 0x194AD5C VA: 0x194AD5C
+	public RewardHistoryEntity GetRewardHistoryEntity() { }
+}
+

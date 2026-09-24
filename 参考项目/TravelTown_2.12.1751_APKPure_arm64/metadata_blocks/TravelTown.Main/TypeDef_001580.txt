@@ -1,0 +1,189 @@
+// Namespace: GameCore.Configuration.Definitions
+public abstract class BaseReward : IRewardViewData, IRewardTextRepresented, IRewardTooltipData, IEquatable<IRewardViewData>, IRewardViewPresentable, IRewardData, IPrioritizedOrderReward // TypeDefIndex: 1580
+{
+	// Fields
+	[JsonIgnore]
+	private string _nameForDisplay; // 0x10
+	[CompilerGenerated]
+	private bool <IsFeatured>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private RewardAmount <RewardAmount>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private readonly string <ConfigurationId>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private bool <AutoOpenTooltip>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private bool <AutoOpenTooltipEnabled>k__BackingField; // 0x31
+	[CompilerGenerated]
+	private bool <HideAmountText>k__BackingField; // 0x32
+	[CompilerGenerated]
+	private bool <ShouldBeHidden>k__BackingField; // 0x33
+	[CompilerGenerated]
+	private readonly RewardDestination <Destination>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private RewardSource <RewardSource>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private readonly IRewardType <RewardType>k__BackingField; // 0x48
+	[CompilerGenerated]
+	private readonly AssetReferenceT<Sprite> <SpriteReference>k__BackingField; // 0x50
+	[CompilerGenerated]
+	private readonly int <Priority>k__BackingField; // 0x58
+
+	// Properties
+	[JsonProperty("isFeatured")]
+	public bool IsFeatured { get; set; }
+	[JsonIgnore]
+	public RewardAmount RewardAmount { get; set; }
+	[JsonProperty("amount")]
+	public int Amount { get; set; }
+	[JsonIgnore]
+	public virtual string ConfigurationId { get; }
+	[JsonIgnore]
+	public virtual string Name { get; }
+	[JsonIgnore]
+	public bool AutoOpenTooltip { get; set; }
+	[JsonIgnore]
+	public bool AutoOpenTooltipEnabled { get; set; }
+	[JsonIgnore]
+	public bool HideAmountText { get; set; }
+	[JsonIgnore]
+	public bool ShouldBeHidden { get; set; }
+	[JsonIgnore]
+	public abstract bool HasCollectScreen { get; }
+	public RewardDestination Destination { get; }
+	public RewardSource RewardSource { get; set; }
+	public IRewardType RewardType { get; }
+	public string Type { get; }
+	public virtual AssetReferenceT<Sprite> SpriteReference { get; }
+	public abstract bool ShouldHideIButton { get; }
+	public abstract bool ShowInfoButtonAfterContentLoad { get; }
+	public virtual RewardViewPresentationType PresentationType { get; }
+	public virtual int Priority { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x601EED8 Offset: 0x601AED8 VA: 0x601EED8 Slot: 5
+	public bool get_IsFeatured() { }
+
+	[CompilerGenerated]
+	// RVA: 0x601EEE0 Offset: 0x601AEE0 VA: 0x601EEE0
+	public void set_IsFeatured(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x601EEEC Offset: 0x601AEEC VA: 0x601EEEC Slot: 26
+	public RewardAmount get_RewardAmount() { }
+
+	[CompilerGenerated]
+	// RVA: 0x601EEF4 Offset: 0x601AEF4 VA: 0x601EEF4
+	protected void set_RewardAmount(RewardAmount value) { }
+
+	// RVA: 0x601EEFC Offset: 0x601AEFC VA: 0x601EEFC Slot: 28
+	public int get_Amount() { }
+
+	// RVA: 0x601F034 Offset: 0x601B034 VA: 0x601F034
+	public void set_Amount(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x601F16C Offset: 0x601B16C VA: 0x601F16C Slot: 29
+	public virtual string get_ConfigurationId() { }
+
+	// RVA: 0x601F174 Offset: 0x601B174 VA: 0x601F174 Slot: 30
+	public virtual string get_Name() { }
+
+	[CompilerGenerated]
+	// RVA: 0x601F1BC Offset: 0x601B1BC VA: 0x601F1BC Slot: 15
+	public bool get_AutoOpenTooltip() { }
+
+	[CompilerGenerated]
+	// RVA: 0x601F1C4 Offset: 0x601B1C4 VA: 0x601F1C4 Slot: 16
+	public void set_AutoOpenTooltip(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x601F1D0 Offset: 0x601B1D0 VA: 0x601F1D0
+	public bool get_AutoOpenTooltipEnabled() { }
+
+	[CompilerGenerated]
+	// RVA: 0x601F1D8 Offset: 0x601B1D8 VA: 0x601F1D8
+	public void set_AutoOpenTooltipEnabled(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x601F1E4 Offset: 0x601B1E4 VA: 0x601F1E4 Slot: 14
+	public bool get_HideAmountText() { }
+
+	[CompilerGenerated]
+	// RVA: 0x601F1EC Offset: 0x601B1EC VA: 0x601F1EC
+	public void set_HideAmountText(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x601F1F8 Offset: 0x601B1F8 VA: 0x601F1F8 Slot: 6
+	public bool get_ShouldBeHidden() { }
+
+	[CompilerGenerated]
+	// RVA: 0x601F200 Offset: 0x601B200 VA: 0x601F200
+	public void set_ShouldBeHidden(bool value) { }
+
+	// RVA: -1 Offset: -1 Slot: 31
+	public abstract bool get_HasCollectScreen();
+
+	[CompilerGenerated]
+	// RVA: 0x601F20C Offset: 0x601B20C VA: 0x601F20C Slot: 8
+	public RewardDestination get_Destination() { }
+
+	[CompilerGenerated]
+	// RVA: 0x601F214 Offset: 0x601B214 VA: 0x601F214 Slot: 9
+	public RewardSource get_RewardSource() { }
+
+	[CompilerGenerated]
+	// RVA: 0x601F21C Offset: 0x601B21C VA: 0x601F21C Slot: 10
+	public void set_RewardSource(RewardSource value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x601F224 Offset: 0x601B224 VA: 0x601F224 Slot: 25
+	public IRewardType get_RewardType() { }
+
+	// RVA: 0x601F22C Offset: 0x601B22C VA: 0x601F22C Slot: 24
+	public string get_Type() { }
+
+	[CompilerGenerated]
+	// RVA: 0x601F2CC Offset: 0x601B2CC VA: 0x601F2CC Slot: 32
+	public virtual AssetReferenceT<Sprite> get_SpriteReference() { }
+
+	// RVA: 0x601F2D4 Offset: 0x601B2D4 VA: 0x601F2D4
+	protected void .ctor(IRewardType rewardType, RewardAmount rewardAmount, RewardDestination destination) { }
+
+	// RVA: -1 Offset: -1 Slot: 33
+	public abstract bool get_ShouldHideIButton();
+
+	// RVA: -1 Offset: -1 Slot: 34
+	public abstract bool get_ShowInfoButtonAfterContentLoad();
+
+	// RVA: 0x601F334 Offset: 0x601B334 VA: 0x601F334 Slot: 35
+	public virtual string GetTopText(RewardDisplayTextData rewardDisplayTextData, RewardDisplayFlag viewFlags) { }
+
+	// RVA: 0x601F33C Offset: 0x601B33C VA: 0x601F33C Slot: 36
+	public virtual string GetBottomText(RewardDisplayTextData rewardDisplayTextData) { }
+
+	// RVA: 0x601F344 Offset: 0x601B344 VA: 0x601F344 Slot: 11
+	public string GetLogDebug() { }
+
+	// RVA: 0x601F514 Offset: 0x601B514 VA: 0x601F514 Slot: 37
+	protected virtual string GetExtraLogData() { }
+
+	// RVA: -1 Offset: -1 Slot: 38
+	public abstract IRewardViewData Clone();
+
+	// RVA: 0x601F55C Offset: 0x601B55C VA: 0x601F55C Slot: 39
+	public virtual bool Equals(IRewardViewData other) { }
+
+	// RVA: 0x601F880 Offset: 0x601B880 VA: 0x601F880 Slot: 0
+	public override bool Equals(object obj) { }
+
+	// RVA: 0x601F900 Offset: 0x601B900 VA: 0x601F900 Slot: 40
+	public virtual RewardViewPresentationType get_PresentationType() { }
+
+	[CompilerGenerated]
+	// RVA: 0x601F908 Offset: 0x601B908 VA: 0x601F908 Slot: 41
+	public virtual int get_Priority() { }
+}
+

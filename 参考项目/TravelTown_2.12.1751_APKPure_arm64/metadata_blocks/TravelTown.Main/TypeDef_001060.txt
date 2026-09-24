@@ -1,0 +1,12 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public interface ICollectable // TypeDefIndex: 1060
+{
+	// Properties
+	public abstract int Amount { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract int get_Amount();
+}
+

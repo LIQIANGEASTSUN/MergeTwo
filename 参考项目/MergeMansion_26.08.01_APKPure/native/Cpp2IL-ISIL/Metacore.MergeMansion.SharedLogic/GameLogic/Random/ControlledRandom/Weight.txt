@@ -1,0 +1,105 @@
+Type: GameLogic.Random.ControlledRandom.Weight
+
+Method: Metaplay.Core.Math.F32 get_NextEventTime()
+
+Disassembly:
+	0x033A2CE4 LDP X8, X1, [X0]
+	0x033A2CE8 MOV X0, X21
+
+ISIL:
+	001 Move W0, [X0]
+	002 Return X0
+
+Method: System.Void set_NextEventTime(Metaplay.Core.Math.F32 value)
+
+Disassembly:
+	0x033A2CEC BLR X8
+	0x033A2CF0 TBZ X0, 0x0, 0x33A2DB4
+
+ISIL:
+	001 Move [X0], W1
+	002 Return 
+
+Method: Metaplay.Core.Math.F32 get_AverageTimeBetweenEvents()
+
+Disassembly:
+	0x033A2CF4 LDR X21, [X31 + 0x18]
+	0x033A2CF8 CBZ X21, 0x33A2E50
+
+ISIL:
+	001 Move W0, [X0+4]
+	002 Return X0
+
+Method: System.Void set_AverageTimeBetweenEvents(Metaplay.Core.Math.F32 value)
+
+Disassembly:
+	0x033A2CFC LDR X8, [X21]
+	0x033A2D00 LDR X1, [X24]
+
+ISIL:
+	001 Move [X0+4], W1
+	002 Return 
+
+Method: System.Int32 get_OriginalIndex()
+
+Disassembly:
+	0x033A2D04 LDRH W9, [X8 + 0x12E]
+	0x033A2D08 CBZ X9, 0x33A2D2C
+
+ISIL:
+	001 Move W0, [X0+8]
+	002 Return X0
+
+Method: System.Void set_OriginalIndex(System.Int32 value)
+
+Disassembly:
+	0x033A2D0C LDR X10, [X8 + 0xB0]
+	0x033A2D10 ADD X10, X10, 0x8
+
+ISIL:
+	001 Move [X0+8], W1
+	002 Return 
+
+Method: System.Void .ctor(Metaplay.Core.Math.F32 frequency, System.Int32 originalIndex)
+
+Disassembly:
+	0x033A2D14 LDUR X11, [X10 - 0x8]
+	0x033A2D18 CMP X11, X1
+	0x033A2D1C B.EQ 0x33A2D3C
+
+ISIL:
+	001 Move [X0+4], W1
+	002 Move [X0+8], W2
+	003 Move [X0], W1
+	004 Return 
+
+Method: System.Void .ctor(Metaplay.Core.Math.F32 nextEventTime, Metaplay.Core.Math.F32 averageTimeBetweenEvents, System.Int32 originalIndex)
+
+Disassembly:
+	0x033A2D20 SUBS X9, X9, 0x1
+	0x033A2D24 ADD X10, X10, 0x10
+	0x033A2D28 B.NE 0x33A2D14
+
+ISIL:
+	001 Move [X0], W1
+	002 Move [X0+4], W2
+	003 Move [X0+8], W3
+	004 Return 
+
+Method: GameLogic.Random.ControlledRandom.Weight SetNextEventTime(Metaplay.Core.Math.F32 value)
+
+Disassembly:
+	0x033A2D2C MOV X0, X21
+	0x033A2D30 MOV W2, W31
+	0x033A2D34 BL 0x23D527C
+	0x033A2D38 B 0x33A2D48
+	0x033A2D3C LDRSW X9, [X10]
+
+ISIL:
+	001 Move X8, X1
+	002 Move W9, [X0+4]
+	003 Move W1, [X0+8]
+	004 NotImplemented "Instruction BFM not yet implemented."
+	005 Move X0, X8
+	006 Return X0
+

@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class TimeCycleSkipCooldownSystem.<>c__DisplayClass2_0 // TypeDefIndex: 33868
+{
+	// Fields
+	public SkipCooldownAction skipCooldownAction; // 0x10
+	public TimeCycleSkipCooldownSystem <>4__this; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A62CBC Offset: 0x6A5ECBC VA: 0x6A62CBC
+	public void .ctor() { }
+
+	// RVA: 0x6A62CD4 Offset: 0x6A5ECD4 VA: 0x6A62CD4
+	internal bool <Tick>b__0(ValueTuple<Entity, BoardTilePositionComponent, TimeCycleComponent> query) { }
+}
+

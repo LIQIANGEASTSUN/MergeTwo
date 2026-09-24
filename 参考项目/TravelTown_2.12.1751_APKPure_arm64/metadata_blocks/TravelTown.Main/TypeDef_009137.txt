@@ -1,0 +1,34 @@
+// Namespace: Merger.Game.Views.BoardItem
+public class BoardItemViewBehaviourFactory : IBoardItemViewBehaviourFactory // TypeDefIndex: 9137
+{
+	// Fields
+	private readonly DiContainer _container; // 0x10
+	private readonly List<IViewBehaviourAttacher> _attachers; // 0x18
+
+	// Methods
+
+	[Inject]
+	// RVA: 0x67316BC Offset: 0x672D6BC VA: 0x67316BC
+	public void .ctor(DiContainer container, IExternalBoardItemViewBehaviour[] factories) { }
+
+	// RVA: 0x6731778 Offset: 0x672D778 VA: 0x6731778
+	private void CreateAttachers() { }
+
+	// RVA: 0x6731A40 Offset: 0x672DA40 VA: 0x6731A40
+	private void CreateExternalAttachers(IExternalBoardItemViewBehaviour[] factories) { }
+
+	// RVA: -1 Offset: -1
+	private void RegisterAttacher<TViewBehaviourAttacher>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3BDA090 Offset: 0x3BD6090 VA: 0x3BDA090
+	|-BoardItemViewBehaviourFactory.RegisterAttacher<object>
+	|
+	|-RVA: 0x3BDA150 Offset: 0x3BD6150 VA: 0x3BDA150
+	|-BoardItemViewBehaviourFactory.RegisterAttacher<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x6731BE0 Offset: 0x672DBE0 VA: 0x6731BE0 Slot: 4
+	public void AddBehaviours(Entity entity, BoardItemView2 boardItemView2) { }
+}
+

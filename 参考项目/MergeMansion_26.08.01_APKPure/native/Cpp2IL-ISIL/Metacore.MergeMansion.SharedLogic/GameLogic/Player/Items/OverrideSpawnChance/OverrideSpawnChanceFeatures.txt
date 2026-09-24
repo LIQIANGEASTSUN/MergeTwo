@@ -1,0 +1,193 @@
+Type: GameLogic.Player.Items.OverrideSpawnChance.OverrideSpawnChanceFeatures
+
+Method: System.Collections.Generic.List`1<GameLogic.Player.Items.OverrideSpawnChance.OverrideSpawnChance> get_OverrideSpawnChances()
+
+Disassembly:
+	0x03606ED8 LDR X23, [X8 + 0x8]
+	0x03606EDC CBNZ X23, 0x3606F3C
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_OverrideSpawnChances(System.Collections.Generic.List`1<GameLogic.Player.Items.OverrideSpawnChance.OverrideSpawnChance> value)
+
+Disassembly:
+	0x03606EE0 LDR W9, [X0 + 0xE4]
+	0x03606EE4 CBNZ W9, 0x3606EF4
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Void .ctor(System.Collections.Generic.List`1<GameLogic.Player.Items.OverrideSpawnChance.OverrideSpawnChance> overrideSpawnChances)
+
+Disassembly:
+	0x03606EE8 BL 0x239BA64
+	0x03606EEC LDR X8, [X26]
+	0x03606EF0 LDR X8, [X8 + 0xB8]
+	0x03606EF4 ADRP X9, 0x212B000
+	0x03606EF8 LDR X9, [X9 + 0x578]
+	0x03606EFC LDR X24, [X8]
+	0x03606F00 LDR X0, [X9]
+	0x03606F04 BL 0x239BB80
+	0x03606F08 ADRP X8, 0x212B000
+	0x03606F0C MOV X1, X24
+	0x03606F10 MOV X3, X31
+	0x03606F14 LDR X8, [X8 + 0x600]
+	0x03606F18 MOV X23, X0
+	0x03606F1C LDR X2, [X8]
+	0x03606F20 BL 0x2996A34
+	0x03606F24 LDR X8, [X26]
+	0x03606F28 MOV X1, X23
+	0x03606F2C LDR X0, [X8 + 0xB8]
+	0x03606F30 STR X23, [X0 + 0x8]!
+	0x03606F34 BL 0x239B888
+	0x03606F38 LDR X0, [X26]
+	0x03606F3C LDR W8, [X0 + 0xE4]
+	0x03606F40 CBNZ W8, 0x3606F4C
+	0x03606F44 BL 0x239BA64
+	0x03606F48 LDR X0, [X26]
+	0x03606F4C LDR X8, [X0 + 0xB8]
+	0x03606F50 ADRP X27, 0x212B000
+	0x03606F54 LDR X24, [X8 + 0x10]
+	0x03606F58 LDR X27, [X27 + 0x570]
+	0x03606F5C CBNZ X24, 0x3606FB8
+	0x03606F60 LDR W9, [X0 + 0xE4]
+	0x03606F64 CBNZ W9, 0x3606F74
+	0x03606F68 BL 0x239BA64
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move X19, X1
+	005 Move X1, X31
+	006 Move X20, X0
+	007 Call Object..ctor, X0
+	008 Compare X19, 0
+	009 Invalid "Jump target not found in method."
+	010 Compare X20, 0
+	011 JumpIfEqual {35}
+	012 Move [X20+16], X19
+	013 Move X0, X20
+	014 Move X1, X19
+	015 Move X20, [X31+16]
+	016 Move X19, [X31+24]
+	017 Move X30, [X31+32]
+	018 Call 0x239F888
+	019 Return 
+	020 Move X0, [0x20CEE90]
+	021 Call 0x239F8F8
+	022 Call 0x239FB80
+	023 Move X19, X0
+	024 Move X0, [0x212F480]
+	025 Call 0x239F8F8
+	026 Move X1, X0
+	027 Move X0, X19
+	028 Move X2, X31
+	029 Call ArgumentException..ctor, X0, X1
+	030 Move X0, [0x212F488]
+	031 Call 0x239F8F8
+	032 Move X1, X0
+	033 Move X0, X19
+	034 Call 0x239FA54
+	035 Call 0x239FB90
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03606F6C LDR X8, [X26]
+	0x03606F70 LDR X8, [X8 + 0xB8]
+	0x03606F74 ADRP X9, 0x212B000
+	0x03606F78 LDR X9, [X9 + 0x578]
+	0x03606F7C LDR X25, [X8]
+	0x03606F80 LDR X0, [X9]
+	0x03606F84 BL 0x239BB80
+	0x03606F88 ADRP X8, 0x212B000
+	0x03606F8C MOV X1, X25
+
+ISIL:
+	001 Move [X31-16], X30
+	002 Move [X31-8], X19
+	003 Move X1, X31
+	004 Move X19, X0
+	005 Call Object..ctor, X0
+	006 Move [X19+16], X31
+	007 Move X0, X19
+	008 Move X1, X31
+	009 Move X30, [X31+16]
+	010 Move X19, [X31+24]
+	011 Call 0x239F888
+	012 Return 
+
+Method: System.Void .cctor()
+
+Disassembly:
+	0x03606F90 MOV X3, X31
+	0x03606F94 LDR X8, [X8 + 0x608]
+	0x03606F98 MOV X24, X0
+	0x03606F9C LDR X2, [X8]
+	0x03606FA0 BL 0x2996A34
+	0x03606FA4 LDR X8, [X26]
+	0x03606FA8 MOV X1, X24
+	0x03606FAC LDR X0, [X8 + 0xB8]
+	0x03606FB0 STR X24, [X0 + 0x10]!
+	0x03606FB4 BL 0x239B888
+	0x03606FB8 LDR X3, [X27]
+	0x03606FBC MOV X0, X22
+	0x03606FC0 MOV X1, X23
+	0x03606FC4 MOV X2, X24
+	0x03606FC8 BL 0x25E994C
+	0x03606FCC CBZ X20, 0x3607028
+	0x03606FD0 ADRP X22, 0x210C000
+	0x03606FD4 MOV X1, X0
+	0x03606FD8 MOV X0, X20
+	0x03606FDC LDR X22, [X22 + 0x648]
+	0x03606FE0 STR X1, [X0 + 0x10]!
+	0x03606FE4 BL 0x239B888
+	0x03606FE8 LDR X0, [X22]
+	0x03606FEC STR W21, [X20 + 0x18]
+	0x03606FF0 BL 0x239BB80
+	0x03606FF4 MOV W1, W19
+	0x03606FF8 MOV X2, X31
+	0x03606FFC MOV X21, X0
+	0x03607000 BL 0x3412A08
+	0x03607004 STR X21, [X20 + 0x20]!
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move W8, [0x2727B77]
+	005 Move X20, [0x212E9C8]
+	006 Move TEMP, X8
+	007 And TEMP, TEMP, 1
+	008 Compare TEMP, 1
+	009 JumpIfEqual {14}
+	010 Move X0, [0x212E9C8]
+	011 Call 0x239F8E4
+	012 Move W8, 1
+	013 Move [X19+2935], W8
+	014 Move X0, [X20]
+	015 Call 0x239FB80
+	016 Move X1, X31
+	017 Move X19, X0
+	018 Call Object..ctor, X0
+	019 Move X0, X19
+	020 Move X1, X31
+	021 Move [X0+16], X31
+	022 Call 0x239F888
+	023 Move X8, [X20]
+	024 Move X1, X19
+	025 Move X8, [X8+184]
+	026 Move [X8], X19
+	027 Move X8, [X20]
+	028 Move X20, [X31+16]
+	029 Move X19, [X31+24]
+	030 Move X0, [X8+184]
+	031 Move X30, [X31+32]
+	032 Call 0x239F888
+	033 Return 
+

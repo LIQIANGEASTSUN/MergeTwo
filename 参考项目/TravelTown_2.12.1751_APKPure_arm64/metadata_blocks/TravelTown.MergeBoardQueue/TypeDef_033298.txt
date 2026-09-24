@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardQueueModel.<>c // TypeDefIndex: 33298
+{
+	// Fields
+	public static readonly BoardQueueModel.<>c <>9; // 0x0
+	public static Func<QueuedItem, long> <>9__23_1; // 0x8
+
+	// Methods
+
+	// RVA: 0x6A599AC Offset: 0x6A559AC VA: 0x6A599AC
+	private static void .cctor() { }
+
+	// RVA: 0x6A59A14 Offset: 0x6A55A14 VA: 0x6A59A14
+	public void .ctor() { }
+
+	// RVA: 0x6A59A1C Offset: 0x6A55A1C VA: 0x6A59A1C
+	internal long <FindNewestInQueue>b__23_1(QueuedItem item) { }
+}
+

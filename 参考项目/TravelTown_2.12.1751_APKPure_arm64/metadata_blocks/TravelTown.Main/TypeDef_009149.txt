@@ -1,0 +1,9 @@
+// Namespace: Merger.Game.Views.BoardItem.ViewBehaviours
+public abstract class BoardItemViewBehaviourBase : BoardItemViewBehaviourBase<ViewModelBase> // TypeDefIndex: 9149
+{
+	// Methods
+
+	// RVA: 0x67327C0 Offset: 0x672E7C0 VA: 0x67327C0
+	protected void .ctor() { }
+}
+

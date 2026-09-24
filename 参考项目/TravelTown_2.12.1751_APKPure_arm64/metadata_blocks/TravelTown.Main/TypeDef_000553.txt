@@ -1,0 +1,21 @@
+// Namespace: MergeEngine.Model.Configuration
+public sealed class LocalMergeItemsConfigurationModel : ConfigurationModelBase<LocalMergeItemsConfig>, ILocalMergeItemsConfigurationModel // TypeDefIndex: 553
+{
+	// Fields
+	private LocalMergeItemsConfig _config; // 0x28
+
+	// Methods
+
+	// RVA: 0x613C1E0 Offset: 0x61381E0 VA: 0x613C1E0 Slot: 19
+	protected override void HandleDataLoaded(LocalMergeItemsConfig config) { }
+
+	// RVA: 0x613C1E8 Offset: 0x61381E8 VA: 0x613C1E8 Slot: 20
+	public bool IsLocalItem(string itemName) { }
+
+	// RVA: 0x613C284 Offset: 0x6138284 VA: 0x613C284 Slot: 21
+	public ReadOnlyCollection<string> GetLocalItemNames() { }
+
+	// RVA: 0x613C2A0 Offset: 0x61382A0 VA: 0x613C2A0
+	public void .ctor() { }
+}
+

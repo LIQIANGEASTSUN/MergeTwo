@@ -1,0 +1,83 @@
+// Namespace: MergeEngine.ECS.Systems.State
+public abstract class StateSystemBase<TStatePayload> : SystemBase // TypeDefIndex: 762
+{
+	// Fields
+	[CompilerGenerated]
+	private StateContext<TStatePayload> <StateContext>k__BackingField; // 0x0
+
+	// Properties
+	[Inject]
+	protected StateContext<TStatePayload> StateContext { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	protected StateContext<TStatePayload> get_StateContext() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x454505C Offset: 0x454105C VA: 0x454505C
+	|-StateSystemBase<object>.get_StateContext
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	private void set_StateContext(StateContext<TStatePayload> value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4545064 Offset: 0x4541064 VA: 0x4545064
+	|-StateSystemBase<object>.set_StateContext
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 13
+	protected abstract void LoadState(TStatePayload newState);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-StateSystemBase<object>.LoadState
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 6
+	protected override void InitializeSystem() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x454506C Offset: 0x454106C VA: 0x454506C
+	|-StateSystemBase<object>.InitializeSystem
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 7
+	protected override void DisposeSystem() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x45450F0 Offset: 0x45410F0 VA: 0x45450F0
+	|-StateSystemBase<object>.DisposeSystem
+	*/
+
+	// RVA: -1 Offset: -1
+	protected bool TryLoadComponent<TComponent, TPayload>(TComponent component, TPayload payload) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3AF70E8 Offset: 0x3AF30E8 VA: 0x3AF70E8
+	|-StateSystemBase<object>.TryLoadComponent<object, object>
+	|
+	|-RVA: 0x3AF71A8 Offset: 0x3AF31A8 VA: 0x3AF71A8
+	|-StateSystemBase<object>.TryLoadComponent<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	private void LoadStateInternal(TStatePayload state) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4545180 Offset: 0x4541180 VA: 0x4545180
+	|-StateSystemBase<object>.LoadStateInternal
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4545198 Offset: 0x4541198 VA: 0x4545198
+	|-StateSystemBase<object>..ctor
+	*/
+}
+

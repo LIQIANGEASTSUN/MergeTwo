@@ -1,0 +1,27 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class SystemManager.<>c__DisplayClass13_0<TSystem> // TypeDefIndex: 688
+{
+	// Fields
+	public SystemManager <>4__this; // 0x0
+	public object[] constructorParameters; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F39484 Offset: 0x3F35484 VA: 0x3F39484
+	|-SystemManager.<>c__DisplayClass13_0<object>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal TSystem <AddSystem>b__0() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F3948C Offset: 0x3F3548C VA: 0x3F3948C
+	|-SystemManager.<>c__DisplayClass13_0<object>.<AddSystem>b__0
+	*/
+}
+

@@ -1,0 +1,23 @@
+// Namespace: MergePuzzle.EnergyMultiplier
+[Serializable]
+public class KiteEnergyMultiplierConfig // TypeDefIndex: 4784
+{
+	// Fields
+	public bool IsActive; // 0x8
+	public float CurrencyClosestLevelProbability; // 0xC
+	public List<int> EnabledSpawners; // 0x10
+	public List<EnergyMultiplierOptions> MultiplierOptions; // 0x14
+	private Dictionary<int, EnergyMultiplierOptions> _multiplierOptionsCache; // 0x18
+
+	// Methods
+
+	// RVA: 0x1DC4FF0 Offset: 0x1DC4FF0 VA: 0x1DC4FF0
+	public EnergyMultiplierOptions GetMultiplierOptions(int multiplier) { }
+
+	// RVA: 0x1DC5C04 Offset: 0x1DC5C04 VA: 0x1DC5C04
+	private void InitializeMultiplierOptionsCache() { }
+
+	// RVA: 0x1DC5DCC Offset: 0x1DC5DCC VA: 0x1DC5DCC
+	public void .ctor() { }
+}
+

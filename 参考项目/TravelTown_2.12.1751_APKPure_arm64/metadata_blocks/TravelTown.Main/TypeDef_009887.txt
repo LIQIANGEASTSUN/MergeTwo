@@ -1,0 +1,13 @@
+// Namespace: Merger.Services.Backend.Sync.Data.Payloads.Board
+[Serializable]
+public class SyncBoardProducerInventory // TypeDefIndex: 9887
+{
+	// Fields
+	public List<InventoryItem> items; // 0x10
+
+	// Methods
+
+	// RVA: 0x67CCB60 Offset: 0x67C8B60 VA: 0x67CCB60
+	public void .ctor() { }
+}
+

@@ -1,0 +1,27 @@
+// Namespace: 
+[Serializable]
+public class UserEntity.DailyRewardEntity // TypeDefIndex: 2708
+{
+	// Fields
+	public long CurrentStartTimeSecond; // 0x8
+	public int TotalProgress; // 0x10
+	public int VolatileProgress; // 0x14
+	public bool CheckedInToday; // 0x18
+	public bool UpdatedForBalanceChanges; // 0x19
+	public UserEntity.DailyRewardEntity.DailyChestEntity ChestEntity; // 0x1C
+
+	// Methods
+
+	// RVA: 0x1A62B08 Offset: 0x1A62B08 VA: 0x1A62B08
+	public void .ctor() { }
+
+	// RVA: 0x1A5E170 Offset: 0x1A5E170 VA: 0x1A5E170
+	public void .ctor(bool set) { }
+
+	// RVA: 0x1A62BA8 Offset: 0x1A62BA8 VA: 0x1A62BA8
+	public void ProgressReward() { }
+
+	// RVA: 0x1A62D98 Offset: 0x1A62D98 VA: 0x1A62D98
+	public void GetProgress(int dataCount, out int currentDataIndex, out int weekStartIndex, out int currentWeekIndex) { }
+}
+

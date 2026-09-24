@@ -1,0 +1,88 @@
+// Namespace: Framework.Core.MVVM.ViewModel
+public class NavigationViewModel : Base // TypeDefIndex: 11211
+{
+	// Fields
+	[Inject]
+	private IUIModel _uiModel; // 0x28
+	[Inject]
+	private IBlockingFlags<BackButtonDisableFlag> _backButtonBlockingFlagsModel; // 0x30
+	private INavigationModel _navigationModel; // 0x38
+
+	// Properties
+	public string CurrentStateName { get; }
+	public string PreviousStateName { get; }
+	public AnalitycsState CurrentAnalyticsState { get; }
+	public BindableProperty<bool> UiEnabled { get; }
+	public bool BackButtonHasBlockingFlags { get; }
+	[Inject]
+	protected INavigationModel NavigationModel { get; set; }
+
+	// Methods
+
+	// RVA: 0x694A7E8 Offset: 0x69467E8 VA: 0x694A7E8 Slot: 15
+	public void add_StateChanged(Action<string> value) { }
+
+	// RVA: 0x694A894 Offset: 0x6946894 VA: 0x694A894 Slot: 16
+	public void remove_StateChanged(Action<string> value) { }
+
+	// RVA: 0x694A940 Offset: 0x6946940 VA: 0x694A940 Slot: 17
+	public string get_CurrentStateName() { }
+
+	// RVA: 0x694A9E4 Offset: 0x69469E4 VA: 0x694A9E4 Slot: 18
+	public string get_PreviousStateName() { }
+
+	// RVA: 0x694AA88 Offset: 0x6946A88 VA: 0x694AA88 Slot: 19
+	public AnalitycsState get_CurrentAnalyticsState() { }
+
+	// RVA: 0x694AB2C Offset: 0x6946B2C VA: 0x694AB2C Slot: 20
+	public BindableProperty<bool> get_UiEnabled() { }
+
+	// RVA: 0x694ABCC Offset: 0x6946BCC VA: 0x694ABCC Slot: 21
+	public bool get_BackButtonHasBlockingFlags() { }
+
+	// RVA: 0x694AC94 Offset: 0x6946C94 VA: 0x694AC94
+	protected INavigationModel get_NavigationModel() { }
+
+	// RVA: 0x694AC9C Offset: 0x6946C9C VA: 0x694AC9C
+	private void set_NavigationModel(INavigationModel value) { }
+
+	// RVA: 0x694ACC4 Offset: 0x6946CC4 VA: 0x694ACC4 Slot: 22
+	protected virtual void NavigationModelSet() { }
+
+	// RVA: 0x694ACC8 Offset: 0x6946CC8 VA: 0x694ACC8 Slot: 23
+	public bool CanGoBack() { }
+
+	// RVA: 0x694AD6C Offset: 0x6946D6C VA: 0x694AD6C Slot: 24
+	public bool CanTransitionTo(string transition) { }
+
+	// RVA: 0x694AE18 Offset: 0x6946E18 VA: 0x694AE18 Slot: 25
+	public void EnableUI(BlockUIFlag flagToClear) { }
+
+	// RVA: 0x694AEC4 Offset: 0x6946EC4 VA: 0x694AEC4 Slot: 26
+	public void DisableUI(BlockUIFlag flagToRaise) { }
+
+	// RVA: 0x694AF70 Offset: 0x6946F70 VA: 0x694AF70 Slot: 27
+	public void RequestTransition(string transition, object payload) { }
+
+	// RVA: 0x694B02C Offset: 0x694702C VA: 0x694B02C Slot: 28
+	public void Back() { }
+
+	// RVA: 0x694B0D0 Offset: 0x69470D0 VA: 0x694B0D0 Slot: 29
+	public void SetNavigationBackAction(Action action) { }
+
+	// RVA: 0x694B17C Offset: 0x694717C VA: 0x694B17C Slot: 30
+	public void BlockBackButton() { }
+
+	// RVA: 0x694B224 Offset: 0x6947224 VA: 0x694B224 Slot: 31
+	public void UnblockBackButton() { }
+
+	// RVA: 0x694B2CC Offset: 0x69472CC VA: 0x694B2CC Slot: 32
+	public void BlockBackButton(BackButtonDisableFlag flagToRise) { }
+
+	// RVA: 0x694B378 Offset: 0x6947378 VA: 0x694B378 Slot: 33
+	public void UnblockBackButton(BackButtonDisableFlag flagToRemove) { }
+
+	// RVA: 0x694B424 Offset: 0x6947424 VA: 0x694B424
+	public void .ctor() { }
+}
+

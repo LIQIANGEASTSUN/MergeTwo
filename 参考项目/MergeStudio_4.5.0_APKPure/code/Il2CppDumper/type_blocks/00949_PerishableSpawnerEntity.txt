@@ -1,0 +1,28 @@
+// Namespace: Paxie.MergeStudio.GameCore.Gameplay.Board.Items
+[Serializable]
+public class PerishableSpawnerEntity // TypeDefIndex: 949
+{
+	// Fields
+	public int SetID; // 0x8
+	public bool UsesEnergy; // 0xC
+	public int Capacity; // 0x10
+	public bool NonProbabilistic; // 0x14
+	public bool UseIndexedSpawn; // 0x15
+	public List<SpawnerSpawnedItem> SpawnedItems; // 0x18
+	public List<SpawnerSpawnIndexedItemGroup> IndexedSpawnedItemGroups; // 0x1C
+
+	// Methods
+
+	// RVA: 0x178F82C Offset: 0x178F82C VA: 0x178F82C
+	public SpawnerSpawnedItem GetNonProbabilisticItem(int currentCapacity) { }
+
+	// RVA: 0x178F8D8 Offset: 0x178F8D8 VA: 0x178F8D8
+	public SpawnerSpawnedItem GetIndexedSpawnedItem(int currentCapacity) { }
+
+	// RVA: 0x178FAD0 Offset: 0x178FAD0 VA: 0x178FAD0
+	public SpawnerSpawnedItem GetRandomItem() { }
+
+	// RVA: 0x178FBF0 Offset: 0x178FBF0 VA: 0x178FBF0
+	public void .ctor() { }
+}
+

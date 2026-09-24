@@ -1,0 +1,10 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "BoardItemSurpriseBox", menuName = "Scriptable/BoardItem/SurpriseBox", order = 7)]
+public class BoardItemSurpriseBox : BoardItemPerishableSpawner // TypeDefIndex: 1665
+{
+	// Methods
+
+	// RVA: 0x18CBC2C Offset: 0x18CBC2C VA: 0x18CBC2C
+	public void .ctor() { }
+}
+

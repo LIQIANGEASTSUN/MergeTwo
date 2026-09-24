@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class InteractionComponentExtensions.<>c__DisplayClass0_0 // TypeDefIndex: 25909
+{
+	// Fields
+	public List<string> itemsIds; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A98684 Offset: 0x6A94684 VA: 0x6A98684
+	public void .ctor() { }
+
+	// RVA: 0x6A98A9C Offset: 0x6A94A9C VA: 0x6A98A9C
+	internal bool <FindReadyItemToConsume>b__0(ItemMultiple item) { }
+}
+

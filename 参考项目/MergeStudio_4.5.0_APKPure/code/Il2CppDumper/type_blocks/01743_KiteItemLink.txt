@@ -1,0 +1,28 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class KiteItemLink // TypeDefIndex: 1743
+{
+	// Fields
+	private int _chainIndex; // 0x8
+	public int LinkIndex; // 0xC
+	public int SpawnerSetId; // 0x10
+	public int UnlockLevel; // 0x14
+	public int ArchiveLevel; // 0x18
+	public KiteItemLink.ArchiveRewardItem ArchiveReward; // 0x1C
+	private Nullable<ItemLinkID> _cachedLinkID; // 0x20
+
+	// Properties
+	public ItemLinkID LinkID { get; }
+
+	// Methods
+
+	// RVA: 0x190FFD4 Offset: 0x190FFD4 VA: 0x190FFD4
+	public ItemLinkID get_LinkID() { }
+
+	// RVA: 0x19100D8 Offset: 0x19100D8 VA: 0x19100D8
+	public void .ctor() { }
+
+	// RVA: 0x19100E0 Offset: 0x19100E0 VA: 0x19100E0
+	public void Initialize(int chainIndex) { }
+}
+

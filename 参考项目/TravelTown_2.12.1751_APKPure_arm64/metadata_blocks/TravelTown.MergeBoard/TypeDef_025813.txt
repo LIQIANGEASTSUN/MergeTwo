@@ -1,0 +1,24 @@
+// Namespace: Merger.MergeBoard.Models
+public class MergeBoardSelectedItemModel : ModelBase, IMergeBoardSelectedItemModel // TypeDefIndex: 25813
+{
+	// Fields
+	private readonly MutableBindableProperty<ValueTuple<Entity, IMergeItem>> _selectedItem; // 0x28
+
+	// Properties
+	public BindableProperty<ValueTuple<Entity, IMergeItem>> SelectedItem { get; }
+
+	// Methods
+
+	// RVA: 0x6A7DA88 Offset: 0x6A79A88 VA: 0x6A7DA88 Slot: 19
+	public BindableProperty<ValueTuple<Entity, IMergeItem>> get_SelectedItem() { }
+
+	// RVA: 0x6A7DA90 Offset: 0x6A79A90 VA: 0x6A7DA90 Slot: 20
+	public void SetSelectedItem(Entity entity, IMergeItem mergeItem) { }
+
+	// RVA: 0x6A7DB30 Offset: 0x6A79B30 VA: 0x6A7DB30 Slot: 21
+	public void ClearSelectedItem() { }
+
+	// RVA: 0x6A7DBC0 Offset: 0x6A79BC0 VA: 0x6A7DBC0
+	public void .ctor() { }
+}
+

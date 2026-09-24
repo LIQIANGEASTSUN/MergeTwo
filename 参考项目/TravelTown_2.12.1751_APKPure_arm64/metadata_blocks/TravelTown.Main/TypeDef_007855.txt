@@ -1,0 +1,10 @@
+// Namespace: Merger.Boosters.Declarations.Capabilities
+[Serializable]
+public class CooldownBlockCapability : CapabilityBase // TypeDefIndex: 7855
+{
+	// Methods
+
+	// RVA: 0x65C995C Offset: 0x65C595C VA: 0x65C995C
+	public void .ctor() { }
+}
+

@@ -1,0 +1,13 @@
+// Namespace: Framework.Core.Services.Backend.Remote.Payloads.BoardState
+[StateName("boardProducerInventory")]
+public class BoardProducerInventory : BackendState // TypeDefIndex: 10967
+{
+	// Fields
+	public List<ProducerInventoryItem> Items; // 0x18
+
+	// Methods
+
+	// RVA: 0x692760C Offset: 0x692360C VA: 0x692760C
+	public void .ctor() { }
+}
+

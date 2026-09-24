@@ -1,0 +1,29 @@
+// Namespace: Merger.Boosters.Declarations.Definitions.Interfaces.Services
+public interface IBoosterService // TypeDefIndex: 7838
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void ProcessBoosters();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void ProcessBoosters(List<RemoteBoosterData> boostersData);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void UpdateRemoteBoosterFromResponse(RemoteBoosterData boosterData);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract IPromise<BoosterInteractResponse<TResultData>> InteractWithBooster<TData, TResultData>(string uuId, TData interactionPayload);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBoosterService.InteractWithBooster<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract BoosterAnalyticsData GetActiveBoosterAnalyticsData(string boosterId);
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract IPromise<List<RemoteBoosterData>> GetActiveBoosters(bool mustSucceed = False);
+}
+

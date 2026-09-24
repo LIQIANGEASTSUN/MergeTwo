@@ -1,0 +1,16 @@
+// Namespace: Merger.MergeBoard.ViewModel
+public class MergeBoardItemSelectionBoxViewModel : ItemSelectionBoxViewModel // TypeDefIndex: 25664
+{
+	// Fields
+	[Inject]
+	private DiContainer _container; // 0xE8
+
+	// Methods
+
+	// RVA: 0x6A31DA8 Offset: 0x6A2DDA8 VA: 0x6A31DA8 Slot: 70
+	public override void TransitionToMergeGraph(IMergeItem mergeItem) { }
+
+	// RVA: 0x6A31F44 Offset: 0x6A2DF44 VA: 0x6A31F44
+	public void .ctor() { }
+}
+

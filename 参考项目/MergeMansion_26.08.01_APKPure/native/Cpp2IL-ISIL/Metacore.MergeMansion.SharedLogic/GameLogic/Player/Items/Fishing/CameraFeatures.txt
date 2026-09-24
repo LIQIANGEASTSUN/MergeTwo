@@ -1,0 +1,175 @@
+Type: GameLogic.Player.Items.Fishing.CameraFeatures
+
+Method: System.Boolean get_IsCamera()
+
+Disassembly:
+	0x0362BF24 ADRP X0, 0x20A9000
+	0x0362BF28 LDR X0, [X0 + 0x8A8]
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_IsCamera(System.Boolean value)
+
+Disassembly:
+	0x0362BF2C BL 0x239B8E4
+	0x0362BF30 ADRP X0, 0x20A9000
+
+ISIL:
+	001 Move [X0+16], W1
+	002 Return 
+
+Method: System.String get_TakePhotoSfx()
+
+Disassembly:
+	0x0362BF34 LDR X0, [X0 + 0x8D0]
+	0x0362BF38 BL 0x239B8E4
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_TakePhotoSfx(System.String value)
+
+Disassembly:
+	0x0362BF3C MOVZ W8, 0x1
+	0x0362BF40 STRB W8, [X22 + 0xD17]
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0362BF44 LDR X0, [X21]
+	0x0362BF48 ADRP X22, 0x20A9000
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(System.Boolean isCamera, System.String takePhotoSfx)
+
+Disassembly:
+	0x0362BF4C LDR W8, [X0 + 0xE4]
+	0x0362BF50 LDR X22, [X22 + 0x8A8]
+	0x0362BF54 CBNZ W8, 0x362BF60
+	0x0362BF58 BL 0x239BA64
+	0x0362BF5C LDR X0, [X21]
+	0x0362BF60 LDR X8, [X0 + 0xB8]
+	0x0362BF64 LDR X8, [X8 + 0x8]
+	0x0362BF68 STR X8, [X19 + 0x10]
+	0x0362BF6C LDR X8, [X0 + 0xB8]
+	0x0362BF70 LDR X0, [X22]
+	0x0362BF74 LDR X8, [X8 + 0x8]
+	0x0362BF78 STR X8, [X19 + 0x18]
+	0x0362BF7C LDR W8, [X0 + 0xE4]
+	0x0362BF80 CBNZ W8, 0x362BF88
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move W20, W1
+	006 Move X1, X31
+	007 Move X19, X2
+	008 Move X21, X0
+	009 Call Object..ctor, X0
+	010 Move [X21+24], X19
+	011 Move X1, X19
+	012 NotImplemented "Instruction STURB not yet implemented."
+	013 Move X20, [X31+16]
+	014 Move X19, [X31+24]
+	015 Move X0, X21
+	016 Move X30, [X31+32]
+	017 Move X21, [X31+40]
+	018 Call 0x239F888
+	019 Return 
+
+Method: System.Void .cctor()
+
+Disassembly:
+	0x0362BF84 BL 0x239BA64
+	0x0362BF88 MOV X0, X31
+	0x0362BF8C BL 0x414F9B8
+	0x0362BF90 LDR X8, [X21]
+	0x0362BF94 STR X0, [X19 + 0x20]
+	0x0362BF98 MOV X0, X19
+	0x0362BF9C MOV X1, X31
+	0x0362BFA0 LDR X8, [X8 + 0xB8]
+	0x0362BFA4 LDR X8, [X8 + 0x8]
+	0x0362BFA8 STR X8, [X19 + 0x28]
+	0x0362BFAC BL 0x44E8DEC
+	0x0362BFB0 CBZ X20, 0x362BFD4
+	0x0362BFB4 LDR X8, [X20 + 0x10]
+	0x0362BFB8 STR X8, [X19 + 0x10]
+	0x0362BFBC LDR X8, [X20 + 0x18]
+	0x0362BFC0 STR X8, [X19 + 0x18]
+	0x0362BFC4 LDR X8, [X20 + 0x20]
+	0x0362BFC8 STR X8, [X19 + 0x20]
+	0x0362BFCC ADD X8, X20, 0x28
+	0x0362BFD0 B 0x362C04C
+	0x0362BFD4 LDR X0, [X21]
+	0x0362BFD8 LDR W8, [X0 + 0xE4]
+	0x0362BFDC CBNZ W8, 0x362BFE4
+	0x0362BFE0 BL 0x239BA64
+	0x0362BFE4 LDR X0, [X21]
+	0x0362BFE8 LDR X8, [X0 + 0xB8]
+	0x0362BFEC LDR X8, [X8 + 0x8]
+	0x0362BFF0 STR X8, [X19 + 0x10]
+	0x0362BFF4 LDR W8, [X0 + 0xE4]
+	0x0362BFF8 CBNZ W8, 0x362C004
+	0x0362BFFC BL 0x239BA64
+	0x0362C000 LDR X0, [X21]
+	0x0362C004 LDR X8, [X0 + 0xB8]
+	0x0362C008 LDR X0, [X22]
+	0x0362C00C LDR X8, [X8 + 0x8]
+	0x0362C010 STR X8, [X19 + 0x18]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move W8, [0x2702CE7]
+	006 Move X21, [0x21099A8]
+	007 Move TEMP, X8
+	008 And TEMP, TEMP, 1
+	009 Compare TEMP, 1
+	010 Invalid "Jump target not found in method."
+	011 Move X0, [0x21099A8]
+	012 Call 0x239F8E4
+	013 Move W8, 1
+	014 Move [X19+3303], W8
+	015 Move X8, [0x20A6248]
+	016 Move X0, [X21]
+	017 Move X8, [X8+144]
+	018 Move X8, [X8+184]
+	019 Move X19, [X8]
+	020 Call 0x239FB80
+	021 Move X1, X31
+	022 Move X20, X0
+	023 Call Object..ctor, X0
+	024 Move X0, X20
+	025 Move X1, X19
+	026 Move [X20+16], W31
+	027 Move [X0+24], X19
+	028 Call 0x239F888
+	029 Move X8, [X21]
+	030 Move X1, X20
+	031 Move X8, [X8+184]
+	032 Move [X8], X20
+	033 Move X20, [X31+16]
+	034 Move X19, [X31+24]
+	035 Move X8, [X21]
+	036 Move X0, [X8+184]
+	037 Move X30, [X31+32]
+	038 Move X21, [X31+40]
+	039 Call 0x239F888
+	040 Return 
+

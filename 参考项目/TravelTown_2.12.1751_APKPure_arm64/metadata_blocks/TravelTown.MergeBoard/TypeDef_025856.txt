@@ -1,0 +1,22 @@
+// Namespace: Merger.MergeBoard.Logic.CombineValidators
+public class ItemConsumableCombinerValidator : IItemCombinerValidator, IItemCombinerVisualPresentation // TypeDefIndex: 25856
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A8727C Offset: 0x6A8327C VA: 0x6A8727C Slot: 4
+	public bool CanCombineItems(Entity movedEntity, Entity otherEntity) { }
+
+	// RVA: 0x6A87404 Offset: 0x6A83404 VA: 0x6A87404 Slot: 5
+	public void ToggleVisuals(IVisualComponent draggedItem, IVisualComponent overlapItemOnDragAction, bool toggle) { }
+
+	// RVA: 0x6A873A8 Offset: 0x6A833A8 VA: 0x6A873A8
+	private bool CanConsume(InteractionComponent interactionComponent, string itemId) { }
+
+	// RVA: 0x6A8763C Offset: 0x6A8363C VA: 0x6A8763C
+	public void .ctor() { }
+}
+

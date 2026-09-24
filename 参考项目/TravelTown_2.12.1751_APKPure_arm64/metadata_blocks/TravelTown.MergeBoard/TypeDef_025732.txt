@@ -1,0 +1,38 @@
+// Namespace: Merger.MergeBoard.Systems
+public class ExpendableTimerActivationSystem : ISystem // TypeDefIndex: 25732
+{
+	// Fields
+	[Inject]
+	private IServerTimeService _serverTimeService; // 0x10
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x18
+	[Inject]
+	private IItemAnalyticsDataModel _analyticsDataModel; // 0x20
+
+	// Properties
+	private long CurrentServerTimeMS { get; }
+
+	// Methods
+
+	// RVA: 0x6A664EC Offset: 0x6A624EC VA: 0x6A664EC
+	private long get_CurrentServerTimeMS() { }
+
+	// RVA: 0x6A6658C Offset: 0x6A6258C VA: 0x6A6658C Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A66618 Offset: 0x6A62618 VA: 0x6A66618
+	private void HandleFirstTimeProduceTrigger(TickContext context) { }
+
+	// RVA: 0x6A66964 Offset: 0x6A62964 VA: 0x6A66964
+	private void HandleCreatedTrigger(TickContext context) { }
+
+	// RVA: 0x6A66F68 Offset: 0x6A62F68 VA: 0x6A66F68
+	private void ActivateTimer(Entity entity, TimeDurationComponent timeDurationComponent, TimeLimitedActivationComponent timeLimitedActivationComponent, ExpendableComponent expendableComponent, string triggerReason) { }
+
+	// RVA: 0x6A67128 Offset: 0x6A63128 VA: 0x6A67128
+	private void SaveAnalyticSessionData(Entity entity, ExpendableComponent expendableComponent, string triggerReason) { }
+
+	// RVA: 0x6A67274 Offset: 0x6A63274 VA: 0x6A67274
+	public void .ctor() { }
+}
+

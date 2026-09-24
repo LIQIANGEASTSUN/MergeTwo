@@ -1,0 +1,105 @@
+// Namespace: Paxie.MergePuzzle.ItemCollections.Model
+public class ItemCollectionElement // TypeDefIndex: 397
+{
+	// Fields
+	[CompilerGenerated]
+	private ItemInfo <ItemInfo>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private bool <IsVisibleInCollection>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private BoardItemData <BoardItemData>k__BackingField; // 0x14
+	[CompilerGenerated]
+	private ItemCollectionElement.Delegates.Initialize <OnInitialize>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private ItemCollectionElement.Delegates.TypeChanged <OnTypeChanged>k__BackingField; // 0x1C
+	[CompilerGenerated]
+	private ItemCollectionElement.Delegates.Claim <OnClaim>k__BackingField; // 0x20
+	private ItemCollectionElement.Type _discoverType; // 0x24
+
+	// Properties
+	public ItemCollectionElement.Type DiscoverType { get; set; }
+	public ItemInfo ItemInfo { get; set; }
+	public bool IsVisibleInCollection { get; set; }
+	public BoardItemData BoardItemData { get; set; }
+	public ItemCollectionElement.Delegates.Initialize OnInitialize { get; set; }
+	public ItemCollectionElement.Delegates.TypeChanged OnTypeChanged { get; set; }
+	public ItemCollectionElement.Delegates.Claim OnClaim { get; set; }
+
+	// Methods
+
+	// RVA: 0x1B9DA50 Offset: 0x1B9DA50 VA: 0x1B9DA50
+	public ItemCollectionElement.Type get_DiscoverType() { }
+
+	// RVA: 0x1B9DA58 Offset: 0x1B9DA58 VA: 0x1B9DA58
+	public void set_DiscoverType(ItemCollectionElement.Type value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DA84 Offset: 0x1B9DA84 VA: 0x1B9DA84
+	public ItemInfo get_ItemInfo() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DA98 Offset: 0x1B9DA98 VA: 0x1B9DA98
+	public void set_ItemInfo(ItemInfo value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DAA4 Offset: 0x1B9DAA4 VA: 0x1B9DAA4
+	public bool get_IsVisibleInCollection() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DAAC Offset: 0x1B9DAAC VA: 0x1B9DAAC
+	public void set_IsVisibleInCollection(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DAB4 Offset: 0x1B9DAB4 VA: 0x1B9DAB4
+	public BoardItemData get_BoardItemData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DABC Offset: 0x1B9DABC VA: 0x1B9DABC
+	public void set_BoardItemData(BoardItemData value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DAC4 Offset: 0x1B9DAC4 VA: 0x1B9DAC4
+	public ItemCollectionElement.Delegates.Initialize get_OnInitialize() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DACC Offset: 0x1B9DACC VA: 0x1B9DACC
+	public void set_OnInitialize(ItemCollectionElement.Delegates.Initialize value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DAD4 Offset: 0x1B9DAD4 VA: 0x1B9DAD4
+	public ItemCollectionElement.Delegates.TypeChanged get_OnTypeChanged() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DADC Offset: 0x1B9DADC VA: 0x1B9DADC
+	public void set_OnTypeChanged(ItemCollectionElement.Delegates.TypeChanged value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DAE4 Offset: 0x1B9DAE4 VA: 0x1B9DAE4
+	public ItemCollectionElement.Delegates.Claim get_OnClaim() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1B9DAEC Offset: 0x1B9DAEC VA: 0x1B9DAEC
+	public void set_OnClaim(ItemCollectionElement.Delegates.Claim value) { }
+
+	// RVA: 0x1B9DAF4 Offset: 0x1B9DAF4 VA: 0x1B9DAF4
+	public void .ctor(ItemCollectionElement.Type discoverType, BoardItemData boardItemData) { }
+
+	// RVA: 0x1B9982C Offset: 0x1B9982C VA: 0x1B9982C
+	public void Paint() { }
+
+	// RVA: 0x1B98BC0 Offset: 0x1B98BC0 VA: 0x1B98BC0
+	public void Claim() { }
+
+	// RVA: 0x1B9DB48 Offset: 0x1B9DB48 VA: 0x1B9DB48
+	public bool IsDiscovered() { }
+
+	// RVA: 0x1B9DB58 Offset: 0x1B9DB58 VA: 0x1B9DB58
+	public bool IsRewardCollectable() { }
+
+	// RVA: 0x1B9DB6C Offset: 0x1B9DB6C VA: 0x1B9DB6C
+	public bool IsSeenElseWhere() { }
+
+	// RVA: 0x1B9DB80 Offset: 0x1B9DB80 VA: 0x1B9DB80
+	public bool IsUnknown() { }
+}
+

@@ -1,0 +1,21 @@
+// Namespace: MergeEngine.ECS.Components
+public interface ISerializableComponent : IComponentBase // TypeDefIndex: 1017
+{
+	// Properties
+	public abstract string ComponentKey { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract string get_ComponentKey();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract string Serialize();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract object GetSerialize();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void Deserialize(string componentJson);
+}
+

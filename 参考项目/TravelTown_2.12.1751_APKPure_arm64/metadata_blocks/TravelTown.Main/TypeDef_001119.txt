@@ -1,0 +1,14 @@
+// Namespace: MergeEngine.ECS.Components.InteractionTracking
+public class RemoteItemSpawningTrackingData // TypeDefIndex: 1119
+{
+	// Fields
+	public string StackId; // 0x10
+	public string ItemSource; // 0x18
+	public bool IsRemoteSpawning; // 0x20
+
+	// Methods
+
+	// RVA: 0x6901F9C Offset: 0x68FDF9C VA: 0x6901F9C
+	public void .ctor() { }
+}
+

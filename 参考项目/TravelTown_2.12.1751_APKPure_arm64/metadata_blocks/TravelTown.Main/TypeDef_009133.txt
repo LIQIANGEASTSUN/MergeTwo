@@ -1,0 +1,23 @@
+// Namespace: Merger.Game.Views.BoardItem
+[CreateAssetMenu(fileName = "BoardItemBehavioursConfig.asset", menuName = "Game/BoardItemBehavioursConfig")]
+[Serializable]
+public class BoardItemBehavioursConfig : SerializedScriptableObject // TypeDefIndex: 9133
+{
+	// Fields
+	private string _filter; // 0x58
+	private List<BehaviourPrefabData> _filteredBehaviourConfigs; // 0x60
+	[SerializeField]
+	private List<BehaviourPrefabData> _behaviourConfigs; // 0x68
+
+	// Properties
+	public IReadOnlyList<BehaviourPrefabData> BehaviourConfigs { get; }
+
+	// Methods
+
+	// RVA: 0x6730154 Offset: 0x672C154 VA: 0x6730154
+	public IReadOnlyList<BehaviourPrefabData> get_BehaviourConfigs() { }
+
+	// RVA: 0x673015C Offset: 0x672C15C VA: 0x673015C
+	public void .ctor() { }
+}
+

@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BaseMiniBoardEvent.OnStateChange : IEvent // TypeDefIndex: 1049
+{
+	// Fields
+	public bool AnimateClockDisappear; // 0x0
+}
+

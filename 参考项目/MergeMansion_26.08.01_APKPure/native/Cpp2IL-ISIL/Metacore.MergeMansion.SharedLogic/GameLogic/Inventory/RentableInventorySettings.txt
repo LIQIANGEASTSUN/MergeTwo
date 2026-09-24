@@ -1,0 +1,245 @@
+Type: GameLogic.Inventory.RentableInventorySettings
+
+Method: GameLogic.Inventory.RentableInventorySettingsId get_Id()
+
+Disassembly:
+	0x033BD2B0 MOV X2, X21
+	0x033BD2B4 STP X31, X31, [X31 + 0x170]
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_Id(GameLogic.Inventory.RentableInventorySettingsId value)
+
+Disassembly:
+	0x033BD2B8 BL 0x284F678
+	0x033BD2BC LDR V0, [X31 + 0x17]
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Collections.Generic.List`1<System.Int64> get_BatchPrice()
+
+Disassembly:
+	0x033BD2C0 LDR X2, [X29]
+	0x033BD2C4 ADD X1, X31, 0x240
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_BatchPrice(System.Collections.Generic.List`1<System.Int64> value)
+
+Disassembly:
+	0x033BD2C8 MOV X0, X19
+	0x033BD2CC STR V0, [X31 + 0x24]
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: Currencies get_BatchPriceCurrency()
+
+Disassembly:
+	0x033BD2D0 BL 0x249DDA8
+	0x033BD2D4 LDR X0, [X28]
+
+ISIL:
+	001 Move W0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_BatchPriceCurrency(Currencies value)
+
+Disassembly:
+	0x033BD2D8 BL 0x239BB80
+	0x033BD2DC LDR X1, [X27]
+
+ISIL:
+	001 Move [X0+32], W1
+	002 Return 
+
+Method: System.Int32 get_BatchSlotCount()
+
+Disassembly:
+	0x033BD2E0 MOV X20, X0
+	0x033BD2E4 BL 0x272AE2C
+
+ISIL:
+	001 Move W0, [X0+36]
+	002 Return X0
+
+Method: System.Void set_BatchSlotCount(System.Int32 value)
+
+Disassembly:
+	0x033BD2E8 ADD X0, X31, 0x168
+	0x033BD2EC MOVZ W1, 0x1
+
+ISIL:
+	001 Move [X0+36], W1
+	002 Return 
+
+Method: System.Int32 get_BatchExpireTime()
+
+Disassembly:
+	0x033BD2F0 MOVZ W2, 0x2
+	0x033BD2F4 MOV X3, X31
+
+ISIL:
+	001 Move W0, [X0+40]
+	002 Return X0
+
+Method: System.Void set_BatchExpireTime(System.Int32 value)
+
+Disassembly:
+	0x033BD2F8 STR X31, [X31 + 0x168]
+	0x033BD2FC BL 0x366A3EC
+
+ISIL:
+	001 Move [X0+40], W1
+	002 Return 
+
+Method: System.Int32 get_MaximumBatches()
+
+Disassembly:
+	0x033BD300 CBZ X20, 0x33BDEAC
+	0x033BD304 LDR X8, [X31 + 0x168]
+
+ISIL:
+	001 Move W0, [X0+44]
+	002 Return X0
+
+Method: System.Void set_MaximumBatches(System.Int32 value)
+
+Disassembly:
+	0x033BD308 LDR X2, [X24]
+	0x033BD30C ADD X1, X31, 0x240
+
+ISIL:
+	001 Move [X0+44], W1
+	002 Return 
+
+Method: System.Int32 get_ExperimentPriority()
+
+Disassembly:
+	0x033BD310 MOV X0, X20
+	0x033BD314 STR X8, [X31 + 0x240]
+
+ISIL:
+	001 Move W0, [X0+48]
+	002 Return X0
+
+Method: System.Void set_ExperimentPriority(System.Int32 value)
+
+Disassembly:
+	0x033BD318 BL 0x249DDA8
+	0x033BD31C ADD X0, X31, 0x160
+
+ISIL:
+	001 Move [X0+48], W1
+	002 Return 
+
+Method: GameLogic.Inventory.RentableInventorySettingsId get_ConfigKey()
+
+Disassembly:
+	0x033BD320 MOVZ W1, 0x2
+	0x033BD324 MOVZ W2, 0x2
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x033BD328 MOV X3, X31
+	0x033BD32C STR X31, [X31 + 0x160]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(GameLogic.Inventory.RentableInventorySettingsId id, System.Collections.Generic.List`1<System.Int64> batchPrice, Currencies batchPriceCurrency, System.Int32 batchSlotCount, System.Int32 batchExpireTime, System.Int32 maximumBatches, System.Int32 experimentPriority)
+
+Disassembly:
+	0x033BD330 BL 0x366A3EC
+	0x033BD334 LDR X8, [X31 + 0x160]
+	0x033BD338 LDR X2, [X24]
+	0x033BD33C ADD X1, X31, 0x240
+	0x033BD340 MOV X0, X20
+	0x033BD344 STR X8, [X31 + 0x240]
+	0x033BD348 BL 0x249DDA8
+	0x033BD34C ADD X0, X31, 0x158
+	0x033BD350 MOVZ W1, 0x3
+	0x033BD354 MOVZ W2, 0x2
+	0x033BD358 MOV X3, X31
+	0x033BD35C STR X31, [X31 + 0x158]
+	0x033BD360 BL 0x366A3EC
+	0x033BD364 LDR X8, [X31 + 0x158]
+	0x033BD368 LDR X2, [X24]
+	0x033BD36C ADD X1, X31, 0x240
+	0x033BD370 MOV X0, X20
+	0x033BD374 STR X8, [X31 + 0x240]
+	0x033BD378 BL 0x249DDA8
+	0x033BD37C ADD X0, X31, 0x150
+	0x033BD380 MOVZ W1, 0x4
+	0x033BD384 MOVZ W2, 0x2
+	0x033BD388 MOV X3, X31
+	0x033BD38C STR X31, [X31 + 0x150]
+	0x033BD390 BL 0x366A3EC
+	0x033BD394 LDR X8, [X31 + 0x150]
+	0x033BD398 LDR X2, [X24]
+	0x033BD39C ADD X1, X31, 0x240
+	0x033BD3A0 MOV X0, X20
+	0x033BD3A4 STR X8, [X31 + 0x240]
+	0x033BD3A8 BL 0x249DDA8
+	0x033BD3AC ADD X0, X31, 0x148
+
+ISIL:
+	001 Move [X31-80], X30
+	002 Move [X31+16], X26
+	003 Move [X31+24], X25
+	004 Move [X31+32], X24
+	005 Move [X31+40], X23
+	006 Move [X31+48], X22
+	007 Move [X31+56], X21
+	008 Move [X31+64], X20
+	009 Move [X31+72], X19
+	010 Move X25, X1
+	011 Move X1, X31
+	012 Move W19, W7
+	013 Move W20, W6
+	014 Move W21, W5
+	015 Move W22, W4
+	016 Move W23, W3
+	017 Move X24, X2
+	018 Move X26, X0
+	019 Call Object..ctor, X0
+	020 Move X0, X26
+	021 Move X1, X25
+	022 Move [X0+16], X25
+	023 Call 0x239F888
+	024 Move [X26+24], X24
+	025 Move X0, X26
+	026 Move X1, X24
+	027 Call 0x239F888
+	028 Move [X26+8], W23
+	029 Move [X26+12], W22
+	030 Move X24, [X31+32]
+	031 Move X23, [X31+40]
+	032 Move [X26+16], W21
+	033 Move [X26+20], W20
+	034 Move X22, [X31+48]
+	035 Move X21, [X31+56]
+	036 Move [X26+24], W19
+	037 Move X20, [X31+64]
+	038 Move X19, [X31+72]
+	039 Move X26, [X31+16]
+	040 Move X25, [X31+24]
+	041 Move X30, [X31+80]
+	042 Return 
+

@@ -1,0 +1,183 @@
+// Namespace: Activity.ComboCriticalHit
+public class ComboCriticalHitModel : ActivityEntityBase // TypeDefIndex: 6982
+{
+	// Fields
+	private static ComboCriticalHitModel _instance; // 0x0
+	private List<ComboCriticalHitStage> _curGroupList; // 0x3C
+	private bool _lastDoubleState; // 0x40
+	public string CriticalHitMark; // 0x44
+	private static GameObject _flyItemObj; // 0x4
+	private bool _isFlyCollection; // 0x48
+	private int _flyId; // 0x4C
+	private List<ComboCriticalHitStage> _normalRewardList; // 0x50
+	private ComboCriticalHitStage _endReward; // 0x54
+
+	// Properties
+	public static ComboCriticalHitModel Instance { get; }
+	public override string Guid { get; }
+	public StorageComboCriticalHit Storage { get; }
+	public List<ComboCriticalHitStage> CurGroupList { get; }
+	public static GameObject FlyItemObj { get; }
+
+	// Methods
+
+	// RVA: 0x1CBA620 Offset: 0x1CBA620 VA: 0x1CBA620
+	public static ComboCriticalHitModel get_Instance() { }
+
+	// RVA: 0x1CBC514 Offset: 0x1CBC514 VA: 0x1CBC514 Slot: 4
+	public override string get_Guid() { }
+
+	// RVA: 0x1CBC5A4 Offset: 0x1CBC5A4 VA: 0x1CBC5A4
+	public StorageComboCriticalHit get_Storage() { }
+
+	// RVA: 0x1CBC6B4 Offset: 0x1CBC6B4 VA: 0x1CBC6B4
+	public List<ComboCriticalHitStage> get_CurGroupList() { }
+
+	[RuntimeInitializeOnLoadMethod(0)]
+	// RVA: 0x1CBC708 Offset: 0x1CBC708 VA: 0x1CBC708
+	private static void InitAuto() { }
+
+	// RVA: 0x1CBC770 Offset: 0x1CBC770 VA: 0x1CBC770 Slot: 5
+	public override void InitFromServerData(string activityId, string activityType, ulong startTime, ulong endTime, ulong rewardEndTime, bool manualEnd, string configJson, string activitySubType) { }
+
+	// RVA: 0x1CBCD30 Offset: 0x1CBCD30 VA: 0x1CBCD30
+	public void DebugReset() { }
+
+	// RVA: 0x1CBB94C Offset: 0x1CBB94C VA: 0x1CBB94C
+	public string GetProgressStr() { }
+
+	// RVA: 0x1CBBAD8 Offset: 0x1CBBAD8 VA: 0x1CBBAD8
+	public float GetProgress() { }
+
+	// RVA: 0x1CBD0F4 Offset: 0x1CBD0F4 VA: 0x1CBD0F4
+	public float GetDoubleProgress() { }
+
+	// RVA: 0x1CBD56C Offset: 0x1CBD56C VA: 0x1CBD56C Slot: 18
+	protected override void InitServerDataFinish() { }
+
+	// RVA: 0x1CBCEEC Offset: 0x1CBCEEC VA: 0x1CBCEEC
+	public bool IsJoin() { }
+
+	// RVA: 0x1CBD794 Offset: 0x1CBD794 VA: 0x1CBD794
+	public bool IsDoubleProductTime() { }
+
+	// RVA: 0x1CBD980 Offset: 0x1CBD980 VA: 0x1CBD980 Slot: 26
+	public virtual string GetEndTimeString() { }
+
+	// RVA: 0x1CBDC60 Offset: 0x1CBDC60 VA: 0x1CBDC60 Slot: 27
+	public virtual string GetJoinEndTimeString() { }
+
+	// RVA: 0x1CBDE60 Offset: 0x1CBDE60 VA: 0x1CBDE60
+	public ulong GetJoinEndTime() { }
+
+	// RVA: 0x1CBDF84 Offset: 0x1CBDF84 VA: 0x1CBDF84
+	public bool IsTimeEnd() { }
+
+	// RVA: 0x1CBE0C0 Offset: 0x1CBE0C0 VA: 0x1CBE0C0 Slot: 23
+	public override bool CanDownLoadRes() { }
+
+	// RVA: 0x1CBA6E4 Offset: 0x1CBA6E4 VA: 0x1CBA6E4
+	public bool CanShowMerge() { }
+
+	// RVA: 0x1CBE16C Offset: 0x1CBE16C VA: 0x1CBE16C
+	public bool CanShowJoin() { }
+
+	// RVA: 0x1CBE728 Offset: 0x1CBE728 VA: 0x1CBE728
+	public bool CanShowJoinEnd() { }
+
+	// RVA: 0x1CBCA64 Offset: 0x1CBCA64 VA: 0x1CBCA64
+	private void InitCurStageConfig() { }
+
+	// RVA: 0x1CBE5D0 Offset: 0x1CBE5D0 VA: 0x1CBE5D0
+	private void UpdateJoinTime() { }
+
+	[AsyncStateMachine(typeof(ComboCriticalHitModel.<AddScore>d__30))]
+	// RVA: 0x1CBEA8C Offset: 0x1CBEA8C VA: 0x1CBEA8C
+	public void AddScore(int index, MergeBoard board) { }
+
+	// RVA: 0x1CBEBAC Offset: 0x1CBEBAC VA: 0x1CBEBAC
+	public void AddScoreDebug(int addScore) { }
+
+	// RVA: 0x1CBF65C Offset: 0x1CBF65C VA: 0x1CBF65C
+	public void TryProduct(int index, int id, MergeBoard board) { }
+
+	// RVA: 0x1CBFAE0 Offset: 0x1CBFAE0 VA: 0x1CBFAE0
+	public void TryProductCriticalHit(int index, int id, MergeBoard board) { }
+
+	// RVA: 0x1CBFF4C Offset: 0x1CBFF4C VA: 0x1CBFF4C
+	public static GameObject get_FlyItemObj() { }
+
+	// RVA: 0x1CBECAC Offset: 0x1CBECAC VA: 0x1CBECAC
+	private void FlyCollection(int count, Vector3 scrPos) { }
+
+	// RVA: 0x1CC0160 Offset: 0x1CC0160 VA: 0x1CC0160 Slot: 17
+	public override void SetTempEndTime(int timer = 10) { }
+
+	// RVA: 0x1CBCF58 Offset: 0x1CBCF58 VA: 0x1CBCF58
+	private int GetNextScore() { }
+
+	// RVA: 0x1CC060C Offset: 0x1CC060C VA: 0x1CC060C
+	public bool CanShowGetReward() { }
+
+	// RVA: 0x1CC0660 Offset: 0x1CC0660 VA: 0x1CC0660
+	public int GetAnimStage() { }
+
+	// RVA: 0x1CC06CC Offset: 0x1CC06CC VA: 0x1CC06CC
+	public void SetAnimState(int state) { }
+
+	// RVA: 0x1CC0330 Offset: 0x1CC0330 VA: 0x1CC0330
+	public List<ComboCriticalHitStage> GetNormalReward() { }
+
+	// RVA: 0x1CC0550 Offset: 0x1CC0550 VA: 0x1CC0550
+	public ComboCriticalHitStage GetEndReward() { }
+
+	// RVA: 0x1CC074C Offset: 0x1CC074C VA: 0x1CC074C
+	public void SetGetRewardId(int id) { }
+
+	// RVA: 0x1CC09A4 Offset: 0x1CC09A4 VA: 0x1CC09A4
+	public bool IsGetReward(int id) { }
+
+	// RVA: 0x1CC0A70 Offset: 0x1CC0A70 VA: 0x1CC0A70
+	public int GetRewardIndex() { }
+
+	// RVA: 0x1CC0B20 Offset: 0x1CC0B20 VA: 0x1CC0B20
+	public bool CanPopReward() { }
+
+	// RVA: 0x1CC0EC4 Offset: 0x1CC0EC4 VA: 0x1CC0EC4
+	public bool IsCanGetReward() { }
+
+	// RVA: 0x1CC10E0 Offset: 0x1CC10E0 VA: 0x1CC10E0
+	public int GetTotalScore() { }
+
+	// RVA: 0x1CC114C Offset: 0x1CC114C VA: 0x1CC114C
+	public int GetMoveCount() { }
+
+	// RVA: 0x1CC136C Offset: 0x1CC136C VA: 0x1CC136C
+	public bool IsCompleteAll() { }
+
+	// RVA: 0x1CC1404 Offset: 0x1CC1404 VA: 0x1CC1404
+	public void SetCompleteAll(bool complete) { }
+
+	// RVA: 0x1CC1484 Offset: 0x1CC1484 VA: 0x1CC1484
+	public bool IsEndActivity() { }
+
+	// RVA: 0x1CBC420 Offset: 0x1CBC420 VA: 0x1CBC420
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1CC1514 Offset: 0x1CC1514 VA: 0x1CC1514
+	private bool <InitCurStageConfig>b__28_0(ComboCriticalHitStage p) { }
+
+	// RVA: 0x1CC155C Offset: 0x1CC155C VA: 0x1CC155C
+	public void <>iFixBaseProxy_InitFromServerData(string P0, string P1, ulong P2, ulong P3, ulong P4, bool P5, string P6, string P7) { }
+
+	// RVA: 0x1CC15B4 Offset: 0x1CC15B4 VA: 0x1CC15B4
+	public void <>iFixBaseProxy_InitServerDataFinish() { }
+
+	// RVA: 0x1CC15BC Offset: 0x1CC15BC VA: 0x1CC15BC
+	public bool <>iFixBaseProxy_CanDownLoadRes() { }
+
+	// RVA: 0x1CC15C4 Offset: 0x1CC15C4 VA: 0x1CC15C4
+	public void <>iFixBaseProxy_SetTempEndTime(int P0) { }
+}
+

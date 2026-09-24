@@ -1,0 +1,21 @@
+// Namespace: MergePuzzle
+public abstract class AdaptorBase // TypeDefIndex: 1600
+{
+	// Fields
+	protected readonly Tuple<int, int> SetIDLevel; // 0x8
+
+	// Methods
+
+	// RVA: 0x1885584 Offset: 0x1885584 VA: 0x1885584
+	protected void .ctor(string setIDLevel) { }
+
+	// RVA: 0x18855B8 Offset: 0x18855B8 VA: 0x18855B8
+	protected void .ctor(int setID, int level) { }
+
+	// RVA: 0x1885660 Offset: 0x1885660 VA: 0x1885660
+	protected void .ctor(int setId) { }
+
+	// RVA: 0x1885704 Offset: 0x1885704 VA: 0x1885704
+	protected ValueTuple<bool, List<SpawnedItem>> RecurringEventSpawnedFeatureItems() { }
+}
+

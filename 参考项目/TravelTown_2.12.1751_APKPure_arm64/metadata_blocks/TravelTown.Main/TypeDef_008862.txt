@@ -1,0 +1,76 @@
+// Namespace: Merger.Game.Views.Popups.Data
+public sealed class MergeCheckPopupPayload // TypeDefIndex: 8862
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly MergeCheckItemType <MergeCheckType>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly BoardItemPosition <FirstItem>k__BackingField; // 0x14
+	[CompilerGenerated]
+	private readonly BoardItemPosition <SecondItem>k__BackingField; // 0x1C
+	[CompilerGenerated]
+	private readonly IItem <CheckInitiatingItem>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private readonly IItem <MergeItem>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private readonly IItem <FirstResultItem>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private readonly IItem <SecondResultItem>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private readonly Action<BoardItemPosition, BoardItemPosition> <YesAction>k__BackingField; // 0x48
+	[CompilerGenerated]
+	private readonly Action <NoAction>k__BackingField; // 0x50
+
+	// Properties
+	public MergeCheckItemType MergeCheckType { get; }
+	public BoardItemPosition FirstItem { get; }
+	public BoardItemPosition SecondItem { get; }
+	public IItem CheckInitiatingItem { get; }
+	public IItem MergeItem { get; }
+	public IItem FirstResultItem { get; }
+	public IItem SecondResultItem { get; }
+	public Action<BoardItemPosition, BoardItemPosition> YesAction { get; }
+	public Action NoAction { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x66F2410 Offset: 0x66EE410 VA: 0x66F2410
+	public MergeCheckItemType get_MergeCheckType() { }
+
+	[CompilerGenerated]
+	// RVA: 0x66F2418 Offset: 0x66EE418 VA: 0x66F2418
+	public BoardItemPosition get_FirstItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x66F2420 Offset: 0x66EE420 VA: 0x66F2420
+	public BoardItemPosition get_SecondItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x66F2428 Offset: 0x66EE428 VA: 0x66F2428
+	public IItem get_CheckInitiatingItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x66F2430 Offset: 0x66EE430 VA: 0x66F2430
+	public IItem get_MergeItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x66F2438 Offset: 0x66EE438 VA: 0x66F2438
+	public IItem get_FirstResultItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x66F2440 Offset: 0x66EE440 VA: 0x66F2440
+	public IItem get_SecondResultItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x66F2448 Offset: 0x66EE448 VA: 0x66F2448
+	public Action<BoardItemPosition, BoardItemPosition> get_YesAction() { }
+
+	[CompilerGenerated]
+	// RVA: 0x66F2450 Offset: 0x66EE450 VA: 0x66F2450
+	public Action get_NoAction() { }
+
+	// RVA: 0x66F2458 Offset: 0x66EE458 VA: 0x66F2458
+	public void .ctor(MergeCheckItemType mergeCheckType, BoardItemPosition firstItem, BoardItemPosition secondItem, Action<BoardItemPosition, BoardItemPosition> successAction, IItem checkInitiatingItem, IItem mergeItem, IItem firstResultItem, IItem secondResultItem, Action failAction) { }
+}
+

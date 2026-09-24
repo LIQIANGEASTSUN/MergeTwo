@@ -1,0 +1,98 @@
+// Namespace: Merger.Game.Views.Inventory
+public class InventoryProducerSlotView : MergeItemView // TypeDefIndex: 8932
+{
+	// Fields
+	[CompilerGenerated]
+	private Action<int> TryRemove; // 0x50
+	[CompilerGenerated]
+	private Action<IMergeItem> InfoRequested; // 0x58
+	[SerializeField]
+	private ReactiveButton _infoButton; // 0x60
+	[SerializeField]
+	private ReactiveButton _itemButton; // 0x68
+	[SerializeField]
+	private GameObject _newBannerGameObject; // 0x70
+	[SerializeField]
+	protected AddressableImage _iconOutlineImage; // 0x78
+	[SerializeField]
+	private ReactiveText _unlocksAtText; // 0x80
+	[SerializeField]
+	private Image _unlocksAtBackground; // 0x88
+	[SerializeField]
+	private CanvasGroup _itemFadedCanvasGroup; // 0x90
+	private IMergeItem _mergeItem; // 0x98
+	private Animator _cachedAnimator; // 0xA0
+	private Animator _cachedBannerAnimator; // 0xA8
+	[CompilerGenerated]
+	private int <SlotIndex>k__BackingField; // 0xB0
+	private bool _wasStored; // 0xB4
+
+	// Properties
+	public Image UnlocksAtBackground { get; }
+	public ReactiveText UnlocksAt { get; }
+	public CanvasGroup ItemFadedCanvasGroup { get; }
+	public override IMergeItem MergeItem { set; }
+	private Animator Animator { get; }
+	public int SlotIndex { get; set; }
+	public bool IsStored { set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6708F98 Offset: 0x6704F98 VA: 0x6708F98
+	public void add_TryRemove(Action<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6709048 Offset: 0x6705048 VA: 0x6709048
+	public void remove_TryRemove(Action<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x67090F8 Offset: 0x67050F8 VA: 0x67090F8
+	public void add_InfoRequested(Action<IMergeItem> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x67091A8 Offset: 0x67051A8 VA: 0x67091A8
+	public void remove_InfoRequested(Action<IMergeItem> value) { }
+
+	// RVA: 0x6709258 Offset: 0x6705258 VA: 0x6709258
+	public Image get_UnlocksAtBackground() { }
+
+	// RVA: 0x6709260 Offset: 0x6705260 VA: 0x6709260
+	public ReactiveText get_UnlocksAt() { }
+
+	// RVA: 0x6709268 Offset: 0x6705268 VA: 0x6709268
+	public CanvasGroup get_ItemFadedCanvasGroup() { }
+
+	// RVA: 0x6709270 Offset: 0x6705270 VA: 0x6709270 Slot: 7
+	public override void set_MergeItem(IMergeItem value) { }
+
+	// RVA: 0x67093A4 Offset: 0x67053A4 VA: 0x67093A4
+	private Animator get_Animator() { }
+
+	[CompilerGenerated]
+	// RVA: 0x670944C Offset: 0x670544C VA: 0x670944C
+	public int get_SlotIndex() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6709454 Offset: 0x6705454 VA: 0x6709454
+	public void set_SlotIndex(int value) { }
+
+	// RVA: 0x670945C Offset: 0x670545C VA: 0x670945C
+	public void set_IsStored(bool value) { }
+
+	// RVA: 0x6709524 Offset: 0x6705524 VA: 0x6709524
+	private void Awake() { }
+
+	// RVA: 0x67095FC Offset: 0x67055FC VA: 0x67095FC
+	public void ActivateNewBanner() { }
+
+	// RVA: 0x670961C Offset: 0x670561C VA: 0x670961C
+	private void ShowMergeGraphPopup() { }
+
+	// RVA: 0x670963C Offset: 0x670563C VA: 0x670963C
+	private void RemoveFromInventory() { }
+
+	// RVA: 0x670966C Offset: 0x670566C VA: 0x670966C
+	public void .ctor() { }
+}
+

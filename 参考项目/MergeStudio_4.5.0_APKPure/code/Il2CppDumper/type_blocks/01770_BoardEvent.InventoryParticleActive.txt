@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BoardEvent.InventoryParticleActive : IEvent // TypeDefIndex: 1770
+{
+	// Fields
+	public bool IsActive; // 0x0
+}
+

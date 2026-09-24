@@ -1,0 +1,4 @@
+// Namespace: 
+public struct BoardEvent.UpdateLastRewardUIFromRewardArea : IEvent // TypeDefIndex: 1793
+{}
+

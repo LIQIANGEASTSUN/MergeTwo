@@ -1,0 +1,12 @@
+// Namespace: 
+public enum MergeMainController.MergeBoardThemeEnum // TypeDefIndex: 2785
+{
+	// Fields
+	public int value__; // 0x0
+	public const MergeMainController.MergeBoardThemeEnum Default = 0;
+	public const MergeMainController.MergeBoardThemeEnum Mermaid = 1;
+	public const MergeMainController.MergeBoardThemeEnum RecoverCoin = 2;
+	public const MergeMainController.MergeBoardThemeEnum CoinLeaderBoard = 3;
+	public const MergeMainController.MergeBoardThemeEnum ThemeDecoration = 4;
+}
+

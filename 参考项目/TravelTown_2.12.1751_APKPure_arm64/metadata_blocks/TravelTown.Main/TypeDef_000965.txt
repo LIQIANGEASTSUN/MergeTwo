@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class SkipCooldownSystem.<>c__DisplayClass13_0 // TypeDefIndex: 965
+{
+	// Fields
+	public SkipBoardItemCooldownSignal signal; // 0x10
+	public SkipCooldownSystem <>4__this; // 0x18
+	public PositionComponent item; // 0x20
+	public LockedComponent lockedComponent; // 0x28
+
+	// Methods
+
+	// RVA: 0x6790EB0 Offset: 0x678CEB0 VA: 0x6790EB0
+	public void .ctor() { }
+
+	// RVA: 0x6791568 Offset: 0x678D568 VA: 0x6791568
+	internal void <SkipBoardItemCooldownSignalFired>b__0() { }
+
+	// RVA: 0x6791D7C Offset: 0x678DD7C VA: 0x6791D7C
+	internal void <SkipBoardItemCooldownSignalFired>b__1(Exception exception) { }
+
+	// RVA: 0x6791EB0 Offset: 0x678DEB0 VA: 0x6791EB0
+	internal void <SkipBoardItemCooldownSignalFired>b__2() { }
+}
+

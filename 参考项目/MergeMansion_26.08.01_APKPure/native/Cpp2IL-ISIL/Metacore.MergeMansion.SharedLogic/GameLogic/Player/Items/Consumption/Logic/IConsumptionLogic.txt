@@ -1,0 +1,30 @@
+Type: GameLogic.Player.Items.Consumption.Logic.IConsumptionLogic
+
+Method: GameLogic.Player.Items.Consumption.IConsumptionCheckResult CanBeUsedTo(GameLogic.Player.IPlayer player, GameLogic.Player.Items.IMergeItem mergeItem, GameLogic.Player.Board.IBoard mergeBoard, GameLogic.Config.Types.MetacoreTime currentTime)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean CanMerge(GameLogic.Player.Items.IMergeItem sourceItem, GameLogic.Player.Items.IMergeItem targetItem, GameLogic.Player.IPlayer player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.IMergeItem ApplyOverride(GameLogic.Player.Items.MergeItem referenceItem, GameLogic.Player.Items.MergeItem sourceItem, GameLogic.Player.Items.MergeItem targetItem, GameLogic.Player.IPlayer player, GameLogic.Config.Types.MetacoreTime timestamp, out System.Boolean isMergeConsumingSourceItem)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void Apply(GameLogic.Player.IPlayer player, GameLogic.Player.Items.IMergeItem sourceItem, GameLogic.Player.Items.MergeItem targetItem, GameLogic.Player.Board.MergeBoard mergeBoard, GameLogic.Player.Board.Coordinate coord, GameLogic.Config.Types.MetacoreTime timestamp, System.Collections.Generic.ICollection`1<GameLogic.Merge.MergeBoardAct> collectedActs)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

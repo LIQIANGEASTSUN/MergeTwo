@@ -1,0 +1,13 @@
+// Namespace: 
+public class BubbledItemExpiredSignal.Collectable // TypeDefIndex: 9353
+{
+	// Fields
+	public PlayerResourceEnum Resource; // 0x10
+	public int Amount; // 0x14
+
+	// Methods
+
+	// RVA: 0x676AF80 Offset: 0x6766F80 VA: 0x676AF80
+	public void .ctor() { }
+}
+

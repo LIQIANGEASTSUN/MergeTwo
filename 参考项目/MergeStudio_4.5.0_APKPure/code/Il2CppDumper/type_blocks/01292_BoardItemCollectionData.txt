@@ -1,0 +1,25 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "BoardItemCollectionData", menuName = "Scriptable/Board/BoardItemCollectionData", order = 2)]
+public class BoardItemCollectionData : ScriptableObject // TypeDefIndex: 1292
+{
+	// Fields
+	[FormerlySerializedAs("ItemSetList")]
+	[SerializeField]
+	public List<int> SerializedItemSetList; // 0xC
+	private List<int> _itemSetList; // 0x10
+
+	// Properties
+	public List<int> ItemSetList { get; }
+
+	// Methods
+
+	// RVA: 0x18181E0 Offset: 0x18181E0 VA: 0x18181E0
+	public void Reset() { }
+
+	// RVA: 0x18181F0 Offset: 0x18181F0 VA: 0x18181F0
+	public List<int> get_ItemSetList() { }
+
+	// RVA: 0x1818A68 Offset: 0x1818A68 VA: 0x1818A68
+	public void .ctor() { }
+}
+

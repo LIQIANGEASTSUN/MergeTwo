@@ -1,0 +1,8 @@
+// Namespace: 
+public struct TaskEvent.BoardEventPointAnimationComplete : IEvent // TypeDefIndex: 1995
+{
+	// Fields
+	public bool IsFirst; // 0x0
+	public bool IsLast; // 0x1
+}
+

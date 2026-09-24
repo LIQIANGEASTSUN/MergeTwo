@@ -1,0 +1,35 @@
+// Namespace: MergeEngine.ECS.Systems.Items
+public class UndoSystem : SystemBase // TypeDefIndex: 983
+{
+	// Fields
+	[InjectSystem]
+	private BoardSystem _boardSystem; // 0x40
+	private IUndoOperation _operation; // 0x48
+	public MutableBindableProperty<IMergeItem> UndoItem; // 0x50
+	public MutableBindableProperty<string> UndoLocalisationId; // 0x58
+	public MutableBindableProperty<string[]> UndoLocalisationParameters; // 0x60
+
+	// Methods
+
+	// RVA: 0x6799140 Offset: 0x6795140 VA: 0x6799140 Slot: 6
+	protected override void InitializeSystem() { }
+
+	// RVA: 0x6799370 Offset: 0x6795370 VA: 0x6799370 Slot: 7
+	protected override void DisposeSystem() { }
+
+	// RVA: 0x67995A0 Offset: 0x67955A0 VA: 0x67995A0
+	private void SetUndo(SetUndoOperationSignal signal) { }
+
+	// RVA: 0x67997B4 Offset: 0x67957B4 VA: 0x67997B4
+	private void PerformUndo() { }
+
+	// RVA: 0x6799858 Offset: 0x6795858 VA: 0x6799858
+	private void ClearUndo() { }
+
+	// RVA: 0x6799910 Offset: 0x6795910 VA: 0x6799910
+	private void ItemSelected(BoardItemSelectedSignal signal) { }
+
+	// RVA: 0x6799A00 Offset: 0x6795A00 VA: 0x6799A00
+	public void .ctor() { }
+}
+

@@ -1,0 +1,71 @@
+Type: UnityBoardController+<>c__DisplayClass295_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x032771B0 LDR X3, [X8]
+	0x032771B4 ADD X0, X19, 0x8
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void <ShowCanvas>g__OnTransitionComplete|0()
+
+Disassembly:
+	0x032771B8 ADD X1, X31, 0x20
+	0x032771BC MOV X2, X19
+	0x032771C0 BL 0x25D3DE4
+	0x032771C4 B 0x327717C
+	0x032771C8 BL 0x239BB90
+	0x032771CC BL 0x239BB90
+	0x032771D0 B 0x32771F0
+	0x032771D4 B 0x32771F0
+	0x032771D8 B 0x32771F0
+	0x032771DC B 0x32771F0
+	0x032771E0 B 0x32771F0
+	0x032771E4 B 0x32771F0
+	0x032771E8 B 0x32771F0
+	0x032771EC B 0x32771F0
+	0x032771F0 MOV X20, X0
+	0x032771F4 CMP W1, 0x1
+	0x032771F8 B.NE 0x3277288
+	0x032771FC MOV X0, X20
+	0x03277200 BL 0x53E9080
+	0x03277204 MOV X20, X0
+	0x03277208 ADRP X0, 0x2456000
+	0x0327720C LDR X0, [X0 + 0x388]
+	0x03277210 BL 0x239B8F8
+
+ISIL:
+	001 Move [X31-16], X30
+	002 Move [X31-8], X19
+	003 Move X8, [X0+16]
+	004 Move X19, X0
+	005 Compare X8, 0
+	006 JumpIfEqual {11}
+	007 Move X9, [X8+24]
+	008 Move X0, [X8+64]
+	009 Move X1, [X8+40]
+	010 NotImplemented "Instruction BLR not yet implemented."
+	011 Move X0, [X19+24]
+	012 Compare X0, 0
+	013 JumpIfEqual {29}
+	014 Move X1, [X19+32]
+	015 Move X2, X31
+	016 Call UnityBoardController.MakeReadyToPlay, X0, X1
+	017 Move X8, [X19+40]
+	018 Compare X8, 0
+	019 JumpIfEqual {26}
+	020 Move X0, [X8+64]
+	021 Move X1, [X8+40]
+	022 Move X2, [X8+24]
+	023 Move X30, [X31+16]
+	024 Move X19, [X31+24]
+	025 CallNoReturn X2
+	026 Move X30, [X31+16]
+	027 Move X19, [X31+24]
+	028 Return 
+	029 Call 0x239FB90
+

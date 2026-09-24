@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ItemDiscoverySystem.<>c // TypeDefIndex: 25749
+{
+	// Fields
+	public static readonly ItemDiscoverySystem.<>c <>9; // 0x0
+	public static Func<ValueTuple<Entity, IdComponent, LockComponent, BoxComponent>, bool> <>9__4_0; // 0x8
+	public static Func<ValueTuple<Entity, IdComponent, LockComponent, BoxComponent>, bool> <>9__5_0; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A6D83C Offset: 0x6A6983C VA: 0x6A6D83C
+	private static void .cctor() { }
+
+	// RVA: 0x6A6D8A4 Offset: 0x6A698A4 VA: 0x6A6D8A4
+	public void .ctor() { }
+
+	// RVA: 0x6A6D8AC Offset: 0x6A698AC VA: 0x6A6D8AC
+	internal bool <DiscoverNewCreatedItems>b__4_0(ValueTuple<Entity, IdComponent, LockComponent, BoxComponent> query) { }
+
+	// RVA: 0x6A6D8FC Offset: 0x6A698FC VA: 0x6A6D8FC
+	internal bool <DiscoverUnboxedItems>b__5_0(ValueTuple<Entity, IdComponent, LockComponent, BoxComponent> query) { }
+}
+

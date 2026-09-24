@@ -1,0 +1,4 @@
+// Namespace: 
+public struct BoardEvent.RetryAddressableDownload : IEvent // TypeDefIndex: 1788
+{}
+

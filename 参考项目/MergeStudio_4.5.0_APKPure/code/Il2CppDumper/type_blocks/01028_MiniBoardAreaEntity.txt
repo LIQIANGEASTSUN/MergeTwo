@@ -1,0 +1,26 @@
+// Namespace: Paxie.MergeStudio.Features.MiniBoard
+[Serializable]
+public class MiniBoardAreaEntity // TypeDefIndex: 1028
+{
+	// Fields
+	public int BoardIndex; // 0x8
+	public List<MiniBoardPositionEntity> Positions; // 0xC
+
+	// Methods
+
+	// RVA: 0x17A8A70 Offset: 0x17A8A70 VA: 0x17A8A70
+	public static MiniBoardAreaEntity Get() { }
+
+	// RVA: 0x17A8B48 Offset: 0x17A8B48 VA: 0x17A8B48
+	public void ResetEntity() { }
+
+	// RVA: 0x17A8BC8 Offset: 0x17A8BC8 VA: 0x17A8BC8
+	public void ChangeBoardIndex(int boardIndex) { }
+
+	// RVA: 0x17A8C4C Offset: 0x17A8C4C VA: 0x17A8C4C
+	public Coordinate GetItemCoordinate(MiniBoardItemEntity miniBoardItemEntity) { }
+
+	// RVA: 0x17A8B40 Offset: 0x17A8B40 VA: 0x17A8B40
+	public void .ctor() { }
+}
+

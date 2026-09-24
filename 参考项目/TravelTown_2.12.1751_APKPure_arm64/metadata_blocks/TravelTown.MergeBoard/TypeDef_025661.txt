@@ -1,0 +1,36 @@
+// Namespace: Merger.MergeBoard.ViewModel
+public class MergeBoardHintViewModel : ViewModelBase // TypeDefIndex: 25661
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x68
+	[Inject]
+	private IMergeBoardLayout _layout; // 0x70
+	[Inject]
+	public AnyItemCombinerValidator AnyItemCombinerValidator; // 0x78
+	[Inject]
+	public MergeItemCombinerValidator MergeItemCombinerValidator; // 0x80
+	[Inject]
+	public ItemConsumableCombinerValidator ItemConsumableCombinerValidator; // 0x88
+
+	// Properties
+	public IMergeBoardLayout BoardLayout { get; }
+
+	// Methods
+
+	// RVA: 0x6A31780 Offset: 0x6A2D780 VA: 0x6A31780
+	public IMergeBoardLayout get_BoardLayout() { }
+
+	// RVA: 0x6A31788 Offset: 0x6A2D788 VA: 0x6A31788
+	public bool IsItemMaxLevel(string itemId) { }
+
+	// RVA: 0x6A31834 Offset: 0x6A2D834 VA: 0x6A31834
+	public object GetItemLevel(string itemId) { }
+
+	// RVA: 0x6A31914 Offset: 0x6A2D914 VA: 0x6A31914
+	public bool IsPrioritizeHinting(string id) { }
+
+	// RVA: 0x6A31A38 Offset: 0x6A2DA38 VA: 0x6A31A38
+	public void .ctor() { }
+}
+

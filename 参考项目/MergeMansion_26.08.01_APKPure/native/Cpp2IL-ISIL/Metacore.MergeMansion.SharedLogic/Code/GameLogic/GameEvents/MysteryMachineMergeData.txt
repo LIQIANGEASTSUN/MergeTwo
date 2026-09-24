@@ -1,0 +1,84 @@
+Type: Code.GameLogic.GameEvents.MysteryMachineMergeData
+
+Method: System.Void .ctor(Code.GameLogic.GameEvents.MysteryMachineMergeItemData itemDataA, Code.GameLogic.GameEvents.MysteryMachineMergeItemData itemDataB, Code.GameLogic.GameEvents.IMysteryMachineItem result, Code.GameLogic.GameEvents.MysteryMachineMultiplierInfo chainMultiplier, System.Int32 direction, System.Int32 spawnItemsQueueCount)
+
+Disassembly:
+	0x0331211C MOV X2, X31
+	0x03312120 BL 0x342C310
+	0x03312124 LDR X8, [X23]
+	0x03312128 MOV X27, X0
+	0x0331212C LDR W9, [X8 + 0xE4]
+	0x03312130 CBNZ W9, 0x331213C
+	0x03312134 MOV X0, X8
+	0x03312138 BL 0x239BA64
+	0x0331213C MOV X0, X19
+	0x03312140 MOV X1, X31
+	0x03312144 BL 0x342AD34
+	0x03312148 MOV X1, X0
+	0x0331214C MOV X0, X27
+	0x03312150 MOV X2, X31
+	0x03312154 BL 0x342AA28
+	0x03312158 ADD W8, W25, 0x1
+	0x0331215C STR W8, [X31 + 0x1C]
+	0x03312160 TBNZ X0, 0x0, 0x33123A0
+	0x03312164 LDR W8, [X31 + 0x1C]
+	0x03312168 CMP W8, W20
+	0x0331216C B.GE 0x33123A0
+	0x03312170 LDR W27, [X31 + 0x1C]
+	0x03312174 ADRP X8, 0x23E3000
+	0x03312178 ADD X2, X31, 0x70
+	0x0331217C MOV X0, X24
+	0x03312180 LDR X8, [X8 + 0x900]
+	0x03312184 MOV W1, W27
+	0x03312188 LDR X3, [X8]
+	0x0331218C BL 0x272B3C4
+	0x03312190 ADRP X8, 0x23D2000
+	0x03312194 LDR X8, [X8 + 0xFF0]
+	0x03312198 LDP X28, X29, [X31 + 0x70]
+	0x0331219C LDR X0, [X8]
+
+ISIL:
+	001 Move [X31-64], X30
+	002 Move [X31-56], X25
+	003 Move [X31+16], X24
+	004 Move [X31+24], X23
+	005 Move [X31+32], X22
+	006 Move [X31+40], X21
+	007 Move [X31+48], X20
+	008 Move [X31+56], X19
+	009 Move W25, [X31+64]
+	010 Move [X0], X1
+	011 Move [X0+8], X2
+	012 Move X1, X31
+	013 Move W19, W7
+	014 Move X20, X6
+	015 Move X21, X5
+	016 Move X22, X4
+	017 Move X23, X3
+	018 Move X24, X0
+	019 Call 0x239F888
+	020 Move X0, X24
+	021 Move X1, X31
+	022 Move [X24+24], X22
+	023 Move [X0+16], X23
+	024 Call 0x239F888
+	025 Move X0, X24
+	026 Move X1, X21
+	027 Move [X0+32], X21
+	028 Call 0x239F888
+	029 Move [X24+40], X20
+	030 Move X0, X24
+	031 Move X1, X20
+	032 Call 0x239F888
+	033 Move [X24+8], W19
+	034 Move [X24+12], W25
+	035 Move X20, [X31+48]
+	036 Move X19, [X31+56]
+	037 Move X22, [X31+32]
+	038 Move X21, [X31+40]
+	039 Move X24, [X31+16]
+	040 Move X23, [X31+24]
+	041 Move X30, [X31+64]
+	042 Move X25, [X31+72]
+	043 Return 
+

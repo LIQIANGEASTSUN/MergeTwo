@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardController.<>c__DisplayClass130_0 // TypeDefIndex: 1865
+{
+	// Fields
+	public BoardController <>4__this; // 0x8
+	public BoardData boardData; // 0xC
+
+	// Methods
+
+	// RVA: 0x1918200 Offset: 0x1918200 VA: 0x1918200
+	public void .ctor() { }
+
+	// RVA: 0x1918208 Offset: 0x1918208 VA: 0x1918208
+	internal void <InitBoard>b__0(bool result) { }
+}
+

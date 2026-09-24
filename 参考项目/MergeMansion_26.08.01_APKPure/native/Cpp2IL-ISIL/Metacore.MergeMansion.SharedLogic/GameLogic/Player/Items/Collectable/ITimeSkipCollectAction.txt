@@ -1,0 +1,9 @@
+Type: GameLogic.Player.Items.Collectable.ITimeSkipCollectAction
+
+Method: System.Double get_DurationToSkipMinutes()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

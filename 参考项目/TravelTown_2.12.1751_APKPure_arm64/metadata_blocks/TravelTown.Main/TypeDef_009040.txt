@@ -1,0 +1,35 @@
+// Namespace: Merger.Game.Views.Components
+public class MergeItemView : ViewComponent // TypeDefIndex: 9040
+{
+	// Fields
+	[CanBeNull]
+	[SerializeField]
+	private Image _backgroundImage; // 0x28
+	[SerializeField]
+	protected AddressableImage _iconImage; // 0x30
+	[SerializeField]
+	private Sprite[] _emptyBackgroundIcons; // 0x38
+	[SerializeField]
+	private Sprite[] _filledBackgrundIcons; // 0x40
+	[SerializeField]
+	private Sprite _emptyIconSprite; // 0x48
+
+	// Properties
+	protected Sprite EmptyIconSprite { get; }
+	public virtual IMergeItem MergeItem { set; }
+
+	// Methods
+
+	// RVA: 0x671A194 Offset: 0x6716194 VA: 0x671A194
+	protected Sprite get_EmptyIconSprite() { }
+
+	// RVA: 0x671A208 Offset: 0x6716208 VA: 0x671A208
+	private void Awake() { }
+
+	// RVA: 0x671A290 Offset: 0x6716290 VA: 0x671A290 Slot: 7
+	public virtual void set_MergeItem(IMergeItem value) { }
+
+	// RVA: 0x671A3D4 Offset: 0x67163D4 VA: 0x671A3D4
+	public void .ctor() { }
+}
+

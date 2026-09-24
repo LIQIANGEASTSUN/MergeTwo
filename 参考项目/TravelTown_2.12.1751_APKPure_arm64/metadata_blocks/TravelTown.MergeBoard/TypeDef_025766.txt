@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ProducerSystem.<>c // TypeDefIndex: 25766
+{
+	// Fields
+	public static readonly ProducerSystem.<>c <>9; // 0x0
+	public static Func<ValueTuple<Entity, BoardTilePositionComponent>, int> <>9__5_1; // 0x8
+	public static Func<ValueTuple<Entity, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, InteractionComponent>, bool> <>9__6_0; // 0x10
+
+	// Methods
+
+	// RVA: 0x6A73990 Offset: 0x6A6F990 VA: 0x6A73990
+	private static void .cctor() { }
+
+	// RVA: 0x6A739F8 Offset: 0x6A6F9F8 VA: 0x6A739F8
+	public void .ctor() { }
+
+	// RVA: 0x6A73A00 Offset: 0x6A6FA00 VA: 0x6A73A00
+	internal int <ProduceItemOnInteract>b__5_1(ValueTuple<Entity, BoardTilePositionComponent> e) { }
+
+	// RVA: 0x6A73A08 Offset: 0x6A6FA08 VA: 0x6A73A08
+	internal bool <ProduceItemIfReady>b__6_0(ValueTuple<Entity, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, InteractionComponent> producerQuery) { }
+}
+

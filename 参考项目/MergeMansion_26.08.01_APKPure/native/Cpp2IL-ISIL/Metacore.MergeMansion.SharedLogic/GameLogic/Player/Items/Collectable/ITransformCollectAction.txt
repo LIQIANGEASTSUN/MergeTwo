@@ -1,0 +1,9 @@
+Type: GameLogic.Player.Items.Collectable.ITransformCollectAction
+
+Method: GameLogic.Player.Items.IItemDefinition TransformsInto(GameLogic.Player.IPlayer player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

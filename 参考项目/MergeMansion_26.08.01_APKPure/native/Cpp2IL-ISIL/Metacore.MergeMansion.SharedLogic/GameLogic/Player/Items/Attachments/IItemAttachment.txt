@@ -1,0 +1,9 @@
+Type: GameLogic.Player.Items.Attachments.IItemAttachment
+
+Method: System.Void Consume(GameLogic.Player.IPlayer player, Merge.MergeBoardId mergeBoardId, System.Int32 itemId)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

@@ -1,0 +1,35 @@
+// Namespace: MergeEngine.Signal.Items
+public sealed class ItemExpiredSignal // TypeDefIndex: 225
+{
+	// Fields
+	[CompilerGenerated]
+	private IMergeItem <MergeItem>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private ExpendableComponent <ExpendableComponent>k__BackingField; // 0x18
+
+	// Properties
+	public IMergeItem MergeItem { get; set; }
+	public ExpendableComponent ExpendableComponent { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3858 Offset: 0x5FEF858 VA: 0x5FF3858
+	public IMergeItem get_MergeItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3860 Offset: 0x5FEF860 VA: 0x5FF3860
+	public void set_MergeItem(IMergeItem value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3868 Offset: 0x5FEF868 VA: 0x5FF3868
+	public ExpendableComponent get_ExpendableComponent() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3870 Offset: 0x5FEF870 VA: 0x5FF3870
+	public void set_ExpendableComponent(ExpendableComponent value) { }
+
+	// RVA: 0x5FF3878 Offset: 0x5FEF878 VA: 0x5FF3878
+	public void .ctor(IMergeItem mergeItem, ExpendableComponent expendableComponent) { }
+}
+

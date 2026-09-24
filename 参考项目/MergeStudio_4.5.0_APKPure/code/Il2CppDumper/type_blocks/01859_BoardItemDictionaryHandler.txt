@@ -1,0 +1,38 @@
+// Namespace: MergePuzzle
+public class BoardItemDictionaryHandler // TypeDefIndex: 1859
+{
+	// Fields
+	private readonly SerializableDictionary<int, BoardItemSetData> _boardItemDictionary; // 0x8
+	private readonly SerializableDictionary<int, BoardItemSetData> _boardItemDictionaryVariant; // 0xC
+
+	// Properties
+	public List<BoardItemSetData> Values { get; }
+	public List<SerializableDictionary<int, BoardItemSetData>> RemoteBoardItemDictionaries { get; }
+
+	// Methods
+
+	// RVA: 0x1914408 Offset: 0x1914408 VA: 0x1914408
+	public List<BoardItemSetData> get_Values() { }
+
+	// RVA: 0x1915F3C Offset: 0x1915F3C VA: 0x1915F3C
+	public List<SerializableDictionary<int, BoardItemSetData>> get_RemoteBoardItemDictionaries() { }
+
+	// RVA: 0x1913AA4 Offset: 0x1913AA4 VA: 0x1913AA4
+	public void .ctor(SerializableDictionary<int, BoardItemSetData> boardItemDictionary, SerializableDictionary<int, BoardItemSetData> boardItemDictionaryVariant) { }
+
+	// RVA: 0x1915DD4 Offset: 0x1915DD4 VA: 0x1915DD4
+	public bool TryGetBalanceBoardItemDictionary(out SerializableDictionary<int, BoardItemSetData> boardDic) { }
+
+	// RVA: 0x19162F8 Offset: 0x19162F8 VA: 0x19162F8
+	public bool TryGetFromRemoteBoardItemDictionary(int setID, out BoardItemSetData setData) { }
+
+	// RVA: 0x1914D08 Offset: 0x1914D08 VA: 0x1914D08
+	public bool TryGetValueFromBothGroups(int setID, out BoardItemSetData setDataRes) { }
+
+	// RVA: 0x1913588 Offset: 0x1913588 VA: 0x1913588
+	public bool TryGetValue(int setID, out BoardItemSetData setData) { }
+
+	// RVA: 0x1916654 Offset: 0x1916654 VA: 0x1916654
+	public bool ContainsKey(int setID) { }
+}
+

@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class TimeDurationSystem.<>c // TypeDefIndex: 692
+{
+	// Fields
+	public static readonly TimeDurationSystem.<>c <>9; // 0x0
+	public static Func<TimeDurationComponent, bool> <>9__5_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x63A8624 Offset: 0x63A4624 VA: 0x63A8624
+	private static void .cctor() { }
+
+	// RVA: 0x63A868C Offset: 0x63A468C VA: 0x63A868C
+	public void .ctor() { }
+
+	// RVA: 0x63A8694 Offset: 0x63A4694 VA: 0x63A8694
+	internal bool <ProcessComponents>b__5_0(TimeDurationComponent timeDuration) { }
+}
+

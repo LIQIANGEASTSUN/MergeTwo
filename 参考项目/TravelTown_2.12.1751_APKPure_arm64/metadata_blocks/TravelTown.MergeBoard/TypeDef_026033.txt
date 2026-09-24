@@ -1,0 +1,16 @@
+// Namespace: Merger.MergeBoard.CoinMultipliers.Commands
+public class CoinMultipliersStateUpdatedCommand : CommandBase<CoinMultipliersStateUpdatedSignal> // TypeDefIndex: 26033
+{
+	// Fields
+	[Inject]
+	private BoardController _boardController; // 0x30
+
+	// Methods
+
+	// RVA: 0x6A9F818 Offset: 0x6A9B818 VA: 0x6A9F818 Slot: 15
+	public override void Execute(CoinMultipliersStateUpdatedSignal signal) { }
+
+	// RVA: 0x6A9F898 Offset: 0x6A9B898 VA: 0x6A9F898
+	public void .ctor() { }
+}
+

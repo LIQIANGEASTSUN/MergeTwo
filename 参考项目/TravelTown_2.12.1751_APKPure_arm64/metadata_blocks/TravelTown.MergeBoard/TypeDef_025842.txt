@@ -1,0 +1,9 @@
+// Namespace: Merger.MergeBoard.Logic.State.Updaters
+public interface IBoardItemComponentStateUpdater // TypeDefIndex: 25842
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void UpdateComponent(Entity entity, ItemPayloadBase itemState);
+}
+

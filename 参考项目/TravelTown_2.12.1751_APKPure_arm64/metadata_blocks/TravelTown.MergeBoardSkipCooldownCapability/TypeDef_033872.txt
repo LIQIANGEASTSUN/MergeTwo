@@ -1,0 +1,15 @@
+// Namespace: Merger.MergeBoardSkipCooldownCapability.Logic
+public interface ISkipCooldownProvider // TypeDefIndex: 33872
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract bool CanSkipCooldown(Entity entity);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract double GetTimeLeft(Entity entity);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract ResourceMultiple GetSkipCooldownPrice(Entity entity, IMergeItem mergeItem);
+}
+

@@ -1,0 +1,141 @@
+// Namespace: 
+[Serializable]
+public class SummerWatermelonTenConfig : TableBase // TypeDefIndex: 1284
+{
+	// Fields
+	[CompilerGenerated]
+	private int <Id>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private int <LineId>k__BackingField; // 0xC
+	[CompilerGenerated]
+	private List<int> <InitItems>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private int <LineIdChild>k__BackingField; // 0x14
+	[CompilerGenerated]
+	private int <BigBoardUnlockLevel>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private List<int> <NoRecycleItems>k__BackingField; // 0x1C
+	[CompilerGenerated]
+	private int <IsOpenBP>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private int <BpShopID>k__BackingField; // 0x24
+	[CompilerGenerated]
+	private List<int> <UnlockItemIds>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private int <UnlockStep>k__BackingField; // 0x2C
+	[CompilerGenerated]
+	private List<int> <MoveCheckNum>k__BackingField; // 0x30
+
+	// Properties
+	public int Id { get; set; }
+	public int LineId { get; set; }
+	public List<int> InitItems { get; set; }
+	public int LineIdChild { get; set; }
+	public int BigBoardUnlockLevel { get; set; }
+	public List<int> NoRecycleItems { get; set; }
+	public int IsOpenBP { get; set; }
+	public int BpShopID { get; set; }
+	public List<int> UnlockItemIds { get; set; }
+	public int UnlockStep { get; set; }
+	public List<int> MoveCheckNum { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x2002E4C Offset: 0x2002E4C VA: 0x2002E4C
+	public int get_Id() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2002E54 Offset: 0x2002E54 VA: 0x2002E54
+	public void set_Id(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2002E5C Offset: 0x2002E5C VA: 0x2002E5C
+	public int get_LineId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2002E64 Offset: 0x2002E64 VA: 0x2002E64
+	public void set_LineId(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2002E6C Offset: 0x2002E6C VA: 0x2002E6C
+	public List<int> get_InitItems() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2002E74 Offset: 0x2002E74 VA: 0x2002E74
+	public void set_InitItems(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2002E7C Offset: 0x2002E7C VA: 0x2002E7C
+	public int get_LineIdChild() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2002E84 Offset: 0x2002E84 VA: 0x2002E84
+	public void set_LineIdChild(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2002E8C Offset: 0x2002E8C VA: 0x2002E8C
+	public int get_BigBoardUnlockLevel() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2002E94 Offset: 0x2002E94 VA: 0x2002E94
+	public void set_BigBoardUnlockLevel(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2002E9C Offset: 0x2002E9C VA: 0x2002E9C
+	public List<int> get_NoRecycleItems() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2002EA4 Offset: 0x2002EA4 VA: 0x2002EA4
+	public void set_NoRecycleItems(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2002EAC Offset: 0x2002EAC VA: 0x2002EAC
+	public int get_IsOpenBP() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2002EB4 Offset: 0x2002EB4 VA: 0x2002EB4
+	public void set_IsOpenBP(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2002EBC Offset: 0x2002EBC VA: 0x2002EBC
+	public int get_BpShopID() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2002EC4 Offset: 0x2002EC4 VA: 0x2002EC4
+	public void set_BpShopID(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2002ECC Offset: 0x2002ECC VA: 0x2002ECC
+	public List<int> get_UnlockItemIds() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2002ED4 Offset: 0x2002ED4 VA: 0x2002ED4
+	public void set_UnlockItemIds(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2002EDC Offset: 0x2002EDC VA: 0x2002EDC
+	public int get_UnlockStep() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2002EE4 Offset: 0x2002EE4 VA: 0x2002EE4
+	public void set_UnlockStep(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2002EEC Offset: 0x2002EEC VA: 0x2002EEC
+	public List<int> get_MoveCheckNum() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2002EF4 Offset: 0x2002EF4 VA: 0x2002EF4
+	public void set_MoveCheckNum(List<int> value) { }
+
+	// RVA: 0x2002EFC Offset: 0x2002EFC VA: 0x2002EFC Slot: 4
+	public override int GetID() { }
+
+	// RVA: 0x2002F50 Offset: 0x2002F50 VA: 0x2002F50
+	public void .ctor() { }
+
+	// RVA: 0x2002F58 Offset: 0x2002F58 VA: 0x2002F58
+	public int <>iFixBaseProxy_GetID() { }
+}
+

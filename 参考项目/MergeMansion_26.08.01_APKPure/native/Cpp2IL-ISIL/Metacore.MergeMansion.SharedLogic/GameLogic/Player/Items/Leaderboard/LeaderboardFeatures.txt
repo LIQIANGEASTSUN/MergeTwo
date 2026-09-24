@@ -1,0 +1,194 @@
+Type: GameLogic.Player.Items.Leaderboard.LeaderboardFeatures
+
+Method: System.Boolean get_HasLeaderboardFeatures()
+
+Disassembly:
+	0x0362BD90 CBZ X21, 0x362BEF8
+	0x0362BD94 LDR X0, [X22 + 0x18]
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_HasLeaderboardFeatures(System.Boolean value)
+
+Disassembly:
+	0x0362BD98 LDR X1, [X21 + 0x18]
+	0x0362BD9C MOV X2, X31
+
+ISIL:
+	001 Move [X0+16], W1
+	002 Return 
+
+Method: System.Int32 get_ScoreContribution()
+
+Disassembly:
+	0x0362BDA0 BL 0x33852AC
+	0x0362BDA4 CBZ X19, 0x362BEF8
+
+ISIL:
+	001 Move W0, [X0+20]
+	002 Return X0
+
+Method: System.Void set_ScoreContribution(System.Int32 value)
+
+Disassembly:
+	0x0362BDA8 STR X0, [X19 + 0x18]
+	0x0362BDAC MOV X2, X31
+
+ISIL:
+	001 Move [X0+20], W1
+	002 Return 
+
+Method: Code.GameLogic.GameEvents.LeaderboardEventId get_EventId()
+
+Disassembly:
+	0x0362BDB0 LDR X0, [X22 + 0x10]
+	0x0362BDB4 LDR X1, [X21 + 0x10]
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_EventId(Code.GameLogic.GameEvents.LeaderboardEventId value)
+
+Disassembly:
+	0x0362BDB8 BL 0x33852AC
+	0x0362BDBC B 0x362BE10
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0362BDC0 CBZ X22, 0x362BEF8
+	0x0362BDC4 CBZ X21, 0x362BEF8
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(System.Boolean hasLeaderboardFeatures, System.Int32 scoreContribution, Code.GameLogic.GameEvents.LeaderboardEventId eventId)
+
+Disassembly:
+	0x0362BDC8 ADRP X8, 0x20A9000
+	0x0362BDCC LDR X8, [X8 + 0x8D0]
+	0x0362BDD0 LDR X20, [X22 + 0x18]
+	0x0362BDD4 LDR X23, [X21 + 0x18]
+	0x0362BDD8 LDR X0, [X8]
+	0x0362BDDC LDR W8, [X0 + 0xE4]
+	0x0362BDE0 CBNZ W8, 0x362BDE8
+	0x0362BDE4 BL 0x239BA64
+	0x0362BDE8 MOV X0, X20
+	0x0362BDEC MOV X1, X23
+	0x0362BDF0 MOV X2, X31
+	0x0362BDF4 BL 0x420A01C
+	0x0362BDF8 CBZ X19, 0x362BEF8
+	0x0362BDFC STR X0, [X19 + 0x18]
+	0x0362BE00 MOV X2, X31
+	0x0362BE04 LDR X0, [X22 + 0x10]
+	0x0362BE08 LDR X1, [X21 + 0x10]
+	0x0362BE0C BL 0x420A01C
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31+16], X22
+	003 Move [X31+24], X21
+	004 Move [X31+32], X20
+	005 Move [X31+40], X19
+	006 Move W21, W1
+	007 Move X1, X31
+	008 Move X19, X3
+	009 Move W20, W2
+	010 Move X22, X0
+	011 Call Object..ctor, X0
+	012 Move [X22+24], X19
+	013 Move X0, X22
+	014 NotImplemented "Instruction STURB not yet implemented."
+	015 Move X1, X19
+	016 Move [X22-4], W20
+	017 Move X20, [X31+32]
+	018 Move X19, [X31+40]
+	019 Move X22, [X31+16]
+	020 Move X21, [X31+24]
+	021 Move X30, [X31+48]
+	022 Call 0x239F888
+	023 Return 
+
+Method: System.Void .cctor()
+
+Disassembly:
+	0x0362BE10 STR X0, [X19 + 0x10]
+	0x0362BE14 B 0x362BEE0
+	0x0362BE18 CBZ X19, 0x362BEF8
+	0x0362BE1C STR X20, [X19 + 0x18]
+	0x0362BE20 LDR X1, [X24]
+	0x0362BE24 LDR X8, [X23]
+	0x0362BE28 LDRH W9, [X8 + 0x12E]
+	0x0362BE2C CBZ X9, 0x362BE50
+	0x0362BE30 LDR X10, [X8 + 0xB0]
+	0x0362BE34 ADD X10, X10, 0x8
+	0x0362BE38 LDUR X11, [X10 - 0x8]
+	0x0362BE3C CMP X11, X1
+	0x0362BE40 B.EQ 0x362BE60
+	0x0362BE44 SUBS X9, X9, 0x1
+	0x0362BE48 ADD X10, X10, 0x10
+	0x0362BE4C B.NE 0x362BE38
+	0x0362BE50 MOV X0, X23
+	0x0362BE54 MOVZ W2, 0x1
+	0x0362BE58 BL 0x23D527C
+	0x0362BE5C B 0x362BE70
+	0x0362BE60 LDR W9, [X10]
+	0x0362BE64 ADD W9, W9, 0x1
+	0x0362BE68 ADD X8, X8, W9, 0x4, SXTW
+	0x0362BE6C ADD X0, X8, 0x138
+	0x0362BE70 LDP X8, X1, [X0]
+	0x0362BE74 MOV X0, X23
+	0x0362BE78 BLR X8
+	0x0362BE7C ADRP X22, 0x20AA000
+	0x0362BE80 MOV X21, X0
+	0x0362BE84 LDR X22, [X22 + 0x210]
+	0x0362BE88 LDR X8, [X22]
+	0x0362BE8C LDR W9, [X8 + 0xE4]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move W8, [0x2702CE5]
+	005 Move X20, [0x2109998]
+	006 Move TEMP, X8
+	007 And TEMP, TEMP, 1
+	008 Compare TEMP, 1
+	009 JumpIfEqual {14}
+	010 Move X0, [0x2109998]
+	011 Call 0x239F8E4
+	012 Move W8, 1
+	013 Move [X19+3301], W8
+	014 Move X0, [X20]
+	015 Call 0x239FB80
+	016 Move X1, X31
+	017 Move X19, X0
+	018 Call Object..ctor, X0
+	019 Move X0, X19
+	020 Move X1, X31
+	021 Move [X19+16], W31
+	022 Move [X19+20], W31
+	023 Move [X0+24], X31
+	024 Call 0x239F888
+	025 Move X8, [X20]
+	026 Move X1, X19
+	027 Move X8, [X8+184]
+	028 Move [X8], X19
+	029 Move X8, [X20]
+	030 Move X20, [X31+16]
+	031 Move X19, [X31+24]
+	032 Move X0, [X8+184]
+	033 Move X30, [X31+32]
+	034 Call 0x239F888
+	035 Return 
+

@@ -1,0 +1,22 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardItemConsumerSystem.<>c__DisplayClass12_0 // TypeDefIndex: 899
+{
+	// Fields
+	public Dictionary<IMergeItem, int> currentPositionIndexPerItem; // 0x10
+	public ConsumeMultipleBoardItemsSignal signal; // 0x18
+	public BoardItemConsumerSystem <>4__this; // 0x20
+	public int numTweensActive; // 0x28
+
+	// Methods
+
+	// RVA: 0x66612FC Offset: 0x665D2FC VA: 0x66612FC
+	public void .ctor() { }
+
+	// RVA: 0x6661304 Offset: 0x665D304 VA: 0x6661304
+	internal void <ConsumeMultipleItems>g__ConsumeItem|0(IMergeItem item, PositionComponent positionComponent, IdComponent matchingIdComponent, float durationMultiplier) { }
+
+	// RVA: 0x666191C Offset: 0x665D91C VA: 0x666191C
+	internal void <ConsumeMultipleItems>b__1() { }
+}
+

@@ -1,0 +1,33 @@
+Type: GameLogic.Player.Items.ItemRewardsState
+
+Method: System.Boolean get_RewardsClaimed()
+
+Disassembly:
+	0x035CC460 LDR X21, [X31 + 0x20]
+	0x035CC464 CBNZ X21, 0x35CC27C
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_RewardsClaimed(System.Boolean value)
+
+Disassembly:
+	0x035CC468 BL 0x239BB90
+	0x035CC46C MOV X19, X31
+
+ISIL:
+	001 Move [X0+16], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x035CC470 MOV X21, X31
+	0x035CC474 ADD X8, X31, 0x20
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+

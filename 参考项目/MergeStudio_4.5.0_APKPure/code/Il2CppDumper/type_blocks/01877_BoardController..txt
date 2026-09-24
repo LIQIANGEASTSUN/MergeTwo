@@ -1,0 +1,22 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardController.<>c__DisplayClass249_0 // TypeDefIndex: 1877
+{
+	// Fields
+	public int setID; // 0x8
+
+	// Methods
+
+	// RVA: 0x19192F8 Offset: 0x19192F8 VA: 0x19192F8
+	public void .ctor() { }
+
+	// RVA: 0x1919300 Offset: 0x1919300 VA: 0x1919300
+	internal bool <GetTotalMergeLevelInBoardFloat>b__0(BoardPositionEntity entity) { }
+
+	// RVA: 0x1919364 Offset: 0x1919364 VA: 0x1919364
+	internal bool <GetTotalMergeLevelInBoardFloat>b__1(RewardEntity reward) { }
+
+	// RVA: 0x1919388 Offset: 0x1919388 VA: 0x1919388
+	internal bool <GetTotalMergeLevelInBoardFloat>b__2(ItemEntity reward) { }
+}
+

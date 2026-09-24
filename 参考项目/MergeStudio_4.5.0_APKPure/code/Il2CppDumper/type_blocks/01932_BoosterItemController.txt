@@ -1,0 +1,138 @@
+// Namespace: MergePuzzle
+public class BoosterItemController : BaseSubscriber, IEventReceiver<BoardEvent.BoosterUsed>, IEventReceiverBase, IEventReceiver<TaskEvent.LevelUpDismissed>, IEventReceiver<BoardEvent.RewardBoosterArrived>, IEventReceiver<BoardEvent.BoardItemRemoveFinished>, IEventReceiver<CameraEvent.CameraChangeCompleted>, IEventReceiver<BoardEvent.BoardItemPositionUpdateStart>, IEventReceiver<BoardEvent.OnStateChange>, IEventReceiver<EntityUpdateEvent.RewardAnimationStatusChange>, IEventReceiver<EntityUpdateEvent.SeasonPassRewardUpdate>, IEventReceiver<EntityUpdateEvent.LevelUpdateEntity>, IEventReceiver<BoardEvent.UpdateUIBooster>, IEventReceiver<BoardEvent.MergeCompleted>, IEventReceiver<BoardEvent.MergeStart> // TypeDefIndex: 1932
+{
+	// Fields
+	private BoardEntity _boardEntity; // 0x1C
+	private EventEntity _eventEntity; // 0x20
+	private BoardData _boardData; // 0x24
+	private BoosterEntity _boosterEntity; // 0x28
+	public AnimationLoop BoosterMoveLoop; // 0x2C
+	public AnimationLoop BoosterMoveBackLoop; // 0x30
+	public AnimationController BoosterActiveItemImageAnimationController; // 0x34
+	public Image BoosterItemImage; // 0x38
+	public Image BoosterActiveItemImage; // 0x3C
+	public Sprite BoosterActiveInit; // 0x40
+	public Sprite BoosterActiveReturn; // 0x44
+	public SkeletonGraphic BoosterSkeletonGraphic; // 0x48
+	public GameObject BoosterLockItemParent; // 0x4C
+	public GameObject BoosterItemCountParent; // 0x50
+	public GameObject BoosterPlusIconParent; // 0x54
+	public GameObject BoosterFreeParent; // 0x58
+	public GameObject BoosterRewardedStars; // 0x5C
+	public TextMeshProUGUI BoosterCountText; // 0x60
+	public ParticleSystem BoosterButtonParticle; // 0x64
+	public GameObject MagicDust; // 0x68
+	public Image Background; // 0x6C
+	[HideInInspector]
+	public bool IsActive; // 0x70
+	[HideInInspector]
+	public BoosterItemData BoosterItemData; // 0x74
+	private int _defaultSortingOrder; // 0x78
+	private bool _levelUpPopupActive; // 0x7C
+	private WarningTextFactory _warningTextFactory; // 0x80
+
+	// Properties
+	public BoosterEntity BoosterEntity { get; }
+	public BoardController BoardController { get; }
+	public int ID { get; }
+
+	// Methods
+
+	// RVA: 0x192E4CC Offset: 0x192E4CC VA: 0x192E4CC
+	public BoosterEntity get_BoosterEntity() { }
+
+	// RVA: 0x192E4D4 Offset: 0x192E4D4 VA: 0x192E4D4
+	public BoardController get_BoardController() { }
+
+	// RVA: 0x192E53C Offset: 0x192E53C VA: 0x192E53C
+	public int get_ID() { }
+
+	// RVA: 0x192E558 Offset: 0x192E558 VA: 0x192E558 Slot: 7
+	public override void Start() { }
+
+	// RVA: 0x192E5D8 Offset: 0x192E5D8 VA: 0x192E5D8
+	public void Initialize(BoosterItemData boosterItemData, BoardEntity boardEntity, EventEntity eventEntity, BoardData boardData) { }
+
+	// RVA: 0x192EA0C Offset: 0x192EA0C VA: 0x192EA0C
+	public void UpdateUI(ItemController tutorialSpawn, bool blockTutorial = False, bool isLevelUp = False) { }
+
+	// RVA: 0x192FBFC Offset: 0x192FBFC VA: 0x192FBFC
+	public void OnBoosterClicked() { }
+
+	// RVA: 0x192FDE0 Offset: 0x192FDE0 VA: 0x192FDE0
+	public void ActivateBoosterParticle(bool isActivate) { }
+
+	// RVA: 0x192FE28 Offset: 0x192FE28 VA: 0x192FE28
+	private void ProcessBooster() { }
+
+	// RVA: 0x1930240 Offset: 0x1930240 VA: 0x1930240 Slot: 24
+	public void OnEvent(EntityUpdateEvent.RewardAnimationStatusChange e) { }
+
+	// RVA: 0x1930268 Offset: 0x1930268 VA: 0x1930268
+	public void ArrangeControllerStatus(bool isReset) { }
+
+	// RVA: 0x1930310 Offset: 0x1930310 VA: 0x1930310 Slot: 17
+	public void OnEvent(BoardEvent.BoosterUsed e) { }
+
+	// RVA: 0x192FCFC Offset: 0x192FCFC VA: 0x192FCFC
+	private void ThrowWarning() { }
+
+	// RVA: 0x1930624 Offset: 0x1930624 VA: 0x1930624 Slot: 18
+	public void OnEvent(TaskEvent.LevelUpDismissed e) { }
+
+	// RVA: 0x193064C Offset: 0x193064C VA: 0x193064C Slot: 19
+	public void OnEvent(BoardEvent.RewardBoosterArrived e) { }
+
+	// RVA: 0x192E948 Offset: 0x192E948 VA: 0x192E948
+	private void SetCustomImageSize(BoosterItemData boosterItemData) { }
+
+	// RVA: 0x1930808 Offset: 0x1930808 VA: 0x1930808 Slot: 20
+	public void OnEvent(BoardEvent.BoardItemRemoveFinished e) { }
+
+	// RVA: 0x1930828 Offset: 0x1930828 VA: 0x1930828 Slot: 28
+	public void OnEvent(BoardEvent.MergeCompleted e) { }
+
+	// RVA: 0x1930848 Offset: 0x1930848 VA: 0x1930848 Slot: 21
+	public void OnEvent(CameraEvent.CameraChangeCompleted e) { }
+
+	[IteratorStateMachine(typeof(BoosterItemController.<ProcessCameraChange>d__48))]
+	// RVA: 0x1930868 Offset: 0x1930868 VA: 0x1930868
+	private IEnumerator ProcessCameraChange() { }
+
+	// RVA: 0x19308FC Offset: 0x19308FC VA: 0x19308FC Slot: 22
+	public void OnEvent(BoardEvent.BoardItemPositionUpdateStart e) { }
+
+	// RVA: 0x19309BC Offset: 0x19309BC VA: 0x19309BC Slot: 23
+	public void OnEvent(BoardEvent.OnStateChange e) { }
+
+	// RVA: 0x19309FC Offset: 0x19309FC VA: 0x19309FC Slot: 25
+	public void OnEvent(EntityUpdateEvent.SeasonPassRewardUpdate e) { }
+
+	// RVA: 0x1930A98 Offset: 0x1930A98 VA: 0x1930A98 Slot: 26
+	public void OnEvent(EntityUpdateEvent.LevelUpdateEntity e) { }
+
+	// RVA: 0x1930AA4 Offset: 0x1930AA4 VA: 0x1930AA4 Slot: 27
+	public void OnEvent(BoardEvent.UpdateUIBooster e) { }
+
+	// RVA: 0x1930A00 Offset: 0x1930A00 VA: 0x1930A00
+	public void UpdateUIBooster() { }
+
+	// RVA: 0x1930AA8 Offset: 0x1930AA8 VA: 0x1930AA8 Slot: 29
+	public void OnEvent(BoardEvent.MergeStart e) { }
+
+	// RVA: 0x193104C Offset: 0x193104C VA: 0x193104C
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x19310B4 Offset: 0x19310B4 VA: 0x19310B4
+	private bool <Initialize>b__33_0(BoosterEntity item) { }
+
+	[CompilerGenerated]
+	// RVA: 0x19310F4 Offset: 0x19310F4 VA: 0x19310F4
+	private bool <UpdateUI>b__34_0(BoardPositionEntity pos) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1931204 Offset: 0x1931204 VA: 0x1931204
+	private bool <ProcessCameraChange>b__48_0(BalanceLevelRewardConfigModel.DiscoveryBoxConfigModel.DiscoveryRewardItemModel reward) { }
+}
+

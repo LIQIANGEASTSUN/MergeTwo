@@ -1,0 +1,9 @@
+// Namespace: Merger.Game.Signal.Bubbles
+public class BubbledItemRemovedSignal : BubbleRemoveSignalBase // TypeDefIndex: 9497
+{
+	// Methods
+
+	// RVA: 0x676E648 Offset: 0x676A648 VA: 0x676E648
+	public void .ctor(IMergeItem mergeItem, int mergeItemLevel) { }
+}
+

@@ -1,0 +1,36 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public interface ITimeLocked // TypeDefIndex: 1077
+{
+	// Properties
+	public abstract double LockTime { get; }
+	public abstract double TimeLeft { get; }
+	public abstract bool Locked { get; }
+	public abstract bool BeingUnlocked { get; }
+	public abstract bool CanBeUnlocked { get; }
+	public abstract bool Used { get; }
+	public abstract TimeLockGroup LockGroup { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract double get_LockTime();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract double get_TimeLeft();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract bool get_Locked();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract bool get_BeingUnlocked();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract bool get_CanBeUnlocked();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract bool get_Used();
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract TimeLockGroup get_LockGroup();
+}
+

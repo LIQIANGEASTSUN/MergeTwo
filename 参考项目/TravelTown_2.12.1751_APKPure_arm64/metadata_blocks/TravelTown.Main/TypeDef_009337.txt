@@ -1,0 +1,9 @@
+// Namespace: Merger.Game.Signal
+public class BoardEntityCreatedOnAnotherEntitySignal // TypeDefIndex: 9337
+{
+	// Methods
+
+	// RVA: 0x676A95C Offset: 0x676695C VA: 0x676A95C
+	public void .ctor() { }
+}
+

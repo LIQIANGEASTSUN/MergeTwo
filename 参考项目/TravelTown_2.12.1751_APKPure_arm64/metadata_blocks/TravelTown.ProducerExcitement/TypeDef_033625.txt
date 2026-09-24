@@ -1,0 +1,23 @@
+// Namespace: Merger.ProducerExcitement.Services.ChannelListeners
+public class ProducerExcitementCreatedChannelListener : IChannelListener // TypeDefIndex: 33625
+{
+	// Fields
+	private readonly IJsonService _jsonService; // 0x10
+	private readonly ISignalBus _signalBus; // 0x18
+	private readonly IGameSessionModel _gameSessionModel; // 0x20
+
+	// Properties
+	public string ChannelName { get; }
+
+	// Methods
+
+	// RVA: 0x6AD8A18 Offset: 0x6AD4A18 VA: 0x6AD8A18 Slot: 4
+	public string get_ChannelName() { }
+
+	// RVA: 0x6AD5000 Offset: 0x6AD1000 VA: 0x6AD5000
+	public void .ctor(ISignalBus signalBus, IJsonService jsonService, IGameSessionModel gameSessionModel) { }
+
+	// RVA: 0x6AD8A58 Offset: 0x6AD4A58 VA: 0x6AD8A58 Slot: 5
+	public void HandleMessage(BackendMessageNotification message) { }
+}
+

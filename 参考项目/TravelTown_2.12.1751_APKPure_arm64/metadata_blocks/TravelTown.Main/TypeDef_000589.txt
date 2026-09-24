@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class EntityFactory.<>c // TypeDefIndex: 589
+{
+	// Fields
+	public static readonly EntityFactory.<>c <>9; // 0x0
+	public static Func<Combination, IEnumerable<WeightedItem>> <>9__2_0; // 0x8
+	public static Func<WeightedItem, WeightedItemSpawnable> <>9__2_1; // 0x10
+
+	// Methods
+
+	// RVA: 0x614656C Offset: 0x614256C VA: 0x614656C
+	private static void .cctor() { }
+
+	// RVA: 0x61465D4 Offset: 0x61425D4 VA: 0x61465D4
+	public void .ctor() { }
+
+	// RVA: 0x61465DC Offset: 0x61425DC VA: 0x61465DC
+	internal IEnumerable<WeightedItem> <CreateBoardItemEntity>b__2_0(Combination interactionCostItem) { }
+
+	// RVA: 0x61465F4 Offset: 0x61425F4 VA: 0x61465F4
+	internal WeightedItemSpawnable <CreateBoardItemEntity>b__2_1(WeightedItem i) { }
+}
+

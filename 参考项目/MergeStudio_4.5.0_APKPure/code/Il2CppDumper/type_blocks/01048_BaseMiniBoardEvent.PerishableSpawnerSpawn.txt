@@ -1,0 +1,9 @@
+// Namespace: 
+public struct BaseMiniBoardEvent.PerishableSpawnerSpawn : IEvent // TypeDefIndex: 1048
+{
+	// Fields
+	public MiniBoardItemController Spawner; // 0x0
+	public BoardItemPerishableSpawner PerishableSpawnerData; // 0x4
+	public Coordinate TargetPosition; // 0x8
+}
+

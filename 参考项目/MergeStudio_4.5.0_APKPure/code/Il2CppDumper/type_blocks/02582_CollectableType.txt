@@ -1,0 +1,11 @@
+// Namespace: MergePuzzle
+public enum CollectableType // TypeDefIndex: 2582
+{
+	// Fields
+	public int value__; // 0x0
+	public const CollectableType Energy = 61;
+	public const CollectableType Gem = 62;
+	public const CollectableType Coin = 63;
+	public const CollectableType XP = 64;
+}
+

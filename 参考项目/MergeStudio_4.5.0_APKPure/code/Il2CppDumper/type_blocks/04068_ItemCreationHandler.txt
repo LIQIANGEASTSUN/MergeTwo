@@ -1,0 +1,83 @@
+// Namespace: MergePuzzle.Item.Creation
+public class ItemCreationHandler : LocationHandler // TypeDefIndex: 4068
+{
+	// Fields
+	[CompilerGenerated]
+	private bool <NewItem>k__BackingField; // 0xC
+	[CompilerGenerated]
+	private TutorialIndex <TutorialIndex>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private ItemController <ItemController>k__BackingField; // 0x14
+
+	// Properties
+	public bool NewItem { get; set; }
+	public TutorialIndex TutorialIndex { get; set; }
+	public bool TutorialActive { get; }
+	public ItemController ItemController { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x1CB58F0 Offset: 0x1CB58F0 VA: 0x1CB58F0
+	public bool get_NewItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1CB58F8 Offset: 0x1CB58F8 VA: 0x1CB58F8
+	public void set_NewItem(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1CB5900 Offset: 0x1CB5900 VA: 0x1CB5900
+	public TutorialIndex get_TutorialIndex() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1CB5908 Offset: 0x1CB5908 VA: 0x1CB5908
+	public void set_TutorialIndex(TutorialIndex value) { }
+
+	// RVA: 0x1CB5910 Offset: 0x1CB5910 VA: 0x1CB5910
+	public bool get_TutorialActive() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1CB5920 Offset: 0x1CB5920 VA: 0x1CB5920
+	public ItemController get_ItemController() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1CB5928 Offset: 0x1CB5928 VA: 0x1CB5928
+	public void set_ItemController(ItemController value) { }
+
+	// RVA: 0x1CB5930 Offset: 0x1CB5930 VA: 0x1CB5930
+	private void .ctor() { }
+
+	// RVA: 0x1CB5938 Offset: 0x1CB5938 VA: 0x1CB5938
+	public static ItemCreationHandler GetItemCreationHandler() { }
+
+	// RVA: 0x1CB5994 Offset: 0x1CB5994 VA: 0x1CB5994
+	public ItemCreationHandler SetBubble() { }
+
+	// RVA: 0x1CB59EC Offset: 0x1CB59EC VA: 0x1CB59EC
+	public ItemCreationHandler SetInventory() { }
+
+	// RVA: 0x1CB5A44 Offset: 0x1CB5A44 VA: 0x1CB5A44
+	public ItemCreationHandler SetTrash() { }
+
+	// RVA: 0x1CB5A9C Offset: 0x1CB5A9C VA: 0x1CB5A9C
+	public ItemCreationHandler SetPerishableSpawnerLocation() { }
+
+	// RVA: 0x1CB5AF4 Offset: 0x1CB5AF4 VA: 0x1CB5AF4
+	public ItemCreationHandler SetJellyLocation() { }
+
+	// RVA: 0x1CB5B4C Offset: 0x1CB5B4C VA: 0x1CB5B4C
+	public ItemCreationHandler SetLevelBoosterLocation() { }
+
+	// RVA: 0x1CB5BA4 Offset: 0x1CB5BA4 VA: 0x1CB5BA4
+	public ItemCreationHandler SetSplitSpawnItemIndex(int itemIndex) { }
+
+	// RVA: 0x1CB5C14 Offset: 0x1CB5C14 VA: 0x1CB5C14
+	public ItemCreationHandler SetRewardsAreaLocation() { }
+
+	// RVA: 0x1CB5C6C Offset: 0x1CB5C6C VA: 0x1CB5C6C
+	public ItemCreationHandler SetMerge() { }
+
+	// RVA: 0x1CB5CC4 Offset: 0x1CB5CC4 VA: 0x1CB5CC4
+	public ItemCreationHandler SetRecurringEventSpawner() { }
+}
+

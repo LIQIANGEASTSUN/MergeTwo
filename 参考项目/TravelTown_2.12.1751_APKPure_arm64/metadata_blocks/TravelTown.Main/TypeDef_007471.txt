@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ChainRelationsProbabilityModifier.<>c__DisplayClass13_0 // TypeDefIndex: 7471
+{
+	// Fields
+	public IMergeItem mergeItem; // 0x10
+
+	// Methods
+
+	// RVA: 0x6580BAC Offset: 0x657CBAC VA: 0x6580BAC
+	public void .ctor() { }
+
+	// RVA: 0x6581200 Offset: 0x657D200 VA: 0x6581200
+	internal bool <GetConsumer>b__2(IMergeItem candidate) { }
+}
+

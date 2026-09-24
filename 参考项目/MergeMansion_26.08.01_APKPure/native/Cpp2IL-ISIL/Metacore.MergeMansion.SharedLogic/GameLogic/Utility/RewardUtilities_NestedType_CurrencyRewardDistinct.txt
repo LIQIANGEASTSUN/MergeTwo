@@ -1,0 +1,13 @@
+Type: GameLogic.Utility.RewardUtilities+CurrencyRewardDistinct
+
+Method: System.Void .ctor(Currencies currency, CurrencySource source)
+
+Disassembly:
+	0x03393810 B 0x239B888
+	0x03393814 LDR X0, [X0 + 0xA8]
+
+ISIL:
+	001 Move [X0], W1
+	002 Move [X0+4], W2
+	003 Return 
+

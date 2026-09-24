@@ -1,0 +1,199 @@
+Type: Code.GameLogic.GameEvents.MysteryMachineCurrencyItemSource
+
+Method: System.Int32 get_ExperimentPriority()
+
+Disassembly:
+	0x03320BEC LDR X0, [X0 + 0x230]
+	0x03320BF0 BL 0x239B8E4
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_ExperimentPriority(System.Int32 value)
+
+Disassembly:
+	0x03320BF4 ADRP X0, 0x23D0000
+	0x03320BF8 LDR X0, [X0 + 0x390]
+
+ISIL:
+	001 Move [X0+16], W1
+	002 Return 
+
+Method: Code.GameLogic.GameEvents.MysteryMachineCurrencyItemId get_ConfigKey()
+
+Disassembly:
+	0x03320BFC BL 0x239B8E4
+	0x03320C00 ADRP X0, 0x23D0000
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_ConfigKey(Code.GameLogic.GameEvents.MysteryMachineCurrencyItemId value)
+
+Disassembly:
+	0x03320C04 LDR X0, [X0 + 0x398]
+	0x03320C08 BL 0x239B8E4
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: Currencies get_Currency()
+
+Disassembly:
+	0x03320C0C ADRP X0, 0x23AD000
+	0x03320C10 LDR X0, [X0 + 0x310]
+
+ISIL:
+	001 Move W0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_Currency(Currencies value)
+
+Disassembly:
+	0x03320C14 BL 0x239B8E4
+	0x03320C18 ADRP X0, 0x23B4000
+
+ISIL:
+	001 Move [X0+32], W1
+	002 Return 
+
+Method: System.Int32 get_Amount()
+
+Disassembly:
+	0x03320C1C LDR X0, [X0 + 0xD58]
+	0x03320C20 BL 0x239B8E4
+
+ISIL:
+	001 Move W0, [X0+36]
+	002 Return X0
+
+Method: System.Void set_Amount(System.Int32 value)
+
+Disassembly:
+	0x03320C24 ADRP X0, 0x23D0000
+	0x03320C28 LDR X0, [X0 + 0x3A0]
+
+ISIL:
+	001 Move [X0+36], W1
+	002 Return 
+
+Method: System.Int32 get_DisplayAmount()
+
+Disassembly:
+	0x03320C2C BL 0x239B8E4
+	0x03320C30 ADRP X0, 0x23B4000
+
+ISIL:
+	001 Move W0, [X0+40]
+	002 Return X0
+
+Method: System.Void set_DisplayAmount(System.Int32 value)
+
+Disassembly:
+	0x03320C34 LDR X0, [X0 + 0x8A8]
+	0x03320C38 BL 0x239B8E4
+
+ISIL:
+	001 Move [X0+40], W1
+	002 Return 
+
+Method: Code.GameLogic.GameEvents.MysteryMachineCurrencyItemInfo ToConfigData(Metaplay.Core.Config.GameConfigBuildLog buildLog)
+
+Disassembly:
+	0x03320C3C ADRP X0, 0x23B4000
+	0x03320C40 LDR X0, [X0 + 0x8D0]
+	0x03320C44 BL 0x239B8E4
+	0x03320C48 ADRP X0, 0x23F8000
+	0x03320C4C LDR X0, [X0 + 0x850]
+	0x03320C50 BL 0x239B8E4
+	0x03320C54 ADRP X0, 0x23F8000
+	0x03320C58 LDR X0, [X0 + 0x858]
+	0x03320C5C BL 0x239B8E4
+	0x03320C60 ADRP X0, 0x23F8000
+	0x03320C64 LDR X0, [X0 + 0x860]
+	0x03320C68 BL 0x239B8E4
+	0x03320C6C ADRP X0, 0x23F8000
+	0x03320C70 LDR X0, [X0 + 0x818]
+	0x03320C74 BL 0x239B8E4
+	0x03320C78 ADRP X0, 0x23F8000
+	0x03320C7C LDR X0, [X0 + 0x800]
+	0x03320C80 BL 0x239B8E4
+	0x03320C84 ADRP X0, 0x23F8000
+	0x03320C88 LDR X0, [X0 + 0x868]
+	0x03320C8C BL 0x239B8E4
+	0x03320C90 ADRP X0, 0x23AD000
+	0x03320C94 LDR X0, [X0 + 0x338]
+	0x03320C98 BL 0x239B8E4
+	0x03320C9C MOVZ W8, 0x1
+	0x03320CA0 STRB W8, [X21 + 0x568]
+	0x03320CA4 MOVI V0.2D, 0x0
+	0x03320CA8 LDR X0, [X25]
+	0x03320CAC STP X31, X31, [X31 + 0xF0]
+	0x03320CB0 STR X31, [X31 + 0xE0]
+	0x03320CB4 ADRP X21, 0x23B4000
+	0x03320CB8 STP X31, X31, [X31 + 0x80]
+	0x03320CBC LDR W8, [X0 + 0xE4]
+	0x03320CC0 STP V0, V0, [X31 + 0xA0]
+	0x03320CC4 STP V0, V0, [X31 + 0xC0]
+	0x03320CC8 STR V0, [X31 + 0x9]
+
+ISIL:
+	001 Move [X31-64], D8
+	002 Move [X31+16], X30
+	003 Move [X31+24], X23
+	004 Move [X31+32], X22
+	005 Move [X31+40], X21
+	006 Move [X31+48], X20
+	007 Move [X31+56], X19
+	008 Move X19, X0
+	009 Move W8, [0x2A0C541]
+	010 Move X21, [0x23FC718]
+	011 Move TEMP, X8
+	012 And TEMP, TEMP, 1
+	013 Compare TEMP, 1
+	014 JumpIfEqual {19}
+	015 Move X0, [0x23FC718]
+	016 Call 0x239F8E4
+	017 Move W8, 1
+	018 Move [X20+1345], W8
+	019 Move X0, [X21]
+	020 Move X20, [X19+24]
+	021 Move W22, [X19+40]
+	022 Move W23, [X19+16]
+	023 Move D8, [X19+32]
+	024 Call 0x239FB80
+	025 Move X1, X31
+	026 Move X19, X0
+	027 Call Object..ctor, X0
+	028 Move X0, X19
+	029 Move X1, X20
+	030 Move [X0+16], X20
+	031 Call 0x239F888
+	032 Move [X19+24], D8
+	033 Move X0, X19
+	034 Move [X19+32], W22
+	035 Move [X19+36], W23
+	036 Move X20, [X31+48]
+	037 Move X19, [X31+56]
+	038 Move X22, [X31+32]
+	039 Move X21, [X31+40]
+	040 Move X30, [X31+16]
+	041 Move X23, [X31+24]
+	042 Move V8, [X31+64]
+	043 Return X0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03320CCC LDR X21, [X21 + 0x8A8]
+	0x03320CD0 STP V0, V0, [X31 + 0x60]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+

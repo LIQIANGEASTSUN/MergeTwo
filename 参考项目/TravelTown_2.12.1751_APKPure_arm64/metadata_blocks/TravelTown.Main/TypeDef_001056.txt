@@ -1,0 +1,12 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public class CooldownBlockComponent : ComponentBase // TypeDefIndex: 1056
+{
+	// Fields
+	public bool BlockUnlockTime; // 0x20
+
+	// Methods
+
+	// RVA: 0x68FBFEC Offset: 0x68F7FEC VA: 0x68FBFEC
+	public void .ctor(Entity entity) { }
+}
+

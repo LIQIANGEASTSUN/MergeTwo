@@ -1,0 +1,16 @@
+Type: GameLogic.Player.Items.Fishing.ICameraFeatures
+
+Method: System.Boolean get_IsCamera()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.String get_TakePhotoSfx()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

@@ -1,0 +1,86 @@
+Type: GameLogic.Player.Board.IBoard
+
+Method: GameLogic.Config.Types.MetacoreTime get_BoardCreationTime()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Merge.MergeBoardId get_BoardIdentifier()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.List`1<GameLogic.Player.Items.MergeItem> get_MergeItemsNonAlloc()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Player.Items.MergeItem> get_MergeItems()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Player.Board.Coordinate> get_Coordinates()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.MergeItem get_Item(GameLogic.Player.Board.Coordinate coord)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Board.BoardBubbleState get_BubbleState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Merge.MergeBoardAct> ReplaceItems(GameLogic.Player.IPlayer player, GameLogic.Config.Types.MetacoreTime replacementTimestamp, System.Predicate`1<GameLogic.Player.Items.MergeItem> matcher, GameLogic.Random.IGenerationContext generationContext, GameLogic.Player.Items.IItemDefinition replacementItem)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Merge.MergeBoardAct> EnqueueAutoSellItemsFromBoard(Merge.MergeBoardId mergeBoardId, GameLogic.Player.IPlayer player, System.Predicate`1<GameLogic.Player.Items.MergeItem> matcher, GameLogic.Config.Types.MetacoreTime sellTimestamp)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void UpdateListOfBoostedCoordinatesAndApplyBoosts(GameLogic.Config.Types.MetacoreTime timestamp, GameLogic.Player.IPlayer player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean MatchesActionRequirements(GameLogic.Player.IPlayer player, Code.GameLogic.GameEvents.BoardActionType actionType)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean IsOnFireActive(GameLogic.Player.IPlayer player, GameLogic.Config.Types.MetacoreTime timestamp)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

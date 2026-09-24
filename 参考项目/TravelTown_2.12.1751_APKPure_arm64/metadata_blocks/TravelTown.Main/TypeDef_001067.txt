@@ -1,0 +1,87 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public interface ILockedComponent // TypeDefIndex: 1067
+{
+	// Properties
+	public abstract bool Locked { get; }
+	public abstract bool Bubbled { get; }
+	public abstract bool Boxed { get; }
+	public abstract bool LockedByLevel { get; }
+	public abstract int LevelLock { get; }
+	public abstract double BubbleTimeLeft { get; }
+	public abstract bool LockedByInteraction { set; }
+	public abstract bool LockedByFlyingAnimation { get; set; }
+	public abstract bool AnyLock { get; }
+	public abstract bool OnlyLock { get; }
+	public abstract bool DragLocked { get; }
+	public abstract bool Meteor { get; }
+	public abstract long MeteorEndTime { get; set; }
+	public abstract long MeteorDuration { get; set; }
+	public abstract string MeteorCycleId { get; set; }
+	public abstract int MeteorLocationItemIndex { get; set; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract bool get_Locked();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract bool get_Bubbled();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract bool get_Boxed();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract bool get_LockedByLevel();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract int get_LevelLock();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract double get_BubbleTimeLeft();
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract void set_LockedByInteraction(bool value);
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract bool get_LockedByFlyingAnimation();
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract void set_LockedByFlyingAnimation(bool value);
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract bool get_AnyLock();
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public abstract bool get_OnlyLock();
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public abstract bool get_DragLocked();
+
+	// RVA: -1 Offset: -1 Slot: 12
+	public abstract bool get_Meteor();
+
+	// RVA: -1 Offset: -1 Slot: 13
+	public abstract long get_MeteorEndTime();
+
+	// RVA: -1 Offset: -1 Slot: 14
+	public abstract void set_MeteorEndTime(long value);
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public abstract long get_MeteorDuration();
+
+	// RVA: -1 Offset: -1 Slot: 16
+	public abstract void set_MeteorDuration(long value);
+
+	// RVA: -1 Offset: -1 Slot: 17
+	public abstract string get_MeteorCycleId();
+
+	// RVA: -1 Offset: -1 Slot: 18
+	public abstract void set_MeteorCycleId(string value);
+
+	// RVA: -1 Offset: -1 Slot: 19
+	public abstract int get_MeteorLocationItemIndex();
+
+	// RVA: -1 Offset: -1 Slot: 20
+	public abstract void set_MeteorLocationItemIndex(int value);
+}
+

@@ -1,0 +1,21 @@
+// Namespace: Merger.MergeBoard.Logic.State.Updaters
+public class TimeDurationComponentStateUpdater : ComponentStateUpdaterBase<TimeDurationComponent, ItemPayloadBase>, IBoardItemComponentStateUpdater // TypeDefIndex: 25849
+{
+	// Fields
+	private readonly IServerTimeService _serverTimeService; // 0x10
+
+	// Properties
+	private long CurrentServerTimeMS { get; }
+
+	// Methods
+
+	// RVA: 0x6A85E6C Offset: 0x6A81E6C VA: 0x6A85E6C
+	public void .ctor(IServerTimeService serverTimeService) { }
+
+	// RVA: 0x6A85ED0 Offset: 0x6A81ED0 VA: 0x6A85ED0
+	private long get_CurrentServerTimeMS() { }
+
+	// RVA: 0x6A85F70 Offset: 0x6A81F70 VA: 0x6A85F70 Slot: 5
+	protected override void UpdateFromState(ref TimeDurationComponent component, ItemPayloadBase itemState) { }
+}
+

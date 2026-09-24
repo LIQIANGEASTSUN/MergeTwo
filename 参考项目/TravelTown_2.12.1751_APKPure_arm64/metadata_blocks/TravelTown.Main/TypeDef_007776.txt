@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoosterModel.<>c__DisplayClass48_0 // TypeDefIndex: 7776
+{
+	// Fields
+	public string uuid; // 0x10
+
+	// Methods
+
+	// RVA: 0x65C65B8 Offset: 0x65C25B8 VA: 0x65C65B8
+	public void .ctor() { }
+
+	// RVA: 0x65C6B50 Offset: 0x65C2B50 VA: 0x65C6B50
+	internal bool <GetRemoteActiveBoosterByUuid>b__0(RemoteBoosterData activeBooster) { }
+}
+

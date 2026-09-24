@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class SplitSystem.<>c // TypeDefIndex: 25774
+{
+	// Fields
+	public static readonly SplitSystem.<>c <>9; // 0x0
+	public static Func<ValueTuple<Entity, BoardTilePositionComponent>, int> <>9__9_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x6A7616C Offset: 0x6A7216C VA: 0x6A7616C
+	private static void .cctor() { }
+
+	// RVA: 0x6A761D4 Offset: 0x6A721D4 VA: 0x6A761D4
+	public void .ctor() { }
+
+	// RVA: 0x6A761DC Offset: 0x6A721DC VA: 0x6A761DC
+	internal int <FindNearestPosition>b__9_0(ValueTuple<Entity, BoardTilePositionComponent> e) { }
+}
+

@@ -1,0 +1,35 @@
+// Namespace: DragonU3DSDK.Storage
+[Serializable]
+public class StorageGame : StorageBase // TypeDefIndex: 11020
+{
+	// Fields
+	[JsonProperty]
+	private StorageDictionary<int, StorageMergeBoard> mergeBoards; // 0x8
+	[JsonProperty]
+	private StorageMergeUnlockItem mergeUnlockItem; // 0xC
+	[JsonProperty]
+	private StorageMysteryGift mysteryGift; // 0x10
+
+	// Properties
+	[JsonIgnore]
+	public StorageDictionary<int, StorageMergeBoard> MergeBoards { get; }
+	[JsonIgnore]
+	public StorageMergeUnlockItem MergeUnlockItem { get; }
+	[JsonIgnore]
+	public StorageMysteryGift MysteryGift { get; }
+
+	// Methods
+
+	// RVA: 0x26E5BEC Offset: 0x26E5BEC VA: 0x26E5BEC
+	public StorageDictionary<int, StorageMergeBoard> get_MergeBoards() { }
+
+	// RVA: 0x26E5BF4 Offset: 0x26E5BF4 VA: 0x26E5BF4
+	public StorageMergeUnlockItem get_MergeUnlockItem() { }
+
+	// RVA: 0x26E5BFC Offset: 0x26E5BFC VA: 0x26E5BFC
+	public StorageMysteryGift get_MysteryGift() { }
+
+	// RVA: 0x26E5C04 Offset: 0x26E5C04 VA: 0x26E5C04
+	public void .ctor() { }
+}
+

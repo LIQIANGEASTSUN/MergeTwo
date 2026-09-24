@@ -1,0 +1,9 @@
+Type: GameLogic.Player.Items.Order.IOrderStateFactory
+
+Method: GameLogic.Player.Items.Order.IOrderState Create(GameLogic.Random.IGenerationContext context)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

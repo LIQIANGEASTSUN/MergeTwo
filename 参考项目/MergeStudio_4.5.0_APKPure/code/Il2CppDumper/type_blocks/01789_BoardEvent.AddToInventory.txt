@@ -1,0 +1,9 @@
+// Namespace: 
+public struct BoardEvent.AddToInventory : IEvent // TypeDefIndex: 1789
+{
+	// Fields
+	public ItemController Item; // 0x0
+	public BoardItemData ItemData; // 0x4
+	public bool DestroyItem; // 0x8
+}
+

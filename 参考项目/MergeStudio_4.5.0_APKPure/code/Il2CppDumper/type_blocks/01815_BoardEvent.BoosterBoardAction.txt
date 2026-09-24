@@ -1,0 +1,9 @@
+// Namespace: 
+public struct BoardEvent.BoosterBoardAction : IEvent // TypeDefIndex: 1815
+{
+	// Fields
+	public ItemController Item; // 0x0
+	public BoosterItemController BoosterItemController; // 0x4
+	public BoosterEntity BoosterEntity; // 0x8
+}
+

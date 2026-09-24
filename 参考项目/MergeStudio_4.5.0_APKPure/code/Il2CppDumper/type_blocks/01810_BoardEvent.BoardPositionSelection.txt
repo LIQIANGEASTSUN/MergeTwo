@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BoardEvent.BoardPositionSelection : IEvent // TypeDefIndex: 1810
+{
+	// Fields
+	public ItemController Item; // 0x0
+}
+

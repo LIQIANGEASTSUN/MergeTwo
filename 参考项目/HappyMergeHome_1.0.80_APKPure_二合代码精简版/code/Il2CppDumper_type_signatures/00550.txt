@@ -1,0 +1,192 @@
+// Namespace: 
+public class FishCultureModel : ActivityEntityBase, I_ActivityStatus // TypeDefIndex: 550
+{
+	// Fields
+	private static FishCultureModel _instance; // 0x0
+	private bool _isFlyCollection; // 0x39
+	private bool _lastActivityOpenState; // 0x3A
+	public const string preheatCoolTimeKey = "FishCulturePreheat";
+
+	// Properties
+	public List<FishCultureRewardConfig> FishCultureRewardConfigList { get; }
+	public List<FishCultureLeaderBoardRewardConfig> FishCultureLeaderBoardRewardConfigList { get; }
+	public List<FishCultureTaskRewardConfig> FishCultureTaskRewardConfigList { get; }
+	public static FishCultureModel Instance { get; }
+	public override string Guid { get; }
+	public StorageFishCulture CurStorageFishCultureWeek { get; }
+	public FishCultureGlobalConfig GlobalConfig { get; }
+	public long PreheatTime { get; }
+	public long PreEndTime { get; }
+	public List<FishCultureLeaderBoardRewardConfig> LeaderBoardRewardConfig { get; }
+	public List<FishCultureTaskRewardConfig> TaskRewardConfig { get; }
+	public List<FishCultureRewardConfig> LevelConfig { get; }
+	public bool IsUnlock { get; }
+
+	// Methods
+
+	// RVA: 0x31D5B78 Offset: 0x31D5B78 VA: 0x31D5B78
+	public List<FishCultureRewardConfig> get_FishCultureRewardConfigList() { }
+
+	// RVA: 0x31D61A4 Offset: 0x31D61A4 VA: 0x31D61A4
+	public List<FishCultureLeaderBoardRewardConfig> get_FishCultureLeaderBoardRewardConfigList() { }
+
+	// RVA: 0x31D66C0 Offset: 0x31D66C0 VA: 0x31D66C0
+	public List<FishCultureTaskRewardConfig> get_FishCultureTaskRewardConfigList() { }
+
+	// RVA: 0x31D67BC Offset: 0x31D67BC VA: 0x31D67BC
+	public bool ShowEntrance() { }
+
+	// RVA: 0x31D695C Offset: 0x31D695C VA: 0x31D695C
+	public static FishCultureModel get_Instance() { }
+
+	// RVA: 0x31D6B0C Offset: 0x31D6B0C VA: 0x31D6B0C Slot: 4
+	public override string get_Guid() { }
+
+	[RuntimeInitializeOnLoadMethod(0)]
+	// RVA: 0x31D6B9C Offset: 0x31D6B9C VA: 0x31D6B9C
+	private static void InitAuto() { }
+
+	// RVA: 0x31D6094 Offset: 0x31D6094 VA: 0x31D6094
+	public StorageFishCulture get_CurStorageFishCultureWeek() { }
+
+	// RVA: 0x31D6C04 Offset: 0x31D6C04 VA: 0x31D6C04
+	public void InitStorage() { }
+
+	// RVA: 0x31D7720 Offset: 0x31D7720 VA: 0x31D7720
+	public FishCultureGlobalConfig get_GlobalConfig() { }
+
+	// RVA: 0x31D72CC Offset: 0x31D72CC VA: 0x31D72CC
+	public long get_PreheatTime() { }
+
+	// RVA: 0x31D736C Offset: 0x31D736C VA: 0x31D736C
+	public long get_PreEndTime() { }
+
+	// RVA: -1 Offset: -1
+	private static void InitTable<T>(Dictionary<int, T> config, List<T> tableData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3628278 Offset: 0x3628278 VA: 0x3628278
+	|-FishCultureModel.InitTable<object>
+	*/
+
+	// RVA: 0x31D7858 Offset: 0x31D7858 VA: 0x31D7858
+	public List<FishCultureLeaderBoardRewardConfig> get_LeaderBoardRewardConfig() { }
+
+	// RVA: 0x31D78B0 Offset: 0x31D78B0 VA: 0x31D78B0
+	public List<FishCultureTaskRewardConfig> get_TaskRewardConfig() { }
+
+	// RVA: 0x31D7908 Offset: 0x31D7908 VA: 0x31D7908
+	public List<FishCultureRewardConfig> get_LevelConfig() { }
+
+	[AsyncStateMachine(typeof(FishCultureModel.<InitFromServerData>d__29))]
+	// RVA: 0x31D7960 Offset: 0x31D7960 VA: 0x31D7960 Slot: 5
+	public override void InitFromServerData(string activityId, string activityType, ulong startTime, ulong endTime, ulong rewardEndTime, bool manualEnd, string configJson, string activitySubType) { }
+
+	// RVA: 0x31D7B34 Offset: 0x31D7B34 VA: 0x31D7B34
+	public bool get_IsUnlock() { }
+
+	// RVA: 0x31D7BE0 Offset: 0x31D7BE0 VA: 0x31D7BE0 Slot: 10
+	public override bool IsOpened(bool hasLog = False) { }
+
+	// RVA: 0x31D7C60 Offset: 0x31D7C60 VA: 0x31D7C60
+	public bool IsPrivateOpened() { }
+
+	// RVA: 0x31D6814 Offset: 0x31D6814 VA: 0x31D6814
+	public bool IsStart() { }
+
+	// RVA: 0x31D7EA4 Offset: 0x31D7EA4 VA: 0x31D7EA4
+	public void MergeToProductFishCulture(TableMergeItem tableMergeItem, Vector3 srcPos) { }
+
+	// RVA: 0x31D80B8 Offset: 0x31D80B8 VA: 0x31D80B8
+	private void AddActivityScore(int count, Vector3 srcPos) { }
+
+	// RVA: 0x31D8594 Offset: 0x31D8594 VA: 0x31D8594
+	private void FlyScore(int count, Vector3 scrPos, Action endCall) { }
+
+	// RVA: 0x31D82E0 Offset: 0x31D82E0 VA: 0x31D82E0
+	public void AddScore(int addCount, string reason) { }
+
+	// RVA: 0x31D8C74 Offset: 0x31D8C74 VA: 0x31D8C74
+	public int GetScore() { }
+
+	// RVA: 0x31D8CE0 Offset: 0x31D8CE0 VA: 0x31D8CE0
+	public int GetTaskValue(StorageOrderItem taskItem, bool isMul) { }
+
+	// RVA: 0x31D6A20 Offset: 0x31D6A20 VA: 0x31D6A20
+	public void .ctor() { }
+
+	// RVA: 0x31D907C Offset: 0x31D907C VA: 0x31D907C
+	public void UpdateTime() { }
+
+	// RVA: 0x31D92CC Offset: 0x31D92CC VA: 0x31D92CC
+	public static bool CanShowMainPopup() { }
+
+	// RVA: 0x31D95F4 Offset: 0x31D95F4 VA: 0x31D95F4
+	public static bool CanShowPreheatPopup() { }
+
+	// RVA: 0x31D9A0C Offset: 0x31D9A0C VA: 0x31D9A0C
+	public static bool CanShowPreheatPopupEachDay() { }
+
+	// RVA: 0x31D9BC0 Offset: 0x31D9BC0 VA: 0x31D9BC0
+	public bool TimeCheckGetReward() { }
+
+	// RVA: 0x31D9FD4 Offset: 0x31D9FD4 VA: 0x31D9FD4
+	public static bool CanShowStartPopup() { }
+
+	// RVA: 0x31DA0C4 Offset: 0x31DA0C4 VA: 0x31DA0C4
+	public static bool CanShowFinishPopup() { }
+
+	// RVA: 0x31DA218 Offset: 0x31DA218 VA: 0x31DA218 Slot: 23
+	public override bool CanDownLoadRes() { }
+
+	// RVA: 0x31DA2C4 Offset: 0x31DA2C4 VA: 0x31DA2C4
+	public Transform GetCommonFlyTarget() { }
+
+	// RVA: 0x31DA65C Offset: 0x31DA65C VA: 0x31DA65C
+	public bool BuyFish(FishCultureRewardConfig fishConfig) { }
+
+	// RVA: 0x31DABC0 Offset: 0x31DABC0 VA: 0x31DABC0
+	public string GetProgressString() { }
+
+	// RVA: 0x31DAD2C Offset: 0x31DAD2C VA: 0x31DAD2C
+	public float GetProgress() { }
+
+	// RVA: 0x31D9EA8 Offset: 0x31D9EA8 VA: 0x31D9EA8
+	public FishCultureRewardConfig GetNextFish() { }
+
+	// RVA: 0x31DADC8 Offset: 0x31DADC8 VA: 0x31DADC8
+	public bool ShowAuxItem() { }
+
+	// RVA: 0x31DAEF4 Offset: 0x31DAEF4 VA: 0x31DAEF4
+	public bool ShowTaskEntrance() { }
+
+	// RVA: 0x31DB04C Offset: 0x31DB04C VA: 0x31DB04C Slot: 26
+	public I_ActivityStatus.ActivityStatus GetActivityStatus() { }
+
+	// RVA: 0x31DB118 Offset: 0x31DB118 VA: 0x31DB118
+	public void DebugSetLeftTime() { }
+
+	// RVA: 0x31DB274 Offset: 0x31DB274 VA: 0x31DB274
+	public void DebugClear() { }
+
+	// RVA: 0x31DB6C8 Offset: 0x31DB6C8 VA: 0x31DB6C8
+	public bool CanShowGuide() { }
+
+	// RVA: 0x31DB728 Offset: 0x31DB728 VA: 0x31DB728
+	private bool CanShowCommonEntranceGuide(GuideTriggerPosition position, GuideTargetType targetType) { }
+
+	[CompilerGenerated]
+	[DebuggerHidden]
+	// RVA: 0x31DBF90 Offset: 0x31DBF90 VA: 0x31DBF90
+	private void <>n__0(string activityId, string activityType, ulong startTime, ulong endTime, ulong rewardEndTime, bool manualEnd, string configJson, string activitySubType) { }
+
+	// RVA: 0x31DBFE8 Offset: 0x31DBFE8 VA: 0x31DBFE8
+	public void <>iFixBaseProxy_InitFromServerData(string P0, string P1, ulong P2, ulong P3, ulong P4, bool P5, string P6, string P7) { }
+
+	// RVA: 0x31DC040 Offset: 0x31DC040 VA: 0x31DC040
+	public bool <>iFixBaseProxy_IsOpened(bool P0) { }
+
+	// RVA: 0x31DC048 Offset: 0x31DC048 VA: 0x31DC048
+	public bool <>iFixBaseProxy_CanDownLoadRes() { }
+}
+

@@ -1,0 +1,20 @@
+// Namespace: Merger.Game.Signal.Bubbles
+public class BubbleBoardLimitReachedSignal // TypeDefIndex: 9496
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly int <BubblesOnBoard>k__BackingField; // 0x10
+
+	// Properties
+	public int BubblesOnBoard { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x676E618 Offset: 0x676A618 VA: 0x676E618
+	public int get_BubblesOnBoard() { }
+
+	// RVA: 0x676E620 Offset: 0x676A620 VA: 0x676E620
+	public void .ctor(int bubblesOnBoard) { }
+}
+

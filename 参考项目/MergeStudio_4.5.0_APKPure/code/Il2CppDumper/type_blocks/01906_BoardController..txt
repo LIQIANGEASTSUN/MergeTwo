@@ -1,0 +1,26 @@
+// Namespace: 
+[CompilerGenerated]
+private struct BoardController.<UnboxCellsAfterLevelupDismiss>d__294 : IAsyncStateMachine // TypeDefIndex: 1906
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncUniTaskMethodBuilder<bool> <>t__builder; // 0x4
+	public BoardController <>4__this; // 0x10
+	public bool isInit; // 0x14
+	private List<ItemController> <unboxWaiting>5__2; // 0x18
+	private bool <isBlocked>5__3; // 0x1C
+	private bool <unboxHappened>5__4; // 0x1D
+	private UniTask.Awaiter <>u__1; // 0x20
+	private List.Enumerator<ItemController> <>7__wrap4; // 0x28
+	private YieldAwaitable.Awaiter <>u__2; // 0x38
+
+	// Methods
+
+	// RVA: 0x1926780 Offset: 0x1926780 VA: 0x1926780 Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x1927234 Offset: 0x1927234 VA: 0x1927234 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

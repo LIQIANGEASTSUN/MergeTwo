@@ -1,0 +1,13 @@
+// Namespace: MergeEngine.Data
+[Serializable]
+public class PersistentEntitiesWrapper // TypeDefIndex: 1137
+{
+	// Fields
+	public List<Dictionary<string, string>> EntitiesCache; // 0x10
+
+	// Methods
+
+	// RVA: 0x6905090 Offset: 0x6901090 VA: 0x6905090
+	public void .ctor() { }
+}
+

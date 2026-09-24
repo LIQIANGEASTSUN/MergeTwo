@@ -1,0 +1,25 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardItemView2.<>c // TypeDefIndex: 9135
+{
+	// Fields
+	public static readonly BoardItemView2.<>c <>9; // 0x0
+	public static Action<KeyValuePair<Type, IBoardItemViewBehaviour>> <>9__27_1; // 0x8
+	public static Action<IBoardItemViewBehaviour> <>9__29_0; // 0x10
+
+	// Methods
+
+	// RVA: 0x6731500 Offset: 0x672D500 VA: 0x6731500
+	private static void .cctor() { }
+
+	// RVA: 0x6731568 Offset: 0x672D568 VA: 0x6731568
+	public void .ctor() { }
+
+	// RVA: 0x6731570 Offset: 0x672D570 VA: 0x6731570
+	internal void <WipeBehaviours>b__27_1(KeyValuePair<Type, IBoardItemViewBehaviour> behaviour) { }
+
+	// RVA: 0x673161C Offset: 0x672D61C VA: 0x673161C
+	internal void <NotifyBehaviourAdded>b__29_0(IBoardItemViewBehaviour behaviour) { }
+}
+

@@ -1,0 +1,45 @@
+// Namespace: MergePuzzle
+public abstract class BoardItemSpawnerData : BoardItemData, IConfigAdaptor<SpawnerConfigAdaptor>, IConfigAdaptorBase // TypeDefIndex: 1650
+{
+	// Fields
+	public SpawnerConfig SpawnerConfig; // 0x2C
+
+	// Methods
+
+	// RVA: 0x18C6300 Offset: 0x18C6300 VA: 0x18C6300 Slot: 17
+	public SpawnerConfigAdaptor GetConfigAdaptor() { }
+
+	// RVA: 0x18C7D24 Offset: 0x18C7D24 VA: 0x18C7D24 Slot: 6
+	public override int GetTimeRequiredToExitCharging() { }
+
+	// RVA: 0x18C7E3C Offset: 0x18C7E3C VA: 0x18C7E3C
+	public int GetTimeBetweenSmallAndBigCapacity() { }
+
+	// RVA: 0x18C7E90 Offset: 0x18C7E90 VA: 0x18C7E90
+	public SpawnedItem GetRandomItem() { }
+
+	// RVA: 0x18C7FD0 Offset: 0x18C7FD0 VA: 0x18C7FD0
+	public SpawnedItem GetTutorialItem(ItemEntity itemEntity, TutorialIndex activeTutorialStep) { }
+
+	// RVA: 0x18C8160 Offset: 0x18C8160 VA: 0x18C8160
+	public void ConsumeTutorialItem(ItemEntity itemEntity) { }
+
+	// RVA: 0x18C8290 Offset: 0x18C8290 VA: 0x18C8290 Slot: 4
+	public override bool Initialize(BoardEntity boardEntity, IItemController item, long millisecondsPassed, bool isNewlyCreated) { }
+
+	// RVA: 0x18C8A80 Offset: 0x18C8A80 VA: 0x18C8A80
+	public void ProcessOfflineCapacity(IItemController item, long millisecondsPassed, bool isFromPause) { }
+
+	// RVA: 0x18C89AC Offset: 0x18C89AC VA: 0x18C89AC
+	public int GetStartCapacity(SpawnerState startState) { }
+
+	// RVA: 0x18C8EB4 Offset: 0x18C8EB4 VA: 0x18C8EB4
+	public bool IsUseEnergySprite() { }
+
+	// RVA: 0x18C8EE4 Offset: 0x18C8EE4 VA: 0x18C8EE4 Slot: 18
+	public AdaptorBase ConvertFromLocal() { }
+
+	// RVA: 0x18C63CC Offset: 0x18C63CC VA: 0x18C63CC
+	protected void .ctor() { }
+}
+

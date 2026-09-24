@@ -1,0 +1,23 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class LockedCapability // TypeDefIndex: 1454
+{
+	// Fields
+	public bool Locked; // 0x10
+	public bool Boxed; // 0x11
+	public int LevelLock; // 0x14
+	public bool Bubbled; // 0x18
+	public bool Meteor; // 0x19
+	public UnboxingType UnboxingType; // 0x1C
+	public int InteractionAmount; // 0x20
+	public PlayerResourceEnum InteractionResource; // 0x24
+
+	// Methods
+
+	// RVA: 0x60117A8 Offset: 0x600D7A8 VA: 0x60117A8
+	public void .ctor() { }
+
+	// RVA: 0x60117CC Offset: 0x600D7CC VA: 0x60117CC
+	public void .ctor(bool locked, bool boxed, int lockedByLevel, bool bubbled, UnboxingType unboxingType, int interactionAmount, PlayerResourceEnum interactionResource = 1) { }
+}
+

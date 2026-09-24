@@ -1,0 +1,225 @@
+Type: Game.Logic.PlayerEventGainedItem
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03775870 STR X20, [X21 + 0x8]
+	0x03775874 STRB W19, [X21 + 0x10]
+
+ISIL:
+	001 Move X1, X31
+	002 Call PlayerEventBase..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(System.String itemType, System.Boolean supportGiven, CurrencySource source, GameLogic.Player.AnalyticsContext context)
+
+Disassembly:
+	0x03775878 LDP X20, X19, [X31 + 0x10]
+	0x0377587C LDP X30, X21, [X31], #0x20
+	0x03775880 RET
+	0x03775884 LDR W0, [X0 + 0x10]
+	0x03775888 RET
+	0x0377588C STR W1, [X0 + 0x10]
+	0x03775890 RET
+	0x03775894 LDR X0, [X0 + 0x18]
+	0x03775898 RET
+	0x0377589C STR X1, [X0 + 0x18]!
+	0x037758A0 B 0x239B888
+	0x037758A4 LDR X0, [X0 + 0x20]
+	0x037758A8 RET
+	0x037758AC STR X1, [X0 + 0x20]!
+	0x037758B0 B 0x239B888
+	0x037758B4 LDR X0, [X0 + 0x28]
+	0x037758B8 RET
+	0x037758BC STR X1, [X0 + 0x28]!
+	0x037758C0 B 0x239B888
+	0x037758C4 LDR X0, [X0 + 0x30]
+	0x037758C8 RET
+	0x037758CC STR X1, [X0 + 0x30]!
+	0x037758D0 B 0x239B888
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31-40], X23
+	003 Move [X31+16], X22
+	004 Move [X31+24], X21
+	005 Move [X31+32], X20
+	006 Move [X31+40], X19
+	007 Move X22, X1
+	008 Move X1, X31
+	009 Move X19, X4
+	010 Move W20, W3
+	011 Move W21, W2
+	012 Move X23, X0
+	013 Call PlayerEventBase..ctor, X0
+	014 Move X0, X23
+	015 Move X1, X22
+	016 Move [X0+40], X22
+	017 Call 0x239F888
+	018 Move [X23+32], X19
+	019 Move X1, X19
+	020 NotImplemented "Instruction STURB not yet implemented."
+	021 Move X22, [X31+16]
+	022 Move X21, [X31+24]
+	023 Move [X23-8], W20
+	024 Move X20, [X31+32]
+	025 Move X19, [X31+40]
+	026 Move X0, X23
+	027 Move X30, [X31+48]
+	028 Move X23, [X31+56]
+	029 Call 0x239F888
+	030 Return 
+
+Method: System.String get_EventDescription()
+
+Disassembly:
+	0x037758D4 LDR X0, [X0 + 0x38]
+	0x037758D8 RET
+	0x037758DC STR X1, [X0 + 0x38]!
+	0x037758E0 B 0x239B888
+	0x037758E4 LDR X0, [X0 + 0x40]
+	0x037758E8 RET
+	0x037758EC STR X1, [X0 + 0x40]!
+	0x037758F0 B 0x239B888
+	0x037758F4 LDR X0, [X0 + 0x48]
+	0x037758F8 RET
+	0x037758FC STR X1, [X0 + 0x48]!
+	0x03775900 B 0x239B888
+	0x03775904 LDR X0, [X0 + 0x50]
+	0x03775908 RET
+	0x0377590C STR X1, [X0 + 0x50]
+	0x03775910 RET
+	0x03775914 LDR W0, [X0 + 0x58]
+	0x03775918 RET
+	0x0377591C STR W1, [X0 + 0x58]
+	0x03775920 RET
+	0x03775924 LDR W0, [X0 + 0x5C]
+	0x03775928 RET
+	0x0377592C STR W1, [X0 + 0x5C]
+	0x03775930 RET
+	0x03775934 LDR X0, [X0 + 0x60]
+	0x03775938 RET
+	0x0377593C STR X1, [X0 + 0x60]!
+	0x03775940 B 0x239B888
+	0x03775944 LDR W0, [X0 + 0x68]
+	0x03775948 RET
+	0x0377594C STR W1, [X0 + 0x68]
+	0x03775950 RET
+	0x03775954 LDR W0, [X0 + 0x6C]
+	0x03775958 RET
+	0x0377595C STR W1, [X0 + 0x6C]
+	0x03775960 RET
+	0x03775964 LDR X0, [X0 + 0x88]
+	0x03775968 RET
+	0x0377596C STR X1, [X0 + 0x88]!
+	0x03775970 B 0x239B888
+	0x03775974 LDRB W0, [X0 + 0x90]
+	0x03775978 RET
+	0x0377597C STRB W1, [X0 + 0x90]
+	0x03775980 RET
+	0x03775984 LDR X0, [X0 + 0x98]
+	0x03775988 RET
+	0x0377598C STR X1, [X0 + 0x98]!
+	0x03775990 B 0x239B888
+	0x03775994 LDR X0, [X0 + 0xA0]
+	0x03775998 RET
+	0x0377599C STR X1, [X0 + 0xA0]!
+	0x037759A0 B 0x239B888
+	0x037759A4 LDR X0, [X0 + 0xA8]
+	0x037759A8 RET
+
+ISIL:
+	001 Move [X31-64], X30
+	002 Move [X31+16], X24
+	003 Move [X31+24], X23
+	004 Move [X31+32], X22
+	005 Move [X31+40], X21
+	006 Move [X31+48], X20
+	007 Move [X31+56], X19
+	008 Move X20, [0x1FC83E0]
+	009 Move X21, [0x1FC83E8]
+	010 Move W8, [0x25B9A91]
+	011 Move X22, [0x1FC83F0]
+	012 Move X23, [0x1FC6BD8]
+	013 Move X19, X0
+	014 Move TEMP, X8
+	015 And TEMP, TEMP, 1
+	016 Compare TEMP, 1
+	017 JumpIfEqual {28}
+	018 Move X0, [0x1FC6BD8]
+	019 Call 0x239F8E4
+	020 Move X0, [0x1FC83E8]
+	021 Call 0x239F8E4
+	022 Move X0, [0x1FC83F0]
+	023 Call 0x239F8E4
+	024 Move X0, [0x1FC83E0]
+	025 Call 0x239F8E4
+	026 Move W8, 1
+	027 Move [X24+2705], W8
+	028 Move W8, [X19+20]
+	029 Move X20, [X20]
+	030 Move X0, X19
+	031 NotImplemented "Instruction CMP not yet implemented."
+	032 NotImplemented "Instruction CSEL not yet implemented."
+	033 Move X21, [X8]
+	034 Call PlayerEventGainedItem.GetItemType, X0
+	035 Move X22, X0
+	036 Move W8, [X19+24]
+	037 Move X0, [X23]
+	038 Add X1, X31, 12
+	039 Move [X31+12], W8
+	040 Call 0x239FA6C
+	041 Move X3, X0
+	042 Move X0, X20
+	043 Move X1, X21
+	044 Move X2, X22
+	045 Move X4, X31
+	046 Call String.Format, X0, X1, X2, X3
+	047 Move X20, [X31+48]
+	048 Move X19, [X31+56]
+	049 Move X22, [X31+32]
+	050 Move X21, [X31+40]
+	051 Move X24, [X31+16]
+	052 Move X23, [X31+24]
+	053 Move X30, [X31+64]
+	054 Return X0
+
+Method: System.String GetItemType()
+
+Disassembly:
+	0x037759AC STR X1, [X0 + 0xA8]!
+	0x037759B0 B 0x239B888
+	0x037759B4 LDR X0, [X0 + 0xB0]
+	0x037759B8 RET
+	0x037759BC STR X1, [X0 + 0xB0]!
+	0x037759C0 B 0x239B888
+	0x037759C4 LDR X0, [X0 + 0xB8]
+	0x037759C8 RET
+	0x037759CC STR X1, [X0 + 0xB8]!
+	0x037759D0 B 0x239B888
+	0x037759D4 LDR X0, [X0 + 0xC0]
+	0x037759D8 RET
+	0x037759DC STR X1, [X0 + 0xC0]!
+
+ISIL:
+	001 Move [X31-16], X30
+	002 Move [X31-8], X19
+	003 Move X19, X0
+	004 Move X0, [X0+40]
+	005 Move X1, X31
+	006 Call String.IsNullOrEmpty, X0
+	007 Move TEMP, X0
+	008 And TEMP, TEMP, 1
+	009 Compare TEMP, 1
+	010 JumpIfNotEqual {17}
+	011 Move W0, [X19+16]
+	012 Move X1, X31
+	013 Move X30, [X31+16]
+	014 Move X19, [X31+24]
+	015 Call ItemConverter.ConvertToItemTypeFromConstants, X0
+	016 Return X0
+	017 Move X0, [X19+40]
+	018 Move X30, [X31+16]
+	019 Move X19, [X31+24]
+	020 Return X0
+

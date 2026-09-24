@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeConfigManager.<>c__DisplayClass8_0 // TypeDefIndex: 2772
+{
+	// Fields
+	public int id; // 0x8
+
+	// Methods
+
+	// RVA: 0x2C38B3C Offset: 0x2C38B3C VA: 0x2C38B3C
+	public void .ctor() { }
+
+	// RVA: 0x2C3D400 Offset: 0x2C3D400 VA: 0x2C3D400
+	internal bool <GetLastLevelItemConfig>b__0(TableMergeItem x) { }
+}
+

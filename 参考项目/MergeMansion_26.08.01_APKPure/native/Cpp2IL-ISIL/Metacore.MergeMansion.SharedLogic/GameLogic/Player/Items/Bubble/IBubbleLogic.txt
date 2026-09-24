@@ -1,0 +1,23 @@
+Type: GameLogic.Player.Items.Bubble.IBubbleLogic
+
+Method: GameLogic.Player.Items.IItemDefinition ShouldSpawn(GameLogic.Player.IPlayer player, GameLogic.Player.Board.IBoard currentBoard, GameLogic.Player.Items.IItemDefinition mergedItem, GameLogic.Config.Types.MetacoreTime mergeTimestamp)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void RegisterSpawn(GameLogic.Player.Board.IBoard currentBoard, GameLogic.Config.Types.MetacoreTime spawnTime)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void RegisterExpiration(GameLogic.Player.Board.IBoard currentBoard, GameLogic.Config.Types.MetacoreTime spawnTime)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

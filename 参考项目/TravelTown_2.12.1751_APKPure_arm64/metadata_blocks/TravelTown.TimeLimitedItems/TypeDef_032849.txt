@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class TimeLimitedItemsDestroyOperationsBuilder.<>c // TypeDefIndex: 32849
+{
+	// Fields
+	public static readonly TimeLimitedItemsDestroyOperationsBuilder.<>c <>9; // 0x0
+	public static Func<QueuedItem, MergeBoardItemNotificationData> <>9__4_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x6B4CD24 Offset: 0x6B48D24 VA: 0x6B4CD24
+	private static void .cctor() { }
+
+	// RVA: 0x6B4CD8C Offset: 0x6B48D8C VA: 0x6B4CD8C
+	public void .ctor() { }
+
+	// RVA: 0x6B4CD94 Offset: 0x6B48D94 VA: 0x6B4CD94
+	internal MergeBoardItemNotificationData <BuildQueueItemNotificationData>b__4_0(QueuedItem queuedItem) { }
+}
+

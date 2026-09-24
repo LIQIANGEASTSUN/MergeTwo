@@ -1,0 +1,28 @@
+// Namespace: MergeEngine.ECS.Components
+public class KillSystem : BaseItemSystem<KillComponent> // TypeDefIndex: 1020
+{
+	// Properties
+	public override SystemPriorities Priority { get; }
+
+	// Methods
+
+	// RVA: 0x68F8274 Offset: 0x68F4274 VA: 0x68F8274 Slot: 15
+	public override SystemPriorities get_Priority() { }
+
+	// RVA: 0x68F827C Offset: 0x68F427C VA: 0x68F827C Slot: 17
+	protected override IEnumerable<KillComponent> OnWillProcessComponents(ReadOnlyCollection<KillComponent> components) { }
+
+	// RVA: 0x68F82C4 Offset: 0x68F42C4 VA: 0x68F82C4 Slot: 18
+	protected override void ProcessComponent(KillComponent component) { }
+
+	// RVA: 0x68F8378 Offset: 0x68F4378 VA: 0x68F8378
+	public void ForceKill() { }
+
+	// RVA: 0x68F8464 Offset: 0x68F4464 VA: 0x68F8464
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68F84AC Offset: 0x68F44AC VA: 0x68F84AC
+	private void <ForceKill>b__4_0(KillComponent killComponent) { }
+}
+

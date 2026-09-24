@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class CollectSystem.<>c__DisplayClass16_0 // TypeDefIndex: 952
+{
+	// Fields
+	public CollectSystem <>4__this; // 0x10
+	public CollectableComponent collectable; // 0x18
+
+	// Methods
+
+	// RVA: 0x678B584 Offset: 0x6787584 VA: 0x678B584
+	public void .ctor() { }
+
+	// RVA: 0x678C284 Offset: 0x6788284 VA: 0x678C284
+	internal void <ProcessComponent>b__0() { }
+}
+

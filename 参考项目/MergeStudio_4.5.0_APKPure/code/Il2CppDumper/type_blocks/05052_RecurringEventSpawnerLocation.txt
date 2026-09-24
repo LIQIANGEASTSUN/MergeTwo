@@ -1,0 +1,9 @@
+// Namespace: MergePuzzle.Locations
+public class RecurringEventSpawnerLocation : RecurringEventLocation // TypeDefIndex: 5052
+{
+	// Methods
+
+	// RVA: 0x1E12B94 Offset: 0x1E12B94 VA: 0x1E12B94
+	public void .ctor() { }
+}
+

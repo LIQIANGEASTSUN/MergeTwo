@@ -1,0 +1,7 @@
+// Namespace: 
+public struct TaskEvent.AddScrollableItem : IEvent // TypeDefIndex: 2015
+{
+	// Fields
+	public ScrollableInfoBase ScrollableInfoBase; // 0x0
+}
+

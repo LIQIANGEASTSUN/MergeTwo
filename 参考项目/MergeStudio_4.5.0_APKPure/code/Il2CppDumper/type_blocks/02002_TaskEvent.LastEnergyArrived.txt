@@ -1,0 +1,4 @@
+// Namespace: 
+public struct TaskEvent.LastEnergyArrived : IEvent // TypeDefIndex: 2002
+{}
+

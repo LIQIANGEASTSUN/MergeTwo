@@ -1,0 +1,40 @@
+// Namespace: Merger.MergeBoard.ViewModel
+public class BoardItemBehavioursHandlerViewModel : ViewModelBase // TypeDefIndex: 25658
+{
+	// Fields
+	[Inject]
+	private IBoardItemBehavioursConfigurationModel _boardItemBehavioursConfigurationModel; // 0x68
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x70
+	[Inject]
+	private IRemoteContentService _remoteContentService; // 0x78
+	[Inject]
+	private IUserProfileService _userProfileService; // 0x80
+	[Inject]
+	private IAnimatedBoardItemSpritesConfigurationModel _animatedBoardItemSpritesConfigurationModel; // 0x88
+	public readonly string BehavioursPoolIdStringFormat; // 0x90
+
+	// Methods
+
+	// RVA: 0x6A2FADC Offset: 0x6A2BADC VA: 0x6A2FADC
+	public void InitializeBehaviourPools(Transform behaviourPoolsHolder, IEnumerable<BehaviourPrefabData> combinedBehaviourConfig) { }
+
+	// RVA: 0x6A2FF68 Offset: 0x6A2BF68 VA: 0x6A2FF68
+	public Dictionary<string, BehaviourPrefabData> GetCombinedBehaviourConfig(List<BehaviourPrefabData> behaviourOverrides) { }
+
+	// RVA: 0x6A304DC Offset: 0x6A2C4DC VA: 0x6A304DC
+	public void PrepareBehaviours(BoardItemView2 boardItemView2) { }
+
+	// RVA: 0x6A30C5C Offset: 0x6A2CC5C VA: 0x6A30C5C
+	public void AttachDefaultBehaviours(BoardItemView2 boardItemView2) { }
+
+	// RVA: 0x6A304E0 Offset: 0x6A2C4E0 VA: 0x6A304E0
+	private void PrepareAnimatedSpriteAssets(BoardItemView2 boardItemView2) { }
+
+	// RVA: 0x6A30E14 Offset: 0x6A2CE14 VA: 0x6A30E14
+	private bool TryGetBundlePath(IEnumerable<ClientAsset> assets, out string path) { }
+
+	// RVA: 0x6A31178 Offset: 0x6A2D178 VA: 0x6A31178
+	public void .ctor() { }
+}
+

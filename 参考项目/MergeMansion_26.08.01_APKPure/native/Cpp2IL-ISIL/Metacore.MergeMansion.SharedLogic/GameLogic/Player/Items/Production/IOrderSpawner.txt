@@ -1,0 +1,9 @@
+Type: GameLogic.Player.Items.Production.IOrderSpawner
+
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Player.Items.Order.OrderRequirementsId> GetSpawnOrder()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

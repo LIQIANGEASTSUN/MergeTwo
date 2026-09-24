@@ -1,0 +1,39 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoosterItemController.<ProcessCameraChange>d__48 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 1931
+{
+	// Fields
+	private int <>1__state; // 0x8
+	private object <>2__current; // 0xC
+	public BoosterItemController <>4__this; // 0x10
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHidden]
+	// RVA: 0x19308E0 Offset: 0x19308E0 VA: 0x19308E0
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHidden]
+	// RVA: 0x1931254 Offset: 0x1931254 VA: 0x1931254 Slot: 5
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x1931258 Offset: 0x1931258 VA: 0x1931258 Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x19314B4 Offset: 0x19314B4 VA: 0x19314B4 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHidden]
+	// RVA: 0x19314BC Offset: 0x19314BC VA: 0x19314BC Slot: 8
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHidden]
+	// RVA: 0x1931500 Offset: 0x1931500 VA: 0x1931500 Slot: 7
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+

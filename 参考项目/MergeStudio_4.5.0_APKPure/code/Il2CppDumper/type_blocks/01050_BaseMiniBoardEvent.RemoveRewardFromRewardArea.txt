@@ -1,0 +1,9 @@
+// Namespace: 
+public struct BaseMiniBoardEvent.RemoveRewardFromRewardArea : IEvent // TypeDefIndex: 1050
+{
+	// Fields
+	public Transform SpawnTransform; // 0x0
+	public MiniBoardItemEntity ItemEntity; // 0x4
+	public BoardItemData ItemData; // 0x8
+}
+

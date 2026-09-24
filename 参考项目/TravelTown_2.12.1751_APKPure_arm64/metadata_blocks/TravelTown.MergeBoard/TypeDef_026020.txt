@@ -1,0 +1,11 @@
+// Namespace: Merger.MergeBoard.Components
+public enum TimeCycleState // TypeDefIndex: 26020
+{
+	// Fields
+	public int value__; // 0x0
+	public const TimeCycleState Cooldown = 0;
+	public const TimeCycleState CycleCooldown = 1;
+	public const TimeCycleState Capacity = 2;
+	public const TimeCycleState FullCapacity = 3;
+}
+

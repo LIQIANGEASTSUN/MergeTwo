@@ -1,0 +1,13 @@
+// Namespace: Merger.Services.Backend.Sync.Data.Payloads.Board
+[Serializable]
+public class InventoryItem : ItemPayloadBase // TypeDefIndex: 9879
+{
+	// Fields
+	public SerializedInventorySlotComponent inventorySlot; // 0xA8
+
+	// Methods
+
+	// RVA: 0x67CCAAC Offset: 0x67C8AAC VA: 0x67CCAAC
+	public void .ctor() { }
+}
+

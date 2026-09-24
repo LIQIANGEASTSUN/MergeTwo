@@ -1,0 +1,129 @@
+Type: GameLogic.Player.Items.Bubble.BubblesSetup
+
+Method: GameLogic.Player.Items.Bubble.BubblesSetupId get_ConfigKey()
+
+Disassembly:
+	0x0364AC28 MOV X0, X21
+	0x0364AC2C MOV X2, X31
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_ConfigKey(GameLogic.Player.Items.Bubble.BubblesSetupId value)
+
+Disassembly:
+	0x0364AC30 BL 0x41502F4
+	0x0364AC34 TBZ X0, 0x0, 0x364AC54
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: GameLogic.Player.Items.Bubble.IBubbleLogic get_Logic()
+
+Disassembly:
+	0x0364AC38 LDR X0, [X24]
+	0x0364AC3C LDR W8, [X0 + 0xE4]
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_Logic(GameLogic.Player.Items.Bubble.IBubbleLogic value)
+
+Disassembly:
+	0x0364AC40 CBNZ W8, 0x364AC48
+	0x0364AC44 BL 0x239BA64
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Int32 get_ExperimentPriority()
+
+Disassembly:
+	0x0364AC48 MOV X0, X31
+	0x0364AC4C BL 0x414F9B8
+
+ISIL:
+	001 Move W0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_ExperimentPriority(System.Int32 value)
+
+Disassembly:
+	0x0364AC50 STR X0, [X31 + 0x20]
+	0x0364AC54 LDR X0, [X24]
+
+ISIL:
+	001 Move [X0+32], W1
+	002 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0364AC58 LDR W8, [X0 + 0xE4]
+	0x0364AC5C CBNZ W8, 0x364AC64
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(GameLogic.Player.Items.Bubble.BubblesSetupId configKey, GameLogic.Player.Items.Bubble.IBubbleLogic logic, System.Int32 experimentPriority)
+
+Disassembly:
+	0x0364AC60 BL 0x239BA64
+	0x0364AC64 ADD X0, X31, 0x20
+	0x0364AC68 MOV X1, X31
+	0x0364AC6C BL 0x414FDE8
+	0x0364AC70 ADRP X22, 0x2098000
+	0x0364AC74 MOV X21, X0
+	0x0364AC78 LDR X22, [X22 + 0xBB0]
+	0x0364AC7C LDR X8, [X22]
+	0x0364AC80 LDR W9, [X8 + 0xE4]
+	0x0364AC84 CBNZ W9, 0x364AC90
+	0x0364AC88 MOV X0, X8
+	0x0364AC8C BL 0x239BA64
+	0x0364AC90 ADRP X23, 0x26DF000
+	0x0364AC94 LDRB W8, [X23 + 0xA8F]
+	0x0364AC98 CBNZ W8, 0x364ACB0
+	0x0364AC9C ADRP X0, 0x2098000
+	0x0364ACA0 LDR X0, [X0 + 0xBB0]
+	0x0364ACA4 BL 0x239B8E4
+	0x0364ACA8 MOVZ W8, 0x1
+	0x0364ACAC STRB W8, [X23 + 0xA8F]
+	0x0364ACB0 LDR X0, [X22]
+	0x0364ACB4 LDR W8, [X0 + 0xE4]
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31+16], X22
+	003 Move [X31+24], X21
+	004 Move [X31+32], X20
+	005 Move [X31+40], X19
+	006 Move X21, X1
+	007 Move X1, X31
+	008 Move W19, W3
+	009 Move X20, X2
+	010 Move X22, X0
+	011 Call Object..ctor, X0
+	012 Move X0, X22
+	013 Move X1, X21
+	014 Move [X0+16], X21
+	015 Call 0x239F888
+	016 Move [X22+24], X20
+	017 Move X0, X22
+	018 Move X1, X20
+	019 Call 0x239F888
+	020 Move [X22+8], W19
+	021 Move X20, [X31+32]
+	022 Move X19, [X31+40]
+	023 Move X22, [X31+16]
+	024 Move X21, [X31+24]
+	025 Move X30, [X31+48]
+	026 Return 
+

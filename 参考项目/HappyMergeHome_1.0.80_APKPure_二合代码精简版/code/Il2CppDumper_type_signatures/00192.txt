@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ButterflyWorkShopModel.<>c__DisplayClass48_0 // TypeDefIndex: 192
+{
+	// Fields
+	public ButterflyWorkShopModel <>4__this; // 0x8
+	public List<ResData> listResData; // 0xC
+
+	// Methods
+
+	// RVA: 0x29F0B78 Offset: 0x29F0B78 VA: 0x29F0B78
+	public void .ctor() { }
+
+	// RVA: 0x29F2924 Offset: 0x29F2924 VA: 0x29F2924
+	internal void <PopReward>b__0() { }
+}
+

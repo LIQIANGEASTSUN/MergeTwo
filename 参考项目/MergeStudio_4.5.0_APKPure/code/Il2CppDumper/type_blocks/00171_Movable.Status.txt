@@ -1,0 +1,10 @@
+// Namespace: 
+public enum Movable.Status // TypeDefIndex: 171
+{
+	// Fields
+	public int value__; // 0x0
+	public const Movable.Status DEFAULT = 0;
+	public const Movable.Status DRAGGING = 1;
+	public const Movable.Status LOCKED = 2;
+}
+

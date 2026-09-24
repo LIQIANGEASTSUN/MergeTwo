@@ -1,0 +1,16 @@
+Type: GameLogic.Player.Items.Sinkable.ISinkableFeatures
+
+Method: System.Boolean get_IsSinkable()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.List`1<GameLogic.Player.Items.Sinkable.ISinkInAction> get_SinkInActions()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

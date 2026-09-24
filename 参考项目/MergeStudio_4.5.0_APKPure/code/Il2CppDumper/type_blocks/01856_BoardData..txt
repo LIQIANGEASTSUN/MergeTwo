@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardData.<>c__DisplayClass85_0 // TypeDefIndex: 1856
+{
+	// Fields
+	public int id; // 0x8
+
+	// Methods
+
+	// RVA: 0x1914FE4 Offset: 0x1914FE4 VA: 0x1914FE4
+	public void .ctor() { }
+
+	// RVA: 0x1915D74 Offset: 0x1915D74 VA: 0x1915D74
+	internal bool <GetBoosterItemData>b__0(BoosterItemData item) { }
+}
+

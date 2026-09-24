@@ -1,0 +1,139 @@
+// Namespace: 
+public class MomentsLightModel : ActivityEntityBase // TypeDefIndex: 791
+{
+	// Fields
+	private static MomentsLightModel _instance; // 0x0
+	private static string CanShowUICoolTimeKey; // 0x4
+
+	// Properties
+	public override string Guid { get; }
+	public static MomentsLightModel Instance { get; }
+	public StorageMomentsLight StorageMomentsLight { get; }
+
+	// Methods
+
+	// RVA: 0x19DDF04 Offset: 0x19DDF04 VA: 0x19DDF04 Slot: 4
+	public override string get_Guid() { }
+
+	// RVA: 0x19D7F30 Offset: 0x19D7F30 VA: 0x19D7F30
+	public static MomentsLightModel get_Instance() { }
+
+	[RuntimeInitializeOnLoadMethod(0)]
+	// RVA: 0x19DDFFC Offset: 0x19DDFFC VA: 0x19DDFFC
+	private static void InitAuto() { }
+
+	// RVA: 0x19DDB58 Offset: 0x19DDB58 VA: 0x19DDB58
+	public StorageMomentsLight get_StorageMomentsLight() { }
+
+	// RVA: 0x19DE0B4 Offset: 0x19DE0B4 VA: 0x19DE0B4
+	public List<MomentsLightPic> GetMomentsLightPics() { }
+
+	// RVA: 0x19DE18C Offset: 0x19DE18C VA: 0x19DE18C Slot: 5
+	public override void InitFromServerData(string activityId, string activityType, ulong startTime, ulong endTime, ulong rewardEndTime, bool manualEnd, string configJson, string activitySubType) { }
+
+	// RVA: 0x19DE474 Offset: 0x19DE474 VA: 0x19DE474 Slot: 23
+	public override bool CanDownLoadRes() { }
+
+	// RVA: 0x19DD90C Offset: 0x19DD90C VA: 0x19DD90C
+	public bool IsOpen() { }
+
+	// RVA: 0x19DAFD4 Offset: 0x19DAFD4 VA: 0x19DAFD4
+	public int GetBrush() { }
+
+	// RVA: 0x19DB4C8 Offset: 0x19DB4C8 VA: 0x19DB4C8
+	public void SetBrush(int value) { }
+
+	// RVA: 0x19DE520 Offset: 0x19DE520 VA: 0x19DE520
+	public void AddBrush(int value) { }
+
+	// RVA: 0x19DE6A4 Offset: 0x19DE6A4 VA: 0x19DE6A4
+	public int GetBundleBuyCount(int bundleId) { }
+
+	// RVA: 0x19D8374 Offset: 0x19D8374 VA: 0x19D8374
+	public StorageMomentsLightPic GetStorageMomentsLightStatus(int picId) { }
+
+	// RVA: 0x19DE7D4 Offset: 0x19DE7D4 VA: 0x19DE7D4
+	public MomentsLightModel.MomentsLightPicStatus CalculatePicStatus(int picId) { }
+
+	// RVA: 0x19DEA38 Offset: 0x19DEA38 VA: 0x19DEA38
+	private bool IsFirstPic(int picId) { }
+
+	// RVA: 0x19D801C Offset: 0x19D801C VA: 0x19D801C
+	public MomentsLightModel.MomentsLightPicStatus GetPicStatus(int picId) { }
+
+	// RVA: 0x19DEC1C Offset: 0x19DEC1C VA: 0x19DEC1C
+	public float GetPicProgress(int picId) { }
+
+	// RVA: 0x19DEB98 Offset: 0x19DEB98 VA: 0x19DEB98
+	public void UnlockPic(int picId) { }
+
+	// RVA: 0x19DEE60 Offset: 0x19DEE60 VA: 0x19DEE60
+	public bool AddPicStep(int picId, int stepCount = 1) { }
+
+	// RVA: 0x19DF4BC Offset: 0x19DF4BC VA: 0x19DF4BC
+	private void AddCompletionRewards(MomentsLightPic pic) { }
+
+	// RVA: 0x19DF1F8 Offset: 0x19DF1F8 VA: 0x19DF1F8
+	public bool TryUnlockNextPic(int currentPicId) { }
+
+	// RVA: 0x19D8080 Offset: 0x19D8080 VA: 0x19D8080
+	public bool IsLastUnlockedPic(int picId) { }
+
+	// RVA: 0x19DF878 Offset: 0x19DF878 VA: 0x19DF878
+	public void RecordBundleBuy(int bundleId) { }
+
+	// RVA: 0x19DFA20 Offset: 0x19DFA20 VA: 0x19DFA20
+	public void PurchaseSuccess(int shopId) { }
+
+	// RVA: 0x19E0198 Offset: 0x19E0198 VA: 0x19E0198
+	public List<StorageStoreItem> GetMomentsLightDailyItems() { }
+
+	// RVA: 0x19E0640 Offset: 0x19E0640 VA: 0x19E0640
+	public void GenerateMomentsLightShopItems() { }
+
+	// RVA: 0x19DD45C Offset: 0x19DD45C VA: 0x19DD45C
+	public bool IsDailyShopHaveFreeItem() { }
+
+	// RVA: 0x19E0304 Offset: 0x19E0304 VA: 0x19E0304
+	private bool CanRefreshDailyShop() { }
+
+	// RVA: 0x19E0A20 Offset: 0x19E0A20 VA: 0x19E0A20
+	public string GetRefreshText() { }
+
+	// RVA: 0x19DD9E0 Offset: 0x19DD9E0 VA: 0x19DD9E0
+	public MomentsLightTask GetCurrentTaskConfig() { }
+
+	// RVA: 0x19E0D5C Offset: 0x19E0D5C VA: 0x19E0D5C
+	public void OnProduct(int index, int id, MergeBoard board, int doubleEnergyTimes) { }
+
+	// RVA: 0x19E1178 Offset: 0x19E1178 VA: 0x19E1178
+	private void FlyBrush(int count, Vector3 scrPos) { }
+
+	// RVA: 0x19E1378 Offset: 0x19E1378 VA: 0x19E1378
+	public bool CanShowUI() { }
+
+	// RVA: 0x19E1534 Offset: 0x19E1534 VA: 0x19E1534
+	public bool IsEnded() { }
+
+	// RVA: 0x19DAE10 Offset: 0x19DAE10 VA: 0x19DAE10
+	public ResData GetMomentsLightExchangeResConfig() { }
+
+	// RVA: 0x19DD69C Offset: 0x19DD69C VA: 0x19DD69C
+	public bool IsAllPicsCompleted() { }
+
+	// RVA: 0x19E16B8 Offset: 0x19E16B8 VA: 0x19E16B8
+	public static void OpenCommonConfirmWindow(NoticeUIData data) { }
+
+	// RVA: 0x19DDF94 Offset: 0x19DDF94 VA: 0x19DDF94
+	public void .ctor() { }
+
+	// RVA: 0x19E1898 Offset: 0x19E1898 VA: 0x19E1898
+	private static void .cctor() { }
+
+	// RVA: 0x19E190C Offset: 0x19E190C VA: 0x19E190C
+	public void <>iFixBaseProxy_InitFromServerData(string P0, string P1, ulong P2, ulong P3, ulong P4, bool P5, string P6, string P7) { }
+
+	// RVA: 0x19E1964 Offset: 0x19E1964 VA: 0x19E1964
+	public bool <>iFixBaseProxy_CanDownLoadRes() { }
+}
+

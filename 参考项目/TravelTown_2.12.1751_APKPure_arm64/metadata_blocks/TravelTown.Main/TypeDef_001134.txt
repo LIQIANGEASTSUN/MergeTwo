@@ -1,0 +1,11 @@
+// Namespace: MergeEngine.Data
+public enum CollectionBookStickerState // TypeDefIndex: 1134
+{
+	// Fields
+	public int value__; // 0x0
+	public const CollectionBookStickerState Unseen = 0;
+	public const CollectionBookStickerState Seen = 1;
+	public const CollectionBookStickerState RewardPending = 2;
+	public const CollectionBookStickerState RewardCollected = 3;
+}
+

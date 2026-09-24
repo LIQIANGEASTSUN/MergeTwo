@@ -1,0 +1,213 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class BoardTaskEntity // TypeDefIndex: 1974
+{
+	// Fields
+	public List<BoardTaskItem> ActiveTasks; // 0x8
+	public List<BoardTaskItem> LeftoverDoubleTasks; // 0xC
+	public List<BoardTaskItem> LeftoverActiveTasks; // 0x10
+	public List<int> CompletedTasks; // 0x14
+	public int CompletedMaxTaskNoInRow; // 0x18
+	public int TaskSegment; // 0x1C
+	public int DailyDynamicTaskCount; // 0x20
+	public int TotalCompletedTaskCount; // 0x24
+	public int XpRating; // 0x28
+	public int TaskRating; // 0x2C
+	public int CurrentGroupId; // 0x30
+	public List<GroupRatingData> GroupRatings; // 0x34
+	public bool DynamicTaskEnabled; // 0x38
+	public SpecialTaskEntity SpecialTaskEntity; // 0x3C
+	public TimeLimitedTaskEntity TimeLimitedTaskEntity; // 0x40
+	public int BackupTaskCount; // 0x44
+	public bool BackupsInitialized; // 0x48
+	public bool PendingLevelUpTaskGeneration; // 0x49
+	public long BackupRefillEndTime; // 0x50
+	public int BackupRefillDurationIndex; // 0x58
+	public bool HasHadCooldownSinceLastReset; // 0x5C
+	public List<BoardTaskSlotCooldown> SlotCooldowns; // 0x60
+	public List<IntroTaskBatch> PendingIntroBatches; // 0x64
+	public List<int> UnlockedItemSetIds; // 0x68
+	public int LastProcessedControlVersion; // 0x6C
+	public int CurrentLevelConfigVersion; // 0x70
+	public int LastProcessedLevel; // 0x74
+	public int LastLevelXPRequirement; // 0x78
+	public int LastAppliedGlobalResetTasksVersion; // 0x7C
+	public int LastAppliedGlobalResetCountdownVersion; // 0x80
+	public Dictionary<string, int> AppliedResetTasksVersions; // 0x84
+	public Dictionary<string, int> AppliedResetCountdownVersions; // 0x88
+	public Dictionary<string, int> AppliedXpRolloutVersions; // 0x8C
+	public int LastAppliedXpSettingsVersion; // 0x90
+	public int LastAppliedGlobalXpRolloutVersion; // 0x94
+	public Dictionary<string, int> AppliedPurgeLevelVersions; // 0x98
+	public float CurrentLevelTotalTaskGemValue; // 0x9C
+	public int CurrentLevelTaskCount; // 0xA0
+	public long CurrentLevelBoardTimeMs; // 0xA8
+	public long BoardTimeTrackingStartMs; // 0xB0
+	public bool LevelStartConfigEnabled; // 0xB8
+	public int DynamicXpFromLevel; // 0xBC
+	public List<PendingRatingUpdate> PendingRatingUpdates; // 0xC0
+	public Dictionary<BoardTaskDifficultyType, int> CustomGemListIndices; // 0xC4
+	public List<int> ItemCountBagRemaining; // 0xC8
+	public int ItemCountBagLevelBucket; // 0xCC
+	public List<int> ItemSetBagRemaining; // 0xD0
+	public int ItemSetBagLevelBucket; // 0xD4
+	public int LastProcessedBucketLevel; // 0xD8
+	private BoardTaskData _boardTaskData; // 0xDC
+	private LevelData _levelData; // 0xE0
+	private BoardData _boardData; // 0xE4
+	public Func<BoardTaskHandler> TaskHandlerProvider; // 0xE8
+	public Func<ItemCollectionHandler> ItemCollectionHandlerProvider; // 0xEC
+
+	// Properties
+	public LevelData LevelData { get; }
+
+	// Methods
+
+	// RVA: 0x19408C4 Offset: 0x19408C4 VA: 0x19408C4
+	public LevelData get_LevelData() { }
+
+	// RVA: 0x19408CC Offset: 0x19408CC VA: 0x19408CC
+	public void .ctor(bool enableSpecialTask) { }
+
+	// RVA: 0x1940D60 Offset: 0x1940D60 VA: 0x1940D60
+	public void .ctor() { }
+
+	// RVA: 0x19410E4 Offset: 0x19410E4 VA: 0x19410E4
+	public GroupRatingData GetRatingForGroup(int groupId) { }
+
+	// RVA: 0x19411F4 Offset: 0x19411F4 VA: 0x19411F4
+	public int GetActiveXpRating() { }
+
+	// RVA: 0x1941218 Offset: 0x1941218 VA: 0x1941218
+	public int GetActiveTaskRating() { }
+
+	// RVA: 0x194123C Offset: 0x194123C VA: 0x194123C
+	public void SetActiveRatings(int xpRating, int taskRating) { }
+
+	// RVA: 0x19413E8 Offset: 0x19413E8 VA: 0x19413E8
+	public void MigrateToGroup(int newGroupId, int defaultXpRating, int defaultTaskRating) { }
+
+	// RVA: 0x19417C8 Offset: 0x19417C8 VA: 0x19417C8
+	public int GetCompletedTaskCount() { }
+
+	// RVA: 0x1941954 Offset: 0x1941954 VA: 0x1941954
+	public int GetTotalCompletedTaskCountForAds() { }
+
+	// RVA: 0x19419D0 Offset: 0x19419D0 VA: 0x19419D0
+	public int GetTotalCompletedTaskCount() { }
+
+	// RVA: 0x1941A4C Offset: 0x1941A4C VA: 0x1941A4C
+	public bool ChangeBoardTaskSegment(int taskSegment) { }
+
+	[AsyncStateMachine(typeof(BoardTaskEntity.<OptimizeCompletedTaskData>d__65))]
+	// RVA: 0x1941B00 Offset: 0x1941B00 VA: 0x1941B00
+	public UniTask<bool> OptimizeCompletedTaskData() { }
+
+	// RVA: 0x1940718 Offset: 0x1940718 VA: 0x1940718
+	public bool IsTaskCompleted(int taskNo) { }
+
+	// RVA: 0x1941BFC Offset: 0x1941BFC VA: 0x1941BFC
+	public void RemoveCompletedTask(int taskNo) { }
+
+	// RVA: 0x1941C84 Offset: 0x1941C84 VA: 0x1941C84
+	public int GetMaxCompletedBoardTask() { }
+
+	// RVA: 0x1941D2C Offset: 0x1941D2C VA: 0x1941D2C
+	private void InitializeActiveTaskLogic() { }
+
+	// RVA: 0x19425BC Offset: 0x19425BC VA: 0x19425BC
+	public void Initialize(BoardTaskData boardTaskData, LevelData levelData, BoardData boardData, BoardEntity boardEntity, EventEntity eventEntity) { }
+
+	// RVA: 0x1943CB4 Offset: 0x1943CB4 VA: 0x1943CB4
+	public List<BoardTaskItem> FindUpcomingTasks(BoardTaskItemController taskController, BoardTaskItem completedTask, BoardEntity boardEntity, EventEntity eventEntity) { }
+
+	// RVA: 0x1943F18 Offset: 0x1943F18 VA: 0x1943F18
+	private ValueTuple<List<BoardTaskItem>, bool> CompleteDefaultGameplayTask(BoardTaskItemController taskController, BoardTaskItem completedTask, BoardEntity boardEntity) { }
+
+	// RVA: 0x1943FDC Offset: 0x1943FDC VA: 0x1943FDC
+	public bool IsLevelUp(BoardTaskItem completedTask, BoardEntity boardEntity) { }
+
+	// RVA: 0x1943E60 Offset: 0x1943E60 VA: 0x1943E60
+	private ValueTuple<List<BoardTaskItem>, bool> CompleteEventTask(BoardTaskItemController taskController, BoardTaskItem completedTask, BoardEntity boardEntity, EventEntity eventEntity) { }
+
+	// RVA: 0x1944068 Offset: 0x1944068 VA: 0x1944068
+	public bool IsNextStep(BoardTaskItem completedTask, EventEntity eventEntity) { }
+
+	// RVA: 0x19440DC Offset: 0x19440DC VA: 0x19440DC
+	private bool AddToCompletedTasks(int taskNo, BoardTaskType boardTaskType) { }
+
+	// RVA: 0x194079C Offset: 0x194079C VA: 0x194079C
+	public bool AddCompletedTaskAndRemoveFromActiveTasks(int completedTaskNo, BoardTaskType boardTaskType, bool removeFromActiveTasks = True) { }
+
+	// RVA: 0x194438C Offset: 0x194438C VA: 0x194438C
+	public void RemoveTaskBasedOnType(BoardTaskType boardTaskType) { }
+
+	// RVA: 0x194454C Offset: 0x194454C VA: 0x194454C
+	private int FindTaskLoop(int taskNo, int taskMod) { }
+
+	// RVA: 0x19445D4 Offset: 0x19445D4 VA: 0x19445D4
+	private int FindMaxTaskLoop(HashSet<int> completedTaskIndexesUpdated, int taskMod) { }
+
+	// RVA: 0x1944698 Offset: 0x1944698 VA: 0x1944698
+	public int FindMaxTaskLoop(HashSet<int> completedTaskIndexesUpdated) { }
+
+	// RVA: 0x194476C Offset: 0x194476C VA: 0x194476C
+	public List<BoardTaskItem> FindActiveTasks(BoardTaskItem completedTask) { }
+
+	// RVA: 0x19449F4 Offset: 0x19449F4 VA: 0x19449F4
+	public int GetAvailableTaskCellCount(List<BoardTaskItem> activeTasks) { }
+
+	// RVA: 0x1944B74 Offset: 0x1944B74 VA: 0x1944B74
+	private BoardTaskHandler GetTaskHandler() { }
+
+	// RVA: 0x19429A0 Offset: 0x19429A0 VA: 0x19429A0
+	public List<BoardTaskItem> FillFromUpcomingTasks(BoardEntity boardEntity, int newLevel, BoardTaskItem completedTask) { }
+
+	// RVA: 0x1944C68 Offset: 0x1944C68 VA: 0x1944C68
+	private List<BoardTaskItem> FillFromLegacyTasks(BoardEntity boardEntity, BoardTaskItem completedTask) { }
+
+	// RVA: 0x1944EC0 Offset: 0x1944EC0 VA: 0x1944EC0
+	public void TransitionToLegacyMode(BoardEntity boardEntity, LevelData levelData) { }
+
+	// RVA: 0x1946CA8 Offset: 0x1946CA8 VA: 0x1946CA8
+	private ItemCollectionHandler GetItemCollectionHandler() { }
+
+	// RVA: 0x1946674 Offset: 0x1946674 VA: 0x1946674
+	private void FixIfActiveTasksEmpty(BoardEntity boardEntity, HashSet<int> completedTaskIndexesUpdated, int taskMod, List<BoardTaskItem> allTasksData, int startIndexMinus1, List<BoardTaskItem> tasksFound) { }
+
+	// RVA: 0x1945CCC Offset: 0x1945CCC VA: 0x1945CCC
+	private void ArrangeActiveTasks(BoardEntity boardEntity, int newLevel, int availableTaskCellCount, List<BoardTaskItem> allTasksData, int maxTaskLoop, int taskMod, int startIndexMinus1, HashSet<int> completedTaskIndexesUpdated, List<BoardTaskItem> activeTasksUpdated, List<BoardTaskItem> tasksFound, int loopLevelIncrease) { }
+
+	// RVA: 0x1947154 Offset: 0x1947154 VA: 0x1947154
+	public bool ArrangeXpAndRewardsOfTaskCompletion(BoardData boardData, BoardEntity boardEntity, EventEntity eventEntity, BoardTaskItem completedTask) { }
+
+	// RVA: 0x19441D0 Offset: 0x19441D0 VA: 0x19441D0
+	public void RemoveTask(int completedTaskNo) { }
+
+	// RVA: 0x1944390 Offset: 0x1944390 VA: 0x1944390
+	public void RemoveTask(BoardTaskType boardTaskType) { }
+
+	// RVA: 0x19471F4 Offset: 0x19471F4 VA: 0x19471F4
+	public void RemoveTask(BoardTaskItem boardTaskItem, bool saveBoard = False) { }
+
+	// RVA: 0x1945A78 Offset: 0x1945A78 VA: 0x1945A78
+	public HashSet<int> GetCompletedTaskIndexes() { }
+
+	// RVA: 0x194727C Offset: 0x194727C VA: 0x194727C
+	public int GetSmallestNonCompletedTaskNo() { }
+
+	// RVA: 0x19476CC Offset: 0x19476CC VA: 0x19476CC
+	public IEnumerable<BoardTaskItem> GetDefaultActiveBoardTaskItems() { }
+
+	// RVA: 0x19477F4 Offset: 0x19477F4 VA: 0x19477F4
+	public IEnumerable<int> GetReadyToDoneTasks(BoardEntity boardEntity) { }
+
+	[CompilerGenerated]
+	// RVA: 0x19479FC Offset: 0x19479FC VA: 0x19479FC
+	private void <Initialize>b__70_0(IEventPointsOnBoardTaskHandler handler) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1947ABC Offset: 0x1947ABC VA: 0x1947ABC
+	private void <Initialize>b__70_1(IExtraRewardItemOnBoardTaskHandler handler) { }
+}
+

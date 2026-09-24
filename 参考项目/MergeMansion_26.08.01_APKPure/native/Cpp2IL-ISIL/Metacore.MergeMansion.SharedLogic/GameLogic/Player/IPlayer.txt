@@ -1,0 +1,968 @@
+Type: GameLogic.Player.IPlayer
+
+Method: Game.Logic.PlayerIdentity get_PlayerIdentity()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.Session.SessionToken get_SessionToken()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_LogicVersion()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_PlayerLevel()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Wallet get_Wallet()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Game.Logic.SpawnFactoryState get_SpawnFactoryState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Game.Logic.ProgressState get_ProgressState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.DailyTasks.DailyTaskStatus get_DailyTaskStatus()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.DailyTasksV2.DailyTasksV2Status get_DailyTasksV2Status()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.StoreStatus get_StoreStatus()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Game.Logic.GameSettings get_GameSettings()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.GameFeatures.GameFeaturesStates get_UnlockedFeatures()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Config.Types.MetacoreTime get_CurrentTime()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.Player.PlayerLocalTime get_CurrentLocalTime()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Offers.IActiveOfferGroup> get_ActiveOfferGroups()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Player.Modifiers.IPlayerModifier> get_ActiveModifiers()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.List`1<GameLogic.Player.Modifiers.IPlayerModifier> get_ActiveModifiersNonAlloc()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.OrderedSet`1<GameLogic.Player.Modes.PlayerModeId> get_ActiveModesGlobal()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.MetaDictionary`2<Merge.MergeBoardId, Metaplay.Core.OrderedSet`1<GameLogic.Player.Modes.PlayerModeId>> get_ActiveModesPerBoard()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.LogChannel get_Log()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.OverrideSpawnItemsStatus get_OverrideSpawnItemsStatus()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.GameEvents.BoultonLeagueStatus get_BoultonLeagueStatus()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Merge.MergeBoardId get_ActiveMergeBoardId()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.IPlayerModelClientListener get_ClientListener()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.IPlayerModelServerListener get_ServerListener()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Player.Board.IBoard> get_Boards()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Board.MergeBoard get_GarageMergeBoard()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.IBoardInventory get_GarageBoardInventory()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void set_GarageBoardInventory(GameLogic.Player.IBoardInventory value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.IBoardInventory get_GarageBoardProducerInventory()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.IBoardInventory get_RentableBoardInventory()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IReadOnlyList`1<Code.GameLogic.Player.IWritableProducerInventorySlotState> get_ProducerInventoryEntries()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<System.ValueTuple`2<GameLogic.Player.Board.IBoard, System.Nullable`1<Metaplay.Core.MetaTime>>> get_BoardsWithExpirationTimes()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.ValueTuple`2<GameLogic.Player.IBoardInventory, System.Nullable`1<Metaplay.Core.MetaTime>> get_RentableInventory()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.ValueTuple`3<System.Int32, Currencies, System.Int64> GetRentableInventoryBatchCost()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<Game.Logic.Mail.IMailMessage> get_MailMessages()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<Code.GameLogic.GameEvents.GarageCleanupEventModel> get_ActiveGarageCleanups()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<Code.GameLogic.GameEvents.CollectibleBoardEventModel> get_ActiveCollectibleBoardEvents()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<Code.GameLogic.GameEvents.LeaderboardEventModel> get_ActiveLeaderboardEvents()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<Code.GameLogic.GameEvents.MysteryMachineEventModel> get_ActiveMysteryMachineEvents()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<Code.GameLogic.GameEvents.ProgressionEventModel> get_ActiveProgressionEvents()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Player.Events.SoloMilestoneEventModel> get_ActiveSoloMilestoneEvents()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<Code.GameLogic.GameEvents.TemporaryCardCollectionEventModel> get_ActiveTemporaryCardCollectionEvents()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Player.Events.CardCollectionSupportingEventModel> get_ActiveCardCollectionSupportingEvents()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.OrderedSet`1<Code.GameLogic.GameEvents.CardCollectionSupportingEvent.EventLevelData> get_EventLevelsUpgradedByCardCollectionSupportingEvent()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<Code.GameLogic.GameEvents.ShortLeaderboardEventModel> get_ActiveShortLeaderboardEvents()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Config.EnergyModeEvent.EnergyModeEventModel> get_ActiveEnergyModeEvents()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<Code.GameLogic.GameEvents.CoreSupportEventModel> get_ActiveCoreSupportEvents()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.MiniEvents.MiniEventModel> get_ActiveMiniEvents()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<Code.GameLogic.GameEvents.GarageCleanupEventModel> get_AllGarageCleanups()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.GameEvents.PlayerProgressionEventsModel get_ProgressionEvents()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.GameEvents.ProgressionPackEventsModel get_ProgressionPackEvents()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.GameEvents.PlayerCollectibleBoardEventsModel get_CollectibleBoardEvents()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.GameEvents.PlayerLeaderboardEventsModel get_LeaderboardEvents()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.GameEvents.PlayerMysteryMachineEventsModel get_MysteryMachineEvents()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.GameEvents.PlayerShortLeaderboardEventsModel get_ShortLeaderboardEvents()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Config.EnergyModeEvent.PlayerEnergyModeEventsModel get_EnergyModeEvents()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.GameEvents.PlayerCoreSupportEventsModel get_CoreSupportEvents()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Events.PlayerSoloMilestoneEventModel get_SoloMilestoneEvents()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Banks.CurrencyBanksModel get_CurrencyBanksModel()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Banks.CurrencyBankModel get_CurrencyBankModel()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.String get_PlayerName()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.GameEvents.PlayerTemporaryCardCollectionEventsModel get_TemporaryCardCollectionEvents()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Events.PlayerCardCollectionSupportingEventsModel get_CardCollectionSupportingEvents()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Game.Logic.PlayerModifiersChangedEvent get_ModifiersChanged()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void set_ModifiersChanged(Game.Logic.PlayerModifiersChangedEvent value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Game.Logic.PlayerModesChangedEvent get_ModesChanged()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void set_ModesChanged(Game.Logic.PlayerModesChangedEvent value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.MetaDictionary`2<System.Int32, Metaplay.Core.RandomPCG> get_RandomsByFishingRodType()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void set_RandomsByFishingRodType(Metaplay.Core.MetaDictionary`2<System.Int32, Metaplay.Core.RandomPCG> value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.RandomPCG get_MysteryMachineRandom()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.RandomPCG get_SoloMilestoneRandom()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.RandomPCG get_RewardContainerRandom()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.RandomPCG get_StackMiniGameRandom()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.Math.F64 get_TotalIapSpend()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Leaderboard.ShortLeaderboardEvent.ShortLeaderboardEventDivisionClientState get_ShortLeaderboardEventDivisionClientState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Leaderboard.ClassicRacesEvent.ClassicRacesEventDivisionClientState get_ClassicRacesEventDivisionClientState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.GameEvents.GarageCleanupEventModel GarageCleanupEventState(Code.GameLogic.GameEvents.GarageCleanupEventInfo eventInfo)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.GameEvents.ProgressionEventModel ProgressionEventState(Code.GameLogic.GameEvents.ProgressionEventInfo eventInfo)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.GameEvents.CollectibleBoardEventModel CollectibleBoardEventState(Code.GameLogic.GameEvents.CollectibleBoardEventInfo eventInfo)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.GameEvents.LeaderboardEventModel LeaderboardEventState(Code.GameLogic.GameEvents.LeaderboardEventInfo eventInfo)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.GameEvents.MysteryMachineEventModel MysteryMachineEventState(Code.GameLogic.GameEvents.MysteryMachineEventInfo eventInfo)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Events.SoloMilestoneEventModel SoloMilestoneEventState(Code.GameLogic.GameEvents.SoloMilestone.SoloMilestoneEventInfo eventInfo)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.Player.Events.DailyScoopEvent.DailyScoopEventModel DailyScoopEventState(Code.GameLogic.GameEvents.DailyScoop.DailyScoopEventInfo eventInfo)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.GameEvents.BoultonLeagueEventModel BoultonLeagueEventState(Code.GameLogic.GameEvents.BoultonLeagueEventInfo eventInfo)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.MiniEvents.PlayerMiniEventOverrides get_MiniEventOverrides()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.AutoMerge.IAutoMergeFeatureModel get_AutoMergeFeatureModel()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IReadOnlyCollection`1<GameLogic.Player.Board.MergeBoard> GetMergeBoards(System.Boolean includeEvents = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 GetMergeBoards(System.Span`1<GameLogic.Player.Board.MergeBoard> results, System.Boolean includeEvents = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<Code.GameLogic.GameEvents.BoultonLeagueEventModel> GetAllActiveAndJoinedBoultonLeagueEvents()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean TryGetFirstActiveAndJoinedBoultonLeagueEvent(out Code.GameLogic.GameEvents.BoultonLeagueEventModel outEventModel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean TryExtendingCollectibleBoardEvent(Code.GameLogic.GameEvents.CollectibleBoardEventInfo eventInfo)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void RecordStaleExtensionPurchase(Code.GameLogic.GameEvents.CollectibleBoardEventInfo eventInfo)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean TryConsumeCurrencyBank(GameLogic.Banks.CurrencyBankId currencyBankId, System.Int32 storedAmount, GameLogic.Player.AnalyticsContext context)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean IsActivableActive(Metaplay.Core.Activables.MetaActivableState activable)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void RecordStaleProgressionEventPremiumIAPPurchase(Code.GameLogic.GameEvents.ProgressionEventId eventId)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void RecordStaleProgressionEventPremiumIAPPurchase(Metaplay.Core.IStringId eventId)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Modifiers.IPlayerModifier AddModifier(GameLogic.Player.Modifiers.IPlayerModifier playerModifier)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Hotspots.IHotspotDefinition> GetMissingHotspots()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void AddScriptedEvent(GameLogic.Player.Director.Conditions.IScriptedEventCondition condition, GameLogic.Player.Director.Actions.ISerializedAction action)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ReportEvent(Metaplay.Core.Player.PlayerEventBase analyticsEvent)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ReportEvent(Analytics.AnalyticsServersideEventBase analyticsEvent, System.Boolean skipOnlineCheck = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Offers.IActiveOfferGroup GetActiveOrSoldOutOfferGroup(Metaplay.Core.Offers.MetaOfferGroupId offerGroupId)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Offers.IActiveOfferGroup GetActiveOfferGroup(Metaplay.Core.Offers.MetaOfferGroupId offerGroupId)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Player.IBoardInventory> GetInventories(Merge.MergeBoardId boardId, System.Int32 typeFlags, System.Boolean forceExpiredInventories = False)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<Code.GameLogic.Player.Events.DailyScoopEvent.DailyScoopEventModel> get_ActiveDailyScoopEvents()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_ProgressionEventIAPStreakLength()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void AddProgressionEventIAPStreak(Code.GameLogic.GameEvents.ProgressionEventId eventId)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void PlayerInventoryContentChanged(System.Int32 itemId, Merge.MergeBoardId boardId, System.Int32 count, Game.Logic.PlayerInventoryChangeEventType changeType)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.ValueTuple`2<System.Int32, System.Int32> CalculateHotspotTokenAmount(GameLogic.Player.Events.SoloMilestoneEventModel soloMilestoneEventModel, GameLogic.Hotspots.HotspotDefinition hotspotDefinition)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.SortedDictionary`2<System.Int32, Metaplay.Core.Math.F64> get_MoneySpentPerDay()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void ReportLevelReachedDuringCardCollectionSupportingEvent(System.String eventId, System.Int32 eventLevel)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean ShouldCardPacksBeUpgraded(Code.GameLogic.GameEvents.RewardSourceContext rewardSourceContext)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void add_EventStreamInterceptor(System.Action`1<Metaplay.Core.Player.PlayerEventBase> value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void remove_EventStreamInterceptor(System.Action`1<Metaplay.Core.Player.PlayerEventBase> value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.RandomPCG get_DigEventRandom()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.RandomPCG get_RollTheDiceRandom()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.GameEvents.DigEventBoardId get_CurrentDigEventBoard()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void set_CurrentDigEventBoard(Code.GameLogic.GameEvents.DigEventBoardId value)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: IDigEventMinigameData get_DigEventMinigameData()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.GameEvents.DigEventMuseumModel get_DigEventMuseum()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.Player.ILastNSegmentsCache get_LastNSegmentsCache()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void OnInitialLogin()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Config.Types.IMetacorePlayerTimeZoneInfo get_TimeZoneInfo()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metacore.MergeMansion.Common.Options.Option`1<Metaplay.Core.Player.PlayerLocation> get_LastKnownLocationOption()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metacore.MergeMansion.Common.Options.Option`1<Code.GameLogic.Config.TasksTabStyle> get_OverrideTasksTabStyleOption()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: IRollTheDiceMinigameData get_RollTheDiceMinigameData()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.GameEvents.IBuilderEventMinigameData get_BuilderEventMinigameData()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.GameEvents.DailyChallenges.IDailyChallengesEventsHistoricalDataModel get_DailyChallengesEventsHistoricalData()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.Utility.PitySystem.PityRuns get_PityRuns()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.SegmentorState get_Segmentor()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_IsProductionEnvironment()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_IsDeveloper()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metacore.MergeMansion.Common.Options.Option`1<GameLogic.Player.Board.IBoard> GetBoard(Merge.MergeBoardId boardId)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Code.GameLogic.Player.Board.ICustomMergeBoardsState get_CustomMergeBoardsState()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: LocationId get_StartLocation()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void RefreshEventModelStates(Code.GameLogic.Utility.PlayerEventsModelRefreshAction action)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_DebugUseAreaGlobalRequirement()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

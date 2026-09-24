@@ -1,0 +1,125 @@
+// Namespace: ContextualizedECS.Context
+public class TickArgs // TypeDefIndex: 33702
+{
+	// Fields
+	private readonly Dictionary<Type, List<object>> _argumentsByType; // 0x10
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public T FirstOrDefault<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DC49C0 Offset: 0x3DC09C0 VA: 0x3DC49C0
+	|-TickArgs.FirstOrDefault<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public T LastOrDefault<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DC4B90 Offset: 0x3DC0B90 VA: 0x3DC4B90
+	|-TickArgs.LastOrDefault<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public bool TryGet<T>(out T value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DC4ED4 Offset: 0x3DC0ED4 VA: 0x3DC4ED4
+	|-TickArgs.TryGet<IntervalTick>
+	|
+	|-RVA: 0x3DC5020 Offset: 0x3DC1020 VA: 0x3DC5020
+	|-TickArgs.TryGet<object>
+	|
+	|-RVA: 0x3DC51B4 Offset: 0x3DC11B4 VA: 0x3DC51B4
+	|-TickArgs.TryGet<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public bool ContainsEither<T1, T2>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DC495C Offset: 0x3DC095C VA: 0x3DC495C
+	|-TickArgs.ContainsEither<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public IEnumerable<T> All<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DC4400 Offset: 0x3DC0400 VA: 0x3DC4400
+	|-TickArgs.All<object>
+	|
+	|-RVA: 0x3DC4518 Offset: 0x3DC0518 VA: 0x3DC4518
+	|-TickArgs.All<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public bool ContainsArgType<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DC46EC Offset: 0x3DC06EC VA: 0x3DC46EC
+	|-TickArgs.ContainsArgType<IntervalTick>
+	|
+	|-RVA: 0x3DC47BC Offset: 0x3DC07BC VA: 0x3DC47BC
+	|-TickArgs.ContainsArgType<object>
+	|
+	|-RVA: 0x3DC488C Offset: 0x3DC088C VA: 0x3DC488C
+	|-TickArgs.ContainsArgType<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x5F16478 Offset: 0x5F12478 VA: 0x5F16478
+	public bool ContainsArgType(Type type) { }
+
+	// RVA: -1 Offset: -1
+	public TickArgs AddArgument<T>(T argument) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DC31A8 Offset: 0x3DBF1A8 VA: 0x3DC31A8
+	|-TickArgs.AddArgument<IntervalTick>
+	|
+	|-RVA: 0x3DC33E4 Offset: 0x3DBF3E4 VA: 0x3DC33E4
+	|-TickArgs.AddArgument<object>
+	|
+	|-RVA: 0x3DC35F8 Offset: 0x3DBF5F8 VA: 0x3DC35F8
+	|-TickArgs.AddArgument<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public TickArgs AddArguments<T>(IEnumerable<T> arguments) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DC4030 Offset: 0x3DC0030 VA: 0x3DC4030
+	|-TickArgs.AddArguments<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1
+	public bool ClearArgumentsOfType<T>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DC45F0 Offset: 0x3DC05F0 VA: 0x3DC45F0
+	|-TickArgs.ClearArgumentsOfType<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x5F16510 Offset: 0x5F12510 VA: 0x5F16510
+	public bool ClearArgumentsOfType(Type type) { }
+
+	// RVA: 0x5F165D4 Offset: 0x5F125D4 VA: 0x5F165D4
+	public void ClearAll() { }
+
+	// RVA: -1 Offset: -1
+	public bool RemoveSpecificArgument<T>(T argument) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3DC4D5C Offset: 0x3DC0D5C VA: 0x3DC4D5C
+	|-TickArgs.RemoveSpecificArgument<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: 0x5F16624 Offset: 0x5F12624 VA: 0x5F16624
+	public bool HasArguments() { }
+
+	// RVA: 0x5F157BC Offset: 0x5F117BC VA: 0x5F157BC
+	public void .ctor() { }
+}
+

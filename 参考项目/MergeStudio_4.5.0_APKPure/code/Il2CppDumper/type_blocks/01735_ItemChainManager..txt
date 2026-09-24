@@ -1,0 +1,27 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemChainManager.<>c__DisplayClass54_0 // TypeDefIndex: 1735
+{
+	// Fields
+	public int setID; // 0x8
+	public ItemLinkModel link; // 0xC
+	public ItemChainManager <>4__this; // 0x10
+
+	// Methods
+
+	// RVA: 0x190B570 Offset: 0x190B570 VA: 0x190B570
+	public void .ctor() { }
+
+	// RVA: 0x190FC14 Offset: 0x190FC14 VA: 0x190FC14
+	internal bool <GetSpawnersToRemoveByArchive>b__0(BoardPosition p) { }
+
+	// RVA: 0x190FCE4 Offset: 0x190FCE4 VA: 0x190FCE4
+	internal bool <GetSpawnersToRemoveByArchive>b__2(InventoryEntity.InventorySpawnerEntity s) { }
+
+	// RVA: 0x190FD20 Offset: 0x190FD20 VA: 0x190FD20
+	internal bool <GetSpawnersToRemoveByArchive>b__3(ItemEntity ie) { }
+
+	// RVA: 0x190FD68 Offset: 0x190FD68 VA: 0x190FD68
+	internal bool <GetSpawnersToRemoveByArchive>b__5(RewardEntity ar) { }
+}
+

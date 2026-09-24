@@ -1,0 +1,36 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class LocationHandler.<>c__14<T> // TypeDefIndex: 5033
+{
+	// Fields
+	public static readonly LocationHandler.<>c__14<T> <>9; // 0x0
+	public static Predicate<LocationBase> <>9__14_0; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	private static void .cctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x27A82B4 Offset: 0x27A82B4 VA: 0x27A82B4
+	|-LocationHandler.<>c__14<object>..cctor
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x27A8380 Offset: 0x27A8380 VA: 0x27A8380
+	|-LocationHandler.<>c__14<object>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal bool <GetLocation>b__14_0(LocationBase value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x27A8388 Offset: 0x27A8388 VA: 0x27A8388
+	|-LocationHandler.<>c__14<object>.<GetLocation>b__14_0
+	*/
+}
+

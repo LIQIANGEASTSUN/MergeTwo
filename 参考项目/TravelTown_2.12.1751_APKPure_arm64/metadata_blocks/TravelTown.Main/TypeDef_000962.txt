@@ -1,0 +1,20 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ExpendableSystem.<>c__DisplayClass25_0 // TypeDefIndex: 962
+{
+	// Fields
+	public string reason; // 0x10
+	public PositionComponent positionComponent; // 0x18
+
+	// Methods
+
+	// RVA: 0x678F5B8 Offset: 0x678B5B8 VA: 0x678F5B8
+	public void .ctor() { }
+
+	// RVA: 0x679063C Offset: 0x678C63C VA: 0x679063C
+	internal bool <TryTransformItem>b__0(WeightedItemSpawnable i) { }
+
+	// RVA: 0x6790660 Offset: 0x678C660 VA: 0x6790660
+	internal BoardItemPosition <TryTransformItem>b__1() { }
+}
+

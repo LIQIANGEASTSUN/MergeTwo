@@ -1,0 +1,234 @@
+// Namespace: Merger.MergeBoard.Components
+public struct TimeCycleComponent : IComponent // TypeDefIndex: 26019
+{
+	// Fields
+	[CompilerGenerated]
+	private int <CycleDelay>k__BackingField; // 0x0
+	[CompilerGenerated]
+	private int <SubCycles>k__BackingField; // 0x4
+	[CompilerGenerated]
+	private int <SubCycleTime>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private int <ItemsPerSubCycle>k__BackingField; // 0xC
+	[CompilerGenerated]
+	private int <Capacity>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private bool <LimitLifetimeSpawnedItems>k__BackingField; // 0x14
+	[CompilerGenerated]
+	private int <LifetimeSpawnedItemsLimit>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private double <CycleDelayLeft>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private double <SubCycleDelayLeft>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private int <CurrentSubCycle>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private int <ItemsToProduce>k__BackingField; // 0x34
+	[CompilerGenerated]
+	private int <ItemsProducedPerSubCycle>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private TimeCycleState <State>k__BackingField; // 0x3C
+	[CompilerGenerated]
+	private int <TotalNumberOfCycles>k__BackingField; // 0x40
+	[CompilerGenerated]
+	private int <TotalSpawnedItemsInLifetime>k__BackingField; // 0x44
+	[CompilerGenerated]
+	private bool <ModifiedByStateLoad>k__BackingField; // 0x48
+	[CompilerGenerated]
+	private bool <ModifiedBySubCycle>k__BackingField; // 0x49
+	[CompilerGenerated]
+	private bool <IsCooldownBlocked>k__BackingField; // 0x4A
+
+	// Properties
+	public int CycleDelay { get; set; }
+	public int SubCycles { get; set; }
+	public int SubCycleTime { get; set; }
+	public int ItemsPerSubCycle { get; set; }
+	public int Capacity { get; set; }
+	public bool LimitLifetimeSpawnedItems { get; set; }
+	public int LifetimeSpawnedItemsLimit { get; set; }
+	public double CycleDelayLeft { get; set; }
+	public double SubCycleDelayLeft { get; set; }
+	public int CurrentSubCycle { get; set; }
+	public int ItemsToProduce { get; set; }
+	public int ItemsProducedPerSubCycle { get; set; }
+	public TimeCycleState State { get; set; }
+	public int TotalNumberOfCycles { get; set; }
+	public int TotalSpawnedItemsInLifetime { get; set; }
+	public bool ModifiedByStateLoad { get; set; }
+	public bool ModifiedBySubCycle { get; set; }
+	public bool IsCooldownBlocked { get; set; }
+	public bool ExceededLifetimeLimit { get; }
+	public double TimeLeftForFullCapacity { get; }
+
+	// Methods
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9C348 Offset: 0x6A98348 VA: 0x6A9C348
+	public int get_CycleDelay() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C350 Offset: 0x6A98350 VA: 0x6A9C350
+	public void set_CycleDelay(int value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9C358 Offset: 0x6A98358 VA: 0x6A9C358
+	public int get_SubCycles() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C360 Offset: 0x6A98360 VA: 0x6A9C360
+	public void set_SubCycles(int value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9C368 Offset: 0x6A98368 VA: 0x6A9C368
+	public int get_SubCycleTime() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C370 Offset: 0x6A98370 VA: 0x6A9C370
+	public void set_SubCycleTime(int value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9C378 Offset: 0x6A98378 VA: 0x6A9C378
+	public int get_ItemsPerSubCycle() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C380 Offset: 0x6A98380 VA: 0x6A9C380
+	public void set_ItemsPerSubCycle(int value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9C388 Offset: 0x6A98388 VA: 0x6A9C388
+	public int get_Capacity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C390 Offset: 0x6A98390 VA: 0x6A9C390
+	public void set_Capacity(int value) { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9C398 Offset: 0x6A98398 VA: 0x6A9C398
+	public bool get_LimitLifetimeSpawnedItems() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C3A0 Offset: 0x6A983A0 VA: 0x6A9C3A0
+	public void set_LimitLifetimeSpawnedItems(bool value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9C3AC Offset: 0x6A983AC VA: 0x6A9C3AC
+	public int get_LifetimeSpawnedItemsLimit() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C3B4 Offset: 0x6A983B4 VA: 0x6A9C3B4
+	public void set_LifetimeSpawnedItemsLimit(int value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9C3BC Offset: 0x6A983BC VA: 0x6A9C3BC
+	public double get_CycleDelayLeft() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C3C4 Offset: 0x6A983C4 VA: 0x6A9C3C4
+	public void set_CycleDelayLeft(double value) { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9C3CC Offset: 0x6A983CC VA: 0x6A9C3CC
+	public double get_SubCycleDelayLeft() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C3D4 Offset: 0x6A983D4 VA: 0x6A9C3D4
+	public void set_SubCycleDelayLeft(double value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9C3DC Offset: 0x6A983DC VA: 0x6A9C3DC
+	public int get_CurrentSubCycle() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C3E4 Offset: 0x6A983E4 VA: 0x6A9C3E4
+	public void set_CurrentSubCycle(int value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9C3EC Offset: 0x6A983EC VA: 0x6A9C3EC
+	public int get_ItemsToProduce() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C3F4 Offset: 0x6A983F4 VA: 0x6A9C3F4
+	public void set_ItemsToProduce(int value) { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9C3FC Offset: 0x6A983FC VA: 0x6A9C3FC
+	public int get_ItemsProducedPerSubCycle() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C404 Offset: 0x6A98404 VA: 0x6A9C404
+	public void set_ItemsProducedPerSubCycle(int value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9C40C Offset: 0x6A9840C VA: 0x6A9C40C
+	public TimeCycleState get_State() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C414 Offset: 0x6A98414 VA: 0x6A9C414
+	public void set_State(TimeCycleState value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9C41C Offset: 0x6A9841C VA: 0x6A9C41C
+	public int get_TotalNumberOfCycles() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C424 Offset: 0x6A98424 VA: 0x6A9C424
+	public void set_TotalNumberOfCycles(int value) { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9C42C Offset: 0x6A9842C VA: 0x6A9C42C
+	public int get_TotalSpawnedItemsInLifetime() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C434 Offset: 0x6A98434 VA: 0x6A9C434
+	public void set_TotalSpawnedItemsInLifetime(int value) { }
+
+	[CompilerGenerated]
+	[IsReadOnly]
+	// RVA: 0x6A9C43C Offset: 0x6A9843C VA: 0x6A9C43C
+	public bool get_ModifiedByStateLoad() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C444 Offset: 0x6A98444 VA: 0x6A9C444
+	public void set_ModifiedByStateLoad(bool value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9C450 Offset: 0x6A98450 VA: 0x6A9C450
+	public bool get_ModifiedBySubCycle() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C458 Offset: 0x6A98458 VA: 0x6A9C458
+	public void set_ModifiedBySubCycle(bool value) { }
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A9C464 Offset: 0x6A98464 VA: 0x6A9C464
+	public bool get_IsCooldownBlocked() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9C46C Offset: 0x6A9846C VA: 0x6A9C46C
+	public void set_IsCooldownBlocked(bool value) { }
+
+	// RVA: 0x6A9C478 Offset: 0x6A98478 VA: 0x6A9C478
+	public bool get_ExceededLifetimeLimit() { }
+
+	// RVA: 0x6A9C49C Offset: 0x6A9849C VA: 0x6A9C49C
+	public double get_TimeLeftForFullCapacity() { }
+}
+

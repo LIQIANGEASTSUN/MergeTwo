@@ -1,0 +1,9 @@
+// Namespace: Merger.CoinMultipliers.Services
+public interface ICoinMultiplierAmountResolver // TypeDefIndex: 7131
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract bool TryResolveAmount(string itemId, out int amount);
+}
+

@@ -1,0 +1,13 @@
+// Namespace: 
+public struct BoardEvent.EnergyRefillSuccess : IEvent // TypeDefIndex: 1824
+{
+	// Fields
+	public bool IsEvent; // 0x0
+	public bool IsMeta; // 0x1
+	public int SetID; // 0x4
+	public int Amount; // 0x8
+	public Vector3 Position; // 0xC
+	public bool IsRewardedAd; // 0x18
+	public bool IsTutorial; // 0x19
+}
+

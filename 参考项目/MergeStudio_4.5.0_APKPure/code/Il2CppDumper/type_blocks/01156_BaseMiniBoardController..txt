@@ -1,0 +1,46 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BaseMiniBoardController.<ItemSetAnimationRoutine>d__163 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 1156
+{
+	// Fields
+	private int <>1__state; // 0x8
+	private object <>2__current; // 0xC
+	public MiniBoardItemController item; // 0x10
+	public bool nonAnimated; // 0x14
+	public MiniBoardPosition selectedBoardPosition; // 0x18
+	public BaseMiniBoardController <>4__this; // 0x1C
+	public bool spawnAnimated; // 0x20
+	public MiniBoardCellController targetCell; // 0x24
+	public bool swapAnimated; // 0x28
+	public bool panelAnimated; // 0x29
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHidden]
+	// RVA: 0x17D7C0C Offset: 0x17D7C0C VA: 0x17D7C0C
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHidden]
+	// RVA: 0x17D7C28 Offset: 0x17D7C28 VA: 0x17D7C28 Slot: 5
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x17D7C2C Offset: 0x17D7C2C VA: 0x17D7C2C Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x17D7E40 Offset: 0x17D7E40 VA: 0x17D7E40 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHidden]
+	// RVA: 0x17D7E48 Offset: 0x17D7E48 VA: 0x17D7E48 Slot: 8
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHidden]
+	// RVA: 0x17D7E8C Offset: 0x17D7E8C VA: 0x17D7E8C Slot: 7
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+

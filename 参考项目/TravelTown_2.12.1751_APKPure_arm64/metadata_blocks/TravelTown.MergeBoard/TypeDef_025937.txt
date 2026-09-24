@@ -1,0 +1,90 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class BoxedItemInteractionAmountChanged // TypeDefIndex: 25937
+{
+	// Fields
+	[CompilerGenerated]
+	private Entity <Entity>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private int <MergeItemsLeft>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private string <InteractionItemId>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private string <InteractionResourceType>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private string <ConsumerItemId>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private int <ConsumerPositionIndex>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private string <InteractionReason>k__BackingField; // 0x40
+
+	// Properties
+	public Entity Entity { get; set; }
+	public int MergeItemsLeft { get; set; }
+	public string InteractionItemId { get; set; }
+	public string InteractionResourceType { get; set; }
+	public string ConsumerItemId { get; set; }
+	public int ConsumerPositionIndex { get; set; }
+	public string InteractionReason { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A218 Offset: 0x6A96218 VA: 0x6A9A218
+	public Entity get_Entity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A220 Offset: 0x6A96220 VA: 0x6A9A220
+	public void set_Entity(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A228 Offset: 0x6A96228 VA: 0x6A9A228
+	public int get_MergeItemsLeft() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A230 Offset: 0x6A96230 VA: 0x6A9A230
+	public void set_MergeItemsLeft(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A238 Offset: 0x6A96238 VA: 0x6A9A238
+	public string get_InteractionItemId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A240 Offset: 0x6A96240 VA: 0x6A9A240
+	public void set_InteractionItemId(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A248 Offset: 0x6A96248 VA: 0x6A9A248
+	public string get_InteractionResourceType() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A250 Offset: 0x6A96250 VA: 0x6A9A250
+	public void set_InteractionResourceType(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A258 Offset: 0x6A96258 VA: 0x6A9A258
+	public string get_ConsumerItemId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A260 Offset: 0x6A96260 VA: 0x6A9A260
+	public void set_ConsumerItemId(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A268 Offset: 0x6A96268 VA: 0x6A9A268
+	public int get_ConsumerPositionIndex() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A270 Offset: 0x6A96270 VA: 0x6A9A270
+	public void set_ConsumerPositionIndex(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A278 Offset: 0x6A96278 VA: 0x6A9A278
+	public string get_InteractionReason() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A280 Offset: 0x6A96280 VA: 0x6A9A280
+	public void set_InteractionReason(string value) { }
+
+	// RVA: 0x6A9A288 Offset: 0x6A96288 VA: 0x6A9A288
+	public void .ctor() { }
+}
+

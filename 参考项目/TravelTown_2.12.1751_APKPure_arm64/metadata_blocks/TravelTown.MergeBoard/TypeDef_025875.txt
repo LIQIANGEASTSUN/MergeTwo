@@ -1,0 +1,21 @@
+// Namespace: Merger.MergeBoard.Logic.BoardOperations
+public class BoardOperationsTracker : IBoardControllerPostTickProcessor // TypeDefIndex: 25875
+{
+	// Fields
+	[Inject]
+	private IMergeBoardOperationTrackingService _operationTrackingService; // 0x10
+	[Inject]
+	private IBoardOperationDataCreator[] _operations; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A8E46C Offset: 0x6A8A46C VA: 0x6A8E46C Slot: 4
+	public void Process(TickArgs result) { }
+
+	// RVA: 0x6A8E824 Offset: 0x6A8A824 VA: 0x6A8E824
+	private Dictionary<string, string> GetOperationsMetadata(TickArgs result) { }
+
+	// RVA: 0x6A8E914 Offset: 0x6A8A914 VA: 0x6A8E914
+	public void .ctor() { }
+}
+

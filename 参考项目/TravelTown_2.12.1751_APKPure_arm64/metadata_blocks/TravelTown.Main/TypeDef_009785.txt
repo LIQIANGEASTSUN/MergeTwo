@@ -1,0 +1,185 @@
+// Namespace: Merger.Services.Backend.WebSocket
+public class OperationTrackingSystem : SystemBase // TypeDefIndex: 9785
+{
+	// Fields
+	[Inject]
+	private IOperationTrackingService _operationTrackingService; // 0x40
+	[Inject]
+	private IBoosterModel _boosterModel; // 0x48
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void TrackMergeOperation<TItemNotificationData>(List<TItemNotificationData> itemsNotificationData, string actionId) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D40BB4 Offset: 0x3D3CBB4 VA: 0x3D40BB4
+	|-OperationTrackingSystem.TrackMergeOperation<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public void TrackInsertOperation<TItemNotificationData>(List<TItemNotificationData> itemsNotificationData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D4054C Offset: 0x3D3C54C VA: 0x3D4054C
+	|-OperationTrackingSystem.TrackInsertOperation<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public void TrackExtractOperation<TItemNotificationData>(List<TItemNotificationData> itemsNotificationData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D4046C Offset: 0x3D3C46C VA: 0x3D4046C
+	|-OperationTrackingSystem.TrackExtractOperation<object>
+	*/
+
+	// RVA: 0x67B91E4 Offset: 0x67B51E4 VA: 0x67B91E4
+	public void TrackSplitOperation(List<ItemNotificationData> itemsNotificationData) { }
+
+	// RVA: 0x67B92CC Offset: 0x67B52CC VA: 0x67B92CC
+	public void TrackUndoSplitOperation(List<ItemNotificationData> itemsNotificationData) { }
+
+	// RVA: -1 Offset: -1
+	public void TrackItemAddedToInventoryOperation<TItemNotificationData>(List<TItemNotificationData> itemsNotificationData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D4070C Offset: 0x3D3C70C VA: 0x3D4070C
+	|-OperationTrackingSystem.TrackItemAddedToInventoryOperation<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public void TrackItemRestoredFromInventoryOperation<TItemNotificationData>(List<TItemNotificationData> itemsNotificationData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D409F4 Offset: 0x3D3C9F4 VA: 0x3D409F4
+	|-OperationTrackingSystem.TrackItemRestoredFromInventoryOperation<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public void TrackExpendOperation<TItemNotificationData>(List<TItemNotificationData> itemsNotificationData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D402AC Offset: 0x3D3C2AC VA: 0x3D402AC
+	|-OperationTrackingSystem.TrackExpendOperation<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public void TrackItemAddedToProducerInventoryOperation<TItemNotificationData>(List<TItemNotificationData> itemsNotificationData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D407EC Offset: 0x3D3C7EC VA: 0x3D407EC
+	|-OperationTrackingSystem.TrackItemAddedToProducerInventoryOperation<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public void TrackItemMovedBetweenInventoryTabsOperation<TItemNotificationData>(List<TItemNotificationData> itemsNotificationData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D408CC Offset: 0x3D3C8CC VA: 0x3D408CC
+	|-OperationTrackingSystem.TrackItemMovedBetweenInventoryTabsOperation<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public void TrackItemRestoredFromProducerInventoryOperation<TItemNotificationData>(List<TItemNotificationData> itemsNotificationData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D40AD4 Offset: 0x3D3CAD4 VA: 0x3D40AD4
+	|-OperationTrackingSystem.TrackItemRestoredFromProducerInventoryOperation<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public void TrackExpireBubbleOperation<TItemNotificationData>(List<TItemNotificationData> itemsNotificationData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D4038C Offset: 0x3D3C38C VA: 0x3D4038C
+	|-OperationTrackingSystem.TrackExpireBubbleOperation<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public void TrackMoveOperation<TItemNotificationData>(List<TItemNotificationData> itemsNotificationData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D40D14 Offset: 0x3D3CD14 VA: 0x3D40D14
+	|-OperationTrackingSystem.TrackMoveOperation<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public void TrackInteractionOperation<TItemNotificationData>(List<TItemNotificationData> itemsNotificationData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D4062C Offset: 0x3D3C62C VA: 0x3D4062C
+	|-OperationTrackingSystem.TrackInteractionOperation<object>
+	*/
+
+	// RVA: 0x67B93B4 Offset: 0x67B53B4 VA: 0x67B93B4
+	public void TrackCollectOperation(ItemNotificationData itemData) { }
+
+	// RVA: 0x67B94A0 Offset: 0x67B54A0 VA: 0x67B94A0
+	public void TrackChangeStateOperation(ItemNotificationData itemData, ExtraData extraData) { }
+
+	// RVA: 0x67B9590 Offset: 0x67B5590 VA: 0x67B9590
+	public void TrackBubbleBlastOperation(ItemNotificationData itemData, ExtraData extraData) { }
+
+	// RVA: 0x67B9680 Offset: 0x67B5680 VA: 0x67B9680
+	public void TrackRemoveOperation(ItemNotificationData itemData, ExtraData extraData) { }
+
+	// RVA: 0x67B9770 Offset: 0x67B5770 VA: 0x67B9770
+	public void TrackSellItemOperation(ItemNotificationData itemData) { }
+
+	// RVA: 0x67B985C Offset: 0x67B585C VA: 0x67B985C
+	public void TrackUndoSellOperation(ItemNotificationData itemData) { }
+
+	// RVA: 0x67B9948 Offset: 0x67B5948 VA: 0x67B9948
+	public void TrackEnqueueUndoSellOperation(ItemNotificationData itemData, string uuidInBoardQueue, long enqueueTimestamp) { }
+
+	// RVA: 0x67B9A88 Offset: 0x67B5A88 VA: 0x67B9A88
+	public void TrackEnqueueItemOperation(ItemNotificationData itemData, string uuidInBoardQueue, long enqueueTimestamp) { }
+
+	// RVA: -1 Offset: -1
+	public void TrackDequeueItemOperation<TItemNotificationData>(TItemNotificationData dequeuedItemData, string uuidInBoardQueue, TItemNotificationData createdItemData, string boosterUuid, IMergeItem dequeuedItem) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D3FD8C Offset: 0x3D3BD8C VA: 0x3D3FD8C
+	|-OperationTrackingSystem.TrackDequeueItemOperation<object>
+	*/
+
+	// RVA: 0x67B9BC8 Offset: 0x67B5BC8 VA: 0x67B9BC8
+	public void TrackItemDestroyOperation(ItemNotificationData itemData) { }
+
+	// RVA: 0x67B9CB4 Offset: 0x67B5CB4 VA: 0x67B9CB4
+	public void TrackCreateItemOnBoardOperation(ItemNotificationData itemData) { }
+
+	// RVA: 0x67B9DA0 Offset: 0x67B5DA0 VA: 0x67B9DA0
+	public void TrackSwapItemOperation(List<ItemNotificationData> itemData) { }
+
+	// RVA: -1 Offset: -1
+	public void TrackCollectToolboxOperation<TItemNotificationData>(List<TItemNotificationData> itemsNotificationData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D3FCAC Offset: 0x3D3BCAC VA: 0x3D3FCAC
+	|-OperationTrackingSystem.TrackCollectToolboxOperation<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public void TrackCollectToolFragment<TItemNotificationData>(List<TItemNotificationData> itemsNotificationData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D3FBCC Offset: 0x3D3BBCC VA: 0x3D3FBCC
+	|-OperationTrackingSystem.TrackCollectToolFragment<object>
+	*/
+
+	// RVA: 0x67B9E88 Offset: 0x67B5E88 VA: 0x67B9E88
+	public void TrackExpireMeteorOperation(ItemNotificationData itemData) { }
+
+	// RVA: -1 Offset: -1
+	public void TrackStackingOperation<TItemNotificationData>(List<TItemNotificationData> itemsNotificationData, string actionId) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D40DF4 Offset: 0x3D3CDF4 VA: 0x3D40DF4
+	|-OperationTrackingSystem.TrackStackingOperation<object>
+	*/
+
+	// RVA: 0x67B9F74 Offset: 0x67B5F74 VA: 0x67B9F74
+	public void .ctor() { }
+}
+

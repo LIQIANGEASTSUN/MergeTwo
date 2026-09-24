@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoosterModel.<>c__DisplayClass44_0 // TypeDefIndex: 7774
+{
+	// Fields
+	public string itemId; // 0x10
+
+	// Methods
+
+	// RVA: 0x65C5F40 Offset: 0x65C1F40 VA: 0x65C5F40
+	public void .ctor() { }
+
+	// RVA: 0x65C6A58 Offset: 0x65C2A58 VA: 0x65C6A58
+	internal bool <GetBoosterByMergeItemId>b__0(KeyValuePair<string, IBoosterItem> item) { }
+}
+

@@ -1,0 +1,84 @@
+Type: TimedMergeBoardLiveConfig
+
+Method: Merge.MergeBoardId get_MergeBoardId()
+
+Disassembly:
+	0x0368BBC4 LDR X8, [X8 + 0x300]
+	0x0368BBC8 LDR X8, [X8]
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_MergeBoardId(Merge.MergeBoardId value)
+
+Disassembly:
+	0x0368BBCC MOV X0, X8
+	0x0368BBD0 BL 0x44B4C2C
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Boolean get_IsEnabled()
+
+Disassembly:
+	0x0368BBD4 MOV X1, X0
+	0x0368BBD8 ADD X0, X31, 0x2000
+
+ISIL:
+	001 Move W0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_IsEnabled(System.Boolean value)
+
+Disassembly:
+	0x0368BBDC MOV W2, W31
+	0x0368BBE0 ADD X0, X0, 0x6F8
+
+ISIL:
+	001 Move [X0+24], W1
+	002 Return 
+
+Method: System.Int32 get_ExperimentPriority()
+
+Disassembly:
+	0x0368BBE4 MOV X3, X31
+	0x0368BBE8 MOV X4, X31
+
+ISIL:
+	001 Move W0, [X0+28]
+	002 Return X0
+
+Method: System.Void set_ExperimentPriority(System.Int32 value)
+
+Disassembly:
+	0x0368BBEC STR X31, [X31 + 0x2700]
+	0x0368BBF0 STR X31, [X31 + 0x26F8]
+
+ISIL:
+	001 Move [X0+28], W1
+	002 Return 
+
+Method: Merge.MergeBoardId get_ConfigKey()
+
+Disassembly:
+	0x0368BBF4 STR X31, [X31 + 0x2708]
+	0x0368BBF8 BL 0x414ACA4
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0368BBFC LDR V0, [X27 + 0x264]
+	0x0368BC00 LDR X8, [X31 + 0x2708]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+

@@ -1,0 +1,92 @@
+// Namespace: Paxie.MergeStudio.Features.RecurringEvents.MiniBoardProgression
+[Serializable]
+public class MiniBoardProgressionExtraEntity : IMiniBoardEntity // TypeDefIndex: 973
+{
+	// Fields
+	public MiniBoardAreaEntity MiniBoardAreaEntity; // 0x8
+	public List<MiniBoardRewardEntity> ActiveRewards; // 0xC
+	public int SpawnerEnergyConsumeAmount; // 0x10
+	public bool IsLastBoardCompleted; // 0x14
+	public List<PerishableSpawnerEntity> PerishableSpawnerEntityList; // 0x18
+	public int MaxLevelItemSeen; // 0x1C
+	public List<MiniBoardProgressionSideItemProgress> SideItemProgressList; // 0x20
+	public Queue<MiniBoardProgressionMergedRewards> MergedRewardsQueue; // 0x24
+
+	// Methods
+
+	// RVA: 0x17932A8 Offset: 0x17932A8 VA: 0x17932A8
+	public static MiniBoardProgressionExtraEntity Get() { }
+
+	// RVA: 0x17934C4 Offset: 0x17934C4 VA: 0x17934C4
+	public void ResetEntity() { }
+
+	// RVA: 0x1793628 Offset: 0x1793628 VA: 0x1793628
+	public void ChangeBoardIndex(int boardIndex) { }
+
+	// RVA: 0x17936CC Offset: 0x17936CC VA: 0x17936CC Slot: 4
+	public bool IsBoardFull() { }
+
+	// RVA: 0x17938D0 Offset: 0x17938D0 VA: 0x17938D0 Slot: 5
+	public Coordinate GetItemCoordinate(MiniBoardItemEntity miniBoardItemEntity) { }
+
+	// RVA: 0x1793914 Offset: 0x1793914 VA: 0x1793914 Slot: 6
+	public List<MiniBoardRewardEntity> GetActiveRewards() { }
+
+	// RVA: 0x179391C Offset: 0x179391C VA: 0x179391C Slot: 7
+	public void AddToActiveRewards(int setID, int level, int amount, bool updateBoardIcon) { }
+
+	// RVA: 0x1793970 Offset: 0x1793970 VA: 0x1793970 Slot: 8
+	public void AddToActiveRewards(int setID, int level, GameMainReward mainReward, int amount, bool updateBoardIcon) { }
+
+	// RVA: 0x17939E4 Offset: 0x17939E4 VA: 0x17939E4 Slot: 9
+	public void AddRewardToActiveRewardsFromStart(int setID, int level) { }
+
+	// RVA: 0x1793A90 Offset: 0x1793A90 VA: 0x1793A90 Slot: 10
+	public void AddRewardToActiveRewardsFromStart(int setID, int level, MiniBoardItemEntity itemEntity) { }
+
+	// RVA: 0x179396C Offset: 0x179396C VA: 0x179396C Slot: 11
+	public void AddToActiveRewards(int setID, int level) { }
+
+	// RVA: 0x17939D0 Offset: 0x17939D0 VA: 0x17939D0 Slot: 12
+	public void AddToActiveRewards(int setID, int level, GameMainReward mainReward) { }
+
+	// RVA: 0x1793D68 Offset: 0x1793D68 VA: 0x1793D68 Slot: 13
+	public Queue<MiniBoardProgressionMergedRewards> GetMergedRewardsQueue() { }
+
+	// RVA: 0x1793D70 Offset: 0x1793D70 VA: 0x1793D70 Slot: 14
+	public void AddToMergedRewardList(MiniBoardItemEntity itemEntity, int setID, int level) { }
+
+	// RVA: 0x179413C Offset: 0x179413C VA: 0x179413C Slot: 15
+	public void AddToMergedRewardList(MiniBoardItemEntity itemEntity, int setID, int level, GameMainReward mainReward) { }
+
+	// RVA: 0x1794474 Offset: 0x1794474 VA: 0x1794474 Slot: 16
+	public void ConvertAndAddToMergedRewardList(List<MiniBoardItemEntity> convertedItemEntities, MiniBoardItemEntity createdItemEntity) { }
+
+	// RVA: 0x1794C90 Offset: 0x1794C90 VA: 0x1794C90 Slot: 17
+	public void ConvertAllMergedRewardsToMaxLevelItem(int setID, int level) { }
+
+	// RVA: 0x1793870 Offset: 0x1793870 VA: 0x1793870
+	public bool IsEmptyCell(MiniBoardPositionEntity pos) { }
+
+	// RVA: 0x17951C0 Offset: 0x17951C0 VA: 0x17951C0
+	public bool IsItemNull(MiniBoardItemEntity item) { }
+
+	// RVA: 0x1793B54 Offset: 0x1793B54 VA: 0x1793B54
+	public void AddRewardToActiveRewards(int setID, int level) { }
+
+	// RVA: 0x1793C50 Offset: 0x1793C50 VA: 0x1793C50
+	public void AddRewardToActiveRewards(int setID, int level, GameMainReward gameMainReward) { }
+
+	// RVA: 0x17951E8 Offset: 0x17951E8 VA: 0x17951E8
+	public void TryAddPerishableSpawnerConfig(PerishableSpawnerEntity perishableSpawnerEntity) { }
+
+	// RVA: 0x17952A8 Offset: 0x17952A8 VA: 0x17952A8
+	public bool IsSideItemProgressExist(int setID, int level) { }
+
+	// RVA: 0x17954B0 Offset: 0x17954B0 VA: 0x17954B0
+	public void TryAddSideItemProgress(int setID, int level) { }
+
+	// RVA: 0x17934BC Offset: 0x17934BC VA: 0x17934BC
+	public void .ctor() { }
+}
+

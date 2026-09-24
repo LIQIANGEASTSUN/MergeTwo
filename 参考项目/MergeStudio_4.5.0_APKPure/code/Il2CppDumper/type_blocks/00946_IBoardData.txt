@@ -1,0 +1,9 @@
+// Namespace: Paxie.MergeStudio.GameCore.Gameplay.Board.BoardCore
+public interface IBoardData // TypeDefIndex: 946
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract BoardItemData GetBoardItemDataFallback(int setID, int level, bool skipWarning = False, bool fromEventBoard = False);
+}
+

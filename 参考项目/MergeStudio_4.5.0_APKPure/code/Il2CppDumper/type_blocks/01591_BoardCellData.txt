@@ -1,0 +1,18 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "BoardCellData", menuName = "Scriptable/BoardCell/BoardCellData", order = 1)]
+public class BoardCellData : ScriptableObject // TypeDefIndex: 1591
+{
+	// Fields
+	public Sprite BackgroundDark; // 0xC
+	public Sprite BackgroundWarm; // 0x10
+	public Sprite SelectedImage; // 0x14
+	public Sprite BackgroundDarkSquare; // 0x18
+	public Sprite BackgroundWarmSquare; // 0x1C
+	public Color DoneableColor; // 0x20
+
+	// Methods
+
+	// RVA: 0x1880224 Offset: 0x1880224 VA: 0x1880224
+	public void .ctor() { }
+}
+

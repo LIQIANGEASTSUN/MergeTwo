@@ -1,0 +1,9 @@
+// Namespace: Merger.TimeLimitedItems.Signals
+public class TimeLimitedItemsBoardMiniGameCleanUpCompletedSignal // TypeDefIndex: 32828
+{
+	// Methods
+
+	// RVA: 0x6B48CE4 Offset: 0x6B44CE4 VA: 0x6B48CE4
+	public void .ctor() { }
+}
+

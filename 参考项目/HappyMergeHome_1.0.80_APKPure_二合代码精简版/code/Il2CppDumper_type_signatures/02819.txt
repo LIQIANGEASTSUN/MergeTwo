@@ -1,0 +1,29 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class MergeClickTips.<>c // TypeDefIndex: 2819
+{
+	// Fields
+	public static readonly MergeClickTips.<>c <>9; // 0x0
+	public static Action <>9__84_3; // 0x4
+	public static Action <>9__84_1; // 0x8
+	public static Action <>9__84_2; // 0xC
+
+	// Methods
+
+	// RVA: 0x2C69034 Offset: 0x2C69034 VA: 0x2C69034
+	private static void .cctor() { }
+
+	// RVA: 0x2C690A8 Offset: 0x2C690A8 VA: 0x2C690A8
+	public void .ctor() { }
+
+	// RVA: 0x2C690B0 Offset: 0x2C690B0 VA: 0x2C690B0
+	internal void <OnSpeedUp>b__84_3() { }
+
+	// RVA: 0x2C690B4 Offset: 0x2C690B4 VA: 0x2C690B4
+	internal void <OnSpeedUp>b__84_1() { }
+
+	// RVA: 0x2C690B8 Offset: 0x2C690B8 VA: 0x2C690B8
+	internal void <OnSpeedUp>b__84_2() { }
+}
+

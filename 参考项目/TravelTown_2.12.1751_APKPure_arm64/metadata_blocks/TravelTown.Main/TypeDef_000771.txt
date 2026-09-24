@@ -1,0 +1,54 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardItemsStateSystem.<>c<TState> // TypeDefIndex: 771
+{
+	// Fields
+	public static readonly BoardItemsStateSystem.<>c<TState> <>9; // 0x0
+	public static Func<PositionComponent, IdComponent> <>9__5_0; // 0x0
+	public static Func<PositionComponent, bool> <>9__9_1; // 0x0
+	public static Func<PositionComponent, Entity> <>9__9_2; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	private static void .cctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3EF503C Offset: 0x3EF103C VA: 0x3EF503C
+	|-BoardItemsStateSystem.<>c<object>..cctor
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3EF50F8 Offset: 0x3EF10F8 VA: 0x3EF50F8
+	|-BoardItemsStateSystem.<>c<object>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal IdComponent <GetExistingEntityIds>b__5_0(PositionComponent items) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3EF5100 Offset: 0x3EF1100 VA: 0x3EF5100
+	|-BoardItemsStateSystem.<>c<object>.<GetExistingEntityIds>b__5_0
+	*/
+
+	// RVA: -1 Offset: -1
+	internal bool <HandleDuplicatedEntityPositions>b__9_1(PositionComponent item) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3EF5150 Offset: 0x3EF1150 VA: 0x3EF5150
+	|-BoardItemsStateSystem.<>c<object>.<HandleDuplicatedEntityPositions>b__9_1
+	*/
+
+	// RVA: -1 Offset: -1
+	internal Entity <HandleDuplicatedEntityPositions>b__9_2(PositionComponent item) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3EF51AC Offset: 0x3EF11AC VA: 0x3EF51AC
+	|-BoardItemsStateSystem.<>c<object>.<HandleDuplicatedEntityPositions>b__9_2
+	*/
+}
+

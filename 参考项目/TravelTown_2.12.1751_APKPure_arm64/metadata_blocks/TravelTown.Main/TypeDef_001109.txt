@@ -1,0 +1,22 @@
+// Namespace: MergeEngine.ECS.Components.Items.Producers
+[Serializable]
+public class SerializedTimeCycleComponent // TypeDefIndex: 1109
+{
+	// Fields
+	public long CooldownEndTime; // 0x10
+	public long CycleCooldownEndTime; // 0x18
+	public double CycleDelayLeft; // 0x20
+	public double SubCycleDelayLeft; // 0x28
+	public int CurrentSubCycle; // 0x30
+	public int ItemsToProduce; // 0x34
+	public int ItemsProducedPerSubCycle; // 0x38
+	public int TotalNumberOfCycles; // 0x3C
+	public int TotalSpawnedItemsInLifetime; // 0x40
+	public bool IsCooldownBlocked; // 0x44
+
+	// Methods
+
+	// RVA: 0x6900310 Offset: 0x68FC310 VA: 0x6900310
+	public void .ctor() { }
+}
+

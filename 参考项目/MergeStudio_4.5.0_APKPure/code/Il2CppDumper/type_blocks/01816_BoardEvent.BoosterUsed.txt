@@ -1,0 +1,9 @@
+// Namespace: 
+public struct BoardEvent.BoosterUsed : IEvent // TypeDefIndex: 1816
+{
+	// Fields
+	public BoosterItemController BoosterItemController; // 0x0
+	public BoardItemData BoardItemData; // 0x4
+	public bool DismissPanel; // 0x8
+}
+

@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class InventorySystem.<>c__DisplayClass92_1 // TypeDefIndex: 656
+{
+	// Fields
+	public string slotId; // 0x10
+
+	// Methods
+
+	// RVA: 0x62887CC Offset: 0x62847CC VA: 0x62887CC
+	public void .ctor() { }
+
+	// RVA: 0x628A9A0 Offset: 0x62869A0 VA: 0x628A9A0
+	internal bool <SortBackendSlotsToConfig>b__1(Tuple<IMergeItem, int> tuple) { }
+}
+

@@ -1,0 +1,163 @@
+// Namespace: ContextualizedECS.Query
+[Extension]
+public static class QueryExtensions // TypeDefIndex: 33699
+{
+	// Methods
+
+	[Extension]
+	// RVA: -1 Offset: -1
+	public static QueryExtensions.QueryBuilder<T> Query<T>(TickContext context, Entities.MatchDelegate<T> match, Entities.ExcludeDelegate exclude) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3D64A64 Offset: 0x3D60A64 VA: 0x3D64A64
+	|-QueryExtensions.Query<ValueTuple<object, BoardTilePositionComponent>>
+	|
+	|-RVA: 0x3D64B04 Offset: 0x3D60B04 VA: 0x3D64B04
+	|-QueryExtensions.Query<ValueTuple<object, BornComponent>>
+	|
+	|-RVA: 0x3D64BA4 Offset: 0x3D60BA4 VA: 0x3D64BA4
+	|-QueryExtensions.Query<ValueTuple<object, DeadComponent>>
+	|
+	|-RVA: 0x3D64C44 Offset: 0x3D60C44 VA: 0x3D64C44
+	|-QueryExtensions.Query<ValueTuple<object, IdComponent>>
+	|
+	|-RVA: 0x3D64CE4 Offset: 0x3D60CE4 VA: 0x3D64CE4
+	|-QueryExtensions.Query<ValueTuple<object, ItemMovedComponent>>
+	|
+	|-RVA: 0x3D64D84 Offset: 0x3D60D84 VA: 0x3D64D84
+	|-QueryExtensions.Query<ValueTuple<object, TimeCycleComponent>>
+	|
+	|-RVA: 0x3D64E24 Offset: 0x3D60E24 VA: 0x3D64E24
+	|-QueryExtensions.Query<ValueTuple<object, TimeLockComponent>>
+	|
+	|-RVA: 0x3D64EC4 Offset: 0x3D60EC4 VA: 0x3D64EC4
+	|-QueryExtensions.Query<ValueTuple<object, BoardTilePositionComponent, BoxComponent>>
+	|
+	|-RVA: 0x3D64F64 Offset: 0x3D60F64 VA: 0x3D64F64
+	|-QueryExtensions.Query<ValueTuple<object, BoardTilePositionComponent, IdComponent>>
+	|
+	|-RVA: 0x3D65004 Offset: 0x3D61004 VA: 0x3D65004
+	|-QueryExtensions.Query<ValueTuple<object, BoardTilePositionComponent, MergeComponent>>
+	|
+	|-RVA: 0x3D650A4 Offset: 0x3D610A4 VA: 0x3D650A4
+	|-QueryExtensions.Query<ValueTuple<object, BoardTilePositionComponent, TimeCycleComponent>>
+	|
+	|-RVA: 0x3D65144 Offset: 0x3D61144 VA: 0x3D65144
+	|-QueryExtensions.Query<ValueTuple<object, BoardTilePositionComponent, TimeLockComponent>>
+	|
+	|-RVA: 0x3D651E4 Offset: 0x3D611E4 VA: 0x3D651E4
+	|-QueryExtensions.Query<ValueTuple<object, BornComponent, IdComponent>>
+	|
+	|-RVA: 0x3D65284 Offset: 0x3D61284 VA: 0x3D65284
+	|-QueryExtensions.Query<ValueTuple<object, CollectableComponent, IdComponent>>
+	|
+	|-RVA: 0x3D65324 Offset: 0x3D61324 VA: 0x3D65324
+	|-QueryExtensions.Query<ValueTuple<object, IdComponent, BoardTilePositionComponent>>
+	|
+	|-RVA: 0x3D653C4 Offset: 0x3D613C4 VA: 0x3D653C4
+	|-QueryExtensions.Query<ValueTuple<object, InteractionComponent, BoardTilePositionComponent>>
+	|
+	|-RVA: 0x3D65464 Offset: 0x3D61464 VA: 0x3D65464
+	|-QueryExtensions.Query<ValueTuple<object, PendingInteractionComponent, InteractionComponent>>
+	|
+	|-RVA: 0x3D65504 Offset: 0x3D61504 VA: 0x3D65504
+	|-QueryExtensions.Query<ValueTuple<object, BoardTilePositionComponent, IdComponent, InteractionComponent>>
+	|
+	|-RVA: 0x3D655A4 Offset: 0x3D615A4 VA: 0x3D655A4
+	|-QueryExtensions.Query<ValueTuple<object, BoardTilePositionComponent, ItemMovedComponent, IdComponent>>
+	|
+	|-RVA: 0x3D65644 Offset: 0x3D61644 VA: 0x3D65644
+	|-QueryExtensions.Query<ValueTuple<object, BoardTilePositionComponent, MergeComponent, IdComponent>>
+	|
+	|-RVA: 0x3D656E4 Offset: 0x3D616E4 VA: 0x3D656E4
+	|-QueryExtensions.Query<ValueTuple<object, CollectableComponent, IdComponent, BornComponent>>
+	|
+	|-RVA: 0x3D65784 Offset: 0x3D61784 VA: 0x3D65784
+	|-QueryExtensions.Query<ValueTuple<object, DeadComponent, ItemConsumedComponent, IdComponent>>
+	|
+	|-RVA: 0x3D65824 Offset: 0x3D61824 VA: 0x3D65824
+	|-QueryExtensions.Query<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, DeadComponent>>
+	|
+	|-RVA: 0x3D658C4 Offset: 0x3D618C4 VA: 0x3D658C4
+	|-QueryExtensions.Query<ValueTuple<object, ExpendableComponent, TimeLimitedActivationComponent, TimeDurationComponent>>
+	|
+	|-RVA: 0x3D65964 Offset: 0x3D61964 VA: 0x3D65964
+	|-QueryExtensions.Query<ValueTuple<object, FeedingCombinationComponent, DeadComponent, BoardTilePositionComponent>>
+	|
+	|-RVA: 0x3D65A04 Offset: 0x3D61A04 VA: 0x3D65A04
+	|-QueryExtensions.Query<ValueTuple<object, IdComponent, DeadComponent, BoardTilePositionComponent>>
+	|
+	|-RVA: 0x3D65AA4 Offset: 0x3D61AA4 VA: 0x3D65AA4
+	|-QueryExtensions.Query<ValueTuple<object, IdComponent, LockComponent, BoxComponent>>
+	|
+	|-RVA: 0x3D65B44 Offset: 0x3D61B44 VA: 0x3D65B44
+	|-QueryExtensions.Query<ValueTuple<object, ResourceConsumedComponent, InteractionComponent, BoardTilePositionComponent>>
+	|
+	|-RVA: 0x3D65BE4 Offset: 0x3D61BE4 VA: 0x3D65BE4
+	|-QueryExtensions.Query<ValueTuple<object, TimeDurationComponent, IdComponent, BoardTilePositionComponent>>
+	|
+	|-RVA: 0x3D65C84 Offset: 0x3D61C84 VA: 0x3D65C84
+	|-QueryExtensions.Query<ValueTuple<object, TimeLockComponent, BoardTilePositionComponent, IdComponent>>
+	|
+	|-RVA: 0x3D65D24 Offset: 0x3D61D24 VA: 0x3D65D24
+	|-QueryExtensions.Query<ValueTuple<object, BoardTilePositionComponent, BornComponent, IdComponent, ItemMergedComponent>>
+	|
+	|-RVA: 0x3D65DC4 Offset: 0x3D61DC4 VA: 0x3D65DC4
+	|-QueryExtensions.Query<ValueTuple<object, BoardTilePositionComponent, IdComponent, BornComponent, ItemMergedComponent>>
+	|
+	|-RVA: 0x3D65E64 Offset: 0x3D61E64 VA: 0x3D65E64
+	|-QueryExtensions.Query<ValueTuple<object, BoardTilePositionComponent, IdComponent, DynamicItemConfigComponent, PendingInteractionComponent>>
+	|
+	|-RVA: 0x3D65F04 Offset: 0x3D61F04 VA: 0x3D65F04
+	|-QueryExtensions.Query<ValueTuple<object, BoardTilePositionComponent, MergeComponent, IdComponent, PendingItemsCombinationComponent>>
+	|
+	|-RVA: 0x3D65FA4 Offset: 0x3D61FA4 VA: 0x3D65FA4
+	|-QueryExtensions.Query<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, FeedingCombinationComponent, InteractionComponent>>
+	|
+	|-RVA: 0x3D66044 Offset: 0x3D62044 VA: 0x3D66044
+	|-QueryExtensions.Query<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, InteractionComponent>>
+	|
+	|-RVA: 0x3D660E4 Offset: 0x3D620E4 VA: 0x3D660E4
+	|-QueryExtensions.Query<ValueTuple<object, BoardTilePositionComponent, ToolSpawningComponent, PendingInteractionComponent, InteractionComponent>>
+	|
+	|-RVA: 0x3D66184 Offset: 0x3D62184 VA: 0x3D66184
+	|-QueryExtensions.Query<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>>
+	|
+	|-RVA: 0x3D66224 Offset: 0x3D62224 VA: 0x3D66224
+	|-QueryExtensions.Query<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, TimeDurationComponent, TimeLimitedActivationComponent>>
+	|
+	|-RVA: 0x3D662C4 Offset: 0x3D622C4 VA: 0x3D662C4
+	|-QueryExtensions.Query<ValueTuple<object, IdComponent, BoardTilePositionComponent, ImmediateToolComponent, PendingInteractionComponent>>
+	|
+	|-RVA: 0x3D66364 Offset: 0x3D62364 VA: 0x3D66364
+	|-QueryExtensions.Query<ValueTuple<object, IdComponent, InteractionComponent, BoardTilePositionComponent, ProducerComponent>>
+	|
+	|-RVA: 0x3D66404 Offset: 0x3D62404 VA: 0x3D66404
+	|-QueryExtensions.Query<ValueTuple<object, BoardTilePositionComponent, CollectableComponent, IdComponent, PendingInteractionComponent, InteractionComponent>>
+	|
+	|-RVA: 0x3D664A4 Offset: 0x3D624A4 VA: 0x3D664A4
+	|-QueryExtensions.Query<ValueTuple<object, BoardTilePositionComponent, ProducerComponent, TimeCycleComponent, PendingInteractionComponent, InteractionComponent>>
+	|
+	|-RVA: 0x3D66544 Offset: 0x3D62544 VA: 0x3D66544
+	|-QueryExtensions.Query<ValueTuple<object, ChargeableComponent, ExpendableComponent, BoardTilePositionComponent, IdComponent, PendingInteractionComponent>>
+	|
+	|-RVA: 0x3D665E4 Offset: 0x3D625E4 VA: 0x3D665E4
+	|-QueryExtensions.Query<ValueTuple<object, ExpendableComponent, BoardTilePositionComponent, IdComponent, InteractionComponent, PendingInteractionComponent>>
+	|
+	|-RVA: 0x3D66684 Offset: 0x3D62684 VA: 0x3D66684
+	|-QueryExtensions.Query<ValueTuple<object, SpawnerComponent, TimeCycleComponent, BoardTilePositionComponent, IdComponent, InteractionComponent>>
+	|
+	|-RVA: 0x3D66724 Offset: 0x3D62724 VA: 0x3D66724
+	|-QueryExtensions.Query<ValueTuple<object, BoardTilePositionComponent, FeedingCombinationComponent, IdComponent, InteractionComponent, ProducerComponent, TimeCycleComponent>>
+	|
+	|-RVA: 0x3D667C4 Offset: 0x3D627C4 VA: 0x3D667C4
+	|-QueryExtensions.Query<ValueTuple<object, BoardTilePositionComponent, SpawnerComponent, IdComponent, TimeCycleComponent, InteractionComponent, PendingInteractionComponent>>
+	|
+	|-RVA: 0x3D66864 Offset: 0x3D62864 VA: 0x3D66864
+	|-QueryExtensions.Query<ValueTuple<object, ExpendableComponent, IdComponent, InteractionComponent, PendingInteractionComponent, TimeLimitedActivationComponent, TimeDurationComponent>>
+	|
+	|-RVA: 0x3D66904 Offset: 0x3D62904 VA: 0x3D66904
+	|-QueryExtensions.Query<__Il2CppFullySharedGenericType>
+	*/
+}
+

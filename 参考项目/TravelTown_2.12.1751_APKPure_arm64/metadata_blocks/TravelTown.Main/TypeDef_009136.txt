@@ -1,0 +1,141 @@
+// Namespace: Merger.Game.Views.BoardItem
+public class BoardItemView2 : BoardItemViewBase, ISerializationCallbackReceiver, ISupportsPrefabSerialization // TypeDefIndex: 9136
+{
+	// Fields
+	[HideInInspector]
+	[OdinSerialize]
+	private readonly Dictionary<string, RectTransform> _containers; // 0x80
+	private IReadOnlyDictionary<string, BehaviourPrefabData> _behaviourConfigs; // 0x88
+	private readonly Dictionary<Type, IBoardItemViewBehaviour> _behaviours; // 0x90
+	private readonly HashSet<Type> _persistentBehaviours; // 0x98
+	private bool _initialised; // 0xA0
+	private bool _resetAnimationState; // 0xA1
+	private string _defaultPoolIdStringFormat; // 0xA8
+	private string _poolIdStringFormat; // 0xB0
+	[SerializeField]
+	[HideInInspector]
+	private SerializationData serializationData; // 0xB8
+
+	// Properties
+	public override int SelectorSiblingIndex { get; }
+	private SerializationData Sirenix.Serialization.ISupportsPrefabSerialization.SerializationData { get; set; }
+
+	// Methods
+
+	// RVA: 0x6730164 Offset: 0x672C164 VA: 0x6730164 Slot: 38
+	public override int get_SelectorSiblingIndex() { }
+
+	// RVA: 0x673022C Offset: 0x672C22C VA: 0x673022C
+	public void ShowQuestHintAfterLandAnimationEvent() { }
+
+	// RVA: 0x67302D4 Offset: 0x672C2D4 VA: 0x67302D4
+	private void OnValidate() { }
+
+	// RVA: 0x6730418 Offset: 0x672C418 VA: 0x6730418 Slot: 47
+	public override void Initialise(IVisualComponent visualComponent, IReadOnlyDictionary<string, BehaviourPrefabData> behaviourConfigs, string poolIdStringFormat) { }
+
+	// RVA: 0x6730758 Offset: 0x672C758 VA: 0x6730758 Slot: 6
+	public override void Dispose() { }
+
+	// RVA: 0x67305AC Offset: 0x672C5AC VA: 0x67305AC
+	private void RegisterExistingBoardItemViewBehaviours() { }
+
+	// RVA: 0x6730B08 Offset: 0x672CB08 VA: 0x6730B08 Slot: 49
+	protected override void PointerClicked() { }
+
+	// RVA: -1 Offset: -1 Slot: 50
+	public override TViewBehaviour GetBehaviour<TViewBehaviour>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3BD9E68 Offset: 0x3BD5E68 VA: 0x3BD9E68
+	|-BoardItemView2.GetBehaviour<object>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 51
+	public override TViewBehaviour GetOrAttachBehaviour<TViewBehaviour>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3BD9F80 Offset: 0x3BD5F80 VA: 0x3BD9F80
+	|-BoardItemView2.GetOrAttachBehaviour<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public bool HasBehaviour<TViewBehaviour>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3BD9FF8 Offset: 0x3BD5FF8 VA: 0x3BD9FF8
+	|-BoardItemView2.HasBehaviour<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public TViewBehaviour AttachBehaviour<TViewBehaviour>(bool notifyBehaviours = False) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3BD9990 Offset: 0x3BD5990 VA: 0x3BD9990
+	|-BoardItemView2.AttachBehaviour<object>
+	*/
+
+	// RVA: 0x6730D08 Offset: 0x672CD08 VA: 0x6730D08
+	public void MarkResetAnimationState() { }
+
+	// RVA: -1 Offset: -1
+	private TViewBehaviour AttachBehaviourFromPrefab<TViewBehaviour>(GameObject prefab, RectTransform container) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3BD9D68 Offset: 0x3BD5D68 VA: 0x3BD9D68
+	|-BoardItemView2.AttachBehaviourFromPrefab<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	private TViewBehaviour AttachBehaviourFromPool<TViewBehaviour>(string poolName, RectTransform container) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3BD9C50 Offset: 0x3BD5C50 VA: 0x3BD9C50
+	|-BoardItemView2.AttachBehaviourFromPool<object>
+	*/
+
+	// RVA: 0x67309D0 Offset: 0x672C9D0 VA: 0x67309D0
+	private void RegisterBehaviour(IBoardItemViewBehaviour behaviour, Type behaviourType, bool isPersistent, bool initialize = True) { }
+
+	// RVA: 0x6730D14 Offset: 0x672CD14 VA: 0x6730D14
+	private void RemoveBehaviour(IBoardItemViewBehaviour viewBehaviour, Type behaviourType, bool dispose = True) { }
+
+	// RVA: 0x6730668 Offset: 0x672C668 VA: 0x6730668
+	private void TryResetAnimation() { }
+
+	// RVA: 0x6731040 Offset: 0x672D040 VA: 0x6731040 Slot: 48
+	protected override void OnEnable() { }
+
+	// RVA: 0x67307CC Offset: 0x672C7CC VA: 0x67307CC
+	private void WipeBehaviours() { }
+
+	// RVA: 0x67301BC Offset: 0x672C1BC VA: 0x67301BC
+	public RectTransform GetContainer(string containerId) { }
+
+	// RVA: 0x673105C Offset: 0x672D05C VA: 0x673105C
+	public void NotifyBehaviourAdded() { }
+
+	// RVA: 0x6731188 Offset: 0x672D188 VA: 0x6731188 Slot: 54
+	private SerializationData Sirenix.Serialization.ISupportsPrefabSerialization.get_SerializationData() { }
+
+	// RVA: 0x67311A4 Offset: 0x672D1A4 VA: 0x67311A4 Slot: 55
+	private void Sirenix.Serialization.ISupportsPrefabSerialization.set_SerializationData(SerializationData value) { }
+
+	// RVA: 0x67311CC Offset: 0x672D1CC VA: 0x67311CC Slot: 53
+	private void UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize() { }
+
+	// RVA: 0x673122C Offset: 0x672D22C VA: 0x673122C Slot: 52
+	private void UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize() { }
+
+	// RVA: 0x6731290 Offset: 0x672D290 VA: 0x6731290
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x67313E4 Offset: 0x672D3E4 VA: 0x67313E4
+	private void <Initialise>b__12_0(IBoardItemViewBehaviour behaviour) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6731490 Offset: 0x672D490 VA: 0x6731490
+	private bool <WipeBehaviours>b__27_0(KeyValuePair<Type, IBoardItemViewBehaviour> kvp) { }
+}
+

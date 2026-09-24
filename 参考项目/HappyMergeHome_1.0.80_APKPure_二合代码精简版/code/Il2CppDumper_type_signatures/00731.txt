@@ -1,0 +1,53 @@
+// Namespace: 
+[Serializable]
+public class MapAdventureTwoBarrier : TableBase // TypeDefIndex: 731
+{
+	// Fields
+	[CompilerGenerated]
+	private int <Id>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private int <Index>k__BackingField; // 0xC
+	[CompilerGenerated]
+	private int <BarrierItemId>k__BackingField; // 0x10
+
+	// Properties
+	public int Id { get; set; }
+	public int Index { get; set; }
+	public int BarrierItemId { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x1897D28 Offset: 0x1897D28 VA: 0x1897D28
+	public int get_Id() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1897D30 Offset: 0x1897D30 VA: 0x1897D30
+	public void set_Id(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1897D38 Offset: 0x1897D38 VA: 0x1897D38
+	public int get_Index() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1897D40 Offset: 0x1897D40 VA: 0x1897D40
+	public void set_Index(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1897D48 Offset: 0x1897D48 VA: 0x1897D48
+	public int get_BarrierItemId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1897D50 Offset: 0x1897D50 VA: 0x1897D50
+	public void set_BarrierItemId(int value) { }
+
+	// RVA: 0x1897D58 Offset: 0x1897D58 VA: 0x1897D58 Slot: 4
+	public override int GetID() { }
+
+	// RVA: 0x1897DAC Offset: 0x1897DAC VA: 0x1897DAC
+	public void .ctor() { }
+
+	// RVA: 0x1897DB4 Offset: 0x1897DB4 VA: 0x1897DB4
+	public int <>iFixBaseProxy_GetID() { }
+}
+

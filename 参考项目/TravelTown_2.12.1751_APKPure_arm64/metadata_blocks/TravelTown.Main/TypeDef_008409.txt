@@ -1,0 +1,21 @@
+// Namespace: Merger.Game.Model
+public interface IBoardQueueExclusionModel // TypeDefIndex: 8409
+{
+	// Properties
+	public abstract BindableProperty<HashSet<string>> ExcludedUUIDs { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract BindableProperty<HashSet<string>> get_ExcludedUUIDs();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract bool TryAdd(IEnumerable<string> uuids);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract bool TryRemove(IEnumerable<string> uuids);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void Clear();
+}
+

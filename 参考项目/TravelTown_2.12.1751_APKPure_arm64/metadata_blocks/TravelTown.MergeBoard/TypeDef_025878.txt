@@ -1,0 +1,21 @@
+// Namespace: Merger.MergeBoard.Logic.BoardOperations
+public interface IBoardOperationActionsBuilder // TypeDefIndex: 25878
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract IBoardOperationActionsBuilder SetAction(Entity entity, string destination);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract IBoardOperationActionsBuilder RemoveAction(Entity entity, string destination);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract IBoardOperationActionsBuilder UpdateAction(Entity entity, string destination);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract IBoardOperationActionsBuilder WithExtraData(ExtraData extraData);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract List<MergeBoardItemNotificationData> Build();
+}
+

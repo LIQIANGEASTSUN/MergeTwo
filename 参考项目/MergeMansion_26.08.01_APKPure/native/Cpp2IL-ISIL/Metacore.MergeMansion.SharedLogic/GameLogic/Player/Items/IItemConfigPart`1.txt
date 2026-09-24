@@ -1,0 +1,9 @@
+Type: GameLogic.Player.Items.IItemConfigPart`1
+
+Method: TOutput ToConfigData(GameLogic.Player.Items.Production.IProducerFactory producerFactory)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

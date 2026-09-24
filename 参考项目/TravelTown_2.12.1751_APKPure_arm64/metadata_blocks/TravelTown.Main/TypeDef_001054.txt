@@ -1,0 +1,54 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public class ComponentBase : IComponentBase // TypeDefIndex: 1054
+{
+	// Fields
+	[CompilerGenerated]
+	private Entity <Entity>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private IJsonService <JsonSerializer>k__BackingField; // 0x18
+
+	// Properties
+	public Entity Entity { get; set; }
+	protected IJsonService JsonSerializer { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x68FBFCC Offset: 0x68F7FCC VA: 0x68FBFCC Slot: 4
+	public Entity get_Entity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FBFD4 Offset: 0x68F7FD4 VA: 0x68FBFD4
+	protected void set_Entity(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FBFDC Offset: 0x68F7FDC VA: 0x68FBFDC
+	protected IJsonService get_JsonSerializer() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FBFE4 Offset: 0x68F7FE4 VA: 0x68FBFE4
+	public void set_JsonSerializer(IJsonService value) { }
+
+	// RVA: 0x68F7118 Offset: 0x68F3118 VA: 0x68F7118
+	public void .ctor(Entity entity) { }
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public TComponent GetComponent<TComponent>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3BED81C Offset: 0x3BE981C VA: 0x3BED81C
+	|-ComponentBase.GetComponent<object>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public ReadOnlyCollection<TComponent> GetComponents<TComponent>() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3BED85C Offset: 0x3BE985C VA: 0x3BED85C
+	|-ComponentBase.GetComponents<object>
+	|
+	|-RVA: 0x3BED89C Offset: 0x3BE989C VA: 0x3BED89C
+	|-ComponentBase.GetComponents<__Il2CppFullySharedGenericType>
+	*/
+}
+

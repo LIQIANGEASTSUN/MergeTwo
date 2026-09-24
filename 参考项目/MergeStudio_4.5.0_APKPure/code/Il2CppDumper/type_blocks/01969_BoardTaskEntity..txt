@@ -1,0 +1,19 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardTaskEntity.<>c__DisplayClass86_0 // TypeDefIndex: 1969
+{
+	// Fields
+	public BoardTaskItem completedTask; // 0x8
+
+	// Methods
+
+	// RVA: 0x1944C60 Offset: 0x1944C60 VA: 0x1944C60
+	public void .ctor() { }
+
+	// RVA: 0x19480A0 Offset: 0x19480A0 VA: 0x19480A0
+	internal bool <FillFromUpcomingTasks>b__0(BoardTaskItem t) { }
+
+	// RVA: 0x19480E4 Offset: 0x19480E4 VA: 0x19480E4
+	internal bool <FillFromUpcomingTasks>b__2(BoardTaskItem t) { }
+}
+

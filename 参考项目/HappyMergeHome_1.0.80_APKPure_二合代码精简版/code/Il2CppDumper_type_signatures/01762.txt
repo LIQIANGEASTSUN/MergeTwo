@@ -1,0 +1,53 @@
+// Namespace: 
+[Serializable]
+public class NewbieRoomConfig : TableBase // TypeDefIndex: 1762
+{
+	// Fields
+	[CompilerGenerated]
+	private int <Id>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private List<int> <NodeChapter>k__BackingField; // 0xC
+	[CompilerGenerated]
+	private int <Duration>k__BackingField; // 0x10
+
+	// Properties
+	public int Id { get; set; }
+	public List<int> NodeChapter { get; set; }
+	public int Duration { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x2963030 Offset: 0x2963030 VA: 0x2963030
+	public int get_Id() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2963038 Offset: 0x2963038 VA: 0x2963038
+	public void set_Id(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2963040 Offset: 0x2963040 VA: 0x2963040
+	public List<int> get_NodeChapter() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2963048 Offset: 0x2963048 VA: 0x2963048
+	public void set_NodeChapter(List<int> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x2963050 Offset: 0x2963050 VA: 0x2963050
+	public int get_Duration() { }
+
+	[CompilerGenerated]
+	// RVA: 0x2963058 Offset: 0x2963058 VA: 0x2963058
+	public void set_Duration(int value) { }
+
+	// RVA: 0x2963060 Offset: 0x2963060 VA: 0x2963060 Slot: 4
+	public override int GetID() { }
+
+	// RVA: 0x29630B4 Offset: 0x29630B4 VA: 0x29630B4
+	public void .ctor() { }
+
+	// RVA: 0x29630BC Offset: 0x29630BC VA: 0x29630BC
+	public int <>iFixBaseProxy_GetID() { }
+}
+

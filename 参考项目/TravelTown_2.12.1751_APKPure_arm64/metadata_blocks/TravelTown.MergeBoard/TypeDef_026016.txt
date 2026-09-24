@@ -1,0 +1,4 @@
+// Namespace: Merger.MergeBoard.Components
+public struct ResourceConsumedComponent : IComponent // TypeDefIndex: 26016
+{}
+

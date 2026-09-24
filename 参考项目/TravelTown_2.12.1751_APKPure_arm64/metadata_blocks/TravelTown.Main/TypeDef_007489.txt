@@ -1,0 +1,20 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BubbledItemSystem.<>c__DisplayClass96_0 // TypeDefIndex: 7489
+{
+	// Fields
+	public string uuid; // 0x10
+	public BubbledItemSystem <>4__this; // 0x18
+
+	// Methods
+
+	// RVA: 0x65897D4 Offset: 0x65857D4 VA: 0x65897D4
+	public void .ctor() { }
+
+	// RVA: 0x65897DC Offset: 0x65857DC VA: 0x65897DC
+	internal void <SetBurstBubbleData>g__TryBurstBubble|0(List<BubbleData> bubblesList) { }
+
+	// RVA: 0x658A554 Offset: 0x6586554 VA: 0x658A554
+	internal bool <SetBurstBubbleData>b__1(BubbleData i) { }
+}
+

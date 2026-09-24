@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardItemConsumerSystem.<>c__DisplayClass7_0 // TypeDefIndex: 900
+{
+	// Fields
+	public IMergeItem preferredMergeItem; // 0x10
+
+	// Methods
+
+	// RVA: 0x666082C Offset: 0x665C82C VA: 0x666082C
+	public void .ctor() { }
+
+	// RVA: 0x6661960 Offset: 0x665D960 VA: 0x6661960
+	internal bool <GetTaskConsumeItems>b__0(ItemMultiple itemMultiple) { }
+}
+

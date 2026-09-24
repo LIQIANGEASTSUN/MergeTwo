@@ -1,0 +1,29 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardView.<>c // TypeDefIndex: 8577
+{
+	// Fields
+	public static readonly BoardView.<>c <>9; // 0x0
+	public static Func<BehaviourPrefabData, string> <>9__107_0; // 0x8
+	public static Func<BehaviourPrefabData, BehaviourPrefabData> <>9__107_1; // 0x10
+	public static Action<IBoardItemView> <>9__161_0; // 0x18
+
+	// Methods
+
+	// RVA: 0x6699A80 Offset: 0x6695A80 VA: 0x6699A80
+	private static void .cctor() { }
+
+	// RVA: 0x6699AE8 Offset: 0x6695AE8 VA: 0x6699AE8
+	public void .ctor() { }
+
+	// RVA: 0x6699AF0 Offset: 0x6695AF0 VA: 0x6699AF0
+	internal string <GetCombinedBehaviourConfig>b__107_0(BehaviourPrefabData data) { }
+
+	// RVA: 0x6699B08 Offset: 0x6695B08 VA: 0x6699B08
+	internal BehaviourPrefabData <GetCombinedBehaviourConfig>b__107_1(BehaviourPrefabData data) { }
+
+	// RVA: 0x6699B10 Offset: 0x6695B10 VA: 0x6699B10
+	internal void <Framework.UIFSM.Fsm.IExitStateHandler.HandleExitState>b__161_0(IBoardItemView item) { }
+}
+

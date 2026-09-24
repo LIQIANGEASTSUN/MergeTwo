@@ -1,0 +1,29 @@
+// Namespace: Merger.MergeBoard.Systems
+public class ExpendableSystem : ISystem // TypeDefIndex: 25730
+{
+	// Fields
+	private const string TapReason = "tap";
+	[Inject]
+	private IEntityFactory _entityFactory; // 0x10
+	[Inject]
+	private IMergeBoardLayout _layout; // 0x18
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x20
+	[Inject]
+	private IExpendSpawnService _expendSpawnService; // 0x28
+
+	// Methods
+
+	// RVA: 0x6A659E4 Offset: 0x6A619E4 VA: 0x6A659E4 Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A65D1C Offset: 0x6A61D1C VA: 0x6A65D1C
+	private void ProcessExpendableItem(TickContext context, Entity entity, ExpendableComponent expendableComponent, BoardTilePositionComponent positionComponent, IdComponent idComponent, InteractionComponent interactionComponent, Nullable<PendingInteractionComponent> pendingInteraction) { }
+
+	// RVA: 0x6A662E8 Offset: 0x6A622E8 VA: 0x6A662E8
+	private bool HasSpawnedAnItemThisTick(TickContext context, Entity expendableEntity) { }
+
+	// RVA: 0x6A664D4 Offset: 0x6A624D4 VA: 0x6A664D4
+	public void .ctor() { }
+}
+

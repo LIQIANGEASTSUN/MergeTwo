@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+private struct BoardController.<ResultCallback>d__131 : IAsyncStateMachine // TypeDefIndex: 1899
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncUniTaskMethodBuilder<bool> <>t__builder; // 0x4
+	public BoardData boardData; // 0x10
+	public BoardController <>4__this; // 0x14
+	private UniTask.Awaiter<bool> <>u__1; // 0x18
+
+	// Methods
+
+	// RVA: 0x19244CC Offset: 0x19244CC VA: 0x19244CC Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x1924C20 Offset: 0x1924C20 VA: 0x1924C20 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

@@ -1,0 +1,20 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardController.<>c__DisplayClass168_0 // TypeDefIndex: 1871
+{
+	// Fields
+	public ItemController boardItem; // 0x8
+	public int capacity; // 0xC
+	public ItemCreationHandler itemCreationHandler; // 0x10
+	public BoardController <>4__this; // 0x14
+	public bool isNewItem; // 0x18
+
+	// Methods
+
+	// RVA: 0x19186B8 Offset: 0x19186B8 VA: 0x19186B8
+	public void .ctor() { }
+
+	// RVA: 0x19186C0 Offset: 0x19186C0 VA: 0x19186C0
+	internal void <SpawnItem>b__0() { }
+}
+

@@ -1,0 +1,68 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class ItemSplitResult // TypeDefIndex: 25967
+{
+	// Fields
+	[CompilerGenerated]
+	private Entity <SplitterItem>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private Entity <TargetItem>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private Entity <NewItem1>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private Entity <NewItem2>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private int <SplitPosition>k__BackingField; // 0x30
+
+	// Properties
+	public Entity SplitterItem { get; set; }
+	public Entity TargetItem { get; set; }
+	public Entity NewItem1 { get; set; }
+	public Entity NewItem2 { get; set; }
+	public int SplitPosition { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AB58 Offset: 0x6A96B58 VA: 0x6A9AB58
+	public Entity get_SplitterItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AB60 Offset: 0x6A96B60 VA: 0x6A9AB60
+	public void set_SplitterItem(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AB68 Offset: 0x6A96B68 VA: 0x6A9AB68
+	public Entity get_TargetItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AB70 Offset: 0x6A96B70 VA: 0x6A9AB70
+	public void set_TargetItem(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AB78 Offset: 0x6A96B78 VA: 0x6A9AB78
+	public Entity get_NewItem1() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AB80 Offset: 0x6A96B80 VA: 0x6A9AB80
+	public void set_NewItem1(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AB88 Offset: 0x6A96B88 VA: 0x6A9AB88
+	public Entity get_NewItem2() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AB90 Offset: 0x6A96B90 VA: 0x6A9AB90
+	public void set_NewItem2(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AB98 Offset: 0x6A96B98 VA: 0x6A9AB98
+	public int get_SplitPosition() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9ABA0 Offset: 0x6A96BA0 VA: 0x6A9ABA0
+	public void set_SplitPosition(int value) { }
+
+	// RVA: 0x6A9ABA8 Offset: 0x6A96BA8 VA: 0x6A9ABA8
+	public void .ctor() { }
+}
+

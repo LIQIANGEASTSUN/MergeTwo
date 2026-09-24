@@ -1,0 +1,79 @@
+Type: GameLogic.Player.Items.Spawning.ISpawnFeatures
+
+Method: GameLogic.Player.Items.Production.IItemSpawner get_Spawn()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Board.Placement.IPlacement get_Placement()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Spawning.ISpawnCycle get_SpawnCycle()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_StorageMax()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Production.IItemProducer get_DecayProducer()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Merge.ItemVisibility get_SpawnVisibility()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_Spawnable()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Boolean get_DecaysWhenCyclesAreDone()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.Math.F64 TimeSkipPriceGems(GameLogic.Random.IGenerationContext context)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Player.Items.IItemDefinition> GetSpawnItems(GameLogic.Random.IGenerationContext generationContext, GameLogic.Player.Items.IMergeItem relatedMergeItem, GameLogic.Player.Board.IBoard mergeBoard, GameLogic.Player.IPlayer player)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.IItemDefinition GetSpawnItem(GameLogic.Random.IGenerationContext generationContext, GameLogic.Player.Items.Production.ProducerContext producerContext, System.Collections.Generic.IEnumerable`1<GameLogic.Player.Items.IItemDefinition> allowedItems = null)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

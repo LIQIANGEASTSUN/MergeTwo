@@ -1,0 +1,4 @@
+// Namespace: 
+public struct BaseMiniBoardProgressEvent.AnimatedProgressItemAnimationCompleted : IEvent // TypeDefIndex: 1075
+{}
+

@@ -1,0 +1,15 @@
+// Namespace: MergeEngine.ECS.Components
+public class HintComponent : ComponentBase // TypeDefIndex: 1012
+{
+	// Fields
+	public double Timer; // 0x20
+	public bool Hinting; // 0x28
+	public bool Disabled; // 0x29
+	public bool Cooldown; // 0x2A
+
+	// Methods
+
+	// RVA: 0x68F7458 Offset: 0x68F3458 VA: 0x68F7458
+	public void .ctor(Entity entity) { }
+}
+

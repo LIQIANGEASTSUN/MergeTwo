@@ -1,0 +1,39 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeMainController.<WaitHideBagEffect>d__108 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 2789
+{
+	// Fields
+	private int <>1__state; // 0x8
+	private object <>2__current; // 0xC
+	public MergeMainController <>4__this; // 0x10
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHidden]
+	// RVA: 0x2C49CF0 Offset: 0x2C49CF0 VA: 0x2C49CF0
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHidden]
+	// RVA: 0x2C49D0C Offset: 0x2C49D0C VA: 0x2C49D0C Slot: 5
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x2C49D10 Offset: 0x2C49D10 VA: 0x2C49D10 Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x2C49E08 Offset: 0x2C49E08 VA: 0x2C49E08 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHidden]
+	// RVA: 0x2C49E10 Offset: 0x2C49E10 VA: 0x2C49E10 Slot: 8
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHidden]
+	// RVA: 0x2C49E54 Offset: 0x2C49E54 VA: 0x2C49E54 Slot: 7
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+

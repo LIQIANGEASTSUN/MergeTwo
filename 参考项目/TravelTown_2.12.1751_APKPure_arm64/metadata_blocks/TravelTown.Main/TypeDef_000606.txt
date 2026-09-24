@@ -1,0 +1,20 @@
+// Namespace: MergeEngine.ECS.Util
+public static class ComponentSerializationUtil // TypeDefIndex: 606
+{
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public static T TryDeserialize<T>(Dictionary<string, string> entity, string key, T defaultValue, Func<string, T> convertFunction) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3BEE478 Offset: 0x3BEA478 VA: 0x3BEE478
+	|-ComponentSerializationUtil.TryDeserialize<bool>
+	|
+	|-RVA: 0x3BEE574 Offset: 0x3BEA574 VA: 0x3BEE574
+	|-ComponentSerializationUtil.TryDeserialize<object>
+	|
+	|-RVA: 0x3BEE664 Offset: 0x3BEA664 VA: 0x3BEE664
+	|-ComponentSerializationUtil.TryDeserialize<__Il2CppFullySharedGenericType>
+	*/
+}
+

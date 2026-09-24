@@ -1,0 +1,79 @@
+// Namespace: Merger.MergeBoard.Data.TickResultArgs
+public class UndoSellFailedResult // TypeDefIndex: 25974
+{
+	// Fields
+	[CompilerGenerated]
+	private Entity <Entity>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private string <Reason>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private IMergeItem <MergeItem>k__BackingField; // 0x20
+	[CompilerGenerated]
+	private string <ItemId>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private PlayerResourceEnum <Resource>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private int <Amount>k__BackingField; // 0x34
+
+	// Properties
+	public Entity Entity { get; set; }
+	public string Reason { get; set; }
+	public IMergeItem MergeItem { get; set; }
+	public string ItemId { get; set; }
+	public PlayerResourceEnum Resource { get; set; }
+	public int Amount { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AD08 Offset: 0x6A96D08 VA: 0x6A9AD08
+	public Entity get_Entity() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AD10 Offset: 0x6A96D10 VA: 0x6A9AD10
+	public void set_Entity(Entity value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AD18 Offset: 0x6A96D18 VA: 0x6A9AD18
+	public string get_Reason() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AD20 Offset: 0x6A96D20 VA: 0x6A9AD20
+	public void set_Reason(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AD28 Offset: 0x6A96D28 VA: 0x6A9AD28
+	public IMergeItem get_MergeItem() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AD30 Offset: 0x6A96D30 VA: 0x6A9AD30
+	public void set_MergeItem(IMergeItem value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AD38 Offset: 0x6A96D38 VA: 0x6A9AD38
+	public string get_ItemId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AD40 Offset: 0x6A96D40 VA: 0x6A9AD40
+	public void set_ItemId(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AD48 Offset: 0x6A96D48 VA: 0x6A9AD48
+	public PlayerResourceEnum get_Resource() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AD50 Offset: 0x6A96D50 VA: 0x6A9AD50
+	public void set_Resource(PlayerResourceEnum value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AD58 Offset: 0x6A96D58 VA: 0x6A9AD58
+	public int get_Amount() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9AD60 Offset: 0x6A96D60 VA: 0x6A9AD60
+	public void set_Amount(int value) { }
+
+	// RVA: 0x6A9AD68 Offset: 0x6A96D68 VA: 0x6A9AD68
+	public void .ctor(Entity entity, string reason, IMergeItem mergeItem, string itemId, PlayerResourceEnum resource, int amount) { }
+}
+

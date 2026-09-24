@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class InventoryEntity.<>c__DisplayClass20_0 // TypeDefIndex: 1950
+{
+	// Fields
+	public int setID; // 0x8
+	public int level; // 0xC
+
+	// Methods
+
+	// RVA: 0x1936950 Offset: 0x1936950 VA: 0x1936950
+	public void .ctor() { }
+
+	// RVA: 0x1937270 Offset: 0x1937270 VA: 0x1937270
+	internal bool <RemoveFromInventory>b__0(ItemEntity entity) { }
+}
+

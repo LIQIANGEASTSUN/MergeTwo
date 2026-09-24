@@ -1,0 +1,37 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class SpawningItemsSystem.<>c__DisplayClass29_0<T> // TypeDefIndex: 991
+{
+	// Fields
+	public BoardItemPosition position; // 0x0
+	public SpawningItemsSystem<T> <>4__this; // 0x0
+	public VisualComponent visualComponent; // 0x0
+	public FloatingTextType floatingTextType; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F4E744 Offset: 0x3F4A744 VA: 0x3F4E744
+	|-SpawningItemsSystem.<>c__DisplayClass29_0<object>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal void <OnItemBoosted>g__OnSlideItemCompleted|0(SlideItemInCompletedSignal signal) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F4E74C Offset: 0x3F4A74C VA: 0x3F4E74C
+	|-SpawningItemsSystem.<>c__DisplayClass29_0<object>.<OnItemBoosted>g__OnSlideItemCompleted|0
+	*/
+
+	// RVA: -1 Offset: -1
+	internal void <OnItemBoosted>b__1() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F4E820 Offset: 0x3F4A820 VA: 0x3F4E820
+	|-SpawningItemsSystem.<>c__DisplayClass29_0<object>.<OnItemBoosted>b__1
+	*/
+}
+

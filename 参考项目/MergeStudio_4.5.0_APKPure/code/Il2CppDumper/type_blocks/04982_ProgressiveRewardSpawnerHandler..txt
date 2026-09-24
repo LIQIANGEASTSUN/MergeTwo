@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ProgressiveRewardSpawnerHandler.<>c__DisplayClass5_0 // TypeDefIndex: 4982
+{
+	// Fields
+	public BoardItemData boardItemData; // 0x8
+
+	// Methods
+
+	// RVA: 0x1E069C8 Offset: 0x1E069C8 VA: 0x1E069C8
+	public void .ctor() { }
+
+	// RVA: 0x1E06CCC Offset: 0x1E06CCC VA: 0x1E06CCC
+	internal bool <UpdatePerishableConfig>b__0(BalancePerishableConfigModelItem ps) { }
+}
+

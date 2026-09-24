@@ -1,0 +1,10 @@
+// Namespace: Paxie.MergeStudio.Features.MiniBoard
+public enum MiniBoardType // TypeDefIndex: 1029
+{
+	// Fields
+	public int value__; // 0x0
+	public const MiniBoardType BoardProgression = 1;
+	public const MiniBoardType BoardProgressionWithPoints = 2;
+	public const MiniBoardType ScrollableWithPoints = 3;
+}
+

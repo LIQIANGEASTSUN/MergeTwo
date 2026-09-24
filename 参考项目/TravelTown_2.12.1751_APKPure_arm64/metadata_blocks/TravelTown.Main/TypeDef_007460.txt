@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ActiveOrdersBubbleDropProbabilityModifier.<>c__DisplayClass16_0 // TypeDefIndex: 7460
+{
+	// Fields
+	public IMergeItem mergeItem; // 0x10
+
+	// Methods
+
+	// RVA: 0x657C774 Offset: 0x6578774 VA: 0x657C774
+	public void .ctor() { }
+
+	// RVA: 0x657D1C0 Offset: 0x65791C0 VA: 0x657D1C0
+	internal bool <TryModifyProbability>b__0(ChainData chainData) { }
+}
+

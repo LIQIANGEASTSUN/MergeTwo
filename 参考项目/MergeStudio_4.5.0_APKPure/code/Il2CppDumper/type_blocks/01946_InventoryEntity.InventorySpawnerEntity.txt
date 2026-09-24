@@ -1,0 +1,15 @@
+// Namespace: 
+[Serializable]
+public class InventoryEntity.InventorySpawnerEntity // TypeDefIndex: 1946
+{
+	// Fields
+	public int Index; // 0x8
+	public int LinkID; // 0xC
+	public ItemEntity ItemEntity; // 0x10
+
+	// Methods
+
+	// RVA: 0x1936190 Offset: 0x1936190 VA: 0x1936190
+	public void .ctor() { }
+}
+

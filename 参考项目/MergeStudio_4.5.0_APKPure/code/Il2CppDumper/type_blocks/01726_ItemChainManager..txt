@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemChainManager.<>c__DisplayClass37_0 // TypeDefIndex: 1726
+{
+	// Fields
+	public int archiveLevel; // 0x8
+
+	// Methods
+
+	// RVA: 0x190707C Offset: 0x190707C VA: 0x190707C
+	public void .ctor() { }
+
+	// RVA: 0x190F5C4 Offset: 0x190F5C4 VA: 0x190F5C4
+	internal bool <GetItemLinksAtArchiveLevel>b__0(ItemLinkModel l) { }
+}
+

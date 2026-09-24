@@ -1,0 +1,28 @@
+// Namespace: 
+[CompilerGenerated]
+private struct BoardTaskController.<ProcessTaskDoneBoardItemDisappearFinish>d__69 : IAsyncStateMachine // TypeDefIndex: 2060
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncUniTaskVoidMethodBuilder <>t__builder; // 0x4
+	public BoardTaskItem completedTaskItem; // 0x8
+	public BoardTaskController <>4__this; // 0xC
+	private YieldAwaitable.Awaiter <>u__1; // 0x10
+	private int <completedTaskNo>5__2; // 0x14
+	private BoardTaskItemController <removedItem>5__3; // 0x18
+	private bool <canInterstitialBeShown>5__4; // 0x1C
+	private bool <rateUsPopupWontBeShown>5__5; // 0x1D
+	private TimeSpan <delayForDoneButtonInteraction>5__6; // 0x20
+	private UniTask.Awaiter<bool> <>u__2; // 0x28
+	private UniTask.Awaiter <>u__3; // 0x30
+
+	// Methods
+
+	// RVA: 0x19623F0 Offset: 0x19623F0 VA: 0x19623F0 Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x1965AC0 Offset: 0x1965AC0 VA: 0x1965AC0 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

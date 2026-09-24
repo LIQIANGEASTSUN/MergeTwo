@@ -1,0 +1,18 @@
+// Namespace: MergeEngine.ECS.Systems.Items
+public class ToolsRequiredByBuildingsHelper // TypeDefIndex: 976
+{
+	// Methods
+
+	// RVA: 0x6797E70 Offset: 0x6793E70 VA: 0x6797E70
+	public HashSet<PlayerResourceEnum> FindToolsNeededByUpgrade(List<BuildingInstanceProgression> unlockedBuildings, Dictionary<PlayerResourceEnum, int> currentToolAmounts) { }
+
+	// RVA: 0x6798100 Offset: 0x6794100 VA: 0x6798100
+	private ToolsRequiredByBuildingsHelper.BuildingUpgradeToBoostData GetCandidateUpgrade(BuildingInstanceProgression building, Dictionary<PlayerResourceEnum, int> currentToolAmounts) { }
+
+	// RVA: 0x67986F0 Offset: 0x67946F0 VA: 0x67986F0
+	private List<ResourceMultiple> GetRequiredToolsForStage(IBuildingStage stage) { }
+
+	// RVA: 0x6798A68 Offset: 0x6794A68 VA: 0x6798A68
+	public void .ctor() { }
+}
+

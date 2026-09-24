@@ -1,0 +1,13 @@
+// Namespace: 
+private class ItemsDiscoveryModel.ItemDiscoveryRecord // TypeDefIndex: 25809
+{
+	// Fields
+	public CollectionBookStickerState State; // 0x10
+	public string GraphName; // 0x18
+
+	// Methods
+
+	// RVA: 0x6A7CD70 Offset: 0x6A78D70 VA: 0x6A7CD70
+	public void .ctor() { }
+}
+

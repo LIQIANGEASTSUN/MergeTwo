@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemChainManager.<>c__DisplayClass38_0 // TypeDefIndex: 1727
+{
+	// Fields
+	public int itemSetId; // 0x8
+
+	// Methods
+
+	// RVA: 0x19071B4 Offset: 0x19071B4 VA: 0x19071B4
+	public void .ctor() { }
+
+	// RVA: 0x190F5F4 Offset: 0x190F5F4 VA: 0x190F5F4
+	internal bool <GetItemLinkWithItemSet>b__0(ItemLinkModel l) { }
+}
+

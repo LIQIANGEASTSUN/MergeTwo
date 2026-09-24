@@ -1,0 +1,166 @@
+// Namespace: MergeEngine.ECS.Systems.Board
+public class BoardIdleHintSystem : TickableSystem<HintComponent> // TypeDefIndex: 894
+{
+	// Fields
+	[InjectSystem]
+	private BoardSystem _boardSystem; // 0x40
+	[InjectSystem]
+	private BoardInteractionSystem _boardInteractionSystem; // 0x48
+	[InjectSystem]
+	private BoardQueueSystem _boardQueueSystem; // 0x50
+	[InjectSystem]
+	private TimeSystem _timeSystem; // 0x58
+	[InjectSystem]
+	private MergeSystem _mergeSystem; // 0x60
+	[InjectSystem]
+	private ProduceSystem _produceSystem; // 0x68
+	[InjectSystem]
+	private InventorySystem _inventorySystem; // 0x70
+	[InjectSystem]
+	private StackingSystem _stackingSystem; // 0x78
+	[InjectComponent]
+	private BoardItemCountComponent _boardItemCountComponent; // 0x80
+	[InjectComponent]
+	private HintComponent _hintComponent; // 0x88
+	[InjectComponent]
+	private TasksComponent _tasksComponent; // 0x90
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x98
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0xA0
+	[Inject]
+	private IMergeGraphChainModel _mergeGraphChainModel; // 0xA8
+	private IdComponent _lastTrackedFirstItem; // 0xB0
+	private IdComponent _lastTrackedSecondItem; // 0xB8
+	private bool _isBlockedByTutorial; // 0xC0
+
+	// Properties
+	public override SystemPriorities Priority { get; }
+	private IBoardView _boardView { get; }
+	private IBoardUIView _boardUIView { get; }
+	private ReadOnlyCollection<PositionComponent> allBoardItems { get; }
+	private bool IsStackingEnabled { get; }
+
+	// Methods
+
+	// RVA: 0x6657754 Offset: 0x6653754 VA: 0x6657754 Slot: 15
+	public override SystemPriorities get_Priority() { }
+
+	// RVA: 0x665775C Offset: 0x665375C VA: 0x665775C
+	private IBoardView get__boardView() { }
+
+	// RVA: 0x6657780 Offset: 0x6653780 VA: 0x6657780
+	private IBoardUIView get__boardUIView() { }
+
+	// RVA: 0x665779C Offset: 0x665379C VA: 0x665779C
+	private ReadOnlyCollection<PositionComponent> get_allBoardItems() { }
+
+	// RVA: 0x66577E4 Offset: 0x66537E4 VA: 0x66577E4
+	private bool get_IsStackingEnabled() { }
+
+	// RVA: 0x6657800 Offset: 0x6653800 VA: 0x6657800 Slot: 6
+	protected override void InitializeSystem() { }
+
+	// RVA: 0x6658234 Offset: 0x6654234 VA: 0x6658234 Slot: 7
+	protected override void DisposeSystem() { }
+
+	// RVA: 0x6658C68 Offset: 0x6654C68 VA: 0x6658C68
+	private void GameStateChanged(GameState gameState) { }
+
+	// RVA: 0x6659138 Offset: 0x6655138 VA: 0x6659138
+	private void TaskBeingCompletedFired() { }
+
+	// RVA: 0x6659154 Offset: 0x6655154 VA: 0x6659154
+	private void ItemTapped(BoardItemPosition pos) { }
+
+	// RVA: 0x6659170 Offset: 0x6655170 VA: 0x6659170
+	private void ItemDragStarted(BoardItemPosition pos) { }
+
+	// RVA: 0x6659198 Offset: 0x6655198 VA: 0x6659198
+	private void ItemDragEnded(BoardItemPosition pos1, BoardItemPosition pos2) { }
+
+	// RVA: 0x66591BC Offset: 0x66551BC VA: 0x66591BC
+	private void ItemMerged(IMergeItem item, BoardItemPosition pos, IMergeItem firstItem, IMergeItem secondItem) { }
+
+	// RVA: 0x66591C0 Offset: 0x66551C0 VA: 0x66591C0
+	private void ItemProduced(IMergeItem item) { }
+
+	// RVA: 0x66591C4 Offset: 0x66551C4 VA: 0x66591C4
+	private void TaskCompleted() { }
+
+	// RVA: 0x66591E4 Offset: 0x66551E4 VA: 0x66591E4
+	private void TaskRewardCollected() { }
+
+	// RVA: 0x6659208 Offset: 0x6655208 VA: 0x6659208
+	private void ItemAddedToBoardFromQueue() { }
+
+	// RVA: 0x6659374 Offset: 0x6655374 VA: 0x6659374 Slot: 12
+	protected override void EntityRemoved(Entity entity) { }
+
+	// RVA: 0x6658CA8 Offset: 0x6654CA8 VA: 0x6658CA8
+	private void FinishHinting() { }
+
+	// RVA: 0x665920C Offset: 0x665520C VA: 0x665920C
+	private void CheckStillNeedHinting() { }
+
+	// RVA: 0x6659378 Offset: 0x6655378 VA: 0x6659378 Slot: 16
+	protected override void ProcessComponents(ReadOnlyCollection<HintComponent> components) { }
+
+	// RVA: 0x6659414 Offset: 0x6655414 VA: 0x6659414
+	private void ShowBoardItemHint() { }
+
+	// RVA: 0x6659DDC Offset: 0x6655DDC VA: 0x6659DDC
+	private void SetInventoryButtonHinting(IdComponent hintingItem) { }
+
+	// RVA: 0x6659F24 Offset: 0x6655F24 VA: 0x6659F24
+	public void SetDisabledByTutorial(bool isDisable) { }
+
+	// RVA: 0x66596DC Offset: 0x66556DC VA: 0x66596DC
+	public Tuple<IdComponent, IdComponent> GetFirstMergeableItemTuple() { }
+
+	// RVA: 0x6659F54 Offset: 0x6655F54 VA: 0x6659F54
+	private List<string> GetExcludedItemIds() { }
+
+	// RVA: 0x6659888 Offset: 0x6655888 VA: 0x6659888
+	private IdComponent GetOrderObjectiveItem() { }
+
+	// RVA: 0x6659818 Offset: 0x6655818 VA: 0x6659818
+	private void SetItemsAsHinting(IdComponent itemFrom, IdComponent itemTo) { }
+
+	// RVA: 0x665A29C Offset: 0x665629C VA: 0x665A29C
+	private void TrySendHintingEvent(IdComponent itemFrom, IdComponent itemTo) { }
+
+	// RVA: 0x66593D0 Offset: 0x66553D0 VA: 0x66593D0
+	private void ProcessTime(double seconds) { }
+
+	// RVA: 0x665A3F8 Offset: 0x66563F8 VA: 0x665A3F8
+	private void TryShowProducerHint(ProducerHintSignal signal) { }
+
+	// RVA: 0x665A740 Offset: 0x6656740 VA: 0x665A740
+	private PositionComponent GetOriginProducerOnBoard(IMergeItem fromMergeItem) { }
+
+	// RVA: 0x665AC88 Offset: 0x6656C88 VA: 0x665AC88
+	private PositionComponent GetItemOnBoard(string uniqueId) { }
+
+	// RVA: 0x665AE08 Offset: 0x6656E08 VA: 0x665AE08
+	private void AnimationCompleted(PositionComponent producer) { }
+
+	// RVA: 0x665AAC8 Offset: 0x6656AC8 VA: 0x665AAC8
+	private void PlayItemHintAnimation(ProducerHintSignal signal) { }
+
+	// RVA: 0x665AF50 Offset: 0x6656F50 VA: 0x665AF50
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x665AF98 Offset: 0x6656F98 VA: 0x665AF98
+	private bool <ShowBoardItemHint>b__43_0(PositionComponent component) { }
+
+	[CompilerGenerated]
+	// RVA: 0x665B0C8 Offset: 0x66570C8 VA: 0x665B0C8
+	private bool <GetExcludedItemIds>b__47_0(IMergeItem item) { }
+
+	[CompilerGenerated]
+	// RVA: 0x665A0F4 Offset: 0x66560F4 VA: 0x665A0F4
+	private void <SetItemsAsHinting>g__SetItemAsHinting|49_0(IdComponent from, IdComponent to, bool verifySortOrder = False) { }
+}
+

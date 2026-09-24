@@ -1,0 +1,142 @@
+Type: Code.GameLogic.GameEvents.MysteryMachineCurrencyItemChainSource
+
+Method: System.Int32 get_ExperimentPriority()
+
+Disassembly:
+	0x03320A24 B 0x33208A4
+	0x03320A28 LDR X1, [X21]
+
+ISIL:
+	001 Move W0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_ExperimentPriority(System.Int32 value)
+
+Disassembly:
+	0x03320A2C ADD X0, X31, 0x20
+	0x03320A30 BL 0x29592CC
+
+ISIL:
+	001 Move [X0+16], W1
+	002 Return 
+
+Method: Code.GameLogic.GameEvents.MysteryMachineCurrencyItemChainId get_ConfigKey()
+
+Disassembly:
+	0x03320A34 LDP X20, X19, [X31 + 0x90]
+	0x03320A38 LDP X22, X21, [X31 + 0x80]
+
+ISIL:
+	001 Move X0, [X0+24]
+	002 Return X0
+
+Method: System.Void set_ConfigKey(Code.GameLogic.GameEvents.MysteryMachineCurrencyItemChainId value)
+
+Disassembly:
+	0x03320A3C LDP X24, X23, [X31 + 0x70]
+	0x03320A40 LDP X26, X25, [X31 + 0x60]
+
+ISIL:
+	001 Move [X0+24], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Collections.Generic.List`1<Metaplay.Core.MetaRef`1<Code.GameLogic.GameEvents.MysteryMachineCurrencyItemInfo>> get_Items()
+
+Disassembly:
+	0x03320A44 LDP X28, X27, [X31 + 0x50]
+	0x03320A48 LDP X29, X30, [X31 + 0x40]
+
+ISIL:
+	001 Move X0, [X0+32]
+	002 Return X0
+
+Method: System.Void set_Items(System.Collections.Generic.List`1<Metaplay.Core.MetaRef`1<Code.GameLogic.GameEvents.MysteryMachineCurrencyItemInfo>> value)
+
+Disassembly:
+	0x03320A4C ADD X31, X31, 0xA0
+	0x03320A50 RET
+
+ISIL:
+	001 Move [X0+32], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: Code.GameLogic.GameEvents.MysteryMachineCurrencyItemChainInfo ToConfigData(Metaplay.Core.Config.GameConfigBuildLog buildLog)
+
+Disassembly:
+	0x03320A54 LDR X19, [X27 + 0x10]
+	0x03320A58 LDR X20, [X0 + 0x10]
+	0x03320A5C ADRP X0, 0x23F8000
+	0x03320A60 LDR X0, [X0 + 0x838]
+	0x03320A64 BL 0x239B8F8
+	0x03320A68 MOV X1, X19
+	0x03320A6C MOV X2, X20
+	0x03320A70 MOV X3, X31
+	0x03320A74 BL 0x43211AC
+	0x03320A78 MOV X19, X0
+	0x03320A7C ADRP X0, 0x23AD000
+	0x03320A80 LDR X0, [X0 + 0x388]
+	0x03320A84 BL 0x239B8F8
+	0x03320A88 BL 0x239BB80
+	0x03320A8C MOV X1, X19
+	0x03320A90 MOV X2, X31
+	0x03320A94 MOV X20, X0
+	0x03320A98 BL 0x44DDFB8
+	0x03320A9C ADRP X0, 0x23F8000
+	0x03320AA0 LDR X0, [X0 + 0x840]
+	0x03320AA4 BL 0x239B8F8
+	0x03320AA8 MOV X1, X0
+	0x03320AAC MOV X0, X20
+	0x03320AB0 BL 0x239BA54
+	0x03320AB4 BL 0x239BB90
+	0x03320AB8 BL 0x239BB90
+	0x03320ABC LDR X19, [X27 + 0x10]
+	0x03320AC0 LDR X20, [X0 + 0x10]
+
+ISIL:
+	001 Move [X31-48], X30
+	002 Move [X31+16], X22
+	003 Move [X31+24], X21
+	004 Move [X31+32], X20
+	005 Move [X31+40], X19
+	006 Move X19, X0
+	007 Move W8, [0x2A0C53F]
+	008 Move X22, [0x23FC700]
+	009 Move TEMP, X8
+	010 And TEMP, TEMP, 1
+	011 Compare TEMP, 1
+	012 JumpIfEqual {17}
+	013 Move X0, [0x23FC700]
+	014 Call 0x239F8E4
+	015 Move W8, 1
+	016 Move [X20+1343], W8
+	017 Move X20, [X19+24]
+	018 Move X21, [X19+32]
+	019 Move X0, [X22]
+	020 Move W19, [X19+16]
+	021 Call 0x239FB80
+	022 Move X1, X20
+	023 Move X2, X21
+	024 Move W3, W19
+	025 Move X22, X0
+	026 Call MysteryMachineCurrencyItemChainInfo..ctor, X0, X1, X2, X3
+	027 Move X0, X22
+	028 Move X20, [X31+32]
+	029 Move X19, [X31+40]
+	030 Move X22, [X31+16]
+	031 Move X21, [X31+24]
+	032 Move X30, [X31+48]
+	033 Return X0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03320AC4 ADRP X0, 0x23F8000
+	0x03320AC8 LDR X0, [X0 + 0x848]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+

@@ -1,0 +1,56 @@
+// Namespace: Merger.Game.Views.Inventory
+public class InventoryProducerView : BaseInventoryTabContentView<InventoryProducerViewModel> // TypeDefIndex: 8933
+{
+	// Fields
+	[SerializeField]
+	private GameObject _inventoryProducerPrefab; // 0x48
+	[SerializeField]
+	private int _lockedSlotsCount; // 0x50
+	private List<InventoryProducerSlotView> _slots; // 0x58
+
+	// Properties
+	protected override int ItemsCount { get; }
+
+	// Methods
+
+	// RVA: 0x6709674 Offset: 0x6705674 VA: 0x6709674 Slot: 11
+	protected override int get_ItemsCount() { }
+
+	// RVA: 0x67096E8 Offset: 0x67056E8 VA: 0x67096E8 Slot: 8
+	protected override void Awake() { }
+
+	// RVA: 0x6709828 Offset: 0x6705828 VA: 0x6709828 Slot: 7
+	protected override void OnDestroy() { }
+
+	// RVA: 0x6709D88 Offset: 0x6705D88 VA: 0x6709D88
+	private void OnEnable() { }
+
+	// RVA: 0x6709D8C Offset: 0x6705D8C VA: 0x6709D8C
+	private void ShowInventory() { }
+
+	// RVA: 0x670A200 Offset: 0x6706200 VA: 0x670A200
+	private void DecorateSlotWithUnlockText(InventoryProducerSlotView producerSlotView, int i) { }
+
+	// RVA: 0x6709970 Offset: 0x6705970 VA: 0x6709970
+	private void ClearInventory() { }
+
+	// RVA: 0x670A3B0 Offset: 0x67063B0 VA: 0x670A3B0
+	private void InfoRequested(IMergeItem mergeItem) { }
+
+	// RVA: 0x670A48C Offset: 0x670648C VA: 0x670A48C
+	private void TryRemoveItem(int slotIndex) { }
+
+	// RVA: 0x670A4DC Offset: 0x67064DC VA: 0x670A4DC
+	private void ItemRetrievedFromInventory(ItemRemovedFromInventorySignal signal) { }
+
+	// RVA: 0x670A55C Offset: 0x670655C VA: 0x670A55C
+	private void FailedToRemoveItemFromInventorySignalFired(FailedToRemoveItemFromInventorySignal signal) { }
+
+	// RVA: 0x670A668 Offset: 0x6706668 VA: 0x670A668
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x670A70C Offset: 0x670670C VA: 0x670A70C
+	private void <ClearInventory>b__10_0(InventoryProducerSlotView slotView) { }
+}
+

@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ButterflyWorkShopModel.<>c__DisplayClass62_0 // TypeDefIndex: 195
+{
+	// Fields
+	public ButterflyWorkShopModel <>4__this; // 0x8
+	public TaskCompletionSource<bool> taskRewardCollect; // 0xC
+
+	// Methods
+
+	// RVA: 0x29F2B84 Offset: 0x29F2B84 VA: 0x29F2B84
+	public void .ctor() { }
+
+	// RVA: 0x29F2B8C Offset: 0x29F2B8C VA: 0x29F2B8C
+	internal void <OnUseItem>b__0() { }
+}
+

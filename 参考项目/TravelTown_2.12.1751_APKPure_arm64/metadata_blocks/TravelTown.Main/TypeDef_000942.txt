@@ -1,0 +1,33 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BaseToolAnalysisSystem.<>c__DisplayClass29_0<T> // TypeDefIndex: 942
+{
+	// Fields
+	public BaseToolAnalysisSystem<T> <>4__this; // 0x0
+	public int remainingCapacity; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F4E58C Offset: 0x3F4A58C VA: 0x3F4E58C
+	|-BaseToolAnalysisSystem.<>c__DisplayClass29_0<object>..ctor
+	|
+	|-RVA: 0x3F4E8CC Offset: 0x3F4A8CC VA: 0x3F4E8CC
+	|-BaseToolAnalysisSystem.<>c__DisplayClass29_0<__Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal bool <FilterToolLevelsByChainProgress>b__0(WeightedToolLevel weightedTool) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F4E594 Offset: 0x3F4A594 VA: 0x3F4E594
+	|-BaseToolAnalysisSystem.<>c__DisplayClass29_0<object>.<FilterToolLevelsByChainProgress>b__0
+	|
+	|-RVA: 0x3F4E8D4 Offset: 0x3F4A8D4 VA: 0x3F4E8D4
+	|-BaseToolAnalysisSystem.<>c__DisplayClass29_0<__Il2CppFullySharedGenericType>.<FilterToolLevelsByChainProgress>b__0
+	*/
+}
+

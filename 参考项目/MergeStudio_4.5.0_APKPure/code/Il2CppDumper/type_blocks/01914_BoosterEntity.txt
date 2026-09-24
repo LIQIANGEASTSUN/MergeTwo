@@ -1,0 +1,24 @@
+// Namespace: MergePuzzle
+[Serializable]
+public class BoosterEntity // TypeDefIndex: 1914
+{
+	// Fields
+	public int ID; // 0x8
+	public int BoosterCount; // 0xC
+	public bool IsUnlocked; // 0x10
+	public int RequiredLevel; // 0x14
+	public int TotalUseCount; // 0x18
+	public int TotalPurchaseCount; // 0x1C
+
+	// Methods
+
+	// RVA: 0x1928740 Offset: 0x1928740 VA: 0x1928740
+	public void .ctor() { }
+
+	// RVA: 0x1928748 Offset: 0x1928748 VA: 0x1928748
+	public void DecreaseBoosterCount(bool saveBoard = True) { }
+
+	// RVA: 0x192880C Offset: 0x192880C VA: 0x192880C
+	public void .ctor(int id, bool isUnlocked, int requiredLevel) { }
+}
+

@@ -1,0 +1,18 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeMainController.<>c__DisplayClass100_0 // TypeDefIndex: 2787
+{
+	// Fields
+	public int emptyIndex; // 0x8
+	public StorageMergeItem storageMergeItem; // 0xC
+	public TableMergeItem mergeItem; // 0x10
+
+	// Methods
+
+	// RVA: 0x2C49320 Offset: 0x2C49320 VA: 0x2C49320
+	public void .ctor() { }
+
+	// RVA: 0x2C49328 Offset: 0x2C49328 VA: 0x2C49328
+	internal void <OnClickRewardBtn>b__0() { }
+}
+

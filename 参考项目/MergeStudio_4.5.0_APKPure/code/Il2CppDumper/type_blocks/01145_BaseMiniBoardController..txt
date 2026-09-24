@@ -1,0 +1,18 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BaseMiniBoardController.<>c__DisplayClass168_0 // TypeDefIndex: 1145
+{
+	// Fields
+	public MiniBoardItemController item; // 0x8
+	public BaseMiniBoardController <>4__this; // 0xC
+	public MiniBoardPosition selectedBoardPosition; // 0x10
+
+	// Methods
+
+	// RVA: 0x17D5480 Offset: 0x17D5480 VA: 0x17D5480
+	public void .ctor() { }
+
+	// RVA: 0x17D5488 Offset: 0x17D5488 VA: 0x17D5488
+	internal void <SpawnItemAnimation>b__0() { }
+}
+

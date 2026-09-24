@@ -1,0 +1,9 @@
+// Namespace: Merger.Game.Views.Popups.Data
+public enum MergeCheckItemType // TypeDefIndex: 8863
+{
+	// Fields
+	public int value__; // 0x0
+	public const MergeCheckItemType Joker = 0;
+	public const MergeCheckItemType Splitter = 1;
+}
+

@@ -1,0 +1,4 @@
+// Namespace: Paxie
+public interface IEvent // TypeDefIndex: 209
+{}
+

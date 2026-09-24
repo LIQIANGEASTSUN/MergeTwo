@@ -1,0 +1,121 @@
+// Namespace: Paxie.MergeStudio.Features.RecurringEvents.MiniBoardProgression
+public class MiniBoardProgressionController : BaseMiniBoardController, IEventReceiver<BaseMiniBoardProgressEvent.ProgressItemFoundRaiseKey>, IEventReceiverBase, IEventReceiver<BaseMiniBoardProgressEvent.BoardNoticePopupClosed>, IEventReceiver<BaseMiniBoardProgressEvent.BoardCongratsPopupClosed> // TypeDefIndex: 979
+{
+	// Fields
+	[BoxGroup("Animation Objects")]
+	public SpriteRenderer ScreenFadeSpriteRenderer; // 0xD4
+	[BoxGroup("Animation Objects")]
+	public SpriteRenderer AnimationGateKeyRenderer; // 0xD8
+	[BoxGroup("Animation Objects")]
+	public SkeletonAnimation GateSpine; // 0xDC
+	[BoxGroup("Animation Objects")]
+	public SkeletonAnimation UnderGateSpine; // 0xE0
+	[BoxGroup("Animation Transform")]
+	public Transform AnimationParentTransform; // 0xE4
+	[BoxGroup("Animation Transform")]
+	public Transform CenterTransform; // 0xE8
+	[BoxGroup("Animation Transform")]
+	public Transform TransitionGateTransform; // 0xEC
+	[CompilerGenerated]
+	private MiniBoardProgressionAnimationController <ProgressionAnimationController>k__BackingField; // 0xF0
+	private MiniBoardProgressionHandler _miniBoardProgressionHandler; // 0xF4
+	private IMiniBoardProgressionMainPopupView _miniBoardProgressionMainPopupView; // 0xF8
+	private MiniBoardProgressionContainer _miniBoardProgressionContainer; // 0xFC
+	private MiniBoardItemController _targetItemController; // 0x100
+
+	// Properties
+	public int MainItemSetID { get; }
+	public int TargetItemLevel { get; }
+	public int CurrentSeenMaxItemLevel { get; }
+	public MiniBoardProgressionAnimationController ProgressionAnimationController { get; set; }
+
+	// Methods
+
+	// RVA: 0x179950C Offset: 0x179950C VA: 0x179950C
+	public int get_MainItemSetID() { }
+
+	// RVA: 0x1799550 Offset: 0x1799550 VA: 0x1799550
+	public int get_TargetItemLevel() { }
+
+	// RVA: 0x1799570 Offset: 0x1799570 VA: 0x1799570
+	public int get_CurrentSeenMaxItemLevel() { }
+
+	[CompilerGenerated]
+	// RVA: 0x179959C Offset: 0x179959C VA: 0x179959C
+	public MiniBoardProgressionAnimationController get_ProgressionAnimationController() { }
+
+	[CompilerGenerated]
+	// RVA: 0x17995A4 Offset: 0x17995A4 VA: 0x17995A4
+	private void set_ProgressionAnimationController(MiniBoardProgressionAnimationController value) { }
+
+	// RVA: 0x17995AC Offset: 0x17995AC VA: 0x17995AC Slot: 6
+	public override void Awake() { }
+
+	// RVA: 0x17995B4 Offset: 0x17995B4 VA: 0x17995B4 Slot: 40
+	public override void Initialize(IMiniBoardGenericPopupView miniBoardPopupView, MiniBoardHandlerBase miniBoardHandlerBase, MiniBoardRewardAreaController rewardAreaController) { }
+
+	// RVA: 0x1799984 Offset: 0x1799984 VA: 0x1799984 Slot: 43
+	public override ParticleSystem GetPerishableSpawnerDestroyParticle(int setID) { }
+
+	// RVA: 0x17999D0 Offset: 0x17999D0 VA: 0x17999D0 Slot: 42
+	protected override void OnMergeCompleted(MiniBoardItemController createdItemController) { }
+
+	// RVA: 0x1799AE0 Offset: 0x1799AE0 VA: 0x1799AE0 Slot: 41
+	protected override void OnSpawnCompleted(MiniBoardItemController createdItemController) { }
+
+	// RVA: 0x17999D4 Offset: 0x17999D4 VA: 0x17999D4
+	private void CheckItemProgress(MiniBoardItemController createdItemController) { }
+
+	// RVA: 0x1799AE4 Offset: 0x1799AE4 VA: 0x1799AE4
+	private void ProcessSetMaxLevelItemSeen(int level) { }
+
+	// RVA: 0x1799BB0 Offset: 0x1799BB0 VA: 0x1799BB0
+	private void CreateProgressBarItemReward(MiniBoardItemController createdItemController) { }
+
+	// RVA: 0x1799E0C Offset: 0x1799E0C VA: 0x1799E0C
+	private void OnMaxLevelItemSet(int maxLevel) { }
+
+	// RVA: 0x1799D30 Offset: 0x1799D30 VA: 0x1799D30
+	private void ProcessBoardLevelUp() { }
+
+	// RVA: 0x1799E18 Offset: 0x1799E18 VA: 0x1799E18
+	private void OnBoardProcessCompleted(bool indexIncreased) { }
+
+	// RVA: 0x1799EEC Offset: 0x1799EEC VA: 0x1799EEC
+	public MiniBoardItemController GetGateItemController() { }
+
+	// RVA: 0x179A16C Offset: 0x179A16C VA: 0x179A16C
+	public void OnGateDisappearStarted() { }
+
+	// RVA: 0x179A18C Offset: 0x179A18C VA: 0x179A18C
+	public void OnLoadTransitionCompleted() { }
+
+	// RVA: 0x179A3A8 Offset: 0x179A3A8 VA: 0x179A3A8 Slot: 48
+	public void OnEvent(BaseMiniBoardProgressEvent.ProgressItemFoundRaiseKey e) { }
+
+	// RVA: 0x179A5DC Offset: 0x179A5DC VA: 0x179A5DC Slot: 49
+	public void OnEvent(BaseMiniBoardProgressEvent.BoardNoticePopupClosed e) { }
+
+	// RVA: 0x179A7A0 Offset: 0x179A7A0 VA: 0x179A7A0 Slot: 50
+	public void OnEvent(BaseMiniBoardProgressEvent.BoardCongratsPopupClosed e) { }
+
+	// RVA: 0x179A7C8 Offset: 0x179A7C8 VA: 0x179A7C8 Slot: 45
+	protected override string GetScrollableFeatureParams() { }
+
+	// RVA: 0x179A7F8 Offset: 0x179A7F8 VA: 0x179A7F8 Slot: 46
+	protected override bool IsSendBoardItemSpawnFirebaseEvent(BoardItemData boardItemData, bool onBoardInitialize) { }
+
+	// RVA: 0x179A99C Offset: 0x179A99C VA: 0x179A99C Slot: 47
+	protected override string GetRewardTrigger() { }
+
+	// RVA: 0x179AA0C Offset: 0x179AA0C VA: 0x179AA0C Slot: 44
+	public override bool SRCanSpawnItem(MiniBoardItemEntity itemEntity) { }
+
+	// RVA: 0x179AAA0 Offset: 0x179AAA0 VA: 0x179AAA0
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x179AAA8 Offset: 0x179AAA8 VA: 0x179AAA8
+	private void <OnEvent>b__35_0() { }
+}
+

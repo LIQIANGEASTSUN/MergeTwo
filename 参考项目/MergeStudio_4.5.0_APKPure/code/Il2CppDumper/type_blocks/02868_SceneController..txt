@@ -1,0 +1,39 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class SceneController.<ProcessBackDelayed>d__66 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 2868
+{
+	// Fields
+	private int <>1__state; // 0x8
+	private object <>2__current; // 0xC
+	public SceneController <>4__this; // 0x10
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHidden]
+	// RVA: 0x1A9F0E4 Offset: 0x1A9F0E4 VA: 0x1A9F0E4
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHidden]
+	// RVA: 0x1A9F364 Offset: 0x1A9F364 VA: 0x1A9F364 Slot: 5
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x1A9F368 Offset: 0x1A9F368 VA: 0x1A9F368 Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x1A9F654 Offset: 0x1A9F654 VA: 0x1A9F654 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHidden]
+	// RVA: 0x1A9F65C Offset: 0x1A9F65C VA: 0x1A9F65C Slot: 8
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHidden]
+	// RVA: 0x1A9F6A0 Offset: 0x1A9F6A0 VA: 0x1A9F6A0 Slot: 7
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+

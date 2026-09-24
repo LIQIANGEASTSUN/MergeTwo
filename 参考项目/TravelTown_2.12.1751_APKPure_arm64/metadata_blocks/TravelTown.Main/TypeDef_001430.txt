@@ -1,0 +1,28 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class BaseIdCapability // TypeDefIndex: 1430
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly string <Id>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly string <UUId>k__BackingField; // 0x18
+
+	// Properties
+	public string Id { get; }
+	public string UUId { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x600F9C8 Offset: 0x600B9C8 VA: 0x600F9C8
+	public string get_Id() { }
+
+	[CompilerGenerated]
+	// RVA: 0x600F9D0 Offset: 0x600B9D0 VA: 0x600F9D0
+	public string get_UUId() { }
+
+	// RVA: 0x600F9D8 Offset: 0x600B9D8 VA: 0x600F9D8
+	public void .ctor(string id, string uuId) { }
+}
+

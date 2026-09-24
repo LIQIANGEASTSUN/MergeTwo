@@ -1,0 +1,7 @@
+// Namespace: 
+public struct BoardEvent.RemoveArchiveTask : IEvent // TypeDefIndex: 1849
+{
+	// Fields
+	public ItemLinkID LinkID; // 0x0
+}
+

@@ -1,0 +1,91 @@
+Type: GameLogic.Player.Actions.Basic.ProgressStateClearUndoSellItem
+
+Method: Metaplay.Core.Model.MetaActionResult Execute(GameLogic.Player.PlayerModel player, System.Boolean commit)
+
+Disassembly:
+	0x037232E8 CBZ X21, 0x37235D8
+	0x037232EC MOV X2, X0
+	0x037232F0 MOV X0, X21
+	0x037232F4 MOV X1, X22
+	0x037232F8 MOV X3, X31
+	0x037232FC BL 0x3349D24
+	0x03723300 LDR X0, [X20 + 0x10]
+	0x03723304 CBZ X0, 0x37235D8
+	0x03723308 MOV X1, X19
+	0x0372330C MOV X2, X31
+	0x03723310 BL 0x3508FC8
+	0x03723314 CBZ X0, 0x37235D8
+	0x03723318 ADRP X8, 0x1FB3000
+	0x0372331C ADD X1, X31, 0x8
+	0x03723320 LDR X8, [X8 + 0xFC8]
+	0x03723324 LDR X2, [X8]
+	0x03723328 BL 0x272D0E8
+	0x0372332C LDUR V0, [X31 + 0x8]
+	0x03723330 LDR X8, [X31 + 0x18]
+	0x03723334 ADRP X23, 0x1FB3000
+	0x03723338 ADRP X24, 0x1FB3000
+	0x0372333C LDR X23, [X23 + 0xFB0]
+	0x03723340 ADRP X25, 0x1FDD000
+	0x03723344 LDR X24, [X24 + 0xFB8]
+	0x03723348 STR V0, [X31 + 0x2]
+	0x0372334C ADRP X26, 0x1FC7000
+	0x03723350 STR X8, [X31 + 0x30]
+	0x03723354 ADD X9, X31, 0x20
+	0x03723358 LDR X25, [X25 + 0x5F8]
+	0x0372335C LDR X26, [X26 + 0x778]
+	0x03723360 STP X31, X9, [X31 + 0x8]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31-24], X21
+	003 Move [X31+16], X20
+	004 Move [X31+24], X19
+	005 Move W20, W2
+	006 Move X19, X1
+	007 Move W8, [0x260B790]
+	008 Move TEMP, X8
+	009 And TEMP, TEMP, 1
+	010 Compare TEMP, 1
+	011 JumpIfEqual {16}
+	012 Move X0, [0x1FB77E0]
+	013 Call 0x239F8E4
+	014 Move W8, 1
+	015 Move [X21+1936], W8
+	016 Move TEMP, X20
+	017 And TEMP, TEMP, 1
+	018 Compare TEMP, 1
+	019 Invalid "Jump target not found in method."
+	020 Compare X19, 0
+	021 JumpIfEqual {41}
+	022 Move X0, [X19+544]
+	023 Compare X0, 0
+	024 JumpIfEqual {41}
+	025 Move X1, X31
+	026 Call ProgressState.ClearUndoSellItem, X0
+	027 Move X19, [0x1FB77E0]
+	028 Move X0, [X19]
+	029 Move W8, [X0+228]
+	030 Compare W8, 0
+	031 JumpIfNotEqual {34}
+	032 Call 0x239FA64
+	033 Move X0, [X19]
+	034 Move X8, [X0+184]
+	035 Move X20, [X31+16]
+	036 Move X19, [X31+24]
+	037 Move X0, [X8]
+	038 Move X30, [X31+32]
+	039 Move X21, [X31+40]
+	040 Return X0
+	041 Call 0x239FB90
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03723364 LDR X1, [X23]
+	0x03723368 ADD X0, X31, 0x20
+
+ISIL:
+	001 Move X1, X31
+	002 Call PlayerAction..ctor, X0
+	003 Return 
+

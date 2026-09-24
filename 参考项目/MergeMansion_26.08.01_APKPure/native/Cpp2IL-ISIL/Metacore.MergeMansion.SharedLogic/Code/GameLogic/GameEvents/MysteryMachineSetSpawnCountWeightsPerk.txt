@@ -1,0 +1,67 @@
+Type: Code.GameLogic.GameEvents.MysteryMachineSetSpawnCountWeightsPerk
+
+Method: System.Collections.Generic.List`1<System.Int32> get_SpawnCountWeights()
+
+Disassembly:
+	0x03331924 MOVZ W24, 0x4
+	0x03331928 ADD X8, X31, 0x18
+
+ISIL:
+	001 Move X0, [X0+16]
+	002 Return X0
+
+Method: System.Void set_SpawnCountWeights(System.Collections.Generic.List`1<System.Int32> value)
+
+Disassembly:
+	0x0333192C LDR X23, [X8]
+	0x03331930 CBZ X23, 0x3331994
+
+ISIL:
+	001 Move [X0+16], X1
+	002 Call 0x239F888
+	003 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x03331934 LDR X8, [X23]
+	0x03331938 ADRP X10, 0x239C000
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void .ctor(System.Collections.Generic.List`1<System.Int32> spawnCountWeights)
+
+Disassembly:
+	0x03330304 BL 0x3358B88
+	0x03330308 CMP W0, 0x1
+	0x0333030C B.NE 0x3330348
+	0x03330310 LDR X0, [X19 + 0x68]
+	0x03330314 CBZ X0, 0x3330350
+	0x03330318 ADRP X8, 0x23BC000
+	0x0333031C LDR X8, [X8 + 0xF40]
+	0x03330320 LDP X20, X19, [X31 + 0x20]
+	0x03330324 LDP X22, X21, [X31 + 0x10]
+	0x03330328 LDR X1, [X8]
+	0x0333032C LDR X30, [X31], #0x30
+	0x03330330 B 0x27550B8
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move X19, X1
+	005 Move X1, X31
+	006 Move X20, X0
+	007 Call Object..ctor, X0
+	008 Move [X20+16], X19
+	009 Move X0, X20
+	010 Move X1, X19
+	011 Move X20, [X31+16]
+	012 Move X19, [X31+24]
+	013 Move X30, [X31+32]
+	014 Call 0x239F888
+	015 Return 
+

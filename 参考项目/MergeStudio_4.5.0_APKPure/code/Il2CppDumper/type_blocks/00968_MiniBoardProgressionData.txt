@@ -1,0 +1,10 @@
+// Namespace: Paxie.MergeStudio.Features.RecurringEvents.MiniBoardProgression
+[CreateAssetMenu(fileName = "MiniBoardProgressionData", menuName = "Scriptable/RecurringEvent/MiniBoardProgression/MiniBoardProgressionData")]
+public class MiniBoardProgressionData : MiniBoardData // TypeDefIndex: 968
+{
+	// Methods
+
+	// RVA: 0x1792388 Offset: 0x1792388 VA: 0x1792388
+	public void .ctor() { }
+}
+

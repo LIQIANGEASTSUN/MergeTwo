@@ -1,0 +1,15 @@
+// Namespace: Merger.MergeBoard.Systems
+public class SwapSystem : ISystem // TypeDefIndex: 25777
+{
+	// Methods
+
+	// RVA: 0x6A761E4 Offset: 0x6A721E4 VA: 0x6A761E4 Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A7652C Offset: 0x6A7252C VA: 0x6A7652C
+	private static bool IsSwappable(ValueTuple<Entity, BoardTilePositionComponent> entity, ValueTuple<Entity, ItemMovedComponent> movedEntity) { }
+
+	// RVA: 0x6A76548 Offset: 0x6A72548 VA: 0x6A76548
+	public void .ctor() { }
+}
+

@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemController.<>c__DisplayClass197_0 // TypeDefIndex: 1675
+{
+	// Fields
+	public ItemController <>4__this; // 0x8
+	public ItemController candidateItem; // 0xC
+
+	// Methods
+
+	// RVA: 0x18CD118 Offset: 0x18CD118 VA: 0x18CD118
+	public void .ctor() { }
+
+	// RVA: 0x18CD120 Offset: 0x18CD120 VA: 0x18CD120
+	internal void <ChargeIt>b__0() { }
+}
+

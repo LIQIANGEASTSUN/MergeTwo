@@ -1,0 +1,4 @@
+// Namespace: 
+public struct BoardEvent.ActiveInfoItemChange : IEvent // TypeDefIndex: 1779
+{}
+

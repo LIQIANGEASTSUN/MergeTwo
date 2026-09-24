@@ -1,0 +1,12 @@
+// Namespace: Merger.MergeBoard.Systems
+public class MoveSystem : ISystem // TypeDefIndex: 25762
+{
+	// Methods
+
+	// RVA: 0x6A71B54 Offset: 0x6A6DB54 VA: 0x6A71B54 Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A71E2C Offset: 0x6A6DE2C VA: 0x6A71E2C
+	public void .ctor() { }
+}
+

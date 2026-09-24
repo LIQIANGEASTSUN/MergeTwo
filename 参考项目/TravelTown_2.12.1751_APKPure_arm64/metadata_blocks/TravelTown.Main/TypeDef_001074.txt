@@ -1,0 +1,11 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public enum InventorySlotType // TypeDefIndex: 1074
+{
+	// Fields
+	public int value__; // 0x0
+	public const InventorySlotType Normal = 0;
+	public const InventorySlotType Producer = 1;
+	public const InventorySlotType Tool = 2;
+	public const InventorySlotType Blasters = 3;
+}
+

@@ -1,0 +1,23 @@
+// Namespace: MergeEngine.Util
+public static class WeightedItemUtil // TypeDefIndex: 123
+{
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public static WeightedItemList<TItem> GenerateWeightedItemList<TItemData, TItem>(IList<TItemData> items, Func<TItemData, int> getWeightFunc, Func<TItemData, TItem> getItemFunc) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3E36A2C Offset: 0x3E32A2C VA: 0x3E36A2C
+	|-WeightedItemUtil.GenerateWeightedItemList<object, object>
+	|
+	|-RVA: 0x3E36E88 Offset: 0x3E32E88 VA: 0x3E36E88
+	|-WeightedItemUtil.GenerateWeightedItemList<WeightedTool, Int32Enum>
+	|
+	|-RVA: 0x3E372E4 Offset: 0x3E332E4 VA: 0x3E372E4
+	|-WeightedItemUtil.GenerateWeightedItemList<WeightedToolLevel, int>
+	|
+	|-RVA: 0x3E37740 Offset: 0x3E33740 VA: 0x3E37740
+	|-WeightedItemUtil.GenerateWeightedItemList<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>
+	*/
+}
+

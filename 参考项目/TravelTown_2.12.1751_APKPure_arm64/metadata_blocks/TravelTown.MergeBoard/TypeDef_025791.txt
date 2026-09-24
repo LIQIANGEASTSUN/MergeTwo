@@ -1,0 +1,40 @@
+// Namespace: Merger.MergeBoard.Systems
+public class TransformSystem : ISystem // TypeDefIndex: 25791
+{
+	// Fields
+	private const string TimerReason = "timer";
+	private const string TapReason = "tap";
+	private const string TimeEndReason = "time_end";
+	private const string TimeLimitedReason = "time_limited_conversion";
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x10
+	[Inject]
+	private IEntityFactory _entityFactory; // 0x18
+	[Inject]
+	private IMergeBoardLayout _layout; // 0x20
+	[Inject]
+	private IExpendSpawnService _expendSpawnService; // 0x28
+	[Inject]
+	private IServerTimeService _serverTimeService; // 0x30
+
+	// Methods
+
+	// RVA: 0x6A798D8 Offset: 0x6A758D8 VA: 0x6A798D8 Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6A79C6C Offset: 0x6A75C6C VA: 0x6A79C6C
+	private void HandleTransformByInteract(TickContext context, ExpendableComponent expendableComponent, Entity entity, BoardTilePositionComponent positionComponent) { }
+
+	// RVA: 0x6A7A064 Offset: 0x6A76064 VA: 0x6A7A064
+	private void HandleTransformByDuration(TickContext context, ExpendableComponent expendableComponent, Entity entity, BoardTilePositionComponent positionComponent) { }
+
+	// RVA: 0x6A7A45C Offset: 0x6A7645C VA: 0x6A7A45C
+	private void TransformTimeLimitedItem(TickContext context, Entity entity, ExpendableComponent expendableComponent, BoardTilePositionComponent positionComponent, ItemAnalyticsData analyticsData) { }
+
+	// RVA: 0x6A7A760 Offset: 0x6A76760 VA: 0x6A7A760
+	private void EmitItemExpiredResult(TickContext context, Entity entity, int position, ItemAnalyticsData analyticsData, string reason, string subReason) { }
+
+	// RVA: 0x6A7A864 Offset: 0x6A76864 VA: 0x6A7A864
+	public void .ctor() { }
+}
+

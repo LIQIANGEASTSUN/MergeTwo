@@ -1,0 +1,366 @@
+Type: GameLogic.Player.Items.Production.EmptyProducer
+
+Method: System.Collections.Generic.IEnumerable`1<System.ValueTuple`2<GameLogic.Player.Items.IItemDefinition, System.Int32>> GetOdds(GameLogic.Config.IMergeMansionGameConfig config)
+
+Disassembly:
+	0x03619F00 MOV X19, X4
+	0x03619F04 LDRB W8, [X22 + 0xC7E]
+	0x03619F08 LDR X25, [X25 + 0xBA0]
+	0x03619F0C MOV X24, X3
+	0x03619F10 MOV W20, W2
+	0x03619F14 MOV X23, X1
+	0x03619F18 MOV X21, X0
+	0x03619F1C TBNZ X8, 0x0, 0x3619F94
+	0x03619F20 ADRP X0, 0x2118000
+	0x03619F24 LDR X0, [X0 + 0xBA8]
+	0x03619F28 BL 0x239B8E4
+	0x03619F2C ADRP X0, 0x2118000
+	0x03619F30 LDR X0, [X0 + 0xBB0]
+	0x03619F34 BL 0x239B8E4
+	0x03619F38 ADRP X0, 0x2118000
+	0x03619F3C LDR X0, [X0 + 0xBB8]
+	0x03619F40 BL 0x239B8E4
+	0x03619F44 ADRP X0, 0x20BB000
+	0x03619F48 LDR X0, [X0 + 0xD50]
+	0x03619F4C BL 0x239B8E4
+	0x03619F50 ADRP X0, 0x20CF000
+	0x03619F54 LDR X0, [X0 + 0xD28]
+	0x03619F58 BL 0x239B8E4
+	0x03619F5C ADRP X0, 0x20FA000
+	0x03619F60 LDR X0, [X0 + 0x478]
+	0x03619F64 BL 0x239B8E4
+	0x03619F68 ADRP X0, 0x20B4000
+	0x03619F6C LDR X0, [X0 + 0xBE0]
+	0x03619F70 BL 0x239B8E4
+	0x03619F74 ADRP X0, 0x2118000
+	0x03619F78 LDR X0, [X0 + 0xBC0]
+	0x03619F7C BL 0x239B8E4
+	0x03619F80 ADRP X0, 0x2118000
+	0x03619F84 LDR X0, [X0 + 0xBA0]
+	0x03619F88 BL 0x239B8E4
+	0x03619F8C MOVZ W8, 0x1
+	0x03619F90 STRB W8, [X22 + 0xC7E]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move W8, [0x2714C55]
+	005 Move X20, [0x211CAD8]
+	006 Move TEMP, X8
+	007 And TEMP, TEMP, 1
+	008 Compare TEMP, 1
+	009 JumpIfEqual {14}
+	010 Move X0, [0x211CAD8]
+	011 Call 0x239F8E4
+	012 Move W8, 1
+	013 Move [X19+3157], W8
+	014 Move X19, [X20]
+	015 Move X8, [X19+56]
+	016 Compare X8, 0
+	017 JumpIfNotEqual {21}
+	018 Move X0, X19
+	019 Call 0x23D8F9C
+	020 Move X8, [X19+56]
+	021 Move X0, [X8+16]
+	022 Add X8, X0, 309
+	023 NotImplemented "Instruction LDRH not yet implemented."
+	024 Move TEMP, X8
+	025 And TEMP, TEMP, 1
+	026 Compare TEMP, 1
+	027 JumpIfEqual {29}
+	028 Call 0x23D8F40
+	029 Move W8, [X0+228]
+	030 Compare W8, 0
+	031 JumpIfNotEqual {33}
+	032 Call 0x239FA64
+	033 Move X8, [X19+56]
+	034 Move X0, [X8+16]
+	035 Add X8, X0, 309
+	036 NotImplemented "Instruction LDRH not yet implemented."
+	037 Move TEMP, X8
+	038 And TEMP, TEMP, 1
+	039 Compare TEMP, 1
+	040 JumpIfEqual {42}
+	041 Call 0x23D8F40
+	042 Move X8, [X0+184]
+	043 Move X20, [X31+16]
+	044 Move X19, [X31+24]
+	045 Move X0, [X8]
+	046 Move X30, [X31+32]
+	047 Return X0
+
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Player.Items.IItemDefinition> Produce(GameLogic.Random.IGenerationContext context, System.Int32 quantity, Metacore.MergeMansion.Common.Options.Option`1<GameLogic.Player.Items.Production.ProducerContext> producerContextOption, System.Collections.Generic.IEnumerable`1<GameLogic.Player.Items.IItemDefinition> allowedItems = null)
+
+Disassembly:
+	0x03619F94 LDR X0, [X25]
+	0x03619F98 BL 0x239BB80
+	0x03619F9C MOV X1, X31
+	0x03619FA0 MOV X22, X0
+	0x03619FA4 BL 0x44E8DEC
+	0x03619FA8 CBZ X22, 0x361A368
+	0x03619FAC MOV X0, X22
+	0x03619FB0 MOV X1, X21
+	0x03619FB4 STR X21, [X0 + 0x10]!
+	0x03619FB8 BL 0x239B888
+	0x03619FBC LDR X8, [X24 + 0x10]
+	0x03619FC0 LDR V0, [X24]
+	0x03619FC4 ADD X0, X22, 0x20
+	0x03619FC8 MOV X1, X31
+	0x03619FCC STR X8, [X22 + 0x28]
+	0x03619FD0 STUR V0, [X22 + 0x18]
+	0x03619FD4 BL 0x239B888
+	0x03619FD8 MOV X24, X22
+	0x03619FDC MOV X1, X23
+	0x03619FE0 STR X23, [X24 + 0x38]!
+	0x03619FE4 MOV X0, X24
+	0x03619FE8 BL 0x239B888
+	0x03619FEC LDUR V0, [X22 + 0x18]
+	0x03619FF0 LDR X8, [X22 + 0x28]
+	0x03619FF4 ADD X2, X31, 0x80
+	0x03619FF8 LDR X1, [X24]
+	0x03619FFC MOV X0, X21
+	0x0361A000 STR V0, [X31 + 0x8]
+	0x0361A004 STR X8, [X31 + 0x90]
+	0x0361A008 BL 0x3619964
+	0x0361A00C TBZ X0, 0x0, 0x361A074
+	0x0361A010 LDR X21, [X21 + 0x20]
+	0x0361A014 CBZ X21, 0x361A368
+	0x0361A018 ADRP X10, 0x20CE000
+	0x0361A01C LDR X8, [X21]
+	0x0361A020 B 0x53E8A78
+	0x0361A024 LDUR V0, [X22 + 0x18]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move W8, [0x2714C56]
+	005 Move X20, [0x211C0B8]
+	006 Move TEMP, X8
+	007 And TEMP, TEMP, 1
+	008 Compare TEMP, 1
+	009 JumpIfEqual {14}
+	010 Move X0, [0x211C0B8]
+	011 Call 0x239F8E4
+	012 Move W8, 1
+	013 Move [X19+3158], W8
+	014 Move X19, [X20]
+	015 Move X8, [X19+56]
+	016 Compare X8, 0
+	017 JumpIfNotEqual {21}
+	018 Move X0, X19
+	019 Call 0x23D8F9C
+	020 Move X8, [X19+56]
+	021 Move X0, [X8+16]
+	022 Add X8, X0, 309
+	023 NotImplemented "Instruction LDRH not yet implemented."
+	024 Move TEMP, X8
+	025 And TEMP, TEMP, 1
+	026 Compare TEMP, 1
+	027 JumpIfEqual {29}
+	028 Call 0x23D8F40
+	029 Move W8, [X0+228]
+	030 Compare W8, 0
+	031 JumpIfNotEqual {33}
+	032 Call 0x239FA64
+	033 Move X8, [X19+56]
+	034 Move X0, [X8+16]
+	035 Add X8, X0, 309
+	036 NotImplemented "Instruction LDRH not yet implemented."
+	037 Move TEMP, X8
+	038 And TEMP, TEMP, 1
+	039 Compare TEMP, 1
+	040 JumpIfEqual {42}
+	041 Call 0x23D8F40
+	042 Move X8, [X0+184]
+	043 Move X20, [X31+16]
+	044 Move X19, [X31+24]
+	045 Move X0, [X8]
+	046 Move X30, [X31+32]
+	047 Return X0
+
+Method: System.Int32 get_SpawnQuantity()
+
+Disassembly:
+	0x0361A028 LDUR X11, [X22 + 0x28]
+	0x0361A02C LDRH W9, [X8 + 0x12E]
+
+ISIL:
+	001 Move W0, W31
+	002 Return X0
+
+Method: Metaplay.Core.Math.F64 TimeSkipPriceGems(GameLogic.Random.IGenerationContext context)
+
+Disassembly:
+	0x0361A030 LDR X22, [X24]
+	0x0361A034 LDR X1, [X10]
+	0x0361A038 STR V0, [X31 + 0x6]
+	0x0361A03C STR X11, [X31 + 0x70]
+	0x0361A040 CBZ X9, 0x361A064
+	0x0361A044 LDR X10, [X8 + 0xB0]
+	0x0361A048 ADD X10, X10, 0x8
+	0x0361A04C LDUR X11, [X10 - 0x8]
+	0x0361A050 CMP X11, X1
+	0x0361A054 B.EQ 0x361A0C4
+	0x0361A058 SUBS X9, X9, 0x1
+	0x0361A05C ADD X10, X10, 0x10
+	0x0361A060 B.NE 0x361A04C
+	0x0361A064 MOV X0, X21
+	0x0361A068 MOVZ W2, 0x1
+	0x0361A06C BL 0x23D527C
+	0x0361A070 B 0x361A0D4
+	0x0361A074 LDR X23, [X24]
+	0x0361A078 CBZ X23, 0x361A368
+	0x0361A07C ADRP X25, 0x20BA000
+	0x0361A080 LDR X8, [X23]
+	0x0361A084 LDR X25, [X25 + 0xD50]
+	0x0361A088 LDRH W9, [X8 + 0x12E]
+	0x0361A08C LDR X1, [X25]
+	0x0361A090 CBZ X9, 0x361A0B4
+	0x0361A094 LDR X10, [X8 + 0xB0]
+	0x0361A098 ADD X10, X10, 0x8
+	0x0361A09C LDUR X11, [X10 - 0x8]
+	0x0361A0A0 CMP X11, X1
+	0x0361A0A4 B.EQ 0x361A108
+	0x0361A0A8 SUBS X9, X9, 0x1
+	0x0361A0AC ADD X10, X10, 0x10
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move W8, [0x2713C57]
+	005 Move X19, [0x20CCBB0]
+	006 Move TEMP, X8
+	007 And TEMP, TEMP, 1
+	008 Compare TEMP, 1
+	009 JumpIfEqual {14}
+	010 Move X0, [0x20CCBB0]
+	011 Call 0x239F8E4
+	012 Move W8, 1
+	013 Move [X20+3159], W8
+	014 Move X0, [X19]
+	015 Move W8, [X0+228]
+	016 Compare W8, 0
+	017 Invalid "Jump target not found in method."
+	018 Call 0x239FA64
+	019 Move W8, [0x270E640]
+	020 Compare W8, 0
+	021 JumpIfNotEqual {26}
+	022 Move X0, [0x20CCBB0]
+	023 Call 0x239F8E4
+	024 Move W8, 1
+	025 Move [X20+1600], W8
+	026 Move X0, [X19]
+	027 Move W8, [X0+228]
+	028 Compare W8, 0
+	029 JumpIfNotEqual {31}
+	030 Call 0x239FA64
+	031 Move X20, [X31+16]
+	032 Move X19, [X31+24]
+	033 Move X0, X31
+	034 Move X30, [X31+32]
+	035 Return X0
+
+Method: System.Collections.Generic.IEnumerable`1<GameLogic.Player.Items.IItemDefinition> GetSpawnItems(GameLogic.Random.IGenerationContext context, Metacore.MergeMansion.Common.Options.Option`1<GameLogic.Player.Items.Production.ProducerContext> producerContextOption)
+
+Disassembly:
+	0x0361A0B0 B.NE 0x361A09C
+	0x0361A0B4 MOV X0, X23
+	0x0361A0B8 MOVZ W2, 0x2
+	0x0361A0BC BL 0x23D527C
+	0x0361A0C0 B 0x361A118
+	0x0361A0C4 LDR W9, [X10]
+	0x0361A0C8 ADD W9, W9, 0x1
+	0x0361A0CC ADD X8, X8, W9, 0x4, SXTW
+	0x0361A0D0 ADD X0, X8, 0x138
+	0x0361A0D4 LDR V0, [X31 + 0x6]
+	0x0361A0D8 LDR X8, [X31 + 0x70]
+	0x0361A0DC ADD X3, X31, 0xA0
+	0x0361A0E0 LDR X9, [X0]
+	0x0361A0E4 MOV X1, X22
+	0x0361A0E8 MOV W2, W20
+	0x0361A0EC STR V0, [X31 + 0xA]
+	0x0361A0F0 MOV X4, X19
+	0x0361A0F4 STR X8, [X31 + 0xB0]
+	0x0361A0F8 LDR X5, [X0 + 0x8]
+	0x0361A0FC MOV X0, X21
+	0x0361A100 BLR X9
+	0x0361A104 B 0x361A34C
+	0x0361A108 LDR W9, [X10]
+	0x0361A10C ADD W9, W9, 0x2
+	0x0361A110 ADD X8, X8, W9, 0x4, SXTW
+	0x0361A114 ADD X0, X8, 0x138
+	0x0361A118 LDP X8, X1, [X0]
+	0x0361A11C MOV X0, X23
+	0x0361A120 BLR X8
+	0x0361A124 MOV X23, X22
+	0x0361A128 MOV X1, X0
+	0x0361A12C STR X0, [X23 + 0x30]!
+	0x0361A130 MOV X0, X23
+	0x0361A134 BL 0x239B888
+	0x0361A138 LDP X23, X24, [X23]
+	0x0361A13C LDUR V0, [X22 + 0x18]
+	0x0361A140 LDUR X8, [X22 + 0x28]
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move W8, [0x2713C58]
+	005 Move X20, [0x2106588]
+	006 Move TEMP, X8
+	007 And TEMP, TEMP, 1
+	008 Compare TEMP, 1
+	009 JumpIfEqual {14}
+	010 Move X0, [0x2106588]
+	011 Call 0x239F8E4
+	012 Move W8, 1
+	013 Move [X19+3160], W8
+	014 Move X19, [X20]
+	015 Move X8, [X19+56]
+	016 Compare X8, 0
+	017 JumpIfNotEqual {21}
+	018 Move X0, X19
+	019 Call 0x23D8F9C
+	020 Move X8, [X19+56]
+	021 Move X0, [X8+16]
+	022 Add X8, X0, 309
+	023 NotImplemented "Instruction LDRH not yet implemented."
+	024 Move TEMP, X8
+	025 And TEMP, TEMP, 1
+	026 Compare TEMP, 1
+	027 JumpIfEqual {29}
+	028 Call 0x23D8F40
+	029 Move W8, [X0+228]
+	030 Compare W8, 0
+	031 JumpIfNotEqual {33}
+	032 Call 0x239FA64
+	033 Move X8, [X19+56]
+	034 Move X0, [X8+16]
+	035 Add X8, X0, 309
+	036 NotImplemented "Instruction LDRH not yet implemented."
+	037 Move TEMP, X8
+	038 And TEMP, TEMP, 1
+	039 Compare TEMP, 1
+	040 JumpIfEqual {42}
+	041 Call 0x23D8F40
+	042 Move X8, [X0+184]
+	043 Move X20, [X31+16]
+	044 Move X19, [X31+24]
+	045 Move X0, [X8]
+	046 Move X30, [X31+32]
+	047 Return X0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x0361A144 STR V0, [X31 + 0x4]
+	0x0361A148 STR X8, [X31 + 0x50]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+

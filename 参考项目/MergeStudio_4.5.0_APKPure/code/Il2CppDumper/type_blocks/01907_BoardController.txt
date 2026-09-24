@@ -1,0 +1,999 @@
+// Namespace: MergePuzzle
+public class BoardController : BaseSubscriberService, IBoardController, IEventReceiver<BoardEvent.InitializeBoard>, IEventReceiverBase, IEventReceiver<BoardEvent.Move>, IEventReceiver<BoardEvent.Merge>, IEventReceiver<BoardEvent.Swap>, IEventReceiver<BoardEvent.CollectCollectable>, IEventReceiver<BoardEvent.SpawnerSpawn>, IEventReceiver<BoardEvent.PerishableSpawnerSpawn>, IEventReceiver<BoardEvent.AutoSpawnerSpawn>, IEventReceiver<BoardEvent.ChestSpawnerSpawn>, IEventReceiver<BoardEvent.RemoveFromInventory>, IEventReceiver<BoardEvent.AddToInventory>, IEventReceiver<BoardEvent.UndoItemSell>, IEventReceiver<BoardEvent.RemoveItemViaSellComplete>, IEventReceiver<BoardEvent.RevertMove>, IEventReceiver<NonMovableItemClick>, IEventReceiver<ItemClick>, IEventReceiver<BoardEvent.RemoveFromRewardUI>, IEventReceiver<BoardEvent.BubbleTimeFinish>, IEventReceiver<BoardEvent.BoosterPanelStatusChange>, IEventReceiver<BoardEvent.BoosterBoardAction>, IEventReceiver<BoardEvent.CloudDestroy>, IEventReceiver<BoardEvent.EnergyRefillSuccess>, IEventReceiver<AnimationEvent.SpawnerHintAdd>, IEventReceiver<TaskEvent.TaskDoneBoardItemsMoveCompleted>, IEventReceiver<BoardEvent.BoosterAnimationCompleted>, IEventReceiver<BoardEvent.ClearBoard>, IEventReceiver<BoardEvent.PreMergeParticleActive>, IEventReceiver<CameraEvent.CameraChangedRequest>, IEventReceiver<CameraEvent.CameraChangeCompleted>, IEventReceiver<SrDebuggerEvent.EventSpawn>, IEventReceiver<BoardEvent.ApplicationPause>, IEventReceiver<SrDebuggerEvent.CompleteMetaTaskUntil>, IEventReceiver<PurchaseEvent.PurchaseResult>, IEventReceiver<CanvasEvent.NonUndoClicked>, IEventReceiver<TaskEvent.LevelUpDismissed>, IEventReceiver<PurchaseEvent.SetTrigger>, IEventReceiver<BoardEvent.PickBoxItemSelection>, IEventReceiver<AnimationEvent.AnimationFinished>, IEventReceiver<RecurringEvent.CurrencyClicked>, IEventReceiver<BoardEvent.DestroyFromBoard>, IEventReceiver<BoardEvent.ClearSelectedPosition>, IEventReceiver<CanvasEvent.PlayTimeLimitedClockParticle>, IEventReceiver<DailyChallengeEvent.PickChestConceptRewardBoxItemSelection>, IEventReceiver<BoardEvent.OnStateChange>, IEventReceiver<BoardEvent.BoardItemPositionUpdate>, IEventReceiver<MetaEvent.SeasonSoftFinish>, IEventReceiver<BoardEvent.TaskSupportChestSpawnerSpawn> // TypeDefIndex: 1907
+{
+	// Fields
+	public CellController BoardCellPrefab; // 0x1C
+	public ItemController BoardItemPrefab; // 0x20
+	public Transform BoardInsideParent; // 0x24
+	public SpriteRenderer ItemActionArea; // 0x28
+	public BoosterAnimationController BoosterAnimationController; // 0x2C
+	public AnimationLoop SpawnLoop1; // 0x30
+	public AnimationLoop SpawnLoop2; // 0x34
+	public AnimationLoop MergedItemLoop; // 0x38
+	public AnimationLoop MiscInventorySpawnAnim; // 0x3C
+	public DoMove MiscMovePlacementAnim; // 0x40
+	public DoMove MiscRevertPlacementAnim; // 0x44
+	public DoMove MiscSwapPlacementAnim; // 0x48
+	public ObjectPooler ObjectPool; // 0x4C
+	[Header("Configurable")]
+	public SpriteRenderer AllBackgroundBoard; // 0x50
+	public SpriteRenderer BoardInsideBackground; // 0x54
+	public SerializableDictionary<AnimatedCollectableController.AnimatedItemType, AnimatedCollectableController> BoardTaskRewardPrefabs; // 0x58
+	[HideInInspector]
+	private BoardTaskData BoardTaskData; // 0x5C
+	[HideInInspector]
+	public LevelData LevelData; // 0x60
+	[HideInInspector]
+	public BoardPosition SelectedPosition; // 0x64
+	[HideInInspector]
+	public int ChargingChestCount; // 0x68
+	[HideInInspector]
+	public BoardEntity BoardEntity; // 0x6C
+	[HideInInspector]
+	public EventEntity EventEntity; // 0x70
+	[HideInInspector]
+	public AnimationReferenceAsset SceneBackgrounAnimation; // 0x74
+	[HideInInspector]
+	public MergeHintAnimationController MergeHintAnimationController; // 0x78
+	[HideInInspector]
+	public BoardScrollableAreaController BoardScrollableAreaController; // 0x7C
+	public BoardParticleData BoardParticleData; // 0x80
+	[CompilerGenerated]
+	private bool <IsLevelUp>k__BackingField; // 0x84
+	[CompilerGenerated]
+	private bool <IsAutoSpawnerWaiting>k__BackingField; // 0x85
+	[CompilerGenerated]
+	private bool <BlockSelection>k__BackingField; // 0x86
+	[CompilerGenerated]
+	private bool <NonUndoClickAvailable>k__BackingField; // 0x87
+	private readonly List<BoardPosition> _positions; // 0x88
+	private long _millisecondPassed; // 0x90
+	private Vector2 _firstItemPos; // 0x98
+	private List<ItemController> _spawnerList; // 0xA0
+	private ParticleSystem _preMergeParticle; // 0xA4
+	private MetaData _metaData; // 0xA8
+	private bool _missingXpAndSpawnersCalculated; // 0xAC
+	private BoardData _boardData; // 0xB0
+	private bool _isEventBoard; // 0xB4
+	private bool _blockAutoSpawner; // 0xB5
+	private int _eventIndex; // 0xB8
+	private bool _isInitialized; // 0xBC
+	private BoardDataAddressableLoader _boardDataAddressableLoader; // 0xC0
+	private string _trigger; // 0xC4
+	private SFXItem _customEventGameplaySound; // 0xC8
+	private CommonFactoryService _factoryService; // 0xCC
+	private ItemChainManager _itemChainManager; // 0xD0
+	[CompilerGenerated]
+	private bool <BoardInitEnergyProcessed>k__BackingField; // 0xD4
+	[CompilerGenerated]
+	private MergeParticleController <MergeParticleController>k__BackingField; // 0xD8
+	[CompilerGenerated]
+	private BoardParticleController <BoardParticleController>k__BackingField; // 0xDC
+	[CompilerGenerated]
+	private ItemCollectionHandler <ItemCollection>k__BackingField; // 0xE0
+	private readonly string ANALYTIC_EVENT_TRASH_NAME; // 0xE4
+	private readonly string ANALYTIC_EVENT_INVENTORY_NAME; // 0xE8
+	private readonly string ANALYTIC_EVENT_REWARD_AREA_NAME; // 0xEC
+	private readonly string ANALYTIC_EVENT_TASK_COMPLETE_NAME; // 0xF0
+	[CompilerGenerated]
+	private BoardPlacementAnimation <BoardPlacementAnimation>k__BackingField; // 0xF4
+	private static readonly List<TutorialIndex> AssetChangedTutorialSteps; // 0x0
+	private static readonly HashSet<int> _spawnerSetIDs; // 0x4
+	private readonly BoardPlacementAnimation _boardPlacementAnimation; // 0xF8
+	private AnimatedCollectableTracker _animatedCollectableTracker; // 0xFC
+
+	// Properties
+	private CameraController CameraController { get; }
+	private GameplayNonScaledCanvasView GameplayNonScaledCanvasView { get; }
+	private GameplayScaledCanvasView GameplayScaledCanvasView { get; }
+	private EnergyMultiplierHandler EnergyMultiplierHandler { get; }
+	public SellButtonController SellButtonController { get; }
+	public BoardTaskData GetBoardTaskData { get; }
+	public bool IsLevelUp { get; set; }
+	public bool IsAutoSpawnerWaiting { get; set; }
+	public bool BlockSelection { get; set; }
+	public bool NonUndoClickAvailable { get; set; }
+	public List<BoardPosition> Positions { get; }
+	public List<ItemController> SpawnerList { get; }
+	public SFXItem CustomEventGameplaySound { get; }
+	public bool BoardInitEnergyProcessed { get; set; }
+	public bool IsInitialized { get; }
+	public bool BlockAutoSpawner { get; }
+	public MergeParticleController MergeParticleController { get; set; }
+	public BoardParticleController BoardParticleController { get; set; }
+	public ItemCollectionHandler ItemCollection { get; set; }
+	public WarningTextFactory WarningTextFactory { get; }
+	public ItemControllerFactory ItemControllerFactory { get; }
+	public int EventIndex { get; }
+	public BoardData BoardData { get; set; }
+	public BoardPlacementAnimation BoardPlacementAnimation { get; set; }
+	public AnimatedCollectableTracker AnimatedCollectableTracker { get; }
+
+	// Methods
+
+	// RVA: 0x18D9094 Offset: 0x18D9094 VA: 0x18D9094
+	private CameraController get_CameraController() { }
+
+	// RVA: 0x18D90FC Offset: 0x18D90FC VA: 0x18D90FC
+	private GameplayNonScaledCanvasView get_GameplayNonScaledCanvasView() { }
+
+	// RVA: 0x18D9164 Offset: 0x18D9164 VA: 0x18D9164
+	private GameplayScaledCanvasView get_GameplayScaledCanvasView() { }
+
+	// RVA: 0x18D91CC Offset: 0x18D91CC VA: 0x18D91CC
+	private EnergyMultiplierHandler get_EnergyMultiplierHandler() { }
+
+	// RVA: 0x18D9294 Offset: 0x18D9294 VA: 0x18D9294
+	public SellButtonController get_SellButtonController() { }
+
+	// RVA: 0x18D92B4 Offset: 0x18D92B4 VA: 0x18D92B4
+	public BoardTaskData get_GetBoardTaskData() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18D92BC Offset: 0x18D92BC VA: 0x18D92BC
+	public bool get_IsLevelUp() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18D92C4 Offset: 0x18D92C4 VA: 0x18D92C4
+	public void set_IsLevelUp(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x18D92CC Offset: 0x18D92CC VA: 0x18D92CC
+	public bool get_IsAutoSpawnerWaiting() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18D92D4 Offset: 0x18D92D4 VA: 0x18D92D4
+	private void set_IsAutoSpawnerWaiting(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x18D92DC Offset: 0x18D92DC VA: 0x18D92DC
+	public bool get_BlockSelection() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18D92E4 Offset: 0x18D92E4 VA: 0x18D92E4
+	private void set_BlockSelection(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x18D92EC Offset: 0x18D92EC VA: 0x18D92EC
+	public bool get_NonUndoClickAvailable() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18D92F4 Offset: 0x18D92F4 VA: 0x18D92F4
+	public void set_NonUndoClickAvailable(bool value) { }
+
+	// RVA: 0x18D92FC Offset: 0x18D92FC VA: 0x18D92FC
+	public List<BoardPosition> get_Positions() { }
+
+	// RVA: 0x18D9304 Offset: 0x18D9304 VA: 0x18D9304
+	public List<ItemController> get_SpawnerList() { }
+
+	// RVA: 0x18D930C Offset: 0x18D930C VA: 0x18D930C
+	public SFXItem get_CustomEventGameplaySound() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18D9314 Offset: 0x18D9314 VA: 0x18D9314
+	private void set_BoardInitEnergyProcessed(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x18D931C Offset: 0x18D931C VA: 0x18D931C
+	public bool get_BoardInitEnergyProcessed() { }
+
+	// RVA: 0x18D9324 Offset: 0x18D9324 VA: 0x18D9324
+	public bool get_IsInitialized() { }
+
+	// RVA: 0x18D932C Offset: 0x18D932C VA: 0x18D932C
+	public bool get_BlockAutoSpawner() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18D9334 Offset: 0x18D9334 VA: 0x18D9334
+	public MergeParticleController get_MergeParticleController() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18D933C Offset: 0x18D933C VA: 0x18D933C
+	private void set_MergeParticleController(MergeParticleController value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x18D9344 Offset: 0x18D9344 VA: 0x18D9344
+	public BoardParticleController get_BoardParticleController() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18D934C Offset: 0x18D934C VA: 0x18D934C
+	private void set_BoardParticleController(BoardParticleController value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x18D9354 Offset: 0x18D9354 VA: 0x18D9354
+	public ItemCollectionHandler get_ItemCollection() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18D935C Offset: 0x18D935C VA: 0x18D935C
+	private void set_ItemCollection(ItemCollectionHandler value) { }
+
+	// RVA: 0x18D9364 Offset: 0x18D9364 VA: 0x18D9364
+	public WarningTextFactory get_WarningTextFactory() { }
+
+	// RVA: 0x18D9380 Offset: 0x18D9380 VA: 0x18D9380
+	public ItemControllerFactory get_ItemControllerFactory() { }
+
+	// RVA: 0x18D939C Offset: 0x18D939C VA: 0x18D939C
+	public int get_EventIndex() { }
+
+	// RVA: 0x18D93A4 Offset: 0x18D93A4 VA: 0x18D93A4
+	public BoardData get_BoardData() { }
+
+	// RVA: 0x18D93AC Offset: 0x18D93AC VA: 0x18D93AC
+	public void set_BoardData(BoardData value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x18D93B4 Offset: 0x18D93B4 VA: 0x18D93B4
+	public BoardPlacementAnimation get_BoardPlacementAnimation() { }
+
+	[CompilerGenerated]
+	// RVA: 0x18D93BC Offset: 0x18D93BC VA: 0x18D93BC
+	public void set_BoardPlacementAnimation(BoardPlacementAnimation value) { }
+
+	// RVA: 0x18D93C4 Offset: 0x18D93C4 VA: 0x18D93C4
+	public AnimatedCollectableTracker get_AnimatedCollectableTracker() { }
+
+	// RVA: 0x18D93CC Offset: 0x18D93CC VA: 0x18D93CC Slot: 17
+	public void IncreaseChargingChestCount() { }
+
+	// RVA: 0x18D93DC Offset: 0x18D93DC VA: 0x18D93DC Slot: 18
+	public void DecreaseChargingChestCount() { }
+
+	// RVA: 0x18D93F0 Offset: 0x18D93F0 VA: 0x18D93F0 Slot: 6
+	public override void Awake() { }
+
+	// RVA: 0x18D97C0 Offset: 0x18D97C0 VA: 0x18D97C0 Slot: 7
+	public override void Start() { }
+
+	// RVA: 0x18D9DB0 Offset: 0x18D9DB0 VA: 0x18D9DB0
+	private void OverrideSpecialTaskItemImages() { }
+
+	// RVA: 0x18DA22C Offset: 0x18DA22C VA: 0x18DA22C Slot: 9
+	public override void OnDestroy() { }
+
+	// RVA: 0x18D9CD4 Offset: 0x18D9CD4 VA: 0x18D9CD4
+	private void SendBoardSessionFunnelEvent(GameStatusState state) { }
+
+	[AsyncStateMachine(typeof(BoardController.<InitializeEventBoard>d__127))]
+	// RVA: 0x18DA50C Offset: 0x18DA50C VA: 0x18DA50C
+	private UniTaskVoid InitializeEventBoard(BoardData boardData) { }
+
+	// RVA: 0x18DA5D0 Offset: 0x18DA5D0 VA: 0x18DA5D0
+	private void FixBrokenEventEntity() { }
+
+	[AsyncStateMachine(typeof(BoardController.<InitBoardEvent>d__129))]
+	// RVA: 0x18DA17C Offset: 0x18DA17C VA: 0x18DA17C
+	private UniTaskVoid InitBoardEvent(int index) { }
+
+	[AsyncStateMachine(typeof(BoardController.<InitBoard>d__130))]
+	// RVA: 0x18DA0C0 Offset: 0x18DA0C0 VA: 0x18DA0C0
+	private UniTaskVoid InitBoard(BoardData boardData) { }
+
+	[AsyncStateMachine(typeof(BoardController.<ResultCallback>d__131))]
+	// RVA: 0x18DA960 Offset: 0x18DA960 VA: 0x18DA960
+	private UniTask<bool> ResultCallback(BoardData boardData) { }
+
+	[AsyncStateMachine(typeof(BoardController.<InitializeAsync>d__132))]
+	// RVA: 0x18DAA88 Offset: 0x18DAA88 VA: 0x18DAA88
+	private UniTask<bool> InitializeAsync(bool isNewlyCreated) { }
+
+	// RVA: 0x18DABA8 Offset: 0x18DABA8 VA: 0x18DABA8
+	private void CheckRewardAreaEntity(BoardEvent.InitializeBoard e) { }
+
+	// RVA: 0x18DB100 Offset: 0x18DB100 VA: 0x18DB100
+	public void RevertDraggingBoardItems() { }
+
+	// RVA: 0x18DB364 Offset: 0x18DB364 VA: 0x18DB364
+	private void InitializeAnimations() { }
+
+	[AsyncStateMachine(typeof(BoardController.<InitializeBoard>d__136))]
+	// RVA: 0x18DB398 Offset: 0x18DB398 VA: 0x18DB398
+	private UniTask<bool> InitializeBoard(BoardEntity boardEntity, bool isFirstSession, EventEntity eventEntity) { }
+
+	[AsyncStateMachine(typeof(BoardController.<RemoveUnusedAddressables>d__137))]
+	// RVA: 0x18DB4E0 Offset: 0x18DB4E0 VA: 0x18DB4E0
+	private UniTask RemoveUnusedAddressables(AddressableDownloader addressableDownloader) { }
+
+	// RVA: 0x18DB5D0 Offset: 0x18DB5D0 VA: 0x18DB5D0
+	private void InitObjectPool(int maxBoardItemCount) { }
+
+	// RVA: 0x18DB7E8 Offset: 0x18DB7E8 VA: 0x18DB7E8
+	public void SaveSpawnerSetIDsOnInitialize() { }
+
+	[AsyncStateMachine(typeof(BoardController.<LoadBoard>d__140))]
+	// RVA: 0x18DBCA0 Offset: 0x18DBCA0 VA: 0x18DBCA0
+	private UniTask<bool> LoadBoard(BoardData boardData, bool isEventBoard) { }
+
+	// RVA: 0x18DBDD0 Offset: 0x18DBDD0 VA: 0x18DBDD0
+	private void InitializeNullEntitiesForUpdatedUsers() { }
+
+	// RVA: 0x18DCC28 Offset: 0x18DCC28 VA: 0x18DCC28
+	private void FixMissingCompletedMetaTaskItems() { }
+
+	// RVA: 0x18DD10C Offset: 0x18DD10C VA: 0x18DD10C
+	private void SendInitializeEvents(BoardEntity boardEntity, EventEntity eventEntity, bool isFirstSession) { }
+
+	// RVA: 0x18DD51C Offset: 0x18DD51C VA: 0x18DD51C
+	private void SendInitAnalyticsEvents(BoardEntity boardEntity) { }
+
+	// RVA: 0x18DDDDC Offset: 0x18DDDDC VA: 0x18DDDDC
+	public static void ProcessWaitingEventLevelUp(EventEntity eventEntity, BoardData boardData) { }
+
+	// RVA: 0x18DE400 Offset: 0x18DE400 VA: 0x18DE400
+	public void SetBoardInitEnergiesProcessed() { }
+
+	// RVA: 0x18DE40C Offset: 0x18DE40C VA: 0x18DE40C
+	public BoardTaskController GetBoardTaskController() { }
+
+	// RVA: 0x18DE428 Offset: 0x18DE428 VA: 0x18DE428
+	public List<BoardTaskItemController> GetBoardTaskItemControllers() { }
+
+	// RVA: 0x18DE4D4 Offset: 0x18DE4D4 VA: 0x18DE4D4
+	public List<int> FindDoneItems(List<BoardTaskItemController> activeBoardTasks) { }
+
+	[AsyncStateMachine(typeof(BoardController.<StopBoard>d__150))]
+	// RVA: 0x18DA46C Offset: 0x18DA46C VA: 0x18DA46C
+	public UniTaskVoid StopBoard() { }
+
+	// RVA: 0x18DEAB8 Offset: 0x18DEAB8 VA: 0x18DEAB8
+	private void InjectConfigurableAssets(BoardConfigurableUIData data) { }
+
+	// RVA: 0x18DEB88 Offset: 0x18DEB88 VA: 0x18DEB88
+	private void SetItemCollection() { }
+
+	// RVA: 0x18DEC6C Offset: 0x18DEC6C VA: 0x18DEC6C Slot: 11
+	public override void UpdatePlayingTick(float elapsedTime) { }
+
+	// RVA: 0x18DF12C Offset: 0x18DF12C VA: 0x18DF12C Slot: 13
+	public override void UpdatePausedTick(float elapsedTime) { }
+
+	// RVA: 0x18DF408 Offset: 0x18DF408 VA: 0x18DF408 Slot: 12
+	public override void UpdateTutorialTick(float elapsedTime) { }
+
+	// RVA: 0x18DF488 Offset: 0x18DF488 VA: 0x18DF488 Slot: 14
+	public override void UpdateTick() { }
+
+	// RVA: 0x18DF1AC Offset: 0x18DF1AC VA: 0x18DF1AC
+	private void SpawnerAnimationCyclePaused() { }
+
+	// RVA: 0x18DECEC Offset: 0x18DECEC VA: 0x18DECEC
+	private void StartSpawnerAnimations() { }
+
+	// RVA: 0x18DF80C Offset: 0x18DF80C VA: 0x18DF80C
+	public float GetSpawnerAnimationPosition() { }
+
+	// RVA: 0x18DFB48 Offset: 0x18DFB48 VA: 0x18DFB48
+	public void AddToSavedSpawnerSetIDsORuntime(List<BoardItemSetData> setDatas) { }
+
+	// RVA: 0x18E0038 Offset: 0x18E0038 VA: 0x18E0038
+	private void SetMillisecondsPassed(long millisecondsPassed, string trigger) { }
+
+	// RVA: 0x18E0130 Offset: 0x18E0130 VA: 0x18E0130
+	private InventoryEntity GetInventoryEntity() { }
+
+	// RVA: 0x18DD83C Offset: 0x18DD83C VA: 0x18DD83C
+	private void InitializeInventory(BoardEntity boardEntity, EventEntity eventEntity) { }
+
+	// RVA: 0x18E0164 Offset: 0x18E0164 VA: 0x18E0164
+	private void ProcessPausedSpawnerCapacity() { }
+
+	// RVA: 0x18E03D0 Offset: 0x18E03D0 VA: 0x18E03D0
+	private void CreateOfflineAutoItems() { }
+
+	[AsyncStateMachine(typeof(BoardController.<SpawnItemAsyncOnSplit>d__166))]
+	// RVA: 0x18E0838 Offset: 0x18E0838 VA: 0x18E0838
+	private UniTask<ItemController> SpawnItemAsyncOnSplit(BoardItemData boardItemData, ItemEntity itemEntity, Coordinate spawnerCoordinate, ItemCreationHandler itemCreationHandler) { }
+
+	[AsyncStateMachine(typeof(BoardController.<SpawnItemAsync>d__167))]
+	// RVA: 0x18E09AC Offset: 0x18E09AC VA: 0x18E09AC
+	private UniTask<ItemController> SpawnItemAsync(BoardItemData boardItemData, ItemEntity itemEntity, Coordinate spawnerCoordinate, bool onInitialize, bool merged = False, bool isNewlyCreated = True, ItemCreationHandler itemCreationHandler) { }
+
+	// RVA: 0x18E0B38 Offset: 0x18E0B38 VA: 0x18E0B38
+	private ItemController SpawnItem(BoardItemData boardItemData, ItemEntity itemEntity, Coordinate spawnerCoordinate, bool onBoardInitialize, bool merged = False, bool isNewlyCreated = True, int capacity = 0, bool isCapacityUpdated = True, bool isBubbleDestroy = False, ItemCreationHandler itemCreationHandler) { }
+
+	// RVA: 0x18E154C Offset: 0x18E154C VA: 0x18E154C
+	public void TrySendBoardItemSpawnFirebaseEvent(bool isNewItem, BoardItemData boardItemData, ItemCreationHandler itemCreationHandler, bool onBoardInitialize = False) { }
+
+	// RVA: 0x18E17E8 Offset: 0x18E17E8 VA: 0x18E17E8
+	private bool IsSendBoardItemSpawnFirebaseEvent(BoardItemData boardItemData, ref ItemCreationHandler itemCreationHandler, bool onBoardInitialize) { }
+
+	// RVA: 0x18E1B10 Offset: 0x18E1B10 VA: 0x18E1B10
+	private static bool IsRecurringEventSpawnerSpawn(BoardItemData boardItemData, ref ItemCreationHandler itemCreationHandler, bool onBoardInitialize) { }
+
+	// RVA: 0x18E1748 Offset: 0x18E1748 VA: 0x18E1748
+	public void AddBoardSlotFullCounter() { }
+
+	// RVA: 0x18E1E9C Offset: 0x18E1E9C VA: 0x18E1E9C
+	private SlotFullCounter.BoardType GetFireSlotFullType() { }
+
+	// RVA: 0x18E1784 Offset: 0x18E1784 VA: 0x18E1784
+	private bool IsSendBoardFullFirebaseEventOnSpawnItem() { }
+
+	// RVA: 0x18E1660 Offset: 0x18E1660 VA: 0x18E1660
+	private bool IsSendBoardFullFirebaseEventOnSplitBooster(ItemCreationHandler itemCreationHandler) { }
+
+	// RVA: 0x18E21B8 Offset: 0x18E21B8 VA: 0x18E21B8
+	public bool IsSendBoardFullFirebaseEventORemoveJelly() { }
+
+	// RVA: 0x18E1914 Offset: 0x18E1914 VA: 0x18E1914
+	public string GetBoardItemSpawnFirebaseEventTrigger(ItemCreationHandler itemCreationHandler) { }
+
+	// RVA: 0x18E1400 Offset: 0x18E1400 VA: 0x18E1400
+	private void TrySendSpecialTaskEvents(BoardItemData boardItemData) { }
+
+	// RVA: 0x18E2218 Offset: 0x18E2218 VA: 0x18E2218
+	public BoardPositionEntity FindSameItem(ItemEntity itemEntity) { }
+
+	// RVA: 0x18E233C Offset: 0x18E233C VA: 0x18E233C
+	public BoardPositionEntity FindSameItem(ItemRuntimeData itemRuntimeData) { }
+
+	// RVA: 0x18E2364 Offset: 0x18E2364 VA: 0x18E2364
+	private CellController SpawnCell(CellEntity cellEntity, Vector2 position) { }
+
+	// RVA: 0x18E24E8 Offset: 0x18E24E8 VA: 0x18E24E8
+	public BoardPosition GetPosition(Coordinate index) { }
+
+	// RVA: 0x18E26F0 Offset: 0x18E26F0 VA: 0x18E26F0
+	public BoardPosition GetPosition(int index) { }
+
+	// RVA: 0x18E275C Offset: 0x18E275C VA: 0x18E275C
+	public BoardPosition GetFirstPosition() { }
+
+	// RVA: 0x18E27C4 Offset: 0x18E27C4 VA: 0x18E27C4
+	public BoardPosition GetLastPosition() { }
+
+	// RVA: 0x18E2840 Offset: 0x18E2840 VA: 0x18E2840
+	public Vector2 GetWorldPosition(Coordinate boardIndex) { }
+
+	// RVA: 0x18DEA68 Offset: 0x18DEA68 VA: 0x18DEA68
+	public int GetListPosition(ItemController item) { }
+
+	// RVA: 0x18E28B8 Offset: 0x18E28B8 VA: 0x18E28B8
+	public int GetListPosition(Coordinate boardIndex) { }
+
+	// RVA: 0x18E2A70 Offset: 0x18E2A70 VA: 0x18E2A70
+	private void SwapItemsOnBoard(ItemController source, ItemController target, BoardPosition selectedBoardPosition, bool saveBoard = True) { }
+
+	// RVA: 0x18E3554 Offset: 0x18E3554 VA: 0x18E3554
+	private BoardType GetBoardType() { }
+
+	// RVA: 0x18E355C Offset: 0x18E355C VA: 0x18E355C
+	private void MergeItemsOnBoard(ItemController source, ItemController target, BoardItemData itemData, BoardPosition boardPosition) { }
+
+	// RVA: 0x18E51A8 Offset: 0x18E51A8 VA: 0x18E51A8
+	private List<ItemController> ProcessUnbox(Coordinate targetCoordinate) { }
+
+	// RVA: 0x18E56D8 Offset: 0x18E56D8 VA: 0x18E56D8
+	private List<ItemController> ProcessLevelUnbox() { }
+
+	// RVA: 0x18E5A9C Offset: 0x18E5A9C VA: 0x18E5A9C
+	public BoardItemSurpriseBox GetSurpriseBox() { }
+
+	// RVA: 0x18E5D40 Offset: 0x18E5D40 VA: 0x18E5D40
+	public bool IsLastLevel(ItemController itemController) { }
+
+	// RVA: 0x18E5DDC Offset: 0x18E5DDC VA: 0x18E5DDC
+	private List<BoardItemData> GetBoardItemSetItems(ItemController itemController) { }
+
+	// RVA: 0x18E6030 Offset: 0x18E6030 VA: 0x18E6030
+	public bool IsItemExitsOnBoard(int setID, int level) { }
+
+	// RVA: 0x18E6234 Offset: 0x18E6234 VA: 0x18E6234
+	public bool IsSingleItemOnSet(ItemInfo itemInfo) { }
+
+	// RVA: 0x18E4C50 Offset: 0x18E4C50 VA: 0x18E4C50
+	private ItemEntity ProcessExtraItemData(Coordinate targetCoordinate) { }
+
+	// RVA: 0x18E50D4 Offset: 0x18E50D4 VA: 0x18E50D4
+	private void PlayMergeSound(bool isJelly, int level, int setID) { }
+
+	// RVA: 0x18E6318 Offset: 0x18E6318 VA: 0x18E6318
+	private void CreateParticle(ParticleSystem particlePrefab, Vector3 position, Transform parent, SortingData sortingData) { }
+
+	[IteratorStateMachine(typeof(BoardController.<CreateParticleRoutine>d__202))]
+	// RVA: 0x18E638C Offset: 0x18E638C VA: 0x18E638C
+	private IEnumerator CreateParticleRoutine(GameObject particlePrefab, Vector3 position, bool autoPlay = True, Transform parent, SortingData sortingData) { }
+
+	// RVA: 0x18E4368 Offset: 0x18E4368 VA: 0x18E4368
+	private ItemEntity ProcessBubbleData(ItemEntity itemEntity, Coordinate sourceBoardIndex) { }
+
+	// RVA: 0x18E6470 Offset: 0x18E6470 VA: 0x18E6470
+	private bool CheckActiveTasksForExistingBubble(ItemEntity itemEntity, List<BoardTaskItem> activeTasks, int mergedItemLevel, ref bool setBubble) { }
+
+	// RVA: 0x18E6D0C Offset: 0x18E6D0C VA: 0x18E6D0C
+	private void MoveItemOnBoard(ItemController item, CellController boardCell, BoardPosition boardPosition, bool saveBoard = True) { }
+
+	// RVA: 0x18E34E4 Offset: 0x18E34E4 VA: 0x18E34E4
+	private bool SetItemOnBoard(Coordinate boardIndex, ItemController item, bool saveBoard = True, bool spawnAnimated = True, bool swapAnimated = False, bool panelAnimated = False, BoardPosition selectedBoardPosition, bool merged = False, bool move = False, ItemCreationHandler itemCreationHandler, bool isBubbleTimeFinish = False, bool nonAnimated = False, bool boosterSplit = False) { }
+
+	// RVA: 0x18E6FB0 Offset: 0x18E6FB0 VA: 0x18E6FB0
+	private bool SetItemOnBoard(Coordinate boardIndex, ItemController item, bool skipCellCheck, bool saveBoard, bool spawnAnimated, bool swapAnimated, bool panelAnimated, bool merged, bool move, BoardPosition selectedBoardPosition, bool onInitialize = False, ItemCreationHandler itemCreationHandler, bool isBubbleTimeFinish = False, bool nonAnimated = False, bool boosterSplit = False) { }
+
+	// RVA: 0x18E7BD8 Offset: 0x18E7BD8 VA: 0x18E7BD8
+	private void ArrangeTutorialEventsOnSetItems(Coordinate boardIndex, ItemController item, bool merged, bool move, bool swap) { }
+
+	[IteratorStateMachine(typeof(BoardController.<ItemSetAnimationRoutine>d__209))]
+	// RVA: 0x18E7AD8 Offset: 0x18E7AD8 VA: 0x18E7AD8
+	private IEnumerator ItemSetAnimationRoutine(ItemController item, bool spawnAnimated, bool swapAnimated, bool panelAnimated, BoardPosition selectedBoardPosition, CellController targetCell, ItemCreationHandler itemCreationHandler, bool nonAnimated, bool boosterSplit) { }
+
+	// RVA: 0x18E90F4 Offset: 0x18E90F4 VA: 0x18E90F4
+	public bool IsCellUnAvailable() { }
+
+	// RVA: 0x18E9154 Offset: 0x18E9154 VA: 0x18E9154
+	private void SpawnItemAnimation(ItemController item, CellController targetCell, BoardPosition selectedBoardPosition, ItemCreationHandler itemCreationHandler, bool boosterSplit) { }
+
+	// RVA: 0x18EA124 Offset: 0x18EA124 VA: 0x18EA124
+	private Sequence GetPlacementSequence(ItemController item, CellController targetCell) { }
+
+	// RVA: 0x18E9B60 Offset: 0x18E9B60 VA: 0x18E9B60
+	private TutorialIndex GetSpawnItemTutorialIndex(ItemController item, bool boosterSplit, bool isCellUnAvailable, bool is115WillBeEnabled) { }
+
+	// RVA: 0x18EA158 Offset: 0x18EA158 VA: 0x18EA158
+	private void TriggerSpawnItemTutorial(TutorialIndex tutorialIndex, ItemController item) { }
+
+	// RVA: 0x18EA414 Offset: 0x18EA414 VA: 0x18EA414
+	private void SwapItemAnimation(ItemController item, CellController targetCell, BoardPosition selectedBoardPosition, ItemCreationHandler itemCreationHandler) { }
+
+	// RVA: 0x18EA614 Offset: 0x18EA614 VA: 0x18EA614
+	private void PanelItemAnimation(ItemController item, CellController targetCell, BoardPosition selectedBoardPosition, ItemCreationHandler itemCreationHandler) { }
+
+	// RVA: 0x18EAB28 Offset: 0x18EAB28 VA: 0x18EAB28
+	private TutorialIndex GetPanelItemTutorialIndex(ItemController item, bool isOpenStep79, bool isCellUnAvailable) { }
+
+	// RVA: 0x18EAFA8 Offset: 0x18EAFA8 VA: 0x18EAFA8
+	private void TriggerPanelItemTutorial(TutorialIndex tutorialIndex, ItemController item) { }
+
+	// RVA: 0x18EB1D8 Offset: 0x18EB1D8 VA: 0x18EB1D8
+	private void MoveItemAnimation(ItemController item, CellController targetCell, BoardPosition selectedBoardPosition, ItemCreationHandler itemCreationHandler) { }
+
+	// RVA: 0x18EB3C0 Offset: 0x18EB3C0 VA: 0x18EB3C0
+	private void TryCreateNewItemFloatOnSetAnimation(ItemCreationHandler itemCreationHandler) { }
+
+	// RVA: 0x18EB484 Offset: 0x18EB484 VA: 0x18EB484
+	public bool IsCreateNewFoundText(ItemController item) { }
+
+	// RVA: 0x18EB554 Offset: 0x18EB554 VA: 0x18EB554
+	public void CreateNewItemText(ItemController item, bool tutorialActive = False) { }
+
+	// RVA: 0x18EB60C Offset: 0x18EB60C VA: 0x18EB60C
+	private void SpawnAnimationComplete(ItemController item) { }
+
+	// RVA: 0x18EB688 Offset: 0x18EB688 VA: 0x18EB688
+	public Coordinate GetSelectedPositionIndex() { }
+
+	// RVA: 0x18E4290 Offset: 0x18E4290 VA: 0x18E4290
+	public void DestroyItem(Coordinate boardIndex, bool saveBoard, bool resetInfo) { }
+
+	// RVA: 0x18EBA08 Offset: 0x18EBA08 VA: 0x18EBA08
+	private void DestroyItemViaSell(ItemController itemController, bool saveBoard) { }
+
+	// RVA: 0x18EB724 Offset: 0x18EB724 VA: 0x18EB724
+	public bool DestroyItemGameObject(Coordinate boardIndex, bool resetInfo, bool saveBoard) { }
+
+	// RVA: 0x18EBAB8 Offset: 0x18EBAB8 VA: 0x18EBAB8
+	private bool DestroyItemGameObjectViaSell(ItemController itemController, bool saveBoard) { }
+
+	// RVA: 0x18EB920 Offset: 0x18EB920 VA: 0x18EB920
+	public void DestroyItemEntity(Coordinate boardIndex) { }
+
+	// RVA: 0x18EBCE4 Offset: 0x18EBCE4 VA: 0x18EBCE4
+	public void DestroyItemEntitySave(Coordinate boardIndex) { }
+
+	// RVA: 0x18E2F34 Offset: 0x18E2F34 VA: 0x18E2F34
+	public void ClearCell(Coordinate boardIndex, bool saveBoard = True) { }
+
+	// RVA: 0x18EBCFC Offset: 0x18EBCFC VA: 0x18EBCFC
+	public void DestroyItemsBySetID(int setID, bool saveBoard) { }
+
+	// RVA: 0x18EBF58 Offset: 0x18EBF58 VA: 0x18EBF58
+	public void DestroyItem(ItemController item, bool inventoryAdd, bool saveBoard = True, bool resetInfo = True, bool itemSell = False) { }
+
+	// RVA: 0x18EC074 Offset: 0x18EC074 VA: 0x18EC074
+	public void DestroyItemViaSell(ItemController item) { }
+
+	[AsyncStateMachine(typeof(BoardController.<SpawnAllAnimatedRewardsForTask>d__235))]
+	// RVA: 0x18EC148 Offset: 0x18EC148 VA: 0x18EC148
+	private UniTaskVoid SpawnAllAnimatedRewardsForTask(BoardItemCollectable collectableData, RectTransform targetSpawnItem, BoardTaskItem boardTaskItem) { }
+
+	// RVA: 0x18EC234 Offset: 0x18EC234 VA: 0x18EC234
+	private int CalculateTotalAnimatedItemCount(BoardTaskItem boardTaskItem, GameConfig gameConfig) { }
+
+	// RVA: 0x18ECCF0 Offset: 0x18ECCF0 VA: 0x18ECCF0
+	private void OnAllAnimatedItemsCompleted() { }
+
+	// RVA: 0x18ED048 Offset: 0x18ED048 VA: 0x18ED048
+	public void StartXPProgressAnimationIfXPShowClose(BoardTaskItem boardTaskItem) { }
+
+	// RVA: 0x18ED1A0 Offset: 0x18ED1A0 VA: 0x18ED1A0
+	public void GenerateTaskExtraItemsReward(Vector3 position, float initDelay, BoardTaskItem boardTaskItem, bool isEvent) { }
+
+	// RVA: 0x18ED5BC Offset: 0x18ED5BC VA: 0x18ED5BC
+	public void GenerateTaskRecurringEventReward(BoardItemCollectable collectableData, Vector3 position, float initDelay, BoardTaskItem boardTaskItem) { }
+
+	// RVA: 0x18EDC2C Offset: 0x18EDC2C VA: 0x18EDC2C
+	private void GenerateTaskSeasonReward(Vector3 position, float initDelay, BoardTaskItem boardTaskItem) { }
+
+	// RVA: 0x18EDFA0 Offset: 0x18EDFA0 VA: 0x18EDFA0
+	private void GenerateTaskBoardEventReward(Vector3 position, float initDelay, BoardTaskItem boardTaskItem) { }
+
+	// RVA: 0x18EE214 Offset: 0x18EE214 VA: 0x18EE214
+	private void GenerateTaskCoinReward(BoardItemCollectable collectableData, Vector3 position, float initDelay, BoardTaskItem boardTaskItem) { }
+
+	// RVA: 0x18EE490 Offset: 0x18EE490 VA: 0x18EE490
+	private void GenerateTaskXPReward(BoardItemCollectable collectableData, Vector3 position, float initDelay, BoardTaskItem boardTaskItem) { }
+
+	// RVA: 0x18EE70C Offset: 0x18EE70C VA: 0x18EE70C
+	private void GenerateTaskGemReward(BoardItemCollectable collectableData, Vector3 position, float initDelay, BoardTaskItem boardTaskItem) { }
+
+	// RVA: 0x18EEAF0 Offset: 0x18EEAF0 VA: 0x18EEAF0
+	private void SpawnAnimatedCollectable(BoardItemCollectable collectableData, Vector3 position, int count, int toCollect, float initDelay) { }
+
+	// RVA: 0x18ED47C Offset: 0x18ED47C VA: 0x18ED47C
+	private AnimatedCollectableController InstantiateReward(Vector3 position, AnimatedCollectableController.AnimatedItemType type) { }
+
+	// RVA: 0x18EED6C Offset: 0x18EED6C VA: 0x18EED6C
+	public void SyncSpawnersSpineParticle() { }
+
+	// RVA: 0x18EF288 Offset: 0x18EF288 VA: 0x18EF288
+	public float GetTotalMergeLevelInBoardFloat(int setID) { }
+
+	// RVA: 0x18EFD70 Offset: 0x18EFD70 VA: 0x18EFD70
+	private bool PlaySurpriseBoxParticle(BoardItemData perishableSpawnerData) { }
+
+	// RVA: 0x18EFE60 Offset: 0x18EFE60 VA: 0x18EFE60
+	public List<Coordinate> GetAvailableNeighborCellPositions(Coordinate boardIndex) { }
+
+	// RVA: 0x18F0380 Offset: 0x18F0380 VA: 0x18F0380
+	private void CheckCreateParticle(BoardItemData boardItemData, Vector3 chestSpawnerPosition, SortingData sortingData) { }
+
+	// RVA: 0x18F0770 Offset: 0x18F0770 VA: 0x18F0770
+	private ItemController SpawnAtRandomPosition(ItemEntity itemEntity, BoardItemData boardItemData, bool isNewlyCreated, Transform sourceTransform, bool disableItemSelection = False, bool isCapacityUpdated = True, ItemCreationHandler itemCreationHandler) { }
+
+	// RVA: 0x18F0A14 Offset: 0x18F0A14 VA: 0x18F0A14
+	private void SpawnBubbleAtRandomPosition(ItemEntity itemEntity, BoardItemData boardItemData, bool isNewlyCreated, Transform sourceTransform, bool disableItemSelection = False, bool isCapacityUpdated = True, ItemCreationHandler itemCreationHandler) { }
+
+	// RVA: 0x18DD100 Offset: 0x18DD100 VA: 0x18DD100
+	private void Save(bool close = False) { }
+
+	// RVA: 0x18F0CA4 Offset: 0x18F0CA4 VA: 0x18F0CA4
+	private BoardEntity Load() { }
+
+	// RVA: 0x18E4E24 Offset: 0x18E4E24 VA: 0x18E4E24
+	public void SetSelectedPosition(BoardPosition position, bool selectCell = True, bool dontUseAnimation = False) { }
+
+	// RVA: 0x18EBBD4 Offset: 0x18EBBD4 VA: 0x18EBBD4
+	private void ClearSelectedPosition(bool resetInfo, bool itemDestroy) { }
+
+	// RVA: 0x18F0D70 Offset: 0x18F0D70 VA: 0x18F0D70
+	public void ArrangeSelectedCellImage(bool isActive) { }
+
+	// RVA: 0x18F0DAC Offset: 0x18F0DAC VA: 0x18F0DAC
+	public void AnimateDoneBoardTaskItems(BoardTaskItemController completedTaskItemController, Action<bool> callback) { }
+
+	// RVA: 0x18F17F8 Offset: 0x18F17F8 VA: 0x18F17F8
+	public void AnimateDoneAllSpecialTaskItems(BoardTaskItemController completedTaskItemController, List<BoardPositionEntity> positionsMatched) { }
+
+	// RVA: 0x18F1768 Offset: 0x18F1768 VA: 0x18F1768
+	private void PrepareItemToScrollableAreaAnimation(BoardPosition position) { }
+
+	// RVA: 0x18F15AC Offset: 0x18F15AC VA: 0x18F15AC
+	public bool IsTaskGoal(ItemController item, BoardTaskGoal goalItem) { }
+
+	// RVA: 0x18F19D4 Offset: 0x18F19D4 VA: 0x18F19D4
+	public void ProcessDart(BoosterAnimationController.BubbleInfo Bubble) { }
+
+	// RVA: 0x18F1A44 Offset: 0x18F1A44 VA: 0x18F1A44
+	public void ProcessUpgrade(BoosterAnimationController.UpgradeInfo Upgrade) { }
+
+	// RVA: 0x18F1CC0 Offset: 0x18F1CC0 VA: 0x18F1CC0
+	public void ProcessCharger(BoosterAnimationController.ChargeInfo Charge) { }
+
+	[AsyncStateMachine(typeof(BoardController.<ProcessSplit>d__267))]
+	// RVA: 0x18F1D24 Offset: 0x18F1D24 VA: 0x18F1D24
+	public UniTaskVoid ProcessSplit(BoosterAnimationController.SplitInfo Split) { }
+
+	// RVA: 0x18E1EA4 Offset: 0x18E1EA4 VA: 0x18E1EA4
+	public List<CellEntity> GetAvailableCells() { }
+
+	// RVA: 0x18E3064 Offset: 0x18E3064 VA: 0x18E3064
+	public List<Coordinate> GetAvailableCellCoordinates(Coordinate targetIndex) { }
+
+	// RVA: 0x18F1DF0 Offset: 0x18F1DF0 VA: 0x18F1DF0
+	public List<CellController> GetNearestAvailableOtherCells(Transform sourceTransform) { }
+
+	[AsyncStateMachine(typeof(BoardController.<ProcessCloudDestroy>d__271))]
+	// RVA: 0x18F21F0 Offset: 0x18F21F0 VA: 0x18F21F0
+	private UniTaskVoid ProcessCloudDestroy(int level, bool isSentByTutorial, UnityAction onItemsSet) { }
+
+	// RVA: 0x18F22B4 Offset: 0x18F22B4 VA: 0x18F22B4
+	private void SetCloudItems(int level) { }
+
+	[AsyncStateMachine(typeof(BoardController.<SetCloudItemsAsync>d__273))]
+	// RVA: 0x18F2A0C Offset: 0x18F2A0C VA: 0x18F2A0C
+	private UniTask<bool> SetCloudItemsAsync(int level) { }
+
+	// RVA: 0x18EEF8C Offset: 0x18EEF8C VA: 0x18EEF8C
+	private List<ItemController> GetSpawnersWithSpineOnBoard() { }
+
+	// RVA: 0x18F2B28 Offset: 0x18F2B28 VA: 0x18F2B28
+	public void ClearAllTreasureBoxNotifs() { }
+
+	// RVA: 0x18F2D94 Offset: 0x18F2D94 VA: 0x18F2D94
+	public void ArrangeTreasureBoxNotifsOnBoard(ItemController initializingItem) { }
+
+	// RVA: 0x18F3530 Offset: 0x18F3530 VA: 0x18F3530
+	public bool IsEventBoard() { }
+
+	// RVA: 0x18F3538 Offset: 0x18F3538 VA: 0x18F3538
+	private void FixFeatureInfoForBoardTasks() { }
+
+	[IteratorStateMachine(typeof(BoardController.<SendSaveBoardEvent>d__279))]
+	// RVA: 0x18F3B70 Offset: 0x18F3B70 VA: 0x18F3B70
+	private IEnumerator SendSaveBoardEvent() { }
+
+	// RVA: 0x18F3BF0 Offset: 0x18F3BF0 VA: 0x18F3BF0
+	private bool IsSafeToUnPauseUnlimitedEnergy() { }
+
+	// RVA: 0x18F3C30 Offset: 0x18F3C30 VA: 0x18F3C30
+	private void FixMissingSpawnerItems() { }
+
+	// RVA: 0x18F3D18 Offset: 0x18F3D18 VA: 0x18F3D18
+	private void FixMissingSpawnersInMap() { }
+
+	// RVA: 0x18F5F20 Offset: 0x18F5F20 VA: 0x18F5F20
+	private void TryFixSpecialTaskSpawner(ref int fixedItemCount, List<BoardItemData> boardItemDataList) { }
+
+	// RVA: 0x18F6770 Offset: 0x18F6770 VA: 0x18F6770
+	private void FixMissingSpawner(int setID, int level) { }
+
+	// RVA: 0x18F5EA4 Offset: 0x18F5EA4 VA: 0x18F5EA4
+	private void FixMissingSpawnerPrecise(int setID, int requiredPoints) { }
+
+	// RVA: 0x18F69D4 Offset: 0x18F69D4 VA: 0x18F69D4
+	public bool IsAnyItemMoving() { }
+
+	// RVA: 0x18E7ACC Offset: 0x18E7ACC VA: 0x18E7ACC
+	public void BlockAutoSpawners() { }
+
+	// RVA: 0x18F0D64 Offset: 0x18F0D64 VA: 0x18F0D64
+	public void ReleaseAutoSpawners() { }
+
+	// RVA: 0x18F6C30 Offset: 0x18F6C30 VA: 0x18F6C30
+	public void BlockSelectionItem() { }
+
+	// RVA: 0x18F6C3C Offset: 0x18F6C3C VA: 0x18F6C3C
+	public void ReleaseSelectionItem() { }
+
+	// RVA: 0x18F6C48 Offset: 0x18F6C48 VA: 0x18F6C48
+	public bool ArrangeSeasonPassPoints(BoardTaskItem boardTaskItem) { }
+
+	// RVA: 0x18F71B0 Offset: 0x18F71B0 VA: 0x18F71B0
+	public void CountChargingChest() { }
+
+	// RVA: 0x18F7390 Offset: 0x18F7390 VA: 0x18F7390
+	public void DisableObjectsOnLevel(BoardPosition boardPosition) { }
+
+	[AsyncStateMachine(typeof(BoardController.<UnboxCellsAfterLevelupDismiss>d__294))]
+	// RVA: 0x18F7448 Offset: 0x18F7448 VA: 0x18F7448
+	private UniTask<bool> UnboxCellsAfterLevelupDismiss(bool isInit) { }
+
+	// RVA: 0x18F7574 Offset: 0x18F7574 VA: 0x18F7574
+	public void CheckForTutorialStep62(ItemController item) { }
+
+	[AsyncStateMachine(typeof(BoardController.<ProcessCurrencyClick>d__296))]
+	// RVA: 0x18F769C Offset: 0x18F769C VA: 0x18F769C
+	private UniTask ProcessCurrencyClick(ItemController item) { }
+
+	// RVA: 0x18DAF98 Offset: 0x18DAF98 VA: 0x18DAF98
+	public List<RewardEntity> GetActiveRewards() { }
+
+	// RVA: 0x18F7798 Offset: 0x18F7798 VA: 0x18F7798
+	public bool IsNextToAutoSpawner(Coordinate boardIndex) { }
+
+	// RVA: 0x18E3328 Offset: 0x18E3328 VA: 0x18E3328
+	private void SendBoardActionAnalyticEvent(Movable.BoardActionType boardActionType, string from, string to, BoardItemData itemData, BoardItemData spawnerData) { }
+
+	// RVA: 0x18F7CA0 Offset: 0x18F7CA0 VA: 0x18F7CA0
+	public List<int> GetDiscoveryBoxIds() { }
+
+	// RVA: 0x18DAFEC Offset: 0x18DAFEC VA: 0x18DAFEC
+	private bool CheckDailyChallengeItem(int setID) { }
+
+	// RVA: 0x18F7E54 Offset: 0x18F7E54 VA: 0x18F7E54
+	public bool HasMergeHintItems() { }
+
+	// RVA: 0x18F7F28 Offset: 0x18F7F28 VA: 0x18F7F28
+	public bool IsMergeAvailable(ItemController itemController1, ItemController itemController2) { }
+
+	// RVA: 0x18F86C0 Offset: 0x18F86C0 VA: 0x18F86C0
+	public BoardItemData GetMergedItemData(ItemController candidateItem) { }
+
+	// RVA: 0x18F8728 Offset: 0x18F8728 VA: 0x18F8728
+	public bool TryFindMergeableCandidateItems(ItemController itemController, out List<ItemController> candidates) { }
+
+	// RVA: 0x18E568C Offset: 0x18E568C VA: 0x18E568C
+	public void ArrangeCells() { }
+
+	// RVA: 0x18F89F8 Offset: 0x18F89F8 VA: 0x18F89F8
+	private void ArrangeCellsForEvent() { }
+
+	// RVA: 0x18F8A20 Offset: 0x18F8A20 VA: 0x18F8A20
+	private void ArrangeCellsForBoard() { }
+
+	// RVA: 0x18F8A48 Offset: 0x18F8A48 VA: 0x18F8A48
+	private void ArrangeCells(List<BoardPositionEntity> positionEntities) { }
+
+	// RVA: 0x18F8D48 Offset: 0x18F8D48 VA: 0x18F8D48
+	public void TryEnableCellBackgrounds(BoardTaskItemController boardTaskItemController) { }
+
+	// RVA: 0x18F8D5C Offset: 0x18F8D5C VA: 0x18F8D5C
+	private void TryEnableCellBackgroundsForEvent(BoardTaskItemController boardTaskItemController) { }
+
+	// RVA: 0x18F8D8C Offset: 0x18F8D8C VA: 0x18F8D8C
+	private void TryEnableCellBackgroundsForDefaultBoard(BoardTaskItemController boardTaskItemController) { }
+
+	// RVA: 0x18F8DBC Offset: 0x18F8DBC VA: 0x18F8DBC
+	private void TryEnableCellBackgrounds(BoardTaskItemController boardTaskItemController, List<BoardPositionEntity> positionEntities) { }
+
+	// RVA: 0x18F9050 Offset: 0x18F9050 VA: 0x18F9050
+	public void CreateBubbleBurst(CellController cellController, bool bubblePin) { }
+
+	// RVA: 0x18F933C Offset: 0x18F933C VA: 0x18F933C
+	public void CreateBubbleBurst(ItemController itemController, bool bubblePin) { }
+
+	// RVA: 0x18F90B8 Offset: 0x18F90B8 VA: 0x18F90B8
+	public void ArrangeBubbleInterstitial(GameObject burstParticle) { }
+
+	// RVA: 0x18F938C Offset: 0x18F938C VA: 0x18F938C Slot: 19
+	public void OnEvent(BoardEvent.InitializeBoard e) { }
+
+	// RVA: 0x18F93A0 Offset: 0x18F93A0 VA: 0x18F93A0 Slot: 45
+	public void OnEvent(BoardEvent.PreMergeParticleActive e) { }
+
+	// RVA: 0x18F944C Offset: 0x18F944C VA: 0x18F944C Slot: 20
+	public void OnEvent(BoardEvent.Move e) { }
+
+	// RVA: 0x18F9864 Offset: 0x18F9864 VA: 0x18F9864 Slot: 21
+	public void OnEvent(BoardEvent.Merge e) { }
+
+	// RVA: 0x18F9580 Offset: 0x18F9580 VA: 0x18F9580 Slot: 32
+	public void OnEvent(BoardEvent.RevertMove e) { }
+
+	// RVA: 0x18F98DC Offset: 0x18F98DC VA: 0x18F98DC Slot: 22
+	public void OnEvent(BoardEvent.Swap e) { }
+
+	// RVA: 0x18F9954 Offset: 0x18F9954 VA: 0x18F9954 Slot: 23
+	public void OnEvent(BoardEvent.CollectCollectable e) { }
+
+	// RVA: 0x18FAC64 Offset: 0x18FAC64 VA: 0x18FAC64 Slot: 40
+	public void OnEvent(BoardEvent.EnergyRefillSuccess e) { }
+
+	// RVA: 0x18FB13C Offset: 0x18FB13C VA: 0x18FB13C Slot: 24
+	public void OnEvent(BoardEvent.SpawnerSpawn e) { }
+
+	// RVA: 0x18FB8B0 Offset: 0x18FB8B0 VA: 0x18FB8B0 Slot: 25
+	public void OnEvent(BoardEvent.PerishableSpawnerSpawn e) { }
+
+	// RVA: 0x18FC840 Offset: 0x18FC840 VA: 0x18FC840 Slot: 26
+	public void OnEvent(BoardEvent.AutoSpawnerSpawn e) { }
+
+	// RVA: 0x18FCD50 Offset: 0x18FCD50 VA: 0x18FCD50 Slot: 27
+	public void OnEvent(BoardEvent.ChestSpawnerSpawn e) { }
+
+	// RVA: 0x18FD420 Offset: 0x18FD420 VA: 0x18FD420 Slot: 65
+	public void OnEvent(BoardEvent.TaskSupportChestSpawnerSpawn e) { }
+
+	// RVA: 0x18FD8B4 Offset: 0x18FD8B4 VA: 0x18FD8B4 Slot: 28
+	public void OnEvent(BoardEvent.RemoveFromInventory e) { }
+
+	// RVA: 0x18FD968 Offset: 0x18FD968 VA: 0x18FD968 Slot: 29
+	public void OnEvent(BoardEvent.AddToInventory e) { }
+
+	// RVA: 0x18FDB88 Offset: 0x18FDB88 VA: 0x18FDB88 Slot: 30
+	public void OnEvent(BoardEvent.UndoItemSell e) { }
+
+	// RVA: 0x18FDC24 Offset: 0x18FDC24 VA: 0x18FDC24 Slot: 35
+	public void OnEvent(BoardEvent.RemoveFromRewardUI e) { }
+
+	// RVA: 0x18FDCD8 Offset: 0x18FDCD8 VA: 0x18FDCD8 Slot: 31
+	public void OnEvent(BoardEvent.RemoveItemViaSellComplete e) { }
+
+	// RVA: 0x18FDE10 Offset: 0x18FDE10 VA: 0x18FDE10 Slot: 36
+	public void OnEvent(BoardEvent.BubbleTimeFinish e) { }
+
+	// RVA: 0x18FE270 Offset: 0x18FE270 VA: 0x18FE270 Slot: 34
+	public void OnEvent(ItemClick e) { }
+
+	// RVA: 0x18FE420 Offset: 0x18FE420 VA: 0x18FE420 Slot: 33
+	public void OnEvent(NonMovableItemClick e) { }
+
+	// RVA: 0x18FE55C Offset: 0x18FE55C VA: 0x18FE55C Slot: 37
+	public void OnEvent(BoardEvent.BoosterPanelStatusChange e) { }
+
+	// RVA: 0x18FE7F0 Offset: 0x18FE7F0 VA: 0x18FE7F0 Slot: 38
+	public void OnEvent(BoardEvent.BoosterBoardAction e) { }
+
+	// RVA: 0x19007D8 Offset: 0x19007D8 VA: 0x19007D8 Slot: 39
+	public void OnEvent(BoardEvent.CloudDestroy e) { }
+
+	// RVA: 0x1900808 Offset: 0x1900808 VA: 0x1900808 Slot: 42
+	public void OnEvent(TaskEvent.TaskDoneBoardItemsMoveCompleted e) { }
+
+	// RVA: 0x1900858 Offset: 0x1900858 VA: 0x1900858 Slot: 60
+	public void OnEvent(CanvasEvent.PlayTimeLimitedClockParticle e) { }
+
+	// RVA: 0x1900900 Offset: 0x1900900 VA: 0x1900900 Slot: 41
+	public void OnEvent(AnimationEvent.SpawnerHintAdd e) { }
+
+	// RVA: 0x1900A0C Offset: 0x1900A0C VA: 0x1900A0C Slot: 43
+	public void OnEvent(BoardEvent.BoosterAnimationCompleted e) { }
+
+	// RVA: 0x1900CE4 Offset: 0x1900CE4 VA: 0x1900CE4 Slot: 44
+	public void OnEvent(BoardEvent.ClearBoard e) { }
+
+	// RVA: 0x1900FC4 Offset: 0x1900FC4 VA: 0x1900FC4 Slot: 58
+	public void OnEvent(BoardEvent.DestroyFromBoard e) { }
+
+	// RVA: 0x19012D8 Offset: 0x19012D8 VA: 0x19012D8 Slot: 46
+	public void OnEvent(CameraEvent.CameraChangedRequest e) { }
+
+	// RVA: 0x190145C Offset: 0x190145C VA: 0x190145C Slot: 47
+	public void OnEvent(CameraEvent.CameraChangeCompleted e) { }
+
+	// RVA: 0x1901518 Offset: 0x1901518 VA: 0x1901518 Slot: 48
+	public void OnEvent(SrDebuggerEvent.EventSpawn e) { }
+
+	// RVA: 0x19017D8 Offset: 0x19017D8 VA: 0x19017D8 Slot: 49
+	public void OnEvent(BoardEvent.ApplicationPause e) { }
+
+	// RVA: 0x1901D8C Offset: 0x1901D8C VA: 0x1901D8C Slot: 50
+	public void OnEvent(SrDebuggerEvent.CompleteMetaTaskUntil e) { }
+
+	// RVA: 0x1901F8C Offset: 0x1901F8C VA: 0x1901F8C Slot: 51
+	public void OnEvent(PurchaseEvent.PurchaseResult e) { }
+
+	// RVA: 0x1902308 Offset: 0x1902308 VA: 0x1902308 Slot: 52
+	public void OnEvent(CanvasEvent.NonUndoClicked e) { }
+
+	// RVA: 0x1902314 Offset: 0x1902314 VA: 0x1902314 Slot: 53
+	public void OnEvent(TaskEvent.LevelUpDismissed e) { }
+
+	// RVA: 0x1902380 Offset: 0x1902380 VA: 0x1902380 Slot: 54
+	public void OnEvent(PurchaseEvent.SetTrigger e) { }
+
+	// RVA: 0x1902418 Offset: 0x1902418 VA: 0x1902418 Slot: 55
+	public void OnEvent(BoardEvent.PickBoxItemSelection e) { }
+
+	// RVA: 0x1902744 Offset: 0x1902744 VA: 0x1902744 Slot: 61
+	public void OnEvent(DailyChallengeEvent.PickChestConceptRewardBoxItemSelection e) { }
+
+	// RVA: 0x1902770 Offset: 0x1902770 VA: 0x1902770 Slot: 56
+	public void OnEvent(AnimationEvent.AnimationFinished e) { }
+
+	// RVA: 0x190277C Offset: 0x190277C VA: 0x190277C Slot: 57
+	public void OnEvent(RecurringEvent.CurrencyClicked e) { }
+
+	// RVA: 0x19027E0 Offset: 0x19027E0 VA: 0x19027E0 Slot: 59
+	public void OnEvent(BoardEvent.ClearSelectedPosition e) { }
+
+	// RVA: 0x19027F0 Offset: 0x19027F0 VA: 0x19027F0 Slot: 62
+	public void OnEvent(BoardEvent.OnStateChange e) { }
+
+	// RVA: 0x19027F4 Offset: 0x19027F4 VA: 0x19027F4 Slot: 63
+	public void OnEvent(BoardEvent.BoardItemPositionUpdate e) { }
+
+	// RVA: 0x19027F8 Offset: 0x19027F8 VA: 0x19027F8 Slot: 64
+	public void OnEvent(MetaEvent.SeasonSoftFinish e) { }
+
+	// RVA: 0x1902994 Offset: 0x1902994 VA: 0x1902994
+	public void .ctor() { }
+
+	// RVA: 0x1902B7C Offset: 0x1902B7C VA: 0x1902B7C
+	private static void .cctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1902F58 Offset: 0x1902F58 VA: 0x1902F58
+	private bool <OnEvent>b__351_0(MetaTaskItem item) { }
+}
+

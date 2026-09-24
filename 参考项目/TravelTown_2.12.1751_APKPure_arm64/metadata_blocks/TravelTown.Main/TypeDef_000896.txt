@@ -1,0 +1,182 @@
+// Namespace: MergeEngine.ECS.Systems.Board
+public class BoardInteractionSystem : SystemBase // TypeDefIndex: 896
+{
+	// Fields
+	private BoardSystem _boardSystem; // 0x40
+	private InventorySystem _inventorySystem; // 0x48
+	private OrdersSystem _ordersSystem; // 0x50
+	private BoardComponent _boardComponent; // 0x58
+	private LockedComponent _draggedItem; // 0x60
+	private PositionComponent _draggedPosition; // 0x68
+	private PositionComponent _tappedItem; // 0x70
+	private PositionComponent _selectedItem; // 0x78
+	private const float GuessCellPercentageThreshold = 0.2;
+	[CompilerGenerated]
+	private Action<BoardItemPosition> ItemTapped; // 0x80
+	[CompilerGenerated]
+	private Action<BoardItemPosition> ItemDragStarted; // 0x88
+	[CompilerGenerated]
+	private Action<BoardItemPosition, BoardItemPosition> ItemDragEnded; // 0x90
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x98
+	[Inject]
+	private SignalBus _signalBus; // 0xA0
+	[Inject]
+	private IRandomNumberModel _randomNumberModel; // 0xA8
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0xB0
+	[Inject]
+	private IViewRegistryModel _viewRegistryModel; // 0xB8
+	[Inject]
+	private IServerTimeService _serverTimeService; // 0xC0
+	private bool _itemFailedToDropOnInventory; // 0xC8
+	private IBoardView _boardView; // 0xD0
+	private List<IItemsCombiner> _itemCombiners; // 0xD8
+	private PowerBoostSystem _powerBoostSystem; // 0xE0
+	private long _lastTapTime; // 0xE8
+
+	// Properties
+	private IBoardUIView BoardUIView { get; }
+	public BoardItemPosition SelectedItemPosition { get; }
+	public bool IsItemSelected { get; }
+	private PowerBoostSystem PowerBoostSystem { get; }
+	private bool ShouldDeselectOnOOE { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6657ED8 Offset: 0x6653ED8 VA: 0x6657ED8
+	public void add_ItemTapped(Action<BoardItemPosition> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x665890C Offset: 0x665490C VA: 0x665890C
+	public void remove_ItemTapped(Action<BoardItemPosition> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6657F88 Offset: 0x6653F88 VA: 0x6657F88
+	public void add_ItemDragStarted(Action<BoardItemPosition> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x66589BC Offset: 0x66549BC VA: 0x66589BC
+	public void remove_ItemDragStarted(Action<BoardItemPosition> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6658038 Offset: 0x6654038 VA: 0x6658038
+	public void add_ItemDragEnded(Action<BoardItemPosition, BoardItemPosition> value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6658A6C Offset: 0x6654A6C VA: 0x6658A6C
+	public void remove_ItemDragEnded(Action<BoardItemPosition, BoardItemPosition> value) { }
+
+	// RVA: 0x665B4D8 Offset: 0x66574D8 VA: 0x665B4D8
+	private IBoardUIView get_BoardUIView() { }
+
+	// RVA: 0x665B57C Offset: 0x665757C VA: 0x665B57C
+	public BoardItemPosition get_SelectedItemPosition() { }
+
+	// RVA: 0x665B598 Offset: 0x6657598 VA: 0x665B598
+	public bool get_IsItemSelected() { }
+
+	// RVA: 0x665B5A8 Offset: 0x66575A8 VA: 0x665B5A8
+	private PowerBoostSystem get_PowerBoostSystem() { }
+
+	// RVA: 0x665B618 Offset: 0x6657618 VA: 0x665B618
+	private bool get_ShouldDeselectOnOOE() { }
+
+	// RVA: 0x665B634 Offset: 0x6657634 VA: 0x665B634 Slot: 6
+	protected override void InitializeSystem() { }
+
+	// RVA: 0x665B9D0 Offset: 0x66579D0 VA: 0x665B9D0
+	private void SetupItemCombiners() { }
+
+	// RVA: 0x665BCA0 Offset: 0x6657CA0 VA: 0x665BCA0
+	private void BoardViewChanged(IViewComponent viewComponent) { }
+
+	// RVA: 0x665C264 Offset: 0x6658264 VA: 0x665C264
+	private void BoardViewDestroyed() { }
+
+	// RVA: 0x665C6C8 Offset: 0x66586C8 VA: 0x665C6C8 Slot: 7
+	protected override void DisposeSystem() { }
+
+	// RVA: 0x665C84C Offset: 0x665884C VA: 0x665C84C
+	private void OnOutOfEnergy() { }
+
+	// RVA: 0x665C96C Offset: 0x665896C VA: 0x665C96C Slot: 12
+	protected override void EntityRemoved(Entity entity) { }
+
+	// RVA: 0x665C870 Offset: 0x6658870 VA: 0x665C870
+	private void DeselectItem() { }
+
+	// RVA: 0x665C9E0 Offset: 0x66589E0 VA: 0x665C9E0
+	private void ItemDroppedOnInventory(BoardItemPosition boardItemPosition) { }
+
+	// RVA: 0x665CBB8 Offset: 0x6658BB8 VA: 0x665CBB8
+	private void EndDrag(BoardItemPosition atPosition) { }
+
+	// RVA: 0x665CC18 Offset: 0x6658C18 VA: 0x665CC18
+	private void PowerBoostToggled(PowerBoostModeSwitchedSignal signal) { }
+
+	// RVA: 0x665CC3C Offset: 0x6658C3C VA: 0x665CC3C
+	private void TapItemSimulated(SimulateTapSignal signal) { }
+
+	// RVA: 0x665CC60 Offset: 0x6658C60 VA: 0x665CC60
+	private void BoardItemTapped(BoardItemPosition boardItemPosition, bool tapSimulated = False) { }
+
+	// RVA: 0x665D19C Offset: 0x665919C VA: 0x665D19C
+	private void SelectItem(SelectedBoardItem selectedBoardItem, PositionComponent tappedItem) { }
+
+	// RVA: 0x665DA6C Offset: 0x6659A6C VA: 0x665DA6C
+	public void SelectItem(BoardItemPosition position) { }
+
+	// RVA: 0x665D01C Offset: 0x665901C VA: 0x665D01C
+	public SelectedBoardItem GetSelectedBoardItem(PositionComponent positionComponent) { }
+
+	// RVA: 0x665D914 Offset: 0x6659914 VA: 0x665D914
+	private SelectorMode GetSelectorMode(LockedComponent lockComponent, IMergeItem mergeItem) { }
+
+	// RVA: 0x665D10C Offset: 0x665910C VA: 0x665D10C
+	private void ActOnTappedItem() { }
+
+	// RVA: 0x665DAC4 Offset: 0x6659AC4 VA: 0x665DAC4
+	private void BoardItemDragStarted(BoardItemPosition boardItemPosition) { }
+
+	// RVA: 0x665DD80 Offset: 0x6659D80 VA: 0x665DD80
+	private void BoardItemBeingDragged(Vector2 pointInBoard) { }
+
+	// RVA: 0x665E198 Offset: 0x665A198 VA: 0x665E198
+	private void BoardItemDragEnded(Vector2 pointInBoard, Vector2 screenPoint) { }
+
+	// RVA: 0x665E9F0 Offset: 0x665A9F0 VA: 0x665E9F0
+	private void BoardItemDragCancelled() { }
+
+	// RVA: 0x665E83C Offset: 0x665A83C VA: 0x665E83C
+	private void ResetInteractionAnimation() { }
+
+	// RVA: 0x665E784 Offset: 0x665A784 VA: 0x665E784
+	private void SwapOrMoveBackItems(BoardItemPosition oldPosition, BoardItemPosition newPosition, bool itemAtNewPositionLocked, bool itemAtNewPositionDraggingDisabled) { }
+
+	// RVA: 0x665EAA4 Offset: 0x665AAA4 VA: 0x665EAA4
+	private void SwapItems(BoardItemPosition oldPosition, BoardItemPosition newPosition) { }
+
+	// RVA: 0x665E7F0 Offset: 0x665A7F0 VA: 0x665E7F0
+	private void MoveItem(BoardItemPosition oldPosition, BoardItemPosition newPosition, bool sendOperation = True) { }
+
+	// RVA: 0x665E098 Offset: 0x665A098 VA: 0x665E098
+	private bool TryGuess(BoardItemPosition destination) { }
+
+	// RVA: 0x665F06C Offset: 0x665B06C VA: 0x665F06C
+	private bool CanCombineItems(PositionComponent firstItem, PositionComponent secondItem, BoardItemPosition boardItemPosition) { }
+
+	// RVA: 0x665DCBC Offset: 0x6659CBC VA: 0x665DCBC
+	private void ResetGuess() { }
+
+	// RVA: 0x665D394 Offset: 0x6659394 VA: 0x665D394
+	private void HandleFireLockedFloatingText(SelectedBoardItem selectedBoardItem) { }
+
+	// RVA: 0x665F378 Offset: 0x665B378 VA: 0x665F378
+	private void HideLastDraggedItemParticles() { }
+
+	// RVA: 0x665F3E8 Offset: 0x665B3E8 VA: 0x665F3E8
+	public void .ctor() { }
+}
+

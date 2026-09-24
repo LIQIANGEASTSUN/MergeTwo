@@ -1,0 +1,22 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ItemController.<>c__DisplayClass230_0 // TypeDefIndex: 1678
+{
+	// Fields
+	public int goalUIIndex; // 0x8
+	public BoardTaskItem completedTask; // 0xC
+	public Vector3 imagePosition; // 0x10
+	public bool isFirstItem; // 0x1C
+	public BoardTaskItemController completedTaskItemController; // 0x20
+	public ItemController <>4__this; // 0x24
+	public Coordinate position; // 0x28
+
+	// Methods
+
+	// RVA: 0x18CD51C Offset: 0x18CD51C VA: 0x18CD51C
+	public void .ctor() { }
+
+	// RVA: 0x18CD524 Offset: 0x18CD524 VA: 0x18CD524
+	internal void <AnimateItemToSpecialTask>b__0() { }
+}
+

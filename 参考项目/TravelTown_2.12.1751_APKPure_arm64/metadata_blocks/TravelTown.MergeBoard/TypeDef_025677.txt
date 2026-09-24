@@ -1,0 +1,21 @@
+// Namespace: Merger.MergeBoard.View
+public struct IntervalTick // TypeDefIndex: 25677
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly float <DeltaTime>k__BackingField; // 0x0
+
+	// Properties
+	public float DeltaTime { get; }
+
+	// Methods
+
+	[IsReadOnly]
+	[CompilerGenerated]
+	// RVA: 0x6A361BC Offset: 0x6A321BC VA: 0x6A361BC
+	public float get_DeltaTime() { }
+
+	// RVA: 0x6A361C4 Offset: 0x6A321C4 VA: 0x6A361C4
+	public void .ctor(float deltaTime) { }
+}
+

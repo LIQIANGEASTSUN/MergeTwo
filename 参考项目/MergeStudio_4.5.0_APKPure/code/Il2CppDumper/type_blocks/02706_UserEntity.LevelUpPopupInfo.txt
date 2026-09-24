@@ -1,0 +1,13 @@
+// Namespace: 
+[Serializable]
+public struct UserEntity.LevelUpPopupInfo // TypeDefIndex: 2706
+{
+	// Fields
+	public LevelUpReward TempLevelUpReward; // 0x0
+	public int ExtraXp; // 0x4
+	public List<RegularReward> RegularRewardsGained; // 0x8
+	public LevelItem NewLevelData; // 0xC
+	public bool Set; // 0x10
+	public bool PrePopup; // 0x11
+}
+

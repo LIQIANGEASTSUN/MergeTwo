@@ -1,0 +1,23 @@
+// Namespace: Merger.MergeBoard.Extensions
+[Extension]
+public static class EntityLockExtension // TypeDefIndex: 25904
+{
+	// Methods
+
+	[Extension]
+	// RVA: 0x6A97F84 Offset: 0x6A93F84 VA: 0x6A97F84
+	public static bool IsBoxed(Entity entity) { }
+
+	[Extension]
+	// RVA: 0x6A868E4 Offset: 0x6A828E4 VA: 0x6A868E4
+	public static bool AnyMovementLock(Entity entity) { }
+
+	[Extension]
+	// RVA: 0x6A97FFC Offset: 0x6A93FFC VA: 0x6A97FFC
+	public static bool OnlyMovementLock(Entity entity) { }
+
+	[Extension]
+	// RVA: 0x6A980B4 Offset: 0x6A940B4 VA: 0x6A980B4
+	public static bool FixedPosition(Entity entity) { }
+}
+

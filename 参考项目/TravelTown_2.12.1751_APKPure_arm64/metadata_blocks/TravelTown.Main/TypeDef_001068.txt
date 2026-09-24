@@ -1,0 +1,27 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public class ImmediateToolComponent : ComponentBase<ImmediateToolCapability> // TypeDefIndex: 1068
+{
+	// Properties
+	public bool IsToolbox { get; }
+	public List<WeightedTool> ToolsWeights { get; }
+	public List<WeightedToolLevel> ToolLevelsWeights { get; }
+	public int NumberOfToolsToSpawn { get; }
+
+	// Methods
+
+	// RVA: 0x68FC898 Offset: 0x68F8898 VA: 0x68FC898
+	public bool get_IsToolbox() { }
+
+	// RVA: 0x68FC8E0 Offset: 0x68F88E0 VA: 0x68FC8E0
+	public List<WeightedTool> get_ToolsWeights() { }
+
+	// RVA: 0x68FC928 Offset: 0x68F8928 VA: 0x68FC928
+	public List<WeightedToolLevel> get_ToolLevelsWeights() { }
+
+	// RVA: 0x68FC970 Offset: 0x68F8970 VA: 0x68FC970
+	public int get_NumberOfToolsToSpawn() { }
+
+	// RVA: 0x68FC9B8 Offset: 0x68F89B8 VA: 0x68FC9B8
+	public void .ctor(ImmediateToolCapability capability, Entity entity) { }
+}
+

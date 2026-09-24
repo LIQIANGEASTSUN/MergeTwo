@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class CatSwimmingModel.<>c__DisplayClass48_0 // TypeDefIndex: 264
+{
+	// Fields
+	public int seat; // 0x8
+
+	// Methods
+
+	// RVA: 0x2B3DA0C Offset: 0x2B3DA0C VA: 0x2B3DA0C
+	public void .ctor() { }
+
+	// RVA: 0x2B3F9D4 Offset: 0x2B3F9D4 VA: 0x2B3F9D4
+	internal bool <AddRandomTaskScore>b__0(CatSwimmingOrder p) { }
+}
+

@@ -1,0 +1,29 @@
+// Namespace: MergeEngine.Signal.Items
+public class ImmediateToolsCollectedSignal // TypeDefIndex: 219
+{
+	// Fields
+	[TupleElementNames(new[] { "tool", "resourceGained" })]
+	public List<ValueTuple<IMergeItem, ResourceMultiple>> ToolsWithAnimationData; // 0x10
+	[CompilerGenerated]
+	private readonly Vector3 <StartPosition>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private readonly Action <OnAllToolsReachedTarget>k__BackingField; // 0x28
+
+	// Properties
+	public Vector3 StartPosition { get; }
+	public Action OnAllToolsReachedTarget { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3654 Offset: 0x5FEF654 VA: 0x5FF3654
+	public Vector3 get_StartPosition() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF3660 Offset: 0x5FEF660 VA: 0x5FF3660
+	public Action get_OnAllToolsReachedTarget() { }
+
+	// RVA: 0x5FF3668 Offset: 0x5FEF668 VA: 0x5FF3668
+	public void .ctor(List<ValueTuple<IMergeItem, ResourceMultiple>> toolsWithAnimationData, Vector3 startPosition, Action onAllToolsReachedTarget) { }
+}
+

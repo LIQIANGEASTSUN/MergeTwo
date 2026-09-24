@@ -1,0 +1,10 @@
+// Namespace: MergeEngine.ECS.Systems.Items
+[SoundBoundSignal("Expendable Disappear")]
+public class ExpendableDisappearedSignal // TypeDefIndex: 956
+{
+	// Methods
+
+	// RVA: 0x678CFF4 Offset: 0x6788FF4 VA: 0x678CFF4
+	public void .ctor() { }
+}
+

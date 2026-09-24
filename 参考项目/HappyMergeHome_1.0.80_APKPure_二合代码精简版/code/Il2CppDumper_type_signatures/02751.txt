@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeBoardItem.<>c__DisplayClass118_0 // TypeDefIndex: 2751
+{
+	// Fields
+	public MergeBoardItem <>4__this; // 0x8
+	public StorageMergeItem boardItem; // 0xC
+
+	// Methods
+
+	// RVA: 0x2C371D8 Offset: 0x2C371D8 VA: 0x2C371D8
+	public void .ctor() { }
+
+	// RVA: 0x2C371E0 Offset: 0x2C371E0 VA: 0x2C371E0
+	internal void <RefreshIceCubeStatus>b__0() { }
+}
+

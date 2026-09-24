@@ -1,0 +1,99 @@
+// Namespace: 
+[Serializable]
+public struct SerializableDictionary.SerializableKeyValuePair<TKey, TValue> // TypeDefIndex: 199
+{
+	// Fields
+	public TKey Key; // 0x0
+	public TValue Value; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor(TKey key, TValue value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2FC9C8C Offset: 0x2FC9C8C VA: 0x2FC9C8C
+	|-SerializableDictionary.SerializableKeyValuePair<int, Color>..ctor
+	|
+	|-RVA: 0x2FC9CAC Offset: 0x2FC9CAC VA: 0x2FC9CAC
+	|-SerializableDictionary.SerializableKeyValuePair<int, int>..ctor
+	|
+	|-RVA: 0x2FC9CBC Offset: 0x2FC9CBC VA: 0x2FC9CBC
+	|-SerializableDictionary.SerializableKeyValuePair<int, long>..ctor
+	|
+	|-RVA: 0x2FC9CD8 Offset: 0x2FC9CD8 VA: 0x2FC9CD8
+	|-SerializableDictionary.SerializableKeyValuePair<int, object>..ctor
+	|
+	|-RVA: 0x2FC9CF0 Offset: 0x2FC9CF0 VA: 0x2FC9CF0
+	|-SerializableDictionary.SerializableKeyValuePair<int, float>..ctor
+	|
+	|-RVA: 0x2FC9D00 Offset: 0x2FC9D00 VA: 0x2FC9D00
+	|-SerializableDictionary.SerializableKeyValuePair<Int32Enum, int>..ctor
+	|
+	|-RVA: 0x2FC9D10 Offset: 0x2FC9D10 VA: 0x2FC9D10
+	|-SerializableDictionary.SerializableKeyValuePair<Int32Enum, object>..ctor
+	|
+	|-RVA: 0x2FC9D28 Offset: 0x2FC9D28 VA: 0x2FC9D28
+	|-SerializableDictionary.SerializableKeyValuePair<Int32Enum, Vector3>..ctor
+	|
+	|-RVA: 0x2FC9D3C Offset: 0x2FC9D3C VA: 0x2FC9D3C
+	|-SerializableDictionary.SerializableKeyValuePair<ItemInfo, object>..ctor
+	|
+	|-RVA: 0x2FC9D54 Offset: 0x2FC9D54 VA: 0x2FC9D54
+	|-SerializableDictionary.SerializableKeyValuePair<object, object>..ctor
+	|
+	|-RVA: 0x2FC9D84 Offset: 0x2FC9D84 VA: 0x2FC9D84
+	|-SerializableDictionary.SerializableKeyValuePair<object, float>..ctor
+	|
+	|-RVA: 0x2FC9DA8 Offset: 0x2FC9DA8 VA: 0x2FC9DA8
+	|-SerializableDictionary.SerializableKeyValuePair<object, Vector3>..ctor
+	|
+	|-RVA: 0x2FC9DDC Offset: 0x2FC9DDC VA: 0x2FC9DDC
+	|-SerializableDictionary.SerializableKeyValuePair<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	public void SetValue(TValue value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x2FC9CA0 Offset: 0x2FC9CA0 VA: 0x2FC9CA0
+	|-SerializableDictionary.SerializableKeyValuePair<int, Color>.SetValue
+	|
+	|-RVA: 0x2FC9CB4 Offset: 0x2FC9CB4 VA: 0x2FC9CB4
+	|-SerializableDictionary.SerializableKeyValuePair<int, int>.SetValue
+	|
+	|-RVA: 0x2FC9CC8 Offset: 0x2FC9CC8 VA: 0x2FC9CC8
+	|-SerializableDictionary.SerializableKeyValuePair<int, long>.SetValue
+	|
+	|-RVA: 0x2FC9CE8 Offset: 0x2FC9CE8 VA: 0x2FC9CE8
+	|-SerializableDictionary.SerializableKeyValuePair<int, object>.SetValue
+	|
+	|-RVA: 0x2FC9CF8 Offset: 0x2FC9CF8 VA: 0x2FC9CF8
+	|-SerializableDictionary.SerializableKeyValuePair<int, float>.SetValue
+	|
+	|-RVA: 0x2FC9D08 Offset: 0x2FC9D08 VA: 0x2FC9D08
+	|-SerializableDictionary.SerializableKeyValuePair<Int32Enum, int>.SetValue
+	|
+	|-RVA: 0x2FC9D20 Offset: 0x2FC9D20 VA: 0x2FC9D20
+	|-SerializableDictionary.SerializableKeyValuePair<Int32Enum, object>.SetValue
+	|
+	|-RVA: 0x2FC9D34 Offset: 0x2FC9D34 VA: 0x2FC9D34
+	|-SerializableDictionary.SerializableKeyValuePair<Int32Enum, Vector3>.SetValue
+	|
+	|-RVA: 0x2FC9D4C Offset: 0x2FC9D4C VA: 0x2FC9D4C
+	|-SerializableDictionary.SerializableKeyValuePair<ItemInfo, object>.SetValue
+	|
+	|-RVA: 0x2FC9D7C Offset: 0x2FC9D7C VA: 0x2FC9D7C
+	|-SerializableDictionary.SerializableKeyValuePair<object, object>.SetValue
+	|
+	|-RVA: 0x2FC9DA0 Offset: 0x2FC9DA0 VA: 0x2FC9DA0
+	|-SerializableDictionary.SerializableKeyValuePair<object, float>.SetValue
+	|
+	|-RVA: 0x2FC9DD4 Offset: 0x2FC9DD4 VA: 0x2FC9DD4
+	|-SerializableDictionary.SerializableKeyValuePair<object, Vector3>.SetValue
+	|
+	|-RVA: 0x2FC9FB4 Offset: 0x2FC9FB4 VA: 0x2FC9FB4
+	|-SerializableDictionary.SerializableKeyValuePair<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.SetValue
+	*/
+}
+

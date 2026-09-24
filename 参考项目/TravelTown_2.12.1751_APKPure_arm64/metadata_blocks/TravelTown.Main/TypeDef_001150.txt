@@ -1,0 +1,16 @@
+// Namespace: MergeEngine.Configuration
+public class NewBubbledItemsConfig // TypeDefIndex: 1150
+{
+	// Fields
+	public int NumberOfFreeBubbleBursts; // 0x10
+	public int MaxBubblesOnBoard; // 0x14
+	public int MinGameLevelToDropBubbles; // 0x18
+	public List<SmarterBubblesConfig> SmarterBubblesSettings; // 0x20
+	public List<SmarterBubblesRareChainConfig> SmarterBubblesRareChains; // 0x28
+
+	// Methods
+
+	// RVA: 0x6905468 Offset: 0x6901468 VA: 0x6905468
+	public void .ctor() { }
+}
+

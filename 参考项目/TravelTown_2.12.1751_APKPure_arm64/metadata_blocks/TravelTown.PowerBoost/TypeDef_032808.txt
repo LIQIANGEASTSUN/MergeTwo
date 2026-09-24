@@ -1,0 +1,18 @@
+// Namespace: Merger.MergeBoard.PowerBoost.Commands
+public class PowerBoostConfigurationUpdatedCommand : CommandBase<PowerBoostConfigurationUpdatedSignal> // TypeDefIndex: 32808
+{
+	// Fields
+	[Inject]
+	private IPowerBoostModel _powerBoostModel; // 0x30
+	[Inject]
+	private IPowerBoostModesCalculator _powerBoostModesCalculator; // 0x38
+
+	// Methods
+
+	// RVA: 0x6AD4798 Offset: 0x6AD0798 VA: 0x6AD4798 Slot: 15
+	public override void Execute(PowerBoostConfigurationUpdatedSignal signal) { }
+
+	// RVA: 0x6AD4900 Offset: 0x6AD0900 VA: 0x6AD4900
+	public void .ctor() { }
+}
+

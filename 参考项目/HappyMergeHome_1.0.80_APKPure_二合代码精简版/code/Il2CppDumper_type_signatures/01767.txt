@@ -1,0 +1,33 @@
+// Namespace: 
+public class NewbieRoomMergeBoard : MergeBoard // TypeDefIndex: 1767
+{
+	// Fields
+	public UIPopupNewbieRoomMergeBoardController _controller; // 0xE4
+
+	// Methods
+
+	// RVA: 0x2964B1C Offset: 0x2964B1C VA: 0x2964B1C
+	public void SetController(UIPopupNewbieRoomMergeBoardController controller) { }
+
+	// RVA: 0x2964B84 Offset: 0x2964B84 VA: 0x2964B84 Slot: 5
+	public override void InitBoardId() { }
+
+	// RVA: 0x2964BE4 Offset: 0x2964BE4 VA: 0x2964BE4 Slot: 7
+	public override void OnNewItem(int index, int oldIndex, int id, int oldId, RefreshItemSource source) { }
+
+	// RVA: 0x2964EC0 Offset: 0x2964EC0 VA: 0x2964EC0 Slot: 6
+	public override void OnUseItem(int index, int id) { }
+
+	// RVA: 0x29651C0 Offset: 0x29651C0 VA: 0x29651C0
+	public void .ctor() { }
+
+	// RVA: 0x29651C8 Offset: 0x29651C8 VA: 0x29651C8
+	public void <>iFixBaseProxy_InitBoardId() { }
+
+	// RVA: 0x29651D0 Offset: 0x29651D0 VA: 0x29651D0
+	public void <>iFixBaseProxy_OnNewItem(int P0, int P1, int P2, int P3, RefreshItemSource P4) { }
+
+	// RVA: 0x29651F8 Offset: 0x29651F8 VA: 0x29651F8
+	public void <>iFixBaseProxy_OnUseItem(int P0, int P1) { }
+}
+

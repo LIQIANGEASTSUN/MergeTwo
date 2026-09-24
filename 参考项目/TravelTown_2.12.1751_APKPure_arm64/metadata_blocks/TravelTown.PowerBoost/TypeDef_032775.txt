@@ -1,0 +1,20 @@
+// Namespace: Merger.MergeBoard.PowerBoost.Systems
+public class PowerBoostSystem : ISystem // TypeDefIndex: 32775
+{
+	// Fields
+	[Inject]
+	private IPowerBoostDataProvider _powerBoostDataProvider; // 0x10
+
+	// Methods
+
+	// RVA: 0x6ACCD30 Offset: 0x6AC8D30 VA: 0x6ACCD30 Slot: 4
+	public void Tick(TickContext context) { }
+
+	// RVA: 0x6ACD254 Offset: 0x6AC9254 VA: 0x6ACD254
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6ACD25C Offset: 0x6AC925C VA: 0x6ACD25C
+	private bool <Tick>b__1_0(ValueTuple<Entity, IdComponent, InteractionComponent, BoardTilePositionComponent, ProducerComponent> entity) { }
+}
+

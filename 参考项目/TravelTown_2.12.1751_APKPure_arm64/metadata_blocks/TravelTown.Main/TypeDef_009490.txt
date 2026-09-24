@@ -1,0 +1,46 @@
+// Namespace: Merger.Game.Signal.Combinations
+public class JokerCheckPopupOpenedSignal // TypeDefIndex: 9490
+{
+	// Fields
+	[CompilerGenerated]
+	private string <JokerItemId>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private string <BeforeMergeItemId>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private string <AfterJokerMergeItemId>k__BackingField; // 0x20
+
+	// Properties
+	public string JokerItemId { get; set; }
+	public string BeforeMergeItemId { get; set; }
+	public string AfterJokerMergeItemId { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x676E420 Offset: 0x676A420 VA: 0x676E420
+	public string get_JokerItemId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E428 Offset: 0x676A428 VA: 0x676E428
+	public void set_JokerItemId(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E430 Offset: 0x676A430 VA: 0x676E430
+	public string get_BeforeMergeItemId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E438 Offset: 0x676A438 VA: 0x676E438
+	public void set_BeforeMergeItemId(string value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E440 Offset: 0x676A440 VA: 0x676E440
+	public string get_AfterJokerMergeItemId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676E448 Offset: 0x676A448 VA: 0x676E448
+	public void set_AfterJokerMergeItemId(string value) { }
+
+	// RVA: 0x676E450 Offset: 0x676A450 VA: 0x676E450
+	public void .ctor(string jokerItemId, string beforeMergeItemId, string afterJokerMergeItemId) { }
+}
+

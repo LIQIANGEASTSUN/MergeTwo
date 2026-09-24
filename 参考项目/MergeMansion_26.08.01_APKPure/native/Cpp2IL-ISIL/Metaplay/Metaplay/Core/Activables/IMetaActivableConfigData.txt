@@ -1,0 +1,33 @@
+Type: Metaplay.Core.Activables.IMetaActivableConfigData
+
+Method: System.String get_DisplayName()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.String get_Description()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.String get_DisplayShortInfo()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.Activables.MetaActivableTimelineSettings get_Timeline()
+
+Disassembly:
+	0x04182814 MOV X0, X23
+	0x04182818 BLR X8
+
+ISIL:
+	001 Move X0, X31
+	002 Return X0
+

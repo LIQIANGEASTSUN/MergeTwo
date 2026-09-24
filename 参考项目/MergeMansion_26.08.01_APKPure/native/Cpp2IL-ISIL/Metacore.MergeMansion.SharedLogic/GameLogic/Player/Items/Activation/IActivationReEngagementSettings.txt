@@ -1,0 +1,58 @@
+Type: GameLogic.Player.Items.Activation.IActivationReEngagementSettings
+
+Method: Metaplay.Core.MetaDuration get_ReEngagementStarts()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.MetaDuration get_ReEngagementEvery()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_ReEngagementMax()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.MetaDuration get_AddsDelayBetweenCycles()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metaplay.Core.Math.F64 get_AddsTimerSkipMultiplier()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_AddsActivationAmountInCycle()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Int32 get_AddsHowManyAreGeneratedInCycle()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Void Validate(Metaplay.Core.Config.GameConfigValidationResult variantEntries, System.String sheetName, System.String configKey)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

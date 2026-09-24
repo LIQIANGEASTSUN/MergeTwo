@@ -1,0 +1,9 @@
+// Namespace: Merger.Game.Signal
+public class ProducerInventoryFeatureUnlockedSignal // TypeDefIndex: 9413
+{
+	// Methods
+
+	// RVA: 0x676C2E8 Offset: 0x67682E8 VA: 0x676C2E8
+	public void .ctor() { }
+}
+

@@ -1,0 +1,67 @@
+Type: MenuController+<>c__DisplayClass246_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x02B7158C SUBS X9, X9, 0x1
+	0x02B71590 ADD X10, X10, 0x10
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void <NavigateBack>b__0()
+
+Disassembly:
+	0x02B71594 B.NE 0x2B71580
+	0x02B71598 MOV X0, X21
+	0x02B7159C MOV W2, W31
+	0x02B715A0 BL 0x23D527C
+	0x02B715A4 B 0x2B716CC
+	0x02B715A8 LDR W9, [X10]
+	0x02B715AC ADD W9, W9, 0x20
+	0x02B715B0 ADD X8, X8, W9, 0x4, SXTW
+	0x02B715B4 ADD X0, X8, 0x138
+	0x02B715B8 LDP X8, X2, [X0]
+	0x02B715BC MOV X0, X21
+	0x02B715C0 MOV X1, X22
+	0x02B715C4 BLR X8
+	0x02B715C8 MOV X21, X0
+	0x02B715CC CBZ X0, 0x2B71DEC
+	0x02B715D0 ADRP X10, 0x2B76000
+	0x02B715D4 LDR X8, [X21]
+	0x02B715D8 LDR X10, [X10 + 0xD60]
+	0x02B715DC LDRH W9, [X8 + 0x12E]
+	0x02B715E0 LDR X1, [X10]
+	0x02B715E4 CBZ X9, 0x2B71608
+
+ISIL:
+	001 Move [X31-16], X30
+	002 Move [X31-8], X19
+	003 Move X8, [X0+16]
+	004 Move X19, X0
+	005 Compare X8, 0
+	006 JumpIfEqual {11}
+	007 Move X9, [X8+24]
+	008 Move X0, [X8+64]
+	009 Move X1, [X8+40]
+	010 NotImplemented "Instruction BLR not yet implemented."
+	011 Move X0, [X19+24]
+	012 Compare X0, 0
+	013 JumpIfEqual {27}
+	014 Move X1, [X19+32]
+	015 Move X2, X31
+	016 Call MenuController.OnHiddenFinished, X0, X1
+	017 Move X0, [X19+24]
+	018 Compare X0, 0
+	019 JumpIfEqual {27}
+	020 Move X1, [X19+40]
+	021 Move W2, 1
+	022 Move X3, X31
+	023 Move X30, [X31+16]
+	024 Move X19, [X31+24]
+	025 Call MenuController.OnHideMenuComplete, X0, X1, X2
+	026 Return 
+	027 Call 0x239FB90
+

@@ -1,0 +1,50 @@
+// Namespace: MergeEngine.ECS
+public interface IEntityManager // TypeDefIndex: 593
+{
+	// Properties
+	public abstract ReadOnlyCollection<Entity> Entities { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void add_EntityCreated(Action<Entity> value);
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void remove_EntityCreated(Action<Entity> value);
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void add_EntityRemoved(Action<Entity> value);
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void remove_EntityRemoved(Action<Entity> value);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract ReadOnlyCollection<Entity> get_Entities();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract void AddEntity(Entity entity);
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract bool RemoveEntity(Entity entity);
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract ReadOnlyCollection<TComponent> GetComponents<TComponent>();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IEntityManager.GetComponents<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract TComponent GetComponent<TComponent>();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IEntityManager.GetComponent<__Il2CppFullySharedGenericType>
+	*/
+}
+

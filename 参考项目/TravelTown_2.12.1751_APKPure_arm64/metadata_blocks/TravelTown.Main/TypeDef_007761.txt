@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoosterService.<>c__DisplayClass41_0 // TypeDefIndex: 7761
+{
+	// Fields
+	public string configurationId; // 0x10
+
+	// Methods
+
+	// RVA: 0x65C2DF8 Offset: 0x65BEDF8 VA: 0x65C2DF8
+	public void .ctor() { }
+
+	// RVA: 0x65C4BF8 Offset: 0x65C0BF8 VA: 0x65C4BF8
+	internal bool <GetActiveBoosterAnalyticsData>b__0(BoosterIdComponent b) { }
+}
+

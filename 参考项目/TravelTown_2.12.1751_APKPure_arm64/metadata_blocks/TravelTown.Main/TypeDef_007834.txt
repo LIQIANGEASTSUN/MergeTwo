@@ -1,0 +1,23 @@
+// Namespace: Merger.Boosters.Declarations.Definitions.Interfaces
+public interface IBoosterRepository // TypeDefIndex: 7834
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract IPromise<BoosterConfigResponse> GetBoostersConfig();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract IPromise<BoosterPullResponse> GetActiveBoosters();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract IPromise<BoosterEventsResponse> GetBoosterEvents();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract IPromise<BoosterInteractResponse<TResultData>> InteractBooster<TData, TResultData>(InteractBoosterPayload<TData> payload);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IBoosterRepository.InteractBooster<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>
+	*/
+}
+

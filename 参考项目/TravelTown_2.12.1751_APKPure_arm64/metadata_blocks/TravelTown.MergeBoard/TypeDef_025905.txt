@@ -1,0 +1,11 @@
+// Namespace: Merger.MergeBoard.Extensions
+[Extension]
+public static class EntitySpawnerExtension // TypeDefIndex: 25905
+{
+	// Methods
+
+	[Extension]
+	// RVA: 0x6A9811C Offset: 0x6A9411C VA: 0x6A9811C
+	public static bool IsSpawner(Entity entity) { }
+}
+

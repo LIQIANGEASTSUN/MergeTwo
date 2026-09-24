@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergeBoardItem.<>c__DisplayClass141_0 // TypeDefIndex: 2756
+{
+	// Fields
+	public Game_Detective gameEntry; // 0x8
+	public TableMergeItem tableMerge; // 0xC
+	public int oldIndex; // 0x10
+	public Transform target; // 0x14
+	public int dogScore; // 0x18
+	public int dogCurIndex; // 0x1C
+
+	// Methods
+
+	// RVA: 0x2C379D0 Offset: 0x2C379D0 VA: 0x2C379D0
+	public void .ctor() { }
+
+	// RVA: 0x2C379D8 Offset: 0x2C379D8 VA: 0x2C379D8
+	internal void <AddDogCookies>b__0() { }
+}
+

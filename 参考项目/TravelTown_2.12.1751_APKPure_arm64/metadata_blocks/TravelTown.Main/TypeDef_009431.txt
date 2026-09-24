@@ -1,0 +1,27 @@
+// Namespace: Merger.Game.Signal
+public class SellSelectedItemSignal // TypeDefIndex: 9431
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly SelectedBoardItem <Item>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly Entity <Entity>k__BackingField; // 0x18
+
+	// Properties
+	public SelectedBoardItem Item { get; }
+	public Entity Entity { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x676C8C4 Offset: 0x67688C4 VA: 0x676C8C4
+	public SelectedBoardItem get_Item() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676C8CC Offset: 0x67688CC VA: 0x676C8CC
+	public Entity get_Entity() { }
+
+	// RVA: 0x676C8D4 Offset: 0x67688D4 VA: 0x676C8D4
+	public void .ctor(SelectedBoardItem item, Entity entityToSell) { }
+}
+

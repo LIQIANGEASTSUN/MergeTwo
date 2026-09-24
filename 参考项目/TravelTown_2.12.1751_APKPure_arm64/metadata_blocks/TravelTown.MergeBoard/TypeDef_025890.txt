@@ -1,0 +1,12 @@
+// Namespace: Merger.MergeBoard.Handlers
+public interface IItemsCollectionHandler // TypeDefIndex: 25890
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void ReportItemDiscovered(IMergeItem item);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void ReportItemCreated(IMergeItem item);
+}
+

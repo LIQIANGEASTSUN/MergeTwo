@@ -1,0 +1,193 @@
+Type: GameLogic.Player.Board.MergeBoard+<>c__DisplayClass156_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x036C53B0 BL 0x239BB80
+	0x036C53B4 LDR X1, [X26]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <EnqueueAutoSellItemsFromBoard>b__0(System.ValueTuple`2<GameLogic.Player.Board.Coordinate, GameLogic.Player.Items.MergeItem> position)
+
+Disassembly:
+	0x036C53B8 MOV X2, X31
+	0x036C53BC MOV X19, X0
+	0x036C53C0 BL 0x41FF110
+	0x036C53C4 LDR X8, [X21]
+	0x036C53C8 MOV X1, X19
+	0x036C53CC LDR X0, [X8 + 0xB8]
+	0x036C53D0 STR X19, [X0 + 0x30]!
+	0x036C53D4 BL 0x239B888
+	0x036C53D8 LDR X0, [X20]
+	0x036C53DC BL 0x239BB80
+
+ISIL:
+	001 Move X9, [X0+16]
+	002 Compare X9, 0
+	003 JumpIfEqual {10}
+	004 Move X8, [X9+40]
+	005 Move X0, [X9+64]
+	006 Move X1, X2
+	007 Move X3, [X9+24]
+	008 Move X2, X8
+	009 CallNoReturn X3
+	010 Move [X31-16], X30
+	011 Call 0x239FB90
+
+Method: GameLogic.Merge.MergeBoardAct <EnqueueAutoSellItemsFromBoard>b__1(System.ValueTuple`2<GameLogic.Player.Board.Coordinate, GameLogic.Player.Items.MergeItem> position)
+
+Disassembly:
+	0x036C53E0 LDR X1, [X25]
+	0x036C53E4 MOV X2, X31
+	0x036C53E8 MOV X19, X0
+	0x036C53EC BL 0x41FF110
+	0x036C53F0 LDR X8, [X21]
+	0x036C53F4 MOV X1, X19
+	0x036C53F8 LDR X0, [X8 + 0xB8]
+	0x036C53FC STR X19, [X0 + 0x38]!
+	0x036C5400 BL 0x239B888
+	0x036C5404 LDR X0, [X20]
+	0x036C5408 BL 0x239BB80
+	0x036C540C LDR X1, [X24]
+	0x036C5410 MOV X2, X31
+	0x036C5414 MOV X19, X0
+	0x036C5418 BL 0x41FF110
+	0x036C541C LDR X8, [X21]
+	0x036C5420 MOV X1, X19
+	0x036C5424 LDR X0, [X8 + 0xB8]
+	0x036C5428 STR X19, [X0 + 0x40]!
+	0x036C542C BL 0x239B888
+	0x036C5430 LDR X0, [X20]
+	0x036C5434 BL 0x239BB80
+	0x036C5438 LDR X1, [X23]
+	0x036C543C MOV X2, X31
+	0x036C5440 MOV X19, X0
+	0x036C5444 BL 0x41FF110
+	0x036C5448 LDR X8, [X21]
+	0x036C544C MOV X1, X19
+	0x036C5450 LDR X0, [X8 + 0xB8]
+	0x036C5454 STR X19, [X0 + 0x48]!
+	0x036C5458 BL 0x239B888
+	0x036C545C LDR X0, [X20]
+	0x036C5460 BL 0x239BB80
+	0x036C5464 ADRP X8, 0x2070000
+	0x036C5468 MOV X2, X31
+	0x036C546C MOV X19, X0
+	0x036C5470 LDR X8, [X8 + 0xA98]
+	0x036C5474 LDR X1, [X8]
+	0x036C5478 BL 0x41FF110
+	0x036C547C LDR X8, [X21]
+	0x036C5480 MOV X1, X19
+	0x036C5484 LDR X0, [X8 + 0xB8]
+	0x036C5488 STR X19, [X0 + 0x50]!
+	0x036C548C BL 0x239B888
+	0x036C5490 LDR X0, [X20]
+	0x036C5494 BL 0x239BB80
+	0x036C5498 ADRP X8, 0x2070000
+	0x036C549C MOV X2, X31
+	0x036C54A0 MOV X19, X0
+	0x036C54A4 LDR X8, [X8 + 0xBD0]
+	0x036C54A8 LDR X1, [X8]
+	0x036C54AC BL 0x41FF110
+	0x036C54B0 LDR X8, [X21]
+	0x036C54B4 MOV X1, X19
+	0x036C54B8 LDR X0, [X8 + 0xB8]
+	0x036C54BC STR X19, [X0 + 0x58]!
+	0x036C54C0 BL 0x239B888
+	0x036C54C4 LDR X0, [X20]
+	0x036C54C8 BL 0x239BB80
+	0x036C54CC ADRP X8, 0x2071000
+	0x036C54D0 MOV X2, X31
+	0x036C54D4 MOV X19, X0
+	0x036C54D8 LDR X8, [X8 + 0xA8]
+	0x036C54DC LDR X1, [X8]
+	0x036C54E0 BL 0x41FF110
+	0x036C54E4 LDR X8, [X21]
+	0x036C54E8 MOV X1, X19
+	0x036C54EC LDR X0, [X8 + 0xB8]
+	0x036C54F0 STR X19, [X0 + 0x60]!
+
+ISIL:
+	001 Subtract X31, X31, 64
+	002 Move [X31+16], X30
+	003 Move [X31+24], X23
+	004 Move [X31+32], X22
+	005 Move [X31+40], X21
+	006 Move [X31+48], X20
+	007 Move [X31+56], X19
+	008 Move X21, X2
+	009 Move X19, X1
+	010 Move W9, [0x266954A]
+	011 Move X22, X0
+	012 Move X20, X8
+	013 Move TEMP, X9
+	014 And TEMP, TEMP, 1
+	015 Compare TEMP, 1
+	016 JumpIfEqual {21}
+	017 Move X0, [0x2013D50]
+	018 Call 0x239F8E4
+	019 Move W8, 1
+	020 Move [X23+1354], W8
+	021 Move X23, [X22+32]
+	022 Compare X23, 0
+	023 JumpIfEqual {78}
+	024 Move X8, [X23]
+	025 Move X10, [0x2013D50]
+	026 Move X22, [X22+24]
+	027 NotImplemented "Instruction LDRH not yet implemented."
+	028 Move X1, [X10]
+	029 Compare X9, 0
+	030 JumpIfEqual {37}
+	031 Move X10, [X8+176]
+	032 Add X10, X10, 8
+	033 NotImplemented "Instruction LDUR not yet implemented."
+	034 NotImplemented "Instruction CMP not yet implemented."
+	035 Subtract X9, X9, 1
+	036 Add X10, X10, 16
+	037 Move X0, X23
+	038 Move W2, 5
+	039 Call 0x23D927C
+	040 Move W9, [X10]
+	041 Add W9, W9, 5
+	042 Add X8, X8, W9
+	043 Add X0, X8, 312
+	044 Move X8, [X0]
+	045 Move X1, [X0+8]
+	046 Move X0, X23
+	047 NotImplemented "Instruction BLR not yet implemented."
+	048 Compare X21, 0
+	049 JumpIfEqual {78}
+	050 Move X1, X0
+	051 Move X0, X21
+	052 Move X2, X31
+	053 Call MergeItem.GetDefinition, X0, X1
+	054 NotImplemented "Instruction MOVI not yet implemented."
+	055 Move X5, X0
+	056 Move X0, X20
+	057 Move W1, 19
+	058 Move X2, X19
+	059 Move X3, X19
+	060 Move X4, X22
+	061 Move W6, W31
+	062 Move X7, X31
+	063 Move [X31], X31
+	064 Move [X20], V0
+	065 Move [X20+8], V0
+	066 Move [X20+32], V0
+	067 Move [X20+40], V0
+	068 Move [X20+4], V0
+	069 Call MergeBoardAct..ctor, X0, X1, X2, X3, X4, X5, X6, X7
+	070 Move X20, [X31+48]
+	071 Move X19, [X31+56]
+	072 Move X22, [X31+32]
+	073 Move X21, [X31+40]
+	074 Move X30, [X31+16]
+	075 Move X23, [X31+24]
+	076 Add X31, X31, 64
+	077 Return X0
+	078 Call 0x239FB90
+

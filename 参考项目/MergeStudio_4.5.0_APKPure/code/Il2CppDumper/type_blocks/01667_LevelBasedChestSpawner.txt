@@ -1,0 +1,34 @@
+// Namespace: MergePuzzle
+[CreateAssetMenu(fileName = "LevelBasedChestSpawner", menuName = "Scriptable/BoardItem/LevelBasedChestSpawner", order = 4)]
+public class LevelBasedChestSpawner : BoardItemChestSpawner, IConfigAdaptor<LevelBasedChestSpawnerConfigAdaptor>, IConfigAdaptorBase // TypeDefIndex: 1667
+{
+	// Fields
+	public LevelBasedChestSpawnerConfig LevelBasedSpawnerConfig; // 0x3C
+
+	// Methods
+
+	// RVA: 0x18CBC3C Offset: 0x18CBC3C VA: 0x18CBC3C Slot: 4
+	public override bool Initialize(BoardEntity boardEntity, IItemController item, long millisecondsPassed, bool isNewlyCreated) { }
+
+	// RVA: 0x18C958C Offset: 0x18C958C VA: 0x18C958C
+	public List<SpawnedItem> GetCurrentSpawnedItems() { }
+
+	// RVA: 0x18CC624 Offset: 0x18CC624 VA: 0x18CC624 Slot: 19
+	public override SpawnedItem GetNonProbabilisticItem(int currentCapacity) { }
+
+	// RVA: 0x18CC6C4 Offset: 0x18CC6C4 VA: 0x18CC6C4 Slot: 20
+	public override SpawnedItem GetRandomItem() { }
+
+	// RVA: 0x18CC7EC Offset: 0x18CC7EC VA: 0x18CC7EC
+	public bool IsUseEnergySprite() { }
+
+	// RVA: 0x18CC560 Offset: 0x18CC560 VA: 0x18CC560 Slot: 21
+	public LevelBasedChestSpawnerConfigAdaptor GetConfigAdaptor() { }
+
+	// RVA: 0x18CC814 Offset: 0x18CC814 VA: 0x18CC814 Slot: 18
+	public AdaptorBase ConvertFromLocal() { }
+
+	// RVA: 0x18CC874 Offset: 0x18CC874 VA: 0x18CC874
+	public void .ctor() { }
+}
+

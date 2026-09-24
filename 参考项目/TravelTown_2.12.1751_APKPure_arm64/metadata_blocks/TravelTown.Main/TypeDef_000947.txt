@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class BoardTileLevelUnlockSystem.<>c // TypeDefIndex: 947
+{
+	// Fields
+	public static readonly BoardTileLevelUnlockSystem.<>c <>9; // 0x0
+	public static Func<PositionComponent, LockedComponent> <>9__18_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x678AD50 Offset: 0x6786D50 VA: 0x678AD50
+	private static void .cctor() { }
+
+	// RVA: 0x678ADB8 Offset: 0x6786DB8 VA: 0x678ADB8
+	public void .ctor() { }
+
+	// RVA: 0x678ADC0 Offset: 0x6786DC0 VA: 0x678ADC0
+	internal LockedComponent <TryUnlockItems>b__18_0(PositionComponent positionComponent) { }
+}
+

@@ -1,0 +1,75 @@
+// Namespace: 
+[Serializable]
+public class MapAdventureOneConfig : TableBase // TypeDefIndex: 720
+{
+	// Fields
+	[CompilerGenerated]
+	private int <Id>k__BackingField; // 0x8
+	[CompilerGenerated]
+	private int <Strength>k__BackingField; // 0xC
+	[CompilerGenerated]
+	private int <RedPointNum>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private int <CameraScaleMin>k__BackingField; // 0x14
+	[CompilerGenerated]
+	private int <CameraScaleMax>k__BackingField; // 0x18
+
+	// Properties
+	public int Id { get; set; }
+	public int Strength { get; set; }
+	public int RedPointNum { get; set; }
+	public int CameraScaleMin { get; set; }
+	public int CameraScaleMax { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x189753C Offset: 0x189753C VA: 0x189753C
+	public int get_Id() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1897544 Offset: 0x1897544 VA: 0x1897544
+	public void set_Id(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x189754C Offset: 0x189754C VA: 0x189754C
+	public int get_Strength() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1897554 Offset: 0x1897554 VA: 0x1897554
+	public void set_Strength(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x189755C Offset: 0x189755C VA: 0x189755C
+	public int get_RedPointNum() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1897564 Offset: 0x1897564 VA: 0x1897564
+	public void set_RedPointNum(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x189756C Offset: 0x189756C VA: 0x189756C
+	public int get_CameraScaleMin() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1897574 Offset: 0x1897574 VA: 0x1897574
+	public void set_CameraScaleMin(int value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x189757C Offset: 0x189757C VA: 0x189757C
+	public int get_CameraScaleMax() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1897584 Offset: 0x1897584 VA: 0x1897584
+	public void set_CameraScaleMax(int value) { }
+
+	// RVA: 0x189758C Offset: 0x189758C VA: 0x189758C Slot: 4
+	public override int GetID() { }
+
+	// RVA: 0x18975E0 Offset: 0x18975E0 VA: 0x18975E0
+	public void .ctor() { }
+
+	// RVA: 0x18975E8 Offset: 0x18975E8 VA: 0x18975E8
+	public int <>iFixBaseProxy_GetID() { }
+}
+

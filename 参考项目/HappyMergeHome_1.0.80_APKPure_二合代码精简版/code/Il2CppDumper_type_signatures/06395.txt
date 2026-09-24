@@ -1,0 +1,547 @@
+// Namespace: Activity.MapAdventure_2
+public class MapAdventureModel : ActivityEntityBase // TypeDefIndex: 6395
+{
+	// Fields
+	private static MapAdventureModel _instance; // 0x0
+	private bool _loopCreateStorage; // 0x39
+	private bool _lastActivityOpenState; // 0x3A
+	private bool _pendingShowEndPopup; // 0x3B
+	private StatusType _lastSceneName; // 0x3C
+	private const string BattlePassPopupCoolTimeKey = "MapAdventureTwoBattlePassPopupDaily";
+	private int _redPointNum; // 0x40
+	private const MergeBoardEnum BoardId = 89;
+	private Dictionary<int, TableMergeItem> _mergeItemDictionary; // 0x44
+	private const int StartShownFlag = 1;
+	private const string TaskPopupCoolTimeKey = "MapAdventureTwoTaskPopupDaily";
+	private const string PackagePopupCoolTimeKey = "MapAdventureTwoPackagePopupDaily";
+	public int UnSetItemsCount; // 0x48
+	[CompilerGenerated]
+	private bool <ShowIllustratedRedPoint>k__BackingField; // 0x4C
+	private const int OneAndOneGiftType = 1;
+	private const int FourGiftType = 2;
+	private const string NewPackagePopupCoolTimeKey = "MapAdventureTwoNewPackagePopupDaily";
+
+	// Properties
+	public static MapAdventureModel Instance { get; }
+	private bool IsUnlock { get; }
+	public override string Guid { get; }
+	public static StorageDictionary<string, StorageMapAdventureOne> StorageMapAdventureOne { get; }
+	public StatusType LastSceneName { get; set; }
+	public StorageMapAdventureOne CurStorageMapAdventureOne { get; }
+	private StorageSummerWatermelonFifteenBattlePass StorageBattlePass { get; }
+	public List<MapAdventureTwoBattlePass> BattlePassConfig { get; }
+	public int CurScoreRatio { get; }
+	public static UIPopupThemeParkMapActivityMainController MainView { get; }
+	public string StartUIPath { get; }
+	public string MainUIPath { get; }
+	public string NewLevelUIPath { get; }
+	private static bool IsInOwnParkMapScene { get; }
+	public StorageList<int> UnSetItems { get; }
+	public StorageList<int> UnSetRewards { get; }
+	public StorageDictionary<int, int> UnCollectRewards { get; }
+	public bool ShowIllustratedRedPoint { get; set; }
+	private MapAdventureTwoMergeConfig MergeConfig { get; }
+	public Dictionary<int, TableMergeItem> MergeItemDictionary { get; }
+	public List<MapAdventureTwoPackageRewardConfig> PackageConfig { get; }
+	private StorageMapAdventureOneMerge StorageMerge { get; }
+	private StorageSummerWatermelonNewGfit StorageNewGift { get; }
+	public MapAdventureTwoPackageRewardConfig FourPackageConfig { get; }
+
+	// Methods
+
+	// RVA: 0x1AD4230 Offset: 0x1AD4230 VA: 0x1AD4230
+	public static MapAdventureModel get_Instance() { }
+
+	// RVA: 0x1AD43E8 Offset: 0x1AD43E8 VA: 0x1AD43E8
+	private bool get_IsUnlock() { }
+
+	// RVA: 0x1AD4494 Offset: 0x1AD4494 VA: 0x1AD4494 Slot: 4
+	public override string get_Guid() { }
+
+	// RVA: 0x1AD4524 Offset: 0x1AD4524 VA: 0x1AD4524
+	public static StorageDictionary<string, StorageMapAdventureOne> get_StorageMapAdventureOne() { }
+
+	// RVA: 0x1AD462C Offset: 0x1AD462C VA: 0x1AD462C
+	public StatusType get_LastSceneName() { }
+
+	// RVA: 0x1AD4680 Offset: 0x1AD4680 VA: 0x1AD4680
+	public void set_LastSceneName(StatusType value) { }
+
+	// RVA: 0x1AD46E8 Offset: 0x1AD46E8 VA: 0x1AD46E8
+	public StorageMapAdventureOne get_CurStorageMapAdventureOne() { }
+
+	[RuntimeInitializeOnLoadMethod(0)]
+	// RVA: 0x1AD47D0 Offset: 0x1AD47D0 VA: 0x1AD47D0
+	private static void InitAuto() { }
+
+	// RVA: 0x1AD42F4 Offset: 0x1AD42F4 VA: 0x1AD42F4
+	public void .ctor() { }
+
+	// RVA: 0x1AD4838 Offset: 0x1AD4838 VA: 0x1AD4838 Slot: 5
+	public override void InitFromServerData(string activityId, string activityType, ulong startTime, ulong endTime, ulong rewardEndTime, bool manualEnd, string configJson, string activitySubType) { }
+
+	// RVA: 0x1AD4C54 Offset: 0x1AD4C54 VA: 0x1AD4C54 Slot: 19
+	public override void UpdateActivityState() { }
+
+	// RVA: 0x1AD4CB8 Offset: 0x1AD4CB8 VA: 0x1AD4CB8 Slot: 10
+	public override bool IsOpened(bool hasLog = False) { }
+
+	// RVA: 0x1AD4DF4 Offset: 0x1AD4DF4 VA: 0x1AD4DF4
+	public bool IsPrivateOpened() { }
+
+	// RVA: 0x1AD4A20 Offset: 0x1AD4A20 VA: 0x1AD4A20
+	public bool CreateStorage() { }
+
+	// RVA: 0x1AD5938 Offset: 0x1AD5938 VA: 0x1AD5938
+	public bool IsCanCreateHomeEntry() { }
+
+	// RVA: 0x1AD5990 Offset: 0x1AD5990 VA: 0x1AD5990
+	public void OpenActivityLoadingWithProgress(string spineAnimationName) { }
+
+	// RVA: 0x1AD5BCC Offset: 0x1AD5BCC VA: 0x1AD5BCC
+	public void OpenActivityLoadingWithoutProgress(string spineAnimationName) { }
+
+	// RVA: 0x1AD5E08 Offset: 0x1AD5E08 VA: 0x1AD5E08
+	public void UpdateActivityLoadingProgress(float progress) { }
+
+	// RVA: 0x1AD5E6C Offset: 0x1AD5E6C VA: 0x1AD5E6C
+	public void CloseActivityLoadingUI(bool destroy = True) { }
+
+	// RVA: 0x1AD60B8 Offset: 0x1AD60B8 VA: 0x1AD60B8 Slot: 18
+	protected override void InitServerDataFinish() { }
+
+	// RVA: 0x1AD6228 Offset: 0x1AD6228 VA: 0x1AD6228
+	public void EndActivity() { }
+
+	// RVA: 0x1AD6760 Offset: 0x1AD6760 VA: 0x1AD6760
+	public void StartActivity() { }
+
+	// RVA: 0x1AD63D0 Offset: 0x1AD63D0 VA: 0x1AD63D0
+	private void TryReturnFromParkMapSceneAndShowEndPopup() { }
+
+	// RVA: 0x1AD67AC Offset: 0x1AD67AC VA: 0x1AD67AC
+	private static void CloseThemeParkMapPopups() { }
+
+	// RVA: 0x1AD6A18 Offset: 0x1AD6A18 VA: 0x1AD6A18
+	private static bool IsActivityStorageEnd(StorageMapAdventureOne storage) { }
+
+	// RVA: 0x1AD6B1C Offset: 0x1AD6B1C VA: 0x1AD6B1C
+	private static void CompletedStorageActivity(StorageMapAdventureOne storage) { }
+
+	// RVA: 0x1AD6BD8 Offset: 0x1AD6BD8 VA: 0x1AD6BD8
+	public static void CleanUnCollectRewards() { }
+
+	// RVA: 0x1AD6D98 Offset: 0x1AD6D98 VA: 0x1AD6D98
+	public void RemoveUselessStorage() { }
+
+	// RVA: 0x1AD7090 Offset: 0x1AD7090 VA: 0x1AD7090
+	public static List<ResData> GetAllUnCollectRewards() { }
+
+	[IDTag(0)]
+	// RVA: 0x1AD81F8 Offset: 0x1AD81F8 VA: 0x1AD81F8
+	public void RemoveUnCollectRewards(List<ResData> datas) { }
+
+	// RVA: 0x1AD89DC Offset: 0x1AD89DC VA: 0x1AD89DC
+	public bool CanShowUnCollectRewardsUI() { }
+
+	// RVA: 0x1AD9124 Offset: 0x1AD9124 VA: 0x1AD9124
+	private void UpdateTime() { }
+
+	// RVA: 0x1AD938C Offset: 0x1AD938C VA: 0x1AD938C
+	public void Reset() { }
+
+	// RVA: 0x1AD94E8 Offset: 0x1AD94E8 VA: 0x1AD94E8
+	public bool IsMergeLineItem(int itemId) { }
+
+	// RVA: 0x1AD965C Offset: 0x1AD965C VA: 0x1AD965C
+	public void AddEnergy(int score, string reason) { }
+
+	// RVA: 0x1AD9944 Offset: 0x1AD9944 VA: 0x1AD9944
+	private StorageSummerWatermelonFifteenBattlePass get_StorageBattlePass() { }
+
+	// RVA: 0x1AD9A14 Offset: 0x1AD9A14 VA: 0x1AD9A14
+	public List<MapAdventureTwoBattlePass> get_BattlePassConfig() { }
+
+	// RVA: 0x1AD9AEC Offset: 0x1AD9AEC VA: 0x1AD9AEC
+	public int get_CurScoreRatio() { }
+
+	// RVA: 0x1AD9BB0 Offset: 0x1AD9BB0 VA: 0x1AD9BB0
+	public bool IsGetReward(int id, bool isNormal) { }
+
+	// RVA: 0x1AD9DD4 Offset: 0x1AD9DD4 VA: 0x1AD9DD4
+	public bool IsAdsGetReward(int id) { }
+
+	// RVA: 0x1AD9C4C Offset: 0x1AD9C4C VA: 0x1AD9C4C
+	private StorageSummerWatermelonFifteenBattlePassReward GetStorageReward(int id) { }
+
+	// RVA: 0x1AD9E54 Offset: 0x1AD9E54 VA: 0x1AD9E54
+	public bool IsUnLock(int itemId) { }
+
+	// RVA: 0x1AD9F38 Offset: 0x1AD9F38 VA: 0x1AD9F38
+	private void AddUnlockItem(int id) { }
+
+	// RVA: 0x1ADA594 Offset: 0x1ADA594 VA: 0x1ADA594
+	public void GetReward(int id, bool isNormal) { }
+
+	// RVA: 0x1ADA658 Offset: 0x1ADA658 VA: 0x1ADA658
+	public void SetAdsReward(int id) { }
+
+	// RVA: 0x1ADA6F0 Offset: 0x1ADA6F0 VA: 0x1ADA6F0
+	public bool IsPurchase() { }
+
+	// RVA: 0x1ADA77C Offset: 0x1ADA77C VA: 0x1ADA77C
+	public string GetBpPrice() { }
+
+	// RVA: 0x1ADA86C Offset: 0x1ADA86C VA: 0x1ADA86C
+	public int GetBPShopId() { }
+
+	// RVA: 0x1ADA8F0 Offset: 0x1ADA8F0 VA: 0x1ADA8F0
+	public MapAdventureTwoBattlePass GetBattlePassConfig(int index) { }
+
+	// RVA: 0x1ADA9CC Offset: 0x1ADA9CC VA: 0x1ADA9CC
+	public int GetBattlePassConfigCount() { }
+
+	// RVA: 0x1ADAA80 Offset: 0x1ADAA80 VA: 0x1ADAA80
+	public MapAdventureTwoBattlePass GetFrontRewardConfig(int score = -1) { }
+
+	// RVA: 0x1ADAC98 Offset: 0x1ADAC98 VA: 0x1ADAC98
+	private int GetCurrentScore() { }
+
+	// RVA: 0x1ADACF0 Offset: 0x1ADACF0 VA: 0x1ADACF0
+	public MapAdventureTwoBattlePass GetRewardConfig(int score, out bool isEnd) { }
+
+	// RVA: 0x1ADAE3C Offset: 0x1ADAE3C VA: 0x1ADAE3C
+	public MapAdventureTwoBattlePass GetNowRewardConfig() { }
+
+	// RVA: 0x1ADA318 Offset: 0x1ADA318 VA: 0x1ADA318
+	public void UpdateBattlePassRedPoint() { }
+
+	// RVA: 0x1ADAF48 Offset: 0x1ADAF48 VA: 0x1ADAF48
+	public int GetBattlePassRedPointNum() { }
+
+	// RVA: 0x1AD53A0 Offset: 0x1AD53A0 VA: 0x1AD53A0
+	private void AddBattlePassConfig(StorageMapAdventureOne storage) { }
+
+	// RVA: 0x1ADAFB0 Offset: 0x1ADAFB0 VA: 0x1ADAFB0
+	public bool CanShowBattlePass() { }
+
+	// RVA: 0x1ADB070 Offset: 0x1ADB070 VA: 0x1ADB070
+	public void OpenBattlePass() { }
+
+	// RVA: 0x1ADB220 Offset: 0x1ADB220 VA: 0x1ADB220
+	public bool CanShowParkMapBattlePassPopup() { }
+
+	// RVA: 0x1AD7B30 Offset: 0x1AD7B30 VA: 0x1AD7B30
+	private static List<ResData> GetEndBattlePassReward(StorageMapAdventureOne record) { }
+
+	// RVA: 0x1ADB634 Offset: 0x1ADB634 VA: 0x1ADB634
+	private void BattlePassPurchaseSuccess(TableShop shopConfig) { }
+
+	// RVA: 0x1ADB900 Offset: 0x1ADB900 VA: 0x1ADB900
+	public void DebugUnlockAllBattlePass() { }
+
+	// RVA: 0x1ADB9E0 Offset: 0x1ADB9E0 VA: 0x1ADB9E0
+	public void DebugRefreshBattlePass() { }
+
+	// RVA: 0x1ADBAA4 Offset: 0x1ADBAA4 VA: 0x1ADBAA4
+	public static UIPopupThemeParkMapActivityMainController get_MainView() { }
+
+	// RVA: 0x1ADBC68 Offset: 0x1ADBC68 VA: 0x1ADBC68
+	public string get_StartUIPath() { }
+
+	// RVA: 0x1ADBBBC Offset: 0x1ADBBBC VA: 0x1ADBBBC
+	public string get_MainUIPath() { }
+
+	// RVA: 0x1ADBD14 Offset: 0x1ADBD14 VA: 0x1ADBD14
+	public string get_NewLevelUIPath() { }
+
+	// RVA: 0x1AD628C Offset: 0x1AD628C VA: 0x1AD628C
+	private static bool get_IsInOwnParkMapScene() { }
+
+	// RVA: 0x1ADBDC0 Offset: 0x1ADBDC0 VA: 0x1ADBDC0
+	public StorageList<int> get_UnSetItems() { }
+
+	// RVA: 0x1ADBE28 Offset: 0x1ADBE28 VA: 0x1ADBE28
+	public StorageList<int> get_UnSetRewards() { }
+
+	// RVA: 0x1ADBE90 Offset: 0x1ADBE90 VA: 0x1ADBE90
+	public StorageDictionary<int, int> get_UnCollectRewards() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ADBEF8 Offset: 0x1ADBEF8 VA: 0x1ADBEF8
+	public bool get_ShowIllustratedRedPoint() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1ADBF00 Offset: 0x1ADBF00 VA: 0x1ADBF00
+	private void set_ShowIllustratedRedPoint(bool value) { }
+
+	// RVA: 0x1AD5790 Offset: 0x1AD5790 VA: 0x1AD5790
+	private MapAdventureTwoMergeConfig get_MergeConfig() { }
+
+	// RVA: 0x1ADBF08 Offset: 0x1ADBF08 VA: 0x1ADBF08
+	public Dictionary<int, TableMergeItem> get_MergeItemDictionary() { }
+
+	// RVA: 0x1ADC1D4 Offset: 0x1ADC1D4 VA: 0x1ADC1D4
+	public TableMergeItem GetMergeItemConfig(int level) { }
+
+	// RVA: 0x1ADC2E4 Offset: 0x1ADC2E4 VA: 0x1ADC2E4
+	public void OpenMainPopup() { }
+
+	// RVA: 0x1ADC454 Offset: 0x1ADC454 VA: 0x1ADC454
+	public bool CanShowGuide() { }
+
+	// RVA: 0x1ADC608 Offset: 0x1ADC608 VA: 0x1ADC608
+	private bool TryShowEntranceGuideInHome() { }
+
+	// RVA: 0x1ADCCC4 Offset: 0x1ADCCC4 VA: 0x1ADCCC4
+	private bool TryShowEntranceGuideInGame() { }
+
+	// RVA: 0x1ADCB18 Offset: 0x1ADCB18 VA: 0x1ADCB18
+	private bool TryShowParkMapGuide() { }
+
+	// RVA: 0x1ADD218 Offset: 0x1ADD218 VA: 0x1ADD218
+	public bool CanShowParkMapStartPopup() { }
+
+	// RVA: 0x1ADD520 Offset: 0x1ADD520 VA: 0x1ADD520
+	public void ClearBoard() { }
+
+	// RVA: 0x1ADD6B4 Offset: 0x1ADD6B4 VA: 0x1ADD6B4
+	public bool CanShowParkMapTaskPopup() { }
+
+	// RVA: 0x1ADDADC Offset: 0x1ADDADC VA: 0x1ADDADC
+	public bool CanShowParkMapOneAndOnePopup() { }
+
+	// RVA: 0x1ADE318 Offset: 0x1ADE318 VA: 0x1ADE318
+	public bool ShouldShowEntryRedPoint() { }
+
+	// RVA: 0x1ADE58C Offset: 0x1ADE58C VA: 0x1ADE58C
+	public void OpenNewLevelPopup(TableMergeItem itemConfig, TaskCompletionSource<bool> callbackTask) { }
+
+	// RVA: 0x1ADE770 Offset: 0x1ADE770 VA: 0x1ADE770
+	public ulong GetActivityLeftTime() { }
+
+	// RVA: 0x1ADE904 Offset: 0x1ADE904 VA: 0x1ADE904
+	public string GetActivityLeftTimeString() { }
+
+	// RVA: 0x1ADE9C8 Offset: 0x1ADE9C8 VA: 0x1ADE9C8
+	public int GetBigBoardUnlockLevel() { }
+
+	// RVA: 0x1AD4E80 Offset: 0x1AD4E80 VA: 0x1AD4E80
+	public void InitMainStorageData(StorageMapAdventureOne storage) { }
+
+	// RVA: 0x1ADEAD8 Offset: 0x1ADEAD8 VA: 0x1ADEAD8
+	public List<int> GetRewardsOnMerge(TableMergeItem mergeNewConfig) { }
+
+	// RVA: 0x1ADEE60 Offset: 0x1ADEE60 VA: 0x1ADEE60
+	public void AddUnCollectRewards(int rewardId) { }
+
+	[IDTag(1)]
+	// RVA: 0x1ADF020 Offset: 0x1ADF020 VA: 0x1ADF020
+	public void RemoveUnCollectRewards(int rewardId) { }
+
+	// RVA: 0x1ADF218 Offset: 0x1ADF218 VA: 0x1ADF218
+	public void OnUseItem(int id) { }
+
+	[AsyncStateMachine(typeof(MapAdventureModel.<OnNewItem>d__130))]
+	// RVA: 0x1ADF354 Offset: 0x1ADF354 VA: 0x1ADF354
+	public void OnNewItem(int id, RefreshItemSource source) { }
+
+	// RVA: 0x1ADF474 Offset: 0x1ADF474 VA: 0x1ADF474
+	public Task GetFirstTimeReward(TableMergeItem itemConfig) { }
+
+	// RVA: 0x1ADFE14 Offset: 0x1ADFE14 VA: 0x1ADFE14
+	public bool CanDeleteItem(int id) { }
+
+	// RVA: 0x1ADFF80 Offset: 0x1ADFF80 VA: 0x1ADFF80
+	private int CanMoveUp() { }
+
+	// RVA: 0x1AE0270 Offset: 0x1AE0270 VA: 0x1AE0270
+	private List<int> GetResolvedUnlockItemIds() { }
+
+	// RVA: 0x1AE0640 Offset: 0x1AE0640 VA: 0x1AE0640
+	private bool IsUnLockBoard() { }
+
+	// RVA: 0x1AE0AB8 Offset: 0x1AE0AB8 VA: 0x1AE0AB8
+	public void TryTransferItems() { }
+
+	// RVA: 0x1AE1034 Offset: 0x1AE1034 VA: 0x1AE1034
+	public int GetShowBgNum() { }
+
+	// RVA: 0x1AD5338 Offset: 0x1AD5338 VA: 0x1AD5338
+	public void ResetIllustrated() { }
+
+	[IDTag(1)]
+	// RVA: 0x1AE1288 Offset: 0x1AE1288 VA: 0x1AE1288
+	public void AddIllustrated() { }
+
+	// RVA: 0x1AE109C Offset: 0x1AE109C VA: 0x1AE109C
+	private void RemoveIllustrated(bool isMainLine) { }
+
+	[IDTag(0)]
+	// RVA: 0x1AE12F0 Offset: 0x1AE12F0 VA: 0x1AE12F0
+	private void AddIllustrated(bool isMainLine) { }
+
+	// RVA: 0x1AE1570 Offset: 0x1AE1570 VA: 0x1AE1570
+	public void DebugSetBuyTime() { }
+
+	// RVA: 0x1AE16AC Offset: 0x1AE16AC VA: 0x1AE16AC
+	public void DebugSetEndTime() { }
+
+	// RVA: 0x1AE175C Offset: 0x1AE175C VA: 0x1AE175C
+	public void DebugSetStartTime() { }
+
+	// RVA: 0x1AE18AC Offset: 0x1AE18AC VA: 0x1AE18AC
+	public void DebugSetOneAndOneRefreshTime() { }
+
+	// RVA: 0x1AE19E4 Offset: 0x1AE19E4 VA: 0x1AE19E4
+	public void DebugSetMapAdventureTwoExplore() { }
+
+	// RVA: 0x1AE1A68 Offset: 0x1AE1A68 VA: 0x1AE1A68
+	public void DebugResetTaskState() { }
+
+	// RVA: 0x1AE1E38 Offset: 0x1AE1E38 VA: 0x1AE1E38
+	public void DebugCompleteAllTaskUnClaimed() { }
+
+	// RVA: 0x1AE2558 Offset: 0x1AE2558 VA: 0x1AE2558
+	public void MapAdventureTwoRestMergeItem() { }
+
+	// RVA: 0x1AE25A4 Offset: 0x1AE25A4 VA: 0x1AE25A4
+	private void AddMergeRewardsToUnSetItems(List<int> rewardIds, List<int> rewardNums) { }
+
+	// RVA: 0x1AE24F0 Offset: 0x1AE24F0 VA: 0x1AE24F0
+	private static bool IsFinalRewardTaskType(int achieveType) { }
+
+	// RVA: 0x1AE2984 Offset: 0x1AE2984 VA: 0x1AE2984
+	public string GetIllustratedProgress() { }
+
+	// RVA: 0x1AE14DC Offset: 0x1AE14DC VA: 0x1AE14DC
+	public int GetLineId(bool isMainLine) { }
+
+	// RVA: 0x1AE2E00 Offset: 0x1AE2E00 VA: 0x1AE2E00
+	public ValueTuple<int, int> GetUnlockMergeItemRewardNum(int id) { }
+
+	// RVA: 0x1AE2AB0 Offset: 0x1AE2AB0 VA: 0x1AE2AB0
+	private ValueTuple<int, int> GetLineUnlockProgress(bool isMainLine) { }
+
+	// RVA: 0x1AE3018 Offset: 0x1AE3018 VA: 0x1AE3018
+	public ValueTuple<int, int> GetOrderRewardCardId(StorageOrderItem storageOrderItem) { }
+
+	// RVA: 0x1AE3368 Offset: 0x1AE3368 VA: 0x1AE3368
+	public void TryProductEnergy(StorageOrderItem orderItem, BaseOrderArea orderArea) { }
+
+	// RVA: 0x1AE3750 Offset: 0x1AE3750 VA: 0x1AE3750
+	public List<MapAdventureTwoPackageRewardConfig> get_PackageConfig() { }
+
+	// RVA: 0x1AD99AC Offset: 0x1AD99AC VA: 0x1AD99AC
+	private StorageMapAdventureOneMerge get_StorageMerge() { }
+
+	// RVA: 0x1AE3828 Offset: 0x1AE3828 VA: 0x1AE3828
+	private StorageSummerWatermelonNewGfit get_StorageNewGift() { }
+
+	// RVA: 0x1ADDE74 Offset: 0x1ADDE74 VA: 0x1ADDE74
+	public MapAdventureTwoPackageRewardConfig GetCurrentPackage() { }
+
+	// RVA: 0x1AE3B58 Offset: 0x1AE3B58 VA: 0x1AE3B58
+	private int GetShopId() { }
+
+	// RVA: 0x1AE3ED8 Offset: 0x1AE3ED8 VA: 0x1AE3ED8
+	public List<MapAdventureTwoPackageReward> GetCurrentPackageRewards(MapAdventureTwoPackageRewardConfig packageConfig) { }
+
+	// RVA: 0x1AE4260 Offset: 0x1AE4260 VA: 0x1AE4260
+	public int GetCurIndex() { }
+
+	// RVA: 0x1AE42E4 Offset: 0x1AE42E4 VA: 0x1AE42E4
+	public void AddCurIndex() { }
+
+	// RVA: 0x1AE4348 Offset: 0x1AE4348 VA: 0x1AE4348
+	public void SetCurIndex(int index) { }
+
+	// RVA: 0x1AE43DC Offset: 0x1AE43DC VA: 0x1AE43DC
+	public void DebugSetGiftTime() { }
+
+	// RVA: 0x1AE3CD8 Offset: 0x1AE3CD8 VA: 0x1AE3CD8
+	public bool IsPackageOpened(MapAdventureTwoPackageRewardConfig config) { }
+
+	// RVA: 0x1AE45F4 Offset: 0x1AE45F4 VA: 0x1AE45F4
+	public ulong GetPackageLeftTime(MapAdventureTwoPackageRewardConfig curPackage) { }
+
+	// RVA: 0x1AE3890 Offset: 0x1AE3890 VA: 0x1AE3890
+	private void RefreshNexTime(ulong endTime) { }
+
+	// RVA: 0x1AE47D8 Offset: 0x1AE47D8 VA: 0x1AE47D8
+	public string GetPackageLeftTimeText(MapAdventureTwoPackageRewardConfig curPackage) { }
+
+	// RVA: 0x1AE48A8 Offset: 0x1AE48A8 VA: 0x1AE48A8
+	public void OpenGiftPopup(MapAdventureTwoPackageRewardConfig curPackage) { }
+
+	// RVA: 0x1AE4928 Offset: 0x1AE4928 VA: 0x1AE4928
+	public void GiftBagSendOneGetReward(int index) { }
+
+	// RVA: 0x1AE50C8 Offset: 0x1AE50C8 VA: 0x1AE50C8
+	public void PurchasePackageSuccess(TableShop shopConfig) { }
+
+	// RVA: 0x1AE6620 Offset: 0x1AE6620 VA: 0x1AE6620
+	public MapAdventureTwoPackageRewardConfig get_FourPackageConfig() { }
+
+	// RVA: 0x1AE674C Offset: 0x1AE674C VA: 0x1AE674C
+	public List<MapAdventureTwoPackageFourReward> GetCurrentNewPackageRewards() { }
+
+	// RVA: 0x1AE6824 Offset: 0x1AE6824 VA: 0x1AE6824
+	public ulong GetNewPackageLeftTime() { }
+
+	// RVA: 0x1AE6E4C Offset: 0x1AE6E4C VA: 0x1AE6E4C
+	public string GetNewPackageLeftTimeText() { }
+
+	// RVA: 0x1AE6F10 Offset: 0x1AE6F10 VA: 0x1AE6F10
+	public bool CanShowNewPackageGift() { }
+
+	// RVA: 0x1AE70E0 Offset: 0x1AE70E0 VA: 0x1AE70E0
+	public int GetNewPackageGiftNum(int id) { }
+
+	// RVA: 0x1AE7220 Offset: 0x1AE7220 VA: 0x1AE7220
+	private void AddNewPackageGiftNum(int id) { }
+
+	// RVA: 0x1AE73F8 Offset: 0x1AE73F8 VA: 0x1AE73F8
+	public int AddAdsNum() { }
+
+	// RVA: 0x1AE7490 Offset: 0x1AE7490 VA: 0x1AE7490
+	public void ResetAdsNum() { }
+
+	// RVA: 0x1AE5EA0 Offset: 0x1AE5EA0 VA: 0x1AE5EA0
+	public void AddNewGiftsRewards(MapAdventureTwoPackageFourReward giftReward) { }
+
+	// RVA: 0x1AE6A30 Offset: 0x1AE6A30 VA: 0x1AE6A30
+	private void RefreshNewGift(ulong endTime) { }
+
+	// RVA: 0x1AE751C Offset: 0x1AE751C VA: 0x1AE751C
+	public void OpenNewGiftPopup() { }
+
+	// RVA: 0x1AE7584 Offset: 0x1AE7584 VA: 0x1AE7584
+	public bool CanShowParkMapNewGiftPopup() { }
+
+	// RVA: 0x1AE7998 Offset: 0x1AE7998 VA: 0x1AE7998
+	public void DebugResetNewGift() { }
+
+	// RVA: 0x1AE7A04 Offset: 0x1AE7A04 VA: 0x1AE7A04
+	public void DebugSetNewGiftRefreshTime() { }
+
+	// RVA: 0x1AE2778 Offset: 0x1AE2778 VA: 0x1AE2778
+	private bool IsMapAdventureItemId(int itemId) { }
+
+	[CompilerGenerated]
+	// RVA: 0x1AE7B3C Offset: 0x1AE7B3C VA: 0x1AE7B3C
+	private void <TryReturnFromParkMapSceneAndShowEndPopup>b__33_0() { }
+
+	// RVA: 0x1AE7B48 Offset: 0x1AE7B48 VA: 0x1AE7B48
+	public void <>iFixBaseProxy_InitFromServerData(string P0, string P1, ulong P2, ulong P3, ulong P4, bool P5, string P6, string P7) { }
+
+	// RVA: 0x1AE7BA0 Offset: 0x1AE7BA0 VA: 0x1AE7BA0
+	public void <>iFixBaseProxy_UpdateActivityState() { }
+
+	// RVA: 0x1AE7BA8 Offset: 0x1AE7BA8 VA: 0x1AE7BA8
+	public bool <>iFixBaseProxy_IsOpened(bool P0) { }
+
+	// RVA: 0x1AE7BB0 Offset: 0x1AE7BB0 VA: 0x1AE7BB0
+	public void <>iFixBaseProxy_InitServerDataFinish() { }
+}
+

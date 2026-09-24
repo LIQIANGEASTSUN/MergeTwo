@@ -1,0 +1,36 @@
+// Namespace: Merger.MergeBoard.View.Items
+public class MergeBoardItemBehavioursHandler : ViewBase<BoardItemBehavioursHandlerViewModel> // TypeDefIndex: 25708
+{
+	// Fields
+	[Tooltip("Can be used to configure visual variants of behaviours in Board Events")]
+	[SerializeField]
+	[CanBeNull]
+	private List<BehaviourPrefabData> _behaviourOverrides; // 0x30
+	[CanBeNull]
+	[SerializeField]
+	[Tooltip("holder GameObject for behaviour pools")]
+	private Transform _behaviourPoolsHolder; // 0x38
+	private Dictionary<string, BehaviourPrefabData> _combinedBehaviourConfig; // 0x40
+
+	// Properties
+	public Dictionary<string, BehaviourPrefabData> CombinedBehaviourConfig { get; }
+	public string BehavioursPoolIdStringFormat { get; }
+
+	// Methods
+
+	// RVA: 0x6A44698 Offset: 0x6A40698 VA: 0x6A44698
+	public Dictionary<string, BehaviourPrefabData> get_CombinedBehaviourConfig() { }
+
+	// RVA: 0x6A44708 Offset: 0x6A40708 VA: 0x6A44708
+	public string get_BehavioursPoolIdStringFormat() { }
+
+	// RVA: 0x6A44750 Offset: 0x6A40750 VA: 0x6A44750
+	public void AttachBehaviours(IBoardItemView boardItem) { }
+
+	// RVA: 0x6A44800 Offset: 0x6A40800 VA: 0x6A44800
+	public void InitializeBehaviourPools() { }
+
+	// RVA: 0x6A44954 Offset: 0x6A40954 VA: 0x6A44954
+	public void .ctor() { }
+}
+

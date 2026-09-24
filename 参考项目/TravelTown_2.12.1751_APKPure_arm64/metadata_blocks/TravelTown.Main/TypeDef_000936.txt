@@ -1,0 +1,66 @@
+// Namespace: MergeEngine.ECS.Systems.Board
+public class UndoSellAbuseSystem : SystemBase // TypeDefIndex: 936
+{
+	// Fields
+	[Inject]
+	private IUserProfileService _userProfileService; // 0x40
+	[InjectSystem]
+	private BoardQueueSystem _boardQueueSystem; // 0x48
+	private bool _canUndo; // 0x50
+	private bool _alreadyReportedBlockAnalytic; // 0x51
+	private string _blockedSpawnerId; // 0x58
+	private bool _alreadyReportedMaxQueueAnalytic; // 0x60
+
+	// Properties
+	private int QueueThresholdSizeForAbuse { get; }
+	public bool QueueAbuseThresholdReached { get; }
+	private bool IgnoreQueueAbuse { get; }
+
+	// Methods
+
+	// RVA: 0x6788DCC Offset: 0x6784DCC VA: 0x6788DCC
+	private int get_QueueThresholdSizeForAbuse() { }
+
+	// RVA: 0x6788E70 Offset: 0x6784E70 VA: 0x6788E70
+	public bool get_QueueAbuseThresholdReached() { }
+
+	// RVA: 0x6788EB8 Offset: 0x6784EB8 VA: 0x6788EB8
+	private bool get_IgnoreQueueAbuse() { }
+
+	// RVA: 0x6788ED0 Offset: 0x6784ED0 VA: 0x6788ED0 Slot: 6
+	protected override void InitializeSystem() { }
+
+	// RVA: 0x678910C Offset: 0x678510C VA: 0x678910C Slot: 8
+	protected override void OnGameStarted() { }
+
+	// RVA: 0x6789164 Offset: 0x6785164 VA: 0x6789164
+	private void OnSellItemStart() { }
+
+	// RVA: 0x6789170 Offset: 0x6785170 VA: 0x6789170
+	private void OnSelectedItemStart() { }
+
+	// RVA: 0x6789178 Offset: 0x6785178 VA: 0x6789178
+	private void OnUndoSellStart() { }
+
+	// RVA: 0x6789330 Offset: 0x6785330 VA: 0x6789330
+	private void CheckForEnqueueAnalytics(ItemQueuedSignal signal) { }
+
+	// RVA: 0x67894B8 Offset: 0x67854B8 VA: 0x67894B8
+	private void CheckForDequeueAnalytics(ItemDequeuedSignal signal) { }
+
+	// RVA: 0x67894FC Offset: 0x67854FC VA: 0x67894FC
+	public void ReleaseFromInventoryAnalytics() { }
+
+	// RVA: 0x6789188 Offset: 0x6785188 VA: 0x6789188
+	private void BlockSpawnerAnalytics(bool isBlocked, string spawnerId) { }
+
+	// RVA: 0x6789564 Offset: 0x6785564 VA: 0x6789564
+	public bool SpawnerAbuseIsPossible(string spawnerId) { }
+
+	// RVA: 0x67895B0 Offset: 0x67855B0 VA: 0x67895B0 Slot: 7
+	protected override void DisposeSystem() { }
+
+	// RVA: 0x67897EC Offset: 0x67857EC VA: 0x67897EC
+	public void .ctor() { }
+}
+

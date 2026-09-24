@@ -1,0 +1,79 @@
+// Namespace: MergeEngine.Model
+public class InventoryModel : ModelBase, IInventoryModel // TypeDefIndex: 425
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x28
+	[Inject]
+	protected IEntityManager entityManager; // 0x30
+	[Inject]
+	private ILiveOpsEventModel _liveOpsEventModel; // 0x38
+	private InventoryCapability _inventoryConfig; // 0x40
+
+	// Properties
+	private InventoryComponent _inventoryComponent { get; }
+	private ProducerInventoryComponent _producerInventoryComponent { get; }
+	public int NextSlotPrice { get; }
+	public int MaxSlots { get; }
+	public PlayerResourceEnum SlotPriceCurrency { get; }
+	private ObservableList<Entity> Slots { get; }
+	public int NumSlots { get; }
+	public int NumProducerSlots { get; }
+
+	// Methods
+
+	// RVA: 0x61244D4 Offset: 0x61204D4 VA: 0x61244D4
+	private InventoryComponent get__inventoryComponent() { }
+
+	// RVA: 0x612458C Offset: 0x612058C VA: 0x612458C
+	private ProducerInventoryComponent get__producerInventoryComponent() { }
+
+	// RVA: 0x6124644 Offset: 0x6120644 VA: 0x6124644 Slot: 23
+	public int get_NextSlotPrice() { }
+
+	// RVA: 0x6124668 Offset: 0x6120668 VA: 0x6124668 Slot: 24
+	public int get_MaxSlots() { }
+
+	// RVA: 0x6124684 Offset: 0x6120684 VA: 0x6124684 Slot: 19
+	public PlayerResourceEnum get_SlotPriceCurrency() { }
+
+	// RVA: 0x612472C Offset: 0x612072C VA: 0x612472C
+	private ObservableList<Entity> get_Slots() { }
+
+	// RVA: 0x6124748 Offset: 0x6120748 VA: 0x6124748 Slot: 21
+	public int get_NumSlots() { }
+
+	// RVA: 0x612479C Offset: 0x612079C VA: 0x612479C Slot: 22
+	public int get_NumProducerSlots() { }
+
+	// RVA: 0x61247F0 Offset: 0x61207F0 VA: 0x61247F0 Slot: 20
+	public float GetToolProgressPercentage(PlayerResourceEnum resource) { }
+
+	// RVA: 0x6124814 Offset: 0x6120814 VA: 0x6124814
+	public InventoryCapability GetInventoryConfig() { }
+
+	// RVA: 0x61249C8 Offset: 0x61209C8 VA: 0x61249C8 Slot: 17
+	protected override void InitializeModel() { }
+
+	// RVA: 0x6124A60 Offset: 0x6120A60 VA: 0x6124A60
+	private void GameConfigLoaded(GameConfig gameConfig) { }
+
+	// RVA: 0x6124B14 Offset: 0x6120B14 VA: 0x6124B14 Slot: 25
+	public IMergeItem GetItem(int slotIndex, InventorySlotType type) { }
+
+	// RVA: 0x6124C4C Offset: 0x6120C4C VA: 0x6124C4C Slot: 26
+	public string GetItemUUID(int slotIndex, InventorySlotType type) { }
+
+	// RVA: 0x6124D00 Offset: 0x6120D00 VA: 0x6124D00 Slot: 27
+	public AssetReferenceT<Sprite> GetItemAsset(int slotIndex, InventorySlotType type) { }
+
+	// RVA: 0x6124DB4 Offset: 0x6120DB4 VA: 0x6124DB4 Slot: 28
+	public void SetToolProgress(PlayerResourceEnum resource, float progress) { }
+
+	// RVA: 0x6124E28 Offset: 0x6120E28 VA: 0x6124E28 Slot: 29
+	public void UpdateToolProgress(PlayerResourceEnum toolType, float progressToAdd) { }
+
+	// RVA: 0x6124E5C Offset: 0x6120E5C VA: 0x6124E5C
+	public void .ctor() { }
+}
+

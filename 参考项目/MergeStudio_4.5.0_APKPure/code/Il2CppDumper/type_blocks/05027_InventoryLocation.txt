@@ -1,0 +1,9 @@
+// Namespace: MergePuzzle.Locations
+public class InventoryLocation : LocationBase // TypeDefIndex: 5027
+{
+	// Methods
+
+	// RVA: 0x1E12524 Offset: 0x1E12524 VA: 0x1E12524
+	public void .ctor() { }
+}
+

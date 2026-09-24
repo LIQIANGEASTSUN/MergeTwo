@@ -1,0 +1,9 @@
+// Namespace: 
+public struct BoardEvent.Merge : IEvent // TypeDefIndex: 1774
+{
+	// Fields
+	public ItemController Item1; // 0x0
+	public ItemController Item2; // 0x4
+	public BoardItemData SpawnedItem; // 0x8
+}
+

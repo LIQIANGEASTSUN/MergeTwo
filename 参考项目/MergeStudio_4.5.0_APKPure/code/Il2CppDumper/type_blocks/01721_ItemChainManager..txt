@@ -1,0 +1,57 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ItemChainManager.<>c // TypeDefIndex: 1721
+{
+	// Fields
+	public static readonly ItemChainManager.<>c <>9; // 0x0
+	public static Predicate<InventoryEntity.ArchiveTaskEntity> <>9__14_0; // 0x4
+	public static Func<int, int> <>9__20_0; // 0x8
+	public static Func<ItemLinkModel, int> <>9__49_0; // 0xC
+	public static Func<ItemLinkModel, int> <>9__50_0; // 0x10
+	public static Func<BoardPosition, int> <>9__54_1; // 0x14
+	public static Func<ItemEntity, int> <>9__54_4; // 0x18
+	public static Func<RewardEntity, int> <>9__54_6; // 0x1C
+	public static Func<ItemChainManager.SpawnerPointsQuery, int> <>9__54_7; // 0x20
+	public static Func<int, int> <>9__54_8; // 0x24
+	public static Func<ItemLinkModel, bool> <>9__55_0; // 0x28
+
+	// Methods
+
+	// RVA: 0x190F30C Offset: 0x190F30C VA: 0x190F30C
+	private static void .cctor() { }
+
+	// RVA: 0x190F380 Offset: 0x190F380 VA: 0x190F380
+	public void .ctor() { }
+
+	// RVA: 0x190F388 Offset: 0x190F388 VA: 0x190F388
+	internal bool <SetWaitingArchiveTasksReadyForRemoval>b__14_0(InventoryEntity.ArchiveTaskEntity a) { }
+
+	// RVA: 0x190F3AC Offset: 0x190F3AC VA: 0x190F3AC
+	internal int <ProcessChainData>b__20_0(int i) { }
+
+	// RVA: 0x190F3B4 Offset: 0x190F3B4 VA: 0x190F3B4
+	internal int <GetAllLinksOrderedByUnlockLevel>b__49_0(ItemLinkModel link) { }
+
+	// RVA: 0x190F3D0 Offset: 0x190F3D0 VA: 0x190F3D0
+	internal int <GetAllLinksOrderedByArchiveLevel>b__50_0(ItemLinkModel link) { }
+
+	// RVA: 0x190F3EC Offset: 0x190F3EC VA: 0x190F3EC
+	internal int <GetSpawnersToRemoveByArchive>b__54_1(BoardPosition p) { }
+
+	// RVA: 0x190F438 Offset: 0x190F438 VA: 0x190F438
+	internal int <GetSpawnersToRemoveByArchive>b__54_4(ItemEntity ie) { }
+
+	// RVA: 0x190F454 Offset: 0x190F454 VA: 0x190F454
+	internal int <GetSpawnersToRemoveByArchive>b__54_6(RewardEntity re) { }
+
+	// RVA: 0x190F470 Offset: 0x190F470 VA: 0x190F470
+	internal int <GetSpawnersToRemoveByArchive>b__54_7(ItemChainManager.SpawnerPointsQuery q) { }
+
+	// RVA: 0x190F48C Offset: 0x190F48C VA: 0x190F48C
+	internal int <GetSpawnersToRemoveByArchive>b__54_8(int index) { }
+
+	// RVA: 0x190F494 Offset: 0x190F494 VA: 0x190F494
+	internal bool <GetPossibleArchiveLinks>b__55_0(ItemLinkModel l) { }
+}
+

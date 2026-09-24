@@ -1,0 +1,19 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardTaskController.<>c__DisplayClass77_0 // TypeDefIndex: 2055
+{
+	// Fields
+	public List<BoardTaskItem> newTasks; // 0x8
+
+	// Methods
+
+	// RVA: 0x19603B4 Offset: 0x19603B4 VA: 0x19603B4
+	public void .ctor() { }
+
+	// RVA: 0x19603BC Offset: 0x19603BC VA: 0x19603BC
+	internal void <ProcessLevelUpDismissAndGenerateBoardTasks>b__0(IEventPointsOnBoardTaskHandler handler) { }
+
+	// RVA: 0x196047C Offset: 0x196047C VA: 0x196047C
+	internal void <ProcessLevelUpDismissAndGenerateBoardTasks>b__1(IExtraRewardItemOnBoardTaskHandler handler) { }
+}
+

@@ -1,0 +1,15 @@
+// Namespace: MergeEngine.Configuration.Capabilities
+[Serializable]
+public class DifficultyCapability // TypeDefIndex: 1439
+{
+	// Fields
+	public bool ManualOverride; // 0x10
+	public float AverageDifficulty; // 0x14
+	public List<DifficultyEntry> Difficulties; // 0x18
+
+	// Methods
+
+	// RVA: 0x600FE50 Offset: 0x600BE50 VA: 0x600FE50
+	public void .ctor() { }
+}
+

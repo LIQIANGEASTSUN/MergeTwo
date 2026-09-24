@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class FishCultureModel.<>c__DisplayClass41_0 // TypeDefIndex: 548
+{
+	// Fields
+	public StorageOrderItem taskItem; // 0x8
+
+	// Methods
+
+	// RVA: 0x31D9074 Offset: 0x31D9074 VA: 0x31D9074
+	public void .ctor() { }
+
+	// RVA: 0x31DC390 Offset: 0x31DC390 VA: 0x31DC390
+	internal bool <GetTaskValue>b__0(FishCultureTaskRewardConfig p) { }
+}
+

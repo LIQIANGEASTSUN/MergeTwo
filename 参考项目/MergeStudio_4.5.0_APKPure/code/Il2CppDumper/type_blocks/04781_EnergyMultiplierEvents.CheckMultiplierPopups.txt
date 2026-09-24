@@ -1,0 +1,4 @@
+// Namespace: 
+public struct EnergyMultiplierEvents.CheckMultiplierPopups : IEvent // TypeDefIndex: 4781
+{}
+

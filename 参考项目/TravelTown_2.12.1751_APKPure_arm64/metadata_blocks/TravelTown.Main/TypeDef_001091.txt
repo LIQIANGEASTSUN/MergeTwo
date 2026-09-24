@@ -1,0 +1,68 @@
+// Namespace: MergeEngine.ECS.Components.Items
+public class TimeDurationComponent : ComponentBase<TimeDurationCapability>, ITimeDurationComponent // TypeDefIndex: 1091
+{
+	// Fields
+	[CompilerGenerated]
+	private double <Timeleft>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private bool <Active>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private bool <IsActivating>k__BackingField; // 0x31
+	[CompilerGenerated]
+	private double <Duration>k__BackingField; // 0x38
+	[CompilerGenerated]
+	private bool <IgnoreBoardSecondsForThisTick>k__BackingField; // 0x40
+
+	// Properties
+	public double Timeleft { get; set; }
+	public bool Active { get; set; }
+	public bool IsActivating { get; set; }
+	public double Duration { get; set; }
+	public bool IgnoreBoardSecondsForThisTick { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x68FDEEC Offset: 0x68F9EEC VA: 0x68FDEEC Slot: 7
+	public double get_Timeleft() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FDEF4 Offset: 0x68F9EF4 VA: 0x68FDEF4 Slot: 8
+	public void set_Timeleft(double value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FDEFC Offset: 0x68F9EFC VA: 0x68FDEFC Slot: 9
+	public bool get_Active() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FDF04 Offset: 0x68F9F04 VA: 0x68FDF04 Slot: 10
+	public void set_Active(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FDF10 Offset: 0x68F9F10 VA: 0x68FDF10
+	public bool get_IsActivating() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FDF18 Offset: 0x68F9F18 VA: 0x68FDF18
+	public void set_IsActivating(bool value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FDF24 Offset: 0x68F9F24 VA: 0x68FDF24 Slot: 11
+	public double get_Duration() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FDF2C Offset: 0x68F9F2C VA: 0x68FDF2C Slot: 12
+	public void set_Duration(double value) { }
+
+	// RVA: 0x68FDF34 Offset: 0x68F9F34 VA: 0x68FDF34
+	public void .ctor(TimeDurationCapability capability, Entity entity) { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FDFAC Offset: 0x68F9FAC VA: 0x68FDFAC
+	public bool get_IgnoreBoardSecondsForThisTick() { }
+
+	[CompilerGenerated]
+	// RVA: 0x68FDFB4 Offset: 0x68F9FB4 VA: 0x68FDFB4
+	public void set_IgnoreBoardSecondsForThisTick(bool value) { }
+}
+

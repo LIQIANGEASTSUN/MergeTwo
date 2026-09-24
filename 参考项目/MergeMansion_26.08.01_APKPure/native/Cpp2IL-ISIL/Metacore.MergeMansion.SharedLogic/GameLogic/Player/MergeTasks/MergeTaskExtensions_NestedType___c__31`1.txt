@@ -1,0 +1,161 @@
+Type: GameLogic.Player.MergeTasks.MergeTaskExtensions+<>c__31`1
+
+Method: System.Void .cctor()
+
+Disassembly:
+	0x026C7E80 TBNZ X8, 0x0, 0x26C7E88
+	0x026C7E84 BL 0x23D4F40
+	0x026C7E88 LDR X8, [X0 + 0xC0]
+	0x026C7E8C LDR X0, [X8 + 0x10]
+	0x026C7E90 ADD X8, X0, 0x135
+	0x026C7E94 LDRH W8, [X8]
+	0x026C7E98 TBNZ X8, 0x0, 0x26C7EA0
+	0x026C7E9C BL 0x23D4F40
+	0x026C7EA0 MOV X1, X20
+	0x026C7EA4 LDP X20, X19, [X31 + 0x10]
+	0x026C7EA8 LDR X0, [X0 + 0xB8]
+	0x026C7EAC LDR X30, [X31], #0x20
+	0x026C7EB0 B 0x239B888
+	0x026C7EB4 MOV X1, X31
+	0x026C7EB8 B 0x44E8DEC
+	0x026C7EBC STR X30, [X31 - 0x20]!
+	0x026C7EC0 STP X20, X19, [X31 + 0x10]
+	0x026C7EC4 ADRP X8, 0x3006000
+	0x026C7EC8 MOV X19, X1
+	0x026C7ECC LDR X8, [X8 + 0x248]
+	0x026C7ED0 LDR X9, [X2 + 0x20]
+	0x026C7ED4 LDR X0, [X8 + 0xE0]
+	0x026C7ED8 LDR X8, [X9 + 0xC0]
+	0x026C7EDC LDR W9, [X0 + 0xE4]
+	0x026C7EE0 LDR X20, [X8 + 0x18]
+	0x026C7EE4 CBNZ W9, 0x26C7EEC
+	0x026C7EE8 BL 0x239BA64
+	0x026C7EEC MOV X0, X20
+	0x026C7EF0 MOV X1, X31
+	0x026C7EF4 BL 0x44B4C2C
+	0x026C7EF8 CBZ X19, 0x26C7F1C
+	0x026C7EFC LDR X8, [X19]
+	0x026C7F00 MOV X1, X0
+	0x026C7F04 MOV X0, X19
+	0x026C7F08 LDP X20, X19, [X31 + 0x10]
+	0x026C7F0C LDR X2, [X8 + 0x2B0]
+	0x026C7F10 LDR X3, [X8 + 0x2A8]
+	0x026C7F14 LDR X30, [X31], #0x20
+	0x026C7F18 BR X3
+	0x026C7F1C BL 0x239BB90
+	0x026C7F20 STR X30, [X31 - 0x20]!
+	0x026C7F24 STP X20, X19, [X31 + 0x10]
+	0x026C7F28 MOV X19, X0
+	0x026C7F2C LDR X0, [X0 + 0x20]
+	0x026C7F30 ADD X8, X0, 0x135
+	0x026C7F34 LDRH W8, [X8]
+	0x026C7F38 TBNZ X8, 0x0, 0x26C7F40
+	0x026C7F3C BL 0x23D4F40
+	0x026C7F40 LDR X8, [X0 + 0xC0]
+	0x026C7F44 LDR X0, [X8]
+	0x026C7F48 ADD X8, X0, 0x135
+	0x026C7F4C LDRH W8, [X8]
+	0x026C7F50 TBNZ X8, 0x0, 0x26C7F58
+	0x026C7F54 BL 0x23D4F40
+
+ISIL:
+	001 Move [X31-32], X30
+	002 Move [X31+16], X20
+	003 Move [X31+24], X19
+	004 Move X19, X0
+	005 Move X0, [X0+32]
+	006 Add X8, X0, 309
+	007 NotImplemented "Instruction LDRH not yet implemented."
+	008 Move TEMP, X8
+	009 And TEMP, TEMP, 1
+	010 Compare TEMP, 1
+	011 JumpIfEqual {13}
+	012 Call 0x23D8F40
+	013 Move X8, [X0+192]
+	014 Move X0, [X8]
+	015 Add X8, X0, 309
+	016 NotImplemented "Instruction LDRH not yet implemented."
+	017 Move TEMP, X8
+	018 And TEMP, TEMP, 1
+	019 Compare TEMP, 1
+	020 JumpIfEqual {22}
+	021 Call 0x23D8F40
+	022 Call 0x239FB80
+	023 Move X8, [X19+32]
+	024 Move X20, X0
+	025 Add X9, X8, 309
+	026 NotImplemented "Instruction LDRH not yet implemented."
+	027 Move TEMP, X9
+	028 And TEMP, TEMP, 1
+	029 Compare TEMP, 1
+	030 JumpIfEqual {33}
+	031 Move X0, X8
+	032 Call 0x23D8F40
+	033 Move X0, X20
+	034 Move X1, X31
+	035 Call Object..ctor, X0
+	036 Move X0, [X19+32]
+	037 Add X8, X0, 309
+	038 NotImplemented "Instruction LDRH not yet implemented."
+	039 Move TEMP, X8
+	040 And TEMP, TEMP, 1
+	041 Compare TEMP, 1
+	042 JumpIfEqual {44}
+	043 Call 0x23D8F40
+	044 Move X8, [X0+192]
+	045 Move X0, [X8+16]
+	046 Add X8, X0, 309
+	047 NotImplemented "Instruction LDRH not yet implemented."
+	048 Move TEMP, X8
+	049 And TEMP, TEMP, 1
+	050 Compare TEMP, 1
+	051 JumpIfEqual {53}
+	052 Call 0x23D8F40
+	053 Move X8, [X0+184]
+	054 Move X0, [X19+32]
+	055 Move [X8], X20
+	056 Add X8, X0, 309
+	057 NotImplemented "Instruction LDRH not yet implemented."
+	058 Move TEMP, X8
+	059 And TEMP, TEMP, 1
+	060 Compare TEMP, 1
+	061 JumpIfEqual {63}
+	062 Call 0x23D8F40
+	063 Move X8, [X0+192]
+	064 Move X0, [X8+16]
+	065 Add X8, X0, 309
+	066 NotImplemented "Instruction LDRH not yet implemented."
+	067 Move TEMP, X8
+	068 And TEMP, TEMP, 1
+	069 Compare TEMP, 1
+	070 JumpIfEqual {72}
+	071 Call 0x23D8F40
+	072 Move X1, X20
+	073 Move X20, [X31+16]
+	074 Move X19, [X31+24]
+	075 Move X0, [X0+184]
+	076 Move X30, [X31+32]
+	077 Call 0x239F888
+	078 Return 
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x026C7F58 BL 0x239BB80
+	0x026C7F5C LDR X8, [X19 + 0x20]
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: GameLogic.Player.MergeTasks.HotspotTask <InPriorityOrder>b__31_0(T task)
+
+Disassembly:
+	0x026C7F60 MOV X20, X0
+	0x026C7F64 ADD X9, X8, 0x135
+
+ISIL:
+	001 Move X0, X1
+	002 Return X0
+

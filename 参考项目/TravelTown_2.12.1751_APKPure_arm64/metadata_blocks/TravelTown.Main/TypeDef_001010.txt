@@ -1,0 +1,13 @@
+// Namespace: MergeEngine.ECS.Components
+[Serializable]
+public class SerializedDataComponent // TypeDefIndex: 1010
+{
+	// Fields
+	public Dictionary<string, string> Data; // 0x10
+
+	// Methods
+
+	// RVA: 0x68F7420 Offset: 0x68F3420 VA: 0x68F7420
+	public void .ctor() { }
+}
+

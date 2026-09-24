@@ -1,0 +1,10 @@
+// Namespace: 
+public struct BoardEvent.TaskSupportChestSpawnerSpawn : IEvent // TypeDefIndex: 1808
+{
+	// Fields
+	public ItemController Spawner; // 0x0
+	public BoardItemTaskSupportChest TaskSupportChest; // 0x4
+	public Coordinate TargetPosition; // 0x8
+	public int EnergyConsumeAmount; // 0x10
+}
+

@@ -1,0 +1,14 @@
+// Namespace: 
+public struct EntityUpdateEvent.LevelUpdateEntity : IEvent // TypeDefIndex: 2673
+{
+	// Fields
+	public UserEntity UserEntity; // 0x0
+	public EventEntity EventEntity; // 0x4
+	public LevelItem NewLevelData; // 0x8
+	public int ExtraXp; // 0xC
+	public List<RegularReward> RegularRewards; // 0x10
+	public LevelUpReward LevelUpReward; // 0x14
+	public int NewLevel; // 0x18
+	public RegularReward TaskItemReward; // 0x1C
+}
+

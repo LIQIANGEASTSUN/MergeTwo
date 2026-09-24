@@ -1,0 +1,27 @@
+// Namespace: 
+[CompilerGenerated]
+private struct BoardTaskEntity.<OptimizeCompletedTaskData>d__65 : IAsyncStateMachine // TypeDefIndex: 1973
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncUniTaskMethodBuilder<bool> <>t__builder; // 0x4
+	public BoardTaskEntity <>4__this; // 0x10
+	private long <start>5__2; // 0x18
+	private Dictionary<int, bool> <completedTaskMap>5__3; // 0x20
+	private int <maxTask>5__4; // 0x24
+	private int <yieldCount>5__5; // 0x28
+	private int <maxResult>5__6; // 0x2C
+	private List.Enumerator<int> <>7__wrap6; // 0x30
+	private YieldAwaitable.Awaiter <>u__1; // 0x40
+	private int <i>5__8; // 0x44
+
+	// Methods
+
+	// RVA: 0x1948274 Offset: 0x1948274 VA: 0x1948274 Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x1948C5C Offset: 0x1948C5C VA: 0x1948C5C Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

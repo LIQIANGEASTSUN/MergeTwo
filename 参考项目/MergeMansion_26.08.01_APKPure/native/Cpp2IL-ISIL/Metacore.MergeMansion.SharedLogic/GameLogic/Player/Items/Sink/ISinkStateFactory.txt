@@ -1,0 +1,23 @@
+Type: GameLogic.Player.Items.Sink.ISinkStateFactory
+
+Method: System.Collections.Generic.IEnumerable`1<System.ValueTuple`2<GameLogic.Player.Items.IItemDefinition, System.Int32>> GetSinkProducts(GameLogic.Config.IMergeMansionGameConfig config)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.Sink.ISinkState Create()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: System.Collections.Generic.IEnumerable`1<System.Int32> GetAcceptedItems(GameLogic.Config.IMergeMansionGameConfig config)
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

@@ -1,0 +1,57 @@
+// Namespace: Merger.MergeBoard.Logic
+public class ItemSelectionBoxPickHandler : IBoardControllerPostTickProcessor, IItemSelectionBoxPickHandler // TypeDefIndex: 25830
+{
+	// Fields
+	[Inject]
+	private INavigationModel _navigationModel; // 0x10
+	[Inject]
+	private IMergeBoardLayout _layout; // 0x18
+	[Inject]
+	private BoardController _boardController; // 0x20
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x28
+	[Inject]
+	private ItemSelectionBoxConfigurationModel _itemSelectionBoxConfigurationModel; // 0x30
+	[Inject]
+	private IItemInfoConfigurationModel _itemInfoConfigurationModel; // 0x38
+	[Inject]
+	private IRemoteContentService _remoteContentService; // 0x40
+	[Inject]
+	private IAssetOverrideMappingModel _assetOverrideMappingModel; // 0x48
+	[Inject]
+	private ItemSelectionBoxRepository _itemSelectionBoxRepository; // 0x50
+	[Inject]
+	private IBoardOperationActionsBuilder _boardOperationActionsBuilder; // 0x58
+	[Inject]
+	private IMergeBoardOperationTrackingService _operationTrackingService; // 0x60
+	[Inject]
+	private DiContainer _container; // 0x68
+
+	// Methods
+
+	// RVA: 0x6A81824 Offset: 0x6A7D824 VA: 0x6A81824 Slot: 4
+	public void Process(TickArgs result) { }
+
+	// RVA: 0x6A818D0 Offset: 0x6A7D8D0 VA: 0x6A818D0 Slot: 5
+	public void OpenItemSelectionBoxPopup(Entity entity, IMergeItem mergeItem, string uuid, int boardIndex) { }
+
+	// RVA: 0x6A81ED0 Offset: 0x6A7DED0 VA: 0x6A81ED0
+	private void ShowPopup(IMergeItem mergeItem, BoardItemPosition boardItemPosition, string uuid, int itemsCount) { }
+
+	// RVA: 0x6A82324 Offset: 0x6A7E324 VA: 0x6A82324
+	private void GenerateContent(Entity entity, IMergeItem mergeItem, string uuid, string reason) { }
+
+	// RVA: 0x6A81E14 Offset: 0x6A7DE14 VA: 0x6A81E14
+	private bool AreAllItemsAvailable(List<ItemSelectionBoxPredictedItem> predictedItems) { }
+
+	// RVA: 0x6A82828 Offset: 0x6A7E828 VA: 0x6A82828
+	private void SendChangeStateOperation(Entity entity) { }
+
+	// RVA: 0x6A82B34 Offset: 0x6A7EB34 VA: 0x6A82B34
+	public void .ctor() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A82B3C Offset: 0x6A7EB3C VA: 0x6A82B3C
+	private bool <AreAllItemsAvailable>b__16_0(ItemSelectionBoxPredictedItem mergeItem) { }
+}
+

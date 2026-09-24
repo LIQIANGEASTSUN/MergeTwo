@@ -1,0 +1,41 @@
+// Namespace: MergeEngine.Model
+public interface IResourcesConfigurationModel : IResourcesConfigurationModelBase // TypeDefIndex: 430
+{
+	// Properties
+	public abstract int FreeEnergyRefillCount { get; }
+	public abstract ResourceConfig ResourceConfig { get; }
+	public abstract ObservableDictionary<IRewardType, AssetReferenceT<Sprite>> ResourceIcons { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract IMergeGraphItem GetResourceGraph(string resource);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract int get_FreeEnergyRefillCount();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract ResourceConfig get_ResourceConfig();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract ObservableDictionary<IRewardType, AssetReferenceT<Sprite>> get_ResourceIcons();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract void AddResourceIconOverride(IRewardType rewardType, AssetReferenceT<Sprite> iconSprite);
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract void RemoveResourceIconOverride(IRewardType rewardType);
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract List<IRewardType> AllGenericTokenIds();
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract bool IsGenericToken(IRewardType uniqueId);
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract GenericTokenConfig GetGenericTokenConfig(IRewardType uniqueId);
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract void SetupSpriteAssetsForTokens();
+}
+

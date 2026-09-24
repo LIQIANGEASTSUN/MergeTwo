@@ -1,0 +1,21 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ItemCollectionHandler.<>c // TypeDefIndex: 404
+{
+	// Fields
+	public static readonly ItemCollectionHandler.<>c <>9; // 0x0
+	public static Func<ItemInfo, int> <>9__58_0; // 0x4
+
+	// Methods
+
+	// RVA: 0x1BA14A0 Offset: 0x1BA14A0 VA: 0x1BA14A0
+	private static void .cctor() { }
+
+	// RVA: 0x1BA1514 Offset: 0x1BA1514 VA: 0x1BA1514
+	public void .ctor() { }
+
+	// RVA: 0x1BA151C Offset: 0x1BA151C VA: 0x1BA151C
+	internal int <get_LeftTopMostSortedRewardClaimableSetList>b__58_0(ItemInfo el) { }
+}
+

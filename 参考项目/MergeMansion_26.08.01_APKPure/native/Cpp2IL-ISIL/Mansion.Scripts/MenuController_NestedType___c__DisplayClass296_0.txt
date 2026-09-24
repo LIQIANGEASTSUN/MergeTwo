@@ -1,0 +1,40 @@
+Type: MenuController+<>c__DisplayClass296_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x02B71F4C BL 0x22E5388
+	0x02B71F50 B 0x2B71F5C
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Void <OnPetPreview>b__0()
+
+Disassembly:
+	0x02B71F54 MOV X20, X1
+	0x02B71F58 MOV X21, X0
+	0x02B71F5C CMP W20, 0x1
+	0x02B71F60 B.NE 0x2B71FF0
+	0x02B71F64 MOV X0, X21
+	0x02B71F68 BL 0x53E9080
+	0x02B71F6C MOV X19, X0
+	0x02B71F70 ADRP X0, 0x2B5C000
+	0x02B71F74 LDR X0, [X0 + 0x388]
+
+ISIL:
+	001 Move X8, X0
+	002 Move X0, [X0+16]
+	003 Compare X0, 0
+	004 JumpIfEqual {11}
+	005 Move X1, [X8+24]
+	006 Move X2, [X8+32]
+	007 Move X4, X31
+	008 Move W3, [X8+40]
+	009 Call MenuController.OpenPetPreviewMenu, X0, X1, X2, X3
+	010 Return 
+	011 Move [X31-16], X30
+	012 Call 0x239FB90
+

@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoosterService.<>c__DisplayClass47_0 // TypeDefIndex: 7762
+{
+	// Fields
+	public IBoosterItem booster; // 0x10
+
+	// Methods
+
+	// RVA: 0x65C38FC Offset: 0x65BF8FC VA: 0x65C38FC
+	public void .ctor() { }
+
+	// RVA: 0x65C4C58 Offset: 0x65C0C58 VA: 0x65C4C58
+	internal bool <ForceDeactivateBooster>b__0(IBoosterController q) { }
+}
+

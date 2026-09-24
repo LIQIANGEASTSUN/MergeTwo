@@ -1,0 +1,20 @@
+// Namespace: Merger.MergeBoard.PowerBoost.Commands
+public class PowerBoostInitializeOnEventActivationCommand : CommandBase<PowerBoostInitializeOnEventActivationSignal> // TypeDefIndex: 32809
+{
+	// Fields
+	[Inject]
+	private IPowerBoostModel _powerBoostModel; // 0x30
+	[Inject]
+	private IPowerBoostPersistanceService _powerBoostPersistanceService; // 0x38
+	[Inject]
+	private IPowerBoostModesCalculator _powerBoostModesCalculator; // 0x40
+
+	// Methods
+
+	// RVA: 0x6AD4948 Offset: 0x6AD0948 VA: 0x6AD4948 Slot: 15
+	public override void Execute(PowerBoostInitializeOnEventActivationSignal signal) { }
+
+	// RVA: 0x6AD4B98 Offset: 0x6AD0B98 VA: 0x6AD4B98
+	public void .ctor() { }
+}
+

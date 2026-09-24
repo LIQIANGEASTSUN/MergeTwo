@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardSystem.<>c__DisplayClass65_0 // TypeDefIndex: 917
+{
+	// Fields
+	public Func<BoardItemPosition, bool> includePredicate; // 0x10
+
+	// Methods
+
+	// RVA: 0x666AC94 Offset: 0x6666C94 VA: 0x666AC94
+	public void .ctor() { }
+
+	// RVA: 0x666BE40 Offset: 0x6667E40 VA: 0x666BE40
+	internal bool <GetAdjascentPositions>b__0(BoardItemPosition adjacentPosition) { }
+}
+

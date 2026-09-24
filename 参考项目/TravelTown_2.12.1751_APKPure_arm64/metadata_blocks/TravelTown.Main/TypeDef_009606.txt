@@ -1,0 +1,23 @@
+// Namespace: Merger.Services
+public interface IBoardConfigService // TypeDefIndex: 9606
+{
+	// Properties
+	public abstract BoardConfigResponse BoardConfigResponse { get; }
+	public abstract Nullable<int> ImmediateToolsMinLevel { get; }
+	public abstract Nullable<int> StackingMinLevel { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract BoardConfigResponse get_BoardConfigResponse();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract IPromise FetchBoardConfig();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract Nullable<int> get_ImmediateToolsMinLevel();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract Nullable<int> get_StackingMinLevel();
+}
+

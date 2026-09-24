@@ -1,0 +1,10 @@
+// Namespace: 
+public struct BoardEvent.ReturnSave : IEvent // TypeDefIndex: 1835
+{
+	// Fields
+	public Exception Exception; // 0x0
+	public Dictionary<string, string> Tmp; // 0x4
+	public long TimeToWrite; // 0x8
+	public bool SkipDiskWrite; // 0x10
+}
+

@@ -1,0 +1,16 @@
+// Namespace: MergeEngine.Configuration.Definitions.WeakReferences.Providers
+public class MergeGraphItemProvider : WeakReferenceTargetProvider<IMergeGraphItem, string> // TypeDefIndex: 1367
+{
+	// Fields
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x10
+
+	// Methods
+
+	// RVA: 0x60050E4 Offset: 0x60010E4 VA: 0x60050E4 Slot: 4
+	protected override IMergeGraphItem ProvideInstance(WeakReference<IMergeGraphItem, string> reference) { }
+
+	// RVA: 0x600421C Offset: 0x600021C VA: 0x600421C
+	public void .ctor() { }
+}
+

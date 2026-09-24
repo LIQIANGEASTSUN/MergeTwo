@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class MergingConfigurationModel.<>c__DisplayClass17_0 // TypeDefIndex: 557
+{
+	// Fields
+	public IMergeItem mergeItem; // 0x10
+
+	// Methods
+
+	// RVA: 0x613DDE0 Offset: 0x6139DE0 VA: 0x613DDE0
+	public void .ctor() { }
+
+	// RVA: 0x61413CC Offset: 0x613D3CC VA: 0x61413CC
+	internal bool <IsItemInProducerChain>b__0(IMergeItem spawnableItem) { }
+}
+

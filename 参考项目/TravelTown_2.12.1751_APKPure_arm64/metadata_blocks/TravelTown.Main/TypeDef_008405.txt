@@ -1,0 +1,27 @@
+// Namespace: Merger.Game.Model
+public class CoreBoardTogglesModel : ModelBase, ICoreBoardTogglesModel // TypeDefIndex: 8405
+{
+	// Fields
+	private const string NewMainBgEnabledKey = "backgroundcoreenabled";
+	private const string NewCoreBoardBgAndBlockersEnabledKey = "corenewbackgroundphaseone";
+	private const bool NewMainBgEnabledFallbackValue = True;
+	private const bool NewCoreBoardBgAndBlockersEnabledFallbackValue = True;
+	[Inject]
+	private IUserProfileDefaultValuesProvider _defaultValuesProvider; // 0x28
+
+	// Properties
+	public bool IsNewMainBackgroundEnabled { get; }
+	public bool IsNewCoreBoardBackgroundAndBlockersEnabled { get; }
+
+	// Methods
+
+	// RVA: 0x66712C8 Offset: 0x666D2C8 VA: 0x66712C8 Slot: 19
+	public bool get_IsNewMainBackgroundEnabled() { }
+
+	// RVA: 0x66713B8 Offset: 0x666D3B8 VA: 0x66713B8 Slot: 20
+	public bool get_IsNewCoreBoardBackgroundAndBlockersEnabled() { }
+
+	// RVA: 0x66714A8 Offset: 0x666D4A8 VA: 0x66714A8
+	public void .ctor() { }
+}
+

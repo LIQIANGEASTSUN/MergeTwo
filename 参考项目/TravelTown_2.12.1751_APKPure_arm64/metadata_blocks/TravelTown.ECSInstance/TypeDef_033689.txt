@@ -1,0 +1,46 @@
+// Namespace: ContextualizedECS.Systems
+public class SystemInfo // TypeDefIndex: 33689
+{
+	// Fields
+	[CompilerGenerated]
+	private ISystem <System>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private Type <SystemType>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private Func<IList<SystemInfo>, int> <ResolveMethod>k__BackingField; // 0x20
+
+	// Properties
+	internal ISystem System { get; set; }
+	internal Type SystemType { get; set; }
+	internal Func<IList<SystemInfo>, int> ResolveMethod { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5F15168 Offset: 0x5F11168 VA: 0x5F15168
+	internal ISystem get_System() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5F15170 Offset: 0x5F11170 VA: 0x5F15170
+	internal void set_System(ISystem value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x5F15178 Offset: 0x5F11178 VA: 0x5F15178
+	internal Type get_SystemType() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5F15180 Offset: 0x5F11180 VA: 0x5F15180
+	internal void set_SystemType(Type value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x5F15188 Offset: 0x5F11188 VA: 0x5F15188
+	internal Func<IList<SystemInfo>, int> get_ResolveMethod() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5F15190 Offset: 0x5F11190 VA: 0x5F15190
+	internal void set_ResolveMethod(Func<IList<SystemInfo>, int> value) { }
+
+	// RVA: 0x5F15198 Offset: 0x5F11198 VA: 0x5F15198
+	internal void .ctor(ISystem system, Type systemType) { }
+}
+

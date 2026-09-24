@@ -1,0 +1,42 @@
+// Namespace: MergeEngine.Signal.Inventory
+[SoundBoundSignal("Item Out From Inventory")]
+public class ItemRemovedFromInventorySignal : ItemAmountInventoryBaseSignal // TypeDefIndex: 245
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly int <SlotIndex>k__BackingField; // 0x24
+	[CompilerGenerated]
+	private readonly string <ItemId>k__BackingField; // 0x28
+	[CompilerGenerated]
+	private readonly Nullable<int> <BoardItemIndex>k__BackingField; // 0x30
+	[CompilerGenerated]
+	private readonly Nullable<int> <StackSize>k__BackingField; // 0x38
+
+	// Properties
+	public int SlotIndex { get; }
+	public string ItemId { get; }
+	public Nullable<int> BoardItemIndex { get; }
+	public Nullable<int> StackSize { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x5FF4004 Offset: 0x5FF0004 VA: 0x5FF4004
+	public int get_SlotIndex() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF400C Offset: 0x5FF000C VA: 0x5FF400C
+	public string get_ItemId() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF4014 Offset: 0x5FF0014 VA: 0x5FF4014
+	public Nullable<int> get_BoardItemIndex() { }
+
+	[CompilerGenerated]
+	// RVA: 0x5FF401C Offset: 0x5FF001C VA: 0x5FF401C
+	public Nullable<int> get_StackSize() { }
+
+	// RVA: 0x5FF4024 Offset: 0x5FF0024 VA: 0x5FF4024
+	public void .ctor(string itemId, Nullable<int> boardItemIndex, int slotIndex, int availableSlots, int inventoryCapacity, int freeTilesOnBoard, InventorySlotType type, int numNewProducersSlots, Nullable<int> stackSize) { }
+}
+

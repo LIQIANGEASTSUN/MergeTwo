@@ -1,0 +1,12 @@
+// Namespace: 
+public struct EntityUpdateEvent.EnergyUpdateUI : IEvent // TypeDefIndex: 2664
+{
+	// Fields
+	public int CurrentAmount; // 0x0
+	public int ChangeAmount; // 0x4
+	public bool MakeImpactAnim; // 0x8
+	public bool Meta; // 0x9
+	public bool IsEventEnergy; // 0xA
+	public int EventIndex; // 0xC
+}
+

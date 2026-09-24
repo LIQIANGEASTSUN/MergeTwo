@@ -1,0 +1,52 @@
+// Namespace: Merger.Game.Model
+public sealed class DisplayableBoardQueueModel : ModelBase, IDisplayableBoardQueueModel, ITickable // TypeDefIndex: 8407
+{
+	// Fields
+	[Inject]
+	private IEntityManager _entityManager; // 0x28
+	[Inject]
+	private IBoardQueueExclusionModel _exclusionModel; // 0x30
+	[Inject]
+	private IGameSessionModel _gameSessionModel; // 0x38
+	private readonly MutableBindableProperty<int> _effectiveCount; // 0x40
+	private readonly MutableBindableProperty<AssetReferenceT<Sprite>> _effectiveHeadSprite; // 0x48
+	private BoardQueueComponent _boardQueueComponent; // 0x50
+	private bool _isDirty; // 0x58
+
+	// Properties
+	public BindableProperty<int> EffectiveCount { get; }
+	public BindableProperty<AssetReferenceT<Sprite>> EffectiveHeadSprite { get; }
+
+	// Methods
+
+	// RVA: 0x66714B0 Offset: 0x666D4B0 VA: 0x66714B0 Slot: 19
+	public BindableProperty<int> get_EffectiveCount() { }
+
+	// RVA: 0x66714B8 Offset: 0x666D4B8 VA: 0x66714B8 Slot: 20
+	public BindableProperty<AssetReferenceT<Sprite>> get_EffectiveHeadSprite() { }
+
+	// RVA: 0x66714C0 Offset: 0x666D4C0 VA: 0x66714C0 Slot: 17
+	protected override void InitializeModel() { }
+
+	// RVA: 0x66716C8 Offset: 0x666D6C8 VA: 0x66716C8
+	private void OnGameStarted(bool isGameStarted) { }
+
+	// RVA: 0x6671830 Offset: 0x666D830 VA: 0x6671830 Slot: 18
+	protected override void DisposeModel() { }
+
+	// RVA: 0x6671AC0 Offset: 0x666DAC0 VA: 0x6671AC0
+	private void OnQueueChanged(List<QueuedItem> _) { }
+
+	// RVA: 0x6671ACC Offset: 0x666DACC VA: 0x6671ACC
+	private void OnExclusionsChanged(HashSet<string> _) { }
+
+	// RVA: 0x6671AD8 Offset: 0x666DAD8 VA: 0x6671AD8 Slot: 21
+	public void Tick() { }
+
+	// RVA: 0x6671AEC Offset: 0x666DAEC VA: 0x6671AEC
+	private void Recalculate() { }
+
+	// RVA: 0x6671E78 Offset: 0x666DE78 VA: 0x6671E78
+	public void .ctor() { }
+}
+

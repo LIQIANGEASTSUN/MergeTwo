@@ -1,0 +1,27 @@
+// Namespace: MergePuzzle.Locations
+public class BoardTaskLocation : LocationBase // TypeDefIndex: 5041
+{
+	// Fields
+	[CompilerGenerated]
+	private BoardTaskGoal <BoardTaskGoal>k__BackingField; // 0xC
+
+	// Properties
+	public BoardTaskGoal BoardTaskGoal { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x1E12B10 Offset: 0x1E12B10 VA: 0x1E12B10
+	public BoardTaskGoal get_BoardTaskGoal() { }
+
+	[CompilerGenerated]
+	// RVA: 0x1E12B18 Offset: 0x1E12B18 VA: 0x1E12B18
+	private void set_BoardTaskGoal(BoardTaskGoal value) { }
+
+	// RVA: 0x1E12B20 Offset: 0x1E12B20 VA: 0x1E12B20
+	public LocationHandler SetGoalUI(BoardTaskGoal boardTaskGoal) { }
+
+	// RVA: 0x1E12B3C Offset: 0x1E12B3C VA: 0x1E12B3C
+	public void .ctor() { }
+}
+

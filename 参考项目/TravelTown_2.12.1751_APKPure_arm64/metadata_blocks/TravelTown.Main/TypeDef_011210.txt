@@ -1,0 +1,155 @@
+// Namespace: Framework.Core.MVVM.ViewModel
+public interface IViewModelBase // TypeDefIndex: 11210
+{
+	// Properties
+	public abstract BindableProperty<Rect> SafeArea { get; }
+	public abstract string CurrentStateName { get; }
+	public abstract string PreviousStateName { get; }
+	public abstract AnalitycsState CurrentAnalyticsState { get; }
+	public abstract BindableProperty<bool> UiEnabled { get; }
+	public abstract bool BackButtonHasBlockingFlags { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract BindableProperty<Rect> get_SafeArea();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract string get_CurrentStateName();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract string get_PreviousStateName();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract AnalitycsState get_CurrentAnalyticsState();
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract BindableProperty<bool> get_UiEnabled();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract bool get_BackButtonHasBlockingFlags();
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract IPromise<GameObject> InstantiatePrefab(IAsset assetDefinition, Transform parent, DiContainer container);
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract IPromise<T> LoadAssetAsync<T>(IAsset assetDefinition);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IViewModelBase.LoadAssetAsync<object>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract void UnloadAllAssets();
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract void UnloadAsset(Object asset);
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public abstract GameObject InstantiateInjected(GameObject original, Transform parent, bool worldPositionStays = False);
+
+	// RVA: -1 Offset: -1 Slot: 11
+	public abstract void RequestAssetOverrideTransition(Asset localAsset, IAsset remoteAsset, string transition, object payload);
+
+	// RVA: -1 Offset: -1 Slot: 12
+	public abstract void SubscribeToSignal<TSignal>(Action<TSignal> listener);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IViewModelBase.SubscribeToSignal<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 13
+	public abstract void SubscribeToSignal<TSignal>(Action listener);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IViewModelBase.SubscribeToSignal<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 14
+	public abstract void UnsubscribeFromSignal<TSignal>(Action<TSignal> listener);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IViewModelBase.UnsubscribeFromSignal<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 15
+	public abstract void UnsubscribeFromSignal<TSignal>(Action listener);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IViewModelBase.UnsubscribeFromSignal<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 16
+	public abstract void FireSignal<TSignal>();
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IViewModelBase.FireSignal<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 17
+	public abstract void FireSignal<TSignal>(TSignal signal);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IViewModelBase.FireSignal<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 18
+	public abstract void TryFireSignal<TSignal>(TSignal signal);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-IViewModelBase.TryFireSignal<__Il2CppFullySharedGenericType>
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 19
+	public abstract void Dispose();
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 20
+	public abstract void add_StateChanged(Action<string> value);
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1 Slot: 21
+	public abstract void remove_StateChanged(Action<string> value);
+
+	// RVA: -1 Offset: -1 Slot: 22
+	public abstract bool CanGoBack();
+
+	// RVA: -1 Offset: -1 Slot: 23
+	public abstract bool CanTransitionTo(string transition);
+
+	// RVA: -1 Offset: -1 Slot: 24
+	public abstract void EnableUI(BlockUIFlag flagToClear);
+
+	// RVA: -1 Offset: -1 Slot: 25
+	public abstract void DisableUI(BlockUIFlag flagToRaise);
+
+	// RVA: -1 Offset: -1 Slot: 26
+	public abstract void RequestTransition(string transition, object payload);
+
+	// RVA: -1 Offset: -1 Slot: 27
+	public abstract void Back();
+
+	// RVA: -1 Offset: -1 Slot: 28
+	public abstract void SetNavigationBackAction(Action action);
+
+	// RVA: -1 Offset: -1 Slot: 29
+	public abstract void BlockBackButton();
+
+	// RVA: -1 Offset: -1 Slot: 30
+	public abstract void BlockBackButton(BackButtonDisableFlag flagToRise);
+
+	// RVA: -1 Offset: -1 Slot: 31
+	public abstract void UnblockBackButton();
+
+	// RVA: -1 Offset: -1 Slot: 32
+	public abstract void UnblockBackButton(BackButtonDisableFlag flagToRemove);
+}
+

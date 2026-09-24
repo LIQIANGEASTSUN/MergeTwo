@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardTaskData.<>c__DisplayClass3_0 // TypeDefIndex: 1962
+{
+	// Fields
+	public int taskNo; // 0x8
+
+	// Methods
+
+	// RVA: 0x193F93C Offset: 0x193F93C VA: 0x193F93C
+	public void .ctor() { }
+
+	// RVA: 0x1940894 Offset: 0x1940894 VA: 0x1940894
+	internal bool <GetBoardTaskItem>b__0(BoardTaskItem item) { }
+}
+

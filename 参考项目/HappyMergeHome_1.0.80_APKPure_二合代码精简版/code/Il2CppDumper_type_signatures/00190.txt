@@ -1,0 +1,17 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class ButterflyWorkShopModel.<>c__DisplayClass42_0 // TypeDefIndex: 190
+{
+	// Fields
+	public Vector3 position; // 0x8
+	public Action action; // 0x14
+
+	// Methods
+
+	// RVA: 0x29EF8B0 Offset: 0x29EF8B0 VA: 0x29EF8B0
+	public void .ctor() { }
+
+	// RVA: 0x29F277C Offset: 0x29F277C VA: 0x29F277C
+	internal void <FlyButterFly>b__1() { }
+}
+

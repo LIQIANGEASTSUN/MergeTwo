@@ -1,0 +1,196 @@
+// Namespace: GameCore.Configuration.Definitions
+public abstract class MultipleConfigurationLookup<TAsset, TKey> // TypeDefIndex: 1586
+{
+	// Fields
+	private Dictionary<TKey, TAsset> _itemsLookup; // 0x0
+	private List<TAsset> _items; // 0x0
+	[CompilerGenerated]
+	private Action<TAsset> ConfigurationRemoved; // 0x0
+	[CompilerGenerated]
+	private Action<TAsset> ConfigurationAdded; // 0x0
+
+	// Properties
+	public ReadOnlyCollection<TAsset> Items { get; }
+	public ReadOnlyDictionary<TKey, TAsset> ItemsById { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public ReadOnlyCollection<TAsset> get_Items() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x421F250 Offset: 0x421B250 VA: 0x421F250
+	|-MultipleConfigurationLookup<object, object>.get_Items
+	|
+	|-RVA: 0x421FAA8 Offset: 0x421BAA8 VA: 0x421FAA8
+	|-MultipleConfigurationLookup<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.get_Items
+	*/
+
+	// RVA: -1 Offset: -1
+	public ReadOnlyDictionary<TKey, TAsset> get_ItemsById() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x421F26C Offset: 0x421B26C VA: 0x421F26C
+	|-MultipleConfigurationLookup<object, object>.get_ItemsById
+	|
+	|-RVA: 0x421FAC8 Offset: 0x421BAC8 VA: 0x421FAC8
+	|-MultipleConfigurationLookup<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.get_ItemsById
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	public void add_ConfigurationRemoved(Action<TAsset> value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x421F370 Offset: 0x421B370 VA: 0x421F370
+	|-MultipleConfigurationLookup<object, object>.add_ConfigurationRemoved
+	|
+	|-RVA: 0x421FBD0 Offset: 0x421BBD0 VA: 0x421FBD0
+	|-MultipleConfigurationLookup<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.add_ConfigurationRemoved
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	public void remove_ConfigurationRemoved(Action<TAsset> value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x421F41C Offset: 0x421B41C VA: 0x421F41C
+	|-MultipleConfigurationLookup<object, object>.remove_ConfigurationRemoved
+	|
+	|-RVA: 0x421FC7C Offset: 0x421BC7C VA: 0x421FC7C
+	|-MultipleConfigurationLookup<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.remove_ConfigurationRemoved
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	public void add_ConfigurationAdded(Action<TAsset> value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x421F4C8 Offset: 0x421B4C8 VA: 0x421F4C8
+	|-MultipleConfigurationLookup<object, object>.add_ConfigurationAdded
+	|
+	|-RVA: 0x421FD28 Offset: 0x421BD28 VA: 0x421FD28
+	|-MultipleConfigurationLookup<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.add_ConfigurationAdded
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	public void remove_ConfigurationAdded(Action<TAsset> value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x421F574 Offset: 0x421B574 VA: 0x421F574
+	|-MultipleConfigurationLookup<object, object>.remove_ConfigurationAdded
+	|
+	|-RVA: 0x421FDD4 Offset: 0x421BDD4 VA: 0x421FDD4
+	|-MultipleConfigurationLookup<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.remove_ConfigurationAdded
+	*/
+
+	// RVA: -1 Offset: -1 Slot: 4
+	protected abstract TKey GetKey(TAsset item);
+	/* GenericInstMethod :
+	|
+	|-RVA: -1 Offset: -1
+	|-MultipleConfigurationLookup<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.GetKey
+	*/
+
+	// RVA: -1 Offset: -1
+	private void AddItem(TAsset item) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x421F620 Offset: 0x421B620 VA: 0x421F620
+	|-MultipleConfigurationLookup<object, object>.AddItem
+	|
+	|-RVA: 0x421FE80 Offset: 0x421BE80 VA: 0x421FE80
+	|-MultipleConfigurationLookup<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.AddItem
+	*/
+
+	// RVA: -1 Offset: -1
+	private void RemoveItem(TAsset item) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x421F718 Offset: 0x421B718 VA: 0x421F718
+	|-MultipleConfigurationLookup<object, object>.RemoveItem
+	|
+	|-RVA: 0x42200DC Offset: 0x421C0DC VA: 0x42200DC
+	|-MultipleConfigurationLookup<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.RemoveItem
+	*/
+
+	// RVA: -1 Offset: -1
+	public void ItemsLoaded(IEnumerable<TAsset> items) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x421F7B8 Offset: 0x421B7B8 VA: 0x421F7B8
+	|-MultipleConfigurationLookup<object, object>.ItemsLoaded
+	|
+	|-RVA: 0x42202F8 Offset: 0x421C2F8 VA: 0x42202F8
+	|-MultipleConfigurationLookup<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.ItemsLoaded
+	*/
+
+	// RVA: -1 Offset: -1
+	private bool TryCreateDataCollections() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x421F8C4 Offset: 0x421B8C4 VA: 0x421F8C4
+	|-MultipleConfigurationLookup<object, object>.TryCreateDataCollections
+	|
+	|-RVA: 0x4220428 Offset: 0x421C428 VA: 0x4220428
+	|-MultipleConfigurationLookup<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.TryCreateDataCollections
+	*/
+
+	// RVA: -1 Offset: -1
+	public void ItemLoaded(TAsset item) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x421F97C Offset: 0x421B97C VA: 0x421F97C
+	|-MultipleConfigurationLookup<object, object>.ItemLoaded
+	|
+	|-RVA: 0x42204E8 Offset: 0x421C4E8 VA: 0x42204E8
+	|-MultipleConfigurationLookup<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.ItemLoaded
+	*/
+
+	// RVA: -1 Offset: -1
+	public bool HasItem(TKey id) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x421FA24 Offset: 0x421BA24 VA: 0x421FA24
+	|-MultipleConfigurationLookup<object, object>.HasItem
+	|
+	|-RVA: 0x4220770 Offset: 0x421C770 VA: 0x4220770
+	|-MultipleConfigurationLookup<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.HasItem
+	*/
+
+	// RVA: -1 Offset: -1
+	public TAsset GetById(TKey uniqueId) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x421FA40 Offset: 0x421BA40 VA: 0x421FA40
+	|-MultipleConfigurationLookup<object, object>.GetById
+	|
+	|-RVA: 0x4220848 Offset: 0x421C848 VA: 0x4220848
+	|-MultipleConfigurationLookup<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.GetById
+	*/
+
+	// RVA: -1 Offset: -1
+	protected void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x421FA70 Offset: 0x421BA70 VA: 0x421FA70
+	|-MultipleConfigurationLookup<object, object>..ctor
+	|
+	|-RVA: 0x42209C8 Offset: 0x421C9C8 VA: 0x42209C8
+	|-MultipleConfigurationLookup<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>..ctor
+	*/
+
+	[CompilerGenerated]
+	// RVA: -1 Offset: -1
+	private bool <ItemsLoaded>b__15_0(TAsset item) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x421FA78 Offset: 0x421BA78 VA: 0x421FA78
+	|-MultipleConfigurationLookup<object, object>.<ItemsLoaded>b__15_0
+	|
+	|-RVA: 0x42209D0 Offset: 0x421C9D0 VA: 0x42209D0
+	|-MultipleConfigurationLookup<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>.<ItemsLoaded>b__15_0
+	*/
+}
+

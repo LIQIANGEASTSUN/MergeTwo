@@ -1,0 +1,35 @@
+// Namespace: Merger.MergeBoard.Data
+public class ItemCollectableResource // TypeDefIndex: 25925
+{
+	// Fields
+	[CompilerGenerated]
+	private PlayerResourceEnum <Resource>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private int <Amount>k__BackingField; // 0x14
+
+	// Properties
+	public PlayerResourceEnum Resource { get; set; }
+	public int Amount { get; set; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A0E8 Offset: 0x6A960E8 VA: 0x6A9A0E8
+	public PlayerResourceEnum get_Resource() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A0F0 Offset: 0x6A960F0 VA: 0x6A9A0F0
+	public void set_Resource(PlayerResourceEnum value) { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A0F8 Offset: 0x6A960F8 VA: 0x6A9A0F8
+	public int get_Amount() { }
+
+	[CompilerGenerated]
+	// RVA: 0x6A9A100 Offset: 0x6A96100 VA: 0x6A9A100
+	public void set_Amount(int value) { }
+
+	// RVA: 0x6A977A0 Offset: 0x6A937A0 VA: 0x6A977A0
+	public void .ctor() { }
+}
+

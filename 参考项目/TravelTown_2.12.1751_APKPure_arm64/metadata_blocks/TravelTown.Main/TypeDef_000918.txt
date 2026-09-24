@@ -1,0 +1,16 @@
+// Namespace: 
+[CompilerGenerated]
+private sealed class BoardSystem.<>c__DisplayClass73_0 // TypeDefIndex: 918
+{
+	// Fields
+	public string uniqueId; // 0x10
+
+	// Methods
+
+	// RVA: 0x666B030 Offset: 0x6667030 VA: 0x666B030
+	public void .ctor() { }
+
+	// RVA: 0x666BE64 Offset: 0x6667E64 VA: 0x666BE64
+	internal bool <GetUnlockedItemById>b__0(PositionComponent position) { }
+}
+

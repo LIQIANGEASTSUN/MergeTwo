@@ -1,0 +1,98 @@
+// Namespace: MergeEngine.ECS.Systems.Items.ImmidateToolsSystem
+public class ImmediateToolsSystem : SystemBase // TypeDefIndex: 1002
+{
+	// Fields
+	[Inject]
+	private IPlayerModel _playerModel; // 0x40
+	[Inject]
+	private IBoardConfigService _boardConfigService; // 0x48
+	[Inject]
+	private IMergingConfigurationModel _mergingConfigurationModel; // 0x50
+	[CompilerGenerated]
+	private readonly MutableBindableProperty<bool> <IsImmediateToolsEnabled>k__BackingField; // 0x58
+
+	// Properties
+	public MutableBindableProperty<bool> IsImmediateToolsEnabled { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x67A19B4 Offset: 0x679D9B4 VA: 0x67A19B4
+	public MutableBindableProperty<bool> get_IsImmediateToolsEnabled() { }
+
+	// RVA: 0x67A19BC Offset: 0x679D9BC VA: 0x67A19BC
+	public bool IsToolbox(IMergeItem mergeItem) { }
+
+	// RVA: 0x67A1AD0 Offset: 0x679DAD0 VA: 0x67A1AD0
+	public bool IsTool(IMergeItem mergeItem) { }
+
+	// RVA: 0x67A1BF4 Offset: 0x679DBF4 VA: 0x67A1BF4 Slot: 6
+	protected override void InitializeSystem() { }
+
+	// RVA: 0x67A1D7C Offset: 0x679DD7C VA: 0x67A1D7C Slot: 8
+	protected override void OnGameStarted() { }
+
+	// RVA: 0x67A1F6C Offset: 0x679DF6C VA: 0x67A1F6C Slot: 7
+	protected override void DisposeSystem() { }
+
+	// RVA: 0x67A20F4 Offset: 0x679E0F4 VA: 0x67A20F4 Slot: 11
+	protected override void EntityCreated(Entity entity) { }
+
+	// RVA: 0x67A2180 Offset: 0x679E180 VA: 0x67A2180
+	private void OnPlayerLevelChanged(int newLevel) { }
+
+	// RVA: 0x67A2184 Offset: 0x679E184 VA: 0x67A2184
+	private void OnImmediateToolsStateChanged(bool isEnabled) { }
+
+	// RVA: 0x67A1D98 Offset: 0x679DD98 VA: 0x67A1D98
+	private void UpdateImmediateToolsState() { }
+
+	// RVA: 0x67A20F8 Offset: 0x679E0F8 VA: 0x67A20F8
+	private void ProcessEntity(Entity entity) { }
+
+	// RVA: 0x67A2188 Offset: 0x679E188 VA: 0x67A2188
+	private void UpdateAllBoardItems() { }
+
+	// RVA: 0x67A2434 Offset: 0x679E434 VA: 0x67A2434
+	private bool IsToolOrToolbox(Entity entity) { }
+
+	// RVA: 0x67A2538 Offset: 0x679E538 VA: 0x67A2538
+	private void AddImmediateToolBehavior(Entity entity) { }
+
+	// RVA: 0x67A28EC Offset: 0x679E8EC VA: 0x67A28EC
+	private void RemoveConflictingComponents(Entity entity) { }
+
+	// RVA: 0x67A29CC Offset: 0x679E9CC VA: 0x67A29CC
+	private void RemoveSingleToolComponents(Entity entity, IMergeItem mergeItem) { }
+
+	// RVA: 0x67A2764 Offset: 0x679E764 VA: 0x67A2764
+	private void EnsureImmediateToolComponent(Entity entity, IMergeItem mergeItem) { }
+
+	// RVA: 0x67A2A3C Offset: 0x679EA3C VA: 0x67A2A3C
+	private void EnableVisualEffects(Entity entity) { }
+
+	// RVA: 0x67A2648 Offset: 0x679E648 VA: 0x67A2648
+	private void RemoveImmediateToolBehavior(Entity entity) { }
+
+	// RVA: 0x67A2A9C Offset: 0x679EA9C VA: 0x67A2A9C
+	private bool HasImmediateToolComponent(Entity entity) { }
+
+	// RVA: 0x67A2AF8 Offset: 0x679EAF8 VA: 0x67A2AF8
+	private void RemoveImmediateComponents(Entity entity) { }
+
+	// RVA: 0x67A2B70 Offset: 0x679EB70 VA: 0x67A2B70
+	private void DisableVisualEffects(Entity entity) { }
+
+	// RVA: 0x67A2B48 Offset: 0x679EB48 VA: 0x67A2B48
+	private void RestoreOriginalComponents(Entity entity, IMergeItem mergeItem) { }
+
+	// RVA: 0x67A2BF4 Offset: 0x679EBF4 VA: 0x67A2BF4
+	private void RestoreToolBoxComponents(Entity entity, IMergeItem mergeItem) { }
+
+	// RVA: 0x67A2EEC Offset: 0x679EEEC VA: 0x67A2EEC
+	private void RestoreSingleToolComponents(Entity entity, IMergeItem mergeItem) { }
+
+	// RVA: 0x67A3184 Offset: 0x679F184 VA: 0x67A3184
+	public void .ctor() { }
+}
+

@@ -1,0 +1,30 @@
+// Namespace: Merger.Game.Model
+public sealed class BoardQueueExclusionModel : ModelBase, IBoardQueueExclusionModel // TypeDefIndex: 8402
+{
+	// Fields
+	private readonly MutableBindableProperty<HashSet<string>> _excludedUUIDs; // 0x28
+
+	// Properties
+	public BindableProperty<HashSet<string>> ExcludedUUIDs { get; }
+
+	// Methods
+
+	// RVA: 0x66703F4 Offset: 0x666C3F4 VA: 0x66703F4 Slot: 19
+	public BindableProperty<HashSet<string>> get_ExcludedUUIDs() { }
+
+	// RVA: 0x66703FC Offset: 0x666C3FC VA: 0x66703FC Slot: 20
+	public bool TryAdd(IEnumerable<string> uuids) { }
+
+	// RVA: 0x66707C8 Offset: 0x666C7C8 VA: 0x66707C8 Slot: 21
+	public bool TryRemove(IEnumerable<string> uuids) { }
+
+	// RVA: 0x6670B24 Offset: 0x666CB24 VA: 0x6670B24 Slot: 22
+	public void Clear() { }
+
+	// RVA: 0x6670758 Offset: 0x666C758 VA: 0x6670758
+	private bool TryNotify(bool hasChanged) { }
+
+	// RVA: 0x6670B94 Offset: 0x666CB94 VA: 0x6670B94
+	public void .ctor() { }
+}
+

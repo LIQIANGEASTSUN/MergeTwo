@@ -1,0 +1,40 @@
+Type: GameLogic.Player.MergeTasks.MergeTaskExtensions+<>c__DisplayClass22_0
+
+Method: System.Void .ctor()
+
+Disassembly:
+	0x035ACC54 STP X20, X19, [X31 + 0x30]
+	0x035ACC58 ADRP X19, 0x277D000
+
+ISIL:
+	001 Move X1, X31
+	002 Call Object..ctor, X0
+	003 Return 
+
+Method: System.Boolean <RequiresItem>b__0(Code.GameLogic.GameEvents.EventTaskInfo subTask)
+
+Disassembly:
+	0x035AE9F8 B 0x35B0B34
+	0x035AE9FC B 0x35B10B4
+	0x035AEA00 B 0x35B0F54
+	0x035AEA04 B 0x35B0D44
+	0x035AEA08 B 0x35B1004
+	0x035AEA0C B 0x35B0EA4
+	0x035AEA10 B 0x35B0C94
+	0x035AEA14 B 0x35B0BE4
+	0x035AEA18 B 0x35B0A84
+
+ISIL:
+	001 Move [X31-16], X30
+	002 Compare X1, 0
+	003 JumpIfEqual {12}
+	004 Move X8, [X0+16]
+	005 Compare X8, 0
+	006 JumpIfEqual {12}
+	007 Move X1, [X1+48]
+	008 Move W0, [X8+16]
+	009 Move X30, [X31+16]
+	010 Call MergeTaskExtensions.IsItemRequired, X0, X1
+	011 Return X0
+	012 Call 0x239FB90
+

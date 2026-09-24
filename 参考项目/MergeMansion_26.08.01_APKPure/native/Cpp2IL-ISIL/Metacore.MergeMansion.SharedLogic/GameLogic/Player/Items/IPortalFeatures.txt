@@ -1,0 +1,23 @@
+Type: GameLogic.Player.Items.IPortalFeatures
+
+Method: System.Boolean get_IsPortal()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: GameLogic.Player.Items.PortalType get_Type()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated
+Method: Metacore.MergeMansion.Common.Options.Option`1<Merge.MergeBoardId> get_TargetBoardIdOption()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

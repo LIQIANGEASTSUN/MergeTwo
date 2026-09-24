@@ -1,0 +1,28 @@
+// Namespace: 
+[CompilerGenerated]
+private struct BoardController.<SpawnItemAsync>d__167 : IAsyncStateMachine // TypeDefIndex: 1903
+{
+	// Fields
+	public int <>1__state; // 0x0
+	public AsyncUniTaskMethodBuilder<ItemController> <>t__builder; // 0x4
+	public BoardController <>4__this; // 0x10
+	public BoardItemData boardItemData; // 0x14
+	public ItemEntity itemEntity; // 0x18
+	public Coordinate spawnerCoordinate; // 0x1C
+	public bool onInitialize; // 0x24
+	public bool merged; // 0x25
+	public bool isNewlyCreated; // 0x26
+	public ItemCreationHandler itemCreationHandler; // 0x28
+	private ItemController <boardItem>5__2; // 0x2C
+	private YieldAwaitable.Awaiter <>u__1; // 0x30
+
+	// Methods
+
+	// RVA: 0x1925B30 Offset: 0x1925B30 VA: 0x1925B30 Slot: 4
+	private void MoveNext() { }
+
+	[DebuggerHidden]
+	// RVA: 0x1925F24 Offset: 0x1925F24 VA: 0x1925F24 Slot: 5
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+}
+

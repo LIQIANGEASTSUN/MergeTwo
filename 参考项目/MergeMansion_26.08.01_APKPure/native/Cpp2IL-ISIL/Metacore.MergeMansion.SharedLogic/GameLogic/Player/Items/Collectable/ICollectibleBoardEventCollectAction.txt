@@ -1,0 +1,9 @@
+Type: GameLogic.Player.Items.Collectable.ICollectibleBoardEventCollectAction
+
+Method: System.Boolean get_LevelUpMergeChain()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

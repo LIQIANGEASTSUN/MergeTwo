@@ -1,0 +1,35 @@
+// Namespace: Merger.Game.Signal
+public class TryBurstBubbleSignal // TypeDefIndex: 9452
+{
+	// Fields
+	[CompilerGenerated]
+	private readonly BoardItemPosition <BoardItemPosition>k__BackingField; // 0x10
+	[CompilerGenerated]
+	private readonly ResourceMultiple <Price>k__BackingField; // 0x18
+	[CompilerGenerated]
+	private readonly bool <BurstWithAd>k__BackingField; // 0x20
+	public IPromise TryBurstBubblePromise; // 0x28
+
+	// Properties
+	public BoardItemPosition BoardItemPosition { get; }
+	public ResourceMultiple Price { get; }
+	public bool BurstWithAd { get; }
+
+	// Methods
+
+	[CompilerGenerated]
+	// RVA: 0x676CD40 Offset: 0x6768D40 VA: 0x676CD40
+	public BoardItemPosition get_BoardItemPosition() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676CD48 Offset: 0x6768D48 VA: 0x676CD48
+	public ResourceMultiple get_Price() { }
+
+	[CompilerGenerated]
+	// RVA: 0x676CD50 Offset: 0x6768D50 VA: 0x676CD50
+	public bool get_BurstWithAd() { }
+
+	// RVA: 0x676CD58 Offset: 0x6768D58 VA: 0x676CD58
+	public void .ctor(BoardItemPosition boardItemPosition, ResourceMultiple price, bool burstWithAd, IPromise tryBurstBubblePromise) { }
+}
+

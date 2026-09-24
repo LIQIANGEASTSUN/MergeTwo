@@ -1,0 +1,9 @@
+Type: Code.GameLogic.Player.Board.IWritableCustomMergeBoardsState
+
+Method: System.Collections.Generic.SortedDictionary`2<Merge.MergeBoardId, GameLogic.Player.Board.MergeBoard> get_MergeBoards()
+
+Disassembly:
+	
+
+ISIL:
+No ISIL was generated

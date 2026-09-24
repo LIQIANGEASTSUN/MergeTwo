@@ -1,0 +1,10 @@
+// Namespace: 
+public struct BoardEvent.RemoveFromInventory : IEvent // TypeDefIndex: 1790
+{
+	// Fields
+	public ItemEntity ItemEntity; // 0x0
+	public BoardItemData ItemData; // 0x4
+	public bool DestroyItem; // 0x8
+	public bool SpawnerInventory; // 0x9
+}
+

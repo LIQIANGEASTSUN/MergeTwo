@@ -1,0 +1,36 @@
+// Namespace: 
+[CompilerGenerated]
+[Serializable]
+private sealed class ViewModelBase.<>c__12<T> // TypeDefIndex: 11214
+{
+	// Fields
+	public static readonly ViewModelBase.<>c__12<T> <>9; // 0x0
+	public static Action<Exception> <>9__12_0; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	private static void .cctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F287E0 Offset: 0x3F247E0 VA: 0x3F287E0
+	|-ViewModelBase.<>c__12<object>..cctor
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F2889C Offset: 0x3F2489C VA: 0x3F2889C
+	|-ViewModelBase.<>c__12<object>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	internal void <LoadAssetAsync>b__12_0(Exception exception) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x3F288A4 Offset: 0x3F248A4 VA: 0x3F288A4
+	|-ViewModelBase.<>c__12<object>.<LoadAssetAsync>b__12_0
+	*/
+}
+
