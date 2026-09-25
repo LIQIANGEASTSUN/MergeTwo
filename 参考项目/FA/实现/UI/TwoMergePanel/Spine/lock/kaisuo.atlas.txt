@@ -1,0 +1,34 @@
+
+kaisuo.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Common_ImpactFlas1h
+  rotate: false
+  xy: 2, 247
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+DJS_glow_034_lt
+  rotate: false
+  xy: 260, 375
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+suo1
+  rotate: false
+  xy: 2, 2
+  size: 68, 82
+  orig: 68, 82
+  offset: 0, 0
+  index: -1
+suo2
+  rotate: false
+  xy: 2, 86
+  size: 156, 159
+  orig: 156, 159
+  offset: 0, 0
+  index: -1

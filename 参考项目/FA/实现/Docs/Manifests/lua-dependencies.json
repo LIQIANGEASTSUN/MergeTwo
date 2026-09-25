@@ -1,0 +1,2506 @@
+[
+  {
+    "source": "Assets/HomeLand/LuaScript/Manager/TwoMergeMapGridManager.lua",
+    "module": "Game.TwoMerge.Map.MapGrid",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Map/MapGrid.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Manager/TwoMergeMapGridManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Map/MapGrid.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Manager/TwoMergeMapGridManager.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Manager/TwoMergeMapGridManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Manager/TwoMergeMapGridManager.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergeUtil",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeUtil.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Manager/TwoMergeMapGridManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeUtil.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Manager/TwoMergeMapGridManager.lua",
+    "module": "Game.TwoMerge.Logic.GridRemoveLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/GridRemoveLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Manager/TwoMergeMapGridManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/GridRemoveLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Manager/TwoMergeMapGridManager.lua",
+    "module": "Game.TwoMerge.Logic.ArticleDeleteLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/ArticleDeleteLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Manager/TwoMergeMapGridManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/ArticleDeleteLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Manager/TwoMergeManager.lua",
+    "module": "Game.TwoMerge.Article.Article",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/Article.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Manager/TwoMergeManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/Article.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Manager/TwoMergeManager.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Manager/TwoMergeManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Manager/TwoMergeManager.lua",
+    "module": "Game.TwoMerge.Net.TwoMergeNetSyncLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Net/TwoMergeNetSyncLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Manager/TwoMergeManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Net/TwoMergeNetSyncLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Manager/TwoMergeManager.lua",
+    "module": "Game.TwoMerge.DataPack.DataPack",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/DataPack/DataPack.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Manager/TwoMergeManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/DataPack/DataPack.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Manager/TwoMergeManager.lua",
+    "module": "Game.TwoMerge.DataPack.ItemData",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/DataPack/ItemData.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Manager/TwoMergeManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/DataPack/ItemData.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Manager/TwoMergeManager.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergeUtil",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeUtil.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Manager/TwoMergeManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeUtil.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Manager/TwoMergeManager.lua",
+    "module": "Game.TwoMerge.Net.TwoMergeNetOrder",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Net/TwoMergeNetOrder.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Manager/TwoMergeManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Net/TwoMergeNetOrder.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Manager/TwoMergeManager.lua",
+    "module": "Game.TwoMerge.Net.TwoMergeNetQueue",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Net/TwoMergeNetQueue.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Manager/TwoMergeManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Net/TwoMergeNetQueue.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Manager/TwoMergeManager.lua",
+    "module": "Game.TwoMerge.Net.TwoMergeNetBag",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Net/TwoMergeNetBag.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Manager/TwoMergeManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Net/TwoMergeNetBag.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Manager/TwoMergeManager.lua",
+    "module": "Game.TwoMerge.Logic.OperationLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/OperationLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Manager/TwoMergeManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/OperationLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Manager/TwoMergeManager.lua",
+    "module": "Game.TwoMerge.Logic.UndoLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/UndoLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Manager/TwoMergeManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/UndoLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Manager/TwoMergeManager.lua",
+    "module": "Game.TwoMerge.Logic.HostingLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/HostingLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Manager/TwoMergeManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/HostingLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Manager/TwoMergeManager.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergePool",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergePool.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Manager/TwoMergeManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergePool.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Manager/TwoMergeManager.lua",
+    "module": "Game.TwoMerge.Logic.AreaLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/AreaLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Manager/TwoMergeManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/AreaLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Manager/TwoMergeManager.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergeConfigUtil",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Manager/TwoMergeManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/Activities/TwoMergeActivityManager.lua",
+    "module": "Game.Activities.ActivityBase",
+    "target": "Assets/HomeLand/LuaScript/Game/Activities/ActivityBase.lua",
+    "core": false,
+    "package_source": "Assets/MergeTwo/Lua/Game/Activities/TwoMergeActivityManager.lua",
+    "package_target": "Assets/MergeTwo/Reference/Lua/Game/Activities/ActivityBase.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/Activities/TwoMergeActivityManager.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergeConfigUtil",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/Activities/TwoMergeActivityManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderItemFix.lua",
+    "module": "Game.TwoMerge.Order.TwoMergeOrderBase",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderBase.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderItemFix.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderBase.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderItemFix.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderItemFix.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderItemFix.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergeConfigUtil",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderItemFix.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderPosition.lua",
+    "module": "Game.TwoMerge.Order.TwoMergeOrderBase",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderBase.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderPosition.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderBase.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderPosition.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderPosition.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderMain.lua",
+    "module": "Game.TwoMerge.Order.TwoMergeOrderBase",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderBase.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderMain.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderBase.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderMain.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderMain.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderManager.lua",
+    "module": "Game.TwoMerge.Order.TwoMergeOrderMain",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderMain.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderMain.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderManager.lua",
+    "module": "Game.TwoMerge.Order.TwoMergeOrderSub",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderSub.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderSub.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderManager.lua",
+    "module": "Game.TwoMerge.Order.TwoMergeOrderPosition",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderPosition.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderPosition.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderManager.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderManager.lua",
+    "module": "Game.TwoMerge.Order.TwoMergeOrderItemRandomSimple",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderItemRandomSimple.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderItemRandomSimple.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderManager.lua",
+    "module": "Game.TwoMerge.Order.TwoMergeOrderItemRandomCommon",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderItemRandomCommon.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderItemRandomCommon.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderManager.lua",
+    "module": "Game.TwoMerge.Order.TwoMergeOrderItemFix",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderItemFix.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderManager.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderItemFix.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderSub.lua",
+    "module": "Game.TwoMerge.Order.TwoMergeOrderBase",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderBase.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderSub.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderBase.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderSub.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderSub.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderBase.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderBase.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderItemRandomCommon.lua",
+    "module": "Game.TwoMerge.Order.TwoMergeOrderBase",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderBase.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderItemRandomCommon.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderBase.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderItemRandomCommon.lua",
+    "module": "Game.TwoMerge.Order.TwoMergeOrderLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderItemRandomCommon.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderItemRandomCommon.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderItemRandomCommon.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderItemRandomCommon.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergeConfigUtil",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderItemRandomCommon.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderItemRandomSimple.lua",
+    "module": "Game.TwoMerge.Order.TwoMergeOrderBase",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderBase.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderItemRandomSimple.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderBase.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderItemRandomSimple.lua",
+    "module": "Game.TwoMerge.Order.TwoMergeOrderLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderItemRandomSimple.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderItemRandomSimple.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderItemRandomSimple.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderItemRandomSimple.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergeConfigUtil",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderItemRandomSimple.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Net/TwoMergeNetOrder.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Net/TwoMergeNetOrder.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Net/TwoMergeNetOrder.lua",
+    "module": "Game.TwoMerge.DataPack.DataPack",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/DataPack/DataPack.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Net/TwoMergeNetOrder.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/DataPack/DataPack.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Net/TwoMergeNetOrder.lua",
+    "module": "UI.ThreeClearPackPanel.View.UI.ThreeClearEneryItem",
+    "target": "Assets/HomeLand/LuaScript/UI/ThreeClearPackPanel/View/UI/ThreeClearEneryItem.lua",
+    "core": false,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Net/TwoMergeNetOrder.lua",
+    "package_target": "Assets/MergeTwo/Reference/Lua/UI/ThreeClearPackPanel/View/UI/ThreeClearEneryItem.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Net/TwoMergeNetBag.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Net/TwoMergeNetBag.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Net/TwoMergeNetBag.lua",
+    "module": "Game.TwoMerge.DataPack.DataPack",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/DataPack/DataPack.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Net/TwoMergeNetBag.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/DataPack/DataPack.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Net/TwoMergeNetBag.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergeUtil",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeUtil.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Net/TwoMergeNetBag.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeUtil.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Net/TwoMergeNetQueue.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Net/TwoMergeNetQueue.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Net/TwoMergeNetQueue.lua",
+    "module": "Game.TwoMerge.DataPack.DataPack",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/DataPack/DataPack.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Net/TwoMergeNetQueue.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/DataPack/DataPack.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Net/TwoMergeNetQueue.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergeConfigUtil",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Net/TwoMergeNetQueue.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/AreaLogic.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/AreaLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/AutoMergeLogic.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/AutoMergeLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/AutoMergeLogic.lua",
+    "module": "Game.TwoMerge.Logic.MergeSpawnLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/MergeSpawnLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/AutoMergeLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/MergeSpawnLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TutorialItemOrder.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TutorialItemOrder.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TutorialItemOrder.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergeConfigUtil",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TutorialItemOrder.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/NormalChestLogic.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/NormalChestLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/MergeSpawnLogic.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/MergeSpawnLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/MergeSpawnLogic.lua",
+    "module": "Game.TwoMerge.Logic.OperationLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/OperationLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/MergeSpawnLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/OperationLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/MergeSpawnLogic.lua",
+    "module": "Game.TwoMerge.DataPack.DataPack",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/DataPack/DataPack.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/MergeSpawnLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/DataPack/DataPack.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/MergeSpawnLogic.lua",
+    "module": "Game.TwoMerge.Logic.PromptMergeLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/PromptMergeLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/MergeSpawnLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/PromptMergeLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TutorialItemGenerator.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TutorialItemGenerator.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TutorialItemGenerator.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergeConfigUtil",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TutorialItemGenerator.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TidyLogic.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TidyLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/ArticleDeleteLogic.lua",
+    "module": "Game.TwoMerge.DataPack.DataPack",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/DataPack/DataPack.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/ArticleDeleteLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/DataPack/DataPack.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/ArticleDeleteLogic.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/ArticleDeleteLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/GridRemoveLogic.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/GridRemoveLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TutorialLogic.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TutorialLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TutorialLogic.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergeConfigUtil",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TutorialLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TutorialLogic.lua",
+    "module": "Game.TwoMerge.Logic.TutorialItemGenerator",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TutorialItemGenerator.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TutorialLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TutorialItemGenerator.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TutorialLogic.lua",
+    "module": "Game.TwoMerge.Logic.TutorialItemOrder",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TutorialItemOrder.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TutorialLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TutorialItemOrder.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TwoMergeJumpLogic.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TwoMergeJumpLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/DropProcessLogic.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/DropProcessLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/PromptMergeLogic.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/PromptMergeLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/PromptMergeLogic.lua",
+    "module": "Game.TwoMerge.Order.TwoMergeOrderManager",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderManager.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/PromptMergeLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderManager.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/PromptMergeLogic.lua",
+    "module": "Game.TwoMerge.Logic.TutorialLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TutorialLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/PromptMergeLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TutorialLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TwoMergeActionQueue.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TwoMergeActionQueue.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/SequenceAnimationLogic.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/SequenceAnimationLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/SequenceAnimationLogic.lua",
+    "module": "Game.TwoMerge.Logic.PromptMergeLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/PromptMergeLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/SequenceAnimationLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/PromptMergeLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/OperationLogic.lua",
+    "module": "Game.TwoMerge.Logic.PromptMergeLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/PromptMergeLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/OperationLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/PromptMergeLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/OperationLogic.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/OperationLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/OperationLogic.lua",
+    "module": "Game.TwoMerge.Logic.UndoLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/UndoLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/OperationLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/UndoLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/OperationLogic.lua",
+    "module": "Game.TwoMerge.Logic.TwoMergeActionQueue",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TwoMergeActionQueue.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/OperationLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TwoMergeActionQueue.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/HostingLogic.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/HostingLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/HostingLogic.lua",
+    "module": "Game.TwoMerge.Logic.MergeSpawnLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/MergeSpawnLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/HostingLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/MergeSpawnLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/HostingLogic.lua",
+    "module": "Game.TwoMerge.Logic.GenerateLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/GenerateLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/HostingLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/GenerateLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/HostingLogic.lua",
+    "module": "Game.TwoMerge.Logic.NormalChestLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/NormalChestLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/HostingLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/NormalChestLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/GenerateLogic.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/GenerateLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/GenerateLogic.lua",
+    "module": "Game.TwoMerge.DataPack.DataPack",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/DataPack/DataPack.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/GenerateLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/DataPack/DataPack.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/GenerateLogic.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergeConfigUtil",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/GenerateLogic.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Map/TowMergeGridStateDeepLock.lua",
+    "module": "Game.TwoMerge.Map.MapGridStateBase",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Map/MapGridStateBase.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Map/TowMergeGridStateDeepLock.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Map/MapGridStateBase.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Map/TowMergeGridStateDeepLock.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Map/TowMergeGridStateDeepLock.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Map/TowMergeGridStateDeepLock.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergeConfigUtil",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Map/TowMergeGridStateDeepLock.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Map/MapGridStateBase.lua",
+    "module": "Game.FsmStateMachine.FsmStateBase",
+    "target": "Assets/HomeLand/LuaScript/Game/FsmStateMachine/FsmStateBase.lua",
+    "core": false,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Map/MapGridStateBase.lua",
+    "package_target": "Assets/MergeTwo/Reference/Lua/Game/FsmStateMachine/FsmStateBase.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Map/MapGridStateBase.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Map/MapGridStateBase.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Map/MapGridStateBase.lua",
+    "module": "Game.TwoMerge.Logic.AreaLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/AreaLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Map/MapGridStateBase.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/AreaLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Map/TowMergeGridStateLock.lua",
+    "module": "Game.TwoMerge.Map.MapGridStateBase",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Map/MapGridStateBase.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Map/TowMergeGridStateLock.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Map/MapGridStateBase.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Map/TowMergeGridStateLock.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Map/TowMergeGridStateLock.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Map/TowMergeGridStateUnLock.lua",
+    "module": "Game.TwoMerge.Map.MapGridStateBase",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Map/MapGridStateBase.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Map/TowMergeGridStateUnLock.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Map/MapGridStateBase.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Map/TowMergeGridStateUnLock.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Map/TowMergeGridStateUnLock.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Map/MapGrid.lua",
+    "module": "Game.FsmStateMachine.FsmStateMachine",
+    "target": "Assets/HomeLand/LuaScript/Game/FsmStateMachine/FsmStateMachine.lua",
+    "core": false,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Map/MapGrid.lua",
+    "package_target": "Assets/MergeTwo/Reference/Lua/Game/FsmStateMachine/FsmStateMachine.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Map/MapGrid.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Map/MapGrid.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/DataPack/NetDataBag.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/DataPack/NetDataBag.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/DataPack/ItemData.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/DataPack/ItemData.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/DataPack/DataPack.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/DataPack/DataPack.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/DataPack/DataPack.lua",
+    "module": "Protocol.Message.TwoMergeModuleMsg_pb",
+    "target": "Assets/HomeLand/LuaScript/Protocol/Message/TwoMergeModuleMsg_pb.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/DataPack/DataPack.lua",
+    "package_target": "Assets/MergeTwo/Lua/Protocol/Message/TwoMergeModuleMsg_pb.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/ArticleView.lua",
+    "module": "Game.TwoMerge.Logic.GenerateLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/GenerateLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/ArticleView.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/GenerateLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/ArticleView.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/ArticleView.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/ArticleView.lua",
+    "module": "Game.TwoMerge.Logic.OperationLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/OperationLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/ArticleView.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/OperationLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/ArticleView.lua",
+    "module": "Game.TwoMerge.Order.TwoMergeOrderManager",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderManager.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/ArticleView.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderManager.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/ArticleView.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergePool",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergePool.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/ArticleView.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergePool.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/ArticleAnimation.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/ArticleAnimation.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/Article.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/Article.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/Article.lua",
+    "module": "Game.TwoMerge.Logic.OperationLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/OperationLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/Article.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/OperationLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/Article.lua",
+    "module": "Game.FsmStateMachine.FsmStateMachine",
+    "target": "Assets/HomeLand/LuaScript/Game/FsmStateMachine/FsmStateMachine.lua",
+    "core": false,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/Article.lua",
+    "package_target": "Assets/MergeTwo/Reference/Lua/Game/FsmStateMachine/FsmStateMachine.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/Article.lua",
+    "module": "Game.TwoMerge.DataPack.DataPack",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/DataPack/DataPack.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/Article.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/DataPack/DataPack.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/Article.lua",
+    "module": "Game.TwoMerge.Article.ArticleAnimation",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/ArticleAnimation.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/Article.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/ArticleAnimation.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/Article.lua",
+    "module": "Game.TwoMerge.Article.ArticleView",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/ArticleView.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/Article.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/ArticleView.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeUtil.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeUtil.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeUtil.lua",
+    "module": "Game.Processors.RequestIAPProcessor",
+    "target": "Assets/HomeLand/LuaScript/Game/Processors/RequestIAPProcessor.lua",
+    "core": false,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeUtil.lua",
+    "package_target": "Assets/MergeTwo/Reference/Lua/Game/Processors/RequestIAPProcessor.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/State/ArticleStateDeepLock.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/State/ArticleStateDeepLock.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/State/ArticleStateDeepLock.lua",
+    "module": "Game.TwoMerge.Article.State.ArticleStateBase",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/State/ArticleStateBase.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/State/ArticleStateDeepLock.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/State/ArticleStateBase.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/State/ArticleStateBase.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/State/ArticleStateBase.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/State/ArticleStateBase.lua",
+    "module": "Utils.ObserverSelf",
+    "target": "Assets/HomeLand/LuaScript/Utils/ObserverSelf.lua",
+    "core": false,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/State/ArticleStateBase.lua",
+    "package_target": "Assets/MergeTwo/Reference/Lua/Utils/ObserverSelf.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/State/ArticleStateBase.lua",
+    "module": "Game.FsmStateMachine.FsmStateBase",
+    "target": "Assets/HomeLand/LuaScript/Game/FsmStateMachine/FsmStateBase.lua",
+    "core": false,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/State/ArticleStateBase.lua",
+    "package_target": "Assets/MergeTwo/Reference/Lua/Game/FsmStateMachine/FsmStateBase.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/State/ArticleStateUnLock.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/State/ArticleStateUnLock.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/State/ArticleStateUnLock.lua",
+    "module": "Game.TwoMerge.Article.State.ArticleStateBase",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/State/ArticleStateBase.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/State/ArticleStateUnLock.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/State/ArticleStateBase.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/State/ArticleStateBubble.lua",
+    "module": "Game.TwoMerge.Article.State.ArticleStateBase",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/State/ArticleStateBase.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/State/ArticleStateBubble.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/State/ArticleStateBase.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/State/ArticleStateBubble.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/State/ArticleStateBubble.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/State/ArticleStateBubble.lua",
+    "module": "Game.TwoMerge.DataPack.DataPack",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/DataPack/DataPack.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/State/ArticleStateBubble.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/DataPack/DataPack.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/State/ArticleStateLock.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/State/ArticleStateLock.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/State/ArticleStateLock.lua",
+    "module": "Game.TwoMerge.Article.State.ArticleStateBase",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Article/State/ArticleStateBase.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/State/ArticleStateLock.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Article/State/ArticleStateBase.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/DragFunction.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/DragFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/DragFunction.lua",
+    "module": "Game.TwoMerge.Function.IFunction",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/IFunction.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/DragFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/IFunction.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/SelectChestFunction.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/SelectChestFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/SelectChestFunction.lua",
+    "module": "Game.TwoMerge.DataPack.DataPack",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/DataPack/DataPack.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/SelectChestFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/DataPack/DataPack.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/SelectChestFunction.lua",
+    "module": "Game.TwoMerge.Function.IFunction",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/IFunction.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/SelectChestFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/IFunction.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/SelectChestFunction.lua",
+    "module": "Game.TwoMerge.Logic.OperationLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/OperationLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/SelectChestFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/OperationLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/AutoGeneratorFunction.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/AutoGeneratorFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/AutoGeneratorFunction.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergeUtil",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeUtil.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/AutoGeneratorFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeUtil.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/AutoGeneratorFunction.lua",
+    "module": "Game.TwoMerge.Logic.GenerateLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/GenerateLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/AutoGeneratorFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/GenerateLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/AutoGeneratorFunction.lua",
+    "module": "Game.TwoMerge.Function.IFunction",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/IFunction.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/AutoGeneratorFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/IFunction.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/ShearsFunction.lua",
+    "module": "Game.TwoMerge.Function.IFunction",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/IFunction.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/ShearsFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/IFunction.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/ShearsFunction.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/ShearsFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/ShearsFunction.lua",
+    "module": "Game.TwoMerge.Logic.DropProcessLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/DropProcessLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/ShearsFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/DropProcessLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/ShearsFunction.lua",
+    "module": "Game.TwoMerge.Logic.MergeSpawnLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/MergeSpawnLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/ShearsFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/MergeSpawnLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/MergeFunction.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/MergeFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/MergeFunction.lua",
+    "module": "Game.TwoMerge.Logic.DropProcessLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/DropProcessLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/MergeFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/DropProcessLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/MergeFunction.lua",
+    "module": "Game.TwoMerge.Logic.MergeSpawnLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/MergeSpawnLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/MergeFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/MergeSpawnLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/MergeFunction.lua",
+    "module": "Game.TwoMerge.Function.IFunction",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/IFunction.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/MergeFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/IFunction.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/ClickDropFunction.lua",
+    "module": "Game.TwoMerge.Function.IFunction",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/IFunction.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/ClickDropFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/IFunction.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/ClickDropFunction.lua",
+    "module": "Game.TwoMerge.Logic.GenerateLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/GenerateLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/ClickDropFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/GenerateLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/ClickDropFunction.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/ClickDropFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/ClickDropFunction.lua",
+    "module": "Game.TwoMerge.Logic.TwoMergeActionQueue",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TwoMergeActionQueue.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/ClickDropFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TwoMergeActionQueue.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/ClickDropFunction.lua",
+    "module": "Game.TwoMerge.Logic.TutorialLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TutorialLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/ClickDropFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TutorialLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/UseFunction.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/UseFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/UseFunction.lua",
+    "module": "Game.TwoMerge.Function.IFunction",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/IFunction.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/UseFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/IFunction.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/NormalChestFunction.lua",
+    "module": "Game.TwoMerge.Function.IFunction",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/IFunction.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/NormalChestFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/IFunction.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/NormalChestFunction.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/NormalChestFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/NormalChestFunction.lua",
+    "module": "Game.TwoMerge.DataPack.DataPack",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/DataPack/DataPack.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/NormalChestFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/DataPack/DataPack.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/NormalChestFunction.lua",
+    "module": "Game.TwoMerge.Logic.GenerateLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/GenerateLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/NormalChestFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/GenerateLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/NormalChestFunction.lua",
+    "module": "Game.TwoMerge.Logic.NormalChestLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/NormalChestLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/NormalChestFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/NormalChestLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/ReplaceFunction.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/ReplaceFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/ReplaceFunction.lua",
+    "module": "Game.TwoMerge.Function.IFunction",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/IFunction.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/ReplaceFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/IFunction.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/ReplaceFunction.lua",
+    "module": "Game.TwoMerge.Logic.OperationLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/OperationLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/ReplaceFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/OperationLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/ReplaceFunction.lua",
+    "module": "Game.TwoMerge.Logic.TwoMergeActionQueue",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TwoMergeActionQueue.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/ReplaceFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TwoMergeActionQueue.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/ReplaceFunction.lua",
+    "module": "Game.TwoMerge.Logic.TutorialLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TutorialLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/ReplaceFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TutorialLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/ReduceCDFunction.lua",
+    "module": "Game.TwoMerge.Function.IFunction",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/IFunction.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/ReduceCDFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/IFunction.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/ReduceCDFunction.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/ReduceCDFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/ReduceCDFunction.lua",
+    "module": "Game.TwoMerge.Logic.DropProcessLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/DropProcessLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/ReduceCDFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/DropProcessLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/ReduceCDFunction.lua",
+    "module": "Game.TwoMerge.Logic.GenerateLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/GenerateLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/ReduceCDFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/GenerateLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/ReduceCDFunction.lua",
+    "module": "Game.TwoMerge.Function.Normal.NormalChestFunction",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/NormalChestFunction.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/ReduceCDFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/NormalChestFunction.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/OmnipotentMergeFunction.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/OmnipotentMergeFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/OmnipotentMergeFunction.lua",
+    "module": "Game.TwoMerge.Config.DropProcessLogic",
+    "target": null,
+    "core": false,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/OmnipotentMergeFunction.lua",
+    "package_target": null
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/OmnipotentMergeFunction.lua",
+    "module": "Game.TwoMerge.Logic.MergeSpawnLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/MergeSpawnLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/OmnipotentMergeFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/MergeSpawnLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/Normal/OmnipotentMergeFunction.lua",
+    "module": "Game.TwoMerge.Function.IFunction",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Function/IFunction.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/Normal/OmnipotentMergeFunction.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Function/IFunction.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Protocol/Processor/Twomergemodulemsg_30205_TwoMergeOpenGrid_Request.lua",
+    "module": "Protocol.Message.TwoMergeModuleMsg_pb",
+    "target": "Assets/HomeLand/LuaScript/Protocol/Message/TwoMergeModuleMsg_pb.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Protocol/Processor/Twomergemodulemsg_30205_TwoMergeOpenGrid_Request.lua",
+    "package_target": "Assets/MergeTwo/Lua/Protocol/Message/TwoMergeModuleMsg_pb.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Protocol/Processor/Activitytwomergemodulemsg_30241_ActivityTwoMergeOpen_Request.lua",
+    "module": "Protocol.Message.ActivityTwoMergeModuleMsg_pb",
+    "target": "Assets/HomeLand/LuaScript/Protocol/Message/ActivityTwoMergeModuleMsg_pb.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Protocol/Processor/Activitytwomergemodulemsg_30241_ActivityTwoMergeOpen_Request.lua",
+    "package_target": "Assets/MergeTwo/Lua/Protocol/Message/ActivityTwoMergeModuleMsg_pb.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Protocol/Processor/Twomergemodulemsg_30213_TwoMergeRandomOrder_Request.lua",
+    "module": "Protocol.Message.TwoMergeModuleMsg_pb",
+    "target": "Assets/HomeLand/LuaScript/Protocol/Message/TwoMergeModuleMsg_pb.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Protocol/Processor/Twomergemodulemsg_30213_TwoMergeRandomOrder_Request.lua",
+    "package_target": "Assets/MergeTwo/Lua/Protocol/Message/TwoMergeModuleMsg_pb.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Protocol/Processor/Twomergemodulemsg_30211_TwoMergeShopRefreshHotItem_Request.lua",
+    "module": "Protocol.Message.TwoMergeModuleMsg_pb",
+    "target": "Assets/HomeLand/LuaScript/Protocol/Message/TwoMergeModuleMsg_pb.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Protocol/Processor/Twomergemodulemsg_30211_TwoMergeShopRefreshHotItem_Request.lua",
+    "package_target": "Assets/MergeTwo/Lua/Protocol/Message/TwoMergeModuleMsg_pb.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Protocol/Processor/Twomergemodulemsg_30209_TwoMergeShopInfo_Request.lua",
+    "module": "Protocol.Message.TwoMergeModuleMsg_pb",
+    "target": "Assets/HomeLand/LuaScript/Protocol/Message/TwoMergeModuleMsg_pb.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Protocol/Processor/Twomergemodulemsg_30209_TwoMergeShopInfo_Request.lua",
+    "package_target": "Assets/MergeTwo/Lua/Protocol/Message/TwoMergeModuleMsg_pb.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Protocol/Processor/Twomergemodulemsg_30201_TwoMergeInfo_Request.lua",
+    "module": "Protocol.Message.TwoMergeModuleMsg_pb",
+    "target": "Assets/HomeLand/LuaScript/Protocol/Message/TwoMergeModuleMsg_pb.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Protocol/Processor/Twomergemodulemsg_30201_TwoMergeInfo_Request.lua",
+    "package_target": "Assets/MergeTwo/Lua/Protocol/Message/TwoMergeModuleMsg_pb.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Protocol/Processor/Twomergemodulemsg_30210_TwoMergeShopBuyItem_Request.lua",
+    "module": "Protocol.Message.TwoMergeModuleMsg_pb",
+    "target": "Assets/HomeLand/LuaScript/Protocol/Message/TwoMergeModuleMsg_pb.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Protocol/Processor/Twomergemodulemsg_30210_TwoMergeShopBuyItem_Request.lua",
+    "package_target": "Assets/MergeTwo/Lua/Protocol/Message/TwoMergeModuleMsg_pb.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Protocol/Processor/Twomergemodulemsg_30214_TwoMergeRandomOrderCD_Request.lua",
+    "module": "Protocol.Message.TwoMergeModuleMsg_pb",
+    "target": "Assets/HomeLand/LuaScript/Protocol/Message/TwoMergeModuleMsg_pb.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Protocol/Processor/Twomergemodulemsg_30214_TwoMergeRandomOrderCD_Request.lua",
+    "package_target": "Assets/MergeTwo/Lua/Protocol/Message/TwoMergeModuleMsg_pb.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Protocol/Processor/Twomergemodulemsg_30202_SynGridInfo_Request.lua",
+    "module": "Protocol.Message.TwoMergeModuleMsg_pb",
+    "target": "Assets/HomeLand/LuaScript/Protocol/Message/TwoMergeModuleMsg_pb.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Protocol/Processor/Twomergemodulemsg_30202_SynGridInfo_Request.lua",
+    "package_target": "Assets/MergeTwo/Lua/Protocol/Message/TwoMergeModuleMsg_pb.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Protocol/Processor/Twomergemodulemsg_30212_TwoMergeGuide_Request.lua",
+    "module": "Protocol.Message.TwoMergeModuleMsg_pb",
+    "target": "Assets/HomeLand/LuaScript/Protocol/Message/TwoMergeModuleMsg_pb.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Protocol/Processor/Twomergemodulemsg_30212_TwoMergeGuide_Request.lua",
+    "package_target": "Assets/MergeTwo/Lua/Protocol/Message/TwoMergeModuleMsg_pb.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Protocol/Processor/Twomergemodulemsg_30203_UseTwoMergeItem_Request.lua",
+    "module": "Protocol.Message.TwoMergeModuleMsg_pb",
+    "target": "Assets/HomeLand/LuaScript/Protocol/Message/TwoMergeModuleMsg_pb.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Protocol/Processor/Twomergemodulemsg_30203_UseTwoMergeItem_Request.lua",
+    "package_target": "Assets/MergeTwo/Lua/Protocol/Message/TwoMergeModuleMsg_pb.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Protocol/Processor/Twomergemodulemsg_30207_TwoMergeSubmitOrder_Request.lua",
+    "module": "Protocol.Message.TwoMergeModuleMsg_pb",
+    "target": "Assets/HomeLand/LuaScript/Protocol/Message/TwoMergeModuleMsg_pb.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Protocol/Processor/Twomergemodulemsg_30207_TwoMergeSubmitOrder_Request.lua",
+    "package_target": "Assets/MergeTwo/Lua/Protocol/Message/TwoMergeModuleMsg_pb.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Protocol/Processor/Twomergemodulemsg_30204_TwoMergeBuildingLevelUp_Request.lua",
+    "module": "Protocol.Message.TwoMergeModuleMsg_pb",
+    "target": "Assets/HomeLand/LuaScript/Protocol/Message/TwoMergeModuleMsg_pb.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Protocol/Processor/Twomergemodulemsg_30204_TwoMergeBuildingLevelUp_Request.lua",
+    "package_target": "Assets/MergeTwo/Lua/Protocol/Message/TwoMergeModuleMsg_pb.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Protocol/Processor/Twomergemodulemsg_30206_TwoMergeCostEnergy_Request.lua",
+    "module": "Protocol.Message.TwoMergeModuleMsg_pb",
+    "target": "Assets/HomeLand/LuaScript/Protocol/Message/TwoMergeModuleMsg_pb.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Protocol/Processor/Twomergemodulemsg_30206_TwoMergeCostEnergy_Request.lua",
+    "package_target": "Assets/MergeTwo/Lua/Protocol/Message/TwoMergeModuleMsg_pb.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Protocol/Processor/Twomergemodulemsg_30215_TwoMergeBuyPurpleEnergy_Request.lua",
+    "module": "Protocol.Message.TwoMergeModuleMsg_pb",
+    "target": "Assets/HomeLand/LuaScript/Protocol/Message/TwoMergeModuleMsg_pb.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/Protocol/Processor/Twomergemodulemsg_30215_TwoMergeBuyPurpleEnergy_Request.lua",
+    "package_target": "Assets/MergeTwo/Lua/Protocol/Message/TwoMergeModuleMsg_pb.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Protocol/Message/TwoMergeModuleMsg_pb.lua",
+    "module": "Protocol.Protobuf.protobuf",
+    "target": "Assets/HomeLand/LuaScript/Protocol/Protobuf/protobuf.lua",
+    "core": false,
+    "package_source": "Assets/MergeTwo/Lua/Protocol/Message/TwoMergeModuleMsg_pb.lua",
+    "package_target": "Assets/MergeTwo/Reference/Lua/Protocol/Protobuf/protobuf.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Protocol/Message/TwoMergeModuleMsg_pb.lua",
+    "module": "Protocol.Message.ItemModuleMsg_pb",
+    "target": "Assets/HomeLand/LuaScript/Protocol/Message/ItemModuleMsg_pb.lua",
+    "core": false,
+    "package_source": "Assets/MergeTwo/Lua/Protocol/Message/TwoMergeModuleMsg_pb.lua",
+    "package_target": "Assets/MergeTwo/Reference/Lua/Protocol/Message/ItemModuleMsg_pb.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/Protocol/Message/ActivityTwoMergeModuleMsg_pb.lua",
+    "module": "Protocol.Protobuf.protobuf",
+    "target": "Assets/HomeLand/LuaScript/Protocol/Protobuf/protobuf.lua",
+    "core": false,
+    "package_source": "Assets/MergeTwo/Lua/Protocol/Message/ActivityTwoMergeModuleMsg_pb.lua",
+    "package_target": "Assets/MergeTwo/Reference/Lua/Protocol/Protobuf/protobuf.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/Components/TwoMergeButton.lua",
+    "module": "UI.Components.BaseIconButton",
+    "target": "Assets/HomeLand/LuaScript/UI/Components/BaseIconButton.lua",
+    "core": false,
+    "package_source": "Assets/MergeTwo/Lua/UI/Components/TwoMergeButton.lua",
+    "package_target": "Assets/MergeTwo/Reference/Lua/UI/Components/BaseIconButton.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UIGM/UIGMItem_TwoMerge.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UIGM/UIGMItem_TwoMerge.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UIGM/UIGMItem_TwoMerge.lua",
+    "module": "Game.TwoMerge.Logic.TidyLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TidyLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UIGM/UIGMItem_TwoMerge.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TidyLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UIGM/UIGMItem_TwoMerge.lua",
+    "module": "Game.TwoMerge.Logic.AutoMergeLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/AutoMergeLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UIGM/UIGMItem_TwoMerge.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/AutoMergeLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UIGM/UIGMItem_TwoMerge.lua",
+    "module": "Game.TwoMerge.Logic.HostingLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/HostingLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UIGM/UIGMItem_TwoMerge.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/HostingLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UIGM/UIGMItem_TwoMerge.lua",
+    "module": "Game.TwoMerge.DataPack.DataPack",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/DataPack/DataPack.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UIGM/UIGMItem_TwoMerge.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/DataPack/DataPack.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UIGM/UIGMItem_TwoMerge.lua",
+    "module": "Game.TwoMerge.Logic.SequenceAnimationLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/SequenceAnimationLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UIGM/UIGMItem_TwoMerge.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/SequenceAnimationLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UIGM/UIGMItem_TwoMerge.lua",
+    "module": "Game.TwoMerge.Logic.TwoMergeJumpLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TwoMergeJumpLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UIGM/UIGMItem_TwoMerge.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TwoMergeJumpLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UIGM/UIGMItem_TwoMerge.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergeConfigUtil",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UIGM/UIGMItem_TwoMerge.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UIGM/UIGMItem_TwoMerge.lua",
+    "module": "Game.TwoMerge.Logic.TutorialLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TutorialLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UIGM/UIGMItem_TwoMerge.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TutorialLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UIGM/UIGMItem_TwoMerge.lua",
+    "module": "Game.TwoMerge.Order.TwoMergeOrderLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UIGM/UIGMItem_TwoMerge.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UIGM/UIGMItem_TwoMergeOrder.lua",
+    "module": "Game.TwoMerge.Order.TwoMergeOrderLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Order/TwoMergeOrderLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UIGM/UIGMItem_TwoMergeOrder.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Order/TwoMergeOrderLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UITwoMergeEnergyBuyPanel/View/UITwoMergeEnergyBuyPanelMediator.lua",
+    "module": "UI.UITwoMergeEnergyBuyPanel.UITwoMergeEnergyBuyPanelNotificationEnum",
+    "target": "Assets/HomeLand/LuaScript/UI/UITwoMergeEnergyBuyPanel/UITwoMergeEnergyBuyPanelNotificationEnum.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UITwoMergeEnergyBuyPanel/View/UITwoMergeEnergyBuyPanelMediator.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/UITwoMergeEnergyBuyPanel/UITwoMergeEnergyBuyPanelNotificationEnum.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UITwoMergeEnergyBuyPanel/View/UITwoMergeEnergyBuyPanelMediator.lua",
+    "module": "UI.UITwoMergeEnergyBuyPanel.Model.UITwoMergeEnergyBuyPanelProxy",
+    "target": "Assets/HomeLand/LuaScript/UI/UITwoMergeEnergyBuyPanel/Model/UITwoMergeEnergyBuyPanelProxy.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UITwoMergeEnergyBuyPanel/View/UITwoMergeEnergyBuyPanelMediator.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/UITwoMergeEnergyBuyPanel/Model/UITwoMergeEnergyBuyPanelProxy.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UITwoMergeEnergyBuyPanel/View/UI/UITwoMergeEnergyBuyPanel.lua",
+    "module": "UI.UITwoMergeEnergyBuyPanel.View.UI.Base._UITwoMergeEnergyBuyPanelBase",
+    "target": "Assets/HomeLand/LuaScript/UI/UITwoMergeEnergyBuyPanel/View/UI/Base/_UITwoMergeEnergyBuyPanelBase.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UITwoMergeEnergyBuyPanel/View/UI/UITwoMergeEnergyBuyPanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/UITwoMergeEnergyBuyPanel/View/UI/Base/_UITwoMergeEnergyBuyPanelBase.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UITwoMergeSelectChestPanel/View/UITwoMergeSelectChestPanelMediator.lua",
+    "module": "UI.UITwoMergeSelectChestPanel.UITwoMergeSelectChestPanelNotificationEnum",
+    "target": "Assets/HomeLand/LuaScript/UI/UITwoMergeSelectChestPanel/UITwoMergeSelectChestPanelNotificationEnum.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UITwoMergeSelectChestPanel/View/UITwoMergeSelectChestPanelMediator.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/UITwoMergeSelectChestPanel/UITwoMergeSelectChestPanelNotificationEnum.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UITwoMergeSelectChestPanel/View/UITwoMergeSelectChestPanelMediator.lua",
+    "module": "UI.UITwoMergeSelectChestPanel.Model.UITwoMergeSelectChestPanelProxy",
+    "target": "Assets/HomeLand/LuaScript/UI/UITwoMergeSelectChestPanel/Model/UITwoMergeSelectChestPanelProxy.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UITwoMergeSelectChestPanel/View/UITwoMergeSelectChestPanelMediator.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/UITwoMergeSelectChestPanel/Model/UITwoMergeSelectChestPanelProxy.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UITwoMergeSelectChestPanel/View/UI/UITwoMergeSelectChestPanel.lua",
+    "module": "UI.UITwoMergeSelectChestPanel.View.UI.Base._UITwoMergeSelectChestPanelBase",
+    "target": "Assets/HomeLand/LuaScript/UI/UITwoMergeSelectChestPanel/View/UI/Base/_UITwoMergeSelectChestPanelBase.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UITwoMergeSelectChestPanel/View/UI/UITwoMergeSelectChestPanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/UITwoMergeSelectChestPanel/View/UI/Base/_UITwoMergeSelectChestPanelBase.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UITwoMergeSelectChestPanel/View/UI/UITwoMergeSelectChestPanel.lua",
+    "module": "UI.UITwoMergeSelectChestPanel.View.UI.SelectChestItem",
+    "target": "Assets/HomeLand/LuaScript/UI/UITwoMergeSelectChestPanel/View/UI/SelectChestItem.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UITwoMergeSelectChestPanel/View/UI/UITwoMergeSelectChestPanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/UITwoMergeSelectChestPanel/View/UI/SelectChestItem.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UITwoMergeSelectChestPanel/View/UI/UITwoMergeSelectChestPanel.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergeUtil",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeUtil.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UITwoMergeSelectChestPanel/View/UI/UITwoMergeSelectChestPanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeUtil.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UITwoMergeSelectChestPanel/View/UI/SelectChestItem.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UITwoMergeSelectChestPanel/View/UI/SelectChestItem.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/GiftPayTriggerPanel/GiftPayTypePanel/GiftCategoryPanel/GiftCategoryBuyTwoMerge.lua",
+    "module": "UI.GiftPayTriggerPanel.GiftPayTypePanel.GiftPayTool",
+    "target": "Assets/HomeLand/LuaScript/UI/GiftPayTriggerPanel/GiftPayTypePanel/GiftPayTool.lua",
+    "core": false,
+    "package_source": "Assets/MergeTwo/Lua/UI/GiftPayTriggerPanel/GiftPayTypePanel/GiftCategoryPanel/GiftCategoryBuyTwoMerge.lua",
+    "package_target": "Assets/MergeTwo/Reference/Lua/UI/GiftPayTriggerPanel/GiftPayTypePanel/GiftPayTool.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/GiftPayTriggerPanel/GiftPayTypePanel/GiftCategoryPanel/GiftCategoryBuyTwoMerge.lua",
+    "module": "UI.GiftPayTriggerPanel.GiftPayTypePanel.GiftPayItemView",
+    "target": "Assets/HomeLand/LuaScript/UI/GiftPayTriggerPanel/GiftPayTypePanel/GiftPayItemView.lua",
+    "core": false,
+    "package_source": "Assets/MergeTwo/Lua/UI/GiftPayTriggerPanel/GiftPayTypePanel/GiftCategoryPanel/GiftCategoryBuyTwoMerge.lua",
+    "package_target": "Assets/MergeTwo/Reference/Lua/UI/GiftPayTriggerPanel/GiftPayTypePanel/GiftPayItemView.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/GiftPayTriggerPanel/GiftPayTypePanel/GiftCategoryPanel/GiftCategoryBuyTwoMerge.lua",
+    "module": "UI.GiftPayTriggerPanel.GiftPayTypePanel.GiftPayTime.GiftPayTime",
+    "target": "Assets/HomeLand/LuaScript/UI/GiftPayTriggerPanel/GiftPayTypePanel/GiftPayTime/GiftPayTime.lua",
+    "core": false,
+    "package_source": "Assets/MergeTwo/Lua/UI/GiftPayTriggerPanel/GiftPayTypePanel/GiftCategoryPanel/GiftCategoryBuyTwoMerge.lua",
+    "package_target": "Assets/MergeTwo/Reference/Lua/UI/GiftPayTriggerPanel/GiftPayTypePanel/GiftPayTime/GiftPayTime.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/GiftPayTriggerPanel/GiftPayTypePanel/GiftCategoryPanel/GiftCategoryBuyTwoMerge.lua",
+    "module": "UI.Bag.BagPanel.View.UI.ItemDetailTip",
+    "target": "Assets/HomeLand/LuaScript/UI/Bag/BagPanel/View/UI/ItemDetailTip.lua",
+    "core": false,
+    "package_source": "Assets/MergeTwo/Lua/UI/GiftPayTriggerPanel/GiftPayTypePanel/GiftCategoryPanel/GiftCategoryBuyTwoMerge.lua",
+    "package_target": "Assets/MergeTwo/Reference/Lua/UI/Bag/BagPanel/View/UI/ItemDetailTip.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergeBestiaryPanel/View/TwoMergeBestiaryPanelMediator.lua",
+    "module": "UI.TwoMergeBestiaryPanel.TwoMergeBestiaryPanelNotificationEnum",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergeBestiaryPanel/TwoMergeBestiaryPanelNotificationEnum.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergeBestiaryPanel/View/TwoMergeBestiaryPanelMediator.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergeBestiaryPanel/TwoMergeBestiaryPanelNotificationEnum.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergeBestiaryPanel/View/TwoMergeBestiaryPanelMediator.lua",
+    "module": "UI.TwoMergeBestiaryPanel.Model.TwoMergeBestiaryPanelProxy",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergeBestiaryPanel/Model/TwoMergeBestiaryPanelProxy.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergeBestiaryPanel/View/TwoMergeBestiaryPanelMediator.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergeBestiaryPanel/Model/TwoMergeBestiaryPanelProxy.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergeBestiaryPanel/View/UI/MergeBestiaryGenerateItem.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergeBestiaryPanel/View/UI/MergeBestiaryGenerateItem.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergeBestiaryPanel/View/UI/TwoMergeBestiaryPanel.lua",
+    "module": "UI.TwoMergeBestiaryPanel.View.UI.Base._TwoMergeBestiaryPanelBase",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergeBestiaryPanel/View/UI/Base/_TwoMergeBestiaryPanelBase.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergeBestiaryPanel/View/UI/TwoMergeBestiaryPanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergeBestiaryPanel/View/UI/Base/_TwoMergeBestiaryPanelBase.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergeBestiaryPanel/View/UI/TwoMergeBestiaryPanel.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergeBestiaryPanel/View/UI/TwoMergeBestiaryPanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergeBestiaryPanel/View/UI/TwoMergeBestiaryPanel.lua",
+    "module": "UI.TwoMergeBestiaryPanel.View.UI.MergeBestiaryItem",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergeBestiaryPanel/View/UI/MergeBestiaryItem.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergeBestiaryPanel/View/UI/TwoMergeBestiaryPanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergeBestiaryPanel/View/UI/MergeBestiaryItem.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergeBestiaryPanel/View/UI/TwoMergeBestiaryPanel.lua",
+    "module": "UI.TwoMergeBestiaryPanel.View.UI.MergeBestiaryGeneratorItem",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergeBestiaryPanel/View/UI/MergeBestiaryGeneratorItem.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergeBestiaryPanel/View/UI/TwoMergeBestiaryPanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergeBestiaryPanel/View/UI/MergeBestiaryGeneratorItem.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergeBestiaryPanel/View/UI/TwoMergeBestiaryPanel.lua",
+    "module": "UI.TwoMergeBestiaryPanel.View.UI.MergeBestiaryGenerateItem",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergeBestiaryPanel/View/UI/MergeBestiaryGenerateItem.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergeBestiaryPanel/View/UI/TwoMergeBestiaryPanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergeBestiaryPanel/View/UI/MergeBestiaryGenerateItem.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergeBestiaryPanel/View/UI/MergeBestiaryGeneratorItem.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergeBestiaryPanel/View/UI/MergeBestiaryGeneratorItem.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergeBestiaryPanel/View/UI/MergeBestiaryItem.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergeBestiaryPanel/View/UI/MergeBestiaryItem.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UITwoMergeBpPanel/View/UITwoMergeBpPanelMediator.lua",
+    "module": "UI.UITwoMergeBpPanel.UITwoMergeBpPanelNotificationEnum",
+    "target": "Assets/HomeLand/LuaScript/UI/UITwoMergeBpPanel/UITwoMergeBpPanelNotificationEnum.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UITwoMergeBpPanel/View/UITwoMergeBpPanelMediator.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/UITwoMergeBpPanel/UITwoMergeBpPanelNotificationEnum.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UITwoMergeBpPanel/View/UITwoMergeBpPanelMediator.lua",
+    "module": "UI.UITwoMergeBpPanel.Model.UITwoMergeBpPanelProxy",
+    "target": "Assets/HomeLand/LuaScript/UI/UITwoMergeBpPanel/Model/UITwoMergeBpPanelProxy.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UITwoMergeBpPanel/View/UITwoMergeBpPanelMediator.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/UITwoMergeBpPanel/Model/UITwoMergeBpPanelProxy.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UITwoMergeBpPanel/View/UI/UITwoMergeBpPanel.lua",
+    "module": "UI.UITwoMergeBpPanel.View.UI.Base._UITwoMergeBpPanelBase",
+    "target": "Assets/HomeLand/LuaScript/UI/UITwoMergeBpPanel/View/UI/Base/_UITwoMergeBpPanelBase.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UITwoMergeBpPanel/View/UI/UITwoMergeBpPanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/UITwoMergeBpPanel/View/UI/Base/_UITwoMergeBpPanelBase.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UITwoMergeBpPanel/View/UI/UITwoMergeBpPanel.lua",
+    "module": "UI.UITwoMergeBpPanel.View.UI.UITwoMergeBpRewardItem",
+    "target": "Assets/HomeLand/LuaScript/UI/UITwoMergeBpPanel/View/UI/UITwoMergeBpRewardItem.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UITwoMergeBpPanel/View/UI/UITwoMergeBpPanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/UITwoMergeBpPanel/View/UI/UITwoMergeBpRewardItem.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UITwoMergeTwoRatePanel/View/UITwoMergeTwoRatePanelMediator.lua",
+    "module": "UI.UITwoMergeTwoRatePanel.UITwoMergeTwoRatePanelNotificationEnum",
+    "target": "Assets/HomeLand/LuaScript/UI/UITwoMergeTwoRatePanel/UITwoMergeTwoRatePanelNotificationEnum.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UITwoMergeTwoRatePanel/View/UITwoMergeTwoRatePanelMediator.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/UITwoMergeTwoRatePanel/UITwoMergeTwoRatePanelNotificationEnum.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UITwoMergeTwoRatePanel/View/UITwoMergeTwoRatePanelMediator.lua",
+    "module": "UI.UITwoMergeTwoRatePanel.Model.UITwoMergeTwoRatePanelProxy",
+    "target": "Assets/HomeLand/LuaScript/UI/UITwoMergeTwoRatePanel/Model/UITwoMergeTwoRatePanelProxy.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UITwoMergeTwoRatePanel/View/UITwoMergeTwoRatePanelMediator.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/UITwoMergeTwoRatePanel/Model/UITwoMergeTwoRatePanelProxy.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UITwoMergeTwoRatePanel/View/UI/UITwoMergeTwoRatePanel.lua",
+    "module": "UI.UITwoMergeTwoRatePanel.View.UI.Base._UITwoMergeTwoRatePanelBase",
+    "target": "Assets/HomeLand/LuaScript/UI/UITwoMergeTwoRatePanel/View/UI/Base/_UITwoMergeTwoRatePanelBase.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UITwoMergeTwoRatePanel/View/UI/UITwoMergeTwoRatePanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/UITwoMergeTwoRatePanel/View/UI/Base/_UITwoMergeTwoRatePanelBase.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergeBagPanel/View/TwoMergeBagPanelMediator.lua",
+    "module": "UI.TwoMergeBagPanel.TwoMergeBagPanelNotificationEnum",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergeBagPanel/TwoMergeBagPanelNotificationEnum.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergeBagPanel/View/TwoMergeBagPanelMediator.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergeBagPanel/TwoMergeBagPanelNotificationEnum.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergeBagPanel/View/TwoMergeBagPanelMediator.lua",
+    "module": "UI.TwoMergeBagPanel.Model.TwoMergeBagPanelProxy",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergeBagPanel/Model/TwoMergeBagPanelProxy.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergeBagPanel/View/TwoMergeBagPanelMediator.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergeBagPanel/Model/TwoMergeBagPanelProxy.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergeBagPanel/View/UI/TwoMergeBagPanel.lua",
+    "module": "UI.TwoMergeBagPanel.View.UI.Base._TwoMergeBagPanelBase",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergeBagPanel/View/UI/Base/_TwoMergeBagPanelBase.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergeBagPanel/View/UI/TwoMergeBagPanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergeBagPanel/View/UI/Base/_TwoMergeBagPanelBase.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergeBagPanel/View/UI/TwoMergeBagPanel.lua",
+    "module": "UI.TwoMergeBagPanel.View.UI.TwoMergeBagGridItem",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergeBagPanel/View/UI/TwoMergeBagGridItem.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergeBagPanel/View/UI/TwoMergeBagPanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergeBagPanel/View/UI/TwoMergeBagGridItem.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergeBagPanel/View/UI/TwoMergeBagGridItem.lua",
+    "module": "UI.TwoMergeBagPanel.View.UI.TwoMergeBagMergeItem",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergeBagPanel/View/UI/TwoMergeBagMergeItem.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergeBagPanel/View/UI/TwoMergeBagGridItem.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergeBagPanel/View/UI/TwoMergeBagMergeItem.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/TwoMergePanelMediator.lua",
+    "module": "UI.TwoMergePanel.TwoMergePanelNotificationEnum",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/TwoMergePanelNotificationEnum.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/TwoMergePanelMediator.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergePanel/TwoMergePanelNotificationEnum.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/TwoMergePanelMediator.lua",
+    "module": "UI.TwoMergePanel.Model.TwoMergePanelProxy",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/Model/TwoMergePanelProxy.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/TwoMergePanelMediator.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergePanel/Model/TwoMergePanelProxy.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergeTipItem.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergeTipItem.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergeCurrencyItem_Alpha.lua",
+    "module": "UI.TwoMergePanel.View.UI.TwoMergeCurrencyItem",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergeCurrencyItem.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergeCurrencyItem_Alpha.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergeCurrencyItem.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergeCurrencyItemEnergy.lua",
+    "module": "UI.TwoMergePanel.View.UI.TwoMergeCurrencyItem",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergeCurrencyItem.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergeCurrencyItemEnergy.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergeCurrencyItem.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergeCurrencyItemEnergy.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergeConfigUtil",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergeCurrencyItemEnergy.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergeBpEntrance.lua",
+    "module": "UI.Components.BaseIconButton",
+    "target": "Assets/HomeLand/LuaScript/UI/Components/BaseIconButton.lua",
+    "core": false,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergeBpEntrance.lua",
+    "package_target": "Assets/MergeTwo/Reference/Lua/UI/Components/BaseIconButton.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergeBpEntrance.lua",
+    "module": "Game.TwoMerge.Logic.TutorialLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TutorialLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergeBpEntrance.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TutorialLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "module": "UI.TwoMergePanel.View.UI.Base._TwoMergePanelBase",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/Base/_TwoMergePanelBase.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/Base/_TwoMergePanelBase.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "module": "UI.TwoMergePanel.View.UI.TwoMergeTipItem",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergeTipItem.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergeTipItem.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "module": "Game.TwoMerge.Logic.TwoMergeJumpLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TwoMergeJumpLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TwoMergeJumpLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "module": "Game.TwoMerge.Logic.TutorialLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TutorialLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TutorialLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergeConfigUtil",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "module": "UI.TwoMergePanel.View.UI.ArticleInfo.SelectArticleInfo",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/ArticleInfo/SelectArticleInfo.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/ArticleInfo/SelectArticleInfo.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "module": "UI.TwoMergePanel.View.UI.Order.TwoMergeOrderInfo",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderInfo.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderInfo.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "module": "UI.TwoMergePanel.View.UI.TwoMergeCurrencyItem",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergeCurrencyItem.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergeCurrencyItem.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "module": "UI.TwoMergePanel.View.UI.TwoMergeCurrencyItem_Alpha",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergeCurrencyItem_Alpha.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergeCurrencyItem_Alpha.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "module": "UI.TwoMergePanel.View.UI.TwoMergeCurrencyItemEnergy",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergeCurrencyItemEnergy.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergeCurrencyItemEnergy.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "module": "UI.TwoMergePanel.View.UI.TwoMergeTutorialItem",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergeTutorialItem.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergeTutorialItem.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "module": "UI.TwoMergePanel.View.UI.TwoMergePanelContinuousItem",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergePanelContinuousItem.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergePanelContinuousItem.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "module": "UI.TwoMergePanel.View.UI.TwoMergeBpEntrance",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergeBpEntrance.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergeBpEntrance.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "module": "Game.TwoMerge.Logic.PromptMergeLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/PromptMergeLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergePanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/PromptMergeLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergePanelContinuousItem.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergePanelContinuousItem.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergePanelContinuousItem.lua",
+    "module": "Game.TwoMerge.Logic.TutorialLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TutorialLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergePanelContinuousItem.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TutorialLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergeTutorialItem.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergeTutorialItem.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/TwoMergeCurrencyItem.lua",
+    "module": "Game.TwoMerge.Logic.TutorialLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TutorialLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/TwoMergeCurrencyItem.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TutorialLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderInfo.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderInfo.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderInfo.lua",
+    "module": "UI.TwoMergePanel.View.UI.Order.TwoMergeOrderItem",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderItem.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderInfo.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderItem.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderInfo.lua",
+    "module": "UI.TwoMergePanel.View.UI.Order.TwoMergeSubOrderAnimation",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/Order/TwoMergeSubOrderAnimation.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderInfo.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/Order/TwoMergeSubOrderAnimation.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderInfo.lua",
+    "module": "UI.TwoMergePanel.View.UI.Order.TwoMergeOrderItemPosition",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderItemPosition.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderInfo.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderItemPosition.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderItemPosition.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderItemPosition.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/Order/TwoMergeSubOrderAnimation.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/Order/TwoMergeSubOrderAnimation.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/Order/TwoMergeSubOrderAnimation.lua",
+    "module": "System.Core.BezierCurve",
+    "target": "Assets/HomeLand/LuaScript/System/Core/BezierCurve.lua",
+    "core": false,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/Order/TwoMergeSubOrderAnimation.lua",
+    "package_target": "Assets/MergeTwo/Reference/Lua/System/Core/BezierCurve.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderNeedItem.lua",
+    "module": "Game.TwoMerge.Logic.TutorialLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TutorialLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderNeedItem.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TutorialLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderItem.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderItem.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderItem.lua",
+    "module": "UI.TwoMergePanel.View.UI.Order.TwoMergeOrderNeedItem",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderNeedItem.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderItem.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderNeedItem.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderItem.lua",
+    "module": "UI.TwoMergePanel.View.UI.Order.TwoMergeSubOrderAnimation",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/Order/TwoMergeSubOrderAnimation.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderItem.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/Order/TwoMergeSubOrderAnimation.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderItem.lua",
+    "module": "UI.TwoMergePanel.View.UI.Order.TwoMergeOrderItemPosition",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderItemPosition.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderItem.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderItemPosition.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderItem.lua",
+    "module": "Game.TwoMerge.Logic.TutorialLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TutorialLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/Order/TwoMergeOrderItem.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TutorialLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/ArticleInfo/ArticleBubble.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/ArticleInfo/ArticleBubble.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/ArticleInfo/SelectArticleInfo.lua",
+    "module": "UI.TwoMergePanel.View.UI.ArticleInfo.ArticleNull",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/ArticleInfo/ArticleNull.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/ArticleInfo/SelectArticleInfo.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/ArticleInfo/ArticleNull.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/ArticleInfo/SelectArticleInfo.lua",
+    "module": "UI.TwoMergePanel.View.UI.ArticleInfo.ArticleDeepLock",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/ArticleInfo/ArticleDeepLock.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/ArticleInfo/SelectArticleInfo.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/ArticleInfo/ArticleDeepLock.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/ArticleInfo/SelectArticleInfo.lua",
+    "module": "UI.TwoMergePanel.View.UI.ArticleInfo.ArticleLock",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/ArticleInfo/ArticleLock.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/ArticleInfo/SelectArticleInfo.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/ArticleInfo/ArticleLock.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/ArticleInfo/SelectArticleInfo.lua",
+    "module": "UI.TwoMergePanel.View.UI.ArticleInfo.ArticleUnlock",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/ArticleInfo/ArticleUnlock.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/ArticleInfo/SelectArticleInfo.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/ArticleInfo/ArticleUnlock.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/ArticleInfo/SelectArticleInfo.lua",
+    "module": "UI.TwoMergePanel.View.UI.ArticleInfo.ArticleBubble",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/ArticleInfo/ArticleBubble.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/ArticleInfo/SelectArticleInfo.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/ArticleInfo/ArticleBubble.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/ArticleInfo/SelectArticleInfo.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/ArticleInfo/SelectArticleInfo.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/ArticleInfo/SelectArticleInfo.lua",
+    "module": "Game.TwoMerge.Logic.UndoLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/UndoLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/ArticleInfo/SelectArticleInfo.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/UndoLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/ArticleInfo/SelectArticleInfo.lua",
+    "module": "Game.TwoMerge.Logic.OperationLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/OperationLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/ArticleInfo/SelectArticleInfo.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/OperationLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/ArticleInfo/SelectArticleInfo.lua",
+    "module": "Game.TwoMerge.Logic.GenerateLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/GenerateLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/ArticleInfo/SelectArticleInfo.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/GenerateLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/ArticleInfo/SelectArticleInfo.lua",
+    "module": "Game.TwoMerge.Logic.TutorialLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/TutorialLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/ArticleInfo/SelectArticleInfo.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/TutorialLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/ArticleInfo/SelectArticleInfo.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergeUtil",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeUtil.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/ArticleInfo/SelectArticleInfo.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeUtil.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/ArticleInfo/ArticleUnlock.lua",
+    "module": "Game.TwoMerge.Config.TwoMergeConfig",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Config/TwoMergeConfig.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/ArticleInfo/ArticleUnlock.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Config/TwoMergeConfig.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/ArticleInfo/ArticleUnlock.lua",
+    "module": "Game.TwoMerge.Logic.GenerateLogic",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/Logic/GenerateLogic.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/ArticleInfo/ArticleUnlock.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/Logic/GenerateLogic.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergePanel/View/UI/ArticleInfo/ArticleUnlock.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergeConfigUtil",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergePanel/View/UI/ArticleInfo/ArticleUnlock.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeConfigUtil.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergeShopPanel/View/UITwoMergeShopPanelMediator.lua",
+    "module": "UI.TwoMergeShopPanel.UITwoMergeShopPanelNotificationEnum",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergeShopPanel/UITwoMergeShopPanelNotificationEnum.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergeShopPanel/View/UITwoMergeShopPanelMediator.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergeShopPanel/UITwoMergeShopPanelNotificationEnum.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergeShopPanel/View/UITwoMergeShopPanelMediator.lua",
+    "module": "UI.TwoMergeShopPanel.Model.UITwoMergeShopPanelProxy",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergeShopPanel/Model/UITwoMergeShopPanelProxy.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergeShopPanel/View/UITwoMergeShopPanelMediator.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergeShopPanel/Model/UITwoMergeShopPanelProxy.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergeShopPanel/View/UI/UITwoMergeShopCurrencyItem.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergeUtil",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeUtil.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergeShopPanel/View/UI/UITwoMergeShopCurrencyItem.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeUtil.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergeShopPanel/View/UI/UITwoMergeShopPanel.lua",
+    "module": "UI.TwoMergeShopPanel.View.UI.Base._UITwoMergeShopPanelBase",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergeShopPanel/View/UI/Base/_UITwoMergeShopPanelBase.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergeShopPanel/View/UI/UITwoMergeShopPanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergeShopPanel/View/UI/Base/_UITwoMergeShopPanelBase.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergeShopPanel/View/UI/UITwoMergeShopPanel.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergeUtil",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeUtil.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergeShopPanel/View/UI/UITwoMergeShopPanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeUtil.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergeShopPanel/View/UI/UITwoMergeShopPanel.lua",
+    "module": "UI.TwoMergeShopPanel.View.UI.UITwoMergeShopCurrencyItem",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergeShopPanel/View/UI/UITwoMergeShopCurrencyItem.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergeShopPanel/View/UI/UITwoMergeShopPanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergeShopPanel/View/UI/UITwoMergeShopCurrencyItem.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/TwoMergeShopPanel/View/UI/UITwoMergeShopPanel.lua",
+    "module": "UI.TwoMergeShopPanel.View.UI.UITwoMergeShopInfoItem",
+    "target": "Assets/HomeLand/LuaScript/UI/TwoMergeShopPanel/View/UI/UITwoMergeShopInfoItem.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/TwoMergeShopPanel/View/UI/UITwoMergeShopPanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/TwoMergeShopPanel/View/UI/UITwoMergeShopInfoItem.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UITwoMergeClonItemPanel/View/UITwoMergeClonItemPanelMediator.lua",
+    "module": "UI.UITwoMergeClonItemPanel.UITwoMergeClonItemPanelNotificationEnum",
+    "target": "Assets/HomeLand/LuaScript/UI/UITwoMergeClonItemPanel/UITwoMergeClonItemPanelNotificationEnum.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UITwoMergeClonItemPanel/View/UITwoMergeClonItemPanelMediator.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/UITwoMergeClonItemPanel/UITwoMergeClonItemPanelNotificationEnum.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UITwoMergeClonItemPanel/View/UITwoMergeClonItemPanelMediator.lua",
+    "module": "UI.UITwoMergeClonItemPanel.Model.UITwoMergeClonItemPanelProxy",
+    "target": "Assets/HomeLand/LuaScript/UI/UITwoMergeClonItemPanel/Model/UITwoMergeClonItemPanelProxy.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UITwoMergeClonItemPanel/View/UITwoMergeClonItemPanelMediator.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/UITwoMergeClonItemPanel/Model/UITwoMergeClonItemPanelProxy.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UITwoMergeClonItemPanel/View/UI/UITwoMergeClonItemPanel.lua",
+    "module": "UI.UITwoMergeClonItemPanel.View.UI.Base._UITwoMergeClonItemPanelBase",
+    "target": "Assets/HomeLand/LuaScript/UI/UITwoMergeClonItemPanel/View/UI/Base/_UITwoMergeClonItemPanelBase.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UITwoMergeClonItemPanel/View/UI/UITwoMergeClonItemPanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/UI/UITwoMergeClonItemPanel/View/UI/Base/_UITwoMergeClonItemPanelBase.lua"
+  },
+  {
+    "source": "Assets/HomeLand/LuaScript/UI/UITwoMergeClonItemPanel/View/UI/UITwoMergeClonItemPanel.lua",
+    "module": "Game.TwoMerge.MergeUtil.MergeUtil",
+    "target": "Assets/HomeLand/LuaScript/Game/TwoMerge/MergeUtil/MergeUtil.lua",
+    "core": true,
+    "package_source": "Assets/MergeTwo/Lua/UI/UITwoMergeClonItemPanel/View/UI/UITwoMergeClonItemPanel.lua",
+    "package_target": "Assets/MergeTwo/Lua/Game/TwoMerge/MergeUtil/MergeUtil.lua"
+  }
+]

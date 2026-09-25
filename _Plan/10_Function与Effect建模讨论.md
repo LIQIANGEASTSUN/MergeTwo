@@ -1,8 +1,8 @@
 # Function、Effect 与 State 的建模讨论
 
-本轮讨论稿，2026-09-23。用户希望评估并尝试为 Entity 引入效果；尚未确认具体实现，更没有确认删除所有状态。建议采用 **Function 表达行为实现，Effect 表达可附加的玩法影响，State 保存必要运行事实与互斥阶段**。本页不新增玩法功能或运行代码。
+专题始于 2026-09-23，迁仓复核于 2026-09-25。用户希望评估并尝试为 Entity 引入效果；尚未确认具体实现，更没有确认删除所有状态。建议采用 **Function 表达行为实现，Effect 表达可附加的玩法影响，State 保存必要运行事实与互斥阶段**。本页不新增玩法功能或运行代码。
 
-公开来源与阅读边界见 [11 外部实现调研](11_外部实现调研.md)，现有架构仍见 [02](02_架构与参考取舍.md)。这里的 Effect 指影响规则的 GameplayEffect；动画、粒子等使用 View／VFX 表达。
+公开来源与阅读边界见 [11 外部实现调研](11_外部实现调研.md)。原架构的两侧 Function、触发结果和写入阶段先读 [02a 第 4 节](02a_逻辑表现分离架构详解.md#4-function两层分别组合行为)，二合架构取舍见 [02](02_架构与参考取舍.md)。这里的 Effect 指影响规则的 GameplayEffect；动画、粒子等使用 View／VFX 表达。
 
 ## 先区分三种“状态”
 
@@ -38,16 +38,16 @@
 | 来源 | 已核对的代码事实 | 对本次建模的启发 |
 | --- | --- | --- |
 | 旧二合 | `ArticleStateBase.AddListerer` 按 `processFuncMap` 决定 Function 事件注册；浅锁仅保留 Merge，深锁为空，同时 State 类控制外观 | State 混合了权限、事件接线和显示；这部分可拆为 Effect 数据＋统一查询＋Graphic |
-| 当前三合 | `ElementState` 是 Normal／Locked／HungUp；`ElementEntity.TransitionState` 分发通知并管理格子关系；存在 AreaStateLockFunction 等状态处理函数 | State 与 Function 已经协作；应按业务条件、阶段、表现协调分别拆，不把 HungUp 机械改为锁 Buff |
+| 宿主三合 | `ElementState` 是 Normal／Locked／HungUp；`ElementEntity.TransitionState` 分发通知并管理格子关系；存在 AreaStateLockFunction 等状态处理函数 | State 与 Function 已经协作；应按业务条件、阶段、表现协调分别拆，不把 HungUp 机械改为锁 Buff |
 | HomeHub | `EntityLevel.State` 是关卡进度，`LevelState` 为 Locked／Current／Completed；FunctionController 负责有序触发 | 进度状态仍有意义；引入附加效果不要求移除全部业务枚举 |
-| 当前 TileV2，新增局部参考 | Logic 的 `Effect : Actor`，有独立 EffectData／EffectView；EffectData 同时含 Life、State、Position、绑定 Tile 等数据 | 现有项目已经有“Effect＋自身状态＋独立表现”的实例；这类效果也可能是棋盘机关实体，不仅是 RPG 属性 Buff |
+| 宿主 TileV2，新增局部参考 | Logic 的 `Effect : Actor`，有独立 EffectData／EffectView；EffectData 同时含 Life、State、Position、绑定 Tile 等数据 | 现有项目已经有“Effect＋自身状态＋独立表现”的实例；这类效果也可能是棋盘机关实体，不仅是 RPG 属性 Buff |
 
-路径以当前仓库根为准：
+以下分别标明本仓库与外部宿主路径，来源根见 [00](00_参考资料与证据.md)：
 
-- `Assets/MergeTwo/Lua/Game/TwoMerge/Article/State/ArticleStateBase.lua`、同目录 `ArticleStateLock.lua`、`ArticleStateDeepLock.lua`。
-- `Assets/Game/Merge/Scripts/Runtime/Logic/Entities/Entity/Element/ElementState.cs`、`ElementEntity.cs`；`Function/Factory/FunctionController.cs` 位于同一 `Entities/` 下。
+- `参考项目/FA/实现/Lua/Game/TwoMerge/Article/State/ArticleStateBase.lua`、同目录 `ArticleStateLock.lua`、`ArticleStateDeepLock.lua`。
+- `/Users/betta/Company/Projects/meatloaf_client/client/Assets/Game/Merge/Scripts/Runtime/Logic/Entities/Entity/Element/ElementState.cs`、`ElementEntity.cs`；`Function/Factory/FunctionController.cs` 位于同一 `Entities/` 下。
 - H 根为 `/Users/betta/Company/Projects/TileScape/Assets/Module/HomeHub/HomeScene/Scripts/`，关注 `Logic/Entity/Level/EntityLevel.cs`、`Define/LevelState.cs`、`Logic/Entity/Function/FunctionController.cs`。
-- `Assets/Game/TileV2/Scripts/GameCore/Logic/GameLogic/Entity/Effect.cs`、`Data/EffectData.cs`（相对同一 `GameLogic/`）；`Assets/Game/TileV2/Scripts/Config/Effect/EffectConfig.cs`、`EffectState.cs`；`Assets/Game/TileV2/Scripts/GameCore/View/GameView/Views/TileEffect/EffectBase.cs`。
+- `/Users/betta/Company/Projects/meatloaf_client/client/Assets/Game/TileV2/Scripts/GameCore/Logic/GameLogic/Entity/Effect.cs`、`Data/EffectData.cs`（相对同一 `GameLogic/`）；`/Users/betta/Company/Projects/meatloaf_client/client/Assets/Game/TileV2/Scripts/Config/Effect/EffectConfig.cs`、`EffectState.cs`；`/Users/betta/Company/Projects/meatloaf_client/client/Assets/Game/TileV2/Scripts/GameCore/View/GameView/Views/TileEffect/EffectBase.cs`。
 
 TileV2 这里只作概念对照：没有完成整个 ECA、攻击传播和表现时序审计，也不建议搬入整套机制。其 EffectData 已含显示协调数据，不能直接当作新二合的纯领域 DTO。
 
@@ -73,15 +73,7 @@ TileV2 这里只作概念对照：没有完成整个 ECA、攻击传播和表现
 
 建议至少按当前需求区分 Select、Drag、MergeAsSource、MergeAsTarget、Activate、Remove 等意图。仓库接入时再加 Store，不预列几十个未使用权限。
 
-| 附加条件 | 选中 | 主动拖动／作为源 | 作为合成目标 | 生成／使用 | 售出／删除 |
-| --- | --- | --- | --- | --- | --- |
-| 无阻止效果 | 按物品能力 | 按物品能力 | 按合成规则 | 按配置、次数、费用 | 按价格与保护规则 |
-| 浅锁 | 允许 | 禁止 | 允许同 ID 等合法合成 | 禁止 | 禁止 |
-| 深锁 | 禁止 | 禁止 | 禁止 | 禁止 | 禁止 |
-| 气泡 | 允许 | 移动策略仍待 Q06 | 禁止普通合成 | 专用气泡处理 | 专用规则 |
-| 冰冻示例 | 由该机制定义 | 可禁止 | 可禁止 | 可禁止 | 由该机制定义 |
-
-浅锁的“允许目标”表示它不阻止这一路径，不表示越过其它限制。若同一目标还有会禁止合成的冰冻，最终仍应拒绝。
+各业务状态的权限只维护在 [04 的权限矩阵](04_棋盘交互与合成.md#锁与能力矩阵建议)，不在这里复制另一张表。浅锁不阻止合法目标合成，不表示它能越过其它限制；若同一目标还存在禁止合成的冰冻，最终仍应拒绝。冰冻只作组合示例。
 
 候选查询过程：
 
@@ -113,7 +105,7 @@ EvaluateIntent(意图, 源实例, 目标实例, 源格, 目标格)
 | --- | --- | --- | --- |
 | 维持少量 State＋Function | 最少代码，互斥规则直接 | 多种独立状态组合时条件与枚举膨胀 | 机制很少且确定互斥时仍合理 |
 | **Function＋独立 Effect 数据与规则处理** | 身份／叠加／存档与行为实现各有归属；权限统一查询 | 需要小型效果集合和求解约定 | **本次推荐试验方向** |
-| Effect 直接继承 EntityFunctionBase | 复用已有注册、触发、释放代码 | FunctionType 与 EffectInstanceId 不同；当前三合同类型 Function 去重，难以直接容纳多个来源和多份效果；也易出现两套顺序 | 只有证明生命周期和实例规则完全一致才采用 |
+| Effect 直接继承 EntityFunctionBase | 复用已有注册、触发、释放代码 | FunctionType 与 EffectInstanceId 不同；宿主三合同类型 Function 去重，难以直接容纳多个来源和多份效果；也易出现两套顺序 | 只有证明生命周期和实例规则完全一致才采用 |
 
 推荐方案不要求两套庞大的管理框架。Entity 可以直接拥有 Effects 集合与少量 EffectRules；如果现有装配必须通过 Function，可用一个 EffectHostFunction 做接入，具体效果不要重复注册成多个普通合成消费者。
 
@@ -121,7 +113,7 @@ EffectDefinition 描述只读规则；EffectInstance 保存该次附加数据；
 
 ## 最小数据与写入边界
 
-候选实例字段：EffectInstanceId、DefinitionId、HostKind／HostId、该类型的专用数据。期限、层数、来源只在机制确实需要时添加；不创建万能字符串参数字典。
+最小效果数据可先内嵌在 Cell／Item 下：DefinitionId 与该类型专用数据即可，宿主由容器确定。只有需要同类型多份、外部精确引用或独立生命周期时才加 EffectInstanceId；不要在内嵌记录中重复保存一套可写 HostId。期限、层数、来源按机制添加，不创建万能字符串参数字典。
 
 例如 LockEffect 可以有 Deep／Shallow 阶段，或以配置定义替换表达阶段；BubbleEffect 有截止时间与替换规则。效果里保留局部阶段没有问题，避免恢复旧的“整个物品只能处于一个状态”。
 
@@ -144,7 +136,8 @@ flowchart LR
     Command[玩家或时间命令] --> Rules[Function 与业务规则求解]
     Effects[Item 与 Cell 的效果数据] --> Rules
     Rules --> Plan[完整变化方案]
-    Plan --> Apply[Operation.Apply]
+    Plan --> Record[一次登记完整业务 Operation]
+    Record --> Apply[Operation.Apply]
     Apply --> State[物品 地格 效果状态]
     Apply --> Profile[完整成功后发布 Profile]
     Profile --> Graphic[View 与效果表现]
@@ -152,7 +145,7 @@ flowchart LR
 
 Effect 不另开一条可以随时写实体的回调链。预览／CanExecute 只读；效果触发先参与局部求解，结果进入 Operation；动画结束只释放表现资源。
 
-以“普通物品合成进浅锁目标”为例：统一校验源与目标 → 求解新物品、目标锁移除、四邻锁阶段变化及附加物落点 → Apply 一起提交 → 保存 → Graphic 播放。若某个效果解除后还要改变邻居，在这次规则求解中确定；不要在播放解锁动画时补发业务。
+以“普通物品合成进浅锁目标”为例：统一校验源与目标 → 求解新物品、目标锁移除、四邻锁阶段变化及附加物落点 → Apply 完成 → 发布 Profile 快照 → Graphic 播放（实际落盘另行跟踪）。若某个效果解除后还要改变邻居，在这次规则求解中确定；不要在播放解锁动画时补发业务。
 
 以后真有炸弹连锁时，再使用局部有序工作队列、同次去重和终止约束处理派生变化；不改变全局 Command FIFO。当前只做锁时无需预建通用反应引擎。若配置会无限触发，应在 Apply 前诊断并拒绝该变化，不能提交半个连锁后静默截断。
 
@@ -167,11 +160,4 @@ Effect 不另开一条可以随时写实体的回调链。预览／CanExecute �
 
 63 格、每对象少量效果时，按参与对象遍历效果即可，复杂度约为 O(参与对象数×每对象效果数)。先保持直接可读，不先加全盘每帧 Tick、通用标签语言或全量属性聚合。
 
-## 实现顺序建议
-
-1. **Step 1：确认概念与宿主表。** 先决定 Q11：试验独立效果组合还是保持原枚举；明确哪些锁属于 Cell、哪些属于 Item，浅锁的源／目标权限分别是什么。
-2. **Step 2：写最小规则样例。** 用普通、浅锁、深锁验证查询与解锁；冰冻仅作为第二限制的设计例子，不自动加入正式范围。先冻结允许的效果组合。
-3. **Step 3：接入一条合成链路。** 效果参与读取与求解，变化只由 Operation 提交；无 Graphic 时同样完成。核对与 02 的提交／失败语义兼容。
-4. **Step 4：验证实例和 Profile。** 检查移动跟随、地块效果不跟随、合成效果去向、售出恢复、存档重开；移除一个限制不能解除另一个限制。
-5. **Step 5：补效果表现与时间。** 完成添加、变化、移除、取消和旧回调隔离，再加入气泡到期；继续使用逻辑时钟和唯一持久权威。
-6. **Step 6：确认后同步主方案。** 更新 03／04 的具体字段和矩阵；若替换枚举，移除重复可写状态。新增更多机关时逐个论证 Entity、Function、Effect 的归属，不先铺完整 RPG Buff 框架。
+Q11 的选型与待决规则集中在 [09](09_决策与接续记录.md)，实现和验证顺序见 [08](08_实现顺序与验证.md)。允许先用少量直接规则验证锁效果，无需先实现完整 Buff 管理器。

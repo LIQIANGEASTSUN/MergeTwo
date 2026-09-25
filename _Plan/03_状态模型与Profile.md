@@ -1,8 +1,8 @@
 # 状态模型与 Profile
 
-用户确认使用当前项目 Profile。建议由二合 Logic 持有唯一活动状态，ProfileAdapter 在完整成功边界发布深复制的持久快照。Profile 是恢复依据，不由 UI 与 Logic 同时修改同一组活动对象。
+D02 的 Profile 指外部宿主 meatloaf_client/client 的基础设施，实际路径见 [00](00_参考资料与证据.md)。建议由二合 Logic 持有唯一活动状态，ProfileAdapter 在完整成功边界发布深复制的持久快照。Profile 是恢复依据，不由 UI 与 Logic 同时修改同一组活动对象。
 
-**Effect 讨论更新**：见 [10](10_Function与Effect建模讨论.md)。本文下方的 CellLock／ItemAccessState 是初稿候选表达。若 Q11 选择效果组合，锁／气泡将映射为对应宿主的效果实例，原枚举只可保留只读派生或导入映射；不能和效果同时成为可写权威。物品位置、生成次数、期限和互斥业务阶段仍需状态数据。具体替换尚未定稿。
+**表示选型尚待 Q11**：Function、Effect 与 State 的概念取舍见 [10](10_Function与Effect建模讨论.md)。本文先列共同数据，再列互斥的两种表示；业务权限统一见 [04](04_棋盘交互与合成.md)。
 
 ## 身份与位置
 
@@ -53,8 +53,8 @@ R 明确：第二次点击选中物才执行生成／使用；选中的过期气
 ```text
 BoardState
   DefinitionId, InstanceKey, SchemaVersion, RulesConfigVersion
-  Cells[CellCoord] -> CellState(LockState, OccupantItemId, optional RegionId)
-  Items[ItemInstanceId] -> ItemState(ConfigId, Location, AccessState, specialized data)
+  Cells[CellCoord] -> CellData(OccupantItemId, optional RegionId, CellRestrictions)
+  Items[ItemInstanceId] -> ItemData(ConfigId, Location, ItemRestrictions, specialized data)
   NextItemInstanceId
   EconomyState
   RandomState（若采用实例随机源）
@@ -64,15 +64,20 @@ InteractionState
   RemovalUndoRecord?
 ```
 
-`CellLock` 表示地格解锁进度；`ItemAccessState` 表示物品自身普通／浅锁／深锁／气泡。两者不能简单折叠，因为 R 有“生成的物品带锁”，未必改变该格的永久解锁进度。可通过统一能力查询组合限制，避免到处分别判断两个枚举。
+`CellRestrictions`／`ItemRestrictions` 是本文的概念占位，不要求创建额外框架或具体类。锁的宿主按语义决定：地格进度留在 Cell，随物品存在的限制归 Item；R 的带锁产物并未自动确定是否还改变地格进度，仍需 Q11／C06 裁定。
 
-首期只允许旧数据导入器产生受支持的组合；不要把“所有枚举笛卡尔积”都当合法。例如解锁格内气泡可以存在，深锁格内可操作物品不能因 ItemAccessState 为普通而绕过格子限制。具体归一化矩阵在 M0 冻结。
+| 候选表示，只选一种 | Cell 上 | Item 上 |
+| --- | --- | --- |
+| 少量枚举与专用数据 | CellLock | ItemAccessState 与气泡期限等专用数据 |
+| 推荐试验的效果组合 | CellEffects，例如地格锁 | ItemEffects，例如物品锁／气泡，专用期限存在该效果中 |
+
+同一个锁只导入一个权威位置；选择效果后，枚举只能作导入值或只读派生值。生成器次数、轮次和计时仍是自身业务数据，不因引入效果而再复制一份。首期只接受样例和导入规则明确支持的组合，不开放任意 Cell×Item 状态组合；普通物品不能绕过格子限制。
 
 ## 核心不变量
 
 1. 每格最多一个活跃物品；棋盘内物品的 Location 与格子 OccupantItemId 双向一致。
 2. 同一持久物品只能在棋盘、仓库等一个实际容器中。待领取奖励条目与已生成 ItemInstance 不能重复计数。
-3. 被合成／使用／删除的物品立即退出活跃查询；退场 View 和退役凭据不计库存。
+3. 被合成／使用／删除的物品立即退出活跃查询；退场 View 和退役凭据不计库存。恢复撤销可重用原持久 ItemInstanceId，但必须分配新的运行期绑定版本；SessionGeneration 只隔离重建会话，不能单独隔离同一会话内的删除→恢复。NextItemInstanceId 不因撤销而倒退。
 4. 生成器本轮次数、游标与轮次对应配置范围；时间单位统一，paused 与 running 状态不同时生效。
 5. 任何业务拒绝都不扣费、不消耗次数、不丢物品。若选择可控随机源，拒绝也不推进其状态。
 6. 撤销只恢复该次移除的完整实例，不撤销期间其它物品的操作，不覆盖已占用原格。
@@ -87,16 +92,28 @@ InteractionState
 
 推荐第二种。活动状态和存档投影的用途不同，不允许两边各自演进；加载方向是 Profile → Logic，运行方向是 Logic → 新快照，View 永远不参与反写。
 
-P.ProfileHub 已有后台序列化、版本重试、文件持久化和生命周期保存路径，但这**不是棋盘／钱包跨系统事务**。`MarkProfileChanged` 只是变更追踪；`SaveToLocal()` 返回也不代表所有异步保存已持久落盘。
+P.ProfileHub 已有后台序列化、文件持久化和生命周期保存路径，但这**不是棋盘／钱包跨系统事务**。当前 `SaveToLocal(bool persistence = false, ...)` 返回 void：默认路径可排队保存，显式持久化路径也在内部捕获错误；不能只凭“调用返回”判断落盘成功。实际入口见 00。
 
 建议 `ProfileMergeTwo` 具有 SchemaVersion 和一个已提交状态载荷；该载荷完整构建后替换，发布后不再原地修改嵌套集合。具体使用生成的 Profile DTO 还是稳定序列化载荷，应先核对现有生成工具支持、热更注册与序列化约定，不在设计稿中虚构不存在的自动事务 API。
 
 若二合正式使用宿主余额，不能靠两个独立 Profile setter 宣称崩溃原子性。届时明确宿主同步结算、失败恢复和完整保存边界；M1 推荐二合专用测试余额，避免把真实全局经济接入混进架构验证。
 
+## 发布与落盘分开处理
+
+| 阶段 | 本方案所说的成功 | 失败处理 |
+| --- | --- | --- |
+| 业务求解／Apply | 完整业务操作已执行且不变量成立 | 正常拒绝无副作用；异常写入可能不完整，关闭实例 |
+| 快照构建／发布 | 独立载荷构建完并交给 Profile；发布后不再修改 | 保留上一份确认快照，关闭写入口，不播放本次成功表现 |
+| 宿主实际落盘 | 保存系统确认相应版本已持久化 | 不自动撤回已发布逻辑，不重放业务；明确报告／重试保存 |
+
+发布中途报错且结果不明时先停写；恢复前核对实际发布／持久化版本，不能直接用旧快照覆盖可能已经保存的新结果。
+
+当前设计不承诺每次点击后立即抗进程崩溃。M1 应明确关闭时的持久化请求、成功／失败可观测方式和重开验证；“同一进程从 Profile 对象重建”与“清除内存、从磁盘恢复”是两项测试。若要求每次操作都耐久提交，需要另定宿主保存协议，不靠增加快照复制解决。
+
 ## 保存与恢复
 
 ```text
-成功的全部 Apply
+完整业务操作的全部 Apply 成功
 → 检查本次受影响的不变量
 → 创建新的完整持久快照并发布到 Profile
 → Graphic 播放
@@ -122,10 +139,4 @@ P.ProfileHub 已有后台序列化、版本重试、文件持久化和生命周�
 
 不需要为所有 Operation 添加 Revert，不建立通用历史栈，也不按动画倒放实现撤销。
 
-## 实现顺序建议
-
-1. **Step 1：定义状态表和合法组合。** 冻结持久 ID、锁、时间、选择与撤销的归属；给每个字段指定唯一写入者。
-2. **Step 2：打通 Profile 注册与样例往返。** 确认生成源／注册路径，以新存档键保存一个棋盘；验证旧账号没有该字段时可初始化，不改 ProfileMerge。
-3. **Step 3：接入完整提交边界。** 发布后不再修改快照；注入表现失败验证存档仍正确，注入 Apply 失败验证没有发布半成品并关闭实例。
-4. **Step 4：加入时间和有限撤销。** 分别验证生成器、气泡与删除恢复，不把运行时交互写入长期 Profile。
-5. **Step 5：扩展容器与版本。** M3 加仓库／待领取队列时更新不变量、结构版本与迁移方案，保持一个活动状态拥有者。
+实施与验收见 [08](08_实现顺序与验证.md)；本页维护数据归属和恢复协议，不另建实施步骤。

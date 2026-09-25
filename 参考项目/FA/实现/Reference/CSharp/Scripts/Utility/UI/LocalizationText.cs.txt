@@ -1,0 +1,31 @@
+﻿using UnityEngine;
+using UnityEngine.UI;
+
+namespace BetaGame
+{
+    public class LocalizationText : Text
+    {
+        [HideInInspector]
+        public string keyString;
+
+        protected override void Awake()
+        {
+            base.Awake();
+
+            SetText( keyString );
+        }
+
+        public void SetText( string key )
+        {
+            if( string.IsNullOrEmpty( key ) )
+            {
+                keyString = "";
+            }
+            else
+            {
+                keyString = key;
+                this.text = Localization.Instance.GetText( keyString );
+            }
+        }
+    }
+}

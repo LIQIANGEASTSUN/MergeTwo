@@ -1,0 +1,22 @@
+﻿using UnityEngine;
+using UnityEngine.UI;
+
+namespace nfa
+{
+    public class UIContentTrack : MonoBehaviour
+    {
+        public Transform Target;
+        public bool TrackX = true;
+        public bool TrackY = false;
+
+        private Vector3 temp;
+        private void LateUpdate()
+        {
+            temp = transform.position;
+            if(TrackX) temp.x = Target.position.x;
+            if(TrackY) temp.y = Target.position.y;
+            transform.position = temp;
+
+        }
+    }
+}

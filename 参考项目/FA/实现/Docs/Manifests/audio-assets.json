@@ -1,0 +1,32 @@
+[
+  {
+    "key": "audio_bubble",
+    "source": "Assets/HomeLand/Prefab/Audio/Interface/audio_bubble.mp3",
+    "path": "Assets/MergeTwo/Reference/SharedAssets/HomeLand/Prefab/Audio/Interface/audio_bubble.mp3"
+  },
+  {
+    "key": "audio_merge",
+    "source": "Assets/HomeLand/Prefab/Audio/Interface/audio_merge.mp3",
+    "path": "Assets/MergeTwo/Reference/SharedAssets/HomeLand/Prefab/Audio/Interface/audio_merge.mp3"
+  },
+  {
+    "key": "block_revoke",
+    "source": "Assets/HomeLand/Prefab/Audio/Interface/block_revoke.mp3",
+    "path": "Assets/MergeTwo/Reference/SharedAssets/HomeLand/Prefab/Audio/Interface/block_revoke.mp3"
+  },
+  {
+    "key": "good",
+    "source": "Assets/HomeLand/Prefab/Audio/Interface/good.mp3",
+    "path": "Assets/MergeTwo/Reference/SharedAssets/HomeLand/Prefab/Audio/Interface/good.mp3"
+  },
+  {
+    "key": "great",
+    "source": "Assets/HomeLand/Prefab/Audio/Interface/great.mp3",
+    "path": "Assets/MergeTwo/Reference/SharedAssets/HomeLand/Prefab/Audio/Interface/great.mp3"
+  },
+  {
+    "key": "Interface_sound_acquire_coins",
+    "source": "Assets/HomeLand/Prefab/Audio/Interface/sound_acquire_coins.wav",
+    "path": "Assets/MergeTwo/Reference/SharedAssets/HomeLand/Prefab/Audio/Interface/sound_acquire_coins.wav"
+  }
+]
