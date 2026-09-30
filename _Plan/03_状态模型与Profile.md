@@ -33,7 +33,7 @@ D02 的 Profile 指外部宿主 meatloaf_client/client 的基础设施，实际�
 | Element 的 ConfigId | 元素种类配置键 | 已确认保存；不能作为某一件物品的实例身份 |
 | Tile 的 Coord | 格子自己的坐标 | 已确认保存；用于实例内查格 |
 | Element 的 Coord | 元素当前所在格子坐标 | 已确认保存；移动时改变 |
-| Tile 的 ElementId | 当前占位元素的运行 ID | 已确认仅运行时保存，恢复时重建，不进入 Tile 存档 |
+| Tile 的 ElementId | 当前占位元素的运行 InstanceId；两种称法指同一占位键 | 已确认仅运行时保存，恢复时重建，不进入 Tile 存档 |
 | EntityId | 运行 Entity／View 的身份关联 | 基础绑定候选；分配与跨存档映射待定 |
 | ElementInstanceId（候选） | 若需要跨保存引用某件元素，使用的持久身份 | 是否需要独立字段、如何与运行 ID 对应仍待讨论 |
 | InstanceKey／LayoutConfigId（候选） | 存档实例键／初始布局配置键 | 存档装配元数据，不要求重新建立 Board 对象 |
@@ -44,12 +44,14 @@ D02 的 Profile 指外部宿主 meatloaf_client/client 的基础设施，实际�
 
 ## 状态归属表
 
-标注 D13／D15 的归属已确认；其余拥有者、写入入口和保存策略沿用候选方案，不能视为本轮全部批准。
+标注 D13／D15／D24／D25 的归属已确认；其余拥有者、写入入口和保存策略沿用候选方案，不能视为本轮全部批准。
 
 | 数据 | 分类与拥有者 | 谁可写 | 是否保存 |
 | --- | --- | --- | --- |
 | 棋盘尺寸、初始格、物品规则、产出池 | ConfigSnapshot／ConfigAdapter | 导入构建时写，运行只读 | 保存兼容标识，不逐物品复制配置 |
-| Tile 坐标、配置 ID；以后归属 Tile 的业务状态 | EntityTile／Tile 自己的存档 | TileSystem 初始化；运行修改经最终确定的业务入口 | 是，D13 已确认；具体锁归属未定 |
+| Tile 坐标、配置 ID、解锁进度 | EntityTile／Tile 自己的存档；解锁进度由其 FunctionTileUnlock 管理 | 初始化／恢复；解锁业务经 FunctionTileUnlock 写入 | 是，D13／D24；Element 不保存第二份格锁进度 |
+| 地编中每格默认锁进度、默认 Element 配置 ID | 当前地图的只读地编配置，按 Tile 坐标查找 | 编辑器导出时写 | 配置数据；不复制成每个 Element 的锁存档 |
+| Element 上来自 Tile 的锁 Effect | EntityElement 的运行效果，来源为当前 EntityTile | 建立占位／改变 Tile 进度时统一同步 | **否，由 Tile 进度与占位关系重建**，D25 |
 | Element 坐标、配置 ID 与自身业务数据 | EntityElement／Element 自己的存档 | ElementSystem 初始化；运行修改经最终确定的业务入口 | 坐标、配置 ID 已确认保存；其它数据协议待定 |
 | Tile.ElementId | EntityTile 运行数据／占位关系 | ElementSystem 与 TileSystem 统一维护 | **否，恢复元素时重建** |
 | 生成次数、冷却及项目算法所需轮次／游标 | 生成 Function 的内部字段或自有数据记录 | 生成／时间业务入口；Operation 方案仍待确认 | 需恢复的字段保存，具体载体待定；不另建 State 层 |
@@ -75,7 +77,7 @@ R 明确：第二次点击选中物才执行生成／使用；选中的过期气
 
 ## Function／Effect 的数据接入
 
-D22／D23 已将模块的数据导出与恢复约定收敛到 [10 第 8 节](10_Function与Effect建模讨论.md#8-保存恢复合成与移除)：Function 按稳定槽位键恢复，Effect 按每份记录恢复并重建运行身份；不保存综合权限或 View。新建与恢复分开，恢复不执行重复奖励／扣费／期限重置。已有生成类尚需按存档专题扩展，稳定字段契约不等于完整 Profile 快照与落盘协议已经确定。
+D22／D23 已将模块的数据导出与恢复约定收敛到 [10 第 8 节](10_Function与Effect建模讨论.md#8-保存恢复合成与移除)：Function 按稳定槽位键恢复，需要独立保存的 Effect 按记录恢复；D25 的 Tile 来源锁 Effect 根据 Tile 重新建立，不进入 Element 存档。两类效果均重新分配运行身份；不保存综合权限或 View。新建与恢复分开，恢复不执行重复奖励／扣费／期限重置。已有生成类尚需按存档专题扩展，稳定字段契约不等于完整 Profile 快照与落盘协议已经确定。
 
 ## Tile 与 Element 分开存档（D13 已确认）
 
@@ -85,7 +87,7 @@ D22／D23 已将模块的数据导出与恢复约定收敛到 [10 第 8 节](10_
 BettaSDK.Profile.Tile
   Pos: Position { X, Y }
   CfgId: int
-  后续归属 Tile 的业务状态（需要时扩展生成定义）
+  解锁进度（D24 已确认需要保存，需扩展生成定义）
 
 BettaSDK.Profile.Element
   Pos: Position { X, Y }
@@ -103,24 +105,51 @@ BettaSDK.Profile.Element
 
 已生成的 ProfileMergeTwo 通过 TileList／ElementList 组织两类记录；ElementList 泛型按上节核对。物理文件组织、完整快照／替换载荷、版本元数据、随机状态和持久 ID 分配器仍随 Profile 接入确定。EntityTile.ElementId 与 View 引用均不进入 Tile 存档。
 
-## 锁数据归属与表示（待讨论）
+### 可据此设计的记录内容
 
-锁归属由 [待讨论项 3](../待讨论项/3_锁的归属与分阶段解锁.md)裁定。若某事实独属于格子进度，由 Tile 自己保存；若随元素存在，由 Element 保存。**D17 已确认一级锁下没有 EntityElement，首次进入二级锁时才创建。** 此前“一级锁已创建但隐藏”的候选退出；需要创建的元素配置／初始参数从哪里取得、待揭示内容由谁保存，继续由第 3、7 项确定，不能仅凭 Tile 外观 CfgId 推定。
+下列是已有确认所需的**记录内容约定**，不是现有生成类已具备的成员，也不要求再建一个运行 State 层。字段名及具体生成结构由第 7 项映射；基础模块可先用普通值记录做导出／恢复验证。
 
-| 候选表示 | EntityTile 上 | EntityElement 上 |
+```text
+Tile 记录
+  Pos、CfgId
+  UnlockPhase：FunctionTileUnlock 导出的当前阶段
+
+Element 记录
+  Pos、CfgId
+  FunctionRecords[]：稳定槽位键、类型／配置键、该能力自身的必要数据
+  EffectRecords[]：仅保存必须独立恢复的效果及各实例必要数据
+```
+
+- Tile 的阶段只编码一次；如果放在 UnlockPhase 字段，就不再往通用 FunctionRecords 中重复放 FunctionTileUnlock 的同一阶段。恢复后仍由该 Function 唯一持有运行值，存档字段不是第二个并行修改入口。
+- Element 的 EffectRecords 明确排除 EffectTileLock；读档、克隆或撤销恢复后，按实际 Tile 重新装配它。其它效果是否需要独立保存由效果定义明确，不能统一忽略。
+- 阶段的枚举名、数字编码与版本迁移未定，不能沿用旧“深锁／浅锁”的数字 ID。类型键和 Function 槽位键的编码须稳定，不用反射顺序／列表下标代替。
+- 导出产生稳定值副本，恢复读取记录并创建新运行对象；函数引用、SourceTile、RuntimeId、EntityView 与资源句柄均不在记录中。跨保存的元素持久身份仍未被要求，当前不凭空添加 UUID。
+- 实际宿主接入先修正 ElementList 的生成定义并扩展所需字段，再验证真实落盘。只在内存记录中完成往返不算宿主保存已完成。
+
+## 锁数据归属与表示（D24／D25 已确认）
+
+**一级锁、二级锁、完全解锁统一是 Tile 的解锁进度。** EntityTile 具有解锁 Function，本文用名 FunctionTileUnlock；它管理唯一可写进度，导出到所属 Tile 的存档。EntityTile 如需暴露 Phase，只提供转发至该 Function 的只读属性，不再存一份字段。局部阶段字段或 enum 不构成独立 State 层。
+
+Element 创建并关联 Tile 后，根据 Tile 进度添加真实的运行时锁 Effect，本文用名 EffectTileLock；它属于 Element 的效果集合，只影响自己的 Owner。二级锁阶段由它限制元素操作，并由对应 EffectView 显示蜘蛛网。**此 Effect 不导出到 Element 存档，也不拥有另一份可独立修改的锁进度。** 推荐只绑定来源 Tile 的运行引用，判断时读取 FunctionTileUnlock 的只读进度；显示快照可以包含阶段副本，但不能反写逻辑。
+
+| 数据 | 唯一来源 | 重建方式 |
 | --- | --- | --- |
-| 少量字段与专用数据 | 格子锁数据 | 元素限制与气泡期限等专用数据 |
-| 效果组合 | 归属格子的效果数据 | 归属元素的效果数据 |
+| 当前解锁进度 | Tile 存档 ↔ FunctionTileUnlock 的运行数据 | 恢复 Tile 时还原；只有明确解锁业务推进 |
+| 未揭示位置的默认元素种类 | 当前地图地编配置中的默认 Element 配置 ID | 首次揭示时按 Tile 坐标读取，不预建隐藏元素或另存待揭示元素实例 |
+| 已创建元素的种类、位置与能力数据 | Element 自身存档 | 读档恢复原有记录，不用地编默认值覆盖 |
+| EffectTileLock 的存在及来源 | 当前 Tile 进度＋占位关系 | Element 关联完成后同步；不存锁副本、来源运行引用或 Effect.RuntimeId |
 
-以上是锁的具体表示候选，不撤销 D19 的 Function＋Effect 方向；D21 先验证 EntityElement，Tile 是否采用 Effect 仍待讨论，也不要求两侧同时有锁。同一事实只保留一份可写数据。生成器次数与冷却按 D15 留在生成 Function；项目需要的其它轮次、游标由该 Function 管理，不因选择 Effect 而复制。
+因此维护的是一份持久事实及其运行作用对象；额外成本是集中同步 Effect。同步入口、解除与替换边界见 [04 的锁实现](04_棋盘交互与合成.md#tile-解锁与运行时锁-effect)。D29 已确定当前 Tile 不添加 Effect；Element 上的锁效果继续保留，Tile 进度由解锁 Function 管理。
 
 ## 一级锁揭示时的元素创建（D17 已确认）
 
 - 一级锁时没有该 EntityElement 实例与实例存档记录，EntityTile.ElementId 为空；恢复时不为一级锁内容预建隐藏元素。
-- 一级锁进入二级锁的逻辑变化中创建 EntityElement，建立占位，并将元素按 Pos／CfgId 纳入自身存档；ElementId 继续仅保留在 EntityTile 的运行数据中。
+- 一级锁首次进入二级锁时，按当前地图＋Tile 坐标读取地编默认 Element 配置 ID，创建 EntityElement、建立占位并同步运行锁 Effect；元素按 Pos／CfgId 纳入自身存档，ElementId 继续仅保留在 EntityTile 的运行数据中。
 - 从已保存的二级锁恢复时，按 Element 存档恢复原有元素；不能因“当前为二级锁”再次创建或重置元素。
 - 表现层显示创建与揭示的结果，动画完成回调不决定元素是否存在。一级锁格没有占位也仍可禁止普通放入。
-- 待揭示内容的配置来源和持久化字段留给锁／存档专题，当前生成的 Tile 类尚未由此增加字段。
+- D24 已确定来源是后续地编配置，其中每格包含默认锁进度和默认 Element 配置 ID。新局中初始为二级锁／完全解锁且配置了默认元素的格子，也在初始化时创建；一级锁不创建。已有局面的恢复始终先读存档。
+- **二级锁或完全解锁不是“发现空格就补默认元素”的条件。** 元素移走、销毁或替换后不重新读地编补发；一级锁首次揭示、新局初始化、已有存档恢复是三个明确入口。若未来允许一级锁直接完全解锁，首次揭示仍走同一创建入口，具体跳级规则须另行确认。
+- 地编查找失败、配置不存在等问题须在进度推进前完成校验，不保存“已揭示但创建意外失败”的局面。合法空内容如何配置、地图标识／版本与保存兼容协议仍由地编／存档接入确定。当前生成的 Tile 类尚未增加解锁进度字段。
 
 ## 核心不变量
 
@@ -178,8 +207,9 @@ BettaSDK.Profile.Element
 1. 加载 Tile／Element 存档，校验 Tile 坐标唯一、配置可解析、元素坐标指向有效格子、同一格没有重复元素。
 2. TileSystem 遍历 ProfileMergeTwo.TileList，以记录的 Pos.X／Pos.Y 和 CfgId 创建全部 EntityTile；已有业务状态按以后生成的字段恢复，ElementId 初始为空。
 3. ElementSystem 遍历 ProfileMergeTwo.ElementList，以元素记录的 Pos 与 CfgId 创建 EntityElement，按坐标找到 EntityTile，并填入运行 ElementId；正式对接前先核对上节 ElementList 的泛型。
-4. 全部创建与关联完成后，再启用依赖完整格子／元素集合的查询、自动行为和计时结算。字段恢复与 Function 构造可在创建阶段完成。
-5. EntityViewTile／EntityViewElement 绑定已有逻辑对象并显示当前结果；表现完成回调不负责创建占位或触发首次生成。
+4. 依据每个 Tile 的当前进度，为其已关联 Element 同步运行 EffectTileLock；不从 Element 记录还原格锁、不按地编默认内容补发元素。一级锁却存在 Element 记录属于结构冲突，应报告并保留原记录。
+5. 全部创建、关联与派生效果同步完成后，再启用依赖完整格子／元素集合的查询、自动行为和计时结算。字段恢复与 Function 构造可在创建阶段完成。
+6. EntityViewTile／EntityViewElement 绑定已有逻辑对象及效果并显示当前结果；表现完成回调不负责创建占位或触发首次生成。
 
 二级锁等已有元素记录按存档恢复；D17 指定的一级锁不预建元素。初始化不使用玩家“是否可放入新物品”的权限拒绝原有占位。恢复后，锁定与其它行为限制继续生效。结构错误不得静默覆盖或丢弃记录；具体错误恢复／迁移方式仍待确定。
 

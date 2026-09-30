@@ -1,8 +1,8 @@
 # Function 与 Effect 实现方案
 
-本页是 Function／Effect 模块的实现入口，按 D19–D23 整理。**采用方法判断，权限返回 bool；Function／Effect 各自拥有必要数据；逻辑与表现分离；多效果按权限、数值、业务触发和视觉贡献分别组合。** 本轮用户基本认可前述方案并要求补齐到可实施程度，下面的类名、容器及方法是据此补齐的工程约定，接入时可按宿主规范调整名称，不改变职责。
+本页是 Function／Effect 模块的实现入口，按 D19–D23、D25／D27 及 D28–D30 整理。**采用方法判断，权限返回 bool；Function／Effect 各自拥有必要数据；逻辑与表现分离；多效果按权限、数值、业务触发和视觉贡献分别组合。** 已确认方向下的类名、容器及方法是工程约定，接入时可按宿主规范调整名称，不改变职责。优先级具体数值与排序细节留到实际效果接入时规划。
 
-适用范围：先实现 EntityElement 的 Function／Effect 及 EntityViewElement 的对应表现。本文足以开展该模块的基础代码与组合验证；锁的归属、气泡产品规则、完整 Command／Operation 提交、宿主 Profile／时间接入仍由各专题确定，见文末。没有开始修改宿主代码。
+适用范围：实现 EntityElement 的 Function／Effect 及 EntityViewElement 的对应表现。Tile 锁进度、元素运行锁效果与二级锁操作已确认，接线见 03／04／06；当前 Tile 不添加 Effect。气泡产品规则、完整执行与宿主接入仍见对应专题。没有开始修改宿主代码。
 
 ## 1. 对象、数据与组合
 
@@ -24,6 +24,7 @@ Logic：EntityElement
     FunctionGenerate：剩余次数、冷却依据、生成规则
     FunctionMerge：合成规则与本能力实际所需数据
   Effects
+    EffectTileLock：来源 Tile 的运行引用；阶段由 Tile 唯一持有
     EffectBubble：解锁条件、可选期限、结束规则
     EffectFreeze：本次限制及实际需要的期限／来源
 
@@ -34,6 +35,7 @@ Graphic：EntityViewElement
     FunctionViewEffects
       EffectViewBubble
       EffectViewFreeze
+      EffectViewTileLock：二级锁蜘蛛网（按用户倾向的表现方案）
   共享视觉贡献：由 EntityViewElement 统一汇总并应用
 ```
 
@@ -41,7 +43,32 @@ Graphic：EntityViewElement
 
 Function 与 Effect 都可以有数据、方法和生命周期；长期／临时、有数据／有行为均不是分类依据。生成次数与冷却只在生成 Function 保存；Effect 的期限在自身保存。局部阶段可使用字段或 enum，不建立独立 State 层。基础数值、位置和选中记录也不需要包装成 Effect。
 
+D25 补充：Effect 必须实际加入其 Owner 的集合才拥有相应作用，但产生该作用的权威数据可以来自其它对象。EffectTileLock 的 Owner 是 EntityElement，来源是 EntityTile；其限制只作用于 Owner，不能把来源 Tile 当成另一个隐式 Owner。它是实际的运行效果，不是第二份锁存档；保存策略与作用归属是两个问题。
+
 逻辑与表现不强制同名、同数量：纯逻辑 Effect 可以没有 EffectView；不同逻辑气泡可共用 EffectViewBubble；表现 Function 可处理多个业务结果。Effect 不内嵌另一套 FunctionController，复用算法时调用普通规则方法或已有能力。
+
+### Owner 类型与最小代码轮廓
+
+D24 增加 Tile 解锁 Function 后，Function 的绑定不能写死为 EntityElement。实现可使用薄的 `FunctionBase<TOwner>`，仅复用 Owner、稳定槽位键、Bind／Release；具体类型如下。这个类型参数用于明确绑定对象，不增加公共 Entity 框架或 ECS 查询机制。
+
+```text
+FunctionTileUnlock : FunctionBase<EntityTile>
+  Owner = 当前 Tile；只读 Phase 对外查询；内部持唯一可写阶段
+FunctionGenerate / FunctionMerge : FunctionBase<EntityElement>
+  Owner = 当前元素；各自持配置与业务数据
+EffectBase
+  Owner: EntityElement；RuntimeId；只读定义／Priority；Blocks；Release
+EffectTileLock : EffectBase
+  SourceTile: 运行来源引用；无独立可写锁进度，无持久记录
+ViewFunctionBase / FunctionViewXXX
+  Owner = 对应 EntityView；只读显示数据与表现资源
+EffectViewBase / EffectViewXXX
+  Owner: EntityViewElement；效果运行键、当前显示副本、资源句柄
+```
+
+若宿主现有 Function 基类已经提供等价的类型安全绑定，可适配沿用，不再叠加一套基类。Tile 的解锁 Function 可直接由 EntityTile 持有；Element 按稳定槽位保存自己的 Function 集合。Tile 的基础外观可以直接由 EntityViewTile 负责，不为保持形式相同强行添加空的 Effect 集合或表现 Function。
+
+Owner／来源只在内部 Bind 时指定，绑定期间不允许外部替换；换宿主须 Release 后重新构建绑定。Effects 集合由 Owner 内部管理，查询者只拿只读视图。运行 Effect 允许在纯逻辑层引用来源 Tile；Graphic 只读取显示副本，不持有可写 Function／Effect。Logic 不引用 Unity、Tween、EntityView 或具体资源服务。
 
 ## 2. 装配、身份与集合
 
@@ -80,6 +107,23 @@ Function 的 Bind 接收 owner 与稳定槽位键；Effect 的 Bind 接收 owner
 - 刷新现有实例保留其 RuntimeId；移除后再添加分配新 ID。独立实例分别持期限与规则，移除一份保留其它份。
 - 释放实例只清理实例资源和引用；奖励、爆炸等业务后果必须由明确的业务规则执行，不能写在 Release／析构／View.Unbind 中。
 
+来自 Tile 的派生效果由 04 的统一同步入口维护，重复同步保留同来源实例；普通业务不可独立移除它来绕过格锁。其它效果仍按各自附加／解除规则处理，不为全部 Effect 强加相同来源模型。
+
+### Effect 优先级（D27／D30）
+
+**保留 Effect 优先级原则；具体数值和排序细节由实际实现时结合效果需求规划，当前不作为讨论或基础模块开工的前置条件。** 不提前为锁、气泡等分配固定数值，也不把此前“大数先处理、默认 0、同级按定义键／RuntimeId”候选固化为通用契约。
+
+实现保留只读 Priority 与一个集中排序位置，避免每个 Function 自定一套顺序。实际接入存在顺序要求的效果时，统一明确排序方向、同级规则与数值计算阶段；查询期间不修改效果集合或优先级。RuntimeId 在恢复时重建，不能作为有业务含义的跨存档排序依据。权限的“任意阻止即拒绝”不依赖具体优先级数值，可以先实现验证。
+
+| 调用类别 | 优先级的作用 | 不因优先级改变的语义 |
+| --- | --- | --- |
+| 权限 Blocks | 按序检查，遇到阻止可提前返回 | 任意阻止仍为 false；高优先级“不阻止”不能覆盖低优先级阻止 |
+| 数值求解 | 同一计算阶段内按序处理；先收集固定增减／倍率等明确修正项 | 能力定义的阶段、限界、取整仍有效；不能只加 Priority 就获得正确数学规则 |
+| 业务响应 | 对同一 Owner 的本次响应按序求解 | 不自动停止后续 Effect；消耗、取消或独占须有明确业务规则，不能复用 Blocks 表达 |
+| 表现 | 独立覆盖物用资源层级；共享不可混合属性用显式视觉优先级 | 逻辑 Priority 不自动等于渲染 SortOrder，低优先级逻辑效果不会因没显示而消失 |
+
+例如气泡不阻止某动作而低优先级锁阻止，该动作仍拒绝；解锁格子只移除 Tile 来源效果，独立气泡仍有效。Effect 顺序只定义一个 Owner 内的处理，不决定其它 Tile、Command 或 Operation 的全局先后。具体气泡计时、付费解锁是否受格锁限制仍由业务专题决定。
+
 ## 3. 权限查询：普通方法与 bool
 
 **综合权限没有可写字段。** 不增加 Entity.CanClick、CanGenerate、SetCanClick；也不建立 RuleCheck、BlockReason 或其它通用权限结果对象。方法返回 true／false 已足够。各对象仍可保存属于自身的真实布尔事实。
@@ -87,6 +131,18 @@ Function 的 Bind 接收 owner 与稳定槽位键；Effect 的 Bind 接收 owner
 按动作查询，如 CanGenerate、CanDrag、CanMerge、CanUnlockBubble。物理点击路由先确定动作，再调用对应查询。需要在 Effect 中分派动作时，可用一个只含已实现动作的 ElementAction 枚举；它表示业务动作，不额外引入结果码、拒绝原因或角色枚举。
 
 ActionContext 只携带该次动作的必要只读上下文：源／目标引用、对应 Function 或待解除 Effect 的运行键、统一采样的 now。动作没有目标时目标可空；只接受合法组合，不堆积 object 参数字典或预建所有玩法字段。
+
+上下文中的 Source／Target 指本次业务的两方；正在遍历的 Effect.Owner 才是本次接受限制的对象。合成入口必须分别调用源的 MergeAsSource 与目标的 MergeAsTarget，不能只检查拖动者，或给目标效果也传 MergeAsSource。对应方法先校验 Owner 与该角色一致；角色错误是调用错误，不作为正常权限放行。
+
+```text
+CanMerge(source, target)
+  → 检查对象、位置、合成能力与项目合成关系
+  → source.AllowsEffects(MergeAsSource, 同一只读上下文)
+  → target.AllowsEffects(MergeAsTarget, 同一只读上下文)
+  → 全部通过才返回 true
+```
+
+以上固定调用关系；某个锁对源／目标究竟返回什么仍按 04 的确认矩阵实现。未确定的动作不靠 EffectBase 默认“不阻止”偷偷放行：验证场景只开放已明确动作，正式接入前必须补齐该效果涉及的实际动作规则。新增业务动作时检查现有效果的适用范围，不要求每种效果阻止一切。
 
 ### Effect 的 bool 语义
 
@@ -123,7 +179,7 @@ Blocks=true 表示本效果阻止；false 表示没有阻止，不能覆盖其�
 5. 全部通过返回 true
 ```
 
-生成检查生成器；合成分别检查源和目标，动作分别为 MergeAsSource／MergeAsTarget；不扫描全盘无关 Effect。Tile 尚未使用 Effect，格子的真实条件直接由格子／业务规则方法检查。
+生成检查生成器；合成分别检查源和目标，动作分别为 MergeAsSource／MergeAsTarget；不扫描全盘无关 Effect。D25 的二级锁元素限制由实际挂载的 EffectTileLock 参与判断，D28 已确认禁止作为源、条件允许作为目标；不在每个 Function 重复写一遍格锁限制。目标是否存在、占位是否正确、锁格能否接纳普通放置等仍由格子／业务规则检查；D29 当前不添加 Tile Effect。
 
 查询只读：不扣费、不消耗次数、不抽取正式随机、不删除到期 Effect、不发奖励、不弹窗。首版直接查询少量对象，不缓存权限；诊断可用断点或开发日志，不增加正式错误码体系。正常业务条件不满足返回 false；配置缺失或程序异常按故障入口处理，不吞掉异常并伪装成普通拒绝。
 
@@ -249,24 +305,27 @@ EntityViewElement 管理共享视觉贡献。普通表现 Function 与 EffectVie
 
 ### 逻辑数据导出约定
 
-每种 Function／Effect 将需要恢复的数据导出为独立、类型明确的记录，读取记录恢复自身字段。记录归所属元素保存，没有通用 State 行为层，也不存运行对象、委托、View 或动画句柄。
+每种 Function／需要独立持久化的 Effect 将必要数据导出为类型明确的记录。记录归所属实体保存，没有通用 State 行为层，也不存运行对象、委托、View 或动画句柄。**可从其它权威数据重建的运行效果不另存一份记录**：D25 的 EffectTileLock 从 Tile 恢复，不能复制到 Element 的效果存档、克隆或撤销记录中。
 
 | 记录 | 需要表达 | 不保存 |
 | --- | --- | --- |
 | Function 记录 | 稳定槽位键、类型／配置键、需要恢复的次数、期限与局部阶段 | 集合下标、可写权限缓存、Unity 对象 |
 | Effect 记录 | 类型／定义键、每份实例的专用数据；实际需要的期限、来源和层数 | 运行 RuntimeId、EffectView、临时资源和旧绑定版本 |
+| Tile 来源锁 Effect | 无独立持久记录；关联 Tile 后由当前锁进度重建 | 锁阶段副本、来源 Tile 引用、运行实例键 |
 
 这些是记录含义，不是用户已生成 Profile 类的现有字段。宿主生成定义怎样扩展、具体序列化协议与版本迁移继续由 [03](03_状态模型与Profile.md)及存档专题确定。导出必须深复制或构建稳定值记录，不能把仍会变动的集合直接交给后台保存。
 
 恢复时按稳定槽位键创建能力、按每份效果记录恢复实例并分配新运行键；多份同类记录不能只取最后一份。恢复不走正常“再次附加”的产品流程，不重新抽奖／扣费／刷新期限。未知类型或损坏字段按存档协议报告并保留原始记录，不静默丢弃。
 
+导出入口显式排除已知的 Tile 来源派生效果；不能把“未知类型无法导出”也当成可忽略。恢复顺序为实体及各自独立数据 → 占位关联 → 重建 Tile 来源锁 Effect → 开放行为／绑定表现。效果是否保存由其数据来源明确规定，不由 UI 任意切换 Persist=true／false。
+
 ### 跨对象变化
 
-- 移动元素：Function／Effect 随同一逻辑元素保留；Tile 的独立事实不随元素移动。
+- 移动元素：自身 Function／独立 Effect 按规则随元素保留；Tile 来源锁 Effect 按新占位重新同步，Tile 进度不随元素移动。
 - 合成：明确哪些能力数据重建／继承，以及每种 Effect 是阻止、终止、迁移还是重新附加；不能默认复制所有字段。具体规则由项目定义，未配置该类型的处理时先不启用该组合。
 - 删除／销毁：元素退出活动查询，同次移除其逻辑能力与效果；Graphic 使用已取得的显示数据收尾。
 - 专用撤销：保留所属元素需要恢复的 Function／Effect 数据，按第 9 项确定身份、计时与结算；不覆盖 Tile 后续变化。
-- Tile 是否增加 Effect 以及一级／二级锁的归属仍由第 3 项确定。本模块不提前给不存在的一级锁元素创建能力或效果。
+- Tile 的进度、Element 运行锁 Effect 与二级锁操作已确认，见 04；Tile 当前不添加 Effect。邻接响应的执行组织归第 6 项；一级锁没有元素，也不为它创建元素效果。
 
 ## 9. 从文档开始实现时的边界与核对
 
@@ -291,7 +350,6 @@ EntityViewElement 管理共享视觉贡献。普通表现 Function 与 EffectVie
 
 | 主题 | 尚未决定的内容 |
 | --- | --- |
-| [3 锁](../待讨论项/3_锁的归属与分阶段解锁.md) | Tile 是否使用 Effect、阶段归属、权限与待揭示内容 |
 | [4 气泡](../待讨论项/4_气泡Effect与物品生命周期.md) | 内物是否已存在、各变体条件、到期结果与实际重复附加规则 |
 | [6 执行](../待讨论项/6_Command与Operation执行边界.md) | Command／Operation 的完整成功、故障与重入协议；查询 bool 不代表执行或保存成功 |
 | [7 存档](../待讨论项/7_数据持久化与Profile接入.md) | 生成定义、版本、持久身份、内存发布与实际落盘 |
@@ -304,4 +362,4 @@ EntityViewElement 管理共享视觉贡献。普通表现 Function 与 EffectVie
 
 10 个参考项目的职责对照、旧二合／三合／HomeHub／TileV2 的核对依据已集中到 [00 的 Function／Effect 参考依据](00_参考资料与证据.md#functioneffect-参考依据)。历史方案用于说明取舍，不要求接手者重新选择本页已确定的方向；原框架调用细节按需查 [02a](02a_逻辑表现分离架构详解.md)。
 
-Buff 类比适用于“附着宿主、改变规则、可解除”的机制；基础数值和能力流程仍归各自对象。独立炸弹道具可以是 EntityElement＋爆炸 Function，附加“被消耗时爆炸”可以是 Effect；箱子若本身占格且有独立身份，可作为业务对象，外壳附着原物时再比较 Effect。此类例子不新增首期需求；任何 TileEffect 仍以第 3 项确认结果为准。
+Buff 类比适用于“附着宿主、改变规则、可解除”的机制；基础数值和能力流程仍归各自对象。独立炸弹道具可以是 EntityElement＋爆炸 Function，附加“被消耗时爆炸”可以是 Effect；箱子若本身占格且有独立身份，可作为业务对象，外壳附着原物时再比较 Effect。此类例子不新增首期需求；D29 当前不添加 TileEffect，以后出现真实独立需求时再扩展。
