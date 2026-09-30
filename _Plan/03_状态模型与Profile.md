@@ -4,6 +4,27 @@ D02 的 Profile 指外部宿主 meatloaf_client/client 的基础设施，实际�
 
 **D13／D14 已确认 Tile／Element 各自存档与先格子、后元素的恢复顺序。** 本文的状态表示业务当前数据；独立 Effect／通用 State 选型仍待 Q11，生成次数与冷却按 D15 归生成 Function。Profile 快照与执行提交仍是候选，不因确认基础字段而一并定案。概念见 [10](10_Function与Effect建模讨论.md)，业务权限见 [04](04_棋盘交互与合成.md)。
 
+## 已生成的存档类（D16，2026-09-30 静态核对）
+
+实际目录为 [Assets/Game/MergeTwo/Profile](/Users/betta/Company/Projects/meatloaf_client/client/Assets/Game/MergeTwo/Profile)，命名空间为 **BettaSDK.Profile**。以下记录读取到的现状：
+
+| 生成类 | 实际字段／属性 | 对应方案 |
+| --- | --- | --- |
+| [ProfileMergeTwo](/Users/betta/Company/Projects/meatloaf_client/client/Assets/Game/MergeTwo/Profile/ProfileMergeTwo.cs) | TileList: ProfileList<Tile>；ElementList 当前也是 ProfileList<Tile> | 两类记录的存档根；ElementList 的泛型见下方待核对项 |
+| [Tile](/Users/betta/Company/Projects/meatloaf_client/client/Assets/Game/MergeTwo/Profile/Tile.cs) | Pos: Position；CfgId: int | 格子坐标与配置 ID；没有 ElementId 字段 |
+| [Element](/Users/betta/Company/Projects/meatloaf_client/client/Assets/Game/MergeTwo/Profile/Element.cs) | Pos: Position；CfgId: int | 元素坐标与自身配置 ID |
+| [Position](/Users/betta/Company/Projects/meatloaf_client/client/Assets/Game/MergeTwo/Profile/Position.cs) | X: int；Y: int | 整数坐标记录，X／Y 与行列、原点的对应随布局约定确定 |
+
+方案中的 Coord 对应 **Pos（X、Y）**，ConfigId 对应 **CfgId**；存档实现沿用实际生成名，不额外保存同义 Coord／ConfigId 字段。Tile.CfgId 对应配置类型 MergeTwo.Two.Config.Tile 的 ID，具体配置见 [06](06_表现与资源.md#tile-与-element-的表现d10d11-已确认)。
+
+这四个存档类继承 ProfileBase；公开属性带 JsonIgnore，实际 JsonProperty 在对应私有字段上。属性 setter 在值或引用发生变化时调用 ProfileHub.Instance.MarkProfileChanged()；本轮没有据此推定列表增删、嵌套改动和落盘的完整行为，ProfileList／ProfileBase／保存入口仍需在接入时核对。
+
+### ElementList 的生成定义待核对
+
+当前 ProfileMergeTwo 的 **_ElementList 与 ElementList 均为 ProfileList<Tile>**，虽然同目录已经生成独立 Element 类。按已确认的 Tile／Element 分别存档方案，预期应为 **ProfileList<Element>**。应核对生成源中的 ElementList 元素类型，再重新生成；本轮如实记录差异，没有把当前文件描述成已修正或已完成接入。两种记录目前同有 Pos／CfgId，不能仅因当前字段相同就忽略类型差异。
+
+当前 Tile／Element 生成类正文尚未声明锁状态、Function 自有数据或持久元素 ID；未来需要时按已确认归属扩展生成定义。ProfileMergeTwo 正文也未声明原候选 SchemaVersion／完整提交载荷字段，不能把候选结构写成已有实现。
+
 ## 身份与位置
 
 | 名称 | 含义 | 确认范围与寿命 |
@@ -54,18 +75,18 @@ R 明确：第二次点击选中物才执行生成／使用；选中的过期气
 
 ## Tile 与 Element 分开存档（D13 已确认）
 
-以下是数据关系示意，集合与数据记录的具体类名待定：
+具体存档类已由 D16 提供；以下示意沿用实际字段名。ElementList 的目标类型仍需完成上节的生成定义核对，Function 等扩展字段待设计：
 
 ```text
-Tile 存档记录
-  Coord
-  ConfigId
-  后续归属 Tile 的业务状态（如存在则保存）
+BettaSDK.Profile.Tile
+  Pos: Position { X, Y }
+  CfgId: int
+  后续归属 Tile 的业务状态（需要时扩展生成定义）
 
-Element 存档记录
-  Coord
-  ConfigId
-  Function 自有数据及其它需要恢复的业务数据（具体协议待定）
+BettaSDK.Profile.Element
+  Pos: Position { X, Y }
+  CfgId: int
+  Function 自有数据及其它需要恢复的业务数据（扩展字段与协议待定）
 
 运行时
   TileSystem：按坐标查 EntityTile
@@ -76,7 +97,7 @@ Element 存档记录
 
 编辑器为 Tile 指定初始配置 ID；恢复已有局面时，TileSystem 读取 **Tile 自己的存档** 创建格子，不能仅用初始布局覆盖已有 Tile 数据。新局如何由编辑器布局产生初始记录，属于初始化接入细节。
 
-Tile 与 Element 各自保存记录，可以由宿主 Profile 分别组织；是否同一载荷／文件、版本元数据、随机状态和持久 ID 分配器，仍随 Profile 方案确定。Tile.ElementId 与 View 引用均不进入 Tile 存档。
+已生成的 ProfileMergeTwo 通过 TileList／ElementList 组织两类记录；ElementList 泛型按上节核对。物理文件组织、完整快照／替换载荷、版本元数据、随机状态和持久 ID 分配器仍随 Profile 接入确定。EntityTile.ElementId 与 View 引用均不进入 Tile 存档。
 
 ## 锁数据归属与表示（待讨论）
 
@@ -110,9 +131,9 @@ Tile 与 Element 各自保存记录，可以由宿主 Profile 分别组织；是
 
 推荐第二种。活动状态和存档投影的用途不同，不允许两边各自演进；加载方向是 Profile → Logic，运行方向是 Logic → 新快照，View 永远不参与反写。
 
-P.ProfileHub 已有后台序列化、文件持久化和生命周期保存路径，但这**不是棋盘／钱包跨系统事务**。当前 `SaveToLocal(bool persistence = false, ...)` 返回 void：默认路径可排队保存，显式持久化路径也在内部捕获错误；不能只凭“调用返回”判断落盘成功。实际入口见 00。
+2026-09-25 对 P.ProfileHub 的历史核对记录了后台序列化、文件持久化与生命周期保存路径；不能据此认定棋盘／钱包跨系统事务。该次核对的 `SaveToLocal(bool persistence = false, ...)` 返回 void：默认路径可排队保存，显式持久化路径也在内部捕获错误；不能只凭“调用返回”判断落盘成功。实际入口见 00。
 
-建议 `ProfileMergeTwo` 具有 SchemaVersion 和一个已提交状态载荷；该载荷完整构建后替换，发布后不再原地修改嵌套集合。具体使用生成的 Profile DTO 还是稳定序列化载荷，应先核对现有生成工具支持、热更注册与序列化约定，不在设计稿中虚构不存在的自动事务 API。
+现有生成 ProfileMergeTwo 已包含 TileList／ElementList。原方案提出增加 SchemaVersion 与完整提交载荷后一次替换，仍是待讨论的接入候选；这些不是当前类正文已声明的字段。后续在现有生成结构上比较直接接入、独立运行数据映射或必要的生成定义扩展，再确定发布方式，不能仅凭类已生成就认定具备快照替换或事务语义。
 
 若二合正式使用宿主余额，不能靠两个独立 Profile setter 宣称崩溃原子性。届时明确宿主同步结算、失败恢复和完整保存边界；M1 推荐二合专用测试余额，避免把真实全局经济接入混进架构验证。
 
@@ -143,8 +164,8 @@ P.ProfileHub 已有后台序列化、文件持久化和生命周期保存路径�
 **初始化顺序及恢复边界已确认（D14）：**
 
 1. 加载 Tile／Element 存档，校验 Tile 坐标唯一、配置可解析、元素坐标指向有效格子、同一格没有重复元素。
-2. TileSystem 遍历 Tile 数据创建全部 EntityTile，恢复坐标、配置和已有业务状态，ElementId 初始为空。
-3. ElementSystem 遍历 Element 数据创建 EntityElement，按元素坐标找到 Tile，把元素运行 ID 写入 Tile.ElementId。
+2. TileSystem 遍历 ProfileMergeTwo.TileList，以记录的 Pos.X／Pos.Y 和 CfgId 创建全部 EntityTile；已有业务状态按以后生成的字段恢复，ElementId 初始为空。
+3. ElementSystem 遍历 ProfileMergeTwo.ElementList，以元素记录的 Pos 与 CfgId 创建 EntityElement，按坐标找到 EntityTile，并填入运行 ElementId；正式对接前先核对上节 ElementList 的泛型。
 4. 全部创建与关联完成后，再启用依赖完整格子／元素集合的查询、自动行为和计时结算。字段恢复与 Function 构造可在创建阶段完成。
 5. EntityViewTile／EntityViewElement 绑定已有逻辑对象并显示当前结果；表现完成回调不负责创建占位或触发首次生成。
 

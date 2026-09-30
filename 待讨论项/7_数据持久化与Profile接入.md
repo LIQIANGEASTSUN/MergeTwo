@@ -2,6 +2,12 @@
 
 状态：**讨论中，部分已确认**。来源：前一轮讨论、_Plan 的 D02／A04／Q08 及用户 2026-09-30 的存档补充。沿用宿主 Profile、本地先行，以及 Tile／Element 各自存档和初始化顺序已确认；结构校验、锁格原有元素恢复与完整关联后启用行为也已获基本认可；完整保存结构与协议待定。D13／D14 已回写 _Plan/03、08、09，维护与回写见 [索引](README.md)。
 
+## 已有生成类（2026-09-30）
+
+用户已生成宿主 Assets/Game/MergeTwo/Profile 下的 ProfileMergeTwo、Tile、Element、Position，统一命名空间 BettaSDK.Profile。Tile／Element 使用 Pos 与 CfgId，Position 使用整数 X／Y；不再把具体存档类名记为尚不存在的候选。
+
+实际字段、完整路径与静态核对由 [_Plan/03](../_Plan/03_状态模型与Profile.md#已生成的存档类d162026-09-30-静态核对)维护。发现的同主题待处理项：**ProfileMergeTwo.ElementList 当前为 ProfileList<Tile>，预期应对应已生成的 Element 类**；需核对生成源后重新生成，本轮未修改宿主文件。后续存档对接须先解决该类型差异。
+
 ## 数据范围与恢复归属
 
 生成字段归属已由 [第 5 项](5_生成Function的数据归属与扩展边界.md)确认。本篇处理这些数据怎样保存与恢复；序列化 DTO 不等于独立 State 行为层。
@@ -25,7 +31,7 @@
 
 ## 快照与保存（候选）
 
-两类存档记录应反映同一轮完整业务后的结果；可在宿主 Profile 中分别组织 Tile 与 Element 数据。是否同一文件、快照与落盘协议仍待讨论。
+已生成 ProfileMergeTwo 用 TileList／ElementList 组织两类数据（ElementList 类型待上节核对）。记录应反映同一轮完整业务后的结果；物理文件、完整快照与落盘协议仍待讨论，不能由 setter 标脏推定已经落盘。
 
 当前 _Plan 建议 Logic 持唯一活动数据，完整业务成功后构建独立快照发布给 Profile，后台只读取已发布内容。候选尚未确认，需避免 UI、Logic、Profile 共写活动对象。
 
@@ -35,7 +41,7 @@
 
 ## 尚待确定
 
-1. Entity、Function 与 Effect 如何提供保存／恢复数据，新增能力是否需要修改中央分支。
+1. 核对 ElementList 的生成源类型；在现有生成类上，Entity、Function 与 Effect 如何保存／恢复数据，新增能力是否需要修改中央分支。
 2. 是否采用 Logic 自有数据＋完整成功后发布快照；如何避免可写对象同时被 UI、Logic、Profile 修改。
 3. 新建与恢复是否分别进入不同流程，避免恢复时重复抽取产物、发奖励或重置期限。
 4. 存档版本、配置变化、未知能力与缺失内容怎样处理，怎样保留足够诊断信息。
