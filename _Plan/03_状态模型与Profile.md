@@ -2,32 +2,38 @@
 
 D02 的 Profile 指外部宿主 meatloaf_client/client 的基础设施，实际路径见 [00](00_参考资料与证据.md)。建议由二合 Logic 持有唯一活动状态，ProfileAdapter 在完整成功边界发布深复制的持久快照。Profile 是恢复依据，不由 UI 与 Logic 同时修改同一组活动对象。
 
-**表示选型尚待 Q11**：Function、Effect 与 State 的概念取舍见 [10](10_Function与Effect建模讨论.md)。本文先列共同数据，再列互斥的两种表示；业务权限统一见 [04](04_棋盘交互与合成.md)。
+**D13／D14 已确认 Tile／Element 各自存档与先格子、后元素的恢复顺序。** 本文的状态表示业务当前数据；独立 Effect／通用 State 选型仍待 Q11，生成次数与冷却按 D15 归生成 Function。Profile 快照与执行提交仍是候选，不因确认基础字段而一并定案。概念见 [10](10_Function与Effect建模讨论.md)，业务权限见 [04](04_棋盘交互与合成.md)。
 
 ## 身份与位置
 
-| 名称 | 含义 | 生命周期 |
+| 名称 | 含义 | 确认范围与寿命 |
 | --- | --- | --- |
-| BoardDefinitionId | 棋盘配置键 | 配置稳定 |
-| BoardInstanceKey | 某个实际棋盘存档的键 | 持久；首期一个实例，以后如何与活动期次关联再定 |
-| ItemConfigId | 物品种类，如某条链某一级 | 配置稳定；不能作为单个物品身份 |
-| ItemInstanceId | 物品的持久身份 | 移动／入仓不变；新生成／合成分配新 ID |
-| EntityId | 本次运行的 Entity／View 关联 ID | 运行期；可以映射到 ItemInstanceId，不要求与其数值相同 |
-| SessionGeneration | 当前运行实例代际 | 每次重建变化，隔离旧回调 |
-| CellCoord | 整数行列 | 位置，不是身份 |
-| CommandId／BatchId | 调用诊断关联 | 运行期，不做存档去重 |
+| Tile 的 ConfigId | 格子外观配置键 | 已确认保存；不同格子可共用 |
+| Element 的 ConfigId | 元素种类配置键 | 已确认保存；不能作为某一件物品的实例身份 |
+| Tile 的 Coord | 格子自己的坐标 | 已确认保存；用于实例内查格 |
+| Element 的 Coord | 元素当前所在格子坐标 | 已确认保存；移动时改变 |
+| Tile 的 ElementId | 当前占位元素的运行 ID | 已确认仅运行时保存，恢复时重建，不进入 Tile 存档 |
+| EntityId | 运行 Entity／View 的身份关联 | 基础绑定候选；分配与跨存档映射待定 |
+| ElementInstanceId（候选） | 若需要跨保存引用某件元素，使用的持久身份 | 是否需要独立字段、如何与运行 ID 对应仍待讨论 |
+| InstanceKey／LayoutConfigId（候选） | 存档实例键／初始布局配置键 | 存档装配元数据，不要求重新建立 Board 对象 |
+| SessionGeneration／绑定版本（候选） | 隔离旧会话与旧 View 回调 | 重建／换绑时更新，具体协议待定 |
+| CommandId／BatchId（候选） | 调用诊断关联 | 运行期，不作存档去重 |
 
-旧代码用位置编码表示物品当前 identity，不能直接用于新方案。移动后仍应能追踪同一个生成器；原格新物品不能收到旧物品的动画／撤销回调。
+旧代码以位置编码表达物品 identity，是来源事实；新运行关系必须能区分同格前后不同元素。具体持久身份方案未在本轮确认。
 
 ## 状态归属表
+
+标注 D13／D15 的归属已确认；其余拥有者、写入入口和保存策略沿用候选方案，不能视为本轮全部批准。
 
 | 数据 | 分类与拥有者 | 谁可写 | 是否保存 |
 | --- | --- | --- | --- |
 | 棋盘尺寸、初始格、物品规则、产出池 | ConfigSnapshot／ConfigAdapter | 导入构建时写，运行只读 | 保存兼容标识，不逐物品复制配置 |
-| 格子锁和占位、物品位置与属性 | 运行时／BoardState | 对应 Operation.Apply | 是 |
-| 生成轮次、已用次数、固定段游标、冷却时间 | 运行时／ItemEntity 专用数据 | Generator／Time Operation.Apply | 是 |
+| Tile 坐标、配置 ID；以后归属 Tile 的业务状态 | EntityTile／Tile 自己的存档 | TileSystem 初始化；运行修改经最终确定的业务入口 | 是，D13 已确认；具体锁归属未定 |
+| Element 坐标、配置 ID 与自身业务数据 | EntityElement／Element 自己的存档 | ElementSystem 初始化；运行修改经最终确定的业务入口 | 坐标、配置 ID 已确认保存；其它数据协议待定 |
+| Tile.ElementId | EntityTile 运行数据／占位关系 | ElementSystem 与 TileSystem 统一维护 | **否，恢复元素时重建** |
+| 生成次数、冷却及项目算法所需轮次／游标 | 生成 Function 的内部字段或自有数据记录 | 生成／时间业务入口；Operation 方案仍待确认 | 需恢复的字段保存，具体载体待定；不另建 State 层 |
 | 气泡到期时间、宝箱开启／使用状态 | 运行时／物品专用数据 | 对应 Operation.Apply | 是 |
-| 二合独有测试余额／以后独立体力 | 运行时／BoardEconomyState | 统一经济规则 Operation.Apply | 是，和棋盘同一快照 |
+| 二合独有测试余额／以后独立体力 | 运行时／经济模块自有数据（候选） | 统一经济规则 Operation.Apply | 是，和棋盘同一快照 |
 | 宿主已有金币／钻石等 | 外部权威／宿主道具系统 | 宿主正式入口 | 宿主已有 Profile，二合不存另一套可写余额 |
 | 当前选中物品 | 运行时／InteractionState | Select／Activate／Drop 等命令的 Apply | 建议不保存；重新进入为空 |
 | 售出／删除撤销凭据 | 运行时／RemovalUndoState | Remove／Restore／使其失效的 Operation | 首期建议不跨关闭保存，待确认 |
@@ -40,45 +46,57 @@ UI 可以读取能力查询和只读状态，但不能拿到 ProfileDict／List 
 
 ## 为什么选中不是纯表现
 
-R 明确：第二次点击选中物才执行生成／使用；选中的过期气泡暂不变更；选中其它物品会关闭售出／删除撤销机会。因此最少需要逻辑的 `SelectedItemInstanceId`。
+R 明确：第二次点击选中物才执行生成／使用；选中的过期气泡暂不变更；选中其它物品会关闭售出／删除撤销机会。因此最少需要逻辑的 `SelectedElementId`。
 
 选择框、缩放、手指跟随属于 Graphic；选择的业务事实属于 Logic。选择命令还可能导致旧气泡过期处理、撤销凭据失效，它可能产生持久变化。不能按命令名简单认为 Select 永不需要存档。
 
 隐藏与关闭建议取消交互选择并处理被选择保护的过期气泡，再保存完整结果。需在仍可接收业务命令时执行有业务含义的离开步骤，然后 BeginShutdown；真正资源释放阶段不再发普通命令。若直接强制销毁，则恢复时以“无选中状态”重新计算到期结果。策略待 Q06 确认。
 
-## 棋盘和物品分开建模
+## Tile 与 Element 分开存档（D13 已确认）
 
-建议最小模型如下，名称是候选，不是现有类：
+以下是数据关系示意，集合与数据记录的具体类名待定：
 
 ```text
-BoardState
-  DefinitionId, InstanceKey, SchemaVersion, RulesConfigVersion
-  Cells[CellCoord] -> CellData(OccupantItemId, optional RegionId, CellRestrictions)
-  Items[ItemInstanceId] -> ItemData(ConfigId, Location, ItemRestrictions, specialized data)
-  NextItemInstanceId
-  EconomyState
-  RandomState（若采用实例随机源）
+Tile 存档记录
+  Coord
+  ConfigId
+  后续归属 Tile 的业务状态（如存在则保存）
 
-InteractionState
-  SelectedItemInstanceId
-  RemovalUndoRecord?
+Element 存档记录
+  Coord
+  ConfigId
+  Function 自有数据及其它需要恢复的业务数据（具体协议待定）
+
+运行时
+  TileSystem：按坐标查 EntityTile
+    Coord、ConfigId、ElementId（可为空，不写入 Tile 存档）
+  ElementSystem：按运行 ID 查 EntityElement
+    Coord、ConfigId、自身功能数据
 ```
 
-`CellRestrictions`／`ItemRestrictions` 是本文的概念占位，不要求创建额外框架或具体类。锁的宿主按语义决定：地格进度留在 Cell，随物品存在的限制归 Item；R 的带锁产物并未自动确定是否还改变地格进度，仍需 Q11／C06 裁定。
+编辑器为 Tile 指定初始配置 ID；恢复已有局面时，TileSystem 读取 **Tile 自己的存档** 创建格子，不能仅用初始布局覆盖已有 Tile 数据。新局如何由编辑器布局产生初始记录，属于初始化接入细节。
 
-| 候选表示，只选一种 | Cell 上 | Item 上 |
+Tile 与 Element 各自保存记录，可以由宿主 Profile 分别组织；是否同一载荷／文件、版本元数据、随机状态和持久 ID 分配器，仍随 Profile 方案确定。Tile.ElementId 与 View 引用均不进入 Tile 存档。
+
+## 锁数据归属与表示（待讨论）
+
+锁归属由 [待讨论项 3](../待讨论项/3_锁的归属与分阶段解锁.md)裁定。若某事实独属于格子进度，由 Tile 自己保存；若随元素存在，由 Element 保存。一级锁下是否已有 EntityElement、待揭示内容由谁保存，仍见待讨论项 1，不能通过本轮存档结论推定。
+
+| 候选表示 | EntityTile 上 | EntityElement 上 |
 | --- | --- | --- |
-| 少量枚举与专用数据 | CellLock | ItemAccessState 与气泡期限等专用数据 |
-| 推荐试验的效果组合 | CellEffects，例如地格锁 | ItemEffects，例如物品锁／气泡，专用期限存在该效果中 |
+| 少量字段与专用数据 | 格子锁数据 | 元素限制与气泡期限等专用数据 |
+| 效果组合 | 归属格子的效果数据 | 归属元素的效果数据 |
 
-同一个锁只导入一个权威位置；选择效果后，枚举只能作导入值或只读派生值。生成器次数、轮次和计时仍是自身业务数据，不因引入效果而再复制一份。首期只接受样例和导入规则明确支持的组合，不开放任意 Cell×Item 状态组合；普通物品不能绕过格子限制。
+以上只是候选，不要求建立相应基类或集合，也不要求两侧同时有锁。同一事实只保留一份可写数据。生成器次数与冷却按 D15 留在生成 Function；项目需要的其它轮次、游标由该 Function 管理，不因选择 Effect 而复制。
 
 ## 核心不变量
 
-1. 每格最多一个活跃物品；棋盘内物品的 Location 与格子 OccupantItemId 双向一致。
-2. 同一持久物品只能在棋盘、仓库等一个实际容器中。待领取奖励条目与已生成 ItemInstance 不能重复计数。
-3. 被合成／使用／删除的物品立即退出活跃查询；退场 View 和退役凭据不计库存。恢复撤销可重用原持久 ItemInstanceId，但必须分配新的运行期绑定版本；SessionGeneration 只隔离重建会话，不能单独隔离同一会话内的删除→恢复。NextItemInstanceId 不因撤销而倒退。
-4. 生成器本轮次数、游标与轮次对应配置范围；时间单位统一，paused 与 running 状态不同时生效。
+第 1 项及恢复结构检查已随 D14 确认；其余为对应业务的候选约束，随各主题继续裁定。
+
+1. 每格最多一个活跃元素；EntityElement.Coord 与对应 EntityTile.ElementId 一致，恢复占位时重建该关系，ElementId 不写入 Tile 存档。
+2. 同一元素只能在一个实际容器中；仓库等外围接入后沿用此约束。待领取条目与已创建 EntityElement 不重复计数。
+3. 被合成／使用／删除的元素退出活跃查询，退场 View 不计库存。若采用持久 ElementInstanceId，撤销可恢复原身份，并以新的绑定版本隔离旧回调；持久 ID 分配器不因撤销回退。具体身份与退役机制仍待讨论。
+4. 生成 Function 自有次数、冷却及其它字段满足所选项目算法；需要阶段时保证表示一致，具体轮次和游标规则不作为通用架构约束。
 5. 任何业务拒绝都不扣费、不消耗次数、不丢物品。若选择可控随机源，拒绝也不推进其状态。
 6. 撤销只恢复该次移除的完整实例，不撤销期间其它物品的操作，不覆盖已占用原格。
 7. 物品自身状态与只读配置分开；图标缺失不改物品种类，也不能用 GameObject 数量计算库存。
@@ -112,24 +130,31 @@ P.ProfileHub 已有后台序列化、文件持久化和生命周期保存路径�
 
 ## 保存与恢复
 
-```text
-完整业务操作的全部 Apply 成功
-→ 检查本次受影响的不变量
-→ 创建新的完整持久快照并发布到 Profile
-→ Graphic 播放
+完整业务成功后发布快照仍为 Profile 候选方案：
 
-重新打开
-→ Profile 注册／加载完成
-→ 校验版本、配置键与领域不变量
-→ 恢复 Logic 与 ID／随机状态
-→ 执行明确的时间归一化步骤
-→ 创建当前稳定 View
-→ 开放输入
+```text
+完整业务操作成功
+→ 检查受影响的数据关系
+→ 构建 Tile 与 Element 的完整持久记录，Tile 不写 ElementId
+→ 发布 Profile 快照
+→ Graphic 消费业务结果
 ```
 
-保存不含 View、退役 Entity 引用、Tween、Command、Batch 或旧回调。恢复不重放此前获得奖励／扣费，也不补播历史合成动画。SchemaVersion 与配置版本分开；缺配置要报出具体 ID，不把未知物品静默删掉。旧 Lua 线上存档是否迁移尚未要求，保留原始包，不自动接入旧协议。
+**初始化顺序及恢复边界已确认（D14）：**
 
-配置热切换、Profile 被替换或账号切换时，先关闭当前实例，再从新权威状态重建。第一版不支持两个实例同时写同一 BoardInstanceKey。
+1. 加载 Tile／Element 存档，校验 Tile 坐标唯一、配置可解析、元素坐标指向有效格子、同一格没有重复元素。
+2. TileSystem 遍历 Tile 数据创建全部 EntityTile，恢复坐标、配置和已有业务状态，ElementId 初始为空。
+3. ElementSystem 遍历 Element 数据创建 EntityElement，按元素坐标找到 Tile，把元素运行 ID 写入 Tile.ElementId。
+4. 全部创建与关联完成后，再启用依赖完整格子／元素集合的查询、自动行为和计时结算。字段恢复与 Function 构造可在创建阶段完成。
+5. EntityViewTile／EntityViewElement 绑定已有逻辑对象并显示当前结果；表现完成回调不负责创建占位或触发首次生成。
+
+锁格中原有元素按存档恢复，初始化不使用玩家“是否可放入新物品”的权限拒绝原有占位。恢复后，锁定与其它行为限制继续生效。结构错误不得静默覆盖或丢弃记录；具体错误恢复／迁移方式仍待确定。
+
+各自存档仍须对应同一轮完整业务结果。保存不含 View、退役 Entity 引用、Tween、Command、Batch 或旧回调；恢复不重放已完成奖励／扣费，也不补播历史合成动画。时间归一化的具体算法、View 资源装配与开放输入协议继续讨论。
+
+SchemaVersion 与配置版本分开，缺配置报告具体 ID；旧 Lua 存档迁移未被要求，保留原始包。配置热切换、Profile 替换或账号切换时如何关闭与重建，沿用候选生命周期方案；同一存档实例的并发写入策略未在本轮扩展。
+
+实施时分别验证同进程重建与清除内存后的磁盘恢复，不能把发布到 Profile 当作已经完成落盘。
 
 ## 有限撤销的数据
 
