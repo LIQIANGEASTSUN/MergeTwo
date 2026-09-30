@@ -1,163 +1,307 @@
-# Function、Effect 与 State 的建模讨论
+# Function 与 Effect 实现方案
 
-专题始于 2026-09-23，2026-09-30 同步 D09／D15。**本项目不采用 ECS；生成次数与冷却已确认属于生成 Function 的内部字段，不另建 State 组件／系统，也不改为 Effect。** 是否引入独立 Effect、如何组织附加限制及是否需要通用 State 层仍待讨论；不能把保存业务当前值等同于已决定增加 State 架构。各非 ECS 候选与 10 个项目的对照集中在 [待讨论项 2](../待讨论项/2_Function与Effect及State的职责边界.md)。本页保留参考事实、候选例子与边界，不新增玩法代码。
+本页是 Function／Effect 模块的实现入口，按 D19–D23 整理。**采用方法判断，权限返回 bool；Function／Effect 各自拥有必要数据；逻辑与表现分离；多效果按权限、数值、业务触发和视觉贡献分别组合。** 本轮用户基本认可前述方案并要求补齐到可实施程度，下面的类名、容器及方法是据此补齐的工程约定，接入时可按宿主规范调整名称，不改变职责。
 
-公开来源与阅读边界见 [11 外部实现调研](11_外部实现调研.md)。原架构的两侧 Function、触发结果和写入阶段先读 [02a 第 4 节](02a_逻辑表现分离架构详解.md#4-function两层分别组合行为)，二合架构取舍见 [02](02_架构与参考取舍.md)。这里的 Effect 指影响规则的 GameplayEffect；动画、粒子等使用 View／VFX 表达。
+适用范围：先实现 EntityElement 的 Function／Effect 及 EntityViewElement 的对应表现。本文足以开展该模块的基础代码与组合验证；锁的归属、气泡产品规则、完整 Command／Operation 提交、宿主 Profile／时间接入仍由各专题确定，见文末。没有开始修改宿主代码。
 
-## 先区分业务数据、局部阶段与附加影响
+## 1. 对象、数据与组合
 
-| 所说的状态 | 例子 | 引入 Effect 后如何处理 |
+| 概念 | 拥有与职责 | 实现边界 |
 | --- | --- | --- |
-| 运行数据的当前值 | 占位、生成次数、剩余层数、截止时间 | 各归所属对象；生成次数与冷却已确定由生成 Function 持有 |
-| 互斥的业务阶段 | 宝箱未开启／开启中／可领取；关卡 Locked／Current／Completed | 可以继续用 enum／小型状态机，Effect 不替代过程顺序 |
-| 可叠加的附加条件 | 冰冻、锁、护盾、倍率增益 | 很适合拆成独立 Effect 实例，再派生有效能力 |
+| EntityElement | 元素身份、坐标、配置及其 Function／Effect 实例集合 | 管理实例关系；内部统一增删，不对外暴露可修改集合 |
+| FunctionBase／FunctionXXX | 一项能力及专用数据；如生成、合成、开箱 | 业务算法及只读检查，不直接持有或调用 View |
+| EffectBase／EffectXXX | 一次附着的规则影响及专用数据 | 按需提供限制、数值修正和触发规则，不继承 FunctionBase |
+| EntityViewElement | 绑定元素，持有表现 Function、当前视觉资源和共享视觉贡献 | Graphic 的统一写入位置，不拥有另一套业务数据 |
+| ViewFunctionBase／FunctionViewXXX | 输入、拖拽、生成反馈等表现行为 | 可发起业务请求，不能直接改业务字段 |
+| FunctionViewEffects | 一个表现 Function，管理本元素的 EffectView 集合 | 根据当前逻辑快照创建、刷新和释放效果表现 |
+| EffectViewBase／EffectViewXXX | 一次附着对应的可选表现 | 拥有自身资源、动画和视觉贡献，不参与业务权限和到期结算 |
 
-因此可以取消某个“大而互斥的物品状态枚举”，但无法消除状态本身。用 `HasEffect(Lock)` 代替 `State == Locked` 只是表达位置的变化；收益来自独立组合、生命周期和统一规则查询，而不是换名字。
-
-现阶段不需要为了避免 State 一词，把冷却次数、物品位置、选中、实体退役全部包装成效果。
-
-## Function 和 Effect 如何区分
-
-它们不是严格对等的两个“能力类型”。Function 组织行为代码及其自有字段；Effect 是玩法中可以附加、变化和移除的对象。Effect 的行为可以用 Function 实现，也可以由普通规则函数处理。
-
-| 概念 | 回答的问题 | 二合例子 |
-| --- | --- | --- |
-| Entity／宿主 | 谁拥有身份和数据？ | 一个生成器实例、一个地格 |
-| Function | 哪段代码实现某种行为？ | 合成求解、生成、使用物品 |
-| Effect | 当前附着了什么玩法影响？ | 浅锁、深锁、气泡；以后可能有冰冻 |
-| 内部字段／自有数据 | 当前事实是什么？ | 生成 Function 的轮次、次数、冷却；效果自身的层数、截止时间 |
-| 能力查询 | 结合当前上下文，现在允许做什么？ | 能拖动、能作为合成源／目标、能生成 |
-| Operation | 本次已经决定的变化如何提交？ | 消耗两物、创建结果、解除锁、移除效果 |
-
-**不能按“长期＝Function、短期＝Effect”硬分。** 效果可以永久存在直到满足解除条件，Function 也可以动态加入或移除。Effect 还可能授予行为，而不只是禁止行为。例如未来附加一个临时自动产出效果，可以复用产出规则；不应复制一套“效果专用生成算法”。
-
-本项目建议：保留生成／合成等行为实现，执行前查询宿主及格子的效果和业务前置条件。锁效果不靠销毁 MergeFunction 来禁止合成，否则重新创建可能丢失功能状态，也不容易同时表达“不能主动拖，但能被合成”。
-
-## 现有项目说明了什么
-
-| 来源 | 已核对的代码事实 | 对本次建模的启发 |
-| --- | --- | --- |
-| 旧二合 | `ArticleStateBase.AddListerer` 按 `processFuncMap` 决定 Function 事件注册；浅锁仅保留 Merge，深锁为空，同时 State 类控制外观 | State 混合了权限、事件接线和显示；这部分可拆为 Effect 数据＋统一查询＋Graphic |
-| 宿主三合 | `ElementState` 是 Normal／Locked／HungUp；`ElementEntity.TransitionState` 分发通知并管理格子关系；存在 AreaStateLockFunction 等状态处理函数 | State 与 Function 已经协作；应按业务条件、阶段、表现协调分别拆，不把 HungUp 机械改为锁 Buff |
-| HomeHub | `EntityLevel.State` 是关卡进度，`LevelState` 为 Locked／Current／Completed；FunctionController 负责有序触发 | 进度状态仍有意义；引入附加效果不要求移除全部业务枚举 |
-| 宿主 TileV2，新增局部参考 | Logic 的 `Effect : Actor`，有独立 EffectData／EffectView；EffectData 同时含 Life、State、Position、绑定 Tile 等数据 | 现有项目已经有“Effect＋自身状态＋独立表现”的实例；这类效果也可能是棋盘机关实体，不仅是 RPG 属性 Buff |
-
-以下分别标明本仓库与外部宿主路径，来源根见 [00](00_参考资料与证据.md)：
-
-- `参考项目/FA/实现/Lua/Game/TwoMerge/Article/State/ArticleStateBase.lua`、同目录 `ArticleStateLock.lua`、`ArticleStateDeepLock.lua`。
-- `/Users/betta/Company/Projects/meatloaf_client/client/Assets/Game/Merge/Scripts/Runtime/Logic/Entities/Entity/Element/ElementState.cs`、`ElementEntity.cs`；`Function/Factory/FunctionController.cs` 位于同一 `Entities/` 下。
-- H 根为 `/Users/betta/Company/Projects/TileScape/Assets/Module/HomeHub/HomeScene/Scripts/`，关注 `Logic/Entity/Level/EntityLevel.cs`、`Define/LevelState.cs`、`Logic/Entity/Function/FunctionController.cs`。
-- `/Users/betta/Company/Projects/meatloaf_client/client/Assets/Game/TileV2/Scripts/GameCore/Logic/GameLogic/Entity/Effect.cs`、`Data/EffectData.cs`（相对同一 `GameLogic/`）；`/Users/betta/Company/Projects/meatloaf_client/client/Assets/Game/TileV2/Scripts/Config/Effect/EffectConfig.cs`、`EffectState.cs`；`/Users/betta/Company/Projects/meatloaf_client/client/Assets/Game/TileV2/Scripts/GameCore/View/GameView/Views/TileEffect/EffectBase.cs`。
-
-TileV2 这里只作概念对照：没有完成整个 ECA、攻击传播和表现时序审计，也不建议搬入整套机制。其 EffectData 已含显示协调数据，不能直接当作新二合的纯领域 DTO。
-
-## 冰冻、箱子、炸弹不一定属于同一建模层
-
-按玩法角色和生命周期判断，比按美术名称判断可靠。
-
-| 具体语义 | 建议模型 | 原因 |
-| --- | --- | --- |
-| 给现有物品附着冰冻，解除后原物仍在 | EntityElement 上的 FreezeEffect | 它修饰原物品的行为 |
-| 锁住一块土地，换物品也不改变土地锁 | EntityTile 上的 LockEffect | 效果留在位置，不随物品移动 |
-| 给生成出来的物品加锁，物品迁移时应跟随 | EntityElement 上的 LockEffect | 归属是物品实例 |
-| 箱子占据格子，有自己的生命／掉落／身份 | 障碍 Entity＋受击／掉落行为 | 它本身是棋盘对象，不必附着在另一个物品上 |
-| 一层木箱外壳包住原有物品 | Item／EntityTile 上的 CoverEffect | 壳和被包物的身份不同，可分开解除 |
-| 可移动、可合成的炸弹道具 | EntityElement＋爆炸 Function | 炸弹是物品，爆炸是能力；倒计时是该能力的数据 |
-| 给普通物品附加“被消耗时爆炸” | ExplodeOnConsumedEffect | 原物仍保留种类，附加触发后果 |
-
-冰冻／木箱／炸弹只是帮助比较的例子，本轮不据此新增三个正式功能。
-
-若未来机关需要独立身份和生命周期，可讨论独立 Entity；单格锁与气泡的具体宿主和结构仍待确认。D10 已确定格子采用 EntityTile／EntityViewTile，是否采用 Effect 不影响这个对象决定；每格具备哪些基础 Function 另按实际职责确定。
-
-## 锁效果不能只有一个 CanOperate
-
-建议至少按当前需求区分 Select、Drag、MergeAsSource、MergeAsTarget、Activate、Remove 等意图。仓库接入时再加 Store，不预列几十个未使用权限。
-
-各业务状态的权限只维护在 [04 的权限矩阵](04_棋盘交互与合成.md#锁与能力矩阵建议)，不在这里复制另一张表。浅锁不阻止合法目标合成，不表示它能越过其它限制；若同一目标还存在禁止合成的冰冻，最终仍应拒绝。冰冻只作组合示例。
-
-候选查询过程：
+类名以本文为实现用名，EntityXXX／EntityViewXXX 命名继续有效。FunctionBase、EffectBase、ViewFunctionBase、EffectViewBase 保持薄基类，提供各自必要的绑定与清理；没有真实复用需求时，不抽一个包办四者的组件框架。Effect 不注册为独立 Entity，不另建全局 EffectSystem、EffectStateManager。
 
 ```text
-EvaluateIntent(意图, 源实例, 目标实例, 源格, 目标格)
-  → 实例仍活跃、坐标与身份有效
-  → 物品具备相应行为／配置关系
-  → 棋盘与区域前置条件
-  → 源／目标 EntityTile 和 EntityElement 的有效效果限制
-  → 该行为自己的次数、费用、空间等校验
-  → 可执行，或明确拒绝原因及来源
+Logic：EntityElement
+  Functions
+    FunctionGenerate：剩余次数、冷却依据、生成规则
+    FunctionMerge：合成规则与本能力实际所需数据
+  Effects
+    EffectBubble：解锁条件、可选期限、结束规则
+    EffectFreeze：本次限制及实际需要的期限／来源
+
+Graphic：EntityViewElement
+  表现 Functions
+    FunctionViewDrag
+    FunctionViewGenerate
+    FunctionViewEffects
+      EffectViewBubble
+      EffectViewFreeze
+  共享视觉贡献：由 EntityViewElement 统一汇总并应用
 ```
 
-第一版可采用“所有必需条件满足，任一适用效果禁止则拒绝”。解除一个锁时，移除该效果后重新查询；不能直接把 `CanDrag=true`，否则可能错误覆盖仍然存在的其它限制。若未来有“穿透某一种锁”的能力，按具体效果匹配例外，不能让任意 Allow 抹掉全部 Deny。
+气泡附着在已存在元素上的关系用于说明机制；“先有包装、解锁后才创建内容物”的模型仍由气泡专题裁定。示例不新增冻结等正式玩法需求。
 
-查询结果／标签可以缓存，但只是派生值。不要同时持久化 `Locked=true` 和 `LockEffect` 并允许两处分别修改。
+Function 与 Effect 都可以有数据、方法和生命周期；长期／临时、有数据／有行为均不是分类依据。生成次数与冷却只在生成 Function 保存；Effect 的期限在自身保存。局部阶段可使用字段或 enum，不建立独立 State 层。基础数值、位置和选中记录也不需要包装成 Effect。
 
-## 与 MMO／RPG／MOBA Buff 的关系
+逻辑与表现不强制同名、同数量：纯逻辑 Effect 可以没有 EffectView；不同逻辑气泡可共用 EffectViewBubble；表现 Function 可处理多个业务结果。Effect 不内嵌另一套 FunctionController，复用算法时调用普通规则方法或已有能力。
 
-附着宿主、改变规则、有来源、可叠加／解除、有持续或触发条件，这些性质与 Buff／Debuff 很相近。UE GAS 的 Effect 支持瞬时、有限期和无限期，也有独立的运行期描述与叠加策略；官方还提供 Effect 阻止 Ability 的标签机制。可借鉴概念边界，不需要引入联网预测、复制与完整属性聚合系统。[Epic：Gameplay Effects](https://dev.epicgames.com/documentation/unreal-engine/gameplay-effects-for-the-gameplay-ability-system-in-unreal-engine)、[Effect 阻止 Ability](https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/GameplayAbilities/UBlockAbilityTagsGameplayEffectC-)
+## 2. 装配、身份与集合
 
-棋盘需要额外关心宿主是物品还是地块、覆盖范围、合成后的效果继承，以及一次变化引起的空间竞争。这些并不能仅靠传统“加属性、过几秒减回来”解决。
+### 只读定义、实例与创建入口
 
-命名候选：持续附加的规则对象叫 GameplayEffect／EffectInstance；本次一次性变化继续叫 Operation；动画使用表现模块／VFX。若效果最终成为独立 Entity，则按 EntityXXX／EntityViewXXX 对应命名。避免“爆炸效果”同时指爆炸规则、扣除操作和粒子，导致三个模块都负责修改数据。
+1. 配置描述元素要装配哪些能力、能力配置，以及新局实际需要的初始效果。定义只读，多实例可共享；实例字段独立，两个生成器不能共用剩余次数。
+2. 显式工厂按能力／效果类型键创建类。可用简单注册字典或 switch，不以反射顺序决定业务顺序；两者不并建。
+3. 逻辑工厂仅创建 Function／Effect。Graphic 的注册表把效果类型或表现配置键映射到 EffectView；允许无表现，允许多种逻辑类型共用一种表现。
+4. 新建按配置产生初始字段；恢复先创建实例并还原记录，不能再执行新建赠送、抽取、扣费或重置期限。
+5. 所有格子、元素及关联完成后才启用依赖完整局面的行为，遵守 D14。View 绑定不会触发逻辑装配。
+6. 未注册的必需逻辑类型或无效配置在装配时报告并停止该实例初始化；已创建的临时对象按逆序清理，不留下半装配对象。缺失可选表现不改变逻辑结果。
 
-## 三种兼容方式
+### 逻辑生命周期的最小方法
 
-| 方案 | 好处 | 代价／限制 | 适用判断 |
-| --- | --- | --- | --- |
-| Function＋内部字段，限制也由专用能力表达 | 复用装配方式，局部规则直接 | 同类多份、解除与权限组合需要清楚协议 | 有效候选；不因此引入独立 State 层 |
-| **Function＋独立 Effect 数据与规则处理** | 身份／叠加／存档与行为实现各有归属；权限统一查询 | 需要小型效果集合和求解约定 | **本次推荐试验方向** |
-| Effect 直接继承 EntityFunctionBase | 复用已有注册、触发、释放代码 | FunctionType 与 EffectInstanceId 不同；宿主三合同类型 Function 去重，难以直接容纳多个来源和多份效果；也易出现两套顺序 | 只有证明生命周期和实例规则完全一致才采用 |
+基类只提供 Bind 与 Release，具体能力／效果提供自己的新建字段初始化和 Restore 方法；需要完整局面后启用的机制再实现 Start。调用顺序为“创建对象 → 绑定拥有者与键 → 新建初始化或 Restore 二选一 → 加入集合 → 完整关联后 Start”。Start 不发首次奖励、不重置恢复数据。没有启动工作时不保留空的逐帧调用。
 
-推荐方案不要求两套庞大的管理框架。Entity 可以直接拥有 Effects 集合与少量 EffectRules；如果现有装配必须通过 Function，可用一个 EffectHostFunction 做接入，具体效果不要重复注册成多个普通合成消费者。
+Function 的 Bind 接收 owner 与稳定槽位键；Effect 的 Bind 接收 owner、RuntimeId 与定义。配置在新建／恢复前就绪，具体类型持只读定义与自身唯一可写数据。销毁宿主时先退出活动查询，再逆序 Release；Release 幂等且仅清理引用／订阅，不触发其它业务。正常附加与解除产生的业务变化由调用它们的规则入口显式组织。
 
-EffectDefinition 描述只读规则；EffectInstance 保存该次附加数据；普通规则处理器参与查询与求解。只读定义和运行实例分开的方向，也可对照作者的 [Stray Pixels 状态效果文章](https://straypixels.net/statuseffects-framework/)；其中协程直接改宿主的示例不按原样迁入本项目。
+### 几种键各有用途
 
-## 最小数据与写入边界
-
-最小效果数据可先内嵌在 EntityTile／EntityElement 下：DefinitionId 与该类型专用数据即可，宿主由容器确定。只有需要同类型多份、外部精确引用或独立生命周期时才加 EffectInstanceId；不要在内嵌记录中重复保存一套可写 HostId。期限、层数、来源按机制添加，不创建万能字符串参数字典。
-
-例如 LockEffect 可以有 Deep／Shallow 阶段，或以配置定义替换表达阶段；BubbleEffect 有截止时间与替换规则。效果里保留局部阶段没有问题，避免恢复旧的“整个物品只能处于一个状态”。
-
-| 数据／行为 | 唯一拥有者 | 写入与恢复 |
+| 键 | 用途 | 是否必须持久化 |
 | --- | --- | --- |
-| 效果定义与规则参数 | ConfigSnapshot | 导入时校验，运行只读 |
-| 附着集合、层数／阶段／截止时间 | Logic 的 EntityTile 或 EntityElement | 对应 Operation.Apply 内写 |
-| 有效权限与拒绝原因 | 规则查询／派生缓存 | 从业务事实计算，不另存可写布尔值 |
-| 效果持久记录 | 03 的 ProfileAdapter | 和所属棋盘／物品同一完整快照保存 |
-| 图层、粒子、材质、动画句柄 | Graphic | 根据结果创建和清理，不参与权限计算 |
+| EntityElement 的运行身份 | 找到当前元素及其 View | 沿既有实体方案；持久身份仍由 03／存档专题确定 |
+| Function 的稳定配置槽位键 | 对应某一份能力及其存档；不按 List 下标恢复 | 保存或由稳定定义恢复；单份能力可用固定类型键 |
+| Effect 的定义／配置键 | 确定效果种类与参数 | 恢复规则所需时保存 |
+| Effect.RuntimeId | 标识本次附着，不与类型键混用 | 仅运行期；重开可重新分配 |
+| View 的绑定版本、资源请求版本 | 隔离旧会话、旧绑定及同实例旧资源回调 | 否 |
 
-锁附着到哪个宿主由产品语义决定；TileEffect 和 ElementEffect 不代表必须重复记录同一个锁。旧配置导入时只映射到选定的一个权威位置。必须明确允许组合，第一版不自动开放“深锁＋气泡＋任意其它效果”的全部笛卡尔积。
+基础集合使用普通 List／Dictionary。Function 以稳定槽位键定位，Effect 以 RuntimeId 定位。RuntimeId 在当前宿主生命周期内递增且不复用，跨重建再结合宿主会话区分；不为此引入持久 UUID。
 
-效果存在与效果当前是否生效也要分清：若未来有压制机制，不必删除再重建原实例。首版没有压制需求时，不提前实现通用条件树。
+### 添加、更新与移除
 
-## 如何进入原来的 Command／Operation 链
+- 集合写入入口仅供业务执行阶段调用；运行遍历期间不直接增删，先确定本次变化，再执行增删。
+- Add 分配新 RuntimeId；Update 修改指定实例的专用字段；Remove 按实例键删除，重复删除返回 false 且无其它副作用。
+- 同类型可以表达多份独立实例，但不自动复制、合并或覆盖。同类型第二次附加究竟拒绝、刷新或新增，由具体效果的应用方法明确写出；无需通用叠加策略枚举或管理器。未实现某种重复规则时，业务入口拒绝该种重复请求。
+- 刷新现有实例保留其 RuntimeId；移除后再添加分配新 ID。独立实例分别持期限与规则，移除一份保留其它份。
+- 释放实例只清理实例资源和引用；奖励、爆炸等业务后果必须由明确的业务规则执行，不能写在 Release／析构／View.Unbind 中。
 
-```mermaid
-flowchart LR
-    Command[玩家或时间命令] --> Rules[Function 与业务规则求解]
-    Effects[EntityElement 与 EntityTile 的效果数据] --> Rules
-    Rules --> Plan[完整变化方案]
-    Plan --> Record[一次登记完整业务 Operation]
-    Record --> Apply[Operation.Apply]
-    Apply --> State[物品 地格 效果状态]
-    Apply --> Profile[完整成功后发布 Profile]
-    Profile --> Graphic[View 与效果表现]
+## 3. 权限查询：普通方法与 bool
+
+**综合权限没有可写字段。** 不增加 Entity.CanClick、CanGenerate、SetCanClick；也不建立 RuleCheck、BlockReason 或其它通用权限结果对象。方法返回 true／false 已足够。各对象仍可保存属于自身的真实布尔事实。
+
+按动作查询，如 CanGenerate、CanDrag、CanMerge、CanUnlockBubble。物理点击路由先确定动作，再调用对应查询。需要在 Effect 中分派动作时，可用一个只含已实现动作的 ElementAction 枚举；它表示业务动作，不额外引入结果码、拒绝原因或角色枚举。
+
+ActionContext 只携带该次动作的必要只读上下文：源／目标引用、对应 Function 或待解除 Effect 的运行键、统一采样的 now。动作没有目标时目标可空；只接受合法组合，不堆积 object 参数字典或预建所有玩法字段。
+
+### Effect 的 bool 语义
+
+```csharp
+// EffectBase：默认对动作没有阻止，具体效果只覆盖需要的规则。
+public virtual bool Blocks(ElementAction action, in ActionContext context)
+{
+    return false;
+}
+
+// EntityElement 内部辅助方法，不是整项业务的公开执行许可。
+internal bool AllowsEffects(ElementAction action, in ActionContext context)
+{
+    foreach (var effect in effects)
+    {
+        if (effect.Blocks(action, context))
+            return false;
+    }
+    return true;
+}
 ```
 
-Effect 不另开一条可以随时写实体的回调链。预览／CanExecute 只读；效果触发先参与局部求解，结果进入 Operation；动画结束只释放表现资源。
+Blocks=true 表示本效果阻止；false 表示没有阻止，不能覆盖其它拒绝。限制期间保留 Function 及其进度，不通过删除后重建 Function 来临时禁用能力。若将来某种效果授予新能力，应在业务执行时明确装配该 Function；返回 false 不会凭空授予能力。AllowsEffects=true 仅代表效果检查通过，调用者还必须完成业务基础条件校验。代码按实际宿主风格实现；这里的 effects 是私有集合。
 
-以“普通物品合成进浅锁目标”为例：统一校验源与目标 → 求解新物品、目标锁移除、四邻锁阶段变化及附加物落点 → Apply 完成 → 发布 Profile 快照 → Graphic 播放（实际落盘另行跟踪）。若某个效果解除后还要改变邻居，在这次规则求解中确定；不要在播放解锁动画时补发业务。
+公开 CanXXX 方法属于相应业务规则入口，统合 Function 自身条件、格子事实及相关元素的 Effect。简单规则直接用方法，不为每个 Can 方法再创建 Function 或服务类。
 
-以后真有炸弹连锁时，再使用局部有序工作队列、同次去重和终止约束处理派生变化；不改变全局 Command FIFO。当前只做锁时无需预建通用反应引擎。若配置会无限触发，应在 Apply 前诊断并拒绝该变化，不能提交半个连锁后静默截断。
+### 一次动作的调用顺序
 
-## 合成、移除与恢复必须先定的协议
+```text
+1. 校验元素仍有效、位置与格子关系正确、所需能力存在
+2. 从基础参数开始，计算本次适用 Effect 修正后的有效参数
+3. Function／相应业务规则检查次数、最终费用、冷却、目标关系等
+4. 检查参与元素的 Effect：任意 Blocks=true 则返回 false
+5. 全部通过返回 true
+```
 
-1. **随谁移动**：ElementEffect 随持久物品身份走；TileEffect 留在原地。换位不能交换地块效果。
-2. **合成后的去向**：两个旧物品消费后，效果是移除、转移、按新配置重建还是阻止合成，按类型明确。不能默认把两边效果都复制给新物品。
-3. **深浅锁的阶段变化**：可以是同一个锁实例降级；也可以替换效果定义。二者择一，保证引用和存档稳定，不同时保存另一个可写 TileLock 枚举。
-4. **撤销恢复**：售出／删除记录需要带回属于物品的完整效果数据；原地块效果由地块自己保留，不能一并覆盖。期限自然流逝还是暂停仍按 Q05 裁定。
-5. **时间推进**：效果到期沿用 05 的时间命令；选中气泡的保护仍查询逻辑选择。EffectView 的可见／销毁不重置期限。
-6. **注册与释放**：本次 Runtime 装配规则处理器并在关闭时释放；宿主持有效果实例；退役后立刻退出业务查询，效果表现独立收尾，旧回调检查实例与代际。
+生成检查生成器；合成分别检查源和目标，动作分别为 MergeAsSource／MergeAsTarget；不扫描全盘无关 Effect。Tile 尚未使用 Effect，格子的真实条件直接由格子／业务规则方法检查。
 
-63 格、每对象少量效果时，按参与对象遍历效果即可，复杂度约为 O(参与对象数×每对象效果数)。先保持直接可读，不先加全盘每帧 Tick、通用标签语言或全量属性聚合。
+查询只读：不扣费、不消耗次数、不抽取正式随机、不删除到期 Effect、不发奖励、不弹窗。首版直接查询少量对象，不缓存权限；诊断可用断点或开发日志，不增加正式错误码体系。正常业务条件不满足返回 false；配置缺失或程序异常按故障入口处理，不吞掉异常并伪装成普通拒绝。
 
-Q11 的选型与待决规则集中在 [09](09_决策与接续记录.md)，实现和验证顺序见 [08](08_实现顺序与验证.md)。允许先用少量直接规则验证锁效果，无需先实现完整 Buff 管理器。
+## 4. 参数求解、实际执行与时间
+
+### bool 不承载本次业务参数
+
+费用、产物和落点等是业务数据，不能在去掉 RuleCheck 后丢失。公开资格方法返回 bool；实际执行使用内部的准备方法，将本次参数放在局部变量或具体业务参数结构中：
+
+```csharp
+public bool CanGenerate(EntityElement element, long now)
+{
+    return TryPrepareGenerate(element, now, out _);
+}
+
+// GenerateParameters 只含本次生成需要的数值；不是权限结果类型。
+internal bool TryPrepareGenerate(
+    EntityElement element, long now, out GenerateParameters parameters)
+{
+    parameters = default;
+    if (!IsValidGenerator(element))
+        return false;
+
+    var candidate = BuildEffectiveGenerateParameters(element, now);
+    if (!MeetsGenerateRequirements(element, candidate, now))
+        return false;
+
+    var context = CreateGenerateContext(element, now);
+    if (!element.AllowsEffects(ElementAction.Generate, context))
+        return false;
+
+    parameters = candidate;
+    return true;
+}
+```
+
+上述为接口示意，辅助方法由生成规则实现；GenerateParameters 仅在该能力需要共享求解参数时建立。这里不确定随机产物，不推进随机源。实际生成在业务执行入口重新 TryPrepare，随后在局部求解上下文确定产物等，并用同一份有效参数完成扣费和次数变化。UI 查询得到的 bool 不能作为稍后执行的凭证。
+
+局部准备和写入之间不等待动画／网络／广告回调。确需异步等待时，返回后重新核对宿主、目标身份与效果实例，重新查询和求解；旧参数不直接复用。当前状态需要另一步时间归一化时，由执行入口先完成该步，再用统一 now 检查，不在 Can 方法中偷偷结算。
+
+### 数值按定义的阶段合成
+
+每次从只读配置和当前基础数据求有效值，不能在旧的最终数值上反复乘倍率。需要修正的能力以明确的类型化方法收集该参数的修正项；没有数值需求的 Effect 不增加空泛的属性系统。
+
+需要减费等机制时，由生成模块定义一个窄的修正接口，例如 IGenerateModifier.CollectGenerateModifiers(context, ref modifiers)，相关 Effect 按需实现；生成规则遍历当前效果并收集。modifiers 是本次查询的局部固定增减／倍率数据，初值分别为 0／1。其它能力出现自己的修正需求时定义对应接口，不给 EffectBase 预加几十个空方法，也不使用万能属性名字符串与 object 值。
+
+例如费用可以选用“基础值＋固定增减 → 倍率 → 限界与一次取整”。这只是数值协议示例，每个实际参数明确规则、单位、取整与稳定计算顺序，不因添加顺序改变结果。100 加 20 再乘 0.5 是 60，反过来是 70；不可默认任意变换可交换。
+
+基础费用为 10、余额为 6、减费后费用为 5 时，先计算 5 再判断余额。实际扣费使用已求解的 5。修正冷却时应区分下一次时长和已经开始的期限；具体项目自行定义，不据此改生成 Function 的数据归属。
+
+### 有副作用的触发
+
+气泡到期销毁、消耗层数、解除后奖励、消耗元素后影响邻格，由具体 Function／Effect 规则形成变化，交由统一业务入口执行。权限、参数修正、业务触发三者分开调用，不用一个 OnEffect 通吃。
+
+不会因某个 Effect 检查返回 false 就消费它。派生变化先在本次局部结果中求解，避免在遍历或表现回调中再次修改活动集合。需要连锁时才增加有序局部工作队列与终止约束；不预建通用反应引擎。
+
+Function／Effect 接受业务时间或明确的时间推进调用，自己不启动 Unity 协程计时。期限表示、暂停和离线规则按机制选择；没有 View 也必须能完成已定义的到期业务。完整执行失败协议仍见 [第 6 项](../待讨论项/6_Command与Operation执行边界.md)，时间源及 Host 调度见 [第 8 项](../待讨论项/8_时间推进与表现生命周期.md)。
+
+## 5. EffectView 的创建与同步
+
+Graphic 根据逻辑结果获得只读显示数据，不把可写 Function／Effect 实例暴露给 UI。最小显示记录包括：
+
+- 宿主运行身份与本次绑定关系。
+- Effect.RuntimeId。
+- 效果类型及显示需要的表现配置键。
+- 对应类型的必要显示字段，例如气泡期限、层数或阶段。
+
+记录是稳定副本；不必复制整个逻辑对象。两种气泡可映射到同一 EffectView，但保留各自实例键；期限没有启用时，显示字段明确为空而非用 0 猜测语义。
+
+FunctionViewEffects 使用一个 SyncEffects(currentSnapshots) 入口，在初次绑定和已完成业务结果到达时对齐整个当前效果集合：
+
+1. 按 RuntimeId 检查已有 EffectView。
+2. 新出现且需要显示的实例，通过 Graphic 工厂创建并 Bind。
+3. 仍存在的实例 Refresh，替换自己的显示字段与贡献。
+4. 已不存在的实例撤回贡献并解除绑定；需要消散动画时单独移交退出表现。
+5. 某次配置变化需要换表现类型／资源时，先撤回旧绑定，再按新显示记录创建；单纯字段变化不重建资源。
+
+SyncEffects 按业务结果顺序调用，重复同步相同快照不重复创建或叠加贡献。View 初次创建／重建读取完整当前快照，不依赖历史增删事件；不能在重建时补播奖励、重新添加效果或重置期限。
+
+## 6. 表现生命周期与旧回调
+
+EffectViewBase 使用最小方法：
+
+| 方法 | 行为 |
+| --- | --- |
+| Bind(view, snapshot) | 建立新绑定，申请自身资源；只做表现，不调用逻辑添加 |
+| Refresh(snapshot) | 更新显示与来源贡献；必要时发起新的资源请求 |
+| Unbind() | 撤回自身贡献、取消请求与动画、注销订阅，归还资源；允许重复调用 |
+
+逻辑 Effect 在业务移除时立刻失效；效果表现可以继续消散。Unbind 立即释放对宿主共享属性的控制，退出动画只持自己的资源与显示副本，结束后归还；业务结果可指定退出样式，不要求先建立通用解除原因枚举。场景关闭或资源失败时可跳过退出动画。
+
+异步完成须核对：宿主会话／运行身份、View 绑定版本、Effect.RuntimeId、当前资源请求版本。Refresh 改变资源请求时，旧请求即使属于同一 Effect 也应失效。晚到的资源只归还，不再创建过时表现或删除新实例贡献。
+
+View 隐藏、回池和业务实体销毁由不同入口处理：回收可视资源不删除逻辑 Effect；重新显示按当前数据重建。宿主彻底关闭时停止业务入口与时间驱动，再解除 View 绑定及逻辑引用，具体 Host 顺序由第 8 项统筹。Release 不执行业务奖励或主动解除流程。
+
+## 7. 多个视觉效果怎样共同作用
+
+### 独立资源分层显示
+
+气泡外壳、绿色粒子、冰冻覆盖物等各自持有子节点，配置挂点与渲染顺序。移除一个 EffectView 只释放它自己的资源，不清空宿主特效根。
+
+同类多份逻辑效果若只显示一份，Graphic 以当前完整实例集合形成视觉组；任一来源移除后重新计算组是否仍存在，不能让第一份的 Unbind 直接删除其它来源共用的资源。实际没有合并需求时，各实例各自显示。
+
+### 共享属性只有一个写入口
+
+EntityViewElement 管理共享视觉贡献。普通表现 Function 与 EffectView 都以自己的来源键调用 SetVisualContribution／RemoveVisualContribution；来源键在当前绑定内唯一，不同种类来源不能碰撞。FunctionViewEffects 负责效果表现集合，不独占其它表现 Function 的渲染职责。
+
+更新同一来源时替换其贡献，移除时只删除该来源。最终值由“当前基础外观＋当前所有贡献”重新计算，然后统一写渲染器。动画等导致基础外观变化时也重新计算，不恢复某个效果添加前拍下的旧值。
+
+| 视觉通道 | 基础实现约定 |
+| --- | --- |
+| 动画暂停 | 所有来源的暂停要求取 OR；任一要求暂停就暂停 |
+| 动画速度 | 没有暂停要求时，基础速度乘有效速度倍率，校验单位和范围 |
+| 不可混合材质／样式 | 按显式优先级择一，同优先级用稳定来源键裁定；未显示来源仍保留 |
+| 颜色与 Shader 参数 | 只对当前资源实际支持的通道定义混合；不承诺任意材质可自动组合 |
+| 独立覆盖物 | 各自节点按配置层级显示，不与共享材质写入混为一条路径 |
+
+贡献中的 PauseAnimation 表示某个来源自身的要求，可以是 bool；最终综合暂停结果仅在 View 内计算，不由来源直接改 Animator。控制范围限于相应视觉对象，不使用全局 Time.timeScale 暂停业务。
+
+首版只实现实际使用的通道。渲染实现先选匹配资源的普通方法，不预建完整着色图／属性聚合框架。缺失必需图标记录诊断并使用项目占位方式；不改变逻辑类型、期限或权限。
+
+## 8. 保存、恢复、合成与移除
+
+### 逻辑数据导出约定
+
+每种 Function／Effect 将需要恢复的数据导出为独立、类型明确的记录，读取记录恢复自身字段。记录归所属元素保存，没有通用 State 行为层，也不存运行对象、委托、View 或动画句柄。
+
+| 记录 | 需要表达 | 不保存 |
+| --- | --- | --- |
+| Function 记录 | 稳定槽位键、类型／配置键、需要恢复的次数、期限与局部阶段 | 集合下标、可写权限缓存、Unity 对象 |
+| Effect 记录 | 类型／定义键、每份实例的专用数据；实际需要的期限、来源和层数 | 运行 RuntimeId、EffectView、临时资源和旧绑定版本 |
+
+这些是记录含义，不是用户已生成 Profile 类的现有字段。宿主生成定义怎样扩展、具体序列化协议与版本迁移继续由 [03](03_状态模型与Profile.md)及存档专题确定。导出必须深复制或构建稳定值记录，不能把仍会变动的集合直接交给后台保存。
+
+恢复时按稳定槽位键创建能力、按每份效果记录恢复实例并分配新运行键；多份同类记录不能只取最后一份。恢复不走正常“再次附加”的产品流程，不重新抽奖／扣费／刷新期限。未知类型或损坏字段按存档协议报告并保留原始记录，不静默丢弃。
+
+### 跨对象变化
+
+- 移动元素：Function／Effect 随同一逻辑元素保留；Tile 的独立事实不随元素移动。
+- 合成：明确哪些能力数据重建／继承，以及每种 Effect 是阻止、终止、迁移还是重新附加；不能默认复制所有字段。具体规则由项目定义，未配置该类型的处理时先不启用该组合。
+- 删除／销毁：元素退出活动查询，同次移除其逻辑能力与效果；Graphic 使用已取得的显示数据收尾。
+- 专用撤销：保留所属元素需要恢复的 Function／Effect 数据，按第 9 项确定身份、计时与结算；不覆盖 Tile 后续变化。
+- Tile 是否增加 Effect 以及一级／二级锁的归属仍由第 3 项确定。本模块不提前给不存在的一级锁元素创建能力或效果。
+
+## 9. 从文档开始实现时的边界与核对
+
+新增一种 Effect 时，实施者依次补：逻辑类与只读定义、逻辑工厂注册、需要的 Blocks／修正／触发方法、专用数据的导出恢复；有视觉需求时再补 EffectView 映射与资源，以及组合用例。通常无需修改其它已有 Function 的权限判断；确需一种全新数值通道时由对应能力增加窄接口，不把所有新增效果塞进中央大分支。保存与表现注册是明确的接入成本，不能遗漏。
+
+可以直接开始实现的部分：薄基类与显式工厂、实体内集合、只读 bool 查询、按动作检查、具体参数修正、EffectView 同步与释放、共享视觉贡献、独立数据导出／恢复接口，以及不依赖 Unity 的组合验证。
+
+开始集成时，先按 [08](08_实现顺序与验证.md)验证以下结果；测试效果只作为验证载体：
+
+| 案例 | 应满足 |
+| --- | --- |
+| 气泡与冻结按不同顺序解除 | 仍存在的限制继续生效，移除不直接恢复综合权限 |
+| 仅限制生成的效果存在，查询解锁气泡 | 按动作分别判定；查询不产生任何写入 |
+| 基础费用 10、余额 6、减费到 5 | 用有效费用校验与执行，重复查询不重复减费 |
+| 数值效果添加顺序改变 | 按定义的阶段与稳定顺序计算，不依赖集合偶然顺序 |
+| 两份暂停贡献，解除一份，同时保留速度倍率 | 仍暂停；暂停全部解除后恢复当前合成速度 |
+| 同类效果删除再添加，旧资源回调到达 | 不创建旧表现、不移除新贡献；当前效果刷新后的旧资源请求也失效 |
+| 无 View 时到期、View 重开、退出动画未结束 | 业务只执行一次，重建不重置期限，视觉尾声不持有逻辑限制 |
+| 保存恢复两份同类效果、交换能力配置顺序 | 不按列表下标认能力，不合并或丢失独立效果记录 |
+
+仍需由其它主题确定的输入，不阻止本模块基础实现：
+
+| 主题 | 尚未决定的内容 |
+| --- | --- |
+| [3 锁](../待讨论项/3_锁的归属与分阶段解锁.md) | Tile 是否使用 Effect、阶段归属、权限与待揭示内容 |
+| [4 气泡](../待讨论项/4_气泡Effect与物品生命周期.md) | 内物是否已存在、各变体条件、到期结果与实际重复附加规则 |
+| [6 执行](../待讨论项/6_Command与Operation执行边界.md) | Command／Operation 的完整成功、故障与重入协议；查询 bool 不代表执行或保存成功 |
+| [7 存档](../待讨论项/7_数据持久化与Profile接入.md) | 生成定义、版本、持久身份、内存发布与实际落盘 |
+| [8 时间与 Host](../待讨论项/8_时间推进与表现生命周期.md) | 时间服务、离线／暂停规则、隐藏／关闭调度与宿主取消入口 |
+| [9 撤销](../待讨论项/9_售出删除的专用撤销.md)／[10 模块](../待讨论项/10_模块边界与实施顺序.md) | 撤销产品协议、程序集与宿主启动装配 |
+
+上述外围契约用窄的时间、保存、资源及业务提交入口对接；不在本模块私建另一套 Profile、命令队列或全局调度器。完整棋盘的生产接入仍需完成这些专题，本文不把它们默认为已经确定。
+
+## 参考依据与概念边界
+
+10 个参考项目的职责对照、旧二合／三合／HomeHub／TileV2 的核对依据已集中到 [00 的 Function／Effect 参考依据](00_参考资料与证据.md#functioneffect-参考依据)。历史方案用于说明取舍，不要求接手者重新选择本页已确定的方向；原框架调用细节按需查 [02a](02a_逻辑表现分离架构详解.md)。
+
+Buff 类比适用于“附着宿主、改变规则、可解除”的机制；基础数值和能力流程仍归各自对象。独立炸弹道具可以是 EntityElement＋爆炸 Function，附加“被消耗时爆炸”可以是 Effect；箱子若本身占格且有独立身份，可作为业务对象，外壳附着原物时再比较 Effect。此类例子不新增首期需求；任何 TileEffect 仍以第 3 项确认结果为准。
