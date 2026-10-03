@@ -4,16 +4,16 @@ D02 的 Profile 指宿主 meatloaf_client/client 已有基础设施，实际路�
 
 **D13／D14 已确认 Tile／Element 各自存档与先格子、后元素的恢复顺序。D51 使用 MapData.Initialize 判断是否首次生成存档，D52 确认存档接入直接参考宿主三合及现有 ProfileHub。** D19 不建独立 State 层；生成次数与冷却按 D15 归生成 Function。本文包含记录持有、首次初始化、恢复、业务修改与运行释放的完整契约，第 7 项已收敛。Command／Operation 见 [02b](02b_Command与Operation执行方案.md)，能力与效果见 [10](10_Function与Effect建模讨论.md)，业务权限见 [04](04_棋盘交互与合成.md)。
 
-## 已生成的存档类（D16，2026-10-02 重新核对）
+## 已生成的存档类（D16，2026-10-03 重新核对）
 
 实际目录为 [Assets/Game/MergeTwo/Profile](/Users/betta/Company/Projects/meatloaf_client/client/Assets/Game/MergeTwo/Profile)，命名空间为 **BettaSDK.Profile**。用户已将棋盘数据整理到 MapData，以下是当前生成代码的实际结构：
 
 | 生成类 | 实际字段／属性 | 对应方案 |
 | --- | --- | --- |
-| [ProfileMergeTwo](/Users/betta/Company/Projects/meatloaf_client/client/Assets/Game/MergeTwo/Profile/ProfileMergeTwo.cs) | MapData: MapData | 二合存档根，当前保存一份棋盘数据 |
+| [ProfileMergeTwo](/Users/betta/Company/Projects/meatloaf_client/client/Assets/Game/MergeTwo/Profile/ProfileMergeTwo.cs) | MapData: MapData；LastElementUniqueId: long，默认 0 | 二合根持有地图；Tile／Element 共用此持久计数器，保存最后已分配值 |
 | [MapData](/Users/betta/Company/Projects/meatloaf_client/client/Assets/Game/MergeTwo/Profile/MapData.cs) | Initialize: bool，默认 false；TileList: ProfileList<Tile>；ElementList: ProfileList<Element> | Initialize 为存档数据初始化标记；两类棋盘记录类型已核对 |
-| [Tile](/Users/betta/Company/Projects/meatloaf_client/client/Assets/Game/MergeTwo/Profile/Tile.cs) | Pos: Position；CfgId: int | 格子坐标与配置 ID；没有 ElementId 字段 |
-| [Element](/Users/betta/Company/Projects/meatloaf_client/client/Assets/Game/MergeTwo/Profile/Element.cs) | Pos: Position；CfgId: int | 元素坐标与自身配置 ID |
+| [Tile](/Users/betta/Company/Projects/meatloaf_client/client/Assets/Game/MergeTwo/Profile/Tile.cs) | UniqueId: long；Pos: Position；CfgId: int | UniqueId 已重新核对生成；运行占位 ElementId 仍不存档 |
+| [Element](/Users/betta/Company/Projects/meatloaf_client/client/Assets/Game/MergeTwo/Profile/Element.cs) | UniqueId: long；Pos: Position；CfgId: int | 持久元素身份、坐标与配置 ID，UniqueId 已核对生成 |
 | [Position](/Users/betta/Company/Projects/meatloaf_client/client/Assets/Game/MergeTwo/Profile/Position.cs) | X: int；Y: int | 整数坐标记录 |
 
 方案中的 Coord 对应 **Pos（X、Y）**，ConfigId 对应 **CfgId**；不额外保存同义字段。Tile.CfgId 对应配置类型 MergeTwo.Two.Config.Tile 的 ID，配置见 [06](06_表现与资源.md#tile-与-element-的表现d10d11-已确认)。MapData 是存档容器，不新增 Board 逻辑对象；运行管理仍由 TileSystem／ElementSystem 负责。
@@ -149,12 +149,51 @@ OutputData 为空时，该代码会新建子记录并赋回 ElementData.OutputDa
 | Element 的 Coord | 元素当前所在格子坐标 | 已确认保存；移动时改变 |
 | Tile 的 ElementId | 当前占位元素的运行 InstanceId；两种称法指同一占位键 | 已确认仅运行时保存，恢复时重建，不进入 Tile 存档 |
 | EntityId | 运行 Entity／View 的身份关联 | 基础绑定候选；分配与跨存档映射待定 |
-| ElementInstanceId（候选） | 若需要跨保存引用某件元素，使用的持久身份 | 是否需要独立字段、如何与运行 ID 对应仍待讨论 |
+| Element.UniqueId（D65／D68） | 同一份元素存档的持久身份，支付补单据此定位 | 已确认 long；新建记录时先递增计数器，再赋给记录，恢复原值，不替换运行 InstanceId |
+| ProfileMergeTwo.LastElementUniqueId（D68／D69） | Tile／Element 共用的最后已分配序号 | 根存档 long，已生成，默认 0；只在实际新建业务记录时递增，普通恢复／Release 不修改 |
+| Tile.UniqueId（D65／D69） | 格子存档的持久身份 | long 字段已生成；新建记录与 Element 共用根计数器分配，恢复保留原值 |
 | InstanceKey／LayoutConfigId（候选） | 存档实例键／初始布局配置键 | 存档装配元数据，不要求重新建立 Board 对象 |
 | SessionGeneration／绑定版本（候选） | 隔离旧会话与旧 View 回调 | 重建／换绑时更新，具体协议待定 |
 | CommandId／BatchId（D43） | 调用诊断关联 | 运行期，不作存档去重；可选命令日志的稳定寻址另定 |
 
-旧代码以位置编码表达物品 identity，是来源事实；新运行关系必须能区分同格前后不同元素。具体持久身份方案未在本轮确认。
+旧代码以位置编码表达物品 identity，是来源事实；新运行关系必须能区分同格前后不同元素。D65／D68 已确认所有 Element 使用持久 UniqueId 及前缀递增分配；D69 确认 Tile 与 Element 共用同一根计数器，跨两类记录也不重复。运行 InstanceId、配置 ID、坐标与持久 UniqueId 各有用途，不合并为同一字段。
+
+### Tile／Element 持久身份与分配（D65／D68／D69）
+
+Tile 与 Element 存档均有 long UniqueId。D69 确认共用 ProfileMergeTwo.LastElementUniqueId；保留现有字段名，不新增 Tile 计数器。D68 的前缀递增规则同时用于两类记录，只在各自业务新建存档时执行一次：
+
+```csharp
+// 新建 Tile 存档时执行：
+tileData.UniqueId = checked(++profile.LastElementUniqueId);
+
+// 新建 Element 存档时执行：
+elementData.UniqueId = checked(++profile.LastElementUniqueId);
+```
+
+profile 是所属 ProfileMergeTwo。根计数器默认值仍为 **0**，表示尚未分配；前缀 ++ 先递增，再把新值赋给记录，所以两类记录共用的第一次分配得到 **1**，后续依次为 2、3……。例如先新建两个 Tile，再新建一个 Element，ID 依次为 1、2、3，计数器最终为 3；第一件 Element 不要求取得 1。LastElementUniqueId 保存两类记录共同的“最后已分配值”，**0 是无效持久 ID**。不把计数器初始值设为 1，否则首次分配会得到 2。无需额外临时变量、ID System 或 GUID。
+
+只有**新建业务存档记录**才取号。正常游戏在 Consumer 创建的 Operation.Apply 中调用既有新建入口；地编首次填充沿 D51 的受控初始化。规则查询、预览、Consumer 准备结果和单纯 new Entity／View 均不取号。`checked` 溢出时拒绝本次新建并报告，不绕回负数；计数器不回收，不要求序号始终连续。
+
+| 操作 | 存档记录与 ID |
+| --- | --- |
+| 地编首次创建 Tile | 每份新 tileData 从共享计数器取号一次；Tile 坐标、配置、解锁进度或运行占位变化不重新分配 |
+| 地编首次创建、生成、首次揭示元素 | 创建新的 elementData，分配一次新 ID；一级锁没有元素记录时不分配 |
+| A＋B→C 主合成 | 创建新的 C 记录并分配新 ID，A／B 原 ID 不复用 |
+| 移动、换位、气泡腾位、附加／解除效果 | 修改同一 elementData，保留 UniqueId |
+| 运行系统关闭后重新装配 | 绑定现有记录，不创建替代 elementData、不取号 |
+| 应用重启读档 | ProfileHub 反序列化还原记录后，玩法直接绑定它；反序列化创建 C# 对象不等于业务新建，不运行分配代码 |
+| View 重建或换绑 | 不创建业务存档、不取号 |
+| 克隆出另一件元素 | 是新物品，新的记录分配新 ID，不能把原 UniqueId 一起复制给它 |
+| 删除 | 移除记录，不回退计数器，不回收 ID |
+| 专用撤销恢复原物品 | 沿第 9 项恢复原物品身份的规则；复制恢复资料不自动等于新物品，不能在无参构造函数／反序列化 setter 中自动取号 |
+
+恢复只读校验 TileList 与 ElementList 中所有记录的 `UniqueId > 0`，并在两类记录合并的范围内检查无重复；根计数器须满足 `LastElementUniqueId >= 两类已存记录 UniqueId 的最大值`。两类列表都空时允许计数器为 0，也允许保留历史已分配的更大值。不能按当前存活记录最大 ID 重算并回写计数器：最高 ID 的记录可能已删除，旧业务仍引用它。地图运行实例 Release、普通 MapData 替换与恢复均不清零根计数器。
+
+计数器与新记录按已有 ProfileHub 保存；内存修改不等于落盘事务。跨账号归属由宿主校验；此递增方案适用同一条权威存档历史，旧档回退或多设备并发合档不是本地 +1 可独自保证的全局唯一问题，沿宿主恢复协议处理，不另建分布式分配框架。
+
+EntityElement 可只读转发 `Profile.UniqueId`。支付通过持久 ID 查找元素，当前 Entity／View／Tile 占位仍使用运行 InstanceId；ElementSystem 的查询直接使用既有集合，不另存第二套元素记录。**元素 ID 定位物品，当前支付请求标识区分同一物品上的不同支付尝试**；两者匹配后由支付结果 Command 的 Consumer 创建 Operation，具体规则见 05。
+
+共享计数器只统一持久身份分配，不合并 TileSystem／ElementSystem，也不改变 Tile 的运行占位 ElementId。支付仍查询 Element，不能因 ID 跨类型唯一而把 Tile 当作支付目标；位置查询继续使用坐标。
 
 ## 状态归属表
 
@@ -171,6 +210,7 @@ OutputData 为空时，该代码会新建子记录并赋回 ElementData.OutputDa
 | Tile.ElementId | EntityTile 运行数据／占位关系 | ElementSystem 与 TileSystem 统一维护 | **否，恢复元素时重建** |
 | 生成次数、冷却及项目算法所需轮次／游标 | 生成 Function 使用 Element 内的专用子记录 | 生成／时间 Operation.Apply；具体调度按专题确定 | 需恢复的字段直接写子记录；运行计时器不保存，不另建 State 层 |
 | 气泡定义、可选截止时间与该变体必要数据 | EntityElement 的 EffectBubble | 气泡业务执行入口 | 随 Element 保存；解除删除该份记录，移动不重置，D31／D33 |
+| 气泡 WaitPay | D60 新增持久事实；建议放在 Element 的 EffectBubble 子记录 | 开始支付 Operation 写 true；匹配支付成功／失败写 false，成功同次解除气泡 | 是，恢复原值；Release 不清零；生成字段和跨重启支付关联尚待接入，不能仅靠运行 InstanceId |
 | 气泡当前弹窗交互键（工程轮廓） | EffectBubble 运行数据 | 同步打开／关闭／解锁业务入口 | 不保存；不增加异步加载阶段，恢复期限不等于恢复旧窗口或广告回调 |
 | 宝箱开启／使用进度 | 对应 Function 自有数据 | 对应业务执行入口 | 恢复所需数据保存 |
 | 二合独有测试余额／以后独立体力 | 运行时／经济模块自有数据（候选） | 统一经济规则 Operation.Apply | 测试可用内存替身；需要跨重启时明确所属记录，不承诺与其它根的原子落盘 |
@@ -188,15 +228,15 @@ UI 可以读取能力查询和只读状态，但不能拿到 ProfileDict／List 
 
 普通元素的再次点击激活，以及售出／删除撤销机会是否因改选失效，需要逻辑的 `SelectedElementId`；最终交互与撤销规则分别见 04／第 9 项。选择框、缩放、手指跟随属于 Graphic，选择这一业务事实属于 Logic。
 
-**气泡保护已由 D34 改为有效解锁弹窗保护，不能用“是否选中”代替。** R 的选中过期气泡暂不变更仅是历史规则。新方案中，气泡 Click 选择后请求打开窗口；只选中、拖动或取消选择不自动延长其期限或结算气泡。气泡数据与交互键轮廓见 [05](05_生成器与时间.md#气泡-effect-与生命周期)。
+**D34 的有效窗口保护与 D60 的持久 WaitPay 保护分别表达不同事实，不能用“是否选中”代替。D63 已确认：支付失败清 WaitPay 后，未关闭的窗口继续保护。** R 的选中过期气泡暂不变更仅是历史规则。新方案中，气泡 Click 选择后请求打开窗口；只选中、拖动或取消选择不自动延长其期限或结算气泡。气泡数据与交互键轮廓见 [05](05_生成器与时间.md#气泡-effect-与生命周期)。
 
-具体选择动作仍可能使撤销凭据失效等，是否产生持久变化要看完整结果，不能按命令名断言 Select 永不保存。D36 已确认到期弹窗主动关闭时逻辑立即销毁、表现随后退场；隐藏棋盘、广告覆盖、退出应用不自动等同于主动关闭该弹窗，策略继续由第 8 项确定。有业务含义的离开步骤应在仍可接收业务请求时完成，再进入资源释放；不能在 View.Unbind 中补做销毁。
+具体选择动作仍可能使撤销凭据失效等，是否产生持久变化要看完整结果，不能按命令名断言 Select 永不保存。D36 已确认到期弹窗主动关闭时逻辑立即销毁、表现随后退场；隐藏棋盘、广告覆盖、退出应用不自动等同于主动关闭该弹窗，分别按 05 的调度与恢复约定、06 的整体 Release 协议处理。有业务含义的离开步骤应在仍可接收业务请求时完成，再进入资源释放；不能在 View.Unbind 中补做销毁。
 
 ## Function／Effect 的数据接入
 
 D22／D23 的模块约定见 [10 第 8 节](10_Function与Effect建模讨论.md#8-保存恢复合成与移除)，D49 将持久数据落实为所属记录内的字段／子记录。Function 按稳定槽位绑定，需要独立保存的 Effect 按记录恢复；D25 的 Tile 来源锁 Effect 根据 Tile 重建，不进入 Element 存档。两类效果均重新分配运行身份；不保存综合权限或 View。新建与恢复分开，恢复不执行重复奖励／扣费／期限重置。此前“导出”描述的是需要保存哪些内容，正常保存现直接使用原记录；只在撤销、显式复制或表现交接需要稳定副本时复制相应数据。
 
-D31–D35：EffectBubble 记录附在已有 Element 数据内，不另存一份“气泡内物品”。恢复保留原 Function 数据和气泡期限，不重建一份新物品充当解锁结果。所有气泡变体在同一元素上至多一份；若存档含多份，作为不合法记录按存档协议处理，不依次恢复成多层或任取一份。解除后可再次添加，故无需终身气泡标志。弹窗会话的跨关闭恢复与正式外部支付凭据仍由对应宿主协议接入，不能把旧窗口运行键作为持久解锁授权。
+D31–D35：EffectBubble 记录附在已有 Element 数据内，不另存一份“气泡内物品”。恢复保留原 Function 数据和气泡期限，不重建一份新物品充当解锁结果。所有气泡变体在同一元素上至多一份；若存档含多份，作为不合法记录按存档协议处理，不依次恢复成多层或任取一份。解除后可再次添加，故无需终身气泡标志。D58 已确认窗口及交互键不存档、不跨整体 Release 恢复；D60 新增 WaitPay 必须随气泡记录保存并恢复。正式支付结果的持久关联仍待接入，不能把旧窗口运行键作为持久解锁授权。数据与操作流程见 [05](05_生成器与时间.md#支付等待与到期保护d60)。
 
 ## Tile 与 Element 分开存档（D13 已确认）
 
@@ -234,7 +274,7 @@ Tile 记录
   UnlockPhase：FunctionTileUnlock 直接读写的唯一阶段
 
 Element 记录
-  Pos、CfgId
+  UniqueId、Pos、CfgId
   FunctionRecords[]：稳定槽位键、类型／配置键、该能力自身的必要数据
   EffectRecords[]：仅保存必须独立恢复的效果及各实例必要数据
 ```
@@ -242,7 +282,7 @@ Element 记录
 - Tile 的阶段只编码一次；如果放在 UnlockPhase 字段，就不再往 Function 记录中重复保存。FunctionTileUnlock.Phase 读取这个字段，写入只通过该 Function 的内部应用方法；没有另一份等待导出的运行值。
 - Element 的 EffectRecords 明确排除 EffectTileLock；读档、克隆或撤销恢复后，按实际 Tile 重新装配它。其它效果是否需要独立保存由效果定义明确，不能统一忽略。
 - 阶段的枚举名、数字编码与版本迁移未定，不能沿用旧“深锁／浅锁”的数字 ID。类型键和 Function 槽位键的编码须稳定，不用反射顺序／列表下标代替。
-- 恢复绑定原记录并创建新运行对象；普通保存不复制整盘。函数引用、SourceTile、RuntimeId、EntityView 与资源句柄均不在记录中。显式克隆／撤销副本必须深复制可变子记录；跨保存的元素持久身份仍未被要求，当前不凭空添加 UUID。
+- 恢复绑定原记录并创建新运行对象；普通保存不复制整盘。函数引用、SourceTile、RuntimeId、EntityView 与资源句柄均不在记录中。显式克隆／撤销副本必须深复制可变子记录；D65／D68 已确认元素持久 UniqueId；普通恢复绑定反序列化后的原记录，不重建业务记录或重新分配 ID。
 - ElementList 的生成定义已修正；实际宿主接入继续补当前所需字段与注册，再验证真实落盘。只在内存记录中完成往返不算宿主保存已完成。
 
 ## 锁数据归属与表示（D24／D25 已确认）
@@ -276,7 +316,7 @@ Element 创建并关联 Tile 后，根据 Tile 进度添加真实的运行时锁
 
 1. 每格最多一个活跃元素；EntityElement.Coord 与对应 EntityTile.ElementId 一致，恢复占位时重建该关系，ElementId 不写入 Tile 存档。
 2. 同一元素只能在一个实际容器中；仓库等外围接入后沿用此约束。待领取条目与已创建 EntityElement 不重复计数。
-3. 被合成／使用／删除的元素退出活跃查询，退场 View 不计库存。若采用持久 ElementInstanceId，撤销可恢复原身份，并以新的绑定版本隔离旧回调；持久 ID 分配器不因撤销回退。具体身份与退役机制仍待讨论。
+3. 被合成／使用／删除的元素退出活跃查询，退场 View 不计库存。D65／D68 已确认持久 UniqueId，退役按 D54；专用撤销恢复原物品身份的具体凭据规则留第 9 项，使用新运行绑定隔离旧回调，分配计数器不因撤销回退。
 4. 生成 Function 自有次数、冷却及其它字段满足所选项目算法；需要阶段时保证表示一致，具体轮次和游标规则不作为通用架构约束。
 5. 任何业务拒绝都不扣费、不消耗次数、不丢物品。若选择可控随机源，拒绝也不推进其状态。
 6. 撤销只恢复该次移除的完整实例，不撤销期间其它物品的操作，不覆盖已占用原格。
@@ -314,16 +354,18 @@ Profile 数据类型允许成为 Logic 的依赖。Logic 不调用文件保存�
 
 | 所属记录 | 需要补充的内容 | 生成与绑定要求 |
 | --- | --- | --- |
-| Tile | 解锁进度，本文实现用名 UnlockPhase | 明确表示一级锁、二级锁、完全解锁，显式校验有效值；编码在定义中固定，不能按旧项目数字推断；缺失阶段不能默认为完全解锁 |
+| Tile | 解锁进度 UnlockPhase（UniqueId 已生成） | 明确表示一级锁、二级锁、完全解锁，显式校验有效值；编码在定义中固定，不能按旧项目数字推断；缺失阶段不能默认为完全解锁 |
 | Element 的生成能力子记录 | 所选算法需要恢复的次数／时间等 | 单槽能力可用命名子属性，其字段位置对应固定槽位键；确有多个同类槽位时再用按稳定槽位键组织的类型明确集合，不能用列表下标认能力 |
-| Element 的气泡子记录 | 效果定义／变体键、可选截止时间及实际解锁变体需要的数据 | 单层气泡可用一个可空专用子记录；null 表示没有气泡，非 null 恢复一份。没有期限与期限到 0 明确区分；不能使用默认 0 同时表达两者 |
+| Element 的气泡子记录 | 效果定义／变体键、可选截止时间、WaitPay、当前支付请求标识及实际解锁变体需要的数据 | 单层气泡可用一个可空专用子记录；null 表示没有气泡，非 null 恢复一份。没有期限与期限到 0 明确区分；不能使用默认 0 同时表达两者。WaitPay 默认 false；true 时必须能关联当前支付请求，开始／结果按 05 同次维护 |
 | 其它已采用的 Function／独立 Effect | 只补本能力确需恢复的数据 | 有真实第二种需求时扩展对应生成结构；不预置任意 object／JSON 载荷或未来全部效果 |
 
 以上是成员语义与最小表示方式，字段名按生成规范落地；新增子记录应使用宿主同一生成机制，保证 setter 与集合变更通知。气泡记录、生成记录默认值要区分：生成器配置存在但记录缺失，不等于可以随时重置次数；气泡子记录不应在所有 Element 上无条件默认 new，否则无泡元素也会被恢复成气泡。生成工具若不支持可空子记录，实施前明确一种等价、唯一的“无记录”表示，再同步生成定义；不得靠未约定的特殊配置 ID 猜测。
 
-定义／类型／槽位键应能唯一找到当前配置与逻辑类。单份能力若已由专用字段和元素配置唯一确定，不再重复存相同类型键；气泡定义不能由元素种类唯一确定时需保存。记录类型／槽位与配置不匹配时报告，不随意删掉旧数据或覆盖成新建值。当前没有跨重启引用元素的需求，不添加持久 UUID；运行 InstanceId 与 Effect.RuntimeId 每次装配重新分配。
+定义／类型／槽位键应能唯一找到当前配置与逻辑类。单份能力若已由专用字段和元素配置唯一确定，不再重复存相同类型键；气泡定义不能由元素种类唯一确定时需保存。记录类型／槽位与配置不匹配时报告，不随意删掉旧数据或覆盖成新建值。支付补单按已确认的 Element.UniqueId 定位；新建与恢复按本页 D68／D69 分配契约；运行 InstanceId 与 Effect.RuntimeId 仍每次装配重新分配，不能把任一运行计数器保存下来冒充持久分配器。
 
-时间记录的单位与实际时间源沿第 8 项统一；基础验证使用同一单位的受控时间。不能在持久字段确定前将一处秒、一处毫秒接在一起；这项依赖不要求 Function 改用独立 State 层。
+时间记录的单位与实际时间源按 05 的命令时间戳契约统一，在 Host 接入时固定；基础验证使用同一单位的受控时间。不能在持久字段确定前将一处秒、一处毫秒接在一起；这项依赖不要求 Function 改用独立 State 层。
+
+本期气泡实现须把上述期限、WaitPay 与支付请求字段落实到原生成定义，再由生成工具产出类型；不能只存在于运行 Effect 或 UI 字段中。支付失败时结束当前等待关联，保留气泡记录及期限；成功时整个气泡记录随效果移除。ActiveDialogId、窗口引用、Effect.RuntimeId 和退役凭据不进入该子记录。宿主支付请求键的具体类型在读取真实接口后选定，不能仅用 Element.UniqueId 替代“哪一次支付”。字段存在不等于真实补单已接通，验收见 08。
 
 ### 方法边界与调用者
 
@@ -331,10 +373,10 @@ Profile 数据类型允许成为 Logic 的依赖。Logic 不调用文件保存�
 
 | 入口 | 调用者与输入 | 必须完成 |
 | --- | --- | --- |
-| InitializeProfileFromLayout(mapData, layout) | 启动入口；Initialize 为 false，地编配置已读取 | 直接向当前 MapData 填充 Tile／Element 记录；成功返回后由调用者设置 Initialize=true；不创建第二份 MapData 发布层 |
-| RestoreMap(mapData) | Host 初始化；已加载记录 | 先只读校验，再依恢复顺序绑定已有记录；不清列表、不重复 Add、不产生新局奖励 |
+| InitializeProfileFromLayout(mapData, layout) | 启动入口；Initialize 为 false，地编配置已读取 | 直接向当前 MapData 填充 Tile／Element 记录，每份新记录按 D68／D69 从同一根计数器取号一次；成功返回后由调用者设置 Initialize=true；不创建第二份 MapData 发布层 |
+| RestoreMap(mapData) | Host 初始化；已加载记录 | 先按 D69 跨两类记录校验 ID 和根计数器，再依恢复顺序绑定已有记录；不清列表、不重复 Add、不产生新局奖励 |
 | BindRecord(record) | Entity 创建工厂；类型匹配的原记录 | 分配运行身份、保存引用、建立能力对象；无自动奖励或立即开放计时 |
-| CreateElement(preparedBirth) | 新局装配或 Operation.Apply；已校验出生描述 | 初始化一份新 Element 及其当前需要的子记录，加入 ElementList，绑定同一对象并建立占位／派生效果 |
+| CreateElement(preparedBirth) | 新局装配或 Operation.Apply；已校验出生描述 | 初始化一份新 Element 存档记录，按 D68／D69 从共享根计数器分配一次 UniqueId 及必要子记录，再加入 ElementList、绑定同一记录并建立占位／派生效果 |
 | ApplyPlacement(preparedMoves) | 移动／换位／腾位 Operation | 统一检查所涉及记录与旧占位，清相关旧占位、修改原 Pos、建新占位、同步派生效果；不更换原 Element 记录 |
 | FunctionTileUnlock.ApplyPhase(next) | 解锁／合成／揭示 Operation | 修改同一 Tile 记录的阶段，协调同步当前占位元素的锁 Effect |
 | Attach／Remove 独立 Effect | 对应 Operation；明确实例和条件 | 同时维护所属持久子记录与运行效果；气泡移除保持原 Element 记录和其它能力数据 |
@@ -353,7 +395,7 @@ Profile 数据类型允许成为 Logic 的依赖。Logic 不调用文件保存�
 | 主合成 A＋B→C | A／B 对应记录移除，C 新记录入集合，目标 Tile 按规则解锁并绑定 C；继承字段由已采用的合成规则明确赋值 | 未参与的记录；不默认把 A 的全部子记录交给 C，也不共享可变子记录 |
 | 一级锁首次揭示 | 同一 Reveal Operation 推进 Tile 阶段，按地编出生描述创建一次 Element 记录并建立占位／锁效果 | 后续重开使用这条 Element 记录，不能重新按地编补发 |
 | 附加／解除气泡 | 对应持久子记录与运行 Effect 同步建立／移除；解除结束对应运行交互 | 原 Element、坐标、Function 和其它 Effect；不写综合权限 true／false |
-| 到期且关窗销毁 | 按匹配交互和期限删除 Element 记录，清运行占位与活动关系；Graphic 播放已捕获的退出结果 | Tile 的进度；不等退出动画完成后才删除存档 |
+| 到期且普通关窗销毁 | 按匹配交互、期限及剩余支付保护判断，确需销毁时删除 Element 记录，清运行占位与活动关系；Graphic 播放已捕获的退出结果 | Tile 的进度；不等退出动画完成后才删除存档 |
 | 关闭重开 | 完成明确的离开业务后释放运行绑定；重新绑定根内记录 | 所有仍有效的 Tile、Element、能力与独立效果记录；不恢复旧窗口键／回调 |
 
 全部操作沿 02b：一个 Command 可产生多个 Operation；本批逻辑完成后才派发表现。没有自动回滚协议，Apply 异常可能留下部分改动，不将字段标脏或本页的统一方法称作事务。正常拒绝必须在登记前完成检查。
@@ -370,7 +412,7 @@ void BindRecord(ProfileElement record)
     // 具体 Function 绑定 _data 中对应子记录，不复制次数／期限。
 }
 
-// Entity 的查询转发到唯一记录；不对 Graphic 暴露 _data。
+// View 可持有 Entity；通过查询读取唯一记录，不取得业务写入权限。
 int X => _data.Pos.X;
 int Y => _data.Pos.Y;
 
@@ -384,21 +426,21 @@ void ApplyPosition(int x, int y)
 void ReleaseRuntime()
 {
     ReleaseRuntimeFunctionsAndEffects(); // 清引用／订阅，不删持久子记录。
-    _data = null;                       // MapData 仍持有原记录。
+    _data = null;                       // 最终释放时调用；先确保 View 已解绑。
 }
 ```
 
-`ProfileElement` 表示 `BettaSDK.Profile.Element` 的代码别名；这段只展示持有与写入，不替代 02b 对占位完整修改、结果捕获和删除操作的契约。查询不得返回可变 Pos 对象给 Graphic；可返回坐标值或显示副本。移除前的表现数据须在记录／运行对象失效前捕获。
+`ProfileElement` 表示 `BettaSDK.Profile.Element` 的代码别名；这段只展示持有与写入，不替代 02b 对占位完整修改、结果捕获和删除操作的契约。D54 下 View 可经所持 Entity 读取记录数据，但不修改 Pos／Profile；普通查询返回坐标值。上述 ReleaseRuntime 在最终解绑后调用，业务删除先退役并保留数据，不立即清空 _data。需要历史值的显示字段在修改／释放前捕获。
 
 ### 三种数据用途不要混用
 
 | 用途 | 数据形式 | 谁持有／更新 |
 | --- | --- | --- |
 | 正常保存 | Profile 根下持续更新的原记录 | Entity／Function／Effect 按业务职责修改，ProfileHub 序列化 |
-| Graphic 显示与退出动画 | 所需字段的稳定值副本 | Logic 捕获结果，Graphic 只读消费，不持有可写 Profile 引用 |
+| Graphic 显示与退出动画 | D54：View 持有 Entity 引用；历史值及已移除 Effect 的字段按需保存副本 | Graphic 只读；退役 Entity 可保留已经移出 MapData 的记录直到 View 结束，不写入或重新挂回该记录 |
 | 撤销、显式复制与诊断样本 | 对应范围的独立数据副本 | 业务明确捕获，不能随原元素继续变化；撤销产品细则仍由第 9 项确定 |
 
-普通存档使用上述原记录，显示／撤销副本仅服务各自用途，不作为存档写回来源。已撤回独立全盘发布和首次建图替换 MapData 的候选流程。
+普通存档使用上述根内原记录；View 持有旧 Entity 不影响其记录已经从根中删除，表现结束才最终清引用。显示／撤销副本仅服务各自用途，不作为正常存档写回来源。已撤回独立全盘发布和首次建图替换 MapData 的候选流程。
 
 ## 保存结果与宿主接入
 
@@ -411,7 +453,7 @@ void ReleaseRuntime()
 
 Host 在获取根前完成注册：核对 LoaderInit、UtilsLoading.Restart 的根清单，按当前项目装配一次 ProfileMergeTwo；若采用模块延后注册，则首启／重启均须经过该入口，不能两个方案重复注册。每次打开棋盘只获取已存在的根。嵌套 MapData／Tile／Element 无须逐项向 Hub 注册。
 
-普通修改依赖现有自动保存。关闭／暂停时怎样请求保存及先处理哪些离开命令，由第 8／10 项接宿主生命周期；请求在已准备的业务操作完成后发起。保存失败使用宿主诊断／重试，不重新执行合成、消耗或解泡。二合模块不得调用全局 ProfileHub.Release 来关闭自己的棋盘，也不能清理其它根的数据。
+普通修改依赖现有自动保存。D58 下整体关闭二合直接 Release 各系统，不发送离开／关窗业务 Command，也不为释放清 WaitPay 或删除到期元素。宿主关闭／暂停保存沿原链，支付开始前关键记录的保存请求与结果恢复按 05 接入，具体宿主装配归第 10 项；请求在相应业务写入后发起。保存失败使用宿主诊断／重试，不重新执行合成、消耗或解泡。二合模块不得调用全局 ProfileHub.Release 来关闭自己的棋盘，也不能清理其它根的数据。
 
 D52：本期按三合方式使用现有 ProfileHub，正常生成字段／集合修改负责标脏，沿用宿主本地／云端保存与生命周期处理。实现时接注册和业务记录即可，保存成功仍以实际文件恢复验证；不再保留额外保存机制的架构选择题。
 
@@ -495,4 +537,4 @@ D42 的“二级锁＋气泡”组合约束也须在完整关联后、开放行�
 
 统一的依赖顺序与验收见 [08 的 Profile 实施清单](08_实现顺序与验证.md#profile-实施清单d49)。实施本页时依次完成：Step 1 扩展当前能力的生成字段与注册；Step 2 按 Initialize 首次填充、绑定原记录并恢复；Step 3 接 Operation 的创建／修改／删除；Step 4 接独立效果记录及运行释放；Step 5 验证根记录、同进程重建和真实磁盘恢复。每一步的具体文件、验证与剩余依赖由该清单维护。
 
-本页覆盖数据持有、Initialize 首次填充、运行恢复及业务读写，可直接设计实现；第 7 项已完成并删除。地编配置输入按本文职责实现，时间／窗口／关闭、撤销及完整程序集装配见第 8–10 项。实现报告须区分完成的模块与宿主联调结果。
+本页覆盖数据持有、Initialize 首次填充、运行恢复及业务读写，可直接设计实现；第 7 项已完成并删除。地编配置输入按本文职责实现，时间／窗口／关闭按 05／06 实施；专用撤销及完整程序集装配见第 9、10 项。实现报告须区分完成的模块与宿主联调结果。

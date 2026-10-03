@@ -68,7 +68,9 @@ EffectViewBase / EffectViewXXX
 
 若宿主现有 Function 基类已经提供等价的类型安全绑定，可适配沿用，不再叠加一套基类。Tile 的解锁 Function 可直接由 EntityTile 持有；Element 按稳定槽位保存自己的 Function 集合。Tile 的基础外观可以直接由 EntityViewTile 负责，不为保持形式相同强行添加空的 Effect 集合或表现 Function。
 
-Owner／来源只在内部 Bind 时指定，绑定期间不允许外部替换；换宿主须 Release 后重新构建绑定。Effects 集合由 Owner 内部管理，查询者只拿只读视图。运行 Effect 允许在纯逻辑层引用来源 Tile；Graphic 只读取显示副本，不持有可写 Function／Effect。Logic 不引用 Unity、Tween、EntityView 或具体资源服务。
+Owner／来源只在内部 Bind 时指定，绑定期间不允许外部替换；换宿主须 Release 后重新构建绑定。Effects 集合由 Owner 内部管理，查询者只拿只读视图。运行 Effect 允许在纯逻辑层引用来源 Tile；D54 下 EntityView 持有 Entity 并只读查询；EffectView 仍可使用必要的显示副本，Graphic 不调用 Function／Effect 写方法。Logic 不引用 Unity、Tween、EntityView 或具体资源服务。
+
+D64 统一具体实现前缀为 FunctionXXX／FunctionViewXXX、EffectXXX／EffectViewXXX，其余类型见 [02 命名规范](02_架构与参考取舍.md#具体实现类命名d64)。
 
 ## 2. 装配、身份与集合
 
@@ -85,13 +87,13 @@ Owner／来源只在内部 Bind 时指定，绑定期间不允许外部替换；
 
 基类只提供 Bind 与 Release，具体能力／效果提供自己的新建字段初始化和 Restore 方法；需要完整局面后启用的机制再实现 Start。调用顺序为“创建对象 → 绑定拥有者与键 → 新建初始化或 Restore 二选一 → 加入集合 → 完整关联后 Start”。D49 下 Restore 绑定所属 Profile 的已有子记录，不复制并重写一份；新建持久子记录必须挂回所属 Entity 记录。Start 不发首次奖励、不重置恢复数据。没有启动工作时不保留空的逐帧调用。
 
-Function 的 Bind 接收 owner 与稳定槽位键；Effect 的 Bind 接收 owner、RuntimeId 与定义。配置在新建／恢复前就绪，具体类型持只读定义与自身唯一可写数据。销毁宿主时先退出活动查询，再逆序 Release；Release 幂等且仅清理引用／订阅，不触发其它业务。正常附加与解除产生的业务变化由调用它们的规则入口显式组织。
+Function 的 Bind 接收 owner 与稳定槽位键；Effect 的 Bind 接收 owner、RuntimeId 与定义。配置在新建／恢复前就绪，具体类型持只读定义与自身唯一可写数据。D54 下业务移除先退出活动查询、停止 Consumer／事件等活动，保留退场 View 需要的数据；View 解绑后才最终逆序 Release。实际有 Start 注册的机制提供对应停止注册方法，注销可幂等复用；不要求无注册能力增加空逻辑。Release 仅清理引用／订阅，不触发其它业务。正常附加与解除产生的业务变化由调用它们的规则入口显式组织。
 
 ### 几种键各有用途
 
 | 键 | 用途 | 是否必须持久化 |
 | --- | --- | --- |
-| EntityElement 的运行身份 | 找到当前元素及其 View | 沿既有实体方案；持久身份仍由 03／存档专题确定 |
+| EntityElement 的运行身份 | 找到当前元素及其 View | 运行期；与 D65／D68 已确认的 Element.UniqueId 持久身份分开，见 03 |
 | Function 的稳定配置槽位键 | 对应某一份能力及其存档；不按 List 下标恢复 | 保存或由稳定定义恢复；单份能力可用固定类型键 |
 | Effect 的定义／配置键 | 确定效果种类与参数 | 恢复规则所需时保存 |
 | Effect.RuntimeId | 标识本次附着，不与类型键混用 | 仅运行期；重开可重新分配 |
@@ -131,7 +133,7 @@ Function 的 Bind 接收 owner 与稳定槽位键；Effect 的 Bind 接收 owner
 
 按动作查询，如 CanGenerate、CanDrag、CanMerge、CanUnlockBubble。物理点击路由先确定动作，再调用对应查询。需要在 Effect 中分派动作时，可用一个只含已实现动作的 ElementAction 枚举；它表示业务动作，不额外引入结果码、拒绝原因或角色枚举。
 
-ActionContext 只携带该次动作的必要只读上下文：源／目标引用、对应 Function 或待解除 Effect 的运行键、统一采样的 now。动作没有目标时目标可空；只接受合法组合，不堆积 object 参数字典或预建所有玩法字段。
+ActionContext 只携带该次动作的必要只读上下文：源／目标引用、对应 Function 或待解除 Effect 的运行键、本次命令携带的时间戳 now。动作没有目标时目标可空；只接受合法组合，不堆积 object 参数字典或预建所有玩法字段。
 
 上下文中的 Source／Target 指本次业务的两方；正在遍历的 Effect.Owner 才是本次接受限制的对象。合成入口必须分别调用源的 MergeAsSource 与目标的 MergeAsTarget，不能只检查拖动者，或给目标效果也传 MergeAsSource。对应方法先校验 Owner 与该角色一致；角色错误是调用错误，不作为正常权限放行。
 
@@ -237,7 +239,7 @@ internal bool TryPrepareGenerate(
 
 不会因某个 Effect 检查返回 false 就消费它。派生变化先在本次局部结果中求解，避免在遍历或表现回调中再次修改活动集合。需要连锁时才增加有序局部工作队列与终止约束；不预建通用反应引擎。
 
-Function／Effect 接受业务时间或明确的时间推进调用，自己不启动 Unity 协程计时。期限表示、暂停和离线规则按机制选择；没有 View 也必须能完成已定义的到期业务。基础执行失败协议见 [02b](02b_Command与Operation执行方案.md)，业务操作与组合也见 02b 第 5 节，时间源及 Host 调度见 [第 8 项](../待讨论项/8_时间推进与表现生命周期.md)。
+D56 已确认：Function／Effect 只使用所属命令传入的时间戳，不自行获取现在；同一命令各步使用同一值，重播沿用命令记录值。D55 下 Command 不修改真实时间源。正式契约见 [05](05_生成器与时间.md#命令时间戳契约d56-已确认)；需要主动到期检查的能力注册 Consumer，公共 Command Consumer 每次创建并登记 OperationRefreshTimeDisplay；D61 限定只有 Command Consumer 能产生 Operation，其它规则方法只提供准备数据，具体链路按 05 的 D57 落实，不启动各自的 Unity 计时协程。期限表示、暂停和离线规则按机制选择；没有 View 也必须能完成已定义的到期业务。基础执行失败协议见 [02b](02b_Command与Operation执行方案.md)，业务操作与组合也见 02b 第 5 节，时间源及 Host 调度见 [05 调度与恢复](05_生成器与时间.md#调度与恢复的接续边界)。
 
 ### Effect 响应点击与拖放（实现轮廓）
 
@@ -282,7 +284,7 @@ Drop 由现有 DropRules 收集源与目标的响应：一方气泡请求 MoveWi
 
 CanDrag 与跟手表现继续沿用。被挤开的 X 不是在发起一轮新 Drag：查询它的 `CanBeDisplaced` 及合法落点，权限动作可用 `Displace`，同样检查它自己的全部 Effect；EffectTileLock 阻止该动作，EffectBubble 不阻止。B 不需要成为当前选中元素才能被移动。具体方法实现见 04；Effect 只返回响应，不自行修改任何元素或 Tile 占位。
 
-Effect 逻辑不持有窗口，不调用 EffectView.OpenWindow。`EffectViewBubble` 只显示覆盖物；D40 下成功的 OpenBubbleDialog 通过应用入口同步调用 Graphic 窗口 API。建立运行交互键与同步开窗在同一调用链完成，不设计异步 Opening 阶段；关闭／解锁通过业务入口结束交互，具体生命周期与最小方法见 [05](05_生成器与时间.md#气泡-effect-与生命周期)。
+Effect 逻辑不持有窗口，不调用 EffectView.OpenWindow。`EffectViewBubble` 只显示覆盖物；D40 下成功的 OpenBubbleDialog 通过应用入口同步调用 Graphic 窗口 API。D59 下仅成功打开并登记有效的窗口拥有交互保护，不能先写保护再尝试开窗；D62 下窗口成功打开并绑定 EntityElement 后提交 Command，其 Consumer 创建 Operation 调用 EffectBubble 内部方法写入交互保护，不设计异步加载阶段。普通关闭／解锁通过业务入口结束交互；D58 的整体 Release 直接清运行绑定；D60 的 WaitPay 使用持久数据保护，具体生命周期与最小方法见 [05](05_生成器与时间.md#气泡-effect-与生命周期)。
 
 ## 5. EffectView 的创建与同步
 
@@ -319,7 +321,7 @@ EffectViewBase 使用最小方法：
 
 异步完成须核对：宿主会话／运行身份、View 绑定版本、Effect.RuntimeId、当前资源请求版本。Refresh 改变资源请求时，旧请求即使属于同一 Effect 也应失效。晚到的资源只归还，不再创建过时表现或删除新实例贡献。
 
-View 隐藏、回池和业务实体销毁由不同入口处理：回收可视资源不删除逻辑 Effect；重新显示按当前数据重建。宿主彻底关闭时停止业务入口与时间驱动，再解除 View 绑定及逻辑引用，具体 Host 顺序由第 8 项统筹。Release 不执行业务奖励或主动解除流程。
+View 隐藏、回池和业务实体销毁由不同入口处理：回收可视资源不删除逻辑 Effect；重新显示按当前数据重建。D58 下宿主彻底关闭由总管理器 Release 停业务入口／时间驱动，各系统依次释放 View 绑定及逻辑引用，不额外发关窗 Command，顺序见 06。Release 不执行业务奖励或主动解除流程。
 
 ## 7. 多个视觉效果怎样共同作用
 
@@ -365,13 +367,13 @@ EntityViewElement 管理共享视觉贡献。普通表现 Function 与 EffectVie
 
 需要生成独立副本时显式排除已知的 Tile 来源派生效果；不能把“未知类型无法处理”也当成可忽略。恢复顺序为实体及各自独立数据 → 占位关联 → 重建 Tile 来源锁 Effect → 开放行为／绑定表现。效果是否保存由其数据来源明确规定，不由 UI 任意切换 Persist=true／false。
 
-持久 Effect 的业务附加／解除同时维护子记录与 Owner 的运行集合；业务解除仅移除匹配记录。单层气泡可以绑定可空 Bubble 子记录，解除置空后释放当前运行实例；新附加创建新记录及 RuntimeId，迟到回调不能解除它。关闭时 Release 仅清运行引用／订阅，不置空 Bubble 记录。子记录正常更新保持引用；整体替换时必须重新绑定相应 Function／Effect，不能继续写已脱离根的旧对象。
+持久 Effect 的业务附加／解除同时维护子记录与 Owner 的运行集合；业务解除仅移除匹配记录。单层气泡可以绑定可空 Bubble 子记录，解除置空后释放当前运行实例；新附加创建新记录及 RuntimeId，迟到回调不能解除它。关闭时 Release 仅清运行引用／订阅，不置空 Bubble 记录，不清 WaitPay；窗口运行交互不恢复。子记录正常更新保持引用；整体替换时必须重新绑定相应 Function／Effect，不能继续写已脱离根的旧对象。
 
 ### 跨对象变化
 
 - 移动元素：自身 Function／独立 Effect 按规则随元素保留；Tile 来源锁 Effect 按新占位重新同步，Tile 进度不随元素移动。
 - 合成：明确哪些能力数据重建／继承，以及每种 Effect 是阻止、终止、迁移还是重新附加；不能默认复制所有字段。具体规则由项目定义，未配置该类型的处理时先不启用该组合。
-- 删除／销毁：移除 Element 的原存档记录、退出活动查询并停止其能力与效果；Graphic 使用已取得的显示数据收尾，最终对象释放沿第 8 项。关闭／恢复失败清理只释放运行绑定，不删除记录。
+- 删除／销毁：移除 Element 的原存档记录、退出活动查询并停止其能力与效果；D54 下 Graphic 保留对应 Entity 引用只读收尾，最终 View／Entity 释放按 06；已移除 Effect 的独立退出资源仍使用自己的字段副本。关闭／恢复失败清理只释放运行绑定，不删除记录。
 - 专用撤销：保留所属元素需要恢复的 Function／Effect 数据，按第 9 项确定身份、计时与结算；不覆盖 Tile 后续变化。
 - Tile 的进度、Element 运行锁 Effect 与二级锁操作已确认，见 04；Tile 当前不添加 Effect。邻接响应按 D46 由业务 Consumer 调用 Function 准备，Merge→Reveal 同批执行，见 02b；一级锁没有元素，也不为它创建元素效果。
 
@@ -398,9 +400,9 @@ EntityViewElement 管理共享视觉贡献。普通表现 Function 与 EffectVie
 
 | 主题 | 尚未决定的内容 |
 | --- | --- |
-| [02b 执行与业务接线](02b_Command与Operation执行方案.md) | D43–D47 已收敛：多 Consumer、多 Operation、FIFO、五类操作与邻接同批；查询 bool 不代表执行或保存成功，窗口服务归第 8 项 |
+| [02b 执行与业务接线](02b_Command与Operation执行方案.md) | D43–D47 已收敛：多 Consumer、多 Operation、FIFO、五类操作与邻接同批；查询 bool 不代表执行或保存成功，窗口服务按 05 的 D59／D62 接入 |
 | [03 存档实施契约](03_状态模型与Profile.md#二合-profile-接入实施契约d49) | D49／D51／D52 已收敛：绑定原记录，Initialize 控制初始数据生成，保存参考三合及现有宿主；地编输入与当前能力生成字段按正文实施 |
-| [8 时间与 Host](../待讨论项/8_时间推进与表现生命周期.md) | 时间服务、离线／暂停规则、隐藏／关闭调度与宿主取消入口 |
+| [05 时间与窗口](05_生成器与时间.md)、[06 生命周期](06_表现与资源.md#生命周期归属) | 已确认的命令时间、保护、后台恢复与整体 Release；具体宿主模块装配见待讨论项 10 |
 | [9 撤销](../待讨论项/9_售出删除的专用撤销.md)／[10 模块](../待讨论项/10_模块边界与实施顺序.md) | 撤销产品协议、程序集与宿主启动装配 |
 
 上述外围契约用窄的时间、保存、资源及业务提交入口对接；不在本模块私建另一套 Profile、命令队列或全局调度器。完整棋盘的生产接入仍需完成这些专题，本文不把它们默认为已经确定。

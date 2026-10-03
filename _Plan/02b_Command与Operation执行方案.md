@@ -1,8 +1,10 @@
 # Command 与 Operation 执行方案
 
-**状态：Command／Operation 专题已收敛，D43–D47 已回写。** 执行框架沿用 ProjectIdea 规范及 TileScape HomeHub 的机制，二合五类操作与邻接同批方案按本页实现。 本页是二合编码入口；原理、Entity／View 参考见 [02a](02a_逻辑表现分离架构详解.md)，源码版本与阅读范围见 [00](00_参考资料与证据.md#commandoperation-重新核对2026-10-02)。第 6／7 项讨论已删除；Profile 按 03 实施，实际时间／窗口／资源和宿主装配在第 8–10 项接入，不阻塞本页核心与已确认操作的独立实现。
+**状态：Command／Operation 专题已收敛，D43–D47 已回写。** 执行框架沿用 ProjectIdea 规范及 TileScape HomeHub 的机制，二合五类操作与邻接同批方案按本页实现。 本页是二合编码入口；原理、Entity／View 参考见 [02a](02a_逻辑表现分离架构详解.md)，源码版本与阅读范围见 [00](00_参考资料与证据.md#commandoperation-重新核对2026-10-02)。第 6／7／8 项讨论已删除；Profile 按 03 实施，时间／窗口／生命周期按 05／06 实施；专用撤销及资源和宿主装配由第 9、10 项维护，不阻塞本页核心与已确认操作的独立实现。
 
 2026-10-02 用户明确：HomeHub 的 Command／Operation 已在线上项目验证，二合继续沿用；一个 Command 允许多个 Consumer，产生多个 Operation，组成 OperationBatch。上一稿提出的单业务 Consumer 限制、收集失败整批丢弃、统一改写 Submit 返回值、默认故障停队及插队清理均撤回，不作为实施要求。
+
+D64 的具体实现类统一以前缀命名，见 [02 命名规范](02_架构与参考取舍.md#具体实现类命名d64)。本文二合样例已同步；参考 HomeHub 的原始类名／路径与核心接口保留。
 
 ## 1. 四个概念与两类 Consumer
 
@@ -10,13 +12,15 @@
 | --- | --- | --- | --- |
 | Command | 输入命令及参数：玩家点击／拖放、活动开启、已确认的支付结果、时间输入等 | 输入或宿主适配层创建，Runtime 路由到 Command Consumer | 需要时保存可重建的命令数据，用于历史／回放扩展 |
 | Command Consumer | 解释这个输入，检查条件，构造并登记所需执行步骤 | 按 CommandType 注册；一个类型可有多个实例 | 本身不保存；收集时不写玩法数据 |
-| Operation | Command 最终驱动的最小业务执行单元；Apply 可修改数据／存档、创建或移除 Entity、调用 Function，并保留执行结果 | 由 Command Consumer 或其调用的业务构建方法产生，交给 Recorder | **Operation 不存档**，也不直接从存档恢复后执行 |
+| Operation | Command 最终驱动的最小业务执行单元；Apply 可修改数据／存档、创建或移除 Entity、调用 Function，并保留执行结果 | 仅由 Command Consumer 在处理命令时构造并登记到 Recorder | **Operation 不存档**，也不直接从存档恢复后执行 |
 | OperationBatch | 这次 Command 收集到的有序 Operation 集合 | Runtime 创建，所有匹配 Consumer 向同一 Batch 登记 | **Batch 不存档**，不是历史记录 |
 | Operation Consumer | 消费已经 Apply 的 Operation 及其结果，例如更新 View、播放动画或声音 | 按 OperationType 注册；一个类型也可有多个 Consumer | 不保存，不重新结算业务 |
 
-Command 表达输入，Operation 执行输入经过规则解释后的具体工作。比如 `DropElementCommand(A, 目标坐标)`，可能产生移动、合成或气泡腾位操作，结果由出队时的状态与规则决定。支付结果 Command 表达宿主已确认的结果，回放它时不重新发起真实支付。
+Command 表达输入，Operation 执行输入经过规则解释后的具体工作。比如 `CommandDropElement(A, 目标坐标)`，可能产生移动、合成或气泡腾位操作，结果由出队时的状态与规则决定。支付结果 Command 表达宿主已确认的结果，回放它时不重新发起真实支付。
 
 “原子”按业务一致性划分：移动一个元素时，元素坐标、源格占位、目标格占位一起维护，可以是一条 Operation；两元素换位也可以是一条。创建、移除、更新格锁等步骤可拆成多条有明确依赖的 Operation。框架不限制一条 Command 只能产生一条 Operation，也不要求每次字段赋值都单独建类。
+
+**D61：Operation 只能由 Command Consumer 产生。** Consumer 内部可拆私有构建方法；外部规则方法返回准备数据，不在 System、UI、驱动器或 Graphic Consumer 中自行创建／Apply Operation。Function／Effect 自身实现 Command Consumer 时，可以在消费该命令的入口创建 Operation。Runtime 只负责收集 Batch 与执行；整体 Release 的资源清理仍按 D58，不为清引用制造 Operation。
 
 Operation 的 Apply 可为空，例如统一调度的相机／反馈请求；它也可以只定位目标供表现使用。一个 Operation 没有任何表现 Consumer 同样合法。具体类只在实际需要时增加。
 
@@ -160,16 +164,19 @@ Command 只携带意图和定位参数。执行时读取配置、权限和当前
 
 | Command 示例 | 最少输入 | Consumer 工作与产物 |
 | --- | --- | --- |
-| DropElementCommand | 源 Element.InstanceId、目标 Tile 坐标；提交给所属运行实例 | DropRules 查询实际源格／占位，选择唯一移动／换位／合成／气泡分支，产生本节对应操作组 |
-| ClickElementCommand | Element.InstanceId | 读取点击前选择，查询 Function／Effect，准备选择以及合法附加动作 |
-| UnlockBubbleCommand | Element.InstanceId、Effect.RuntimeId；来自窗口时含交互键；条件凭据 | 校验同一会话与当前实例、Tile 完全解锁及解泡条件，产生 UnlockBubbleOperation |
-| EndBubbleInteractionCommand | Element.InstanceId、Effect.RuntimeId、交互键 | 匹配当前交互，读取业务时间，产生 EndBubbleInteractionOperation |
+| CommandDropElement | 源 Element.InstanceId、目标 Tile 坐标；提交给所属运行实例 | DropRules 查询实际源格／占位，选择唯一移动／换位／合成／气泡分支，产生本节对应操作组 |
+| CommandClickElement | Element.InstanceId | 读取点击前选择，查询 Function／Effect，准备选择以及合法附加动作 |
+| CommandUnlockBubble | Element.InstanceId、Effect.RuntimeId；来自窗口时含交互键；条件凭据 | 校验同一会话与当前实例、Tile 完全解锁及解泡条件，产生 OperationUnlockBubble |
+| CommandBeginBubbleInteraction | 当前运行会话、Element.InstanceId、Effect.RuntimeId、窗口交互键、时间戳 | 窗口成功打开后发起；Consumer 验证目标与原开窗请求，产生写入有效保护的 Operation |
+| CommandEndBubbleInteraction | Element.InstanceId、Effect.RuntimeId、交互键、命令时间戳 | 普通玩家关窗；匹配交互并检查期限和 WaitPay，产生 OperationEndBubbleInteraction；整体 Release 不发此命令 |
+| CommandTimePulse | 本次时间戳 T | 公共 Consumer 登记 OperationRefreshTimeDisplay；需要主动到期的能力追加业务 Operation，完整链路见 05 |
+| CommandStartBubblePay／CommandBubblePayResult | 当前气泡身份／持久支付关联、所需命令时间、宿主结果 | 开始时经 Operation 写 WaitPay；成功在同一业务操作清 WaitPay 并解泡，失败清 WaitPay 并重查保护；跨重启关联按 03 的持久 ID 与 05 的当前请求匹配落实 |
 | 初始化／恢复 Command | 已校验的地图及 Tile／Element 记录 | 先创建全部 Tile，再恢复 Element／关联／派生效果，最后启用依赖完整棋盘的行为 |
 | 时间／活动／支付结果 Command | 对应时间或宿主已确认结果、必要业务身份 | 由对应 Consumer 产生领域 Operation；外部支付结果不能当作再次扣款的指令 |
 
-Command 的目标是提交时捕获的元素身份；不得在执行时按旧格坐标改成另一个元素。源实际位置变化时按当前规则重新求解，预览不具有写入权。窗口／广告回调绑定所属 Runtime，会话失效时丢弃；不从全局新 Runtime 继续提交旧请求。
+Command 的目标是提交时捕获的元素身份；不得在执行时按旧格坐标改成另一个元素。源实际位置变化时按当前规则重新求解，预览不具有写入权。窗口／广告运行回调绑定所属 Runtime，会话失效时丢弃；不从全局新 Runtime 继续提交旧 UI 请求。D60 的正式支付结果由宿主持久关联恢复并交付新实例，不能把已支付事实随旧窗口回调一起丢弃，接法见 03／05。
 
-业务 Consumer 通过显式依赖取得 TileSystem、ElementSystem、只读配置／地编与规则服务。需要时间时取得本次业务的时间值并传给 Function／Effect，关联步骤使用同一值；不在各 Operation 分别读取 Unity 时间。真实时间采样／推进策略由第 8 项接入，基础 Runtime 接口不增加 CommandContext 或优先队列。
+业务 Consumer 通过显式依赖取得 TileSystem、ElementSystem、只读配置／地编与规则服务。需要时间时取得本次业务的时间值并传给 Function／Effect，关联步骤使用同一值；不在各 Operation 分别读取 Unity 时间。D56 已确认时间敏感 Command 携带本次时间戳，所有 Consumer 与业务步骤使用同一传入值，Apply 不重取现在；回放恢复命令记录值，D55 下不修改游戏真实时间源。正式契约见 [05](05_生成器与时间.md#命令时间戳契约d56-已确认)，具体宿主采样与调度按 05 接入；基础 Runtime 接口不增加 CommandContext 或优先队列。
 
 ### 5.2 准备数据与执行结果
 
@@ -177,11 +184,11 @@ Command 的目标是提交时捕获的元素身份；不得在执行时按旧格
 
 | Operation | 登记前准备的数据 | Apply 的完整职责 | 给表现层的结果 |
 | --- | --- | --- | --- |
-| MoveElementsOperation | 一条或两条移动：元素身份、预期源坐标、目标坐标；所有涉及格子的预期占位 | 同时维护元素坐标和格子占位，统一同步派生锁 Effect；元素身份、Function／独立 Effect 数据保留 | 每个元素的身份、旧／新坐标及必要效果变化 |
-| MergeElementsOperation | A／B 身份与预期位置／配置；目标 Tile 预期进度；产物配置与初始数据；项目确定的能力继承／附加产物等实际规则 | 消耗 A／B，目标二级锁合法时解锁，在目标格创建 C，完成占位、派生 Effect、选择及本次必要数据变化 | A／B 旧显示数据、C 身份与显示数据、目标格旧／新阶段、选择及其它实际变化 |
-| RevealTileOperation | 目标 Tile 坐标、预期一级锁与空占位、地编提供的元素配置／初始数据；所属主合成的结果引用 | 一级→二级，首次创建地编元素，建立占位并挂载运行锁 Effect | Tile 旧／新显示、创建元素身份及显示数据；主合成关联用于安排演出 |
-| UnlockBubbleOperation | 匹配元素／气泡／可选交互键，本次已验证条件、费用或已确认外部凭据 | 执行本模块负责的必要条件消费，移除这一份气泡，结束对应交互；Element 身份不变 | 气泡退出数据、当前剩余效果、匹配窗口关闭请求；无需重建 ElementView |
-| EndBubbleInteractionOperation | 匹配元素／气泡／交互键，本次时间与期限判断、该变体到期行为 | 清交互；未到期保留元素，已到期按 D36 立即逻辑移除并释放占位 | 未到期只结束窗口；到期交付旧外观／位置／效果供退场，活跃查询中已不存在 |
+| OperationMoveElements | 一条或两条移动：元素身份、预期源坐标、目标坐标；所有涉及格子的预期占位 | 同时维护元素坐标和格子占位，统一同步派生锁 Effect；元素身份、Function／独立 Effect 数据保留 | 每个元素的身份、旧／新坐标及必要效果变化 |
+| OperationMergeElements | A／B 身份与预期位置／配置；目标 Tile 预期进度；产物配置与初始数据；项目确定的能力继承／附加产物等实际规则 | 消耗 A／B，目标二级锁合法时解锁，在目标格创建 C，完成占位、派生 Effect、选择及本次必要数据变化 | A／B 旧显示数据、C 身份与显示数据、目标格旧／新阶段、选择及其它实际变化 |
+| OperationRevealTile | 目标 Tile 坐标、预期一级锁与空占位、地编提供的元素配置／初始数据；所属主合成的结果引用 | 一级→二级，首次创建地编元素，建立占位并挂载运行锁 Effect | Tile 旧／新显示、创建元素身份及显示数据；主合成关联用于安排演出 |
+| OperationUnlockBubble | 匹配元素／气泡／可选交互键，本次已验证条件、费用或已确认外部凭据 | 执行本模块负责的必要条件消费，移除这一份气泡，结束对应交互；Element 身份不变 | 气泡退出数据、当前剩余效果、匹配窗口关闭请求；无需重建 ElementView |
+| OperationEndBubbleInteraction | 匹配元素／气泡／交互键，本次时间与期限判断、该变体到期行为 | 清交互；未到期或 WaitPay=true 时保留元素，已到期且无剩余保护时按 D36 立即逻辑移除并释放占位 | 未到期只结束窗口；到期交付旧外观／位置／效果供退场，活跃查询中已不存在 |
 
 需要共同使用的内部修改由 ElementSystem、TileSystem、Function／Effect 方法完成；Operation 不直接调用另一条 Operation.Apply 来复用代码。生成、普通到期、出售等以后可复用相同的内部创建／移除方法，无需把所有行为并入一个巨大 Operation。
 
@@ -189,38 +196,38 @@ Command 的目标是提交时捕获的元素身份；不得在执行时按旧格
 
 ### 5.3 各操作的写入顺序
 
-**MoveElementsOperation：**
+**OperationMoveElements：**
 
 1. 首次写入前核对全部移动对象、源格反向关联、目标存在与目标占位。目标当前占位只能为空或属于本次将移出的元素；同一个目标不能被两条移动占用。
 2. 捕获本次显示起点数据，解除所有涉及元素的旧占位。
 3. 更新所有元素坐标，再建立所有新占位，最后集中同步派生锁 Effect。中间不对外通知、不取存档快照、不调用 Graphic。
 4. 完成结果。一次普通移动只有一条记录，换位／气泡腾位最多两条；源刚腾出的格子可作为腾位落点。移动不改变任何 Tile 的解锁进度，不重新计算气泡期限。
 
-**MergeElementsOperation：**
+**OperationMergeElements：**
 
 1. 登记前已做源／目标各自的合成权限、合法产物和必要配置检查。Apply 首次写入前核对预期身份、位置、占位和目标阶段；不在失配后临时退回移动／换位分支。
 2. 在改变阶段、清理 Function／Effect 前捕获 A／B 的旧外观、位置和效果；准备产物所需继承数据，不能从已释放旧实体补读。
 3. 解除 A／B 占位并退出活跃查询；通过 FunctionTileUnlock 写入目标格的合法解锁结果，在目标格创建 C，建立占位并按目标当前阶段同步运行锁 Effect。源 Tile 原有进度保持。
 4. 完成本次已准备的能力数据、选中记录等变化，生成合成结果。可选附加玩法只在项目已定义时接入；涉及空间时与邻格出生位置一起预留，不能临时挤走必需揭示元素。
 
-**RevealTileOperation：**
+**OperationRevealTile：**
 
-1. 在 Apply 读取前序 MergeElementsOperation 的完整结果；不得在收集时读尚未创建的 C。结果缺失是内部执行错误。
+1. 在 Apply 读取前序 OperationMergeElements 的完整结果；不得在收集时读尚未创建的 C。结果缺失是内部执行错误。
 2. 核对 Owner Tile 仍是预期一级锁且无占位；地编数据已在登记前取得，不能主合成完成后才发现产物配置缺失。
 3. 捕获旧 Tile 外观；通过 FunctionTileUnlock 更新为二级锁，创建指定 Element、建立占位、同步运行锁 Effect；完成显示结果。
 4. 本次新元素没有参与主合成，不继续按“目标已合成”推进到完全解锁；无额外解锁 Command 或 TileEffect。
 
-**UnlockBubbleOperation：**
+**OperationUnlockBubble：**
 
 1. Consumer 正常校验匹配实例、当前权限、交互和条件。Apply 首次写入前验证准备前提仍成立；广告／真实支付已完成的部分使用凭据，不再次发起外部结算。
-2. 执行当前模块负责的已准备消费，捕获气泡退出数据，移除匹配 Effect 并结束对应交互。保留元素身份、坐标、Function 进度和其它 Effect。
+2. 执行当前模块负责的已准备消费，捕获气泡退出数据；匹配支付成功时在本次操作内清 WaitPay，再移除匹配 Effect 并结束对应交互。保留元素身份、坐标、Function 进度和其它 Effect。
 3. 交付当前效果列表与窗口身份；Graphic 移除对应 EffectView、关闭匹配窗口。其它 Effect 的限制继续由查询方法综合判断，不设置 CanXXX=true。
 
-**EndBubbleInteractionOperation：**
+**OperationEndBubbleInteraction：**
 
 1. Consumer 读取执行时匹配交互与业务时间；已失效的旧窗口／旧气泡请求不登记写操作。正常空批可以按核心返回 false，不据此重试或复活对象。
-2. 匹配时清交互；未到期保留原期限。已到期则捕获退出显示数据，清除选择关联（仅当前选中对象是它时）、解除占位、退出活跃查询并清理其 Function／Effect 的活动行为。
-3. 交付退场结果；新元素可立即使用空出的 Tile，旧动画仅清自己的资源。最终 Entity.Release 与旧 View 引用的管理见第 8 项，不延迟业务删除。
+2. 匹配时清交互；未到期或 WaitPay=true 时保留元素与原期限。已到期且没有剩余保护时捕获退出显示数据，清除选择关联（仅当前选中对象是它时）、解除占位、退出活跃查询并清理其 Function／Effect 的活动行为。
+3. 交付退场结果；新元素可立即使用空出的 Tile，旧动画仅清自己的资源。最终 Entity.Release 与旧 View 引用的管理按 06 的 D54／D58，不延迟业务删除。
 
 以上首次核对是对已准备步骤的内部一致性检查；在这段无异步等待的执行中失配，表明操作组冲突或代码错误，按原 Apply 异常契约报告，不能静默跳过后继续执行依赖项。正常余额不足、满盘、锁限制等应在登记前判定。核心仍不承诺异常回滚。
 
@@ -229,7 +236,7 @@ Command 的目标是提交时捕获的元素身份；不得在执行时按旧格
 D46 采用方案 A：负责 Drop 合成分支的 Consumer 协调本次主合成与邻格揭示，准备完成后登记为同一个 Batch 的连续操作组。框架仍允许该 CommandType 的其它 Consumer；它们不得重复执行本组工作或依赖“收集期间已发生合成”。
 
 ```text
-DropElementCommand
+CommandDropElement
 → DropRules 校验并确定普通合成分支
 → 准备主合成（含目标二级锁的合法解锁）
 → 构造只读拟合成上下文：源／目标身份与坐标、目标产物、本次业务时间
@@ -250,7 +257,7 @@ DropElementCommand
 
 ```csharp
 private bool TryCollectMerge(
-    DropElementCommand command, IOperationRecorder recorder, out string reason)
+    CommandDropElement command, IOperationRecorder recorder, out string reason)
 {
     // 所有正常业务检查、必需邻格配置读取及局部落点求解均在此完成。
     if (!TryPrepareMergeGroup(command, out var data, out reason))
@@ -258,10 +265,10 @@ private bool TryCollectMerge(
 
     // List 仅属于本次 Consumer；构造异常也不会把半组写入公共 Recorder。
     var operations = new List<IAtomicOperation>(1 + data.Reveals.Count);
-    var merge = new MergeElementsOperation(_elements, _tiles, data.Merge);
+    var merge = new OperationMergeElements(_elements, _tiles, data.Merge);
     operations.Add(merge);
     for (int i = 0; i < data.Reveals.Count; i++)
-        operations.Add(new RevealTileOperation(_elements, _tiles, merge, data.Reveals[i]));
+        operations.Add(new OperationRevealTile(_elements, _tiles, merge, data.Reveals[i]));
 
     recorder.AddOperations(operations); // 已物化、非 null；不传会继续求解的 yield 枚举。
     reason = string.Empty;
@@ -280,12 +287,12 @@ HomeHub 的 CreateSegment／CreateLevel 已验证“后项 Apply 读取前项输
 Click Consumer 先读取点击前的选中记录，再判断选择资格和 Effect 响应。选择、附加业务都准备好后才登记，避免先改选中导致首次点击被误认为第二次激活。
 
 - 二级锁：只选择与果冻反馈，不进入气泡窗口。
-- 完全解锁的气泡：选择＋建立气泡交互＋同步开窗；重复 Click 聚焦原窗口，不刷新期限。
+- 完全解锁的气泡：选择＋同步开窗请求；只有成功打开并登记有效的窗口才提供保护，重复 Click 聚焦有效窗口，不刷新期限。
 - 普通元素：按已定首次选择／再次激活规则。附加动作正常受限而选择允许时，产生“仅选择”结果；不是整批拒绝，也不回退其它能力。
 
-可用 `SelectElementOperation` 承载选择变化／点击反馈，用 `BeginBubbleInteractionOperation` 承载匹配交互建立及窗口请求；两者均由 Click Consumer 登记，后者只在对应分支出现。Apply 改逻辑选择／交互，Graphic Consumer 显示选择框、播放果冻和同步开窗。类名可调整，不能让选择框的 OnShow 决定逻辑选择，或让 EffectView.Init 自动弹窗。
+`OperationSelectElement` 承载选择变化／点击反馈，开窗 Operation 由 Click Command Consumer 创建，Graphic 调用同步窗口入口。D62 下窗口成功打开并取得 EntityElement 后，由窗口发起 CommandBeginBubbleInteraction；对应 Command Consumer 产生 OperationBeginBubbleInteraction，Apply 写入匹配交互保护。窗口负责发起，具体写入经过已确认的执行链，不直接赋值综合权限。D59 下失败不发成功命令、不建立保护。完整流程与原 FIFO 的重入边界见 05。
 
-**D47：同步窗口打开失败的具体接入归第 8 项。** 通用执行出口固定为匹配身份的 EndBubbleInteractionCommand → Consumer → EndBubbleInteractionOperation。宿主桥接清理局部 UI 后沿普通 FIFO 提交；核心不新增插队／优先清理口。排队期间怎样排除无效窗口保护、具体窗口失败返回和关闭事件由第 8 项核对宿主 API 后落实。本专题的关闭／到期 Operation 已可独立实现，实际窗口适配不能把尚未完成的部分伪装为成功。
+**D59 更新 D47 的开窗失败处理：** 失败不建立保护，不为气泡增加失败补偿 Command。CommandEndBubbleInteraction／Operation 继续用于有效窗口的普通玩家关闭；D58 的整体 Release 不调用它。同步开窗与原 FIFO 保持；成功登记按 D62 由窗口发起 Command→Command Consumer→Operation，不增加 Runtime 插队或跨层写入。
 
 ### 5.6 实施所需的最小依赖
 
@@ -294,7 +301,7 @@ Click Consumer 先读取点击前的选中记录，再判断选择资格和 Effe
 | TileSystem／ElementSystem | 活跃查询、占位与坐标共同修改、创建／移除和效果同步；写入口限 Apply 使用 | 内存格子与元素对象，按 03／04 不变量检查 |
 | 只读配置／地编 | 产物规则、按位置查首次揭示内容及有效出生参数 | 明确的内存配置；缺项用例应在登记前被发现 |
 | Function／Effect | 按动作的 bool 查询、准备数据、内部应用方法；锁阶段唯一来源 | 直接使用 10 的对象，不模拟一组可写 Can 标记 |
-| 时间／条件／经济 | 本次业务时间、本地条件消费或已确认外部凭据 | 固定时间和测试余额；真实来源／跨系统结算仍归第 8／10 项 |
+| 时间／条件／经济 | 本次业务时间、本地条件消费或已确认外部凭据 | 固定时间和测试余额；真实时间源按 05 接入，跨系统结算与宿主装配归第 10 项 |
 | Graphic／窗口 | 注册相应 Operation Consumer，消费结果并产生后续输入 | 记录结果的假 Consumer；无 Graphic 也验证完整逻辑，真实 UI 再验生命周期 |
 | Profile | D49：Entity／能力直接绑定根内生成记录，Apply 经业务方法修改；不保存 Operation | 按 03 验证原记录、增删与重建；D51 用 Initialize 初始化，D52 沿用宿主保存 |
 
@@ -306,17 +313,17 @@ Click Consumer 先读取点击前的选中记录，再判断选择资格和 Effe
 
 一个 Operation 可有多个表现 Consumer，例如物品动画与音效各处理自己的部分；它们不能再次 Apply、重新判断合成、扣费或创建产物。H 的最终释放 Consumer 通过专用 Ticket 在 View 清理后释放 Entity，是生命周期收尾入口，不能推广为一般业务写入权限。共享视觉属性仍由 FunctionViewEffects 汇总，不能让多个 EffectView 任意覆盖同一材质／缩放。
 
-业务删除与对象最终 Release 分开理解：消耗／到期后立即退出活跃查询、释放占位；动画可以继续。HomeHub 在需要旧 Entity 绑定时使用退役 Ticket，表现清理后最终 Release；二合已有旧外观副本要求不因此改变。最终采用哪种引用保留／资源回收路径在 [讨论 8](../待讨论项/8_时间推进与表现生命周期.md) 落地，不能把“移除立即生效”解释为必须在旧 View 解绑前 Release 所有引用。
+D54 已确定：业务删除立即移除地图 Profile、退出活跃查询并释放占位；View 持有旧 Entity 继续表现。按 [06 的退役协议](06_表现与资源.md#entityviewgameobject-的寿命)停止业务活动但保留数据，先解绑 View 再最终 Release Entity。需要历史值的旧外观字段仍按需捕获；不再采用“所有 View 只持副本”的主方案。
 
 新命令不等待旧动画；同对象表现冲突时取消旧句柄并对齐新结果。旧动画只清理自己的绑定和资源，不按坐标删除可能已换入的新 View。回调校验所属运行实例、Entity／Effect／窗口或 View 绑定身份；重建后不能从全局新实例继续执行旧请求。
 
-初始化保持全部 Init→全部 Start→首次构建／恢复→开放玩家输入。两类 Consumer 在首次命令前装配完成。关闭先 BeginShutdown，再取消等待／交互与表现，逆序释放 Graphic→Logic→Runtime；关闭清理不依靠已经关闭的 Runtime 再执行业务请求。
+初始化保持全部 Init→全部 Start→首次构建／恢复→开放玩家输入。两类 Consumer 在首次命令前装配完成。D58 下关闭整个二合由总管理器 Release 直接编排：先停输入／驱动并 BeginShutdown，再释放各系统、Graphic 绑定及活跃／退役 Entity，最终释放 Runtime；不额外发送关窗或最后一次时间 Command。普通窗口关闭与整体销毁的 UI 收尾须区分，Release 清运行保护而不删除存档或清 WaitPay。详细释放顺序见 06。
 
 ## 7. 保存、Command 历史与 Replay／Redo／Undo
 
 ### 当前状态保存
 
-Operation.Apply 经所属 System／Entity／Function／Effect 的业务方法，直接修改根内生成记录及 Profile 集合，持有与增删契约见 [03](03_状态模型与Profile.md#二合-profile-接入实施契约d49)。**修改存档数据不等于把 Operation 自身序列化。** Tile／Element 仍分别保存，Function／Effect 保存必要自有数据；View、Effect.RuntimeId、委托及 Batch 均不进入存档。当前不增加跨重启元素身份，无实际使用者不添加 UUID。
+Operation.Apply 经所属 System／Entity／Function／Effect 的业务方法，直接修改根内生成记录及 Profile 集合，持有与增删契约见 [03](03_状态模型与Profile.md#二合-profile-接入实施契约d49)。**修改存档数据不等于把 Operation 自身序列化。** Tile／Element 仍分别保存，Function／Effect 保存必要自有数据；View、Effect.RuntimeId、委托及 Batch 均不进入存档。D65／D68／D69 已确认 Tile／Element 保存 long UniqueId，共用根计数器前缀递增；共享序列从 1 开始、0 无效，恢复保留；运行 InstanceId 不替代持久 ID。D67 支付匹配元素 UniqueId 与当前请求，契约见 03／05。
 
 D49 已选择直接引用，正常业务不再构造完整 MapData 发布，也无需给 CommandRuntime 新增通用 CommitAppliedBatch 钩子。准备阶段保持只读，用普通值描述预定结果；实际生成记录只在 Apply 或受控初始化入口修改。不能用 Submit 的 bool 或动画结束推断落盘。D52 已确定参考三合、沿用宿主 ProfileHub；具体源码事实和接入契约见 [03](03_状态模型与Profile.md)，不另设保存机制前置条件。
 
@@ -324,7 +331,7 @@ D49 已选择直接引用，正常业务不再构造完整 MapData 发布，也�
 
 用户已明确需要时可以保存 Command，用于重播、Redo、Undo 等能力。应保存**命令的稳定数据表达**：命令类型、参数、顺序及必要时间／外部结果，不序列化持有 Entity、Ticket、UI 委托的整个运行时对象。HomeHub 的纯表现命令实际包含 Action，这类数据不能直接写盘。恢复记录后重新构造 Command，由 Consumer 重新产生运行时 OperationBatch。
 
-以下说明扩展所需数据，不在本轮选定通用历史算法；A §12 的已有变化记录方案与基于命令前缀重建的方案须按实际需求另行取舍。
+D53 进一步要求时间由统一驱动输入并适合记录，D54 的退役回收只影响资源，不能改变业务时钟、随机或业务身份分配。D55 已撤回独立 Tick 时钟，D56 已确认记录命令所用时间戳并在重播中恢复；检查点重演等完整历史功能尚未要求本期交付，实际提出需求时再单独设计接线。以下说明扩展所需数据，不在本轮选定通用历史算法；A §12 的已有变化记录方案与基于命令前缀重建的方案须按实际需求另行取舍。
 
 | 能力 | 从什么恢复 | 需要补齐什么 |
 | --- | --- | --- |
@@ -335,6 +342,8 @@ D49 已选择直接引用，正常业务不再构造完整 MapData 发布，也�
 | 只重播表现 | 可独立展示的显示数据 | 新的播放实例／回调；不再次 Apply、不重复业务结算 |
 
 Command 日志记录“输入过什么”，通常不能单独反推出已删除对象的全部数据。Undo 可以使用专用数据凭据，也可以从基线和命令前缀重建；二合首期仍按 D03 只讨论售出／删除专用撤销。**不增加 `Operation.Serialize`、持久化 OperationBatch 或强制所有 Operation 实现 Revert。** A §12 中的不可变变化记录是独立数据，不是运行时 Operation 对象；本项目是否采用该扩展须另行确定。
+
+历史基线／检查点除 Profile 还需覆盖影响后续结果的运行事实（如有效窗口保护）及随机／身份状态；不能仅复制普通地图存档。历史实例停止实时驱动，离开历史模式再显式接入当前时间；正常无 View／快放应得到相同业务结果。Undo 后新输入的分支、检查点频率与隔离方式留实际启用时决定。
 
 确定性回放还需区分外部输入与自动派生 Command：不能既注入记录中的派生命令，又让原输入再派生一次。回放不重新请求广告／支付／发奖。CommandId／BatchId 当前只是运行诊断身份，不自动提供跨重启寻址或业务去重；这些扩展未启用前不预建完整历史框架。
 
@@ -375,7 +384,7 @@ Command 日志记录“输入过什么”，通常不能单独反推出已删除
 | Step 1 | 按 A §4–5 移植接口、注册表、Runtime、Batch、Player；仅换服务接线和二合类型 | 核心行为与来源一致，不加入上一稿 C1–C4 的改动 |
 | Step 2 | 装配 Consumer 与生命周期，建立最小移动输入和一个逻辑／表现链 | 全部收集→全部 Apply→Play；关闭拒收、重入不递归 |
 | Step 3 | 按第 5 节输入／结果和 Apply 顺序实现五类操作，连接 Entity／System／Function／Effect | 普通移动／换位／气泡腾位共用关联修改；合成、揭示、解泡、到期关闭分别完整维护数据 |
-| Step 4 | 实现 Drop Consumer 的合成组准备、Merge→Reveal 同批依赖；接 Click／气泡命令与结果 | 登记前完整准备；邻格只揭示一次；用替身验证窗口请求和匹配关闭，真实失败接线归第 8 项 |
+| Step 4 | 实现 Drop Consumer 的合成组准备、Merge→Reveal 同批依赖；接 Click／气泡命令与结果 | 登记前完整准备；邻格只揭示一次；用替身验证窗口请求和匹配关闭，真实窗口接线按 05 的 D59／D62 实施 |
 | Step 5 | 按 03 及讨论 8／10 接 Profile、时间、资源、Host 和退出 | 稳定存档、不重复结算、旧回调不能影响新实例 |
 | Step 6 | 按 D03 与讨论 9 接专用撤销；实际要求时才追加 Command 历史能力 | 不保存 Operation／Batch；不宣称尚未实现的通用 Replay／Redo／Undo |
 
@@ -392,7 +401,7 @@ Command 日志记录“输入过什么”，通常不能单独反推出已删除
 9. BeginShutdown 清队、不抢占当前批次；晚到窗口／广告／退场回调不能改新会话。
 10. 当前保存只含业务数据；如启用 Command 记录，排除引用与委托，重建命令后由 Consumer 重新产生 Operation。
 
-**本页与 03／04／05／06／10 足以开展 Command／Operation 核心、五类操作和已确认交互链路的代码设计与独立实现。** Profile 持有与业务读写按 D49／03 实施；首次初始化／保存按 D51／D52；时间／窗口服务、退出和模块装配仍按第 8–10 项接入，这不代表整套宿主玩法已全部定案。本轮交付的是实施契约，没有新增或运行玩法代码。
+**本页与 03／04／05／06／10 足以开展 Command／Operation 核心、五类操作和已确认交互链路的代码设计与独立实现。** Profile 持有与业务读写按 D49／03 实施；首次初始化／保存按 D51／D52；时间／窗口服务和退出按 05／06 实施，专用撤销与模块装配由第 9、10 项维护，这不代表整套宿主玩法已全部定案。本轮交付的是实施契约，没有新增或运行玩法代码。
 
 ### 业务组合的必要验收
 
