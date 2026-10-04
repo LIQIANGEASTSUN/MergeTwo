@@ -1,5 +1,7 @@
 # 历史实现分析
 
+> **历史参考文档。** 本页说明旧 FA 包的实现、资源或迁移记录，不是新二合的实施要求；当前范围与接续任务见 [_Plan/START_HERE](../../../_Plan/START_HERE.md)。文中的旧工程路径与历史测试结果保留原意。
+
 ## 架构与入口
 
 这套二合主要运行在 UGUI 面板中，不是独立 Unity Scene。核心是 64 个 Lua 模块，两个 Manager、一个活动管理器以及 UI 的 Panel/Proxy/Mediator 组合负责接入原游戏。C# 提供 Unity 组件、Lua 输入桥、UI 效果；实际玩法判定主要在 Lua。

@@ -1,5 +1,7 @@
 # 配置字段字典
 
+> **历史参考文档。** 本页说明旧 FA 包的实现、资源或迁移记录，不是新二合的实施要求；当前范围与接续任务见 [_Plan/START_HERE](../../../_Plan/START_HERE.md)。文中的旧工程路径与历史测试结果保留原意。
+
 来源：原始 Excel 前四行（中文说明、字段名、声明类型、C/CS 导出端）。运行时值以随包 Lua 和对应 JSON 为准；不会用 Excel 重新生成覆盖本次提交的数据。
 
 ## ActivityTemplate.xlsx / ActivityTemplate

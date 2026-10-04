@@ -81,7 +81,7 @@ public interface IOperationBatchPlayer
 
 两张注册表都按列表追加。同一普通引用实例重复注册只保留一份；不同实例即使实现类型相同也分别注册。使用参考的 List.Contains／Remove 默认相等规则，Consumer 不自定义值相等。注销不存在的实例无副作用；未注册类型返回空列表。分发过程中不增删当前列表。
 
-第 2–4 节已列出不依赖外部文档的接口、算法、注册与返回契约，可据此实现核心。需要直接移植时，完整参考代码在 [ProjectIdea 实现规范 §5.7](../../ProjectIdea/核心玩法逻辑表现分离/Document/玩法逻辑与表现分离_实现规范.md#execution)；HomeHub 对照文件见本页第 9 节。实施时保留算法，只适配二合命名空间、路由类型、模块装配及日志／消息／Player 服务。核心不引入棋盘规则。
+第 2–4 节已列出不依赖外部文档的接口、算法、注册与返回契约，可据此实现核心。需要直接移植时，完整参考代码在 [ProjectIdea 实现规范 §5.7](/Users/betta/Company/Projects/ProjectIdea/核心玩法逻辑表现分离/Document/玩法逻辑与表现分离_实现规范.md#execution)；HomeHub 对照文件见本页第 9 节。实施时保留算法，只适配二合命名空间、路由类型、模块装配及日志／消息／Player 服务。核心不引入棋盘规则。
 
 ## 3. 固定执行时序
 

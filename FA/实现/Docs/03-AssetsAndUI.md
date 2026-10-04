@@ -1,5 +1,7 @@
 # 界面与资源说明
 
+> **历史参考文档。** 本页说明旧 FA 包的实现、资源或迁移记录，不是新二合的实施要求；当前范围与接续任务见 [_Plan/START_HERE](../../../_Plan/START_HERE.md)。文中的旧工程路径与历史测试结果保留原意。
+
 ## 界面位置
 
 这套玩法的主要视觉载体是 `UI/TwoMergePanel/TwoMergePanel.prefab`，棋盘内重复克隆 `eleItem.prefab` 和界面内的格子模板。没有专门搬入启动 Scene，也没有可直接挂载运行的独立 C# 游戏入口。

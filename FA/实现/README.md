@@ -6,9 +6,11 @@
 
 ## 本仓库定位
 
-本包现位于 `参考项目/FA/实现/`，当前方案在 [方案入口](../../../_Plan/README.md)。以下 Docs、清单与工具中的 `Assets/MergeTwo/` 是历史 Unity 工程路径；在本仓库查文件时映射到本包根。迁移清单保留原路径／哈希，用于溯源；其中的导出步骤并非本仓库已具备的运行环境。
+本包位于交接目录 `FA/实现/`；与 FA 同级的 _Plan 保存当前方案，接收 Agent 先读 [START_HERE](../../_Plan/START_HERE.md)和 [方案入口](../../_Plan/README.md)。以下 Docs、清单与工具中的 `Assets/MergeTwo/` 是历史 Unity 工程路径；在本仓库查文件时映射到本包根。迁移清单保留原路径／哈希，用于溯源；其中的导出步骤并非本仓库已具备的运行环境。
 
 ## 从这里开始
+
+**本页及 Docs 中“实现订单”和“建立独立 State／GeneratorState 层”的旧建议已废弃，不再实现，也不列入待讨论事项。** 完整废弃声明及当前替代方案见 [AgentHandoff.md](../AgentHandoff.md)。原始源码及历史分析保留用于溯源；当前 Function／Effect、Profile、UGUI 及外围范围以 _Plan 为准。第 10 项工程讨论已转到接收项目，交接见 _Plan/13。
 
 1. 接收方 Agent 先读 [AgentHandoff.md](../AgentHandoff.md)。
 2. 人工审查先读 [实现分析](Docs/01-Implementation.md)、[配置关系](Docs/02-Configuration.md)、[已知问题](Docs/06-KnownIssues.md)。
